@@ -3,3 +3,4 @@ telethon==1.36.0
 PyYAML==6.0.2
 requests==2.32.3
 python-dateutil==2.9.0.post0
+msal==1.31.0
