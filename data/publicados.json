@@ -23,5 +23,20 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-23T20:54:04.740966+00:00"
+  },
+  "deslizamiento::Barinas::2026-07-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T23:45:42.389903+00:00"
+  },
+  "vialidad::Tachira::2026-07-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T23:45:42.389919+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-07-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T23:45:42.389994+00:00"
   }
 }
