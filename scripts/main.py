@@ -20,6 +20,15 @@ def main():
    # print("Recolectando Telegram...")
    # items += fetch_telegram_items(ventana)
     print(f"  {len(items)} items totales")
+    
+    items.append({
+        "fuente_nombre": "Prueba manual",
+        "fuente_tipo": "test",
+        "peso": 2.0,
+        "texto": "Fuerte incendio forestal fuera de control esta tarde #Zulia",
+        "link": "https://example.com/prueba",
+        "fecha": "2026-07-23T00:00:00+00:00",
+    })
 
     items = [clasificar_item(i) for i in items]
     items = [i for i in items if es_relevante(i)]
