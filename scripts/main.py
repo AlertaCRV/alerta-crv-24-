@@ -17,8 +17,8 @@ def main():
     items = fetch_rss_items(ventana)
     print(f"  {len(items)} items de RSS")
 
-    print("Recolectando Telegram...")
-    items += fetch_telegram_items(ventana)
+   # print("Recolectando Telegram...")
+   # items += fetch_telegram_items(ventana)
     print(f"  {len(items)} items totales")
 
     items = [clasificar_item(i) for i in items]
