@@ -25,3 +25,6 @@ def load_estados():
 
 def load_settings():
     return _load_yaml("settings.yaml")
+
+def load_ubicaciones_detalle():
+    return _load_yaml_or_json("ubicaciones_detalle.json")
