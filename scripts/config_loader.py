@@ -1,3 +1,4 @@
+import json
 import os
 import yaml
 
@@ -9,6 +10,12 @@ def _load_yaml(filename):
     path = os.path.join(CONFIG_DIR, filename)
     with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
+
+
+def _load_json(filename):
+    path = os.path.join(CONFIG_DIR, filename)
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def load_sources():
@@ -26,5 +33,6 @@ def load_estados():
 def load_settings():
     return _load_yaml("settings.yaml")
 
+
 def load_ubicaciones_detalle():
-    return _load_yaml_or_json("ubicaciones_detalle.json")
+    return _load_json("ubicaciones_detalle.json")
