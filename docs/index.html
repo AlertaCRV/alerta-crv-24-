@@ -16,6 +16,22 @@
   .meta { font-size:0.85rem; color:#9aa4b2; }
   a { color:#6cb6ff; }
   pre { white-space:pre-wrap; word-wrap:break-word; font-family:inherit; }
+
+  #alerta-banner {
+    display:none;
+    position:sticky; top:0; z-index:10;
+    padding:0.8rem 1rem; border-radius:8px; margin-bottom:1rem;
+    font-weight:bold; text-align:center;
+  }
+  #alerta-banner.nueva { background:#f39c12; color:#1a1200; }
+  #alerta-banner.critica {
+    background:#e74c3c; color:#fff;
+    animation: parpadeo 1s infinite;
+  }
+  @keyframes parpadeo {
+    0%, 100% { opacity:1; }
+    50% { opacity:0.4; }
+  }
 </style>
 </head>
 <body>
@@ -26,9 +42,45 @@
     <p>Cruz Roja Venezolana — Monitoreo de emergencias en tiempo real</p>
   </div>
 </header>
+<div id="alerta-banner"></div>
 <div id="lista">Cargando...</div>
 <script>
-fetch('data/noticias.json').then(r => r.json()).then(noticias => {
+const INTERVALO_MS = 60000;
+let clavesConocidas = null;
+let primeraCarga = true;
+
+function claveDe(n) {
+  return n.tipo + '|' + n.ubicacion + '|' + n.fecha_deteccion;
+}
+
+function reproducirBeep(veces) {
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  let t = ctx.currentTime;
+  for (let i = 0; i < veces; i++) {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = 880;
+    gain.gain.setValueAtTime(0.3, t);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(t);
+    osc.stop(t + 0.25);
+    t += 0.4;
+  }
+}
+
+function mostrarBanner(hayCritica, cantidad) {
+  const banner = document.getElementById('alerta-banner');
+  banner.className = hayCritica ? 'critica' : 'nueva';
+  banner.style.display = 'block';
+  banner.textContent = hayCritica
+    ? `🔴 ¡EMERGENCIA CRÍTICA NUEVA! (${cantidad} reporte(s) nuevo(s))`
+    : `🟡 Nuevo(s) reporte(s): ${cantidad}`;
+  setTimeout(() => { banner.style.display = 'none'; }, 15000);
+}
+
+function renderizar(noticias) {
   const cont = document.getElementById('lista');
   if (!noticias.length) { cont.textContent = 'Sin reportes recientes.'; return; }
   cont.innerHTML = noticias.map(n => `
@@ -36,7 +88,29 @@ fetch('data/noticias.json').then(r => r.json()).then(noticias => {
       <pre>${n.texto.replace(/</g,'&lt;')}</pre>
     </div>
   `).join('');
-});
+}
+
+function verificarActualizacion() {
+  fetch('data/noticias.json?_=' + Date.now()).then(r => r.json()).then(noticias => {
+    const clavesActuales = new Set(noticias.map(claveDe));
+
+    if (!primeraCarga && clavesConocidas) {
+      const nuevas = noticias.filter(n => !clavesConocidas.has(claveDe(n)));
+      if (nuevas.length > 0) {
+        const hayCritica = nuevas.some(n => n.severidad === 'critico');
+        mostrarBanner(hayCritica, nuevas.length);
+        reproducirBeep(hayCritica ? 3 : 1);
+      }
+    }
+
+    clavesConocidas = clavesActuales;
+    primeraCarga = false;
+    renderizar(noticias);
+  }).catch(err => console.error('Error cargando noticias:', err));
+}
+
+verificarActualizacion();
+setInterval(verificarActualizacion, INTERVALO_MS);
 </script>
 </body>
 </html>
