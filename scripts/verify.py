@@ -35,12 +35,14 @@ def agrupar_y_verificar(items):
 
         municipio = next((m.get("municipio") for m in miembros if m.get("municipio")), None)
         parroquia = next((m.get("parroquia") for m in miembros if m.get("parroquia")), None)
+        texto_muestra = max(miembros, key=lambda m: m["peso"])["texto"]
 
         eventos.append({
             "tipo": tipo,
             "ubicacion": ubicacion,
             "municipio": municipio,
             "parroquia": parroquia,
+            "texto_muestra": texto_muestra,
             "severidad": severidad_final,
             "score": round(score, 2),
             "confirmado": score >= umbral,
