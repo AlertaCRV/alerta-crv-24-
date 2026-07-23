@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime, timedelta, timezone
+from dateutil import parser as dateparser
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ESTADO_PATH = os.path.join(BASE_DIR, "data", "publicados.json")
@@ -8,7 +9,8 @@ DIAS_RETENCION = 3
 
 
 def _clave_evento(evento):
-    return f"{evento['tipo']}::{evento['ubicacion']}"
+    fecha_dia = dateparser.isoparse(evento["fecha_evento"]).date().isoformat()
+    return f"{evento['tipo']}::{evento['ubicacion']}::{fecha_dia}"
 
 
 def cargar_publicados():
@@ -30,8 +32,9 @@ def guardar_publicados(publicados):
 
 
 def filtrar_nuevos(eventos, publicados):
-    """Evita republicar el mismo evento (tipo+ubicacion) repetidamente en cada corrida,
-    salvo que haya subido de severidad o cambiado su estado de confirmación."""
+    """Evita republicar el mismo evento (tipo+ubicacion+dia) repetidamente en cada corrida,
+    salvo que haya subido de severidad o cambiado su estado de confirmación. Un mismo
+    tipo+ubicacion en un dia distinto se trata como un evento nuevo."""
     nuevos = []
     for evento in eventos:
         clave = _clave_evento(evento)
