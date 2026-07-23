@@ -22,10 +22,6 @@ rss:
     peso: 0.6
 
 telegram:
-  - username: "AlertaCRVTest"
-    nombre: "Canal de prueba"
-    tipo: "ciudadano"
-    peso: 2.0
   # username sin @, tal como aparece en t.me/<username>
   # tipo: oficial | medio | ciudadano  (afecta el peso de confiabilidad)
   - username: "Funvisis"
