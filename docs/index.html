@@ -32,6 +32,13 @@
     0%, 100% { opacity:1; }
     50% { opacity:0.4; }
   }
+
+  details#leyenda { margin-bottom:1.2rem; border:1px solid #2a2f36; border-radius:8px; background:#131820; padding:0.8rem 1rem; }
+  details#leyenda summary { cursor:pointer; font-weight:bold; }
+  .leyenda-grupo { margin-top:0.8rem; }
+  .leyenda-grupo h3 { font-size:0.95rem; margin:0 0 0.4rem 0; color:#9aa4b2; }
+  .leyenda-item { font-size:0.9rem; margin-bottom:0.4rem; }
+  .leyenda-item b { display:inline-block; min-width:150px; }
 </style>
 </head>
 <body>
@@ -43,6 +50,24 @@
   </div>
 </header>
 <div id="alerta-banner"></div>
+
+<details id="leyenda">
+  <summary>ℹ️ ¿Qué significan las clasificaciones de cada reporte?</summary>
+  <div class="leyenda-grupo">
+    <h3>Estado de verificación</h3>
+    <div class="leyenda-item"><b>✅ CONFIRMADO</b> Corroborado por 2 o más fuentes independientes, o por una fuente oficial de alta confiabilidad.</div>
+    <div class="leyenda-item"><b>⚠️ SIN CONFIRMAR</b> Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema. No significa que sea falso, solo que falta corroboración.</div>
+  </div>
+  <div class="leyenda-grupo">
+    <h3>Nivel de severidad</h3>
+    <div class="leyenda-item"><b>🔴 CRÍTICO</b> Se reportan víctimas fatales o una emergencia de gran magnitud.</div>
+    <div class="leyenda-item"><b>🟠 ALTO</b> Se reportan heridos, evacuaciones, o daños severos.</div>
+    <div class="leyenda-item"><b>🟡 MEDIO</b> Se reportan daños materiales, sin heridos mencionados.</div>
+    <div class="leyenda-item"><b>🟢 BAJO</b> Situación de precaución, sin daños significativos reportados.</div>
+    <div class="leyenda-item"><b>⚪ SIN CLASIFICAR</b> El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.</div>
+  </div>
+</details>
+
 <div id="lista">Cargando...</div>
 <script>
 const INTERVALO_MS = 60000;
