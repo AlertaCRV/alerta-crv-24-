@@ -8,5 +8,20 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-23T17:15:47.994364+00:00"
+  },
+  "infraestructura_electrica::Anzoategui": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T20:54:04.740934+00:00"
+  },
+  "inundacion::Barinas": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T20:54:04.740952+00:00"
+  },
+  "vialidad::Tachira": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T20:54:04.740966+00:00"
   }
 }
