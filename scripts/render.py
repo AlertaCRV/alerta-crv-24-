@@ -20,7 +20,6 @@ SEVERIDAD_EMOJI = {
 
 
 def redactar_noticia(evento):
-    """Genera el texto final de la noticia a partir de un evento verificado, usando plantillas fijas."""
     tipo_label = TIPO_LABELS.get(evento["tipo"], evento["tipo"].capitalize())
     severidad_label = SEVERIDAD_EMOJI.get(evento["severidad"], evento["severidad"])
     estado_confirmacion = "✅ CONFIRMADO" if evento["confirmado"] else "⚠️ SIN CONFIRMAR"
@@ -29,12 +28,19 @@ def redactar_noticia(evento):
         f"  • {f['nombre']}: {f['link']}" for f in evento["fuentes"]
     )
 
-    titulo = f"{tipo_label} en {evento['ubicacion']}"
+    partes_ubicacion = [evento["ubicacion"]]
+    if evento.get("municipio"):
+        partes_ubicacion.insert(0, f"Municipio {evento['municipio']}")
+    if evento.get("parroquia"):
+        partes_ubicacion.insert(0, f"Parroquia {evento['parroquia']}")
+    ubicacion_detallada = ", ".join(partes_ubicacion)
+
+    titulo = f"{tipo_label} en {ubicacion_detallada}"
 
     texto = (
         f"{estado_confirmacion} | {severidad_label}\n"
         f"📌 {titulo}\n\n"
-        f"📍 Ubicación: {evento['ubicacion']}\n"
+        f"📍 Ubicación: {ubicacion_detallada}\n"
         f"🕒 Hecho reportado: {evento['fecha_evento']}\n"
         f"🔎 Detectado por el sistema: {evento['fecha_deteccion']}\n"
         f"📊 Fuentes independientes: {evento['num_fuentes']} (score {evento['score']})\n\n"
