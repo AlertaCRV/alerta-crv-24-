@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from dateutil import parser as dateparser
 
 from config_loader import load_settings
@@ -49,7 +49,7 @@ def agrupar_y_verificar(items):
                 for f in fuentes_unicas.values()
             ],
             "fecha_evento": fecha_mas_reciente,
-            "fecha_deteccion": datetime.utcnow().isoformat(),
+            "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
         })
 
     return eventos
