@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alerta CRV 24/7</title>
+<title>Sala Situacional / Gestión del Riesgo de Desastre</title>
 <style>
   body { font-family: system-ui, sans-serif; background:#0b0f14; color:#e6e6e6; margin:0; padding:1rem; }
-  h1 { font-size:1.4rem; }
+  header { display:flex; align-items:center; gap:1rem; padding-bottom:1rem; margin-bottom:1rem; border-bottom:1px solid #2a2f36; }
+  header img { height:64px; width:auto; }
+  header .titulos h1 { font-size:1.3rem; margin:0 0 0.2rem 0; }
+  header .titulos p { margin:0; font-size:0.95rem; color:#9aa4b2; }
   .noticia { border:1px solid #2a2f36; border-radius:8px; padding:1rem; margin-bottom:1rem; background:#131820; }
   .confirmado { border-left:4px solid #2ecc71; }
   .sin-confirmar { border-left:4px solid #f39c12; }
@@ -16,7 +19,13 @@
 </style>
 </head>
 <body>
-<h1>🛰️ Alerta CRV 24/7 — Monitoreo de Emergencias en Venezuela</h1>
+<header>
+  <img src="logo-crv.png" alt="Cruz Roja Venezolana">
+  <div class="titulos">
+    <h1>Sala Situacional / Gestión del Riesgo de Desastre</h1>
+    <p>Cruz Roja Venezolana — Monitoreo de emergencias en tiempo real</p>
+  </div>
+</header>
 <div id="lista">Cargando...</div>
 <script>
 fetch('data/noticias.json').then(r => r.json()).then(noticias => {
