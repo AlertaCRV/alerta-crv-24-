@@ -1,0 +1,97 @@
+# Palabras clave para clasificar tipo de emergencia y severidad, sin IA.
+# El matching es case-insensitive y busca la palabra dentro del texto de la fuente.
+
+tipos:
+  sismo:
+    - sismo
+    - temblor
+    - terremoto
+    - replica
+    - réplica
+    - movimiento telurico
+    - movimiento sísmico
+  incendio:
+    - incendio
+    - incendio forestal
+    - conato de incendio
+    - llamas
+    - quema
+  inundacion:
+    - inundacion
+    - inundación
+    - desbordamiento
+    - crecida
+    - anegado
+    - anegada
+  deslizamiento:
+    - deslizamiento
+    - derrumbe
+    - alud
+    - deslave
+  infraestructura_electrica:
+    - apagon
+    - apagón
+    - falla electrica
+    - falla eléctrica
+    - corte de luz
+    - corpoelec
+  infraestructura_agua:
+    - falla de agua
+    - corte de agua
+    - sin agua
+    - hidrocapital
+    - hidrologica
+  vialidad:
+    - colapso vial
+    - via colapsada
+    - vía colapsada
+    - accidente vial
+    - choque
+    - volcamiento
+  orden_publico:
+    - disturbio
+    - protesta
+    - saqueo
+    - enfrentamiento
+    - manifestacion
+    - manifestación
+    - hecho de violencia
+    - tiroteo
+  salud_publica:
+    - brote
+    - epidemia
+    - alerta sanitaria
+    - intoxicacion masiva
+    - intoxicación masiva
+    - enfermedad
+
+severidad:
+  critico:
+    - fallecidos
+    - fallecido
+    - muertos
+    - muerto
+    - victimas fatales
+    - víctimas fatales
+    - desaparecidos
+    - colapso total
+    - emergencia nacional
+  alto:
+    - heridos
+    - hospitalizados
+    - evacuacion
+    - evacuación
+    - danos severos
+    - daños severos
+    - alerta roja
+  medio:
+    - danos materiales
+    - daños materiales
+    - alerta naranja
+    - afectados
+  bajo:
+    - alerta amarilla
+    - precaucion
+    - precaución
+    - sin heridos
+    - sin novedad

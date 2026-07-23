@@ -1,0 +1,28 @@
+# Los 24 estados de Venezuela (más el Distrito Capital).
+# Se usan para reconocer hashtags de ubicación en formato fijo, ej: #Zulia #Miranda
+# Cada clave es el nombre canónico; la lista de "alias" son variantes/hashtags aceptados.
+estados:
+  Amazonas: [amazonas]
+  Anzoategui: [anzoategui, anzoátegui]
+  Apure: [apure]
+  Aragua: [aragua]
+  Barinas: [barinas]
+  Bolivar: [bolivar, bolívar]
+  Carabobo: [carabobo]
+  Cojedes: [cojedes]
+  Delta Amacuro: [deltaamacuro, delta_amacuro]
+  Distrito Capital: [distritocapital, caracas, dtocapital]
+  Falcon: [falcon, falcón]
+  Guarico: [guarico, guárico]
+  Lara: [lara]
+  Merida: [merida, mérida]
+  Miranda: [miranda]
+  Monagas: [monagas]
+  Nueva Esparta: [nuevaesparta, margarita]
+  Portuguesa: [portuguesa]
+  Sucre: [sucre]
+  Tachira: [tachira, táchira]
+  Trujillo: [trujillo]
+  La Guaira: [laguaira, vargas]
+  Yaracuy: [yaracuy]
+  Zulia: [zulia]

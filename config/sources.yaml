@@ -1,0 +1,74 @@
+# Fuentes de monitoreo. Agrega o quita entradas aquí sin tocar el código Python.
+# "peso" = score de confiabilidad de la fuente (0.0 a 1.0) usado en la verificación cruzada.
+
+rss:
+  - nombre: "Efecto Cocuyo - Sucesos"
+    url: "https://efectococuyo.com/sucesos/feed/"
+    peso: 0.8
+  - nombre: "Efecto Cocuyo - General"
+    url: "https://efectococuyo.com/feed/"
+    peso: 0.75
+  - nombre: "Ultimas Noticias"
+    url: "https://ultimasnoticias.com.ve/feed/"
+    peso: 0.7
+  - nombre: "Runrun.es"
+    url: "https://runrun.es/feed/"
+    peso: 0.7
+  - nombre: "El Carabobeno"
+    url: "https://www.el-carabobeno.com/feed/"
+    peso: 0.6
+  - nombre: "La Verdad de Vargas"
+    url: "https://laverdaddevargas.com/feed/"
+    peso: 0.6
+
+telegram:
+  # username sin @, tal como aparece en t.me/<username>
+  # tipo: oficial | medio | ciudadano  (afecta el peso de confiabilidad)
+  - username: "Funvisis"
+    nombre: "FUNVISIS - Monitor Sismico"
+    tipo: "oficial"
+    peso: 0.9
+  - username: "canalINAMEH"
+    nombre: "INAMEH"
+    tipo: "oficial"
+    peso: 0.9
+  - username: "vtv_canal8"
+    nombre: "VTV Canal 8"
+    tipo: "oficial"
+    peso: 0.6
+  - username: "elpitazo"
+    nombre: "El Pitazo"
+    tipo: "medio"
+    peso: 0.75
+  - username: "la_patilla"
+    nombre: "La Patilla"
+    tipo: "medio"
+    peso: 0.65
+  - username: "CocuyoTelegram"
+    nombre: "Efecto Cocuyo"
+    tipo: "medio"
+    peso: 0.75
+  - username: "runrunes"
+    nombre: "Runrun.es"
+    tipo: "medio"
+    peso: 0.7
+  - username: "ntn24ve"
+    nombre: "NTN24 Venezuela"
+    tipo: "medio"
+    peso: 0.65
+  - username: "noticiasvam"
+    nombre: "Venezuela al Minuto"
+    tipo: "ciudadano"
+    peso: 0.55
+  - username: "PatriaDigital"
+    nombre: "Patria Digital"
+    tipo: "ciudadano"
+    peso: 0.5
+  - username: "diarioelregionaldelzulia"
+    nombre: "El Regional del Zulia"
+    tipo: "medio"
+    peso: 0.55
+  - username: "NADZulia"
+    nombre: "Noticia al Dia (Zulia)"
+    tipo: "medio"
+    peso: 0.6

@@ -1,0 +1,17 @@
+# Configuración general del sistema.
+
+verificacion:
+  umbral_confirmado: 1.2   # suma de pesos de fuentes independientes para publicar como "confirmado"
+  ventana_horas: 6         # ventana de tiempo para agrupar reportes del mismo evento
+
+busqueda:
+  ventana_horas_fuentes: 12  # cuánto atrás se revisan RSS/Telegram en cada corrida
+
+telegram_bot:
+  chat_id_env: "TELEGRAM_CHAT_ID"
+  token_env: "TELEGRAM_BOT_TOKEN"
+
+telethon:
+  api_id_env: "TELEGRAM_API_ID"
+  api_hash_env: "TELEGRAM_API_HASH"
+  session_env: "TELEGRAM_SESSION_STRING"

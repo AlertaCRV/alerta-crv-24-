@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alerta CRV 24/7</title>
+<style>
+  body { font-family: system-ui, sans-serif; background:#0b0f14; color:#e6e6e6; margin:0; padding:1rem; }
+  h1 { font-size:1.4rem; }
+  .noticia { border:1px solid #2a2f36; border-radius:8px; padding:1rem; margin-bottom:1rem; background:#131820; }
+  .confirmado { border-left:4px solid #2ecc71; }
+  .sin-confirmar { border-left:4px solid #f39c12; }
+  .meta { font-size:0.85rem; color:#9aa4b2; }
+  a { color:#6cb6ff; }
+  pre { white-space:pre-wrap; word-wrap:break-word; font-family:inherit; }
+</style>
+</head>
+<body>
+<h1>🛰️ Alerta CRV 24/7 — Monitoreo de Emergencias en Venezuela</h1>
+<div id="lista">Cargando...</div>
+<script>
+fetch('data/noticias.json').then(r => r.json()).then(noticias => {
+  const cont = document.getElementById('lista');
+  if (!noticias.length) { cont.textContent = 'Sin reportes recientes.'; return; }
+  cont.innerHTML = noticias.map(n => `
+    <div class="noticia ${n.confirmado ? 'confirmado' : 'sin-confirmar'}">
+      <pre>${n.texto.replace(/</g,'&lt;')}</pre>
+    </div>
+  `).join('');
+});
+</script>
+</body>
+</html>
