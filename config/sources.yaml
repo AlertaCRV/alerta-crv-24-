@@ -38,6 +38,69 @@ rss:
   - nombre: "El Nacional"
     url: "https://www.el-nacional.com/feed/"
     peso: 0.7
+  - nombre: "Diario La Nacion (Tachira)"
+    url: "https://lanacionweb.com/feed/"
+    peso: 0.55
+  - nombre: "Notitachira"
+    url: "https://notitachira.com/feed/"
+    peso: 0.55
+  - nombre: "En El Vigia (Merida)"
+    url: "https://enelvigia.com.ve/feed/"
+    peso: 0.55
+  - nombre: "Merida Diario"
+    url: "https://meridadiario.com/feed/"
+    peso: 0.55
+  - nombre: "La Manana (Falcon)"
+    url: "https://lamananadigital.com/feed/"
+    peso: 0.55
+  - nombre: "Maturin News"
+    url: "https://maturinnews.com/feed/"
+    peso: 0.55
+  - nombre: "La Prensa de Monagas"
+    url: "https://laprensademonagas.com/feed/"
+    peso: 0.55
+  - nombre: "El Periodico de Monagas"
+    url: "https://elperiodicodemonagas.com.ve/feed/"
+    peso: 0.55
+  - nombre: "La Verdad de Monagas"
+    url: "https://laverdaddemonagas.com/feed/"
+    peso: 0.55
+  - nombre: "Diario El Tiempo (Trujillo)"
+    url: "https://diarioeltiempo.com.ve/feed/"
+    peso: 0.55
+  - nombre: "El Tiempo (Anzoategui)"
+    url: "https://eltiempo.com.ve/feed/"
+    peso: 0.55
+  - nombre: "El Siglo (Aragua)"
+    url: "https://elsiglo.com.ve/feed/"
+    peso: 0.55
+  - nombre: "Guatire.com (Miranda)"
+    url: "https://www.guatire.com/feed/"
+    peso: 0.5
+  - nombre: "El Tubazo Digital (Guarico)"
+    url: "https://eltubazodigital.com/feed/"
+    peso: 0.55
+  - nombre: "Portuguesa Reporta"
+    url: "https://portuguesareporta.com/feed/"
+    peso: 0.55
+  - nombre: "Yaracuy al Dia"
+    url: "https://yaracuyaldia.com/feed/"
+    peso: 0.55
+  - nombre: "Turimiquire (Sucre)"
+    url: "https://turimiquire.net/feed/"
+    peso: 0.55
+  - nombre: "Notiapure"
+    url: "https://notiapure.com.ve/feed/"
+    peso: 0.55
+  - nombre: "Waka Noticias (Amazonas)"
+    url: "https://wakanoticias.com/index.php?format=feed&type=rss"
+    peso: 0.5
+  - nombre: "El Deltano (Delta Amacuro)"
+    url: "https://eldeltano.com/feed/"
+    peso: 0.55
+  - nombre: "La Prensa de Lara"
+    url: "https://laprensadelara.com/feed/"
+    peso: 0.55
 
 telegram:
   # username sin @, tal como aparece en t.me/<username>
