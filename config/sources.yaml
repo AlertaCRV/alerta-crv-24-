@@ -20,6 +20,24 @@ rss:
   - nombre: "La Verdad de Vargas"
     url: "https://laverdaddevargas.com/feed/"
     peso: 0.6
+  - nombre: "El Pitazo"
+    url: "https://elpitazo.net/feed/"
+    peso: 0.75
+  - nombre: "La Patilla"
+    url: "https://www.lapatilla.com/feed/"
+    peso: 0.65
+  - nombre: "Panorama"
+    url: "https://www.panorama.com.ve/feed/"
+    peso: 0.65
+  - nombre: "El Correo del Caroni"
+    url: "https://elcorreodelcaroni.com/feed/"
+    peso: 0.6
+  - nombre: "Tal Cual"
+    url: "https://talcualdigital.com/feed/"
+    peso: 0.6
+  - nombre: "El Nacional"
+    url: "https://www.el-nacional.com/feed/"
+    peso: 0.7
 
 telegram:
   # username sin @, tal como aparece en t.me/<username>
