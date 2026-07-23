@@ -47,6 +47,13 @@ def detectar_severidad(texto):
 
 
 def clasificar_item(item):
+    pre = item.pop("_preclasificado", None)
+    if pre:
+        item["ubicacion"] = pre["ubicacion"]
+        item["tipos"] = pre["tipos"]
+        item["severidad"] = pre["severidad"]
+        return item
+
     item["ubicacion"] = detectar_ubicacion(item["texto"])
     item["tipos"] = detectar_tipo(item["texto"])
     item["severidad"] = detectar_severidad(item["texto"])
