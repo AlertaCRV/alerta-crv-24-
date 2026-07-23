@@ -2,8 +2,16 @@ import time
 from datetime import datetime, timezone
 
 import feedparser
+import requests
 
 from config_loader import load_sources
+
+HEADERS_NAVEGADOR = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    )
+}
 
 
 def fetch_rss_items(ventana_horas=12):
@@ -12,7 +20,14 @@ def fetch_rss_items(ventana_horas=12):
     limite = time.time() - ventana_horas * 3600
 
     for fuente in load_sources().get("rss", []):
-        parsed = feedparser.parse(fuente["url"])
+        try:
+            resp = requests.get(fuente["url"], headers=HEADERS_NAVEGADOR, timeout=15)
+            resp.raise_for_status()
+            parsed = feedparser.parse(resp.content)
+        except Exception as e:
+            print(f"[WARN] No se pudo leer el RSS de {fuente['nombre']}: {e}")
+            continue
+
         for entry in parsed.entries:
             published_struct = entry.get("published_parsed") or entry.get("updated_parsed")
             if published_struct:
