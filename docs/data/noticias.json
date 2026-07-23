@@ -1,6 +1,25 @@
 [
   {
     "titulo": "Incendio en Zulia",
+    "texto": "✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n📌 Incendio en Zulia\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 2026-07-23T00:00:00+00:00\n🔎 Detectado por el sistema: 2026-07-23T03:54:18.194279+00:00\n📊 Fuentes independientes: 1 (score 2.0)\n\nFuentes:\n  • Prueba manual: https://example.com/prueba",
+    "tipo": "incendio",
+    "ubicacion": "Zulia",
+    "severidad": "sin_clasificar",
+    "score": 2.0,
+    "confirmado": true,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Prueba manual",
+        "link": "https://example.com/prueba",
+        "fecha": "2026-07-23T00:00:00+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-23T00:00:00+00:00",
+    "fecha_deteccion": "2026-07-23T03:54:18.194279+00:00"
+  },
+  {
+    "titulo": "Incendio en Zulia",
     "texto": "✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n📌 Incendio en Zulia\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 2026-07-23T00:00:00+00:00\n🔎 Detectado por el sistema: 2026-07-23T03:40:52.932227+00:00\n📊 Fuentes independientes: 1 (score 2.0)\n\nFuentes:\n  • Prueba manual: https://example.com/prueba",
     "tipo": "incendio",
     "ubicacion": "Zulia",
