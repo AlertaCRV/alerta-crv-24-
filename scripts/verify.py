@@ -10,9 +10,6 @@ def _clave_cluster(item):
 
 
 def agrupar_y_verificar(items):
-    """Agrupa items por (tipo, ubicacion) dentro de una ventana de tiempo y calcula
-    un score de confianza sumando los pesos de las fuentes involucradas.
-    Devuelve una lista de 'eventos' listos para redactar."""
     settings = load_settings()["verificacion"]
     umbral = settings["umbral_confirmado"]
 
@@ -25,7 +22,6 @@ def agrupar_y_verificar(items):
     for (tipo, ubicacion), miembros in clusters.items():
         fuentes_unicas = {}
         for m in miembros:
-            # una fuente solo cuenta una vez por evento, se queda con el peso más alto reportado
             nombre = m["fuente_nombre"]
             if nombre not in fuentes_unicas or m["peso"] > fuentes_unicas[nombre]["peso"]:
                 fuentes_unicas[nombre] = m
@@ -37,9 +33,14 @@ def agrupar_y_verificar(items):
 
         fecha_mas_reciente = max(miembros, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 
+        municipio = next((m.get("municipio") for m in miembros if m.get("municipio")), None)
+        parroquia = next((m.get("parroquia") for m in miembros if m.get("parroquia")), None)
+
         eventos.append({
             "tipo": tipo,
             "ubicacion": ubicacion,
+            "municipio": municipio,
+            "parroquia": parroquia,
             "severidad": severidad_final,
             "score": round(score, 2),
             "confirmado": score >= umbral,
