@@ -1,5 +1,26 @@
 [
   {
+    "titulo": "Sismo en La Guaira",
+    "texto": "⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n📌 Sismo en La Guaira\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 2026-07-23T14:53:52+00:00\n🔎 Detectado por el sistema: 2026-07-23T17:15:47.994364+00:00\n📊 Fuentes independientes: 1 (score 0.75)\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/banco-mundial-estima-terremotos-en-venezuela/",
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/la-humanidad/banco-mundial-estima-terremotos-en-venezuela/",
+        "fecha": "2026-07-23T14:53:52+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-23T14:53:52+00:00",
+    "fecha_deteccion": "2026-07-23T17:15:47.994364+00:00"
+  },
+  {
     "titulo": "Incendio en Zulia",
     "texto": "✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n📌 Incendio en Zulia\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 2026-07-23T00:00:00+00:00\n🔎 Detectado por el sistema: 2026-07-23T04:03:56.662571+00:00\n📊 Fuentes independientes: 1 (score 2.0)\n\nFuentes:\n  • Prueba manual: https://example.com/prueba",
     "tipo": "incendio",

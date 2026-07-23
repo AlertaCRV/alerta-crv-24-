@@ -3,5 +3,10 @@
     "severidad": "sin_clasificar",
     "confirmado": true,
     "fecha_deteccion": "2026-07-23T04:03:56.662571+00:00"
+  },
+  "sismo::La Guaira": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-23T17:15:47.994364+00:00"
   }
 }
