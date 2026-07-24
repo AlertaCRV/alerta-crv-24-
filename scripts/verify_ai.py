@@ -48,7 +48,11 @@ def parece_emergencia_actual(evento):
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip().upper()
         resultado = respuesta.startswith("SI")
-        print(f"[DEBUG] Groq verificación: '{respuesta[:30]}...' → {resultado}")
+        resumen_texto = texto[:150].replace("\n", " ")
+        print(
+            f"[DEBUG] Groq verificación [{evento.get('tipo')}/{evento.get('ubicacion')}]: "
+            f"texto='{resumen_texto}...' → respuesta='{respuesta[:10]}' → {resultado}"
+        )
         return resultado
     except Exception as e:
         print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento: {e}")
