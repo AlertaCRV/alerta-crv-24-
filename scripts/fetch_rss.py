@@ -1,3 +1,4 @@
+import re
 import time
 from datetime import datetime, timezone
 
@@ -12,6 +13,19 @@ HEADERS_NAVEGADOR = {
         "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     )
 }
+
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+# Pie de pagina que agregan algunos feeds RSS de WordPress ("La entrada X se
+# publico primero en NOMBRE DEL MEDIO"). Es puro ruido de plantilla: si el
+# nombre del medio incluye un estado (p.ej. "El Periodico de Monagas"), el
+# clasificador puede confundirlo con la ubicacion real de la noticia.
+_BOILERPLATE_RE = re.compile(r"la entrada .*?se public(?:o|ó) primero en.*$", re.IGNORECASE | re.DOTALL)
+
+
+def _limpiar_texto(texto):
+    texto = _BOILERPLATE_RE.sub("", texto)
+    texto = _HTML_TAG_RE.sub(" ", texto)
+    return re.sub(r"\s+", " ", texto).strip()
 
 
 def fetch_rss_items(ventana_horas=12):
@@ -39,6 +53,7 @@ def fetch_rss_items(ventana_horas=12):
                 continue
 
             texto = " ".join(filter(None, [entry.get("title", ""), entry.get("summary", "")]))
+            texto = _limpiar_texto(texto)
 
             items.append({
                 "fuente_nombre": fuente["nombre"],

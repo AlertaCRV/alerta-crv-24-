@@ -15,6 +15,10 @@ SYSTEM_PROMPT = (
     "• El texto NO describe realmente un evento del tipo indicado, aunque lo mencione de "
     "pasada (e.g., tipo=sismo pero el texto es sobre un robo a víctimas de un sismo pasado, "
     "una nota policial, política o social que solo hace referencia a una emergencia anterior)\n"
+    "• Si tipo=vialidad: un accidente de tránsito individual y rutinario (un choque entre 1-2 "
+    "vehículos, un motorizado herido, un volcamiento aislado) sin víctimas múltiples ni "
+    "colapso de una vía completa — son casos que atiende tránsito/ambulancia local, no algo "
+    "que requiera respuesta de la Cruz Roja\n"
     "• Reportajes/denuncias sobre problemas crónicos (e.g., 'los apagones tienen en jaque a los comerciantes')\n"
     "• Análisis de impacto comercial o socioeconómico de una crisis pasada\n"
     "• Asuntos organizacionales o administrativos (e.g., 'personal dejó la institución')\n"
@@ -23,6 +27,8 @@ SYSTEM_PROMPT = (
     "\nResponde 'SI' solo si el texto reporta, como tema principal:\n"
     "• Un evento del tipo indicado que está sucediendo AHORA o en horas recientes (últimas 24h)\n"
     "• Algo que requiere respuesta inmediata de emergencias\n"
+    "• Si tipo=vialidad: solo cuando hay colapso de una vía completa, un accidente masivo con "
+    "múltiples heridos o fallecidos, o afectación significativa de infraestructura vial\n"
     "\nResponde solo con 'SI' o 'NO', nada más."
 )
 
