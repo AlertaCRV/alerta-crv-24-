@@ -29,23 +29,23 @@ rss:
   - nombre: "La Patilla"
     url: "https://www.lapatilla.com/feed/"
     peso: 0.65
-  - nombre: "Panorama"
-    url: "https://www.panorama.com.ve/feed/"
-    peso: 0.65
+  - nombre: "La Verdad (Zulia)"
+    url: "https://laverdad.com/feed/"
+    peso: 0.7
   - nombre: "El Correo del Caroni"
-    url: "https://elcorreodelcaroni.com/feed/"
+    url: "https://correodelcaroni.com/feed/"
     peso: 0.6
   - nombre: "Tal Cual"
     url: "https://talcualdigital.com/feed/"
     peso: 0.6
-  - nombre: "El Nacional"
-    url: "https://www.el-nacional.com/feed/"
-    peso: 0.7
   - nombre: "Diario La Nacion (Tachira)"
     url: "https://lanacionweb.com/feed/"
     peso: 0.55
   - nombre: "Notitachira"
     url: "https://notitachira.com/feed/"
+    peso: 0.55
+  - nombre: "La Noticia de Barinas"
+    url: "https://lanoticiadebarinas.com/?feed=rss2"
     peso: 0.55
   - nombre: "En El Vigia (Merida)"
     url: "https://enelvigia.com.ve/feed/"
@@ -55,6 +55,9 @@ rss:
     peso: 0.55
   - nombre: "La Manana (Falcon)"
     url: "https://lamananadigital.com/feed/"
+    peso: 0.55
+  - nombre: "Nuevo Dia (Falcon)"
+    url: "https://nuevodia.com.ve/feed/"
     peso: 0.55
   - nombre: "Maturin News"
     url: "https://maturinnews.com/feed/"
@@ -71,6 +74,9 @@ rss:
   - nombre: "Diario El Tiempo (Trujillo)"
     url: "https://diarioeltiempo.com.ve/feed/"
     peso: 0.55
+  - nombre: "Diario de Los Andes (Trujillo)"
+    url: "https://diariodelosandes.com/feed/"
+    peso: 0.55
   - nombre: "El Tiempo (Anzoategui)"
     url: "https://eltiempo.com.ve/feed/"
     peso: 0.55
@@ -80,11 +86,17 @@ rss:
   - nombre: "Guatire.com (Miranda)"
     url: "https://www.guatire.com/feed/"
     peso: 0.5
+  - nombre: "Diario La Region (Miranda)"
+    url: "https://diariolaregion.net/feed/"
+    peso: 0.55
   - nombre: "El Tubazo Digital (Guarico)"
     url: "https://eltubazodigital.com/feed/"
     peso: 0.55
   - nombre: "Portuguesa Reporta"
     url: "https://portuguesareporta.com/feed/"
+    peso: 0.55
+  - nombre: "Ultima Hora Digital (Portuguesa)"
+    url: "https://ultimahoradigital.com/feed/"
     peso: 0.55
   - nombre: "Yaracuy al Dia"
     url: "https://yaracuyaldia.com/feed/"
@@ -101,9 +113,18 @@ rss:
   - nombre: "El Deltano (Delta Amacuro)"
     url: "https://eldeltano.com/feed/"
     peso: 0.55
+  - nombre: "Tane Tanae (Delta Amacuro)"
+    url: "https://tanetanae.com/feed/"
+    peso: 0.5
   - nombre: "La Prensa de Lara"
     url: "https://laprensadelara.com/feed/"
     peso: 0.55
+  - nombre: "Notiespartano (Nueva Esparta)"
+    url: "https://notiespartano.com/feed/"
+    peso: 0.55
+  - nombre: "Reporte Confidencial (Nueva Esparta)"
+    url: "https://reporteconfidencial.info/feed/"
+    peso: 0.6
 
 telegram:
   # username sin @, tal como aparece en t.me/<username>
