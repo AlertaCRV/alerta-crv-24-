@@ -32,6 +32,9 @@ rss:
   - nombre: "Tal Cual"
     url: "https://talcualdigital.com/feed/"
     peso: 0.6
+  - nombre: "El Luchador (Bolivar)"
+    url: "https://elluchador.info/?feed=rss2"
+    peso: 0.75
   - nombre: "Diario La Nacion (Tachira)"
     url: "https://lanacionweb.com/feed/"
     peso: 0.55
