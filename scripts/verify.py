@@ -35,7 +35,17 @@ def agrupar_y_verificar(items):
 
         municipio = next((m.get("municipio") for m in miembros if m.get("municipio")), None)
         parroquia = next((m.get("parroquia") for m in miembros if m.get("parroquia")), None)
-        texto_muestra = max(miembros, key=lambda m: m["peso"])["texto"]
+
+        fuentes_ordenadas = sorted(fuentes_unicas.values(), key=lambda m: m["peso"], reverse=True)
+        texto_muestra = fuentes_ordenadas[0]["texto"]
+        # Se manda a Groq el texto de TODAS las fuentes agrupadas, no solo la de
+        # mayor peso: si una fuente esta redactada de forma ambigua pero otras
+        # del mismo cluster dejan claro que es, p.ej., una retrospectiva, la IA
+        # necesita ver el conjunto para no aprobar el evento por error.
+        textos_fuentes = [
+            {"fuente": f["fuente_nombre"], "texto": f["texto"][:400]}
+            for f in fuentes_ordenadas
+        ]
 
         eventos.append({
             "tipo": tipo,
@@ -43,6 +53,7 @@ def agrupar_y_verificar(items):
             "municipio": municipio,
             "parroquia": parroquia,
             "texto_muestra": texto_muestra,
+            "textos_fuentes": textos_fuentes,
             "severidad": severidad_final,
             "score": round(score, 2),
             "confirmado": score >= umbral,

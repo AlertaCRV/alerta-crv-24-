@@ -7,11 +7,17 @@ GROQ_MODEL = "llama-3.1-8b-instant"
 
 SYSTEM_PROMPT = (
     "Eres un filtro de un sistema de monitoreo de emergencias en Venezuela. "
-    "Se te da un TIPO de emergencia que un clasificador automático le asignó a un texto, "
-    "y el texto en sí. Tu única tarea es responder 'SI' o 'NO' a si el texto realmente "
-    "describe, como tema PRINCIPAL, un EVENTO EMERGENTE de ESE tipo específico "
-    "(una situación aguda de ese tipo que está ocurriendo AHORA o en las últimas horas).\n"
-    "\nResponde 'NO' en estos casos:\n"
+    "Se te da un TIPO de emergencia que un clasificador automático le asignó a un grupo "
+    "de reportes, y los textos de UNA O VARIAS fuentes independientes que el sistema "
+    "agrupó por describir el mismo evento. Tu única tarea es responder 'SI' o 'NO' a si, "
+    "en conjunto, esas fuentes describen, como tema PRINCIPAL, un EVENTO EMERGENTE de ESE "
+    "tipo específico (una situación aguda de ese tipo que está ocurriendo AHORA o en las "
+    "últimas horas).\n"
+    "\nResponde 'NO' si CUALQUIERA de las fuentes indica que se trata de:\n"
+    "• Una retrospectiva, aniversario, o cobertura semanas/meses después del evento "
+    "original (e.g., 'a un mes de la tragedia', 'al cumplirse 30 días', 'un mes después', "
+    "'meses después del devastador...') — aunque otra de las fuentes esté redactada de "
+    "forma ambigua o parezca describir algo reciente\n"
     "• El texto NO describe realmente un evento del tipo indicado, aunque lo mencione de "
     "pasada (e.g., tipo=sismo pero el texto es sobre un robo a víctimas de un sismo pasado, "
     "una nota policial, política o social que solo hace referencia a una emergencia anterior)\n"
@@ -24,7 +30,8 @@ SYSTEM_PROMPT = (
     "• Asuntos organizacionales o administrativos (e.g., 'personal dejó la institución')\n"
     "• Retrospectivas, estudios, estadísticas, homenajes o menciones de emergencias históricas\n"
     "• Cualquier texto que describe problemas durables, no un evento súbito/agudo\n"
-    "\nResponde 'SI' solo si el texto reporta, como tema principal:\n"
+    "\nResponde 'SI' solo si TODAS o la gran mayoría de las fuentes reportan, como tema "
+    "principal:\n"
     "• Un evento del tipo indicado que está sucediendo AHORA o en horas recientes (últimas 24h)\n"
     "• Algo que requiere respuesta inmediata de emergencias\n"
     "• Si tipo=vialidad: solo cuando hay colapso de una vía completa, un accidente masivo con "
@@ -39,8 +46,16 @@ def parece_emergencia_actual(evento):
         print("[WARN] GROQ_API_KEY no configurada, se omite verificación de plausibilidad")
         return True
 
-    texto = evento.get("texto_muestra", "")[:1500]
-    contenido_usuario = f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento.get('tipo')}\n\nTEXTO:\n{texto}"
+    textos_fuentes = evento.get("textos_fuentes") or [
+        {"fuente": None, "texto": evento.get("texto_muestra", "")}
+    ]
+    bloque_fuentes = "\n\n".join(
+        f"--- Fuente: {t['fuente'] or 'desconocida'} ---\n{t['texto']}"
+        for t in textos_fuentes
+    )[:4000]
+    contenido_usuario = (
+        f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento.get('tipo')}\n\n{bloque_fuentes}"
+    )
 
     try:
         resp = requests.post(
@@ -60,10 +75,11 @@ def parece_emergencia_actual(evento):
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip().upper()
         resultado = respuesta.startswith("SI")
-        resumen_texto = texto[:150].replace("\n", " ")
+        resumen_texto = textos_fuentes[0]["texto"][:150].replace("\n", " ")
         print(
-            f"[DEBUG] Groq verificación [{evento.get('tipo')}/{evento.get('ubicacion')}]: "
-            f"texto='{resumen_texto}...' → respuesta='{respuesta[:10]}' → {resultado}"
+            f"[DEBUG] Groq verificación [{evento.get('tipo')}/{evento.get('ubicacion')}] "
+            f"({len(textos_fuentes)} fuente(s)): primera='{resumen_texto}...' "
+            f"→ respuesta='{respuesta[:10]}' → {resultado}"
         )
         return resultado
     except Exception as e:
