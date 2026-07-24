@@ -7,17 +7,28 @@ GROQ_MODEL = "llama-3.1-8b-instant"
 
 SYSTEM_PROMPT = (
     "Eres un filtro de un sistema de monitoreo de emergencias en Venezuela. "
-    "Tu única tarea es responder 'SI' o 'NO' a si el texto describe un EVENTO EMERGENTE "
-    "(una situación aguda que está ocurriendo AHORA o en las últimas horas). "
-    "\n\nResponde 'NO' en estos casos:\n"
+    "Se te da un TIPO de emergencia que un clasificador automático le asignó a un texto, "
+    "y el texto en sí. Tu única tarea es responder 'SI' o 'NO' a si el texto realmente "
+    "describe, como tema PRINCIPAL, un EVENTO EMERGENTE de ESE tipo específico "
+    "(una situación aguda de ese tipo que está ocurriendo AHORA o en las últimas horas).\n"
+    "\nResponde 'NO' en estos casos:\n"
+    "• El texto NO describe realmente un evento del tipo indicado, aunque lo mencione de "
+    "pasada (e.g., tipo=sismo pero el texto es sobre un robo a víctimas de un sismo pasado, "
+    "una nota policial, política o social que solo hace referencia a una emergencia anterior)\n"
+    "• Si tipo=vialidad: un accidente de tránsito individual y rutinario (un choque entre 1-2 "
+    "vehículos, un motorizado herido, un volcamiento aislado) sin víctimas múltiples ni "
+    "colapso de una vía completa — son casos que atiende tránsito/ambulancia local, no algo "
+    "que requiera respuesta de la Cruz Roja\n"
     "• Reportajes/denuncias sobre problemas crónicos (e.g., 'los apagones tienen en jaque a los comerciantes')\n"
     "• Análisis de impacto comercial o socioeconómico de una crisis pasada\n"
     "• Asuntos organizacionales o administrativos (e.g., 'personal dejó la institución')\n"
-    "• Retrospectivas, estudios, estadísticas o menciones de emergencias históricas\n"
+    "• Retrospectivas, estudios, estadísticas, homenajes o menciones de emergencias históricas\n"
     "• Cualquier texto que describe problemas durables, no un evento súbito/agudo\n"
-    "\nResponde 'SI' solo si el texto reporta:\n"
-    "• Un evento que está sucediendo AHORA o en horas recientes (últimas 24h)\n"
+    "\nResponde 'SI' solo si el texto reporta, como tema principal:\n"
+    "• Un evento del tipo indicado que está sucediendo AHORA o en horas recientes (últimas 24h)\n"
     "• Algo que requiere respuesta inmediata de emergencias\n"
+    "• Si tipo=vialidad: solo cuando hay colapso de una vía completa, un accidente masivo con "
+    "múltiples heridos o fallecidos, o afectación significativa de infraestructura vial\n"
     "\nResponde solo con 'SI' o 'NO', nada más."
 )
 
@@ -29,6 +40,7 @@ def parece_emergencia_actual(evento):
         return True
 
     texto = evento.get("texto_muestra", "")[:1500]
+    contenido_usuario = f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento.get('tipo')}\n\nTEXTO:\n{texto}"
 
     try:
         resp = requests.post(
@@ -40,7 +52,7 @@ def parece_emergencia_actual(evento):
                 "max_tokens": 5,
                 "messages": [
                     {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": texto},
+                    {"role": "user", "content": contenido_usuario},
                 ],
             },
             timeout=15,

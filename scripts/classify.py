@@ -23,7 +23,9 @@ def _normalizar(texto):
 
 
 def _tokens(texto):
-    return _normalizar(texto).split()
+    """Tokeniza por palabras, ignorando puntuacion pegada (p.ej. 'Miranda.'
+    o 'Miranda,' deben dar el token 'miranda', no 'miranda.'/'miranda,')."""
+    return re.findall(r"\w+", _normalizar(texto))
 
 
 def _contiene_palabra_clave(texto_norm, palabra):
@@ -78,13 +80,52 @@ def _detectar_ubicacion_texto_plano(texto, estados):
     return None, None
 
 
+_CALIFICADORES_SUBESTATALES = {"municipio", "parroquia"}
+
+# Secuencias de palabras que, justo antes de "Caracas", indican que se usa
+# como referencia de sentido/direccion vial ("sentido Caracas", "rumbo a
+# Caracas"), no como la ubicacion real del suceso -- muy comun en reportes
+# de transito de cualquier estado, ya que "caracas" es alias de Distrito
+# Capital.
+_CALIFICADORES_DIRECCIONALES_CARACAS = [
+    ("sentido",), ("via",), ("vía",), ("hacia",),
+    ("rumbo", "a"), ("direccion", "a"), ("dirección", "a"),
+]
+
+
+def _es_mencion_subestatal(tokens, pos):
+    """True si el token en `pos` esta precedido por 'municipio'/'parroquia',
+    p.ej. 'municipio Sucre'. Varios municipios/parroquias de Venezuela
+    comparten nombre con un estado distinto (Sucre, Miranda, Bolivar...),
+    asi que esa mencion no debe contarse como evidencia de que el estado
+    homonimo es la ubicacion del evento."""
+    return pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES
+
+
+def _es_mencion_direccional(tokens, pos, candidato_tokens):
+    """True si el token en `pos` es 'caracas' usado como referencia de
+    sentido/direccion vial (ver _CALIFICADORES_DIRECCIONALES_CARACAS)."""
+    if candidato_tokens != ["caracas"]:
+        return False
+    for calificador in _CALIFICADORES_DIRECCIONALES_CARACAS:
+        n = len(calificador)
+        if pos - n >= 0 and tuple(tokens[pos - n:pos]) == calificador:
+            return True
+    return False
+
+
 def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
     alguna palabra clave de tipo, o None si no hay ninguna cerca."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
-    posiciones = [i for i, t in enumerate(tokens) if t == primera_palabra]
+    posiciones = [
+        i for i, t in enumerate(tokens)
+        if t == primera_palabra
+        and not _es_mencion_subestatal(tokens, i)
+        and not _es_mencion_direccional(tokens, i, candidato_tokens)
+    ]
     for pos in posiciones:
         inicio = max(0, pos - VENTANA_PROXIMIDAD_PALABRAS)
         fin = min(len(tokens), pos + VENTANA_PROXIMIDAD_PALABRAS)
