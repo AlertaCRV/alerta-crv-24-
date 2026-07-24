@@ -16,7 +16,7 @@ LISTA_NEGRA_POR_ESTADO = {
     "Bolivar": ["simon bolivar", "plaza bolivar", "avenida bolivar", "aeropuerto", "moneda",
                 "billete de", "banco central", "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
-    "Miranda": ["francisco de miranda", "generalisimo miranda", "plaza miranda"],
+    "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
 }
 
 
