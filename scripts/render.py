@@ -1,3 +1,5 @@
+from dateutil import parser as dateparser
+
 TIPO_LABELS = {
     "sismo": "Sismo",
     "incendio": "Incendio",
@@ -32,6 +34,14 @@ CONFIRMACION_EXPLICACION = {
 }
 
 
+def _formatear_fecha(fecha_iso):
+    """Convierte una fecha ISO a formato día/mes/año, hora en formato 12h a.m./p.m."""
+    dt = dateparser.isoparse(fecha_iso)
+    fecha_str = dt.strftime("%d/%m/%Y")
+    hora_str = dt.strftime("%I:%M %p").lstrip("0").replace("AM", "a.m.").replace("PM", "p.m.")
+    return f"{fecha_str}, {hora_str}"
+
+
 def redactar_noticia(evento):
     """Genera el texto final de la noticia a partir de un evento verificado, usando plantillas fijas."""
     tipo_label = TIPO_LABELS.get(evento["tipo"], evento["tipo"].capitalize())
@@ -57,11 +67,11 @@ def redactar_noticia(evento):
         f"{estado_confirmacion} | {severidad_label}\n"
         f"📌 {titulo}\n\n"
         f"📍 Ubicación: {ubicacion_detallada}\n"
-        f"🕒 Hecho reportado: {evento['fecha_evento']}\n"
-        f"🔎 Detectado por el sistema: {evento['fecha_deteccion']}\n"
+        f"🕒 Hecho reportado: {_formatear_fecha(evento['fecha_evento'])}\n"
+        f"🔎 Detectado por el sistema: {_formatear_fecha(evento['fecha_deteccion'])}\n"
         f"📊 Fuentes independientes: {evento['num_fuentes']} (score {evento['score']})\n\n"
-        f"ℹ️ Sobre '{estado_confirmacion}': {confirmacion_explicacion}\n"
-        f"ℹ️ Sobre '{severidad_label}': {severidad_explicacion}\n\n"
+        f"ℹ️ {estado_confirmacion}: {confirmacion_explicacion}\n"
+        f"ℹ️ {severidad_label}: {severidad_explicacion}\n\n"
         f"Fuentes:\n{fuentes_texto}"
     )
 

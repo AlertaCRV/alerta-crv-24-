@@ -105,12 +105,22 @@ function mostrarBanner(hayCritica, cantidad) {
   setTimeout(() => { banner.style.display = 'none'; }, 15000);
 }
 
+function escapeHtml(texto) {
+  return texto.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function linkificar(texto) {
+  return texto.replace(/(https?:\/\/[^\s]+)/g, (url) =>
+    `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+  );
+}
+
 function renderizar(noticias) {
   const cont = document.getElementById('lista');
   if (!noticias.length) { cont.textContent = 'Sin reportes recientes.'; return; }
   cont.innerHTML = noticias.map(n => `
     <div class="noticia ${n.confirmado ? 'confirmado' : 'sin-confirmar'}">
-      <pre>${n.texto.replace(/</g,'&lt;')}</pre>
+      <pre>${linkificar(escapeHtml(n.texto))}</pre>
     </div>
   `).join('');
 }
