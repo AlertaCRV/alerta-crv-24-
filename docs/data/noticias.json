@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "titulo": "Sismo en La Guaira",
+    "texto": "✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n📌 Sismo en La Guaira\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 24/07/2026, 1:46 p.m.\n🔎 Detectado por el sistema: 24/07/2026, 5:48 p.m.\n📊 Fuentes independientes: 3 (score 2.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/a-un-mes-del-terremoto-en-vargas-la-falta-de-agua-afecta-a-las-familias-que-se-quedaron/\n  • El Pitazo: https://elpitazo.net/alianzas/por-que-los-suelos-de-la-guaira-amplificaron-la-devastacion-de-los-terremotos/\n  • Runrun.es: https://runrun.es/noticias/615787/en-la-zona-cero-cronica-de-un-terremoto-que-no-ha-terminado/",
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 2.2,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/la-humanidad/a-un-mes-del-terremoto-en-vargas-la-falta-de-agua-afecta-a-las-familias-que-se-quedaron/",
+        "fecha": "2026-07-24T13:46:59+00:00"
+      },
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/alianzas/por-que-los-suelos-de-la-guaira-amplificaron-la-devastacion-de-los-terremotos/",
+        "fecha": "2026-07-24T12:52:29+00:00"
+      },
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/615787/en-la-zona-cero-cronica-de-un-terremoto-que-no-ha-terminado/",
+        "fecha": "2026-07-24T11:43:14+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-24T13:46:59+00:00",
+    "fecha_deteccion": "2026-07-24T17:48:00.630272+00:00"
+  }
+]
