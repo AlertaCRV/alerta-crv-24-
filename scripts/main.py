@@ -3,7 +3,7 @@ from fetch_rss import fetch_rss_items
 from fetch_telegram import fetch_telegram_items
 from classify import clasificar_item, es_relevante
 from verify import agrupar_y_verificar
-from verify_ai import parece_emergencia_actual
+from verify_ai import verificar_evento_con_ia
 from render import redactar_noticia
 from state import cargar_publicados, guardar_publicados, filtrar_nuevos, marcar_publicados
 from publish_telegram import publicar_en_telegram
@@ -32,7 +32,8 @@ def main():
     eventos = agrupar_y_verificar(items)
     print(f"  {len(eventos)} eventos agrupados")
 
-    eventos = [e for e in eventos if parece_emergencia_actual(e)]
+    eventos = [verificar_evento_con_ia(e) for e in eventos]
+    eventos = [e for e in eventos if e is not None]
     print(f"  {len(eventos)} eventos tras verificación de plausibilidad (IA)")
 
     publicados = cargar_publicados()
