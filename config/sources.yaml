@@ -2,6 +2,9 @@
 # "peso" = score de confiabilidad de la fuente (0.0 a 1.0) usado en la verificación cruzada.
 
 rss:
+  - nombre: "ReliefWeb Venezuela"
+    url: "https://reliefweb.int/country/ven/rss.xml"
+    peso: 0.9
   - nombre: "Efecto Cocuyo - Sucesos"
     url: "https://efectococuyo.com/sucesos/feed/"
     peso: 0.8

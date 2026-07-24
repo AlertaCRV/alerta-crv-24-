@@ -7,11 +7,18 @@ GROQ_MODEL = "llama-3.1-8b-instant"
 
 SYSTEM_PROMPT = (
     "Eres un filtro de un sistema de monitoreo de emergencias en Venezuela. "
-    "Tu única tarea es responder 'SI' o 'NO' a si el texto describe una emergencia "
-    "OCURRIENDO ACTUALMENTE o MUY RECIENTE (últimas horas/dias). "
-    "Responde 'NO' si el texto es: un informe, análisis, estudio, estadística, "
-    "aniversario, recuento histórico, o cualquier mención de una emergencia PASADA "
-    "que ya no está en curso. Responde solo con la palabra SI o NO, nada más."
+    "Tu única tarea es responder 'SI' o 'NO' a si el texto describe un EVENTO EMERGENTE "
+    "(una situación aguda que está ocurriendo AHORA o en las últimas horas). "
+    "\n\nResponde 'NO' en estos casos:\n"
+    "• Reportajes/denuncias sobre problemas crónicos (e.g., 'los apagones tienen en jaque a los comerciantes')\n"
+    "• Análisis de impacto comercial o socioeconómico de una crisis pasada\n"
+    "• Asuntos organizacionales o administrativos (e.g., 'personal dejó la institución')\n"
+    "• Retrospectivas, estudios, estadísticas o menciones de emergencias históricas\n"
+    "• Cualquier texto que describe problemas durables, no un evento súbito/agudo\n"
+    "\nResponde 'SI' solo si el texto reporta:\n"
+    "• Un evento que está sucediendo AHORA o en horas recientes (últimas 24h)\n"
+    "• Algo que requiere respuesta inmediata de emergencias\n"
+    "\nResponde solo con 'SI' o 'NO', nada más."
 )
 
 
@@ -40,7 +47,9 @@ def parece_emergencia_actual(evento):
         )
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip().upper()
-        return respuesta.startswith("SI")
+        resultado = respuesta.startswith("SI")
+        print(f"[DEBUG] Groq verificación: '{respuesta[:30]}...' → {resultado}")
+        return resultado
     except Exception as e:
         print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento: {e}")
         return True
