@@ -50,7 +50,7 @@ def _parsear_asunto(asunto):
 
     _, estado_raw, tipo_raw, severidad_raw = partes
 
-    ubicacion = detectar_ubicacion(f"#{estado_raw.replace(' ', '')}")
+    ubicacion, _ = detectar_ubicacion(f"#{estado_raw.replace(' ', '')}")
     tipo = TIPO_MAP.get(_normalizar(tipo_raw))
     severidad = _normalizar(severidad_raw)
     if severidad not in SEVERIDADES_VALIDAS:
