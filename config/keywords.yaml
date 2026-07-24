@@ -58,6 +58,8 @@ tipos:
     - aludes
     - deslave
     - deslaves
+    - escombro
+    - escombros
   infraestructura_electrica:
     - apagon
     - apagones
@@ -137,6 +139,7 @@ severidad:
     - desaparecidos
     - colapso total
     - emergencia nacional
+     - emergencia regional
   alto:
     - heridos
     - hospitalizados
