@@ -1,9 +1,5 @@
 import difflib
 import re
-from datetime import datetime, timezone
-from dateutil import parser as dateparser
-
-from config_loader import load_settings
 
 _AGENCIAS = ["efe", "afp", "reuters", "dpa", "ansa", "xinhua", "europa press", "sputnik"]
 _AGENCIA_RE = re.compile(
@@ -43,10 +39,12 @@ def _mismo_origen(a, b):
 
 
 def _agrupar_por_independencia(fuentes):
-    """Agrupa fuentes de un mismo cluster que probablemente no son
-    confirmaciones independientes entre si (mismo cable de agencia, o texto
-    casi identico republicado). Devuelve una fuente representativa (la de
-    mayor peso) por cada grupo, ordenadas por peso descendente."""
+    """Agrupa fuentes de un mismo cluster que probablemente comparten el
+    mismo origen (mismo cable de agencia, o texto casi identico republicado).
+    Devuelve una lista de grupos (cada grupo es una lista de fuentes que
+    comparten origen), ordenados por el peso de su miembro mas pesado,
+    descendente. La verificacion de plausibilidad con IA (ver verify_ai.py)
+    evalua un representante por grupo, no cada fuente individualmente."""
     grupos = []
     for f in fuentes:
         grupo_encontrado = next(
@@ -57,14 +55,15 @@ def _agrupar_por_independencia(fuentes):
         else:
             grupos.append([f])
 
-    representantes = [max(g, key=lambda m: m["peso"]) for g in grupos]
-    return sorted(representantes, key=lambda m: m["peso"], reverse=True)
+    grupos.sort(key=lambda g: max(m["peso"] for m in g), reverse=True)
+    return grupos
 
 
 def agrupar_y_verificar(items):
-    settings = load_settings()["verificacion"]
-    umbral = settings["umbral_confirmado"]
-
+    """Agrupa items relevantes por (tipo, ubicacion). El score, severidad y
+    confirmacion final se calculan en verify_ai.py DESPUES de la
+    verificacion de plausibilidad con IA, usando solo las fuentes que la IA
+    considero vigentes -- por eso aqui solo se arma la agrupacion cruda."""
     clusters = {}
     for item in items:
         clave = _clave_cluster(item)
@@ -78,49 +77,15 @@ def agrupar_y_verificar(items):
             if nombre not in fuentes_unicas or m["peso"] > fuentes_unicas[nombre]["peso"]:
                 fuentes_unicas[nombre] = m
 
-        # Fuentes que probablemente comparten el mismo origen (mismo cable de
-        # agencia, o texto casi identico republicado) no cuentan cada una como
-        # confirmacion independiente para el score/num_fuentes.
-        fuentes_independientes = _agrupar_por_independencia(list(fuentes_unicas.values()))
-
-        score = sum(f["peso"] for f in fuentes_independientes)
-        severidades = [m["severidad"] for m in miembros if m["severidad"] != "sin_clasificar"]
-        orden_severidad = ["critico", "alto", "medio", "bajo"]
-        severidad_final = next((s for s in orden_severidad if s in severidades), "sin_clasificar")
-
-        fecha_mas_reciente = max(miembros, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
-
         municipio = next((m.get("municipio") for m in miembros if m.get("municipio")), None)
         parroquia = next((m.get("parroquia") for m in miembros if m.get("parroquia")), None)
-
-        texto_muestra = fuentes_independientes[0]["texto"]
-        # Se manda a Groq el texto de las fuentes independientes del cluster
-        # (no las que ya se agruparon por compartir origen): si una fuente
-        # esta redactada de forma ambigua pero otras del mismo cluster dejan
-        # claro que es, p.ej., una retrospectiva, la IA necesita ver el
-        # conjunto para no aprobar el evento por error.
-        textos_fuentes = [
-            {"fuente": f["fuente_nombre"], "texto": f["texto"][:400]}
-            for f in fuentes_independientes
-        ]
 
         eventos.append({
             "tipo": tipo,
             "ubicacion": ubicacion,
             "municipio": municipio,
             "parroquia": parroquia,
-            "texto_muestra": texto_muestra,
-            "textos_fuentes": textos_fuentes,
-            "severidad": severidad_final,
-            "score": round(score, 2),
-            "confirmado": score >= umbral,
-            "num_fuentes": len(fuentes_independientes),
-            "fuentes": [
-                {"nombre": f["fuente_nombre"], "link": f["link"], "fecha": f["fecha"]}
-                for f in fuentes_unicas.values()
-            ],
-            "fecha_evento": fecha_mas_reciente,
-            "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
+            "grupos_fuentes": _agrupar_por_independencia(list(fuentes_unicas.values())),
         })
 
     return eventos
