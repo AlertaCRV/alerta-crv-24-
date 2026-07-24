@@ -7,7 +7,10 @@ _HASHTAG_RE = re.compile(r"#(\w+)", re.UNICODE)
 _MUNICIPIO_RE = re.compile(r"municipio\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|$)", re.IGNORECASE)
 _PARROQUIA_RE = re.compile(r"parroquia\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|$)", re.IGNORECASE)
 
-VENTANA_PROXIMIDAD_PALABRAS = 15
+# Una oracion realista que describe el evento y luego da la jerarquia completa
+# "parroquia X, municipio Y del estado Z" (a veces con nombres compuestos, p.ej.
+# "parroquia J. Vidal Marcano") puede superar facilmente las 25-30 palabras.
+VENTANA_PROXIMIDAD_PALABRAS = 35
 
 LISTA_NEGRA_POR_ESTADO = {
     "Bolivar": ["simon bolivar", "plaza bolivar", "avenida bolivar", "aeropuerto", "moneda",

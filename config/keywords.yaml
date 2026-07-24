@@ -27,6 +27,14 @@ tipos:
     - llamas
     - quema
     - quemas
+    # "explosion" sola se evita a proposito: colisiona con usos idiomaticos
+    # frecuentes ("explosion de alegria/violencia/color"). Se usan frases
+    # especificas de explosiones reales en vez de la palabra suelta.
+    - explosion de gas
+    - explosión de gas
+    - fuga de gas
+    - gas licuado
+    - onda expansiva
   inundacion:
     - inundacion
     - inundaciones
@@ -58,6 +66,10 @@ tipos:
     - fallas electricas
     - falla eléctrica
     - fallas eléctricas
+    - colapso electrico
+    - colapso eléctrico
+    - tendido electrico
+    - tendido eléctrico
     - corte de luz
     - cortes de luz
     - corpoelec
