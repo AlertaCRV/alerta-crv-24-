@@ -4,66 +4,115 @@
 tipos:
   sismo:
     - sismo
+    - sismos
     - temblor
+    - temblores
     - terremoto
+    - terremotos
     - replica
+    - replicas
     - réplica
+    - réplicas
     - movimiento telurico
+    - movimientos telúricos
     - movimiento sísmico
+    - movimientos sísmicos
   incendio:
     - incendio
+    - incendios
     - incendio forestal
+    - incendios forestales
     - conato de incendio
+    - conatos de incendio
     - llamas
     - quema
+    - quemas
   inundacion:
     - inundacion
+    - inundaciones
     - inundación
     - desbordamiento
+    - desbordamientos
     - crecida
+    - crecidas
     - anegado
     - anegada
+    - anegados
+    - anegadas
+    - vaguada
+    - vaguadas
   deslizamiento:
     - deslizamiento
+    - deslizamientos
     - derrumbe
+    - derrumbes
     - alud
+    - aludes
     - deslave
+    - deslaves
   infraestructura_electrica:
     - apagon
+    - apagones
     - apagón
     - falla electrica
+    - fallas electricas
     - falla eléctrica
+    - fallas eléctricas
     - corte de luz
+    - cortes de luz
     - corpoelec
   infraestructura_agua:
     - falla de agua
+    - fallas de agua
     - corte de agua
+    - cortes de agua
     - sin agua
+    - sin recibir agua
     - hidrocapital
     - hidrologica
   vialidad:
     - colapso vial
+    - colapsos viales
     - via colapsada
+    - vías colapsadas
     - vía colapsada
     - accidente vial
+    - accidentes viales
     - choque
+    - choques
+    - colision
+    - colisiones
+    - colisión
     - volcamiento
+    - volcamientos
   orden_publico:
     - disturbio
+    - disturbios
     - protesta
+    - protestas
     - saqueo
+    - saqueos
     - enfrentamiento
+    - enfrentamientos
     - manifestacion
+    - manifestaciones
     - manifestación
     - hecho de violencia
+    - hechos de violencia
     - tiroteo
+    - tiroteos
   salud_publica:
     - brote
+    - brotes
     - epidemia
+    - epidemias
     - alerta sanitaria
+    - alertas sanitarias
     - intoxicacion masiva
+    - intoxicaciones masivas
     - intoxicación masiva
     - enfermedad
+    - enfermedades
 
 severidad:
   critico:
