@@ -26,14 +26,29 @@ def _tokens(texto):
     return _normalizar(texto).split()
 
 
+def _contiene_palabra_clave(texto_norm, palabra):
+    """Busca `palabra` como palabra completa (no como substring de otra
+    palabra, p.ej. 'alud' dentro de 'salud')."""
+    patron = r"\b" + re.escape(_normalizar(palabra)) + r"\b"
+    return re.search(patron, texto_norm) is not None
+
+
 def detectar_ubicacion(texto):
+    """Devuelve (nombre_estado, ventana_cercana) o (None, None).
+
+    ventana_cercana es el fragmento de texto alrededor de la mención del
+    estado que confirmó la ubicación; detectar_tipo() lo usa para no
+    clasificar el tipo de emergencia a partir de palabras clave sueltas en
+    otra parte del artículo. Es None cuando la ubicación viene de un hashtag
+    (no hay una "mención en el texto" de la cual tomar una ventana).
+    """
     estados = load_estados()
     hashtags = [h.lower() for h in _HASHTAG_RE.findall(texto)]
 
     for nombre_estado, alias in estados.items():
         for tag in hashtags:
             if tag in alias or tag == nombre_estado.lower().replace(" ", ""):
-                return nombre_estado
+                return nombre_estado, None
 
     return _detectar_ubicacion_texto_plano(texto, estados)
 
@@ -56,13 +71,16 @@ def _detectar_ubicacion_texto_plano(texto, estados):
             if any(frase in texto_norm for frase in lista_negra):
                 continue
 
-            if _hay_palabra_clave_cerca(tokens, candidato_norm, palabras_tipo):
-                return nombre_estado
+            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo)
+            if ventana:
+                return nombre_estado, ventana
 
-    return None
+    return None, None
 
 
-def _hay_palabra_clave_cerca(tokens, candidato_norm, palabras_tipo):
+def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
+    """Devuelve la ventana de texto alrededor de candidato_norm si contiene
+    alguna palabra clave de tipo, o None si no hay ninguna cerca."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
@@ -72,9 +90,9 @@ def _hay_palabra_clave_cerca(tokens, candidato_norm, palabras_tipo):
         fin = min(len(tokens), pos + VENTANA_PROXIMIDAD_PALABRAS)
         ventana = " ".join(tokens[inicio:fin])
         for palabra in palabras_tipo:
-            if _normalizar(palabra) in ventana:
-                return True
-    return False
+            if _contiene_palabra_clave(ventana, palabra):
+                return ventana
+    return None
 
 
 def detectar_municipio_parroquia(texto, estado):
@@ -101,12 +119,19 @@ def detectar_municipio_parroquia(texto, estado):
     return municipio_encontrado, parroquia_encontrada
 
 
-def detectar_tipo(texto):
-    texto_norm = _normalizar(texto)
+def detectar_tipo(texto, ventana=None):
+    """Detecta tipos de emergencia por palabra clave.
+
+    Si se da `ventana` (el fragmento cercano a la ubicación detectada, ver
+    detectar_ubicacion), la búsqueda se limita a ese fragmento en vez de
+    todo el texto, para no tomar palabras clave de otra parte del artículo
+    que no tiene relación con la ubicación detectada.
+    """
+    fuente_norm = ventana if ventana is not None else _normalizar(texto)
     tipos_encontrados = []
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:
-            if _normalizar(palabra) in texto_norm:
+            if _contiene_palabra_clave(fuente_norm, palabra):
                 tipos_encontrados.append(tipo)
                 break
     return tipos_encontrados
@@ -118,7 +143,7 @@ def detectar_severidad(texto):
     severidades = load_keywords()["severidad"]
     for nivel in orden:
         for palabra in severidades.get(nivel, []):
-            if _normalizar(palabra) in texto_norm:
+            if _contiene_palabra_clave(texto_norm, palabra):
                 return nivel
     return "sin_clasificar"
 
@@ -133,8 +158,8 @@ def clasificar_item(item):
         item["parroquia"] = None
         return item
 
-    item["ubicacion"] = detectar_ubicacion(item["texto"])
-    item["tipos"] = detectar_tipo(item["texto"])
+    item["ubicacion"], ventana = detectar_ubicacion(item["texto"])
+    item["tipos"] = detectar_tipo(item["texto"], ventana)
     item["severidad"] = detectar_severidad(item["texto"])
     item["municipio"], item["parroquia"] = detectar_municipio_parroquia(item["texto"], item["ubicacion"])
     return item
