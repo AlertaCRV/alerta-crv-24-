@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "titulo": "Sismo en La Guaira",
+    "texto": "✅ CONFIRMADO | 🔴 CRÍTICO\n📌 Sismo en La Guaira\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 24/07/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 24/07/2026, 1:08 p.m.\n📊 Fuentes independientes: 6 (score 3.65)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 CRÍTICO: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/615787/en-la-zona-cero-cronica-de-un-terremoto-que-no-ha-terminado/\n  • El Pitazo: https://elpitazo.net/alianzas/por-que-los-suelos-de-la-guaira-amplificaron-la-devastacion-de-los-terremotos/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/proteccion-civil-desmiente-recientes-rescates-de-sobrevivientes/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/cofavic-exige-plan-de-exhumaciones-y-registro-unificado-de-desaparecidos/?utm_source=rss&utm_medium=rss&utm_campaign=cofavic-exige-plan-de-exhumaciones-y-registro-unificado-de-desaparecidos\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/24/al-cumplirse-30-dias-de-los-dos-terremotos-en-la-guaira-la-gente-dice-que-no-va-a-dejar-a-sus-muertos-ahi/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/mes-venezuela-se-abrio-la-tierra-en-dos/",
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "texto_muestra": "¿Por qué los suelos de La Guaira amplificaron la devastación de los terremotos? Horas después del doblete sísmico de San Juan, las imágenes aéreas de La Guaira daban cuenta de la ruina y la desolación.&#160;En tierra, se encaraba la tragedia&#160;con miles de personas excavando entre los escombros, intentando salvar a los suyos de la muerte apenas con sus manos desnudas. Pero debajo de los&#160;suelos, quizás, estaban algunas de [&#8230;]",
+    "severidad": "critico",
+    "score": 3.65,
+    "confirmado": true,
+    "num_fuentes": 6,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/615787/en-la-zona-cero-cronica-de-un-terremoto-que-no-ha-terminado/",
+        "fecha": "2026-07-24T11:43:14+00:00"
+      },
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/alianzas/por-que-los-suelos-de-la-guaira-amplificaron-la-devastacion-de-los-terremotos/",
+        "fecha": "2026-07-24T12:52:29+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/proteccion-civil-desmiente-recientes-rescates-de-sobrevivientes/",
+        "fecha": "2026-07-24T04:10:44+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/cofavic-exige-plan-de-exhumaciones-y-registro-unificado-de-desaparecidos/?utm_source=rss&utm_medium=rss&utm_campaign=cofavic-exige-plan-de-exhumaciones-y-registro-unificado-de-desaparecidos",
+        "fecha": "2026-07-24T01:57:50+00:00"
+      },
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/07/24/al-cumplirse-30-dias-de-los-dos-terremotos-en-la-guaira-la-gente-dice-que-no-va-a-dejar-a-sus-muertos-ahi/",
+        "fecha": "2026-07-24T13:00:02+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/mes-venezuela-se-abrio-la-tierra-en-dos/",
+        "fecha": "2026-07-24T12:00:00+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-24T13:00:02+00:00",
+    "fecha_deteccion": "2026-07-24T13:08:43.793276+00:00"
+  }
+]
