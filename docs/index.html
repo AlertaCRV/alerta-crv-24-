@@ -17,6 +17,17 @@
   a { color:#6cb6ff; }
   pre { white-space:pre-wrap; word-wrap:break-word; font-family:inherit; }
 
+  #construccion-banner {
+    position:sticky; top:0; z-index:11;
+    padding:0.8rem 1rem; margin-bottom:1rem;
+    background:#f39c12; color:#1a1200;
+    font-weight:bold; text-align:center;
+    border-bottom:2px solid #c9770a;
+  }
+  #construccion-banner .aviso {
+    display:block; font-weight:normal; font-size:0.85rem; margin-top:0.2rem;
+  }
+
   #alerta-banner {
     display:none;
     position:sticky; top:0; z-index:10;
@@ -42,6 +53,10 @@
 </style>
 </head>
 <body>
+<div id="construccion-banner">
+  🚧 SITIO EN CONSTRUCCIÓN
+  <span class="aviso">Estamos en fase de pruebas: el sistema puede presentar errores, retrasos o alertas inexactas mientras se completan los ajustes. Verifica la información de forma independiente.</span>
+</div>
 <header>
   <img src="logo-crv.png" alt="Cruz Roja Venezolana">
   <div class="titulos">
