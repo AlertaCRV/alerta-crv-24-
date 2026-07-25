@@ -191,15 +191,17 @@ def verificar_evento_con_ia(evento):
     for grupo in grupos_fuentes:
         representante = max(grupo, key=lambda m: m["peso"])
         if _es_retrospectiva_obvia(representante["texto"]):
-            obvios_rechazados.append((representante["fuente_nombre"], grupo))
+            obvios_rechazados.append(representante)
         else:
             candidatos.append(grupo)
 
     if obvios_rechazados:
-        nombres = ", ".join(nombre for nombre, _ in obvios_rechazados)
+        detalle_rechazados = ", ".join(
+            f"{r['fuente_nombre']} ({r['link']})" for r in obvios_rechazados
+        )
         print(
             f"[DEBUG] Filtro retrospectiva [{evento['tipo']}/{evento['ubicacion']}]: "
-            f"rechazadas sin IA por marca temporal explicita: {nombres}"
+            f"rechazadas sin IA por marca temporal explicita: {detalle_rechazados}"
         )
 
     if not candidatos:
@@ -256,7 +258,7 @@ def verificar_evento_con_ia(evento):
 
         representantes = [max(g, key=lambda m: m["peso"]) for g in candidatos]
         detalle = ", ".join(
-            f"{r['fuente_nombre']}={v}" for r, v in zip(representantes, veredictos)
+            f"{r['fuente_nombre']} ({r['link']})={v}" for r, v in zip(representantes, veredictos)
         )
         grupos_aprobados = [g for g, v in zip(candidatos, veredictos) if v == "SI"]
         print(

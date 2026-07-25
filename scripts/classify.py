@@ -19,6 +19,22 @@ LISTA_NEGRA_POR_ESTADO = {
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
 }
 
+# Un keyword suelto de tipo no siempre significa que el articulo trata
+# realmente de ese tipo de evento. Caso real: "Activan cerco epidemiologico
+# especial en zonas afectadas por sismos en La Guaira" -- la palabra
+# "sismos" aparece, pero el tema es una medida de salud publica, no un
+# sismo ocurriendo ahora. Si la ventana tiene contexto de esta lista Y no
+# tiene ninguna palabra de _EVIDENCIA_FUERTE_POR_TIPO para ese tipo, se
+# descarta el tipo para esa mencion puntual.
+_CONTEXTO_CONFLICTIVO_POR_TIPO = {
+    "sismo": ["cerco epidemiologico", "epidemiologico", "brote de enfermedad",
+              "atenciones medicas", "salud integral comunitaria"],
+}
+_EVIDENCIA_FUERTE_POR_TIPO = {
+    "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
+              "sacudio", "remezon"],
+}
+
 
 def _normalizar(texto):
     texto = texto.strip().lower()
@@ -163,6 +179,18 @@ def detectar_municipio_parroquia(texto, estado):
     return municipio_encontrado, parroquia_encontrada
 
 
+def _tipo_con_contexto_conflictivo(texto_norm, tipo):
+    """True si el tipo detectado probablemente sea un falso positivo: la
+    ventana tiene contexto que sugiere que el tema real es otro (ver
+    _CONTEXTO_CONFLICTIVO_POR_TIPO) y no hay evidencia mas fuerte de que si
+    se trata de ese tipo de evento (ver _EVIDENCIA_FUERTE_POR_TIPO)."""
+    conflictivo = _CONTEXTO_CONFLICTIVO_POR_TIPO.get(tipo)
+    if not conflictivo or not any(_contiene_palabra_clave(texto_norm, f) for f in conflictivo):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get(tipo, [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 def detectar_tipo(texto, ventana=None):
     """Detecta tipos de emergencia por palabra clave.
 
@@ -176,7 +204,8 @@ def detectar_tipo(texto, ventana=None):
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:
             if _contiene_palabra_clave(fuente_norm, palabra):
-                tipos_encontrados.append(tipo)
+                if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
+                    tipos_encontrados.append(tipo)
                 break
     return tipos_encontrados
 
