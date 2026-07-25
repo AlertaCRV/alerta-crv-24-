@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: monitor-crv
@@ -18,12 +19,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # Token de un usuario con permiso de bypass en el ruleset de main
-          # (el GITHUB_TOKEN por defecto no lo tiene, y el push del bot al
-          # guardar publicados.json/noticias.json quedaba rechazado por la
-          # regla "Changes must be made through a pull request").
-          token: ${{ secrets.GH_PAT }}
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -48,10 +43,30 @@ jobs:
         run: python main.py
 
       - name: Guardar cambios (datos y sitio)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "AlertaCRV Bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/publicados.json docs/data/noticias.json
-          git diff --staged --quiet || git commit -m "Actualizar reportes [skip ci]"
-          git pull --rebase origin main
-          git push
+
+          if git diff --staged --quiet; then
+            echo "Sin cambios que guardar."
+            exit 0
+          fi
+
+          # main tiene un ruleset que exige pasar por PR + el check "validar"
+          # -- el bot no tiene (ni deberia tener) permiso para saltarselo, asi
+          # que en vez de pushear directo, abre una PR desde una rama propia
+          # y la mergea automaticamente apenas el check pase. Sin "[skip ci]"
+          # en el mensaje: si lo tuviera, GitHub no dispararia el workflow de
+          # validacion y el auto-merge nunca se habilitaria.
+          RAMA="bot/estado-${{ github.run_id }}"
+          git checkout -b "$RAMA"
+          git commit -m "Actualizar reportes"
+          git push origin "$RAMA"
+
+          gh pr create --base main --head "$RAMA" \
+            --title "Actualizar reportes (corrida ${{ github.run_id }})" \
+            --body "Actualizacion automatica de data/publicados.json y docs/data/noticias.json."
+          gh pr merge "$RAMA" --auto --squash --delete-branch
