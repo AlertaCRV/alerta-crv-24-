@@ -1,3 +1,4 @@
+import calendar
 import re
 import time
 from datetime import datetime, timezone
@@ -45,7 +46,11 @@ def fetch_rss_items(ventana_horas=12):
         for entry in parsed.entries:
             published_struct = entry.get("published_parsed") or entry.get("updated_parsed")
             if published_struct:
-                published_ts = time.mktime(published_struct)
+                # feedparser entrega este struct_time ya normalizado a UTC.
+                # calendar.timegm() lo interpreta como UTC sin importar la
+                # zona horaria del sistema (a diferencia de time.mktime(),
+                # que asume que el struct esta en hora local del proceso).
+                published_ts = calendar.timegm(published_struct)
             else:
                 published_ts = time.time()
 
