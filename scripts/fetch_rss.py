@@ -43,16 +43,24 @@ def fetch_rss_items(ventana_horas=12):
             print(f"[WARN] No se pudo leer el RSS de {fuente['nombre']}: {e}")
             continue
 
+        sin_fecha = 0
         for entry in parsed.entries:
             published_struct = entry.get("published_parsed") or entry.get("updated_parsed")
-            if published_struct:
-                # feedparser entrega este struct_time ya normalizado a UTC.
-                # calendar.timegm() lo interpreta como UTC sin importar la
-                # zona horaria del sistema (a diferencia de time.mktime(),
-                # que asume que el struct esta en hora local del proceso).
-                published_ts = calendar.timegm(published_struct)
-            else:
-                published_ts = time.time()
+            if not published_struct:
+                # Sin fecha real en el feed no hay forma de saber si el item
+                # es reciente o de hace semanas -- se descarta en vez de
+                # asumir "ahora". Asumir "ahora" fue un bug real: hacia que
+                # articulos viejos de medios sin fecha en su RSS (ej.
+                # Notitarde, ninguno de sus 50 items trae pubDate) parecieran
+                # siempre recien publicados en cada corrida.
+                sin_fecha += 1
+                continue
+
+            # feedparser entrega este struct_time ya normalizado a UTC.
+            # calendar.timegm() lo interpreta como UTC sin importar la zona
+            # horaria del sistema (a diferencia de time.mktime(), que asume
+            # que el struct esta en hora local del proceso).
+            published_ts = calendar.timegm(published_struct)
 
             if published_ts < limite:
                 continue
@@ -68,6 +76,9 @@ def fetch_rss_items(ventana_horas=12):
                 "link": entry.get("link", ""),
                 "fecha": datetime.fromtimestamp(published_ts, tz=timezone.utc).isoformat(),
             })
+
+        if sin_fecha:
+            print(f"[WARN] {fuente['nombre']}: {sin_fecha} item(s) sin fecha en el RSS, descartados")
 
     return items
 
