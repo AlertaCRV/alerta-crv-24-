@@ -35,6 +35,26 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
               "sacudio", "remezon"],
 }
 
+# Fallas de electricidad/agua rara vez usan las palabras clave de severidad
+# ("heridos", "danos severos"...) aunque describan una situacion real de
+# precaucion -- una duracion prolongada mencionada explicitamente (p.ej. "94
+# horas sin luz") es evidencia suficiente de BAJO ("situacion de precaucion,
+# sin danos significativos reportados") en vez de quedar SIN CLASIFICAR por
+# falta de palabras clave.
+_TIPOS_CON_DURACION_BAJO = {"infraestructura_electrica", "infraestructura_agua"}
+_DURACION_HORAS_RE = re.compile(r"\b(\d{1,3})\s*horas?\b", re.IGNORECASE)
+_DURACION_DIAS_RE = re.compile(r"\b(\d{1,2})\s*d[ií]as?\b", re.IGNORECASE)
+
+
+def _severidad_por_duracion(texto_norm, tipos):
+    if not any(t in _TIPOS_CON_DURACION_BAJO for t in tipos):
+        return None
+    if any(int(m.group(1)) >= 24 for m in _DURACION_HORAS_RE.finditer(texto_norm)):
+        return "bajo"
+    if any(int(m.group(1)) >= 1 for m in _DURACION_DIAS_RE.finditer(texto_norm)):
+        return "bajo"
+    return None
+
 
 def _normalizar(texto):
     texto = texto.strip().lower()
@@ -210,7 +230,7 @@ def detectar_tipo(texto, ventana=None):
     return tipos_encontrados
 
 
-def detectar_severidad(texto):
+def detectar_severidad(texto, tipos=None):
     texto_norm = _normalizar(texto)
     orden = ["critico", "alto", "medio", "bajo"]
     severidades = load_keywords()["severidad"]
@@ -218,6 +238,10 @@ def detectar_severidad(texto):
         for palabra in severidades.get(nivel, []):
             if _contiene_palabra_clave(texto_norm, palabra):
                 return nivel
+    if tipos:
+        por_duracion = _severidad_por_duracion(texto_norm, tipos)
+        if por_duracion:
+            return por_duracion
     return "sin_clasificar"
 
 
@@ -233,7 +257,7 @@ def clasificar_item(item):
 
     item["ubicacion"], ventana = detectar_ubicacion(item["texto"])
     item["tipos"] = detectar_tipo(item["texto"], ventana)
-    item["severidad"] = detectar_severidad(item["texto"])
+    item["severidad"] = detectar_severidad(item["texto"], item["tipos"])
     item["municipio"], item["parroquia"] = detectar_municipio_parroquia(item["texto"], item["ubicacion"])
     return item
 

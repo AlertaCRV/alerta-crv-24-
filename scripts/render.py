@@ -77,8 +77,8 @@ def redactar_noticia(evento):
         )
 
     texto = (
-        f"{estado_confirmacion} | {severidad_label}\n"
         f"📌 {titulo}\n\n"
+        f"{estado_confirmacion} | {severidad_label}\n\n"
         f"📍 Ubicación: {ubicacion_detallada}\n"
         f"🕒 Hecho reportado: {_formatear_fecha(evento['fecha_evento'])}\n"
         f"🔎 Detectado por el sistema: {_formatear_fecha(evento['fecha_deteccion'])}\n"
