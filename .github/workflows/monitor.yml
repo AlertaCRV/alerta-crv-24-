@@ -19,6 +19,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Un push/PR hecho con el GITHUB_TOKEN por defecto NO dispara otros
+          # workflows (evita loops recursivos, por diseno de GitHub) -- eso
+          # dejaba a "validar" sin correr nunca sobre las PRs del bot, que
+          # quedaban trabadas para siempre esperando un check que jamas
+          # arrancaba. Con un token de acceso personal (secreto GH_PAT) el
+          # push/creacion de PR se autentica como un usuario normal y si
+          # dispara "validar" con normalidad.
+          token: ${{ secrets.GH_PAT }}
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -44,7 +53,7 @@ jobs:
 
       - name: Guardar cambios (datos y sitio)
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "AlertaCRV Bot"
           git config user.email "actions@users.noreply.github.com"
