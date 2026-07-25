@@ -40,19 +40,28 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
 # precaucion -- una duracion prolongada mencionada explicitamente (p.ej. "94
 # horas sin luz") es evidencia suficiente de BAJO ("situacion de precaucion,
 # sin danos significativos reportados") en vez de quedar SIN CLASIFICAR por
-# falta de palabras clave.
-_TIPOS_CON_DURACION_BAJO = {"infraestructura_electrica", "infraestructura_agua"}
+# falta de palabras clave. El umbral es distinto por tipo: los cortes de
+# electricidad son criticos mucho antes que los de agua (que en Venezuela
+# suelen durar dias o semanas sin ser una emergencia en si misma), asi que
+# el margen para agua es de 7 dias o mas, no de 1 dia como electricidad.
+_UMBRAL_DIAS_DURACION_BAJO_POR_TIPO = {
+    "infraestructura_electrica": 1,
+    "infraestructura_agua": 7,
+}
 _DURACION_HORAS_RE = re.compile(r"\b(\d{1,3})\s*horas?\b", re.IGNORECASE)
 _DURACION_DIAS_RE = re.compile(r"\b(\d{1,2})\s*d[ií]as?\b", re.IGNORECASE)
 
 
 def _severidad_por_duracion(texto_norm, tipos):
-    if not any(t in _TIPOS_CON_DURACION_BAJO for t in tipos):
-        return None
-    if any(int(m.group(1)) >= 24 for m in _DURACION_HORAS_RE.finditer(texto_norm)):
-        return "bajo"
-    if any(int(m.group(1)) >= 1 for m in _DURACION_DIAS_RE.finditer(texto_norm)):
-        return "bajo"
+    for tipo in tipos:
+        umbral_dias = _UMBRAL_DIAS_DURACION_BAJO_POR_TIPO.get(tipo)
+        if umbral_dias is None:
+            continue
+        umbral_horas = umbral_dias * 24
+        if any(int(m.group(1)) >= umbral_horas for m in _DURACION_HORAS_RE.finditer(texto_norm)):
+            return "bajo"
+        if any(int(m.group(1)) >= umbral_dias for m in _DURACION_DIAS_RE.finditer(texto_norm)):
+            return "bajo"
     return None
 
 
