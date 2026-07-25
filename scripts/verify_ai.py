@@ -1,4 +1,7 @@
 import os
+import re
+import time
+import unicodedata
 from datetime import datetime, timezone
 
 import requests
@@ -7,7 +10,29 @@ from dateutil import parser as dateparser
 from config_loader import load_settings
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "llama-3.3-70b-versatile"
+
+# Filtro determinista de respaldo: si el texto de una fuente contiene una
+# marca temporal explícita de retrospectiva/aniversario, se descarta sin
+# depender del juicio del modelo (que en la practica ha fallado en casos
+# como "a un mes del terremoto en Vargas...").
+_NUMEROS = r"(un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+)"
+_PATRON_RETROSPECTIVA = re.compile(
+    rf"\b(a|al cumplirse)\s+{_NUMEROS}\s+"
+    r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
+    r"|\baniversario\b"
+    rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b",
+    re.IGNORECASE,
+)
+
+
+def _normalizar(texto):
+    texto = texto.lower()
+    return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn")
+
+
+def _es_retrospectiva_obvia(texto):
+    return _PATRON_RETROSPECTIVA.search(_normalizar(texto)) is not None
 
 SYSTEM_PROMPT_TEMPLATE = (
     "Eres un analista de un sistema de monitoreo de emergencias en Venezuela. "
@@ -121,34 +146,70 @@ def verificar_evento_con_ia(evento):
     se publica."""
     api_key = os.environ.get("GROQ_API_KEY")
     grupos_fuentes = evento["grupos_fuentes"]
-    n = len(grupos_fuentes)
 
     if not api_key:
         print("[WARN] GROQ_API_KEY no configurada, se omite verificación de plausibilidad")
         return _finalizar_evento(evento, grupos_fuentes)
 
+    # Filtro determinista primero: descarta de una vez las fuentes cuyo texto
+    # marca explicitamente una retrospectiva/aniversario (independiente del
+    # juicio del modelo, que en produccion ha fallado con frases como "a un
+    # mes del terremoto en Vargas..." pese a estar cubiertas en el prompt).
+    obvios_rechazados = []
+    candidatos = []
+    for grupo in grupos_fuentes:
+        representante = max(grupo, key=lambda m: m["peso"])
+        if _es_retrospectiva_obvia(representante["texto"]):
+            obvios_rechazados.append((representante["fuente_nombre"], grupo))
+        else:
+            candidatos.append(grupo)
+
+    if obvios_rechazados:
+        nombres = ", ".join(nombre for nombre, _ in obvios_rechazados)
+        print(
+            f"[DEBUG] Filtro retrospectiva [{evento['tipo']}/{evento['ubicacion']}]: "
+            f"rechazadas sin IA por marca temporal explicita: {nombres}"
+        )
+
+    if not candidatos:
+        return None
+
+    n = len(candidatos)
     fecha_actual = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(fecha_actual=fecha_actual, n=n)
     contenido_usuario = (
         f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento['tipo']}\n\n"
-        f"{_construir_prompt_fuentes(grupos_fuentes)}"
+        f"{_construir_prompt_fuentes(candidatos)}"
     )
 
     try:
-        resp = requests.post(
-            GROQ_URL,
-            headers={"Authorization": f"Bearer {api_key}"},
-            json={
-                "model": GROQ_MODEL,
-                "temperature": 0,
-                "max_tokens": max(10, n * 4 + 5),
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": contenido_usuario},
-                ],
-            },
-            timeout=20,
-        )
+        resp = None
+        for intento in range(2):
+            # Pequena pausa entre llamadas sucesivas a Groq: en un mismo
+            # ciclo se llama una vez por evento agrupado, y sin espaciarlas
+            # se alcanzaba el limite de tasa (429) y el evento se dejaba
+            # pasar sin verificar (fail-open).
+            time.sleep(1.5)
+            resp = requests.post(
+                GROQ_URL,
+                headers={"Authorization": f"Bearer {api_key}"},
+                json={
+                    "model": GROQ_MODEL,
+                    "temperature": 0,
+                    "max_tokens": max(10, n * 4 + 5),
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": contenido_usuario},
+                    ],
+                },
+                timeout=20,
+            )
+            if resp.status_code == 429 and intento == 0:
+                print("[WARN] Groq devolvió 429 (rate limit), reintentando en 5s...")
+                time.sleep(5)
+                continue
+            break
+
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip()
         veredictos = _parsear_veredictos(respuesta, n)
@@ -159,13 +220,13 @@ def verificar_evento_con_ia(evento):
                 f"tamaño distinto al esperado ({n} fuentes): '{respuesta[:200]}'. "
                 f"Se deja pasar el evento por seguridad."
             )
-            return _finalizar_evento(evento, grupos_fuentes)
+            return _finalizar_evento(evento, candidatos)
 
-        representantes = [max(g, key=lambda m: m["peso"]) for g in grupos_fuentes]
+        representantes = [max(g, key=lambda m: m["peso"]) for g in candidatos]
         detalle = ", ".join(
             f"{r['fuente_nombre']}={v}" for r, v in zip(representantes, veredictos)
         )
-        grupos_aprobados = [g for g, v in zip(grupos_fuentes, veredictos) if v == "SI"]
+        grupos_aprobados = [g for g, v in zip(candidatos, veredictos) if v == "SI"]
         print(
             f"[DEBUG] Groq verificación [{evento['tipo']}/{evento['ubicacion']}]: "
             f"{detalle} → {len(grupos_aprobados)}/{n} fuentes aprobadas"
@@ -178,4 +239,4 @@ def verificar_evento_con_ia(evento):
 
     except Exception as e:
         print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento: {e}")
-        return _finalizar_evento(evento, grupos_fuentes)
+        return _finalizar_evento(evento, candidatos)
