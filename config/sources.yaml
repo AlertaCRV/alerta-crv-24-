@@ -107,6 +107,51 @@ rss:
   - nombre: "Reporte Confidencial (Nueva Esparta)"
     url: "https://reporteconfidencial.info/feed/"
     peso: 0.6
+  - nombre: "La Prensa de Cojedes"
+    url: "https://laprensadecojedes.com/?feed=rss2"
+    peso: 0.55
+  - nombre: "Desde La Guaira"
+    url: "https://desdelaguaira.com/feed/"
+    peso: 0.55
+  - nombre: "Primicia (Bolivar)"
+    url: "https://www.primicia.com.ve/feed/"
+    peso: 0.55
+  - nombre: "Notimax Plus (Barinas)"
+    url: "https://www.notimaxplus.com/rss.xml"
+    peso: 0.55
+  - nombre: "Reporteros de Merida"
+    url: "https://www.reporterosdemerida.com.ve/rss.xml"
+    peso: 0.55
+  - nombre: "Ciudad Trujillo"
+    url: "https://ciudadtrujillo.com/?feed=rss2"
+    peso: 0.55
+  - nombre: "Noticias de Aqui (Anzoategui)"
+    url: "https://noticiasdeaqui.co/feed/"
+    peso: 0.55
+  - nombre: "Ciudad MCY (Aragua)"
+    url: "http://www.ciudadmcy.info.ve/feed/"
+    peso: 0.55
+  - nombre: "Portuguesa al Dia"
+    url: "http://www.portuguesaaldia.com/feed/"
+    peso: 0.55
+  - nombre: "Carupanero.com (Sucre)"
+    url: "https://carupanero.com/feed/"
+    peso: 0.55
+  - nombre: "Senderos de Apure"
+    url: "http://www.senderosdeapure.net/rss.xml"
+    peso: 0.55
+  - nombre: "El Periodico del Delta (Delta Amacuro)"
+    url: "https://www.periodicodeldelta.com/feed/"
+    peso: 0.55
+  - nombre: "El Impulso (Lara)"
+    url: "https://www.elimpulso.com/feed/"
+    peso: 0.65
+  - nombre: "Notitarde (Carabobo)"
+    url: "https://www.notitarde.com.ve/rss.xml"
+    peso: 0.6
+  - nombre: "Noticia al Dia (Zulia)"
+    url: "https://www.noticialdia.com/feed/"
+    peso: 0.55
 
 telegram:
   # username sin @, tal como aparece en t.me/<username>

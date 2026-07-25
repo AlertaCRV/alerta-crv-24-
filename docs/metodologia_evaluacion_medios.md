@@ -69,3 +69,13 @@ antes de excluir o incluir un medio por accesibilidad:
 3. Excluir medios de otros países o con contenido no pertinente a
    Venezuela, **excepto** agencias de Naciones Unidas o agencias
    humanitarias internacionales (ej. ReliefWeb).
+4. Excluir medios cuyo feed mezcle contenido genuino con spam evidente
+   (casinos, farmacia, réplicas, préstamos) — indicio de dominio de un
+   medio caído/revendido y reutilizado para contenido programático. Se
+   detectó el 25/07/2026 con "La Voz" (Guarenas, Miranda): el propio
+   feed incluye una nota que dice que el medio "sigue cerrado por el
+   Gobierno" desde hace años, mezclada con un artículo ajeno sobre
+   generadores de números aleatorios en casinos digitales. Antes de
+   excluir por esta causa, confirmar leyendo el contenido real (no solo
+   coincidencias de palabras clave: "réplica" de un sismo o
+   "especialista" pueden dar falsos positivos de spam por substring).
