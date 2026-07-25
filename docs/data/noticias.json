@@ -1,5 +1,27 @@
 [
   {
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/07/2026, 3:07 p.m.\n🔎 Detectado por el sistema: 25/07/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/chavistas-queman-banderas-de-ee-uu-e-israel-durante-protesta-en-caracas/",
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/chavistas-queman-banderas-de-ee-uu-e-israel-durante-protesta-en-caracas/",
+        "fecha": "2026-07-25T19:07:59+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-25T19:07:59+00:00",
+    "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Falla eléctrica en Lara",
     "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 BAJO\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/07/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 25/07/2026, 2:33 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 BAJO: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/25/balance-de-activos-por-la-luz-20-sectores-de-lara-sufren-cortes-electricos-que-superan-las-94-horas-25jul/",
     "tipo": "infraestructura_electrica",
