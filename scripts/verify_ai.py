@@ -8,7 +8,8 @@ from datetime import datetime, timezone
 import requests
 from dateutil import parser as dateparser
 
-from config_loader import load_settings
+from config_loader import load_settings, load_estados
+from verify import extraer_magnitud
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
@@ -41,6 +42,28 @@ def _normalizar(texto):
 
 def _es_retrospectiva_obvia(texto):
     return _PATRON_RETROSPECTIVA.search(_normalizar(texto)) is not None
+
+
+def _estados_mencionados_extra(texto_combinado, ubicacion_propia):
+    """Devuelve la lista de estados (distintos de ubicacion_propia) que el
+    texto combinado de las fuentes menciona explicitamente -- se usa
+    exclusivamente para tipo=sismo, para saber si un mismo sismo fue
+    reportado sintiendose en varios estados a la vez (p.ej. "se sintio en
+    La Guaira, Distrito Capital y Miranda"), y asi poder correlacionar esa
+    alerta con la que ya se publico bajo otra de esas ubicaciones el mismo
+    dia (ver state.py)."""
+    texto_norm = _normalizar(texto_combinado)
+    encontrados = []
+    for nombre_estado, alias in load_estados().items():
+        if nombre_estado == ubicacion_propia:
+            continue
+        candidatos = set(alias) | {_normalizar(nombre_estado)}
+        for candidato in candidatos:
+            candidato_norm = _normalizar(candidato)
+            if re.search(r"\b" + re.escape(candidato_norm) + r"\b", texto_norm):
+                encontrados.append(nombre_estado)
+                break
+    return encontrados
 
 SYSTEM_PROMPT_TEMPLATE = (
     "Eres un analista de un sistema de monitoreo de emergencias en Venezuela. "
@@ -145,7 +168,7 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     severidad_final = next((s for s in orden_severidad if s in severidades), "sin_clasificar")
     fecha_mas_reciente = max(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 
-    return {
+    resultado = {
         "tipo": evento["tipo"],
         "ubicacion": evento["ubicacion"],
         "municipio": evento["municipio"],
@@ -162,6 +185,19 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
         "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
         "estado_verificacion": "PASADO_POR_FALLA_TECNICA" if error_sistema else "APROBADO_IA",
     }
+
+    # Solo para sismos: la magnitud y las menciones a otros estados sirven
+    # para correlacionar (state.py) el mismo sismo sentido en varias
+    # ubicaciones, sin depender de una ventana de tiempo estrecha entre
+    # publicaciones (ver conversacion del 2026-07-25).
+    if evento["tipo"] == "sismo":
+        texto_combinado = " ".join(m["texto"] for m in miembros_aprobados)
+        resultado["magnitud"] = extraer_magnitud(texto_combinado)
+        resultado["tambien_mencionado_en"] = _estados_mencionados_extra(
+            texto_combinado, evento["ubicacion"]
+        )
+
+    return resultado
 
 
 def verificar_evento_con_ia(evento):
