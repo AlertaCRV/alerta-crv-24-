@@ -1,8 +1,8 @@
 {
   "sismo::La Guaira::2026-07-25": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-25T14:52:15.727939+00:00"
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-25T18:11:36.758052+00:00"
   },
   "sismo::Falcon::2026-07-25": {
     "severidad": "sin_clasificar",
@@ -18,5 +18,10 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-25T17:18:47.189955+00:00"
+  },
+  "sismo::La Guaira::2026-07-25::mag3.1": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-25T18:11:34.814811+00:00"
   }
 }
