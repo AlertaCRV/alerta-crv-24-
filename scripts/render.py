@@ -1,4 +1,8 @@
+from zoneinfo import ZoneInfo
+
 from dateutil import parser as dateparser
+
+ZONA_VENEZUELA = ZoneInfo("America/Caracas")
 
 TIPO_LABELS = {
     "sismo": "Sismo",
@@ -35,8 +39,9 @@ CONFIRMACION_EXPLICACION = {
 
 
 def _formatear_fecha(fecha_iso):
-    """Convierte una fecha ISO a formato día/mes/año, hora en formato 12h a.m./p.m."""
-    dt = dateparser.isoparse(fecha_iso)
+    """Convierte una fecha ISO (guardada internamente en UTC) a hora local
+    de Venezuela, en formato día/mes/año, hora en formato 12h a.m./p.m."""
+    dt = dateparser.isoparse(fecha_iso).astimezone(ZONA_VENEZUELA)
     fecha_str = dt.strftime("%d/%m/%Y")
     hora_str = dt.strftime("%I:%M %p").lstrip("0").replace("AM", "a.m.").replace("PM", "p.m.")
     return f"{fecha_str}, {hora_str}"
