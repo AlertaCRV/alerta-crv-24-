@@ -1,5 +1,27 @@
 [
   {
+    "titulo": "Sismo en Distrito Capital",
+    "texto": "⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n📌 Sismo en Distrito Capital\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/07/2026, 1:06 p.m.\n🔎 Detectado por el sistema: 25/07/2026, 1:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/funvisis-registra-sismo-de-magnitud-3-1-en-la-guaira-y-se-sintio-en-caracas/",
+    "tipo": "sismo",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/funvisis-registra-sismo-de-magnitud-3-1-en-la-guaira-y-se-sintio-en-caracas/",
+        "fecha": "2026-07-25T17:06:33+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-25T17:06:33+00:00",
+    "fecha_deteccion": "2026-07-25T17:18:47.189955+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Sismo en La Guaira",
     "texto": "✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n📌 Sismo en La Guaira\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 25/07/2026, 10:23 a.m.\n🔎 Detectado por el sistema: 25/07/2026, 10:52 a.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/reportan-sismos-en-guiria-boca-de-aroa-y-la-guaira/\n  • El Tiempo (Anzoategui): https://eltiempove.com/funvisis-reporta-sismo-de-magnitud-31-al-norte-de-naiguata-en-la-guaira/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/nuevo-sismo-de-baja-intensidad-se-registro-en-la-guaira-la-manana-de-este-sabado-25-jul/",
     "tipo": "sismo",
