@@ -18,6 +18,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Token de un usuario con permiso de bypass en el ruleset de main
+          # (el GITHUB_TOKEN por defecto no lo tiene, y el push del bot al
+          # guardar publicados.json/noticias.json quedaba rechazado por la
+          # regla "Changes must be made through a pull request").
+          token: ${{ secrets.GH_PAT }}
 
       - name: Configurar Python
         uses: actions/setup-python@v5
