@@ -63,6 +63,14 @@ def redactar_noticia(evento):
 
     titulo = f"{tipo_label} en {ubicacion_detallada}"
 
+    nota_falla_tecnica = ""
+    if evento.get("estado_verificacion") == "PASADO_POR_FALLA_TECNICA":
+        nota_falla_tecnica = (
+            "ℹ️ ⚙️ Este evento se publicó sin verificación de IA por una "
+            "falla técnica temporal (ej. límite de la API). Verificar con "
+            "mayor cautela.\n"
+        )
+
     texto = (
         f"{estado_confirmacion} | {severidad_label}\n"
         f"📌 {titulo}\n\n"
@@ -71,7 +79,8 @@ def redactar_noticia(evento):
         f"🔎 Detectado por el sistema: {_formatear_fecha(evento['fecha_deteccion'])}\n"
         f"📊 Fuentes independientes: {evento['num_fuentes']} (score {evento['score']})\n\n"
         f"ℹ️ {estado_confirmacion}: {confirmacion_explicacion}\n"
-        f"ℹ️ {severidad_label}: {severidad_explicacion}\n\n"
+        f"ℹ️ {severidad_label}: {severidad_explicacion}\n"
+        f"{nota_falla_tecnica}\n"
         f"Fuentes:\n{fuentes_texto}"
     )
 

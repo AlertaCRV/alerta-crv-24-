@@ -1,3 +1,4 @@
+import json
 import os
 import re
 import time
@@ -26,9 +27,12 @@ _PATRON_RETROSPECTIVA = re.compile(
 )
 
 
-def _normalizar(texto):
-    texto = texto.lower()
+def _quitar_tildes(texto):
     return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn")
+
+
+def _normalizar(texto):
+    return _quitar_tildes(texto.lower())
 
 
 def _es_retrospectiva_obvia(texto):
@@ -72,11 +76,11 @@ SYSTEM_PROMPT_TEMPLATE = (
     "múltiples heridos o fallecidos, o afectación significativa de "
     "infraestructura vial).\n"
     "\nFECHA ACTUAL DEL SISTEMA: {fecha_actual}\n"
-    "\nFORMATO DE SALIDA OBLIGATORIO: responde únicamente una lista de "
-    "exactamente {n} valores 'SI' o 'NO' separados por comas, en el mismo "
-    "orden en que se dan las fuentes. No incluyas números, explicaciones, "
-    "preámbulos ni ningún otro texto.\n"
-    "Ejemplo con 3 fuentes: SI, NO, SI"
+    "\nDEBES RESPONDER EXCLUSIVAMENTE EN FORMATO JSON, sin explicaciones ni "
+    "texto adicional. La estructura debe ser un objeto con una clave "
+    "'veredictos' que contenga una lista de exactamente {n} strings ('SI' o "
+    "'NO'), en el mismo orden en que se dan las fuentes.\n"
+    "Ejemplo con 3 fuentes: {{\"veredictos\": [\"SI\", \"NO\", \"SI\"]}}"
 )
 
 
@@ -91,15 +95,37 @@ def _construir_prompt_fuentes(grupos_fuentes):
     return "\n\n".join(bloques)[:6000]
 
 
-def _parsear_veredictos(respuesta, n):
-    valores = [v.strip().upper() for v in respuesta.split(",")]
-    valores = [v for v in valores if v in ("SI", "NO")]
-    if len(valores) != n:
+def _parsear_veredictos_json(respuesta_texto, n):
+    """Parsea la respuesta JSON de Groq, aceptando tanto un objeto con clave
+    'veredictos' como una lista suelta. Normaliza tildes ('SÍ' -> 'SI') antes
+    de comparar, y valida que haya exactamente n valores SI/NO -- cualquier
+    otro caso devuelve None para que el llamador trate esto como fallo
+    tecnico (fail-open auditado), no como una lista corrupta silenciosa."""
+    try:
+        datos = json.loads(respuesta_texto)
+        if isinstance(datos, dict):
+            valores = datos.get("veredictos", [])
+        elif isinstance(datos, list):
+            valores = datos
+        else:
+            return None
+
+        valores_norm = [_quitar_tildes(str(v).strip()).upper() for v in valores]
+        valores_validos = [v for v in valores_norm if v in ("SI", "NO")]
+
+        if len(valores_validos) != n:
+            return None
+        return valores_validos
+    except (json.JSONDecodeError, TypeError, ValueError, AttributeError):
         return None
-    return valores
 
 
-def _finalizar_evento(evento, grupos_aprobados):
+def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
+    """error_sistema=True marca que las fuentes no pasaron por un veredicto
+    real de la IA (sin API key, respuesta no parseable, o fallo de red/rate
+    limit tras agotar reintentos) y se dejaron pasar por seguridad -- queda
+    registrado en 'estado_verificacion' para auditoria, y nunca se etiqueta
+    como CONFIRMADO sin verificacion real, sin importar el score."""
     settings = load_settings()["verificacion"]
     umbral = settings["umbral_confirmado"]
 
@@ -122,7 +148,7 @@ def _finalizar_evento(evento, grupos_aprobados):
         "parroquia": evento["parroquia"],
         "severidad": severidad_final,
         "score": round(score, 2),
-        "confirmado": score >= umbral,
+        "confirmado": (score >= umbral) and not error_sistema,
         "num_fuentes": len(representantes),
         "fuentes": [
             {"nombre": m["fuente_nombre"], "link": m["link"], "fecha": m["fecha"]}
@@ -130,6 +156,7 @@ def _finalizar_evento(evento, grupos_aprobados):
         ],
         "fecha_evento": fecha_mas_reciente,
         "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
+        "estado_verificacion": "PASADO_POR_FALLA_TECNICA" if error_sistema else "APROBADO_IA",
     }
 
 
@@ -149,7 +176,7 @@ def verificar_evento_con_ia(evento):
 
     if not api_key:
         print("[WARN] GROQ_API_KEY no configurada, se omite verificación de plausibilidad")
-        return _finalizar_evento(evento, grupos_fuentes)
+        return _finalizar_evento(evento, grupos_fuentes, error_sistema=True)
 
     # Filtro determinista primero: descarta de una vez las fuentes cuyo texto
     # marca explicitamente una retrospectiva/aniversario (independiente del
@@ -196,7 +223,8 @@ def verificar_evento_con_ia(evento):
                 json={
                     "model": GROQ_MODEL,
                     "temperature": 0,
-                    "max_tokens": max(10, n * 4 + 5),
+                    "response_format": {"type": "json_object"},
+                    "max_tokens": max(30, n * 6 + 20),
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": contenido_usuario},
@@ -212,15 +240,15 @@ def verificar_evento_con_ia(evento):
 
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip()
-        veredictos = _parsear_veredictos(respuesta, n)
+        veredictos = _parsear_veredictos_json(respuesta, n)
 
         if veredictos is None:
             print(
-                f"[WARN] Groq devolvió una lista de veredictos inválida o de "
+                f"[WARN] Groq devolvió un JSON de veredictos inválido o de "
                 f"tamaño distinto al esperado ({n} fuentes): '{respuesta[:200]}'. "
-                f"Se deja pasar el evento por seguridad."
+                f"Se deja pasar el evento por seguridad (sin marcar CONFIRMADO)."
             )
-            return _finalizar_evento(evento, candidatos)
+            return _finalizar_evento(evento, candidatos, error_sistema=True)
 
         representantes = [max(g, key=lambda m: m["peso"]) for g in candidatos]
         detalle = ", ".join(
@@ -238,5 +266,5 @@ def verificar_evento_con_ia(evento):
         return _finalizar_evento(evento, grupos_aprobados)
 
     except Exception as e:
-        print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento: {e}")
-        return _finalizar_evento(evento, candidatos)
+        print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento (sin marcar CONFIRMADO): {e}")
+        return _finalizar_evento(evento, candidatos, error_sistema=True)
