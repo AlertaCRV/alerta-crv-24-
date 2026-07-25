@@ -22,7 +22,11 @@ _PATRON_RETROSPECTIVA = re.compile(
     rf"\b(a|al cumplirse)\s+{_NUMEROS}\s+"
     r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
     r"|\baniversario\b"
-    rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b",
+    rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b"
+    # "doble sismo" es el nombre fijo con el que los medios venezolanos se
+    # refieren al sismo doble de La Guaira/Vargas de hace un mes -- ninguna
+    # cobertura de un sismo genuinamente nuevo usaria ese termino exacto.
+    r"|\bdoble\s+sismo\b",
     re.IGNORECASE,
 )
 
