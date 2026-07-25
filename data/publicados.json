@@ -1,1 +1,17 @@
-{}
+{
+  "sismo::La Guaira::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-25T14:52:15.727939+00:00"
+  },
+  "sismo::Falcon::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-25T14:52:17.685257+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-25T14:52:23.752532+00:00"
+  }
+}
