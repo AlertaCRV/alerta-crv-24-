@@ -566,3 +566,63 @@ del metro", "falla en el teleférico". Al probarlo se encontró un caso real
 de redacción demasiado rígida ("usuarios varados en el metro" no
 calzaba con "usuarios *quedaron* varados en el metro") — se corrigió
 quitando el sujeto de la frase clave ("varados en el metro" a secas).
+
+---
+
+## Filtro determinista para vialidad: evitar alertas por choques individuales (26/07/2026)
+
+**Problema real observado en producción**: un choque entre dos
+motorizados, con un fallecido, se publicó como alerta de severidad
+**CRÍTICA**. La severidad se calcula sin importar el tipo de evento (la
+palabra "fallecido" siempre dispara "crítico"), y el prompt de
+`verify_ai.py` ya le pedía a la IA rechazar accidentes viales rutinarios
+de 1-2 vehículos sin víctimas múltiples ni colapso de vía — pero en la
+práctica un caso así se aprobó igual, dependiendo únicamente del juicio
+del modelo.
+
+**Solución**: se agregó un filtro determinista para `tipo=vialidad`, que
+corre ANTES de la IA (mismo patrón que el filtro de retrospectivas de
+sismos) — no depende de su juicio. Un reporte de vialidad se descarta sin
+consultar a la IA si el texto no contiene evidencia explícita de:
+- **Accidente múltiple/masivo** ("colisión múltiple", "choque múltiple",
+  "accidente masivo", "colapso vial"/"vía colapsada").
+- **Involucramiento de transporte público** ("volcamiento de autobús",
+  "unidad de transporte público").
+- **Varios heridos** (3 o más heridos/lesionados explícitos, en número o
+  en palabra — "tres heridos" —, o las frases "varios/múltiples/numerosos
+  heridos").
+- **Varios fallecidos** (**5 o más** fallecidos/muertos explícitos — ajustado
+  el mismo día de 3 a 5, un umbral más alto que el de heridos porque un
+  choque de la misma magnitud típicamente deja más heridos que fallecidos).
+
+Un choque individual entre 1-2 vehículos con una sola víctima —el caso
+real que originó este ajuste— ya no llega ni a evaluarse con IA: se
+descarta directamente, sin importar si el texto menciona "fallecido" (que
+seguiría disparando severidad "crítica" si el evento pasara, porque la
+severidad no distingue tipo o escala).
+
+Probado con 7 casos de ejemplo contra `_vialidad_sin_evidencia_fuerte()`,
+incluido el caso real reportado ("choque entre dos motorizados... un
+fallecido" → correctamente descartado).
+
+---
+
+## Primera corrida real en producción tras el merge (26/07/2026)
+
+Al mergear el objetivo #1 y disparar el monitor manualmente, se generaron
+por primera vez datos reales: 7 eventos nuevos (incluido uno de
+`tormenta_electrica`, confirmando que los tipos nuevos del objetivo #3 se
+detectan correctamente en producción) y 5 de los 6 informes narrativos
+esperados (mes × tipo + general).
+
+**Bug encontrado**: el informe "general" (y también sismo y vialidad) no
+se generaron esa corrida — Groq devolvió **429 (rate limit)** para esas 3
+llamadas. Causa: en una corrida con muchos eventos agrupados (15 esa vez),
+`verify_ai.py` ya hace varias llamadas a Groq antes de llegar a generar
+informes, y `build_informes.py` no tenía el mismo reintento con backoff
+que `verify_ai.py` sí tiene para sus propias llamadas — un solo 429 hacía
+fallar el informe completo esa corrida (aparece de nuevo al día siguiente,
+por la regeneración diaria del período en curso, pero se pierde esa
+corrida). Se agregó el mismo patrón de reintento (esperar 5s y reintentar
+una vez) que ya usa `verify_ai.py`. Probado con un 429 simulado seguido de
+una respuesta exitosa.

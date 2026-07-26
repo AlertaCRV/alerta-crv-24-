@@ -29,11 +29,11 @@ TIPO_LABELS = {
 }
 
 SEVERIDAD_EMOJI = {
-    "critico": "🔴 CRÍTICO",
-    "alto": "🟠 ALTO",
-    "medio": "🟡 MEDIO",
-    "bajo": "🟢 BAJO",
-    "sin_clasificar": "⚪ SIN CLASIFICAR",
+    "critico": "🔴 SEVERIDAD CRÍTICA",
+    "alto": "🟠 SEVERIDAD ALTA",
+    "medio": "🟡 SEVERIDAD MEDIA",
+    "bajo": "🟢 SEVERIDAD BAJA",
+    "sin_clasificar": "⚪ SEVERIDAD SIN CLASIFICAR",
 }
 
 SEVERIDAD_EXPLICACION = {
