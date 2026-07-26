@@ -664,3 +664,41 @@ de su juicio. Probado con 6 casos de ejemplo.
 sismo ya publicadas — las 8 quedarían excluidas (ninguna alcanza magnitud
 4, ninguna con evidencia de daño real). Pendiente decidir si se eliminan
 manualmente de los archivos (igual que se hizo con la alerta de vialidad).
+
+---
+
+## Bug encontrado: municipio homónimo del propio estado (26/07/2026)
+
+Se reportó una alerta publicada como "Deslizamiento/Derrumbe en Parroquia
+Barinas, Municipio Barinas, Barinas" — un municipio y una parroquia con el
+mismo nombre que su propio estado, casi con certeza incorrectos.
+
+**Causa**: el estado Barinas tiene un municipio "Barinas" y una parroquia
+"Barinas" (común en capitales de estado venezolanas). La búsqueda directa
+por nombre (agregada para resolver el caso "Guaicaipuro") solo excluía
+nombres repetidos **entre estados distintos**, no nombres que coinciden
+con el nombre de su **propio estado** — así que cualquier mención genérica
+del estado ("Barinas y Mérida", "carretera Barinas-Mérida") se interpretó
+como evidencia de ese municipio/parroquia específico. Además, una de las
+tres fuentes del evento sí mencionaba el municipio real ("Municipio
+Bolívar"), pero `agrupar_y_verificar` en `verify.py` toma el primer valor
+no nulo entre las fuentes fusionadas, y la mención incorrecta de "Barinas"
+llegó primero.
+
+**Corrección**: `_buscar_nombre_directo()` ahora también descarta un
+nombre si coincide con el nombre normalizado del propio estado. Con este
+fix, el caso real vuelve a quedar en `municipio: null, parroquia: null`
+(la mención explícita de "Municipio Bolívar" en el texto real no calzó
+con el regex de coincidencia explícita porque no hay puntuación cercana
+dentro de la ventana de 40 caracteres que exige `_MUNICIPIO_RE` — una
+limitación preexistente, no introducida por este fix). Es el resultado
+correcto: sin dato confiable, es mejor `null` que un valor incorrecto con
+apariencia de certeza.
+
+**Corregido retroactivamente**: se corrigió la alerta ya publicada
+(`docs/data/noticias.json`, `data/historico_eventos.jsonl`), regenerando
+su texto con `render.redactar_noticia()` para que el título y el cuerpo
+también reflejen la ubicación corregida. El informe narrativo de
+deslizamientos de julio no necesitó corrección — no afirmaba el
+municipio/parroquia incorrectos, solo mencionaba "Barinas" de forma
+genérica.

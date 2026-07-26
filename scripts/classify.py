@@ -244,16 +244,22 @@ def _conteos_globales_ubicaciones():
     return _conteo_global_municipios, _conteo_global_parroquias
 
 
-def _buscar_nombre_directo(texto_norm, candidatos, conteo_global):
+def _buscar_nombre_directo(texto_norm, candidatos, conteo_global, nombre_estado_norm):
     """Busca el nombre de un municipio/parroquia mencionado directamente en
     el texto (p.ej. 'inundacion en Petare'), sin exigir que venga precedido
-    de la palabra 'municipio'/'parroquia'. Descarta nombres muy cortos o
-    repetidos en varios estados, por ser demasiado genericos/ambiguos para
-    una coincidencia confiable sin ese contexto explicito."""
+    de la palabra 'municipio'/'parroquia'. Descarta nombres muy cortos,
+    repetidos en varios estados, o identicos al propio nombre del estado
+    (comun en capitales de estado, p.ej. el municipio y la parroquia
+    "Barinas" del estado Barinas) -- una mencion del estado en el texto no
+    es evidencia de que se trate especificamente de ese municipio/parroquia
+    homonimo, y confundirlos asigno una vez el municipio "Barinas" a un
+    deslizamiento que en realidad ocurrio en el municipio Bolivar."""
     for normalizado, original in candidatos.items():
         if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
             continue
         if conteo_global[normalizado] > 1:
+            continue
+        if normalizado == nombre_estado_norm:
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             return original
@@ -293,11 +299,12 @@ def detectar_municipio_parroquia(texto, estado):
 
     if municipio_encontrado is None or parroquia_encontrada is None:
         texto_norm = _normalizar(texto)
+        nombre_estado_norm = _normalizar(estado)
         conteo_municipios, conteo_parroquias = _conteos_globales_ubicaciones()
         if municipio_encontrado is None:
-            municipio_encontrado = _buscar_nombre_directo(texto_norm, municipios, conteo_municipios)
+            municipio_encontrado = _buscar_nombre_directo(texto_norm, municipios, conteo_municipios, nombre_estado_norm)
         if parroquia_encontrada is None:
-            parroquia_encontrada = _buscar_nombre_directo(texto_norm, parroquias, conteo_parroquias)
+            parroquia_encontrada = _buscar_nombre_directo(texto_norm, parroquias, conteo_parroquias, nombre_estado_norm)
 
     return municipio_encontrado, parroquia_encontrada
 

@@ -42,12 +42,12 @@
     "estado_verificacion": "APROBADO_IA"
   },
   {
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Barinas, Municipio Barinas, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Barinas, Municipio Barinas, Barinas\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Barinas, Municipio Barinas, Barinas\n🕒 Hecho reportado: 26/07/2026, 3:55 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
+    "titulo": "Deslizamiento/Derrumbe en Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 26/07/2026, 3:55 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
     "tipo": "deslizamiento",
     "ubicacion": "Barinas",
-    "municipio": "Barinas",
-    "parroquia": "Barinas",
+    "municipio": null,
+    "parroquia": null,
     "severidad": "sin_clasificar",
     "score": 1.85,
     "confirmado": true,
