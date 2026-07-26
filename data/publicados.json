@@ -28,5 +28,15 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00"
+  },
+  "inundacion::Distrito Capital::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T03:23:05.948689+00:00"
+  },
+  "inundacion::Monagas::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00"
   }
 }
