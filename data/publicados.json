@@ -40,18 +40,43 @@
     "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00"
   },
   "sismo::La Guaira::2026-07-26::mag3.3": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-26T15:45:57.561168+00:00"
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:04:52.186257+00:00"
   },
   "inundacion::Distrito Capital::2026-07-26": {
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "confirmado": true,
-    "fecha_deteccion": "2026-07-26T15:46:01.224590+00:00"
+    "fecha_deteccion": "2026-07-26T20:04:48.449519+00:00"
   },
   "deslizamiento::Distrito Capital::2026-07-26": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-26T15:46:06.495017+00:00"
+  },
+  "deslizamiento::Barinas::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-26T20:04:55.925543+00:00"
+  },
+  "vialidad::Bolivar::2026-07-26": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:04:57.695252+00:00"
+  },
+  "deslizamiento::Portuguesa::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:05:13.268895+00:00"
+  },
+  "tormenta_electrica::Carabobo::2026-07-26": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00"
+  },
+  "inundacion::Lara::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00"
   }
 }
