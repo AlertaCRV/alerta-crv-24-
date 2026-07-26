@@ -55,9 +55,17 @@ def _es_retrospectiva_obvia(texto):
 # explicita de que el accidente es masivo/multiple, involucra transporte
 # publico, o tiene varias victimas -- no solo tipo=vialidad + una palabra
 # de severidad.
-_NUMERO_VICTIMAS_RE = re.compile(
+_NUMERO_HERIDOS_RE = re.compile(
     r"\b(tres|cuatro|cinco|seis|siete|ocho|nueve|diez|[3-9]|\d{2,})\s+"
-    r"(heridos|heridas|fallecidos|fallecidas|muertos|muertas|lesionados|lesionadas)\b"
+    r"(heridos|heridas|lesionados|lesionadas)\b"
+)
+# Umbral mas alto para victimas fatales (5+, no 3+ como heridos): un
+# fallecido o incluso unos pocos no deberian por si solos convertir un
+# choque en "accidente masivo" -- el umbral de heridos es mas bajo porque
+# hay mas heridos que fallecidos en accidentes de la misma magnitud.
+_NUMERO_FALLECIDOS_RE = re.compile(
+    r"\b(cinco|seis|siete|ocho|nueve|diez|[5-9]|\d{2,})\s+"
+    r"(fallecidos|fallecidas|muertos|muertas)\b"
 )
 _EVIDENCIA_FUERTE_VIALIDAD_RE = re.compile(
     r"\b(colapso vial|colapso de la via|colapso de la vía|via colapsada|vía colapsada|"
@@ -78,7 +86,8 @@ def _vialidad_sin_evidencia_fuerte(texto):
     texto_norm = _normalizar(texto)
     tiene_evidencia = (
         _EVIDENCIA_FUERTE_VIALIDAD_RE.search(texto_norm) is not None
-        or _NUMERO_VICTIMAS_RE.search(texto_norm) is not None
+        or _NUMERO_HERIDOS_RE.search(texto_norm) is not None
+        or _NUMERO_FALLECIDOS_RE.search(texto_norm) is not None
     )
     return not tiene_evidencia
 

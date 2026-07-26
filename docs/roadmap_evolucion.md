@@ -588,9 +588,12 @@ consultar a la IA si el texto no contiene evidencia explícita de:
   "accidente masivo", "colapso vial"/"vía colapsada").
 - **Involucramiento de transporte público** ("volcamiento de autobús",
   "unidad de transporte público").
-- **Varias víctimas** (3 o más heridos/fallecidos explícitos, en número o
-  en palabra — "tres heridos", "5 fallecidos" —, o las frases "varios/
-  múltiples/numerosos heridos/fallecidos").
+- **Varios heridos** (3 o más heridos/lesionados explícitos, en número o
+  en palabra — "tres heridos" —, o las frases "varios/múltiples/numerosos
+  heridos").
+- **Varios fallecidos** (**5 o más** fallecidos/muertos explícitos — ajustado
+  el mismo día de 3 a 5, un umbral más alto que el de heridos porque un
+  choque de la misma magnitud típicamente deja más heridos que fallecidos).
 
 Un choque individual entre 1-2 vehículos con una sola víctima —el caso
 real que originó este ajuste— ya no llega ni a evaluarse con IA: se
