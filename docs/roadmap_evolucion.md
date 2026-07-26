@@ -235,3 +235,71 @@ señal de resolución de evento).
 Ningún cambio de código se implementó en esta sesión — esta sección es
 únicamente la definición de alcance acordada para cuando se decida
 empezar la implementación.
+
+---
+
+## Extensión del objetivo 1: informes narrativos por período y tipo
+
+Idea adicional planteada el 26/07/2026: además de los indicadores
+numéricos del dashboard, generar informes en prosa — "¿qué pasó con los
+incendios en julio de 2026?" — con una narrativa rica en detalles, no solo
+conteos y gráficos.
+
+### Por qué no alcanza con lo ya planeado para el objetivo #1
+
+El registro histórico propuesto (`data/historico_eventos.jsonl`) guarda
+los campos estructurados de cada evento (tipo, ubicación, severidad,
+confirmación, fechas) y el **link** de cada fuente, pero no el texto
+completo del artículo. Para tejer una narrativa rica en detalles a partir
+de "todos los artículos que informaron sobre incendios en un período", el
+sistema necesita el texto completo de esos artículos, no solo un enlace —
+y hoy ese texto se usa en memoria durante cada corrida y se descarta
+después. Reconstruirlo meses después reabriendo cada link es frágil: los
+artículos viejos suelen desaparecer, cambiar de URL o quedar bloqueados.
+
+### Decisiones tomadas (26/07/2026)
+
+**Fuente del texto — se guarda el texto completo al publicar.** Al
+extender `historico_eventos.jsonl` (o el registro que lo reemplace), cada
+fuente de cada evento publicado guarda también su texto completo, no solo
+el link. Esto asegura que un informe de hace meses se pueda reconstruir
+con el mismo detalle que si se generara el mismo día, sin depender de que
+el artículo original siga en línea. Contrapartida asumida
+conscientemente: el registro crece más rápido que si solo guardara
+estructura, y guarda contenido de terceros con derechos de autor — uso
+aceptable para síntesis **interna** (alimentar una narrativa propia con
+citas y enlaces de vuelta a la fuente), pero el sitio público nunca debe
+reproducir un artículo completo tal cual, solo la narrativa sintetizada
+con sus citas.
+
+**Generación — informes precalculados por el sistema, no en vivo.** El
+sistema (en una corrida periódica, p.ej. mensual, o incremental sobre el
+mes en curso) genera con IA la narrativa para combinaciones estándar de
+período × tipo, usando el texto de fuentes ya guardado, y la guarda como
+archivo estático (similar a `docs/data/estadisticas.json`). La página web
+solo muestra informes ya generados — la parte "interactiva" es elegir
+entre lo ya preparado (qué mes, qué tipo), no una consulta libre en vivo.
+Esto mantiene el sitio 100% estático (GitHub Pages, sin backend nuevo), no
+expone la clave de la API de IA en el navegador, y no genera costo de IA
+por cada visitante. Generación en vivo bajo demanda quedó descartada por
+ahora: requeriría construir un servidor/backend nuevo — un cambio de
+arquitectura mayor a todo lo hecho hasta ahora — y pagar el costo de IA
+por cada consulta de cada visitante.
+
+### Cómo debería funcionar, en línea con el resto del sistema
+
+Igual que las alertas individuales muestran sus fuentes y explican por qué
+se clasificaron así, un informe narrativo generado por IA debe incluir
+**citas explícitas a la fuente de cada afirmación** (no un resumen sin
+atribución) — es la misma disciplina de auditabilidad aplicada a un texto
+más largo y sintetizado por IA, donde el riesgo de mezclar detalles de
+eventos distintos es mayor que en la verificación de un solo evento a la
+vez que ya hace `verify_ai.py`.
+
+### Dependencia
+
+Esta extensión depende de que el objetivo #1 (registro histórico) ya
+exista — se implementa como una ampliación de ese mismo registro (agregar
+el texto completo por fuente), no como un sistema aparte. No se ha
+implementado nada de código; queda documentada para cuando se decida
+empezar.
