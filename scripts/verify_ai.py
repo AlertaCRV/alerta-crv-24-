@@ -92,6 +92,50 @@ def _vialidad_sin_evidencia_fuerte(texto):
     return not tiene_evidencia
 
 
+# Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
+# hoy son temblores menores sin ningun dano real, y estan empañando el
+# proposito del sistema (demasiados reportes de baja relevancia). Un sismo
+# solo debe alertar si (magnitud >=4 Y fue sentido por la poblacion o lo
+# informa una fuente sismologica oficial) O si el texto ya describe danos
+# reales (colapso, heridos, fallecidos) sin importar la magnitud.
+UMBRAL_MAGNITUD_SISMO = 4.0
+_SENTIDO_SISMO_RE = re.compile(
+    r"\b(se sintio|se sintió|sacudio|sacudió|remezon|remezón|se percibio|se percibió)\b",
+    re.IGNORECASE,
+)
+_EVIDENCIA_DANO_SISMO_RE = re.compile(
+    r"\b(colapso estructural|colapso de|derrumbe|derrumbes|heridos|heridas|fallecidos|"
+    r"fallecidas|muertos|muertas|danos severos|daños severos|danos estructurales|"
+    r"daños estructurales|edificacion colapsada|edificación colapsada|"
+    r"vivienda colapsada|viviendas colapsadas|grietas estructurales)\b",
+    re.IGNORECASE,
+)
+# Nombres de fuentes sismologicas oficiales -- hoy solo configuradas como
+# canales de Telegram (FUNVISIS, INAMEH en config/sources.yaml), y la
+# recoleccion de Telegram esta deshabilitada en main.py, asi que esta
+# excepcion no tiene efecto real todavia. Se deja lista para cuando se
+# reactive.
+_FUENTES_SISMOLOGICAS_OFICIALES = ("funvisis", "inameh")
+
+
+def _es_fuente_sismologica_oficial(fuente_nombre):
+    nombre_norm = _normalizar(fuente_nombre)
+    return any(oficial in nombre_norm for oficial in _FUENTES_SISMOLOGICAS_OFICIALES)
+
+
+def _sismo_sin_evidencia_fuerte(texto, fuente_nombre):
+    texto_norm = _normalizar(texto)
+    if _EVIDENCIA_DANO_SISMO_RE.search(texto_norm):
+        return False
+
+    magnitud = extraer_magnitud(texto)
+    if magnitud is not None and magnitud >= UMBRAL_MAGNITUD_SISMO:
+        if _SENTIDO_SISMO_RE.search(texto_norm) or _es_fuente_sismologica_oficial(fuente_nombre):
+            return False
+
+    return True
+
+
 def _estados_mencionados_extra(texto_combinado, ubicacion_propia):
     """Devuelve la lista de estados (distintos de ubicacion_propia) que el
     texto combinado de las fuentes menciona explicitamente -- se usa
@@ -339,6 +383,8 @@ def verificar_evento_con_ia(evento):
         if _es_retrospectiva_obvia(representante["texto"]):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
+        elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)
         else:
             candidatos.append(grupo)

@@ -626,3 +626,41 @@ por la regeneración diaria del período en curso, pero se pierde esa
 corrida). Se agregó el mismo patrón de reintento (esperar 5s y reintentar
 una vez) que ya usa `verify_ai.py`. Probado con un 429 simulado seguido de
 una respuesta exitosa.
+
+---
+
+## Filtro determinista para sismos: reducir el ruido de temblores menores (26/07/2026)
+
+**Problema real observado**: demasiados reportes de actividad sísmica
+menor (magnitud 3.1-3.3, sin daños) estaban empañando el propósito del
+sistema de alerta. Se revisaron las 8 alertas de sismo publicadas hasta
+ese momento: ninguna alcanzaba magnitud 4, ninguna mencionaba colapso
+estructural, heridos o fallecidos.
+
+**Regla acordada**: un sismo solo se publica si se cumple al menos una de
+estas dos condiciones:
+1. **Magnitud ≥ 4.0 Y** el texto indica que fue sentido por la población
+   ("se sintió", "sacudió", "remezón"...), **o** la fuente es
+   sismológica oficial (FUNVISIS/INAMEH).
+2. El texto menciona colapso estructural, daños severos, heridos o
+   fallecidos — sin importar la magnitud.
+
+**Por qué el "Y" en la condición 1**: "sentido por la población" por sí
+solo es casi automático en cualquier reporte de sismo (es casi un
+requisito para que un medio lo reporte), así que no filtraría nada. Exigir
+magnitud ≥4 además de "sentido" sí reduce el volumen real.
+
+**Nota sobre la excepción de fuente oficial**: FUNVISIS/INAMEH hoy solo
+están configurados como canales de Telegram en `config/sources.yaml`, y
+la recolección de Telegram está deshabilitada en `main.py` (comentada) —
+esta excepción no tiene efecto real todavía, queda lista para cuando se
+reactive.
+
+**Implementación**: `_sismo_sin_evidencia_fuerte()` en `verify_ai.py`,
+mismo patrón que el filtro de vialidad — corre ANTES de la IA, no depende
+de su juicio. Probado con 6 casos de ejemplo.
+
+**Aplicado retroactivamente**: se evaluó la regla contra las 8 alertas de
+sismo ya publicadas — las 8 quedarían excluidas (ninguna alcanza magnitud
+4, ninguna con evidencia de daño real). Pendiente decidir si se eliminan
+manualmente de los archivos (igual que se hizo con la alerta de vialidad).
