@@ -1,0 +1,42 @@
+[
+  {
+    "periodo": "2026-07",
+    "tipo": "vialidad",
+    "tipo_label": "Incidente vial",
+    "cerrado": false,
+    "generado": "2026-07-26T20:05:43.509572+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "tormenta_electrica",
+    "tipo_label": "Tormenta eléctrica",
+    "cerrado": false,
+    "generado": "2026-07-26T20:05:41.032084+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "sismo",
+    "tipo_label": "Sismo",
+    "cerrado": false,
+    "generado": "2026-07-26T20:05:38.916838+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "inundacion",
+    "tipo_label": "Inundación",
+    "cerrado": false,
+    "generado": "2026-07-26T20:05:36.511116+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "deslizamiento",
+    "tipo_label": "Deslizamiento/Derrumbe",
+    "cerrado": false,
+    "generado": "2026-07-26T20:05:32.539930+00:00",
+    "total_eventos": 2
+  }
+]
