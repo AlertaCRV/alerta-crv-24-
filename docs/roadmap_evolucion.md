@@ -566,3 +566,38 @@ del metro", "falla en el teleférico". Al probarlo se encontró un caso real
 de redacción demasiado rígida ("usuarios varados en el metro" no
 calzaba con "usuarios *quedaron* varados en el metro") — se corrigió
 quitando el sujeto de la frase clave ("varados en el metro" a secas).
+
+---
+
+## Filtro determinista para vialidad: evitar alertas por choques individuales (26/07/2026)
+
+**Problema real observado en producción**: un choque entre dos
+motorizados, con un fallecido, se publicó como alerta de severidad
+**CRÍTICA**. La severidad se calcula sin importar el tipo de evento (la
+palabra "fallecido" siempre dispara "crítico"), y el prompt de
+`verify_ai.py` ya le pedía a la IA rechazar accidentes viales rutinarios
+de 1-2 vehículos sin víctimas múltiples ni colapso de vía — pero en la
+práctica un caso así se aprobó igual, dependiendo únicamente del juicio
+del modelo.
+
+**Solución**: se agregó un filtro determinista para `tipo=vialidad`, que
+corre ANTES de la IA (mismo patrón que el filtro de retrospectivas de
+sismos) — no depende de su juicio. Un reporte de vialidad se descarta sin
+consultar a la IA si el texto no contiene evidencia explícita de:
+- **Accidente múltiple/masivo** ("colisión múltiple", "choque múltiple",
+  "accidente masivo", "colapso vial"/"vía colapsada").
+- **Involucramiento de transporte público** ("volcamiento de autobús",
+  "unidad de transporte público").
+- **Varias víctimas** (3 o más heridos/fallecidos explícitos, en número o
+  en palabra — "tres heridos", "5 fallecidos" —, o las frases "varios/
+  múltiples/numerosos heridos/fallecidos").
+
+Un choque individual entre 1-2 vehículos con una sola víctima —el caso
+real que originó este ajuste— ya no llega ni a evaluarse con IA: se
+descarta directamente, sin importar si el texto menciona "fallecido" (que
+seguiría disparando severidad "crítica" si el evento pasara, porque la
+severidad no distingue tipo o escala).
+
+Probado con 7 casos de ejemplo contra `_vialidad_sin_evidencia_fuerte()`,
+incluido el caso real reportado ("choque entre dos motorizados... un
+fallecido" → correctamente descartado).

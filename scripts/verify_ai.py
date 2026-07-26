@@ -44,6 +44,45 @@ def _es_retrospectiva_obvia(texto):
     return _PATRON_RETROSPECTIVA.search(_normalizar(texto)) is not None
 
 
+# Filtro determinista para tipo=vialidad: un choque rutinario entre 1-2
+# vehiculos (o motorizados) con una victima no debe alertar como la Cruz
+# Roja lo haria con un accidente masivo -- es el tipo de caso que ya lo
+# atiende transito/ambulancia local. El prompt de la IA ya pedia rechazar
+# estos casos, pero en la practica un choque individual con un fallecido
+# se aprobo igual (calificado ademas como severidad CRITICA solo por
+# mencionar un muerto, sin importar la escala del evento). Este filtro
+# corre ANTES de la IA y no depende de su juicio: exige evidencia
+# explicita de que el accidente es masivo/multiple, involucra transporte
+# publico, o tiene varias victimas -- no solo tipo=vialidad + una palabra
+# de severidad.
+_NUMERO_VICTIMAS_RE = re.compile(
+    r"\b(tres|cuatro|cinco|seis|siete|ocho|nueve|diez|[3-9]|\d{2,})\s+"
+    r"(heridos|heridas|fallecidos|fallecidas|muertos|muertas|lesionados|lesionadas)\b"
+)
+_EVIDENCIA_FUERTE_VIALIDAD_RE = re.compile(
+    r"\b(colapso vial|colapso de la via|colapso de la vía|via colapsada|vía colapsada|"
+    r"vias colapsadas|vías colapsadas|colision multiple|colisión múltiple|choque multiple|"
+    r"choque múltiple|accidente masivo|volcamiento de autobus|volcamiento de autobús|"
+    r"volcamiento de un autobus|volcamiento de un autobús|volcamiento de buseta|"
+    r"volcamiento de una buseta|choque de autobus|choque de autobús|choque de un autobus|"
+    r"choque de un autobús|autobus accidentado|autobús accidentado|"
+    r"unidad de transporte publico|unidad de transporte público|transporte publico|"
+    r"transporte público|multiples heridos|múltiples heridos|varios heridos|"
+    r"numerosos heridos|varios fallecidos|multiples fallecidos|múltiples fallecidos|"
+    r"varios muertos)\b",
+    re.IGNORECASE,
+)
+
+
+def _vialidad_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    tiene_evidencia = (
+        _EVIDENCIA_FUERTE_VIALIDAD_RE.search(texto_norm) is not None
+        or _NUMERO_VICTIMAS_RE.search(texto_norm) is not None
+    )
+    return not tiene_evidencia
+
+
 def _estados_mencionados_extra(texto_combinado, ubicacion_propia):
     """Devuelve la lista de estados (distintos de ubicacion_propia) que el
     texto combinado de las fuentes menciona explicitamente -- se usa
@@ -290,6 +329,8 @@ def verificar_evento_con_ia(evento):
         representante = max(grupo, key=lambda m: m["peso"])
         if _es_retrospectiva_obvia(representante["texto"]):
             obvios_rechazados.append(representante)
+        elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
         else:
             candidatos.append(grupo)
 
@@ -298,8 +339,8 @@ def verificar_evento_con_ia(evento):
             f"{r['fuente_nombre']} ({r['link']})" for r in obvios_rechazados
         )
         print(
-            f"[DEBUG] Filtro retrospectiva [{evento['tipo']}/{evento['ubicacion']}]: "
-            f"rechazadas sin IA por marca temporal explicita: {detalle_rechazados}"
+            f"[DEBUG] Filtro retrospectiva/vialidad [{evento['tipo']}/{evento['ubicacion']}]: "
+            f"rechazadas sin IA por marca temporal explicita o falta de evidencia fuerte: {detalle_rechazados}"
         )
 
     if not candidatos:
