@@ -604,3 +604,25 @@ severidad no distingue tipo o escala).
 Probado con 7 casos de ejemplo contra `_vialidad_sin_evidencia_fuerte()`,
 incluido el caso real reportado ("choque entre dos motorizados... un
 fallecido" → correctamente descartado).
+
+---
+
+## Primera corrida real en producción tras el merge (26/07/2026)
+
+Al mergear el objetivo #1 y disparar el monitor manualmente, se generaron
+por primera vez datos reales: 7 eventos nuevos (incluido uno de
+`tormenta_electrica`, confirmando que los tipos nuevos del objetivo #3 se
+detectan correctamente en producción) y 5 de los 6 informes narrativos
+esperados (mes × tipo + general).
+
+**Bug encontrado**: el informe "general" (y también sismo y vialidad) no
+se generaron esa corrida — Groq devolvió **429 (rate limit)** para esas 3
+llamadas. Causa: en una corrida con muchos eventos agrupados (15 esa vez),
+`verify_ai.py` ya hace varias llamadas a Groq antes de llegar a generar
+informes, y `build_informes.py` no tenía el mismo reintento con backoff
+que `verify_ai.py` sí tiene para sus propias llamadas — un solo 429 hacía
+fallar el informe completo esa corrida (aparece de nuevo al día siguiente,
+por la regeneración diaria del período en curso, pero se pierde esa
+corrida). Se agregó el mismo patrón de reintento (esperar 5s y reintentar
+una vez) que ya usa `verify_ai.py`. Probado con un 429 simulado seguido de
+una respuesta exitosa.

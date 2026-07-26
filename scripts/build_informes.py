@@ -118,22 +118,36 @@ def _generar_narrativa(tipo_label, periodo, registros, comparacion):
     )[:8000]
 
     try:
-        time.sleep(1.5)
-        resp = requests.post(
-            GROQ_URL,
-            headers={"Authorization": f"Bearer {api_key}"},
-            json={
-                "model": GROQ_MODEL,
-                "temperature": 0.3,
-                "response_format": {"type": "json_object"},
-                "max_tokens": 1200,
-                "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": contenido_usuario},
-                ],
-            },
-            timeout=40,
-        )
+        resp = None
+        for intento in range(2):
+            # Mismo patron de reintento que verify_ai.py: en una corrida con
+            # muchos eventos, verify_ai.py ya hace varias llamadas a Groq
+            # antes de llegar aqui, y sin reintento un 429 (rate limit) hacia
+            # que el informe simplemente no se generara esa corrida (se vio
+            # en produccion: 3 de 6 informes fallaron por 429 en la primera
+            # corrida real).
+            time.sleep(1.5)
+            resp = requests.post(
+                GROQ_URL,
+                headers={"Authorization": f"Bearer {api_key}"},
+                json={
+                    "model": GROQ_MODEL,
+                    "temperature": 0.3,
+                    "response_format": {"type": "json_object"},
+                    "max_tokens": 1200,
+                    "messages": [
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": contenido_usuario},
+                    ],
+                },
+                timeout=40,
+            )
+            if resp.status_code == 429 and intento == 0:
+                print(f"[WARN] Informe {periodo}/{tipo_label}: Groq devolvió 429 (rate limit), reintentando en 5s...")
+                time.sleep(5)
+                continue
+            break
+
         resp.raise_for_status()
         respuesta = resp.json()["choices"][0]["message"]["content"].strip()
         datos = json.loads(respuesta)
