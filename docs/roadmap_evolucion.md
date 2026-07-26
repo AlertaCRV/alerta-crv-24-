@@ -366,3 +366,40 @@ se puede resolver con un campo fijo tipo "es medio local: sí/no".
   medio local de baja confiabilidad general se vuelva "confirmante" él
   solo por estar en la zona. Se ajustará según lo que se observe con uso
   real.
+
+---
+
+## Severidad "medio" mal justificada y municipio/parroquia sin detectar (26/07/2026)
+
+**Problema 1 — severidad "medio" sin evidencia real**: `config/keywords.yaml`
+incluía "afectados" como palabra clave de severidad "medio". Es una palabra
+demasiado genérica: aparece incluso en frases que niegan daño ("sin
+afectados que lamentar", "no se reportan afectados"). Se quitó de la lista,
+y `classify.py` ahora usa `_contiene_palabra_clave_no_negada`, que descarta
+una coincidencia si está negada a pocas palabras de distancia ("sin", "no",
+"ningún...").
+
+**Problema 2 — municipio/parroquia casi nunca se detectaban**:
+`detectar_municipio_parroquia` solo reconocía el municipio/parroquia si el
+texto traía literalmente "municipio X"/"parroquia Y" — la mayoría de las
+noticias solo dicen "en Petare", sin esa palabra explícita. Se agregó una
+búsqueda por nombre directo usando los datos ya existentes en
+`ubicaciones_detalle.json`, descartando nombres repetidos en más de un
+estado (Sucre, Bolívar, Miranda, Libertador... son nombres de próceres
+reusados como municipio en varios estados a la vez, y también son nombres
+de estado) o de menos de 5 caracteres, por ser demasiado ambiguos para una
+coincidencia sin ese contexto explícito.
+
+**Extensión con IA (26/07/2026)**: la búsqueda por nombre directo sigue sin
+resolver el caso de un municipio que se llama igual que su propio estado
+(ej. "Sucre" como municipio de Miranda) cuando el texto no dice
+"municipio X" explícitamente. Para esos casos, se extendió la misma llamada
+a Groq que ya hace `verify_ai.py` para verificar plausibilidad: cuando
+`classify.py` no pudo determinar municipio y/o parroquia, se le pide a la
+IA (en el mismo prompt, sin llamada aparte) que intente inferirlo del texto
+completo de las fuentes — pero restringido a elegir EXCLUSIVAMENTE un valor
+de la lista real de municipios/parroquias de ese estado (o `null`). Un
+valor que no esté en esa lista se descarta como si la IA no hubiera
+respondido nada, igual que la verificación de plausibilidad nunca confía en
+texto libre sin validar. Si `classify.py` ya había determinado un valor,
+la IA nunca lo sobrescribe.

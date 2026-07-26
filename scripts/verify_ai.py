@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 import requests
 from dateutil import parser as dateparser
 
-from config_loader import load_settings, load_estados
+from config_loader import load_settings, load_estados, load_ubicaciones_detalle
 from verify import extraer_magnitud
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
@@ -109,6 +109,45 @@ SYSTEM_PROMPT_TEMPLATE = (
     "'NO'), en el mismo orden en que se dan las fuentes.\n"
     "Ejemplo con 3 fuentes: {{\"veredictos\": [\"SI\", \"NO\", \"SI\"]}}"
 )
+
+
+BLOQUE_UBICACION_DETALLADA_TEMPLATE = (
+    "\n\nADEMAS del array 'veredictos': el clasificador automático no pudo "
+    "determinar con certeza el municipio y/o la parroquia donde ocurrió el "
+    "evento dentro del estado ya indicado. Si el texto de las fuentes lo "
+    "deja claro, agrega al mismo objeto JSON las claves 'municipio' y/o "
+    "'parroquia', usando EXCLUSIVAMENTE un valor de estas listas (nunca "
+    "inventes un nombre que no esté en ellas). Usa null si no se puede "
+    "determinar con certeza.\n"
+    "MUNICIPIOS VÁLIDOS: {municipios}\n"
+    "PARROQUIAS VÁLIDAS: {parroquias}\n"
+    "Ejemplo: {{\"veredictos\": [\"SI\"], \"municipio\": \"Sucre\", \"parroquia\": null}}"
+)
+
+
+def _listas_ubicacion_valida(estado):
+    detalle = load_ubicaciones_detalle().get(estado, {})
+    return detalle.get("municipios", []), detalle.get("parroquias", [])
+
+
+def _extraer_municipio_parroquia(respuesta_texto, municipios_validos, parroquias_validos):
+    """Extrae 'municipio'/'parroquia' de la respuesta de la IA, aceptando
+    unicamente un valor que coincida exactamente con la lista de opciones
+    validas dadas en el prompt -- cualquier otro valor (incluido texto
+    inventado o mal formado) se descarta como None, igual que la
+    verificacion de plausibilidad nunca confia en texto libre sin validar."""
+    try:
+        datos = json.loads(respuesta_texto)
+        if not isinstance(datos, dict):
+            return None, None
+        municipio = datos.get("municipio")
+        parroquia = datos.get("parroquia")
+        return (
+            municipio if municipio in municipios_validos else None,
+            parroquia if parroquia in parroquias_validos else None,
+        )
+    except (json.JSONDecodeError, TypeError, ValueError, AttributeError):
+        return None, None
 
 
 def _construir_prompt_fuentes(grupos_fuentes):
@@ -259,6 +298,24 @@ def verificar_evento_con_ia(evento):
     n = len(candidatos)
     fecha_actual = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(fecha_actual=fecha_actual, n=n)
+
+    # Si el clasificador (regex sobre municipios/parroquias conocidos, ver
+    # classify.py) no pudo determinar municipio y/o parroquia, se le pide a
+    # la misma llamada de IA que ya se hace para verificar plausibilidad que
+    # intente inferirlo del texto completo, restringido a los valores reales
+    # de ese estado -- evita una llamada aparte y nunca deja que la IA
+    # invente un nombre fuera de la lista.
+    pedir_ubicacion = evento.get("municipio") is None or evento.get("parroquia") is None
+    municipios_validos, parroquias_validos = ([], [])
+    if pedir_ubicacion:
+        municipios_validos, parroquias_validos = _listas_ubicacion_valida(evento["ubicacion"])
+        if municipios_validos or parroquias_validos:
+            system_prompt += BLOQUE_UBICACION_DETALLADA_TEMPLATE.format(
+                municipios=municipios_validos, parroquias=parroquias_validos,
+            )
+        else:
+            pedir_ubicacion = False
+
     contenido_usuario = (
         f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento['tipo']}\n\n"
         f"{_construir_prompt_fuentes(candidatos)}"
@@ -279,7 +336,7 @@ def verificar_evento_con_ia(evento):
                     "model": GROQ_MODEL,
                     "temperature": 0,
                     "response_format": {"type": "json_object"},
-                    "max_tokens": max(30, n * 6 + 20),
+                    "max_tokens": max(30, n * 6 + 20) + (40 if pedir_ubicacion else 0),
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": contenido_usuario},
@@ -317,6 +374,15 @@ def verificar_evento_con_ia(evento):
 
         if not grupos_aprobados:
             return None
+
+        if pedir_ubicacion:
+            municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
+                respuesta, municipios_validos, parroquias_validos
+            )
+            if evento.get("municipio") is None and municipio_ia:
+                evento["municipio"] = municipio_ia
+            if evento.get("parroquia") is None and parroquia_ia:
+                evento["parroquia"] = parroquia_ia
 
         return _finalizar_evento(evento, grupos_aprobados)
 
