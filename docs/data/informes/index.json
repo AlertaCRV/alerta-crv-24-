@@ -1,14 +1,6 @@
 [
   {
     "periodo": "2026-07",
-    "tipo": "vialidad",
-    "tipo_label": "Incidente vial",
-    "cerrado": false,
-    "generado": "2026-07-26T20:05:43.509572+00:00",
-    "total_eventos": 1
-  },
-  {
-    "periodo": "2026-07",
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,

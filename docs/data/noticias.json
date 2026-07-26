@@ -98,28 +98,6 @@
     "estado_verificacion": "APROBADO_IA"
   },
   {
-    "titulo": "Incidente vial en Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar",
-    "texto": "📌 Incidente vial en Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 CRÍTICO\n\n📍 Ubicación: Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar\n🕒 Hecho reportado: 26/07/2026, 1:23 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 CRÍTICO: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316674",
-    "tipo": "vialidad",
-    "ubicacion": "Bolivar",
-    "municipio": "Angostura del Orinoco",
-    "parroquia": "La Sabanita",
-    "severidad": "critico",
-    "score": 0.85,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Luchador (Bolivar)",
-        "link": "https://elluchador.info/?p=316674",
-        "fecha": "2026-07-26T17:23:51+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T17:23:51+00:00",
-    "fecha_deteccion": "2026-07-26T20:04:57.695252+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
     "titulo": "Deslizamiento/Derrumbe en Municipio Ospino, Portuguesa",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 26/07/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino/?utm_source=rss&utm_medium=rss&utm_campaign=filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino",
     "tipo": "deslizamiento",
