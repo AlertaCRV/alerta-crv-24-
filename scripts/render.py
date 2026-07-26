@@ -25,6 +25,7 @@ TIPO_LABELS = {
     "motin_carcelario": "Motín carcelario",
     "accidente_transporte": "Accidente de transporte",
     "ataque_armado": "Ataque armado",
+    "emergencia_metro": "Emergencia en el Metro/Metrocable/Teleférico",
 }
 
 SEVERIDAD_EMOJI = {

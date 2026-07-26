@@ -556,3 +556,13 @@ igual que pasó con sismo.
 Probado con 12 casos de ejemplo (uno por tipo nuevo + salud_publica
 ampliado) contra `classify.detectar_tipo()`, todos con el resultado
 esperado. `validar_configs.py` sigue pasando.
+
+**Un tipo más, agregado después (26/07/2026): `emergencia_metro`.** Metro
+de Caracas, Metrocable y teleférico no calzaban con ningún tipo existente
+— `accidente_transporte` está pensado para aéreo/marítimo/ferroviario
+interurbano, no transporte masivo urbano. Se creó como tipo aparte, con
+frases como "falla en el metro", "varados en el metro", "descarrilamiento
+del metro", "falla en el teleférico". Al probarlo se encontró un caso real
+de redacción demasiado rígida ("usuarios varados en el metro" no
+calzaba con "usuarios *quedaron* varados en el metro") — se corrigió
+quitando el sujeto de la frase clave ("varados en el metro" a secas).
