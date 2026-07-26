@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "tormenta_electrica",
+  "tipo_label": "Tormenta eléctrica",
+  "cerrado": false,
+  "generado": "2026-07-26T20:08:12.024312+00:00",
+  "actualizado_hasta": "2026-07-26T20:07:52.414383+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un evento de tormenta eléctrica, específicamente un impacto de rayo en el Aeropuerto Internacional Arturo Michelena de Valencia, estado Carabobo, el sábado 25 de julio de 2026 (Turimiquire). Este evento resultó en 9 heridos confirmados debido al impacto del rayo en la plataforma del aeropuerto (Turimiquire). Esta ocurrencia marca un contraste con el período anterior, 2026-06, en el que no se registraron eventos de este tipo. La comparación con el período anterior muestra que hubo 0 eventos registrados entonces, mientras que en este período se registró 1 evento. El incidente en el aeropuerto de Valencia es un recordatorio de la importancia de la vigilancia meteorológica en infraestructuras críticas. La tormenta eléctrica y su impacto en el aeropuerto de Valencia son un ejemplo de los riesgos asociados con este tipo de fenómenos naturales. La comunidad afectada y los servicios de emergencia trabajaron juntos para atender a los heridos y garantizar la seguridad en el área.",
+  "fuentes": [
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "periodo": "2026-07",
+  "tipo": "inundacion",
+  "tipo_label": "Inundación",
+  "cerrado": false,
+  "generado": "2026-07-26T20:08:07.894183+00:00",
+  "actualizado_hasta": "2026-07-26T20:07:54.102215+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 2
+  },
+  "narrativa": "En el período de 2026-07, se registraron 2 eventos de inundación, lo que contrasta con el período anterior (2026-06) en el que no se reportaron eventos de este tipo. Durante este período, las lluvias torrenciales causaron inundaciones y deslizamientos en Caracas y La Guaira (El Impulso). Las imágenes mostraron la fuerza del agua bajando por las calles de sectores como Carapita, en la parroquia Antímano, donde el caudal arrastró motocicletas y dejó diversas afectaciones a los vecinos de la zona (El Carabobeno, El Siglo). La situación se replicó en otros puntos de la capital y de la vía que conecta Caracas con el litoral central (El Siglo, La Prensa de Lara). Además, se reportaron deslizamientos de tierra, anegaciones y lagunas en distintos sectores de Caracas y en la autopista Caracas-La Guaira (La Prensa de Lara, El Luchador). Por otro lado, en el estado Lara, una menor de edad perdió la vida por inmersión tras ser arrastrada por una crecida súbita del río La Miel, en la parroquia Gustavo Vegas León (Noticia al Dia).",
+  "fuentes": [
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/"
+    },
+    {
+      "nombre": "El Luchador (Bolivar)",
+      "link": "https://elluchador.info/?p=316662"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "periodo": "2026-07",
+    "tipo": "tormenta_electrica",
+    "tipo_label": "Tormenta eléctrica",
+    "cerrado": false,
+    "generado": "2026-07-26T20:08:12.024312+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "inundacion",
+    "tipo_label": "Inundación",
+    "cerrado": false,
+    "generado": "2026-07-26T20:08:07.894183+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "deslizamiento",
+    "tipo_label": "Deslizamiento/Derrumbe",
+    "cerrado": false,
+    "generado": "2026-07-26T20:08:03.948339+00:00",
+    "total_eventos": 2
+  }
+]

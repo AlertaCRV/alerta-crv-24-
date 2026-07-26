@@ -1,0 +1,33 @@
+{
+  "periodo": "2026-07",
+  "tipo": "deslizamiento",
+  "tipo_label": "Deslizamiento/Derrumbe",
+  "cerrado": false,
+  "generado": "2026-07-26T20:08:03.948339+00:00",
+  "actualizado_hasta": "2026-07-26T20:07:44.093802+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 2
+  },
+  "narrativa": "En el período de 2026-07, se registraron 2 eventos de deslizamiento/derrumbe en Venezuela, en comparación con 0 eventos en el período anterior (2026-06). Uno de estos eventos ocurrió en la carretera Barinas-Mérida, específicamente en el sector La Soledad, donde un deslizamiento de tierra bloqueó el paso (Diario La Nacion, El Impulso). Este incidente se produjo el domingo 26 de julio y fue reportado por efectivos de Protección Civil del Municipio Bolívar (Diario La Nacion). Las fuertes precipitaciones en la zona también generaron restricciones viales entre Mérida y Barinas (La Patilla). Por otro lado, en el estado Portuguesa, se registró un colapso parcial en la iglesia San Fernando Rey de Ospino, en el municipio Ospino, debido a filtraciones y humedad acumulada durante años, lo que causó el derrumbe de una pared junto al campanario el sábado 25 de julio (Portuguesa Reporta).",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino/?utm_source=rss&utm_medium=rss&utm_campaign=filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino"
+    }
+  ]
+}
