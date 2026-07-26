@@ -72,6 +72,7 @@ def fetch_rss_items(ventana_horas=12):
                 "fuente_nombre": fuente["nombre"],
                 "fuente_tipo": "rss",
                 "peso": fuente.get("peso", 0.5),
+                "region": fuente.get("region"),
                 "texto": texto,
                 "link": entry.get("link", ""),
                 "fecha": datetime.fromtimestamp(published_ts, tz=timezone.utc).isoformat(),

@@ -1,5 +1,9 @@
 # Fuentes de monitoreo. Agrega o quita entradas aquí sin tocar el código Python.
 # "peso" = score de confiabilidad de la fuente (0.0 a 1.0) usado en la verificación cruzada.
+# "region" (opcional) = estado (nombre canónico de config/estados.yaml) donde el medio
+# está asentado. Solo se pone en medios claramente regionales/locales -- se usa para
+# dar un pequeño bono al peso efectivo de la fuente SOLO cuando reporta sobre un evento
+# en esa misma region (ver scripts/verify_ai.py, BONO_FUENTE_LOCAL).
 
 rss:
   - nombre: "ReliefWeb Venezuela"
@@ -17,9 +21,11 @@ rss:
   - nombre: "El Carabobeno"
     url: "https://www.el-carabobeno.com/feed/"
     peso: 0.6
+    region: "Carabobo"
   - nombre: "La Verdad de Vargas"
     url: "https://laverdaddevargas.com/feed/"
     peso: 0.6
+    region: "La Guaira"
   - nombre: "El Pitazo"
     url: "https://elpitazo.net/feed/"
     peso: 0.75
@@ -29,129 +35,170 @@ rss:
   - nombre: "La Verdad (Zulia)"
     url: "https://laverdad.com/feed/"
     peso: 0.7
+    region: "Zulia"
   - nombre: "Tal Cual"
     url: "https://talcualdigital.com/feed/"
     peso: 0.6
   - nombre: "El Luchador (Bolivar)"
     url: "https://elluchador.info/?feed=rss2"
     peso: 0.75
+    region: "Bolivar"
   - nombre: "Diario La Nacion (Tachira)"
     url: "https://lanacionweb.com/feed/"
     peso: 0.55
+    region: "Tachira"
   - nombre: "Notitachira"
     url: "https://notitachira.com/feed/"
     peso: 0.55
+    region: "Tachira"
   - nombre: "La Noticia de Barinas"
     url: "https://lanoticiadebarinas.com/?feed=rss2"
     peso: 0.55
+    region: "Barinas"
   - nombre: "En El Vigia (Merida)"
     url: "https://enelvigia.com.ve/feed/"
     peso: 0.55
+    region: "Merida"
   - nombre: "La Manana (Falcon)"
     url: "https://lamananadigital.com/feed/"
     peso: 0.55
+    region: "Falcon"
   - nombre: "Nuevo Dia (Falcon)"
     url: "https://nuevodia.com.ve/feed/"
     peso: 0.55
+    region: "Falcon"
   - nombre: "Maturin News"
     url: "https://maturinnews.com/feed/"
     peso: 0.55
+    region: "Monagas"
   - nombre: "La Prensa de Monagas"
     url: "https://laprensademonagas.com/feed/"
     peso: 0.55
+    region: "Monagas"
   - nombre: "El Periodico de Monagas"
     url: "https://elperiodicodemonagas.com.ve/feed/"
     peso: 0.55
+    region: "Monagas"
   - nombre: "La Verdad de Monagas"
     url: "https://laverdaddemonagas.com/feed/"
     peso: 0.55
+    region: "Monagas"
   - nombre: "Diario El Tiempo (Trujillo)"
     url: "https://diarioeltiempo.com.ve/feed/"
     peso: 0.55
+    region: "Trujillo"
   - nombre: "El Tiempo (Anzoategui)"
     url: "https://eltiempo.com.ve/feed/"
     peso: 0.55
+    region: "Anzoategui"
   - nombre: "El Siglo (Aragua)"
     url: "https://elsiglo.com.ve/feed/"
     peso: 0.55
+    region: "Aragua"
   - nombre: "Guatire.com (Miranda)"
     url: "https://www.guatire.com/feed/"
     peso: 0.5
+    region: "Miranda"
   - nombre: "Diario La Region (Miranda)"
     url: "https://diariolaregion.net/feed/"
     peso: 0.55
+    region: "Miranda"
   - nombre: "El Tubazo Digital (Guarico)"
     url: "https://eltubazodigital.com/feed/"
     peso: 0.55
+    region: "Guarico"
   - nombre: "Portuguesa Reporta"
     url: "https://portuguesareporta.com/feed/"
     peso: 0.55
+    region: "Portuguesa"
   - nombre: "Yaracuy al Dia"
     url: "https://yaracuyaldia.com/feed/"
     peso: 0.55
+    region: "Yaracuy"
   - nombre: "Turimiquire (Sucre)"
     url: "https://turimiquire.net/feed/"
     peso: 0.55
+    region: "Sucre"
   - nombre: "Notiapure"
     url: "https://notiapure.com.ve/feed/"
     peso: 0.55
+    region: "Apure"
   - nombre: "El Deltano (Delta Amacuro)"
     url: "https://eldeltano.com/feed/"
     peso: 0.55
+    region: "Delta Amacuro"
   - nombre: "La Prensa de Lara"
     url: "https://laprensadelara.com/feed/"
     peso: 0.55
+    region: "Lara"
   - nombre: "Notiespartano (Nueva Esparta)"
     url: "https://notiespartano.com/feed/"
     peso: 0.55
+    region: "Nueva Esparta"
   - nombre: "Reporte Confidencial (Nueva Esparta)"
     url: "https://reporteconfidencial.info/feed/"
     peso: 0.6
+    region: "Nueva Esparta"
   - nombre: "La Prensa de Cojedes"
     url: "https://laprensadecojedes.com/?feed=rss2"
     peso: 0.55
+    region: "Cojedes"
   - nombre: "Desde La Guaira"
     url: "https://desdelaguaira.com/feed/"
     peso: 0.55
+    region: "La Guaira"
   - nombre: "Primicia (Bolivar)"
     url: "https://www.primicia.com.ve/feed/"
     peso: 0.55
+    region: "Bolivar"
   - nombre: "Notimax Plus (Barinas)"
     url: "https://www.notimaxplus.com/rss.xml"
     peso: 0.55
+    region: "Barinas"
   - nombre: "Reporteros de Merida"
     url: "https://www.reporterosdemerida.com.ve/rss.xml"
     peso: 0.55
+    region: "Merida"
   - nombre: "Ciudad Trujillo"
     url: "https://ciudadtrujillo.com/?feed=rss2"
     peso: 0.55
+    region: "Trujillo"
   - nombre: "Noticias de Aqui (Anzoategui)"
     url: "https://noticiasdeaqui.co/feed/"
     peso: 0.55
+    region: "Anzoategui"
   - nombre: "Ciudad MCY (Aragua)"
     url: "http://www.ciudadmcy.info.ve/feed/"
     peso: 0.55
+    region: "Aragua"
   - nombre: "Portuguesa al Dia"
     url: "http://www.portuguesaaldia.com/feed/"
     peso: 0.55
+    region: "Portuguesa"
   - nombre: "Carupanero.com (Sucre)"
     url: "https://carupanero.com/feed/"
     peso: 0.55
+    region: "Sucre"
   - nombre: "Senderos de Apure"
     url: "http://www.senderosdeapure.net/rss.xml"
     peso: 0.55
+    region: "Apure"
   - nombre: "El Periodico del Delta (Delta Amacuro)"
     url: "https://www.periodicodeldelta.com/feed/"
     peso: 0.55
+    region: "Delta Amacuro"
   - nombre: "El Impulso (Lara)"
     url: "https://www.elimpulso.com/feed/"
     peso: 0.65
+    region: "Lara"
   - nombre: "Notitarde (Carabobo)"
     url: "https://www.notitarde.com.ve/rss.xml"
     peso: 0.6
+    region: "Carabobo"
   - nombre: "Noticia al Dia (Zulia)"
     url: "https://www.noticialdia.com/feed/"
     peso: 0.55
+    region: "Zulia"
 
 telegram:
   # username sin @, tal como aparece en t.me/<username>
@@ -200,7 +247,9 @@ telegram:
     nombre: "El Regional del Zulia"
     tipo: "medio"
     peso: 0.55
+    region: "Zulia"
   - username: "NADZulia"
     nombre: "Noticia al Dia (Zulia)"
     tipo: "medio"
     peso: 0.6
+    region: "Zulia"

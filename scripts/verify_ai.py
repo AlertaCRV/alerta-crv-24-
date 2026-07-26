@@ -147,6 +147,19 @@ def _parsear_veredictos_json(respuesta_texto, n):
         return None
 
 
+BONO_FUENTE_LOCAL = 0.1
+
+
+def _peso_efectivo(fuente, ubicacion_evento):
+    """El peso base de una fuente (config/sources.yaml) mide su confiabilidad
+    general, pero un medio regional que reporta sobre su propia zona aporta
+    mas certeza que el mismo medio reportando sobre otro estado -- por eso el
+    bono se aplica aqui, por evento, y no como un ajuste fijo al peso en la
+    config."""
+    bono = BONO_FUENTE_LOCAL if fuente.get("region") == ubicacion_evento else 0
+    return fuente["peso"] + bono
+
+
 def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     """error_sistema=True marca que las fuentes no pasaron por un veredicto
     real de la IA (sin API key, respuesta no parseable, o fallo de red/rate
@@ -162,7 +175,7 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     )
     miembros_aprobados = [m for g in grupos_aprobados for m in g]
 
-    score = sum(r["peso"] for r in representantes)
+    score = sum(_peso_efectivo(r, evento["ubicacion"]) for r in representantes)
     severidades = [m["severidad"] for m in miembros_aprobados if m["severidad"] != "sin_clasificar"]
     orden_severidad = ["critico", "alto", "medio", "bajo"]
     severidad_final = next((s for s in orden_severidad if s in severidades), "sin_clasificar")

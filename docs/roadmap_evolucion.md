@@ -336,3 +336,33 @@ exista — se implementa como una ampliación de ese mismo registro (agregar
 el texto completo por fuente), no como un sistema aparte. No se ha
 implementado nada de código; queda documentada para cuando se decida
 empezar.
+
+---
+
+## Bono a fuentes regionales reportando sobre su propia zona (26/07/2026)
+
+**Pregunta que originó el cambio**: al revisar alertas publicadas, ¿debería
+importar si el medio que reporta un evento está asentado en el lugar de los
+hechos o no?
+
+**Decisión**: sí, pero como un ajuste **fluctuante por evento**, no como un
+cambio fijo al `peso` de la fuente en `config/sources.yaml`. La razón: un
+mismo medio regional (p.ej. "La Verdad", asentado en Zulia) debe pesar más
+cuando reporta sobre su propia zona que cuando reporta sobre otro estado —
+eso depende de la combinación medio+evento, no solo del medio, así que no
+se puede resolver con un campo fijo tipo "es medio local: sí/no".
+
+**Implementación**:
+- `config/sources.yaml` gana un campo opcional `region` (estado donde el
+  medio está asentado) en los medios claramente regionales/locales. Los
+  medios nacionales (Efecto Cocuyo, La Patilla, Runrun.es, El Pitazo, Tal
+  Cual, ReliefWeb) se quedan sin ese campo.
+- `scripts/verify_ai.py` calcula, al sumar el score de un evento, un "peso
+  efectivo" por fuente: si `fuente.region == evento.ubicacion`, se suma un
+  bono de **+0.1** al peso de esa fuente para ese evento puntual. El `peso`
+  guardado en la config no cambia, y el umbral de confirmación
+  (`umbral_confirmado = 1.2`) tampoco.
+- 0.1 es un valor conservador de partida, elegido para evitar que un solo
+  medio local de baja confiabilidad general se vuelva "confirmante" él
+  solo por estar en la zona. Se ajustará según lo que se observe con uso
+  real.

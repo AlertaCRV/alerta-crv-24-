@@ -32,6 +32,7 @@ def fetch_telegram_items(ventana_horas=12):
                         "fuente_nombre": canal["nombre"],
                         "fuente_tipo": "telegram",
                         "peso": canal.get("peso", 0.5),
+                        "region": canal.get("region"),
                         "texto": mensaje.text,
                         "link": f"https://t.me/{username}/{mensaje.id}",
                         "fecha": mensaje.date.isoformat(),
