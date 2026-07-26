@@ -403,3 +403,17 @@ valor que no esté en esa lista se descarta como si la IA no hubiera
 respondido nada, igual que la verificación de plausibilidad nunca confía en
 texto libre sin validar. Si `classify.py` ya había determinado un valor,
 la IA nunca lo sobrescribe.
+
+**Alias de nombre corto para municipios (26/07/2026)**: al probar el
+pipeline con un texto real ("municipio Guaicaipuro"), el municipio quedó
+sin detectar porque el nombre oficial en `ubicaciones_detalle.json` es
+"Bolivariano Guaicaipuro" — la prensa casi nunca usa el calificativo
+oficial completo. Se identificaron 9 municipios con el mismo problema
+(calificativos "Autónomo", "Bolivariano", "Indígena Bolivariano" que casi
+nunca aparecen en la prensa). En vez de reescribir el nombre oficial (que
+sigue siendo el correcto para fines de registro), una entrada de
+`municipios`/`parroquias` en `ubicaciones_detalle.json` ahora puede ser
+también una lista `[nombre_oficial, alias_corto]` en vez de un string
+suelto — `classify.py` reconoce cualquiera de las dos formas al buscar
+coincidencias (tanto la explícita "municipio X" como la búsqueda directa
+por nombre), y siempre devuelve el nombre oficial como resultado.

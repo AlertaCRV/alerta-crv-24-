@@ -211,21 +211,35 @@ _conteo_global_municipios = None
 _conteo_global_parroquias = None
 
 
+def _variantes_nombre(entrada):
+    """Una entrada de ubicaciones_detalle.json es normalmente un string (el
+    nombre oficial), pero puede ser una lista [nombre_oficial, alias...]
+    cuando el nombre oficial casi nunca se usa en la prensa (p.ej. el
+    municipio "Bolivariano Guaicaipuro" se menciona casi siempre solo como
+    "Guaicaipuro"). Devuelve (nombre_canonico, [todas las variantes que
+    deben reconocerse, incluido el propio canonico])."""
+    if isinstance(entrada, list):
+        return entrada[0], entrada
+    return entrada, [entrada]
+
+
 def _conteos_globales_ubicaciones():
-    """Cuenta en cuantos estados distintos aparece cada nombre de municipio o
-    parroquia. Muchos son nombres de proceres/estados reusados en todo el
-    pais (Sucre, Bolivar, Miranda, Libertador, Independencia...) -- si un
-    nombre asi se buscara suelto en el texto, generaria falsos positivos
-    constantes. Solo los nombres que aparecen en un unico estado son lo
-    bastante especificos para usarse como coincidencia directa."""
+    """Cuenta en cuantos estados distintos aparece cada variante de nombre de
+    municipio o parroquia. Muchos son nombres de proceres/estados reusados en
+    todo el pais (Sucre, Bolivar, Miranda, Libertador, Independencia...) -- si
+    un nombre asi se buscara suelto en el texto, generaria falsos positivos
+    constantes. Solo las variantes que aparecen en un unico estado son lo
+    bastante especificas para usarse como coincidencia directa."""
     global _conteo_global_municipios, _conteo_global_parroquias
     if _conteo_global_municipios is None:
         cm, cp = Counter(), Counter()
         for detalle in load_ubicaciones_detalle().values():
             for m in detalle.get("municipios", []):
-                cm[_normalizar(m)] += 1
+                for variante in _variantes_nombre(m)[1]:
+                    cm[_normalizar(variante)] += 1
             for p in detalle.get("parroquias", []):
-                cp[_normalizar(p)] += 1
+                for variante in _variantes_nombre(p)[1]:
+                    cp[_normalizar(variante)] += 1
         _conteo_global_municipios, _conteo_global_parroquias = cm, cp
     return _conteo_global_municipios, _conteo_global_parroquias
 
@@ -251,8 +265,18 @@ def detectar_municipio_parroquia(texto, estado):
         return None, None
 
     detalle = load_ubicaciones_detalle().get(estado, {})
-    municipios = {_normalizar(m): m for m in detalle.get("municipios", [])}
-    parroquias = {_normalizar(p): p for p in detalle.get("parroquias", [])}
+    municipios = {
+        _normalizar(variante): canonico
+        for m in detalle.get("municipios", [])
+        for canonico, variantes in [_variantes_nombre(m)]
+        for variante in variantes
+    }
+    parroquias = {
+        _normalizar(variante): canonico
+        for p in detalle.get("parroquias", [])
+        for canonico, variantes in [_variantes_nombre(p)]
+        for variante in variantes
+    }
 
     municipio_encontrado = None
     parroquia_encontrada = None
