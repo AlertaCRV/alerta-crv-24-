@@ -472,3 +472,24 @@ Probado de punta a punta con datos simulados: generación de informe
 cerrado y en curso, no regeneración de un período cerrado ya existente,
 comparación con el mes anterior, y verificación de que el texto completo
 de las fuentes nunca se filtra al sitio público.
+
+**Pendiente para retomar más adelante, con datos reales (26/07/2026)**:
+antes de recalibrar el prompt hace falta ver cómo sale la narrativa con
+eventos reales (esta sesión solo probó con datos simulados) — queda
+pendiente para cuando haya uso acumulado. Dos ajustes ya identificados
+para esa revisión:
+
+1. **Estructura según volumen de eventos**: el prompt actual pide "3 a 6
+   párrafos" sin distinguir si el período tuvo 3 eventos o 40 — con
+   muchos eventos, una narrativa así se vuelve una lista ilegible de
+   nombres y fechas en vez de una síntesis útil. Con más eventos convendría
+   pedir una estructura agrupada (por semana o por estado dentro del
+   informe) en lugar de alargar el texto plano. Se descartó por ahora
+   ofrecer descarga del informe (PDF/documento) como solución a esto: el
+   problema es de estructura de la narrativa, no de pantalla vs.
+   descarga.
+2. **Énfasis temático**: calibrar el prompt para que la narrativa haga
+   énfasis explícito en respuesta del Estado/autoridades, pérdidas
+   económicas, pérdida de vidas, y personas heridas — hoy el prompt solo
+   pide una síntesis general con citas, sin priorizar estos temas
+   puntuales.
