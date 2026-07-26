@@ -6,8 +6,10 @@ from verify import agrupar_y_verificar
 from verify_ai import verificar_evento_con_ia
 from render import redactar_noticia
 from state import cargar_publicados, guardar_publicados, filtrar_nuevos, marcar_publicados
+from historico import registrar_historico
 from publish_telegram import publicar_en_telegram
 from build_site import actualizar_datos_sitio
+from build_dashboard import actualizar_dashboard
 from config_loader import load_settings
 
 
@@ -45,6 +47,8 @@ def main():
     if noticias:
         publicar_en_telegram(noticias)
         actualizar_datos_sitio(noticias)
+        registrar_historico(eventos_nuevos)
+        actualizar_dashboard()
 
     publicados = marcar_publicados(eventos_nuevos, publicados)
     guardar_publicados(publicados)
