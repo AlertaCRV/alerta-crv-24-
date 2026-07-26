@@ -503,3 +503,56 @@ tablas) sin sentido como mensaje de chat. Idea para más adelante: cuando
 a Telegram (ej. "📰 Ya está listo el informe de incendios de julio: 
 [link]"), no el contenido completo — un aviso puntual, no una réplica del
 panel. No implementado; queda anotado para retomar.
+
+---
+
+## Objetivo #3: ampliar tipos de emergencia cubiertos (26/07/2026)
+
+Se agregaron 11 tipos nuevos a `config/keywords.yaml` (antes solo existían
+sismo, incendio, inundación, deslizamiento, infraestructura eléctrica/agua,
+vialidad, orden público y salud pública):
+
+- **tsunami** — antes ni siquiera era un tipo detectable (gap ya señalado
+  en la sección "Qué es" del objetivo #3 original).
+- **tormenta_electrica** — rayos/tormentas eléctricas. Se evitó a propósito
+  la palabra suelta "rayo"/"rayos" (demasiado ambigua: "rayos X", "rayos de
+  sol", nombres propios) — solo frases específicas como "impacto de rayo",
+  "fulminado por un rayo".
+- **derrame_petrolero** — derrames de hidrocarburos/contaminación de agua,
+  relevante para el Lago de Maracaibo y costas venezolanas.
+- **explosion** — se separó de `incendio` (que ya evitaba la palabra suelta
+  "explosion" por el mismo motivo de ambigüedad idiomática); usa frases
+  específicas ("explosión industrial", "artefacto explosivo", "coche
+  bomba").
+- **sequia** — escasez prolongada de agua potable, distinto de
+  `infraestructura_agua` (que es sobre fallas puntuales del servicio, no
+  escasez estructural).
+- **colapso_estructural** — colapso de puentes/edificaciones, distinto de
+  `deslizamiento` (que ya usa "derrumbe" para deslaves naturales).
+- **crisis_migratoria** — desplazamiento/éxodo masivo.
+- **escasez_combustible** — colas y desabastecimiento de gasolina.
+- **motin_carcelario** — motines, amotinamientos, fugas masivas.
+- **accidente_transporte** — accidentes aéreos, marítimos y ferroviarios;
+  se mantuvo separado de `vialidad` (que sigue siendo solo lo vial
+  urbano/carretera).
+- **ataque_armado** — guerrilla, paramilitares, atentados, terrorismo;
+  separado de `orden_publico` (que sigue siendo disturbios/protestas/
+  saqueos, hechos más espontáneos que un ataque armado organizado).
+
+**salud_publica se amplió en vez de crear un tipo aparte** para
+pandemia/alerta epidemiológica: ya tenía palabras clave muy cercanas
+(brote, epidemia, enfermedad) y crear `alerta_epidemiologica` como tipo
+separado hubiera sido, en la práctica, casi redundante. Se sumaron
+pandemia, cuarentena, aislamiento sanitario, emergencia/alerta
+epidemiológica, brote epidémico, contagio masivo.
+
+**Qué se dejó fuera a propósito, por ahora**: siguiendo el mismo criterio
+usado para `sismo` (los filtros de contexto conflictivo/evidencia fuerte
+se agregaron *después* de observar falsos positivos reales en producción,
+no de antemano), ninguno de estos 11 tipos nuevos tiene todavía ese tipo de
+filtro. Se agregarán si el uso real muestra falsos positivos concretos,
+igual que pasó con sismo.
+
+Probado con 12 casos de ejemplo (uno por tipo nuevo + salud_publica
+ampliado) contra `classify.detectar_tipo()`, todos con el resultado
+esperado. `validar_configs.py` sigue pasando.

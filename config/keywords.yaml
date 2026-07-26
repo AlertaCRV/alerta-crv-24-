@@ -127,6 +127,145 @@ tipos:
     - intoxicación masiva
     - enfermedad
     - enfermedades
+    - pandemia
+    - pandemias
+    - cuarentena
+    - aislamiento sanitario
+    - emergencia epidemiologica
+    - emergencia epidemiológica
+    - alerta epidemiologica
+    - alerta epidemiológica
+    - brote epidemico
+    - brote epidémico
+    - contagio masivo
+    - contagios masivos
+  tsunami:
+    - tsunami
+    - tsunamis
+    - maremoto
+    - maremotos
+    - alerta de tsunami
+    - ola gigante
+  tormenta_electrica:
+    - tormenta electrica
+    - tormenta eléctrica
+    - tormentas electricas
+    - tormentas eléctricas
+    - impacto de rayo
+    - impacto de un rayo
+    - impactos de rayo
+    - caida de rayo
+    - caída de rayo
+    - caida de un rayo
+    - caída de un rayo
+    - fulminado por un rayo
+    - fulminada por un rayo
+    - alcanzado por un rayo
+    - alcanzada por un rayo
+    - descarga electrica atmosferica
+    - descarga eléctrica atmosférica
+  derrame_petrolero:
+    - derrame petrolero
+    - derrame de petroleo
+    - derrame de petróleo
+    - derrame de crudo
+    - derrame de hidrocarburos
+    - marea negra
+    - mancha de petroleo
+    - mancha de petróleo
+    - contaminacion por hidrocarburos
+    - contaminación por hidrocarburos
+  explosion:
+    - explosion industrial
+    - explosión industrial
+    - explosion en fabrica
+    - explosión en fábrica
+    - artefacto explosivo
+    - coche bomba
+    - explosivo detonado
+    - estallido de explosivo
+    - explosion de tuberia
+    - explosión de tubería
+    - explosion de caldera
+    - explosión de caldera
+  sequia:
+    - sequia
+    - sequía
+    - sequias
+    - sequías
+    - escasez prolongada de agua
+    - desabastecimiento de agua potable
+    - crisis de agua potable
+    - niveles criticos del embalse
+    - niveles críticos del embalse
+    - racionamiento de agua
+  colapso_estructural:
+    - colapso estructural
+    - colapso de un puente
+    - colapso de una edificacion
+    - colapso de una edificación
+    - colapso de vivienda
+    - desplome de estructura
+    - desplome de edificacion
+    - desplome de edificación
+    - desplome de puente
+  crisis_migratoria:
+    - crisis migratoria
+    - exodo masivo
+    - éxodo masivo
+    - desplazamiento masivo
+    - oleada migratoria
+    - migracion masiva
+    - migración masiva
+    - ola migratoria
+  escasez_combustible:
+    - escasez de combustible
+    - escasez de gasolina
+    - colas de gasolina
+    - crisis de combustible
+    - desabastecimiento de gasolina
+    - desabastecimiento de combustible
+  motin_carcelario:
+    - motin carcelario
+    - motín carcelario
+    - motines carcelarios
+    - motin en carcel
+    - motín en cárcel
+    - amotinamiento
+    - riña carcelaria
+    - riña en carcel
+    - riña en cárcel
+    - fuga masiva de reclusos
+    - toma de rehenes en carcel
+    - toma de rehenes en cárcel
+  accidente_transporte:
+    - accidente aereo
+    - accidente aéreo
+    - caida de avion
+    - caída de avión
+    - avion accidentado
+    - avión accidentado
+    - naufragio
+    - hundimiento de embarcacion
+    - hundimiento de una embarcación
+    - accidente maritimo
+    - accidente marítimo
+    - choque de trenes
+    - descarrilamiento
+    - accidente de tren
+  ataque_armado:
+    - guerrilla
+    - paramilitar
+    - paramilitares
+    - atentado
+    - atentados
+    - ataque armado
+    - ataques armados
+    - terrorismo
+    - celula terrorista
+    - célula terrorista
+    - grupo armado organizado
+    - masacre
 
 severidad:
   critico:
