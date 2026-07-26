@@ -1,5 +1,191 @@
 [
   {
+    "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 26/07/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 5 (score 3.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316662\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/\n  • El Carabobeno: https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/\n  • El Siglo (Aragua): https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Antimano",
+    "severidad": "sin_clasificar",
+    "score": 3.1,
+    "confirmado": true,
+    "num_fuentes": 5,
+    "fuentes": [
+      {
+        "nombre": "El Luchador (Bolivar)",
+        "link": "https://elluchador.info/?p=316662",
+        "fecha": "2026-07-26T15:16:00+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/",
+        "fecha": "2026-07-26T16:30:00+00:00"
+      },
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/",
+        "fecha": "2026-07-26T17:42:10+00:00"
+      },
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/",
+        "fecha": "2026-07-26T14:59:12+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
+        "fecha": "2026-07-26T14:48:20+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T17:42:10+00:00",
+    "fecha_deteccion": "2026-07-26T20:04:48.449519+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Sismo en Parroquia La Guaira, Municipio Vargas, La Guaira",
+    "texto": "📌 Sismo en Parroquia La Guaira, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Guaira, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 26/07/2026, 3:06 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/funvisis-reporta-sismo-de-magnitud-33-al-oeste-de-la-guaira-26jul/",
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": "La Guaira",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/26/funvisis-reporta-sismo-de-magnitud-33-al-oeste-de-la-guaira-26jul/",
+        "fecha": "2026-07-26T19:06:13+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T19:06:13+00:00",
+    "fecha_deteccion": "2026-07-26T20:04:52.186257+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": 3.3,
+    "tambien_mencionado_en": []
+  },
+  {
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Barinas, Municipio Barinas, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Barinas, Municipio Barinas, Barinas\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Barinas, Municipio Barinas, Barinas\n🕒 Hecho reportado: 26/07/2026, 3:55 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
+    "parroquia": "Barinas",
+    "severidad": "sin_clasificar",
+    "score": 1.85,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/",
+        "fecha": "2026-07-26T18:48:23+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/",
+        "fecha": "2026-07-26T19:55:43+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
+        "fecha": "2026-07-26T19:45:58+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T19:55:43+00:00",
+    "fecha_deteccion": "2026-07-26T20:04:55.925543+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Incidente vial en Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar",
+    "texto": "📌 Incidente vial en Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 CRÍTICO\n\n📍 Ubicación: Parroquia La Sabanita, Municipio Angostura del Orinoco, Bolivar\n🕒 Hecho reportado: 26/07/2026, 1:23 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 CRÍTICO: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316674",
+    "tipo": "vialidad",
+    "ubicacion": "Bolivar",
+    "municipio": "Angostura del Orinoco",
+    "parroquia": "La Sabanita",
+    "severidad": "critico",
+    "score": 0.85,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Luchador (Bolivar)",
+        "link": "https://elluchador.info/?p=316674",
+        "fecha": "2026-07-26T17:23:51+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T17:23:51+00:00",
+    "fecha_deteccion": "2026-07-26T20:04:57.695252+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Deslizamiento/Derrumbe en Municipio Ospino, Portuguesa",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 26/07/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino/?utm_source=rss&utm_medium=rss&utm_campaign=filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino",
+    "tipo": "deslizamiento",
+    "ubicacion": "Portuguesa",
+    "municipio": "Ospino",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino/?utm_source=rss&utm_medium=rss&utm_campaign=filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino",
+        "fecha": "2026-07-26T16:30:21+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T16:30:21+00:00",
+    "fecha_deteccion": "2026-07-26T20:05:13.268895+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Tormenta eléctrica en Municipio Valencia, Carabobo",
+    "texto": "📌 Tormenta eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 ALTO\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 26/07/2026, 2:20 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 ALTO: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
+    "tipo": "tormenta_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
+        "fecha": "2026-07-26T18:20:03+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T18:20:03+00:00",
+    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara",
+    "texto": "📌 Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n🕒 Hecho reportado: 26/07/2026, 2:07 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/",
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": "Simón Planas",
+    "parroquia": "Gustavo Vegas León",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/",
+        "fecha": "2026-07-26T18:07:32+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T18:07:32+00:00",
+    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Sismo en La Guaira",
     "texto": "📌 Sismo en La Guaira\n\n✅ CONFIRMADO | 🟡 MEDIO\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 26/07/2026, 10:55 a.m.\n🔎 Detectado por el sistema: 26/07/2026, 11:45 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 MEDIO: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/se-registro-otro-sismo-de-magnitud-33-con-epicentro-al-oeste-de-la-guaira-este-26jul/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/principal/reportan-dos-sismos-sentidos-en-la-guaira-y-la-region-central-este-domingo-26-jul/",
     "tipo": "sismo",
