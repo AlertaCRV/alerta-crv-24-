@@ -1,5 +1,34 @@
 [
   {
+    "titulo": "Sismo en Parroquia La Guaira, Municipio Vargas, La Guaira",
+    "texto": "📌 Sismo en Parroquia La Guaira, Municipio Vargas, La Guaira\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Guaira, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 26/07/2026, 3:06 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:47 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/funvisis-reporta-sismo-de-magnitud-33-al-oeste-de-la-guaira-26jul/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/reportan-sismo-de-magnitud-33-al-oeste-de-la-guairareportan-sismo-de-magnitud-33-al-oeste-de-la-guaira/",
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": "La Guaira",
+    "severidad": "sin_clasificar",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/26/funvisis-reporta-sismo-de-magnitud-33-al-oeste-de-la-guaira-26jul/",
+        "fecha": "2026-07-26T19:06:13+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/reportan-sismo-de-magnitud-33-al-oeste-de-la-guairareportan-sismo-de-magnitud-33-al-oeste-de-la-guaira/",
+        "fecha": "2026-07-26T18:59:35+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-26T19:06:13+00:00",
+    "fecha_deteccion": "2026-07-26T20:47:14.563188+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": 3.3,
+    "tambien_mencionado_en": []
+  },
+  {
     "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
     "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 26/07/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 5 (score 3.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316662\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/\n  • El Carabobeno: https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/\n  • El Siglo (Aragua): https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
     "tipo": "inundacion",
