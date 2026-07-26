@@ -493,3 +493,13 @@ para esa revisión:
    económicas, pérdida de vidas, y personas heridas — hoy el prompt solo
    pide una síntesis general con citas, sin priorizar estos temas
    puntuales.
+
+**Aviso por Telegram cuando se genera un informe nuevo (26/07/2026,
+pendiente)**: hoy Telegram (`publish_telegram.py`) solo envía el mensaje
+individual de cada alerta puntual — no participa del panel de tendencias
+ni de los informes narrativos, que son contenido de navegación (selectores,
+tablas) sin sentido como mensaje de chat. Idea para más adelante: cuando
+`build_informes.py` genere un informe mensual nuevo, enviar un aviso corto
+a Telegram (ej. "📰 Ya está listo el informe de incendios de julio: 
+[link]"), no el contenido completo — un aviso puntual, no una réplica del
+panel. No implementado; queda anotado para retomar.
