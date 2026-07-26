@@ -236,6 +236,13 @@ Ningún cambio de código se implementó en esta sesión — esta sección es
 únicamente la definición de alcance acordada para cuando se decida
 empezar la implementación.
 
+**Nota (26/07/2026, tras implementar la v1):** el panel muestra el
+histórico completo desde el día 0, sin filtro de rango de fechas, tipo o
+estado — cualquier usuario ve siempre todos los eventos acumulados. Se
+decidió no agregar un filtro todavía; se evaluará más adelante, según lo
+que se aprenda con el uso real, si hace falta (p.ej. selector de
+último mes / último año, o por tipo/estado).
+
 ---
 
 ## Extensión del objetivo 1: informes narrativos por período y tipo
@@ -329,3 +336,233 @@ exista — se implementa como una ampliación de ese mismo registro (agregar
 el texto completo por fuente), no como un sistema aparte. No se ha
 implementado nada de código; queda documentada para cuando se decida
 empezar.
+
+---
+
+## Bono a fuentes regionales reportando sobre su propia zona (26/07/2026)
+
+**Pregunta que originó el cambio**: al revisar alertas publicadas, ¿debería
+importar si el medio que reporta un evento está asentado en el lugar de los
+hechos o no?
+
+**Decisión**: sí, pero como un ajuste **fluctuante por evento**, no como un
+cambio fijo al `peso` de la fuente en `config/sources.yaml`. La razón: un
+mismo medio regional (p.ej. "La Verdad", asentado en Zulia) debe pesar más
+cuando reporta sobre su propia zona que cuando reporta sobre otro estado —
+eso depende de la combinación medio+evento, no solo del medio, así que no
+se puede resolver con un campo fijo tipo "es medio local: sí/no".
+
+**Implementación**:
+- `config/sources.yaml` gana un campo opcional `region` (estado donde el
+  medio está asentado) en los medios claramente regionales/locales. Los
+  medios nacionales (Efecto Cocuyo, La Patilla, Runrun.es, El Pitazo, Tal
+  Cual, ReliefWeb) se quedan sin ese campo.
+- `scripts/verify_ai.py` calcula, al sumar el score de un evento, un "peso
+  efectivo" por fuente: si `fuente.region == evento.ubicacion`, se suma un
+  bono de **+0.1** al peso de esa fuente para ese evento puntual. El `peso`
+  guardado en la config no cambia, y el umbral de confirmación
+  (`umbral_confirmado = 1.2`) tampoco.
+- 0.1 es un valor conservador de partida, elegido para evitar que un solo
+  medio local de baja confiabilidad general se vuelva "confirmante" él
+  solo por estar en la zona. Se ajustará según lo que se observe con uso
+  real.
+
+---
+
+## Severidad "medio" mal justificada y municipio/parroquia sin detectar (26/07/2026)
+
+**Problema 1 — severidad "medio" sin evidencia real**: `config/keywords.yaml`
+incluía "afectados" como palabra clave de severidad "medio". Es una palabra
+demasiado genérica: aparece incluso en frases que niegan daño ("sin
+afectados que lamentar", "no se reportan afectados"). Se quitó de la lista,
+y `classify.py` ahora usa `_contiene_palabra_clave_no_negada`, que descarta
+una coincidencia si está negada a pocas palabras de distancia ("sin", "no",
+"ningún...").
+
+**Problema 2 — municipio/parroquia casi nunca se detectaban**:
+`detectar_municipio_parroquia` solo reconocía el municipio/parroquia si el
+texto traía literalmente "municipio X"/"parroquia Y" — la mayoría de las
+noticias solo dicen "en Petare", sin esa palabra explícita. Se agregó una
+búsqueda por nombre directo usando los datos ya existentes en
+`ubicaciones_detalle.json`, descartando nombres repetidos en más de un
+estado (Sucre, Bolívar, Miranda, Libertador... son nombres de próceres
+reusados como municipio en varios estados a la vez, y también son nombres
+de estado) o de menos de 5 caracteres, por ser demasiado ambiguos para una
+coincidencia sin ese contexto explícito.
+
+**Extensión con IA (26/07/2026)**: la búsqueda por nombre directo sigue sin
+resolver el caso de un municipio que se llama igual que su propio estado
+(ej. "Sucre" como municipio de Miranda) cuando el texto no dice
+"municipio X" explícitamente. Para esos casos, se extendió la misma llamada
+a Groq que ya hace `verify_ai.py` para verificar plausibilidad: cuando
+`classify.py` no pudo determinar municipio y/o parroquia, se le pide a la
+IA (en el mismo prompt, sin llamada aparte) que intente inferirlo del texto
+completo de las fuentes — pero restringido a elegir EXCLUSIVAMENTE un valor
+de la lista real de municipios/parroquias de ese estado (o `null`). Un
+valor que no esté en esa lista se descarta como si la IA no hubiera
+respondido nada, igual que la verificación de plausibilidad nunca confía en
+texto libre sin validar. Si `classify.py` ya había determinado un valor,
+la IA nunca lo sobrescribe.
+
+**Alias de nombre corto para municipios (26/07/2026)**: al probar el
+pipeline con un texto real ("municipio Guaicaipuro"), el municipio quedó
+sin detectar porque el nombre oficial en `ubicaciones_detalle.json` es
+"Bolivariano Guaicaipuro" — la prensa casi nunca usa el calificativo
+oficial completo. Se identificaron 9 municipios con el mismo problema
+(calificativos "Autónomo", "Bolivariano", "Indígena Bolivariano" que casi
+nunca aparecen en la prensa). En vez de reescribir el nombre oficial (que
+sigue siendo el correcto para fines de registro), una entrada de
+`municipios`/`parroquias` en `ubicaciones_detalle.json` ahora puede ser
+también una lista `[nombre_oficial, alias_corto]` en vez de un string
+suelto — `classify.py` reconoce cualquiera de las dos formas al buscar
+coincidencias (tanto la explícita "municipio X" como la búsqueda directa
+por nombre), y siempre devuelve el nombre oficial como resultado.
+
+---
+
+## Implementación de los informes narrativos (26/07/2026)
+
+Se implementó la extensión de informes narrativos descrita más arriba,
+resolviendo las preguntas que habían quedado abiertas:
+
+- **Almacenamiento del texto completo**: archivo aparte,
+  `data/historico_fuentes_texto.jsonl` (no se mezcla con
+  `data/historico_eventos.jsonl`, que sigue liviano para que
+  `build_dashboard.py` lo siga leyendo rápido en cada corrida).
+- **Granularidad**: un informe por mes × tipo de emergencia (ej. "incendios
+  de julio"), más un informe "general" por mes que cubre todas las
+  categorías juntas.
+- **Ubicación en el sitio**: una sección plegable más en `docs/index.html`
+  (`📰 Informes narrativos por período`), junto a la de tendencias — no una
+  página aparte.
+
+**Cómo se evita que el sitio público filtre texto de terceros**: se
+descubrió que `render.py` arma la noticia pública haciendo
+`{**evento, ...}` — cualquier campo que se le agregara al evento
+terminaría publicado tal cual. Por eso el texto completo de cada fuente se
+guarda bajo una clave "privada" (`_texto_fuentes_completo`) que
+`historico_fuentes.registrar_texto_fuentes()` extrae y **borra** del
+evento — y ese paso corre ANTES de `redactar_noticia()`/
+`actualizar_datos_sitio()` en `main.py`. Se verificó explícitamente con una
+prueba que el texto completo nunca llega al JSON público.
+
+**Piezas nuevas**:
+- `scripts/historico_fuentes.py`: registra/lee el texto completo por
+  fuente.
+- `scripts/build_informes.py`: agrupa el histórico por (período, tipo),
+  decide si cada combinación necesita generarse (período cerrado = una
+  sola vez y nunca más; período en curso = como mucho 1 vez por día UTC,
+  comparando la fecha de la última generación), arma el prompt con las
+  fuentes y la comparación numérica determinística contra el mes anterior
+  (reutilizando `historico.leer_historico()`, no le pide a la IA que
+  "recuerde" nada), y guarda cada informe como
+  `docs/data/informes/<periodo>_<tipo>.json` más un `index.json` liviano
+  para poblar los selectores de la página sin tener que leer cada informe.
+- El prompt de generación exige citas explícitas entre paréntesis al
+  nombre del medio en cada afirmación concreta, igual disciplina de
+  auditabilidad que ya aplica `verify_ai.py` a la verificación de eventos
+  individuales.
+- `.github/workflows/monitor.yml`: se corrigió también un riesgo latente
+  — `git add` falla si un archivo no existe todavía (y el step corre con
+  `-e`), lo que hubiera roto el workflow en un repo nuevo antes de la
+  primera corrida con contenido real. Ahora cada ruta se agrega solo si ya
+  existe.
+
+Probado de punta a punta con datos simulados: generación de informe
+cerrado y en curso, no regeneración de un período cerrado ya existente,
+comparación con el mes anterior, y verificación de que el texto completo
+de las fuentes nunca se filtra al sitio público.
+
+**Pendiente para retomar más adelante, con datos reales (26/07/2026)**:
+antes de recalibrar el prompt hace falta ver cómo sale la narrativa con
+eventos reales (esta sesión solo probó con datos simulados) — queda
+pendiente para cuando haya uso acumulado. Dos ajustes ya identificados
+para esa revisión:
+
+1. **Estructura según volumen de eventos**: el prompt actual pide "3 a 6
+   párrafos" sin distinguir si el período tuvo 3 eventos o 40 — con
+   muchos eventos, una narrativa así se vuelve una lista ilegible de
+   nombres y fechas en vez de una síntesis útil. Con más eventos convendría
+   pedir una estructura agrupada (por semana o por estado dentro del
+   informe) en lugar de alargar el texto plano. Se descartó por ahora
+   ofrecer descarga del informe (PDF/documento) como solución a esto: el
+   problema es de estructura de la narrativa, no de pantalla vs.
+   descarga.
+2. **Énfasis temático**: calibrar el prompt para que la narrativa haga
+   énfasis explícito en respuesta del Estado/autoridades, pérdidas
+   económicas, pérdida de vidas, y personas heridas — hoy el prompt solo
+   pide una síntesis general con citas, sin priorizar estos temas
+   puntuales.
+
+**Aviso por Telegram cuando se genera un informe nuevo (26/07/2026,
+pendiente)**: hoy Telegram (`publish_telegram.py`) solo envía el mensaje
+individual de cada alerta puntual — no participa del panel de tendencias
+ni de los informes narrativos, que son contenido de navegación (selectores,
+tablas) sin sentido como mensaje de chat. Idea para más adelante: cuando
+`build_informes.py` genere un informe mensual nuevo, enviar un aviso corto
+a Telegram (ej. "📰 Ya está listo el informe de incendios de julio: 
+[link]"), no el contenido completo — un aviso puntual, no una réplica del
+panel. No implementado; queda anotado para retomar.
+
+---
+
+## Objetivo #3: ampliar tipos de emergencia cubiertos (26/07/2026)
+
+Se agregaron 11 tipos nuevos a `config/keywords.yaml` (antes solo existían
+sismo, incendio, inundación, deslizamiento, infraestructura eléctrica/agua,
+vialidad, orden público y salud pública):
+
+- **tsunami** — antes ni siquiera era un tipo detectable (gap ya señalado
+  en la sección "Qué es" del objetivo #3 original).
+- **tormenta_electrica** — rayos/tormentas eléctricas. Se evitó a propósito
+  la palabra suelta "rayo"/"rayos" (demasiado ambigua: "rayos X", "rayos de
+  sol", nombres propios) — solo frases específicas como "impacto de rayo",
+  "fulminado por un rayo".
+- **derrame_petrolero** — derrames de hidrocarburos/contaminación de agua,
+  relevante para el Lago de Maracaibo y costas venezolanas.
+- **explosion** — se separó de `incendio` (que ya evitaba la palabra suelta
+  "explosion" por el mismo motivo de ambigüedad idiomática); usa frases
+  específicas ("explosión industrial", "artefacto explosivo", "coche
+  bomba").
+- **sequia** — escasez prolongada de agua potable, distinto de
+  `infraestructura_agua` (que es sobre fallas puntuales del servicio, no
+  escasez estructural).
+- **colapso_estructural** — colapso de puentes/edificaciones, distinto de
+  `deslizamiento` (que ya usa "derrumbe" para deslaves naturales).
+- **crisis_migratoria** — desplazamiento/éxodo masivo.
+- **escasez_combustible** — colas y desabastecimiento de gasolina.
+- **motin_carcelario** — motines, amotinamientos, fugas masivas.
+- **accidente_transporte** — accidentes aéreos, marítimos y ferroviarios;
+  se mantuvo separado de `vialidad` (que sigue siendo solo lo vial
+  urbano/carretera).
+- **ataque_armado** — guerrilla, paramilitares, atentados, terrorismo;
+  separado de `orden_publico` (que sigue siendo disturbios/protestas/
+  saqueos, hechos más espontáneos que un ataque armado organizado).
+
+**salud_publica se amplió en vez de crear un tipo aparte** para
+pandemia/alerta epidemiológica: ya tenía palabras clave muy cercanas
+(brote, epidemia, enfermedad) y crear `alerta_epidemiologica` como tipo
+separado hubiera sido, en la práctica, casi redundante. Se sumaron
+pandemia, cuarentena, aislamiento sanitario, emergencia/alerta
+epidemiológica, brote epidémico, contagio masivo.
+
+**Qué se dejó fuera a propósito, por ahora**: siguiendo el mismo criterio
+usado para `sismo` (los filtros de contexto conflictivo/evidencia fuerte
+se agregaron *después* de observar falsos positivos reales en producción,
+no de antemano), ninguno de estos 11 tipos nuevos tiene todavía ese tipo de
+filtro. Se agregarán si el uso real muestra falsos positivos concretos,
+igual que pasó con sismo.
+
+Probado con 12 casos de ejemplo (uno por tipo nuevo + salud_publica
+ampliado) contra `classify.detectar_tipo()`, todos con el resultado
+esperado. `validar_configs.py` sigue pasando.
+
+**Un tipo más, agregado después (26/07/2026): `emergencia_metro`.** Metro
+de Caracas, Metrocable y teleférico no calzaban con ningún tipo existente
+— `accidente_transporte` está pensado para aéreo/marítimo/ferroviario
+interurbano, no transporte masivo urbano. Se creó como tipo aparte, con
+frases como "falla en el metro", "varados en el metro", "descarrilamiento
+del metro", "falla en el teleférico". Al probarlo se encontró un caso real
+de redacción demasiado rígida ("usuarios varados en el metro" no
+calzaba con "usuarios *quedaron* varados en el metro") — se corrigió
+quitando el sujeto de la frase clave ("varados en el metro" a secas).

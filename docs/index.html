@@ -50,6 +50,16 @@
   .leyenda-grupo h3 { font-size:0.95rem; margin:0 0 0.4rem 0; color:#9aa4b2; }
   .leyenda-item { font-size:0.9rem; margin-bottom:0.4rem; }
   .leyenda-item b { display:inline-block; min-width:150px; }
+
+  #panel-tendencias { margin-bottom:1.2rem; border:1px solid #2a2f36; border-radius:8px; background:#131820; padding:0.8rem 1rem; }
+  #panel-tendencias summary { cursor:pointer; font-weight:bold; }
+  .tendencias-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin-top:0.8rem; }
+  .tendencias-grid h3 { font-size:0.9rem; margin:0 0 0.4rem 0; color:#9aa4b2; }
+  .tendencias-grid table { width:100%; border-collapse:collapse; font-size:0.85rem; }
+  .tendencias-grid th, .tendencias-grid td { text-align:left; padding:0.25rem 0.4rem; border-bottom:1px solid #2a2f36; }
+  .tendencias-grid th { color:#9aa4b2; font-weight:normal; }
+  .barra-fondo { background:#1c232c; border-radius:4px; height:0.8rem; overflow:hidden; }
+  .barra { background:#2ecc71; height:100%; }
 </style>
 </head>
 <body>
@@ -81,6 +91,26 @@
     <div class="leyenda-item"><b>🟢 BAJO</b> Situación de precaución, sin daños significativos reportados.</div>
     <div class="leyenda-item"><b>⚪ SIN CLASIFICAR</b> El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.</div>
   </div>
+</details>
+
+<details id="panel-tendencias" open>
+  <summary>📊 Tendencias históricas</summary>
+  <div id="resumen-tendencias" class="meta" style="margin-top:0.6rem;">Cargando...</div>
+  <div class="tendencias-grid">
+    <div><h3>Eventos por tipo</h3><div id="tend-por-tipo"></div></div>
+    <div><h3>Ranking de estados (total / confirmados)</h3><div id="tend-ranking-estados"></div></div>
+    <div><h3>Distribución de severidad</h3><div id="tend-severidad"></div></div>
+    <div><h3>Cruce estado × tipo</h3><div id="tend-cruce" style="overflow-x:auto;"></div></div>
+  </div>
+</details>
+
+<details id="panel-informes">
+  <summary>📰 Informes narrativos por período</summary>
+  <div style="margin-top:0.6rem;">
+    <label>Período: <select id="informe-periodo"></select></label>
+    <label style="margin-left:1rem;">Categoría: <select id="informe-tipo"></select></label>
+  </div>
+  <div id="informe-contenido" class="meta" style="margin-top:0.8rem;">Selecciona un período y categoría.</div>
 </details>
 
 <div id="lista">Cargando...</div>
@@ -161,6 +191,155 @@ function verificarActualizacion() {
 
 verificarActualizacion();
 setInterval(verificarActualizacion, INTERVALO_MS);
+
+function tablaBarras(entradas, totalMax) {
+  return `<table>${entradas.map(([nombre, valor]) => `
+    <tr>
+      <td>${nombre}</td>
+      <td style="width:50%"><div class="barra-fondo"><div class="barra" style="width:${totalMax ? (valor / totalMax * 100) : 0}%"></div></div></td>
+      <td style="text-align:right">${valor}</td>
+    </tr>
+  `).join('')}</table>`;
+}
+
+function formatearFechaCorta(fechaIso) {
+  if (!fechaIso) return null;
+  const dt = new Date(fechaIso);
+  return dt.toLocaleDateString('es-VE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+
+function cargarTendencias() {
+  fetch('data/estadisticas.json?_=' + Date.now()).then(r => r.json()).then(stats => {
+    const periodo = stats.periodo_cubierto || {};
+    const desde = formatearFechaCorta(periodo.desde);
+    const hasta = formatearFechaCorta(periodo.hasta);
+    const rangoTexto = (desde && hasta) ? `Periodo cubierto: ${desde} — ${hasta}` : 'Sin eventos registrados aún.';
+    const actualizadoTexto = stats.actualizado
+      ? `Actualizado: ${new Date(stats.actualizado).toLocaleString('es-VE')}`
+      : '';
+    document.getElementById('resumen-tendencias').innerHTML =
+      `Total de eventos en el histórico: ${stats.total_eventos}<br>${rangoTexto}${actualizadoTexto ? ' · ' + actualizadoTexto : ''}`;
+
+    const porTipo = Object.entries(stats.por_tipo || {})
+      .sort((a, b) => b[1] - a[1])
+      .map(([tipo, n]) => [TIPO_LABELS[tipo] || tipo, n]);
+    const maxTipo = Math.max(1, ...porTipo.map(e => e[1]));
+    document.getElementById('tend-por-tipo').innerHTML = porTipo.length
+      ? tablaBarras(porTipo, maxTipo) : 'Sin datos aún.';
+
+    const ranking = stats.ranking_estados || [];
+    document.getElementById('tend-ranking-estados').innerHTML = ranking.length ? `
+      <table>
+        <tr><th>Estado</th><th>Total</th><th>Conf.</th></tr>
+        ${ranking.map(r => `<tr><td>${r.estado}</td><td>${r.total}</td><td>${r.confirmados}</td></tr>`).join('')}
+      </table>` : 'Sin datos aún.';
+
+    const SEVERIDAD_LABELS = {
+      critico: '🔴 Crítico', alto: '🟠 Alto', medio: '🟡 Medio',
+      bajo: '🟢 Bajo', sin_clasificar: '⚪ Sin clasificar',
+    };
+    const severidad = Object.entries(stats.por_severidad || {})
+      .map(([sev, n]) => [SEVERIDAD_LABELS[sev] || sev, n]);
+    const maxSev = Math.max(1, ...severidad.map(e => e[1]));
+    document.getElementById('tend-severidad').innerHTML = severidad.length
+      ? tablaBarras(severidad, maxSev) : 'Sin datos aún.';
+
+    const cruce = stats.cruce_estado_tipo || {};
+    const estados = Object.keys(cruce);
+    const tipos = [...new Set(estados.flatMap(e => Object.keys(cruce[e])))];
+    document.getElementById('tend-cruce').innerHTML = estados.length ? `
+      <table>
+        <tr><th>Estado</th>${tipos.map(t => `<th>${TIPO_LABELS[t] || t}</th>`).join('')}</tr>
+        ${estados.map(e => `<tr><td>${e}</td>${tipos.map(t => `<td>${cruce[e][t] || 0}</td>`).join('')}</tr>`).join('')}
+      </table>` : 'Sin datos aún.';
+  }).catch(() => {
+    document.getElementById('resumen-tendencias').textContent = 'Aún no hay datos del histórico.';
+  });
+}
+
+const TIPO_LABELS = {
+  sismo: "Sismo", incendio: "Incendio", inundacion: "Inundación",
+  deslizamiento: "Deslizamiento/Derrumbe", infraestructura_electrica: "Falla eléctrica",
+  infraestructura_agua: "Falla de agua", vialidad: "Incidente vial",
+  orden_publico: "Orden público", salud_publica: "Salud pública",
+  tsunami: "Tsunami", tormenta_electrica: "Tormenta eléctrica",
+  derrame_petrolero: "Derrame petrolero", explosion: "Explosión",
+  sequia: "Sequía", colapso_estructural: "Colapso estructural",
+  crisis_migratoria: "Crisis migratoria", escasez_combustible: "Escasez de combustible",
+  motin_carcelario: "Motín carcelario", accidente_transporte: "Accidente de transporte",
+  ataque_armado: "Ataque armado", emergencia_metro: "Emergencia en el Metro/Metrocable/Teleférico",
+};
+
+cargarTendencias();
+setInterval(cargarTendencias, INTERVALO_MS);
+
+let indiceInformes = [];
+
+function pintarSelectorTipos(periodo) {
+  const selTipo = document.getElementById('informe-tipo');
+  const disponibles = indiceInformes.filter(r => r.periodo === periodo);
+  selTipo.innerHTML = disponibles
+    .map(r => `<option value="${r.tipo}">${r.tipo_label}</option>`)
+    .join('');
+}
+
+function cargarInforme(periodo, tipo) {
+  const cont = document.getElementById('informe-contenido');
+  cont.textContent = 'Cargando informe...';
+  fetch(`data/informes/${periodo}_${tipo}.json?_=` + Date.now())
+    .then(r => r.json())
+    .then(inf => {
+      const comp = inf.comparacion_mes_anterior || {};
+      const estadoPeriodo = inf.cerrado
+        ? 'Período cerrado (no cambia)'
+        : 'Período en curso (se actualiza ~1 vez al día)';
+      const actualizadoHasta = formatearFechaCorta(inf.actualizado_hasta);
+      const fuentesHtml = (inf.fuentes || [])
+        .map(f => `<a href="${f.link}" target="_blank" rel="noopener noreferrer">${f.nombre}</a>`)
+        .join(', ');
+      cont.innerHTML = `
+        <p><b>${inf.tipo_label} — ${inf.periodo}</b><br>
+        ${estadoPeriodo} · Actualizado hasta: ${actualizadoHasta}<br>
+        Total de eventos: ${inf.total_eventos} (mes anterior: ${comp.anterior ?? '?'})</p>
+        <p style="white-space:pre-wrap;">${inf.narrativa}</p>
+        <p><b>Fuentes citadas:</b> ${fuentesHtml || 'ninguna'}</p>
+      `;
+    })
+    .catch(() => {
+      cont.textContent = 'Este informe todavía no se ha generado.';
+    });
+}
+
+function cargarIndiceInformes() {
+  fetch('data/informes/index.json?_=' + Date.now())
+    .then(r => r.json())
+    .then(indice => {
+      indiceInformes = indice;
+      const selPeriodo = document.getElementById('informe-periodo');
+      const periodos = [...new Set(indice.map(r => r.periodo))];
+      if (!periodos.length) {
+        document.getElementById('informe-contenido').textContent = 'Aún no hay informes generados.';
+        return;
+      }
+      selPeriodo.innerHTML = periodos.map(p => `<option value="${p}">${p}</option>`).join('');
+      pintarSelectorTipos(periodos[0]);
+      cargarInforme(periodos[0], indice.find(r => r.periodo === periodos[0]).tipo);
+    })
+    .catch(() => {
+      document.getElementById('informe-contenido').textContent = 'Aún no hay informes generados.';
+    });
+}
+
+document.getElementById('informe-periodo').addEventListener('change', (e) => {
+  pintarSelectorTipos(e.target.value);
+  const tipoSeleccionado = document.getElementById('informe-tipo').value;
+  cargarInforme(e.target.value, tipoSeleccionado);
+});
+document.getElementById('informe-tipo').addEventListener('change', (e) => {
+  cargarInforme(document.getElementById('informe-periodo').value, e.target.value);
+});
+
+cargarIndiceInformes();
 </script>
 </body>
 </html>

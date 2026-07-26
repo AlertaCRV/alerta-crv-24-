@@ -1,12 +1,30 @@
 {
  "Amazonas": {
   "municipios": [
-   "Autónomo Alto Orinoco",
-   "Autónomo Atabapo",
-   "Autónomo Atures",
-   "Autónomo Autana",
-   "Autónomo Maroa",
-   "Autónomo Rio Negro",
+   [
+    "Autónomo Alto Orinoco",
+    "Alto Orinoco"
+   ],
+   [
+    "Autónomo Atabapo",
+    "Atabapo"
+   ],
+   [
+    "Autónomo Atures",
+    "Atures"
+   ],
+   [
+    "Autónomo Autana",
+    "Autana"
+   ],
+   [
+    "Autónomo Maroa",
+    "Maroa"
+   ],
+   [
+    "Autónomo Rio Negro",
+    "Rio Negro"
+   ],
    "Manapiare"
   ],
   "parroquias": [
@@ -236,7 +254,10 @@
  "Bolivar": {
   "municipios": [
    "Angostura del Orinoco",
-   "Bolivariano Angostura",
+   [
+    "Bolivariano Angostura",
+    "Angostura"
+   ],
    "Caroní",
    "Cedeño",
    "El Callao",
@@ -758,7 +779,10 @@
    "Acevedo",
    "Andrés Bello",
    "Baruta",
-   "Bolivariano Guaicaipuro",
+   [
+    "Bolivariano Guaicaipuro",
+    "Guaicaipuro"
+   ],
    "Brión",
    "Buroz",
    "Carrizal",
@@ -1297,7 +1321,10 @@
    "Catatumbo",
    "Colon",
    "Francisco Javier Pulgar",
-   "Indígena Bolivariano Guajira",
+   [
+    "Indígena Bolivariano Guajira",
+    "Guajira"
+   ],
    "Jesús Enrique Lossada",
    "Jesús María Semprum",
    "La Cañada de Urdaneta",

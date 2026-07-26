@@ -14,6 +14,18 @@ TIPO_LABELS = {
     "vialidad": "Incidente vial",
     "orden_publico": "Orden público",
     "salud_publica": "Salud pública",
+    "tsunami": "Tsunami",
+    "tormenta_electrica": "Tormenta eléctrica",
+    "derrame_petrolero": "Derrame petrolero",
+    "explosion": "Explosión",
+    "sequia": "Sequía",
+    "colapso_estructural": "Colapso estructural",
+    "crisis_migratoria": "Crisis migratoria",
+    "escasez_combustible": "Escasez de combustible",
+    "motin_carcelario": "Motín carcelario",
+    "accidente_transporte": "Accidente de transporte",
+    "ataque_armado": "Ataque armado",
+    "emergencia_metro": "Emergencia en el Metro/Metrocable/Teleférico",
 }
 
 SEVERIDAD_EMOJI = {

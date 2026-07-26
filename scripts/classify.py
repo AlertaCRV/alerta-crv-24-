@@ -1,5 +1,6 @@
 import re
 import unicodedata
+from collections import Counter
 
 from config_loader import load_keywords, load_estados, load_ubicaciones_detalle
 
@@ -81,6 +82,26 @@ def _contiene_palabra_clave(texto_norm, palabra):
     palabra, p.ej. 'alud' dentro de 'salud')."""
     patron = r"\b" + re.escape(_normalizar(palabra)) + r"\b"
     return re.search(patron, texto_norm) is not None
+
+
+_NEGACION_RE = re.compile(
+    r"\b(sin|no|ningun|ninguna|ningunos|ningunas)\b(\s+\w+){0,2}\s*$"
+)
+_VENTANA_NEGACION_CHARS = 25
+
+
+def _contiene_palabra_clave_no_negada(texto_norm, palabra):
+    """Como _contiene_palabra_clave, pero descarta la coincidencia si esta
+    negada a pocas palabras de distancia (p.ej. 'sin afectados que lamentar',
+    'no se reportan heridos') -- evita que una palabra clave de severidad
+    dispare un nivel que el propio texto esta descartando."""
+    patron = r"\b" + re.escape(_normalizar(palabra)) + r"\b"
+    for m in re.finditer(patron, texto_norm):
+        inicio_ventana = max(0, m.start() - _VENTANA_NEGACION_CHARS)
+        fragmento_previo = texto_norm[inicio_ventana:m.start()]
+        if not _NEGACION_RE.search(fragmento_previo):
+            return True
+    return False
 
 
 def detectar_ubicacion(texto):
@@ -184,13 +205,78 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
     return None
 
 
+_LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
+
+_conteo_global_municipios = None
+_conteo_global_parroquias = None
+
+
+def _variantes_nombre(entrada):
+    """Una entrada de ubicaciones_detalle.json es normalmente un string (el
+    nombre oficial), pero puede ser una lista [nombre_oficial, alias...]
+    cuando el nombre oficial casi nunca se usa en la prensa (p.ej. el
+    municipio "Bolivariano Guaicaipuro" se menciona casi siempre solo como
+    "Guaicaipuro"). Devuelve (nombre_canonico, [todas las variantes que
+    deben reconocerse, incluido el propio canonico])."""
+    if isinstance(entrada, list):
+        return entrada[0], entrada
+    return entrada, [entrada]
+
+
+def _conteos_globales_ubicaciones():
+    """Cuenta en cuantos estados distintos aparece cada variante de nombre de
+    municipio o parroquia. Muchos son nombres de proceres/estados reusados en
+    todo el pais (Sucre, Bolivar, Miranda, Libertador, Independencia...) -- si
+    un nombre asi se buscara suelto en el texto, generaria falsos positivos
+    constantes. Solo las variantes que aparecen en un unico estado son lo
+    bastante especificas para usarse como coincidencia directa."""
+    global _conteo_global_municipios, _conteo_global_parroquias
+    if _conteo_global_municipios is None:
+        cm, cp = Counter(), Counter()
+        for detalle in load_ubicaciones_detalle().values():
+            for m in detalle.get("municipios", []):
+                for variante in _variantes_nombre(m)[1]:
+                    cm[_normalizar(variante)] += 1
+            for p in detalle.get("parroquias", []):
+                for variante in _variantes_nombre(p)[1]:
+                    cp[_normalizar(variante)] += 1
+        _conteo_global_municipios, _conteo_global_parroquias = cm, cp
+    return _conteo_global_municipios, _conteo_global_parroquias
+
+
+def _buscar_nombre_directo(texto_norm, candidatos, conteo_global):
+    """Busca el nombre de un municipio/parroquia mencionado directamente en
+    el texto (p.ej. 'inundacion en Petare'), sin exigir que venga precedido
+    de la palabra 'municipio'/'parroquia'. Descarta nombres muy cortos o
+    repetidos en varios estados, por ser demasiado genericos/ambiguos para
+    una coincidencia confiable sin ese contexto explicito."""
+    for normalizado, original in candidatos.items():
+        if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
+            continue
+        if conteo_global[normalizado] > 1:
+            continue
+        if _contiene_palabra_clave(texto_norm, normalizado):
+            return original
+    return None
+
+
 def detectar_municipio_parroquia(texto, estado):
     if not estado:
         return None, None
 
     detalle = load_ubicaciones_detalle().get(estado, {})
-    municipios = {_normalizar(m): m for m in detalle.get("municipios", [])}
-    parroquias = {_normalizar(p): p for p in detalle.get("parroquias", [])}
+    municipios = {
+        _normalizar(variante): canonico
+        for m in detalle.get("municipios", [])
+        for canonico, variantes in [_variantes_nombre(m)]
+        for variante in variantes
+    }
+    parroquias = {
+        _normalizar(variante): canonico
+        for p in detalle.get("parroquias", [])
+        for canonico, variantes in [_variantes_nombre(p)]
+        for variante in variantes
+    }
 
     municipio_encontrado = None
     parroquia_encontrada = None
@@ -204,6 +290,14 @@ def detectar_municipio_parroquia(texto, estado):
     if p:
         candidato = _normalizar(p.group(1).strip())
         parroquia_encontrada = parroquias.get(candidato)
+
+    if municipio_encontrado is None or parroquia_encontrada is None:
+        texto_norm = _normalizar(texto)
+        conteo_municipios, conteo_parroquias = _conteos_globales_ubicaciones()
+        if municipio_encontrado is None:
+            municipio_encontrado = _buscar_nombre_directo(texto_norm, municipios, conteo_municipios)
+        if parroquia_encontrada is None:
+            parroquia_encontrada = _buscar_nombre_directo(texto_norm, parroquias, conteo_parroquias)
 
     return municipio_encontrado, parroquia_encontrada
 
@@ -245,7 +339,7 @@ def detectar_severidad(texto, tipos=None):
     severidades = load_keywords()["severidad"]
     for nivel in orden:
         for palabra in severidades.get(nivel, []):
-            if _contiene_palabra_clave(texto_norm, palabra):
+            if _contiene_palabra_clave_no_negada(texto_norm, palabra):
                 return nivel
     if tipos:
         por_duracion = _severidad_por_duracion(texto_norm, tipos)
