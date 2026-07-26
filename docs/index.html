@@ -193,10 +193,23 @@ function tablaBarras(entradas, totalMax) {
   `).join('')}</table>`;
 }
 
+function formatearFechaCorta(fechaIso) {
+  if (!fechaIso) return null;
+  const dt = new Date(fechaIso);
+  return dt.toLocaleDateString('es-VE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+
 function cargarTendencias() {
   fetch('data/estadisticas.json?_=' + Date.now()).then(r => r.json()).then(stats => {
-    document.getElementById('resumen-tendencias').textContent =
-      `Total de eventos en el histórico: ${stats.total_eventos}`;
+    const periodo = stats.periodo_cubierto || {};
+    const desde = formatearFechaCorta(periodo.desde);
+    const hasta = formatearFechaCorta(periodo.hasta);
+    const rangoTexto = (desde && hasta) ? `Periodo cubierto: ${desde} — ${hasta}` : 'Sin eventos registrados aún.';
+    const actualizadoTexto = stats.actualizado
+      ? `Actualizado: ${new Date(stats.actualizado).toLocaleString('es-VE')}`
+      : '';
+    document.getElementById('resumen-tendencias').innerHTML =
+      `Total de eventos en el histórico: ${stats.total_eventos}<br>${rangoTexto}${actualizadoTexto ? ' · ' + actualizadoTexto : ''}`;
 
     const porTipo = Object.entries(stats.por_tipo || {})
       .sort((a, b) => b[1] - a[1])

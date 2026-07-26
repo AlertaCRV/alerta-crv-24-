@@ -1,6 +1,7 @@
 import json
 import os
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 
 from dateutil import parser as dateparser
 
@@ -43,7 +44,19 @@ def calcular_estadisticas(registros):
         if fecha_evento:
             serie_mensual_por_tipo[tipo][_mes(fecha_evento)] += 1
 
+    fechas_evento = [r["fecha_evento"] for r in registros if r.get("fecha_evento")]
+    periodo_cubierto = {
+        "desde": min(fechas_evento) if fechas_evento else None,
+        "hasta": max(fechas_evento) if fechas_evento else None,
+    }
+
     return {
+        # Todo indicador de este panel es un acumulado historico -- nunca se
+        # muestra sin decir a que periodo corresponde, para no dar la falsa
+        # impresion de un dato "actual" cuando en realidad puede cubrir
+        # meses o anos.
+        "actualizado": datetime.now(timezone.utc).isoformat(),
+        "periodo_cubierto": periodo_cubierto,
         "total_eventos": len(registros),
         "por_tipo": dict(por_tipo),
         "ranking_estados": [
