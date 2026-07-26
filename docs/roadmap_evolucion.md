@@ -417,3 +417,58 @@ también una lista `[nombre_oficial, alias_corto]` en vez de un string
 suelto — `classify.py` reconoce cualquiera de las dos formas al buscar
 coincidencias (tanto la explícita "municipio X" como la búsqueda directa
 por nombre), y siempre devuelve el nombre oficial como resultado.
+
+---
+
+## Implementación de los informes narrativos (26/07/2026)
+
+Se implementó la extensión de informes narrativos descrita más arriba,
+resolviendo las preguntas que habían quedado abiertas:
+
+- **Almacenamiento del texto completo**: archivo aparte,
+  `data/historico_fuentes_texto.jsonl` (no se mezcla con
+  `data/historico_eventos.jsonl`, que sigue liviano para que
+  `build_dashboard.py` lo siga leyendo rápido en cada corrida).
+- **Granularidad**: un informe por mes × tipo de emergencia (ej. "incendios
+  de julio"), más un informe "general" por mes que cubre todas las
+  categorías juntas.
+- **Ubicación en el sitio**: una sección plegable más en `docs/index.html`
+  (`📰 Informes narrativos por período`), junto a la de tendencias — no una
+  página aparte.
+
+**Cómo se evita que el sitio público filtre texto de terceros**: se
+descubrió que `render.py` arma la noticia pública haciendo
+`{**evento, ...}` — cualquier campo que se le agregara al evento
+terminaría publicado tal cual. Por eso el texto completo de cada fuente se
+guarda bajo una clave "privada" (`_texto_fuentes_completo`) que
+`historico_fuentes.registrar_texto_fuentes()` extrae y **borra** del
+evento — y ese paso corre ANTES de `redactar_noticia()`/
+`actualizar_datos_sitio()` en `main.py`. Se verificó explícitamente con una
+prueba que el texto completo nunca llega al JSON público.
+
+**Piezas nuevas**:
+- `scripts/historico_fuentes.py`: registra/lee el texto completo por
+  fuente.
+- `scripts/build_informes.py`: agrupa el histórico por (período, tipo),
+  decide si cada combinación necesita generarse (período cerrado = una
+  sola vez y nunca más; período en curso = como mucho 1 vez por día UTC,
+  comparando la fecha de la última generación), arma el prompt con las
+  fuentes y la comparación numérica determinística contra el mes anterior
+  (reutilizando `historico.leer_historico()`, no le pide a la IA que
+  "recuerde" nada), y guarda cada informe como
+  `docs/data/informes/<periodo>_<tipo>.json` más un `index.json` liviano
+  para poblar los selectores de la página sin tener que leer cada informe.
+- El prompt de generación exige citas explícitas entre paréntesis al
+  nombre del medio en cada afirmación concreta, igual disciplina de
+  auditabilidad que ya aplica `verify_ai.py` a la verificación de eventos
+  individuales.
+- `.github/workflows/monitor.yml`: se corrigió también un riesgo latente
+  — `git add` falla si un archivo no existe todavía (y el step corre con
+  `-e`), lo que hubiera roto el workflow en un repo nuevo antes de la
+  primera corrida con contenido real. Ahora cada ruta se agrega solo si ya
+  existe.
+
+Probado de punta a punta con datos simulados: generación de informe
+cerrado y en curso, no regeneración de un período cerrado ya existente,
+comparación con el mes anterior, y verificación de que el texto completo
+de las fuentes nunca se filtra al sitio público.

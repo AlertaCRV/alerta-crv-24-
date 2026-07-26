@@ -236,6 +236,16 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
         "fecha_evento": fecha_mas_reciente,
         "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
         "estado_verificacion": "PASADO_POR_FALLA_TECNICA" if error_sistema else "APROBADO_IA",
+        # Clave "privada" (prefijo "_"): texto completo de cada fuente, para
+        # poder generar mas adelante informes narrativos por periodo sin
+        # depender de que el articulo original siga en linea meses despues.
+        # historico_fuentes.py la extrae y la BORRA del evento antes de que
+        # render.py/build_site.py lo conviertan en la noticia publica -- el
+        # sitio publico nunca debe reproducir el texto completo de terceros.
+        "_texto_fuentes_completo": [
+            {"nombre": m["fuente_nombre"], "link": m["link"], "texto": m["texto"]}
+            for m in miembros_aprobados
+        ],
     }
 
     # Solo para sismos: la magnitud y las menciones a otros estados sirven

@@ -104,6 +104,15 @@
   </div>
 </details>
 
+<details id="panel-informes">
+  <summary>📰 Informes narrativos por período</summary>
+  <div style="margin-top:0.6rem;">
+    <label>Período: <select id="informe-periodo"></select></label>
+    <label style="margin-left:1rem;">Categoría: <select id="informe-tipo"></select></label>
+  </div>
+  <div id="informe-contenido" class="meta" style="margin-top:0.8rem;">Selecciona un período y categoría.</div>
+</details>
+
 <div id="lista">Cargando...</div>
 <script>
 const INTERVALO_MS = 60000;
@@ -257,6 +266,74 @@ const TIPO_LABELS = {
 
 cargarTendencias();
 setInterval(cargarTendencias, INTERVALO_MS);
+
+let indiceInformes = [];
+
+function pintarSelectorTipos(periodo) {
+  const selTipo = document.getElementById('informe-tipo');
+  const disponibles = indiceInformes.filter(r => r.periodo === periodo);
+  selTipo.innerHTML = disponibles
+    .map(r => `<option value="${r.tipo}">${r.tipo_label}</option>`)
+    .join('');
+}
+
+function cargarInforme(periodo, tipo) {
+  const cont = document.getElementById('informe-contenido');
+  cont.textContent = 'Cargando informe...';
+  fetch(`data/informes/${periodo}_${tipo}.json?_=` + Date.now())
+    .then(r => r.json())
+    .then(inf => {
+      const comp = inf.comparacion_mes_anterior || {};
+      const estadoPeriodo = inf.cerrado
+        ? 'Período cerrado (no cambia)'
+        : 'Período en curso (se actualiza ~1 vez al día)';
+      const actualizadoHasta = formatearFechaCorta(inf.actualizado_hasta);
+      const fuentesHtml = (inf.fuentes || [])
+        .map(f => `<a href="${f.link}" target="_blank" rel="noopener noreferrer">${f.nombre}</a>`)
+        .join(', ');
+      cont.innerHTML = `
+        <p><b>${inf.tipo_label} — ${inf.periodo}</b><br>
+        ${estadoPeriodo} · Actualizado hasta: ${actualizadoHasta}<br>
+        Total de eventos: ${inf.total_eventos} (mes anterior: ${comp.anterior ?? '?'})</p>
+        <p style="white-space:pre-wrap;">${inf.narrativa}</p>
+        <p><b>Fuentes citadas:</b> ${fuentesHtml || 'ninguna'}</p>
+      `;
+    })
+    .catch(() => {
+      cont.textContent = 'Este informe todavía no se ha generado.';
+    });
+}
+
+function cargarIndiceInformes() {
+  fetch('data/informes/index.json?_=' + Date.now())
+    .then(r => r.json())
+    .then(indice => {
+      indiceInformes = indice;
+      const selPeriodo = document.getElementById('informe-periodo');
+      const periodos = [...new Set(indice.map(r => r.periodo))];
+      if (!periodos.length) {
+        document.getElementById('informe-contenido').textContent = 'Aún no hay informes generados.';
+        return;
+      }
+      selPeriodo.innerHTML = periodos.map(p => `<option value="${p}">${p}</option>`).join('');
+      pintarSelectorTipos(periodos[0]);
+      cargarInforme(periodos[0], indice.find(r => r.periodo === periodos[0]).tipo);
+    })
+    .catch(() => {
+      document.getElementById('informe-contenido').textContent = 'Aún no hay informes generados.';
+    });
+}
+
+document.getElementById('informe-periodo').addEventListener('change', (e) => {
+  pintarSelectorTipos(e.target.value);
+  const tipoSeleccionado = document.getElementById('informe-tipo').value;
+  cargarInforme(e.target.value, tipoSeleccionado);
+});
+document.getElementById('informe-tipo').addEventListener('change', (e) => {
+  cargarInforme(document.getElementById('informe-periodo').value, e.target.value);
+});
+
+cargarIndiceInformes();
 </script>
 </body>
 </html>
