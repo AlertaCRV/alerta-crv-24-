@@ -236,6 +236,13 @@ Ningún cambio de código se implementó en esta sesión — esta sección es
 únicamente la definición de alcance acordada para cuando se decida
 empezar la implementación.
 
+**Nota (26/07/2026, tras implementar la v1):** el panel muestra el
+histórico completo desde el día 0, sin filtro de rango de fechas, tipo o
+estado — cualquier usuario ve siempre todos los eventos acumulados. Se
+decidió no agregar un filtro todavía; se evaluará más adelante, según lo
+que se aprenda con el uso real, si hace falta (p.ej. selector de
+último mes / último año, o por tipo/estado).
+
 ---
 
 ## Extensión del objetivo 1: informes narrativos por período y tipo
