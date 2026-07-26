@@ -1,22 +1,16 @@
 {
-  "actualizado": "2026-07-26T20:47:46.720070+00:00",
+  "actualizado": "2026-07-26T21:18:06.444878+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
     "hasta": "2026-07-26T19:55:43+00:00"
   },
-  "total_eventos": 7,
+  "total_eventos": 5,
   "por_tipo": {
     "inundacion": 2,
-    "sismo": 2,
     "deslizamiento": 2,
     "tormenta_electrica": 1
   },
   "ranking_estados": [
-    {
-      "estado": "La Guaira",
-      "total": 2,
-      "confirmados": 1
-    },
     {
       "estado": "Distrito Capital",
       "total": 1,
@@ -47,9 +41,6 @@
     "Distrito Capital": {
       "inundacion": 1
     },
-    "La Guaira": {
-      "sismo": 2
-    },
     "Barinas": {
       "deslizamiento": 1
     },
@@ -64,14 +55,11 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 6,
+    "sin_clasificar": 4,
     "alto": 1
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
-      "2026-07": 2
-    },
-    "sismo": {
       "2026-07": 2
     },
     "deslizamiento": {
