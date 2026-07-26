@@ -286,6 +286,32 @@ ahora: requeriría construir un servidor/backend nuevo — un cambio de
 arquitectura mayor a todo lo hecho hasta ahora — y pagar el costo de IA
 por cada consulta de cada visitante.
 
+**Cadencia de regeneración (preliminar, 26/07/2026).** Un período ya
+cerrado (p.ej. "incendios de junio" una vez terminó junio) se genera una
+sola vez y queda fijo — sus datos no cambian. El período en curso (el mes
+actual, mientras sigue corriendo) sí necesita regenerarse, pero no en cada
+corrida del monitor (regenerar la narrativa completa con IA cada ~10 min
+por cualquier evento nuevo, sin importar el tipo, sería costoso e
+innecesario): la decisión preliminar es regenerarlo **una vez al día**.
+Aún es pronto para comprometerse a esto en firme — queda sujeto a
+revisión cuando se implemente. El informe siempre debe mostrar una marca
+de "actualizado hasta: fecha/hora", igual que ya hacen las alertas con
+"🔎 Detectado por el sistema", para que quede claro qué rango del período
+cubre realmente lo que se está leyendo.
+
+**Comparación sucinta con el período anterior (26/07/2026).** El informe
+de un mes puede incluir una mención breve del mes anterior (p.ej. "en
+comparación con junio, cuando se registraron 4 incendios, julio cerró con
+6") sin necesidad de releer los artículos del mes anterior: basta con
+reutilizar los agregados numéricos que ya calculará el dashboard del
+objetivo #1 (conteo y severidad por mes/tipo) para el período previo, y
+pasarlos como contexto fijo al generar el informe del período actual. La
+comparación es un cálculo determinista (resta/porcentaje sobre datos ya
+verificados), no algo que se le pida "recordar" o resumir a la IA — evita
+que el informe de julio reinterprete o contradiga lo que ya dijo el
+informe de junio sobre sí mismo, y no requiere releer texto completo de
+fuentes de meses anteriores.
+
 ### Cómo debería funcionar, en línea con el resto del sistema
 
 Igual que las alertas individuales muestran sus fuentes y explican por qué
