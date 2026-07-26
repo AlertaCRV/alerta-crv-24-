@@ -17,6 +17,14 @@
   },
   {
     "periodo": "2026-07",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-07-26T23:42:46.277587+00:00",
+    "total_eventos": 5
+  },
+  {
+    "periodo": "2026-07",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
