@@ -142,3 +142,96 @@ Separar "caché de deduplicación" (efímera, 3 días) de "registro histórico"
 otra, y permite que el histórico crezca sin afectar el rendimiento del
 ciclo de verificación en vivo — la agregación para el panel es un paso
 aparte, no algo que compita por tiempo con la publicación de alertas.
+
+---
+
+## Alcance de la v1 del dashboard (definido el 26/07/2026)
+
+Antes de implementar el objetivo #1, se discutió qué indicadores incluir y
+cómo se vería el panel. Esta sección documenta esa conversación y la
+decisión tomada — **sin implementar nada todavía**.
+
+### Indicadores candidatos considerados
+
+Con los campos que ya captura cada evento (`tipo`, `ubicacion`,
+`severidad`, `confirmado`, `num_fuentes`, `score`, `fecha_evento`,
+`fecha_deteccion`) se pueden construir, sin tocar el pipeline de
+verificación:
+
+- Conteo total y tendencia por **tipo** de evento (sismo, incendio, orden
+  público, etc.)
+- Ranking de **estados** con más alertas — separando total vs. solo
+  confirmadas, porque un estado con muchas alertas sin confirmar puede
+  reflejar un medio poco fiable, no necesariamente más emergencias reales.
+- Cruce **estado × tipo** (qué estados concentran qué tipos de evento).
+- **Distribución de severidad** (crítico/alto/medio/bajo/sin_clasificar)
+  en el tiempo — también sirve como métrica de la calidad del propio
+  sistema: si el % de "sin clasificar" baja con los meses, es evidencia de
+  que las heurísticas están mejorando.
+- **Latencia de detección**: tiempo promedio entre `fecha_evento` y
+  `fecha_deteccion` — el indicador más honesto de qué tan "en tiempo real"
+  es el sistema en la práctica, y se conecta directo con el problema del
+  cron todavía pendiente de resolver.
+- **Confirmado vs. sin confirmar** en el tiempo: qué proporción de
+  alertas termina corroborada por múltiples fuentes.
+- **Racha de días** sin eventos críticos/altos por estado.
+
+Se descartó explícitamente un ranking público de "qué medio publica más" o
+"qué medio es más rápido/confiable": el dato técnicamente existe (el
+`peso` de cada fuente), pero convertirlo en un ranking público de medios
+es territorio sensible ajeno al propósito humanitario del sistema — queda
+como métrica interna, no como panel público.
+
+**Limitación conocida**: el sistema solo registra la *detección* de un
+evento, no su *resolución* — no existe una señal de "esta falla eléctrica
+ya se resolvió". Por lo tanto, un indicador de "duración promedio de una
+falla" no se puede calcular de forma confiable con los datos actuales, y
+queda fuera de alcance hasta que exista esa señal.
+
+### ¿Dashboard "estilo bolsa de valores" en la misma página que las alertas?
+
+Conclusión: la idea es parcialmente factible y parcialmente expectativa a
+ajustar.
+
+- **Factible**: integrar el panel en la misma página que el feed de
+  alertas en vivo (franja de indicadores arriba, feed debajo) — es un
+  patrón común de "sala de situación", no requiere backend nuevo, es
+  HTML/CSS/JS estático igual que el resto del sitio.
+- **No factible tal cual se imaginó**: números cambiando cada segundo. El
+  sitio solo se actualiza cuando `monitor.yml` corre y comitea datos
+  nuevos (hoy, en el mejor caso cada ~10 min; con el problema de cron
+  pendiente, a veces cada 2-4 horas), y los medios venezolanos tampoco
+  publican con cadencia de segundos. Un ticker que se mueve cada segundo
+  sin dato nuevo detrás sería animación cosmética — precisamente el tipo
+  de apariencia-de-certeza que este sistema evita en su diseño.
+- **Alternativa honesta**: la página hace `fetch` periódico (cada 30-60s)
+  del JSON de estadísticas, sin backend adicional, y anima la transición
+  del número viejo al nuevo únicamente cuando detecta un cambio real. Se
+  siente "vivo" sin fingir una cadencia de datos que no existe. Como
+  beneficio colateral, resolver el problema del cron pendiente hará que
+  este panel se sienta más "vivo" de verdad, no solo en apariencia.
+
+### Decisión: empezar angosto, complejizar con el tiempo
+
+El sistema lleva apenas días con las heurísticas actuales en su forma
+estable (los ajustes de sismos, severidad y deduplicación de esta misma
+semana). Se decidió **no** construir un dashboard ambicioso ahora:
+
+1. Un indicador elaborado hoy mezclaría datos de "antes" y "después" de
+   estos cambios recientes sin que se note.
+2. Todavía no hay uso real acumulado del sistema para validar qué
+   indicadores son realmente útiles vs. decorativos.
+
+**V1 acordada** (los cuatro que menos dependen de suposiciones sin
+validar): conteo por tipo, ranking de estados, cruce estado × tipo, y
+distribución de severidad.
+
+**Diferidos a versiones posteriores**, a evaluar según lo que se aprenda
+con el uso real en las próximas semanas/meses: latencia de detección,
+confirmado vs. sin confirmar en el tiempo, racha de días sin eventos
+críticos, y duración de fallas prolongadas (bloqueado hasta que exista una
+señal de resolución de evento).
+
+Ningún cambio de código se implementó en esta sesión — esta sección es
+únicamente la definición de alcance acordada para cuando se decida
+empezar la implementación.
