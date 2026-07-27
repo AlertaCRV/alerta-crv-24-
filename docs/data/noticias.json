@@ -1,5 +1,51 @@
 [
   {
+    "titulo": "Colapso estructural en Parroquia San Francisco, Municipio Maracaibo, Zulia",
+    "texto": "📌 Colapso estructural en Parroquia San Francisco, Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia San Francisco, Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
+    "tipo": "colapso_estructural",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": "San Francisco",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
+        "fecha": "2026-07-27T17:18:51+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T17:18:51+00:00",
+    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00",
+    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Parroquia Bocono, Municipio Bocono, Trujillo",
+    "texto": "📌 Inundación en Parroquia Bocono, Municipio Bocono, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Bocono, Municipio Bocono, Trujillo\n🕒 Hecho reportado: 27/07/2026, 12:52 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/las-intensas-lluvias-causan-deslizamientos-y-desbordamiento-de-quebradas-en-bocono/",
+    "tipo": "inundacion",
+    "ubicacion": "Trujillo",
+    "municipio": "Bocono",
+    "parroquia": "Bocono",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/las-intensas-lluvias-causan-deslizamientos-y-desbordamiento-de-quebradas-en-bocono/",
+        "fecha": "2026-07-27T16:52:23+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T16:52:23+00:00",
+    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00",
+    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Tormenta eléctrica en Parroquia Guajira, Municipio Cabimas, Zulia",
     "texto": "📌 Tormenta eléctrica en Parroquia Guajira, Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Guajira, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/07/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 2.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/\n  • La Verdad (Zulia): https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/\n  • El Tiempo (Anzoategui): https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
     "tipo": "tormenta_electrica",
