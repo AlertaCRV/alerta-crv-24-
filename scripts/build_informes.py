@@ -24,6 +24,14 @@ MAX_CHARS_POR_FUENTE = 600
 
 GENERAL = "general"
 
+# Un evento con esta severidad tuvo danos materiales, heridos o victimas
+# fatales (ver config/keywords.yaml) -- la narrativa nunca debe omitirlo,
+# sin importar cuantos otros eventos mas leves haya en el mismo periodo.
+# Caso real que origino esto: una tormenta electrica con 9 heridos en el
+# aeropuerto de Valencia quedo fuera del informe "general" del mes, porque
+# nada en el prompt distinguia ese evento de los demas sin daños.
+SEVERIDADES_QUE_DEBEN_MENCIONARSE = {"alto", "critico"}
+
 SYSTEM_PROMPT = (
     "Eres un analista de un sistema de monitoreo de emergencias en "
     "Venezuela (Cruz Roja Venezolana). Se te da un conjunto de fuentes "
@@ -37,6 +45,11 @@ SYSTEM_PROMPT = (
     "reportado) debe ir acompañada de una cita a su fuente entre "
     "paréntesis, con el formato (Nombre del medio). No inventes datos que "
     "no estén en las fuentes dadas.\n"
+    "• Si se te da una lista de 'EVENTOS QUE DEBEN MENCIONARSE EXPLÍCITAMENTE' "
+    "(tuvieron daños materiales, heridos o víctimas fatales), tu narrativa "
+    "DEBE incluir cada uno de esos eventos por su nombre/ubicación y citar "
+    "su fuente, sin importar cuántos otros eventos más leves haya — no es "
+    "opcional, es el criterio más importante de esta tarea.\n"
     "• Menciona la comparación con el período anterior tal como se te da, "
     "sin modificarla.\n"
     "• No mezcles detalles de un evento con otro: si dos fuentes hablan de "
@@ -85,9 +98,21 @@ def _conteos_por_periodo_y_tipo(registros_historico):
 
 
 def _construir_prompt_fuentes(registros):
-    fuentes_ordenadas = sorted(
-        (f for r in registros for f in r["fuentes"]),
-        key=lambda f: f.get("nombre", ""),
+    """Ordena las fuentes priorizando los eventos con danos/heridos/
+    fallecidos (SEVERIDADES_QUE_DEBEN_MENCIONARSE) primero -- si hay mas de
+    MAX_FUENTES_POR_INFORME fuentes en el periodo, un evento grave no debe
+    quedar fuera del corte solo por el orden alfabetico."""
+    fuentes_prioritarias = [
+        f for r in registros if r.get("severidad") in SEVERIDADES_QUE_DEBEN_MENCIONARSE
+        for f in r["fuentes"]
+    ]
+    fuentes_resto = [
+        f for r in registros if r.get("severidad") not in SEVERIDADES_QUE_DEBEN_MENCIONARSE
+        for f in r["fuentes"]
+    ]
+    fuentes_ordenadas = (
+        sorted(fuentes_prioritarias, key=lambda f: f.get("nombre", ""))
+        + sorted(fuentes_resto, key=lambda f: f.get("nombre", ""))
     )[:MAX_FUENTES_POR_INFORME]
 
     bloques = [
@@ -95,6 +120,28 @@ def _construir_prompt_fuentes(registros):
         for f in fuentes_ordenadas
     ]
     return bloques, fuentes_ordenadas
+
+
+def _construir_bloque_eventos_obligatorios(registros):
+    """Lista explicita de eventos que la narrativa debe mencionar si o si
+    (ver SEVERIDADES_QUE_DEBEN_MENCIONARSE) -- no depende de que la IA los
+    note por su cuenta entre el resto de fuentes."""
+    obligatorios = [r for r in registros if r.get("severidad") in SEVERIDADES_QUE_DEBEN_MENCIONARSE]
+    if not obligatorios:
+        return "", []
+    lineas = []
+    for r in obligatorios:
+        representante = r["fuentes"][0] if r["fuentes"] else None
+        fuente_nombre = representante["nombre"] if representante else "fuente desconocida"
+        lineas.append(
+            f"- {TIPO_LABELS.get(r['tipo'], r['tipo'])} en {r['ubicacion']} "
+            f"(severidad {r['severidad']}, fuente: {fuente_nombre})"
+        )
+    bloque = (
+        "\nEVENTOS QUE DEBEN MENCIONARSE EXPLÍCITAMENTE (tuvieron daños "
+        "materiales, heridos o víctimas fatales):\n" + "\n".join(lineas) + "\n"
+    )
+    return bloque, obligatorios
 
 
 def _generar_narrativa(tipo_label, periodo, registros, comparacion):
@@ -113,10 +160,13 @@ def _generar_narrativa(tipo_label, periodo, registros, comparacion):
         f"{comparacion['actual']} en este período."
     )
 
+    bloque_obligatorios, eventos_obligatorios = _construir_bloque_eventos_obligatorios(registros)
+
     contenido_usuario = (
         f"CATEGORÍA: {tipo_label}\n"
         f"PERÍODO: {periodo}\n"
-        f"{texto_comparacion}\n\n"
+        f"{texto_comparacion}\n"
+        f"{bloque_obligatorios}\n"
         + "\n\n".join(bloques)
     )[:8000]
 
@@ -157,6 +207,20 @@ def _generar_narrativa(tipo_label, periodo, registros, comparacion):
         if not narrativa or not isinstance(narrativa, str):
             print(f"[WARN] Informe {periodo}/{tipo_label}: respuesta sin 'narrativa' válida")
             return None
+
+        # Chequeo de auditoria, no bloqueante: si la IA no siguio la regla
+        # de mencionar cada evento obligatorio, se deja constancia en el
+        # log en vez de fallar en silencio -- reintentar no garantiza mejor
+        # resultado, y el informe (con el resto del contenido) sigue siendo
+        # mejor que no tener ninguno.
+        omitidos = [
+            r for r in eventos_obligatorios
+            if r["fuentes"] and r["fuentes"][0]["nombre"] not in narrativa
+        ]
+        if omitidos:
+            detalle = ", ".join(f"{r['tipo']}/{r['ubicacion']}" for r in omitidos)
+            print(f"[WARN] Informe {periodo}/{tipo_label}: la narrativa no mencionó estos eventos con daños/heridos/fallecidos: {detalle}")
+
         return narrativa, fuentes_usadas
     except Exception as e:
         print(f"[WARN] Fallo la generación del informe {periodo}/{tipo_label}: {e}")
