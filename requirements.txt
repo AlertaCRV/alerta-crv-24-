@@ -4,3 +4,5 @@ PyYAML==6.0.2
 requests==2.32.3
 python-dateutil==2.9.0.post0
 msal==1.31.0
+beautifulsoup4==4.15.0
+lxml==6.1.1

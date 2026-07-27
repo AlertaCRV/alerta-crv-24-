@@ -247,7 +247,11 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
     Si se pasan posiciones_estados (posiciones de TODAS las menciones de
     estados en el texto), la ventana se recorta para no cruzar la mencion
     mas cercana de OTRO estado, evitando que un articulo que habla de varios
-    estados mezcle detalles (tipo/severidad) de uno con los de otro."""
+    estados mezcle detalles (tipo/severidad) de uno con los de otro. Las
+    menciones repetidas del MISMO estado (p.ej. el nombre de un medio local
+    como "Zulia Sin Censura") no cuentan como frontera -- de lo contrario
+    la ventana podia cortarse antes de llegar a un dato clave (una muerte,
+    heridos) que esta mas cerca de esa repeticion que de un estado distinto."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
@@ -257,11 +261,15 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
         and not _es_mencion_subestatal(tokens, i)
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
     ]
+    posiciones_otros_estados = None
+    if posiciones_estados:
+        propias = set(posiciones)
+        posiciones_otros_estados = [p for p in posiciones_estados if p not in propias]
     for pos in posiciones:
         limite_izq, limite_der = 0, len(tokens)
-        if posiciones_estados:
-            anteriores = [p for p in posiciones_estados if p < pos]
-            siguientes = [p for p in posiciones_estados if p > pos]
+        if posiciones_otros_estados:
+            anteriores = [p for p in posiciones_otros_estados if p < pos]
+            siguientes = [p for p in posiciones_otros_estados if p > pos]
             if anteriores:
                 limite_izq = max(limite_izq, max(anteriores) + 1)
             if siguientes:

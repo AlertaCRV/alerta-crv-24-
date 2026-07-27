@@ -1119,3 +1119,66 @@ tipográfico de "muere" en el sitio de origen). El detector de palabras
 clave de severidad crítica no cubre esa variante ortográfica; queda para
 evaluar por separado si conviene tolerar errores tipográficos comunes en
 las palabras clave de severidad más grave.
+
+---
+
+## Corrección de raíz: resúmenes RSS truncados ocultaban ubicación y gravedad (27-07-2026)
+
+Seguimiento del caso anterior: el usuario mostró que el artículo original
+sí menciona claramente "municipio Guajira" (y, en el cuerpo completo,
+"parroquia Sinamaica") y que un niño de cinco años murió — datos que el
+sistema no capturó.
+
+**Causa raíz real** (más profunda que el caso anterior): `fetch_rss.py`
+nunca descarga la página del artículo — solo usa el campo `summary` que
+entrega el feed RSS, que muchos medios truncan a una o dos frases
+seguidas de puntos suspensivos. En este caso el resumen terminaba en "...
+como…", cortando la oración justo antes de "en el municipio Guajira del
+estado Zulia" y de "murió". El texto real y completo de la página sí
+contiene todo: ubicación exacta y la muerte. El bug de municipio/parroquia
+inventados del apartado anterior era, en el fondo, sÍntoma de este
+problema más amplio: sin texto suficiente, ni la IA ni el clasificador
+determinista tenían con qué determinar la ubicación real ni la severidad
+real.
+
+**Corrección** (`scripts/fetch_rss.py`): se agregó `_obtener_texto_completo(link)`,
+que descarga la página del artículo (usando `requests` + `BeautifulSoup`,
+nueva dependencia `beautifulsoup4`/`lxml` en `requirements.txt`) y extrae
+el texto de sus párrafos (`<article>` o el primer contenedor con "content"
+en su clase, si existe; si no, todos los `<p>` de la página), limitado a
+4000 caracteres. Se agregó `_TRUNCADO_RE`, que detecta cuando el resumen
+del RSS termina en puntos suspensivos ("…" o "[...]"), y **solo en esos
+casos** se reemplaza el resumen truncado por el texto completo de la
+página. Si la descarga falla por cualquier razón (red, sitio caído,
+estructura HTML inesperada), se sigue usando el resumen truncado en vez
+de fallar la corrida completa — el mismo patrón de "fallar hacia lo
+seguro" ya usado en el resto del pipeline.
+
+**Bug adicional encontrado al probar con el texto completo real**: con el
+texto completo, la ubicación y el municipio/parroquia se detectaron bien,
+pero la severidad seguía saliendo "sin_clasificar" a pesar de que "murió"
+aparecía a solo 4 palabras de "Zulia". La causa: el recorte de ventana de
+proximidad agregado en el fix de artículos multiestado (que corta la
+ventana en la mención más cercana de OTRO estado) también se activaba
+entre **dos menciones del mismo estado** — el artículo menciona "Zulia"
+una vez como ubicación y otra vez como parte del nombre de un medio local
+("Zulia Sin Censura"), y la ventana se cortaba justo antes de esa segunda
+mención, dejando "murió" fuera. Se corrigió `_ventana_cerca()` en
+`scripts/classify.py` para que el recorte solo considere menciones de
+estados **distintos** al que se está evaluando, nunca repeticiones del
+mismo estado. Se confirmó que esto no afecta el caso de prueba
+multiestado ya validado (Zulia/Táchira/Mérida en un mismo artículo).
+
+**Corrección retroactiva**: se actualizó la alerta ya publicada
+("Colapso estructural") en `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` con el municipio ("Indígena Bolivariano
+Guajira"), la parroquia ("Sinamaica") y la severidad ("crítico")
+correctos, y se regeneraron las estadísticas. El informe narrativo
+mensual ya generado no mencionaba una ubicación incorrecta, así que no
+requirió corrección.
+
+Validado con `python3 scripts/validar_configs.py`, con el caso real
+reportado por el usuario (texto completo obtenido manualmente de la
+página del artículo) y con regresión contra
+`data/historico_fuentes_texto.jsonl` (mismo número de divisiones
+multiestado que antes del cambio en `_ventana_cerca`, sin regresiones).
