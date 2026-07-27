@@ -1284,3 +1284,37 @@ espera que prevengan la aparición de la misma clase de error en textos
 futuros con estructura similar, aunque no eliminan por completo la
 posibilidad de error dado el enfoque heurístico (no hay comprensión
 semántica real del texto, solo patrones y proximidad de palabras).
+
+---
+
+## Acceso al correo institucional: diagnóstico y herramienta de setup (27-07-2026)
+
+El usuario reportó que el sistema no logra autenticarse con Outlook
+(`fetch_email.py`), con el error de Azure AD "AADSTS900144: The request
+body must contain the following parameter: 'refresh_token'". Este canal
+es importante porque las filiales regionales de la Cruz Roja reportan
+incidentes de sus zonas de influencia por ese correo.
+
+**Diagnóstico**: el error indica que el secreto `OUTLOOK_REFRESH_TOKEN`
+en GitHub Actions está vacío o inválido — no es un bug de código. La
+autenticación usa `msal.PublicClientApplication.acquire_token_by_refresh_token()`,
+que requiere un `refresh_token` vigente obtenido previamente mediante un
+login interactivo (no se puede generar sin que un humano inicie sesión
+con la cuenta del buzón institucional o una cuenta delegada con acceso a
+él).
+
+**Acción**: se agregó `scripts/generar_refresh_token_outlook.py`, una
+herramienta de uso manual (no se ejecuta en el workflow automático) que
+usa el flujo de dispositivo (`device code flow`) de MSAL para obtener un
+refresh_token nuevo de forma interactiva. El usuario la ejecutará
+localmente con `OUTLOOK_CLIENT_ID`/`OUTLOOK_TENANT_ID` ya configurados,
+iniciará sesión con la cuenta del correo institucional cuando el script
+lo indique, y actualizará el secreto `OUTLOOK_REFRESH_TOKEN` en GitHub
+con el resultado.
+
+**Próximo paso** (una vez que la lectura de correos funcione): definir
+qué información extraer del cuerpo de esos correos y cómo integrarla al
+resto del pipeline — hoy `fetch_email.py` solo entiende un formato rígido
+de asunto (`EMERGENCIA | Estado | Tipo | Severidad`), que probablemente
+no es como las filiales reportan en la práctica. Queda pendiente de
+discutir.
