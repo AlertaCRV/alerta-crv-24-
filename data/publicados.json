@@ -81,8 +81,8 @@
   },
   "deslizamiento::Barinas::2026-07-27": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T00:38:04.803969+00:00"
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T12:40:30.082988+00:00"
   },
   "salud_publica::Portuguesa::2026-07-26": {
     "severidad": "sin_clasificar",
@@ -93,5 +93,20 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-27T02:57:19.227152+00:00"
+  },
+  "inundacion::Lara::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T12:40:16.456994+00:00"
+  },
+  "inundacion::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T12:40:19.835403+00:00"
+  },
+  "tormenta_electrica::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T12:40:23.203107+00:00"
   }
 }
