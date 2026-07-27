@@ -988,3 +988,197 @@ el resultado en volumen, sin encontrar más combinaciones inconsistentes.
 mismo (podría tener errores puntuales en municipios/parroquias poco
 documentados), pero es sustancialmente más confiable que la ausencia
 total de jerarquía que había antes.
+
+---
+
+## División de artículos multiestado en alertas independientes (27-07-2026)
+
+El usuario preguntó: si un artículo describe la situación de lluvias en 5
+municipios distintos, con detalles propios de heridos/daños en cada uno,
+¿el sistema genera 5 alertas? La respuesta era **no**: `detectar_ubicacion`
+solo devolvía el primer estado que encontraba en el texto y descartaba el
+resto, y `detectar_severidad` se calculaba sobre el texto **completo** del
+artículo — así que incluso el único estado elegido podía heredar
+severidad de hechos ocurridos en otro estado mencionado más adelante.
+
+**Corrección implementada** (`scripts/classify.py`):
+- `detectar_ubicacion(texto)` ahora devuelve una **lista** de todos los
+  estados detectados (antes devolvía solo el primero), cada uno con su
+  propia ventana de proximidad de texto cuando aplica.
+- `clasificar_item(item)` ahora devuelve una **lista** de items — uno por
+  cada estado detectado con evidencia propia cerca — en vez de un único
+  item. `tipos` y `severidad` se calculan para cada estado usando
+  **solo su propia ventana de texto**, no el artículo completo.
+- `main.py` y `fetch_email.py` se actualizaron para aplanar/adaptar esta
+  nueva firma de lista.
+- Se añadió `_posiciones_de_estados()`, que ubica las posiciones de
+  **todas** las menciones de estados en el texto. `_ventana_cerca()` usa
+  esas posiciones para **recortar** la ventana de proximidad de cada
+  estado en la mención más cercana de otro estado distinto (antes o
+  después), evitando que la ventana de un estado se extienda sobre el
+  párrafo dedicado a otro.
+
+**Prueba con caso simulado** (Zulia con heridos, Táchira con
+deslizamiento sin daños, Mérida con anegaciones menores): sin el recorte
+de ventana, los 3 estados resultaban con severidad "alto" y ambos tipos
+mezclados. Con el recorte, Zulia mantiene correctamente severidad "alto"
+(por "heridos") y Mérida baja a "bajo" con un solo tipo — la separación
+mejora sustancialmente pero no es perfecta: cuando la oración de
+transición entre dos estados menciona palabras clave de tipo (ej.
+"inundaciones" en la frase que conecta la mención de Zulia con la de
+Táchira), esas palabras pueden seguir cayendo dentro de la ventana del
+segundo estado por estar posicionalmente más cerca de él que de
+cualquier otro corte. Esto es una limitación inherente del enfoque
+heurístico basado en proximidad de palabras (ya advertida al usuario
+antes de implementar) — no hay reconocimiento real de qué frase
+"pertenece" a qué estado, solo distancia y recorte en los puntos de
+mención de otros estados.
+
+**Prueba de regresión** contra el histórico real de textos de fuentes ya
+publicados (`data/historico_fuentes_texto.jsonl`): de 23 fuentes
+individuales evaluadas, 7 (30%) resultaron en división multiestado real
+y coherente con el contenido del artículo (p.ej. una nota sobre lluvias
+que cubre Caracas y La Guaira a la vez, u otra sobre el corredor
+Barinas–Mérida) — casos que antes de este cambio habrían generado una
+sola alerta con la ubicación del primer estado mencionado nada más.
+
+**Relación con la deduplicación de 36 horas**: son mecanismos
+independientes y complementarios. La división multiestado ocurre en
+`classify.py`, antes de que el evento llegue a la ventana de 36 horas de
+`state.py` (que actúa por tipo + ubicación ya resuelta). Un artículo que
+cubre 3 estados generará 3 eventos con ubicaciones distintas, cada uno
+sujeto de forma independiente a la regla de las 36 horas frente a
+publicaciones previas sobre ese mismo estado — no se pierde ni se duplica
+cobertura por la interacción entre ambos mecanismos.
+
+Validado con `python3 scripts/validar_configs.py` (OK) y contra los
+casos de regresión de detección de ubicación ya probados en sesiones
+anteriores.
+
+---
+
+## Corrección retroactiva: alerta previa a la reconstrucción del INE (27-07-2026)
+
+El usuario reportó que seguía viendo "Parroquia Guajira, Municipio
+Cabimas" publicado en el sitio, a pesar de la corrección de la jerarquía
+municipio→parroquia (PR #61, fusionado a las 16:49 UTC). Al revisar la
+alerta, se confirmó que fue detectada a las 16:02 UTC — **antes** de que
+el fix llegara a `main` — por lo que quedó publicada con el dato
+incorrecto generado por el código anterior. No es una recurrencia del
+bug, sino un dato ya publicado que no se había corregido de forma
+retroactiva.
+
+**Corrección**: se actualizó manualmente `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` para reflejar el municipio correcto
+("Indígena Bolivariano Guajira" en vez de "Cabimas"), y se regeneró
+`docs/data/estadisticas.json` con `python3 scripts/build_dashboard.py`.
+`data/historico_fuentes_texto.jsonl` no requería cambio (no guarda
+municipio). No se encontraron informes narrativos que mencionaran esta
+combinación incorrecta.
+
+---
+
+## Bug: la IA inventaba municipio/parroquia sin base en el texto (27-07-2026)
+
+Se reportó la alerta "Colapso estructural en Parroquia San Francisco,
+Municipio Maracaibo, Zulia", pero los hechos reales ocurrieron en otro
+municipio/parroquia distinto.
+
+**Causa raíz**: la fuente de esta alerta es un resumen de RSS truncado
+("Niño de cinco años mueres tras colapso de vivienda en Zulia... Un fatal
+incidente se registró luego de que una vivienda colapsara, como…") que
+**no menciona ningún municipio ni parroquia**. Cuando `classify.py` (regex
+determinista) no logra determinar el municipio/parroquia, `verify_ai.py`
+le pide a la misma llamada de verificación de Groq que intente inferirlo
+del texto, restringido a una lista de valores válidos del estado, con
+instrucción explícita de responder `null` si no hay certeza. En este
+caso, la IA respondió con un municipio/parroquia plausible pero **no
+respaldado por el texto real** — el modelo no siguió la instrucción de
+abstenerse cuando no hay evidencia.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó una verificación
+determinista posterior a la respuesta de la IA — el municipio y la
+parroquia que proponga solo se aceptan si su nombre **aparece
+textualmente** (normalizado, sin tildes/mayúsculas) en el texto combinado
+de las fuentes del evento. Si no aparece, se descarta y el campo queda en
+`null`, igual que si la IA no hubiera podido determinarlo. Esto no
+depende de que el modelo obedezca la instrucción del prompt — es un
+chequeo de anclaje textual que no puede pasarse por alto aunque la IA
+alucine.
+
+**Corrección retroactiva**: se quitó el municipio/parroquia inventado
+("Maracaibo"/"San Francisco") de la alerta ya publicada en
+`docs/data/noticias.json` y `data/historico_eventos.jsonl`, dejando la
+ubicación en el nivel de estado ("Zulia") que sí está respaldado por el
+texto, y se regeneraron las estadísticas.
+
+**Nota pendiente**: al revisar esta alerta también se notó que la
+severidad quedó "sin_clasificar" a pesar de que el título de la fuente
+menciona la muerte de un niño de cinco años ("mueres" — probable error
+tipográfico de "muere" en el sitio de origen). El detector de palabras
+clave de severidad crítica no cubre esa variante ortográfica; queda para
+evaluar por separado si conviene tolerar errores tipográficos comunes en
+las palabras clave de severidad más grave.
+
+---
+
+## Corrección de raíz: resúmenes RSS truncados ocultaban ubicación y gravedad (27-07-2026)
+
+Seguimiento del caso anterior: el usuario mostró que el artículo original
+sí menciona claramente "municipio Guajira" (y, en el cuerpo completo,
+"parroquia Sinamaica") y que un niño de cinco años murió — datos que el
+sistema no capturó.
+
+**Causa raíz real** (más profunda que el caso anterior): `fetch_rss.py`
+nunca descarga la página del artículo — solo usa el campo `summary` que
+entrega el feed RSS, que muchos medios truncan a una o dos frases
+seguidas de puntos suspensivos. En este caso el resumen terminaba en "...
+como…", cortando la oración justo antes de "en el municipio Guajira del
+estado Zulia" y de "murió". El texto real y completo de la página sí
+contiene todo: ubicación exacta y la muerte. El bug de municipio/parroquia
+inventados del apartado anterior era, en el fondo, sÍntoma de este
+problema más amplio: sin texto suficiente, ni la IA ni el clasificador
+determinista tenían con qué determinar la ubicación real ni la severidad
+real.
+
+**Corrección** (`scripts/fetch_rss.py`): se agregó `_obtener_texto_completo(link)`,
+que descarga la página del artículo (usando `requests` + `BeautifulSoup`,
+nueva dependencia `beautifulsoup4`/`lxml` en `requirements.txt`) y extrae
+el texto de sus párrafos (`<article>` o el primer contenedor con "content"
+en su clase, si existe; si no, todos los `<p>` de la página), limitado a
+4000 caracteres. Se agregó `_TRUNCADO_RE`, que detecta cuando el resumen
+del RSS termina en puntos suspensivos ("…" o "[...]"), y **solo en esos
+casos** se reemplaza el resumen truncado por el texto completo de la
+página. Si la descarga falla por cualquier razón (red, sitio caído,
+estructura HTML inesperada), se sigue usando el resumen truncado en vez
+de fallar la corrida completa — el mismo patrón de "fallar hacia lo
+seguro" ya usado en el resto del pipeline.
+
+**Bug adicional encontrado al probar con el texto completo real**: con el
+texto completo, la ubicación y el municipio/parroquia se detectaron bien,
+pero la severidad seguía saliendo "sin_clasificar" a pesar de que "murió"
+aparecía a solo 4 palabras de "Zulia". La causa: el recorte de ventana de
+proximidad agregado en el fix de artículos multiestado (que corta la
+ventana en la mención más cercana de OTRO estado) también se activaba
+entre **dos menciones del mismo estado** — el artículo menciona "Zulia"
+una vez como ubicación y otra vez como parte del nombre de un medio local
+("Zulia Sin Censura"), y la ventana se cortaba justo antes de esa segunda
+mención, dejando "murió" fuera. Se corrigió `_ventana_cerca()` en
+`scripts/classify.py` para que el recorte solo considere menciones de
+estados **distintos** al que se está evaluando, nunca repeticiones del
+mismo estado. Se confirmó que esto no afecta el caso de prueba
+multiestado ya validado (Zulia/Táchira/Mérida en un mismo artículo).
+
+**Corrección retroactiva**: se actualizó la alerta ya publicada
+("Colapso estructural") en `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` con el municipio ("Indígena Bolivariano
+Guajira"), la parroquia ("Sinamaica") y la severidad ("crítico")
+correctos, y se regeneraron las estadísticas. El informe narrativo
+mensual ya generado no mencionaba una ubicación incorrecta, así que no
+requirió corrección.
+
+Validado con `python3 scripts/validar_configs.py`, con el caso real
+reportado por el usuario (texto completo obtenido manualmente de la
+página del artículo) y con regresión contra
+`data/historico_fuentes_texto.jsonl` (mismo número de divisiones
+multiestado que antes del cambio en `_ventana_cerca`, sin regresiones).

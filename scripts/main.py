@@ -29,7 +29,10 @@ def main():
     # items += fetch_telegram_items(ventana)
     print(f"  {len(items)} items totales")
 
-    items = [clasificar_item(i) for i in items]
+    # clasificar_item devuelve una lista: normalmente 1 item, pero un
+    # articulo que menciona varios estados con evidencia clara cerca de
+    # cada uno genera un item por estado (ver classify.py).
+    items = [nuevo for i in items for nuevo in clasificar_item(i)]
     items = [i for i in items if es_relevante(i)]
     print(f"  {len(items)} items relevantes (con tipo + ubicación detectados)")
 

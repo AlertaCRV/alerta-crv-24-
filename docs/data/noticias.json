@@ -1,12 +1,12 @@
 [
   {
-    "titulo": "Colapso estructural en Parroquia San Francisco, Municipio Maracaibo, Zulia",
-    "texto": "📌 Colapso estructural en Parroquia San Francisco, Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia San Francisco, Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
+    "titulo": "Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia",
+    "texto": "📌 Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
     "tipo": "colapso_estructural",
     "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": "San Francisco",
-    "severidad": "sin_clasificar",
+    "municipio": "Indígena Bolivariano Guajira",
+    "parroquia": "Sinamaica",
+    "severidad": "critico",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -46,11 +46,11 @@
     "estado_verificacion": "APROBADO_IA"
   },
   {
-    "titulo": "Tormenta eléctrica en Parroquia Guajira, Municipio Cabimas, Zulia",
-    "texto": "📌 Tormenta eléctrica en Parroquia Guajira, Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Guajira, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/07/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 2.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/\n  • La Verdad (Zulia): https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/\n  • El Tiempo (Anzoategui): https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
+    "titulo": "Tormenta eléctrica en Parroquia Guajira, Municipio Indígena Bolivariano Guajira, Zulia",
+    "texto": "📌 Tormenta eléctrica en Parroquia Guajira, Municipio Indígena Bolivariano Guajira, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Guajira, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 2.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/\n  • La Verdad (Zulia): https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/\n  • El Tiempo (Anzoategui): https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
     "tipo": "tormenta_electrica",
     "ubicacion": "Zulia",
-    "municipio": "Cabimas",
+    "municipio": "Indígena Bolivariano Guajira",
     "parroquia": "Guajira",
     "severidad": "sin_clasificar",
     "score": 2.1,

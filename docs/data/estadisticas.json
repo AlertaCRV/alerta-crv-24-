@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-27T17:27:35.374809+00:00",
+  "actualizado": "2026-07-27T17:46:02.426655+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
     "hasta": "2026-07-27T17:18:51+00:00"
@@ -77,9 +77,9 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 11,
+    "sin_clasificar": 10,
     "alto": 1,
-    "critico": 1
+    "critico": 2
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
