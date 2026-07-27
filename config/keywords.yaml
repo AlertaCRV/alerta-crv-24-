@@ -108,9 +108,17 @@ tipos:
     - saqueos
     - enfrentamiento
     - enfrentamientos
-    - manifestacion
-    - manifestaciones
-    - manifestación
+    # "manifestacion"/"manifestaciones" sola se evita a proposito: choca con
+    # el uso idiomatico frecuente de "manifestaciones artisticas/culturales"
+    # (exposiciones, actos culturales), que no tiene nada que ver con orden
+    # publico. "manifestantes" (las personas) y las frases especificas de
+    # abajo no tienen esa ambiguedad.
+    - manifestantes
+    - manifestacion violenta
+    - manifestación violenta
+    - manifestacion callejera
+    - manifestación callejera
+    - marcha de protesta
     - hecho de violencia
     - hechos de violencia
     - tiroteo

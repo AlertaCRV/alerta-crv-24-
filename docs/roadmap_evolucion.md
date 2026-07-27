@@ -1318,3 +1318,58 @@ resto del pipeline — hoy `fetch_email.py` solo entiende un formato rígido
 de asunto (`EMERGENCIA | Estado | Tipo | Severidad`), que probablemente
 no es como las filiales reportan en la práctica. Queda pendiente de
 discutir.
+
+---
+
+## Dos falsos positivos más: incendio vehicular aislado y "manifestaciones artísticas" (27-07-2026)
+
+El usuario reportó una alerta de "Incendio en Municipio Araure,
+Portuguesa" que en realidad era un camión (gandola) incendiado en la
+autopista — un incidente vehicular rutinario, no una emergencia del tipo
+que le compete a la Cruz Roja.
+
+**Causa raíz**: no existía un filtro determinista para tipo=incendio
+análogo al de vialidad — dependía enteramente del juicio de la IA. Además,
+esta alerta específica se publicó por una falla técnica temporal de Groq
+(`estado_verificacion: "PASADO_POR_FALLA_TECNICA"`, el mecanismo
+intencional de "fallar hacia lo seguro" para no perder eventos reales
+cuando la IA no está disponible), saltándose incluso esa verificación.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó
+`_incendio_vehiculo_sin_evidencia_fuerte()`, un filtro determinista que
+corre ANTES de la llamada a la IA (así que no depende de que Groq esté
+disponible). Solo aplica cuando el texto menciona un vehículo (camión,
+gandola, carro, moto, autobús, etc.) — un incendio forestal o estructural
+no se ve afectado. A pedido explícito del usuario, la condición para NO
+descartar la alerta es estricta: el texto debe describir el hecho como un
+**accidente múltiple Y** mencionar **heridos o fallecidos**, ambas cosas
+a la vez (no basta una sola, a diferencia del filtro de vialidad que
+acepta cualquiera de varias señales).
+
+**Segundo hallazgo, al revisar el histórico durante esta corrección**: se
+encontró OTRA alerta con el mismo patrón de falla técnica —
+"Orden público en Municipio Barinas, Barinas"— que resultó ser un
+**falso positivo total**: la fuente es una noticia sobre la
+reinauguración de un teatro y entrega de equipos tecnológicos, sin
+ninguna relación con disturbios. La causa: la palabra clave
+"manifestaciones" (para protestas) hizo falso match con "las
+manifestaciones artísticas" (exposiciones/actos culturales) mencionadas
+en el texto — la misma clase de ambigüedad idiomática ya identificada
+antes para "explosión" (que colisiona con "explosión de alegría/color").
+
+**Corrección** (`config/keywords.yaml`): se quitó "manifestacion"/
+"manifestaciones"/"manifestación" como palabra suelta de
+`orden_publico`, reemplazada por "manifestantes" (sin la ambigüedad, ya
+que "manifestantes artísticos" no es una expresión de uso común) y
+frases específicas ("manifestación violenta", "manifestación callejera",
+"marcha de protesta").
+
+**Corrección retroactiva**: se eliminaron ambas alertas
+(`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl`) y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py`, casos de control para
+ambos filtros (incendio vehicular con/sin accidente múltiple y víctimas;
+"manifestaciones artísticas" vs. "manifestantes" en protesta real), y
+regresión contra el histórico completo de fuentes (sin otros casos de
+`incendio`/`orden_publico` afectados).

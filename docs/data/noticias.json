@@ -1,51 +1,5 @@
 [
   {
-    "titulo": "Incendio en Municipio Araure, Portuguesa",
-    "texto": "📌 Incendio en Municipio Araure, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Araure, Portuguesa\n🕒 Hecho reportado: 27/07/2026, 2:06 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 2:17 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/sucesos/voraz-incendio-consumio-una-gandola-en-la-autopista-jose-antonio-paez/?utm_source=rss&utm_medium=rss&utm_campaign=voraz-incendio-consumio-una-gandola-en-la-autopista-jose-antonio-paez",
-    "tipo": "incendio",
-    "ubicacion": "Portuguesa",
-    "municipio": "Araure",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/sucesos/voraz-incendio-consumio-una-gandola-en-la-autopista-jose-antonio-paez/?utm_source=rss&utm_medium=rss&utm_campaign=voraz-incendio-consumio-una-gandola-en-la-autopista-jose-antonio-paez",
-        "fecha": "2026-07-27T18:06:57+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T18:06:57+00:00",
-    "fecha_evento_temprana": "2026-07-27T18:06:57+00:00",
-    "fecha_deteccion": "2026-07-27T18:17:21.724944+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA"
-  },
-  {
-    "titulo": "Orden público en Municipio Barinas, Barinas",
-    "texto": "📌 Orden público en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 8:10 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 2:17 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notimax Plus (Barinas): https://www.notimaxplus.com/2026/07/argenis-aldazoro-barinas-reaviva-su.html",
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": "Barinas",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notimax Plus (Barinas)",
-        "link": "https://www.notimaxplus.com/2026/07/argenis-aldazoro-barinas-reaviva-su.html",
-        "fecha": "2026-07-27T12:10:08+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T12:10:08+00:00",
-    "fecha_evento_temprana": "2026-07-27T12:10:08+00:00",
-    "fecha_deteccion": "2026-07-27T18:17:46.004950+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA"
-  },
-  {
     "titulo": "Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia",
     "texto": "📌 Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
     "tipo": "colapso_estructural",
