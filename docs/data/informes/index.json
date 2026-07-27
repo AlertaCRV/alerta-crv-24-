@@ -17,6 +17,14 @@
   },
   {
     "periodo": "2026-07",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-07-27T16:02:29.161168+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,

@@ -101,7 +101,20 @@
   },
   "tormenta_electrica::Zulia::2026-07-27": {
     "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
+    "fecha_evento_temprana": "2026-07-27T13:27:30+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T16:02:12.489573+00:00",
+    "fecha_evento_temprana": "2026-07-27T14:00:00+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-07-27": {
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-07-27T12:40:23.203107+00:00"
+    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
+    "fecha_evento_temprana": "2026-07-27T13:45:56+00:00"
   }
 }
