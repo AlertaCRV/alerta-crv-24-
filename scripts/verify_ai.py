@@ -105,6 +105,46 @@ def _vialidad_sin_evidencia_fuerte(texto):
     return not tiene_evidencia
 
 
+# Filtro determinista para tipo=incendio: un incendio de un solo vehiculo en
+# la via (una gandola, un camion) es un incidente rutinario de transito, no
+# una emergencia que requiera respuesta de la Cruz Roja -- mismo patron que
+# el filtro de vialidad. Solo se descarta cuando el incendio involucra un
+# vehiculo; un incendio forestal, estructural o de otro tipo no pasa por
+# este filtro. A diferencia de vialidad (que acepta CUALQUIERA de varias
+# senales), aqui el usuario pidio explicitamente una condicion mas estricta:
+# la fuente debe describir el hecho como un accidente MULTIPLE Y mencionar
+# heridos o fallecidos -- ambas cosas a la vez, no una sola.
+_VEHICULO_INCENDIO_RE = re.compile(
+    r"\b(gandolas?|g[aá]ndolas?|camion(?:es)?|cami[oó]n(?:es)?|vehiculos?|veh[ií]culos?|"
+    r"carros?|automovil(?:es)?|autom[oó]vil(?:es)?|motos?|motorizados?|autobus(?:es)?|"
+    r"autob[uú]s(?:es)?|busetas?|furgones?|furg[oó]n(?:es)?|tractomulas?|cisternas?|"
+    r"camionetas?|rastras?)\b",
+    re.IGNORECASE,
+)
+_ACCIDENTE_MULTIPLE_RE = re.compile(
+    r"\b(colision multiple|colisión múltiple|choque multiple|choque múltiple|"
+    r"accidente masivo|accidente multiple|accidente múltiple|varios vehiculos|"
+    r"varios vehículos|multiples vehiculos|múltiples vehículos|"
+    r"choque entre varios vehiculos|choque entre varios vehículos)\b",
+    re.IGNORECASE,
+)
+_VICTIMAS_INCENDIO_RE = re.compile(
+    r"\b(herido|herida|heridos|heridas|lesionado|lesionada|lesionados|lesionadas|"
+    r"fallecido|fallecida|fallecidos|fallecidas|muerto|muerta|muertos|muertas|"
+    r"victima fatal|víctima fatal|victimas fatales|víctimas fatales)\b",
+    re.IGNORECASE,
+)
+
+
+def _incendio_vehiculo_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _VEHICULO_INCENDIO_RE.search(texto_norm):
+        return False  # no es un incendio de vehiculo, este filtro no aplica
+    tiene_accidente_multiple = _ACCIDENTE_MULTIPLE_RE.search(texto_norm) is not None
+    tiene_victimas = _VICTIMAS_INCENDIO_RE.search(texto_norm) is not None
+    return not (tiene_accidente_multiple and tiene_victimas)
+
+
 # Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
 # hoy son temblores menores sin ningun dano real, y estan empañando el
 # proposito del sistema (demasiados reportes de baja relevancia). Un sismo
@@ -415,6 +455,8 @@ def verificar_evento_con_ia(evento):
         if _es_retrospectiva_obvia(representante["texto"]):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
+        elif evento["tipo"] == "incendio" and _incendio_vehiculo_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)
