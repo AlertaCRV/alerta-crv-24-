@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-07",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
+    "cerrado": false,
+    "generado": "2026-07-27T02:57:37.432489+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,

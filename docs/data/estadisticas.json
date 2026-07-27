@@ -1,25 +1,26 @@
 {
-  "actualizado": "2026-07-27T00:44:59.056492+00:00",
+  "actualizado": "2026-07-27T02:57:20.486311+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
     "hasta": "2026-07-27T00:15:18+00:00"
   },
-  "total_eventos": 5,
+  "total_eventos": 7,
   "por_tipo": {
     "inundacion": 2,
-    "deslizamiento": 2,
-    "tormenta_electrica": 1
+    "deslizamiento": 3,
+    "tormenta_electrica": 1,
+    "salud_publica": 1
   },
   "ranking_estados": [
+    {
+      "estado": "Portuguesa",
+      "total": 2,
+      "confirmados": 0
+    },
     {
       "estado": "Distrito Capital",
       "total": 1,
       "confirmados": 1
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 1,
-      "confirmados": 0
     },
     {
       "estado": "Carabobo",
@@ -35,6 +36,11 @@
       "estado": "Barinas",
       "total": 1,
       "confirmados": 1
+    },
+    {
+      "estado": "La Guaira",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -42,7 +48,8 @@
       "inundacion": 1
     },
     "Portuguesa": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "salud_publica": 1
     },
     "Carabobo": {
       "tormenta_electrica": 1
@@ -52,10 +59,13 @@
     },
     "Barinas": {
       "deslizamiento": 1
+    },
+    "La Guaira": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
-    "sin_clasificar": 4,
+    "sin_clasificar": 6,
     "alto": 1
   },
   "serie_mensual_por_tipo": {
@@ -63,9 +73,12 @@
       "2026-07": 2
     },
     "deslizamiento": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "tormenta_electrica": {
+      "2026-07": 1
+    },
+    "salud_publica": {
       "2026-07": 1
     }
   }
