@@ -1,16 +1,18 @@
 {
-  "actualizado": "2026-07-27T18:01:07.203996+00:00",
+  "actualizado": "2026-07-27T18:17:47.212818+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-27T17:18:51+00:00"
+    "hasta": "2026-07-27T18:06:57+00:00"
   },
-  "total_eventos": 13,
+  "total_eventos": 15,
   "por_tipo": {
     "inundacion": 4,
     "deslizamiento": 4,
     "tormenta_electrica": 3,
     "infraestructura_electrica": 1,
-    "colapso_estructural": 1
+    "colapso_estructural": 1,
+    "incendio": 1,
+    "orden_publico": 1
   },
   "ranking_estados": [
     {
@@ -19,18 +21,18 @@
       "confirmados": 2
     },
     {
+      "estado": "Barinas",
+      "total": 3,
+      "confirmados": 1
+    },
+    {
       "estado": "Distrito Capital",
       "total": 2,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
-      "total": 2,
-      "confirmados": 1
-    },
-    {
       "estado": "Portuguesa",
-      "total": 1,
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -55,7 +57,8 @@
       "deslizamiento": 1
     },
     "Portuguesa": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "incendio": 1
     },
     "Carabobo": {
       "tormenta_electrica": 1
@@ -64,7 +67,8 @@
       "inundacion": 1
     },
     "Barinas": {
-      "deslizamiento": 2
+      "deslizamiento": 2,
+      "orden_publico": 1
     },
     "Zulia": {
       "inundacion": 1,
@@ -77,7 +81,7 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 10,
+    "sin_clasificar": 12,
     "alto": 1,
     "critico": 2
   },
@@ -95,6 +99,12 @@
       "2026-07": 1
     },
     "colapso_estructural": {
+      "2026-07": 1
+    },
+    "incendio": {
+      "2026-07": 1
+    },
+    "orden_publico": {
       "2026-07": 1
     }
   }

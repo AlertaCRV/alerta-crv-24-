@@ -128,5 +128,17 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
     "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
+  },
+  "incendio::Portuguesa::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T18:17:21.724944+00:00",
+    "fecha_evento_temprana": "2026-07-27T18:06:57+00:00"
+  },
+  "orden_publico::Barinas::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T18:17:46.004950+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:10:08+00:00"
   }
 }
