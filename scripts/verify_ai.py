@@ -14,6 +14,16 @@ from verify import extraer_magnitud
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
+# En corridas con muchos eventos agrupados (12+), la cuota de Groq se
+# agotaba a mitad de camino y los eventos restantes se publicaban sin
+# verificacion de IA (fail-open). Se espacian mas las llamadas entre si
+# (ESPERA_ENTRE_LLAMADAS_GROQ) y se reintenta un 429 hasta
+# MAX_REINTENTOS_GROQ veces con espera creciente (5s, 10s, 20s...), en vez
+# de un solo reintento fijo de 5s.
+ESPERA_ENTRE_LLAMADAS_GROQ = 3
+MAX_REINTENTOS_GROQ = 3
+ESPERA_BASE_REINTENTO_429 = 5
+
 # Filtro determinista de respaldo: si el texto de una fuente contiene una
 # marca temporal explícita de retrospectiva/aniversario, se descarta sin
 # depender del juicio del modelo (que en la practica ha fallado en casos
@@ -24,10 +34,13 @@ _PATRON_RETROSPECTIVA = re.compile(
     r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
     r"|\baniversario\b"
     rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b"
-    # "doble sismo" es el nombre fijo con el que los medios venezolanos se
-    # refieren al sismo doble de La Guaira/Vargas de hace un mes -- ninguna
-    # cobertura de un sismo genuinamente nuevo usaria ese termino exacto.
-    r"|\bdoble\s+sismo\b",
+    # "doble sismo"/"doblete sismico" son los nombres con que los medios
+    # venezolanos se refieren al sismo doble de La Guaira/Vargas de hace un
+    # mes -- ninguna cobertura de un sismo genuinamente nuevo usaria ese
+    # termino exacto. Caso real que se escapo: "tras el doblete sismico,
+    # los rescatistas encontraron..." (un articulo sobre labores de rescate
+    # del terremoto anterior, mal clasificado como deslizamiento nuevo).
+    r"|\bdoblet?e?\s+sismic[oa]\b|\bdoble\s+sismo\b|\bsismo\s+doble\b",
     re.IGNORECASE,
 )
 
@@ -439,12 +452,12 @@ def verificar_evento_con_ia(evento):
 
     try:
         resp = None
-        for intento in range(2):
-            # Pequena pausa entre llamadas sucesivas a Groq: en un mismo
-            # ciclo se llama una vez por evento agrupado, y sin espaciarlas
-            # se alcanzaba el limite de tasa (429) y el evento se dejaba
-            # pasar sin verificar (fail-open).
-            time.sleep(1.5)
+        for intento in range(MAX_REINTENTOS_GROQ):
+            # Pausa entre llamadas sucesivas a Groq: en un mismo ciclo se
+            # llama una vez por evento agrupado, y sin espaciarlas se
+            # alcanzaba el limite de tasa (429) y el evento se dejaba pasar
+            # sin verificar (fail-open).
+            time.sleep(ESPERA_ENTRE_LLAMADAS_GROQ)
             resp = requests.post(
                 GROQ_URL,
                 headers={"Authorization": f"Bearer {api_key}"},
@@ -460,9 +473,10 @@ def verificar_evento_con_ia(evento):
                 },
                 timeout=20,
             )
-            if resp.status_code == 429 and intento == 0:
-                print("[WARN] Groq devolvió 429 (rate limit), reintentando en 5s...")
-                time.sleep(5)
+            if resp.status_code == 429 and intento < MAX_REINTENTOS_GROQ - 1:
+                espera = ESPERA_BASE_REINTENTO_429 * (2 ** intento)
+                print(f"[WARN] Groq devolvió 429 (rate limit), reintentando en {espera}s... (intento {intento + 2}/{MAX_REINTENTOS_GROQ})")
+                time.sleep(espera)
                 continue
             break
 

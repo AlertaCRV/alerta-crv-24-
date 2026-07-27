@@ -1,51 +1,5 @@
 [
   {
-    "titulo": "Salud pública en Portuguesa",
-    "texto": "📌 Salud pública en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 26/07/2026, 7:08 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 10:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/salud/paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela",
-    "tipo": "salud_publica",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/salud/paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela",
-        "fecha": "2026-07-26T23:08:16+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T23:08:16+00:00",
-    "fecha_evento_temprana": "2026-07-26T23:08:16+00:00",
-    "fecha_deteccion": "2026-07-27T02:57:11.129554+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA"
-  },
-  {
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 26/07/2026, 4:25 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 10:57 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/autobus-la-oppe-26-en-la-guaira/",
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/autobus-la-oppe-26-en-la-guaira/",
-        "fecha": "2026-07-26T20:25:56+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T20:25:56+00:00",
-    "fecha_evento_temprana": "2026-07-26T20:25:56+00:00",
-    "fecha_deteccion": "2026-07-27T02:57:19.227152+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA"
-  },
-  {
     "titulo": "Deslizamiento/Derrumbe en Municipio Bolívar, Barinas",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Bolívar, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Barinas\n🕒 Hecho reportado: 26/07/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 8:38 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
     "tipo": "deslizamiento",

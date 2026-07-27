@@ -9,7 +9,10 @@ from dateutil import parser as dateparser
 
 from historico import leer_historico
 from historico_fuentes import leer_texto_fuentes
-from verify_ai import GROQ_URL, GROQ_MODEL
+from verify_ai import (
+    GROQ_URL, GROQ_MODEL, ESPERA_ENTRE_LLAMADAS_GROQ,
+    MAX_REINTENTOS_GROQ, ESPERA_BASE_REINTENTO_429,
+)
 from render import TIPO_LABELS
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,14 +122,12 @@ def _generar_narrativa(tipo_label, periodo, registros, comparacion):
 
     try:
         resp = None
-        for intento in range(2):
+        for intento in range(MAX_REINTENTOS_GROQ):
             # Mismo patron de reintento que verify_ai.py: en una corrida con
             # muchos eventos, verify_ai.py ya hace varias llamadas a Groq
-            # antes de llegar aqui, y sin reintento un 429 (rate limit) hacia
-            # que el informe simplemente no se generara esa corrida (se vio
-            # en produccion: 3 de 6 informes fallaron por 429 en la primera
-            # corrida real).
-            time.sleep(1.5)
+            # antes de llegar aqui, y la cuota puede seguir agotada -- se
+            # reintenta hasta MAX_REINTENTOS_GROQ veces con espera creciente.
+            time.sleep(ESPERA_ENTRE_LLAMADAS_GROQ)
             resp = requests.post(
                 GROQ_URL,
                 headers={"Authorization": f"Bearer {api_key}"},
@@ -142,9 +143,10 @@ def _generar_narrativa(tipo_label, periodo, registros, comparacion):
                 },
                 timeout=40,
             )
-            if resp.status_code == 429 and intento == 0:
-                print(f"[WARN] Informe {periodo}/{tipo_label}: Groq devolvió 429 (rate limit), reintentando en 5s...")
-                time.sleep(5)
+            if resp.status_code == 429 and intento < MAX_REINTENTOS_GROQ - 1:
+                espera = ESPERA_BASE_REINTENTO_429 * (2 ** intento)
+                print(f"[WARN] Informe {periodo}/{tipo_label}: Groq devolvió 429 (rate limit), reintentando en {espera}s... (intento {intento + 2}/{MAX_REINTENTOS_GROQ})")
+                time.sleep(espera)
                 continue
             break
 

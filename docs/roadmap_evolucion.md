@@ -735,3 +735,78 @@ conservó la más reciente, que además esta vez sí detectó correctamente
 "Municipio Bolívar"), y se corrigió manualmente el conteo del informe
 narrativo de deslizamientos de julio (`total_eventos` de 3 a 2 — estaba
 contando el mismo hecho dos veces).
+
+---
+
+## Dos alertas publicadas sin verificación de IA por agotamiento de cuota (27-07-2026)
+
+Se reportaron dos alertas problemáticas publicadas en la misma corrida:
+
+1. **"Deslizamiento/Derrumbe en La Guaira"**: el texto real era sobre las
+   labores de rescate del terremoto anterior ("...tras el **doblete
+   sísmico**, los rescatistas encontraron un autobús bajo los
+   escombros..."), mal clasificado como un deslizamiento nuevo.
+2. **"Salud pública en Portuguesa"**: un reportaje analítico nacional
+   sobre el repunte de virus/enfermedades por las lluvias, no un evento
+   agudo puntual.
+
+**Causa común**: ambas fallaron su verificación de IA por **429 (rate
+limit) de Groq** en una corrida con 13 eventos agrupados — la cuota se
+agotó a mitad de camino, y la política de "no bloquear por falla técnica"
+las publicó de todas formas (`estado_verificacion:
+PASADO_POR_FALLA_TECNICA`).
+
+**Causas específicas**:
+- El caso 1 sí tenía un filtro determinista aplicable (`_PATRON_RETROSPECTIVA`
+  ya busca "doble sismo"), pero el texto real decía **"doblete sísmico"**
+  — una variante de redacción que el regex no cubría. Se amplió el patrón
+  para cubrir "doblete sísmico"/"sismo doble" además de "doble sismo".
+- El caso 2 no tiene ningún filtro determinista aplicable — depende
+  enteramente del juicio semántico de la IA (distinguir un reportaje/
+  análisis de un evento agudo), que no llegó a ejecutarse.
+
+**Mitigación del agotamiento de cuota** (elegida: más reintentos +
+más espaciado, sin rediseñar el prompt para agrupar llamadas): en
+`verify_ai.py` y `build_informes.py`,
+- `ESPERA_ENTRE_LLAMADAS_GROQ` sube de 1.5s a 3s entre cada llamada.
+- `MAX_REINTENTOS_GROQ` sube de 2 a 3 intentos totales ante 429, con
+  espera creciente (5s, 10s, 20s) en vez de un único reintento fijo de 5s.
+
+Esto alarga la duración de cada corrida del monitor cuando hay muchos
+eventos, a cambio de reducir la probabilidad de que la cuota se agote
+antes de terminar de verificar todos los eventos de la corrida.
+
+**Corregido retroactivamente**: se eliminaron ambas alertas de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`. El informe narrativo de salud
+pública de julio se eliminó por completo (era el único evento de ese
+tipo del mes); el de deslizamientos no necesitó tocarse — se había
+generado antes de que apareciera la alerta de La Guaira.
+
+---
+
+## Prevención anticipada: demolición controlada en Playa Grande/Caraballeda (27-07-2026)
+
+Se avisó, con varios días de anticipación, de una demolición controlada
+programada de estructuras dañadas por el terremoto en Playa Grande y
+Caraballeda (La Guaira) entre el 27 y el 31 de julio — con comisiones de
+explosivos, derribo de edificaciones, y cobertura mediática esperable.
+Riesgo identificado: la cobertura de esa demolición programada podía
+calzar con las palabras clave de `explosion` y `colapso_estructural`
+(tipos agregados esta misma sesión) y publicarse como si fuera una
+emergencia nueva, cuando es un evento planificado y anunciado.
+
+**Corrección preventiva** (antes de que ocurra, no reactiva): se
+extendió el mecanismo de "contexto conflictivo" que ya existía solo para
+`sismo` (evita que "cerco epidemiológico" se clasifique como sismo) a los
+tipos `explosion` y `colapso_estructural`. Si el texto menciona
+"demolición controlada/programada", "derribo controlado/programado", o
+"voladura/detonación controlada/programada" — y no hay evidencia fuerte
+de que sea un colapso/explosión real e inesperado ("colapso repentino",
+"explosión accidental", heridos, fallecidos) — el tipo se descarta para
+esa mención.
+
+Probado: un colapso/explosión real (con heridos, sin mención de
+demolición programada) se sigue detectando con normalidad; la misma
+redacción en contexto de demolición controlada anunciada ya no se
+clasifica como emergencia.
