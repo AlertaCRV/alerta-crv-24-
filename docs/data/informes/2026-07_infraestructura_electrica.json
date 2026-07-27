@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-07",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-07-27T16:02:29.161168+00:00",
+  "actualizado_hasta": "2026-07-27T16:02:12.489573+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período 2026-07, se registró un evento de falla eléctrica en el estado Zulia, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Según Diario La Nacion (Tachira), las intensas precipitaciones asociadas a la onda tropical número 30 impactaron con severidad gran parte del estado Zulia desde la noche del domingo 26 de julio, combinándose con fuertes ráfagas de viento y una constante actividad de descargas eléctricas que afectaron principalmente a los municipios Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta (Diario La Nacion). El temporal dejó múltiples sectores a oscuras debido a fallas eléctricas (Diario La Nacion). De acuerdo con El Impulso (Lara), las intensas precipitaciones asociadas a la onda tropical número 30 impactaron con severidad gran parte del estado Zulia desde la noche de este domingo (El Impulso). Noticias de Aqui (Anzoategui) informó que la noche del 26 de julio, el paso de la onda tropical número 30 desencadenó intensas precipitaciones acompañadas de fuertes ráfagas de viento y descargas eléctricas en el estado Zulia, lo que llevó a la activación inmediata del Sistema Regional de Gestión de Riesgo (Noticias de Aqui). En resumen, el evento de falla eléctrica en el estado Zulia durante el período 2026-07 se debió a las intensas precipitaciones y fuertes vientos generados por la onda tropical número 30.",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/"
+    }
+  ]
+}
