@@ -988,3 +988,69 @@ el resultado en volumen, sin encontrar más combinaciones inconsistentes.
 mismo (podría tener errores puntuales en municipios/parroquias poco
 documentados), pero es sustancialmente más confiable que la ausencia
 total de jerarquía que había antes.
+
+---
+
+## División de artículos multiestado en alertas independientes (27-07-2026)
+
+El usuario preguntó: si un artículo describe la situación de lluvias en 5
+municipios distintos, con detalles propios de heridos/daños en cada uno,
+¿el sistema genera 5 alertas? La respuesta era **no**: `detectar_ubicacion`
+solo devolvía el primer estado que encontraba en el texto y descartaba el
+resto, y `detectar_severidad` se calculaba sobre el texto **completo** del
+artículo — así que incluso el único estado elegido podía heredar
+severidad de hechos ocurridos en otro estado mencionado más adelante.
+
+**Corrección implementada** (`scripts/classify.py`):
+- `detectar_ubicacion(texto)` ahora devuelve una **lista** de todos los
+  estados detectados (antes devolvía solo el primero), cada uno con su
+  propia ventana de proximidad de texto cuando aplica.
+- `clasificar_item(item)` ahora devuelve una **lista** de items — uno por
+  cada estado detectado con evidencia propia cerca — en vez de un único
+  item. `tipos` y `severidad` se calculan para cada estado usando
+  **solo su propia ventana de texto**, no el artículo completo.
+- `main.py` y `fetch_email.py` se actualizaron para aplanar/adaptar esta
+  nueva firma de lista.
+- Se añadió `_posiciones_de_estados()`, que ubica las posiciones de
+  **todas** las menciones de estados en el texto. `_ventana_cerca()` usa
+  esas posiciones para **recortar** la ventana de proximidad de cada
+  estado en la mención más cercana de otro estado distinto (antes o
+  después), evitando que la ventana de un estado se extienda sobre el
+  párrafo dedicado a otro.
+
+**Prueba con caso simulado** (Zulia con heridos, Táchira con
+deslizamiento sin daños, Mérida con anegaciones menores): sin el recorte
+de ventana, los 3 estados resultaban con severidad "alto" y ambos tipos
+mezclados. Con el recorte, Zulia mantiene correctamente severidad "alto"
+(por "heridos") y Mérida baja a "bajo" con un solo tipo — la separación
+mejora sustancialmente pero no es perfecta: cuando la oración de
+transición entre dos estados menciona palabras clave de tipo (ej.
+"inundaciones" en la frase que conecta la mención de Zulia con la de
+Táchira), esas palabras pueden seguir cayendo dentro de la ventana del
+segundo estado por estar posicionalmente más cerca de él que de
+cualquier otro corte. Esto es una limitación inherente del enfoque
+heurístico basado en proximidad de palabras (ya advertida al usuario
+antes de implementar) — no hay reconocimiento real de qué frase
+"pertenece" a qué estado, solo distancia y recorte en los puntos de
+mención de otros estados.
+
+**Prueba de regresión** contra el histórico real de textos de fuentes ya
+publicados (`data/historico_fuentes_texto.jsonl`): de 23 fuentes
+individuales evaluadas, 7 (30%) resultaron en división multiestado real
+y coherente con el contenido del artículo (p.ej. una nota sobre lluvias
+que cubre Caracas y La Guaira a la vez, u otra sobre el corredor
+Barinas–Mérida) — casos que antes de este cambio habrían generado una
+sola alerta con la ubicación del primer estado mencionado nada más.
+
+**Relación con la deduplicación de 36 horas**: son mecanismos
+independientes y complementarios. La división multiestado ocurre en
+`classify.py`, antes de que el evento llegue a la ventana de 36 horas de
+`state.py` (que actúa por tipo + ubicación ya resuelta). Un artículo que
+cubre 3 estados generará 3 eventos con ubicaciones distintas, cada uno
+sujeto de forma independiente a la regla de las 36 horas frente a
+publicaciones previas sobre ese mismo estado — no se pierde ni se duplica
+cobertura por la interacción entre ambos mecanismos.
+
+Validado con `python3 scripts/validar_configs.py` (OK) y contra los
+casos de regresión de detección de ubicación ya probados en sesiones
+anteriores.

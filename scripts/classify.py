@@ -121,29 +121,69 @@ def _contiene_palabra_clave_no_negada(texto_norm, palabra):
 
 
 def detectar_ubicacion(texto):
-    """Devuelve (nombre_estado, ventana_cercana) o (None, None).
+    """Devuelve una lista de (nombre_estado, ventana_cercana) -- una entrada
+    por cada estado mencionado con evidencia clara de tipo de emergencia
+    cerca (o via hashtag). Un articulo-resumen que cubre varios estados
+    (comun en coberturas de lluvias/tormentas a nivel nacional) puede asi
+    generar un evento por cada estado con evidencia real, en vez de
+    quedarse solo con el primero que aparezca en el orden de
+    config/estados.yaml y perder silenciosamente los demas.
 
     ventana_cercana es el fragmento de texto alrededor de la mención del
-    estado que confirmó la ubicación; detectar_tipo() lo usa para no
-    clasificar el tipo de emergencia a partir de palabras clave sueltas en
-    otra parte del artículo. Es None cuando la ubicación viene de un hashtag
-    (no hay una "mención en el texto" de la cual tomar una ventana).
+    estado que confirmó la ubicación; detectar_tipo()/detectar_severidad()
+    lo usan para no tomar palabras clave de otra parte del artículo que
+    describe un estado distinto. Es None cuando la ubicación viene de un
+    hashtag (no hay una "mención en el texto" de la cual tomar una
+    ventana).
     """
     estados = load_estados()
     hashtags = [h.lower() for h in _HASHTAG_RE.findall(texto)]
 
+    encontrados = []
+    vistos = set()
+
     for nombre_estado, alias in estados.items():
         for tag in hashtags:
             if tag in alias or tag == nombre_estado.lower().replace(" ", ""):
-                return nombre_estado, None
+                if nombre_estado not in vistos:
+                    encontrados.append((nombre_estado, None))
+                    vistos.add(nombre_estado)
+                break
 
-    return _detectar_ubicacion_texto_plano(texto, estados)
+    for nombre_estado, ventana in _detectar_ubicacion_texto_plano(texto, estados):
+        if nombre_estado not in vistos:
+            encontrados.append((nombre_estado, ventana))
+            vistos.add(nombre_estado)
+
+    return encontrados
+
+
+def _posiciones_de_estados(tokens, estados):
+    """Posiciones (indice de token) donde comienza la mencion de CUALQUIER
+    estado en el texto -- se usa para que la ventana de proximidad de un
+    estado nunca se extienda hasta la mencion de otro estado distinto (ver
+    _ventana_cerca). Sin esto, un articulo-resumen que menciona varios
+    estados en un mismo parrafo corto puede terminar atribuyendole a un
+    estado la severidad/tipo de un hecho que en realidad describe a otro."""
+    posiciones = []
+    for nombre_estado, alias in estados.items():
+        for candidato in set(alias) | {_normalizar(nombre_estado)}:
+            candidato_tokens = candidato.split()
+            primera = candidato_tokens[0]
+            n = len(candidato_tokens)
+            for i, t in enumerate(tokens):
+                if t == primera and tokens[i:i + n] == candidato_tokens:
+                    if not _es_mencion_subestatal(tokens, i) and not _es_mencion_direccional(tokens, i, candidato_tokens):
+                        posiciones.append(i)
+    return sorted(set(posiciones))
 
 
 def _detectar_ubicacion_texto_plano(texto, estados):
     texto_norm = _normalizar(texto)
     palabras_tipo = [p for lista in load_keywords()["tipos"].values() for p in lista]
     tokens = _tokens(texto)
+    posiciones_estados = _posiciones_de_estados(tokens, estados)
+    resultado = []
 
     for nombre_estado, alias in estados.items():
         candidatos = set(alias) | {_normalizar(nombre_estado)}
@@ -158,11 +198,12 @@ def _detectar_ubicacion_texto_plano(texto, estados):
             if any(frase in texto_norm for frase in lista_negra):
                 continue
 
-            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo)
+            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
             if ventana:
-                return nombre_estado, ventana
+                resultado.append((nombre_estado, ventana))
+                break  # ya se confirmo este estado, seguir con el siguiente
 
-    return None, None
+    return resultado
 
 
 _CALIFICADORES_SUBESTATALES = {"municipio", "parroquia"}
@@ -199,9 +240,14 @@ def _es_mencion_direccional(tokens, pos, candidato_tokens):
     return False
 
 
-def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
+def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
-    alguna palabra clave de tipo, o None si no hay ninguna cerca."""
+    alguna palabra clave de tipo, o None si no hay ninguna cerca.
+
+    Si se pasan posiciones_estados (posiciones de TODAS las menciones de
+    estados en el texto), la ventana se recorta para no cruzar la mencion
+    mas cercana de OTRO estado, evitando que un articulo que habla de varios
+    estados mezcle detalles (tipo/severidad) de uno con los de otro."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
@@ -212,8 +258,16 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
     ]
     for pos in posiciones:
-        inicio = max(0, pos - VENTANA_PROXIMIDAD_PALABRAS)
-        fin = min(len(tokens), pos + VENTANA_PROXIMIDAD_PALABRAS)
+        limite_izq, limite_der = 0, len(tokens)
+        if posiciones_estados:
+            anteriores = [p for p in posiciones_estados if p < pos]
+            siguientes = [p for p in posiciones_estados if p > pos]
+            if anteriores:
+                limite_izq = max(limite_izq, max(anteriores) + 1)
+            if siguientes:
+                limite_der = min(limite_der, min(siguientes))
+        inicio = max(limite_izq, pos - VENTANA_PROXIMIDAD_PALABRAS)
+        fin = min(limite_der, pos + VENTANA_PROXIMIDAD_PALABRAS)
         ventana = " ".join(tokens[inicio:fin])
         for palabra in palabras_tipo:
             if _contiene_palabra_clave(ventana, palabra):
@@ -428,6 +482,13 @@ def detectar_severidad(texto, tipos=None):
 
 
 def clasificar_item(item):
+    """Devuelve una LISTA de items clasificados: normalmente uno solo, pero
+    un articulo que menciona varios estados con evidencia de tipo cerca de
+    cada uno (ver detectar_ubicacion) genera un item por estado, cada uno
+    con su propio tipo/severidad/municipio -- en vez de un solo evento
+    arbitrario (el primer estado en el orden de estados.yaml) que ademas
+    mezclaba severidad de todo el articulo, sin importar a que estado
+    correspondia realmente cada detalle."""
     pre = item.pop("_preclasificado", None)
     if pre:
         item["ubicacion"] = pre["ubicacion"]
@@ -435,13 +496,31 @@ def clasificar_item(item):
         item["severidad"] = pre["severidad"]
         item["municipio"] = None
         item["parroquia"] = None
-        return item
+        return [item]
 
-    item["ubicacion"], ventana = detectar_ubicacion(item["texto"])
-    item["tipos"] = detectar_tipo(item["texto"], ventana)
-    item["severidad"] = detectar_severidad(item["texto"], item["tipos"])
-    item["municipio"], item["parroquia"] = detectar_municipio_parroquia(item["texto"], item["ubicacion"])
-    return item
+    ubicaciones = detectar_ubicacion(item["texto"])
+    if not ubicaciones:
+        item["ubicacion"] = None
+        item["tipos"] = []
+        item["severidad"] = "sin_clasificar"
+        item["municipio"] = None
+        item["parroquia"] = None
+        return [item]
+
+    resultado = []
+    for ubicacion, ventana in ubicaciones:
+        nuevo = dict(item)
+        nuevo["ubicacion"] = ubicacion
+        nuevo["tipos"] = detectar_tipo(item["texto"], ventana)
+        # La severidad tambien se restringe a la ventana cuando existe (un
+        # articulo multi-estado no debe atribuirle a un estado la severidad
+        # de un hecho que en realidad ocurrio en otro estado mencionado en
+        # otra parte del mismo texto).
+        texto_severidad = ventana if ventana is not None else item["texto"]
+        nuevo["severidad"] = detectar_severidad(texto_severidad, nuevo["tipos"])
+        nuevo["municipio"], nuevo["parroquia"] = detectar_municipio_parroquia(item["texto"], ubicacion)
+        resultado.append(nuevo)
+    return resultado
 
 
 def es_relevante(item):
