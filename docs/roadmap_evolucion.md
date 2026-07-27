@@ -1075,3 +1075,47 @@ retroactiva.
 `data/historico_fuentes_texto.jsonl` no requería cambio (no guarda
 municipio). No se encontraron informes narrativos que mencionaran esta
 combinación incorrecta.
+
+---
+
+## Bug: la IA inventaba municipio/parroquia sin base en el texto (27-07-2026)
+
+Se reportó la alerta "Colapso estructural en Parroquia San Francisco,
+Municipio Maracaibo, Zulia", pero los hechos reales ocurrieron en otro
+municipio/parroquia distinto.
+
+**Causa raíz**: la fuente de esta alerta es un resumen de RSS truncado
+("Niño de cinco años mueres tras colapso de vivienda en Zulia... Un fatal
+incidente se registró luego de que una vivienda colapsara, como…") que
+**no menciona ningún municipio ni parroquia**. Cuando `classify.py` (regex
+determinista) no logra determinar el municipio/parroquia, `verify_ai.py`
+le pide a la misma llamada de verificación de Groq que intente inferirlo
+del texto, restringido a una lista de valores válidos del estado, con
+instrucción explícita de responder `null` si no hay certeza. En este
+caso, la IA respondió con un municipio/parroquia plausible pero **no
+respaldado por el texto real** — el modelo no siguió la instrucción de
+abstenerse cuando no hay evidencia.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó una verificación
+determinista posterior a la respuesta de la IA — el municipio y la
+parroquia que proponga solo se aceptan si su nombre **aparece
+textualmente** (normalizado, sin tildes/mayúsculas) en el texto combinado
+de las fuentes del evento. Si no aparece, se descarta y el campo queda en
+`null`, igual que si la IA no hubiera podido determinarlo. Esto no
+depende de que el modelo obedezca la instrucción del prompt — es un
+chequeo de anclaje textual que no puede pasarse por alto aunque la IA
+alucine.
+
+**Corrección retroactiva**: se quitó el municipio/parroquia inventado
+("Maracaibo"/"San Francisco") de la alerta ya publicada en
+`docs/data/noticias.json` y `data/historico_eventos.jsonl`, dejando la
+ubicación en el nivel de estado ("Zulia") que sí está respaldado por el
+texto, y se regeneraron las estadísticas.
+
+**Nota pendiente**: al revisar esta alerta también se notó que la
+severidad quedó "sin_clasificar" a pesar de que el título de la fuente
+menciona la muerte de un niño de cinco años ("mueres" — probable error
+tipográfico de "muere" en el sitio de origen). El detector de palabras
+clave de severidad crítica no cubre esa variante ortográfica; queda para
+evaluar por separado si conviene tolerar errores tipográficos comunes en
+las palabras clave de severidad más grave.

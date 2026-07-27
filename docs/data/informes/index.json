@@ -38,5 +38,13 @@
     "cerrado": false,
     "generado": "2026-07-27T00:38:24.027610+00:00",
     "total_eventos": 2
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "colapso_estructural",
+    "tipo_label": "Colapso estructural",
+    "cerrado": false,
+    "generado": "2026-07-27T17:27:39.318730+00:00",
+    "total_eventos": 1
   }
 ]

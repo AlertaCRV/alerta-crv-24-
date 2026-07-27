@@ -1,20 +1,21 @@
 {
-  "actualizado": "2026-07-27T17:06:48.224739+00:00",
+  "actualizado": "2026-07-27T17:37:28.665637+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-27T15:27:00+00:00"
+    "hasta": "2026-07-27T17:18:51+00:00"
   },
-  "total_eventos": 11,
+  "total_eventos": 13,
   "por_tipo": {
-    "inundacion": 3,
+    "inundacion": 4,
     "deslizamiento": 4,
     "tormenta_electrica": 3,
-    "infraestructura_electrica": 1
+    "infraestructura_electrica": 1,
+    "colapso_estructural": 1
   },
   "ranking_estados": [
     {
       "estado": "Zulia",
-      "total": 4,
+      "total": 5,
       "confirmados": 2
     },
     {
@@ -41,6 +42,11 @@
       "estado": "Lara",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Trujillo",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -63,17 +69,21 @@
     "Zulia": {
       "inundacion": 1,
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "colapso_estructural": 1
+    },
+    "Trujillo": {
+      "inundacion": 1
     }
   },
   "por_severidad": {
-    "sin_clasificar": 9,
+    "sin_clasificar": 11,
     "alto": 1,
     "critico": 1
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
-      "2026-07": 3
+      "2026-07": 4
     },
     "deslizamiento": {
       "2026-07": 4
@@ -82,6 +92,9 @@
       "2026-07": 3
     },
     "infraestructura_electrica": {
+      "2026-07": 1
+    },
+    "colapso_estructural": {
       "2026-07": 1
     }
   }

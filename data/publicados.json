@@ -116,5 +116,17 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
     "fecha_evento_temprana": "2026-07-27T13:45:56+00:00"
+  },
+  "colapso_estructural::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
+    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00"
+  },
+  "inundacion::Trujillo::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
+    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
   }
 }

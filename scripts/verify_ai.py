@@ -518,6 +518,23 @@ def verificar_evento_con_ia(evento):
             municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
                 respuesta, municipios_validos, parroquias_validos
             )
+            texto_fuentes_norm = _normalizar(
+                " ".join(m["texto"] for g in candidatos for m in g)
+            )
+            if municipio_ia and _normalizar(municipio_ia) not in texto_fuentes_norm:
+                print(
+                    f"[WARN] Groq propuso municipio '{municipio_ia}' pero ese nombre no "
+                    f"aparece textualmente en las fuentes; se descarta para evitar una "
+                    f"ubicación inventada."
+                )
+                municipio_ia = None
+            if parroquia_ia and _normalizar(parroquia_ia) not in texto_fuentes_norm:
+                print(
+                    f"[WARN] Groq propuso parroquia '{parroquia_ia}' pero ese nombre no "
+                    f"aparece textualmente en las fuentes; se descarta para evitar una "
+                    f"ubicación inventada."
+                )
+                parroquia_ia = None
             if evento.get("municipio") is None and municipio_ia:
                 evento["municipio"] = municipio_ia
             if evento.get("parroquia") is None and parroquia_ia:
