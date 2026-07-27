@@ -1,23 +1,23 @@
 {
-  "actualizado": "2026-07-26T21:46:35.031925+00:00",
+  "actualizado": "2026-07-27T00:38:21.617017+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-26T19:55:43+00:00"
+    "hasta": "2026-07-27T00:15:18+00:00"
   },
-  "total_eventos": 5,
+  "total_eventos": 6,
   "por_tipo": {
     "inundacion": 2,
-    "deslizamiento": 2,
+    "deslizamiento": 3,
     "tormenta_electrica": 1
   },
   "ranking_estados": [
     {
-      "estado": "Distrito Capital",
-      "total": 1,
-      "confirmados": 1
+      "estado": "Barinas",
+      "total": 2,
+      "confirmados": 2
     },
     {
-      "estado": "Barinas",
+      "estado": "Distrito Capital",
       "total": 1,
       "confirmados": 1
     },
@@ -42,7 +42,7 @@
       "inundacion": 1
     },
     "Barinas": {
-      "deslizamiento": 1
+      "deslizamiento": 2
     },
     "Portuguesa": {
       "deslizamiento": 1
@@ -55,7 +55,7 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 4,
+    "sin_clasificar": 5,
     "alto": 1
   },
   "serie_mensual_por_tipo": {
@@ -63,7 +63,7 @@
       "2026-07": 2
     },
     "deslizamiento": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "tormenta_electrica": {
       "2026-07": 1
