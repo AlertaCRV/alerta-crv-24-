@@ -8,8 +8,19 @@ ESTADO_PATH = os.path.join(BASE_DIR, "data", "publicados.json")
 DIAS_RETENCION = 3
 
 
+def _fecha_dia_dedup(evento):
+    """El dia calendario usado para la clave de deduplicacion se ancla a la
+    fuente MAS TEMPRANA del evento (fecha_evento_temprana), no a la mas
+    reciente (fecha_evento) -- una cobertura continua de varios dias sobre
+    el mismo hecho (ej. una via bloqueada por un deslizamiento) hace que
+    fecha_evento avance con cada articulo de seguimiento, y si cruza la
+    medianoche UTC el evento se trataba, por error, como uno nuevo."""
+    fecha = evento.get("fecha_evento_temprana", evento["fecha_evento"])
+    return dateparser.isoparse(fecha).date().isoformat()
+
+
 def _clave_evento(evento):
-    fecha_dia = dateparser.isoparse(evento["fecha_evento"]).date().isoformat()
+    fecha_dia = _fecha_dia_dedup(evento)
     clave = f"{evento['tipo']}::{evento['ubicacion']}::{fecha_dia}"
     if evento["tipo"] == "sismo" and evento.get("magnitud") is not None:
         clave += f"::mag{evento['magnitud']}"
@@ -67,7 +78,7 @@ def filtrar_nuevos(eventos, publicados):
     mencion cruzada explicita de estados) no genera una alerta duplicada."""
     nuevos = []
     for evento in eventos:
-        fecha_dia = dateparser.isoparse(evento["fecha_evento"]).date().isoformat()
+        fecha_dia = _fecha_dia_dedup(evento)
         if _mismo_sismo_ya_publicado(evento, publicados, fecha_dia):
             continue
         clave = _clave_evento(evento)

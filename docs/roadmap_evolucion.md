@@ -702,3 +702,36 @@ también reflejen la ubicación corregida. El informe narrativo de
 deslizamientos de julio no necesitó corrección — no afirmaba el
 municipio/parroquia incorrectos, solo mencionaba "Barinas" de forma
 genérica.
+
+---
+
+## Bug encontrado: republicación del mismo evento al cruzar la medianoche (26/27-07-2026)
+
+Se reportó una segunda alerta sobre el mismo deslizamiento en la
+carretera Barinas-Mérida (el mismo del bug anterior), pocas horas después
+de la primera.
+
+**Causa**: `state.py` deduplica eventos con la clave
+`tipo::ubicacion::dia`, usando el día calendario de `evento["fecha_evento"]`
+— que es la fecha de la fuente **más reciente** del grupo (calculado en
+`verify_ai.py`). Una cobertura continua de varios días sobre el mismo
+hecho (una vía bloqueada, en este caso) hace que esa fecha avance con
+cada artículo de seguimiento; en cuanto cruzó la medianoche UTC (de 26 a
+27 de julio), la clave de deduplicación cambió de día y el sistema lo
+trató como un evento nuevo, aunque las fuentes originales seguían dentro
+de la ventana de búsqueda de 12 horas.
+
+**Corrección**: se agrega `fecha_evento_temprana` (la fuente **más
+temprana** del grupo) en `verify_ai.py`, y `state.py` ahora ancla el día
+de la clave de deduplicación a esa fecha en vez de a la más reciente —
+se mantiene estable mientras la fuente original del hecho siga dentro de
+la ventana de búsqueda, sin importar cuántos artículos de seguimiento
+aparezcan después. `fecha_evento` (la más reciente) se sigue usando para
+mostrar "🕒 Hecho reportado" en el texto de la alerta, sin cambios ahí.
+
+**Corregido retroactivamente**: se eliminó la alerta duplicada más vieja
+de `docs/data/noticias.json` y `data/historico_eventos.jsonl` (se
+conservó la más reciente, que además esta vez sí detectó correctamente
+"Municipio Bolívar"), y se corrigió manualmente el conteo del informe
+narrativo de deslizamientos de julio (`total_eventos` de 3 a 2 — estaba
+contando el mismo hecho dos veces).
