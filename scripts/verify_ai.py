@@ -311,6 +311,7 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     orden_severidad = ["critico", "alto", "medio", "bajo"]
     severidad_final = next((s for s in orden_severidad if s in severidades), "sin_clasificar")
     fecha_mas_reciente = max(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
+    fecha_mas_temprana = min(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 
     resultado = {
         "tipo": evento["tipo"],
@@ -326,6 +327,15 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
             for m in miembros_aprobados
         ],
         "fecha_evento": fecha_mas_reciente,
+        # Se usa para el dia calendario de la clave de deduplicacion en
+        # state.py -- "fecha_evento" (la fuente MAS reciente) avanza cada
+        # vez que aparece un articulo de seguimiento, y una cobertura
+        # continua de varios dias sobre el mismo hecho (ej. una via
+        # bloqueada por un deslizamiento) puede cruzar la medianoche UTC y
+        # hacer que el sistema lo trate como un evento nuevo. La fuente MAS
+        # TEMPRANA se mantiene estable mientras siga dentro de la ventana de
+        # busqueda, y ancla la deduplicacion al dia real del hecho.
+        "fecha_evento_temprana": fecha_mas_temprana,
         "fecha_deteccion": datetime.now(timezone.utc).isoformat(),
         "estado_verificacion": "PASADO_POR_FALLA_TECNICA" if error_sistema else "APROBADO_IA",
         # Clave "privada" (prefijo "_"): texto completo de cada fuente, para
