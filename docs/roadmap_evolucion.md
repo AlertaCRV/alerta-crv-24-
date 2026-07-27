@@ -1231,3 +1231,56 @@ Validado con `python3 scripts/validar_configs.py`, con el caso real y de
 control, y con regresión contra `data/historico_fuentes_texto.jsonl`
 completo (ningún otro caso legítimo con parroquia explícita, como
 "Parroquia Altamira, Municipio Bolívar, Barinas", se vio afectado).
+
+---
+
+## Revisión general de alertas activas + resumen de medidas preventivas (27-07-2026)
+
+A pedido del usuario, se revisaron todas las alertas publicadas en `main`
+buscando otros errores. Se encontró una alerta duplicada: "Inundación en
+Parroquia Antimano, Distrito Capital" aparecía dos veces (26/07, 11:46
+a.m. y 4:04 p.m.), con datos distintos entre sí (una sin municipio y
+severidad "bajo", otra con municipio "Libertador" y severidad "sin
+clasificar") — ambas del mismo evento real de lluvias en Caracas. Se
+confirmó que **no es un bug activo hoy**: ambas entradas son anteriores
+a la fusión del fix de ventana de 36 horas para deduplicar entre corridas
+(PR #56, fusionado 27/07 15:41 UTC) — datos residuales de antes de esa
+protección, nunca reprocesados. Se eliminó la entrada más antigua e
+incompleta de `docs/data/noticias.json`, dejando la más completa
+(con municipio correcto).
+
+### Resumen de medidas preventivas contra esta clase de errores (municipio/parroquia/severidad incorrectos)
+
+En esta sesión se identificaron y corrigieron, de raíz, los siguientes
+mecanismos que causaban ubicación o severidad incorrecta:
+
+1. **Jerarquía real INE** (`config/ubicaciones_detalle.json`): antes no
+   existía relación municipio→parroquia; ahora se usa el archivo oficial
+   de códigos del INE, y `classify.py` solo acepta una parroquia si
+   realmente pertenece al municipio ya determinado.
+2. **Grounding de la IA**: cuando el regex no puede determinar
+   municipio/parroquia y se le pide ayuda a la IA (Groq), su respuesta
+   solo se acepta si el nombre propuesto aparece **textualmente** en las
+   fuentes — nunca se confía en que el modelo obedezca la instrucción de
+   responder `null` sin verificarlo.
+3. **Texto completo del artículo**: `fetch_rss.py` ahora descarga la
+   página del artículo cuando el resumen del RSS viene truncado, en vez
+   de clasificar con un fragmento que puede omitir la ubicación exacta o
+   los detalles de gravedad (heridos, muertes).
+4. **Ventana de proximidad entre estados repetidos**: el recorte de
+   ventana para artículos multiestado ya no corta contenido relevante
+   (p.ej. una palabra de severidad) cuando el "otro estado" detectado es
+   en realidad una repetición del mismo estado (p.ej. el nombre de un
+   medio local).
+5. **Parroquia homónima al municipio**: ya no se infiere una parroquia
+   solo porque su nombre coincide con el del municipio (o su alias) ya
+   conocido — se exige mención explícita ("parroquia X") para ese caso
+   específico, dado lo común que es este patrón de nombres en Venezuela.
+
+Estas cinco correcciones atacan causas de raíz distintas pero
+relacionadas (todas dentro del pipeline de detección de
+ubicación/severidad), no parches puntuales para casos individuales — se
+espera que prevengan la aparición de la misma clase de error en textos
+futuros con estructura similar, aunque no eliminan por completo la
+posibilidad de error dado el enfoque heurístico (no hay comprensión
+semántica real del texto, solo patrones y proximidad de palabras).
