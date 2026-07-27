@@ -376,10 +376,23 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
     Si el municipio no se conoce, solo acepta una coincidencia si el nombre
     es unico en todo el pais (un solo estado, y dentro de ese estado un solo
     municipio) -- en cuyo caso tambien se infiere el municipio. Devuelve
-    (parroquia, municipio_inferido_o_None)."""
+    (parroquia, municipio_inferido_o_None).
+
+    Se excluye como evidencia una parroquia cuyo nombre coincide con el
+    nombre o alias del propio municipio ya determinado -- de lo contrario,
+    la misma palabra que identifico el municipio (p.ej. "Guajira" como
+    alias de "Indigena Bolivariano Guajira") se reutilizaria como si fuera
+    evidencia de una parroquia homonima dentro de ese municipio, aunque el
+    texto nunca diga "parroquia Guajira" de forma explicita."""
     if municipio is not None:
+        info_municipio = detalle_estado.get("municipios", {}).get(municipio, {})
+        nombres_municipio = {_normalizar(municipio)}
+        if info_municipio.get("alias"):
+            nombres_municipio.add(_normalizar(info_municipio["alias"]))
         for normalizado, original in _parroquias_de(detalle_estado, municipio).items():
             if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
+                continue
+            if normalizado in nombres_municipio:
                 continue
             if _contiene_palabra_clave(texto_norm, normalizado):
                 return original, None

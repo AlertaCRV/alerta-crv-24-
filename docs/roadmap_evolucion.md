@@ -1182,3 +1182,52 @@ reportado por el usuario (texto completo obtenido manualmente de la
 página del artículo) y con regresión contra
 `data/historico_fuentes_texto.jsonl` (mismo número de divisiones
 multiestado que antes del cambio en `_ventana_cerca`, sin regresiones).
+
+---
+
+## Bug: parroquia inventada cuando coincide con el nombre del municipio (27-07-2026)
+
+El usuario preguntó de dónde salía "Parroquia Guajira" en la alerta de
+tormenta eléctrica, ya que ninguna fuente menciona explícitamente
+"parroquia Guajira" (solo dicen "municipio Guajira").
+
+**Causa raíz**: en Venezuela es muy común que la parroquia "capital" de un
+municipio comparta el mismo nombre que el municipio (o, en este caso, el
+alias corto del municipio: "Guajira" es alias de "Indígena Bolivariano
+Guajira", y ese municipio tiene una parroquia también llamada "Guajira").
+`_buscar_parroquia_directa()` en `classify.py`, al buscar el nombre de una
+parroquia mencionado directamente en el texto (sin la palabra
+"parroquia" delante) dentro de las parroquias del municipio ya conocido,
+no excluía el caso en que el nombre de la parroquia coincidiera con el
+nombre/alias del propio municipio — así que la misma palabra que ya se
+había usado para identificar el municipio ("Guajira") se reutilizaba
+como si fuera evidencia independiente de esa parroquia específica, sin
+que el texto lo dijera en realidad.
+
+Se confirmó que este patrón (parroquia homónima al municipio) es muy
+extendido: aparece en Barinas, Aragua, Táchira, Falcón, Trujillo, Zulia,
+Miranda, Monagas, Yaracuy y otros estados — decenas de municipios donde
+la "parroquia capital" lleva el mismo nombre. La alerta ya publicada
+"Inundación en Parroquia Bocono, Municipio Bocono, Trujillo" tenía el
+mismo problema: la fuente solo dice "municipios Boconó y Vicente Campo
+Elías", nunca "parroquia Boconó".
+
+**Corrección** (`scripts/classify.py`, `_buscar_parroquia_directa`): al
+buscar una parroquia por coincidencia directa de nombre (sin la palabra
+"parroquia" delante) dentro de las parroquias del municipio ya conocido,
+ahora se excluye cualquier parroquia cuyo nombre normalizado coincida con
+el nombre canónico o el alias del propio municipio. La detección
+**explícita** ("parroquia X" con la palabra delante) no se ve afectada —
+sigue aceptando la parroquia homónima si el texto realmente la nombra así
+(se probó con "parroquia Guajira, municipio Indígena Bolivariano
+Guajira" como caso de control).
+
+**Corrección retroactiva**: se quitó la parroquia inferida sin base
+("Guajira" y "Bocono" respectivamente) de las dos alertas ya publicadas
+afectadas, dejando el municipio (que sí está bien respaldado) y
+`parroquia: null`, y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py`, con el caso real y de
+control, y con regresión contra `data/historico_fuentes_texto.jsonl`
+completo (ningún otro caso legítimo con parroquia explícita, como
+"Parroquia Altamira, Municipio Bolívar, Barinas", se vio afectado).
