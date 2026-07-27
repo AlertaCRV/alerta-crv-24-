@@ -1,5 +1,107 @@
 [
   {
+    "titulo": "Inundación en Lara",
+    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 26/07/2026, 8:41 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/",
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/",
+        "fecha": "2026-07-27T00:41:24+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T00:41:24+00:00",
+    "fecha_evento_temprana": "2026-07-27T00:41:24+00:00",
+    "fecha_deteccion": "2026-07-27T12:40:16.456994+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Zulia",
+    "texto": "📌 Inundación en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 8:26 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
+    "tipo": "inundacion",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
+        "fecha": "2026-07-27T12:26:20+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T12:26:20+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00",
+    "fecha_deteccion": "2026-07-27T12:40:19.835403+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Tormenta eléctrica en Municipio Maracaibo, Zulia",
+    "texto": "📌 Tormenta eléctrica en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 27/07/2026, 7:52 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/\n  • La Manana (Falcon): https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/",
+    "tipo": "tormenta_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/",
+        "fecha": "2026-07-27T10:35:10+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/",
+        "fecha": "2026-07-27T11:52:51+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T11:52:51+00:00",
+    "fecha_evento_temprana": "2026-07-27T10:35:10+00:00",
+    "fecha_deteccion": "2026-07-27T12:40:23.203107+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altamira, Municipio Bolívar, Barinas\n🕒 Hecho reportado: 27/07/2026, 12:00 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Bolívar",
+    "parroquia": "Altamira",
+    "severidad": "sin_clasificar",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/",
+        "fecha": "2026-07-27T04:00:00+00:00"
+      },
+      {
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
+        "fecha": "2026-07-27T03:02:28+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T04:00:00+00:00",
+    "fecha_evento_temprana": "2026-07-27T03:02:28+00:00",
+    "fecha_deteccion": "2026-07-27T12:40:30.082988+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Deslizamiento/Derrumbe en Municipio Bolívar, Barinas",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Bolívar, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Barinas\n🕒 Hecho reportado: 26/07/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 8:38 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
     "tipo": "deslizamiento",

@@ -1,16 +1,31 @@
 {
-  "actualizado": "2026-07-27T03:14:52.304653+00:00",
+  "actualizado": "2026-07-27T12:40:36.030438+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-27T00:15:18+00:00"
+    "hasta": "2026-07-27T12:26:20+00:00"
   },
-  "total_eventos": 5,
+  "total_eventos": 9,
   "por_tipo": {
-    "inundacion": 2,
-    "deslizamiento": 2,
-    "tormenta_electrica": 1
+    "inundacion": 4,
+    "deslizamiento": 3,
+    "tormenta_electrica": 2
   },
   "ranking_estados": [
+    {
+      "estado": "Lara",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
+      "estado": "Barinas",
+      "total": 2,
+      "confirmados": 1
+    },
+    {
+      "estado": "Zulia",
+      "total": 2,
+      "confirmados": 0
+    },
     {
       "estado": "Distrito Capital",
       "total": 1,
@@ -25,16 +40,6 @@
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "Lara",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Barinas",
-      "total": 1,
-      "confirmados": 1
     }
   ],
   "cruce_estado_tipo": {
@@ -48,25 +53,29 @@
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 1
+      "inundacion": 2
     },
     "Barinas": {
-      "deslizamiento": 1
+      "deslizamiento": 2
+    },
+    "Zulia": {
+      "inundacion": 1,
+      "tormenta_electrica": 1
     }
   },
   "por_severidad": {
-    "sin_clasificar": 4,
+    "sin_clasificar": 8,
     "alto": 1
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
-      "2026-07": 2
+      "2026-07": 4
     },
     "deslizamiento": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "tormenta_electrica": {
-      "2026-07": 1
+      "2026-07": 2
     }
   }
 }

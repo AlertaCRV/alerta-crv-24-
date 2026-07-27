@@ -3,19 +3,23 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-07-26T23:42:46.277587+00:00",
-  "actualizado_hasta": "2026-07-26T20:05:23.443211+00:00",
-  "total_eventos": 5,
+  "generado": "2026-07-27T12:40:40.552518+00:00",
+  "actualizado_hasta": "2026-07-27T12:40:30.082988+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 5
+    "actual": 9
   },
-  "narrativa": "En el período de 2026-07, se registraron 5 eventos de emergencia, en comparación con el período anterior (2026-06) en el que no se registraron eventos (Noticia al Dia). Uno de los eventos reportados fue un deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, el domingo 26 de julio (Diario La Nacion, El Impulso). Además, se informaron inundaciones y deslizamientos de tierra en varios puntos de Caracas y La Guaira debido a lluvias torrenciales, afectando sectores como Carapita en la parroquia Antímano (El Carabobeno, El Impulso, El Luchador, El Siglo, La Prensa de Lara). También se reportó la muerte de una niña ahogada tras la crecida súbita del río La Miel en el estado Lara (Noticia al Dia). Otros eventos incluyeron un colapso parcial en la iglesia San Fernando Rey de Ospino debido a filtraciones y humedad (Portuguesa Reporta), y nueve heridos por el impacto de un rayo en el aeropuerto de Valencia, estado Carabobo (Turimiquire).",
+  "narrativa": "En el período de 2026-07, se registraron 9 eventos de emergencia en Venezuela, en comparación con 0 eventos en el período anterior (2026-06). Uno de los eventos más significativos fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, municipio Bolívar, Barinas, el domingo 26 de julio (Diario La Nacion, Diario La Nacion). Las intensas lluvias recientes causaron la caída de material rocoso y vegetación, obstruyendo el paso vehicular en la local 2 (Diario La Nacion). Además, se reportaron inundaciones y deslizamientos de tierra en varios puntos de Caracas y La Guaira, como en la zona de Carapita, en la parroquia Antímano, donde el caudal arrastró motocicletas y dejó diversas afectaciones a los vecinos de la zona (El Carabobeno, El Impulso, El Luchador, El Siglo, La Prensa de Lara). En el estado Zulia, se registraron inundaciones y deslizamientos de tierra en Maracaibo, donde una intensa tormenta eléctrica con lluvias de moderadas a fuertes causó daños en la ciudad (La Manana, La Patilla). También se reportó la muerte de una niña por la crecida de un río en Lara, específicamente en el municipio Simón Planas, donde la menor de edad perdió la vida por inmersión tras ser arrastrada por una crecida súbita del río La Miel (El Pitazo, Noticia al Dia). Otros eventos reportados incluyeron el colapso parcial de una iglesia en el municipio Ospino del estado Portuguesa, debido a filtraciones y humedad acumulada durante años (Portuguesa Reporta), y el cierre de la vía Barinas-Mérida tras derrumbes, donde los organismos de atención trabajaron para despejar el tramo de la Local 001 y restablecer el paso vehicular en el menor tiempo posible (Primicia, Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/"
     },
     {
       "nombre": "El Carabobeno",
@@ -26,20 +30,32 @@
       "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/"
     },
     {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/"
-    },
-    {
       "nombre": "El Luchador (Bolivar)",
       "link": "https://elluchador.info/?p=316662"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/"
     },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/"
     },
     {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/"
+    },
+    {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -52,6 +68,14 @@
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino/?utm_source=rss&utm_medium=rss&utm_campaign=filtraciones-y-humedad-generan-colapso-parcial-en-iglesia-san-fernando-rey-de-ospino"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html"
     },
     {
       "nombre": "Turimiquire (Sucre)",
