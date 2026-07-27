@@ -810,3 +810,48 @@ Probado: un colapso/explosión real (con heridos, sin mención de
 demolición programada) se sigue detectando con normalidad; la misma
 redacción en contexto de demolición controlada anunciada ya no se
 clasifica como emergencia.
+
+---
+
+## Ventana de 36 horas para correlacionar el mismo evento entre corridas (27-07-2026)
+
+Se reportó un tercer patrón de duplicación, distinto a los dos anteriores
+(Barinas, La Guaira): dos medios reportaron **la misma noticia real** (una
+niña ahogada por la crecida del río La Miel en Lara) con **más de 6 horas
+de diferencia** entre sí (Noticia al Día, 26/07 18:07; El Pitazo, 27/07
+00:41). A diferencia del caso Barinas, estos dos artículos nunca se
+agruparon juntos en la misma corrida (`agrupar_y_verificar` en
+`verify.py`) — para cuando salió el segundo, el primero ya había quedado
+fuera de la ventana de búsqueda de 12 horas (`ventana_horas_fuentes`), así
+que cada uno generó su propio evento independiente, con su propia clave de
+deduplicación (día 26 vs. día 27).
+
+**Corrección**: se agrega `_resolver_clave()` en `state.py` — antes de
+generar una clave nueva, revisa si ya existe un evento publicado del
+**mismo tipo + misma ubicación** cuya fuente más temprana esté dentro de
+una ventana de **36 horas**; si existe, reutiliza esa clave (se trata como
+el mismo evento, no uno nuevo). `marcar_publicados()` ahora también
+guarda `fecha_evento_temprana` en `data/publicados.json`, necesaria para
+esta comparación.
+
+**Excepciones explícitas, a pedido**: `sismo` (tiene su propio mecanismo
+de correlación cruzada por magnitud/ubicación,
+`_mismo_sismo_ya_publicado`) y **`orden_publico`** — durante disturbios,
+el mismo tipo+ubicación puede repetirse genuinamente día a día (una
+protesta nueva cada día en el mismo lugar no es "el mismo evento" solo
+porque coincide tipo+ubicación), así que aplicar la ventana de 36h ahí
+ocultaría eventos reales distintos.
+
+Probado: dos reportes de inundación en Lara con 6.5h de diferencia ahora
+se tratan como el mismo evento; dos reportes de `orden_publico` en el
+mismo estado con 24h de diferencia siguen tratándose como eventos
+distintos (comportamiento intencional).
+
+**Corregido retroactivamente**: se eliminó la alerta duplicada
+("Inundación en Lara", sin municipio/parroquia detectados) de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl` y la clave sobrante en
+`data/publicados.json` — se conservó la versión con más detalle
+("Parroquia Gustavo Vegas León, Municipio Simón Planas"). El informe
+narrativo de inundaciones de julio no necesitó corrección, se había
+generado antes de que apareciera el duplicado.

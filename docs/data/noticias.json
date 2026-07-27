@@ -1,28 +1,5 @@
 [
   {
-    "titulo": "Inundación en Lara",
-    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 26/07/2026, 8:41 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/",
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/",
-        "fecha": "2026-07-27T00:41:24+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T00:41:24+00:00",
-    "fecha_evento_temprana": "2026-07-27T00:41:24+00:00",
-    "fecha_deteccion": "2026-07-27T12:40:16.456994+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
     "titulo": "Inundación en Zulia",
     "texto": "📌 Inundación en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 8:26 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
     "tipo": "inundacion",
