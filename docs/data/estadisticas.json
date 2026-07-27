@@ -1,21 +1,16 @@
 {
-  "actualizado": "2026-07-27T12:40:36.030438+00:00",
+  "actualizado": "2026-07-27T15:40:13.549219+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
     "hasta": "2026-07-27T12:26:20+00:00"
   },
-  "total_eventos": 9,
+  "total_eventos": 8,
   "por_tipo": {
-    "inundacion": 4,
+    "inundacion": 3,
     "deslizamiento": 3,
     "tormenta_electrica": 2
   },
   "ranking_estados": [
-    {
-      "estado": "Lara",
-      "total": 2,
-      "confirmados": 0
-    },
     {
       "estado": "Barinas",
       "total": 2,
@@ -40,6 +35,11 @@
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Lara",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -53,7 +53,7 @@
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 2
+      "inundacion": 1
     },
     "Barinas": {
       "deslizamiento": 2
@@ -64,12 +64,12 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 8,
+    "sin_clasificar": 7,
     "alto": 1
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
-      "2026-07": 4
+      "2026-07": 3
     },
     "deslizamiento": {
       "2026-07": 3
