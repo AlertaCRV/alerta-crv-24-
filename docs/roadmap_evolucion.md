@@ -855,3 +855,34 @@ distintos (comportamiento intencional).
 ("Parroquia Gustavo Vegas León, Municipio Simón Planas"). El informe
 narrativo de inundaciones de julio no necesitó corrección, se había
 generado antes de que apareciera el duplicado.
+
+---
+
+## Bug de severidad: "perdió la vida" no disparaba severidad crítica (27-07-2026)
+
+Se reportó la alerta "Inundación en Parroquia Gustavo Vegas León..." con
+severidad "sin clasificar", pese a que el texto real de la fuente decía
+*"una menor de edad perdió la vida por inmersión tras ser arrastrada por
+una crecida súbita del río La Miel"* — una muerte real.
+
+**Causa**: `config/keywords.yaml` solo tenía "fallecido(s)", "muerto(s)" y
+"víctimas fatales" como palabras clave de severidad "crítico" — ninguna
+cubre el eufemismo periodístico "perdió la vida", ni las formas verbales
+"murió"/"falleció" (solo estaban las formas de participio/sustantivo).
+
+**Corrección**: se agregan "falleció"/"fallecieron", "murió", "perdió la
+vida"/"perdieron la vida" a la lista de severidad crítico.
+Deliberadamente **no** se agregó el verbo "muere" a secas (como en el
+título "Niña muere ahogada...") por riesgo de falsos positivos con usos
+metafóricos ("el optimismo no muere", etc.) — el cuerpo del texto suele
+tener una frase más explícita ("perdió la vida", "falleció") que sí
+alcanza para clasificar correctamente sin necesidad de esa palabra
+suelta.
+
+Probado: el texto real ahora clasifica como "crítico"; un caso con
+negación ("no falleció nadie...") sigue sin disparar severidad crítica.
+
+**Corregido retroactivamente**: se actualizó la severidad de la alerta ya
+publicada a "crítico" en `docs/data/noticias.json` (regenerando su texto),
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
