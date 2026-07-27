@@ -1054,3 +1054,24 @@ cobertura por la interacción entre ambos mecanismos.
 Validado con `python3 scripts/validar_configs.py` (OK) y contra los
 casos de regresión de detección de ubicación ya probados en sesiones
 anteriores.
+
+---
+
+## Corrección retroactiva: alerta previa a la reconstrucción del INE (27-07-2026)
+
+El usuario reportó que seguía viendo "Parroquia Guajira, Municipio
+Cabimas" publicado en el sitio, a pesar de la corrección de la jerarquía
+municipio→parroquia (PR #61, fusionado a las 16:49 UTC). Al revisar la
+alerta, se confirmó que fue detectada a las 16:02 UTC — **antes** de que
+el fix llegara a `main` — por lo que quedó publicada con el dato
+incorrecto generado por el código anterior. No es una recurrencia del
+bug, sino un dato ya publicado que no se había corregido de forma
+retroactiva.
+
+**Corrección**: se actualizó manualmente `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` para reflejar el municipio correcto
+("Indígena Bolivariano Guajira" en vez de "Cabimas"), y se regeneró
+`docs/data/estadisticas.json` con `python3 scripts/build_dashboard.py`.
+`data/historico_fuentes_texto.jsonl` no requería cambio (no guarda
+municipio). No se encontraron informes narrativos que mencionaran esta
+combinación incorrecta.
