@@ -30,10 +30,26 @@ LISTA_NEGRA_POR_ESTADO = {
 _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     "sismo": ["cerco epidemiologico", "epidemiologico", "brote de enfermedad",
               "atenciones medicas", "salud integral comunitaria"],
+    # Caso anticipado (27-07-2026): demolicion controlada de estructuras
+    # danadas por el terremoto en Playa Grande/Caraballeda, La Guaira --
+    # coberturas de esa demolicion programada mencionaran "colapso"/
+    # "estructuras afectadas"/"explosivos" en el sentido de la demolicion en
+    # si, no de una emergencia nueva.
+    "colapso_estructural": ["demolicion controlada", "demolicion programada",
+                             "derribo controlado", "derribo programado",
+                             "voladura controlada"],
+    "explosion": ["demolicion controlada", "demolicion programada",
+                  "derribo controlado", "derribo programado",
+                  "voladura controlada", "detonacion controlada",
+                  "detonacion programada"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
               "sacudio", "remezon"],
+    "colapso_estructural": ["colapso repentino", "colapso inesperado",
+                            "heridos", "fallecidos", "atrapados bajo"],
+    "explosion": ["explosion accidental", "explosion no controlada",
+                  "explosion prematura", "heridos", "fallecidos"],
 }
 
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad

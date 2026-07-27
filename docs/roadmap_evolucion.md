@@ -782,3 +782,31 @@ antes de terminar de verificar todos los eventos de la corrida.
 pública de julio se eliminó por completo (era el único evento de ese
 tipo del mes); el de deslizamientos no necesitó tocarse — se había
 generado antes de que apareciera la alerta de La Guaira.
+
+---
+
+## Prevención anticipada: demolición controlada en Playa Grande/Caraballeda (27-07-2026)
+
+Se avisó, con varios días de anticipación, de una demolición controlada
+programada de estructuras dañadas por el terremoto en Playa Grande y
+Caraballeda (La Guaira) entre el 27 y el 31 de julio — con comisiones de
+explosivos, derribo de edificaciones, y cobertura mediática esperable.
+Riesgo identificado: la cobertura de esa demolición programada podía
+calzar con las palabras clave de `explosion` y `colapso_estructural`
+(tipos agregados esta misma sesión) y publicarse como si fuera una
+emergencia nueva, cuando es un evento planificado y anunciado.
+
+**Corrección preventiva** (antes de que ocurra, no reactiva): se
+extendió el mecanismo de "contexto conflictivo" que ya existía solo para
+`sismo` (evita que "cerco epidemiológico" se clasifique como sismo) a los
+tipos `explosion` y `colapso_estructural`. Si el texto menciona
+"demolición controlada/programada", "derribo controlado/programado", o
+"voladura/detonación controlada/programada" — y no hay evidencia fuerte
+de que sea un colapso/explosión real e inesperado ("colapso repentino",
+"explosión accidental", heridos, fallecidos) — el tipo se descarta para
+esa mención.
+
+Probado: un colapso/explosión real (con heridos, sin mención de
+demolición programada) se sigue detectando con normalidad; la misma
+redacción en contexto de demolición controlada anunciada ya no se
+clasifica como emergencia.
