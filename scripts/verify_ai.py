@@ -231,8 +231,17 @@ BLOQUE_UBICACION_DETALLADA_TEMPLATE = (
 
 
 def _listas_ubicacion_valida(estado):
+    """Aplana la jerarquia estado->municipio->parroquias (ver classify.py)
+    en dos listas simples de nombres validos, solo para este prompt de
+    asistencia de IA -- no necesita la relacion municipio/parroquia
+    completa, la deteccion deterministica en classify.py si la respeta."""
     detalle = load_ubicaciones_detalle().get(estado, {})
-    return detalle.get("municipios", []), detalle.get("parroquias", [])
+    municipios = list(detalle.get("municipios", {}).keys())
+    parroquias = [
+        p for info in detalle.get("municipios", {}).values()
+        for p in info.get("parroquias", [])
+    ]
+    return municipios, parroquias
 
 
 def _extraer_municipio_parroquia(respuesta_texto, municipios_validos, parroquias_validos):
