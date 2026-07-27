@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-07-27T02:57:37.432489+00:00",
+  "actualizado_hasta": "2026-07-27T02:57:11.129554+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un evento relacionado con la salud pública en Venezuela. Según Portuguesa Reporta, el paso de las ondas tropicales y la activación de la Zona de Convergencia Intertropical dejaron un notable incremento de virus estacionales y enfermedades en distintas regiones del país (Portuguesa Reporta). Las precipitaciones continuas y la acumulación de humedad generaron un escenario favorable para la propagación de infecciones respiratorias, virales y patologías transmitidas por vectores (Portuguesa Reporta). Este evento es significativo ya que en el período anterior, 2026-06, no se registraron eventos de este tipo, lo que marca una diferencia notable en la comparación entre ambos períodos. En resumen, el período 2026-07 vio un repunte en virus y enfermedades en Venezuela debido a condiciones climáticas favorables para su propagación (Portuguesa Reporta).",
+  "fuentes": [
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/salud/paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=paso-de-las-ondas-tropicales-dejo-un-repunte-de-virus-y-enfermedades-en-venezuela"
+    }
+  ]
+}
