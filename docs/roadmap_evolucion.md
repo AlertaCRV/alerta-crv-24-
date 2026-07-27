@@ -886,3 +886,44 @@ negación ("no falleció nadie...") sigue sin disparar severidad crítica.
 publicada a "crítico" en `docs/data/noticias.json` (regenerando su texto),
 `data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
 `data/publicados.json`.
+
+---
+
+## Garantizar que los informes narrativos nunca omitan eventos con daños/heridos/fallecidos (27-07-2026)
+
+Se reportó que el informe "Todas las categorías" de julio no mencionaba
+la tormenta eléctrica con 9 heridos en el aeropuerto de Valencia
+(Carabobo) — un evento con severidad "alto" que quedó fuera de la
+narrativa entre otros eventos más leves del mismo período. Retomaba el
+pendiente ya anotado el 26/07 sobre "énfasis temático" del prompt.
+
+**Corrección** en `build_informes.py`:
+- Se agrega `SEVERIDADES_QUE_DEBEN_MENCIONARSE = {"alto", "critico"}` — un
+  evento con esa severidad ya significa, por definición de
+  `config/keywords.yaml`, que hubo daños materiales, heridos o víctimas
+  fatales.
+- `_construir_bloque_eventos_obligatorios()` arma una lista explícita de
+  esos eventos (tipo, ubicación, fuente) y la agrega al prompt bajo el
+  encabezado "EVENTOS QUE DEBEN MENCIONARSE EXPLÍCITAMENTE" — no depende
+  de que la IA los note por su cuenta entre el resto de fuentes.
+- `_construir_prompt_fuentes()` ahora prioriza las fuentes de esos eventos
+  graves primero al ordenar, para que no queden fuera del corte de
+  `MAX_FUENTES_POR_INFORME` (40) en períodos con muchos eventos.
+- El `SYSTEM_PROMPT` se actualiza con una regla explícita: mencionar cada
+  evento de esa lista es el criterio más importante de la tarea, sin
+  importar cuántos eventos leves haya.
+- Se agrega un chequeo de auditoría (no bloqueante) después de generar la
+  narrativa: si el nombre de la fuente de un evento obligatorio no
+  aparece en el texto generado, se deja constancia en el log
+  (`[WARN] ... la narrativa no mencionó estos eventos...`) para revisión,
+  sin fallar la generación — reintentar no garantiza mejor resultado, y
+  un informe con el resto del contenido sigue siendo mejor que ninguno.
+
+Probado con un caso que reproduce el problema real (tormenta eléctrica
+con heridos + inundación leve): el evento grave queda identificado como
+obligatorio, priorizado en el orden de fuentes, y el chequeo de auditoría
+detecta correctamente cuando una narrativa simulada lo omite.
+
+No se regeneró manualmente el informe "general" de julio ya publicado —
+al ser el período en curso, se regenera solo (como máximo 1 vez al día)
+en la próxima corrida del monitor, y ya incorporará esta corrección.
