@@ -1,5 +1,37 @@
 [
   {
+    "titulo": "Deslizamiento/Derrumbe en Municipio Bolívar, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Bolívar, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Barinas\n🕒 Hecho reportado: 26/07/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 8:38 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Bolívar",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.75,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/",
+        "fecha": "2026-07-26T18:48:23+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
+        "fecha": "2026-07-26T19:45:58+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
+        "fecha": "2026-07-27T00:15:18+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T00:15:18+00:00",
+    "fecha_deteccion": "2026-07-27T00:38:04.803969+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
     "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 26/07/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 5 (score 3.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316662\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/\n  • El Carabobeno: https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/\n  • El Siglo (Aragua): https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
     "tipo": "inundacion",
