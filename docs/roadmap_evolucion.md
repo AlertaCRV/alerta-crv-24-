@@ -927,3 +927,64 @@ detecta correctamente cuando una narrativa simulada lo omite.
 No se regeneró manualmente el informe "general" de julio ya publicado —
 al ser el período en curso, se regenera solo (como máximo 1 vez al día)
 en la próxima corrida del monitor, y ya incorporará esta corrección.
+
+---
+
+## Jerarquía real municipio→parroquia con datos oficiales del INE (27-07-2026)
+
+Se reportó la alerta "Tormenta eléctrica en Parroquia Guajira, Municipio
+Cabimas, Zulia" — una combinación que no existe: "Guajira" es una
+parroquia del municipio **"Indígena Bolivariano Guajira"**, no de
+Cabimas.
+
+**Causa raíz**: `config/ubicaciones_detalle.json` guardaba, por estado,
+dos listas planas independientes (`municipios` y `parroquias`) sin
+relación jerárquica entre sí. `classify.py` detectaba municipio y
+parroquia por separado — a veces de fuentes *distintas* dentro del mismo
+evento agrupado — y los combinaba sin verificar que la parroquia
+realmente perteneciera al municipio detectado. Al investigar se encontró
+que esta clase de colisión de nombres (un municipio y una parroquia
+compartiendo nombre) es la norma, no la excepción, en casi todos los
+estados venezolanos.
+
+**Corrección**: el usuario proporcionó el archivo oficial de códigos de
+división político-territorial del INE (formato COD-AB/PCode: estado →
+municipio → parroquia, 1135 filas, 24 estados). Se reconstruyó
+`ubicaciones_detalle.json` con la jerarquía real anidada:
+`{estado: {"municipios": {municipio: {"parroquias": [...], "alias":
+"..."}}}}`. Los 9 alias de nombre corto ya identificados antes
+(Guaicaipuro, Angostura, etc.) se preservaron y coinciden exactamente con
+los nombres oficiales largos del archivo del INE.
+
+`classify.py` se reescribió para respetar la jerarquía:
+- Si el municipio ya se determinó (por regex explícito o por nombre
+  directo), la parroquia solo se acepta si **realmente pertenece a ese
+  municipio** — si el texto menciona una parroquia de otro municipio, se
+  descarta en vez de asumir que el municipio está mal.
+- Si el municipio aún no se conoce, una parroquia mencionada directamente
+  solo se acepta si es **única en todo el país** (un solo estado, y
+  dentro de ese estado un solo municipio) — en cuyo caso también se
+  infiere el municipio correcto a partir de ella.
+- Se descubrió que algunas parroquias se repiten dentro del **mismo**
+  estado bajo municipios distintos (ej. "San José" en Trujilo y Zulia) —
+  el chequeo de unicidad ahora cubre también ese caso, no solo la
+  ambigüedad entre estados distintos.
+
+`verify_ai.py` (`_listas_ubicacion_valida`, usado para que la IA infiera
+ubicación cuando el regex no encuentra nada) se actualizó para aplanar la
+nueva estructura anidada en las dos listas simples que ese prompt
+necesita — no valida la relación municipio/parroquia en ese camino
+(alcance menor, la detección determinista en `classify.py` sí la
+respeta).
+
+Probado contra el caso real reportado (ya no combina Cabimas con
+Guajira) y contra todos los casos de regresión ya validados antes
+(Petare, Guaicaipuro, Angostura, Baruta, "Parroquia Altamira, Municipio
+Bolívar, Barinas") — ninguno se rompió. También se corrió contra el
+histórico completo de fuentes ya publicadas en producción para revisar
+el resultado en volumen, sin encontrar más combinaciones inconsistentes.
+
+**Advertencia honesta**: el archivo del INE no es infalible por sí
+mismo (podría tener errores puntuales en municipios/parroquias poco
+documentados), pero es sustancialmente más confiable que la ausencia
+total de jerarquía que había antes.
