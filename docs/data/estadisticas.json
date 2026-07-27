@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-07-27T21:37:32.028428+00:00",
+  "actualizado": "2026-07-27T22:19:12.207796+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-27T17:18:51+00:00"
+    "hasta": "2026-07-27T21:45:06+00:00"
   },
-  "total_eventos": 13,
+  "total_eventos": 17,
   "por_tipo": {
-    "inundacion": 4,
-    "deslizamiento": 4,
+    "inundacion": 7,
+    "deslizamiento": 5,
     "tormenta_electrica": 3,
     "infraestructura_electrica": 1,
     "colapso_estructural": 1
@@ -15,18 +15,23 @@
   "ranking_estados": [
     {
       "estado": "Zulia",
-      "total": 5,
-      "confirmados": 2
+      "total": 6,
+      "confirmados": 3
     },
     {
       "estado": "Distrito Capital",
-      "total": 2,
+      "total": 3,
       "confirmados": 1
     },
     {
       "estado": "Barinas",
+      "total": 3,
+      "confirmados": 2
+    },
+    {
+      "estado": "Lara",
       "total": 2,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Portuguesa",
@@ -39,11 +44,6 @@
       "confirmados": 0
     },
     {
-      "estado": "Lara",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Trujillo",
       "total": 1,
       "confirmados": 0
@@ -51,7 +51,7 @@
   ],
   "cruce_estado_tipo": {
     "Distrito Capital": {
-      "inundacion": 1,
+      "inundacion": 2,
       "deslizamiento": 1
     },
     "Portuguesa": {
@@ -61,13 +61,13 @@
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 1
+      "inundacion": 2
     },
     "Barinas": {
-      "deslizamiento": 2
+      "deslizamiento": 3
     },
     "Zulia": {
-      "inundacion": 1,
+      "inundacion": 2,
       "tormenta_electrica": 2,
       "infraestructura_electrica": 1,
       "colapso_estructural": 1
@@ -77,16 +77,16 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 10,
+    "sin_clasificar": 14,
     "alto": 1,
     "critico": 2
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
-      "2026-07": 4
+      "2026-07": 7
     },
     "deslizamiento": {
-      "2026-07": 4
+      "2026-07": 5
     },
     "tormenta_electrica": {
       "2026-07": 3

@@ -1,5 +1,112 @@
 [
   {
+    "titulo": "Deslizamiento/Derrumbe en Municipio Barinas, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Barinas, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 4:06 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/\n  • La Patilla: https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
+        "fecha": "2026-07-27T19:35:59+00:00"
+      },
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
+        "fecha": "2026-07-27T20:06:28+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T20:06:28+00:00",
+    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00",
+    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Parroquia Venezuela, Municipio Lagunillas, Zulia",
+    "texto": "📌 Inundación en Parroquia Venezuela, Municipio Lagunillas, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Venezuela, Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 27/07/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 3 (score 1.9)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/\n  • La Prensa de Monagas: https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/",
+    "tipo": "inundacion",
+    "ubicacion": "Zulia",
+    "municipio": "Lagunillas",
+    "parroquia": "Venezuela",
+    "severidad": "sin_clasificar",
+    "score": 1.9,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/",
+        "fecha": "2026-07-27T19:22:14+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/",
+        "fecha": "2026-07-27T14:13:15+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/",
+        "fecha": "2026-07-27T15:43:57+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T19:22:14+00:00",
+    "fecha_evento_temprana": "2026-07-27T14:13:15+00:00",
+    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Lara",
+    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+        "fecha": "2026-07-27T20:53:15+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T20:53:15+00:00",
+    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00",
+    "fecha_deteccion": "2026-07-27T22:18:52.748019+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
+    "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 5:45 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:19 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Antimano",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
+        "fecha": "2026-07-27T21:45:06+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T21:45:06+00:00",
+    "fecha_evento_temprana": "2026-07-27T21:45:06+00:00",
+    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
+    "estado_verificacion": "APROBADO_IA"
+  },
+  {
     "titulo": "Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia",
     "texto": "📌 Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
     "tipo": "colapso_estructural",
