@@ -1,29 +1,30 @@
 {
-  "actualizado": "2026-07-27T15:50:07.535717+00:00",
+  "actualizado": "2026-07-27T16:02:24.841052+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T16:30:21+00:00",
-    "hasta": "2026-07-27T12:26:20+00:00"
+    "hasta": "2026-07-27T15:27:00+00:00"
   },
-  "total_eventos": 8,
+  "total_eventos": 11,
   "por_tipo": {
     "inundacion": 3,
-    "deslizamiento": 3,
-    "tormenta_electrica": 2
+    "deslizamiento": 4,
+    "tormenta_electrica": 3,
+    "infraestructura_electrica": 1
   },
   "ranking_estados": [
     {
-      "estado": "Barinas",
+      "estado": "Zulia",
+      "total": 4,
+      "confirmados": 2
+    },
+    {
+      "estado": "Distrito Capital",
       "total": 2,
       "confirmados": 1
     },
     {
-      "estado": "Zulia",
+      "estado": "Barinas",
       "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Distrito Capital",
-      "total": 1,
       "confirmados": 1
     },
     {
@@ -44,7 +45,8 @@
   ],
   "cruce_estado_tipo": {
     "Distrito Capital": {
-      "inundacion": 1
+      "inundacion": 1,
+      "deslizamiento": 1
     },
     "Portuguesa": {
       "deslizamiento": 1
@@ -60,11 +62,12 @@
     },
     "Zulia": {
       "inundacion": 1,
-      "tormenta_electrica": 1
+      "tormenta_electrica": 2,
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
-    "sin_clasificar": 6,
+    "sin_clasificar": 9,
     "alto": 1,
     "critico": 1
   },
@@ -73,10 +76,13 @@
       "2026-07": 3
     },
     "deslizamiento": {
-      "2026-07": 3
+      "2026-07": 4
     },
     "tormenta_electrica": {
-      "2026-07": 2
+      "2026-07": 3
+    },
+    "infraestructura_electrica": {
+      "2026-07": 1
     }
   }
 }
