@@ -3,19 +3,39 @@
   "tipo": "tormenta_electrica",
   "tipo_label": "Tormenta eléctrica",
   "cerrado": false,
-  "generado": "2026-07-27T00:38:37.024926+00:00",
-  "actualizado_hasta": "2026-07-26T20:05:15.085172+00:00",
-  "total_eventos": 1,
+  "generado": "2026-07-28T03:26:55.423845+00:00",
+  "actualizado_hasta": "2026-07-27T16:02:08.983050+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-07, se registró un evento de tormenta eléctrica, específicamente un impacto de rayo en el Aeropuerto Internacional Arturo Michelena de Valencia, estado Carabobo, el sábado 25 de julio de 2026 (Turimiquire). Este evento resultó en un saldo de 9 heridos confirmados (Turimiquire). Es importante destacar que, en comparación con el período anterior (2026-06), hubo 0 eventos registrados, mientras que en este período se registró 1 evento. La tormenta eléctrica en el aeropuerto de Valencia fue un incidente notable en el mes de julio de 2026. No se reportaron otros eventos de tormentas eléctricas en el período. La comparación con el período anterior muestra un aumento en la ocurrencia de eventos de tormentas eléctricas. El evento en el aeropuerto de Valencia fue el único reportado en el período de 2026-07.",
+  "narrativa": "En el período de 2026-07, se registraron 3 eventos de tormenta eléctrica en Venezuela, en comparación con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue la tormenta eléctrica en Carabobo, específicamente en el Aeropuerto Internacional Arturo Michelena de Valencia, donde un rayo impactó la plataforma y dejó 9 heridos, según informó Turimiquire (Sucre). En el estado Zulia, una intensa tormenta eléctrica con vientos huracanados azotó la noche del domingo 26 de julio, causando estragos en Maracaibo y otras zonas, con inundaciones en casas y cañadas, y suspensiones del servicio eléctrico en varios municipios, incluyendo Guajira, como lo reportaron El Pitazo, El Tiempo (Anzoategui), La Manana (Falcon) y La Patilla. La tormenta eléctrica en el estado Zulia también fue reportada por La Verdad (Zulia), quien informó que el servicio eléctrico en el municipio Guajira permaneció suspendido tras la tormenta.",
   "fuentes": [
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/"
     }
   ]
 }

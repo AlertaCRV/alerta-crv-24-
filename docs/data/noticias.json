@@ -1,6 +1,54 @@
 [
   {
     "titulo": "Deslizamiento/Derrumbe en Municipio Barinas, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 3:35 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 11:25 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
+        "fecha": "2026-07-27T19:35:59+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T19:35:59+00:00",
+    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00",
+    "fecha_deteccion": "2026-07-28T03:25:45.793909+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Barinas::2026-07-27"
+  },
+  {
+    "titulo": "Inundación en Lara",
+    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 11:25 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+        "fecha": "2026-07-27T20:53:15+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T20:53:15+00:00",
+    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00",
+    "fecha_deteccion": "2026-07-28T03:25:52.657438+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Lara::2026-07-27"
+  },
+  {
+    "titulo": "Deslizamiento/Derrumbe en Municipio Barinas, Barinas",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Barinas, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 4:06 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/\n  • La Patilla: https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
     "tipo": "deslizamiento",
     "ubicacion": "Barinas",
