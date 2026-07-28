@@ -1,19 +1,4 @@
 {
-  "sismo::La Guaira::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-25T18:11:36.758052+00:00"
-  },
-  "sismo::Distrito Capital::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-25T17:18:47.189955+00:00"
-  },
-  "sismo::La Guaira::2026-07-25::mag3.1": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-25T18:11:34.814811+00:00"
-  },
   "sismo::La Guaira::2026-07-26::mag3.3": {
     "severidad": "sin_clasificar",
     "confirmado": true,
@@ -123,10 +108,10 @@
     "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
     "fecha_evento_temprana": "2026-07-25T19:07:59+00:00"
   },
-  "infraestructura_electrica::Lara::2026-07-25": {
-    "severidad": "bajo",
+  "orden_publico::Distrito Capital::2026-07-28": {
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-07-25T18:33:16.511124+00:00",
-    "fecha_evento_temprana": "2026-07-25T14:30:00+00:00"
+    "fecha_deteccion": "2026-07-28T19:53:48.019374+00:00",
+    "fecha_evento_temprana": "2026-07-28T18:51:42+00:00"
   }
 }
