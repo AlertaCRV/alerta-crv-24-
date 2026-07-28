@@ -3,16 +3,28 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-07-27T00:38:34.630645+00:00",
-  "actualizado_hasta": "2026-07-26T20:05:23.443211+00:00",
-  "total_eventos": 2,
+  "generado": "2026-07-28T08:02:54.255008+00:00",
+  "actualizado_hasta": "2026-07-28T03:25:52.657438+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 2
+    "actual": 7
   },
-  "narrativa": "En el período de 2026-07, se registraron 2 eventos de inundación en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se reportaron eventos de este tipo. Las lluvias torrenciales causaron inundaciones y deslizamientos en Caracas y La Guaira (El Carabobeno, El Impulso, El Luchador, El Siglo, La Prensa de Lara). En particular, la zona de Carapita, en la parroquia Antímano, fue uno de los puntos más afectados, con el caudal arrastrando motocicletas y dejando diversas afectaciones a los vecinos de la zona (El Carabobeno, El Siglo, La Prensa de Lara). Además, se reportaron deslizamientos de tierra y anegaciones en distintos sectores de Caracas y en la autopista Caracas-La Guaira (El Impulso, El Luchador, La Prensa de Lara). En un evento separado, una niña perdió la vida por inmersión tras ser arrastrada por una crecida súbita del río La Miel en el municipio Simón Planas del estado Lara (Noticia al Dia).",
+  "narrativa": "En el período de 2026-07, se registraron 7 eventos de inundación en Venezuela, en comparación con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos más graves fue la inundación en Lara, catalogada como crítica (La Prensa de Monagas, Noticia al Dia (Zulia)), que resultó en la muerte de una niña que fue arrastrada por la crecida repentina del río La Miel en el estado Lara (La Prensa de Monagas, Noticia al Dia (Zulia)). Las intensas lluvias también causaron deslizamientos y desbordamiento de quebradas en Boconó, estado Trujillo (Diario El Tiempo (Trujillo)). En Caracas y La Guaira, las lluvias torrenciales provocaron inundaciones y deslizamientos de tierra en varios puntos, incluyendo la zona de Carapita en la parroquia Antímano (El Carabobeno, El Impulso (Lara), El Luchador (Bolivar), El Siglo (Aragua), La Prensa de Lara). Además, en el Zulia, las lluvias causaron inundaciones y fallas eléctricas, dejando sin electricidad a gran parte del estado (La Patilla, La Prensa de Lara, La Prensa de Monagas, La Verdad (Zulia)). La onda tropical número 30 también dejó daños en Caracas, provocando el desbordamiento de una quebrada que inundó zonas de las parroquias El Junquito y Antímano (Primicia (Bolivar)).",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/las-intensas-lluvias-causan-deslizamientos-y-desbordamiento-de-quebradas-en-bocono/"
+    },
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/"
@@ -30,12 +42,28 @@
       "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/"
     },
     {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/"
     }
   ]
 }
