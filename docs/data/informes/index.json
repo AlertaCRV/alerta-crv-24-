@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-07",
+    "tipo": "orden_publico",
+    "tipo_label": "Orden público",
+    "cerrado": false,
+    "generado": "2026-07-28T19:54:02.630666+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-07",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
