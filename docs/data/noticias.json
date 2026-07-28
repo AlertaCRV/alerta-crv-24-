@@ -61,29 +61,6 @@
     "estado_verificacion": "APROBADO_IA"
   },
   {
-    "titulo": "Inundación en Lara",
-    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
-        "fecha": "2026-07-27T20:53:15+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T20:53:15+00:00",
-    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00",
-    "fecha_deteccion": "2026-07-27T22:18:52.748019+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
     "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
     "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 5:45 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:19 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
     "tipo": "inundacion",
@@ -440,25 +417,31 @@
   },
   {
     "titulo": "Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara",
-    "texto": "📌 Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n🕒 Hecho reportado: 26/07/2026, 2:07 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/",
+    "texto": "📌 Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
     "tipo": "inundacion",
     "ubicacion": "Lara",
     "municipio": "Simón Planas",
     "parroquia": "Gustavo Vegas León",
     "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
+    "score": 1.1,
+    "confirmado": true,
+    "num_fuentes": 2,
     "fuentes": [
       {
         "nombre": "Noticia al Dia (Zulia)",
         "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/",
         "fecha": "2026-07-26T18:07:32+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+        "fecha": "2026-07-27T20:53:15+00:00"
       }
     ],
-    "fecha_evento": "2026-07-26T18:07:32+00:00",
+    "fecha_evento": "2026-07-27T20:53:15+00:00",
     "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00"
   },
   {
     "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
