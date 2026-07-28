@@ -1446,3 +1446,118 @@ tenga la lista de correos de las filiales:
    `fetch_rss.py`/`fetch_email.py` hoy. El cuerpo de los issues llega con
    HTML crudo (`<br>`, enlaces) del cliente de correo — hay que limpiarlo
    igual que ya hace `_limpiar_texto()` en `fetch_rss.py`.
+
+---
+
+## Auditoría diaria autónoma: tres errores de clasificación (28-07-2026)
+
+Auditoría de rutina (sin que el usuario la pidiera) de todas las alertas
+publicadas en `main` en las últimas ~36 horas, comparando cada una contra
+el texto real de sus fuentes en `data/historico_fuentes_texto.jsonl`. Se
+encontraron y corrigieron tres errores de clasificación, todos con causa
+raíz distinta.
+
+### 1. Severidad ignoraba "lesionados" como sinónimo de "heridos"
+
+La alerta "Deslizamiento/Derrumbe en Municipio Libertador, Distrito
+Capital" quedó con severidad "sin_clasificar" pese a que su única fuente
+("Paso de la Onda Tropical N.º 30 causa anegaciones, derrumbes y
+**lesionados** en Caracas y varios estados") sí reporta heridos.
+
+**Causa raíz**: `config/keywords.yaml` (severidad `alto`) solo tenía
+"heridos", no "lesionados"/"lesionadas"/"lesionado"/"lesionada" — un
+sinónimo de uso muy común en la prensa venezolana. `verify_ai.py` ya
+trataba ambas palabras como equivalentes en sus propios filtros
+deterministas (vialidad, incendio), pero `classify.py`
+(`detectar_severidad`) no.
+
+**Corrección** (`config/keywords.yaml`): se agregaron las cuatro formas de
+"lesionado" a la lista de severidad `alto`.
+
+**Corrección retroactiva**: se actualizó la severidad a "alto" (y se
+regeneró `titulo`/`texto` con `render.redactar_noticia()` para que el
+mensaje publicado sea idéntico al que generaría el pipeline real) en
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`, y se regeneraron las estadísticas.
+
+### 2. "Derrumbe" también significa colapso de pared/muro, no solo deslizamiento de tierra
+
+La alerta "Deslizamiento/Derrumbe en Municipio Ospino, Portuguesa" resultó
+ser un falso positivo total: la fuente ("Filtraciones y humedad generan
+colapso parcial en iglesia San Fernando Rey de Ospino") describe el
+colapso de una pared junto al campanario de una iglesia, causado por
+filtraciones de agua y humedad acumulada **durante años** — ningún
+deslizamiento de tierra, ninguna lluvia, nada relacionado con el tipo
+"deslizamiento" que el sistema le asignó.
+
+**Causa raíz**: la palabra "derrumbe" (palabra clave de tipo=deslizamiento
+en `config/keywords.yaml`) se usa en español tanto para un deslizamiento
+de tierra como, genéricamente, para el colapso de una pared o estructura
+("el derrumbe de la pared ocurrió a las 5:30 p.m."). Ninguna de las frases
+específicas de `colapso_estructural` ("colapso de vivienda", "desplome de
+estructura", etc.) coincidía tampoco, así que el evento no tenía ningún
+tipo alternativo — quedaba solo con el falso positivo de deslizamiento.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó
+`_deslizamiento_estructura_sin_evidencia_fuerte()`, un filtro determinista
+análogo al de incendio vehicular/vialidad, que corre antes de la llamada a
+la IA. Solo se activa cuando el texto menciona una señal de
+construcción/deterioro (filtraciones, humedad acumulada, pared, muro,
+techo, campanario, iglesia); en ese caso, descarta el tipo=deslizamiento
+salvo que el texto también tenga alguna señal real de lluvia o movimiento
+de tierra (lluvia, precipitación, tormenta, onda tropical, tierra, ladera,
+talud, cerro, barro, lodo, material rocoso, vía, carretera, quebrada,
+desbordamiento). Probado con el caso real (se descarta) y con todos los
+casos de deslizamiento ya publicados como control (ninguno se ve
+afectado, todos mencionan lluvia/vía/carretera explícitamente).
+
+**Corrección retroactiva**: se eliminó la alerta completa de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`. También se editó manualmente el
+informe narrativo ya generado `docs/data/informes/2026-07_deslizamiento.json`
+(se quitó la oración y la fuente de Ospino, `total_eventos` 6→5) y
+`docs/data/informes/2026-07_general.json` (se quitó la fuente,
+`total_eventos` 18→17) — `build_informes.py` no los habría regenerado hoy
+(el período en curso se regenera como máximo una vez al día, y ya se había
+generado hoy). Se regeneraron las estadísticas.
+
+### 3. Un municipio/parroquia inferido a partir del nombre del país
+
+La alerta "Inundación en Parroquia Venezuela, Municipio Lagunillas, Zulia"
+tenía una ubicación sin ningún respaldo textual: ninguna de sus tres
+fuentes menciona "Lagunillas", y la única mención de "Venezuela" en el
+texto combinado es "...por el occidente de **Venezuela**" (el país, no la
+parroquia).
+
+**Causa raíz**: por coincidencia, existe una parroquia real llamada
+"Venezuela" (única en todo el país, del Municipio Lagunillas, Zulia — ver
+`config/ubicaciones_detalle.json`). `_buscar_parroquia_directa()` en
+`classify.py` (coincidencia directa de nombre, sin la palabra "parroquia"
+delante, cuando el municipio aún no se conoce) exige que el nombre sea
+único en todo el país para aceptarlo sin ambigüedad — "Venezuela" cumple
+esa condición técnica, pero ninguna mención del nombre del propio país en
+un artículo periodístico debería tratarse jamás como evidencia de esa
+parroquia específica. Es la misma clase de bug que la parroquia homónima
+al municipio (corregida el 27-07-2026), pero aquí la coincidencia es con
+el nombre del país, no con el del municipio.
+
+**Corrección** (`scripts/classify.py`): se agregó la constante
+`_NOMBRE_PAIS_NORM = "venezuela"`, excluida explícitamente como candidato
+en `_buscar_municipio_directo()` y en ambas ramas de
+`_buscar_parroquia_directa()` (municipio conocido y desconocido) — igual
+que ya se excluye el nombre del propio estado. La detección **explícita**
+("parroquia Venezuela, municipio Lagunillas...") no se ve afectada, sigue
+funcionando por la vía del regex `_PARROQUIA_RE`/`_MUNICIPIO_RE` (se probó
+como caso de control).
+
+**Corrección retroactiva**: se quitó el municipio/parroquia inventados de
+la alerta ya publicada en `docs/data/noticias.json` (regenerando
+`titulo`/`texto` con `render.redactar_noticia()`, quedando "Inundación en
+Zulia") y `data/historico_eventos.jsonl`. `data/historico_fuentes_texto.jsonl`
+no requería cambio (no guarda municipio/parroquia). Se regeneraron las
+estadísticas.
+
+Validado con `python3 scripts/validar_configs.py` y con regresión completa
+de los tres fixes (tipo, severidad y municipio/parroquia) contra las 34
+fuentes de `data/historico_fuentes_texto.jsonl`: ningún caso ya publicado
+cambia de resultado salvo los tres corregidos aquí.

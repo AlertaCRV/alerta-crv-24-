@@ -145,6 +145,38 @@ def _incendio_vehiculo_sin_evidencia_fuerte(texto):
     return not (tiene_accidente_multiple and tiene_victimas)
 
 
+# Filtro determinista para tipo=deslizamiento: la palabra "derrumbe" tambien
+# se usa en espanol para el colapso de una pared/muro/techo por deterioro
+# estructural (filtraciones, humedad acumulada, antiguedad) -- un evento que
+# no tiene nada que ver con un deslizamiento de tierra causado por lluvia.
+# Caso real que se escapo: "Filtraciones y humedad generan colapso parcial
+# en iglesia San Fernando Rey de Ospino" (una pared de una iglesia colapso
+# por filtraciones de años, sin ninguna lluvia ni movimiento de tierra
+# involucrado), publicado como "Deslizamiento/Derrumbe en Municipio Ospino,
+# Portuguesa". Mismo patron que el filtro de incendio vehicular: solo se
+# activa cuando el texto tiene una senal de construccion/deterioro, y solo
+# descarta si ademas NO hay ninguna senal de lluvia/movimiento de tierra que
+# respalde que se trata de un deslizamiento real.
+_ESTRUCTURA_DESLIZAMIENTO_RE = re.compile(
+    r"\b(filtraciones|humedad acumulada|deterioro estructural|estructura deteriorada|"
+    r"pared|paredes|muro|muros|techo|techos|campanario|iglesia|iglesias)\b",
+    re.IGNORECASE,
+)
+_EVIDENCIA_FUERTE_DESLIZAMIENTO_RE = re.compile(
+    r"\b(lluvia|lluvias|precipitacion|precipitaciones|aguacero|tormenta|onda tropical|"
+    r"tierra|ladera|talud|cerro|barro|lodo|material rocoso|roca|piedras|"
+    r"via|vía|carretera|autopista|quebrada|desbordamiento)\b",
+    re.IGNORECASE,
+)
+
+
+def _deslizamiento_estructura_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _ESTRUCTURA_DESLIZAMIENTO_RE.search(texto_norm):
+        return False  # no hay senal de colapso de construccion, este filtro no aplica
+    return _EVIDENCIA_FUERTE_DESLIZAMIENTO_RE.search(texto_norm) is None
+
+
 # Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
 # hoy son temblores menores sin ningun dano real, y estan empañando el
 # proposito del sistema (demasiados reportes de baja relevancia). Un sismo
@@ -457,6 +489,8 @@ def verificar_evento_con_ia(evento):
         elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "incendio" and _incendio_vehiculo_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
+        elif evento["tipo"] == "deslizamiento" and _deslizamiento_estructura_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)

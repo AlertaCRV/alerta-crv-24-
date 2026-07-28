@@ -285,6 +285,17 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
 
 _LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
 
+# "Venezuela" es, por coincidencia, el nombre oficial de una parroquia real
+# (Municipio Lagunillas, Zulia). Cualquier mencion de "Venezuela" en una
+# noticia practicamente siempre se refiere al pais, nunca a esa parroquia
+# especifica -- mismo problema que ya se resolvio para una parroquia
+# homonima a su propio municipio, pero aqui la coincidencia es con el
+# nombre del pais, no con el del municipio. Caso real que se escapo: un
+# articulo que solo menciona "el occidente de Venezuela" se clasifico como
+# "Parroquia Venezuela, Municipio Lagunillas, Zulia" sin que el texto
+# mencionara Lagunillas en absoluto.
+_NOMBRE_PAIS_NORM = "venezuela"
+
 # ubicaciones_detalle.json trae la jerarquia real (estado -> municipio ->
 # sus propias parroquias), tomada del listado de codigos de division
 # politico-territorial (COD-AB/PCode) del INE. Antes el archivo tenia dos
@@ -362,7 +373,7 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
             continue
         if conteo_municipios[normalizado] > 1:
             continue
-        if normalizado == nombre_estado_norm:
+        if normalizado == nombre_estado_norm or normalizado == _NOMBRE_PAIS_NORM:
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             return original
@@ -392,7 +403,7 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
         for normalizado, original in _parroquias_de(detalle_estado, municipio).items():
             if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
                 continue
-            if normalizado in nombres_municipio:
+            if normalizado in nombres_municipio or normalizado == _NOMBRE_PAIS_NORM:
                 continue
             if _contiene_palabra_clave(texto_norm, normalizado):
                 return original, None
@@ -405,7 +416,7 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
             continue
         if conteo_parroquias[normalizado] > 1 or len(ocurrencias) > 1:
             continue  # ambiguo entre estados o entre municipios del mismo estado
-        if normalizado == nombre_estado_norm:
+        if normalizado == nombre_estado_norm or normalizado == _NOMBRE_PAIS_NORM:
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             municipio_unico, parroquia_unica = ocurrencias[0]

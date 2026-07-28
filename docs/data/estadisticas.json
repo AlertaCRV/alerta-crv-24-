@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-07-28T03:26:10.519400+00:00",
+  "actualizado": "2026-07-28T16:10:52.988086+00:00",
   "periodo_cubierto": {
-    "desde": "2026-07-26T16:30:21+00:00",
+    "desde": "2026-07-26T17:42:10+00:00",
     "hasta": "2026-07-27T21:45:06+00:00"
   },
-  "total_eventos": 18,
+  "total_eventos": 17,
   "por_tipo": {
     "inundacion": 7,
-    "deslizamiento": 6,
     "tormenta_electrica": 3,
+    "deslizamiento": 5,
     "infraestructura_electrica": 1,
     "colapso_estructural": 1
   },
@@ -34,11 +34,6 @@
       "confirmados": 1
     },
     {
-      "estado": "Portuguesa",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
@@ -52,9 +47,6 @@
   "cruce_estado_tipo": {
     "Distrito Capital": {
       "inundacion": 2,
-      "deslizamiento": 1
-    },
-    "Portuguesa": {
       "deslizamiento": 1
     },
     "Carabobo": {
@@ -77,19 +69,19 @@
     }
   },
   "por_severidad": {
-    "sin_clasificar": 14,
-    "alto": 1,
+    "sin_clasificar": 12,
+    "alto": 2,
     "critico": 3
   },
   "serie_mensual_por_tipo": {
     "inundacion": {
       "2026-07": 7
     },
-    "deslizamiento": {
-      "2026-07": 6
-    },
     "tormenta_electrica": {
       "2026-07": 3
+    },
+    "deslizamiento": {
+      "2026-07": 5
     },
     "infraestructura_electrica": {
       "2026-07": 1
