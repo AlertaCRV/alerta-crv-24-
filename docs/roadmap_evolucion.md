@@ -1561,3 +1561,152 @@ Validado con `python3 scripts/validar_configs.py` y con regresión completa
 de los tres fixes (tipo, severidad y municipio/parroquia) contra las 34
 fuentes de `data/historico_fuentes_texto.jsonl`: ningún caso ya publicado
 cambia de resultado salvo los tres corregidos aquí.
+
+---
+
+## Auditoría diaria autónoma: siete duplicados por una causa raíz común (28-07-2026)
+
+Segunda auditoría de rutina del día (sin que el usuario la pidiera), muy
+poco después de la anterior. Al revisar `docs/data/noticias.json` completo
+contra `data/historico_fuentes_texto.jsonl` no aparecieron errores nuevos de
+tipo/severidad/ubicación, pero un barrido sistemático (agrupar por
+tipo+ubicación y comparar fechas dentro de la ventana de 36 horas, igual que
+hace `state.py`) encontró **siete clusters de alertas duplicadas** — el mismo
+evento real publicado dos o más veces — todos con la misma causa raíz de
+fondo, ya identificada antes pero que resultó estar más activa de lo que
+parecía.
+
+### Causa raíz 1: `publicados.json` guardado antes del fix de ventana de 36h nunca "matchea"
+
+`state._resolver_clave()` solo reutiliza la clave de un evento ya publicado
+si ese registro en `data/publicados.json` tiene `fecha_evento_temprana`. Los
+registros guardados **antes** de que ese campo se empezara a persistir
+(27-07-2026) no lo tienen — así que cualquier re-detección posterior de esa
+misma noticia (el mismo artículo reaparece en una corrida nueva, o un
+artículo hermano se procesa por separado) nunca encuentra la clave existente,
+genera una clave nueva, y se publica como si fuera un evento distinto. Se
+confirmó este patrón exacto en `data/publicados.json` para "Deslizamiento
+Barinas" (`deslizamiento::Barinas::2026-07-26`, sin `fecha_evento_temprana`)
+y "Inundación Lara" (`inundacion::Lara::2026-07-26`, ídem) — ambos con una
+clave "huérfana" `::2026-07-27` creada por la re-detección.
+
+**Corrección** (`scripts/state.py`, `_resolver_clave`): cuando el registro
+previo no tiene `fecha_evento_temprana`, se usa como fecha aproximada el
+**mediodía** del día codificado en la propia clave (no la medianoche, que
+recortaría hasta 12h reales de la ventana de 36h y seguiría sin matchear el
+caso real de Barinas). Probado con 5 casos: el caso real de Barinas (debe
+reusar la clave existente), el caso real de Lara (ídem), un evento fuera de
+ventana (debe generar clave nueva), un tipo distinto (no debe matchear), y
+una entrada de estilo nuevo con `fecha_evento_temprana` ya presente (no
+regresión).
+
+### Causa raíz 2: la IA "confirma" su propia alucinación de municipio porque el nombre del estado está trivialmente presente
+
+Se encontraron dos alertas "Deslizamiento/Derrumbe en Municipio Barinas,
+Barinas" (sector El Celoso, reapertura de la vía) cuyo municipio no tiene
+ningún respaldo textual real — las fuentes solo dicen "paso entre Mérida y
+Barinas"/"carretera Mérida-Barinas", mencionando "Barinas" únicamente como
+nombre del estado. El resto de fuentes del mismo evento real (vía
+Barinas-Mérida bloqueada por un deslizamiento) sí identifican consistentemente
+**Municipio Bolívar, Parroquia Altamira** (sector La Soledad).
+
+**Causa raíz**: el 26-07-2026 se corrigió este mismo patrón
+("_buscar_nombre_directo() ahora también descarta un nombre si coincide con
+el nombre normalizado del propio estado") pero **solo en la vía determinista**
+de `classify.py`. La vía asistida por IA de `verify_ai.py` (cuando el regex no
+determina municipio/parroquia y se le pide ayuda a Groq) solo verificaba que
+el nombre propuesto apareciera **textualmente** en las fuentes — y "Barinas"
+sí aparece textualmente, como nombre del estado, así que la IA podía
+"confirmar" su propia alucinación sin que el chequeo de anclaje lo detectara.
+
+**Corrección** (`scripts/verify_ai.py`): antes del chequeo de anclaje
+textual, se descarta un municipio/parroquia propuesto por la IA si coincide
+con el nombre normalizado del propio estado o con "venezuela" — el mismo
+criterio que `classify.py` ya aplica en su búsqueda determinista. Probado con
+el caso real (IA propone "Barinas" para el estado "Barinas" → descartado),
+un caso de control con municipio real y explícito ("Bolívar" en el mismo
+estado → aceptado), y el caso ya conocido de "Venezuela" como nombre de país.
+
+### Los siete clusters encontrados y su corrección
+
+Para cada cluster se fusionaron las fuentes de todos los duplicados en una
+sola alerta final (mismo criterio ya usado en fusiones anteriores: unión de
+fuentes independientes, severidad más grave del grupo, municipio/parroquia
+mejor respaldado), salvo cuando un duplicado era subconjunto exacto de otro
+(mismo link, sin fuentes nuevas), en cuyo caso se conservó el original sin
+recalcular y se descartó el redundante:
+
+1. **Deslizamiento vía Barinas-Mérida** (4 alertas → 1): además del bug de
+   municipio ya descrito, esto era el mismo hecho real (cierre y reapertura
+   de la vía, sector La Soledad → El Celoso) fragmentado en 4 alertas por la
+   causa raíz 1. Resultado final: Parroquia Altamira, Municipio Bolívar,
+   Barinas — confirmado, 5 fuentes.
+2. **Inundación Lara** (2 → 1): la alerta ya publicada con municipio/parroquia
+   completos (Simón Planas/Gustavo Vegas León, 2 fuentes) tenía un duplicado
+   exacto (mismo único link, sin dato nuevo) publicado un día después por la
+   causa raíz 1. Se descartó el duplicado.
+3. **Inundación Zulia** (2 → 1): dos corridas separadas sobre la misma onda
+   tropical N.º 30 en Zulia. Fusionadas en una sola, 4 fuentes.
+4. **Inundación Distrito Capital / Antímano** (3 → 1): tres corridas
+   separadas sobre lluvias/onda tropical N.º 30 en la misma zona (Carapita,
+   parroquia Antímano). Fusionadas, 7 fuentes.
+5. **Deslizamiento Distrito Capital** (2 → 1): misma fuente (La Prensa de
+   Monagas) publicó dos artículos distintos sobre derrumbes en Caracas en
+   corridas separadas; al deduplicar por nombre de fuente (mismo criterio que
+   ya usa `verify.py` para no contar dos veces al mismo medio) queda 1 fuente
+   independiente. Se conservó la severidad "alto" (heridos/lesionados
+   mencionados en el segundo artículo) y el municipio Libertador.
+6. **Falla eléctrica Lara** (2 → 1): duplicado exacto, mismo link, detectado
+   dos veces con 4 horas de diferencia (25-07-2026, anterior incluso a la
+   causa raíz 1). Se conservó la versión con severidad correctamente
+   clasificada ("bajo"); no se le aplicó retroactivamente la bonificación por
+   fuente regional agregada después, por quedar fuera del alcance de esta
+   auditoría.
+7. **Tormenta eléctrica Zulia, Maracaibo + Guajira** (2 → 1): dos corridas
+   separadas sobre la misma tormenta (onda tropical N.º 30) con fuentes
+   propias por municipio. A diferencia de los demás casos, aquí **ningún**
+   municipio es incorrecto — ambos son hechos reales y específicos, pero
+   `state.py` deduplica solo a nivel de estado (no de municipio), así que el
+   diseño actual del sistema ya los trata como "el mismo evento". Se fusionó
+   con **`municipio: null`**: afirmar solo uno de los dos implicaría
+   falsamente que el otro no fue afectado; la afirmación a nivel estado sigue
+   siendo estrictamente cierta. **Limitación conocida, no resuelta**: el
+   sistema no puede hoy representar dos alertas separadas para dos municipios
+   distintos del mismo estado afectados por el mismo fenómeno regional en
+   corridas distintas — queda anotado para si se decide en el futuro que la
+   deduplicación debería ser más granular que a nivel de estado.
+
+**Limpieza de claves huérfanas en `data/publicados.json`**: las claves que
+cada miembro individual de un cluster fusionado habría generado por su
+cuenta (antes de fusionarse) y que ya no corresponden a ninguna noticia
+publicada se eliminaron (`deslizamiento::Barinas::2026-07-27`,
+`deslizamiento::Distrito Capital::2026-07-27`,
+`inundacion::Distrito Capital::2026-07-26`,
+`inundacion::Distrito Capital::2026-07-27`, `inundacion::Lara::2026-07-27`) —
+dejarlas podía enganchar una futura re-detección a datos desactualizados en
+vez de a la clave final ya corregida.
+
+**Backfill de `clave_dedup`**: además de los clusters fusionados, se agregó
+`clave_dedup` (calculado con la misma lógica de `state._clave_evento`) a
+**todas** las alertas de `docs/data/noticias.json` que todavía no lo tenían —
+sin esto, cualquier actualización futura de esas alertas (cambio de
+severidad/confirmación) volvería a duplicarlas en vez de reemplazarlas, el
+mismo patrón de causa raíz 1 aplicado hacia adelante.
+
+**Archivos corregidos retroactivamente**: `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl`,
+`data/publicados.json`, y los informes narrativos afectados
+(`docs/data/informes/2026-07_deslizamiento.json` 5→2 eventos,
+`2026-07_inundacion.json` 7→4, `2026-07_tormenta_electrica.json` 3→2,
+`2026-07_general.json` 17→10, y `index.json` con los mismos totales) — en
+ningún caso se necesitó agregar o quitar fuentes de los informes (las listas
+de fuentes ya eran la unión correcta), solo corregir `total_eventos`,
+`comparacion_mes_anterior` y la oración inicial de la narrativa. De paso se
+notó y corrigió que `2026-07_general.json` ya tenía un desface preexistente
+entre `total_eventos` (17) y el número mencionado en su propia narrativa
+(18) — residuo de una edición manual de la auditoría anterior que no había
+sincronizado ambos lugares. Se regeneraron las estadísticas con
+`python3 scripts/build_dashboard.py`.
+
+Validado con `python3 scripts/validar_configs.py` y con los casos de prueba
+descritos arriba para ambos fixes de código.
