@@ -1373,3 +1373,76 @@ ambos filtros (incendio vehicular con/sin accidente múltiple y víctimas;
 "manifestaciones artísticas" vs. "manifestantes" en protesta real), y
 regresión contra el histórico completo de fuentes (sin otros casos de
 `incendio`/`orden_publico` afectados).
+
+---
+
+## Bug de raíz: actualizaciones de un evento creaban una alerta duplicada (28-07-2026)
+
+Al revisar manualmente las alertas del día se encontró un duplicado real:
+"Inundación en Lara" (sin municipio, severidad sin clasificar) y
+"Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas,
+Lara" (severidad crítico) resultaron ser el mismo evento real (una niña
+que murió ahogada en el río La Miel), reportado por dos fuentes
+distintas, publicado con 26 horas de diferencia — **dentro** de la
+ventana de 36 horas que debería haberlo evitado.
+
+**Causa raíz** (más profunda que un simple fallo de la ventana de 36h):
+`state.py` sí resuelve correctamente la misma `clave` de deduplicación
+para ambos eventos (mismo tipo+ubicación dentro de la ventana). Pero
+`filtrar_nuevos()` trata intencionalmente como "nuevo" cualquier evento
+cuya severidad o estado de confirmación cambien respecto a lo ya
+publicado bajo esa clave — para poder notificar actualizaciones
+legítimas (p.ej. un evento que sube de severidad al confirmarse más
+daño). El problema: `build_site.py` (`actualizar_datos_sitio`) simplemente
+**agregaba** cada noticia nueva al principio de la lista, sin nunca
+reemplazar la entrada anterior del mismo evento — así que cada
+"actualización" terminaba como una alerta visualmente independiente en
+el sitio, no como una corrección de la anterior.
+
+**Corrección**:
+- `state.py`: `filtrar_nuevos()` ahora anota cada evento devuelto con su
+  `clave_dedup` (la misma clave de `_resolver_clave`), tanto para
+  eventos genuinamente nuevos como para actualizaciones.
+- `build_site.py`: `actualizar_datos_sitio()` ahora, antes de agregar las
+  noticias nuevas, quita del listado existente cualquier entrada cuya
+  `clave_dedup` coincida con una de las nuevas — así una actualización
+  **reemplaza** la alerta anterior del mismo evento en vez de sumarse
+  como una segunda alerta. Las noticias ya publicadas antes de este
+  cambio no tienen `clave_dedup` y no se ven afectadas (se conservan
+  igual).
+
+**Bug adicional encontrado en el mismo caso**: la fuente de la segunda
+publicación ("Niña muere ahogada...") tampoco disparó severidad
+crítica, porque "ahogado"/"ahogada" no estaba en las palabras clave de
+severidad crítica (`config/keywords.yaml`). Se agregó junto con sus
+formas plurales.
+
+**Corrección retroactiva**: se fusionaron las dos alertas de Lara en una
+sola (ubicación completa, severidad crítico, 2 fuentes, confirmado) en
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`, y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py` y con una prueba
+directa de `state.py`/`build_site.py` simulando una actualización de
+severidad para el mismo evento (confirmando que ambas pasadas comparten
+la misma `clave_dedup`).
+
+---
+
+## Pendiente para retomar (28-07-2026)
+
+Quedaron dos tareas pausadas a pedido del usuario, para continuar cuando
+tenga la lista de correos de las filiales:
+
+1. **Filtro por remitente en Power Automate**: el flujo
+   "AlertaCRV - Reenvío de correos a GitHub" ya está armado y probado
+   (dispara con cualquier correo nuevo → crea un issue en
+   `alertacrv/alerta-crv-24-` con Asunto/Cuerpo del correo). Falta
+   configurar el filtro del disparador para que solo entren correos de
+   las cuentas de las filiales autorizadas a reportar.
+2. **`scripts/fetch_github_issues.py`** (no implementado aún): leer los
+   issues nuevos del repositorio vía la API de GitHub y alimentarlos al
+   pipeline de clasificación (`classify.py`), igual que hace
+   `fetch_rss.py`/`fetch_email.py` hoy. El cuerpo de los issues llega con
+   HTML crudo (`<br>`, enlaces) del cliente de correo — hay que limpiarlo
+   igual que ya hace `_limpiar_texto()` en `fetch_rss.py`.

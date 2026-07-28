@@ -120,8 +120,14 @@ def filtrar_nuevos(eventos, publicados):
         clave = _resolver_clave(evento, publicados)
         previo = publicados.get(clave)
         if previo is None:
+            evento["clave_dedup"] = clave
             nuevos.append(evento)
         elif previo["severidad"] != evento["severidad"] or previo["confirmado"] != evento["confirmado"]:
+            # Es una actualizacion del mismo evento (p.ej. subio de severidad),
+            # no uno nuevo -- se marca con la misma clave para que
+            # actualizar_datos_sitio() reemplace la entrada anterior en vez de
+            # agregar una segunda entrada duplicada para el mismo hecho real.
+            evento["clave_dedup"] = clave
             nuevos.append(evento)
     return nuevos
 
