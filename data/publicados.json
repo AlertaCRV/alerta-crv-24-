@@ -4,11 +4,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-25T18:11:36.758052+00:00"
   },
-  "sismo::Falcon::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-25T14:52:17.685257+00:00"
-  },
   "infraestructura_electrica::Lara::2026-07-25": {
     "severidad": "bajo",
     "confirmado": false,
