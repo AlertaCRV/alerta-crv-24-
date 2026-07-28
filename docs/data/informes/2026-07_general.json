@@ -3,16 +3,32 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-07-27T12:40:40.552518+00:00",
-  "actualizado_hasta": "2026-07-27T12:40:30.082988+00:00",
-  "total_eventos": 9,
+  "generado": "2026-07-28T03:26:22.952349+00:00",
+  "actualizado_hasta": "2026-07-28T03:25:52.657438+00:00",
+  "total_eventos": 18,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 9
+    "actual": 18
   },
-  "narrativa": "En el período de 2026-07, se registraron 9 eventos de emergencia en Venezuela, en comparación con 0 eventos en el período anterior (2026-06). Uno de los eventos más significativos fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, municipio Bolívar, Barinas, el domingo 26 de julio (Diario La Nacion, Diario La Nacion). Las intensas lluvias recientes causaron la caída de material rocoso y vegetación, obstruyendo el paso vehicular en la local 2 (Diario La Nacion). Además, se reportaron inundaciones y deslizamientos de tierra en varios puntos de Caracas y La Guaira, como en la zona de Carapita, en la parroquia Antímano, donde el caudal arrastró motocicletas y dejó diversas afectaciones a los vecinos de la zona (El Carabobeno, El Impulso, El Luchador, El Siglo, La Prensa de Lara). En el estado Zulia, se registraron inundaciones y deslizamientos de tierra en Maracaibo, donde una intensa tormenta eléctrica con lluvias de moderadas a fuertes causó daños en la ciudad (La Manana, La Patilla). También se reportó la muerte de una niña por la crecida de un río en Lara, específicamente en el municipio Simón Planas, donde la menor de edad perdió la vida por inmersión tras ser arrastrada por una crecida súbita del río La Miel (El Pitazo, Noticia al Dia). Otros eventos reportados incluyeron el colapso parcial de una iglesia en el municipio Ospino del estado Portuguesa, debido a filtraciones y humedad acumulada durante años (Portuguesa Reporta), y el cierre de la vía Barinas-Mérida tras derrumbes, donde los organismos de atención trabajaron para despejar el tramo de la Local 001 y restablecer el paso vehicular en el menor tiempo posible (Primicia, Reporteros de Merida).",
+  "narrativa": "En el período de 2026-07, se registraron 18 eventos de emergencia en Venezuela, lo que contrasta con los 0 eventos reportados en el período anterior (2026-06). Entre los eventos más destacados se encuentran la tormenta eléctrica en Carabobo, que dejó 9 heridos en el aeropuerto de Valencia según Turimiquire (Sucre), y las inundaciones en Lara, que causaron la muerte de una niña ahogada en el río La Miel, como lo informaron Noticia al Dia (Zulia) y La Prensa de Monagas. Además, se reportaron deslizamientos de tierra y desbordamiento de quebradas en Boconó, estado Trujillo, debido a las intensas lluvias, según Diario El Tiempo (Trujillo). Un deslizamiento de tierra también bloqueó el paso en la carretera Barinas-Mérida, como lo informó Diario La Nacion (Tachira). Las lluvias torrenciales y apagones de más de 12 horas azotaron al Zulia, afectando principalmente a los municipios Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta, según Diario La Nacion (Tachira). Otros eventos notables incluyeron inundaciones y deslizamientos de tierra en Caracas y La Guaira, como lo reportaron El Carabobeno y El Impulso (Lara), y el colapso de una vivienda en Zulia que resultó en la muerte de un niño de cinco años, según El Periodico de Monagas. Estos eventos resaltan la importancia de la vigilancia y preparación ante condiciones climáticas adversas en el país.",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/las-intensas-lluvias-causan-deslizamientos-y-desbordamiento-de-quebradas-en-bocono/"
+    },
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
@@ -20,6 +36,14 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/"
     },
     {
       "nombre": "El Carabobeno",
@@ -30,16 +54,28 @@
       "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/"
+    },
+    {
       "nombre": "El Luchador (Bolivar)",
       "link": "https://elluchador.info/?p=316662"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/"
+    },
+    {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/muere-nina-por-la-crecida-de-un-rio-en-lara-como-consecuencia-de-las-lluvias/"
+      "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/"
     },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/"
     },
     {
       "nombre": "La Manana (Falcon)",
@@ -58,12 +94,36 @@
       "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/"
     },
     {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/"
     },
     {
       "nombre": "Portuguesa Reporta",
@@ -74,12 +134,12 @@
       "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/"
     },
     {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html"
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/"
     },
     {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/"
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html"
     }
   ]
 }

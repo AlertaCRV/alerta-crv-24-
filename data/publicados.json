@@ -81,8 +81,8 @@
   },
   "deslizamiento::Barinas::2026-07-27": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-28T03:25:45.793909+00:00",
     "fecha_evento_temprana": "2026-07-27T19:35:59+00:00"
   },
   "salud_publica::Portuguesa::2026-07-26": {
@@ -144,9 +144,9 @@
     "fecha_evento_temprana": "2026-07-27T12:10:08+00:00"
   },
   "inundacion::Lara::2026-07-27": {
-    "severidad": "sin_clasificar",
+    "severidad": "critico",
     "confirmado": false,
-    "fecha_deteccion": "2026-07-27T22:18:52.748019+00:00",
+    "fecha_deteccion": "2026-07-28T03:25:52.657438+00:00",
     "fecha_evento_temprana": "2026-07-27T20:53:15+00:00"
   },
   "inundacion::Distrito Capital::2026-07-27": {

@@ -4,8 +4,8 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-07-27T00:38:37.024926+00:00",
-    "total_eventos": 1
+    "generado": "2026-07-28T03:26:55.423845+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-07",
@@ -20,7 +20,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-07-27T16:02:29.161168+00:00",
+    "generado": "2026-07-28T03:26:27.116896+00:00",
     "total_eventos": 1
   },
   {
@@ -28,23 +28,23 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-07-27T12:40:40.552518+00:00",
-    "total_eventos": 9
+    "generado": "2026-07-28T03:26:22.952349+00:00",
+    "total_eventos": 18
   },
   {
     "periodo": "2026-07",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-07-27T00:38:24.027610+00:00",
-    "total_eventos": 2
+    "generado": "2026-07-28T03:26:18.571292+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-07",
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-07-27T17:27:39.318730+00:00",
+    "generado": "2026-07-28T03:26:14.357546+00:00",
     "total_eventos": 1
   }
 ]

@@ -3,27 +3,39 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-07-27T00:38:24.027610+00:00",
-  "actualizado_hasta": "2026-07-27T00:38:04.803969+00:00",
-  "total_eventos": 2,
+  "generado": "2026-07-28T03:26:18.571292+00:00",
+  "actualizado_hasta": "2026-07-28T03:25:45.793909+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 2
+    "actual": 6
   },
-  "narrativa": "En el período de 2026-07, se registraron 2 eventos de deslizamiento o derrumbe en Venezuela, en comparación con el período anterior (2026-06) en el que no se registraron eventos de esta categoría. Un deslizamiento de tierra bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, el domingo 26 de julio (Diario La Nacion, El Impulso). Este incidente fue reportado por efectivos de Protección Civil del Municipio Bolívar después de un recorrido (Diario La Nacion). Las fuertes precipitaciones en la zona generaron deslizamientos que afectaron la vía entre Mérida y Barinas, lo que llevó a restricciones viales (La Patilla). Además, se reportó un colapso parcial en la iglesia San Fernando Rey de Ospino en el estado Portuguesa, debido a filtraciones y humedad acumulada durante años, el sábado 25 de julio (Portuguesa Reporta). Los organismos de atención trabajan para despejar el tramo de la vía Barinas-Mérida y restablecer el paso vehicular lo antes posible (Primicia).",
+  "narrativa": "En el período de julio de 2026, se registraron 6 eventos de deslizamiento o derrumbe en Venezuela, en comparación con el período anterior, junio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, municipio Bolívar, Barinas, el domingo 26 de julio (Diario La Nacion, Efecto Cocuyo). Las intensas lluvias recientes causaron la caída de material rocoso y vegetación, obstruyendo el paso vehicular en la localidad (Diario La Nacion, La Patilla). Las autoridades locales trabajaron para despejar la vía y restablecer el paso vehicular, logrando reabrir parcialmente el paso entre Mérida y Barinas tras deslizamientos por lluvias (Efecto Cocuyo, La Patilla). Otro evento notable fue el colapso parcial de una pared en la iglesia San Fernando Rey de Ospino, en el municipio Ospino del estado Portuguesa, debido a filtraciones y humedad acumulada durante años (Portuguesa Reporta). Además, se reportaron afectaciones viales en el Páramo, específicamente en la Local 001, donde se registraron deslizamientos de tierra, lodo y material detrítico que provocaron la interrupción total del tránsito vehicular (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
     },
     {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/07/26/deslizamiento-de-tierra-bloquea-paso-vial-entre-barinas-y-merida-26jul/"
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/"
     },
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/"
     },
     {
       "nombre": "Portuguesa Reporta",
@@ -32,6 +44,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html"
     }
   ]
 }
