@@ -77,9 +77,25 @@ def _resolver_clave(evento, publicados):
             if len(partes) < 3 or partes[0] != evento["tipo"] or partes[1] != evento["ubicacion"]:
                 continue
             fecha_previa_str = previo.get("fecha_evento_temprana")
-            if not fecha_previa_str:
-                continue
-            fecha_previa = dateparser.isoparse(fecha_previa_str)
+            if fecha_previa_str:
+                fecha_previa = dateparser.isoparse(fecha_previa_str)
+            else:
+                # Entradas guardadas antes de que se empezara a registrar
+                # fecha_evento_temprana (27-07-2026) no tienen ese campo --
+                # sin este fallback, un evento real ya publicado antes de esa
+                # fecha nunca se reconoce como "el mismo evento" en corridas
+                # posteriores (por mas que este dentro de la ventana), y
+                # termina republicado como una alerta duplicada. Se usa el
+                # mediodia del dia codificado en la propia clave como fecha
+                # aproximada (en vez de medianoche) para no perder hasta 12h
+                # de margen real de la ventana de 36h por el solo hecho de
+                # anclar al comienzo del dia.
+                try:
+                    fecha_previa = dateparser.isoparse(partes[2]).replace(
+                        hour=12, tzinfo=timezone.utc
+                    )
+                except (ValueError, IndexError):
+                    continue
             if abs(fecha_nueva - fecha_previa) <= limite:
                 return clave
     return _clave_evento(evento)

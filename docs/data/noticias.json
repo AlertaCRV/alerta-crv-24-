@@ -1,96 +1,79 @@
 [
   {
-    "titulo": "Deslizamiento/Derrumbe en Municipio Barinas, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 3:35 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 11:25 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": "Barinas",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Efecto Cocuyo - General",
-        "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
-        "fecha": "2026-07-27T19:35:59+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T19:35:59+00:00",
-    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00",
-    "fecha_deteccion": "2026-07-28T03:25:45.793909+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::Barinas::2026-07-27"
-  },
-  {
-    "titulo": "Inundación en Lara",
-    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 11:25 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
+    "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 5:45 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:19 p.m.\n📊 Fuentes independientes: 7 (score 4.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/cambio-climatico/lluvias-generaron-inundaciones-en-el-oeste-de-caracas/\n  • El Luchador (Bolivar): https://elluchador.info/?p=316662\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/\n  • El Carabobeno: https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/\n  • El Siglo (Aragua): https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
     "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
-        "fecha": "2026-07-27T20:53:15+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T20:53:15+00:00",
-    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00",
-    "fecha_deteccion": "2026-07-28T03:25:52.657438+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Lara::2026-07-27"
-  },
-  {
-    "titulo": "Deslizamiento/Derrumbe en Municipio Barinas, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Barinas, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/07/2026, 4:06 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/\n  • La Patilla: https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": "Barinas",
-    "parroquia": null,
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Antimano",
     "severidad": "sin_clasificar",
-    "score": 1.4,
+    "score": 4.4,
     "confirmado": true,
-    "num_fuentes": 2,
+    "num_fuentes": 7,
     "fuentes": [
       {
         "nombre": "Efecto Cocuyo - General",
-        "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
-        "fecha": "2026-07-27T19:35:59+00:00"
+        "link": "https://efectococuyo.com/cambio-climatico/lluvias-generaron-inundaciones-en-el-oeste-de-caracas/",
+        "fecha": "2026-07-25T23:53:26+00:00"
       },
       {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
-        "fecha": "2026-07-27T20:06:28+00:00"
+        "nombre": "El Luchador (Bolivar)",
+        "link": "https://elluchador.info/?p=316662",
+        "fecha": "2026-07-26T15:16:00+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/",
+        "fecha": "2026-07-26T16:30:00+00:00"
+      },
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/",
+        "fecha": "2026-07-26T17:42:10+00:00"
+      },
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/",
+        "fecha": "2026-07-26T14:59:12+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
+        "fecha": "2026-07-26T14:48:20+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
+        "fecha": "2026-07-27T21:45:06+00:00"
       }
     ],
-    "fecha_evento": "2026-07-27T20:06:28+00:00",
-    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00",
-    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "fecha_evento": "2026-07-27T21:45:06+00:00",
+    "fecha_evento_temprana": "2026-07-25T23:53:26+00:00",
+    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Distrito Capital::2026-07-25"
   },
   {
     "titulo": "Inundación en Zulia",
-    "texto": "📌 Inundación en Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 3 (score 1.9)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/\n  • La Prensa de Monagas: https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/",
+    "texto": "📌 Inundación en Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 4 (score 2.55)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/\n  • La Patilla: https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/\n  • La Prensa de Monagas: https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/",
     "tipo": "inundacion",
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
     "severidad": "sin_clasificar",
-    "score": 1.9,
+    "score": 2.55,
     "confirmado": true,
-    "num_fuentes": 3,
+    "num_fuentes": 4,
     "fuentes": [
       {
         "nombre": "La Verdad (Zulia)",
         "link": "https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/",
         "fecha": "2026-07-27T19:22:14+00:00"
+      },
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
+        "fecha": "2026-07-27T12:26:20+00:00"
       },
       {
         "nombre": "La Prensa de Monagas",
@@ -104,55 +87,54 @@
       }
     ],
     "fecha_evento": "2026-07-27T19:22:14+00:00",
-    "fecha_evento_temprana": "2026-07-27T14:13:15+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00",
     "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Zulia::2026-07-27"
   },
   {
-    "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 5:45 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:19 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
-    "tipo": "inundacion",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "Antimano",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altamira, Municipio Bolívar, Barinas\n🕒 Hecho reportado: 27/07/2026, 4:06 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 6:18 p.m.\n📊 Fuentes independientes: 5 (score 3.05)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/\n  • La Patilla: https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Bolívar",
+    "parroquia": "Altamira",
     "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
+    "score": 3.05,
+    "confirmado": true,
+    "num_fuentes": 5,
     "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/",
+        "fecha": "2026-07-27T19:35:59+00:00"
+      },
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/",
+        "fecha": "2026-07-27T20:06:28+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/",
+        "fecha": "2026-07-27T04:00:00+00:00"
+      },
       {
         "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/",
-        "fecha": "2026-07-27T21:45:06+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T21:45:06+00:00",
-    "fecha_evento_temprana": "2026-07-27T21:45:06+00:00",
-    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia",
-    "texto": "📌 Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
-    "tipo": "colapso_estructural",
-    "ubicacion": "Zulia",
-    "municipio": "Indígena Bolivariano Guajira",
-    "parroquia": "Sinamaica",
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
+        "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
+        "fecha": "2026-07-27T00:15:18+00:00"
+      },
       {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
-        "fecha": "2026-07-27T17:18:51+00:00"
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
+        "fecha": "2026-07-27T03:02:28+00:00"
       }
     ],
-    "fecha_evento": "2026-07-27T17:18:51+00:00",
-    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00",
-    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "fecha_evento": "2026-07-27T20:06:28+00:00",
+    "fecha_evento_temprana": "2026-07-26T18:48:23+00:00",
+    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Barinas::2026-07-26"
   },
   {
     "titulo": "Inundación en Municipio Bocono, Trujillo",
@@ -175,40 +157,56 @@
     "fecha_evento": "2026-07-27T16:52:23+00:00",
     "fecha_evento_temprana": "2026-07-27T16:52:23+00:00",
     "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Trujillo::2026-07-27"
   },
   {
-    "titulo": "Tormenta eléctrica en Municipio Indígena Bolivariano Guajira, Zulia",
-    "texto": "📌 Tormenta eléctrica en Municipio Indígena Bolivariano Guajira, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 2.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/\n  • La Verdad (Zulia): https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/\n  • El Tiempo (Anzoategui): https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
-    "tipo": "tormenta_electrica",
+    "titulo": "Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia",
+    "texto": "📌 Colapso estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira, Zulia\n🕒 Hecho reportado: 27/07/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 27/07/2026, 1:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
+    "tipo": "colapso_estructural",
     "ubicacion": "Zulia",
     "municipio": "Indígena Bolivariano Guajira",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 2.1,
-    "confirmado": true,
-    "num_fuentes": 3,
+    "parroquia": "Sinamaica",
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/",
-        "fecha": "2026-07-27T14:02:04+00:00"
-      },
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/",
-        "fecha": "2026-07-27T15:27:00+00:00"
-      },
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
-        "fecha": "2026-07-27T13:27:30+00:00"
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/",
+        "fecha": "2026-07-27T17:18:51+00:00"
       }
     ],
-    "fecha_evento": "2026-07-27T15:27:00+00:00",
-    "fecha_evento_temprana": "2026-07-27T13:27:30+00:00",
-    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "fecha_evento": "2026-07-27T17:18:51+00:00",
+    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00",
+    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "colapso_estructural::Zulia::2026-07-27"
+  },
+  {
+    "titulo": "Deslizamiento/Derrumbe en Municipio Libertador, Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 9:45 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/",
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/",
+        "fecha": "2026-07-27T13:45:56+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-27T13:45:56+00:00",
+    "fecha_evento_temprana": "2026-07-26T13:45:05+00:00",
+    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-07-26"
   },
   {
     "titulo": "Falla eléctrica en Municipio Cabimas, Zulia",
@@ -241,66 +239,31 @@
     "fecha_evento": "2026-07-27T14:52:49+00:00",
     "fecha_evento_temprana": "2026-07-27T14:00:00+00:00",
     "fecha_deteccion": "2026-07-27T16:02:12.489573+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-07-27"
   },
   {
-    "titulo": "Deslizamiento/Derrumbe en Municipio Libertador, Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 27/07/2026, 9:45 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/",
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/",
-        "fecha": "2026-07-27T13:45:56+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T13:45:56+00:00",
-    "fecha_evento_temprana": "2026-07-27T13:45:56+00:00",
-    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Inundación en Zulia",
-    "texto": "📌 Inundación en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 8:26 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
-    "tipo": "inundacion",
+    "titulo": "Tormenta eléctrica en Zulia",
+    "texto": "📌 Tormenta eléctrica en Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 5 (score 3.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/\n  • La Patilla: https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/\n  • La Manana (Falcon): https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/\n  • El Tiempo (Anzoategui): https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
+    "tipo": "tormenta_electrica",
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
     "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
+    "score": 3.3,
+    "confirmado": true,
+    "num_fuentes": 5,
     "fuentes": [
       {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/",
-        "fecha": "2026-07-27T12:26:20+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T12:26:20+00:00",
-    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00",
-    "fecha_deteccion": "2026-07-27T12:40:19.835403+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Tormenta eléctrica en Municipio Maracaibo, Zulia",
-    "texto": "📌 Tormenta eléctrica en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 27/07/2026, 7:52 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/\n  • La Manana (Falcon): https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/",
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/",
+        "fecha": "2026-07-27T15:27:00+00:00"
+      },
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/",
+        "fecha": "2026-07-27T14:02:04+00:00"
+      },
       {
         "nombre": "La Patilla",
         "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/",
@@ -310,136 +273,18 @@
         "nombre": "La Manana (Falcon)",
         "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/",
         "fecha": "2026-07-27T11:52:51+00:00"
+      },
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/",
+        "fecha": "2026-07-27T13:27:30+00:00"
       }
     ],
-    "fecha_evento": "2026-07-27T11:52:51+00:00",
+    "fecha_evento": "2026-07-27T15:27:00+00:00",
     "fecha_evento_temprana": "2026-07-27T10:35:10+00:00",
-    "fecha_deteccion": "2026-07-27T12:40:23.203107+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Altamira, Municipio Bolívar, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altamira, Municipio Bolívar, Barinas\n🕒 Hecho reportado: 27/07/2026, 12:00 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 8:40 a.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": "Bolívar",
-    "parroquia": "Altamira",
-    "severidad": "sin_clasificar",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/",
-        "fecha": "2026-07-27T04:00:00+00:00"
-      },
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html",
-        "fecha": "2026-07-27T03:02:28+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T04:00:00+00:00",
-    "fecha_evento_temprana": "2026-07-27T03:02:28+00:00",
-    "fecha_deteccion": "2026-07-27T12:40:30.082988+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Deslizamiento/Derrumbe en Municipio Bolívar, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Bolívar, Barinas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Barinas\n🕒 Hecho reportado: 26/07/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 8:38 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": "Bolívar",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.75,
-    "confirmado": true,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/",
-        "fecha": "2026-07-26T18:48:23+00:00"
-      },
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/",
-        "fecha": "2026-07-26T19:45:58+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/",
-        "fecha": "2026-07-27T00:15:18+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T00:15:18+00:00",
-    "fecha_deteccion": "2026-07-27T00:38:04.803969+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Inundación en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 26/07/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:04 p.m.\n📊 Fuentes independientes: 5 (score 3.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=316662\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/\n  • El Carabobeno: https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/\n  • El Siglo (Aragua): https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
-    "tipo": "inundacion",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "Antimano",
-    "severidad": "sin_clasificar",
-    "score": 3.1,
-    "confirmado": true,
-    "num_fuentes": 5,
-    "fuentes": [
-      {
-        "nombre": "El Luchador (Bolivar)",
-        "link": "https://elluchador.info/?p=316662",
-        "fecha": "2026-07-26T15:16:00+00:00"
-      },
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/",
-        "fecha": "2026-07-26T16:30:00+00:00"
-      },
-      {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/",
-        "fecha": "2026-07-26T17:42:10+00:00"
-      },
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/",
-        "fecha": "2026-07-26T14:59:12+00:00"
-      },
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/",
-        "fecha": "2026-07-26T14:48:20+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T17:42:10+00:00",
-    "fecha_deteccion": "2026-07-26T20:04:48.449519+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Tormenta eléctrica en Municipio Valencia, Carabobo",
-    "texto": "📌 Tormenta eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 ALTO\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 26/07/2026, 2:20 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 ALTO: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
-        "fecha": "2026-07-26T18:20:03+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T18:20:03+00:00",
-    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "tormenta_electrica::Zulia::2026-07-27"
   },
   {
     "titulo": "Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara",
@@ -467,51 +312,31 @@
     "fecha_evento": "2026-07-27T20:53:15+00:00",
     "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00"
+    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00",
+    "clave_dedup": "inundacion::Lara::2026-07-26"
   },
   {
-    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 26/07/2026, 9:45 a.m.\n🔎 Detectado por el sistema: 26/07/2026, 11:46 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/lluvias-torrenciales-causan-anegaciones-y-deslizamientos-de-tierra/",
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
+    "titulo": "Tormenta eléctrica en Municipio Valencia, Carabobo",
+    "texto": "📌 Tormenta eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 ALTO\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 26/07/2026, 2:20 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 ALTO: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
+    "tipo": "tormenta_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
     "parroquia": null,
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-anegaciones-y-deslizamientos-de-tierra/",
-        "fecha": "2026-07-26T13:45:05+00:00"
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
+        "fecha": "2026-07-26T18:20:03+00:00"
       }
     ],
-    "fecha_evento": "2026-07-26T13:45:05+00:00",
-    "fecha_deteccion": "2026-07-26T15:46:06.495017+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Inundación en Distrito Capital",
-    "texto": "📌 Inundación en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/07/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 25/07/2026, 11:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/cambio-climatico/lluvias-generaron-inundaciones-en-el-oeste-de-caracas/",
-    "tipo": "inundacion",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Efecto Cocuyo - General",
-        "link": "https://efectococuyo.com/cambio-climatico/lluvias-generaron-inundaciones-en-el-oeste-de-caracas/",
-        "fecha": "2026-07-25T23:53:26+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-25T23:53:26+00:00",
-    "fecha_deteccion": "2026-07-26T03:23:05.948689+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "fecha_evento": "2026-07-26T18:20:03+00:00",
+    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "tormenta_electrica::Carabobo::2026-07-26"
   },
   {
     "titulo": "Inundación en Monagas",
@@ -533,7 +358,8 @@
     ],
     "fecha_evento": "2026-07-26T01:51:09+00:00",
     "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Monagas::2026-07-26"
   },
   {
     "titulo": "Orden público en Distrito Capital",
@@ -555,7 +381,8 @@
     ],
     "fecha_evento": "2026-07-25T19:07:59+00:00",
     "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-07-25"
   },
   {
     "titulo": "Falla eléctrica en Lara",
@@ -577,28 +404,7 @@
     ],
     "fecha_evento": "2026-07-25T14:30:00+00:00",
     "fecha_deteccion": "2026-07-25T18:33:16.511124+00:00",
-    "estado_verificacion": "APROBADO_IA"
-  },
-  {
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n📌 Falla eléctrica en Lara\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/07/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 25/07/2026, 10:52 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/25/balance-de-activos-por-la-luz-20-sectores-de-lara-sufren-cortes-electricos-que-superan-las-94-horas-25jul/",
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/07/25/balance-de-activos-por-la-luz-20-sectores-de-lara-sufren-cortes-electricos-que-superan-las-94-horas-25jul/",
-        "fecha": "2026-07-25T14:30:00+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-25T14:30:00+00:00",
-    "fecha_deteccion": "2026-07-25T14:52:23.752532+00:00",
-    "estado_verificacion": "APROBADO_IA"
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-07-25"
   }
 ]

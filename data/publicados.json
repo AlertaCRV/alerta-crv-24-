@@ -4,11 +4,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-25T18:11:36.758052+00:00"
   },
-  "infraestructura_electrica::Lara::2026-07-25": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-25T18:33:16.511124+00:00"
-  },
   "sismo::Distrito Capital::2026-07-25": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -19,40 +14,10 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-25T18:11:34.814811+00:00"
   },
-  "orden_publico::Distrito Capital::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00"
-  },
-  "inundacion::Distrito Capital::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T03:23:05.948689+00:00"
-  },
-  "inundacion::Monagas::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00"
-  },
   "sismo::La Guaira::2026-07-26::mag3.3": {
     "severidad": "sin_clasificar",
     "confirmado": true,
     "fecha_deteccion": "2026-07-26T20:47:14.563188+00:00"
-  },
-  "inundacion::Distrito Capital::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-26T20:04:48.449519+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T15:46:06.495017+00:00"
-  },
-  "deslizamiento::Barinas::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-26T20:04:55.925543+00:00"
   },
   "vialidad::Bolivar::2026-07-26": {
     "severidad": "critico",
@@ -64,22 +29,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-26T20:05:13.268895+00:00"
   },
-  "tormenta_electrica::Carabobo::2026-07-26": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00"
-  },
-  "inundacion::Lara::2026-07-26": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00"
-  },
-  "deslizamiento::Barinas::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-28T03:25:45.793909+00:00",
-    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00"
-  },
   "salud_publica::Portuguesa::2026-07-26": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -89,42 +38,6 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-27T02:57:19.227152+00:00"
-  },
-  "inundacion::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
-    "fecha_evento_temprana": "2026-07-27T14:13:15+00:00"
-  },
-  "tormenta_electrica::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
-    "fecha_evento_temprana": "2026-07-27T13:27:30+00:00"
-  },
-  "infraestructura_electrica::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T16:02:12.489573+00:00",
-    "fecha_evento_temprana": "2026-07-27T14:00:00+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
-    "fecha_evento_temprana": "2026-07-27T13:45:56+00:00"
-  },
-  "colapso_estructural::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
-    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00"
-  },
-  "inundacion::Trujillo::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
-    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
   },
   "incendio::Portuguesa::2026-07-27": {
     "severidad": "sin_clasificar",
@@ -138,16 +51,82 @@
     "fecha_deteccion": "2026-07-27T18:17:46.004950+00:00",
     "fecha_evento_temprana": "2026-07-27T12:10:08+00:00"
   },
-  "inundacion::Lara::2026-07-27": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-28T03:25:52.657438+00:00",
-    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00"
+  "inundacion::Distrito Capital::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
+    "fecha_evento_temprana": "2026-07-25T23:53:26+00:00"
   },
-  "inundacion::Distrito Capital::2026-07-27": {
+  "inundacion::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00"
+  },
+  "deslizamiento::Barinas::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "fecha_evento_temprana": "2026-07-26T18:48:23+00:00"
+  },
+  "inundacion::Trujillo::2026-07-27": {
     "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
-    "fecha_evento_temprana": "2026-07-27T21:45:06+00:00"
+    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
+    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
+  },
+  "colapso_estructural::Zulia::2026-07-27": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
+    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-07-26": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
+    "fecha_evento_temprana": "2026-07-26T13:45:05+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T16:02:12.489573+00:00",
+    "fecha_evento_temprana": "2026-07-27T14:00:00+00:00"
+  },
+  "tormenta_electrica::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
+    "fecha_evento_temprana": "2026-07-27T10:35:10+00:00"
+  },
+  "inundacion::Lara::2026-07-26": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
+    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00"
+  },
+  "tormenta_electrica::Carabobo::2026-07-26": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
+    "fecha_evento_temprana": "2026-07-26T18:20:03+00:00"
+  },
+  "inundacion::Monagas::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00",
+    "fecha_evento_temprana": "2026-07-26T01:51:09+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
+    "fecha_evento_temprana": "2026-07-25T19:07:59+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-07-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-25T18:33:16.511124+00:00",
+    "fecha_evento_temprana": "2026-07-25T14:30:00+00:00"
   }
 }

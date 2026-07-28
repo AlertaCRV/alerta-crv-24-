@@ -1,35 +1,25 @@
 {
-  "actualizado": "2026-07-28T16:10:52.988086+00:00",
+  "actualizado": "2026-07-28T17:17:07.032462+00:00",
   "periodo_cubierto": {
-    "desde": "2026-07-26T17:42:10+00:00",
+    "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-27T21:45:06+00:00"
   },
-  "total_eventos": 17,
+  "total_eventos": 10,
   "por_tipo": {
-    "inundacion": 7,
-    "tormenta_electrica": 3,
-    "deslizamiento": 5,
+    "tormenta_electrica": 2,
+    "inundacion": 4,
     "infraestructura_electrica": 1,
+    "deslizamiento": 2,
     "colapso_estructural": 1
   },
   "ranking_estados": [
     {
       "estado": "Zulia",
-      "total": 6,
+      "total": 4,
       "confirmados": 3
     },
     {
-      "estado": "Barinas",
-      "total": 4,
-      "confirmados": 2
-    },
-    {
       "estado": "Distrito Capital",
-      "total": 3,
-      "confirmados": 1
-    },
-    {
-      "estado": "Lara",
       "total": 2,
       "confirmados": 1
     },
@@ -39,52 +29,62 @@
       "confirmados": 0
     },
     {
+      "estado": "Lara",
+      "total": 1,
+      "confirmados": 1
+    },
+    {
       "estado": "Trujillo",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Barinas",
+      "total": 1,
+      "confirmados": 1
     }
   ],
   "cruce_estado_tipo": {
-    "Distrito Capital": {
-      "inundacion": 2,
-      "deslizamiento": 1
-    },
     "Carabobo": {
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 2
-    },
-    "Barinas": {
-      "deslizamiento": 4
+      "inundacion": 1
     },
     "Zulia": {
-      "inundacion": 2,
-      "tormenta_electrica": 2,
+      "tormenta_electrica": 1,
       "infraestructura_electrica": 1,
-      "colapso_estructural": 1
+      "colapso_estructural": 1,
+      "inundacion": 1
+    },
+    "Distrito Capital": {
+      "deslizamiento": 1,
+      "inundacion": 1
     },
     "Trujillo": {
       "inundacion": 1
+    },
+    "Barinas": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
-    "sin_clasificar": 12,
     "alto": 2,
-    "critico": 3
+    "critico": 2,
+    "sin_clasificar": 6
   },
   "serie_mensual_por_tipo": {
-    "inundacion": {
-      "2026-07": 7
-    },
     "tormenta_electrica": {
-      "2026-07": 3
+      "2026-07": 2
     },
-    "deslizamiento": {
-      "2026-07": 5
+    "inundacion": {
+      "2026-07": 4
     },
     "infraestructura_electrica": {
       "2026-07": 1
+    },
+    "deslizamiento": {
+      "2026-07": 2
     },
     "colapso_estructural": {
       "2026-07": 1

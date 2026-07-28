@@ -597,6 +597,32 @@ def verificar_evento_con_ia(evento):
             texto_fuentes_norm = _normalizar(
                 " ".join(m["texto"] for g in candidatos for m in g)
             )
+            # Un municipio/parroquia que por coincidencia se llama igual que
+            # su propio estado (frecuente en capitales de estado
+            # venezolanas, ej. municipio "Barinas" del estado Barinas) o que
+            # el pais ("Venezuela") aparece textualmente en casi cualquier
+            # articulo sobre esa zona solo por mencionar el nombre del
+            # estado/pais -- no es evidencia real de esa entidad
+            # administrativa especifica. classify.py ya excluye este caso en
+            # su busqueda determinista (_buscar_municipio_directo/
+            # _buscar_parroquia_directa); se aplica el mismo criterio aqui
+            # para que la IA no "confirme" su propia alucinacion solo porque
+            # el nombre del estado esta trivialmente presente en el texto.
+            ubicacion_norm = _normalizar(evento["ubicacion"])
+            if municipio_ia and _normalizar(municipio_ia) in (ubicacion_norm, "venezuela"):
+                print(
+                    f"[WARN] Groq propuso municipio '{municipio_ia}', igual al nombre del "
+                    f"estado/pais; se descarta por no ser evidencia de un municipio "
+                    f"especifico."
+                )
+                municipio_ia = None
+            if parroquia_ia and _normalizar(parroquia_ia) in (ubicacion_norm, "venezuela"):
+                print(
+                    f"[WARN] Groq propuso parroquia '{parroquia_ia}', igual al nombre del "
+                    f"estado/pais; se descarta por no ser evidencia de una parroquia "
+                    f"especifica."
+                )
+                parroquia_ia = None
             if municipio_ia and _normalizar(municipio_ia) not in texto_fuentes_norm:
                 print(
                     f"[WARN] Groq propuso municipio '{municipio_ia}' pero ese nombre no "
