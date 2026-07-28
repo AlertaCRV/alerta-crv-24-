@@ -1,4 +1,5 @@
 import calendar
+import html
 import re
 import time
 from datetime import datetime, timezone
@@ -35,6 +36,17 @@ LONGITUD_MAXIMA_TEXTO_COMPLETO = 4000
 
 
 def _limpiar_texto(texto):
+    # Algunos feeds entregan sus entidades HTML doblemente escapadas (el feed
+    # crudo trae "&amp;#8230;", que tras un solo unescape -- el que ya hace
+    # feedparser/BeautifulSoup -- queda como el texto literal "&#8230;" en
+    # vez del caracter real "…"). Sin este segundo unescape, "&#8230;"/
+    # "&hellip;" no coinciden con _TRUNCADO_RE (que busca el caracter real),
+    # asi que el resumen truncado nunca dispara la descarga del texto
+    # completo -- y detalles clave (ubicacion, muertes, heridos) quedan
+    # fuera del texto que ve el clasificador sin que nada lo avise. Caso
+    # real: un resumen que terminaba en "...colapsara, como&#8230;",
+    # truncado justo antes de la ubicacion y la palabra "murio".
+    texto = html.unescape(texto)
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()

@@ -233,11 +233,11 @@
     "clave_dedup": "deslizamiento::Distrito Capital::2026-07-26"
   },
   {
-    "titulo": "Falla eléctrica en Municipio Cabimas, Zulia",
-    "texto": "📌 Falla eléctrica en Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/07/2026, 10:52 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/07/2026, 10:52 a.m.\n🔎 Detectado por el sistema: 27/07/2026, 12:02 p.m.\n📊 Fuentes independientes: 3 (score 1.75)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/",
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
-    "municipio": "Cabimas",
+    "municipio": null,
     "parroquia": null,
     "severidad": "sin_clasificar",
     "score": 1.75,

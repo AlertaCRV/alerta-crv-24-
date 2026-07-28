@@ -366,8 +366,17 @@ def _conteos_globales_ubicaciones():
 def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
     """Busca el nombre de un municipio mencionado directamente en el texto
     (sin la palabra 'municipio' delante). Descarta nombres muy cortos,
-    repetidos en varios estados, o identicos al nombre del propio estado."""
+    repetidos en varios estados, o identicos al nombre del propio estado.
+
+    Si el texto menciona mas de un municipio distinto del mismo estado (caso
+    real: "afectaron principalmente a los municipios Maracaibo, San
+    Francisco, Cabimas, Mara y La Cañada de Urdaneta" -- una lista de 5
+    municipios igualmente afectados), no se elige arbitrariamente el primero
+    que aparezca en el orden de iteracion: eso afirmaria falsamente que solo
+    ese municipio fue afectado. Se devuelve None (igual que cuando no se
+    encuentra ninguno), dejando la ubicacion a nivel de solo el estado."""
     conteo_municipios, _ = _conteos_globales_ubicaciones()
+    encontrados = set()
     for normalizado, original in _municipios_por_variante(detalle_estado).items():
         if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
             continue
@@ -376,7 +385,9 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
         if normalizado == nombre_estado_norm or normalizado == _NOMBRE_PAIS_NORM:
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
-            return original
+            encontrados.add(original)
+    if len(encontrados) == 1:
+        return next(iter(encontrados))
     return None
 
 

@@ -1710,3 +1710,175 @@ sincronizado ambos lugares. Se regeneraron las estadísticas con
 
 Validado con `python3 scripts/validar_configs.py` y con los casos de prueba
 descritos arriba para ambos fixes de código.
+
+---
+
+## Auditoría diaria autónoma: cuatro bugs de raíz, uno con corrección retroactiva (28-07-2026, tercera pasada)
+
+Tercera auditoría de rutina del día (sin que el usuario la pidiera). Se
+revisaron las 14 alertas actualmente publicadas en `docs/data/noticias.json`
+contra el texto real de sus fuentes. Se encontraron y corrigieron cuatro
+bugs de raíz distintos; solo uno de ellos afectaba un dato ya publicado.
+
+### 1. Un solo municipio "ganador" cuando el texto menciona varios por igual
+
+La alerta "Falla eléctrica en Municipio Cabimas, Zulia" (3 fuentes,
+CONFIRMADO) afirmaba que el corte eléctrico era específicamente de Cabimas,
+pero una de sus propias fuentes ("Diario La Nacion") dice explícitamente:
+"...afectaron principalmente a los municipios Maracaibo, San Francisco,
+**Cabimas**, Mara y La Cañada de Urdaneta" — cinco municipios igualmente
+afectados, no uno solo. Afirmar solo Cabimas implica falsamente que los
+otros cuatro no fueron afectados.
+
+**Causa raíz** (`scripts/classify.py`, `_buscar_municipio_directo`): la
+función itera las variantes de nombre de municipio del estado y devuelve el
+**primero** que encuentra mencionado en el texto, sin verificar si hay
+**otros** municipios distintos también mencionados en ese mismo texto. Con
+una lista de varios municipios en una sola oración, el resultado depende
+solo del orden de iteración del diccionario interno, no de cuál aparece
+primero en el texto ni de si hay uno solo. El caso ya conocido y corregido
+de "Cabimas"/"Guajira" (27-07-2026) era sobre una parroquia inventada por la
+IA sin respaldo alguno; este es distinto: un municipio real y mencionado,
+pero uno entre varios igualmente válidos, elegido arbitrariamente.
+
+**Corrección** (`scripts/classify.py`): `_buscar_municipio_directo` ahora
+junta TODOS los municipios candidatos que aparecen en el texto (no se
+detiene en el primero) y solo devuelve uno si es el **único** encontrado;
+si hay dos o más, o ninguno, devuelve `None` — igual que el resto del
+código de esta función prefiere `None` a una ubicación potencialmente
+engañosa. Probado con el caso real (5 municipios en una oración → `None`,
+antes devolvía "Cabimas") y contra las 34 fuentes de
+`data/historico_fuentes_texto.jsonl` como regresión: ningún caso con un
+único municipio mencionado cambia de resultado (Valencia/Carabobo,
+Simón Planas/Lara, Bolívar/Barinas, Bocono/Trujillo, y la inferencia de
+Libertador/Distrito Capital vía parroquia Antímano, todos sin cambios).
+
+**Corrección retroactiva**: se quitó el municipio "Cabimas" de la alerta ya
+publicada en `docs/data/noticias.json` (regenerando `titulo`/`texto`,
+quedando "Falla eléctrica en Zulia") y `data/historico_eventos.jsonl`. Los
+informes narrativos ya publicados (`2026-07_infraestructura_electrica.json`,
+`2026-07_general.json`) ya mencionaban correctamente los 5 municipios en su
+texto (se generan resumiendo el texto completo de las fuentes, no el campo
+`municipio` del evento), así que no requirieron corrección. Se regeneraron
+las estadísticas.
+
+### 2. El anclaje textual de ubicación de la IA usaba fuentes ya rechazadas del mismo cluster
+
+Al revisar el mecanismo de verificación de ubicación asistida por IA
+(agregado el 27-07-2026 tras el caso de "Parroquia San Francisco, Municipio
+Maracaibo" inventado), se encontró que el chequeo de anclaje —"el
+municipio/parroquia que proponga la IA solo se acepta si aparece
+textualmente en las fuentes"— usaba el texto de **todos los candidatos**
+evaluados en esa llamada a Groq (`candidatos`), no solo el de las fuentes
+que la IA termina aprobando (`grupos_aprobados`). Como la verificación de
+plausibilidad y la inferencia de ubicación ocurren en la misma llamada,
+una fuente del mismo cluster que la IA rechaza por describir un hecho
+distinto (u otro criterio de plausibilidad) puede seguir "anclando" un
+municipio/parroquia que ninguna fuente realmente publicada menciona.
+
+**Causa raíz** (`scripts/verify_ai.py`, `verificar_evento_con_ia`):
+`texto_fuentes_norm` se construía con `for g in candidatos for m in g`
+en vez de `for g in grupos_aprobados for m in g` — este último ya estaba
+calculado y disponible en ese punto del código (se usa un poco antes para
+el chequeo `if not grupos_aprobados: return None`).
+
+**Corrección**: se cambió `candidatos` por `grupos_aprobados` en la
+construcción de `texto_fuentes_norm`. Probado con un caso simulado (mock de
+la respuesta de Groq, sin llamada real a la API): un cluster de 2 fuentes,
+una que menciona explícitamente "Sinamaica"/"municipio Indígena Bolivariano
+Guajira" pero que la IA rechaza (`NO`, hecho distinto), y otra que la IA sí
+aprueba (`SI`) pero sin esa ubicación en su propio texto — con el código
+viejo la ubicación de la fuente rechazada se colaba igual en el evento
+publicado; con el fix, se descarta correctamente (`municipio`/`parroquia`
+quedan `None`). Un segundo caso de control (ubicación mencionada en la
+fuente que sí se aprueba) sigue funcionando sin cambios.
+
+No se encontró ninguna alerta actualmente publicada afectada por este bug
+específico: se revisó la alerta más parecida al patrón ("Colapso
+estructural en Parroquia Sinamaica, Municipio Indígena Bolivariano Guajira,
+Zulia") y su municipio/parroquia ya habían sido confirmados como correctos
+en una sesión anterior (27-07-2026, "texto completo obtenido manualmente de
+la página del artículo" por el usuario) — no hace falta ni conviene tocar
+ese dato ya verificado. El fix queda para prevenir el mismo problema en
+clusters futuros con fuentes rechazadas que mencionen una ubicación
+distinta a la del hecho real.
+
+### 3. Entidades HTML dobles impedían detectar resúmenes de RSS truncados
+
+Siguiendo el hilo del bug anterior: la fuente de esa misma alerta de
+colapso estructural sigue almacenada, en
+`data/historico_fuentes_texto.jsonl`, con el resumen truncado ("...una
+vivienda colapsara, como&#8230;") en vez del texto completo que el usuario
+confirmó manualmente el 27-07-2026. Es decir, el mecanismo automático de
+`fetch_rss.py` para traer el texto completo cuando el resumen viene
+truncado (agregado ese mismo día) nunca se disparó para esta fuente en la
+corrida real.
+
+**Causa raíz** (`scripts/fetch_rss.py`, `_limpiar_texto`/`_TRUNCADO_RE`):
+el feed de esta fuente entrega su marca de truncamiento como entidad HTML
+numérica ("&#8230;") en vez del carácter real "…" o de puntos suspensivos
+literales. `_TRUNCADO_RE` busca el carácter Unicode real, así que nunca
+coincide con el texto literal "&#8230;" -- la entidad no se decodifica en
+ningún punto de la limpieza de texto (`feedparser`/`BeautifulSoup` ya
+decodifican una vez, pero algunos feeds entregan sus entidades doblemente
+escapadas, dejando un residuo como este tras un solo `unescape`). El mismo
+patrón aparece en otras fuentes ya publicadas (p.ej. "El fenómeno&#8230;"
+en la fuente de Turimiquire sobre el rayo en Valencia, Carabobo) — un
+problema sistémico, no de una sola fuente.
+
+**Corrección** (`scripts/fetch_rss.py`): se agregó `html.unescape()` al
+inicio de `_limpiar_texto()`, antes de los demás pasos de limpieza. Probado
+con el texto real de la fuente del colapso estructural ("...como&#8230;" →
+ahora sí coincide con `_TRUNCADO_RE` y dispara la descarga del texto
+completo), con el caso del rayo en Carabobo, con texto sin truncar (no debe
+activar el chequeo), y con los dos formatos ya soportados (elipsis real y
+"[...]"), sin regresión.
+
+No se intentó volver a descargar el texto completo real de estas fuentes ya
+publicadas para esta corrección (las URLs son de fuentes de prensa externas
+y el dato ya fue verificado manualmente por el usuario en su momento); el
+fix solo previene que el mismo problema oculte información en fuentes
+nuevas de aquí en adelante.
+
+### 4. `redactar_noticia()` descartaba en silencio el texto recién regenerado
+
+Al intentar aplicar la corrección retroactiva del bug 1 (punto 1 de esta
+misma auditoría), se detectó que llamar a
+`render.redactar_noticia(evento)` sobre un evento que **ya tiene** sus
+propias claves `titulo`/`texto` (exactamente el caso de regenerar el texto
+de una alerta ya publicada, el patrón usado en casi todas las correcciones
+retroactivas anteriores documentadas en este roadmap) no tiene ningún
+efecto: el `titulo`/`texto` viejos sobreviven sin cambios, sin ningún error
+que lo advierta.
+
+**Causa raíz** (`scripts/render.py`, `redactar_noticia`): la función
+retorna `{"titulo": titulo, "texto": texto, **evento}` — como `evento` ya
+trae sus propias claves `"titulo"`/`"texto"` (las del texto viejo), el
+`**evento` puesto **después** las sobreescribe de vuelta, ganando siempre
+sobre los valores recién calculados. En el uso normal del pipeline
+(`scripts/main.py`, sobre un evento recién verificado que todavía no tiene
+`titulo`/`texto`) esto nunca se nota, porque no hay colisión de claves —
+por eso el bug pasó inadvertido pese a usarse la función repetidamente para
+correcciones retroactivas.
+
+**Corrección**: se invirtió el orden — `{**evento, "titulo": titulo,
+"texto": texto}` — para que el texto recién calculado gane siempre,
+sin cambiar el comportamiento para el uso normal (evento sin esas claves
+todavía). Se verificó que las correcciones retroactivas anteriores de esta
+misma auditoría (punto 1) sí toman efecto ahora sin necesidad de que quien
+llama a la función recuerde borrar `titulo`/`texto` de antemano.
+
+Se revisó también si alguna alerta ya publicada tiene `titulo`/`texto`
+desincronizado de sus propios datos (síntoma de que este bug ya afectó una
+corrección retroactiva anterior): las únicas discrepancias encontradas
+(4 alertas con etiquetas de severidad en formato antiguo, "ALTO"/"BAJO" en
+vez de "SEVERIDAD ALTA"/"SEVERIDAD BAJA") son de alertas nunca tocadas por
+una corrección retroactiva -- corresponden a un cambio de formato de
+`SEVERIDAD_EMOJI` anterior a su publicación, no a este bug. No se
+encontró ninguna alerta con datos y texto realmente inconsistentes; se
+dejan esas 4 etiquetas de formato antiguo sin tocar (es un cambio
+cosmético, no un error de clasificación, y no justifica una corrección
+retroactiva por sí solo).
+
+Validado con `python3 scripts/validar_configs.py` y con los casos de
+prueba descritos arriba para los cuatro fixes de código.
