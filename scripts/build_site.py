@@ -15,6 +15,15 @@ def actualizar_datos_sitio(noticias_nuevas):
     else:
         noticias = []
 
+    # Una noticia_nueva puede ser una actualizacion de un evento ya publicado
+    # (misma clave_dedup, ver state.py) -- en ese caso se reemplaza la
+    # entrada anterior en vez de agregar una segunda entrada para el mismo
+    # hecho real. Las noticias sin clave_dedup (dato antiguo previo a este
+    # cambio) nunca coinciden con nada y se conservan tal cual.
+    claves_nuevas = {n["clave_dedup"] for n in noticias_nuevas if n.get("clave_dedup")}
+    if claves_nuevas:
+        noticias = [n for n in noticias if n.get("clave_dedup") not in claves_nuevas]
+
     noticias = noticias_nuevas + noticias
 
     limite = datetime.now(timezone.utc) - timedelta(days=DIAS_RETENCION_SITIO)

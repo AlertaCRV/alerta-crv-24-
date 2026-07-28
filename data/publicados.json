@@ -81,8 +81,9 @@
   },
   "deslizamiento::Barinas::2026-07-27": {
     "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T12:40:30.082988+00:00"
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "fecha_evento_temprana": "2026-07-27T19:35:59+00:00"
   },
   "salud_publica::Portuguesa::2026-07-26": {
     "severidad": "sin_clasificar",
@@ -96,8 +97,9 @@
   },
   "inundacion::Zulia::2026-07-27": {
     "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T12:40:19.835403+00:00"
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
+    "fecha_evento_temprana": "2026-07-27T14:13:15+00:00"
   },
   "tormenta_electrica::Zulia::2026-07-27": {
     "severidad": "sin_clasificar",
@@ -116,5 +118,41 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
     "fecha_evento_temprana": "2026-07-27T13:45:56+00:00"
+  },
+  "colapso_estructural::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
+    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00"
+  },
+  "inundacion::Trujillo::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
+    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
+  },
+  "incendio::Portuguesa::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T18:17:21.724944+00:00",
+    "fecha_evento_temprana": "2026-07-27T18:06:57+00:00"
+  },
+  "orden_publico::Barinas::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T18:17:46.004950+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:10:08+00:00"
+  },
+  "inundacion::Lara::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T22:18:52.748019+00:00",
+    "fecha_evento_temprana": "2026-07-27T20:53:15+00:00"
+  },
+  "inundacion::Distrito Capital::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
+    "fecha_evento_temprana": "2026-07-27T21:45:06+00:00"
   }
 }

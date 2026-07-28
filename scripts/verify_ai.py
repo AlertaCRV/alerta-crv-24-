@@ -105,6 +105,46 @@ def _vialidad_sin_evidencia_fuerte(texto):
     return not tiene_evidencia
 
 
+# Filtro determinista para tipo=incendio: un incendio de un solo vehiculo en
+# la via (una gandola, un camion) es un incidente rutinario de transito, no
+# una emergencia que requiera respuesta de la Cruz Roja -- mismo patron que
+# el filtro de vialidad. Solo se descarta cuando el incendio involucra un
+# vehiculo; un incendio forestal, estructural o de otro tipo no pasa por
+# este filtro. A diferencia de vialidad (que acepta CUALQUIERA de varias
+# senales), aqui el usuario pidio explicitamente una condicion mas estricta:
+# la fuente debe describir el hecho como un accidente MULTIPLE Y mencionar
+# heridos o fallecidos -- ambas cosas a la vez, no una sola.
+_VEHICULO_INCENDIO_RE = re.compile(
+    r"\b(gandolas?|g[aá]ndolas?|camion(?:es)?|cami[oó]n(?:es)?|vehiculos?|veh[ií]culos?|"
+    r"carros?|automovil(?:es)?|autom[oó]vil(?:es)?|motos?|motorizados?|autobus(?:es)?|"
+    r"autob[uú]s(?:es)?|busetas?|furgones?|furg[oó]n(?:es)?|tractomulas?|cisternas?|"
+    r"camionetas?|rastras?)\b",
+    re.IGNORECASE,
+)
+_ACCIDENTE_MULTIPLE_RE = re.compile(
+    r"\b(colision multiple|colisión múltiple|choque multiple|choque múltiple|"
+    r"accidente masivo|accidente multiple|accidente múltiple|varios vehiculos|"
+    r"varios vehículos|multiples vehiculos|múltiples vehículos|"
+    r"choque entre varios vehiculos|choque entre varios vehículos)\b",
+    re.IGNORECASE,
+)
+_VICTIMAS_INCENDIO_RE = re.compile(
+    r"\b(herido|herida|heridos|heridas|lesionado|lesionada|lesionados|lesionadas|"
+    r"fallecido|fallecida|fallecidos|fallecidas|muerto|muerta|muertos|muertas|"
+    r"victima fatal|víctima fatal|victimas fatales|víctimas fatales)\b",
+    re.IGNORECASE,
+)
+
+
+def _incendio_vehiculo_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _VEHICULO_INCENDIO_RE.search(texto_norm):
+        return False  # no es un incendio de vehiculo, este filtro no aplica
+    tiene_accidente_multiple = _ACCIDENTE_MULTIPLE_RE.search(texto_norm) is not None
+    tiene_victimas = _VICTIMAS_INCENDIO_RE.search(texto_norm) is not None
+    return not (tiene_accidente_multiple and tiene_victimas)
+
+
 # Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
 # hoy son temblores menores sin ningun dano real, y estan empañando el
 # proposito del sistema (demasiados reportes de baja relevancia). Un sismo
@@ -231,8 +271,17 @@ BLOQUE_UBICACION_DETALLADA_TEMPLATE = (
 
 
 def _listas_ubicacion_valida(estado):
+    """Aplana la jerarquia estado->municipio->parroquias (ver classify.py)
+    en dos listas simples de nombres validos, solo para este prompt de
+    asistencia de IA -- no necesita la relacion municipio/parroquia
+    completa, la deteccion deterministica en classify.py si la respeta."""
     detalle = load_ubicaciones_detalle().get(estado, {})
-    return detalle.get("municipios", []), detalle.get("parroquias", [])
+    municipios = list(detalle.get("municipios", {}).keys())
+    parroquias = [
+        p for info in detalle.get("municipios", {}).values()
+        for p in info.get("parroquias", [])
+    ]
+    return municipios, parroquias
 
 
 def _extraer_municipio_parroquia(respuesta_texto, municipios_validos, parroquias_validos):
@@ -407,6 +456,8 @@ def verificar_evento_con_ia(evento):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)
+        elif evento["tipo"] == "incendio" and _incendio_vehiculo_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
         elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)
         else:
@@ -509,6 +560,23 @@ def verificar_evento_con_ia(evento):
             municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
                 respuesta, municipios_validos, parroquias_validos
             )
+            texto_fuentes_norm = _normalizar(
+                " ".join(m["texto"] for g in candidatos for m in g)
+            )
+            if municipio_ia and _normalizar(municipio_ia) not in texto_fuentes_norm:
+                print(
+                    f"[WARN] Groq propuso municipio '{municipio_ia}' pero ese nombre no "
+                    f"aparece textualmente en las fuentes; se descarta para evitar una "
+                    f"ubicación inventada."
+                )
+                municipio_ia = None
+            if parroquia_ia and _normalizar(parroquia_ia) not in texto_fuentes_norm:
+                print(
+                    f"[WARN] Groq propuso parroquia '{parroquia_ia}' pero ese nombre no "
+                    f"aparece textualmente en las fuentes; se descarta para evitar una "
+                    f"ubicación inventada."
+                )
+                parroquia_ia = None
             if evento.get("municipio") is None and municipio_ia:
                 evento["municipio"] = municipio_ia
             if evento.get("parroquia") is None and parroquia_ia:

@@ -121,29 +121,69 @@ def _contiene_palabra_clave_no_negada(texto_norm, palabra):
 
 
 def detectar_ubicacion(texto):
-    """Devuelve (nombre_estado, ventana_cercana) o (None, None).
+    """Devuelve una lista de (nombre_estado, ventana_cercana) -- una entrada
+    por cada estado mencionado con evidencia clara de tipo de emergencia
+    cerca (o via hashtag). Un articulo-resumen que cubre varios estados
+    (comun en coberturas de lluvias/tormentas a nivel nacional) puede asi
+    generar un evento por cada estado con evidencia real, en vez de
+    quedarse solo con el primero que aparezca en el orden de
+    config/estados.yaml y perder silenciosamente los demas.
 
     ventana_cercana es el fragmento de texto alrededor de la mención del
-    estado que confirmó la ubicación; detectar_tipo() lo usa para no
-    clasificar el tipo de emergencia a partir de palabras clave sueltas en
-    otra parte del artículo. Es None cuando la ubicación viene de un hashtag
-    (no hay una "mención en el texto" de la cual tomar una ventana).
+    estado que confirmó la ubicación; detectar_tipo()/detectar_severidad()
+    lo usan para no tomar palabras clave de otra parte del artículo que
+    describe un estado distinto. Es None cuando la ubicación viene de un
+    hashtag (no hay una "mención en el texto" de la cual tomar una
+    ventana).
     """
     estados = load_estados()
     hashtags = [h.lower() for h in _HASHTAG_RE.findall(texto)]
 
+    encontrados = []
+    vistos = set()
+
     for nombre_estado, alias in estados.items():
         for tag in hashtags:
             if tag in alias or tag == nombre_estado.lower().replace(" ", ""):
-                return nombre_estado, None
+                if nombre_estado not in vistos:
+                    encontrados.append((nombre_estado, None))
+                    vistos.add(nombre_estado)
+                break
 
-    return _detectar_ubicacion_texto_plano(texto, estados)
+    for nombre_estado, ventana in _detectar_ubicacion_texto_plano(texto, estados):
+        if nombre_estado not in vistos:
+            encontrados.append((nombre_estado, ventana))
+            vistos.add(nombre_estado)
+
+    return encontrados
+
+
+def _posiciones_de_estados(tokens, estados):
+    """Posiciones (indice de token) donde comienza la mencion de CUALQUIER
+    estado en el texto -- se usa para que la ventana de proximidad de un
+    estado nunca se extienda hasta la mencion de otro estado distinto (ver
+    _ventana_cerca). Sin esto, un articulo-resumen que menciona varios
+    estados en un mismo parrafo corto puede terminar atribuyendole a un
+    estado la severidad/tipo de un hecho que en realidad describe a otro."""
+    posiciones = []
+    for nombre_estado, alias in estados.items():
+        for candidato in set(alias) | {_normalizar(nombre_estado)}:
+            candidato_tokens = candidato.split()
+            primera = candidato_tokens[0]
+            n = len(candidato_tokens)
+            for i, t in enumerate(tokens):
+                if t == primera and tokens[i:i + n] == candidato_tokens:
+                    if not _es_mencion_subestatal(tokens, i) and not _es_mencion_direccional(tokens, i, candidato_tokens):
+                        posiciones.append(i)
+    return sorted(set(posiciones))
 
 
 def _detectar_ubicacion_texto_plano(texto, estados):
     texto_norm = _normalizar(texto)
     palabras_tipo = [p for lista in load_keywords()["tipos"].values() for p in lista]
     tokens = _tokens(texto)
+    posiciones_estados = _posiciones_de_estados(tokens, estados)
+    resultado = []
 
     for nombre_estado, alias in estados.items():
         candidatos = set(alias) | {_normalizar(nombre_estado)}
@@ -158,11 +198,12 @@ def _detectar_ubicacion_texto_plano(texto, estados):
             if any(frase in texto_norm for frase in lista_negra):
                 continue
 
-            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo)
+            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
             if ventana:
-                return nombre_estado, ventana
+                resultado.append((nombre_estado, ventana))
+                break  # ya se confirmo este estado, seguir con el siguiente
 
-    return None, None
+    return resultado
 
 
 _CALIFICADORES_SUBESTATALES = {"municipio", "parroquia"}
@@ -199,9 +240,18 @@ def _es_mencion_direccional(tokens, pos, candidato_tokens):
     return False
 
 
-def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
+def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
-    alguna palabra clave de tipo, o None si no hay ninguna cerca."""
+    alguna palabra clave de tipo, o None si no hay ninguna cerca.
+
+    Si se pasan posiciones_estados (posiciones de TODAS las menciones de
+    estados en el texto), la ventana se recorta para no cruzar la mencion
+    mas cercana de OTRO estado, evitando que un articulo que habla de varios
+    estados mezcle detalles (tipo/severidad) de uno con los de otro. Las
+    menciones repetidas del MISMO estado (p.ej. el nombre de un medio local
+    como "Zulia Sin Censura") no cuentan como frontera -- de lo contrario
+    la ventana podia cortarse antes de llegar a un dato clave (una muerte,
+    heridos) que esta mas cerca de esa repeticion que de un estado distinto."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
@@ -211,9 +261,21 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
         and not _es_mencion_subestatal(tokens, i)
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
     ]
+    posiciones_otros_estados = None
+    if posiciones_estados:
+        propias = set(posiciones)
+        posiciones_otros_estados = [p for p in posiciones_estados if p not in propias]
     for pos in posiciones:
-        inicio = max(0, pos - VENTANA_PROXIMIDAD_PALABRAS)
-        fin = min(len(tokens), pos + VENTANA_PROXIMIDAD_PALABRAS)
+        limite_izq, limite_der = 0, len(tokens)
+        if posiciones_otros_estados:
+            anteriores = [p for p in posiciones_otros_estados if p < pos]
+            siguientes = [p for p in posiciones_otros_estados if p > pos]
+            if anteriores:
+                limite_izq = max(limite_izq, max(anteriores) + 1)
+            if siguientes:
+                limite_der = min(limite_der, min(siguientes))
+        inicio = max(limite_izq, pos - VENTANA_PROXIMIDAD_PALABRAS)
+        fin = min(limite_der, pos + VENTANA_PROXIMIDAD_PALABRAS)
         ventana = " ".join(tokens[inicio:fin])
         for palabra in palabras_tipo:
             if _contiene_palabra_clave(ventana, palabra):
@@ -223,57 +285,82 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo):
 
 _LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
 
+# ubicaciones_detalle.json trae la jerarquia real (estado -> municipio ->
+# sus propias parroquias), tomada del listado de codigos de division
+# politico-territorial (COD-AB/PCode) del INE. Antes el archivo tenia dos
+# listas planas por estado (municipios y parroquias) sin relacion entre
+# si, lo que permitia combinar un municipio de una fuente con una
+# parroquia de otra que en realidad pertenecia a un municipio distinto
+# (caso real: "Parroquia Guajira, Municipio Cabimas, Zulia" -- Guajira es
+# una parroquia del municipio "Indigena Bolivariano Guajira", no de
+# Cabimas).
 _conteo_global_municipios = None
 _conteo_global_parroquias = None
+_indice_parroquias_por_estado = {}
 
 
-def _variantes_nombre(entrada):
-    """Una entrada de ubicaciones_detalle.json es normalmente un string (el
-    nombre oficial), pero puede ser una lista [nombre_oficial, alias...]
-    cuando el nombre oficial casi nunca se usa en la prensa (p.ej. el
-    municipio "Bolivariano Guaicaipuro" se menciona casi siempre solo como
-    "Guaicaipuro"). Devuelve (nombre_canonico, [todas las variantes que
-    deben reconocerse, incluido el propio canonico])."""
-    if isinstance(entrada, list):
-        return entrada[0], entrada
-    return entrada, [entrada]
+def _municipios_por_variante(detalle_estado):
+    """{nombre_normalizado: municipio_canonico} para todas las variantes
+    (nombre oficial + alias) de los municipios de un estado."""
+    resultado = {}
+    for municipio, info in detalle_estado.get("municipios", {}).items():
+        variantes = [municipio] + ([info["alias"]] if info.get("alias") else [])
+        for variante in variantes:
+            resultado[_normalizar(variante)] = municipio
+    return resultado
+
+
+def _parroquias_de(detalle_estado, municipio):
+    """{nombre_normalizado: parroquia_canonica} de un municipio especifico."""
+    info = detalle_estado.get("municipios", {}).get(municipio, {})
+    return {_normalizar(p): p for p in info.get("parroquias", [])}
+
+
+def _indice_parroquias_estado(detalle_estado):
+    """{nombre_normalizado: [(municipio, parroquia_canonica), ...]} de TODAS
+    las parroquias del estado, para resolver una parroquia mencionada sin
+    saber todavia a que municipio pertenece. Una misma parroquia puede
+    (rara vez) repetirse en mas de un municipio del mismo estado."""
+    resultado = {}
+    for municipio, info in detalle_estado.get("municipios", {}).items():
+        for parroquia in info.get("parroquias", []):
+            resultado.setdefault(_normalizar(parroquia), []).append((municipio, parroquia))
+    return resultado
 
 
 def _conteos_globales_ubicaciones():
-    """Cuenta en cuantos estados distintos aparece cada variante de nombre de
-    municipio o parroquia. Muchos son nombres de proceres/estados reusados en
-    todo el pais (Sucre, Bolivar, Miranda, Libertador, Independencia...) -- si
-    un nombre asi se buscara suelto en el texto, generaria falsos positivos
-    constantes. Solo las variantes que aparecen en un unico estado son lo
-    bastante especificas para usarse como coincidencia directa."""
+    """Cuenta en cuantos estados distintos aparece cada nombre de municipio o
+    parroquia (con sets, para no inflar el conteo si un nombre se repite en
+    mas de un municipio del mismo estado). Muchos son nombres de proceres o
+    de estados reusados en todo el pais (Sucre, Bolivar, Miranda,
+    Independencia...) -- si un nombre asi se buscara suelto en el texto sin
+    saber a que municipio pertenece, generaria falsos positivos constantes.
+    Solo los nombres que aparecen en un unico estado son lo bastante
+    especificos para una coincidencia directa sin ese contexto."""
     global _conteo_global_municipios, _conteo_global_parroquias
     if _conteo_global_municipios is None:
         cm, cp = Counter(), Counter()
         for detalle in load_ubicaciones_detalle().values():
-            for m in detalle.get("municipios", []):
-                for variante in _variantes_nombre(m)[1]:
-                    cm[_normalizar(variante)] += 1
-            for p in detalle.get("parroquias", []):
-                for variante in _variantes_nombre(p)[1]:
-                    cp[_normalizar(variante)] += 1
+            for normalizado in set(_municipios_por_variante(detalle)):
+                cm[normalizado] += 1
+            parroquias_estado = set()
+            for info in detalle.get("municipios", {}).values():
+                parroquias_estado.update(_normalizar(p) for p in info.get("parroquias", []))
+            for normalizado in parroquias_estado:
+                cp[normalizado] += 1
         _conteo_global_municipios, _conteo_global_parroquias = cm, cp
     return _conteo_global_municipios, _conteo_global_parroquias
 
 
-def _buscar_nombre_directo(texto_norm, candidatos, conteo_global, nombre_estado_norm):
-    """Busca el nombre de un municipio/parroquia mencionado directamente en
-    el texto (p.ej. 'inundacion en Petare'), sin exigir que venga precedido
-    de la palabra 'municipio'/'parroquia'. Descarta nombres muy cortos,
-    repetidos en varios estados, o identicos al propio nombre del estado
-    (comun en capitales de estado, p.ej. el municipio y la parroquia
-    "Barinas" del estado Barinas) -- una mencion del estado en el texto no
-    es evidencia de que se trate especificamente de ese municipio/parroquia
-    homonimo, y confundirlos asigno una vez el municipio "Barinas" a un
-    deslizamiento que en realidad ocurrio en el municipio Bolivar."""
-    for normalizado, original in candidatos.items():
+def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
+    """Busca el nombre de un municipio mencionado directamente en el texto
+    (sin la palabra 'municipio' delante). Descarta nombres muy cortos,
+    repetidos en varios estados, o identicos al nombre del propio estado."""
+    conteo_municipios, _ = _conteos_globales_ubicaciones()
+    for normalizado, original in _municipios_por_variante(detalle_estado).items():
         if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
             continue
-        if conteo_global[normalizado] > 1:
+        if conteo_municipios[normalizado] > 1:
             continue
         if normalizado == nombre_estado_norm:
             continue
@@ -282,23 +369,57 @@ def _buscar_nombre_directo(texto_norm, candidatos, conteo_global, nombre_estado_
     return None
 
 
+def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_estado_norm):
+    """Busca una parroquia mencionada directamente en el texto. Si el
+    municipio ya se conoce, busca SOLO dentro de sus propias parroquias (sin
+    necesidad de chequeo de ambiguedad -- ya sabemos el contenedor exacto).
+    Si el municipio no se conoce, solo acepta una coincidencia si el nombre
+    es unico en todo el pais (un solo estado, y dentro de ese estado un solo
+    municipio) -- en cuyo caso tambien se infiere el municipio. Devuelve
+    (parroquia, municipio_inferido_o_None).
+
+    Se excluye como evidencia una parroquia cuyo nombre coincide con el
+    nombre o alias del propio municipio ya determinado -- de lo contrario,
+    la misma palabra que identifico el municipio (p.ej. "Guajira" como
+    alias de "Indigena Bolivariano Guajira") se reutilizaria como si fuera
+    evidencia de una parroquia homonima dentro de ese municipio, aunque el
+    texto nunca diga "parroquia Guajira" de forma explicita."""
+    if municipio is not None:
+        info_municipio = detalle_estado.get("municipios", {}).get(municipio, {})
+        nombres_municipio = {_normalizar(municipio)}
+        if info_municipio.get("alias"):
+            nombres_municipio.add(_normalizar(info_municipio["alias"]))
+        for normalizado, original in _parroquias_de(detalle_estado, municipio).items():
+            if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
+                continue
+            if normalizado in nombres_municipio:
+                continue
+            if _contiene_palabra_clave(texto_norm, normalizado):
+                return original, None
+        return None, None
+
+    _, conteo_parroquias = _conteos_globales_ubicaciones()
+    indice = _indice_parroquias_estado(detalle_estado)
+    for normalizado, ocurrencias in indice.items():
+        if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
+            continue
+        if conteo_parroquias[normalizado] > 1 or len(ocurrencias) > 1:
+            continue  # ambiguo entre estados o entre municipios del mismo estado
+        if normalizado == nombre_estado_norm:
+            continue
+        if _contiene_palabra_clave(texto_norm, normalizado):
+            municipio_unico, parroquia_unica = ocurrencias[0]
+            return parroquia_unica, municipio_unico
+    return None, None
+
+
 def detectar_municipio_parroquia(texto, estado):
     if not estado:
         return None, None
 
     detalle = load_ubicaciones_detalle().get(estado, {})
-    municipios = {
-        _normalizar(variante): canonico
-        for m in detalle.get("municipios", [])
-        for canonico, variantes in [_variantes_nombre(m)]
-        for variante in variantes
-    }
-    parroquias = {
-        _normalizar(variante): canonico
-        for p in detalle.get("parroquias", [])
-        for canonico, variantes in [_variantes_nombre(p)]
-        for variante in variantes
-    }
+    texto_norm = _normalizar(texto)
+    nombre_estado_norm = _normalizar(estado)
 
     municipio_encontrado = None
     parroquia_encontrada = None
@@ -306,21 +427,31 @@ def detectar_municipio_parroquia(texto, estado):
     m = _MUNICIPIO_RE.search(texto)
     if m:
         candidato = _normalizar(m.group(1).strip())
-        municipio_encontrado = municipios.get(candidato)
+        municipio_encontrado = _municipios_por_variante(detalle).get(candidato)
+
+    if municipio_encontrado is None:
+        municipio_encontrado = _buscar_municipio_directo(texto_norm, detalle, nombre_estado_norm)
 
     p = _PARROQUIA_RE.search(texto)
     if p:
         candidato = _normalizar(p.group(1).strip())
-        parroquia_encontrada = parroquias.get(candidato)
+        if municipio_encontrado is not None:
+            # Solo se acepta si la parroquia mencionada realmente pertenece
+            # al municipio ya determinado -- si no, se descarta en vez de
+            # asumir que el municipio esta mal (evita el caso real de
+            # combinar municipio y parroquia de fuentes distintas).
+            parroquia_encontrada = _parroquias_de(detalle, municipio_encontrado).get(candidato)
+        else:
+            ocurrencias = _indice_parroquias_estado(detalle).get(candidato, [])
+            if len(ocurrencias) == 1:
+                municipio_encontrado, parroquia_encontrada = ocurrencias[0]
 
-    if municipio_encontrado is None or parroquia_encontrada is None:
-        texto_norm = _normalizar(texto)
-        nombre_estado_norm = _normalizar(estado)
-        conteo_municipios, conteo_parroquias = _conteos_globales_ubicaciones()
-        if municipio_encontrado is None:
-            municipio_encontrado = _buscar_nombre_directo(texto_norm, municipios, conteo_municipios, nombre_estado_norm)
-        if parroquia_encontrada is None:
-            parroquia_encontrada = _buscar_nombre_directo(texto_norm, parroquias, conteo_parroquias, nombre_estado_norm)
+    if parroquia_encontrada is None:
+        parroquia_encontrada, municipio_inferido = _buscar_parroquia_directa(
+            texto_norm, detalle, municipio_encontrado, nombre_estado_norm
+        )
+        if municipio_encontrado is None and municipio_inferido is not None:
+            municipio_encontrado = municipio_inferido
 
     return municipio_encontrado, parroquia_encontrada
 
@@ -372,6 +503,13 @@ def detectar_severidad(texto, tipos=None):
 
 
 def clasificar_item(item):
+    """Devuelve una LISTA de items clasificados: normalmente uno solo, pero
+    un articulo que menciona varios estados con evidencia de tipo cerca de
+    cada uno (ver detectar_ubicacion) genera un item por estado, cada uno
+    con su propio tipo/severidad/municipio -- en vez de un solo evento
+    arbitrario (el primer estado en el orden de estados.yaml) que ademas
+    mezclaba severidad de todo el articulo, sin importar a que estado
+    correspondia realmente cada detalle."""
     pre = item.pop("_preclasificado", None)
     if pre:
         item["ubicacion"] = pre["ubicacion"]
@@ -379,13 +517,31 @@ def clasificar_item(item):
         item["severidad"] = pre["severidad"]
         item["municipio"] = None
         item["parroquia"] = None
-        return item
+        return [item]
 
-    item["ubicacion"], ventana = detectar_ubicacion(item["texto"])
-    item["tipos"] = detectar_tipo(item["texto"], ventana)
-    item["severidad"] = detectar_severidad(item["texto"], item["tipos"])
-    item["municipio"], item["parroquia"] = detectar_municipio_parroquia(item["texto"], item["ubicacion"])
-    return item
+    ubicaciones = detectar_ubicacion(item["texto"])
+    if not ubicaciones:
+        item["ubicacion"] = None
+        item["tipos"] = []
+        item["severidad"] = "sin_clasificar"
+        item["municipio"] = None
+        item["parroquia"] = None
+        return [item]
+
+    resultado = []
+    for ubicacion, ventana in ubicaciones:
+        nuevo = dict(item)
+        nuevo["ubicacion"] = ubicacion
+        nuevo["tipos"] = detectar_tipo(item["texto"], ventana)
+        # La severidad tambien se restringe a la ventana cuando existe (un
+        # articulo multi-estado no debe atribuirle a un estado la severidad
+        # de un hecho que en realidad ocurrio en otro estado mencionado en
+        # otra parte del mismo texto).
+        texto_severidad = ventana if ventana is not None else item["texto"]
+        nuevo["severidad"] = detectar_severidad(texto_severidad, nuevo["tipos"])
+        nuevo["municipio"], nuevo["parroquia"] = detectar_municipio_parroquia(item["texto"], ubicacion)
+        resultado.append(nuevo)
+    return resultado
 
 
 def es_relevante(item):

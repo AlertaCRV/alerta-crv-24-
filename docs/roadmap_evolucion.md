@@ -927,3 +927,522 @@ detecta correctamente cuando una narrativa simulada lo omite.
 No se regeneró manualmente el informe "general" de julio ya publicado —
 al ser el período en curso, se regenera solo (como máximo 1 vez al día)
 en la próxima corrida del monitor, y ya incorporará esta corrección.
+
+---
+
+## Jerarquía real municipio→parroquia con datos oficiales del INE (27-07-2026)
+
+Se reportó la alerta "Tormenta eléctrica en Parroquia Guajira, Municipio
+Cabimas, Zulia" — una combinación que no existe: "Guajira" es una
+parroquia del municipio **"Indígena Bolivariano Guajira"**, no de
+Cabimas.
+
+**Causa raíz**: `config/ubicaciones_detalle.json` guardaba, por estado,
+dos listas planas independientes (`municipios` y `parroquias`) sin
+relación jerárquica entre sí. `classify.py` detectaba municipio y
+parroquia por separado — a veces de fuentes *distintas* dentro del mismo
+evento agrupado — y los combinaba sin verificar que la parroquia
+realmente perteneciera al municipio detectado. Al investigar se encontró
+que esta clase de colisión de nombres (un municipio y una parroquia
+compartiendo nombre) es la norma, no la excepción, en casi todos los
+estados venezolanos.
+
+**Corrección**: el usuario proporcionó el archivo oficial de códigos de
+división político-territorial del INE (formato COD-AB/PCode: estado →
+municipio → parroquia, 1135 filas, 24 estados). Se reconstruyó
+`ubicaciones_detalle.json` con la jerarquía real anidada:
+`{estado: {"municipios": {municipio: {"parroquias": [...], "alias":
+"..."}}}}`. Los 9 alias de nombre corto ya identificados antes
+(Guaicaipuro, Angostura, etc.) se preservaron y coinciden exactamente con
+los nombres oficiales largos del archivo del INE.
+
+`classify.py` se reescribió para respetar la jerarquía:
+- Si el municipio ya se determinó (por regex explícito o por nombre
+  directo), la parroquia solo se acepta si **realmente pertenece a ese
+  municipio** — si el texto menciona una parroquia de otro municipio, se
+  descarta en vez de asumir que el municipio está mal.
+- Si el municipio aún no se conoce, una parroquia mencionada directamente
+  solo se acepta si es **única en todo el país** (un solo estado, y
+  dentro de ese estado un solo municipio) — en cuyo caso también se
+  infiere el municipio correcto a partir de ella.
+- Se descubrió que algunas parroquias se repiten dentro del **mismo**
+  estado bajo municipios distintos (ej. "San José" en Trujilo y Zulia) —
+  el chequeo de unicidad ahora cubre también ese caso, no solo la
+  ambigüedad entre estados distintos.
+
+`verify_ai.py` (`_listas_ubicacion_valida`, usado para que la IA infiera
+ubicación cuando el regex no encuentra nada) se actualizó para aplanar la
+nueva estructura anidada en las dos listas simples que ese prompt
+necesita — no valida la relación municipio/parroquia en ese camino
+(alcance menor, la detección determinista en `classify.py` sí la
+respeta).
+
+Probado contra el caso real reportado (ya no combina Cabimas con
+Guajira) y contra todos los casos de regresión ya validados antes
+(Petare, Guaicaipuro, Angostura, Baruta, "Parroquia Altamira, Municipio
+Bolívar, Barinas") — ninguno se rompió. También se corrió contra el
+histórico completo de fuentes ya publicadas en producción para revisar
+el resultado en volumen, sin encontrar más combinaciones inconsistentes.
+
+**Advertencia honesta**: el archivo del INE no es infalible por sí
+mismo (podría tener errores puntuales en municipios/parroquias poco
+documentados), pero es sustancialmente más confiable que la ausencia
+total de jerarquía que había antes.
+
+---
+
+## División de artículos multiestado en alertas independientes (27-07-2026)
+
+El usuario preguntó: si un artículo describe la situación de lluvias en 5
+municipios distintos, con detalles propios de heridos/daños en cada uno,
+¿el sistema genera 5 alertas? La respuesta era **no**: `detectar_ubicacion`
+solo devolvía el primer estado que encontraba en el texto y descartaba el
+resto, y `detectar_severidad` se calculaba sobre el texto **completo** del
+artículo — así que incluso el único estado elegido podía heredar
+severidad de hechos ocurridos en otro estado mencionado más adelante.
+
+**Corrección implementada** (`scripts/classify.py`):
+- `detectar_ubicacion(texto)` ahora devuelve una **lista** de todos los
+  estados detectados (antes devolvía solo el primero), cada uno con su
+  propia ventana de proximidad de texto cuando aplica.
+- `clasificar_item(item)` ahora devuelve una **lista** de items — uno por
+  cada estado detectado con evidencia propia cerca — en vez de un único
+  item. `tipos` y `severidad` se calculan para cada estado usando
+  **solo su propia ventana de texto**, no el artículo completo.
+- `main.py` y `fetch_email.py` se actualizaron para aplanar/adaptar esta
+  nueva firma de lista.
+- Se añadió `_posiciones_de_estados()`, que ubica las posiciones de
+  **todas** las menciones de estados en el texto. `_ventana_cerca()` usa
+  esas posiciones para **recortar** la ventana de proximidad de cada
+  estado en la mención más cercana de otro estado distinto (antes o
+  después), evitando que la ventana de un estado se extienda sobre el
+  párrafo dedicado a otro.
+
+**Prueba con caso simulado** (Zulia con heridos, Táchira con
+deslizamiento sin daños, Mérida con anegaciones menores): sin el recorte
+de ventana, los 3 estados resultaban con severidad "alto" y ambos tipos
+mezclados. Con el recorte, Zulia mantiene correctamente severidad "alto"
+(por "heridos") y Mérida baja a "bajo" con un solo tipo — la separación
+mejora sustancialmente pero no es perfecta: cuando la oración de
+transición entre dos estados menciona palabras clave de tipo (ej.
+"inundaciones" en la frase que conecta la mención de Zulia con la de
+Táchira), esas palabras pueden seguir cayendo dentro de la ventana del
+segundo estado por estar posicionalmente más cerca de él que de
+cualquier otro corte. Esto es una limitación inherente del enfoque
+heurístico basado en proximidad de palabras (ya advertida al usuario
+antes de implementar) — no hay reconocimiento real de qué frase
+"pertenece" a qué estado, solo distancia y recorte en los puntos de
+mención de otros estados.
+
+**Prueba de regresión** contra el histórico real de textos de fuentes ya
+publicados (`data/historico_fuentes_texto.jsonl`): de 23 fuentes
+individuales evaluadas, 7 (30%) resultaron en división multiestado real
+y coherente con el contenido del artículo (p.ej. una nota sobre lluvias
+que cubre Caracas y La Guaira a la vez, u otra sobre el corredor
+Barinas–Mérida) — casos que antes de este cambio habrían generado una
+sola alerta con la ubicación del primer estado mencionado nada más.
+
+**Relación con la deduplicación de 36 horas**: son mecanismos
+independientes y complementarios. La división multiestado ocurre en
+`classify.py`, antes de que el evento llegue a la ventana de 36 horas de
+`state.py` (que actúa por tipo + ubicación ya resuelta). Un artículo que
+cubre 3 estados generará 3 eventos con ubicaciones distintas, cada uno
+sujeto de forma independiente a la regla de las 36 horas frente a
+publicaciones previas sobre ese mismo estado — no se pierde ni se duplica
+cobertura por la interacción entre ambos mecanismos.
+
+Validado con `python3 scripts/validar_configs.py` (OK) y contra los
+casos de regresión de detección de ubicación ya probados en sesiones
+anteriores.
+
+---
+
+## Corrección retroactiva: alerta previa a la reconstrucción del INE (27-07-2026)
+
+El usuario reportó que seguía viendo "Parroquia Guajira, Municipio
+Cabimas" publicado en el sitio, a pesar de la corrección de la jerarquía
+municipio→parroquia (PR #61, fusionado a las 16:49 UTC). Al revisar la
+alerta, se confirmó que fue detectada a las 16:02 UTC — **antes** de que
+el fix llegara a `main` — por lo que quedó publicada con el dato
+incorrecto generado por el código anterior. No es una recurrencia del
+bug, sino un dato ya publicado que no se había corregido de forma
+retroactiva.
+
+**Corrección**: se actualizó manualmente `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` para reflejar el municipio correcto
+("Indígena Bolivariano Guajira" en vez de "Cabimas"), y se regeneró
+`docs/data/estadisticas.json` con `python3 scripts/build_dashboard.py`.
+`data/historico_fuentes_texto.jsonl` no requería cambio (no guarda
+municipio). No se encontraron informes narrativos que mencionaran esta
+combinación incorrecta.
+
+---
+
+## Bug: la IA inventaba municipio/parroquia sin base en el texto (27-07-2026)
+
+Se reportó la alerta "Colapso estructural en Parroquia San Francisco,
+Municipio Maracaibo, Zulia", pero los hechos reales ocurrieron en otro
+municipio/parroquia distinto.
+
+**Causa raíz**: la fuente de esta alerta es un resumen de RSS truncado
+("Niño de cinco años mueres tras colapso de vivienda en Zulia... Un fatal
+incidente se registró luego de que una vivienda colapsara, como…") que
+**no menciona ningún municipio ni parroquia**. Cuando `classify.py` (regex
+determinista) no logra determinar el municipio/parroquia, `verify_ai.py`
+le pide a la misma llamada de verificación de Groq que intente inferirlo
+del texto, restringido a una lista de valores válidos del estado, con
+instrucción explícita de responder `null` si no hay certeza. En este
+caso, la IA respondió con un municipio/parroquia plausible pero **no
+respaldado por el texto real** — el modelo no siguió la instrucción de
+abstenerse cuando no hay evidencia.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó una verificación
+determinista posterior a la respuesta de la IA — el municipio y la
+parroquia que proponga solo se aceptan si su nombre **aparece
+textualmente** (normalizado, sin tildes/mayúsculas) en el texto combinado
+de las fuentes del evento. Si no aparece, se descarta y el campo queda en
+`null`, igual que si la IA no hubiera podido determinarlo. Esto no
+depende de que el modelo obedezca la instrucción del prompt — es un
+chequeo de anclaje textual que no puede pasarse por alto aunque la IA
+alucine.
+
+**Corrección retroactiva**: se quitó el municipio/parroquia inventado
+("Maracaibo"/"San Francisco") de la alerta ya publicada en
+`docs/data/noticias.json` y `data/historico_eventos.jsonl`, dejando la
+ubicación en el nivel de estado ("Zulia") que sí está respaldado por el
+texto, y se regeneraron las estadísticas.
+
+**Nota pendiente**: al revisar esta alerta también se notó que la
+severidad quedó "sin_clasificar" a pesar de que el título de la fuente
+menciona la muerte de un niño de cinco años ("mueres" — probable error
+tipográfico de "muere" en el sitio de origen). El detector de palabras
+clave de severidad crítica no cubre esa variante ortográfica; queda para
+evaluar por separado si conviene tolerar errores tipográficos comunes en
+las palabras clave de severidad más grave.
+
+---
+
+## Corrección de raíz: resúmenes RSS truncados ocultaban ubicación y gravedad (27-07-2026)
+
+Seguimiento del caso anterior: el usuario mostró que el artículo original
+sí menciona claramente "municipio Guajira" (y, en el cuerpo completo,
+"parroquia Sinamaica") y que un niño de cinco años murió — datos que el
+sistema no capturó.
+
+**Causa raíz real** (más profunda que el caso anterior): `fetch_rss.py`
+nunca descarga la página del artículo — solo usa el campo `summary` que
+entrega el feed RSS, que muchos medios truncan a una o dos frases
+seguidas de puntos suspensivos. En este caso el resumen terminaba en "...
+como…", cortando la oración justo antes de "en el municipio Guajira del
+estado Zulia" y de "murió". El texto real y completo de la página sí
+contiene todo: ubicación exacta y la muerte. El bug de municipio/parroquia
+inventados del apartado anterior era, en el fondo, sÍntoma de este
+problema más amplio: sin texto suficiente, ni la IA ni el clasificador
+determinista tenían con qué determinar la ubicación real ni la severidad
+real.
+
+**Corrección** (`scripts/fetch_rss.py`): se agregó `_obtener_texto_completo(link)`,
+que descarga la página del artículo (usando `requests` + `BeautifulSoup`,
+nueva dependencia `beautifulsoup4`/`lxml` en `requirements.txt`) y extrae
+el texto de sus párrafos (`<article>` o el primer contenedor con "content"
+en su clase, si existe; si no, todos los `<p>` de la página), limitado a
+4000 caracteres. Se agregó `_TRUNCADO_RE`, que detecta cuando el resumen
+del RSS termina en puntos suspensivos ("…" o "[...]"), y **solo en esos
+casos** se reemplaza el resumen truncado por el texto completo de la
+página. Si la descarga falla por cualquier razón (red, sitio caído,
+estructura HTML inesperada), se sigue usando el resumen truncado en vez
+de fallar la corrida completa — el mismo patrón de "fallar hacia lo
+seguro" ya usado en el resto del pipeline.
+
+**Bug adicional encontrado al probar con el texto completo real**: con el
+texto completo, la ubicación y el municipio/parroquia se detectaron bien,
+pero la severidad seguía saliendo "sin_clasificar" a pesar de que "murió"
+aparecía a solo 4 palabras de "Zulia". La causa: el recorte de ventana de
+proximidad agregado en el fix de artículos multiestado (que corta la
+ventana en la mención más cercana de OTRO estado) también se activaba
+entre **dos menciones del mismo estado** — el artículo menciona "Zulia"
+una vez como ubicación y otra vez como parte del nombre de un medio local
+("Zulia Sin Censura"), y la ventana se cortaba justo antes de esa segunda
+mención, dejando "murió" fuera. Se corrigió `_ventana_cerca()` en
+`scripts/classify.py` para que el recorte solo considere menciones de
+estados **distintos** al que se está evaluando, nunca repeticiones del
+mismo estado. Se confirmó que esto no afecta el caso de prueba
+multiestado ya validado (Zulia/Táchira/Mérida en un mismo artículo).
+
+**Corrección retroactiva**: se actualizó la alerta ya publicada
+("Colapso estructural") en `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` con el municipio ("Indígena Bolivariano
+Guajira"), la parroquia ("Sinamaica") y la severidad ("crítico")
+correctos, y se regeneraron las estadísticas. El informe narrativo
+mensual ya generado no mencionaba una ubicación incorrecta, así que no
+requirió corrección.
+
+Validado con `python3 scripts/validar_configs.py`, con el caso real
+reportado por el usuario (texto completo obtenido manualmente de la
+página del artículo) y con regresión contra
+`data/historico_fuentes_texto.jsonl` (mismo número de divisiones
+multiestado que antes del cambio en `_ventana_cerca`, sin regresiones).
+
+---
+
+## Bug: parroquia inventada cuando coincide con el nombre del municipio (27-07-2026)
+
+El usuario preguntó de dónde salía "Parroquia Guajira" en la alerta de
+tormenta eléctrica, ya que ninguna fuente menciona explícitamente
+"parroquia Guajira" (solo dicen "municipio Guajira").
+
+**Causa raíz**: en Venezuela es muy común que la parroquia "capital" de un
+municipio comparta el mismo nombre que el municipio (o, en este caso, el
+alias corto del municipio: "Guajira" es alias de "Indígena Bolivariano
+Guajira", y ese municipio tiene una parroquia también llamada "Guajira").
+`_buscar_parroquia_directa()` en `classify.py`, al buscar el nombre de una
+parroquia mencionado directamente en el texto (sin la palabra
+"parroquia" delante) dentro de las parroquias del municipio ya conocido,
+no excluía el caso en que el nombre de la parroquia coincidiera con el
+nombre/alias del propio municipio — así que la misma palabra que ya se
+había usado para identificar el municipio ("Guajira") se reutilizaba
+como si fuera evidencia independiente de esa parroquia específica, sin
+que el texto lo dijera en realidad.
+
+Se confirmó que este patrón (parroquia homónima al municipio) es muy
+extendido: aparece en Barinas, Aragua, Táchira, Falcón, Trujillo, Zulia,
+Miranda, Monagas, Yaracuy y otros estados — decenas de municipios donde
+la "parroquia capital" lleva el mismo nombre. La alerta ya publicada
+"Inundación en Parroquia Bocono, Municipio Bocono, Trujillo" tenía el
+mismo problema: la fuente solo dice "municipios Boconó y Vicente Campo
+Elías", nunca "parroquia Boconó".
+
+**Corrección** (`scripts/classify.py`, `_buscar_parroquia_directa`): al
+buscar una parroquia por coincidencia directa de nombre (sin la palabra
+"parroquia" delante) dentro de las parroquias del municipio ya conocido,
+ahora se excluye cualquier parroquia cuyo nombre normalizado coincida con
+el nombre canónico o el alias del propio municipio. La detección
+**explícita** ("parroquia X" con la palabra delante) no se ve afectada —
+sigue aceptando la parroquia homónima si el texto realmente la nombra así
+(se probó con "parroquia Guajira, municipio Indígena Bolivariano
+Guajira" como caso de control).
+
+**Corrección retroactiva**: se quitó la parroquia inferida sin base
+("Guajira" y "Bocono" respectivamente) de las dos alertas ya publicadas
+afectadas, dejando el municipio (que sí está bien respaldado) y
+`parroquia: null`, y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py`, con el caso real y de
+control, y con regresión contra `data/historico_fuentes_texto.jsonl`
+completo (ningún otro caso legítimo con parroquia explícita, como
+"Parroquia Altamira, Municipio Bolívar, Barinas", se vio afectado).
+
+---
+
+## Revisión general de alertas activas + resumen de medidas preventivas (27-07-2026)
+
+A pedido del usuario, se revisaron todas las alertas publicadas en `main`
+buscando otros errores. Se encontró una alerta duplicada: "Inundación en
+Parroquia Antimano, Distrito Capital" aparecía dos veces (26/07, 11:46
+a.m. y 4:04 p.m.), con datos distintos entre sí (una sin municipio y
+severidad "bajo", otra con municipio "Libertador" y severidad "sin
+clasificar") — ambas del mismo evento real de lluvias en Caracas. Se
+confirmó que **no es un bug activo hoy**: ambas entradas son anteriores
+a la fusión del fix de ventana de 36 horas para deduplicar entre corridas
+(PR #56, fusionado 27/07 15:41 UTC) — datos residuales de antes de esa
+protección, nunca reprocesados. Se eliminó la entrada más antigua e
+incompleta de `docs/data/noticias.json`, dejando la más completa
+(con municipio correcto).
+
+### Resumen de medidas preventivas contra esta clase de errores (municipio/parroquia/severidad incorrectos)
+
+En esta sesión se identificaron y corrigieron, de raíz, los siguientes
+mecanismos que causaban ubicación o severidad incorrecta:
+
+1. **Jerarquía real INE** (`config/ubicaciones_detalle.json`): antes no
+   existía relación municipio→parroquia; ahora se usa el archivo oficial
+   de códigos del INE, y `classify.py` solo acepta una parroquia si
+   realmente pertenece al municipio ya determinado.
+2. **Grounding de la IA**: cuando el regex no puede determinar
+   municipio/parroquia y se le pide ayuda a la IA (Groq), su respuesta
+   solo se acepta si el nombre propuesto aparece **textualmente** en las
+   fuentes — nunca se confía en que el modelo obedezca la instrucción de
+   responder `null` sin verificarlo.
+3. **Texto completo del artículo**: `fetch_rss.py` ahora descarga la
+   página del artículo cuando el resumen del RSS viene truncado, en vez
+   de clasificar con un fragmento que puede omitir la ubicación exacta o
+   los detalles de gravedad (heridos, muertes).
+4. **Ventana de proximidad entre estados repetidos**: el recorte de
+   ventana para artículos multiestado ya no corta contenido relevante
+   (p.ej. una palabra de severidad) cuando el "otro estado" detectado es
+   en realidad una repetición del mismo estado (p.ej. el nombre de un
+   medio local).
+5. **Parroquia homónima al municipio**: ya no se infiere una parroquia
+   solo porque su nombre coincide con el del municipio (o su alias) ya
+   conocido — se exige mención explícita ("parroquia X") para ese caso
+   específico, dado lo común que es este patrón de nombres en Venezuela.
+
+Estas cinco correcciones atacan causas de raíz distintas pero
+relacionadas (todas dentro del pipeline de detección de
+ubicación/severidad), no parches puntuales para casos individuales — se
+espera que prevengan la aparición de la misma clase de error en textos
+futuros con estructura similar, aunque no eliminan por completo la
+posibilidad de error dado el enfoque heurístico (no hay comprensión
+semántica real del texto, solo patrones y proximidad de palabras).
+
+---
+
+## Acceso al correo institucional: diagnóstico y herramienta de setup (27-07-2026)
+
+El usuario reportó que el sistema no logra autenticarse con Outlook
+(`fetch_email.py`), con el error de Azure AD "AADSTS900144: The request
+body must contain the following parameter: 'refresh_token'". Este canal
+es importante porque las filiales regionales de la Cruz Roja reportan
+incidentes de sus zonas de influencia por ese correo.
+
+**Diagnóstico**: el error indica que el secreto `OUTLOOK_REFRESH_TOKEN`
+en GitHub Actions está vacío o inválido — no es un bug de código. La
+autenticación usa `msal.PublicClientApplication.acquire_token_by_refresh_token()`,
+que requiere un `refresh_token` vigente obtenido previamente mediante un
+login interactivo (no se puede generar sin que un humano inicie sesión
+con la cuenta del buzón institucional o una cuenta delegada con acceso a
+él).
+
+**Acción**: se agregó `scripts/generar_refresh_token_outlook.py`, una
+herramienta de uso manual (no se ejecuta en el workflow automático) que
+usa el flujo de dispositivo (`device code flow`) de MSAL para obtener un
+refresh_token nuevo de forma interactiva. El usuario la ejecutará
+localmente con `OUTLOOK_CLIENT_ID`/`OUTLOOK_TENANT_ID` ya configurados,
+iniciará sesión con la cuenta del correo institucional cuando el script
+lo indique, y actualizará el secreto `OUTLOOK_REFRESH_TOKEN` en GitHub
+con el resultado.
+
+**Próximo paso** (una vez que la lectura de correos funcione): definir
+qué información extraer del cuerpo de esos correos y cómo integrarla al
+resto del pipeline — hoy `fetch_email.py` solo entiende un formato rígido
+de asunto (`EMERGENCIA | Estado | Tipo | Severidad`), que probablemente
+no es como las filiales reportan en la práctica. Queda pendiente de
+discutir.
+
+---
+
+## Dos falsos positivos más: incendio vehicular aislado y "manifestaciones artísticas" (27-07-2026)
+
+El usuario reportó una alerta de "Incendio en Municipio Araure,
+Portuguesa" que en realidad era un camión (gandola) incendiado en la
+autopista — un incidente vehicular rutinario, no una emergencia del tipo
+que le compete a la Cruz Roja.
+
+**Causa raíz**: no existía un filtro determinista para tipo=incendio
+análogo al de vialidad — dependía enteramente del juicio de la IA. Además,
+esta alerta específica se publicó por una falla técnica temporal de Groq
+(`estado_verificacion: "PASADO_POR_FALLA_TECNICA"`, el mecanismo
+intencional de "fallar hacia lo seguro" para no perder eventos reales
+cuando la IA no está disponible), saltándose incluso esa verificación.
+
+**Corrección** (`scripts/verify_ai.py`): se agregó
+`_incendio_vehiculo_sin_evidencia_fuerte()`, un filtro determinista que
+corre ANTES de la llamada a la IA (así que no depende de que Groq esté
+disponible). Solo aplica cuando el texto menciona un vehículo (camión,
+gandola, carro, moto, autobús, etc.) — un incendio forestal o estructural
+no se ve afectado. A pedido explícito del usuario, la condición para NO
+descartar la alerta es estricta: el texto debe describir el hecho como un
+**accidente múltiple Y** mencionar **heridos o fallecidos**, ambas cosas
+a la vez (no basta una sola, a diferencia del filtro de vialidad que
+acepta cualquiera de varias señales).
+
+**Segundo hallazgo, al revisar el histórico durante esta corrección**: se
+encontró OTRA alerta con el mismo patrón de falla técnica —
+"Orden público en Municipio Barinas, Barinas"— que resultó ser un
+**falso positivo total**: la fuente es una noticia sobre la
+reinauguración de un teatro y entrega de equipos tecnológicos, sin
+ninguna relación con disturbios. La causa: la palabra clave
+"manifestaciones" (para protestas) hizo falso match con "las
+manifestaciones artísticas" (exposiciones/actos culturales) mencionadas
+en el texto — la misma clase de ambigüedad idiomática ya identificada
+antes para "explosión" (que colisiona con "explosión de alegría/color").
+
+**Corrección** (`config/keywords.yaml`): se quitó "manifestacion"/
+"manifestaciones"/"manifestación" como palabra suelta de
+`orden_publico`, reemplazada por "manifestantes" (sin la ambigüedad, ya
+que "manifestantes artísticos" no es una expresión de uso común) y
+frases específicas ("manifestación violenta", "manifestación callejera",
+"marcha de protesta").
+
+**Corrección retroactiva**: se eliminaron ambas alertas
+(`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl`) y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py`, casos de control para
+ambos filtros (incendio vehicular con/sin accidente múltiple y víctimas;
+"manifestaciones artísticas" vs. "manifestantes" en protesta real), y
+regresión contra el histórico completo de fuentes (sin otros casos de
+`incendio`/`orden_publico` afectados).
+
+---
+
+## Bug de raíz: actualizaciones de un evento creaban una alerta duplicada (28-07-2026)
+
+Al revisar manualmente las alertas del día se encontró un duplicado real:
+"Inundación en Lara" (sin municipio, severidad sin clasificar) y
+"Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas,
+Lara" (severidad crítico) resultaron ser el mismo evento real (una niña
+que murió ahogada en el río La Miel), reportado por dos fuentes
+distintas, publicado con 26 horas de diferencia — **dentro** de la
+ventana de 36 horas que debería haberlo evitado.
+
+**Causa raíz** (más profunda que un simple fallo de la ventana de 36h):
+`state.py` sí resuelve correctamente la misma `clave` de deduplicación
+para ambos eventos (mismo tipo+ubicación dentro de la ventana). Pero
+`filtrar_nuevos()` trata intencionalmente como "nuevo" cualquier evento
+cuya severidad o estado de confirmación cambien respecto a lo ya
+publicado bajo esa clave — para poder notificar actualizaciones
+legítimas (p.ej. un evento que sube de severidad al confirmarse más
+daño). El problema: `build_site.py` (`actualizar_datos_sitio`) simplemente
+**agregaba** cada noticia nueva al principio de la lista, sin nunca
+reemplazar la entrada anterior del mismo evento — así que cada
+"actualización" terminaba como una alerta visualmente independiente en
+el sitio, no como una corrección de la anterior.
+
+**Corrección**:
+- `state.py`: `filtrar_nuevos()` ahora anota cada evento devuelto con su
+  `clave_dedup` (la misma clave de `_resolver_clave`), tanto para
+  eventos genuinamente nuevos como para actualizaciones.
+- `build_site.py`: `actualizar_datos_sitio()` ahora, antes de agregar las
+  noticias nuevas, quita del listado existente cualquier entrada cuya
+  `clave_dedup` coincida con una de las nuevas — así una actualización
+  **reemplaza** la alerta anterior del mismo evento en vez de sumarse
+  como una segunda alerta. Las noticias ya publicadas antes de este
+  cambio no tienen `clave_dedup` y no se ven afectadas (se conservan
+  igual).
+
+**Bug adicional encontrado en el mismo caso**: la fuente de la segunda
+publicación ("Niña muere ahogada...") tampoco disparó severidad
+crítica, porque "ahogado"/"ahogada" no estaba en las palabras clave de
+severidad crítica (`config/keywords.yaml`). Se agregó junto con sus
+formas plurales.
+
+**Corrección retroactiva**: se fusionaron las dos alertas de Lara en una
+sola (ubicación completa, severidad crítico, 2 fuentes, confirmado) en
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`, y se regeneraron las estadísticas.
+
+Validado con `python3 scripts/validar_configs.py` y con una prueba
+directa de `state.py`/`build_site.py` simulando una actualización de
+severidad para el mismo evento (confirmando que ambas pasadas comparten
+la misma `clave_dedup`).
+
+---
+
+## Pendiente para retomar (28-07-2026)
+
+Quedaron dos tareas pausadas a pedido del usuario, para continuar cuando
+tenga la lista de correos de las filiales:
+
+1. **Filtro por remitente en Power Automate**: el flujo
+   "AlertaCRV - Reenvío de correos a GitHub" ya está armado y probado
+   (dispara con cualquier correo nuevo → crea un issue en
+   `alertacrv/alerta-crv-24-` con Asunto/Cuerpo del correo). Falta
+   configurar el filtro del disparador para que solo entren correos de
+   las cuentas de las filiales autorizadas a reportar.
+2. **`scripts/fetch_github_issues.py`** (no implementado aún): leer los
+   issues nuevos del repositorio vía la API de GitHub y alimentarlos al
+   pipeline de clasificación (`classify.py`), igual que hace
+   `fetch_rss.py`/`fetch_email.py` hoy. El cuerpo de los issues llega con
+   HTML crudo (`<br>`, enlaces) del cliente de correo — hay que limpiarlo
+   igual que ya hace `_limpiar_texto()` en `fetch_rss.py`.

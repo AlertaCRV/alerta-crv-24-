@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 
 from config_loader import load_sources
 
@@ -22,11 +23,43 @@ _HTML_TAG_RE = re.compile(r"<[^>]+>")
 # clasificador puede confundirlo con la ubicacion real de la noticia.
 _BOILERPLATE_RE = re.compile(r"la entrada .*?se public(?:o|ó) primero en.*$", re.IGNORECASE | re.DOTALL)
 
+# Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
+# puntos suspensivos (a veces como caracter unico "…", a veces como
+# "[...]"). Cuando el resumen esta truncado, detalles clave (ubicacion
+# exacta, muertes, heridos) pueden quedar fuera del texto que ve el
+# clasificador -- de ahi que se intente traer el texto completo del
+# articulo desde su pagina en esos casos.
+_TRUNCADO_RE = re.compile(r"(…|\[\s*\.\.\.\s*\]|\.\.\.\s*$)\s*$")
+
+LONGITUD_MAXIMA_TEXTO_COMPLETO = 4000
+
 
 def _limpiar_texto(texto):
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()
+
+
+def _obtener_texto_completo(link):
+    """Descarga la pagina del articulo y extrae el texto de sus parrafos,
+    para los casos en que el resumen del RSS viene truncado. Si falla por
+    cualquier razon (red, parsing, sitio caido), devuelve None y el
+    llamador sigue usando el resumen truncado en vez de fallar la corrida
+    completa por un solo articulo."""
+    try:
+        resp = requests.get(link, headers=HEADERS_NAVEGADOR, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.content, "lxml")
+        contenedor = soup.find("article") or soup.find(
+            "div", class_=lambda c: c and "content" in c.lower()
+        )
+        parrafos = (contenedor or soup).find_all("p")
+        texto = " ".join(p.get_text(" ", strip=True) for p in parrafos)
+        texto = re.sub(r"\s+", " ", texto).strip()
+        return texto[:LONGITUD_MAXIMA_TEXTO_COMPLETO] if texto else None
+    except Exception as e:
+        print(f"[WARN] No se pudo obtener el texto completo de {link}: {e}")
+        return None
 
 
 def fetch_rss_items(ventana_horas=12):
@@ -67,6 +100,14 @@ def fetch_rss_items(ventana_horas=12):
 
             texto = " ".join(filter(None, [entry.get("title", ""), entry.get("summary", "")]))
             texto = _limpiar_texto(texto)
+
+            link = entry.get("link", "")
+            if link and _TRUNCADO_RE.search(texto):
+                texto_completo = _obtener_texto_completo(link)
+                if texto_completo:
+                    texto = _limpiar_texto(
+                        " ".join(filter(None, [entry.get("title", ""), texto_completo]))
+                    )
 
             items.append({
                 "fuente_nombre": fuente["nombre"],

@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "colapso_estructural",
+  "tipo_label": "Colapso estructural",
+  "cerrado": false,
+  "generado": "2026-07-27T17:27:39.318730+00:00",
+  "actualizado_hasta": "2026-07-27T17:27:27.208884+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un evento de colapso estructural en Venezuela. Según (El Periodico de Monagas), un niño de cinco años murió tras el colapso de una vivienda en Zulia. Este incidente es especialmente trágico debido a la pérdida de vida inocente. En comparación con el período anterior (2026-06), hubo 0 eventos registrados, lo que contrasta con el 1 evento registrado en este período. La ubicación específica del colapso fue en Zulia, como se informó en (El Periodico de Monagas). Es importante destacar que este evento es el único reportado en este período, pero su impacto es significativo debido a la pérdida de vida. La comparación con el período anterior muestra un aumento en la ocurrencia de eventos de colapso estructural, pasando de 0 a 1 evento. Este aumento subraya la importancia de la vigilancia y el mantenimiento de las estructuras para prevenir tragedias similares en el futuro.",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/"
+    }
+  ]
+}
