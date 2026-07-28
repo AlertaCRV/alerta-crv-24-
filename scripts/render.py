@@ -101,8 +101,15 @@ def redactar_noticia(evento):
         f"Fuentes:\n{fuentes_texto}"
     )
 
+    # El orden importa: si `evento` ya trae sus propias claves "titulo"/
+    # "texto" (el caso al reusar esta funcion para regenerar el texto de una
+    # alerta YA publicada tras una correccion retroactiva, en vez de una
+    # alerta nueva sin redactar todavia), un **evento puesto despues de esas
+    # claves las sobreescribiria de vuelta con el texto viejo -- silencioso,
+    # sin error, dejando la correccion sin efecto en el texto visible pese a
+    # que los datos subyacentes (severidad/ubicacion/etc.) si se corrigieron.
     return {
+        **evento,
         "titulo": titulo,
         "texto": texto,
-        **evento,
     }

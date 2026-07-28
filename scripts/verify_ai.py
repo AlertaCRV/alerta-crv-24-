@@ -594,8 +594,21 @@ def verificar_evento_con_ia(evento):
             municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
                 respuesta, municipios_validos, parroquias_validos
             )
+            # El anclaje textual debe verificarse SOLO contra las fuentes que
+            # de verdad se van a publicar (grupos_aprobados), no contra todos
+            # los candidatos evaluados (candidatos incluye fuentes que la IA
+            # acaba de rechazar por no ser el mismo hecho). De lo contrario,
+            # un municipio/parroquia mencionado unicamente en una fuente
+            # descartada "ancla" una ubicacion que ninguna fuente publicada
+            # respalda -- caso real: un cluster de "colapso estructural en
+            # Zulia" con una fuente aprobada (una vivienda colapsada, sin mas
+            # detalle de ubicacion) y otra fuente del mismo cluster, sobre un
+            # hecho distinto, que si mencionaba "Sinamaica"/"Guajira" y fue
+            # rechazada por la IA -- el evento publicado terminaba con esa
+            # parroquia/municipio igual, pese a que la unica fuente publicada
+            # nunca los menciona.
             texto_fuentes_norm = _normalizar(
-                " ".join(m["texto"] for g in candidatos for m in g)
+                " ".join(m["texto"] for g in grupos_aprobados for m in g)
             )
             # Un municipio/parroquia que por coincidencia se llama igual que
             # su propio estado (frecuente en capitales de estado
