@@ -2,41 +2,20 @@ import email
 import imaplib
 import os
 import re
-import unicodedata
 from datetime import timezone
 from email.header import decode_header
 from email.utils import parseaddr, parsedate_to_datetime
 
-from classify import detectar_ubicacion
-
 IMAP_HOST = "imap.gmail.com"
 
-TIPO_MAP = {
-    "sismo": "sismo",
-    "incendio": "incendio",
-    "inundacion": "inundacion",
-    "deslizamiento": "deslizamiento",
-    "falla electrica": "infraestructura_electrica",
-    "falla de agua": "infraestructura_agua",
-    "vialidad": "vialidad",
-    "orden publico": "orden_publico",
-    "salud publica": "salud_publica",
-}
-
-SEVERIDADES_VALIDAS = {"critico", "alto", "medio", "bajo"}
-
-# El reenvio automatico de Outlook (regla de bandeja o "Reenviar" manual)
-# suele anteponer "FW:"/"Fwd:"/"RV:" al asunto original -- sin quitarlo, el
-# asunto de CADA correo reenviado dejaria de coincidir con el formato
-# esperado ("EMERGENCIA | ...") y se descartaria silenciosamente. Se quita
-# en un bucle (no una sola vez) porque una cadena de varios reenvios puede
-# acumular mas de un prefijo ("Fwd: RV: EMERGENCIA | ...").
+# El reenvio automatico/manual de Outlook suele anteponer "FW:"/"Fwd:"/"RV:"
+# al asunto original -- se quita solo por prolijidad (para que
+# fuente_nombre/texto no arrastren el prefijo), no porque el clasificador lo
+# necesite: detectar_ubicacion()/detectar_tipo() escanean todo el texto, no
+# dependen de que el asunto empiece de una forma particular. Se quita en un
+# bucle (no una sola vez) porque una cadena de varios reenvios puede acumular
+# mas de un prefijo ("Fwd: RV: ...").
 _PREFIJO_REENVIO_RE = re.compile(r"^\s*(fwd?|rv|re)\s*:\s*", re.IGNORECASE)
-
-
-def _normalizar(texto):
-    texto = texto.strip().lower()
-    return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn")
 
 
 def _quitar_prefijos_reenvio(asunto):
@@ -45,29 +24,6 @@ def _quitar_prefijos_reenvio(asunto):
         anterior = asunto
         asunto = _PREFIJO_REENVIO_RE.sub("", asunto).strip()
     return asunto
-
-
-def _parsear_asunto(asunto):
-    """Espera el formato: EMERGENCIA | Estado | Tipo | Severidad (una vez
-    quitado cualquier prefijo de reenvio que Outlook haya agregado)."""
-    asunto = _quitar_prefijos_reenvio(asunto)
-    partes = [p.strip() for p in asunto.split("|")]
-    if len(partes) != 4 or _normalizar(partes[0]) != "emergencia":
-        return None
-
-    _, estado_raw, tipo_raw, severidad_raw = partes
-
-    ubicaciones = detectar_ubicacion(f"#{estado_raw.replace(' ', '')}")
-    ubicacion = ubicaciones[0][0] if ubicaciones else None
-    tipo = TIPO_MAP.get(_normalizar(tipo_raw))
-    severidad = _normalizar(severidad_raw)
-    if severidad not in SEVERIDADES_VALIDAS:
-        severidad = "sin_clasificar"
-
-    if not ubicacion or not tipo:
-        return None
-
-    return ubicacion, tipo, severidad
 
 
 def _decodificar_header(valor):
@@ -125,8 +81,17 @@ def fetch_gmail_items(ventana_horas=12):
     consistencia de firma con los demas fetch_*_items(), pero no filtra por
     fecha -- IMAP SEARCH SINCE solo tiene granularidad de dia, no de horas.
     En su lugar se leen los mensajes no vistos y se marcan como vistos al
-    procesarlos (coincidan o no con el formato esperado), para nunca
-    reprocesar el mismo correo dos veces."""
+    procesarlos, para nunca reprocesar el mismo correo dos veces.
+
+    A diferencia de una version anterior de este fetcher (para Outlook), NO
+    exige que el asunto siga un formato rigido tipo "EMERGENCIA | Estado |
+    Tipo | Severidad" -- los reportes reales de las filiales llegan en
+    lenguaje natural (ej. "Actualizacion de desplazados de La Guaira en los
+    municipios Colina, Zamora y Tocopero"), nunca en ese formato. En su
+    lugar, cada correo se entrega como un item de texto libre (asunto +
+    cuerpo), igual que un item de fetch_rss_items() -- clasificar_item() en
+    classify.py hace la deteccion de ubicacion/tipo/severidad a partir del
+    texto, exactamente como ya hace con los articulos de RSS."""
     address = os.environ.get("GMAIL_ADDRESS")
     app_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not address or not app_password:
@@ -158,7 +123,7 @@ def fetch_gmail_items(ventana_horas=12):
                     continue
                 mensaje = email.message_from_bytes(msg_datos[0][1])
 
-                asunto = _decodificar_header(mensaje.get("Subject", ""))
+                asunto = _quitar_prefijos_reenvio(_decodificar_header(mensaje.get("Subject", "")))
                 _, remitente_email = parseaddr(_decodificar_header(mensaje.get("From", "")))
                 message_id = (mensaje.get("Message-ID") or "").strip("<>")
 
@@ -169,27 +134,25 @@ def fetch_gmail_items(ventana_horas=12):
                 except Exception:
                     fecha = None
 
-                parsed = _parsear_asunto(asunto)
-                if parsed and fecha:
-                    ubicacion, tipo, severidad = parsed
-                    cuerpo = _extraer_cuerpo(mensaje)
+                cuerpo = _extraer_cuerpo(mensaje)
+                texto = f"{asunto}. {cuerpo}".strip()
+                if texto and fecha:
                     items.append({
                         "fuente_nombre": f"Reporte institucional ({remitente_email or 'desconocido'})",
                         "fuente_tipo": "correo",
                         "peso": 1.5,
-                        "texto": f"{asunto}. {cuerpo}".strip(),
+                        "texto": texto,
                         "link": (
                             f"https://mail.google.com/mail/u/0/#search/rfc822msgid:{message_id}"
                             if message_id else ""
                         ),
                         "fecha": fecha.isoformat(),
-                        "_preclasificado": {"ubicacion": ubicacion, "tipos": [tipo], "severidad": severidad},
                     })
             except Exception as e:
                 print(f"[WARN] No se pudo procesar un correo: {e}")
             finally:
-                # Se marca como leido siempre, coincida o no con el formato
-                # esperado -- de lo contrario un correo con asunto invalido
+                # Se marca como leido siempre, tenga o no texto/fecha
+                # utilizable -- de lo contrario un correo problematico
                 # quedaria como no leido para siempre y se reprocesaria (sin
                 # efecto) en cada corrida.
                 try:
