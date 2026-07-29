@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Barinas",
+    "municipio": "Pedraza",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/",
+        "fecha": "2026-07-29T16:22:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T16:22:17+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:22:17+00:00",
+    "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Barinas::2026-07-29",
+    "titulo": "Inundación en Municipio Pedraza, Barinas",
+    "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 29/07/2026, 12:22 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "La Guaira",
     "municipio": "Vargas",

@@ -1,0 +1,38 @@
+{
+  "infraestructura_agua::Sucre::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T17:58:30.903262+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T17:58:55.070129+00:00"
+  },
+  "salud_publica::Lara::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T17:59:19.229160+00:00"
+  },
+  "incendio::Distrito Capital::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T17:59:43.384096+00:00"
+  },
+  "deslizamiento::La Guaira::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:00:07.538531+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:00:31.690383+00:00"
+  },
+  "sismo::Yaracuy::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:00:55.978968+00:00"
+  },
+  "salud_publica::La Guaira::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:01:20.124554+00:00"
+  },
+  "crisis_migratoria::Anzoategui::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:01:44.279472+00:00"
+  }
+}

@@ -191,5 +191,11 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T16:26:00.583403+00:00",
     "fecha_evento_temprana": "2026-07-29T16:18:23+00:00"
+  },
+  "inundacion::Barinas::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:22:17+00:00"
   }
 }
