@@ -96,16 +96,22 @@
     "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
     "fecha_evento_temprana": "2026-07-26T18:20:03+00:00"
   },
-  "inundacion::Monagas::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00",
-    "fecha_evento_temprana": "2026-07-26T01:51:09+00:00"
-  },
   "orden_publico::Distrito Capital::2026-07-28": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-28T19:53:48.019374+00:00",
     "fecha_evento_temprana": "2026-07-28T18:51:42+00:00"
+  },
+  "orden_publico::Monagas::2026-07-28": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T03:40:44.441328+00:00",
+    "fecha_evento_temprana": "2026-07-28T20:47:02+00:00"
+  },
+  "inundacion::Sucre::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T03:40:51.380554+00:00",
+    "fecha_evento_temprana": "2026-07-29T02:46:02+00:00"
   }
 }
