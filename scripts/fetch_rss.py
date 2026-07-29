@@ -19,10 +19,30 @@ HEADERS_NAVEGADOR = {
 
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
 # Pie de pagina que agregan algunos feeds RSS de WordPress ("La entrada X se
-# publico primero en NOMBRE DEL MEDIO"). Es puro ruido de plantilla: si el
-# nombre del medio incluye un estado (p.ej. "El Periodico de Monagas"), el
-# clasificador puede confundirlo con la ubicacion real de la noticia.
-_BOILERPLATE_RE = re.compile(r"la entrada .*?se public(?:o|ó) primero en.*$", re.IGNORECASE | re.DOTALL)
+# publico primero en NOMBRE DEL MEDIO", o su equivalente en ingles "The post
+# X first appeared on NOMBRE DEL MEDIO"). Es puro ruido de plantilla: si el
+# nombre del medio incluye un estado (p.ej. "El Periodico de Monagas",
+# "Portuguesa Reporta"), el clasificador puede confundirlo con la ubicacion
+# real de la noticia -- caso real: un articulo sin ninguna mencion de
+# Portuguesa genero una alerta de sismo en ese estado porque el pie de
+# pagina en ingles ("...first appeared on Portuguesa Reporta.") no lo
+# capturaba el regex, que solo cubria la variante en español.
+_BOILERPLATE_RE = re.compile(
+    r"la entrada .*?se public(?:o|ó) primero en.*$"
+    r"|the post .*?first appeared on.*$",
+    re.IGNORECASE | re.DOTALL,
+)
+
+# Muchos feeds de WordPress agregan, al final del resumen, una lista de
+# titulos de "articulos relacionados" ("Lea tambien:"/"Lee tambien:" seguido
+# de varios titulos sin relacion con el articulo real). Esos titulos pueden
+# contener palabras clave de tipo/severidad que no describen el hecho real
+# -- caso real: un articulo sobre una donacion de utiles a La Guaira
+# (ninguna relacion con incendios) se clasifico como tipo=incendio porque
+# terminaba con "Lea tambien: ... Tres incendios en menos de un mes
+# registra la ciudad de Maturin" -- el titulo de OTRA nota, no del articulo
+# en si.
+_ARTICULOS_RELACIONADOS_RE = re.compile(r"\b(lea|lee)\s+tambi[ée]n\s*:.*$", re.IGNORECASE | re.DOTALL)
 
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
 # puntos suspensivos (a veces como caracter unico "…", a veces como
@@ -48,6 +68,7 @@ def _limpiar_texto(texto):
     # truncado justo antes de la ubicacion y la palabra "murio".
     texto = html.unescape(texto)
     texto = _BOILERPLATE_RE.sub("", texto)
+    texto = _ARTICULOS_RELACIONADOS_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()
 

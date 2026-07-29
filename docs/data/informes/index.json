@@ -33,14 +33,6 @@
   },
   {
     "periodo": "2026-07",
-    "tipo": "incendio",
-    "tipo_label": "Incendio",
-    "cerrado": false,
-    "generado": "2026-07-29T04:25:32.148789+00:00",
-    "total_eventos": 1
-  },
-  {
-    "periodo": "2026-07",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,

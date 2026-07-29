@@ -1,19 +1,17 @@
 {
-  "actualizado": "2026-07-29T04:25:28.226980+00:00",
+  "actualizado": "2026-07-29T05:00:05.053771+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-29T02:46:02+00:00"
   },
-  "total_eventos": 17,
+  "total_eventos": 14,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 5,
     "infraestructura_electrica": 2,
     "deslizamiento": 2,
     "colapso_estructural": 1,
-    "orden_publico": 2,
-    "incendio": 1,
-    "sismo": 2
+    "orden_publico": 2
   },
   "ranking_estados": [
     {
@@ -57,22 +55,7 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Anzoategui",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Portuguesa",
       "total": 1,
       "confirmados": 0
     }
@@ -107,24 +90,14 @@
     "Sucre": {
       "inundacion": 1
     },
-    "La Guaira": {
-      "incendio": 1
-    },
     "Anzoategui": {
       "infraestructura_electrica": 1
-    },
-    "Miranda": {
-      "sismo": 1
-    },
-    "Portuguesa": {
-      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 2,
     "critico": 2,
-    "sin_clasificar": 12,
-    "bajo": 1
+    "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -143,12 +116,6 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 2
-    },
-    "incendio": {
-      "2026-07": 1
-    },
-    "sismo": {
       "2026-07": 2
     }
   }

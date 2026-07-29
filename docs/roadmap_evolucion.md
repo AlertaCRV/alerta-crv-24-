@@ -2093,3 +2093,207 @@ bien con el tipo `sismo`), no necesariamente a una crisis migratoria en el
 sentido que ese tipo representa en el resto del sistema.
 
 Validado con `python3 scripts/validar_configs.py`.
+
+---
+
+## Acuerdo pendiente de implementar: adjuntos de correo con datos personales sensibles (29-07-2026)
+
+El usuario mostró ejemplos reales de los reportes institucionales que reciben
+por correo (filiales de la Cruz Roja reportando personas desplazadas por los
+sismos de La Guaira): la mayoría vienen como adjuntos en PDF, Word y
+PowerPoint, y **hoy `fetch_gmail.py` descarta todos los adjuntos por completo**
+(`_extraer_cuerpo()` salta explícitamente cualquier parte con
+`Content-Disposition: attachment`).
+
+**Hallazgo crítico al revisar los adjuntos de muestra**: contienen datos
+personales y de salud de personas identificables, incluyendo menores de
+edad — nombres completos, cédulas de identidad, teléfonos, direcciones
+exactas con puntos de referencia, y diagnósticos médicos individuales
+(hipertensión, epilepsia, embarazo, trastornos psiquiátricos, etc.).
+
+**Por qué esto no puede tratarse igual que un adjunto cualquiera**: el
+pipeline actual envía el texto completo de cada fuente a Groq (IA de
+terceros) para clasificación/verificación, y además lo guarda en
+`data/historico_fuentes_texto.jsonl` específicamente para que
+`build_informes.py` genere resúmenes narrativos que **se publican en el
+sitio público**. Sin un paso de por medio, datos personales y de salud de
+personas desplazadas vulnerables podrían viajar a un servicio externo de IA
+y/o terminar reflejados, aunque sea parafraseados, en una página pública.
+
+**Acuerdo con el usuario** (criterio de diseño, pendiente de implementar):
+
+- La alerta pública **nunca** debe incluir datos a nivel de persona
+  individual. Solo debe reflejar: conteo consolidado por edad y sexo, lugar
+  de procedencia de las personas desplazadas, condición general (no
+  diagnósticos individuales), y la parroquia/municipio/estado donde están
+  albergadas.
+- En vez de intentar "limpiar" el texto completo quitándole los datos
+  personales (frágil: un regex puede fallar y dejar pasar un nombre o
+  cédula en un formato no anticipado), el diseño acordado es el opuesto:
+  **extraer únicamente la sección de totales/resumen agregado** que estos
+  reportes ya suelen incluir (ejemplos reales confirmados: "Número de
+  Familias: 17", "Masculinos: 24", "Femeninas: 22", "Niños: 5",
+  "Necesidades identificadas...", municipios de destino). Esa sección —y
+  solo esa— se convierte en el texto que entra a clasificación. El resto
+  del documento (el detalle por familia/persona) se descarta inmediatamente
+  después de extraer los adjuntos y nunca se guarda en ningún archivo ni se
+  envía a la IA.
+- **Si un reporte no trae esa sección de totales reconocible** (ej. un PDF
+  que solo lista el detalle por familia sin un resumen agregado al final),
+  el sistema debe descartar esa fuente por completo en vez de intentar
+  construir un resumen a partir de los datos individuales — se prefiere
+  perder el evento a arriesgar una fuga de datos personales. Queda como
+  limitación conocida: si una filial no incluye la sección de totales, ese
+  reporte específico no se capturará automáticamente hasta que la incluya.
+
+**Pendiente de implementar** (próxima sesión): extracción de texto de
+adjuntos PDF/Word/PowerPoint (nuevas dependencias: `pypdf`, `python-docx`,
+`python-pptx`) + la función de extracción de la sección de totales con el
+criterio de "fail closed" descrito arriba, probada contra los documentos
+reales de muestra.
+
+---
+
+## Diagnóstico: publicación a Telegram rota tras poner el grupo en privado (29-07-2026)
+
+Al revisar los logs de una corrida real se encontró:
+`[ERROR] No se pudo publicar en Telegram: 400 {"ok":false,"error_code":400,
+"description":"Bad Request: chat not found"}`, repetido para varios eventos.
+Coincide en el tiempo con que el usuario puso el grupo de destino en
+privado.
+
+**Diagnóstico**: la hipótesis más probable es que, al cambiar la
+configuración de privacidad, el grupo pasó de "grupo básico" a
+"supergrupo" (una conversión que Telegram hace automáticamente al activar
+ciertas opciones, y que es **irreversible**) — eso cambia el `chat_id`
+interno del grupo (normalmente agregándole el prefijo `-100`), y el
+`TELEGRAM_CHAT_ID` guardado en los secretos de GitHub quedó apuntando a un
+chat que ya no existe con ese identificador.
+
+**Decisión**: no revertir la privacidad del grupo (el usuario quiere
+mantenerlo privado a propósito, para que el público general no vea alertas
+de las filiales sin verificar). En su lugar, obtener el `chat_id` actual
+vía `https://api.telegram.org/bot<TOKEN>/getUpdates` (con un mensaje nuevo
+en el grupo) y actualizar el secreto `TELEGRAM_CHAT_ID` con el valor
+correcto — funciona sin importar la causa exacta del cambio y no requiere
+tocar la configuración de privacidad del grupo.
+
+**Pendiente**: el usuario todavía no confirmó el nuevo `chat_id` ni lo
+actualizó en los secretos de GitHub. La publicación a Telegram permanece
+rota hasta que se haga ese cambio.
+
+---
+
+## Auditoría de las 4 alertas publicadas por falla técnica de Groq: 3 errores reales (29-07-2026)
+
+El usuario pidió revisar las últimas alertas publicadas, calificándolas de
+"un total desastre". Las 4 alertas más recientes se habían publicado con
+`estado_verificacion: "PASADO_POR_FALLA_TECNICA"` — Groq devolvió 429
+(límite de tasa) varias veces seguidas en la misma corrida y el mecanismo
+de "fallar hacia lo seguro" las dejó pasar sin la verificación de
+plausibilidad real. De las 4, 3 resultaron ser errores reales.
+
+### 1. Pie de página en inglés no se quitaba del texto ("Portuguesa" como estado inventado)
+
+La alerta "Sismo en Portuguesa" no tenía ninguna base real: el artículo de
+"Portuguesa Reporta" no menciona ese estado en ningún lugar de su
+contenido — la única aparición es el pie de página en inglés que WordPress
+agrega ("...first appeared on **Portuguesa Reporta**."), donde
+"Portuguesa" es el nombre del medio, no del estado.
+
+**Causa raíz** (`scripts/fetch_rss.py`): `_BOILERPLATE_RE` solo cubría la
+variante en español de este pie de página ("la entrada X se publico
+primero en Y"), ya corregida en una sesión anterior para el mismo problema
+con "El Periodico de Monagas". Nunca se cubrió la variante en inglés ("The
+post X first appeared on Y"), que varios feeds de WordPress usan indistinto
+del idioma del artículo.
+
+**Corrección**: se agregó la variante en inglés al mismo `_BOILERPLATE_RE`.
+Probado con el texto real (ya no detecta "Portuguesa" como ubicación tras
+la limpieza) y con el caso de control en español (sigue funcionando sin
+cambios).
+
+**Corrección retroactiva**: se eliminó la alerta completa
+"sismo::Portuguesa" de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+### 2. Lista de "artículos relacionados" al final del resumen contaminaba el tipo detectado
+
+La alerta "Incendio en La Guaira" era un falso positivo total: la fuente
+("UBV Monagas continúa demostrando su firme vocación solidaria") es sobre
+una jornada de recolección de donaciones para las familias de La Guaira —
+ninguna relación con un incendio. La palabra "incendios" solo aparecía en
+el título de **otra** nota ("Tres incendios en menos de un mes registra la
+ciudad de Maturín"), listada al final bajo "Lea también:" — el pie de
+página de WordPress que enlaza artículos relacionados, no contenido del
+artículo real.
+
+**Corrección** (`scripts/fetch_rss.py`): se agregó
+`_ARTICULOS_RELACIONADOS_RE`, que quita todo el texto desde "Lea
+también:"/"Lee también:" en adelante, igual que ya se hace con el pie de
+página "la entrada X se publico primero en...". Probado con el texto real
+(ya no detecta tipo=incendio tras la limpieza) y con un caso de control
+que menciona "lealtad" (para confirmar que el límite de palabra evita
+falsos positivos con palabras que empiezan igual).
+
+**Corrección retroactiva**: se eliminó la alerta completa
+"incendio::La Guaira" de los mismos cuatro archivos, y se borró el informe
+narrativo `docs/data/informes/2026-07_incendio.json` (generado
+enteramente a partir de este evento erróneo, era el único de tipo
+incendio del período) junto con su entrada en
+`docs/data/informes/index.json`.
+
+### 3. "En los últimos N días" se confundía con la duración real de un corte
+
+La alerta "Falla eléctrica en Anzoategui" tenía severidad "bajo" sin base
+real: la fuente dice "en los **últimos 15 días** aumentaron los cortes...
+con una duración que va desde cuatro hasta siete horas" — 15 días es la
+ventana de tiempo sobre la que se reporta una tendencia, no la duración de
+un corte continuo (que en este caso es de 4 a 7 horas, muy por debajo del
+umbral de 24 horas para severidad "bajo").
+
+**Causa raíz** (`scripts/classify.py`, `_severidad_por_duracion`): el
+regex de duración en días (`_DURACION_DIAS_RE`) no distinguía "N días de
+corte continuo" (evidencia real de severidad) de "en los últimos N días"
+(una ventana de reporte). Cualquier mención de "N días" en el texto,
+sin importar el contexto, disparaba la severidad "bajo" si N superaba el
+umbral del tipo.
+
+**Corrección**: se agregó `_es_ventana_reciente()`, que revisa el
+contexto inmediatamente anterior a la coincidencia y descarta a "últimos/
+últimas/pasados/pasadas N días" como evidencia de duración. Probado con el
+caso real (ya no escala a "bajo"), con el caso de control ya publicado
+("cortes eléctricos que superan las 94 horas", sigue dando "bajo"), y con
+un caso adicional de agua ("en los últimos 10 días fallas de agua", ya no
+escala) además de su contraparte legítima ("10 días sin agua", sigue
+escalando). Se corrió el conjunto completo de fuentes ya publicadas contra
+`classify.py` como regresión: ningún otro evento cambia de tipo o
+severidad salvo el corregido aquí.
+
+**Corrección retroactiva**: se actualizó la severidad a "sin_clasificar"
+(regenerando `titulo`/`texto`) en `docs/data/noticias.json`,
+`data/historico_eventos.jsonl` y `data/publicados.json` — se conservó la
+alerta (el evento en sí es real, solo la severidad estaba mal).
+
+### Nota sobre la causa de fondo compartida
+
+Las 3 alertas erróneas comparten un patrón: son casos que la IA (Groq)
+muy probablemente habría rechazado o corregido de haber podido evaluarlas
+— de hecho, ese mismo artículo de "Portuguesa Reporta" **sí** fue
+rechazado por Groq para las ubicaciones "La Guaira" y "Distrito Capital"
+en la misma corrida (por ser un balance retrospectivo del sismo de hace un
+mes, no un hecho nuevo) — pero para "Miranda" y "Portuguesa", Groq ya
+había empezado a devolver 429 por límite de tasa, y el mecanismo de
+"fallar hacia lo seguro" las dejó pasar sin ese mismo criterio. Por eso
+también se eliminó "sismo::Miranda" (el mismo artículo retrospectivo,
+misma razón de fondo que ya rechazó a La Guaira/DC, solo que aquí no llegó
+a evaluarse). No se modificó el mecanismo de "fallar hacia lo seguro" en
+sí (es una decisión de diseño ya conversada: preferir publicar sin
+confirmar a perder un evento real cuando la IA no está disponible) — los
+tres fixes de código corrigen la causa real de cada falso positivo
+específico, independientemente de si Groq estaba disponible o no.
+
+Validado con `python3 scripts/validar_configs.py`, los casos de prueba
+descritos arriba, y `python3 scripts/build_dashboard.py` para regenerar
+las estadísticas.

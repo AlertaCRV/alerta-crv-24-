@@ -68,6 +68,20 @@ _UMBRAL_DIAS_DURACION_BAJO_POR_TIPO = {
 _DURACION_HORAS_RE = re.compile(r"\b(\d{1,3})\s*horas?\b", re.IGNORECASE)
 _DURACION_DIAS_RE = re.compile(r"\b(\d{1,2})\s*d[ií]as?\b", re.IGNORECASE)
 
+# "en los ultimos N dias"/"en la ultima semana" describe una VENTANA de
+# tiempo sobre la que se reporta una tendencia (ej. "en los ultimos 15 dias
+# aumentaron los cortes"), no la duracion de un corte continuo -- muy
+# distinto de "cortes que superan las 94 horas". Sin esta exclusion, la
+# ventana de reporte se confundia con una duracion real y escalaba la
+# severidad de sin_clasificar a bajo sin que el texto describiera ningun
+# corte prolongado en si.
+_VENTANA_RECIENTE_RE = re.compile(r"\b(ultimos?|ultimas?|pasados?|pasadas?)\s*$", re.IGNORECASE)
+
+
+def _es_ventana_reciente(texto_norm, posicion):
+    contexto_previo = texto_norm[max(0, posicion - 20):posicion]
+    return bool(_VENTANA_RECIENTE_RE.search(contexto_previo))
+
 
 def _severidad_por_duracion(texto_norm, tipos):
     for tipo in tipos:
@@ -77,7 +91,10 @@ def _severidad_por_duracion(texto_norm, tipos):
         umbral_horas = umbral_dias * 24
         if any(int(m.group(1)) >= umbral_horas for m in _DURACION_HORAS_RE.finditer(texto_norm)):
             return "bajo"
-        if any(int(m.group(1)) >= umbral_dias for m in _DURACION_DIAS_RE.finditer(texto_norm)):
+        if any(
+            int(m.group(1)) >= umbral_dias and not _es_ventana_reciente(texto_norm, m.start())
+            for m in _DURACION_DIAS_RE.finditer(texto_norm)
+        ):
             return "bajo"
     return None
 

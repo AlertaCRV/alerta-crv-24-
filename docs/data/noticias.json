@@ -1,34 +1,10 @@
 [
   {
-    "tipo": "incendio",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/ubv-monagas-continua-demostrando-su-firme-vocacion-solidaria/",
-        "fecha": "2026-07-28T18:59:38+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-28T18:59:38+00:00",
-    "fecha_evento_temprana": "2026-07-28T18:59:38+00:00",
-    "fecha_deteccion": "2026-07-29T04:23:49.250677+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::La Guaira::2026-07-28",
-    "titulo": "Incendio en La Guaira",
-    "texto": "📌 Incendio en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 28/07/2026, 2:59 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/maturin/ubv-monagas-continua-demostrando-su-firme-vocacion-solidaria/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,
     "parroquia": null,
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "score": 0.65,
     "confirmado": false,
     "num_fuentes": 1,
@@ -45,67 +21,7 @@
     "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
     "clave_dedup": "infraestructura_electrica::Anzoategui::2026-07-28",
     "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 28/07/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/anzoatiguenses-reportan-aumento-de-apagones-en-la-zona-norte/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos",
-        "fecha": "2026-07-29T00:23:15+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-29T00:23:15+00:00",
-    "fecha_evento_temprana": "2026-07-29T00:23:15+00:00",
-    "fecha_deteccion": "2026-07-29T04:25:01.663419+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "Distrito Capital",
-      "Portuguesa",
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Miranda::2026-07-29",
-    "titulo": "Sismo en Miranda",
-    "texto": "📌 Sismo en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 28/07/2026, 8:23 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos",
-        "fecha": "2026-07-29T00:23:15+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-29T00:23:15+00:00",
-    "fecha_evento_temprana": "2026-07-29T00:23:15+00:00",
-    "fecha_deteccion": "2026-07-29T04:25:25.796105+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "Distrito Capital",
-      "Miranda",
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Portuguesa::2026-07-29",
-    "titulo": "Sismo en Portuguesa",
-    "texto": "📌 Sismo en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 28/07/2026, 8:23 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=mas-de-7-000-edificaciones-presentan-danos-severos-en-caracas-la-guaira-y-miranda-tras-los-terremotos"
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 28/07/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/anzoatiguenses-reportan-aumento-de-apagones-en-la-zona-norte/"
   },
   {
     "tipo": "orden_publico",
