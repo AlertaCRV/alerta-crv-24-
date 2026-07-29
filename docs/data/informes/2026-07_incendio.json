@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-07-29T04:25:32.148789+00:00",
+  "actualizado_hasta": "2026-07-29T04:23:49.250677+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un total de 1 evento de incendio, lo que supone un aumento en comparación con el período anterior (2026-06), en el que no se registraron eventos de este tipo (El Periodico de Monagas). Sin embargo, no se encontraron fuentes que reportaran daños materiales, heridos o víctimas fatales en el período en cuestión. La Universidad Bolivariana de Venezuela (UBV), sede Monagas, ha demostrado su vocación solidaria a través de la recolección de insumos y productos de primera necesidad para apoyar a los hermanos del estado La Guaira (El Periodico de Monagas). No se tienen registros de eventos específicos de incendio en este período que hayan causado daños significativos o pérdidas de vidas. La comparación con el período anterior muestra un aumento en la cantidad de eventos de incendio, pasando de 0 a 1 evento (El Periodico de Monagas).",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/ubv-monagas-continua-demostrando-su-firme-vocacion-solidaria/"
+    }
+  ]
+}
