@@ -2013,3 +2013,83 @@ sin afectar al resto del pipeline.
 
 Validado con `python3 scripts/validar_configs.py` y los casos de prueba
 descritos arriba.
+
+---
+
+## Diagnóstico y correcciones sobre el nuevo mecanismo de correo (29-07-2026)
+
+Al probar en vivo el mecanismo de Gmail + IMAP recién implementado, aparecieron
+dos problemas reales que no se habían detectado en las pruebas con mensajes
+simulados de la sesión anterior.
+
+### 1. El reenvío automático por regla estaba bloqueado por política del tenant (no era un bug de código)
+
+El correo de prueba nunca llegó a Gmail. El rebote de Microsoft fue explícito:
+`550 5.7.520 Access denied, Your organization does not allow external
+forwarding`. Las cabeceras del mensaje rebotado confirman que lo generó
+`Mailbox Rules Agent` (la regla automática) — es la política de anti-spam
+saliente de Exchange Online (`AutoForwardingMode`) que bloquea el reenvío
+automático (por regla o por el ajuste clásico de auto-forward SMTP) hacia
+cualquier dominio externo, independientemente de a qué proveedor se reenvíe.
+No hay forma de evitarla sin aprobación de administrador, así que se descartó
+la regla de bandeja de entrada como mecanismo de transporte.
+
+**Decisión del usuario**: en vez de seguir buscando un mecanismo 100%
+automático, reenvía manualmente cada correo institucional a la cuenta Gmail
+mientras se evalúa una solución definitiva. Un reenvío manual (clic en
+"Reenviar" + enviar) es una acción humana deliberada, no un reenvío
+automático por regla — la política de `AutoForwardingMode` que bloqueó la
+regla no aplica a este caso, y en la práctica el reenvío manual sí llegó.
+`scripts/fetch_gmail.py` no necesitó ningún cambio para este caso: ya
+quitaba el prefijo "RV:"/"FW:" que Outlook antepone al reenviar (manual o
+por regla).
+
+### 2. El formato rígido de asunto nunca iba a coincidir con reportes reales
+
+Aun llegando el correo a Gmail, `fetch_gmail_items()` seguía sin encontrar
+nada. Causa: el diseño heredado de `fetch_email.py` (la integración anterior
+con Outlook) exigía un asunto con el formato exacto `EMERGENCIA | Estado |
+Tipo | Severidad`. El usuario confirmó que los reportes reales de las
+filiales **nunca** llegan en ese formato — llegan en lenguaje natural (caso
+real probado: "Actualización de desplazados de La Guaira en los municipios
+Colina, Zamora y Tocopero"). Con el formato rígido, absolutamente ningún
+reporte real habría sido nunca clasificado, sin importar qué tan bien
+funcionara el transporte (Outlook, Gmail, o cualquier otro).
+
+**Corrección de raíz** (`scripts/fetch_gmail.py`): se eliminó por completo
+`_parsear_asunto()`/`TIPO_MAP`/`SEVERIDADES_VALIDAS` y el mecanismo
+`_preclasificado` que se pasaba a `classify.py` para saltarse su detección.
+Ahora cada correo se entrega como un item de texto libre (asunto + cuerpo),
+exactamente igual que un item de `fetch_rss_items()` — `clasificar_item()`
+en `classify.py` hace la detección de ubicación/tipo/severidad a partir del
+texto con el mismo mecanismo que ya usa para artículos de RSS, sin exigir
+ningún formato particular. El prefijo "RV:"/"FW:" se sigue quitando, pero
+solo por prolijidad del texto mostrado, no porque el clasificador lo
+necesite (la detección escanea todo el texto, no depende de cómo empiece el
+asunto).
+
+**Probado** con el caso real reportado por el usuario: el texto completo
+("Actualización de desplazados de La Guaira en los municipios Colina, Zamora
+y Tocopero. Se mantiene la atención a las familias afectadas por los
+terremotos, con refugios activos...") se clasifica correctamente como
+ubicación "La Guaira", tipo "sismo" (por la mención de "terremotos"),
+`es_relevante() = True` — pasaría a la verificación de plausibilidad de
+`verify_ai.py` igual que cualquier otra fuente (incluido el filtro de
+retrospectiva de sismo, que podría rechazarlo si la IA lo considera una
+actualización de seguimiento en vez de un hecho nuevo — comportamiento
+esperado y compartido con el resto de fuentes sobre el mismo tema, no un
+problema de este fetcher). También probado el flujo completo de IMAP
+simulado con este texto real, confirmando que el item generado y marcado
+como leído es idéntico al que produciría `clasificar_item()` sobre un
+artículo de RSS equivalente.
+
+**Nota para el futuro**: si en algún momento se decide que "desplazados"
+(sin la palabra "masivo") debería activar por sí solo el tipo
+`crisis_migratoria`, es un cambio de una sola línea en
+`config/keywords.yaml` — se deja pendiente de una decisión explícita en vez
+de agregarlo sin que se haya discutido, ya que "desplazados" en este
+contexto se refiere a víctimas de los sismos (que ya se cubre razonablemente
+bien con el tipo `sismo`), no necesariamente a una crisis migratoria en el
+sentido que ese tipo representa en el resto del sistema.
+
+Validado con `python3 scripts/validar_configs.py`.
