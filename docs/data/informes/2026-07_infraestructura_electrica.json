@@ -3,7 +3,7 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-07-28T03:26:27.116896+00:00",
+  "generado": "2026-07-29T00:12:16.098989+00:00",
   "actualizado_hasta": "2026-07-27T16:02:12.489573+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el período de 2026-07, se registró un evento de falla eléctrica en el estado Zulia, específicamente en los municipios de Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta, debido al paso de la onda tropical número 30 (Diario La Nacion, El Impulso, Noticias de Aqui). Las intensas precipitaciones asociadas a la onda tropical número 30 impactaron con severidad gran parte del estado Zulia desde la noche del 26 de julio, combinándose con fuertes ráfagas de viento y una constante actividad de descargas eléctricas (Diario La Nacion). El temporal dejó múltiples sectores a oscuras debido a fallas eléctricas (Diario La Nacion). Este evento es el único registrado en este período, lo que contrasta con el período anterior (2026-06), en el que no se registraron eventos de este tipo. La onda tropical número 30 también provocó intensas lluvias, destrozos y fallas eléctricas en el Zulia, lo que llevó a la activación del Sistema Regional de Gestión de Riesgo (Noticias de Aqui).",
+  "narrativa": "En el período de 2026-07, se registró un evento de falla eléctrica en el estado Zulia, específicamente en los municipios de Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta, debido al paso de la onda tropical número 30 (Diario La Nacion, El Impulso, Noticias de Aqui). Las intensas precipitaciones asociadas a la onda tropical número 30 impactaron con severidad gran parte del estado Zulia desde la noche del 26 de julio, combinándose con fuertes ráfagas de viento y descargas eléctricas (Diario La Nacion). El temporal dejó múltiples sectores a oscuras debido a fallas eléctricas (Diario La Nacion). Este evento es el único registrado en este período, lo que contrasta con el período anterior (2026-06), en el que no se registraron eventos de este tipo. La comparación con el período anterior muestra que hubo 0 eventos registrados entonces vs. 1 en este período.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
