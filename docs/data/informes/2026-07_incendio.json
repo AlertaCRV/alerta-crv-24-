@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-07",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-07-29T20:22:57.961980+00:00",
+  "actualizado_hasta": "2026-07-29T18:42:42.510666+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un incremento en la cantidad de eventos de incendio en comparación con el período anterior, 2026-06, donde no se registraron eventos de este tipo. En este período, se registró 1 evento de incendio. Uno de los eventos que destacó por sus daños materiales y heridos fue el Incendio en Distrito Capital, específicamente en Caracas, que tuvo una severidad alto, según se informó en (La Prensa de Lara). Este incidente se refiere a una fuga de gas que provocó una explosión en un local de comida ubicado en la avenida Nueva Granada, vía El Cementerio, en Caracas, dejando dos personas heridas, como se reportó en (La Prensa de Lara) y (Noticias de Aqui). La explosión también causó daños materiales en el establecimiento comercial, según se informó en (Noticias de Aqui) y (Primicia), donde se mencionó que la deflagración de bombonas de gas en Caracas dejó dos personas lesionadas y daños estructurales en dos locales comerciales de la parroquia San Pedro. En resumen, el evento más significativo en este período fue el Incendio en Distrito Capital, que dejó heridos y daños materiales, y se registró un total de 1 evento de incendio en comparación con el período anterior.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/"
+    }
+  ]
+}
