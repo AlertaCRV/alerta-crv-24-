@@ -2297,3 +2297,64 @@ específico, independientemente de si Groq estaba disponible o no.
 Validado con `python3 scripts/validar_configs.py`, los casos de prueba
 descritos arriba, y `python3 scripts/build_dashboard.py` para regenerar
 las estadísticas.
+
+---
+
+## Preparación para reportes de filiales: palabra clave nueva y bug de ambigüedad encontrado al probar (29-07-2026)
+
+Al acordar con el usuario el criterio de análisis para los correos/adjuntos
+de filiales (ver seccion anterior sobre datos personales sensibles), se
+simuló el caso real de La Vela (personas desplazadas de La Guaira
+albergadas en Falcón) para mostrarle cómo se vería la alerta publicada,
+antes de implementar la extracción de adjuntos en sí.
+
+**Palabra clave agregada** (`config/keywords.yaml`, tipo `crisis_migratoria`):
+"desplazados"/"desplazadas"/"personas desplazadas"/"familias desplazadas",
+a pedido explícito del usuario. Necesaria no solo para asignar el tipo
+correcto, sino porque sin ninguna palabra clave de tipo cerca, **la
+ubicación tampoco se detectaba en absoluto** (`_ventana_cerca()` exige una
+palabra de tipo dentro de la ventana de proximidad para aceptar una mención
+de estado como real).
+
+**Bug encontrado al probar con el texto real**: un texto que menciona a
+propósito varios municipios ambiguos ("los municipios Colina, Zamora y
+Tocopero del estado Falcón") debía quedar con `municipio: None` (ya
+corregido el 29-07-2026 para el caso de Zulia/Cabimas), pero en este caso
+el municipio se "colaba" de vuelta como "Petit" — un municipio totalmente
+distinto.
+
+**Causa raíz** (`scripts/classify.py`): `_buscar_municipio_directo()`
+descartaba correctamente el municipio por ambigüedad (3 nombres
+distintos encontrados), pero devolvía `None` sin informarle a nadie
+*cuáles* eran esos nombres. Como el municipio quedaba en `None`,
+`_buscar_parroquia_directa()` entraba a su rama de "municipio desconocido",
+que busca cualquier parroquia única en todo el país -- y "Colina" resultó
+ser, por coincidencia, también el nombre de una parroquia única del
+municipio "Petit" en el mismo estado. Sin saber que "Colina" ya había sido
+descartado como ambiguo, esa búsqueda lo aceptó como evidencia de una
+parroquia real, infiriendo un municipio ("Petit") que no tiene ninguna
+relación con el texto.
+
+**Corrección**: `_buscar_municipio_directo()` ahora devuelve también el
+conjunto de nombres normalizados que encontró (ambiguos o no), y
+`detectar_municipio_parroquia()` se lo pasa a `_buscar_parroquia_directa()`
+como `excluir_normalizados` -- un nombre ya descartado por ambigüedad en la
+búsqueda de municipio nunca puede "colarse" de vuelta en la búsqueda de
+parroquia. Probado con el caso real (ya no infiere "Petit") y con
+regresión completa contra las fuentes ya publicadas (ningún
+municipio/parroquia ya detectado cambia).
+
+**Nota de diseño encontrada de paso**: la ubicación de una alerta de
+filial depende de qué mención de estado quede más cerca de la palabra
+clave de tipo en el texto -- si el texto menciona primero el estado de
+*origen* de los desplazados y despues el de *destino* (donde están
+albergados y donde se necesita la respuesta), el sistema puede terminar
+atribuyendo la alerta al origen en vez del destino. Al redactar el texto
+sintético para estos reportes (pendiente de implementar junto con la
+extracción de adjuntos), hay que asegurarse de que la ubicación de
+destino/albergue quede más cerca de la palabra clave que la de origen.
+
+Validado con `python3 scripts/validar_configs.py` y la regresión descrita
+arriba. **Pendiente**: la extracción de adjuntos en sí
+(`fetch_gmail.py`) con el criterio de solo-totales-agregados ya acordado
+con el usuario, todavía no implementada.
