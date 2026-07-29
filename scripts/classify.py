@@ -391,9 +391,18 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
     municipios igualmente afectados), no se elige arbitrariamente el primero
     que aparezca en el orden de iteracion: eso afirmaria falsamente que solo
     ese municipio fue afectado. Se devuelve None (igual que cuando no se
-    encuentra ninguno), dejando la ubicacion a nivel de solo el estado."""
+    encuentra ninguno), dejando la ubicacion a nivel de solo el estado.
+
+    Devuelve (municipio_o_None, nombres_normalizados_encontrados) -- el
+    segundo elemento incluye TODOS los nombres que hicieron match, incluso
+    cuando el resultado es ambiguo (mas de uno), para que el llamador pueda
+    excluirlos de otras busquedas (ver _buscar_parroquia_directa): un
+    municipio descartado por ambiguedad no debe poder "colarse" de vuelta
+    solo porque su nombre tambien coincide, por casualidad, con el de una
+    parroquia de un municipio distinto."""
     conteo_municipios, _ = _conteos_globales_ubicaciones()
     encontrados = set()
+    normalizados_encontrados = set()
     for normalizado, original in _municipios_por_variante(detalle_estado).items():
         if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
             continue
@@ -403,12 +412,13 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             encontrados.add(original)
+            normalizados_encontrados.add(normalizado)
     if len(encontrados) == 1:
-        return next(iter(encontrados))
-    return None
+        return next(iter(encontrados)), normalizados_encontrados
+    return None, normalizados_encontrados
 
 
-def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_estado_norm):
+def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_estado_norm, excluir_normalizados=None):
     """Busca una parroquia mencionada directamente en el texto. Si el
     municipio ya se conoce, busca SOLO dentro de sus propias parroquias (sin
     necesidad de chequeo de ambiguedad -- ya sabemos el contenedor exacto).
@@ -422,7 +432,17 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
     la misma palabra que identifico el municipio (p.ej. "Guajira" como
     alias de "Indigena Bolivariano Guajira") se reutilizaria como si fuera
     evidencia de una parroquia homonima dentro de ese municipio, aunque el
-    texto nunca diga "parroquia Guajira" de forma explicita."""
+    texto nunca diga "parroquia Guajira" de forma explicita.
+
+    `excluir_normalizados` (solo aplica cuando el municipio aun no se conoce):
+    nombres que _buscar_municipio_directo() ya encontro pero descarto por
+    ambiguedad (mas de un municipio distinto mencionado en el mismo texto).
+    Sin esto, uno de esos mismos nombres ambiguos podia "colarse" de vuelta
+    como si fuera evidencia de una parroquia de un municipio TOTALMENTE
+    DISTINTO -- caso real: un texto que menciona "los municipios Colina,
+    Zamora y Tocopero" (ambiguo a proposito, los tres igualmente validos)
+    terminaba infiriendo "Municipio Petit" solo porque "Colina" tambien es,
+    por coincidencia, el nombre de una parroquia de ese otro municipio."""
     if municipio is not None:
         info_municipio = detalle_estado.get("municipios", {}).get(municipio, {})
         nombres_municipio = {_normalizar(municipio)}
@@ -437,10 +457,13 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
                 return original, None
         return None, None
 
+    excluir_normalizados = excluir_normalizados or set()
     _, conteo_parroquias = _conteos_globales_ubicaciones()
     indice = _indice_parroquias_estado(detalle_estado)
     for normalizado, ocurrencias in indice.items():
         if len(normalizado) < _LONGITUD_MINIMA_NOMBRE_DIRECTO:
+            continue
+        if normalizado in excluir_normalizados:
             continue
         if conteo_parroquias[normalizado] > 1 or len(ocurrencias) > 1:
             continue  # ambiguo entre estados o entre municipios del mismo estado
@@ -462,6 +485,7 @@ def detectar_municipio_parroquia(texto, estado):
 
     municipio_encontrado = None
     parroquia_encontrada = None
+    nombres_municipio_ambiguos = set()
 
     m = _MUNICIPIO_RE.search(texto)
     if m:
@@ -469,7 +493,9 @@ def detectar_municipio_parroquia(texto, estado):
         municipio_encontrado = _municipios_por_variante(detalle).get(candidato)
 
     if municipio_encontrado is None:
-        municipio_encontrado = _buscar_municipio_directo(texto_norm, detalle, nombre_estado_norm)
+        municipio_encontrado, nombres_municipio_ambiguos = _buscar_municipio_directo(
+            texto_norm, detalle, nombre_estado_norm
+        )
 
     p = _PARROQUIA_RE.search(texto)
     if p:
@@ -487,7 +513,8 @@ def detectar_municipio_parroquia(texto, estado):
 
     if parroquia_encontrada is None:
         parroquia_encontrada, municipio_inferido = _buscar_parroquia_directa(
-            texto_norm, detalle, municipio_encontrado, nombre_estado_norm
+            texto_norm, detalle, municipio_encontrado, nombre_estado_norm,
+            excluir_normalizados=nombres_municipio_ambiguos,
         )
         if municipio_encontrado is None and municipio_inferido is not None:
             municipio_encontrado = municipio_inferido
