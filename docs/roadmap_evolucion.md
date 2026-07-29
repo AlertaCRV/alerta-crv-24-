@@ -2486,3 +2486,106 @@ de `redactar_noticia()` (sin cambios de comportamiento).
 usuario va a reenviar todo su historial pendiente de reportes de
 filiales) — el diseño está probado contra los documentos de muestra, pero
 el formato exacto de cada filial puede variar.
+
+---
+
+## Primera prueba real con correos reenviados: 3 hallazgos (29-07-2026)
+
+El usuario reenvió 5 correos reales a la cuenta de Gmail institucional
+(remitente real: `sala.situacional.nacional@cruzroja.ve`). Resultado: solo
+2 alertas publicadas (Falcón y Apure). Investigado con los logs de la
+corrida y `data/historico_fuentes_texto.jsonl` (que guarda el texto
+sintético ya seguro de cada fuente, nunca el documento original).
+
+### 1. Fusión correcta, pero con una fuente de origen dudoso
+
+La alerta de Falcón fusionó 3 fuentes (07/07, 28/07, y una tercera sin
+fecha propia reconocible que usó la fecha de hoy como fallback, mencionando
+"municipio Zamora" con cifras internamente contradictorias — "Familias: 22"
+junto con "Número de familias: 17"). El usuario no reconoce ese tercer
+documento como algo que haya enviado a propósito — sospecha de trabajo
+pendiente de confirmar es que sea una copia duplicada de "Reporte # 4"
+(28/07, que sí menciona Zamora y Tocopero de pasada) reenviada por
+separado, con una estructura interna ligeramente distinta que hizo que la
+extracción de cifras se confundiera. **No se pudo diagnosticar la causa
+exacta sin acceso al archivo real** — queda pendiente que el usuario
+confirme/reenvíe ese documento específico para reproducir el bug.
+
+### 2. Reporte de Filial Puerto Píritu (cuerpo de correo, sin adjunto) nunca generó alerta
+
+Diagnosticado y **no es un bug, es una limitación real de diseño**:
+`detectar_ubicacion()` (`classify.py`) solo reconoce menciones explícitas
+del nombre del ESTADO — nunca infiere el estado a partir de un municipio o
+localidad mencionados solos. Un texto libre tipo "Filial Puerto Píritu
+reporta familias desplazadas..." sin decir "Anzoátegui" en ningún lado no
+genera ninguna ubicación, y el item se descarta en silencio (sin ningún
+`[WARN]`, ya que `es_relevante()` filtra sin registrar nada).
+
+Se evaluó agregar un mecanismo de inferencia (buscar un municipio/parroquia
+conocido y deducir su estado) pero se descartó por **evidencia concreta de
+riesgo real**, encontrada en la misma prueba:
+
+- Un texto de prueba con la palabra genérica "comunidad" coincidió, por
+  nombre, con una parroquia real llamada "Comunidad" en Amazonas.
+- "Píritu" existe como municipio en **dos** estados distintos (Anzoátegui
+  y Falcón) — un texto que solo dice "Puerto Píritu" es genuinamente
+  ambiguo sin más contexto.
+
+Con el historial de esta sesión de bugs de ambigüedad de nombres de
+municipio/parroquia, no se consideró seguro implementar esto de forma
+apresurada. **Mitigación práctica sin riesgo de código**: si un reporte de
+filial llega solo en el cuerpo del correo (sin adjunto), el estado debe
+mencionarse explícitamente en el texto (el usuario puede agregarlo al
+reenviar si el reporte original no lo trae).
+
+### 3. Contradicción entre "Ubicación" y "Albergados en" en la tarjeta — corregido
+
+Cuando varias fuentes de filial del mismo evento mencionaban municipios
+distintos (Colina vs. Zamora, dos reportes de la misma situación en
+Falcón), el encabezado `📍 Ubicación:` (que usa `evento["municipio"]`,
+calculado en `agrupar_y_verificar()` como el primer valor no nulo entre
+las fuentes) podía no coincidir con `🏠 Albergados en:` del resumen
+consolidado (que ya usaba la fuente más reciente, ver sección anterior).
+
+**Corrección** (`scripts/verify.py`): `municipio`/`parroquia` del evento
+ahora también se toman de la fuente más reciente (ordenando por fecha
+antes de buscar el primer valor no nulo), igual que ya hacía
+`resumen_consolidado` — ambos quedan siempre alineados a la misma fuente.
+
+---
+
+## Cambio de política: retener eventos en vez de publicarlos sin verificar cuando Groq falla (29-07-2026)
+
+Al revisar las alertas del día a pedido del usuario ("muchas son
+retrospectivas, falsas alertas"), se encontró la causa raíz real: **10 de
+las 15 alertas publicadas ese día tenían `estado_verificacion:
+PASADO_POR_FALLA_TECNICA`** — Groq agotó su límite de tasa (múltiples
+"429" en casi todas las corridas) y el mecanismo de "fallar hacia lo
+seguro" las dejó pasar **sin ninguna verificación de plausibilidad real**.
+No era un problema de frecuencia de auditoría (la verificación de IA ya
+corre en cada ciclo de 10 minutos) sino de que Groq está fallando la
+mayoría de las veces.
+
+El usuario eligió cambiar la política: en vez de publicar de inmediato sin
+confirmar cuando Groq falla, **se retiene el evento hasta
+`MAX_CICLOS_ESPERA_GROQ` (2) ciclos adicionales** (~20-30 min, el
+monitoreo corre cada 10 min) para darle chance a que una corrida
+posterior sí logre verificarlo con IA. Solo si sigue fallando tras agotar
+esos reintentos se publica sin confirmar, como red de seguridad (nunca se
+pierde un evento real solo porque Groq esté caído por más tiempo).
+
+**Implementación** (`scripts/verify_ai.py`): nuevo archivo
+`data/pendientes_verificacion.json` (persistido entre corridas por
+`monitor.yml`, igual que `publicados.json`) que cuenta cuántos ciclos
+lleva fallando cada cluster (clave `tipo::ubicacion::día`, se reinicia
+sola cada día). `_manejar_falla_temporal()` centraliza la decisión
+(retener vs. publicar) y reemplaza las dos llamadas que antes publicaban
+de inmediato (JSON de veredictos inválido, y excepción de red/rate
+limit). Cuando Groq sí responde con éxito se limpia cualquier pendiente
+de ese cluster (`_limpiar_pendiente()`). El caso de `GROQ_API_KEY` no
+configurada (falla permanente de configuración, no transitoria) se dejó
+sin cambios — publica de inmediato, reintentar no ayudaría.
+
+Probado directamente: 2 llamadas seguidas retienen (`None`), la 3ra
+publica con `PASADO_POR_FALLA_TECNICA`. Validado con
+`python3 scripts/validar_configs.py`.
