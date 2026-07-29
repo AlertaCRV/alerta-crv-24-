@@ -1,38 +1,54 @@
 {
   "infraestructura_agua::Sucre::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T17:58:30.903262+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:23:31.093426+00:00"
   },
   "orden_publico::Distrito Capital::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T17:58:55.070129+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:23:55.294656+00:00"
   },
   "salud_publica::Lara::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T17:59:19.229160+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:24:19.526160+00:00"
   },
   "incendio::Distrito Capital::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T17:59:43.384096+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:24:43.771917+00:00"
   },
   "deslizamiento::La Guaira::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T18:00:07.538531+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:25:07.986846+00:00"
   },
   "deslizamiento::Distrito Capital::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T18:00:31.690383+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:25:32.244069+00:00"
   },
   "sismo::Yaracuy::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T18:00:55.978968+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:25:56.497952+00:00"
   },
   "salud_publica::La Guaira::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T18:01:20.124554+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T18:26:20.733413+00:00"
   },
   "crisis_migratoria::Anzoategui::2026-07-29": {
     "intentos": 1,
     "ultima_vez": "2026-07-29T18:01:44.279472+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:21:54.247055+00:00"
+  },
+  "inundacion::Barinas::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:22:18.467890+00:00"
+  },
+  "sismo::La Guaira::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:22:42.669459+00:00"
+  },
+  "deslizamiento::Bolivar::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T18:23:06.897805+00:00"
   }
 }
