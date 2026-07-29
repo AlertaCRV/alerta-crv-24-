@@ -1,5 +1,93 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "San Pedro",
+    "severidad": "alto",
+    "score": 1.65,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/",
+        "fecha": "2026-07-29T17:06:27+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/",
+        "fecha": "2026-07-29T16:30:46+00:00"
+      },
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/",
+        "fecha": "2026-07-29T16:40:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T17:06:27+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:30:46+00:00",
+    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
+    "titulo": "Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 1:06 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:42 p.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": "Caraballeda",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/la-guaira-nos-sigue-necesitando-brigadistas-voluntarios-piden-donaciones-para-entregar-kits-de-primera-necesidad/",
+        "fecha": "2026-07-29T17:25:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T17:25:53+00:00",
+    "fecha_evento_temprana": "2026-07-29T17:25:53+00:00",
+    "fecha_deteccion": "2026-07-29T18:43:30.890955+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::La Guaira::2026-07-29",
+    "titulo": "Salud pública en Parroquia Caraballeda, Municipio Vargas, La Guaira",
+    "texto": "📌 Salud pública en Parroquia Caraballeda, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Caraballeda, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 1:25 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/la-guaira-nos-sigue-necesitando-brigadistas-voluntarios-piden-donaciones-para-entregar-kits-de-primera-necesidad/"
+  },
+  {
+    "tipo": "crisis_migratoria",
+    "ubicacion": "Anzoategui",
+    "municipio": "Piritu",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.5,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741418361C69B8A5633E6725A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
+        "fecha": "2026-07-29T17:55:40+00:00"
+      }
+    ],
+    "es_reporte_filial": true,
+    "resumen_consolidado": "🏠 Albergados en: municipio Piritu, estado Anzoategui\n👥 Adultos: 41\n👥 Personas: 65",
+    "fecha_evento": "2026-07-29T17:55:40+00:00",
+    "fecha_evento_temprana": "2026-07-29T17:55:40+00:00",
+    "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "crisis_migratoria::Anzoategui::2026-07-29",
+    "titulo": "Reporte de personas desplazadas",
+    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Piritu, Anzoategui\n🕒 Hecho reportado: 29/07/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:43 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n🏠 Albergados en: municipio Piritu, estado Anzoategui\n👥 Adultos: 41\n👥 Personas: 65"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Barinas",
     "municipio": "Pedraza",

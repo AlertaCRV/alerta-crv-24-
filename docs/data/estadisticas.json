@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-29T18:01:44.937652+00:00",
+  "actualizado": "2026-07-29T18:43:56.353519+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-29T16:22:17+00:00"
+    "hasta": "2026-07-29T17:55:40+00:00"
   },
-  "total_eventos": 27,
+  "total_eventos": 30,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
@@ -14,19 +14,30 @@
     "orden_publico": 3,
     "sismo": 2,
     "infraestructura_agua": 1,
-    "salud_publica": 3,
-    "crisis_migratoria": 2
+    "salud_publica": 4,
+    "crisis_migratoria": 3,
+    "incendio": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 5,
+      "total": 6,
       "confirmados": 1
     },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
+      "total": 3,
+      "confirmados": 0
     },
     {
       "estado": "Lara",
@@ -40,16 +51,6 @@
     },
     {
       "estado": "Sucre",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 2,
       "confirmados": 0
     },
@@ -111,7 +112,8 @@
     "Distrito Capital": {
       "deslizamiento": 2,
       "inundacion": 1,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "incendio": 1
     },
     "Trujillo": {
       "inundacion": 1
@@ -129,14 +131,16 @@
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "crisis_migratoria": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 1
     },
     "La Guaira": {
       "deslizamiento": 1,
-      "sismo": 1
+      "sismo": 1,
+      "salud_publica": 1
     },
     "Aragua": {
       "salud_publica": 1
@@ -152,9 +156,9 @@
     }
   },
   "por_severidad": {
-    "alto": 2,
+    "alto": 3,
     "critico": 4,
-    "sin_clasificar": 21
+    "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -182,10 +186,13 @@
       "2026-07": 1
     },
     "salud_publica": {
-      "2026-07": 3
+      "2026-07": 4
     },
     "crisis_migratoria": {
-      "2026-07": 2
+      "2026-07": 3
+    },
+    "incendio": {
+      "2026-07": 1
     }
   }
 }
