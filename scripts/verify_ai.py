@@ -533,7 +533,25 @@ def _manejar_falla_temporal(evento, candidatos):
     publicar hasta MAX_CICLOS_ESPERA_GROQ ciclos (ver comentario junto a esa
     constante) antes de usar el mecanismo de "fallar hacia lo seguro"
     (publicar sin confirmar). Devuelve None mientras se retiene, o el evento
-    finalizado con error_sistema=True una vez agotados los reintentos."""
+    finalizado con error_sistema=True una vez agotados los reintentos.
+
+    Retener solo tiene sentido si el mismo cluster puede reaparecer en una
+    corrida futura -- cierto para RSS (el articulo sigue en la ventana de
+    busqueda) pero FALSO para correos institucionales: fetch_gmail.py marca
+    cada correo como leido apenas lo procesa una vez, asi que si se retiene
+    aqui, ese reporte nunca vuelve a generarse y quedaria retenido para
+    siempre (bug real encontrado probando el reporte de Filial Puerto
+    Piritu: quedo con 1 intento fallido sin forma de llegar nunca al
+    segundo). Un cluster formado EXCLUSIVAMENTE por fuentes de correo se
+    publica de inmediato sin confirmar, como antes de este cambio."""
+    if all(m["fuente_tipo"] == "correo" for g in candidatos for m in g):
+        print(
+            f"[WARN] Groq no disponible para [{evento['tipo']}/{evento['ubicacion']}] -- "
+            f"proviene solo de correo institucional (no se puede retener para un "
+            f"proximo ciclo, el mensaje ya se marco como leido), se publica sin verificar."
+        )
+        return _finalizar_evento(evento, candidatos, error_sistema=True)
+
     clave = _clave_pendiente(evento)
     pendientes = _cargar_pendientes()
     intentos_previos = pendientes.get(clave, {}).get("intentos", 0)
