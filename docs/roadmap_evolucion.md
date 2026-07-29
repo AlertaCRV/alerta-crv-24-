@@ -2589,3 +2589,34 @@ sin cambios — publica de inmediato, reintentar no ayudaría.
 Probado directamente: 2 llamadas seguidas retienen (`None`), la 3ra
 publica con `PASADO_POR_FALLA_TECNICA`. Validado con
 `python3 scripts/validar_configs.py`.
+
+---
+
+## Bug real encontrado probando la retención con un correo real: se quedaba retenido para siempre (29-07-2026)
+
+Al probar la política de retención de la sección anterior con un caso
+real (el usuario reenvió un adjunto real de "Filial Puerto Píritu"),
+Groq falló por límite de tasa y el evento quedó retenido en intento 1/2,
+como se esperaba. Pero el ciclo siguiente **nunca llegó a reintentarlo**:
+`fetch_gmail.py` marca cada correo como leído (`\Seen`) apenas lo procesa
+una vez, exitosamente o no, así que el correo nunca se vuelve a leer en
+una corrida posterior. La retención asume que el mismo cluster puede
+"reaparecer" en el próximo ciclo -- cierto para RSS (el artículo sigue en
+la ventana de búsqueda de horas) pero **falso para correos
+institucionales**: sin el item original, el cluster nunca se reconstruye
+y el evento queda retenido para siempre, sin publicarse jamás.
+
+**Corrección** (`scripts/verify_ai.py`): `_manejar_falla_temporal()` ahora
+revisa si el cluster completo proviene únicamente de fuentes de correo
+(`fuente_tipo == "correo"` en todos sus miembros). Si es así, se publica
+de inmediato sin confirmar (el comportamiento de antes de este cambio) en
+vez de retenerlo -- retener solo tiene sentido para clusters que puedan
+reaparecer (RSS, o correo mezclado con RSS). Probado directamente: un
+cluster 100% de correo publica en el primer intento fallido, sin quedar
+retenido.
+
+**Nota para el reporte de Puerto Píritu ya afectado**: como el correo
+original ya quedó marcado como leído durante el intento fallido, el fix
+de código no lo revive automáticamente -- hace falta que el usuario
+reenvíe el correo de nuevo (o lo marque como no leído en Gmail) para que
+se vuelva a procesar, esta vez con la corrección ya desplegada.
