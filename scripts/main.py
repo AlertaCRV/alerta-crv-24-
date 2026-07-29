@@ -1,4 +1,3 @@
-from fetch_email import fetch_email_items
 from fetch_rss import fetch_rss_items
 from fetch_telegram import fetch_telegram_items
 from classify import clasificar_item, es_relevante
@@ -22,8 +21,6 @@ def main():
     print("Recolectando RSS...")
     items = fetch_rss_items(ventana)
     print(f"  {len(items)} items de RSS")
-    print("Recolectando correos institucionales...")
-    items += fetch_email_items(ventana)
 
     # print("Recolectando Telegram...")
     # items += fetch_telegram_items(ventana)

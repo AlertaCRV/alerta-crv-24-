@@ -1882,3 +1882,51 @@ retroactiva por sí solo).
 
 Validado con `python3 scripts/validar_configs.py` y con los casos de
 prueba descritos arriba para los cuatro fixes de código.
+
+---
+
+## Se elimina la integración con el correo institucional de Outlook (28-07-2026)
+
+A pedido explícito del usuario: el último intento de conectar el correo
+institucional vía Power Automate resultó infructuoso (y, según se
+diagnosticó en la auditoría de esta misma noche, el secreto
+`OUTLOOK_REFRESH_TOKEN` en GitHub Actions estaba vacío — el canal llevaba
+fallando en todas las corridas del día con "AADSTS900144: The request body
+must contain the following parameter: 'refresh_token'"). El usuario decidió
+abandonar esta vía por completo y retomar la estrategia alternativa ya
+conversada (el flujo de Power Automate → issue de GitHub →
+`fetch_github_issues.py`, descrito en la sección "Pendiente para retomar"
+más arriba en este documento) en vez de seguir intentando reparar la
+integración directa con Microsoft Graph.
+
+**Eliminado**:
+- `scripts/fetch_email.py` (el módulo que autenticaba con
+  `msal.PublicClientApplication` y leía mensajes vía Microsoft Graph
+  `/me/messages`).
+- `generar_token_outlook.py` (raíz) y
+  `scripts/generar_refresh_token_outlook.py` (herramientas manuales para
+  obtener/renovar el `refresh_token`).
+- La llamada a `fetch_email_items()` en `scripts/main.py` (import y las dos
+  líneas que la invocaban al recolectar items).
+- La dependencia `msal` de `requirements.txt` (sin más usos en el código
+  tras lo anterior).
+- Las variables de entorno `OUTLOOK_CLIENT_ID`/`OUTLOOK_TENANT_ID`/
+  `OUTLOOK_REFRESH_TOKEN` del step "Ejecutar monitoreo" en
+  `.github/workflows/monitor.yml`.
+
+**No se tocó**: los secretos `OUTLOOK_CLIENT_ID`/`OUTLOOK_TENANT_ID`/
+`OUTLOOK_REFRESH_TOKEN` configurados en GitHub (Settings → Secrets and
+variables → Actions) — ya no se usan, pero borrarlos es una acción sobre la
+configuración del repositorio en GitHub, no sobre el código, y queda a
+criterio del usuario hacerlo o dejarlos huérfanos sin efecto.
+
+El pipeline sigue recolectando de RSS (`fetch_rss.py`) y Telegram
+(`fetch_telegram.py`, ya deshabilitado por separado en `main.py` desde
+antes de este cambio). Cuando se implemente `fetch_github_issues.py` (la
+estrategia acordada), se integrará igual que hacía `fetch_email_items()`:
+una llamada más en `main.py` que aporta items a la lista antes de
+`clasificar_item()`.
+
+Validado con `python3 scripts/validar_configs.py` y confirmando que no
+queda ninguna referencia a `outlook`/`msal`/`fetch_email` en el código ni
+en la configuración del workflow.
