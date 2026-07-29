@@ -114,28 +114,10 @@
     "fecha_deteccion": "2026-07-29T03:40:51.380554+00:00",
     "fecha_evento_temprana": "2026-07-29T02:46:02+00:00"
   },
-  "incendio::La Guaira::2026-07-28": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T04:23:49.250677+00:00",
-    "fecha_evento_temprana": "2026-07-28T18:59:38+00:00"
-  },
   "infraestructura_electrica::Anzoategui::2026-07-28": {
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T04:24:37.528305+00:00",
     "fecha_evento_temprana": "2026-07-28T22:00:51+00:00"
-  },
-  "sismo::Miranda::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T04:25:01.663419+00:00",
-    "fecha_evento_temprana": "2026-07-29T00:23:15+00:00"
-  },
-  "sismo::Portuguesa::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T04:25:25.796105+00:00",
-    "fecha_evento_temprana": "2026-07-29T00:23:15+00:00"
   }
 }
