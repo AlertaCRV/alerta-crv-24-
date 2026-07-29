@@ -3,16 +3,20 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-07-28T03:26:18.571292+00:00",
-  "actualizado_hasta": "2026-07-28T03:25:45.793909+00:00",
+  "generado": "2026-07-29T00:11:49.102026+00:00",
+  "actualizado_hasta": "2026-07-27T22:18:35.809254+00:00",
   "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
     "actual": 2
   },
-  "narrativa": "En el período de julio de 2026, se registraron 2 eventos de deslizamiento o derrumbe en Venezuela, en comparación con el período anterior, junio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, municipio Bolívar, Barinas, el domingo 26 de julio (Diario La Nacion, Efecto Cocuyo). Las intensas lluvias recientes causaron la caída de material rocoso y vegetación, obstruyendo el paso vehicular en la localidad (Diario La Nacion, La Patilla). Las autoridades locales trabajaron para despejar la vía y restablecer el paso vehicular, logrando reabrir parcialmente el paso entre Mérida y Barinas tras deslizamientos por lluvias (Efecto Cocuyo, La Patilla). Además, se reportaron afectaciones viales en el Páramo, específicamente en la Local 001, donde se registraron deslizamientos de tierra, lodo y material detrítico que provocaron la interrupción total del tránsito vehicular (Reporteros de Merida).",
+  "narrativa": "En el período de 2026-07, se registraron 2 eventos de deslizamiento/derrumbe, en comparación con el período anterior (2026-06) en el que no se registraron eventos de esta categoría. Uno de los eventos ocurrió en el Distrito Capital, con severidad alto, y fue reportado por (La Prensa de Monagas). Otro evento significativo fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, parroquia Altamira de Cáceres, municipio Bolívar, Barinas, como lo informaron (Diario La Nacion (Tachira)) y (La Patilla). Este deslizamiento dejó incomunicadas las vías que conectan a los estados Barinas y Mérida, y las autoridades trabajaron para despejar la vía, logrando restablecer parcialmente el paso entre Mérida y Barinas, según (Efecto Cocuyo - General) y (La Patilla). Las intensas lluvias recientes causaron caída de material rocoso y vegetación, obstruyendo el paso vehicular, y las autoridades locales reportaron el incidente y trabajaron para despejar el tramo de la Local 001, como se menciona en (Diario La Nacion (Tachira)) y (Primicia (Bolivar)).",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/"
+    },
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
@@ -32,10 +36,6 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/"
     },
     {
       "nombre": "Primicia (Bolivar)",
