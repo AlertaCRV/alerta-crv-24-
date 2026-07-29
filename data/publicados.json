@@ -4,16 +4,6 @@
     "confirmado": true,
     "fecha_deteccion": "2026-07-26T20:47:14.563188+00:00"
   },
-  "vialidad::Bolivar::2026-07-26": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T20:04:57.695252+00:00"
-  },
-  "deslizamiento::Portuguesa::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T20:05:13.268895+00:00"
-  },
   "salud_publica::Portuguesa::2026-07-26": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -84,18 +74,6 @@
     "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
     "fecha_evento_temprana": "2026-07-27T10:35:10+00:00"
   },
-  "inundacion::Lara::2026-07-26": {
-    "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
-    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00"
-  },
-  "tormenta_electrica::Carabobo::2026-07-26": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
-    "fecha_evento_temprana": "2026-07-26T18:20:03+00:00"
-  },
   "orden_publico::Distrito Capital::2026-07-28": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -122,8 +100,8 @@
   },
   "infraestructura_electrica::Bolivar::2026-07-29": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-29T15:31:32.685908+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T20:18:26.152626+00:00",
     "fecha_evento_temprana": "2026-07-29T13:17:11+00:00"
   },
   "deslizamiento::La Guaira::2026-07-29": {
@@ -215,5 +193,11 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
     "fecha_evento_temprana": "2026-07-29T17:55:40+00:00"
+  },
+  "deslizamiento::Bolivar::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T20:18:50.364326+00:00",
+    "fecha_evento_temprana": "2026-07-29T12:30:00+00:00"
   }
 }
