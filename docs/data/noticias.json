@@ -1,6 +1,59 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/bolivar-hombres-armados-disparan-para-disolver-protesta-por-apagones-en-guasipati/",
+        "fecha": "2026-07-29T13:31:59+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/",
+        "fecha": "2026-07-29T13:17:11+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-29T13:31:59+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:17:11+00:00",
+    "fecha_deteccion": "2026-07-29T15:31:32.685908+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-07-29",
+    "titulo": "Falla eléctrica en Bolivar",
+    "texto": "📌 Falla eléctrica en Bolivar\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/07/2026, 9:31 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 11:31 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-hombres-armados-disparan-para-disolver-protesta-por-apagones-en-guasipati/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": "Catia La Mar",
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/rescatistas-hallan-con-vida-a-mino-un-gato-atrapado-entre-los-escombros-de-catia-la-mar/",
+        "fecha": "2026-07-29T13:47:29+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-29T13:47:29+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:47:29+00:00",
+    "fecha_deteccion": "2026-07-29T15:31:36.190724+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-07-29",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Catia La Mar, Municipio Vargas, La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Catia La Mar, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Catia La Mar, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 9:47 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 11:31 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/rescatistas-hallan-con-vida-a-mino-un-gato-atrapado-entre-los-escombros-de-catia-la-mar/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,
     "parroquia": null,

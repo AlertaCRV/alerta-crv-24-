@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-07-29T05:00:05.053771+00:00",
+  "actualizado": "2026-07-29T15:32:08.760738+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-29T02:46:02+00:00"
+    "hasta": "2026-07-29T13:47:29+00:00"
   },
-  "total_eventos": 14,
+  "total_eventos": 16,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 5,
-    "infraestructura_electrica": 2,
-    "deslizamiento": 2,
+    "infraestructura_electrica": 3,
+    "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 2
   },
@@ -58,6 +58,16 @@
       "estado": "Anzoategui",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Bolivar",
+      "total": 1,
+      "confirmados": 1
+    },
+    {
+      "estado": "La Guaira",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -92,12 +102,18 @@
     },
     "Anzoategui": {
       "infraestructura_electrica": 1
+    },
+    "Bolivar": {
+      "infraestructura_electrica": 1
+    },
+    "La Guaira": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
     "alto": 2,
     "critico": 2,
-    "sin_clasificar": 10
+    "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -107,10 +123,10 @@
       "2026-07": 5
     },
     "infraestructura_electrica": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "deslizamiento": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "colapso_estructural": {
       "2026-07": 1

@@ -119,5 +119,17 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T04:24:37.528305+00:00",
     "fecha_evento_temprana": "2026-07-28T22:00:51+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-29T15:31:32.685908+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:17:11+00:00"
+  },
+  "deslizamiento::La Guaira::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T15:31:36.190724+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:47:29+00:00"
   }
 }
