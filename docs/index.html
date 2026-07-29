@@ -10,7 +10,10 @@
   header img { height:64px; width:auto; }
   header .titulos h1 { font-size:1.3rem; margin:0 0 0.2rem 0; }
   header .titulos p { margin:0; font-size:0.95rem; color:#9aa4b2; }
-  .noticia { border:1px solid #2a2f36; border-radius:8px; padding:1rem; margin-bottom:1rem; background:#131820; }
+  .noticia {
+    border:1px solid #3a4452; border-radius:8px; padding:1rem; margin-bottom:1.4rem;
+    background:#1c2530; box-shadow:0 2px 8px rgba(0,0,0,0.45);
+  }
   .confirmado { border-left:4px solid #2ecc71; }
   .sin-confirmar { border-left:4px solid #f39c12; }
   .meta { font-size:0.85rem; color:#9aa4b2; }
@@ -45,7 +48,10 @@
   }
 
 
-  #panel-tendencias { margin-bottom:1.2rem; border:1px solid #2a2f36; border-radius:8px; background:#131820; padding:0.8rem 1rem; }
+  #panel-tendencias, #panel-informes {
+    margin-bottom:1.2rem; border:1px solid #3a4452; border-radius:8px;
+    background:#1c2530; box-shadow:0 2px 8px rgba(0,0,0,0.45); padding:0.8rem 1rem;
+  }
   #panel-tendencias summary { cursor:pointer; font-weight:bold; }
   .tendencias-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin-top:0.8rem; }
   .tendencias-grid h3 { font-size:0.9rem; margin:0 0 0.4rem 0; color:#9aa4b2; }
