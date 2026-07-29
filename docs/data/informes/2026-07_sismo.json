@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "sismo",
+  "tipo_label": "Sismo",
+  "cerrado": false,
+  "generado": "2026-07-29T18:45:45.572387+00:00",
+  "actualizado_hasta": "2026-07-29T16:25:12.188912+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 2
+  },
+  "narrativa": "En el período de 2026-07, se registraron 2 eventos sísmicos, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue el sismo de magnitud 7.5 que sacudió el centro-norte de Venezuela, cuyo epicentro fue inicialmente ubicado en Yaracuy, pero posteriormente corregido por el Servicio Geológico de los Estados Unidos (USGS) a 17 kilómetros al oeste de Catia La Mar, en el estado La Guaira, según informó (El Impulso). Este ajuste en la ubicación del epicentro proporciona una visión más precisa de lo ocurrido durante el evento. Es importante destacar que, aunque el sismo se reportó haber ocurrido el 24 de junio, la corrección de su ubicación se dio a conocer en el período de 2026-07, lo que resalta la importancia de la precisión en la información sobre eventos sísmicos. La comparación con el período anterior muestra un aumento en la actividad sísmica, pasando de 0 eventos en 2026-06 a 2 en 2026-07.",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/"
+    }
+  ]
+}

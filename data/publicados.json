@@ -197,5 +197,23 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
     "fecha_evento_temprana": "2026-07-29T16:22:17+00:00"
+  },
+  "incendio::Distrito Capital::2026-07-29": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:30:46+00:00"
+  },
+  "salud_publica::La Guaira::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T18:43:30.890955+00:00",
+    "fecha_evento_temprana": "2026-07-29T17:25:53+00:00"
+  },
+  "crisis_migratoria::Anzoategui::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
+    "fecha_evento_temprana": "2026-07-29T17:55:40+00:00"
   }
 }
