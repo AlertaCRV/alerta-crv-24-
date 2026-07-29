@@ -1930,3 +1930,86 @@ una llamada más en `main.py` que aporta items a la lista antes de
 Validado con `python3 scripts/validar_configs.py` y confirmando que no
 queda ninguna referencia a `outlook`/`msal`/`fetch_email` en el código ni
 en la configuración del workflow.
+
+---
+
+## Nuevo mecanismo para el correo institucional: reenvío a Gmail + IMAP (29-07-2026)
+
+Tras descartar Outlook/Microsoft Graph (por requerir permisos de
+administrador del tenant) y Power Automate (también descartado hoy — la
+organización bloquea o exige aprobación de administrador para ese tipo de
+conexión), se definió con el usuario un mecanismo alternativo que preserva
+el flujo de trabajo de las filiales sin cambios: las filiales siguen
+enviando sus reportes al correo institucional de siempre.
+
+**Mecanismo**: una regla de bandeja de entrada configurada por el propio
+usuario en el buzón institucional (Outlook → Reglas → "Reenviar a", sin
+necesidad de administrador ni de Power Automate) reenvía automáticamente
+los correos a una cuenta Gmail dedicada y de uso exclusivo para esto
+(`alertacrv.reportes@gmail.com`). Un nuevo `scripts/fetch_gmail.py` lee esa
+cuenta por IMAP (usando únicamente `imaplib`/`email` de la librería
+estándar de Python — sin dependencias nuevas), con una contraseña de
+aplicación de Google (requiere verificación en 2 pasos activada en esa
+cuenta), en vez de OAuth/Graph API.
+
+**Por qué es más sostenible que la integración anterior**: no depende de
+autenticación básica sobre Exchange Online (que Microsoft viene
+deshabilitando por defecto en cada tenant) ni de ningún token que expire o
+requiera renovación coordinada con IT — la cuenta Gmail y su contraseña de
+aplicación las controla el usuario por completo y de forma indefinida.
+
+**Diseño de `fetch_gmail.py`**:
+- Reutiliza sin cambios la lógica de interpretación del asunto que ya tenía
+  `fetch_email.py` (formato `EMERGENCIA | Estado | Tipo | Severidad`,
+  `TIPO_MAP`, `SEVERIDADES_VALIDAS`) — ese formato y su validación no eran
+  el problema, solo el transporte (Microsoft Graph) sí lo era.
+- **Causa raíz anticipada y corregida antes de probarse en producción**: el
+  reenvío de Outlook (manual o por regla) suele anteponer un prefijo al
+  asunto original ("FW:", "Fwd:", "RV:", y sus combinaciones en cadenas de
+  reenvío repetidas) — sin quitarlo, el asunto de **todo** correo reenviado
+  dejaría de coincidir exactamente con el formato esperado y se
+  descartaría en silencio, inutilizando el mecanismo completo desde el
+  primer correo real. Se agregó `_quitar_prefijos_reenvio()`, que quita
+  estos prefijos en un bucle (una cadena de varios reenvíos puede acumular
+  más de uno) antes de validar el formato.
+- Lee los mensajes **no leídos** de la bandeja (IMAP `SEARCH UNSEEN`, no
+  filtra por fecha/hora como sí hacen `fetch_rss.py`/`fetch_telegram.py` —
+  `SEARCH SINCE` de IMAP solo tiene granularidad de día) y los marca como
+  leídos al procesarlos, coincidan o no con el formato esperado — así
+  nunca se reprocesa el mismo correo dos veces, y un correo que no matchea
+  (ej. una consulta administrativa) no queda "atascado" como no leído para
+  siempre.
+- Extrae el cuerpo del mensaje priorizando texto plano sobre HTML (si solo
+  hay HTML, le quita las etiquetas, mismo criterio que `fetch_rss.py` con
+  los resúmenes de RSS).
+- El link publicado para cada fuente institucional apunta a una búsqueda
+  por `Message-ID` en Gmail (`https://mail.google.com/mail/u/0/#search/
+  rfc822msgid:...`), reemplazando el `webLink` de Outlook que ya no existe
+  en este mecanismo.
+
+**Probado** (sin conexión real, con mensajes MIME de prueba y un IMAP
+simulado): asunto limpio, asunto con un prefijo de reenvío, asunto con dos
+prefijos encadenados, asunto que no matchea el formato (se descarta sin
+error), cuerpo multipart con texto plano y HTML (prioriza texto plano),
+cuerpo solo-HTML (extrae y limpia), ausencia de credenciales (devuelve
+lista vacía sin fallar, mismo patrón "fail-safe" que el resto del
+pipeline), y el flujo completo contra `classify.py`/`clasificar_item()`
+para confirmar que el item generado es compatible con el resto de la
+tubería.
+
+**Cambios**: nuevo `scripts/fetch_gmail.py`; `scripts/main.py` vuelve a
+recolectar una fuente de correo (ahora `fetch_gmail_items()` en vez de
+`fetch_email_items()`); `.github/workflows/monitor.yml` agrega los
+secretos `GMAIL_ADDRESS`/`GMAIL_APP_PASSWORD` al step de ejecución (no se
+agrega ninguna dependencia nueva a `requirements.txt` — `imaplib`/`email`
+son de la librería estándar).
+
+**Pendiente**: el usuario está configurando la cuenta Gmail y la regla de
+reenvío; falta que agregue los dos secretos (`GMAIL_ADDRESS`,
+`GMAIL_APP_PASSWORD`) en GitHub para que el mecanismo quede activo. Sin
+esos secretos, `fetch_gmail_items()` se comporta igual que antes sin
+`OUTLOOK_REFRESH_TOKEN`: devuelve una lista vacía con una advertencia,
+sin afectar al resto del pipeline.
+
+Validado con `python3 scripts/validar_configs.py` y los casos de prueba
+descritos arriba.
