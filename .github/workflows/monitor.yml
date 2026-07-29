@@ -64,7 +64,8 @@ jobs:
           # contenido, asi que se agregan solo si ya existen.
           for RUTA in data/publicados.json docs/data/noticias.json \
                       data/historico_eventos.jsonl docs/data/estadisticas.json \
-                      data/historico_fuentes_texto.jsonl docs/data/informes; do
+                      data/historico_fuentes_texto.jsonl docs/data/informes \
+                      data/pendientes_verificacion.json; do
             if [ -e "$RUTA" ]; then
               git add "$RUTA"
             fi

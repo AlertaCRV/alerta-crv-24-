@@ -137,8 +137,18 @@ def agrupar_y_verificar(items):
                 if nombre not in fuentes_unicas or m["peso"] > fuentes_unicas[nombre]["peso"]:
                     fuentes_unicas[nombre] = m
 
-            municipio = next((m.get("municipio") for m in sub_miembros if m.get("municipio")), None)
-            parroquia = next((m.get("parroquia") for m in sub_miembros if m.get("parroquia")), None)
+            # Se prioriza el municipio/parroquia del miembro mas RECIENTE (no
+            # el primero en aparecer, que dependia solo del orden de
+            # recoleccion) -- si varias fuentes del mismo cluster mencionan
+            # ubicaciones especificas distintas (caso real: dos reportes de
+            # una filial sobre el mismo evento, uno diciendo "municipio
+            # Colina" y una actualizacion posterior diciendo "municipio
+            # Zamora"), el encabezado de la alerta ("Ubicacion") debe
+            # coincidir con la fuente mas actual, no con una versión vieja --
+            # lo mismo que ya hace el resumen consolidado en verify_ai.py.
+            miembros_por_fecha = sorted(sub_miembros, key=lambda m: m["fecha"], reverse=True)
+            municipio = next((m.get("municipio") for m in miembros_por_fecha if m.get("municipio")), None)
+            parroquia = next((m.get("parroquia") for m in miembros_por_fecha if m.get("parroquia")), None)
 
             eventos.append({
                 "tipo": tipo,

@@ -11,8 +11,24 @@ from dateutil import parser as dateparser
 from config_loader import load_settings, load_estados, load_ubicaciones_detalle
 from verify import extraer_magnitud
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PENDIENTES_PATH = os.path.join(BASE_DIR, "data", "pendientes_verificacion.json")
+
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
+
+# El monitoreo corre cada 10 minutos -- cuando Groq falla de forma
+# transitoria (limite de tasa, respuesta invalida, error de red) para un
+# evento, se retiene sin publicar hasta MAX_CICLOS_ESPERA_GROQ ciclos
+# adicionales en vez de publicarlo sin verificar de inmediato. Se descubrio
+# que, en la practica, la mayoria de las corridas agotan la cuota de Groq a
+# mitad de camino (429 repetido), y publicar sin filtro de plausibilidad
+# cada vez que eso pasa dejaba pasar la mayoria de las alertas del dia sin
+# ninguna verificacion real (10 de 15 alertas de un solo dia, ver
+# roadmap_evolucion.md). Solo tras agotar los reintentos se publica sin
+# confirmar, como red de seguridad para no perder un evento real si Groq
+# esta caido por mas tiempo del esperado.
+MAX_CICLOS_ESPERA_GROQ = 2
 
 # En corridas con muchos eventos agrupados (12+), la cuota de Groq se
 # agotaba a mitad de camino y los eventos restantes se publicaban sin
@@ -478,6 +494,73 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     return resultado
 
 
+def _clave_pendiente(evento):
+    """Clave para rastrear cuantos ciclos lleva un cluster esperando una
+    verificacion real de Groq. Se ancla al dia calendario (no a una fecha
+    mas precisa del evento) a proposito: es solo para acotar cuantas
+    corridas seguidas se retiene el mismo cluster, no para deduplicar
+    publicaciones (eso ya lo hace state.py) -- un cluster que sigue
+    fallando al cruzar la medianoche UTC simplemente arranca de cero, lo
+    cual es aceptable para esta ventana corta de reintentos."""
+    dia = datetime.now(timezone.utc).date().isoformat()
+    return f"{evento['tipo']}::{evento['ubicacion']}::{dia}"
+
+
+def _cargar_pendientes():
+    if not os.path.exists(PENDIENTES_PATH):
+        return {}
+    with open(PENDIENTES_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _guardar_pendientes(pendientes):
+    os.makedirs(os.path.dirname(PENDIENTES_PATH), exist_ok=True)
+    with open(PENDIENTES_PATH, "w", encoding="utf-8") as f:
+        json.dump(pendientes, f, ensure_ascii=False, indent=2)
+
+
+def _limpiar_pendiente(evento):
+    """Se llama cuando Groq SI responde con exito (aprobado o rechazado) --
+    ya no hace falta seguir contando ciclos fallidos para este cluster."""
+    clave = _clave_pendiente(evento)
+    pendientes = _cargar_pendientes()
+    if pendientes.pop(clave, None) is not None:
+        _guardar_pendientes(pendientes)
+
+
+def _manejar_falla_temporal(evento, candidatos):
+    """Cuando Groq falla de forma transitoria, retiene el evento sin
+    publicar hasta MAX_CICLOS_ESPERA_GROQ ciclos (ver comentario junto a esa
+    constante) antes de usar el mecanismo de "fallar hacia lo seguro"
+    (publicar sin confirmar). Devuelve None mientras se retiene, o el evento
+    finalizado con error_sistema=True una vez agotados los reintentos."""
+    clave = _clave_pendiente(evento)
+    pendientes = _cargar_pendientes()
+    intentos_previos = pendientes.get(clave, {}).get("intentos", 0)
+
+    if intentos_previos < MAX_CICLOS_ESPERA_GROQ:
+        pendientes[clave] = {
+            "intentos": intentos_previos + 1,
+            "ultima_vez": datetime.now(timezone.utc).isoformat(),
+        }
+        _guardar_pendientes(pendientes)
+        print(
+            f"[WARN] Groq no disponible para [{evento['tipo']}/{evento['ubicacion']}] -- "
+            f"se retiene sin publicar (intento {intentos_previos + 1}/{MAX_CICLOS_ESPERA_GROQ}, "
+            f"se reintentará en el próximo ciclo)."
+        )
+        return None
+
+    pendientes.pop(clave, None)
+    _guardar_pendientes(pendientes)
+    print(
+        f"[WARN] Groq sigue sin disponibilidad para [{evento['tipo']}/{evento['ubicacion']}] "
+        f"tras {MAX_CICLOS_ESPERA_GROQ} ciclos de espera -- se publica sin verificar, "
+        f"como red de seguridad."
+    )
+    return _finalizar_evento(evento, candidatos, error_sistema=True)
+
+
 def verificar_evento_con_ia(evento):
     """Clasifica con IA cada fuente independiente del evento por separado
     (no un veredicto agregado unico), y recalcula score/severidad/confirmado
@@ -592,10 +675,11 @@ def verificar_evento_con_ia(evento):
         if veredictos is None:
             print(
                 f"[WARN] Groq devolvió un JSON de veredictos inválido o de "
-                f"tamaño distinto al esperado ({n} fuentes): '{respuesta[:200]}'. "
-                f"Se deja pasar el evento por seguridad (sin marcar CONFIRMADO)."
+                f"tamaño distinto al esperado ({n} fuentes): '{respuesta[:200]}'."
             )
-            return _finalizar_evento(evento, candidatos, error_sistema=True)
+            return _manejar_falla_temporal(evento, candidatos)
+
+        _limpiar_pendiente(evento)
 
         representantes = [max(g, key=lambda m: m["peso"]) for g in candidatos]
         detalle = ", ".join(
@@ -678,5 +762,5 @@ def verificar_evento_con_ia(evento):
         return _finalizar_evento(evento, grupos_aprobados)
 
     except Exception as e:
-        print(f"[WARN] Fallo la verificación con Groq, se deja pasar el evento (sin marcar CONFIRMADO): {e}")
-        return _finalizar_evento(evento, candidatos, error_sistema=True)
+        print(f"[WARN] Fallo la verificación con Groq: {e}")
+        return _manejar_falla_temporal(evento, candidatos)
