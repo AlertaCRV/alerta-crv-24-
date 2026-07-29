@@ -49,6 +49,16 @@ CONFIRMACION_EXPLICACION = {
     False: "Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.",
 }
 
+# Titulo fijo para reportes de filiales (ver attachments_filial.py):
+# a diferencia de una alerta armada a partir de un titular de prensa, aqui
+# el "titular" real es el proposito administrativo del reporte de la
+# filial, no el tipo de emergencia detectado -- para crisis_migratoria eso
+# es siempre "reporte de personas desplazadas", nunca un titulo genérico
+# tipo "Crisis migratoria en X".
+REPORTE_FILIAL_TITULOS = {
+    "crisis_migratoria": "Reporte de personas desplazadas",
+}
+
 
 def _formatear_fecha(fecha_iso):
     """Convierte una fecha ISO (guardada internamente en UTC) a hora local
@@ -78,7 +88,11 @@ def redactar_noticia(evento):
         partes_ubicacion.insert(0, f"Parroquia {evento['parroquia']}")
     ubicacion_detallada = ", ".join(partes_ubicacion)
 
-    titulo = f"{tipo_label} en {ubicacion_detallada}"
+    es_reporte_filial = bool(evento.get("es_reporte_filial"))
+    if es_reporte_filial:
+        titulo = REPORTE_FILIAL_TITULOS.get(evento["tipo"], f"{tipo_label} en {ubicacion_detallada}")
+    else:
+        titulo = f"{tipo_label} en {ubicacion_detallada}"
 
     nota_falla_tecnica = ""
     if evento.get("estado_verificacion") == "PASADO_POR_FALLA_TECNICA":
@@ -88,7 +102,20 @@ def redactar_noticia(evento):
             "mayor cautela.\n"
         )
 
+    # Los reportes de filiales no tienen un enlace publico util (el "link"
+    # es una busqueda en el Gmail privado del sistema, ver
+    # attachments_filial.py), pero si traen cifras consolidadas ya
+    # verificadas por el propio criterio de seguridad de datos -- se
+    # muestran directamente en la tarjeta en vez de la lista de fuentes con
+    # enlaces, que aqui nadie mas puede abrir.
+    distintivo_filial = "🏢 REPORTE DE FILIAL\n\n" if es_reporte_filial else ""
+    if es_reporte_filial and evento.get("resumen_consolidado"):
+        bloque_fuentes = f"📋 Resumen consolidado:\n{evento['resumen_consolidado']}"
+    else:
+        bloque_fuentes = f"Fuentes:\n{fuentes_texto}"
+
     texto = (
+        f"{distintivo_filial}"
         f"📌 {titulo}\n\n"
         f"{estado_confirmacion} | {severidad_label}\n\n"
         f"📍 Ubicación: {ubicacion_detallada}\n"
@@ -98,7 +125,7 @@ def redactar_noticia(evento):
         f"ℹ️ {estado_confirmacion}: {confirmacion_explicacion}\n"
         f"ℹ️ {severidad_label}: {severidad_explicacion}\n"
         f"{nota_falla_tecnica}\n"
-        f"Fuentes:\n{fuentes_texto}"
+        f"{bloque_fuentes}"
     )
 
     # El orden importa: si `evento` ya trae sus propias claves "titulo"/

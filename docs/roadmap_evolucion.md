@@ -2358,3 +2358,131 @@ Validado con `python3 scripts/validar_configs.py` y la regresión descrita
 arriba. **Pendiente**: la extracción de adjuntos en sí
 (`fetch_gmail.py`) con el criterio de solo-totales-agregados ya acordado
 con el usuario, todavía no implementada.
+
+---
+
+## Implementación: extracción segura de adjuntos de filiales, distintivo visual y fecha del documento (29-07-2026)
+
+Se implementó de una vez todo lo acordado en las dos secciones anteriores:
+extracción de adjuntos (.docx/.pptx/.pdf) con el criterio de
+solo-totales-agregados, el distintivo visual "REPORTE DE FILIAL" con
+resumen consolidado en la tarjeta, y el uso de la fecha del propio
+documento (no la del reenvío) como fecha del hecho.
+
+### `scripts/attachments_filial.py` (nuevo módulo)
+
+`extraer_item_filial(nombre_archivo, contenido, fecha_email,
+remitente_email, message_id)` procesa un adjunto y devuelve un item para
+`clasificar_item()`, o `None` si no se pudo interpretar con confianza
+(fail closed). Nunca copia texto libre del documento al item resultante:
+solo usa (a) nombres de estado/municipio/parroquia, ya validados contra
+`config/estados.yaml`/`config/ubicaciones_detalle.json` (nunca son datos
+personales), y (b) pares etiqueta/número de la sección de totales,
+extraídos con anclas estrictas — nunca la sub-cadena de texto que los
+rodea (evita que un detalle pegado al número, ej. "1(24 semanas)", se
+cuele). Con eso arma un **texto sintético** propio, que es el único texto
+que llega a `clasificar_item()`/Groq/`historico_fuentes.py`/el sitio
+público — el documento original (con nombres, cédulas, teléfonos,
+direcciones y diagnósticos individuales) nunca sale de esta función.
+
+- **Extracción de texto por formato**: `.docx`/`.pptx` se leen con
+  `zipfile` + regex sobre el XML interno (`word/document.xml` /
+  `ppt/slides/slideN.xml`), no con `python-docx`/`python-pptx` — una
+  muestra real de filial trae una imagen incrustada con el CRC corrupto,
+  que hace fallar a cualquier librería que valide el zip completo
+  (`BadZipFile`), pese a que el documento en sí es perfectamente legible.
+  `.pdf` se lee con `pypdf` (única dependencia nueva agregada a
+  `requirements.txt`). Los formatos legados `.doc`/`.ppt` (binarios, sin
+  parser seguro disponible) se descartan explícitamente con un aviso.
+- **Cifras consolidadas**: se buscan pares etiqueta+número adyacentes en
+  cualquier orden ("Femeninas: 4" o, como en un formato real de PowerPoint,
+  "91\nFamilias"), usando **solo formas plurales** ("femeninas", "ninos",
+  "adultos mayores"...) — en las muestras reales, la sección de totales
+  siempre usa el plural, mientras que el detalle por persona (el que trae
+  datos personales) usa el singular ("Femenina", "Adulto mayor de 74
+  años"). Esa distinción gramatical es lo que evita que la edad de una
+  persona puntual se confunda con una cifra consolidada real. Si no se
+  encuentra ningún par, se descarta el adjunto completo.
+- **Ubicación origen/destino**: se buscan las menciones de estado en el
+  texto y se distinguen por las palabras cercanas ("provenientes del
+  estado" → origen; "localización"/"albergados"/"acogida"/"trasladados" →
+  destino). Si el documento solo nombra el municipio destino sin repetir
+  el estado (caso real: "municipio Colina" sin decir nunca "Falcón"), se
+  infiere el estado por búsqueda inversa en
+  `config/ubicaciones_detalle.json` (solo si el municipio pertenece a un
+  único estado). El municipio/parroquia dentro del estado destino ya
+  detectado se resuelve reusando `classify.detectar_municipio_parroquia()`
+  tal cual. Si no se puede determinar ninguna ubicación destino, se
+  descarta el adjunto (fail closed).
+- **Bug encontrado y corregido durante la construcción del texto
+  sintético**: si la palabra clave de tipo ("personas desplazadas") queda
+  ANTES de la mención del estado destino en el texto, cae dentro de la
+  ventana de proximidad del estado ORIGEN también (la ventana de un estado
+  solo se acota en la mención del estado *siguiente*, no antes) — el
+  origen terminaba generando su propia alerta de crisis migratoria por
+  error. Se corrigió construyendo el texto sintético con la palabra clave
+  siempre DESPUÉS de la mención del destino ("...ahora en \[destino\], como
+  personas desplazadas."). Verificado con `clasificar_item()` sobre los 3
+  documentos reales de muestra: cada uno genera exactamente un item, con
+  la ubicación correcta (destino, no origen).
+- **Fecha del documento**: se busca un patrón `DD/MM/AAAA` en los primeros
+  ~300 caracteres (las plantillas de la filial la traen justo debajo del
+  encabezado) y se usa como `fecha` del item en vez de la fecha del correo
+  reenviado, con fallback a esta última si no se encuentra. Esto hace que
+  `fecha_evento` en el evento final refleje cuándo ocurrió realmente el
+  reporte de la filial, no cuándo se reenvió o procesó.
+- **Nombre de fuente con fecha incluida**: se detectó, probando con los 2
+  reportes reales de la misma filial (uno inicial del 07/07 y una
+  "actualización" del 28/07, ambos con cifras distintas), que
+  `agrupar_y_verificar()` deduplica fuentes por `fuente_nombre` exacto —
+  como ambos documentos identifican a la misma filial ("Filial La Vela"),
+  el segundo se descartaba en silencio como si fuera la misma fuente que
+  el primero. Se corrigió agregando la fecha del documento al
+  `fuente_nombre` (ej. "Filial La Vela (28/07/2026)"), para que
+  actualizaciones sucesivas de la misma filial cuenten como fuentes
+  distintas en vez de perderse una.
+
+### `scripts/fetch_gmail.py`
+
+Ya no descarta los adjuntos: por cada correo no leído, si al menos un
+adjunto de formato soportado produce un item válido, se usan esos items
+en vez del texto libre del cuerpo (más confiable: trae ubicación, fecha
+del documento y cifras ya extraídas). Si ningún adjunto produjo un item
+utilizable (o no hay adjuntos), se usa el cuerpo en texto libre como
+antes.
+
+### `scripts/verify_ai.py`
+
+`_finalizar_evento()` ahora propaga `es_reporte_filial` (true si alguna
+fuente aprobada del evento viene de un adjunto de filial) y
+`resumen_consolidado` al evento final. Cuando hay varias fuentes de
+filial para el mismo evento (reporte inicial + actualización posterior),
+se muestra **solo el resumen de la más reciente** — una actualización de
+filial reemplaza las cifras anteriores, no se le suman como si fueran
+corroboraciones independientes de dos medios de prensa distintos.
+
+### `scripts/render.py`
+
+`redactar_noticia()` distingue los eventos con `es_reporte_filial`:
+título fijo por tipo (`REPORTE_FILIAL_TITULOS`, ej. "Reporte de personas
+desplazadas" para `crisis_migratoria`, con fallback al formato genérico
+para otros tipos), un distintivo "🏢 REPORTE DE FILIAL" al inicio de la
+tarjeta, y un bloque "📋 Resumen consolidado" con las cifras seguras en
+vez de la lista de "Fuentes" con enlaces — el enlace de un correo de
+Gmail no es accesible para nadie más que el sistema, a diferencia del
+enlace de un artículo de RSS.
+
+Probado de punta a punta (adjunto → `clasificar_item()` →
+`agrupar_y_verificar()` → `_finalizar_evento()` → `redactar_noticia()`)
+con los 3 documentos reales de muestra que sí traen sección de totales
+(dos reportes de La Vela sobre las mismas familias, correctamente
+fusionados en un solo evento por `agrupar_y_verificar()`, y uno de Apure)
+y confirmado el descarte fail-closed del cuarto documento de muestra (un
+PDF del que `pypdf` no logra extraer ningún texto). Validado con
+`python3 scripts/validar_configs.py` y una regresión de la ruta no-filial
+de `redactar_noticia()` (sin cambios de comportamiento).
+
+**Pendiente real**: falta la prueba con correos reales de Gmail (el
+usuario va a reenviar todo su historial pendiente de reportes de
+filiales) — el diseño está probado contra los documentos de muestra, pero
+el formato exacto de cada filial puede variar.

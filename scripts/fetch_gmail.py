@@ -6,6 +6,8 @@ from datetime import timezone
 from email.header import decode_header
 from email.utils import parseaddr, parsedate_to_datetime
 
+from attachments_filial import EXTENSIONES_SOPORTADAS, extraer_item_filial
+
 IMAP_HOST = "imap.gmail.com"
 
 # El reenvio automatico/manual de Outlook suele anteponer "FW:"/"Fwd:"/"RV:"
@@ -73,6 +75,26 @@ def _extraer_cuerpo(mensaje):
     return texto
 
 
+def _extraer_adjuntos(mensaje):
+    """Devuelve una lista de (nombre_archivo, contenido_bytes) para cada
+    adjunto de formato soportado (.docx/.pptx/.pdf, ver
+    attachments_filial.EXTENSIONES_SOPORTADAS). Los reportes reales de las
+    filiales llegan casi siempre como adjunto, no en el cuerpo del correo."""
+    if not mensaje.is_multipart():
+        return []
+    adjuntos = []
+    for parte in mensaje.walk():
+        if parte.get_content_disposition() != "attachment":
+            continue
+        nombre = _decodificar_header(parte.get_filename() or "")
+        if not nombre.lower().endswith(EXTENSIONES_SOPORTADAS):
+            continue
+        contenido = parte.get_payload(decode=True)
+        if contenido:
+            adjuntos.append((nombre, contenido))
+    return adjuntos
+
+
 def fetch_gmail_items(ventana_horas=12):
     """Lee los correos institucionales reenviados a la cuenta Gmail dedicada
     (ver docs/roadmap_evolucion.md, seccion sobre el reemplazo de la
@@ -91,7 +113,20 @@ def fetch_gmail_items(ventana_horas=12):
     lugar, cada correo se entrega como un item de texto libre (asunto +
     cuerpo), igual que un item de fetch_rss_items() -- clasificar_item() en
     classify.py hace la deteccion de ubicacion/tipo/severidad a partir del
-    texto, exactamente como ya hace con los articulos de RSS."""
+    texto, exactamente como ya hace con los articulos de RSS.
+
+    Si el correo trae un adjunto de un formato soportado (.docx/.pptx/.pdf
+    -- ver attachments_filial.py), este se procesa en su lugar: los
+    reportes reales de las filiales llegan casi siempre asi, con los datos
+    en el adjunto y el cuerpo del correo vacio o con solo un saludo.
+    attachments_filial.extraer_item_filial() nunca expone el texto crudo
+    del adjunto (que mezcla datos personales de personas desplazadas con
+    las cifras consolidadas que si son publicables, ver el acuerdo de
+    criterios en roadmap_evolucion.md) -- construye un item ya seguro, o
+    devuelve None si no pudo extraer con confianza una ubicacion y al menos
+    una cifra consolidada (fail closed: ese adjunto en particular no
+    aporta ningun item). Si NINGUN adjunto del correo produjo un item
+    utilizable, se usa el cuerpo del correo en texto libre como antes."""
     address = os.environ.get("GMAIL_ADDRESS")
     app_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not address or not app_password:
@@ -134,20 +169,37 @@ def fetch_gmail_items(ventana_horas=12):
                 except Exception:
                     fecha = None
 
-                cuerpo = _extraer_cuerpo(mensaje)
-                texto = f"{asunto}. {cuerpo}".strip()
-                if texto and fecha:
-                    items.append({
-                        "fuente_nombre": f"Reporte institucional ({remitente_email or 'desconocido'})",
-                        "fuente_tipo": "correo",
-                        "peso": 1.5,
-                        "texto": texto,
-                        "link": (
-                            f"https://mail.google.com/mail/u/0/#search/rfc822msgid:{message_id}"
-                            if message_id else ""
-                        ),
-                        "fecha": fecha.isoformat(),
-                    })
+                items_de_adjuntos = []
+                for nombre_archivo, contenido in _extraer_adjuntos(mensaje):
+                    item_filial = extraer_item_filial(
+                        nombre_archivo, contenido, fecha, remitente_email, message_id
+                    )
+                    if item_filial:
+                        items_de_adjuntos.append(item_filial)
+
+                if items_de_adjuntos:
+                    # Un adjunto procesado con exito trae datos mucho mas
+                    # confiables (ubicacion, fecha del documento, cifras
+                    # consolidadas) que el cuerpo del correo en lenguaje
+                    # libre -- se usa en vez del item de texto plano, no
+                    # ademas de el, para no generar una alerta duplicada o
+                    # peor clasificada a partir del mismo correo.
+                    items.extend(items_de_adjuntos)
+                else:
+                    cuerpo = _extraer_cuerpo(mensaje)
+                    texto = f"{asunto}. {cuerpo}".strip()
+                    if texto and fecha:
+                        items.append({
+                            "fuente_nombre": f"Reporte institucional ({remitente_email or 'desconocido'})",
+                            "fuente_tipo": "correo",
+                            "peso": 1.5,
+                            "texto": texto,
+                            "link": (
+                                f"https://mail.google.com/mail/u/0/#search/rfc822msgid:{message_id}"
+                                if message_id else ""
+                            ),
+                            "fecha": fecha.isoformat(),
+                        })
             except Exception as e:
                 print(f"[WARN] No se pudo procesar un correo: {e}")
             finally:
