@@ -2620,3 +2620,166 @@ original ya quedó marcado como leído durante el intento fallido, el fix
 de código no lo revive automáticamente -- hace falta que el usuario
 reenvíe el correo de nuevo (o lo marque como no leído en Gmail) para que
 se vuelva a procesar, esta vez con la corrección ya desplegada.
+
+---
+
+## Auditoría diaria automática: 7 alertas erróneas encontradas y corregidas (29-07-2026)
+
+Auditoría de rutina (tarea programada diaria) de las alertas publicadas en
+las últimas ~24-48 horas, comparando cada una contra el texto real de sus
+fuentes. Se encontraron y corrigieron 4 causas raíz distintas en el código,
+que en conjunto habían generado 7 alertas falsas o mal ubicadas -- 6 de
+las 7 tenían `estado_verificacion: PASADO_POR_FALLA_TECNICA` (nunca
+pasaron por Groq), confirmando otra vez el patrón ya documentado: son
+casos que la IA muy probablemente habría rechazado.
+
+### 1. Boletín retrospectivo de corrección de epicentro generaba un "sismo nuevo"
+
+Un artículo ("USGS ajusta el epicentro del terremoto en Venezuela: Se
+ubicó en La Guaira y no en Yaracuy") sobre una corrección técnica del
+epicentro de un sismo de magnitud 7.5 ocurrido **el 24 de junio** (más de
+un mes antes) generó dos alertas nuevas de tipo sismo, una en La Guaira y
+otra en Yaracuy (esta última en una ubicación que el propio texto niega
+explícitamente: "y no en Yaracuy"). El texto contiene todas las palabras
+de evidencia fuerte de sismo ("magnitud", "epicentro", "sacudió"), así que
+ninguno de los mecanismos existentes lo descartaba.
+
+**Causa raíz** (`scripts/classify.py`): no existía ningún filtro
+determinista para boletines retrospectivos de sismo -- el único mecanismo
+que los habría descartado es el juicio de la IA, que falló por límite de
+tasa en ambas menciones.
+
+**Corrección**: nueva función `_es_correccion_epicentro_retrospectiva()`,
+con una lista de frases decisivas ("ajusta el epicentro", "corrigió el
+epicentro", "reubicando el epicentro", etc.) que, a diferencia del
+mecanismo existente de `_CONTEXTO_CONFLICTIVO_POR_TIPO`/
+`_EVIDENCIA_FUERTE_POR_TIPO`, **no se anula por evidencia fuerte** --
+precisamente porque esa evidencia (magnitud/epicentro/sacudió) describe el
+sismo original que se está corrigiendo, no uno nuevo. Se aplica sobre el
+texto completo del artículo (no sobre la ventana de proximidad de cada
+estado): un artículo multi-estado puede mencionar la evidencia de que es
+retrospectivo lejos, en términos de palabras, de alguna de las menciones
+de estado, sin que eso lo vuelva un sismo nuevo para ese estado. Probado
+con el caso real (ambas ubicaciones descartadas) y un caso de control
+(sismo real nuevo con las mismas palabras de evidencia fuerte, se
+mantiene).
+
+### 2. Rescates de mascotas en escombros de un colapso viejo se clasificaban como derrumbe nuevo
+
+Dos artículos de interés humano sobre mascotas rescatadas de los escombros
+de un edificio colapsado por el mismo sismo de hace un mes ("Rescatan al
+gato «Noche» tras sobrevivir 33 días bajo los escombros", "Rescatistas
+hallan con vida a Mino, un gato atrapado entre los escombros de Catia La
+Mar") generaron dos alertas de tipo deslizamiento -- una de ellas incluso
+pasó la verificación de IA (`APROBADO_IA`).
+
+**Causa raíz**: la palabra clave "escombros" (tipo deslizamiento) no
+distingue entre un derrumbe ocurriendo ahora y una nota sobre el rescate
+de una mascota de un colapso ya cubierto hace semanas.
+
+**Corrección**: se agregó `deslizamiento` a `_CONTEXTO_CONFLICTIVO_POR_TIPO`
+(marcadores: gato/gata/mascota/perro/felino/canino cerca de la palabra
+clave) con su propia `_EVIDENCIA_FUERTE_POR_TIPO` (heridos, fallecidos,
+viviendas colapsadas/destruidas, evacuados, familias afectadas) para que
+un derrumbe real que además mencione una mascota de pasada no se
+descarte. Probado con ambos casos reales (descartados), un derrumbe real
+de control (se mantiene) y un derrumbe real que menciona un gato pero
+también heridos/viviendas colapsadas (se mantiene, por evidencia fuerte).
+
+### 3. Artículo desmintiendo rumores de Hantavirus generaba dos alertas "críticas" duplicadas
+
+Un artículo titulado "Hantavirus: Enfermedad totalmente controlada en
+Venezuela" -- que explícitamente dice que "no existen registros
+confirmados por parte de MinSalud sobre la propagación de esta
+enfermedad" y que solo desmiente rumores -- generó **dos** alertas
+`salud_publica` con severidad `crítico` (Anzoátegui y Aragua, ambas
+mencionadas en el mismo artículo), solo porque el texto mencionaba de
+pasada "3 fallecidos" históricos por esta causa.
+
+**Causa raíz**: la palabra "fallecidos" (severidad crítica) no distingue
+un reporte de una crisis activa de un artículo que **desmiente** rumores
+de una crisis, y el mecanismo de detección de tipo no tenía ningún filtro
+de contexto para `salud_publica`.
+
+**Corrección**: se agregó `salud_publica` a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO` (marcadores: "totalmente controlada",
+"enfermedad controlada", "no existen registros confirmados", "brote
+descartado", etc.) con su propia evidencia fuerte ("brote confirmado",
+"casos confirmados", "declaró emergencia sanitaria", "cuarentena",
+"hospitalizados") -- al descartarse el tipo, ambas menciones de estado
+del mismo artículo quedan sin tipo y no generan ninguna alerta. Probado
+con el caso real (ambas ubicaciones descartadas) y un caso de control
+(brote real con casos confirmados y emergencia sanitaria declarada, se
+mantiene).
+
+### 4. Apellido "Bolívar" de un vocero citado se confundía con el estado Bolívar
+
+Un artículo sobre un riesgo real de incomunicación en Río Chiquito
+(municipio Piar, **estado Monagas**, dicho en el texto solo como "entidad
+monaguense", nunca por su nombre) se publicó como alerta del **estado
+Bolívar** (también con municipio "Piar", que por coincidencia existe en
+ambos estados). La única mención de "Bolívar" en todo el artículo es el
+apellido de un vocero citado dos veces: "El líder social de la zona,
+Julián Bolívar, subrayó..." y, más adelante, "...alertó Bolívar."
+
+**Causa raíz doble**:
+- `config/estados.yaml` no tenía "monaguense" como alias de Monagas (el
+  artículo nunca usa la palabra "Monagas" en sí), así que el único estado
+  que el sistema podía detectar era el falso positivo.
+- `scripts/classify.py` no distinguía una mención de un apellido de
+  persona ("Julián **Bolívar**", "alertó **Bolívar**") de una mención real
+  del estado -- varios nombres de estado (Bolívar, Miranda, Sucre...)
+  también son apellidos comunes en Venezuela.
+
+**Corrección**:
+- `config/estados.yaml`: se agregó "monaguense" como alias de Monagas.
+- `scripts/classify.py`: nueva función `_es_mencion_de_persona_citada()`,
+  que descarta una mención de nombre de estado como evidencia de ubicación
+  si tiene un verbo de atribución de cita justo antes o justo después
+  ("dijo", "afirmó", "alertó", "subrayó"...) **y** la palabra
+  inmediatamente anterior no es un calificador de lugar conocido (ciudad,
+  estado, municipio, de, del...) -- esta segunda condición es la que evita
+  descartar lugares reales como "Ciudad Bolívar" o "el gobernador de
+  Bolívar, Fulano, dijo..." (que sí tiene un verbo de atribución cerca,
+  pero "de" justo antes de "Bolívar" señala que es el estado, no un
+  apellido). Probado con el caso real (ya no detecta Bolívar en absoluto),
+  "Ciudad Bolívar" de control (se mantiene) y "el gobernador de Bolívar,
+  Nombre, dijo..." de control (se mantiene).
+
+  Con esta corrección, el artículo de Río Chiquito ya no genera ninguna
+  alerta (ni Bolívar -- incorrecto -- ni Monagas): la mención de
+  "monaguense" queda demasiado lejos (más de la ventana de proximidad de
+  35 palabras) de la palabra clave "derrumbe", que aparece mucho más
+  adelante en el artículo. Preferible a mantener la ubicación incorrecta;
+  la ventana de proximidad es una limitación preexistente del sistema, no
+  parte de esta corrección puntual.
+
+### Corrección retroactiva
+
+Se eliminaron por completo las 7 alertas afectadas de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl`, `data/publicados.json` y las
+entradas correspondientes de `data/pendientes_verificacion.json`:
+`deslizamiento::Bolivar::2026-07-29` (Piar/Río Chiquito),
+`sismo::La Guaira::2026-07-29::mag7.5`, `sismo::Yaracuy::2026-07-29::mag7.5`,
+`deslizamiento::Distrito Capital::2026-07-29` (gato Noche),
+`deslizamiento::La Guaira::2026-07-29` (gato Mino),
+`salud_publica::Anzoategui::2026-07-29` y `salud_publica::Aragua::2026-07-29`
+(hantavirus). No había ningún informe narrativo en
+`docs/data/informes/` construido a partir de estos eventos. Se regeneró
+`docs/data/estadisticas.json` con `python3 scripts/build_dashboard.py`
+(total de eventos: 32 → 25).
+
+Se corrió una regresión completa de `clasificar_item()` contra el texto
+real de las 32 fuentes ya registradas en
+`data/historico_fuentes_texto.jsonl`: los únicos cambios de tipo/ubicación
+fueron los 7 casos corregidos aquí; ningún otro evento ya publicado
+cambió. Validado con `python3 scripts/validar_configs.py`.
+
+### Nota: caso ya documentado, sin cambios
+
+La alerta `crisis_migratoria::Falcon::2026-07-07` (cifras internamente
+contradictorias entre fuentes de filial) sigue pendiente de que el
+usuario confirme/reenvíe el documento original, tal como se documentó en
+la sesión anterior ("Primera prueba real con correos reenviados"). No se
+tocó en esta auditoría.

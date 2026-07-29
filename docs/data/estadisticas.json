@@ -1,48 +1,32 @@
 {
-  "actualizado": "2026-07-29T20:22:29.231730+00:00",
+  "actualizado": "2026-07-29T23:26:19.543946+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-29T17:55:40+00:00"
   },
-  "total_eventos": 32,
+  "total_eventos": 25,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
     "infraestructura_electrica": 4,
-    "deslizamiento": 5,
+    "deslizamiento": 2,
     "colapso_estructural": 1,
     "orden_publico": 3,
-    "sismo": 2,
     "infraestructura_agua": 1,
-    "salud_publica": 4,
+    "salud_publica": 2,
     "crisis_migratoria": 3,
     "incendio": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 6,
+      "total": 5,
       "confirmados": 1
     },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 3,
-      "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
-      "total": 3,
-      "confirmados": 1
-    },
-    {
-      "estado": "La Guaira",
-      "total": 3,
-      "confirmados": 0
     },
     {
       "estado": "Lara",
@@ -60,6 +44,16 @@
       "confirmados": 0
     },
     {
+      "estado": "Anzoategui",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
+      "estado": "Bolivar",
+      "total": 2,
+      "confirmados": 1
+    },
+    {
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
@@ -75,22 +69,17 @@
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Falcon",
       "total": 1,
       "confirmados": 0
     },
     {
       "estado": "Apure",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -110,7 +99,7 @@
       "inundacion": 1
     },
     "Distrito Capital": {
-      "deslizamiento": 2,
+      "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 2,
       "incendio": 1
@@ -131,35 +120,25 @@
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
-      "salud_publica": 1,
       "crisis_migratoria": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 2,
-      "deslizamiento": 1
-    },
-    "La Guaira": {
-      "deslizamiento": 1,
-      "sismo": 1,
-      "salud_publica": 1
-    },
-    "Aragua": {
-      "salud_publica": 1
-    },
-    "Yaracuy": {
-      "sismo": 1
+      "infraestructura_electrica": 2
     },
     "Falcon": {
       "crisis_migratoria": 1
     },
     "Apure": {
       "crisis_migratoria": 1
+    },
+    "La Guaira": {
+      "salud_publica": 1
     }
   },
   "por_severidad": {
     "alto": 3,
-    "critico": 4,
-    "sin_clasificar": 25
+    "critico": 2,
+    "sin_clasificar": 20
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -172,7 +151,7 @@
       "2026-07": 4
     },
     "deslizamiento": {
-      "2026-07": 5
+      "2026-07": 2
     },
     "colapso_estructural": {
       "2026-07": 1
@@ -180,14 +159,11 @@
     "orden_publico": {
       "2026-07": 3
     },
-    "sismo": {
-      "2026-07": 2
-    },
     "infraestructura_agua": {
       "2026-07": 1
     },
     "salud_publica": {
-      "2026-07": 4
+      "2026-07": 2
     },
     "crisis_migratoria": {
       "2026-07": 3
