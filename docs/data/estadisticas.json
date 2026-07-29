@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-07-28T23:25:20.439028+00:00",
+  "actualizado": "2026-07-29T03:41:02.618278+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-28T18:51:42+00:00"
+    "hasta": "2026-07-29T02:46:02+00:00"
   },
-  "total_eventos": 11,
+  "total_eventos": 13,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 4,
+    "inundacion": 5,
     "infraestructura_electrica": 1,
     "deslizamiento": 2,
     "colapso_estructural": 1,
-    "orden_publico": 1
+    "orden_publico": 2
   },
   "ranking_estados": [
     {
@@ -43,6 +43,16 @@
       "estado": "Barinas",
       "total": 1,
       "confirmados": 1
+    },
+    {
+      "estado": "Monagas",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Sucre",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -68,19 +78,25 @@
     },
     "Barinas": {
       "deslizamiento": 1
+    },
+    "Monagas": {
+      "orden_publico": 1
+    },
+    "Sucre": {
+      "inundacion": 1
     }
   },
   "por_severidad": {
     "alto": 2,
     "critico": 2,
-    "sin_clasificar": 7
+    "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2
     },
     "inundacion": {
-      "2026-07": 4
+      "2026-07": 5
     },
     "infraestructura_electrica": {
       "2026-07": 1
@@ -92,7 +108,7 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 1
+      "2026-07": 2
     }
   }
 }

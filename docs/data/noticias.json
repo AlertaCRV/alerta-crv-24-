@@ -1,5 +1,53 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/",
+        "fecha": "2026-07-28T20:47:02+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-28T20:47:02+00:00",
+    "fecha_evento_temprana": "2026-07-28T20:47:02+00:00",
+    "fecha_deteccion": "2026-07-29T03:40:44.441328+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-07-28",
+    "titulo": "Orden público en Municipio Maturín, Monagas",
+    "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 28/07/2026, 4:47 p.m.\n🔎 Detectado por el sistema: 28/07/2026, 11:40 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/fuertes-lluvias-provocaron-inundaciones-y-fallas-electricas-en-varios-sectores-de-cumana/",
+        "fecha": "2026-07-29T02:46:02+00:00"
+      }
+    ],
+    "fecha_evento": "2026-07-29T02:46:02+00:00",
+    "fecha_evento_temprana": "2026-07-29T02:46:02+00:00",
+    "fecha_deteccion": "2026-07-29T03:40:51.380554+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Sucre::2026-07-29",
+    "titulo": "Inundación en Sucre",
+    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 28/07/2026, 10:46 p.m.\n🔎 Detectado por el sistema: 28/07/2026, 11:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/fuertes-lluvias-provocaron-inundaciones-y-fallas-electricas-en-varios-sectores-de-cumana/"
+  },
+  {
     "titulo": "Orden público en Distrito Capital",
     "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 28/07/2026, 2:51 p.m.\n🔎 Detectado por el sistema: 28/07/2026, 3:53 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/oposicion-marcha-en-caracas-exigiendo-elecciones-y-el-regreso-de-machado/",
     "tipo": "orden_publico",
