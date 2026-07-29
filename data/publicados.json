@@ -131,5 +131,65 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T15:31:36.190724+00:00",
     "fecha_evento_temprana": "2026-07-29T13:47:29+00:00"
+  },
+  "sismo::La Guaira::2026-07-29::mag7.5": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:21:58.143172+00:00",
+    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00"
+  },
+  "infraestructura_agua::Sucre::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:22:46.565896+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:01:00+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:23:10.796065+00:00",
+    "fecha_evento_temprana": "2026-07-29T12:55:18+00:00"
+  },
+  "salud_publica::Lara::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:20:02+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:23:59.232713+00:00",
+    "fecha_evento_temprana": "2026-07-29T15:05:11+00:00"
+  },
+  "salud_publica::Anzoategui::2026-07-29": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:24:23.543026+00:00",
+    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00"
+  },
+  "salud_publica::Aragua::2026-07-29": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:24:47.762828+00:00",
+    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00"
+  },
+  "sismo::Yaracuy::2026-07-29::mag7.5": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:25:12.188912+00:00",
+    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00"
+  },
+  "crisis_migratoria::Falcon::2026-07-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
+    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00"
+  },
+  "crisis_migratoria::Apure::2026-07-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:26:00.583403+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:18:23+00:00"
   }
 }

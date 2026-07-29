@@ -1,5 +1,283 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": "Catia La Mar",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/",
+        "fecha": "2026-07-29T14:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T14:00:00+00:00",
+    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00",
+    "fecha_deteccion": "2026-07-29T16:21:58.143172+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.5,
+    "tambien_mencionado_en": [
+      "Yaracuy"
+    ],
+    "clave_dedup": "sismo::La Guaira::2026-07-29::mag7.5",
+    "titulo": "Sismo en Parroquia Catia La Mar, Municipio Vargas, La Guaira",
+    "texto": "📌 Sismo en Parroquia Catia La Mar, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Catia La Mar, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/cinco-meses-de-espera-asi-aprendieron-los-cumaneses-a-vivir-sin-agua/",
+        "fecha": "2026-07-29T13:01:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T13:01:00+00:00",
+    "fecha_evento_temprana": "2026-07-29T13:01:00+00:00",
+    "fecha_deteccion": "2026-07-29T16:22:46.565896+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Sucre::2026-07-29",
+    "titulo": "Falla de agua en Sucre",
+    "texto": "📌 Falla de agua en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 29/07/2026, 9:01 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/cinco-meses-de-espera-asi-aprendieron-los-cumaneses-a-vivir-sin-agua/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/venezuela-entrego-nota-de-protesta-a-iran-por-declaraciones-de-su-canciller/",
+        "fecha": "2026-07-29T12:55:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T12:55:18+00:00",
+    "fecha_evento_temprana": "2026-07-29T12:55:18+00:00",
+    "fecha_deteccion": "2026-07-29T16:23:10.796065+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-07-29",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 8:55 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/venezuela-entrego-nota-de-protesta-a-iran-por-declaraciones-de-su-canciller/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Lara",
+    "municipio": "Torres",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/",
+        "fecha": "2026-07-29T16:20:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T16:20:02+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:20:02+00:00",
+    "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Lara::2026-07-29",
+    "titulo": "Salud pública en Municipio Torres, Lara",
+    "texto": "📌 Salud pública en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 29/07/2026, 12:20 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/07/29/milagro-en-san-bernardino-rescatan-al-gato-noche-tras-sobrevivir-33-dias-bajo-los-escombros/",
+        "fecha": "2026-07-29T15:05:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T15:05:11+00:00",
+    "fecha_evento_temprana": "2026-07-29T15:05:11+00:00",
+    "fecha_deteccion": "2026-07-29T16:23:59.232713+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-07-29",
+    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 11:05 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/milagro-en-san-bernardino-rescatan-al-gato-noche-tras-sobrevivir-33-dias-bajo-los-escombros/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Anzoategui",
+    "municipio": "Aragua",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Ciudad MCY (Aragua)",
+        "link": "https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela",
+        "fecha": "2026-07-29T09:00:57+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T09:00:57+00:00",
+    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00",
+    "fecha_deteccion": "2026-07-29T16:24:23.543026+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Anzoategui::2026-07-29",
+    "titulo": "Salud pública en Municipio Aragua, Anzoategui",
+    "texto": "📌 Salud pública en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 29/07/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Ciudad MCY (Aragua)",
+        "link": "https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela",
+        "fecha": "2026-07-29T09:00:57+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T09:00:57+00:00",
+    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00",
+    "fecha_deteccion": "2026-07-29T16:24:47.762828+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Aragua::2026-07-29",
+    "titulo": "Salud pública en Aragua",
+    "texto": "📌 Salud pública en Aragua\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/07/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/",
+        "fecha": "2026-07-29T14:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-29T14:00:00+00:00",
+    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00",
+    "fecha_deteccion": "2026-07-29T16:25:12.188912+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.5,
+    "tambien_mencionado_en": [
+      "La Guaira"
+    ],
+    "clave_dedup": "sismo::Yaracuy::2026-07-29::mag7.5",
+    "titulo": "Sismo en Yaracuy",
+    "texto": "📌 Sismo en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 29/07/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/"
+  },
+  {
+    "tipo": "crisis_migratoria",
+    "ubicacion": "Falcon",
+    "municipio": "Colina",
+    "parroquia": "Las Calderas",
+    "severidad": "sin_clasificar",
+    "score": 4.5,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (28/07/2026)",
+        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
+        "fecha": "2026-07-28T16:00:00+00:00"
+      },
+      {
+        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (07/07/2026)",
+        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
+        "fecha": "2026-07-07T16:00:00+00:00"
+      },
+      {
+        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74148286BEEECDAE5AB33CE4A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
+        "fecha": "2026-07-29T16:17:25+00:00"
+      }
+    ],
+    "es_reporte_filial": true,
+    "resumen_consolidado": "📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22",
+    "fecha_evento": "2026-07-29T16:17:25+00:00",
+    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00",
+    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "crisis_migratoria::Falcon::2026-07-07",
+    "titulo": "Reporte de personas desplazadas",
+    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Las Calderas, Municipio Colina, Falcon\n🕒 Hecho reportado: 29/07/2026, 12:17 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 3 (score 4.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22"
+  },
+  {
+    "tipo": "crisis_migratoria",
+    "ubicacion": "Apure",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.5,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741497BA10F0F19591EE7617A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
+        "fecha": "2026-07-29T16:18:23+00:00"
+      }
+    ],
+    "es_reporte_filial": true,
+    "resumen_consolidado": "🏠 Albergados en: estado Apure\n👥 Familias: 91\n👥 Personas (grupo familiar): 187\n👥 Total de familias: 111\n👥 Total de personas (grupo familiar): 229",
+    "fecha_evento": "2026-07-29T16:18:23+00:00",
+    "fecha_evento_temprana": "2026-07-29T16:18:23+00:00",
+    "fecha_deteccion": "2026-07-29T16:26:00.583403+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "crisis_migratoria::Apure::2026-07-29",
+    "titulo": "Reporte de personas desplazadas",
+    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 29/07/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:26 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n🏠 Albergados en: estado Apure\n👥 Familias: 91\n👥 Personas (grupo familiar): 187\n👥 Total de familias: 111\n👥 Total de personas (grupo familiar): 229"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Bolivar",
     "municipio": null,
