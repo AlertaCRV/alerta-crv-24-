@@ -1,38 +1,57 @@
 {
-  "actualizado": "2026-07-29T15:32:08.760738+00:00",
+  "actualizado": "2026-07-29T16:26:04.925630+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-29T13:47:29+00:00"
+    "hasta": "2026-07-29T16:20:02+00:00"
   },
-  "total_eventos": 16,
+  "total_eventos": 26,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 5,
     "infraestructura_electrica": 3,
-    "deslizamiento": 3,
+    "deslizamiento": 4,
     "colapso_estructural": 1,
-    "orden_publico": 2
+    "orden_publico": 3,
+    "sismo": 2,
+    "infraestructura_agua": 1,
+    "salud_publica": 3,
+    "crisis_migratoria": 2
   },
   "ranking_estados": [
+    {
+      "estado": "Distrito Capital",
+      "total": 5,
+      "confirmados": 1
+    },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
     },
     {
-      "estado": "Distrito Capital",
-      "total": 3,
+      "estado": "Lara",
+      "total": 2,
       "confirmados": 1
+    },
+    {
+      "estado": "Sucre",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
+      "total": 2,
+      "confirmados": 0
     },
     {
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "Lara",
-      "total": 1,
-      "confirmados": 1
     },
     {
       "estado": "Trujillo",
@@ -50,22 +69,27 @@
       "confirmados": 0
     },
     {
-      "estado": "Sucre",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Bolivar",
       "total": 1,
       "confirmados": 1
     },
     {
-      "estado": "La Guaira",
+      "estado": "Aragua",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Yaracuy",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Falcon",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Apure",
       "total": 1,
       "confirmados": 0
     }
@@ -75,7 +99,8 @@
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 1
+      "inundacion": 1,
+      "salud_publica": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -84,9 +109,9 @@
       "inundacion": 1
     },
     "Distrito Capital": {
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "inundacion": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Trujillo": {
       "inundacion": 1
@@ -98,22 +123,37 @@
       "orden_publico": 1
     },
     "Sucre": {
-      "inundacion": 1
+      "inundacion": 1,
+      "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "salud_publica": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 1
     },
     "La Guaira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "sismo": 1
+    },
+    "Aragua": {
+      "salud_publica": 1
+    },
+    "Yaracuy": {
+      "sismo": 1
+    },
+    "Falcon": {
+      "crisis_migratoria": 1
+    },
+    "Apure": {
+      "crisis_migratoria": 1
     }
   },
   "por_severidad": {
     "alto": 2,
-    "critico": 2,
-    "sin_clasificar": 12
+    "critico": 4,
+    "sin_clasificar": 20
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -126,12 +166,24 @@
       "2026-07": 3
     },
     "deslizamiento": {
-      "2026-07": 3
+      "2026-07": 4
     },
     "colapso_estructural": {
       "2026-07": 1
     },
     "orden_publico": {
+      "2026-07": 3
+    },
+    "sismo": {
+      "2026-07": 2
+    },
+    "infraestructura_agua": {
+      "2026-07": 1
+    },
+    "salud_publica": {
+      "2026-07": 3
+    },
+    "crisis_migratoria": {
       "2026-07": 2
     }
   }
