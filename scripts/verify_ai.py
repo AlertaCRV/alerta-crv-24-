@@ -420,6 +420,26 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
             {"nombre": m["fuente_nombre"], "link": m["link"], "fecha": m["fecha"]}
             for m in miembros_aprobados
         ],
+        # True si ALGUNA fuente aprobada es un reporte de filial (ver
+        # attachments_filial.py) -- render.py lo usa para mostrar un
+        # distintivo y el resumen consolidado en vez del formato generico,
+        # ya que a diferencia de una fuente RSS el enlace de un correo de
+        # Gmail no es accesible para el publico.
+        "es_reporte_filial": any(m.get("es_reporte_filial") for m in miembros_aprobados),
+        # Si hay varios reportes de filial para el mismo evento (p.ej. un
+        # reporte inicial y una "actualizacion" posterior), se muestra
+        # SOLO el resumen del mas reciente -- una actualizacion de filial
+        # reemplaza las cifras anteriores, no las corrobora ni se le suman
+        # (a diferencia de dos medios de prensa distintos reportando el
+        # mismo hecho, que si son confirmaciones independientes).
+        "resumen_consolidado": next(
+            (
+                m["resumen_consolidado"]
+                for m in sorted(miembros_aprobados, key=lambda m: m["fecha"], reverse=True)
+                if m.get("resumen_consolidado")
+            ),
+            None,
+        ),
         "fecha_evento": fecha_mas_reciente,
         # Se usa para el dia calendario de la clave de deduplicacion en
         # state.py -- "fecha_evento" (la fuente MAS reciente) avanza cada
