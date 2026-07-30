@@ -45,7 +45,31 @@ desacoplados entre sí:
 
 ---
 
-## Mecanismo A: proveedor de IA de respaldo
+## Mecanismo A: proveedor de IA de respaldo — **decidido: no proceder por ahora (30-07-2026)**
+
+**Decisión del usuario**: no implementar este mecanismo mientras la única
+vía disponible dependa de una tarjeta de crédito o cuenta personal. Razón
+explícita: *"no quiero pagar eso con mi tarjeta de crédito porque si me
+voy de la CRV el sistema colapsaría"* — un riesgo de continuidad
+organizacional más importante que el problema técnico que este mecanismo
+resuelve. Si la disponibilidad de la IA de verificación depende de un
+método de pago o una cuenta atada a una persona en particular, el sistema
+hereda el mismo punto único de falla que ya tiene con `GROQ_API_KEY` hoy,
+solo que duplicado — no lo resuelve.
+
+Esto también descarta, por la misma razón, la opción de "subir de plan en
+Groq" (necesita tarjeta igual que cualquier proveedor pago) y matiza la
+opción de un segundo proveedor gratuito: aunque el nivel gratuito de
+varios proveedores (Gemini incluido) no exige tarjeta, seguiría
+dependiendo de una cuenta personal del usuario salvo que se cree bajo una
+cuenta institucional de la CRV — no evaluado en esta sesión, y no es
+una decisión que corresponda tomar sin que la organización tenga esa
+cuenta.
+
+**Queda como diseño de referencia** (secciones de abajo, sin tocar) para
+si en el futuro la CRV dispone de una cuenta/método de pago
+institucional propio, no personal — en ese caso el diseño técnico ya
+está listo para retomarse sin rehacer el análisis.
 
 ### Problema que ataca
 
@@ -242,10 +266,11 @@ python -m pytest tests/ -v
 
 ## Próximos pasos
 
-1. **Mecanismo B**: ya en producción desde este PR — sin acción pendiente
-   salvo el backfill incremental de casos históricos (no bloqueante).
-2. **Mecanismo A**: pendiente de que el usuario decida entre un proveedor
-   de respaldo nuevo o subir de plan en Groq. Sin esa decisión, no hay
-   siguiente paso de código posible — implementar el refactor de
-   `verify_ai.py` sin saber contra qué proveedor probarlo sería trabajo
-   especulativo.
+1. **Mecanismo B**: ya en producción (PR #102, fusionado 30-07-2026) — sin
+   acción pendiente salvo el backfill incremental de casos históricos (no
+   bloqueante).
+2. **Mecanismo A**: decidido no proceder por ahora (30-07-2026) — no
+   depender de una tarjeta/cuenta personal para la confiabilidad del
+   sistema. Sin una cuenta o método de pago institucional de la CRV, no
+   hay siguiente paso de código razonable; el diseño queda listo para
+   retomarse si esa condición cambia.

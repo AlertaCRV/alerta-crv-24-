@@ -2813,3 +2813,24 @@ son casos que la IA probablemente habría rechazado si hubiera llegado a
 evaluarlos, pero falló por límite de tasa). No implementado — depende de
 que el usuario elija un proveedor/consiga una API key, o decida subir de
 plan en Groq.
+
+---
+
+## Decisión: no proceder con el proveedor de IA de respaldo por ahora (30-07-2026)
+
+Seguimiento del plan de confiabilidad de la sección anterior. Al
+comparar opciones concretas (Gemini vs. subir de plan en Groq), el
+usuario decidió **no implementar el mecanismo A por ahora**: *"no quiero
+pagar eso con mi tarjeta de crédito porque si me voy de la CRV el
+sistema colapsaría"* — atar la confiabilidad del sistema a una tarjeta o
+cuenta personal reemplaza el punto único de falla actual (`GROQ_API_KEY`)
+por otro igual de fràgil, no lo resuelve. Aplica también a un segundo
+proveedor gratuito (Gemini incluido): aunque su nivel gratuito no exige
+tarjeta, seguiría dependiendo de una cuenta personal salvo que la CRV
+tenga una cuenta institucional propia, algo no evaluado en esta sesión.
+
+El diseño técnico completo queda documentado en
+`docs/plan_confiabilidad_clasificacion.md` para retomarse si la
+organización dispone en el futuro de un método de pago o cuenta
+institucional propia. Sin código nuevo en esta sesión — es una decisión
+de alcance, no un fix.
