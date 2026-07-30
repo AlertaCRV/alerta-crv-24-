@@ -1,25 +1,25 @@
 {
-  "actualizado": "2026-07-30T08:01:26.760374+00:00",
+  "actualizado": "2026-07-30T15:36:21.588905+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-30T00:01:01+00:00"
+    "hasta": "2026-07-30T14:46:56+00:00"
   },
-  "total_eventos": 24,
+  "total_eventos": 31,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
     "infraestructura_electrica": 5,
-    "deslizamiento": 2,
+    "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 3,
+    "orden_publico": 6,
     "salud_publica": 1,
     "crisis_migratoria": 3,
-    "incendio": 1
+    "incendio": 4
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 5,
+      "total": 6,
       "confirmados": 1
     },
     {
@@ -28,24 +28,29 @@
       "confirmados": 3
     },
     {
+      "estado": "Bolivar",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
+      "estado": "Lara",
+      "total": 3,
+      "confirmados": 1
+    },
+    {
       "estado": "Barinas",
       "total": 3,
       "confirmados": 1
     },
     {
-      "estado": "Lara",
+      "estado": "Monagas",
       "total": 2,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
-      "total": 2,
-      "confirmados": 1
     },
     {
       "estado": "Carabobo",
@@ -54,11 +59,6 @@
     },
     {
       "estado": "Trujillo",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
       "total": 1,
       "confirmados": 0
     },
@@ -76,6 +76,16 @@
       "estado": "Apure",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Tachira",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Nueva Esparta",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -84,7 +94,8 @@
     },
     "Lara": {
       "inundacion": 1,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "orden_publico": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -96,7 +107,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 2,
-      "incendio": 1
+      "incendio": 2
     },
     "Trujillo": {
       "inundacion": 1
@@ -107,7 +118,7 @@
       "infraestructura_electrica": 1
     },
     "Monagas": {
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Sucre": {
       "inundacion": 1
@@ -117,19 +128,27 @@
       "crisis_migratoria": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "orden_publico": 1,
+      "incendio": 1
     },
     "Falcon": {
       "crisis_migratoria": 1
     },
     "Apure": {
       "crisis_migratoria": 1
+    },
+    "Tachira": {
+      "deslizamiento": 1
+    },
+    "Nueva Esparta": {
+      "incendio": 1
     }
   },
   "por_severidad": {
     "alto": 3,
     "critico": 2,
-    "sin_clasificar": 19
+    "sin_clasificar": 26
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -142,13 +161,13 @@
       "2026-07": 5
     },
     "deslizamiento": {
-      "2026-07": 2
+      "2026-07": 3
     },
     "colapso_estructural": {
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 3
+      "2026-07": 6
     },
     "salud_publica": {
       "2026-07": 1
@@ -157,7 +176,7 @@
       "2026-07": 3
     },
     "incendio": {
-      "2026-07": 1
+      "2026-07": 4
     }
   }
 }
