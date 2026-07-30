@@ -18,8 +18,11 @@ jobs:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        run: pip install PyYAML==6.0.2
+        run: pip install PyYAML==6.0.2 pytest==8.3.4
 
       - name: Validar YAML, JSON y sintaxis de scripts
         working-directory: scripts
         run: python validar_configs.py
+
+      - name: Suite de regresión de clasificación
+        run: python -m pytest tests/ -v
