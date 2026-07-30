@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-07-30T20:25:24.935118+00:00",
+  "actualizado": "2026-07-30T23:49:13.693477+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-30T20:04:41+00:00"
+    "hasta": "2026-07-30T23:13:45+00:00"
   },
-  "total_eventos": 34,
+  "total_eventos": 39,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
-    "infraestructura_electrica": 6,
+    "infraestructura_electrica": 7,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 6,
+    "orden_publico": 10,
     "salud_publica": 2,
     "crisis_migratoria": 3,
     "incendio": 5
@@ -19,13 +19,18 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 7,
+      "total": 8,
       "confirmados": 2
     },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 4,
+      "confirmados": 0
     },
     {
       "estado": "Bolivar",
@@ -48,12 +53,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
+      "estado": "Apure",
       "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Apure",
+      "estado": "Tachira",
       "total": 2,
       "confirmados": 0
     },
@@ -78,12 +83,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
+      "estado": "Nueva Esparta",
       "total": 1,
       "confirmados": 0
     },
     {
-      "estado": "Nueva Esparta",
+      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -106,7 +111,7 @@
     "Distrito Capital": {
       "deslizamiento": 1,
       "inundacion": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "incendio": 3
     },
     "Trujillo": {
@@ -125,8 +130,9 @@
       "inundacion": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 1,
-      "crisis_migratoria": 1
+      "infraestructura_electrica": 2,
+      "crisis_migratoria": 1,
+      "orden_publico": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 2,
@@ -141,16 +147,20 @@
       "salud_publica": 1
     },
     "Tachira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "orden_publico": 1
     },
     "Nueva Esparta": {
       "incendio": 1
+    },
+    "La Guaira": {
+      "orden_publico": 1
     }
   },
   "por_severidad": {
     "alto": 3,
     "critico": 2,
-    "sin_clasificar": 29
+    "sin_clasificar": 34
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -160,7 +170,7 @@
       "2026-07": 6
     },
     "infraestructura_electrica": {
-      "2026-07": 6
+      "2026-07": 7
     },
     "deslizamiento": {
       "2026-07": 3
@@ -169,7 +179,7 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 6
+      "2026-07": 10
     },
     "salud_publica": {
       "2026-07": 2

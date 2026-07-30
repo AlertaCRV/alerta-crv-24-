@@ -1,5 +1,135 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/",
+        "fecha": "2026-07-30T21:06:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T21:06:41+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00",
+    "fecha_deteccion": "2026-07-30T23:48:18.692006+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-07-30",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 30/07/2026, 5:06 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/",
+        "fecha": "2026-07-30T21:06:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T21:06:41+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00",
+    "fecha_deteccion": "2026-07-30T23:48:22.080123+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::La Guaira::2026-07-30",
+    "titulo": "Orden público en La Guaira",
+    "texto": "📌 Orden público en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 30/07/2026, 5:06 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/jubilados-de-cantv-protestan-y-exigen-pago-completo-de-beneficios/",
+        "fecha": "2026-07-30T21:32:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T21:32:01+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:32:01+00:00",
+    "fecha_deteccion": "2026-07-30T23:48:28.919682+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-07-30",
+    "titulo": "Orden público en Tachira",
+    "texto": "📌 Orden público en Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 30/07/2026, 5:32 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/jubilados-de-cantv-protestan-y-exigen-pago-completo-de-beneficios/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/fallas-electricas-tambien-dejan-sin-agua-a-familias-de-el-tigre/",
+        "fecha": "2026-07-30T20:50:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T20:50:15+00:00",
+    "fecha_evento_temprana": "2026-07-30T20:50:15+00:00",
+    "fecha_deteccion": "2026-07-30T23:48:39.196341+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-07-30",
+    "titulo": "Falla eléctrica en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Falla eléctrica en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 30/07/2026, 4:50 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/fallas-electricas-tambien-dejan-sin-agua-a-familias-de-el-tigre/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Anzoategui",
+    "municipio": "Anaco",
+    "parroquia": "Anaco",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/07/30/detienen-a-un-hombre-acusado-de-arrollar-a-su-pareja-tras-una-discusion-en-anaco/",
+        "fecha": "2026-07-30T23:13:45+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T23:13:45+00:00",
+    "fecha_evento_temprana": "2026-07-30T23:13:45+00:00",
+    "fecha_deteccion": "2026-07-30T23:48:49.348402+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Anzoategui::2026-07-30",
+    "titulo": "Orden público en Parroquia Anaco, Municipio Anaco, Anzoategui",
+    "texto": "📌 Orden público en Parroquia Anaco, Municipio Anaco, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Anaco, Municipio Anaco, Anzoategui\n🕒 Hecho reportado: 30/07/2026, 7:13 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/30/detienen-a-un-hombre-acusado-de-arrollar-a-su-pareja-tras-una-discusion-en-anaco/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": null,

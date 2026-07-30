@@ -1,22 +1,4 @@
 {
-  "inundacion::Distrito Capital::2026-07-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
-    "fecha_evento_temprana": "2026-07-25T23:53:26+00:00"
-  },
-  "inundacion::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
-    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00"
-  },
-  "deslizamiento::Barinas::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
-    "fecha_evento_temprana": "2026-07-26T18:48:23+00:00"
-  },
   "orden_publico::Distrito Capital::2026-07-28": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -142,5 +124,35 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-30T20:25:19.782134+00:00",
     "fecha_evento_temprana": "2026-07-30T16:40:02+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T23:48:18.692006+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00"
+  },
+  "orden_publico::La Guaira::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T23:48:22.080123+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00"
+  },
+  "orden_publico::Tachira::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T23:48:28.919682+00:00",
+    "fecha_evento_temprana": "2026-07-30T21:32:01+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T23:48:39.196341+00:00",
+    "fecha_evento_temprana": "2026-07-30T20:50:15+00:00"
+  },
+  "orden_publico::Anzoategui::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T23:48:49.348402+00:00",
+    "fecha_evento_temprana": "2026-07-30T23:13:45+00:00"
   }
 }
