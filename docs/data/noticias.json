@@ -1,5 +1,192 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Tachira",
+    "municipio": "Cárdenas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/07/30/alerta-en-tachira-al-menos-1-300-familias-incomunicadas-y-varias-damnificadas-deja-deslizamiento-de-terreno/",
+        "fecha": "2026-07-30T14:28:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T14:28:53+00:00",
+    "fecha_evento_temprana": "2026-07-30T14:28:53+00:00",
+    "fecha_deteccion": "2026-07-30T15:35:54.958924+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Tachira::2026-07-30",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Cárdenas, Tachira",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Cárdenas, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Cárdenas, Tachira\n🕒 Hecho reportado: 30/07/2026, 10:28 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:35 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/30/alerta-en-tachira-al-menos-1-300-familias-incomunicadas-y-varias-damnificadas-deja-deslizamiento-de-terreno/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/discusion-por-tierras-termina-con-un-sexagenario-asesinado-a-machetazos-en-lara/",
+        "fecha": "2026-07-30T14:15:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T14:15:51+00:00",
+    "fecha_evento_temprana": "2026-07-30T14:15:51+00:00",
+    "fecha_deteccion": "2026-07-30T15:35:58.379580+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-07-30",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 30/07/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:35 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/discusion-por-tierras-termina-con-un-sexagenario-asesinado-a-machetazos-en-lara/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Nueva Esparta",
+    "municipio": "Mariño",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/voraz-incendio-consume-reconocido-centro-comercial-en-la-isla-de-margarita-video/",
+        "fecha": "2026-07-30T13:32:48+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-en-centro-comercial-de-la-isla-de-margarita/",
+        "fecha": "2026-07-30T12:12:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T13:32:48+00:00",
+    "fecha_evento_temprana": "2026-07-30T12:12:15+00:00",
+    "fecha_deteccion": "2026-07-30T15:36:01.739966+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Nueva Esparta::2026-07-30",
+    "titulo": "Incendio en Municipio Mariño, Nueva Esparta",
+    "texto": "📌 Incendio en Municipio Mariño, Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Mariño, Nueva Esparta\n🕒 Hecho reportado: 30/07/2026, 9:32 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:36 a.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/voraz-incendio-consume-reconocido-centro-comercial-en-la-isla-de-margarita-video/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-en-centro-comercial-de-la-isla-de-margarita/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/guayana/regiones/continua-tranca-en-sur-del-estado-bolivar/",
+        "fecha": "2026-07-30T14:16:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T14:16:27+00:00",
+    "fecha_evento_temprana": "2026-07-30T14:16:27+00:00",
+    "fecha_deteccion": "2026-07-30T15:36:08.635350+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-07-30",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 30/07/2026, 10:16 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:36 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/regiones/continua-tranca-en-sur-del-estado-bolivar/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/incautan-mas-de-3-mil-kilos-de-drogas-en-monagas/",
+        "fecha": "2026-07-30T13:45:28+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T13:45:28+00:00",
+    "fecha_evento_temprana": "2026-07-30T13:45:28+00:00",
+    "fecha_deteccion": "2026-07-30T15:36:12.071376+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-07-30",
+    "titulo": "Orden público en Monagas",
+    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 30/07/2026, 9:45 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:36 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/incautan-mas-de-3-mil-kilos-de-drogas-en-monagas/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/",
+        "fecha": "2026-07-30T14:46:56+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T14:46:56+00:00",
+    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00",
+    "fecha_deteccion": "2026-07-30T15:36:15.565191+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 30/07/2026, 10:46 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:36 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/07/30/voraz-incendio-consumio-tres-tiendas-en-el-centro-comercial-los-cedros-de-porlamar/",
+        "fecha": "2026-07-30T12:18:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T12:18:24+00:00",
+    "fecha_evento_temprana": "2026-07-30T12:18:24+00:00",
+    "fecha_deteccion": "2026-07-30T15:36:18.814104+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Bolivar::2026-07-30",
+    "titulo": "Incendio en Bolivar",
+    "texto": "📌 Incendio en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 30/07/2026, 8:18 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:36 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/30/voraz-incendio-consumio-tres-tiendas-en-el-centro-comercial-los-cedros-de-porlamar/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Barinas",
     "municipio": null,
@@ -50,42 +237,6 @@
     "clave_dedup": "infraestructura_electrica::Bolivar::2026-07-29",
     "titulo": "Falla eléctrica en Bolivar",
     "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/07/2026, 9:17 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 4:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "San Pedro",
-    "severidad": "alto",
-    "score": 1.65,
-    "confirmado": false,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/",
-        "fecha": "2026-07-29T17:06:27+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/",
-        "fecha": "2026-07-29T16:30:46+00:00"
-      },
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/",
-        "fecha": "2026-07-29T16:40:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T17:06:27+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:30:46+00:00",
-    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
-    "titulo": "Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 1:06 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:42 p.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
   },
   {
     "tipo": "crisis_migratoria",
