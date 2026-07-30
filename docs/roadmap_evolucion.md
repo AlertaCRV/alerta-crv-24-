@@ -2834,3 +2834,137 @@ El diseño técnico completo queda documentado en
 organización dispone en el futuro de un método de pago o cuenta
 institucional propia. Sin código nuevo en esta sesión — es una decisión
 de alcance, no un fix.
+
+---
+
+## Auditoría de 3 alertas erróneas adicionales tras revisión del usuario (30-07-2026)
+
+El usuario revisó el sitio en vivo y señaló 3 alertas concretas que la
+auditoría del día anterior no había atrapado, más un cuarto pedido
+(evaluar el medio "Noticia al Dia"). Investigadas a fondo, las 3 eran
+errores reales — dos de ellas ya habían sido revisadas el día anterior y
+descartadas como "borderline, no tocar" con un criterio demasiado laxo.
+
+### 1. Reportaje retrospectivo de una avería de 5 meses se publicaba como falla nueva
+
+"Falla de agua en Sucre" venía de un reportaje titulado "Cinco meses de
+espera: así aprendieron los cumaneses a vivir sin agua" — un artículo de
+seguimiento sobre una avería del sistema Turimiquire de hace 5 meses, sin
+ningún desarrollo nuevo el día de publicación. El sistema lo publicaba
+como si el corte hubiera empezado esa misma mañana ("🕒 Hecho reportado:
+29/07/2026, 9:01 a.m."). Ya se había revisado el 29-07-2026 y se dejó
+pasar por "ser real y no estar exagerado" — un criterio insuficiente: lo
+que importa no es si la crisis es real, sino si el artículo reporta algo
+**nuevo** hoy.
+
+**Causa raíz** (`scripts/classify.py`): ningún mecanismo generalizaba el
+filtro de "boletín retrospectivo" (agregado el 29-07-2026, pero limitado
+a sismo/corrección de epicentro) a otros tipos de emergencia.
+
+**Corrección**: nueva función `_es_articulo_retrospectivo_larga_duracion()`,
+con marcadores de reportaje-de-seguimiento sobre una crisis crónica
+("meses de espera", "años de espera", "así aprendieron", "aprendieron a
+vivir") — a diferencia de `_CONTEXTO_CONFLICTIVO_POR_TIPO`, es una señal
+decisiva (no se anula por evidencia fuerte) y **aplica a cualquier tipo**,
+no solo a sismo, porque la señal ("esto es un reportaje sobre algo viejo")
+no depende de la categoría de la emergencia. Probada con el caso real
+(descartado) y una falla de agua nueva de control (causa puntual de hoy,
+se mantiene).
+
+### 2. Artículo de ayuda humanitaria en curso se publicaba como salud pública
+
+"Salud pública en Parroquia Caraballeda..." venía de un artículo sobre
+brigadistas voluntarios pidiendo donaciones para armar kits de higiene
+"para prevenir enfermedades" — ayuda humanitaria en curso post-terremoto,
+sin ningún caso o brote real. La palabra "enfermedades" en una frase
+puramente preventiva disparaba el tipo. El usuario no pudo abrir el
+enlace originalmente (funcionaba al reintentar; se confirmó el contenido
+con el texto completo del artículo, no solo el resumen truncado del RSS).
+
+**Corrección** (`scripts/classify.py`): se agregaron "prevenir
+enfermedades"/"prevenir la propagación" a la lista de contexto
+conflictivo ya existente de `salud_publica` (creada el 29-07-2026 para el
+caso de Hantavirus) — reutiliza la misma evidencia fuerte ya definida
+("brote confirmado", "casos confirmados", etc.), sin necesidad de
+arquitectura nueva.
+
+### 3. Bug real en la fusión de fuentes: municipio y parroquia de reportes distintos, combinados sin validar que fueran el mismo lugar
+
+El usuario notó que la alerta de crisis migratoria en Falcón mostraba
+"📍 Ubicación: Parroquia Las Calderas, Municipio Colina" pero el resumen
+consolidado (de la fuente más reciente) decía "🏠 Albergados en: municipio
+Zamora". Al investigar con el código actual (no solo los datos ya
+publicados), se confirmó que **no era solo un dato viejo sin corregir
+retroactivamente** — es un bug real y todavía vigente en
+`scripts/verify.py`: `agrupar_y_verificar()` elegía el municipio del
+miembro más reciente que lo tuviera, y la parroquia del miembro más
+reciente que la tuviera, **cada uno por separado**, sin exigir que
+vinieran del mismo miembro ni verificar que la parroquia perteneciera al
+municipio elegido. Con 3 reportes de la misma filial (07/07: "parroquia
+Las Calderas, municipio Colina"; 28/07: "municipio Colina"; 29/07:
+"municipio Zamora", sin parroquia), el resultado combinado terminaba en
+"Municipio Zamora, Parroquia Las Calderas" — una combinación que no
+existe (Las Calderas es parroquia de Colina, no de Zamora, confirmado
+contra `config/ubicaciones_detalle.json`).
+
+Es la misma clase de bug que la jerarquía real INE ya corrigió el
+27-07-2026 (nunca combinar municipio y parroquia de fuentes distintas sin
+verificar la relación entre ambos) — pero esa corrección se aplicó dentro
+de `classify.py` (un solo texto), no al **fusionar varias fuentes ya
+clasificadas por separado** en `verify.py`, que es un lugar de código
+distinto donde el mismo problema podía reaparecer.
+
+**Corrección** (`scripts/verify.py`, `agrupar_y_verificar`): la parroquia
+del evento fusionado ahora solo se acepta de un miembro cuyo propio
+municipio coincida con el municipio ya elegido (o que no declare ninguno)
+— nunca de un miembro con un municipio distinto. Probado con el caso real
+(ahora da "Municipio Zamora, sin parroquia" en vez de la combinación
+inválida) y un caso de control (dos fuentes del mismo municipio, una con
+parroquia y otra sin ella — la parroquia se sigue conservando
+correctamente cuando sí pertenece al municipio elegido).
+
+### Corrección retroactiva
+
+Se eliminaron por completo `infraestructura_agua::Sucre::2026-07-29` y
+`salud_publica::La Guaira::2026-07-29` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl`,
+`data/publicados.json` y `data/pendientes_verificacion.json`. La alerta
+de Falcón (`crisis_migratoria::Falcon::2026-07-07`) **no se eliminó** —el
+evento en sí es real (hay familias desplazadas)— se corrigió su
+municipio/parroquia a "Zamora"/`null` en `docs/data/noticias.json`
+(regenerando `titulo`/`texto`) y `data/historico_eventos.jsonl`, quedando
+alineada con el resumen consolidado. Se regeneraron las estadísticas.
+
+Se agregaron los 3 casos reales + 2 controles a
+`tests/casos_clasificacion.jsonl`, y un archivo nuevo
+`tests/test_verify_agrupacion.py` (primera prueba de `verify.py` en la
+suite — hasta ahora solo cubría `classify.py`/`verify_ai.py`) con el caso
+real de la fusión de municipio/parroquia y su control. 83 pruebas en
+total, todas pasan.
+
+### Evaluación del medio "Noticia al Dia" (Zulia): sin evidencia suficiente para penalizarlo
+
+El usuario sospechaba que `noticialdia.com` genera muchas falsas
+alertas — en efecto fue la fuente de la alerta de Caraballeda corregida
+arriba. Se revisó su peso actual (`config/sources.yaml`: 0.55, el nivel
+**más común** entre las ~62 fuentes configuradas, no una excepción) y su
+historial completo en `data/historico_fuentes_texto.jsonl` y en todo
+`docs/roadmap_evolucion.md`.
+
+**Hallazgo**: solo aparece en **2 eventos** en toda la historia del
+sistema (~5 días de operación) — el falso positivo de hoy, y un
+verdadero positivo real y grave ("Niña muere ahogada tras crecida súbita
+del río La Miel en Lara", 26-07-2026, correctamente clasificado como
+crítico). Con una muestra de 2 casos, uno de cada tipo, **no hay
+evidencia de un patrón sistémico** que justifique bajar su peso — hacerlo
+con esta muestra sería sobreajustar a un solo caso. Además, el falso
+positivo de hoy ya se corrigió en la raíz (el filtro de "prevenir
+enfermedades" en `classify.py`, que aplica a **cualquier** fuente, no
+solo a esta), así que penalizar el medio no habría evitado nada que el
+fix de tipo no evite ya, y sí podría hacer que una futura alerta real y
+grave de este medio (como la de Lara) pese menos de lo que debería.
+
+**Decisión**: no se ajusta el peso de esta fuente. Si en el futuro
+aparecen más falsos positivos de `noticialdia.com` que no queden
+cubiertos por fixes de causa raíz en `classify.py`/`verify_ai.py`, ahí sí
+valdría la pena reconsiderar su peso con una muestra más grande.

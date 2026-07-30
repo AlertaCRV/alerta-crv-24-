@@ -146,9 +146,28 @@ def agrupar_y_verificar(items):
             # Zamora"), el encabezado de la alerta ("Ubicacion") debe
             # coincidir con la fuente mas actual, no con una versión vieja --
             # lo mismo que ya hace el resumen consolidado en verify_ai.py.
+            # Bug real encontrado (30-07-2026): elegir municipio y parroquia
+            # cada uno por separado ("el valor no nulo mas reciente de cada
+            # campo") podia emparejar un municipio de un miembro con la
+            # parroquia de OTRO miembro mas viejo que en realidad pertenece a
+            # un municipio distinto -- caso real: 3 reportes de la misma
+            # filial, el mas reciente dice "municipio Zamora" (sin
+            # parroquia), uno viejo dice "parroquia Las Calderas, municipio
+            # Colina" -- el resultado combinado terminaba en "Municipio
+            # Zamora, Parroquia Las Calderas", una combinacion que no existe
+            # (Las Calderas es parroquia de Colina, no de Zamora). Ahora la
+            # parroquia solo se acepta de un miembro cuyo propio municipio
+            # coincida con el ya elegido (o que no declare ninguno) --
+            # nunca de un miembro con un municipio DISTINTO.
             miembros_por_fecha = sorted(sub_miembros, key=lambda m: m["fecha"], reverse=True)
             municipio = next((m.get("municipio") for m in miembros_por_fecha if m.get("municipio")), None)
-            parroquia = next((m.get("parroquia") for m in miembros_por_fecha if m.get("parroquia")), None)
+            parroquia = next(
+                (
+                    m.get("parroquia") for m in miembros_por_fecha
+                    if m.get("parroquia") and (not m.get("municipio") or m.get("municipio") == municipio)
+                ),
+                None,
+            )
 
             eventos.append({
                 "tipo": tipo,
