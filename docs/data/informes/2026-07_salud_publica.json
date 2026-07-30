@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-07",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-07-30T08:02:33.425682+00:00",
+  "actualizado_hasta": "2026-07-29T16:23:34.990226+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-07, se registró un evento relacionado con la salud pública en Venezuela. Según se informa, 940 pacientes en el estado de Lara se vieron afectados por la falta de diálisis completa debido a que los equipos de diálisis están dañados (Turimiquire). Esto ha llevado a la reducción de la duración de los tratamientos, pasando de cuatro horas a dos horas y media. Los pacientes y defensores del sector salud han solicitado al Gobierno la renovación urgente de los equipos para garantizar la continuidad del tratamiento (Turimiquire). En comparación con el período anterior (2026-06), hubo 0 eventos registrados, mientras que en este período se registró 1 evento. La situación en Lara es particularmente preocupante, ya que los pacientes renales dependen de estos tratamientos para su supervivencia. La reducción en la duración de las sesiones de diálisis puede tener graves consecuencias para la salud de estos pacientes. Es importante que se tomen medidas urgentes para solucionar este problema y garantizar el acceso a tratamientos de diálisis adecuados para todos los pacientes que lo necesitan.",
+  "fuentes": [
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/"
+    }
+  ]
+}

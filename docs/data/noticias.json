@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/?p=94961",
+        "fecha": "2026-07-30T00:01:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-30T00:01:01+00:00",
+    "fecha_evento_temprana": "2026-07-30T00:01:01+00:00",
+    "fecha_deteccion": "2026-07-30T08:00:59.369377+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-07-30",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 29/07/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 4:00 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/?p=94961"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Bolivar",
     "municipio": null,
     "parroquia": null,

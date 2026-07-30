@@ -1,14 +1,4 @@
 {
-  "salud_publica::Portuguesa::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T02:57:11.129554+00:00"
-  },
-  "deslizamiento::La Guaira::2026-07-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T02:57:19.227152+00:00"
-  },
   "incendio::Portuguesa::2026-07-27": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -140,5 +130,11 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
     "fecha_evento_temprana": "2026-07-29T17:55:40+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T08:00:59.369377+00:00",
+    "fecha_evento_temprana": "2026-07-30T00:01:01+00:00"
   }
 }
