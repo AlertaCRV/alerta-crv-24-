@@ -15,32 +15,32 @@
     "intentos": 2,
     "ultima_vez": "2026-07-29T18:40:13.853206+00:00"
   },
-  "deslizamiento::Portuguesa::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T20:19:14.570925+00:00"
-  },
-  "inundacion::Sucre::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T20:19:38.769953+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T20:20:02.976324+00:00"
-  },
-  "salud_publica::Lara::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T20:20:27.215384+00:00"
-  },
   "incendio::Distrito Capital::2026-07-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-07-29T20:20:51.421905+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T23:51:06.380859+00:00"
   },
   "vialidad::Tachira::2026-07-29": {
     "intentos": 1,
     "ultima_vez": "2026-07-29T20:22:04.146880+00:00"
   },
   "inundacion::Apure::2026-07-29": {
+    "intentos": 2,
+    "ultima_vez": "2026-07-29T23:50:18.049807+00:00"
+  },
+  "infraestructura_electrica::Apure::2026-07-29": {
     "intentos": 1,
-    "ultima_vez": "2026-07-29T20:22:28.407597+00:00"
+    "ultima_vez": "2026-07-29T23:49:29.745796+00:00"
+  },
+  "salud_publica::Apure::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T23:49:53.900143+00:00"
+  },
+  "infraestructura_agua::La Guaira::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T23:50:42.220592+00:00"
+  },
+  "orden_publico::Bolivar::2026-07-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-07-29T23:51:54.682079+00:00"
   }
 }
