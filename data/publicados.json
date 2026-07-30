@@ -99,18 +99,6 @@
     "fecha_deteccion": "2026-07-29T20:18:26.152626+00:00",
     "fecha_evento_temprana": "2026-07-29T13:17:11+00:00"
   },
-  "deslizamiento::La Guaira::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T15:31:36.190724+00:00",
-    "fecha_evento_temprana": "2026-07-29T13:47:29+00:00"
-  },
-  "sismo::La Guaira::2026-07-29::mag7.5": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:21:58.143172+00:00",
-    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00"
-  },
   "infraestructura_agua::Sucre::2026-07-29": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -128,30 +116,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
     "fecha_evento_temprana": "2026-07-29T16:20:02+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:23:59.232713+00:00",
-    "fecha_evento_temprana": "2026-07-29T15:05:11+00:00"
-  },
-  "salud_publica::Anzoategui::2026-07-29": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:24:23.543026+00:00",
-    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00"
-  },
-  "salud_publica::Aragua::2026-07-29": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:24:47.762828+00:00",
-    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00"
-  },
-  "sismo::Yaracuy::2026-07-29::mag7.5": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:25:12.188912+00:00",
-    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00"
   },
   "crisis_migratoria::Falcon::2026-07-07": {
     "severidad": "sin_clasificar",
@@ -188,11 +152,5 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
     "fecha_evento_temprana": "2026-07-29T17:55:40+00:00"
-  },
-  "deslizamiento::Bolivar::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T20:18:50.364326+00:00",
-    "fecha_evento_temprana": "2026-07-29T12:30:00+00:00"
   }
 }

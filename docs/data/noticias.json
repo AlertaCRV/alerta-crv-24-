@@ -26,32 +26,6 @@
     "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/07/2026, 9:17 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 4:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "Bolivar",
-    "municipio": "Piar",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Maturin News",
-        "link": "https://maturinnews.com/habitantes-de-rio-chiquito-temen-quedar-incomunicados-por-colapso-de-la-vialidad/?utm_source=rss&utm_medium=rss&utm_campaign=habitantes-de-rio-chiquito-temen-quedar-incomunicados-por-colapso-de-la-vialidad",
-        "fecha": "2026-07-29T12:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T12:30:00+00:00",
-    "fecha_evento_temprana": "2026-07-29T12:30:00+00:00",
-    "fecha_deteccion": "2026-07-29T20:18:50.364326+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Bolivar::2026-07-29",
-    "titulo": "Deslizamiento/Derrumbe en Municipio Piar, Bolivar",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Piar, Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Piar, Bolivar\n🕒 Hecho reportado: 29/07/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 4:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/habitantes-de-rio-chiquito-temen-quedar-incomunicados-por-colapso-de-la-vialidad/?utm_source=rss&utm_medium=rss&utm_campaign=habitantes-de-rio-chiquito-temen-quedar-incomunicados-por-colapso-de-la-vialidad"
-  },
-  {
     "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -166,36 +140,6 @@
     "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 29/07/2026, 12:22 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
   },
   {
-    "tipo": "sismo",
-    "ubicacion": "La Guaira",
-    "municipio": "Vargas",
-    "parroquia": "Catia La Mar",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/",
-        "fecha": "2026-07-29T14:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T14:00:00+00:00",
-    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00",
-    "fecha_deteccion": "2026-07-29T16:21:58.143172+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.5,
-    "tambien_mencionado_en": [
-      "Yaracuy"
-    ],
-    "clave_dedup": "sismo::La Guaira::2026-07-29::mag7.5",
-    "titulo": "Sismo en Parroquia Catia La Mar, Municipio Vargas, La Guaira",
-    "texto": "📌 Sismo en Parroquia Catia La Mar, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Catia La Mar, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/"
-  },
-  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Sucre",
     "municipio": null,
@@ -274,114 +218,6 @@
     "texto": "📌 Salud pública en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 29/07/2026, 12:20 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/07/29/milagro-en-san-bernardino-rescatan-al-gato-noche-tras-sobrevivir-33-dias-bajo-los-escombros/",
-        "fecha": "2026-07-29T15:05:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T15:05:11+00:00",
-    "fecha_evento_temprana": "2026-07-29T15:05:11+00:00",
-    "fecha_deteccion": "2026-07-29T16:23:59.232713+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Distrito Capital::2026-07-29",
-    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 11:05 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/milagro-en-san-bernardino-rescatan-al-gato-noche-tras-sobrevivir-33-dias-bajo-los-escombros/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Anzoategui",
-    "municipio": "Aragua",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad MCY (Aragua)",
-        "link": "https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela",
-        "fecha": "2026-07-29T09:00:57+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T09:00:57+00:00",
-    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00",
-    "fecha_deteccion": "2026-07-29T16:24:23.543026+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Anzoategui::2026-07-29",
-    "titulo": "Salud pública en Municipio Aragua, Anzoategui",
-    "texto": "📌 Salud pública en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 29/07/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad MCY (Aragua)",
-        "link": "https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela",
-        "fecha": "2026-07-29T09:00:57+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T09:00:57+00:00",
-    "fecha_evento_temprana": "2026-07-29T09:00:57+00:00",
-    "fecha_deteccion": "2026-07-29T16:24:47.762828+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Aragua::2026-07-29",
-    "titulo": "Salud pública en Aragua",
-    "texto": "📌 Salud pública en Aragua\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/07/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/hantavirus-enfermedad-totalmente-controlada-en-venezuela"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Yaracuy",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/",
-        "fecha": "2026-07-29T14:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T14:00:00+00:00",
-    "fecha_evento_temprana": "2026-07-29T14:00:00+00:00",
-    "fecha_deteccion": "2026-07-29T16:25:12.188912+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.5,
-    "tambien_mencionado_en": [
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Yaracuy::2026-07-29::mag7.5",
-    "titulo": "Sismo en Yaracuy",
-    "texto": "📌 Sismo en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 29/07/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/29/usgs-ajusta-el-epicentro-del-terremoto-en-venezuela-se-ubico-en-la-guaira-y-no-en-yaracuy-29jul/"
-  },
-  {
     "tipo": "crisis_migratoria",
     "ubicacion": "Falcon",
     "municipio": "Colina",
@@ -442,30 +278,6 @@
     "clave_dedup": "crisis_migratoria::Apure::2026-07-29",
     "titulo": "Reporte de personas desplazadas",
     "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 29/07/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:26 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n🏠 Albergados en: estado Apure\n👥 Familias: 91\n👥 Personas (grupo familiar): 187\n👥 Total de familias: 111\n👥 Total de personas (grupo familiar): 229"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": "Vargas",
-    "parroquia": "Catia La Mar",
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/rescatistas-hallan-con-vida-a-mino-un-gato-atrapado-entre-los-escombros-de-catia-la-mar/",
-        "fecha": "2026-07-29T13:47:29+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-29T13:47:29+00:00",
-    "fecha_evento_temprana": "2026-07-29T13:47:29+00:00",
-    "fecha_deteccion": "2026-07-29T15:31:36.190724+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-07-29",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Catia La Mar, Municipio Vargas, La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Catia La Mar, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Catia La Mar, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 9:47 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 11:31 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/rescatistas-hallan-con-vida-a-mino-un-gato-atrapado-entre-los-escombros-de-catia-la-mar/"
   },
   {
     "tipo": "infraestructura_electrica",

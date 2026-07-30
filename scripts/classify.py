@@ -42,6 +42,22 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
                   "derribo controlado", "derribo programado",
                   "voladura controlada", "detonacion controlada",
                   "detonacion programada"],
+    # Caso real (29-07-2026): articulos sobre el rescate de una mascota
+    # atrapada entre los "escombros" de un edificio que colapso en un sismo
+    # de mas de un mes antes ("Rescatan al gato Noche tras sobrevivir 33
+    # dias bajo los escombros") disparaban tipo=deslizamiento -- son notas
+    # de interes humano sobre un colapso viejo ya cubierto, no un
+    # derrumbe/deslizamiento nuevo.
+    "deslizamiento": ["gato", "gata", "gatito", "gatico", "mascota",
+                       "perro", "perra", "perrito", "felino", "canino"],
+    # Caso real (29-07-2026): un articulo titulado "Hantavirus: Enfermedad
+    # totalmente controlada en Venezuela" (una nota que desmiente rumores,
+    # sin casos nuevos confirmados por MinSalud) disparaba tipo=salud_publica
+    # con severidad critica solo por mencionar fallecidos historicos.
+    "salud_publica": ["totalmente controlada", "enfermedad controlada",
+                       "no existen registros confirmados",
+                       "sin registros confirmados", "brote descartado",
+                       "descartado el brote", "bajo control total"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -50,7 +66,38 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
                             "heridos", "fallecidos", "atrapados bajo"],
     "explosion": ["explosion accidental", "explosion no controlada",
                   "explosion prematura", "heridos", "fallecidos"],
+    "deslizamiento": ["heridos", "fallecidos", "desaparecidos",
+                       "viviendas colapsadas", "viviendas destruidas",
+                       "evacuados", "evacuadas", "familias afectadas"],
+    "salud_publica": ["brote confirmado", "casos confirmados",
+                       "declaro emergencia sanitaria",
+                       "declaró emergencia sanitaria", "cuarentena",
+                       "hospitalizados"],
 }
+
+# Un articulo que reporta que una entidad (USGS, Funvisis...) "ajusto"/
+# "corrigio" la ubicacion del epicentro de un sismo YA OCURRIDO es un
+# boletin tecnico retrospectivo sobre un evento pasado, nunca un temblor
+# nuevo -- a diferencia de _CONTEXTO_CONFLICTIVO_POR_TIPO, esta señal es
+# decisiva y NO se anula por evidencia fuerte de sismo (magnitud/epicentro/
+# sacudio), porque esas mismas palabras describen el sismo original que se
+# esta corrigiendo, no uno nuevo. Caso real (29-07-2026): "USGS ajusta el
+# epicentro del terremoto en Venezuela: Se ubico en La Guaira y no en
+# Yaracuy... el sismo de magnitud 7.5 que sacudio el centro-norte de
+# Venezuela el pasado 24 de junio" genero dos alertas nuevas (La Guaira y
+# Yaracuy) de un sismo de mas de un mes de antiguedad.
+_CORRECCION_EPICENTRO_RETROSPECTIVA = [
+    "ajusta el epicentro", "ajusto el epicentro", "ajustar el epicentro",
+    "corrige el epicentro", "corrigio el epicentro", "corrigiendo el epicentro",
+    "revisa el epicentro", "reviso el epicentro", "revision del epicentro",
+    "reubica el epicentro", "reubico el epicentro", "reubicando el epicentro",
+    "actualiza el epicentro", "actualizo el epicentro",
+]
+
+
+def _es_correccion_epicentro_retrospectiva(texto_norm):
+    return any(_contiene_palabra_clave(texto_norm, frase) for frase in _CORRECCION_EPICENTRO_RETROSPECTIVA)
+
 
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad
 # ("heridos", "danos severos"...) aunque describan una situacion real de
@@ -257,6 +304,44 @@ def _es_mencion_direccional(tokens, pos, candidato_tokens):
     return False
 
 
+# Varios nombres de estado (Bolivar, Miranda, Sucre...) tambien son
+# apellidos comunes en Venezuela. Un vocero/lider comunitario citado por su
+# nombre puede generar un falso positivo de ubicacion -- caso real: "El
+# lider social de la zona, Julian Bolivar, subrayo que..." y, mas
+# adelante, "...alerto Bolivar" (la misma persona, citada por su
+# apellido) -- el articulo trata en realidad sobre Monagas (dicho como
+# "entidad monaguense", nunca menciona "Bolivar" como estado) pero
+# generaba una alerta en el estado Bolivar.
+_CALIFICADORES_LUGAR_ANTES_DE_NOMBRE = {
+    "ciudad", "estado", "edo", "municipio", "parroquia", "gobernacion",
+    "region", "distrito", "urbanizacion", "sector", "avenida", "av",
+    "calle", "plaza", "puente", "aeropuerto", "libertador", "simon",
+    "mariscal", "de", "del", "en", "desde", "hacia",
+}
+_VERBOS_ATRIBUCION_CITA = {
+    "dijo", "afirmo", "explico", "alerto", "senalo", "indico", "declaro",
+    "manifesto", "comento", "subrayo", "aseguro", "denuncio", "preciso",
+    "advirtio", "reitero", "sostuvo", "recalco",
+}
+
+
+def _es_mencion_de_persona_citada(tokens, pos):
+    """True si la mencion en `pos` de un nombre de estado que tambien es un
+    apellido comun esta en realidad atribuyendo una cita a una persona
+    (ver comentario arriba), no nombrando el estado. Exige que la palabra
+    inmediatamente anterior no sea un calificador de lugar conocido (para
+    no descartar lugares reales como "Ciudad Bolivar" o "estado Bolivar")
+    Y que haya un verbo de atribucion de cita justo antes o justo
+    despues."""
+    anterior = tokens[pos - 1] if pos > 0 else ""
+    if anterior in _CALIFICADORES_LUGAR_ANTES_DE_NOMBRE:
+        return False
+    if anterior in _VERBOS_ATRIBUCION_CITA:
+        return True
+    siguiente = tokens[pos + 1] if pos + 1 < len(tokens) else ""
+    return siguiente in _VERBOS_ATRIBUCION_CITA
+
+
 def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
     alguna palabra clave de tipo, o None si no hay ninguna cerca.
@@ -277,6 +362,7 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
         if t == primera_palabra
         and not _es_mencion_subestatal(tokens, i)
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
+        and not _es_mencion_de_persona_citada(tokens, i)
     ]
     posiciones_otros_estados = None
     if posiciones_estados:
@@ -543,10 +629,19 @@ def detectar_tipo(texto, ventana=None):
     que no tiene relación con la ubicación detectada.
     """
     fuente_norm = ventana if ventana is not None else _normalizar(texto)
+    # La correccion de epicentro es una propiedad del ARTICULO completo, no
+    # de la mencion puntual de un estado -- un articulo multi-estado (ej.
+    # "...se ubico en La Guaira y no en Yaracuy...") puede mencionar el
+    # texto que prueba que es retrospectivo lejos (mas de la ventana de
+    # proximidad) de alguno de los estados, sin que eso lo vuelva un sismo
+    # nuevo para ese estado.
+    texto_completo_norm = _normalizar(texto)
     tipos_encontrados = []
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:
             if _contiene_palabra_clave(fuente_norm, palabra):
+                if tipo == "sismo" and _es_correccion_epicentro_retrospectiva(texto_completo_norm):
+                    break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
                 break
