@@ -1,16 +1,4 @@
 {
-  "incendio::Portuguesa::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T18:17:21.724944+00:00",
-    "fecha_evento_temprana": "2026-07-27T18:06:57+00:00"
-  },
-  "orden_publico::Barinas::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T18:17:46.004950+00:00",
-    "fecha_evento_temprana": "2026-07-27T12:10:08+00:00"
-  },
   "inundacion::Distrito Capital::2026-07-25": {
     "severidad": "sin_clasificar",
     "confirmado": true,
@@ -28,36 +16,6 @@
     "confirmado": true,
     "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
     "fecha_evento_temprana": "2026-07-26T18:48:23+00:00"
-  },
-  "inundacion::Trujillo::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T17:27:30.582573+00:00",
-    "fecha_evento_temprana": "2026-07-27T16:52:23+00:00"
-  },
-  "colapso_estructural::Zulia::2026-07-27": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T17:27:27.208884+00:00",
-    "fecha_evento_temprana": "2026-07-27T17:18:51+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-07-26": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-27T16:02:19.622668+00:00",
-    "fecha_evento_temprana": "2026-07-26T13:45:05+00:00"
-  },
-  "infraestructura_electrica::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T16:02:12.489573+00:00",
-    "fecha_evento_temprana": "2026-07-27T14:00:00+00:00"
-  },
-  "tormenta_electrica::Zulia::2026-07-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
-    "fecha_evento_temprana": "2026-07-27T10:35:10+00:00"
   },
   "orden_publico::Distrito Capital::2026-07-28": {
     "severidad": "sin_clasificar",
@@ -121,8 +79,8 @@
   },
   "incendio::Distrito Capital::2026-07-29": {
     "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T15:36:15.565191+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-30T20:24:52.237708+00:00",
     "fecha_evento_temprana": "2026-07-30T14:46:56+00:00"
   },
   "crisis_migratoria::Anzoategui::2026-07-29": {
@@ -172,5 +130,17 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-30T15:36:18.814104+00:00",
     "fecha_evento_temprana": "2026-07-30T12:18:24+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T20:25:02.477396+00:00",
+    "fecha_evento_temprana": "2026-07-30T20:04:41+00:00"
+  },
+  "salud_publica::Apure::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-30T20:25:19.782134+00:00",
+    "fecha_evento_temprana": "2026-07-30T16:40:02+00:00"
   }
 }
