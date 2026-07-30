@@ -3,16 +3,20 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-07-29T00:12:04.027011+00:00",
-  "actualizado_hasta": "2026-07-28T19:53:48.019374+00:00",
-  "total_eventos": 11,
+  "generado": "2026-07-30T08:01:43.471235+00:00",
+  "actualizado_hasta": "2026-07-30T08:00:59.369377+00:00",
+  "total_eventos": 24,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 11
+    "actual": 24
   },
-  "narrativa": "Durante el período de 2026-07, se registraron un total de 11 eventos de emergencia en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se reportaron eventos de este tipo. Entre los eventos más destacados se encuentra la tormenta eléctrica en Carabobo, que dejó nueve heridos por el impacto de un rayo en el aeropuerto de Valencia (Turimiquire). En el estado Lara, se produjo una inundación de severidad crítica (Noticia al Dia), que resultó en la muerte de una niña ahogada tras la crecida repentina del río La Miel (La Prensa de Monagas, Noticia al Dia). Además, un deslizamiento en el Distrito Capital fue reportado por La Prensa de Monagas. Las intensas lluvias también causaron deslizamientos y desbordamiento de quebradas en Boconó, estado Trujillo (Diario El Tiempo), y torrenciales lluvias azotaron al Zulia, provocando apagones y afectaciones en varios municipios (Diario La Nacion, El Impulso). Un deslizamiento de tierra bloqueó el paso en la carretera Barinas-Mérida (Diario La Nacion), aunque posteriormente se restableció parcialmente el paso (Efecto Cocuyo). Las lluvias también ocasionaron inundaciones y deslizamientos en Caracas y La Guaira (El Carabobeno, El Impulso, El Luchador). Otros eventos reportados incluyeron el colapso de una vivienda en Zulia que resultó en la muerte de un niño (El Periodico de Monagas), y lluvias con vientos huracanados que azotaron a Maracaibo, dejando comunidades inundadas y sin electricidad (El Pitazo).",
+  "narrativa": "En el período de 2026-07, se registraron un total de 24 eventos de emergencia en Venezuela, lo que contrasta con los 0 eventos registrados en el período anterior (2026-06). Entre los eventos más destacados se encuentran la tormenta eléctrica en Carabobo (Turimiquire), la inundación en Lara (Noticia al Dia), el deslizamiento/derrumbe en Distrito Capital (La Prensa de Monagas) y el incendio en Distrito Capital (La Prensa de Lara). En Caracas, una fuga de gas provocó una explosión que dejó dos heridos (La Prensa de Lara, Noticias de Aqui, Primicia). En el estado Lara, una niña murió ahogada tras la crecida repentina del río La Miel (La Prensa de Monagas, Noticia al Dia). El paso de la Onda Tropical N.º 30 causó anegaciones, derrumbes y lesionados en Caracas y varios estados (La Prensa de Monagas). En el estado Trujillo, las intensas lluvias causaron deslizamientos y desbordamiento de quebradas en Boconó (Diario El Tiempo). En el estado Zulia, las torrenciales lluvias y apagones azotaron la región por el paso de la Onda Tropical N.º 30 (Diario La Nacion). Un deslizamiento de tierra bloqueó el paso en la carretera Barinas-Mérida (Diario La Nacion).",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/"
+    },
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/"
@@ -24,6 +28,14 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -44,6 +56,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
     },
     {
       "nombre": "Efecto Cocuyo - General",
@@ -70,8 +86,16 @@
       "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/bolivar-hombres-armados-disparan-para-disolver-protesta-por-apagones-en-guasipati/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -82,8 +106,24 @@
       "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/"
     },
     {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/fuertes-lluvias-provocaron-inundaciones-y-fallas-electricas-en-varios-sectores-de-cumana/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/anzoatiguenses-reportan-aumento-de-apagones-en-la-zona-norte/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/venezuela-entrego-nota-de-protesta-a-iran-por-declaraciones-de-su-canciller/"
+    },
+    {
       "nombre": "La Manana (Falcon)",
       "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/?p=94961"
     },
     {
       "nombre": "La Patilla",
@@ -100,6 +140,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -124,22 +168,6 @@
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/oposicion-marcha-en-caracas-exigiendo-elecciones-y-el-regreso-de-machado/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/reportan-cierre-de-la-via-barinas-merida-tras-derrumbes/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/onda-tropical-30-dejo-danos-en-caracas/"
-    },
-    {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/07/proteccion-civil-merida-informa-sobre.html"
     }
   ]
 }

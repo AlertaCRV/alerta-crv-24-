@@ -1,0 +1,37 @@
+{
+  "periodo": "2026-07",
+  "tipo": "crisis_migratoria",
+  "tipo_label": "Crisis migratoria",
+  "cerrado": false,
+  "generado": "2026-07-30T08:01:34.913907+00:00",
+  "actualizado_hasta": "2026-07-29T18:43:55.122236+00:00",
+  "total_eventos": 3,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 3
+  },
+  "narrativa": "En el período de julio de 2026, se registraron 3 eventos relacionados con la crisis migratoria en Venezuela, lo que contrasta con el período anterior, junio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos reportados fue el desplazamiento de familias desde el estado La Guaira hacia la parroquia Las Calderas, municipio Colina, estado Falcón, donde se encuentran 11 personas desplazadas, según un reporte de filial (sala.situacional.nacional@cruzroja.ve). Otro evento fue el desplazamiento de familias hacia el municipio Colina, estado Falcón, con un total de 46 personas desplazadas, como se menciona en otro reporte de filial (sala.situacional.nacional@cruzroja.ve). También se reportó el desplazamiento de familias hacia el municipio Zamora, estado Falcón, con 42 personas desplazadas, según un reporte de filial (sala.situacional.nacional@cruzroja.ve). Además, se registraron desplazamientos en el estado Apure, con 229 personas desplazadas, y en el municipio Piritu, estado Anzoategui, con 65 personas desplazadas, según reportes de filial (sala.situacional.nacional@cruzroja.ve). Estos eventos destacan la necesidad de apoyo psicológico, kits de higiene personal, medicamentos y otros recursos para las personas desplazadas.",
+  "fuentes": [
+    {
+      "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (07/07/2026)",
+      "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com"
+    },
+    {
+      "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (28/07/2026)",
+      "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com"
+    },
+    {
+      "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+      "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74148286BEEECDAE5AB33CE4A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com"
+    },
+    {
+      "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+      "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741497BA10F0F19591EE7617A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com"
+    },
+    {
+      "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
+      "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741418361C69B8A5633E6725A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com"
+    }
+  ]
+}

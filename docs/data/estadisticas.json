@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-07-30T03:33:46.660745+00:00",
+  "actualizado": "2026-07-30T08:01:26.760374+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-29T17:55:40+00:00"
+    "hasta": "2026-07-30T00:01:01+00:00"
   },
-  "total_eventos": 23,
+  "total_eventos": 24,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
-    "infraestructura_electrica": 4,
+    "infraestructura_electrica": 5,
     "deslizamiento": 2,
     "colapso_estructural": 1,
     "orden_publico": 3,
@@ -28,12 +28,12 @@
       "confirmados": 3
     },
     {
-      "estado": "Lara",
-      "total": 2,
+      "estado": "Barinas",
+      "total": 3,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
+      "estado": "Lara",
       "total": 2,
       "confirmados": 1
     },
@@ -103,7 +103,8 @@
     },
     "Barinas": {
       "deslizamiento": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "infraestructura_electrica": 1
     },
     "Monagas": {
       "orden_publico": 1
@@ -128,7 +129,7 @@
   "por_severidad": {
     "alto": 3,
     "critico": 2,
-    "sin_clasificar": 18
+    "sin_clasificar": 19
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -138,7 +139,7 @@
       "2026-07": 6
     },
     "infraestructura_electrica": {
-      "2026-07": 4
+      "2026-07": 5
     },
     "deslizamiento": {
       "2026-07": 2

@@ -4,47 +4,47 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-07-29T00:12:36.105607+00:00",
+    "generado": "2026-07-30T08:02:37.339220+00:00",
     "total_eventos": 2
   },
   {
     "periodo": "2026-07",
-    "tipo": "sismo",
-    "tipo_label": "Sismo",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-07-29T18:45:45.572387+00:00",
-    "total_eventos": 2
+    "generado": "2026-07-30T08:02:33.425682+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-07",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-07-29T00:12:32.020089+00:00",
-    "total_eventos": 1
+    "generado": "2026-07-30T08:02:29.503532+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-07",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-07-29T00:12:28.312770+00:00",
-    "total_eventos": 4
+    "generado": "2026-07-30T08:02:25.618058+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-07",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-07-29T00:12:16.098989+00:00",
-    "total_eventos": 1
+    "generado": "2026-07-30T08:02:00.074732+00:00",
+    "total_eventos": 5
   },
   {
     "periodo": "2026-07",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-07-29T20:22:57.961980+00:00",
+    "generado": "2026-07-30T08:01:47.691153+00:00",
     "total_eventos": 1
   },
   {
@@ -52,23 +52,31 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-07-29T00:12:04.027011+00:00",
-    "total_eventos": 11
+    "generado": "2026-07-30T08:01:43.471235+00:00",
+    "total_eventos": 24
   },
   {
     "periodo": "2026-07",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-07-29T00:11:49.102026+00:00",
+    "generado": "2026-07-30T08:01:39.285183+00:00",
     "total_eventos": 2
+  },
+  {
+    "periodo": "2026-07",
+    "tipo": "crisis_migratoria",
+    "tipo_label": "Crisis migratoria",
+    "cerrado": false,
+    "generado": "2026-07-30T08:01:34.913907+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-07",
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-07-29T00:11:44.955677+00:00",
+    "generado": "2026-07-30T08:01:30.862462+00:00",
     "total_eventos": 1
   }
 ]
