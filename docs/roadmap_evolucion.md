@@ -2783,3 +2783,33 @@ contradictorias entre fuentes de filial) sigue pendiente de que el
 usuario confirme/reenvíe el documento original, tal como se documentó en
 la sesión anterior ("Primera prueba real con correos reenviados"). No se
 tocó en esta auditoría.
+
+---
+
+## Plan de confiabilidad: suite de regresión + IA de respaldo (30-07-2026)
+
+A pedido del usuario, tras una evaluación de la evolución del sistema
+(¿los errores se resuelven eficientemente, o es la misma debilidad
+repitiéndose?), se diseñaron dos mecanismos para atacar el patrón
+identificado: la mayoría de los "errores nuevos" de cada auditoría son
+manifestaciones nuevas de un puñado de debilidades estructurales
+recurrentes (ambigüedad de nombres de ubicación, palabras clave
+demasiado genéricas, artículos retrospectivos), no bugs realmente
+aislados. El diseño completo, con justificación y detalle de
+implementación, quedó en `docs/plan_confiabilidad_clasificacion.md` (no
+se duplica aquí para no desincronizar dos fuentes de verdad).
+
+**Implementado en esta sesión**: la suite de regresión persistente
+(`tests/`, 80 pruebas, corre en CI vía `validar.yml`) — automatiza el
+paso de "regresión contra el histórico real" que cada sesión de auditoría
+venía repitiendo a mano, y deja un formato (`casos_clasificacion.jsonl`)
+para que futuras correcciones agreguen su caso real + control de forma
+ejecutable en vez de solo en prosa.
+
+**Diseñado, pendiente de decisión del usuario**: un proveedor de IA de
+respaldo para `verify_ai.py`, para que la verificación de Groq deje de
+ser el eslabón más frágil (la mayoría de los falsos positivos recientes
+son casos que la IA probablemente habría rechazado si hubiera llegado a
+evaluarlos, pero falló por límite de tasa). No implementado — depende de
+que el usuario elija un proveedor/consiga una API key, o decida subir de
+plan en Groq.
