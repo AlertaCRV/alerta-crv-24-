@@ -62,32 +62,6 @@
     "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 1:06 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:42 p.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
   },
   {
-    "tipo": "salud_publica",
-    "ubicacion": "La Guaira",
-    "municipio": "Vargas",
-    "parroquia": "Caraballeda",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/la-guaira-nos-sigue-necesitando-brigadistas-voluntarios-piden-donaciones-para-entregar-kits-de-primera-necesidad/",
-        "fecha": "2026-07-29T17:25:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T17:25:53+00:00",
-    "fecha_evento_temprana": "2026-07-29T17:25:53+00:00",
-    "fecha_deteccion": "2026-07-29T18:43:30.890955+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::La Guaira::2026-07-29",
-    "titulo": "Salud pública en Parroquia Caraballeda, Municipio Vargas, La Guaira",
-    "texto": "📌 Salud pública en Parroquia Caraballeda, Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Caraballeda, Municipio Vargas, La Guaira\n🕒 Hecho reportado: 29/07/2026, 1:25 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/la-guaira-nos-sigue-necesitando-brigadistas-voluntarios-piden-donaciones-para-entregar-kits-de-primera-necesidad/"
-  },
-  {
     "tipo": "crisis_migratoria",
     "ubicacion": "Anzoategui",
     "municipio": "Piritu",
@@ -138,32 +112,6 @@
     "clave_dedup": "inundacion::Barinas::2026-07-29",
     "titulo": "Inundación en Municipio Pedraza, Barinas",
     "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 29/07/2026, 12:22 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/cinco-meses-de-espera-asi-aprendieron-los-cumaneses-a-vivir-sin-agua/",
-        "fecha": "2026-07-29T13:01:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T13:01:00+00:00",
-    "fecha_evento_temprana": "2026-07-29T13:01:00+00:00",
-    "fecha_deteccion": "2026-07-29T16:22:46.565896+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Sucre::2026-07-29",
-    "titulo": "Falla de agua en Sucre",
-    "texto": "📌 Falla de agua en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 29/07/2026, 9:01 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/cinco-meses-de-espera-asi-aprendieron-los-cumaneses-a-vivir-sin-agua/"
   },
   {
     "tipo": "orden_publico",
@@ -220,8 +168,8 @@
   {
     "tipo": "crisis_migratoria",
     "ubicacion": "Falcon",
-    "municipio": "Colina",
-    "parroquia": "Las Calderas",
+    "municipio": "Zamora",
+    "parroquia": null,
     "severidad": "sin_clasificar",
     "score": 4.5,
     "confirmado": false,
@@ -251,7 +199,7 @@
     "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
     "clave_dedup": "crisis_migratoria::Falcon::2026-07-07",
     "titulo": "Reporte de personas desplazadas",
-    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Las Calderas, Municipio Colina, Falcon\n🕒 Hecho reportado: 29/07/2026, 12:17 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 3 (score 4.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22"
+    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Zamora, Falcon\n🕒 Hecho reportado: 29/07/2026, 12:17 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 3 (score 4.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22"
   },
   {
     "tipo": "crisis_migratoria",

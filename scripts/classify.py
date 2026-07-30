@@ -54,10 +54,16 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # totalmente controlada en Venezuela" (una nota que desmiente rumores,
     # sin casos nuevos confirmados por MinSalud) disparaba tipo=salud_publica
     # con severidad critica solo por mencionar fallecidos historicos.
+    # Caso real (30-07-2026): un articulo sobre voluntarios armando kits de
+    # higiene para "prevenir enfermedades" en zonas ya afectadas (una nota
+    # de ayuda humanitaria en curso, sin ningun caso/brote real) disparaba
+    # tipo=salud_publica solo por la palabra "enfermedades" en una frase
+    # preventiva -- ninguna enfermedad se esta reportando en absoluto.
     "salud_publica": ["totalmente controlada", "enfermedad controlada",
                        "no existen registros confirmados",
                        "sin registros confirmados", "brote descartado",
-                       "descartado el brote", "bajo control total"],
+                       "descartado el brote", "bajo control total",
+                       "prevenir enfermedades", "prevenir la propagacion"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -97,6 +103,28 @@ _CORRECCION_EPICENTRO_RETROSPECTIVA = [
 
 def _es_correccion_epicentro_retrospectiva(texto_norm):
     return any(_contiene_palabra_clave(texto_norm, frase) for frase in _CORRECCION_EPICENTRO_RETROSPECTIVA)
+
+
+# A diferencia del boletin de epicentro (especifico de sismo), un articulo
+# de "reportaje/feature" sobre una crisis cronica YA CONOCIDA, enmarcada
+# explicitamente como algo que la gente "aprendio a vivir" o esperar
+# durante meses/anos, tampoco describe un hecho nuevo -- sin importar el
+# tipo de emergencia de fondo. Es una señal decisiva, igual que la de
+# epicentro: no se anula por evidencia fuerte, porque esa evidencia (si la
+# hay) describe la crisis original que el reportaje resume, no una
+# novedad de hoy. Caso real (30-07-2026): "Cinco meses de espera: asi
+# aprendieron los cumaneses a vivir sin agua" -- un reportaje sobre una
+# averia de 5 meses (sistema Turimiquire), sin ningun desarrollo nuevo el
+# dia de publicacion, generaba una alerta de "Falla de agua" como si el
+# corte hubiera empezado esa manana.
+_ARTICULO_RETROSPECTIVO_LARGA_DURACION = [
+    "meses de espera", "años de espera", "anos de espera",
+    "asi aprendieron", "así aprendieron", "aprendieron a vivir",
+]
+
+
+def _es_articulo_retrospectivo_larga_duracion(texto_norm):
+    return any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION)
 
 
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad
@@ -636,6 +664,11 @@ def detectar_tipo(texto, ventana=None):
     # proximidad) de alguno de los estados, sin que eso lo vuelva un sismo
     # nuevo para ese estado.
     texto_completo_norm = _normalizar(texto)
+    # Igual que la correccion de epicentro, pero valida para CUALQUIER tipo
+    # (no es especifica de sismo): un reportaje retrospectivo de larga
+    # duracion no es un hecho nuevo sin importar la categoria.
+    if _es_articulo_retrospectivo_larga_duracion(texto_completo_norm):
+        return []
     tipos_encontrados = []
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:

@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-29T23:26:19.543946+00:00",
+  "actualizado": "2026-07-30T03:33:46.660745+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-29T17:55:40+00:00"
   },
-  "total_eventos": 25,
+  "total_eventos": 23,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
@@ -12,8 +12,7 @@
     "deslizamiento": 2,
     "colapso_estructural": 1,
     "orden_publico": 3,
-    "infraestructura_agua": 1,
-    "salud_publica": 2,
+    "salud_publica": 1,
     "crisis_migratoria": 3,
     "incendio": 1
   },
@@ -37,11 +36,6 @@
       "estado": "Barinas",
       "total": 2,
       "confirmados": 1
-    },
-    {
-      "estado": "Sucre",
-      "total": 2,
-      "confirmados": 0
     },
     {
       "estado": "Anzoategui",
@@ -69,17 +63,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Sucre",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 1,
       "confirmados": 0
     },
     {
       "estado": "Apure",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -115,8 +109,7 @@
       "orden_publico": 1
     },
     "Sucre": {
-      "inundacion": 1,
-      "infraestructura_agua": 1
+      "inundacion": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
@@ -130,15 +123,12 @@
     },
     "Apure": {
       "crisis_migratoria": 1
-    },
-    "La Guaira": {
-      "salud_publica": 1
     }
   },
   "por_severidad": {
     "alto": 3,
     "critico": 2,
-    "sin_clasificar": 20
+    "sin_clasificar": 18
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -159,11 +149,8 @@
     "orden_publico": {
       "2026-07": 3
     },
-    "infraestructura_agua": {
-      "2026-07": 1
-    },
     "salud_publica": {
-      "2026-07": 2
+      "2026-07": 1
     },
     "crisis_migratoria": {
       "2026-07": 3
