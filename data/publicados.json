@@ -113,12 +113,6 @@
     "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
     "fecha_evento_temprana": "2026-07-29T17:06:27+00:00"
   },
-  "orden_publico::Lara::2026-07-31": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-31T16:27:53.734952+00:00",
-    "fecha_evento_temprana": "2026-07-31T13:51:59+00:00"
-  },
   "incendio::Nueva Esparta::2026-07-31": {
     "severidad": "sin_clasificar",
     "confirmado": true,
