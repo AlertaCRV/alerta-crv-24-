@@ -12,11 +12,19 @@ DIAS_RETENCION = 3
 # medios que cubren la misma inundacion con 6+ horas de diferencia y que,
 # por caer en corridas distintas, nunca se agrupan juntos en verify.py.
 # Excluye sismo (tiene su propio mecanismo de correlacion cruzada, ver
-# _mismo_sismo_ya_publicado) y orden_publico (durante disturbios, el mismo
+# _mismo_sismo_ya_publicado), orden_publico (durante disturbios, el mismo
 # tipo+ubicacion puede repetirse genuinamente dia a dia, y agruparlos
-# ocultaria eventos reales distintos).
+# ocultaria eventos reales distintos) e incendio (mismo problema: un estado
+# populoso como Distrito Capital puede tener varios incendios/explosiones
+# genuinamente distintos en menos de 36 horas). Caso real (30-07-2026): una
+# explosion de gas en la avenida Nueva Granada (29-07, 17:06, "alto",
+# dos heridos, 3 fuentes ya corroboradas) reutilizo su clave para un
+# incendio COMPLETAMENTE DISTINTO al dia siguiente (una libreria del CCCT,
+# 30-07, 14:46) solo por compartir tipo+ubicacion dentro de la ventana de
+# 36h -- la alerta original, ya validada y de mayor severidad, quedo
+# silenciosamente sobrescrita y desaparecio del sitio publico.
 VENTANA_HORAS_MISMO_EVENTO = 36
-TIPOS_SIN_VENTANA_MISMO_EVENTO = {"sismo", "orden_publico"}
+TIPOS_SIN_VENTANA_MISMO_EVENTO = {"sismo", "orden_publico", "incendio"}
 
 
 def _fecha_dia_dedup(evento):

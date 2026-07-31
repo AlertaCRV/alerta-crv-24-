@@ -1,4 +1,22 @@
 {
+  "inundacion::Distrito Capital::2026-07-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:19:06.372912+00:00",
+    "fecha_evento_temprana": "2026-07-25T23:53:26+00:00"
+  },
+  "inundacion::Zulia::2026-07-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:42.513266+00:00",
+    "fecha_evento_temprana": "2026-07-27T12:26:20+00:00"
+  },
+  "deslizamiento::Barinas::2026-07-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-27T22:18:35.809254+00:00",
+    "fecha_evento_temprana": "2026-07-26T18:48:23+00:00"
+  },
   "orden_publico::Distrito Capital::2026-07-28": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -29,12 +47,6 @@
     "fecha_deteccion": "2026-07-29T20:18:26.152626+00:00",
     "fecha_evento_temprana": "2026-07-29T13:17:11+00:00"
   },
-  "orden_publico::Distrito Capital::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:23:10.796065+00:00",
-    "fecha_evento_temprana": "2026-07-29T12:55:18+00:00"
-  },
   "salud_publica::Lara::2026-07-29": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -59,12 +71,6 @@
     "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
     "fecha_evento_temprana": "2026-07-29T16:22:17+00:00"
   },
-  "incendio::Distrito Capital::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-31T10:03:55.802060+00:00",
-    "fecha_evento_temprana": "2026-07-31T03:05:54+00:00"
-  },
   "crisis_migratoria::Anzoategui::2026-07-29": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -84,7 +90,7 @@
     "fecha_evento_temprana": "2026-07-30T14:28:53+00:00"
   },
   "orden_publico::Lara::2026-07-30": {
-    "severidad": "sin_clasificar",
+    "severidad": "critico",
     "confirmado": false,
     "fecha_deteccion": "2026-07-30T15:35:58.379580+00:00",
     "fecha_evento_temprana": "2026-07-30T14:15:51+00:00"
@@ -107,52 +113,22 @@
     "fecha_deteccion": "2026-07-30T15:36:12.071376+00:00",
     "fecha_evento_temprana": "2026-07-30T13:45:28+00:00"
   },
-  "incendio::Bolivar::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T15:36:18.814104+00:00",
-    "fecha_evento_temprana": "2026-07-30T12:18:24+00:00"
-  },
   "infraestructura_electrica::Monagas::2026-07-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-07-30T20:25:02.477396+00:00",
     "fecha_evento_temprana": "2026-07-30T20:04:41+00:00"
   },
-  "salud_publica::Apure::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T20:25:19.782134+00:00",
-    "fecha_evento_temprana": "2026-07-30T16:40:02+00:00"
+  "incendio::Distrito Capital::2026-07-30": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-30T20:24:52.237708+00:00",
+    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00"
   },
-  "orden_publico::Distrito Capital::2026-07-30": {
-    "severidad": "sin_clasificar",
+  "incendio::Distrito Capital::2026-07-29": {
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-07-30T23:48:18.692006+00:00",
-    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00"
-  },
-  "orden_publico::La Guaira::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T23:48:22.080123+00:00",
-    "fecha_evento_temprana": "2026-07-30T21:06:41+00:00"
-  },
-  "orden_publico::Tachira::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T23:48:28.919682+00:00",
-    "fecha_evento_temprana": "2026-07-30T21:32:01+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T23:48:39.196341+00:00",
-    "fecha_evento_temprana": "2026-07-30T20:50:15+00:00"
-  },
-  "orden_publico::Anzoategui::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T23:48:49.348402+00:00",
-    "fecha_evento_temprana": "2026-07-30T23:13:45+00:00"
+    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
+    "fecha_evento_temprana": "2026-07-29T17:06:27+00:00"
   }
 }

@@ -14,8 +14,16 @@ _PARROQUIA_RE = re.compile(r"parroquia\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?
 VENTANA_PROXIMIDAD_PALABRAS = 35
 
 LISTA_NEGRA_POR_ESTADO = {
-    "Bolivar": ["simon bolivar", "plaza bolivar", "avenida bolivar", "aeropuerto", "moneda",
-                "billete de", "banco central", "libertador simon bolivar"],
+    # "avenida bolivar" (singular) no cubria el plural "avenidas Bolivar y
+    # Raul Leoni" -- caso real (30-07-2026): un incendio en un centro
+    # comercial de Porlamar, estado Nueva Esparta, en la interseccion de
+    # las "avenidas Bolivar y Raul Leoni", se publico como alerta del
+    # estado Bolivar (duplicado del mismo incendio, ya correctamente
+    # publicado como Nueva Esparta via otra fuente que si mencionaba
+    # "Margarita").
+    "Bolivar": ["simon bolivar", "plaza bolivar", "avenida bolivar", "avenidas bolivar",
+                "aeropuerto", "moneda", "billete de", "banco central",
+                "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
 }
@@ -64,6 +72,15 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
                        "sin registros confirmados", "brote descartado",
                        "descartado el brote", "bajo control total",
                        "prevenir enfermedades", "prevenir la propagacion"],
+    # Caso real (30-07-2026): "Venezuela entrego nota de protesta a Iran por
+    # declaraciones de su canciller" -- una nota de protesta DIPLOMATICA
+    # entre gobiernos, sin ninguna relacion con disturbios/orden publico en
+    # Venezuela, disparaba tipo=orden_publico solo por la palabra
+    # "protesta". Mismo patron que "manifestaciones artisticas" (por eso
+    # esa palabra ya se excluye sola de los keywords de tipo): una palabra
+    # ambigua entre el sentido de disturbio civil y otro uso idiomatico
+    # totalmente distinto.
+    "orden_publico": ["nota de protesta", "notas de protesta"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -75,6 +92,12 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
     "deslizamiento": ["heridos", "fallecidos", "desaparecidos",
                        "viviendas colapsadas", "viviendas destruidas",
                        "evacuados", "evacuadas", "familias afectadas"],
+    # Si ademas de la nota de protesta diplomatica el articulo describe
+    # disturbios reales (poco comun, pero posible en una cobertura mixta),
+    # esta evidencia evita descartar el tipo.
+    "orden_publico": ["heridos", "detenidos", "saqueo", "saqueos",
+                       "disturbios", "tiroteo", "tiroteos",
+                       "enfrentamiento", "enfrentamientos"],
     "salud_publica": ["brote confirmado", "casos confirmados",
                        "declaro emergencia sanitaria",
                        "declaró emergencia sanitaria", "cuarentena",
@@ -125,6 +148,40 @@ _ARTICULO_RETROSPECTIVO_LARGA_DURACION = [
 
 def _es_articulo_retrospectivo_larga_duracion(texto_norm):
     return any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION)
+
+
+# Caso real (30-07-2026): "Aumentan los casos de enfermedades diarreicas en
+# Venezuela" -- un boletin epidemiologico NACIONAL que compara la tasa de
+# contagio de TODOS los estados contra la media nacional (una tabla, no el
+# reporte de un evento en un estado concreto) generaba una alerta de
+# salud_publica en el estado que por casualidad quedaba mas cerca de la
+# palabra clave dentro de la ventana de proximidad (el "primero por debajo
+# de la media" en el listado, sin relacion real con ningun hecho en ese
+# estado). El propio articulo cita al Ministerio de Salud descartando
+# explicitamente cualquier alarma sanitaria por el repunte, y lo califica
+# de normal para la temporada de lluvias. A diferencia de
+# _CONTEXTO_CONFLICTIVO_POR_TIPO (que solo mira la ventana de proximidad a
+# la ubicacion), esta señal -- el articulo entero es una tabla estadistica
+# sin alarma, no una emergencia localizada -- es una propiedad del articulo
+# completo, no de la mencion puntual de un estado en particular.
+_MARCADORES_BOLETIN_ESTADISTICO_SALUD = [
+    "boletin epidemiologico", "media nacional",
+    "por cada 100.000 habitantes", "por cada 100 mil habitantes",
+]
+_MARCADORES_SIN_ALARMA_SANITARIA = [
+    "descarta alguna alarma sanitaria", "descarta cualquier alarma sanitaria",
+    "descarta alarma sanitaria", "sin alarma sanitaria",
+    "no representa alarma sanitaria", "no genera alarma sanitaria",
+]
+
+
+def _es_boletin_estadistico_salud_sin_alarma(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_BOLETIN_ESTADISTICO_SALUD):
+        return False
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_SIN_ALARMA_SANITARIA):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("salud_publica", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad
@@ -674,6 +731,8 @@ def detectar_tipo(texto, ventana=None):
         for palabra in palabras:
             if _contiene_palabra_clave(fuente_norm, palabra):
                 if tipo == "sismo" and _es_correccion_epicentro_retrospectiva(texto_completo_norm):
+                    break
+                if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)

@@ -1,41 +1,31 @@
 {
-  "actualizado": "2026-07-31T10:04:16.808502+00:00",
+  "actualizado": "2026-07-30T23:28:34.107342+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-31T03:05:54+00:00"
+    "hasta": "2026-07-30T20:04:41+00:00"
   },
-  "total_eventos": 40,
+  "total_eventos": 31,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
-    "infraestructura_electrica": 7,
+    "infraestructura_electrica": 6,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 10,
-    "salud_publica": 2,
+    "orden_publico": 5,
+    "salud_publica": 1,
     "crisis_migratoria": 3,
-    "incendio": 6
+    "incendio": 4
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 9,
+      "total": 6,
       "confirmados": 2
     },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 4,
-      "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
-      "total": 4,
-      "confirmados": 1
     },
     {
       "estado": "Lara",
@@ -53,12 +43,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
-      "total": 2,
-      "confirmados": 0
+      "estado": "Bolivar",
+      "total": 3,
+      "confirmados": 1
     },
     {
-      "estado": "Tachira",
+      "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
     },
@@ -83,12 +73,17 @@
       "confirmados": 0
     },
     {
-      "estado": "Nueva Esparta",
+      "estado": "Apure",
       "total": 1,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Tachira",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Nueva Esparta",
       "total": 1,
       "confirmados": 0
     }
@@ -111,8 +106,8 @@
     "Distrito Capital": {
       "deslizamiento": 1,
       "inundacion": 1,
-      "orden_publico": 3,
-      "incendio": 4
+      "orden_publico": 1,
+      "incendio": 3
     },
     "Trujillo": {
       "inundacion": 1
@@ -130,37 +125,30 @@
       "inundacion": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 2,
-      "crisis_migratoria": 1,
-      "orden_publico": 1
+      "infraestructura_electrica": 1,
+      "crisis_migratoria": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 2,
-      "orden_publico": 1,
-      "incendio": 1
+      "orden_publico": 1
     },
     "Falcon": {
       "crisis_migratoria": 1
     },
     "Apure": {
-      "crisis_migratoria": 1,
-      "salud_publica": 1
+      "crisis_migratoria": 1
     },
     "Tachira": {
-      "deslizamiento": 1,
-      "orden_publico": 1
+      "deslizamiento": 1
     },
     "Nueva Esparta": {
       "incendio": 1
-    },
-    "La Guaira": {
-      "orden_publico": 1
     }
   },
   "por_severidad": {
-    "alto": 3,
-    "critico": 2,
-    "sin_clasificar": 35
+    "alto": 5,
+    "critico": 3,
+    "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -170,7 +158,7 @@
       "2026-07": 6
     },
     "infraestructura_electrica": {
-      "2026-07": 7
+      "2026-07": 6
     },
     "deslizamiento": {
       "2026-07": 3
@@ -179,16 +167,16 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 10
+      "2026-07": 5
     },
     "salud_publica": {
-      "2026-07": 2
+      "2026-07": 1
     },
     "crisis_migratoria": {
       "2026-07": 3
     },
     "incendio": {
-      "2026-07": 6
+      "2026-07": 4
     }
   }
 }
