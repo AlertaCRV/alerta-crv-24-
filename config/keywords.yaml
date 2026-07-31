@@ -338,6 +338,15 @@ severidad:
     - colapso total
     - emergencia nacional
     - emergencia regional
+    - asesinado
+    - asesinada
+    - asesinados
+    - asesinadas
+    - asesinato
+    - asesinatos
+    - herida mortal
+    - heridas mortales
+    - muerte violenta
   alto:
     - heridos
     - lesionados
@@ -350,6 +359,12 @@ severidad:
     - danos severos
     - daños severos
     - alerta roja
+    - inhalar monoxido de carbono
+    - inhalar monóxido de carbono
+    - inhalacion de monoxido de carbono
+    - inhalación de monóxido de carbono
+    - intoxicados por humo
+    - intoxicadas por humo
   medio:
     - danos materiales
     - daños materiales
