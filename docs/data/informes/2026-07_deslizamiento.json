@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-07-30T08:01:39.285183+00:00",
-  "actualizado_hasta": "2026-07-27T22:18:35.809254+00:00",
-  "total_eventos": 2,
+  "generado": "2026-07-31T10:04:29.935056+00:00",
+  "actualizado_hasta": "2026-07-30T15:35:54.958924+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-07, se registraron 2 eventos de deslizamiento/derrumbe, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de esta categoría. Uno de los eventos destacados fue el deslizamiento/derrumbe en el Distrito Capital, reportado por (La Prensa de Monagas), que tuvo una severidad alta. Otro evento significativo fue el deslizamiento de tierra que bloqueó el paso en la carretera Barinas-Mérida, específicamente en el sector La Soledad, parroquia Altamira de Cáceres, municipio Bolívar, Barinas, como lo informaron (Diario La Nacion (Tachira)) y (La Patilla). Este deslizamiento fue causado por las intensas lluvias recientes y dejó incomunicadas las vías que conectan a los estados Barinas y Mérida, según (Diario La Nacion (Tachira)) y (Primicia (Bolivar)). Las autoridades locales trabajaron para despejar la vía, y finalmente, se restableció parcialmente el paso entre Mérida y Barinas, como se informó en (Efecto Cocuyo - General) y (La Patilla). La situación fue monitoreada por organismos de atención, con el objetivo de despejar el tramo de la Local 001 y restablecer el paso vehicular en el menor tiempo posible, según (Reporteros de Merida) y (Primicia (Bolivar)).",
+  "narrativa": "En el período de 2026-07, se registraron 3 eventos de deslizamiento/derrumbe en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de esta categoría. Uno de los eventos destacados fue el deslizamiento/derrumbe en el Distrito Capital, reportado por (La Prensa de Monagas), que tuvo una severidad alta. Además, se registraron deslizamientos de tierra en la carretera Barinas-Mérida, específicamente en el sector La Soledad, parroquia Altamira de Cáceres, municipio Bolívar, Barinas, que dejaron incomunicadas las vías que conectan a los estados Barinas y Mérida, según informaron (Diario La Nacion (Tachira)) y (La Patilla). Estos deslizamientos fueron causados por las intensas lluvias recientes y provocaron la obstrucción del paso vehicular en la Local 2, como se menciona en (Diario La Nacion (Tachira)) y (La Patilla). Las autoridades locales trabajaron para despejar la vía y restablecer el paso vehicular, logrando reabrir parcialmente el paso entre Mérida y Barinas, según (Efecto Cocuyo - General) y (La Patilla). Otro evento significativo fue el deslizamiento de terreno en el municipio Cárdenas del estado Táchira, que dejó al menos 1.300 familias incomunicadas y varias damnificadas, como se informa en (La Patilla).",
   "fuentes": [
     {
       "nombre": "La Prensa de Monagas",
@@ -36,6 +36,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/30/alerta-en-tachira-al-menos-1-300-familias-incomunicadas-y-varias-damnificadas-deja-deslizamiento-de-terreno/"
     },
     {
       "nombre": "Primicia (Bolivar)",

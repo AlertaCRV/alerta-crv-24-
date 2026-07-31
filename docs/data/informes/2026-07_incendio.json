@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-07-30T08:01:47.691153+00:00",
-  "actualizado_hasta": "2026-07-29T18:42:42.510666+00:00",
-  "total_eventos": 1,
+  "generado": "2026-07-31T10:04:38.612159+00:00",
+  "actualizado_hasta": "2026-07-31T10:03:55.802060+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 1
+    "actual": 6
   },
-  "narrativa": "En el período de 2026-07, se registró un evento de incendio en la categoría de emergencias, específicamente en el Distrito Capital, como se informó en (La Prensa de Lara). Este evento tuvo una severidad alta y se caracterizó por daños materiales y heridos. En comparación con el período anterior (2026-06), hubo 0 eventos registrados, lo que contrasta con el evento registrado en este período. El incidente en cuestión involucró una fuga de gas que provocó una explosión en un local de comida ubicado en la avenida Nueva Granada, vía El Cementerio, en Caracas, dejando dos personas heridas, según se reportó en (La Prensa de Lara) y (Noticias de Aqui). Otros medios, como (Primicia), también informaron sobre la deflagración de bombonas de gas en Caracas, resultando en heridos y daños estructurales en locales comerciales de la parroquia San Pedro. En resumen, el evento de incendio en el Distrito Capital, específicamente el incidente en la avenida Nueva Granada, es el foco de atención en este período, con un total de un evento registrado en comparación con el período anterior.",
+  "narrativa": "En el período de julio de 2026, se registraron 6 eventos de incendio en Venezuela, lo que contrasta con el período anterior, donde no se reportaron eventos de este tipo (La Prensa de Lara). Uno de los eventos más destacados fue el incendio en el Distrito Capital, que tuvo una severidad alta (La Prensa de Lara). En Caracas, una fuga de gas provocó una explosión en un local de comida, dejando dos heridos (La Prensa de Lara, Noticias de Aqui). Otro incidente ocurrió en la parroquia San Pedro, donde la deflagración de bombonas de gas dejó dos personas lesionadas y daños estructurales en dos locales comerciales (Primicia). En el Centro Comercial Ciudad Tamanaco (CCCT), ocho personas resultaron afectadas por inhalación de humo debido a un incendio (El Carabobeno, La Verdad). Además, se reportaron incendios en la Isla de Margarita, específicamente en el centro comercial Los Cedros, donde se consumieron tres tiendas (El Periodico de Monagas, La Prensa de Monagas, Noticias de Aqui). Estos eventos destacan la importancia de la prevención y el manejo adecuado de situaciones de emergencia para minimizar daños y proteger la vida de las personas.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -24,6 +24,34 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/ocho-personas-resultaron-afectadas-por-inhalacion-de-humo-en-incendio-en-el-ccct-%e2%86%97/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-en-centro-comercial-de-la-isla-de-margarita/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/voraz-incendio-consume-reconocido-centro-comercial-en-la-isla-de-margarita-video/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/controlan-con-exito-incendio-registrado-en-un-local-comercial-del-ccct-de-caracas/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/reportan-5-personas-afectadas-tras-el-incendio-en-una-libreria-del-ccct/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/30/voraz-incendio-consumio-tres-tiendas-en-el-centro-comercial-los-cedros-de-porlamar/"
     }
   ]
 }

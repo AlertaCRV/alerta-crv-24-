@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-07-30T08:01:43.471235+00:00",
-  "actualizado_hasta": "2026-07-30T08:00:59.369377+00:00",
-  "total_eventos": 24,
+  "generado": "2026-07-31T10:04:34.325564+00:00",
+  "actualizado_hasta": "2026-07-31T10:03:55.802060+00:00",
+  "total_eventos": 40,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 24
+    "actual": 40
   },
-  "narrativa": "En el período de 2026-07, se registraron un total de 24 eventos de emergencia en Venezuela, lo que contrasta con los 0 eventos registrados en el período anterior (2026-06). Entre los eventos más destacados se encuentran la tormenta eléctrica en Carabobo (Turimiquire), la inundación en Lara (Noticia al Dia), el deslizamiento/derrumbe en Distrito Capital (La Prensa de Monagas) y el incendio en Distrito Capital (La Prensa de Lara). En Caracas, una fuga de gas provocó una explosión que dejó dos heridos (La Prensa de Lara, Noticias de Aqui, Primicia). En el estado Lara, una niña murió ahogada tras la crecida repentina del río La Miel (La Prensa de Monagas, Noticia al Dia). El paso de la Onda Tropical N.º 30 causó anegaciones, derrumbes y lesionados en Caracas y varios estados (La Prensa de Monagas). En el estado Trujillo, las intensas lluvias causaron deslizamientos y desbordamiento de quebradas en Boconó (Diario El Tiempo). En el estado Zulia, las torrenciales lluvias y apagones azotaron la región por el paso de la Onda Tropical N.º 30 (Diario La Nacion). Un deslizamiento de tierra bloqueó el paso en la carretera Barinas-Mérida (Diario La Nacion).",
+  "narrativa": "En el período de 2026-07, se registraron un total de 40 eventos, lo que contrasta significativamente con el período anterior (2026-06), en el que no se reportaron eventos de este tipo. Entre los eventos más destacados se encuentra la tormenta eléctrica en Carabobo, que tuvo una severidad alta (Turimiquire), y la inundación en Lara, catalogada como crítica (Noticia al Dia). Además, se reportó un deslizamiento/derrumbe en el Distrito Capital con severidad alta (La Prensa de Monagas), y un incendio en el mismo Distrito Capital, también con severidad alta (La Prensa de Lara). En Caracas, una fuga de gas provocó una explosión, dejando dos heridos y daños materiales (La Prensa de Lara, Noticias de Aqui, Primicia). La crecida repentina del río La Miel en el estado Lara resultó en la muerte de una niña (La Prensa de Monagas, Noticia al Dia). El paso de la Onda Tropical N.º 30 causó anegaciones, derrumbes y lesionados en Caracas y varios estados (La Prensa de Monagas). Las intensas lluvias también provocaron deslizamientos y desbordamiento de quebradas en Boconó (Diario El Tiempo), y torrenciales lluvias junto con apagones afectaron al Zulia (Diario La Nacion). Un deslizamiento de tierra bloqueó el paso en la carretera Barinas-Mérida (Diario La Nacion), y se reportaron fallas eléctricas en viviendas de El Palotal (Diario La Nacion).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -62,12 +62,20 @@
       "link": "https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
     },
     {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/jubilados-de-cantv-protestan-y-exigen-pago-completo-de-beneficios/"
+    },
+    {
       "nombre": "Efecto Cocuyo - General",
       "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/"
     },
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/ocho-personas-resultaron-afectadas-por-inhalacion-de-humo-en-incendio-en-el-ccct-%e2%86%97/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -90,12 +98,20 @@
       "link": "https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-en-centro-comercial-de-la-isla-de-margarita/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/"
     },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/bolivar-hombres-armados-disparan-para-disolver-protesta-por-apagones-en-guasipati/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -116,6 +132,10 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/venezuela-entrego-nota-de-protesta-a-iran-por-declaraciones-de-su-canciller/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/fallas-electricas-tambien-dejan-sin-agua-a-familias-de-el-tigre/"
     },
     {
       "nombre": "La Manana (Falcon)",
@@ -144,30 +164,6 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/gobernacion-mantiene-despliegue-especial-tras-la-tormenta/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/oposicion-marcha-en-caracas-exigiendo-elecciones-y-el-regreso-de-machado/"
     }
   ]
 }

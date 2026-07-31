@@ -61,9 +61,9 @@
   },
   "incendio::Distrito Capital::2026-07-29": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-30T20:24:52.237708+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00"
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-31T10:03:55.802060+00:00",
+    "fecha_evento_temprana": "2026-07-31T03:05:54+00:00"
   },
   "crisis_migratoria::Anzoategui::2026-07-29": {
     "severidad": "sin_clasificar",

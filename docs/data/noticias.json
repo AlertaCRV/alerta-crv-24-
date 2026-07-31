@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "La Vega",
+    "severidad": "sin_clasificar",
+    "score": 0.6,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/ocho-personas-resultaron-afectadas-por-inhalacion-de-humo-en-incendio-en-el-ccct-%e2%86%97/",
+        "fecha": "2026-07-31T03:05:54+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-07-31T03:05:54+00:00",
+    "fecha_evento_temprana": "2026-07-31T03:05:54+00:00",
+    "fecha_deteccion": "2026-07-31T10:03:55.802060+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
+    "titulo": "Incendio en Parroquia La Vega, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Incendio en Parroquia La Vega, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Vega, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 30/07/2026, 11:05 p.m.\n🔎 Detectado por el sistema: 31/07/2026, 6:03 a.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/ocho-personas-resultaron-afectadas-por-inhalacion-de-humo-en-incendio-en-el-ccct-%e2%86%97/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -128,42 +154,6 @@
     "clave_dedup": "orden_publico::Anzoategui::2026-07-30",
     "titulo": "Orden público en Parroquia Anaco, Municipio Anaco, Anzoategui",
     "texto": "📌 Orden público en Parroquia Anaco, Municipio Anaco, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Anaco, Municipio Anaco, Anzoategui\n🕒 Hecho reportado: 30/07/2026, 7:13 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 7:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/30/detienen-a-un-hombre-acusado-de-arrollar-a-su-pareja-tras-una-discusion-en-anaco/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.8,
-    "confirmado": true,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/reportan-5-personas-afectadas-tras-el-incendio-en-una-libreria-del-ccct/",
-        "fecha": "2026-07-30T17:24:19+00:00"
-      },
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/controlan-con-exito-incendio-registrado-en-un-local-comercial-del-ccct-de-caracas/",
-        "fecha": "2026-07-30T19:07:44+00:00"
-      },
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/",
-        "fecha": "2026-07-30T14:46:56+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-30T19:07:44+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00",
-    "fecha_deteccion": "2026-07-30T20:24:52.237708+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 30/07/2026, 3:07 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 4:24 p.m.\n📊 Fuentes independientes: 3 (score 1.8)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/reportan-5-personas-afectadas-tras-el-incendio-en-una-libreria-del-ccct/\n  • La Prensa de Monagas: https://laprensademonagas.com/controlan-con-exito-incendio-registrado-en-un-local-comercial-del-ccct-de-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/"
   },
   {
     "tipo": "infraestructura_electrica",
