@@ -1,27 +1,22 @@
 {
-  "actualizado": "2026-07-31T20:47:07.959066+00:00",
+  "actualizado": "2026-07-31T23:22:40.258402+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-31T19:33:36+00:00"
   },
-  "total_eventos": 35,
+  "total_eventos": 31,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
     "infraestructura_electrica": 6,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 7,
+    "orden_publico": 3,
     "salud_publica": 1,
     "crisis_migratoria": 3,
     "incendio": 5
   },
   "ranking_estados": [
-    {
-      "estado": "Lara",
-      "total": 6,
-      "confirmados": 1
-    },
     {
       "estado": "Distrito Capital",
       "total": 6,
@@ -33,19 +28,24 @@
       "confirmados": 3
     },
     {
+      "estado": "Lara",
+      "total": 3,
+      "confirmados": 1
+    },
+    {
       "estado": "Barinas",
       "total": 3,
       "confirmados": 1
     },
     {
-      "estado": "Monagas",
-      "total": 3,
-      "confirmados": 0
-    },
-    {
       "estado": "Bolivar",
       "total": 3,
       "confirmados": 1
+    },
+    {
+      "estado": "Monagas",
+      "total": 2,
+      "confirmados": 0
     },
     {
       "estado": "Anzoategui",
@@ -94,8 +94,7 @@
     },
     "Lara": {
       "inundacion": 2,
-      "salud_publica": 1,
-      "orden_publico": 3
+      "salud_publica": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -118,7 +117,7 @@
       "infraestructura_electrica": 1
     },
     "Monagas": {
-      "orden_publico": 2,
+      "orden_publico": 1,
       "infraestructura_electrica": 1
     },
     "Sucre": {
@@ -146,9 +145,9 @@
     }
   },
   "por_severidad": {
-    "alto": 5,
-    "critico": 5,
-    "sin_clasificar": 25
+    "alto": 6,
+    "critico": 2,
+    "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -167,7 +166,7 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 7
+      "2026-07": 3
     },
     "salud_publica": {
       "2026-07": 1

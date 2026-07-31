@@ -65,12 +65,6 @@
     "fecha_deteccion": "2026-07-30T15:35:54.958924+00:00",
     "fecha_evento_temprana": "2026-07-30T14:28:53+00:00"
   },
-  "orden_publico::Lara::2026-07-30": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T15:35:58.379580+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:15:51+00:00"
-  },
   "incendio::Nueva Esparta::2026-07-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -82,12 +76,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-30T15:36:08.635350+00:00",
     "fecha_evento_temprana": "2026-07-30T14:16:27+00:00"
-  },
-  "orden_publico::Monagas::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T15:36:12.071376+00:00",
-    "fecha_evento_temprana": "2026-07-30T13:45:28+00:00"
   },
   "infraestructura_electrica::Monagas::2026-07-30": {
     "severidad": "sin_clasificar",
@@ -118,11 +106,5 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-31T20:46:26.393169+00:00",
     "fecha_evento_temprana": "2026-07-31T19:33:36+00:00"
-  },
-  "orden_publico::Lara::2026-07-31": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-31T20:46:29.731701+00:00",
-    "fecha_evento_temprana": "2026-07-31T13:51:59+00:00"
   }
 }
