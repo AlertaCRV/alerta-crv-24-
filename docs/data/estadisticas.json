@@ -1,31 +1,31 @@
 {
-  "actualizado": "2026-07-31T16:28:32.838016+00:00",
+  "actualizado": "2026-07-31T20:47:07.959066+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-31T14:33:37+00:00"
+    "hasta": "2026-07-31T19:33:36+00:00"
   },
-  "total_eventos": 33,
+  "total_eventos": 35,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 6,
+    "inundacion": 7,
     "infraestructura_electrica": 6,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 6,
+    "orden_publico": 7,
     "salud_publica": 1,
     "crisis_migratoria": 3,
     "incendio": 5
   },
   "ranking_estados": [
     {
+      "estado": "Lara",
+      "total": 6,
+      "confirmados": 1
+    },
+    {
       "estado": "Distrito Capital",
       "total": 6,
       "confirmados": 2
-    },
-    {
-      "estado": "Lara",
-      "total": 4,
-      "confirmados": 1
     },
     {
       "estado": "Zulia",
@@ -93,9 +93,9 @@
       "tormenta_electrica": 1
     },
     "Lara": {
-      "inundacion": 1,
+      "inundacion": 2,
       "salud_publica": 1,
-      "orden_publico": 2
+      "orden_publico": 3
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -147,15 +147,15 @@
   },
   "por_severidad": {
     "alto": 5,
-    "critico": 4,
-    "sin_clasificar": 24
+    "critico": 5,
+    "sin_clasificar": 25
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2
     },
     "inundacion": {
-      "2026-07": 6
+      "2026-07": 7
     },
     "infraestructura_electrica": {
       "2026-07": 6
@@ -167,7 +167,7 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 6
+      "2026-07": 7
     },
     "salud_publica": {
       "2026-07": 1
