@@ -106,8 +106,15 @@ tipos:
     - protestas
     - saqueo
     - saqueos
-    - enfrentamiento
-    - enfrentamientos
+    # "enfrentamiento"/"enfrentamientos" sola se evita a proposito (31-07-2026):
+    # choca con dos usos idiomaticos frecuentes que no son disturbios civiles --
+    # una disputa personal ("murio durante un enfrentamiento que sostuvo con un
+    # vecino" por un pleito de tierras) y un operativo policial/militar
+    # ("se registraron enfrentamientos con presuntos implicados" durante una
+    # incautacion de droga). Se mantiene como evidencia fuerte en
+    # _EVIDENCIA_FUERTE_POR_TIPO (classify.py) para no perder el caso real de
+    # disturbios civiles genuinos que ademas la mencionen junto a otra palabra
+    # de esta lista.
     # "manifestacion"/"manifestaciones" sola se evita a proposito: choca con
     # el uso idiomatico frecuente de "manifestaciones artisticas/culturales"
     # (exposiciones, actos culturales), que no tiene nada que ver con orden
@@ -365,6 +372,16 @@ severidad:
     - inhalación de monóxido de carbono
     - intoxicados por humo
     - intoxicadas por humo
+    # Caso real (30-07-2026): "Al menos 1.300 familias incomunicadas y varias
+    # damnificadas deja deslizamiento de terreno" -- via principal destruida,
+    # miles de familias afectadas, se publico con severidad SIN CLASIFICAR
+    # porque ninguna palabra de esta lista cubria "damnificado/a" (termino
+    # estandar en la prensa venezolana para victimas de un desastre con daño
+    # material/desplazamiento, sin ambiguedad con otros usos idiomaticos).
+    - damnificado
+    - damnificada
+    - damnificados
+    - damnificadas
   medio:
     - danos materiales
     - daños materiales
