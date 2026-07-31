@@ -145,32 +145,6 @@
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Cárdenas, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Cárdenas, Tachira\n🕒 Hecho reportado: 30/07/2026, 10:28 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:35 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/30/alerta-en-tachira-al-menos-1-300-familias-incomunicadas-y-varias-damnificadas-deja-deslizamiento-de-terreno/"
   },
   {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/discusion-por-tierras-termina-con-un-sexagenario-asesinado-a-machetazos-en-lara/",
-        "fecha": "2026-07-30T14:15:51+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-30T14:15:51+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:15:51+00:00",
-    "fecha_deteccion": "2026-07-30T15:35:58.379580+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-07-30",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 30/07/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 30/07/2026, 11:35 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/discusion-por-tierras-termina-con-un-sexagenario-asesinado-a-machetazos-en-lara/"
-  },
-  {
     "tipo": "incendio",
     "ubicacion": "Nueva Esparta",
     "municipio": "Mariño",
