@@ -3,27 +3,51 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-07-30T08:02:29.503532+00:00",
-  "actualizado_hasta": "2026-07-29T16:23:10.796065+00:00",
-  "total_eventos": 3,
+  "generado": "2026-07-31T10:05:20.979741+00:00",
+  "actualizado_hasta": "2026-07-30T23:48:49.348402+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 3
+    "actual": 10
   },
-  "narrativa": "En el período de julio de 2026, se registraron 3 eventos relacionados con el orden público en Venezuela, lo que contrasta con el período anterior, junio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos fue la concentración de la oposición en la avenida Juncal de Maturín, estado Monagas, el 28 de julio, donde dirigentes de la oposición exigieron la atención a los reclamos del pueblo venezolano (El Periodico de Monagas). Otro evento fue la entrega de una nota de protesta por parte de la Cancillería de Venezuela al embajador de Irán en Caracas, debido a declaraciones del canciller iraní que comparaban la situación de su país con la de Venezuela (El Tiempo (Anzoategui)). Además, se llevó a cabo una marcha en Caracas, el 28 de julio, en la que los opositores exigieron elecciones y el regreso de María Corina Machado (La Verdad (Zulia)). Estos eventos destacan la actividad política y las demandas de la oposición en el país durante este período.",
+  "narrativa": "En el período de julio de 2026, se registraron 10 eventos relacionados con el orden público en Venezuela, en comparación con el período anterior, junio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos destacados fue la protesta de jubilados de Cantv en el estado Táchira, quienes exigieron el pago completo de sus beneficios (Diario La Nacion). En Maturín, dirigentes de la oposición se concentraron en la avenida Juncal para exigir la atención a los reclamos del pueblo venezolano (El Periodico de Monagas). Además, se llevó a cabo la demolición de la torre C de la Opppe 36 en Playa Grande, La Guaira, a pesar de la protesta de familiares de víctimas (El Pitazo). La Cancillería de Venezuela también entregó una nota de protesta a Irán por declaraciones de su canciller (El Tiempo). Otros eventos incluyeron la marcha de la oposición en Caracas exigiendo elecciones y el regreso de María Corina Machado (La Verdad), la detención de un hombre acusado de arrollar a su pareja en Anaco (Noticias de Aqui), y la incautación de más de 3 mil kilos de drogas en Monagas (Primicia).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/jubilados-de-cantv-protestan-y-exigen-pago-completo-de-beneficios/"
+    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/demuelen-la-torre-c-de-la-opppe-36-en-playa-grande-a-pesar-de-la-protesta-de-familiares-de-victimas/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/venezuela-entrego-nota-de-protesta-a-iran-por-declaraciones-de-su-canciller/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/discusion-por-tierras-termina-con-un-sexagenario-asesinado-a-machetazos-en-lara/"
+    },
+    {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/oposicion-marcha-en-caracas-exigiendo-elecciones-y-el-regreso-de-machado/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/30/detienen-a-un-hombre-acusado-de-arrollar-a-su-pareja-tras-una-discusion-en-anaco/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/guayana/regiones/continua-tranca-en-sur-del-estado-bolivar/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/incautan-mas-de-3-mil-kilos-de-drogas-en-monagas/"
     }
   ]
 }
