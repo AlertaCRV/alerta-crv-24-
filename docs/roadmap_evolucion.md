@@ -2968,3 +2968,228 @@ grave de este medio (como la de Lara) pese menos de lo que debería.
 aparecen más falsos positivos de `noticialdia.com` que no queden
 cubiertos por fixes de causa raíz en `classify.py`/`verify_ai.py`, ahí sí
 valdría la pena reconsiderar su peso con una muestra más grande.
+
+---
+
+## Auditoría diaria automática: 4 alertas erróneas y un bug de deduplicación que borraba una alerta ya validada (30-07-2026)
+
+Auditoría de rutina (autónoma, sin pedido del usuario) sobre las alertas
+publicadas en las últimas ~24-48 horas, comparando cada una contra el
+texto real de sus fuentes. Se encontraron 4 errores de clasificación y,
+al investigar uno de ellos a fondo, un bug de deduplicación en
+`state.py` con un efecto mucho más serio: pérdida silenciosa de una
+alerta ya publicada y validada.
+
+### 1. Boletín epidemiológico nacional generaba una alerta de salud pública en el estado equivocado
+
+"Aumentan los casos de enfermedades diarreicas en Venezuela" es un
+boletín epidemiológico del Ministerio de Salud que compara la tasa de
+contagio de **todos** los estados contra la media nacional -- una tabla,
+no el reporte de un evento en un estado concreto. El propio artículo cita
+al Ministerio de Salud descartando explícitamente cualquier alarma
+sanitaria por el repunte ("se descarta alguna alarma sanitaria... se
+entiende como algo normal durante la temporada de lluvias"). El sistema
+igual generó una alerta de `salud_publica` para **Apure** -- el estado
+que, por pura coincidencia del orden del listado ("el primero que aparece
+por debajo de la media nacional"), quedó más cerca de la palabra clave
+"enfermedades" dentro de la ventana de proximidad de 35 palabras. Ni
+Amazonas (la tasa más alta del país) ni ningún otro estado del listado
+generó alerta -- el "seleccionado" no tenía ninguna relación real con un
+evento en Apure.
+
+**Causa raíz**: la ventana de proximidad de `_CONTEXTO_CONFLICTIVO_POR_TIPO`
+(usada para los filtros de "Hantavirus"/"prevenir enfermedades" del
+29-07-2026) solo mira el fragmento cercano a la ubicación detectada -- la
+frase que descarta la alarma sanitaria estaba varios párrafos antes de
+"Apure" (después de la lista completa de 11 estados), fuera de esa
+ventana, así que nunca llegaba a evaluarse para ese estado en particular.
+
+**Corrección** (`scripts/classify.py`): nueva función
+`_es_boletin_estadistico_salud_sin_alarma()`, con el mismo patrón que el
+filtro de corrección de epicentro retrospectivo de sismo (decisiva,
+evaluada contra el **artículo completo**, no solo la ventana de un
+estado) -- porque la señal ("este artículo es una tabla estadística sin
+alarma, no una emergencia localizada") es una propiedad del artículo
+entero, no de la mención puntual de un estado. Requiere un marcador de
+boletín estadístico ("boletín epidemiológico", "media nacional", "por
+cada 100.000/100 mil habitantes") **y** un marcador explícito de "sin
+alarma" ("descarta alguna/cualquier alarma sanitaria", "sin alarma
+sanitaria"...); se anula si hay evidencia fuerte real (brote/casos
+confirmados, emergencia sanitaria declarada, cuarentena, hospitalizados),
+reusando la misma lista ya definida para `salud_publica`. Probado con el
+caso real (Apure ya no genera alerta) y un caso de control (el mismo tipo
+de boletín, pero con una emergencia sanitaria real y localizada
+declarada en un estado, sigue alertando).
+
+### 2. Nota de protesta diplomática se publicaba como orden público -- y sin pasar por la IA
+
+"Venezuela entregó nota de protesta a Irán por declaraciones de su
+canciller" es una noticia diplomática sin ninguna relación con disturbios
+civiles en Venezuela. Generó una alerta de `orden_publico` solo por la
+palabra "protesta", y además se publicó como `PASADO_POR_FALLA_TECNICA`
+(sin pasar por la verificación de IA) -- exactamente el patrón que la
+tarea de auditoría advierte revisar con más cuidado, y en efecto ahí
+apareció el error.
+
+**Causa raíz**: "protesta"/"protestas" es palabra clave de `orden_publico`
+sin ningún filtro de contexto -- el mismo tipo de ambigüedad ya conocida
+para "manifestaciones" (que por eso se excluye sola de los keywords desde
+antes), pero nunca aplicada a "nota de protesta".
+
+**Corrección** (`scripts/classify.py`): se agregó `orden_publico` a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO` (marcadores "nota de protesta"/"notas de
+protesta") con su propia `_EVIDENCIA_FUERTE_POR_TIPO` (heridos, detenidos,
+saqueo, disturbios, tiroteo, enfrentamiento) para no descartar un
+artículo que además de la nota diplomática describa disturbios reales.
+Probado con el caso real (ya no genera alerta) y un caso de control (nota
+de protesta diplomática + disturbios reales explícitos en un estado,
+sigue alertando).
+
+### 3. "avenidas Bolívar" (plural) esquivaba la lista negra y duplicaba un incendio real bajo el estado equivocado
+
+Un incendio en el centro comercial Los Cedros de Porlamar (estado
+**Nueva Esparta**, Isla de Margarita) ya se había publicado
+correctamente bajo `incendio::Nueva Esparta::2026-07-30` con 2 fuentes.
+Una tercera fuente sobre el mismo incendio, que solo menciona la
+ubicación como "la intersección de las **avenidas** Bolívar y Raúl
+Leoni en Porlamar", generó una alerta **duplicada** bajo
+`incendio::Bolivar::2026-07-30` -- el mismo incendio, publicado dos
+veces, una bajo el estado correcto y otra bajo un estado que no tiene
+nada que ver.
+
+**Causa raíz**: `LISTA_NEGRA_POR_ESTADO["Bolivar"]` ya tenía "avenida
+bolivar" (singular) para evitar justo este tipo de confusión -- pero es
+una comparación de substring literal, y "avenida" no es substring de
+"avenidas" (falta la "s" antes del espacio). El plural, muy común cuando
+se listan dos avenidas juntas ("avenidas X y Y"), se colaba sin que la
+lista negra lo detectara.
+
+**Corrección** (`scripts/classify.py`): se agregó "avenidas bolivar" a
+la lista negra. Probado con el caso real (ya no se detecta el estado
+Bolívar en ese texto) y un caso de control (un incendio real y genuino en
+el estado Bolívar, sin mención de la avenida, se sigue detectando
+normalmente).
+
+### 4. Homicidio con machete se publicaba con severidad SIN CLASIFICAR
+
+"Discusión por tierras termina con un sexagenario asesinado a
+machetazos en Lara" -- un artículo sobre un homicidio real ("le propinó
+una herida mortal a la altura del cuello") se publicó con severidad
+`sin_clasificar` en vez de `critico`.
+
+**Causa raíz**: la lista de palabras clave de severidad crítica
+(`config/keywords.yaml`) cubría "fallecidos/murió/perdió la vida" y
+similares, pero no "asesinado"/"asesinato" ni "herida mortal" -- formas
+muy comunes de reportar un homicidio en la prensa venezolana que nunca
+usan la palabra "fallecido" en sí.
+
+**Corrección** (`config/keywords.yaml`): se agregaron "asesinado(s/a/as)",
+"asesinato(s)", "herida(s) mortal(es)" y "muerte violenta" a la severidad
+`critico`. Probado con el caso real (ahora `critico`) y un caso de
+control sintético distinto (mismo patrón, sin ninguna otra palabra de
+severidad crítica presente).
+
+### 5. Intoxicación por monóxido de carbono en un incendio se publicaba con severidad SIN CLASIFICAR
+
+"Reportan 5 personas afectadas tras el incendio en una librería del
+CCCT": el texto (ya disponible al clasificador, no truncado) dice que
+las 5 personas "resultaron afectadas al inhalar monóxido de carbono" y
+"recibieron atención médica" -- un daño real por inhalación de humo, que
+se publicó igual con severidad `sin_clasificar` porque ninguna palabra
+de severidad alta ("heridos"/"lesionados"/"hospitalizados") cubre la
+inhalación de humo/monóxido de carbono, un patrón de lesión muy común y
+específico de incendios.
+
+**Corrección** (`config/keywords.yaml`): se agregaron "inhalar/inhalación
+de monóxido de carbono" e "intoxicados/intoxicadas por humo" a la
+severidad `alto`. Probado con el caso real (ahora `alto`) y un caso de
+control sintético en otro estado.
+
+### 6. Bug real y más serio, encontrado al investigar el caso 5: `state.py` fusionaba incendios distintos y borraba la alerta más antigua
+
+Al revisar por qué el incendio del CCCT (5 personas, 30-07) tenía la
+clave `incendio::Distrito Capital::2026-07-29` -- un día antes de su
+propia fecha -- se encontró que esa clave pertenecía originalmente a
+un evento **completamente distinto**: una explosión de una bombona de
+gas en la avenida Nueva Granada (29-07, 17:06, severidad `alto`, **dos
+heridos**, ya corroborada por 3 fuentes independientes, `score` 1.65).
+
+`state.py` tiene un mecanismo (`_resolver_clave`, `VENTANA_HORAS_MISMO_EVENTO
+= 36`) que reutiliza la clave de un evento ya publicado del mismo
+tipo+ubicación si cae dentro de 36 horas, para tratar coberturas de
+varios medios sobre el **mismo** hecho como una sola alerta actualizada
+en vez de una duplicada. El incendio del CCCT (30-07, 14:46 -- unas 21
+horas después de la explosión de gas) cayó dentro de esa ventana, y al
+compartir tipo (`incendio`) y ubicación (`Distrito Capital`) con la
+explosión de gas, el sistema lo trató como "el mismo evento, actualizado"
+y **sobrescribió silenciosamente** la alerta de la explosión de gas --
+que desapareció por completo del sitio público, reemplazada por un
+incendio no relacionado con menor severidad conocida en ese momento.
+
+Esto ya se había identificado como un problema real para otros tipos:
+`TIPOS_SIN_VENTANA_MISMO_EVENTO` ya excluía `sismo` y `orden_publico` de
+esta ventana de 36h, con el mismo razonamiento ("el mismo tipo+ubicación
+puede repetirse genuinamente día a día, y agruparlos ocultaría eventos
+reales distintos") -- pero `incendio` se quedó fuera de esa lista, y es
+exactamente el mismo patrón: un estado populoso como Distrito Capital
+puede tener varios incendios/explosiones genuinamente distintos en menos
+de 36 horas.
+
+**Corrección** (`scripts/state.py`): se agregó `incendio` a
+`TIPOS_SIN_VENTANA_MISMO_EVENTO`, siguiendo el mismo criterio ya
+establecido para sismo/orden_publico. Primera prueba de `state.py` en la
+suite (`tests/test_state.py`): reproduce el caso real (dos incendios
+distintos en 36h ya no comparten clave), un control de que la ventana de
+"mismo evento" sigue funcionando para tipos no excluidos (inundación), y
+un control de que `filtrar_nuevos()` sigue tratando un segundo incendio
+como nuevo aunque tenga la misma severidad que el anterior.
+
+**Corrección retroactiva de la alerta perdida**: se reconstruyó la
+alerta de la explosión de gas a partir de `data/historico_eventos.jsonl`
+(la entrada original de esa corrida nunca se modificó ni se borró --
+solo dejó de reflejarse en `docs/data/noticias.json`/`data/publicados.json`
+al ser sobrescrita en corridas posteriores) y
+`data/historico_fuentes_texto.jsonl`, y se publicó de nuevo bajo su
+propia clave `incendio::Distrito Capital::2026-07-29` (`alto`, sin
+confirmar porque `PASADO_POR_FALLA_TECNICA` fuerza `confirmado=false`
+sin importar el score, 3 fuentes, municipio Libertador/parroquia San
+Pedro). El incendio del CCCT se re-etiquetó con su propia clave real
+`incendio::Distrito Capital::2026-07-30`. **Limitación de la
+reconstrucción, documentada por transparencia**: el registro histórico
+no guarda la hora exacta de publicación de cada fuente individual (solo
+la fecha del evento más reciente del grupo), así que las 3 fuentes de la
+explosión de gas quedaron con la misma fecha aproximada
+(2026-07-29T17:06:27Z) en vez de sus horas reales de publicación
+-- sin efecto visible en el sitio público, que no muestra fecha por
+fuente individual en el texto renderizado.
+
+### Corrección retroactiva (hallazgos 1-3)
+
+Se eliminaron por completo `salud_publica::Apure::2026-07-30`,
+`orden_publico::Distrito Capital::2026-07-29` (nota de protesta) e
+`incendio::Bolivar::2026-07-30` (duplicado) de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. Se corrigió la severidad de
+`orden_publico::Lara::2026-07-30` a `critico` y de la alerta del CCCT
+(reclavada a `incendio::Distrito Capital::2026-07-30`) a `alto`, ambas
+regenerando `titulo`/`texto` con `render.redactar_noticia()`. Se
+regeneró `docs/data/estadisticas.json` con
+`python3 scripts/build_dashboard.py` (total de eventos: 34 → 31 en el
+log histórico; 34 → 32 en el sitio público, que ahora sí distingue los
+dos incendios de Distrito Capital como eventos separados).
+
+Se agregaron los 5 casos reales + 5 controles a
+`tests/casos_clasificacion.jsonl` (106 pruebas en total con
+`tests/test_state.py`, todas pasan) y se corrió una regresión completa de
+`clasificar_item()` contra el texto real de las 31 fuentes restantes en
+`data/historico_fuentes_texto.jsonl`: ningún otro evento ya publicado
+cambió de tipo/ubicación. Validado con `python3 scripts/validar_configs.py`.
+
+**Nota sobre los informes narrativos**: `docs/data/informes/2026-07_orden_publico.json`
+todavía menciona la nota de protesta ya retractada (su narrativa se
+generó con Groq antes de esta corrección). No se regeneró en esta sesión
+porque requiere `GROQ_API_KEY` (no disponible en este entorno) -- pero
+`scripts/build_informes.py` regenera el informe del mes en curso como
+máximo una vez por día, y la próxima corrida de producción lo hará
+automáticamente a partir de los datos ya corregidos en
+`data/historico_fuentes_texto.jsonl`.
