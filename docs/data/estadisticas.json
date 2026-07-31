@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-07-30T23:28:34.107342+00:00",
+  "actualizado": "2026-07-31T16:28:32.838016+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
-    "hasta": "2026-07-30T20:04:41+00:00"
+    "hasta": "2026-07-31T14:33:37+00:00"
   },
-  "total_eventos": 31,
+  "total_eventos": 33,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 6,
     "infraestructura_electrica": 6,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 5,
+    "orden_publico": 6,
     "salud_publica": 1,
     "crisis_migratoria": 3,
-    "incendio": 4
+    "incendio": 5
   },
   "ranking_estados": [
     {
@@ -23,14 +23,14 @@
       "confirmados": 2
     },
     {
+      "estado": "Lara",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
-    },
-    {
-      "estado": "Lara",
-      "total": 3,
-      "confirmados": 1
     },
     {
       "estado": "Barinas",
@@ -51,6 +51,11 @@
       "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
+    },
+    {
+      "estado": "Nueva Esparta",
+      "total": 2,
+      "confirmados": 1
     },
     {
       "estado": "Carabobo",
@@ -81,11 +86,6 @@
       "estado": "Tachira",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 1,
-      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -95,7 +95,7 @@
     "Lara": {
       "inundacion": 1,
       "salud_publica": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -142,13 +142,13 @@
       "deslizamiento": 1
     },
     "Nueva Esparta": {
-      "incendio": 1
+      "incendio": 2
     }
   },
   "por_severidad": {
     "alto": 5,
-    "critico": 3,
-    "sin_clasificar": 23
+    "critico": 4,
+    "sin_clasificar": 24
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -167,7 +167,7 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 5
+      "2026-07": 6
     },
     "salud_publica": {
       "2026-07": 1
@@ -176,7 +176,7 @@
       "2026-07": 3
     },
     "incendio": {
-      "2026-07": 4
+      "2026-07": 5
     }
   }
 }
