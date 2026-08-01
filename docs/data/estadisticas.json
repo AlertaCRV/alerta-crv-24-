@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-07-31T23:22:40.258402+00:00",
+  "actualizado": "2026-08-01T00:15:47.556598+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-31T19:33:36+00:00"
   },
-  "total_eventos": 31,
+  "total_eventos": 32,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
@@ -14,12 +14,12 @@
     "orden_publico": 3,
     "salud_publica": 1,
     "crisis_migratoria": 3,
-    "incendio": 5
+    "incendio": 6
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 6,
+      "total": 7,
       "confirmados": 2
     },
     {
@@ -106,7 +106,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 1,
-      "incendio": 3
+      "incendio": 4
     },
     "Trujillo": {
       "inundacion": 1
@@ -145,7 +145,7 @@
     }
   },
   "por_severidad": {
-    "alto": 6,
+    "alto": 7,
     "critico": 2,
     "sin_clasificar": 23
   },
@@ -175,7 +175,7 @@
       "2026-07": 3
     },
     "incendio": {
-      "2026-07": 5
+      "2026-07": 6
     }
   }
 }
