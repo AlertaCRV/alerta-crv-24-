@@ -336,6 +336,19 @@ severidad:
   medio:
     - danos materiales
     - alerta naranja
+    # Caso real (incendio en centro comercial Los Cedros, Porlamar, Nueva
+    # Esparta): "los locales fueron completamente devorados por las llamas"
+    # / "el fuego consumio tres reconocidas tiendas" -- perdida material del
+    # propio incendio sin heridos ni propagacion a otras estructuras, hoy
+    # sin cobertura en esta lista.
+    - devorado por las llamas
+    - devorados por las llamas
+    - devorada por las llamas
+    - devoradas por las llamas
+    - consumido por las llamas
+    - consumidos por las llamas
+    - consumida por las llamas
+    - consumidas por las llamas
   bajo:
     - alerta amarilla
     - precaucion
