@@ -11,8 +11,6 @@ tipos:
     - terremotos
     - replica
     - replicas
-    - réplica
-    - réplicas
     - movimiento telurico
     - movimientos telúricos
     - movimiento sísmico
@@ -31,14 +29,12 @@ tipos:
     # frecuentes ("explosion de alegria/violencia/color"). Se usan frases
     # especificas de explosiones reales en vez de la palabra suelta.
     - explosion de gas
-    - explosión de gas
     - fuga de gas
     - gas licuado
     - onda expansiva
   inundacion:
     - inundacion
     - inundaciones
-    - inundación
     - desbordamiento
     - desbordamientos
     - crecida
@@ -63,15 +59,10 @@ tipos:
   infraestructura_electrica:
     - apagon
     - apagones
-    - apagón
     - falla electrica
     - fallas electricas
-    - falla eléctrica
-    - fallas eléctricas
     - colapso electrico
-    - colapso eléctrico
     - tendido electrico
-    - tendido eléctrico
     - corte de luz
     - cortes de luz
     - corpoelec
@@ -89,14 +80,12 @@ tipos:
     - colapsos viales
     - via colapsada
     - vías colapsadas
-    - vía colapsada
     - accidente vial
     - accidentes viales
     - choque
     - choques
     - colision
     - colisiones
-    - colisión
     - volcamiento
     - volcamientos
   orden_publico:
@@ -122,9 +111,7 @@ tipos:
     # abajo no tienen esa ambiguedad.
     - manifestantes
     - manifestacion violenta
-    - manifestación violenta
     - manifestacion callejera
-    - manifestación callejera
     - marcha de protesta
     - hecho de violencia
     - hechos de violencia
@@ -139,7 +126,6 @@ tipos:
     - alertas sanitarias
     - intoxicacion masiva
     - intoxicaciones masivas
-    - intoxicación masiva
     - enfermedad
     - enfermedades
     - pandemia
@@ -147,11 +133,8 @@ tipos:
     - cuarentena
     - aislamiento sanitario
     - emergencia epidemiologica
-    - emergencia epidemiológica
     - alerta epidemiologica
-    - alerta epidemiológica
     - brote epidemico
-    - brote epidémico
     - contagio masivo
     - contagios masivos
   tsunami:
@@ -163,75 +146,56 @@ tipos:
     - ola gigante
   tormenta_electrica:
     - tormenta electrica
-    - tormenta eléctrica
     - tormentas electricas
-    - tormentas eléctricas
     - impacto de rayo
     - impacto de un rayo
     - impactos de rayo
     - caida de rayo
-    - caída de rayo
     - caida de un rayo
-    - caída de un rayo
     - fulminado por un rayo
     - fulminada por un rayo
     - alcanzado por un rayo
     - alcanzada por un rayo
     - descarga electrica atmosferica
-    - descarga eléctrica atmosférica
   derrame_petrolero:
     - derrame petrolero
     - derrame de petroleo
-    - derrame de petróleo
     - derrame de crudo
     - derrame de hidrocarburos
     - marea negra
     - mancha de petroleo
-    - mancha de petróleo
     - contaminacion por hidrocarburos
-    - contaminación por hidrocarburos
   explosion:
     - explosion industrial
-    - explosión industrial
     - explosion en fabrica
-    - explosión en fábrica
     - artefacto explosivo
     - coche bomba
     - explosivo detonado
     - estallido de explosivo
     - explosion de tuberia
-    - explosión de tubería
     - explosion de caldera
-    - explosión de caldera
   sequia:
     - sequia
-    - sequía
     - sequias
-    - sequías
     - escasez prolongada de agua
     - desabastecimiento de agua potable
     - crisis de agua potable
     - niveles criticos del embalse
-    - niveles críticos del embalse
     - racionamiento de agua
   colapso_estructural:
     - colapso estructural
     - colapso de un puente
     - colapso de una edificacion
-    - colapso de una edificación
     - colapso de vivienda
     - desplome de estructura
     - desplome de edificacion
-    - desplome de edificación
     - desplome de puente
   crisis_migratoria:
     - crisis migratoria
     - exodo masivo
-    - éxodo masivo
     - desplazamiento masivo
     - oleada migratoria
     - migracion masiva
-    - migración masiva
     - ola migratoria
     - desplazados
     - desplazadas
@@ -246,29 +210,21 @@ tipos:
     - desabastecimiento de combustible
   motin_carcelario:
     - motin carcelario
-    - motín carcelario
     - motines carcelarios
     - motin en carcel
-    - motín en cárcel
     - amotinamiento
     - riña carcelaria
     - riña en carcel
-    - riña en cárcel
     - fuga masiva de reclusos
     - toma de rehenes en carcel
-    - toma de rehenes en cárcel
   accidente_transporte:
     - accidente aereo
-    - accidente aéreo
     - caida de avion
-    - caída de avión
     - avion accidentado
-    - avión accidentado
     - naufragio
     - hundimiento de embarcacion
     - hundimiento de una embarcación
     - accidente maritimo
-    - accidente marítimo
     - choque de trenes
     - descarrilamiento
     - accidente de tren
@@ -282,7 +238,6 @@ tipos:
     - ataques armados
     - terrorismo
     - celula terrorista
-    - célula terrorista
     - grupo armado organizado
     - masacre
   emergencia_metro:
@@ -291,12 +246,10 @@ tipos:
     - falla en el metro
     - falla del metro
     - falla electrica del metro
-    - falla eléctrica del metro
     - varados en el metro
     - atrapados en el metro
     - incendio en el metro
     - incendio en una estacion del metro
-    - incendio en una estación del metro
     - colapso del servicio del metro
     - metro colapsado
     - descarrilamiento del metro
@@ -304,22 +257,15 @@ tipos:
     - choque de trenes del metro
     - choque de vagones del metro
     - colision de vagones
-    - colisión de vagones
     - metrocable
     - teleferico de caracas
-    - teleférico de caracas
     - falla en el teleferico
-    - falla en el teleférico
     - falla del teleferico
-    - falla del teleférico
     - varados en el teleferico
-    - varados en el teleférico
     - atrapados en el teleferico
-    - atrapados en el teleférico
     - varados en el metrocable
     - atrapados en el metrocable
     - cabinas del teleferico
-    - cabinas del teleférico
 
 severidad:
   critico:
@@ -327,20 +273,16 @@ severidad:
     - fallecido
     - fallecieron
     - fallecio
-    - falleció
     - muertos
     - muerto
     - murio
-    - murió
     - ahogado
     - ahogada
     - ahogados
     - ahogadas
     - perdio la vida
-    - perdió la vida
     - perdieron la vida
     - victimas fatales
-    - víctimas fatales
     - desaparecidos
     - colapso total
     - emergencia nacional
@@ -362,14 +304,10 @@ severidad:
     - lesionada
     - hospitalizados
     - evacuacion
-    - evacuación
     - danos severos
-    - daños severos
     - alerta roja
     - inhalar monoxido de carbono
-    - inhalar monóxido de carbono
     - inhalacion de monoxido de carbono
-    - inhalación de monóxido de carbono
     - intoxicados por humo
     - intoxicadas por humo
     # Caso real (30-07-2026): "Al menos 1.300 familias incomunicadas y varias
@@ -384,11 +322,9 @@ severidad:
     - damnificadas
   medio:
     - danos materiales
-    - daños materiales
     - alerta naranja
   bajo:
     - alerta amarilla
     - precaucion
-    - precaución
     - sin heridos
     - sin novedad
