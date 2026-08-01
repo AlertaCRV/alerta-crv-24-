@@ -1,5 +1,21 @@
 [
   {
+    "periodo": "2026-08",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-08-01T08:44:46.401438+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-08",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-08-01T08:44:42.100430+00:00",
+    "total_eventos": 2
+  },
+  {
     "periodo": "2026-07",
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",

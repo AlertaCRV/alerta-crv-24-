@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-08",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-08-01T08:44:46.401438+00:00",
+  "actualizado_hasta": "2026-08-01T08:44:23.621370+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 6,
+    "actual": 2
+  },
+  "narrativa": "En el período de agosto de 2026, se registraron 2 eventos relacionados con fallas eléctricas, en comparación con los 6 eventos registrados en el período anterior de julio de 2026. Uno de los eventos que destacó en este período fue la falla eléctrica en Sucre, catalogada como crítica (El Tiempo (Anzoategui)). Esta falla eléctrica en Sucre se produjo luego de que un árbol colapsara y arrastrara postes del tendido eléctrico en las inmediaciones de la plaza Ayacucho, en el centro de Cumaná, estado Sucre, cobrando la vida de una mujer (El Tiempo (Anzoategui)). Además, aunque no ocurrió en agosto, es importante mencionar que en el estado Bolívar, específicamente en El Callao, se llevó a cabo un paro cívico el 29 de julio de 2026, para exigir soluciones ante la crisis eléctrica en el municipio (Turimiquire (Sucre)). La comunidad de El Callao se vio afectada por constantes apagones, atribuidos a la sobrepoblación generada por la actividad minera, que colapsó los servicios públicos (Turimiquire (Sucre)). La reducción en el número de eventos de fallas eléctricas en agosto en comparación con julio podría indicar una mejora en la situación, aunque eventos como el ocurrido en Sucre y la situación en El Callao resaltan la necesidad de atención continua a la infraestructura eléctrica.",
+  "fuentes": [
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+    }
+  ]
+}
