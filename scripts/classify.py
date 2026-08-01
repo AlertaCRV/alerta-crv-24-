@@ -97,17 +97,34 @@ FRONTERA_EXTRANJERA_POR_ESTADO = {
 }
 
 
+# Caso real confirmado (01-08-2026, casos de El Colombiano/Proceso.hn sobre
+# ataques de las FARC en La Guajira, Colombia): "municipio" detectado no
+# siempre es evidencia venezolana confiable. detectar_municipio_parroquia()
+# ya usa "Guajira" como alias directo del municipio "Indigena Bolivariano
+# Guajira" de Zulia (ver PR #61) -- si el texto dice "La Guajira, Colombia"
+# o "departamento de la Guajira", esa MISMA palabra dispara el falso
+# municipio venezolano, lo que anularia la salvaguarda de
+# _es_evento_extranjero_sin_municipio() con evidencia circular (la palabra
+# que prueba que el hecho es colombiano es la misma que "prueba" que es
+# venezolano). Estos municipios NUNCA cuentan como salvaguarda cuando el
+# estado tambien tiene evidencia de FRONTERA_EXTRANJERA_POR_ESTADO.
+_MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA = {
+    "Zulia": {"Indígena Bolivariano Guajira"},
+}
+
+
 def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
     """True si el texto nombra un lugar colombiano de
     FRONTERA_EXTRANJERA_POR_ESTADO para este estado fronterizo Y no se
-    detecto ningun municipio/parroquia venezolano especifico -- ver
-    comentario extenso en FRONTERA_EXTRANJERA_POR_ESTADO sobre por que la
-    ausencia de municipio es la condicion clave (no basta con que
-    Colombia aparezca mencionada)."""
-    if municipio:
-        return False
+    detecto ningun municipio/parroquia venezolano especifico confiable --
+    ver comentario extenso en FRONTERA_EXTRANJERA_POR_ESTADO sobre por que
+    la ausencia de municipio es la condicion clave (no basta con que
+    Colombia aparezca mencionada), y en
+    _MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA sobre la excepcion de Guajira."""
     lugares = FRONTERA_EXTRANJERA_POR_ESTADO.get(ubicacion)
     if not lugares:
+        return False
+    if municipio and municipio not in _MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA.get(ubicacion, set()):
         return False
     return any(lugar in texto_norm for lugar in lugares)
 

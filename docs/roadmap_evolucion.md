@@ -3900,3 +3900,55 @@ evento ya publicado se vio afectado (no hizo falta corrección
 retroactiva esta vez). `python3 -m pytest tests/` → 135 passed, 4 xfailed
 (conocidos, sin relación). `python3 scripts/validar_configs.py` → OK.
 `python3 scripts/detectar_inconsistencias.py` → sin inconsistencias.
+
+---
+
+## A pedido del usuario (01-08-2026): confirmación real de la limitación de Zulia/Guajira, corregida
+
+El usuario proporcionó 3 artículos reales sobre ataques de las FARC en La
+Guajira, Colombia, para poner a prueba el mecanismo recién generalizado.
+Dos de los tres describen, de forma consistente, ataques armados
+ocurridos en el departamento de La Guajira, Colombia (uno menciona
+además que la guerrilla usa la frontera con Venezuela -- Zulia y Apure --
+como zona de repliegue).
+
+### Se confirmó, con un caso concreto, la limitación ya documentada
+
+Un texto basado en ese patrón real (ataque armado en "La Guajira,
+Colombia", con mención explícita de los estados venezolanos Zulia y
+Apure como contexto) sí generaba una alerta falsa: `Zulia`, con
+municipio **"Indígena Bolivariano Guajira"** -- exactamente la
+combinación que se había anticipado como riesgo al generalizar el fix a
+Zulia.
+
+**Causa raíz exacta**: `detectar_municipio_parroquia()` ya usa "Guajira"
+como alias directo del municipio venezolano "Indígena Bolivariano
+Guajira" (desde PR #61). Cuando el texto dice "La Guajira, Colombia", esa
+MISMA palabra activa dos señales contradictorias: la evidencia de que el
+hecho es colombiano (`FRONTERA_EXTRANJERA_POR_ESTADO`) y, por accidente,
+la "evidencia" de que hay un municipio venezolano específico -- lo que
+anulaba la salvaguarda pensada para proteger eventos reales como los de
+Apure/Amazonas.
+
+### Corrección
+
+`scripts/classify.py`: nuevo `_MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA`
+-- una lista de municipios que, aunque se detecten, NO cuentan como
+evidencia venezolana confiable cuando el estado también tiene evidencia
+de `FRONTERA_EXTRANJERA_POR_ESTADO`, porque la misma palabra que los activa
+es la que prueba lo contrario. Por ahora solo contiene
+`Zulia: {"Indígena Bolivariano Guajira"}`. El caso de control (el mismo
+municipio venezolano real, sin ninguna mención de Colombia) se sigue
+detectando con normalidad -- la salvaguarda solo se anula cuando además
+hay evidencia de que el hecho es colombiano.
+
+### Pruebas
+
+2 casos nuevos en `tests/casos_clasificacion.jsonl` (basados en el patrón
+real reportado por el usuario, sin reproducir texto de los artículos): el
+caso que ahora se descarta correctamente, y el control de que el
+municipio venezolano real sigue funcionando. Regresión completa contra
+`data/historico_fuentes_texto.jsonl`: sin corrección retroactiva
+necesaria. `python3 -m pytest tests/` → 137 passed, 4 xfailed (conocidos,
+sin relación). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → sin inconsistencias.
