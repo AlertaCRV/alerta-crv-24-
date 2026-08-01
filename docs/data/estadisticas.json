@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-01T01:26:20.558133+00:00",
+  "actualizado": "2026-08-01T01:55:36.368339+00:00",
   "periodo_cubierto": {
-    "desde": "2026-07-26T18:07:32+00:00",
+    "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-07-31T19:33:36+00:00"
   },
-  "total_eventos": 29,
+  "total_eventos": 30,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
@@ -13,7 +13,7 @@
     "colapso_estructural": 1,
     "orden_publico": 3,
     "salud_publica": 1,
-    "crisis_migratoria": 3,
+    "crisis_migratoria": 4,
     "incendio": 3
   },
   "ranking_estados": [
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Falcon",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Carabobo",
       "total": 1,
       "confirmados": 0
@@ -64,11 +69,6 @@
     },
     {
       "estado": "Sucre",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Falcon",
       "total": 1,
       "confirmados": 0
     },
@@ -136,9 +136,6 @@
       "infraestructura_electrica": 2,
       "orden_publico": 1
     },
-    "Falcon": {
-      "crisis_migratoria": 1
-    },
     "Apure": {
       "crisis_migratoria": 1
     },
@@ -150,12 +147,15 @@
     },
     "Nueva Esparta": {
       "incendio": 1
+    },
+    "Falcon": {
+      "crisis_migratoria": 2
     }
   },
   "por_severidad": {
     "alto": 5,
     "critico": 2,
-    "sin_clasificar": 22
+    "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -180,7 +180,7 @@
       "2026-07": 1
     },
     "crisis_migratoria": {
-      "2026-07": 3
+      "2026-07": 4
     },
     "incendio": {
       "2026-07": 3

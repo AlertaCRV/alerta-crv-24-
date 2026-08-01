@@ -29,12 +29,6 @@
     "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
     "fecha_evento_temprana": "2026-07-29T16:20:02+00:00"
   },
-  "crisis_migratoria::Falcon::2026-07-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
-    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00"
-  },
   "crisis_migratoria::Apure::2026-07-29": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -102,5 +96,19 @@
     "fecha_deteccion": "2026-07-31T16:27:57.241863+00:00",
     "fecha_evento_temprana": "2026-07-30T12:12:15+00:00",
     "municipio": "Mariño"
+  },
+  "crisis_migratoria::Falcon::2026-07-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
+    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00",
+    "municipio": "Colina"
+  },
+  "crisis_migratoria::Falcon::2026-07-28": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
+    "fecha_evento_temprana": "2026-07-28T16:00:00+00:00",
+    "municipio": "Zamora"
   }
 }

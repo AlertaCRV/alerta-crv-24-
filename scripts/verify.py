@@ -1,5 +1,6 @@
 import difflib
 import re
+from datetime import timedelta
 
 from dateutil import parser as dateparser
 
@@ -69,6 +70,58 @@ def _separar_sismos_por_magnitud(miembros):
     return list(grupos_por_magnitud.values())
 
 
+# Ventana usada para separar reportes de filial del mismo tipo+ubicacion en
+# sub-eventos distintos cuando llegan muy espaciados en el tiempo -- misma
+# duracion que VENTANA_HORAS_MISMO_EVENTO en state.py, para no inventar un
+# criterio nuevo sin motivo. A diferencia de un articulo de prensa (que
+# suele decir "actualizacion" o dar continuidad explicita a un hecho
+# anterior), un reporte de filial es una cifra puntual sin ninguna
+# indicacion de si es una actualizacion de una situacion ya informada o
+# una nueva -- confirmado por el usuario (01-08-2026): "cada correo se
+# toma como independiente sin considerar si en el pasado se informo sobre
+# lo mismo y sin considerar si es o no una actualizacion". Sin este
+# limite, dos (o mas) reportes de la misma filial sobre el mismo
+# municipio, aunque esten semanas de diferencia, se fusionaban en un solo
+# evento -- caso real (29-07-2026): 3 correos sobre Zamora, Falcon
+# fechados 07-07, 28-07 y 29-07 (22 dias de diferencia entre el primero y
+# el ultimo) se combinaron en una sola alerta con un resumen_consolidado
+# que mezclaba cifras de familias/personas que no calzaban entre si.
+VENTANA_HORAS_MISMO_EVENTO_FILIAL = 36
+
+
+def _separar_reportes_filial_por_ventana(miembros):
+    """Si un cluster (mismo tipo+ubicacion, misma corrida) tiene reportes
+    de filial cuyas fechas se apartan mas de
+    VENTANA_HORAS_MISMO_EVENTO_FILIAL entre reportes consecutivos, los
+    separa en sub-eventos -- de lo contrario (todos dentro de la ventana,
+    o ningun miembro es reporte de filial), los deja en un solo grupo,
+    igual que antes. Los miembros que NO son reporte de filial (un
+    articulo de prensa sobre el mismo tipo+ubicacion, caso raro pero
+    posible) se unen al sub-grupo de filiales mas reciente en vez de
+    quedar en un grupo aparte."""
+    filiales = sorted(
+        (m for m in miembros if m.get("es_reporte_filial")),
+        key=lambda m: m["fecha"],
+    )
+    if len(filiales) < 2:
+        return [miembros]
+
+    limite = timedelta(hours=VENTANA_HORAS_MISMO_EVENTO_FILIAL)
+    grupos = [[filiales[0]]]
+    for anterior, actual in zip(filiales, filiales[1:]):
+        gap = dateparser.isoparse(actual["fecha"]) - dateparser.isoparse(anterior["fecha"])
+        if gap <= limite:
+            grupos[-1].append(actual)
+        else:
+            grupos.append([actual])
+
+    no_filiales = [m for m in miembros if not m.get("es_reporte_filial")]
+    if no_filiales:
+        grupos[-1].extend(no_filiales)
+
+    return grupos
+
+
 def _clave_cluster(item):
     tipo_principal = item["tipos"][0]
     return (tipo_principal, item["ubicacion"])
@@ -128,7 +181,10 @@ def agrupar_y_verificar(items):
 
     eventos = []
     for (tipo, ubicacion), miembros in clusters.items():
-        sub_clusters = _separar_sismos_por_magnitud(miembros) if tipo == "sismo" else [miembros]
+        if tipo == "sismo":
+            sub_clusters = _separar_sismos_por_magnitud(miembros)
+        else:
+            sub_clusters = _separar_reportes_filial_por_ventana(miembros)
 
         for sub_miembros in sub_clusters:
             fuentes_unicas = {}
