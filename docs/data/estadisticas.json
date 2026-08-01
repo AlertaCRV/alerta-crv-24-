@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-01T08:44:38.103509+00:00",
+  "actualizado": "2026-08-01T15:48:26.289062+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-01T02:42:10+00:00"
+    "hasta": "2026-08-01T15:19:46+00:00"
   },
-  "total_eventos": 32,
+  "total_eventos": 34,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
@@ -14,18 +14,20 @@
     "orden_publico": 3,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 3
+    "incendio": 3,
+    "ataque_armado": 1,
+    "vialidad": 1
   },
   "ranking_estados": [
+    {
+      "estado": "Distrito Capital",
+      "total": 5,
+      "confirmados": 1
+    },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
-    },
-    {
-      "estado": "Distrito Capital",
-      "total": 4,
-      "confirmados": 1
     },
     {
       "estado": "Bolivar",
@@ -58,6 +60,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 2,
       "confirmados": 0
@@ -74,11 +81,6 @@
     },
     {
       "estado": "Apure",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
       "total": 1,
       "confirmados": 0
     },
@@ -111,7 +113,8 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 1,
-      "incendio": 1
+      "incendio": 1,
+      "vialidad": 1
     },
     "Trujillo": {
       "inundacion": 1
@@ -141,7 +144,8 @@
       "crisis_migratoria": 1
     },
     "Tachira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "ataque_armado": 1
     },
     "Miranda": {
       "incendio": 1
@@ -154,8 +158,8 @@
     }
   },
   "por_severidad": {
-    "alto": 5,
-    "critico": 3,
+    "alto": 6,
+    "critico": 4,
     "sin_clasificar": 24
   },
   "serie_mensual_por_tipo": {
@@ -186,6 +190,12 @@
     },
     "incendio": {
       "2026-07": 3
+    },
+    "ataque_armado": {
+      "2026-08": 1
+    },
+    "vialidad": {
+      "2026-08": 1
     }
   }
 }
