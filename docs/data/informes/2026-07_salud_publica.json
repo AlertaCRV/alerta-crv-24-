@@ -5,21 +5,17 @@
   "cerrado": false,
   "generado": "2026-07-31T10:05:25.105317+00:00",
   "actualizado_hasta": "2026-07-30T20:25:19.782134+00:00",
-  "total_eventos": 2,
+  "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 2
+    "actual": 1
   },
-  "narrativa": "En el período de 2026-07, se registraron 2 eventos relacionados con la salud pública en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos reportados fue la situación de 940 pacientes en Lara que se vieron afectados por la falta de diálisis completa debido a que los equipos están dañados (Turimiquire.net). Esto ha llevado a recortar la duración de los tratamientos, pasando de cuatro horas a dos horas y media, lo que ha generado preocupación entre los pacientes y los defensores del sector salud, quienes solicitan la renovación urgente de los equipos (Turimiquire.net). Por otro lado, se reportó un aumento en los casos de enfermedades diarreicas en Venezuela, con un incremento del 3% en la segunda semana de julio de 2026, según el Ministerio de Salud, con más de 17.000 cuadros de enfermedades diarreicas recientes (Turimiquire.net). Los especialistas instan a la población a tomar medidas preventivas, como consumir agua hervida o filtrada y evitar la automedicación.",
+  "narrativa": "En el período de 2026-07, se registró 1 evento relacionado con la salud pública en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. El evento reportado fue la situación de 940 pacientes en Lara que se vieron afectados por la falta de diálisis completa debido a que los equipos están dañados (Turimiquire.net). Esto ha llevado a recortar la duración de los tratamientos, pasando de cuatro horas a dos horas y media, lo que ha generado preocupación entre los pacientes y los defensores del sector salud, quienes solicitan la renovación urgente de los equipos (Turimiquire.net).",
   "fuentes": [
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/07/30/aumentan-los-casos-de-enfermedades-diarreicas-en-venezuela/"
     }
   ]
 }

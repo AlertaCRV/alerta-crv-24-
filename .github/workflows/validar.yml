@@ -32,3 +32,14 @@ jobs:
 
       - name: Suite de regresión de clasificación
         run: python -m pytest tests/ -v
+
+      - name: Auditoria de inconsistencias (alertas duplicadas, informes con fuentes muertas)
+        # Informativo, no bloquea el merge: los falsos positivos son
+        # posibles (dos eventos genuinamente distintos pueden compartir una
+        # palabra comun) y requieren revision humana contra el texto real
+        # de las fuentes antes de fusionar o corregir algo (ver
+        # scripts/detectar_inconsistencias.py). Corre en cada push/PR --
+        # incluidas las PRs automaticas de "Actualizar reportes" -- para no
+        # depender de que una auditoria manual se acuerde de ejecutarlo.
+        working-directory: scripts
+        run: python detectar_inconsistencias.py || true
