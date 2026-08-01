@@ -296,6 +296,11 @@ severidad:
     - herida mortal
     - heridas mortales
     - muerte violenta
+    # Caso real (incendio en Maturin-Barcelona, 5 fallecidos): "se localizaron
+    # tres cuerpos carbonizados en su interior" -- señal inequivoca de muerte
+    # por incendio, sin ambiguedad con otros usos idiomaticos.
+    - cuerpos carbonizados
+    - cuerpo carbonizado
   alto:
     - heridos
     - lesionados
@@ -310,6 +315,14 @@ severidad:
     - inhalacion de monoxido de carbono
     - intoxicados por humo
     - intoxicadas por humo
+    # Casos reales de incendios (CCCT, apartamento en San Bernardino): usan
+    # "desalojo"/"gases toxicos" en vez de "evacuacion"/"monoxido de carbono",
+    # que ya estaban cubiertos pero no capturaban esta redaccion alternativa.
+    - desalojo preventivo
+    - desalojaron de manera preventiva
+    - intoxicacion por inhalacion de gases toxicos
+    - intoxicado por gases toxicos
+    - intoxicada por gases toxicos
     # Caso real (30-07-2026): "Al menos 1.300 familias incomunicadas y varias
     # damnificadas deja deslizamiento de terreno" -- via principal destruida,
     # miles de familias afectadas, se publico con severidad SIN CLASIFICAR
@@ -328,3 +341,11 @@ severidad:
     - precaucion
     - sin heridos
     - sin novedad
+    # Casos reales de incendios controlados sin victimas: redaccion habitual
+    # de la prensa venezolana ("Gracias a Dios no hubo perdidas humanas que
+    # lamentar", "no hubo victimas graves") que hoy no coincide con ninguna
+    # palabra de esta lista y deja la alerta sin clasificar.
+    - sin perdidas humanas
+    - no hubo perdidas humanas
+    - sin victimas graves
+    - no hubo victimas graves
