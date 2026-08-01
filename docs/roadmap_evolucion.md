@@ -3532,3 +3532,103 @@ que `state.py` las haya fusionado correctamente en el momento de publicar.
 Queda como sugerencia para el usuario, no implementada en este PR (cambiar
 el prompt de la tarea programada está fuera del alcance de un cambio de
 código).
+
+---
+
+## A pedido del usuario (01-08-2026): auditoría de duplicados como chequeo de CI + informes narrativos con fuentes retractadas
+
+Dos pedidos sobre el hallazgo anterior (incendios duplicados del CCCT/Los
+Cedros): (1) implementar la mejora sugerida para que la auditoría diaria
+sea más efectiva, y (2) investigar el reporte de que "los informes
+narrativos por período documentan hechos que no están reseñados en las
+alertas, o que anteriormente eran alertas y fueron eliminadas por ser
+bugs".
+
+### 1. `scripts/detectar_inconsistencias.py`: chequeo determinista (sin IA), corre en cada push/PR
+
+En vez de depender de que una futura sesión de auditoría "se acuerde" de
+comparar enlaces entre alertas del mismo tipo (la sugerencia original), se
+implementó como código: un script que detecta dos clases de problema y se
+agregó como paso informativo (no bloqueante) a `.github/workflows/validar.yml`
+-- corre en cada push/PR, **incluidas las PRs automáticas de "Actualizar
+reportes"**, sin depender de que ninguna sesión humana o de IA se acuerde
+de ejecutarlo a mano.
+
+1. **Posibles alertas duplicadas ya publicadas**: mismo tipo, dentro de
+   72h, que comparten municipio o una palabra distintiva del link de
+   alguna fuente (nombre de centro comercial, vía...). La lista de
+   palabras "ruido" a ignorar se construye automáticamente a partir de
+   `config/keywords.yaml` (tipos + severidad, son genéricas del dominio
+   por definición) más una lista manual de verbos/conectores/sustantivos
+   frecuentes en titulares de prensa. Probado contra los 2 casos reales
+   del incendio del CCCT/Los Cedros (uno se detecta por token de link
+   compartido -- "ccct" --, el otro solo por municipio compartido, ya que
+   sus links no comparten ninguna palabra) y contra 4 casos de control
+   (eventos genuinamente distintos, fuera de ventana, de tipo distinto, o
+   reportes de filial cuyo link es una búsqueda de Gmail) para no generar
+   ruido.
+2. **Informes narrativos con fuentes "muertas"**: un link citado en
+   `docs/data/informes/*.json` que ya no existe en
+   `data/historico_fuentes_texto.jsonl` -- señal de que el evento se
+   retractó (bug corregido) o se fusionó con otro después de generarse el
+   informe, y este nunca se regeneró (requiere Groq, no siempre
+   disponible -- ver hallazgo 2 abajo).
+
+No corrige nada automáticamente -- solo imprime un reporte para revisión
+humana, porque los falsos positivos son posibles (dos eventos genuinamente
+distintos pueden compartir una palabra común). Pruebas en
+`tests/test_detectar_inconsistencias.py` (7 casos).
+
+### 2. 6 informes narrativos de julio citaban fuentes ya retractadas como bugs
+
+Al correr el nuevo detector contra los informes actuales, aparecieron 14
+fuentes muertas en 6 informes distintos. La causa raíz es de **proceso**,
+no de lógica: `build_informes.py` regenera un informe del período en curso
+como máximo 1 vez por día calendario (UTC) -- si en el medio de ese día se
+retracta un evento (como ya pasó varias veces: nota de protesta
+diplomática, corrección retrospectiva de epicentro sísmico, operativo
+antidrogas, homicidio a machetazos...), el informe queda citando esa
+fuente hasta la siguiente regeneración exitosa. Este entorno no tiene
+`GROQ_API_KEY` disponible, así que no se pudo regenerar la narrativa con
+IA -- se corrigió a mano:
+
+- **`2026-07_sismo.json`**: su única fuente era la corrección
+  retrospectiva de epicentro (evento retractado el 29-07, ver esa fecha en
+  este documento) -- **no queda ningún evento sísmico real en julio**, así
+  que se eliminó el archivo completo y su entrada de `index.json` (una
+  regeneración real desde `historico_fuentes_texto.jsonl`, que ya no tiene
+  ninguna fuente de tipo sismo para julio, tampoco lo generaría).
+- **`2026-07_orden_publico.json`**: de 8 eventos narrados, 4 citaban
+  fuentes retractadas (protesta de jubilados de Cantv, demolición de la
+  torre C en La Guaira, nota de protesta a Irán, un hombre detenido por
+  arrollar a su pareja -- este último es el mismo patrón de "enfrentamiento"
+  ya documentado: un delito individual, no un disturbio civil). Se
+  reescribió la narrativa con los 3 eventos reales que sí sobreviven en el
+  histórico (Maturín, tranca en el sur de Bolívar, marcha en Caracas) --
+  `total_eventos` corregido de 8 a 3.
+- **`2026-07_general.json`**, **`2026-07_incendio.json`**,
+  **`2026-07_infraestructura_electrica.json`**, **`2026-07_salud_publica.json`**:
+  se quitaron las fuentes muertas de la lista de citas y se ajustó
+  `total_eventos`/`comparacion_mes_anterior` con la misma función de
+  conteo que usa `build_informes.py`
+  (`_conteos_por_periodo_y_tipo(leer_historico())`). Para
+  `2026-07_incendio.json` y `2026-07_infraestructura_electrica.json` se
+  editó además la narrativa (frases/citas que mencionaban directamente el
+  hecho retractado); `2026-07_general.json` no necesitó tocar la narrativa
+  -- ninguna de sus 5 fuentes muertas se mencionaba en el texto, solo en
+  la lista de citas.
+
+**Limitación reconocida**: esta corrección es manual y puntual, no
+resuelve la causa raíz de fondo (que la regeneración automática dependa de
+que Groq esté disponible exactamente el día en que cambia el calendario
+UTC). Si el usuario nota informes desactualizados en el futuro, el nuevo
+`scripts/detectar_inconsistencias.py` (corriendo en cada PR desde ahora)
+debería señalarlo mucho antes de que se acumulen 14 referencias muertas
+otra vez.
+
+### Pruebas
+
+`python3 -m pytest tests/` → 122 passed, 4 xfailed (conocidos, sin
+relación). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → "Sin inconsistencias detectadas."
+tras las correcciones de este hallazgo.

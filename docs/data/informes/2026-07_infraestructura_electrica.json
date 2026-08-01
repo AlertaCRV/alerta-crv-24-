@@ -5,13 +5,13 @@
   "cerrado": false,
   "generado": "2026-07-31T10:04:51.302801+00:00",
   "actualizado_hasta": "2026-07-30T23:48:39.196341+00:00",
-  "total_eventos": 7,
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-06",
     "anterior": 0,
-    "actual": 7
+    "actual": 6
   },
-  "narrativa": "Durante el período de 2026-07, se registraron 7 eventos relacionados con fallas eléctricas en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos más significativos fue el causado por la onda tropical número 30, que azotó al estado Zulia con torrenciales lluvias y apagones de más de 12 horas, afectando principalmente a los municipios de Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta (Diario La Nacion). En el mismo estado, se reportaron doce horas sin luz en viviendas de El Palotal debido a una falla eléctrica (Diario La Nacion). Además, en el estado Bolívar, una protesta por apagones en Guasipati fue disuelta por hombres armados que dispararon al aire (El Pitazo). En el estado Anzoátegui, se reportó un aumento de apagones en la zona norte, con duraciones que van desde cuatro hasta siete horas (El Tiempo), y fallas eléctricas que también dejaron sin agua a familias de El Tigre (El Tiempo). En Barinas, CORPOELEC atendió condiciones operativas del circuito Las Palmas para restablecer el suministro de energía (La Noticia de Barinas). Finalmente, en Maturín, habitantes se concentraron en Corpoelec para pedir medidas de contingencia e inversión en la infraestructura eléctrica regional debido a severas fallas en el servicio eléctrico (La Prensa de Monagas).",
+  "narrativa": "Durante el período de 2026-07, se registraron 6 eventos relacionados con fallas eléctricas en Venezuela, lo que contrasta con el período anterior (2026-06) en el que no se registraron eventos de este tipo. Uno de los eventos más significativos fue el causado por la onda tropical número 30, que azotó al estado Zulia con torrenciales lluvias y apagones de más de 12 horas, afectando principalmente a los municipios de Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta (Diario La Nacion). En el mismo estado, se reportaron doce horas sin luz en viviendas de El Palotal debido a una falla eléctrica (Diario La Nacion). Además, en el estado Bolívar, una protesta por apagones en Guasipati fue disuelta por hombres armados que dispararon al aire (El Pitazo). En el estado Anzoátegui, se reportó un aumento de apagones en la zona norte, con duraciones que van desde cuatro hasta siete horas (El Tiempo). En Barinas, CORPOELEC atendió condiciones operativas del circuito Las Palmas para restablecer el suministro de energía (La Noticia de Barinas). Finalmente, en Maturín, habitantes se concentraron en Corpoelec para pedir medidas de contingencia e inversión en la infraestructura eléctrica regional debido a severas fallas en el servicio eléctrico (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -32,10 +32,6 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/anzoatiguenses-reportan-aumento-de-apagones-en-la-zona-norte/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/fallas-electricas-tambien-dejan-sin-agua-a-familias-de-el-tigre/"
     },
     {
       "nombre": "La Noticia de Barinas",
