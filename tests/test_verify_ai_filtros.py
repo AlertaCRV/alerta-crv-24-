@@ -117,3 +117,48 @@ def test_doblete_sismico_es_retrospectiva():
 def test_sismo_nuevo_no_es_retrospectiva():
     texto = "Un sismo de magnitud 5.0 sacudio la region esta madrugada."
     assert _es_retrospectiva_obvia(texto) is False
+
+
+# --- municipio/parroquia del cluster deben aparecer en las fuentes -------
+# aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
+
+from verify_ai import _finalizar_evento  # noqa: E402
+
+
+def _miembro(texto, fuente_nombre="Fuente", peso=0.6, fecha="2026-07-31T12:00:00+00:00",
+             link="https://ejemplo.com", severidad="sin_clasificar"):
+    return {
+        "texto": texto, "fuente_nombre": fuente_nombre, "peso": peso,
+        "fecha": fecha, "link": link, "severidad": severidad,
+    }
+
+
+def test_municipio_del_cluster_se_descarta_si_ninguna_fuente_aprobada_lo_nombra():
+    # Caso real (31-07-2026): un cluster de "incendio en Distrito Capital"
+    # tenia una fuente aprobada sobre el CCCT (sin nombrar ningun
+    # municipio) y otra fuente del mismo cluster, sobre un hecho distinto,
+    # que si mencionaba "Parroquia La Vega, Municipio Libertador" -- esa
+    # fuente fue rechazada por la IA (no es el mismo hecho), pero el evento
+    # publicado terminaba con esa parroquia/municipio de todos modos,
+    # porque verify.agrupar_y_verificar() los fija ANTES de saber cuales
+    # fuentes se aprobarian.
+    evento = {
+        "tipo": "incendio", "ubicacion": "Distrito Capital",
+        "municipio": "Libertador", "parroquia": "La Vega",
+    }
+    aprobado = _miembro("Incendio en el CCCT, en el este de Caracas, cinco personas afectadas.")
+    grupos_aprobados = [[aprobado]]
+    resultado = _finalizar_evento(evento, grupos_aprobados)
+    assert resultado["municipio"] is None
+    assert resultado["parroquia"] is None
+
+
+def test_municipio_del_cluster_se_conserva_si_la_fuente_aprobada_lo_nombra():
+    evento = {
+        "tipo": "incendio", "ubicacion": "Miranda",
+        "municipio": "Chacao", "parroquia": None,
+    }
+    aprobado = _miembro("Incendio en el CCCT, ubicado en el municipio Chacao.")
+    grupos_aprobados = [[aprobado]]
+    resultado = _finalizar_evento(evento, grupos_aprobados)
+    assert resultado["municipio"] == "Chacao"

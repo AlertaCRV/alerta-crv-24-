@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-01T00:15:47.556598+00:00",
+  "actualizado": "2026-08-01T01:01:25.376154+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-26T18:07:32+00:00",
     "hasta": "2026-07-31T19:33:36+00:00"
   },
-  "total_eventos": 32,
+  "total_eventos": 29,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
@@ -14,18 +14,18 @@
     "orden_publico": 3,
     "salud_publica": 1,
     "crisis_migratoria": 3,
-    "incendio": 6
+    "incendio": 3
   },
   "ranking_estados": [
-    {
-      "estado": "Distrito Capital",
-      "total": 7,
-      "confirmados": 2
-    },
     {
       "estado": "Zulia",
       "total": 4,
       "confirmados": 3
+    },
+    {
+      "estado": "Distrito Capital",
+      "total": 4,
+      "confirmados": 1
     },
     {
       "estado": "Lara",
@@ -51,11 +51,6 @@
       "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 2,
-      "confirmados": 1
     },
     {
       "estado": "Carabobo",
@@ -86,6 +81,16 @@
       "estado": "Tachira",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 1,
+      "confirmados": 1
+    },
+    {
+      "estado": "Nueva Esparta",
+      "total": 1,
+      "confirmados": 1
     }
   ],
   "cruce_estado_tipo": {
@@ -106,7 +111,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 1,
-      "incendio": 4
+      "incendio": 1
     },
     "Trujillo": {
       "inundacion": 1
@@ -140,14 +145,17 @@
     "Tachira": {
       "deslizamiento": 1
     },
+    "Miranda": {
+      "incendio": 1
+    },
     "Nueva Esparta": {
-      "incendio": 2
+      "incendio": 1
     }
   },
   "por_severidad": {
-    "alto": 7,
+    "alto": 5,
     "critico": 2,
-    "sin_clasificar": 23
+    "sin_clasificar": 22
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -175,7 +183,7 @@
       "2026-07": 3
     },
     "incendio": {
-      "2026-07": 6
+      "2026-07": 3
     }
   }
 }

@@ -65,12 +65,6 @@
     "fecha_deteccion": "2026-07-30T15:35:54.958924+00:00",
     "fecha_evento_temprana": "2026-07-30T14:28:53+00:00"
   },
-  "incendio::Nueva Esparta::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T15:36:01.739966+00:00",
-    "fecha_evento_temprana": "2026-07-30T12:12:15+00:00"
-  },
   "orden_publico::Bolivar::2026-07-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -83,23 +77,11 @@
     "fecha_deteccion": "2026-07-30T20:25:02.477396+00:00",
     "fecha_evento_temprana": "2026-07-30T20:04:41+00:00"
   },
-  "incendio::Distrito Capital::2026-07-30": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-30T20:24:52.237708+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00"
-  },
   "incendio::Distrito Capital::2026-07-29": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
     "fecha_evento_temprana": "2026-07-29T17:06:27+00:00"
-  },
-  "incendio::Nueva Esparta::2026-07-31": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-31T16:27:57.241863+00:00",
-    "fecha_evento_temprana": "2026-07-31T14:10:11+00:00"
   },
   "inundacion::Lara::2026-07-31": {
     "severidad": "sin_clasificar",
@@ -107,10 +89,18 @@
     "fecha_deteccion": "2026-07-31T20:46:26.393169+00:00",
     "fecha_evento_temprana": "2026-07-31T19:33:36+00:00"
   },
-  "incendio::Distrito Capital::2026-07-31": {
+  "incendio::Miranda::2026-07-30": {
     "severidad": "alto",
-    "confirmado": false,
+    "confirmado": true,
     "fecha_deteccion": "2026-08-01T00:15:34.034890+00:00",
-    "fecha_evento_temprana": "2026-07-31T12:57:13+00:00"
+    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00",
+    "municipio": "Chacao"
+  },
+  "incendio::Nueva Esparta::2026-07-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-07-31T16:27:57.241863+00:00",
+    "fecha_evento_temprana": "2026-07-30T12:12:15+00:00",
+    "municipio": "Mariño"
   }
 }

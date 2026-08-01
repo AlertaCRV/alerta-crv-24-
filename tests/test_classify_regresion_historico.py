@@ -43,6 +43,28 @@ _LIMITACIONES_CONOCIDAS = {
         "publicado es correcto porque se fusiona con otras fuentes que sí "
         "nombran Barinas explicitamente (ver verify.agrupar_y_verificar)."
     ),
+    # Caso real (31-07-2026): el incendio del CCCT esta en el municipio
+    # Chacao (estado Miranda, ver classify.py LISTA_NEGRA_POR_ESTADO/
+    # _REMAPEO_MUNICIPIO_A_ESTADO), pero solo una de las 4 fuentes del
+    # evento fusionado ("Noticias de Aqui") nombra "municipio Chacao"
+    # explicitamente -- las otras 3 solo dicen "Caracas"/"este de Caracas",
+    # que aisladas resuelven a Distrito Capital (el mismo patron ambiguo
+    # que origino el bug). El evento publicado es correcto porque se
+    # fusiona con la fuente que si nombra Chacao.
+    "incendio::Miranda::La Verdad (Zulia)": (
+        "Solo dice 'este de Caracas', sin nombrar Chacao -- aislada resuelve "
+        "a Distrito Capital. El evento fusionado es correcto porque otra "
+        "fuente del mismo cluster (Noticias de Aqui) si nombra 'municipio "
+        "Chacao' explicitamente."
+    ),
+    "incendio::Miranda::La Prensa de Monagas": (
+        "Mismo caso que 'incendio::Miranda::La Verdad (Zulia)': no nombra "
+        "Chacao, aislada resuelve a Distrito Capital."
+    ),
+    "incendio::Miranda::Reporte Confidencial (Nueva Esparta)": (
+        "Mismo caso que 'incendio::Miranda::La Verdad (Zulia)': no nombra "
+        "Chacao, aislada resuelve a Distrito Capital."
+    ),
 }
 
 
