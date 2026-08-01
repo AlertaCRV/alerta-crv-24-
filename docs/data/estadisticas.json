@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-01T01:55:36.368339+00:00",
+  "actualizado": "2026-08-01T08:44:38.103509+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-07-31T19:33:36+00:00"
+    "hasta": "2026-08-01T02:42:10+00:00"
   },
-  "total_eventos": 30,
+  "total_eventos": 32,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 7,
-    "infraestructura_electrica": 6,
+    "infraestructura_electrica": 8,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 3,
@@ -28,6 +28,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Bolivar",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 3,
       "confirmados": 1
@@ -38,12 +43,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Bolivar",
-      "total": 3,
-      "confirmados": 1
+      "estado": "Monagas",
+      "total": 2,
+      "confirmados": 0
     },
     {
-      "estado": "Monagas",
+      "estado": "Sucre",
       "total": 2,
       "confirmados": 0
     },
@@ -64,11 +69,6 @@
     },
     {
       "estado": "Trujillo",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Sucre",
       "total": 1,
       "confirmados": 0
     },
@@ -126,14 +126,15 @@
       "infraestructura_electrica": 1
     },
     "Sucre": {
-      "inundacion": 1
+      "inundacion": 1,
+      "infraestructura_electrica": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
       "crisis_migratoria": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "orden_publico": 1
     },
     "Apure": {
@@ -154,8 +155,8 @@
   },
   "por_severidad": {
     "alto": 5,
-    "critico": 2,
-    "sin_clasificar": 23
+    "critico": 3,
+    "sin_clasificar": 24
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -165,7 +166,8 @@
       "2026-07": 7
     },
     "infraestructura_electrica": {
-      "2026-07": 6
+      "2026-07": 6,
+      "2026-08": 2
     },
     "deslizamiento": {
       "2026-07": 3

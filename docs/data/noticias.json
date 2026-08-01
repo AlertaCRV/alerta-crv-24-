@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": "El Callao",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/",
+        "fecha": "2026-08-01T02:40:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-01T02:40:10+00:00",
+    "fecha_evento_temprana": "2026-08-01T02:40:10+00:00",
+    "fecha_deteccion": "2026-08-01T08:44:20.262801+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-01",
+    "titulo": "Falla eléctrica en Municipio El Callao, Bolivar",
+    "texto": "📌 Falla eléctrica en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 31/07/2026, 10:40 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:44 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Sucre",
+    "municipio": "Sucre",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/",
+        "fecha": "2026-08-01T02:42:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-01T02:42:10+00:00",
+    "fecha_evento_temprana": "2026-08-01T02:42:10+00:00",
+    "fecha_deteccion": "2026-08-01T08:44:23.621370+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Sucre::2026-08-01",
+    "titulo": "Falla eléctrica en Municipio Sucre, Sucre",
+    "texto": "📌 Falla eléctrica en Municipio Sucre, Sucre\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Sucre, Sucre\n🕒 Hecho reportado: 31/07/2026, 10:42 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:44 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Miranda",
     "municipio": "Chacao",
