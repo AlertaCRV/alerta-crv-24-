@@ -3737,3 +3737,75 @@ inconsistencias tras la corrección.
 
 `python3 -m pytest tests/` → 124 passed, 4 xfailed (conocidos, sin
 relación). `python3 scripts/validar_configs.py` → OK.
+
+---
+
+## A pedido del usuario (01-08-2026): "Ataque armado en Tachira" ocurrió en Colombia, no en Venezuela
+
+El usuario preguntó si la alerta "Ataque armado en Tachira" sería
+detectada como falsa por la auditoría de las 7pm, o si el sistema no la
+iba a detectar. Se investigó de inmediato en vez de esperar.
+
+### El hecho ocurrió en Colombia
+
+La fuente (El Pitazo) dice explícitamente: *"Frontera con Colombia | 11
+heridos por la explosión de un carro bomba contra la policía de Santander
+Táchira.- Por tercer día consecutivo se registran atentados con
+explosivos en el **Norte de Santander, Colombia**. La madrugada de este 1
+de agosto un carro bomba explotó en la sede de la Policía de **Norte de
+Santander**."* -- "Táchira" solo aparecía como el dateline del medio (El
+Pitazo reporta desde la frontera venezolana sobre un hecho ocurrido del
+otro lado), no como la ubicación del ataque. Norte de Santander es un
+departamento de Colombia, no un lugar de Venezuela.
+
+**No existía ningún filtro para esta clase de bug** -- ni
+`classify.py` (que solo mira si el nombre del estado aparece cerca de
+evidencia de tipo, sin verificar en qué país ocurrió el hecho) ni la
+verificación de IA (`estado_verificacion: APROBADO_IA` -- Groq la aprobó
+igual). Sin este chequeo, la respuesta honesta a la pregunta del usuario
+era "no, el sistema no la iba a detectar por su cuenta" -- se corrigió de
+inmediato en vez de dejarlo como una apuesta para la auditoría de la
+noche.
+
+**Corrección** (`scripts/classify.py`): se agrega "norte de santander" a
+`LISTA_NEGRA_POR_ESTADO["Tachira"]`. A diferencia de
+Chacao/Baruta/El Hatillo (que sí son lugares reales de Venezuela, solo
+del estado equivocado, y por eso se remapean), Norte de Santander no es
+un lugar de Venezuela -- no hay a dónde remapear, se descarta sin más (el
+sistema solo monitorea emergencias en Venezuela).
+
+**Limitación reconocida**: este fix cubre el caso confirmado (Táchira /
+Norte de Santander). El mismo patrón -- un medio venezolano fronterizo
+reportando "desde" un estado venezolano sobre un hecho ocurrido en el
+departamento colombiano vecino -- podría repetirse para Zulia (La
+Guajira/Cesar, Colombia), Apure (Arauca, Colombia) o Amazonas (Vichada,
+Colombia). No se agregaron esos casos hoy por no tener un ejemplo real
+que confirme el patrón exacto de redacción (y "Guajira" en particular es
+ambiguo: también es un municipio real de Zulia, Venezuela) -- queda
+anotado para que una futura auditoría los tenga en cuenta si aparece un
+caso similar.
+
+### Pruebas
+
+Caso real (ya no genera alerta) y un caso de control (un ataque armado
+genuino en Táchira que de paso menciona la cercanía con la frontera
+colombiana sigue generando alerta -- el filtro no debe descartar eventos
+venezolanos reales solo por mencionar a Colombia como referencia
+geográfica) en `tests/casos_clasificacion.jsonl`.
+
+### Corrección retroactiva
+
+Se eliminó `ataque_armado::Tachira::2026-08-01` de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl` y `data/publicados.json`. El informe
+narrativo `docs/data/informes/2026-08_ataque_armado.json` -- generado el
+mismo día, con esta como su única fuente -- se eliminó por completo (no
+queda ningún ataque armado real en agosto), igual que se hizo antes con
+`2026-07_sismo.json`; también se quitó su entrada de `index.json`. El
+nuevo `scripts/detectar_inconsistencias.py` (agregado ayer a CI) detectó
+esta fuente muerta automáticamente en cuanto se corrigió el dato --
+funcionando exactamente como se esperaba.
+
+`python3 -m pytest tests/` → 129 passed, 4 xfailed (conocidos, sin
+relación). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → sin inconsistencias.
