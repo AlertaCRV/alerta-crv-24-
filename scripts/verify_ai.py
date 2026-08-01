@@ -416,6 +416,37 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     )
     miembros_aprobados = [m for g in grupos_aprobados for m in g]
 
+    # evento["municipio"]/["parroquia"] los fija verify.agrupar_y_verificar()
+    # ANTES de esta verificacion, a partir de TODOS los miembros del cluster
+    # (el mas reciente con un valor no nulo) -- incluye fuentes que la IA
+    # puede rechazar aqui mismo por no ser el mismo hecho. Sin este chequeo,
+    # una fuente descartada que sí nombraba un municipio/parroquia deja esa
+    # ubicacion "pegada" al evento final aunque ninguna fuente PUBLICADA la
+    # respalde. Mismo criterio que ya se aplica abajo para el municipio/
+    # parroquia que propone la IA (ver comentario en pedir_ubicacion) --
+    # aqui aplica tambien cuando classify.py ya lo habia determinado y por
+    # eso nunca se le pidio nada a la IA. Caso real (31-07-2026): un cluster
+    # de "incendio en Distrito Capital" con una fuente aprobada sobre el
+    # CCCT (sin mencionar ningun municipio) y otra fuente del mismo cluster,
+    # sobre un hecho distinto, que si mencionaba "Parroquia La Vega,
+    # Municipio Libertador" y fue rechazada -- el evento publicado terminaba
+    # con esa parroquia/municipio igual.
+    texto_aprobados_norm = _normalizar(" ".join(m["texto"] for m in miembros_aprobados))
+    if evento.get("municipio") and _normalizar(evento["municipio"]) not in texto_aprobados_norm:
+        print(
+            f"[WARN] Municipio '{evento['municipio']}' del cluster no aparece "
+            f"textualmente en las fuentes aprobadas; se descarta para evitar "
+            f"una ubicación inventada."
+        )
+        evento["municipio"] = None
+    if evento.get("parroquia") and _normalizar(evento["parroquia"]) not in texto_aprobados_norm:
+        print(
+            f"[WARN] Parroquia '{evento['parroquia']}' del cluster no aparece "
+            f"textualmente en las fuentes aprobadas; se descarta para evitar "
+            f"una ubicación inventada."
+        )
+        evento["parroquia"] = None
+
     score = sum(_peso_efectivo(r, evento["ubicacion"]) for r in representantes)
     severidades = [m["severidad"] for m in miembros_aprobados if m["severidad"] != "sin_clasificar"]
     orden_severidad = ["critico", "alto", "medio", "bajo"]

@@ -3358,3 +3358,177 @@ trabajo. No se modifica ni se deshabilita en esta sesión (cambiar
 workflows de CI/CD no es parte del alcance de una auditoría de datos, y es
 una decisión que le corresponde al usuario) -- queda documentado aquí y
 notificado explícitamente por su severidad.
+
+---
+
+## Auditoría a pedido del usuario (31-07-2026, ~21:00 UTC): 4 alertas de incendio repetidas y mal ubicadas
+
+El usuario reportó 4 alertas de incendio visibles en el sitio que parecían
+duplicadas y/o mal ubicadas: "Incendio en Parroquia La Vega, Municipio
+Libertador, Distrito Capital", "Incendio en Nueva Esparta", "Incendio en
+Distrito Capital" e "Incendio en Municipio Mariño, Nueva Esparta".
+
+### Diagnóstico: eran en realidad 2 incendios reales, cada uno duplicado
+
+1. **Incendio del CCCT** (30 y 31-07): el mismo incendio en el Centro
+   Ciudad Comercial Tamanaco, reportado primero el 30-07 (3 fuentes: La
+   Verdad, La Prensa de Monagas, Noticias de Aqui) y de nuevo el 31-07 (1
+   fuente adicional, Reporte Confidencial) -- dos alertas separadas para
+   el mismo hecho.
+2. **Incendio del C.C. Los Cedros, Porlamar** (30 y 31-07): el mismo
+   incendio en Nueva Esparta, reportado primero el 30-07 (2 fuentes) y de
+   nuevo el 31-07 con un artículo de seguimiento del mismo medio (El
+   Periodico de Monagas) más una tercera fuente -- misma duplicación.
+
+### Causa raíz 1: `incendio` estaba excluido por completo de la ventana de 36h que reconoce "el mismo evento" entre corridas distintas
+
+`state.TIPOS_SIN_VENTANA_MISMO_EVENTO` incluía `incendio` desde el
+30-07-2026 (ver hallazgo anterior en este mismo documento), para evitar
+que dos incendios genuinamente distintos en un estado populoso se
+fusionaran por error (el caso real de la explosión de gas vs. el CCCT).
+Pero excluirlo por completo generó el problema opuesto: un artículo de
+seguimiento sobre el MISMO incendio, publicado horas o un día después,
+nunca se reconocía como el mismo evento y generaba una alerta duplicada.
+
+**Corrección** (`scripts/state.py`): `incendio` vuelve a tener ventana de
+36h, pero ahora exige además que el municipio coincida en ambos lados
+(`TIPOS_CON_VENTANA_EXIGE_MISMO_MUNICIPIO`) -- si cualquiera de los dos
+eventos no tiene municipio detectado, no se reutiliza la clave. Esto
+evita el falso positivo original (la explosión de gas tenía municipio
+Libertador; el CCCT, antes del fix de causa raíz 2 abajo, no tenía
+municipio detectado) sin reintroducir las alertas duplicadas, ya que dos
+reportes del mismo incendio casi siempre nombran, entre ambos, el mismo
+municipio. `marcar_publicados()` ahora guarda `municipio` en
+`data/publicados.json` para esta comparación.
+
+### Causa raíz 2: el CCCT (municipio Chacao) se clasificaba como Distrito Capital
+
+El CCCT está en el municipio **Chacao**, que pertenece al estado
+**Miranda** -- Distrito Capital solo tiene un municipio (Libertador). El
+problema es que la prensa venezolana casi siempre describe la zona como
+"en Caracas" (uso coloquial del área metropolitana, que incluye
+municipios de Miranda como Chacao/Baruta/El Hatillo), y "caracas" es
+alias de Distrito Capital en `config/estados.yaml` -- el artículo
+terminaba clasificado como Distrito Capital pese a nombrar "municipio
+Chacao" explícitamente.
+
+**Corrección** (`scripts/classify.py`): se agrega Chacao/Baruta/El
+Hatillo a `LISTA_NEGRA_POR_ESTADO["Distrito Capital"]` -- pero a
+diferencia de otras entradas de esa lista (que solo descartan el match),
+aquí se **redirige** la detección al estado real
+(`_REMAPEO_MUNICIPIO_A_ESTADO`), reutilizando la misma ventana de
+proximidad ya encontrada para "Caracas" (que ya contenía la evidencia de
+tipo cercana -- el problema nunca fue esa ventana, solo la etiqueta de
+estado resultante). No se agregaron como alias directos de Miranda en
+`estados.yaml` porque casi siempre aparecen como "municipio Chacao", y
+`_es_mencion_subestatal()` ya excluye por diseño cualquier mención
+"municipio X"/"parroquia X" como evidencia de estado (para no confundir
+"municipio Sucre" con el estado Sucre) -- lo que también habría
+bloqueado a Chacao como evidencia directa de Miranda.
+
+**Limitación conocida, no resuelta**: el remapeo solo aplica a la fuente
+que efectivamente nombra Chacao/Baruta/El Hatillo. Si dentro de una misma
+corrida varias fuentes del mismo incendio se clasifican por separado y
+solo alguna de ellas nombra el municipio de Miranda, es posible que el
+evento se fragmente entre dos estados dentro de esa corrida (mitigado en
+la práctica porque `verify.agrupar_y_verificar` ya agrupa por
+tipo+ubicación tomando el municipio del miembro más reciente que lo
+tenga). Se marcaron 3 fuentes reales como excepción conocida (`xfail`) en
+`tests/test_classify_regresion_historico.py` -- ninguna nombra Chacao por
+sí sola, pero el evento fusionado sí es correcto porque otra fuente del
+mismo cluster lo nombra.
+
+### Causa raíz 3 (la más seria, encontrada al investigar "La Vega"): el municipio/parroquia que classify.py fija a nivel de CLUSTER no se revalidaba contra las fuentes que la IA realmente aprueba
+
+La alerta "Incendio en Parroquia La Vega, Municipio Libertador, Distrito
+Capital" (31-07) tenía una sola fuente publicada (Reporte Confidencial,
+artículo sobre el CCCT) cuyo texto **nunca menciona La Vega ni
+Libertador** -- solo dice "en el este de Caracas". "La Vega" es una
+parroquia real de Libertador (pasó la validación de "¿es un nombre válido
+de la jerarquía del INE?"), pero no tiene ninguna relación con este
+artículo.
+
+**Causa raíz real**: `verify.agrupar_y_verificar()` fija
+`evento["municipio"]`/`["parroquia"]` a partir de **todos** los miembros
+crudos agrupados en el cluster (el más reciente con un valor no nulo),
+**antes** de que `verify_ai.py` decida qué fuentes se aprueban. Si el
+cluster tenía, además de la fuente del CCCT, otra fuente sobre un hecho
+distinto que sí nombraba "Parroquia La Vega, Municipio Libertador" y la
+IA la rechazó (por no ser el mismo hecho), esa ubicación quedaba "pegada"
+al evento final de todos modos -- exactamente el mismo patrón que ya se
+había corregido para el municipio/parroquia que *propone la IA*
+(`verify_ai.py`, caso real de Zulia/Sinamaica-Guajira, ver entrada
+anterior de este documento), pero ese fix nunca cubrió el municipio que
+**classify.py ya había fijado** antes de llamarla.
+
+**Corrección** (`scripts/verify_ai.py`, `_finalizar_evento`): se agrega
+el mismo chequeo de anclaje textual (¿el municipio/parroquia aparece
+literalmente en el texto de las fuentes **aprobadas**?) también para el
+municipio/parroquia que llega ya fijado por `classify.py`, no solo para
+el que propone la IA. Si no aparece, se descarta a `None` en vez de
+publicarse.
+
+### Pruebas
+
+- `tests/test_verify_ai_filtros.py`: 2 pruebas nuevas de `_finalizar_evento`
+  (el municipio se descarta si ninguna fuente aprobada lo nombra; se
+  conserva si sí).
+- `tests/casos_clasificacion.jsonl`: 4 casos nuevos (CCCT real → Miranda,
+  control de Distrito Capital genuino sin Chacao, control de Baruta,
+  Porlamar como alias de Mariño en un artículo de seguimiento real).
+- `config/ubicaciones_detalle.json`: se agrega `"alias": "Porlamar"` al
+  municipio Mariño (Nueva Esparta) -- la prensa casi nunca dice "municipio
+  Mariño" explícitamente, siempre "Porlamar" (su capital).
+- Regresión completa de `clasificar_item()` contra las fuentes de
+  `data/historico_fuentes_texto.jsonl`: sin cambios fuera de lo esperado.
+  `python3 scripts/validar_configs.py` → OK. 115 pruebas pasan (4 xfail
+  conocidos, documentados arriba).
+
+### Corrección retroactiva
+
+Se fusionaron los 2 pares de alertas duplicadas en `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`: `incendio::Distrito Capital::2026-07-30` +
+`incendio::Distrito Capital::2026-07-31` → `incendio::Miranda::2026-07-30`
+(municipio Chacao, 4 fuentes, severidad alto, confirmado); e
+`incendio::Nueva Esparta::2026-07-30` + `incendio::Nueva Esparta::2026-07-31`
+→ una sola entrada bajo la clave del 30-07 (municipio Mariño, 3 fuentes
+únicas, sin_clasificar, confirmado). El score y la confirmación se
+recalcularon con la misma fórmula de `verify_ai._peso_efectivo()`
+(incluye el bono de fuente regional). Título y texto se regeneraron con
+`render.redactar_noticia()`. Los informes narrativos de julio
+(`2026-07_incendio.json`, `2026-07_general.json`) no necesitaron
+corrección: ambos se generaron a las 10:04 UTC del 31-07, antes de que
+existieran las alertas duplicadas -- se regenerarán solos en la próxima
+corrida de producción (máximo 1 vez al día). Estadísticas regeneradas con
+`python3 scripts/build_dashboard.py`.
+
+### Respuestas a las preguntas del usuario sobre el proceso
+
+**¿Por qué no los vio la auditoría diaria de las 7:00 p.m.?** Esa
+auditoría (la que corrió esta misma sesión más temprano hoy, ver PR #118
+arriba) reviso alertas hasta su propia hora de corte; las 4 alertas de
+incendio se publicaron/duplicaron horas **después** de esa corrida (el
+segundo incendio del CCCT se detectó a las 00:15 UTC del 01-08, y el
+mecanismo de dedup de `incendio` recién se corrigió en esta sesión). No
+es que la auditoría las pasara por alto: no existían todavía cuando
+corrió.
+
+**¿El sistema monitorea/publica cada 10 minutos?** Sí -- confirmado en
+`scripts/verify_ai.py` (comentario de `MAX_CICLOS_ESPERA_GROQ`: "El
+monitoreo corre cada 10 minutos"). Cada corrida agrupa, verifica con IA y
+publica de forma automática sin intervención humana.
+
+**¿Se puede hacer la auditoría diaria más efectiva?** El hallazgo de hoy
+sugiere una mejora concreta: la auditoría diaria (prompt de la tarea
+programada) revisa alertas por rango de fecha de detección, pero no tiene
+un paso explícito que busque duplicados **entre alertas ya publicadas de
+tipo incendio/inundación/deslizamiento con el mismo municipio** (no solo
+mismo estado+tipo+día, que es lo que ya cubre `state.py`). Sería valioso
+agregar ese chequeo explícito al prompt de la auditoría diaria: comparar
+`fuentes[].link`/nombres de centros comerciales o vías mencionadas entre
+alertas del mismo tipo dentro de una ventana de 72h, no solo confiar en
+que `state.py` las haya fusionado correctamente en el momento de publicar.
+Queda como sugerencia para el usuario, no implementada en este PR (cambiar
+el prompt de la tarea programada está fuera del alcance de un cambio de
+código).

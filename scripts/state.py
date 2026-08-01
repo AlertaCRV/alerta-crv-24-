@@ -12,19 +12,31 @@ DIAS_RETENCION = 3
 # medios que cubren la misma inundacion con 6+ horas de diferencia y que,
 # por caer en corridas distintas, nunca se agrupan juntos en verify.py.
 # Excluye sismo (tiene su propio mecanismo de correlacion cruzada, ver
-# _mismo_sismo_ya_publicado), orden_publico (durante disturbios, el mismo
+# _mismo_sismo_ya_publicado) y orden_publico (durante disturbios, el mismo
 # tipo+ubicacion puede repetirse genuinamente dia a dia, y agruparlos
-# ocultaria eventos reales distintos) e incendio (mismo problema: un estado
-# populoso como Distrito Capital puede tener varios incendios/explosiones
-# genuinamente distintos en menos de 36 horas). Caso real (30-07-2026): una
-# explosion de gas en la avenida Nueva Granada (29-07, 17:06, "alto",
-# dos heridos, 3 fuentes ya corroboradas) reutilizo su clave para un
-# incendio COMPLETAMENTE DISTINTO al dia siguiente (una libreria del CCCT,
-# 30-07, 14:46) solo por compartir tipo+ubicacion dentro de la ventana de
-# 36h -- la alerta original, ya validada y de mayor severidad, quedo
-# silenciosamente sobrescrita y desaparecio del sitio publico.
+# ocultaria eventos reales distintos).
 VENTANA_HORAS_MISMO_EVENTO = 36
-TIPOS_SIN_VENTANA_MISMO_EVENTO = {"sismo", "orden_publico", "incendio"}
+TIPOS_SIN_VENTANA_MISMO_EVENTO = {"sismo", "orden_publico"}
+
+# incendio tambien quedaba excluido de la ventana hasta el 31-07-2026: un
+# estado populoso como Distrito Capital puede tener varios incendios
+# genuinamente distintos en menos de 36h (caso real, 30-07-2026: una
+# explosion de gas en la avenida Nueva Granada reutilizo por error su clave
+# para un incendio COMPLETAMENTE DISTINTO al dia siguiente -- una libreria
+# del CCCT -- solo por compartir tipo+ubicacion). Pero excluirlo por
+# completo genero el problema opuesto: dos articulos de seguimiento sobre
+# el MISMO incendio (mismo centro comercial, un dia despues) nunca se
+# fusionaban y quedaban como alertas duplicadas -- caso real (31-07-2026):
+# el incendio del centro comercial Los Cedros en Porlamar (Nueva Esparta) y
+# el incendio del CCCT (originalmente mal ubicado en Distrito Capital, ver
+# classify.py) se publicaron dos veces cada uno. Para incendio
+# especificamente, la ventana SI aplica pero exige ademas que el municipio
+# coincida (ver _resolver_clave) -- evita el falso positivo original (la
+# explosion de gas tenia municipio Libertador, el CCCT no tenia municipio
+# detectado todavia) sin reintroducir el problema de las alertas
+# duplicadas (dos reportes del mismo incendio casi siempre nombran, entre
+# ambos, el mismo municipio).
+TIPOS_CON_VENTANA_EXIGE_MISMO_MUNICIPIO = {"incendio"}
 
 
 def _fecha_dia_dedup(evento):
@@ -76,13 +88,24 @@ def _resolver_clave(evento, publicados):
     uno), se reutiliza esa clave existente -- se trata como el mismo
     evento, no uno nuevo, aunque nunca se hayan agrupado juntos en la misma
     corrida. Sismo y orden_publico quedan fuera de esta logica (ver
-    TIPOS_SIN_VENTANA_MISMO_EVENTO) y usan siempre la clave por dia exacto."""
+    TIPOS_SIN_VENTANA_MISMO_EVENTO) y usan siempre la clave por dia exacto.
+    Incendio (ver TIPOS_CON_VENTANA_EXIGE_MISMO_MUNICIPIO) exige ademas que
+    el municipio coincida en ambos lados -- si cualquiera de los dos no
+    tiene municipio detectado, no se reutiliza la clave (mismo criterio
+    conservador que evito el falso positivo original de este mecanismo)."""
     if evento["tipo"] not in TIPOS_SIN_VENTANA_MISMO_EVENTO:
         fecha_nueva = dateparser.isoparse(evento.get("fecha_evento_temprana", evento["fecha_evento"]))
         limite = timedelta(hours=VENTANA_HORAS_MISMO_EVENTO)
+        exige_municipio = evento["tipo"] in TIPOS_CON_VENTANA_EXIGE_MISMO_MUNICIPIO
         for clave, previo in publicados.items():
             partes = clave.split("::")
             if len(partes) < 3 or partes[0] != evento["tipo"] or partes[1] != evento["ubicacion"]:
+                continue
+            if exige_municipio and (
+                not evento.get("municipio")
+                or not previo.get("municipio")
+                or evento["municipio"] != previo["municipio"]
+            ):
                 continue
             fecha_previa_str = previo.get("fecha_evento_temprana")
             if fecha_previa_str:
@@ -164,5 +187,6 @@ def marcar_publicados(eventos, publicados):
             "confirmado": evento["confirmado"],
             "fecha_deteccion": evento["fecha_deteccion"],
             "fecha_evento_temprana": evento.get("fecha_evento_temprana", evento["fecha_evento"]),
+            "municipio": evento.get("municipio"),
         }
     return publicados

@@ -26,6 +26,35 @@ LISTA_NEGRA_POR_ESTADO = {
                 "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
+    # Caso real (31-07-2026): un incendio en el CCCT ("ubicado en el
+    # municipio Chacao") se publicaba como Distrito Capital porque el
+    # articulo tambien menciona "Caracas" (alias de Distrito Capital) en
+    # sentido coloquial del area metropolitana. Chacao/Baruta/El Hatillo son
+    # municipios reales de Miranda, nunca de Distrito Capital (cuyo unico
+    # municipio es Libertador) -- si el texto los nombra explicitamente, no
+    # basta con descartar el match de Distrito Capital: se redirige a
+    # Miranda (ver _REMAPEO_MUNICIPIO_A_ESTADO abajo), porque agregarlos
+    # como alias de Miranda en estados.yaml no funciona -- casi siempre
+    # aparecen como "municipio Chacao", y _es_mencion_subestatal() ya
+    # excluye por diseno cualquier mencion "municipio X"/"parroquia X" como
+    # evidencia de estado (para no confundir "municipio Sucre" con el
+    # estado Sucre), lo que tambien bloquearia a Chacao como evidencia
+    # directa de Miranda.
+    "Distrito Capital": ["chacao", "baruta", "el hatillo"],
+}
+
+# Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
+# match de un estado se descarta por una de estas frases, se reintenta la
+# deteccion como si el candidato fuera el estado real indicado aqui (misma
+# ventana de proximidad ya encontrada para "Caracas", que ya incluye la
+# evidencia de tipo cercana -- el problema nunca fue esa ventana, solo la
+# etiqueta de estado resultante).
+_REMAPEO_MUNICIPIO_A_ESTADO = {
+    "Distrito Capital": {
+        "chacao": "Miranda",
+        "baruta": "Miranda",
+        "el hatillo": "Miranda",
+    },
 }
 
 # Un keyword suelto de tipo no siempre significa que el articulo trata
@@ -344,8 +373,15 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                 continue
 
             lista_negra = LISTA_NEGRA_POR_ESTADO.get(nombre_estado, [])
-            if any(frase in texto_norm for frase in lista_negra):
-                continue
+            frase_negra = next((f for f in lista_negra if f in texto_norm), None)
+            if frase_negra is not None:
+                estado_real = _REMAPEO_MUNICIPIO_A_ESTADO.get(nombre_estado, {}).get(frase_negra)
+                if estado_real is None:
+                    continue
+                ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
+                if ventana:
+                    resultado.append((estado_real, ventana))
+                break
 
             ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
             if ventana:
