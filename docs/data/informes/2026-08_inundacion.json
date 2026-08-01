@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "inundacion",
+  "tipo_label": "Inundación",
+  "cerrado": false,
+  "generado": "2026-08-01T20:04:46.801507+00:00",
+  "actualizado_hasta": "2026-08-01T20:04:18.402120+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 7,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró una disminución significativa en el número de eventos de inundación en comparación con el período anterior, 2026-07, con solo 1 evento registrado en este período, en comparación con los 7 eventos registrados en el período anterior. Uno de los eventos reportados fue en el estado Barinas, donde estudiantes no pudieron asistir a su graduación debido a la crecida de un río (El Pitazo). La crecida de la quebrada del sector El Pescado, parroquia Socorro, en el estado Barinas, impidió que algunos estudiantes, como Sofía, asistieran a su graduación el 31 de julio, ya que consideraron que intentar cruzar el río era un peligro (El Pitazo). Este evento resalta la importancia de considerar las condiciones climáticas y geográficas en la planificación de actividades, especialmente en áreas propensas a inundaciones. En general, el período de 2026-08 se caracterizó por una menor frecuencia de eventos de inundación en comparación con el período anterior.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
+    }
+  ]
+}
