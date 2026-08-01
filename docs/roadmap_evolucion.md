@@ -3632,3 +3632,108 @@ otra vez.
 relación). `python3 scripts/validar_configs.py` → OK. `python3
 scripts/detectar_inconsistencias.py` → "Sin inconsistencias detectadas."
 tras las correcciones de este hallazgo.
+
+---
+
+## Decisión del usuario (01-08-2026): eliminar el workflow de auto-merge y agregar ventana de tiempo a reportes de filial
+
+Respuesta a los 2 hallazgos pendientes documentados en la entrada anterior.
+
+### A. `.github/workflows/auto-cleanup.yml` eliminado
+
+El usuario preguntó si era posible mantener el sistema automatizado sin
+depender de que él tuviera que intervenir manualmente varias veces al
+día. La respuesta es que **ya lo está**, por dos caminos que no dependen
+de `auto-cleanup.yml`:
+
+1. **`monitor.yml`** (corrida cada 10 minutos) ya publica y fusiona sus
+   propias PRs de "Actualizar reportes" de forma segura con `gh pr merge
+   --auto` -- esto solo completa la fusión cuando el check "validar" (la
+   suite de pruebas real) pasa, respetando el ruleset de `main`. Nunca
+   usó `auto-cleanup.yml`.
+2. **Las sesiones de Claude Code** (la auditoría diaria de las 7pm, y
+   sesiones interactivas como esta) ya abren PR, esperan activamente a
+   que "validar" pase, y fusionan -- sin que el usuario tenga que hacer
+   clic en nada.
+
+`auto-cleanup.yml` no agregaba automatización real: duplicaba lo que ya
+hacían los dos mecanismos de arriba, pero de forma insegura (auto-aprobación
+por coincidencia de texto en el título del PR, usando una GitHub Action de
+terceros, sin exigir que el check de pruebas pasara primero). Ya se había
+usado, sin mala intención, para fusionar en 1-3 minutos dos parches
+incompletos del bug de "enfrentamiento" (ver esa entrada). Se elimina el
+archivo por completo -- la automatización que el usuario pidió se
+mantiene intacta.
+
+### B. Reportes de filial: cada correo es independiente, se agrega ventana de tiempo
+
+El usuario confirmó cómo funciona el reporte de las filiales en la
+práctica: "cada correo se toma como independiente sin considerar si en
+el pasado se informó sobre lo mismo y sin considerar si es o no una
+actualización". Esto confirma que el sistema no puede asumir que dos
+correos sobre el mismo municipio, sin importar cuánto tiempo los separe,
+describen la misma situación -- necesita su propio criterio.
+
+**Corrección** (`scripts/verify.py`): se agrega
+`_separar_reportes_filial_por_ventana()`, análoga a
+`_separar_sismos_por_magnitud()` ya existente -- dentro de un cluster
+(mismo tipo+ubicación, misma corrida), los reportes de filial se separan
+en sub-eventos si el hueco entre reportes consecutivos (ordenados por
+fecha) supera `VENTANA_HORAS_MISMO_EVENTO_FILIAL` (36h, misma duración ya
+usada en `state.VENTANA_HORAS_MISMO_EVENTO` para no inventar un criterio
+nuevo sin motivo). Los miembros que no son reporte de filial (un artículo
+de prensa sobre el mismo tipo+ubicación, caso raro) se unen al sub-grupo
+más reciente.
+
+**Efecto secundario esperado, y por qué es correcto**: dos pruebas ya
+existentes (`test_municipio_y_parroquia_no_se_mezclan_entre_fuentes_distintas`,
+`test_parroquia_se_conserva_si_coincide_con_el_municipio_elegido`) usaban
+fechas separadas por 21 días asumiendo que debían fusionarse en un solo
+evento -- se ajustaron las fechas de esos casos sintéticos a dentro de la
+ventana (sin cambiar lo que realmente prueban: que municipio/parroquia no
+se mezclen entre fuentes de un mismo cluster), y se agregaron 2 pruebas
+nuevas para la ventana en sí (un caso real que ahora se separa en 2
+eventos, un control de que reportes cercanos en el tiempo se siguen
+fusionando).
+
+### Hallazgo adicional al reconstruir el caso real: un mismo link de correo con contenido distinto
+
+Al revisar el texto completo de las 3 fuentes de
+`crisis_migratoria::Falcon::2026-07-07` para la corrección retroactiva, se
+encontró que **2 de las 3 fuentes comparten el mismo link** (mismo
+Message-ID de Gmail) pero tienen contenido completamente distinto:
+
+- 28/07/2026: "municipio Colina... 17 familias, 46 personas..."
+- 07/07/2026: "parroquia Las Calderas, municipio Colina... 3 familias, 11
+  personas..." -- **mismo link que la fuente del 28/07**, pero cifras y
+  fecha distintas.
+- 29/07/2026: "municipio Zamora... 22 familias, 42 personas..."
+
+No se investigó la causa raíz de esta colisión de Message-ID en esta
+sesión (requeriría acceso a la bandeja de Gmail para diagnosticar
+`fetch_gmail.py`, no disponible aquí) -- queda anotado como hallazgo
+pendiente para una futura auditoría. Para la corrección retroactiva de
+abajo se trataron como 2 fuentes distintas (por su contenido, no por su
+link), ya que claramente describen hechos/fechas diferentes.
+
+### Corrección retroactiva
+
+`crisis_migratoria::Falcon::2026-07-07` (3 fuentes, "Municipio Zamora") se
+dividió en 2 alertas en `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`:
+
+- `crisis_migratoria::Falcon::2026-07-07`: solo la fuente del 07/07 --
+  "Parroquia Las Calderas, Municipio Colina" (11 personas, 3 familias).
+- `crisis_migratoria::Falcon::2026-07-28`: fuentes del 28/07 y 29/07 (24h
+  de diferencia, dentro de la ventana) -- "Municipio Zamora" (mismo
+  resumen consolidado ya publicado, que ya usaba la fuente más reciente).
+
+Título y texto regenerados con `render.redactar_noticia()`. Estadísticas
+regeneradas. `python3 scripts/detectar_inconsistencias.py` → sin
+inconsistencias tras la corrección.
+
+### Pruebas
+
+`python3 -m pytest tests/` → 124 passed, 4 xfailed (conocidos, sin
+relación). `python3 scripts/validar_configs.py` → OK.
