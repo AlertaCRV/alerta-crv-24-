@@ -41,17 +41,6 @@ LISTA_NEGRA_POR_ESTADO = {
     # estado Sucre), lo que tambien bloquearia a Chacao como evidencia
     # directa de Miranda.
     "Distrito Capital": ["chacao", "baruta", "el hatillo"],
-    # Caso real (01-08-2026): "Frontera con Colombia | 11 heridos por la
-    # explosion de un carro bomba contra la policia de Santander Tachira.-
-    # ... un carro bomba exploto en la sede de la Policia de Norte de
-    # Santander... atentados... en el Norte de Santander, Colombia" -- el
-    # ataque ocurrio en Colombia, no en Venezuela. "Tachira" solo aparecia
-    # como el dateline del medio (El Pitazo reporta DESDE Tachira sobre la
-    # frontera), no como la ubicacion del hecho. A diferencia de
-    # Chacao/Baruta/El Hatillo, Norte de Santander no es un lugar de
-    # Venezuela -- no hay a donde remapear, se descarta sin mas (el
-    # sistema solo monitorea emergencias en Venezuela).
-    "Tachira": ["norte de santander"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -67,6 +56,60 @@ _REMAPEO_MUNICIPIO_A_ESTADO = {
         "el hatillo": "Miranda",
     },
 }
+
+# Lugares reales del lado colombiano de la frontera -- cuando aparecen en
+# el texto, son evidencia de que el hecho pudo ocurrir en Colombia, no en
+# el estado venezolano fronterizo que tambien se menciona (a menudo solo
+# como el dateline del medio: "Frontera con Colombia... Tachira.- Por
+# tercer dia..."). Frases especificas ("la guajira, colombia", no
+# "guajira" sola) para los nombres que colisionan con lugares reales de
+# Venezuela: "Guajira" es tambien un municipio de Zulia, y "Cesar"/
+# "Guainia" son substrings de un municipio de Merida ("Julio Cesar Sala")
+# y una parroquia de Bolivar ("Guainiamo") respectivamente -- ver
+# scripts/validar_configs.py, que no detecta colisiones de substring como
+# esta, se verifico a mano contra config/ubicaciones_detalle.json.
+#
+# Ver _es_evento_extranjero_sin_municipio(): el descarte SOLO aplica si
+# el texto no nombra ademas un municipio/parroquia venezolano especifico
+# de ese estado -- los grupos armados colombianos (ELN, FARC, Segunda
+# Marquetalia...) combaten con frecuencia EN territorio venezolano
+# fronterizo, y esos articulos mencionan departamentos/ciudades
+# colombianas como contexto sin que el hecho deje de ser una emergencia
+# real en Venezuela. Casos reales de control que NO deben descartarse
+# (ver tests/casos_clasificacion.jsonl): combates ELN/Segunda Marquetalia
+# "en los estados venezolanos Apure y Amazonas" (municipios Romulo
+# Gallegos/Maroa, Infobae 07-08-2025); ataque de las FARC contra un
+# puesto militar venezolano en "municipio Paez de Apure" (SwissInfo,
+# 29-03-2021).
+FRONTERA_EXTRANJERA_POR_ESTADO = {
+    # Caso real que motivo este mecanismo (01-08-2026): un carro bomba
+    # "exploto en la sede de la Policia de Norte de Santander" se
+    # publicaba como "Ataque armado en Tachira" -- el texto nunca nombra
+    # ningun municipio de Tachira, solo el dateline "Tachira.-" del medio.
+    "Tachira": ["norte de santander", "cucuta"],
+    "Zulia": ["riohacha", "valledupar", "la guajira, colombia",
+              "departamento de la guajira", "cesar, colombia",
+              "departamento del cesar"],
+    "Apure": ["arauca, colombia", "departamento de arauca", "arauquita",
+              "saravena", "puerto carreno", "puerto carreño"],
+    "Amazonas": ["vichada", "inirida", "puerto carreno", "puerto carreño",
+                 "guainia, colombia", "departamento de guainia"],
+}
+
+
+def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
+    """True si el texto nombra un lugar colombiano de
+    FRONTERA_EXTRANJERA_POR_ESTADO para este estado fronterizo Y no se
+    detecto ningun municipio/parroquia venezolano especifico -- ver
+    comentario extenso en FRONTERA_EXTRANJERA_POR_ESTADO sobre por que la
+    ausencia de municipio es la condicion clave (no basta con que
+    Colombia aparezca mencionada)."""
+    if municipio:
+        return False
+    lugares = FRONTERA_EXTRANJERA_POR_ESTADO.get(ubicacion)
+    if not lugares:
+        return False
+    return any(lugar in texto_norm for lugar in lugares)
 
 # Un keyword suelto de tipo no siempre significa que el articulo trata
 # realmente de ese tipo de evento. Caso real: "Activan cerco epidemiologico
@@ -828,6 +871,7 @@ def clasificar_item(item):
         item["parroquia"] = None
         return [item]
 
+    texto_norm = _normalizar(item["texto"])
     resultado = []
     for ubicacion, ventana in ubicaciones:
         nuevo = dict(item)
@@ -840,7 +884,17 @@ def clasificar_item(item):
         texto_severidad = ventana if ventana is not None else item["texto"]
         nuevo["severidad"] = detectar_severidad(texto_severidad, nuevo["tipos"])
         nuevo["municipio"], nuevo["parroquia"] = detectar_municipio_parroquia(item["texto"], ubicacion)
+        if _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, nuevo["municipio"]):
+            continue
         resultado.append(nuevo)
+
+    if not resultado:
+        item["ubicacion"] = None
+        item["tipos"] = []
+        item["severidad"] = "sin_clasificar"
+        item["municipio"] = None
+        item["parroquia"] = None
+        return [item]
     return resultado
 
 
