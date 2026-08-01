@@ -106,5 +106,11 @@
     "confirmado": false,
     "fecha_deteccion": "2026-07-31T20:46:26.393169+00:00",
     "fecha_evento_temprana": "2026-07-31T19:33:36+00:00"
+  },
+  "incendio::Distrito Capital::2026-07-31": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-01T00:15:34.034890+00:00",
+    "fecha_evento_temprana": "2026-07-31T12:57:13+00:00"
   }
 }
