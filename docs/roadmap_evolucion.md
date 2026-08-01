@@ -3809,3 +3809,94 @@ funcionando exactamente como se esperaba.
 `python3 -m pytest tests/` → 129 passed, 4 xfailed (conocidos, sin
 relación). `python3 scripts/validar_configs.py` → OK. `python3
 scripts/detectar_inconsistencias.py` → sin inconsistencias.
+
+---
+
+## A pedido del usuario (01-08-2026): generalizar el fix de Táchira/Colombia a todos los estados fronterizos, con una condición de seguridad clave
+
+Sobre el hallazgo anterior ("Ataque armado en Tachira" ocurrido en
+realidad en Colombia): el usuario pidió generalizar el fix a Zulia, Apure
+y Amazonas (limitado a la frontera con Colombia, no Brasil por ahora), y
+antes de implementar propuso 2 casos reales para evaluar el diseño:
+combates entre el ELN y la Segunda Marquetalia "en los estados
+venezolanos Apure y Amazonas" (Infobae, 07-08-2025), y un ataque de las
+FARC contra un puesto militar venezolano en "municipio Páez de Apure"
+(SwissInfo, 29-03-2021).
+
+### El diseño ingenuo (solo lista de lugares colombianos) habría sido un error grave
+
+Se leyeron ambos artículos completos antes de escribir código. Los dos
+son eventos **reales, graves y ocurridos en territorio venezolano**
+(combate armado y toma de territorio por guerrilla colombiana en Apure/
+Amazonas; ataque contra un puesto militar venezolano) -- pero ambos
+mencionan extensamente a Colombia y a grupos armados colombianos (ELN,
+FARC, Segunda Marquetalia), porque esa es la naturaleza real del
+fenómeno: grupos armados colombianos operan y combaten **dentro** de
+territorio venezolano fronterizo. Un filtro que descartara la ubicación
+venezolana solo por la presencia de "Colombia"/nombres de lugares
+colombianos habría descartado exactamente el tipo de alerta grave que el
+sistema más necesita capturar -- el efecto contrario al buscado.
+
+### Corrección con salvaguarda: solo descarta si NO hay municipio venezolano detectado
+
+`scripts/classify.py`: nuevo mecanismo `FRONTERA_EXTRANJERA_POR_ESTADO` +
+`_es_evento_extranjero_sin_municipio()`, separado de `LISTA_NEGRA_POR_ESTADO`
+(la entrada puntual de Táchira/Norte de Santander se migró aquí). Un
+estado fronterizo con un lugar colombiano conocido en el texto **solo se
+descarta si además no se detectó ningún municipio/parroquia venezolano
+específico** de ese estado -- si el artículo nombra "municipio Páez" o
+"municipio Rómulo Gallegos", la mención de Colombia se trata como
+contexto (el fenómeno real de grupos armados colombianos operando en
+Venezuela), no como evidencia de que el hecho ocurrió del otro lado.
+
+**Gazetteer agregado** (Colombia solamente, por ahora):
+- Táchira: "norte de santander", "cucuta" (se agrega "Cúcuta" sola, el
+  caso original solo cubría el departamento).
+- Zulia: "riohacha", "valledupar", "la guajira, colombia"/"departamento
+  de la guajira", "cesar, colombia"/"departamento del cesar".
+- Apure: "arauca, colombia"/"departamento de arauca", "arauquita",
+  "saravena", "puerto carreño".
+- Amazonas: "vichada", "inirida", "puerto carreño", "guainia,
+  colombia"/"departamento de guainia".
+
+**Verificación de colisiones con lugares reales de Venezuela** (a mano
+contra `config/ubicaciones_detalle.json`, antes de escribir cualquier
+frase): "guainia" es substring de "Guainiamo" (parroquia real de Cedeño,
+Bolívar) y "cesar" es substring de "Julio Cesar Sala" (municipio real de
+Mérida) -- por eso ninguna de esas dos palabras se usa suelta, solo en
+frases específicas ("guainia, colombia", "cesar, colombia") que no
+coinciden por accidente con esos lugares venezolanos.
+
+### Limitación reconocida y aceptada explícitamente por el usuario: Zulia/La Guajira
+
+Zulia es el caso más delicado: "Guajira" es *también* un municipio real
+de Zulia ("Indígena Bolivariano Guajira", ver PR #61). El usuario aceptó
+el trade-off de ser menos agresivo ahí -- **pero se descubrió durante las
+pruebas que el problema es más profundo de lo previsto**: cuando el texto
+menciona "La Guajira, Colombia", el detector de municipio (que ya usa
+"Guajira" como alias del municipio venezolano) lo interpreta como
+evidencia del municipio venezolano, lo cual además **desactiva la
+salvaguarda** ("si hay municipio, no se descarta") -- es decir, un
+artículo sobre un hecho real en Riohacha/La Guajira, Colombia, podría
+sobrevivir como alerta de Zulia con municipio "Guajira" atribuido por
+error. Probado y confirmado: sin la palabra "Guajira" en el texto (ej.
+solo "Riohacha"), el descarte funciona correctamente. Esto no es una
+regresión introducida hoy -- es la misma ambigüedad de nombre ya conocida
+desde antes, ahora también afecta a este mecanismo nuevo. Queda
+documentado, no resuelto (arreglarlo a ciegas sin un caso real de este
+patrón específico arriesga más de lo que soluciona).
+
+### Pruebas
+
+6 casos nuevos en `tests/casos_clasificacion.jsonl`: Cúcuta sola (se
+descarta), los 2 casos reales de Apure/Amazonas y del ataque a militares
+venezolanos (ambos se MANTIENEN pese a mencionar Colombia extensamente),
+Riohacha/Zulia (se descarta), y 2 controles de que los municipios
+venezolanos reales con nombres ambiguos (Guajira de Zulia, Julio César
+Sala de Mérida) siguen detectándose con normalidad.
+
+Regresión completa contra `data/historico_fuentes_texto.jsonl`: ningún
+evento ya publicado se vio afectado (no hizo falta corrección
+retroactiva esta vez). `python3 -m pytest tests/` → 135 passed, 4 xfailed
+(conocidos, sin relación). `python3 scripts/validar_configs.py` → OK.
+`python3 scripts/detectar_inconsistencias.py` → sin inconsistencias.
