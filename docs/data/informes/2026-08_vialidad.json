@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "vialidad",
+  "tipo_label": "Incidente vial",
+  "cerrado": false,
+  "generado": "2026-08-01T15:48:34.238278+00:00",
+  "actualizado_hasta": "2026-08-01T15:48:25.221066+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un incidente vial significativo en el Distrito Capital, específicamente en la autopista Valle-Coche, como se informó en Noticia al Dia (Zulia). Este incidente resultó en una colisión múltiple que involucró un autobús de transporte público y dos vehículos particulares tipo sedán, según confirmó el Comandante General del Cuerpo de Bomberos de Caracas, Pablo Palacios (Noticia al Dia (Zulia)). La colisión resultó en un fallecido y cinco heridos, con una de las víctimas perdiendo la vida de forma instantánea en el sitio (Noticia al Dia (Zulia)). Este evento es particularmente notable dado que es el único incidente vial reportado en este período, en comparación con el período anterior (2026-07) en el que no se registraron eventos de este tipo. La comparación con el período anterior muestra un aumento a 1 evento en 2026-08 desde 0 eventos en 2026-07. El incidente vial en la autopista Valle-Coche es un recordatorio de la importancia de la seguridad vial y la necesidad de medidas preventivas para evitar este tipo de tragedias.",
+  "fuentes": [
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
+    }
+  ]
+}

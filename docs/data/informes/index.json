@@ -1,6 +1,14 @@
 [
   {
     "periodo": "2026-08",
+    "tipo": "vialidad",
+    "tipo_label": "Incidente vial",
+    "cerrado": false,
+    "generado": "2026-08-01T15:48:34.238278+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
@@ -14,6 +22,14 @@
     "cerrado": false,
     "generado": "2026-08-01T08:44:42.100430+00:00",
     "total_eventos": 2
+  },
+  {
+    "periodo": "2026-08",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-08-01T15:48:30.176670+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-07",
