@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-01T16:44:20.986660+00:00",
+  "actualizado": "2026-08-01T20:04:42.852415+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-01T13:45:44+00:00"
+    "hasta": "2026-08-01T19:55:44+00:00"
   },
-  "total_eventos": 33,
+  "total_eventos": 35,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 7,
+    "inundacion": 8,
     "infraestructura_electrica": 8,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 3,
+    "orden_publico": 4,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 3,
@@ -20,7 +20,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 5,
+      "total": 6,
       "confirmados": 1
     },
     {
@@ -29,17 +29,17 @@
       "confirmados": 3
     },
     {
+      "estado": "Barinas",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Bolivar",
       "total": 4,
       "confirmados": 1
     },
     {
       "estado": "Lara",
-      "total": 3,
-      "confirmados": 1
-    },
-    {
-      "estado": "Barinas",
       "total": 3,
       "confirmados": 1
     },
@@ -111,7 +111,7 @@
     "Distrito Capital": {
       "deslizamiento": 1,
       "inundacion": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "incendio": 1,
       "vialidad": 1
     },
@@ -120,7 +120,7 @@
     },
     "Barinas": {
       "deslizamiento": 1,
-      "inundacion": 1,
+      "inundacion": 2,
       "infraestructura_electrica": 1
     },
     "Monagas": {
@@ -158,14 +158,15 @@
   "por_severidad": {
     "alto": 5,
     "critico": 4,
-    "sin_clasificar": 24
+    "sin_clasificar": 26
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2
     },
     "inundacion": {
-      "2026-07": 7
+      "2026-07": 7,
+      "2026-08": 1
     },
     "infraestructura_electrica": {
       "2026-07": 6,
@@ -178,7 +179,8 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 3
+      "2026-07": 3,
+      "2026-08": 1
     },
     "salud_publica": {
       "2026-07": 1

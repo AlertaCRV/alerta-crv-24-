@@ -5,30 +5,6 @@
     "fecha_deteccion": "2026-07-29T20:18:26.152626+00:00",
     "fecha_evento_temprana": "2026-07-29T13:17:11+00:00"
   },
-  "salud_publica::Lara::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:20:02+00:00"
-  },
-  "crisis_migratoria::Apure::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:26:00.583403+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:18:23+00:00"
-  },
-  "inundacion::Barinas::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:22:17+00:00"
-  },
-  "crisis_migratoria::Anzoategui::2026-07-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
-    "fecha_evento_temprana": "2026-07-29T17:55:40+00:00"
-  },
   "infraestructura_electrica::Barinas::2026-07-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -53,12 +29,6 @@
     "fecha_deteccion": "2026-07-30T20:25:02.477396+00:00",
     "fecha_evento_temprana": "2026-07-30T20:04:41+00:00"
   },
-  "incendio::Distrito Capital::2026-07-29": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
-    "fecha_evento_temprana": "2026-07-29T17:06:27+00:00"
-  },
   "inundacion::Lara::2026-07-31": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -79,20 +49,6 @@
     "fecha_evento_temprana": "2026-07-30T12:12:15+00:00",
     "municipio": "Mariño"
   },
-  "crisis_migratoria::Falcon::2026-07-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
-    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00",
-    "municipio": "Colina"
-  },
-  "crisis_migratoria::Falcon::2026-07-28": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
-    "fecha_evento_temprana": "2026-07-28T16:00:00+00:00",
-    "municipio": "Zamora"
-  },
   "infraestructura_electrica::Bolivar::2026-08-01": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -112,6 +68,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-01T15:48:25.221066+00:00",
     "fecha_evento_temprana": "2026-08-01T13:45:44+00:00",
+    "municipio": null
+  },
+  "inundacion::Barinas::2026-08-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-01T20:04:18.402120+00:00",
+    "fecha_evento_temprana": "2026-08-01T18:13:54+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-08-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-01T20:04:31.786209+00:00",
+    "fecha_evento_temprana": "2026-08-01T19:55:44+00:00",
     "municipio": null
   }
 }

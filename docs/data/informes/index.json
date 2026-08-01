@@ -9,6 +9,22 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "orden_publico",
+    "tipo_label": "Orden público",
+    "cerrado": false,
+    "generado": "2026-08-01T20:04:50.744257+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
+    "tipo": "inundacion",
+    "tipo_label": "Inundación",
+    "cerrado": false,
+    "generado": "2026-08-01T20:04:46.801507+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
