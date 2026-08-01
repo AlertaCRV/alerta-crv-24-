@@ -107,13 +107,6 @@
     "fecha_evento_temprana": "2026-08-01T02:42:10+00:00",
     "municipio": "Sucre"
   },
-  "ataque_armado::Tachira::2026-08-01": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-01T15:48:08.439355+00:00",
-    "fecha_evento_temprana": "2026-08-01T15:19:46+00:00",
-    "municipio": null
-  },
   "vialidad::Distrito Capital::2026-08-01": {
     "severidad": "critico",
     "confirmado": false,

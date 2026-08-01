@@ -41,6 +41,17 @@ LISTA_NEGRA_POR_ESTADO = {
     # estado Sucre), lo que tambien bloquearia a Chacao como evidencia
     # directa de Miranda.
     "Distrito Capital": ["chacao", "baruta", "el hatillo"],
+    # Caso real (01-08-2026): "Frontera con Colombia | 11 heridos por la
+    # explosion de un carro bomba contra la policia de Santander Tachira.-
+    # ... un carro bomba exploto en la sede de la Policia de Norte de
+    # Santander... atentados... en el Norte de Santander, Colombia" -- el
+    # ataque ocurrio en Colombia, no en Venezuela. "Tachira" solo aparecia
+    # como el dateline del medio (El Pitazo reporta DESDE Tachira sobre la
+    # frontera), no como la ubicacion del hecho. A diferencia de
+    # Chacao/Baruta/El Hatillo, Norte de Santander no es un lugar de
+    # Venezuela -- no hay a donde remapear, se descarta sin mas (el
+    # sistema solo monitorea emergencias en Venezuela).
+    "Tachira": ["norte de santander"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el

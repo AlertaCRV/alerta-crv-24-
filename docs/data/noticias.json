@@ -1,31 +1,5 @@
 [
   {
-    "tipo": "ataque_armado",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/los-andes/frontera-con-colombia-11-heridos-por-la-explosion-de-un-carro-bomba-contra-la-policia/",
-        "fecha": "2026-08-01T15:19:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-01T15:19:46+00:00",
-    "fecha_evento_temprana": "2026-08-01T15:19:46+00:00",
-    "fecha_deteccion": "2026-08-01T15:48:08.439355+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "ataque_armado::Tachira::2026-08-01",
-    "titulo": "Ataque armado en Tachira",
-    "texto": "📌 Ataque armado en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 01/08/2026, 11:19 a.m.\n🔎 Detectado por el sistema: 01/08/2026, 11:48 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-andes/frontera-con-colombia-11-heridos-por-la-explosion-de-un-carro-bomba-contra-la-policia/"
-  },
-  {
     "tipo": "vialidad",
     "ubicacion": "Distrito Capital",
     "municipio": null,
