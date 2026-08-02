@@ -1,27 +1,33 @@
 {
-  "actualizado": "2026-08-02T07:56:07.759805+00:00",
+  "actualizado": "2026-08-02T15:46:05.662893+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-02T01:56:24+00:00"
+    "hasta": "2026-08-02T15:20:02+00:00"
   },
-  "total_eventos": 36,
+  "total_eventos": 41,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 8,
-    "infraestructura_electrica": 9,
+    "inundacion": 9,
+    "infraestructura_electrica": 10,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 4,
+    "orden_publico": 6,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 3,
-    "vialidad": 1
+    "vialidad": 1,
+    "sismo": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 7,
+      "total": 8,
       "confirmados": 2
+    },
+    {
+      "estado": "Lara",
+      "total": 4,
+      "confirmados": 1
     },
     {
       "estado": "Zulia",
@@ -39,9 +45,9 @@
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 3,
-      "confirmados": 1
+      "estado": "Carabobo",
+      "total": 2,
+      "confirmados": 0
     },
     {
       "estado": "Monagas",
@@ -64,8 +70,8 @@
       "confirmados": 0
     },
     {
-      "estado": "Carabobo",
-      "total": 1,
+      "estado": "Yaracuy",
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -96,11 +102,13 @@
   ],
   "cruce_estado_tipo": {
     "Carabobo": {
-      "tormenta_electrica": 1
+      "tormenta_electrica": 1,
+      "orden_publico": 1
     },
     "Lara": {
       "inundacion": 2,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "orden_publico": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -114,7 +122,7 @@
       "orden_publico": 2,
       "incendio": 1,
       "vialidad": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Trujillo": {
       "inundacion": 1
@@ -154,12 +162,16 @@
     },
     "Falcon": {
       "crisis_migratoria": 2
+    },
+    "Yaracuy": {
+      "inundacion": 1,
+      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 5,
-    "critico": 4,
-    "sin_clasificar": 27
+    "critico": 5,
+    "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -167,11 +179,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 1
+      "2026-08": 2
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 3
+      "2026-08": 4
     },
     "deslizamiento": {
       "2026-07": 3
@@ -181,7 +193,7 @@
     },
     "orden_publico": {
       "2026-07": 3,
-      "2026-08": 1
+      "2026-08": 3
     },
     "salud_publica": {
       "2026-07": 1
@@ -193,6 +205,9 @@
       "2026-07": 3
     },
     "vialidad": {
+      "2026-08": 1
+    },
+    "sismo": {
       "2026-08": 1
     }
   }

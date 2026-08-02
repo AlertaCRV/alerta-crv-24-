@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "sismo",
+    "tipo_label": "Sismo",
+    "cerrado": false,
+    "generado": "2026-08-02T15:46:09.339027+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
