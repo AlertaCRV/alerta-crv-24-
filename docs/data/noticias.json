@@ -27,8 +27,8 @@
   },
   {
     "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
     "parroquia": null,
     "severidad": "alto",
     "score": 0.55,
@@ -47,9 +47,9 @@
     "fecha_evento_temprana": "2026-08-02T19:22:08+00:00",
     "fecha_deteccion": "2026-08-02T20:16:30.637565+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-08-02",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 02/08/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    "clave_dedup": "incendio::Miranda::2026-08-02",
+    "titulo": "Incendio en Municipio Baruta, Miranda",
+    "texto": "📌 Incendio en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 02/08/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -160,32 +160,6 @@
     "clave_dedup": "sismo::Yaracuy::2026-08-02::mag4.2",
     "titulo": "Sismo en Yaracuy",
     "texto": "📌 Sismo en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 02/08/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 02/08/2026, 11:45 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/",
-        "fecha": "2026-08-02T13:52:45+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T13:52:45+00:00",
-    "fecha_evento_temprana": "2026-08-02T13:52:45+00:00",
-    "fecha_deteccion": "2026-08-02T15:45:59.377420+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Carabobo::2026-08-02",
-    "titulo": "Orden público en Carabobo",
-    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 02/08/2026, 9:52 a.m.\n🔎 Detectado por el sistema: 02/08/2026, 11:45 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
   },
   {
     "tipo": "orden_publico",
@@ -316,32 +290,6 @@
     "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-01",
     "titulo": "Falla eléctrica en Municipio El Callao, Bolivar",
     "texto": "📌 Falla eléctrica en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 31/07/2026, 10:40 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:44 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Sucre",
-    "municipio": "Sucre",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/",
-        "fecha": "2026-08-01T02:42:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-01T02:42:10+00:00",
-    "fecha_evento_temprana": "2026-08-01T02:42:10+00:00",
-    "fecha_deteccion": "2026-08-01T08:44:23.621370+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Sucre::2026-08-01",
-    "titulo": "Falla eléctrica en Municipio Sucre, Sucre",
-    "texto": "📌 Falla eléctrica en Municipio Sucre, Sucre\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Sucre, Sucre\n🕒 Hecho reportado: 31/07/2026, 10:42 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:44 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
   },
   {
     "tipo": "incendio",
@@ -820,30 +768,6 @@
     "clave_dedup": "inundacion::Sucre::2026-07-29",
     "titulo": "Inundación en Sucre",
     "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 28/07/2026, 10:46 p.m.\n🔎 Detectado por el sistema: 28/07/2026, 11:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/fuertes-lluvias-provocaron-inundaciones-y-fallas-electricas-en-varios-sectores-de-cumana/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/",
-        "fecha": "2026-07-28T20:47:02+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-28T20:47:02+00:00",
-    "fecha_evento_temprana": "2026-07-28T20:47:02+00:00",
-    "fecha_deteccion": "2026-07-29T03:40:44.441328+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Monagas::2026-07-28",
-    "titulo": "Orden público en Municipio Maturín, Monagas",
-    "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 28/07/2026, 4:47 p.m.\n🔎 Detectado por el sistema: 28/07/2026, 11:40 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/politica/oposicion-se-concentro-en-la-av-juncal-de-maturin/"
   },
   {
     "titulo": "Orden público en Distrito Capital",
