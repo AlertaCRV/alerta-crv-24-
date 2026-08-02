@@ -41,11 +41,27 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "incendio",
+    "tipo_label": "Incendio",
+    "cerrado": false,
+    "generado": "2026-08-02T20:17:09.059842+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
     "generado": "2026-08-02T07:56:11.807296+00:00",
     "total_eventos": 6
+  },
+  {
+    "periodo": "2026-08",
+    "tipo": "escasez_combustible",
+    "tipo_label": "Escasez de combustible",
+    "cerrado": false,
+    "generado": "2026-08-02T20:17:05.268941+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-07",
