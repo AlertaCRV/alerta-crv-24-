@@ -45,6 +45,14 @@ tipos:
     - anegadas
     - vaguada
     - vaguadas
+    - desborde de quebrada
+    - desbordamiento de quebrada
+    - desborde de rio
+    - desborde de río
+    - desbordamiento de rio
+    - desbordamiento de río
+    - viviendas anegadas
+    - viviendas inundadas
   deslizamiento:
     - deslizamiento
     - deslizamientos
@@ -56,6 +64,9 @@ tipos:
     - deslaves
     - escombro
     - escombros
+    - desprendimiento de tierra
+    - desprendimiento de rocas
+    - socavamiento
   infraestructura_electrica:
     - apagon
     - apagones
@@ -66,6 +77,13 @@ tipos:
     - corte de luz
     - cortes de luz
     - corpoelec
+    - bajon
+    - bajón
+    - subestacion electrica
+    - subestación eléctrica
+    - transformador explotado
+    - explosion de transformador
+    - explosión de transformador
   infraestructura_agua:
     - falla de agua
     - fallas de agua
@@ -113,10 +131,17 @@ tipos:
     - manifestacion violenta
     - manifestacion callejera
     - marcha de protesta
+    - marcha opositora
     - hecho de violencia
     - hechos de violencia
     - tiroteo
     - tiroteos
+    - barricada
+    - barricadas
+    - gases lacrimogenos
+    - gases lacrimógenos
+    - ola de violencia
+    - focos de violencia
   salud_publica:
     - brote
     - brotes
@@ -144,6 +169,8 @@ tipos:
     - maremotos
     - alerta de tsunami
     - ola gigante
+    - retiro del mar
+    - tren de olas
   tormenta_electrica:
     - tormenta electrica
     - tormentas electricas
@@ -157,6 +184,8 @@ tipos:
     - alcanzado por un rayo
     - alcanzada por un rayo
     - descarga electrica atmosferica
+    - centella
+    - centellas
   derrame_petrolero:
     - derrame petrolero
     - derrame de petroleo
@@ -301,6 +330,12 @@ severidad:
     # por incendio, sin ambiguedad con otros usos idiomaticos.
     - cuerpos carbonizados
     - cuerpo carbonizado
+    - cuerpo sin vida
+    - cuerpos sin vida
+    - hallado muerto
+    - hallada muerta
+    - deceso
+    - decesos
   alto:
     - heridos
     - lesionados
@@ -333,6 +368,11 @@ severidad:
     - damnificada
     - damnificados
     - damnificadas
+    - estado critico
+    - estado crítico
+    - unidad de cuidados intensivos
+    - incomunicados
+    - incomunicadas
   medio:
     - danos materiales
     - alerta naranja
@@ -362,3 +402,5 @@ severidad:
     - no hubo perdidas humanas
     - sin victimas graves
     - no hubo victimas graves
+    - descartan brote
+    - descartado brote
