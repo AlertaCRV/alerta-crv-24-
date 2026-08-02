@@ -52,6 +52,24 @@ _ARTICULOS_RELACIONADOS_RE = re.compile(r"\b(lea|lee)\s+tambi[ée]n\s*:.*$", re.
 # articulo desde su pagina en esos casos.
 _TRUNCADO_RE = re.compile(r"(…|\[\s*\.\.\.\s*\]|\.\.\.\s*$)\s*$")
 
+# "Caracas" es alias de Distrito Capital, pero tambien se usa a diario en
+# sentido coloquial del area metropolitana, que incluye municipios reales
+# de Miranda (Chacao/Baruta/El Hatillo, ver LISTA_NEGRA_POR_ESTADO en
+# classify.py). Un resumen de RSS puede mencionar "Caracas" sin venir
+# truncado (frase completa, sin puntos suspensivos) y aun asi omitir el
+# municipio real, que solo aparece mas adelante en el cuerpo del articulo
+# -- caso real (02-08-2026): "Un incendio en un edificio de Las Mercedes
+# deja dos personas lesionadas. Efectivos de los Bomberos de Caracas
+# sofocaron las llamas..." es una oracion completa (no truncada), pero
+# el municipio real ("Baruta") solo aparece en el cuerpo completo de la
+# pagina, nunca en el resumen del feed. Se trae el texto completo tambien
+# en estos casos para que el clasificador tenga la oportunidad de ver ese
+# municipio.
+_CARACAS_RE = re.compile(r"\bcaracas\b", re.IGNORECASE)
+_MUNICIPIOS_CARACAS_CONOCIDOS_RE = re.compile(
+    r"\b(libertador|chacao|baruta|el hatillo)\b", re.IGNORECASE
+)
+
 LONGITUD_MAXIMA_TEXTO_COMPLETO = 4000
 
 
@@ -135,7 +153,15 @@ def fetch_rss_items(ventana_horas=12):
             texto = _limpiar_texto(texto)
 
             link = entry.get("link", "")
-            if link and _TRUNCADO_RE.search(texto):
+            necesita_texto_completo = bool(link and _TRUNCADO_RE.search(texto))
+            if (
+                not necesita_texto_completo
+                and link
+                and _CARACAS_RE.search(texto)
+                and not _MUNICIPIOS_CARACAS_CONOCIDOS_RE.search(texto)
+            ):
+                necesita_texto_completo = True
+            if necesita_texto_completo:
                 texto_completo = _obtener_texto_completo(link)
                 if texto_completo:
                     texto = _limpiar_texto(

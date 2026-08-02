@@ -26,6 +26,15 @@ LISTA_NEGRA_POR_ESTADO = {
                 "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
+    # Caso real (02-08-2026): una golpiza durante un partido de futbol en
+    # Barquisimeto (estado Lara, entre aficion del Deportivo Lara y del
+    # Portuguesa FC) tambien se publicaba como alerta de Carabobo -- el
+    # equipo visitante se llama "Carabobo FC", y ese nombre de equipo
+    # coincide con el alias del estado. El hecho ocurrio unicamente en Lara;
+    # "Carabobo FC" no es evidencia de que algo haya pasado en el estado
+    # Carabobo. Sin remapeo (no hay a que estado redirigir): se descarta
+    # directamente, igual que "aeropuerto"/"moneda" para Bolivar/Sucre.
+    "Carabobo": ["carabobo fc"],
     # Caso real (31-07-2026): un incendio en el CCCT ("ubicado en el
     # municipio Chacao") se publicaba como Distrito Capital porque el
     # articulo tambien menciona "Caracas" (alias de Distrito Capital) en
@@ -179,8 +188,20 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # "protesta". Mismo patron que "manifestaciones artisticas" (por eso
     # esa palabra ya se excluye sola de los keywords de tipo): una palabra
     # ambigua entre el sentido de disturbio civil y otro uso idiomatico
-    # totalmente distinto.
+    # totalmente distinto. (Ver tambien _es_manifestacion_pacifica_sin_evidencia_fuerte()
+    # mas abajo, para el caso de una manifestacion explicitamente pacifica.)
     "orden_publico": ["nota de protesta", "notas de protesta"],
+    # Caso real (02-08-2026): "Tragedia en Cumaná: colapso de un árbol...
+    # un árbol colapsara y arrastrara postes del tendido eléctrico" -- una
+    # muerte por la caida de un arbol (que de paso derribo postes) se
+    # publicaba como Falla electrica en Sucre solo por la frase "tendido
+    # electrico", sin que el articulo describa ningun corte/interrupcion
+    # real del servicio para la poblacion. Se usa la palabra suelta "arbol"
+    # (no una frase fija como "colapso de un arbol") porque la ventana de
+    # proximidad a la ubicacion puede recortar el texto justo antes de la
+    # frase completa, dejando solo el orden invertido ("un arbol colapso")
+    # -- un solo token es robusto a cualquier orden/conjugacion.
+    "infraestructura_electrica": ["arbol", "árbol", "arboles", "árboles"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -202,6 +223,16 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
                        "declaro emergencia sanitaria",
                        "declaró emergencia sanitaria", "cuarentena",
                        "hospitalizados"],
+    # Si ademas del arbol caido el articulo SI describe una interrupcion
+    # real del servicio electrico (no solo el accidente en si), esta
+    # evidencia evita descartar el tipo.
+    "infraestructura_electrica": ["apagon", "apagones", "apagón",
+                                   "sin luz", "sin electricidad",
+                                   "sin servicio electrico",
+                                   "sin servicio eléctrico",
+                                   "falla electrica", "falla eléctrica",
+                                   "fallas electricas", "fallas eléctricas",
+                                   "corte de luz", "cortes de luz"],
 }
 
 # Un articulo que reporta que una entidad (USGS, Funvisis...) "ajusto"/
@@ -281,6 +312,31 @@ def _es_boletin_estadistico_salud_sin_alarma(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_SIN_ALARMA_SANITARIA):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("salud_publica", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (02-08-2026): "Oposición se concentró en la Av. Juncal de
+# Maturín... Contamos con una gran participación de ciudadanos que acudieron
+# de manera pacífica a esta concentración. Agradecemos el respaldo y el
+# comportamiento cívico demostrado" -- una manifestacion politica
+# explicitamente pacifica (el propio articulo lo afirma) disparaba
+# tipo=orden_publico solo por la palabra "manifestantes"/"protesta". La
+# aclaracion de que fue pacifica aparecio varios parrafos despues de la
+# mencion del estado -- fuera de la ventana de proximidad de
+# _CONTEXTO_CONFLICTIVO_POR_TIPO -- asi que, igual que el boletin
+# estadistico de salud, esta señal se evalua sobre el ARTICULO COMPLETO, no
+# solo la ventana cercana a la ubicacion.
+_MARCADORES_MANIFESTACION_PACIFICA = [
+    "de manera pacifica", "de manera pacífica", "manera pacifica",
+    "manera pacífica", "pacificamente", "pacíficamente",
+    "comportamiento civico", "comportamiento cívico",
+]
+
+
+def _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_MANIFESTACION_PACIFICA):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("orden_publico", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -449,9 +505,33 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                 estado_real = _REMAPEO_MUNICIPIO_A_ESTADO.get(nombre_estado, {}).get(frase_negra)
                 if estado_real is None:
                     continue
-                ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
-                if ventana:
-                    resultado.append((estado_real, ventana))
+                # frase_negra (p.ej. "municipio Baruta") ya es evidencia
+                # fuerte y especifica del municipio real -- a diferencia de
+                # "caracas", que es solo un alias coloquial del area
+                # metropolitana. Se intenta anclar la ventana ahi primero
+                # (permitir_subestatal=True: aqui "municipio Baruta" es
+                # precisamente la evidencia, no una ambiguedad a filtrar),
+                # porque suele estar mas cerca de los detalles reales del
+                # hecho que la mencion de "Caracas" (a menudo solo el
+                # nombre de los bomberos/policia que respondieron, varias
+                # frases despues). Caso real: incendio en Las
+                # Mercedes/Baruta (02-08-2026), "lesionados" a ~30 palabras
+                # de "municipio Baruta" pero a mas de 35 de la unica
+                # mencion de "Caracas" del articulo.
+                ventana = _ventana_cerca(
+                    tokens, frase_negra, palabras_tipo, posiciones_estados,
+                    permitir_subestatal=True,
+                ) or _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
+                if not ventana:
+                    # Ninguna de las dos ventanas encontro el tipo cerca --
+                    # si el tipo SI aparece en algun otro punto del
+                    # articulo, no hay razon para descartar el estado por
+                    # completo: se usa el texto completo como ventana,
+                    # igual que ya se hace cuando la ubicacion viene de un
+                    # hashtag (ventana=None).
+                    if not any(_contiene_palabra_clave(texto_norm, p) for p in palabras_tipo):
+                        break
+                resultado.append((estado_real, ventana))
                 break
 
             ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
@@ -534,7 +614,8 @@ def _es_mencion_de_persona_citada(tokens, pos):
     return siguiente in _VERBOS_ATRIBUCION_CITA
 
 
-def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None):
+def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None,
+                    permitir_subestatal=False):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
     alguna palabra clave de tipo, o None si no hay ninguna cerca.
 
@@ -545,14 +626,21 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
     menciones repetidas del MISMO estado (p.ej. el nombre de un medio local
     como "Zulia Sin Censura") no cuentan como frontera -- de lo contrario
     la ventana podia cortarse antes de llegar a un dato clave (una muerte,
-    heridos) que esta mas cerca de esa repeticion que de un estado distinto."""
+    heridos) que esta mas cerca de esa repeticion que de un estado distinto.
+
+    permitir_subestatal=True omite el filtro de "municipio X"/"parroquia X"
+    (ver _es_mencion_subestatal) -- solo tiene sentido cuando candidato_norm
+    es precisamente un municipio real de LISTA_NEGRA_POR_ESTADO (p.ej.
+    "baruta"), casi siempre mencionado como "municipio Baruta": ahi la
+    mencion subestatal NO es ambigua, es la evidencia misma que motivo el
+    remapeo (ver _REMAPEO_MUNICIPIO_A_ESTADO)."""
     candidato_tokens = candidato_norm.split()
     primera_palabra = candidato_tokens[0]
 
     posiciones = [
         i for i, t in enumerate(tokens)
         if t == primera_palabra
-        and not _es_mencion_subestatal(tokens, i)
+        and (permitir_subestatal or not _es_mencion_subestatal(tokens, i))
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
         and not _es_mencion_de_persona_citada(tokens, i)
     ]
@@ -840,6 +928,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "sismo" and _es_correccion_epicentro_retrospectiva(texto_completo_norm):
                     break
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
+                    break
+                if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
                     break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)

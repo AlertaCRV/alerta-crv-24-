@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-02T20:17:01.559671+00:00",
+  "actualizado": "2026-08-02T23:34:03.780078+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-02T20:07:22+00:00"
   },
-  "total_eventos": 44,
+  "total_eventos": 41,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 9,
-    "infraestructura_electrica": 11,
+    "infraestructura_electrica": 10,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 6,
+    "orden_publico": 4,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 4,
@@ -22,7 +22,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 9,
+      "total": 8,
       "confirmados": 2
     },
     {
@@ -46,24 +46,14 @@
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Sucre",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
       "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 2,
+      "confirmados": 1
     },
     {
       "estado": "Falcon",
@@ -76,7 +66,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Carabobo",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Sucre",
       "total": 1,
       "confirmados": 0
     },
@@ -91,9 +91,9 @@
       "confirmados": 0
     },
     {
-      "estado": "Miranda",
+      "estado": "Monagas",
       "total": 1,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Nueva Esparta",
@@ -103,8 +103,7 @@
   ],
   "cruce_estado_tipo": {
     "Carabobo": {
-      "tormenta_electrica": 1,
-      "orden_publico": 1
+      "tormenta_electrica": 1
     },
     "Lara": {
       "inundacion": 2,
@@ -121,7 +120,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 2,
-      "incendio": 2,
+      "incendio": 1,
       "vialidad": 1,
       "infraestructura_electrica": 2
     },
@@ -133,13 +132,8 @@
       "inundacion": 2,
       "infraestructura_electrica": 1
     },
-    "Monagas": {
-      "orden_publico": 1,
-      "infraestructura_electrica": 1
-    },
     "Sucre": {
-      "inundacion": 1,
-      "infraestructura_electrica": 1
+      "inundacion": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
@@ -156,8 +150,11 @@
     "Tachira": {
       "deslizamiento": 1
     },
+    "Monagas": {
+      "infraestructura_electrica": 1
+    },
     "Miranda": {
-      "incendio": 1
+      "incendio": 2
     },
     "Nueva Esparta": {
       "incendio": 1
@@ -172,8 +169,8 @@
   },
   "por_severidad": {
     "alto": 6,
-    "critico": 5,
-    "sin_clasificar": 33
+    "critico": 4,
+    "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -185,7 +182,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 5
+      "2026-08": 4
     },
     "deslizamiento": {
       "2026-07": 3
@@ -194,8 +191,8 @@
       "2026-07": 1
     },
     "orden_publico": {
-      "2026-07": 3,
-      "2026-08": 3
+      "2026-07": 2,
+      "2026-08": 2
     },
     "salud_publica": {
       "2026-07": 1

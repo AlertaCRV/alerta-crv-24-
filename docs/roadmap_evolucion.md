@@ -3952,3 +3952,219 @@ municipio venezolano real sigue funcionando. Regresión completa contra
 necesaria. `python3 -m pytest tests/` → 137 passed, 4 xfailed (conocidos,
 sin relación). `python3 scripts/validar_configs.py` → OK. `python3
 scripts/detectar_inconsistencias.py` → sin inconsistencias.
+
+---
+
+## Auditoría diaria automática (02-08-2026): 4 hallazgos corregidos de raíz y 2 pendientes de discutir
+
+Auditoría de rutina de las ~14 alertas publicadas entre el 01-08 y el
+02-08-2026, comparando cada una contra el texto real de su(s) fuente(s).
+Se encontraron y corrigieron 4 errores reales; se dejan documentados 2
+patrones ambiguos sin corregir (ver sección final).
+
+### 1. "Las Mercedes" (incendio) se publicaba como Distrito Capital -- el municipio real (Baruta) nunca llegaba al clasificador
+
+El resumen RSS de la fuente ("Un incendio en un edificio de Las Mercedes
+deja dos personas lesionadas. Efectivos de los Bomberos de Caracas
+sofocaron las llamas...") es una oración **completa**, sin puntos
+suspensivos -- `_TRUNCADO_RE` nunca se disparó, así que `fetch_rss.py`
+nunca bajó el texto completo de la página. El cuerpo completo del
+artículo sí dice "en el municipio Baruta" (confirmado descargando la
+página real), pero esa palabra nunca llegó al texto que ve
+`classify.py`. Sin "Baruta"/"Chacao"/"El Hatillo" en el texto, el único
+alias detectado es "Caracas" (via "Bomberos de Caracas") → Distrito
+Capital.
+
+**Causa raíz 1** (`scripts/fetch_rss.py`): el disparador de descarga del
+texto completo solo cubre resúmenes truncados. Un resumen sin truncar
+puede seguir siendo, en la práctica, solo la meta-descripción SEO del
+artículo (típicamente ~150 caracteres) y omitir igual el municipio real.
+
+**Corrección 1**: se agregó un segundo disparador -- si el texto
+menciona "Caracas" y **ninguno** de los municipios reales conocidos de
+Miranda que a veces se confunden con Distrito Capital (Libertador,
+Chacao, Baruta, El Hatillo), también se descarga el texto completo de la
+página, igual que para el caso truncado (fallback silencioso si la
+descarga falla, mismo patrón ya usado).
+
+**Causa raíz 2** (`scripts/classify.py`): con el texto completo real, la
+ubicación sí se corregía a Miranda/Baruta (el mecanismo de
+`LISTA_NEGRA_POR_ESTADO`/`_REMAPEO_MUNICIPIO_A_ESTADO` ya existente desde
+el 31-07 funcionó), pero la **severidad se perdía** ("sin_clasificar" en
+vez de "alto"): la ventana de proximidad para el remapeo se calculaba
+alrededor de la (única) mención de "Caracas" en el artículo -- que
+aparece varias frases después, solo como "Bomberos de Caracas" -- dejando
+"lesionados" (que está justo antes de "municipio Baruta", pero a más de
+35 palabras de "Caracas") fuera de la ventana.
+
+**Corrección 2**: `_detectar_ubicacion_texto_plano()` ahora intenta
+anclar la ventana primero en la frase de la lista negra misma (p.ej.
+"Baruta", con un nuevo parámetro `permitir_subestatal=True` en
+`_ventana_cerca()` -- aquí "municipio Baruta" es la evidencia real, no
+una ambigüedad a filtrar como en el caso general de "municipio Sucre"),
+y solo si eso tampoco encuentra el tipo cerca, cae de vuelta a la
+ventana de "Caracas" y finalmente al texto completo (si el tipo aparece
+en cualquier otro punto del artículo). Esto es un mecanismo general, no
+un parche puntual: cualquier remapeo futuro (Chacao/El Hatillo) se
+beneficia igual.
+
+**Corrección retroactiva**: `incendio::Distrito Capital::2026-08-02` →
+reclasificado a `incendio::Miranda::2026-08-02` (municipio "Baruta",
+severidad "alto", antes "sin_clasificar" en cuanto a ubicación aunque la
+severidad ya salía "alto" por casualidad con el resumen corto). Corregido
+en `docs/data/noticias.json` (`render.redactar_noticia()` para
+regenerar título/texto), `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl` (aquí también se reemplazó el
+resumen truncado por el texto completo real de la página, descargado
+manualmente en esta sesión, para que la regresión automática contra este
+archivo quede corrigiendo el caso real en vez de depender de una
+excepción `xfail`) y `data/publicados.json`. Se regeneró
+`docs/data/estadisticas.json`.
+
+### 2. Golpiza en un partido de fútbol en Barquisimeto (Lara) se publicaba TAMBIÉN como alerta de Carabobo -- por el nombre del equipo visitante
+
+"Salvaje golpiza a un inocente empaña el encuentro entre Portuguesa FC y
+**Carabobo FC** en Barquisimeto" generaba dos alertas del mismo artículo:
+una correcta (Lara, donde ocurrió el hecho real) y una falsa (Carabobo,
+solo porque el equipo visitante se llama "Carabobo FC" y ese nombre
+coincide con el alias del estado).
+
+**Corrección**: se agregó `"Carabobo": ["carabobo fc"]` a
+`LISTA_NEGRA_POR_ESTADO` (sin entrada en `_REMAPEO_MUNICIPIO_A_ESTADO`:
+no hay a qué estado real redirigir, se descarta directamente, mismo
+patrón que "aeropuerto"/"moneda" para Bolívar/Sucre).
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Carabobo::2026-08-02` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. La alerta de Lara (correcta) no se tocó.
+
+### 3. Muerte por caída de un árbol en Cumaná (Sucre) se publicaba como "Falla eléctrica" crítica
+
+"Tragedia en Cumaná: colapso de un árbol cobró la vida de una mujer...
+luego de que un árbol colapsara y arrastrara postes del tendido
+eléctrico" generaba `infraestructura_electrica` (crítico, por
+"falleció") solo por la frase "tendido eléctrico". El artículo completo
+(descargado y leído en esta sesión) es puramente el relato de un
+accidente fatal -- un árbol cayó, mató a una persona e hirió a otras
+dos -- sin ninguna mención de corte/interrupción real del servicio
+eléctrico para la población. No hay ninguna categoría del sistema que
+describa bien este hecho (no es un "colapso_estructural" en el sentido
+de edificio/puente/vivienda de `keywords.yaml`).
+
+**Corrección**: nuevo filtro de contexto conflictivo para
+`infraestructura_electrica` (`_CONTEXTO_CONFLICTIVO_POR_TIPO`): la
+palabra suelta "árbol"/"arboles" sin evidencia fuerte de interrupción
+real del servicio (`apagón`, `sin luz`, `sin electricidad`, `falla
+eléctrica`, `corte de luz`, ...) descarta el tipo. Se usó la palabra
+suelta en vez de una frase fija ("colapso de un árbol") porque la
+ventana de proximidad puede recortar el texto justo antes de la frase
+completa, dejando solo el orden invertido ("un árbol colapsó") -- un
+token suelto es robusto a cualquier orden/conjugación.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Sucre::2026-08-01` de
+`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl` y `data/publicados.json`.
+
+### 4. Concentración explícitamente pacífica en Maturín (Monagas) se publicaba como "Orden público"
+
+"Oposición se concentró en la Av. Juncal de Maturín... Contamos con una
+gran participación de ciudadanos que **acudieron de manera pacífica** a
+esta concentración. Agradecemos el respaldo y el **comportamiento
+cívico** demostrado" generaba `orden_publico` solo por la palabra
+"manifestantes" -- pese a que el propio artículo declara explícitamente
+que no hubo ningún incidente.
+
+**Causa raíz**: la aclaración de que fue pacífica aparece varios
+párrafos después de la mención de "Monagas" -- fuera de la ventana de
+proximidad de `_CONTEXTO_CONFLICTIVO_POR_TIPO` (que solo mira el
+fragmento cercano a la ubicación). Por eso este filtro **no** se agregó
+ahí (donde no habría funcionado), sino como una señal decisiva sobre el
+**artículo completo**, igual que ya existe para
+`_es_boletin_estadistico_salud_sin_alarma()`.
+
+**Corrección**: nueva función
+`_es_manifestacion_pacifica_sin_evidencia_fuerte()` en `classify.py`,
+llamada desde `detectar_tipo()` con `texto_completo_norm` (no la
+ventana): si el artículo completo declara explícitamente que la actividad
+fue pacífica ("de manera pacífica", "pacíficamente", "comportamiento
+cívico") y no hay evidencia fuerte real de disturbio en ningún punto del
+artículo, se descarta `orden_publico`.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Monagas::2026-07-28` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`
+(no estaba en `data/publicados.json`, ya había salido de la ventana de
+retención).
+
+### Informes narrativos: 2 quedan con referencias desactualizadas, no regenerados en esta sesión
+
+`docs/data/informes/2026-08_general.json` y
+`2026-08_infraestructura_electrica.json` todavía mencionan la falla
+eléctrica de Sucre ya retractada (hallazgo 3); `docs/data/informes/2026-07_general.json`
+y `2026-07_orden_publico.json` todavía mencionan la concentración de
+Monagas ya retractada (hallazgo 4). Mismo caso que el 31-07-2026: la
+narrativa se genera con Groq y `GROQ_API_KEY` no está disponible en este
+entorno, así que no se regeneró a mano. `scripts/build_informes.py`
+regenera el informe del mes en curso como máximo una vez al día; la
+próxima corrida de producción lo hará automáticamente a partir de los
+datos ya corregidos. Confirmado con
+`scripts/detectar_inconsistencias.py`, que detectó las 4 referencias a
+fuentes muertas correctamente (exactamente los 2 eventos retractados, en
+sus informes mensual y general correspondientes) sin que se le pidiera
+nada -- funcionando como se esperaba.
+
+### Pendiente de discutir: dos alertas más con el mismo patrón "manifestantes"/"protesta" sueltos, pero SIN señal explícita de que fueran pacíficas ni de que hubiera disturbio
+
+Al investigar el hallazgo 4 aparecieron dos casos más, publicados, que
+disparan `orden_publico` únicamente por la palabra "manifestantes" (sin
+ninguna palabra de evidencia fuerte de disturbio) pero que **tampoco**
+declaran explícitamente que fueron pacíficos -- a diferencia del caso de
+Monagas, aquí no hay ninguna señal textual en ningún sentido:
+
+- `orden_publico::Distrito Capital::2026-07-28` -- "Oposición marcha en
+  Caracas exigiendo elecciones y el regreso de Machado" (marcha política
+  convocada por Vente Venezuela).
+- `orden_publico::Distrito Capital::2026-08-01` -- "Sindicalistas exigen
+  que diálogo entre chavismo y oposición sea público" (concentración en
+  La Carlota exigiendo transparencia en el diálogo).
+
+Ninguno de los dos artículos menciona heridos/detenidos/disturbios/
+tiroteos, pero tampoco dicen explícitamente "de manera pacífica" como el
+caso de Monagas que sí se corrigió. Hay además un tercer caso con la
+misma ambigüedad de fondo pero de naturaleza distinta:
+`orden_publico::Bolivar::2026-07-30` ("Continúa tranca en sur del estado
+Bolívar. Las protestas por el servicio eléctrico continúan...") -- aquí
+sí hay evidencia de una interrupción real (una vía bloqueada, "tranca"),
+que podría justificar mantenerlo aunque no tenga palabras de la lista de
+evidencia fuerte actual.
+
+**No se corrigió nada en estos 3 casos.** Diseñar un filtro general para
+"manifestantes"/"protesta(s)" sueltos sin exigir una señal explícita
+(como se hizo para el caso pacífico) tiene un trade-off real: podría
+dejar de capturar coberturas iniciales de disturbios genuinos que aún no
+mencionan una palabra de evidencia fuerte específica. Y limitarlo a
+"marchas/concentraciones por una demanda política sin mención de
+confrontación" es una distinción semántica difícil de capturar solo con
+palabras clave sin arriesgar falsos negativos futuros. Queda documentado
+aquí como pendiente de decisión del usuario, no corregido a ciegas.
+
+### Pruebas
+
+7 casos nuevos en `tests/casos_clasificacion.jsonl` (5 basados en texto
+real de los artículos afectados + 2 controles sintéticos): remapeo
+Las Mercedes/Baruta con severidad completa, "Carabobo FC" descartado
+(con control de un evento real en Carabobo sin ese nombre de equipo),
+árbol sin evidencia de apagón descartado (con control de un árbol que sí
+deja sin luz a la población), manifestación explícitamente pacífica
+descartada (con control de que evidencia fuerte real sigue anulando el
+descarte). Regresión completa contra `data/historico_fuentes_texto.jsonl`:
+las 3 fuentes de los hallazgos 2-4 cambian de resultado como se esperaba
+(consistente con su retracción); ningún otro evento ya publicado se vio
+afectado. `python3 -m pytest tests/` → 152 passed, 4 xfailed (conocidos,
+sin relación), 1 xpassed -- una fuente nueva ("La Prensa de Monagas", el
+caso de Las Mercedes corregido) coincide por casualidad con el mismo
+nombre de fuente de una limitación conocida y no relacionada del CCCT
+(31-07-2026), sin efecto real (`strict=False`, no rompe la suite).
+`python3 scripts/validar_configs.py` → OK.
