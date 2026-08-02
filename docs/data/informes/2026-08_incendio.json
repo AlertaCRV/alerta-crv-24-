@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-08-02T20:17:09.059842+00:00",
+  "actualizado_hasta": "2026-08-02T20:16:30.637565+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 3,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un evento de incendio significativo en Venezuela. El evento que debe mencionarse explícitamente es el incendio en el Distrito Capital, específicamente en un edificio de Las Mercedes, que dejó dos personas lesionadas (La Prensa de Monagas). Este incidente tuvo una severidad alta y fue atendido por efectivos de los Bomberos de Caracas, quienes lograron sofocar las llamas en el tercer piso del edificio La Joya para evitar su propagación (La Prensa de Monagas). En comparación con el período anterior (2026-07), se observa una disminución en el número de eventos de incendio, pasando de 3 eventos a solo 1 en este período. Esta reducción podría indicar una mejora en las medidas de prevención y respuesta a incendios en la zona.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    }
+  ]
+}
