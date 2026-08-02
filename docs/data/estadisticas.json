@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-02T23:34:03.780078+00:00",
+  "actualizado": "2026-08-02T23:47:35.711978+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-02T20:07:22+00:00"
+    "hasta": "2026-08-02T21:00:00+00:00"
   },
-  "total_eventos": 41,
+  "total_eventos": 42,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 9,
+    "inundacion": 10,
     "infraestructura_electrica": 10,
     "deslizamiento": 3,
     "colapso_estructural": 1,
@@ -46,6 +46,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Yaracuy",
+      "total": 3,
+      "confirmados": 1
+    },
+    {
       "estado": "Anzoategui",
       "total": 2,
       "confirmados": 0
@@ -57,11 +62,6 @@
     },
     {
       "estado": "Falcon",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Yaracuy",
       "total": 2,
       "confirmados": 0
     },
@@ -163,13 +163,13 @@
       "crisis_migratoria": 2
     },
     "Yaracuy": {
-      "inundacion": 1,
+      "inundacion": 2,
       "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 6,
-    "critico": 4,
+    "critico": 5,
     "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
@@ -178,7 +178,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 2
+      "2026-08": 3
     },
     "infraestructura_electrica": {
       "2026-07": 6,
