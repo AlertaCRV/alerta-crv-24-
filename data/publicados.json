@@ -1,10 +1,4 @@
 {
-  "infraestructura_electrica::Monagas::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-30T20:25:02.477396+00:00",
-    "fecha_evento_temprana": "2026-07-30T20:04:41+00:00"
-  },
   "inundacion::Lara::2026-07-31": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -62,8 +56,8 @@
   },
   "inundacion::Yaracuy::2026-08-02": {
     "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-02T15:45:46.142100+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-02T23:47:23.969377+00:00",
     "fecha_evento_temprana": "2026-08-02T15:20:02+00:00",
     "municipio": "Manuel Monge"
   },

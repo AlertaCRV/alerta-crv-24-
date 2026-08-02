@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Yaracuy",
+    "municipio": "Manuel Monge",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/",
+        "fecha": "2026-08-02T21:00:00+00:00"
+      },
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/",
+        "fecha": "2026-08-02T15:20:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-02T21:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-02T15:20:02+00:00",
+    "fecha_deteccion": "2026-08-02T23:47:23.969377+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Yaracuy::2026-08-02",
+    "titulo": "Inundación en Municipio Manuel Monge, Yaracuy",
+    "texto": "📌 Inundación en Municipio Manuel Monge, Yaracuy\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Manuel Monge, Yaracuy\n🕒 Hecho reportado: 02/08/2026, 5:00 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 7:47 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
+  },
+  {
     "tipo": "escasez_combustible",
     "ubicacion": "Bolivar",
     "municipio": null,
@@ -76,32 +107,6 @@
     "clave_dedup": "infraestructura_electrica::Zulia::2026-08-02",
     "titulo": "Falla eléctrica en Zulia",
     "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 02/08/2026, 2:11 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Yaracuy",
-    "municipio": "Manuel Monge",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/",
-        "fecha": "2026-08-02T15:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T15:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-02T15:20:02+00:00",
-    "fecha_deteccion": "2026-08-02T15:45:46.142100+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Yaracuy::2026-08-02",
-    "titulo": "Inundación en Municipio Manuel Monge, Yaracuy",
-    "texto": "📌 Inundación en Municipio Manuel Monge, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Manuel Monge, Yaracuy\n🕒 Hecho reportado: 02/08/2026, 11:20 a.m.\n🔎 Detectado por el sistema: 02/08/2026, 11:45 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
   },
   {
     "tipo": "infraestructura_electrica",
