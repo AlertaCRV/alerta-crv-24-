@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "sismo",
+  "tipo_label": "Sismo",
+  "cerrado": false,
+  "generado": "2026-08-02T15:46:09.339027+00:00",
+  "actualizado_hasta": "2026-08-02T15:45:52.656504+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un evento sísmico significativo en Venezuela. Según (Primicia), un sismo de magnitud 4.2 se produjo en el centro-occidente del país, con una profundidad de 8.1 km. Este sismo fue percibido en varios estados, incluyendo Yaracuy, Falcón, Lara y Carabobo (Primicia). En comparación con el período anterior (2026-07), en el que no se registraron eventos sísmicos, este período tuvo 1 evento registrado. El sismo en cuestión es el único evento que se menciona en las fuentes proporcionadas para este período.",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
+    }
+  ]
+}
