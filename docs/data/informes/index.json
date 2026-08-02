@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-08-01T15:48:34.238278+00:00",
+    "generado": "2026-08-02T07:56:27.354170+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-08-01T20:04:50.744257+00:00",
+    "generado": "2026-08-02T07:56:23.463359+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-08-01T20:04:46.801507+00:00",
+    "generado": "2026-08-02T07:56:19.725515+00:00",
     "total_eventos": 1
   },
   {
@@ -28,16 +28,16 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-08-01T08:44:46.401438+00:00",
-    "total_eventos": 2
+    "generado": "2026-08-02T07:56:15.717784+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-08",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-01T08:44:42.100430+00:00",
-    "total_eventos": 2
+    "generado": "2026-08-02T07:56:11.807296+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-07",

@@ -3,19 +3,39 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-01T08:44:42.100430+00:00",
-  "actualizado_hasta": "2026-08-01T08:44:23.621370+00:00",
-  "total_eventos": 2,
+  "generado": "2026-08-02T07:56:11.807296+00:00",
+  "actualizado_hasta": "2026-08-02T07:55:48.962029+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 30,
-    "actual": 2
+    "actual": 6
   },
-  "narrativa": "En el período de 2026-08, se registraron solo 2 eventos en comparación con los 30 eventos del período anterior (2026-07). Uno de los eventos destacados fue la falla eléctrica en Sucre, reportada por El Tiempo (Anzoategui), que tuvo una severidad crítica. Además, en Cumaná, estado Sucre, un árbol colapsó y cobró la vida de una mujer, según informó El Tiempo (Anzoategui). Este incidente ocurrió la noche del 31 de julio en las inmediaciones de la plaza Ayacucho. Por otro lado, en el Callao, estado Bolívar, se llevó a cabo un paro cívico el 29 de julio para exigir soluciones ante la crisis eléctrica en el municipio, como informó Turimiquire. La crisis eléctrica en la zona se atribuye a la sobrepoblación causada por la actividad minera, lo que ha colapsado los servicios públicos. Estos eventos resaltan la importancia de abordar las fallas eléctricas y otros problemas que afectan a las comunidades en Venezuela.",
+  "narrativa": "En el período de agosto de 2026, se registraron 6 eventos, en comparación con los 30 eventos del período anterior (julio de 2026). Entre los eventos destacados se encuentra la falla eléctrica en Sucre, reportada por El Tiempo (Anzoategui), y el incidente vial en Distrito Capital, informado por Noticia al Dia (Zulia). En específico, la falla eléctrica en Sucre fue descrita como crítica por El Tiempo (Anzoategui). Por otro lado, el incidente vial en Distrito Capital resultó en un fallecido y cinco heridos, según Noticia al Dia (Zulia). Además, se reportó la caída de un árbol en Cumaná, estado Sucre, que cobró la vida de una mujer, como lo informó El Tiempo (Anzoategui). Otros eventos notables incluyeron la crecida de un río en Barinas, que impidió a estudiantes asistir a su graduación, según El Pitazo, y apagones en varias zonas de Caracas, reportados por El Pitazo y Noticias de Aqui (Anzoategui).",
   "fuentes": [
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

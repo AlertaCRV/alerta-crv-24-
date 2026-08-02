@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Altagracia",
+    "severidad": "sin_clasificar",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/",
+        "fecha": "2026-08-02T00:21:06+00:00"
+      },
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/",
+        "fecha": "2026-08-02T01:56:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-02T01:56:24+00:00",
+    "fecha_evento_temprana": "2026-08-02T00:21:06+00:00",
+    "fecha_deteccion": "2026-08-02T07:55:48.962029+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-02",
+    "titulo": "Falla eléctrica en Parroquia Altagracia, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Falla eléctrica en Parroquia Altagracia, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altagracia, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 01/08/2026, 9:56 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 3:55 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Barinas",
     "municipio": null,
