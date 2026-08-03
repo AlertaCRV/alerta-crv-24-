@@ -3,23 +3,35 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-02T07:56:11.807296+00:00",
-  "actualizado_hasta": "2026-08-02T07:55:48.962029+00:00",
-  "total_eventos": 6,
+  "generado": "2026-08-03T12:40:47.813057+00:00",
+  "actualizado_hasta": "2026-08-02T23:47:23.969377+00:00",
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
-    "anterior": 30,
-    "actual": 6
+    "anterior": 29,
+    "actual": 13
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 6 eventos, en comparación con los 30 eventos del período anterior (julio de 2026). Entre los eventos destacados se encuentra la falla eléctrica en Sucre, reportada por El Tiempo (Anzoategui), y el incidente vial en Distrito Capital, informado por Noticia al Dia (Zulia). En específico, la falla eléctrica en Sucre fue descrita como crítica por El Tiempo (Anzoategui). Por otro lado, el incidente vial en Distrito Capital resultó en un fallecido y cinco heridos, según Noticia al Dia (Zulia). Además, se reportó la caída de un árbol en Cumaná, estado Sucre, que cobró la vida de una mujer, como lo informó El Tiempo (Anzoategui). Otros eventos notables incluyeron la crecida de un río en Barinas, que impidió a estudiantes asistir a su graduación, según El Pitazo, y apagones en varias zonas de Caracas, reportados por El Pitazo y Noticias de Aqui (Anzoategui).",
+  "narrativa": "En el período de agosto de 2026, se registraron 13 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara)), y el incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas). La inundación en Yaracuy también fue reportada por Turimiquire (Sucre), destacando la severidad del evento. Además, se registraron cortes de luz en Zulia que pusieron en riesgo a pacientes renales (El Periodico de Monagas), y estudiantes en Barinas no pudieron asistir a su graduación debido a la crecida de un río (El Pitazo). Otros eventos reportados incluyeron apagones en varias zonas de Caracas (El Pitazo), problemas de abastecimiento de gasolina en Bolívar (El Pitazo), y disturbios en un encuentro de fútbol en Barquisimeto (Noticia al Dia (Zulia)).",
   "fuentes": [
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
       "nombre": "El Pitazo",
@@ -30,12 +42,28 @@
       "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/bolivar-transportistas-exigen-abastecimiento-de-gasolina-nos-obligan-a-ir-a-paro/"
+    },
+    {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
     },
     {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
+    },
+    {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

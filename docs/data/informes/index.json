@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-08-02T07:56:27.354170+00:00",
+    "generado": "2026-08-03T12:41:11.823366+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-08-02T15:46:09.339027+00:00",
+    "generado": "2026-08-03T12:41:07.908240+00:00",
     "total_eventos": 1
   },
   {
@@ -20,31 +20,31 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-08-02T07:56:23.463359+00:00",
-    "total_eventos": 1
+    "generado": "2026-08-03T12:41:03.986789+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-08",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-08-02T07:56:19.725515+00:00",
-    "total_eventos": 1
+    "generado": "2026-08-03T12:41:00.187223+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-08",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-08-02T07:56:15.717784+00:00",
-    "total_eventos": 3
+    "generado": "2026-08-03T12:40:56.064911+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-08",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-02T20:17:09.059842+00:00",
+    "generado": "2026-08-03T12:40:51.920548+00:00",
     "total_eventos": 1
   },
   {
@@ -52,15 +52,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-02T07:56:11.807296+00:00",
-    "total_eventos": 6
+    "generado": "2026-08-03T12:40:47.813057+00:00",
+    "total_eventos": 13
   },
   {
     "periodo": "2026-08",
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-02T20:17:05.268941+00:00",
+    "generado": "2026-08-03T12:40:43.363717+00:00",
     "total_eventos": 1
   },
   {
