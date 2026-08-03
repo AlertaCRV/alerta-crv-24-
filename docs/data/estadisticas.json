@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-02T23:47:35.711978+00:00",
+  "actualizado": "2026-08-03T19:02:25.949975+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-02T21:00:00+00:00"
+    "hasta": "2026-08-03T15:27:37+00:00"
   },
-  "total_eventos": 42,
+  "total_eventos": 43,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 10,
+    "inundacion": 11,
     "infraestructura_electrica": 10,
     "deslizamiento": 3,
     "colapso_estructural": 1,
@@ -31,17 +31,17 @@
       "confirmados": 3
     },
     {
+      "estado": "Barinas",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Bolivar",
       "total": 5,
       "confirmados": 1
     },
     {
       "estado": "Lara",
-      "total": 4,
-      "confirmados": 1
-    },
-    {
-      "estado": "Barinas",
       "total": 4,
       "confirmados": 1
     },
@@ -129,7 +129,7 @@
     },
     "Barinas": {
       "deslizamiento": 1,
-      "inundacion": 2,
+      "inundacion": 3,
       "infraestructura_electrica": 1
     },
     "Sucre": {
@@ -170,7 +170,7 @@
   "por_severidad": {
     "alto": 6,
     "critico": 5,
-    "sin_clasificar": 31
+    "sin_clasificar": 32
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -178,7 +178,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 3
+      "2026-08": 4
     },
     "infraestructura_electrica": {
       "2026-07": 6,

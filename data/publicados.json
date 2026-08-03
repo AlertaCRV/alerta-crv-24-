@@ -12,13 +12,6 @@
     "fecha_evento_temprana": "2026-07-30T14:46:56+00:00",
     "municipio": "Chacao"
   },
-  "incendio::Nueva Esparta::2026-07-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-07-31T16:27:57.241863+00:00",
-    "fecha_evento_temprana": "2026-07-30T12:12:15+00:00",
-    "municipio": "Mariño"
-  },
   "infraestructura_electrica::Bolivar::2026-08-01": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -95,5 +88,12 @@
     "fecha_deteccion": "2026-08-02T20:16:30.637565+00:00",
     "fecha_evento_temprana": "2026-08-02T19:22:08+00:00",
     "municipio": "Baruta"
+  },
+  "inundacion::Barinas::2026-08-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-03T19:02:14.723812+00:00",
+    "fecha_evento_temprana": "2026-08-03T15:27:37+00:00",
+    "municipio": "Cruz Paredes"
   }
 }
