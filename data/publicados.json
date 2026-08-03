@@ -1,10 +1,4 @@
 {
-  "inundacion::Lara::2026-07-31": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-07-31T20:46:26.393169+00:00",
-    "fecha_evento_temprana": "2026-07-31T19:33:36+00:00"
-  },
   "incendio::Miranda::2026-07-30": {
     "severidad": "alto",
     "confirmado": true,
