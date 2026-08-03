@@ -3,19 +3,19 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-02T07:56:15.717784+00:00",
-  "actualizado_hasta": "2026-08-02T07:55:48.962029+00:00",
-  "total_eventos": 3,
+  "generado": "2026-08-03T12:40:56.064911+00:00",
+  "actualizado_hasta": "2026-08-02T20:16:34.351708+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 6,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos relacionados con fallas eléctricas en Venezuela, en comparación con los 6 eventos reportados en el período anterior (julio de 2026). Uno de los eventos más significativos fue la falla eléctrica en Sucre, específicamente en Cumaná, donde un árbol colapsó y arrastró postes del tendido eléctrico, cobrando la vida de una mujer (El Tiempo (Anzoategui)). Además, se reportaron apagones en varias zonas de Caracas, tanto la noche del 1 de agosto como el sábado siguiente, afectando sectores como El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, y otros (El Pitazo, Noticias de Aqui (Anzoategui)). Estos eventos de fallas eléctricas y apagones afectaron a diferentes partes del país, incluyendo la capital y estados como Sucre, donde la situación se volvió crítica (Turimiquire (Sucre)).",
+  "narrativa": "En el período de agosto de 2026, se registraron 4 eventos relacionados con fallas eléctricas en Venezuela, lo que representa una disminución en comparación con el período anterior, julio de 2026, que tuvo 6 eventos (El Periodico de Monagas). Uno de los eventos reportados fue en el estado Zulia, donde los cortes de luz ponen en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). En Caracas, se reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio, Parque Carabobo, y avenida Bolívar, según informes de la noche del 1 de agosto (El Pitazo, Noticias de Aqui). La falla eléctrica también afectó a comunidades de Quinta Crespo y la parroquia San Juan (Primicia). Además, en el estado Bolívar, se llevó a cabo un paro cívico en El Callao el 29 de julio para exigir soluciones ante la crisis eléctrica en el municipio (Turimiquire).",
   "fuentes": [
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/tragedia-en-cumana-colapso-de-un-arbol-cobro-la-vida-de-una-mujer/"
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
       "nombre": "El Pitazo",
@@ -24,6 +24,10 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

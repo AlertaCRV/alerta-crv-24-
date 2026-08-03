@@ -3,16 +3,24 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-02T07:56:19.725515+00:00",
-  "actualizado_hasta": "2026-08-01T20:04:18.402120+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-03T12:41:00.187223+00:00",
+  "actualizado_hasta": "2026-08-02T23:47:23.969377+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registró una disminución significativa en el número de eventos de inundación en comparación con el período anterior, con solo 1 evento reportado en este período, en comparación con los 7 eventos registrados en 2026-07. Uno de los eventos reportados en este período fue la crecida de la quebrada del sector El Pescado, parroquia Socorro, en el estado Barinas, lo que impidió que varios estudiantes, incluyendo a una joven llamada Sofía, asistieran a su graduación el 31 de julio (El Pitazo). La crecida del río representó un peligro para los estudiantes, quienes decidieron no intentar cruzar (El Pitazo). Este evento resalta la importancia de considerar las condiciones climáticas y geográficas en la planificación de eventos y actividades diarias. La reducción en el número de eventos de inundación en este período puede ser un indicador de una disminución en los riesgos asociados con este tipo de desastres naturales. Sin embargo, es fundamental seguir monitoreando y preparándose para posibles eventos de inundación en el futuro.",
+  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos de inundación en Venezuela, en comparación con los 7 eventos registrados en el período anterior (julio de 2026). Dos de estos eventos fueron particularmente significativos y ocurrieron en el estado Yaracuy. La inundación en Yaracuy, reportada por El Impulso (Lara), causó daños estructurales en el puente La Galletera y afectó a cuatro municipios, dejando un saldo trágico de una persona fallecida y pérdidas materiales en el sector agropecuario (El Impulso (Lara)). De manera similar, Turimiquire (Sucre) informó sobre una inundación en Yaracuy, específicamente en el municipio Manuel Monge, donde una mujer de 49 años, María Eloína Hernández, falleció al recibir una descarga eléctrica mientras intentaba desconectar artefactos eléctricos en su casa inundada (Turimiquire (Sucre)). Además, en el estado Barinas, estudiantes no pudieron asistir a su graduación debido a la crecida de un río, lo que les impidió llegar a la institución, y pidieron un acto simbólico (El Pitazo).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
+    },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
