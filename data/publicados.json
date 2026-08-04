@@ -1,18 +1,4 @@
 {
-  "inundacion::Barinas::2026-08-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-01T20:04:18.402120+00:00",
-    "fecha_evento_temprana": "2026-08-01T18:13:54+00:00",
-    "municipio": null
-  },
-  "orden_publico::Distrito Capital::2026-08-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-01T20:04:31.786209+00:00",
-    "fecha_evento_temprana": "2026-08-01T19:55:44+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Distrito Capital::2026-08-02": {
     "severidad": "sin_clasificar",
     "confirmado": false,
