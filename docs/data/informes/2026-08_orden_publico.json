@@ -3,16 +3,20 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-03T12:41:03.986789+00:00",
-  "actualizado_hasta": "2026-08-02T15:46:02.747883+00:00",
-  "total_eventos": 2,
+  "generado": "2026-08-04T08:11:45.418374+00:00",
+  "actualizado_hasta": "2026-08-04T08:10:52.204961+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registraron 2 eventos relacionados con el orden público, similar a la cantidad registrada en el período anterior (2026-07). Uno de los eventos fue una concentración de sindicalistas y trabajadores en la base aérea La Carlota, en Caracas, donde exigieron que el diálogo entre el chavismo y un sector opositor se desarrolle de manera pública y con participación de la ciudadanía (La Verdad). Por otro lado, en Barquisimeto, se produjeron disturbios durante un encuentro entre Portuguesa FC y Carabobo FC, cuando supuestos hinchas locales atacaron con piedras a los autobuses que trasladaban a la fanaticada del Portuguesa FC, destruyendo los vidrios de las unidades de transporte (Noticia al Dia). Estos eventos destacan la importancia de mantener el orden público en diferentes contextos, ya sea en manifestaciones pacíficas o en eventos deportivos.",
+  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos relacionados con el orden público en Venezuela, lo que supone un aumento en comparación con el mes anterior, julio de 2026, cuando se registraron 2 eventos. Uno de los eventos destacados fue la manifestación en la isla de Margarita, específicamente en el municipio Díaz, donde vecinos del sector La Guardia cerraron la avenida Taguantar en protesta por la interrupción del suministro de agua potable, que ya llevaba cinco meses (El Tiempo). Otro evento notable fue la concentración de sindicalistas y trabajadores en la base aérea La Carlota, en Caracas, donde exigieron que el diálogo entre el chavismo y un sector opositor se desarrolle de manera pública y con participación de la ciudadanía (La Verdad). Además, se produjeron disturbios en Barquisimeto durante el encuentro entre Portuguesa FC y Carabobo FC, cuando supuestos hinchas del Deportivo Lara atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC, resultando en daños a los vehículos (Noticia al Dia).",
   "fuentes": [
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"

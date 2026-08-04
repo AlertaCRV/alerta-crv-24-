@@ -1,11 +1,4 @@
 {
-  "incendio::Miranda::2026-07-30": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-01T00:15:34.034890+00:00",
-    "fecha_evento_temprana": "2026-07-30T14:46:56+00:00",
-    "municipio": "Chacao"
-  },
   "infraestructura_electrica::Bolivar::2026-08-01": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -89,5 +82,12 @@
     "fecha_deteccion": "2026-08-03T19:02:14.723812+00:00",
     "fecha_evento_temprana": "2026-08-03T15:27:37+00:00",
     "municipio": "Cruz Paredes"
+  },
+  "orden_publico::Nueva Esparta::2026-08-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T08:10:52.204961+00:00",
+    "fecha_evento_temprana": "2026-08-03T23:56:20+00:00",
+    "municipio": "Díaz"
   }
 }

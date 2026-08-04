@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-03T19:02:25.949975+00:00",
+  "actualizado": "2026-08-04T08:11:12.318704+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-03T15:27:37+00:00"
+    "hasta": "2026-08-03T23:56:20+00:00"
   },
-  "total_eventos": 43,
+  "total_eventos": 44,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 11,
     "infraestructura_electrica": 10,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 4,
+    "orden_publico": 5,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 4,
@@ -61,6 +61,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 2,
+      "confirmados": 1
+    },
+    {
       "estado": "Falcon",
       "total": 2,
       "confirmados": 0
@@ -94,11 +99,6 @@
       "estado": "Monagas",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 1,
-      "confirmados": 1
     }
   ],
   "cruce_estado_tipo": {
@@ -157,7 +157,8 @@
       "incendio": 2
     },
     "Nueva Esparta": {
-      "incendio": 1
+      "incendio": 1,
+      "orden_publico": 1
     },
     "Falcon": {
       "crisis_migratoria": 2
@@ -170,7 +171,7 @@
   "por_severidad": {
     "alto": 6,
     "critico": 5,
-    "sin_clasificar": 32
+    "sin_clasificar": 33
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -192,7 +193,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 2
+      "2026-08": 3
     },
     "salud_publica": {
       "2026-07": 1
