@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-08-04T08:11:12.318704+00:00",
+  "actualizado": "2026-08-04T16:25:32.685159+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-03T23:56:20+00:00"
+    "hasta": "2026-08-04T16:20:10+00:00"
   },
-  "total_eventos": 44,
+  "total_eventos": 49,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 11,
-    "infraestructura_electrica": 10,
+    "infraestructura_electrica": 12,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 5,
+    "orden_publico": 7,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 4,
     "vialidad": 1,
-    "sismo": 1,
+    "sismo": 2,
     "escasez_combustible": 1
   },
   "ranking_estados": [
@@ -26,14 +26,14 @@
       "confirmados": 2
     },
     {
+      "estado": "Barinas",
+      "total": 6,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 5,
       "confirmados": 3
-    },
-    {
-      "estado": "Barinas",
-      "total": 5,
-      "confirmados": 1
     },
     {
       "estado": "Bolivar",
@@ -44,6 +44,16 @@
       "estado": "Lara",
       "total": 4,
       "confirmados": 1
+    },
+    {
+      "estado": "Carabobo",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Falcon",
+      "total": 3,
+      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -64,16 +74,6 @@
       "estado": "Nueva Esparta",
       "total": 2,
       "confirmados": 1
-    },
-    {
-      "estado": "Falcon",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Carabobo",
-      "total": 1,
-      "confirmados": 0
     },
     {
       "estado": "Trujillo",
@@ -99,11 +99,18 @@
       "estado": "Monagas",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
     "Carabobo": {
-      "tormenta_electrica": 1
+      "tormenta_electrica": 1,
+      "infraestructura_electrica": 1,
+      "orden_publico": 1
     },
     "Lara": {
       "inundacion": 2,
@@ -130,7 +137,7 @@
     "Barinas": {
       "deslizamiento": 1,
       "inundacion": 3,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Sucre": {
       "inundacion": 1
@@ -161,17 +168,21 @@
       "orden_publico": 1
     },
     "Falcon": {
-      "crisis_migratoria": 2
+      "crisis_migratoria": 2,
+      "orden_publico": 1
     },
     "Yaracuy": {
       "inundacion": 2,
+      "sismo": 1
+    },
+    "La Guaira": {
       "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 6,
     "critico": 5,
-    "sin_clasificar": 33
+    "sin_clasificar": 38
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -183,7 +194,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 4
+      "2026-08": 6
     },
     "deslizamiento": {
       "2026-07": 3
@@ -193,7 +204,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 3
+      "2026-08": 5
     },
     "salud_publica": {
       "2026-07": 1
@@ -209,7 +220,7 @@
       "2026-08": 1
     },
     "sismo": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "escasez_combustible": {
       "2026-08": 1

@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Bolivar::2026-08-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-01T08:44:20.262801+00:00",
-    "fecha_evento_temprana": "2026-08-01T02:40:10+00:00",
-    "municipio": "El Callao"
-  },
-  "vialidad::Distrito Capital::2026-08-01": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-01T15:48:25.221066+00:00",
-    "fecha_evento_temprana": "2026-08-01T13:45:44+00:00",
-    "municipio": null
-  },
   "inundacion::Barinas::2026-08-01": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -89,5 +75,40 @@
     "fecha_deteccion": "2026-08-04T08:10:52.204961+00:00",
     "fecha_evento_temprana": "2026-08-03T23:56:20+00:00",
     "municipio": "Díaz"
+  },
+  "sismo::La Guaira::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T16:24:47.333809+00:00",
+    "fecha_evento_temprana": "2026-08-04T13:44:30+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T16:24:51.028973+00:00",
+    "fecha_evento_temprana": "2026-08-04T13:54:25+00:00",
+    "municipio": "Valencia"
+  },
+  "orden_publico::Carabobo::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T16:25:04.654629+00:00",
+    "fecha_evento_temprana": "2026-08-04T14:08:10+00:00",
+    "municipio": "Valencia"
+  },
+  "infraestructura_electrica::Barinas::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T16:25:11.448935+00:00",
+    "fecha_evento_temprana": "2026-08-04T16:20:10+00:00",
+    "municipio": null
+  },
+  "orden_publico::Falcon::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-04T16:25:21.607157+00:00",
+    "fecha_evento_temprana": "2026-08-04T14:29:03+00:00",
+    "municipio": null
   }
 }

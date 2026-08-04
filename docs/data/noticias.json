@@ -1,5 +1,142 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": "La Guaira",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/recuperan-cuatro-cuerpos-en-la-opppe-26-este-4-de-agosto/",
+        "fecha": "2026-08-04T13:44:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T13:44:30+00:00",
+    "fecha_evento_temprana": "2026-08-04T13:44:30+00:00",
+    "fecha_deteccion": "2026-08-04T16:24:47.333809+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-08-04",
+    "titulo": "Sismo en Parroquia La Guaira, La Guaira",
+    "texto": "📌 Sismo en Parroquia La Guaira, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Guaira, La Guaira\n🕒 Hecho reportado: 04/08/2026, 9:44 a.m.\n🔎 Detectado por el sistema: 04/08/2026, 12:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/recuperan-cuatro-cuerpos-en-la-opppe-26-este-4-de-agosto/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/",
+        "fecha": "2026-08-04T13:54:25+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/",
+        "fecha": "2026-08-04T15:00:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T15:00:26+00:00",
+    "fecha_evento_temprana": "2026-08-04T13:54:25+00:00",
+    "fecha_deteccion": "2026-08-04T16:24:51.028973+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-04",
+    "titulo": "Falla eléctrica en Municipio Valencia, Carabobo",
+    "texto": "📌 Falla eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 04/08/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 04/08/2026, 12:24 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/",
+        "fecha": "2026-08-04T14:08:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T14:08:10+00:00",
+    "fecha_evento_temprana": "2026-08-04T14:08:10+00:00",
+    "fecha_deteccion": "2026-08-04T16:25:04.654629+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Carabobo::2026-08-04",
+    "titulo": "Orden público en Municipio Valencia, Carabobo",
+    "texto": "📌 Orden público en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 04/08/2026, 10:08 a.m.\n🔎 Detectado por el sistema: 04/08/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/",
+        "fecha": "2026-08-04T16:20:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T16:20:10+00:00",
+    "fecha_evento_temprana": "2026-08-04T16:20:10+00:00",
+    "fecha_deteccion": "2026-08-04T16:25:11.448935+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-08-04",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 04/08/2026, 12:20 p.m.\n🔎 Detectado por el sistema: 04/08/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/",
+        "fecha": "2026-08-04T14:29:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T14:29:03+00:00",
+    "fecha_evento_temprana": "2026-08-04T14:29:03+00:00",
+    "fecha_deteccion": "2026-08-04T16:25:21.607157+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-08-04",
+    "titulo": "Orden público en Falcon",
+    "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 04/08/2026, 10:29 a.m.\n🔎 Detectado por el sistema: 04/08/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Nueva Esparta",
     "municipio": "Díaz",
