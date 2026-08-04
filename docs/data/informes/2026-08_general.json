@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-03T12:40:47.813057+00:00",
-  "actualizado_hasta": "2026-08-02T23:47:23.969377+00:00",
-  "total_eventos": 13,
+  "generado": "2026-08-04T08:11:20.520423+00:00",
+  "actualizado_hasta": "2026-08-04T08:10:52.204961+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 13
+    "actual": 15
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 13 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara)), y el incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas). La inundación en Yaracuy también fue reportada por Turimiquire (Sucre), destacando la severidad del evento. Además, se registraron cortes de luz en Zulia que pusieron en riesgo a pacientes renales (El Periodico de Monagas), y estudiantes en Barinas no pudieron asistir a su graduación debido a la crecida de un río (El Pitazo). Otros eventos reportados incluyeron apagones en varias zonas de Caracas (El Pitazo), problemas de abastecimiento de gasolina en Bolívar (El Pitazo), y disturbios en un encuentro de fútbol en Barquisimeto (Noticia al Dia (Zulia)).",
+  "narrativa": "En el período de agosto de 2026, se registraron 15 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, julio de 2026, cuando se registraron 29 eventos. Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en el estado Yaracuy, que causaron daños estructurales en el puente La Galletera y afectaron a cuatro municipios, dejando una persona fallecida y pérdidas materiales en el sector agropecuario, como lo reportó El Impulso (Lara) y Turimiquire (Sucre). Un incendio en un edificio de Las Mercedes, en el municipio Baruta, dejó dos personas lesionadas, según La Prensa de Monagas. Estos eventos resaltan la importancia de la atención y la prevención en materia de emergencias en el país. La comparación con el período anterior muestra una disminución en el número de eventos, pasando de 29 en julio a 15 en agosto, lo que puede indicar una mejora en las condiciones de seguridad y prevención en Venezuela.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -44,6 +44,14 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/bolivar-transportistas-exigen-abastecimiento-de-gasolina-nos-obligan-a-ir-a-paro/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
     },
     {
       "nombre": "La Verdad (Zulia)",

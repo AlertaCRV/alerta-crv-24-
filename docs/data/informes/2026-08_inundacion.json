@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-03T12:41:00.187223+00:00",
-  "actualizado_hasta": "2026-08-02T23:47:23.969377+00:00",
-  "total_eventos": 3,
+  "generado": "2026-08-04T08:11:33.280117+00:00",
+  "actualizado_hasta": "2026-08-03T19:02:14.723812+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos de inundación en Venezuela, en comparación con los 7 eventos registrados en el período anterior (julio de 2026). Dos de estos eventos fueron particularmente significativos y ocurrieron en el estado Yaracuy. La inundación en Yaracuy, reportada por El Impulso (Lara), causó daños estructurales en el puente La Galletera y afectó a cuatro municipios, dejando un saldo trágico de una persona fallecida y pérdidas materiales en el sector agropecuario (El Impulso (Lara)). De manera similar, Turimiquire (Sucre) informó sobre una inundación en Yaracuy, específicamente en el municipio Manuel Monge, donde una mujer de 49 años, María Eloína Hernández, falleció al recibir una descarga eléctrica mientras intentaba desconectar artefactos eléctricos en su casa inundada (Turimiquire (Sucre)). Además, en el estado Barinas, estudiantes no pudieron asistir a su graduación debido a la crecida de un río, lo que les impidió llegar a la institución, y pidieron un acto simbólico (El Pitazo).",
+  "narrativa": "En el período de agosto de 2026, se registraron 4 eventos de inundación en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 7 eventos (El Impulso (Lara)). Los eventos más críticos se produjeron en el estado Yaracuy, donde se reportaron inundaciones en cuatro municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, con daños estructurales en el puente La Galletera (El Impulso (Lara)). En el municipio Manuel Monge, una mujer de 49 años falleció por una descarga eléctrica en su casa inundada (Turimiquire (Sucre)). En el estado Barinas, las crecidas de ríos y quebradas afectaron a estudiantes que no pudieron asistir a su graduación (El Pitazo) y causaron estragos e inundaciones en varios sectores, incluyendo el municipio Cruz Paredes (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
     }
   ]
 }
