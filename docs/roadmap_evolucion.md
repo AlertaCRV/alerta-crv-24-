@@ -4168,3 +4168,164 @@ caso de Las Mercedes corregido) coincide por casualidad con el mismo
 nombre de fuente de una limitación conocida y no relacionada del CCCT
 (31-07-2026), sin efecto real (`strict=False`, no rompe la suite).
 `python3 scripts/validar_configs.py` → OK.
+
+---
+
+## Auditoría diaria automática (05-08-2026): un sismo en Filipinas publicado dos veces como sismo crítico en Venezuela, un rescate retrospectivo publicado como sismo nuevo, y severidad crítica por animales muertos
+
+Auditoría de rutina de las 13 alertas publicadas entre el 03-08 y el
+05-08-2026, comparando cada una contra el texto real de sus fuentes. Se
+encontraron y corrigieron 3 errores reales (2 de ellos con la misma causa
+raíz); se deja documentado 1 caso ambiguo sin corregir.
+
+### 1 y 2. Un terremoto de magnitud 6.3 en Mindanao, Filipinas -- que el propio artículo aclara "sin causar víctimas" -- se publicó DOS VECES como sismo crítico en Venezuela (Apure y Anzoátegui)
+
+La fuente (Notiapure) es enteramente sobre un sismo en Filipinas: "El
+Servicio Geológico de Estados Unidos (USGS) registró este miércoles un
+terremoto de magnitud 6,3 en la isla de Mindanao, en el sur de
+Filipinas (...) El evento telúrico no provocó daños ni víctimas en las
+zonas cercanas al epicentro". Sin embargo se publicaron dos alertas de
+sismo **crítico** en Venezuela: una en Apure (municipio "Biruaca") y otra
+en Anzoátegui, ambas `APROBADO_IA` (pasaron la verificación de la IA).
+
+**Causa raíz**: la página del artículo termina con un bloque de
+"artículos relacionados" bajo el encabezado "También Puedes Leer:" (y
+precedido por la frase fija "Si quieres conocer otras noticias parecidas
+a X puedes visitar la categoría Y"), con títulos de OTRAS notas sin
+relación: "Policía De Apure Detiene A Dos Mujeres... En Biruaca",
+"...Ocho Sujetos En Anzoátegui", y "Aumenta A 6.125 La Cifra De
+Fallecidos Tras Los Sismos Del 24 De Junio En Venezuela" (sobre el sismo
+venezolano real de hace más de un mes, no el de Filipinas). El regex
+existente para limpiar este tipo de bloque (`_ARTICULOS_RELACIONADOS_RE`
+en `scripts/fetch_rss.py`) solo cubría la variante "Lea también:"/"Lee
+también:" (orden de palabras "lea/lee tambien"); esta plantilla de
+WordPress usa el orden invertido ("también puedes leer"), así que el
+bloque completo -- con "Apure", "Anzoátegui", "Biruaca" y "fallecidos"
+de notas ajenas -- pasó intacto al clasificador. Esas mismas palabras
+("fallecidos") también hicieron que el filtro determinista de
+`_sismo_sin_evidencia_fuerte()` (`scripts/verify_ai.py`) NO descartara el
+artículo antes de pasar a la IA, y aparentemente influyeron también en el
+propio juicio de la IA.
+
+**Corrección**: `scripts/fetch_rss.py`, `_ARTICULOS_RELACIONADOS_RE` ahora
+también cubre `también puedes leer:` y la frase `si quieres conocer
+otras noticias parecidas a` (que en la práctica precede siempre a ese
+bloque en esta plantilla) -- un mecanismo general para cualquier fuente
+que use esta variante, no solo Notiapure.
+
+**Corrección retroactiva**: se eliminaron por completo
+`sismo::Apure::2026-08-05::mag6.3` y
+`sismo::Anzoategui::2026-08-05::mag6.3` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. Se regeneró `docs/data/estadisticas.json`.
+
+### 3. Rescate de cuerpos 41 días después del terremoto de La Guaira se publicó como un sismo NUEVO
+
+La fuente (El Periódico de Monagas) describe la extracción de 4 cuerpos
+de un edificio colapsado en Caraballeda, La Guaira, "en el día 41
+posterior a los terremotos de magnitudes 7.5 y 7.2... del pasado 24 de
+junio" -- una labor de rescate en curso de un sismo de más de un mes de
+antigüedad, no un evento sísmico ocurriendo ahora. Se publicó de todas
+formas como `sismo::La Guaira::2026-08-04`, `APROBADO_IA`.
+
+**Causa raíz**: el filtro determinista de retrospectiva
+(`_PATRON_RETROSPECTIVA` en `scripts/verify_ai.py`) ya cubre "41 días
+después de" pero con la unidad de tiempo DESPUÉS del número; este
+artículo la pone ANTES ("día 41 posterior a"), una variante de redacción
+no cubierta.
+
+**Corrección**: se agregó a `_PATRON_RETROSPECTIVA` la variante `(dia|
+dias) N posterior(es) a`, general para cualquier número.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::La Guaira::2026-08-04` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+### 4. Sequía en la Alta Guajira (Zulia) se publicaba con severidad CRÍTICA solo por "animales muertos"
+
+"Pozos secos y animales muertos: Alta Guajira comienza a sufrir los
+estragos de El Niño" -- artículo íntegro sobre mortalidad de ganado/fauna
+por sequía (comunidades wayuu, jagüeyes secos), sin ninguna víctima
+humana. Se publicó con severidad crítica (`sequia::Zulia::2026-08-05`)
+porque "muertos" está en la lista de palabras clave de severidad crítica
+sin distinguir si la muerte es humana o animal.
+
+**Corrección**: `scripts/classify.py`, nuevo mecanismo en
+`_contiene_palabra_clave_no_negada()`: para las palabras de muerte
+ambiguas entre persona/animal ("muerto/a/os/as", "murió", "ahogado/a/os/
+as" -- a diferencia de "fallecidos"/"asesinado", que en la prensa
+venezolana solo se usan para personas), si la coincidencia está pegada a
+una palabra de contexto animal ("animal(es)", "ganado", "reses",
+"vacas", etc.) no cuenta como evidencia de severidad crítica. Una
+palabra de muerte humana real en otra parte del mismo texto (p.ej.
+"falleció", o "murió" sin contexto animal cerca) sigue disparando
+severidad crítica con normalidad -- el filtro es por proximidad textual
+a la palabra específica, no un descarte del artículo completo.
+
+**Corrección retroactiva**: `sequia::Zulia::2026-08-05` se corrigió de
+severidad `critico` a `sin_clasificar` (no hay otra palabra clave de
+severidad en el texto) en `docs/data/noticias.json` (`render.
+redactar_noticia()` para regenerar el texto de la tarjeta),
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. El evento no se eliminó (la ubicación Zulia es
+correcta -- el propio artículo aclara que la Alta Guajira "se comparte
+entre Colombia y Venezuela por el lado del estado Zulia"). Se regeneró
+`docs/data/estadisticas.json`.
+
+### Informes narrativos: 2 quedan con referencias desactualizadas, no regenerados en esta sesión
+
+`docs/data/informes/2026-08_sismo.json` y `2026-08_general.json` todavía
+mencionan el rescate de La Guaira ya retractado (hallazgo 3);
+`docs/data/informes/2026-08_sequia.json` todavía describe la sequía de
+Zulia como "severidad crítica" (hallazgo 4, ahora sin_clasificar). Mismo
+caso que sesiones anteriores: la narrativa se genera con Groq y
+`GROQ_API_KEY` no está disponible en este entorno. `scripts/
+build_informes.py` regenerará el informe del mes en curso en la próxima
+corrida de producción, a partir de los datos ya corregidos. Confirmado
+con `scripts/detectar_inconsistencias.py`, que detectó correctamente las
+2 referencias a la fuente muerta de La Guaira en sus informes mensual y
+general (exactamente el evento retractado aquí) sin que se le pidiera
+nada.
+
+### Pendiente de discutir: protesta gremial de Sintrasalud Falcón, ¿es un evento de orden público?
+
+`orden_publico::Falcon::2026-08-04` ("Sintrasalud Falcón protesta por ser
+excluidos del «bono de vacaciones»") es, leyendo el artículo completo, un
+dirigente sindical declarando a la prensa que un grupo de trabajadores de
+salud está "concentrado en la entrada del Hospital de Coro" para
+reclamar un bono de vacaciones -- sin ninguna mención de cierre de vías,
+disturbios, ni tamaño de la concentración. Es el mismo patrón ya
+documentado como pendiente el 02-08-2026 (marchas/concentraciones
+políticas sin evidencia fuerte de disturbio NI declaración explícita de
+que fueron pacíficas): diseñar un filtro que descarte "concentración
+gremial sin evidencia de disrupción" arriesga perder coberturas
+iniciales de disturbios reales que aún no mencionan una palabra de
+evidencia fuerte específica. A diferencia de los casos de Nueva
+Esparta (03-08, cierre real de una avenida) y Bolívar (documentado el
+02-08, "tranca" real por el servicio eléctrico), aquí no hay ninguna
+evidencia de disrupción, solo una declaración de prensa. **No se corrigió
+nada en este caso** -- queda documentado como pendiente de decisión del
+usuario, no corregido a ciegas.
+
+### Pruebas
+
+6 casos nuevos: 3 en `tests/test_fetch_rss_limpieza.py` (nuevo archivo --
+la variante "también puedes leer" real, control de que la variante
+original "lea también" sigue funcionando, control de que texto sin
+boilerplate no se altera), 1 en `tests/test_verify_ai_filtros.py` (la
+variante real "día N posterior a" de retrospectiva), 2 en `tests/
+casos_clasificacion.jsonl` (la sequía de Zulia con severidad corregida a
+partir del texto real, y un control sintético de que una muerte humana
+real cerca de la palabra clave no se descarta aunque el mismo artículo
+mencione animales muertos en otra parte). Regresión completa contra
+`data/historico_fuentes_texto.jsonl` (ya con las 3 líneas retractadas
+eliminadas): sin cambios inesperados, solo los 4 casos ya conocidos y
+documentados como limitación (corredor Barinas-Mérida, CCCT/Chacao).
+`python3 -m pytest tests/` → 172 passed, 4 xfailed (conocidos, sin
+relación), 1 xpassed (conocido, sin efecto real). `python3 scripts/
+validar_configs.py` → OK. `python3 scripts/detectar_inconsistencias.py`
+→ 4 fuentes muertas detectadas correctamente (2 ya conocidas del
+28-07-2026, 2 nuevas de esta sesión, ver arriba); 6 pares de posibles
+duplicados sin relación con esta auditoría (preexistentes, por palabras
+compartidas en el link).

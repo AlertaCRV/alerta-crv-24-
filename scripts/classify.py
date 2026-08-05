@@ -410,18 +410,52 @@ _NEGACION_RE = re.compile(
 )
 _VENTANA_NEGACION_CHARS = 25
 
+# "muerto(s)/muerta(s)" y "ahogado(s)/ahogada(s)" son ambiguos entre
+# personas y animales (a diferencia de "fallecidos"/"asesinado", que en la
+# prensa venezolana solo se usan para personas). Caso real (05-08-2026):
+# "Pozos secos y animales muertos: Alta Guajira comienza a sufrir los
+# estragos de El Nino" -- articulo integro sobre mortalidad de ganado por
+# sequia, sin ninguna victima humana, se publico con severidad CRITICA
+# solo por la palabra "muertos" referida a los animales.
+_PALABRAS_MUERTE_AMBIGUA_ANIMAL = {
+    "muerto", "muerta", "muertos", "muertas",
+    "murio", "murió",
+    "ahogado", "ahogada", "ahogados", "ahogadas",
+}
+_ANIMAL_RE = re.compile(
+    r"\b(animal|animales|ganado|reses|res|semovientes|vaca|vacas|"
+    r"cabras|ovejas|aves|gallinas|peces|mascotas)\b"
+)
+_VENTANA_CONTEXTO_ANIMAL_CHARS = 30
+
+
+def _muerte_es_de_animal(texto_norm, inicio_match, fin_match):
+    inicio_ventana = max(0, inicio_match - _VENTANA_CONTEXTO_ANIMAL_CHARS)
+    fin_ventana = min(len(texto_norm), fin_match + _VENTANA_CONTEXTO_ANIMAL_CHARS)
+    fragmento = texto_norm[inicio_ventana:fin_ventana]
+    return _ANIMAL_RE.search(fragmento) is not None
+
 
 def _contiene_palabra_clave_no_negada(texto_norm, palabra):
     """Como _contiene_palabra_clave, pero descarta la coincidencia si esta
     negada a pocas palabras de distancia (p.ej. 'sin afectados que lamentar',
     'no se reportan heridos') -- evita que una palabra clave de severidad
-    dispare un nivel que el propio texto esta descartando."""
-    patron = r"\b" + re.escape(_normalizar(palabra)) + r"\b"
+    dispare un nivel que el propio texto esta descartando. Tambien descarta,
+    para las palabras de muerte ambiguas entre persona/animal, las
+    coincidencias pegadas a una palabra de contexto animal (ver
+    _PALABRAS_MUERTE_AMBIGUA_ANIMAL)."""
+    palabra_norm = _normalizar(palabra)
+    patron = r"\b" + re.escape(palabra_norm) + r"\b"
     for m in re.finditer(patron, texto_norm):
         inicio_ventana = max(0, m.start() - _VENTANA_NEGACION_CHARS)
         fragmento_previo = texto_norm[inicio_ventana:m.start()]
-        if not _NEGACION_RE.search(fragmento_previo):
-            return True
+        if _NEGACION_RE.search(fragmento_previo):
+            continue
+        if palabra_norm in _PALABRAS_MUERTE_AMBIGUA_ANIMAL and _muerte_es_de_animal(
+            texto_norm, m.start(), m.end()
+        ):
+            continue
+        return True
     return False
 
 
