@@ -96,5 +96,26 @@
     "fecha_deteccion": "2026-08-04T16:25:21.607157+00:00",
     "fecha_evento_temprana": "2026-08-04T14:29:03+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Monagas::2026-08-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-05T06:17:53.087677+00:00",
+    "fecha_evento_temprana": "2026-08-05T02:17:07+00:00",
+    "municipio": "Maturín"
+  },
+  "inundacion::Yaracuy::2026-08-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-05T06:17:59.636783+00:00",
+    "fecha_evento_temprana": "2026-08-04T22:50:46+00:00",
+    "municipio": null
+  },
+  "inundacion::Apure::2026-08-05": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-05T06:18:16.046081+00:00",
+    "fecha_evento_temprana": "2026-08-05T00:44:51+00:00",
+    "municipio": "Páez"
   }
 }

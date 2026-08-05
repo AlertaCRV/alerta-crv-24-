@@ -3,19 +3,23 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-04T08:11:33.280117+00:00",
-  "actualizado_hasta": "2026-08-03T19:02:14.723812+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-05T06:19:13.605385+00:00",
+  "actualizado_hasta": "2026-08-05T06:18:16.046081+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 4 eventos de inundación en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 7 eventos (El Impulso (Lara)). Los eventos más críticos se produjeron en el estado Yaracuy, donde se reportaron inundaciones en cuatro municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, con daños estructurales en el puente La Galletera (El Impulso (Lara)). En el municipio Manuel Monge, una mujer de 49 años falleció por una descarga eléctrica en su casa inundada (Turimiquire (Sucre)). En el estado Barinas, las crecidas de ríos y quebradas afectaron a estudiantes que no pudieron asistir a su graduación (El Pitazo) y causaron estragos e inundaciones en varios sectores, incluyendo el municipio Cruz Paredes (La Prensa de Monagas).",
+  "narrativa": "En el período de agosto de 2026, se registraron 6 eventos de inundación en Venezuela, en comparación con los 7 eventos registrados en el período anterior (julio de 2026). Entre los eventos más destacados se encuentran la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona, según informó (El Impulso (Lara)). La inundación en Yaracuy también fue reportada por (Turimiquire (Sucre)) y (El Impulso (Lara)), quienes destacaron la severidad crítica de la situación. Además, la inundación en Apure, específicamente en el sector Cachamero - El Ripial, fue atendida por el alcalde del municipio Páez, José Ángel Ramírez, quien lideró los trabajos de mitigación, según (Notiapure). Otros eventos notables incluyeron la crecida de un río en Barinas que impidió a estudiantes asistir a su graduación, como informó (El Pitazo), y las lluvias torrenciales que causaron estragos e inundaciones en el municipio Cruz Paredes, según (La Prensa de Monagas). La capital yaracuyana también se vio afectada por lluvias y vientos huracanados que provocaron caídas de árboles y anegaciones, como reportó (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -28,6 +32,10 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana"
     }
   ]
 }
