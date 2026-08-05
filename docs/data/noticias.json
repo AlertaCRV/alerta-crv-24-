@@ -1,5 +1,67 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Apure",
+    "municipio": "Biruaca",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/sucesos/terremoto-de-63-azota-la-isla-de-mindanao-en-filipinas-sin-causar-victimas/",
+        "fecha": "2026-08-05T19:29:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-05T19:29:37+00:00",
+    "fecha_evento_temprana": "2026-08-05T19:29:37+00:00",
+    "fecha_deteccion": "2026-08-05T22:25:03.903667+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": 6.3,
+    "tambien_mencionado_en": [
+      "Anzoategui",
+      "Carabobo"
+    ],
+    "clave_dedup": "sismo::Apure::2026-08-05::mag6.3",
+    "titulo": "Sismo en Municipio Biruaca, Apure",
+    "texto": "📌 Sismo en Municipio Biruaca, Apure\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Biruaca, Apure\n🕒 Hecho reportado: 05/08/2026, 3:29 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 6:25 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/sucesos/terremoto-de-63-azota-la-isla-de-mindanao-en-filipinas-sin-causar-victimas/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/sucesos/terremoto-de-63-azota-la-isla-de-mindanao-en-filipinas-sin-causar-victimas/",
+        "fecha": "2026-08-05T19:29:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-05T19:29:37+00:00",
+    "fecha_evento_temprana": "2026-08-05T19:29:37+00:00",
+    "fecha_deteccion": "2026-08-05T22:25:20.514470+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": 6.3,
+    "tambien_mencionado_en": [
+      "Apure",
+      "Carabobo"
+    ],
+    "clave_dedup": "sismo::Anzoategui::2026-08-05::mag6.3",
+    "titulo": "Sismo en Anzoategui",
+    "texto": "📌 Sismo en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 05/08/2026, 3:29 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 6:25 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/sucesos/terremoto-de-63-azota-la-isla-de-mindanao-en-filipinas-sin-causar-victimas/"
+  },
+  {
     "tipo": "sequia",
     "ubicacion": "Zulia",
     "municipio": null,
