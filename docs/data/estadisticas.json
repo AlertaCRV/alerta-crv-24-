@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-05T06:18:23.983938+00:00",
+  "actualizado": "2026-08-05T18:11:30.671967+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-05T02:17:07+00:00"
+    "hasta": "2026-08-05T17:53:32+00:00"
   },
-  "total_eventos": 52,
+  "total_eventos": 54,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,10 +14,11 @@
     "orden_publico": 7,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 4,
+    "incendio": 5,
     "vialidad": 1,
     "sismo": 2,
-    "escasez_combustible": 1
+    "escasez_combustible": 1,
+    "sequia": 1
   },
   "ranking_estados": [
     {
@@ -26,14 +27,14 @@
       "confirmados": 2
     },
     {
+      "estado": "Zulia",
+      "total": 6,
+      "confirmados": 3
+    },
+    {
       "estado": "Barinas",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 5,
-      "confirmados": 3
     },
     {
       "estado": "Bolivar",
@@ -41,12 +42,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 4,
+      "estado": "Yaracuy",
+      "total": 5,
       "confirmados": 1
     },
     {
-      "estado": "Yaracuy",
+      "estado": "Lara",
       "total": 4,
       "confirmados": 1
     },
@@ -121,7 +122,8 @@
       "tormenta_electrica": 1,
       "infraestructura_electrica": 2,
       "colapso_estructural": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "sequia": 1
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -174,7 +176,8 @@
     },
     "Yaracuy": {
       "inundacion": 3,
-      "sismo": 1
+      "sismo": 1,
+      "incendio": 1
     },
     "La Guaira": {
       "sismo": 1
@@ -182,7 +185,7 @@
   },
   "por_severidad": {
     "alto": 7,
-    "critico": 5,
+    "critico": 7,
     "sin_clasificar": 40
   },
   "serie_mensual_por_tipo": {
@@ -215,7 +218,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 1
+      "2026-08": 2
     },
     "vialidad": {
       "2026-08": 1
@@ -224,6 +227,9 @@
       "2026-08": 2
     },
     "escasez_combustible": {
+      "2026-08": 1
+    },
+    "sequia": {
       "2026-08": 1
     }
   }

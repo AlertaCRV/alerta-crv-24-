@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "sequia",
+  "tipo_label": "Sequía",
+  "cerrado": false,
+  "generado": "2026-08-05T18:11:34.690511+00:00",
+  "actualizado_hasta": "2026-08-05T18:11:04.604670+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un evento relacionado con la sequía en Venezuela. La sequía en Zulia, que tuvo una severidad crítica, fue reportada por (La Patilla). Esta situación ha llevado a efectos negativos en la región, como pozos secos y animales muertos, especialmente en la Alta Guajira, que comparte territorio con Colombia (La Patilla). Este evento es particularmente notable dado que en el período anterior, 2026-07, no se registraron eventos de este tipo, lo que marca un contraste significativo con el período actual que tuvo 1 evento registrado. La sequía en la región de Zulia y su impacto en la Alta Guajira subraya la importancia de monitorear y responder a los desafíos ambientales en la zona.",
+  "fuentes": [
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
+    }
+  ]
+}
