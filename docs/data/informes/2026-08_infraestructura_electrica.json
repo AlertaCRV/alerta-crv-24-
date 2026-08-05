@@ -3,23 +3,35 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-04T08:11:28.879658+00:00",
-  "actualizado_hasta": "2026-08-02T20:16:34.351708+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-05T06:19:01.204556+00:00",
+  "actualizado_hasta": "2026-08-05T06:17:53.087677+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 6,
-    "actual": 4
+    "actual": 7
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 4 eventos relacionados con fallas eléctricas en Venezuela, lo que representa una disminución en comparación con el período anterior, julio de 2026, cuando se registraron 6 eventos (El Periodico de Monagas). Uno de los eventos reportados fue el corte de luz en el estado Zulia, que puso en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcaron períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). En Caracas, se reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio, Parque Carabobo y avenida Bolívar, según informes de ciudadanos y usuarios en redes sociales (El Pitazo, Noticias de Aqui). La falla eléctrica también afectó a comunidades de Quinta Crespo y la parroquia San Juan (Primicia). Además, en el Callao, estado Bolívar, se llevó a cabo un paro cívico para exigir soluciones ante la crisis eléctrica en el municipio, que ha sido afectado por constantes apagones (Turimiquire).",
+  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). Uno de los eventos más destacados fue el corte de luz en Zulia, que puso en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). Además, se reportaron protestas en Carabobo contra los constantes apagones, donde vecinos de El Trigal se concentraron en las inmediaciones de Quinta Carabobo para reclamar a las autoridades por las interrupciones del servicio (El Periodico de Monagas). En Caracas, ciudadanos reportaron apagones en varias zonas, como El Recreo, La Pastora y Plaza Venezuela, la noche del 1 de agosto (El Pitazo). También se produjeron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron por tener más de 10 horas sin energía eléctrica, trancando la avenida Libertador (Maturin News). Otros sectores afectados por fallas eléctricas fueron el centro de Caracas, donde la interrupción del suministro alcanzó a comunidades de Quinta Crespo y la parroquia San Juan (Primicia), y Aragua y Carabobo, donde se realizaron cacerolazos y protestas por apagones de hasta ocho horas (Primicia).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
     },
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
@@ -28,6 +40,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

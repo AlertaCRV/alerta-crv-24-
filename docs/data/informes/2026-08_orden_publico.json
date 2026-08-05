@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-04T08:11:45.418374+00:00",
-  "actualizado_hasta": "2026-08-04T08:10:52.204961+00:00",
-  "total_eventos": 3,
+  "generado": "2026-08-05T06:19:25.955259+00:00",
+  "actualizado_hasta": "2026-08-04T16:25:21.607157+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 3
+    "actual": 5
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos relacionados con el orden público en Venezuela, lo que supone un aumento en comparación con el mes anterior, julio de 2026, cuando se registraron 2 eventos. Uno de los eventos destacados fue la manifestación en la isla de Margarita, específicamente en el municipio Díaz, donde vecinos del sector La Guardia cerraron la avenida Taguantar en protesta por la interrupción del suministro de agua potable, que ya llevaba cinco meses (El Tiempo). Otro evento notable fue la concentración de sindicalistas y trabajadores en la base aérea La Carlota, en Caracas, donde exigieron que el diálogo entre el chavismo y un sector opositor se desarrolle de manera pública y con participación de la ciudadanía (La Verdad). Además, se produjeron disturbios en Barquisimeto durante el encuentro entre Portuguesa FC y Carabobo FC, cuando supuestos hinchas del Deportivo Lara atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC, resultando en daños a los vehículos (Noticia al Dia).",
+  "narrativa": "En el período de agosto de 2026, se registraron 5 eventos relacionados con el orden público en Venezuela, lo que supone un aumento en comparación con el período anterior, julio de 2026, cuando se registraron 2 eventos (El Pitazo). Uno de los eventos que destacan es la protesta por la crisis eléctrica en Carabobo y Aragua, donde los ciudadanos expresaron su descontento a través de cacerolazos y consignas en contra de las fallas en el servicio eléctrico (El Pitazo). Otro evento notable es la manifestación en la isla de Margarita, donde los vecinos del sector La Guardia, en el municipio Díaz, protestaron por la interrupción del suministro de agua potable, que ya lleva cinco meses (El Tiempo). Además, en el estado Falcón, los trabajadores de la salud se concentraron en la entrada del Hospital de Coro para protestar por ser excluidos del bono de vacaciones (La Manana). En Caracas, sindicalistas y trabajadores exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de la ciudadanía (La Verdad). Finalmente, en Barquisimeto, un encuentro de fútbol entre Portuguesa FC y Carabobo FC se vio empañado por una golpiza a un inocente, atribuida a supuestos hinchas locales (Noticia al Dia).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
+    },
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
     },
     {
       "nombre": "La Verdad (Zulia)",

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-04T16:25:32.685159+00:00",
+  "actualizado": "2026-08-05T06:18:23.983938+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-04T16:20:10+00:00"
+    "hasta": "2026-08-05T02:17:07+00:00"
   },
-  "total_eventos": 49,
+  "total_eventos": 52,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 11,
-    "infraestructura_electrica": 12,
+    "inundacion": 13,
+    "infraestructura_electrica": 13,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 7,
@@ -46,6 +46,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Yaracuy",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Carabobo",
       "total": 3,
       "confirmados": 0
@@ -56,12 +61,17 @@
       "confirmados": 0
     },
     {
-      "estado": "Yaracuy",
-      "total": 3,
-      "confirmados": 1
+      "estado": "Anzoategui",
+      "total": 2,
+      "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
+      "estado": "Apure",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
+      "estado": "Monagas",
       "total": 2,
       "confirmados": 0
     },
@@ -86,17 +96,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
       "estado": "Tachira",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
       "total": 1,
       "confirmados": 0
     },
@@ -152,13 +152,14 @@
       "escasez_combustible": 1
     },
     "Apure": {
-      "crisis_migratoria": 1
+      "crisis_migratoria": 1,
+      "inundacion": 1
     },
     "Tachira": {
       "deslizamiento": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Miranda": {
       "incendio": 2
@@ -172,7 +173,7 @@
       "orden_publico": 1
     },
     "Yaracuy": {
-      "inundacion": 2,
+      "inundacion": 3,
       "sismo": 1
     },
     "La Guaira": {
@@ -180,9 +181,9 @@
     }
   },
   "por_severidad": {
-    "alto": 6,
+    "alto": 7,
     "critico": 5,
-    "sin_clasificar": 38
+    "sin_clasificar": 40
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -190,11 +191,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 4
+      "2026-08": 6
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 6
+      "2026-08": 7
     },
     "deslizamiento": {
       "2026-07": 3

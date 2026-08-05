@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:53.052806+00:00",
+    "generado": "2026-08-05T06:19:34.110134+00:00",
     "total_eventos": 1
   },
   {
@@ -12,39 +12,39 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:49.161793+00:00",
-    "total_eventos": 1
+    "generado": "2026-08-05T06:19:29.884569+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-08",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:45.418374+00:00",
-    "total_eventos": 3
+    "generado": "2026-08-05T06:19:25.955259+00:00",
+    "total_eventos": 5
   },
   {
     "periodo": "2026-08",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:33.280117+00:00",
-    "total_eventos": 4
+    "generado": "2026-08-05T06:19:13.605385+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-08",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:28.879658+00:00",
-    "total_eventos": 4
+    "generado": "2026-08-05T06:19:01.204556+00:00",
+    "total_eventos": 7
   },
   {
     "periodo": "2026-08",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:24.513356+00:00",
+    "generado": "2026-08-05T06:18:56.969565+00:00",
     "total_eventos": 1
   },
   {
@@ -52,15 +52,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:20.520423+00:00",
-    "total_eventos": 15
+    "generado": "2026-08-05T06:18:53.107422+00:00",
+    "total_eventos": 23
   },
   {
     "periodo": "2026-08",
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-04T08:11:16.422607+00:00",
+    "generado": "2026-08-05T06:18:27.872612+00:00",
     "total_eventos": 1
   },
   {

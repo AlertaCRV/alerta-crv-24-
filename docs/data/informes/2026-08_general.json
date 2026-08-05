@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-04T08:11:20.520423+00:00",
-  "actualizado_hasta": "2026-08-04T08:10:52.204961+00:00",
-  "total_eventos": 15,
+  "generado": "2026-08-05T06:18:53.107422+00:00",
+  "actualizado_hasta": "2026-08-05T06:18:16.046081+00:00",
+  "total_eventos": 23,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 15
+    "actual": 23
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 15 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, julio de 2026, cuando se registraron 29 eventos. Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en el estado Yaracuy, que causaron daños estructurales en el puente La Galletera y afectaron a cuatro municipios, dejando una persona fallecida y pérdidas materiales en el sector agropecuario, como lo reportó El Impulso (Lara) y Turimiquire (Sucre). Un incendio en un edificio de Las Mercedes, en el municipio Baruta, dejó dos personas lesionadas, según La Prensa de Monagas. Estos eventos resaltan la importancia de la atención y la prevención en materia de emergencias en el país. La comparación con el período anterior muestra una disminución en el número de eventos, pasando de 29 en julio a 15 en agosto, lo que puede indicar una mejora en las condiciones de seguridad y prevención en Venezuela.",
+  "narrativa": "Durante el período de 2026-08, se registraron 23 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior (2026-07), que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara), Turimiquire (Sucre)). Además, se reportó un incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas), y una inundación en Apure, que afectó a la población de La Victoria (Notiapure). La inundación en Yaracuy también causó la muerte de María Hernández, quien recibió una descarga eléctrica al intentar desconectar la nevera en su casa inundada (Turimiquire (Sucre)). Estos eventos resaltan la importancia de la atención y la preparación para enfrentar emergencias en el país.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -20,6 +20,10 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -34,6 +38,14 @@
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/recuperan-cuatro-cuerpos-en-la-opppe-26-este-4-de-agosto/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
     },
@@ -46,8 +58,20 @@
       "link": "https://elpitazo.net/regiones/guayana/bolivar-transportistas-exigen-abastecimiento-de-gasolina-nos-obligan-a-ir-a-paro/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -56,6 +80,10 @@
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -74,8 +102,16 @@
       "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
     },
     {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana"
     }
   ]
 }

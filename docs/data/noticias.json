@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": "Alto De Los Godos",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video",
+        "fecha": "2026-08-05T02:17:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-05T02:17:07+00:00",
+    "fecha_evento_temprana": "2026-08-05T02:17:07+00:00",
+    "fecha_deteccion": "2026-08-05T06:17:53.087677+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Monagas::2026-08-05",
+    "titulo": "Falla eléctrica en Parroquia Alto De Los Godos, Municipio Maturín, Monagas",
+    "texto": "📌 Falla eléctrica en Parroquia Alto De Los Godos, Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Alto De Los Godos, Municipio Maturín, Monagas\n🕒 Hecho reportado: 04/08/2026, 10:17 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 2:17 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana",
+        "fecha": "2026-08-04T22:50:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-04T22:50:46+00:00",
+    "fecha_evento_temprana": "2026-08-04T22:50:46+00:00",
+    "fecha_deteccion": "2026-08-05T06:17:59.636783+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Yaracuy::2026-08-04",
+    "titulo": "Inundación en Yaracuy",
+    "texto": "📌 Inundación en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 04/08/2026, 6:50 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 2:17 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Apure",
+    "municipio": "Páez",
+    "parroquia": "Urdaneta",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/",
+        "fecha": "2026-08-05T00:44:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-05T00:44:51+00:00",
+    "fecha_evento_temprana": "2026-08-05T00:44:51+00:00",
+    "fecha_deteccion": "2026-08-05T06:18:16.046081+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Apure::2026-08-05",
+    "titulo": "Inundación en Parroquia Urdaneta, Municipio Páez, Apure",
+    "texto": "📌 Inundación en Parroquia Urdaneta, Municipio Páez, Apure\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Urdaneta, Municipio Páez, Apure\n🕒 Hecho reportado: 04/08/2026, 8:44 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 2:18 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "La Guaira",
     "municipio": null,

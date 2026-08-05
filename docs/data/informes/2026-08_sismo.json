@@ -3,16 +3,20 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-08-04T08:11:49.161793+00:00",
-  "actualizado_hasta": "2026-08-02T15:45:52.656504+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-05T06:19:29.884569+00:00",
+  "actualizado_hasta": "2026-08-04T16:24:47.333809+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el período de 2026-08, se registró un evento sísmico significativo en Venezuela. Un sismo de magnitud 4.2 se produjo en el centro-occidente del país, con una profundidad de 8.1 km, y se sintió en varios estados, incluyendo Yaracuy, Falcón, Lara y Carabobo (Primicia). Este evento es notable ya que en el período anterior, 2026-07, no se registraron eventos sísmicos. En comparación con el período anterior, se pasó de 0 eventos registrados a 1 en este período. El sismo en cuestión fue lo suficientemente fuerte como para ser sentido en varias regiones, lo que subraya la importancia de la vigilancia sísmica en la región.",
+  "narrativa": "En el período de agosto de 2026, se registraron 2 eventos sísmicos en Venezuela, lo que contrasta con el período anterior, julio de 2026, en el que no se registraron eventos de este tipo. Uno de los eventos más significativos fue el rescate de cuatro cuerpos en la torre H de las residencias OPPPE 26 en Caraballeda, La Guaira, el 4 de agosto, luego de los terremotos de magnitudes 7.5 y 7.2 (El Periodico de Monagas). Por otro lado, se registró un sismo de magnitud 4.2 en el centro-occidente del país, con una profundidad de 8.1 km, que se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia). Estos eventos destacan la importancia de la vigilancia sísmica en la región. La comparación con el período anterior muestra un aumento en la actividad sísmica, con 0 eventos en julio versus 2 en agosto.",
   "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/recuperan-cuatro-cuerpos-en-la-opppe-26-este-4-de-agosto/"
+    },
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
