@@ -1,6 +1,5 @@
 from fetch_rss import fetch_rss_items
 from fetch_telegram import fetch_telegram_items
-from fetch_gmail import fetch_gmail_items
 from classify import clasificar_item, es_relevante
 from verify import agrupar_y_verificar
 from verify_ai import verificar_evento_con_ia
@@ -22,8 +21,10 @@ def main():
     print("Recolectando RSS...")
     items = fetch_rss_items(ventana)
     print(f"  {len(items)} items de RSS")
-    print("Recolectando correos institucionales...")
-    items += fetch_gmail_items(ventana)
+    # Captura por correo (alertacrv.reportes@gmail.com) desactivada: era un
+    # experimento para que las filiales reportaran por correo, pero resultó
+    # desordenado y asistemático. Reemplazado por un sistema de captura
+    # estandarizado (ver docs/roadmap_evolucion.md).
 
     # print("Recolectando Telegram...")
     # items += fetch_telegram_items(ventana)
