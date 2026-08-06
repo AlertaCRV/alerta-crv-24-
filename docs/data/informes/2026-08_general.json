@@ -3,19 +3,23 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-05T06:18:53.107422+00:00",
-  "actualizado_hasta": "2026-08-05T06:18:16.046081+00:00",
-  "total_eventos": 23,
+  "generado": "2026-08-06T08:05:40.229605+00:00",
+  "actualizado_hasta": "2026-08-06T08:05:31.297170+00:00",
+  "total_eventos": 25,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 23
+    "actual": 25
   },
-  "narrativa": "Durante el período de 2026-08, se registraron 23 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior (2026-07), que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara), Turimiquire (Sucre)). Además, se reportó un incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas), y una inundación en Apure, que afectó a la población de La Victoria (Notiapure). La inundación en Yaracuy también causó la muerte de María Hernández, quien recibió una descarga eléctrica al intentar desconectar la nevera en su casa inundada (Turimiquire (Sucre)). Estos eventos resaltan la importancia de la atención y la preparación para enfrentar emergencias en el país.",
+  "narrativa": "En el período de agosto de 2026, se registraron 25 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y dejó una persona fallecida, además de importantes pérdidas materiales (El Impulso (Lara)). También se reportó un incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas), y una inundación en Apure, que afectó a la población de La Victoria (Notiapure). Además, se registró un incendio en Yaracuy, que resultó en la muerte de dos hermanos (La Prensa de Lara). La inundación en Yaracuy también causó la muerte de una persona por descarga eléctrica en el municipio Manuel Monge (Turimiquire (Sucre)). Es importante destacar que estos eventos tuvieron un impacto significativo en las comunidades afectadas, y es fundamental seguir monitoreando la situación para brindar apoyo y asistencia a quienes lo necesitan.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/sucesos/hermanos-pierden-la-vida-explosion-gas/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -34,12 +38,12 @@
       "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
     },
     {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
+      "nombre": "Ciudad Trujillo",
+      "link": "https://ciudadtrujillo.com/?p=53972"
     },
     {
       "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/venezuela/recuperan-cuatro-cuerpos-en-la-opppe-26-este-4-de-agosto/"
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -72,6 +76,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
     },
     {
       "nombre": "La Prensa de Monagas",

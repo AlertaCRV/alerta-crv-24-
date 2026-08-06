@@ -3,7 +3,7 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-05T06:19:01.204556+00:00",
+  "generado": "2026-08-06T08:05:48.334701+00:00",
   "actualizado_hasta": "2026-08-05T06:17:53.087677+00:00",
   "total_eventos": 7,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 6,
     "actual": 7
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). Uno de los eventos más destacados fue el corte de luz en Zulia, que puso en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). Además, se reportaron protestas en Carabobo contra los constantes apagones, donde vecinos de El Trigal se concentraron en las inmediaciones de Quinta Carabobo para reclamar a las autoridades por las interrupciones del servicio (El Periodico de Monagas). En Caracas, ciudadanos reportaron apagones en varias zonas, como El Recreo, La Pastora y Plaza Venezuela, la noche del 1 de agosto (El Pitazo). También se produjeron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron por tener más de 10 horas sin energía eléctrica, trancando la avenida Libertador (Maturin News). Otros sectores afectados por fallas eléctricas fueron el centro de Caracas, donde la interrupción del suministro alcanzó a comunidades de Quinta Crespo y la parroquia San Juan (Primicia), y Aragua y Carabobo, donde se realizaron cacerolazos y protestas por apagones de hasta ocho horas (Primicia).",
+  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). Entre los eventos destacados se encuentran los cortes de luz en Zulia, que ponen en riesgo a pacientes renales, con interrupciones de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). Además, habitantes de los estados Aragua y Carabobo protestaron contra los constantes apagones, exigiendo respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Caracas, se reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora y Plaza Venezuela, debido a fluctuaciones eléctricas (El Pitazo, Noticias de Aqui). También se registraron protestas en Barinas y Maturín, donde los ciudadanos exigieron soluciones a los insoportables apagones (La Patilla, Maturin News). En el estado Bolívar, se llevó a cabo un paro cívico en El Callao para exigir respuestas ante la crisis eléctrica en el municipio (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",

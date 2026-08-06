@@ -1,11 +1,4 @@
 {
-  "inundacion::Yaracuy::2026-08-02": {
-    "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-02T23:47:23.969377+00:00",
-    "fecha_evento_temprana": "2026-08-02T15:20:02+00:00",
-    "municipio": "Manuel Monge"
-  },
   "inundacion::Barinas::2026-08-03": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -82,5 +75,12 @@
     "fecha_deteccion": "2026-08-05T18:11:11.802437+00:00",
     "fecha_evento_temprana": "2026-08-05T13:32:39+00:00",
     "municipio": null
+  },
+  "incendio::Trujillo::2026-08-06": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-06T08:05:31.297170+00:00",
+    "fecha_evento_temprana": "2026-08-06T00:33:25+00:00",
+    "municipio": "Carache"
   }
 }
