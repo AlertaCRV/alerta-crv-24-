@@ -3,19 +3,27 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-08-05T06:18:56.969565+00:00",
-  "actualizado_hasta": "2026-08-02T20:16:30.637565+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-06T08:05:44.296009+00:00",
+  "actualizado_hasta": "2026-08-06T08:05:31.297170+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registró un total de 1 evento de incendio, lo que representa una disminución en comparación con el período anterior (2026-07), que tuvo 3 eventos registrados. Uno de los eventos destacados fue el incendio en Miranda, que tuvo una severidad alto, según informó (La Prensa de Monagas). Este incendio ocurrió en un edificio de Las Mercedes, específicamente en el piso tres del edificio La Joya, ubicado entre la Avenida Principal de Las Mercedes y la calle París, en el municipio Baruta, y dejó dos personas lesionadas, ambas de la tercera edad, quienes fueron trasladadas de emergencia a un centro asistencial cercano por efectivos de la Policía Nacional Bolivariana (PNB) y el Cuerpo de Bomberos de Caracas, según se informó en (La Prensa de Monagas).",
+  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos relacionados con incendios en Venezuela, similar al número reportado en el período anterior de julio de 2026. Uno de los eventos más destacados fue el incendio en Miranda, reportado por (La Prensa de Monagas), que tuvo una severidad alta. Otro evento significativo fue el incendio en Yaracuy, con severidad crítica, según (La Prensa de Lara). En este último, se informó que dos hermanos perdieron la vida tras una explosión de gas en Barquisimeto, estado Yaracuy, como se detalla en (La Prensa de Lara). Además, en el municipio Baruta, específicamente en Las Mercedes, un incendio en un edificio dejó dos personas lesionadas, según (La Prensa de Monagas). Por otro lado, en el estado Trujillo, se desplegaron labores para controlar un incendio forestal en el municipio Carache, con la participación de organismos de prevención como el Cuerpo de Bomberos y Protección Civil, tal como se informa en (Ciudad Trujillo).",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/sucesos/hermanos-pierden-la-vida-explosion-gas/"
+    },
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    },
+    {
+      "nombre": "Ciudad Trujillo",
+      "link": "https://ciudadtrujillo.com/?p=53972"
     }
   ]
 }
