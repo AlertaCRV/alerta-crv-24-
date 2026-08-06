@@ -49,7 +49,7 @@ CONFIRMACION_EXPLICACION = {
     False: "Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.",
 }
 
-# Titulo fijo para reportes de filiales (ver attachments_filial.py):
+# Titulo fijo para reportes de filiales:
 # a diferencia de una alerta armada a partir de un titular de prensa, aqui
 # el "titular" real es el proposito administrativo del reporte de la
 # filial, no el tipo de emergencia detectado -- para crisis_migratoria eso
@@ -103,8 +103,8 @@ def redactar_noticia(evento):
         )
 
     # Los reportes de filiales no tienen un enlace publico util (el "link"
-    # es una busqueda en el Gmail privado del sistema, ver
-    # attachments_filial.py), pero si traen cifras consolidadas ya
+    # depende del canal de captura del reporte, ej. una busqueda privada),
+    # pero si traen cifras consolidadas ya
     # verificadas por el propio criterio de seguridad de datos -- se
     # muestran directamente en la tarjeta en vez de la lista de fuentes con
     # enlaces, que aqui nadie mas puede abrir.

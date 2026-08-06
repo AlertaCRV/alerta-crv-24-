@@ -576,8 +576,8 @@ def _manejar_falla_temporal(evento, candidatos):
 
     Retener solo tiene sentido si el mismo cluster puede reaparecer en una
     corrida futura -- cierto para RSS (el articulo sigue en la ventana de
-    busqueda) pero FALSO para correos institucionales: fetch_gmail.py marca
-    cada correo como leido apenas lo procesa una vez, asi que si se retiene
+    busqueda) pero FALSO para correos institucionales: el fetcher de correo
+    marcaba cada correo como leido apenas lo procesaba una vez, asi que si se retiene
     aqui, ese reporte nunca vuelve a generarse y quedaria retenido para
     siempre (bug real encontrado probando el reporte de Filial Puerto
     Piritu: quedo con 1 intento fallido sin forma de llegar nunca al
