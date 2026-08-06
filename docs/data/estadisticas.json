@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-05T22:25:34.961951+00:00",
+  "actualizado": "2026-08-05T23:24:46.536960+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-05T19:29:37+00:00"
+    "hasta": "2026-08-05T17:53:32+00:00"
   },
-  "total_eventos": 56,
+  "total_eventos": 53,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 5,
     "vialidad": 1,
-    "sismo": 4,
+    "sismo": 1,
     "escasez_combustible": 1,
     "sequia": 1
   },
@@ -57,18 +57,18 @@
       "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
+      "estado": "Falcon",
       "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 2,
       "confirmados": 0
     },
     {
       "estado": "Apure",
-      "total": 3,
-      "confirmados": 0
-    },
-    {
-      "estado": "Falcon",
-      "total": 3,
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -98,11 +98,6 @@
     },
     {
       "estado": "Tachira",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -146,8 +141,7 @@
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
-      "crisis_migratoria": 1,
-      "sismo": 1
+      "crisis_migratoria": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 3,
@@ -156,8 +150,7 @@
     },
     "Apure": {
       "crisis_migratoria": 1,
-      "inundacion": 1,
-      "sismo": 1
+      "inundacion": 1
     },
     "Tachira": {
       "deslizamiento": 1
@@ -180,14 +173,11 @@
       "inundacion": 3,
       "sismo": 1,
       "incendio": 1
-    },
-    "La Guaira": {
-      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 7,
-    "critico": 9,
+    "critico": 6,
     "sin_clasificar": 40
   },
   "serie_mensual_por_tipo": {
@@ -226,7 +216,7 @@
       "2026-08": 1
     },
     "sismo": {
-      "2026-08": 4
+      "2026-08": 1
     },
     "escasez_combustible": {
       "2026-08": 1

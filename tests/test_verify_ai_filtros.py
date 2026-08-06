@@ -119,6 +119,20 @@ def test_sismo_nuevo_no_es_retrospectiva():
     assert _es_retrospectiva_obvia(texto) is False
 
 
+def test_dia_n_posterior_a_es_retrospectiva():
+    # Caso real (05-08-2026, La Guaira): rescate de cuerpos "en el dia 41
+    # posterior a los terremotos... del pasado 24 de junio" se publico
+    # como un sismo NUEVO -- es la unidad de tiempo ANTES del numero
+    # ("dia 41 posterior a"), variante que el patron original ("41 dias
+    # despues") no cubria.
+    texto = (
+        "La extraccion de estos cuerpos se concreto en el dia 41 posterior "
+        "a los terremotos de magnitudes 7.5 y 7.2 que azotaron el territorio "
+        "nacional el pasado 24 de junio."
+    )
+    assert _es_retrospectiva_obvia(texto) is True
+
+
 # --- municipio/parroquia del cluster deben aparecer en las fuentes -------
 # aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
 

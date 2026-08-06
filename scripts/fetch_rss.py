@@ -42,7 +42,27 @@ _BOILERPLATE_RE = re.compile(
 # terminaba con "Lea tambien: ... Tres incendios en menos de un mes
 # registra la ciudad de Maturin" -- el titulo de OTRA nota, no del articulo
 # en si.
-_ARTICULOS_RELACIONADOS_RE = re.compile(r"\b(lea|lee)\s+tambi[ée]n\s*:.*$", re.IGNORECASE | re.DOTALL)
+#
+# Otras plantillas de WordPress usan variantes distintas para el mismo tipo
+# de bloque de "articulos relacionados", con el orden de las palabras
+# invertido ("Tambien Puedes Leer:") o precedido de una frase fija ("Si
+# quieres conocer otras noticias parecidas a X puedes visitar la categoria
+# Y"). Caso real (05-08-2026, notiapure.com.ve): un articulo intrascendente
+# sobre un sismo de magnitud 6.3 en la isla de Mindanao, Filipinas -- que el
+# propio texto aclara "sin causar victimas" -- genero DOS alertas falsas de
+# sismo critico en Venezuela (Apure y Anzoategui) porque el pie de pagina
+# de "Tambien Puedes Leer" enlazaba titulos de OTRAS notas locales sin
+# relacion ("Policia De Apure Detiene...", "...Ocho Sujetos En Anzoategui",
+# "...Biruaca estado Apure") junto con titulos que si mencionaban
+# "fallecidos"/"muertos" (de un sismo venezolano real, pero de mas de un
+# mes atras), lo que ademas hizo que el filtro de "evidencia fuerte" de
+# sismo (ver verify_ai.py) NO descartara el articulo.
+_ARTICULOS_RELACIONADOS_RE = re.compile(
+    r"\b(lea|lee)\s+tambi[ée]n\s*:.*$"
+    r"|\btambi[ée]n\s+puedes\s+leer\s*:.*$"
+    r"|\bsi\s+quieres\s+conocer\s+otras\s+noticias\s+parecidas\s+a\b.*$",
+    re.IGNORECASE | re.DOTALL,
+)
 
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
 # puntos suspensivos (a veces como caracter unico "…", a veces como

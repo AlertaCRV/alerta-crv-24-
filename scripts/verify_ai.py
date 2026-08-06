@@ -56,7 +56,15 @@ _PATRON_RETROSPECTIVA = re.compile(
     # termino exacto. Caso real que se escapo: "tras el doblete sismico,
     # los rescatistas encontraron..." (un articulo sobre labores de rescate
     # del terremoto anterior, mal clasificado como deslizamiento nuevo).
-    r"|\bdoblet?e?\s+sismic[oa]\b|\bdoble\s+sismo\b|\bsismo\s+doble\b",
+    r"|\bdoblet?e?\s+sismic[oa]\b|\bdoble\s+sismo\b|\bsismo\s+doble\b"
+    # Variante con la unidad de tiempo ANTES del numero ("dia 41 posterior
+    # a los terremotos...", en vez de "41 dias despues de"). Caso real
+    # (05-08-2026): un articulo sobre el rescate de cuerpos "en el dia 41
+    # posterior a los terremotos... del pasado 24 de junio" se publico
+    # como un sismo NUEVO en La Guaira -- es una labor de rescate en curso
+    # de un sismo de mas de un mes de antiguedad, no un evento sismico
+    # actual.
+    rf"|\b(dia|dias)\s+{_NUMEROS}\s+posterior(?:es)?\s+a\b",
     re.IGNORECASE,
 )
 
