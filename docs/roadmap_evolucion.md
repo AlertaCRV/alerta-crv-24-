@@ -4329,3 +4329,89 @@ validar_configs.py` → OK. `python3 scripts/detectar_inconsistencias.py`
 28-07-2026, 2 nuevas de esta sesión, ver arriba); 6 pares de posibles
 duplicados sin relación con esta auditoría (preexistentes, por palabras
 compartidas en el link).
+
+---
+
+## Auditoría diaria automática (06-08-2026): sin errores nuevos, un caso de duplicado cruzado por tipo pendiente de discutir
+
+Auditoría de rutina de las 11 alertas publicadas dentro de la ventana de
+48 horas (03-08 a 06-08-2026), comparando cada una contra el texto real
+de sus fuentes. De esas 11, solo el incendio forestal de Trujillo
+(`incendio::Trujillo::2026-08-06`) es genuinamente nueva desde la
+auditoría anterior (05-08-2026, PR #145); el resto ya había sido
+cubierta por esa sesión. No se encontró ningún error de clasificación
+nuevo -- se revisaron con especial atención por tener severidad
+distinta de `sin_clasificar` o por lucir potencialmente confusas:
+
+- `incendio::Yaracuy::2026-08-05` (severidad `crítico`, dos fallecidos):
+  el texto guardado en `historico_fuentes_texto.jsonl` es solo el
+  resumen RSS ("Dos hermanos fallecieron este lunes en Barquisimeto...
+  en el estado Yaracuy"), que mezcla dos topónimos y podría parecer un
+  error de ubicación. Se descargó el artículo completo
+  (laprensadelara.com) para confirmarlo: la explosión de la bombona de
+  gas ocurrió en el sector El Resbalón, **municipio Manuel Monge,
+  estado Yaracuy** (correcto); los hermanos fueron trasladados y
+  fallecieron 9 días después en un hospital de Barquisimeto (Lara), que
+  es solo el lugar del deceso, no del hecho. Ubicación y severidad
+  correctas.
+- `inundacion::Apure::2026-08-05` (severidad `alto`, "~2.000
+  damnificados"): confirmado con el texto real (notiapure.com.ve) que
+  la crecida del río Arauca en la parroquia Urdaneta, municipio Páez,
+  es reciente y la cifra de damnificados es la que dispara la severidad
+  `alto` vía `config/keywords.yaml`. No hay un evento de inundación
+  anterior en Apure en `data/historico_eventos.jsonl` del que esta nota
+  sea un duplicado o una nota puramente retrospectiva de mitigación
+  antigua.
+- `infraestructura_electrica::Monagas::2026-08-05`,
+  `infraestructura_electrica::Barinas::2026-08-04`,
+  `inundacion::Yaracuy::2026-08-04`: confirmadas contra el texto real,
+  clasificación y ubicación (incluyendo la parroquia "Alto de Los
+  Godos" de Monagas) correctas.
+
+### Pendiente de discutir: mismo evento de protesta por apagones en Carabobo publicado dos veces, una vez como `infraestructura_electrica` y otra como `orden_publico`
+
+`infraestructura_electrica::Carabobo::2026-08-04` (fuentes:
+elperiodicodemonagas.com.ve + primicia.com.ve) y
+`orden_publico::Carabobo::2026-08-04` (fuente: elpitazo.net) describen,
+leyendo los tres artículos, el mismo hecho real: los cacerolazos y
+protestas de la noche del lunes 3 de agosto en el sector El Trigal y
+frente a la Quinta Carabobo (residencia del gobernador Rafael Lacava)
+por los apagones prolongados en Valencia. Son dos alertas separadas y
+visibles al público para lo que es un solo evento.
+
+**Causa raíz identificada (no corregida)**: `clasificar_item()` en
+`scripts/classify.py` solo puede asignar UN tipo por item (el primero
+detectado en el orden de `config/keywords.yaml`,
+`tipo_principal = item["tipos"][0]` en `scripts/verify.py`), y la clave
+de deduplicación (`clave_dedup`) incluye el tipo. Como estas tres
+notas provienen de tres artículos/fuentes DISTINTOS que cada uno acabó
+con un tipo principal distinto (dos con `infraestructura_electrica`,
+uno con `orden_publico`), el sistema nunca las considera candidatas a
+fusión -- la deduplicación actual solo opera dentro del mismo
+`(tipo, ubicación, fecha)`. `scripts/detectar_inconsistencias.py` (el
+chequeo de duplicados por palabras compartidas en el link) tampoco lo
+detecta, porque los tres links no comparten ninguna palabra no
+genérica.
+
+**Por qué no se corrigió a ciegas**: diseñar una fusión automática
+cruzando tipos distintos para el mismo `(ubicación, fecha)` tiene un
+trade-off real y no trivial -- un incendio real y una protesta real
+ocurriendo el mismo día en el mismo estado son eventos genuinamente
+distintos y NO deberían fusionarse solo por coincidir en fecha/ubicación;
+haría falta alguna señal de similitud de contenido (títulos, resumen,
+palabras clave del hecho) para distinguir "mismo evento cubierto por
+dos ángulos" de "dos eventos distintos que coinciden en fecha", y ese
+diseño no existe todavía en el sistema. Queda documentado aquí como
+pendiente de decisión del usuario -- no se fusionó ni se eliminó
+ninguna de las dos alertas.
+
+### Pruebas
+
+Ningún cambio de código ni de datos publicados en esta sesión (solo
+esta nota de auditoría). `python3 scripts/validar_configs.py` → OK.
+`python3 scripts/detectar_inconsistencias.py` → mismos 6 pares de
+duplicados por palabras de link ya documentados como falsos positivos
+en sesiones anteriores (ninguno corresponde al caso de Carabobo descrito
+arriba, que se encontró por lectura manual de los artículos) y las
+mismas 2 fuentes muertas en informes de julio ya documentadas el
+02-08-2026 (sin `GROQ_API_KEY` en este entorno para regenerarlas).
