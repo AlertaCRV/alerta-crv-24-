@@ -18,13 +18,14 @@ jobs:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        # requests/python-dateutil: los importan verify.py/verify_ai.py,
-        # que tests/ ejercita directamente. No se instala requirements.txt
-        # completo a proposito -- arrastra telethon (fetch_telegram.py, no
-        # usado por classify.py/verify_ai.py), cuya dependencia sgmllib3k
-        # falla al compilar en algunos entornos por un problema de
-        # distutils ajeno a este workflow.
-        run: pip install PyYAML==6.0.2 pytest==8.3.4 requests==2.32.3 python-dateutil==2.9.0.post0
+        # requests/python-dateutil: los importan verify.py/verify_ai.py.
+        # feedparser/beautifulsoup4: los importa fetch_rss.py, que ahora
+        # tests/test_fetch_rss_limpieza.py ejercita directamente.
+        # No se instala requirements.txt completo a proposito -- arrastra
+        # telethon (fetch_telegram.py, no usado por classify.py/verify_ai.py/
+        # fetch_rss.py), cuya dependencia sgmllib3k falla al compilar en
+        # algunos entornos por un problema de distutils ajeno a este workflow.
+        run: pip install PyYAML==6.0.2 pytest==8.3.4 requests==2.32.3 python-dateutil==2.9.0.post0 feedparser==6.0.11 beautifulsoup4==4.15.0
 
       - name: Validar YAML, JSON y sintaxis de scripts
         working-directory: scripts
