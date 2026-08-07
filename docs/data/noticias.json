@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": "Orinoco",
+    "severidad": "sin_clasificar",
+    "score": 1.5,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Luchador (Bolivar)",
+        "link": "https://elluchador.info/?p=317484",
+        "fecha": "2026-08-07T14:24:40+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/",
+        "fecha": "2026-08-07T13:30:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T14:24:40+00:00",
+    "fecha_evento_temprana": "2026-08-07T13:30:29+00:00",
+    "fecha_deteccion": "2026-08-07T15:15:17.966201+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Bolivar::2026-08-07",
+    "titulo": "Incendio en Parroquia Orinoco, Bolivar",
+    "texto": "📌 Incendio en Parroquia Orinoco, Bolivar\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Orinoco, Bolivar\n🕒 Hecho reportado: 07/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 11:15 a.m.\n📊 Fuentes independientes: 2 (score 1.5)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=317484\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
