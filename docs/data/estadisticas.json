@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-07T01:46:59.139061+00:00",
+  "actualizado": "2026-08-07T15:15:32.493025+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-07T00:43:39+00:00"
+    "hasta": "2026-08-07T14:24:40+00:00"
   },
-  "total_eventos": 58,
+  "total_eventos": 59,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,7 +14,7 @@
     "orden_publico": 9,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 7,
+    "incendio": 8,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -38,8 +38,8 @@
     },
     {
       "estado": "Bolivar",
-      "total": 5,
-      "confirmados": 1
+      "total": 6,
+      "confirmados": 2
     },
     {
       "estado": "Yaracuy",
@@ -149,7 +149,8 @@
     "Bolivar": {
       "infraestructura_electrica": 3,
       "orden_publico": 1,
-      "escasez_combustible": 1
+      "escasez_combustible": 1,
+      "incendio": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -181,7 +182,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 45
+    "sin_clasificar": 46
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -213,7 +214,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 4
+      "2026-08": 5
     },
     "vialidad": {
       "2026-08": 2
