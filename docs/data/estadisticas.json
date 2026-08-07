@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-07T15:15:32.493025+00:00",
+  "actualizado": "2026-08-07T18:08:16.545997+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-07T14:24:40+00:00"
+    "hasta": "2026-08-07T15:42:43+00:00"
   },
-  "total_eventos": 59,
+  "total_eventos": 63,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
     "infraestructura_electrica": 13,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 9,
+    "orden_publico": 12,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 8,
+    "incendio": 9,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -22,24 +22,24 @@
   },
   "ranking_estados": [
     {
+      "estado": "Zulia",
+      "total": 8,
+      "confirmados": 3
+    },
+    {
       "estado": "Distrito Capital",
       "total": 8,
       "confirmados": 2
     },
     {
-      "estado": "Zulia",
+      "estado": "Bolivar",
       "total": 7,
-      "confirmados": 3
+      "confirmados": 2
     },
     {
       "estado": "Barinas",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Bolivar",
-      "total": 6,
-      "confirmados": 2
     },
     {
       "estado": "Yaracuy",
@@ -100,6 +100,16 @@
       "estado": "Tachira",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Aragua",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -119,7 +129,7 @@
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -150,7 +160,7 @@
       "infraestructura_electrica": 3,
       "orden_publico": 1,
       "escasez_combustible": 1,
-      "incendio": 1
+      "incendio": 2
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -177,12 +187,18 @@
       "inundacion": 3,
       "sismo": 1,
       "incendio": 1
+    },
+    "Aragua": {
+      "orden_publico": 1
+    },
+    "La Guaira": {
+      "orden_publico": 1
     }
   },
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 46
+    "sin_clasificar": 50
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -204,7 +220,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 7
+      "2026-08": 10
     },
     "salud_publica": {
       "2026-07": 1
@@ -214,7 +230,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 5
+      "2026-08": 6
     },
     "vialidad": {
       "2026-08": 2
