@@ -4415,3 +4415,255 @@ en sesiones anteriores (ninguno corresponde al caso de Carabobo descrito
 arriba, que se encontró por lectura manual de los artículos) y las
 mismas 2 fuentes muertas en informes de julio ya documentadas el
 02-08-2026 (sin `GROQ_API_KEY` en este entorno para regenerarlas).
+
+---
+
+## Auditoría diaria automática (07-08-2026): "La Guaira" y parroquia homónima de otro estado por un bug de proximidad, titular embebido de otra nota, y un anuncio positivo de Corpoelec
+
+Auditoría de rutina de las 15 alertas publicadas entre el 05-08 y el
+07-08-2026 (la ventana 05-08/06-08 ya había sido cubierta por las dos
+sesiones anteriores). De las 9 alertas genuinamente nuevas desde la
+auditoría del 06-08-2026, se encontraron y corrigieron 4 errores reales
+(2 de ellos con la misma causa raíz de fondo); no quedó ningún caso
+ambiguo pendiente de discutir esta vez.
+
+### 1. `_ventana_cerca()` solo comparaba la PRIMERA PALABRA de un nombre de estado de dos palabras -- "La Guaira" se anclaba a cualquier "la" suelto del texto
+
+Un artículo-resumen nacional de El Periódico de Monagas ("Protestas en
+siete estados del país por cortes eléctricos") menciona, en una simple
+lista de estados con protestas por apagones ("...Cojedes, Distrito
+Capital, La Guaira, Monagas, Zulia"), el nombre "La Guaira" sin ninguna
+evidencia real cerca de esa mención específica. Aun así, el sistema
+publicó `orden_publico::La Guaira::2026-08-07`.
+
+**Causa raíz**: `_ventana_cerca()` (`scripts/classify.py`) construye la
+lista de posiciones candidatas de un estado comparando solo la PRIMERA
+PALABRA del nombre normalizado (`t == primera_palabra`) en vez de la
+frase completa -- para nombres de un solo token esto es correcto, pero
+para "La Guaira" la primera palabra es "la", uno de los artículos más
+comunes del español. La función itera esas posiciones en orden y
+devuelve la ventana de la PRIMERA que tenga una palabra clave de tipo
+cerca -- en este artículo, un "la" cualquiera al inicio del texto
+("...protestas la noche del jueves...") calificó antes de llegar a la
+mención real de "La Guaira" (al final, en la lista de estados), dándole
+al estado una ventana de evidencia que en realidad describe otra parte
+del artículo sin relación alguna con La Guaira.
+
+**Corrección**: `_ventana_cerca()` ahora compara la secuencia completa de
+tokens del candidato (`tokens[i:i+n] == candidato_tokens`), igual que ya
+hacía `_posiciones_de_estados()` para el cálculo de fronteras entre
+estados -- corrige el mismo problema latente para cualquier nombre de
+estado de más de una palabra ("Nueva Esparta", "Delta Amacuro", "Distrito
+Capital"), no solo "La Guaira".
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::La Guaira::2026-08-07` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+**Efecto secundario sin impacto en datos publicados**: la misma
+corrección le quita a un cluster de inundaciones de Caracas/La Guaira ya
+publicado (26-07-2026, `inundacion::Distrito Capital`, fusión de 6
+fuentes) la detección aislada de "La Guaira" en 2 de sus fuentes -- esa
+detección nunca generó una alerta propia (el evento fusionado siempre se
+publicó solo como Distrito Capital) y dependía, a su vez, de que el pie
+de página en inglés ("The post ... appeared first on") de una de esas
+fuentes NO se estuviera limpiando por un desorden de palabras en
+`_BOILERPLATE_RE` (bug preexistente, no introducido ni corregido en esta
+sesión, sin ningún caso real conocido que lo dispare hoy -- queda como
+posible mejora futura, no bloqueante).
+
+### 2. La misma mención suelta de "Monagas" (el estado vecino) en esa lista se confundía con una parroquia real y homónima dentro de Zulia
+
+El mismo artículo generó, para el evento correctamente ubicado en Zulia
+(`orden_publico::Zulia::2026-08-07`), una atribución de "Municipio
+Almirante Padilla, Parroquia Monagas" -- Zulia sí tiene, por coincidencia,
+un municipio (Almirante Padilla, la isla de Toas) con una parroquia real
+llamada "Monagas", única a nivel nacional. La palabra "Monagas" en el
+texto nombra al ESTADO vecino (parte de la misma lista de estados con
+protestas), no esa parroquia.
+
+**Causa raíz**: `_buscar_parroquia_directa()`/`_buscar_municipio_directo()`
+(`scripts/classify.py`) ya excluían una coincidencia si el nombre era
+idéntico al del propio estado o al del país ("Venezuela", corregido el
+02-08-2026 por el mismo motivo -- ver esa entrada), pero no comprobaban si
+el nombre coincidía con el de OTRO estado. Un chequeo del corpus completo
+de `config/ubicaciones_detalle.json` confirmó que el problema es
+sistémico: 5 combinaciones adicionales de municipio/parroquia son, por
+coincidencia, únicas a nivel nacional Y homónimas de un estado distinto
+(p.ej. municipio "Aragua" dentro de Anzoátegui, municipio "Anzoátegui"
+dentro de Cojedes, parroquias "Anzoátegui"/"Guárico" dentro del municipio
+Morán en Lara) -- todas expuestas al mismo riesgo con cualquier artículo
+que mencione varios estados a la vez (muy común en coberturas de apagones
+o lluvias a nivel nacional).
+
+**Corrección**: nueva función `_nombres_estados_norm()` (con caché) que
+devuelve los nombres normalizados de los 24 estados; se excluye como
+evidencia de municipio/parroquia cualquier coincidencia con ese conjunto,
+en los 3 puntos donde ya se excluía el nombre del propio estado o del
+país.
+
+**Corrección retroactiva**: `orden_publico::Zulia::2026-08-07` se
+corrigió de "Municipio Almirante Padilla, Parroquia Monagas" a solo
+"Zulia" (parroquia `null`) en `docs/data/noticias.json` (`render.
+redactar_noticia()` para regenerar título/texto), `data/
+historico_eventos.jsonl`. El evento en sí (tipo/ubicación/severidad) NO
+se tocó -- la mención de "manifestantes exigen..." cerca de "Zulia" es el
+mismo patrón de "manifestantes sueltos sin evidencia fuerte explícita" ya
+documentado como zona gris en sesiones anteriores (28-07, 02-08, 04-08),
+no algo a decidir a ciegas hoy.
+
+### 3. Titular de OTRA nota embebido, sin punto que lo separe, en medio del cuerpo de un artículo de El Pitazo
+
+Un artículo íntegro de El Pitazo sobre presos políticos en huelga de
+hambre en el Fuerte Guaicaipuro (que está en el estado Miranda, jamás
+mencionado en el texto) traía embebido, en medio del cuerpo, el titular
+de una nota totalmente distinta: "Zulia | Policía encuentra cuerpo de
+coronel retirado de la GN con rastros de violencia", pegado directamente
+al texto real sin ningún punto que los separe. El sistema publicó
+`orden_publico::Zulia::2026-08-06` -- la única mención de "Zulia" en todo
+el artículo venía de esa nota ajena.
+
+**Causa raíz**: El Pitazo (y posiblemente otros medios con la misma
+plataforma) usa la plantilla fija "Estado | Titular" tanto para el propio
+titular de sus notas regionales (siempre al inicio del texto, ej.
+"Bolívar | Hombres armados atacan...") como para tarjetas/widgets de
+recirculación insertados EN MEDIO del cuerpo del artículo -- un patrón
+nuevo de "artículos relacionados" no cubierto por ninguna de las 3
+variantes ya filtradas (`_ARTICULOS_RELACIONADOS_RE`, todas ancladas a
+una frase tipo "lea también:").
+
+**Corrección**: nuevo regex `_NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE`
+(`scripts/fetch_rss.py`), construido dinámicamente desde
+`config/estados.yaml` (nombre canónico + alias), que elimina cualquier
+"NombreDeEstado |" en cualquier posición del texto -- se confirmó contra
+el corpus real que, cuando esta plantilla es legítima (el titular del
+propio artículo), el estado real siempre se repite explícitamente más
+adelante en el cuerpo, así que quitar solo la marca "Estado |" (no el
+resto del titular, para no sobre-ajustar a un formato que varía nota a
+nota) no pierde información real en ningún caso observado.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Zulia::2026-08-06` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json` (mismo criterio que casos anteriores de ubicación
+totalmente infundada: el texto, ya limpio, no menciona ningún estado real
+-- no se reasignó a Miranda por no tener evidencia textual explícita de
+eso tampoco).
+
+### 4. Variante adicional de "artículos relacionados" encontrada al investigar el hallazgo 3: "Leer también:" (infinitivo) de El Impulso
+
+Al revisar `orden_publico::Distrito Capital::2026-08-07` (El Impulso,
+familiares de presos políticos protestando frente a la Cancillería) se
+encontró que el texto traía embebidos DOS enlaces "Leer también:" hacia
+notas sin relación ("OVP denuncia tres muertes en El Marite y eleva a 51
+las víctimas fatales en cárceles venezolanas"), con palabras de severidad
+("muertes", "víctimas fatales") de un suceso carcelario completamente
+distinto. Esta vez no llegó a cambiar el resultado publicado (severidad
+ya era `sin_clasificar`), pero es el mismo riesgo lat­ente ya documentado
+para "también puedes leer"/"si quieres conocer otras noticias parecidas
+a" (05-08-2026): el infinitivo "Leer también:" no estaba cubierto por
+`_ARTICULOS_RELACIONADOS_RE`, que solo reconocía el imperativo "Lea/Lee
+también:".
+
+**Corrección**: `_ARTICULOS_RELACIONADOS_RE` (`scripts/fetch_rss.py`)
+ahora también cubre "leer también:".
+
+**Corrección retroactiva**: ninguna -- el evento ya publicado
+(`orden_publico::Distrito Capital::2026-08-07`) no cambia de resultado
+con el texto limpio (se verificó explícitamente). Se corrige de raíz para
+prevenir un futuro caso donde la nota embebida sí altere la severidad.
+
+### 5. "corpoelec" como palabra clave suelta de tipo generaba una alerta de falla eléctrica a partir de un anuncio POSITIVO de la empresa
+
+`infraestructura_electrica::Zulia::2026-08-07` (Noticia al Día, Zulia) es
+un artículo íntegro sobre el gobernador de Zulia entregando 376
+transformadores nuevos "para fortalecer y optimizar el sistema eléctrico"
+-- ninguna falla en curso, ningún apagón, ninguna interrupción de
+servicio. Se publicó como falla eléctrica porque "Corpoelec" (la empresa
+eléctrica estatal, mencionada aquí en un contexto puramente positivo) es
+la única palabra clave de tipo presente en `config/keywords.yaml`.
+
+**Causa raíz**: "corpoelec" está en la lista de palabras clave de tipo de
+`infraestructura_electrica` sin ninguna señal de que describa una falla
+real -- a diferencia de "apagón"/"corte de luz"/"falla eléctrica", el
+nombre de la empresa aparece igual de a menudo en coberturas de fallas
+reales que en anuncios corporativos, inauguraciones o entregas de
+equipos.
+
+**Corrección**: nueva función `_es_anuncio_corpoelec_sin_falla()`
+(`scripts/classify.py`, mismo patrón que
+`_es_manifestacion_pacifica_sin_evidencia_fuerte()`/`_es_boletin_
+estadistico_salud_sin_alarma()`: evaluada sobre el ARTÍCULO COMPLETO, no
+solo la ventana de proximidad, porque la mención de "Corpoelec" suele
+estar al final del artículo -- voz oficial/atribución -- mientras la
+evidencia real de la falla está varios párrafos antes): si "corpoelec" es
+la única señal de tipo y ninguna evidencia fuerte de
+`infraestructura_electrica` aparece en ningún punto del artículo, se
+descarta el tipo. Al implementarlo se descubrió que la lista de
+evidencia fuerte existente era demasiado estrecha para el texto real --
+rompía 3 casos ya publicados y correctos que sí describían fallas reales
+pero con frases no cubiertas ("restablecer el suministro/servicio" en vez
+de "apagón" explícito; "fallas en el servicio eléctrico" con "en el
+servicio" entre ambas palabras, no adyacentes como en "falla eléctrica";
+"sin energía eléctrica" en vez de "sin electricidad") -- se amplió
+`_EVIDENCIA_FUERTE_POR_TIPO["infraestructura_electrica"]` con esas 3
+variantes antes de dar el fix por bueno.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Zulia::2026-08-07` de `docs/data/
+noticias.json`, `data/historico_eventos.jsonl`, `data/
+historico_fuentes_texto.jsonl` y `data/publicados.json`. Se regeneró
+`docs/data/estadisticas.json`.
+
+### Informes narrativos: 2 quedan con referencias a la fuente retractada del hallazgo 3, no regenerados en esta sesión
+
+`docs/data/informes/2026-08_general.json` y `2026-08_orden_publico.json`
+todavía listan la fuente de El Pitazo sobre el Fuerte Guaicaipuro
+(hallazgo 3, ahora retractada) entre sus fuentes. Mismo caso que sesiones
+anteriores: `GROQ_API_KEY` no está disponible en este entorno.
+`scripts/build_informes.py` regenerará el informe del mes en curso en la
+próxima corrida de producción, a partir de los datos ya corregidos.
+Confirmado con `scripts/detectar_inconsistencias.py`.
+
+### Pendiente de discutir (sin corregir, no bloqueante): `orden_publico::Aragua::2026-08-07` y `orden_publico::Zulia::2026-08-07` vienen del mismo artículo
+
+`scripts/detectar_inconsistencias.py` marca este par por palabras
+compartidas en el link. A diferencia de los hallazgos 1 y 2 (ubicación
+infundada), aquí ambos estados sí tienen evidencia real -- Aragua por "En
+San Mateo, Aragua, también protestaron..." y Zulia por la mención en la
+lista del OVCS -- son dos eventos separados generados por un mismo
+artículo-resumen nacional, el mismo patrón general ya documentado como
+pendiente el 06-08-2026 (Carabobo, tipos distintos) y el 02-08/04-08
+(varios estados en una sola cobertura). No se fusionó ni se eliminó
+ninguna de las dos.
+
+### Pruebas
+
+13 casos nuevos: 4 en `tests/casos_clasificacion.jsonl` para el bug de
+`_ventana_cerca()` (el caso real de La Guaira/Zulia, un control de que
+"La Guaira" con evidencia genuina cerca sigue funcionando, y el
+reemplazo -- vía `xfail` documentado en `test_classify_casos.py`, sin
+reescribir la línea original append-only -- de un caso previo del
+30-07-2026 cuya ubicación esperada dependía, sin saberlo, del mismo bug),
+1 caso del bug de Fuerte Guaicaipuro/Zulia (texto ya limpio), 4 en
+`tests/test_fetch_rss_limpieza.py` (el titular embebido real, un control
+de que el titular legítimo al inicio del propio artículo sigue
+funcionando, un control de que una pleca sin nombre de estado antes no se
+toca, y la variante real "leer también:"), 3 en `casos_clasificacion.jsonl`
+para "corpoelec" (el caso real sin falla, un control real de evidencia
+lejos de la ventana, un control sintético de "restablecer el suministro").
+Regresión completa contra las 63 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con las 3 fuentes retractadas
+eliminadas): sin cambios inesperados, solo el efecto secundario sin
+impacto en datos publicados descrito en el hallazgo 1 y la pérdida
+correspondiente del tipo "incendio" (evidencia lejos de la ventana, mismo
+patrón) en la detección aislada -- nunca publicada por separado -- de
+Monagas dentro del artículo de cacerolazos del hallazgo 1.
+`python3 -m pytest tests/` → 194 passed, 5 xfailed (4 conocidos sin
+relación + el nuevo de esta sesión), 1 xpassed (conocido, sin efecto
+real). `python3 scripts/validar_configs.py` → OK. `python3 scripts/
+detectar_inconsistencias.py` → 9 pares de posibles duplicados (7 ya
+documentados en sesiones anteriores + el nuevo del hallazgo pendiente de
+discutir arriba), 4 fuentes muertas en informes (2 ya conocidas del
+02-08-2026 + 2 nuevas de la retracción del hallazgo 3, ver arriba).

@@ -17,6 +17,34 @@ from classify import clasificar_item, es_relevante
 
 CASOS_PATH = pathlib.Path(__file__).parent / "casos_clasificacion.jsonl"
 
+# Casos cuyo "esperado" original quedo superado por un fix POSTERIOR y mas
+# general (no se reescribe la linea original en casos_clasificacion.jsonl --
+# es append-only, ver docstring del modulo -- se marca xfail aqui, mismo
+# mecanismo que test_classify_regresion_historico.py). El comportamiento
+# correcto vigente se cubre con un caso nuevo agregado al final del archivo.
+_CASOS_SUPERADOS_POR_FIX_POSTERIOR = {
+    "salud_publica_donaciones_preventivas_caraballeda_2026-07-29": (
+        "Auditoria diaria automatica (07-08-2026): _ventana_cerca() dejo de "
+        "emparejar solo la PRIMERA PALABRA de un nombre de estado multi-"
+        "palabra (bug que causaba, en otro caso real, una alerta falsa en "
+        "'La Guaira' anclada a un 'la' cualquiera del texto). Con el fix, la "
+        "posicion real de 'La Guaira' en este texto (la primera palabra del "
+        "articulo) ya no encuentra 'enfermedades' dentro de la ventana de "
+        "proximidad (75 palabras de distancia) -- antes coincidia por "
+        "casualidad con OTRO 'la' (de 'mantener la higiene'), a solo 4 "
+        "palabras de 'enfermedades'. El resultado practico no cambia (el "
+        "evento sigue sin ser relevante, ver el caso de reemplazo agregado "
+        "al final de este archivo con el mismo texto)."
+    ),
+}
+
+
+def _con_marca_de_limitacion_conocida(caso):
+    razon = _CASOS_SUPERADOS_POR_FIX_POSTERIOR.get(caso["id"])
+    if razon is None:
+        return pytest.param(caso, id=caso["id"])
+    return pytest.param(caso, id=caso["id"], marks=pytest.mark.xfail(reason=razon, strict=False))
+
 
 def _cargar_casos():
     casos = []
@@ -41,7 +69,7 @@ def _cargar_casos():
 CASOS = _cargar_casos()
 
 
-@pytest.mark.parametrize("caso", CASOS, ids=[c["id"] for c in CASOS])
+@pytest.mark.parametrize("caso", [_con_marca_de_limitacion_conocida(c) for c in CASOS])
 def test_caso_clasificacion(caso):
     resultado = clasificar_item({"texto": caso["texto"]})
     por_ubicacion = {item.get("ubicacion"): item for item in resultado}

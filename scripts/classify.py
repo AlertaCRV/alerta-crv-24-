@@ -225,13 +225,34 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
                        "hospitalizados"],
     # Si ademas del arbol caido el articulo SI describe una interrupcion
     # real del servicio electrico (no solo el accidente en si), esta
-    # evidencia evita descartar el tipo.
+    # evidencia evita descartar el tipo. Tambien la usa
+    # _es_anuncio_corpoelec_sin_falla() mas abajo (evaluada sobre el
+    # ARTICULO COMPLETO, no solo la ventana -- ver esa funcion).
+    #
+    # Ampliada (07-08-2026): varias coberturas reales de fallas electricas
+    # describen el hecho con frases que no estaban en esta lista (no usan
+    # literalmente "falla electrica"/"sin luz"/etc.) -- "restablecer el
+    # suministro/servicio" (personal de Corpoelec reparando una falla ya
+    # ocurrida), "fallas en el servicio electrico" (con "en el servicio"
+    # entre ambas palabras, no adyacentes como en "falla electrica") y "sin
+    # energia electrica" (variante de "sin electricidad"). Sin agregarlas,
+    # _es_anuncio_corpoelec_sin_falla() rompia 3 casos reales ya publicados
+    # y correctos que si describen una falla real, solo que con estas
+    # frases alternativas.
     "infraestructura_electrica": ["apagon", "apagones", "apagón",
                                    "sin luz", "sin electricidad",
+                                   "sin energia electrica",
+                                   "sin energía eléctrica",
                                    "sin servicio electrico",
                                    "sin servicio eléctrico",
                                    "falla electrica", "falla eléctrica",
                                    "fallas electricas", "fallas eléctricas",
+                                   "fallas en el servicio electrico",
+                                   "fallas en el servicio eléctrico",
+                                   "falla en el servicio electrico",
+                                   "falla en el servicio eléctrico",
+                                   "restablecer el suministro",
+                                   "restablecer el servicio",
                                    "corte de luz", "cortes de luz"],
 }
 
@@ -337,6 +358,30 @@ def _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_MANIFESTACION_PACIFICA):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("orden_publico", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (07-08-2026): "Gobernador Luis Caldera hizo entrega de 376
+# nuevos transformadores que seran distribuidos en todo el Zulia... para
+# fortalecer y optimizar el sistema electrico" -- un anuncio POSITIVO de
+# entrega de equipos (ninguna falla en curso) se publicaba como Falla
+# electrica en Zulia solo porque el texto nombra a "Corpoelec" (la empresa
+# estatal), la unica palabra clave de tipo presente. "corpoelec" es solo el
+# nombre de la compañia -- aparece tanto en coberturas de fallas reales
+# como en anuncios corporativos/positivos sin relacion con ningun corte.
+#
+# A diferencia de "arbol" (ver _CONTEXTO_CONFLICTIVO_POR_TIPO), que se
+# evalua solo en la ventana de proximidad porque el accidente y su posible
+# evidencia de corte suelen estar en la misma frase corta, "corpoelec" se
+# evalua sobre el ARTICULO COMPLETO: es comun que se mencione a la empresa
+# solo al final (voceria/atribucion) mientras la evidencia real de la
+# falla (p.ej. "apagones prolongados") aparece varios parrafos antes, fuera
+# de esa ventana -- igual que la manifestacion pacifica y el boletin de
+# salud sin alarma.
+def _es_anuncio_corpoelec_sin_falla(texto_norm):
+    if not _contiene_palabra_clave(texto_norm, "corpoelec"):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -669,11 +714,11 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
     mencion subestatal NO es ambigua, es la evidencia misma que motivo el
     remapeo (ver _REMAPEO_MUNICIPIO_A_ESTADO)."""
     candidato_tokens = candidato_norm.split()
-    primera_palabra = candidato_tokens[0]
+    n = len(candidato_tokens)
 
     posiciones = [
         i for i, t in enumerate(tokens)
-        if t == primera_palabra
+        if tokens[i:i + n] == candidato_tokens
         and (permitir_subestatal or not _es_mencion_subestatal(tokens, i))
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
         and not _es_mencion_de_persona_citada(tokens, i)
@@ -712,6 +757,29 @@ _LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
 # "Parroquia Venezuela, Municipio Lagunillas, Zulia" sin que el texto
 # mencionara Lagunillas en absoluto.
 _NOMBRE_PAIS_NORM = "venezuela"
+
+# Mismo problema que "Venezuela", pero con el nombre de OTRO estado: varios
+# municipios/parroquias son, por coincidencia, homonimos de un estado
+# distinto al que pertenecen y unicos a nivel nacional (pasan el chequeo de
+# ambiguedad de _conteos_globales_ubicaciones porque solo hay uno en todo
+# el pais con ese nombre) -- p.ej. la parroquia "Monagas" del municipio
+# Almirante Padilla, Zulia. Caso real (07-08-2026): un articulo-resumen
+# nacional sobre protestas por apagones en "Aragua, Bolivar, Carabobo,
+# Cojedes, Distrito Capital, La Guaira, Monagas, Zulia" (una simple lista
+# de estados afectados, sin relacion alguna con la isla de Toas) genero
+# una alerta en Zulia con "Municipio Almirante Padilla, Parroquia Monagas"
+# solo porque la palabra "Monagas" -- ahi nombrando al estado vecino, no a
+# la parroquia -- aparecia en algun punto del texto completo. Igual que con
+# "Venezuela", una mencion aislada del nombre de un estado casi siempre se
+# refiere al estado, nunca a la subdivision homonima de otro.
+def _nombres_estados_norm():
+    global _nombres_estados_norm_cache
+    if _nombres_estados_norm_cache is None:
+        _nombres_estados_norm_cache = {_normalizar(n) for n in load_estados()}
+    return _nombres_estados_norm_cache
+
+
+_nombres_estados_norm_cache = None
 
 # ubicaciones_detalle.json trae la jerarquia real (estado -> municipio ->
 # sus propias parroquias), tomada del listado de codigos de division
@@ -808,7 +876,7 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
             continue
         if conteo_municipios[normalizado] > 1:
             continue
-        if normalizado == nombre_estado_norm or normalizado == _NOMBRE_PAIS_NORM:
+        if normalizado == _NOMBRE_PAIS_NORM or normalizado in _nombres_estados_norm():
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             encontrados.add(original)
@@ -853,6 +921,8 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
                 continue
             if normalizado in nombres_municipio or normalizado == _NOMBRE_PAIS_NORM:
                 continue
+            if normalizado in _nombres_estados_norm():
+                continue
             if _contiene_palabra_clave(texto_norm, normalizado):
                 return original, None
         return None, None
@@ -867,7 +937,7 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
             continue
         if conteo_parroquias[normalizado] > 1 or len(ocurrencias) > 1:
             continue  # ambiguo entre estados o entre municipios del mismo estado
-        if normalizado == nombre_estado_norm or normalizado == _NOMBRE_PAIS_NORM:
+        if normalizado == _NOMBRE_PAIS_NORM or normalizado in _nombres_estados_norm():
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             municipio_unico, parroquia_unica = ocurrencias[0]
@@ -964,6 +1034,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break
                 if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)

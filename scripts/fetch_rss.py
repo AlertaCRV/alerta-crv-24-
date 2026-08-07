@@ -8,7 +8,7 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
-from config_loader import load_sources
+from config_loader import load_estados, load_sources
 
 HEADERS_NAVEGADOR = {
     "User-Agent": (
@@ -57,11 +57,50 @@ _BOILERPLATE_RE = re.compile(
 # "fallecidos"/"muertos" (de un sismo venezolano real, pero de mas de un
 # mes atras), lo que ademas hizo que el filtro de "evidencia fuerte" de
 # sismo (ver verify_ai.py) NO descartara el articulo.
+#
+# El Impulso usa aun otra variante: el infinitivo "Leer tambien:" (en vez
+# del imperativo "Lea/Lee tambien:"). Caso real (07-08-2026): un articulo
+# sobre una protesta de familiares de presos politicos frente a la
+# Cancilleria en Caracas traia embebidos, sin relacion con el hecho, dos
+# enlaces "Leer tambien:" que mencionaban "tres muertes" y "51 victimas
+# fatales" de un suceso carcelario totalmente distinto (El Marite) -- no
+# llego a cambiar la severidad publicada esta vez, pero es el mismo riesgo
+# ya documentado arriba (palabras de severidad de OTRA nota contaminando
+# el texto real).
 _ARTICULOS_RELACIONADOS_RE = re.compile(
-    r"\b(lea|lee)\s+tambi[ée]n\s*:.*$"
+    r"\b(lea|lee|leer)\s+tambi[ée]n\s*:.*$"
     r"|\btambi[ée]n\s+puedes\s+leer\s*:.*$"
     r"|\bsi\s+quieres\s+conocer\s+otras\s+noticias\s+parecidas\s+a\b.*$",
     re.IGNORECASE | re.DOTALL,
+)
+
+# Otra variante del mismo problema de "articulos relacionados", con una
+# plantilla distinta: El Pitazo (y posiblemente otros medios con la misma
+# plataforma) tambien inyecta, EN MEDIO del cuerpo del articulo -- no solo
+# al final -- tarjetas/widgets de recirculacion con el formato fijo
+# "Estado | Titular de otra nota", pegadas directamente al texto real sin
+# ningun punto que las separe. Caso real (07-08-2026): un articulo integro
+# sobre presos politicos en huelga de hambre en el Fuerte Guaicaipuro (que
+# esta en el estado Miranda, nunca mencionado en el texto) genero una
+# alerta de orden_publico en Zulia solo porque el texto traia embebido,
+# sin relacion alguna, "Zulia | Policia encuentra cuerpo de coronel
+# retirado de la GN con rastros de violencia" -- el titular de otra nota
+# completamente distinta. La plantilla SI es legitima cuando es el
+# titular del propio articulo (siempre al inicio del texto, ej. "Bolivar |
+# Hombres armados atacan..."), pero en esos casos el estado real siempre
+# se repite explicitamente mas adelante en el cuerpo ("estado Bolivar"),
+# asi que quitar la marca en cualquier posicion no pierde informacion real
+# -- solo se quita el separador "Estado |", no el resto del titular
+# (evitar over-fitting a un formato de titular que varia por nota).
+_NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE = re.compile(
+    r"\b(?:" + "|".join(
+        sorted(
+            (re.escape(alias) for nombre, alias_list in load_estados().items()
+             for alias in [nombre, *alias_list]),
+            key=len, reverse=True,
+        )
+    ) + r")\s*\|\s*",
+    re.IGNORECASE,
 )
 
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
@@ -107,6 +146,7 @@ def _limpiar_texto(texto):
     texto = html.unescape(texto)
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _ARTICULOS_RELACIONADOS_RE.sub("", texto)
+    texto = _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()
 
