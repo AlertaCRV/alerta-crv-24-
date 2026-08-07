@@ -1,31 +1,5 @@
 [
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/zulia/gobernador-luis-caldera-hizo-entrega-de-376-nuevos-transformadores-que-seran-distribuidos-en-todo-el-zulia/",
-        "fecha": "2026-08-07T18:27:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T18:27:27+00:00",
-    "fecha_evento_temprana": "2026-08-07T18:27:27+00:00",
-    "fecha_deteccion": "2026-08-07T20:11:38.493945+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-07",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 07/08/2026, 2:27 p.m.\n🔎 Detectado por el sistema: 07/08/2026, 4:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/zulia/gobernador-luis-caldera-hizo-entrega-de-376-nuevos-transformadores-que-seran-distribuidos-en-todo-el-zulia/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -105,35 +79,9 @@
   },
   {
     "tipo": "orden_publico",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/",
-        "fecha": "2026-08-07T15:42:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T15:42:43+00:00",
-    "fecha_evento_temprana": "2026-08-07T15:42:43+00:00",
-    "fecha_deteccion": "2026-08-07T18:08:04.228372+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::La Guaira::2026-08-07",
-    "titulo": "Orden público en La Guaira",
-    "texto": "📌 Orden público en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
-  },
-  {
-    "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
-    "parroquia": "Monagas",
+    "parroquia": null,
     "severidad": "sin_clasificar",
     "score": 0.55,
     "confirmado": false,
@@ -152,34 +100,8 @@
     "fecha_deteccion": "2026-08-07T18:08:07.541417+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Zulia::2026-08-07",
-    "titulo": "Orden público en Parroquia Monagas, Zulia",
-    "texto": "📌 Orden público en Parroquia Monagas, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Monagas, Zulia\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/",
-        "fecha": "2026-08-06T23:30:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-06T23:30:17+00:00",
-    "fecha_evento_temprana": "2026-08-06T23:30:17+00:00",
-    "fecha_deteccion": "2026-08-07T01:46:01.301062+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-08-06",
     "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 06/08/2026, 7:30 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/"
+    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
   },
   {
     "tipo": "orden_publico",

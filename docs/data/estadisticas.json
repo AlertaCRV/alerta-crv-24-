@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-07T20:12:17.566915+00:00",
+  "actualizado": "2026-08-07T23:44:19.038148+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-07T18:30:00+00:00"
   },
-  "total_eventos": 65,
+  "total_eventos": 62,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
-    "infraestructura_electrica": 14,
+    "infraestructura_electrica": 13,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 13,
+    "orden_publico": 11,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 9,
@@ -22,14 +22,14 @@
   },
   "ranking_estados": [
     {
-      "estado": "Zulia",
-      "total": 9,
-      "confirmados": 3
-    },
-    {
       "estado": "Distrito Capital",
       "total": 9,
       "confirmados": 2
+    },
+    {
+      "estado": "Zulia",
+      "total": 7,
+      "confirmados": 3
     },
     {
       "estado": "Bolivar",
@@ -105,11 +105,6 @@
       "estado": "Aragua",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
-      "total": 1,
-      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -125,11 +120,11 @@
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 2,
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 2
+      "orden_publico": 1
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -190,15 +185,12 @@
     },
     "Aragua": {
       "orden_publico": 1
-    },
-    "La Guaira": {
-      "orden_publico": 1
     }
   },
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 52
+    "sin_clasificar": 49
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -210,7 +202,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 8
+      "2026-08": 7
     },
     "deslizamiento": {
       "2026-07": 3
@@ -220,7 +212,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 11
+      "2026-08": 9
     },
     "salud_publica": {
       "2026-07": 1
