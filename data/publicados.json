@@ -96,5 +96,19 @@
     "fecha_deteccion": "2026-08-07T18:08:07.541417+00:00",
     "fecha_evento_temprana": "2026-08-07T15:42:43+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T20:11:38.493945+00:00",
+    "fecha_evento_temprana": "2026-08-07T18:27:27+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T20:12:13.278932+00:00",
+    "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
+    "municipio": null
   }
 }

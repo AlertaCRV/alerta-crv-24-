@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/zulia/gobernador-luis-caldera-hizo-entrega-de-376-nuevos-transformadores-que-seran-distribuidos-en-todo-el-zulia/",
+        "fecha": "2026-08-07T18:27:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T18:27:27+00:00",
+    "fecha_evento_temprana": "2026-08-07T18:27:27+00:00",
+    "fecha_deteccion": "2026-08-07T20:11:38.493945+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-07",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 07/08/2026, 2:27 p.m.\n🔎 Detectado por el sistema: 07/08/2026, 4:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/zulia/gobernador-luis-caldera-hizo-entrega-de-376-nuevos-transformadores-que-seran-distribuidos-en-todo-el-zulia/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/",
+        "fecha": "2026-08-07T18:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T18:30:00+00:00",
+    "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
+    "fecha_deteccion": "2026-08-07T20:12:13.278932+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-08-07",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 07/08/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 07/08/2026, 4:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Bolivar",
     "municipio": null,
