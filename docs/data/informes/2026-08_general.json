@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-06T08:05:40.229605+00:00",
-  "actualizado_hasta": "2026-08-06T08:05:31.297170+00:00",
-  "total_eventos": 25,
+  "generado": "2026-08-07T01:47:15.138250+00:00",
+  "actualizado_hasta": "2026-08-07T01:46:56.592218+00:00",
+  "total_eventos": 29,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 25
+    "actual": 29
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 25 eventos de emergencia en Venezuela, lo que representa una disminución en comparación con el período anterior, que tuvo 29 eventos (Noticia al Dia (Zulia)). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y dejó una persona fallecida, además de importantes pérdidas materiales (El Impulso (Lara)). También se reportó un incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas), y una inundación en Apure, que afectó a la población de La Victoria (Notiapure). Además, se registró un incendio en Yaracuy, que resultó en la muerte de dos hermanos (La Prensa de Lara). La inundación en Yaracuy también causó la muerte de una persona por descarga eléctrica en el municipio Manuel Monge (Turimiquire (Sucre)). Es importante destacar que estos eventos tuvieron un impacto significativo en las comunidades afectadas, y es fundamental seguir monitoreando la situación para brindar apoyo y asistencia a quienes lo necesitan.",
+  "narrativa": "Durante el período de 2026-08, se registraron 29 eventos de emergencia en Venezuela, igual cantidad que en el período anterior (2026-07). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que dejó un fallecido y cinco heridos (Noticia al Dia (Zulia)), y las inundaciones en Yaracuy, que causaron daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara)). Además, se registró un incendio en Miranda que dejó dos personas lesionadas (La Prensa de Monagas). También se reportaron inundaciones en Apure, que afectaron a la población de La Victoria (Notiapure), y un incendio en Yaracuy que causó daños significativos (La Prensa de Lara). Es importante destacar que estos eventos tuvieron un impacto significativo en las comunidades afectadas, con daños materiales y pérdidas humanas. La comparación con el período anterior muestra que la frecuencia de estos eventos se mantiene constante, lo que subraya la importancia de la preparación y respuesta efectiva para mitigar sus efectos.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -42,6 +42,10 @@
       "link": "https://ciudadtrujillo.com/?p=53972"
     },
     {
+      "nombre": "Ciudad Trujillo",
+      "link": "https://ciudadtrujillo.com/?p=53983"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
@@ -66,6 +70,14 @@
       "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/regresan-los-cacerolazos-venezolanos-protestan-a-diario-en-rechazo-a-los-apagones/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
     },
@@ -80,6 +92,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -100,6 +116,10 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/06/dos-fallecidos-y-tres-heridos-dejo-choque-entre-un-mustang-y-un-vehiculo-de-transporte-publico-en-el-tigre/"
     },
     {
       "nombre": "Primicia (Bolivar)",

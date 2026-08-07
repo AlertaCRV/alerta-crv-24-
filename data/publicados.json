@@ -1,11 +1,4 @@
 {
-  "inundacion::Barinas::2026-08-03": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-03T19:02:14.723812+00:00",
-    "fecha_evento_temprana": "2026-08-03T15:27:37+00:00",
-    "municipio": "Cruz Paredes"
-  },
   "orden_publico::Nueva Esparta::2026-08-03": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -82,5 +75,33 @@
     "fecha_deteccion": "2026-08-06T08:05:31.297170+00:00",
     "fecha_evento_temprana": "2026-08-06T00:33:25+00:00",
     "municipio": "Carache"
+  },
+  "orden_publico::Zulia::2026-08-06": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T01:46:01.301062+00:00",
+    "fecha_evento_temprana": "2026-08-06T23:30:17+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-08-06": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-07T01:46:21.678405+00:00",
+    "fecha_evento_temprana": "2026-08-06T21:14:20+00:00",
+    "municipio": "Valencia"
+  },
+  "incendio::Trujillo::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T01:46:53.213945+00:00",
+    "fecha_evento_temprana": "2026-08-07T00:43:39+00:00",
+    "municipio": "Trujillo"
+  },
+  "vialidad::Anzoategui::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T01:46:56.592218+00:00",
+    "fecha_evento_temprana": "2026-08-07T00:12:54+00:00",
+    "municipio": "Simón Rodríguez"
   }
 }

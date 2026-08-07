@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-06T08:06:13.008127+00:00",
-  "actualizado_hasta": "2026-08-04T16:25:21.607157+00:00",
-  "total_eventos": 5,
+  "generado": "2026-08-07T01:48:05.144016+00:00",
+  "actualizado_hasta": "2026-08-07T01:46:21.678405+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 5
+    "actual": 7
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 5 eventos relacionados con el orden público en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 2 eventos (El Pitazo). Uno de los eventos fue la protesta por la crisis eléctrica en Carabobo y Aragua, donde los ciudadanos se manifestaron con cacerolazos y consignas en contra de las fallas en el servicio (El Pitazo). Otro evento fue la manifestación en la isla de Margarita, donde los vecinos del sector La Guardia, en el municipio Díaz, protestaron por la prolongada interrupción del suministro de agua potable (El Tiempo). También se registraron protestas en el estado Falcón, donde los trabajadores de la salud se concentraron en la entrada del Hospital de Coro para exigir su inclusión en el bono de vacaciones (La Manana). En Caracas, sindicalistas y trabajadores exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de la ciudadanía (La Verdad). Finalmente, en Barquisimeto, un encuentro de fútbol entre Portuguesa FC y Carabobo FC se vio empañado por una salvaje golpiza a un inocente, atribuida a supuestos hinchas locales (Noticia al Dia).",
+  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con el orden público en Venezuela, en comparación con los 2 eventos registrados en el período anterior. Uno de los eventos más destacados fue la protesta por la crisis eléctrica en Carabobo y Aragua, donde los ciudadanos realizaron cacerolazos y consignas en contra de las fallas en el servicio eléctrico (El Pitazo). Además, se reportaron protestas en otros estados del país, como Monagas, donde los residentes de la Zona Industrial de Maturín salieron a las calles para exigir el cese de los cortes eléctricos (El Pitazo). En el estado Nueva Esparta, diversas comunidades iniciaron la semana con manifestaciones por fallas en el servicio hídrico, con vecinos del sector La Guardia cerrando la avenida Taguantar tras cumplir cinco meses sin recibir el recurso por tuberías (El Tiempo). También se registraron protestas en el estado Falcón, donde el Sindicato de Trabajadores de la Salud (Sintrasalud Falcón) protestó por ser excluidos del bono de vacaciones (La Manana). En Carabobo, trabajadores de Cantv exigieron la reactivación de servicios de salud (La Patilla). En Zulia, sindicalistas exigieron que el diálogo entre el chavismo y la oposición sea público (La Verdad). Finalmente, se reportó un incidente de violencia en un encuentro de fútbol entre Portuguesa FC y Carabobo FC en Barquisimeto, donde supuestos hinchas locales atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC (Noticia al Dia).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/regresan-los-cacerolazos-venezolanos-protestan-a-diario-en-rechazo-a-los-apagones/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
@@ -24,6 +32,10 @@
     {
       "nombre": "La Manana (Falcon)",
       "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
     },
     {
       "nombre": "La Verdad (Zulia)",

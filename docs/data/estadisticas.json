@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-08-06T08:05:32.170996+00:00",
+  "actualizado": "2026-08-07T01:46:59.139061+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-06T00:33:25+00:00"
+    "hasta": "2026-08-07T00:43:39+00:00"
   },
-  "total_eventos": 54,
+  "total_eventos": 58,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
     "infraestructura_electrica": 13,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 7,
+    "orden_publico": 9,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 6,
-    "vialidad": 1,
+    "incendio": 7,
+    "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
     "sequia": 1
@@ -28,7 +28,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 6,
+      "total": 7,
       "confirmados": 3
     },
     {
@@ -47,28 +47,28 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 4,
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
+      "estado": "Trujillo",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Anzoategui",
       "total": 3,
       "confirmados": 0
     },
     {
       "estado": "Falcon",
       "total": 3,
-      "confirmados": 0
-    },
-    {
-      "estado": "Trujillo",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 2,
       "confirmados": 0
     },
     {
@@ -106,7 +106,7 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Lara": {
       "inundacion": 2,
@@ -118,7 +118,8 @@
       "infraestructura_electrica": 2,
       "colapso_estructural": 1,
       "inundacion": 1,
-      "sequia": 1
+      "sequia": 1,
+      "orden_publico": 1
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -130,7 +131,7 @@
     },
     "Trujillo": {
       "inundacion": 1,
-      "incendio": 1
+      "incendio": 2
     },
     "Barinas": {
       "deslizamiento": 1,
@@ -142,7 +143,8 @@
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
-      "crisis_migratoria": 1
+      "crisis_migratoria": 1,
+      "vialidad": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 3,
@@ -179,7 +181,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 41
+    "sin_clasificar": 45
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -201,7 +203,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 5
+      "2026-08": 7
     },
     "salud_publica": {
       "2026-07": 1
@@ -211,10 +213,10 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 3
+      "2026-08": 4
     },
     "vialidad": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "sismo": {
       "2026-08": 1
