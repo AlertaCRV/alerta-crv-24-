@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-07T20:12:17.566915+00:00",
+  "actualizado": "2026-08-07T23:55:32.159529+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-07T18:30:00+00:00"
+    "hasta": "2026-08-07T23:26:50+00:00"
   },
-  "total_eventos": 65,
+  "total_eventos": 66,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
     "infraestructura_electrica": 14,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 13,
+    "orden_publico": 14,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 9,
@@ -42,17 +42,17 @@
       "confirmados": 1
     },
     {
+      "estado": "Lara",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Yaracuy",
       "total": 5,
       "confirmados": 1
     },
     {
       "estado": "Carabobo",
-      "total": 4,
-      "confirmados": 1
-    },
-    {
-      "estado": "Lara",
       "total": 4,
       "confirmados": 1
     },
@@ -121,7 +121,7 @@
     "Lara": {
       "inundacion": 2,
       "salud_publica": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -198,7 +198,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 52
+    "sin_clasificar": 53
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -220,7 +220,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 11
+      "2026-08": 12
     },
     "salud_publica": {
       "2026-07": 1

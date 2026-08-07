@@ -110,5 +110,12 @@
     "fecha_deteccion": "2026-08-07T20:12:13.278932+00:00",
     "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Lara::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-07T23:55:21.278174+00:00",
+    "fecha_evento_temprana": "2026-08-07T23:26:50+00:00",
+    "municipio": null
   }
 }
