@@ -5,30 +5,103 @@
     "municipio": null,
     "parroquia": "Orinoco",
     "severidad": "sin_clasificar",
-    "score": 1.5,
-    "confirmado": true,
-    "num_fuentes": 2,
+    "score": 0.85,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
       {
         "nombre": "El Luchador (Bolivar)",
         "link": "https://elluchador.info/?p=317484",
         "fecha": "2026-08-07T14:24:40+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/",
-        "fecha": "2026-08-07T13:30:29+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
     "fecha_evento": "2026-08-07T14:24:40+00:00",
-    "fecha_evento_temprana": "2026-08-07T13:30:29+00:00",
-    "fecha_deteccion": "2026-08-07T15:15:17.966201+00:00",
+    "fecha_evento_temprana": "2026-08-07T14:24:40+00:00",
+    "fecha_deteccion": "2026-08-07T18:07:57.523641+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Bolivar::2026-08-07",
     "titulo": "Incendio en Parroquia Orinoco, Bolivar",
-    "texto": "📌 Incendio en Parroquia Orinoco, Bolivar\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Orinoco, Bolivar\n🕒 Hecho reportado: 07/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 11:15 a.m.\n📊 Fuentes independientes: 2 (score 1.5)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=317484\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
+    "texto": "📌 Incendio en Parroquia Orinoco, Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Orinoco, Bolivar\n🕒 Hecho reportado: 07/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:07 p.m.\n📊 Fuentes independientes: 1 (score 0.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Luchador (Bolivar): https://elluchador.info/?p=317484"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Aragua",
+    "municipio": "Bolívar",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/",
+        "fecha": "2026-08-07T15:42:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T15:42:43+00:00",
+    "fecha_evento_temprana": "2026-08-07T15:42:43+00:00",
+    "fecha_deteccion": "2026-08-07T18:08:00.881600+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Aragua::2026-08-07",
+    "titulo": "Orden público en Municipio Bolívar, Aragua",
+    "texto": "📌 Orden público en Municipio Bolívar, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Aragua\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/",
+        "fecha": "2026-08-07T15:42:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T15:42:43+00:00",
+    "fecha_evento_temprana": "2026-08-07T15:42:43+00:00",
+    "fecha_deteccion": "2026-08-07T18:08:04.228372+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::La Guaira::2026-08-07",
+    "titulo": "Orden público en La Guaira",
+    "texto": "📌 Orden público en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": "Monagas",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/",
+        "fecha": "2026-08-07T15:42:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-07T15:42:43+00:00",
+    "fecha_evento_temprana": "2026-08-07T15:42:43+00:00",
+    "fecha_deteccion": "2026-08-07T18:08:07.541417+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-08-07",
+    "titulo": "Orden público en Parroquia Monagas, Zulia",
+    "texto": "📌 Orden público en Parroquia Monagas, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Monagas, Zulia\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
   },
   {
     "tipo": "orden_publico",
