@@ -71,9 +71,9 @@
   },
   "incendio::Distrito Capital::2026-08-08": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-08T04:20:32.198805+00:00",
-    "fecha_evento_temprana": "2026-08-08T02:54:30+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T14:02:42.386579+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
     "municipio": null
   },
   "orden_publico::Lara::2026-08-07": {
@@ -82,5 +82,12 @@
     "fecha_deteccion": "2026-08-08T04:20:42.308816+00:00",
     "fecha_evento_temprana": "2026-08-07T23:26:50+00:00",
     "municipio": null
+  },
+  "incendio::Miranda::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T14:02:45.575432+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
+    "municipio": "Sucre"
   }
 }
