@@ -48,39 +48,67 @@
     "ultima_vez": "2026-08-08T21:06:27.885282+00:00"
   },
   "incendio::Sucre::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T21:07:16.164507+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:17:38.115834+00:00"
   },
   "incendio::Miranda::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:04:51.441522+00:00"
-  },
-  "orden_publico::Sucre::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:05:15.589187+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:16:49.357198+00:00"
   },
   "infraestructura_electrica::Merida::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:05:39.743344+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:16:25.025001+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:06:28.084297+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:18:02.403766+00:00"
   },
   "infraestructura_electrica::Lara::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:08:53.049810+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:20:28.620683+00:00"
   },
   "infraestructura_electrica::Bolivar::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:09:17.201886+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:20:53.668564+00:00"
   },
   "orden_publico::Lara::2026-08-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-08T22:09:41.355665+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-08T23:22:06.693427+00:00"
   },
   "deslizamiento::La Guaira::2026-08-08": {
     "intentos": 1,
     "ultima_vez": "2026-08-08T22:10:05.513355+00:00"
+  },
+  "sismo::Monagas::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:17:13.777365+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:18:26.728559+00:00"
+  },
+  "orden_publico::Anzoategui::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:18:51.291674+00:00"
+  },
+  "infraestructura_electrica::Aragua::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:19:15.619124+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:19:39.976095+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:20:04.317350+00:00"
+  },
+  "salud_publica::Apure::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:21:18.007478+00:00"
+  },
+  "inundacion::Apure::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T23:21:42.347406+00:00"
   }
 }
