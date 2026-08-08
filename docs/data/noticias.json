@@ -5,35 +5,61 @@
     "municipio": null,
     "parroquia": null,
     "severidad": "sin_clasificar",
-    "score": 1.7,
-    "confirmado": true,
-    "num_fuentes": 3,
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/",
-        "fecha": "2026-08-08T04:08:38+00:00"
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/",
+        "fecha": "2026-08-08T13:42:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T13:42:32+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
+    "fecha_deteccion": "2026-08-08T19:47:03.513447+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-08-08",
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 9:42 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 3:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Miranda",
+    "municipio": "Sucre",
+    "parroquia": "Petare",
+    "severidad": "sin_clasificar",
+    "score": 1.35,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Efecto Cocuyo - Sucesos",
+        "link": "https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/",
+        "fecha": "2026-08-08T18:00:22+00:00"
+      },
+      {
+        "nombre": "Efecto Cocuyo - General",
+        "link": "https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/",
+        "fecha": "2026-08-08T18:00:22+00:00"
       },
       {
         "nombre": "El Periodico de Monagas",
         "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/",
         "fecha": "2026-08-08T13:42:32+00:00"
-      },
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/sucesos/voraz-incendio-consume-tres-galpones-y-la-parte-posterior-de-un-supermercado-en-caracas/",
-        "fecha": "2026-08-08T13:57:48+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-08-08T13:57:48+00:00",
-    "fecha_evento_temprana": "2026-08-08T04:08:38+00:00",
-    "fecha_deteccion": "2026-08-08T15:16:38.247644+00:00",
+    "fecha_evento": "2026-08-08T18:00:22+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
+    "fecha_deteccion": "2026-08-08T19:47:06.838402+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-08-08",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 9:57 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 11:16 a.m.\n📊 Fuentes independientes: 3 (score 1.7)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/voraz-incendio-consume-tres-galpones-y-la-parte-posterior-de-un-supermercado-en-caracas/"
+    "clave_dedup": "incendio::Miranda::2026-08-08",
+    "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
+    "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 08/08/2026, 2:00 p.m.\n🔎 Detectado por el sistema: 08/08/2026, 3:47 p.m.\n📊 Fuentes independientes: 2 (score 1.35)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Efecto Cocuyo - Sucesos: https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/\n  • Efecto Cocuyo - General: https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/"
   },
   {
     "tipo": "orden_publico",
@@ -86,32 +112,6 @@
     "clave_dedup": "orden_publico::Distrito Capital::2026-08-08",
     "titulo": "Orden público en Municipio Libertador, Distrito Capital",
     "texto": "📌 Orden público en Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 11:16 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Miranda",
-    "municipio": "Sucre",
-    "parroquia": "Petare",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/",
-        "fecha": "2026-08-08T13:42:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-08T13:42:32+00:00",
-    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
-    "fecha_deteccion": "2026-08-08T14:02:45.575432+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Miranda::2026-08-08",
-    "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
-    "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 08/08/2026, 9:42 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 10:02 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/"
   },
   {
     "tipo": "orden_publico",
@@ -1826,28 +1826,5 @@
     "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Distrito Capital::2026-07-25"
-  },
-  {
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 BAJO\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/07/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 25/07/2026, 2:33 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 BAJO: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/07/25/balance-de-activos-por-la-luz-20-sectores-de-lara-sufren-cortes-electricos-que-superan-las-94-horas-25jul/",
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/07/25/balance-de-activos-por-la-luz-20-sectores-de-lara-sufren-cortes-electricos-que-superan-las-94-horas-25jul/",
-        "fecha": "2026-07-25T14:30:00+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-25T14:30:00+00:00",
-    "fecha_deteccion": "2026-07-25T18:33:16.511124+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-07-25"
   }
 ]

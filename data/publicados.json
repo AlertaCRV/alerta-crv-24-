@@ -1,18 +1,4 @@
 {
-  "sequia::Zulia::2026-08-05": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-05T18:11:04.604670+00:00",
-    "fecha_evento_temprana": "2026-08-05T17:53:32+00:00",
-    "municipio": null
-  },
-  "incendio::Yaracuy::2026-08-05": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-05T18:11:11.802437+00:00",
-    "fecha_evento_temprana": "2026-08-05T13:32:39+00:00",
-    "municipio": null
-  },
   "incendio::Trujillo::2026-08-06": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -71,9 +57,9 @@
   },
   "incendio::Distrito Capital::2026-08-08": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-08T15:16:38.247644+00:00",
-    "fecha_evento_temprana": "2026-08-08T04:08:38+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T19:47:03.513447+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
     "municipio": null
   },
   "orden_publico::Lara::2026-08-07": {
@@ -85,8 +71,8 @@
   },
   "incendio::Miranda::2026-08-08": {
     "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T14:02:45.575432+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-08T19:47:06.838402+00:00",
     "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
     "municipio": "Sucre"
   },
