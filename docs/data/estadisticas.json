@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-08T04:20:46.932551+00:00",
+  "actualizado": "2026-08-08T14:03:06.723004+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-08T04:08:38+00:00"
+    "hasta": "2026-08-08T13:42:32+00:00"
   },
-  "total_eventos": 64,
+  "total_eventos": 66,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,7 +14,7 @@
     "orden_publico": 12,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 10,
+    "incendio": 12,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -23,7 +23,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 10,
+      "total": 11,
       "confirmados": 3
     },
     {
@@ -67,6 +67,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 3,
+      "confirmados": 1
+    },
+    {
       "estado": "Falcon",
       "total": 3,
       "confirmados": 0
@@ -80,11 +85,6 @@
       "estado": "Monagas",
       "total": 2,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 2,
-      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -130,7 +130,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 3,
-      "incendio": 2,
+      "incendio": 3,
       "vialidad": 1,
       "infraestructura_electrica": 2
     },
@@ -168,7 +168,7 @@
       "infraestructura_electrica": 2
     },
     "Miranda": {
-      "incendio": 2
+      "incendio": 3
     },
     "Nueva Esparta": {
       "incendio": 1,
@@ -190,7 +190,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 51
+    "sin_clasificar": 53
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -222,7 +222,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 7
+      "2026-08": 9
     },
     "vialidad": {
       "2026-08": 2
