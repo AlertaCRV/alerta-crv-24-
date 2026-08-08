@@ -124,5 +124,33 @@
     "fecha_deteccion": "2026-08-08T21:10:53.475435+00:00",
     "fecha_evento_temprana": "2026-08-08T17:30:01+00:00",
     "municipio": null
+  },
+  "sismo::Monagas::2026-08-08::mag3.0": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T22:06:03.910647+00:00",
+    "fecha_evento_temprana": "2026-08-08T18:36:13+00:00",
+    "municipio": "Aguasay"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T22:06:52.249467+00:00",
+    "fecha_evento_temprana": "2026-08-08T18:00:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Aragua::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T22:07:40.575660+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T22:08:04.740274+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "municipio": null
   }
 }

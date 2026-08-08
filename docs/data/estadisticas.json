@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-08T21:10:57.175451+00:00",
+  "actualizado": "2026-08-08T22:10:08.069876+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-08T19:17:17+00:00"
   },
-  "total_eventos": 77,
+  "total_eventos": 81,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
-    "infraestructura_electrica": 16,
+    "infraestructura_electrica": 19,
     "deslizamiento": 4,
     "colapso_estructural": 1,
     "orden_publico": 15,
@@ -16,14 +16,14 @@
     "crisis_migratoria": 4,
     "incendio": 16,
     "vialidad": 2,
-    "sismo": 1,
+    "sismo": 2,
     "escasez_combustible": 1,
     "sequia": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 14,
+      "total": 15,
       "confirmados": 4
     },
     {
@@ -47,6 +47,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Miranda",
       "total": 5,
       "confirmados": 2
@@ -57,17 +62,17 @@
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
-      "total": 4,
-      "confirmados": 1
-    },
-    {
       "estado": "Anzoategui",
       "total": 4,
       "confirmados": 0
     },
     {
       "estado": "Trujillo",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Monagas",
       "total": 3,
       "confirmados": 0
     },
@@ -82,14 +87,14 @@
       "confirmados": 0
     },
     {
-      "estado": "Monagas",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
       "estado": "Nueva Esparta",
       "total": 2,
       "confirmados": 1
+    },
+    {
+      "estado": "Aragua",
+      "total": 2,
+      "confirmados": 0
     },
     {
       "estado": "Sucre",
@@ -98,11 +103,6 @@
     },
     {
       "estado": "Tachira",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Aragua",
       "total": 1,
       "confirmados": 0
     },
@@ -120,7 +120,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "orden_publico": 2
     },
     "Lara": {
@@ -143,7 +143,7 @@
       "orden_publico": 4,
       "incendio": 5,
       "vialidad": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 3
     },
     "Trujillo": {
       "inundacion": 1,
@@ -177,7 +177,8 @@
       "deslizamiento": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "sismo": 1
     },
     "Miranda": {
       "incendio": 5
@@ -196,7 +197,8 @@
       "incendio": 1
     },
     "Aragua": {
-      "orden_publico": 1
+      "orden_publico": 1,
+      "infraestructura_electrica": 1
     },
     "Merida": {
       "infraestructura_electrica": 1
@@ -208,7 +210,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 64
+    "sin_clasificar": 68
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -220,7 +222,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 10
+      "2026-08": 13
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -247,7 +249,7 @@
       "2026-08": 2
     },
     "sismo": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "escasez_combustible": {
       "2026-08": 1
