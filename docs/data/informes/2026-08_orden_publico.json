@@ -3,23 +3,31 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-07T01:48:05.144016+00:00",
-  "actualizado_hasta": "2026-08-07T01:46:21.678405+00:00",
-  "total_eventos": 7,
+  "generado": "2026-08-08T04:21:29.172526+00:00",
+  "actualizado_hasta": "2026-08-08T04:20:42.308816+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 7
+    "actual": 10
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con el orden público en Venezuela, en comparación con los 2 eventos registrados en el período anterior. Uno de los eventos más destacados fue la protesta por la crisis eléctrica en Carabobo y Aragua, donde los ciudadanos realizaron cacerolazos y consignas en contra de las fallas en el servicio eléctrico (El Pitazo). Además, se reportaron protestas en otros estados del país, como Monagas, donde los residentes de la Zona Industrial de Maturín salieron a las calles para exigir el cese de los cortes eléctricos (El Pitazo). En el estado Nueva Esparta, diversas comunidades iniciaron la semana con manifestaciones por fallas en el servicio hídrico, con vecinos del sector La Guardia cerrando la avenida Taguantar tras cumplir cinco meses sin recibir el recurso por tuberías (El Tiempo). También se registraron protestas en el estado Falcón, donde el Sindicato de Trabajadores de la Salud (Sintrasalud Falcón) protestó por ser excluidos del bono de vacaciones (La Manana). En Carabobo, trabajadores de Cantv exigieron la reactivación de servicios de salud (La Patilla). En Zulia, sindicalistas exigieron que el diálogo entre el chavismo y la oposición sea público (La Verdad). Finalmente, se reportó un incidente de violencia en un encuentro de fútbol entre Portuguesa FC y Carabobo FC en Barquisimeto, donde supuestos hinchas locales atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC (Noticia al Dia).",
+  "narrativa": "En el período de agosto de 2026, se registraron 10 eventos relacionados con el orden público en Venezuela, en comparación con los 2 eventos registrados en el período anterior (El Impulso, El Periodico de Monagas). Uno de los eventos que destacó fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja, así como la excarcelación de sus allegados y el respeto a sus derechos fundamentales (El Impulso). Además, trabajadores y jubilados de la Gobernación de Lara se concentraron en la Plaza La Moneda en Barquisimeto para exigir el pago del bono de profesionalización y rechazar el Sistema Patria (El Impulso). En varios estados del país, como Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, se registraron protestas por los constantes y prolongados cortes de electricidad, con vecinos quemando neumáticos y tocando cacerolas en las calles (El Periodico de Monagas, El Pitazo). También se reportaron manifestaciones en la Isla de Margarita por fallas en el servicio hídrico, con comunidades cerrando avenidas y rechazando la atención mediante camiones cisterna (El Tiempo). En el estado Falcón, el Sindicato de Trabajadores de la Salud (Sintrasalud) protestó por ser excluidos del bono de vacaciones, mientras que en Carabobo, trabajadores de Cantv exigieron la reactivación de servicios de salud (La Manana, La Patilla). Sindicalistas en el Zulia exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de la ciudadanía (La Verdad). Finalmente, un encuentro deportivo entre Portuguesa FC y Carabobo FC en Barquisimeto se vio empañado por una salvaje golpiza a un inocente, iniciada por supuestos hinchas locales (Noticia al Dia).",
   "fuentes": [
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/"
+      "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
     },
     {
       "nombre": "El Pitazo",

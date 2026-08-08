@@ -89,5 +89,19 @@
     "fecha_deteccion": "2026-08-07T20:12:13.278932+00:00",
     "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
     "municipio": null
+  },
+  "incendio::Distrito Capital::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-08T04:20:32.198805+00:00",
+    "fecha_evento_temprana": "2026-08-08T02:54:30+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-08-07": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T04:20:42.308816+00:00",
+    "fecha_evento_temprana": "2026-08-07T23:26:50+00:00",
+    "municipio": null
   }
 }

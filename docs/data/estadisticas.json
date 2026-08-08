@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-07T23:44:19.038148+00:00",
+  "actualizado": "2026-08-08T04:20:46.932551+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-07T18:30:00+00:00"
+    "hasta": "2026-08-08T04:08:38+00:00"
   },
-  "total_eventos": 62,
+  "total_eventos": 64,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
     "infraestructura_electrica": 13,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 11,
+    "orden_publico": 12,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 9,
+    "incendio": 10,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -23,8 +23,8 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 9,
-      "confirmados": 2
+      "total": 10,
+      "confirmados": 3
     },
     {
       "estado": "Zulia",
@@ -42,17 +42,17 @@
       "confirmados": 1
     },
     {
+      "estado": "Lara",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Yaracuy",
       "total": 5,
       "confirmados": 1
     },
     {
       "estado": "Carabobo",
-      "total": 4,
-      "confirmados": 1
-    },
-    {
-      "estado": "Lara",
       "total": 4,
       "confirmados": 1
     },
@@ -116,7 +116,7 @@
     "Lara": {
       "inundacion": 2,
       "salud_publica": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -130,7 +130,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 3,
-      "incendio": 1,
+      "incendio": 2,
       "vialidad": 1,
       "infraestructura_electrica": 2
     },
@@ -190,7 +190,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 49
+    "sin_clasificar": 51
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -212,7 +212,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 9
+      "2026-08": 10
     },
     "salud_publica": {
       "2026-07": 1
@@ -222,7 +222,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 6
+      "2026-08": 7
     },
     "vialidad": {
       "2026-08": 2
