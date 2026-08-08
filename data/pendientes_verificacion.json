@@ -38,5 +38,29 @@
   "orden_publico::Bolivar::2026-07-29": {
     "intentos": 1,
     "ultima_vez": "2026-07-29T23:51:54.682079+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:06:51.459816+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:07:15.713388+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:07:40.043039+00:00"
+  },
+  "orden_publico::Lara::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:08:04.290089+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:08:28.537478+00:00"
+  },
+  "incendio::La Guaira::2026-08-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-08T18:08:52.787807+00:00"
   }
 }
