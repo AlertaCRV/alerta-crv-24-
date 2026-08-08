@@ -5,25 +5,87 @@
     "municipio": null,
     "parroquia": null,
     "severidad": "sin_clasificar",
+    "score": 1.7,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/",
+        "fecha": "2026-08-08T04:08:38+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/",
+        "fecha": "2026-08-08T13:42:32+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/voraz-incendio-consume-tres-galpones-y-la-parte-posterior-de-un-supermercado-en-caracas/",
+        "fecha": "2026-08-08T13:57:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T13:57:48+00:00",
+    "fecha_evento_temprana": "2026-08-08T04:08:38+00:00",
+    "fecha_deteccion": "2026-08-08T15:16:38.247644+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-08-08",
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 9:57 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 11:16 a.m.\n📊 Fuentes independientes: 3 (score 1.7)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/voraz-incendio-consume-tres-galpones-y-la-parte-posterior-de-un-supermercado-en-caracas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/",
-        "fecha": "2026-08-08T13:42:32+00:00"
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/",
+        "fecha": "2026-08-08T14:40:08+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-08-08T13:42:32+00:00",
-    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
-    "fecha_deteccion": "2026-08-08T14:02:42.386579+00:00",
+    "fecha_evento": "2026-08-08T14:40:08+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "fecha_deteccion": "2026-08-08T15:16:48.483458+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-08-08",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 9:42 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 10:02 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/"
+    "clave_dedup": "orden_publico::Anzoategui::2026-08-08",
+    "titulo": "Orden público en Anzoategui",
+    "texto": "📌 Orden público en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 08/08/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 11:16 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/",
+        "fecha": "2026-08-08T14:40:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T14:40:08+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "fecha_deteccion": "2026-08-08T15:16:58.647371+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-08-08",
+    "titulo": "Orden público en Municipio Libertador, Distrito Capital",
+    "texto": "📌 Orden público en Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 11:16 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/"
   },
   {
     "tipo": "incendio",
