@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-08-07T01:48:17.169420+00:00",
+    "generado": "2026-08-08T04:21:40.800414+00:00",
     "total_eventos": 2
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-08-07T01:48:13.129276+00:00",
+    "generado": "2026-08-08T04:21:36.851863+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-08-07T01:48:09.138671+00:00",
+    "generado": "2026-08-08T04:21:33.101734+00:00",
     "total_eventos": 1
   },
   {
@@ -28,15 +28,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-08-07T01:48:05.144016+00:00",
-    "total_eventos": 7
+    "generado": "2026-08-08T04:21:29.172526+00:00",
+    "total_eventos": 10
   },
   {
     "periodo": "2026-08",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-08-07T01:47:52.711372+00:00",
+    "generado": "2026-08-08T04:21:16.408968+00:00",
     "total_eventos": 6
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-08-07T01:47:40.236137+00:00",
+    "generado": "2026-08-08T04:21:03.921661+00:00",
     "total_eventos": 7
   },
   {
@@ -52,23 +52,23 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-07T01:47:27.508006+00:00",
-    "total_eventos": 4
+    "generado": "2026-08-08T04:20:59.528177+00:00",
+    "total_eventos": 7
   },
   {
     "periodo": "2026-08",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-07T01:47:15.138250+00:00",
-    "total_eventos": 29
+    "generado": "2026-08-08T04:20:55.341864+00:00",
+    "total_eventos": 35
   },
   {
     "periodo": "2026-08",
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-07T01:47:02.890680+00:00",
+    "generado": "2026-08-08T04:20:50.834403+00:00",
     "total_eventos": 1
   },
   {

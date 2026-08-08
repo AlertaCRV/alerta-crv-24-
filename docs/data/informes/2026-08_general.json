@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-07T01:47:15.138250+00:00",
-  "actualizado_hasta": "2026-08-07T01:46:56.592218+00:00",
-  "total_eventos": 29,
+  "generado": "2026-08-08T04:20:55.341864+00:00",
+  "actualizado_hasta": "2026-08-08T04:20:42.308816+00:00",
+  "total_eventos": 35,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 29
+    "actual": 35
   },
-  "narrativa": "Durante el período de 2026-08, se registraron 29 eventos de emergencia en Venezuela, igual cantidad que en el período anterior (2026-07). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que dejó un fallecido y cinco heridos (Noticia al Dia (Zulia)), y las inundaciones en Yaracuy, que causaron daños estructurales en el puente La Galletera y la muerte de una persona (El Impulso (Lara)). Además, se registró un incendio en Miranda que dejó dos personas lesionadas (La Prensa de Monagas). También se reportaron inundaciones en Apure, que afectaron a la población de La Victoria (Notiapure), y un incendio en Yaracuy que causó daños significativos (La Prensa de Lara). Es importante destacar que estos eventos tuvieron un impacto significativo en las comunidades afectadas, con daños materiales y pérdidas humanas. La comparación con el período anterior muestra que la frecuencia de estos eventos se mantiene constante, lo que subraya la importancia de la preparación y respuesta efectiva para mitigar sus efectos.",
+  "narrativa": "En el período de 2026-08, se registraron 35 eventos de emergencia en Venezuela, lo que representa un aumento en comparación con el período anterior (2026-07), que tuvo 29 eventos (Notiapure). Entre los eventos más destacados se encuentra el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en Yaracuy, que causaron daños estructurales en el puente La Galletera y afectaron a cuatro municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, lo que resultó en la muerte de una persona y pérdidas materiales en el sector agropecuario, como se informó en El Impulso (Lara). Un incendio en Miranda dejó dos personas lesionadas en el municipio Baruta, específicamente en el edificio La Joya, según La Prensa de Monagas. También se registraron inundaciones en Apure, donde el alcalde de Páez lideró trabajos de mitigación en el sector Cachamero - El Ripial, tras la crecida del río Arauca, como se mencionó en Notiapure. Un incendio en Yaracuy tuvo severidad crítica, según La Prensa de Lara. Es importante destacar que estos eventos tuvieron daños materiales, heridos o víctimas fatales, y fueron reportados por fuentes como Noticia al Dia (Zulia), El Impulso (Lara), La Prensa de Monagas, Notiapure, La Prensa de Lara y Turimiquire (Sucre).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -46,12 +46,32 @@
       "link": "https://ciudadtrujillo.com/?p=53983"
     },
     {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
+    },
+    {
+      "nombre": "El Luchador (Bolivar)",
+      "link": "https://elluchador.info/?p=317484"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
     },
     {
       "nombre": "El Pitazo",
@@ -68,10 +88,6 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/en-carabobo-y-aragua-protestan-contra-la-crisis-electrica-hubo-cacerolazo-y-represion/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/caracas/presos-politicos-en-fuerte-guaicaipuro-estan-en-huelga-de-hambre/"
     },
     {
       "nombre": "El Pitazo",
@@ -96,6 +112,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/07/videos-alarma-en-el-llanito-por-enorme-incendio-en-una-fabrica/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -134,12 +154,12 @@
       "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
     },
     {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
     },
     {
-      "nombre": "Yaracuy al Dia",
-      "link": "https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana"
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
     }
   ]
 }
