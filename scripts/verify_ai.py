@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 import requests
 from dateutil import parser as dateparser
 
+from classify import _contiene_palabra_clave_no_negada
 from config_loader import load_settings, load_estados, load_ubicaciones_detalle
 from verify import extraer_magnitud
 
@@ -212,13 +213,21 @@ _SENTIDO_SISMO_RE = re.compile(
     r"\b(se sintio|se sintió|sacudio|sacudió|remezon|remezón|se percibio|se percibió)\b",
     re.IGNORECASE,
 )
-_EVIDENCIA_DANO_SISMO_RE = re.compile(
-    r"\b(colapso estructural|colapso de|derrumbe|derrumbes|heridos|heridas|fallecidos|"
-    r"fallecidas|muertos|muertas|danos severos|daños severos|danos estructurales|"
-    r"daños estructurales|edificacion colapsada|edificación colapsada|"
-    r"vivienda colapsada|viviendas colapsadas|grietas estructurales)\b",
-    re.IGNORECASE,
-)
+# Caso real (08-08-2026): "las autoridades de gestion de riesgo NO reportan
+# daños estructurales ni personas lesionadas" (un sismo de magnitud 3.0 sin
+# ningun dano real) se contaba como evidencia FUERTE de dano porque el
+# regex original solo buscaba la frase "daños estructurales" en cualquier
+# parte del texto, sin importar la negacion explicita justo antes -- se
+# reemplaza la busqueda por _contiene_palabra_clave_no_negada() (ver
+# classify.py), que ya descarta coincidencias precedidas de "sin"/"no"/
+# "ningun" a pocas palabras de distancia.
+_EVIDENCIA_DANO_SISMO = [
+    "colapso estructural", "colapso de", "derrumbe", "derrumbes",
+    "heridos", "heridas", "fallecidos", "fallecidas", "muertos", "muertas",
+    "danos severos", "daños severos", "danos estructurales",
+    "daños estructurales", "edificacion colapsada", "edificación colapsada",
+    "vivienda colapsada", "viviendas colapsadas", "grietas estructurales",
+]
 # Nombres de fuentes sismologicas oficiales -- hoy solo configuradas como
 # canales de Telegram (FUNVISIS, INAMEH en config/sources.yaml), y la
 # recoleccion de Telegram esta deshabilitada en main.py, asi que esta
@@ -234,7 +243,7 @@ def _es_fuente_sismologica_oficial(fuente_nombre):
 
 def _sismo_sin_evidencia_fuerte(texto, fuente_nombre):
     texto_norm = _normalizar(texto)
-    if _EVIDENCIA_DANO_SISMO_RE.search(texto_norm):
+    if any(_contiene_palabra_clave_no_negada(texto_norm, f) for f in _EVIDENCIA_DANO_SISMO):
         return False
 
     magnitud = extraer_magnitud(texto)
@@ -629,17 +638,25 @@ def verificar_evento_con_ia(evento):
     El umbral de score (`confirmado`) sigue siendo un criterio aparte, usado
     unicamente para la etiqueta CONFIRMADO/SIN CONFIRMAR, no para decidir si
     se publica."""
-    api_key = os.environ.get("GROQ_API_KEY")
     grupos_fuentes = evento["grupos_fuentes"]
-
-    if not api_key:
-        print("[WARN] GROQ_API_KEY no configurada, se omite verificación de plausibilidad")
-        return _finalizar_evento(evento, grupos_fuentes, error_sistema=True)
 
     # Filtro determinista primero: descarta de una vez las fuentes cuyo texto
     # marca explicitamente una retrospectiva/aniversario (independiente del
     # juicio del modelo, que en produccion ha fallado con frases como "a un
     # mes del terremoto en Vargas..." pese a estar cubiertas en el prompt).
+    #
+    # Se evalua ANTES de comprobar GROQ_API_KEY (08-08-2026): estos filtros
+    # son regex puros, no dependen de ninguna llamada a la IA, pero vivian
+    # despues del `if not api_key: return ...` de mas abajo -- cuando la
+    # clave no esta configurada (el caso real de este entorno, ver
+    # roadmap_evolucion.md), TODOS los eventos se publicaban con
+    # error_sistema=True sin pasar nunca por este filtro, incluyendo los
+    # peores falsos positivos que existe precisamente para atrapar (un sismo
+    # de magnitud 3.0 sin evidencia fuerte, una via/incendio/deslizamiento
+    # sin evidencia fuerte). El camino de fallo transitorio de Groq (ver
+    # _manejar_falla_temporal) ya aplicaba el filtro correctamente porque
+    # recibe `candidatos` (post-filtro), no `grupos_fuentes`; ahora ambos
+    # caminos son consistentes.
     obvios_rechazados = []
     candidatos = []
     for grupo in grupos_fuentes:
@@ -668,6 +685,11 @@ def verificar_evento_con_ia(evento):
 
     if not candidatos:
         return None
+
+    api_key = os.environ.get("GROQ_API_KEY")
+    if not api_key:
+        print("[WARN] GROQ_API_KEY no configurada, se omite verificación de plausibilidad")
+        return _finalizar_evento(evento, candidatos, error_sistema=True)
 
     n = len(candidatos)
     fecha_actual = datetime.now(timezone.utc).strftime("%Y-%m-%d")

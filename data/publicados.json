@@ -55,13 +55,6 @@
     "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
     "municipio": null
   },
-  "incendio::Distrito Capital::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T19:47:03.513447+00:00",
-    "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
-    "municipio": null
-  },
   "orden_publico::Lara::2026-08-07": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -76,33 +69,12 @@
     "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
     "municipio": "Sucre"
   },
-  "orden_publico::Anzoategui::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T15:16:48.483458+00:00",
-    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
-    "municipio": null
-  },
-  "orden_publico::Distrito Capital::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T15:16:58.647371+00:00",
-    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
-    "municipio": "Libertador"
-  },
   "infraestructura_electrica::Merida::2026-08-08": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-08T21:06:03.744842+00:00",
     "fecha_evento_temprana": "2026-08-08T11:20:02+00:00",
     "municipio": null
-  },
-  "infraestructura_electrica::Lara::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T21:09:40.998377+00:00",
-    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
-    "municipio": "Iribarren"
   },
   "infraestructura_electrica::Bolivar::2026-08-08": {
     "severidad": "sin_clasificar",
@@ -111,46 +83,11 @@
     "fecha_evento_temprana": "2026-08-08T12:40:02+00:00",
     "municipio": "Caroní"
   },
-  "orden_publico::Lara::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T21:10:29.324347+00:00",
-    "fecha_evento_temprana": "2026-08-08T13:00:00+00:00",
-    "municipio": null
-  },
-  "deslizamiento::La Guaira::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T21:10:53.475435+00:00",
-    "fecha_evento_temprana": "2026-08-08T17:30:01+00:00",
-    "municipio": null
-  },
-  "sismo::Monagas::2026-08-08::mag3.0": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T22:06:03.910647+00:00",
-    "fecha_evento_temprana": "2026-08-08T18:36:13+00:00",
-    "municipio": "Aguasay"
-  },
   "infraestructura_electrica::Distrito Capital::2026-08-08": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-08T22:06:52.249467+00:00",
     "fecha_evento_temprana": "2026-08-08T18:00:02+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Aragua::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T22:07:40.575660+00:00",
-    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Carabobo::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T22:08:04.740274+00:00",
-    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
     "municipio": null
   },
   "orden_publico::Sucre::2026-08-08": {

@@ -4667,3 +4667,228 @@ detectar_inconsistencias.py` → 9 pares de posibles duplicados (7 ya
 documentados en sesiones anteriores + el nuevo del hallazgo pendiente de
 discutir arriba), 4 fuentes muertas en informes (2 ya conocidas del
 02-08-2026 + 2 nuevas de la retracción del hallazgo 3, ver arriba).
+
+---
+
+## Auditoría diaria automática (08-08-2026): filtro determinista saltado sin GROQ_API_KEY, artículo-tally retrospectivo republicado como 6 alertas nuevas, y 3 falsos positivos adicionales
+
+Auditoría de rutina de las 14 alertas publicadas/actualizadas desde la
+auditoría del 07-08-2026, comparando cada una contra el texto real de sus
+fuentes (`data/historico_fuentes_texto.jsonl`). Las 9 más recientes
+(21:05-22:08 UTC del 08-08) llegaron todas con
+`estado_verificacion: PASADO_POR_FALLA_TECNICA` -- sin `GROQ_API_KEY`
+configurada en este entorno -- y se revisaron con especial cuidado, como
+pide el criterio de esta auditoría. Se encontraron y corrigieron 5 causas
+raíz distintas, con 9 alertas retractadas en total; ningún caso quedó
+publicado con un cambio sin verificar dos veces.
+
+### 1. El filtro determinista (retrospectiva/vialidad/incendio/deslizamiento/sismo) se saltaba por completo cuando GROQ_API_KEY no está configurada
+
+`verificar_evento_con_ia()` (`scripts/verify_ai.py`) comprobaba
+`if not api_key: return _finalizar_evento(evento, grupos_fuentes,
+error_sistema=True)` ANTES de calcular `obvios_rechazados` -- el bloque de
+filtros deterministas (regex puro, sin ninguna llamada a la IA) vivía
+varias líneas más abajo, así que nunca se ejecutaba en este entorno (sin
+la clave). El camino paralelo de fallo transitorio de Groq
+(`_manejar_falla_temporal`, tras agotar `MAX_CICLOS_ESPERA_GROQ`) sí
+aplicaba el filtro correctamente, porque recibe `candidatos` (ya
+filtrado), no `grupos_fuentes` -- la inconsistencia era solo entre esos
+dos caminos. Esto explica por qué los peores falsos positivos, como ya
+advierte el criterio de esta auditoría, se concentran precisamente en
+`PASADO_POR_FALLA_TECNICA`: literalmente ningún filtro de plausibilidad
+corre en ese caso, ni el de la IA ni el determinista.
+
+**Corrección**: se movió el cálculo de `obvios_rechazados`/`candidatos`
+ANTES de la comprobación de `api_key`, y esta última ahora usa
+`_finalizar_evento(evento, candidatos, ...)` en vez de `grupos_fuentes` --
+igual que ya hacía el camino de fallo transitorio. Un evento cuyas
+fuentes sean TODAS descartadas por el filtro determinista ahora retorna
+`None` (no se publica) sin importar si Groq está disponible o no.
+
+### 2. El filtro de "evidencia fuerte de daño" para sismo no distinguía la negación -- "NO reportan daños estructurales" contaba como evidencia de daño
+
+Al aplicar la corrección del hallazgo 1, `sismo::Monagas::2026-08-08::mag3.0`
+(Maturin News, sismo de magnitud 3,0 en Aguasay) pasó a evaluarse por el
+filtro determinista por primera vez -- y se descubrió que
+`_sismo_sin_evidencia_fuerte()` NO lo rechazaba pese a que el propio
+artículo dice explícitamente: "las autoridades de gestión de riesgo NO
+reportan daños estructurales ni personas lesionadas producto de este
+sismo de baja magnitud". `_EVIDENCIA_DANO_SISMO_RE.search()` solo
+buscaba la frase "daños estructurales" en cualquier parte del texto, sin
+mirar la negación "no reportan" justo antes -- un sismo menor SIN ningún
+daño real se trataba como si tuviera evidencia fuerte de daño, y con
+magnitud 3,0 (por debajo del umbral de 4,0) y sin la frase "se sintió"
+tampoco, debía rechazarse igual.
+
+**Corrección**: se reemplazó `_EVIDENCIA_DANO_SISMO_RE.search()` por
+`_contiene_palabra_clave_no_negada()` (importada de `classify.py`, ya
+usada ahí para el mismo problema con "muerto(s)/animal" del 05-08-2026),
+que descarta una coincidencia si está negada a pocas palabras de
+distancia. `_EVIDENCIA_DANO_SISMO_RE` se convirtió en una lista de frases
+(`_EVIDENCIA_DANO_SISMO`) para poder iterarlas con esa función.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Monagas::2026-08-08::mag3.0` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+### 3. Un incendio real en Petare (municipio Sucre, Miranda) se publicaba DOS VECES por la misma laguna ya conocida de "Caracas" como alias de Distrito Capital -- esta vez con Sucre, no con Chacao/Baruta/El Hatillo
+
+Un incendio real de gran magnitud en "tres galpones" de El Llanito,
+Petare -- el propio artículo dice explícitamente "municipio Sucre,
+Petare, Miranda" -- se publicó también como `incendio::Distrito
+Capital::2026-08-08` porque el texto menciona "Bombero de Caracas" (el
+cuerpo de bomberos que respondió, no la ubicación del hecho). El cluster
+se re-publicó así 4 veces a lo largo del día según se sumaban fuentes
+(`El Llanito` fue cubierto también por La Patilla y El Carabobeno desde
+la madrugada), todas con la ubicación equivocada -- la versión correcta
+(`incendio::Miranda::2026-08-08`, Parroquia Petare) ya estaba publicada
+en paralelo con la única fuente que sí resolvía bien.
+
+**Causa raíz**: `LISTA_NEGRA_POR_ESTADO["Distrito Capital"]`
+(`scripts/classify.py`) ya cubre este mismo problema para Chacao/Baruta/
+El Hatillo (31-07-2026) -- pero Sucre, el quinto municipio real del área
+metropolitana de Caracas (donde está Petare), faltaba en la lista.
+
+**Corrección**: se agregó `"municipio sucre"` a
+`LISTA_NEGRA_POR_ESTADO["Distrito Capital"]` y su remapeo a Miranda en
+`_REMAPEO_MUNICIPIO_A_ESTADO` -- se usa la frase completa "municipio
+sucre" (no "sucre" sola) porque Sucre también es el nombre de un estado
+distinto, exactamente el mismo motivo por el que Chacao/Baruta/El Hatillo
+sí podían usarse solos.
+
+**Corrección retroactiva**: se eliminó `incendio::Distrito
+Capital::2026-08-08` de `docs/data/noticias.json`, `data/publicados.json`
+y las 4 instantáneas del cluster (mismo evento, re-publicado varias veces
+según llegaban fuentes) de `data/historico_eventos.jsonl` y `data/
+historico_fuentes_texto.jsonl`. `incendio::Miranda::2026-08-08` (la
+versión correcta) no se tocó.
+
+### 4. Un artículo-tally retrospectivo de protestas de toda una semana, reproducido por otro medio, se republicó como 6 alertas nuevas de "hoy"
+
+"Más de una decena de protestas en una semana por cortes de luz a nivel
+nacional" (La Prensa de Lara) es un recuento explícito: "**Desde el 31 de
+julio hasta el 07 de agosto**, según registros del DIARIO LA PRENSA DE
+LARA, se contabilizan al menos... 15 manifestaciones por la crisis
+eléctrica en el país" -- cada protesta mencionada trae su propia fecha ya
+pasada (03, 04, 05, 06, 07 de agosto). Turimiquire (Sucre) reprodujo el
+mismo artículo casi textualmente el 08-08. Entre ambos generaron 6
+alertas nuevas el día de la republicación, como si los hechos ocurrieran
+ese mismo día: `orden_publico::Lara::2026-08-08` (La Prensa de Lara
+directo), `orden_publico::Anzoategui::2026-08-08`, `orden_publico::
+Distrito Capital::2026-08-08`, `infraestructura_electrica::
+Lara::2026-08-08`, `infraestructura_electrica::Aragua::2026-08-08` e
+`infraestructura_electrica::Carabobo::2026-08-08` (los últimos 5, vía
+Turimiquire).
+
+**Causa raíz**: ningún filtro existente cubre esta variante -- el
+`_PATRON_RETROSPECTIVA` de `verify_ai.py` es específico de aniversarios/
+"N días después" de un sismo, y `_ARTICULO_RETROSPECTIVO_LARGA_DURACION`
+de `classify.py` (30-07-2026) solo cubre "meses de espera"/"así
+aprendieron". Un artículo enmarcado explícitamente como un recuento de un
+RANGO de fechas ya transcurrido no es un hecho nuevo de hoy, sin importar
+el tipo de emergencia de fondo -- mismo principio que esos dos filtros,
+variante de redacción distinta.
+
+**Corrección**: nuevo regex `_RANGO_FECHAS_RETROSPECTIVO_RE` ("desde el D
+de MES hasta el D de MES") agregado a
+`_es_articulo_retrospectivo_larga_duracion()` (`scripts/classify.py`),
+señal decisiva igual que las otras dos (no se anula por evidencia
+fuerte). Se verificó contra las 81 fuentes de
+`data/historico_fuentes_texto.jsonl` que esta frase, con fechas
+variables, no aparece en ningún otro caso real ya publicado -- cero
+riesgo de falso positivo nuevo.
+
+**Corrección retroactiva**: se eliminaron las 6 alertas de `docs/data/
+noticias.json`, `data/publicados.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`. Se regeneró `docs/data/
+estadisticas.json`.
+
+**Nota**: 3 artículos más de Turimiquire sobre la crisis eléctrica
+(`infraestructura_electrica::Bolivar::2026-08-08` -- declaraciones de un
+dirigente político sobre riesgo estructural, sin incidente puntual
+descrito; `infraestructura_electrica::Distrito
+Capital::2026-08-08` -- columna de opinión de un coordinador regional
+listando fallas crónicas por parroquia; y la fuente Turimiquire dentro de
+`infraestructura_electrica::Merida::2026-08-08`, fusionada con una fuente
+de La Patilla que sí describe una protesta real de hoy) NO usan esta
+frase de rango de fechas y no se tocaron -- ver sección de pendientes más
+abajo.
+
+### 5. Historia de interés humano sobre DOS gatos rescatados de escombros (terremoto de hace más de un mes) disparaba deslizamiento -- el filtro de "gato" (29-07-2026) no cubría el plural
+
+"Félix y Guaira: dos historias gatunas de supervivencia en La Guaira"
+(Primicia) -- dos gatos "encontrados entre los escombros" en Caraballeda,
+en tratamiento veterinario -- se publicó como `deslizamiento::La
+Guaira::2026-08-08`. `_CONTEXTO_CONFLICTIVO_POR_TIPO["deslizamiento"]`
+(`scripts/classify.py`) ya excluye "gato"/"mascota"/"perro"/etc. desde el
+29-07-2026 (caso real: "Rescatan al gato Noche..."), pero solo en
+singular -- "**Los dos gatos** reciben cuidados..." usa el plural, no
+cubierto por comparación de palabra completa.
+
+**Corrección**: se agregaron las formas plurales (gatos, gatas, gatitos,
+perros, felinos, caninos, etc.) a la lista.
+
+**Corrección retroactiva**: se eliminó `deslizamiento::La
+Guaira::2026-08-08` de `docs/data/noticias.json`, `data/publicados.json`,
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`.
+
+### Pendiente de discutir: artículos de opinión/declaración política sobre la crisis eléctrica crónica, sin incidente puntual del día
+
+3 fuentes -- `infraestructura_electrica::Bolivar::2026-08-08` (un
+dirigente de Encuentro Ciudadano advirtiendo, en tiempo condicional, que
+el déficit estructural "amenaza con un apagón masivo"), la fuente
+Turimiquire de `infraestructura_electrica::Distrito
+Capital::2026-08-08` (columna de opinión de un coordinador regional de
+La Red Verde Caracas listando fallas crónicas por parroquia, con un
+llamado a protestar) y la fuente Turimiquire de `infraestructura_
+electrica::Merida::2026-08-08` (declaraciones de un dirigente de Primero
+Justicia sobre "discriminación eléctrica" territorial) -- son columnas de
+opinión/declaraciones políticas sobre la crisis eléctrica en general, sin
+describir un corte o incidente concreto ocurrido ese día. Ninguna usa
+lenguaje de rango de fechas (hallazgo 4) ni las frases ya cubiertas por
+`_es_anuncio_corpoelec_sin_falla()` (07-08-2026). A diferencia de esos
+filtros ya existentes, diseñar uno para "declaración política sin
+incidente puntual" arriesga descartar coberturas legítimas que citan a un
+vocero político junto a un corte real (patrón común en la prensa
+venezolana) -- no se corrigió nada, y las 2 primeras fuentes son la ÚNICA
+fuente de su alerta (permanecen publicadas); la tercera queda fusionada
+con la fuente de La Patilla, que sí describe una protesta real de hoy en
+Mérida, así que esa alerta en concreto no depende de la fuente dudosa
+para justificarse.
+
+### Pendiente de discutir (ya documentado en sesiones anteriores, mismo patrón): concentración gremial sin evidencia de disrupción
+
+`orden_publico::Lara::2026-08-07` (El Impulso: jubilados y empleados de
+la Gobernación de Lara concentrados para exigir el pago de un bono) es el
+mismo patrón ya documentado como pendiente el 02-08 (Sintrasalud Falcón)
+y el 05-08-2026: una concentración gremial de prensa, sin evidencia de
+cierre de vías/disturbios ni declaración explícita de que fue pacífica.
+No se corrigió nada -- mismo riesgo ya explicado en esas entradas
+(diseñar el filtro arriesga perder coberturas iniciales de disturbios
+reales).
+
+### Pruebas
+
+7 casos nuevos: 2 en `tests/test_verify_ai_filtros.py` (el sismo de
+Monagas real con la negación, y su control sin negar), 1 más en el mismo
+archivo (`test_filtro_deterministico_corre_incluso_sin_groq_api_key`,
+que monkeypatchea `GROQ_API_KEY` fuera del entorno y confirma que
+`verificar_evento_con_ia()` sigue rechazando un sismo menor obvio), y 4
+en `tests/casos_clasificacion.jsonl` (el incendio real de Petare con
+Distrito Capital excluido explícitamente, los dos gatos en plural, el
+artículo-tally retrospectivo real de La Prensa de Lara, y un control
+sintético de que una falla eléctrica puntual de un solo día -- sin rango
+de fechas -- se sigue detectando con normalidad). Regresión completa
+contra las 69 fuentes vigentes de `data/historico_fuentes_texto.jsonl`
+(ya con las 12 líneas retractadas eliminadas -- 9 alertas finales más 3
+instantáneas intermedias del cluster de Petare): sin cambios inesperados.
+`python3 -m pytest tests/` → 211 passed, 5 xfailed (conocidos, sin
+relación), 1 xpassed (conocido, sin efecto real). `python3 scripts/
+validar_configs.py` → OK. `python3 scripts/detectar_inconsistencias.py`
+→ 10 pares de posibles duplicados (9 ya documentados en sesiones
+anteriores + ninguno nuevo relacionado con esta sesión), 6 fuentes
+muertas en informes (2 ya conocidas del 02-08-2026 + 2 nuevas de la
+retracción del hallazgo 3 de esta sesión, El Llanito/Petare + 2 más ya
+conocidas). `GROQ_API_KEY` no disponible en este entorno para regenerar
+los informes narrativos con las fuentes retractadas.
