@@ -71,8 +71,8 @@
   },
   "incendio::Miranda::2026-08-08": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-08T19:47:06.838402+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:05:39.587023+00:00",
     "fecha_evento_temprana": "2026-08-08T13:42:32+00:00",
     "municipio": "Sucre"
   },
@@ -89,5 +89,40 @@
     "fecha_deteccion": "2026-08-08T15:16:58.647371+00:00",
     "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
     "municipio": "Libertador"
+  },
+  "infraestructura_electrica::Merida::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:06:03.744842+00:00",
+    "fecha_evento_temprana": "2026-08-08T11:20:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:09:40.998377+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "municipio": "Iribarren"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:10:05.149965+00:00",
+    "fecha_evento_temprana": "2026-08-08T12:40:02+00:00",
+    "municipio": "Caroní"
+  },
+  "orden_publico::Lara::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:10:29.324347+00:00",
+    "fecha_evento_temprana": "2026-08-08T13:00:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::La Guaira::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-08T21:10:53.475435+00:00",
+    "fecha_evento_temprana": "2026-08-08T17:30:01+00:00",
+    "municipio": null
   }
 }
