@@ -8,12 +8,15 @@ control, para que una futura modificacion de estos filtros no reabra el
 mismo falso positivo/negativo.
 """
 
+from classify import clasificar_item
+from verify import agrupar_y_verificar
 from verify_ai import (
     _deslizamiento_estructura_sin_evidencia_fuerte,
     _es_retrospectiva_obvia,
     _incendio_vehiculo_sin_evidencia_fuerte,
     _sismo_sin_evidencia_fuerte,
     _vialidad_sin_evidencia_fuerte,
+    verificar_evento_con_ia,
 )
 
 
@@ -98,6 +101,59 @@ def test_sismo_con_dano_real_no_se_descarta_sin_importar_magnitud():
 def test_sismo_fuente_sismologica_oficial_no_se_descarta():
     texto = "Un sismo de magnitud 4.5 se registro en la region occidental."
     assert _sismo_sin_evidencia_fuerte(texto, "FUNVISIS") is False
+
+
+def test_sismo_dano_negado_no_cuenta_como_evidencia_fuerte():
+    # Caso real (08-08-2026, Monagas): "las autoridades de gestion de
+    # riesgo no reportan danos estructurales ni personas lesionadas" para
+    # un sismo de magnitud 3.0 -- el regex original solo buscaba la frase
+    # "danos estructurales" en cualquier parte del texto, sin mirar la
+    # negacion "no reportan" justo antes, asi que un sismo menor SIN dano
+    # real se trataba como si tuviera evidencia fuerte de dano.
+    texto = (
+        "Un sismo de magnitud 3.0 se registro en Monagas. Las autoridades "
+        "de gestion de riesgo no reportan danos estructurales ni personas "
+        "lesionadas producto de este sismo de baja magnitud."
+    )
+    assert _sismo_sin_evidencia_fuerte(texto, "Medio Cualquiera") is True
+
+
+def test_sismo_dano_real_sin_negar_si_cuenta_como_evidencia_fuerte():
+    # Control: la misma frase, sin la negacion, debe seguir contando como
+    # evidencia fuerte (no se rompe el caso positivo al arreglar el
+    # negativo).
+    texto = (
+        "Un sismo de magnitud 3.0 se registro en Monagas. Las autoridades "
+        "de gestion de riesgo reportan danos estructurales en la zona."
+    )
+    assert _sismo_sin_evidencia_fuerte(texto, "Medio Cualquiera") is False
+
+
+def test_filtro_deterministico_corre_incluso_sin_groq_api_key(monkeypatch):
+    # Caso real (08-08-2026): con GROQ_API_KEY sin configurar (el caso real
+    # de este entorno), verificar_evento_con_ia() retornaba de inmediato
+    # publicando TODAS las fuentes sin pasar nunca por el filtro
+    # determinista (retrospectiva/vialidad/incendio/deslizamiento/sismo) --
+    # justo el escenario (estado_verificacion=PASADO_POR_FALLA_TECNICA) que
+    # la auditoria diaria debe revisar "con especial cuidado" porque ahi ya
+    # han aparecido los peores falsos positivos. Un sismo de magnitud 3.2
+    # sin evidencia fuerte debe seguir descartandose aunque Groq no este
+    # disponible, igual que ya pasaba cuando Groq fallaba de forma
+    # transitoria (ver _manejar_falla_temporal).
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    texto = "Un sismo de magnitud 3.2 se registro en el estado Monagas."
+    item = clasificar_item({"texto": texto})[0]
+    item.update({
+        "fecha": "2026-08-08T18:00:00+00:00",
+        "fuente_nombre": "Medio Cualquiera",
+        "peso": 1.0,
+        "link": "https://example.com/sismo",
+        "fuente_tipo": "rss",
+        "es_reporte_filial": False,
+    })
+    eventos = agrupar_y_verificar([item])
+    assert len(eventos) == 1
+    assert verificar_evento_con_ia(eventos[0]) is None
 
 
 # --- retrospectiva obvia (aniversario/"N meses despues") ----------------

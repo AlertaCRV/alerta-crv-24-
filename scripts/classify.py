@@ -49,7 +49,17 @@ LISTA_NEGRA_POR_ESTADO = {
     # evidencia de estado (para no confundir "municipio Sucre" con el
     # estado Sucre), lo que tambien bloquearia a Chacao como evidencia
     # directa de Miranda.
-    "Distrito Capital": ["chacao", "baruta", "el hatillo"],
+    #
+    # Caso real (08-08-2026): un incendio "en el Llanito, municipio Sucre,
+    # Petare, Miranda" tambien se publicaba como Distrito Capital porque el
+    # articulo menciona "Bombero de Caracas" (nombre del cuerpo de bomberos
+    # que respondio, no la ubicacion del hecho). Sucre es el quinto
+    # municipio real del area metropolitana de Caracas (junto a Chacao,
+    # Baruta y El Hatillo), pero a diferencia de esos tres la frase debe ser
+    # "municipio sucre" completa, no "sucre" sola -- Sucre tambien es el
+    # nombre de un estado distinto (ver el otro caso ya cubierto arriba en
+    # LISTA_NEGRA_POR_ESTADO["Sucre"]).
+    "Distrito Capital": ["chacao", "baruta", "el hatillo", "municipio sucre"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -63,6 +73,7 @@ _REMAPEO_MUNICIPIO_A_ESTADO = {
         "chacao": "Miranda",
         "baruta": "Miranda",
         "el hatillo": "Miranda",
+        "municipio sucre": "Miranda",
     },
 }
 
@@ -165,8 +176,18 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # dias bajo los escombros") disparaban tipo=deslizamiento -- son notas
     # de interes humano sobre un colapso viejo ya cubierto, no un
     # derrumbe/deslizamiento nuevo.
-    "deslizamiento": ["gato", "gata", "gatito", "gatico", "mascota",
-                       "perro", "perra", "perrito", "felino", "canino"],
+    #
+    # Ampliada (08-08-2026): la lista solo cubria el singular -- un articulo
+    # real sobre DOS gatos ("Los dos gatos reciben cuidados...") usaba el
+    # plural "gatos", no cubierto por "gato" (comparacion de palabra
+    # completa, ver _contiene_palabra_clave), y se colaba igual.
+    "deslizamiento": ["gato", "gata", "gatos", "gatas", "gatito", "gatita",
+                       "gatitos", "gatitas", "gatico", "gatica", "gaticos",
+                       "gaticas", "mascota", "mascotas",
+                       "perro", "perra", "perros", "perras",
+                       "perrito", "perrita", "perritos", "perritas",
+                       "felino", "felina", "felinos", "felinas",
+                       "canino", "canina", "caninos", "caninas"],
     # Caso real (29-07-2026): un articulo titulado "Hantavirus: Enfermedad
     # totalmente controlada en Venezuela" (una nota que desmiente rumores,
     # sin casos nuevos confirmados por MinSalud) disparaba tipo=salud_publica
@@ -297,9 +318,30 @@ _ARTICULO_RETROSPECTIVO_LARGA_DURACION = [
     "asi aprendieron", "así aprendieron", "aprendieron a vivir",
 ]
 
+# Caso real (08-08-2026): "Desde el 31 de julio hasta el 07 de agosto, segun
+# registros del Diario La Prensa de Lara, se contabilizan al menos... 15
+# manifestaciones por la crisis electrica en el pais" -- un articulo-tally
+# retrospectivo de La Prensa de Lara, reproducido casi textual por otro
+# medio (Turimiquire), resumiendo protestas y fallas electricas YA
+# ocurridas en 7 estados distintos durante la semana previa (cada una con
+# su propia fecha explicita: "04 de agosto", "06 de agosto"...), generaba
+# 6 alertas nuevas (orden_publico y infraestructura_electrica en Lara,
+# Aragua, Carabobo, Anzoategui, Distrito Capital) el dia de la republicacion
+# como si los hechos estuvieran ocurriendo ese mismo dia. Mismo patron que
+# "meses de espera"/"asi aprendieron": un articulo que se encuadra
+# explicitamente como un recuento de un RANGO de fechas ya transcurrido, no
+# el reporte de un hecho puntual de hoy. Se verifico contra las 81 fuentes
+# de data/historico_fuentes_texto.jsonl que esta frase, con fechas
+# variables, no aparece en ningun otro caso real ya publicado.
+_RANGO_FECHAS_RETROSPECTIVO_RE = re.compile(
+    r"\bdesde el \d{1,2} de \w+ hasta el \d{1,2} de \w+\b", re.IGNORECASE,
+)
+
 
 def _es_articulo_retrospectivo_larga_duracion(texto_norm):
-    return any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION)
+    if any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION):
+        return True
+    return _RANGO_FECHAS_RETROSPECTIVO_RE.search(texto_norm) is not None
 
 
 # Caso real (30-07-2026): "Aumentan los casos de enfermedades diarreicas en
