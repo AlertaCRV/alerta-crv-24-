@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-08T22:10:08.069876+00:00",
+  "actualizado": "2026-08-08T23:22:07.259390+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-08T19:17:17+00:00"
+    "hasta": "2026-08-08T21:57:44+00:00"
   },
-  "total_eventos": 81,
+  "total_eventos": 82,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
     "infraestructura_electrica": 19,
     "deslizamiento": 4,
     "colapso_estructural": 1,
-    "orden_publico": 15,
+    "orden_publico": 16,
     "salud_publica": 1,
     "crisis_migratoria": 4,
     "incendio": 16,
@@ -82,6 +82,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Sucre",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 2,
       "confirmados": 0
@@ -94,11 +99,6 @@
     {
       "estado": "Aragua",
       "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Sucre",
-      "total": 1,
       "confirmados": 0
     },
     {
@@ -155,7 +155,8 @@
       "infraestructura_electrica": 2
     },
     "Sucre": {
-      "inundacion": 1
+      "inundacion": 1,
+      "orden_publico": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 1,
@@ -210,7 +211,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 68
+    "sin_clasificar": 69
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -233,7 +234,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 13
+      "2026-08": 14
     },
     "salud_publica": {
       "2026-07": 1

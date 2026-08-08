@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/",
+        "fecha": "2026-08-08T21:57:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T21:57:44+00:00",
+    "fecha_evento_temprana": "2026-08-08T21:57:44+00:00",
+    "fecha_deteccion": "2026-08-08T23:16:00.673887+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Sucre::2026-08-08",
+    "titulo": "Orden público en Sucre",
+    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 08/08/2026, 5:57 p.m.\n🔎 Detectado por el sistema: 08/08/2026, 7:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "Monagas",
     "municipio": "Aguasay",
