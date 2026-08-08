@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-08T19:52:08.775457+00:00",
+  "actualizado": "2026-08-08T21:10:57.175451+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-08T18:00:22+00:00"
+    "hasta": "2026-08-08T19:17:17+00:00"
   },
-  "total_eventos": 71,
+  "total_eventos": 77,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
-    "infraestructura_electrica": 13,
-    "deslizamiento": 3,
+    "infraestructura_electrica": 16,
+    "deslizamiento": 4,
     "colapso_estructural": 1,
-    "orden_publico": 14,
+    "orden_publico": 15,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 15,
+    "incendio": 16,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -27,14 +27,19 @@
       "confirmados": 4
     },
     {
+      "estado": "Bolivar",
+      "total": 8,
+      "confirmados": 2
+    },
+    {
+      "estado": "Lara",
+      "total": 7,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 7,
       "confirmados": 3
-    },
-    {
-      "estado": "Bolivar",
-      "total": 7,
-      "confirmados": 2
     },
     {
       "estado": "Barinas",
@@ -42,9 +47,9 @@
       "confirmados": 1
     },
     {
-      "estado": "Lara",
+      "estado": "Miranda",
       "total": 5,
-      "confirmados": 1
+      "confirmados": 2
     },
     {
       "estado": "Yaracuy",
@@ -60,11 +65,6 @@
       "estado": "Anzoategui",
       "total": 4,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 4,
-      "confirmados": 2
     },
     {
       "estado": "Trujillo",
@@ -105,6 +105,16 @@
       "estado": "Aragua",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Merida",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -116,7 +126,8 @@
     "Lara": {
       "inundacion": 2,
       "salud_publica": 1,
-      "orden_publico": 2
+      "orden_publico": 3,
+      "infraestructura_electrica": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -153,7 +164,7 @@
       "orden_publico": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 1,
       "escasez_combustible": 1,
       "incendio": 2
@@ -169,7 +180,7 @@
       "infraestructura_electrica": 2
     },
     "Miranda": {
-      "incendio": 4
+      "incendio": 5
     },
     "Nueva Esparta": {
       "incendio": 1,
@@ -186,12 +197,18 @@
     },
     "Aragua": {
       "orden_publico": 1
+    },
+    "Merida": {
+      "infraestructura_electrica": 1
+    },
+    "La Guaira": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 58
+    "sin_clasificar": 64
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -203,17 +220,18 @@
     },
     "infraestructura_electrica": {
       "2026-07": 6,
-      "2026-08": 7
+      "2026-08": 10
     },
     "deslizamiento": {
-      "2026-07": 3
+      "2026-07": 3,
+      "2026-08": 1
     },
     "colapso_estructural": {
       "2026-07": 1
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 12
+      "2026-08": 13
     },
     "salud_publica": {
       "2026-07": 1
@@ -223,7 +241,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 12
+      "2026-08": 13
     },
     "vialidad": {
       "2026-08": 2
