@@ -1,5 +1,111 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Monagas",
+    "municipio": "Aguasay",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/funvisis-reporta-sismo-de-magnitud-3-0-en-el-municipio-aguasay-en-monagas/?utm_source=rss&utm_medium=rss&utm_campaign=funvisis-reporta-sismo-de-magnitud-3-0-en-el-municipio-aguasay-en-monagas",
+        "fecha": "2026-08-08T18:36:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T18:36:13+00:00",
+    "fecha_evento_temprana": "2026-08-08T18:36:13+00:00",
+    "fecha_deteccion": "2026-08-08T22:06:03.910647+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 3.0,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Monagas::2026-08-08::mag3.0",
+    "titulo": "Sismo en Municipio Aguasay, Monagas",
+    "texto": "📌 Sismo en Municipio Aguasay, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Aguasay, Monagas\n🕒 Hecho reportado: 08/08/2026, 2:36 p.m.\n🔎 Detectado por el sistema: 08/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/funvisis-reporta-sismo-de-magnitud-3-0-en-el-municipio-aguasay-en-monagas/?utm_source=rss&utm_medium=rss&utm_campaign=funvisis-reporta-sismo-de-magnitud-3-0-en-el-municipio-aguasay-en-monagas"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Antimano",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/08/caracas-no-se-escapa-a-la-crisis-de-energia-electrica-dijo-jose-gregorio-ochoa-chegoyo/",
+        "fecha": "2026-08-08T18:00:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T18:00:02+00:00",
+    "fecha_evento_temprana": "2026-08-08T18:00:02+00:00",
+    "fecha_deteccion": "2026-08-08T22:06:52.249467+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-08",
+    "titulo": "Falla eléctrica en Parroquia Antimano, Distrito Capital",
+    "texto": "📌 Falla eléctrica en Parroquia Antimano, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Antimano, Distrito Capital\n🕒 Hecho reportado: 08/08/2026, 2:00 p.m.\n🔎 Detectado por el sistema: 08/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/caracas-no-se-escapa-a-la-crisis-de-energia-electrica-dijo-jose-gregorio-ochoa-chegoyo/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/",
+        "fecha": "2026-08-08T14:40:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T14:40:08+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "fecha_deteccion": "2026-08-08T22:07:40.575660+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-08-08",
+    "titulo": "Falla eléctrica en Aragua",
+    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 08/08/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 6:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/",
+        "fecha": "2026-08-08T14:40:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-08T14:40:08+00:00",
+    "fecha_evento_temprana": "2026-08-08T14:40:08+00:00",
+    "fecha_deteccion": "2026-08-08T22:08:04.740274+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-08",
+    "titulo": "Falla eléctrica en Carabobo",
+    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 08/08/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 08/08/2026, 6:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/08/protestas-en-las-regiones-de-venezuela-por-los-constantes-apagones-electricos/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Miranda",
     "municipio": "Sucre",
@@ -1928,28 +2034,5 @@
     "fecha_deteccion": "2026-07-26T03:23:25.838916+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "inundacion::Monagas::2026-07-26"
-  },
-  {
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/07/2026, 3:07 p.m.\n🔎 Detectado por el sistema: 25/07/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/chavistas-queman-banderas-de-ee-uu-e-israel-durante-protesta-en-caracas/",
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/chavistas-queman-banderas-de-ee-uu-e-israel-durante-protesta-en-caracas/",
-        "fecha": "2026-07-25T19:07:59+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-25T19:07:59+00:00",
-    "fecha_deteccion": "2026-07-25T21:32:52.933103+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-07-25"
   }
 ]
