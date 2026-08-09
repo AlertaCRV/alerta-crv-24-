@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-08T23:33:54.985738+00:00",
+  "actualizado": "2026-08-09T04:06:56.300827+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-08T21:57:44+00:00"
   },
-  "total_eventos": 70,
+  "total_eventos": 71,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,7 +14,7 @@
     "orden_publico": 13,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 12,
+    "incendio": 13,
     "vialidad": 2,
     "sismo": 1,
     "escasez_combustible": 1,
@@ -87,6 +87,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Monagas",
       "total": 2,
       "confirmados": 0
@@ -95,11 +100,6 @@
       "estado": "Nueva Esparta",
       "total": 2,
       "confirmados": 1
-    },
-    {
-      "estado": "Tachira",
-      "total": 1,
-      "confirmados": 0
     },
     {
       "estado": "Aragua",
@@ -168,7 +168,8 @@
       "inundacion": 1
     },
     "Tachira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "incendio": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2
@@ -199,7 +200,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 6,
-    "sin_clasificar": 57
+    "sin_clasificar": 58
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -231,7 +232,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 10
     },
     "vialidad": {
       "2026-08": 2

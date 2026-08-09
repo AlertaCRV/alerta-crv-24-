@@ -96,5 +96,12 @@
     "fecha_deteccion": "2026-08-08T23:16:00.673887+00:00",
     "fecha_evento_temprana": "2026-08-08T21:57:44+00:00",
     "municipio": null
+  },
+  "incendio::Tachira::2026-08-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-09T04:06:35.637030+00:00",
+    "fecha_evento_temprana": "2026-08-08T18:39:00+00:00",
+    "municipio": "Rafael Urdaneta"
   }
 }
