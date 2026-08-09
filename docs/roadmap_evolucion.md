@@ -4892,3 +4892,146 @@ muertas en informes (2 ya conocidas del 02-08-2026 + 2 nuevas de la
 retracción del hallazgo 3 de esta sesión, El Llanito/Petare + 2 más ya
 conocidas). `GROQ_API_KEY` no disponible en este entorno para regenerar
 los informes narrativos con las fuentes retractadas.
+
+---
+
+## Auditoría diaria automática (09-08-2026): "municipio/parroquia ADJETIVO Nombre" rompía tanto la detección de municipio como, en un caso real, la del propio estado
+
+Auditoría de rutina de las alertas publicadas/actualizadas desde la
+auditoría del 08-08-2026 (`orden_publico::Sucre::2026-08-08`,
+`incendio::Tachira::2026-08-08`; las demás ya publicadas en ese momento --
+`incendio::Miranda::2026-08-08`, las 3 fuentes `PASADO_POR_FALLA_TECNICA`
+de Merida/Bolivar/Distrito Capital -- ya habían sido revisadas y
+documentadas en esa sesión, ver "Nota"/"Pendiente de discutir" ahí). Se
+encontró y corrigió 1 causa raíz, con 2 alertas corregidas (1 con dato
+retroactivo ajustado, 1 retractada por completo).
+
+### 1. Un adjetivo intercalado entre "municipio"/"parroquia" y el nombre propio ("municipio fronterizo Bolívar") no calzaba con ningún nombre conocido -- y, peor, tampoco se reconocía como mención SUBESTATAL, dejando que "Bolívar" contara como evidencia del ESTADO Bolívar
+
+`incendio::Tachira::2026-08-08` (Diario La Nacion Tachira, incendio en
+una vivienda de San Antonio del Táchira) se publicó con
+`municipio: "Rafael Urdaneta"`, pese a que el propio artículo dice
+explícitamente "en el municipio fronterizo Bolívar" -- "Rafael Urdaneta"
+solo aparece como nombre de un BARRIO ("en el barrio Rafael Urdaneta"),
+que por coincidencia también es un municipio real de Táchira (distinto,
+al otro extremo del estado). Al investigar la causa raíz se encontró un
+caso más grave del mismo patrón, ya publicado desde el 29-07-2026:
+`infraestructura_electrica::Bolivar::2026-07-29` (Diario La Nacion
+Tachira, "Doce horas sin luz viviendas de El Palotal") -- un artículo que
+JAMÁS nombra ningún estado explícitamente (ni Táchira ni Bolívar como
+estado, solo "el municipio fronterizo Bolívar" y la parroquia El
+Palotal), llevaba 11 días publicado como una alerta del estado Bolívar,
+a más de 700 km de distancia real del hecho (El Palotal está en Táchira,
+frontera con Colombia).
+
+**Causa raíz (dos síntomas del mismo problema)**:
+
+1. `_MUNICIPIO_RE`/`_PARROQUIA_RE` (`scripts/classify.py`) capturan todo
+   el texto entre "municipio"/"parroquia" y la puntuación siguiente --
+   con `re.IGNORECASE` aplicado a todo el patrón, esto incluye
+   adjetivos en minúscula como "fronterizo" ("municipio fronterizo
+   Bolívar" capturaba literalmente "fronterizo Bolívar", que no
+   coincidía con ningún municipio conocido de Táchira). El sistema caía
+   entonces al fallback de búsqueda libre (`_buscar_municipio_directo`),
+   que sí encontraba "Rafael Urdaneta" mencionado en el texto (como
+   nombre de un barrio) y lo tomaba como el único municipio, en vez del
+   municipio Bolívar que el texto nombra explícitamente.
+2. `_es_mencion_subestatal()` (usada por `_posiciones_de_estados()` y
+   `_ventana_cerca()` para excluir menciones tipo "municipio Sucre" como
+   evidencia del estado homónimo "Sucre") solo miraba la palabra
+   INMEDIATAMENTE anterior. Con "municipio fronterizo Bolívar", esa
+   palabra es "fronterizo", no "municipio" -- la exclusión no se activaba,
+   y "Bolívar" se contaba como una mención normal del ESTADO Bolívar.
+
+**Corrección**:
+
+1. Nueva función `_resolver_con_posible_adjetivo()` (`scripts/
+   classify.py`): si el candidato capturado por `_MUNICIPIO_RE`/
+   `_PARROQUIA_RE` no coincide exacto con ningún nombre conocido, prueba
+   si el nombre real es el SUFIJO del candidato (cubre cualquier cantidad
+   de palabras intercaladas, no solo un adjetivo) -- solo se acepta si
+   exactamente un nombre conocido del estado/municipio calza como sufijo;
+   si hay más de uno, no se adivina. Reemplaza el `.get(candidato)` directo
+   tanto para municipio como para parroquia en `detectar_municipio_
+   parroquia()`.
+2. `_es_mencion_subestatal()` ahora también reconoce el calificador dos
+   posiciones atrás (`tokens[pos-2]`), además de la inmediatamente
+   anterior -- cubre un único adjetivo intercalado ("municipio fronterizo
+   X", "parroquia rural X", etc.).
+
+Se confirmó contra las 71 fuentes de `data/historico_fuentes_texto.jsonl`
+que "municipio fronterizo Bolívar" (Diario La Nacion Tachira) es la ÚNICA
+ocurrencia real en todo el corpus de un adjetivo intercalado entre
+"municipio"/"parroquia" y un nombre propio -- las 2 fuentes que lo usan
+son, precisamente, las 2 corregidas aquí.
+
+**Corrección retroactiva**:
+
+- `incendio::Tachira::2026-08-08`: `municipio` corregido de "Rafael
+  Urdaneta" a "Bolívar" en `docs/data/noticias.json` (`render.
+  redactar_noticia()` para regenerar título/texto), `data/
+  historico_eventos.jsonl` y `data/publicados.json`. El estado (Tachira),
+  tipo y severidad no cambian -- el artículo sí nombra "Táchira"
+  explícitamente ("Cuerpo de Bomberos de San Antonio del Táchira"), así
+  que la detección de estado no estaba afectada aquí, solo el municipio.
+- `infraestructura_electrica::Bolivar::2026-07-29`: se eliminó por
+  completo de `docs/data/noticias.json` y `data/historico_eventos.jsonl`
+  -- tras el fix, el texto de su única fuente ya no produce NINGUNA
+  ubicación (ni estado ni municipio), porque nunca nombra un estado
+  venezolano explícitamente; igual que otros casos ya documentados (ver
+  hallazgos 2 y 3 del 08-08-2026), no se reasignó a Táchira por
+  inferencia -- el sistema solo publica sobre evidencia textual explícita,
+  nunca por el nombre del medio ("Diario La Nacion (Tachira)") ni por
+  conocimiento externo de qué municipio pertenece a qué estado.
+  `data/historico_fuentes_texto.jsonl` conservaba esta misma fuente
+  MEZCLADA, en una instantánea anterior (15:31:32 UTC del 29-07), con la
+  de un segundo evento real y no relacionado (El Pitazo, hombres armados
+  disolviendo una protesta por apagones en Guasipati, sur del estado
+  Bolívar -- ese sí correctamente ubicado) -- se editó esa línea para
+  quitar solo la fuente de Diario La Nacion Tachira, conservando la de El
+  Pitazo (ajustando `num_fuentes` a 1, `score` a 0.75 y `confirmado` a
+  `false` en `data/historico_eventos.jsonl`, según su propio peso en
+  `config/sources.yaml`) en vez de eliminar la línea completa, para no
+  borrar de paso el único rastro histórico de una fuente legítima y sin
+  relación con este bug. `data/publicados.json` no tenía ninguna entrada
+  para el evento de 2026-07-29 (ya fuera de su ventana reciente de
+  deduplicación). Se regeneró `docs/data/estadisticas.json`.
+
+**Nota**: la retracción de `infraestructura_electrica::Bolivar::2026-07-29`
+deja 2 fuentes muertas nuevas en `docs/data/informes/2026-07_general.json`
+y `2026-07_infraestructura_electrica.json` (Diario La Nacion Tachira, la
+fuente retractada). Mismo caso que sesiones anteriores: `GROQ_API_KEY` no
+disponible en este entorno; `scripts/build_informes.py` regenerará esos
+informes en la próxima corrida de producción. Confirmado con `scripts/
+detectar_inconsistencias.py` (4 fuentes muertas en 3 informes: 2 ya
+conocidas del 02-08-2026 + las 2 nuevas de esta sesión).
+
+### Pruebas
+
+3 casos nuevos en `tests/casos_clasificacion.jsonl`: el incendio real de
+San Antonio del Táchira ("municipio fronterizo Bolívar" -> municipio
+Bolívar, no Rafael Urdaneta), el caso real de El Palotal (mismo texto
+patrón, sin ningún estado nombrado -> sin ubicación, y explícitamente
+`no_debe_aparecer_ubicacion: ["Bolivar"]`), y un control sintético para
+el mismo fix aplicado a PARROQUIA ("parroquia rural Palotal, municipio
+Bolivar del estado Tachira" -> parroquia Palotal, municipio Bolívar).
+Regresión completa contra las 70 fuentes vigentes de `data/
+historico_fuentes_texto.jsonl` (ya con la fuente retractada eliminada):
+sin cambios inesperados -- la única fuente afectada por el fix es,
+precisamente, la corregida en este hallazgo. `python3 -m pytest tests/`
+→ 214 passed, 5 xfailed (conocidos, sin relación), 1 xpassed (conocido,
+sin efecto real). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados que la sesión anterior (sin relación con este hallazgo), 4
+fuentes muertas en informes (2 ya conocidas del 02-08-2026 + 2 nuevas de
+esta sesión, ver arriba).
+
+### Revisado sin cambios
+
+`orden_publico::Sucre::2026-08-08` (La Patilla, concentración de Vente
+Venezuela en Sucre por precariedad de servicios públicos): severidad y
+ubicación consistentes con el texto de la única fuente, sin indicios de
+error. `incendio::Miranda::2026-08-08` y las 3 fuentes `PASADO_POR_
+FALLA_TECNICA` de Merida/Bolivar/Distrito Capital ya habían sido
+revisadas en la auditoría del 08-08-2026 (ver esa entrada) -- sin cambios
+desde entonces.
