@@ -2,7 +2,7 @@
   {
     "tipo": "incendio",
     "ubicacion": "Tachira",
-    "municipio": "Rafael Urdaneta",
+    "municipio": "Bolívar",
     "parroquia": null,
     "severidad": "sin_clasificar",
     "score": 0.65,
@@ -22,8 +22,8 @@
     "fecha_deteccion": "2026-08-09T04:06:35.637030+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Tachira::2026-08-08",
-    "titulo": "Incendio en Municipio Rafael Urdaneta, Tachira",
-    "texto": "📌 Incendio en Municipio Rafael Urdaneta, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Rafael Urdaneta, Tachira\n🕒 Hecho reportado: 08/08/2026, 2:39 p.m.\n🔎 Detectado por el sistema: 09/08/2026, 12:06 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/sofocan-incendio-en-vivienda-de-san-antonio-2/"
+    "titulo": "Incendio en Municipio Bolívar, Tachira",
+    "texto": "📌 Incendio en Municipio Bolívar, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bolívar, Tachira\n🕒 Hecho reportado: 08/08/2026, 2:39 p.m.\n🔎 Detectado por el sistema: 09/08/2026, 12:06 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/sofocan-incendio-en-vivienda-de-san-antonio-2/"
   },
   {
     "tipo": "orden_publico",
@@ -1193,32 +1193,6 @@
     "clave_dedup": "infraestructura_electrica::Barinas::2026-07-30",
     "titulo": "Falla eléctrica en Barinas",
     "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 29/07/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 4:00 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/?p=94961"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/",
-        "fecha": "2026-07-29T13:17:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T13:17:11+00:00",
-    "fecha_evento_temprana": "2026-07-29T13:17:11+00:00",
-    "fecha_deteccion": "2026-07-29T20:18:26.152626+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Bolivar::2026-07-29",
-    "titulo": "Falla eléctrica en Bolivar",
-    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/07/2026, 9:17 a.m.\n🔎 Detectado por el sistema: 29/07/2026, 4:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/doce-horas-sin-luz-viviendas-de-el-palotal-por-falla-electrica/"
   },
   {
     "tipo": "crisis_migratoria",

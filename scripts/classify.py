@@ -681,8 +681,17 @@ def _es_mencion_subestatal(tokens, pos):
     p.ej. 'municipio Sucre'. Varios municipios/parroquias de Venezuela
     comparten nombre con un estado distinto (Sucre, Miranda, Bolivar...),
     asi que esa mencion no debe contarse como evidencia de que el estado
-    homonimo es la ubicacion del evento."""
-    return pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES
+    homonimo es la ubicacion del evento.
+
+    Tambien cuenta 'municipio fronterizo Bolivar'/'parroquia foranea X' --
+    un unico adjetivo intercalado entre el calificador y el nombre propio,
+    patron real en cobertura de zonas fronterizas (ver
+    docs/roadmap_evolucion.md, auditoria 09-08-2026: 'municipio fronterizo
+    Bolivar', Diario La Nacion Tachira, generaba evidencia falsa del
+    estado Bolivar en un articulo que nunca menciona ese estado)."""
+    if pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES:
+        return True
+    return pos > 1 and tokens[pos - 2] in _CALIFICADORES_SUBESTATALES
 
 
 def _es_mencion_direccional(tokens, pos, candidato_tokens):
@@ -987,6 +996,36 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
     return None, None
 
 
+def _resolver_con_posible_adjetivo(candidato, variantes_por_nombre):
+    """Resuelve `candidato` (ya normalizado, capturado por _MUNICIPIO_RE o
+    _PARROQUIA_RE) contra {nombre_normalizado: original}. Prueba primero
+    una coincidencia exacta y, si falla, si el nombre real conocido es el
+    SUFIJO del candidato -- cubre un adjetivo intercalado entre el
+    calificador y el nombre propio (p.ej. 'municipio fronterizo Bolivar'
+    captura 'fronterizo bolivar', que termina en 'bolivar', el nombre
+    real). Solo se acepta si exactamente una variante conocida es sufijo
+    -- si mas de una calza (ambiguo), no se adivina.
+
+    Caso real (09-08-2026): 'municipio fronterizo Bolivar' (Diario La
+    Nacion Tachira, San Antonio del Tachira) no calzaba con ningun
+    municipio de Tachira porque el candidato capturado ('fronterizo
+    bolivar') no coincidia exacto con 'bolivar' -- el sistema caia al
+    fallback de busqueda libre, que encontraba 'Rafael Urdaneta' (un
+    barrio homonimo de OTRO municipio real de Tachira) como unico
+    municipio mencionado, en vez del municipio Bolivar que el texto
+    nombra explicitamente."""
+    directo = variantes_por_nombre.get(candidato)
+    if directo is not None:
+        return directo
+    coincidencias = {
+        original for variante, original in variantes_por_nombre.items()
+        if variante and candidato.endswith(" " + variante)
+    }
+    if len(coincidencias) == 1:
+        return next(iter(coincidencias))
+    return None
+
+
 def detectar_municipio_parroquia(texto, estado):
     if not estado:
         return None, None
@@ -1002,7 +1041,7 @@ def detectar_municipio_parroquia(texto, estado):
     m = _MUNICIPIO_RE.search(texto)
     if m:
         candidato = _normalizar(m.group(1).strip())
-        municipio_encontrado = _municipios_por_variante(detalle).get(candidato)
+        municipio_encontrado = _resolver_con_posible_adjetivo(candidato, _municipios_por_variante(detalle))
 
     if municipio_encontrado is None:
         municipio_encontrado, nombres_municipio_ambiguos = _buscar_municipio_directo(
@@ -1017,7 +1056,9 @@ def detectar_municipio_parroquia(texto, estado):
             # al municipio ya determinado -- si no, se descarta en vez de
             # asumir que el municipio esta mal (evita el caso real de
             # combinar municipio y parroquia de fuentes distintas).
-            parroquia_encontrada = _parroquias_de(detalle, municipio_encontrado).get(candidato)
+            parroquia_encontrada = _resolver_con_posible_adjetivo(
+                candidato, _parroquias_de(detalle, municipio_encontrado)
+            )
         else:
             ocurrencias = _indice_parroquias_estado(detalle).get(candidato, [])
             if len(ocurrencias) == 1:
