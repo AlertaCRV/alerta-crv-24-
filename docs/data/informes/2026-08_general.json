@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-08T04:20:55.341864+00:00",
-  "actualizado_hasta": "2026-08-08T04:20:42.308816+00:00",
-  "total_eventos": 35,
+  "generado": "2026-08-09T04:07:04.503977+00:00",
+  "actualizado_hasta": "2026-08-09T04:06:35.637030+00:00",
+  "total_eventos": 42,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 29,
-    "actual": 35
+    "actual": 42
   },
-  "narrativa": "En el período de 2026-08, se registraron 35 eventos de emergencia en Venezuela, lo que representa un aumento en comparación con el período anterior (2026-07), que tuvo 29 eventos (Notiapure). Entre los eventos más destacados se encuentra el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en Yaracuy, que causaron daños estructurales en el puente La Galletera y afectaron a cuatro municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, lo que resultó en la muerte de una persona y pérdidas materiales en el sector agropecuario, como se informó en El Impulso (Lara). Un incendio en Miranda dejó dos personas lesionadas en el municipio Baruta, específicamente en el edificio La Joya, según La Prensa de Monagas. También se registraron inundaciones en Apure, donde el alcalde de Páez lideró trabajos de mitigación en el sector Cachamero - El Ripial, tras la crecida del río Arauca, como se mencionó en Notiapure. Un incendio en Yaracuy tuvo severidad crítica, según La Prensa de Lara. Es importante destacar que estos eventos tuvieron daños materiales, heridos o víctimas fatales, y fueron reportados por fuentes como Noticia al Dia (Zulia), El Impulso (Lara), La Prensa de Monagas, Notiapure, La Prensa de Lara y Turimiquire (Sucre).",
+  "narrativa": "En el período de 2026-08, se registraron un total de 42 eventos, lo que supone un aumento en comparación con el período anterior, 2026-07, que tuvo 29 eventos. Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en Yaracuy, reportadas por El Impulso (Lara) y Turimiquire (Sucre), que causaron daños estructurales y pérdidas materiales, incluyendo la muerte de una persona. Un incendio en Miranda, mencionado por La Prensa de Monagas, dejó dos personas lesionadas. También se registraron inundaciones en Apure, informadas por Notiapure, y un incendio en Yaracuy, reportado por La Prensa de Lara. Otros eventos notables incluyeron un incendio forestal en Carache, en el estado Trujillo, y un incendio en una vivienda en San Antonio del Táchira, según Diario La Nacion (Tachira) y Ciudad Trujillo. Es importante destacar que cada uno de estos eventos tuvo un impacto significativo en las comunidades afectadas, y es fundamental seguir monitoreando la situación para proporcionar ayuda y apoyo a quienes lo necesitan.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -46,8 +46,16 @@
       "link": "https://ciudadtrujillo.com/?p=53983"
     },
     {
-      "nombre": "El Carabobeno",
-      "link": "https://www.el-carabobeno.com/incendio-de-gran-magnitud-afecta-varios-galpones-en-la-zona-industrial-de-el-llanito/"
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/sofocan-incendio-en-vivienda-de-san-antonio-2/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - Sucesos",
+      "link": "https://efectococuyo.com/sucesos/incendio-en-el-llanito-deja-danos-materiales-pero-sin-victimas-que-lamentar/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -72,6 +80,10 @@
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/voraz-incendio-se-registra-en-tres-galpones-en-petare/"
     },
     {
       "nombre": "El Pitazo",
@@ -115,7 +127,11 @@
     },
     {
       "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/07/videos-alarma-en-el-llanito-por-enorme-incendio-en-una-fabrica/"
+      "link": "https://lapatilla.com/2026/08/08/apagones-mantienen-a-merida-operando-a-media-maquina-jovenes-protestaron-en-la-av-las-americas/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -136,30 +152,6 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/06/dos-fallecidos-y-tres-heridos-dejo-choque-entre-un-mustang-y-un-vehiculo-de-transporte-publico-en-el-tigre/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
     }
   ]
 }
