@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-08T04:21:03.921661+00:00",
-  "actualizado_hasta": "2026-08-05T06:17:53.087677+00:00",
-  "total_eventos": 7,
+  "generado": "2026-08-09T14:19:47.238300+00:00",
+  "actualizado_hasta": "2026-08-08T22:06:52.249467+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 6,
-    "actual": 7
+    "actual": 10
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 7 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). En el estado Zulia, los cortes de luz ponen en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). En Carabobo, habitantes de los municipios periféricos a la capital zuliana sufren hasta dos cortes por día, lo que llevó a protestas contra los constantes apagones en la entidad (El Periodico de Monagas). En Caracas, la noche del 1 de agosto, residentes de la capital venezolana reportaron apagones en varias zonas, como El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio, Parque Carabobo, avenida Bolívar (El Pitazo). Además, se reportaron fallas eléctricas en otros sectores de Caracas, como la parroquia Altagracia, la avenida Panteón, Santa Rosalía y La Candelaria (Noticias de Aqui). En el estado Barinas, un grupo de personas protestó en Corpoelec exigiendo soluciones a los insoportables apagones (La Patilla). En Maturín, residentes de diversas comunidades de la parroquia Alto de Los Godos, protestaron con cacerolas en mano, para exigir el restablecimiento del servicio eléctrico, tras acumular más de 10 horas continuas sin suministro de energía (Maturin News). En Aragua y Carabobo, comunidades realizaron cacerolazos y protestas durante la noche del lunes, por apagones de hasta ocho horas, mientras exigen respuestas a la crisis eléctrica en la región central (Primicia).",
+  "narrativa": "Durante el período de agosto de 2026, se registraron 10 eventos relacionados con fallas eléctricas en Venezuela, lo que representa un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). En el estado Zulia, los cortes de luz ponen en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). En Carabobo, habitantes protestaron contra los constantes apagones, exigiendo respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Caracas, se reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio, Parque Carabobo, avenida Bolívar (El Pitazo). También se reportaron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas contra los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes protestaron por tener más de 10 horas sin energía eléctrica, trancando la avenida Libertador (Maturin News). En el Callao, estado Bolívar, se realizó un paro cívico para exigir soluciones ante la crisis eléctrica (Turimiquire). Además, se denunció la discriminación eléctrica en el interior de Venezuela, donde los cortes diarios van de 4 a 12 horas (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -28,6 +28,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/08/apagones-mantienen-a-merida-operando-a-media-maquina-jovenes-protestaron-en-la-av-las-americas/"
     },
     {
       "nombre": "Maturin News",
@@ -48,6 +52,18 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/08/alexis-paparoni-denuncio-la-discriminacion-electrica-que-hay-en-el-interior-de-venezuela/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/08/las-empresas-basicas-de-guayana-seguiran-en-el-eterno-sueno-de-la-improductividad/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/08/caracas-no-se-escapa-a-la-crisis-de-energia-electrica-dijo-jose-gregorio-ochoa-chegoyo/"
     }
   ]
 }
