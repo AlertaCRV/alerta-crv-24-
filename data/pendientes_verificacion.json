@@ -110,5 +110,21 @@
   "inundacion::Apure::2026-08-08": {
     "intentos": 1,
     "ultima_vez": "2026-08-08T23:21:42.347406+00:00"
+  },
+  "salud_publica::Apure::2026-08-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-09T06:33:51.123634+00:00"
+  },
+  "inundacion::Apure::2026-08-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-09T06:34:15.249392+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-09T06:34:39.384179+00:00"
+  },
+  "incendio::Miranda::2026-08-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-09T06:35:03.509355+00:00"
   }
 }
