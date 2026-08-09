@@ -1,11 +1,4 @@
 {
-  "incendio::Trujillo::2026-08-06": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-06T08:05:31.297170+00:00",
-    "fecha_evento_temprana": "2026-08-06T00:33:25+00:00",
-    "municipio": "Carache"
-  },
   "orden_publico::Carabobo::2026-08-06": {
     "severidad": "sin_clasificar",
     "confirmado": true,
