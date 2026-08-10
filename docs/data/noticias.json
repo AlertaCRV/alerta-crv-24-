@@ -54,34 +54,6 @@
   {
     "tipo": "sismo",
     "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/gobernador-caldera-el-zulia-sin-afectaciones-por-sismo-este-10agos/",
-        "fecha": "2026-08-10T15:03:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-10T15:03:26+00:00",
-    "fecha_evento_temprana": "2026-08-10T15:03:26+00:00",
-    "fecha_deteccion": "2026-08-10T17:40:43.272244+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "magnitud": 6.6,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::Zulia::2026-08-10::mag6.6",
-    "titulo": "Sismo en Zulia",
-    "texto": "📌 Sismo en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 10/08/2026, 11:03 a.m.\n🔎 Detectado por el sistema: 10/08/2026, 1:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/gobernador-caldera-el-zulia-sin-afectaciones-por-sismo-este-10agos/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Zulia",
     "municipio": "Maracaibo",
     "parroquia": null,
     "severidad": "medio",
