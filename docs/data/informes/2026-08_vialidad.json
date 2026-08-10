@@ -3,16 +3,20 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-08-09T09:13:57.751886+00:00",
-  "actualizado_hasta": "2026-08-07T01:46:56.592218+00:00",
-  "total_eventos": 2,
+  "generado": "2026-08-10T10:03:29.464258+00:00",
+  "actualizado_hasta": "2026-08-10T05:08:59.610586+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registraron 2 incidentes viales, lo que contrasta con el período anterior (2026-07) en el que no se reportaron eventos de esta naturaleza. Uno de los incidentes ocurrió en la autopista Valle-Coche, en el Distrito Capital, donde una colisión múltiple involucró a un autobús de transporte público y dos vehículos particulares, resultando en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Este incidente vial en Distrito Capital tuvo una severidad crítica (Noticia al Dia (Zulia)). Otro incidente grave se reportó en El Tigre, estado Anzoátegui, donde un choque entre un Mustang y un vehículo de transporte público causó la muerte de dos personas y dejó tres heridos, como se informó en Noticias de Aqui (Anzoategui). Estos eventos destacan la importancia de la seguridad vial en el país.",
+  "narrativa": "En el período de 2026-08, se registraron 3 incidentes viales en Venezuela, lo que contrasta con el período anterior (2026-07) en el que no se reportaron eventos de esta naturaleza. Uno de los incidentes ocurrió en el Distrito Capital, donde se produjo una colisión múltiple en la autopista Valle-Coche, resultando en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Otro incidente grave se registró en Barinas, donde una colisión múltiple en la avenida Nueva Barinas causó la muerte de un motorizado y lesionó a al menos dos personas, como lo reportó La Noticia de Barinas. Además, un incidente en El Tigre, estado Anzoátegui, aunque no estaba en la lista de eventos críticos mencionados explícitamente, resultó en dos fallecidos y tres heridos tras una colisión entre un vehículo particular y uno de transporte público, según Noticias de Aqui (Anzoategui). Estos eventos destacan la importancia de la seguridad vial en el país.",
   "fuentes": [
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/tres-autos-y-la-motocicletafatalidad-no-se-detiene-muere-motorizadoen-colision-multiple-en-la-av-nueva-barinas/"
+    },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
