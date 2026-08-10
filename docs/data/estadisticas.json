@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-10T05:09:10.826136+00:00",
+  "actualizado": "2026-08-10T14:35:01.841328+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-09T23:30:08+00:00"
+    "hasta": "2026-08-10T14:01:31+00:00"
   },
-  "total_eventos": 72,
+  "total_eventos": 78,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
-    "infraestructura_electrica": 15,
+    "infraestructura_electrica": 17,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 13,
@@ -16,20 +16,20 @@
     "crisis_migratoria": 4,
     "incendio": 14,
     "vialidad": 3,
-    "sismo": 1,
+    "sismo": 5,
     "escasez_combustible": 1,
     "sequia": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 10,
+      "total": 12,
       "confirmados": 2
     },
     {
       "estado": "Zulia",
-      "total": 7,
-      "confirmados": 3
+      "total": 8,
+      "confirmados": 4
     },
     {
       "estado": "Barinas",
@@ -42,14 +42,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Miranda",
+      "total": 7,
+      "confirmados": 2
+    },
+    {
       "estado": "Lara",
       "total": 5,
       "confirmados": 1
-    },
-    {
-      "estado": "Miranda",
-      "total": 5,
-      "confirmados": 2
     },
     {
       "estado": "Yaracuy",
@@ -72,6 +72,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 3,
       "confirmados": 0
@@ -83,11 +88,6 @@
     },
     {
       "estado": "Apure",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
       "total": 2,
       "confirmados": 0
     },
@@ -129,7 +129,8 @@
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "sismo": 1
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -137,7 +138,8 @@
       "orden_publico": 3,
       "incendio": 1,
       "vialidad": 1,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 4,
+      "sismo": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -170,13 +172,16 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "incendio": 1
+      "incendio": 1,
+      "sismo": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2
     },
     "Miranda": {
-      "incendio": 5
+      "incendio": 5,
+      "sismo": 1,
+      "infraestructura_electrica": 1
     },
     "Nueva Esparta": {
       "incendio": 1,
@@ -201,7 +206,8 @@
   "por_severidad": {
     "alto": 7,
     "critico": 7,
-    "sin_clasificar": 58
+    "sin_clasificar": 63,
+    "medio": 1
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -213,7 +219,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 10
+      "2026-08": 12
     },
     "deslizamiento": {
       "2026-07": 3
@@ -239,7 +245,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 1
+      "2026-08": 5
     },
     "escasez_combustible": {
       "2026-08": 1

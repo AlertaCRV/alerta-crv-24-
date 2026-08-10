@@ -89,5 +89,47 @@
     "fecha_deteccion": "2026-08-10T05:09:06.302478+00:00",
     "fecha_evento_temprana": "2026-08-09T23:30:08+00:00",
     "municipio": null
+  },
+  "sismo::Distrito Capital::2026-08-10::mag7.4": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T14:34:31.362375+00:00",
+    "fecha_evento_temprana": "2026-08-10T13:00:35+00:00",
+    "municipio": null
+  },
+  "sismo::Tachira::2026-08-10::mag7.4": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T14:34:34.726125+00:00",
+    "fecha_evento_temprana": "2026-08-10T13:00:35+00:00",
+    "municipio": null
+  },
+  "sismo::Zulia::2026-08-10::mag7.4": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-10T14:34:38.174578+00:00",
+    "fecha_evento_temprana": "2026-08-10T13:30:20+00:00",
+    "municipio": "Maracaibo"
+  },
+  "sismo::Miranda::2026-08-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T14:34:41.443711+00:00",
+    "fecha_evento_temprana": "2026-08-10T13:55:40+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Miranda::2026-08-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T14:34:52.156123+00:00",
+    "fecha_evento_temprana": "2026-08-10T13:48:25+00:00",
+    "municipio": "Los Salías"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T14:34:55.569694+00:00",
+    "fecha_evento_temprana": "2026-08-10T14:01:31+00:00",
+    "municipio": null
   }
 }
