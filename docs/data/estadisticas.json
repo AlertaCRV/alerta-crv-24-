@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-10T17:41:04.954421+00:00",
+  "actualizado": "2026-08-10T20:08:54.433999+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-10T17:32:03+00:00"
+    "hasta": "2026-08-10T19:25:09+00:00"
   },
-  "total_eventos": 72,
+  "total_eventos": 73,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 13,
+    "inundacion": 14,
     "infraestructura_electrica": 17,
     "deslizamiento": 3,
     "colapso_estructural": 1,
@@ -97,12 +97,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Tachira",
-      "total": 1,
+      "estado": "Aragua",
+      "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Tachira",
       "total": 1,
       "confirmados": 0
     },
@@ -193,7 +193,8 @@
       "incendio": 1
     },
     "Aragua": {
-      "orden_publico": 1
+      "orden_publico": 1,
+      "inundacion": 1
     },
     "Merida": {
       "infraestructura_electrica": 1
@@ -202,7 +203,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 7,
-    "sin_clasificar": 57,
+    "sin_clasificar": 58,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -211,7 +212,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 6
+      "2026-08": 7
     },
     "infraestructura_electrica": {
       "2026-07": 5,
