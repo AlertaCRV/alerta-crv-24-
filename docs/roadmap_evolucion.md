@@ -4895,6 +4895,227 @@ los informes narrativos con las fuentes retractadas.
 
 ---
 
+## A pedido del usuario (10-08-2026): sismo duplicado en 4 estados, incendio sin víctimas que no debía alertar, y un artículo-tally de incendios forestales
+
+El usuario reportó 3 problemas concretos ya publicados y pidió diagnosticar
+la causa raíz de cada uno, corregir de forma que no se repitan, y eliminar
+las alertas afectadas. Se encontraron y corrigieron 3 causas raíz
+independientes, con 6 alertas retractadas (5 por completo, 1 fusionada en
+la mejor de sus 4 duplicados).
+
+### 1. Un sismo de magnitud 7.4 en Colombia, sentido en Venezuela, se publicó como 4 alertas separadas (Distrito Capital, Táchira, Zulia, Miranda) en la misma corrida
+
+`sismo::Distrito Capital::2026-08-10::mag7.4`, `sismo::Tachira::2026-08-10::
+mag7.4`, `sismo::Zulia::2026-08-10::mag7.4` y `sismo::Miranda::2026-08-10`
+se publicaron a los pocos segundos uno del otro (14:34:31 -- 14:34:41 UTC),
+todos sobre el mismo sismo real (epicentro San José del Palmar, Chocó,
+Colombia, magnitud actualizada de 6.6/6.7 a 7.4).
+
+**Causa raíz 1 (la principal)**: `state.py` ya tiene un mecanismo dedicado
+para este caso exacto -- `_mismo_sismo_ya_publicado()` descarta un sismo
+si otro con la misma magnitud (o mención cruzada de estados) ya está en
+`publicados`. Pero `filtrar_nuevos(eventos, publicados)` nunca escribía en
+`publicados` durante su propio bucle -- esa escritura ocurría después, en
+`marcar_publicados()`, llamada por separado desde `main.py` una vez
+terminado el filtrado completo. Cuando los 4 estados del mismo sismo
+llegan juntos en la misma corrida (el caso normal: un solo sismo grande se
+detecta a la vez en varias fuentes/estados), cada uno se comparaba solo
+contra el estado YA PERSISTIDO de corridas anteriores -- nunca contra los
+otros 3 eventos del mismo sismo detectados en la corrida actual -- así que
+ninguno se reconocía como duplicado del otro.
+
+**Corrección**: `filtrar_nuevos()` (`scripts/state.py`) ahora registra
+cada evento aceptado en `publicados` (se extrajo `_entrada_publicados()`,
+reutilizada también por `marcar_publicados()`) inmediatamente dentro del
+mismo bucle, no solo al final -- el segundo/tercer estado del mismo sismo,
+procesado a continuación en la misma corrida, ya lo encuentra y se
+descarta como duplicado. Efecto secundario beneficioso: esto también
+corrige el mismo problema para cualquier otro tipo si dos fuentes del
+mismo evento llegaran como items separados sin fusionarse en
+`verify.agrupar_y_verificar()` (no solo sismo).
+
+**Causa raíz 2 (por qué Miranda no se enganchaba ni con la magnitud ni con
+la mención cruzada)**: la fuente de Miranda (La Prensa de Monagas,
+"Actualizan magnitud del sismo en Colombia a 7.4...") tiene el texto
+"magnitud del sismo en Colombia a 7.4" -- `extraer_magnitud()`
+(`scripts/verify.py`) exige "magnitud" seguido DIRECTAMENTE del número
+(`magnitud\s+(\d+[.,]\d+)`), así que no encontró ningún valor (a
+diferencia de "Magnitud 7.4, profundidad 96 km" en el texto de El Pitazo,
+que sí calza). Sin magnitud extraída, y sin que el texto mencionara
+explícitamente otro estado venezolano, `_mismo_sismo_ya_publicado()`
+tampoco podía correlacionarlo por la vía de mención cruzada. Investigando
+esto se encontraron dos bugs más, no relacionados entre sí, que hacían que
+esta fuente pareciera un sismo real en Miranda:
+
+- **"tramo Miranda" (segmento vial de la Autopista Regional del Centro,
+  ARC) se contaba como evidencia del ESTADO Miranda.** El texto de esta
+  fuente trae pegada, sin relación con el sismo, una frase de clima ajena
+  ("las intensas lluvias también causaron el colapso de árboles... en el
+  tramo Miranda de la Autopista Regional del Centro (ARC)") -- la misma
+  frase aparece, de forma legítima, en un artículo real sobre una tormenta
+  en Distrito Capital/Miranda (Diario El Tiempo Trujillo), lo que sugiere
+  que es contenido sindicado/repetido entre medios ese día. Se agregó
+  `"tramo miranda"` a `LISTA_NEGRA_POR_ESTADO["Miranda"]`
+  (`scripts/classify.py`) -- se confirmó que el artículo legítimo de la
+  tormenta no depende de esta frase para su propia ubicación (tiene
+  evidencia independiente: "Los Teques, estado Miranda", "municipio Los
+  Salias").
+- **"colapso de" (sin objeto) contaba como evidencia FUERTE de daño
+  sísmico.** Con "tramo Miranda" ya excluido como ubicación, la misma
+  frase ("colapso de árboles") también hacía que el filtro determinista
+  `_sismo_sin_evidencia_fuerte()` (`scripts/verify_ai.py`) tratara este
+  sismo como si tuviera evidencia fuerte de daño real, pese a que "colapso
+  de árboles" por una tormenta no tiene ninguna relación con un sismo. Se
+  reemplazó la entrada genérica `"colapso de"` en `_EVIDENCIA_DANO_SISMO`
+  por variantes específicas con objeto (`"colapso de vivienda(s)"`,
+  `"colapso de edificio(s)"`, `"colapso de estructura(s)"`) -- se verificó
+  contra el corpus completo que la versión genérica solo tenía, además de
+  este caso, coincidencias igualmente espurias ("colapso de algunos
+  sistemas" de drenaje) y ningún caso real de daño sísmico que dependiera
+  de ella.
+
+**Corrección retroactiva**: se conservó `sismo::Zulia::2026-08-10::mag7.4`
+(la versión más completa: 2 fuentes independientes, confirmado, severidad
+media, con detalle real del impacto local en Maracaibo) y se eliminaron
+por completo las otras 3 -- `sismo::Distrito Capital::2026-08-10::mag7.4`
+y `sismo::Tachira::2026-08-10::mag7.4` (mismo duplicado exacto, misma
+única fuente de El Pitazo, sin detalle local propio más allá de "se sintió
+en Venezuela") y `sismo::Miranda::2026-08-10` (sin ubicación real tras el
+fix de "tramo Miranda") -- de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 2. Un incendio de tres galpones en Petare, sin heridos ni fallecidos, no debía generar una alerta -- no existía ningún criterio de relevancia para incendio (a diferencia de vialidad, que sí lo tiene)
+
+`incendio::Miranda::2026-08-08` ("Voraz incendio se registra en tres
+galpones en Petare", El Periodico de Monagas) nunca menciona heridos ni
+fallecidos en ninguna de sus 3 actualizaciones a lo largo de la noche; una
+fuente distinta del mismo hecho real (Efecto Cocuyo, no incluida en el
+evento publicado) lo confirma explícitamente: "Incendio en El Llanito deja
+daños materiales pero **sin víctimas que lamentar**". El usuario señaló
+que un incendio sin fallecidos no debería constituir una alerta -- al
+revisar el código se encontró que `SYSTEM_PROMPT_TEMPLATE`
+(`scripts/verify_ai.py`) ya tiene un criterio explícito de este tipo para
+`tipo=vialidad` ("es un accidente de tránsito individual y rutinario...
+son casos que atiende tránsito/ambulancia local, no algo que requiera
+respuesta de la Cruz Roja"), pero NUNCA existió un criterio equivalente
+para `tipo=incendio` -- ni en el prompt de la IA ni en un filtro
+determinista de respaldo (que sí existen para vialidad/deslizamiento/
+sismo, y para incendio pero solo en su variante vehicular).
+
+**Corrección**:
+
+1. Nuevo párrafo en `SYSTEM_PROMPT_TEMPLATE`, mismo patrón que vialidad:
+   un incendio de una sola vivienda/apartamento/vehículo/estructura menor,
+   ya sofocado y sin heridos/fallecidos/personas atrapadas o evacuadas, no
+   requiere respuesta de la Cruz Roja.
+2. Nuevo filtro determinista de respaldo `_incendio_estructura_menor_
+   sin_evidencia_fuerte()` (`scripts/verify_ai.py`), mismo patrón que
+   `_incendio_vehiculo_sin_evidencia_fuerte()`: solo se activa si el texto
+   menciona vivienda/apartamento/galpón (deliberadamente SIN "local
+   comercial"/"centro comercial" -- ese rango va de un solo local a un
+   centro comercial entero, y ya hay casos reales publicados de incendios
+   de centros comerciales sin víctimas explícitas que sí se consideran
+   significativos, como el de Los Cedros en Nueva Esparta); descarta la
+   fuente si no hay evidencia de heridos/fallecidos/atrapados/evacuados/
+   rescatados/intoxicados/afectados por humo.
+3. Al construir este filtro se encontró que `_VICTIMAS_INCENDIO_RE` (el
+   usado por el filtro vehicular ya existente) tenía el mismo problema de
+   negación ya corregido para sismo el 08-08-2026: un texto real de este
+   mismo caso dice explícitamente "**No hubo heridos**, pero 5 personas
+   resultaron afectadas por el humo" -- un regex simple habría contado
+   "heridos" como evidencia pese a la negación. Se convirtió a una lista
+   (`_VICTIMAS_INCENDIO`) evaluada con `_contiene_palabra_clave_no_negada()`,
+   compartida por ambos filtros (vehicular y estructura menor), y se
+   agregaron variantes no cubiertas antes (atrapado/evacuado/rescatado/
+   intoxicado/afectado por el humo).
+
+Al aplicar este filtro contra el corpus completo se encontró que
+`incendio::Tachira::2026-08-08` ("Sofocan incendio en vivienda de San
+Antonio", el mismo caso ya corregido de municipio en la sesión anterior)
+también cae bajo el mismo criterio -- un incendio de una sola vivienda,
+sin heridos ni fallecidos mencionados en ningún punto del texto.
+
+**Corrección retroactiva**: se eliminaron por completo
+`incendio::Miranda::2026-08-08` (las 3 instantáneas del cluster, una de
+ellas con las fuentes de Efecto Cocuyo) e `incendio::Tachira::2026-08-08`
+de `docs/data/noticias.json`, `data/historico_eventos.jsonl`, `data/
+historico_fuentes_texto.jsonl` y `data/publicados.json`. Se verificó
+contra el corpus completo que ningún otro incendio actualmente publicado
+(centros comerciales, edificios, incendios forestales) cae bajo este
+filtro -- el patrón "vivienda/apartamento/galpón sin víctimas" es
+exclusivo de estos 2 casos.
+
+### 3. Un artículo-tally de "26 incendios forestales" en Trujillo, ya sofocados, se publicó como si fuera un incendio nuevo de hoy
+
+`incendio::Trujillo::2026-08-09` ("Bomberos sofocan 26 incendios
+forestales en Trujillo. Las labores de combate incluyeron la atención de
+9 incendios de gran magnitud", Primicia) es un resumen numérico de un
+operativo de varios días YA controlado -- el mismo incendio forestal de
+Trujillo/Carache que ya se venía cubriendo con actualizaciones puntuales
+los días 06 y 07 de agosto (Puesto de Comando, cantidad de efectivos,
+parroquias específicas). El titular usa "sofocan" (ya extinguidos) y un
+conteo acumulado, no la descripción de un incendio puntual nuevo.
+
+**Causa raíz**: ningún filtro existente cubre esta variante de
+retrospectiva -- `_es_retrospectiva_obvia()` (verify_ai.py) es específica
+de aniversarios/"N días después"; `_ARTICULO_RETROSPECTIVO_LARGA_DURACION`
+y `_RANGO_FECHAS_RETROSPECTIVO_RE` (classify.py, 30-07 y 08-08-2026) cubren
+"meses de espera" y un rango explícito de fechas ("desde el D de MES hasta
+el D de MES") -- ninguno cubre un resumen numérico de incidentes sin rango
+de fechas explícito.
+
+**Corrección**: nuevo `_RESUMEN_TALLY_INCENDIOS_RE` (`scripts/classify.py`),
+agregado a `_es_articulo_retrospectivo_larga_duracion()` -- descarta el
+artículo completo (todos los tipos, no solo incendio, mismo criterio que
+la función ya usa) si el texto menciona 5 o más "incendios" (umbral igual
+al ya usado para `_NUMERO_FALLECIDOS_RE` en verify_ai.py, para no
+descartar un reporte legítimo de un puñado de incendios simultáneos de
+un mismo día). Se verificó contra el corpus completo que "N incendios"
+(N>=5) no aparece en ningún otro caso real ya publicado.
+
+**Corrección retroactiva**: se eliminó por completo
+`incendio::Trujillo::2026-08-09` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`. Los incendios forestales de Trujillo/Carache del 06 y
+07 de agosto (actualizaciones puntuales del mismo operativo, sin patrón
+de resumen numérico) no se tocaron.
+
+### Informes narrativos: 6 fuentes nuevas quedan con referencias a las 3 fuentes retractadas de esta sesión
+
+`docs/data/informes/2026-08_general.json` y `2026-08_incendio.json`
+listan las 3 fuentes de incendio retractadas hoy (Diario La Nacion
+Tachira, Efecto Cocuyo x2, El Periodico de Monagas, Primicia). Mismo caso
+que sesiones anteriores: `GROQ_API_KEY` no disponible en este entorno;
+`scripts/build_informes.py` regenerará ambos informes en la próxima
+corrida de producción. Confirmado con `scripts/detectar_inconsistencias.py`.
+
+### Pruebas
+
+11 casos nuevos: 2 en `tests/casos_clasificacion.jsonl` para "tramo
+Miranda" (el caso real del sismo sin ubicación, y un control real de que
+el artículo legítimo de la tormenta Distrito Capital/Miranda no pierde su
+propia ubicación), 2 más para el resumen-tally de incendios (el caso real
+de Trujillo, y un control sintético de 2 incendios simultáneos por debajo
+del umbral), 7 en `tests/test_verify_ai_filtros.py` (2 para "colapso de
+árboles" no sísmico + control de "colapso de vivienda", 5 para el filtro
+de estructura menor de incendio: galpones real, vivienda real, control
+con heridos, control de la trampa de negación "No hubo heridos, pero...
+afectadas por el humo", y 2 controles de que centro comercial/edificio no
+pasan por este filtro). Regresión completa contra las 70 fuentes vigentes
+de `data/historico_fuentes_texto.jsonl` (ya con las 8 instantáneas
+retractadas eliminadas): sin cambios inesperados, solo el efecto
+esperado en los 2 casos retractados de esta sesión (autocurados al
+eliminarse su fuente del historico). `python3 -m pytest tests/` → 225
+passed, 5 xfailed (conocidos, sin relación), 1 xpassed (conocido, sin
+efecto real). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados que la sesión anterior (sin relación con estos hallazgos), 13
+fuentes muertas en 5 informes (7 ya conocidas de sesiones anteriores + 6
+nuevas de las retracciones de esta sesión, ver arriba).
+
+---
+
 ## Auditoría diaria automática (09-08-2026): "municipio/parroquia ADJETIVO Nombre" rompía tanto la detección de municipio como, en un caso real, la del propio estado
 
 Auditoría de rutina de las alertas publicadas/actualizadas desde la

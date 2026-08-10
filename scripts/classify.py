@@ -25,7 +25,20 @@ LISTA_NEGRA_POR_ESTADO = {
                 "aeropuerto", "moneda", "billete de", "banco central",
                 "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
-    "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda"],
+    # "tramo Miranda" es un segmento vial nombrado de la Autopista Regional
+    # del Centro (ARC) -- caso real (10-08-2026): un articulo sobre el
+    # sismo de magnitud 7.4 de Colombia (que en su propio texto nunca
+    # nombra a Miranda como estado) traia pegada una frase de clima/
+    # vialidad ajena y sin relacion ("...el colapso de arboles... en el
+    # tramo Miranda de la Autopista Regional del Centro (ARC)"), que
+    # bastaba para publicar una alerta de sismo en el estado Miranda. La
+    # misma frase aparece tambien, de forma legitima, en un articulo real
+    # sobre una tormenta en Distrito Capital/Miranda -- pero ese caso ya
+    # tiene evidencia solida e independiente ("Los Teques, estado
+    # Miranda", "municipio Los Salias"), asi que excluir "tramo Miranda"
+    # no le quita esa ubicacion.
+    "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda",
+                "tramo miranda"],
     # Caso real (02-08-2026): una golpiza durante un partido de futbol en
     # Barquisimeto (estado Lara, entre aficion del Deportivo Lara y del
     # Portuguesa FC) tambien se publicaba como alerta de Carabobo -- el
@@ -337,11 +350,32 @@ _RANGO_FECHAS_RETROSPECTIVO_RE = re.compile(
     r"\bdesde el \d{1,2} de \w+ hasta el \d{1,2} de \w+\b", re.IGNORECASE,
 )
 
+# Caso real (10-08-2026): "Bomberos sofocan 26 incendios forestales en
+# Trujillo. Las labores de combate incluyeron la atención de 9 incendios de
+# gran magnitud" -- un articulo-tally que resume, en un numero acumulado, un
+# operativo de varios dias YA sofocado/controlado (el mismo incendio
+# forestal de Trujillo/Carache ya cubierto en dias previos con
+# actualizaciones puntuales) -- no describe un incendio nuevo puntual de
+# hoy, sino un cierre/resumen numerico. Mismo principio que el rango de
+# fechas y "meses de espera": un articulo enmarcado como recuento numerico
+# de eventos YA resueltos no es un hecho nuevo, sin importar el tipo de
+# emergencia de fondo. Umbral de 5+ (igual que _NUMERO_FALLECIDOS_RE en
+# verify_ai.py) para no descartar un reporte legitimo de un puñado de
+# incendios simultaneos detectados el mismo dia. Se verifico contra el
+# corpus completo que "N incendios" (N>=5) no aparece en ningun otro caso
+# real ya publicado.
+_RESUMEN_TALLY_INCENDIOS_RE = re.compile(
+    r"\b(cinco|seis|siete|ocho|nueve|diez|[5-9]|\d{2,})\s+incendios\b",
+    re.IGNORECASE,
+)
+
 
 def _es_articulo_retrospectivo_larga_duracion(texto_norm):
     if any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION):
         return True
-    return _RANGO_FECHAS_RETROSPECTIVO_RE.search(texto_norm) is not None
+    if _RANGO_FECHAS_RETROSPECTIVO_RE.search(texto_norm) is not None:
+        return True
+    return _RESUMEN_TALLY_INCENDIOS_RE.search(texto_norm) is not None
 
 
 # Caso real (30-07-2026): "Aumentan los casos de enfermedades diarreicas en

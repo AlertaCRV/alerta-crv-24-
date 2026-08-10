@@ -153,12 +153,28 @@ _ACCIDENTE_MULTIPLE_RE = re.compile(
     r"choque entre varios vehiculos|choque entre varios vehículos)\b",
     re.IGNORECASE,
 )
-_VICTIMAS_INCENDIO_RE = re.compile(
-    r"\b(herido|herida|heridos|heridas|lesionado|lesionada|lesionados|lesionadas|"
-    r"fallecido|fallecida|fallecidos|fallecidas|muerto|muerta|muertos|muertas|"
-    r"victima fatal|víctima fatal|victimas fatales|víctimas fatales)\b",
-    re.IGNORECASE,
-)
+# Lista (no un solo regex) para poder usar _contiene_palabra_clave_no_negada()
+# -- caso real (10-08-2026): un incendio de tres galpones en Petare
+# ("Efecto Cocuyo") describia explicitamente "sin víctimas que lamentar" y
+# "No hubo heridos, pero 5 personas resultaron afectadas por el humo" -- un
+# regex simple habria contado "heridos" (dentro de "No hubo heridos") como
+# evidencia de victimas pese a la negacion explicita justo antes.
+_VICTIMAS_INCENDIO = [
+    "herido", "herida", "heridos", "heridas", "lesionado", "lesionada",
+    "lesionados", "lesionadas", "fallecido", "fallecida", "fallecidos",
+    "fallecidas", "muerto", "muerta", "muertos", "muertas",
+    "victima fatal", "víctima fatal", "victimas fatales", "víctimas fatales",
+    "atrapado", "atrapada", "atrapados", "atrapadas",
+    "evacuado", "evacuada", "evacuados", "evacuadas",
+    "rescatado", "rescatada", "rescatados", "rescatadas",
+    "intoxicado", "intoxicada", "intoxicados", "intoxicadas",
+    "afectado por el humo", "afectada por el humo",
+    "afectados por el humo", "afectadas por el humo",
+]
+
+
+def _tiene_victimas_incendio(texto_norm):
+    return any(_contiene_palabra_clave_no_negada(texto_norm, f) for f in _VICTIMAS_INCENDIO)
 
 
 def _incendio_vehiculo_sin_evidencia_fuerte(texto):
@@ -166,8 +182,37 @@ def _incendio_vehiculo_sin_evidencia_fuerte(texto):
     if not _VEHICULO_INCENDIO_RE.search(texto_norm):
         return False  # no es un incendio de vehiculo, este filtro no aplica
     tiene_accidente_multiple = _ACCIDENTE_MULTIPLE_RE.search(texto_norm) is not None
-    tiene_victimas = _VICTIMAS_INCENDIO_RE.search(texto_norm) is not None
+    tiene_victimas = _tiene_victimas_incendio(texto_norm)
     return not (tiene_accidente_multiple and tiene_victimas)
+
+
+# Filtro determinista para tipo=incendio: un incendio de una sola vivienda,
+# apartamento o galpon, ya sofocado y sin heridos/fallecidos/personas
+# atrapadas o evacuadas, es un incidente rutinario que atiende el cuerpo de
+# bomberos local, no algo que requiera respuesta de la Cruz Roja -- mismo
+# principio que _incendio_vehiculo_sin_evidencia_fuerte() y que el criterio
+# ya usado por la IA para tipo=vialidad (ver SYSTEM_PROMPT_TEMPLATE). Caso
+# real (10-08-2026): "Voraz incendio se registra en tres galpones en
+# Petare" -- el propio articulo, en sus 3 actualizaciones a lo largo de la
+# noche, nunca menciona heridos ni fallecidos (una fuente distinta del
+# mismo hecho, Efecto Cocuyo, lo confirma explicitamente: "sin víctimas
+# que lamentar"). Deliberadamente NO se activa para "local comercial"/
+# "centro comercial" (rango demasiado amplio, de un solo local a un
+# centro comercial entero -- casos reales ya publicados de centros
+# comerciales SIN victimas explicitas, como el incendio de Los Cedros en
+# Nueva Esparta, se consideran significativos igual) ni para incendios
+# forestales/estructurales de mayor escala.
+_ESTRUCTURA_MENOR_INCENDIO_RE = re.compile(
+    r"\b(vivienda|viviendas|apartamento|apartamentos|galpon|galpón|galpones)\b",
+    re.IGNORECASE,
+)
+
+
+def _incendio_estructura_menor_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _ESTRUCTURA_MENOR_INCENDIO_RE.search(texto_norm):
+        return False  # no es un incendio de vivienda/apartamento/galpon, no aplica
+    return not _tiene_victimas_incendio(texto_norm)
 
 
 # Filtro determinista para tipo=deslizamiento: la palabra "derrumbe" tambien
@@ -221,8 +266,21 @@ _SENTIDO_SISMO_RE = re.compile(
 # reemplaza la busqueda por _contiene_palabra_clave_no_negada() (ver
 # classify.py), que ya descarta coincidencias precedidas de "sin"/"no"/
 # "ningun" a pocas palabras de distancia.
+# "colapso de" (sin objeto) se cambio por frases especificas -- caso real
+# (10-08-2026): "colapso de árboles" (arboles caidos por una tormenta, sin
+# relacion con ningun sismo) contaba como evidencia fuerte de dano
+# sismico, en un articulo (sobre la actualizacion de magnitud de un sismo
+# en Colombia) que traia pegada, sin relacion, una frase de clima ajena
+# ("...el colapso de árboles a lo largo de la Carretera Panamericana...").
+# Se verifico contra el corpus completo que "colapso de" solo aparecia,
+# ademas de este caso, en "colapso de algunos sistemas" (drenaje, un
+# articulo de inundacion) y "colapso de vivienda" (un caso real de
+# colapso_estructural, no sismo) -- ningun caso legitimo de dano sismico
+# en el corpus dependia de la version generica sin objeto.
 _EVIDENCIA_DANO_SISMO = [
-    "colapso estructural", "colapso de", "derrumbe", "derrumbes",
+    "colapso estructural", "colapso de vivienda", "colapso de viviendas",
+    "colapso de edificio", "colapso de edificios", "colapso de estructura",
+    "colapso de estructuras", "derrumbe", "derrumbes",
     "heridos", "heridas", "fallecidos", "fallecidas", "muertos", "muertas",
     "danos severos", "daños severos", "danos estructurales",
     "daños estructurales", "edificacion colapsada", "edificación colapsada",
@@ -301,6 +359,11 @@ SYSTEM_PROMPT_TEMPLATE = (
     "aislado) sin víctimas múltiples ni colapso de una vía completa — son "
     "casos que atiende tránsito/ambulancia local, no algo que requiera "
     "respuesta de la Cruz Roja\n"
+    "• Si tipo=incendio: es un incendio de una sola vivienda, apartamento, "
+    "vehículo o estructura menor, ya sofocado/controlado, sin heridos, "
+    "fallecidos, personas atrapadas o evacuadas — son casos que atiende el "
+    "cuerpo de bomberos local de forma rutinaria, no algo que requiera "
+    "respuesta de la Cruz Roja\n"
     "• Es un reportaje/denuncia sobre un problema crónico (e.g., 'los "
     "apagones tienen en jaque a los comerciantes'), un análisis de impacto "
     "comercial o socioeconómico de una crisis pasada, o un asunto "
@@ -311,7 +374,10 @@ SYSTEM_PROMPT_TEMPLATE = (
     "requiere respuesta inmediata de emergencias (si tipo=vialidad, solo "
     "cuando hay colapso de una vía completa, un accidente masivo con "
     "múltiples heridos o fallecidos, o afectación significativa de "
-    "infraestructura vial).\n"
+    "infraestructura vial; si tipo=incendio, cuando hay heridos, "
+    "fallecidos, personas atrapadas o evacuadas, o el incendio afecta una "
+    "escala significativa — varias estructuras, un incendio forestal de "
+    "gran magnitud, un centro comercial u otro inmueble de gran tamaño).\n"
     "\nFECHA ACTUAL DEL SISTEMA: {fecha_actual}\n"
     "\nDEBES RESPONDER EXCLUSIVAMENTE EN FORMATO JSON, sin explicaciones ni "
     "texto adicional. La estructura debe ser un objeto con una clave "
@@ -665,7 +731,10 @@ def verificar_evento_con_ia(evento):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "vialidad" and _vialidad_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)
-        elif evento["tipo"] == "incendio" and _incendio_vehiculo_sin_evidencia_fuerte(representante["texto"]):
+        elif evento["tipo"] == "incendio" and (
+            _incendio_vehiculo_sin_evidencia_fuerte(representante["texto"])
+            or _incendio_estructura_menor_sin_evidencia_fuerte(representante["texto"])
+        ):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "deslizamiento" and _deslizamiento_estructura_sin_evidencia_fuerte(representante["texto"]):
             obvios_rechazados.append(representante)

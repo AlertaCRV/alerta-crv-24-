@@ -150,6 +150,16 @@ def guardar_publicados(publicados):
         json.dump(limpio, f, ensure_ascii=False, indent=2)
 
 
+def _entrada_publicados(evento):
+    return {
+        "severidad": evento["severidad"],
+        "confirmado": evento["confirmado"],
+        "fecha_deteccion": evento["fecha_deteccion"],
+        "fecha_evento_temprana": evento.get("fecha_evento_temprana", evento["fecha_evento"]),
+        "municipio": evento.get("municipio"),
+    }
+
+
 def filtrar_nuevos(eventos, publicados):
     """Evita republicar el mismo evento (tipo+ubicacion+dia, o tipo+ubicacion
     dentro de VENTANA_HORAS_MISMO_EVENTO para tipos que no sean sismo/
@@ -158,7 +168,20 @@ def filtrar_nuevos(eventos, publicados):
 
     Para tipo=sismo se filtra ademas por _mismo_sismo_ya_publicado: un mismo
     sismo reportado el mismo dia bajo otra ubicacion (misma magnitud, o
-    mencion cruzada explicita de estados) no genera una alerta duplicada."""
+    mencion cruzada explicita de estados) no genera una alerta duplicada.
+
+    Caso real (10-08-2026): un sismo de magnitud 7.4 con epicentro en
+    Colombia, sentido en 4 estados venezolanos distintos, se publico como 4
+    alertas separadas (Distrito Capital, Tachira, Zulia, Miranda) en una
+    misma corrida -- _mismo_sismo_ya_publicado() solo comparaba cada evento
+    contra `publicados` (el estado YA persistido de corridas anteriores),
+    nunca contra los otros eventos del mismo sismo detectados en la MISMA
+    corrida, porque este bucle nunca escribia en `publicados` hasta
+    terminar (esa escritura ocurria despues, en marcar_publicados(),
+    llamada por separado desde main.py). Ahora cada evento aceptado se
+    registra en `publicados` de inmediato -- el segundo/tercer estado del
+    mismo sismo, procesado a continuacion dentro del mismo bucle, ya lo
+    encuentra y se descarta como duplicado."""
     nuevos = []
     for evento in eventos:
         fecha_dia = _fecha_dia_dedup(evento)
@@ -169,6 +192,7 @@ def filtrar_nuevos(eventos, publicados):
         if previo is None:
             evento["clave_dedup"] = clave
             nuevos.append(evento)
+            publicados[clave] = _entrada_publicados(evento)
         elif previo["severidad"] != evento["severidad"] or previo["confirmado"] != evento["confirmado"]:
             # Es una actualizacion del mismo evento (p.ej. subio de severidad),
             # no uno nuevo -- se marca con la misma clave para que
@@ -176,17 +200,12 @@ def filtrar_nuevos(eventos, publicados):
             # agregar una segunda entrada duplicada para el mismo hecho real.
             evento["clave_dedup"] = clave
             nuevos.append(evento)
+            publicados[clave] = _entrada_publicados(evento)
     return nuevos
 
 
 def marcar_publicados(eventos, publicados):
     for evento in eventos:
         clave = _resolver_clave(evento, publicados)
-        publicados[clave] = {
-            "severidad": evento["severidad"],
-            "confirmado": evento["confirmado"],
-            "fecha_deteccion": evento["fecha_deteccion"],
-            "fecha_evento_temprana": evento.get("fecha_evento_temprana", evento["fecha_evento"]),
-            "municipio": evento.get("municipio"),
-        }
+        publicados[clave] = _entrada_publicados(evento)
     return publicados
