@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "vialidad",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/08/tres-autos-y-la-motocicletafatalidad-no-se-detiene-muere-motorizadoen-colision-multiple-en-la-av-nueva-barinas/",
+        "fecha": "2026-08-09T21:57:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-09T21:57:32+00:00",
+    "fecha_evento_temprana": "2026-08-09T21:57:32+00:00",
+    "fecha_deteccion": "2026-08-10T05:08:59.610586+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Barinas::2026-08-09",
+    "titulo": "Incidente vial en Barinas",
+    "texto": "📌 Incidente vial en Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 09/08/2026, 5:57 p.m.\n🔎 Detectado por el sistema: 10/08/2026, 1:08 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/tres-autos-y-la-motocicletafatalidad-no-se-detiene-muere-motorizadoen-colision-multiple-en-la-av-nueva-barinas/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Trujillo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/bomberos-sofocan-26-incendios-forestales-en-trujillo/",
+        "fecha": "2026-08-09T23:30:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-09T23:30:08+00:00",
+    "fecha_evento_temprana": "2026-08-09T23:30:08+00:00",
+    "fecha_deteccion": "2026-08-10T05:09:06.302478+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Trujillo::2026-08-09",
+    "titulo": "Incendio en Trujillo",
+    "texto": "📌 Incendio en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 09/08/2026, 7:30 p.m.\n🔎 Detectado por el sistema: 10/08/2026, 1:09 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/bomberos-sofocan-26-incendios-forestales-en-trujillo/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Tachira",
     "municipio": "Bolívar",
@@ -1749,57 +1801,5 @@
     "fecha_deteccion": "2026-07-27T16:02:08.983050+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "tormenta_electrica::Zulia::2026-07-27"
-  },
-  {
-    "titulo": "Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara",
-    "texto": "📌 Inundación en Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Gustavo Vegas León, Municipio Simón Planas, Lara\n🕒 Hecho reportado: 27/07/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/\n  • La Prensa de Monagas: https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": "Simón Planas",
-    "parroquia": "Gustavo Vegas León",
-    "severidad": "critico",
-    "score": 1.1,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/",
-        "fecha": "2026-07-26T18:07:32+00:00"
-      },
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/",
-        "fecha": "2026-07-27T20:53:15+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-27T20:53:15+00:00",
-    "fecha_deteccion": "2026-07-26T20:05:23.443211+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "fecha_evento_temprana": "2026-07-26T18:07:32+00:00",
-    "clave_dedup": "inundacion::Lara::2026-07-26"
-  },
-  {
-    "titulo": "Tormenta eléctrica en Municipio Valencia, Carabobo",
-    "texto": "📌 Tormenta eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 ALTO\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 26/07/2026, 2:20 p.m.\n🔎 Detectado por el sistema: 26/07/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 ALTO: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/",
-        "fecha": "2026-07-26T18:20:03+00:00"
-      }
-    ],
-    "fecha_evento": "2026-07-26T18:20:03+00:00",
-    "fecha_deteccion": "2026-07-26T20:05:15.085172+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "tormenta_electrica::Carabobo::2026-07-26"
   }
 ]

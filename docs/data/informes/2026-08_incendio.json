@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-08-09T11:04:57.725566+00:00",
-  "actualizado_hasta": "2026-08-09T04:06:35.637030+00:00",
-  "total_eventos": 10,
+  "generado": "2026-08-10T05:09:23.360057+00:00",
+  "actualizado_hasta": "2026-08-10T05:09:06.302478+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 10
+    "actual": 11
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 10 eventos relacionados con incendios en Venezuela, lo que supone un aumento en comparación con el período anterior, julio de 2026, cuando se registraron 3 eventos (La Prensa de Monagas, La Prensa de Lara). Entre los eventos más destacados se encuentran el incendio en Miranda, que tuvo una severidad alta y dejó dos personas lesionadas en un edificio de Las Mercedes (La Prensa de Monagas), y el incendio en Yaracuy, que tuvo una severidad crítica y resultó en la muerte de dos hermanos debido a una explosión de gas en Barquisimeto (La Prensa de Lara). Otros eventos notables incluyeron un incendio forestal en el municipio Carache, donde se desplegaron operativos especiales para combatir el fuego (Ciudad Trujillo), y un incendio en una vivienda de San Antonio del Táchira, que fue sofocado por el Cuerpo de Bomberos (Diario La Nacion). Además, se registraron incendios en El Llanito, que dejaron daños materiales pero sin víctimas (Efecto Cocuyo), y en un local comercial del Paseo Orinoco de Ciudad Bolívar, donde varios trabajadores quedaron atrapados (El Luchador). Estos eventos resaltan la importancia de la prevención y la rápida respuesta en caso de incendios para minimizar daños y pérdidas.",
+  "narrativa": "En el período de agosto de 2026, se registraron 11 eventos relacionados con incendios en Venezuela, lo que representa un aumento en comparación con el período anterior, julio de 2026, cuando se registraron 3 eventos (La Prensa de Lara, La Prensa de Monagas). Entre los eventos más destacados se encuentran el incendio en Miranda, que tuvo una severidad alta y dejó dos personas lesionadas en un edificio de Las Mercedes (La Prensa de Monagas), y el incendio en Yaracuy, que tuvo una severidad crítica y resultó en la muerte de dos hermanos debido a una explosión de gas en Barquisimeto (La Prensa de Lara). Otros eventos notables incluyeron un incendio forestal en el municipio Carache, donde se desplegaron operativos especiales para combatir el fuego (Ciudad Trujillo), y un incendio en una vivienda en San Antonio del Táchira, que fue sofocado por el Cuerpo de Bomberos (Diario La Nacion). Además, se registraron incendios en El Llanito, que dejaron daños materiales pero sin víctimas (Efecto Cocuyo), y un incendio en un local comercial del Paseo Orinoco en Ciudad Bolívar, que dejó varios trabajadores atrapados (El Luchador). Estos eventos resaltan la importancia de la prevención y la respuesta rápida ante situaciones de emergencia.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -52,6 +52,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/bomberos-sofocan-26-incendios-forestales-en-trujillo/"
     }
   ]
 }

@@ -1,25 +1,4 @@
 {
-  "orden_publico::Carabobo::2026-08-06": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-07T01:46:21.678405+00:00",
-    "fecha_evento_temprana": "2026-08-06T21:14:20+00:00",
-    "municipio": "Valencia"
-  },
-  "incendio::Trujillo::2026-08-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-07T01:46:53.213945+00:00",
-    "fecha_evento_temprana": "2026-08-07T00:43:39+00:00",
-    "municipio": "Trujillo"
-  },
-  "vialidad::Anzoategui::2026-08-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-07T01:46:56.592218+00:00",
-    "fecha_evento_temprana": "2026-08-07T00:12:54+00:00",
-    "municipio": "Simón Rodríguez"
-  },
   "incendio::Bolivar::2026-08-07": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -96,5 +75,19 @@
     "fecha_deteccion": "2026-08-09T04:06:35.637030+00:00",
     "fecha_evento_temprana": "2026-08-08T18:39:00+00:00",
     "municipio": "Bolívar"
+  },
+  "vialidad::Barinas::2026-08-09": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T05:08:59.610586+00:00",
+    "fecha_evento_temprana": "2026-08-09T21:57:32+00:00",
+    "municipio": null
+  },
+  "incendio::Trujillo::2026-08-09": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-10T05:09:06.302478+00:00",
+    "fecha_evento_temprana": "2026-08-09T23:30:08+00:00",
+    "municipio": null
   }
 }

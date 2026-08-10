@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-09T14:19:47.238300+00:00",
+  "generado": "2026-08-10T05:09:27.735256+00:00",
   "actualizado_hasta": "2026-08-08T22:06:52.249467+00:00",
   "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
-    "anterior": 6,
+    "anterior": 5,
     "actual": 10
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron 10 eventos relacionados con fallas eléctricas en Venezuela, lo que representa un aumento en comparación con el período anterior, que tuvo 6 eventos (El Periodico de Monagas). En el estado Zulia, los cortes de luz ponen en riesgo a pacientes renales, con interrupciones en el suministro eléctrico que abarcan períodos de cinco a seis horas seguidas en cada jornada (El Periodico de Monagas). En Carabobo, habitantes protestaron contra los constantes apagones, exigiendo respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Caracas, se reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio, Parque Carabobo, avenida Bolívar (El Pitazo). También se reportaron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas contra los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes protestaron por tener más de 10 horas sin energía eléctrica, trancando la avenida Libertador (Maturin News). En el Callao, estado Bolívar, se realizó un paro cívico para exigir soluciones ante la crisis eléctrica (Turimiquire). Además, se denunció la discriminación eléctrica en el interior de Venezuela, donde los cortes diarios van de 4 a 12 horas (Turimiquire).",
+  "narrativa": "En el período de 2026-08, se registraron 10 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior (2026-07), cuando se registraron 5 eventos (El Periodico de Monagas). Entre los eventos más destacados se encuentran los cortes de luz en Zulia, que ponen en riesgo a pacientes renales, con interrupciones de hasta seis horas seguidas en cada jornada (El Periodico de Monagas). Además, se reportaron protestas en Carabobo contra los constantes apagones, con vecinos de El Trigal concentrados en las inmediaciones de Quinta Carabobo para reclamar a las autoridades (El Periodico de Monagas). En Caracas, ciudadanos reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora y Plaza Venezuela, la noche del 1 de agosto (El Pitazo). También se registraron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas debido a los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron con cacerolas en mano por más de 10 horas sin energía eléctrica (Maturin News). Estos eventos demuestran la gravedad de la crisis eléctrica en Venezuela, que afecta a diversas regiones del país, incluyendo Zulia, Carabobo, Caracas, Barinas, Mérida y Maturín (Noticias de Aqui, Primicia, Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
