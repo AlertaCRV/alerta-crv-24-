@@ -3,19 +3,23 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-09T04:07:04.503977+00:00",
-  "actualizado_hasta": "2026-08-09T04:06:35.637030+00:00",
-  "total_eventos": 42,
+  "generado": "2026-08-10T05:09:18.955398+00:00",
+  "actualizado_hasta": "2026-08-10T05:09:06.302478+00:00",
+  "total_eventos": 44,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
-    "anterior": 29,
-    "actual": 42
+    "anterior": 28,
+    "actual": 44
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 42 eventos, lo que supone un aumento en comparación con el período anterior, 2026-07, que tuvo 29 eventos. Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en un fallecido y cinco heridos, según informó Noticia al Dia (Zulia). Además, se produjeron inundaciones en Yaracuy, reportadas por El Impulso (Lara) y Turimiquire (Sucre), que causaron daños estructurales y pérdidas materiales, incluyendo la muerte de una persona. Un incendio en Miranda, mencionado por La Prensa de Monagas, dejó dos personas lesionadas. También se registraron inundaciones en Apure, informadas por Notiapure, y un incendio en Yaracuy, reportado por La Prensa de Lara. Otros eventos notables incluyeron un incendio forestal en Carache, en el estado Trujillo, y un incendio en una vivienda en San Antonio del Táchira, según Diario La Nacion (Tachira) y Ciudad Trujillo. Es importante destacar que cada uno de estos eventos tuvo un impacto significativo en las comunidades afectadas, y es fundamental seguir monitoreando la situación para proporcionar ayuda y apoyo a quienes lo necesitan.",
+  "narrativa": "En el período de 2026-08, se registraron un total de 44 eventos de emergencia en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 28 eventos (Notiapure). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en víctimas fatales y heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales y pérdidas materiales en varios municipios, incluyendo la muerte de una persona (El Impulso (Lara), Turimiquire (Sucre)). Otros eventos notables incluyen el incendio en Miranda, que dejó dos personas lesionadas (La Prensa de Monagas), y la inundación en Apure, que afectó a la población de La Victoria (Notiapure). Además, se registraron incidentes viales en Barinas, con víctimas fatales y heridos (La Noticia de Barinas), y un incendio en Yaracuy, con hermanos fallecidos debido a una explosión de gas (La Prensa de Lara). Es importante destacar que estos eventos han tenido un impacto significativo en las comunidades afectadas, y es fundamental la labor de los organismos de emergencia y rescate para mitigar los daños y brindar asistencia a las víctimas.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/tres-autos-y-la-motocicletafatalidad-no-se-detiene-muere-motorizadoen-colision-multiple-en-la-av-nueva-barinas/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -148,10 +152,6 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
     }
   ]
 }

@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-08T04:21:29.172526+00:00",
-  "actualizado_hasta": "2026-08-08T04:20:42.308816+00:00",
-  "total_eventos": 10,
+  "generado": "2026-08-10T05:10:05.935213+00:00",
+  "actualizado_hasta": "2026-08-08T23:16:00.673887+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 10
+    "actual": 11
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 10 eventos relacionados con el orden público en Venezuela, en comparación con los 2 eventos registrados en el período anterior (El Impulso, El Periodico de Monagas). Uno de los eventos que destacó fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja, así como la excarcelación de sus allegados y el respeto a sus derechos fundamentales (El Impulso). Además, trabajadores y jubilados de la Gobernación de Lara se concentraron en la Plaza La Moneda en Barquisimeto para exigir el pago del bono de profesionalización y rechazar el Sistema Patria (El Impulso). En varios estados del país, como Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, se registraron protestas por los constantes y prolongados cortes de electricidad, con vecinos quemando neumáticos y tocando cacerolas en las calles (El Periodico de Monagas, El Pitazo). También se reportaron manifestaciones en la Isla de Margarita por fallas en el servicio hídrico, con comunidades cerrando avenidas y rechazando la atención mediante camiones cisterna (El Tiempo). En el estado Falcón, el Sindicato de Trabajadores de la Salud (Sintrasalud) protestó por ser excluidos del bono de vacaciones, mientras que en Carabobo, trabajadores de Cantv exigieron la reactivación de servicios de salud (La Manana, La Patilla). Sindicalistas en el Zulia exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de la ciudadanía (La Verdad). Finalmente, un encuentro deportivo entre Portuguesa FC y Carabobo FC en Barquisimeto se vio empañado por una salvaje golpiza a un inocente, iniciada por supuestos hinchas locales (Noticia al Dia).",
+  "narrativa": "En el período de 2026-08, se registraron un total de 11 eventos relacionados con el orden público en Venezuela, lo que supone un aumento significativo en comparación con el período anterior, 2026-07, cuando se registraron 2 eventos (El Impulso, El Periodico de Monagas). Uno de los eventos destacados fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja, así como la excarcelación de sus allegados y el respeto a sus derechos fundamentales (El Impulso). Además, se produjeron protestas en siete estados del país, incluyendo Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, debido a los constantes y prolongados cortes de electricidad, donde los vecinos tomaron calles, quemaron neumáticos y tocaron cacerolas (El Periodico de Monagas, El Pitazo). También se registraron manifestaciones en la Isla de Margarita por fallas en el servicio hídrico, donde vecinos del sector La Guardia, en el municipio Díaz, decidieron cerrar la avenida Taguantar tras cumplir cinco meses sin recibir el recurso por tuberías (El Tiempo). Otros eventos notables incluyeron la protesta de trabajadores de Cantv en Carabobo, que exigieron la restitución inmediata de sus beneficios (La Patilla), y la concentración de dirigencia y simpatizantes del partido Vente Venezuela en el estado Sucre, que denunciaron la precariedad de los servicios públicos como consecuencia de la corrupción (La Patilla). Asimismo, se produjeron disturbios en un encuentro de fútbol entre Portuguesa FC y Carabobo FC en Barquisimeto, donde supuestos hinchas locales atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC (Noticia al Dia).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -44,6 +44,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/"
     },
     {
       "nombre": "La Verdad (Zulia)",

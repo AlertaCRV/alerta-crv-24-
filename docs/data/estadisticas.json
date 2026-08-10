@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-09T23:22:55.638777+00:00",
+  "actualizado": "2026-08-10T05:09:10.826136+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-08T21:57:44+00:00"
+    "hasta": "2026-08-09T23:30:08+00:00"
   },
-  "total_eventos": 70,
+  "total_eventos": 72,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,8 +14,8 @@
     "orden_publico": 13,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 13,
-    "vialidad": 2,
+    "incendio": 14,
+    "vialidad": 3,
     "sismo": 1,
     "escasez_combustible": 1,
     "sequia": 1
@@ -32,13 +32,13 @@
       "confirmados": 3
     },
     {
-      "estado": "Bolivar",
+      "estado": "Barinas",
       "total": 7,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
-      "total": 6,
+      "estado": "Bolivar",
+      "total": 7,
       "confirmados": 1
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "estado": "Trujillo",
-      "total": 3,
+      "total": 4,
       "confirmados": 0
     },
     {
@@ -141,12 +141,13 @@
     },
     "Trujillo": {
       "inundacion": 1,
-      "incendio": 2
+      "incendio": 3
     },
     "Barinas": {
       "deslizamiento": 1,
       "inundacion": 3,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "vialidad": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -199,8 +200,8 @@
   },
   "por_severidad": {
     "alto": 7,
-    "critico": 6,
-    "sin_clasificar": 57
+    "critico": 7,
+    "sin_clasificar": 58
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -232,10 +233,10 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 10
+      "2026-08": 11
     },
     "vialidad": {
-      "2026-08": 2
+      "2026-08": 3
     },
     "sismo": {
       "2026-08": 1
