@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-10T14:35:01.841328+00:00",
+  "actualizado": "2026-08-10T16:13:11.817157+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-10T14:01:31+00:00"
   },
-  "total_eventos": 78,
+  "total_eventos": 70,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 13,
@@ -14,16 +14,16 @@
     "orden_publico": 13,
     "salud_publica": 1,
     "crisis_migratoria": 4,
-    "incendio": 14,
+    "incendio": 9,
     "vialidad": 3,
-    "sismo": 5,
+    "sismo": 2,
     "escasez_combustible": 1,
     "sequia": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 12,
+      "total": 11,
       "confirmados": 2
     },
     {
@@ -42,11 +42,6 @@
       "confirmados": 1
     },
     {
-      "estado": "Miranda",
-      "total": 7,
-      "confirmados": 2
-    },
-    {
       "estado": "Lara",
       "total": 5,
       "confirmados": 1
@@ -63,7 +58,7 @@
     },
     {
       "estado": "Trujillo",
-      "total": 4,
+      "total": 3,
       "confirmados": 0
     },
     {
@@ -72,9 +67,9 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
+      "estado": "Miranda",
       "total": 3,
-      "confirmados": 0
+      "confirmados": 1
     },
     {
       "estado": "Falcon",
@@ -100,6 +95,11 @@
       "estado": "Nueva Esparta",
       "total": 2,
       "confirmados": 1
+    },
+    {
+      "estado": "Tachira",
+      "total": 1,
+      "confirmados": 0
     },
     {
       "estado": "Aragua",
@@ -138,12 +138,11 @@
       "orden_publico": 3,
       "incendio": 1,
       "vialidad": 1,
-      "infraestructura_electrica": 4,
-      "sismo": 1
+      "infraestructura_electrica": 4
     },
     "Trujillo": {
       "inundacion": 1,
-      "incendio": 3
+      "incendio": 2
     },
     "Barinas": {
       "deslizamiento": 1,
@@ -171,16 +170,13 @@
       "inundacion": 1
     },
     "Tachira": {
-      "deslizamiento": 1,
-      "incendio": 1,
-      "sismo": 1
+      "deslizamiento": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2
     },
     "Miranda": {
-      "incendio": 5,
-      "sismo": 1,
+      "incendio": 2,
       "infraestructura_electrica": 1
     },
     "Nueva Esparta": {
@@ -206,7 +202,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 7,
-    "sin_clasificar": 63,
+    "sin_clasificar": 55,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -239,13 +235,13 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 11
+      "2026-08": 6
     },
     "vialidad": {
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 5
+      "2026-08": 2
     },
     "escasez_combustible": {
       "2026-08": 1

@@ -13,6 +13,7 @@ from verify import agrupar_y_verificar
 from verify_ai import (
     _deslizamiento_estructura_sin_evidencia_fuerte,
     _es_retrospectiva_obvia,
+    _incendio_estructura_menor_sin_evidencia_fuerte,
     _incendio_vehiculo_sin_evidencia_fuerte,
     _sismo_sin_evidencia_fuerte,
     _vialidad_sin_evidencia_fuerte,
@@ -64,6 +65,72 @@ def test_incendio_vehiculo_multiple_y_victimas_no_se_descarta():
 def test_incendio_forestal_no_pasa_por_este_filtro():
     texto = "Un incendio forestal consume varias hectareas de vegetacion."
     assert _incendio_vehiculo_sin_evidencia_fuerte(texto) is False
+
+
+# --- incendio de estructura menor (vivienda/apartamento/galpon): (10-08-2026) ---
+
+def test_incendio_galpones_sin_victimas_se_descarta():
+    # Caso real: "Voraz incendio se registra en tres galpones en Petare"
+    # (El Periodico de Monagas) -- tres actualizaciones a lo largo de la
+    # noche, ninguna menciona heridos ni fallecidos (una fuente distinta
+    # del mismo hecho, Efecto Cocuyo, lo confirma explicitamente: "sin
+    # victimas que lamentar").
+    texto = (
+        "Voraz incendio se registra en tres galpones en Petare. Bombero de "
+        "Caracas junto a Proteccion Civil llevan mas de seis horas "
+        "trabajando para controlar las llamas. Se contabilizan 3 galpones "
+        "involucrados en el incendio de gran magnitud."
+    )
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is True
+
+
+def test_incendio_vivienda_sin_victimas_se_descarta():
+    # Caso real: "Sofocan incendio en vivienda de San Antonio" (Diario La
+    # Nacion Tachira) -- sin heridos ni fallecidos mencionados.
+    texto = (
+        "Sofocan incendio en vivienda de San Antonio. El Cuerpo de "
+        "Bomberos atendio este sabado el llamado de emergencia por "
+        "incendio en una vivienda. Los funcionarios lograron sofocar las "
+        "llamas."
+    )
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is True
+
+
+def test_incendio_vivienda_con_heridos_no_se_descarta():
+    texto = (
+        "Incendio en una vivienda del sector El Paraiso deja tres heridos, "
+        "entre ellos un menor de edad, segun informaron los Bomberos."
+    )
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is False
+
+
+def test_incendio_galpon_con_negacion_de_heridos_pero_afectados_por_humo_no_se_descarta():
+    # Control de la trampa de negacion: "No hubo heridos" NO debe, por si
+    # sola, hacer que el filtro cuente "heridos" como evidencia -- pero
+    # "resultaron afectadas por el humo" (evidencia real, aunque leve) si
+    # debe contar.
+    texto = (
+        "Incendio en un galpon de alimentos. No hubo heridos, pero 5 "
+        "personas resultaron afectadas por el humo durante el incendio."
+    )
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is False
+
+
+def test_incendio_centro_comercial_no_pasa_por_este_filtro():
+    # Control: un incendio de centro comercial/local comercial (rango mas
+    # amplio, de un solo local a un centro comercial entero) NO pasa por
+    # este filtro -- deliberadamente mas estrecho que solo vivienda/
+    # apartamento/galpon, para no arriesgar descartar un incendio grande
+    # sin heridos explicitos (caso real ya publicado: incendio de un
+    # centro comercial completo en Nueva Esparta, sin victimas explicitas
+    # en el texto, considerado significativo igual).
+    texto = "Voraz incendio consume un reconocido centro comercial en la isla de Margarita."
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is False
+
+
+def test_incendio_edificio_no_pasa_por_este_filtro():
+    texto = "Un incendio en un edificio de Las Mercedes genero alarma en la zona."
+    assert _incendio_estructura_menor_sin_evidencia_fuerte(texto) is False
 
 
 # --- deslizamiento vs. colapso estructural viejo: (28-07-2026) ----------
@@ -126,6 +193,30 @@ def test_sismo_dano_real_sin_negar_si_cuenta_como_evidencia_fuerte():
         "Un sismo de magnitud 3.0 se registro en Monagas. Las autoridades "
         "de gestion de riesgo reportan danos estructurales en la zona."
     )
+    assert _sismo_sin_evidencia_fuerte(texto, "Medio Cualquiera") is False
+
+
+def test_sismo_colapso_de_arboles_no_cuenta_como_dano_sismico():
+    # Caso real (10-08-2026): un articulo sobre la actualizacion de
+    # magnitud de un sismo en Colombia traia pegada una frase de clima
+    # ajena y sin relacion ("las intensas lluvias tambien causaron el
+    # colapso de arboles..."), sin mencionar magnitud >=4 cerca de "se
+    # sintio" ni ninguna fuente sismologica oficial -- "colapso de"
+    # (generico, sin objeto) contaba como evidencia fuerte de dano
+    # sismico pese a no describir ningun dano relacionado con el sismo.
+    texto = (
+        "Actualizan magnitud del sismo en Colombia a 7.4 con epicentro en "
+        "San Jose del Palmar. Las intensas lluvias tambien causaron el "
+        "colapso de arboles a lo largo de la Carretera Panamericana."
+    )
+    assert _sismo_sin_evidencia_fuerte(texto, "Medio Cualquiera") is True
+
+
+def test_sismo_colapso_de_vivienda_si_cuenta_como_dano_sismico():
+    # Control: la version especifica ("colapso de vivienda"), que
+    # reemplazo al "colapso de" generico, debe seguir contando como
+    # evidencia fuerte de dano real.
+    texto = "Un sismo de magnitud 3.5 provoco colapso de vivienda en el sector."
     assert _sismo_sin_evidencia_fuerte(texto, "Medio Cualquiera") is False
 
 
