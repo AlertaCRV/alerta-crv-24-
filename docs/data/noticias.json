@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/",
+        "fecha": "2026-08-10T19:25:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-10T19:25:09+00:00",
+    "fecha_evento_temprana": "2026-08-10T19:25:09+00:00",
+    "fecha_deteccion": "2026-08-10T20:08:17.948870+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Aragua::2026-08-10",
+    "titulo": "Inundación en Aragua",
+    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 10/08/2026, 3:25 p.m.\n🔎 Detectado por el sistema: 10/08/2026, 4:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
