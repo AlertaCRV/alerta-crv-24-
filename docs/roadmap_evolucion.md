@@ -5256,3 +5256,91 @@ error. `incendio::Miranda::2026-08-08` y las 3 fuentes `PASADO_POR_
 FALLA_TECNICA` de Merida/Bolivar/Distrito Capital ya habían sido
 revisadas en la auditoría del 08-08-2026 (ver esa entrada) -- sin cambios
 desde entonces.
+
+---
+
+## Auditoría diaria automática (10-08-2026): la magnitud preliminar de un sismo ya publicado generaba una segunda alerta duplicada del mismo evento
+
+Auditoría de rutina de las alertas publicadas/actualizadas desde la sesión
+"A pedido del usuario (10-08-2026)" (commit `6f6d7f7`, 16:15 UTC), que ya
+había corregido el cluster de 4 alertas duplicadas del sismo de Colombia y
+2 incendios sin víctimas. Se encontró y corrigió 1 causa raíz, con 1
+alerta retractada.
+
+### El mismo sismo de Colombia sentido en Zulia se publicó una segunda vez, más de 3 horas después, con la magnitud preliminar todavía no actualizada
+
+`sismo::Zulia::2026-08-10::mag6.6` (Nuevo Dia de Falcón, "Gobernador
+Caldera: el Zulia sin afectaciones por sismo este 10Agos", 17:40:43 UTC)
+es el MISMO sismo real que `sismo::Zulia::2026-08-10::mag7.4` (La Verdad
+Zulia + El Periodico de Monagas, 14:34:38 UTC, ya conservado como la
+versión canónica tras la corrección de las 16:15 UTC) -- mismo estado,
+mismo día, mismo epicentro en San José del Palmar (Chocó, Colombia). La
+única fuente de esta segunda alerta describe explícitamente "el sismo de
+magnitud 6,6 que se registró en Colombia", la magnitud PRELIMINAR del
+mismo evento antes de que el Servicio Geológico Colombiano la revisara a
+7.4 (ver la fuente de El Periodico de Monagas en el hallazgo de las 16:15
+UTC de hoy) -- no un sismo distinto.
+
+**Causa raíz**: `_clave_evento()` (`scripts/state.py`) agrega la magnitud
+a la clave de dedup de sismo (`sismo::Zulia::2026-08-10::mag7.4` vs
+`::mag6.6`) precisamente para no fusionar dos sismos genuinamente
+distintos el mismo día en el mismo estado. Pero un sismo real casi
+siempre se reporta primero con una magnitud preliminar y después con la
+definitiva -- eso hace que la clave cambie aunque sea el mismo evento.
+`_mismo_sismo_ya_publicado()` (el mecanismo dedicado a detectar el mismo
+sismo bajo otra ubicación, corregido hoy mismo a las 16:15 UTC para el
+caso de MISMA magnitud/mención cruzada en ESTADOS distintos) tenía un
+`continue` explícito que SALTABA la comparación precisamente cuando
+`otra_ubicacion == evento["ubicacion"]` -- es decir, el caso del MISMO
+estado, el único donde `_clave_evento()` podía producir una clave
+distinta por la magnitud, quedaba sin cubrir. Y como `sismo` está
+excluido de la ventana de "mismo evento" de `_resolver_clave()` (ver
+`TIPOS_SIN_VENTANA_MISMO_EVENTO`), tampoco había ningún otro mecanismo de
+respaldo que lo detectara.
+
+**Corrección**: en `_mismo_sismo_ya_publicado()` (`scripts/state.py`), el
+caso `otra_ubicacion == evento["ubicacion"]` ahora retorna `True`
+directamente (mismo estado, mismo día calendario, tipo sismo → se
+descarta como duplicado) en vez de `continue` -- sin importar si la
+magnitud coincide o no. Se verificó que esto no afecta el caso de dos
+sismos genuinamente distintos el mismo día en estados DISTINTOS (ese
+camino sigue exigiendo magnitud coincidente o mención cruzada explícita,
+sin cambios).
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Zulia::2026-08-10::mag6.6` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`. `sismo::Zulia::2026-08-10::mag7.4` (la versión
+canónica, ya corregida a las 16:15 UTC) no se tocó. Se regeneró
+`docs/data/estadisticas.json`.
+
+### Revisado sin cambios
+
+`vialidad::Barinas::2026-08-09` (motorizado fallecido en colisión
+múltiple, severidad crítico): consistente con el texto de la fuente.
+`infraestructura_electrica::Miranda::2026-08-10` e
+`infraestructura_electrica::Distrito Capital::2026-08-10` (misma tormenta
+del 09/10-08, dos estados realmente afectados con evidencia propia de
+ubicación en cada uno -- Altos Mirandinos/Los Salias para Miranda, Los
+Chaguaramos/parroquia San Pedro para Distrito Capital): no son
+duplicados entre sí, cada uno tiene evidencia textual propia de su
+estado. `inundacion::Aragua::2026-08-10` (Las Tejerías, onda tropical):
+consistente. `orden_publico::Distrito Capital::2026-08-10` (El Pitazo,
+concentración de simpatizantes frente a la residencia de Perkins Rocha
+exigiendo su libertad, sin indicios de disturbios/heridos/detenidos en el
+texto): mismo patrón ya documentado como "Pendiente de discutir" en las
+sesiones del 02-08, 05-08 y 08-08-2026 (concentración/gremial sin
+evidencia de disrupción, sin marcador explícito de que fue pacífica) --
+no se corrigió nada, mismo riesgo ya explicado en esas entradas (diseñar
+un filtro para este patrón arriesga perder coberturas legítimas de
+disturbios reales en su fase inicial).
+
+### Pruebas
+
+2 casos nuevos en `tests/test_state.py`: el caso real de Zulia (mismo
+sismo, mismo estado, magnitud revisada de 7.4 a 6.6 preliminar → la
+segunda alerta se descarta) y un control de que un sismo distinto (otra
+magnitud) en un estado DISTINTO el mismo día sigue contando como alerta
+nueva. `python3 -m pytest tests/` → 230 passed, 5 xfailed (conocidos, sin
+relación), 1 xpassed (conocido, sin efecto real). `python3
+scripts/validar_configs.py` → OK.

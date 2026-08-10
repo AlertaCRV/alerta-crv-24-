@@ -64,7 +64,23 @@ def _mismo_sismo_ya_publicado(evento, publicados, fecha_dia):
     hoy bajo una ubicacion distinta -- para no repetir la alerta del mismo
     sismo sentido en varios estados. El alcance temporal es el dia
     calendario (no una ventana de horas): un medio puede publicar de noche
-    sobre un sismo ocurrido en la manana y sigue siendo el mismo evento."""
+    sobre un sismo ocurrido en la manana y sigue siendo el mismo evento.
+
+    Tambien cubre el MISMO estado: `_clave_evento()` agrega la magnitud a la
+    clave de sismo precisamente para distinguir dos sismos genuinamente
+    distintos el mismo dia en el mismo estado -- pero un sismo real suele
+    reportarse primero con una magnitud preliminar y despues con la
+    definitiva (revisada por el organismo sismologico), lo que hace que la
+    clave cambie aunque sea el mismo evento. Caso real (10-08-2026): el
+    mismo sismo de Colombia sentido en Zulia se publico primero como
+    `sismo::Zulia::2026-08-10::mag7.4` (14:34 UTC, magnitud ya revisada por
+    el Servicio Geologico Colombiano) y, mas de 3 horas despues, otra fuente
+    lo reporto de nuevo como `sismo::Zulia::2026-08-10::mag6.6` (17:40 UTC,
+    usando la magnitud preliminar aun no actualizada) -- mismo sismo, mismo
+    estado, mismo dia, tratado como una alerta nueva solo por la magnitud
+    distinta en la clave. Como `sismo` esta excluido de la ventana de
+    "mismo evento" de `_resolver_clave()` (ver TIPOS_SIN_VENTANA_MISMO_EVENTO),
+    ese mecanismo tampoco lo detecta -- se necesita este chequeo explicito."""
     if evento["tipo"] != "sismo":
         return False
     for clave, previo in publicados.items():
@@ -73,7 +89,7 @@ def _mismo_sismo_ya_publicado(evento, publicados, fecha_dia):
             continue
         otra_ubicacion = partes[1]
         if otra_ubicacion == evento["ubicacion"]:
-            continue
+            return True
         if evento.get("magnitud") is not None and len(partes) >= 4 and partes[3] == f"mag{evento['magnitud']}":
             return True
         if otra_ubicacion in evento.get("tambien_mencionado_en", []):

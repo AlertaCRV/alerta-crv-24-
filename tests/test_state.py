@@ -7,8 +7,8 @@ docs/roadmap_evolucion.md.
 from state import _resolver_clave, filtrar_nuevos
 
 
-def _evento(tipo, ubicacion, fecha_evento_temprana, severidad="alto", confirmado=True):
-    return {
+def _evento(tipo, ubicacion, fecha_evento_temprana, severidad="alto", confirmado=True, magnitud=None):
+    evento = {
         "tipo": tipo,
         "ubicacion": ubicacion,
         "severidad": severidad,
@@ -17,6 +17,9 @@ def _evento(tipo, ubicacion, fecha_evento_temprana, severidad="alto", confirmado
         "fecha_evento_temprana": fecha_evento_temprana,
         "fecha_deteccion": fecha_evento_temprana,
     }
+    if magnitud is not None:
+        evento["magnitud"] = magnitud
+    return evento
 
 
 def test_incendio_no_reutiliza_clave_de_otro_incendio_distinto():
@@ -90,3 +93,36 @@ def test_filtrar_nuevos_no_descarta_incendio_distinto_por_severidad_igual():
     nuevos_2 = filtrar_nuevos([segundo], publicados)
     assert len(nuevos_2) == 1
     assert nuevos_2[0]["clave_dedup"] != primero["clave_dedup"]
+
+
+def test_sismo_mismo_estado_con_magnitud_revisada_no_se_duplica():
+    # Caso real (10-08-2026): el mismo sismo de Colombia sentido en Zulia se
+    # publico primero con la magnitud ya revisada por el Servicio Geologico
+    # Colombiano (7.4, 14:34 UTC) y, mas de 3 horas despues, otra fuente lo
+    # reporto de nuevo usando la magnitud preliminar aun no actualizada
+    # (6.6, 17:40 UTC) -- mismo estado, mismo dia, mismo sismo real, pero la
+    # magnitud distinta en la clave (`_clave_evento`) lo hacia pasar como una
+    # alerta nueva. `_mismo_sismo_ya_publicado()` debe descartarlo.
+    publicados = {}
+    primer_reporte = _evento("sismo", "Zulia", "2026-08-10T13:30:20+00:00", magnitud=7.4)
+    nuevos = filtrar_nuevos([primer_reporte], publicados)
+    assert len(nuevos) == 1
+
+    segundo_reporte = _evento("sismo", "Zulia", "2026-08-10T15:03:26+00:00", magnitud=6.6)
+    nuevos_2 = filtrar_nuevos([segundo_reporte], publicados)
+    assert nuevos_2 == []
+
+
+def test_sismo_otro_estado_con_magnitud_distinta_si_es_evento_nuevo():
+    # Control: un sismo real DISTINTO (magnitud distinta y ningun indicio de
+    # ser el mismo evento) en un estado que ya tuvo un sismo publicado ese
+    # mismo dia sigue contando como una alerta nueva -- el fix no debe
+    # fusionar dos sismos genuinamente diferentes solo por coincidir tipo y
+    # estado el mismo dia calendario.
+    publicados = {}
+    primer_reporte = _evento("sismo", "Zulia", "2026-08-10T13:30:20+00:00", magnitud=7.4)
+    filtrar_nuevos([primer_reporte], publicados)
+
+    segundo_estado = _evento("sismo", "Tachira", "2026-08-10T16:00:00+00:00", magnitud=5.1)
+    nuevos = filtrar_nuevos([segundo_estado], publicados)
+    assert len(nuevos) == 1
