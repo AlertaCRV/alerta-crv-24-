@@ -110,5 +110,37 @@
   "inundacion::Apure::2026-08-08": {
     "intentos": 1,
     "ultima_vez": "2026-08-08T23:21:42.347406+00:00"
+  },
+  "sismo::La Guaira::2026-08-10": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-10T22:12:53.551923+00:00"
+  },
+  "inundacion::Aragua::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:13:17.714539+00:00"
+  },
+  "salud_publica::Monagas::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:13:41.885360+00:00"
+  },
+  "inundacion::Delta Amacuro::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:14:06.045002+00:00"
+  },
+  "infraestructura_electrica::Miranda::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:14:30.201658+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:14:54.361347+00:00"
+  },
+  "orden_publico::Anzoategui::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:15:18.521384+00:00"
+  },
+  "orden_publico::Sucre::2026-08-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-10T22:15:42.677521+00:00"
   }
 }
