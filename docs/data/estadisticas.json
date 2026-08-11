@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-11T18:07:43.341423+00:00",
+  "actualizado": "2026-08-11T22:32:35.824007+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-11T16:30:24+00:00"
+    "hasta": "2026-08-11T20:26:22+00:00"
   },
-  "total_eventos": 77,
+  "total_eventos": 79,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 14,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 9,
     "vialidad": 3,
-    "sismo": 4,
+    "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 1
   },
@@ -28,7 +28,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 8,
+      "total": 9,
       "confirmados": 4
     },
     {
@@ -92,6 +92,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Monagas",
       "total": 2,
       "confirmados": 0
@@ -104,11 +109,6 @@
     {
       "estado": "Aragua",
       "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
-      "total": 1,
       "confirmados": 0
     },
     {
@@ -135,7 +135,7 @@
       "inundacion": 1,
       "sequia": 1,
       "orden_publico": 1,
-      "sismo": 1
+      "sismo": 2
     },
     "Distrito Capital": {
       "deslizamiento": 1,
@@ -176,7 +176,8 @@
       "inundacion": 1
     },
     "Tachira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "sismo": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2
@@ -212,8 +213,8 @@
   },
   "por_severidad": {
     "alto": 7,
-    "critico": 8,
-    "sin_clasificar": 61,
+    "critico": 9,
+    "sin_clasificar": 62,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -253,7 +254,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 4
+      "2026-08": 6
     },
     "escasez_combustible": {
       "2026-08": 1
