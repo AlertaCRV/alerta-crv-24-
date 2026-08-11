@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "deslizamiento",
+  "tipo_label": "Deslizamiento/Derrumbe",
+  "cerrado": false,
+  "generado": "2026-08-11T18:07:47.254465+00:00",
+  "actualizado_hasta": "2026-08-11T18:07:29.180288+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 3,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un evento de deslizamiento/derrumbe en La Guaira, donde se buscaron personas bajo los escombros de edificios colapsados (Runrun.es). Este evento es notable ya que ocurrió en un contexto en el que la presidenta encargada, Delcy Rodríguez, ofreció ayuda humanitaria y un equipo de rescatistas a Colombia tras un terremoto en ese país (Runrun.es). En comparación con el período anterior (2026-07), se registraron 3 eventos de esta categoría, mientras que en este período solo se registró 1 (Comparación con el período anterior). Es importante destacar que el evento en La Guaira tuvo un impacto significativo, ya que muchas personas buscaron a sus familiares bajo los escombros sin apoyo estatal (Runrun.es).",
+  "fuentes": [
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/617317/rodriguez-ofrece-rescatistas-a-colombia-mientras-en-la-guaira-buscan-personas-bajo-los-escombros/"
+    }
+  ]
+}
