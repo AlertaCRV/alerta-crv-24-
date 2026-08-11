@@ -142,5 +142,33 @@
   "orden_publico::Sucre::2026-08-10": {
     "intentos": 1,
     "ultima_vez": "2026-08-10T22:15:42.677521+00:00"
+  },
+  "inundacion::Aragua::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:03:40.971146+00:00"
+  },
+  "salud_publica::Monagas::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:04:05.124084+00:00"
+  },
+  "sismo::Zulia::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:04:29.290492+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:04:53.438861+00:00"
+  },
+  "orden_publico::Anzoategui::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:05:17.682977+00:00"
+  },
+  "orden_publico::Sucre::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:05:41.863918+00:00"
+  },
+  "sequia::Zulia::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T00:06:06.030202+00:00"
   }
 }
