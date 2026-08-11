@@ -280,6 +280,36 @@ def test_dia_n_posterior_a_es_retrospectiva():
     assert _es_retrospectiva_obvia(texto) is True
 
 
+def test_a_casi_n_meses_con_cualificador_es_retrospectiva():
+    # Caso real (11-08-2026, Runrun.es, una vez corregido el bug de
+    # truncamiento "[…]" de fetch_rss.py que ocultaba esta frase por
+    # completo del texto que ve el clasificador): "a casi dos meses del
+    # doble terremoto, siguen buscando a sus familiares" no coincidia con
+    # el patron original porque "casi" se interpone entre "a" y el
+    # numero (el patron exige que el numero siga inmediatamente).
+    texto = (
+        "Mientras muchas personas siguen buscando a sus familiares bajo "
+        "los escombros de edificios colapsados en La Guaira, a casi dos "
+        "meses del doble terremoto, sin apoyo estatal."
+    )
+    assert _es_retrospectiva_obvia(texto) is True
+
+
+def test_doble_terremoto_es_retrospectiva():
+    # Variante de "doble sismo"/"doblete sismico" (ya cubiertas) con la
+    # palabra "terremoto" en vez de "sismo" -- la usada por Runrun.es para
+    # el mismo evento del caso anterior.
+    texto = "Tras el doble terremoto de La Guaira, los rescatistas siguen trabajando en la zona."
+    assert _es_retrospectiva_obvia(texto) is True
+
+
+def test_a_n_meses_sin_cualificador_sigue_funcionando_control():
+    # Control: la variante original sin "casi" (ya cubierta antes del
+    # cambio) no debe romperse con el cualificador ahora opcional.
+    texto = "A dos meses del terremoto, la reconstruccion avanza lentamente."
+    assert _es_retrospectiva_obvia(texto) is True
+
+
 # --- municipio/parroquia del cluster deben aparecer en las fuentes -------
 # aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
 

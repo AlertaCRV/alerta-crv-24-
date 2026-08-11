@@ -105,11 +105,25 @@ _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE = re.compile(
 
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
 # puntos suspensivos (a veces como caracter unico "…", a veces como
-# "[...]"). Cuando el resumen esta truncado, detalles clave (ubicacion
-# exacta, muertes, heridos) pueden quedar fuera del texto que ve el
-# clasificador -- de ahi que se intente traer el texto completo del
-# articulo desde su pagina en esos casos.
-_TRUNCADO_RE = re.compile(r"(…|\[\s*\.\.\.\s*\]|\.\.\.\s*$)\s*$")
+# "[...]", a veces como el caracter unico envuelto en corchetes "[…]" --
+# esta ultima variante, muy comun en plantillas de WordPress, no coincidia
+# con NINGUna de las dos alternativas ya cubiertas ("…" sola exige que no
+# haya nada mas despues, y "\[\s*\.\.\.\s*\]" exige tres puntos literales
+# dentro de los corchetes, no el caracter de elipsis). Caso real (11-08-
+# 2026, Runrun.es): un resumen truncado en "...que sufrio el vecino pais
+# la manana de este lunes, […]" nunca disparaba _obtener_texto_completo(),
+# dejando fuera del texto que ve el clasificador la frase clave que
+# identificaba el hecho como una cobertura retrospectiva de un sismo de
+# hace casi dos meses ("a casi dos meses del doble terremoto, siguen
+# buscando a sus familiares"), no un derrumbe nuevo -- eso, sumado a que
+# el propio articulo solo menciona La Guaira para contrastarla con un
+# sismo real ocurrido en Colombia, genero una alerta de deslizamiento
+# completamente falsa. Se verifico contra las 118 fuentes de data/
+# historico_fuentes_texto.jsonl que 33 (28%) terminan en este patron
+# "[…]" sin haber obtenido nunca su texto completo -- el mismo problema
+# potencial (aunque sin evidencia de haber cambiado el resultado en esos
+# otros 32 casos) para una porcion sustancial del corpus.
+_TRUNCADO_RE = re.compile(r"(…|\[\s*(?:\.\.\.|…)\s*\]|\.\.\.\s*$)\s*$")
 
 # "Caracas" es alias de Distrito Capital, pero tambien se usa a diario en
 # sentido coloquial del area metropolitana, que incluye municipios reales

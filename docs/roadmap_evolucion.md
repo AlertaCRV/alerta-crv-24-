@@ -5344,3 +5344,190 @@ magnitud) en un estado DISTINTO el mismo día sigue contando como alerta
 nueva. `python3 -m pytest tests/` → 230 passed, 5 xfailed (conocidos, sin
 relación), 1 xpassed (conocido, sin efecto real). `python3
 scripts/validar_configs.py` → OK.
+
+---
+
+## Auditoría diaria automática (11-08-2026): un sismo real en Colombia (mag 7.4, 10-08-2026) generó 5 alertas falsas en Venezuela por 4 causas raíz distintas, incluyendo un bug de truncamiento RSS que ocultaba texto clave en el 28% del corpus histórico
+
+Auditoría de rutina de las alertas publicadas/actualizadas desde la
+auditoría del 10-08-2026 (`sismo::Zulia::2026-08-10::mag7.4`, ya corregido
+ese día). Se encontraron y corrigieron 4 causas raíz distintas, todas
+relacionadas con la cobertura mediática del mismo terremoto real ocurrido
+en Colombia (magnitud 7.4, epicentro en San José del Palmar/Risaralda, 10
+de agosto), con 5 alertas retractadas por completo.
+
+### 1. `_TRUNCADO_RE` (fetch_rss.py) nunca reconocía el patrón de truncamiento "[…]" (corchetes + carácter único de elipsis) -- 33 de 118 fuentes históricas (28%) nunca obtuvieron su texto completo
+
+El regex original (`r"(…|\[\s*\.\.\.\s*\]|\.\.\.\s*$)\s*$"`) solo cubre
+"…" sola (sin corchetes) o "[...]" (tres puntos literales dentro de
+corchetes) -- ninguna de las dos coincide con "[…]" (corchetes
+envolviendo el carácter Unicode de elipsis único), una plantilla de
+truncamiento muy común en WordPress. Esto significaba que
+`_obtener_texto_completo()` nunca se disparaba para estas fuentes, y el
+clasificador solo veía el resumen truncado del RSS, sin los detalles
+clave que a veces solo aparecen más adelante en el artículo completo. Se
+verificó contra las 118 fuentes de `data/historico_fuentes_texto.jsonl`
+que 33 (28%) terminan en este patrón exacto sin haber obtenido nunca su
+texto completo -- una fracción sustancial del corpus, aunque solo se
+confirmó impacto real en el hallazgo 2 de abajo.
+
+**Corrección**: `_TRUNCADO_RE` ahora también reconoce `\[\s*(?:\.\.\.|…)\s*\]`
+(corchetes con tres puntos O el carácter de elipsis), además de los dos
+patrones ya cubiertos.
+
+### 2. Dos artículos sobre venezolanos residentes EN COLOMBIA que "recuerdan el desastre de La Guaira" (comparación con un sismo local de hace casi 2 meses) generaban 2 alertas falsas de sismo en el estado La Guaira, y un tercero sobre la misma comparación generaba una alerta falsa de deslizamiento
+
+`sismo::La Guaira::2026-08-10` (confirmado, crítico, El Impulso + El
+Carabobeño) y `sismo::La Guaira::2026-08-11` (El Carabobeño) citan
+artículos titulados "Venezolanos en Colombia sobreviven al terremoto y
+recuerdan el desastre de La Guaira: «Me removió todo»" -- el terremoto
+descrito es 100% extranjero ("el terremoto que azotó al sur del país [Colombia]
+y deja al menos 71 muertos", "Pereira, Cali, Manizales, Quibdó y Armenia
+concentran las situaciones más críticas"). La ÚNICA mención de "La
+Guaira" en ambos artículos es la comparación retrospectiva del titular,
+no evidencia de que el sismo de hoy haya ocurrido en Venezuela.
+
+Un tercer artículo del mismo día (`deslizamiento::La Guaira::2026-08-11`,
+Runrun.es, "Rodríguez ofrece rescatistas a Colombia mientras en La Guaira
+buscan personas bajo los escombros") generaba una alerta falsa de
+deslizamiento con el mismo patrón, pero más sutil: el resumen RSS
+almacenado terminaba truncado en "…que sufrió el vecino país la mañana
+de este lunes, […]" (el bug del hallazgo 1) -- se verificó el artículo
+completo (vía fetch directo) y confirma que "buscan personas bajo los
+escombros… en La Guaira" se refiere explícitamente a labores de rescate
+"a casi dos meses del doble terremoto" de La Guaira/Vargas (el sismo
+local ya cubierto y ya sujeto a los filtros de retrospectiva de
+`verify_ai.py`, ver 05-08 y 08-08-2026) -- no a un derrumbe nuevo de hoy,
+y mucho menos relacionado con el sismo de Colombia mencionado en la misma
+oración solo como motivo de la oferta de ayuda humanitaria de Delcy
+Rodríguez.
+
+**Causa raíz (dos síntomas relacionados)**:
+
+1. Ninguna frase de comparación retrospectiva ("recuerdan el desastre
+   de X") estaba en `LISTA_NEGRA_POR_ESTADO` para La Guaira.
+2. El filtro determinista de retrospectiva (`_PATRON_RETROSPECTIVA`,
+   `verify_ai.py`) exige que el número siga inmediatamente a "a"/"al
+   cumplirse" -- "a **casi** dos meses del doble terremoto" no
+   coincidía porque "casi" se interpone. Además, la variante "doble
+   terremoto" (usada por Runrun.es) no estaba cubierta, solo "doble
+   sismo"/"doblete sísmico". Este segundo bug solo se pudo confirmar
+   porque el fix del hallazgo 1 permite ahora obtener el texto completo
+   del artículo de Runrun.es en corridas futuras.
+
+**Corrección**:
+
+1. Nueva entrada `LISTA_NEGRA_POR_ESTADO["La Guaira"]` (`scripts/classify.py`):
+   `"desastre de la guaira"`, `"tragedia de la guaira"`, `"desastre de
+   vargas"`, `"tragedia de vargas"` -- se verificó contra el corpus
+   completo que estas frases son exclusivas de los 2 artículos
+   retractados (3 instantáneas).
+2. `_PATRON_RETROSPECTIVA` (`scripts/verify_ai.py`) ahora acepta un
+   calificador opcional (`"casi"`, `"cerca de"`, `"alrededor de"`) entre
+   "a"/"al cumplirse" y el número, y se agregó `"doble terremoto"`/
+   `"terremoto doble"` junto a las variantes de "sismo" ya cubiertas.
+
+**Corrección retroactiva**: se eliminaron por completo
+`sismo::La Guaira::2026-08-10`, `sismo::La Guaira::2026-08-11` y
+`deslizamiento::La Guaira::2026-08-11` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. Se regeneró `docs/data/estadisticas.json`.
+
+### 3. Dos venezolanos migrantes fallecidos en Pereira, Colombia (colapso de vivienda por el mismo terremoto) generaban una alerta de sismo CRÍTICO en Táchira, su pueblo natal -- no el lugar del hecho
+
+`sismo::Tachira::2026-08-11` (Nuevo Día de Falcón + El Periódico de
+Monagas, municipio Pedro María Ureña, severidad crítico) describe a "una
+pareja de venezolanos oriunda del municipio Pedro María Ureña, en el
+estado Táchira" que "perdieron la vida en Pereira, Colombia" cuando "la
+vivienda donde habitaban colapsara a causa de un fuerte terremoto
+registrado en el departamento de Risaralda" -- el hecho (colapso,
+fallecimiento) ocurrió enteramente en Colombia; Táchira solo identifica
+el pueblo natal de las víctimas, mencionado porque residían allí antes de
+emigrar. El mecanismo ya existente para eventos extranjeros
+(`_es_evento_extranjero_sin_municipio`, ver 01-08-2026) no cubre este
+caso porque exige la AUSENCIA de un municipio venezolano detectado -- aquí
+sí se detecta un municipio real (Pedro María Ureña), solo que es el
+origen de las víctimas, no la ubicación del hecho, y Pereira/Risaralda no
+están en `FRONTERA_EXTRANJERA_POR_ESTADO["Tachira"]` (ese mecanismo cubre
+municipios fronterizos como Cúcuta, no ciudades del interior de Colombia).
+
+**Corrección**: nueva función `_es_fallecimiento_migrante_en_extranjero()`
+(`scripts/classify.py`): si el texto contiene "oriundo/a de(l)"/"natural
+de(l)" y, dentro de una ventana de 300 caracteres después, tanto un verbo
+de fallecimiento ("murió", "fallecieron", "perdieron la vida"...) como la
+palabra "Colombia", se descarta la ubicación para ese ítem -- se verificó
+contra el corpus completo que esta combinación es exclusiva de las 2
+fuentes de este hallazgo.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Tachira::2026-08-11` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 4. El mismo sismo de Zulia (mag 7.4, 10-08-2026) se publicó una TERCERA vez un día después porque `_mismo_sismo_ya_publicado()` exigía el mismo día calendario exacto
+
+`sismo::Zulia::2026-08-11::mag7.4` (Notiapure, "Habitantes de Maracaibo
+evacuaron preventivamente edificios tras sismo en Colombia", PASADO_POR_
+FALLA_TECNICA) describe el mismo sismo de magnitud 7.4 ya publicado el
+día anterior como `sismo::Zulia::2026-08-10::mag7.4` ("el sismo de
+magnitud 7.4 que sacudió Colombia **este lunes**" -- el artículo es del
+martes 11, reaccionando un día después). Mismo estado, misma magnitud,
+mismo sismo real -- pero como la fuente de Notiapure se publicó al día
+calendario siguiente, `_mismo_sismo_ya_publicado()` (corregida el
+10-08-2026 para el caso de mismo día) no lo detectaba: comparaba
+`partes[2] != fecha_dia` de forma exacta, sin tolerancia de días.
+
+**Corrección**: `_mismo_sismo_ya_publicado()` (`scripts/state.py`) ahora
+tolera +/-1 día calendario entre el evento nuevo y cualquier entrada
+previa de tipo sismo en `publicados`, en vez de exigir el día exacto. Se
+verificó que un sismo genuinamente distinto en el mismo estado, separado
+por más de 1 día, sigue contando como alerta nueva (ver test de control).
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Zulia::2026-08-11::mag7.4` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`. `sismo::Zulia::2026-08-10::mag7.4` (la versión
+canónica) no se tocó. Se regeneró `docs/data/estadisticas.json`.
+
+### Revisado sin cambios
+
+`orden_publico::Anzoategui::2026-08-10` (El Tiempo de Anzoátegui,
+protesta pacífica en Cantaura por falta de agua, sin evidencia de
+disrupción): mismo patrón ya documentado como "Pendiente de discutir" en
+sesiones anteriores (02-08, 05-08, 08-08, 10-08-2026) -- no se corrigió
+nada, mismo riesgo ya explicado en esas entradas.
+`infraestructura_electrica::Anzoategui::2026-08-11` (Noticias de Aquí,
+cierre de autopista en Boca de Uchire por fallas eléctricas): consistente
+con el texto de la fuente, sin indicios de error.
+
+### Informes narrativos: 3 fuentes nuevas quedan con referencias a las 3 fuentes retractadas del hallazgo 2
+
+`docs/data/informes/2026-08_general.json`, `2026-08_sismo.json` y
+`2026-08_deslizamiento.json` listan las 3 fuentes de La Guaira retractadas
+hoy (El Carabobeño, El Impulso de Lara, Runrun.es). Mismo caso que
+sesiones anteriores: `GROQ_API_KEY` no disponible en este entorno;
+`scripts/build_informes.py` regenerará los informes afectados en la
+próxima corrida de producción. Confirmado con
+`scripts/detectar_inconsistencias.py` (9 fuentes muertas en 6 informes: 6
+ya conocidas de sesiones anteriores + 3 nuevas de esta sesión).
+
+### Pruebas
+
+11 casos nuevos: 4 en `tests/casos_clasificacion.jsonl` (el caso real de
+"desastre de la guaira" + control de inundación real en La Guaira sin esa
+frase; el caso real del migrante fallecido en Colombia + control de sismo
+real en Táchira sin ese patrón), 4 en `tests/test_verify_ai_filtros.py`
+("a casi dos meses" + "doble terremoto" + control del patrón original sin
+calificador, ya cubierto antes del cambio), 4 en
+`tests/test_fetch_rss_limpieza.py` (el caso real de "[…]" + controles de
+que "[...]"/"…" sola/texto no truncado siguen funcionando), 2 en
+`tests/test_state.py` (el caso real de Zulia un día después + control de
+un sismo distinto muy separado en el tiempo). Regresión completa contra
+las 74 fuentes vigentes de `data/historico_fuentes_texto.jsonl` (ya con
+las 5 instantáneas retractadas eliminadas): sin cambios inesperados.
+`python3 -m pytest tests/` → 244 passed, 5 xfailed (conocidos, sin
+relación), 1 xpassed (conocido, sin efecto real). `python3
+scripts/validar_configs.py` → OK. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados que sesiones anteriores (sin relación con estos hallazgos), 9
+fuentes muertas en 6 informes (ver arriba).

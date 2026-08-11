@@ -7,7 +7,7 @@ Cada caso reproduce un hallazgo real ya documentado en
 docs/roadmap_evolucion.md.
 """
 
-from fetch_rss import _limpiar_texto
+from fetch_rss import _TRUNCADO_RE, _limpiar_texto
 
 
 def test_tambien_puedes_leer_se_elimina():
@@ -107,3 +107,33 @@ def test_estado_seguido_de_pleca_al_inicio_del_titular_propio_tambien_se_elimina
 def test_pleca_sin_nombre_de_estado_antes_no_se_toca():
     texto = "Publicado el 2026-08-07 | Seccion Sucesos. Un incendio afecto una vivienda."
     assert _limpiar_texto(texto) == texto
+
+
+# --- _TRUNCADO_RE: deteccion de resumenes RSS truncados ------------------
+
+def test_truncado_con_corchetes_y_caracter_de_elipsis_se_detecta():
+    # Caso real (11-08-2026, Runrun.es): un resumen truncado en "...que
+    # sufrio el vecino pais la manana de este lunes, […]" (corchetes con el
+    # CARACTER de elipsis unico, no tres puntos literales) nunca disparaba
+    # _obtener_texto_completo() -- el regex original solo cubria "…" sola
+    # (sin corchetes) o "[...]" (tres puntos literales dentro de
+    # corchetes), ninguna de las dos coincide con "[…]". Se verifico contra
+    # las 118 fuentes de data/historico_fuentes_texto.jsonl que 33 (28%)
+    # terminan en este patron sin haber obtenido nunca su texto completo.
+    texto = "...que sufrió el vecino país la mañana de este lunes, […]"
+    assert _TRUNCADO_RE.search(texto) is not None
+
+
+def test_truncado_con_corchetes_y_tres_puntos_sigue_funcionando_control():
+    texto = "Los funcionarios lograron sofocar las llamas [...]"
+    assert _TRUNCADO_RE.search(texto) is not None
+
+
+def test_truncado_con_caracter_de_elipsis_sola_sigue_funcionando_control():
+    texto = "El incendio fue controlado por los bomberos…"
+    assert _TRUNCADO_RE.search(texto) is not None
+
+
+def test_texto_completo_no_truncado_no_se_detecta_control():
+    texto = "El incendio fue controlado por los bomberos en su totalidad."
+    assert _TRUNCADO_RE.search(texto) is None
