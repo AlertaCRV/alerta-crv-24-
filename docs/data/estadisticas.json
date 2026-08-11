@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-11T04:54:16.974649+00:00",
+  "actualizado": "2026-08-11T11:28:43.561725+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-11T03:15:49+00:00"
   },
-  "total_eventos": 74,
+  "total_eventos": 75,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 14,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 9,
     "vialidad": 3,
-    "sismo": 3,
+    "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 1
   },
@@ -102,6 +102,11 @@
       "confirmados": 0
     },
     {
+      "estado": "La Guaira",
+      "total": 2,
+      "confirmados": 1
+    },
+    {
       "estado": "Tachira",
       "total": 1,
       "confirmados": 0
@@ -110,11 +115,6 @@
       "estado": "Merida",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
-      "total": 1,
-      "confirmados": 1
     }
   ],
   "cruce_estado_tipo": {
@@ -206,13 +206,13 @@
       "infraestructura_electrica": 1
     },
     "La Guaira": {
-      "sismo": 1
+      "sismo": 2
     }
   },
   "por_severidad": {
     "alto": 7,
     "critico": 8,
-    "sin_clasificar": 58,
+    "sin_clasificar": 59,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -251,7 +251,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "escasez_combustible": {
       "2026-08": 1
