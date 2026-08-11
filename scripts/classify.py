@@ -73,6 +73,22 @@ LISTA_NEGRA_POR_ESTADO = {
     # nombre de un estado distinto (ver el otro caso ya cubierto arriba en
     # LISTA_NEGRA_POR_ESTADO["Sucre"]).
     "Distrito Capital": ["chacao", "baruta", "el hatillo", "municipio sucre"],
+    # Caso real (11-08-2026): dos articulos sobre venezolanos residentes EN
+    # COLOMBIA que sobrevivieron al terremoto de magnitud 7.4 que sacudio
+    # ese pais ("recuerdan el desastre de La Guaira: <<Me removio todo>>")
+    # generaron 2 alertas falsas de sismo en el estado La Guaira -- la
+    # unica mencion de "La Guaira" en ambos articulos es una comparacion
+    # retrospectiva con un sismo venezolano de hace casi dos meses (el
+    # "doble terremoto" de La Guaira/Vargas ya cubierto por
+    # _PATRON_RETROSPECTIVA en verify_ai.py), no evidencia de que el sismo
+    # de hoy haya ocurrido en Venezuela. El propio texto confirma que el
+    # hecho es 100% extranjero: "el terremoto que azoto al sur del
+    # [Colombia]... deja al menos 71 muertos", "Pereira, Cali, Manizales,
+    # Quibdo y Armenia concentran las situaciones mas criticas". Se
+    # verifico contra las 118 fuentes de data/historico_fuentes_texto.jsonl
+    # que esta frase es exclusiva de estos 2 articulos (3 instantaneas).
+    "La Guaira": ["desastre de la guaira", "tragedia de la guaira",
+                  "desastre de vargas", "tragedia de vargas"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -160,6 +176,43 @@ def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
     if municipio and municipio not in _MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA.get(ubicacion, set()):
         return False
     return any(lugar in texto_norm for lugar in lugares)
+
+
+# A diferencia de _es_evento_extranjero_sin_municipio() (donde la ausencia
+# de municipio es la señal clave), aqui el municipio SI aparece en el
+# texto -- pero como el lugar de ORIGEN/residencia previa de una victima
+# migrante, no como donde ocurrio el hecho. Caso real (11-08-2026, dos
+# fuentes -- Nuevo Dia de Falcon y El Periodico de Monagas -- sobre el
+# mismo hecho real): "una pareja de venezolanos oriunda del municipio
+# Pedro Maria Urena, en el estado Tachira, perdieron la vida en Pereira,
+# Colombia" tras el colapso de su vivienda durante el terremoto de
+# Colombia generaba una alerta de sismo CRITICO en Tachira, como si el
+# colapso hubiera ocurrido alli -- ninguna de las 2 fuentes describe
+# ningun dano/afectacion real en Tachira, solo el pueblo natal de las
+# victimas. Se verifico contra las 118 fuentes de data/
+# historico_fuentes_texto.jsonl que "oriundo/a de(l)" combinado con un
+# verbo de fallecimiento y "Colombia" en la misma ventana es exclusivo de
+# estas 2 fuentes (mismo hecho real).
+_ORIGEN_MIGRANTE_RE = re.compile(r"\boriund[oa]\s+de(?:l)?\b|\bnatural\s+de(?:l)?\b")
+_MUERTE_MIGRANTE_EXTRANJERO = [
+    "perdio la vida", "perdieron la vida", "murio", "murieron",
+    "fallecio", "fallecieron", "quedaron sepultados", "quedo sepultado",
+]
+_VENTANA_FALLECIMIENTO_MIGRANTE = 300
+
+
+def _es_fallecimiento_migrante_en_extranjero(texto_norm):
+    """True si el texto describe, dentro de una ventana razonable tras la
+    frase "oriundo/a de(l)", tanto un verbo de fallecimiento como la
+    palabra "Colombia" -- patron de un migrante venezolano fallecido en el
+    extranjero, donde el unico estado venezolano mencionado es su pueblo
+    natal, no el lugar del hecho."""
+    match = _ORIGEN_MIGRANTE_RE.search(texto_norm)
+    if not match:
+        return False
+    ventana = texto_norm[match.end():match.end() + _VENTANA_FALLECIMIENTO_MIGRANTE]
+    tiene_muerte = any(_contiene_palabra_clave(ventana, m) for m in _MUERTE_MIGRANTE_EXTRANJERO)
+    return tiene_muerte and _contiene_palabra_clave(ventana, "colombia")
 
 # Un keyword suelto de tipo no siempre significa que el articulo trata
 # realmente de ese tipo de evento. Caso real: "Activan cerco epidemiologico
@@ -1215,6 +1268,8 @@ def clasificar_item(item):
         nuevo["severidad"] = detectar_severidad(texto_severidad, nuevo["tipos"])
         nuevo["municipio"], nuevo["parroquia"] = detectar_municipio_parroquia(item["texto"], ubicacion)
         if _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, nuevo["municipio"]):
+            continue
+        if _es_fallecimiento_migrante_en_extranjero(texto_norm):
             continue
         resultado.append(nuevo)
 

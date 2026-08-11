@@ -126,3 +126,37 @@ def test_sismo_otro_estado_con_magnitud_distinta_si_es_evento_nuevo():
     segundo_estado = _evento("sismo", "Tachira", "2026-08-10T16:00:00+00:00", magnitud=5.1)
     nuevos = filtrar_nuevos([segundo_estado], publicados)
     assert len(nuevos) == 1
+
+
+def test_sismo_mismo_estado_dia_siguiente_no_se_duplica():
+    # Caso real (11-08-2026): el mismo sismo de Colombia sentido en Zulia
+    # (mag 7.4, ocurrido el lunes 10-08) genero una TERCERA alerta un dia
+    # despues -- una fuente (Notiapure) publico el martes 11-08 una nota de
+    # reaccion ("Habitantes de Maracaibo evacuaron preventivamente...")
+    # cuya fecha_evento_temprana (fecha de PUBLICACION de esa nota, no del
+    # sismo en si) cae en el dia calendario siguiente. Antes del fix,
+    # `_mismo_sismo_ya_publicado()` exigia el mismo dia EXACTO (partes[2]
+    # != fecha_dia) y no encontraba el reporte original del dia anterior.
+    publicados = {}
+    primer_reporte = _evento("sismo", "Zulia", "2026-08-10T14:34:38+00:00", magnitud=7.4)
+    nuevos = filtrar_nuevos([primer_reporte], publicados)
+    assert len(nuevos) == 1
+
+    reporte_dia_siguiente = _evento("sismo", "Zulia", "2026-08-11T20:26:22+00:00", magnitud=7.4)
+    nuevos_2 = filtrar_nuevos([reporte_dia_siguiente], publicados)
+    assert nuevos_2 == []
+
+
+def test_sismo_mismo_estado_muy_separado_en_el_tiempo_si_es_evento_nuevo():
+    # Control: un sismo real DISTINTO en el mismo estado, separado por mas
+    # de 1 dia calendario del anterior, sigue contando como una alerta
+    # nueva -- la tolerancia de +/-1 dia agregada para el caso de arriba no
+    # debe fusionar sismos separados por semanas/meses solo por compartir
+    # estado.
+    publicados = {}
+    primer_reporte = _evento("sismo", "Zulia", "2026-08-10T14:34:38+00:00", magnitud=7.4)
+    filtrar_nuevos([primer_reporte], publicados)
+
+    reporte_lejano = _evento("sismo", "Zulia", "2026-08-20T09:00:00+00:00", magnitud=6.0)
+    nuevos = filtrar_nuevos([reporte_lejano], publicados)
+    assert len(nuevos) == 1

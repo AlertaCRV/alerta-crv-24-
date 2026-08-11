@@ -80,12 +80,31 @@ def _mismo_sismo_ya_publicado(evento, publicados, fecha_dia):
     estado, mismo dia, tratado como una alerta nueva solo por la magnitud
     distinta en la clave. Como `sismo` esta excluido de la ventana de
     "mismo evento" de `_resolver_clave()` (ver TIPOS_SIN_VENTANA_MISMO_EVENTO),
-    ese mecanismo tampoco lo detecta -- se necesita este chequeo explicito."""
+    ese mecanismo tampoco lo detecta -- se necesita este chequeo explicito.
+
+    La comparacion de dia tolera +/-1 dia calendario (no exige el mismo
+    dia exacto). Caso real (11-08-2026): el mismo sismo de Colombia
+    sentido en Zulia (mag 7.4, ocurrido el lunes 10-08) genero una TERCERA
+    alerta -- `sismo::Zulia::2026-08-11::mag7.4` -- porque una fuente
+    (Notiapure) publico al dia siguiente, martes 11-08, una nota de
+    reaccion ("Habitantes de Maracaibo evacuaron preventivamente...")
+    cuya `fecha_evento_temprana` (fecha de publicacion de esa fuente, no
+    del sismo en si) cae en el dia calendario siguiente -- fuera del
+    chequeo exacto `partes[2] != fecha_dia` de antes. Misma magnitud,
+    mismo estado, mismo sismo real ("el sismo de magnitud 7.4 que sacudio
+    Colombia este lunes"), solo que reportado con un dia de rezago."""
     if evento["tipo"] != "sismo":
         return False
+    fecha_dia_actual = dateparser.isoparse(fecha_dia).date()
     for clave, previo in publicados.items():
         partes = clave.split("::")
-        if len(partes) < 3 or partes[0] != "sismo" or partes[2] != fecha_dia:
+        if len(partes) < 3 or partes[0] != "sismo":
+            continue
+        try:
+            fecha_previa = dateparser.isoparse(partes[2]).date()
+        except ValueError:
+            continue
+        if abs((fecha_dia_actual - fecha_previa).days) > 1:
             continue
         otra_ubicacion = partes[1]
         if otra_ubicacion == evento["ubicacion"]:

@@ -48,25 +48,11 @@
     "fecha_evento_temprana": "2026-08-10T19:25:09+00:00",
     "municipio": null
   },
-  "sismo::La Guaira::2026-08-10": {
-    "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-11T04:53:48.963131+00:00",
-    "fecha_evento_temprana": "2026-08-10T20:45:00+00:00",
-    "municipio": null
-  },
   "orden_publico::Anzoategui::2026-08-10": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-11T04:54:08.854209+00:00",
     "fecha_evento_temprana": "2026-08-10T20:41:02+00:00",
-    "municipio": null
-  },
-  "sismo::La Guaira::2026-08-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-11T11:28:25.809294+00:00",
-    "fecha_evento_temprana": "2026-08-11T03:15:49+00:00",
     "municipio": null
   },
   "infraestructura_electrica::Anzoategui::2026-08-11": {
@@ -75,26 +61,5 @@
     "fecha_deteccion": "2026-08-11T14:48:29.755496+00:00",
     "fecha_evento_temprana": "2026-08-11T13:05:30+00:00",
     "municipio": null
-  },
-  "deslizamiento::La Guaira::2026-08-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-11T18:07:29.180288+00:00",
-    "fecha_evento_temprana": "2026-08-11T16:30:24+00:00",
-    "municipio": null
-  },
-  "sismo::Tachira::2026-08-11": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-11T22:28:45.927214+00:00",
-    "fecha_evento_temprana": "2026-08-11T14:06:02+00:00",
-    "municipio": "Pedro María Ureña"
-  },
-  "sismo::Zulia::2026-08-11::mag7.4": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-11T22:31:46.094353+00:00",
-    "fecha_evento_temprana": "2026-08-11T20:26:22+00:00",
-    "municipio": "Maracaibo"
   }
 }

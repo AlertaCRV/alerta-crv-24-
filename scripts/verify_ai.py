@@ -46,18 +46,29 @@ ESPERA_BASE_REINTENTO_429 = 5
 # depender del juicio del modelo (que en la practica ha fallado en casos
 # como "a un mes del terremoto en Vargas...").
 _NUMEROS = r"(un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+)"
+# Cualificador opcional entre "a"/"al cumplirse" y el numero -- caso real
+# (11-08-2026, Runrun.es, una vez corregido el bug de truncamiento "[…]"
+# de fetch_rss.py que ocultaba esta frase por completo): "a casi dos meses
+# del doble terremoto, siguen buscando a sus familiares" no coincidia con
+# el patron porque "casi" se interpone entre "a" y el numero -- el patron
+# original exige que el numero siga inmediatamente a "a"/"al cumplirse".
+_CUALIFICADOR_APROX = r"(?:(?:casi|cerca de|alrededor de)\s+)?"
 _PATRON_RETROSPECTIVA = re.compile(
-    rf"\b(a|al cumplirse)\s+{_NUMEROS}\s+"
+    rf"\b(a|al cumplirse)\s+{_CUALIFICADOR_APROX}{_NUMEROS}\s+"
     r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
     r"|\baniversario\b"
     rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b"
-    # "doble sismo"/"doblete sismico" son los nombres con que los medios
-    # venezolanos se refieren al sismo doble de La Guaira/Vargas de hace un
-    # mes -- ninguna cobertura de un sismo genuinamente nuevo usaria ese
-    # termino exacto. Caso real que se escapo: "tras el doblete sismico,
-    # los rescatistas encontraron..." (un articulo sobre labores de rescate
-    # del terremoto anterior, mal clasificado como deslizamiento nuevo).
+    # "doble sismo"/"doblete sismico"/"doble terremoto" son los nombres
+    # con que los medios venezolanos se refieren al sismo doble de La
+    # Guaira/Vargas de hace un mes -- ninguna cobertura de un sismo
+    # genuinamente nuevo usaria ese termino exacto. Caso real que se
+    # escapo: "tras el doblete sismico, los rescatistas encontraron..."
+    # (un articulo sobre labores de rescate del terremoto anterior, mal
+    # clasificado como deslizamiento nuevo). Ampliado (11-08-2026) con
+    # "doble terremoto"/"terremoto doble", la variante usada por Runrun.es
+    # para el mismo evento ("a casi dos meses del doble terremoto").
     r"|\bdoblet?e?\s+sismic[oa]\b|\bdoble\s+sismo\b|\bsismo\s+doble\b"
+    r"|\bdoble\s+terremoto\b|\bterremoto\s+doble\b"
     # Variante con la unidad de tiempo ANTES del numero ("dia 41 posterior
     # a los terremotos...", en vez de "41 dias despues de"). Caso real
     # (05-08-2026): un articulo sobre el rescate de cuerpos "en el dia 41
