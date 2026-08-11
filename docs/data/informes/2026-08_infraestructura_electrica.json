@@ -3,16 +3,20 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-10T05:09:27.735256+00:00",
-  "actualizado_hasta": "2026-08-08T22:06:52.249467+00:00",
-  "total_eventos": 10,
+  "generado": "2026-08-11T14:48:34.810519+00:00",
+  "actualizado_hasta": "2026-08-11T14:48:29.755496+00:00",
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
-    "actual": 10
+    "actual": 13
   },
-  "narrativa": "En el período de 2026-08, se registraron 10 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior (2026-07), cuando se registraron 5 eventos (El Periodico de Monagas). Entre los eventos más destacados se encuentran los cortes de luz en Zulia, que ponen en riesgo a pacientes renales, con interrupciones de hasta seis horas seguidas en cada jornada (El Periodico de Monagas). Además, se reportaron protestas en Carabobo contra los constantes apagones, con vecinos de El Trigal concentrados en las inmediaciones de Quinta Carabobo para reclamar a las autoridades (El Periodico de Monagas). En Caracas, ciudadanos reportaron apagones en varias zonas, incluyendo El Recreo, La Pastora y Plaza Venezuela, la noche del 1 de agosto (El Pitazo). También se registraron protestas en Barinas, donde un grupo de personas exigieron soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas debido a los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron con cacerolas en mano por más de 10 horas sin energía eléctrica (Maturin News). Estos eventos demuestran la gravedad de la crisis eléctrica en Venezuela, que afecta a diversas regiones del país, incluyendo Zulia, Carabobo, Caracas, Barinas, Mérida y Maturín (Noticias de Aqui, Primicia, Turimiquire).",
+  "narrativa": "En el período de agosto de 2026, se registraron 13 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, julio de 2026, cuando se registraron 5 eventos (Diario El Tiempo). Durante este período, se reportaron fallas eléctricas en varias zonas de Caracas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, la avenida Libertador, la parroquia Altagracia, la avenida Panteón, Santa Rosalía y La Candelaria (Noticias de Aqui). Además, se produjeron apagones en el estado Zulia, que ponen en riesgo a pacientes renales, según informó El Periodico de Monagas. En el estado Miranda, fuertes lluvias causaron apagones y destrozos, y se reportaron caídas de árboles en la comunidad de Potrerito, en el municipio Los Salias (Diario El Tiempo, El Periodico de Monagas). En Carabobo, habitantes de los municipios de El Trigal y Valencia protestaron contra los constantes apagones y exigieron respuestas a las autoridades (El Periodico de Monagas). En Barinas, un grupo de personas protestó en la sede de Corpoelec exigiendo soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas por los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron por más de 10 horas sin energía eléctrica, y en Anzoátegui, habitantes de Boca de Uchire cerraron la autopista para reclamar por fallas eléctricas (Maturin News, Noticias de Aqui).",
   "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/fuerte-tormenta-con-rafagas-de-viento-causaron-arboles-caidos-y-fallas-electricas-este-domingo-en-caracas-y-miranda/"
+    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
@@ -20,6 +24,10 @@
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/protestan-contra-los-constantes-apagones-en-carabobo/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-causaron-apagones-y-destrozos-en-miranda/"
     },
     {
       "nombre": "El Pitazo",
@@ -40,6 +48,10 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/11/cerraron-autopista-en-boca-de-uchire-oara-reclamar-por-fallas-electricas/"
     },
     {
       "nombre": "Primicia (Bolivar)",

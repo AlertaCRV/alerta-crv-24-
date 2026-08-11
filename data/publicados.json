@@ -89,5 +89,12 @@
     "fecha_deteccion": "2026-08-11T11:28:25.809294+00:00",
     "fecha_evento_temprana": "2026-08-11T03:15:49+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-11T14:48:29.755496+00:00",
+    "fecha_evento_temprana": "2026-08-11T13:05:30+00:00",
+    "municipio": null
   }
 }

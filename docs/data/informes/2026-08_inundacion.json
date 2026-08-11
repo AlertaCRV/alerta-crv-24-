@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-10T05:09:53.371259+00:00",
-  "actualizado_hasta": "2026-08-05T06:18:16.046081+00:00",
-  "total_eventos": 6,
+  "generado": "2026-08-11T14:48:39.108385+00:00",
+  "actualizado_hasta": "2026-08-10T20:08:17.948870+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 6
+    "actual": 7
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron 6 eventos de inundación en Venezuela, en comparación con los 7 eventos registrados en el período anterior (julio de 2026). Entre los eventos más destacados se encuentran la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona, según informó (El Impulso (Lara)). La inundación en Yaracuy también fue reportada por (Turimiquire (Sucre)) y (El Impulso (Lara)), destacando la severidad crítica de la situación. Además, la inundación en Apure, específicamente en el sector Cachamero - El Ripial, fue atendida por la Alcaldía del municipio Páez, como se informó en (Notiapure). Otros eventos notables incluyeron la crecida de un río en Barinas que impidió a estudiantes asistir a su graduación, según (El Pitazo), y las lluvias torrenciales que causaron estragos e inundaciones en el mismo estado, reportadas por (La Prensa de Monagas). La capital del estado Yaracuy también se vio afectada por lluvias y vientos huracanados que provocaron caídas de árboles y anegaciones, como se mencionó en (Yaracuy al Dia).",
+  "narrativa": "Durante el período de agosto de 2026, se registraron 7 eventos de inundación en Venezuela, igualando el número de eventos del período anterior (julio de 2026). Entre los eventos más destacados se encuentran la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona, según informó El Impulso (Lara). La misma fuente también reportó inundaciones en cuatro municipios de Yaracuy. Además, Turimiquire (Sucre) informó sobre la muerte de María Hernández, quien falleció por una descarga eléctrica en su casa inundada en el caserío San Amaya del municipio Manuel Monge, estado Yaracuy. Otra inundación ocurrió en Apure, específicamente en el sector Cachamero - El Ripial, donde el alcalde del municipio Páez lideró trabajos de mitigación, como se menciona en Notiapure. Estos eventos de inundación afectaron varias regiones del país, incluyendo Barinas, donde estudiantes no pudieron asistir a su graduación debido a la crecida de un río, según El Pitazo. La Prensa de Monagas también reportó inundaciones en Barinas y en las vías de Las Tejerías en Aragua, mientras que Yaracuy al Dia informó sobre anegaciones y caída de árboles en la capital yaracuyana. Todos estos eventos demuestran la gravedad de las inundaciones en el país durante este período.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -32,6 +32,10 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
     },
     {
       "nombre": "Yaracuy al Dia",
