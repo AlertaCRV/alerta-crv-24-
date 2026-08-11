@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-11T11:28:43.561725+00:00",
+  "actualizado": "2026-08-11T14:48:30.376371+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-11T03:15:49+00:00"
+    "hasta": "2026-08-11T13:05:30+00:00"
   },
-  "total_eventos": 75,
+  "total_eventos": 76,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 14,
-    "infraestructura_electrica": 17,
+    "infraestructura_electrica": 18,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 15,
@@ -47,6 +47,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Anzoategui",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 5,
       "confirmados": 1
@@ -55,11 +60,6 @@
       "estado": "Carabobo",
       "total": 4,
       "confirmados": 1
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 4,
-      "confirmados": 0
     },
     {
       "estado": "Trujillo",
@@ -160,7 +160,7 @@
       "orden_publico": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 1
@@ -212,7 +212,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 8,
-    "sin_clasificar": 59,
+    "sin_clasificar": 60,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -225,7 +225,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 12
+      "2026-08": 13
     },
     "deslizamiento": {
       "2026-07": 3
