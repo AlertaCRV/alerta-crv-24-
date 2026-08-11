@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-10T05:10:05.935213+00:00",
-  "actualizado_hasta": "2026-08-08T23:16:00.673887+00:00",
-  "total_eventos": 11,
+  "generado": "2026-08-11T18:07:53.589280+00:00",
+  "actualizado_hasta": "2026-08-11T04:54:08.854209+00:00",
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 11
+    "actual": 13
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 11 eventos relacionados con el orden público en Venezuela, lo que supone un aumento significativo en comparación con el período anterior, 2026-07, cuando se registraron 2 eventos (El Impulso, El Periodico de Monagas). Uno de los eventos destacados fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja, así como la excarcelación de sus allegados y el respeto a sus derechos fundamentales (El Impulso). Además, se produjeron protestas en siete estados del país, incluyendo Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, debido a los constantes y prolongados cortes de electricidad, donde los vecinos tomaron calles, quemaron neumáticos y tocaron cacerolas (El Periodico de Monagas, El Pitazo). También se registraron manifestaciones en la Isla de Margarita por fallas en el servicio hídrico, donde vecinos del sector La Guardia, en el municipio Díaz, decidieron cerrar la avenida Taguantar tras cumplir cinco meses sin recibir el recurso por tuberías (El Tiempo). Otros eventos notables incluyeron la protesta de trabajadores de Cantv en Carabobo, que exigieron la restitución inmediata de sus beneficios (La Patilla), y la concentración de dirigencia y simpatizantes del partido Vente Venezuela en el estado Sucre, que denunciaron la precariedad de los servicios públicos como consecuencia de la corrupción (La Patilla). Asimismo, se produjeron disturbios en un encuentro de fútbol entre Portuguesa FC y Carabobo FC en Barquisimeto, donde supuestos hinchas locales atacaron a los autobuses que trasladaban a la fanaticada del Portuguesa FC (Noticia al Dia).",
+  "narrativa": "En el período de 2026-08, se registraron un total de 13 eventos relacionados con el orden público en Venezuela, lo que supone un aumento significativo en comparación con el período anterior, 2026-07, cuando se registraron 2 eventos. Uno de los eventos destacados fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja (El Impulso). Además, trabajadores y jubilados de la Gobernación de Lara se concentraron en Barquisimeto para exigir el pago del bono de profesionalización y rechazar el Sistema Patria (El Impulso). En varios estados del país, como Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, se reportaron protestas por cortes eléctricos, con vecinos quemando neumáticos y tocando cacerolas en reclamo por la falta de electricidad (El Periodico de Monagas, El Pitazo). También se registraron manifestaciones en Carabobo y Aragua en rechazo a la crisis eléctrica, con cacerolazos y represión (El Pitazo). En el estado Nueva Esparta, específicamente en la Isla de Margarita, se llevaron a cabo manifestaciones por fallas en el servicio hídrico, con vecinos cerrando la avenida Taguantar en el municipio Díaz (El Tiempo). En el estado Anzoátegui, sectores de Cantaura realizaron una protesta pacífica por la falta de agua, que llevaban más de tres semanas sin el servicio (El Tiempo). En el estado Falcón, el sindicato Sintrasalud Falcón protestó por ser excluidos del bono de vacaciones (La Manana). Trabajadores de Cantv en Carabobo exigieron la reactivación de servicios de salud (La Patilla), mientras que el partido Vente Venezuela protestó en el estado Sucre por la precariedad de los servicios públicos, atribuyendo esta situación a la corrupción (La Patilla). Finalmente, sindicalistas exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de todos los sectores (La Verdad).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -34,8 +34,16 @@
       "link": "https://elpitazo.net/regiones/regresan-los-cacerolazos-venezolanos-protestan-a-diario-en-rechazo-a-los-apagones/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/manifestantes-llegaron-a-la-casa-de-perkins-rocha-para-reclamar-su-libertad/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/sectores-de-cantaura-realizaron-protesta-pacifica-por-la-falta-de-agua/"
     },
     {
       "nombre": "La Manana (Falcon)",

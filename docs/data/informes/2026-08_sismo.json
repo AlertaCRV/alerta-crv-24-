@@ -3,16 +3,32 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-08-10T05:10:55.027350+00:00",
-  "actualizado_hasta": "2026-08-02T15:45:52.656504+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-11T18:07:57.902975+00:00",
+  "actualizado_hasta": "2026-08-11T11:28:25.809294+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 4
   },
-  "narrativa": "En el período de 2026-08, se registró un evento sísmico significativo en Venezuela. Un sismo de magnitud 4.2 se produjo en el centro-occidente del país, con una profundidad de 8.1 km (Primicia). Este sismo fue sentido en varios estados, incluyendo Yaracuy, Falcón, Lara y Carabobo (Primicia). En comparación con el período anterior (2026-07), cuando no se registraron eventos sísmicos, este período presentó un total de 1 evento (Primicia).",
+  "narrativa": "En el período de 2026-08, se registraron 4 eventos sísmicos, en comparación con el período anterior (2026-07) en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue el sismo en La Guaira, que tuvo una severidad crítica (El Impulso (Lara)). Además, se registró un terremoto en Colombia con una magnitud de 7,4, que afectó varias ciudades del país, incluyendo Pereira, Cali, Manizales, Quibdó y Armenia, con personas fallecidas, heridas y atrapadas, edificios colapsados y afectaciones en infraestructura hospitalaria, aeropuertos, servicios públicos y sistemas de transporte (El Carabobeno). El epicentro del terremoto se ubicó en San José del Palmar, departamento de Chocó, con una profundidad de 96 kilómetros (El Periodico de Monagas). El terremoto también se sintió en el Zulia, Venezuela (La Verdad (Zulia)). Otro sismo se registró en el centro-occidente de Venezuela, con una magnitud de 4,2 y una profundidad de 8,1 km, y se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia (Bolivar)).",
   "fuentes": [
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/10/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo-10ago/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/mundo/sismo-de-magnitud-74-se-registro-este-lunes-en-colombia/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/terremoto-de-7-4-en-colombia-sacude-el-zulia/"
+    },
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/registran-sismo-de-magnitud-4-2-en-el-centro-occidente/"
