@@ -4,6 +4,34 @@
     "ubicacion": "La Guaira",
     "municipio": null,
     "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.6,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo/",
+        "fecha": "2026-08-11T03:15:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-11T03:15:49+00:00",
+    "fecha_evento_temprana": "2026-08-11T03:15:49+00:00",
+    "fecha_deteccion": "2026-08-11T11:28:25.809294+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-08-11",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 10/08/2026, 11:15 p.m.\n🔎 Detectado por el sistema: 11/08/2026, 7:28 a.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
     "severidad": "critico",
     "score": 1.25,
     "confirmado": true,
