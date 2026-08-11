@@ -1,11 +1,4 @@
 {
-  "orden_publico::Lara::2026-08-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T04:20:42.308816+00:00",
-    "fecha_evento_temprana": "2026-08-07T23:26:50+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Merida::2026-08-08": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -74,6 +67,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-10T20:08:17.948870+00:00",
     "fecha_evento_temprana": "2026-08-10T19:25:09+00:00",
+    "municipio": null
+  },
+  "sismo::La Guaira::2026-08-10": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-11T04:53:48.963131+00:00",
+    "fecha_evento_temprana": "2026-08-10T20:45:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Anzoategui::2026-08-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-11T04:54:08.854209+00:00",
+    "fecha_evento_temprana": "2026-08-10T20:41:02+00:00",
     "municipio": null
   }
 }
