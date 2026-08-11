@@ -144,11 +144,27 @@
     "ultima_vez": "2026-08-10T22:15:42.677521+00:00"
   },
   "sismo::Zulia::2026-08-11": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-11T00:04:29.290492+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-11T20:29:22.735440+00:00"
   },
   "infraestructura_electrica::Distrito Capital::2026-08-11": {
     "intentos": 1,
     "ultima_vez": "2026-08-11T00:04:53.438861+00:00"
+  },
+  "salud_publica::Monagas::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T20:28:34.423412+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T20:28:58.587764+00:00"
+  },
+  "orden_publico::Nueva Esparta::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T20:29:46.885238+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-11T20:30:11.032505+00:00"
   }
 }
