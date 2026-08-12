@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-12T18:45:06.004517+00:00",
+  "actualizado": "2026-08-12T23:36:28.266112+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-12T18:21:24+00:00"
+    "hasta": "2026-08-12T21:56:01+00:00"
   },
-  "total_eventos": 83,
+  "total_eventos": 87,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 15,
-    "infraestructura_electrica": 19,
+    "infraestructura_electrica": 23,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 19,
@@ -24,7 +24,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 13,
+      "total": 14,
       "confirmados": 3
     },
     {
@@ -34,12 +34,12 @@
     },
     {
       "estado": "Barinas",
-      "total": 7,
+      "total": 8,
       "confirmados": 1
     },
     {
       "estado": "Bolivar",
-      "total": 7,
+      "total": 8,
       "confirmados": 1
     },
     {
@@ -53,14 +53,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Anzoategui",
       "total": 5,
       "confirmados": 0
-    },
-    {
-      "estado": "Carabobo",
-      "total": 4,
-      "confirmados": 1
     },
     {
       "estado": "Miranda",
@@ -116,7 +116,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "orden_publico": 2
     },
     "Lara": {
@@ -139,7 +139,7 @@
       "orden_publico": 5,
       "incendio": 1,
       "vialidad": 1,
-      "infraestructura_electrica": 4
+      "infraestructura_electrica": 5
     },
     "Trujillo": {
       "inundacion": 1,
@@ -148,7 +148,7 @@
     "Barinas": {
       "deslizamiento": 1,
       "inundacion": 3,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "vialidad": 1
     },
     "Sucre": {
@@ -162,7 +162,7 @@
       "orden_publico": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 1,
       "escasez_combustible": 1,
       "incendio": 2
@@ -208,7 +208,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 8,
-    "sin_clasificar": 67,
+    "sin_clasificar": 71,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -221,7 +221,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 14
+      "2026-08": 18
     },
     "deslizamiento": {
       "2026-07": 3
