@@ -183,40 +183,64 @@
     "intentos": 1,
     "ultima_vez": "2026-08-12T05:18:09.321759+00:00"
   },
-  "infraestructura_electrica::Bolivar::2026-08-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-12T21:34:47.311065+00:00"
-  },
   "infraestructura_electrica::Zulia::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:31:30.382973+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:30:46.269576+00:00"
   },
   "orden_publico::Zulia::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:31:58.165912+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:32:23.390366+00:00"
   },
   "infraestructura_electrica::Lara::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:32:22.328394+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:31:10.534102+00:00"
   },
   "explosion::Miranda::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:32:46.489595+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:34:00.452653+00:00"
   },
   "inundacion::Apure::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:33:10.648058+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:34:24.714938+00:00"
   },
   "deslizamiento::Lara::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:33:34.808401+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:35:13.343907+00:00"
   },
   "infraestructura_electrica::Nueva Esparta::2026-08-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-12T21:33:58.964300+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:35:37.604275+00:00"
   },
   "sequia::Guarico::2026-08-12": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T23:36:01.882195+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-08-12": {
     "intentos": 1,
-    "ultima_vez": "2026-08-12T21:34:23.115785+00:00"
+    "ultima_vez": "2026-08-12T23:30:21.908283+00:00"
+  },
+  "sismo::Tachira::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:31:34.831803+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:31:59.097221+00:00"
+  },
+  "salud_publica::La Guaira::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:32:47.651231+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:33:11.890609+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:33:36.154159+00:00"
+  },
+  "orden_publico::Apure::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T23:34:49.051023+00:00"
   }
 }

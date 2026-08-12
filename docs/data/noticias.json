@@ -1,5 +1,109 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/",
+        "fecha": "2026-08-12T21:56:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:56:01+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:56:01+00:00",
+    "fecha_deteccion": "2026-08-12T23:29:47.527325+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-08-12",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 12/08/2026, 5:56 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
+        "fecha": "2026-08-12T21:43:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:43:17+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
+    "fecha_deteccion": "2026-08-12T23:29:50.916171+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-12",
+    "titulo": "Falla eléctrica en Municipio Valencia, Carabobo",
+    "texto": "📌 Falla eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "El Valle",
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
+        "fecha": "2026-08-12T21:43:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:43:17+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
+    "fecha_deteccion": "2026-08-12T23:29:57.641348+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-12",
+    "titulo": "Falla eléctrica en Parroquia El Valle, Distrito Capital",
+    "texto": "📌 Falla eléctrica en Parroquia El Valle, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Valle, Distrito Capital\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/",
+        "fecha": "2026-08-12T14:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T14:30:00+00:00",
+    "fecha_evento_temprana": "2026-08-12T14:30:00+00:00",
+    "fecha_deteccion": "2026-08-12T23:36:26.126858+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-12",
+    "titulo": "Falla eléctrica en Bolivar",
+    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 12/08/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:36 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
