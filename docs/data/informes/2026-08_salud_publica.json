@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-08",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-08-12T12:38:48.739946+00:00",
+  "actualizado_hasta": "2026-08-12T05:17:03.873115+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 1,
+    "actual": 2
+  },
+  "narrativa": "En el período de 2026-08, se registraron 2 eventos relacionados con la salud pública en Venezuela, lo que supone un aumento en comparación con el período anterior (2026-07), cuando se registró 1 evento (Maturin News). Uno de los eventos más críticos fue el reportado en Lara, donde se denunció la muerte de tres reclusos y se exigió investigar posibles omisiones en cárceles del país (Maturin News). Además, en el municipio Cedeño del estado Monagas, específicamente en la población de San Félix de Cantalicio, se denunció un brote de dengue con al menos 15 personas afectadas, lo que se atribuyó a la falta de desmalezamiento y el incremento de lluvias en el sector (El Periodico de Monagas). Estos eventos resaltan la importancia de la atención a la salud pública en diferentes regiones del país.",
+  "fuentes": [
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
+    }
+  ]
+}
