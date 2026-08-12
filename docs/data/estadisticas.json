@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-08-11T23:27:00.207654+00:00",
+  "actualizado": "2026-08-12T05:18:13.165931+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-11T13:05:30+00:00"
+    "hasta": "2026-08-12T01:46:29+00:00"
   },
-  "total_eventos": 74,
+  "total_eventos": 81,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 14,
-    "infraestructura_electrica": 18,
+    "inundacion": 15,
+    "infraestructura_electrica": 19,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 15,
-    "salud_publica": 1,
+    "orden_publico": 18,
+    "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 9,
     "vialidad": 3,
@@ -28,7 +28,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 8,
+      "total": 9,
       "confirmados": 4
     },
     {
@@ -43,7 +43,12 @@
     },
     {
       "estado": "Lara",
-      "total": 5,
+      "total": 6,
+      "confirmados": 1
+    },
+    {
+      "estado": "Yaracuy",
+      "total": 6,
       "confirmados": 1
     },
     {
@@ -52,17 +57,27 @@
       "confirmados": 0
     },
     {
-      "estado": "Yaracuy",
-      "total": 5,
-      "confirmados": 1
-    },
-    {
       "estado": "Carabobo",
       "total": 4,
       "confirmados": 1
     },
     {
+      "estado": "Falcon",
+      "total": 4,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Apure",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
+      "estado": "Monagas",
       "total": 3,
       "confirmados": 0
     },
@@ -72,29 +87,14 @@
       "confirmados": 1
     },
     {
-      "estado": "Falcon",
+      "estado": "Nueva Esparta",
       "total": 3,
-      "confirmados": 0
+      "confirmados": 1
     },
     {
       "estado": "Sucre",
       "total": 2,
       "confirmados": 0
-    },
-    {
-      "estado": "Apure",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 2,
-      "confirmados": 1
     },
     {
       "estado": "Aragua",
@@ -120,7 +120,7 @@
     },
     "Lara": {
       "inundacion": 2,
-      "salud_publica": 1,
+      "salud_publica": 2,
       "orden_publico": 2
     },
     "Zulia": {
@@ -129,7 +129,7 @@
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "sismo": 1
     },
     "Distrito Capital": {
@@ -168,13 +168,14 @@
     },
     "Apure": {
       "crisis_migratoria": 1,
-      "inundacion": 1
+      "inundacion": 2
     },
     "Tachira": {
       "deslizamiento": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "salud_publica": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -182,16 +183,17 @@
     },
     "Nueva Esparta": {
       "incendio": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Yaracuy": {
       "inundacion": 3,
       "sismo": 1,
-      "incendio": 1
+      "incendio": 1,
+      "infraestructura_electrica": 1
     },
     "Aragua": {
       "orden_publico": 1,
@@ -203,8 +205,8 @@
   },
   "por_severidad": {
     "alto": 7,
-    "critico": 7,
-    "sin_clasificar": 59,
+    "critico": 8,
+    "sin_clasificar": 65,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -213,11 +215,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 7
+      "2026-08": 8
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 13
+      "2026-08": 14
     },
     "deslizamiento": {
       "2026-07": 3
@@ -227,10 +229,11 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 13
+      "2026-08": 16
     },
     "salud_publica": {
-      "2026-07": 1
+      "2026-07": 1,
+      "2026-08": 2
     },
     "crisis_migratoria": {
       "2026-07": 4

@@ -1,11 +1,4 @@
 {
-  "orden_publico::Sucre::2026-08-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-08T23:16:00.673887+00:00",
-    "fecha_evento_temprana": "2026-08-08T21:57:44+00:00",
-    "municipio": null
-  },
   "vialidad::Barinas::2026-08-09": {
     "severidad": "critico",
     "confirmado": false,
@@ -61,5 +54,54 @@
     "fecha_deteccion": "2026-08-11T14:48:29.755496+00:00",
     "fecha_evento_temprana": "2026-08-11T13:05:30+00:00",
     "municipio": null
+  },
+  "orden_publico::Falcon::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:16:22.135594+00:00",
+    "fecha_evento_temprana": "2026-08-11T22:38:21+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:16:25.514292+00:00",
+    "fecha_evento_temprana": "2026-08-11T22:38:21+00:00",
+    "municipio": "Maracaibo"
+  },
+  "salud_publica::Lara::2026-08-12": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:16:42.269024+00:00",
+    "fecha_evento_temprana": "2026-08-12T01:46:29+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:16:45.574380+00:00",
+    "fecha_evento_temprana": "2026-08-11T20:20:45+00:00",
+    "municipio": "San Felipe"
+  },
+  "salud_publica::Monagas::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:17:03.873115+00:00",
+    "fecha_evento_temprana": "2026-08-11T19:11:28+00:00",
+    "municipio": "Cedeño"
+  },
+  "inundacion::Apure::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:17:30.202143+00:00",
+    "fecha_evento_temprana": "2026-08-11T20:46:56+00:00",
+    "municipio": "Páez"
+  },
+  "orden_publico::Nueva Esparta::2026-08-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T05:17:45.050601+00:00",
+    "fecha_evento_temprana": "2026-08-11T19:36:22+00:00",
+    "municipio": "García"
   }
 }
