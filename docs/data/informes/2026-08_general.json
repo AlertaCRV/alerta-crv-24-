@@ -3,27 +3,19 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-11T08:33:52.481692+00:00",
-  "actualizado_hasta": "2026-08-11T04:54:08.854209+00:00",
-  "total_eventos": 46,
+  "generado": "2026-08-12T09:45:49.219024+00:00",
+  "actualizado_hasta": "2026-08-12T05:17:45.050601+00:00",
+  "total_eventos": 53,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 28,
-    "actual": 46
+    "actual": 53
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 46 eventos, lo que supone un aumento en comparación con el período anterior, 2026-07, que tuvo 28 eventos registrados. Entre los eventos más destacados se encuentran el Incidente vial en Distrito Capital (Noticia al Dia (Zulia)), la Inundación en Yaracuy (Turimiquire (Sucre) y El Impulso (Lara)), el Incendio en Miranda (La Prensa de Monagas), la Inundación en Apure (Notiapure), el Incendio en Yaracuy (La Prensa de Lara), el Incidente vial en Barinas (La Noticia de Barinas) y el Sismo en La Guaira (El Impulso (Lara)). La Inundación en Yaracuy causó daños estructurales en el puente La Galletera y dejó una persona fallecida, además de importantes pérdidas materiales (El Impulso (Lara)). Un incendio en un edificio de Las Mercedes dejó dos personas lesionadas (La Prensa de Monagas). En Barinas, un motorizado perdió la vida y al menos otras dos personas resultaron lesionadas en una colisión múltiple (La Noticia de Barinas). En Yaracuy, una mujer de 49 años murió al recibir una descarga eléctrica cuando su casa se inundó (Turimiquire (Sucre)). En Apure, el alcalde de Páez lideró trabajos de mitigación en el sector Cachamero - El Ripial tras la crecida del río Arauca (Notiapure). Estos eventos resaltan la importancia de la atención y la prevención en materia de emergencias en Venezuela.",
+  "narrativa": "En el período de 2026-08, se registraron un total de 53 eventos, lo que representa un aumento en comparación con el período anterior, que tuvo 28 eventos (Noticia al Dia (Zulia)). Entre los eventos destacados se encuentra el incidente vial en Distrito Capital, que resultó en víctimas fatales y heridos (Noticia al Dia (Zulia)). Además, se produjeron inundaciones en Yaracuy, que causaron daños materiales y afectaron a varios municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, con un saldo trágico de una persona fallecida y pérdidas en el sector agropecuario (El Impulso (Lara)). Un incendio en Miranda dejó dos personas lesionadas en el municipio Baruta (La Prensa de Monagas). También se registraron inundaciones en Apure, específicamente en el sector Cachamero - El Ripial, donde el alcalde José Ángel Ramírez lideró trabajos de mitigación (Notiapure). Un incendio en Yaracuy resultó en heridos y daños materiales (La Prensa de Lara). En Barinas, un incidente vial en la avenida Nueva Barinas resultó en una persona fallecida y varias heridas (La Noticia de Barinas). Además, se denunció la muerte de tres reclusos en centros penitenciarios de Carabobo, Miranda y Lara, lo que generó exigencias de investigación sobre posibles omisiones (Maturin News). Todos estos eventos resaltan la importancia de la atención y la prevención en materia de emergencias en Venezuela.",
   "fuentes": [
-    {
-      "nombre": "El Carabobeno",
-      "link": "https://www.el-carabobeno.com/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo/"
-    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/08/10/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo-10ago/"
     },
     {
       "nombre": "La Noticia de Barinas",
@@ -36,6 +28,10 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
     },
     {
       "nombre": "Notiapure",
@@ -94,6 +90,10 @@
       "link": "https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-causaron-apagones-y-destrozos-en-miranda/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
     },
@@ -116,6 +116,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/politica/manifestantes-llegaron-a-la-casa-de-perkins-rocha-para-reclamar-su-libertad/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sin-categoria/jubilados-petroleros-cumplen-segundo-dia-de-protesta-en-la-campina/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
@@ -152,14 +156,6 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
     }
   ]
 }
