@@ -184,7 +184,39 @@
     "ultima_vez": "2026-08-12T05:18:09.321759+00:00"
   },
   "infraestructura_electrica::Bolivar::2026-08-12": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-12T21:34:47.311065+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-12": {
     "intentos": 1,
-    "ultima_vez": "2026-08-12T18:45:05.196012+00:00"
+    "ultima_vez": "2026-08-12T21:31:30.382973+00:00"
+  },
+  "orden_publico::Zulia::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:31:58.165912+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:32:22.328394+00:00"
+  },
+  "explosion::Miranda::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:32:46.489595+00:00"
+  },
+  "inundacion::Apure::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:33:10.648058+00:00"
+  },
+  "deslizamiento::Lara::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:33:34.808401+00:00"
+  },
+  "infraestructura_electrica::Nueva Esparta::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:33:58.964300+00:00"
+  },
+  "sequia::Guarico::2026-08-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-12T21:34:23.115785+00:00"
   }
 }
