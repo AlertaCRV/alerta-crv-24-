@@ -1,30 +1,31 @@
 {
-  "actualizado": "2026-08-12T05:18:13.165931+00:00",
+  "actualizado": "2026-08-12T18:45:06.004517+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-12T01:46:29+00:00"
+    "hasta": "2026-08-12T18:21:24+00:00"
   },
-  "total_eventos": 81,
+  "total_eventos": 83,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 15,
     "infraestructura_electrica": 19,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 18,
+    "orden_publico": 19,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 9,
     "vialidad": 3,
     "sismo": 2,
     "escasez_combustible": 1,
-    "sequia": 1
+    "sequia": 1,
+    "explosion": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 12,
-      "confirmados": 2
+      "total": 13,
+      "confirmados": 3
     },
     {
       "estado": "Zulia",
@@ -62,6 +63,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Miranda",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Falcon",
       "total": 4,
       "confirmados": 0
@@ -80,11 +86,6 @@
       "estado": "Monagas",
       "total": 3,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 3,
-      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -135,7 +136,7 @@
     "Distrito Capital": {
       "deslizamiento": 1,
       "inundacion": 1,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "incendio": 1,
       "vialidad": 1,
       "infraestructura_electrica": 4
@@ -179,7 +180,8 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "explosion": 1
     },
     "Nueva Esparta": {
       "incendio": 1,
@@ -206,7 +208,7 @@
   "por_severidad": {
     "alto": 7,
     "critico": 8,
-    "sin_clasificar": 65,
+    "sin_clasificar": 67,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -229,7 +231,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 16
+      "2026-08": 17
     },
     "salud_publica": {
       "2026-07": 1,
@@ -252,6 +254,9 @@
       "2026-08": 1
     },
     "sequia": {
+      "2026-08": 1
+    },
+    "explosion": {
       "2026-08": 1
     }
   }
