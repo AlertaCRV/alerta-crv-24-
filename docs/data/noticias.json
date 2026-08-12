@@ -1,6 +1,63 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/fotos-protesta-y-piquete-de-la-pnb-a-las-afueras-del-melia-caracas-sede-del-dialogo-entre-an-2015-y-el-chavismo/",
+        "fecha": "2026-08-12T18:21:24+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/coalicion-sindical-marcho-en-caracas-para-exigir-calendario-electoral/",
+        "fecha": "2026-08-12T18:16:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T18:21:24+00:00",
+    "fecha_evento_temprana": "2026-08-12T18:16:03+00:00",
+    "fecha_deteccion": "2026-08-12T18:44:20.967109+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-08-12",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 12/08/2026, 2:21 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 2:44 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/fotos-protesta-y-piquete-de-la-pnb-a-las-afueras-del-melia-caracas-sede-del-dialogo-entre-an-2015-y-el-chavismo/\n  • La Manana (Falcon): https://lamananadigital.com/coalicion-sindical-marcho-en-caracas-para-exigir-calendario-electoral/"
+  },
+  {
+    "tipo": "explosion",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": "El Cafetal",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/artefacto-explosivo-en-centro-comercial-de-baruta/",
+        "fecha": "2026-08-12T16:02:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T16:02:30+00:00",
+    "fecha_evento_temprana": "2026-08-12T16:02:30+00:00",
+    "fecha_deteccion": "2026-08-12T18:44:27.493628+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "explosion::Miranda::2026-08-12",
+    "titulo": "Explosión en Parroquia El Cafetal, Municipio Baruta, Miranda",
+    "texto": "📌 Explosión en Parroquia El Cafetal, Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Cafetal, Municipio Baruta, Miranda\n🕒 Hecho reportado: 12/08/2026, 12:02 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 2:44 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/artefacto-explosivo-en-centro-comercial-de-baruta/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Falcon",
     "municipio": null,
     "parroquia": null,
@@ -1538,202 +1595,5 @@
     "clave_dedup": "infraestructura_electrica::Barinas::2026-07-30",
     "titulo": "Falla eléctrica en Barinas",
     "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 29/07/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 30/07/2026, 4:00 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/?p=94961"
-  },
-  {
-    "tipo": "crisis_migratoria",
-    "ubicacion": "Anzoategui",
-    "municipio": "Piritu",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.5,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
-        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741418361C69B8A5633E6725A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
-        "fecha": "2026-07-29T17:55:40+00:00"
-      }
-    ],
-    "es_reporte_filial": true,
-    "resumen_consolidado": "🏠 Albergados en: municipio Piritu, estado Anzoategui\n👥 Adultos: 41\n👥 Personas: 65",
-    "fecha_evento": "2026-07-29T17:55:40+00:00",
-    "fecha_evento_temprana": "2026-07-29T17:55:40+00:00",
-    "fecha_deteccion": "2026-07-29T18:43:55.122236+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "crisis_migratoria::Anzoategui::2026-07-29",
-    "titulo": "Reporte de personas desplazadas",
-    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Piritu, Anzoategui\n🕒 Hecho reportado: 29/07/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:43 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n🏠 Albergados en: municipio Piritu, estado Anzoategui\n👥 Adultos: 41\n👥 Personas: 65"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "San Pedro",
-    "severidad": "alto",
-    "score": 1.65,
-    "confirmado": false,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/",
-        "fecha": "2026-07-29T17:06:27+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/",
-        "fecha": "2026-07-29T17:06:27+00:00"
-      },
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/",
-        "fecha": "2026-07-29T17:06:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T17:06:27+00:00",
-    "fecha_evento_temprana": "2026-07-29T17:06:27+00:00",
-    "fecha_deteccion": "2026-07-29T18:42:42.510666+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Distrito Capital::2026-07-29",
-    "titulo": "Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 29/07/2026, 1:06 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 2:42 p.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Barinas",
-    "municipio": "Pedraza",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/",
-        "fecha": "2026-07-29T16:22:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T16:22:17+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:22:17+00:00",
-    "fecha_deteccion": "2026-07-29T17:57:59.498569+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Barinas::2026-07-29",
-    "titulo": "Inundación en Municipio Pedraza, Barinas",
-    "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 29/07/2026, 12:22 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
-  },
-  {
-    "tipo": "crisis_migratoria",
-    "ubicacion": "Apure",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.5,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
-        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB741497BA10F0F19591EE7617A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
-        "fecha": "2026-07-29T16:18:23+00:00"
-      }
-    ],
-    "es_reporte_filial": true,
-    "resumen_consolidado": "🏠 Albergados en: estado Apure\n👥 Familias: 91\n👥 Personas (grupo familiar): 187\n👥 Total de familias: 111\n👥 Total de personas (grupo familiar): 229",
-    "fecha_evento": "2026-07-29T16:18:23+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:18:23+00:00",
-    "fecha_deteccion": "2026-07-29T16:26:00.583403+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "crisis_migratoria::Apure::2026-07-29",
-    "titulo": "Reporte de personas desplazadas",
-    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 29/07/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:26 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n🏠 Albergados en: estado Apure\n👥 Familias: 91\n👥 Personas (grupo familiar): 187\n👥 Total de familias: 111\n👥 Total de personas (grupo familiar): 229"
-  },
-  {
-    "tipo": "crisis_migratoria",
-    "ubicacion": "Falcon",
-    "municipio": "Colina",
-    "parroquia": "Las Calderas",
-    "severidad": "sin_clasificar",
-    "score": 1.5,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (07/07/2026)",
-        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
-        "fecha": "2026-07-07T16:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": true,
-    "resumen_consolidado": "📍 Procedencia: Estado La Guaira\n🏠 Albergados en: Parroquia Las Calderas, Municipio Colina, estado Falcon\n👥 Personas: 11\n👥 Familias: 3\n👥 Adultos: 5\n👥 Adultos mayores: 1\n👥 Niños: 5\n👥 Masculinos: 6\n👥 Femeninas: 4",
-    "fecha_evento": "2026-07-07T16:00:00+00:00",
-    "fecha_evento_temprana": "2026-07-07T16:00:00+00:00",
-    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "crisis_migratoria::Falcon::2026-07-07",
-    "titulo": "Reporte de personas desplazadas",
-    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Las Calderas, Municipio Colina, Falcon\n🕒 Hecho reportado: 07/07/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 1 (score 1.5)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n📍 Procedencia: Estado La Guaira\n🏠 Albergados en: Parroquia Las Calderas, Municipio Colina, estado Falcon\n👥 Personas: 11\n👥 Familias: 3\n👥 Adultos: 5\n👥 Adultos mayores: 1\n👥 Niños: 5\n👥 Masculinos: 6\n👥 Femeninas: 4"
-  },
-  {
-    "tipo": "crisis_migratoria",
-    "ubicacion": "Falcon",
-    "municipio": "Zamora",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 3.0,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (28/07/2026)",
-        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74143F5741A53845251F0ABFA5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
-        "fecha": "2026-07-28T16:00:00+00:00"
-      },
-      {
-        "nombre": "Reporte de filial (sala.situacional.nacional@cruzroja.ve) (29/07/2026)",
-        "link": "https://mail.google.com/mail/u/0/#search/rfc822msgid:\r\n <DM8PR08MB74148286BEEECDAE5AB33CE4A5CA2@DM8PR08MB7414.namprd08.prod.outlook.com",
-        "fecha": "2026-07-29T16:17:25+00:00"
-      }
-    ],
-    "es_reporte_filial": true,
-    "resumen_consolidado": "📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22",
-    "fecha_evento": "2026-07-29T16:17:25+00:00",
-    "fecha_evento_temprana": "2026-07-28T16:00:00+00:00",
-    "fecha_deteccion": "2026-07-29T16:25:36.371467+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "crisis_migratoria::Falcon::2026-07-28",
-    "titulo": "Reporte de personas desplazadas",
-    "texto": "🏢 REPORTE DE FILIAL\n\n📌 Reporte de personas desplazadas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Zamora, Falcon\n🕒 Hecho reportado: 29/07/2026, 12:17 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:25 p.m.\n📊 Fuentes independientes: 2 (score 3.0)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\n📋 Resumen consolidado:\n📍 Procedencia: Estado La Guaira\n🏠 Albergados en: municipio Zamora, estado Falcon\n👥 Familias: 22\n👥 Número de familias: 17\n👥 Número de personas: 42\n👥 Masculinos: 22\n👥 Femeninas: 20\n👥 Adultos: 22\n👥 Adultos mayores: 9\n👥 Niños: 9\n👥 Adolescentes: 2\n👥 Personas: 22"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Lara",
-    "municipio": "Torres",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/",
-        "fecha": "2026-07-29T16:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-07-29T16:20:02+00:00",
-    "fecha_evento_temprana": "2026-07-29T16:20:02+00:00",
-    "fecha_deteccion": "2026-07-29T16:23:34.990226+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Lara::2026-07-29",
-    "titulo": "Salud pública en Municipio Torres, Lara",
-    "texto": "📌 Salud pública en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 29/07/2026, 12:20 p.m.\n🔎 Detectado por el sistema: 29/07/2026, 12:23 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/07/29/940-pacientes-en-lara-sin-dialisis-completa-porque-los-equipos-estan-danados/"
   }
 ]

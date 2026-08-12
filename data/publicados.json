@@ -103,5 +103,19 @@
     "fecha_deteccion": "2026-08-12T05:17:45.050601+00:00",
     "fecha_evento_temprana": "2026-08-11T19:36:22+00:00",
     "municipio": "García"
+  },
+  "orden_publico::Distrito Capital::2026-08-12": {
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-08-12T18:44:20.967109+00:00",
+    "fecha_evento_temprana": "2026-08-12T18:16:03+00:00",
+    "municipio": null
+  },
+  "explosion::Miranda::2026-08-12": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-12T18:44:27.493628+00:00",
+    "fecha_evento_temprana": "2026-08-12T16:02:30+00:00",
+    "municipio": "Baruta"
   }
 }
