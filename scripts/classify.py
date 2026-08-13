@@ -89,6 +89,20 @@ LISTA_NEGRA_POR_ESTADO = {
     # que esta frase es exclusiva de estos 2 articulos (3 instantaneas).
     "La Guaira": ["desastre de la guaira", "tragedia de la guaira",
                   "desastre de vargas", "tragedia de vargas"],
+    # Caso real (12-08-2026): un articulo sobre jubilados petroleros
+    # protestando frente a la sede de Pdvsa La Campiña (Caracas) generaba 2
+    # alertas falsas de orden_publico en Falcon y Zulia -- ambos estados solo
+    # se mencionan como la PROCEDENCIA de un grupo de manifestantes presentes
+    # en esa protesta ("la presencia de manifestantes de Oriente, Falcon y
+    # Caracas", "jubilados petroleros de Zulia" cuyo autobus fue detenido "en
+    # peaje de Tazon" en su via de regreso), no como la ubicacion de ningun
+    # hecho ocurrido en esos estados. El propio articulo nunca describe una
+    # protesta, corte de via ni disturbio alguno sucediendo en Falcon o
+    # Zulia. Se verifico contra las 94 fuentes de
+    # data/historico_fuentes_texto.jsonl que ambas frases son exclusivas de
+    # este articulo.
+    "Falcon": ["manifestantes de oriente, falcon y caracas"],
+    "Zulia": ["jubilados petroleros de zulia en peaje de tazon"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -487,6 +501,67 @@ def _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_MANIFESTACION_PACIFICA):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("orden_publico", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (12-08-2026, PASADO_POR_FALLA_TECNICA): "Andres Velasquez se
+# suma llamado a manifestar este viernes por apagones... El exgobernador
+# del estado Bolivar... ha expresado su respaldo a la 'Gran Protesta
+# Nacional' convocada en rechazo a los constantes cortes electricos que
+# afectan a Venezuela" disparaba DOS alertas falsas -- infraestructura_
+# electrica Y orden_publico -- en el estado Bolivar. "Bolivar" solo nombra
+# el cargo POLITICO PASADO del dirigente citado, no la ubicacion del hecho
+# (nunca se describe ningun corte electrico ni disturbio en Bolivar en
+# particular). Y el hecho en si es la mera ADHESION de un dirigente a una
+# protesta FUTURA todavia por ocurrir ("convocada", "este viernes"), no un
+# apagon ni una manifestacion ya en curso -- por eso ninguna de las dos
+# palabras clave que dispararon el tipo ("apagones", "protesta") describe
+# un hecho real y localizado.
+#
+# "apagon"/"apagones" estan en _EVIDENCIA_FUERTE_POR_TIPO de infraestructura_
+# electrica (son evidencia fuerte de un corte REAL en la mayoria de los
+# casos), pero aqui son precisamente la palabra ambigua a descartar -- son
+# la RAZON citada del llamado a protestar, no la descripcion de un corte en
+# curso. Por eso este filtro usa su propia lista de evidencia fuerte, sin
+# "apagon"/"apagones", en vez de reutilizar _EVIDENCIA_FUERTE_POR_TIPO
+# directamente.
+_MARCADORES_CONVOCATORIA_PROTESTA_FUTURA = [
+    "llamado a manifestar", "gran protesta nacional",
+]
+_EVIDENCIA_FUERTE_SIN_CONVOCATORIA = [
+    "sin luz", "sin electricidad", "sin energia electrica",
+    "sin energía eléctrica", "sin servicio electrico",
+    "sin servicio eléctrico", "falla electrica", "falla eléctrica",
+    "fallas electricas", "fallas eléctricas", "corte de luz",
+    "cortes de luz",
+    "heridos", "detenidos", "saqueo", "saqueos", "disturbios",
+    "tiroteo", "tiroteos", "enfrentamiento", "enfrentamientos",
+]
+
+
+def _es_convocatoria_protesta_futura_sin_hecho_actual(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CONVOCATORIA_PROTESTA_FUTURA):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_SIN_CONVOCATORIA)
+
+
+# Caso real (12-08-2026): "Artefacto explosivo en centro comercial de
+# Baruta" -- el titular sensacionalista disparaba tipo=explosion via la
+# palabra clave "artefacto explosivo", pero el propio texto aclara, varios
+# parrafos mas adelante (fuera de la ventana de proximidad a la ubicacion,
+# por eso no basta con _CONTEXTO_CONFLICTIVO_POR_TIPO), que el "artefacto"
+# fue en realidad "la activacion de un cartucho lacrimogeno", que el
+# incidente fue "totalmente controlado" y que "no se reportaron personas
+# afectadas". Un cartucho lacrimogeno no es un explosivo real -- igual que
+# _es_anuncio_corpoelec_sin_falla, esta señal se evalua sobre el ARTICULO
+# COMPLETO.
+_MARCADORES_CARTUCHO_LACRIMOGENO = ["cartucho lacrimogeno", "cartuchos lacrimogenos"]
+
+
+def _es_cartucho_lacrimogeno_sin_explosivo_real(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CARTUCHO_LACRIMOGENO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("explosion", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -1195,6 +1270,12 @@ def detectar_tipo(texto, ventana=None):
     # duracion no es un hecho nuevo sin importar la categoria.
     if _es_articulo_retrospectivo_larga_duracion(texto_completo_norm):
         return []
+    # Igual que el retrospectivo: una convocatoria a una protesta FUTURA
+    # (aun no ocurrida) no es un hecho nuevo, sin importar si dispara
+    # tipo=orden_publico o tipo=infraestructura_electrica (ver comentario en
+    # _es_convocatoria_protesta_futura_sin_hecho_actual).
+    if _es_convocatoria_protesta_futura_sin_hecho_actual(texto_completo_norm):
+        return []
     tipos_encontrados = []
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:
@@ -1206,6 +1287,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
+                    break
+                if tipo == "explosion" and _es_cartucho_lacrimogeno_sin_explosivo_real(texto_completo_norm):
                     break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
