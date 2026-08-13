@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-13T05:28:04.875567+00:00",
+  "actualizado": "2026-08-13T15:42:48.068378+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-12T22:12:49+00:00"
+    "hasta": "2026-08-13T14:39:28+00:00"
   },
-  "total_eventos": 92,
+  "total_eventos": 94,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 26,
+    "infraestructura_electrica": 27,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 9,
     "vialidad": 3,
-    "sismo": 2,
+    "sismo": 3,
     "escasez_combustible": 1,
     "sequia": 1,
     "explosion": 1
@@ -33,6 +33,11 @@
       "confirmados": 4
     },
     {
+      "estado": "Lara",
+      "total": 8,
+      "confirmados": 1
+    },
+    {
       "estado": "Barinas",
       "total": 8,
       "confirmados": 1
@@ -40,11 +45,6 @@
     {
       "estado": "Bolivar",
       "total": 8,
-      "confirmados": 1
-    },
-    {
-      "estado": "Lara",
-      "total": 7,
       "confirmados": 1
     },
     {
@@ -93,17 +93,17 @@
       "confirmados": 1
     },
     {
+      "estado": "Aragua",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
       "estado": "Sucre",
       "total": 2,
       "confirmados": 0
     },
     {
       "estado": "Tachira",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "Aragua",
       "total": 2,
       "confirmados": 0
     },
@@ -123,7 +123,8 @@
       "inundacion": 2,
       "salud_publica": 2,
       "orden_publico": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "sismo": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -202,7 +203,8 @@
     },
     "Aragua": {
       "orden_publico": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "infraestructura_electrica": 1
     },
     "Merida": {
       "infraestructura_electrica": 1
@@ -211,7 +213,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 75,
+    "sin_clasificar": 77,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -224,7 +226,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 21
+      "2026-08": 22
     },
     "deslizamiento": {
       "2026-07": 3
@@ -251,7 +253,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 2
+      "2026-08": 3
     },
     "escasez_combustible": {
       "2026-08": 1
