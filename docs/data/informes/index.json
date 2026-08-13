@@ -28,7 +28,7 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-08-12T12:38:48.739946+00:00",
+    "generado": "2026-08-13T09:47:21.131866+00:00",
     "total_eventos": 2
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-11T11:28:47.794981+00:00",
+    "generado": "2026-08-13T09:45:56.191313+00:00",
     "total_eventos": 6
   },
   {
@@ -68,15 +68,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-12T09:45:49.219024+00:00",
-    "total_eventos": 53
+    "generado": "2026-08-13T09:45:52.023815+00:00",
+    "total_eventos": 64
   },
   {
     "periodo": "2026-08",
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-08-12T18:45:10.189205+00:00",
+    "generado": "2026-08-13T09:45:47.007059+00:00",
     "total_eventos": 1
   },
   {

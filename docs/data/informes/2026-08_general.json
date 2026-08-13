@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-12T09:45:49.219024+00:00",
-  "actualizado_hasta": "2026-08-12T05:17:45.050601+00:00",
-  "total_eventos": 53,
+  "generado": "2026-08-13T09:45:52.023815+00:00",
+  "actualizado_hasta": "2026-08-13T05:27:38.594250+00:00",
+  "total_eventos": 64,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 28,
-    "actual": 53
+    "actual": 64
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 53 eventos, lo que representa un aumento en comparación con el período anterior, que tuvo 28 eventos (Noticia al Dia (Zulia)). Entre los eventos destacados se encuentra el incidente vial en Distrito Capital, que resultó en víctimas fatales y heridos (Noticia al Dia (Zulia)). Además, se produjeron inundaciones en Yaracuy, que causaron daños materiales y afectaron a varios municipios, incluyendo Manuel Monge, Bolívar, Sucre y Veroes, con un saldo trágico de una persona fallecida y pérdidas en el sector agropecuario (El Impulso (Lara)). Un incendio en Miranda dejó dos personas lesionadas en el municipio Baruta (La Prensa de Monagas). También se registraron inundaciones en Apure, específicamente en el sector Cachamero - El Ripial, donde el alcalde José Ángel Ramírez lideró trabajos de mitigación (Notiapure). Un incendio en Yaracuy resultó en heridos y daños materiales (La Prensa de Lara). En Barinas, un incidente vial en la avenida Nueva Barinas resultó en una persona fallecida y varias heridas (La Noticia de Barinas). Además, se denunció la muerte de tres reclusos en centros penitenciarios de Carabobo, Miranda y Lara, lo que generó exigencias de investigación sobre posibles omisiones (Maturin News). Todos estos eventos resaltan la importancia de la atención y la prevención en materia de emergencias en Venezuela.",
+  "narrativa": "En el período de 2026-08, se registraron un total de 64 eventos, lo que supone un aumento en comparación con el período anterior, 2026-07, que tuvo 28 eventos. Durante este período, se produjeron varios incidentes graves que causaron daños materiales, heridos y víctimas fatales. Uno de los eventos más significativos fue el incidente vial en el Distrito Capital, que se reportó como crítico (Noticia al Dia (Zulia)). Además, se registraron inundaciones en Yaracuy, que también fueron calificadas como críticas (Turimiquire (Sucre), El Impulso (Lara)). Un incendio en Miranda fue reportado como de severidad alta (La Prensa de Monagas). Otras inundaciones en Yaracuy y Apure, así como un incendio en Yaracuy, también tuvieron severidad crítica o alta (La Prensa de Lara, Notiapure). Un incidente vial en Barinas resultó en víctimas fatales y heridos (La Noticia de Barinas). La situación de salud pública en Lara también fue de severidad crítica (Maturin News). Es importante destacar que, según las fuentes, las inundaciones en Yaracuy causaron la muerte de una persona y daños estructurales en el puente La Galletera (El Impulso (Lara)). En Barinas, un motorizado perdió la vida en una colisión múltiple (La Noticia de Barinas). En Yaracuy, dos hermanos fallecieron tras una explosión de gas (La Prensa de Lara). Un incendio en un edificio de Las Mercedes dejó dos personas lesionadas (La Prensa de Monagas). La muerte de tres reclusos en cárceles del país también fue denunciada, exigiendo investigar posibles omisiones (Maturin News). En Apure, el desbordamiento del río Arauca afectó a más de 500 familias, quienes recibieron atención integral (Notiapure). Un fallecido y cinco heridos fueron el resultado de una colisión múltiple en la autopista Valle-Coche (Noticia al Dia (Zulia)). Finalmente, una mujer murió por una descarga eléctrica en Manuel Monge, estado Yaracuy, después de que su casa se inundara (Turimiquire (Sucre)).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -38,6 +38,10 @@
       "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
     },
     {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
     },
@@ -58,12 +62,24 @@
       "link": "https://diarioeltiempo.com.ve/fuerte-tormenta-con-rafagas-de-viento-causaron-arboles-caidos-y-fallas-electricas-este-domingo-en-caracas-y-miranda/"
     },
     {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
     },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/"
     },
     {
       "nombre": "El Luchador (Bolivar)",
@@ -94,6 +110,10 @@
       "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/artefacto-explosivo-en-centro-comercial-de-baruta/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
     },
@@ -122,40 +142,12 @@
       "link": "https://elpitazo.net/sin-categoria/jubilados-petroleros-cumplen-segundo-dia-de-protesta-en-la-campina/"
     },
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/fotos-protesta-y-piquete-de-la-pnb-a-las-afueras-del-melia-caracas-sede-del-dialogo-entre-an-2015-y-el-chavismo/"
     },
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/sectores-de-cantaura-realizaron-protesta-pacifica-por-la-falta-de-agua/"
-    },
-    {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
-    },
-    {
-      "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
-    },
-    {
-      "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
-    },
-    {
-      "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
-    },
-    {
-      "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/08/apagones-mantienen-a-merida-operando-a-media-maquina-jovenes-protestaron-en-la-av-las-americas/"
-    },
-    {
-      "nombre": "La Patilla",
-      "link": "https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
     }
   ]
 }
