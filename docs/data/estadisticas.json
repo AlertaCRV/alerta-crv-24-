@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-12T23:36:28.266112+00:00",
+  "actualizado": "2026-08-13T05:28:04.875567+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-12T21:56:01+00:00"
+    "hasta": "2026-08-12T22:12:49+00:00"
   },
-  "total_eventos": 87,
+  "total_eventos": 92,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 15,
-    "infraestructura_electrica": 23,
+    "inundacion": 16,
+    "infraestructura_electrica": 26,
     "deslizamiento": 3,
     "colapso_estructural": 1,
-    "orden_publico": 19,
+    "orden_publico": 20,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 9,
@@ -29,7 +29,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 9,
+      "total": 10,
       "confirmados": 4
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "estado": "Lara",
-      "total": 6,
+      "total": 7,
       "confirmados": 1
     },
     {
@@ -59,6 +59,11 @@
     },
     {
       "estado": "Anzoategui",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
+      "estado": "Apure",
       "total": 5,
       "confirmados": 0
     },
@@ -78,11 +83,6 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
-      "total": 3,
-      "confirmados": 0
-    },
-    {
       "estado": "Monagas",
       "total": 3,
       "confirmados": 0
@@ -98,13 +98,13 @@
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Tachira",
       "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 1,
+      "estado": "Aragua",
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -122,11 +122,12 @@
     "Lara": {
       "inundacion": 2,
       "salud_publica": 2,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "infraestructura_electrica": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
@@ -169,10 +170,12 @@
     },
     "Apure": {
       "crisis_migratoria": 1,
-      "inundacion": 2
+      "inundacion": 3,
+      "orden_publico": 1
     },
     "Tachira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "infraestructura_electrica": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2,
@@ -206,9 +209,9 @@
     }
   },
   "por_severidad": {
-    "alto": 7,
+    "alto": 8,
     "critico": 8,
-    "sin_clasificar": 71,
+    "sin_clasificar": 75,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -217,11 +220,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 8
+      "2026-08": 9
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 18
+      "2026-08": 21
     },
     "deslizamiento": {
       "2026-07": 3
@@ -231,7 +234,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 17
+      "2026-08": 18
     },
     "salud_publica": {
       "2026-07": 1,

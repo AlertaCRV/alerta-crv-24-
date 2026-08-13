@@ -1,6 +1,136 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Tachira",
+    "municipio": "Torbes",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/",
+        "fecha": "2026-08-12T22:12:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T22:12:49+00:00",
+    "fecha_evento_temprana": "2026-08-12T22:12:49+00:00",
+    "fecha_deteccion": "2026-08-13T05:26:54.547369+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Tachira::2026-08-12",
+    "titulo": "Falla eléctrica en Municipio Torbes, Tachira",
+    "texto": "📌 Falla eléctrica en Municipio Torbes, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torbes, Tachira\n🕒 Hecho reportado: 12/08/2026, 6:12 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
+        "fecha": "2026-08-12T21:43:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:43:17+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
+    "fecha_deteccion": "2026-08-13T05:26:57.924802+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-12",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
+        "fecha": "2026-08-12T21:43:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:43:17+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
+    "fecha_deteccion": "2026-08-13T05:27:01.348776+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-08-12",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Apure",
+    "municipio": "Páez",
+    "parroquia": "Urdaneta",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/",
+        "fecha": "2026-08-12T21:53:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:53:50+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:53:50+00:00",
+    "fecha_deteccion": "2026-08-13T05:27:35.277832+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Apure::2026-08-11",
+    "titulo": "Inundación en Parroquia Urdaneta, Municipio Páez, Apure",
+    "texto": "📌 Inundación en Parroquia Urdaneta, Municipio Páez, Apure\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Urdaneta, Municipio Páez, Apure\n🕒 Hecho reportado: 12/08/2026, 5:53 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Apure",
+    "municipio": "San Fernando",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/",
+        "fecha": "2026-08-12T21:51:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-12T21:51:32+00:00",
+    "fecha_evento_temprana": "2026-08-12T21:51:32+00:00",
+    "fecha_deteccion": "2026-08-13T05:27:38.594250+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Apure::2026-08-12",
+    "titulo": "Orden público en Municipio San Fernando, Apure",
+    "texto": "📌 Orden público en Municipio San Fernando, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Fernando, Apure\n🕒 Hecho reportado: 12/08/2026, 5:51 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Barinas",
     "municipio": null,
     "parroquia": null,
@@ -289,32 +419,6 @@
     "clave_dedup": "salud_publica::Monagas::2026-08-11",
     "titulo": "Salud pública en Parroquia San Félix, Municipio Cedeño, Monagas",
     "texto": "📌 Salud pública en Parroquia San Félix, Municipio Cedeño, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia San Félix, Municipio Cedeño, Monagas\n🕒 Hecho reportado: 11/08/2026, 3:11 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 1:17 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Apure",
-    "municipio": "Páez",
-    "parroquia": "Urdaneta",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/gobierno-bolivariano-despliega-atencion-directa-a-mas-de-500-familias-afectadas-por-crecida-del-rio-arauca-en-urdaneta/",
-        "fecha": "2026-08-11T20:46:56+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-11T20:46:56+00:00",
-    "fecha_evento_temprana": "2026-08-11T20:46:56+00:00",
-    "fecha_deteccion": "2026-08-12T05:17:30.202143+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Apure::2026-08-11",
-    "titulo": "Inundación en Parroquia Urdaneta, Municipio Páez, Apure",
-    "texto": "📌 Inundación en Parroquia Urdaneta, Municipio Páez, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Urdaneta, Municipio Páez, Apure\n🕒 Hecho reportado: 11/08/2026, 4:46 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 1:17 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/gobierno-bolivariano-despliega-atencion-directa-a-mas-de-500-familias-afectadas-por-crecida-del-rio-arauca-en-urdaneta/"
   },
   {
     "tipo": "orden_publico",
