@@ -3,24 +3,16 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-08-11T18:07:57.902975+00:00",
-  "actualizado_hasta": "2026-08-11T11:28:25.809294+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-13T18:46:10.781772+00:00",
+  "actualizado_hasta": "2026-08-13T15:42:43.311641+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 4
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registraron 4 eventos sísmicos, en comparación con el período anterior (2026-07) en el que no se registraron eventos de este tipo. Uno de los eventos más destacados fue el sismo en La Guaira, que tuvo una severidad crítica (El Impulso (Lara)). Además, se registró un terremoto en Colombia con una magnitud de 7,4, que afectó varias ciudades del país, incluyendo Pereira, Cali, Manizales, Quibdó y Armenia, con personas fallecidas, heridas y atrapadas, edificios colapsados y afectaciones en infraestructura hospitalaria, aeropuertos, servicios públicos y sistemas de transporte (El Carabobeno). El epicentro del terremoto se ubicó en San José del Palmar, departamento de Chocó, con una profundidad de 96 kilómetros (El Periodico de Monagas). El terremoto también se sintió en el Zulia, Venezuela (La Verdad (Zulia)). Otro sismo se registró en el centro-occidente de Venezuela, con una magnitud de 4,2 y una profundidad de 8,1 km, y se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia (Bolivar)).",
+  "narrativa": "Durante el período de agosto de 2026, se registraron 3 eventos sísmicos en Venezuela y Colombia, en comparación con el período anterior (julio de 2026) en el que no se registraron eventos de esta naturaleza. Uno de los eventos más significativos fue un sismo de magnitud 7,4 que se registró en Colombia, específicamente en el departamento de Chocó, con epicentro en San José del Palmar (El Periodico de Monagas, La Verdad). Este sismo también se sintió en el Zulia, Venezuela (La Verdad). Además, se registraron tres sismos de baja y moderada magnitud en sectores de Lara, Trujillo y Barinas, sin provocar afectaciones en infraestructuras ni dejar personas heridas (Noticia al Dia). Otro sismo de magnitud 4,2 se registró en el centro-occidente de Venezuela, con una profundidad de 8,1 km, y se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia).",
   "fuentes": [
-    {
-      "nombre": "El Carabobeno",
-      "link": "https://www.el-carabobeno.com/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/08/10/venezolanos-en-colombia-sobreviven-al-terremoto-y-recuerdan-el-desastre-de-la-guaira-me-removio-todo-10ago/"
-    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/mundo/sismo-de-magnitud-74-se-registro-este-lunes-en-colombia/"
@@ -28,6 +20,10 @@
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/terremoto-de-7-4-en-colombia-sacude-el-zulia/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tres-sismos-de-baja-y-moderada-magnitud-se-registran-en-sectores-de-lara-trujillo-y-barinas-este-jueves-13-ag/"
     },
     {
       "nombre": "Primicia (Bolivar)",
