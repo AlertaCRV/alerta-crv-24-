@@ -242,5 +242,25 @@
   "orden_publico::Apure::2026-08-12": {
     "intentos": 1,
     "ultima_vez": "2026-08-12T23:34:49.051023+00:00"
+  },
+  "infraestructura_electrica::Guarico::2026-08-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-13T23:32:08.929601+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-13T23:32:33.174993+00:00"
+  },
+  "salud_publica::Falcon::2026-08-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-13T23:32:57.356472+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-13T23:33:25.395361+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-08-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-13T23:33:49.574806+00:00"
   }
 }
