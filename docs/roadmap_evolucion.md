@@ -5531,3 +5531,216 @@ scripts/validar_configs.py` → OK. `python3
 scripts/detectar_inconsistencias.py` → mismos pares de posibles
 duplicados que sesiones anteriores (sin relación con estos hallazgos), 9
 fuentes muertas en 6 informes (ver arriba).
+
+---
+
+## Auditoría diaria automática (13-08-2026): un mismo artículo generó 2 ubicaciones falsas por procedencia de manifestantes, un titular sensacionalista de "artefacto explosivo" resultó ser un cartucho lacrimógeno, una convocatoria a protesta futura se publicó como corte eléctrico y disturbio ya en curso, y un pie de página legal contaminó un municipio
+
+Auditoría de rutina de las 21 alertas publicadas/actualizadas desde la
+auditoría del 11-08-2026 (`sismo::Zulia::2026-08-11::mag7.4`, último
+hallazgo corregido ese día). Se encontraron y corrigieron 4 causas raíz
+distintas, con 4 alertas retractadas por completo y 1 corregida
+retroactivamente (municipio).
+
+### 1. Un artículo sobre jubilados petroleros protestando en Caracas generó 2 alertas falsas de orden público en Falcón y Zulia por procedencia de manifestantes, no por ubicación del hecho
+
+`orden_publico::Falcon::2026-08-11` y `orden_publico::Zulia::2026-08-11`
+(El Pitazo, "Jubilados petroleros cumplen segundo día de protesta en La
+Campiña") describen una protesta de jubilados petroleros frente a la sede
+de Pdvsa La Campiña (Caracas) -- el artículo nunca describe ningún hecho
+ocurrido en Falcón ni en Zulia. Ambos estados solo se mencionan como la
+PROCEDENCIA de manifestantes presentes en esa protesta: "la presencia de
+manifestantes de Oriente, Falcón y Caracas" (día 1, ya pasado) y
+"jubilados petroleros de Zulia" cuyo autobús fue retenido por la Guardia
+Nacional "en peaje de Tazón" en su vía de regreso a Zulia.
+
+**Causa raíz**: `detectar_ubicacion()`/`_ventana_cerca()` (`scripts/
+classify.py`) confirman un estado como ubicación del hecho si hay una
+palabra clave de tipo (aquí "manifestantes"/"protesta") dentro de la
+ventana de proximidad, sin distinguir si esa palabra describe un hecho
+ocurriendo EN ese estado o solo identifica el origen/gentilicio de
+personas presentes en un hecho que ocurre en otro lugar.
+
+**Corrección**: nuevas entradas `LISTA_NEGRA_POR_ESTADO["Falcon"]` y
+`["Zulia"]` (`scripts/classify.py`) con las frases literales exactas de
+procedencia de este artículo ("manifestantes de oriente, falcon y
+caracas", "jubilados petroleros de zulia en peaje de tazon"). Se verificó
+contra las 94 fuentes de `data/historico_fuentes_texto.jsonl` que ambas
+frases son exclusivas de este artículo (2 instantáneas).
+
+**Corrección retroactiva**: se eliminaron por completo
+`orden_publico::Falcon::2026-08-11` y `orden_publico::Zulia::2026-08-11`
+de `docs/data/noticias.json`, `data/historico_eventos.jsonl`, `data/
+historico_fuentes_texto.jsonl` y `data/publicados.json`.
+
+### 2. Un titular de "artefacto explosivo en centro comercial" resultó ser, según el propio texto, un cartucho lacrimógeno sin víctimas
+
+`explosion::Miranda::2026-08-12` (El Periódico de Monagas, "Artefacto
+explosivo en centro comercial de Baruta") se publicó con tipo=explosion
+por la palabra clave "artefacto explosivo" del titular, pero el cuerpo
+del artículo aclara varios párrafos después que "se registró la
+activación de un cartucho lacrimógeno dentro del establecimiento", que
+"el incidente fue totalmente controlado" y que "no se reportaron personas
+afectadas durante el suceso". Un cartucho lacrimógeno no es un explosivo
+real.
+
+**Causa raíz**: la aclaración ("cartucho lacrimógeno") está fuera de la
+ventana de proximidad a la ubicación (35 palabras), así que
+`_CONTEXTO_CONFLICTIVO_POR_TIPO` (que solo mira esa ventana) no la
+detecta -- mismo patrón ya resuelto antes para boletines de salud sin
+alarma, manifestaciones pacíficas y anuncios de Corpoelec sin falla real,
+todos evaluados sobre el ARTÍCULO COMPLETO en vez de la ventana.
+
+**Corrección**: nueva función `_es_cartucho_lacrimogeno_sin_explosivo_real()`
+(`scripts/classify.py`), evaluada sobre el texto completo igual que las
+anteriores: si el texto menciona "cartucho(s) lacrimógeno(s)" y no hay
+evidencia fuerte de explosión real (heridos, fallecidos, explosión
+accidental...), se descarta el tipo=explosion para ese artículo. Se
+verificó contra el corpus completo que la frase es exclusiva de este
+artículo, y que un caso de control con explosión real y heridos (sin
+mención de cartucho lacrimógeno) sigue clasificando correctamente.
+
+**Corrección retroactiva**: se eliminó por completo
+`explosion::Miranda::2026-08-12` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json` (el artículo no genera ningún otro tipo válido).
+
+### 3. La adhesión de un dirigente político a una protesta FUTURA convocada por apagones nacionales se publicó como corte eléctrico Y disturbio ya en curso en Bolívar (PASADO_POR_FALLA_TECNICA)
+
+`infraestructura_electrica::Bolivar::2026-08-12` (El Impulso de Lara,
+"Andrés Velásquez se suma llamado a manifestar este viernes por apagones
+y elecciones presidenciales") describe únicamente que "el exgobernador
+del estado Bolívar... ha expresado su respaldo a la 'Gran Protesta
+Nacional' convocada en rechazo a los constantes cortes eléctricos que
+afectan a Venezuela" -- ningún corte eléctrico ni disturbio ocurriendo en
+Bolívar en particular, solo la adhesión de un dirigente a una protesta
+CONVOCADA para el viernes siguiente (todavía no ocurrida). "Bolívar" solo
+identifica el cargo político PASADO del dirigente citado, no la ubicación
+de ningún hecho.
+
+**Causa raíz**: `detectar_tipo()` disparaba tanto tipo=infraestructura_
+electrica (por "apagones") como tipo=orden_publico (por "manifestar"/
+"protesta"), y en ambos casos "apagones" también aparece en
+`_EVIDENCIA_FUERTE_POR_TIPO["infraestructura_electrica"]` -- ahí es la
+RAZÓN citada del llamado a protestar, no evidencia de un corte real en
+curso, así que ningún mecanismo existente lo distinguía.
+
+**Corrección**: nueva función
+`_es_convocatoria_protesta_futura_sin_hecho_actual()` (`scripts/
+classify.py`), evaluada sobre el artículo completo (como
+`_es_articulo_retrospectivo_larga_duracion`, aplicada a CUALQUIER tipo):
+si el texto contiene un marcador de convocatoria a protesta futura
+("llamado a manifestar", "gran protesta nacional") y no hay evidencia
+fuerte de un corte eléctrico o disturbio YA en curso (usando una lista
+propia de evidencia fuerte que excluye deliberadamente "apagón"/
+"apagones", ya que esa es precisamente la palabra ambigua a descartar
+aquí), se descartan TODOS los tipos para ese artículo. Se verificó contra
+el corpus completo que ambas frases son exclusivas de este artículo, y
+con 2 casos de control (un apagón real con "sin luz" en Bolívar, y el
+caso ya cubierto de manifestación pacífica) que la evidencia fuerte real
+sigue funcionando.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Bolivar::2026-08-12` de `docs/data/
+noticias.json`, `data/historico_eventos.jsonl`, `data/
+historico_fuentes_texto.jsonl` y `data/publicados.json`.
+
+### 4. El pie de página legal de un medio ("Editorial Torbes CA J-070059680") se coló como municipio real de Táchira
+
+`infraestructura_electrica::Tachira::2026-08-12` (Diario La Nación
+Táchira, "Cámara de Licoreros denuncia crisis eléctrica") se publicó con
+`municipio: "Torbes"`, pero el texto nunca describe ningún hecho en ese
+municipio -- CALITA "emitió un pronunciamiento en San Cristóbal" sobre una
+crisis que afecta, según el propio texto, "los 29 municipios de la
+entidad andina" por igual. La única mención de "Torbes" en todo el texto
+es "Editorial Torbes CA J-070059680" -- el nombre legal de la empresa
+editora del medio (Diario La Nación) junto a su RIF, en el pie de
+página/menú del sitio, que quedó pegado al cuerpo del artículo.
+
+**Causa raíz**: `_obtener_texto_completo()` (`scripts/fetch_rss.py`) cae
+al documento HTML completo (todos los `<p>`) cuando no encuentra un
+`<article>`/`div.content` reconocible, arrastrando pie de página y menú de
+navegación del sitio -- mismo problema de fondo ya resuelto antes para
+"Lea también:"/"También puedes leer:"/pie de página de WordPress, pero
+para una plantilla de pie legal distinta ("Editorial NOMBRE CA J-RIF") no
+cubierta hasta ahora. `_buscar_municipio_directo()` no exige la palabra
+"municipio" delante de un nombre único a nivel nacional, así que "Torbes"
+suelto bastó como evidencia directa.
+
+**Corrección**: nuevo regex `_PIE_LEGAL_EDITORIAL_RE` (`scripts/
+fetch_rss.py`, wireado en `_limpiar_texto()`) que recorta desde "Editorial
+NOMBRE C.A. J-RIF" hasta el final del texto -- mismo mecanismo que
+`_BOILERPLATE_RE`/`_ARTICULOS_RELACIONADOS_RE`. Con el pie legal fuera,
+`detectar_municipio_parroquia()` ahora encuentra correctamente "San
+Cristóbal" (mencionado explícitamente en el texto real) en vez de
+"Torbes".
+
+**Corrección retroactiva**: se corrigió `municipio` de "Torbes" a "San
+Cristóbal" en `docs/data/noticias.json` (título y texto del mensaje
+incluidos), `data/historico_eventos.jsonl` y `data/publicados.json`. La
+misma fuente (`lanacionweb.com`) también generó, ese mismo día, la fuente
+única de `infraestructura_electrica::Barinas::2026-08-12` (máquinas de
+diálisis del Hospital Razetti) -- se verificó que ese ítem no se vio
+afectado porque "Torbes" no es un municipio válido de Barinas.
+
+### Revisado sin cambios
+
+`orden_publico::Anzoategui::2026-08-10` e `infraestructura_electrica::
+Anzoategui::2026-08-11`: ya revisados en la auditoría del 11-08-2026 (ver
+esa entrada), sin cambios desde entonces. `salud_publica::Lara::2026-08-12`
+(OVP denuncia 3 reclusos fallecidos en Carabobo/Miranda/Lara por
+custodia estatal, severidad crítica en Lara): consistente con el texto --
+"Adrián Felipe" falleció en el Centro Penitenciario Fénix Lara por
+deshidratación severa; el hecho de que el mismo artículo no haya generado
+alertas equivalentes para Carabobo/Miranda (la evidencia de tipo cae fuera
+de la ventana de proximidad de esos estados) es una limitación de
+cobertura ya conocida, no una ubicación falsa. `infraestructura_electrica::
+Yaracuy::2026-08-11`, `salud_publica::Monagas::2026-08-11` (brote de
+dengue en San Félix de Cantalicio, municipio Cedeño), `orden_publico::
+Nueva Esparta::2026-08-11`, `orden_publico::Distrito Capital::2026-08-12`
+(2 fuentes, protesta de la Coalición Sindical frente al hotel Meliá),
+`infraestructura_electrica::Barinas/Carabobo/Distrito Capital/Zulia/
+Lara::2026-08-12` (bajón eléctrico multiestado con evidencia propia por
+estado: "Valencia, estado Carabobo", "Los Palos Grandes, El Valle y
+Miraflores" en Caracas, "Lara y Zulia"), `inundacion::Apure::2026-08-11`
+(desbordamiento del río Arauca, parroquia Urdaneta), `orden_publico::
+Apure::2026-08-12` (familiares de militares detenidos, San Fernando) y
+`sismo::Lara::2026-08-13` (3 sismos menores sin afectaciones, según el
+propio texto): todos consistentes con el texto de sus fuentes.
+
+`infraestructura_electrica::Aragua::2026-08-13` (Credicard, fallas en
+pagos con tarjeta de débito por fluctuación eléctrica, con Aragua
+mencionado solo dentro de una lista genérica de 9 estados "entre otros"
+que "denuncian que Corpoelec aumentó el racionamiento"): la ubicación SÍ
+está respaldada textualmente (habitantes de Aragua sí denuncian
+racionamiento), pero es una mención de tendencia genérica compartida por
+9 estados, no un hecho puntual del día -- de los 9, solo Aragua y Lara
+caen dentro de la ventana de proximidad de 35 palabras al verbo
+"denuncian", una atribución algo arbitraria por posición en la lista más
+que por relevancia real. **Pendiente de discutir**: no se corrigió (el
+texto sí lo respalda, y filtrar "listas de estados afectados" arriesga
+perder coberturas legítimas de racionamiento generalizado ya cubiertas
+antes), pero se deja documentado como un patrón de evidencia débil que
+podría revisarse si se repite.
+
+### Pruebas
+
+10 casos nuevos: 6 en `tests/casos_clasificacion.jsonl` (el caso real de
+Falcón/Zulia por procedencia + control de protesta real en Zulia; el caso
+real del cartucho lacrimógeno + control de explosión real con heridos; el
+caso real de la convocatoria de Bolívar + control de apagón real con "sin
+luz"), 2 en `tests/test_fetch_rss_limpieza.py` (el caso real del pie legal
+"Editorial Torbes CA" + control de que "Editorial" en otro sentido no se
+toca). Regresión completa contra las 90 fuentes vigentes de `data/
+historico_fuentes_texto.jsonl` (ya con las 4 instantáneas retractadas
+eliminadas): sin cambios inesperados -- las únicas fuentes afectadas por
+los fixes son, precisamente, las corregidas en esta sesión. `python3 -m
+pytest tests/` → 269 passed, 5 xfailed (conocidos, sin relación), 1
+xpassed (conocido, sin efecto real). `python3 scripts/validar_configs.py`
+→ OK. `python3 scripts/detectar_inconsistencias.py` → mismos pares de
+posibles duplicados que sesiones anteriores más los 4 pares del bajón
+eléctrico multiestado del 12-08 (ya revisados arriba, evidencia propia por
+estado, no duplicados reales), 10 fuentes muertas en 7 informes (7 ya
+conocidas de sesiones anteriores + 3 nuevas de esta sesión: `GROQ_API_KEY`
+no disponible en este entorno, `scripts/build_informes.py` regenerará los
+informes afectados en la próxima corrida de producción).

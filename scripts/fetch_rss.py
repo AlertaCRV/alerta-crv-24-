@@ -103,6 +103,26 @@ _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE = re.compile(
     re.IGNORECASE,
 )
 
+# El pie de pagina/menu de sitio de algunos medios incluye el nombre legal
+# de la empresa editora seguido de su RIF ("Editorial Torbes CA
+# J-070059680 Miniavisos Edicion Impresa Mapa del sitio..."), que
+# BeautifulSoup arrastra como parrafos normales cuando el articulo no esta
+# dentro de un <article>/div.content reconocible (ver _obtener_texto_
+# completo, que en ese caso cae al documento completo). Caso real (12-08-
+# 2026, lanacionweb.com/Diario La Nacion Tachira): "Editorial Torbes CA"
+# es el nombre legal del medio -- Torbes tambien es, por coincidencia, un
+# municipio real de Tachira -- y esa unica mencion (ajena al articulo, sin
+# relacion con ningun hecho) bastaba para que detectar_municipio_parroquia()
+# le atribuyera "Municipio Torbes" a un articulo sobre una crisis electrica
+# que en realidad nunca nombra ese municipio (el pronunciamiento se emitio
+# "en San Cristobal" y afecta, segun el propio texto, "los 29 municipios"
+# del estado por igual). Se recorta desde la mencion del pie legal hasta el
+# final del texto, igual que el pie de pagina de WordPress.
+_PIE_LEGAL_EDITORIAL_RE = re.compile(
+    r"\beditorial\s+[\wÀ-ÿ]+(?:\s+[\wÀ-ÿ]+)?\s+c\.?a\.?\s+j-\d+.*$",
+    re.IGNORECASE | re.DOTALL,
+)
+
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
 # puntos suspensivos (a veces como caracter unico "…", a veces como
 # "[...]", a veces como el caracter unico envuelto en corchetes "[…]" --
@@ -160,6 +180,7 @@ def _limpiar_texto(texto):
     texto = html.unescape(texto)
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _ARTICULOS_RELACIONADOS_RE.sub("", texto)
+    texto = _PIE_LEGAL_EDITORIAL_RE.sub("", texto)
     texto = _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()

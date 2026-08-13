@@ -109,6 +109,32 @@ def test_pleca_sin_nombre_de_estado_antes_no_se_toca():
     assert _limpiar_texto(texto) == texto
 
 
+def test_pie_legal_editorial_se_elimina():
+    # Caso real (12-08-2026, lanacionweb.com/Diario La Nacion Tachira): el
+    # pie de pagina "Editorial Torbes CA J-070059680 Miniavisos..." (nombre
+    # legal del medio + RIF) quedaba pegado al cuerpo del articulo cuando
+    # BeautifulSoup no encuentra un <article>/div.content reconocible.
+    # "Torbes" tambien es, por coincidencia, un municipio real de Tachira,
+    # asi que esa unica mencion (ajena al articulo) bastaba para atribuirle
+    # "Municipio Torbes" a una nota que nunca lo nombra.
+    texto = (
+        "Camara de Licoreros denuncia crisis electrica La Camara de "
+        "Licoreros del Estado Tachira emitio un pronunciamiento en San "
+        "Cristobal para alertar sobre la crisis electrica que afecta a los "
+        "29 municipios de la entidad andina. Editorial Torbes CA "
+        "J-070059680 Miniavisos Edicion Impresa Mapa del sitio Politica de "
+        "privacidad Sobre Nosotros"
+    )
+    limpio = _limpiar_texto(texto)
+    assert "torbes" not in limpio.lower()
+    assert "san cristobal" in limpio.lower()
+
+
+def test_pie_legal_editorial_sin_ese_patron_no_se_toca_control():
+    texto = "Editorial de opinion: el gobierno regional anuncio nuevas medidas para el sector electrico."
+    assert _limpiar_texto(texto) == texto
+
+
 # --- _TRUNCADO_RE: deteccion de resumenes RSS truncados ------------------
 
 def test_truncado_con_corchetes_y_caracter_de_elipsis_se_detecta():
