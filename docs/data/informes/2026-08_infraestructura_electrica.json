@@ -3,19 +3,31 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-11T14:48:34.810519+00:00",
-  "actualizado_hasta": "2026-08-11T14:48:29.755496+00:00",
-  "total_eventos": 13,
+  "generado": "2026-08-13T12:13:51.574242+00:00",
+  "actualizado_hasta": "2026-08-13T05:27:01.348776+00:00",
+  "total_eventos": 21,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
-    "actual": 13
+    "actual": 21
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 13 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento en comparación con el período anterior, julio de 2026, cuando se registraron 5 eventos (Diario El Tiempo). Durante este período, se reportaron fallas eléctricas en varias zonas de Caracas, incluyendo El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, la avenida Libertador, la parroquia Altagracia, la avenida Panteón, Santa Rosalía y La Candelaria (Noticias de Aqui). Además, se produjeron apagones en el estado Zulia, que ponen en riesgo a pacientes renales, según informó El Periodico de Monagas. En el estado Miranda, fuertes lluvias causaron apagones y destrozos, y se reportaron caídas de árboles en la comunidad de Potrerito, en el municipio Los Salias (Diario El Tiempo, El Periodico de Monagas). En Carabobo, habitantes de los municipios de El Trigal y Valencia protestaron contra los constantes apagones y exigieron respuestas a las autoridades (El Periodico de Monagas). En Barinas, un grupo de personas protestó en la sede de Corpoelec exigiendo soluciones a los insoportables apagones (La Patilla). En Mérida, jóvenes protestaron en la avenida Las Américas por los apagones que mantienen a la ciudad operando a media máquina (La Patilla). En Maturín, residentes de la parroquia Alto de Los Godos protestaron por más de 10 horas sin energía eléctrica, y en Anzoátegui, habitantes de Boca de Uchire cerraron la autopista para reclamar por fallas eléctricas (Maturin News, Noticias de Aqui).",
+  "narrativa": "Durante el período de agosto de 2026, se registraron 21 eventos relacionados con fallas eléctricas en Venezuela, lo que representa un aumento significativo en comparación con el período anterior, que tuvo 5 eventos (Diario El Tiempo). En Caracas y Miranda, una fuerte tormenta con ráfagas de viento causó árboles caídos y fallas eléctricas el domingo (Diario El Tiempo). En el estado Barinas, las constantes fluctuaciones en el fluido eléctrico comprometieron el funcionamiento de las máquinas de hemodiálisis del Hospital Doctor Luis Razetti (Diario La Nacion). La Cámara de Licoreros del Estado Táchira denunció la crisis eléctrica que atraviesa el sector comercial en la entidad andina (Diario La Nacion). En el estado Zulia, los cortes de luz ponen en riesgo a pacientes renales (El Periodico de Monagas). En Carabobo, habitantes protestaron contra los constantes apagones y exigieron respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Miranda, fuertes lluvias causaron apagones y destrozos (El Periodico de Monagas). En varias zonas de Caracas, ciudadanos reportaron apagones la noche del 1 de agosto (El Pitazo). También se reportaron fuertes bajones eléctricos en varias zonas de Venezuela, incluyendo Caracas, Valencia, Lara y Zulia (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
       "link": "https://diarioeltiempo.com.ve/fuerte-tormenta-con-rafagas-de-viento-causaron-arboles-caidos-y-fallas-electricas-este-domingo-en-caracas-y-miranda/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -34,12 +46,20 @@
       "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+    },
+    {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
     },
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/08/apagones-mantienen-a-merida-operando-a-media-maquina-jovenes-protestaron-en-la-av-las-americas/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/yaracuy-fuertes-lluvias-y-vientos-derriban-cinco-postes-en-san-felipe/"
     },
     {
       "nombre": "Maturin News",
