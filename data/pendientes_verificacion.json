@@ -271,10 +271,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-14T18:14:22.128337+00:00"
   },
-  "incendio::Distrito Capital::2026-08-14": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-14T21:08:43.658779+00:00"
-  },
   "incendio::Miranda::2026-08-14": {
     "intentos": 1,
     "ultima_vez": "2026-08-14T20:09:50.339260+00:00"
@@ -283,32 +279,72 @@
     "intentos": 1,
     "ultima_vez": "2026-08-14T20:10:14.623879+00:00"
   },
-  "sismo::Barinas::2026-08-14": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-14T21:09:31.980796+00:00"
-  },
-  "infraestructura_electrica::Bolivar::2026-08-14": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-14T21:11:08.625409+00:00"
-  },
   "infraestructura_electrica::Distrito Capital::2026-08-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-14T21:07:07.016260+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-14T21:59:14.240828+00:00"
   },
   "infraestructura_electrica::Lara::2026-08-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-14T21:07:31.174235+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-14T21:59:38.684969+00:00"
   },
   "sismo::La Guaira::2026-08-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-14T21:08:19.494267+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-14T22:00:51.401591+00:00"
   },
   "tsunami::Tachira::2026-08-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-14T21:13:33.608578+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-14T22:06:31.314770+00:00"
   },
   "infraestructura_electrica::La Guaira::2026-08-14": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-14T22:06:55.823924+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-14": {
     "intentos": 1,
-    "ultima_vez": "2026-08-14T21:13:57.761791+00:00"
+    "ultima_vez": "2026-08-14T22:00:03.001968+00:00"
+  },
+  "orden_publico::Anzoategui::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:00:27.234942+00:00"
+  },
+  "sequia::Trujillo::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:01:40.136782+00:00"
+  },
+  "infraestructura_electrica::Portuguesa::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:02:28.548544+00:00"
+  },
+  "salud_publica::Sucre::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:02:52.718571+00:00"
+  },
+  "infraestructura_electrica::Sucre::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:03:17.180713+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:03:41.367469+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:04:29.743301+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:04:54.003077+00:00"
+  },
+  "infraestructura_electrica::Miranda::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:05:18.507887+00:00"
+  },
+  "infraestructura_electrica::Nueva Esparta::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:05:42.773949+00:00"
+  },
+  "incendio::Nueva Esparta::2026-08-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-14T22:06:06.930138+00:00"
   }
 }

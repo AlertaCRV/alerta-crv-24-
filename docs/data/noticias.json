@@ -1,5 +1,90 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "San Pedro",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/registran-incendio-en-local-comercial-de-caracas/",
+        "fecha": "2026-08-14T14:36:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T14:36:48+00:00",
+    "fecha_evento_temprana": "2026-08-14T14:36:48+00:00",
+    "fecha_deteccion": "2026-08-14T22:01:15.846004+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Distrito Capital::2026-08-14",
+    "titulo": "Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 14/08/2026, 10:36 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 6:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/registran-incendio-en-local-comercial-de-caracas/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/confirman-el-fallecimiento-de-familia-venezolana-por-el-colapso-de-edificio-en-cali/",
+        "fecha": "2026-08-14T13:39:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T13:39:47+00:00",
+    "fecha_evento_temprana": "2026-08-14T13:39:47+00:00",
+    "fecha_deteccion": "2026-08-14T22:02:04.358427+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.4,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Barinas::2026-08-14::mag7.4",
+    "titulo": "Sismo en Barinas",
+    "texto": "📌 Sismo en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 14/08/2026, 9:39 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 6:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/confirman-el-fallecimiento-de-familia-venezolana-por-el-colapso-de-edificio-en-cali/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.2,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/noticia/andres-velasquez-apagones-corrupcion/",
+        "fecha": "2026-08-14T19:35:48+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/politica/primero-justicia-bolivar-denuncia-cortes-electricos-ante-la-defensoria-del-pueblo/",
+        "fecha": "2026-08-14T20:13:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T20:13:00+00:00",
+    "fecha_evento_temprana": "2026-08-14T19:35:48+00:00",
+    "fecha_deteccion": "2026-08-14T22:04:05.532942+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-14",
+    "titulo": "Falla eléctrica en Bolivar",
+    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 14/08/2026, 4:13 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 6:04 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/noticia/andres-velasquez-apagones-corrupcion/\n  • Primicia (Bolivar): https://primicia.com.ve/politica/primero-justicia-bolivar-denuncia-cortes-electricos-ante-la-defensoria-del-pueblo/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": "Lagunillas",
@@ -268,37 +353,6 @@
     "clave_dedup": "incendio::Nueva Esparta::2026-08-14",
     "titulo": "Incendio en Municipio Mariño, Nueva Esparta",
     "texto": "📌 Incendio en Municipio Mariño, Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Mariño, Nueva Esparta\n🕒 Hecho reportado: 14/08/2026, 11:59 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 5:13 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/08/14/controlan-incendio-la-caracola/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "San Pedro",
-    "severidad": "sin_clasificar",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/caracas/caracas-incendio-en-avenida-los-ilustres-genera-congestion-vial-hacia-plaza-venezuela/",
-        "fecha": "2026-08-14T14:20:31+00:00"
-      },
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/registran-incendio-en-local-comercial-de-caracas/",
-        "fecha": "2026-08-14T14:36:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-14T14:36:48+00:00",
-    "fecha_evento_temprana": "2026-08-14T14:20:31+00:00",
-    "fecha_deteccion": "2026-08-14T15:12:46.309246+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-08-14",
-    "titulo": "Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia San Pedro, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia San Pedro, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 14/08/2026, 10:36 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 11:12 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/caracas-incendio-en-avenida-los-ilustres-genera-congestion-vial-hacia-plaza-venezuela/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/registran-incendio-en-local-comercial-de-caracas/"
   },
   {
     "tipo": "incendio",
