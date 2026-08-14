@@ -20,7 +20,7 @@
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-08-13T12:14:44.233713+00:00",
+    "generado": "2026-08-14T09:39:57.717827+00:00",
     "total_eventos": 1
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-13T09:45:56.191313+00:00",
+    "generado": "2026-08-14T09:38:16.591019+00:00",
     "total_eventos": 6
   },
   {
@@ -68,8 +68,8 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-08-13T09:45:52.023815+00:00",
-    "total_eventos": 64
+    "generado": "2026-08-14T09:38:12.190403+00:00",
+    "total_eventos": 63
   },
   {
     "periodo": "2026-08",

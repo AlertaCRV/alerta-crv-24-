@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-08-13T09:45:52.023815+00:00",
-  "actualizado_hasta": "2026-08-13T05:27:38.594250+00:00",
-  "total_eventos": 64,
+  "generado": "2026-08-14T09:38:12.190403+00:00",
+  "actualizado_hasta": "2026-08-14T05:24:35.984577+00:00",
+  "total_eventos": 63,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 28,
-    "actual": 64
+    "actual": 63
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 64 eventos, lo que supone un aumento en comparación con el período anterior, 2026-07, que tuvo 28 eventos. Durante este período, se produjeron varios incidentes graves que causaron daños materiales, heridos y víctimas fatales. Uno de los eventos más significativos fue el incidente vial en el Distrito Capital, que se reportó como crítico (Noticia al Dia (Zulia)). Además, se registraron inundaciones en Yaracuy, que también fueron calificadas como críticas (Turimiquire (Sucre), El Impulso (Lara)). Un incendio en Miranda fue reportado como de severidad alta (La Prensa de Monagas). Otras inundaciones en Yaracuy y Apure, así como un incendio en Yaracuy, también tuvieron severidad crítica o alta (La Prensa de Lara, Notiapure). Un incidente vial en Barinas resultó en víctimas fatales y heridos (La Noticia de Barinas). La situación de salud pública en Lara también fue de severidad crítica (Maturin News). Es importante destacar que, según las fuentes, las inundaciones en Yaracuy causaron la muerte de una persona y daños estructurales en el puente La Galletera (El Impulso (Lara)). En Barinas, un motorizado perdió la vida en una colisión múltiple (La Noticia de Barinas). En Yaracuy, dos hermanos fallecieron tras una explosión de gas (La Prensa de Lara). Un incendio en un edificio de Las Mercedes dejó dos personas lesionadas (La Prensa de Monagas). La muerte de tres reclusos en cárceles del país también fue denunciada, exigiendo investigar posibles omisiones (Maturin News). En Apure, el desbordamiento del río Arauca afectó a más de 500 familias, quienes recibieron atención integral (Notiapure). Un fallecido y cinco heridos fueron el resultado de una colisión múltiple en la autopista Valle-Coche (Noticia al Dia (Zulia)). Finalmente, una mujer murió por una descarga eléctrica en Manuel Monge, estado Yaracuy, después de que su casa se inundara (Turimiquire (Sucre)).",
+  "narrativa": "En el período de agosto de 2026, se registraron un total de 63 eventos de emergencia en Venezuela, lo que representa un aumento en comparación con el período anterior, que tuvo 28 eventos (Notiapure). Entre los eventos más destacados se encuentran el incidente vial en el Distrito Capital, que resultó en víctimas fatales y heridos (Noticia al Dia (Zulia)), y la inundación en Yaracuy, que causó daños estructurales y pérdidas materiales (El Impulso (Lara), Turimiquire (Sucre)). Además, se reportaron incendios en Miranda y Yaracuy, que dejaron personas lesionadas y daños materiales (La Prensa de Monagas, La Prensa de Lara). La inundación en Apure también fue notable, afectando a más de 500 familias y requiriendo una respuesta humanitaria integral (Notiapure). Otros eventos significativos incluyeron un incidente vial en Barinas con víctimas fatales y heridos (La Noticia de Barinas), y problemas de salud pública en Lara que resultaron en muertes (Maturin News). Es importante destacar que cada uno de estos eventos tuvo un impacto significativo en las comunidades afectadas, y es fundamental la respuesta oportuna y efectiva para mitigar los daños y apoyar a los afectados.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -78,10 +78,6 @@
       "link": "https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
     },
     {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/"
-    },
-    {
       "nombre": "El Luchador (Bolivar)",
       "link": "https://elluchador.info/?p=317484"
     },
@@ -110,10 +106,6 @@
       "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
     },
     {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/sucesos/artefacto-explosivo-en-centro-comercial-de-baruta/"
-    },
-    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
     },
@@ -139,15 +131,23 @@
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/sin-categoria/jubilados-petroleros-cumplen-segundo-dia-de-protesta-en-la-campina/"
-    },
-    {
-      "nombre": "El Pitazo",
       "link": "https://elpitazo.net/politica/fotos-protesta-y-piquete-de-la-pnb-a-las-afueras-del-melia-caracas-sede-del-dialogo-entre-an-2015-y-el-chavismo/"
     },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/pagos-con-tarjeta-de-debito-tuvieron-fallas-por-fluctuacion-electrica/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/sectores-de-cantaura-realizaron-protesta-pacifica-por-la-falta-de-agua/"
     }
   ]
 }
