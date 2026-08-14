@@ -1,5 +1,152 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/14/la-guaira-coordina-la-reactivacion-gradual-del-turismo-playero-tras-los-sismos-de-junio-14ago/",
+        "fecha": "2026-08-14T18:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T18:30:00+00:00",
+    "fecha_evento_temprana": "2026-08-14T18:30:00+00:00",
+    "fecha_deteccion": "2026-08-14T22:59:43.176564+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-08-14",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 14/08/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 6:59 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/14/la-guaira-coordina-la-reactivacion-gradual-del-turismo-playero-tras-los-sismos-de-junio-14ago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.9,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/protesta-contra-corpoelec-en-8-estados-usuarios-rechazan-apagones-y-aumento-de-la-tarifa-electrica/",
+        "fecha": "2026-08-14T19:58:01+00:00"
+      },
+      {
+        "nombre": "Reporte Confidencial (Nueva Esparta)",
+        "link": "https://reporteconfidencial.info/2026/08/14/no-mas-apagones/",
+        "fecha": "2026-08-14T17:22:33+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/noticia/andres-velasquez-apagones-corrupcion/",
+        "fecha": "2026-08-14T19:35:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T19:58:01+00:00",
+    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "fecha_deteccion": "2026-08-14T23:00:07.605704+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-14",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 14/08/2026, 3:58 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 7:00 p.m.\n📊 Fuentes independientes: 3 (score 1.9)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/protesta-contra-corpoelec-en-8-estados-usuarios-rechazan-apagones-y-aumento-de-la-tarifa-electrica/\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/08/14/no-mas-apagones/\n  • La Prensa de Lara: https://laprensadelara.com/noticia/andres-velasquez-apagones-corrupcion/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": "Palavecino",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.4,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/protesta-contra-corpoelec-en-8-estados-usuarios-rechazan-apagones-y-aumento-de-la-tarifa-electrica/",
+        "fecha": "2026-08-14T19:58:01+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/barquisimeto-protestaron-cortes/",
+        "fecha": "2026-08-14T16:17:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T19:58:01+00:00",
+    "fecha_evento_temprana": "2026-08-14T16:17:07+00:00",
+    "fecha_deteccion": "2026-08-14T23:00:31.977912+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-08-14",
+    "titulo": "Falla eléctrica en Municipio Palavecino, Lara",
+    "texto": "📌 Falla eléctrica en Municipio Palavecino, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Palavecino, Lara\n🕒 Hecho reportado: 14/08/2026, 3:58 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 7:00 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/protesta-contra-corpoelec-en-8-estados-usuarios-rechazan-apagones-y-aumento-de-la-tarifa-electrica/\n  • La Prensa de Lara: https://laprensadelara.com/locales/barquisimeto-protestaron-cortes/"
+  },
+  {
+    "tipo": "tsunami",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Ciudad MCY (Aragua)",
+        "link": "https://ciudadmcy.info.ve/funvisis-reporto-un-total-de-122-movimientos-teluricos-registrados-en-el-pais-durante-la-ultima-semana",
+        "fecha": "2026-08-14T19:00:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T19:00:31+00:00",
+    "fecha_evento_temprana": "2026-08-14T19:00:31+00:00",
+    "fecha_deteccion": "2026-08-14T23:07:02.147512+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tsunami::Tachira::2026-08-14",
+    "titulo": "Tsunami en Tachira",
+    "texto": "📌 Tsunami en Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 14/08/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 7:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/funvisis-reporto-un-total-de-122-movimientos-teluricos-registrados-en-el-pais-durante-la-ultima-semana"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/14/video-barquisimetanos-marchan-hacia-la-sede-regional-de-corpoelec-para-exigir-el-cese-de-los-cortes-electricos-14ago/",
+        "fecha": "2026-08-14T21:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-14T21:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-14T21:00:00+00:00",
+    "fecha_deteccion": "2026-08-14T23:07:26.687222+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::La Guaira::2026-08-14",
+    "titulo": "Falla eléctrica en Municipio Vargas, La Guaira",
+    "texto": "📌 Falla eléctrica en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 14/08/2026, 5:00 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 7:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/14/video-barquisimetanos-marchan-hacia-la-sede-regional-de-corpoelec-para-exigir-el-cese-de-los-cortes-electricos-14ago/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
