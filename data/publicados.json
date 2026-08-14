@@ -113,9 +113,9 @@
   },
   "incendio::Distrito Capital::2026-08-14": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-14T15:12:46.309246+00:00",
-    "fecha_evento_temprana": "2026-08-14T14:20:31+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T22:01:15.846004+00:00",
+    "fecha_evento_temprana": "2026-08-14T14:36:48+00:00",
     "municipio": "Libertador"
   },
   "incendio::Miranda::2026-08-14": {
@@ -201,5 +201,19 @@
     "fecha_deteccion": "2026-08-14T21:13:09.445532+00:00",
     "fecha_evento_temprana": "2026-08-14T15:59:15+00:00",
     "municipio": "Mariño"
+  },
+  "sismo::Barinas::2026-08-14::mag7.4": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T22:02:04.358427+00:00",
+    "fecha_evento_temprana": "2026-08-14T13:39:47+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Bolivar::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T22:04:05.532942+00:00",
+    "fecha_evento_temprana": "2026-08-14T19:35:48+00:00",
+    "municipio": null
   }
 }

@@ -1,29 +1,29 @@
 {
-  "actualizado": "2026-08-14T21:14:03.465211+00:00",
+  "actualizado": "2026-08-14T22:06:57.018334+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-14T21:00:00+00:00"
   },
-  "total_eventos": 104,
+  "total_eventos": 107,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 32,
+    "infraestructura_electrica": 33,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
     "salud_publica": 4,
     "crisis_migratoria": 4,
-    "incendio": 12,
+    "incendio": 13,
     "vialidad": 3,
-    "sismo": 3,
+    "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 3
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 16,
+      "total": 17,
       "confirmados": 4
     },
     {
@@ -32,18 +32,18 @@
       "confirmados": 4
     },
     {
+      "estado": "Barinas",
+      "total": 9,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 8,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
-      "total": 8,
-      "confirmados": 1
-    },
-    {
       "estado": "Bolivar",
-      "total": 7,
+      "total": 8,
       "confirmados": 1
     },
     {
@@ -143,7 +143,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 6,
-      "incendio": 2,
+      "incendio": 3,
       "vialidad": 1,
       "infraestructura_electrica": 5
     },
@@ -156,7 +156,8 @@
       "deslizamiento": 1,
       "inundacion": 3,
       "infraestructura_electrica": 3,
-      "vialidad": 1
+      "vialidad": 1,
+      "sismo": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -171,7 +172,7 @@
       "orden_publico": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 1,
       "escasez_combustible": 1,
       "incendio": 2
@@ -223,7 +224,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 87,
+    "sin_clasificar": 90,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -236,7 +237,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 27
+      "2026-08": 28
     },
     "deslizamiento": {
       "2026-07": 3
@@ -257,13 +258,13 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 10
     },
     "vialidad": {
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "escasez_combustible": {
       "2026-08": 1
