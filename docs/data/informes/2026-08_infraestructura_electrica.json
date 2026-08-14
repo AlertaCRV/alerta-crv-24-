@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-13T12:13:51.574242+00:00",
-  "actualizado_hasta": "2026-08-13T05:27:01.348776+00:00",
+  "generado": "2026-08-14T12:03:17.317269+00:00",
+  "actualizado_hasta": "2026-08-13T15:42:22.679192+00:00",
   "total_eventos": 21,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
     "actual": 21
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron 21 eventos relacionados con fallas eléctricas en Venezuela, lo que representa un aumento significativo en comparación con el período anterior, que tuvo 5 eventos (Diario El Tiempo). En Caracas y Miranda, una fuerte tormenta con ráfagas de viento causó árboles caídos y fallas eléctricas el domingo (Diario El Tiempo). En el estado Barinas, las constantes fluctuaciones en el fluido eléctrico comprometieron el funcionamiento de las máquinas de hemodiálisis del Hospital Doctor Luis Razetti (Diario La Nacion). La Cámara de Licoreros del Estado Táchira denunció la crisis eléctrica que atraviesa el sector comercial en la entidad andina (Diario La Nacion). En el estado Zulia, los cortes de luz ponen en riesgo a pacientes renales (El Periodico de Monagas). En Carabobo, habitantes protestaron contra los constantes apagones y exigieron respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Miranda, fuertes lluvias causaron apagones y destrozos (El Periodico de Monagas). En varias zonas de Caracas, ciudadanos reportaron apagones la noche del 1 de agosto (El Pitazo). También se reportaron fuertes bajones eléctricos en varias zonas de Venezuela, incluyendo Caracas, Valencia, Lara y Zulia (El Pitazo).",
+  "narrativa": "En el período de agosto de 2026, se registraron 21 eventos relacionados con fallas eléctricas en Venezuela, lo que supone un aumento significativo en comparación con el período anterior, que tuvo 5 eventos (Diario El Tiempo). Una de las afectaciones más destacadas se produjo en Caracas y Miranda, donde una fuerte tormenta con ráfagas de viento causó árboles caídos y fallas eléctricas (Diario El Tiempo). En el estado Barinas, las fallas eléctricas comprometieron la operatividad de máquinas de diálisis recién instaladas en el Hospital Razetti (Diario La Nacion). La Cámara de Licoreros del Estado Táchira denunció la crisis eléctrica que atraviesa el sector comercial en la entidad andina (Diario La Nacion). En el estado Zulia, los cortes de luz pusieron en riesgo a pacientes renales, quienes se vieron afectados por las interrupciones en el suministro eléctrico (El Periodico de Monagas). Los habitantes de los estados Aragua y Carabobo protestaron contra los constantes apagones y exigieron respuestas ante las fallas en el servicio eléctrico (El Periodico de Monagas). En Miranda, fuertes lluvias causaron apagones y destrozos, afectando a miles de hogares en los Altos Mirandinos (El Periodico de Monagas). En Caracas, ciudadanos reportaron apagones en varias zonas de la capital venezolana, incluyendo El Recreo, La Pastora y Plaza Venezuela (El Pitazo). Además, se reportaron fuertes bajones eléctricos en varias zonas de Venezuela, incluyendo Caracas, Valencia, Lara y Zulia (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -24,10 +24,6 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/08/12/andres-velasquez-se-suma-llamado-a-manifestar-este-viernes-por-apagones-y-elecciones-presidenciales-12ago/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -48,6 +44,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/pagos-con-tarjeta-de-debito-tuvieron-fallas-por-fluctuacion-electrica/"
     },
     {
       "nombre": "La Patilla",
