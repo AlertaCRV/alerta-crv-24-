@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-14T05:25:27.302952+00:00",
+  "actualizado": "2026-08-14T15:13:08.400656+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-14T01:27:56+00:00"
+    "hasta": "2026-08-14T14:36:48+00:00"
   },
-  "total_eventos": 91,
+  "total_eventos": 94,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
@@ -14,17 +14,17 @@
     "orden_publico": 19,
     "salud_publica": 3,
     "crisis_migratoria": 4,
-    "incendio": 9,
+    "incendio": 11,
     "vialidad": 3,
     "sismo": 3,
     "escasez_combustible": 1,
-    "sequia": 1
+    "sequia": 2
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 14,
-      "confirmados": 3
+      "total": 15,
+      "confirmados": 4
     },
     {
       "estado": "Zulia",
@@ -67,6 +67,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Trujillo",
       "total": 3,
       "confirmados": 0
@@ -80,11 +85,6 @@
       "estado": "Monagas",
       "total": 3,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 3,
-      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -108,6 +108,11 @@
     },
     {
       "estado": "Merida",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Guarico",
       "total": 1,
       "confirmados": 0
     }
@@ -138,7 +143,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 5,
-      "incendio": 1,
+      "incendio": 2,
       "vialidad": 1,
       "infraestructura_electrica": 5
     },
@@ -182,7 +187,7 @@
       "salud_publica": 1
     },
     "Miranda": {
-      "incendio": 2,
+      "incendio": 3,
       "infraestructura_electrica": 1
     },
     "Nueva Esparta": {
@@ -206,12 +211,15 @@
     },
     "Merida": {
       "infraestructura_electrica": 1
+    },
+    "Guarico": {
+      "sequia": 1
     }
   },
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 74,
+    "sin_clasificar": 77,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -245,7 +253,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 6
+      "2026-08": 8
     },
     "vialidad": {
       "2026-08": 3
@@ -257,7 +265,7 @@
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 1
+      "2026-08": 2
     }
   }
 }

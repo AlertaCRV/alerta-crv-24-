@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-11T14:48:39.108385+00:00",
-  "actualizado_hasta": "2026-08-10T20:08:17.948870+00:00",
-  "total_eventos": 7,
+  "generado": "2026-08-14T15:13:20.912125+00:00",
+  "actualizado_hasta": "2026-08-13T05:27:35.277832+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron 7 eventos de inundación en Venezuela, igualando el número de eventos del período anterior (julio de 2026). Entre los eventos más destacados se encuentran la inundación en Yaracuy, que causó daños estructurales en el puente La Galletera y la muerte de una persona, según informó El Impulso (Lara). La misma fuente también reportó inundaciones en cuatro municipios de Yaracuy. Además, Turimiquire (Sucre) informó sobre la muerte de María Hernández, quien falleció por una descarga eléctrica en su casa inundada en el caserío San Amaya del municipio Manuel Monge, estado Yaracuy. Otra inundación ocurrió en Apure, específicamente en el sector Cachamero - El Ripial, donde el alcalde del municipio Páez lideró trabajos de mitigación, como se menciona en Notiapure. Estos eventos de inundación afectaron varias regiones del país, incluyendo Barinas, donde estudiantes no pudieron asistir a su graduación debido a la crecida de un río, según El Pitazo. La Prensa de Monagas también reportó inundaciones en Barinas y en las vías de Las Tejerías en Aragua, mientras que Yaracuy al Dia informó sobre anegaciones y caída de árboles en la capital yaracuyana. Todos estos eventos demuestran la gravedad de las inundaciones en el país durante este período.",
+  "narrativa": "Durante el período de agosto de 2026, se registraron un total de 9 eventos relacionados con inundaciones en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 7 eventos (El Impulso (Lara)). Entre los eventos más destacados se encuentran las inundaciones en el estado Yaracuy, que afectaron a cuatro municipios y causaron daños estructurales en el puente La Galletera, así como la muerte de una persona (El Impulso (Lara)). En específico, la inundación en Yaracuy fue reportada por varias fuentes, incluyendo El Impulso (Lara) y Turimiquire (Sucre), y se menciona que la severidad de la inundación fue crítica. Además, se informó que una mujer de 49 años murió al recibir una descarga eléctrica en el caserío San Amaya del municipio Manuel Monge, luego de que su vivienda se inundara debido al desbordamiento del río Yumarito (Turimiquire (Sucre)). En el estado Apure, las inundaciones causadas por la crecida del río Arauca afectaron a más de 500 familias en la parroquia Urdaneta, y se desplegaron equipos para atender a las personas damnificadas (Notiapure). La inundación en Apure también fue reportada por Notiapure, y se menciona que la severidad de la inundación fue alta. Otros eventos notables incluyeron la crecida de quebradas en el municipio Cruz Paredes, en el estado Barinas, y las inundaciones en las vías de Las Tejerías, en el estado Aragua (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -20,6 +20,10 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -36,6 +40,10 @@
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/gobierno-bolivariano-despliega-atencion-directa-a-mas-de-500-familias-afectadas-por-crecida-del-rio-arauca-en-urdaneta/"
     },
     {
       "nombre": "Yaracuy al Dia",
