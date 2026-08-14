@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-14T22:06:57.018334+00:00",
+  "actualizado": "2026-08-14T23:07:29.147641+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-14T21:00:00+00:00"
   },
-  "total_eventos": 107,
+  "total_eventos": 112,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 33,
+    "infraestructura_electrica": 36,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -16,14 +16,15 @@
     "crisis_migratoria": 4,
     "incendio": 13,
     "vialidad": 3,
-    "sismo": 4,
+    "sismo": 5,
     "escasez_combustible": 1,
-    "sequia": 3
+    "sequia": 3,
+    "tsunami": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 17,
+      "total": 18,
       "confirmados": 4
     },
     {
@@ -32,13 +33,13 @@
       "confirmados": 4
     },
     {
-      "estado": "Barinas",
+      "estado": "Lara",
       "total": 9,
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 8,
+      "estado": "Barinas",
+      "total": 9,
       "confirmados": 1
     },
     {
@@ -87,6 +88,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
       "estado": "Monagas",
       "total": 3,
       "confirmados": 0
@@ -102,7 +108,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
+      "estado": "La Guaira",
       "total": 2,
       "confirmados": 0
     },
@@ -127,7 +133,7 @@
       "inundacion": 2,
       "salud_publica": 2,
       "orden_publico": 2,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "sismo": 1
     },
     "Zulia": {
@@ -145,7 +151,7 @@
       "orden_publico": 6,
       "incendio": 3,
       "vialidad": 1,
-      "infraestructura_electrica": 5
+      "infraestructura_electrica": 6
     },
     "Trujillo": {
       "inundacion": 1,
@@ -184,7 +190,8 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "tsunami": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2,
@@ -219,12 +226,16 @@
     },
     "Guarico": {
       "sequia": 1
+    },
+    "La Guaira": {
+      "sismo": 1,
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 90,
+    "sin_clasificar": 95,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -237,7 +248,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 28
+      "2026-08": 31
     },
     "deslizamiento": {
       "2026-07": 3
@@ -264,13 +275,16 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "escasez_combustible": {
       "2026-08": 1
     },
     "sequia": {
       "2026-08": 3
+    },
+    "tsunami": {
+      "2026-08": 1
     }
   }
 }
