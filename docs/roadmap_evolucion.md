@@ -5744,3 +5744,297 @@ estado, no duplicados reales), 10 fuentes muertas en 7 informes (7 ya
 conocidas de sesiones anteriores + 3 nuevas de esta sesión: `GROQ_API_KEY`
 no disponible en este entorno, `scripts/build_informes.py` regenerará los
 informes afectados en la próxima corrida de producción).
+
+## Auditoría diaria automática (14-08-2026): un sismo real de Colombia se publicó como magnitud 7.4 en Barinas, el nombre institucional del SSATV disparó un tsunami en un estado sin costa, y dos avenidas homónimas ("Carabobo", "Vargas") duplicaron fallas eléctricas de Barquisimeto en otros estados
+
+Auditoría de rutina de las 25 alertas publicadas/actualizadas el
+14-08-2026 (la mayoría `PASADO_POR_FALLA_TECNICA`, sin verificación de
+IA). Se encontraron y corrigieron 7 causas raíz distintas, con 7 alertas
+retractadas por completo y 2 corregidas retroactivamente (municipio).
+
+### 1. Un terremoto real de magnitud 7.4 en Cali, Colombia, se publicó como sismo crítico en Barinas porque el estado solo nombra la procedencia de las víctimas
+
+`sismo::Barinas::2026-08-14::mag7.4` (El Tiempo de Anzoátegui, "Confirman
+el fallecimiento de familia venezolana por el colapso de edificio en
+Cali") describe el hallazgo de los cuerpos de tres venezolanos
+"procedentes de Barinas" que quedaron atrapados bajo los escombros del
+edificio Vanessa en Cali, "tras el terremoto de magnitud 7,4 registrado
+en Colombia el lunes 10 de agosto". El sismo ocurrió enteramente en
+Colombia; Barinas es solo el estado de origen de las víctimas.
+
+**Causa raíz**: el patrón ya existente para este tipo de caso
+(`_es_fallecimiento_migrante_en_extranjero()`, `scripts/classify.py`,
+agregado el 11-08-2026 para un caso casi idéntico) solo reconocía
+"oriundo/a de(l)"/"natural de(l)" como frase de procedencia y una lista
+fija de verbos de fallecimiento ("murió", "falleció", "perdieron la
+vida"...) -- esta fuente usa una redacción distinta ("procedentes de",
+"hallados sin vida") que ninguna de las dos listas cubría.
+
+**Corrección**: se amplió `_ORIGEN_MIGRANTE_RE` para incluir
+"procedentes?/procedente de(l)" y `_MUERTE_MIGRANTE_EXTRANJERO` para
+incluir "hallado(s)/hallada(s) sin vida" y "encontrado(s)/encontrada(s)
+sin vida" (`scripts/classify.py`). Se verificó contra las 122 fuentes de
+`data/historico_fuentes_texto.jsonl` que ambas frases nuevas son
+exclusivas de este artículo, y con un caso de control (desplazados
+"procedentes de Barinas" dentro de Venezuela, sin muerte ni Colombia) que
+un sismo real sigue publicándose sin problema.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Barinas::2026-08-14::mag7.4` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+### 2. El nombre oficial de la división de Funvisis que emite boletines sismicos ("Servicio Sismológico y de Alerta de Tsunami Venezolano") disparó una alerta de tsunami en Táchira, un estado sin costa
+
+`tsunami::Tachira::2026-08-14` (Ciudad MCY, "Funvisis reportó un total de
+122 movimientos telúricos registrados en el país durante la última
+semana") es un resumen semanal rutinario de sismicidad menor (122 eventos
+entre magnitud 1.5 y 4.2), sin ninguna ola ni evacuación costera. La
+única mención de "tsunami" en todo el artículo es parte del nombre
+oficial de la división de Funvisis que firma el boletín: "el Servicio
+Sismológico y de Alerta de Tsunami Venezolano (Ssatv)". Táchira es un
+estado sin costa; se mencionaba solo porque un sismo de magnitud 2.8 (sin
+relevancia) se registró cerca de La Fría.
+
+**Causa raíz**: "alerta de tsunami" es palabra clave de
+`tipo=tsunami` (`config/keywords.yaml`) -- ningún mecanismo existente
+distinguía el uso de esa frase como nombre propio de una institución del
+uso real (una alerta de tsunami efectivamente emitida).
+
+**Corrección**: nueva función
+`_es_nombre_institucional_tsunami_sin_evidencia_real()` (`scripts/
+classify.py`), evaluada sobre el ARTÍCULO COMPLETO: si el texto contiene
+la frase institucional completa "servicio sismológico y de alerta de
+tsunami" y no hay evidencia fuerte de un tsunami real (ola gigante,
+maremoto, evacuación costera), se descarta el tipo. Se verificó contra el
+corpus completo que la frase institucional es exclusiva de este artículo,
+y con un caso de control (una alerta de tsunami real, con "ola gigante" y
+evacuación costera, sin la frase institucional) que sigue publicándose
+sin problema.
+
+**Corrección retroactiva**: se eliminó por completo
+`tsunami::Tachira::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 3. Un artículo sobre la reactivación turística de La Guaira, semanas después del sismo de junio ya cubierto, generó una alerta de sismo nueva como si hubiera ocurrido hoy
+
+`sismo::La Guaira::2026-08-14` (El Impulso, "La Guaira coordina la
+reactivación gradual del turismo playero tras los sismos de junio")
+describe únicamente la coordinación entre autoridades para reactivar el
+turismo playero, "luego de las afectaciones causadas por el evento
+sísmico registrado el pasado 24 de junio" -- casi dos meses antes de la
+publicación, sin ningún desarrollo sísmico nuevo el día de publicación.
+
+**Causa raíz**: el filtro existente para boletines retrospectivos
+(`_es_correccion_epicentro_retrospectiva()`) solo cubre el caso específico
+de una entidad "ajustando"/"corrigiendo" un epicentro ya conocido -- no
+cubre una referencia genérica a la fecha de un sismo ya ocurrido.
+
+**Corrección**: nueva función `_es_referencia_sismo_fecha_pasada()`
+(`scripts/classify.py`), decisiva igual que la corrección de epicentro
+(no se anula por evidencia fuerte de sismo, porque esa evidencia describe
+el sismo original, no uno nuevo): un regex que busca "sismo"/"sísmico"/
+"terremoto" cerca (60 caracteres) de "el pasado", en cualquier orden. Se
+verificó con un caso de control (un sismo real reportado el mismo día,
+donde "el pasado" aparece en otro sentido -- "el pasado gobernador" --
+lejos de cualquier mención de sismo) que un sismo real sigue publicándose
+sin problema.
+
+**Corrección retroactiva**: se eliminó por completo `sismo::La
+Guaira::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 4. Una nota sobre un comedor de Cáritas para adultos mayores, fundado "en tiempos de la pandemia de Covid-19", disparó una alerta de salud pública sin ninguna emergencia sanitaria real
+
+`salud_publica::Sucre::2026-08-14` (Turimiquire, "Los abuelos de Santa
+Rosa en Carúpano cuentan con un espacio Cáritas") describe la
+inauguración de una casa parroquial/comedor para adultos mayores en
+Carúpano -- una nota de servicio comunitario positiva, sin ningún caso ni
+alarma sanitaria. La palabra "pandemia" aparece una sola vez, como
+referencia histórica al origen del programa: "una dependencia que nació
+en tiempos de la pandemia de Covid-19".
+
+**Causa raíz**: "pandemia" es palabra clave de `tipo=salud_publica`
+(`config/keywords.yaml`) sin distinguir su uso como referencia temporal
+retrospectiva (muy común en notas de programas sociales fundados durante
+2020-2021) de una pandemia activa.
+
+**Corrección**: se amplió `_CONTEXTO_CONFLICTIVO_POR_TIPO["salud_
+publica"]` (`scripts/classify.py`) con "tiempos de la pandemia",
+"durante la pandemia", "desde la pandemia" y "época de la pandemia" --
+mismo mecanismo ya usado para "totalmente controlada"/"prevenir
+enfermedades": si aparecen cerca de la ubicación y no hay evidencia
+fuerte de una emergencia sanitaria real (brote confirmado, casos
+confirmados, declaró emergencia sanitaria, cuarentena, hospitalizados),
+se descarta el tipo. Se verificó con un caso de control (una pandemia
+activa real, con "declaró emergencia sanitaria" y hospitalizados) que
+sigue publicándose sin problema.
+
+**Corrección retroactiva**: se eliminó por completo `salud_publica::
+Sucre::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 5. Dos avenidas homónimas de Barquisimeto ("Avenida Carabobo", "Av. Vargas") duplicaron las protestas por cortes eléctricos de Lara como alertas falsas en los estados Carabobo y La Guaira
+
+Dos artículos reales sobre marchas por cortes eléctricos EN BARQUISIMETO
+(estado Lara) generaban alertas duplicadas en otros estados porque
+mencionan avenidas locales homónimas de esos estados:
+
+- `infraestructura_electrica::Carabobo::2026-08-14` (El Impulso, La
+  Prensa de Lara): ambos artículos describen manifestantes marchando
+  "por la avenida Carabobo" hasta la sede de Corpoelec en Barquisimeto --
+  "Avenida Carabobo" es una vía muy común en ciudades venezolanas, sin
+  relación con el estado Carabobo (que el artículo nunca menciona).
+- `infraestructura_electrica::La Guaira::2026-08-14` (El Impulso): "con
+  rumbo a la sede de Corpoelec en la Av. Vargas con Carrera 24" -- "Av.
+  Vargas" es una calle local de Barquisimeto. "Vargas" es alias directo
+  del estado La Guaira en `estados.yaml` (su nombre histórico), y el
+  único municipio de La Guaira se llama, además, "Vargas" -- una doble
+  coincidencia que producía tanto el estado como el municipio falsos.
+
+**Causa raíz**: ningún mecanismo distinguía el nombre de una avenida del
+nombre del estado/alias homónimo -- mismo patrón de fondo ya cubierto
+antes para "avenida Bolívar" (30-07-2026) y "Carabobo FC" (02-08-2026),
+pero "avenida Carabobo" y "avenida/Av. Vargas" no estaban cubiertas.
+
+**Corrección**: se agregaron "avenida carabobo"/"avenidas carabobo"/"av.
+carabobo"/"av carabobo" a `LISTA_NEGRA_POR_ESTADO["Carabobo"]`, y
+"avenida vargas"/"avenidas vargas"/"av. vargas"/"av vargas" a
+`LISTA_NEGRA_POR_ESTADO["La Guaira"]` (`scripts/classify.py`) -- mismo
+mecanismo que "avenida bolívar". Se verificó con casos de control (un
+corte eléctrico real y explícito en "estado Carabobo"/"estado La Guaira",
+sin nombre de avenida) que ambos estados siguen detectándose con
+normalidad cuando sí son la ubicación real del hecho.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Carabobo::2026-08-14` e `infraestructura_
+electrica::La Guaira::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### 6. "Municipio Cajigal del estado Sucre" (sin coma) se capturaba como "Cajigal del estado Sucre" completo, que por casualidad terminaba en el nombre de otro municipio real del mismo estado
+
+`infraestructura_electrica::Sucre::2026-08-14` y `orden_publico::
+Sucre::2026-08-14` (dos fuentes distintas -- Turimiquire y El Tiempo de
+Anzoátegui -- sobre el mismo hecho real: protestas por cortes eléctricos
+en Yaguaraparo) se publicaron con `municipio: "Sucre"`, pero ambos
+artículos dicen explícitamente "Yaguaraparo, en el municipio Cajigal del
+estado Sucre".
+
+**Causa raíz**: `_MUNICIPIO_RE` (`scripts/classify.py`) solo detenía su
+captura en puntuación o fin de texto -- sin coma antes de "del estado",
+capturaba "Cajigal del estado Sucre" completo en vez de solo "Cajigal".
+Ese candidato inválido no calzaba por nombre exacto con ningún municipio
+de Sucre, pero SÍ por el mecanismo de sufijo de
+`_resolver_con_posible_adjetivo()` (diseñado para "municipio fronterizo
+Bolívar", ver auditoría del 09-08-2026), porque "estado Sucre" termina en
+"sucre" -- que además es, por coincidencia, el nombre de OTRO municipio
+real del mismo estado (el municipio Sucre, sede Cumaná).
+
+**Corrección**: se agregaron "del estado"/"del edo" como delimitadores
+adicionales del lookahead de `_MUNICIPIO_RE`, y "del estado"/"del edo"/
+"del municipio" al de `_PARROQUIA_RE` (mismo problema potencial), sin
+tocar el comportamiento con coma ni el caso ya cubierto de "municipio
+fronterizo Bolívar" (`scripts/classify.py`). Se verificó con un caso de
+control ("municipio X, estado Y" con coma) que sigue capturando solo el
+nombre del municipio.
+
+**Corrección retroactiva**: se corrigió `municipio` de "Sucre" a
+"Cajigal" en `docs/data/noticias.json` (título y texto del mensaje
+incluidos), `data/historico_eventos.jsonl` y `data/publicados.json`,
+para ambos eventos.
+
+### 7. Un párrafo de contexto sobre un incendio DISTINTO y ya resuelto ("un hecho similar ocurrió... en Petare, estado Miranda") duplicó un incendio de Caracas como alerta falsa en Miranda
+
+`incendio::Miranda::2026-08-14` (El Pitazo, "Incendio en avenida Los
+Ilustres genera congestión vial hacia Plaza Venezuela") es, en realidad,
+el mismo incendio ya publicado correctamente como `incendio::Distrito
+Capital::2026-08-14` (municipio Libertador, parroquia San Pedro, vía otra
+fuente) -- el propio artículo dice "avenida Los Ilustres, del municipio
+Libertador, en Caracas". Al final, agrega un párrafo de contexto sobre un
+incendio distinto y ya resuelto: "Un hecho similar ocurrió durante la
+noche del pasado 7 de agosto... en el sector El Llanito, en Petare,
+estado Miranda" -- ese incendio de hace una semana bastaba para generar
+una alerta duplicada en Miranda.
+
+**Causa raíz**: ningún mecanismo distinguía una mención de "Miranda"
+dentro de un párrafo de comparación con un hecho distinto y ya resuelto
+de una mención real del estado.
+
+**Corrección**: se agregó la frase completa "el llanito, en petare,
+estado miranda" a `LISTA_NEGRA_POR_ESTADO["Miranda"]` (`scripts/
+classify.py`) -- frase específica y verificada como exclusiva de este
+artículo (no la palabra suelta "Petare", que sí es evidencia legítima en
+artículos reales sobre hechos actuales en ese municipio). Se verificó con
+un caso de control (un incendio real y actual en Petare, estado Miranda,
+sin la frase de comparación completa) que sigue publicándose con
+normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `incendio::
+Miranda::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### Revisado sin cambios
+
+`infraestructura_electrica::Distrito Capital/Lara/Bolivar/Zulia::
+2026-08-14`: consistentes con el texto de sus fuentes -- protestas
+específicas frente a sedes de Corpoelec (El Marqués en Caracas, Barquisimeto
+en Lara), una denuncia formal de PJ Bolívar ante la Defensoría del Pueblo,
+y testimonios directos de residentes de Lagunillas/El Danto (Zulia).
+`incendio::Nueva Esparta::2026-08-14` (reserva de la laguna en playa La
+Caracola, municipio Mariño) y `sequia::Trujillo::2026-08-14` (Fedecámaras
+Trujillo, impacto cuantificado de El Niño en la producción agrícola
+estadal): consistentes con el texto. `sequia::Guarico::2026-08-14`
+(productores de maíz, parroquia El Socorro, entre varias localidades
+citadas por nombre con el mismo riesgo): consistente con el texto.
+
+### Pendiente de discutir
+
+**`orden_publico::Distrito Capital::2026-08-14`** (Turimiquire,
+presentación de un libro sobre la represión poselectoral de 2024, que
+menciona de paso una protesta de familiares de presos políticos frente al
+Ministerio Público "un día después" -- es decir, 3 días antes de la
+publicación): el hecho real (la protesta) sí ocurrió, pero ya había
+terminado varios días antes, y el artículo lo menciona solo como contexto
+secundario de la presentación del libro. No se corrigió a ciegas: no está
+claro si el sistema debería tratar una protesta de días atrás,
+mencionada de pasada en un artículo de otro tema, como un hecho de "hoy"
+en Distrito Capital, o si eso merece un filtro general de "protesta ya
+finalizada mencionada como contexto". Queda pendiente de decisión.
+
+**`infraestructura_electrica::Anzoategui/Miranda/Nueva Esparta::
+2026-08-14`** (Reporte Confidencial, mapa de Primero Justicia con una
+lista genérica de 9-12 estados "sometidos a apagones"/"más perjudicados",
+sin ningún detalle local específico de esos 3 estados en particular): este
+es el mismo patrón de evidencia débil ya documentado como pendiente en la
+auditoría del 13-08-2026 (`infraestructura_electrica::Aragua::2026-08-13`)
+-- y, tal como se anticipó ahí, se repitió, ahora con 3 estados a la vez
+del mismo artículo. El texto sí respalda la ubicación (los estados
+aparecen nombrados explícitamente), pero como parte de una lista genérica
+compartida por 9-12 estados, no de un hecho puntual verificable para cada
+uno. Sigue sin corregirse por el mismo motivo (filtrar "listas de estados
+afectados" arriesga perder coberturas legítimas de racionamiento
+generalizado), pero dado que ya recurrió como se predijo, se notifica al
+usuario para decidir si conviene diseñar un filtro (p.ej. exigir alguna
+mención local específica -- un municipio, una cita textual, una denuncia
+formal -- además de aparecer en la lista) o dejarlo como está.
+
+### Pruebas
+
+18 casos nuevos en `tests/casos_clasificacion.jsonl` (7 reales + 7
+controles de los hallazgos 1-5 y 7, más 2 reales + 1 control del hallazgo
+6 -- uno de los reales verifica directamente el campo `municipio`).
+Regresión completa contra las 106 fuentes vigentes de `data/
+historico_fuentes_texto.jsonl` (ya con las 7 instantáneas retractadas
+eliminadas): sin cambios inesperados -- las únicas fuentes afectadas por
+los fixes son, precisamente, las corregidas en esta sesión. `python3 -m
+pytest tests/` → 306 passed, 5 xfailed (conocidos, sin relación), 1
+xpassed (conocido, sin efecto real). `python3 scripts/validar_configs.py`
+→ OK. `python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
+regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares
+de posibles duplicados y fuentes muertas ya conocidos de sesiones
+anteriores, sin novedades en las alertas del 14-08-2026.

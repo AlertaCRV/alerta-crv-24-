@@ -5,8 +5,26 @@ from collections import Counter
 from config_loader import load_keywords, load_estados, load_ubicaciones_detalle
 
 _HASHTAG_RE = re.compile(r"#(\w+)", re.UNICODE)
-_MUNICIPIO_RE = re.compile(r"municipio\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|$)", re.IGNORECASE)
-_PARROQUIA_RE = re.compile(r"parroquia\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|$)", re.IGNORECASE)
+# El lookahead original solo se detenia en puntuacion o fin de texto -- una
+# oracion real y muy comun ("municipio Cajigal del estado Sucre", sin coma
+# antes de "del estado") capturaba "Cajigal del estado Sucre" completo en
+# vez de solo "Cajigal". Caso real (14-08-2026): ese candidato invalido no
+# calzaba con ningun municipio de Sucre por coincidencia exacta, pero SI
+# por el fallback de sufijo de _resolver_con_posible_adjetivo (pensado para
+# "municipio fronterizo Bolivar"), porque "estado Sucre" termina en
+# "sucre" -- que ademas es, por coincidencia, el nombre de OTRO municipio
+# real del mismo estado. Eso publicaba "municipio: Sucre" para un hecho en
+# Yaguaraparo, que en realidad esta en el municipio Cajigal. Se agregan
+# "del estado"/"del edo" como delimitadores adicionales del lookahead
+# (ademas de la puntuacion existente).
+_MUNICIPIO_RE = re.compile(
+    r"municipio\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|\s+del\s+estado\b|\s+del\s+edo\b|$)",
+    re.IGNORECASE,
+)
+_PARROQUIA_RE = re.compile(
+    r"parroquia\s+([A-ZÁÉÍÓÚÑ][\wÀ-ÿ' ]{2,40}?)(?=[.,;:\n]|\s+del\s+estado\b|\s+del\s+edo\b|\s+del\s+municipio\b|$)",
+    re.IGNORECASE,
+)
 
 # Una oracion realista que describe el evento y luego da la jerarquia completa
 # "parroquia X, municipio Y del estado Z" (a veces con nombres compuestos, p.ej.
@@ -37,8 +55,19 @@ LISTA_NEGRA_POR_ESTADO = {
     # tiene evidencia solida e independiente ("Los Teques, estado
     # Miranda", "municipio Los Salias"), asi que excluir "tramo Miranda"
     # no le quita esa ubicacion.
+    # Ampliada (14-08-2026): un articulo de El Pitazo sobre un incendio real
+    # en Caracas ("avenida Los Ilustres, del municipio Libertador") agrega,
+    # al final, un parrafo de contexto sobre un incendio DISTINTO y ya
+    # resuelto ("Un hecho similar ocurrio... el 7 de agosto... en el sector
+    # El Llanito, en Petare, estado Miranda") -- ese parrafo de comparacion
+    # bastaba para publicar una alerta duplicada de "incendio" en Miranda,
+    # como si el incendio de hoy hubiera ocurrido alli, ademas de la alerta
+    # correcta en Distrito Capital/Libertador generada por el mismo
+    # articulo. Frase completa y especifica (no solo "Petare", que si es
+    # evidencia legitima en articulos reales sobre hechos actuales en ese
+    # municipio de Miranda).
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda",
-                "tramo miranda"],
+                "tramo miranda", "el llanito, en petare, estado miranda"],
     # Caso real (02-08-2026): una golpiza durante un partido de futbol en
     # Barquisimeto (estado Lara, entre aficion del Deportivo Lara y del
     # Portuguesa FC) tambien se publicaba como alerta de Carabobo -- el
@@ -47,7 +76,16 @@ LISTA_NEGRA_POR_ESTADO = {
     # "Carabobo FC" no es evidencia de que algo haya pasado en el estado
     # Carabobo. Sin remapeo (no hay a que estado redirigir): se descarta
     # directamente, igual que "aeropuerto"/"moneda" para Bolivar/Sucre.
-    "Carabobo": ["carabobo fc"],
+    #
+    # Ampliada (14-08-2026): "Avenida Carabobo" es una via muy comun en
+    # ciudades venezolanas (Barquisimeto, entre otras) sin relacion con el
+    # estado Carabobo -- dos articulos reales sobre protestas por cortes
+    # electricos EN BARQUISIMETO (estado Lara), cuyo punto de encuentro fue
+    # la "Avenida Carabobo" local, generaban una alerta duplicada en el
+    # estado Carabobo sin que el articulo mencionara ese estado en absoluto
+    # (mismo patron que "avenida bolivar" para Bolivar, ver abajo).
+    "Carabobo": ["carabobo fc", "avenida carabobo", "avenidas carabobo",
+                 "av. carabobo", "av carabobo"],
     # Caso real (31-07-2026): un incendio en el CCCT ("ubicado en el
     # municipio Chacao") se publicaba como Distrito Capital porque el
     # articulo tambien menciona "Caracas" (alias de Distrito Capital) en
@@ -87,8 +125,18 @@ LISTA_NEGRA_POR_ESTADO = {
     # Quibdo y Armenia concentran las situaciones mas criticas". Se
     # verifico contra las 118 fuentes de data/historico_fuentes_texto.jsonl
     # que esta frase es exclusiva de estos 2 articulos (3 instantaneas).
+    # Ampliada (14-08-2026): "vargas" es alias directo de La Guaira en
+    # estados.yaml (nombre historico del estado), pero tambien es una via
+    # muy comun ("Av. Vargas") en ciudades sin relacion con ese estado --
+    # un articulo real sobre una marcha por cortes electricos en
+    # Barquisimeto (estado Lara) que menciona la sede de Corpoelec "en la
+    # Av. Vargas con Carrera 24" (una calle local) generaba una alerta
+    # duplicada de La Guaira/municipio Vargas sin ninguna otra mencion de
+    # ese estado en el articulo.
     "La Guaira": ["desastre de la guaira", "tragedia de la guaira",
-                  "desastre de vargas", "tragedia de vargas"],
+                  "desastre de vargas", "tragedia de vargas",
+                  "avenida vargas", "avenidas vargas",
+                  "av. vargas", "av vargas"],
     # Caso real (12-08-2026): un articulo sobre jubilados petroleros
     # protestando frente a la sede de Pdvsa La Campiña (Caracas) generaba 2
     # alertas falsas de orden_publico en Falcon y Zulia -- ambos estados solo
@@ -207,10 +255,24 @@ def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
 # historico_fuentes_texto.jsonl que "oriundo/a de(l)" combinado con un
 # verbo de fallecimiento y "Colombia" en la misma ventana es exclusivo de
 # estas 2 fuentes (mismo hecho real).
-_ORIGEN_MIGRANTE_RE = re.compile(r"\boriund[oa]\s+de(?:l)?\b|\bnatural\s+de(?:l)?\b")
+# Ampliado (14-08-2026): "Los tres venezolanos procedentes de Barinas que
+# permanecian atrapados bajo los escombros del edificio Vanessa en Cali
+# fueron hallados sin vida... tras el terremoto de magnitud 7,4 registrado
+# en Colombia el lunes 10 de agosto" generaba una alerta de sismo CRITICO
+# de magnitud 7.4 en el estado Barinas -- el terremoto ocurrio en Cali,
+# Colombia; Barinas es unicamente el estado de origen de las victimas. Ni
+# "oriundo/a de(l)"/"natural de(l)" ni la lista de verbos de fallecimiento
+# cubrian esta redaccion ("procedentes de", "hallados sin vida"). Se
+# verifico contra las 122 fuentes de data/historico_fuentes_texto.jsonl
+# que ambas frases nuevas son exclusivas de este articulo.
+_ORIGEN_MIGRANTE_RE = re.compile(
+    r"\boriund[oa]\s+de(?:l)?\b|\bnatural\s+de(?:l)?\b|\bprocedentes?\s+de(?:l)?\b"
+)
 _MUERTE_MIGRANTE_EXTRANJERO = [
     "perdio la vida", "perdieron la vida", "murio", "murieron",
     "fallecio", "fallecieron", "quedaron sepultados", "quedo sepultado",
+    "hallado sin vida", "hallados sin vida", "hallada sin vida", "halladas sin vida",
+    "encontrado sin vida", "encontrados sin vida", "encontrada sin vida", "encontradas sin vida",
 ]
 _VENTANA_FALLECIMIENTO_MIGRANTE = 300
 
@@ -277,11 +339,20 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # de ayuda humanitaria en curso, sin ningun caso/brote real) disparaba
     # tipo=salud_publica solo por la palabra "enfermedades" en una frase
     # preventiva -- ninguna enfermedad se esta reportando en absoluto.
+    # Ampliado (14-08-2026): "una dependencia que nacio en tiempos de la
+    # pandemia de Covid-19 y que hoy dia atiende a unos 70 adultos mayores"
+    # (nota de una casa parroquial/comedor de Caritas Carupano, sin ningun
+    # caso ni alarma sanitaria real) disparaba tipo=salud_publica solo por
+    # la palabra "pandemia" usada como referencia historica al origen de
+    # un programa social, no una pandemia activa.
     "salud_publica": ["totalmente controlada", "enfermedad controlada",
                        "no existen registros confirmados",
                        "sin registros confirmados", "brote descartado",
                        "descartado el brote", "bajo control total",
-                       "prevenir enfermedades", "prevenir la propagacion"],
+                       "prevenir enfermedades", "prevenir la propagacion",
+                       "tiempos de la pandemia", "durante la pandemia",
+                       "desde la pandemia", "epoca de la pandemia",
+                       "época de la pandemia"],
     # Caso real (30-07-2026): "Venezuela entrego nota de protesta a Iran por
     # declaraciones de su canciller" -- una nota de protesta DIPLOMATICA
     # entre gobiernos, sin ninguna relacion con disturbios/orden publico en
@@ -381,6 +452,30 @@ def _es_correccion_epicentro_retrospectiva(texto_norm):
     return any(_contiene_palabra_clave(texto_norm, frase) for frase in _CORRECCION_EPICENTRO_RETROSPECTIVA)
 
 
+# Caso real (14-08-2026, PASADO_POR_FALLA_TECNICA): "La Guaira coordina la
+# reactivacion gradual del turismo playero tras los sismos de junio...
+# afectaciones causadas por el evento sismico registrado el pasado 24 de
+# junio" -- un articulo sobre la reactivacion turistica semanas despues de
+# un sismo ya cubierto en su momento generaba una alerta de sismo nueva en
+# La Guaira, como si hubiera ocurrido el dia de publicacion. Igual que la
+# correccion de epicentro, "el pasado" describiendo el sismo mismo (no una
+# replica nueva) es una señal decisiva de que se refiere a un evento ya
+# ocurrido, sin importar cuanta evidencia fuerte de sismo (magnitud,
+# funvisis, sacudio...) tenga el articulo -- esa evidencia describe el
+# sismo original, no uno nuevo. No se usa como palabra suelta ("el pasado"
+# aparece con frecuencia en sentidos no relacionados) sino solo cuando
+# aparece cerca de una mencion de sismo/terremoto, en cualquier orden.
+_SISMO_FECHA_PASADA_RE = re.compile(
+    r"\b(?:sismos?|sismic[oa]|s[ií]smic[oa]|terremotos?)\b[^.]{0,60}\bel\s+pasado\b"
+    r"|\bel\s+pasado\b[^.]{0,60}\b(?:sismos?|sismic[oa]|s[ií]smic[oa]|terremotos?)\b",
+    re.IGNORECASE,
+)
+
+
+def _es_referencia_sismo_fecha_pasada(texto_norm):
+    return _SISMO_FECHA_PASADA_RE.search(texto_norm) is not None
+
+
 # A diferencia del boletin de epicentro (especifico de sismo), un articulo
 # de "reportaje/feature" sobre una crisis cronica YA CONOCIDA, enmarcada
 # explicitamente como algo que la gente "aprendio a vivir" o esperar
@@ -468,6 +563,30 @@ _MARCADORES_SIN_ALARMA_SANITARIA = [
     "descarta alarma sanitaria", "sin alarma sanitaria",
     "no representa alarma sanitaria", "no genera alarma sanitaria",
 ]
+
+# Caso real (14-08-2026, PASADO_POR_FALLA_TECNICA): "la Fundacion
+# Venezolana de Investigaciones Sismologicas (Funvisis), a traves del
+# Servicio Sismologico y de Alerta de Tsunami Venezolano (Ssatv), reporto
+# un total de 122 eventos telúricos... entre el 7 y el 13 de agosto"
+# disparaba tipo=tsunami en Tachira (un estado sin costa) solo porque la
+# palabra clave "alerta de tsunami" es parte del nombre oficial de la
+# division de Funvisis que emite boletines sismicos rutinarios -- el
+# articulo es un resumen semanal de sismicidad menor, sin ninguna ola ni
+# evacuacion costera real. Igual que el boletin estadistico de salud, esta
+# senal se evalua sobre el ARTICULO COMPLETO (el nombre institucional
+# puede quedar lejos, en palabras, de la ubicacion detectada). Se verifico
+# contra las 122 fuentes de data/historico_fuentes_texto.jsonl que la
+# frase institucional es exclusiva de este articulo.
+_NOMBRE_INSTITUCIONAL_SSATV = "servicio sismologico y de alerta de tsunami"
+_EVIDENCIA_FUERTE_TSUNAMI_REAL = [
+    "ola gigante", "maremoto", "evacuacion costera", "evacuación costera",
+]
+
+
+def _es_nombre_institucional_tsunami_sin_evidencia_real(texto_norm):
+    if not _contiene_palabra_clave(texto_norm, _NOMBRE_INSTITUCIONAL_SSATV):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_TSUNAMI_REAL)
 
 
 def _es_boletin_estadistico_salud_sin_alarma(texto_norm):
@@ -1281,6 +1400,10 @@ def detectar_tipo(texto, ventana=None):
         for palabra in palabras:
             if _contiene_palabra_clave(fuente_norm, palabra):
                 if tipo == "sismo" and _es_correccion_epicentro_retrospectiva(texto_completo_norm):
+                    break
+                if tipo == "sismo" and _es_referencia_sismo_fecha_pasada(texto_completo_norm):
+                    break
+                if tipo == "tsunami" and _es_nombre_institucional_tsunami_sin_evidencia_real(texto_completo_norm):
                     break
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break

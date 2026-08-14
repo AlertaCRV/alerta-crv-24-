@@ -1,25 +1,24 @@
 {
-  "actualizado": "2026-08-14T23:07:29.147641+00:00",
+  "actualizado": "2026-08-14T23:31:02.947444+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-14T21:00:00+00:00"
+    "hasta": "2026-08-14T20:13:00+00:00"
   },
-  "total_eventos": 112,
+  "total_eventos": 105,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 36,
+    "infraestructura_electrica": 34,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
-    "salud_publica": 4,
+    "salud_publica": 3,
     "crisis_migratoria": 4,
-    "incendio": 13,
+    "incendio": 12,
     "vialidad": 3,
-    "sismo": 5,
+    "sismo": 3,
     "escasez_combustible": 1,
-    "sequia": 3,
-    "tsunami": 1
+    "sequia": 3
   },
   "ranking_estados": [
     {
@@ -39,17 +38,12 @@
     },
     {
       "estado": "Barinas",
-      "total": 9,
+      "total": 8,
       "confirmados": 1
     },
     {
       "estado": "Bolivar",
       "total": 8,
-      "confirmados": 1
-    },
-    {
-      "estado": "Carabobo",
-      "total": 6,
       "confirmados": 1
     },
     {
@@ -63,19 +57,14 @@
       "confirmados": 1
     },
     {
-      "estado": "Sucre",
+      "estado": "Carabobo",
       "total": 5,
-      "confirmados": 0
+      "confirmados": 1
     },
     {
       "estado": "Apure",
       "total": 5,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 5,
-      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -88,9 +77,14 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 3,
+      "estado": "Sucre",
+      "total": 4,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 4,
+      "confirmados": 1
     },
     {
       "estado": "Monagas",
@@ -108,7 +102,7 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Tachira",
       "total": 2,
       "confirmados": 0
     },
@@ -126,7 +120,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 2,
       "orden_publico": 2
     },
     "Lara": {
@@ -162,13 +156,11 @@
       "deslizamiento": 1,
       "inundacion": 3,
       "infraestructura_electrica": 3,
-      "vialidad": 1,
-      "sismo": 1
+      "vialidad": 1
     },
     "Sucre": {
       "inundacion": 1,
       "orden_publico": 2,
-      "salud_publica": 1,
       "infraestructura_electrica": 1
     },
     "Anzoategui": {
@@ -190,15 +182,14 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 1,
-      "tsunami": 1
+      "infraestructura_electrica": 1
     },
     "Monagas": {
       "infraestructura_electrica": 2,
       "salud_publica": 1
     },
     "Miranda": {
-      "incendio": 3,
+      "incendio": 2,
       "infraestructura_electrica": 2
     },
     "Nueva Esparta": {
@@ -226,16 +217,12 @@
     },
     "Guarico": {
       "sequia": 1
-    },
-    "La Guaira": {
-      "sismo": 1,
-      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 95,
+    "sin_clasificar": 88,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -248,7 +235,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 31
+      "2026-08": 29
     },
     "deslizamiento": {
       "2026-07": 3
@@ -262,29 +249,26 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 3
+      "2026-08": 2
     },
     "crisis_migratoria": {
       "2026-07": 4
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 10
+      "2026-08": 9
     },
     "vialidad": {
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 5
+      "2026-08": 3
     },
     "escasez_combustible": {
       "2026-08": 1
     },
     "sequia": {
       "2026-08": 3
-    },
-    "tsunami": {
-      "2026-08": 1
     }
   }
 }
