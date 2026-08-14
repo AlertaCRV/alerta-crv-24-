@@ -131,5 +131,75 @@
     "fecha_deteccion": "2026-08-14T15:12:56.475119+00:00",
     "fecha_evento_temprana": "2026-08-14T13:00:22+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:07:55.334904+00:00",
+    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "municipio": "Lagunillas"
+  },
+  "sequia::Trujillo::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:09:07.817461+00:00",
+    "fecha_evento_temprana": "2026-08-14T14:19:46+00:00",
+    "municipio": null
+  },
+  "salud_publica::Sucre::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:09:56.142726+00:00",
+    "fecha_evento_temprana": "2026-08-14T16:00:02+00:00",
+    "municipio": "Sucre"
+  },
+  "infraestructura_electrica::Sucre::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:10:20.301051+00:00",
+    "fecha_evento_temprana": "2026-08-14T13:20:08+00:00",
+    "municipio": "Sucre"
+  },
+  "orden_publico::Distrito Capital::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:10:44.477320+00:00",
+    "fecha_evento_temprana": "2026-08-14T13:20:06+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:11:32.780585+00:00",
+    "fecha_evento_temprana": "2026-08-14T16:17:07+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:11:56.961477+00:00",
+    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Miranda::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:12:21.123713+00:00",
+    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Nueva Esparta::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:12:45.280077+00:00",
+    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "municipio": null
+  },
+  "incendio::Nueva Esparta::2026-08-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-14T21:13:09.445532+00:00",
+    "fecha_evento_temprana": "2026-08-14T15:59:15+00:00",
+    "municipio": "Mariño"
   }
 }
