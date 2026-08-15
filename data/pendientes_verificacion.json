@@ -367,24 +367,20 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T03:11:43.130443+00:00"
   },
-  "infraestructura_electrica::Portuguesa::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T07:47:35.348573+00:00"
-  },
   "infraestructura_electrica::Bolivar::2026-08-15": {
     "intentos": 1,
     "ultima_vez": "2026-08-15T06:01:42.683631+00:00"
   },
-  "explosion::Carabobo::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T07:47:59.578849+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T07:48:23.817030+00:00"
-  },
   "orden_publico::Aragua::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T09:02:06.655236+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T07:47:11.109809+00:00"
+    "ultima_vez": "2026-08-15T09:01:17.314647+00:00"
+  },
+  "sismo::Monagas::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T09:01:41.828726+00:00"
   }
 }
