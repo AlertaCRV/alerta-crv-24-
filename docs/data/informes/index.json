@@ -96,6 +96,14 @@
     "total_eventos": 1
   },
   {
+    "periodo": "2026-08",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-08-15T20:56:08.470544+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-07",
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",

@@ -387,40 +387,40 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T16:59:14.942648+00:00"
   },
-  "incendio::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T19:50:33.177187+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T19:51:21.839154+00:00"
-  },
-  "orden_publico::Lara::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T19:51:46.115995+00:00"
-  },
-  "orden_publico::Miranda::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T19:52:10.389008+00:00"
-  },
-  "orden_publico::Sucre::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T19:52:34.646225+00:00"
-  },
   "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T19:50:57.596063+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T20:52:17.509363+00:00"
   },
   "inundacion::Lara::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T19:52:58.915116+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T20:54:43.726285+00:00"
   },
   "sismo::Aragua::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T19:53:23.154158+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T20:55:07.935607+00:00"
   },
   "sismo::Merida::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T20:55:32.128362+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T19:53:47.445720+00:00"
+    "ultima_vez": "2026-08-15T20:51:28.762304+00:00"
+  },
+  "ataque_armado::Sucre::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T20:52:41.745065+00:00"
+  },
+  "incendio::Portuguesa::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T20:53:06.507997+00:00"
+  },
+  "incendio::Trujillo::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T20:53:31.011956+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T20:55:56.323510+00:00"
   }
 }
