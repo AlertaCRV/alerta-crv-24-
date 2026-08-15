@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-15T07:48:24.879529+00:00",
+  "actualizado": "2026-08-15T09:03:21.032904+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T01:18:18+00:00"
+    "hasta": "2026-08-15T05:03:13+00:00"
   },
-  "total_eventos": 105,
+  "total_eventos": 107,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 33,
+    "infraestructura_electrica": 34,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -18,7 +18,8 @@
     "vialidad": 3,
     "sismo": 4,
     "escasez_combustible": 1,
-    "sequia": 3
+    "sequia": 3,
+    "explosion": 1
   },
   "ranking_estados": [
     {
@@ -47,19 +48,19 @@
       "confirmados": 1
     },
     {
-      "estado": "Yaracuy",
+      "estado": "Carabobo",
       "total": 6,
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
-      "total": 5,
-      "confirmados": 1
+      "estado": "Anzoategui",
+      "total": 6,
+      "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
-      "total": 5,
-      "confirmados": 0
+      "estado": "Yaracuy",
+      "total": 6,
+      "confirmados": 1
     },
     {
       "estado": "Apure",
@@ -126,7 +127,8 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 2,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "explosion": 1
     },
     "Lara": {
       "inundacion": 2,
@@ -169,7 +171,7 @@
       "infraestructura_electrica": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 1
@@ -230,7 +232,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 87,
+    "sin_clasificar": 89,
     "medio": 1,
     "bajo": 1
   },
@@ -244,7 +246,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 28
+      "2026-08": 29
     },
     "deslizamiento": {
       "2026-07": 3
@@ -278,6 +280,9 @@
     },
     "sequia": {
       "2026-08": 3
+    },
+    "explosion": {
+      "2026-08": 1
     }
   }
 }
