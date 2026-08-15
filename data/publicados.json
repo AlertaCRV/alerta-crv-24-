@@ -229,5 +229,26 @@
     "fecha_deteccion": "2026-08-15T15:54:51.046616+00:00",
     "fecha_evento_temprana": "2026-08-15T13:39:54+00:00",
     "municipio": null
+  },
+  "deslizamiento::Tachira::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:00:08.713292+00:00",
+    "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Falcon::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:00:33.295460+00:00",
+    "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Lara::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:00:57.867389+00:00",
+    "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
+    "municipio": "Urdaneta"
   }
 }
