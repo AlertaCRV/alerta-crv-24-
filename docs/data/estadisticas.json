@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-14T23:31:02.947444+00:00",
+  "actualizado": "2026-08-15T04:59:04.165111+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-14T20:13:00+00:00"
+    "hasta": "2026-08-14T21:20:24+00:00"
   },
-  "total_eventos": 105,
+  "total_eventos": 106,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 34,
+    "infraestructura_electrica": 35,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -115,6 +115,11 @@
       "estado": "Guarico",
       "total": 1,
       "confirmados": 0
+    },
+    {
+      "estado": "Portuguesa",
+      "total": 1,
+      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
@@ -217,12 +222,15 @@
     },
     "Guarico": {
       "sequia": 1
+    },
+    "Portuguesa": {
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 88,
+    "sin_clasificar": 89,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -235,7 +243,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 29
+      "2026-08": 30
     },
     "deslizamiento": {
       "2026-07": 3
