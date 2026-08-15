@@ -151,6 +151,25 @@ LISTA_NEGRA_POR_ESTADO = {
     # este articulo.
     "Falcon": ["manifestantes de oriente, falcon y caracas"],
     "Zulia": ["jubilados petroleros de zulia en peaje de tazon"],
+    # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): un articulo de EFE
+    # sobre un terremoto de magnitud 7.7 en Indonesia (republicado por un
+    # medio de Monagas) nunca menciona ese estado en el cuerpo de la
+    # noticia -- la unica mencion es la firma final "Vía// EFE Periodista
+    # del estado Monagas.", boilerplate que acredita al periodista local
+    # que redistribuyo el cable, no la ubicacion del hecho. Sin remapeo (el
+    # hecho real ocurrio en el extranjero): se descarta directamente. Se
+    # verifico contra las 122 fuentes de data/historico_fuentes_texto.jsonl
+    # que esta firma es exclusiva de este articulo.
+    "Monagas": ["periodista del estado monagas"],
+    # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): un articulo sobre
+    # sequia/incendios forestales en el estado Trujillo menciona, de
+    # pasada, "el colapso de las vias de acceso hacia el estado Portuguesa,
+    # lo que obliga a desviar el transito pesado hacia Lara" -- Portuguesa
+    # es solo el destino de una via cerrada, no la ubicacion de ningun
+    # incendio. Se verifico contra las 122 fuentes de data/
+    # historico_fuentes_texto.jsonl que esta frase es exclusiva de este
+    # articulo.
+    "Portuguesa": ["hacia el estado portuguesa"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -426,6 +445,21 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
                                    "restablecer el suministro",
                                    "restablecer el servicio",
                                    "corte de luz", "cortes de luz"],
+    # Usada por _es_captura_fugitivo_sin_ataque_en_curso(): si ademas de la
+    # notificacion azul/orden de captura el articulo describe un ataque
+    # real en curso (poco comun, pero posible en una cobertura mixta), esta
+    # evidencia evita descartar el tipo.
+    "ataque_armado": ["tiroteo", "tiroteos", "enfrentamiento",
+                       "enfrentamientos", "heridos", "fallecidos",
+                       "muertos", "muertas", "emboscada"],
+    # Usada por _es_boletin_pronostico_inameh_sin_inundacion_real(): si el
+    # articulo describe una inundacion YA ocurrida (no solo pronosticada),
+    # esta evidencia evita descartar el tipo.
+    "inundacion": ["anegado", "anegada", "anegados", "anegadas",
+                    "anegacion", "anegaciones", "vivienda anegada",
+                    "viviendas anegadas", "familias afectadas",
+                    "evacuados", "evacuadas", "arrastro", "arrastró",
+                    "desbordo", "desbordó", "damnificados", "damnificadas"],
 }
 
 # Un articulo que reporta que una entidad (USGS, Funvisis...) "ajusto"/
@@ -589,6 +623,30 @@ def _es_nombre_institucional_tsunami_sin_evidencia_real(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_TSUNAMI_REAL)
 
 
+# Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "Corposalud y OPS
+# unifican esfuerzos en capacitacion de salud mental... para fortalecer el
+# acompañamiento psicologico y social de la poblacion civil afectada por la
+# contingencia sismica... dirigido al personal que atiende directamente a
+# pacientes en los refugios temporales" -- un taller de capacitacion en
+# salud mental para personal que atiende a damnificados de un sismo YA
+# ocurrido disparaba tipo=sismo en Aragua via la palabra "terremoto"
+# (mencionada mucho mas adelante, en una cita sobre el impacto emocional de
+# los sobrevivientes, fuera de la ventana de proximidad a "Aragua" -- por
+# eso no basta con _CONTEXTO_CONFLICTIVO_POR_TIPO). Mismo patron que el
+# boletin institucional de tsunami: se evalua sobre el ARTICULO COMPLETO.
+_MARCADORES_TALLER_SALUD_MENTAL_POST_SISMO = [
+    "salud mental", "contingencia sismica", "contingencia sísmica",
+    "refugios temporales", "campamentos transitorios",
+]
+
+
+def _es_taller_salud_mental_post_sismo_sin_evidencia_real(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_TALLER_SALUD_MENTAL_POST_SISMO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("sismo", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 def _es_boletin_estadistico_salud_sin_alarma(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_BOLETIN_ESTADISTICO_SALUD):
         return False
@@ -717,6 +775,80 @@ def _es_cartucho_lacrimogeno_sin_explosivo_real(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CARTUCHO_LACRIMOGENO):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("explosion", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "Falsa alarma en
+# Carabobo: Despliegue policial por supuesta granada termina tras hallazgo
+# de un envase de perfume... se descarto de manera categorica que se
+# tratara de una amenaza real" -- el propio articulo, ya desde el titular,
+# aclara que la "granada" reportada nunca fue un explosivo. Mismo patron
+# que el cartucho lacrimogeno: se evalua sobre el ARTICULO COMPLETO.
+_MARCADORES_FALSA_ALARMA_EXPLOSIVO = ["falsa alarma"]
+
+
+def _es_falsa_alarma_sin_explosivo_real(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_FALSA_ALARMA_EXPLOSIVO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("explosion", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "Capturada en Tachira
+# mujer solicitada por terrorismo y trafico de armas... presentaba una
+# Notificacion Azul en su contra por la presunta comision de los delitos
+# de trafico de armas y municiones... y terrorismo" disparaba tipo=
+# ataque_armado en Tachira via las palabras "terrorismo"/"trafico de
+# armas" -- el hecho real es la CAPTURA de una fugitiva con una notificacion
+# de Interpol en su contra, no un ataque armado en curso. Se evalua sobre
+# el ARTICULO COMPLETO (igual que el cartucho lacrimogeno): "notificacion
+# azul" es un termino tecnico especifico de Interpol para personas
+# buscadas, exclusivo de este tipo de nota de captura/detencion.
+#
+# Ampliado (15-08-2026, mismo dia): "Dos hermanos de Araya fueron
+# excarcelados tras permanecer detenidos por financiamiento al terrorismo...
+# tras estar recluidos por mas de un año" disparaba el mismo tipo=
+# ataque_armado en Sucre via "terrorismo" -- el hecho real es la
+# EXCARCELACION (liberacion) de dos personas ya detenidas desde hace un año,
+# el extremo opuesto de una captura, pero el mismo patron de fondo: un
+# proceso judicial relacionado con cargos de terrorismo, sin ningun ataque
+# armado ocurriendo. "Excarcelados"/"excarcelacion" es un termino juridico
+# especifico (liberacion de un recluso), exclusivo de este tipo de nota.
+_MARCADORES_CAPTURA_FUGITIVO = [
+    "notificacion azul", "notificación azul",
+    "orden de captura internacional",
+    "excarcelados", "excarcelado", "excarcelada", "excarceladas",
+    "excarcelacion", "excarcelación",
+]
+
+
+def _es_captura_fugitivo_sin_ataque_en_curso(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CAPTURA_FUGITIVO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("ataque_armado", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "Inameh pronostico
+# fuertes chubascos con la llegada de la Onda Tropical 37 a Venezuela...
+# en areas de nuestra Guayana Esequiba, Bolivar, Amazonas... Lara..." --
+# un boletin meteorologico RUTINARIO de pronostico (no de un hecho ya
+# ocurrido) disparaba tipo=inundacion en Lara via la palabra "vaguada"
+# (termino meteorologico generico, parte del vocabulario tecnico de
+# cualquier pronostico del Inameh, no evidencia de una inundacion real). Se
+# verifico contra las 122 fuentes de data/historico_fuentes_texto.jsonl que
+# ninguna cobertura real de daños/inundaciones por una onda tropical (p.ej.
+# la Onda Tropical 30, que si causo anegaciones/derrumbes/lesionados reales)
+# menciona al Inameh como fuente -- la combinacion de ambas palabras es
+# exclusiva de boletines de pronostico puro. Se evalua sobre el ARTICULO
+# COMPLETO, no la ventana (el pronostico lista muchos estados a la vez, sin
+# concentrar "inameh"/"onda tropical" cerca de cada uno en particular).
+def _es_boletin_pronostico_inameh_sin_inundacion_real(texto_norm):
+    if not _contiene_palabra_clave(texto_norm, "inameh"):
+        return False
+    if not _contiene_palabra_clave(texto_norm, "onda tropical"):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("inundacion", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -958,6 +1090,27 @@ _MARCADORES_RECLAMO_TERCERO_MULTIESTADO = [
     "difundió una serie de mapas", "difundio una serie de mapas",
     "segun el reclamo de", "según el reclamo de",
     "entidades mas perjudicadas", "entidades más perjudicadas",
+    # Ampliado (15-08-2026, PASADO_POR_FALLA_TECNICA): "Las protestas en
+    # Venezuela se dispararon 181%... Según el más reciente informe del
+    # Observatorio Venezolano de Conflictividad Social (OVCS)... Distrito
+    # Capital concentro el mayor numero de protestas (462), seguido por
+    # Miranda (414), Sucre (274), Bolivar (265) y Lara (263)" -- un informe
+    # estadistico nacional que reparte cifras agregadas de un SEMESTRE
+    # entero entre 5+ estados generaba alertas nuevas de orden_publico en
+    # Lara, Miranda y Sucre, sin ningun hecho puntual de hoy en ninguno de
+    # ellos (mismo patron que el mapa de un tercero: una cifra/reclamo
+    # repartido entre muchos estados, no una protesta especifica y actual).
+    # El marcador exige "informe del" antes del nombre del observatorio (no
+    # solo la mencion de la institucion) para no afectar articulos de
+    # cobertura LOCAL de una noche puntual que solo citan al OVCS como
+    # corroboracion secundaria de un hecho ya descrito con evidencia propia
+    # (caso real ya cubierto, 07-08-2026: "Protestas en siete estados...
+    # en La Isabelica, municipio Valencia... En San Mateo, Aragua, tambien
+    # protestaron... El Observatorio Venezolano de Conflictividad Social
+    # (OVCS), por su parte, registro un total de 11 protestas en ocho
+    # estados" -- ese articulo SI describe hechos locales puntuales, la
+    # mencion del OVCS es solo un dato adicional, no el eje del articulo).
+    "informe del observatorio venezolano de conflictividad social",
 ]
 _MIN_ESTADOS_RESUMEN_MULTIESTADO = 5
 
@@ -1545,6 +1698,8 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "sismo" and _es_referencia_sismo_fecha_pasada(texto_completo_norm):
                     break
+                if tipo == "sismo" and _es_taller_salud_mental_post_sismo_sin_evidencia_real(texto_completo_norm):
+                    break
                 if tipo == "tsunami" and _es_nombre_institucional_tsunami_sin_evidencia_real(texto_completo_norm):
                     break
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
@@ -1556,6 +1711,12 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
                 if tipo == "explosion" and _es_cartucho_lacrimogeno_sin_explosivo_real(texto_completo_norm):
+                    break
+                if tipo == "explosion" and _es_falsa_alarma_sin_explosivo_real(texto_completo_norm):
+                    break
+                if tipo == "ataque_armado" and _es_captura_fugitivo_sin_ataque_en_curso(texto_completo_norm):
+                    break
+                if tipo == "inundacion" and _es_boletin_pronostico_inameh_sin_inundacion_real(texto_completo_norm):
                     break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
