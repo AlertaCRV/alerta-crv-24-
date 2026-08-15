@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-15T17:00:59.250463+00:00",
+  "actualizado": "2026-08-15T17:53:32.517100+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T14:24:38+00:00"
+    "hasta": "2026-08-15T15:43:10+00:00"
   },
-  "total_eventos": 116,
+  "total_eventos": 120,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 17,
     "infraestructura_electrica": 34,
     "deslizamiento": 6,
     "colapso_estructural": 1,
-    "orden_publico": 22,
+    "orden_publico": 25,
     "salud_publica": 3,
     "crisis_migratoria": 4,
-    "incendio": 12,
+    "incendio": 13,
     "vialidad": 3,
     "sismo": 6,
     "escasez_combustible": 1,
@@ -25,12 +25,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 19,
+      "total": 20,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 11,
+      "total": 12,
       "confirmados": 1
     },
     {
@@ -64,6 +64,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Sucre",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 5,
       "confirmados": 0
@@ -84,14 +89,14 @@
       "confirmados": 0
     },
     {
-      "estado": "Sucre",
+      "estado": "Tachira",
       "total": 4,
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
+      "estado": "Miranda",
       "total": 4,
-      "confirmados": 0
+      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -102,11 +107,6 @@
       "estado": "Falcon",
       "total": 4,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 3,
-      "confirmados": 1
     },
     {
       "estado": "Merida",
@@ -134,7 +134,7 @@
     "Lara": {
       "inundacion": 3,
       "salud_publica": 2,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "infraestructura_electrica": 2,
       "sismo": 1,
       "deslizamiento": 1
@@ -152,7 +152,7 @@
       "deslizamiento": 1,
       "inundacion": 1,
       "orden_publico": 6,
-      "incendio": 3,
+      "incendio": 4,
       "vialidad": 1,
       "infraestructura_electrica": 6,
       "sismo": 1
@@ -170,7 +170,7 @@
     },
     "Sucre": {
       "inundacion": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "infraestructura_electrica": 1
     },
     "Anzoategui": {
@@ -202,7 +202,8 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "orden_publico": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -238,7 +239,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 98,
+    "sin_clasificar": 102,
     "medio": 1,
     "bajo": 1
   },
@@ -263,7 +264,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 20
+      "2026-08": 23
     },
     "salud_publica": {
       "2026-07": 1,
@@ -274,7 +275,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 10
     },
     "vialidad": {
       "2026-08": 3

@@ -250,5 +250,33 @@
     "fecha_deteccion": "2026-08-15T17:00:57.867389+00:00",
     "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
     "municipio": "Urdaneta"
+  },
+  "incendio::Distrito Capital::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:49:03.755362+00:00",
+    "fecha_evento_temprana": "2026-08-15T15:43:10+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:50:16.366377+00:00",
+    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:50:40.565518+00:00",
+    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Sucre::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T17:51:05.531250+00:00",
+    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
+    "municipio": null
   }
 }
