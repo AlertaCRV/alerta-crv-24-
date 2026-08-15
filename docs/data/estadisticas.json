@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-15T22:08:05.866000+00:00",
+  "actualizado": "2026-08-15T23:02:56.119791+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-15T20:20:14+00:00"
   },
-  "total_eventos": 122,
+  "total_eventos": 123,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 17,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
-    "ataque_armado": 1
+    "ataque_armado": 2
   },
   "ranking_estados": [
     {
@@ -59,17 +59,17 @@
       "confirmados": 1
     },
     {
+      "estado": "Sucre",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 6,
       "confirmados": 1
     },
     {
       "estado": "Trujillo",
-      "total": 5,
-      "confirmados": 0
-    },
-    {
-      "estado": "Sucre",
       "total": 5,
       "confirmados": 0
     },
@@ -171,7 +171,8 @@
     "Sucre": {
       "inundacion": 1,
       "orden_publico": 3,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "ataque_armado": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 3,
@@ -240,7 +241,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 104,
+    "sin_clasificar": 105,
     "medio": 1,
     "bajo": 1
   },
@@ -294,7 +295,7 @@
       "2026-08": 1
     },
     "ataque_armado": {
-      "2026-08": 1
+      "2026-08": 2
     }
   }
 }

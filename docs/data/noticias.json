@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Sucre",
+    "municipio": "Cruz Salmerón Acosta",
+    "parroquia": "Araya",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/dos-hermanos-de-araya-fueron-excarcelados-tras-permanecer-detenidos-por-financiamiento-al-terrorismo/",
+        "fecha": "2026-08-15T19:40:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T19:40:09+00:00",
+    "fecha_evento_temprana": "2026-08-15T19:40:09+00:00",
+    "fecha_deteccion": "2026-08-15T23:00:54.609910+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Sucre::2026-08-15",
+    "titulo": "Ataque armado en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre",
+    "texto": "📌 Ataque armado en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n🕒 Hecho reportado: 15/08/2026, 3:40 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 7:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/dos-hermanos-de-araya-fueron-excarcelados-tras-permanecer-detenidos-por-financiamiento-al-terrorismo/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Portuguesa",
     "municipio": null,
