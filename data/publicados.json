@@ -201,5 +201,19 @@
     "fecha_deteccion": "2026-08-15T13:21:58.340130+00:00",
     "fecha_evento_temprana": "2026-08-15T12:39:50+00:00",
     "municipio": null
+  },
+  "ataque_armado::Tachira::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T14:59:43.795999+00:00",
+    "fecha_evento_temprana": "2026-08-15T12:24:59+00:00",
+    "municipio": null
+  },
+  "sismo::Distrito Capital::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T15:00:08.041914+00:00",
+    "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
+    "municipio": null
   }
 }

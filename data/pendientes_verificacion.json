@@ -375,36 +375,36 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T11:45:15.107305+00:00"
   },
-  "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T14:04:58.242470+00:00"
-  },
-  "sismo::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T14:05:22.561576+00:00"
-  },
   "infraestructura_electrica::Anzoategui::2026-08-15": {
     "intentos": 2,
     "ultima_vez": "2026-08-15T14:05:46.950457+00:00"
   },
-  "sismo::Merida::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T14:06:36.484707+00:00"
-  },
   "inundacion::Lara::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T14:03:41.659923+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:58:55.262293+00:00"
   },
   "orden_publico::Barinas::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T14:04:05.995048+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:59:19.535275+00:00"
   },
   "orden_publico::Anzoategui::2026-08-15": {
     "intentos": 1,
     "ultima_vez": "2026-08-15T14:04:33.703778+00:00"
   },
   "sismo::Aragua::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T15:00:32.321399+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T14:06:12.181291+00:00"
+    "ultima_vez": "2026-08-15T15:01:21.299974+00:00"
+  },
+  "deslizamiento::Falcon::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T15:01:45.530027+00:00"
+  },
+  "deslizamiento::Lara::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T15:02:09.738994+00:00"
   }
 }
