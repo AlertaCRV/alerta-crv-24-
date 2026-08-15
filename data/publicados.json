@@ -129,7 +129,7 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-14T21:07:55.334904+00:00",
-    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
+    "fecha_evento_temprana": "2026-08-14T19:58:01+00:00",
     "municipio": "Lagunillas"
   },
   "sequia::Trujillo::2026-08-14": {
@@ -151,27 +151,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-14T21:10:44.477320+00:00",
     "fecha_evento_temprana": "2026-08-14T13:20:06+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:11:56.961477+00:00",
-    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Miranda::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:12:21.123713+00:00",
-    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Nueva Esparta::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:12:45.280077+00:00",
-    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
     "municipio": null
   },
   "incendio::Nueva Esparta::2026-08-14": {

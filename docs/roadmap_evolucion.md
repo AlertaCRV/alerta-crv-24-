@@ -6038,3 +6038,102 @@ xpassed (conocido, sin efecto real). `python3 scripts/validar_configs.py`
 regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares
 de posibles duplicados y fuentes muertas ya conocidos de sesiones
 anteriores, sin novedades en las alertas del 14-08-2026.
+
+## A pedido del usuario (14-08-2026): filtro general contra notas-resumen de terceros (mapas/reclamos de partidos u ONG) que enumeran muchos estados bajo la misma condición genérica, sin evidencia local
+
+Tras la auditoría diaria automática del mismo día (ver entrada anterior),
+el usuario planteó una preocupación de diseño sobre uno de los 2
+hallazgos dejados pendientes: prefiere que las alertas se generen a
+partir de prensa regional/local, no de notas-resumen que narran una
+misma situación repartida entre varias entidades a la vez, porque esas
+notas-resumen "no suelen ser exactas". Se diseñó y construyó un filtro
+general (no un parche puntual) para esta clase de artículo.
+
+### Diseño
+
+El caso concreto (`infraestructura_electrica::Anzoategui/Miranda/Nueva
+Esparta::2026-08-14`, ver entrada anterior) proviene de un mapa de
+Primero Justicia, difundido por Reporte Confidencial: "difundió una
+serie de mapas detallando la incidencia de los cortes eléctricos en los
+distintos estados... según el reclamo de Primero Justicia, los estados
+Anzoátegui, Apure, Lara... están siendo sometidos a apagones diarios de
+entre 5 y 8 horas" -- 12 estados enumerados bajo la misma cifra genérica,
+sin ningún detalle local de la mayoría.
+
+La primera versión del filtro (descartar CUALQUIER mención de estado si
+el ARTÍCULO COMPLETO contiene alguna de estas frases) rompía un caso real
+distinto: "Andrés Velásquez: Apagones se deben a la corrupción..." abre
+con una protesta real y puntual ("al menos veinte personas protestó...
+a las afueras de la sede de la Corporación Eléctrica Nacional en
+Caracas") y solo mucho más adelante, en un párrafo totalmente aparte,
+resume el mismo mapa de PJ -- descartar el artículo entero por contener
+la frase del mapa en algún lugar habría perdido esa cobertura real de
+Distrito Capital.
+
+**Corrección final**: la señal se ancla por PROXIMIDAD a la mención
+puntual de cada estado (misma ventana de 35 palabras que ya usa
+`_ventana_cerca` para el tipo de emergencia), no a "el artículo contiene
+la frase en algún lado". Tres piezas nuevas en `scripts/classify.py`:
+
+1. `_es_articulo_resumen_multiestado_de_terceros()`: el artículo
+   completo debe contener un marcador de reclamo/mapa de un tercero
+   ("compartió un mapa", "difundió una serie de mapas", "según el
+   reclamo de", "entidades más perjudicadas") Y mencionar 5+ estados
+   distintos -- un chequeo barato para saber si vale la pena aplicar el
+   resto del filtro.
+2. `_ventana_cerca_con_posicion()` (nueva variante de `_ventana_cerca`
+   que además devuelve la posición de la mención puntual que generó la
+   ventana) + `_mencion_cerca_de_marcador()`: la mención de ESE estado en
+   particular debe estar a 35 palabras o menos de alguno de los
+   marcadores -- si está más lejos (como "Caracas" en el caso de
+   Andrés Velásquez, a 176 palabras de la cita del mapa), no se
+   considera parte de la lista genérica.
+3. `_ventana_sin_evidencia_local_especifica()`: aun estando cerca de un
+   marcador, si la ventana SÍ nombra un municipio/parroquia específico
+   (p.ej. "comunidades del municipio Libertador de Caracas denuncian
+   fallas eléctricas", en el mismo artículo del mapa de PJ), no se
+   descarta -- eso ya es evidencia local real, no la mera pertenencia a
+   la lista.
+
+Si el primer alias probado de un estado (p.ej. "Caracas") se descarta por
+este filtro, se prueban los demás alias del mismo estado (p.ej.
+"Distrito Capital") antes de abandonar ese estado por completo -- un
+estado con múltiples nombres puede tener evidencia real bajo un alias
+distinto al que disparó el descarte.
+
+### Verificación
+
+Contra las 102 fuentes vigentes de `data/historico_fuentes_texto.jsonl`,
+solo 3 artículos activan el chequeo de "resumen multiestado" (el mapa de
+PJ citado por Reporte Confidencial y por La Prensa de Lara, y el propio
+artículo de Andrés Velásquez) -- en los tres casos el resultado final es
+el esperado: se descartan las menciones sin evidencia local (Anzoátegui,
+Miranda, Nueva Esparta, Apure, Mérida...) y se conserva todo lo que sí
+la tiene (Distrito Capital vía "municipio Libertador"; Bolívar vía su
+propio párrafo sobre la reactivación de Tocoma, a más de 35 palabras del
+mapa). 4 casos nuevos en `tests/casos_clasificacion.jsonl` (el caso real
+del mapa de PJ + 3 controles: evidencia local dentro del mismo artículo
+del mapa, evidencia local lejos del mapa en otro artículo, y un artículo
+sin ningún marcador de tercero).
+
+**Corrección retroactiva**: se eliminaron por completo
+`infraestructura_electrica::Anzoategui::2026-08-14`, `infraestructura_
+electrica::Miranda::2026-08-14` e `infraestructura_electrica::Nueva
+Esparta::2026-08-14` (cada una respaldada únicamente por el mapa de PJ)
+de `docs/data/noticias.json`, `data/historico_eventos.jsonl`, `data/
+historico_fuentes_texto.jsonl` y `data/publicados.json`.
+`infraestructura_electrica::Zulia::2026-08-14` (respaldada además por El
+Pitazo con evidencia local real de Maracaibo) se corrigió en vez de
+eliminarse: se quitó únicamente la fuente Reporte Confidencial de su
+lista de fuentes (`num_fuentes` 2→1, `score` 1.35→0.75 según el peso de
+El Pitazo en `config/sources.yaml`), conservando el evento.
+
+`python3 -m pytest tests/` → 306 passed, 5 xfailed (conocidos), 1 xpassed
+(conocido). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+`python3 scripts/detectar_inconsistencias.py` → sin novedades.
+
+El otro hallazgo pendiente de la auditoría del mismo día (`orden_publico::
+Distrito Capital::2026-08-14`, protesta ya finalizada mencionada de paso
+en un artículo sobre otro tema) sigue sin corregirse -- el usuario pidió
+afinar primero este filtro; ese caso queda para una iteración posterior.
