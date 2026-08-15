@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-08-12T21:53:50+00:00",
     "municipio": "Páez"
   },
-  "orden_publico::Distrito Capital::2026-08-12": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-12T18:44:20.967109+00:00",
-    "fecha_evento_temprana": "2026-08-12T18:16:03+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Barinas::2026-08-12": {
     "severidad": "sin_clasificar",
     "confirmado": false,
