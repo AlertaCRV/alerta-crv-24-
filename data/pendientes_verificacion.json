@@ -391,44 +391,56 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T20:54:43.726285+00:00"
   },
-  "sismo::Merida::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:59:17.679118+00:00"
-  },
-  "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T23:00:30.405932+00:00"
-  },
-  "sismo::Aragua::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T23:02:55.630043+00:00"
-  },
   "ataque_armado::Aragua::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:57:39.600234+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:44:47.605365+00:00"
   },
   "sismo::Distrito Capital::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:58:04.148880+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:45:36.024942+00:00"
   },
   "deslizamiento::Falcon::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:58:28.734555+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:46:00.533334+00:00"
   },
   "deslizamiento::Lara::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:58:53.125177+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:46:24.771709+00:00"
   },
   "deslizamiento::Tachira::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:59:42.003180+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:47:13.189502+00:00"
   },
   "incendio::Portuguesa::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T23:01:18.821240+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:48:50.057067+00:00"
   },
   "incendio::Trujillo::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:49:14.211488+00:00"
+  },
+  "deslizamiento::Miranda::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T23:01:43.007495+00:00"
+    "ultima_vez": "2026-08-15T23:45:11.809102+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:47:37.402388+00:00"
+  },
+  "ataque_armado::Sucre::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:48:25.866768+00:00"
+  },
+  "orden_publico::Miranda::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:49:38.422859+00:00"
+  },
+  "orden_publico::Sucre::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:50:02.716170+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:50:26.872043+00:00"
   }
 }
