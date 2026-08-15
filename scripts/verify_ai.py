@@ -76,7 +76,33 @@ _PATRON_RETROSPECTIVA = re.compile(
     # como un sismo NUEVO en La Guaira -- es una labor de rescate en curso
     # de un sismo de mas de un mes de antiguedad, no un evento sismico
     # actual.
-    rf"|\b(dia|dias)\s+{_NUMEROS}\s+posterior(?:es)?\s+a\b",
+    rf"|\b(dia|dias)\s+{_NUMEROS}\s+posterior(?:es)?\s+a\b"
+    # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "El Gran Sismo de
+    # los Andes: la noche que la tierra borro pueblos enteros #15Ago -- A
+    # las 10:15 de la noche del 28 de abril de 1894, un terremoto sacudio
+    # Merida, Trujillo, Tachira..." -- una nota historica/efemeride sobre un
+    # terremoto de 1894 (mas de un siglo de antiguedad) generaba alertas
+    # nuevas de sismo/deslizamiento en Distrito Capital y Tachira, como si
+    # hubiera ocurrido el dia de publicacion. Una fecha completa ("DD de MES
+    # de AAAA") con un año claramente historico (anterior a 2020) es una
+    # señal decisiva de que el relato es retrospectivo, sin importar cuanta
+    # evidencia fuerte de sismo tenga (la evidencia describe el terremoto
+    # historico, no uno nuevo). Se verifico contra las 122 fuentes de data/
+    # historico_fuentes_texto.jsonl que esta combinacion (fecha completa con
+    # año anterior a 2020) es exclusiva de este articulo.
+    r"|\b\d{1,2}\s+de\s+(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|"
+    r"septiembre|setiembre|octubre|noviembre|diciembre)\s+de\s+(?:1[0-9]\d\d|20[01]\d)\b"
+    # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): "Los terremotos de
+    # Venezuela dejaron en La Guaira decenas de alumnos fallecidos... la
+    # iniciativa responde a una emergencia educativa... especialmente en
+    # Catia La Mar, epicentro del SEGUNDO terremoto" -- un reportaje de
+    # largo aliento sobre la reconstruccion educativa semanas despues del
+    # sismo doble de La Guaira/Vargas (ver "doble terremoto" arriba) usa la
+    # variante "segundo terremoto"/"segundo sismo" (en vez de "doble") para
+    # referirse al mismo evento ya cubierto, generando una alerta nueva de
+    # sismo en Distrito Capital via una mencion de pasada al area
+    # metropolitana de Caracas.
+    r"|\bsegundo\s+terremoto\b|\bsegundo\s+sismo\b",
     re.IGNORECASE,
 )
 

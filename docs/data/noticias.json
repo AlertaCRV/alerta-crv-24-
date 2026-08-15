@@ -1,32 +1,6 @@
 [
   {
     "tipo": "incendio",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/",
-        "fecha": "2026-08-15T20:20:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T20:20:14+00:00",
-    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
-    "fecha_deteccion": "2026-08-15T22:06:26.448469+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Portuguesa::2026-08-15",
-    "titulo": "Incendio en Portuguesa",
-    "texto": "📌 Incendio en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 15/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/"
-  },
-  {
-    "tipo": "incendio",
     "ubicacion": "Trujillo",
     "municipio": null,
     "parroquia": null,
@@ -76,110 +50,6 @@
     "clave_dedup": "incendio::Distrito Capital::2026-08-15",
     "titulo": "Incendio en Distrito Capital",
     "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 15/08/2026, 11:43 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:49 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/registran-incendio-dentro-de-un-local-comercial-tipo-panaderia-en-caracas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/",
-        "fecha": "2026-08-15T15:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T15:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
-    "fecha_deteccion": "2026-08-15T17:50:16.366377+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Lara::2026-08-15",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 15/08/2026, 11:20 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:50 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/",
-        "fecha": "2026-08-15T15:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T15:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
-    "fecha_deteccion": "2026-08-15T17:50:40.565518+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-08-15",
-    "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 15/08/2026, 11:20 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:50 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/",
-        "fecha": "2026-08-15T15:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T15:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
-    "fecha_deteccion": "2026-08-15T17:51:05.531250+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Sucre::2026-08-15",
-    "titulo": "Orden público en Sucre",
-    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 15/08/2026, 11:20 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:51 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/las-protestas-en-venezuela-se-dispararon-181-en-el-primer-semestre-del-2026/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": "La Palmita",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/",
-        "fecha": "2026-08-15T12:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T12:30:00+00:00",
-    "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
-    "fecha_deteccion": "2026-08-15T17:00:08.713292+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Tachira::2026-08-15",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia La Palmita, Tachira",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia La Palmita, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Palmita, Tachira\n🕒 Hecho reportado: 15/08/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/"
   },
   {
     "tipo": "deslizamiento",
@@ -234,129 +104,6 @@
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Urdaneta, Lara\n🕒 Hecho reportado: 15/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/"
   },
   {
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.3,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/15/inameh-pronostico-fuertes-chubascos-con-la-llegada-de-la-onda-tropical-37-a-venezuela/",
-        "fecha": "2026-08-15T13:03:21+00:00"
-      },
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/inameh-onda-tropical-37-lluvias/",
-        "fecha": "2026-08-15T14:14:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T14:14:09+00:00",
-    "fecha_evento_temprana": "2026-08-15T13:03:21+00:00",
-    "fecha_deteccion": "2026-08-15T15:52:25.496697+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Lara::2026-08-15",
-    "titulo": "Inundación en Lara",
-    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 15/08/2026, 10:14 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 11:52 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/15/inameh-pronostico-fuertes-chubascos-con-la-llegada-de-la-onda-tropical-37-a-venezuela/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/inameh-onda-tropical-37-lluvias/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad MCY (Aragua)",
-        "link": "https://ciudadmcy.info.ve/corposalud-y-ops-unifican-esfuerzos-en-capacitacion-de-salud-mental",
-        "fecha": "2026-08-15T13:39:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T13:39:54+00:00",
-    "fecha_evento_temprana": "2026-08-15T13:39:54+00:00",
-    "fecha_deteccion": "2026-08-15T15:54:51.046616+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::Aragua::2026-08-15",
-    "titulo": "Sismo en Aragua",
-    "texto": "📌 Sismo en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 15/08/2026, 9:39 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 11:54 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/corposalud-y-ops-unifican-esfuerzos-en-capacitacion-de-salud-mental"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/capturada-en-tachira-mujer-solicitada-por-terrorismo-y-trafico-de-armas/",
-        "fecha": "2026-08-15T12:24:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T12:24:59+00:00",
-    "fecha_evento_temprana": "2026-08-15T12:24:59+00:00",
-    "fecha_deteccion": "2026-08-15T14:59:43.795999+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Tachira::2026-08-15",
-    "titulo": "Ataque armado en Tachira",
-    "texto": "📌 Ataque armado en Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 15/08/2026, 8:24 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 10:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/capturada-en-tachira-mujer-solicitada-por-terrorismo-y-trafico-de-armas/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.2,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/",
-        "fecha": "2026-08-15T12:30:00+00:00"
-      },
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/los-terremotos-de-venezuela-dejaron-en-la-guaira-decenas-de-alumnos-fallecidos-y-a-miles-sin-escuela/",
-        "fecha": "2026-08-15T13:40:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T13:40:03+00:00",
-    "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
-    "fecha_deteccion": "2026-08-15T15:00:08.041914+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "Merida",
-      "Tachira",
-      "Trujillo",
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Distrito Capital::2026-08-15",
-    "titulo": "Sismo en Distrito Capital",
-    "texto": "📌 Sismo en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 15/08/2026, 9:40 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 11:00 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/los-terremotos-de-venezuela-dejaron-en-la-guaira-decenas-de-alumnos-fallecidos-y-a-miles-sin-escuela/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Anzoategui",
     "municipio": null,
@@ -409,32 +156,6 @@
     "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 14/08/2026, 8:42 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 6:53 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/14/entrevista-a-jesus-gonzalez-sevilla-el-chavismo-debera-enfrentar-la-justicia-si-quiere-seguir-haciendo-politica/"
   },
   {
-    "tipo": "explosion",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notimax Plus (Barinas)",
-        "link": "https://www.notimaxplus.com/2026/08/falsa-alarma-en-carabobo-despliegue.html",
-        "fecha": "2026-08-15T05:03:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T05:03:13+00:00",
-    "fecha_evento_temprana": "2026-08-15T05:03:13+00:00",
-    "fecha_deteccion": "2026-08-15T09:02:55.790197+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "explosion::Carabobo::2026-08-15",
-    "titulo": "Explosión en Municipio Valencia, Carabobo",
-    "texto": "📌 Explosión en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 15/08/2026, 1:03 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 5:02 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notimax Plus (Barinas): https://www.notimaxplus.com/2026/08/falsa-alarma-en-carabobo-despliegue.html"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,
@@ -485,34 +206,6 @@
     "clave_dedup": "infraestructura_electrica::Monagas::2026-08-15",
     "titulo": "Falla eléctrica en Municipio Maturín, Monagas",
     "texto": "📌 Falla eléctrica en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 14/08/2026, 8:58 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 3:46 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/14/ciudadanos-volvieron-a-protestar-en-corpoelec-de-maturin-hastiados-por-los-cortes-electricos/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Monagas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Maturin News",
-        "link": "https://maturinnews.com/terremoto-de-magnitud-77-en-indonesia-ordenan-evacuaciones/?utm_source=rss&utm_medium=rss&utm_campaign=terremoto-de-magnitud-77-en-indonesia-ordenan-evacuaciones",
-        "fecha": "2026-08-15T01:18:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T01:18:18+00:00",
-    "fecha_evento_temprana": "2026-08-15T01:18:18+00:00",
-    "fecha_deteccion": "2026-08-15T07:46:46.842286+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.7,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::Monagas::2026-08-15::mag7.7",
-    "titulo": "Sismo en Monagas",
-    "texto": "📌 Sismo en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 14/08/2026, 9:18 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 3:46 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/terremoto-de-magnitud-77-en-indonesia-ordenan-evacuaciones/?utm_source=rss&utm_medium=rss&utm_campaign=terremoto-de-magnitud-77-en-indonesia-ordenan-evacuaciones"
   },
   {
     "tipo": "orden_publico",

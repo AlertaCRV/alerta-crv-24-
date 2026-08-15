@@ -310,6 +310,31 @@ def test_a_n_meses_sin_cualificador_sigue_funcionando_control():
     assert _es_retrospectiva_obvia(texto) is True
 
 
+def test_fecha_historica_completa_es_retrospectiva():
+    # Caso real (15-08-2026, El Impulso): "A las 10:15 de la noche del 28
+    # de abril de 1894, un terremoto sacudio Merida, Trujillo, Tachira..."
+    # -- una nota historica/efemeride sobre un sismo de mas de un siglo de
+    # antiguedad se publicaba como sismo/deslizamiento NUEVOS.
+    texto = "A las 10:15 de la noche del 28 de abril de 1894, un terremoto sacudio Merida, Trujillo, Tachira y el sur del lago de Maracaibo."
+    assert _es_retrospectiva_obvia(texto) is True
+
+
+def test_fecha_reciente_no_es_retrospectiva_control():
+    # Control: una fecha completa reciente (no anterior a 2020) no debe
+    # activar el patron de fecha historica -- solo años claramente viejos.
+    texto = "El sismo ocurrio el 15 de agosto de 2026 y fue sentido en varios estados."
+    assert _es_retrospectiva_obvia(texto) is False
+
+
+def test_segundo_terremoto_es_retrospectiva():
+    # Caso real (15-08-2026, Turimiquire): "epicentro del segundo
+    # terremoto" -- un reportaje de reconstruccion educativa semanas
+    # despues del sismo doble de La Guaira/Vargas usa esta variante para
+    # referirse al mismo evento ya conocido, no a un sismo nuevo.
+    texto = "La emergencia educativa atraviesa La Guaira, especialmente en Catia La Mar, epicentro del segundo terremoto."
+    assert _es_retrospectiva_obvia(texto) is True
+
+
 # --- municipio/parroquia del cluster deben aparecer en las fuentes -------
 # aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
 

@@ -6202,3 +6202,306 @@ scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
 
 Con esto quedan resueltos los 2 hallazgos pendientes de la auditoría del
 14-08-2026.
+
+## Auditoría diaria automática (15-08-2026): un cable de EFE sobre un sismo en Indonesia, una noche de 1894, un pronóstico del Inameh y una captura de Interpol se publicaron como 11 alertas falsas en Venezuela
+
+Auditoría de rutina sobre las alertas publicadas en las últimas ~24-48 horas
+(14 y 15-08-2026), comparando cada una contra el texto real de sus fuentes en
+data/historico_fuentes_texto.jsonl. Se revisaron con especial cuidado las 20
+alertas del 15-08-2026 con estado_verificacion=PASADO_POR_FALLA_TECNICA (nunca
+pasaron por la verificación de IA): 11 de ellas resultaron ser falsos
+positivos, con 9 causas raíz distintas -- ninguna relacionada entre sí, cada
+una un patrón de contenido que el sistema no sabía distinguir de una
+emergencia real.
+
+### 1. Un cable de EFE sobre un terremoto de magnitud 7.7 en Indonesia se
+publicó como sismo en Monagas por la firma del periodista que lo redistribuyó
+
+`sismo::Monagas::2026-08-15::mag7.7` (Maturin News) es, en su totalidad, una
+nota de agencia (EFE) sobre el terremoto de magnitud 7,7 que sacudió la región
+de Flores, Indonesia, esa madrugada -- epicentro, réplicas, alerta de tsunami
+indonesia, USGS, todo el contenido es sobre Indonesia. La ÚNICA mención de
+Venezuela en todo el artículo es la firma final, boilerplate del medio: "Vía//
+EFE Periodista del estado Monagas.", que acredita al periodista local que
+redistribuyó el cable, no la ubicación del hecho.
+
+**Causa raíz**: el detector de ubicación no distingue una mención de estado
+dentro de una firma/crédito de periodista de una mención real del lugar del
+hecho -- la palabra "Monagas" en "Periodista del estado Monagas" bastaba como
+evidencia.
+
+**Corrección**: se agregó "periodista del estado monagas" a
+`LISTA_NEGRA_POR_ESTADO["Monagas"]` (`scripts/classify.py`) -- mismo mecanismo
+ya usado para "aeropuerto"/"moneda" (Bolívar/Sucre) y para las avenidas
+homónimas. Se verificó contra las 122 fuentes de
+data/historico_fuentes_texto.jsonl que esta firma es exclusiva de este
+artículo, y con un caso de control (un sismo real y explícito en el estado
+Monagas, vía Funvisis) que el estado sigue detectándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Monagas::2026-08-15::mag7.7` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
+### 2. Un párrafo sobre el colapso de una vía HACIA Portuguesa (no EN
+Portuguesa) generó una alerta duplicada de incendio en ese estado
+
+`incendio::Portuguesa::2026-08-15` (Turimiquire, un artículo sobre
+sequía/incendios forestales que amenazan la agricultura del estado Trujillo --
+400 hectáreas afectadas en al menos 5 municipios) menciona, de pasada, "el
+colapso de las vías de acceso hacia el estado Portuguesa, lo que obliga a
+desviar el tránsito pesado hacia Lara" -- Portuguesa es solo el DESTINO de una
+vía cerrada, no la ubicación de ningún incendio.
+`incendio::Trujillo::2026-08-15`, generado por el mismo artículo, sí tiene
+evidencia real y cuantificada, y se conserva sin cambios.
+
+**Corrección**: se agregó "hacia el estado portuguesa" a
+`LISTA_NEGRA_POR_ESTADO["Portuguesa"]` (`scripts/classify.py`) -- mismo
+mecanismo que el hallazgo 1. Se verificó contra las 122 fuentes que la frase
+es exclusiva de este artículo, y con un caso de control (un incendio forestal
+real y explícito en el municipio Guanare, Portuguesa) que el estado sigue
+detectándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`incendio::Portuguesa::2026-08-15` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`. `incendio::Trujillo::2026-08-15` se conservó sin
+cambios.
+
+### 3. Una efeméride sobre el terremoto de los Andes de 1894 se publicó como
+sismo en Distrito Capital y deslizamiento en Táchira
+
+`deslizamiento::Tachira::2026-08-15` y, parcialmente, `sismo::Distrito
+Capital::2026-08-15` (El Impulso, "El Gran Sismo de los Andes: la noche que la
+tierra borró pueblos enteros #15Ago") narran, con lujo de detalle, el
+terremoto que sacudió Mérida, Trujillo, Táchira y el sur del lago de Maracaibo
+"a las 10:15 de la noche del 28 de abril de 1894" -- más de un siglo de
+antigüedad, publicado como contenido de efeméride ("#15Ago"). Ningún filtro
+determinista existente reconocía una fecha completa (día + mes + año)
+claramente histórica como señal de retrospectiva -- los mecanismos existentes
+("aniversario", "a X meses del", "doble sismo") están pensados para el sismo
+doble de La Guaira/Vargas de este año, no para una nota sobre un evento de
+1894.
+
+**Corrección**: se agregó al patrón `_PATRON_RETROSPECTIVA`
+(`scripts/verify_ai.py`) una alternativa que reconoce cualquier fecha completa
+("DD de MES de AAAA") con año anterior a 2020. Se verificó contra las 122
+fuentes que esta combinación es exclusiva de este artículo, y con un caso de
+control (una fecha completa reciente, del propio 2026) que no activa el
+patrón.
+
+**Corrección retroactiva**: se eliminó por completo
+`deslizamiento::Tachira::2026-08-15` de los 4 archivos de datos.
+`sismo::Distrito Capital::2026-08-15` (que además tenía una segunda fuente,
+ver hallazgo 4) también se eliminó por completo -- ver ese hallazgo.
+
+### 4. Un reportaje sobre la reconstrucción educativa en La Guaira, semanas
+después del sismo doble, generó una alerta nueva de sismo en Distrito Capital
+
+La segunda fuente de `sismo::Distrito Capital::2026-08-15` (Turimiquire, "Los
+terremotos de Venezuela dejaron en La Guaira decenas de alumnos fallecidos y a
+miles sin escuela") es un reportaje de largo aliento sobre la reconstrucción
+educativa en La Guaira, "epicentro del SEGUNDO terremoto" -- la misma variante
+del sismo doble de La Guaira/Vargas ya cubierta como "doble terremoto"/"doble
+sismo", pero con la palabra "segundo" en vez de "doble". El artículo menciona
+"el área metropolitana de Caracas" de pasada (una cifra de UNICEF sobre
+escuelas afectadas), lo que bastaba para generar una alerta nueva de sismo en
+Distrito Capital semanas después del hecho.
+
+**Corrección**: se agregó "segundo terremoto"/"segundo sismo" a
+`_PATRON_RETROSPECTIVA` (`scripts/verify_ai.py`), junto al hallazgo 3. Se
+verificó contra las 122 fuentes que la frase es exclusiva de este artículo.
+
+**Corrección retroactiva**: con las 2 fuentes de `sismo::Distrito
+Capital::2026-08-15` cubiertas por los hallazgos 3 y 4, el evento completo se
+eliminó de `docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl` y `data/publicados.json`.
+
+### 5. Un taller de capacitación en salud mental para personal que atiende a
+damnificados de un sismo YA ocurrido se publicó como un sismo nuevo en Aragua
+
+`sismo::Aragua::2026-08-15` (Ciudad MCY, "Corposalud y OPS unifican esfuerzos
+en capacitación de salud mental") describe un taller para personal de salud
+que atiende a "la población civil afectada por la contingencia sísmica... en
+los refugios temporales" -- disparaba tipo=sismo vía la palabra "terremoto",
+mencionada en una cita sobre el impacto emocional de los sobrevivientes, muy
+lejos (fuera de la ventana de proximidad de 35 palabras) de la mención de
+"estado Aragua".
+
+**Causa raíz**: `_CONTEXTO_CONFLICTIVO_POR_TIPO["sismo"]` (ya usado para el
+caso análogo de "cerco epidemiológico") solo mira la ventana de proximidad al
+estado -- no bastaba aquí porque los marcadores de salud mental están al
+inicio del artículo y "Aragua" al final.
+
+**Corrección**: nueva función
+`_es_taller_salud_mental_post_sismo_sin_evidencia_real()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO (mismo mecanismo
+que `_es_nombre_institucional_tsunami_sin_evidencia_real`): si el texto
+contiene un marcador de taller/contingencia de salud mental post-sismo ("salud
+mental", "contingencia sísmica", "refugios temporales", "campamentos
+transitorios") y no hay evidencia fuerte de un sismo nuevo (magnitud,
+epicentro, se sintió, sacudió), se descarta el tipo. Se verificó contra las
+122 fuentes que estos marcadores son exclusivos de este artículo, y con un
+caso de control (un sismo real y actual con magnitud/epicentro, que además
+menciona apoyo de salud mental a los afectados) que sigue publicándose con
+normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Aragua::2026-08-15` de los 4 archivos de datos.
+
+### 6. Un despliegue policial por una "falsa alarma" de granada (un envase de
+perfume) se publicó como una explosión real en Carabobo
+
+`explosion::Carabobo::2026-08-15` (Notimax Plus) es, desde su propio titular
+("Falsa alarma en Carabobo: Despliegue policial por supuesta granada termina
+tras hallazgo de un envase de perfume"), un artículo que aclara que el
+"artefacto explosivo" reportado por transeúntes nunca fue real -- "se descartó
+de manera categórica que se tratara de una amenaza real", "el objeto
+correspondía en realidad a un frasco de perfume vacío".
+
+**Corrección**: nueva función `_es_falsa_alarma_sin_explosivo_real()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO -- mismo patrón
+que `_es_cartucho_lacrimogeno_sin_explosivo_real()` (12-08-2026), con marcador
+"falsa alarma". Se verificó contra las 122 fuentes que la frase es exclusiva
+de este artículo, y con un caso de control (una explosión real con heridos en
+Carabobo) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`explosion::Carabobo::2026-08-15` de los 4 archivos de datos. Se eliminó
+también `docs/data/informes/2026-08_explosion.json` (el único evento de
+explosión de todo agosto era precisamente este falso positivo) y su entrada en
+`docs/data/informes/index.json`.
+
+### 7. La captura de una fugitiva con una Notificación Azul de Interpol se
+publicó como un ataque armado en curso en Táchira
+
+`ataque_armado::Tachira::2026-08-15` (La Prensa de Monagas, "Capturada en
+Táchira mujer solicitada por terrorismo y tráfico de armas") describe la
+CAPTURA de una mujer con una Notificación Azul de Interpol en su contra por
+tráfico de armas y terrorismo -- disparaba tipo=ataque_armado vía esas mismas
+palabras (delitos por los que era buscada), sin que el artículo describa
+ningún ataque en curso.
+
+**Corrección**: nueva función `_es_captura_fugitivo_sin_ataque_en_curso()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO, con marcador
+"notificación azul"/"orden de captura internacional" y una nueva lista de
+evidencia fuerte para ataque_armado
+(`_EVIDENCIA_FUERTE_POR_TIPO["ataque_armado"]`: tiroteo, enfrentamiento,
+heridos, fallecidos, emboscada). Se verificó contra las 122 fuentes que
+"notificación azul" es exclusiva de este artículo, y con un caso de control
+(una persona con notificación azul que además protagoniza un tiroteo real
+antes de ser capturada) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`ataque_armado::Tachira::2026-08-15` de los 4 archivos de datos. Se eliminó
+también `docs/data/informes/2026-08_ataque_armado.json` (el único evento de
+ataque armado de todo agosto era precisamente este falso positivo) y su
+entrada en `docs/data/informes/index.json`.
+
+### 8. Un informe semestral del Observatorio Venezolano de Conflictividad
+Social repartido entre 5 estados generó 3 alertas nuevas de orden público
+
+`orden_publico::Lara/Miranda/Sucre::2026-08-15` (Turimiquire, "Las protestas
+en Venezuela se dispararon 181% en el primer semestre del 2026") cita el
+informe semestral del Observatorio Venezolano de Conflictividad Social (OVCS),
+que reparte cifras agregadas del semestre entre 5 estados (Distrito Capital
+462, Miranda 414, Sucre 274, Bolívar 265, Lara 263 protestas) -- mismo patrón
+ya cubierto el 14-08-2026 para el mapa de Primero Justicia, pero con un
+marcador distinto (un informe estadístico de un observatorio, no el mapa de un
+partido).
+
+**Corrección**: se agregó "informe del observatorio venezolano de
+conflictividad social" a `_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`
+(`scripts/classify.py`), reutilizando el mecanismo de proximidad ya construido
+el 14-08-2026. El marcador exige la frase "informe del" antes del nombre del
+observatorio (no solo la mención de la institución) para no afectar coberturas
+LOCALES de una noche puntual que solo citan al OVCS como corroboración
+secundaria de un hecho ya descrito con evidencia propia -- se verificó que
+esto preserva sin cambios un caso real ya publicado y correcto
+(`orden_publico::Aragua/Zulia::2026-08-07`, El Periodico de Monagas, cobertura
+local de protestas puntuales de esa noche que cita al OVCS solo como dato
+adicional).
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Lara::2026-08-15`, `orden_publico::Miranda::2026-08-15` y
+`orden_publico::Sucre::2026-08-15` de los 4 archivos de datos.
+
+### 9. Un boletín de pronóstico del Inameh sobre lluvias futuras se publicó
+como una inundación ya ocurrida en Lara
+
+`inundacion::Lara::2026-08-15` (La Patilla y La Prensa de Lara, ambas sobre el
+mismo boletín: "Inameh pronosticó fuertes chubascos con la llegada de la Onda
+Tropical 37 a Venezuela") es un boletín meteorológico rutinario que lista 15+
+estados como zonas de lluvia PRONOSTICADA para las próximas horas -- disparaba
+tipo=inundación vía la palabra "vaguada" (término meteorológico genérico,
+parte del vocabulario técnico de cualquier pronóstico del Inameh), sin que
+ninguna inundación real hubiera ocurrido todavía.
+
+**Corrección**: nueva función
+`_es_boletin_pronostico_inameh_sin_inundacion_real()` (`scripts/classify.py`),
+evaluada sobre el ARTÍCULO COMPLETO, con marcadores "inameh" + "onda tropical"
+(ambos presentes) y una nueva lista de evidencia fuerte para inundación
+(`_EVIDENCIA_FUERTE_POR_TIPO["inundacion"]`: anegado, viviendas anegadas,
+familias afectadas, evacuados, arrastró, desbordó, damnificados). Se verificó
+contra las 122 fuentes que ninguna cobertura real de daños por una onda
+tropical (p.ej. la Onda Tropical 30, que sí causó
+anegaciones/derrumbes/lesionados reales) menciona al Inameh como fuente -- la
+combinación es exclusiva de boletines de pronóstico puro. Con un caso de
+control (una inundación real con viviendas anegadas, que además menciona al
+Inameh y una onda tropical como causa) se verificó que sigue publicándose con
+normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`inundacion::Lara::2026-08-15` de los 4 archivos de datos.
+
+### Revisado sin cambios
+
+`incendio::Distrito Capital::2026-08-15` (panadería en el sector Los Símbolos,
+municipio Libertador, con evacuación de 10 personas del edificio contiguo),
+`orden_publico::Anzoategui::2026-08-15` (SNTP denuncia intimidación de la GNB
+contra periodistas tras una protesta real),
+`infraestructura_electrica::Anzoategui/Monagas::2026-08-15` y
+`infraestructura_electrica::Portuguesa::2026-08-14` (protestas reales y
+puntuales contra Corpoelec, con testimonios y sectores nombrados),
+`deslizamiento::Falcon/Lara::2026-08-15` (20+ deslizamientos reales bloqueando
+la vía Lara-Falcón, misma fuente para ambos estados),
+`orden_publico::Aragua::2026-08-15` (jubilados de Cantv protestando por deuda
+de beneficios): consistentes con el texto de sus fuentes.
+
+### Pendiente de discutir
+
+**`orden_publico::Distrito Capital::2026-08-15`** (La Patilla, entrevista a
+Jesús González Sevilla sobre la transición política, que menciona de pasada
+"había acompañado una protesta de familiares de presos políticos en Caracas",
+sin fecha ni detalles de un disturbio actual): mismo patrón estructural que el
+caso del libro de memoria corregido el 14-08-2026 a pedido del usuario (una
+mención de pasada, en tiempo pasado, dentro de un artículo sobre otro tema por
+completo -- aquí una entrevista política, no la presentación de un libro),
+pero con un marcador distinto (no hay ningún "presentaron un libro"). El
+usuario ya señaló, en esa sesión, que prefiere alertas generadas a partir de
+hechos descritos como tema principal, no menciones de pasada -- pero también
+dejó explícitamente pendiente si eso merece un filtro GENERAL (cualquier
+protesta pasada mencionada de pasada, sin importar el tema del artículo) o si
+cada caso debe corregirse con su propio marcador puntual, como se hizo con el
+libro. No se corrigió a ciegas: generalizar el filtro sin ese marcador
+específico arriesga descartar coberturas legítimas que mencionan, de pasada,
+un hecho de contexto real. Se notifica al usuario para decidir si ya conviene
+diseñar el filtro general o seguir corrigiendo caso por caso.
+
+### Pruebas
+
+15 casos nuevos en `tests/casos_clasificacion.jsonl` (9 reales + 6 controles
+de los hallazgos 1, 2, 5, 6, 7, 8 y 9) y 3 casos nuevos en
+`tests/test_verify_ai_filtros.py` (fecha histórica completa + control de fecha
+reciente para el hallazgo 3, "segundo terremoto" para el hallazgo 4).
+Regresión completa contra las 111 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con las 11 instantáneas retractadas
+eliminadas): sin cambios inesperados -- las únicas fuentes afectadas por los
+fixes son, precisamente, las corregidas en esta sesión. `python3 -m pytest
+tests/` → 335 passed, 5 xfailed (conocidos, sin relación), 1 xpassed
+(conocido, sin efecto real). `python3 scripts/validar_configs.py` → OK.
+`python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
+regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares de
+posibles duplicados y fuentes muertas ya conocidos de sesiones anteriores, sin
+novedades reales en las alertas del 15-08-2026.
+
