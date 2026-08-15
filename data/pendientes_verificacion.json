@@ -391,36 +391,44 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T20:54:43.726285+00:00"
   },
-  "ataque_armado::Sucre::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:06:02.128689+00:00"
-  },
-  "orden_publico::Lara::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:03:36.079862+00:00"
-  },
-  "incendio::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:05:13.123525+00:00"
-  },
-  "orden_publico::Miranda::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:07:15.943490+00:00"
-  },
-  "orden_publico::Sucre::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T22:07:40.517667+00:00"
-  },
   "sismo::Merida::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:04:24.628922+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T22:59:17.679118+00:00"
   },
   "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T22:05:37.570532+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:00:30.405932+00:00"
   },
   "sismo::Aragua::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T23:02:55.630043+00:00"
+  },
+  "ataque_armado::Aragua::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T22:08:04.922006+00:00"
+    "ultima_vez": "2026-08-15T22:57:39.600234+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T22:58:04.148880+00:00"
+  },
+  "deslizamiento::Falcon::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T22:58:28.734555+00:00"
+  },
+  "deslizamiento::Lara::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T22:58:53.125177+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T22:59:42.003180+00:00"
+  },
+  "incendio::Portuguesa::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:01:18.821240+00:00"
+  },
+  "incendio::Trujillo::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T23:01:43.007495+00:00"
   }
 }
