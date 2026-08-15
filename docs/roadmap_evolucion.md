@@ -6203,14 +6203,15 @@ scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
 Con esto quedan resueltos los 2 hallazgos pendientes de la auditoría del
 14-08-2026.
 
-## Auditoría diaria automática (15-08-2026): un cable de EFE sobre un sismo en Indonesia, una noche de 1894, un pronóstico del Inameh y una captura de Interpol se publicaron como 11 alertas falsas en Venezuela
+## Auditoría diaria automática (15-08-2026): un cable de EFE sobre un sismo en Indonesia, una noche de 1894, un pronóstico del Inameh y dos procesos judiciales por terrorismo se publicaron como 12 alertas falsas en Venezuela
 
 Auditoría de rutina sobre las alertas publicadas en las últimas ~24-48 horas
 (14 y 15-08-2026), comparando cada una contra el texto real de sus fuentes en
-data/historico_fuentes_texto.jsonl. Se revisaron con especial cuidado las 20
+data/historico_fuentes_texto.jsonl. Se revisaron con especial cuidado las
 alertas del 15-08-2026 con estado_verificacion=PASADO_POR_FALLA_TECNICA (nunca
-pasaron por la verificación de IA): 11 de ellas resultaron ser falsos
-positivos, con 9 causas raíz distintas -- ninguna relacionada entre sí, cada
+pasaron por la verificación de IA), incluida una publicada por el monitoreo
+automático ya avanzada la sesión (PR #234): 12 alertas resultaron ser falsos
+positivos, con 10 causas raíz distintas -- ninguna relacionada entre sí, cada
 una un patrón de contenido que el sistema no sabía distinguir de una
 emergencia real.
 
@@ -6454,6 +6455,31 @@ normalidad.
 **Corrección retroactiva**: se eliminó por completo
 `inundacion::Lara::2026-08-15` de los 4 archivos de datos.
 
+### 10. La excarcelación de dos hermanos detenidos por financiar el
+terrorismo se publicó como un ataque armado en Sucre
+
+Esta corrección se hizo sobre la marcha, ya avanzada la sesión: el monitoreo
+automático (PR #234, fusionado mientras se preparaba esta auditoría) publicó
+una nueva alerta -- `ataque_armado::Sucre::2026-08-15` (El Tiempo, Anzoátegui,
+"Dos hermanos de Araya fueron excarcelados tras permanecer detenidos por
+'financiamiento al terrorismo'") -- que resultó ser el mismo patrón de fondo
+que el hallazgo 7 (proceso judicial relacionado con cargos de terrorismo, sin
+ningún ataque en curso), pero en el extremo OPUESTO: no una captura, sino la
+EXCARCELACIÓN (liberación) de dos jóvenes tras más de un año detenidos.
+
+**Corrección**: se amplió `_MARCADORES_CAPTURA_FUGITIVO`
+(`scripts/classify.py`, mismo mecanismo del hallazgo 7) con
+"excarcelados"/"excarcelado"/"excarcelación" y variantes de género/número. Se
+verificó contra el corpus vigente que la palabra es exclusiva de este
+artículo, y con un caso de control (una persona excarcelada que además
+protagoniza un tiroteo real horas después) que sigue publicándose con
+normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`ataque_armado::Sucre::2026-08-15` de `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`.
+
 ### Revisado sin cambios
 
 `incendio::Distrito Capital::2026-08-15` (panadería en el sector Los Símbolos,
@@ -6490,16 +6516,18 @@ diseñar el filtro general o seguir corrigiendo caso por caso.
 
 ### Pruebas
 
-15 casos nuevos en `tests/casos_clasificacion.jsonl` (9 reales + 6 controles
-de los hallazgos 1, 2, 5, 6, 7, 8 y 9) y 3 casos nuevos en
+17 casos nuevos en `tests/casos_clasificacion.jsonl` (10 reales + 7 controles
+de los hallazgos 1, 2, 5, 6, 7, 8, 9 y 10) y 3 casos nuevos en
 `tests/test_verify_ai_filtros.py` (fecha histórica completa + control de fecha
 reciente para el hallazgo 3, "segundo terremoto" para el hallazgo 4).
 Regresión completa contra las 111 fuentes vigentes de
-`data/historico_fuentes_texto.jsonl` (ya con las 11 instantáneas retractadas
-eliminadas): sin cambios inesperados -- las únicas fuentes afectadas por los
-fixes son, precisamente, las corregidas en esta sesión. `python3 -m pytest
-tests/` → 335 passed, 5 xfailed (conocidos, sin relación), 1 xpassed
-(conocido, sin efecto real). `python3 scripts/validar_configs.py` → OK.
+`data/historico_fuentes_texto.jsonl` (ya con las 12 instantáneas retractadas
+eliminadas, incluida la del hallazgo 10, y las nuevas fuentes que llegaron con
+el PR #234 del monitoreo automático): sin cambios inesperados -- las únicas
+fuentes afectadas por los fixes son, precisamente, las corregidas en esta
+sesión. `python3 -m pytest tests/` → 337 passed, 5 xfailed (conocidos, sin
+relación), 1 xpassed (conocido, sin efecto real). `python3
+scripts/validar_configs.py` → OK.
 `python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
 regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares de
 posibles duplicados y fuentes muertas ya conocidos de sesiones anteriores, sin

@@ -804,9 +804,21 @@ def _es_falsa_alarma_sin_explosivo_real(texto_norm):
 # el ARTICULO COMPLETO (igual que el cartucho lacrimogeno): "notificacion
 # azul" es un termino tecnico especifico de Interpol para personas
 # buscadas, exclusivo de este tipo de nota de captura/detencion.
+#
+# Ampliado (15-08-2026, mismo dia): "Dos hermanos de Araya fueron
+# excarcelados tras permanecer detenidos por financiamiento al terrorismo...
+# tras estar recluidos por mas de un año" disparaba el mismo tipo=
+# ataque_armado en Sucre via "terrorismo" -- el hecho real es la
+# EXCARCELACION (liberacion) de dos personas ya detenidas desde hace un año,
+# el extremo opuesto de una captura, pero el mismo patron de fondo: un
+# proceso judicial relacionado con cargos de terrorismo, sin ningun ataque
+# armado ocurriendo. "Excarcelados"/"excarcelacion" es un termino juridico
+# especifico (liberacion de un recluso), exclusivo de este tipo de nota.
 _MARCADORES_CAPTURA_FUGITIVO = [
     "notificacion azul", "notificación azul",
     "orden de captura internacional",
+    "excarcelados", "excarcelado", "excarcelada", "excarceladas",
+    "excarcelacion", "excarcelación",
 ]
 
 
