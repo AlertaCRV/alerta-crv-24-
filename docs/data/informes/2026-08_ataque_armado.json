@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "ataque_armado",
+  "tipo_label": "Ataque armado",
+  "cerrado": false,
+  "generado": "2026-08-15T20:56:08.470544+00:00",
+  "actualizado_hasta": "2026-08-15T14:59:43.795999+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de 2026-08, se registró un evento relacionado con la categoría de ataque armado, específicamente la captura de una mujer en Táchira solicitada por terrorismo y tráfico de armas (La Prensa de Monagas). Esta mujer, identificada como Rivero, presentaba una Notificación Azul en su contra por la presunta comisión de los delitos de tráfico de armas y municiones, asociación para delinquir agravada y terrorismo (La Prensa de Monagas). Este evento es notable ya que representa un aumento en comparación con el período anterior, 2026-07, en el que no se registraron eventos de esta naturaleza. La captura de esta persona en Táchira es un ejemplo de los esfuerzos para combatir el terrorismo y el tráfico de armas en la región (La Prensa de Monagas). En resumen, el período de 2026-08 vio un evento significativo en la lucha contra el crimen organizado, específicamente en Táchira, Venezuela. La comparación con el período anterior muestra un aumento a 1 evento en este período, desde 0 eventos en 2026-07.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/capturada-en-tachira-mujer-solicitada-por-terrorismo-y-trafico-de-armas/"
+    }
+  ]
+}
