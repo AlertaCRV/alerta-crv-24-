@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": "La Palmita",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/",
+        "fecha": "2026-08-15T12:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T12:30:00+00:00",
+    "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
+    "fecha_deteccion": "2026-08-15T17:00:08.713292+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Tachira::2026-08-15",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia La Palmita, Tachira",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia La Palmita, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Palmita, Tachira\n🕒 Hecho reportado: 15/08/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/15/el-gran-sismo-de-los-andes-la-noche-que-la-tierra-borro-pueblos-enteros-15ago/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/",
+        "fecha": "2026-08-15T14:24:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T14:24:38+00:00",
+    "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
+    "fecha_deteccion": "2026-08-15T17:00:33.295460+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Falcon::2026-08-15",
+    "titulo": "Deslizamiento/Derrumbe en Falcon",
+    "texto": "📌 Deslizamiento/Derrumbe en Falcon\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 15/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Lara",
+    "municipio": "Urdaneta",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/",
+        "fecha": "2026-08-15T14:24:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T14:24:38+00:00",
+    "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
+    "fecha_deteccion": "2026-08-15T17:00:57.867389+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Lara::2026-08-15",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Urdaneta, Lara",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Urdaneta, Lara\n🕒 Hecho reportado: 15/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Lara",
     "municipio": null,

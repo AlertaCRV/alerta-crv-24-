@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-15T15:56:29.138900+00:00",
+  "actualizado": "2026-08-15T17:00:59.250463+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T14:14:09+00:00"
+    "hasta": "2026-08-15T14:24:38+00:00"
   },
-  "total_eventos": 113,
+  "total_eventos": 116,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 17,
     "infraestructura_electrica": 34,
-    "deslizamiento": 3,
+    "deslizamiento": 6,
     "colapso_estructural": 1,
     "orden_publico": 22,
     "salud_publica": 3,
@@ -30,7 +30,7 @@
     },
     {
       "estado": "Lara",
-      "total": 10,
+      "total": 11,
       "confirmados": 1
     },
     {
@@ -89,24 +89,24 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 4,
+      "confirmados": 0
+    },
+    {
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
     },
     {
-      "estado": "Tachira",
-      "total": 3,
+      "estado": "Falcon",
+      "total": 4,
       "confirmados": 0
     },
     {
       "estado": "Miranda",
       "total": 3,
       "confirmados": 1
-    },
-    {
-      "estado": "Falcon",
-      "total": 3,
-      "confirmados": 0
     },
     {
       "estado": "Merida",
@@ -136,7 +136,8 @@
       "salud_publica": 2,
       "orden_publico": 2,
       "infraestructura_electrica": 2,
-      "sismo": 1
+      "sismo": 1,
+      "deslizamiento": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -190,7 +191,7 @@
       "orden_publico": 1
     },
     "Tachira": {
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "infraestructura_electrica": 1,
       "ataque_armado": 1
     },
@@ -209,7 +210,8 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "deslizamiento": 1
     },
     "Yaracuy": {
       "inundacion": 3,
@@ -236,7 +238,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 95,
+    "sin_clasificar": 98,
     "medio": 1,
     "bajo": 1
   },
@@ -253,7 +255,8 @@
       "2026-08": 29
     },
     "deslizamiento": {
-      "2026-07": 3
+      "2026-07": 3,
+      "2026-08": 3
     },
     "colapso_estructural": {
       "2026-07": 1
