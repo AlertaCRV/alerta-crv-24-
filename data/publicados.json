@@ -1,38 +1,10 @@
 {
-  "salud_publica::Lara::2026-08-12": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-12T05:16:42.269024+00:00",
-    "fecha_evento_temprana": "2026-08-12T01:46:29+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Yaracuy::2026-08-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-12T05:16:45.574380+00:00",
-    "fecha_evento_temprana": "2026-08-11T20:20:45+00:00",
-    "municipio": "San Felipe"
-  },
-  "salud_publica::Monagas::2026-08-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-12T05:17:03.873115+00:00",
-    "fecha_evento_temprana": "2026-08-11T19:11:28+00:00",
-    "municipio": "Cedeño"
-  },
   "inundacion::Apure::2026-08-11": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-08-13T05:27:35.277832+00:00",
     "fecha_evento_temprana": "2026-08-12T21:53:50+00:00",
     "municipio": "Páez"
-  },
-  "orden_publico::Nueva Esparta::2026-08-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-12T05:17:45.050601+00:00",
-    "fecha_evento_temprana": "2026-08-11T19:36:22+00:00",
-    "municipio": "García"
   },
   "orden_publico::Distrito Capital::2026-08-12": {
     "severidad": "sin_clasificar",
@@ -180,5 +152,12 @@
     "fecha_deteccion": "2026-08-15T04:57:26.990523+00:00",
     "fecha_evento_temprana": "2026-08-14T21:20:24+00:00",
     "municipio": "Araure"
+  },
+  "orden_publico::Aragua::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T06:00:54.141829+00:00",
+    "fecha_evento_temprana": "2026-08-15T00:57:04+00:00",
+    "municipio": null
   }
 }
