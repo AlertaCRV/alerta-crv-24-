@@ -347,10 +347,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-14T23:59:40.338922+00:00"
   },
-  "orden_publico::Anzoategui::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T00:00:53.187250+00:00"
-  },
   "incendio::Distrito Capital::2026-08-15": {
     "intentos": 1,
     "ultima_vez": "2026-08-15T00:01:17.488313+00:00"
@@ -378,5 +374,25 @@
   "orden_publico::Aragua::2026-08-15": {
     "intentos": 2,
     "ultima_vez": "2026-08-15T11:45:15.107305+00:00"
+  },
+  "ataque_armado::Tachira::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T13:22:22.528153+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T13:22:46.745357+00:00"
+  },
+  "explosion::Carabobo::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T13:23:11.060196+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T13:23:35.419133+00:00"
+  },
+  "sismo::Merida::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T13:23:59.669155+00:00"
   }
 }

@@ -1,6 +1,32 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/sntp-denuncio-intimidacion-de-la-gnb-contra-tres-periodistas-tras-protesta-en-anzoategui/",
+        "fecha": "2026-08-15T12:39:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T12:39:50+00:00",
+    "fecha_evento_temprana": "2026-08-15T12:39:50+00:00",
+    "fecha_deteccion": "2026-08-15T13:21:58.340130+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Anzoategui::2026-08-15",
+    "titulo": "Orden público en Anzoategui",
+    "texto": "📌 Orden público en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 15/08/2026, 8:39 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 9:21 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/sntp-denuncio-intimidacion-de-la-gnb-contra-tres-periodistas-tras-protesta-en-anzoategui/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
