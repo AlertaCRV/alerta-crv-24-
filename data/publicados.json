@@ -215,5 +215,19 @@
     "fecha_deteccion": "2026-08-15T15:00:08.041914+00:00",
     "fecha_evento_temprana": "2026-08-15T12:30:00+00:00",
     "municipio": null
+  },
+  "inundacion::Lara::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T15:52:25.496697+00:00",
+    "fecha_evento_temprana": "2026-08-15T13:03:21+00:00",
+    "municipio": null
+  },
+  "sismo::Aragua::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T15:54:51.046616+00:00",
+    "fecha_evento_temprana": "2026-08-15T13:39:54+00:00",
+    "municipio": null
   }
 }
