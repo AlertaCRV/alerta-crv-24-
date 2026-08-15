@@ -387,28 +387,36 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T16:59:14.942648+00:00"
   },
-  "inundacion::Lara::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T17:51:29.726362+00:00"
-  },
-  "sismo::Aragua::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T17:51:53.984063+00:00"
-  },
-  "sismo::Merida::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T17:52:18.218547+00:00"
-  },
   "deslizamiento::Tachira::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T17:52:42.454425+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T19:06:05.798072+00:00"
   },
   "deslizamiento::Falcon::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T17:53:06.682847+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T19:06:29.933315+00:00"
   },
   "deslizamiento::Lara::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T19:06:54.064560+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T17:53:30.919161+00:00"
+    "ultima_vez": "2026-08-15T19:03:13.641056+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T19:03:37.776653+00:00"
+  },
+  "orden_publico::Lara::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T19:04:01.904011+00:00"
+  },
+  "orden_publico::Miranda::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T19:04:26.038754+00:00"
+  },
+  "orden_publico::Sucre::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T19:04:50.173139+00:00"
   }
 }
