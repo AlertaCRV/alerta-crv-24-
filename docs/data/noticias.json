@@ -1,6 +1,58 @@
 [
   {
     "tipo": "incendio",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/",
+        "fecha": "2026-08-15T20:20:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T20:20:14+00:00",
+    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
+    "fecha_deteccion": "2026-08-15T22:06:26.448469+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Portuguesa::2026-08-15",
+    "titulo": "Incendio en Portuguesa",
+    "texto": "📌 Incendio en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 15/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Trujillo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/",
+        "fecha": "2026-08-15T20:20:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-15T20:20:14+00:00",
+    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
+    "fecha_deteccion": "2026-08-15T22:06:51.057115+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Trujillo::2026-08-15",
+    "titulo": "Incendio en Trujillo",
+    "texto": "📌 Incendio en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 15/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/"
+  },
+  {
+    "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
@@ -2240,57 +2292,5 @@
     "clave_dedup": "orden_publico::Lara::2026-08-02",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 02/08/2026, 9:52 a.m.\n🔎 Detectado por el sistema: 02/08/2026, 11:46 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/",
-        "fecha": "2026-08-01T18:13:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-01T18:13:54+00:00",
-    "fecha_evento_temprana": "2026-08-01T18:13:54+00:00",
-    "fecha_deteccion": "2026-08-01T20:04:18.402120+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Barinas::2026-08-01",
-    "titulo": "Inundación en Barinas",
-    "texto": "📌 Inundación en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 01/08/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/",
-        "fecha": "2026-08-01T19:55:44+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-01T19:55:44+00:00",
-    "fecha_evento_temprana": "2026-08-01T19:55:44+00:00",
-    "fecha_deteccion": "2026-08-01T20:04:31.786209+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-08-01",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/08/2026, 3:55 p.m.\n🔎 Detectado por el sistema: 01/08/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
   }
 ]

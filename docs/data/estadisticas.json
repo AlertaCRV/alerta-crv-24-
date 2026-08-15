@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-15T17:53:32.517100+00:00",
+  "actualizado": "2026-08-15T22:08:05.866000+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T15:43:10+00:00"
+    "hasta": "2026-08-15T20:20:14+00:00"
   },
-  "total_eventos": 120,
+  "total_eventos": 122,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 17,
@@ -14,7 +14,7 @@
     "orden_publico": 25,
     "salud_publica": 3,
     "crisis_migratoria": 4,
-    "incendio": 13,
+    "incendio": 15,
     "vialidad": 3,
     "sismo": 6,
     "escasez_combustible": 1,
@@ -64,6 +64,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Trujillo",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Sucre",
       "total": 5,
       "confirmados": 0
@@ -81,11 +86,6 @@
     {
       "estado": "Aragua",
       "total": 5,
-      "confirmados": 0
-    },
-    {
-      "estado": "Trujillo",
-      "total": 4,
       "confirmados": 0
     },
     {
@@ -109,17 +109,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Portuguesa",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Merida",
       "total": 1,
       "confirmados": 0
     },
     {
       "estado": "Guarico",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Portuguesa",
       "total": 1,
       "confirmados": 0
     }
@@ -159,7 +159,7 @@
     },
     "Trujillo": {
       "inundacion": 1,
-      "incendio": 2,
+      "incendio": 3,
       "sequia": 1
     },
     "Barinas": {
@@ -233,13 +233,14 @@
       "sequia": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "incendio": 1
     }
   },
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 102,
+    "sin_clasificar": 104,
     "medio": 1,
     "bajo": 1
   },
@@ -275,7 +276,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 10
+      "2026-08": 12
     },
     "vialidad": {
       "2026-08": 3

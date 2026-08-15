@@ -271,5 +271,19 @@
     "fecha_deteccion": "2026-08-15T17:51:05.531250+00:00",
     "fecha_evento_temprana": "2026-08-15T15:20:02+00:00",
     "municipio": null
+  },
+  "incendio::Portuguesa::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T22:06:26.448469+00:00",
+    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
+    "municipio": null
+  },
+  "incendio::Trujillo::2026-08-15": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-15T22:06:51.057115+00:00",
+    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
+    "municipio": null
   }
 }
