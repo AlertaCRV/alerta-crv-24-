@@ -376,23 +376,35 @@
     "ultima_vez": "2026-08-15T11:45:15.107305+00:00"
   },
   "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T13:22:22.528153+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:04:58.242470+00:00"
   },
   "sismo::Distrito Capital::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T13:22:46.745357+00:00"
-  },
-  "explosion::Carabobo::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T13:23:11.060196+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:05:22.561576+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T13:23:35.419133+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:05:46.950457+00:00"
   },
   "sismo::Merida::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T14:06:36.484707+00:00"
+  },
+  "inundacion::Lara::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T13:23:59.669155+00:00"
+    "ultima_vez": "2026-08-15T14:03:41.659923+00:00"
+  },
+  "orden_publico::Barinas::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T14:04:05.995048+00:00"
+  },
+  "orden_publico::Anzoategui::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T14:04:33.703778+00:00"
+  },
+  "sismo::Aragua::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T14:06:12.181291+00:00"
   }
 }
