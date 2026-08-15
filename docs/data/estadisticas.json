@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-15T15:02:10.548608+00:00",
+  "actualizado": "2026-08-15T15:56:29.138900+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T13:40:03+00:00"
+    "hasta": "2026-08-15T14:14:09+00:00"
   },
-  "total_eventos": 111,
+  "total_eventos": 113,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 16,
+    "inundacion": 17,
     "infraestructura_electrica": 34,
     "deslizamiento": 3,
     "colapso_estructural": 1,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 12,
     "vialidad": 3,
-    "sismo": 5,
+    "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
@@ -29,14 +29,14 @@
       "confirmados": 4
     },
     {
+      "estado": "Lara",
+      "total": 10,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 10,
       "confirmados": 4
-    },
-    {
-      "estado": "Lara",
-      "total": 9,
-      "confirmados": 1
     },
     {
       "estado": "Barinas",
@@ -74,6 +74,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Aragua",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
       "total": 4,
       "confirmados": 0
@@ -87,11 +92,6 @@
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
-    },
-    {
-      "estado": "Aragua",
-      "total": 4,
-      "confirmados": 0
     },
     {
       "estado": "Tachira",
@@ -132,7 +132,7 @@
       "explosion": 1
     },
     "Lara": {
-      "inundacion": 2,
+      "inundacion": 3,
       "salud_publica": 2,
       "orden_publico": 2,
       "infraestructura_electrica": 2,
@@ -220,7 +220,8 @@
     "Aragua": {
       "orden_publico": 2,
       "inundacion": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "sismo": 1
     },
     "Merida": {
       "infraestructura_electrica": 1
@@ -235,7 +236,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 93,
+    "sin_clasificar": 95,
     "medio": 1,
     "bajo": 1
   },
@@ -245,7 +246,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 9
+      "2026-08": 10
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -276,7 +277,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 5
+      "2026-08": 6
     },
     "escasez_combustible": {
       "2026-08": 1
