@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-15T04:59:04.165111+00:00",
+  "actualizado": "2026-08-15T05:16:01.510029+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-14T21:20:24+00:00"
   },
-  "total_eventos": 106,
+  "total_eventos": 103,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 35,
+    "infraestructura_electrica": 32,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -47,11 +47,6 @@
       "confirmados": 1
     },
     {
-      "estado": "Anzoategui",
-      "total": 6,
-      "confirmados": 0
-    },
-    {
       "estado": "Yaracuy",
       "total": 6,
       "confirmados": 1
@@ -62,14 +57,14 @@
       "confirmados": 1
     },
     {
-      "estado": "Apure",
+      "estado": "Anzoategui",
       "total": 5,
       "confirmados": 0
     },
     {
-      "estado": "Nueva Esparta",
+      "estado": "Apure",
       "total": 5,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Trujillo",
@@ -82,7 +77,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Miranda",
+      "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
     },
@@ -90,6 +85,11 @@
       "estado": "Monagas",
       "total": 3,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 3,
+      "confirmados": 1
     },
     {
       "estado": "Falcon",
@@ -169,7 +169,7 @@
       "infraestructura_electrica": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 2,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 1
@@ -195,12 +195,11 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 2,
-      "infraestructura_electrica": 1
+      "orden_publico": 2
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -230,7 +229,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 89,
+    "sin_clasificar": 86,
     "medio": 1
   },
   "serie_mensual_por_tipo": {
@@ -243,7 +242,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 30
+      "2026-08": 27
     },
     "deslizamiento": {
       "2026-07": 3

@@ -885,11 +885,96 @@ def _posiciones_de_estados(tokens, estados):
     return sorted(set(posiciones))
 
 
+# Caso real (14-08-2026): un mapa de Primero Justicia, compartido/difundido
+# por varios medios ("PJ compartió un mapa de Venezuela con nueve estados
+# resaltados...", "difundió una serie de mapas detallando la incidencia de
+# los cortes eléctricos en los distintos estados... según el reclamo de
+# Primero Justicia, los estados Anzoátegui, Apure, Lara..."), enumera 9-12
+# estados a la vez bajo la misma condición genérica (un rango de horas de
+# racionamiento atribuido en bloque a toda la lista), sin ningún detalle
+# local específico para la mayoría de ellos -- ni una cita textual de un
+# residente, ni un municipio/parroquia nombrado. Ese tipo de nota-resumen
+# de un tercero (partido, ONG, organismo) generaba alertas nuevas en
+# Anzoátegui, Miranda y Nueva Esparta (y una mención redundante de Bolívar,
+# ya cubierto por una fuente dedicada -- Primicia) sin evidencia específica
+# de ninguno de esos estados en particular -- a diferencia de, por ejemplo,
+# Distrito Capital en el mismo artículo ("comunidades del municipio
+# Libertador de Caracas denuncian fallas eléctricas"), que sí nombra un
+# municipio real. El objetivo es preferir cobertura de prensa regional/
+# local (que sí describe el hecho en el lugar) sobre notas-resumen de
+# terceros que solo reparten una misma cifra/reclamo entre muchos estados.
+#
+# La señal se ancla por PROXIMIDAD a la mención puntual de cada estado (no
+# a "el artículo contiene la frase en algún lado"): un artículo puede tener
+# tanto una cita del mapa de un tercero COMO, en otro párrafo totalmente
+# distinto, cobertura local real y especifica de un hecho propio (caso
+# real: "Andrés Velásquez: Apagones se deben a la corrupción..." -- abre
+# con una protesta real y puntual "a las afueras de la sede de la
+# Corporación Eléctrica Nacional en Caracas", y solo mas adelante resume el
+# mapa de PJ). Si se descartara el articulo entero por contener la frase
+# del mapa en algun lado, se perderia esa cobertura real. Por eso se usa
+# la misma ventana de proximidad (35 palabras) que ya usa _ventana_cerca
+# para el tipo de emergencia -- si la mencion del estado esta a mas de 35
+# palabras de cualquier marcador de reclamo de tercero, no se considera
+# parte de esa lista generica.
+_MARCADORES_RECLAMO_TERCERO_MULTIESTADO = [
+    "compartió un mapa", "compartio un mapa",
+    "difundió una serie de mapas", "difundio una serie de mapas",
+    "segun el reclamo de", "según el reclamo de",
+    "entidades mas perjudicadas", "entidades más perjudicadas",
+]
+_MIN_ESTADOS_RESUMEN_MULTIESTADO = 5
+
+
+def _es_articulo_resumen_multiestado_de_terceros(texto_norm, estados):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_RECLAMO_TERCERO_MULTIESTADO):
+        return False
+    encontrados = 0
+    for alias in estados.values():
+        candidatos = set(alias)
+        if any(_contiene_palabra_clave(texto_norm, c) for c in candidatos):
+            encontrados += 1
+            if encontrados >= _MIN_ESTADOS_RESUMEN_MULTIESTADO:
+                return True
+    return False
+
+
+def _posiciones_de_marcadores(tokens, marcadores):
+    posiciones = []
+    for marcador in marcadores:
+        m_tokens = _normalizar(marcador).split()
+        n = len(m_tokens)
+        for i in range(len(tokens) - n + 1):
+            if tokens[i:i + n] == m_tokens:
+                posiciones.append(i)
+    return posiciones
+
+
+def _mencion_cerca_de_marcador(pos, posiciones_marcadores, radio=VENTANA_PROXIMIDAD_PALABRAS):
+    return any(abs(pos - mp) <= radio for mp in posiciones_marcadores)
+
+
+def _ventana_sin_evidencia_local_especifica(ventana):
+    """True si la ventana (ya recortada a la proximidad de esta mencion del
+    estado) no nombra ningun municipio/parroquia especifico -- la unica
+    señal de que el articulo describe algo mas que la mera pertenencia a
+    la lista generica del tercero (ver _es_articulo_resumen_multiestado_
+    de_terceros). Los signos de puntuacion (comillas de una cita textual)
+    no sirven aqui porque `ventana` se arma con tokens ya sin puntuacion
+    (ver _tokens/_ventana_cerca)."""
+    return not (_contiene_palabra_clave(ventana, "municipio") or _contiene_palabra_clave(ventana, "parroquia"))
+
+
 def _detectar_ubicacion_texto_plano(texto, estados):
     texto_norm = _normalizar(texto)
     palabras_tipo = [p for lista in load_keywords()["tipos"].values() for p in lista]
     tokens = _tokens(texto)
     posiciones_estados = _posiciones_de_estados(tokens, estados)
+    posiciones_marcadores = (
+        _posiciones_de_marcadores(tokens, _MARCADORES_RECLAMO_TERCERO_MULTIESTADO)
+        if _es_articulo_resumen_multiestado_de_terceros(texto_norm, estados)
+        else []
+    )
     resultado = []
 
     for nombre_estado, alias in estados.items():
@@ -936,8 +1021,17 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                 resultado.append((estado_real, ventana))
                 break
 
-            ventana = _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados)
+            ventana, pos = _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posiciones_estados)
             if ventana:
+                if (posiciones_marcadores
+                        and _mencion_cerca_de_marcador(pos, posiciones_marcadores)
+                        and _ventana_sin_evidencia_local_especifica(ventana)):
+                    # Esta mencion puntual (este alias en particular) solo
+                    # tiene evidencia generica de lista -- se prueba otro
+                    # alias del MISMO estado (p.ej. "Caracas" ademas de
+                    # "Distrito Capital") antes de descartarlo del todo, en
+                    # vez de cortar la busqueda en el primer alias probado.
+                    continue
                 resultado.append((nombre_estado, ventana))
                 break  # ya se confirmo este estado, seguir con el siguiente
 
@@ -1045,9 +1139,21 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
     "baruta"), casi siempre mencionado como "municipio Baruta": ahi la
     mencion subestatal NO es ambigua, es la evidencia misma que motivo el
     remapeo (ver _REMAPEO_MUNICIPIO_A_ESTADO)."""
+    ventana, _ = _ventana_cerca_con_posicion(
+        tokens, candidato_norm, palabras_tipo, posiciones_estados, permitir_subestatal,
+    )
+    return ventana
+
+
+def _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posiciones_estados=None,
+                                 permitir_subestatal=False):
+    """Como _ventana_cerca, pero tambien devuelve la posicion (indice de
+    token) de la mencion puntual que genero la ventana -- (ventana,
+    posicion), o (None, None) si no hay ninguna cerca. Se usa donde ademas
+    de la ventana hace falta saber DONDE en el texto esta esa mencion
+    especifica (ver _mencion_cerca_de_marcador)."""
     candidato_tokens = candidato_norm.split()
     n = len(candidato_tokens)
-
     posiciones = [
         i for i, t in enumerate(tokens)
         if tokens[i:i + n] == candidato_tokens
@@ -1073,8 +1179,8 @@ def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=Non
         ventana = " ".join(tokens[inicio:fin])
         for palabra in palabras_tipo:
             if _contiene_palabra_clave(ventana, palabra):
-                return ventana
-    return None
+                return ventana, pos
+    return None, None
 
 
 _LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
