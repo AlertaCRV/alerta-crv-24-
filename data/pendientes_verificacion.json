@@ -347,10 +347,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-14T23:59:40.338922+00:00"
   },
-  "incendio::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:56:23.688820+00:00"
-  },
   "sequia::Trujillo::2026-08-15": {
     "intentos": 1,
     "ultima_vez": "2026-08-15T00:01:41.796179+00:00"
@@ -387,44 +383,32 @@
     "intentos": 1,
     "ultima_vez": "2026-08-15T14:04:33.703778+00:00"
   },
-  "sismo::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:55:34.891746+00:00"
-  },
-  "sismo::La Guaira::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:55:59.442795+00:00"
-  },
   "explosion::Carabobo::2026-08-15": {
     "intentos": 2,
     "ultima_vez": "2026-08-15T16:59:14.942648+00:00"
   },
-  "ataque_armado::Tachira::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:56:47.908729+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:57:12.627005+00:00"
-  },
-  "orden_publico::Lara::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:57:37.494310+00:00"
-  },
-  "orden_publico::Miranda::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:58:01.790870+00:00"
-  },
-  "orden_publico::Sucre::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T16:58:26.357482+00:00"
-  },
   "inundacion::Lara::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T16:58:50.656245+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T17:51:29.726362+00:00"
   },
   "sismo::Aragua::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T17:51:53.984063+00:00"
+  },
+  "sismo::Merida::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T16:59:39.961575+00:00"
+    "ultima_vez": "2026-08-15T17:52:18.218547+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T17:52:42.454425+00:00"
+  },
+  "deslizamiento::Falcon::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T17:53:06.682847+00:00"
+  },
+  "deslizamiento::Lara::2026-08-15": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-15T17:53:30.919161+00:00"
   }
 }
