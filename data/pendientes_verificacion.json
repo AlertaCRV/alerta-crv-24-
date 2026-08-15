@@ -372,23 +372,11 @@
     "ultima_vez": "2026-08-15T06:01:42.683631+00:00"
   },
   "sismo::Monagas::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T09:01:41.828726+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-15": {
     "intentos": 2,
-    "ultima_vez": "2026-08-15T10:53:11.270397+00:00"
-  },
-  "explosion::Carabobo::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T10:54:24.026835+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T10:54:48.272624+00:00"
+    "ultima_vez": "2026-08-15T11:44:50.861246+00:00"
   },
   "orden_publico::Aragua::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T10:53:59.775019+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T11:45:15.107305+00:00"
   }
 }
