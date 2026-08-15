@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-15T13:24:00.142878+00:00",
+  "actualizado": "2026-08-15T15:02:10.548608+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T12:39:50+00:00"
+    "hasta": "2026-08-15T13:40:03+00:00"
   },
-  "total_eventos": 109,
+  "total_eventos": 111,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
@@ -16,15 +16,16 @@
     "crisis_migratoria": 4,
     "incendio": 12,
     "vialidad": 3,
-    "sismo": 4,
+    "sismo": 5,
     "escasez_combustible": 1,
     "sequia": 3,
-    "explosion": 1
+    "explosion": 1,
+    "ataque_armado": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 18,
+      "total": 19,
       "confirmados": 4
     },
     {
@@ -93,6 +94,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 3,
       "confirmados": 1
@@ -100,11 +106,6 @@
     {
       "estado": "Falcon",
       "total": 3,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
-      "total": 2,
       "confirmados": 0
     },
     {
@@ -152,7 +153,8 @@
       "orden_publico": 6,
       "incendio": 3,
       "vialidad": 1,
-      "infraestructura_electrica": 6
+      "infraestructura_electrica": 6,
+      "sismo": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -189,7 +191,8 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "ataque_armado": 1
     },
     "Monagas": {
       "infraestructura_electrica": 3,
@@ -232,7 +235,7 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 91,
+    "sin_clasificar": 93,
     "medio": 1,
     "bajo": 1
   },
@@ -273,7 +276,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "escasez_combustible": {
       "2026-08": 1
@@ -282,6 +285,9 @@
       "2026-08": 3
     },
     "explosion": {
+      "2026-08": 1
+    },
+    "ataque_armado": {
       "2026-08": 1
     }
   }
