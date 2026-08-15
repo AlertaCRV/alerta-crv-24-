@@ -367,36 +367,24 @@
     "intentos": 2,
     "ultima_vez": "2026-08-15T03:11:43.130443+00:00"
   },
-  "sismo::Monagas::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T04:56:38.678210+00:00"
-  },
-  "salud_publica::Barinas::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T05:59:41.279303+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T06:00:05.561636+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-15": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-15T06:00:29.832977+00:00"
-  },
   "infraestructura_electrica::Portuguesa::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T06:01:18.417323+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T07:47:35.348573+00:00"
   },
   "infraestructura_electrica::Bolivar::2026-08-15": {
     "intentos": 1,
     "ultima_vez": "2026-08-15T06:01:42.683631+00:00"
   },
   "explosion::Carabobo::2026-08-15": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-15T06:02:06.965035+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T07:47:59.578849+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-15": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-15T07:48:23.817030+00:00"
+  },
+  "orden_publico::Aragua::2026-08-15": {
     "intentos": 1,
-    "ultima_vez": "2026-08-15T06:02:31.217502+00:00"
+    "ultima_vez": "2026-08-15T07:47:11.109809+00:00"
   }
 }
