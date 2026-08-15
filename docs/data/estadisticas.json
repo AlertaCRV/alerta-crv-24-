@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-15T06:02:31.804300+00:00",
+  "actualizado": "2026-08-15T07:48:24.879529+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T00:57:04+00:00"
+    "hasta": "2026-08-15T01:18:18+00:00"
   },
-  "total_eventos": 103,
+  "total_eventos": 105,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
-    "infraestructura_electrica": 32,
+    "infraestructura_electrica": 33,
     "deslizamiento": 3,
     "colapso_estructural": 1,
     "orden_publico": 20,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 12,
     "vialidad": 3,
-    "sismo": 3,
+    "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 3
   },
@@ -67,6 +67,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Monagas",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
       "total": 4,
       "confirmados": 0
@@ -84,11 +89,6 @@
     {
       "estado": "Aragua",
       "total": 4,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
-      "total": 3,
       "confirmados": 0
     },
     {
@@ -190,8 +190,9 @@
       "infraestructura_electrica": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 2,
-      "salud_publica": 1
+      "infraestructura_electrica": 3,
+      "salud_publica": 1,
+      "sismo": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -229,8 +230,9 @@
   "por_severidad": {
     "alto": 8,
     "critico": 8,
-    "sin_clasificar": 86,
-    "medio": 1
+    "sin_clasificar": 87,
+    "medio": 1,
+    "bajo": 1
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -242,7 +244,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 27
+      "2026-08": 28
     },
     "deslizamiento": {
       "2026-07": 3
@@ -269,7 +271,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "escasez_combustible": {
       "2026-08": 1
