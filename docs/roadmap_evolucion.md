@@ -6137,3 +6137,68 @@ El otro hallazgo pendiente de la auditoría del mismo día (`orden_publico::
 Distrito Capital::2026-08-14`, protesta ya finalizada mencionada de paso
 en un artículo sobre otro tema) sigue sin corregirse -- el usuario pidió
 afinar primero este filtro; ese caso queda para una iteración posterior.
+
+## A pedido del usuario (14-08-2026): la presentación de un libro de memoria sobre presos políticos se publicaba como orden público en curso
+
+Segundo hallazgo dejado pendiente en la auditoría del mismo día (ver dos
+entradas anteriores). El usuario confirmó su lectura: `orden_publico::
+Distrito Capital::2026-08-14` corresponde a la publicación de un libro,
+no a una alerta real, y pidió corregirlo.
+
+`orden_publico::Distrito Capital::2026-08-14` (Turimiquire, "Madres y
+activistas presentaron un libro que documenta la represión poselectoral
+del 28 de julio de 2024 en Venezuela") describe la presentación de un
+libro -- un acto de memoria/documentación sobre una represión política ya
+ocurrida en 2024 -- que menciona de pasada, como contexto, una protesta de
+familiares de presos políticos ocurrida un día ANTES de la presentación
+("la presentación del libro ocurrió un día después de que familiares...
+protestaran frente a la sede del Ministerio Público"). El artículo nunca
+describe ningún disturbio en curso; el tema es el libro, no un hecho de
+orden público de hoy.
+
+**Causa raíz**: la palabra "manifestantes" (evidencia de tipo=orden_
+publico) se refiere, en este artículo, a los MISMOS manifestantes de la
+protesta de días atrás ("Los manifestantes denunciaron especialmente la
+situación de personas recluidas en el Fuerte Guaicaipuro"), no a un
+hecho actual. El filtro de evidencia fuerte existente
+(`_EVIDENCIA_FUERTE_POR_TIPO["orden_publico"]`, que incluye "detenidos")
+no servía de escape aquí porque, precisamente, el artículo SÍ menciona
+"detenidos" repetidamente -- pero en el sentido de "presos políticos"
+(personas ya privadas de libertad, un estado crónico/histórico), no
+arrestos frescos durante un disturbio, que es lo que esa palabra
+normalmente evidencia.
+
+**Corrección**: nueva función
+`_es_presentacion_libro_memoria_sin_disturbio_actual()` (`scripts/
+classify.py`), evaluada sobre el ARTÍCULO COMPLETO (mismo mecanismo que
+`_es_manifestacion_pacifica_sin_evidencia_fuerte`): si el texto contiene
+un marcador de presentación de libro ("presentaron un libro", "presentó
+un libro", "presentación del libro") y no hay evidencia fuerte de un
+disturbio real, se descarta el tipo -- pero con su PROPIA lista de
+evidencia fuerte (`_EVIDENCIA_FUERTE_SIN_PRESOS_POLITICOS`), sin
+"detenidos", ya que esa es precisamente la palabra ambigua a descartar en
+este contexto (igual que "apagón"/"apagones" se excluyó de la lista
+usada para la convocatoria de protesta futura, 12-08-2026). Se verificó
+contra las 103 fuentes de `data/historico_fuentes_texto.jsonl` que la
+frase de presentación de libro es exclusiva de este artículo (2
+instantáneas del mismo hecho real), y con un caso de control (un
+disturbio real -- heridos, saqueo -- ocurriendo durante/cerca de la
+presentación de un libro) que ese tipo de hecho seguiría publicándose sin
+problema.
+
+**Corrección retroactiva**: se eliminó por completo `orden_publico::
+Distrito Capital::2026-08-14` de `docs/data/noticias.json`, `data/
+historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y `data/
+publicados.json`.
+
+### Pruebas
+
+2 casos nuevos en `tests/casos_clasificacion.jsonl` (el caso real del
+libro + un control de disturbio real durante una presentación de libro).
+`python3 -m pytest tests/` → 308 passed, 5 xfailed (conocidos), 1 xpassed
+(conocido). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+`python3 scripts/detectar_inconsistencias.py` → sin novedades.
+
+Con esto quedan resueltos los 2 hallazgos pendientes de la auditoría del
+14-08-2026.

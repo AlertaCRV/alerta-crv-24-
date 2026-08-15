@@ -228,32 +228,6 @@
     "texto": "📌 Falla eléctrica en Municipio Cajigal, Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Cajigal, Sucre\n🕒 Hecho reportado: 14/08/2026, 9:20 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 5:10 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/14/los-habitantes-de-yaguaraparo-en-el-estado-sucre-realizaron-protestas-y-cacerolazos-por-los-apagones-electricos/"
   },
   {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/14/madres-y-activistas-presentaron-un-libro-que-documenta-la-represion-poselectoral-del-28-de-julio-de-2024-en-venezuela/",
-        "fecha": "2026-08-14T13:20:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-14T13:20:06+00:00",
-    "fecha_evento_temprana": "2026-08-14T13:20:06+00:00",
-    "fecha_deteccion": "2026-08-14T21:10:44.477320+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-08-14",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 14/08/2026, 9:20 a.m.\n🔎 Detectado por el sistema: 14/08/2026, 5:10 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/14/madres-y-activistas-presentaron-un-libro-que-documenta-la-represion-poselectoral-del-28-de-julio-de-2024-en-venezuela/"
-  },
-  {
     "tipo": "incendio",
     "ubicacion": "Nueva Esparta",
     "municipio": "Mariño",

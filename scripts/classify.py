@@ -623,6 +623,42 @@ def _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# Caso real (14-08-2026, PASADO_POR_FALLA_TECNICA): "Madres y activistas
+# presentaron un libro que documenta la represión poselectoral del 28 de
+# julio de 2024 en Venezuela" -- una nota sobre la PRESENTACION de un
+# libro que preserva la memoria de una represion politica ya ocurrida
+# (2024) mencionaba de pasada, como contexto, una protesta de familiares
+# de presos politicos ocurrida un dia ANTES de la presentacion del libro
+# ("la presentacion del libro ocurrio un dia despues de que familiares...
+# protestaran"), disparando tipo=orden_publico en Distrito Capital via la
+# palabra "manifestantes" -- usada para referirse a esos MISMOS
+# manifestantes de dias atras, no a un disturbio en curso. El tema del
+# articulo es la presentacion de un libro/acto de memoria, no un hecho de
+# orden publico actual. Igual que la manifestacion pacifica, se evalua
+# sobre el ARTICULO COMPLETO (la mencion del libro puede quedar lejos, en
+# palabras, de "manifestantes").
+_MARCADORES_PRESENTACION_LIBRO_MEMORIA = [
+    "presentaron un libro", "presento un libro", "presentó un libro",
+    "presentacion del libro", "presentación del libro",
+]
+# "detenidos" NO se incluye aqui, a diferencia de _EVIDENCIA_FUERTE_POR_TIPO
+# ["orden_publico"] -- en el contexto de un libro/acto de memoria sobre
+# presos politicos, "detenidos" describe personas YA privadas de libertad
+# (un estado historico/cronico: "jovenes detenidos por razones politicas",
+# "detenidos por motivos politicos"), no arrestos frescos durante un
+# disturbio en curso, que es lo que esa palabra normalmente evidencia.
+_EVIDENCIA_FUERTE_SIN_PRESOS_POLITICOS = [
+    "heridos", "saqueo", "saqueos", "disturbios",
+    "tiroteo", "tiroteos", "enfrentamiento", "enfrentamientos",
+]
+
+
+def _es_presentacion_libro_memoria_sin_disturbio_actual(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_PRESENTACION_LIBRO_MEMORIA):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_SIN_PRESOS_POLITICOS)
+
+
 # Caso real (12-08-2026, PASADO_POR_FALLA_TECNICA): "Andres Velasquez se
 # suma llamado a manifestar este viernes por apagones... El exgobernador
 # del estado Bolivar... ha expresado su respaldo a la 'Gran Protesta
@@ -1514,6 +1550,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break
                 if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
+                    break
+                if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
