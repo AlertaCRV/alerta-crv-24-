@@ -257,5 +257,12 @@
     "fecha_deteccion": "2026-08-16T21:02:42.179088+00:00",
     "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
     "municipio": null
+  },
+  "sismo::Sucre::2026-08-16::mag7.4": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T21:45:43.145017+00:00",
+    "fecha_evento_temprana": "2026-08-16T19:40:48+00:00",
+    "municipio": null
   }
 }

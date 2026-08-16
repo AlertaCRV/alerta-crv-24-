@@ -1,5 +1,33 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/sucrenses-buscan-informacion-de-familiares-desaparecidos-tras-terremoto-en-colombia/",
+        "fecha": "2026-08-16T19:40:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T19:40:48+00:00",
+    "fecha_evento_temprana": "2026-08-16T19:40:48+00:00",
+    "fecha_deteccion": "2026-08-16T21:45:43.145017+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.4,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Sucre::2026-08-16::mag7.4",
+    "titulo": "Sismo en Sucre",
+    "texto": "📌 Sismo en Sucre\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 16/08/2026, 3:40 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 5:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/sucrenses-buscan-informacion-de-familiares-desaparecidos-tras-terremoto-en-colombia/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Tachira",
     "municipio": "Francisco De Miranda",
