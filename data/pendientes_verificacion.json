@@ -431,32 +431,36 @@
     "intentos": 1,
     "ultima_vez": "2026-08-15T23:01:43.007495+00:00"
   },
-  "incendio::Trujillo::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T05:07:22.808991+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T05:07:47.821388+00:00"
-  },
   "deslizamiento::Miranda::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T05:05:17.274836+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T06:04:22.009823+00:00"
   },
   "deslizamiento::Falcon::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T05:05:41.988698+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T06:04:46.158648+00:00"
   },
   "deslizamiento::Lara::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T05:06:06.511510+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T06:05:10.308584+00:00"
   },
   "sismo::Barinas::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T05:06:30.781035+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T06:05:34.459159+00:00"
   },
   "orden_publico::Portuguesa::2026-08-16": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T06:06:22.757893+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T05:06:58.518418+00:00"
+    "ultima_vez": "2026-08-16T06:03:33.706737+00:00"
+  },
+  "ataque_armado::Aragua::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T06:03:57.860895+00:00"
+  },
+  "explosion::Miranda::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T06:05:58.603639+00:00"
   }
 }
