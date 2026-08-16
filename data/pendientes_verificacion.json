@@ -443,32 +443,48 @@
     "intentos": 2,
     "ultima_vez": "2026-08-16T22:04:07.043184+00:00"
   },
-  "deslizamiento::Distrito Capital::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T22:04:58.771814+00:00"
-  },
   "orden_publico::Barinas::2026-08-16": {
     "intentos": 2,
     "ultima_vez": "2026-08-16T22:06:11.503276+00:00"
   },
-  "deslizamiento::Lara::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T22:09:03.617840+00:00"
-  },
-  "infraestructura_electrica::Yaracuy::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T22:09:52.246282+00:00"
-  },
-  "inundacion::Miranda::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T22:03:42.807630+00:00"
-  },
   "infraestructura_electrica::Tachira::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T22:04:31.232782+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T22:57:57.378232+00:00"
   },
   "sismo::Sucre::2026-08-16": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T22:58:45.685340+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T22:05:22.987740+00:00"
+    "ultima_vez": "2026-08-16T22:59:09.827025+00:00"
+  },
+  "inundacion::Aragua::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T22:59:33.987004+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T22:59:58.127802+00:00"
+  },
+  "orden_publico::Sucre::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T23:00:22.279310+00:00"
+  },
+  "inundacion::Carabobo::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T23:00:46.421888+00:00"
+  },
+  "inundacion::Lara::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T23:01:10.569273+00:00"
+  },
+  "incendio::Lara::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T23:01:34.772373+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T23:02:50.641374+00:00"
   }
 }
