@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/16/en-cumana-no-hay-agua-y-ahora-tampoco-hay-luz/",
+        "fecha": "2026-08-16T18:00:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:00:03+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:00:03+00:00",
+    "fecha_deteccion": "2026-08-16T20:07:45.395127+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Sucre::2026-08-16",
+    "titulo": "Orden público en Sucre",
+    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 16/08/2026, 2:00 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/16/en-cumana-no-hay-agua-y-ahora-tampoco-hay-luz/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Lara",
+    "municipio": "Torres",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/combaten-incendio-forestal-en-sicarigua/",
+        "fecha": "2026-08-16T17:49:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T17:49:27+00:00",
+    "fecha_evento_temprana": "2026-08-16T17:49:27+00:00",
+    "fecha_deteccion": "2026-08-16T20:08:09.681459+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Lara::2026-08-16",
+    "titulo": "Incendio en Municipio Torres, Lara",
+    "texto": "📌 Incendio en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 16/08/2026, 1:49 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/combaten-incendio-forestal-en-sicarigua/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/",
+        "fecha": "2026-08-16T18:12:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:12:18+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
+    "fecha_deteccion": "2026-08-16T20:09:26.651140+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-08-16",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/08/2026, 2:12 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:09 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Trujillo",
     "municipio": "San Rafael De Carvajal",
