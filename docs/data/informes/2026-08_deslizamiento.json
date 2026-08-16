@@ -3,19 +3,31 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-08-11T18:07:47.254465+00:00",
-  "actualizado_hasta": "2026-08-11T18:07:29.180288+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-16T13:23:39.760038+00:00",
+  "actualizado_hasta": "2026-08-16T07:51:03.187216+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 1
+    "actual": 5
   },
-  "narrativa": "En el período de 2026-08, se registró un evento de deslizamiento/derrumbe en La Guaira, donde se buscaron personas bajo los escombros de edificios colapsados (Runrun.es). Este evento es notable ya que ocurrió en un contexto en el que la presidenta encargada, Delcy Rodríguez, ofreció ayuda humanitaria y un equipo de rescatistas a Colombia tras un terremoto en ese país (Runrun.es). En comparación con el período anterior (2026-07), se registraron 3 eventos de esta categoría, mientras que en este período solo se registró 1 (Comparación con el período anterior). Es importante destacar que el evento en La Guaira tuvo un impacto significativo, ya que muchas personas buscaron a sus familiares bajo los escombros sin apoyo estatal (Runrun.es).",
+  "narrativa": "En el período de agosto de 2026, se registraron 5 eventos relacionados con deslizamientos y derrumbes en Venezuela, lo que representa un aumento en comparación con el período anterior, que tuvo 3 eventos registrados (La Patilla). Uno de los eventos que debemos mencionar explícitamente es el deslizamiento/derrumbe en Miranda, que tuvo una severidad alta (La Patilla). Además, se registraron más de 20 deslizamientos de tierra en el municipio Urdaneta del estado Lara, lo que ha obstruido la conexión vial entre Lara y Falcón debido a las intensas lluvias (El Luchador, Noticia al Dia, Turimiquire). Estos deslizamientos han causado graves afectaciones en la infraestructura vial y han dejado daños materiales en las vías de acceso (El Luchador, Noticia al Dia, Turimiquire). También se reportó una explosión en una tubería de gas en el conjunto residencial Las Bonitas II, en Valle Arriba, Guatire, estado Miranda, que dejó varias personas heridas y daños materiales (La Patilla).",
   "fuentes": [
     {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/617317/rodriguez-ofrece-rescatistas-a-colombia-mientras-en-la-guaira-buscan-personas-bajo-los-escombros/"
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/15/explosion-sacudio-conjunto-residencial-en-guatire-y-dejo-multiples-heridos-imagenes/"
+    },
+    {
+      "nombre": "El Luchador (Bolivar)",
+      "link": "https://elluchador.info/?p=318079"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/15/los-deslizamientos-de-tierra-en-lara-obstruyen-su-conexion-con-el-estado-falcon/"
     }
   ]
 }

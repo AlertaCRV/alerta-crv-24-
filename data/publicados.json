@@ -180,5 +180,12 @@
     "fecha_deteccion": "2026-08-16T07:52:20.038031+00:00",
     "fecha_evento_temprana": "2026-08-15T23:46:25+00:00",
     "municipio": "Santa Rosalía"
+  },
+  "inundacion::Distrito Capital::2026-08-16": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T13:23:35.289507+00:00",
+    "fecha_evento_temprana": "2026-08-16T11:52:12+00:00",
+    "municipio": null
   }
 }

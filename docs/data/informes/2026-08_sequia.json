@@ -3,16 +3,24 @@
   "tipo": "sequia",
   "tipo_label": "Sequía",
   "cerrado": false,
-  "generado": "2026-08-14T09:39:57.717827+00:00",
-  "actualizado_hasta": "2026-08-05T18:11:04.604670+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-16T13:25:45.783061+00:00",
+  "actualizado_hasta": "2026-08-14T21:09:07.817461+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el período de 2026-08, se registró un aumento significativo en los efectos de la sequía en la región de la Alta Guajira, compartida entre Colombia y Venezuela, específicamente en el estado Zulia (La Patilla). Esta situación ha llevado a la sequía de pozos y la muerte de animales en la zona (La Patilla). En comparación con el período anterior, 2026-07, en el que no se registraron eventos de este tipo, en 2026-08 se registró al menos 1 evento relacionado con la sequía. La sequía en la Alta Guajira es un ejemplo de cómo los efectos de El Niño pueden impactar severamente las comunidades locales (La Patilla).",
+  "narrativa": "En el período de agosto de 2026, se registraron 3 eventos relacionados con la sequía en Venezuela, lo que contrasta con el período anterior, julio de 2026, en el que no se reportaron eventos de este tipo. Uno de los eventos que destacó fue la propuesta de Fedecámaras Trujillo para formar alianzas estratégicas con el fin de mitigar el impacto de El Niño en la región, ya que la sequía y el estrés hídrico amenazan el rendimiento del campo trujillano (Diario El Tiempo). Además, productores de maíz en el estado Guárico aseguraron que más de 80.000 hectáreas de maíz están en riesgo debido a la sequía provocada por el fenómeno de El Niño, afectando el rendimiento del maíz en áreas como Tucupido, El Socorro, Santa María y Las Mercedes (El Luchador). La sequía también ha comenzado a afectar la Alta Guajira, una región compartida entre Colombia y Venezuela en el estado Zulia, donde se han reportado pozos secos y animales muertos (La Patilla).",
   "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/fedecamaras-trujillo-propone-alianzas-para-mitigar-impacto-de-el-nino/"
+    },
+    {
+      "nombre": "El Luchador (Bolivar)",
+      "link": "https://elluchador.info/?p=317967"
+    },
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
