@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Aragua::2026-08-13": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-13T15:42:22.679192+00:00",
-    "fecha_evento_temprana": "2026-08-13T13:59:53+00:00",
-    "municipio": null
-  },
-  "sismo::Lara::2026-08-13": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-13T15:42:43.311641+00:00",
-    "fecha_evento_temprana": "2026-08-13T14:39:28+00:00",
-    "municipio": null
-  },
   "orden_publico::Sucre::2026-08-14": {
     "severidad": "sin_clasificar",
     "confirmado": false,
