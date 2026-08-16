@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-16T07:53:10.158934+00:00",
+  "actualizado": "2026-08-16T13:23:35.792132+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-16T04:24:49+00:00"
+    "hasta": "2026-08-16T13:00:03+00:00"
   },
-  "total_eventos": 118,
+  "total_eventos": 119,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 16,
+    "inundacion": 17,
     "infraestructura_electrica": 35,
     "deslizamiento": 8,
     "colapso_estructural": 1,
@@ -24,7 +24,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 19,
+      "total": 20,
       "confirmados": 4
     },
     {
@@ -148,7 +148,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 1,
-      "inundacion": 1,
+      "inundacion": 2,
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
@@ -235,7 +235,7 @@
   },
   "por_severidad": {
     "alto": 10,
-    "critico": 8,
+    "critico": 9,
     "sin_clasificar": 98,
     "medio": 1,
     "bajo": 1
@@ -246,7 +246,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 9
+      "2026-08": 10
     },
     "infraestructura_electrica": {
       "2026-07": 5,
