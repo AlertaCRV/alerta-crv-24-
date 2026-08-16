@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-16T21:03:07.548817+00:00",
+  "actualizado": "2026-08-16T21:50:33.682520+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-16T19:30:03+00:00"
+    "hasta": "2026-08-16T19:40:48+00:00"
   },
-  "total_eventos": 134,
+  "total_eventos": 135,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 23,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 15,
     "vialidad": 3,
-    "sismo": 4,
+    "sismo": 5,
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1
@@ -63,6 +63,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Sucre",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 6,
       "confirmados": 2
@@ -76,11 +81,6 @@
       "estado": "Carabobo",
       "total": 5,
       "confirmados": 1
-    },
-    {
-      "estado": "Sucre",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Apure",
@@ -172,7 +172,8 @@
     "Sucre": {
       "inundacion": 1,
       "orden_publico": 3,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "sismo": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 3,
@@ -240,7 +241,7 @@
   },
   "por_severidad": {
     "alto": 11,
-    "critico": 11,
+    "critico": 12,
     "sin_clasificar": 110,
     "medio": 1,
     "bajo": 1
@@ -283,7 +284,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "escasez_combustible": {
       "2026-08": 1
