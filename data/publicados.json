@@ -168,9 +168,9 @@
     "municipio": "Santa Rosalía"
   },
   "inundacion::Distrito Capital::2026-08-16": {
-    "severidad": "sin_clasificar",
+    "severidad": "critico",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-16T14:59:08.248177+00:00",
+    "fecha_deteccion": "2026-08-16T17:46:08.020229+00:00",
     "fecha_evento_temprana": "2026-08-16T13:00:03+00:00",
     "municipio": "Libertador"
   },
@@ -179,6 +179,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-16T14:59:04.921454+00:00",
     "fecha_evento_temprana": "2026-08-16T14:16:36+00:00",
+    "municipio": null
+  },
+  "inundacion::Portuguesa::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T17:46:32.190633+00:00",
+    "fecha_evento_temprana": "2026-08-16T15:35:00+00:00",
+    "municipio": "Araure"
+  },
+  "inundacion::Zulia::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T17:46:56.347572+00:00",
+    "fecha_evento_temprana": "2026-08-16T15:35:00+00:00",
     "municipio": null
   }
 }

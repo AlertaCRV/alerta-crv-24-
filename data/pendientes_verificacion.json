@@ -443,36 +443,20 @@
     "intentos": 1,
     "ultima_vez": "2026-08-16T11:45:29.154630+00:00"
   },
-  "inundacion::Aragua::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T16:58:49.042998+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T16:59:13.278551+00:00"
-  },
-  "inundacion::Portuguesa::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T16:59:37.789064+00:00"
-  },
-  "inundacion::Zulia::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T17:00:02.057686+00:00"
-  },
-  "infraestructura_electrica::Tachira::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T16:57:32.975937+00:00"
-  },
   "orden_publico::Barinas::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T16:58:00.286398+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T17:44:55.521885+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T16:58:24.486013+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T17:45:19.685827+00:00"
   },
   "deslizamiento::Lara::2026-08-16": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T17:47:20.516255+00:00"
+  },
+  "inundacion::Miranda::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T17:00:26.305659+00:00"
+    "ultima_vez": "2026-08-16T17:47:44.676186+00:00"
   }
 }
