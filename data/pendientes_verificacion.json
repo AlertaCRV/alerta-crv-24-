@@ -435,24 +435,8 @@
     "intentos": 1,
     "ultima_vez": "2026-08-16T07:52:44.266463+00:00"
   },
-  "deslizamiento::Falcon::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T09:59:00.356983+00:00"
-  },
-  "deslizamiento::Lara::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T09:59:24.592385+00:00"
-  },
-  "sismo::Barinas::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T09:59:48.787583+00:00"
-  },
-  "explosion::Miranda::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T10:00:12.949172+00:00"
-  },
-  "orden_publico::Portuguesa::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T10:00:37.235499+00:00"
+  "infraestructura_electrica::Monagas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T10:56:07.365876+00:00"
   }
 }
