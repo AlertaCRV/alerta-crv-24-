@@ -444,31 +444,55 @@
     "ultima_vez": "2026-08-16T11:45:29.154630+00:00"
   },
   "inundacion::Distrito Capital::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:03:50.066186+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:49:08.126374+00:00"
   },
   "inundacion::Aragua::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:04:38.392648+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:49:56.515335+00:00"
   },
   "inundacion::Portuguesa::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:05:02.534917+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:50:20.760544+00:00"
   },
   "inundacion::Zulia::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:05:26.676712+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:50:44.961248+00:00"
   },
   "orden_publico::Sucre::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:05:50.828490+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:51:09.183302+00:00"
   },
   "incendio::Lara::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T19:06:14.956411+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:51:33.385518+00:00"
   },
   "infraestructura_electrica::Barinas::2026-08-16": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T19:52:49.246492+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T19:07:06.544892+00:00"
+    "ultima_vez": "2026-08-16T19:47:55.539157+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:48:19.746276+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:48:43.933671+00:00"
+  },
+  "orden_publico::Barinas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:49:32.313189+00:00"
+  },
+  "deslizamiento::Lara::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:51:57.616600+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:52:25.021407+00:00"
   }
 }

@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Trujillo",
+    "municipio": "San Rafael De Carvajal",
+    "parroquia": "Carvajal",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/",
+        "fecha": "2026-08-16T19:30:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T19:30:03+00:00",
+    "fecha_evento_temprana": "2026-08-16T19:30:03+00:00",
+    "fecha_deteccion": "2026-08-16T19:52:00.824801+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Trujillo::2026-08-16",
+    "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
+    "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 16/08/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:52 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Miranda",
     "municipio": "Baruta",
