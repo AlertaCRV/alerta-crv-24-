@@ -443,20 +443,32 @@
     "intentos": 1,
     "ultima_vez": "2026-08-16T11:45:29.154630+00:00"
   },
-  "orden_publico::Barinas::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T17:44:55.521885+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T17:45:19.685827+00:00"
-  },
-  "deslizamiento::Lara::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T17:47:20.516255+00:00"
-  },
-  "inundacion::Miranda::2026-08-16": {
+  "inundacion::Distrito Capital::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T17:47:44.676186+00:00"
+    "ultima_vez": "2026-08-16T19:03:50.066186+00:00"
+  },
+  "inundacion::Aragua::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:04:38.392648+00:00"
+  },
+  "inundacion::Portuguesa::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:05:02.534917+00:00"
+  },
+  "inundacion::Zulia::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:05:26.676712+00:00"
+  },
+  "orden_publico::Sucre::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:05:50.828490+00:00"
+  },
+  "incendio::Lara::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:06:14.956411+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T19:07:06.544892+00:00"
   }
 }

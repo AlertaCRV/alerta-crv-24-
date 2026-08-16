@@ -1,6 +1,120 @@
 [
   {
     "tipo": "inundacion",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": "Petare",
+    "severidad": "sin_clasificar",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/",
+        "fecha": "2026-08-16T18:45:11+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/",
+        "fecha": "2026-08-16T17:19:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:45:11+00:00",
+    "fecha_evento_temprana": "2026-08-16T17:19:33+00:00",
+    "fecha_deteccion": "2026-08-16T19:02:55.246124+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Miranda::2026-08-16",
+    "titulo": "Inundación en Parroquia Petare, Municipio Baruta, Miranda",
+    "texto": "📌 Inundación en Parroquia Petare, Municipio Baruta, Miranda\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Petare, Municipio Baruta, Miranda\n🕒 Hecho reportado: 16/08/2026, 2:45 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:02 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "La Vega",
+    "severidad": "critico",
+    "score": 1.2,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/",
+        "fecha": "2026-08-16T18:48:29+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/",
+        "fecha": "2026-08-16T15:53:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:48:29+00:00",
+    "fecha_evento_temprana": "2026-08-16T15:53:14+00:00",
+    "fecha_deteccion": "2026-08-16T19:03:25.899050+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia La Vega, Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia La Vega, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia La Vega, Distrito Capital\n🕒 Hecho reportado: 16/08/2026, 2:48 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:03 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/\n  • La Prensa de Monagas: https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/08/manifiestan-ante-colapsodel-sistema-electrico/",
+        "fecha": "2026-08-16T15:39:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T15:39:42+00:00",
+    "fecha_evento_temprana": "2026-08-16T15:39:42+00:00",
+    "fecha_deteccion": "2026-08-16T19:04:14.262180+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-16",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/08/2026, 11:39 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/manifiestan-ante-colapsodel-sistema-electrico/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/mundo/lluvias-japon-muertos-orden-de-evacuacion/",
+        "fecha": "2026-08-16T15:54:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T15:54:35+00:00",
+    "fecha_evento_temprana": "2026-08-16T15:54:35+00:00",
+    "fecha_deteccion": "2026-08-16T19:06:39.149813+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Lara::2026-08-15",
+    "titulo": "Deslizamiento/Derrumbe en Lara",
+    "texto": "📌 Deslizamiento/Derrumbe en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/08/2026, 11:54 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/mundo/lluvias-japon-muertos-orden-de-evacuacion/"
+  },
+  {
+    "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
     "parroquia": "Candelaria",
@@ -327,32 +441,6 @@
     "clave_dedup": "incendio::Distrito Capital::2026-08-15",
     "titulo": "Incendio en Distrito Capital",
     "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 15/08/2026, 11:43 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:49 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/registran-incendio-dentro-de-un-local-comercial-tipo-panaderia-en-caracas/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Lara",
-    "municipio": "Urdaneta",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/",
-        "fecha": "2026-08-15T14:24:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T14:24:38+00:00",
-    "fecha_evento_temprana": "2026-08-15T14:24:38+00:00",
-    "fecha_deteccion": "2026-08-15T17:00:57.867389+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Lara::2026-08-15",
-    "titulo": "Deslizamiento/Derrumbe en Municipio Urdaneta, Lara",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Urdaneta, Lara\n🕒 Hecho reportado: 15/08/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 15/08/2026, 1:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sin-categoria/mas-de-20-deslizamientos-de-tierra-mantienen-bloqueada-la-conexion-vial-entre-lara-y-falcon/"
   },
   {
     "tipo": "orden_publico",

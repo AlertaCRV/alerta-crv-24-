@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-16T17:47:46.478862+00:00",
+  "actualizado": "2026-08-16T19:07:09.012626+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-16T16:00:50+00:00"
+    "hasta": "2026-08-16T18:48:29+00:00"
   },
-  "total_eventos": 124,
+  "total_eventos": 128,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 22,
+    "inundacion": 23,
     "infraestructura_electrica": 35,
-    "deslizamiento": 8,
+    "deslizamiento": 10,
     "colapso_estructural": 1,
-    "orden_publico": 23,
+    "orden_publico": 24,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 14,
@@ -24,8 +24,13 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 22,
+      "total": 23,
       "confirmados": 4
+    },
+    {
+      "estado": "Lara",
+      "total": 11,
+      "confirmados": 1
     },
     {
       "estado": "Zulia",
@@ -33,13 +38,8 @@
       "confirmados": 4
     },
     {
-      "estado": "Lara",
-      "total": 10,
-      "confirmados": 1
-    },
-    {
       "estado": "Barinas",
-      "total": 9,
+      "total": 10,
       "confirmados": 1
     },
     {
@@ -51,6 +51,11 @@
       "estado": "Anzoategui",
       "total": 7,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 6,
+      "confirmados": 2
     },
     {
       "estado": "Falcon",
@@ -81,11 +86,6 @@
       "estado": "Monagas",
       "total": 5,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 5,
-      "confirmados": 1
     },
     {
       "estado": "Aragua",
@@ -135,7 +135,7 @@
       "orden_publico": 2,
       "infraestructura_electrica": 2,
       "sismo": 1,
-      "deslizamiento": 1
+      "deslizamiento": 2
     },
     "Zulia": {
       "tormenta_electrica": 1,
@@ -147,7 +147,7 @@
       "sismo": 1
     },
     "Distrito Capital": {
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "inundacion": 4,
       "orden_publico": 6,
       "incendio": 4,
@@ -164,7 +164,8 @@
       "inundacion": 3,
       "infraestructura_electrica": 3,
       "vialidad": 1,
-      "sismo": 1
+      "sismo": 1,
+      "orden_publico": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -200,7 +201,8 @@
       "incendio": 2,
       "infraestructura_electrica": 1,
       "explosion": 1,
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "inundacion": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -235,9 +237,9 @@
     }
   },
   "por_severidad": {
-    "alto": 10,
-    "critico": 10,
-    "sin_clasificar": 102,
+    "alto": 11,
+    "critico": 11,
+    "sin_clasificar": 104,
     "medio": 1,
     "bajo": 1
   },
@@ -247,7 +249,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 15
+      "2026-08": 16
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -255,14 +257,14 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 5
+      "2026-08": 7
     },
     "colapso_estructural": {
       "2026-07": 1
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 21
+      "2026-08": 22
     },
     "salud_publica": {
       "2026-07": 1,
