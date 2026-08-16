@@ -243,5 +243,19 @@
     "fecha_deteccion": "2026-08-16T20:09:26.651140+00:00",
     "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Tachira::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T20:57:49.150014+00:00",
+    "fecha_evento_temprana": "2026-08-16T16:16:23+00:00",
+    "municipio": "Francisco De Miranda"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-16T21:02:42.179088+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
+    "municipio": null
   }
 }

@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Tachira",
+    "municipio": "Francisco De Miranda",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/los-andes/tachira-casa-hogar-que-alberga-a-130-personas-en-abandono-pide-donaciones-de-alimentos-y-una-planta-electrica/",
+        "fecha": "2026-08-16T16:16:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T16:16:23+00:00",
+    "fecha_evento_temprana": "2026-08-16T16:16:23+00:00",
+    "fecha_deteccion": "2026-08-16T20:57:49.150014+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Tachira::2026-08-16",
+    "titulo": "Falla eléctrica en Municipio Francisco De Miranda, Tachira",
+    "texto": "📌 Falla eléctrica en Municipio Francisco De Miranda, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Francisco De Miranda, Tachira\n🕒 Hecho reportado: 16/08/2026, 12:16 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-andes/tachira-casa-hogar-que-alberga-a-130-personas-en-abandono-pide-donaciones-de-alimentos-y-una-planta-electrica/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/",
+        "fecha": "2026-08-16T18:12:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:12:18+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
+    "fecha_deteccion": "2026-08-16T21:02:42.179088+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Yaracuy::2026-08-16",
+    "titulo": "Falla eléctrica en Yaracuy",
+    "texto": "📌 Falla eléctrica en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 16/08/2026, 2:12 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 5:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Sucre",
     "municipio": null,
@@ -2240,83 +2292,5 @@
     "clave_dedup": "inundacion::Yaracuy::2026-08-02",
     "titulo": "Inundación en Municipio Manuel Monge, Yaracuy",
     "texto": "📌 Inundación en Municipio Manuel Monge, Yaracuy\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Manuel Monge, Yaracuy\n🕒 Hecho reportado: 02/08/2026, 5:00 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 7:47 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
-  },
-  {
-    "tipo": "escasez_combustible",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/guayana/bolivar-transportistas-exigen-abastecimiento-de-gasolina-nos-obligan-a-ir-a-paro/",
-        "fecha": "2026-08-02T20:07:22+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T20:07:22+00:00",
-    "fecha_evento_temprana": "2026-08-02T20:07:22+00:00",
-    "fecha_deteccion": "2026-08-02T20:16:24.190574+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "escasez_combustible::Bolivar::2026-08-02",
-    "titulo": "Escasez de combustible en Bolivar",
-    "texto": "📌 Escasez de combustible en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 02/08/2026, 4:07 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-transportistas-exigen-abastecimiento-de-gasolina-nos-obligan-a-ir-a-paro/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Miranda",
-    "municipio": "Baruta",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/",
-        "fecha": "2026-08-02T19:22:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T19:22:08+00:00",
-    "fecha_evento_temprana": "2026-08-02T19:22:08+00:00",
-    "fecha_deteccion": "2026-08-02T20:16:30.637565+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Miranda::2026-08-02",
-    "titulo": "Incendio en Municipio Baruta, Miranda",
-    "texto": "📌 Incendio en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 02/08/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/",
-        "fecha": "2026-08-02T18:11:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T18:11:09+00:00",
-    "fecha_evento_temprana": "2026-08-02T18:11:09+00:00",
-    "fecha_deteccion": "2026-08-02T20:16:34.351708+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-02",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 02/08/2026, 2:11 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 4:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
   }
 ]
