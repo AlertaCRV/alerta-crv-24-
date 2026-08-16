@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "explosion",
+  "tipo_label": "Explosión",
+  "cerrado": false,
+  "generado": "2026-08-16T06:07:47.839256+00:00",
+  "actualizado_hasta": "2026-08-16T03:17:37.444557+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el período de agosto de 2026, se registró un evento de explosión en la categoría de emergencias, específicamente en el estado Miranda. Este evento se refiere a la explosión de una tubería de gas en el conjunto residencial Las Bonitas, ubicado en el sector Valle Arriba de Guatire, estado Miranda, como se informó en (El Siglo (Aragua)). La explosión generó grandes destrozos y dejó varias personas quemadas y heridas, aunque la cantidad exacta de afectados no se ha precisado. El alcalde del municipio Zamora, Raziel Rodríguez, acudió al lugar y constató la magnitud de los daños ocasionados por el siniestro, incluyendo afectaciones significativas en varios apartamentos. En comparación con el período anterior, julio de 2026, en el que no se registraron eventos de esta naturaleza, agosto presenta un aumento con 1 evento registrado. Este evento es el único reportado en el período y es conocido como la Explosión en Miranda, de severidad alto, según (El Siglo (Aragua)).",
+  "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/explosion-de-tuberia-de-gas-dejo-varios-heridos-en-guatire/"
+    }
+  ]
+}

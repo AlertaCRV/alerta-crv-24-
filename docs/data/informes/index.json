@@ -73,6 +73,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "explosion",
+    "tipo_label": "Explosión",
+    "cerrado": false,
+    "generado": "2026-08-16T06:07:47.839256+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
