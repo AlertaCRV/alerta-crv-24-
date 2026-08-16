@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-16T20:09:27.803373+00:00",
+  "actualizado": "2026-08-16T21:03:07.548817+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-16T19:30:03+00:00"
   },
-  "total_eventos": 132,
+  "total_eventos": 134,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 23,
-    "infraestructura_electrica": 37,
+    "infraestructura_electrica": 39,
     "deslizamiento": 10,
     "colapso_estructural": 1,
     "orden_publico": 25,
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Yaracuy",
+      "total": 7,
+      "confirmados": 1
+    },
+    {
       "estado": "Trujillo",
       "total": 6,
       "confirmados": 0
@@ -64,11 +69,6 @@
     },
     {
       "estado": "Falcon",
-      "total": 6,
-      "confirmados": 1
-    },
-    {
-      "estado": "Yaracuy",
       "total": 6,
       "confirmados": 1
     },
@@ -103,13 +103,13 @@
       "confirmados": 1
     },
     {
-      "estado": "Portuguesa",
+      "estado": "Tachira",
       "total": 3,
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 2,
+      "estado": "Portuguesa",
+      "total": 3,
       "confirmados": 0
     },
     {
@@ -193,7 +193,7 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Monagas": {
       "infraestructura_electrica": 4,
@@ -219,7 +219,7 @@
       "inundacion": 3,
       "sismo": 1,
       "incendio": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Aragua": {
       "orden_publico": 2,
@@ -241,7 +241,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 11,
-    "sin_clasificar": 108,
+    "sin_clasificar": 110,
     "medio": 1,
     "bajo": 1
   },
@@ -255,7 +255,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 32
+      "2026-08": 34
     },
     "deslizamiento": {
       "2026-07": 3,

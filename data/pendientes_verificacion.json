@@ -443,40 +443,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-16T11:45:29.154630+00:00"
   },
-  "infraestructura_electrica::Tachira::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:04:07.157625+00:00"
-  },
-  "infraestructura_electrica::Distrito Capital::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:04:31.344057+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:04:55.823773+00:00"
-  },
-  "orden_publico::Barinas::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:06:08.483750+00:00"
-  },
-  "deslizamiento::Lara::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:08:34.092043+00:00"
-  },
-  "infraestructura_electrica::Yaracuy::2026-08-16": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-16T20:09:02.087084+00:00"
-  },
-  "inundacion::Miranda::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T20:03:18.709495+00:00"
-  },
   "incendio::Miranda::2026-08-16": {
     "intentos": 1,
     "ultima_vez": "2026-08-16T20:03:42.918458+00:00"
   },
   "sismo::Sucre::2026-08-16": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-16T20:58:40.714668+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-16": {
     "intentos": 1,
-    "ultima_vez": "2026-08-16T20:05:20.040209+00:00"
+    "ultima_vez": "2026-08-16T20:59:04.854654+00:00"
+  },
+  "inundacion::Aragua::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T20:59:53.139194+00:00"
+  },
+  "inundacion::Portuguesa::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:00:17.275955+00:00"
+  },
+  "inundacion::Zulia::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:00:41.403737+00:00"
+  },
+  "orden_publico::Sucre::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:01:05.553483+00:00"
+  },
+  "incendio::Lara::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:01:29.689262+00:00"
+  },
+  "infraestructura_electrica::Trujillo::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:02:18.006484+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-08-16": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-16T21:03:06.317093+00:00"
   }
 }
