@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-15T23:40:53.453825+00:00",
+  "actualizado": "2026-08-16T03:18:30.132778+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T20:20:14+00:00"
+    "hasta": "2026-08-15T23:49:24+00:00"
   },
-  "total_eventos": 111,
+  "total_eventos": 113,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
     "infraestructura_electrica": 34,
-    "deslizamiento": 5,
+    "deslizamiento": 6,
     "colapso_estructural": 1,
     "orden_publico": 22,
     "salud_publica": 3,
@@ -18,7 +18,8 @@
     "vialidad": 3,
     "sismo": 3,
     "escasez_combustible": 1,
-    "sequia": 3
+    "sequia": 3,
+    "explosion": 1
   },
   "ranking_estados": [
     {
@@ -72,6 +73,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Falcon",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Sucre",
       "total": 4,
       "confirmados": 0
@@ -82,24 +88,19 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 4,
+      "confirmados": 1
+    },
+    {
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
     },
     {
-      "estado": "Falcon",
-      "total": 4,
-      "confirmados": 0
-    },
-    {
       "estado": "Aragua",
       "total": 4,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 3,
-      "confirmados": 1
     },
     {
       "estado": "Tachira",
@@ -196,7 +197,8 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "explosion": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -205,7 +207,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 1,
-      "deslizamiento": 1
+      "deslizamiento": 2
     },
     "Yaracuy": {
       "inundacion": 3,
@@ -229,9 +231,9 @@
     }
   },
   "por_severidad": {
-    "alto": 8,
+    "alto": 9,
     "critico": 8,
-    "sin_clasificar": 93,
+    "sin_clasificar": 94,
     "medio": 1,
     "bajo": 1
   },
@@ -249,7 +251,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 2
+      "2026-08": 3
     },
     "colapso_estructural": {
       "2026-07": 1
@@ -280,6 +282,9 @@
     },
     "sequia": {
       "2026-08": 3
+    },
+    "explosion": {
+      "2026-08": 1
     }
   }
 }
