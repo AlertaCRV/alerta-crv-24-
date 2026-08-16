@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-08-16T06:07:11.705372+00:00",
+  "actualizado": "2026-08-16T07:53:10.158934+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-15T23:49:24+00:00"
+    "hasta": "2026-08-16T04:24:49+00:00"
   },
-  "total_eventos": 114,
+  "total_eventos": 118,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 16,
     "infraestructura_electrica": 35,
-    "deslizamiento": 6,
+    "deslizamiento": 8,
     "colapso_estructural": 1,
-    "orden_publico": 22,
+    "orden_publico": 23,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 14,
     "vialidad": 3,
-    "sismo": 3,
+    "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1
@@ -39,7 +39,7 @@
     },
     {
       "estado": "Barinas",
-      "total": 8,
+      "total": 9,
       "confirmados": 1
     },
     {
@@ -51,6 +51,11 @@
       "estado": "Anzoategui",
       "total": 7,
       "confirmados": 0
+    },
+    {
+      "estado": "Falcon",
+      "total": 6,
+      "confirmados": 1
     },
     {
       "estado": "Yaracuy",
@@ -78,7 +83,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Falcon",
+      "estado": "Miranda",
       "total": 5,
       "confirmados": 1
     },
@@ -86,11 +91,6 @@
       "estado": "Sucre",
       "total": 4,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 4,
-      "confirmados": 1
     },
     {
       "estado": "Nueva Esparta",
@@ -108,17 +108,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Portuguesa",
+      "total": 2,
+      "confirmados": 0
+    },
+    {
       "estado": "Merida",
       "total": 1,
       "confirmados": 0
     },
     {
       "estado": "Guarico",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "Portuguesa",
       "total": 1,
       "confirmados": 0
     }
@@ -163,7 +163,8 @@
       "deslizamiento": 1,
       "inundacion": 3,
       "infraestructura_electrica": 3,
-      "vialidad": 1
+      "vialidad": 1,
+      "sismo": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -198,7 +199,8 @@
     "Miranda": {
       "incendio": 2,
       "infraestructura_electrica": 1,
-      "explosion": 1
+      "explosion": 1,
+      "deslizamiento": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -207,7 +209,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 1,
-      "deslizamiento": 2
+      "deslizamiento": 3
     },
     "Yaracuy": {
       "inundacion": 3,
@@ -227,13 +229,14 @@
       "sequia": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "orden_publico": 1
     }
   },
   "por_severidad": {
-    "alto": 9,
+    "alto": 10,
     "critico": 8,
-    "sin_clasificar": 95,
+    "sin_clasificar": 98,
     "medio": 1,
     "bajo": 1
   },
@@ -251,14 +254,14 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 3
+      "2026-08": 5
     },
     "colapso_estructural": {
       "2026-07": 1
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 20
+      "2026-08": 21
     },
     "salud_publica": {
       "2026-07": 1,
@@ -275,7 +278,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "escasez_combustible": {
       "2026-08": 1
