@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-16T19:07:09.012626+00:00",
+  "actualizado": "2026-08-16T19:52:49.802474+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-16T18:48:29+00:00"
+    "hasta": "2026-08-16T19:30:03+00:00"
   },
-  "total_eventos": 128,
+  "total_eventos": 129,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 23,
-    "infraestructura_electrica": 35,
+    "infraestructura_electrica": 36,
     "deslizamiento": 10,
     "colapso_estructural": 1,
     "orden_publico": 24,
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Trujillo",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 6,
       "confirmados": 2
@@ -71,11 +76,6 @@
       "estado": "Carabobo",
       "total": 5,
       "confirmados": 1
-    },
-    {
-      "estado": "Trujillo",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Apure",
@@ -157,7 +157,8 @@
     "Trujillo": {
       "inundacion": 1,
       "incendio": 3,
-      "sequia": 1
+      "sequia": 1,
+      "infraestructura_electrica": 1
     },
     "Barinas": {
       "deslizamiento": 1,
@@ -239,7 +240,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 11,
-    "sin_clasificar": 104,
+    "sin_clasificar": 105,
     "medio": 1,
     "bajo": 1
   },
@@ -253,7 +254,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 30
+      "2026-08": 31
     },
     "deslizamiento": {
       "2026-07": 3,
