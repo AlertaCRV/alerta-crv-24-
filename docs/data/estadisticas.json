@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-17T11:58:39.451961+00:00",
+  "actualizado": "2026-08-17T13:59:38.881776+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T09:00:03+00:00"
+    "hasta": "2026-08-17T10:40:02+00:00"
   },
-  "total_eventos": 142,
+  "total_eventos": 143,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 40,
+    "infraestructura_electrica": 41,
     "deslizamiento": 11,
     "colapso_estructural": 1,
     "orden_publico": 25,
@@ -49,6 +49,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 7,
+      "confirmados": 1
+    },
+    {
       "estado": "Anzoategui",
       "total": 7,
       "confirmados": 0
@@ -61,11 +66,6 @@
     {
       "estado": "Yaracuy",
       "total": 7,
-      "confirmados": 1
-    },
-    {
-      "estado": "Carabobo",
-      "total": 6,
       "confirmados": 1
     },
     {
@@ -132,7 +132,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "orden_publico": 2,
       "inundacion": 1
     },
@@ -253,7 +253,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 12,
-    "sin_clasificar": 117,
+    "sin_clasificar": 118,
     "medio": 1,
     "bajo": 1
   },
@@ -267,7 +267,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 35
+      "2026-08": 36
     },
     "deslizamiento": {
       "2026-07": 3,
