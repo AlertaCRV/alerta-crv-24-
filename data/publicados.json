@@ -299,5 +299,12 @@
     "fecha_deteccion": "2026-08-17T13:59:25.983746+00:00",
     "fecha_evento_temprana": "2026-08-17T10:40:02+00:00",
     "municipio": "Valencia"
+  },
+  "orden_publico::Yaracuy::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T15:00:19.043389+00:00",
+    "fecha_evento_temprana": "2026-08-17T11:26:00+00:00",
+    "municipio": null
   }
 }
