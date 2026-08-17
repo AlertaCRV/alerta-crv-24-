@@ -547,52 +547,40 @@
     "intentos": 1,
     "ultima_vez": "2026-08-17T18:08:34.946900+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:12.928672+00:00"
-  },
-  "vialidad::Monagas::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:25.374325+00:00"
-  },
-  "salud_publica::Portuguesa::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:31.499911+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:34.575496+00:00"
-  },
-  "salud_publica::Apure::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:43.794015+00:00"
-  },
-  "orden_publico::Amazonas::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:46.888437+00:00"
-  },
-  "infraestructura_electrica::Cojedes::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T21:01:49.945344+00:00"
-  },
   "deslizamiento::La Guaira::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T21:01:06.741620+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T21:58:30.065188+00:00"
   },
   "vialidad::Barinas::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T21:01:19.193353+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T21:58:42.605199+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T21:01:22.256762+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T21:58:45.752647+00:00"
   },
   "infraestructura_agua::Apure::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T21:01:40.726598+00:00"
   },
   "inundacion::Miranda::2026-08-17": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T21:59:10.938537+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-17": {
     "intentos": 1,
-    "ultima_vez": "2026-08-17T21:01:52.995033+00:00"
+    "ultima_vez": "2026-08-17T21:58:33.204277+00:00"
+  },
+  "orden_publico::Barinas::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T21:58:39.477948+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T21:58:58.316426+00:00"
+  },
+  "orden_publico::Lara::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T21:59:14.083732+00:00"
   }
 }
