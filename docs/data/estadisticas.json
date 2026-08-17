@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-17T08:07:59.667064+00:00",
+  "actualizado": "2026-08-17T11:58:39.451961+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T01:35:10+00:00"
+    "hasta": "2026-08-17T09:00:03+00:00"
   },
-  "total_eventos": 140,
+  "total_eventos": 142,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 40,
-    "deslizamiento": 10,
+    "deslizamiento": 11,
     "colapso_estructural": 1,
     "orden_publico": 25,
     "salud_publica": 3,
@@ -19,7 +19,8 @@
     "sismo": 5,
     "escasez_combustible": 1,
     "sequia": 3,
-    "explosion": 1
+    "explosion": 1,
+    "infraestructura_agua": 1
   },
   "ranking_estados": [
     {
@@ -78,14 +79,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Apure",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Apure",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Monagas",
@@ -119,6 +120,11 @@
     },
     {
       "estado": "Guarico",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -191,7 +197,8 @@
     "Apure": {
       "crisis_migratoria": 1,
       "inundacion": 3,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "infraestructura_agua": 1
     },
     "Tachira": {
       "deslizamiento": 1,
@@ -238,12 +245,15 @@
       "infraestructura_electrica": 1,
       "orden_publico": 1,
       "inundacion": 1
+    },
+    "La Guaira": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
     "alto": 11,
     "critico": 12,
-    "sin_clasificar": 115,
+    "sin_clasificar": 117,
     "medio": 1,
     "bajo": 1
   },
@@ -261,7 +271,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 7
+      "2026-08": 8
     },
     "colapso_estructural": {
       "2026-07": 1
@@ -294,6 +304,9 @@
       "2026-08": 3
     },
     "explosion": {
+      "2026-08": 1
+    },
+    "infraestructura_agua": {
       "2026-08": 1
     }
   }
