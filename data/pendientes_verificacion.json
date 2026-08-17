@@ -496,8 +496,8 @@
     "ultima_vez": "2026-08-16T23:48:48.415524+00:00"
   },
   "infraestructura_electrica::Tachira::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:04:22.781426+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T23:52:27.737738+00:00"
   },
   "inundacion::Aragua::2026-08-17": {
     "intentos": 1,
@@ -551,40 +551,64 @@
     "intentos": 1,
     "ultima_vez": "2026-08-17T21:01:40.726598+00:00"
   },
-  "infraestructura_electrica::Distrito Capital::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T22:57:47.030745+00:00"
-  },
-  "orden_publico::Barinas::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T22:57:53.195440+00:00"
-  },
   "infraestructura_electrica::Carabobo::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T21:58:58.316426+00:00"
   },
-  "orden_publico::Lara::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T22:58:14.660368+00:00"
-  },
   "sismo::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T22:57:43.951096+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T23:52:18.494299+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T22:57:50.110210+00:00"
   },
   "vialidad::Monagas::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T22:58:02.378969+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T23:52:37.061886+00:00"
   },
   "salud_publica::Portuguesa::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T22:58:05.459943+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T23:52:43.478535+00:00"
   },
   "inundacion::Distrito Capital::2026-08-17": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T23:52:46.547491+00:00"
+  },
+  "orden_publico::Portuguesa::2026-08-17": {
     "intentos": 1,
-    "ultima_vez": "2026-08-17T22:58:08.509669+00:00"
+    "ultima_vez": "2026-08-17T23:52:15.400255+00:00"
+  },
+  "sismo::La Guaira::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:21.586234+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:24.647518+00:00"
+  },
+  "vialidad::Barinas::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:33.937588+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:40.390819+00:00"
+  },
+  "salud_publica::Apure::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:49.662847+00:00"
+  },
+  "orden_publico::Amazonas::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:52.755816+00:00"
+  },
+  "infraestructura_electrica::Cojedes::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:52:55.836636+00:00"
+  },
+  "inundacion::Miranda::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T23:53:02.045180+00:00"
   }
 }

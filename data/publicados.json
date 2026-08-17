@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Distrito Capital::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T23:00:07.605704+00:00",
-    "fecha_evento_temprana": "2026-08-14T17:22:33+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Lara::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T23:00:31.977912+00:00",
-    "fecha_evento_temprana": "2026-08-14T16:17:07+00:00",
-    "municipio": "Palavecino"
-  },
   "infraestructura_electrica::Portuguesa::2026-08-14": {
     "severidad": "sin_clasificar",
     "confirmado": false,
