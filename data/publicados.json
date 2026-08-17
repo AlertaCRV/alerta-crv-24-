@@ -313,5 +313,19 @@
     "fecha_deteccion": "2026-08-17T17:04:08.575192+00:00",
     "fecha_evento_temprana": "2026-08-17T14:11:36+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T18:08:04.022486+00:00",
+    "fecha_evento_temprana": "2026-08-17T15:45:03+00:00",
+    "municipio": null
+  },
+  "salud_publica::Portuguesa::2026-08-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T18:08:16.393596+00:00",
+    "fecha_evento_temprana": "2026-08-17T15:51:55+00:00",
+    "municipio": "Araure"
   }
 }
