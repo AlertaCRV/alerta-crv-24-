@@ -1,5 +1,109 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/",
+        "fecha": "2026-08-16T18:45:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T18:45:11+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:45:11+00:00",
+    "fecha_deteccion": "2026-08-17T05:24:48.354123+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Miranda::2026-08-16",
+    "titulo": "Inundación en Municipio Baruta, Miranda",
+    "texto": "📌 Inundación en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 16/08/2026, 2:45 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:24 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "La Vega",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/",
+        "fecha": "2026-08-16T22:31:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T22:31:10+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
+    "fecha_deteccion": "2026-08-17T05:24:58.224512+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Distrito Capital::2026-08-16",
+    "titulo": "Inundación en Parroquia La Vega, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia La Vega, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Vega, Distrito Capital\n🕒 Hecho reportado: 16/08/2026, 6:31 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:24 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Carabobo",
+    "municipio": "Guacara",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/",
+        "fecha": "2026-08-16T22:31:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T22:31:10+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
+    "fecha_deteccion": "2026-08-17T05:25:50.098978+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Carabobo::2026-08-16",
+    "titulo": "Inundación en Municipio Guacara, Carabobo",
+    "texto": "📌 Inundación en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 16/08/2026, 6:31 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:25 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/",
+        "fecha": "2026-08-16T22:31:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-16T22:31:10+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
+    "fecha_deteccion": "2026-08-17T05:26:14.335485+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Lara::2026-08-16",
+    "titulo": "Inundación en Lara",
+    "texto": "📌 Inundación en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/08/2026, 6:31 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "Sucre",
     "municipio": null,
@@ -184,37 +288,6 @@
     "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 16/08/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:52 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
   },
   {
-    "tipo": "inundacion",
-    "ubicacion": "Miranda",
-    "municipio": "Baruta",
-    "parroquia": "Petare",
-    "severidad": "sin_clasificar",
-    "score": 1.4,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/",
-        "fecha": "2026-08-16T18:45:11+00:00"
-      },
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/",
-        "fecha": "2026-08-16T17:19:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T18:45:11+00:00",
-    "fecha_evento_temprana": "2026-08-16T17:19:33+00:00",
-    "fecha_deteccion": "2026-08-16T19:02:55.246124+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Miranda::2026-08-16",
-    "titulo": "Inundación en Parroquia Petare, Municipio Baruta, Miranda",
-    "texto": "📌 Inundación en Parroquia Petare, Municipio Baruta, Miranda\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Petare, Municipio Baruta, Miranda\n🕒 Hecho reportado: 16/08/2026, 2:45 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:02 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/"
-  },
-  {
     "tipo": "deslizamiento",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -296,42 +369,6 @@
     "clave_dedup": "deslizamiento::Lara::2026-08-15",
     "titulo": "Deslizamiento/Derrumbe en Lara",
     "texto": "📌 Deslizamiento/Derrumbe en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/08/2026, 11:54 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/mundo/lluvias-japon-muertos-orden-de-evacuacion/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "Candelaria",
-    "severidad": "critico",
-    "score": 1.65,
-    "confirmado": false,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/fuertes-lluvias-provocan-desbordamientos-del-rio-guaire/",
-        "fecha": "2026-08-16T13:37:24+00:00"
-      },
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/16/las-fuetes-lluvias-causaron-estragos-en-varios-sectores-de-caracas/",
-        "fecha": "2026-08-16T13:00:03+00:00"
-      },
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/",
-        "fecha": "2026-08-16T16:00:50+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T16:00:50+00:00",
-    "fecha_evento_temprana": "2026-08-16T13:00:03+00:00",
-    "fecha_deteccion": "2026-08-16T17:46:08.020229+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Distrito Capital::2026-08-16",
-    "titulo": "Inundación en Parroquia Candelaria, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Inundación en Parroquia Candelaria, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Candelaria, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 16/08/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 1:46 p.m.\n📊 Fuentes independientes: 3 (score 1.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/fuertes-lluvias-provocan-desbordamientos-del-rio-guaire/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/16/las-fuetes-lluvias-causaron-estragos-en-varios-sectores-de-caracas/\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/"
   },
   {
     "tipo": "inundacion",
@@ -2289,36 +2326,5 @@
     "clave_dedup": "inundacion::Barinas::2026-08-03",
     "titulo": "Inundación en Parroquia Barrancas, Municipio Cruz Paredes, Barinas",
     "texto": "📌 Inundación en Parroquia Barrancas, Municipio Cruz Paredes, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Barrancas, Municipio Cruz Paredes, Barinas\n🕒 Hecho reportado: 03/08/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 03/08/2026, 3:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Yaracuy",
-    "municipio": "Manuel Monge",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/",
-        "fecha": "2026-08-02T21:00:00+00:00"
-      },
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/",
-        "fecha": "2026-08-02T15:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-02T21:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-02T15:20:02+00:00",
-    "fecha_deteccion": "2026-08-02T23:47:23.969377+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Yaracuy::2026-08-02",
-    "titulo": "Inundación en Municipio Manuel Monge, Yaracuy",
-    "texto": "📌 Inundación en Municipio Manuel Monge, Yaracuy\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Manuel Monge, Yaracuy\n🕒 Hecho reportado: 02/08/2026, 5:00 p.m.\n🔎 Detectado por el sistema: 02/08/2026, 7:47 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
   }
 ]

@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-16T21:50:33.682520+00:00",
+  "actualizado": "2026-08-17T05:28:17.251087+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-16T19:40:48+00:00"
+    "hasta": "2026-08-16T22:31:10+00:00"
   },
-  "total_eventos": 135,
+  "total_eventos": 139,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 23,
+    "inundacion": 27,
     "infraestructura_electrica": 39,
     "deslizamiento": 10,
     "colapso_estructural": 1,
@@ -24,12 +24,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 23,
+      "total": 24,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 12,
+      "total": 13,
       "confirmados": 1
     },
     {
@@ -53,8 +53,18 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 7,
+      "confirmados": 2
+    },
+    {
       "estado": "Yaracuy",
       "total": 7,
+      "confirmados": 1
+    },
+    {
+      "estado": "Carabobo",
+      "total": 6,
       "confirmados": 1
     },
     {
@@ -68,18 +78,8 @@
       "confirmados": 0
     },
     {
-      "estado": "Miranda",
-      "total": 6,
-      "confirmados": 2
-    },
-    {
       "estado": "Falcon",
       "total": 6,
-      "confirmados": 1
-    },
-    {
-      "estado": "Carabobo",
-      "total": 5,
       "confirmados": 1
     },
     {
@@ -127,10 +127,11 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 2,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "inundacion": 1
     },
     "Lara": {
-      "inundacion": 2,
+      "inundacion": 3,
       "salud_publica": 2,
       "orden_publico": 2,
       "infraestructura_electrica": 2,
@@ -149,7 +150,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 2,
-      "inundacion": 4,
+      "inundacion": 5,
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
@@ -205,7 +206,7 @@
       "infraestructura_electrica": 1,
       "explosion": 1,
       "deslizamiento": 1,
-      "inundacion": 1
+      "inundacion": 2
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -242,7 +243,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 12,
-    "sin_clasificar": 110,
+    "sin_clasificar": 114,
     "medio": 1,
     "bajo": 1
   },
@@ -252,7 +253,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 16
+      "2026-08": 20
     },
     "infraestructura_electrica": {
       "2026-07": 5,
