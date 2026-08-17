@@ -511,13 +511,9 @@
     "intentos": 1,
     "ultima_vez": "2026-08-17T05:25:25.847948+00:00"
   },
-  "inundacion::Portuguesa::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T10:08:41.327292+00:00"
-  },
   "infraestructura_agua::Apure::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T10:08:19.914500+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T11:05:25.526235+00:00"
   },
   "inundacion::Carabobo::2026-08-17": {
     "intentos": 1,
@@ -532,15 +528,23 @@
     "ultima_vez": "2026-08-17T10:08:29.088208+00:00"
   },
   "inundacion::Miranda::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T10:08:32.148433+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T11:05:28.613074+00:00"
   },
   "deslizamiento::La Guaira::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T10:08:35.212749+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T11:05:31.689466+00:00"
   },
   "infraestructura_electrica::Merida::2026-08-17": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T11:05:37.848825+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-17": {
     "intentos": 1,
-    "ultima_vez": "2026-08-17T10:08:38.267298+00:00"
+    "ultima_vez": "2026-08-17T11:05:22.450894+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T11:05:34.767267+00:00"
   }
 }
