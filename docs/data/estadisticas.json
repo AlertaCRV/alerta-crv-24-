@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-17T13:59:38.881776+00:00",
+  "actualizado": "2026-08-17T15:00:38.104698+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T10:40:02+00:00"
+    "hasta": "2026-08-17T11:26:00+00:00"
   },
-  "total_eventos": 143,
+  "total_eventos": 144,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 41,
     "deslizamiento": 11,
     "colapso_estructural": 1,
-    "orden_publico": 25,
+    "orden_publico": 26,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 15,
@@ -49,6 +49,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Yaracuy",
+      "total": 8,
+      "confirmados": 1
+    },
+    {
       "estado": "Carabobo",
       "total": 7,
       "confirmados": 1
@@ -62,11 +67,6 @@
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 7,
-      "confirmados": 1
     },
     {
       "estado": "Trujillo",
@@ -228,7 +228,8 @@
       "inundacion": 3,
       "sismo": 1,
       "incendio": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "orden_publico": 1
     },
     "Aragua": {
       "orden_publico": 2,
@@ -253,7 +254,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 12,
-    "sin_clasificar": 118,
+    "sin_clasificar": 119,
     "medio": 1,
     "bajo": 1
   },
@@ -278,7 +279,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 23
+      "2026-08": 24
     },
     "salud_publica": {
       "2026-07": 1,

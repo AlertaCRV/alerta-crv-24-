@@ -515,10 +515,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-17T10:08:22.974319+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T13:59:22.892143+00:00"
-  },
   "inundacion::Lara::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T10:08:29.088208+00:00"
@@ -527,32 +523,40 @@
     "intentos": 2,
     "ultima_vez": "2026-08-17T13:59:10.529072+00:00"
   },
-  "infraestructura_electrica::Barinas::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T13:59:07.442540+00:00"
-  },
-  "orden_publico::Yaracuy::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T13:59:19.809829+00:00"
-  },
   "deslizamiento::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T13:59:13.624886+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T15:00:12.936241+00:00"
   },
   "inundacion::La Guaira::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T13:59:16.720832+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T15:00:15.990473+00:00"
   },
   "infraestructura_agua::Apure::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T13:59:29.067298+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T15:00:28.206584+00:00"
   },
   "inundacion::Miranda::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T13:59:32.148747+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T15:00:31.256584+00:00"
   },
   "deslizamiento::La Guaira::2026-08-17": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T15:00:34.304024+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-17": {
     "intentos": 1,
-    "ultima_vez": "2026-08-17T13:59:35.232446+00:00"
+    "ultima_vez": "2026-08-17T15:00:03.768825+00:00"
+  },
+  "infraestructura_agua::Zulia::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T15:00:06.826555+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T15:00:25.157981+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T15:00:37.354955+00:00"
   }
 }
