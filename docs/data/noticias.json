@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Apure",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/17/sin-agua-tienen-a-mereicito-i-en-el-estado-apure/",
+        "fecha": "2026-08-17T09:00:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T09:00:03+00:00",
+    "fecha_evento_temprana": "2026-08-17T09:00:03+00:00",
+    "fecha_deteccion": "2026-08-17T11:58:26.243869+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Apure::2026-08-17",
+    "titulo": "Falla de agua en Apure",
+    "texto": "📌 Falla de agua en Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 17/08/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 7:58 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/17/sin-agua-tienen-a-mereicito-i-en-el-estado-apure/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiespartano (Nueva Esparta)",
+        "link": "https://notiespartano.com/lluvias-intensas-causaron-inundaciones-y-danos-en-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-intensas-causaron-inundaciones-y-danos-en-caracas",
+        "fecha": "2026-08-17T06:29:52+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T06:29:52+00:00",
+    "fecha_evento_temprana": "2026-08-17T06:29:52+00:00",
+    "fecha_deteccion": "2026-08-17T11:58:32.376351+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-08-17",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 17/08/2026, 2:29 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 7:58 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiespartano (Nueva Esparta): https://notiespartano.com/lluvias-intensas-causaron-inundaciones-y-danos-en-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-intensas-causaron-inundaciones-y-danos-en-caracas"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Merida",
     "municipio": null,
