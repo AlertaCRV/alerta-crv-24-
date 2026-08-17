@@ -6,34 +6,6 @@
     "fecha_evento_temprana": "2026-08-14T14:36:48+00:00",
     "municipio": "Libertador"
   },
-  "infraestructura_electrica::Zulia::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:07:55.334904+00:00",
-    "fecha_evento_temprana": "2026-08-14T19:58:01+00:00",
-    "municipio": "Lagunillas"
-  },
-  "sequia::Trujillo::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:09:07.817461+00:00",
-    "fecha_evento_temprana": "2026-08-14T14:19:46+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Sucre::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:10:20.301051+00:00",
-    "fecha_evento_temprana": "2026-08-14T13:20:08+00:00",
-    "municipio": "Cajigal"
-  },
-  "incendio::Nueva Esparta::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T21:13:09.445532+00:00",
-    "fecha_evento_temprana": "2026-08-14T15:59:15+00:00",
-    "municipio": "Mariño"
-  },
   "infraestructura_electrica::Bolivar::2026-08-14": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -347,6 +319,34 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-17T21:01:56.090335+00:00",
     "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
+    "municipio": null
+  },
+  "vialidad::Monagas::2026-08-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:58:48.885230+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:21:03+00:00",
+    "municipio": "Maturín"
+  },
+  "salud_publica::Apure::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:59:01.513527+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:16:37+00:00",
+    "municipio": "Biruaca"
+  },
+  "orden_publico::Amazonas::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:59:04.661486+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:06:54+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Cojedes::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:59:07.810727+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:06:54+00:00",
     "municipio": null
   }
 }

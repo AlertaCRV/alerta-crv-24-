@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-08-17T21:01:56.913180+00:00",
+  "actualizado": "2026-08-17T21:59:16.042120+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-17T19:54:04+00:00"
   },
-  "total_eventos": 152,
+  "total_eventos": 156,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 43,
+    "infraestructura_electrica": 44,
     "deslizamiento": 12,
     "colapso_estructural": 1,
-    "orden_publico": 28,
-    "salud_publica": 4,
+    "orden_publico": 29,
+    "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 15,
-    "vialidad": 3,
+    "vialidad": 4,
     "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 3,
@@ -64,6 +64,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Apure",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
@@ -79,7 +84,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
+      "estado": "Monagas",
       "total": 6,
       "confirmados": 0
     },
@@ -87,11 +92,6 @@
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Monagas",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Aragua",
@@ -125,6 +125,16 @@
     },
     {
       "estado": "Guarico",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Amazonas",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Cojedes",
       "total": 1,
       "confirmados": 0
     }
@@ -199,7 +209,8 @@
       "crisis_migratoria": 1,
       "inundacion": 3,
       "orden_publico": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "salud_publica": 1
     },
     "Tachira": {
       "deslizamiento": 1,
@@ -207,7 +218,8 @@
     },
     "Monagas": {
       "infraestructura_electrica": 4,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "vialidad": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -252,12 +264,18 @@
     "La Guaira": {
       "deslizamiento": 1,
       "sismo": 1
+    },
+    "Amazonas": {
+      "orden_publico": 1
+    },
+    "Cojedes": {
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
-    "alto": 11,
+    "alto": 12,
     "critico": 13,
-    "sin_clasificar": 126,
+    "sin_clasificar": 129,
     "medio": 1,
     "bajo": 1
   },
@@ -271,7 +289,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 38
+      "2026-08": 39
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -282,11 +300,11 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 26
+      "2026-08": 27
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 3
+      "2026-08": 4
     },
     "crisis_migratoria": {
       "2026-07": 4
@@ -296,7 +314,7 @@
       "2026-08": 12
     },
     "vialidad": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "sismo": {
       "2026-08": 6
