@@ -495,72 +495,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-16T23:48:48.415524+00:00"
   },
-  "inundacion::Miranda::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:03:58.499985+00:00"
-  },
   "infraestructura_electrica::Tachira::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T00:04:22.781426+00:00"
-  },
-  "sismo::Sucre::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:04:47.062360+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:05:11.333403+00:00"
-  },
-  "orden_publico::Barinas::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:05:35.602602+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:05:59.876836+00:00"
   },
   "inundacion::Aragua::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T00:06:24.125340+00:00"
   },
-  "infraestructura_electrica::Monagas::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:06:48.402616+00:00"
-  },
-  "orden_publico::Sucre::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:07:12.686779+00:00"
-  },
   "inundacion::Carabobo::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:07:36.989779+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:32:35.865190+00:00"
   },
   "inundacion::Lara::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:08:01.266443+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:33:00.090032+00:00"
   },
   "incendio::Lara::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:08:25.523560+00:00"
-  },
-  "deslizamiento::Lara::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:08:49.807211+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:33:24.319026+00:00"
   },
   "infraestructura_electrica::Trujillo::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T00:09:14.065213+00:00"
   },
   "inundacion::Portuguesa::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:09:38.341781+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:34:24.175942+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T00:10:02.597153+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:34:48.368504+00:00"
   },
   "infraestructura_electrica::Barinas::2026-08-17": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T03:35:12.599845+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-08-17": {
     "intentos": 1,
-    "ultima_vez": "2026-08-17T00:10:26.846773+00:00"
+    "ultima_vez": "2026-08-17T03:33:59.954580+00:00"
   }
 }
