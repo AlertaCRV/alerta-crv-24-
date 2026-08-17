@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-08-17T17:04:34.275719+00:00",
+  "actualizado": "2026-08-17T18:08:42.238847+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T15:45:03+00:00"
+    "hasta": "2026-08-17T15:51:55+00:00"
   },
-  "total_eventos": 147,
+  "total_eventos": 149,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 42,
+    "infraestructura_electrica": 43,
     "deslizamiento": 12,
     "colapso_estructural": 1,
     "orden_publico": 26,
-    "salud_publica": 3,
+    "salud_publica": 4,
     "crisis_migratoria": 4,
     "incendio": 15,
     "vialidad": 3,
@@ -35,7 +35,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 12,
+      "total": 13,
       "confirmados": 4
     },
     {
@@ -104,12 +104,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Tachira",
-      "total": 3,
+      "estado": "Portuguesa",
+      "total": 4,
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
+      "estado": "Tachira",
       "total": 3,
       "confirmados": 0
     },
@@ -147,7 +147,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -246,7 +246,8 @@
     "Portuguesa": {
       "infraestructura_electrica": 1,
       "orden_publico": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "salud_publica": 1
     },
     "La Guaira": {
       "deslizamiento": 1
@@ -254,8 +255,8 @@
   },
   "por_severidad": {
     "alto": 11,
-    "critico": 12,
-    "sin_clasificar": 122,
+    "critico": 13,
+    "sin_clasificar": 123,
     "medio": 1,
     "bajo": 1
   },
@@ -269,7 +270,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 37
+      "2026-08": 38
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -284,7 +285,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 2
+      "2026-08": 3
     },
     "crisis_migratoria": {
       "2026-07": 4
