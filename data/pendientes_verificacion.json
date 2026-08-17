@@ -507,12 +507,12 @@
     "intentos": 1,
     "ultima_vez": "2026-08-17T00:09:14.065213+00:00"
   },
-  "infraestructura_electrica::Merida::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T05:27:02.742238+00:00"
-  },
   "orden_publico::Sucre::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T05:25:25.847948+00:00"
+  },
+  "inundacion::Portuguesa::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T08:07:59.014755+00:00"
   }
 }
