@@ -1,11 +1,4 @@
 {
-  "orden_publico::Sucre::2026-08-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-14T05:24:35.984577+00:00",
-    "fecha_evento_temprana": "2026-08-14T01:27:56+00:00",
-    "municipio": "Cajigal"
-  },
   "incendio::Distrito Capital::2026-08-14": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -168,11 +161,11 @@
     "municipio": "Santa Rosalía"
   },
   "inundacion::Distrito Capital::2026-08-16": {
-    "severidad": "critico",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-16T17:46:08.020229+00:00",
-    "fecha_evento_temprana": "2026-08-16T13:00:03+00:00",
-    "municipio": "Libertador"
+    "fecha_deteccion": "2026-08-17T05:24:58.224512+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
+    "municipio": null
   },
   "inundacion::Aragua::2026-08-16": {
     "severidad": "sin_clasificar",
@@ -197,9 +190,9 @@
   },
   "inundacion::Miranda::2026-08-16": {
     "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-08-16T19:02:55.246124+00:00",
-    "fecha_evento_temprana": "2026-08-16T17:19:33+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T05:24:48.354123+00:00",
+    "fecha_evento_temprana": "2026-08-16T18:45:11+00:00",
     "municipio": "Baruta"
   },
   "deslizamiento::Distrito Capital::2026-08-16": {
@@ -263,6 +256,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-16T21:45:43.145017+00:00",
     "fecha_evento_temprana": "2026-08-16T19:40:48+00:00",
+    "municipio": null
+  },
+  "inundacion::Carabobo::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T05:25:50.098978+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
+    "municipio": "Guacara"
+  },
+  "inundacion::Lara::2026-08-16": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T05:26:14.335485+00:00",
+    "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
     "municipio": null
   }
 }
