@@ -1,5 +1,67 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.85,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/17/protestaron-frente-al-circuito-judicial-penal-de-barinas-durante-la-audiencia-de-un-medico-y-seis-enfermeras/",
+        "fecha": "2026-08-17T19:30:26+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/",
+        "fecha": "2026-08-17T17:15:00+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico/",
+        "fecha": "2026-08-17T19:54:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T19:54:04+00:00",
+    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
+    "fecha_deteccion": "2026-08-17T21:01:16.131295+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-17",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 17/08/2026, 3:54 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/17/protestaron-frente-al-circuito-judicial-penal-de-barinas-durante-la-audiencia-de-un-medico-y-seis-enfermeras/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/",
+        "fecha": "2026-08-17T17:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T17:15:00+00:00",
+    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
+    "fecha_deteccion": "2026-08-17T21:01:56.090335+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Lara::2026-08-17",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 17/08/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "La Guaira",
     "municipio": null,
