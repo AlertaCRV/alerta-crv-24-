@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Macarao",
+    "severidad": "sin_clasificar",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/",
+        "fecha": "2026-08-17T12:55:41+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/",
+        "fecha": "2026-08-17T13:22:54+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T13:22:54+00:00",
+    "fecha_evento_temprana": "2026-08-17T12:55:41+00:00",
+    "fecha_deteccion": "2026-08-17T15:57:41.560532+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Macarao, Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Macarao, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Macarao, Distrito Capital\n🕒 Hecho reportado: 17/08/2026, 9:22 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 11:57 a.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Yaracuy",
     "municipio": null,
@@ -416,37 +447,6 @@
     "clave_dedup": "infraestructura_electrica::Trujillo::2026-08-16",
     "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
     "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 16/08/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:52 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "La Vega",
-    "severidad": "critico",
-    "score": 1.2,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/",
-        "fecha": "2026-08-16T18:48:29+00:00"
-      },
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/",
-        "fecha": "2026-08-16T15:53:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T18:48:29+00:00",
-    "fecha_evento_temprana": "2026-08-16T15:53:14+00:00",
-    "fecha_deteccion": "2026-08-16T19:03:25.899050+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia La Vega, Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia La Vega, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia La Vega, Distrito Capital\n🕒 Hecho reportado: 16/08/2026, 2:48 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:03 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/\n  • La Prensa de Monagas: https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/"
   },
   {
     "tipo": "orden_publico",
