@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-17T19:46:27.635433+00:00",
+  "actualizado": "2026-08-17T21:01:56.913180+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T18:45:00+00:00"
+    "hasta": "2026-08-17T19:54:04+00:00"
   },
-  "total_eventos": 150,
+  "total_eventos": 152,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 43,
     "deslizamiento": 12,
     "colapso_estructural": 1,
-    "orden_publico": 26,
+    "orden_publico": 28,
     "salud_publica": 4,
     "crisis_migratoria": 4,
     "incendio": 15,
@@ -30,7 +30,7 @@
     },
     {
       "estado": "Lara",
-      "total": 13,
+      "total": 14,
       "confirmados": 1
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "estado": "Barinas",
-      "total": 11,
+      "total": 12,
       "confirmados": 1
     },
     {
@@ -139,7 +139,7 @@
     "Lara": {
       "inundacion": 3,
       "salud_publica": 2,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "infraestructura_electrica": 2,
       "sismo": 1,
       "deslizamiento": 2,
@@ -175,7 +175,7 @@
       "infraestructura_electrica": 4,
       "vialidad": 1,
       "sismo": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Sucre": {
       "inundacion": 1,
@@ -257,7 +257,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 13,
-    "sin_clasificar": 124,
+    "sin_clasificar": 126,
     "medio": 1,
     "bajo": 1
   },
@@ -282,7 +282,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 24
+      "2026-08": 26
     },
     "salud_publica": {
       "2026-07": 1,

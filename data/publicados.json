@@ -334,5 +334,19 @@
     "fecha_deteccion": "2026-08-17T19:45:53.297404+00:00",
     "fecha_evento_temprana": "2026-08-17T18:45:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Barinas::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:01:16.131295+00:00",
+    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:01:56.090335+00:00",
+    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
+    "municipio": null
   }
 }
