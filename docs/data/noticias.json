@@ -1,5 +1,37 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/17/pma-mas-de-sesenta-dias-despues-de-los-terremotos-la-ayuda-sigue-siendo-esencial-para-miles-de-familias-en-venezuela-17ago/",
+        "fecha": "2026-08-17T18:45:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T18:45:00+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:45:00+00:00",
+    "fecha_deteccion": "2026-08-17T19:45:53.297404+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [
+      "Aragua",
+      "Distrito Capital",
+      "Miranda"
+    ],
+    "clave_dedup": "sismo::La Guaira::2026-08-17",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 17/08/2026, 2:45 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 3:45 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/17/pma-mas-de-sesenta-dias-despues-de-los-terremotos-la-ayuda-sigue-siendo-esencial-para-miles-de-familias-en-venezuela-17ago/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -2534,31 +2566,5 @@
     "clave_dedup": "orden_publico::Nueva Esparta::2026-08-03",
     "titulo": "Orden público en Municipio Díaz, Nueva Esparta",
     "texto": "📌 Orden público en Municipio Díaz, Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Díaz, Nueva Esparta\n🕒 Hecho reportado: 03/08/2026, 7:56 p.m.\n🔎 Detectado por el sistema: 04/08/2026, 4:10 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Barinas",
-    "municipio": "Cruz Paredes",
-    "parroquia": "Barrancas",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/",
-        "fecha": "2026-08-03T15:27:37+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-03T15:27:37+00:00",
-    "fecha_evento_temprana": "2026-08-03T15:27:37+00:00",
-    "fecha_deteccion": "2026-08-03T19:02:14.723812+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Barinas::2026-08-03",
-    "titulo": "Inundación en Parroquia Barrancas, Municipio Cruz Paredes, Barinas",
-    "texto": "📌 Inundación en Parroquia Barrancas, Municipio Cruz Paredes, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Barrancas, Municipio Cruz Paredes, Barinas\n🕒 Hecho reportado: 03/08/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 03/08/2026, 3:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
   }
 ]

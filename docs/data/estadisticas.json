@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-17T18:08:42.238847+00:00",
+  "actualizado": "2026-08-17T19:46:27.635433+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T15:51:55+00:00"
+    "hasta": "2026-08-17T18:45:00+00:00"
   },
-  "total_eventos": 149,
+  "total_eventos": 150,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 4,
     "incendio": 15,
     "vialidad": 3,
-    "sismo": 5,
+    "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
@@ -119,12 +119,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Guarico",
-      "total": 1,
+      "estado": "La Guaira",
+      "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Guarico",
       "total": 1,
       "confirmados": 0
     }
@@ -250,13 +250,14 @@
       "salud_publica": 1
     },
     "La Guaira": {
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 11,
     "critico": 13,
-    "sin_clasificar": 123,
+    "sin_clasificar": 124,
     "medio": 1,
     "bajo": 1
   },
@@ -298,7 +299,7 @@
       "2026-08": 3
     },
     "sismo": {
-      "2026-08": 5
+      "2026-08": 6
     },
     "escasez_combustible": {
       "2026-08": 1
