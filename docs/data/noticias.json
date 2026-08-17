@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Valencia",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/17/apagones-con-aumentos-de-la-tarifa-electrica-en-carabobo-asi-lo-denuncio-oscar-jimenez/",
+        "fecha": "2026-08-17T10:40:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T10:40:02+00:00",
+    "fecha_evento_temprana": "2026-08-17T10:40:02+00:00",
+    "fecha_deteccion": "2026-08-17T13:59:25.983746+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-17",
+    "titulo": "Falla eléctrica en Municipio Valencia, Carabobo",
+    "texto": "📌 Falla eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 17/08/2026, 6:40 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 9:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/17/apagones-con-aumentos-de-la-tarifa-electrica-en-carabobo-asi-lo-denuncio-oscar-jimenez/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Apure",
     "municipio": null,
