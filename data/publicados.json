@@ -271,5 +271,12 @@
     "fecha_deteccion": "2026-08-17T05:26:14.335485+00:00",
     "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Merida::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T08:07:34.890630+00:00",
+    "fecha_evento_temprana": "2026-08-17T01:35:10+00:00",
+    "municipio": null
   }
 }
