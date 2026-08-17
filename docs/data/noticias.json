@@ -1,6 +1,32 @@
 [
   {
     "tipo": "vialidad",
+    "ubicacion": "Barinas",
+    "municipio": "Cruz Paredes",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/",
+        "fecha": "2026-08-17T17:20:16+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T17:20:16+00:00",
+    "fecha_evento_temprana": "2026-08-17T17:20:16+00:00",
+    "fecha_deteccion": "2026-08-17T22:57:56.247281+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Barinas::2026-08-17",
+    "titulo": "Incidente vial en Municipio Cruz Paredes, Barinas",
+    "texto": "📌 Incidente vial en Municipio Cruz Paredes, Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Cruz Paredes, Barinas\n🕒 Hecho reportado: 17/08/2026, 1:20 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 6:57 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/"
+  },
+  {
+    "tipo": "vialidad",
     "ubicacion": "Monagas",
     "municipio": "Maturín",
     "parroquia": null,
