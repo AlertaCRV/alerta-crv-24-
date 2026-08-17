@@ -299,5 +299,19 @@
     "fecha_deteccion": "2026-08-17T15:00:19.043389+00:00",
     "fecha_evento_temprana": "2026-08-17T11:26:00+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T17:04:02.404753+00:00",
+    "fecha_evento_temprana": "2026-08-17T15:45:03+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Zulia::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T17:04:08.575192+00:00",
+    "fecha_evento_temprana": "2026-08-17T14:11:36+00:00",
+    "municipio": null
   }
 }

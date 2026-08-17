@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/cuando-terminaran-los-apagones-en-venezuela-esto-dice-la-administracion-de-delcy-rodriguez/",
+        "fecha": "2026-08-17T15:45:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T15:45:03+00:00",
+    "fecha_evento_temprana": "2026-08-17T15:45:03+00:00",
+    "fecha_deteccion": "2026-08-17T17:04:02.404753+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-17",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 17/08/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:04 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/cuando-terminaran-los-apagones-en-venezuela-esto-dice-la-administracion-de-delcy-rodriguez/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/por-que-hace-tanto-calor-este-agosto-en-venezuela-y-como-lo-enfrentan-los-ciudadanos/",
+        "fecha": "2026-08-17T14:11:36+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T14:11:36+00:00",
+    "fecha_evento_temprana": "2026-08-17T14:11:36+00:00",
+    "fecha_deteccion": "2026-08-17T17:04:08.575192+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Zulia::2026-08-17",
+    "titulo": "Falla de agua en Zulia",
+    "texto": "📌 Falla de agua en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 17/08/2026, 10:11 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:04 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/por-que-hace-tanto-calor-este-agosto-en-venezuela-y-como-lo-enfrentan-los-ciudadanos/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Distrito Capital",
     "municipio": null,

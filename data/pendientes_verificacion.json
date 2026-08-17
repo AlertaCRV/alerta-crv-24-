@@ -527,33 +527,17 @@
     "intentos": 2,
     "ultima_vez": "2026-08-17T15:00:15.990473+00:00"
   },
-  "infraestructura_electrica::Distrito Capital::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T15:57:29.332331+00:00"
-  },
-  "infraestructura_agua::Zulia::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T15:57:35.440477+00:00"
-  },
-  "infraestructura_electrica::Carabobo::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T15:57:53.770158+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-17": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-17T15:58:05.977803+00:00"
-  },
   "infraestructura_electrica::Zulia::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T15:57:32.382749+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T17:04:05.478341+00:00"
   },
   "inundacion::Distrito Capital::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T15:57:38.489936+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T17:04:11.636353+00:00"
   },
   "salud_publica::Portuguesa::2026-08-17": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-17T15:57:44.612724+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-17T17:04:17.767629+00:00"
   },
   "infraestructura_electrica::Barinas::2026-08-17": {
     "intentos": 1,
@@ -562,5 +546,21 @@
   "orden_publico::Yaracuy::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T15:57:50.714448+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T17:04:14.712262+00:00"
+  },
+  "infraestructura_agua::Apure::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T17:04:23.911768+00:00"
+  },
+  "inundacion::Miranda::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T17:04:26.970083+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-17": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-17T17:04:30.032549+00:00"
   }
 }

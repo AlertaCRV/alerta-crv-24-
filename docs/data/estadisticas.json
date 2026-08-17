@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-17T15:58:06.591706+00:00",
+  "actualizado": "2026-08-17T17:04:34.275719+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T13:22:54+00:00"
+    "hasta": "2026-08-17T15:45:03+00:00"
   },
-  "total_eventos": 145,
+  "total_eventos": 147,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 41,
+    "infraestructura_electrica": 42,
     "deslizamiento": 12,
     "colapso_estructural": 1,
     "orden_publico": 26,
@@ -20,12 +20,12 @@
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
-    "infraestructura_agua": 1
+    "infraestructura_agua": 2
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 25,
+      "total": 26,
       "confirmados": 4
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 11,
+      "total": 12,
       "confirmados": 4
     },
     {
@@ -152,7 +152,8 @@
       "inundacion": 2,
       "sequia": 1,
       "orden_publico": 1,
-      "sismo": 1
+      "sismo": 1,
+      "infraestructura_agua": 1
     },
     "Distrito Capital": {
       "deslizamiento": 3,
@@ -160,7 +161,7 @@
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
-      "infraestructura_electrica": 6
+      "infraestructura_electrica": 7
     },
     "Trujillo": {
       "inundacion": 1,
@@ -254,7 +255,7 @@
   "por_severidad": {
     "alto": 11,
     "critico": 12,
-    "sin_clasificar": 120,
+    "sin_clasificar": 122,
     "medio": 1,
     "bajo": 1
   },
@@ -268,7 +269,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 36
+      "2026-08": 37
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -308,7 +309,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 1
+      "2026-08": 2
     }
   }
 }
