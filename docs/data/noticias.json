@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/adultos-mayores-denuncian-que-sobreviven-con-una-pension-de-017-y-exigen-ser-incluidos-en-la-mesa-de-dialogo/",
+        "fecha": "2026-08-17T23:45:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-17T23:45:38+00:00",
+    "fecha_evento_temprana": "2026-08-17T23:45:38+00:00",
+    "fecha_deteccion": "2026-08-18T06:04:37.771044+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-08-17",
+    "titulo": "Orden público en Portuguesa",
+    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 17/08/2026, 7:45 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 2:04 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/adultos-mayores-denuncian-que-sobreviven-con-una-pension-de-017-y-exigen-ser-incluidos-en-la-mesa-de-dialogo/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas/?utm_source=rss&utm_medium=rss&utm_campaign=docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas",
+        "fecha": "2026-08-18T01:48:45+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T01:48:45+00:00",
+    "fecha_evento_temprana": "2026-08-18T01:48:45+00:00",
+    "fecha_deteccion": "2026-08-18T06:04:53.226950+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Bolivar::2026-08-18",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 17/08/2026, 9:48 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 2:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas/?utm_source=rss&utm_medium=rss&utm_campaign=docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas"
+  },
+  {
     "tipo": "vialidad",
     "ubicacion": "Barinas",
     "municipio": "Cruz Paredes",

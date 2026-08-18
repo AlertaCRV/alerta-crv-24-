@@ -1,11 +1,4 @@
 {
-  "orden_publico::Aragua::2026-08-15": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-15T06:00:54.141829+00:00",
-    "fecha_evento_temprana": "2026-08-15T00:57:04+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Monagas::2026-08-15": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -320,5 +313,19 @@
     "fecha_deteccion": "2026-08-17T22:57:56.247281+00:00",
     "fecha_evento_temprana": "2026-08-17T17:20:16+00:00",
     "municipio": "Cruz Paredes"
+  },
+  "orden_publico::Portuguesa::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T06:04:37.771044+00:00",
+    "fecha_evento_temprana": "2026-08-17T23:45:38+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T06:04:53.226950+00:00",
+    "fecha_evento_temprana": "2026-08-18T01:48:45+00:00",
+    "municipio": null
   }
 }
