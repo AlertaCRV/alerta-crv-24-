@@ -1,16 +1,16 @@
 {
-  "actualizado": "2026-08-18T06:05:15.620525+00:00",
+  "actualizado": "2026-08-18T17:06:20.556376+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T01:48:45+00:00"
+    "hasta": "2026-08-18T14:44:02+00:00"
   },
-  "total_eventos": 159,
+  "total_eventos": 163,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 44,
+    "infraestructura_electrica": 45,
     "deslizamiento": 12,
-    "colapso_estructural": 1,
+    "colapso_estructural": 2,
     "orden_publico": 31,
     "salud_publica": 5,
     "crisis_migratoria": 4,
@@ -18,14 +18,15 @@
     "vialidad": 5,
     "sismo": 6,
     "escasez_combustible": 1,
-    "sequia": 3,
+    "sequia": 4,
     "explosion": 1,
-    "infraestructura_agua": 2
+    "infraestructura_agua": 2,
+    "accidente_transporte": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 26,
+      "total": 27,
       "confirmados": 4
     },
     {
@@ -49,6 +50,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Anzoategui",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 8,
       "confirmados": 1
@@ -57,11 +63,6 @@
       "estado": "Carabobo",
       "total": 7,
       "confirmados": 1
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 7,
-      "confirmados": 0
     },
     {
       "estado": "Apure",
@@ -94,6 +95,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 5,
+      "confirmados": 1
+    },
+    {
       "estado": "Aragua",
       "total": 5,
       "confirmados": 0
@@ -104,18 +110,13 @@
       "confirmados": 0
     },
     {
-      "estado": "Nueva Esparta",
-      "total": 4,
-      "confirmados": 1
-    },
-    {
       "estado": "Tachira",
       "total": 3,
       "confirmados": 0
     },
     {
       "estado": "Merida",
-      "total": 2,
+      "total": 3,
       "confirmados": 0
     },
     {
@@ -171,7 +172,8 @@
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
-      "infraestructura_electrica": 7
+      "infraestructura_electrica": 7,
+      "colapso_estructural": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -197,7 +199,8 @@
       "infraestructura_electrica": 3,
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "sequia": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 4,
@@ -230,7 +233,8 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "accidente_transporte": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -250,7 +254,7 @@
       "infraestructura_electrica": 1
     },
     "Merida": {
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 3
     },
     "Guarico": {
       "sequia": 1
@@ -273,9 +277,9 @@
     }
   },
   "por_severidad": {
-    "alto": 13,
+    "alto": 14,
     "critico": 13,
-    "sin_clasificar": 131,
+    "sin_clasificar": 134,
     "medio": 1,
     "bajo": 1
   },
@@ -289,14 +293,15 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 39
+      "2026-08": 40
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 9
     },
     "colapso_estructural": {
-      "2026-07": 1
+      "2026-07": 1,
+      "2026-08": 1
     },
     "orden_publico": {
       "2026-07": 2,
@@ -323,13 +328,16 @@
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "explosion": {
       "2026-08": 1
     },
     "infraestructura_agua": {
       "2026-08": 2
+    },
+    "accidente_transporte": {
+      "2026-08": 1
     }
   }
 }
