@@ -635,36 +635,56 @@
     "intentos": 2,
     "ultima_vez": "2026-08-18T17:05:56.663676+00:00"
   },
-  "sismo::Distrito Capital::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T18:04:33.381303+00:00"
-  },
-  "sismo::La Guaira::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T18:04:39.541244+00:00"
-  },
   "sismo::Falcon::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T18:04:42.623748+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T19:40:47.504128+00:00"
   },
   "accidente_transporte::Nueva Esparta::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T18:04:45.699949+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T19:40:53.614718+00:00"
   },
   "colapso_estructural::Distrito Capital::2026-08-18": {
     "intentos": 1,
     "ultima_vez": "2026-08-18T18:04:48.760402+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T18:04:54.923341+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T19:40:59.737544+00:00"
   },
   "sequia::Anzoategui::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T18:04:58.011031+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T19:41:02.790662+00:00"
   },
   "orden_publico::Sucre::2026-08-18": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T19:41:05.836424+00:00"
+  },
+  "sismo::La Guaira::2026-08-18": {
     "intentos": 1,
-    "ultima_vez": "2026-08-18T18:05:01.088647+00:00"
+    "ultima_vez": "2026-08-18T19:40:35.275751+00:00"
+  },
+  "ataque_armado::Barinas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:40:41.395844+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:40:44.453114+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:40:50.562740+00:00"
+  },
+  "vialidad::Barinas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:40:56.671834+00:00"
+  },
+  "orden_publico::Barinas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:41:08.891342+00:00"
+  },
+  "incendio::Zulia::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T19:41:11.941205+00:00"
   }
 }
