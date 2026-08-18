@@ -639,36 +639,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-18T18:04:48.760402+00:00"
   },
-  "ataque_armado::Barinas::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:47:30.788346+00:00"
-  },
-  "infraestructura_electrica::Zulia::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:47:33.860631+00:00"
-  },
-  "deslizamiento::Guarico::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:47:49.178674+00:00"
-  },
-  "vialidad::Barinas::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:47:55.296171+00:00"
-  },
-  "orden_publico::Barinas::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:48:07.549085+00:00"
-  },
   "incendio::Zulia::2026-08-18": {
     "intentos": 1,
     "ultima_vez": "2026-08-18T19:41:11.941205+00:00"
   },
   "sismo::Distrito Capital::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T20:47:27.731002+00:00"
-  },
-  "sismo::La Guaira::2026-08-18": {
     "intentos": 1,
-    "ultima_vez": "2026-08-18T20:47:43.050034+00:00"
+    "ultima_vez": "2026-08-18T21:48:21.081181+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:36.424588+00:00"
+  },
+  "sismo::Falcon::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:39.480446+00:00"
+  },
+  "incendio::Apure::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:45.588117+00:00"
+  },
+  "salud_publica::La Guaira::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:48.656605+00:00"
+  },
+  "accidente_transporte::Nueva Esparta::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:51.702098+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:48:57.807900+00:00"
+  },
+  "sequia::Anzoategui::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:49:00.866200+00:00"
+  },
+  "orden_publico::Sucre::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T21:49:03.916713+00:00"
   }
 }
