@@ -623,13 +623,9 @@
     "intentos": 1,
     "ultima_vez": "2026-08-18T08:06:40.074294+00:00"
   },
-  "sismo::La Guaira::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T12:01:15.427261+00:00"
-  },
   "sismo::Distrito Capital::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T12:01:21.529664+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T14:10:19.864605+00:00"
   },
   "orden_publico::Bolivar::2026-08-18": {
     "intentos": 1,
@@ -642,5 +638,33 @@
   "infraestructura_electrica::Trujillo::2026-08-18": {
     "intentos": 1,
     "ultima_vez": "2026-08-18T12:01:30.647001+00:00"
+  },
+  "sismo::La Guaira::2026-08-18": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T14:10:13.720271+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:16.784895+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:22.921514+00:00"
+  },
+  "sismo::Falcon::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:25.979345+00:00"
+  },
+  "accidente_transporte::Nueva Esparta::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:29.043130+00:00"
+  },
+  "colapso_estructural::Distrito Capital::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:32.101121+00:00"
+  },
+  "sequia::Anzoategui::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T14:10:35.158929+00:00"
   }
 }
