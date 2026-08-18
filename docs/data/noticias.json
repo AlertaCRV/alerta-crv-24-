@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/617785/omar-mora-tosta-denuncia-limbo-judicial-en-casos-de-dignora-hernandez-y-henry-alviarez/",
+        "fecha": "2026-08-18T15:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T15:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:00:00+00:00",
+    "fecha_deteccion": "2026-08-18T21:48:24.154828+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Barinas::2026-08-18",
+    "titulo": "Ataque armado en Barinas",
+    "texto": "📌 Ataque armado en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 18/08/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 18/08/2026, 5:48 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/617785/omar-mora-tosta-denuncia-limbo-judicial-en-casos-de-dignora-hernandez-y-henry-alviarez/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tubazo Digital (Guarico)",
+        "link": "https://eltubazodigital.com/calabozo-se-derrumba-techo-de-casa-colonial/",
+        "fecha": "2026-08-18T18:13:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T18:13:29+00:00",
+    "fecha_evento_temprana": "2026-08-18T18:13:29+00:00",
+    "fecha_deteccion": "2026-08-18T21:48:42.532591+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Guarico::2026-08-18",
+    "titulo": "Deslizamiento/Derrumbe en Guarico",
+    "texto": "📌 Deslizamiento/Derrumbe en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 18/08/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 5:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tubazo Digital (Guarico): https://eltubazodigital.com/calabozo-se-derrumba-techo-de-casa-colonial/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Sucre",
     "municipio": "Cruz Salmerón Acosta",

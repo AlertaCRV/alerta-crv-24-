@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-18T20:48:08.148804+00:00",
+  "actualizado": "2026-08-18T21:49:08.178579+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T17:55:23+00:00"
+    "hasta": "2026-08-18T18:13:29+00:00"
   },
-  "total_eventos": 166,
+  "total_eventos": 168,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 45,
-    "deslizamiento": 12,
+    "deslizamiento": 13,
     "colapso_estructural": 2,
     "orden_publico": 33,
     "salud_publica": 5,
@@ -21,7 +21,8 @@
     "sequia": 4,
     "explosion": 1,
     "infraestructura_agua": 2,
-    "accidente_transporte": 1
+    "accidente_transporte": 1,
+    "ataque_armado": 1
   },
   "ranking_estados": [
     {
@@ -31,7 +32,7 @@
     },
     {
       "estado": "Barinas",
-      "total": 15,
+      "total": 16,
       "confirmados": 1
     },
     {
@@ -120,13 +121,13 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Guarico",
       "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Guarico",
-      "total": 1,
+      "estado": "La Guaira",
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -187,7 +188,8 @@
       "infraestructura_electrica": 4,
       "vialidad": 3,
       "sismo": 1,
-      "orden_publico": 3
+      "orden_publico": 3,
+      "ataque_armado": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -257,7 +259,8 @@
       "infraestructura_electrica": 3
     },
     "Guarico": {
-      "sequia": 1
+      "sequia": 1,
+      "deslizamiento": 1
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
@@ -279,7 +282,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 14,
-    "sin_clasificar": 136,
+    "sin_clasificar": 138,
     "medio": 1,
     "bajo": 1
   },
@@ -297,7 +300,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -337,6 +340,9 @@
       "2026-08": 2
     },
     "accidente_transporte": {
+      "2026-08": 1
+    },
+    "ataque_armado": {
       "2026-08": 1
     }
   }

@@ -341,5 +341,19 @@
     "fecha_deteccion": "2026-08-18T20:48:04.482705+00:00",
     "fecha_evento_temprana": "2026-08-18T17:55:23+00:00",
     "municipio": "Cruz Salmerón Acosta"
+  },
+  "ataque_armado::Barinas::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T21:48:24.154828+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:00:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Guarico::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T21:48:42.532591+00:00",
+    "fecha_evento_temprana": "2026-08-18T18:13:29+00:00",
+    "municipio": null
   }
 }
