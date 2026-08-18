@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-17T22:58:15.147647+00:00",
+  "actualizado": "2026-08-18T06:05:15.620525+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-17T19:54:04+00:00"
+    "hasta": "2026-08-18T01:48:45+00:00"
   },
-  "total_eventos": 157,
+  "total_eventos": 159,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 44,
     "deslizamiento": 12,
     "colapso_estructural": 1,
-    "orden_publico": 29,
+    "orden_publico": 31,
     "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 15,
@@ -45,7 +45,7 @@
     },
     {
       "estado": "Bolivar",
-      "total": 8,
+      "total": 9,
       "confirmados": 1
     },
     {
@@ -99,14 +99,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Portuguesa",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 4,
-      "confirmados": 0
     },
     {
       "estado": "Tachira",
@@ -201,7 +201,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 4,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "escasez_combustible": 1,
       "incendio": 2
     },
@@ -257,7 +257,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "inundacion": 1,
       "salud_publica": 1
     },
@@ -275,7 +275,7 @@
   "por_severidad": {
     "alto": 13,
     "critico": 13,
-    "sin_clasificar": 129,
+    "sin_clasificar": 131,
     "medio": 1,
     "bajo": 1
   },
@@ -300,7 +300,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 27
+      "2026-08": 29
     },
     "salud_publica": {
       "2026-07": 1,
