@@ -643,60 +643,32 @@
     "intentos": 1,
     "ultima_vez": "2026-08-18T19:41:11.941205+00:00"
   },
-  "infraestructura_electrica::Monagas::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:02.283275+00:00"
-  },
-  "sismo::Falcon::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:05.359920+00:00"
-  },
-  "incendio::Apure::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:11.539732+00:00"
-  },
-  "salud_publica::La Guaira::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:14.618325+00:00"
-  },
-  "accidente_transporte::Nueva Esparta::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:17.715993+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:23.910533+00:00"
-  },
-  "sequia::Anzoategui::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:27.000713+00:00"
-  },
-  "orden_publico::Sucre::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:57:30.087177+00:00"
-  },
   "ataque_armado::Barinas::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T22:56:49.901092+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T23:53:53.511543+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-18": {
     "intentos": 1,
     "ultima_vez": "2026-08-18T22:56:53.000729+00:00"
   },
-  "sismo::La Guaira::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T22:56:59.187486+00:00"
-  },
   "deslizamiento::Guarico::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T22:57:08.443496+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T23:54:09.126078+00:00"
   },
   "vialidad::Barinas::2026-08-18": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-18T22:57:20.813873+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T23:54:21.649525+00:00"
   },
   "orden_publico::Barinas::2026-08-18": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T23:54:34.153981+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-18": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-18T23:53:50.385525+00:00"
+  },
+  "sismo::La Guaira::2026-08-18": {
     "intentos": 1,
-    "ultima_vez": "2026-08-18T22:57:33.176264+00:00"
+    "ultima_vez": "2026-08-18T23:53:59.758442+00:00"
   }
 }

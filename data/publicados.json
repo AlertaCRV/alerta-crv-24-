@@ -348,5 +348,26 @@
     "fecha_deteccion": "2026-08-18T21:48:42.532591+00:00",
     "fecha_evento_temprana": "2026-08-18T18:13:29+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Monagas::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T23:54:02.874193+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:39:03+00:00",
+    "municipio": null
+  },
+  "incendio::Apure::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T23:54:12.263595+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:35:30+00:00",
+    "municipio": null
+  },
+  "salud_publica::La Guaira::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T23:54:15.377813+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:06:30+00:00",
+    "municipio": "Vargas"
   }
 }

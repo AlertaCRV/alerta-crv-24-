@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-18T21:49:08.178579+00:00",
+  "actualizado": "2026-08-18T23:54:35.659684+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T18:13:29+00:00"
+    "hasta": "2026-08-18T21:39:03+00:00"
   },
-  "total_eventos": 168,
+  "total_eventos": 171,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 45,
+    "infraestructura_electrica": 46,
     "deslizamiento": 13,
     "colapso_estructural": 2,
     "orden_publico": 33,
-    "salud_publica": 5,
+    "salud_publica": 6,
     "crisis_migratoria": 4,
-    "incendio": 15,
+    "incendio": 16,
     "vialidad": 6,
     "sismo": 6,
     "escasez_combustible": 1,
@@ -56,6 +56,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Apure",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 8,
       "confirmados": 1
@@ -71,7 +76,7 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
+      "estado": "Monagas",
       "total": 7,
       "confirmados": 0
     },
@@ -82,11 +87,6 @@
     },
     {
       "estado": "Trujillo",
-      "total": 6,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
       "total": 6,
       "confirmados": 0
     },
@@ -121,12 +121,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Guarico",
-      "total": 2,
+      "estado": "La Guaira",
+      "total": 3,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Guarico",
       "total": 2,
       "confirmados": 0
     },
@@ -215,14 +215,15 @@
       "inundacion": 3,
       "orden_publico": 1,
       "infraestructura_agua": 1,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "incendio": 1
     },
     "Tachira": {
       "deslizamiento": 1,
       "infraestructura_electrica": 2
     },
     "Monagas": {
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "salud_publica": 1,
       "vialidad": 1
     },
@@ -270,7 +271,8 @@
     },
     "La Guaira": {
       "deslizamiento": 1,
-      "sismo": 1
+      "sismo": 1,
+      "salud_publica": 1
     },
     "Amazonas": {
       "orden_publico": 1
@@ -282,7 +284,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 14,
-    "sin_clasificar": 138,
+    "sin_clasificar": 141,
     "medio": 1,
     "bajo": 1
   },
@@ -296,7 +298,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 40
+      "2026-08": 41
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -312,14 +314,14 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 4
+      "2026-08": 5
     },
     "crisis_migratoria": {
       "2026-07": 4
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 12
+      "2026-08": 13
     },
     "vialidad": {
       "2026-08": 6
