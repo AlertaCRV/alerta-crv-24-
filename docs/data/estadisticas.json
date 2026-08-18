@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-08-18T17:06:20.556376+00:00",
+  "actualizado": "2026-08-18T18:05:05.090382+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T14:44:02+00:00"
+    "hasta": "2026-08-18T15:15:00+00:00"
   },
-  "total_eventos": 163,
+  "total_eventos": 165,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 45,
     "deslizamiento": 12,
     "colapso_estructural": 2,
-    "orden_publico": 31,
+    "orden_publico": 32,
     "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 15,
-    "vialidad": 5,
+    "vialidad": 6,
     "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 4,
@@ -30,6 +30,11 @@
       "confirmados": 4
     },
     {
+      "estado": "Barinas",
+      "total": 15,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 14,
       "confirmados": 1
@@ -38,11 +43,6 @@
       "estado": "Zulia",
       "total": 13,
       "confirmados": 4
-    },
-    {
-      "estado": "Barinas",
-      "total": 13,
-      "confirmados": 1
     },
     {
       "estado": "Bolivar",
@@ -185,9 +185,9 @@
       "deslizamiento": 1,
       "inundacion": 3,
       "infraestructura_electrica": 4,
-      "vialidad": 2,
+      "vialidad": 3,
       "sismo": 1,
-      "orden_publico": 2
+      "orden_publico": 3
     },
     "Sucre": {
       "inundacion": 1,
@@ -278,8 +278,8 @@
   },
   "por_severidad": {
     "alto": 14,
-    "critico": 13,
-    "sin_clasificar": 134,
+    "critico": 14,
+    "sin_clasificar": 135,
     "medio": 1,
     "bajo": 1
   },
@@ -305,7 +305,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 29
+      "2026-08": 30
     },
     "salud_publica": {
       "2026-07": 1,
@@ -319,7 +319,7 @@
       "2026-08": 12
     },
     "vialidad": {
-      "2026-08": 5
+      "2026-08": 6
     },
     "sismo": {
       "2026-08": 6

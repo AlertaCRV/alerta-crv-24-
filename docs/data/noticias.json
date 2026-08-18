@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "vialidad",
+    "ubicacion": "Barinas",
+    "municipio": "Alberto Arvelo Torrealba",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/08/18/choque-frontal-en-la-autopista-jose-antonio-paez-de-barinas-dejo-tres-fallecidos-y-tres-heridos/",
+        "fecha": "2026-08-18T15:01:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T15:01:10+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:01:10+00:00",
+    "fecha_deteccion": "2026-08-18T18:04:51.840162+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Barinas::2026-08-17",
+    "titulo": "Incidente vial en Municipio Alberto Arvelo Torrealba, Barinas",
+    "texto": "📌 Incidente vial en Municipio Alberto Arvelo Torrealba, Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Alberto Arvelo Torrealba, Barinas\n🕒 Hecho reportado: 18/08/2026, 11:01 a.m.\n🔎 Detectado por el sistema: 18/08/2026, 2:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/18/choque-frontal-en-la-autopista-jose-antonio-paez-de-barinas-dejo-tres-fallecidos-y-tres-heridos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/18/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico-18ago/",
+        "fecha": "2026-08-18T15:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T15:15:00+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:15:00+00:00",
+    "fecha_deteccion": "2026-08-18T18:05:04.159988+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-18",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 18/08/2026, 11:15 a.m.\n🔎 Detectado por el sistema: 18/08/2026, 2:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/18/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico-18ago/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Merida",
     "municipio": "Campo Elías",
@@ -154,32 +206,6 @@
     "clave_dedup": "orden_publico::Bolivar::2026-08-18",
     "titulo": "Orden público en Bolivar",
     "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 17/08/2026, 9:48 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 2:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas/?utm_source=rss&utm_medium=rss&utm_campaign=docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Barinas",
-    "municipio": "Cruz Paredes",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/",
-        "fecha": "2026-08-17T17:20:16+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-17T17:20:16+00:00",
-    "fecha_evento_temprana": "2026-08-17T17:20:16+00:00",
-    "fecha_deteccion": "2026-08-17T22:57:56.247281+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "vialidad::Barinas::2026-08-17",
-    "titulo": "Incidente vial en Municipio Cruz Paredes, Barinas",
-    "texto": "📌 Incidente vial en Municipio Cruz Paredes, Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Cruz Paredes, Barinas\n🕒 Hecho reportado: 17/08/2026, 1:20 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 6:57 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/"
   },
   {
     "tipo": "vialidad",
