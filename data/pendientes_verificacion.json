@@ -625,10 +625,22 @@
   },
   "sismo::La Guaira::2026-08-18": {
     "intentos": 2,
-    "ultima_vez": "2026-08-18T11:02:42.284402+00:00"
+    "ultima_vez": "2026-08-18T12:01:15.427261+00:00"
   },
   "sismo::Distrito Capital::2026-08-18": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-18T11:02:51.756377+00:00"
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T12:01:21.529664+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T12:01:24.568859+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T12:01:27.609801+00:00"
+  },
+  "infraestructura_electrica::Trujillo::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T12:01:30.647001+00:00"
   }
 }
