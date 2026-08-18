@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-18T18:05:05.090382+00:00",
+  "actualizado": "2026-08-18T20:48:08.148804+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T15:15:00+00:00"
+    "hasta": "2026-08-18T17:55:23+00:00"
   },
-  "total_eventos": 165,
+  "total_eventos": 166,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 45,
     "deslizamiento": 12,
     "colapso_estructural": 2,
-    "orden_publico": 32,
+    "orden_publico": 33,
     "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 15,
@@ -65,6 +65,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Sucre",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 7,
       "confirmados": 0
@@ -76,11 +81,6 @@
     },
     {
       "estado": "Trujillo",
-      "total": 6,
-      "confirmados": 0
-    },
-    {
-      "estado": "Sucre",
       "total": 6,
       "confirmados": 0
     },
@@ -191,7 +191,7 @@
     },
     "Sucre": {
       "inundacion": 1,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_electrica": 1,
       "sismo": 1
     },
@@ -279,7 +279,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 14,
-    "sin_clasificar": 135,
+    "sin_clasificar": 136,
     "medio": 1,
     "bajo": 1
   },
@@ -305,7 +305,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 30
+      "2026-08": 31
     },
     "salud_publica": {
       "2026-07": 1,

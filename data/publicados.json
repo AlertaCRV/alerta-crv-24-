@@ -334,5 +334,12 @@
     "fecha_deteccion": "2026-08-18T18:05:04.159988+00:00",
     "fecha_evento_temprana": "2026-08-18T15:15:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Sucre::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T20:48:04.482705+00:00",
+    "fecha_evento_temprana": "2026-08-18T17:55:23+00:00",
+    "municipio": "Cruz Salmerón Acosta"
   }
 }
