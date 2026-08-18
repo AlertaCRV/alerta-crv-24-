@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/cachapas-de-el-zamuro-sabor-a-prueba-de-apagones/",
+        "fecha": "2026-08-18T21:39:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T21:39:03+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:39:03+00:00",
+    "fecha_deteccion": "2026-08-18T23:54:02.874193+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Monagas::2026-08-18",
+    "titulo": "Falla eléctrica en Monagas",
+    "texto": "📌 Falla eléctrica en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 18/08/2026, 5:39 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 7:54 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/cachapas-de-el-zamuro-sabor-a-prueba-de-apagones/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Apure",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/71-nuevos-bomberos-se-incorporan-al-cuerpo-de-bomberos-del-estado-apure/",
+        "fecha": "2026-08-18T21:35:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T21:35:30+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:35:30+00:00",
+    "fecha_deteccion": "2026-08-18T23:54:12.263595+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Apure::2026-08-18",
+    "titulo": "Incendio en Apure",
+    "texto": "📌 Incendio en Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 18/08/2026, 5:35 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 7:54 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/71-nuevos-bomberos-se-incorporan-al-cuerpo-de-bomberos-del-estado-apure/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/apure-instala-estado-mayor-para-caracterizar-su-rebano-bovino-y-avanzar-hacia-la-certificacion-libre-de-fiebre-aftosa/",
+        "fecha": "2026-08-18T21:06:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T21:06:30+00:00",
+    "fecha_evento_temprana": "2026-08-18T21:06:30+00:00",
+    "fecha_deteccion": "2026-08-18T23:54:15.377813+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::La Guaira::2026-08-18",
+    "titulo": "Salud pública en Municipio Vargas, La Guaira",
+    "texto": "📌 Salud pública en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 18/08/2026, 5:06 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 7:54 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/apure-instala-estado-mayor-para-caracterizar-su-rebano-bovino-y-avanzar-hacia-la-certificacion-libre-de-fiebre-aftosa/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Barinas",
     "municipio": null,
