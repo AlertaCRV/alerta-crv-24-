@@ -20,13 +20,6 @@
     "fecha_evento_temprana": "2026-08-16T15:54:35+00:00",
     "municipio": null
   },
-  "incendio::Distrito Capital::2026-08-15": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-15T17:49:03.755362+00:00",
-    "fecha_evento_temprana": "2026-08-15T15:43:10+00:00",
-    "municipio": null
-  },
   "incendio::Trujillo::2026-08-15": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -287,11 +280,11 @@
     "municipio": null
   },
   "vialidad::Barinas::2026-08-17": {
-    "severidad": "alto",
+    "severidad": "critico",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-17T22:57:56.247281+00:00",
-    "fecha_evento_temprana": "2026-08-17T17:20:16+00:00",
-    "municipio": "Cruz Paredes"
+    "fecha_deteccion": "2026-08-18T18:04:51.840162+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:01:10+00:00",
+    "municipio": "Alberto Arvelo Torrealba"
   },
   "orden_publico::Portuguesa::2026-08-17": {
     "severidad": "sin_clasificar",
@@ -333,6 +326,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-18T17:06:15.042143+00:00",
     "fecha_evento_temprana": "2026-08-18T13:09:14+00:00",
+    "municipio": null
+  },
+  "orden_publico::Barinas::2026-08-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-18T18:05:04.159988+00:00",
+    "fecha_evento_temprana": "2026-08-18T15:15:00+00:00",
     "municipio": null
   }
 }
