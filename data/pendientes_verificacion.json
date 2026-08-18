@@ -610,5 +610,65 @@
   "inundacion::Miranda::2026-08-17": {
     "intentos": 1,
     "ultima_vez": "2026-08-17T23:53:02.045180+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:00.706160+00:00"
+  },
+  "orden_publico::Portuguesa::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:03.756568+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:06.808969+00:00"
+  },
+  "sismo::La Guaira::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:09.860069+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:12.905003+00:00"
+  },
+  "orden_publico::Barinas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:15.950775+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:18.998526+00:00"
+  },
+  "vialidad::Monagas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:22.037723+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:25.089288+00:00"
+  },
+  "infraestructura_electrica::Trujillo::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:28.125147+00:00"
+  },
+  "salud_publica::Apure::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:31.181526+00:00"
+  },
+  "orden_publico::Amazonas::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:34.230187+00:00"
+  },
+  "infraestructura_electrica::Cojedes::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:37.274515+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:40.317803+00:00"
+  },
+  "orden_publico::Lara::2026-08-18": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-18T03:13:43.360481+00:00"
   }
 }
