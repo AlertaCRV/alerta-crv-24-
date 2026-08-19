@@ -708,19 +708,43 @@
     "ultima_vez": "2026-08-19T14:09:12.934317+00:00"
   },
   "infraestructura_electrica::Merida::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T17:03:05.215657+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T18:00:40.195785+00:00"
   },
   "deslizamiento::La Guaira::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T17:03:08.637327+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T18:00:43.631290+00:00"
   },
   "infraestructura_electrica::Monagas::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T17:03:12.982507+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T18:00:47.049816+00:00"
   },
   "infraestructura_electrica::Sucre::2026-08-19": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T18:00:50.505332+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-19": {
     "intentos": 1,
-    "ultima_vez": "2026-08-19T17:03:16.348042+00:00"
+    "ultima_vez": "2026-08-19T18:00:29.501350+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T18:00:32.910324+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T18:00:36.565160+00:00"
+  },
+  "infraestructura_agua::Anzoategui::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T18:01:02.095684+00:00"
+  },
+  "infraestructura_agua::Aragua::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T18:01:13.641441+00:00"
+  },
+  "inundacion::Portuguesa::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T18:01:25.146905+00:00"
   }
 }
