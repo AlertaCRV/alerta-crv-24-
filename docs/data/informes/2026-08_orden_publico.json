@@ -3,16 +3,20 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-11T18:07:53.589280+00:00",
-  "actualizado_hasta": "2026-08-11T04:54:08.854209+00:00",
-  "total_eventos": 13,
+  "generado": "2026-08-19T08:07:53.788292+00:00",
+  "actualizado_hasta": "2026-08-18T20:48:04.482705+00:00",
+  "total_eventos": 29,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 13
+    "actual": 29
   },
-  "narrativa": "En el período de 2026-08, se registraron un total de 13 eventos relacionados con el orden público en Venezuela, lo que supone un aumento significativo en comparación con el período anterior, 2026-07, cuando se registraron 2 eventos. Uno de los eventos destacados fue la protesta de familiares de presos políticos frente a la Cancillería en Caracas, donde exigieron la presencia de la CIDH y la Cruz Roja (El Impulso). Además, trabajadores y jubilados de la Gobernación de Lara se concentraron en Barquisimeto para exigir el pago del bono de profesionalización y rechazar el Sistema Patria (El Impulso). En varios estados del país, como Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar, se reportaron protestas por cortes eléctricos, con vecinos quemando neumáticos y tocando cacerolas en reclamo por la falta de electricidad (El Periodico de Monagas, El Pitazo). También se registraron manifestaciones en Carabobo y Aragua en rechazo a la crisis eléctrica, con cacerolazos y represión (El Pitazo). En el estado Nueva Esparta, específicamente en la Isla de Margarita, se llevaron a cabo manifestaciones por fallas en el servicio hídrico, con vecinos cerrando la avenida Taguantar en el municipio Díaz (El Tiempo). En el estado Anzoátegui, sectores de Cantaura realizaron una protesta pacífica por la falta de agua, que llevaban más de tres semanas sin el servicio (El Tiempo). En el estado Falcón, el sindicato Sintrasalud Falcón protestó por ser excluidos del bono de vacaciones (La Manana). Trabajadores de Cantv en Carabobo exigieron la reactivación de servicios de salud (La Patilla), mientras que el partido Vente Venezuela protestó en el estado Sucre por la precariedad de los servicios públicos, atribuyendo esta situación a la corrupción (La Patilla). Finalmente, sindicalistas exigieron que el diálogo entre el chavismo y la oposición sea público y con participación de todos los sectores (La Verdad).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 29 eventos de orden público, frente a los 2 registrados en julio del mismo año, lo que evidencia un notable incremento de la actividad manifestativa (Comparación con el período anterior). \n\nEn Barinas, el lunes 17 de agosto trabajadores del sector salud protestaron frente al Circuito Judicial Penal tras la detención de ocho profesionales del Hospital Doctor Luis Razetti, quienes fueron arrestados después de un accidente con una lámpara artesanal en el área de retén del centro asistencial (Diario La Nacion). \n\nEn la capital, familiares de presos políticos se concentraron frente a la Cancillería el 7 de agosto, exigiendo la presencia de la CIDH y la intervención de la Cruz Roja para garantizar el respeto a los derechos fundamentales de sus allegados (El Impulso). \n\nEn el estado Lara, jubilados y empleados de la Gobernación realizaron una marcha el 7 de agosto en la Plaza La Moneda de Barquisimeto, reclamando el pago inmediato del bono de profesionalización y la eliminación del Sistema Patria, así como el respeto a sus derechos socioeconómicos (El Impulso). \n\nLas fallas eléctricas provocaron protestas en al menos siete estados (Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar) la noche del 6 de agosto, donde los vecinos quemaron neumáticos, tocaron cacerolas y realizaron cacerolazos para denunciar los cortes prolongados de energía (El Periodico de Monagas; El Pitazo). En Carabobo y Aragua, los manifestantes también reportaron represión durante los cacerolazos del 3 de agosto (El Pitazo). \n\nPor otro lado, los jubilados de las salinas de Araya, en el municipio Cruz Salmerón Acosta del estado Sucre, anunciaron el 18 de agosto la posibilidad de iniciar una huelga de hambre y amarrarse al portón de la empresa tras 170 días de protesta sin respuesta a sus reclamos (El Impulso). Asimismo, manifestantes llegaron a la residencia de Perkins Rocha el 6 de agosto para exigir su libertad, señalando la negativa del gobierno a aplicar la Ley de Amnistía (El Pitazo).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico/"
+    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
@@ -20,6 +24,14 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/18/jubilados-de-las-salinas-de-araya-amenazan-con-una-huelga-de-hambre-y-amarrarse-al-porton-18ago/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -38,6 +50,18 @@
       "link": "https://elpitazo.net/politica/manifestantes-llegaron-a-la-casa-de-perkins-rocha-para-reclamar-su-libertad/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/fotos-protesta-y-piquete-de-la-pnb-a-las-afueras-del-melia-caracas-sede-del-dialogo-entre-an-2015-y-el-chavismo/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/adultos-mayores-denuncian-que-sobreviven-con-una-pension-de-017-y-exigen-ser-incluidos-en-la-mesa-de-dialogo/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/jubilados-de-cantv-mantienen-protestas-por-deuda-de-beneficios/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/margarita-inicia-la-semana-con-manifestaciones-por-fallas-en-el-servicio-hidrico/"
     },
@@ -46,8 +70,24 @@
       "link": "https://eltiempove.com/sectores-de-cantaura-realizaron-protesta-pacifica-por-la-falta-de-agua/"
     },
     {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/habitantes-de-yaguaraparo-en-sucre-realizaron-protestas-y-cacerolazos-por-la-crisis-electrica/"
+    },
+    {
       "nombre": "La Manana (Falcon)",
       "link": "https://lamananadigital.com/sintrasalud-falcon-protesta-por-ser-excluidos-del-bono-de-vacaciones/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/coalicion-sindical-marcho-en-caracas-para-exigir-calendario-electoral/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/sntp-denuncio-intimidacion-de-la-gnb-contra-tres-periodistas-tras-protesta-en-anzoategui/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/manifiestan-ante-colapsodel-sistema-electrico/"
     },
     {
       "nombre": "La Patilla",
@@ -58,12 +98,44 @@
       "link": "https://lapatilla.com/2026/08/08/vente-venezuela-protesta-en-sucre-precariedad-de-los-servicios-publicos-es-consecuencia-de-la-corrupcion/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/14/entrevista-a-jesus-gonzalez-sevilla-el-chavismo-debera-enfrentar-la-justicia-si-quiere-seguir-haciendo-politica/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/17/protestaron-frente-al-circuito-judicial-penal-de-barinas-durante-la-audiencia-de-un-medico-y-seis-enfermeras/"
+    },
+    {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
     },
     {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas/?utm_source=rss&utm_medium=rss&utm_campaign=docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/nacion/opositor-andres-velasquez-atribuyo-apagones-en-venezuela-a-la-corrupcion-y-no-a-la-crisis-climatica/"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/regionales/esto-cada-dia-empeora-mas-vecinos-de-el-playon-protestan-por-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=esto-cada-dia-empeora-mas-vecinos-de-el-playon-protestan-por-cortes-electricos"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/08/11/trancan-la-via-en-el-valle/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/biagio-pilieri-denuncia-el-colapso-electrico-que-asfixia-a-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=biagio-pilieri-denuncia-el-colapso-electrico-que-asfixia-a-venezuela"
     }
   ]
 }

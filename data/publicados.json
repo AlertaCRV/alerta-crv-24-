@@ -1,32 +1,4 @@
 {
-  "infraestructura_electrica::Monagas::2026-08-15": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T06:07:11.068632+00:00",
-    "fecha_evento_temprana": "2026-08-15T23:33:48+00:00",
-    "municipio": "Maturín"
-  },
-  "deslizamiento::Falcon::2026-08-15": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T07:51:03.187216+00:00",
-    "fecha_evento_temprana": "2026-08-15T22:35:00+00:00",
-    "municipio": "Unión"
-  },
-  "deslizamiento::Miranda::2026-08-15": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T07:50:38.911240+00:00",
-    "fecha_evento_temprana": "2026-08-15T22:57:12+00:00",
-    "municipio": "Zamora"
-  },
-  "orden_publico::Portuguesa::2026-08-15": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T07:52:20.038031+00:00",
-    "fecha_evento_temprana": "2026-08-15T23:46:25+00:00",
-    "municipio": "Santa Rosalía"
-  },
   "inundacion::Distrito Capital::2026-08-16": {
     "severidad": "critico",
     "confirmado": false,
