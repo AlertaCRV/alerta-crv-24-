@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "infraestructura_agua",
+  "tipo_label": "Falla de agua",
+  "cerrado": false,
+  "generado": "2026-08-19T03:20:45.745541+00:00",
+  "actualizado_hasta": "2026-08-17T11:58:26.243869+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el mes de agosto de 2026 se registró un único caso de falla de suministro de agua, contrastando con la ausencia total de incidentes en julio de 2026 (comparación con el período anterior). Este hecho se concentra en el sector Mereicito I, ubicado en Guasdualito, estado Apure (Turimiquire).\n\nLos habitantes de Mereicito I llevan casi dos meses sin recibir agua potable, una situación que ha generado dificultades en las actividades cotidianas de la población (Turimiquire). La escasez se debe a la avería de la bomba de 15 caballos de fuerza que abastece la zona, la cual quedó inoperativa tras ser alcanzada por un rayo (Turimiquire).\n\nSegún el responsable de la planta de tratamiento, Tito Nemes, la bomba original se quemó y, aunque se instalaron dos bombas de reemplazo, ambas resultaron defectuosas y no lograron restablecer el suministro (Turimiquire). Ante la falta de solución, el ingeniero a cargo retiró las bombas para entregarlas a la Alcaldía, con el objetivo de gestionar la adquisición de una nueva unidad que garantice el restablecimiento del servicio (Turimiquire).\n\nEn la actualidad, la comunidad sigue sin acceso al agua mientras se tramitan los procedimientos para obtener una bomba adecuada; las autoridades locales han sido notificadas y se espera una respuesta pronta para resolver la emergencia (Turimiquire).",
+  "fuentes": [
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/17/sin-agua-tienen-a-mereicito-i-en-el-estado-apure/"
+    }
+  ]
+}

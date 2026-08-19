@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-08",
+  "tipo": "colapso_estructural",
+  "tipo_label": "Colapso estructural",
+  "cerrado": false,
+  "generado": "2026-08-19T03:18:48.626745+00:00",
+  "actualizado_hasta": "2026-08-18T21:48:42.532591+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 1,
+    "actual": 2
+  },
+  "narrativa": "Durante el mes de agosto de 2026 se registraron dos incidentes de colapso estructural, duplicando la cifra del mes anterior, cuando sólo se reportó uno (comparación con el período anterior 2026-07: 1 evento(s) registrados entonces vs. 2 en este período). Ambos sucesos fueron vinculados a las intensas precipitaciones que afectaron distintas regiones del país.\n\nEn el Distrito Capital, las lluvias intensas de la noche del lunes provocaron el colapso parcial de una vivienda ubicada en el sector Carapita, parroquia Antímano del municipio Libertador. Los bomberos de Caracas evacuaron a los residentes y confirmaron que no hubo lesionados ni víctimas mortales (Primicia). El comandante general del Cuerpo de Bomberos del Distrito Capital, Pablo Palacios, destacó la rápida intervención del personal de seguridad para evitar riesgos mayores.\n\nEn el estado Guárico, específicamente en la localidad de Calabozo, la mañana del 18 de agosto se registró el derrumbe parcial del techo de una casa colonial situada en la calle 5 con carrera 7. El inmueble ya mostraba deterioro estructural y había sido acordonado con cintas amarillas de seguridad; sin embargo, las continuas precipitaciones debilitaron los materiales tradicionales y provocaron el colapso (El Tubazo Digital). No se reportaron heridos, pero el hecho subraya la vulnerabilidad de edificaciones antiguas ante eventos climáticos extremos.\n\nAmbos casos evidencian la necesidad de reforzar las inspecciones estructurales y de implementar medidas preventivas en zonas propensas a lluvias intensas. La Cruz Roja Venezolana continuará monitoreando la situación y brindando apoyo a las comunidades afectadas, priorizando la evacuación segura y la asistencia material cuando sea necesario.",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/lluvias-provocan-colapso-parcial-de-vivienda-en-carapita/"
+    },
+    {
+      "nombre": "El Tubazo Digital (Guarico)",
+      "link": "https://eltubazodigital.com/calabozo-se-derrumba-techo-de-casa-colonial/"
+    }
+  ]
+}

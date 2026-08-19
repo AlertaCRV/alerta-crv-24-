@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "accidente_transporte",
+  "tipo_label": "Accidente de transporte",
+  "cerrado": false,
+  "generado": "2026-08-19T03:18:22.447090+00:00",
+  "actualizado_hasta": "2026-08-18T17:06:02.794323+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el mes de agosto de 2026 se registró un único incidente de transporte marítimo, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún evento (Comparación con el período anterior). Este hecho corresponde a la única incidencia registrada en la categoría de accidentes de transporte para el período indicado.\n\nEl 18 de agosto de 2026, tres pescadores originarios de la Isla de Margarita sufrieron un naufragio frente a las costas del norte de Venezuela, en la zona de Choroní, estado Nueva Esparta (Reporte Confidencial). Las condiciones meteorológicas adversas, caracterizadas por intensas lluvias y fuerte oleaje, provocaron el anegamiento y la zozobra de la embarcación utilizada para la faena pesquera (Reporte Confidencial).\n\nTras el siniestro, equipos de rescate locales lograron localizar y salvar a los tres trabajadores del mar, quienes fueron evacuados a un centro de atención en la zona (Reporte Confidencial). No se reportaron heridos graves ni víctimas fatales, y los pescadores fueron atendidos médicamente antes de ser devueltos a sus actividades.\n\nEste incidente subraya la necesidad de reforzar los protocolos de seguridad y la vigilancia meteorológica para las comunidades pesqueras de la región, con el fin de prevenir futuros naufragios bajo condiciones climáticas adversas (Reporte Confidencial).",
+  "fuentes": [
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/08/18/rescatan-en-choroni-pescadores/"
+    }
+  ]
+}

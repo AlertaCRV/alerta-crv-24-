@@ -3,23 +3,31 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-08-16T11:48:06.701319+00:00",
-  "actualizado_hasta": "2026-08-12T05:17:03.873115+00:00",
-  "total_eventos": 2,
+  "generado": "2026-08-19T03:22:20.207402+00:00",
+  "actualizado_hasta": "2026-08-18T23:54:15.377813+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 1,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 2 eventos relacionados con la salud pública en Venezuela, lo que supone un aumento en comparación con el período anterior, julio de 2026, cuando se registró 1 evento (Maturin News). Uno de los eventos que destacan en este período es la situación de salud pública en Lara, catalogada como crítica (Maturin News). En este contexto, el Observatorio Venezolano de Prisiones (OVP) denunció la muerte de tres reclusos en centros penitenciarios de Carabobo, Miranda y Lara, y exigió investigar posibles omisiones que podrían haber retrasado su atención médica (Maturin News). Por otro lado, en el estado Monagas, específicamente en la comunidad de San Félix de Cantalicio, se denunció un brote de dengue, con al menos 15 personas presentando sintomatología asociada a la enfermedad, situación que se ha agravado por el incremento de lluvias y la falta de desmalezamiento en el sector (El Periodico de Monagas). Estos eventos resaltan la importancia de la atención a la salud pública en el país.",
+  "narrativa": "En el mes de agosto de 2026 se registraron cuatro eventos de salud pública, frente a solo uno en el período anterior de julio de 2026, lo que indica un aumento significativo de incidentes en el país (Comparación con el período anterior).\\n\\nEn el estado Lara, el Observatorio Venezolano de Prisiones denunció la muerte de tres reclusos bajo custodia estatal en centros penitenciarios de Carabobo, Miranda y Lara, identificados como Anthony José Portillo Gómez, Víctor José Salgado y Adrián Felipe, señalando una situación de gravedad crítica (Maturin News).\\n\\nEn el estado Portuguesa, la comunidad lamentó el fallecimiento de la niña violinista Romina Rivera Cruz, de 10 años, quien era una destacada ejecutante del violín dentro del Sistema de Orquestas Sinfónicas Juveniles e Infantiles; su muerte también fue catalogada como de severidad crítica (Portuguesa Reporta).\\n\\nOtros incidentes de salud pública se reportaron en Monagas, donde vecinos de San Félix de Cantalicio denunciaron un brote de dengue con al menos 15 casos confirmados, atribuidos al incremento de lluvias y la falta de desmalezamiento que favoreció la proliferación del mosquito vector (El Periodico de Monagas). Asimismo, en Apure se instaló un Estado Mayor para caracterizar el rebaño bovino y avanzar hacia la certificación del territorio como libre de fiebre aftosa, una medida orientada a prevenir enfermedades animales y proteger la salud pública (Notiapure).",
   "fuentes": [
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
     },
     {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/regionales/romina-rivera-la-nina-violinista-que-fue-ejemplo-de-vitalidad-y-amor-por-la-musica-deja-un-vacio-en-el-sistema-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=romina-rivera-la-nina-violinista-que-fue-ejemplo-de-vitalidad-y-amor-por-la-musica-deja-un-vacio-en-el-sistema-portuguesa"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/apure-instala-estado-mayor-para-caracterizar-su-rebano-bovino-y-avanzar-hacia-la-certificacion-libre-de-fiebre-aftosa/"
     }
   ]
 }

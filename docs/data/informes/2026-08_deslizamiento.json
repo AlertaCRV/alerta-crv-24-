@@ -3,19 +3,35 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-08-16T13:23:39.760038+00:00",
-  "actualizado_hasta": "2026-08-16T07:51:03.187216+00:00",
-  "total_eventos": 5,
+  "generado": "2026-08-19T03:19:15.253957+00:00",
+  "actualizado_hasta": "2026-08-17T15:57:41.560532+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 5
+    "actual": 7
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 5 eventos relacionados con deslizamientos y derrumbes en Venezuela, lo que representa un aumento en comparación con el período anterior, que tuvo 3 eventos registrados (La Patilla). Uno de los eventos que debemos mencionar explícitamente es el deslizamiento/derrumbe en Miranda, que tuvo una severidad alta (La Patilla). Además, se registraron más de 20 deslizamientos de tierra en el municipio Urdaneta del estado Lara, lo que ha obstruido la conexión vial entre Lara y Falcón debido a las intensas lluvias (El Luchador, Noticia al Dia, Turimiquire). Estos deslizamientos han causado graves afectaciones en la infraestructura vial y han dejado daños materiales en las vías de acceso (El Luchador, Noticia al Dia, Turimiquire). También se reportó una explosión en una tubería de gas en el conjunto residencial Las Bonitas II, en Valle Arriba, Guatire, estado Miranda, que dejó varias personas heridas y daños materiales (La Patilla).",
+  "narrativa": "En el mes de agosto de 2026 se registraron siete eventos de deslizamiento o derrumbe, duplicando la cifra del mes anterior, que había contabilizado tres incidentes (comparación con el período anterior). Este aumento refleja la intensificación de las precipitaciones en varias regiones del país y la consecuente vulnerabilidad de áreas urbanas y rurales.\n\nEn el estado Miranda se reportó un deslizamiento de alta severidad, según informó La Patilla (La Patilla). Las autoridades locales describieron daños materiales significativos en el conjunto residencial Las Bonitas II, aunque el informe se centró en la magnitud del fenómeno y la necesidad de atender a los afectados.\n\nEn el Distrito Capital, La Patilla describió un desprendimiento de rocas en el sector El Peñón, parroquia Macarao, que impactó una vivienda y provocó la muerte de una mujer de 49 años (La Patilla). El comandante general de los Bomberos de Caracas, Pablo Antonio Palacios Salazar, confirmó que la víctima estaba descansando cuando la piedra se desprendió del cerro, derribando la pared principal de su cuarto y colapsando el techo.\n\nOtro informe de La Prensa de Monagas también documentó un derrumbe en el mismo sector de Macarao, elevando a tres la cifra de fallecidos por el temporal en Caracas (La Prensa de Monagas). El cuerpo del tercer fallecido fue hallado en el sector El Peñón, y el comandante Palacios reiteró la gravedad del evento, señalando que los deslizamientos continúan afectando a distintas parroquias de la capital.",
   "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/"
+    },
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/15/explosion-sacudio-conjunto-residencial-en-guatire-y-dejo-multiples-heridos-imagenes/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/"
     },
     {
       "nombre": "El Luchador (Bolivar)",
