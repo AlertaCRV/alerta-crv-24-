@@ -715,28 +715,24 @@
     "intentos": 1,
     "ultima_vez": "2026-08-19T21:06:06.012279+00:00"
   },
-  "infraestructura_electrica::Bolivar::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T23:00:10.257997+00:00"
-  },
-  "sismo::Distrito Capital::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T23:00:20.686164+00:00"
-  },
   "deslizamiento::Distrito Capital::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T23:00:03.433587+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T23:56:29.249988+00:00"
   },
   "deslizamiento::La Guaira::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T23:00:06.903020+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T23:56:35.815210+00:00"
   },
   "infraestructura_electrica::Monagas::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T23:00:13.848768+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T23:56:42.622663+00:00"
   },
   "infraestructura_electrica::Sucre::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T23:00:24.186800+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T23:56:46.067457+00:00"
   }
 }
