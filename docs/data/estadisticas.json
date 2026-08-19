@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-19T11:59:27.474596+00:00",
+  "actualizado": "2026-08-19T15:52:57.750589+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-19T09:20:02+00:00"
+    "hasta": "2026-08-19T12:52:40+00:00"
   },
-  "total_eventos": 158,
+  "total_eventos": 160,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 26,
-    "infraestructura_electrica": 42,
+    "infraestructura_electrica": 44,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -55,6 +55,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Monagas",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 8,
       "confirmados": 1
@@ -63,11 +68,6 @@
       "estado": "Carabobo",
       "total": 7,
       "confirmados": 1
-    },
-    {
-      "estado": "Monagas",
-      "total": 7,
-      "confirmados": 0
     },
     {
       "estado": "Miranda",
@@ -85,6 +85,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Sucre",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 6,
       "confirmados": 0
@@ -93,11 +98,6 @@
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Sucre",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Nueva Esparta",
@@ -186,7 +186,7 @@
     "Sucre": {
       "inundacion": 1,
       "orden_publico": 3,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Anzoategui": {
       "infraestructura_electrica": 4,
@@ -212,7 +212,7 @@
       "infraestructura_electrica": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "salud_publica": 1,
       "vialidad": 1,
       "infraestructura_agua": 1
@@ -270,7 +270,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 15,
-    "sin_clasificar": 127,
+    "sin_clasificar": 129,
     "medio": 1,
     "bajo": 1
   },
@@ -284,7 +284,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 37
+      "2026-08": 39
     },
     "deslizamiento": {
       "2026-07": 3,
