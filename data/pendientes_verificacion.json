@@ -699,10 +699,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-19T11:59:26.217440+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T15:52:39.929579+00:00"
-  },
   "deslizamiento::Barinas::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T14:09:09.592121+00:00"
@@ -711,12 +707,20 @@
     "intentos": 1,
     "ultima_vez": "2026-08-19T14:09:12.934317+00:00"
   },
-  "infraestructura_agua::Anzoategui::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T15:52:53.420757+00:00"
+  "infraestructura_electrica::Merida::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T17:03:05.215657+00:00"
   },
-  "infraestructura_agua::Aragua::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T15:52:56.917597+00:00"
+  "deslizamiento::La Guaira::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T17:03:08.637327+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T17:03:12.982507+00:00"
+  },
+  "infraestructura_electrica::Sucre::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T17:03:16.348042+00:00"
   }
 }
