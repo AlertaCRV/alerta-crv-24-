@@ -145,6 +145,32 @@ _PIE_LEGAL_EDITORIAL_RE = re.compile(
 # otros 32 casos) para una porcion sustancial del corpus.
 _TRUNCADO_RE = re.compile(r"(…|\[\s*(?:\.\.\.|…)\s*\]|\.\.\.\s*$)\s*$")
 
+# El pie de pagina de "La Prensa de Lara" se autodescribe con una frase fija
+# ("La Prensa de Lara es un medio de comunicacion regional comprometido con
+# la verdad...") que aparece al final de PRACTICAMENTE TODOS sus articulos,
+# sin importar el tema o la ubicacion real de la noticia -- a diferencia de
+# otros pies de pagina ya cubiertos (nombre legal/RIF, "la entrada X se
+# publico primero en"), este contiene literalmente la palabra "Lara", que el
+# clasificador puede confundir con la ubicacion del hecho. Caso real
+# (16-08-2026, PASADO_POR_FALLA_TECNICA): un articulo integro sobre
+# inundaciones/deslizamientos en Chiba, JAPON (sin ninguna relacion con
+# Venezuela) generaba una alerta de deslizamiento en el estado Lara solo
+# porque el pie de pagina, mencionando "Lara" a menos de 35 palabras de
+# "deslizamientos de tierra", caia dentro de la ventana de proximidad. El
+# mismo dia, un articulo sobre inundaciones reales en Guacara, CARABOBO
+# generaba una segunda alerta identica en Lara por el mismo pie de pagina,
+# esta vez pegado justo despues de la mencion de dos fallecidos -- aun mas
+# cerca de la evidencia fuerte. Se verifico contra las 168 fuentes de data/
+# historico_fuentes_texto.jsonl que la frase es exclusiva de este medio, y
+# que articulos LEGITIMOS de Lara (ej. un incendio forestal en Sicarigua,
+# municipio Torres) siempre repiten el estado explicitamente en el cuerpo
+# del articulo ("municipio Torres del estado Lara"), asi que quitar el pie
+# de pagina no les hace perder esa evidencia real.
+_AUTODESCRIPCION_LA_PRENSA_DE_LARA_RE = re.compile(
+    r"\bla\s+prensa\s+de\s+lara\s+es\s+un\s+medio\s+de\s+comunicaci[oó]n.*$",
+    re.IGNORECASE | re.DOTALL,
+)
+
 # "Caracas" es alias de Distrito Capital, pero tambien se usa a diario en
 # sentido coloquial del area metropolitana, que incluye municipios reales
 # de Miranda (Chacao/Baruta/El Hatillo, ver LISTA_NEGRA_POR_ESTADO en
@@ -181,6 +207,7 @@ def _limpiar_texto(texto):
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _ARTICULOS_RELACIONADOS_RE.sub("", texto)
     texto = _PIE_LEGAL_EDITORIAL_RE.sub("", texto)
+    texto = _AUTODESCRIPCION_LA_PRENSA_DE_LARA_RE.sub("", texto)
     texto = _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)
     return re.sub(r"\s+", " ", texto).strip()
