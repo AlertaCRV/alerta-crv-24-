@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-19T06:05:50.606149+00:00",
+  "actualizado": "2026-08-19T11:59:27.474596+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-19T02:00:55+00:00"
+    "hasta": "2026-08-19T09:20:02+00:00"
   },
-  "total_eventos": 155,
+  "total_eventos": 158,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 26,
-    "infraestructura_electrica": 41,
+    "infraestructura_electrica": 42,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
-    "infraestructura_agua": 2,
+    "infraestructura_agua": 4,
     "accidente_transporte": 1
   },
   "ranking_estados": [
@@ -41,18 +41,18 @@
     },
     {
       "estado": "Zulia",
-      "total": 10,
+      "total": 11,
       "confirmados": 4
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 9,
+      "confirmados": 0
     },
     {
       "estado": "Bolivar",
       "total": 9,
       "confirmados": 1
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 8,
-      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -75,6 +75,11 @@
       "confirmados": 2
     },
     {
+      "estado": "Aragua",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
       "total": 6,
       "confirmados": 0
@@ -88,11 +93,6 @@
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Aragua",
-      "total": 6,
-      "confirmados": 0
     },
     {
       "estado": "Sucre",
@@ -153,7 +153,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
@@ -192,7 +192,8 @@
       "infraestructura_electrica": 4,
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "infraestructura_agua": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 4,
@@ -243,7 +244,8 @@
       "orden_publico": 2,
       "inundacion": 2,
       "infraestructura_electrica": 1,
-      "accidente_transporte": 1
+      "accidente_transporte": 1,
+      "infraestructura_agua": 1
     },
     "Merida": {
       "infraestructura_electrica": 3,
@@ -268,7 +270,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 15,
-    "sin_clasificar": 124,
+    "sin_clasificar": 127,
     "medio": 1,
     "bajo": 1
   },
@@ -282,7 +284,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 36
+      "2026-08": 37
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -323,7 +325,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 2
+      "2026-08": 4
     },
     "accidente_transporte": {
       "2026-08": 1
