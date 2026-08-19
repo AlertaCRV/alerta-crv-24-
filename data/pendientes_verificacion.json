@@ -692,35 +692,23 @@
     "ultima_vez": "2026-08-19T03:18:10.033811+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T08:07:07.828980+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T11:00:58.791389+00:00"
   },
   "deslizamiento::La Guaira::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T08:07:11.114733+00:00"
   },
-  "infraestructura_agua::Monagas::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T09:56:17.437597+00:00"
-  },
-  "inundacion::Merida::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T09:56:27.651212+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T09:56:31.132678+00:00"
-  },
   "infraestructura_electrica::Zulia::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T09:56:14.111110+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T11:00:55.119953+00:00"
   },
   "infraestructura_agua::Anzoategui::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T09:56:20.885371+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T11:01:05.546739+00:00"
   },
   "infraestructura_agua::Aragua::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T09:56:24.309659+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-19T11:01:08.923146+00:00"
   }
 }
