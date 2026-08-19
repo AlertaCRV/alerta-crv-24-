@@ -215,5 +215,26 @@
     "fecha_deteccion": "2026-08-19T06:05:48.089176+00:00",
     "fecha_evento_temprana": "2026-08-19T00:53:26+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-08-19": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-19T11:58:53.388872+00:00",
+    "fecha_evento_temprana": "2026-08-19T09:00:00+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Anzoategui::2026-08-19": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-19T11:59:07.884964+00:00",
+    "fecha_evento_temprana": "2026-08-19T09:20:02+00:00",
+    "municipio": "Aragua"
+  },
+  "infraestructura_agua::Aragua::2026-08-19": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-19T11:59:11.294560+00:00",
+    "fecha_evento_temprana": "2026-08-19T09:20:02+00:00",
+    "municipio": null
   }
 }
