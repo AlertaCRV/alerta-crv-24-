@@ -905,6 +905,78 @@ def _es_convocatoria_protesta_futura_sin_hecho_actual(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_SIN_CONVOCATORIA)
 
 
+# Caso real (19-08-2026, a pedido del usuario): "Todos los dias por 5 o 6
+# horas se va la luz", citado por una vendedora de cachapas en un articulo
+# sobre gastronomia en Monagas (sin ninguna relacion con una falla nueva),
+# generaba una alerta de infraestructura_electrica -- mismo patron de
+# fondo que la casa hogar de Tachira que pide donaciones (14-08-2026,
+# identificado como pendiente en la auditoria del 18-08-2026): una queja
+# CRONICA sobre apagones diarios, citada como contexto de un articulo cuyo
+# TEMA real es otro (comida, donaciones), sin ningun hecho electrico nuevo,
+# colectivo o institucional que la respalde como una alerta puntual.
+#
+# El desafio (tambien documentado en esa auditoria) es que el mismo
+# lenguaje ("todos los dias", "cortes constantes") tambien aparece en
+# coberturas REALES: protestas activas (con cacerolazos/manifestantes/
+# concentraciones), denuncias de una figura politica con datos concretos
+# (ej. un concejal alertando que los cortes ponen en riesgo a pacientes de
+# hemodialisis), o un incidente puntual nuevo (un transformador, una
+# parroquia con paralizacion total del servicio desde una fecha concreta).
+# Por eso el descarte exige la AUSENCIA de ambas: si el articulo tiene
+# evidencia de accion colectiva en curso o de un incidente nuevo y
+# especifico, no se descarta. Se descarto a proposito una tercera
+# categoria de escape ("figura politica citada") probada durante el
+# diseño de este filtro: un "gobernador"/"concejal" mencionado en
+# CUALQUIER parte del articulo -- no necesariamente relacionado con la
+# queja electrica -- evitaba el descarte por coincidencia. Caso real: la
+# casa hogar de Tachira (ver arriba) menciona al gobernador del estado en
+# el contexto de una ambulancia prometida, sin relacion alguna con los
+# apagones, y ese solo hecho bastaba para no descartarla. Se verifico
+# contra las 4 fuentes vigentes de infraestructura_electrica en data/
+# historico_fuentes_texto.jsonl que usan "todos los dias"/"a diario"
+# (protesta en 8 estados, PJ y su mapa, Andres Velasquez, y una alerta de
+# un concejal sobre pacientes renales en Zulia -- esta ultima sigue
+# publicandose con normalidad porque el mismo articulo tambien reporta
+# "la paralizacion total de la red energetica" en La Guajira, un incidente
+# especifico) que ninguna se ve afectada por el descarte final.
+_MARCADORES_QUEJA_CRONICA_ELECTRICA = [
+    "todos los dias", "todos los días", "a diario", "cada dia", "cada día",
+]
+_MARCADORES_ESCAPE_QUEJA_CRONICA_ELECTRICA = [
+    # Accion colectiva en curso.
+    "protesta", "protestas", "protestaron", "manifestantes",
+    "manifestacion", "manifestación", "cacerolazo", "cacerolazos",
+    "concentraron", "se concentraron", "marcha de protesta",
+    # Incidente nuevo y especifico.
+    "transformador", "explosion", "explosión",
+    "restablecer el suministro", "restablecer el servicio",
+    "cortocircuito", "corto circuito",
+    "poste caido", "poste caído", "poste derribado",
+    "cable caido", "cable caído",
+    "paralizacion total", "paralización total",
+    "paralisis total", "parálisis total",
+]
+
+
+def _es_queja_cronica_electrica_sin_hecho_verificable(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_QUEJA_CRONICA_ELECTRICA):
+        return False
+    if any(m in texto_norm for m in _MARCADORES_ESCAPE_QUEJA_CRONICA_ELECTRICA):
+        return False
+    # Un articulo-resumen de un tercero (mapa de PJ, informe de un
+    # observatorio...) que reparte cifras entre muchos estados YA tiene su
+    # propio mecanismo de precision por estado (ver
+    # _MARCADORES_RECLAMO_TERCERO_MULTIESTADO/_ventana_sin_evidencia_local_
+    # especifica, que SI distingue, estado por estado, cual mencion tiene
+    # evidencia local real -- ej. "municipio Libertador de Caracas denuncian
+    # fallas electricas" -- de cual es solo una cifra generica repartida).
+    # Este filtro, al evaluar el ARTICULO COMPLETO, no debe pisar ese
+    # mecanismo mas fino: si el articulo ya es de ese tipo, se cede el paso.
+    if any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_RECLAMO_TERCERO_MULTIESTADO):
+        return False
+    return True
+
+
 # Caso real (12-08-2026): "Artefacto explosivo en centro comercial de
 # Baruta" -- el titular sensacionalista disparaba tipo=explosion via la
 # palabra clave "artefacto explosivo", pero el propio texto aclara, varios
@@ -1993,6 +2065,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
                     break
                 if tipo == "explosion" and _es_cartucho_lacrimogeno_sin_explosivo_real(texto_completo_norm):
                     break

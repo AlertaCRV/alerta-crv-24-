@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-19T03:31:00.595845+00:00",
+  "actualizado": "2026-08-19T04:14:13.856845+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-18T18:13:29+00:00"
   },
-  "total_eventos": 150,
+  "total_eventos": 149,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 25,
-    "infraestructura_electrica": 41,
+    "infraestructura_electrica": 40,
     "deslizamiento": 10,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -110,13 +110,13 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
+      "estado": "Merida",
       "total": 3,
       "confirmados": 0
     },
     {
-      "estado": "Merida",
-      "total": 3,
+      "estado": "Tachira",
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -202,7 +202,7 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 1
     },
     "Monagas": {
       "infraestructura_electrica": 4,
@@ -257,7 +257,7 @@
   "por_severidad": {
     "alto": 13,
     "critico": 14,
-    "sin_clasificar": 121,
+    "sin_clasificar": 120,
     "medio": 1,
     "bajo": 1
   },
@@ -271,7 +271,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 36
+      "2026-08": 35
     },
     "deslizamiento": {
       "2026-07": 3,

@@ -7154,3 +7154,67 @@ precisamente, las señaladas por el usuario. `python3 -m pytest tests/` →
 411 passed, 6 xfailed (conocidos, sin relación), 1 xpassed (conocido, sin
 efecto real). `python3 scripts/validar_configs.py` → OK. `python3
 scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+
+## Filtro general para "queja crónica sobre apagones" vs. cobertura real de crisis eléctrica (19-08-2026, a pedido del usuario)
+
+Tras el hallazgo pendiente de la sección anterior (falla eléctrica en
+Monagas), el usuario pidió explícitamente construir el mecanismo general en
+vez de seguir corrigiendo caso por caso -- ya era la tercera vez que
+aparecía la misma ambigüedad (crónica de color con apagones crónicos de
+telón de fondo vs. cobertura real de una crisis eléctrica en curso).
+
+**Señal elegida**: no son las palabras usadas (ambos tipos de artículo dicen
+"todos los días"/"cortes de luz"), sino si el artículo describe una acción
+colectiva en curso o un incidente puntual y específico, más allá de la
+queja repetida de una sola persona sobre su rutina diaria.
+
+**Corrección**: nueva función
+`_es_queja_cronica_electrica_sin_hecho_verificable()` (`scripts/classify.py`),
+evaluada sobre el ARTÍCULO COMPLETO: si el texto tiene un marcador de queja
+crónica ("todos los días", "a diario", "cada día") Y no tiene NINGUNA de
+estas dos categorías de evidencia, se descarta el tipo:
+- **Acción colectiva en curso**: protesta/protestas/protestaron,
+  manifestantes, manifestación, cacerolazo/cacerolazos, se concentraron,
+  marcha de protesta.
+- **Incidente nuevo y específico**: transformador, explosión,
+  restablecer el suministro/servicio, cortocircuito, poste caído/derribado,
+  cable caído, paralización total, parálisis total.
+
+Se probó primero una tercera categoría de escape ("figura política citada":
+concejal/alcalde/gobernador/diputado), pero se descartó durante el diseño:
+un "gobernador" mencionado en CUALQUIER parte del artículo -- sin relación
+con la queja eléctrica -- evitaba el descarte por coincidencia (caso real:
+la casa hogar de Táchira menciona al gobernador del estado en el contexto
+de una ambulancia prometida, sin relación alguna con los apagones).
+
+También se descubrió, al probar contra el corpus vigente, que este filtro
+(al evaluar el artículo completo) pisaba el mecanismo YA EXISTENTE de
+precisión por estado para informes-mapa de terceros
+(`_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`, que sí distingue, estado por
+estado, cuál mención tiene evidencia local real de cuál es solo una cifra
+genérica repartida) -- el mapa de Primero Justicia (14-08-2026) reparte
+"apagones diarios... cada día" entre 12+ estados, pero también documenta
+evidencia local real para Distrito Capital ("municipio Libertador... "
+denuncian fallas eléctricas"), y el nuevo filtro lo descartaba igual. Se
+corrigió cediendo el paso: si el artículo ya es de ese tipo (contiene
+cualquiera de los marcadores de informe-mapa de terceros), este filtro no
+se aplica -- se deja que el mecanismo más fino, ya probado, decida.
+
+Se verificó contra las 4 fuentes vigentes de `data/historico_fuentes_texto.jsonl`
+que usan "todos los días"/"a diario"/"cada día" (protesta real en 8 estados,
+mapa de PJ, Andrés Velásquez, y una alerta de un concejal sobre pacientes
+renales en Zulia -- esta última sigue publicándose con normalidad porque el
+mismo artículo también reporta "la paralización total de la red energética"
+en La Guajira, un incidente específico) que ninguna se ve afectada por el
+descarte final.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Tachira::2026-08-16` (la casa hogar Carpintero
+de la Montaña, ya identificada como pendiente el 18-08-2026) de los 4
+archivos de datos.
+
+**Pruebas**: 5 casos nuevos en `tests/casos_clasificacion.jsonl` (2 reales +
+3 controles: protesta real con cacerolazo, incidente específico con
+transformador, e informe-mapa de un tercero con evidencia local real para
+un estado). `python3 -m pytest tests/` → 415 passed, 6 xfailed (conocidos),
+1 xpassed (conocido). `python3 scripts/validar_configs.py` → OK.

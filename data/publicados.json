@@ -83,13 +83,6 @@
     "fecha_evento_temprana": "2026-08-16T17:49:27+00:00",
     "municipio": "Torres"
   },
-  "infraestructura_electrica::Tachira::2026-08-16": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T20:57:49.150014+00:00",
-    "fecha_evento_temprana": "2026-08-16T16:16:23+00:00",
-    "municipio": "Francisco De Miranda"
-  },
   "infraestructura_electrica::Yaracuy::2026-08-16": {
     "severidad": "sin_clasificar",
     "confirmado": false,
