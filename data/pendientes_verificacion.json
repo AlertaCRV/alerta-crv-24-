@@ -670,5 +670,53 @@
   "sismo::La Guaira::2026-08-18": {
     "intentos": 1,
     "ultima_vez": "2026-08-18T23:53:59.758442+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:08.035841+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:11.549199+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:15.101238+00:00"
+  },
+  "infraestructura_agua::Monagas::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:18.531405+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:21.962426+00:00"
+  },
+  "colapso_estructural::Guarico::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:25.433352+00:00"
+  },
+  "incendio::Apure::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:28.881244+00:00"
+  },
+  "salud_publica::La Guaira::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:32.245460+00:00"
+  },
+  "inundacion::Merida::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:35.590822+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:47.048271+00:00"
+  },
+  "orden_publico::Sucre::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:17:58.542530+00:00"
+  },
+  "orden_publico::Barinas::2026-08-19": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-19T03:18:10.033811+00:00"
   }
 }

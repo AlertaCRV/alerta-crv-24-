@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-08-14T09:38:16.591019+00:00",
-  "actualizado_hasta": "2026-08-07T18:07:57.523641+00:00",
-  "total_eventos": 6,
+  "generado": "2026-08-19T03:20:20.208702+00:00",
+  "actualizado_hasta": "2026-08-18T23:54:12.263595+00:00",
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 6
+    "actual": 13
   },
-  "narrativa": "En el período de agosto de 2026, se registraron 6 eventos relacionados con incendios en Venezuela, lo que representa un aumento en comparación con el período anterior, julio de 2026, que tuvo 3 eventos registrados. Uno de los eventos más graves fue el incendio en Miranda, reportado por (La Prensa de Monagas), que tuvo una severidad alta. Otro evento destacado fue el incendio en Yaracuy, reportado por (La Prensa de Lara), que tuvo una severidad crítica y resultó en la muerte de dos hermanos debido a una explosión de gas, según (La Prensa de Lara). En el municipio Baruta, específicamente en Las Mercedes, un incendio en un edificio dejó dos personas lesionadas, como lo informó (La Prensa de Monagas). Además, se registraron incendios forestales en el estado Trujillo, particularmente en el municipio Carache, donde organismos de prevención y seguridad desplegaron operativos especiales para controlar el fuego, según (Ciudad Trujillo). También se reportó un incendio en un local comercial del Paseo Orinoco en Ciudad Bolívar, que dejó a varios trabajadores atrapados, como lo informaron (El Luchador) y (Primicia).",
+  "narrativa": "En el mes de agosto de 2026 se registraron trece incendios, una cifra que supera notablemente los tres eventos contabilizados en julio del mismo año (3 evento(s) registrados entonces vs. 13 en este período). Esta escalada se refleja en la diversidad de incidentes que afectaron tanto áreas urbanas como rurales del país.\n\nEl incendio de mayor gravedad ocurrió en el municipio Baruta, estado Miranda, dentro del edificio La Joya, ubicado entre la Avenida Principal de Las Mercedes y la calle París. El fuego estructural en el tercer piso dejó lesionadas a dos personas mayores, quienes fueron trasladadas de urgencia al centro asistencial más cercano tras la intervención de la Policía Nacional Bolivariana y el Cuerpo de Bomberos de Caracas (La Prensa de Monagas).\n\nEn el estado Yaracuy, una explosión de un cilindro de gas doméstico en Barquisimeto provocó un incendio que cobró la vida de dos hermanos, quienes sufrieron graves quemaduras antes de fallecer (La Prensa de Lara). Este suceso, catalogado como de severidad crítica, subraya la vulnerabilidad de los entornos residenciales ante fallas en equipos de gas.\n\nOtros incidentes relevantes incluyeron un incendio forestal de gran magnitud en el municipio Carache, estado Trujillo, donde el Cuerpo de Bomberos, Protección Civil y la Guardia Nacional Bolivariana desplegaron más de ciento ochenta funcionarios para controlar el fuego en zonas como Río Arriba y Cerro San Isidro (Ciudad Trujillo). Asimismo, en la capital se registró un incendio en un local comercial del sector Los Símbolos, en la avenida Los Ilustres, que generó congestión vehicular y requirió la actuación de los bomberos del Distrito Capital (El Pitazo).\n\nEn conjunto, las autoridades de protección civil y los cuerpos de bomberos han intensificado sus operaciones de respuesta y prevención, reforzando la coordinación interinstitucional para mitigar los efectos de los incendios y proteger a la población frente a esta creciente ola de emergencias.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -34,8 +34,36 @@
       "link": "https://elluchador.info/?p=317484"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/registran-incendio-en-local-comercial-de-caracas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/caracas-incendio-en-avenida-los-ilustres-genera-congestion-vial-hacia-plaza-venezuela/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/combaten-incendio-forestal-en-sicarigua/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/registran-incendio-dentro-de-un-local-comercial-tipo-panaderia-en-caracas/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/71-nuevos-bomberos-se-incorporan-al-cuerpo-de-bomberos-del-estado-apure/"
+    },
+    {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/rescatan-a-trabajadores-encerrados-durante-incendio-en-ciudad-bolivar/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/08/14/controlan-incendio-la-caracola/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-08-13T18:46:10.781772+00:00",
+  "generado": "2026-08-19T03:22:52.188004+00:00",
   "actualizado_hasta": "2026-08-13T15:42:43.311641+00:00",
   "total_eventos": 3,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 3
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron 3 eventos sísmicos en Venezuela y Colombia, en comparación con el período anterior (julio de 2026) en el que no se registraron eventos de esta naturaleza. Uno de los eventos más significativos fue un sismo de magnitud 7,4 que se registró en Colombia, específicamente en el departamento de Chocó, con epicentro en San José del Palmar (El Periodico de Monagas, La Verdad). Este sismo también se sintió en el Zulia, Venezuela (La Verdad). Además, se registraron tres sismos de baja y moderada magnitud en sectores de Lara, Trujillo y Barinas, sin provocar afectaciones en infraestructuras ni dejar personas heridas (Noticia al Dia). Otro sismo de magnitud 4,2 se registró en el centro-occidente de Venezuela, con una profundidad de 8,1 km, y se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia).",
+  "narrativa": "En el mes de agosto de 2026 se registraron tres eventos sísmicos, contrastando con la ausencia total de eventos en el mes anterior (0 evento(s) registrados entonces vs. 3 en este período). Esta cifra refleja una actividad sísmica notable para la zona, aunque sin reportes de víctimas graves.\n\nEl lunes 10 de agosto se produjo un sismo de magnitud 7,4 en el oeste de Colombia, cuyo epicentro se ubicó a 20 kilómetros de San José del Palmar, en el departamento de Chocó, a una profundidad de 96 kilómetros, según el Servicio Geológico Colombiano (El Periodico de Monagas). La magnitud del evento fue revisada y elevada de 6,7 a 7,4 en el segundo boletín emitido (El Periodico de Monagas). El temblor fue percibido en el estado Zulia de Venezuela a las 7:34 a.m. hora local (La Verdad (Zulia)).\n\nEl jueves 13 de agosto se registraron tres sismos de baja y moderada magnitud en los estados de Lara, Trujillo y Barinas (Noticia al Dia (Zulia)). Las autoridades de Protección Civil confirmaron que ninguno de estos temblores provocó daños en infraestructuras ni dejó personas heridas (Noticia al Dia (Zulia)).\n\nAdicionalmente, se reportó un sismo de magnitud 4,2 en el centro‑occidente del país, con una profundidad de 8,1 km (Primicia (Bolivar)). Este movimiento telúrico se sintió en los estados Yaracuy, Falcón, Lara y Carabobo, sin que se reportaran afectaciones significativas (Primicia (Bolivar)).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
