@@ -6986,3 +6986,171 @@ scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
 duplicados y fuentes muertas ya conocidos de sesiones anteriores, más los 2
 casos ya documentados arriba como pendientes de discutir
 (`orden_publico::Barinas::2026-08-17` vs `::Lara::2026-08-17`).
+
+## Auditoría a pedido del usuario (19-08-2026): 5 de 6 alertas señaladas eran falsas, incluyendo un apellido citado a distancia del verbo de atribución y una enfermedad exclusivamente animal
+
+El usuario señaló 6 alertas puntuales publicadas por el monitoreo automático
+(`PR #291`, corrida del 18-08-2026, después del fix de Groq de la auditoría
+anterior pero con eventos detectados ANTES de que ese fix llegara a
+producción) y pidió revisarlas, eliminar las que no fueran alertas reales, y
+ajustar el sistema para evitar que se repitan.
+
+### 1. Una ceremonia de graduación de bomberos se publicó como un incendio en Apure
+
+`incendio::Apure::2026-08-18` (Notiapure, "71 Nuevos Bomberos Se Incorporan
+Al Cuerpo De Bomberos Del Estado Apure") es una noticia institucional
+POSITIVA sobre la incorporación de 71 nuevos funcionarios egresados de la
+UNES -- disparaba tipo=incendio solo por la palabra "incendios" en la
+descripción genérica de las funciones del cuerpo de bomberos ("responder
+eficazmente ante emergencias, incendios y situaciones de riesgo"), sin que
+ningún fuego real esté ocurriendo.
+
+**Causa raíz**: `incendio` nunca había tenido un mecanismo de
+`_CONTEXTO_CONFLICTIVO_POR_TIPO`/evidencia fuerte propio (a diferencia de
+sismo, salud_publica, orden_publico, etc.), así que cualquier mención suelta
+de la palabra bastaba para generar una alerta.
+
+**Corrección**: nueva función
+`_es_anuncio_institucional_bomberos_sin_incendio_real()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO (el marcador
+institucional suele estar en el titular, lejos de donde aparece la palabra
+"incendios" en la descripción de funciones, fuera de la ventana de
+proximidad de 35 palabras): si el texto tiene un marcador de anuncio
+institucional de bomberos ("nuevos bomberos", "egresados de la UNES", "se
+incorporan al cuerpo de bomberos") y no hay evidencia fuerte de un incendio
+real (llamas, sofocar, heridos, fallecidos, quemaduras, evacuados,
+consumió), se descarta el tipo. También se creó por primera vez
+`_EVIDENCIA_FUERTE_POR_TIPO["incendio"]`, inexistente hasta ahora. Se
+verificó con un caso de control (una graduación real de bomberos que además
+combate un incendio real con heridos) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `incendio::Apure::2026-08-18`
+de los 4 archivos de datos.
+
+### 2. Un apellido ("Vargas") citado varias palabras antes del verbo de atribución generó una alerta de salud pública en La Guaira, sobre un censo de ganado en Apure
+
+`salud_publica::La Guaira::2026-08-18` (Notiapure, "Apure Instala Estado
+Mayor Para Caracterizar Su Rebaño Bovino... Libre De Fiebre Aftosa") es un
+artículo sobre un censo de ganado bovino/bufalino en el estado Apure, para
+avanzar hacia la certificación de Venezuela como territorio libre de fiebre
+aftosa (enfermedad EXCLUSIVAMENTE ANIMAL). Generaba dos errores
+combinados:
+
+- **Ubicación falsa**: "Julio César Vargas, directivo principal de
+  Criabúfalos de Venezuela, **destacó** el valor estratégico..." -- "Vargas"
+  (alias de La Guaira) es el apellido del vocero citado, con el verbo de
+  atribución ("destacó") a 7 palabras de distancia, no adyacente.
+  `_es_mencion_de_persona_citada()` (ya usado para el patrón análogo de
+  Bolívar/Miranda/Sucre) solo miraba la palabra INMEDIATAMENTE antes/después
+  del nombre -- no cubría este patrón, muy común en prensa venezolana, de
+  "Nombre Apellido, cargo o descripción breve, VERBO_DE_CITA que...".
+- **Tipo falso**: "erradicar la enfermedad" (fiebre aftosa) disparaba
+  tipo=salud_publica vía la palabra "enfermedad", sin que se trate de una
+  enfermedad humana.
+
+**Corrección**: `_es_mencion_de_persona_citada()` ahora busca el verbo de
+atribución hasta 12 tokens después del nombre (no solo el adyacente), y se
+agregó "destacó" (faltaba) a `_VERBOS_ATRIBUCION_CITA` -- corrección
+general que protege cualquier apellido-estado (Bolívar/Miranda/Sucre/Vargas)
+citado con esta redacción común, no solo este caso puntual. Además, se
+agregó "fiebre aftosa" y "enfermedad congénita" (ver hallazgo 4) a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO["salud_publica"]`. Se verificó con 2 casos
+de control: una cita genuina con el verbo adyacente (patrón ya cubierto)
+sigue funcionando, y una mención real y legítima del estado La Guaira (con
+evidencia sísmica local) sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `salud_publica::La
+Guaira::2026-08-18` de los 4 archivos de datos.
+
+### 3. Una protesta real frente a Corpoelec en Cojedes se publicó como falla eléctrica en vez de orden público
+
+`infraestructura_electrica::Cojedes::2026-08-17` (Notiapure, mismo artículo
+de Andrés Velásquez ya auditado el 18-08-2026 para el hallazgo de Amazonas)
+describe una protesta real y puntual: "...Cojedes, donde ciudadanos **se
+concentraron frente a las sedes regionales de Corpoelec** para rechazar los
+prolongados cortes de electricidad" -- a diferencia de Amazonas (negado
+explícitamente por el propio texto), Cojedes SÍ tiene una protesta real,
+pero la palabra clave más cercana a su mención es "Corpoelec"
+(infraestructura_electrica), no "protesta"/"manifestantes"
+(orden_publico), que aparecen varias frases antes, fuera de la ventana de
+proximidad.
+
+**Corrección**: nueva función `_es_protesta_electrica_con_tipo_incorrecto()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO con la frase
+exacta "se concentraron frente a las sedes regionales de corpoelec" --
+mismo patrón de reclasificación (no solo descarte) que
+`_es_derrumbe_de_techo_no_deslizamiento()`: el hecho SÍ es real, solo que
+del tipo equivocado, así que se agrega orden_publico en vez de perder el
+evento. Se verificó contra las 168 fuentes que la frase es exclusiva de
+este artículo.
+
+**Corrección retroactiva**: se reclasificó el evento a `orden_publico`
+(nueva clave `orden_publico::Cojedes::2026-08-17`) en los 4 archivos de
+datos, regenerando el texto de la alerta.
+
+### 4. El obituario de una niña violinista fallecida por una enfermedad congénita preexistente se publicó como salud pública crítica en Portuguesa
+
+`salud_publica::Portuguesa::2026-08-17` (Portuguesa Reporta, "Romina
+Rivera, la niña violinista... deja un vacío en «El Sistema» Portuguesa") es
+un homenaje/obituario a una niña de 10 años que "murió como consecuencia de
+una enfermedad congénita" -- una condición preexistente y crónica, no un
+brote ni una alarma sanitaria. Ya se había corregido un caso análogo
+(salud_publica::Apure, jornada preventiva de dengue) el 18-08-2026, pero
+este es un sub-patrón distinto: un obituario individual, no una campaña
+preventiva.
+
+**Corrección**: se agregó "enfermedad congenita"/"enfermedad congénita" a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO["salud_publica"]` (junto a "fiebre aftosa",
+ver hallazgo 2). Se verificó con un caso de control (un brote real de una
+enfermedad con casos confirmados y hospitalizados) que sigue publicándose
+con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`salud_publica::Portuguesa::2026-08-17` de los 4 archivos de datos.
+
+### Revisado sin cambios
+
+`colapso_estructural::Guarico::2026-08-18` (derrumbe de techo de una casa
+colonial en Calabozo): ya había sido corregido de raíz -- clasificado
+originalmente como deslizamiento, reclasificado a colapso_estructural -- en
+la auditoría automática del 18-08-2026 (`PR #292`, hallazgo 5). Se
+confirmó al usuario que esta alerta ya está correcta.
+
+### Pendiente de discutir
+
+**`infraestructura_electrica::Monagas::2026-08-18`** (El Periodico de
+Monagas, "Cachapas de El Zamuro: sabor a prueba de apagones" -- una crónica
+sobre vendedores de comida en El Zamuro, Monagas, que menciona de pasada
+"todos los días por 5 o 6 horas se va la luz" como contexto de fondo de su
+jornada laboral, sin describir ningún corte puntual y nuevo): se eliminó
+la alerta retroactivamente (no hay ningún incidente eléctrico nuevo que
+reportar), pero **no se construyó un filtro determinista general** para
+este patrón. Es la TERCERA vez que aparece esta misma ambigüedad de fondo
+("crónica/nota de color que usa una crisis crónica como telón de fondo,
+sin describir un hecho nuevo puntual") -- ya documentada como pendiente el
+18-08-2026 para el video de Biagio Pilieri en Yaracuy
+(`orden_publico::Yaracuy`/`infraestructura_electrica::Yaracuy`) y para la
+casa hogar de Táchira que pide donaciones por los apagones
+(`infraestructura_electrica::Tachira::Francisco De Miranda`). El desafío
+para generalizar un filtro es que el mismo tipo de lenguaje ("todos los
+días", "cortes eléctricos constantes") también aparece en coberturas
+REALES de protestas activas por la crisis eléctrica (ej.
+`orden_publico::Carabobo`, con cacerolazos y represión reales, que
+también cita a una vecina diciendo "no tenemos luz cinco y seis horas
+todos los días"). Distinguir "crónica de color sin hecho nuevo" de
+"cobertura real de una crisis en curso" de forma determinista, sin arriesgar
+descartar coberturas legítimas, requeriría un mecanismo más sofisticado que
+los filtros de frase específica ya usados. Con tres casos ya acumulados, se
+notifica al usuario para que decida si conviene invertir en ese mecanismo
+general ahora, o seguir corrigiendo caso por caso como hasta ahora.
+
+### Pruebas
+
+8 casos nuevos en `tests/casos_clasificacion.jsonl` (4 reales + 4 controles
+de los hallazgos 1, 2 y 4, y el caso reclasificado de Cojedes). Regresión
+completa contra las fuentes vigentes de `data/historico_fuentes_texto.jsonl`:
+sin cambios inesperados -- las únicas fuentes afectadas por los fixes son,
+precisamente, las señaladas por el usuario. `python3 -m pytest tests/` →
+411 passed, 6 xfailed (conocidos, sin relación), 1 xpassed (conocido, sin
+efecto real). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.

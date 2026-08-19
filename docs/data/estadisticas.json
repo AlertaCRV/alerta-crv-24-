@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-19T03:08:55.854501+00:00",
+  "actualizado": "2026-08-19T03:31:00.595845+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T21:39:03+00:00"
+    "hasta": "2026-08-18T18:13:29+00:00"
   },
-  "total_eventos": 154,
+  "total_eventos": 150,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 25,
-    "infraestructura_electrica": 43,
+    "infraestructura_electrica": 41,
     "deslizamiento": 10,
     "colapso_estructural": 3,
-    "orden_publico": 30,
-    "salud_publica": 5,
+    "orden_publico": 31,
+    "salud_publica": 3,
     "crisis_migratoria": 4,
-    "incendio": 16,
+    "incendio": 15,
     "vialidad": 6,
     "sismo": 3,
     "escasez_combustible": 1,
@@ -65,22 +65,22 @@
       "confirmados": 0
     },
     {
-      "estado": "Apure",
-      "total": 7,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
-      "total": 7,
-      "confirmados": 0
-    },
-    {
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
     },
     {
       "estado": "Trujillo",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
+      "estado": "Apure",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
+      "estado": "Monagas",
       "total": 6,
       "confirmados": 0
     },
@@ -100,14 +100,14 @@
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
-      "total": 5,
-      "confirmados": 0
-    },
-    {
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
+    },
+    {
+      "estado": "Portuguesa",
+      "total": 4,
+      "confirmados": 0
     },
     {
       "estado": "Tachira",
@@ -126,11 +126,6 @@
     },
     {
       "estado": "Cojedes",
-      "total": 1,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -203,15 +198,14 @@
       "crisis_migratoria": 1,
       "inundacion": 3,
       "orden_publico": 1,
-      "infraestructura_agua": 1,
-      "incendio": 1
+      "infraestructura_agua": 1
     },
     "Tachira": {
       "deslizamiento": 1,
       "infraestructura_electrica": 2
     },
     "Monagas": {
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 4,
       "salud_publica": 1,
       "vialidad": 1
     },
@@ -254,20 +248,16 @@
     "Portuguesa": {
       "infraestructura_electrica": 1,
       "orden_publico": 2,
-      "inundacion": 1,
-      "salud_publica": 1
+      "inundacion": 1
     },
     "Cojedes": {
-      "infraestructura_electrica": 1
-    },
-    "La Guaira": {
-      "salud_publica": 1
+      "orden_publico": 1
     }
   },
   "por_severidad": {
     "alto": 13,
-    "critico": 15,
-    "sin_clasificar": 124,
+    "critico": 14,
+    "sin_clasificar": 121,
     "medio": 1,
     "bajo": 1
   },
@@ -281,7 +271,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 38
+      "2026-08": 36
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -293,18 +283,18 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 28
+      "2026-08": 29
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 4
+      "2026-08": 2
     },
     "crisis_migratoria": {
       "2026-07": 4
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 13
+      "2026-08": 12
     },
     "vialidad": {
       "2026-08": 6
