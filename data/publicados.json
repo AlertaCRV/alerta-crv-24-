@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-08-16T22:31:10+00:00",
     "municipio": null
   },
-  "inundacion::Aragua::2026-08-16": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-16T14:59:04.921454+00:00",
-    "fecha_evento_temprana": "2026-08-16T14:16:36+00:00",
-    "municipio": null
-  },
   "inundacion::Portuguesa::2026-08-16": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -235,6 +228,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-19T11:59:11.294560+00:00",
     "fecha_evento_temprana": "2026-08-19T09:20:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Monagas::2026-08-19": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-19T15:52:46.622996+00:00",
+    "fecha_evento_temprana": "2026-08-19T12:52:40+00:00",
+    "municipio": "Punceres"
+  },
+  "infraestructura_electrica::Sucre::2026-08-19": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-19T15:52:50.066561+00:00",
+    "fecha_evento_temprana": "2026-08-19T11:00:10+00:00",
     "municipio": null
   }
 }
