@@ -132,13 +132,6 @@
     "fecha_evento_temprana": "2026-08-17T11:26:00+00:00",
     "municipio": null
   },
-  "salud_publica::Portuguesa::2026-08-17": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T18:08:16.393596+00:00",
-    "fecha_evento_temprana": "2026-08-17T15:51:55+00:00",
-    "municipio": "Araure"
-  },
   "orden_publico::Barinas::2026-08-17": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -159,13 +152,6 @@
     "fecha_deteccion": "2026-08-17T21:58:48.885230+00:00",
     "fecha_evento_temprana": "2026-08-17T18:21:03+00:00",
     "municipio": "Maturín"
-  },
-  "infraestructura_electrica::Cojedes::2026-08-17": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T21:59:07.810727+00:00",
-    "fecha_evento_temprana": "2026-08-17T18:06:54+00:00",
-    "municipio": null
   },
   "vialidad::Barinas::2026-08-17": {
     "severidad": "critico",
@@ -209,27 +195,6 @@
     "fecha_evento_temprana": "2026-08-18T17:55:23+00:00",
     "municipio": "Cruz Salmerón Acosta"
   },
-  "infraestructura_electrica::Monagas::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T23:54:02.874193+00:00",
-    "fecha_evento_temprana": "2026-08-18T21:39:03+00:00",
-    "municipio": null
-  },
-  "incendio::Apure::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T23:54:12.263595+00:00",
-    "fecha_evento_temprana": "2026-08-18T21:35:30+00:00",
-    "municipio": null
-  },
-  "salud_publica::La Guaira::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T23:54:15.377813+00:00",
-    "fecha_evento_temprana": "2026-08-18T21:06:30+00:00",
-    "municipio": "Vargas"
-  },
   "colapso_estructural::Guarico::2026-08-18": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -242,6 +207,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-18T17:06:02.794323+00:00",
     "fecha_evento_temprana": "2026-08-18T14:06:18+00:00",
+    "municipio": null
+  },
+  "orden_publico::Cojedes::2026-08-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-17T21:59:07.810727+00:00",
+    "fecha_evento_temprana": "2026-08-17T18:06:54+00:00",
     "municipio": null
   }
 }

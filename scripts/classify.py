@@ -475,6 +475,24 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # "dengue"/"enfermedades". Mismo patron que "prevenir enfermedades" (ya
     # cubierto arriba), con la frase especifica que usa este tipo de
     # jornada de control de vectores.
+    # Ampliado (19-08-2026, PASADO_POR_FALLA_TECNICA): "se instalo en el
+    # estado Apure el Estado Mayor para la Caracterizacion del Rebano
+    # Bovino... para avanzar hacia la certificacion internacional de
+    # Venezuela como territorio libre de FIEBRE AFTOSA" -- un censo de
+    # ganado bovino/bufalino disparaba tipo=salud_publica via la palabra
+    # "enfermedad" ("erradicar la enfermedad"), pero la fiebre aftosa es
+    # una enfermedad EXCLUSIVAMENTE ANIMAL (no afecta salud publica
+    # humana) -- ademas, el error se agravaba porque el vocero citado,
+    # "Julio Cesar Vargas", generaba una ubicacion falsa en La Guaira via
+    # el alias "Vargas" (ver _es_mencion_de_persona_citada).
+    #
+    # Ampliado (19-08-2026, mismo dia): "El Sistema de Orquestas... notifico
+    # el deceso de la niña Romina Rivera Cruz, de 10 años... murio como
+    # consecuencia de una ENFERMEDAD CONGENITA" -- un obituario/homenaje a
+    # una niña fallecida por una enfermedad congenita preexistente (no un
+    # brote, no una alarma sanitaria) disparaba tipo=salud_publica con
+    # severidad CRITICA solo por la palabra "enfermedad", pese a no haber
+    # nada que la Cruz Roja deba atender como emergencia de salud publica.
     "salud_publica": ["totalmente controlada", "enfermedad controlada",
                        "no existen registros confirmados",
                        "sin registros confirmados", "brote descartado",
@@ -483,7 +501,9 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
                        "tiempos de la pandemia", "durante la pandemia",
                        "desde la pandemia", "epoca de la pandemia",
                        "época de la pandemia",
-                       "abordaje preventivo", "jornada preventiva"],
+                       "abordaje preventivo", "jornada preventiva",
+                       "fiebre aftosa", "enfermedad congenita",
+                       "enfermedad congénita"],
     # Caso real (30-07-2026): "Venezuela entrego nota de protesta a Iran por
     # declaraciones de su canciller" -- una nota de protesta DIPLOMATICA
     # entre gobiernos, sin ninguna relacion con disturbios/orden publico en
@@ -517,6 +537,13 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
               "sacudio", "remezon"],
+    # Usada por _es_anuncio_institucional_bomberos_sin_incendio_real(): si
+    # ademas del anuncio institucional el articulo describe un incendio
+    # real en curso, esta evidencia evita descartar el tipo.
+    "incendio": ["llamas", "sofocar", "sofocado", "sofocaron",
+                 "controlar el incendio", "controlaron el incendio",
+                 "heridos", "lesionados", "fallecidos", "quemaduras",
+                 "evacuados", "evacuadas", "consumio", "consumió"],
     "colapso_estructural": ["colapso repentino", "colapso inesperado",
                             "heridos", "fallecidos", "atrapados bajo"],
     "explosion": ["explosion accidental", "explosion no controlada",
@@ -1021,6 +1048,58 @@ def _es_derrumbe_de_techo_no_deslizamiento(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# Caso real (19-08-2026, PASADO_POR_FALLA_TECNICA): "Un grupo de ciudadanos
+# protesto... Las movilizaciones se registraron de forma simultanea en al
+# menos ocho estados del pais, incluyendo... Cojedes, donde ciudadanos SE
+# CONCENTRARON FRENTE A LAS SEDES REGIONALES DE CORPOELEC para rechazar los
+# prolongados cortes de electricidad" -- Cojedes SI tiene una protesta real
+# y puntual (a diferencia de Amazonas en el mismo articulo, ya cubierto por
+# LISTA_NEGRA_POR_ESTADO -- ahi el propio texto NIEGA que haya
+# racionamiento), pero se publicaba como infraestructura_electrica en vez
+# de orden_publico: la palabra clave mas cercana a "Cojedes" es "corpoelec"
+# (keyword de infraestructura_electrica), no "protesta"/"manifestantes"
+# (keywords de orden_publico, que aparecen varias frases antes, fuera de la
+# ventana de proximidad). Igual que _es_derrumbe_de_techo_no_deslizamiento,
+# el hecho SI es real -- solo que del tipo equivocado -- asi que se
+# reclasifica en vez de perderse. Se verifico contra las 168 fuentes de
+# data/historico_fuentes_texto.jsonl que la frase completa es exclusiva de
+# este articulo.
+_MARCADORES_PROTESTA_ELECTRICA_TIPO_INCORRECTO = [
+    "se concentraron frente a las sedes regionales de corpoelec",
+]
+
+
+def _es_protesta_electrica_con_tipo_incorrecto(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_PROTESTA_ELECTRICA_TIPO_INCORRECTO)
+
+
+# Caso real (19-08-2026, PASADO_POR_FALLA_TECNICA): "71 Nuevos Bomberos Se
+# Incorporan Al Cuerpo De Bomberos Del Estado Apure... egresados de la
+# UNES... recibieron una preparacion integral que les permite responder
+# eficazmente ante emergencias, INCENDIOS y situaciones de riesgo" -- una
+# ceremonia de graduacion/incorporacion de nuevo personal (noticia
+# institucional POSITIVA, sin ningun fuego real) disparaba tipo=incendio
+# solo por la palabra "incendios" en la descripcion generica de las
+# funciones del cuerpo de bomberos. Se evalua sobre el ARTICULO COMPLETO
+# (no la ventana de proximidad): el marcador institucional suele estar en
+# el titular/inicio, lejos de donde aparece la palabra "incendios" en la
+# descripcion de funciones -- mismo motivo por el que
+# _es_anuncio_corpoelec_sin_falla tambien se evalua sobre el articulo
+# completo.
+_MARCADORES_ANUNCIO_INSTITUCIONAL_BOMBEROS = [
+    "nuevos bomberos", "nueva promocion de bomberos",
+    "nueva promoción de bomberos", "egresados de la unes",
+    "se incorporan al cuerpo de bomberos",
+]
+
+
+def _es_anuncio_institucional_bomberos_sin_incendio_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_ANUNCIO_INSTITUCIONAL_BOMBEROS):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("incendio", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 # Caso real (07-08-2026): "Gobernador Luis Caldera hizo entrega de 376
 # nuevos transformadores que seran distribuidos en todo el Zulia... para
 # fortalecer y optimizar el sistema electrico" -- un anuncio POSITIVO de
@@ -1475,7 +1554,25 @@ _VERBOS_ATRIBUCION_CITA = {
     "dijo", "afirmo", "explico", "alerto", "senalo", "indico", "declaro",
     "manifesto", "comento", "subrayo", "aseguro", "denuncio", "preciso",
     "advirtio", "reitero", "sostuvo", "recalco",
+    # Ampliado (19-08-2026): "destaco"/"destacó" faltaba -- ver caso real
+    # de "Vargas" mas abajo.
+    "destaco", "destacó",
 }
+
+# Ampliado (19-08-2026, PASADO_POR_FALLA_TECNICA): el chequeo original solo
+# miraba la palabra INMEDIATAMENTE antes/despues del nombre, lo que no
+# cubre el patron, muy comun en prensa venezolana, de "Nombre Apellido,
+# cargo o descripcion breve, VERBO_DE_CITA que..." -- el verbo casi nunca
+# queda pegado al nombre. Caso real: "Julio Cesar Vargas, directivo
+# principal de Criabufalos de Venezuela, destaco el valor estrategico de
+# la iniciativa" generaba una alerta de salud publica en el estado La
+# Guaira (alias "Vargas") en un articulo que trata enteramente sobre un
+# censo de ganado bovino en Apure -- "Vargas" es apellido del vocero
+# citado, no el estado. Se busca el verbo de atribucion hasta 12 tokens
+# despues del nombre (suficiente para cubrir un cargo/titulo breve entre
+# comas, sin extenderse tanto que empiece a alcanzar la cita de OTRA
+# persona mencionada mas adelante en el articulo).
+_VENTANA_VERBO_ATRIBUCION_CITA = 12
 
 
 def _es_mencion_de_persona_citada(tokens, pos):
@@ -1484,15 +1581,15 @@ def _es_mencion_de_persona_citada(tokens, pos):
     (ver comentario arriba), no nombrando el estado. Exige que la palabra
     inmediatamente anterior no sea un calificador de lugar conocido (para
     no descartar lugares reales como "Ciudad Bolivar" o "estado Bolivar")
-    Y que haya un verbo de atribucion de cita justo antes o justo
-    despues."""
+    Y que haya un verbo de atribucion de cita justo antes, justo despues,
+    o dentro de una ventana corta despues (ver _VENTANA_VERBO_ATRIBUCION_CITA)."""
     anterior = tokens[pos - 1] if pos > 0 else ""
     if anterior in _CALIFICADORES_LUGAR_ANTES_DE_NOMBRE:
         return False
     if anterior in _VERBOS_ATRIBUCION_CITA:
         return True
-    siguiente = tokens[pos + 1] if pos + 1 < len(tokens) else ""
-    return siguiente in _VERBOS_ATRIBUCION_CITA
+    ventana_siguiente = tokens[pos + 1: pos + 1 + _VENTANA_VERBO_ATRIBUCION_CITA]
+    return any(t in _VERBOS_ATRIBUCION_CITA for t in ventana_siguiente)
 
 
 def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None,
@@ -1907,16 +2004,23 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
                     break
+                if tipo == "infraestructura_electrica" and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
+                    break
+                if tipo == "incendio" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm):
+                    break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
                 break
-    # Ver _es_derrumbe_de_techo_no_deslizamiento(): a diferencia de los
-    # demas filtros decisivos de arriba (que solo descartan el tipo), este
-    # SI reclasifica -- el hecho sigue siendo una emergencia real, solo que
-    # del tipo correcto, asi que se agrega colapso_estructural en vez de
+    # Ver _es_derrumbe_de_techo_no_deslizamiento() y
+    # _es_protesta_electrica_con_tipo_incorrecto(): a diferencia de los
+    # demas filtros decisivos de arriba (que solo descartan el tipo), estos
+    # SI reclasifican -- el hecho sigue siendo una emergencia real, solo que
+    # del tipo correcto, asi que se agrega el tipo correcto en vez de
     # dejar el evento sin ningun tipo.
     if "colapso_estructural" not in tipos_encontrados and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
         tipos_encontrados.append("colapso_estructural")
+    if "orden_publico" not in tipos_encontrados and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
+        tipos_encontrados.append("orden_publico")
     return tipos_encontrados
 
 
