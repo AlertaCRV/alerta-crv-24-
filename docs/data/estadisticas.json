@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-19T20:04:35.223171+00:00",
+  "actualizado": "2026-08-19T21:06:06.436360+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-19T17:50:06+00:00"
+    "hasta": "2026-08-19T19:00:28+00:00"
   },
-  "total_eventos": 162,
+  "total_eventos": 163,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 44,
+    "infraestructura_electrica": 45,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -46,14 +46,14 @@
       "confirmados": 4
     },
     {
+      "estado": "Bolivar",
+      "total": 10,
+      "confirmados": 1
+    },
+    {
       "estado": "Anzoategui",
       "total": 9,
       "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
-      "total": 9,
-      "confirmados": 1
     },
     {
       "estado": "Monagas",
@@ -198,7 +198,7 @@
       "infraestructura_agua": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 2,
       "escasez_combustible": 1,
       "incendio": 2
@@ -272,7 +272,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 15,
-    "sin_clasificar": 131,
+    "sin_clasificar": 132,
     "medio": 1,
     "bajo": 1
   },
@@ -286,7 +286,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 39
+      "2026-08": 40
     },
     "deslizamiento": {
       "2026-07": 3,
