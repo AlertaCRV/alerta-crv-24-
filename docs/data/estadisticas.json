@@ -1,32 +1,32 @@
 {
-  "actualizado": "2026-08-19T04:14:13.856845+00:00",
+  "actualizado": "2026-08-19T06:05:50.606149+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-18T18:13:29+00:00"
+    "hasta": "2026-08-19T02:00:55+00:00"
   },
-  "total_eventos": 149,
+  "total_eventos": 155,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 25,
-    "infraestructura_electrica": 40,
-    "deslizamiento": 10,
+    "inundacion": 26,
+    "infraestructura_electrica": 41,
+    "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 31,
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 15,
     "vialidad": 6,
-    "sismo": 3,
+    "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 3,
     "explosion": 1,
-    "infraestructura_agua": 1,
+    "infraestructura_agua": 2,
     "accidente_transporte": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 26,
+      "total": 28,
       "confirmados": 4
     },
     {
@@ -50,6 +50,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Anzoategui",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 8,
       "confirmados": 1
@@ -60,7 +65,7 @@
       "confirmados": 1
     },
     {
-      "estado": "Anzoategui",
+      "estado": "Monagas",
       "total": 7,
       "confirmados": 0
     },
@@ -76,11 +81,6 @@
     },
     {
       "estado": "Apure",
-      "total": 6,
-      "confirmados": 0
-    },
-    {
-      "estado": "Monagas",
       "total": 6,
       "confirmados": 0
     },
@@ -105,13 +105,13 @@
       "confirmados": 1
     },
     {
-      "estado": "Portuguesa",
+      "estado": "Merida",
       "total": 4,
       "confirmados": 0
     },
     {
-      "estado": "Merida",
-      "total": 3,
+      "estado": "Portuguesa",
+      "total": 4,
       "confirmados": 0
     },
     {
@@ -126,6 +126,11 @@
     },
     {
       "estado": "Cojedes",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -156,13 +161,14 @@
       "sismo": 1
     },
     "Distrito Capital": {
-      "deslizamiento": 3,
+      "deslizamiento": 4,
       "inundacion": 5,
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
       "infraestructura_electrica": 6,
-      "colapso_estructural": 1
+      "colapso_estructural": 1,
+      "sismo": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -183,7 +189,7 @@
       "infraestructura_electrica": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2
@@ -207,7 +213,8 @@
     "Monagas": {
       "infraestructura_electrica": 4,
       "salud_publica": 1,
-      "vialidad": 1
+      "vialidad": 1,
+      "infraestructura_agua": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -239,7 +246,8 @@
       "accidente_transporte": 1
     },
     "Merida": {
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 3,
+      "inundacion": 1
     },
     "Guarico": {
       "sequia": 1,
@@ -252,12 +260,15 @@
     },
     "Cojedes": {
       "orden_publico": 1
+    },
+    "La Guaira": {
+      "deslizamiento": 1
     }
   },
   "por_severidad": {
-    "alto": 13,
-    "critico": 14,
-    "sin_clasificar": 120,
+    "alto": 14,
+    "critico": 15,
+    "sin_clasificar": 124,
     "medio": 1,
     "bajo": 1
   },
@@ -267,15 +278,15 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 18
+      "2026-08": 19
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 35
+      "2026-08": 36
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 7
+      "2026-08": 9
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -300,7 +311,7 @@
       "2026-08": 6
     },
     "sismo": {
-      "2026-08": 3
+      "2026-08": 4
     },
     "escasez_combustible": {
       "2026-08": 1
@@ -312,7 +323,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "accidente_transporte": {
       "2026-08": 1

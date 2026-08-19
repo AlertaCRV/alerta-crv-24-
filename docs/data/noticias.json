@@ -1,5 +1,165 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Antimano",
+    "severidad": "alto",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/",
+        "fecha": "2026-08-18T19:13:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-18T19:13:09+00:00",
+    "fecha_evento_temprana": "2026-08-18T19:13:09+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:27.642492+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [
+      "La Guaira"
+    ],
+    "clave_dedup": "sismo::Distrito Capital::2026-08-18",
+    "titulo": "Sismo en Parroquia Antimano, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Sismo en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 18/08/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/",
+        "fecha": "2026-08-19T00:30:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T00:30:17+00:00",
+    "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:30.992642+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
+    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 18/08/2026, 8:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/",
+        "fecha": "2026-08-19T00:30:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T00:30:17+00:00",
+    "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:34.453309+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-08-19",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 18/08/2026, 8:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Monagas",
+    "municipio": "Piar",
+    "parroquia": "Chaguaramal",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/",
+        "fecha": "2026-08-19T00:00:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T00:00:59+00:00",
+    "fecha_evento_temprana": "2026-08-19T00:00:59+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:38.006462+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Monagas::2026-08-19",
+    "titulo": "Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas",
+    "texto": "📌 Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Chaguaramal, Municipio Piar, Monagas\n🕒 Hecho reportado: 18/08/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Merida",
+    "municipio": "Libertador",
+    "parroquia": "Milla",
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html",
+        "fecha": "2026-08-19T02:00:55+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T02:00:55+00:00",
+    "fecha_evento_temprana": "2026-08-19T02:00:55+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:44.744012+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Merida::2026-08-19",
+    "titulo": "Inundación en Parroquia Milla, Municipio Libertador, Merida",
+    "texto": "📌 Inundación en Parroquia Milla, Municipio Libertador, Merida\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Milla, Municipio Libertador, Merida\n🕒 Hecho reportado: 18/08/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/08/18/atienden-fallas-electricas-en-varios-sectores-de-lecheria-anzoategui/",
+        "fecha": "2026-08-19T00:53:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T00:53:26+00:00",
+    "fecha_evento_temprana": "2026-08-19T00:53:26+00:00",
+    "fecha_deteccion": "2026-08-19T06:05:48.089176+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-19",
+    "titulo": "Falla eléctrica en Anzoategui",
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 18/08/2026, 8:53 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/18/atienden-fallas-electricas-en-varios-sectores-de-lecheria-anzoategui/"
+  },
+  {
     "tipo": "colapso_estructural",
     "ubicacion": "Guarico",
     "municipio": null,
@@ -320,37 +480,6 @@
     "clave_dedup": "orden_publico::Lara::2026-08-17",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 17/08/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/17/denuncia-ovp-director-de-injuba-destituido-por-presuntos-tratos-crueles-ahora-es-subdirector-de-fenix-lara-17ago/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Macarao",
-    "severidad": "critico",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/",
-        "fecha": "2026-08-17T12:55:41+00:00"
-      },
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/",
-        "fecha": "2026-08-17T13:22:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-17T13:22:54+00:00",
-    "fecha_evento_temprana": "2026-08-17T12:55:41+00:00",
-    "fecha_deteccion": "2026-08-17T15:57:41.560532+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Macarao, Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Macarao, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Macarao, Distrito Capital\n🕒 Hecho reportado: 17/08/2026, 9:22 a.m.\n🔎 Detectado por el sistema: 17/08/2026, 11:57 a.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/"
   },
   {
     "tipo": "orden_publico",
