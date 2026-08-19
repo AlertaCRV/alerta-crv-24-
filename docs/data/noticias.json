@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/transparencia-venezuela-alerta-sobre-irregularidades-en-sobreseimientos-del-clan-convit-y-detencion-de-jueces/",
+        "fecha": "2026-08-19T17:50:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T17:50:06+00:00",
+    "fecha_evento_temprana": "2026-08-19T17:50:06+00:00",
+    "fecha_deteccion": "2026-08-19T20:03:43.215220+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Distrito Capital::2026-08-19",
+    "titulo": "Ataque armado en Distrito Capital",
+    "texto": "📌 Ataque armado en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 19/08/2026, 1:50 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/transparencia-venezuela-alerta-sobre-irregularidades-en-sobreseimientos-del-clan-convit-y-detencion-de-jueces/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/",
+        "fecha": "2026-08-19T17:30:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-19T17:30:37+00:00",
+    "fecha_evento_temprana": "2026-08-19T17:30:37+00:00",
+    "fecha_deteccion": "2026-08-19T20:04:34.055961+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Portuguesa::2026-08-19",
+    "titulo": "Inundación en Portuguesa",
+    "texto": "📌 Inundación en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 19/08/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Monagas",
     "municipio": "Punceres",
@@ -2508,57 +2560,5 @@
     "clave_dedup": "incendio::Trujillo::2026-08-06",
     "titulo": "Incendio en Parroquia La Concepción, Municipio Carache, Trujillo",
     "texto": "📌 Incendio en Parroquia La Concepción, Municipio Carache, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Concepción, Municipio Carache, Trujillo\n🕒 Hecho reportado: 05/08/2026, 8:33 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 4:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=53972"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": "Alta Guajira",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/",
-        "fecha": "2026-08-05T17:53:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-05T17:53:32+00:00",
-    "fecha_evento_temprana": "2026-08-05T17:53:32+00:00",
-    "fecha_deteccion": "2026-08-05T18:11:04.604670+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "sequia::Zulia::2026-08-05",
-    "titulo": "Sequía en Parroquia Alta Guajira, Zulia",
-    "texto": "📌 Sequía en Parroquia Alta Guajira, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Alta Guajira, Zulia\n🕒 Hecho reportado: 05/08/2026, 1:53 p.m.\n🔎 Detectado por el sistema: 05/08/2026, 2:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/05/pozos-secos-y-animales-muertos-alta-guajira-comienza-a-sufrir-los-estragos-de-el-nino/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Yaracuy",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/sucesos/hermanos-pierden-la-vida-explosion-gas/",
-        "fecha": "2026-08-05T13:32:39+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-05T13:32:39+00:00",
-    "fecha_evento_temprana": "2026-08-05T13:32:39+00:00",
-    "fecha_deteccion": "2026-08-05T18:11:11.802437+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Yaracuy::2026-08-05",
-    "titulo": "Incendio en Yaracuy",
-    "texto": "📌 Incendio en Yaracuy\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 05/08/2026, 9:32 a.m.\n🔎 Detectado por el sistema: 05/08/2026, 2:11 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/sucesos/hermanos-pierden-la-vida-explosion-gas/"
   }
 ]

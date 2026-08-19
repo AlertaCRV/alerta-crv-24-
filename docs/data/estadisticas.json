@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-19T15:52:57.750589+00:00",
+  "actualizado": "2026-08-19T20:04:35.223171+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-19T12:52:40+00:00"
+    "hasta": "2026-08-19T17:50:06+00:00"
   },
-  "total_eventos": 160,
+  "total_eventos": 162,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 26,
+    "inundacion": 27,
     "infraestructura_electrica": 44,
     "deslizamiento": 12,
     "colapso_estructural": 3,
@@ -21,12 +21,13 @@
     "sequia": 3,
     "explosion": 1,
     "infraestructura_agua": 4,
-    "accidente_transporte": 1
+    "accidente_transporte": 1,
+    "ataque_armado": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 28,
+      "total": 29,
       "confirmados": 4
     },
     {
@@ -100,17 +101,17 @@
       "confirmados": 1
     },
     {
+      "estado": "Portuguesa",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
     },
     {
       "estado": "Merida",
-      "total": 4,
-      "confirmados": 0
-    },
-    {
-      "estado": "Portuguesa",
       "total": 4,
       "confirmados": 0
     },
@@ -168,7 +169,8 @@
       "vialidad": 1,
       "infraestructura_electrica": 6,
       "colapso_estructural": 1,
-      "sismo": 1
+      "sismo": 1,
+      "ataque_armado": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -258,7 +260,7 @@
     "Portuguesa": {
       "infraestructura_electrica": 1,
       "orden_publico": 2,
-      "inundacion": 1
+      "inundacion": 2
     },
     "Cojedes": {
       "orden_publico": 1
@@ -270,7 +272,7 @@
   "por_severidad": {
     "alto": 14,
     "critico": 15,
-    "sin_clasificar": 129,
+    "sin_clasificar": 131,
     "medio": 1,
     "bajo": 1
   },
@@ -280,7 +282,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 19
+      "2026-08": 20
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -328,6 +330,9 @@
       "2026-08": 4
     },
     "accidente_transporte": {
+      "2026-08": 1
+    },
+    "ataque_armado": {
       "2026-08": 1
     }
   }
