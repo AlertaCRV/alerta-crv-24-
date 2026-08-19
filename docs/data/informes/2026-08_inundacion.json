@@ -3,19 +3,27 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-14T15:13:20.912125+00:00",
-  "actualizado_hasta": "2026-08-13T05:27:35.277832+00:00",
-  "total_eventos": 9,
+  "generado": "2026-08-19T05:09:58.271059+00:00",
+  "actualizado_hasta": "2026-08-17T05:25:50.098978+00:00",
+  "total_eventos": 18,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 9
+    "actual": 18
   },
-  "narrativa": "Durante el período de agosto de 2026, se registraron un total de 9 eventos relacionados con inundaciones en Venezuela, lo que supone un aumento en comparación con el período anterior, que tuvo 7 eventos (El Impulso (Lara)). Entre los eventos más destacados se encuentran las inundaciones en el estado Yaracuy, que afectaron a cuatro municipios y causaron daños estructurales en el puente La Galletera, así como la muerte de una persona (El Impulso (Lara)). En específico, la inundación en Yaracuy fue reportada por varias fuentes, incluyendo El Impulso (Lara) y Turimiquire (Sucre), y se menciona que la severidad de la inundación fue crítica. Además, se informó que una mujer de 49 años murió al recibir una descarga eléctrica en el caserío San Amaya del municipio Manuel Monge, luego de que su vivienda se inundara debido al desbordamiento del río Yumarito (Turimiquire (Sucre)). En el estado Apure, las inundaciones causadas por la crecida del río Arauca afectaron a más de 500 familias en la parroquia Urdaneta, y se desplegaron equipos para atender a las personas damnificadas (Notiapure). La inundación en Apure también fue reportada por Notiapure, y se menciona que la severidad de la inundación fue alta. Otros eventos notables incluyeron la crecida de quebradas en el municipio Cruz Paredes, en el estado Barinas, y las inundaciones en las vías de Las Tejerías, en el estado Aragua (La Prensa de Monagas).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 18 eventos de inundación, frente a los 7 del mes anterior (julio) (Comparación con el período anterior). Este incremento refleja una mayor intensidad de las precipitaciones en varias regiones del país y una respuesta ampliada de las autoridades y organizaciones de ayuda.\n\nEn el estado Yaracuy se presentaron inundaciones de severidad crítica que afectaron a los municipios Manuel Monge, Bolívar, Sucre y Veroes, provocando la muerte de una persona y daños materiales significativos en el sector agropecuario y en la infraestructura vial, incluido el puente La Galletera (El Impulso). El fallecimiento de María Eloína Hernández, quien recibió una descarga eléctrica al intentar desconectar la nevera de su vivienda inundada, también fue reportado (Turimiquire).\n\nEn Apure, la crecida del río Arauca generó inundaciones de alta severidad en la parroquia Urdaneta, sector La Victoria, del municipio Páez. Las autoridades municipales activaron jornadas de verificación y desplegaron equipos multidisciplinarios para atender a más de 500 familias damnificadas (Notiapure). Además, se llevaron a cabo trabajos de mitigación en el sector Cachamero‑El Ripial para reducir los daños estructurales (Notiapure).\n\nEn el Distrito Capital, las lluvias intensas provocaron inundaciones críticas, con desbordamiento del río Guaire y anegaciones en varios municipios de Caracas, obligando a activar planes de contingencia (La Prensa de Monagas). Turimiquire informó sobre anegaciones en vías principales y secundarias, así como la presunta muerte de dos adolescentes arrastrados por la corriente en el sector La Vega (Turimiquire). La Prensa de Lara también cubrió la situación de emergencia en la capital, describiendo los estragos y la respuesta de las autoridades (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/fuertes-lluvias-provocan-desbordamientos-del-rio-guaire/"
     },
     {
       "nombre": "Notiapure",
@@ -26,12 +34,32 @@
       "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
     },
     {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/dos-victimas-fatales-y-vias-colapsadas-dejo-fuerte-temporal-de-lluvias-en-la-gran-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/08/02/maria-hernandez-fallecio-por-una-descarga-electrica-en-manuel-monge-estado-yaracuy-su-casa-se-inundo-y-corrio-a-desconectar-la-nevera/"
     },
     {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/16/las-fuetes-lluvias-causaron-estragos-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -42,8 +70,16 @@
       "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/onda-tropical-37-causa-inundaciones-y-caida-de-arboles-en-aragua/"
+    },
+    {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/apure/gobierno-bolivariano-despliega-atencion-directa-a-mas-de-500-familias-afectadas-por-crecida-del-rio-arauca-en-urdaneta/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/regionales/cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago/?utm_source=rss&utm_medium=rss&utm_campaign=cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago"
     },
     {
       "nombre": "Yaracuy al Dia",
