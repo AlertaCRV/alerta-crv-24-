@@ -65,6 +65,28 @@ _LIMITACIONES_CONOCIDAS = {
         "Mismo caso que 'incendio::Miranda::La Verdad (Zulia)': no nombra "
         "Chacao, aislada resuelve a Distrito Capital."
     ),
+    # Caso real (18-08-2026): se agrego un filtro decisivo en classify.py
+    # (_es_sismo_extranjero_con_epicentro_conocido_sin_municipio) para
+    # descartar alertas de sismo en estados venezolanos sin evidencia local
+    # cuando el texto solo describe el terremoto de magnitud 7.4 con
+    # epicentro en San Jose del Palmar, Choco, Colombia (10-08-2026) -- ver
+    # docs/roadmap_evolucion.md, auditoria 18-08-2026. Este filtro exige la
+    # AUSENCIA de municipio detectado para no afectar el caso real y ya
+    # publicado de Zulia (donde SI hay evidencia local: "sacude el Zulia",
+    # municipio Maracaibo). El texto ALMACENADO de esta fuente aislada
+    # ("La Verdad (Zulia)") esta truncado ("...en el departamento de Choco,
+    # […]") y nunca llega a mencionar "Maracaibo" -- ese municipio solo lo
+    # aporta la SEGUNDA fuente del mismo evento fusionado ("El Periodico de
+    # Monagas": "percibido... en Maracaibo, estado Zulia, Venezuela"), que
+    # SI pasa esta prueba de forma aislada. El evento publicado sigue siendo
+    # correcto porque se fusiona con esa segunda fuente.
+    "sismo::Zulia::La Verdad (Zulia)": (
+        "Texto almacenado truncado ('[…]'), nunca menciona Maracaibo -- "
+        "aislada, sin municipio detectado, la cae el nuevo filtro decisivo "
+        "de epicentro extranjero conocido. El evento fusionado es correcto "
+        "porque la segunda fuente del cluster (El Periodico de Monagas) SI "
+        "nombra 'Maracaibo, estado Zulia' explicitamente."
+    ),
 }
 
 

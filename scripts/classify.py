@@ -110,7 +110,18 @@ LISTA_NEGRA_POR_ESTADO = {
     # "municipio sucre" completa, no "sucre" sola -- Sucre tambien es el
     # nombre de un estado distinto (ver el otro caso ya cubierto arriba en
     # LISTA_NEGRA_POR_ESTADO["Sucre"]).
-    "Distrito Capital": ["chacao", "baruta", "el hatillo", "municipio sucre"],
+    "Distrito Capital": [
+        "chacao", "baruta", "el hatillo", "municipio sucre",
+        # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): un explicativo
+        # nacional sobre el deficit de generacion electrica traia como unica
+        # mencion de Distrito Capital el dateline "Caracas.-" seguido de una
+        # frase sobre la crisis a nivel PAIS ("Una ola de racionamientos
+        # electricos indiscriminados afecta a los venezolanos..."), sin
+        # ningun detalle especifico de una falla en Caracas. Se verifico
+        # contra las 168 fuentes de data/historico_fuentes_texto.jsonl que
+        # la frase es exclusiva de este articulo.
+        "una ola de racionamientos electricos indiscriminados",
+    ],
     # Caso real (11-08-2026): dos articulos sobre venezolanos residentes EN
     # COLOMBIA que sobrevivieron al terremoto de magnitud 7.4 que sacudio
     # ese pais ("recuerdan el desastre de La Guaira: <<Me removio todo>>")
@@ -136,7 +147,19 @@ LISTA_NEGRA_POR_ESTADO = {
     "La Guaira": ["desastre de la guaira", "tragedia de la guaira",
                   "desastre de vargas", "tragedia de vargas",
                   "avenida vargas", "avenidas vargas",
-                  "av. vargas", "av vargas"],
+                  "av. vargas", "av vargas",
+                  # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): un
+                  # articulo sobre inundaciones/deslizamientos reales en
+                  # Caracas (Distrito Capital) -- muertes en La Vega,
+                  # desalojos en La Pastora, desbordamiento del Guaire en
+                  # Las Mercedes -- generaba una alerta separada y falsa de
+                  # deslizamiento en La Guaira solo porque la Gobernacion de
+                  # ese estado envio equipos de apoyo a Caracas ("equipos...
+                  # de la Gobernacion de La Guaira"). Sin remapeo: el hecho
+                  # ya queda cubierto bajo Distrito Capital via la mencion
+                  # de "Caracas"/parroquias especificas, asi que basta con
+                  # descartar el candidato de La Guaira.
+                  "de la gobernacion de la guaira"],
     # Caso real (12-08-2026): un articulo sobre jubilados petroleros
     # protestando frente a la sede de Pdvsa La Campiña (Caracas) generaba 2
     # alertas falsas de orden_publico en Falcon y Zulia -- ambos estados solo
@@ -150,7 +173,25 @@ LISTA_NEGRA_POR_ESTADO = {
     # data/historico_fuentes_texto.jsonl que ambas frases son exclusivas de
     # este articulo.
     "Falcon": ["manifestantes de oriente, falcon y caracas"],
-    "Zulia": ["jubilados petroleros de zulia en peaje de tazon"],
+    "Zulia": [
+        "jubilados petroleros de zulia en peaje de tazon",
+        # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): un explicativo
+        # nacional sobre el deficit de generacion electrica ("¿Cuando
+        # terminaran los apagones en Venezuela?") menciona Zulia solo como
+        # unidad de comparacion numerica ("el deficit... es similar al
+        # consumo que exige todo el estado Zulia"), sin describir ninguna
+        # falla electrica puntual en ese estado. Se verifico contra las 168
+        # fuentes de data/historico_fuentes_texto.jsonl que la frase es
+        # exclusiva de este articulo.
+        "es similar al consumo que exige todo el estado zulia",
+        # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): un explicativo
+        # sobre el calor de agosto en Venezuela (fenomeno El Niño) menciona
+        # Zulia unicamente por TEMPERATURA ("En estados como Zulia y Falcon
+        # los registros han llegado hasta los 39 °C, segun Inameh"), no por
+        # escasez de agua -- pese a que el articulo SI describe fallas de
+        # agua reales, estas se ubican en Portuguesa/Acarigua, no en Zulia.
+        "en estados como zulia y falcon los registros",
+    ],
     # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): un articulo de EFE
     # sobre un terremoto de magnitud 7.7 en Indonesia (republicado por un
     # medio de Monagas) nunca menciona ese estado en el cuerpo de la
@@ -170,6 +211,35 @@ LISTA_NEGRA_POR_ESTADO = {
     # historico_fuentes_texto.jsonl que esta frase es exclusiva de este
     # articulo.
     "Portuguesa": ["hacia el estado portuguesa"],
+    # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Rescatan en Choroni
+    # a tres pescadores margaritenos... Los rescatistas trasladaron de
+    # emergencia a los tres marineros hacia la localidad costera de Choroni,
+    # en el estado Aragua" -- "Margarita" (alias de Nueva Esparta) solo
+    # identifica el origen/gentilicio de las victimas, no el lugar del
+    # naufragio ni del rescate, que el propio texto ubica explicitamente en
+    # Aragua. Se remapea (ver _REMAPEO_MUNICIPIO_A_ESTADO) en vez de
+    # descartarse sin mas, porque el hecho SI es real -- solo que en otro
+    # estado.
+    "Nueva Esparta": ["hacia la localidad costera de choroni"],
+    # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Las movilizaciones
+    # se registraron... en al menos ocho estados... El Distrito Capital y
+    # Amazonas serian los UNICOS territorios SIN racionamiento" -- el propio
+    # articulo excluye explicitamente a Amazonas de la lista de estados con
+    # protestas/racionamiento, pero la mera mencion del nombre cerca de
+    # "racionamiento" bastaba para generar una alerta. Se verifico contra
+    # las 168 fuentes de data/historico_fuentes_texto.jsonl que la frase es
+    # exclusiva de este articulo.
+    "Amazonas": ["unicos territorios sin racionamiento"],
+    # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Plan Vamos con
+    # Sorgo... productores ya contabilizan mas de 2.300 hectareas... en el
+    # estado Guarico, con la proyeccion inmediata de alcanzar las 2.500
+    # hectareas al CONSOLIDAR LA SIEMBRA en los estados Portuguesa y
+    # Anzoategui" -- Anzoategui es solo una META FUTURA de expansion del
+    # plan agricola, no una siembra ya consolidada ni una sequia puntual
+    # actual en ese estado. Se verifico contra las 168 fuentes de data/
+    # historico_fuentes_texto.jsonl que la frase es exclusiva de este
+    # articulo.
+    "Anzoategui": ["consolidar la siembra en los estados portuguesa y anzoategui"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -184,6 +254,9 @@ _REMAPEO_MUNICIPIO_A_ESTADO = {
         "baruta": "Miranda",
         "el hatillo": "Miranda",
         "municipio sucre": "Miranda",
+    },
+    "Nueva Esparta": {
+        "hacia la localidad costera de choroni": "Aragua",
     },
 }
 
@@ -257,6 +330,34 @@ def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
     if municipio and municipio not in _MUNICIPIO_NO_CUENTA_COMO_SALVAGUARDA.get(ubicacion, set()):
         return False
     return any(lugar in texto_norm for lugar in lugares)
+
+
+# A diferencia de FRONTERA_EXTRANJERA_POR_ESTADO (que solo aplica a estados
+# fronterizos con Colombia, donde un toponimo colombiano puede confundirse
+# con uno venezolano homonimo), este marcador es DECISIVO para CUALQUIER
+# estado: "San Jose del Palmar" es el nombre inequivoco del epicentro del
+# terremoto de magnitud 7.4 en el departamento del Choco, Colombia
+# (10-08-2026) -- ningun sismo venezolano real tendria ese epicentro. Caso
+# real (16-08-2026, PASADO_POR_FALLA_TECNICA): seis dias despues del sismo,
+# seguia generando alertas falsas de sismo NUEVO en estados sin ninguna
+# relacion geografica con la frontera colombiana -- en Barinas la unica
+# mencion del estado era una lista de titulares no relacionados en la barra
+# lateral del medio (ver tambien classify.py, "articulos relacionados"); en
+# Sucre el articulo describia a familias sucrenses buscando noticias de
+# parientes DESAPARECIDOS EN COLOMBIA, sin ningun sismo local. Se verifico
+# contra las 168 fuentes de data/historico_fuentes_texto.jsonl que "san jose
+# del palmar" aparece en 4 fuentes de este mismo terremoto -- una de ellas
+# (Zulia, 10-08-2026, "Terremoto de 7.4 en Colombia sacude el Zulia") SI
+# describe evidencia local real (municipio Maracaibo detectado, "sacude el
+# Zulia") y no se ve afectada por este filtro porque exige la AUSENCIA de
+# municipio detectado, igual que _es_evento_extranjero_sin_municipio.
+_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS = ["san jose del palmar"]
+
+
+def _es_sismo_extranjero_con_epicentro_conocido_sin_municipio(texto_norm, municipio):
+    if municipio:
+        return False
+    return any(e in texto_norm for e in _EPICENTROS_SISMO_EXTRANJERO_DECISIVOS)
 
 
 # A diferencia de _es_evento_extranjero_sin_municipio() (donde la ausencia
@@ -364,6 +465,16 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # caso ni alarma sanitaria real) disparaba tipo=salud_publica solo por
     # la palabra "pandemia" usada como referencia historica al origen de
     # un programa social, no una pandemia activa.
+    # Ampliado (18-08-2026, PASADO_POR_FALLA_TECNICA): "Proteccion Civil y
+    # Salud Ambiental desplegaron una jornada de ABORDAJE PREVENTIVO...
+    # distribuyeron rodenticidas y antiparasitarios... abatizacion,
+    # enfocados en neutralizar y eliminar los criaderos del mosquito Aedes
+    # aegypti... para prevenir brotes epidemicos" -- una jornada RUTINARIA
+    # de fumigacion/abatizacion contra el dengue, sin ningun caso ni brote
+    # activo mencionado, disparaba tipo=salud_publica solo por las palabras
+    # "dengue"/"enfermedades". Mismo patron que "prevenir enfermedades" (ya
+    # cubierto arriba), con la frase especifica que usa este tipo de
+    # jornada de control de vectores.
     "salud_publica": ["totalmente controlada", "enfermedad controlada",
                        "no existen registros confirmados",
                        "sin registros confirmados", "brote descartado",
@@ -371,7 +482,8 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
                        "prevenir enfermedades", "prevenir la propagacion",
                        "tiempos de la pandemia", "durante la pandemia",
                        "desde la pandemia", "epoca de la pandemia",
-                       "época de la pandemia"],
+                       "época de la pandemia",
+                       "abordaje preventivo", "jornada preventiva"],
     # Caso real (30-07-2026): "Venezuela entrego nota de protesta a Iran por
     # declaraciones de su canciller" -- una nota de protesta DIPLOMATICA
     # entre gobiernos, sin ninguna relacion con disturbios/orden publico en
@@ -381,7 +493,15 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # ambigua entre el sentido de disturbio civil y otro uso idiomatico
     # totalmente distinto. (Ver tambien _es_manifestacion_pacifica_sin_evidencia_fuerte()
     # mas abajo, para el caso de una manifestacion explicitamente pacifica.)
-    "orden_publico": ["nota de protesta", "notas de protesta"],
+    # Ampliado (18-08-2026, PASADO_POR_FALLA_TECNICA): "La Camara de
+    # Comercio de Cumana EXPRESO SU PROTESTA ante el nuevo racionamiento...
+    # El gremio presento una propuesta tecnica..." -- un comunicado
+    # institucional/gremial usando la palabra "protesta" en su sentido de
+    # queja formal (con una propuesta tecnica de tres ejes, sin ninguna
+    # manifestacion fisica descrita), mismo patron que la nota de protesta
+    # diplomatica.
+    "orden_publico": ["nota de protesta", "notas de protesta",
+                       "expreso su protesta ante", "expresó su protesta ante"],
     # Caso real (02-08-2026): "Tragedia en Cumaná: colapso de un árbol...
     # un árbol colapsara y arrastrara postes del tendido eléctrico" -- una
     # muerte por la caida de un arbol (que de paso derribo postes) se
@@ -814,11 +934,27 @@ def _es_falsa_alarma_sin_explosivo_real(texto_norm):
 # proceso judicial relacionado con cargos de terrorismo, sin ningun ataque
 # armado ocurriendo. "Excarcelados"/"excarcelacion" es un termino juridico
 # especifico (liberacion de un recluso), exclusivo de este tipo de nota.
+#
+# Ampliado (18-08-2026, PASADO_POR_FALLA_TECNICA): "Omar Mora Tosta denuncia
+# 'limbo' judicial en casos de Dignora Hernandez y Henry Alviarez... El caso
+# pertenecia al Tribunal Primero de Juicio con competencia en TERRORISMO"
+# disparaba tipo=ataque_armado via la palabra "Terrorismo" (nombre de la
+# jurisdiccion del tribunal, no un ataque) -- el hecho real es un abogado
+# denunciando trabas administrativas (un expediente extraviado, la
+# imposibilidad de presentarse ante el tribunal) en el proceso judicial de
+# dos dirigentes opositores, ni una captura ni una excarcelacion, pero el
+# mismo patron de fondo: un proceso judicial relacionado con cargos de
+# terrorismo, sin ningun ataque armado ocurriendo. "Limbo" (entre comillas
+# en el titular, refiriendose al estado procesal del caso) es un termino
+# exclusivo de este tipo de nota. Se verifico contra las 168 fuentes de
+# data/historico_fuentes_texto.jsonl que la palabra es exclusiva de este
+# articulo.
 _MARCADORES_CAPTURA_FUGITIVO = [
     "notificacion azul", "notificación azul",
     "orden de captura internacional",
     "excarcelados", "excarcelado", "excarcelada", "excarceladas",
     "excarcelacion", "excarcelación",
+    "limbo",
 ]
 
 
@@ -849,6 +985,39 @@ def _es_boletin_pronostico_inameh_sin_inundacion_real(texto_norm):
     if not _contiene_palabra_clave(texto_norm, "onda tropical"):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("inundacion", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# "Derrumbe" (palabra clave de deslizamiento) es ambiguo en español entre un
+# movimiento de tierra/ladera y el desplome de una estructura por deterioro.
+# Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Se derrumba techo de
+# casa colonial... el derrumbe parcial del techo de una vivienda... se
+# presume que las continuas precipitaciones... debilitaron los materiales de
+# construccion tradicional, como la madera y las tejas de arcilla" -- un
+# techo que colapsa por deterioro estructural agravado por la lluvia se
+# publicaba como deslizamiento en Guarico, cuando el hecho real es un
+# colapso_estructural (mismo patron que el desplome de una vivienda en
+# Carapita, ya cubierto bajo ese tipo). A diferencia de
+# _CONTEXTO_CONFLICTIVO_POR_TIPO (que solo descarta el tipo detectado sin
+# reemplazarlo, perdiendo el evento por completo si no hay otra palabra
+# clave), aqui el hecho SI es una emergencia real que merece seguir
+# publicandose -- solo que bajo el tipo correcto. Se exige la AUSENCIA de
+# palabras de terreno natural (ladera/talud/cerro/montaña/tierra) y de
+# evidencia fuerte de deslizamiento (heridos/fallecidos/desaparecidos/
+# viviendas colapsadas/evacuados/familias afectadas) para no reclasificar un
+# deslizamiento real que ademas dañe un techo de pasada.
+_MARCADORES_DERRUMBE_ESTRUCTURAL = ["techo", "tejas", "tejado"]
+_MARCADORES_DESLIZAMIENTO_TERRENO = ["ladera", "talud", "cerro", "montana", "montaña", "tierra"]
+
+
+def _es_derrumbe_de_techo_no_deslizamiento(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "derrumbe") or _contiene_palabra_clave(texto_norm, "derrumbes")):
+        return False
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DERRUMBE_ESTRUCTURAL):
+        return False
+    if any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DESLIZAMIENTO_TERRENO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("deslizamiento", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -1111,6 +1280,24 @@ _MARCADORES_RECLAMO_TERCERO_MULTIESTADO = [
     # estados" -- ese articulo SI describe hechos locales puntuales, la
     # mencion del OVCS es solo un dato adicional, no el eje del articulo).
     "informe del observatorio venezolano de conflictividad social",
+    # Ampliado (18-08-2026, PASADO_POR_FALLA_TECNICA): un articulo sobre
+    # inundaciones REALES y puntuales en Acarigua-Araure (Portuguesa) cierra
+    # con el boletin de pronostico rutinario del Inameh, que enumera 19
+    # estados de lluvia PRONOSTICADA para las proximas horas ("...que
+    # abarcaran los estados Bolivar, Amazonas, Monagas, Sucre... y Zulia...
+    # que afectaran las regiones de Bolivar, Amazonas, Delta Amacuro...").
+    # A diferencia de _es_boletin_pronostico_inameh_sin_inundacion_real()
+    # (que exige AUSENCIA total de evidencia fuerte de inundacion en el
+    # articulo, y por eso no aplica aqui -- el articulo SI tiene evidencia
+    # real, solo que para Portuguesa, no para los demas 18 estados
+    # enumerados), este mecanismo de proximidad SI distingue: Portuguesa se
+    # mantiene porque su mencion real (con "anegaron", lejos de la lista de
+    # pronostico) sigue encontrando una ventana valida antes que la del
+    # pronostico, mientras que Zulia -- mencionado UNICAMENTE dentro de la
+    # lista de pronostico -- se descarta por falta de evidencia local
+    # especifica cerca de esa unica mencion.
+    "abarcaran los estados", "abarcarán los estados",
+    "afectaran las regiones de", "afectarán las regiones de",
 ]
 _MIN_ESTADOS_RESUMEN_MULTIESTADO = 5
 
@@ -1718,9 +1905,18 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "inundacion" and _es_boletin_pronostico_inameh_sin_inundacion_real(texto_completo_norm):
                     break
+                if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
+                    break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
                 break
+    # Ver _es_derrumbe_de_techo_no_deslizamiento(): a diferencia de los
+    # demas filtros decisivos de arriba (que solo descartan el tipo), este
+    # SI reclasifica -- el hecho sigue siendo una emergencia real, solo que
+    # del tipo correcto, asi que se agrega colapso_estructural en vez de
+    # dejar el evento sin ningun tipo.
+    if "colapso_estructural" not in tipos_encontrados and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
+        tipos_encontrados.append("colapso_estructural")
     return tipos_encontrados
 
 
@@ -1781,6 +1977,8 @@ def clasificar_item(item):
         if _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, nuevo["municipio"]):
             continue
         if _es_fallecimiento_migrante_en_extranjero(texto_norm):
+            continue
+        if "sismo" in nuevo["tipos"] and _es_sismo_extranjero_con_epicentro_conocido_sin_municipio(texto_norm, nuevo["municipio"]):
             continue
         resultado.append(nuevo)
 

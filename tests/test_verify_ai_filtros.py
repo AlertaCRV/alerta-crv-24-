@@ -335,6 +335,30 @@ def test_segundo_terremoto_es_retrospectiva():
     assert _es_retrospectiva_obvia(texto) is True
 
 
+def test_mas_de_n_dias_despues_es_retrospectiva():
+    # Caso real (18-08-2026, PMA): "Cuando han transcurrido mas de sesenta
+    # dias despues de los terremotos que sacudieron el centro-norte de
+    # Venezuela... 6300 personas murieron" -- un articulo de ayuda
+    # humanitaria mas de dos meses despues del sismo doble generaba una
+    # alerta de sismo nueva. A diferencia de "a los N dias del sismo" (ya
+    # cubierto arriba), aqui "mas de" precede al numero en vez de "a"/"al
+    # cumplirse".
+    texto = (
+        "Cuando han transcurrido mas de sesenta dias despues de los "
+        "terremotos que sacudieron el centro-norte de Venezuela, la "
+        "reconstruccion educativa continua."
+    )
+    assert _es_retrospectiva_obvia(texto) is True
+
+
+def test_pocos_dias_despues_no_es_mas_de_control():
+    # Control: sin la frase "mas de" antes del numero, un reporte de
+    # seguimiento a pocos dias de un sismo reciente no debe activar este
+    # nuevo patron (aunque si podria activar otros, no evaluados aqui).
+    texto = "Tres dias despues del temblor, continuan las labores de limpieza en la zona."
+    assert _es_retrospectiva_obvia(texto) is False
+
+
 # --- municipio/parroquia del cluster deben aparecer en las fuentes -------
 # aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
 

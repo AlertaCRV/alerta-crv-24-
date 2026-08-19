@@ -1,64 +1,53 @@
 {
-  "actualizado": "2026-08-18T23:54:35.659684+00:00",
+  "actualizado": "2026-08-19T03:08:55.854501+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-18T21:39:03+00:00"
   },
-  "total_eventos": 171,
+  "total_eventos": 154,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 27,
-    "infraestructura_electrica": 46,
-    "deslizamiento": 13,
-    "colapso_estructural": 2,
-    "orden_publico": 33,
-    "salud_publica": 6,
+    "inundacion": 25,
+    "infraestructura_electrica": 43,
+    "deslizamiento": 10,
+    "colapso_estructural": 3,
+    "orden_publico": 30,
+    "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 16,
     "vialidad": 6,
-    "sismo": 6,
+    "sismo": 3,
     "escasez_combustible": 1,
-    "sequia": 4,
+    "sequia": 3,
     "explosion": 1,
-    "infraestructura_agua": 2,
-    "accidente_transporte": 1,
-    "ataque_armado": 1
+    "infraestructura_agua": 1,
+    "accidente_transporte": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 27,
+      "total": 26,
       "confirmados": 4
     },
     {
-      "estado": "Barinas",
-      "total": 16,
+      "estado": "Lara",
+      "total": 12,
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 14,
+      "estado": "Barinas",
+      "total": 12,
       "confirmados": 1
     },
     {
       "estado": "Zulia",
-      "total": 13,
+      "total": 10,
       "confirmados": 4
     },
     {
       "estado": "Bolivar",
       "total": 9,
       "confirmados": 1
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 8,
-      "confirmados": 0
-    },
-    {
-      "estado": "Apure",
-      "total": 8,
-      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -71,7 +60,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Sucre",
+      "estado": "Anzoategui",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
+      "estado": "Apure",
       "total": 7,
       "confirmados": 0
     },
@@ -96,12 +90,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Nueva Esparta",
-      "total": 5,
-      "confirmados": 1
+      "estado": "Aragua",
+      "total": 6,
+      "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Sucre",
       "total": 5,
       "confirmados": 0
     },
@@ -109,6 +103,11 @@
       "estado": "Portuguesa",
       "total": 5,
       "confirmados": 0
+    },
+    {
+      "estado": "Nueva Esparta",
+      "total": 4,
+      "confirmados": 1
     },
     {
       "estado": "Tachira",
@@ -121,22 +120,17 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
-      "total": 3,
-      "confirmados": 0
-    },
-    {
       "estado": "Guarico",
       "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Amazonas",
+      "estado": "Cojedes",
       "total": 1,
       "confirmados": 0
     },
     {
-      "estado": "Cojedes",
+      "estado": "La Guaira",
       "total": 1,
       "confirmados": 0
     }
@@ -149,23 +143,22 @@
       "inundacion": 1
     },
     "Lara": {
-      "inundacion": 3,
+      "inundacion": 2,
       "salud_publica": 2,
       "orden_publico": 3,
       "infraestructura_electrica": 2,
       "sismo": 1,
-      "deslizamiento": 2,
+      "deslizamiento": 1,
       "incendio": 1
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 4,
       "colapso_estructural": 1,
-      "inundacion": 2,
+      "inundacion": 1,
       "sequia": 1,
       "orden_publico": 1,
-      "sismo": 1,
-      "infraestructura_agua": 1
+      "sismo": 1
     },
     "Distrito Capital": {
       "deslizamiento": 3,
@@ -173,7 +166,7 @@
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 6,
       "colapso_estructural": 1
     },
     "Trujillo": {
@@ -185,24 +178,20 @@
     "Barinas": {
       "deslizamiento": 1,
       "inundacion": 3,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 3,
       "vialidad": 3,
-      "sismo": 1,
-      "orden_publico": 3,
-      "ataque_armado": 1
+      "orden_publico": 2
     },
     "Sucre": {
       "inundacion": 1,
-      "orden_publico": 4,
-      "infraestructura_electrica": 1,
-      "sismo": 1
+      "orden_publico": 3,
+      "infraestructura_electrica": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 3,
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 2,
-      "sequia": 1
+      "orden_publico": 2
     },
     "Bolivar": {
       "infraestructura_electrica": 4,
@@ -215,7 +204,6 @@
       "inundacion": 3,
       "orden_publico": 1,
       "infraestructura_agua": 1,
-      "salud_publica": 1,
       "incendio": 1
     },
     "Tachira": {
@@ -236,8 +224,7 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 2,
-      "accidente_transporte": 1
+      "orden_publico": 2
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -254,14 +241,15 @@
     "Aragua": {
       "orden_publico": 2,
       "inundacion": 2,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "accidente_transporte": 1
     },
     "Merida": {
       "infraestructura_electrica": 3
     },
     "Guarico": {
       "sequia": 1,
-      "deslizamiento": 1
+      "colapso_estructural": 1
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
@@ -269,22 +257,17 @@
       "inundacion": 1,
       "salud_publica": 1
     },
-    "La Guaira": {
-      "deslizamiento": 1,
-      "sismo": 1,
-      "salud_publica": 1
-    },
-    "Amazonas": {
-      "orden_publico": 1
-    },
     "Cojedes": {
       "infraestructura_electrica": 1
+    },
+    "La Guaira": {
+      "salud_publica": 1
     }
   },
   "por_severidad": {
-    "alto": 14,
-    "critico": 14,
-    "sin_clasificar": 141,
+    "alto": 13,
+    "critico": 15,
+    "sin_clasificar": 124,
     "medio": 1,
     "bajo": 1
   },
@@ -294,27 +277,27 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 20
+      "2026-08": 18
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 41
+      "2026-08": 38
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 10
+      "2026-08": 7
     },
     "colapso_estructural": {
       "2026-07": 1,
-      "2026-08": 1
+      "2026-08": 2
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 31
+      "2026-08": 28
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 5
+      "2026-08": 4
     },
     "crisis_migratoria": {
       "2026-07": 4
@@ -327,24 +310,21 @@
       "2026-08": 6
     },
     "sismo": {
-      "2026-08": 6
+      "2026-08": 3
     },
     "escasez_combustible": {
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 4
+      "2026-08": 3
     },
     "explosion": {
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 2
-    },
-    "accidente_transporte": {
       "2026-08": 1
     },
-    "ataque_armado": {
+    "accidente_transporte": {
       "2026-08": 1
     }
   }

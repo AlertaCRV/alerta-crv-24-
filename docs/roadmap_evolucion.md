@@ -6533,3 +6533,456 @@ regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares de
 posibles duplicados y fuentes muertas ya conocidos de sesiones anteriores, sin
 novedades reales en las alertas del 15-08-2026.
 
+
+## Auditoría diaria automática (18-08-2026): un modelo de Groq retirado explicaba casi todo un backlog de 3 días sin verificación de IA, y 17 alertas falsas adicionales por 12 causas raíz distintas
+
+Retomando la auditoría tras la sesión del 15-08-2026 (no hubo sesiones el 16
+ni el 17), se revisaron las 45 alertas publicadas entre el 16 y el 18-08-2026
+contra el texto real de sus fuentes (`data/historico_fuentes_texto.jsonl`),
+usando 3 agentes de lectura en paralelo para cubrir el volumen.
+
+### 0. Causa raíz sistémica: "llama-3.3-70b-versatile" fue retirado por Groq
+el 16-08-2026, y las 3 fuentes de fallo-abierto (`Groq no disponible... se
+publica sin verificar`) dejaron pasar casi todo el backlog sin filtro de IA
+
+De las 45 alertas revisadas, 41 tenían `estado_verificacion:
+"PASADO_POR_FALLA_TECNICA"`. El log de la corrida del 18-08-2026
+(`gh api .../actions/jobs/95896308447/logs`) mostraba, en cada llamada a
+Groq: `[WARN] Fallo la verificación con Groq: 404 Client Error: Not Found
+for url: https://api.groq.com/openai/v1/chat/completions`. Un 404 (no 401,
+que es lo que Groq devuelve para una API key invalida -- se verificó
+directamente con `curl`) descarta que fuera un problema de credenciales.
+Según la documentación de Groq (`console.groq.com/docs/deprecations`),
+`llama-3.3-70b-versatile` fue anunciado como deprecado el 17-06-2026 con
+fecha de retiro el **16-08-2026** -- exactamente el día en que empezó el
+backlog. El modelo recomendado por Groq como reemplazo es
+`openai/gpt-oss-120b`.
+
+**Corrección**: `GROQ_MODEL` (`scripts/verify_ai.py`, también usado por
+`scripts/build_informes.py`) actualizado a `"openai/gpt-oss-120b"` (soporta
+`response_format: json_object`, verificado contra la documentación de Groq
+antes de aplicar el cambio). No se pudo probar contra la API real de Groq
+desde este entorno (sin `GROQ_API_KEY`), pero el 404 documentado y la fecha
+de retiro exacta dejan poco margen de duda sobre la causa. Este único
+cambio debería resolver la enorme mayoría de los `PASADO_POR_FALLA_TECNICA`
+de aquí en adelante.
+
+### 1. El pie de página autodescriptivo de "La Prensa de Lara" ("La Prensa
+de Lara es un medio de comunicación regional...") contamina la ubicación de
+CUALQUIER artículo que republican, sin importar el tema
+
+`deslizamiento::Lara::2026-08-15` es, de principio a fin, un cable de EFE
+sobre inundaciones y deslizamientos de tierra en **Chiba, JAPÓN** (10
+fallecidos, sin ninguna relación con Venezuela) -- "Lara" solo aparece en el
+pie de página fijo del medio, pegado justo después de la última mención de
+"deslizamientos de tierra" del artículo (dentro de la ventana de proximidad
+de 35 palabras). El mismo día, `inundacion::Lara::2026-08-16` es un artículo
+real sobre inundaciones en **Guacara, Carabobo** -- el mismo pie de página,
+esta vez pegado justo después de la mención de dos fallecidos en La Vega,
+generaba una segunda alerta idéntica y falsa en Lara.
+
+**Causa raíz**: a diferencia de otros pies de página ya cubiertos (nombre
+legal/RIF, "la entrada X se publicó primero en"), este es un párrafo de
+autodescripción institucional que aparece en prácticamente TODOS los
+artículos de este medio, y contiene literalmente la palabra "Lara".
+
+**Corrección**: nuevo regex `_AUTODESCRIPCION_LA_PRENSA_DE_LARA_RE`
+(`scripts/fetch_rss.py`), que recorta el texto desde esa frase fija hasta el
+final -- mismo mecanismo que `_PIE_LEGAL_EDITORIAL_RE`. Se verificó contra
+las 168 fuentes de `data/historico_fuentes_texto.jsonl` que la frase es
+exclusiva de este medio, y que artículos LEGÍTIMOS de Lara (ej. un incendio
+forestal en Sicarigua, municipio Torres) siempre repiten el estado
+explícitamente en el cuerpo ("municipio Torres del estado Lara"), así que
+recortar el pie de página no les hace perder esa evidencia real.
+
+**Corrección retroactiva**: se eliminaron por completo
+`deslizamiento::Lara::2026-08-15` e `inundacion::Lara::2026-08-16` de los 4
+archivos de datos.
+
+### 2. Seis días después del terremoto de magnitud 7.4 en Colombia (epicentro
+San José del Palmar, Chocó, 10-08-2026), seguía generando sismos falsos en
+estados venezolanos sin ninguna relación geográfica con la frontera
+
+`sismo::Barinas::2026-08-16` (Diario La Nación, Táchira) es un artículo
+sobre gestiones diplomáticas de Colombia con EE.UU. tras su propio
+terremoto -- "Barinas" solo aparece en la barra lateral "Destacados" del
+mismo medio, en un titular no relacionado ("Pedro Lárez asume la dirección
+de Evolución Política del Centro en Barinas"). `sismo::Sucre::2026-08-16`
+(La Verdad, Zulia) describe a familias del estado Sucre buscando noticias de
+parientes **desaparecidos EN COLOMBIA** tras ese mismo terremoto -- ningún
+sismo ocurrió en Sucre.
+
+**Causa raíz**: `FRONTERA_EXTRANJERA_POR_ESTADO` (mecanismo ya usado para
+Táchira/Zulia/Apure/Amazonas, estados fronterizos reales) no cubre Barinas
+ni Sucre, que no son fronterizos con Colombia, así que el mecanismo nunca se
+evaluaba para estos casos.
+
+**Corrección**: nueva función
+`_es_sismo_extranjero_con_epicentro_conocido_sin_municipio()`
+(`scripts/classify.py`), evaluada para CUALQUIER estado (no solo
+fronterizos): si el texto menciona "San José del Palmar" (el epicentro,
+nombre inequívoco) y no se detectó municipio/parroquia venezolano, se
+descarta. Se verificó contra las 168 fuentes que la frase aparece en 4
+fuentes de este mismo terremoto -- una de ellas (Zulia, 10-08-2026,
+"Terremoto de 7.4 en Colombia sacude el Zulia") SÍ tiene evidencia local
+real (municipio Maracaibo, "sacude el Zulia") y sigue publicándose con
+normalidad porque el filtro exige la AUSENCIA de municipio.
+
+**Corrección retroactiva**: se eliminaron por completo
+`sismo::Barinas::2026-08-16` y `sismo::Sucre::2026-08-16::mag7.4` de los 4
+archivos de datos.
+
+### 3. Un artículo del PMA sobre ayuda humanitaria "más de sesenta días
+después" del sismo doble de La Guaira se publicó como un sismo nuevo
+
+`sismo::La Guaira::2026-08-17` (El Tiempo, Anzoátegui) es un reportaje sobre
+la respuesta humanitaria del Programa Mundial de Alimentos "cuando han
+transcurrido más de sesenta días después de los terremotos que sacudieron
+el centro-norte de Venezuela" -- el mismo sismo doble ya cubierto
+extensamente por `_PATRON_RETROSPECTIVA`, pero con "más de" ANTES del
+número en vez de "a"/"al cumplirse".
+
+**Causa raíz**: la primera alternativa de `_PATRON_RETROSPECTIVA`
+(`scripts/verify_ai.py`) exige que el número siga inmediatamente a "a"/"al
+cumplirse" -- "más de sesenta" no calza con ese patrón. Además, `_NUMEROS`
+solo cubría números escritos del 1 al 10 ("sesenta" no estaba).
+
+**Corrección**: nueva alternativa `mas de {NUMEROS} (dia|semana|mes|ano)s
+despues` sin exigir "a"/"al cumplirse", y `_NUMEROS` ampliado con
+"veinte"/"treinta"/.../"noventa"/"cien" (números redondos de dos cifras,
+comunes en coberturas de más largo plazo).
+
+**Corrección retroactiva**: se eliminó por completo `sismo::La
+Guaira::2026-08-17` de los 4 archivos de datos.
+
+### 4. Un abogado denunciando "limbo" judicial (trabas administrativas en un
+proceso penal) se publicó como un ataque armado en Barinas
+
+`ataque_armado::Barinas::2026-08-18` (Runrun.es) describe a un abogado
+denunciando que el Palacio de Justicia de Caracas impidió que dos dirigentes
+opositores registraran su presentación periódica -- "El caso pertenecía al
+Tribunal Primero de Juicio con competencia en **Terrorismo**" disparaba
+tipo=ataque_armado vía el nombre de la jurisdicción del tribunal, sin que el
+artículo describa ningún ataque. Mismo patrón de fondo que los hallazgos de
+captura/excarcelación del 15-08-2026 (un proceso judicial relacionado con
+terrorismo, sin ataque en curso), pero en su variante de trámite
+administrativo trabado.
+
+**Corrección**: se amplió `_MARCADORES_CAPTURA_FUGITIVO`
+(`scripts/classify.py`) con "limbo" (el propio titular: "denuncia 'limbo'
+judicial"). Se verificó contra las 168 fuentes que la palabra es exclusiva
+de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`ataque_armado::Barinas::2026-08-18` de los 4 archivos de datos.
+
+### 5. El derrumbe del techo de una vivienda colonial por deterioro
+estructural se publicó como un deslizamiento
+
+`deslizamiento::Guarico::2026-08-18` (El Tubazo Digital) describe "el
+derrumbe parcial del techo de una vivienda de estilo colonial" en Calabozo,
+cuyos materiales de construcción (madera, tejas de arcilla) se debilitaron
+por lluvias continuas -- un colapso estructural real, no un movimiento de
+tierra/ladera. "Derrumbe" (palabra clave de deslizamiento) es ambiguo en
+español entre ambos sentidos.
+
+**Corrección**: nueva función `_es_derrumbe_de_techo_no_deslizamiento()`
+(`scripts/classify.py`): si el texto tiene "derrumbe(s)" cerca de
+"techo"/"tejas"/"tejado", Y NO tiene palabras de terreno natural
+(ladera/talud/cerro/montaña/tierra) NI evidencia fuerte de deslizamiento
+(heridos/fallecidos/desaparecidos/viviendas colapsadas/evacuados), se
+reclasifica a colapso_estructural en vez de solo descartar el tipo (a
+diferencia de los demás filtros de este estilo, aquí el hecho SÍ es una
+emergencia real, solo que del tipo equivocado). Se verificó con un caso de
+control (un deslizamiento real de tierra en una ladera, con fallecidos y
+evacuados, que también usa la palabra "derrumbe") que sigue clasificándose
+como deslizamiento con normalidad. También se verificó contra un caso YA
+publicado y correcto en el mismo lote (`deslizamiento::Distrito
+Capital::2026-08-16`/Macarao, un derrumbe de ROCAS desde un cerro que
+también menciona "el techo se vino abajo" de pasada) que NO se ve afectado,
+porque sí tiene marcadores de terreno (cerro/ladera).
+
+**Corrección retroactiva**: se reclasificó el evento a `colapso_estructural`
+(nueva clave `colapso_estructural::Guarico::2026-08-18`) en los 4 archivos
+de datos, regenerando el texto de la alerta con `render.redactar_noticia()`.
+
+### 6. Pescadores "margariteños" rescatados y trasladados a Choroní, estado
+Aragua, se publicaron como un accidente en Nueva Esparta
+
+`accidente_transporte::Nueva Esparta::2026-08-18` (Reporte Confidencial)
+describe el rescate de tres pescadores "margariteños" (gentilicio de Nueva
+Esparta, vía el alias "Margarita") tras un naufragio -- pero el propio texto
+ubica el naufragio y el rescate en "la localidad costera de Choroní, **en
+el estado Aragua**". "Margarita" solo identifica el origen de las víctimas,
+no el lugar del hecho.
+
+**Corrección**: nueva entrada en `LISTA_NEGRA_POR_ESTADO["Nueva Esparta"]` +
+`_REMAPEO_MUNICIPIO_A_ESTADO["Nueva Esparta"]` (`scripts/classify.py`, mismo
+mecanismo ya usado para Chacao/Baruta→Miranda), remapeando a Aragua en vez
+de descartar sin más, porque el hecho SÍ es real. Se verificó contra las
+168 fuentes que la frase es exclusiva de este artículo.
+
+**Corrección retroactiva**: se reubicó el evento a Aragua (nueva clave
+`accidente_transporte::Aragua::2026-08-18`) en los 4 archivos de datos,
+regenerando el texto de la alerta.
+
+### 7. La Gobernación de La Guaira enviando equipos de apoyo a Caracas se
+publicó como un deslizamiento en La Guaira
+
+`deslizamiento::La Guaira::2026-08-17` (Notiespartano) describe
+inundaciones/deslizamientos reales en Caracas (muertes en La Vega, desalojos
+en La Pastora, desbordamiento del Guaire) -- "La Guaira" solo aparece porque
+su Gobernación envió "equipos... de la Gobernación de La Guaira" a Caracas
+como apoyo, no porque el hecho haya ocurrido allí.
+
+**Corrección**: se amplió `LISTA_NEGRA_POR_ESTADO["La Guaira"]`
+(`scripts/classify.py`) con esta frase, sin remapeo (el hecho ya queda
+cubierto bajo Distrito Capital vía la mención de "Caracas"/parroquias
+específicas). Se verificó contra las 168 fuentes que la frase es exclusiva
+de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo `deslizamiento::La
+Guaira::2026-08-17` de los 4 archivos de datos.
+
+### 8. Un explicativo nacional sobre el déficit eléctrico generó 2 alertas
+falsas (Zulia como unidad de comparación, Distrito Capital como dateline)
+
+`infraestructura_electrica::Zulia::2026-08-17` e
+`infraestructura_electrica::Distrito Capital::2026-08-17` (El Pitazo,
+"¿Cuándo terminarán los apagones en Venezuela?") son el mismo artículo
+explicativo nacional sin ningún incidente puntual: Zulia solo se menciona
+como unidad de comparación numérica ("el déficit... es similar al consumo
+que exige todo el estado Zulia"), y Distrito Capital solo aparece como el
+dateline "Caracas.-" seguido de una frase sobre la crisis a nivel país.
+
+**Corrección**: dos entradas nuevas en `LISTA_NEGRA_POR_ESTADO`
+(`scripts/classify.py`, sin remapeo en ambos casos): la frase de comparación
+para Zulia, y la frase de apertura del dateline para Distrito Capital. Se
+verificó contra las 168 fuentes que ambas frases son exclusivas de este
+artículo.
+
+**Corrección retroactiva**: se eliminaron por completo
+`infraestructura_electrica::Zulia::2026-08-17` e
+`infraestructura_electrica::Distrito Capital::2026-08-17` de los 4 archivos
+de datos.
+
+### 9. Un explicativo sobre el calor de agosto (El Niño) mencionó a Zulia
+solo por temperatura, y se publicó como una falla de agua
+
+`infraestructura_agua::Zulia::2026-08-17` (El Pitazo) menciona Zulia
+únicamente por temperatura ("En estados como Zulia y Falcón los registros
+han llegado hasta los 39 °C, según Inameh") -- el artículo sí describe
+fallas de agua reales, pero en Portuguesa/Acarigua, no en Zulia.
+
+**Corrección**: nueva entrada en `LISTA_NEGRA_POR_ESTADO["Zulia"]` (sin
+remapeo) con la frase de comparación de temperatura. Se verificó contra las
+168 fuentes que es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_agua::Zulia::2026-08-17` de los 4 archivos de datos.
+
+### 10. Un plan agrícola con metas futuras de expansión generó una sequía
+falsa en Anzoátegui
+
+`sequia::Anzoategui::2026-08-18` (Portuguesa al Día, plan "Vamos con
+Sorgo") describe siembra YA consolidada en Guárico (2.300 hectáreas), con
+la "proyección inmediata" de sumar Portuguesa y Anzoátegui para llegar a
+2.500 -- Anzoátegui es solo una meta futura de expansión, no una sequía
+puntual actual.
+
+**Corrección**: nueva entrada en `LISTA_NEGRA_POR_ESTADO["Anzoategui"]`
+(sin remapeo). Se verificó contra las 168 fuentes que la frase es exclusiva
+de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`sequia::Anzoategui::2026-08-18` de los 4 archivos de datos.
+
+### 11. Un boletín de pronóstico del Inameh, embebido al final de un
+artículo sobre inundaciones REALES en Portuguesa, generó una inundación
+falsa en Zulia
+
+`inundacion::Zulia::2026-08-16` (Portuguesa Reporta) es, en su mayor parte,
+un reporte real de inundaciones en Acarigua-Araure (Portuguesa) -- pero
+cierra con el boletín rutinario del Inameh, que enumera 19 estados de
+lluvia PRONOSTICADA, incluyendo Zulia. El filtro ya existente
+`_es_boletin_pronostico_inameh_sin_inundacion_real()` no aplicaba aquí
+porque exige la AUSENCIA total de evidencia fuerte de inundación en el
+artículo completo -- y este artículo SÍ tiene evidencia real, solo que para
+Portuguesa, no para los demás 18 estados enumerados.
+
+**Corrección**: se amplió `_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`
+(`scripts/classify.py`, el mismo mecanismo de proximidad ya usado para el
+mapa de Primero Justicia y el informe del OVCS) con las frases del boletín
+del Inameh ("abarcarán los estados"/"afectarán las regiones de"). A
+diferencia del filtro de boletín existente, este mecanismo es de
+PROXIMIDAD: Portuguesa se mantiene porque su mención real (lejos de la
+lista de pronóstico) sigue encontrando evidencia válida antes que la del
+pronóstico, mientras que Zulia -- mencionado únicamente dentro de la lista
+-- se descarta. Se verificó contra las 168 fuentes que ambas frases son
+exclusivas de este artículo, y que no afecta a Portuguesa en el mismo
+artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`inundacion::Zulia::2026-08-16` de los 4 archivos de datos.
+
+### 12. El propio artículo excluía explícitamente a Amazonas de la lista de
+estados con racionamiento eléctrico, pero se publicó como orden público allí
+
+`orden_publico::Amazonas::2026-08-17` (Notiapure, sobre protestas contra
+Corpoelec en 8 estados) contiene la frase "El Distrito Capital y **Amazonas**
+serían los ÚNICOS territorios **SIN** racionamiento" -- el propio texto
+niega explícitamente que Amazonas esté afectado, pero la mera mención cerca
+de "racionamiento" bastaba para generar la alerta.
+
+**Corrección**: nueva entrada en `LISTA_NEGRA_POR_ESTADO["Amazonas"]` (sin
+remapeo) con la frase de negación. Se verificó contra las 168 fuentes que es
+exclusiva de este artículo, y con un caso de control (Cojedes, que SÍ
+aparece en la lista real de estados con protesta en el mismo artículo) que
+sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Amazonas::2026-08-17` de los 4 archivos de datos.
+
+### 13. Una jornada rutinaria de abatización/fumigación contra el dengue se
+publicó como una alerta de salud pública
+
+`salud_publica::Apure::2026-08-17` (Notiapure) describe una jornada de
+"abordaje preventivo" de Protección Civil -- distribución de rodenticidas y
+antiparasitarios, abatización -- sin ningún caso ni brote activo. Mismo
+patrón que "prevenir enfermedades" (ya cubierto el 30-07-2026), con la frase
+específica que usa este tipo de jornada de control de vectores.
+
+**Corrección**: se amplió `_CONTEXTO_CONFLICTIVO_POR_TIPO["salud_publica"]`
+(`scripts/classify.py`) con "abordaje preventivo"/"jornada preventiva". Se
+verificó con un caso de control (un brote real con alerta sanitaria y
+hospitalizados) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`salud_publica::Apure::2026-08-17` de los 4 archivos de datos.
+
+### 14. Un comunicado de la Cámara de Comercio de Cumaná "expresando su
+protesta" (queja formal, sin manifestación física) se publicó como orden
+público
+
+`orden_publico::Sucre::2026-08-16` (Turimiquire) describe un comunicado
+institucional/gremial de la Cámara de Comercio de Cumaná exigiendo el cese
+del racionamiento eléctrico, con una propuesta técnica de tres ejes -- sin
+ninguna manifestación física descrita. Mismo patrón que la nota de protesta
+diplomática (ya cubierta el 30-07-2026), pero con un actor gremial.
+
+**Corrección**: se amplió `_CONTEXTO_CONFLICTIVO_POR_TIPO["orden_publico"]`
+con "expresó su protesta ante". Se verificó con un caso de control (un
+comunicado similar que ADEMÁS describe una manifestación real con heridos)
+que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Sucre::2026-08-16` de los 4 archivos de datos.
+
+### 15. Severidad: el sustantivo "muerte"/"fallecimiento" no elevaba la
+severidad a crítico -- solo las formas verbales ya lo hacían
+
+`inundacion::Distrito Capital::2026-08-16` (La Vega, dos adolescentes
+"arrastradas por la crecida... se reportó el **fallecimiento** de dos
+adolescentes") y `deslizamiento::Distrito Capital::2026-08-16` (Macarao,
+"causaron la **muerte** de una mujer de 49 años") quedaron con severidad
+`sin_clasificar` pese a tener fallecidos confirmados -- `config/keywords.yaml`
+solo cubría "fallecidos"/"fallecido"/"fallecieron"/"falleció" (formas
+verbales) y "muertos"/"muerto"/"murió", pero no los sustantivos
+"fallecimiento"/"muerte".
+
+**Corrección**: se agregaron "fallecimiento", "fallecimientos", "muerte" y
+"muertes" a `severidad.critico` en `config/keywords.yaml`. Se verificó
+contra las 168 fuentes que ninguna de las 19 apariciones de "muerte" o
+"fallecimiento" en el corpus corresponde a un uso ambiguo (pena de
+muerte/amenaza de muerte) -- todas describen fallecimientos reales.
+
+**Corrección retroactiva**: se corrigió la severidad a `critico` en los 2
+eventos, en los 4 archivos de datos, regenerando el texto de ambas alertas.
+
+### Revisado sin cambios
+
+`orden_publico::Portuguesa::2026-08-17` (protesta de pensionados en
+Acarigua, correctamente descrita como pacífica),
+`colapso_estructural::Distrito Capital::2026-08-18` (colapso parcial de
+vivienda en Carapita, Antímano, bien ubicado y descrito),
+`vialidad::Barinas::2026-08-17` (choque frontal con 3 fallecidos/3 heridos,
+severidad crítico bien justificada), `orden_publico::Sucre::2026-08-18`
+(protesta de jubilados de salinas de Araya), `infraestructura_electrica::
+Trujillo::2026-08-16`, `infraestructura_agua::Apure::2026-08-17`
+(Guasdualito), `infraestructura_electrica::Carabobo::2026-08-17`
+(Valencia), `infraestructura_electrica::Merida::2026-08-17`,
+`inundacion::Carabobo::2026-08-16` (Guacara), `inundacion::Aragua::2026-08-16`,
+`inundacion::Portuguesa::Araure::2026-08-16`, `incendio::Lara::Torres::2026-08-16`:
+consistentes con el texto de sus fuentes.
+
+### Pendiente de discutir
+
+**`orden_publico::Yaracuy::2026-08-16`/`::2026-08-17`** (video de denuncia
+del diputado Biagio Pilieri sobre el colapso eléctrico nacional, republicado
+por dos medios distintos en fechas distintas -- `infraestructura_electrica::
+Yaracuy::2026-08-16`, El Impulso, e `orden_publico::Yaracuy::2026-08-17`,
+Yaracuy al Día, mismo texto): el propio artículo dice "alzó su voz de
+protesta" para describir un mensaje audiovisual individual, no una
+manifestación física con gente reunida -- ni orden_publico ni
+infraestructura_electrica parecen encajar del todo bien, y además está
+duplicado dos veces bajo tipos y fechas distintas. No se corrigió a ciegas:
+a diferencia de la Cámara de Comercio (hallazgo 14, un comunicado
+institucional claro), aquí hay un dirigente político real, físicamente en
+Yaracuy, denunciando una crisis real -- la línea entre "denuncia política
+sin hecho local" y "cobertura legítima de un dirigente in situ" no está
+clara, y el mismo marcador que descartaría esto también descartaría la
+mención de Barinas en el mismo artículo (ya corregida arriba como pasada
+mención en una lista). Se notifica al usuario para decidir si esto merece
+descartarse, fusionarse, o dejarse como está.
+
+**`orden_publico::Barinas::2026-08-17`** (3 fuentes: 2 sobre la protesta
+real del Hospital Razetti frente al Circuito Judicial Penal, y 1 -- El
+Impulso, sobre denuncias de tortura en el penal Fénix Lara -- que solo
+menciona Barinas porque el funcionario denunciado FUE director de un penal
+allí antes de trasladarse a Lara): el hecho más grave (torturas, muertes
+alegadas) ocurre en Fénix Lara, estado Lara, no en Barinas -- posible
+solapamiento con `orden_publico::Lara::2026-08-17` (Fénix Lara), confirmado
+también por `scripts/detectar_inconsistencias.py` (mismas palabras
+compartidas en los links). No se corrigió a ciegas: el evento principal
+(protesta del Razetti) sí está bien ubicado en Barinas; el problema es que
+se sumó una fuente de otro estado bajo la misma alerta, y separar fuentes
+dentro de un evento ya fusionado no es un ajuste trivial. Se notifica al
+usuario.
+
+**`orden_publico::Barinas::2026-08-18`** (duplicado): el mismo hecho real
+que `orden_publico::Barinas::2026-08-17` (protesta del Hospital Razetti,
+lunes 17 de agosto), republicado verbatim por El Impulso un día después
+("durante la mañana de este lunes"). `orden_publico` está EXCLUIDO
+deliberadamente (ver `state.py`, `TIPOS_SIN_VENTANA_MISMO_EVENTO`) de la
+ventana de 36h que fusiona el mismo evento reportado en corridas distintas,
+precisamente porque durante disturbios el mismo tipo+ubicación puede
+repetirse genuinamente día a día -- agruparlos ocultaría eventos reales
+distintos. Este caso es la excepción rara (una republicación verbatim del
+mismo artículo) que se cuela por ese diseño deliberado. No se generalizó un
+fix (arriesga silenciar protestas reales de días consecutivos): se
+**eliminó retroactivamente** el duplicado (`orden_publico::Barinas::2026-08-18`)
+de los 4 archivos de datos, conservando `::2026-08-17` (con las 3 fuentes
+originales). Se notifica al usuario por si prefiere una solución más
+general (ej. detectar texto casi idéntico entre eventos del mismo
+tipo+ubicación en días consecutivos).
+
+### Pruebas
+
+15 casos nuevos en `tests/casos_clasificacion.jsonl` (9 reales + 6 controles
+de los hallazgos 2, 4, 5, 6, 7, 12, 13 y 14) y 2 casos nuevos en
+`tests/test_verify_ai_filtros.py` ("más de N días después" + control sin esa
+frase, hallazgo 3). Se agregó una limitación conocida nueva a
+`tests/test_classify_regresion_historico.py`
+(`sismo::Zulia::La Verdad (Zulia)`): el texto ALMACENADO de esa fuente
+aislada está truncado y nunca llega a mencionar Maracaibo -- el evento
+fusionado sigue siendo correcto porque la segunda fuente del cluster sí lo
+nombra explícitamente. Regresión completa contra las 151 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con los 15 eventos retractados
+eliminados): sin cambios inesperados. `python3 -m pytest tests/` → 404
+passed, 6 xfailed (conocidos, sin relación), 1 xpassed (conocido, sin
+efecto real). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+`python3 scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados y fuentes muertas ya conocidos de sesiones anteriores, más los 2
+casos ya documentados arriba como pendientes de discutir
+(`orden_publico::Barinas::2026-08-17` vs `::Lara::2026-08-17`).

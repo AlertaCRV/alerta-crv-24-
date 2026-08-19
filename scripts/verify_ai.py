@@ -16,7 +16,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PENDIENTES_PATH = os.path.join(BASE_DIR, "data", "pendientes_verificacion.json")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+# "llama-3.3-70b-versatile" fue retirado por Groq el 16-08-2026 (ver aviso de
+# deprecación del 17-06-2026), lo que hacía que TODAS las llamadas fallaran
+# con 404 "model not found" desde esa fecha -- la mayoría de las alertas del
+# 16 al 18-08-2026 se publicaron sin verificación de IA (PASADO_POR_FALLA_TECNICA)
+# por esta causa. Reemplazado por el modelo recomendado por Groq en su aviso
+# de deprecación.
+GROQ_MODEL = "openai/gpt-oss-120b"
 
 # El monitoreo corre cada 10 minutos -- cuando Groq falla de forma
 # transitoria (limite de tasa, respuesta invalida, error de red) para un
@@ -45,7 +51,16 @@ ESPERA_BASE_REINTENTO_429 = 5
 # marca temporal explícita de retrospectiva/aniversario, se descarta sin
 # depender del juicio del modelo (que en la practica ha fallado en casos
 # como "a un mes del terremoto en Vargas...").
-_NUMEROS = r"(un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+)"
+# "sesenta"/"treinta" etc. se agregaron el 18-08-2026 (ver comentario en
+# _PATRON_RETROSPECTIVA sobre "mas de sesenta dias despues"): la lista
+# original solo cubria numeros del 1 al 10 escritos con letras, y las
+# coberturas retrospectivas de mas largo plazo (semanas/meses despues de un
+# sismo) suelen usar numeros redondos de dos cifras escritos con letras
+# ("sesenta dias", no "60 dias").
+_NUMEROS = (
+    r"(un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|"
+    r"veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|\d+)"
+)
 # Cualificador opcional entre "a"/"al cumplirse" y el numero -- caso real
 # (11-08-2026, Runrun.es, una vez corregido el bug de truncamiento "[…]"
 # de fetch_rss.py que ocultaba esta frase por completo): "a casi dos meses
@@ -102,7 +117,17 @@ _PATRON_RETROSPECTIVA = re.compile(
     # referirse al mismo evento ya cubierto, generando una alerta nueva de
     # sismo en Distrito Capital via una mencion de pasada al area
     # metropolitana de Caracas.
-    r"|\bsegundo\s+terremoto\b|\bsegundo\s+sismo\b",
+    r"|\bsegundo\s+terremoto\b|\bsegundo\s+sismo\b"
+    # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Cuando han
+    # transcurrido mas de sesenta dias despues de los terremotos que
+    # sacudieron el centro-norte de Venezuela... 6300 personas murieron y
+    # 16.740 resultaron heridas" -- un articulo del PMA sobre ayuda
+    # humanitaria mas de dos meses despues del sismo doble de La Guaira/
+    # Vargas generaba una alerta de sismo NUEVO. La primera alternativa de
+    # este patron (arriba) exige que el numero siga inmediatamente a "a"/"al
+    # cumplirse", pero "mas de" no es una de esas dos palabras -- variante
+    # con "mas de" ANTES del numero, sin exigir "a"/"al cumplirse".
+    rf"|\bmas\s+de\s+{_NUMEROS}\s+(dia|dias|semana|semanas|mes|meses|ano|anos)\s+despues\b",
     re.IGNORECASE,
 )
 
