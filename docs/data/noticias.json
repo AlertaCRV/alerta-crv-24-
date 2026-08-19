@@ -536,32 +536,6 @@
   },
   {
     "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": "Francisco De Miranda",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/los-andes/tachira-casa-hogar-que-alberga-a-130-personas-en-abandono-pide-donaciones-de-alimentos-y-una-planta-electrica/",
-        "fecha": "2026-08-16T16:16:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T16:16:23+00:00",
-    "fecha_evento_temprana": "2026-08-16T16:16:23+00:00",
-    "fecha_deteccion": "2026-08-16T20:57:49.150014+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-08-16",
-    "titulo": "Falla eléctrica en Municipio Francisco De Miranda, Tachira",
-    "texto": "📌 Falla eléctrica en Municipio Francisco De Miranda, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Francisco De Miranda, Tachira\n🕒 Hecho reportado: 16/08/2026, 12:16 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-andes/tachira-casa-hogar-que-alberga-a-130-personas-en-abandono-pide-donaciones-de-alimentos-y-una-planta-electrica/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
     "ubicacion": "Yaracuy",
     "municipio": null,
     "parroquia": null,
