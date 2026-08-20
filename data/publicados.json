@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
     "municipio": null
   },
-  "vialidad::Monagas::2026-08-17": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T21:58:48.885230+00:00",
-    "fecha_evento_temprana": "2026-08-17T18:21:03+00:00",
-    "municipio": "Maturín"
-  },
   "vialidad::Barinas::2026-08-17": {
     "severidad": "critico",
     "confirmado": false,
@@ -67,13 +60,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-18T17:06:02.794323+00:00",
     "fecha_evento_temprana": "2026-08-18T14:06:18+00:00",
-    "municipio": null
-  },
-  "orden_publico::Cojedes::2026-08-17": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T21:59:07.810727+00:00",
-    "fecha_evento_temprana": "2026-08-17T18:06:54+00:00",
     "municipio": null
   },
   "sismo::Distrito Capital::2026-08-18": {
@@ -236,5 +222,26 @@
     "fecha_deteccion": "2026-08-20T21:08:23.583297+00:00",
     "fecha_evento_temprana": "2026-08-20T17:00:47+00:00",
     "municipio": "Santa Rosalía"
+  },
+  "tsunami::La Guaira::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T22:03:37.311433+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:17:12+00:00",
+    "municipio": null
+  },
+  "inundacion::Zulia::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T22:03:46.978121+00:00",
+    "fecha_evento_temprana": "2026-08-20T18:17:10+00:00",
+    "municipio": "Jesús Enrique Lossada"
+  },
+  "sismo::Tachira::2026-08-20::mag7.2": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T22:04:11.176510+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:23:22+00:00",
+    "municipio": null
   }
 }
