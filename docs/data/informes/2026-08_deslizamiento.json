@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-08-19T03:19:15.253957+00:00",
-  "actualizado_hasta": "2026-08-17T15:57:41.560532+00:00",
-  "total_eventos": 7,
+  "generado": "2026-08-20T08:10:23.499465+00:00",
+  "actualizado_hasta": "2026-08-19T06:05:34.453309+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 3,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron siete eventos de deslizamiento o derrumbe, duplicando la cifra del mes anterior, que había contabilizado tres incidentes (comparación con el período anterior). Este aumento refleja la intensificación de las precipitaciones en varias regiones del país y la consecuente vulnerabilidad de áreas urbanas y rurales.\n\nEn el estado Miranda se reportó un deslizamiento de alta severidad, según informó La Patilla (La Patilla). Las autoridades locales describieron daños materiales significativos en el conjunto residencial Las Bonitas II, aunque el informe se centró en la magnitud del fenómeno y la necesidad de atender a los afectados.\n\nEn el Distrito Capital, La Patilla describió un desprendimiento de rocas en el sector El Peñón, parroquia Macarao, que impactó una vivienda y provocó la muerte de una mujer de 49 años (La Patilla). El comandante general de los Bomberos de Caracas, Pablo Antonio Palacios Salazar, confirmó que la víctima estaba descansando cuando la piedra se desprendió del cerro, derribando la pared principal de su cuarto y colapsando el techo.\n\nOtro informe de La Prensa de Monagas también documentó un derrumbe en el mismo sector de Macarao, elevando a tres la cifra de fallecidos por el temporal en Caracas (La Prensa de Monagas). El cuerpo del tercer fallecido fue hallado en el sector El Peñón, y el comandante Palacios reiteró la gravedad del evento, señalando que los deslizamientos continúan afectando a distintas parroquias de la capital.",
+  "narrativa": "En el mes de agosto de 2026 se registraron nueve eventos de deslizamiento o derrumbe, frente a los tres reportados en julio del mismo año (3 evento(s) registrados entonces vs. 9 en este período). Este incremento refleja la intensidad de las precipitaciones y sus efectos sobre la infraestructura y la población en varias regiones del país.\n\nEn el estado Miranda, un deslizamiento de alta severidad se manifestó el 15 de agosto en el conjunto residencial Las Bonitas II, ubicado en Valle Arriba, Guatire, cuando una explosión en una tubería de gas provocó la caída de escombros que dañaron gravemente varios apartamentos y vehículos, y dejaron a varias personas heridas (La Patilla).\n\nEn el Distrito Capital, las intensas lluvias del fin de semana generaron deslizamientos críticos que afectaron a todas las parroquias de Caracas, con lodo, inundaciones y daños materiales en viviendas y vías, según informó la alcaldesa Carmen Meléndez (La Patilla). Este fenómeno se sumó a los incidentes de derrumbe que ya habían causado víctimas en la capital.\n\nOtro deslizamiento crítico en el Distrito Capital fue reportado por La Prensa de Monagas: en el sector El Peñón, parroquia Macarao, una roca se desprendió del cerro y cayó sobre una casa, provocando la muerte instantánea de una mujer de 49 años y elevando a tres el número de fallecidos por el temporal en Caracas (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -36,6 +36,10 @@
     {
       "nombre": "El Luchador (Bolivar)",
       "link": "https://elluchador.info/?p=318079"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
