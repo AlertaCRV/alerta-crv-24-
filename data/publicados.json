@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
     "municipio": null
   },
-  "orden_publico::Barinas::2026-08-17": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T21:01:16.131295+00:00",
-    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-08-17": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T21:01:56.090335+00:00",
-    "fecha_evento_temprana": "2026-08-17T17:15:00+00:00",
-    "municipio": null
-  },
   "vialidad::Monagas::2026-08-17": {
     "severidad": "alto",
     "confirmado": false,
@@ -229,5 +215,26 @@
     "fecha_deteccion": "2026-08-20T19:49:46.697423+00:00",
     "fecha_evento_temprana": "2026-08-20T15:41:17+00:00",
     "municipio": "Pedernales"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T21:05:10.184523+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:17:42+00:00",
+    "municipio": null
+  },
+  "sequia::Guarico::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T21:07:59.409289+00:00",
+    "fecha_evento_temprana": "2026-08-20T17:00:47+00:00",
+    "municipio": null
+  },
+  "sequia::Portuguesa::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T21:08:23.583297+00:00",
+    "fecha_evento_temprana": "2026-08-20T17:00:47+00:00",
+    "municipio": "Santa Rosalía"
   }
 }
