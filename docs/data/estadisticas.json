@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-20T16:04:52.973880+00:00",
+  "actualizado": "2026-08-20T17:54:00.884748+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-20T13:51:49+00:00"
   },
-  "total_eventos": 166,
+  "total_eventos": 168,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 45,
+    "infraestructura_electrica": 47,
     "deslizamiento": 13,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -27,7 +27,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 29,
+      "total": 30,
       "confirmados": 4
     },
     {
@@ -116,17 +116,17 @@
       "confirmados": 1
     },
     {
+      "estado": "La Guaira",
+      "total": 3,
+      "confirmados": 0
+    },
+    {
       "estado": "Tachira",
       "total": 2,
       "confirmados": 0
     },
     {
       "estado": "Guarico",
-      "total": 2,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 2,
       "confirmados": 0
     },
@@ -168,7 +168,7 @@
       "orden_publico": 6,
       "incendio": 4,
       "vialidad": 1,
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "colapso_estructural": 1,
       "sismo": 1,
       "ataque_armado": 1
@@ -268,13 +268,14 @@
       "orden_publico": 1
     },
     "La Guaira": {
-      "deslizamiento": 2
+      "deslizamiento": 2,
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
     "alto": 15,
     "critico": 16,
-    "sin_clasificar": 133,
+    "sin_clasificar": 135,
     "medio": 1,
     "bajo": 1
   },
@@ -288,7 +289,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 40
+      "2026-08": 42
     },
     "deslizamiento": {
       "2026-07": 3,

@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/",
+        "fecha": "2026-08-20T12:20:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T12:20:12+00:00",
+    "fecha_evento_temprana": "2026-08-20T12:20:12+00:00",
+    "fecha_deteccion": "2026-08-20T17:53:36.190327+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-20",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 20/08/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 1:53 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/",
+        "fecha": "2026-08-20T12:20:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T12:20:12+00:00",
+    "fecha_evento_temprana": "2026-08-20T12:20:12+00:00",
+    "fecha_deteccion": "2026-08-20T17:53:39.799124+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::La Guaira::2026-08-20",
+    "titulo": "Falla eléctrica en La Guaira",
+    "texto": "📌 Falla eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 1:53 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "La Guaira",
     "municipio": null,
