@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-19T05:09:58.271059+00:00",
-  "actualizado_hasta": "2026-08-17T05:25:50.098978+00:00",
-  "total_eventos": 18,
+  "generado": "2026-08-20T05:10:57.543724+00:00",
+  "actualizado_hasta": "2026-08-19T20:04:34.055961+00:00",
+  "total_eventos": 20,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 18
+    "actual": 20
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 18 eventos de inundación, frente a los 7 del mes anterior (julio) (Comparación con el período anterior). Este incremento refleja una mayor intensidad de las precipitaciones en varias regiones del país y una respuesta ampliada de las autoridades y organizaciones de ayuda.\n\nEn el estado Yaracuy se presentaron inundaciones de severidad crítica que afectaron a los municipios Manuel Monge, Bolívar, Sucre y Veroes, provocando la muerte de una persona y daños materiales significativos en el sector agropecuario y en la infraestructura vial, incluido el puente La Galletera (El Impulso). El fallecimiento de María Eloína Hernández, quien recibió una descarga eléctrica al intentar desconectar la nevera de su vivienda inundada, también fue reportado (Turimiquire).\n\nEn Apure, la crecida del río Arauca generó inundaciones de alta severidad en la parroquia Urdaneta, sector La Victoria, del municipio Páez. Las autoridades municipales activaron jornadas de verificación y desplegaron equipos multidisciplinarios para atender a más de 500 familias damnificadas (Notiapure). Además, se llevaron a cabo trabajos de mitigación en el sector Cachamero‑El Ripial para reducir los daños estructurales (Notiapure).\n\nEn el Distrito Capital, las lluvias intensas provocaron inundaciones críticas, con desbordamiento del río Guaire y anegaciones en varios municipios de Caracas, obligando a activar planes de contingencia (La Prensa de Monagas). Turimiquire informó sobre anegaciones en vías principales y secundarias, así como la presunta muerte de dos adolescentes arrastrados por la corriente en el sector La Vega (Turimiquire). La Prensa de Lara también cubrió la situación de emergencia en la capital, describiendo los estragos y la respuesta de las autoridades (La Prensa de Lara).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 20 eventos de inundación, frente a los 7 registrados en julio del mismo año, lo que evidencia un incremento significativo de la actividad hídrica extrema (Comparación con el período anterior). Los reportes de distintas fuentes periodísticas verificadas describen emergencias con daños materiales, heridos y víctimas fatales en varios estados del país.\n\nEn el estado Yaracuy, las intensas lluvias provocaron inundaciones críticas en los municipios de Manuel Monge, Bolívar, Sucre y Veroes, con al menos una víctima mortal y graves pérdidas en el sector agropecuario y en la infraestructura vial, incluido el puente La Galletera (El Impulso (Lara)). Asimismo, en el caserío San Amaya del municipio Manuel Monge se produjo el desbordamiento del río Yumarito, que inundó viviendas y causó la muerte de María Eloína Hernández por una descarga eléctrica al intentar desconectar electrodomésticos (Turimiquire (Sucre)).\n\nEn el estado Apure, la crecida del río Arauca generó inundaciones de alta severidad que afectaron a la parroquia Urdaneta, sector La Victoria, del municipio Páez. Las autoridades locales desplegaron equipos de mitigación y atención integral para más de 500 familias damnificadas (Notiapure). En otro informe del mismo medio se detalla la activación de jornadas de verificación y trabajo conjunto entre cuadrillas municipales y organizaciones populares para atender los daños provocados por la crecida (Notiapure).\n\nEn el Distrito Capital, las lluvias extremas provocaron inundaciones críticas en varios sectores de Caracas. Las calles de los municipios Libertador y Sucre se vieron anegadas, activándose planes de contingencia (La Prensa de Monagas). Turimiquire reportó que las precipitaciones generaron anegaciones de consideración en vías principales y secundarias, dificultando el tránsito y arrastrando vehículos (Turimiquire (Sucre)). Además, La Prensa de Lara describió intensas lluvias que causaron anegaciones en la zona de Carabobo, reflejando la magnitud del fenómeno en la capital y sus alrededores (La Prensa de Lara).\n\nEn el estado Mérida, la crecida del río Milla dejó a una familia de siete integrantes en situación de extrema vulnerabilidad en la parroquia Milla, municipio Libertador, tras el colapso parcial de su vivienda y la persistente amenaza de nuevos desbordes (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -40,6 +40,10 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -80,6 +84,10 @@
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/regionales/cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago/?utm_source=rss&utm_medium=rss&utm_campaign=cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/"
     },
     {
       "nombre": "Yaracuy al Dia",
