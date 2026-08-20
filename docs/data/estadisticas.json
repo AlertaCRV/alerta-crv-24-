@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-19T21:06:06.436360+00:00",
+  "actualizado": "2026-08-20T06:06:45.720812+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-19T19:00:28+00:00"
+    "hasta": "2026-08-20T03:00:24+00:00"
   },
-  "total_eventos": 163,
+  "total_eventos": 165,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
@@ -15,7 +15,7 @@
     "salud_publica": 3,
     "crisis_migratoria": 4,
     "incendio": 15,
-    "vialidad": 6,
+    "vialidad": 8,
     "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 3,
@@ -56,6 +56,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Carabobo",
+      "total": 8,
+      "confirmados": 1
+    },
+    {
       "estado": "Monagas",
       "total": 8,
       "confirmados": 0
@@ -63,11 +68,6 @@
     {
       "estado": "Yaracuy",
       "total": 8,
-      "confirmados": 1
-    },
-    {
-      "estado": "Carabobo",
-      "total": 7,
       "confirmados": 1
     },
     {
@@ -101,6 +101,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Merida",
+      "total": 5,
+      "confirmados": 0
+    },
+    {
       "estado": "Portuguesa",
       "total": 5,
       "confirmados": 0
@@ -109,11 +114,6 @@
       "estado": "Nueva Esparta",
       "total": 4,
       "confirmados": 1
-    },
-    {
-      "estado": "Merida",
-      "total": 4,
-      "confirmados": 0
     },
     {
       "estado": "Tachira",
@@ -141,7 +141,8 @@
       "tormenta_electrica": 1,
       "infraestructura_electrica": 3,
       "orden_publico": 2,
-      "inundacion": 1
+      "inundacion": 1,
+      "vialidad": 1
     },
     "Lara": {
       "inundacion": 2,
@@ -251,7 +252,8 @@
     },
     "Merida": {
       "infraestructura_electrica": 3,
-      "inundacion": 1
+      "inundacion": 1,
+      "vialidad": 1
     },
     "Guarico": {
       "sequia": 1,
@@ -270,8 +272,8 @@
     }
   },
   "por_severidad": {
-    "alto": 14,
-    "critico": 15,
+    "alto": 15,
+    "critico": 16,
     "sin_clasificar": 132,
     "medio": 1,
     "bajo": 1
@@ -312,7 +314,7 @@
       "2026-08": 12
     },
     "vialidad": {
-      "2026-08": 6
+      "2026-08": 8
     },
     "sismo": {
       "2026-08": 4
