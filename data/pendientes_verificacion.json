@@ -783,68 +783,64 @@
     "intentos": 2,
     "ultima_vez": "2026-08-20T19:49:03.298410+00:00"
   },
-  "tsunami::La Guaira::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T21:04:29.080953+00:00"
-  },
   "emergencia_metro::Distrito Capital::2026-08-20": {
     "intentos": 1,
     "ultima_vez": "2026-08-20T19:49:06.640606+00:00"
   },
-  "inundacion::Zulia::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T21:04:39.101804+00:00"
-  },
-  "sismo::Tachira::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T21:04:42.557806+00:00"
-  },
-  "infraestructura_electrica::Distrito Capital::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T21:06:22.713077+00:00"
-  },
-  "infraestructura_electrica::La Guaira::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T21:06:46.883517+00:00"
-  },
   "ataque_armado::Distrito Capital::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:04:22.060275+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:03:30.613736+00:00"
   },
   "ataque_armado::Aragua::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:04:25.710552+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:03:33.977217+00:00"
   },
   "infraestructura_agua::Monagas::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:04:32.459077+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:03:40.522688+00:00"
   },
   "orden_publico::Barinas::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:04:35.690055+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:03:43.748850+00:00"
   },
   "incendio::Monagas::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:05:06.740143+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:04:35.383807+00:00"
   },
   "inundacion::Delta Amacuro::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:05:34.364735+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:05:24.085186+00:00"
   },
   "infraestructura_electrica::Tachira::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:05:58.531922+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:05:48.336154+00:00"
   },
   "derrame_petrolero::Delta Amacuro::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:07:11.047194+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:07:01.378226+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T21:07:35.214831+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:07:25.966238+00:00"
   },
   "salud_publica::Zulia::2026-08-20": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T22:08:38.729093+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-20": {
     "intentos": 1,
-    "ultima_vez": "2026-08-20T21:08:47.750964+00:00"
+    "ultima_vez": "2026-08-20T22:03:27.246102+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T22:04:59.577945+00:00"
+  },
+  "sequia::Guarico::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T22:07:50.159084+00:00"
+  },
+  "sequia::Portuguesa::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T22:08:14.396231+00:00"
   }
 }

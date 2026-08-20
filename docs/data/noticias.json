@@ -1,5 +1,85 @@
 [
   {
+    "tipo": "tsunami",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/internacional/terremoto-de-magnitud-72-sacude-a-peru-este-20ago/",
+        "fecha": "2026-08-20T19:17:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T19:17:12+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:17:12+00:00",
+    "fecha_deteccion": "2026-08-20T22:03:37.311433+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tsunami::La Guaira::2026-08-20",
+    "titulo": "Tsunami en La Guaira",
+    "texto": "📌 Tsunami en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 3:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/internacional/terremoto-de-magnitud-72-sacude-a-peru-este-20ago/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Zulia",
+    "municipio": "Jesús Enrique Lossada",
+    "parroquia": "La Concepción",
+    "severidad": "sin_clasificar",
+    "score": 0.8,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/avanzan-trabajos-de-asfaltado-y-drenaje-en-la-via-curva-de-molina-la-concepcion/",
+        "fecha": "2026-08-20T18:17:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T18:17:10+00:00",
+    "fecha_evento_temprana": "2026-08-20T18:17:10+00:00",
+    "fecha_deteccion": "2026-08-20T22:03:46.978121+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Zulia::2026-08-20",
+    "titulo": "Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia",
+    "texto": "📌 Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n🕒 Hecho reportado: 20/08/2026, 2:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:03 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/avanzan-trabajos-de-asfaltado-y-drenaje-en-la-via-curva-de-molina-la-concepcion/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/internacional/un-terremoto-de-magnitud-72-sacude-la-region-andina-de-ayacucho-en-el-sur-de-peru/",
+        "fecha": "2026-08-20T19:23:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T19:23:22+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:23:22+00:00",
+    "fecha_deteccion": "2026-08-20T22:04:11.176510+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.2,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Tachira::2026-08-20::mag7.2",
+    "titulo": "Sismo en Tachira",
+    "texto": "📌 Sismo en Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 20/08/2026, 3:23 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/internacional/un-terremoto-de-magnitud-72-sacude-la-region-andina-de-ayacucho-en-el-sur-de-peru/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Yaracuy",
     "municipio": null,
