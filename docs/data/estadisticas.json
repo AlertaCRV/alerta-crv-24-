@@ -1,28 +1,28 @@
 {
-  "actualizado": "2026-08-20T22:08:39.944186+00:00",
+  "actualizado": "2026-08-20T23:10:08.773601+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-20T20:17:42+00:00"
+    "hasta": "2026-08-20T20:20:02+00:00"
   },
-  "total_eventos": 176,
+  "total_eventos": 183,
   "por_tipo": {
     "tormenta_electrica": 2,
-    "inundacion": 28,
-    "infraestructura_electrica": 49,
+    "inundacion": 29,
+    "infraestructura_electrica": 50,
     "deslizamiento": 13,
     "colapso_estructural": 3,
-    "orden_publico": 31,
-    "salud_publica": 3,
+    "orden_publico": 32,
+    "salud_publica": 4,
     "crisis_migratoria": 4,
-    "incendio": 15,
+    "incendio": 16,
     "vialidad": 8,
     "sismo": 5,
     "escasez_combustible": 1,
     "sequia": 5,
     "explosion": 1,
-    "infraestructura_agua": 4,
+    "infraestructura_agua": 5,
     "accidente_transporte": 1,
-    "ataque_armado": 1,
+    "ataque_armado": 2,
     "derrame_petrolero": 1,
     "tsunami": 1
   },
@@ -33,19 +33,24 @@
       "confirmados": 4
     },
     {
+      "estado": "Zulia",
+      "total": 13,
+      "confirmados": 4
+    },
+    {
+      "estado": "Barinas",
+      "total": 13,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 12,
       "confirmados": 1
     },
     {
-      "estado": "Zulia",
-      "total": 12,
-      "confirmados": 4
-    },
-    {
-      "estado": "Barinas",
-      "total": 12,
-      "confirmados": 1
+      "estado": "Anzoategui",
+      "total": 10,
+      "confirmados": 0
     },
     {
       "estado": "Bolivar",
@@ -53,8 +58,8 @@
       "confirmados": 1
     },
     {
-      "estado": "Anzoategui",
-      "total": 9,
+      "estado": "Monagas",
+      "total": 10,
       "confirmados": 0
     },
     {
@@ -68,7 +73,7 @@
       "confirmados": 1
     },
     {
-      "estado": "Monagas",
+      "estado": "Aragua",
       "total": 8,
       "confirmados": 0
     },
@@ -76,11 +81,6 @@
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
-    },
-    {
-      "estado": "Aragua",
-      "total": 7,
-      "confirmados": 0
     },
     {
       "estado": "Trujillo",
@@ -133,12 +133,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Cojedes",
-      "total": 1,
+      "estado": "Delta Amacuro",
+      "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "Delta Amacuro",
+      "estado": "Cojedes",
       "total": 1,
       "confirmados": 0
     }
@@ -167,7 +167,8 @@
       "inundacion": 2,
       "sequia": 1,
       "orden_publico": 1,
-      "sismo": 1
+      "sismo": 1,
+      "salud_publica": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -191,7 +192,7 @@
       "inundacion": 3,
       "infraestructura_electrica": 3,
       "vialidad": 3,
-      "orden_publico": 2
+      "orden_publico": 3
     },
     "Sucre": {
       "inundacion": 1,
@@ -199,7 +200,7 @@
       "infraestructura_electrica": 2
     },
     "Anzoategui": {
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -226,7 +227,8 @@
       "infraestructura_electrica": 5,
       "salud_publica": 1,
       "vialidad": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 2,
+      "incendio": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -256,7 +258,8 @@
       "inundacion": 2,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "ataque_armado": 1
     },
     "Merida": {
       "infraestructura_electrica": 3,
@@ -282,13 +285,14 @@
       "tsunami": 1
     },
     "Delta Amacuro": {
-      "derrame_petrolero": 1
+      "derrame_petrolero": 1,
+      "inundacion": 1
     }
   },
   "por_severidad": {
     "alto": 15,
     "critico": 17,
-    "sin_clasificar": 141,
+    "sin_clasificar": 148,
     "medio": 1,
     "bajo": 2
   },
@@ -298,11 +302,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 21
+      "2026-08": 22
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 44
+      "2026-08": 45
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -314,18 +318,18 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 29
+      "2026-08": 30
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 2
+      "2026-08": 3
     },
     "crisis_migratoria": {
       "2026-07": 4
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 12
+      "2026-08": 13
     },
     "vialidad": {
       "2026-08": 8
@@ -343,13 +347,13 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "accidente_transporte": {
       "2026-08": 1
     },
     "ataque_armado": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "derrame_petrolero": {
       "2026-08": 1
