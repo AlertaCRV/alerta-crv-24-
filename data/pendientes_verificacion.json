@@ -740,8 +740,8 @@
     "ultima_vez": "2026-08-20T05:09:13.227000+00:00"
   },
   "deslizamiento::La Guaira::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T03:17:00.655458+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T14:22:41.999208+00:00"
   },
   "sismo::Distrito Capital::2026-08-20": {
     "intentos": 1,
@@ -760,11 +760,35 @@
     "ultima_vez": "2026-08-20T08:09:57.061427+00:00"
   },
   "vialidad::Merida::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T12:03:37.527821+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T14:22:52.293361+00:00"
   },
   "vialidad::Carabobo::2026-08-20": {
     "intentos": 1,
     "ultima_vez": "2026-08-20T12:03:40.947475+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:31.774212+00:00"
+  },
+  "infraestructura_electrica::Apure::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:35.239142+00:00"
+  },
+  "sismo::La Guaira::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:38.534355+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:45.527861+00:00"
+  },
+  "infraestructura_electrica::La Guaira::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:48.821663+00:00"
+  },
+  "incendio::Aragua::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T14:22:55.758684+00:00"
   }
 }
