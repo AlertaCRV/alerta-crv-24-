@@ -3,19 +3,23 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-08-19T05:10:53.443544+00:00",
-  "actualizado_hasta": "2026-08-18T18:04:51.840162+00:00",
-  "total_eventos": 6,
+  "generado": "2026-08-20T12:04:28.464951+00:00",
+  "actualizado_hasta": "2026-08-20T06:06:44.334233+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 6
+    "actual": 8
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron seis incidentes viales, frente a ninguno en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 6 en este período). Este incremento evidencia una tendencia al alza en la ocurrencia de siniestros de tránsito durante el período analizado.\n\nEn el Distrito Capital se produjo una colisión múltiple en la autopista Valle‑Coche, en la que un autobús de transporte público y dos sedanes estuvieron involucrados. El accidente dejó un fallecido y cinco heridos, según informó el Comandante General del Cuerpo de Bomberos de Caracas (Noticia al Dia (Zulia)).\n\nEn el estado Barinas se registraron varios siniestros críticos. Primero, una colisión múltiple en la avenida Nueva Barinas causó la muerte de un motociclista y al menos dos personas resultaron lesionadas (La Noticia de Barinas). Posteriormente, un choque frontal en la autopista José Antonio Páez, a la altura del sector El Florentino del municipio Alberto Arvelo Torrealba, dejó tres fallecidos y tres heridos (Noticias de Aqui (Anzoategui)).\n\nEn el estado Monagas, los fines de semana estuvieron marcados por una serie de accidentes de motocicleta que dejaron quince lesionados en distintas localidades, con el municipio Maturín como el más afectado (El Periodico de Monagas).\n\nOtro incidente en Barinas, reportado por Diario La Nacion (Tachira), involucró a tres tachirenses que fallecieron en un aparatoso choque entre una Toyota Hilux y una Hyundai Tucson en la avenida José Antonio Páez, en el municipio Cruz Paredes; dos personas más resultaron heridas en el accidente.",
+  "narrativa": "En el mes de agosto de 2026 se registraron ocho incidentes viales en Venezuela, frente a cero en el mes anterior, lo que evidencia un incremento significativo en la actividad de siniestros de tránsito (Comparación con el período anterior). \n\nEn el Distrito Capital se reportó una colisión múltiple en la autopista Valle‑Coche que involucró a un autobús de transporte público y dos sedanes, dejando un fallecido y cinco heridos (Noticia al Dia (Zulia)). \n\nEn el estado Barinas se produjeron tres sucesos críticos: un choque frontal en la autopista José Antonio Páez, kilómetro 30, que dejó tres muertos y tres lesionados (Noticias de Aqui (Anzoategui)); una colisión múltiple en la avenida Nueva Barinas que cobró la vida de un motorizado y causó al menos dos heridos (La Noticia de Barinas); y un aparatoso choque entre una Toyota Hilux y una Hyundai Tucson en la avenida José Antonio Páez, municipio Cruz Paredes, que provocó la muerte de tres tachirenses y dejó dos heridos (Diario La Nacion (Tachira)). \n\nEn el estado Carabobo un motorizado falleció en una colisión múltiple en la Autopista del Este, a la altura del Distribuidor El Trigal, según informó el Instituto Autónomo de Vialidad (El Carabobeno). \n\nEn Monagas, los accidentes de motos durante el fin de semana dejaron quince lesionados, concentrándose mayormente en el municipio Maturín (El Periodico de Monagas). \n\nFinalmente, en Mérida un triple choque en la Panamericana involucró una gandola sin carga, un autobús de transporte público y otro vehículo, provocando catorce heridos (Primicia (Bolivar)).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/un-motorizado-murio-en-colision-multiple-en-la-autopista-del-este/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -32,6 +36,14 @@
     {
       "nombre": "Noticias de Aqui (Anzoategui)",
       "link": "https://noticiasdeaqui.co/2026/08/18/choque-frontal-en-la-autopista-jose-antonio-paez-de-barinas-dejo-tres-fallecidos-y-tres-heridos/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/motorizado-muere-arrollado-por-cisterna-en-carabobo/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/triple-choque-en-la-panamericana-de-merida-deja-14-heridos/"
     },
     {
       "nombre": "Noticias de Aqui (Anzoategui)",

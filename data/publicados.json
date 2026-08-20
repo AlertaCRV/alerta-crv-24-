@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
     "municipio": null
   },
-  "infraestructura_agua::Apure::2026-08-17": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-17T11:58:26.243869+00:00",
-    "fecha_evento_temprana": "2026-08-17T09:00:03+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Carabobo::2026-08-17": {
     "severidad": "sin_clasificar",
     "confirmado": false,
