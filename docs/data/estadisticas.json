@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-20T06:06:45.720812+00:00",
+  "actualizado": "2026-08-20T16:04:52.973880+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-20T03:00:24+00:00"
+    "hasta": "2026-08-20T13:51:49+00:00"
   },
-  "total_eventos": 165,
+  "total_eventos": 166,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
     "infraestructura_electrica": 45,
-    "deslizamiento": 12,
+    "deslizamiento": 13,
     "colapso_estructural": 3,
     "orden_publico": 31,
     "salud_publica": 3,
@@ -126,12 +126,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Cojedes",
-      "total": 1,
+      "estado": "La Guaira",
+      "total": 2,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Cojedes",
       "total": 1,
       "confirmados": 0
     }
@@ -268,13 +268,13 @@
       "orden_publico": 1
     },
     "La Guaira": {
-      "deslizamiento": 1
+      "deslizamiento": 2
     }
   },
   "por_severidad": {
     "alto": 15,
     "critico": 16,
-    "sin_clasificar": 132,
+    "sin_clasificar": 133,
     "medio": 1,
     "bajo": 1
   },
@@ -292,7 +292,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
