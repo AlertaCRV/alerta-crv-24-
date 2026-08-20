@@ -243,5 +243,54 @@
     "fecha_deteccion": "2026-08-20T22:04:11.176510+00:00",
     "fecha_evento_temprana": "2026-08-20T19:23:22+00:00",
     "municipio": null
+  },
+  "ataque_armado::Aragua::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:05:36.797726+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:19:46+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Monagas::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:05:40.207047+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:18:58+00:00",
+    "municipio": "Maturín"
+  },
+  "orden_publico::Barinas::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:05:43.580251+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:10:28+00:00",
+    "municipio": null
+  },
+  "incendio::Monagas::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:06:14.756745+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:09:51+00:00",
+    "municipio": "Maturín"
+  },
+  "inundacion::Delta Amacuro::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:06:50.860637+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:20:02+00:00",
+    "municipio": "Antonio Díaz"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:08:53.068196+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:07:18+00:00",
+    "municipio": null
+  },
+  "salud_publica::Zulia::2026-08-20": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-20T23:10:05.726199+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:42:35+00:00",
+    "municipio": null
   }
 }

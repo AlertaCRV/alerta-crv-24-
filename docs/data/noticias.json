@@ -1,5 +1,187 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/migracion/ee-uu-deporta-a-liberia-a-un-grupo-de-venezolanos/",
+        "fecha": "2026-08-20T20:19:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:19:46+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:19:46+00:00",
+    "fecha_deteccion": "2026-08-20T23:05:36.797726+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Aragua::2026-08-20",
+    "titulo": "Ataque armado en Aragua",
+    "texto": "📌 Ataque armado en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 20/08/2026, 4:19 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/migracion/ee-uu-deporta-a-liberia-a-un-grupo-de-venezolanos/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": "Boquerón",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/20/temen-una-epidemia-urbanizacion-godofredo-gonzalez-en-maturin-esta-inundada-por-cloacas/",
+        "fecha": "2026-08-20T20:18:58+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:18:58+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:18:58+00:00",
+    "fecha_deteccion": "2026-08-20T23:05:40.207047+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Monagas::2026-08-20",
+    "titulo": "Falla de agua en Parroquia Boquerón, Municipio Maturín, Monagas",
+    "texto": "📌 Falla de agua en Parroquia Boquerón, Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Boquerón, Municipio Maturín, Monagas\n🕒 Hecho reportado: 20/08/2026, 4:18 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/temen-una-epidemia-urbanizacion-godofredo-gonzalez-en-maturin-esta-inundada-por-cloacas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": "La Luz",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/",
+        "fecha": "2026-08-20T20:10:28+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:10:28+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:10:28+00:00",
+    "fecha_deteccion": "2026-08-20T23:05:43.580251+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-20",
+    "titulo": "Orden público en Parroquia La Luz, Barinas",
+    "texto": "📌 Orden público en Parroquia La Luz, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Luz, Barinas\n🕒 Hecho reportado: 20/08/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/con-misa-y-reconocimientos-conmemoran-dia-del-bombero-en-monagas/",
+        "fecha": "2026-08-20T20:09:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:09:51+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:09:51+00:00",
+    "fecha_deteccion": "2026-08-20T23:06:14.756745+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Monagas::2026-08-20",
+    "titulo": "Incendio en Municipio Maturín, Monagas",
+    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 20/08/2026, 4:09 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/con-misa-y-reconocimientos-conmemoran-dia-del-bombero-en-monagas/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Delta Amacuro",
+    "municipio": "Antonio Díaz",
+    "parroquia": "Santos De Abelgas",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/20/los-habitantes-del-delta-amacuro-aprovechan-la-crecida-del-rio-orinoco-para-extraer-madera-de-zonas-boscosas/",
+        "fecha": "2026-08-20T20:20:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:20:02+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:20:02+00:00",
+    "fecha_deteccion": "2026-08-20T23:06:50.860637+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Delta Amacuro::2026-08-20",
+    "titulo": "Inundación en Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro",
+    "texto": "📌 Inundación en Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n🕒 Hecho reportado: 20/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/los-habitantes-del-delta-amacuro-aprovechan-la-crecida-del-rio-orinoco-para-extraer-madera-de-zonas-boscosas/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticias de Aqui (Anzoategui)",
+        "link": "https://noticiasdeaqui.co/2026/08/20/pequenos-comerciantes-en-lecheria-denuncian-que-fallas-electricas-afectan-su-economia/",
+        "fecha": "2026-08-20T20:07:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T20:07:18+00:00",
+    "fecha_evento_temprana": "2026-08-20T20:07:18+00:00",
+    "fecha_deteccion": "2026-08-20T23:08:53.068196+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-20",
+    "titulo": "Falla eléctrica en Anzoategui",
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 20/08/2026, 4:07 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/20/pequenos-comerciantes-en-lecheria-denuncian-que-fallas-electricas-afectan-su-economia/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/",
+        "fecha": "2026-08-20T19:42:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T19:42:35+00:00",
+    "fecha_evento_temprana": "2026-08-20T19:42:35+00:00",
+    "fecha_deteccion": "2026-08-20T23:10:05.726199+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Zulia::2026-08-20",
+    "titulo": "Salud pública en Zulia",
+    "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 20/08/2026, 3:42 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:10 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/"
+  },
+  {
     "tipo": "tsunami",
     "ubicacion": "La Guaira",
     "municipio": null,
