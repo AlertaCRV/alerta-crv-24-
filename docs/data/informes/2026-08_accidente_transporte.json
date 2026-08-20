@@ -3,7 +3,7 @@
   "tipo": "accidente_transporte",
   "tipo_label": "Accidente de transporte",
   "cerrado": false,
-  "generado": "2026-08-19T03:18:22.447090+00:00",
+  "generado": "2026-08-20T03:17:34.460773+00:00",
   "actualizado_hasta": "2026-08-18T17:06:02.794323+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un único incidente de transporte marítimo, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún evento (Comparación con el período anterior). Este hecho corresponde a la única incidencia registrada en la categoría de accidentes de transporte para el período indicado.\n\nEl 18 de agosto de 2026, tres pescadores originarios de la Isla de Margarita sufrieron un naufragio frente a las costas del norte de Venezuela, en la zona de Choroní, estado Nueva Esparta (Reporte Confidencial). Las condiciones meteorológicas adversas, caracterizadas por intensas lluvias y fuerte oleaje, provocaron el anegamiento y la zozobra de la embarcación utilizada para la faena pesquera (Reporte Confidencial).\n\nTras el siniestro, equipos de rescate locales lograron localizar y salvar a los tres trabajadores del mar, quienes fueron evacuados a un centro de atención en la zona (Reporte Confidencial). No se reportaron heridos graves ni víctimas fatales, y los pescadores fueron atendidos médicamente antes de ser devueltos a sus actividades.\n\nEste incidente subraya la necesidad de reforzar los protocolos de seguridad y la vigilancia meteorológica para las comunidades pesqueras de la región, con el fin de prevenir futuros naufragios bajo condiciones climáticas adversas (Reporte Confidencial).",
+  "narrativa": "Durante el mes de agosto de 2026 se registró un único incidente de transporte, lo que representa un aumento respecto al mes anterior en el que no se reportó ningún evento (comparación con el período anterior: 0 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único suceso ocurrió en la costa norte del estado Nueva Esparta, específicamente en la localidad de Choroní, donde tres pescadores originarios de la Isla de Margarita sufrieron un naufragio tras enfrentarse a condiciones meteorológicas adversas, con intensas lluvias y fuerte oleaje (Reporte Confidencial).\\n\\nEl mal tiempo provocó el anegamiento y la zozobra de la embarcación de pesca, obligando a los tres trabajadores del mar a abandonar el barco; fueron localizados y rescatados por equipos de emergencia que actuaron rápidamente en el área (Reporte Confidencial).\\n\\nEste incidente subraya la importancia de mantener una vigilancia constante y de reforzar los protocolos de seguridad marítima en la región, especialmente durante periodos de clima severo, para prevenir futuros siniestros y proteger la vida de los pescadores venezolanos (Reporte Confidencial).",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",

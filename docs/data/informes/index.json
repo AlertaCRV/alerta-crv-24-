@@ -12,15 +12,15 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-08-19T03:22:52.188004+00:00",
-    "total_eventos": 3
+    "generado": "2026-08-20T03:21:50.228963+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-08",
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-08-19T03:22:25.759672+00:00",
+    "generado": "2026-08-20T03:21:23.605744+00:00",
     "total_eventos": 3
   },
   {
@@ -28,8 +28,8 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-08-19T03:22:20.207402+00:00",
-    "total_eventos": 4
+    "generado": "2026-08-20T03:21:10.721873+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-08",
@@ -60,16 +60,16 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-08-19T03:20:45.745541+00:00",
-    "total_eventos": 1
+    "generado": "2026-08-20T03:19:44.308644+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-08",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-19T03:20:20.208702+00:00",
-    "total_eventos": 13
+    "generado": "2026-08-20T03:19:17.581795+00:00",
+    "total_eventos": 12
   },
   {
     "periodo": "2026-08",
@@ -84,7 +84,7 @@
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-08-19T03:19:39.750072+00:00",
+    "generado": "2026-08-20T03:18:48.100174+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-19T03:19:27.597291+00:00",
+    "generado": "2026-08-20T03:18:42.797458+00:00",
     "total_eventos": 1
   },
   {
@@ -108,7 +108,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-08-19T03:18:48.626745+00:00",
+    "generado": "2026-08-20T03:18:13.636430+00:00",
     "total_eventos": 2
   },
   {
@@ -116,7 +116,7 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-08-19T20:04:48.197126+00:00",
+    "generado": "2026-08-20T03:18:00.323136+00:00",
     "total_eventos": 1
   },
   {
@@ -124,7 +124,7 @@
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-08-19T03:18:22.447090+00:00",
+    "generado": "2026-08-20T03:17:34.460773+00:00",
     "total_eventos": 1
   },
   {

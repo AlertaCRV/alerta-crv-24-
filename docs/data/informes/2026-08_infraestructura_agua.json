@@ -3,19 +3,27 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-08-19T03:20:45.745541+00:00",
-  "actualizado_hasta": "2026-08-17T11:58:26.243869+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-20T03:19:44.308644+00:00",
+  "actualizado_hasta": "2026-08-19T11:59:11.294560+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 4
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un único caso de falla de suministro de agua, contrastando con la ausencia total de incidentes en julio de 2026 (comparación con el período anterior). Este hecho se concentra en el sector Mereicito I, ubicado en Guasdualito, estado Apure (Turimiquire).\n\nLos habitantes de Mereicito I llevan casi dos meses sin recibir agua potable, una situación que ha generado dificultades en las actividades cotidianas de la población (Turimiquire). La escasez se debe a la avería de la bomba de 15 caballos de fuerza que abastece la zona, la cual quedó inoperativa tras ser alcanzada por un rayo (Turimiquire).\n\nSegún el responsable de la planta de tratamiento, Tito Nemes, la bomba original se quemó y, aunque se instalaron dos bombas de reemplazo, ambas resultaron defectuosas y no lograron restablecer el suministro (Turimiquire). Ante la falta de solución, el ingeniero a cargo retiró las bombas para entregarlas a la Alcaldía, con el objetivo de gestionar la adquisición de una nueva unidad que garantice el restablecimiento del servicio (Turimiquire).\n\nEn la actualidad, la comunidad sigue sin acceso al agua mientras se tramitan los procedimientos para obtener una bomba adecuada; las autoridades locales han sido notificadas y se espera una respuesta pronta para resolver la emergencia (Turimiquire).",
+  "narrativa": "En el mes de agosto de 2026 se registraron cuatro incidentes de falla de agua, frente a cero en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 4 en este período). Los hechos se concentraron en distintas regiones del país, afectando tanto la restitución como la interrupción del suministro.\n\nEn la parroquia Chaguaramal, municipio Monagas, la alcaldesa Mariángelys Tillero logró restituir el servicio de agua potable a más de 500 familias mediante la instalación de una bomba nueva de 15 HP en el sector 12 de Marzo de la comunidad Sectores Unidos (El Periodico de Monagas). Esta acción forma parte del compromiso de garantizar los servicios públicos esenciales para la población piareña.\n\nEn el sector Mereicito I, ubicado en Guasdualito, estado Apure, los habitantes llevan casi dos meses sin agua potable después de que un rayo dañara la bomba de 15 caballos de fuerza que abastecía la zona (Turimiquire). El responsable de la planta de tratamiento informó que se intentó instalar otras bombas, pero ninguna funcionó, por lo que se solicitó una nueva unidad a la alcaldía.\n\nLos vecinos del municipio Aragua, capital Aragua de Barcelona, estado Anzoátegui, se quedaron sin suministro de agua nuevamente a partir del viernes 14 de agosto, después de una semana de operatividad normal del sistema de acueducto (Turimiquire). Según los testimonios de los residentes, el agua dejó de llegar por las tuberías, generando una nueva interrupción del servicio en la zona.",
   "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/"
+    },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/08/17/sin-agua-tienen-a-mereicito-i-en-el-estado-apure/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/"
     }
   ]
 }

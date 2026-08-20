@@ -3,31 +3,23 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-08-19T03:22:20.207402+00:00",
-  "actualizado_hasta": "2026-08-18T23:54:15.377813+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-20T03:21:10.721873+00:00",
+  "actualizado_hasta": "2026-08-12T05:17:03.873115+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 1,
-    "actual": 4
+    "actual": 2
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron cuatro eventos de salud pública, frente a solo uno en el período anterior de julio de 2026, lo que indica un aumento significativo de incidentes en el país (Comparación con el período anterior).\\n\\nEn el estado Lara, el Observatorio Venezolano de Prisiones denunció la muerte de tres reclusos bajo custodia estatal en centros penitenciarios de Carabobo, Miranda y Lara, identificados como Anthony José Portillo Gómez, Víctor José Salgado y Adrián Felipe, señalando una situación de gravedad crítica (Maturin News).\\n\\nEn el estado Portuguesa, la comunidad lamentó el fallecimiento de la niña violinista Romina Rivera Cruz, de 10 años, quien era una destacada ejecutante del violín dentro del Sistema de Orquestas Sinfónicas Juveniles e Infantiles; su muerte también fue catalogada como de severidad crítica (Portuguesa Reporta).\\n\\nOtros incidentes de salud pública se reportaron en Monagas, donde vecinos de San Félix de Cantalicio denunciaron un brote de dengue con al menos 15 casos confirmados, atribuidos al incremento de lluvias y la falta de desmalezamiento que favoreció la proliferación del mosquito vector (El Periodico de Monagas). Asimismo, en Apure se instaló un Estado Mayor para caracterizar el rebaño bovino y avanzar hacia la certificación del territorio como libre de fiebre aftosa, una medida orientada a prevenir enfermedades animales y proteger la salud pública (Notiapure).",
+  "narrativa": "Durante el mes de agosto de 2026, el sector de salud pública en Venezuela registró dos eventos relevantes, frente a uno solo en julio de 2026 (1 evento(s) registrados entonces vs. 2 en este período).\\n\\nEn el estado Lara, el Observatorio Venezolano de Prisiones denunció la muerte de tres personas bajo custodia del Estado en centros penitenciarios, entre ellos un recluso internado en el Centro Penitenciario de Lara, lo que fue calificado como un caso de severidad crítica para la salud pública (Maturin News). La organización solicitó una investigación para determinar si existieron omisiones que retrasaron la atención médica a los internos.\\n\\nEn el municipio Cedeño, en la población de San Félix de Cantalicio, Monagas, los vecinos reportaron un brote de dengue con al menos quince personas que presentaron síntomas compatibles con la enfermedad, atribuido al incremento de lluvias recientes y a la falta de desmalezamiento que favoreció la proliferación del mosquito transmisor (El Periodico de Monagas). Las autoridades sanitarias locales fueron alertadas para intensificar las medidas de control vectorial y atender a los casos confirmados.\\n\\nAmbos incidentes resaltan la necesidad de reforzar los protocolos de atención médica tanto en instituciones penitenciarias como en comunidades vulnerables, con el fin de prevenir nuevas complicaciones y garantizar una respuesta oportuna ante emergencias de salud pública.",
   "fuentes": [
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
     },
     {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/regionales/romina-rivera-la-nina-violinista-que-fue-ejemplo-de-vitalidad-y-amor-por-la-musica-deja-un-vacio-en-el-sistema-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=romina-rivera-la-nina-violinista-que-fue-ejemplo-de-vitalidad-y-amor-por-la-musica-deja-un-vacio-en-el-sistema-portuguesa"
-    },
-    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/apure/apure-instala-estado-mayor-para-caracterizar-su-rebano-bovino-y-avanzar-hacia-la-certificacion-libre-de-fiebre-aftosa/"
     }
   ]
 }
