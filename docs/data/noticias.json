@@ -1,5 +1,62 @@
 [
   {
+    "tipo": "vialidad",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 1.25,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/un-motorizado-murio-en-colision-multiple-en-la-autopista-del-este/",
+        "fecha": "2026-08-19T23:32:22+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/motorizado-muere-arrollado-por-cisterna-en-carabobo/",
+        "fecha": "2026-08-20T01:30:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T01:30:29+00:00",
+    "fecha_evento_temprana": "2026-08-19T23:32:22+00:00",
+    "fecha_deteccion": "2026-08-20T06:06:26.951798+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Carabobo::2026-08-19",
+    "titulo": "Incidente vial en Carabobo",
+    "texto": "📌 Incidente vial en Carabobo\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 19/08/2026, 9:30 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 2:06 a.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/un-motorizado-murio-en-colision-multiple-en-la-autopista-del-este/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/motorizado-muere-arrollado-por-cisterna-en-carabobo/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/triple-choque-en-la-panamericana-de-merida-deja-14-heridos/",
+        "fecha": "2026-08-20T03:00:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T03:00:24+00:00",
+    "fecha_evento_temprana": "2026-08-20T03:00:24+00:00",
+    "fecha_deteccion": "2026-08-20T06:06:44.334233+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Merida::2026-08-20",
+    "titulo": "Incidente vial en Merida",
+    "texto": "📌 Incidente vial en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 19/08/2026, 11:00 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 2:06 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/triple-choque-en-la-panamericana-de-merida-deja-14-heridos/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Bolivar",
     "municipio": null,
