@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/mas-de-600-mil-toneladas-de-escombros-se-han-recolectado-en-la-guaira/",
+        "fecha": "2026-08-20T13:51:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T13:51:49+00:00",
+    "fecha_evento_temprana": "2026-08-20T13:51:49+00:00",
+    "fecha_deteccion": "2026-08-20T16:04:35.083357+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-08-20",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 9:51 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 12:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/mas-de-600-mil-toneladas-de-escombros-se-han-recolectado-en-la-guaira/"
+  },
+  {
     "tipo": "vialidad",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -2617,31 +2643,5 @@
     "clave_dedup": "vialidad::Anzoategui::2026-08-07",
     "titulo": "Incidente vial en Municipio Simón Rodríguez, Anzoategui",
     "texto": "📌 Incidente vial en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 06/08/2026, 8:12 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/06/dos-fallecidos-y-tres-heridos-dejo-choque-entre-un-mustang-y-un-vehiculo-de-transporte-publico-en-el-tigre/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Trujillo",
-    "municipio": "Carache",
-    "parroquia": "La Concepción",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad Trujillo",
-        "link": "https://ciudadtrujillo.com/?p=53972",
-        "fecha": "2026-08-06T00:33:25+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-06T00:33:25+00:00",
-    "fecha_evento_temprana": "2026-08-06T00:33:25+00:00",
-    "fecha_deteccion": "2026-08-06T08:05:31.297170+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Trujillo::2026-08-06",
-    "titulo": "Incendio en Parroquia La Concepción, Municipio Carache, Trujillo",
-    "texto": "📌 Incendio en Parroquia La Concepción, Municipio Carache, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Concepción, Municipio Carache, Trujillo\n🕒 Hecho reportado: 05/08/2026, 8:33 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 4:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=53972"
   }
 ]
