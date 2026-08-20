@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-20T17:54:00.884748+00:00",
+  "actualizado": "2026-08-20T19:50:10.632788+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-20T13:51:49+00:00"
+    "hasta": "2026-08-20T16:40:02+00:00"
   },
-  "total_eventos": 168,
+  "total_eventos": 170,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 27,
-    "infraestructura_electrica": 47,
+    "infraestructura_electrica": 48,
     "deslizamiento": 13,
     "colapso_estructural": 3,
     "orden_publico": 31,
@@ -22,7 +22,8 @@
     "explosion": 1,
     "infraestructura_agua": 4,
     "accidente_transporte": 1,
-    "ataque_armado": 1
+    "ataque_armado": 1,
+    "derrame_petrolero": 1
   },
   "ranking_estados": [
     {
@@ -116,13 +117,13 @@
       "confirmados": 1
     },
     {
-      "estado": "La Guaira",
+      "estado": "Tachira",
       "total": 3,
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 2,
+      "estado": "La Guaira",
+      "total": 3,
       "confirmados": 0
     },
     {
@@ -132,6 +133,11 @@
     },
     {
       "estado": "Cojedes",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Delta Amacuro",
       "total": 1,
       "confirmados": 0
     }
@@ -212,7 +218,7 @@
     },
     "Tachira": {
       "deslizamiento": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Monagas": {
       "infraestructura_electrica": 5,
@@ -270,14 +276,17 @@
     "La Guaira": {
       "deslizamiento": 2,
       "infraestructura_electrica": 1
+    },
+    "Delta Amacuro": {
+      "derrame_petrolero": 1
     }
   },
   "por_severidad": {
     "alto": 15,
     "critico": 16,
-    "sin_clasificar": 135,
+    "sin_clasificar": 136,
     "medio": 1,
-    "bajo": 1
+    "bajo": 2
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -289,7 +298,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 42
+      "2026-08": 43
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -336,6 +345,9 @@
       "2026-08": 1
     },
     "ataque_armado": {
+      "2026-08": 1
+    },
+    "derrame_petrolero": {
       "2026-08": 1
     }
   }

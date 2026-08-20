@@ -763,10 +763,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-20T12:03:40.947475+00:00"
   },
-  "ataque_armado::Distrito Capital::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T17:53:19.345735+00:00"
-  },
   "infraestructura_electrica::Apure::2026-08-20": {
     "intentos": 1,
     "ultima_vez": "2026-08-20T14:22:35.239142+00:00"
@@ -783,32 +779,48 @@
     "intentos": 1,
     "ultima_vez": "2026-08-20T16:04:31.644097+00:00"
   },
-  "derrame_petrolero::Delta Amacuro::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T17:53:43.954542+00:00"
-  },
-  "infraestructura_electrica::Tachira::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T17:53:32.749850+00:00"
-  },
   "orden_publico::Distrito Capital::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T17:53:22.835255+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T19:49:03.298410+00:00"
   },
   "deslizamiento::La Guaira::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T17:53:26.097849+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T19:48:52.966317+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T17:53:29.464436+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T19:49:16.866269+00:00"
   },
   "sequia::Guarico::2026-08-20": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-20T17:53:48.282875+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T19:49:58.144209+00:00"
   },
   "sequia::Portuguesa::2026-08-20": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-20T19:50:09.696178+00:00"
+  },
+  "tsunami::La Guaira::2026-08-20": {
     "intentos": 1,
-    "ultima_vez": "2026-08-20T17:53:59.980569+00:00"
+    "ultima_vez": "2026-08-20T19:48:59.842924+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T19:49:06.640606+00:00"
+  },
+  "inundacion::Zulia::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T19:49:09.968743+00:00"
+  },
+  "sismo::Tachira::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T19:49:13.376173+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T19:49:31.709186+00:00"
+  },
+  "infraestructura_electrica::La Guaira::2026-08-20": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-20T19:49:43.339711+00:00"
   }
 }

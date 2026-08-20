@@ -1,6 +1,63 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Tachira",
+    "municipio": "Panamericano",
+    "parroquia": "La Palmita",
+    "severidad": "bajo",
+    "score": 1.2,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/20/tachira-apagones-afectan-operatividad-de-los-hospitales-20ago/",
+        "fecha": "2026-08-20T14:27:04+00:00"
+      },
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/20/en-los-municipios-de-las-montanas-del-tachira-la-gasolina-llega-la-gasolina-cada-15-dias-y-a-eso-hay-que-agregarles-los-apagones-electicos/",
+        "fecha": "2026-08-20T16:40:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T16:40:02+00:00",
+    "fecha_evento_temprana": "2026-08-20T14:27:04+00:00",
+    "fecha_deteccion": "2026-08-20T19:49:20.278650+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Tachira::2026-08-20",
+    "titulo": "Falla eléctrica en Parroquia La Palmita, Municipio Panamericano, Tachira",
+    "texto": "📌 Falla eléctrica en Parroquia La Palmita, Municipio Panamericano, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia La Palmita, Municipio Panamericano, Tachira\n🕒 Hecho reportado: 20/08/2026, 12:40 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 3:49 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/20/tachira-apagones-afectan-operatividad-de-los-hospitales-20ago/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/en-los-municipios-de-las-montanas-del-tachira-la-gasolina-llega-la-gasolina-cada-15-dias-y-a-eso-hay-que-agregarles-los-apagones-electicos/"
+  },
+  {
+    "tipo": "derrame_petrolero",
+    "ubicacion": "Delta Amacuro",
+    "municipio": "Pedernales",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Deltano (Delta Amacuro)",
+        "link": "https://eldeltano.com/2026/08/20/alerta-por-presunto-derrame-de-hidrocarburos-en-la-isla-cotorra-pedernales/",
+        "fecha": "2026-08-20T15:41:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T15:41:17+00:00",
+    "fecha_evento_temprana": "2026-08-20T15:41:17+00:00",
+    "fecha_deteccion": "2026-08-20T19:49:46.697423+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "derrame_petrolero::Delta Amacuro::2026-08-20",
+    "titulo": "Derrame petrolero en Municipio Pedernales, Delta Amacuro",
+    "texto": "📌 Derrame petrolero en Municipio Pedernales, Delta Amacuro\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedernales, Delta Amacuro\n🕒 Hecho reportado: 20/08/2026, 11:41 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 3:49 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Deltano (Delta Amacuro): https://eldeltano.com/2026/08/20/alerta-por-presunto-derrame-de-hidrocarburos-en-la-isla-cotorra-pedernales/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
