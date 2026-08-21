@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-21T05:23:26.088212+00:00",
+  "actualizado": "2026-08-21T07:59:46.066292+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-20T23:52:53+00:00"
+    "hasta": "2026-08-21T04:30:56+00:00"
   },
-  "total_eventos": 174,
+  "total_eventos": 179,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 28,
-    "infraestructura_electrica": 50,
-    "deslizamiento": 10,
+    "infraestructura_electrica": 52,
+    "deslizamiento": 11,
     "colapso_estructural": 3,
     "orden_publico": 32,
     "salud_publica": 4,
     "crisis_migratoria": 4,
-    "incendio": 15,
+    "incendio": 17,
     "vialidad": 9,
     "sismo": 4,
     "escasez_combustible": 1,
@@ -27,7 +27,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 28,
+      "total": 29,
       "confirmados": 4
     },
     {
@@ -56,6 +56,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 9,
+      "confirmados": 1
+    },
+    {
       "estado": "Monagas",
       "total": 9,
       "confirmados": 0
@@ -66,19 +71,14 @@
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
+      "estado": "Trujillo",
       "total": 8,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
-    },
-    {
-      "estado": "Trujillo",
-      "total": 6,
-      "confirmados": 0
     },
     {
       "estado": "Sucre",
@@ -116,12 +116,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 3,
+      "estado": "Guarico",
+      "total": 4,
       "confirmados": 0
     },
     {
-      "estado": "Guarico",
+      "estado": "Tachira",
       "total": 3,
       "confirmados": 0
     },
@@ -144,7 +144,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 2,
       "inundacion": 1,
       "vialidad": 1
@@ -172,7 +172,7 @@
       "deslizamiento": 3,
       "inundacion": 5,
       "orden_publico": 6,
-      "incendio": 4,
+      "incendio": 5,
       "vialidad": 1,
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
@@ -180,9 +180,10 @@
     },
     "Trujillo": {
       "inundacion": 1,
-      "incendio": 3,
+      "incendio": 4,
       "sequia": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "deslizamiento": 1
     },
     "Barinas": {
       "deslizamiento": 1,
@@ -261,7 +262,8 @@
     },
     "Guarico": {
       "sequia": 2,
-      "colapso_estructural": 1
+      "colapso_estructural": 1,
+      "infraestructura_electrica": 1
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
@@ -280,9 +282,9 @@
     }
   },
   "por_severidad": {
-    "alto": 15,
+    "alto": 16,
     "critico": 15,
-    "sin_clasificar": 141,
+    "sin_clasificar": 145,
     "medio": 1,
     "bajo": 2
   },
@@ -296,11 +298,11 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 45
+      "2026-08": 47
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 7
+      "2026-08": 8
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -319,7 +321,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 12
+      "2026-08": 14
     },
     "vialidad": {
       "2026-08": 9
