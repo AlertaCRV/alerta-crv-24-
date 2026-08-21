@@ -848,27 +848,63 @@
     "ultima_vez": "2026-08-21T15:58:03.548249+00:00"
   },
   "incendio::Portuguesa::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T22:31:05.327803+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T22:56:58.570482+00:00"
   },
   "tormenta_electrica::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T22:31:54.560082+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T22:57:47.178320+00:00"
   },
   "tormenta_electrica::Trujillo::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T22:32:19.376983+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T22:58:11.490276+00:00"
   },
   "deslizamiento::Aragua::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T22:33:11.999650+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T22:59:24.512780+00:00"
   },
   "deslizamiento::Guarico::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T22:33:36.290556+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T22:59:48.862504+00:00"
   },
   "infraestructura_electrica::Apure::2026-08-21": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T23:01:29.494343+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-21": {
     "intentos": 1,
-    "ultima_vez": "2026-08-21T22:35:37.981720+00:00"
+    "ultima_vez": "2026-08-21T22:56:30.793619+00:00"
+  },
+  "salud_publica::Lara::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T22:56:34.277275+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T22:57:22.841208+00:00"
+  },
+  "infraestructura_electrica::Sucre::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T22:58:35.854457+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T22:59:00.120090+00:00"
+  },
+  "sequia::Apure::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T23:00:13.192273+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T23:00:37.515483+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T23:01:01.843543+00:00"
+  },
+  "inundacion::La Guaira::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T23:01:26.127970+00:00"
   }
 }
