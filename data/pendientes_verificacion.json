@@ -859,24 +859,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-21T15:58:03.548249+00:00"
   },
-  "infraestructura_electrica::Sucre::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T17:17:44.725618+00:00"
-  },
   "inundacion::Yaracuy::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T17:17:27.441707+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:11:12.105892+00:00"
   },
   "tormenta_electrica::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T17:17:34.488151+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:11:18.842621+00:00"
   },
   "tormenta_electrica::Trujillo::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T17:17:37.983830+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:11:22.259489+00:00"
   },
   "infraestructura_electrica::Apure::2026-08-21": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:12:06.699915+00:00"
+  },
+  "salud_publica::Lara::2026-08-21": {
     "intentos": 1,
-    "ultima_vez": "2026-08-21T17:17:52.286191+00:00"
+    "ultima_vez": "2026-08-21T19:11:08.726411+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T19:11:15.435539+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T19:11:29.077198+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T19:11:40.426507+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T19:11:51.858838+00:00"
+  },
+  "inundacion::La Guaira::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T19:12:03.355379+00:00"
   }
 }
