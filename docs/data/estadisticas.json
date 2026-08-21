@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-08-21T14:11:26.029998+00:00",
+  "actualizado": "2026-08-21T15:58:32.840683+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T10:19:03+00:00"
+    "hasta": "2026-08-21T15:18:38+00:00"
   },
-  "total_eventos": 181,
+  "total_eventos": 183,
   "por_tipo": {
-    "tormenta_electrica": 2,
+    "tormenta_electrica": 4,
     "inundacion": 28,
     "infraestructura_electrica": 52,
     "deslizamiento": 11,
@@ -27,7 +27,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 30,
+      "total": 31,
       "confirmados": 4
     },
     {
@@ -61,6 +61,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Trujillo",
+      "total": 9,
+      "confirmados": 0
+    },
+    {
       "estado": "Monagas",
       "total": 9,
       "confirmados": 0
@@ -69,11 +74,6 @@
       "estado": "Yaracuy",
       "total": 9,
       "confirmados": 1
-    },
-    {
-      "estado": "Trujillo",
-      "total": 8,
-      "confirmados": 0
     },
     {
       "estado": "Miranda",
@@ -176,14 +176,16 @@
       "vialidad": 1,
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
-      "sismo": 1
+      "sismo": 1,
+      "tormenta_electrica": 1
     },
     "Trujillo": {
       "inundacion": 1,
       "incendio": 4,
       "sequia": 1,
       "infraestructura_electrica": 1,
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "tormenta_electrica": 1
     },
     "Barinas": {
       "deslizamiento": 1,
@@ -285,13 +287,14 @@
   "por_severidad": {
     "alto": 16,
     "critico": 15,
-    "sin_clasificar": 147,
+    "sin_clasificar": 149,
     "medio": 1,
     "bajo": 2
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
-      "2026-07": 2
+      "2026-07": 2,
+      "2026-08": 2
     },
     "inundacion": {
       "2026-07": 7,

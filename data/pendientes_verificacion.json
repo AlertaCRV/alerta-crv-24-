@@ -796,8 +796,8 @@
     "ultima_vez": "2026-08-20T23:08:04.708610+00:00"
   },
   "deslizamiento::La Guaira::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T00:02:17.143415+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T15:58:13.682628+00:00"
   },
   "ataque_armado::Aragua::2026-08-21": {
     "intentos": 1,
@@ -847,28 +847,32 @@
     "intentos": 2,
     "ultima_vez": "2026-08-21T12:06:25.860884+00:00"
   },
-  "tormenta_electrica::Distrito Capital::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T14:11:18.545243+00:00"
-  },
-  "tormenta_electrica::Trujillo::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T14:11:22.062943+00:00"
-  },
   "infraestructura_electrica::Tachira::2026-08-21": {
     "intentos": 1,
     "ultima_vez": "2026-08-21T12:06:39.730172+00:00"
   },
   "incendio::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T14:11:07.707213+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T15:58:28.613193+00:00"
   },
   "infraestructura_electrica::Lara::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T14:11:11.253473+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T15:57:59.877380+00:00"
   },
   "emergencia_metro::Distrito Capital::2026-08-21": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T15:58:32.032224+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-21": {
     "intentos": 1,
-    "ultima_vez": "2026-08-21T14:11:25.493749+00:00"
+    "ultima_vez": "2026-08-21T15:57:56.466203+00:00"
+  },
+  "incendio::Tachira::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T15:58:03.548249+00:00"
+  },
+  "infraestructura_electrica::Sucre::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T15:58:17.013820+00:00"
   }
 }
