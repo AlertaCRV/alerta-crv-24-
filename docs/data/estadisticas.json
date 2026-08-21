@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-21T21:01:59.178527+00:00",
+  "actualizado": "2026-08-21T22:00:21.641995+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T19:48:26+00:00"
+    "hasta": "2026-08-21T20:19:28+00:00"
   },
-  "total_eventos": 193,
+  "total_eventos": 196,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 31,
     "infraestructura_electrica": 56,
-    "deslizamiento": 12,
+    "deslizamiento": 14,
     "colapso_estructural": 3,
     "orden_publico": 32,
     "salud_publica": 5,
@@ -23,12 +23,13 @@
     "infraestructura_agua": 5,
     "accidente_transporte": 1,
     "derrame_petrolero": 1,
-    "emergencia_metro": 1
+    "emergencia_metro": 1,
+    "ataque_armado": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 32,
+      "total": 33,
       "confirmados": 4
     },
     {
@@ -92,13 +93,18 @@
       "confirmados": 2
     },
     {
+      "estado": "Aragua",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
     },
     {
-      "estado": "Aragua",
-      "total": 6,
+      "estado": "Guarico",
+      "total": 5,
       "confirmados": 0
     },
     {
@@ -118,11 +124,6 @@
     },
     {
       "estado": "Merida",
-      "total": 4,
-      "confirmados": 0
-    },
-    {
-      "estado": "Guarico",
       "total": 4,
       "confirmados": 0
     },
@@ -179,7 +180,8 @@
       "colapso_estructural": 1,
       "sismo": 1,
       "tormenta_electrica": 1,
-      "emergencia_metro": 1
+      "emergencia_metro": 1,
+      "ataque_armado": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -261,7 +263,8 @@
       "orden_publico": 2,
       "inundacion": 2,
       "infraestructura_electrica": 1,
-      "accidente_transporte": 1
+      "accidente_transporte": 1,
+      "deslizamiento": 1
     },
     "Merida": {
       "infraestructura_electrica": 3,
@@ -270,7 +273,8 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "deslizamiento": 1
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
@@ -293,7 +297,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 16,
-    "sin_clasificar": 156,
+    "sin_clasificar": 159,
     "medio": 1,
     "bajo": 3
   },
@@ -312,7 +316,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 9
+      "2026-08": 11
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -358,6 +362,9 @@
       "2026-08": 1
     },
     "emergencia_metro": {
+      "2026-08": 1
+    },
+    "ataque_armado": {
       "2026-08": 1
     }
   }
