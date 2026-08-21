@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/victimas-de-la-crisis-electrica-al-menos-18-personas-murieron-electrocutadas-en-lo-que-va-de-2026/",
+        "fecha": "2026-08-21T21:57:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T21:57:26+00:00",
+    "fecha_evento_temprana": "2026-08-21T21:57:26+00:00",
+    "fecha_deteccion": "2026-08-21T23:29:51.442141+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Portuguesa::2026-08-21",
+    "titulo": "Incendio en Portuguesa",
+    "texto": "📌 Incendio en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 21/08/2026, 5:57 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/victimas-de-la-crisis-electrica-al-menos-18-personas-murieron-electrocutadas-en-lo-que-va-de-2026/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Distrito Capital",
     "municipio": null,
