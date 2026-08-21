@@ -827,24 +827,36 @@
     "intentos": 1,
     "ultima_vez": "2026-08-21T00:07:00.866464+00:00"
   },
-  "incendio::Distrito Capital::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T05:20:56.594866+00:00"
+  "infraestructura_electrica::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:58:37.145267+00:00"
   },
-  "infraestructura_electrica::Carabobo::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T05:20:59.940255+00:00"
+  "vialidad::Barinas::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:58:43.866963+00:00"
   },
-  "infraestructura_electrica::Guarico::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T05:21:06.893146+00:00"
+  "infraestructura_agua::Barinas::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:58:47.263473+00:00"
   },
-  "deslizamiento::Trujillo::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T05:22:11.796670+00:00"
+  "infraestructura_electrica::Yaracuy::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:58:51.125937+00:00"
   },
-  "incendio::Trujillo::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T05:22:36.347863+00:00"
+  "infraestructura_electrica::Tachira::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:58:54.437024+00:00"
+  },
+  "inundacion::Delta Amacuro::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:59:06.126750+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:59:09.379968+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T07:59:44.071576+00:00"
   }
 }

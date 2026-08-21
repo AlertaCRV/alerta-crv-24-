@@ -84,7 +84,7 @@
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-08-20T03:18:48.100174+00:00",
+    "generado": "2026-08-21T08:00:27.586146+00:00",
     "total_eventos": 1
   },
   {
@@ -102,6 +102,14 @@
     "cerrado": false,
     "generado": "2026-08-20T08:10:23.499465+00:00",
     "total_eventos": 9
+  },
+  {
+    "periodo": "2026-08",
+    "tipo": "derrame_petrolero",
+    "tipo_label": "Derrame petrolero",
+    "cerrado": false,
+    "generado": "2026-08-21T07:59:58.802634+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-08",

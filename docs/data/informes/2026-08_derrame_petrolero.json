@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "derrame_petrolero",
+  "tipo_label": "Derrame petrolero",
+  "cerrado": false,
+  "generado": "2026-08-21T07:59:58.802634+00:00",
+  "actualizado_hasta": "2026-08-20T19:49:46.697423+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el mes de agosto de 2026 se registró un único caso de derrame petrolero en Venezuela, contrastando con la ausencia total de incidentes en el mes anterior (2026‑07) (Datos comparativos). Este aumento, aunque limitado en número, llama la atención de las autoridades de la Cruz Roja Venezolana para reforzar la vigilancia ambiental en la zona.\n\nEl único evento reportado corresponde a un presunto derrame de hidrocarburos en La Isla Cotorra, ubicada en el municipio Pedernales del estado Delta Amacuro, el 20 de agosto de 2026 (El Deltano). Según la información proporcionada, pescadores locales fueron los primeros en detectar la posible fuga y alertaron a las autoridades competentes.\n\nHasta el momento no se han registrado víctimas fatales ni heridos, y los daños materiales siguen bajo evaluación. Las autoridades ambientales y de emergencia han iniciado inspecciones preliminares para confirmar la magnitud del derrame y determinar las medidas de mitigación necesarias (El Deltano).",
+  "fuentes": [
+    {
+      "nombre": "El Deltano (Delta Amacuro)",
+      "link": "https://eldeltano.com/2026/08/20/alerta-por-presunto-derrame-de-hidrocarburos-en-la-isla-cotorra-pedernales/"
+    }
+  ]
+}
