@@ -3,7 +3,7 @@
   "tipo": "accidente_transporte",
   "tipo_label": "Accidente de transporte",
   "cerrado": false,
-  "generado": "2026-08-20T03:17:34.460773+00:00",
+  "generado": "2026-08-21T03:37:13.229764+00:00",
   "actualizado_hasta": "2026-08-18T17:06:02.794323+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "Durante el mes de agosto de 2026 se registró un único incidente de transporte, lo que representa un aumento respecto al mes anterior en el que no se reportó ningún evento (comparación con el período anterior: 0 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único suceso ocurrió en la costa norte del estado Nueva Esparta, específicamente en la localidad de Choroní, donde tres pescadores originarios de la Isla de Margarita sufrieron un naufragio tras enfrentarse a condiciones meteorológicas adversas, con intensas lluvias y fuerte oleaje (Reporte Confidencial).\\n\\nEl mal tiempo provocó el anegamiento y la zozobra de la embarcación de pesca, obligando a los tres trabajadores del mar a abandonar el barco; fueron localizados y rescatados por equipos de emergencia que actuaron rápidamente en el área (Reporte Confidencial).\\n\\nEste incidente subraya la importancia de mantener una vigilancia constante y de reforzar los protocolos de seguridad marítima en la región, especialmente durante periodos de clima severo, para prevenir futuros siniestros y proteger la vida de los pescadores venezolanos (Reporte Confidencial).",
+  "narrativa": "En el mes de agosto de 2026 se registró un único accidente de transporte, lo que representa un aumento respecto al período anterior, donde no se reportó ningún evento (comparación con el período anterior). \n\nEl único incidente ocurrió en la zona costera de Choroní, municipio de Girardot, en el estado Nueva Esparta, donde tres pescadores originarios de la Isla de Margarita se vieron involucrados en un naufragio (Reporte Confidencial). \n\nSegún el informe, la embarcación se vio afectada por condiciones meteorológicas adversas, específicamente intensas lluvias y fuerte oleaje, que provocaron el anegamiento y la posterior zozobra de la nave (Reporte Confidencial). \n\nLas autoridades de rescate lograron salvar a los tres trabajadores del mar tras la emergencia, evitando víctimas fatales y garantizando su seguridad (Reporte Confidencial).",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",

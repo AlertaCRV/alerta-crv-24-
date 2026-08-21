@@ -92,7 +92,7 @@
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-20T03:18:42.797458+00:00",
+    "generado": "2026-08-21T03:38:33.483763+00:00",
     "total_eventos": 1
   },
   {
@@ -108,23 +108,15 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-08-20T03:18:13.636430+00:00",
+    "generado": "2026-08-21T03:37:39.812026+00:00",
     "total_eventos": 2
-  },
-  {
-    "periodo": "2026-08",
-    "tipo": "ataque_armado",
-    "tipo_label": "Ataque armado",
-    "cerrado": false,
-    "generado": "2026-08-20T03:18:00.323136+00:00",
-    "total_eventos": 1
   },
   {
     "periodo": "2026-08",
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-08-20T03:17:34.460773+00:00",
+    "generado": "2026-08-21T03:37:13.229764+00:00",
     "total_eventos": 1
   },
   {
