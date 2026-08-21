@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-21T17:17:53.550055+00:00",
+  "actualizado": "2026-08-21T19:12:07.327787+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-21T15:18:38+00:00"
   },
-  "total_eventos": 185,
+  "total_eventos": 186,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 28,
-    "infraestructura_electrica": 52,
+    "infraestructura_electrica": 53,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 32,
@@ -77,14 +77,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Sucre",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
-    },
-    {
-      "estado": "Sucre",
-      "total": 6,
-      "confirmados": 0
     },
     {
       "estado": "Apure",
@@ -200,7 +200,7 @@
     "Sucre": {
       "inundacion": 1,
       "orden_publico": 3,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 3
     },
     "Anzoategui": {
       "infraestructura_electrica": 5,
@@ -290,7 +290,7 @@
   "por_severidad": {
     "alto": 16,
     "critico": 15,
-    "sin_clasificar": 151,
+    "sin_clasificar": 152,
     "medio": 1,
     "bajo": 2
   },
@@ -305,7 +305,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 47
+      "2026-08": 48
     },
     "deslizamiento": {
       "2026-07": 3,
