@@ -808,8 +808,8 @@
     "ultima_vez": "2026-08-21T00:03:19.923850+00:00"
   },
   "infraestructura_electrica::La Guaira::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T00:04:59.882144+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:59:41.355964+00:00"
   },
   "derrame_petrolero::Delta Amacuro::2026-08-21": {
     "intentos": 2,
@@ -836,8 +836,8 @@
     "ultima_vez": "2026-08-21T07:59:06.126750+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T07:59:44.071576+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:56:00.298018+00:00"
   },
   "infraestructura_electrica::Carabobo::2026-08-21": {
     "intentos": 2,
@@ -859,44 +859,32 @@
     "intentos": 1,
     "ultima_vez": "2026-08-21T15:58:03.548249+00:00"
   },
-  "inundacion::Yaracuy::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:11:12.105892+00:00"
-  },
-  "tormenta_electrica::Distrito Capital::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:11:18.842621+00:00"
-  },
-  "tormenta_electrica::Trujillo::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:11:22.259489+00:00"
-  },
-  "infraestructura_electrica::Apure::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:12:06.699915+00:00"
-  },
   "salud_publica::Lara::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T19:11:08.726411+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:55:49.604490+00:00"
   },
   "incendio::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T19:11:15.435539+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:55:56.757528+00:00"
   },
   "emergencia_metro::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T19:11:29.077198+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:57:38.460535+00:00"
   },
   "inundacion::Anzoategui::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T19:11:40.426507+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:58:03.029956+00:00"
   },
   "deslizamiento::La Guaira::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T19:11:51.858838+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:58:27.623800+00:00"
   },
   "inundacion::La Guaira::2026-08-21": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T19:58:52.255711+00:00"
+  },
+  "infraestructura_electrica::Sucre::2026-08-21": {
     "intentos": 1,
-    "ultima_vez": "2026-08-21T19:12:03.355379+00:00"
+    "ultima_vez": "2026-08-21T19:57:13.933870+00:00"
   }
 }

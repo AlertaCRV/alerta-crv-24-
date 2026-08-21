@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-21T19:12:07.327787+00:00",
+  "actualizado": "2026-08-21T19:59:42.455093+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T15:18:38+00:00"
+    "hasta": "2026-08-21T16:15:00+00:00"
   },
-  "total_eventos": 186,
+  "total_eventos": 188,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 28,
-    "infraestructura_electrica": 53,
+    "inundacion": 29,
+    "infraestructura_electrica": 54,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 32,
@@ -57,6 +57,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Yaracuy",
+      "total": 10,
+      "confirmados": 1
+    },
+    {
       "estado": "Carabobo",
       "total": 9,
       "confirmados": 1
@@ -72,12 +77,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Yaracuy",
-      "total": 9,
-      "confirmados": 1
+      "estado": "Sucre",
+      "total": 7,
+      "confirmados": 0
     },
     {
-      "estado": "Sucre",
+      "estado": "Apure",
       "total": 7,
       "confirmados": 0
     },
@@ -85,11 +90,6 @@
       "estado": "Miranda",
       "total": 7,
       "confirmados": 2
-    },
-    {
-      "estado": "Apure",
-      "total": 6,
-      "confirmados": 0
     },
     {
       "estado": "Falcon",
@@ -219,7 +219,8 @@
       "crisis_migratoria": 1,
       "inundacion": 3,
       "orden_publico": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 1,
@@ -249,7 +250,7 @@
       "deslizamiento": 3
     },
     "Yaracuy": {
-      "inundacion": 3,
+      "inundacion": 4,
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
@@ -290,7 +291,7 @@
   "por_severidad": {
     "alto": 16,
     "critico": 15,
-    "sin_clasificar": 152,
+    "sin_clasificar": 154,
     "medio": 1,
     "bajo": 2
   },
@@ -301,11 +302,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 21
+      "2026-08": 22
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 48
+      "2026-08": 49
     },
     "deslizamiento": {
       "2026-07": 3,
