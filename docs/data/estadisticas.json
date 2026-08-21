@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-21T22:00:21.641995+00:00",
+  "actualizado": "2026-08-21T23:33:58.533266+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T20:19:28+00:00"
+    "hasta": "2026-08-21T21:57:26+00:00"
   },
-  "total_eventos": 196,
+  "total_eventos": 197,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 31,
@@ -14,7 +14,7 @@
     "orden_publico": 32,
     "salud_publica": 5,
     "crisis_migratoria": 4,
-    "incendio": 19,
+    "incendio": 20,
     "vialidad": 9,
     "sismo": 4,
     "escasez_combustible": 1,
@@ -103,12 +103,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Guarico",
-      "total": 5,
+      "estado": "Portuguesa",
+      "total": 6,
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
+      "estado": "Guarico",
       "total": 5,
       "confirmados": 0
     },
@@ -279,7 +279,8 @@
     "Portuguesa": {
       "infraestructura_electrica": 1,
       "orden_publico": 2,
-      "inundacion": 2
+      "inundacion": 2,
+      "incendio": 1
     },
     "Cojedes": {
       "orden_publico": 1
@@ -296,7 +297,7 @@
   },
   "por_severidad": {
     "alto": 17,
-    "critico": 16,
+    "critico": 17,
     "sin_clasificar": 159,
     "medio": 1,
     "bajo": 3
@@ -335,7 +336,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 16
+      "2026-08": 17
     },
     "vialidad": {
       "2026-08": 9

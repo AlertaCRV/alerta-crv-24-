@@ -306,5 +306,12 @@
     "fecha_deteccion": "2026-08-21T21:58:14.145222+00:00",
     "fecha_evento_temprana": "2026-08-21T20:19:28+00:00",
     "municipio": null
+  },
+  "incendio::Portuguesa::2026-08-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T23:29:51.442141+00:00",
+    "fecha_evento_temprana": "2026-08-21T21:57:26+00:00",
+    "municipio": null
   }
 }
