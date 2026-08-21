@@ -7218,3 +7218,345 @@ archivos de datos.
 transformador, e informe-mapa de un tercero con evidencia local real para
 un estado). `python3 -m pytest tests/` → 415 passed, 6 xfailed (conocidos),
 1 xpassed (conocido). `python3 scripts/validar_configs.py` → OK.
+
+## Auditoría diaria automática (20-08-2026): un terremoto internacional en Perú generó dos alertas falsas (tsunami descartado explícitamente y sismo en Táchira vía titular no relacionado), más 4 hallazgos adicionales
+
+Revisión de las ~34 alertas publicadas en las últimas 24-48h (todas
+`PASADO_POR_FALLA_TECNICA`, sin excepción -- la verificación de IA sigue sin
+correr en este entorno), comparando cada una contra el texto real de sus
+fuentes en `data/historico_fuentes_texto.jsonl`. 6 errores reales
+encontrados y corregidos de raíz.
+
+### 1. Un terremoto de magnitud 7.2 en Ayacucho, Perú, que el propio texto niega como tsunami, se publicó como `tsunami::La Guaira`
+
+`tsunami::La Guaira::2026-08-20` (El Pitazo, "Terremoto de magnitud 7,2
+sacude a Perú este #20Ago") es una nota 100% internacional sobre un sismo
+en la región andina de Ayacucho, sur de Perú -- el propio texto dice
+explícitamente "Las autoridades descartan, por ahora, posibilidad de
+tsunami", pero esa misma frase disparaba tipo=tsunami vía la palabra
+suelta "tsunami". La ubicación "La Guaira" tampoco tenía relación real con
+el hecho: era el titular de un artículo relacionado incluido de pasada en
+el texto scrapeado ("«Cumplí mi misión de llevármelos conmigo»: mujer
+localiza a su familia atrapada en edificio de La Guaira"), el mismo patrón
+de "titulares no relacionados en la barra lateral del medio" ya documentado
+para el epicentro extranjero de sismo (16-08-2026).
+
+**Corrección**: nueva función `_es_tsunami_descartado_explicitamente()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO: si el texto
+tiene un marcador de tsunami explícitamente descartado ("descartan la
+posibilidad de tsunami", "sin riesgo de tsunami"...) y no hay evidencia
+fuerte de un tsunami real (ola gigante, maremoto, evacuación costera), se
+descarta el tipo. Se verificó con un caso de control (un sismo que además
+ordena una evacuación costera real pese a descartarse el tsunami) que sigue
+publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`tsunami::La Guaira::2026-08-20` de los 4 archivos de datos.
+
+### 2. El mismo terremoto de Perú, republicado por un medio de Táchira, se publicó como `sismo::Tachira` crítico vía un titular no relacionado de la sección "Destacados"
+
+`sismo::Tachira::2026-08-20::mag7.2` (Diario La Nación (Táchira), mismo
+terremoto de Ayacucho, Perú) disparaba tipo=sismo en Táchira -- severidad
+CRÍTICA -- vía un titular de la sección "Destacados" al final del artículo,
+sin ninguna relación con el sismo: "Táchira aporta tres atletas a la
+selección nacional de baloncesto U15". Mismo patrón que "San José del
+Palmar" (16-08-2026), pero con Perú en vez de Colombia.
+
+**Corrección**: se amplió `_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS`
+(`scripts/classify.py`) con "Coracora" (la localidad peruana del
+epicentro). A diferencia de "San José del Palmar", NO se agregó "Ayacucho"
+solo -- es también un municipio real de Táchira (confirmado por un caso de
+control real y vigente en el mismo corpus, sobre escasez de combustible en
+"los municipios Ayacucho... del estado Táchira") -- así que se usó
+"Coracora", sin colisión con ningún topónimo venezolano.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Tachira::2026-08-20::mag7.2` de los 4 archivos de datos.
+
+### 3. Una familia que vive desde hace 3 años en una casa dañada por una crecida ya ocurrida se publicó como inundación crítica en Mérida
+
+`inundacion::Merida::2026-08-19` (Reporteros de Mérida, "Familia en La
+Milagrosa lleva 3 años esperando respuesta tras crecida del Río Milla") es
+un reportaje sobre una familia que vive "al borde del colapso total" desde
+que, "hace tres años", una crecida del río Milla dañó su vivienda -- sin
+ningún desarrollo nuevo el día de publicación. "Colapso total" (palabra
+clave de severidad CRÍTICA) describe el riesgo temido a futuro, no un
+hecho consumado hoy.
+
+**Corrección**: nuevo regex `_RETROSPECTIVO_HECHO_HIDROLOGICO_ANOS_RE`,
+sumado a `_es_articulo_retrospectivo_larga_duracion()` (mismo mecanismo que
+"meses/años de espera"): descarta el tipo si el propio hecho hidrológico
+(crecida/inundación/desbordamiento) está fechado por la frase "hace N
+años". No se usó "hace N años" a secas como marcador -- se verificó contra
+el corpus que esa frase, sin exigir que fechara directamente el hecho
+hidrológico, aparece en otros 3 casos reales y vigentes como contexto
+incidental de una denuncia (un alcalde, un preso, un vocero de adultos
+mayores), sin volver retrospectivo el resto del artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`inundacion::Merida::2026-08-19` de los 4 archivos de datos.
+
+### 4. Una ONG de transparencia denunciando irregularidades judiciales (sobreseimientos) se publicó como ataque armado en Distrito Capital
+
+`ataque_armado::Distrito Capital::2026-08-19` (El Pitazo, "Transparencia
+Venezuela alerta sobre irregularidades en sobreseimientos del clan Convit y
+detención de jueces") disparaba tipo=ataque_armado vía la palabra
+"terrorismo" -- nombrando la jurisdicción de un tribunal ("con competencia
+en delitos de terrorismo, corrupción y delincuencia organizada"), no un
+ataque real. Mismo patrón de fondo ya cubierto para "notificación azul"/
+"excarcelados"/"limbo" (15 y 18-08-2026), con un término judicial nuevo:
+"sobreseimiento" (cierre de una causa penal).
+
+**Corrección**: se agregó "sobreseimiento"/"sobreseimientos" a
+`_MARCADORES_CAPTURA_FUGITIVO` (`scripts/classify.py`). Se verificó con un
+caso de control (un tiroteo real ocurrido además del sobreseimiento) que
+sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`ataque_armado::Distrito Capital::2026-08-19` de los 4 archivos de datos.
+
+### 5. La sequía real de Guárico se publicó también como sequía en Portuguesa, un estado sin evidencia propia
+
+`sequia::Portuguesa::2026-08-20` (Portuguesa al Día, "Productores de maíz
+en Portuguesa y Guárico en alerta crítica") es un artículo sobre
+productores de maíz de Portuguesa preocupados por el PRECIO de compra del
+grano -- sin sequía alguna en su estado. La sequía real la sufre Guárico
+("la severa sequía que afecta a regiones como el estado Guárico, donde más
+de 80 mil hectáreas del rubro se encuentran en jaque"), pero la ventana de
+proximidad a la mención de "Portuguesa" (el dateline del artículo) alcanza
+a cubrir esa misma cláusula.
+
+**Corrección**: nueva función `_es_sequia_atribuida_a_otro_estado()`
+(`scripts/classify.py`), evaluada por ubicación (igual que el evento
+extranjero sin municipio): un regex captura el estado que el propio texto
+nombra como el afectado en la cláusula "sequía que afecta a el estado X" --
+si no coincide con la ubicación que se está clasificando, se descarta el
+tipo para esa ubicación (sin afectar a X, que conserva su alerta legítima).
+
+**Corrección retroactiva**: se eliminó `sequia::Portuguesa::2026-08-20` de
+los 4 archivos de datos, conservando `sequia::Guarico::2026-08-20` (bien
+ubicada).
+
+### 6. Labores de limpieza de escombros de los terremotos del 24 de junio (hace casi 2 meses) se publicaron dos veces como deslizamiento nuevo
+
+`deslizamiento::Distrito Capital::2026-08-16` y `deslizamiento::La
+Guaira::2026-08-19` (La Patilla, "Maquinaria pesada de EEUU llegó a
+Venezuela para retirar toneladas de escombros por terremotos") y
+`deslizamiento::La Guaira::2026-08-20` (El Periódico de Monagas, "Más de
+600 mil toneladas de escombros se han recolectado en La Guaira") son dos
+coberturas sobre labores de LIMPIEZA de escombros de los terremotos del 24
+de junio -- "escombros" (palabra clave de deslizamiento) es ambiguo entre
+material suelto de un movimiento de tierra y restos de construcción tras un
+sismo.
+
+**Corrección**: nueva función
+`_es_limpieza_escombros_terremoto_sin_deslizamiento_real()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO: si el texto
+combina "escombros" con un verbo de limpieza/recolección (retirar,
+remoción, recolectado...) Y una mención sísmica (terremoto, sismo,
+temblor), y no hay evidencia fuerte propia de deslizamiento (heridos/
+fallecidos/desaparecidos/viviendas colapsadas o destruidas/evacuados/
+familias afectadas), se descarta el tipo. Se verificó con un caso de
+control (un deslizamiento real con viviendas destruidas y evacuados, que
+además menciona escombros y un sismo previo como causa) que sigue
+publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminaron por completo
+`deslizamiento::Distrito Capital::2026-08-16`, `deslizamiento::La
+Guaira::2026-08-19` y `deslizamiento::La Guaira::2026-08-20` de los 4
+archivos de datos.
+
+### Pendiente de discutir
+
+**`infraestructura_electrica::Yaracuy::2026-08-20`** (Yaracuy al Día,
+declaración de Mónica Martínez, dirigente de La Causa R en Yaracuy: "los
+constantes apagones y los racionamientos se han convertido en una tortura
+diaria... es el resultado de años de corrupción, falta de inversión y
+desidia institucional"): mismo patrón de fondo ya documentado 3 veces
+(19-08-2026: cachapas de Monagas, casa hogar de Táchira, y el filtro
+general construido ese día) -- una declaración política sobre la crisis
+eléctrica CRÓNICA, sin ningún incidente nuevo, colectivo o institucional
+puntual. No encaja en el filtro general ya construido
+(`_es_queja_cronica_electrica_sin_hecho_verificable()`) porque no usa
+ninguna de sus frases exactas ("todos los días"/"a diario"/"cada día") --
+usa "tortura diaria" y "constantes apagones". Se probó ampliar el marcador
+con "constantes apagones", pero se descartó: rompía un caso real y vigente
+en el mismo corpus (`infraestructura_electrica::Tachira::2026-08-20`, "los
+constantes apagones... hospitales... deben atender con linternas"), una
+alerta legítima con evidencia local concreta (hospital, municipio,
+colecta) sin ningún marcador de escape (protesta/transformador/etc.). Con
+4 casos ya acumulados de la misma ambigüedad de fondo, y sin una señal
+determinista segura que distinga "declaración política sin hecho local" de
+"cobertura legítima con impacto concreto pero sin la frase exacta ya
+cubierta", no se corrigió a ciegas. Se notifica al usuario.
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta como "fuentes muertas" los 3
+enlaces retractados hoy que ya habían sido incluidos en informes mensuales
+generados ANTES de esta auditoría: `docs/data/informes/2026-08_ataque_armado.json`
+(hallazgo 4), `2026-08_deslizamiento.json` (hallazgo 6, solo la fuente de
+La Patilla) y `2026-08_inundacion.json` (hallazgo 3). `GROQ_API_KEY` no
+está disponible en este entorno, así que no se regeneraron a mano --
+`scripts/build_informes.py` regenerará esos informes en la próxima corrida
+con acceso a la API (mismo patrón que sesiones anteriores).
+
+### Pruebas
+
+12 casos nuevos en `tests/casos_clasificacion.jsonl` (6 reales + 6
+controles, uno de cada hallazgo 1-2-4-5-6 más un control adicional para el
+hallazgo 2 confirmando que "Coracora" no colisiona con el municipio real
+Ayacucho de Táchira). Regresión completa contra las 168 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con los 8 eventos retractados
+eliminados): sin cambios inesperados -- las únicas fuentes afectadas por
+los fixes son, precisamente, las señaladas arriba. `python3 -m pytest
+tests/` → 448 passed, 6 xfailed (conocidos, sin relación), 1 xpassed
+(conocido, sin efecto real). `python3 scripts/validar_configs.py` → OK.
+`python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
+regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares de
+posibles duplicados ya conocidos de sesiones anteriores, más las 3 fuentes
+muertas en informes documentadas arriba.
+
+## Segunda ronda de la auditoría del 20-08-2026 (a pedido del usuario): 5 hallazgos adicionales, incluyendo "Tren de Aragua" y "Aragua de Barcelona" como colisiones de nombre con el estado Aragua
+
+Mientras la primera ronda de hoy esperaba a publicarse, el bot de monitoreo
+completó 2 corridas más (`PR #325`, `PR #326`) y el usuario señaló la lista
+de alertas `PASADO_POR_FALLA_TECNICA` vigentes, pidiendo corregir/eliminar
+las que correspondieran y ajustar el sistema para que no se repitan. Se
+revisaron las alertas nuevas de esas 2 corridas más las restantes de la
+lista aún no auditadas.
+
+### 7. Una ceremonia del Día del Bombero se publicó como incendio en Monagas Y como sismo retrospectivo en La Guaira
+
+`incendio::Monagas::2026-08-20` (El Periódico de Monagas, "Con misa y
+reconocimientos conmemoran Día del Bombero en Monagas") es una nota
+institucional POSITIVA sobre la conmemoración anual del Día Nacional del
+Bombero (misa, entrega de reconocimientos) -- mismo patrón que la
+graduación de bomberos de Apure (19-08-2026), pero un sub-patrón distinto
+(conmemoración anual, no graduación de reclutas). El mismo artículo
+también disparaba `sismo::La Guaira` vía "reconoció el esfuerzo... por su
+apoyo a los afectados por los terremotos en La Guaira" -- apoyo
+institucional a damnificados del terremoto de hace casi 2 meses (24 de
+junio), no un sismo nuevo.
+
+**Corrección**: se agregó "día del bombero"/"día nacional del bombero" a
+`_MARCADORES_ANUNCIO_INSTITUCIONAL_BOMBEROS` (`scripts/classify.py`). Como
+el mismo anuncio institucional colaba DOS tipos distintos (incendio Y
+sismo), `_es_anuncio_institucional_bomberos_sin_incendio_real()` ahora
+acepta el tipo a verificar como parámetro (antes tenía "incendio"
+hardcodeado), y se agregó el mismo chequeo para `tipo == "sismo"`. Se
+verificó con un caso de control (tiroteo real) que sigue publicándose con
+normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `incendio::Monagas::2026-08-20`
+de los 4 archivos de datos (`docs/data/noticias.json`, `data/historico_eventos.jsonl`,
+`data/historico_fuentes_texto.jsonl`, `data/publicados.json`, y su entrada
+en `data/pendientes_verificacion.json` cuando aplicaba). `sismo::La
+Guaira::2026-08-20` nunca llegó a publicarse como alerta independiente
+(mismo artículo, misma corrida), así que no requirió retracción aparte.
+
+### 8. El nombre del grupo criminal "Tren de Aragua" y el de la megaprisión salvadoreña "Cecot" generaron una alerta de ataque armado en Aragua sobre una nota de deportaciones a Liberia
+
+`ataque_armado::Aragua::2026-08-20` (El Pitazo, "EE.UU. deporta a Liberia a
+un grupo de venezolanos") es una nota sobre deportaciones de migrantes a
+Liberia -- sin ningún ataque armado ni hecho local en el estado Aragua.
+Generaba DOS errores combinados:
+
+- **Ubicación falsa**: "el Gobierno estadounidense afirmó que los
+  migrantes estaban vinculados con la organización criminal **Tren de
+  Aragua**" -- el nombre del grupo criminal transnacional contiene la
+  palabra "Aragua" como token, disparando el estado, sin relación alguna
+  con el territorio.
+- **Tipo falso**: "en marzo de 2025... 238 venezolanos [fueron enviados] a
+  El Salvador, donde fueron recluidos en el **Centro de Confinamiento del
+  Terrorismo (Cecot)**" -- mencionado como contexto histórico de un
+  episodio de deportación previo, no un ataque en curso. Mismo patrón ya
+  cubierto para "notificación azul"/"excarcelados"/"limbo"/"sobreseimiento".
+
+**Corrección**: nueva función `_es_mencion_tren_de_aragua()`
+(`scripts/classify.py`), que excluye cualquier mención de "aragua"
+inmediatamente precedida por "tren de" de la detección de posiciones de
+estado (mismo mecanismo que `_es_mencion_de_persona_citada`, aplicado en
+`_ventana_cerca_con_posicion`). Además, se agregó "centro de confinamiento
+del terrorismo"/"cecot" a `_MARCADORES_CAPTURA_FUGITIVO`. Se verificó con 2
+casos de control (una mención real y legítima del estado Aragua sin "Tren
+de", y un tiroteo real ocurrido además de mencionarse el Cecot) que ambos
+siguen publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `ataque_armado::Aragua::2026-08-20`
+de los 4 archivos de datos.
+
+### 9. "Aragua de Barcelona" (capital del municipio Aragua, estado Anzoátegui) duplicó una falla de agua también bajo el estado Aragua
+
+`infraestructura_agua::Aragua::2026-08-19` (Turimiquire, "Los habitantes de
+Aragua de Barcelona en el estado Anzoátegui se quedaron otra vez sin
+agua") es el MISMO hecho real ya publicado correctamente como
+`infraestructura_agua::Anzoategui::2026-08-19` (municipio Aragua
+detectado) -- "Aragua de Barcelona" es la capital del municipio Aragua,
+estado Anzoátegui (ver `config/ubicaciones_detalle.json`), sin ninguna
+relación con el estado Aragua. El propio texto dice "estado Anzoátegui"
+repetidamente y nunca describe ningún hecho en el estado Aragua.
+
+**Corrección**: se agregó `"Aragua": ["aragua de barcelona"]` a
+`LISTA_NEGRA_POR_ESTADO` (`scripts/classify.py`) -- sin remapeo (el estado
+real, Anzoátegui, ya está cubierto correctamente por otra fuente/mención),
+se descarta directamente, igual que "Carabobo FC" para Carabobo. Se
+verificó con un caso de control (una mención real y legítima del estado
+Aragua) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo `infraestructura_agua::Aragua::2026-08-19`
+de los 4 archivos de datos, conservando `infraestructura_agua::Anzoategui::2026-08-19`
+(bien ubicada).
+
+### 10. Un digest matutino con docenas de titulares no relacionados coló "Defensoría del Pueblo conforma mesa de seguimiento de apagones" como falla eléctrica en Zulia
+
+`infraestructura_electrica::Zulia::2026-08-19` (Runrun.es, "El Mañanero
+del 19 de agosto: denuncian muerte de otro privado de libertad") es un
+digest/newsletter matutino que resume docenas de titulares no
+relacionados en formato de lista (muerte de un preso, un colapso de
+vivienda en Carapita, la canasta alimentaria, sanciones de EEUU...) --
+entre ellos, "Defensoría del Pueblo **conforma mesa de seguimiento** de
+apagones en el Zulia" es la FORMACIÓN de un comité de seguimiento (acción
+administrativa/institucional), no la descripción de un corte eléctrico
+nuevo en curso.
+
+**Corrección**: nueva función
+`_es_formacion_comite_seguimiento_apagones_sin_falla_real()`
+(`scripts/classify.py`). A diferencia de `_es_anuncio_corpoelec_sin_falla`,
+no se pudo reutilizar `_EVIDENCIA_FUERTE_POR_TIPO["infraestructura_electrica"]`
+como lista de excepción: esa lista incluye "apagón"/"apagones" (para anular
+el filtro de "árbol" cuando SÍ hay evidencia real de corte cerca), pero
+"apagones" es precisamente la palabra dentro de la frase conflictiva misma
+("mesa de seguimiento DE APAGONES"), lo que la volvería inútil -- se
+construyó una lista de evidencia fuerte propia, sin "apagón"/"apagones".
+Se verificó con un caso de control (un corte eléctrico real y específico
+en Zulia) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Zulia::2026-08-19` de los 4 archivos de datos.
+
+### Nota sobre `data/publicados.json` y `data/pendientes_verificacion.json`
+
+La primera ronda de hoy (hallazgos 1-6) había corregido retroactivamente
+`docs/data/noticias.json`, `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`, pero **se omitió por error**
+`data/publicados.json` (y las entradas correspondientes, cuando existían,
+de `data/pendientes_verificacion.json`) -- el cuarto archivo de datos que
+las sesiones anteriores sí retractaban consistentemente (ver por ejemplo
+la corrección del 29-07-2026). Se corrigió en esta segunda ronda: los 11
+eventos retractados hoy (los 6 de la primera ronda + los 4 nuevos de esta
+segunda) se eliminaron de los 4 archivos de datos, incluido
+`publicados.json`, sin excepción.
+
+### Pruebas
+
+11 casos nuevos en `tests/casos_clasificacion.jsonl` (5 reales + 6
+controles) para los hallazgos 7-10. Regresión completa contra las 171
+fuentes vigentes de `data/historico_fuentes_texto.jsonl` (ya con los 11
+eventos retractados de hoy eliminados): sin cambios inesperados. `python3
+-m pytest tests/` → 458 passed, 6 xfailed (conocidos), 1 xpassed
+(conocido). `python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+`python3 scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados y fuentes muertas ya conocidos, sin casos nuevos relacionados a
+los eventos retractados hoy.

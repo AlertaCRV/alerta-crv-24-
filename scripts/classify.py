@@ -240,6 +240,16 @@ LISTA_NEGRA_POR_ESTADO = {
     # historico_fuentes_texto.jsonl que la frase es exclusiva de este
     # articulo.
     "Anzoategui": ["consolidar la siembra en los estados portuguesa y anzoategui"],
+    # Caso real (19-08-2026, PASADO_POR_FALLA_TECNICA): "Los habitantes de
+    # Aragua de Barcelona en el estado Anzoategui se quedaron otra vez sin
+    # agua... Los vecinos de municipio Aragua... ubicado en la zona centro
+    # del estado Anzoategui" -- "Aragua de Barcelona" es la capital del
+    # municipio Aragua, estado Anzoategui (ver config/ubicaciones_detalle.json),
+    # sin ninguna relacion con el estado Aragua. El propio articulo ya se
+    # publica correctamente bajo Anzoategui (municipio Aragua detectado);
+    # sin remapeo (el estado real ya esta cubierto), se descarta directamente
+    # el candidato de Aragua, igual que "Carabobo FC" para Carabobo.
+    "Aragua": ["aragua de barcelona"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -332,6 +342,38 @@ def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
     return any(lugar in texto_norm for lugar in lugares)
 
 
+# Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "...los agricultores...
+# del estado Portuguesa encendieron las alarmas ante la falta de una
+# definicion justa en el precio de compra del grano, situacion que se suma
+# a la severa sequia que afecta a regiones como el estado Guarico, donde
+# mas de 80 mil hectareas del rubro se encuentran en jaque" -- un articulo
+# sobre productores de maiz de Portuguesa preocupados por el PRECIO de
+# compra (no por sequia alguna en su estado) tambien generaba tipo=sequia
+# en Portuguesa, porque la ventana de proximidad a la mencion de
+# "Portuguesa" (el dateline del articulo) alcanza a cubrir la clausula de
+# sequia que el propio texto atribuye explicitamente a OTRO estado
+# (Guarico). A diferencia de Guarico (bien ubicado: el texto lo nombra como
+# el afectado), Portuguesa no tiene evidencia propia de sequia. Se verifico
+# contra las 168 fuentes de data/historico_fuentes_texto.jsonl que esta
+# frase, con el estado capturado como grupo, es exclusiva de este articulo
+# (aparece 2 veces: una vez para cada estado mencionado en el mismo
+# parrafo).
+_SEQUIA_ESTADO_NOMBRADO_RE = re.compile(
+    r"\bsequia que afecta a (?:regiones como )?el estado ([a-z][a-z ]*?)(?:,| donde| que|\.|$)"
+)
+
+
+def _es_sequia_atribuida_a_otro_estado(texto_norm, ubicacion):
+    """True si el texto nombra explicitamente, en la misma clausula de
+    sequia, un estado distinto al que se esta clasificando -- ver caso real
+    arriba."""
+    match = _SEQUIA_ESTADO_NOMBRADO_RE.search(texto_norm)
+    if not match:
+        return False
+    estado_nombrado = match.group(1).strip()
+    return estado_nombrado != _normalizar(ubicacion).strip()
+
+
 # A diferencia de FRONTERA_EXTRANJERA_POR_ESTADO (que solo aplica a estados
 # fronterizos con Colombia, donde un toponimo colombiano puede confundirse
 # con uno venezolano homonimo), este marcador es DECISIVO para CUALQUIER
@@ -351,7 +393,20 @@ def _es_evento_extranjero_sin_municipio(texto_norm, ubicacion, municipio):
 # describe evidencia local real (municipio Maracaibo detectado, "sacude el
 # Zulia") y no se ve afectada por este filtro porque exige la AUSENCIA de
 # municipio detectado, igual que _es_evento_extranjero_sin_municipio.
-_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS = ["san jose del palmar"]
+#
+# Ampliado (20-08-2026, PASADO_POR_FALLA_TECNICA): un terremoto de magnitud
+# 7.2 con epicentro en Coracora, Ayacucho, Peru, generaba tipo=sismo en
+# Tachira via un titular no relacionado de la seccion "Destacados" del
+# medio ("Tachira aporta tres atletas a la seleccion nacional de
+# baloncesto U15") incluido al final del texto scrapeado -- mismo patron
+# de "titulares no relacionados en la barra lateral" ya documentado arriba
+# para Barinas. A diferencia de "San Jose del Palmar", NO se agrega
+# "Ayacucho" solo (es tambien un municipio real de Tachira, ver
+# config/ubicaciones_detalle.json, confirmado por un caso de control real
+# en el mismo corpus: "en los municipios Ayacucho... del estado Tachira"),
+# asi que se usa "Coracora" (localidad peruana sin colision con ningun
+# topónimo venezolano) como marcador decisivo.
+_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS = ["san jose del palmar", "coracora"]
 
 
 def _es_sismo_extranjero_con_epicentro_conocido_sin_municipio(texto_norm, municipio):
@@ -712,13 +767,44 @@ _RESUMEN_TALLY_INCENDIOS_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "Familia en La
+# Milagrosa lleva 3 años esperando respuesta tras crecida del Rio Milla...
+# Hace tres años, la crecida del rio Milla derrumbo el patio y destruyo las
+# paredes de la vivienda... al borde del colapso total" -- un reportaje
+# sobre una familia que vive desde hace 3 anos en una casa danada por una
+# inundacion YA OCURRIDA, sin ningun desarrollo nuevo el dia de
+# publicacion, generaba una alerta de inundacion CRITICA (via "colapso
+# total", que describe el riesgo temido a futuro, no un hecho consumado)
+# como si la crecida hubiera ocurrido esa madrugada. A diferencia de "anos
+# de espera" (que exige esa frase exacta), aqui el articulo data el propio
+# hecho ("la crecida") con "hace N anos" en vez de enmarcar la espera --
+# por eso no bastaba el marcador existente. No se uso "hace N anos" a secas
+# como marcador (demasiado amplio: dispara con frecuencia en citas de
+# contexto de coberturas de protestas/reclamos REALES y vigentes, ej. "el
+# alcalde afirmo que hace un ano fue informado por Corpoelec", sin volver
+# retrospectivo el resto del articulo) -- se exige que el propio suceso
+# hidrologico (crecida/inundacion/desbordamiento) este fechado por la frase
+# "hace N anos", nunca solo una mencion de contexto. Se verifico contra las
+# 168 fuentes de data/historico_fuentes_texto.jsonl que "hace N anos" a
+# secas aparece en otros 3 casos reales y vigentes (paro civico en El
+# Callao, protesta de familiares de militares detenidos, protesta por
+# racionamiento en Acarigua) que NO deben descartarse, y que este patron
+# mas especifico es exclusivo del caso de La Milagrosa.
+_RETROSPECTIVO_HECHO_HIDROLOGICO_ANOS_RE = re.compile(
+    r"\bhace (un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|\d+) a[nñ]os,?"
+    r" la (crecida|inundacion|inundación|desbordamiento)\b",
+    re.IGNORECASE,
+)
+
 
 def _es_articulo_retrospectivo_larga_duracion(texto_norm):
     if any(_contiene_palabra_clave(texto_norm, frase) for frase in _ARTICULO_RETROSPECTIVO_LARGA_DURACION):
         return True
     if _RANGO_FECHAS_RETROSPECTIVO_RE.search(texto_norm) is not None:
         return True
-    return _RESUMEN_TALLY_INCENDIOS_RE.search(texto_norm) is not None
+    if _RESUMEN_TALLY_INCENDIOS_RE.search(texto_norm) is not None:
+        return True
+    return _RETROSPECTIVO_HECHO_HIDROLOGICO_ANOS_RE.search(texto_norm) is not None
 
 
 # Caso real (30-07-2026): "Aumentan los casos de enfermedades diarreicas en
@@ -766,6 +852,37 @@ _EVIDENCIA_FUERTE_TSUNAMI_REAL = [
 
 def _es_nombre_institucional_tsunami_sin_evidencia_real(texto_norm):
     if not _contiene_palabra_clave(texto_norm, _NOMBRE_INSTITUCIONAL_SSATV):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_TSUNAMI_REAL)
+
+
+# Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "El sismo alcanzo una
+# intensidad de III-IV en Coracora... Las autoridades descartan, por ahora,
+# posibilidad de tsunami" (terremoto de magnitud 7.2 en Ayacucho, Peru)
+# disparaba tipo=tsunami en La Guaira via la palabra "tsunami" -- la MISMA
+# frase que la niega explicitamente. La ubicacion "La Guaira" tampoco tenia
+# relacion real con el hecho: era el titular de un articulo relacionado
+# incluido de pasada en el texto scrapeado ("mujer localiza a su familia
+# atrapada en edificio de La Guaira"), mismo patron de "titulares no
+# relacionados" ya documentado para el epicentro extranjero de sismo. Igual
+# que el boletin institucional de tsunami, esta señal es decisiva (un
+# tsunami explicitamente descartado por las autoridades no es evidencia de
+# uno real) y se evalua sobre el ARTICULO COMPLETO.
+_MARCADORES_TSUNAMI_DESCARTADO = [
+    "descartan, por ahora, posibilidad de tsunami",
+    "descartan la posibilidad de tsunami",
+    "descartan posibilidad de tsunami",
+    "descarta la posibilidad de tsunami",
+    "descarta posibilidad de tsunami",
+    "descartaron la posibilidad de tsunami",
+    "descarto la posibilidad de tsunami",
+    "sin riesgo de tsunami", "no representa riesgo de tsunami",
+    "no genera riesgo de tsunami", "no hay riesgo de tsunami",
+]
+
+
+def _es_tsunami_descartado_explicitamente(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_TSUNAMI_DESCARTADO):
         return False
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_TSUNAMI_REAL)
 
@@ -1048,12 +1165,36 @@ def _es_falsa_alarma_sin_explosivo_real(texto_norm):
 # exclusivo de este tipo de nota. Se verifico contra las 168 fuentes de
 # data/historico_fuentes_texto.jsonl que la palabra es exclusiva de este
 # articulo.
+#
+# Ampliado (20-08-2026, PASADO_POR_FALLA_TECNICA): "Transparencia Venezuela
+# alerta sobre irregularidades en sobreseimientos del clan Convit y
+# detencion de jueces... la Sala Especial de la Corte de Apelaciones de
+# Caracas, con competencia en delitos de TERRORISMO, corrupcion y
+# delincuencia organizada, decreto el sobreseimiento de la causa..." --
+# mismo patron: "terrorismo" nombra la jurisdiccion de un tribunal, y el
+# hecho real es un SOBRESEIMIENTO (cierre/archivo de una causa penal), el
+# opuesto de una captura o un ataque, denunciado por una ONG de
+# transparencia. "Sobreseimiento"/"sobreseimientos" es un termino juridico
+# especifico (cierre de una causa sin condena), exclusivo de este tipo de
+# nota. Se verifico contra las 168 fuentes de data/historico_fuentes_texto.jsonl
+# que la palabra es exclusiva de este articulo.
 _MARCADORES_CAPTURA_FUGITIVO = [
     "notificacion azul", "notificación azul",
     "orden de captura internacional",
     "excarcelados", "excarcelado", "excarcelada", "excarceladas",
     "excarcelacion", "excarcelación",
     "limbo",
+    "sobreseimiento", "sobreseimientos",
+    # Ampliado (20-08-2026, PASADO_POR_FALLA_TECNICA): "en marzo de 2025...
+    # 238 venezolanos [fueron enviados] a El Salvador, donde fueron
+    # recluidos en el Centro de Confinamiento del Terrorismo (Cecot)"
+    # disparaba tipo=ataque_armado en un articulo sobre deportaciones de
+    # venezolanos a Liberia -- "Centro de Confinamiento del Terrorismo" es
+    # el nombre propio de la megaprision salvadorena (Cecot), mencionada
+    # como contexto historico de un episodio de deportacion previo, no un
+    # ataque armado ocurriendo. Termino exclusivo de este tipo de nota
+    # (migracion/deportaciones), frecuente en coberturas sobre venezolanos.
+    "centro de confinamiento del terrorismo", "cecot",
 ]
 
 
@@ -1120,6 +1261,44 @@ def _es_derrumbe_de_techo_no_deslizamiento(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# "Escombros" (palabra clave de deslizamiento) es ambiguo entre el material
+# suelto de un deslizamiento de tierra y los restos de construccion tras un
+# terremoto. Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "Maquinaria
+# pesada de EEUU llego a Venezuela para retirar toneladas de escombros por
+# terremotos... para apoyar las labores de remocion de los escombros
+# dejados por los devastadores terremotos que sacudieron Venezuela el
+# pasado 24 de junio" y "Mas de 600 mil toneladas de escombros se han
+# recolectado en La Guaira... tras los terremotos que azotaron... el
+# pasado 24 de junio" -- dos coberturas de labores de LIMPIEZA de escombros
+# de un terremoto de hace casi 2 meses disparaban tipo=deslizamiento en
+# Distrito Capital y La Guaira como si un deslizamiento estuviera
+# ocurriendo hoy. Igual que el boletin institucional de tsunami, se evalua
+# sobre el ARTICULO COMPLETO: si el texto combina "escombros" con un verbo
+# de limpieza/recoleccion Y una mencion sismica, y no hay evidencia fuerte
+# propia de deslizamiento (heridos/fallecidos/desaparecidos/viviendas
+# colapsadas o destruidas/evacuados/familias afectadas), se descarta el
+# tipo -- el hecho es real (la limpieza) pero no es un deslizamiento nuevo.
+_VERBOS_LIMPIEZA_ESCOMBROS = [
+    "retirar", "retiro", "retiró", "remocion", "remoción",
+    "recolectado", "recolectar", "recoleccion", "recolección",
+    "remover", "removieron",
+]
+_MENCIONES_SISMICAS_ESCOMBROS = [
+    "terremoto", "terremotos", "sismo", "sismos", "temblor", "temblores",
+]
+
+
+def _es_limpieza_escombros_terremoto_sin_deslizamiento_real(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "escombro") or _contiene_palabra_clave(texto_norm, "escombros")):
+        return False
+    if not any(_contiene_palabra_clave(texto_norm, v) for v in _VERBOS_LIMPIEZA_ESCOMBROS):
+        return False
+    if not any(_contiene_palabra_clave(texto_norm, s) for s in _MENCIONES_SISMICAS_ESCOMBROS):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("deslizamiento", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 # Caso real (19-08-2026, PASADO_POR_FALLA_TECNICA): "Un grupo de ciudadanos
 # protesto... Las movilizaciones se registraron de forma simultanea en al
 # menos ocho estados del pais, incluyendo... Cojedes, donde ciudadanos SE
@@ -1162,13 +1341,31 @@ _MARCADORES_ANUNCIO_INSTITUCIONAL_BOMBEROS = [
     "nuevos bomberos", "nueva promocion de bomberos",
     "nueva promoción de bomberos", "egresados de la unes",
     "se incorporan al cuerpo de bomberos",
+    # Ampliado (20-08-2026, PASADO_POR_FALLA_TECNICA): "Con misa y
+    # reconocimientos conmemoran Dia del Bombero en Monagas... para honrar
+    # a los 'heroes de azul y rojo'" -- un sub-patron distinto de anuncio
+    # institucional positivo: no una graduacion de nuevos reclutas, sino la
+    # conmemoracion anual del Dia Nacional del Bombero (misa, entrega de
+    # reconocimientos), sin ningun incendio real en curso. El MISMO articulo
+    # tambien disparaba tipo=sismo en La Guaira ("reconocio el esfuerzo...
+    # por su apoyo a los afectados por los terremotos en La Guaira" -- apoyo
+    # institucional a damnificados del terremoto de hace casi 2 meses, no un
+    # sismo nuevo), de ahi que _es_anuncio_institucional_bomberos_sin_incendio_real
+    # ahora acepte el tipo a verificar (ver esa funcion).
+    "dia del bombero", "día del bombero", "dia nacional del bombero",
+    "día nacional del bombero",
 ]
 
 
-def _es_anuncio_institucional_bomberos_sin_incendio_real(texto_norm):
+def _es_anuncio_institucional_bomberos_sin_incendio_real(texto_norm, tipo="incendio"):
+    """`tipo` decide contra que lista de evidencia fuerte se compara (ver
+    ampliacion 20-08-2026: el mismo anuncio institucional de bomberos puede
+    colar tambien un tipo=sismo retrospectivo, via una mencion de
+    "terremotos" en el contexto del apoyo institucional a damnificados, no
+    solo tipo=incendio)."""
     if not any(m in texto_norm for m in _MARCADORES_ANUNCIO_INSTITUCIONAL_BOMBEROS):
         return False
-    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("incendio", [])
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get(tipo, [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -1194,6 +1391,39 @@ def _es_anuncio_corpoelec_sin_falla(texto_norm):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "El Mananero del 19 de
+# agosto" (un digest matutino de RunRun.es, una lista de docenas de
+# titulares no relacionados) incluye, entre otras notas, "Defensoria del
+# Pueblo conforma mesa de seguimiento de apagones en el Zulia" -- la
+# FORMACION de un comite de seguimiento es una accion administrativa/
+# institucional, no la descripcion de un corte electrico nuevo en curso.
+# A diferencia de _es_anuncio_corpoelec_sin_falla, no se puede usar
+# _EVIDENCIA_FUERTE_POR_TIPO["infraestructura_electrica"] como lista de
+# excepcion aqui: esa lista incluye "apagones" (para anular el filtro de
+# "arbol" cuando SI hay evidencia real de corte cerca), pero "apagones" es
+# precisamente la palabra dentro de la frase conflictiva misma ("mesa de
+# seguimiento DE APAGONES"), lo que la volveria inutil. Se usa en su lugar
+# una lista de evidencia fuerte propia, sin "apagon"/"apagones".
+_MARCADORES_COMITE_SEGUIMIENTO_APAGONES = [
+    "conforma mesa de seguimiento de apagones",
+    "conformo mesa de seguimiento de apagones",
+    "conformó mesa de seguimiento de apagones",
+]
+_EVIDENCIA_FUERTE_APAGON_SIN_APAGONES = [
+    "sin luz", "sin electricidad", "sin energia electrica",
+    "sin energía eléctrica", "sin servicio electrico",
+    "sin servicio eléctrico", "falla electrica", "falla eléctrica",
+    "fallas electricas", "fallas eléctricas", "restablecer el suministro",
+    "restablecer el servicio", "corte de luz", "cortes de luz",
+]
+
+
+def _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_COMITE_SEGUIMIENTO_APAGONES):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_APAGON_SIN_APAGONES)
 
 
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad
@@ -1664,6 +1894,19 @@ def _es_mencion_de_persona_citada(tokens, pos):
     return any(t in _VERBOS_ATRIBUCION_CITA for t in ventana_siguiente)
 
 
+# Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "el Gobierno
+# estadounidense afirmo que los migrantes estaban vinculados con la
+# organizacion criminal Tren de Aragua" -- en un articulo sobre
+# deportaciones de venezolanos a Liberia, sin ningun hecho local en el
+# estado Aragua -- disparaba ubicacion=Aragua solo por el nombre del grupo
+# criminal transnacional "Tren de Aragua" (frecuente en coberturas de
+# migracion/seguridad), no el estado. Igual que _es_mencion_de_persona_citada,
+# se filtra en la deteccion de posiciones para no anclar ninguna ventana
+# ahi.
+def _es_mencion_tren_de_aragua(tokens, pos):
+    return pos >= 2 and tokens[pos - 1] == "de" and tokens[pos - 2] == "tren"
+
+
 def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None,
                     permitir_subestatal=False):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
@@ -1705,6 +1948,7 @@ def _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posicione
         and (permitir_subestatal or not _es_mencion_subestatal(tokens, i))
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
         and not _es_mencion_de_persona_citada(tokens, i)
+        and not _es_mencion_tren_de_aragua(tokens, i)
     ]
     posiciones_otros_estados = None
     if posiciones_estados:
@@ -2056,7 +2300,11 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "sismo" and _es_taller_salud_mental_post_sismo_sin_evidencia_real(texto_completo_norm):
                     break
+                if tipo == "sismo" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm, "sismo"):
+                    break
                 if tipo == "tsunami" and _es_nombre_institucional_tsunami_sin_evidencia_real(texto_completo_norm):
+                    break
+                if tipo == "tsunami" and _es_tsunami_descartado_explicitamente(texto_completo_norm):
                     break
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break
@@ -2065,6 +2313,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
                     break
@@ -2077,6 +2327,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "inundacion" and _es_boletin_pronostico_inameh_sin_inundacion_real(texto_completo_norm):
                     break
                 if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
+                    break
+                if tipo == "deslizamiento" and _es_limpieza_escombros_terremoto_sin_deslizamiento_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
                     break
@@ -2158,6 +2410,10 @@ def clasificar_item(item):
             continue
         if "sismo" in nuevo["tipos"] and _es_sismo_extranjero_con_epicentro_conocido_sin_municipio(texto_norm, nuevo["municipio"]):
             continue
+        if "sequia" in nuevo["tipos"] and _es_sequia_atribuida_a_otro_estado(texto_norm, ubicacion):
+            nuevo["tipos"] = [t for t in nuevo["tipos"] if t != "sequia"]
+            if not nuevo["tipos"]:
+                continue
         resultado.append(nuevo)
 
     if not resultado:

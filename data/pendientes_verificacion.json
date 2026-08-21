@@ -475,10 +475,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-16T23:49:12.650178+00:00"
   },
-  "deslizamiento::Distrito Capital::2026-08-16": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-16T23:44:45.949941+00:00"
-  },
   "deslizamiento::Lara::2026-08-16": {
     "intentos": 1,
     "ultima_vez": "2026-08-16T23:47:35.757301+00:00"
@@ -691,10 +687,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-19T11:59:01.031990+00:00"
   },
-  "inundacion::Merida::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T11:59:14.607760+00:00"
-  },
   "infraestructura_electrica::Anzoategui::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T11:59:26.217440+00:00"
@@ -707,10 +699,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-19T21:05:42.939432+00:00"
   },
-  "infraestructura_agua::Aragua::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T21:05:54.482896+00:00"
-  },
   "inundacion::Portuguesa::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T21:06:06.012279+00:00"
@@ -719,10 +707,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-19T23:56:29.249988+00:00"
   },
-  "deslizamiento::La Guaira::2026-08-19": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-19T23:56:35.815210+00:00"
-  },
   "infraestructura_electrica::Monagas::2026-08-19": {
     "intentos": 2,
     "ultima_vez": "2026-08-19T23:56:42.622663+00:00"
@@ -730,10 +714,6 @@
   "infraestructura_electrica::Sucre::2026-08-19": {
     "intentos": 1,
     "ultima_vez": "2026-08-19T23:00:24.186800+00:00"
-  },
-  "infraestructura_electrica::Zulia::2026-08-19": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-19T23:56:46.067457+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-20": {
     "intentos": 2,
@@ -791,10 +771,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-20T22:03:30.613736+00:00"
   },
-  "deslizamiento::La Guaira::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T23:05:33.391699+00:00"
-  },
   "infraestructura_electrica::Yaracuy::2026-08-20": {
     "intentos": 2,
     "ultima_vez": "2026-08-20T23:06:26.497262+00:00"
@@ -802,10 +778,6 @@
   "sequia::Guarico::2026-08-20": {
     "intentos": 2,
     "ultima_vez": "2026-08-20T23:09:17.388510+00:00"
-  },
-  "sequia::Portuguesa::2026-08-20": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-20T23:09:41.549672+00:00"
   },
   "inundacion::Zulia::2026-08-20": {
     "intentos": 1,

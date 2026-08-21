@@ -1,31 +1,5 @@
 [
   {
-    "tipo": "ataque_armado",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/migracion/ee-uu-deporta-a-liberia-a-un-grupo-de-venezolanos/",
-        "fecha": "2026-08-20T20:19:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:19:46+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:19:46+00:00",
-    "fecha_deteccion": "2026-08-20T23:05:36.797726+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Aragua::2026-08-20",
-    "titulo": "Ataque armado en Aragua",
-    "texto": "📌 Ataque armado en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 20/08/2026, 4:19 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/migracion/ee-uu-deporta-a-liberia-a-un-grupo-de-venezolanos/"
-  },
-  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Monagas",
     "municipio": "Maturín",
@@ -76,32 +50,6 @@
     "clave_dedup": "orden_publico::Barinas::2026-08-20",
     "titulo": "Orden público en Parroquia La Luz, Barinas",
     "texto": "📌 Orden público en Parroquia La Luz, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Luz, Barinas\n🕒 Hecho reportado: 20/08/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/con-misa-y-reconocimientos-conmemoran-dia-del-bombero-en-monagas/",
-        "fecha": "2026-08-20T20:09:51+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:09:51+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:09:51+00:00",
-    "fecha_deteccion": "2026-08-20T23:06:14.756745+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Monagas::2026-08-20",
-    "titulo": "Incendio en Municipio Maturín, Monagas",
-    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 20/08/2026, 4:09 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/con-misa-y-reconocimientos-conmemoran-dia-del-bombero-en-monagas/"
   },
   {
     "tipo": "inundacion",
@@ -182,32 +130,6 @@
     "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 20/08/2026, 3:42 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:10 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/"
   },
   {
-    "tipo": "tsunami",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/internacional/terremoto-de-magnitud-72-sacude-a-peru-este-20ago/",
-        "fecha": "2026-08-20T19:17:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T19:17:12+00:00",
-    "fecha_evento_temprana": "2026-08-20T19:17:12+00:00",
-    "fecha_deteccion": "2026-08-20T22:03:37.311433+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tsunami::La Guaira::2026-08-20",
-    "titulo": "Tsunami en La Guaira",
-    "texto": "📌 Tsunami en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 3:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/internacional/terremoto-de-magnitud-72-sacude-a-peru-este-20ago/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Zulia",
     "municipio": "Jesús Enrique Lossada",
@@ -232,34 +154,6 @@
     "clave_dedup": "inundacion::Zulia::2026-08-20",
     "titulo": "Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia",
     "texto": "📌 Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n🕒 Hecho reportado: 20/08/2026, 2:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:03 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/avanzan-trabajos-de-asfaltado-y-drenaje-en-la-via-curva-de-molina-la-concepcion/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/internacional/un-terremoto-de-magnitud-72-sacude-la-region-andina-de-ayacucho-en-el-sur-de-peru/",
-        "fecha": "2026-08-20T19:23:22+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T19:23:22+00:00",
-    "fecha_evento_temprana": "2026-08-20T19:23:22+00:00",
-    "fecha_deteccion": "2026-08-20T22:04:11.176510+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.2,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::Tachira::2026-08-20::mag7.2",
-    "titulo": "Sismo en Tachira",
-    "texto": "📌 Sismo en Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 20/08/2026, 3:23 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/internacional/un-terremoto-de-magnitud-72-sacude-la-region-andina-de-ayacucho-en-el-sur-de-peru/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -312,32 +206,6 @@
     "clave_dedup": "sequia::Guarico::2026-08-20",
     "titulo": "Sequía en Guarico",
     "texto": "📌 Sequía en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 20/08/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 5:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/08/20/productores-de-maiz-en-alerta-ante-bajos-precios-e-insumos-caros/"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Portuguesa",
-    "municipio": "Santa Rosalía",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/08/20/productores-de-maiz-en-alerta-ante-bajos-precios-e-insumos-caros/",
-        "fecha": "2026-08-20T17:00:47+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T17:00:47+00:00",
-    "fecha_evento_temprana": "2026-08-20T17:00:47+00:00",
-    "fecha_deteccion": "2026-08-20T21:08:23.583297+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::Portuguesa::2026-08-20",
-    "titulo": "Sequía en Municipio Santa Rosalía, Portuguesa",
-    "texto": "📌 Sequía en Municipio Santa Rosalía, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 20/08/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 5:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/08/20/productores-de-maiz-en-alerta-ante-bajos-precios-e-insumos-caros/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -449,32 +317,6 @@
     "texto": "📌 Falla eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 1:53 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/mas-de-600-mil-toneladas-de-escombros-se-han-recolectado-en-la-guaira/",
-        "fecha": "2026-08-20T13:51:49+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T13:51:49+00:00",
-    "fecha_evento_temprana": "2026-08-20T13:51:49+00:00",
-    "fecha_deteccion": "2026-08-20T16:04:35.083357+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-08-20",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 9:51 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 12:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/mas-de-600-mil-toneladas-de-escombros-se-han-recolectado-en-la-guaira/"
-  },
-  {
     "tipo": "vialidad",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -558,32 +400,6 @@
     "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 19/08/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 5:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/corpoelec-busca-restituir-electricidad-tras-caidas-de-torres-en-monagas/"
   },
   {
-    "tipo": "ataque_armado",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/politica/transparencia-venezuela-alerta-sobre-irregularidades-en-sobreseimientos-del-clan-convit-y-detencion-de-jueces/",
-        "fecha": "2026-08-19T17:50:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T17:50:06+00:00",
-    "fecha_evento_temprana": "2026-08-19T17:50:06+00:00",
-    "fecha_deteccion": "2026-08-19T20:03:43.215220+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Distrito Capital::2026-08-19",
-    "titulo": "Ataque armado en Distrito Capital",
-    "texto": "📌 Ataque armado en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 19/08/2026, 1:50 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/transparencia-venezuela-alerta-sobre-irregularidades-en-sobreseimientos-del-clan-convit-y-detencion-de-jueces/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Portuguesa",
     "municipio": null,
@@ -662,32 +478,6 @@
     "texto": "📌 Falla eléctrica en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 19/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 11:52 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/19/los-vecinos-de-la-trinidad-en-cumana-cerraron-la-perimetral-al-cumplir-15-horas-con-un-apagon-electrico/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/617806/el-mananero-del-19-de-agosto-denuncian-muerte-de-otro-privado-de-libertad/",
-        "fecha": "2026-08-19T09:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T09:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-19T09:00:00+00:00",
-    "fecha_deteccion": "2026-08-19T11:58:53.388872+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-19",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 19/08/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 7:58 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/617806/el-mananero-del-19-de-agosto-denuncian-muerte-de-otro-privado-de-libertad/"
-  },
-  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Anzoategui",
     "municipio": "Aragua",
@@ -712,32 +502,6 @@
     "clave_dedup": "infraestructura_agua::Anzoategui::2026-08-19",
     "titulo": "Falla de agua en Municipio Aragua, Anzoategui",
     "texto": "📌 Falla de agua en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 19/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 7:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/",
-        "fecha": "2026-08-19T09:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T09:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-19T09:20:02+00:00",
-    "fecha_deteccion": "2026-08-19T11:59:11.294560+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Aragua::2026-08-19",
-    "titulo": "Falla de agua en Aragua",
-    "texto": "📌 Falla de agua en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 19/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 7:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/"
   },
   {
     "tipo": "sismo",
@@ -770,58 +534,6 @@
     "texto": "📌 Sismo en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 18/08/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/",
-        "fecha": "2026-08-19T00:30:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T00:30:17+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:30.992642+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Distrito Capital::2026-08-16",
-    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 18/08/2026, 8:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/",
-        "fecha": "2026-08-19T00:30:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T00:30:17+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:30:17+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:34.453309+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-08-19",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 18/08/2026, 8:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/18/maquinaria-pesada-de-eeuu-llego-a-venezuela-para-retirar-toneladas-de-escombros-por-terremotos/"
-  },
-  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Monagas",
     "municipio": "Piar",
@@ -846,32 +558,6 @@
     "clave_dedup": "infraestructura_agua::Monagas::2026-08-19",
     "titulo": "Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas",
     "texto": "📌 Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Chaguaramal, Municipio Piar, Monagas\n🕒 Hecho reportado: 18/08/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Merida",
-    "municipio": "Libertador",
-    "parroquia": "Milla",
-    "severidad": "critico",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html",
-        "fecha": "2026-08-19T02:00:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T02:00:55+00:00",
-    "fecha_evento_temprana": "2026-08-19T02:00:55+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:44.744012+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Merida::2026-08-19",
-    "titulo": "Inundación en Parroquia Milla, Municipio Libertador, Merida",
-    "texto": "📌 Inundación en Parroquia Milla, Municipio Libertador, Merida\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Milla, Municipio Libertador, Merida\n🕒 Hecho reportado: 18/08/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html"
   },
   {
     "tipo": "infraestructura_electrica",
