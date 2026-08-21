@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-08-21T19:59:42.455093+00:00",
+  "actualizado": "2026-08-21T21:01:59.178527+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T16:15:00+00:00"
+    "hasta": "2026-08-21T19:48:26+00:00"
   },
-  "total_eventos": 188,
+  "total_eventos": 193,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 29,
-    "infraestructura_electrica": 54,
+    "inundacion": 31,
+    "infraestructura_electrica": 56,
     "deslizamiento": 12,
     "colapso_estructural": 3,
     "orden_publico": 32,
-    "salud_publica": 4,
+    "salud_publica": 5,
     "crisis_migratoria": 4,
     "incendio": 19,
     "vialidad": 9,
@@ -37,18 +37,18 @@
       "confirmados": 1
     },
     {
+      "estado": "Lara",
+      "total": 13,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 13,
       "confirmados": 4
     },
     {
-      "estado": "Lara",
-      "total": 12,
-      "confirmados": 1
-    },
-    {
       "estado": "Anzoategui",
-      "total": 10,
+      "total": 12,
       "confirmados": 0
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "estado": "La Guaira",
-      "total": 2,
+      "total": 4,
       "confirmados": 0
     },
     {
@@ -152,7 +152,7 @@
     },
     "Lara": {
       "inundacion": 2,
-      "salud_publica": 2,
+      "salud_publica": 3,
       "orden_publico": 3,
       "infraestructura_electrica": 2,
       "sismo": 1,
@@ -203,11 +203,12 @@
       "infraestructura_electrica": 3
     },
     "Anzoategui": {
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "inundacion": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 5,
@@ -280,8 +281,9 @@
       "orden_publico": 1
     },
     "La Guaira": {
-      "infraestructura_electrica": 1,
-      "deslizamiento": 1
+      "infraestructura_electrica": 2,
+      "deslizamiento": 1,
+      "inundacion": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -289,11 +291,11 @@
     }
   },
   "por_severidad": {
-    "alto": 16,
-    "critico": 15,
-    "sin_clasificar": 154,
+    "alto": 17,
+    "critico": 16,
+    "sin_clasificar": 156,
     "medio": 1,
-    "bajo": 2
+    "bajo": 3
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -302,11 +304,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 22
+      "2026-08": 24
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 49
+      "2026-08": 51
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -322,7 +324,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 3
+      "2026-08": 4
     },
     "crisis_migratoria": {
       "2026-07": 4

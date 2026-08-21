@@ -1,11 +1,4 @@
 {
-  "orden_publico::Sucre::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T20:48:04.482705+00:00",
-    "fecha_evento_temprana": "2026-08-18T17:55:23+00:00",
-    "municipio": "Cruz Salmerón Acosta"
-  },
   "colapso_estructural::Guarico::2026-08-18": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -91,10 +84,10 @@
     "municipio": null
   },
   "infraestructura_electrica::La Guaira::2026-08-20": {
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-20T17:53:39.799124+00:00",
-    "fecha_evento_temprana": "2026-08-20T12:20:12+00:00",
+    "fecha_deteccion": "2026-08-21T21:01:57.186848+00:00",
+    "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
     "municipio": null
   },
   "infraestructura_electrica::Tachira::2026-08-20": {
@@ -154,10 +147,10 @@
     "municipio": "Antonio Díaz"
   },
   "infraestructura_electrica::Anzoategui::2026-08-20": {
-    "severidad": "sin_clasificar",
+    "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-20T23:08:53.068196+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:07:18+00:00",
+    "fecha_deteccion": "2026-08-21T20:58:11.480319+00:00",
+    "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
   "salud_publica::Zulia::2026-08-20": {
@@ -278,5 +271,26 @@
     "fecha_deteccion": "2026-08-21T19:59:16.808407+00:00",
     "fecha_evento_temprana": "2026-08-21T16:15:00+00:00",
     "municipio": "San Fernando"
+  },
+  "salud_publica::Lara::2026-08-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T20:58:04.300158+00:00",
+    "fecha_evento_temprana": "2026-08-21T17:35:57+00:00",
+    "municipio": null
+  },
+  "inundacion::Anzoategui::2026-08-21": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T21:00:20.057444+00:00",
+    "fecha_evento_temprana": "2026-08-21T19:10:33+00:00",
+    "municipio": "Simón Rodríguez"
+  },
+  "inundacion::La Guaira::2026-08-21": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T21:01:08.551236+00:00",
+    "fecha_evento_temprana": "2026-08-21T17:45:00+00:00",
+    "municipio": null
   }
 }

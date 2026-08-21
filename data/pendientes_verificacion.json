@@ -807,10 +807,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-21T00:03:19.923850+00:00"
   },
-  "infraestructura_electrica::La Guaira::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:59:41.355964+00:00"
-  },
   "derrame_petrolero::Delta Amacuro::2026-08-21": {
     "intentos": 2,
     "ultima_vez": "2026-08-21T03:35:58.437828+00:00"
@@ -835,10 +831,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-21T07:59:06.126750+00:00"
   },
-  "infraestructura_electrica::Anzoategui::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:56:00.298018+00:00"
-  },
   "infraestructura_electrica::Carabobo::2026-08-21": {
     "intentos": 2,
     "ultima_vez": "2026-08-21T12:06:25.860884+00:00"
@@ -852,39 +844,35 @@
     "ultima_vez": "2026-08-21T15:57:59.877380+00:00"
   },
   "ataque_armado::Distrito Capital::2026-08-21": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-21T15:57:56.466203+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-21T20:58:00.724322+00:00"
   },
   "incendio::Tachira::2026-08-21": {
     "intentos": 1,
     "ultima_vez": "2026-08-21T15:58:03.548249+00:00"
   },
-  "salud_publica::Lara::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:55:49.604490+00:00"
-  },
-  "incendio::Distrito Capital::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:55:56.757528+00:00"
-  },
-  "emergencia_metro::Distrito Capital::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:57:38.460535+00:00"
-  },
-  "inundacion::Anzoategui::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:58:03.029956+00:00"
-  },
-  "deslizamiento::La Guaira::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:58:27.623800+00:00"
-  },
-  "inundacion::La Guaira::2026-08-21": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-21T19:58:52.255711+00:00"
-  },
   "infraestructura_electrica::Sucre::2026-08-21": {
     "intentos": 1,
     "ultima_vez": "2026-08-21T19:57:13.933870+00:00"
+  },
+  "tormenta_electrica::Distrito Capital::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T20:58:15.467034+00:00"
+  },
+  "tormenta_electrica::Trujillo::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T20:58:40.062000+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T20:59:04.631745+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T20:59:31.306187+00:00"
+  },
+  "infraestructura_electrica::Apure::2026-08-21": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-21T21:01:32.882893+00:00"
   }
 }

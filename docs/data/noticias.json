@@ -1,5 +1,150 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 2.7,
+    "confirmado": false,
+    "num_fuentes": 4,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/",
+        "fecha": "2026-08-21T17:35:57+00:00"
+      },
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/618084/ovp-denuncia-la-muerte-de-un-paciente-renal-tras-contraer-hepatitis-en-fenix-lara/",
+        "fecha": "2026-08-21T18:14:41+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/",
+        "fecha": "2026-08-21T19:19:55+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/",
+        "fecha": "2026-08-21T18:02:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T19:19:55+00:00",
+    "fecha_evento_temprana": "2026-08-21T17:35:57+00:00",
+    "fecha_deteccion": "2026-08-21T20:58:04.300158+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Lara::2026-08-21",
+    "titulo": "Salud pública en Lara",
+    "texto": "📌 Salud pública en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 21/08/2026, 3:19 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 4:58 p.m.\n📊 Fuentes independientes: 4 (score 2.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/\n  • Runrun.es: https://runrun.es/noticias/618084/ovp-denuncia-la-muerte-de-un-paciente-renal-tras-contraer-hepatitis-en-fenix-lara/\n  • La Verdad (Zulia): https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/\n  • La Manana (Falcon): https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/21/vecinos-de-la-orquidea-en-barcelona-pasan-las-de-cain-sin-agua-con-apagones-y-crateres-en-las-calles/",
+        "fecha": "2026-08-21T19:48:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T19:48:26+00:00",
+    "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
+    "fecha_deteccion": "2026-08-21T20:58:11.480319+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-20",
+    "titulo": "Falla eléctrica en Anzoategui",
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 21/08/2026, 3:48 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 4:58 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/21/vecinos-de-la-orquidea-en-barcelona-pasan-las-de-cain-sin-agua-con-apagones-y-crateres-en-las-calles/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/21/ciudadanos-de-el-tigre-reportan-colapsos-en-sus-sectores-durante-las-lluvias-21ago/",
+        "fecha": "2026-08-21T19:10:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T19:10:33+00:00",
+    "fecha_evento_temprana": "2026-08-21T19:10:33+00:00",
+    "fecha_deteccion": "2026-08-21T21:00:20.057444+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Anzoategui::2026-08-21",
+    "titulo": "Inundación en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Inundación en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 21/08/2026, 3:10 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/ciudadanos-de-el-tigre-reportan-colapsos-en-sus-sectores-durante-las-lluvias-21ago/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/21/garcia-urquiola-acuso-a-la-mesa-de-dialogo-de-prolongar-la-permanencia-de-delcy-rodriguez-en-el-poder-21ago/",
+        "fecha": "2026-08-21T17:45:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T17:45:00+00:00",
+    "fecha_evento_temprana": "2026-08-21T17:45:00+00:00",
+    "fecha_deteccion": "2026-08-21T21:01:08.551236+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::La Guaira::2026-08-21",
+    "titulo": "Inundación en La Guaira",
+    "texto": "📌 Inundación en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 1:45 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/garcia-urquiola-acuso-a-la-mesa-de-dialogo-de-prolongar-la-permanencia-de-delcy-rodriguez-en-el-poder-21ago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/aumento-de-enfermedades-respiratorias-en-venezuela-clima-apagones-y-hacinamiento-elevan-el-riesgo/",
+        "fecha": "2026-08-21T18:51:52+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T18:51:52+00:00",
+    "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
+    "fecha_deteccion": "2026-08-21T21:01:57.186848+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::La Guaira::2026-08-20",
+    "titulo": "Falla eléctrica en La Guaira",
+    "texto": "📌 Falla eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 2:51 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/aumento-de-enfermedades-respiratorias-en-venezuela-clima-apagones-y-hacinamiento-elevan-el-riesgo/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Yaracuy",
     "municipio": null,
@@ -504,32 +649,6 @@
     "texto": "📌 Inundación en Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n🕒 Hecho reportado: 20/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/los-habitantes-del-delta-amacuro-aprovechan-la-crecida-del-rio-orinoco-para-extraer-madera-de-zonas-boscosas/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/08/20/pequenos-comerciantes-en-lecheria-denuncian-que-fallas-electricas-afectan-su-economia/",
-        "fecha": "2026-08-20T20:07:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:07:18+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:07:18+00:00",
-    "fecha_deteccion": "2026-08-20T23:08:53.068196+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-20",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 20/08/2026, 4:07 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/20/pequenos-comerciantes-en-lecheria-denuncian-que-fallas-electricas-afectan-su-economia/"
-  },
-  {
     "tipo": "salud_publica",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -715,32 +834,6 @@
     "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-20",
     "titulo": "Falla eléctrica en Distrito Capital",
     "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 20/08/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 1:53 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/",
-        "fecha": "2026-08-20T12:20:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T12:20:12+00:00",
-    "fecha_evento_temprana": "2026-08-20T12:20:12+00:00",
-    "fecha_deteccion": "2026-08-20T17:53:39.799124+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::La Guaira::2026-08-20",
-    "titulo": "Falla eléctrica en La Guaira",
-    "texto": "📌 Falla eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 20/08/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 20/08/2026, 1:53 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/las-termoelectricas-en-venezuela-solo-producen-10-de-su-capacidad-instalada/"
   },
   {
     "tipo": "vialidad",
@@ -3017,31 +3110,5 @@
     "clave_dedup": "orden_publico::Lara::2026-08-07",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 07/08/2026, 7:26 p.m.\n🔎 Detectado por el sistema: 08/08/2026, 12:20 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/07/video-trabajadores-y-jubilados-de-la-gobernacion-de-lara-exigen-pago-del-bono-de-profesionalizacion-y-rechazan-el-sistema-patria-7ago/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/",
-        "fecha": "2026-08-07T18:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T18:30:00+00:00",
-    "fecha_evento_temprana": "2026-08-07T18:30:00+00:00",
-    "fecha_deteccion": "2026-08-07T20:12:13.278932+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-08-07",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 07/08/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 07/08/2026, 4:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/07/familiares-de-presos-politicos-protestan-frente-a-la-cancilleria-en-caracas-para-exigir-la-presencia-de-la-cidh-y-la-cruz-roja-7ago/"
   }
 ]
