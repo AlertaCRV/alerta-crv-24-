@@ -1,6 +1,32 @@
 [
   {
     "tipo": "incendio",
+    "ubicacion": "Tachira",
+    "municipio": "Ayacucho",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/internacional/tres-heridos-y-danos-en-infraestructura-en-peru-por-terremoto/",
+        "fecha": "2026-08-21T10:19:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-21T10:19:03+00:00",
+    "fecha_evento_temprana": "2026-08-21T10:19:03+00:00",
+    "fecha_deteccion": "2026-08-21T14:11:15.098877+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Tachira::2026-08-21",
+    "titulo": "Incendio en Municipio Ayacucho, Tachira",
+    "texto": "📌 Incendio en Municipio Ayacucho, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Ayacucho, Tachira\n🕒 Hecho reportado: 21/08/2026, 6:19 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 10:11 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/internacional/tres-heridos-y-danos-en-infraestructura-en-peru-por-terremoto/"
+  },
+  {
+    "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
