@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "vialidad",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/08/destaco-antonio-bastidadenuncia-colapso-vial-abandono-de-servicios-ydeterioro-de-la-infraestructura-en-barinas/",
+        "fecha": "2026-08-20T23:52:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T23:52:53+00:00",
+    "fecha_evento_temprana": "2026-08-20T23:52:53+00:00",
+    "fecha_deteccion": "2026-08-21T05:21:13.775671+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Barinas::2026-08-20",
+    "titulo": "Incidente vial en Barinas",
+    "texto": "📌 Incidente vial en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 20/08/2026, 7:52 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/destaco-antonio-bastidadenuncia-colapso-vial-abandono-de-servicios-ydeterioro-de-la-infraestructura-en-barinas/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/08/vecino-hizo-llamado-de-alertase-revento-tuberia-matriz-en-los-proceres/",
+        "fecha": "2026-08-20T23:28:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T23:28:46+00:00",
+    "fecha_evento_temprana": "2026-08-20T23:28:46+00:00",
+    "fecha_deteccion": "2026-08-21T05:21:17.128095+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Barinas::2026-08-20",
+    "titulo": "Falla de agua en Barinas",
+    "texto": "📌 Falla de agua en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 20/08/2026, 7:28 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/vecino-hizo-llamado-de-alertase-revento-tuberia-matriz-en-los-proceres/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "Cabimas",
+    "parroquia": "Germán Ríos Linares",
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/",
+        "fecha": "2026-08-20T23:26:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-20T23:26:30+00:00",
+    "fecha_evento_temprana": "2026-08-20T23:26:30+00:00",
+    "fecha_deteccion": "2026-08-21T05:21:46.957740+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-20",
+    "titulo": "Falla eléctrica en Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia",
+    "texto": "📌 Falla eléctrica en Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 20/08/2026, 7:26 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Monagas",
     "municipio": "Maturín",
@@ -2695,88 +2773,5 @@
     "clave_dedup": "orden_publico::Zulia::2026-08-07",
     "titulo": "Orden público en Zulia",
     "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 07/08/2026, 11:42 a.m.\n🔎 Detectado por el sistema: 07/08/2026, 2:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/protestas-en-siete-estados-del-pais-por-cortes-electricos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.4,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/regresan-los-cacerolazos-venezolanos-protestan-a-diario-en-rechazo-a-los-apagones/",
-        "fecha": "2026-08-06T21:14:20+00:00"
-      },
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/",
-        "fecha": "2026-08-07T00:12:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T00:12:43+00:00",
-    "fecha_evento_temprana": "2026-08-06T21:14:20+00:00",
-    "fecha_deteccion": "2026-08-07T01:46:21.678405+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Carabobo::2026-08-06",
-    "titulo": "Orden público en Municipio Valencia, Carabobo",
-    "texto": "📌 Orden público en Municipio Valencia, Carabobo\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 06/08/2026, 8:12 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 9:46 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/regresan-los-cacerolazos-venezolanos-protestan-a-diario-en-rechazo-a-los-apagones/\n  • La Patilla: https://lapatilla.com/2026/08/06/ya-no-estamos-para-mendigar-trabajadores-de-cantv-en-carabobo-exigen-reactivacion-de-servicios-de-salud/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Trujillo",
-    "municipio": "Trujillo",
-    "parroquia": "Tres Esquinas",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad Trujillo",
-        "link": "https://ciudadtrujillo.com/?p=53983",
-        "fecha": "2026-08-07T00:43:39+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T00:43:39+00:00",
-    "fecha_evento_temprana": "2026-08-07T00:43:39+00:00",
-    "fecha_deteccion": "2026-08-07T01:46:53.213945+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Trujillo::2026-08-07",
-    "titulo": "Incendio en Parroquia Tres Esquinas, Municipio Trujillo, Trujillo",
-    "texto": "📌 Incendio en Parroquia Tres Esquinas, Municipio Trujillo, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Tres Esquinas, Municipio Trujillo, Trujillo\n🕒 Hecho reportado: 06/08/2026, 8:43 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=53983"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Anzoategui",
-    "municipio": "Simón Rodríguez",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/08/06/dos-fallecidos-y-tres-heridos-dejo-choque-entre-un-mustang-y-un-vehiculo-de-transporte-publico-en-el-tigre/",
-        "fecha": "2026-08-07T00:12:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-07T00:12:54+00:00",
-    "fecha_evento_temprana": "2026-08-07T00:12:54+00:00",
-    "fecha_deteccion": "2026-08-07T01:46:56.592218+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Anzoategui::2026-08-07",
-    "titulo": "Incidente vial en Municipio Simón Rodríguez, Anzoategui",
-    "texto": "📌 Incidente vial en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 06/08/2026, 8:12 p.m.\n🔎 Detectado por el sistema: 06/08/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/06/dos-fallecidos-y-tres-heridos-dejo-choque-entre-un-mustang-y-un-vehiculo-de-transporte-publico-en-el-tigre/"
   }
 ]

@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-08-21T02:03:43.446216+00:00",
+  "actualizado": "2026-08-21T05:23:26.088212+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-20T20:20:02+00:00"
+    "hasta": "2026-08-20T23:52:53+00:00"
   },
-  "total_eventos": 171,
+  "total_eventos": 174,
   "por_tipo": {
     "tormenta_electrica": 2,
     "inundacion": 28,
-    "infraestructura_electrica": 49,
+    "infraestructura_electrica": 50,
     "deslizamiento": 10,
     "colapso_estructural": 3,
     "orden_publico": 32,
     "salud_publica": 4,
     "crisis_migratoria": 4,
     "incendio": 15,
-    "vialidad": 8,
+    "vialidad": 9,
     "sismo": 4,
     "escasez_combustible": 1,
     "sequia": 4,
     "explosion": 1,
-    "infraestructura_agua": 4,
+    "infraestructura_agua": 5,
     "accidente_transporte": 1,
     "derrame_petrolero": 1
   },
@@ -32,18 +32,18 @@
     },
     {
       "estado": "Barinas",
-      "total": 13,
+      "total": 15,
       "confirmados": 1
+    },
+    {
+      "estado": "Zulia",
+      "total": 13,
+      "confirmados": 4
     },
     {
       "estado": "Lara",
       "total": 12,
       "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 12,
-      "confirmados": 4
     },
     {
       "estado": "Anzoategui",
@@ -160,7 +160,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -188,8 +188,9 @@
       "deslizamiento": 1,
       "inundacion": 3,
       "infraestructura_electrica": 3,
-      "vialidad": 3,
-      "orden_publico": 3
+      "vialidad": 4,
+      "orden_publico": 3,
+      "infraestructura_agua": 1
     },
     "Sucre": {
       "inundacion": 1,
@@ -281,7 +282,7 @@
   "por_severidad": {
     "alto": 15,
     "critico": 15,
-    "sin_clasificar": 138,
+    "sin_clasificar": 141,
     "medio": 1,
     "bajo": 2
   },
@@ -295,7 +296,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 44
+      "2026-08": 45
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -321,7 +322,7 @@
       "2026-08": 12
     },
     "vialidad": {
-      "2026-08": 8
+      "2026-08": 9
     },
     "sismo": {
       "2026-08": 4
@@ -336,7 +337,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "accidente_transporte": {
       "2026-08": 1
