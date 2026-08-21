@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-08-18T15:01:10+00:00",
     "municipio": "Alberto Arvelo Torrealba"
   },
-  "infraestructura_electrica::Merida::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T17:05:53.605379+00:00",
-    "fecha_evento_temprana": "2026-08-18T14:44:02+00:00",
-    "municipio": "Campo Elías"
-  },
-  "colapso_estructural::Distrito Capital::2026-08-18": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T17:06:05.850912+00:00",
-    "fecha_evento_temprana": "2026-08-18T13:15:53+00:00",
-    "municipio": "Libertador"
-  },
   "orden_publico::Sucre::2026-08-18": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -32,13 +18,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-18T21:48:42.532591+00:00",
     "fecha_evento_temprana": "2026-08-18T18:13:29+00:00",
-    "municipio": null
-  },
-  "accidente_transporte::Aragua::2026-08-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-18T17:06:02.794323+00:00",
-    "fecha_evento_temprana": "2026-08-18T14:06:18+00:00",
     "municipio": null
   },
   "sismo::Distrito Capital::2026-08-18": {
@@ -270,6 +249,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-21T15:58:10.346505+00:00",
     "fecha_evento_temprana": "2026-08-21T12:02:21+00:00",
+    "municipio": null
+  },
+  "deslizamiento::La Guaira::2026-08-21": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T17:17:41.279550+00:00",
+    "fecha_evento_temprana": "2026-08-21T14:16:53+00:00",
+    "municipio": null
+  },
+  "emergencia_metro::Distrito Capital::2026-08-21": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T17:17:48.709441+00:00",
+    "fecha_evento_temprana": "2026-08-21T13:58:00+00:00",
     "municipio": null
   }
 }
