@@ -3,17 +3,12 @@
     "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": null,
-    "parroquia": "Candelaria",
-    "severidad": "alto",
-    "score": 1.25,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.6,
     "confirmado": false,
-    "num_fuentes": 2,
+    "num_fuentes": 1,
     "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/20/dos-personas-resultaron-heridas-tras-incendio-en-una-carpinteria-en-la-avenida-andres-bello-este-20ago-videos/",
-        "fecha": "2026-08-21T01:52:38+00:00"
-      },
       {
         "nombre": "El Carabobeno",
         "link": "https://www.el-carabobeno.com/incendio-afecto-una-carpinteria-en-la-avenida-andres-bello-de-caracas/",
@@ -23,12 +18,12 @@
     "es_reporte_filial": false,
     "resumen_consolidado": null,
     "fecha_evento": "2026-08-21T04:30:56+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:52:38+00:00",
-    "fecha_deteccion": "2026-08-21T07:58:30.392891+00:00",
+    "fecha_evento_temprana": "2026-08-21T04:30:56+00:00",
+    "fecha_deteccion": "2026-08-21T12:06:22.452488+00:00",
     "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
     "clave_dedup": "incendio::Distrito Capital::2026-08-21",
-    "titulo": "Incendio en Parroquia Candelaria, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 21/08/2026, 12:30 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:58 a.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/dos-personas-resultaron-heridas-tras-incendio-en-una-carpinteria-en-la-avenida-andres-bello-este-20ago-videos/\n  • El Carabobeno: https://www.el-carabobeno.com/incendio-afecto-una-carpinteria-en-la-avenida-andres-bello-de-caracas/"
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 21/08/2026, 12:30 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 8:06 a.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/incendio-afecto-una-carpinteria-en-la-avenida-andres-bello-de-caracas/"
   },
   {
     "tipo": "infraestructura_electrica",
