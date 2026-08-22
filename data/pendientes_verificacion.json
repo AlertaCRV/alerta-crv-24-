@@ -923,36 +923,36 @@
     "intentos": 1,
     "ultima_vez": "2026-08-22T14:03:28.611363+00:00"
   },
-  "inundacion::Carabobo::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T15:29:25.227857+00:00"
-  },
   "orden_publico::Merida::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:28:53.623973+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:51:31.062824+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-22": {
     "intentos": 1,
     "ultima_vez": "2026-08-22T15:28:57.434110+00:00"
   },
   "tormenta_electrica::Distrito Capital::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:29:49.499455+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:51:58.686685+00:00"
   },
   "orden_publico::Aragua::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:30:38.136426+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:52:46.958857+00:00"
   },
   "orden_publico::Carabobo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:31:02.371182+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:53:11.093798+00:00"
   },
   "orden_publico::Nueva Esparta::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:31:26.642150+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:53:35.232823+00:00"
   },
   "orden_publico::Trujillo::2026-08-22": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T15:53:59.380972+00:00"
+  },
+  "incendio::Monagas::2026-08-22": {
     "intentos": 1,
-    "ultima_vez": "2026-08-22T15:31:51.129778+00:00"
+    "ultima_vez": "2026-08-22T15:52:22.820256+00:00"
   }
 }

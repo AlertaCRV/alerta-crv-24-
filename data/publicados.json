@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Monagas::2026-08-19": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T15:52:46.622996+00:00",
-    "fecha_evento_temprana": "2026-08-19T12:52:40+00:00",
-    "municipio": "Punceres"
-  },
-  "infraestructura_electrica::Sucre::2026-08-19": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T15:52:50.066561+00:00",
-    "fecha_evento_temprana": "2026-08-19T11:00:10+00:00",
-    "municipio": null
-  },
   "inundacion::Portuguesa::2026-08-19": {
     "severidad": "sin_clasificar",
     "confirmado": false,
