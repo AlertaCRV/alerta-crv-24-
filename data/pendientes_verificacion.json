@@ -923,36 +923,44 @@
     "intentos": 2,
     "ultima_vez": "2026-08-22T19:57:43.890413+00:00"
   },
-  "ataque_armado::Distrito Capital::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T20:27:25.385375+00:00"
-  },
-  "ataque_armado::Zulia::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T20:27:28.797216+00:00"
-  },
-  "tormenta_electrica::Distrito Capital::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T20:29:29.998621+00:00"
-  },
-  "deslizamiento::Guarico::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T20:30:20.368650+00:00"
-  },
   "infraestructura_electrica::Miranda::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T20:28:17.244881+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:52:23.857960+00:00"
   },
   "salud_publica::Aragua::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T20:28:41.510201+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:52:48.098114+00:00"
   },
   "incendio::Monagas::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T20:29:54.173081+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:54:00.728204+00:00"
   },
   "infraestructura_electrica::Monagas::2026-08-22": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:54:49.135749+00:00"
+  },
+  "inundacion::Carabobo::2026-08-22": {
     "intentos": 1,
-    "ultima_vez": "2026-08-22T20:30:23.624278+00:00"
+    "ultima_vez": "2026-08-22T20:53:12.293402+00:00"
+  },
+  "orden_publico::Aragua::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T20:55:13.362519+00:00"
+  },
+  "orden_publico::Carabobo::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T20:55:37.569890+00:00"
+  },
+  "orden_publico::Merida::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T20:56:01.784741+00:00"
+  },
+  "orden_publico::Nueva Esparta::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T20:56:25.991185+00:00"
+  },
+  "orden_publico::Trujillo::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T20:56:50.199755+00:00"
   }
 }
