@@ -327,5 +327,40 @@
     "fecha_deteccion": "2026-08-22T05:18:32.256267+00:00",
     "fecha_evento_temprana": "2026-08-22T04:00:00+00:00",
     "municipio": "Rafael Urdaneta"
+  },
+  "orden_publico::Aragua::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T10:29:27.328960+00:00",
+    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T10:29:51.480123+00:00",
+    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
+    "municipio": null
+  },
+  "orden_publico::Merida::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T10:30:15.632861+00:00",
+    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
+    "municipio": null
+  },
+  "orden_publico::Nueva Esparta::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T10:30:39.787533+00:00",
+    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
+    "municipio": null
+  },
+  "orden_publico::Trujillo::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T10:31:03.935273+00:00",
+    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
+    "municipio": "Valera"
   }
 }
