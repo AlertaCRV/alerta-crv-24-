@@ -362,5 +362,12 @@
     "fecha_deteccion": "2026-08-22T14:04:41.394594+00:00",
     "fecha_evento_temprana": "2026-08-22T13:02:19+00:00",
     "municipio": "Maturín"
+  },
+  "inundacion::Carabobo::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T14:37:19.464905+00:00",
+    "fecha_evento_temprana": "2026-08-22T13:10:42+00:00",
+    "municipio": null
   }
 }
