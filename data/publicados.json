@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Bolivar::2026-08-19": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T21:05:28.986897+00:00",
-    "fecha_evento_temprana": "2026-08-19T19:00:28+00:00",
-    "municipio": null
-  },
   "vialidad::Carabobo::2026-08-19": {
     "severidad": "critico",
     "confirmado": false,
