@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/",
+        "fecha": "2026-08-22T16:48:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-22T16:48:06+00:00",
+    "fecha_evento_temprana": "2026-08-22T16:48:06+00:00",
+    "fecha_deteccion": "2026-08-22T17:57:38.642594+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Zulia::2026-08-22",
+    "titulo": "Ataque armado en Zulia",
+    "texto": "📌 Ataque armado en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 22/08/2026, 12:48 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Carabobo",
     "municipio": null,
