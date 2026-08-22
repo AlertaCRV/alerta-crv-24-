@@ -895,8 +895,48 @@
     "intentos": 1,
     "ultima_vez": "2026-08-22T04:11:00.410440+00:00"
   },
-  "sismo::La Guaira::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T05:18:04.615781+00:00"
+  "deslizamiento::La Guaira::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:49:56.466654+00:00"
+  },
+  "salud_publica::Lara::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:49:59.839015+00:00"
+  },
+  "incendio::Portuguesa::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:50:03.270645+00:00"
+  },
+  "deslizamiento::Barinas::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:50:51.727297+00:00"
+  },
+  "orden_publico::Tachira::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:51:15.999105+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:51:40.316796+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:52:04.501755+00:00"
+  },
+  "infraestructura_electrica::Apure::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:52:28.686523+00:00"
+  },
+  "sequia::Apure::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:52:52.892253+00:00"
+  },
+  "infraestructura_agua::Lara::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:53:17.417582+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T05:53:41.643268+00:00"
   }
 }
