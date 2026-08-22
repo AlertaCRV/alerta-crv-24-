@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/nacionales/la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos",
+        "fecha": "2026-08-22T01:30:55+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-22T01:30:55+00:00",
+    "fecha_evento_temprana": "2026-08-22T01:30:55+00:00",
+    "fecha_deteccion": "2026-08-22T04:09:47.504860+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 7.2,
+    "tambien_mencionado_en": [
+      "Distrito Capital",
+      "Miranda"
+    ],
+    "clave_dedup": "sismo::La Guaira::2026-08-22::mag7.2",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 9:30 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 12:09 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Lara",
     "municipio": null,
