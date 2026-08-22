@@ -1,25 +1,4 @@
 {
-  "sismo::Distrito Capital::2026-08-18": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T06:05:27.642492+00:00",
-    "fecha_evento_temprana": "2026-08-18T19:13:09+00:00",
-    "municipio": "Libertador"
-  },
-  "infraestructura_agua::Monagas::2026-08-19": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T06:05:38.006462+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:00:59+00:00",
-    "municipio": "Piar"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-19": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-19T06:05:48.089176+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:53:26+00:00",
-    "municipio": null
-  },
   "infraestructura_agua::Anzoategui::2026-08-19": {
     "severidad": "sin_clasificar",
     "confirmado": false,
