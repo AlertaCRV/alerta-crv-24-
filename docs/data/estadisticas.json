@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-22T14:06:43.085376+00:00",
+  "actualizado": "2026-08-22T14:39:45.137744+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-22T13:02:19+00:00"
+    "hasta": "2026-08-22T13:10:42+00:00"
   },
-  "total_eventos": 208,
+  "total_eventos": 209,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 31,
+    "inundacion": 32,
     "infraestructura_electrica": 56,
     "deslizamiento": 15,
     "colapso_estructural": 3,
@@ -54,7 +54,7 @@
     },
     {
       "estado": "Carabobo",
-      "total": 10,
+      "total": 11,
       "confirmados": 1
     },
     {
@@ -148,7 +148,7 @@
       "tormenta_electrica": 1,
       "infraestructura_electrica": 4,
       "orden_publico": 3,
-      "inundacion": 1,
+      "inundacion": 2,
       "vialidad": 1
     },
     "Lara": {
@@ -305,7 +305,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 169,
+    "sin_clasificar": 170,
     "medio": 1,
     "bajo": 3
   },
@@ -316,7 +316,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 24
+      "2026-08": 25
     },
     "infraestructura_electrica": {
       "2026-07": 5,
