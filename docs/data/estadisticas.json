@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-22T10:31:58.539037+00:00",
+  "actualizado": "2026-08-22T14:06:43.085376+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-22T09:20:05+00:00"
+    "hasta": "2026-08-22T13:02:19+00:00"
   },
-  "total_eventos": 207,
+  "total_eventos": 208,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 31,
@@ -14,7 +14,7 @@
     "orden_publico": 38,
     "salud_publica": 5,
     "crisis_migratoria": 4,
-    "incendio": 20,
+    "incendio": 21,
     "vialidad": 9,
     "sismo": 5,
     "escasez_combustible": 1,
@@ -68,14 +68,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Monagas",
+      "total": 10,
+      "confirmados": 0
+    },
+    {
       "estado": "Yaracuy",
       "total": 10,
       "confirmados": 1
-    },
-    {
-      "estado": "Monagas",
-      "total": 9,
-      "confirmados": 0
     },
     {
       "estado": "Apure",
@@ -238,7 +238,8 @@
       "infraestructura_electrica": 5,
       "salud_publica": 1,
       "vialidad": 1,
-      "infraestructura_agua": 2
+      "infraestructura_agua": 2,
+      "incendio": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -304,7 +305,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 168,
+    "sin_clasificar": 169,
     "medio": 1,
     "bajo": 3
   },
@@ -342,7 +343,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 17
+      "2026-08": 18
     },
     "vialidad": {
       "2026-08": 9
