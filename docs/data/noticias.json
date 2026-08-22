@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/21/video-comunidades-del-oeste-de-barquisimeto-protestan-ante-sede-regional-de-hidroven-tras-mas-de-un-mes-sin-agua-21ago/",
+        "fecha": "2026-08-22T00:06:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-22T00:06:26+00:00",
+    "fecha_evento_temprana": "2026-08-22T00:06:26+00:00",
+    "fecha_deteccion": "2026-08-22T03:29:22.632707+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Lara::2026-08-22",
+    "titulo": "Falla de agua en Lara",
+    "texto": "📌 Falla de agua en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 21/08/2026, 8:06 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 11:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/video-comunidades-del-oeste-de-barquisimeto-protestan-ante-sede-regional-de-hidroven-tras-mas-de-un-mes-sin-agua-21ago/"
+  },
+  {
     "tipo": "sequia",
     "ubicacion": "Apure",
     "municipio": null,
