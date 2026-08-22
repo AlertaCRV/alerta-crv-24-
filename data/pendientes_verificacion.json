@@ -908,43 +908,51 @@
     "ultima_vez": "2026-08-22T08:15:00.368367+00:00"
   },
   "deslizamiento::La Guaira::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:31:26.120278+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:56:25.760342+00:00"
   },
   "incendio::Portuguesa::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:31:29.889013+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:56:29.064858+00:00"
   },
   "deslizamiento::Barinas::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:31:36.669783+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:57:17.375410+00:00"
   },
   "orden_publico::Aragua::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:32:01.125508+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:57:41.553727+00:00"
   },
   "orden_publico::Carabobo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:32:25.489026+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:58:05.714440+00:00"
   },
   "orden_publico::Merida::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:32:49.909018+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:58:29.876030+00:00"
   },
   "orden_publico::Nueva Esparta::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:33:14.552925+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:58:54.059246+00:00"
   },
   "orden_publico::Trujillo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:33:38.945452+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:59:18.219994+00:00"
   },
   "infraestructura_electrica::Apure::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T09:34:03.296171+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T09:59:21.493638+00:00"
   },
   "infraestructura_agua::Lara::2026-08-22": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T10:00:09.833890+00:00"
+  },
+  "sismo::La Guaira::2026-08-22": {
     "intentos": 1,
-    "ultima_vez": "2026-08-22T09:34:27.689781+00:00"
+    "ultima_vez": "2026-08-22T09:56:53.219762+00:00"
+  },
+  "sequia::Apure::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T09:59:45.679537+00:00"
   }
 }
