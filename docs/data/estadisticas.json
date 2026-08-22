@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-08-22T18:02:08.406864+00:00",
+  "actualizado": "2026-08-22T18:42:21.152527+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-22T16:48:06+00:00"
+    "hasta": "2026-08-22T17:20:02+00:00"
   },
-  "total_eventos": 210,
+  "total_eventos": 212,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 32,
-    "infraestructura_electrica": 56,
+    "infraestructura_electrica": 57,
     "deslizamiento": 15,
     "colapso_estructural": 3,
     "orden_publico": 38,
-    "salud_publica": 5,
+    "salud_publica": 6,
     "crisis_migratoria": 4,
     "incendio": 21,
     "vialidad": 9,
@@ -58,6 +58,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Monagas",
+      "total": 11,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
       "total": 10,
       "confirmados": 0
@@ -68,22 +73,17 @@
       "confirmados": 1
     },
     {
-      "estado": "Monagas",
-      "total": 10,
-      "confirmados": 0
-    },
-    {
       "estado": "Yaracuy",
       "total": 10,
       "confirmados": 1
     },
     {
-      "estado": "Apure",
-      "total": 8,
+      "estado": "Aragua",
+      "total": 9,
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Apure",
       "total": 8,
       "confirmados": 0
     },
@@ -236,7 +236,7 @@
       "orden_publico": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "salud_publica": 1,
       "vialidad": 1,
       "infraestructura_agua": 2,
@@ -270,7 +270,8 @@
       "inundacion": 2,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "salud_publica": 1
     },
     "Merida": {
       "infraestructura_electrica": 3,
@@ -306,7 +307,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 171,
+    "sin_clasificar": 173,
     "medio": 1,
     "bajo": 3
   },
@@ -321,7 +322,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 51
+      "2026-08": 52
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -337,7 +338,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 4
+      "2026-08": 5
     },
     "crisis_migratoria": {
       "2026-07": 4
