@@ -920,47 +920,47 @@
     "ultima_vez": "2026-08-22T14:03:28.611363+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T15:28:57.434110+00:00"
-  },
-  "incendio::Monagas::2026-08-22": {
     "intentos": 2,
-    "ultima_vez": "2026-08-22T19:36:12.139443+00:00"
-  },
-  "infraestructura_electrica::Miranda::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T19:34:35.253686+00:00"
-  },
-  "salud_publica::Aragua::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T19:34:59.488343+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T19:36:39.660499+00:00"
+    "ultima_vez": "2026-08-22T19:57:43.890413+00:00"
   },
   "orden_publico::Merida::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T19:34:11.052935+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T19:56:52.101895+00:00"
   },
   "inundacion::Carabobo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T19:35:23.695329+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T19:58:08.183261+00:00"
   },
   "orden_publico::Aragua::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T19:37:03.947684+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T19:59:48.814555+00:00"
   },
   "orden_publico::Carabobo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T19:37:28.167676+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:00:13.036241+00:00"
   },
   "orden_publico::Nueva Esparta::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T19:37:52.378458+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:00:37.248933+00:00"
   },
   "orden_publico::Trujillo::2026-08-22": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T20:01:01.731253+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-22": {
     "intentos": 1,
-    "ultima_vez": "2026-08-22T19:38:16.873087+00:00"
+    "ultima_vez": "2026-08-22T19:56:02.822273+00:00"
+  },
+  "ataque_armado::Zulia::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T19:56:27.096427+00:00"
+  },
+  "tormenta_electrica::Distrito Capital::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T19:58:32.412659+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T19:59:20.943191+00:00"
   }
 }

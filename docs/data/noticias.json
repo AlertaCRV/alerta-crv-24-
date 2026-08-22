@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": "Los Teques",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/22/habitantes-en-los-teques-protestan-para-exigir-restitucion-de-servicios-de-agua-y-luz-este-22ago/",
+        "fecha": "2026-08-22T18:53:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-22T18:53:51+00:00",
+    "fecha_evento_temprana": "2026-08-22T18:53:51+00:00",
+    "fecha_deteccion": "2026-08-22T19:56:55.399076+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Miranda::2026-08-22",
+    "titulo": "Falla eléctrica en Parroquia Los Teques, Miranda",
+    "texto": "📌 Falla eléctrica en Parroquia Los Teques, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Los Teques, Miranda\n🕒 Hecho reportado: 22/08/2026, 2:53 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 3:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/22/habitantes-en-los-teques-protestan-para-exigir-restitucion-de-servicios-de-agua-y-luz-este-22ago/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Aragua",
     "municipio": null,

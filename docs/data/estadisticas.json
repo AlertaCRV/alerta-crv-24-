@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-22T18:42:21.152527+00:00",
+  "actualizado": "2026-08-22T20:01:02.135693+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-22T17:20:02+00:00"
+    "hasta": "2026-08-22T18:53:51+00:00"
   },
-  "total_eventos": 212,
+  "total_eventos": 213,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 32,
-    "infraestructura_electrica": 57,
+    "infraestructura_electrica": 58,
     "deslizamiento": 15,
     "colapso_estructural": 3,
     "orden_publico": 38,
@@ -88,14 +88,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 8,
+      "confirmados": 2
+    },
+    {
       "estado": "Sucre",
       "total": 7,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 7,
-      "confirmados": 2
     },
     {
       "estado": "Falcon",
@@ -244,7 +244,7 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "explosion": 1,
       "deslizamiento": 1,
       "inundacion": 2
@@ -307,7 +307,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 173,
+    "sin_clasificar": 174,
     "medio": 1,
     "bajo": 3
   },
@@ -322,7 +322,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 52
+      "2026-08": 53
     },
     "deslizamiento": {
       "2026-07": 3,
