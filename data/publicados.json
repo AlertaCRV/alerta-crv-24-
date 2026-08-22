@@ -313,5 +313,12 @@
     "fecha_deteccion": "2026-08-21T23:29:51.442141+00:00",
     "fecha_evento_temprana": "2026-08-21T21:57:26+00:00",
     "municipio": null
+  },
+  "sequia::Apure::2026-08-21": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-21T23:57:13.520427+00:00",
+    "fecha_evento_temprana": "2026-08-21T22:51:13+00:00",
+    "municipio": null
   }
 }

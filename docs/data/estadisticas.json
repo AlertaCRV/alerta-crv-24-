@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-21T23:33:58.533266+00:00",
+  "actualizado": "2026-08-21T23:58:26.923947+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-21T21:57:26+00:00"
+    "hasta": "2026-08-21T22:51:13+00:00"
   },
-  "total_eventos": 197,
+  "total_eventos": 198,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 31,
@@ -18,7 +18,7 @@
     "vialidad": 9,
     "sismo": 4,
     "escasez_combustible": 1,
-    "sequia": 4,
+    "sequia": 5,
     "explosion": 1,
     "infraestructura_agua": 5,
     "accidente_transporte": 1,
@@ -78,12 +78,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Sucre",
-      "total": 7,
+      "estado": "Apure",
+      "total": 8,
       "confirmados": 0
     },
     {
-      "estado": "Apure",
+      "estado": "Sucre",
       "total": 7,
       "confirmados": 0
     },
@@ -223,7 +223,8 @@
       "inundacion": 3,
       "orden_publico": 1,
       "infraestructura_agua": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "sequia": 1
     },
     "Tachira": {
       "deslizamiento": 1,
@@ -298,7 +299,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 17,
-    "sin_clasificar": 159,
+    "sin_clasificar": 160,
     "medio": 1,
     "bajo": 3
   },
@@ -348,7 +349,7 @@
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 4
+      "2026-08": 5
     },
     "explosion": {
       "2026-08": 1
