@@ -376,5 +376,12 @@
     "fecha_deteccion": "2026-08-22T18:40:43.333136+00:00",
     "fecha_evento_temprana": "2026-08-22T17:20:02+00:00",
     "municipio": "Piar"
+  },
+  "infraestructura_electrica::Miranda::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-22T19:56:55.399076+00:00",
+    "fecha_evento_temprana": "2026-08-22T18:53:51+00:00",
+    "municipio": null
   }
 }
