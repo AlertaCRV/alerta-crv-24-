@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-23T03:28:34.468593+00:00",
+  "actualizado": "2026-08-23T04:56:32.820825+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-23T02:35:51+00:00"
+    "hasta": "2026-08-23T03:00:55+00:00"
   },
-  "total_eventos": 217,
+  "total_eventos": 218,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 34,
     "infraestructura_electrica": 60,
-    "deslizamiento": 15,
+    "deslizamiento": 16,
     "colapso_estructural": 3,
     "orden_publico": 38,
     "salud_publica": 6,
@@ -48,6 +48,11 @@
       "confirmados": 4
     },
     {
+      "estado": "Trujillo",
+      "total": 12,
+      "confirmados": 0
+    },
+    {
       "estado": "Anzoategui",
       "total": 12,
       "confirmados": 0
@@ -56,11 +61,6 @@
       "estado": "Carabobo",
       "total": 11,
       "confirmados": 1
-    },
-    {
-      "estado": "Trujillo",
-      "total": 11,
-      "confirmados": 0
     },
     {
       "estado": "Bolivar",
@@ -190,7 +190,7 @@
       "incendio": 4,
       "sequia": 1,
       "infraestructura_electrica": 2,
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "tormenta_electrica": 1,
       "orden_publico": 1
     },
@@ -307,7 +307,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 177,
+    "sin_clasificar": 178,
     "medio": 1,
     "bajo": 4
   },
@@ -326,7 +326,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 12
+      "2026-08": 13
     },
     "colapso_estructural": {
       "2026-07": 1,
