@@ -927,25 +927,13 @@
     "intentos": 2,
     "ultima_vez": "2026-08-22T20:52:48.098114+00:00"
   },
-  "infraestructura_electrica::Miranda::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T23:30:48.502838+00:00"
-  },
-  "incendio::Monagas::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T23:32:01.148203+00:00"
-  },
-  "infraestructura_electrica::Monagas::2026-08-22": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-22T23:32:36.869827+00:00"
-  },
   "inundacion::Miranda::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T23:30:24.004935+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T23:52:45.032466+00:00"
   },
   "inundacion::Carabobo::2026-08-22": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-22T23:31:12.708310+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-22T23:54:00.906506+00:00"
   },
   "orden_publico::Aragua::2026-08-22": {
     "intentos": 1,
@@ -966,5 +954,25 @@
   "orden_publico::Trujillo::2026-08-22": {
     "intentos": 1,
     "ultima_vez": "2026-08-22T23:34:12.682742+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T23:51:56.629992+00:00"
+  },
+  "ataque_armado::Zulia::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T23:52:20.845121+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T23:53:12.484896+00:00"
+  },
+  "tormenta_electrica::Distrito Capital::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T23:54:25.116500+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-22": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-22T23:55:13.505642+00:00"
   }
 }
