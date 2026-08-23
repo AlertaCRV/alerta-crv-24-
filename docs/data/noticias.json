@@ -1,6 +1,58 @@
 [
   {
     "tipo": "inundacion",
+    "ubicacion": "Anzoategui",
+    "municipio": "Aragua",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/23/al-menos-12-familias-resultaron-afectadas-tras-desbordamiento-de-rio-en-naricual/",
+        "fecha": "2026-08-23T18:52:25+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T18:52:25+00:00",
+    "fecha_evento_temprana": "2026-08-23T18:52:25+00:00",
+    "fecha_deteccion": "2026-08-23T19:56:40.836920+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Anzoategui::2026-08-23",
+    "titulo": "Inundación en Municipio Aragua, Anzoategui",
+    "texto": "📌 Inundación en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 23/08/2026, 2:52 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/23/al-menos-12-familias-resultaron-afectadas-tras-desbordamiento-de-rio-en-naricual/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Aragua",
+    "municipio": "San Sebastián",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Ciudad MCY (Aragua)",
+        "link": "https://ciudadmcy.info.ve/llega-el-puente-de-guerra-a-san-sebastian-de-los-reyes",
+        "fecha": "2026-08-23T18:40:19+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T18:40:19+00:00",
+    "fecha_evento_temprana": "2026-08-23T18:40:19+00:00",
+    "fecha_deteccion": "2026-08-23T19:59:17.252728+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Aragua::2026-08-23",
+    "titulo": "Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 23/08/2026, 2:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:59 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/llega-el-puente-de-guerra-a-san-sebastian-de-los-reyes"
+  },
+  {
+    "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
     "parroquia": "La Vega",
