@@ -3,7 +3,7 @@
   "tipo": "accidente_transporte",
   "tipo_label": "Accidente de transporte",
   "cerrado": false,
-  "generado": "2026-08-22T20:56:54.839026+00:00",
+  "generado": "2026-08-23T02:16:07.455137+00:00",
   "actualizado_hasta": "2026-08-18T17:06:02.794323+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un único incidente de transporte, lo que representa un aumento respecto al período anterior, donde no se reportó ningún evento (Comparación con el período anterior). \n\nEl único caso ocurrió en la zona costera de Choroní, en el estado Nueva Esparta, donde tres pescadores originarios de la Isla de Margarita fueron rescatados tras sufrir un naufragio frente a las costas del norte de Venezuela (Reporte Confidencial). La noticia se difundió el 18 de agosto de 2026 (Reporte Confidencial). \n\nSegún el informe, el siniestro se produjo a causa de condiciones meteorológicas adversas, específicamente intensas lluvias y fuerte oleaje que provocaron el anegamiento y la zozobra de la embarcación de pesca (Reporte Confidencial). Las autoridades locales y equipos de rescate lograron localizar y salvar a los tres trabajadores del mar sin que se reportaran heridos graves (Reporte Confidencial). \n\nEste incidente constituye el único registro de accidentes de transporte en el período analizado, subrayando la necesidad de reforzar las medidas de seguridad marítima durante episodios de mal tiempo en la región (Comparación con el período anterior).",
+  "narrativa": "En el mes de agosto de 2026 se registró un solo accidente de transporte, mientras que en julio de 2026 no se reportó ninguno (0 evento(s) registrados entonces vs. 1 en este período).\n\nEl 18 de agosto, tres pescadores originarios de la Isla de Margarita fueron rescatados después de que su embarcación naufragara frente a las costas del norte de Venezuela, en la zona de Choroní, estado Nueva Esparta (Reporte Confidencial). El siniestro se produjo por condiciones meteorológicas adversas, con intensas lluvias y fuerte oleaje que provocaron el anegamiento y la posterior zozobra de la embarcación (Reporte Confidencial).\n\nLas autoridades locales llevaron a cabo la operación de rescate, logrando la salvación de los tres trabajadores del mar sin que se reportaran víctimas fatales (Reporte Confidencial).",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
