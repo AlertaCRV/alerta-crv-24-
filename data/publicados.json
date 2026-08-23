@@ -446,5 +446,12 @@
     "fecha_deteccion": "2026-08-23T19:59:17.252728+00:00",
     "fecha_evento_temprana": "2026-08-23T18:40:19+00:00",
     "municipio": "San Sebastián"
+  },
+  "salud_publica::Distrito Capital::2026-08-23": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T20:55:19.698592+00:00",
+    "fecha_evento_temprana": "2026-08-23T19:40:19+00:00",
+    "municipio": null
   }
 }
