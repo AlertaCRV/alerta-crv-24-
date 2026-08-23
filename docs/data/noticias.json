@@ -1,5 +1,62 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.3,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/23/video-una-mujer-y-su-hijo-desaparecieron-al-caer-en-una-alcantarilla-durante-las-lluvias-en-caracas/",
+        "fecha": "2026-08-23T11:59:38+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/23/video-onda-tropical-y-convergencia-monzonica-generaran-lluvias-con-descargas-electricas-en-gran-parte-del-pais-23ago/",
+        "fecha": "2026-08-23T13:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T13:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-23T11:59:38+00:00",
+    "fecha_deteccion": "2026-08-23T13:56:59.372981+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::La Guaira::2026-08-23",
+    "titulo": "Inundación en Municipio Vargas, La Guaira",
+    "texto": "📌 Inundación en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 23/08/2026, 9:00 a.m.\n🔎 Detectado por el sistema: 23/08/2026, 9:56 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/23/video-una-mujer-y-su-hijo-desaparecieron-al-caer-en-una-alcantarilla-durante-las-lluvias-en-caracas/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/23/video-onda-tropical-y-convergencia-monzonica-generaran-lluvias-con-descargas-electricas-en-gran-parte-del-pais-23ago/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/",
+        "fecha": "2026-08-23T12:26:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T12:26:38+00:00",
+    "fecha_evento_temprana": "2026-08-23T12:26:38+00:00",
+    "fecha_deteccion": "2026-08-23T13:59:24.337381+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Bolivar::2026-08-23",
+    "titulo": "Inundación en Bolivar",
+    "texto": "📌 Inundación en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 23/08/2026, 8:26 a.m.\n🔎 Detectado por el sistema: 23/08/2026, 9:59 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Miranda",
     "municipio": null,
