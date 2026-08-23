@@ -1015,36 +1015,44 @@
     "intentos": 2,
     "ultima_vez": "2026-08-23T17:57:50.961999+00:00"
   },
-  "inundacion::Anzoategui::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T19:34:57.697645+00:00"
-  },
-  "incendio::Distrito Capital::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T19:36:13.995899+00:00"
-  },
-  "deslizamiento::Aragua::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T19:37:02.563996+00:00"
-  },
   "inundacion::Aragua::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T19:34:09.127016+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T19:55:48.830509+00:00"
   },
   "inundacion::Miranda::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T19:34:33.443790+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T19:56:16.468525+00:00"
   },
   "crisis_migratoria::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T19:35:46.303767+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T19:57:08.724729+00:00"
   },
   "inundacion::Carabobo::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T19:36:10.615973+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T19:58:17.231661+00:00"
   },
   "sequia::Lara::2026-08-23": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T19:59:41.528117+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-23": {
     "intentos": 1,
-    "ultima_vez": "2026-08-23T19:37:26.845730+00:00"
+    "ultima_vez": "2026-08-23T19:56:13.084198+00:00"
+  },
+  "inundacion::La Guaira::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T19:56:44.393373+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T19:57:52.919553+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T19:58:52.973520+00:00"
+  },
+  "inundacion::Bolivar::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T20:00:05.815624+00:00"
   }
 }

@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Tachira::2026-08-20": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-20T19:49:20.278650+00:00",
-    "fecha_evento_temprana": "2026-08-20T14:27:04+00:00",
-    "municipio": "Panamericano"
-  },
-  "derrame_petrolero::Delta Amacuro::2026-08-20": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-20T19:49:46.697423+00:00",
-    "fecha_evento_temprana": "2026-08-20T15:41:17+00:00",
-    "municipio": "Pedernales"
-  },
   "infraestructura_electrica::Yaracuy::2026-08-20": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -446,5 +432,19 @@
     "fecha_deteccion": "2026-08-23T16:14:10.119556+00:00",
     "fecha_evento_temprana": "2026-08-23T15:00:00+00:00",
     "municipio": "Palavecino"
+  },
+  "inundacion::Anzoategui::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T19:56:40.836920+00:00",
+    "fecha_evento_temprana": "2026-08-23T18:52:25+00:00",
+    "municipio": "Aragua"
+  },
+  "deslizamiento::Aragua::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T19:59:17.252728+00:00",
+    "fecha_evento_temprana": "2026-08-23T18:40:19+00:00",
+    "municipio": "San Sebastián"
   }
 }
