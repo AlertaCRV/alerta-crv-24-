@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-23T20:00:06.699761+00:00",
+  "actualizado": "2026-08-23T20:33:11.928544+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-23T19:19:49+00:00"
+    "hasta": "2026-08-23T20:06:22+00:00"
   },
-  "total_eventos": 232,
+  "total_eventos": 233,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 41,
+    "inundacion": 42,
     "infraestructura_electrica": 60,
     "deslizamiento": 19,
     "colapso_estructural": 3,
@@ -63,6 +63,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Aragua",
+      "total": 12,
+      "confirmados": 0
+    },
+    {
       "estado": "Carabobo",
       "total": 11,
       "confirmados": 1
@@ -76,11 +81,6 @@
       "estado": "Miranda",
       "total": 11,
       "confirmados": 2
-    },
-    {
-      "estado": "Aragua",
-      "total": 11,
-      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -270,7 +270,7 @@
     },
     "Aragua": {
       "orden_publico": 3,
-      "inundacion": 3,
+      "inundacion": 4,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
       "deslizamiento": 2,
@@ -309,7 +309,7 @@
   },
   "por_severidad": {
     "alto": 17,
-    "critico": 20,
+    "critico": 21,
     "sin_clasificar": 190,
     "medio": 1,
     "bajo": 4
@@ -321,7 +321,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 34
+      "2026-08": 35
     },
     "infraestructura_electrica": {
       "2026-07": 5,
