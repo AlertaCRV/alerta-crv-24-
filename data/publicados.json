@@ -439,5 +439,19 @@
     "fecha_deteccion": "2026-08-23T15:30:24.867492+00:00",
     "fecha_evento_temprana": "2026-08-23T14:11:32+00:00",
     "municipio": null
+  },
+  "crisis_migratoria::Distrito Capital::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T16:12:03.274331+00:00",
+    "fecha_evento_temprana": "2026-08-23T15:16:19+00:00",
+    "municipio": null
+  },
+  "sequia::Lara::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T16:14:10.119556+00:00",
+    "fecha_evento_temprana": "2026-08-23T15:00:00+00:00",
+    "municipio": "Palavecino"
   }
 }
