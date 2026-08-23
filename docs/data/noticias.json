@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "Miranda",
+    "parroquia": "Altagracia",
+    "severidad": "sin_clasificar",
+    "score": 0.8,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/tromba-lacustre-se-forma-sobre-el-lago-de-maracaibo/",
+        "fecha": "2026-08-23T20:30:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T20:30:48+00:00",
+    "fecha_evento_temprana": "2026-08-23T20:30:48+00:00",
+    "fecha_deteccion": "2026-08-23T22:39:54.934369+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-23",
+    "titulo": "Falla eléctrica en Parroquia Altagracia, Municipio Miranda, Zulia",
+    "texto": "📌 Falla eléctrica en Parroquia Altagracia, Municipio Miranda, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altagracia, Municipio Miranda, Zulia\n🕒 Hecho reportado: 23/08/2026, 4:30 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 6:39 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/tromba-lacustre-se-forma-sobre-el-lago-de-maracaibo/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
