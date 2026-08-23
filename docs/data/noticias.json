@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/leon-xiv-pide-una-respuesta-internacional-para-frenar-el-brote-de-ebola-en-el-congo/",
+        "fecha": "2026-08-23T19:40:19+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T19:40:19+00:00",
+    "fecha_evento_temprana": "2026-08-23T19:40:19+00:00",
+    "fecha_deteccion": "2026-08-23T20:55:19.698592+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Distrito Capital::2026-08-23",
+    "titulo": "Salud pública en Distrito Capital",
+    "texto": "📌 Salud pública en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/08/2026, 3:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 4:55 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/leon-xiv-pide-una-respuesta-internacional-para-frenar-el-brote-de-ebola-en-el-congo/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Aragua",
     "municipio": null,
