@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-08-23T04:56:32.820825+00:00",
+  "actualizado": "2026-08-23T12:52:42.923032+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-23T03:00:55+00:00"
+    "hasta": "2026-08-23T11:32:17+00:00"
   },
-  "total_eventos": 218,
+  "total_eventos": 220,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 34,
     "infraestructura_electrica": 60,
-    "deslizamiento": 16,
+    "deslizamiento": 17,
     "colapso_estructural": 3,
     "orden_publico": 38,
     "salud_publica": 6,
     "crisis_migratoria": 4,
-    "incendio": 21,
+    "incendio": 22,
     "vialidad": 9,
     "sismo": 5,
     "escasez_combustible": 1,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 34,
+      "total": 35,
       "confirmados": 4
     },
     {
@@ -73,14 +73,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Miranda",
+      "total": 10,
+      "confirmados": 2
+    },
+    {
       "estado": "Yaracuy",
       "total": 10,
       "confirmados": 1
-    },
-    {
-      "estado": "Miranda",
-      "total": 9,
-      "confirmados": 2
     },
     {
       "estado": "Aragua",
@@ -176,7 +176,7 @@
       "deslizamiento": 3,
       "inundacion": 6,
       "orden_publico": 6,
-      "incendio": 6,
+      "incendio": 7,
       "vialidad": 1,
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
@@ -246,7 +246,7 @@
       "incendio": 2,
       "infraestructura_electrica": 2,
       "explosion": 1,
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "inundacion": 3
     },
     "Nueva Esparta": {
@@ -307,7 +307,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 178,
+    "sin_clasificar": 180,
     "medio": 1,
     "bajo": 4
   },
@@ -326,7 +326,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 13
+      "2026-08": 14
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -345,7 +345,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 18
+      "2026-08": 19
     },
     "vialidad": {
       "2026-08": 9

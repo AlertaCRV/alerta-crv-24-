@@ -390,5 +390,19 @@
     "fecha_deteccion": "2026-08-23T04:56:32.426684+00:00",
     "fecha_evento_temprana": "2026-08-23T03:00:55+00:00",
     "municipio": null
+  },
+  "deslizamiento::Miranda::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T12:51:07.889824+00:00",
+    "fecha_evento_temprana": "2026-08-23T11:32:17+00:00",
+    "municipio": null
+  },
+  "incendio::Distrito Capital::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T12:51:21.982050+00:00",
+    "fecha_evento_temprana": "2026-08-23T11:20:37+00:00",
+    "municipio": null
   }
 }
