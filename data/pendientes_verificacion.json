@@ -1007,40 +1007,40 @@
     "intentos": 1,
     "ultima_vez": "2026-08-23T11:03:34.555722+00:00"
   },
-  "inundacion::Miranda::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:30:05.797175+00:00"
-  },
   "infraestructura_electrica::Miranda::2026-08-23": {
     "intentos": 1,
     "ultima_vez": "2026-08-23T12:51:28.839922+00:00"
   },
-  "inundacion::Aragua::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:28:23.528622+00:00"
-  },
-  "deslizamiento::Trujillo::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:30:55.096490+00:00"
-  },
   "inundacion::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T14:28:19.954589+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T14:53:18.482609+00:00"
   },
   "inundacion::La Guaira::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T14:29:13.006552+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T14:54:34.929594+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T14:30:30.440382+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T14:55:47.983231+00:00"
   },
   "infraestructura_electrica::Trujillo::2026-08-23": {
     "intentos": 1,
     "ultima_vez": "2026-08-23T14:31:19.755436+00:00"
   },
   "inundacion::Bolivar::2026-08-23": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T14:56:36.571685+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-08-23": {
     "intentos": 1,
-    "ultima_vez": "2026-08-23T14:31:44.428513+00:00"
+    "ultima_vez": "2026-08-23T14:54:10.592317+00:00"
+  },
+  "deslizamiento::Miranda::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T14:54:59.201971+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T14:55:23.755303+00:00"
   }
 }
