@@ -1011,36 +1011,36 @@
     "intentos": 1,
     "ultima_vez": "2026-08-23T12:51:28.839922+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:53:18.482609+00:00"
-  },
-  "inundacion::La Guaira::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:54:34.929594+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:55:47.983231+00:00"
-  },
   "infraestructura_electrica::Trujillo::2026-08-23": {
     "intentos": 1,
     "ultima_vez": "2026-08-23T14:31:19.755436+00:00"
   },
-  "inundacion::Bolivar::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T14:56:36.571685+00:00"
-  },
   "emergencia_metro::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T14:54:10.592317+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T15:29:09.053020+00:00"
   },
   "deslizamiento::Miranda::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T14:54:59.201971+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T15:29:36.548070+00:00"
   },
   "incendio::Distrito Capital::2026-08-23": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T15:30:00.709347+00:00"
+  },
+  "crisis_migratoria::Distrito Capital::2026-08-23": {
     "intentos": 1,
-    "ultima_vez": "2026-08-23T14:55:23.755303+00:00"
+    "ultima_vez": "2026-08-23T15:28:17.381154+00:00"
+  },
+  "inundacion::Miranda::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T15:28:20.735442+00:00"
+  },
+  "inundacion::Aragua::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T15:28:44.902443+00:00"
+  },
+  "sequia::Lara::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T15:30:49.033367+00:00"
   }
 }
