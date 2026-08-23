@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-23T13:59:25.485901+00:00",
+  "actualizado": "2026-08-23T14:31:44.944954+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-23T13:00:00+00:00"
+    "hasta": "2026-08-23T13:16:00+00:00"
   },
-  "total_eventos": 222,
+  "total_eventos": 223,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 36,
@@ -23,13 +23,13 @@
     "infraestructura_agua": 6,
     "accidente_transporte": 1,
     "derrame_petrolero": 1,
-    "emergencia_metro": 1,
+    "emergencia_metro": 2,
     "ataque_armado": 2
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 35,
+      "total": 36,
       "confirmados": 4
     },
     {
@@ -182,7 +182,7 @@
       "colapso_estructural": 1,
       "sismo": 1,
       "tormenta_electrica": 1,
-      "emergencia_metro": 1,
+      "emergencia_metro": 2,
       "ataque_armado": 1
     },
     "Trujillo": {
@@ -308,7 +308,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 182,
+    "sin_clasificar": 183,
     "medio": 1,
     "bajo": 4
   },
@@ -373,7 +373,7 @@
       "2026-08": 1
     },
     "emergencia_metro": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "ataque_armado": {
       "2026-08": 2
