@@ -3,19 +3,31 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-08-20T03:19:44.308644+00:00",
-  "actualizado_hasta": "2026-08-19T11:59:11.294560+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-23T05:38:52.923741+00:00",
+  "actualizado_hasta": "2026-08-22T03:29:22.632707+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron cuatro incidentes de falla de agua, frente a cero en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 4 en este período). Los hechos se concentraron en distintas regiones del país, afectando tanto la restitución como la interrupción del suministro.\n\nEn la parroquia Chaguaramal, municipio Monagas, la alcaldesa Mariángelys Tillero logró restituir el servicio de agua potable a más de 500 familias mediante la instalación de una bomba nueva de 15 HP en el sector 12 de Marzo de la comunidad Sectores Unidos (El Periodico de Monagas). Esta acción forma parte del compromiso de garantizar los servicios públicos esenciales para la población piareña.\n\nEn el sector Mereicito I, ubicado en Guasdualito, estado Apure, los habitantes llevan casi dos meses sin agua potable después de que un rayo dañara la bomba de 15 caballos de fuerza que abastecía la zona (Turimiquire). El responsable de la planta de tratamiento informó que se intentó instalar otras bombas, pero ninguna funcionó, por lo que se solicitó una nueva unidad a la alcaldía.\n\nLos vecinos del municipio Aragua, capital Aragua de Barcelona, estado Anzoátegui, se quedaron sin suministro de agua nuevamente a partir del viernes 14 de agosto, después de una semana de operatividad normal del sistema de acueducto (Turimiquire). Según los testimonios de los residentes, el agua dejó de llegar por las tuberías, generando una nueva interrupción del servicio en la zona.",
+  "narrativa": "En el período de agosto 2026 se registraron seis incidentes de falla de agua, frente a ninguno en julio 2026 (0 evento(s) registrados entonces vs. 6 en este período). Los problemas se concentraron en distintas regiones del país, afectando tanto a comunidades urbanas como rurales.\n\nEn el estado Lara, comunidades del oeste de Barquisimeto protestaron frente a la sede regional de Hidroven exigiendo la restitución del servicio, después de más de un mes sin agua en sus hogares (El Impulso). En el municipio Piar, la alcaldesa Mariángelys Tillero logró restituir el suministro de agua potable a más de 500 familias en los Sectores Unidos de Chaguaramal, mediante la instalación de una bomba nueva de 15 HP (El Periodico de Monagas). Paralelamente, en la parroquia Boquerón de Maturín, la urbanización Godofredo González sufrió inundaciones de aguas negras durante un mes, generando temores de una posible epidemia por la falta de respuesta adecuada de la empresa Aguas de Monagas (La Patilla).\n\nEn el estado Apure, los habitantes del sector Mereicito I en Guasdualito permanecen sin agua potable desde hace casi dos meses, tras el daño de una bomba de 15 caballos de fuerza provocado por un rayo; los intentos de reemplazo de la bomba no han logrado restablecer el servicio (Turimiquire). En Barinas, un vecino alertó sobre la re‑explosión de una tubería matriz de aguas blancas en la urbanización Los Próceres, solicitando la intervención urgente de los organismos competentes (La Noticia de Barinas).\n\nFinalmente, en el municipio Aragua, capital del estado Anzoátegui, los residentes de Barcelona se quedaron sin suministro de agua desde el 14 de agosto, tras una semana de operatividad normal del acueducto, y continúan sin solución (Turimiquire).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/21/video-comunidades-del-oeste-de-barquisimeto-protestan-ante-sede-regional-de-hidroven-tras-mas-de-un-mes-sin-agua-21ago/"
+    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/vecino-hizo-llamado-de-alertase-revento-tuberia-matriz-en-los-proceres/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/temen-una-epidemia-urbanizacion-godofredo-gonzalez-en-maturin-esta-inundada-por-cloacas/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
