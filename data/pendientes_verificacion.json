@@ -992,7 +992,39 @@
     "ultima_vez": "2026-08-23T00:38:58.515460+00:00"
   },
   "deslizamiento::Trujillo::2026-08-23": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T04:14:19.878435+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-23": {
     "intentos": 1,
-    "ultima_vez": "2026-08-23T03:28:32.667864+00:00"
+    "ultima_vez": "2026-08-23T04:12:08.770274+00:00"
+  },
+  "inundacion::Miranda::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:12:12.221764+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:12:15.504902+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:12:18.802218+00:00"
+  },
+  "incendio::Monagas::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:12:42.973002+00:00"
+  },
+  "deslizamiento::Guarico::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:13:07.133188+00:00"
+  },
+  "infraestructura_electrica::Trujillo::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:13:31.297431+00:00"
+  },
+  "infraestructura_electrica::Miranda::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T04:13:55.718704+00:00"
   }
 }
