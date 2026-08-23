@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-22T20:01:02.135693+00:00",
+  "actualizado": "2026-08-23T03:28:34.468593+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-22T18:53:51+00:00"
+    "hasta": "2026-08-23T02:35:51+00:00"
   },
-  "total_eventos": 213,
+  "total_eventos": 217,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 32,
-    "infraestructura_electrica": 58,
+    "inundacion": 34,
+    "infraestructura_electrica": 60,
     "deslizamiento": 15,
     "colapso_estructural": 3,
     "orden_publico": 38,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 33,
+      "total": 34,
       "confirmados": 4
     },
     {
@@ -58,24 +58,29 @@
       "confirmados": 1
     },
     {
+      "estado": "Trujillo",
+      "total": 11,
+      "confirmados": 0
+    },
+    {
+      "estado": "Bolivar",
+      "total": 11,
+      "confirmados": 1
+    },
+    {
       "estado": "Monagas",
       "total": 11,
       "confirmados": 0
     },
     {
-      "estado": "Trujillo",
-      "total": 10,
-      "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
-      "total": 10,
-      "confirmados": 1
-    },
-    {
       "estado": "Yaracuy",
       "total": 10,
       "confirmados": 1
+    },
+    {
+      "estado": "Miranda",
+      "total": 9,
+      "confirmados": 2
     },
     {
       "estado": "Aragua",
@@ -86,11 +91,6 @@
       "estado": "Apure",
       "total": 8,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 8,
-      "confirmados": 2
     },
     {
       "estado": "Sucre",
@@ -174,7 +174,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 3,
-      "inundacion": 5,
+      "inundacion": 6,
       "orden_publico": 6,
       "incendio": 6,
       "vialidad": 1,
@@ -189,7 +189,7 @@
       "inundacion": 1,
       "incendio": 4,
       "sequia": 1,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "deslizamiento": 1,
       "tormenta_electrica": 1,
       "orden_publico": 1
@@ -216,7 +216,7 @@
       "inundacion": 1
     },
     "Bolivar": {
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "orden_publico": 2,
       "escasez_combustible": 1,
       "incendio": 2
@@ -247,7 +247,7 @@
       "infraestructura_electrica": 2,
       "explosion": 1,
       "deslizamiento": 1,
-      "inundacion": 2
+      "inundacion": 3
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -307,9 +307,9 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 174,
+    "sin_clasificar": 177,
     "medio": 1,
-    "bajo": 3
+    "bajo": 4
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -318,11 +318,11 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 25
+      "2026-08": 27
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 53
+      "2026-08": 55
     },
     "deslizamiento": {
       "2026-07": 3,
