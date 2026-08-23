@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Trujillo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/proteccion-civil-se-despliega-en-trujillo-ante-afectaciones-por-lluvias/",
+        "fecha": "2026-08-23T03:00:55+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T03:00:55+00:00",
+    "fecha_evento_temprana": "2026-08-23T03:00:55+00:00",
+    "fecha_deteccion": "2026-08-23T04:56:32.426684+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Trujillo::2026-08-23",
+    "titulo": "Deslizamiento/Derrumbe en Trujillo",
+    "texto": "📌 Deslizamiento/Derrumbe en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 22/08/2026, 11:00 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 12:56 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/proteccion-civil-se-despliega-en-trujillo-ante-afectaciones-por-lluvias/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",

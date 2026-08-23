@@ -397,5 +397,12 @@
     "fecha_deteccion": "2026-08-23T03:27:44.008564+00:00",
     "fecha_evento_temprana": "2026-08-23T00:00:02+00:00",
     "municipio": "San Rafael De Carvajal"
+  },
+  "deslizamiento::Trujillo::2026-08-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T04:56:32.426684+00:00",
+    "fecha_evento_temprana": "2026-08-23T03:00:55+00:00",
+    "municipio": null
   }
 }
