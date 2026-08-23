@@ -1019,40 +1019,40 @@
     "intentos": 2,
     "ultima_vez": "2026-08-23T19:57:08.724729+00:00"
   },
-  "inundacion::Aragua::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T21:27:16.956518+00:00"
-  },
-  "inundacion::Miranda::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T21:27:20.336076+00:00"
-  },
-  "inundacion::Carabobo::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T21:29:21.967797+00:00"
-  },
-  "sequia::Lara::2026-08-23": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-23T21:30:59.032653+00:00"
-  },
   "inundacion::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T21:27:44.595788+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T21:50:37.054618+00:00"
   },
   "inundacion::La Guaira::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T21:28:33.448629+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T21:51:25.657205+00:00"
   },
   "salud_publica::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T21:28:57.716471+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T21:51:53.441020+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-23": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-23T21:30:10.510585+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T21:53:07.077034+00:00"
   },
   "inundacion::Bolivar::2026-08-23": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-23T21:54:20.251583+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-23": {
     "intentos": 1,
-    "ultima_vez": "2026-08-23T21:31:23.288554+00:00"
+    "ultima_vez": "2026-08-23T21:51:01.361476+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T21:51:29.039721+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T21:52:42.811710+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-23T21:53:31.378732+00:00"
   }
 }
