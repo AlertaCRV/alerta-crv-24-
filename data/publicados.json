@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
     "municipio": null
   },
-  "inundacion::Zulia::2026-08-20": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-20T22:03:46.978121+00:00",
-    "fecha_evento_temprana": "2026-08-20T18:17:10+00:00",
-    "municipio": "Jesús Enrique Lossada"
-  },
   "infraestructura_agua::Monagas::2026-08-20": {
     "severidad": "sin_clasificar",
     "confirmado": false,
