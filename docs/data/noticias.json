@@ -1,6 +1,42 @@
 [
   {
     "tipo": "inundacion",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 1.95,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/",
+        "fecha": "2026-08-23T18:48:28+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/",
+        "fecha": "2026-08-23T19:19:49+00:00"
+      },
+      {
+        "nombre": "Ciudad MCY (Aragua)",
+        "link": "https://ciudadmcy.info.ve/despliegan-rescate-en-la-gavilana-tras-crecida-de-la-quebrada-apa",
+        "fecha": "2026-08-23T20:06:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-23T20:06:22+00:00",
+    "fecha_evento_temprana": "2026-08-23T18:48:28+00:00",
+    "fecha_deteccion": "2026-08-23T20:29:09.727733+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Aragua::2026-08-23",
+    "titulo": "Inundación en Aragua",
+    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 23/08/2026, 4:06 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 4:29 p.m.\n📊 Fuentes independientes: 3 (score 1.95)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/despliegan-rescate-en-la-gavilana-tras-crecida-de-la-quebrada-apa"
+  },
+  {
+    "tipo": "inundacion",
     "ubicacion": "Anzoategui",
     "municipio": "Aragua",
     "parroquia": null,
@@ -225,37 +261,6 @@
     "clave_dedup": "inundacion::Miranda::2026-08-22",
     "titulo": "Inundación en Parroquia Los Teques, Miranda",
     "texto": "📌 Inundación en Parroquia Los Teques, Miranda\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Los Teques, Miranda\n🕒 Hecho reportado: 23/08/2026, 10:29 a.m.\n🔎 Detectado por el sistema: 23/08/2026, 10:53 a.m.\n📊 Fuentes independientes: 3 (score 1.9)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/lluvias-en-caracas-y-miranda-inundaciones-vehiculos-afectados-y-dos-desaparecidos/\n  • La Patilla: https://lapatilla.com/2026/08/23/video-crecida-de-la-quebrada-el-alambique-dejo-dos-desaparecidos-en-los-teques/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/reportan-derrumbes-y-viviendas-colapsadas-en-caracas-y-miranda/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Aragua",
-    "municipio": "José Félix Ribas",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.2,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/23/desaparecieron-dos-pasajeros-que-iban-en-una-camioneta-arrastrada-por-el-rio-en-aragua/",
-        "fecha": "2026-08-23T13:33:55+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/buscan-a-pareja-arrastrada-por-rio-aragua-en-la-victoria/",
-        "fecha": "2026-08-23T14:15:22+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T14:15:22+00:00",
-    "fecha_evento_temprana": "2026-08-23T13:33:55+00:00",
-    "fecha_deteccion": "2026-08-23T14:53:46.382382+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Aragua::2026-08-23",
-    "titulo": "Inundación en Municipio José Félix Ribas, Aragua",
-    "texto": "📌 Inundación en Municipio José Félix Ribas, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio José Félix Ribas, Aragua\n🕒 Hecho reportado: 23/08/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 23/08/2026, 10:53 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/23/desaparecieron-dos-pasajeros-que-iban-en-una-camioneta-arrastrada-por-el-rio-en-aragua/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/buscan-a-pareja-arrastrada-por-rio-aragua-en-la-victoria/"
   },
   {
     "tipo": "emergencia_metro",
