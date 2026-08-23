@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-23T12:52:42.923032+00:00",
+  "actualizado": "2026-08-23T13:59:25.485901+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-23T11:32:17+00:00"
+    "hasta": "2026-08-23T13:00:00+00:00"
   },
-  "total_eventos": 220,
+  "total_eventos": 222,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 34,
+    "inundacion": 36,
     "infraestructura_electrica": 60,
     "deslizamiento": 17,
     "colapso_estructural": 3,
@@ -58,12 +58,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Carabobo",
-      "total": 11,
+      "estado": "Bolivar",
+      "total": 12,
       "confirmados": 1
     },
     {
-      "estado": "Bolivar",
+      "estado": "Carabobo",
       "total": 11,
       "confirmados": 1
     },
@@ -108,6 +108,11 @@
       "confirmados": 0
     },
     {
+      "estado": "La Guaira",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Tachira",
       "total": 5,
       "confirmados": 0
@@ -124,11 +129,6 @@
     },
     {
       "estado": "Guarico",
-      "total": 5,
-      "confirmados": 0
-    },
-    {
-      "estado": "La Guaira",
       "total": 5,
       "confirmados": 0
     },
@@ -219,7 +219,8 @@
       "infraestructura_electrica": 6,
       "orden_publico": 2,
       "escasez_combustible": 1,
-      "incendio": 2
+      "incendio": 2,
+      "inundacion": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -296,7 +297,7 @@
     "La Guaira": {
       "infraestructura_electrica": 2,
       "deslizamiento": 1,
-      "inundacion": 1,
+      "inundacion": 2,
       "sismo": 1
     },
     "Delta Amacuro": {
@@ -307,7 +308,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 18,
-    "sin_clasificar": 180,
+    "sin_clasificar": 182,
     "medio": 1,
     "bajo": 4
   },
@@ -318,7 +319,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 27
+      "2026-08": 29
     },
     "infraestructura_electrica": {
       "2026-07": 5,
