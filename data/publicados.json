@@ -1,18 +1,4 @@
 {
-  "vialidad::Carabobo::2026-08-19": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-20T06:06:26.951798+00:00",
-    "fecha_evento_temprana": "2026-08-19T23:32:22+00:00",
-    "municipio": null
-  },
-  "vialidad::Merida::2026-08-20": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-20T06:06:44.334233+00:00",
-    "fecha_evento_temprana": "2026-08-20T03:00:24+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Distrito Capital::2026-08-20": {
     "severidad": "sin_clasificar",
     "confirmado": false,
