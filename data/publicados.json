@@ -369,5 +369,33 @@
     "fecha_deteccion": "2026-08-22T19:56:55.399076+00:00",
     "fecha_evento_temprana": "2026-08-22T18:53:51+00:00",
     "municipio": null
+  },
+  "inundacion::Distrito Capital::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T03:27:22.144888+00:00",
+    "fecha_evento_temprana": "2026-08-22T22:30:58+00:00",
+    "municipio": "Libertador"
+  },
+  "inundacion::Miranda::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T03:27:25.770300+00:00",
+    "fecha_evento_temprana": "2026-08-22T23:06:41+00:00",
+    "municipio": "Baruta"
+  },
+  "infraestructura_electrica::Bolivar::2026-08-22": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T03:27:29.566926+00:00",
+    "fecha_evento_temprana": "2026-08-22T23:32:03+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Trujillo::2026-08-23": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-23T03:27:44.008564+00:00",
+    "fecha_evento_temprana": "2026-08-23T00:00:02+00:00",
+    "municipio": "San Rafael De Carvajal"
   }
 }
