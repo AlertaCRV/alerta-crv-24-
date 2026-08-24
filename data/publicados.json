@@ -13,20 +13,6 @@
     "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
-  "deslizamiento::La Guaira::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T17:17:41.279550+00:00",
-    "fecha_evento_temprana": "2026-08-21T14:16:53+00:00",
-    "municipio": null
-  },
-  "emergencia_metro::Distrito Capital::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T17:17:48.709441+00:00",
-    "fecha_evento_temprana": "2026-08-21T13:58:00+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Sucre::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -439,5 +425,12 @@
     "fecha_deteccion": "2026-08-24T15:00:26.584205+00:00",
     "fecha_evento_temprana": "2026-08-24T12:34:11+00:00",
     "municipio": null
+  },
+  "tormenta_electrica::Zulia::2026-08-24": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T17:48:29.593423+00:00",
+    "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
+    "municipio": "Maracaibo"
   }
 }
