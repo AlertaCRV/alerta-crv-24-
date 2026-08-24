@@ -238,10 +238,10 @@
     "municipio": null
   },
   "inundacion::Miranda::2026-08-22": {
-    "severidad": "critico",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-23T14:53:21.863859+00:00",
-    "fecha_evento_temprana": "2026-08-23T13:39:02+00:00",
+    "fecha_deteccion": "2026-08-24T14:03:29.075947+00:00",
+    "fecha_evento_temprana": "2026-08-24T12:37:16+00:00",
     "municipio": null
   },
   "infraestructura_electrica::Bolivar::2026-08-22": {

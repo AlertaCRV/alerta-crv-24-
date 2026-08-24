@@ -1071,17 +1071,9 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T07:09:31.854149+00:00"
   },
-  "inundacion::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T13:09:08.451513+00:00"
-  },
   "inundacion::La Guaira::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T10:04:18.034612+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T13:09:04.580831+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-24": {
     "intentos": 2,
@@ -1090,10 +1082,6 @@
   "infraestructura_electrica::Miranda::2026-08-24": {
     "intentos": 2,
     "ultima_vez": "2026-08-24T13:09:01.292836+00:00"
-  },
-  "incendio::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T13:14:06.715792+00:00"
   },
   "deslizamiento::Monagas::2026-08-24": {
     "intentos": 1,
@@ -1104,16 +1092,12 @@
     "ultima_vez": "2026-08-24T13:09:15.362298+00:00"
   },
   "inundacion::Aragua::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T12:05:11.212447+00:00"
-  },
-  "inundacion::Carabobo::2026-08-24": {
     "intentos": 2,
-    "ultima_vez": "2026-08-24T13:09:39.613992+00:00"
+    "ultima_vez": "2026-08-24T14:03:57.112618+00:00"
   },
   "infraestructura_electrica::Carabobo::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T13:08:57.855360+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T14:03:25.757624+00:00"
   },
   "deslizamiento::Yaracuy::2026-08-24": {
     "intentos": 1,
@@ -1126,5 +1110,41 @@
   "tormenta_electrica::Zulia::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T13:14:55.236114+00:00"
+  },
+  "sismo::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:03:32.602176+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:04:24.983408+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:04:49.267334+00:00"
+  },
+  "orden_publico::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:05:13.439971+00:00"
+  },
+  "orden_publico::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:05:37.686681+00:00"
+  },
+  "orden_publico::Sucre::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:06:01.922282+00:00"
+  },
+  "orden_publico::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:06:26.210320+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:06:50.443786+00:00"
+  },
+  "incendio::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T14:07:14.934376+00:00"
   }
 }
