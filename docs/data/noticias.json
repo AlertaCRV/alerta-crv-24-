@@ -1,5 +1,46 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Coche",
+    "severidad": "critico",
+    "score": 2.45,
+    "confirmado": false,
+    "num_fuentes": 4,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/seis-desaparecidos-y-decenas-de-viviendas-afectadas-por-las-lluvias-en-el-centro-del-pais/",
+        "fecha": "2026-08-23T19:51:52+00:00"
+      },
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/",
+        "fecha": "2026-08-23T22:35:53+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/",
+        "fecha": "2026-08-23T19:19:49+00:00"
+      },
+      {
+        "nombre": "Notiespartano (Nueva Esparta)",
+        "link": "https://notiespartano.com/al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela",
+        "fecha": "2026-08-24T02:40:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T02:40:04+00:00",
+    "fecha_evento_temprana": "2026-08-23T19:19:49+00:00",
+    "fecha_deteccion": "2026-08-24T03:20:13.863748+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Distrito Capital::2026-08-22",
+    "titulo": "Inundación en Parroquia Coche, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia Coche, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Coche, Distrito Capital\n🕒 Hecho reportado: 23/08/2026, 10:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 11:20 p.m.\n📊 Fuentes independientes: 4 (score 2.45)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/seis-desaparecidos-y-decenas-de-viviendas-afectadas-por-las-lluvias-en-el-centro-del-pais/\n  • La Patilla: https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/\n  • Notiespartano (Nueva Esparta): https://notiespartano.com/al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": "Miranda",
@@ -138,67 +179,6 @@
     "clave_dedup": "deslizamiento::Aragua::2026-08-23",
     "titulo": "Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 23/08/2026, 2:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:59 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/llega-el-puente-de-guerra-a-san-sebastian-de-los-reyes"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "La Vega",
-    "severidad": "sin_clasificar",
-    "score": 4.85,
-    "confirmado": false,
-    "num_fuentes": 8,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/",
-        "fecha": "2026-08-23T18:48:28+00:00"
-      },
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/",
-        "fecha": "2026-08-23T18:37:53+00:00"
-      },
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/",
-        "fecha": "2026-08-23T12:26:38+00:00"
-      },
-      {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/activaros-sistema-de-proteccion-civil-por-lluvias-en-caracas/",
-        "fecha": "2026-08-23T14:00:31+00:00"
-      },
-      {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/",
-        "fecha": "2026-08-23T19:19:49+00:00"
-      },
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/fuertes-lluvias-dejan-danos-en-caracas/",
-        "fecha": "2026-08-23T13:01:04+00:00"
-      },
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/23/fuertes-lluvias-en-caracas-dejaron-carros-y-motos-tapiados-ademas-cientos-de-personas-varadas/",
-        "fecha": "2026-08-23T13:20:02+00:00"
-      },
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/lluvias-en-caracas-inundaciones-coche/",
-        "fecha": "2026-08-23T14:14:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T19:19:49+00:00",
-    "fecha_evento_temprana": "2026-08-23T12:26:38+00:00",
-    "fecha_deteccion": "2026-08-23T19:34:05.796125+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Distrito Capital::2026-08-22",
-    "titulo": "Inundación en Parroquia La Vega, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Inundación en Parroquia La Vega, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Vega, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 23/08/2026, 3:19 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:34 p.m.\n📊 Fuentes independientes: 8 (score 4.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/\n  • La Patilla: https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/\n  • El Carabobeno: https://www.el-carabobeno.com/activaros-sistema-de-proteccion-civil-por-lluvias-en-caracas/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/fuertes-lluvias-dejan-danos-en-caracas/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/23/fuertes-lluvias-en-caracas-dejaron-carros-y-motos-tapiados-ademas-cientos-de-personas-varadas/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-en-caracas-inundaciones-coche/"
   },
   {
     "tipo": "crisis_migratoria",
