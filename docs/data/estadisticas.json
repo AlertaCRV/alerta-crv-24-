@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-24T04:20:49.326347+00:00",
+  "actualizado": "2026-08-24T05:13:35.575402+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T02:40:04+00:00"
+    "hasta": "2026-08-24T02:40:41+00:00"
   },
-  "total_eventos": 239,
+  "total_eventos": 240,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 45,
@@ -14,7 +14,7 @@
     "orden_publico": 38,
     "salud_publica": 7,
     "crisis_migratoria": 5,
-    "incendio": 22,
+    "incendio": 23,
     "vialidad": 9,
     "sismo": 5,
     "escasez_combustible": 1,
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Carabobo",
+      "total": 12,
+      "confirmados": 1
+    },
+    {
       "estado": "Trujillo",
       "total": 12,
       "confirmados": 0
@@ -66,11 +71,6 @@
       "estado": "Aragua",
       "total": 12,
       "confirmados": 0
-    },
-    {
-      "estado": "Carabobo",
-      "total": 11,
-      "confirmados": 1
     },
     {
       "estado": "Monagas",
@@ -149,7 +149,8 @@
       "infraestructura_electrica": 4,
       "orden_publico": 3,
       "inundacion": 2,
-      "vialidad": 1
+      "vialidad": 1,
+      "incendio": 1
     },
     "Lara": {
       "inundacion": 2,
@@ -314,7 +315,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 194,
+    "sin_clasificar": 195,
     "medio": 1,
     "bajo": 4
   },
@@ -353,7 +354,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 19
+      "2026-08": 20
     },
     "vialidad": {
       "2026-08": 9

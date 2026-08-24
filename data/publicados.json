@@ -432,5 +432,12 @@
     "fecha_deteccion": "2026-08-24T04:19:59.443493+00:00",
     "fecha_evento_temprana": "2026-08-24T01:13:46+00:00",
     "municipio": null
+  },
+  "incendio::Carabobo::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T05:12:45.810377+00:00",
+    "fecha_evento_temprana": "2026-08-24T02:40:41+00:00",
+    "municipio": "Libertador"
   }
 }
