@@ -1,5 +1,33 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/cronicas/se-reseteo-mi-vida-alejandro-perdio-su-casa-y-su-negocio-en-el-terremoto-de-la-guaira-pero-encontro-una-razon-para-empezar-de-nuevo/",
+        "fecha": "2026-08-24T20:04:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T20:04:17+00:00",
+    "fecha_evento_temprana": "2026-08-24T20:04:17+00:00",
+    "fecha_deteccion": "2026-08-24T21:36:21.367727+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-08-24",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 24/08/2026, 4:04 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 5:36 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/cronicas/se-reseteo-mi-vida-alejandro-perdio-su-casa-y-su-negocio-en-el-terremoto-de-la-guaira-pero-encontro-una-razon-para-empezar-de-nuevo/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Lara",
     "municipio": null,
@@ -4464,31 +4492,5 @@
     "clave_dedup": "orden_publico::Anzoategui::2026-08-10",
     "titulo": "Orden público en Anzoategui",
     "texto": "📌 Orden público en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 10/08/2026, 4:41 p.m.\n🔎 Detectado por el sistema: 11/08/2026, 12:54 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/sectores-de-cantaura-realizaron-protesta-pacifica-por-la-falta-de-agua/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/",
-        "fecha": "2026-08-10T19:25:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-10T19:25:09+00:00",
-    "fecha_evento_temprana": "2026-08-10T19:25:09+00:00",
-    "fecha_deteccion": "2026-08-10T20:08:17.948870+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Aragua::2026-08-10",
-    "titulo": "Inundación en Aragua",
-    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 10/08/2026, 3:25 p.m.\n🔎 Detectado por el sistema: 10/08/2026, 4:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
   }
 ]

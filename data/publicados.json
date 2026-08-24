@@ -1,25 +1,4 @@
 {
-  "infraestructura_electrica::La Guaira::2026-08-20": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:01:57.186848+00:00",
-    "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
-    "municipio": null
-  },
-  "inundacion::Anzoategui::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:00:20.057444+00:00",
-    "fecha_evento_temprana": "2026-08-21T19:10:33+00:00",
-    "municipio": "Simón Rodríguez"
-  },
-  "inundacion::La Guaira::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:01:08.551236+00:00",
-    "fecha_evento_temprana": "2026-08-21T17:45:00+00:00",
-    "municipio": null
-  },
   "ataque_armado::Distrito Capital::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -445,6 +424,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-24T19:13:03.340146+00:00",
     "fecha_evento_temprana": "2026-08-24T17:34:18+00:00",
+    "municipio": null
+  },
+  "sismo::La Guaira::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T21:36:21.367727+00:00",
+    "fecha_evento_temprana": "2026-08-24T20:04:17+00:00",
     "municipio": null
   }
 }
