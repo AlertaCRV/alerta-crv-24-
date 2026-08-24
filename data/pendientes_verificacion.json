@@ -1059,28 +1059,52 @@
     "intentos": 2,
     "ultima_vez": "2026-08-24T02:15:26.712974+00:00"
   },
-  "deslizamiento::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T03:19:42.048613+00:00"
-  },
-  "inundacion::Tachira::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T03:19:45.459775+00:00"
-  },
-  "inundacion::Merida::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T03:20:10.048436+00:00"
-  },
-  "deslizamiento::Yaracuy::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T03:23:04.555569+00:00"
-  },
   "inundacion::Anzoategui::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T03:22:40.239743+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T04:19:34.783227+00:00"
   },
   "incendio::Carabobo::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T04:20:23.720539+00:00"
+  },
+  "inundacion::Aragua::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T03:23:28.799991+00:00"
+    "ultima_vez": "2026-08-24T04:16:07.311271+00:00"
+  },
+  "inundacion::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:16:10.686625+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:16:14.005897+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:17:09.423108+00:00"
+  },
+  "inundacion::La Guaira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:17:33.635041+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:17:57.875666+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:18:22.054993+00:00"
+  },
+  "inundacion::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:18:46.298869+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:19:10.571917+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T04:20:47.956170+00:00"
   }
 }
