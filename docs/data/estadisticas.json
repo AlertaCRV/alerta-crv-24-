@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-24T14:07:39.520591+00:00",
+  "actualizado": "2026-08-24T15:03:51.518213+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-24T13:49:45+00:00"
   },
-  "total_eventos": 252,
+  "total_eventos": 253,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 48,
-    "infraestructura_electrica": 61,
+    "infraestructura_electrica": 62,
     "deslizamiento": 20,
     "colapso_estructural": 3,
     "orden_publico": 44,
@@ -49,7 +49,7 @@
     },
     {
       "estado": "Carabobo",
-      "total": 14,
+      "total": 15,
       "confirmados": 1
     },
     {
@@ -146,7 +146,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 3,
       "inundacion": 3,
       "vialidad": 1,
@@ -318,7 +318,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 207,
+    "sin_clasificar": 208,
     "medio": 1,
     "bajo": 4
   },
@@ -333,7 +333,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 56
+      "2026-08": 57
     },
     "deslizamiento": {
       "2026-07": 3,

@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
-  "incendio::Tachira::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T14:11:15.098877+00:00",
-    "fecha_evento_temprana": "2026-08-21T10:19:03+00:00",
-    "municipio": "Ayacucho"
-  },
   "tormenta_electrica::Distrito Capital::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -452,6 +445,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-24T13:12:05.390049+00:00",
     "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T15:00:26.584205+00:00",
+    "fecha_evento_temprana": "2026-08-24T12:34:11+00:00",
     "municipio": null
   }
 }
