@@ -1111,28 +1111,40 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T16:22:38.332716+00:00"
   },
-  "inundacion::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:46:20.470817+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:46:23.800512+00:00"
-  },
-  "tormenta_electrica::Aragua::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:46:47.951296+00:00"
-  },
-  "inundacion::Carabobo::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:47:36.241850+00:00"
-  },
-  "orden_publico::Carabobo::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:50:01.077685+00:00"
-  },
   "inundacion::Aragua::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:15:28.675278+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T19:45:56.317622+00:00"
+    "ultima_vez": "2026-08-24T20:15:25.198138+00:00"
+  },
+  "sismo::La Guaira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:16:41.680331+00:00"
+  },
+  "tormenta_electrica::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:17:30.242491+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:18:45.322068+00:00"
+  },
+  "orden_publico::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:19:09.802680+00:00"
+  },
+  "orden_publico::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:19:34.306194+00:00"
+  },
+  "orden_publico::Sucre::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:19:58.825413+00:00"
+  },
+  "orden_publico::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:20:23.303313+00:00"
   }
 }

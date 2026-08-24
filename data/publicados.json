@@ -13,20 +13,6 @@
     "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
-  "inundacion::Yaracuy::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T19:55:53.171871+00:00",
-    "fecha_evento_temprana": "2026-08-21T15:26:07+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Apure::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T19:59:16.808407+00:00",
-    "fecha_evento_temprana": "2026-08-21T16:15:00+00:00",
-    "municipio": "San Fernando"
-  },
   "salud_publica::Lara::2026-08-21": {
     "severidad": "critico",
     "confirmado": false,
