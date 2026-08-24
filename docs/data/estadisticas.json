@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-24T09:07:03.006041+00:00",
+  "actualizado": "2026-08-24T10:06:23.173440+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T02:40:41+00:00"
+    "hasta": "2026-08-24T05:00:00+00:00"
   },
-  "total_eventos": 242,
+  "total_eventos": 243,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 46,
@@ -24,7 +24,7 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 1,
     "emergencia_metro": 2,
-    "ataque_armado": 2
+    "ataque_armado": 3
   },
   "ranking_estados": [
     {
@@ -99,7 +99,7 @@
     },
     {
       "estado": "Tachira",
-      "total": 6,
+      "total": 7,
       "confirmados": 0
     },
     {
@@ -239,7 +239,8 @@
       "infraestructura_electrica": 2,
       "incendio": 1,
       "orden_publico": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "ataque_armado": 1
     },
     "Monagas": {
       "infraestructura_electrica": 6,
@@ -315,7 +316,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 197,
+    "sin_clasificar": 198,
     "medio": 1,
     "bajo": 4
   },
@@ -384,7 +385,7 @@
       "2026-08": 2
     },
     "ataque_armado": {
-      "2026-08": 2
+      "2026-08": 3
     }
   }
 }
