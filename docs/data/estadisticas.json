@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-08-24T11:38:58.287529+00:00",
+  "actualizado": "2026-08-24T13:14:59.381163+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T09:20:04+00:00"
+    "hasta": "2026-08-24T11:00:00+00:00"
   },
-  "total_eventos": 244,
+  "total_eventos": 251,
   "por_tipo": {
     "tormenta_electrica": 4,
     "inundacion": 47,
     "infraestructura_electrica": 61,
     "deslizamiento": 20,
     "colapso_estructural": 3,
-    "orden_publico": 38,
+    "orden_publico": 44,
     "salud_publica": 7,
     "crisis_migratoria": 5,
     "incendio": 24,
     "vialidad": 9,
-    "sismo": 5,
+    "sismo": 6,
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
@@ -29,7 +29,17 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 43,
+      "total": 44,
+      "confirmados": 4
+    },
+    {
+      "estado": "Lara",
+      "total": 16,
+      "confirmados": 1
+    },
+    {
+      "estado": "Zulia",
+      "total": 16,
       "confirmados": 4
     },
     {
@@ -38,24 +48,19 @@
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 15,
-      "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 15,
-      "confirmados": 4
-    },
-    {
       "estado": "Carabobo",
-      "total": 13,
+      "total": 14,
       "confirmados": 1
     },
     {
       "estado": "Anzoategui",
       "total": 13,
       "confirmados": 0
+    },
+    {
+      "estado": "Bolivar",
+      "total": 13,
+      "confirmados": 1
     },
     {
       "estado": "Aragua",
@@ -68,9 +73,9 @@
       "confirmados": 0
     },
     {
-      "estado": "Bolivar",
+      "estado": "Miranda",
       "total": 12,
-      "confirmados": 1
+      "confirmados": 2
     },
     {
       "estado": "Monagas",
@@ -78,23 +83,18 @@
       "confirmados": 0
     },
     {
-      "estado": "Miranda",
-      "total": 11,
-      "confirmados": 2
-    },
-    {
       "estado": "Yaracuy",
       "total": 11,
       "confirmados": 1
     },
     {
-      "estado": "Apure",
+      "estado": "Sucre",
       "total": 8,
       "confirmados": 0
     },
     {
-      "estado": "Sucre",
-      "total": 7,
+      "estado": "Apure",
+      "total": 8,
       "confirmados": 0
     },
     {
@@ -150,12 +150,13 @@
       "orden_publico": 3,
       "inundacion": 3,
       "vialidad": 1,
-      "incendio": 1
+      "incendio": 1,
+      "sismo": 1
     },
     "Lara": {
       "inundacion": 2,
       "salud_publica": 3,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_electrica": 2,
       "sismo": 1,
       "deslizamiento": 1,
@@ -169,7 +170,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "sismo": 1,
       "salud_publica": 1,
       "ataque_armado": 1
@@ -177,7 +178,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 9,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "incendio": 8,
       "vialidad": 1,
       "infraestructura_electrica": 7,
@@ -208,7 +209,7 @@
     },
     "Sucre": {
       "inundacion": 1,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_electrica": 3
     },
     "Anzoategui": {
@@ -221,7 +222,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 6,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "escasez_combustible": 1,
       "incendio": 2,
       "inundacion": 1
@@ -254,7 +255,8 @@
       "infraestructura_electrica": 2,
       "explosion": 1,
       "deslizamiento": 2,
-      "inundacion": 4
+      "inundacion": 4,
+      "orden_publico": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -316,7 +318,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 199,
+    "sin_clasificar": 206,
     "medio": 1,
     "bajo": 4
   },
@@ -343,7 +345,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 36
+      "2026-08": 42
     },
     "salud_publica": {
       "2026-07": 1,
@@ -361,7 +363,7 @@
       "2026-08": 9
     },
     "sismo": {
-      "2026-08": 5
+      "2026-08": 6
     },
     "escasez_combustible": {
       "2026-08": 1

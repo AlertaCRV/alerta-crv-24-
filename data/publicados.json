@@ -404,5 +404,54 @@
     "fecha_deteccion": "2026-08-24T11:35:14.071411+00:00",
     "fecha_evento_temprana": "2026-08-24T09:20:04+00:00",
     "municipio": "Puerto Cabello"
+  },
+  "sismo::Carabobo::2026-08-24::mag7.2": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:09:11.882297+00:00",
+    "fecha_evento_temprana": "2026-08-24T10:05:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:10:03.867012+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:10:28.135183+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:10:52.400320+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:11:16.690376+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Sucre::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:11:40.952042+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T13:12:05.390049+00:00",
+    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
+    "municipio": null
   }
 }
