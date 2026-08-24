@@ -1071,18 +1071,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T07:09:31.854149+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T10:54:38.157751+00:00"
-  },
-  "deslizamiento::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T10:52:26.976489+00:00"
-  },
-  "inundacion::Aragua::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T10:52:37.349155+00:00"
-  },
   "inundacion::Miranda::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T10:03:28.978746+00:00"
@@ -1091,32 +1079,60 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T10:04:18.034612+00:00"
   },
-  "inundacion::Carabobo::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T10:53:49.821561+00:00"
-  },
-  "incendio::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T10:55:50.745538+00:00"
-  },
   "deslizamiento::Miranda::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T10:52:30.317590+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T11:33:09.478226+00:00"
   },
   "inundacion::Tachira::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T10:52:33.880159+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T11:33:12.857915+00:00"
   },
   "inundacion::Merida::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T10:53:01.498403+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T11:34:01.377110+00:00"
   },
   "ataque_armado::Tachira::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T10:53:25.653403+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T11:34:49.797761+00:00"
   },
   "deslizamiento::Yaracuy::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T11:38:09.298093+00:00"
+  },
+  "sismo::Carabobo::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T10:55:02.340162+00:00"
+    "ultima_vez": "2026-08-24T11:34:25.585765+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:35:38.257064+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:36:02.792251+00:00"
+  },
+  "orden_publico::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:36:28.094551+00:00"
+  },
+  "orden_publico::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:36:52.413653+00:00"
+  },
+  "orden_publico::Sucre::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:37:16.852663+00:00"
+  },
+  "orden_publico::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:37:41.219497+00:00"
+  },
+  "inundacion::Anzoategui::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:37:44.988553+00:00"
+  },
+  "incendio::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T11:38:33.629952+00:00"
   }
 }

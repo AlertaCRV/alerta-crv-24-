@@ -404,5 +404,12 @@
     "fecha_deteccion": "2026-08-24T10:04:42.253665+00:00",
     "fecha_evento_temprana": "2026-08-24T05:00:00+00:00",
     "municipio": "Junín"
+  },
+  "inundacion::Carabobo::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T11:35:14.071411+00:00",
+    "fecha_evento_temprana": "2026-08-24T09:20:04+00:00",
+    "municipio": "Puerto Cabello"
   }
 }
