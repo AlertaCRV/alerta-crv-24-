@@ -1,6 +1,63 @@
 [
   {
     "tipo": "tormenta_electrica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/",
+        "fecha": "2026-08-24T16:42:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T16:42:41+00:00",
+    "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
+    "fecha_deteccion": "2026-08-24T18:20:56.957081+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tormenta_electrica::Aragua::2026-08-24",
+    "titulo": "Tormenta eléctrica en Aragua",
+    "texto": "📌 Tormenta eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 24/08/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 2:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.2,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/video-familiares-de-presos-politicos-quebraron-piquete-policial-frente-al-despacho-de-diosdado-cabello/",
+        "fecha": "2026-08-24T16:35:05+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/politica/familiares-de-presos-politicos-superan-cerco-de-la-pnb/",
+        "fecha": "2026-08-24T18:15:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T18:15:59+00:00",
+    "fecha_evento_temprana": "2026-08-24T16:35:05+00:00",
+    "fecha_deteccion": "2026-08-24T18:24:12.416248+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Carabobo::2026-08-24",
+    "titulo": "Orden público en Carabobo",
+    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 24/08/2026, 2:15 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 2:24 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/video-familiares-de-presos-politicos-quebraron-piquete-policial-frente-al-despacho-de-diosdado-cabello/\n  • Primicia (Bolivar): https://primicia.com.ve/politica/familiares-de-presos-politicos-superan-cerco-de-la-pnb/"
+  },
+  {
+    "tipo": "tormenta_electrica",
     "ubicacion": "Zulia",
     "municipio": "Maracaibo",
     "parroquia": null,
