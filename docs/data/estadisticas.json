@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-24T21:39:42.380435+00:00",
+  "actualizado": "2026-08-24T23:06:12.998937+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T20:04:17+00:00"
+    "hasta": "2026-08-24T21:45:34+00:00"
   },
-  "total_eventos": 262,
+  "total_eventos": 263,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 50,
+    "inundacion": 51,
     "infraestructura_electrica": 62,
     "deslizamiento": 22,
     "colapso_estructural": 3,
@@ -33,13 +33,13 @@
       "confirmados": 4
     },
     {
-      "estado": "Barinas",
+      "estado": "Lara",
       "total": 18,
       "confirmados": 1
     },
     {
-      "estado": "Lara",
-      "total": 17,
+      "estado": "Barinas",
+      "total": 18,
       "confirmados": 1
     },
     {
@@ -154,7 +154,7 @@
       "sismo": 1
     },
     "Lara": {
-      "inundacion": 2,
+      "inundacion": 3,
       "salud_publica": 3,
       "orden_publico": 4,
       "infraestructura_electrica": 2,
@@ -320,7 +320,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 215,
+    "sin_clasificar": 216,
     "medio": 3,
     "bajo": 4
   },
@@ -331,7 +331,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 43
+      "2026-08": 44
     },
     "infraestructura_electrica": {
       "2026-07": 5,
