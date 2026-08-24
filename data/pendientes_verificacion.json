@@ -1056,47 +1056,63 @@
     "ultima_vez": "2026-08-23T23:56:07.596012+00:00"
   },
   "inundacion::Aragua::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:31:07.687081+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:12:09.595426+00:00"
   },
   "inundacion::Miranda::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:31:11.211886+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:12:12.853498+00:00"
   },
   "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:31:35.494259+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:12:38.581714+00:00"
   },
   "inundacion::La Guaira::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:31:38.970503+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:12:49.993671+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:32:03.244949+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:13:01.387287+00:00"
   },
   "salud_publica::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:32:27.519311+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:13:25.789814+00:00"
   },
   "inundacion::Carabobo::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:32:51.784760+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:13:49.978431+00:00"
   },
   "incendio::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:33:16.067668+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:14:14.206382+00:00"
   },
   "deslizamiento::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:33:40.311789+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:12:16.072177+00:00"
   },
   "deslizamiento::Aragua::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T00:34:04.576470+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:15:02.543732+00:00"
   },
   "sequia::Lara::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T02:15:26.712974+00:00"
+  },
+  "deslizamiento::Miranda::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T00:34:28.877445+00:00"
+    "ultima_vez": "2026-08-24T02:12:20.122891+00:00"
+  },
+  "inundacion::Tachira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T02:12:23.687355+00:00"
+  },
+  "inundacion::Merida::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T02:12:27.144312+00:00"
+  },
+  "deslizamiento::Yaracuy::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T02:14:38.380588+00:00"
   }
 }
