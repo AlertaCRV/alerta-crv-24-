@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-24T17:53:48.865104+00:00",
+  "actualizado": "2026-08-24T18:26:40.051881+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T16:42:41+00:00"
+    "hasta": "2026-08-24T18:15:59+00:00"
   },
-  "total_eventos": 254,
+  "total_eventos": 256,
   "por_tipo": {
-    "tormenta_electrica": 5,
+    "tormenta_electrica": 6,
     "inundacion": 48,
     "infraestructura_electrica": 62,
     "deslizamiento": 20,
     "colapso_estructural": 3,
-    "orden_publico": 44,
+    "orden_publico": 45,
     "salud_publica": 7,
     "crisis_migratoria": 5,
     "incendio": 24,
@@ -38,6 +38,11 @@
       "confirmados": 4
     },
     {
+      "estado": "Carabobo",
+      "total": 16,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 16,
       "confirmados": 1
@@ -48,9 +53,9 @@
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
-      "total": 15,
-      "confirmados": 1
+      "estado": "Aragua",
+      "total": 14,
+      "confirmados": 0
     },
     {
       "estado": "Anzoategui",
@@ -66,11 +71,6 @@
       "estado": "Miranda",
       "total": 13,
       "confirmados": 2
-    },
-    {
-      "estado": "Aragua",
-      "total": 13,
-      "confirmados": 0
     },
     {
       "estado": "Trujillo",
@@ -147,7 +147,7 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 5,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 3,
       "vialidad": 1,
       "incendio": 1,
@@ -281,7 +281,8 @@
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
       "deslizamiento": 2,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "tormenta_electrica": 1
     },
     "Merida": {
       "infraestructura_electrica": 3,
@@ -318,14 +319,14 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 208,
-    "medio": 2,
+    "sin_clasificar": 209,
+    "medio": 3,
     "bajo": 4
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2,
-      "2026-08": 3
+      "2026-08": 4
     },
     "inundacion": {
       "2026-07": 7,
@@ -345,7 +346,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 42
+      "2026-08": 43
     },
     "salud_publica": {
       "2026-07": 1,

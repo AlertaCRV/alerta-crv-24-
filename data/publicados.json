@@ -432,5 +432,19 @@
     "fecha_deteccion": "2026-08-24T17:48:29.593423+00:00",
     "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
     "municipio": "Maracaibo"
+  },
+  "tormenta_electrica::Aragua::2026-08-24": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T18:20:56.957081+00:00",
+    "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T18:24:12.416248+00:00",
+    "fecha_evento_temprana": "2026-08-24T16:35:05+00:00",
+    "municipio": null
   }
 }
