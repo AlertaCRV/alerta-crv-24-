@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-24T13:14:59.381163+00:00",
+  "actualizado": "2026-08-24T14:07:39.520591+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T11:00:00+00:00"
+    "hasta": "2026-08-24T13:49:45+00:00"
   },
-  "total_eventos": 251,
+  "total_eventos": 252,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 47,
+    "inundacion": 48,
     "infraestructura_electrica": 61,
     "deslizamiento": 20,
     "colapso_estructural": 3,
@@ -63,6 +63,11 @@
       "confirmados": 1
     },
     {
+      "estado": "Miranda",
+      "total": 13,
+      "confirmados": 2
+    },
+    {
       "estado": "Aragua",
       "total": 13,
       "confirmados": 0
@@ -71,11 +76,6 @@
       "estado": "Trujillo",
       "total": 12,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 12,
-      "confirmados": 2
     },
     {
       "estado": "Monagas",
@@ -255,7 +255,7 @@
       "infraestructura_electrica": 2,
       "explosion": 1,
       "deslizamiento": 2,
-      "inundacion": 4,
+      "inundacion": 5,
       "orden_publico": 1
     },
     "Nueva Esparta": {
@@ -318,7 +318,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 206,
+    "sin_clasificar": 207,
     "medio": 1,
     "bajo": 4
   },
@@ -329,7 +329,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 40
+      "2026-08": 41
     },
     "infraestructura_electrica": {
       "2026-07": 5,
