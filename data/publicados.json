@@ -1,25 +1,4 @@
 {
-  "ataque_armado::Distrito Capital::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:55:43.354647+00:00",
-    "fecha_evento_temprana": "2026-08-21T15:05:44+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Aragua::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:57:49.544915+00:00",
-    "fecha_evento_temprana": "2026-08-21T20:19:28+00:00",
-    "municipio": "San Sebastián"
-  },
-  "deslizamiento::Guarico::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T21:58:14.145222+00:00",
-    "fecha_evento_temprana": "2026-08-21T20:19:28+00:00",
-    "municipio": null
-  },
   "incendio::Portuguesa::2026-08-21": {
     "severidad": "critico",
     "confirmado": false,

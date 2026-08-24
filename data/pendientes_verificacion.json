@@ -1095,10 +1095,6 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T13:14:30.987687+00:00"
   },
-  "inundacion::Anzoategui::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T21:39:41.573068+00:00"
-  },
   "incendio::Carabobo::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T14:07:14.934376+00:00"
@@ -1115,24 +1111,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T20:17:30.242491+00:00"
   },
-  "inundacion::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T21:36:49.008061+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T21:36:52.311078+00:00"
-  },
-  "orden_publico::Carabobo::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T21:37:16.488201+00:00"
-  },
   "inundacion::Carabobo::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T20:56:50.442376+00:00"
   },
   "inundacion::Aragua::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T22:03:27.527758+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T21:36:24.810251+00:00"
+    "ultima_vez": "2026-08-24T22:02:59.597103+00:00"
+  },
+  "sismo::La Guaira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:03:03.144085+00:00"
+  },
+  "inundacion::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:04:44.574603+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:05:08.970210+00:00"
+  },
+  "orden_publico::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:05:33.389778+00:00"
+  },
+  "orden_publico::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:05:57.802515+00:00"
+  },
+  "orden_publico::Sucre::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:06:22.214811+00:00"
+  },
+  "orden_publico::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T22:06:46.623104+00:00"
   }
 }
