@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-24T18:26:40.051881+00:00",
+  "actualizado": "2026-08-24T19:15:33.963747+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-24T18:15:59+00:00"
   },
-  "total_eventos": 256,
+  "total_eventos": 261,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 48,
+    "inundacion": 50,
     "infraestructura_electrica": 62,
-    "deslizamiento": 20,
+    "deslizamiento": 22,
     "colapso_estructural": 3,
     "orden_publico": 45,
     "salud_publica": 7,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
-    "infraestructura_agua": 6,
+    "infraestructura_agua": 7,
     "accidente_transporte": 1,
     "derrame_petrolero": 1,
     "emergencia_metro": 2,
@@ -33,22 +33,22 @@
       "confirmados": 4
     },
     {
+      "estado": "Barinas",
+      "total": 18,
+      "confirmados": 1
+    },
+    {
+      "estado": "Lara",
+      "total": 17,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 17,
       "confirmados": 4
     },
     {
       "estado": "Carabobo",
-      "total": 16,
-      "confirmados": 1
-    },
-    {
-      "estado": "Lara",
-      "total": 16,
-      "confirmados": 1
-    },
-    {
-      "estado": "Barinas",
       "total": 16,
       "confirmados": 1
     },
@@ -89,7 +89,7 @@
     },
     {
       "estado": "Sucre",
-      "total": 8,
+      "total": 9,
       "confirmados": 0
     },
     {
@@ -103,14 +103,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Merida",
+      "total": 7,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
-    },
-    {
-      "estado": "Merida",
-      "total": 6,
-      "confirmados": 0
     },
     {
       "estado": "Portuguesa",
@@ -161,7 +161,7 @@
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "sequia": 1
     },
     "Zulia": {
@@ -200,15 +200,15 @@
       "orden_publico": 1
     },
     "Barinas": {
-      "deslizamiento": 2,
-      "inundacion": 3,
+      "deslizamiento": 3,
+      "inundacion": 4,
       "infraestructura_electrica": 3,
       "vialidad": 4,
       "orden_publico": 3,
       "infraestructura_agua": 1
     },
     "Sucre": {
-      "inundacion": 1,
+      "inundacion": 2,
       "orden_publico": 4,
       "infraestructura_electrica": 3
     },
@@ -288,7 +288,8 @@
       "infraestructura_electrica": 3,
       "vialidad": 1,
       "orden_publico": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "deslizamiento": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -319,7 +320,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 209,
+    "sin_clasificar": 214,
     "medio": 3,
     "bajo": 4
   },
@@ -330,7 +331,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 41
+      "2026-08": 43
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -338,7 +339,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 17
+      "2026-08": 19
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -376,7 +377,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 6
+      "2026-08": 7
     },
     "accidente_transporte": {
       "2026-08": 1

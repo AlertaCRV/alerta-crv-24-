@@ -1,5 +1,135 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/cisterneros-exigen-reactivacion-inmediata-del-llenadero-de-agua-jacinto-lara-en-barquisimeto/",
+        "fecha": "2026-08-24T17:42:54+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T17:42:54+00:00",
+    "fecha_evento_temprana": "2026-08-24T17:42:54+00:00",
+    "fecha_deteccion": "2026-08-24T19:11:26.586983+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Lara::2026-08-24",
+    "titulo": "Falla de agua en Lara",
+    "texto": "📌 Falla de agua en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 24/08/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/cisterneros-exigen-reactivacion-inmediata-del-llenadero-de-agua-jacinto-lara-en-barquisimeto/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Barinas",
+    "municipio": "Pedraza",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/",
+        "fecha": "2026-08-24T17:39:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T17:39:33+00:00",
+    "fecha_evento_temprana": "2026-08-24T17:39:33+00:00",
+    "fecha_deteccion": "2026-08-24T19:11:50.794066+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Barinas::2026-08-24",
+    "titulo": "Inundación en Municipio Pedraza, Barinas",
+    "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 24/08/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/",
+        "fecha": "2026-08-24T17:39:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T17:39:33+00:00",
+    "fecha_evento_temprana": "2026-08-24T17:39:33+00:00",
+    "fecha_deteccion": "2026-08-24T19:12:14.978134+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Sucre::2026-08-24",
+    "titulo": "Inundación en Sucre",
+    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 24/08/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/",
+        "fecha": "2026-08-24T17:34:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T17:34:18+00:00",
+    "fecha_evento_temprana": "2026-08-24T17:34:18+00:00",
+    "fecha_deteccion": "2026-08-24T19:12:39.168914+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Barinas::2026-08-24",
+    "titulo": "Deslizamiento/Derrumbe en Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 24/08/2026, 1:34 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/",
+        "fecha": "2026-08-24T17:34:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T17:34:18+00:00",
+    "fecha_evento_temprana": "2026-08-24T17:34:18+00:00",
+    "fecha_deteccion": "2026-08-24T19:13:03.340146+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Merida::2026-08-24",
+    "titulo": "Deslizamiento/Derrumbe en Merida",
+    "texto": "📌 Deslizamiento/Derrumbe en Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 24/08/2026, 1:34 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/"
+  },
+  {
     "tipo": "tormenta_electrica",
     "ubicacion": "Aragua",
     "municipio": null,
