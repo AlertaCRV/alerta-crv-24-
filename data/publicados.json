@@ -13,27 +13,6 @@
     "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
-  "vialidad::Barinas::2026-08-20": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T05:21:13.775671+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:52:53+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Barinas::2026-08-20": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T05:21:17.128095+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:28:46+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Zulia::2026-08-20": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T05:21:46.957740+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:26:30+00:00",
-    "municipio": "Cabimas"
-  },
   "incendio::Distrito Capital::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -437,6 +416,13 @@
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-24T05:12:45.810377+00:00",
+    "fecha_evento_temprana": "2026-08-24T02:40:41+00:00",
+    "municipio": "Libertador"
+  },
+  "incendio::Distrito Capital::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T05:58:13.612454+00:00",
     "fecha_evento_temprana": "2026-08-24T02:40:41+00:00",
     "municipio": "Libertador"
   }
