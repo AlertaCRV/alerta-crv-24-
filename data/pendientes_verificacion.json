@@ -1067,36 +1067,44 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T07:08:43.266024+00:00"
   },
-  "ataque_armado::Tachira::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T09:05:01.149522+00:00"
-  },
   "salud_publica::Distrito Capital::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T07:09:31.854149+00:00"
   },
-  "deslizamiento::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T09:03:37.783843+00:00"
-  },
-  "inundacion::Tachira::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T09:03:41.324234+00:00"
-  },
-  "inundacion::Merida::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T09:04:33.488395+00:00"
-  },
-  "deslizamiento::Yaracuy::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T09:06:13.949602+00:00"
-  },
   "inundacion::Anzoategui::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T09:05:49.662253+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T10:05:30.922653+00:00"
   },
   "incendio::Carabobo::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T10:06:19.475646+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T09:06:38.202455+00:00"
+    "ultima_vez": "2026-08-24T10:02:50.878173+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:02:54.386373+00:00"
+  },
+  "inundacion::Aragua::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:03:04.763884+00:00"
+  },
+  "inundacion::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:03:28.978746+00:00"
+  },
+  "inundacion::La Guaira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:04:18.034612+00:00"
+  },
+  "inundacion::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:05:06.513651+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T10:06:22.750079+00:00"
   }
 }
