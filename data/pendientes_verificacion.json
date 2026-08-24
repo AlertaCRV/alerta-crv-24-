@@ -1111,52 +1111,28 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T16:22:38.332716+00:00"
   },
-  "orden_publico::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:09:18.556533+00:00"
-  },
-  "tormenta_electrica::Zulia::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:10:38.187463+00:00"
-  },
-  "orden_publico::Bolivar::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:13:51.785720+00:00"
-  },
-  "orden_publico::Lara::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:14:15.946323+00:00"
-  },
-  "orden_publico::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:14:40.116716+00:00"
-  },
-  "orden_publico::Sucre::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:14:43.478411+00:00"
-  },
-  "orden_publico::Zulia::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T19:15:07.680909+00:00"
-  },
   "inundacion::Miranda::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T19:09:25.605193+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T19:46:20.470817+00:00"
   },
   "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T19:09:49.787678+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T19:46:23.800512+00:00"
   },
   "tormenta_electrica::Aragua::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T19:10:13.971847+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T19:46:47.951296+00:00"
   },
   "inundacion::Carabobo::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T19:13:27.569964+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T19:47:36.241850+00:00"
   },
   "orden_publico::Carabobo::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T19:50:01.077685+00:00"
+  },
+  "inundacion::Aragua::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T19:15:31.912906+00:00"
+    "ultima_vez": "2026-08-24T19:45:56.317622+00:00"
   }
 }
