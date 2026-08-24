@@ -1139,24 +1139,24 @@
     "intentos": 2,
     "ultima_vez": "2026-08-24T22:43:18.456263+00:00"
   },
-  "inundacion::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T23:04:56.108025+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T23:04:59.494793+00:00"
-  },
-  "orden_publico::Carabobo::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T23:05:23.910911+00:00"
-  },
-  "inundacion::Anzoategui::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T23:06:12.347039+00:00"
-  },
   "inundacion::Aragua::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T23:34:17.432072+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T23:04:31.895039+00:00"
+    "ultima_vez": "2026-08-24T23:34:13.850963+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T23:35:30.636178+00:00"
+  },
+  "inundacion::Sucre::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T23:36:19.472794+00:00"
+  },
+  "inundacion::Lara::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T23:36:22.775504+00:00"
   }
 }
