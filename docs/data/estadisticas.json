@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-08-24T15:03:51.518213+00:00",
+  "actualizado": "2026-08-24T17:53:48.865104+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T13:49:45+00:00"
+    "hasta": "2026-08-24T16:42:41+00:00"
   },
-  "total_eventos": 253,
+  "total_eventos": 254,
   "por_tipo": {
-    "tormenta_electrica": 4,
+    "tormenta_electrica": 5,
     "inundacion": 48,
     "infraestructura_electrica": 62,
     "deslizamiento": 20,
@@ -33,14 +33,14 @@
       "confirmados": 4
     },
     {
+      "estado": "Zulia",
+      "total": 17,
+      "confirmados": 4
+    },
+    {
       "estado": "Lara",
       "total": 16,
       "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 16,
-      "confirmados": 4
     },
     {
       "estado": "Barinas",
@@ -165,7 +165,7 @@
       "sequia": 1
     },
     "Zulia": {
-      "tormenta_electrica": 1,
+      "tormenta_electrica": 2,
       "infraestructura_electrica": 6,
       "colapso_estructural": 1,
       "inundacion": 2,
@@ -319,13 +319,13 @@
     "alto": 18,
     "critico": 22,
     "sin_clasificar": 208,
-    "medio": 1,
+    "medio": 2,
     "bajo": 4
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2,
-      "2026-08": 2
+      "2026-08": 3
     },
     "inundacion": {
       "2026-07": 7,
