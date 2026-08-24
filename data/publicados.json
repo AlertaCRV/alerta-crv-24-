@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Anzoategui::2026-08-20": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T20:58:11.480319+00:00",
-    "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
-    "municipio": null
-  },
-  "salud_publica::Lara::2026-08-21": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T20:58:04.300158+00:00",
-    "fecha_evento_temprana": "2026-08-21T17:35:57+00:00",
-    "municipio": null
-  },
   "inundacion::Anzoategui::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
