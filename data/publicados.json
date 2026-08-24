@@ -13,20 +13,6 @@
     "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
     "municipio": null
   },
-  "tormenta_electrica::Distrito Capital::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T15:58:06.988641+00:00",
-    "fecha_evento_temprana": "2026-08-21T12:02:21+00:00",
-    "municipio": null
-  },
-  "tormenta_electrica::Trujillo::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T15:58:10.346505+00:00",
-    "fecha_evento_temprana": "2026-08-21T12:02:21+00:00",
-    "municipio": null
-  },
   "deslizamiento::La Guaira::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
