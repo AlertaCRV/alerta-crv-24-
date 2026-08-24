@@ -287,11 +287,11 @@
     "municipio": null
   },
   "inundacion::Distrito Capital::2026-08-22": {
-    "severidad": "sin_clasificar",
+    "severidad": "critico",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-23T19:34:05.796125+00:00",
-    "fecha_evento_temprana": "2026-08-23T12:26:38+00:00",
-    "municipio": "Libertador"
+    "fecha_deteccion": "2026-08-24T03:20:13.863748+00:00",
+    "fecha_evento_temprana": "2026-08-23T19:19:49+00:00",
+    "municipio": null
   },
   "inundacion::Miranda::2026-08-22": {
     "severidad": "critico",
