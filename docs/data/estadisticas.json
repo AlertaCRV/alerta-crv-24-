@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-24T05:58:38.437515+00:00",
+  "actualizado": "2026-08-24T09:07:03.006041+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-24T02:40:41+00:00"
   },
-  "total_eventos": 241,
+  "total_eventos": 242,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 45,
+    "inundacion": 46,
     "infraestructura_electrica": 61,
     "deslizamiento": 20,
     "colapso_estructural": 3,
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Aragua",
+      "total": 13,
+      "confirmados": 0
+    },
+    {
       "estado": "Carabobo",
       "total": 12,
       "confirmados": 1
@@ -66,11 +71,6 @@
       "estado": "Bolivar",
       "total": 12,
       "confirmados": 1
-    },
-    {
-      "estado": "Aragua",
-      "total": 12,
-      "confirmados": 0
     },
     {
       "estado": "Monagas",
@@ -274,7 +274,7 @@
     },
     "Aragua": {
       "orden_publico": 3,
-      "inundacion": 4,
+      "inundacion": 5,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
       "deslizamiento": 2,
@@ -315,7 +315,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 196,
+    "sin_clasificar": 197,
     "medio": 1,
     "bajo": 4
   },
@@ -326,7 +326,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 38
+      "2026-08": 39
     },
     "infraestructura_electrica": {
       "2026-07": 5,

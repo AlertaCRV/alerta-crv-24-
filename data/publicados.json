@@ -308,11 +308,11 @@
     "municipio": null
   },
   "inundacion::Aragua::2026-08-23": {
-    "severidad": "critico",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-08-23T20:29:09.727733+00:00",
-    "fecha_evento_temprana": "2026-08-23T18:48:28+00:00",
-    "municipio": null
+    "fecha_deteccion": "2026-08-24T09:03:44.972822+00:00",
+    "fecha_evento_temprana": "2026-08-23T22:03:44+00:00",
+    "municipio": "José Félix Ribas"
   },
   "deslizamiento::Distrito Capital::2026-08-23": {
     "severidad": "sin_clasificar",
