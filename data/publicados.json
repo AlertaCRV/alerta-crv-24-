@@ -411,5 +411,26 @@
     "fecha_deteccion": "2026-08-23T22:39:54.934369+00:00",
     "fecha_evento_temprana": "2026-08-23T20:30:48+00:00",
     "municipio": "Miranda"
+  },
+  "inundacion::Tachira::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T04:16:20.844411+00:00",
+    "fecha_evento_temprana": "2026-08-24T00:29:29+00:00",
+    "municipio": "Junín"
+  },
+  "inundacion::Merida::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T04:16:45.127283+00:00",
+    "fecha_evento_temprana": "2026-08-24T01:00:43+00:00",
+    "municipio": "Aricagua"
+  },
+  "deslizamiento::Yaracuy::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-24T04:19:59.443493+00:00",
+    "fecha_evento_temprana": "2026-08-24T01:13:46+00:00",
+    "municipio": null
   }
 }

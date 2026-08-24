@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-24T03:23:54.211409+00:00",
+  "actualizado": "2026-08-24T04:20:49.326347+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-24T02:40:04+00:00"
   },
-  "total_eventos": 236,
+  "total_eventos": 239,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 43,
+    "inundacion": 45,
     "infraestructura_electrica": 61,
-    "deslizamiento": 19,
+    "deslizamiento": 20,
     "colapso_estructural": 3,
     "orden_publico": 38,
     "salud_publica": 7,
@@ -84,7 +84,7 @@
     },
     {
       "estado": "Yaracuy",
-      "total": 10,
+      "total": 11,
       "confirmados": 1
     },
     {
@@ -98,9 +98,19 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 6,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
+    },
+    {
+      "estado": "Merida",
+      "total": 6,
+      "confirmados": 0
     },
     {
       "estado": "Portuguesa",
@@ -113,19 +123,9 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 5,
-      "confirmados": 0
-    },
-    {
       "estado": "Nueva Esparta",
       "total": 5,
       "confirmados": 1
-    },
-    {
-      "estado": "Merida",
-      "total": 5,
-      "confirmados": 0
     },
     {
       "estado": "Guarico",
@@ -237,7 +237,8 @@
       "deslizamiento": 1,
       "infraestructura_electrica": 2,
       "incendio": 1,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "inundacion": 1
     },
     "Monagas": {
       "infraestructura_electrica": 6,
@@ -267,7 +268,8 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "deslizamiento": 1
     },
     "Aragua": {
       "orden_publico": 3,
@@ -280,7 +282,8 @@
     "Merida": {
       "infraestructura_electrica": 3,
       "vialidad": 1,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "inundacion": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -311,7 +314,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 191,
+    "sin_clasificar": 194,
     "medio": 1,
     "bajo": 4
   },
@@ -322,7 +325,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 36
+      "2026-08": 38
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -330,7 +333,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 16
+      "2026-08": 17
     },
     "colapso_estructural": {
       "2026-07": 1,
