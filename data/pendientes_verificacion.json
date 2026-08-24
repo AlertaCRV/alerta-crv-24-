@@ -1059,28 +1059,56 @@
     "intentos": 2,
     "ultima_vez": "2026-08-24T02:15:26.712974+00:00"
   },
-  "deslizamiento::Miranda::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T05:54:06.491656+00:00"
-  },
-  "inundacion::Tachira::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T05:54:30.804802+00:00"
-  },
-  "inundacion::Merida::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T05:54:55.402141+00:00"
-  },
-  "deslizamiento::Yaracuy::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T05:57:25.076934+00:00"
-  },
   "inundacion::Anzoategui::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T05:57:00.710626+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T07:10:20.419565+00:00"
   },
   "incendio::Carabobo::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T07:11:08.970016+00:00"
+  },
+  "inundacion::Aragua::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T05:57:49.372440+00:00"
+    "ultima_vez": "2026-08-24T07:06:49.176344+00:00"
+  },
+  "inundacion::Miranda::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:06:52.550241+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:06:55.889352+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:07:30.442887+00:00"
+  },
+  "inundacion::La Guaira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:07:54.711066+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:08:18.974342+00:00"
+  },
+  "ataque_armado::Merida::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:08:43.266024+00:00"
+  },
+  "ataque_armado::Tachira::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:09:07.590338+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:09:31.854149+00:00"
+  },
+  "inundacion::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:09:56.132963+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T07:11:33.249004+00:00"
   }
 }
