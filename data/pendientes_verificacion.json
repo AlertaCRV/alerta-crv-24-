@@ -1111,40 +1111,52 @@
     "intentos": 1,
     "ultima_vez": "2026-08-24T16:22:38.332716+00:00"
   },
-  "inundacion::Aragua::2026-08-24": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-24T20:15:28.675278+00:00"
-  },
   "orden_publico::Distrito Capital::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:15:25.198138+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:55:27.534338+00:00"
   },
   "sismo::La Guaira::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:16:41.680331+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:56:01.972448+00:00"
   },
   "tormenta_electrica::Zulia::2026-08-24": {
     "intentos": 1,
     "ultima_vez": "2026-08-24T20:17:30.242491+00:00"
   },
   "orden_publico::Bolivar::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:18:45.322068+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:57:14.658011+00:00"
   },
   "orden_publico::Lara::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:19:09.802680+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:57:38.877145+00:00"
   },
   "orden_publico::Miranda::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:19:34.306194+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:58:03.079426+00:00"
   },
   "orden_publico::Sucre::2026-08-24": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-24T20:19:58.825413+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:58:27.291590+00:00"
   },
   "orden_publico::Zulia::2026-08-24": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-24T20:58:51.477017+00:00"
+  },
+  "inundacion::Miranda::2026-08-24": {
     "intentos": 1,
-    "ultima_vez": "2026-08-24T20:20:23.303313+00:00"
+    "ultima_vez": "2026-08-24T20:55:34.396404+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:55:37.779327+00:00"
+  },
+  "orden_publico::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:56:26.194716+00:00"
+  },
+  "inundacion::Carabobo::2026-08-24": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-24T20:56:50.442376+00:00"
   }
 }
