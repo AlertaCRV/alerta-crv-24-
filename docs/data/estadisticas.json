@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-24T10:06:23.173440+00:00",
+  "actualizado": "2026-08-24T11:38:58.287529+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T05:00:00+00:00"
+    "hasta": "2026-08-24T09:20:04+00:00"
   },
-  "total_eventos": 243,
+  "total_eventos": 244,
   "por_tipo": {
     "tormenta_electrica": 4,
-    "inundacion": 46,
+    "inundacion": 47,
     "infraestructura_electrica": 61,
     "deslizamiento": 20,
     "colapso_estructural": 3,
@@ -48,6 +48,11 @@
       "confirmados": 4
     },
     {
+      "estado": "Carabobo",
+      "total": 13,
+      "confirmados": 1
+    },
+    {
       "estado": "Anzoategui",
       "total": 13,
       "confirmados": 0
@@ -56,11 +61,6 @@
       "estado": "Aragua",
       "total": 13,
       "confirmados": 0
-    },
-    {
-      "estado": "Carabobo",
-      "total": 12,
-      "confirmados": 1
     },
     {
       "estado": "Trujillo",
@@ -148,7 +148,7 @@
       "tormenta_electrica": 1,
       "infraestructura_electrica": 4,
       "orden_publico": 3,
-      "inundacion": 2,
+      "inundacion": 3,
       "vialidad": 1,
       "incendio": 1
     },
@@ -316,7 +316,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 198,
+    "sin_clasificar": 199,
     "medio": 1,
     "bajo": 4
   },
@@ -327,7 +327,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 39
+      "2026-08": 40
     },
     "infraestructura_electrica": {
       "2026-07": 5,

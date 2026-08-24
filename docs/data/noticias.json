@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Carabobo",
+    "municipio": "Puerto Cabello",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/08/24/se-desbordo-el-rio-guaiguaza-en-puerto-cabello-en-el-estado-carabobo/",
+        "fecha": "2026-08-24T09:20:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-24T09:20:04+00:00",
+    "fecha_evento_temprana": "2026-08-24T09:20:04+00:00",
+    "fecha_deteccion": "2026-08-24T11:35:14.071411+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Carabobo::2026-08-24",
+    "titulo": "Inundación en Municipio Puerto Cabello, Carabobo",
+    "texto": "📌 Inundación en Municipio Puerto Cabello, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Puerto Cabello, Carabobo\n🕒 Hecho reportado: 24/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 7:35 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/24/se-desbordo-el-rio-guaiguaza-en-puerto-cabello-en-el-estado-carabobo/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Tachira",
     "municipio": "Junín",
