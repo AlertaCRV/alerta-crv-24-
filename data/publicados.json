@@ -20,34 +20,6 @@
     "fecha_evento_temprana": "2026-08-21T04:30:56+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Carabobo::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T07:58:33.767805+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:12:46+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Guarico::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T07:58:40.487768+00:00",
-    "fecha_evento_temprana": "2026-08-21T00:17:50+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Trujillo::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T07:59:21.172389+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:16:03+00:00",
-    "municipio": "Bocono"
-  },
-  "incendio::Trujillo::2026-08-21": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-21T07:59:32.665797+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:08:03+00:00",
-    "municipio": null
-  },
   "incendio::Tachira::2026-08-21": {
     "severidad": "sin_clasificar",
     "confirmado": false,
