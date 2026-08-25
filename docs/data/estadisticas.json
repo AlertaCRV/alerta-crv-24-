@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-25T21:46:40.128730+00:00",
+  "actualizado": "2026-08-25T22:17:22.411880+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-25T21:30:03+00:00"
   },
-  "total_eventos": 279,
+  "total_eventos": 280,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
     "infraestructura_electrica": 65,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 46,
+    "orden_publico": 47,
     "salud_publica": 8,
     "crisis_migratoria": 5,
     "incendio": 24,
@@ -89,7 +89,7 @@
     },
     {
       "estado": "Sucre",
-      "total": 9,
+      "total": 10,
       "confirmados": 0
     },
     {
@@ -210,7 +210,7 @@
     },
     "Sucre": {
       "inundacion": 2,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "infraestructura_electrica": 3
     },
     "Anzoategui": {
@@ -323,7 +323,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 229,
+    "sin_clasificar": 230,
     "medio": 4,
     "bajo": 5
   },
@@ -350,7 +350,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 44
+      "2026-08": 45
     },
     "salud_publica": {
       "2026-07": 1,
