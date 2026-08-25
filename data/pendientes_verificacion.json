@@ -1160,8 +1160,8 @@
     "ultima_vez": "2026-08-24T23:36:22.775504+00:00"
   },
   "inundacion::Miranda::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T00:00:24.665737+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T17:23:04.733158+00:00"
   },
   "inundacion::Lara::2026-08-25": {
     "intentos": 2,
@@ -1170,10 +1170,6 @@
   "inundacion::Anzoategui::2026-08-25": {
     "intentos": 2,
     "ultima_vez": "2026-08-25T09:01:04.284884+00:00"
-  },
-  "inundacion::Aragua::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:01:28.507061+00:00"
   },
   "orden_publico::Carabobo::2026-08-25": {
     "intentos": 1,
@@ -1191,28 +1187,32 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T14:06:38.784756+00:00"
   },
-  "sismo::Miranda::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T16:49:31.507238+00:00"
-  },
-  "deslizamiento::La Guaira::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T16:49:38.106793+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T16:49:41.518494+00:00"
-  },
   "derrame_petrolero::Falcon::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T16:49:34.827825+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T17:23:28.942765+00:00"
   },
   "inundacion::Yaracuy::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T16:49:44.930304+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T17:25:29.906498+00:00"
   },
   "infraestructura_agua::Nueva Esparta::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T17:26:18.288843+00:00"
+  },
+  "sismo::La Guaira::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T16:50:33.589434+00:00"
+    "ultima_vez": "2026-08-25T17:22:33.642315+00:00"
+  },
+  "derrame_petrolero::Zulia::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T17:23:53.124924+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T17:25:05.708316+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T17:25:54.094000+00:00"
   }
 }
