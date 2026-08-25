@@ -3,19 +3,27 @@
   "tipo": "ataque_armado",
   "tipo_label": "Ataque armado",
   "cerrado": false,
-  "generado": "2026-08-20T03:18:00.323136+00:00",
-  "actualizado_hasta": "2026-08-19T20:03:43.215220+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-25T13:11:01.525080+00:00",
+  "actualizado_hasta": "2026-08-24T10:04:42.253665+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "Durante el mes de agosto de 2026 el sistema de monitoreo de emergencias de la Cruz Roja Venezolana registró un único evento de ataque armado, en contraste con cero incidentes en el mes anterior (julio de 2026). Esta comparación se mantiene tal como se indica en el informe de seguimiento.\n\nNo se dispone de información detallada sobre la naturaleza, ubicación o consecuencias del incidente, ya que la única fuente proporcionada se centra en irregularidades judiciales relacionadas con el clan Convit y no menciona ningún ataque armado (El Pitazo). Por lo tanto, no es posible describir con precisión los daños materiales, heridos o víctimas fatales asociados al evento registrado.\n\nLa falta de datos específicos limita la descripción del suceso, pero el registro oficial confirma la existencia de un incidente de ataque armado en el período analizado, manteniéndose la diferencia respecto al mes previo donde no se reportaron casos.",
+  "narrativa": "En el mes de agosto de 2026 se registraron tres eventos de ataque armado, según la comparación proporcionada, frente a cero en el mes anterior (2026‑07). Esta variación indica un aumento en la incidencia de este tipo de incidentes en el período analizado.\n\nSin embargo, las fuentes periodísticas suministradas para este informe no contienen información específica sobre incidentes de ataque armado ocurridos en agosto de 2026. Los artículos revisados tratan temas distintos, como el tributo a la exjugadora de baloncesto Delia Vera (Diario La Nación), la capacitación bancaria impulsada por el Departamento de Estado de EE. UU. (Efecto Cocuyo) y la denuncia de hostigamiento a un abogado en el Palacio de Justicia (El Pitazo). Ninguno de ellos menciona hechos, cifras, ubicaciones o daños relacionados con ataques armados, por lo que no es posible describir eventos concretos en esta categoría con base en los documentos disponibles.\n\nLa ausencia de reportes detallados subraya la necesidad de reforzar la recolección y difusión de información sobre incidentes de violencia armada, a fin de que la Cruz Roja Venezolana pueda responder de manera oportuna y coordinada. Mantener un registro preciso y actualizado es esencial para la planificación de recursos y la asistencia a las comunidades afectadas.",
   "fuentes": [
     {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/deportes/tributo-a-delia-vera-para-la-posteridad/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/economia/departamento-de-estado-impulsa-capacitacion-de-banca-venezolana/"
+    },
+    {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/politica/transparencia-venezuela-alerta-sobre-irregularidades-en-sobreseimientos-del-clan-convit-y-detencion-de-jueces/"
+      "link": "https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "tipo": "accidente_transporte",
   "tipo_label": "Accidente de transporte",
   "cerrado": false,
-  "generado": "2026-08-23T02:16:07.455137+00:00",
+  "generado": "2026-08-25T13:10:56.636274+00:00",
   "actualizado_hasta": "2026-08-18T17:06:02.794323+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un solo accidente de transporte, mientras que en julio de 2026 no se reportó ninguno (0 evento(s) registrados entonces vs. 1 en este período).\n\nEl 18 de agosto, tres pescadores originarios de la Isla de Margarita fueron rescatados después de que su embarcación naufragara frente a las costas del norte de Venezuela, en la zona de Choroní, estado Nueva Esparta (Reporte Confidencial). El siniestro se produjo por condiciones meteorológicas adversas, con intensas lluvias y fuerte oleaje que provocaron el anegamiento y la posterior zozobra de la embarcación (Reporte Confidencial).\n\nLas autoridades locales llevaron a cabo la operación de rescate, logrando la salvación de los tres trabajadores del mar sin que se reportaran víctimas fatales (Reporte Confidencial).",
+  "narrativa": "En el mes de agosto de 2026 se registró un único incidente de transporte marítimo, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún evento (comparación con el período anterior). \n\nEl hecho ocurrido fue el naufragio de una embarcación de pesca frente a las costas del norte de Venezuela, en la zona de Choroní, estado Nueva Esparta. Tres pescadores originarios de la Isla de Margarita se vieron involucrados cuando la embarcación se anegó y perdió estabilidad debido a intensas lluvias y fuerte oleaje que generaron condiciones meteorológicas adversas (Reporte Confidencial). \n\nTras el siniestro, los tres trabajadores del mar fueron rescatados por equipos de emergencia que lograron localizarlos y sacarlos del agua sin que se reportaran heridos graves (Reporte Confidencial). La rápida respuesta de los servicios de rescate evitó que el incidente se convirtiera en una tragedia mayor.",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
