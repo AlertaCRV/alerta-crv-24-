@@ -1,11 +1,4 @@
 {
-  "sismo::La Guaira::2026-08-22::mag7.2": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T04:09:47.504860+00:00",
-    "fecha_evento_temprana": "2026-08-22T01:30:55+00:00",
-    "municipio": null
-  },
   "deslizamiento::Barinas::2026-08-22": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -404,5 +397,19 @@
     "fecha_deteccion": "2026-08-25T02:47:09.491987+00:00",
     "fecha_evento_temprana": "2026-08-24T23:28:55+00:00",
     "municipio": "Uribante"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T04:26:12.333013+00:00",
+    "fecha_evento_temprana": "2026-08-24T23:59:47+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Nueva Esparta::2026-08-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T04:26:36.583266+00:00",
+    "fecha_evento_temprana": "2026-08-24T20:55:15+00:00",
+    "municipio": "Maneiro"
   }
 }
