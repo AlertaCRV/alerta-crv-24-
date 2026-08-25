@@ -1203,10 +1203,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T22:48:20.158398+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T23:16:09.862905+00:00"
-  },
   "orden_publico::Sucre::2026-08-25": {
     "intentos": 1,
     "ultima_vez": "2026-08-25T22:49:12.355851+00:00"
@@ -1215,32 +1211,32 @@
     "intentos": 1,
     "ultima_vez": "2026-08-25T22:50:25.002150+00:00"
   },
-  "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T23:18:15.306075+00:00"
-  },
   "inundacion::Aragua::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T23:16:06.397386+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T23:46:48.969534+00:00"
   },
   "ataque_armado::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T23:16:34.268556+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T23:46:55.678116+00:00"
   },
   "inundacion::Anzoategui::2026-08-25": {
     "intentos": 1,
     "ultima_vez": "2026-08-25T23:16:37.689958+00:00"
   },
   "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T23:17:02.109036+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T23:47:19.833091+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T23:17:26.515549+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T23:47:43.983746+00:00"
   },
   "inundacion::La Guaira::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T23:48:56.461553+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T23:18:39.701548+00:00"
+    "ultima_vez": "2026-08-25T23:48:08.137797+00:00"
   }
 }
