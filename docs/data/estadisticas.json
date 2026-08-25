@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-08-25T21:08:17.078691+00:00",
+  "actualizado": "2026-08-25T21:46:40.128730+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T20:45:25+00:00"
+    "hasta": "2026-08-25T21:30:03+00:00"
   },
-  "total_eventos": 277,
+  "total_eventos": 279,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
-    "infraestructura_electrica": 64,
+    "infraestructura_electrica": 65,
     "deslizamiento": 24,
     "colapso_estructural": 3,
     "orden_publico": 46,
     "salud_publica": 8,
     "crisis_migratoria": 5,
     "incendio": 24,
-    "vialidad": 9,
+    "vialidad": 10,
     "sismo": 7,
     "escasez_combustible": 1,
     "sequia": 6,
@@ -34,18 +34,18 @@
     },
     {
       "estado": "Lara",
-      "total": 19,
+      "total": 20,
       "confirmados": 1
+    },
+    {
+      "estado": "Zulia",
+      "total": 18,
+      "confirmados": 4
     },
     {
       "estado": "Barinas",
       "total": 18,
       "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 17,
-      "confirmados": 4
     },
     {
       "estado": "Carabobo",
@@ -162,11 +162,12 @@
       "deslizamiento": 1,
       "incendio": 1,
       "infraestructura_agua": 2,
-      "sequia": 1
+      "sequia": 1,
+      "vialidad": 1
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -322,7 +323,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 227,
+    "sin_clasificar": 229,
     "medio": 4,
     "bajo": 5
   },
@@ -337,7 +338,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 59
+      "2026-08": 60
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -364,7 +365,7 @@
       "2026-08": 21
     },
     "vialidad": {
-      "2026-08": 9
+      "2026-08": 10
     },
     "sismo": {
       "2026-08": 7
