@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-25T12:03:26.066406+00:00",
+  "actualizado": "2026-08-25T17:26:19.265451+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T11:44:20+00:00"
+    "hasta": "2026-08-25T17:13:21+00:00"
   },
-  "total_eventos": 269,
+  "total_eventos": 271,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 52,
+    "inundacion": 53,
     "infraestructura_electrica": 63,
-    "deslizamiento": 23,
+    "deslizamiento": 24,
     "colapso_estructural": 3,
     "orden_publico": 46,
     "salud_publica": 8,
@@ -53,12 +53,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Anzoategui",
-      "total": 14,
+      "estado": "Aragua",
+      "total": 15,
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Anzoategui",
       "total": 14,
       "confirmados": 0
     },
@@ -103,12 +103,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Merida",
-      "total": 7,
+      "estado": "La Guaira",
+      "total": 8,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Merida",
       "total": 7,
       "confirmados": 0
     },
@@ -278,7 +278,7 @@
     },
     "Aragua": {
       "orden_publico": 3,
-      "inundacion": 5,
+      "inundacion": 6,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
       "deslizamiento": 2,
@@ -309,7 +309,7 @@
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "inundacion": 2,
       "sismo": 2
     },
@@ -321,7 +321,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 220,
+    "sin_clasificar": 222,
     "medio": 3,
     "bajo": 5
   },
@@ -332,7 +332,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 45
+      "2026-08": 46
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -340,7 +340,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 20
+      "2026-08": 21
     },
     "colapso_estructural": {
       "2026-07": 1,
