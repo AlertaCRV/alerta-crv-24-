@@ -1191,12 +1191,20 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T14:06:38.784756+00:00"
   },
-  "infraestructura_agua::Nueva Esparta::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T15:04:22.869941+00:00"
-  },
   "infraestructura_electrica::Anzoategui::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T15:59:18.332093+00:00"
+  },
+  "sismo::Miranda::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T15:04:19.422186+00:00"
+    "ultima_vez": "2026-08-25T15:59:07.954613+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T15:59:11.502412+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T15:59:15.035861+00:00"
   }
 }
