@@ -1163,21 +1163,9 @@
     "intentos": 1,
     "ultima_vez": "2026-08-25T00:00:24.665737+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:00:47.546619+00:00"
-  },
-  "deslizamiento::Tachira::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:00:51.205813+00:00"
-  },
-  "inundacion::Sucre::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:00:54.580245+00:00"
-  },
   "inundacion::Lara::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T08:07:25.920178+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T09:48:05.813635+00:00"
   },
   "inundacion::Anzoategui::2026-08-25": {
     "intentos": 2,
@@ -1192,11 +1180,15 @@
     "ultima_vez": "2026-08-25T08:08:39.150301+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T09:00:57.761804+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T09:47:17.505267+00:00"
   },
   "orden_publico::Distrito Capital::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T09:47:41.656794+00:00"
+  },
+  "sismo::Miranda::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T09:01:01.006100+00:00"
+    "ultima_vez": "2026-08-25T09:47:04.268005+00:00"
   }
 }
