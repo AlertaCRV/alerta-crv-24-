@@ -383,5 +383,12 @@
     "fecha_deteccion": "2026-08-25T17:24:17.317792+00:00",
     "fecha_evento_temprana": "2026-08-25T15:45:49+00:00",
     "municipio": null
+  },
+  "derrame_petrolero::Falcon::2026-08-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T17:54:43.935452+00:00",
+    "fecha_evento_temprana": "2026-08-25T15:41:19+00:00",
+    "municipio": "Miranda"
   }
 }
