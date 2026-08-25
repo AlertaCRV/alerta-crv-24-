@@ -1187,24 +1187,16 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T10:57:47.960920+00:00"
   },
-  "sismo::Miranda::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T12:02:54.215352+00:00"
-  },
   "inundacion::Distrito Capital::2026-08-25": {
     "intentos": 2,
     "ultima_vez": "2026-08-25T14:06:38.784756+00:00"
   },
-  "salud_publica::Lara::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T14:06:42.169652+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T14:06:45.544746+00:00"
-  },
   "infraestructura_agua::Nueva Esparta::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T15:04:22.869941+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T14:06:52.646393+00:00"
+    "ultima_vez": "2026-08-25T15:04:19.422186+00:00"
   }
 }
