@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-25T22:17:22.411880+00:00",
+  "actualizado": "2026-08-25T22:51:38.578497+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T21:30:03+00:00"
+    "hasta": "2026-08-25T21:36:41+00:00"
   },
-  "total_eventos": 280,
+  "total_eventos": 281,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
@@ -24,12 +24,12 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
-    "ataque_armado": 3
+    "ataque_armado": 4
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 46,
+      "total": 47,
       "confirmados": 4
     },
     {
@@ -187,7 +187,7 @@
       "sismo": 1,
       "tormenta_electrica": 1,
       "emergencia_metro": 2,
-      "ataque_armado": 1,
+      "ataque_armado": 2,
       "crisis_migratoria": 1,
       "salud_publica": 1
     },
@@ -323,7 +323,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 230,
+    "sin_clasificar": 231,
     "medio": 4,
     "bajo": 5
   },
@@ -392,7 +392,7 @@
       "2026-08": 2
     },
     "ataque_armado": {
-      "2026-08": 3
+      "2026-08": 4
     }
   }
 }
