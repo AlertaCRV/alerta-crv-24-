@@ -1175,10 +1175,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T10:57:47.960920+00:00"
   },
-  "inundacion::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T14:06:38.784756+00:00"
-  },
   "sismo::La Guaira::2026-08-25": {
     "intentos": 1,
     "ultima_vez": "2026-08-25T17:22:33.642315+00:00"
@@ -1203,40 +1199,36 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T21:08:16.235870+00:00"
   },
-  "orden_publico::Sucre::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T21:44:34.289712+00:00"
-  },
-  "inundacion::Yaracuy::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T21:45:47.246450+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T21:46:15.012833+00:00"
-  },
   "ataque_armado::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T21:44:02.750744+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:14:08.439569+00:00"
   },
   "inundacion::Anzoategui::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T21:44:06.211621+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:14:32.611267+00:00"
   },
   "inundacion::Aragua::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T21:44:10.059424+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:13:37.674907+00:00"
   },
   "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T21:44:58.573813+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:15:20.907374+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T21:45:22.786571+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:15:45.052670+00:00"
   },
   "inundacion::La Guaira::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T22:17:21.735932+00:00"
+  },
+  "vialidad::Lara::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T21:46:39.342867+00:00"
+    "ultima_vez": "2026-08-25T22:13:44.280251+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T22:16:33.370550+00:00"
   }
 }

@@ -404,5 +404,12 @@
     "fecha_deteccion": "2026-08-25T21:46:11.746935+00:00",
     "fecha_evento_temprana": "2026-08-25T20:20:02+00:00",
     "municipio": "Maracaibo"
+  },
+  "orden_publico::Sucre::2026-08-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T22:14:56.765352+00:00",
+    "fecha_evento_temprana": "2026-08-25T20:43:22+00:00",
+    "municipio": null
   }
 }

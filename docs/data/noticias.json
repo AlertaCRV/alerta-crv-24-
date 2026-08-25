@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/25/vecinos-de-brisas-del-golfo-se-cansaron-de-tantos-embustes-y-cerraron-carretera-nacional-en-sucre/",
+        "fecha": "2026-08-25T20:43:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T20:43:22+00:00",
+    "fecha_evento_temprana": "2026-08-25T20:43:22+00:00",
+    "fecha_deteccion": "2026-08-25T22:14:56.765352+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Sucre::2026-08-25",
+    "titulo": "Orden público en Sucre",
+    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 25/08/2026, 4:43 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 6:14 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/25/vecinos-de-brisas-del-golfo-se-cansaron-de-tantos-embustes-y-cerraron-carretera-nacional-en-sucre/"
+  },
+  {
     "tipo": "vialidad",
     "ubicacion": "Lara",
     "municipio": "Moran",
