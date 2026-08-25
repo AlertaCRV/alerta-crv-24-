@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-08-25T10:19:49.251204+00:00",
+  "actualizado": "2026-08-25T12:03:26.066406+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T03:40:02+00:00"
+    "hasta": "2026-08-25T11:44:20+00:00"
   },
-  "total_eventos": 267,
+  "total_eventos": 269,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 51,
+    "inundacion": 52,
     "infraestructura_electrica": 63,
     "deslizamiento": 23,
     "colapso_estructural": 3,
     "orden_publico": 46,
-    "salud_publica": 7,
+    "salud_publica": 8,
     "crisis_migratoria": 5,
     "incendio": 24,
     "vialidad": 9,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 45,
+      "total": 46,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 18,
+      "total": 19,
       "confirmados": 1
     },
     {
@@ -155,7 +155,7 @@
     },
     "Lara": {
       "inundacion": 3,
-      "salud_publica": 3,
+      "salud_publica": 4,
       "orden_publico": 4,
       "infraestructura_electrica": 2,
       "sismo": 1,
@@ -177,7 +177,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 9,
+      "inundacion": 10,
       "orden_publico": 8,
       "incendio": 8,
       "vialidad": 1,
@@ -320,8 +320,8 @@
   },
   "por_severidad": {
     "alto": 18,
-    "critico": 22,
-    "sin_clasificar": 219,
+    "critico": 23,
+    "sin_clasificar": 220,
     "medio": 3,
     "bajo": 5
   },
@@ -332,7 +332,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 44
+      "2026-08": 45
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -352,7 +352,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 6
+      "2026-08": 7
     },
     "crisis_migratoria": {
       "2026-07": 4,

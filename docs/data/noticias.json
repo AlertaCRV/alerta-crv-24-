@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Coche",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/25/exdirector-de-proteccion-civil-atribuye-inundacion-en-la-valle-coche-con-ampliacion-de-la-autopista/",
+        "fecha": "2026-08-25T11:44:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T11:44:20+00:00",
+    "fecha_evento_temprana": "2026-08-25T11:44:20+00:00",
+    "fecha_deteccion": "2026-08-25T12:02:57.437405+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Distrito Capital::2026-08-25",
+    "titulo": "Inundación en Parroquia Coche, Distrito Capital",
+    "texto": "📌 Inundación en Parroquia Coche, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Coche, Distrito Capital\n🕒 Hecho reportado: 25/08/2026, 7:44 a.m.\n🔎 Detectado por el sistema: 25/08/2026, 8:02 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/25/exdirector-de-proteccion-civil-atribuye-inundacion-en-la-valle-coche-con-ampliacion-de-la-autopista/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/ovp-muere-en-lara-segundo-privado-de-libertad-que-recibia-dialisis-en-menos-de-una-semana-24ago/",
+        "fecha": "2026-08-25T10:39:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T10:39:24+00:00",
+    "fecha_evento_temprana": "2026-08-25T10:39:24+00:00",
+    "fecha_deteccion": "2026-08-25T12:03:21.600080+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Lara::2026-08-25",
+    "titulo": "Salud pública en Lara",
+    "texto": "📌 Salud pública en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/08/2026, 6:39 a.m.\n🔎 Detectado por el sistema: 25/08/2026, 8:03 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/ovp-muere-en-lara-segundo-privado-de-libertad-que-recibia-dialisis-en-menos-de-una-semana-24ago/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,

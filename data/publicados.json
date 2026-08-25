@@ -369,5 +369,19 @@
     "fecha_deteccion": "2026-08-25T10:19:48.839937+00:00",
     "fecha_evento_temprana": "2026-08-25T03:40:02+00:00",
     "municipio": null
+  },
+  "inundacion::Distrito Capital::2026-08-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T12:02:57.437405+00:00",
+    "fecha_evento_temprana": "2026-08-25T11:44:20+00:00",
+    "municipio": null
+  },
+  "salud_publica::Lara::2026-08-25": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T12:03:21.600080+00:00",
+    "fecha_evento_temprana": "2026-08-25T10:39:24+00:00",
+    "municipio": null
   }
 }
