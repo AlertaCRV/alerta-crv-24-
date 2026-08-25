@@ -1,25 +1,4 @@
 {
-  "ataque_armado::Zulia::2026-08-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T17:57:38.642594+00:00",
-    "fecha_evento_temprana": "2026-08-22T16:48:06+00:00",
-    "municipio": null
-  },
-  "salud_publica::Aragua::2026-08-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T18:38:42.354652+00:00",
-    "fecha_evento_temprana": "2026-08-22T17:15:43+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Monagas::2026-08-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T18:40:43.333136+00:00",
-    "fecha_evento_temprana": "2026-08-22T17:20:02+00:00",
-    "municipio": "Piar"
-  },
   "infraestructura_electrica::Miranda::2026-08-22": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -390,5 +369,12 @@
     "fecha_deteccion": "2026-08-25T17:54:43.935452+00:00",
     "fecha_evento_temprana": "2026-08-25T15:41:19+00:00",
     "municipio": "Miranda"
+  },
+  "inundacion::Yaracuy::2026-08-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T18:47:29.336420+00:00",
+    "fecha_evento_temprana": "2026-08-25T16:00:00+00:00",
+    "municipio": "Veroes"
   }
 }
