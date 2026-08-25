@@ -404,5 +404,12 @@
     "fecha_deteccion": "2026-08-24T23:05:48.140522+00:00",
     "fecha_evento_temprana": "2026-08-24T21:45:34+00:00",
     "municipio": "Moran"
+  },
+  "deslizamiento::Tachira::2026-08-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T02:47:09.491987+00:00",
+    "fecha_evento_temprana": "2026-08-24T23:28:55+00:00",
+    "municipio": "Uribante"
   }
 }
