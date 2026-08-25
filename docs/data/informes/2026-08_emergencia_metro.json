@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-08",
+  "tipo": "emergencia_metro",
+  "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
+  "cerrado": false,
+  "generado": "2026-08-25T13:13:06.723744+00:00",
+  "actualizado_hasta": "2026-08-23T14:28:48.348714+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 0,
+    "actual": 2
+  },
+  "narrativa": "En el mes de agosto de 2026 se registraron dos eventos de emergencia en el Metro de Caracas, frente a ninguno en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 2 en este período). Ambos incidentes estuvieron vinculados a las intensas precipitaciones asociadas al fenómeno «Súper El Niño».\\n\\nDurante la noche del sábado pasado, fuertes lluvias provocaron la inundación de al menos dos estaciones del Metro de Caracas, concretamente las estaciones Mercado y La Rinconada, ubicadas en la transferencia hacia el ferrocarril de los Valles del Tuy (La Patilla). Las imágenes difundidas en redes sociales mostraron ambas instalaciones totalmente anegadas durante el paso de la onda tropical 40 (La Patilla).\\n\\nLa magnitud del aluvión obligó a la suspensión inmediata del servicio en esas estaciones, poniendo en riesgo a los usuarios que intentaban regresar a sus hogares y generando una interrupción significativa del transporte público en la zona (La Patilla).\\n\\nAnte la amenaza climática, la directiva del Metro de Caracas, en coordinación con el Ministerio de Energía Eléctrica, comenzó a evaluar la aplicación de medidas de ahorro energético en el sistema, como respuesta al «Súper El Niño» que se encuentra en una fase muy fuerte (Reporte Confidencial). Estas medidas buscan mitigar el impacto de futuros eventos climáticos extremos y garantizar la continuidad operativa del metro bajo condiciones adversas.",
+  "fuentes": [
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/video-las-fuertes-lluvias-inundaron-al-menos-dos-estaciones-del-metro-de-caracas/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/08/21/metro-de-caracas-9/"
+    }
+  ]
+}

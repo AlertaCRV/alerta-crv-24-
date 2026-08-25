@@ -97,6 +97,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "emergencia_metro",
+    "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
+    "cerrado": false,
+    "generado": "2026-08-25T13:13:06.723744+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
@@ -124,15 +132,15 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-08-20T03:18:00.323136+00:00",
-    "total_eventos": 1
+    "generado": "2026-08-25T13:11:01.525080+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-08",
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-08-23T02:16:07.455137+00:00",
+    "generado": "2026-08-25T13:10:56.636274+00:00",
     "total_eventos": 1
   },
   {

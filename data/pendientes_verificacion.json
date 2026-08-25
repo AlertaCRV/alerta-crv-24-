@@ -1194,5 +1194,17 @@
   "sismo::Miranda::2026-08-25": {
     "intentos": 2,
     "ultima_vez": "2026-08-25T12:02:54.215352+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T13:10:45.762167+00:00"
+  },
+  "salud_publica::Lara::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T13:10:49.180050+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T13:10:52.592443+00:00"
   }
 }
