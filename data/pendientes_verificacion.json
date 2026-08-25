@@ -1191,24 +1191,36 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T17:55:08.123041+00:00"
   },
-  "sismo::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T19:22:29.142453+00:00"
-  },
-  "inundacion::Miranda::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T19:23:00.071489+00:00"
-  },
-  "infraestructura_agua::Nueva Esparta::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T19:25:05.038631+00:00"
-  },
   "inundacion::Yaracuy::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T19:24:37.058364+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T19:56:09.307949+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T19:56:33.565257+00:00"
+  },
+  "sismo::Miranda::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T19:24:40.553003+00:00"
+    "ultima_vez": "2026-08-25T19:54:04.595573+00:00"
+  },
+  "inundacion::Aragua::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T19:54:28.864954+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T19:54:56.494847+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T19:55:20.768572+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T19:55:45.033234+00:00"
+  },
+  "inundacion::La Guaira::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T19:56:57.899829+00:00"
   }
 }

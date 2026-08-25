@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-25T19:25:05.473203+00:00",
+  "actualizado": "2026-08-25T19:57:22.784363+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-25T17:20:53+00:00"
   },
-  "total_eventos": 274,
+  "total_eventos": 275,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 54,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
-    "infraestructura_agua": 8,
+    "infraestructura_agua": 9,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
@@ -108,6 +108,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 7,
+      "confirmados": 1
+    },
+    {
       "estado": "Falcon",
       "total": 7,
       "confirmados": 1
@@ -116,11 +121,6 @@
       "estado": "Merida",
       "total": 7,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 6,
-      "confirmados": 1
     },
     {
       "estado": "Portuguesa",
@@ -261,7 +261,7 @@
     "Nueva Esparta": {
       "incendio": 2,
       "orden_publico": 3,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 2
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -322,7 +322,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 225,
+    "sin_clasificar": 226,
     "medio": 3,
     "bajo": 5
   },
@@ -379,7 +379,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 8
+      "2026-08": 9
     },
     "accidente_transporte": {
       "2026-08": 1
