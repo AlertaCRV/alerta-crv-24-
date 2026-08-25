@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-25T17:26:19.265451+00:00",
+  "actualizado": "2026-08-25T17:56:46.096127+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-25T17:13:21+00:00"
   },
-  "total_eventos": 271,
+  "total_eventos": 272,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 53,
@@ -22,7 +22,7 @@
     "explosion": 1,
     "infraestructura_agua": 8,
     "accidente_transporte": 1,
-    "derrame_petrolero": 1,
+    "derrame_petrolero": 2,
     "emergencia_metro": 2,
     "ataque_armado": 3
   },
@@ -108,17 +108,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Falcon",
+      "total": 7,
+      "confirmados": 1
+    },
+    {
       "estado": "Merida",
       "total": 7,
       "confirmados": 0
     },
     {
       "estado": "Nueva Esparta",
-      "total": 6,
-      "confirmados": 1
-    },
-    {
-      "estado": "Falcon",
       "total": 6,
       "confirmados": 1
     },
@@ -266,7 +266,8 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 1,
-      "deslizamiento": 3
+      "deslizamiento": 3,
+      "derrame_petrolero": 1
     },
     "Yaracuy": {
       "inundacion": 4,
@@ -321,7 +322,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 222,
+    "sin_clasificar": 223,
     "medio": 3,
     "bajo": 5
   },
@@ -384,7 +385,7 @@
       "2026-08": 1
     },
     "derrame_petrolero": {
-      "2026-08": 1
+      "2026-08": 2
     },
     "emergencia_metro": {
       "2026-08": 2
