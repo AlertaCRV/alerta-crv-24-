@@ -397,5 +397,12 @@
     "fecha_deteccion": "2026-08-25T04:26:36.583266+00:00",
     "fecha_evento_temprana": "2026-08-24T20:55:15+00:00",
     "municipio": "Maneiro"
+  },
+  "orden_publico::Distrito Capital::2026-08-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-25T10:19:48.839937+00:00",
+    "fecha_evento_temprana": "2026-08-25T03:40:02+00:00",
+    "municipio": null
   }
 }

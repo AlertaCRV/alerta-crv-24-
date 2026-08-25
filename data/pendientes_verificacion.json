@@ -1179,16 +1179,20 @@
     "intentos": 1,
     "ultima_vez": "2026-08-25T08:08:39.150301+00:00"
   },
-  "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:47:17.505267+00:00"
-  },
-  "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T09:47:41.656794+00:00"
-  },
   "sismo::Miranda::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T10:18:50.586466+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T09:47:04.268005+00:00"
+    "ultima_vez": "2026-08-25T10:18:53.829377+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T10:18:57.156137+00:00"
+  },
+  "inundacion::Sucre::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T10:19:21.392900+00:00"
   }
 }
