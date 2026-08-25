@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-08-25T17:56:46.096127+00:00",
+  "actualizado": "2026-08-25T18:47:57.450345+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-25T17:13:21+00:00"
   },
-  "total_eventos": 272,
+  "total_eventos": 273,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 53,
+    "inundacion": 54,
     "infraestructura_electrica": 63,
     "deslizamiento": 24,
     "colapso_estructural": 3,
@@ -78,14 +78,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Yaracuy",
+      "total": 12,
+      "confirmados": 1
+    },
+    {
       "estado": "Monagas",
       "total": 11,
       "confirmados": 0
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 11,
-      "confirmados": 1
     },
     {
       "estado": "Sucre",
@@ -270,7 +270,7 @@
       "derrame_petrolero": 1
     },
     "Yaracuy": {
-      "inundacion": 4,
+      "inundacion": 5,
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
@@ -322,7 +322,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 223,
+    "sin_clasificar": 224,
     "medio": 3,
     "bajo": 5
   },
@@ -333,7 +333,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 46
+      "2026-08": 47
     },
     "infraestructura_electrica": {
       "2026-07": 5,
