@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable/?utm_source=rss&utm_medium=rss&utm_campaign=falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable",
+        "fecha": "2026-08-25T17:20:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T17:20:53+00:00",
+    "fecha_evento_temprana": "2026-08-25T17:20:53+00:00",
+    "fecha_deteccion": "2026-08-25T19:24:12.885782+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Yaracuy::2026-08-25",
+    "titulo": "Falla eléctrica en Yaracuy",
+    "texto": "📌 Falla eléctrica en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 25/08/2026, 1:20 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 3:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable/?utm_source=rss&utm_medium=rss&utm_campaign=falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Yaracuy",
     "municipio": "Veroes",

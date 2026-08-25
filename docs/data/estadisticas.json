@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-25T18:47:57.450345+00:00",
+  "actualizado": "2026-08-25T19:25:05.473203+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T17:13:21+00:00"
+    "hasta": "2026-08-25T17:20:53+00:00"
   },
-  "total_eventos": 273,
+  "total_eventos": 274,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 54,
-    "infraestructura_electrica": 63,
+    "infraestructura_electrica": 64,
     "deslizamiento": 24,
     "colapso_estructural": 3,
     "orden_publico": 46,
@@ -73,14 +73,14 @@
       "confirmados": 2
     },
     {
+      "estado": "Yaracuy",
+      "total": 13,
+      "confirmados": 1
+    },
+    {
       "estado": "Trujillo",
       "total": 12,
       "confirmados": 0
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 12,
-      "confirmados": 1
     },
     {
       "estado": "Monagas",
@@ -273,7 +273,7 @@
       "inundacion": 5,
       "sismo": 1,
       "incendio": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 1,
       "deslizamiento": 1
     },
@@ -322,7 +322,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 224,
+    "sin_clasificar": 225,
     "medio": 3,
     "bajo": 5
   },
@@ -337,7 +337,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 58
+      "2026-08": 59
     },
     "deslizamiento": {
       "2026-07": 3,
