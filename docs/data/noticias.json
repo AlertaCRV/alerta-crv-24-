@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Bolívar",
+    "parroquia": "Naricual",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/25/exigen-soluciones-para-acabar-con-la-vigilia-eterna-por-las-lluvias-en-naricual/",
+        "fecha": "2026-08-25T20:45:25+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T20:45:25+00:00",
+    "fecha_evento_temprana": "2026-08-25T20:45:25+00:00",
+    "fecha_deteccion": "2026-08-25T21:04:36.209488+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Anzoategui::2026-08-25",
+    "titulo": "Inundación en Parroquia Naricual, Municipio Simón Bolívar, Anzoategui",
+    "texto": "📌 Inundación en Parroquia Naricual, Municipio Simón Bolívar, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Naricual, Municipio Simón Bolívar, Anzoategui\n🕒 Hecho reportado: 25/08/2026, 4:45 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 5:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/25/exigen-soluciones-para-acabar-con-la-vigilia-eterna-por-las-lluvias-en-naricual/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/25/el-mas-plantea-una-encerrona-para-el-reencuentro-de-sectores-democraticos-25ago/",
+        "fecha": "2026-08-25T19:45:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-25T19:45:00+00:00",
+    "fecha_evento_temprana": "2026-08-25T19:45:00+00:00",
+    "fecha_deteccion": "2026-08-25T21:07:51.703890+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::La Guaira::2026-08-25",
+    "titulo": "Inundación en La Guaira",
+    "texto": "📌 Inundación en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 25/08/2026, 3:45 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 5:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/25/el-mas-plantea-una-encerrona-para-el-reencuentro-de-sectores-democraticos-25ago/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Nueva Esparta",
     "municipio": "Maneiro",
