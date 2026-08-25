@@ -1191,36 +1191,48 @@
     "intentos": 2,
     "ultima_vez": "2026-08-25T17:55:08.123041+00:00"
   },
-  "inundacion::Yaracuy::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T19:56:09.307949+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T19:56:33.565257+00:00"
-  },
   "sismo::Miranda::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T19:54:04.595573+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T20:36:11.542111+00:00"
   },
   "inundacion::Aragua::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T19:54:28.864954+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T20:36:18.298547+00:00"
   },
   "deslizamiento::La Guaira::2026-08-25": {
     "intentos": 1,
     "ultima_vez": "2026-08-25T19:54:56.494847+00:00"
   },
   "orden_publico::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T19:55:20.768572+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T20:37:06.696128+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T19:55:45.033234+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T20:37:30.856079+00:00"
   },
   "inundacion::La Guaira::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T20:38:47.743128+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T19:56:57.899829+00:00"
+    "ultima_vez": "2026-08-25T20:36:08.153106+00:00"
+  },
+  "vialidad::Lara::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T20:36:14.753620+00:00"
+  },
+  "inundacion::Miranda::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T20:36:42.488186+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T20:38:19.776241+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-08-25": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-25T20:39:12.653578+00:00"
   }
 }
