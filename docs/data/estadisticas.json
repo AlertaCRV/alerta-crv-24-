@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-25T02:48:16.271777+00:00",
+  "actualizado": "2026-08-25T04:27:52.040778+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-24T23:28:55+00:00"
+    "hasta": "2026-08-24T23:59:47+00:00"
   },
-  "total_eventos": 264,
+  "total_eventos": 266,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 51,
-    "infraestructura_electrica": 62,
+    "infraestructura_electrica": 63,
     "deslizamiento": 23,
     "colapso_estructural": 3,
     "orden_publico": 45,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
-    "infraestructura_agua": 7,
+    "infraestructura_agua": 8,
     "accidente_transporte": 1,
     "derrame_petrolero": 1,
     "emergencia_metro": 2,
@@ -53,13 +53,13 @@
       "confirmados": 1
     },
     {
-      "estado": "Aragua",
+      "estado": "Anzoategui",
       "total": 14,
       "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
-      "total": 13,
+      "estado": "Aragua",
+      "total": 14,
       "confirmados": 0
     },
     {
@@ -113,6 +113,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 6,
+      "confirmados": 1
+    },
+    {
       "estado": "Falcon",
       "total": 6,
       "confirmados": 1
@@ -121,11 +126,6 @@
       "estado": "Portuguesa",
       "total": 6,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 5,
-      "confirmados": 1
     },
     {
       "estado": "Guarico",
@@ -213,7 +213,7 @@
       "infraestructura_electrica": 3
     },
     "Anzoategui": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -260,7 +260,8 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 3
+      "orden_publico": 3,
+      "infraestructura_agua": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -320,9 +321,9 @@
   "por_severidad": {
     "alto": 18,
     "critico": 22,
-    "sin_clasificar": 217,
+    "sin_clasificar": 218,
     "medio": 3,
-    "bajo": 4
+    "bajo": 5
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -335,7 +336,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 57
+      "2026-08": 58
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -377,7 +378,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 7
+      "2026-08": 8
     },
     "accidente_transporte": {
       "2026-08": 1

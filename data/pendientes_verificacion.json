@@ -1163,40 +1163,36 @@
     "intentos": 1,
     "ultima_vez": "2026-08-25T00:00:24.665737+00:00"
   },
-  "infraestructura_electrica::Anzoategui::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T03:38:52.354765+00:00"
-  },
-  "infraestructura_agua::Nueva Esparta::2026-08-25": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-25T03:39:16.600919+00:00"
-  },
   "inundacion::Distrito Capital::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:38:14.083924+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:25:13.026203+00:00"
   },
   "deslizamiento::Tachira::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:38:17.687270+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:25:16.436863+00:00"
   },
   "orden_publico::Carabobo::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:38:21.185141+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:25:19.978506+00:00"
   },
   "inundacion::Sucre::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:38:28.119872+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:25:47.999351+00:00"
   },
   "inundacion::Lara::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:39:40.861645+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:27:01.701958+00:00"
   },
   "inundacion::Aragua::2026-08-25": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-25T03:40:05.192296+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:27:26.723316+00:00"
   },
   "inundacion::Anzoategui::2026-08-25": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-25T04:27:51.210175+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-25": {
     "intentos": 1,
-    "ultima_vez": "2026-08-25T03:40:29.440314+00:00"
+    "ultima_vez": "2026-08-25T04:25:23.530303+00:00"
   }
 }
