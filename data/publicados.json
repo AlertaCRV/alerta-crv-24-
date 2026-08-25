@@ -1,18 +1,4 @@
 {
-  "deslizamiento::Barinas::2026-08-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T05:18:07.965611+00:00",
-    "fecha_evento_temprana": "2026-08-22T04:00:00+00:00",
-    "municipio": "Bolívar"
-  },
-  "orden_publico::Tachira::2026-08-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-22T05:18:32.256267+00:00",
-    "fecha_evento_temprana": "2026-08-22T04:00:00+00:00",
-    "municipio": "Rafael Urdaneta"
-  },
   "orden_publico::Aragua::2026-08-22": {
     "severidad": "sin_clasificar",
     "confirmado": false,
