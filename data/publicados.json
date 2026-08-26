@@ -13,20 +13,6 @@
     "fecha_evento_temprana": "2026-08-24T12:37:16+00:00",
     "municipio": null
   },
-  "inundacion::La Guaira::2026-08-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-23T13:56:59.372981+00:00",
-    "fecha_evento_temprana": "2026-08-23T11:59:38+00:00",
-    "municipio": "Vargas"
-  },
-  "inundacion::Bolivar::2026-08-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-23T13:59:24.337381+00:00",
-    "fecha_evento_temprana": "2026-08-23T12:26:38+00:00",
-    "municipio": null
-  },
   "emergencia_metro::Distrito Capital::2026-08-23": {
     "severidad": "sin_clasificar",
     "confirmado": false,
