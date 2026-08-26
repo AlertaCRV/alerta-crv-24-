@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/barinas-gremios-de-salud-marchan-contra-la-criminalizacion-la-falta-de-insumos-no-es-culpa-de-los-medicos/",
+        "fecha": "2026-08-26T00:23:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T00:23:37+00:00",
+    "fecha_evento_temprana": "2026-08-26T00:23:37+00:00",
+    "fecha_deteccion": "2026-08-26T04:11:13.807202+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-26",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 25/08/2026, 8:23 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 12:11 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/barinas-gremios-de-salud-marchan-contra-la-criminalizacion-la-falta-de-insumos-no-es-culpa-de-los-medicos/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Distrito Capital",
     "municipio": null,
