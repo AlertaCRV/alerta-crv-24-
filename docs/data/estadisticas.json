@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-26T04:12:54.837035+00:00",
+  "actualizado": "2026-08-26T04:59:05.216475+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-26T00:23:37+00:00"
+    "hasta": "2026-08-26T02:22:28+00:00"
   },
-  "total_eventos": 282,
+  "total_eventos": 284,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
     "infraestructura_electrica": 65,
-    "deslizamiento": 24,
+    "deslizamiento": 25,
     "colapso_estructural": 3,
-    "orden_publico": 48,
+    "orden_publico": 49,
     "salud_publica": 8,
     "crisis_migratoria": 5,
     "incendio": 24,
@@ -38,14 +38,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Zulia",
+      "total": 19,
+      "confirmados": 4
+    },
+    {
       "estado": "Barinas",
       "total": 19,
       "confirmados": 1
-    },
-    {
-      "estado": "Zulia",
-      "total": 18,
-      "confirmados": 4
     },
     {
       "estado": "Carabobo",
@@ -53,12 +53,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Anzoategui",
-      "total": 15,
+      "estado": "Aragua",
+      "total": 16,
       "confirmados": 0
     },
     {
-      "estado": "Aragua",
+      "estado": "Anzoategui",
       "total": 15,
       "confirmados": 0
     },
@@ -171,7 +171,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "sismo": 1,
       "salud_publica": 1,
       "ataque_armado": 1
@@ -283,7 +283,7 @@
       "inundacion": 6,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
-      "deslizamiento": 2,
+      "deslizamiento": 3,
       "salud_publica": 1,
       "tormenta_electrica": 1
     },
@@ -323,7 +323,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 232,
+    "sin_clasificar": 234,
     "medio": 4,
     "bajo": 5
   },
@@ -342,7 +342,7 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 21
+      "2026-08": 22
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -350,7 +350,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 46
+      "2026-08": 47
     },
     "salud_publica": {
       "2026-07": 1,
