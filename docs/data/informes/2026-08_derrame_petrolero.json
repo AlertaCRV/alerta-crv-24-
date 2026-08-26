@@ -3,19 +3,23 @@
   "tipo": "derrame_petrolero",
   "tipo_label": "Derrame petrolero",
   "cerrado": false,
-  "generado": "2026-08-23T05:36:38.932387+00:00",
-  "actualizado_hasta": "2026-08-20T19:49:46.697423+00:00",
-  "total_eventos": 1,
+  "generado": "2026-08-26T09:48:02.171983+00:00",
+  "actualizado_hasta": "2026-08-25T17:54:43.935452+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un único incidente de derrame petrolero, lo que representa un aumento respecto al período anterior en el que no se reportó ningún caso (Comparación con el período anterior (2026-07): 0 evento(s) registrados entonces vs. 1 en este período). \n\nEl único evento documentado corresponde a un presunto derrame de hidrocarburos en la Isla Cotorra, ubicada en el municipio Pedernales del estado Delta Amacuro, reportado el 20 de agosto de 2026 (El Deltano). Según la información publicada, fueron los pescadores de la zona quienes notificaron la posible fuga de hidrocarburos en la zona costera de la isla (El Deltano). \n\nEste hecho constituye el único registro de derrame petrolero para el período analizado, lo que subraya la necesidad de mantener la vigilancia y los protocolos de respuesta de la Cruz Roja Venezolana ante cualquier eventualidad ambiental que pueda afectar a la población y al ecosistema marino (El Deltano).",
+  "narrativa": "En el mes de agosto de 2026 se registraron dos incidentes de derrames de hidrocarburos, frente a cero en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 2 en este período). La Cruz Roja Venezolana mantuvo la vigilancia en ambas zonas para evaluar posibles impactos ambientales y de salud.\n\nEl 20 de agosto de 2026, pescadores de la zona informaron de un presunto derrame de hidrocarburos en la Isla Cotorra, ubicada en el municipio Pedernales, Delta Amacuro (El Deltano). Las autoridades locales fueron notificadas y se iniciaron inspecciones preliminares para determinar la magnitud del vertido.\n\nEn el estado Falcón, pescadores del Golfete de Coro denunciaron un gran derrame de crudo que ha permanecido en la zona durante varios días de agosto (La Patilla). El derrame se localiza en la línea submarina que conecta a Zulia con el Complejo Refinador de Paraguaná, específicamente en la progresiva 58‑59, frente a la Quinta Mira y al poblado Ocorote, una zona rural y pesquera del municipio Miranda (La Patilla). Se reportó la presencia de una película aceitosa que afecta la actividad pesquera y la calidad del agua.\n\nAmbos eventos fueron incorporados al registro de emergencias de la Cruz Roja, que continuará coordinando con las autoridades ambientales y sanitarias para mitigar los efectos y garantizar la seguridad de las comunidades afectadas.",
   "fuentes": [
     {
       "nombre": "El Deltano (Delta Amacuro)",
       "link": "https://eldeltano.com/2026/08/20/alerta-por-presunto-derrame-de-hidrocarburos-en-la-isla-cotorra-pedernales/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/25/nosotros-pensabamos-que-cuando-llegaran-los-gringos-a-pdvsa-la-cosa-iba-a-mejorar-pero-no-se-ha-visto-ningun-cambio/"
     }
   ]
 }
