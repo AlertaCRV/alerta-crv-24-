@@ -20,27 +20,6 @@
     "fecha_evento_temprana": "2026-08-23T22:03:44+00:00",
     "municipio": "José Félix Ribas"
   },
-  "inundacion::Anzoategui::2026-08-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-23T19:56:40.836920+00:00",
-    "fecha_evento_temprana": "2026-08-23T18:52:25+00:00",
-    "municipio": "Aragua"
-  },
-  "deslizamiento::Aragua::2026-08-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-23T19:59:17.252728+00:00",
-    "fecha_evento_temprana": "2026-08-23T18:40:19+00:00",
-    "municipio": "San Sebastián"
-  },
-  "salud_publica::Distrito Capital::2026-08-23": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-23T20:55:19.698592+00:00",
-    "fecha_evento_temprana": "2026-08-23T19:40:19+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Zulia::2026-08-23": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -369,5 +348,26 @@
     "fecha_deteccion": "2026-08-26T18:52:11.937117+00:00",
     "fecha_evento_temprana": "2026-08-26T18:28:24+00:00",
     "municipio": "San Cristóbal"
+  },
+  "salud_publica::Distrito Capital::2026-08-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-26T21:23:15.339014+00:00",
+    "fecha_evento_temprana": "2026-08-26T21:05:21+00:00",
+    "municipio": null
+  },
+  "salud_publica::Barinas::2026-08-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-26T21:24:40.175964+00:00",
+    "fecha_evento_temprana": "2026-08-26T16:45:00+00:00",
+    "municipio": "Sosa"
+  },
+  "infraestructura_agua::Anzoategui::2026-08-26": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-26T21:24:51.698373+00:00",
+    "fecha_evento_temprana": "2026-08-26T16:06:10+00:00",
+    "municipio": "Simón Rodríguez"
   }
 }

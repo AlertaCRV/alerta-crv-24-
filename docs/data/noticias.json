@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/salud/ministerio-de-salud-emite-alerta-sanitaria-por-un-lote-falsificado-de-medicamento-oncologico/",
+        "fecha": "2026-08-26T21:05:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T21:05:21+00:00",
+    "fecha_evento_temprana": "2026-08-26T21:05:21+00:00",
+    "fecha_deteccion": "2026-08-26T21:23:15.339014+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Distrito Capital::2026-08-26",
+    "titulo": "Salud pública en Distrito Capital",
+    "texto": "📌 Salud pública en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 26/08/2026, 5:05 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 5:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/salud/ministerio-de-salud-emite-alerta-sanitaria-por-un-lote-falsificado-de-medicamento-oncologico/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Barinas",
+    "municipio": "Sosa",
+    "parroquia": "Simón Bolívar",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/26/barinas-comunidades-de-sosa-y-rojas-denuncian-propagacion-de-fiebre-hemorragica-venezolana-26ago/",
+        "fecha": "2026-08-26T16:45:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T16:45:00+00:00",
+    "fecha_evento_temprana": "2026-08-26T16:45:00+00:00",
+    "fecha_deteccion": "2026-08-26T21:24:40.175964+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "salud_publica::Barinas::2026-08-26",
+    "titulo": "Salud pública en Parroquia Simón Bolívar, Municipio Sosa, Barinas",
+    "texto": "📌 Salud pública en Parroquia Simón Bolívar, Municipio Sosa, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Simón Bolívar, Municipio Sosa, Barinas\n🕒 Hecho reportado: 26/08/2026, 12:45 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 5:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/26/barinas-comunidades-de-sosa-y-rojas-denuncian-propagacion-de-fiebre-hemorragica-venezolana-26ago/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/26/sectores-de-el-tigre-registran-mas-de-20-horas-sin-luz-y-sin-agua-26ago/",
+        "fecha": "2026-08-26T16:06:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T16:06:10+00:00",
+    "fecha_evento_temprana": "2026-08-26T16:06:10+00:00",
+    "fecha_deteccion": "2026-08-26T21:24:51.698373+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Anzoategui::2026-08-26",
+    "titulo": "Falla de agua en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Falla de agua en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 26/08/2026, 12:06 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 5:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/26/sectores-de-el-tigre-registran-mas-de-20-horas-sin-luz-y-sin-agua-26ago/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "Tachira",
     "municipio": "San Cristóbal",
