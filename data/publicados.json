@@ -362,5 +362,12 @@
     "fecha_deteccion": "2026-08-26T04:57:47.296106+00:00",
     "fecha_evento_temprana": "2026-08-26T02:22:28+00:00",
     "municipio": "Maracaibo"
+  },
+  "sismo::Tachira::2026-08-26::mag5.1": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-26T18:52:11.937117+00:00",
+    "fecha_evento_temprana": "2026-08-26T18:28:24+00:00",
+    "municipio": "San Cristóbal"
   }
 }
