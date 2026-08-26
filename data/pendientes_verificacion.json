@@ -1279,32 +1279,56 @@
     "intentos": 2,
     "ultima_vez": "2026-08-26T16:53:19.512540+00:00"
   },
-  "salud_publica::Distrito Capital::2026-08-26": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-26T18:52:18.900398+00:00"
-  },
-  "salud_publica::Barinas::2026-08-26": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-26T18:52:29.364328+00:00"
-  },
-  "infraestructura_agua::Anzoategui::2026-08-26": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-26T18:52:32.733590+00:00"
-  },
   "sismo::Distrito Capital::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T18:52:04.575530+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T21:23:22.148299+00:00"
   },
   "sismo::Sucre::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T18:52:08.151731+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T21:23:25.676961+00:00"
   },
   "sismo::La Guaira::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T18:52:15.434285+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T21:23:11.835323+00:00"
   },
   "deslizamiento::La Guaira::2026-08-26": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T21:24:36.896292+00:00"
+  },
+  "inundacion::Miranda::2026-08-26": {
     "intentos": 1,
-    "ultima_vez": "2026-08-26T18:52:25.942700+00:00"
+    "ultima_vez": "2026-08-26T21:23:18.636912+00:00"
+  },
+  "sismo::Tachira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:23:29.162347+00:00"
+  },
+  "ataque_armado::Carabobo::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:23:32.666317+00:00"
+  },
+  "vialidad::Tachira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:23:44.154615+00:00"
+  },
+  "sismo::Carabobo::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:23:55.682460+00:00"
+  },
+  "salud_publica::Monagas::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:23:59.062935+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:24:10.562263+00:00"
+  },
+  "salud_publica::Yaracuy::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:24:22.162561+00:00"
+  },
+  "inundacion::Yaracuy::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T21:24:25.469786+00:00"
   }
 }

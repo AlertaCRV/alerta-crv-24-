@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-08-26T18:52:33.256431+00:00",
+  "actualizado": "2026-08-26T21:24:53.175794+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-26T18:28:24+00:00"
+    "hasta": "2026-08-26T21:05:21+00:00"
   },
-  "total_eventos": 285,
+  "total_eventos": 288,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
@@ -12,7 +12,7 @@
     "deslizamiento": 25,
     "colapso_estructural": 3,
     "orden_publico": 49,
-    "salud_publica": 8,
+    "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 24,
     "vialidad": 10,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
-    "infraestructura_agua": 9,
+    "infraestructura_agua": 10,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
@@ -29,11 +29,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 47,
+      "total": 48,
       "confirmados": 4
     },
     {
       "estado": "Lara",
+      "total": 20,
+      "confirmados": 1
+    },
+    {
+      "estado": "Barinas",
       "total": 20,
       "confirmados": 1
     },
@@ -43,23 +48,18 @@
       "confirmados": 4
     },
     {
-      "estado": "Barinas",
-      "total": 19,
-      "confirmados": 1
-    },
-    {
       "estado": "Carabobo",
       "total": 16,
       "confirmados": 1
     },
     {
-      "estado": "Aragua",
+      "estado": "Anzoategui",
       "total": 16,
       "confirmados": 0
     },
     {
-      "estado": "Anzoategui",
-      "total": 15,
+      "estado": "Aragua",
+      "total": 16,
       "confirmados": 0
     },
     {
@@ -189,7 +189,7 @@
       "emergencia_metro": 2,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
-      "salud_publica": 1
+      "salud_publica": 2
     },
     "Trujillo": {
       "inundacion": 1,
@@ -206,7 +206,8 @@
       "infraestructura_electrica": 3,
       "vialidad": 4,
       "orden_publico": 4,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "salud_publica": 1
     },
     "Sucre": {
       "inundacion": 2,
@@ -218,7 +219,7 @@
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "inundacion": 3
     },
     "Bolivar": {
@@ -324,7 +325,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 235,
+    "sin_clasificar": 238,
     "medio": 4,
     "bajo": 5
   },
@@ -355,7 +356,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 7
+      "2026-08": 9
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -381,7 +382,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 9
+      "2026-08": 10
     },
     "accidente_transporte": {
       "2026-08": 1
