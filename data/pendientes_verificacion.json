@@ -1252,19 +1252,31 @@
     "ultima_vez": "2026-08-26T00:29:23.963605+00:00"
   },
   "deslizamiento::Aragua::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T02:13:14.696092+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T04:11:07.019154+00:00"
   },
   "deslizamiento::Tachira::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T02:13:18.161566+00:00"
-  },
-  "orden_publico::Barinas::2026-08-26": {
     "intentos": 2,
-    "ultima_vez": "2026-08-26T03:22:06.961217+00:00"
+    "ultima_vez": "2026-08-26T04:11:10.417394+00:00"
   },
   "orden_publico::Zulia::2026-08-26": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T04:11:37.992808+00:00"
+  },
+  "sismo::Tachira::2026-08-26": {
     "intentos": 1,
-    "ultima_vez": "2026-08-26T03:22:10.333746+00:00"
+    "ultima_vez": "2026-08-26T04:11:41.401896+00:00"
+  },
+  "tormenta_electrica::Barinas::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T04:12:05.578807+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T04:12:29.754117+00:00"
+  },
+  "inundacion::La Guaira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T04:12:53.939293+00:00"
   }
 }

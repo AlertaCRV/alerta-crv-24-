@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-25T22:51:38.578497+00:00",
+  "actualizado": "2026-08-26T04:12:54.837035+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-25T21:36:41+00:00"
+    "hasta": "2026-08-26T00:23:37+00:00"
   },
-  "total_eventos": 281,
+  "total_eventos": 282,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 56,
     "infraestructura_electrica": 65,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 47,
+    "orden_publico": 48,
     "salud_publica": 8,
     "crisis_migratoria": 5,
     "incendio": 24,
@@ -38,14 +38,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Barinas",
+      "total": 19,
+      "confirmados": 1
+    },
+    {
       "estado": "Zulia",
       "total": 18,
       "confirmados": 4
-    },
-    {
-      "estado": "Barinas",
-      "total": 18,
-      "confirmados": 1
     },
     {
       "estado": "Carabobo",
@@ -205,7 +205,7 @@
       "inundacion": 4,
       "infraestructura_electrica": 3,
       "vialidad": 4,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_agua": 1
     },
     "Sucre": {
@@ -323,7 +323,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 23,
-    "sin_clasificar": 231,
+    "sin_clasificar": 232,
     "medio": 4,
     "bajo": 5
   },
@@ -350,7 +350,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 45
+      "2026-08": 46
     },
     "salud_publica": {
       "2026-07": 1,
