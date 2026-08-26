@@ -1279,8 +1279,12 @@
     "intentos": 1,
     "ultima_vez": "2026-08-26T12:05:07.850649+00:00"
   },
-  "ataque_armado::Distrito Capital::2026-08-26": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-26T14:10:27.908480+00:00"
+  "infraestructura_electrica::Monagas::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T15:54:56.739980+00:00"
+  },
+  "inundacion::Yaracuy::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T15:55:03.911510+00:00"
   }
 }
