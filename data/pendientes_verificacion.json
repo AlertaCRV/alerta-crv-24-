@@ -1264,11 +1264,23 @@
     "ultima_vez": "2026-08-26T07:09:41.771106+00:00"
   },
   "orden_publico::Barinas::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T11:38:58.867845+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T12:04:43.639498+00:00"
   },
   "inundacion::Yaracuy::2026-08-26": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T12:05:32.018735+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-26": {
     "intentos": 1,
-    "ultima_vez": "2026-08-26T11:39:47.206428+00:00"
+    "ultima_vez": "2026-08-26T12:04:14.918625+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T12:04:18.340307+00:00"
+  },
+  "orden_publico::Zulia::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T12:05:07.850649+00:00"
   }
 }
