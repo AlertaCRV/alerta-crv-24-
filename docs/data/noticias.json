@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Aragua",
+    "municipio": "Camatagua",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/618359/muertes-desaparecidos-y-destruccion-de-viviendas-es-el-saldo-de-las-lluvias/",
+        "fecha": "2026-08-26T01:20:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T01:20:20+00:00",
+    "fecha_evento_temprana": "2026-08-26T01:20:20+00:00",
+    "fecha_deteccion": "2026-08-26T04:57:15.945101+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Aragua::2026-08-26",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Camatagua, Aragua",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Camatagua, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Camatagua, Aragua\n🕒 Hecho reportado: 25/08/2026, 9:20 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 12:57 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/618359/muertes-desaparecidos-y-destruccion-de-viviendas-es-el-saldo-de-las-lluvias/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/25/juan-pablo-guanipa-todos-los-dias-estamos-sin-luz-por-cuatro-seis-ocho-horas-y-mas-en-el-estado-zulia/",
+        "fecha": "2026-08-26T02:22:28+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-26T02:22:28+00:00",
+    "fecha_evento_temprana": "2026-08-26T02:22:28+00:00",
+    "fecha_deteccion": "2026-08-26T04:57:47.296106+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Zulia::2026-08-26",
+    "titulo": "Orden público en Municipio Maracaibo, Zulia",
+    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 25/08/2026, 10:22 p.m.\n🔎 Detectado por el sistema: 26/08/2026, 12:57 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/25/juan-pablo-guanipa-todos-los-dias-estamos-sin-luz-por-cuatro-seis-ocho-horas-y-mas-en-el-estado-zulia/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Barinas",
     "municipio": null,
