@@ -3,15 +3,15 @@
   "tipo": "ataque_armado",
   "tipo_label": "Ataque armado",
   "cerrado": false,
-  "generado": "2026-08-25T13:11:01.525080+00:00",
-  "actualizado_hasta": "2026-08-24T10:04:42.253665+00:00",
-  "total_eventos": 3,
+  "generado": "2026-08-26T02:13:59.730268+00:00",
+  "actualizado_hasta": "2026-08-25T22:48:44.679752+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron tres eventos de ataque armado, según la comparación proporcionada, frente a cero en el mes anterior (2026‑07). Esta variación indica un aumento en la incidencia de este tipo de incidentes en el período analizado.\n\nSin embargo, las fuentes periodísticas suministradas para este informe no contienen información específica sobre incidentes de ataque armado ocurridos en agosto de 2026. Los artículos revisados tratan temas distintos, como el tributo a la exjugadora de baloncesto Delia Vera (Diario La Nación), la capacitación bancaria impulsada por el Departamento de Estado de EE. UU. (Efecto Cocuyo) y la denuncia de hostigamiento a un abogado en el Palacio de Justicia (El Pitazo). Ninguno de ellos menciona hechos, cifras, ubicaciones o daños relacionados con ataques armados, por lo que no es posible describir eventos concretos en esta categoría con base en los documentos disponibles.\n\nLa ausencia de reportes detallados subraya la necesidad de reforzar la recolección y difusión de información sobre incidentes de violencia armada, a fin de que la Cruz Roja Venezolana pueda responder de manera oportuna y coordinada. Mantener un registro preciso y actualizado es esencial para la planificación de recursos y la asistencia a las comunidades afectadas.",
+  "narrativa": "En el mes de agosto de 2026 la Cruz Roja Venezolana registró cuatro incidentes clasificados como ataques armados, frente a ninguno registrado en el mes anterior (julio de 2026). Esta cifra representa un incremento significativo en la actividad violenta que afecta la seguridad de la población y la capacidad de respuesta humanitaria.\n\nLos cuatro eventos fueron contabilizados por el sistema de monitoreo interno, aunque los medios periodísticos verificados consultados para este informe no proporcionan detalles específicos sobre la ubicación, fecha o consecuencias de dichos ataques. La ausencia de información adicional subraya la necesidad de reforzar la recolección de datos y la difusión de informes precisos por parte de las autoridades y los medios locales.\n\nAnte este escenario, la Cruz Roja continuará reforzando sus protocolos de alerta y coordinación con organismos de seguridad y salud, con el objetivo de garantizar una respuesta rápida y eficaz ante futuros incidentes de violencia armada, y de mitigar el impacto en las comunidades vulnerables.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/25/javier-tarazona-propuso-otra-ley-de-amnistia-que-funcione-para-liberar-a-todos-los-presos-politicos/"
     }
   ]
 }
