@@ -1280,11 +1280,23 @@
     "ultima_vez": "2026-08-26T12:05:07.850649+00:00"
   },
   "infraestructura_electrica::Monagas::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T15:54:56.739980+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T16:53:19.512540+00:00"
   },
   "inundacion::Yaracuy::2026-08-26": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T16:53:22.777699+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-08-26": {
     "intentos": 1,
-    "ultima_vez": "2026-08-26T15:55:03.911510+00:00"
+    "ultima_vez": "2026-08-26T16:53:15.898652+00:00"
+  },
+  "salud_publica::Barinas::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T16:53:26.172953+00:00"
+  },
+  "infraestructura_agua::Anzoategui::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T16:53:29.634899+00:00"
   }
 }
