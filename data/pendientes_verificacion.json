@@ -1266,5 +1266,17 @@
   "orden_publico::Barinas::2026-08-26": {
     "intentos": 2,
     "ultima_vez": "2026-08-26T08:56:25.426233+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T10:22:06.653039+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T10:22:10.087298+00:00"
+  },
+  "orden_publico::Zulia::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T10:22:34.289840+00:00"
   }
 }
