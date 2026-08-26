@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-08",
+  "tipo": "crisis_migratoria",
+  "tipo_label": "Crisis migratoria",
+  "cerrado": false,
+  "generado": "2026-08-26T03:22:22.695923+00:00",
+  "actualizado_hasta": "2026-08-23T16:12:03.274331+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 4,
+    "actual": 1
+  },
+  "narrativa": "En el mes de agosto de 2026 el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró únicamente un evento relacionado con la crisis migratoria, una caída notable respecto a los cuatro eventos que se habían documentado en el período anterior (julio de 2026).\\n\\nHasta la fecha de corte, los informes periodísticos disponibles no describen con detalle cuál fue ese único incidente migratorio, lo que sugiere una menor incidencia de emergencias de este tipo durante el mes analizado.\\n\\nEn el mismo contexto, La Patilla informó sobre la profunda erosión institucional que está experimentando la Fuerza Armada Nacional Bolivariana (FANB), un proceso que, aunque no está directamente vinculado a un evento migratorio concreto, podría influir en la dinámica migratoria al afectar la capacidad de respuesta del Estado ante situaciones de desplazamiento (La Patilla).",
+  "fuentes": [
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/la-fanb-ante-una-encrucijada-despolitizarse-o-seguir-perdiendo-capacidad-institucional/"
+    }
+  ]
+}
