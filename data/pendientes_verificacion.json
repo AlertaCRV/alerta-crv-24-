@@ -1238,5 +1238,25 @@
   "infraestructura_electrica::Zulia::2026-08-25": {
     "intentos": 1,
     "ultima_vez": "2026-08-25T23:48:08.137797+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T00:29:13.466207+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T00:29:17.273891+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T00:29:20.678873+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T00:29:23.963605+00:00"
+  },
+  "inundacion::La Guaira::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T00:29:48.320614+00:00"
   }
 }
