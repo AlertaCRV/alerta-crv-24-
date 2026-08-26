@@ -1267,20 +1267,20 @@
     "intentos": 2,
     "ultima_vez": "2026-08-26T12:04:43.639498+00:00"
   },
-  "inundacion::Yaracuy::2026-08-26": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-26T12:05:32.018735+00:00"
-  },
   "deslizamiento::Aragua::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T12:04:14.918625+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T13:15:19.637034+00:00"
   },
   "deslizamiento::Tachira::2026-08-26": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-26T12:04:18.340307+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-26T13:15:23.097625+00:00"
   },
   "orden_publico::Zulia::2026-08-26": {
     "intentos": 1,
     "ultima_vez": "2026-08-26T12:05:07.850649+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-08-26": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-26T13:15:26.603053+00:00"
   }
 }
