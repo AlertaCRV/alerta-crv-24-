@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "tormenta_electrica",
+    "tipo_label": "Tormenta eléctrica",
+    "cerrado": false,
+    "generado": "2026-08-27T21:08:29.650373+00:00",
+    "total_eventos": 4
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
@@ -68,8 +76,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-20T03:19:17.581795+00:00",
-    "total_eventos": 12
+    "generado": "2026-08-27T21:06:08.076347+00:00",
+    "total_eventos": 21
   },
   {
     "periodo": "2026-08",
@@ -108,7 +116,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-08-26T13:15:36.179628+00:00",
+    "generado": "2026-08-27T21:05:37.952027+00:00",
     "total_eventos": 22
   },
   {
