@@ -1330,5 +1330,57 @@
   "inundacion::Yaracuy::2026-08-26": {
     "intentos": 1,
     "ultima_vez": "2026-08-26T21:24:25.469786+00:00"
+  },
+  "inundacion::Aragua::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:57:49.567010+00:00"
+  },
+  "sismo::La Guaira::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:57:52.904830+00:00"
+  },
+  "orden_publico::Lara::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:57:56.374919+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:57:59.832003+00:00"
+  },
+  "vialidad::Tachira::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:03.274801+00:00"
+  },
+  "sismo::Carabobo::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:06.752946+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:10.291770+00:00"
+  },
+  "salud_publica::Barinas::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:13.702986+00:00"
+  },
+  "salud_publica::Monagas::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:25.158097+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:28.489495+00:00"
+  },
+  "sequia::Lara::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:58:40.007218+00:00"
+  },
+  "deslizamiento::Aragua::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:59:04.684843+00:00"
+  },
+  "infraestructura_agua::Anzoategui::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T00:59:08.101512+00:00"
   }
 }
