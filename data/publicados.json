@@ -1,66 +1,10 @@
 {
-  "inundacion::Distrito Capital::2026-08-22": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T03:20:13.863748+00:00",
-    "fecha_evento_temprana": "2026-08-23T19:19:49+00:00",
-    "municipio": null
-  },
   "inundacion::Miranda::2026-08-22": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-08-24T14:03:29.075947+00:00",
     "fecha_evento_temprana": "2026-08-24T12:37:16+00:00",
     "municipio": null
-  },
-  "inundacion::Aragua::2026-08-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T09:03:44.972822+00:00",
-    "fecha_evento_temprana": "2026-08-23T22:03:44+00:00",
-    "municipio": "José Félix Ribas"
-  },
-  "inundacion::Tachira::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T04:16:20.844411+00:00",
-    "fecha_evento_temprana": "2026-08-24T00:29:29+00:00",
-    "municipio": "Junín"
-  },
-  "inundacion::Merida::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T04:16:45.127283+00:00",
-    "fecha_evento_temprana": "2026-08-24T01:00:43+00:00",
-    "municipio": "Aricagua"
-  },
-  "deslizamiento::Yaracuy::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T04:19:59.443493+00:00",
-    "fecha_evento_temprana": "2026-08-24T01:13:46+00:00",
-    "municipio": null
-  },
-  "incendio::Carabobo::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T05:12:45.810377+00:00",
-    "fecha_evento_temprana": "2026-08-24T02:40:41+00:00",
-    "municipio": "Libertador"
-  },
-  "incendio::Distrito Capital::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T05:58:13.612454+00:00",
-    "fecha_evento_temprana": "2026-08-24T02:40:41+00:00",
-    "municipio": "Libertador"
-  },
-  "ataque_armado::Tachira::2026-08-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-24T10:04:42.253665+00:00",
-    "fecha_evento_temprana": "2026-08-24T05:00:00+00:00",
-    "municipio": "Junín"
   },
   "inundacion::Carabobo::2026-08-24": {
     "severidad": "sin_clasificar",

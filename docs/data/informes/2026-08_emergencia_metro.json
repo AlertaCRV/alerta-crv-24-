@@ -3,7 +3,7 @@
   "tipo": "emergencia_metro",
   "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
   "cerrado": false,
-  "generado": "2026-08-26T14:10:32.792200+00:00",
+  "generado": "2026-08-27T11:04:26.320087+00:00",
   "actualizado_hasta": "2026-08-23T14:28:48.348714+00:00",
   "total_eventos": 2,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 2
   },
-  "narrativa": "En el período de agosto 2026 se registraron dos emergencias en el Metro de Caracas, frente a cero en julio 2026, según los datos comparativos proporcionados.\n\nDurante la noche del sábado 22 de agosto, intensas lluvias asociadas a la onda tropical 40 inundaron al menos dos estaciones del Metro de Caracas, concretamente Mercado y La Rinconada, obligando a suspender el servicio y poniendo en riesgo a los usuarios que intentaban regresar a sus hogares (La Patilla). Las imágenes difundidas en redes sociales mostraron ambas estaciones totalmente anegadas, lo que provocó la interrupción temporal del tránsito ferroviario en la zona de transferencia hacia el ferrocarril de los Valles del Tuy (La Patilla).\n\nParalelamente, la directiva del Metro de Caracas, en coordinación con el Ministerio de Energía Eléctrica, inició una evaluación de medidas de ahorro energético ante el fenómeno climático «Súper El Niño», que se encuentra en una fase muy fuerte (Reporte Confidencial (Nueva Esparta)). Esta iniciativa busca reducir el consumo eléctrico del sistema de transporte público mientras se mitigan los efectos adversos del clima extremo, constituyéndose en una respuesta institucional a la emergencia climática que afecta la operatividad del Metro.",
+  "narrativa": "Durante el mes de agosto de 2026 se registraron dos eventos de emergencia en el Metro de Caracas, frente a ninguno en julio de 2026 (comparación 0 evento(s) registrados entonces vs. 2 en este período). \n\nLas fuertes lluvias de la noche del sábado provocaron la inundación de al menos dos estaciones del Metro de Caracas, concretamente las estaciones Mercado y La Rinconada, que quedaron totalmente anegadas durante el paso de la onda tropical 40, obligando a la suspensión del servicio y poniendo en riesgo a los usuarios que intentaban regresar a sus hogares (La Patilla). \n\nAnte la amenaza del fenómeno climático «Súper El Niño», la directiva del Metro de Caracas, en coordinación con el Ministerio de Energía Eléctrica, evaluó la aplicación de medidas de ahorro energético en el sistema, como parte de la respuesta institucional a la situación climática extrema (Reporte Confidencial).",
   "fuentes": [
     {
       "nombre": "La Patilla",
