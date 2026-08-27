@@ -1331,21 +1331,17 @@
     "intentos": 1,
     "ultima_vez": "2026-08-26T21:24:25.469786+00:00"
   },
-  "inundacion::Aragua::2026-08-27": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-27T11:03:34.032133+00:00"
-  },
   "sismo::La Guaira::2026-08-27": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-27T00:57:52.904830+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-27T21:04:24.215075+00:00"
   },
   "orden_publico::Lara::2026-08-27": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-27T00:57:56.374919+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-27T21:03:58.662783+00:00"
   },
   "salud_publica::Distrito Capital::2026-08-27": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-27T00:57:59.832003+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-27T21:04:09.300793+00:00"
   },
   "vialidad::Tachira::2026-08-27": {
     "intentos": 1,
@@ -1368,8 +1364,8 @@
     "ultima_vez": "2026-08-27T00:58:25.158097+00:00"
   },
   "inundacion::Distrito Capital::2026-08-27": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-27T00:58:28.489495+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-27T21:05:10.657466+00:00"
   },
   "sequia::Lara::2026-08-27": {
     "intentos": 2,
@@ -1382,5 +1378,33 @@
   "infraestructura_agua::Anzoategui::2026-08-27": {
     "intentos": 1,
     "ultima_vez": "2026-08-27T00:59:08.101512+00:00"
+  },
+  "infraestructura_electrica::Miranda::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:03:51.352128+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:03:54.902551+00:00"
+  },
+  "inundacion::Apure::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:04:02.231319+00:00"
+  },
+  "inundacion::Tachira::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:04:05.792777+00:00"
+  },
+  "salud_publica::Carabobo::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:04:12.812112+00:00"
+  },
+  "inundacion::Miranda::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:04:35.950635+00:00"
+  },
+  "deslizamiento::La Guaira::2026-08-27": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-27T21:04:47.446072+00:00"
   }
 }

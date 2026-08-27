@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-08",
+  "tipo": "tormenta_electrica",
+  "tipo_label": "Tormenta eléctrica",
+  "cerrado": false,
+  "generado": "2026-08-27T21:08:29.650373+00:00",
+  "actualizado_hasta": "2026-08-24T18:20:56.957081+00:00",
+  "total_eventos": 4,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 2,
+    "actual": 4
+  },
+  "narrativa": "En el mes de agosto de 2026 se registraron cuatro eventos de tormenta eléctrica, duplicando la cifra del mes anterior, que había contabilizado solo dos incidentes (comparación proporcionada). Este incremento evidencia una mayor actividad meteorológica adversa en el territorio nacional.\n\nEl Instituto Nacional de Meteorología e Hidrología (Inameh) emitió un boletín el 21 de agosto indicando la presencia de lluvias con actividad eléctrica, chubascos e incremento de nubosidad en gran parte de Venezuela, como consecuencia del desplazamiento de la Onda Tropical N° 39 y la vigilancia de la Onda Tropical N° 40 sobre el Atlántico (El Periodico de Monagas). El informe señaló que la interacción con la zona de convergencia intertropical mantendría el mal tiempo, con especial impacto en Caracas, Zulia, los Andes y el centro del país (Reporte Confidencial).\n\nEl 23 de agosto se observaron impresionantes trombas marinas en los lagos de Maracaibo (estado Zulia) y Valencia (estado Aragua). Según el comisionado de Gestión de Riesgos de la alcaldía de San Diego, estas formaciones no suelen causar víctimas humanas, pero sí generaron daños materiales en ambas regiones (El Pitazo). Los residentes captaron los fenómenos en video, lo que provocó asombro en redes sociales.\n\nEn respuesta a la mayor frecuencia de fenómenos eléctricos, la Cruz Roja Venezolana mantiene la vigilancia y la preparación de equipos de respuesta en las áreas más afectadas, reforzando la coordinación con el Inameh y las autoridades locales para mitigar los impactos de futuras tormentas.",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/inameh-reporta-lluvias-con-tormentas-en-varias-regiones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/08/21/inameh-preve-lluvias-2/"
+    }
+  ]
+}

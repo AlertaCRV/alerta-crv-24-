@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/hallan-el-cuerpo-de-un-hombre-arrastrado-por-la-crecida-del-rio-aragua/",
+        "fecha": "2026-08-27T14:53:31+00:00"
+      },
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/localizan-cuerpo-de-comerciante-arrastrado-por-el-rio-aragua-durante-fuertes-lluvias/",
+        "fecha": "2026-08-27T13:51:57+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-27T14:53:31+00:00",
+    "fecha_evento_temprana": "2026-08-27T13:51:57+00:00",
+    "fecha_deteccion": "2026-08-27T21:04:58.909275+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Aragua::2026-08-27",
+    "titulo": "Inundación en Aragua",
+    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 27/08/2026, 10:53 a.m.\n🔎 Detectado por el sistema: 27/08/2026, 5:04 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/hallan-el-cuerpo-de-un-hombre-arrastrado-por-la-crecida-del-rio-aragua/\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/localizan-cuerpo-de-comerciante-arrastrado-por-el-rio-aragua-durante-fuertes-lluvias/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -4708,270 +4739,5 @@
     "clave_dedup": "orden_publico::Sucre::2026-08-14",
     "titulo": "Orden público en Parroquia Yaguaraparo, Municipio Cajigal, Sucre",
     "texto": "📌 Orden público en Parroquia Yaguaraparo, Municipio Cajigal, Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Yaguaraparo, Municipio Cajigal, Sucre\n🕒 Hecho reportado: 13/08/2026, 9:27 p.m.\n🔎 Detectado por el sistema: 14/08/2026, 1:24 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/habitantes-de-yaguaraparo-en-sucre-realizaron-protestas-y-cacerolazos-por-la-crisis-electrica/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/pagos-con-tarjeta-de-debito-tuvieron-fallas-por-fluctuacion-electrica/",
-        "fecha": "2026-08-13T13:59:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-13T13:59:53+00:00",
-    "fecha_evento_temprana": "2026-08-13T13:59:53+00:00",
-    "fecha_deteccion": "2026-08-13T15:42:22.679192+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Aragua::2026-08-13",
-    "titulo": "Falla eléctrica en Aragua",
-    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 13/08/2026, 9:59 a.m.\n🔎 Detectado por el sistema: 13/08/2026, 11:42 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/pagos-con-tarjeta-de-debito-tuvieron-fallas-por-fluctuacion-electrica/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/tres-sismos-de-baja-y-moderada-magnitud-se-registran-en-sectores-de-lara-trujillo-y-barinas-este-jueves-13-ag/",
-        "fecha": "2026-08-13T14:39:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-13T14:39:28+00:00",
-    "fecha_evento_temprana": "2026-08-13T14:39:28+00:00",
-    "fecha_deteccion": "2026-08-13T15:42:43.311641+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "Barinas",
-      "Trujillo"
-    ],
-    "clave_dedup": "sismo::Lara::2026-08-13",
-    "titulo": "Sismo en Lara",
-    "texto": "📌 Sismo en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 13/08/2026, 10:39 a.m.\n🔎 Detectado por el sistema: 13/08/2026, 11:42 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/tres-sismos-de-baja-y-moderada-magnitud-se-registran-en-sectores-de-lara-trujillo-y-barinas-este-jueves-13-ag/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": "San Cristóbal",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/",
-        "fecha": "2026-08-12T22:12:49+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T22:12:49+00:00",
-    "fecha_evento_temprana": "2026-08-12T22:12:49+00:00",
-    "fecha_deteccion": "2026-08-13T05:26:54.547369+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-08-12",
-    "titulo": "Falla eléctrica en Municipio San Cristóbal, Tachira",
-    "texto": "📌 Falla eléctrica en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 12/08/2026, 6:12 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
-        "fecha": "2026-08-12T21:43:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:43:17+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
-    "fecha_deteccion": "2026-08-13T05:26:57.924802+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-12",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
-        "fecha": "2026-08-12T21:43:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:43:17+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
-    "fecha_deteccion": "2026-08-13T05:27:01.348776+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-08-12",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Apure",
-    "municipio": "Páez",
-    "parroquia": "Urdaneta",
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/",
-        "fecha": "2026-08-12T21:53:50+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:53:50+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:53:50+00:00",
-    "fecha_deteccion": "2026-08-13T05:27:35.277832+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Apure::2026-08-11",
-    "titulo": "Inundación en Parroquia Urdaneta, Municipio Páez, Apure",
-    "texto": "📌 Inundación en Parroquia Urdaneta, Municipio Páez, Apure\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Urdaneta, Municipio Páez, Apure\n🕒 Hecho reportado: 12/08/2026, 5:53 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Apure",
-    "municipio": "San Fernando",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/",
-        "fecha": "2026-08-12T21:51:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:51:32+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:51:32+00:00",
-    "fecha_deteccion": "2026-08-13T05:27:38.594250+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Apure::2026-08-12",
-    "titulo": "Orden público en Municipio San Fernando, Apure",
-    "texto": "📌 Orden público en Municipio San Fernando, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Fernando, Apure\n🕒 Hecho reportado: 12/08/2026, 5:51 p.m.\n🔎 Detectado por el sistema: 13/08/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/",
-        "fecha": "2026-08-12T21:56:01+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:56:01+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:56:01+00:00",
-    "fecha_deteccion": "2026-08-12T23:29:47.527325+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-08-12",
-    "titulo": "Falla eléctrica en Barinas",
-    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 12/08/2026, 5:56 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/barinas-fallas-electricas-comprometen-operatividad-de-maquinas-de-dialisis-recien-instaladas-en-el-hospital-razetti/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
-        "fecha": "2026-08-12T21:43:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:43:17+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
-    "fecha_deteccion": "2026-08-12T23:29:50.916171+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-12",
-    "titulo": "Falla eléctrica en Municipio Valencia, Carabobo",
-    "texto": "📌 Falla eléctrica en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "El Valle",
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/",
-        "fecha": "2026-08-12T21:43:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-12T21:43:17+00:00",
-    "fecha_evento_temprana": "2026-08-12T21:43:17+00:00",
-    "fecha_deteccion": "2026-08-12T23:29:57.641348+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-08-12",
-    "titulo": "Falla eléctrica en Parroquia El Valle, Distrito Capital",
-    "texto": "📌 Falla eléctrica en Parroquia El Valle, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Valle, Distrito Capital\n🕒 Hecho reportado: 12/08/2026, 5:43 p.m.\n🔎 Detectado por el sistema: 12/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
   }
 ]
