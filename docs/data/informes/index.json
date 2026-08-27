@@ -20,7 +20,7 @@
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-08-26T16:56:26.064119+00:00",
+    "generado": "2026-08-27T11:08:29.021949+00:00",
     "total_eventos": 6
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-08-26T14:10:37.240646+00:00",
+    "generado": "2026-08-27T11:04:51.503936+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-26T11:01:40.180140+00:00",
+    "generado": "2026-08-27T11:04:38.826414+00:00",
     "total_eventos": 1
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "emergencia_metro",
     "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
     "cerrado": false,
-    "generado": "2026-08-26T14:10:32.792200+00:00",
+    "generado": "2026-08-27T11:04:26.320087+00:00",
     "total_eventos": 2
   },
   {
@@ -132,7 +132,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-08-26T02:14:13.007400+00:00",
+    "generado": "2026-08-27T11:03:45.893609+00:00",
     "total_eventos": 2
   },
   {
