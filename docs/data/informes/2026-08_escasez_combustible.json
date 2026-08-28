@@ -3,7 +3,7 @@
   "tipo": "escasez_combustible",
   "tipo_label": "Escasez de combustible",
   "cerrado": false,
-  "generado": "2026-08-27T11:04:38.826414+00:00",
+  "generado": "2026-08-28T05:24:55.464282+00:00",
   "actualizado_hasta": "2026-08-02T20:16:24.190574+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el mes de agosto de 2026 se registró un único incidente relacionado con la escasez de combustible, contrastando con la ausencia total de casos en julio del mismo año (0 evento(s) registrados entonces vs. 1 en este período). Este hecho se enmarca dentro de la categoría de escasez de combustible que afecta al sector del transporte público en Venezuela.\n\nEl 1 de agosto de 2026, transportistas de Ciudad Guayana, en el estado Bolívar, manifestaron su reclamo ante la falta de abastecimiento de gasolina, señalando que la situación los había obligado a considerar la opción de iniciar una huelga (El Pitazo). Según los testimonios de tres choferes entrevistados, aproximadamente 100 autobuses quedaron fuera de servicio debido al desabastecimiento (El Pitazo).\n\nLos conductores describieron el escenario como un \"verdadero caos\", resaltando la interrupción de rutas y la dificultad para mantener la operatividad del transporte público en la región (El Pitazo). La falta de combustible no solo afecta la movilidad de los usuarios, sino que también genera pérdidas económicas para las empresas de transporte y aumenta la presión sobre las autoridades locales para restablecer el suministro.\n\nEste episodio constituye el único registro de escasez de combustible en el período analizado, subrayando la necesidad de monitorear de cerca la disponibilidad de insumos críticos y de implementar medidas que eviten la recurrencia de situaciones similares en el futuro (El Pitazo).",
+  "narrativa": "En el mes de agosto de 2026 se registró un único evento de escasez de combustible, contrastando con la ausencia total de incidentes en julio del mismo año (0 evento(s) en 2026‑07 vs. 1 en 2026‑08).\\\n\\\nEl 1 de agosto, transportistas de Ciudad Guayana, estado Bolívar, describieron la situación como un \"verdadero caos\" y exigieron el abastecimiento inmediato de gasolina para sus unidades (El Pitazo).\\\n\\\nSegún los testimonios de tres choferes entrevistados, aproximadamente 100 autobuses quedaron excluidos del servicio por falta de combustible, lo que afectó gravemente la movilidad del sector del transporte público en la región (El Pitazo).\\\n\\\nEste hecho constituye el único registro de escasez de combustible en el período analizado, evidenciando un aumento respecto al mes anterior, cuando no se había documentado ningún caso similar (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",

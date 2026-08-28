@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-08-27T21:08:29.650373+00:00",
+    "generado": "2026-08-28T05:29:04.275176+00:00",
     "total_eventos": 4
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-08-27T21:06:08.076347+00:00",
+    "generado": "2026-08-28T05:26:02.262677+00:00",
     "total_eventos": 21
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-08-27T11:04:51.503936+00:00",
+    "generado": "2026-08-28T05:25:21.069182+00:00",
     "total_eventos": 1
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-08-27T11:04:38.826414+00:00",
+    "generado": "2026-08-28T05:24:55.464282+00:00",
     "total_eventos": 1
   },
   {
@@ -108,7 +108,7 @@
     "tipo": "emergencia_metro",
     "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
     "cerrado": false,
-    "generado": "2026-08-27T11:04:26.320087+00:00",
+    "generado": "2026-08-28T05:24:42.869785+00:00",
     "total_eventos": 2
   },
   {
@@ -124,7 +124,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-08-27T01:00:32.950618+00:00",
+    "generado": "2026-08-28T05:24:02.035745+00:00",
     "total_eventos": 2
   },
   {
@@ -132,7 +132,7 @@
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-08-27T01:00:19.543409+00:00",
+    "generado": "2026-08-28T05:23:36.118637+00:00",
     "total_eventos": 1
   },
   {
@@ -140,7 +140,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-08-27T11:03:45.893609+00:00",
+    "generado": "2026-08-28T05:23:23.080007+00:00",
     "total_eventos": 2
   },
   {
@@ -148,7 +148,7 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-08-27T00:59:47.313754+00:00",
+    "generado": "2026-08-28T05:22:56.982483+00:00",
     "total_eventos": 4
   },
   {
@@ -156,7 +156,7 @@
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-08-27T00:59:21.047710+00:00",
+    "generado": "2026-08-28T05:22:30.441686+00:00",
     "total_eventos": 1
   },
   {
