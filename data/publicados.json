@@ -6,41 +6,6 @@
     "fecha_evento_temprana": "2026-08-25T13:45:00+00:00",
     "municipio": "Maneiro"
   },
-  "orden_publico::Distrito Capital::2026-08-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-25T10:19:48.839937+00:00",
-    "fecha_evento_temprana": "2026-08-25T03:40:02+00:00",
-    "municipio": null
-  },
-  "inundacion::Distrito Capital::2026-08-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-25T12:02:57.437405+00:00",
-    "fecha_evento_temprana": "2026-08-25T11:44:20+00:00",
-    "municipio": null
-  },
-  "salud_publica::Lara::2026-08-25": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-25T12:03:21.600080+00:00",
-    "fecha_evento_temprana": "2026-08-25T10:39:24+00:00",
-    "municipio": null
-  },
-  "inundacion::Aragua::2026-08-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-25T17:22:40.563073+00:00",
-    "fecha_evento_temprana": "2026-08-25T16:46:11+00:00",
-    "municipio": "Camatagua"
-  },
-  "deslizamiento::La Guaira::2026-08-25": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-25T17:24:17.317792+00:00",
-    "fecha_evento_temprana": "2026-08-25T15:45:49+00:00",
-    "municipio": null
-  },
   "derrame_petrolero::Falcon::2026-08-25": {
     "severidad": "sin_clasificar",
     "confirmado": false,
