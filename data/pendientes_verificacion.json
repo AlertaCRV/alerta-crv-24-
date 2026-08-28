@@ -1406,5 +1406,37 @@
   "deslizamiento::La Guaira::2026-08-27": {
     "intentos": 1,
     "ultima_vez": "2026-08-27T21:04:47.446072+00:00"
+  },
+  "sismo::La Guaira::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:21:45.215087+00:00"
+  },
+  "inundacion::Distrito Capital::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:21:48.668004+00:00"
+  },
+  "salud_publica::Carabobo::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:21:52.047797+00:00"
+  },
+  "salud_publica::Monagas::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:21:55.450285+00:00"
+  },
+  "inundacion::Miranda::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:21:58.811690+00:00"
+  },
+  "infraestructura_agua::Sucre::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:22:02.265767+00:00"
+  },
+  "salud_publica::Aragua::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:22:05.685477+00:00"
+  },
+  "crisis_migratoria::Merida::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T05:22:17.436842+00:00"
   }
 }
