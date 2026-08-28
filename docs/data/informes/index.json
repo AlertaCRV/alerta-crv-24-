@@ -28,7 +28,7 @@
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-08-27T11:08:29.021949+00:00",
+    "generado": "2026-08-28T17:36:04.023801+00:00",
     "total_eventos": 6
   },
   {
@@ -68,8 +68,8 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-08-23T05:38:52.923741+00:00",
-    "total_eventos": 6
+    "generado": "2026-08-28T17:34:35.916887+00:00",
+    "total_eventos": 10
   },
   {
     "periodo": "2026-08",
@@ -116,7 +116,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-08-27T21:05:37.952027+00:00",
+    "generado": "2026-08-28T17:34:05.686009+00:00",
     "total_eventos": 22
   },
   {

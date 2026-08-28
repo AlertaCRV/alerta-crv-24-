@@ -1412,8 +1412,8 @@
     "ultima_vez": "2026-08-28T05:21:45.215087+00:00"
   },
   "inundacion::Distrito Capital::2026-08-28": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-28T05:21:48.668004+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-28T17:33:21.897789+00:00"
   },
   "salud_publica::Carabobo::2026-08-28": {
     "intentos": 1,
@@ -1438,5 +1438,29 @@
   "crisis_migratoria::Merida::2026-08-28": {
     "intentos": 1,
     "ultima_vez": "2026-08-28T05:22:17.436842+00:00"
+  },
+  "orden_publico::Miranda::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:18.563727+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:25.344449+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:28.865355+00:00"
+  },
+  "orden_publico::Bolivar::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:32.326726+00:00"
+  },
+  "orden_publico::Merida::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:35.711431+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-08-28": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-28T17:33:39.024755+00:00"
   }
 }
