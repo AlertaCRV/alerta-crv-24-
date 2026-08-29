@@ -1,25 +1,4 @@
 {
-  "salud_publica::Distrito Capital::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T21:23:15.339014+00:00",
-    "fecha_evento_temprana": "2026-08-26T21:05:21+00:00",
-    "municipio": null
-  },
-  "salud_publica::Barinas::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T21:24:40.175964+00:00",
-    "fecha_evento_temprana": "2026-08-26T16:45:00+00:00",
-    "municipio": "Sosa"
-  },
-  "infraestructura_agua::Anzoategui::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T21:24:51.698373+00:00",
-    "fecha_evento_temprana": "2026-08-26T16:06:10+00:00",
-    "municipio": "Simón Rodríguez"
-  },
   "inundacion::Aragua::2026-08-27": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -32,6 +11,41 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-29T19:58:29.248402+00:00",
     "fecha_evento_temprana": "2026-08-29T16:26:11+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-08-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T22:35:41.863817+00:00",
+    "fecha_evento_temprana": "2026-08-29T20:28:59+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-08-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T22:35:52.398633+00:00",
+    "fecha_evento_temprana": "2026-08-29T19:39:08+00:00",
+    "municipio": "Libertador"
+  },
+  "sismo::Bolivar::2026-08-29": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T22:35:55.901206+00:00",
+    "fecha_evento_temprana": "2026-08-29T16:37:50+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Portuguesa::2026-08-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T22:36:10.798192+00:00",
+    "fecha_evento_temprana": "2026-08-29T14:43:30+00:00",
+    "municipio": "Araure"
+  },
+  "inundacion::Distrito Capital::2026-08-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T22:36:22.273334+00:00",
+    "fecha_evento_temprana": "2026-08-29T16:00:00+00:00",
     "municipio": null
   }
 }

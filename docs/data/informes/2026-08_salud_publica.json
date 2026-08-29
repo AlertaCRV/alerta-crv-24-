@@ -3,23 +3,63 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-08-20T03:21:10.721873+00:00",
-  "actualizado_hasta": "2026-08-12T05:17:03.873115+00:00",
-  "total_eventos": 2,
+  "generado": "2026-08-29T22:37:18.415845+00:00",
+  "actualizado_hasta": "2026-08-26T21:24:40.175964+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 1,
-    "actual": 2
+    "actual": 9
   },
-  "narrativa": "Durante el mes de agosto de 2026, el sector de salud pública en Venezuela registró dos eventos relevantes, frente a uno solo en julio de 2026 (1 evento(s) registrados entonces vs. 2 en este período).\\n\\nEn el estado Lara, el Observatorio Venezolano de Prisiones denunció la muerte de tres personas bajo custodia del Estado en centros penitenciarios, entre ellos un recluso internado en el Centro Penitenciario de Lara, lo que fue calificado como un caso de severidad crítica para la salud pública (Maturin News). La organización solicitó una investigación para determinar si existieron omisiones que retrasaron la atención médica a los internos.\\n\\nEn el municipio Cedeño, en la población de San Félix de Cantalicio, Monagas, los vecinos reportaron un brote de dengue con al menos quince personas que presentaron síntomas compatibles con la enfermedad, atribuido al incremento de lluvias recientes y a la falta de desmalezamiento que favoreció la proliferación del mosquito transmisor (El Periodico de Monagas). Las autoridades sanitarias locales fueron alertadas para intensificar las medidas de control vectorial y atender a los casos confirmados.\\n\\nAmbos incidentes resaltan la necesidad de reforzar los protocolos de atención médica tanto en instituciones penitenciarias como en comunidades vulnerables, con el fin de prevenir nuevas complicaciones y garantizar una respuesta oportuna ante emergencias de salud pública.",
+  "narrativa": "En el mes de agosto de 2026 se registraron nueve eventos de salud pública, frente a solo uno en julio de 2026, lo que representa un notable incremento (1 evento(s) registrados entonces vs. 9 en este período). Este aumento se concentra principalmente en situaciones críticas dentro del sistema penitenciario y en alertas sanitarias de alto nivel.\n\nEn el estado Lara se documentaron tres incidentes críticos. El Observatorio Venezolano de Prisiones denunció la muerte de tres reclusos, entre ellos uno en la cárcel de Lara, señalando posibles omisiones en la atención médica (Maturin News). Asimismo, El Pitazo informó la muerte de César Enrique Ostos Patiño, de 44 años, mientras recibía tratamiento de diálisis en la Comunidad Penitenciaria Fénix, y señaló que otros dos internos permanecen graves por fallas renales (El Pitazo). Por otro lado, Diario La Nación (Táchira) reportó el fallecimiento de Robinson Johan Esquivel Fajardo, de 45 años, también privado de libertad en la Comunidad Penitenciaria Fénix de Lara, quien murió tras complicaciones de salud mientras estaba bajo tratamiento de diálisis (Diario La Nacion (Tachira)).\n\nEn el Distrito Capital, Nuevo Día (Falcón) destacó una preocupación de salud pública de alta severidad al referirse al brote de ébola en la República Democrática del Congo, subrayando la necesidad de una respuesta internacional para contener la epidemia (Nuevo Dia (Falcon)).\n\nEl conjunto de estos eventos evidencia una escalada de problemas de salud críticos, particularmente en centros penitenciarios, y la atención a emergencias sanitarias de alcance internacional, lo que subraya la importancia de reforzar los protocolos de atención médica y la vigilancia epidemiológica en el país.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/ovp-muere-en-lara-segundo-privado-de-libertad-que-recibia-dialisis-en-menos-de-una-semana-24ago/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/"
+    },
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
     },
     {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/leon-xiv-pide-una-respuesta-internacional-para-frenar-el-brote-de-ebola-en-el-congo/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/618084/ovp-denuncia-la-muerte-de-un-paciente-renal-tras-contraer-hepatitis-en-fenix-lara/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/26/barinas-comunidades-de-sosa-y-rojas-denuncian-propagacion-de-fiebre-hemorragica-venezolana-26ago/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/salud/vecinos-de-san-felix-de-cantalicio-denuncian-brote-de-dengu/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/salud/ministerio-de-salud-emite-alerta-sanitaria-por-un-lote-falsificado-de-medicamento-oncologico/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/22/apagones-y-altas-temperaturas-agravan-los-riesgos-para-la-salud-de-los-venezolanos/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/"
     }
   ]
 }

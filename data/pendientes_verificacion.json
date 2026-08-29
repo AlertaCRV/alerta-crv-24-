@@ -1487,24 +1487,20 @@
     "intentos": 1,
     "ultima_vez": "2026-08-29T07:55:49.760012+00:00"
   },
-  "orden_publico::Distrito Capital::2026-08-29": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-29T19:58:32.781404+00:00"
+  "orden_publico::Bolivar::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T22:35:38.485778+00:00"
   },
-  "orden_publico::Monagas::2026-08-29": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-29T19:58:18.526701+00:00"
+  "inundacion::Aragua::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T22:35:45.433082+00:00"
   },
-  "sismo::Bolivar::2026-08-29": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-29T19:58:21.942464+00:00"
+  "deslizamiento::Tachira::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T22:35:48.970853+00:00"
   },
-  "infraestructura_agua::Portuguesa::2026-08-29": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-29T19:58:25.670108+00:00"
-  },
-  "inundacion::Distrito Capital::2026-08-29": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-29T19:58:36.396939+00:00"
+  "infraestructura_electrica::Miranda::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T22:35:59.302330+00:00"
   }
 }

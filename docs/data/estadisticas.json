@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-08-29T19:58:37.376287+00:00",
+  "actualizado": "2026-08-29T22:36:24.508886+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-29T17:30:28+00:00"
+    "hasta": "2026-08-29T21:58:34+00:00"
   },
-  "total_eventos": 290,
+  "total_eventos": 295,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 58,
+    "inundacion": 59,
     "infraestructura_electrica": 65,
     "deslizamiento": 25,
     "colapso_estructural": 3,
-    "orden_publico": 49,
+    "orden_publico": 51,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 24,
     "vialidad": 10,
-    "sismo": 8,
+    "sismo": 9,
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 1,
-    "infraestructura_agua": 10,
+    "infraestructura_agua": 11,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 48,
+      "total": 50,
       "confirmados": 4
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "estado": "Bolivar",
-      "total": 13,
+      "total": 14,
       "confirmados": 1
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "estado": "Monagas",
-      "total": 11,
+      "total": 12,
       "confirmados": 0
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 6,
+      "total": 7,
       "confirmados": 0
     },
     {
@@ -178,8 +178,8 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 10,
-      "orden_publico": 8,
+      "inundacion": 11,
+      "orden_publico": 9,
       "incendio": 8,
       "vialidad": 1,
       "infraestructura_electrica": 7,
@@ -227,7 +227,8 @@
       "orden_publico": 3,
       "escasez_combustible": 1,
       "incendio": 2,
-      "inundacion": 1
+      "inundacion": 1,
+      "sismo": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -251,7 +252,8 @@
       "salud_publica": 1,
       "vialidad": 1,
       "infraestructura_agua": 2,
-      "incendio": 1
+      "incendio": 1,
+      "orden_publico": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -306,7 +308,8 @@
       "infraestructura_electrica": 1,
       "orden_publico": 2,
       "inundacion": 2,
-      "incendio": 1
+      "incendio": 1,
+      "infraestructura_agua": 1
     },
     "Cojedes": {
       "orden_publico": 1
@@ -324,8 +327,8 @@
   },
   "por_severidad": {
     "alto": 18,
-    "critico": 23,
-    "sin_clasificar": 240,
+    "critico": 24,
+    "sin_clasificar": 244,
     "medio": 4,
     "bajo": 5
   },
@@ -336,7 +339,7 @@
     },
     "inundacion": {
       "2026-07": 7,
-      "2026-08": 51
+      "2026-08": 52
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -352,7 +355,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 47
+      "2026-08": 49
     },
     "salud_publica": {
       "2026-07": 1,
@@ -370,7 +373,7 @@
       "2026-08": 10
     },
     "sismo": {
-      "2026-08": 8
+      "2026-08": 9
     },
     "escasez_combustible": {
       "2026-08": 1
@@ -382,7 +385,7 @@
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 10
+      "2026-08": 11
     },
     "accidente_transporte": {
       "2026-08": 1
