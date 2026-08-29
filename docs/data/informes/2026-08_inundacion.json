@@ -3,27 +3,71 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-08-20T05:10:57.543724+00:00",
-  "actualizado_hasta": "2026-08-19T20:04:34.055961+00:00",
-  "total_eventos": 20,
+  "generado": "2026-08-29T17:28:48.588148+00:00",
+  "actualizado_hasta": "2026-08-27T21:04:58.909275+00:00",
+  "total_eventos": 50,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 7,
-    "actual": 20
+    "actual": 50
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 20 eventos de inundación, frente a los 7 registrados en julio del mismo año, lo que evidencia un incremento significativo de la actividad hídrica extrema (Comparación con el período anterior). Los reportes de distintas fuentes periodísticas verificadas describen emergencias con daños materiales, heridos y víctimas fatales en varios estados del país.\n\nEn el estado Yaracuy, las intensas lluvias provocaron inundaciones críticas en los municipios de Manuel Monge, Bolívar, Sucre y Veroes, con al menos una víctima mortal y graves pérdidas en el sector agropecuario y en la infraestructura vial, incluido el puente La Galletera (El Impulso (Lara)). Asimismo, en el caserío San Amaya del municipio Manuel Monge se produjo el desbordamiento del río Yumarito, que inundó viviendas y causó la muerte de María Eloína Hernández por una descarga eléctrica al intentar desconectar electrodomésticos (Turimiquire (Sucre)).\n\nEn el estado Apure, la crecida del río Arauca generó inundaciones de alta severidad que afectaron a la parroquia Urdaneta, sector La Victoria, del municipio Páez. Las autoridades locales desplegaron equipos de mitigación y atención integral para más de 500 familias damnificadas (Notiapure). En otro informe del mismo medio se detalla la activación de jornadas de verificación y trabajo conjunto entre cuadrillas municipales y organizaciones populares para atender los daños provocados por la crecida (Notiapure).\n\nEn el Distrito Capital, las lluvias extremas provocaron inundaciones críticas en varios sectores de Caracas. Las calles de los municipios Libertador y Sucre se vieron anegadas, activándose planes de contingencia (La Prensa de Monagas). Turimiquire reportó que las precipitaciones generaron anegaciones de consideración en vías principales y secundarias, dificultando el tránsito y arrastrando vehículos (Turimiquire (Sucre)). Además, La Prensa de Lara describió intensas lluvias que causaron anegaciones en la zona de Carabobo, reflejando la magnitud del fenómeno en la capital y sus alrededores (La Prensa de Lara).\n\nEn el estado Mérida, la crecida del río Milla dejó a una familia de siete integrantes en situación de extrema vulnerabilidad en la parroquia Milla, municipio Libertador, tras el colapso parcial de su vivienda y la persistente amenaza de nuevos desbordes (Reporteros de Merida).",
+  "narrativa": "Durante el mes de agosto de 2026 se registraron 50 eventos de inundación, una notable alza frente a los 7 eventos del mes anterior (2026‑07). Esta escalada se relaciona con la actividad de la Onda Tropical N° 40 y fenómenos de \"Súper Niño\" que generaron lluvias intensas en gran parte del territorio nacional.\n\nEn el estado Yaracuy se reportaron inundaciones de severidad crítica en cuatro municipios (Manuel Monge, Bolívar, Sucre y Veroes). Turimiquire (Sucre) describió la situación como crítica, mientras que El Impulso (Lara) informó la muerte de una persona y importantes pérdidas materiales en el sector agropecuario, además de daños estructurales en el puente La Galletera (El Impulso (Lara)).\n\nEl estado Apure también sufrió inundaciones de severidad alta. Notiapure cubrió dos reportes independientes que describen la magnitud del desbordamiento y los daños en infraestructura y cultivos (Notiapure; Notiapure).\n\nEn el Distrito Capital, la severidad de las inundaciones fue calificada como crítica por múltiples medios: Turimiquire (Sucre) señaló desbordamientos en la autopista Valle‑Coche; La Prensa de Monagas informó derrumbes y viviendas colapsadas; La Prensa de Lara describió anegaciones en varios sectores; y La Verdad (Zulia) reiteró la gravedad de la situación, mencionando la activación del Sistema de Protección Civil (El Carabobeno; La Verdad (Zulia)).\n\nEl estado Miranda experimentó inundaciones críticas, según La Verdad (Zulia), con desbordamiento de ríos y quebradas que provocaron al menos dos desaparecidos en la quebrada El Alambique, como reportó La Patilla (La Patilla). La Onda Tropical N° 40 fue citada como factor desencadenante de estos eventos (La Patilla).\n\nFinalmente, en Aragua se registró una inundación crítica, reportada por El Pitazo, que incluyó la crecida de la quebrada Apa en el sector La Gavilana. Equipos de rescate fueron desplegados y se reportó la desaparición de dos personas arrastradas por la corriente (El Pitazo; Ciudad MCY).",
   "fuentes": [
+    {
+      "nombre": "Ciudad MCY (Aragua)",
+      "link": "https://ciudadmcy.info.ve/despliegan-rescate-en-la-gavilana-tras-crecida-de-la-quebrada-apa"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/activaros-sistema-de-proteccion-civil-por-lluvias-en-caracas/"
+    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/reportan-derrumbes-y-viviendas-colapsadas-en-caracas-y-miranda/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/fuertes-lluvias-dejan-danos-en-caracas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/video-crecida-de-la-quebrada-el-alambique-dejo-dos-desaparecidos-en-los-teques/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/"
     },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
     },
     {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-en-caracas-inundaciones-coche/"
+    },
+    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/fuertes-lluvias-provocan-desbordamientos-del-rio-guaire/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/lluvias-en-caracas-y-miranda-inundaciones-vehiculos-afectados-y-dos-desaparecidos/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/seis-desaparecidos-y-decenas-de-viviendas-afectadas-por-las-lluvias-en-el-centro-del-pais/"
     },
     {
       "nombre": "Notiapure",
@@ -42,8 +86,12 @@
       "link": "https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/"
     },
     {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/08/familia-en-la-milagrosa-lleva-3-anos.html"
+      "nombre": "Notiespartano (Nueva Esparta)",
+      "link": "https://notiespartano.com/al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=al-menos-seis-desaparecidos-por-intensas-lluvias-en-venezuela"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/seis-desaparecidos-tras-fuertes-lluvias-registradas-en-caracas-los-teques-y-aragua/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -54,44 +102,48 @@
       "link": "https://turimiquire.net/2026/08/16/las-fuetes-lluvias-causaron-estragos-en-varios-sectores-de-caracas/"
     },
     {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/08/23/fuertes-lluvias-en-caracas-dejaron-carros-y-motos-tapiados-ademas-cientos-de-personas-varadas/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/mas-de-100-personas-fueron-rescatadas-durante-emergencia-por-fuertes-lluvias-en-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=mas-de-100-personas-fueron-rescatadas-durante-emergencia-por-fuertes-lluvias-en-caracas"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/localizan-cuerpo-de-comerciante-arrastrado-por-el-rio-aragua-durante-fuertes-lluvias/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/cambio-climatico/coche-anegado-y-el-rio-guaire-desbordado-tras-intensas-lluvias-en-caracas/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/ong-campo-exige-politicas-publicas-de-prevencion-ante-inundaciones-en-yaracuy/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/16/lluvias-en-caracas-dejan-tres-fallecidos-vias-colapsadas-y-alerta-por-el-rio-guaire-16ago/"
     },
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/los-llanos/barinas-estudiantes-no-pudieron-asistir-a-su-graduacion-por-la-crecida-de-un-rio-y-piden-al-colegio-un-acto-simbolico/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/21/ciudadanos-de-el-tigre-reportan-colapsos-en-sus-sectores-durante-las-lluvias-21ago/"
     },
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/lluvias-en-caracas-deja-tres-mujeres-muertas-inundaciones-y-damnificados-a-la-intemperie/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/21/garcia-urquiola-acuso-a-la-mesa-de-dialogo-de-prolongar-la-permanencia-de-delcy-rodriguez-en-el-poder-21ago/"
     },
     {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/lluvias-torrenciales-causan-estragos-e-inundaciones-en-barinas/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/23/video-onda-tropical-y-convergencia-monzonica-generaran-lluvias-con-descargas-electricas-en-gran-parte-del-pais-23ago/"
     },
     {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/onda-tropical-causa-inundaciones-en-vias-de-las-tejerias-en-aragua/"
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/25/el-mas-plantea-una-encerrona-para-el-reencuentro-de-sectores-democraticos-25ago/"
     },
     {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/onda-tropical-37-causa-inundaciones-y-caida-de-arboles-en-aragua/"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/apure/gobierno-bolivariano-despliega-atencion-directa-a-mas-de-500-familias-afectadas-por-crecida-del-rio-arauca-en-urdaneta/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/regionales/cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago/?utm_source=rss&utm_medium=rss&utm_campaign=cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/"
-    },
-    {
-      "nombre": "Yaracuy al Dia",
-      "link": "https://yaracuyaldia.com/sucesos/lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana/?utm_source=rss&utm_medium=rss&utm_campaign=lluvias-y-vientos-huracanados-provocaron-caida-de-arboles-y-anegaciones-en-la-capital-yaracuyana"
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobofuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobo/"
     }
   ]
 }
