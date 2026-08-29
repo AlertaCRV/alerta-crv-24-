@@ -3,15 +3,15 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-08-20T12:04:28.464951+00:00",
-  "actualizado_hasta": "2026-08-20T06:06:44.334233+00:00",
-  "total_eventos": 8,
+  "generado": "2026-08-29T19:59:58.795187+00:00",
+  "actualizado_hasta": "2026-08-25T21:43:59.368652+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 8
+    "actual": 10
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron ocho incidentes viales en Venezuela, frente a cero en el mes anterior, lo que evidencia un incremento significativo en la actividad de siniestros de tránsito (Comparación con el período anterior). \n\nEn el Distrito Capital se reportó una colisión múltiple en la autopista Valle‑Coche que involucró a un autobús de transporte público y dos sedanes, dejando un fallecido y cinco heridos (Noticia al Dia (Zulia)). \n\nEn el estado Barinas se produjeron tres sucesos críticos: un choque frontal en la autopista José Antonio Páez, kilómetro 30, que dejó tres muertos y tres lesionados (Noticias de Aqui (Anzoategui)); una colisión múltiple en la avenida Nueva Barinas que cobró la vida de un motorizado y causó al menos dos heridos (La Noticia de Barinas); y un aparatoso choque entre una Toyota Hilux y una Hyundai Tucson en la avenida José Antonio Páez, municipio Cruz Paredes, que provocó la muerte de tres tachirenses y dejó dos heridos (Diario La Nacion (Tachira)). \n\nEn el estado Carabobo un motorizado falleció en una colisión múltiple en la Autopista del Este, a la altura del Distribuidor El Trigal, según informó el Instituto Autónomo de Vialidad (El Carabobeno). \n\nEn Monagas, los accidentes de motos durante el fin de semana dejaron quince lesionados, concentrándose mayormente en el municipio Maturín (El Periodico de Monagas). \n\nFinalmente, en Mérida un triple choque en la Panamericana involucró una gandola sin carga, un autobús de transporte público y otro vehículo, provocando catorce heridos (Primicia (Bolivar)).",
+  "narrativa": "En el mes de agosto de 2026 se registraron diez incidentes viales, frente a ninguno en el mes anterior (0 evento(s) registrados entonces vs. 10 en este período). Todos los siniestros reportados presentaron daños materiales y dejaron heridos o víctimas fatales, lo que eleva la gravedad de la situación vial en el país.\n\nEn el estado Barinas se contabilizaron tres incidentes críticos y uno de alta severidad. Un choque frontal en la autopista José Antonio Páez, a la altura del sector El Florentino del municipio Alberto Arvelo Torrealba, dejó tres fallecidos y tres heridos (Noticias de Aqui). En la avenida Nueva Barinas, una colisión múltiple entre tres automóviles y una motocicleta provocó la muerte de un motorizado y al menos dos lesionados (La Noticia de Barinas). Además, un aparatoso choque entre una camioneta Toyota Hilux y una Hyundai Tucson en la avenida José Antonio Páez, municipio Cruz Paredes, causó la muerte de tres tachirenses y dejó dos heridos (Diario La Nacion). Este último siniestro fue catalogado con severidad alta.\n\nEn otras regiones se reportaron incidentes igualmente graves. En el Distrito Capital, una colisión múltiple en la autopista Valle‑Coche involucró a un autobús de transporte público y dos sedanes, resultando en un fallecido y cinco heridos (Noticia al Dia). En el estado Monagas, los accidentes de motos durante el fin de semana dejaron quince lesionados en distintas localidades, siendo el municipio Maturín el más afectado (El Periodico de Monagas). En Carabobo, un motorizado perdió la vida en una colisión múltiple en la Autopista del Este, según informó el Instituto Autónomo de Vialidad (El Carabobeno). Por último, en Mérida, un triple choque en la Panamericana que involucró una gandola sin carga, un autobús y un tercer vehículo dejó catorce heridos (Primicia).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -44,6 +44,14 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/triple-choque-en-la-panamericana-de-merida-deja-14-heridos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/cafe-riesgo-lara-colapso-vial-moran/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/destaco-antonio-bastidadenuncia-colapso-vial-abandono-de-servicios-ydeterioro-de-la-infraestructura-en-barinas/"
     },
     {
       "nombre": "Noticias de Aqui (Anzoategui)",

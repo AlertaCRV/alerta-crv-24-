@@ -1,11 +1,4 @@
 {
-  "sismo::Tachira::2026-08-26::mag5.1": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T18:52:11.937117+00:00",
-    "fecha_evento_temprana": "2026-08-26T18:28:24+00:00",
-    "municipio": "San Cristóbal"
-  },
   "salud_publica::Distrito Capital::2026-08-26": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -32,6 +25,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-08-27T21:04:58.909275+00:00",
     "fecha_evento_temprana": "2026-08-27T13:51:57+00:00",
+    "municipio": null
+  },
+  "inundacion::Aragua::2026-08-29": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-29T19:58:29.248402+00:00",
+    "fecha_evento_temprana": "2026-08-29T16:26:11+00:00",
     "municipio": null
   }
 }
