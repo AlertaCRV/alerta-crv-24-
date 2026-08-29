@@ -3,19 +3,23 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-20T06:08:33.878831+00:00",
-  "actualizado_hasta": "2026-08-18T20:48:04.482705+00:00",
-  "total_eventos": 29,
+  "generado": "2026-08-29T01:17:09.454617+00:00",
+  "actualizado_hasta": "2026-08-26T04:57:47.296106+00:00",
+  "total_eventos": 47,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 29
+    "actual": 47
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 29 eventos de orden público, frente a los 2 registrados en julio del mismo año, lo que evidencia un notable aumento de la actividad protestante (Comparación con el período anterior). \n\nEl 17 de agosto, trabajadores del sector salud se congregaron frente al Circuito Judicial Penal de Barinas para protestar por la detención de ocho profesionales del Hospital Doctor Luis Razetti, quienes fueron arrestados tras un accidente con una lámpara artesanal (La Nacion). Tres días antes, el 7 de agosto, familiares de presos políticos se manifestaron frente a la Cancillería en Caracas exigiendo la presencia de la CIDH y la intervención de la Cruz Roja (El Impulso). En la misma fecha, jubilados y empleados activos de la Gobernación de Lara se reunieron en la Plaza La Moneda, en Barquisimeto, para reclamar el pago del bono de profesionalización y rechazar el Sistema Patria (El Impulso). \n\nEl 18 de agosto, jubilados de las salinas de Araya, en el municipio Cruz Salmerón Acosta del estado Sucre, anunciaron la posibilidad de iniciar una huelga de hambre y amarrarse al portón de la Unidad I de la empresa tras 170 días de protesta sin respuesta a sus reclamos (El Impulso). Asimismo, el 17 de agosto se difundió una denuncia del Observatorio Venezolano de Prisiones sobre el exdirector del INJUBA, Elvis Macuare Guerrero, cuya destitución había sido motivada por protestas de reclusos en mayo (El Impulso). \n\nLas interrupciones eléctricas provocaron movilizaciones en al menos siete estados. La noche del 6 de agosto, residentes de Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar tomaron las calles, quemaron neumáticos y realizaron cacerolazos para protestar contra los cortes prolongados de energía (El Periodico de Monagas). En Carabobo y Aragua, el 3 de agosto, se registraron cacerolazos y represión durante manifestaciones contra la crisis eléctrica (El Pitazo). El Pitazo también documentó, en los diez días previos, al menos 14 protestas en esos mismos estados, incluyendo una nueva manifestación en Monagas el 6 de agosto (El Pitazo). \n\nPor último, manifestantes se acercaron a la residencia de Perkins Rocha para exigir su liberación, tras la medida de arresto domiciliario impuesta en febrero de 2026 (El Pitazo).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 47 incidentes de orden público, frente a los 2 eventos reportados en julio del mismo año, lo que evidencia un notable incremento en la actividad protestante (Comparación con el período anterior). \n\nEl 17 de agosto, trabajadores de la salud de Barinas se congregaron frente al Circuito Judicial Penal para protestar por la detención de ocho profesionales del Hospital Doctor Luis Razetti, quienes fueron arrestados tras un accidente con una lámpara artesanal (La Nacion). \n\nEn Táchira, el 22 de agosto, jubilados, pensionados y sobrevivientes de CANTV realizaron una manifestación pacífica en la sede de Barrio Obrero, denunciando la falta de cobertura médica y la reducción del 25 % del bono vital, así como salarios insuficientes de 571 bolívares (La Nacion). \n\nEl 7 de agosto, en Caracas, familiares de presos políticos se reunieron frente a la Cancillería exigiendo la presencia de la CIDH y la intervención de la Cruz Roja; ese mismo día, jubilados y empleados de la Gobernación de Lara se concentraron en la Plaza La Moneda de Barquisimeto para reclamar el pago del bono de profesionalización y la eliminación del Sistema Patria (El Impulso). \n\nA lo largo del mes, la crisis eléctrica desencadenó protestas en al menos siete estados (Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar) el 6 de agosto, con vecinos quemando neumáticos y haciendo cacerolazos; en Carabobo y Aragua, el 3 de agosto, se registraron cacerolazos y represión contra los apagones prolongados (El Periodico de Monagas; El Pitazo). Además, el 18 de agosto, jubilados de las salinas de Araya (Sucre) amenazaron con una huelga de hambre y se amarraron al portón de la empresa tras 170 días de protesta (El Impulso).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/barinas-protesta-en-el-circuito-judicial-por-detencion-de-personal-sanitario-que-improviso-equipo-medico/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/jubilados-de-cantv-reclaman-cobertura-medica-y-200-dolares/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -56,6 +60,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/adultos-mayores-denuncian-que-sobreviven-con-una-pension-de-017-y-exigen-ser-incluidos-en-la-mesa-de-dialogo/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/barinas-gremios-de-salud-marchan-contra-la-criminalizacion-la-falta-de-insumos-no-es-culpa-de-los-medicos/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -106,6 +114,26 @@
       "link": "https://lapatilla.com/2026/08/17/protestaron-frente-al-circuito-judicial-penal-de-barinas-durante-la-audiencia-de-un-medico-y-seis-enfermeras/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/24/video-familiares-de-presos-politicos-quebraron-piquete-policial-frente-al-despacho-de-diosdado-cabello/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/25/vecinos-de-brisas-del-golfo-se-cansaron-de-tantos-embustes-y-cerraron-carretera-nacional-en-sucre/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/25/juan-pablo-guanipa-todos-los-dias-estamos-sin-luz-por-cuatro-seis-ocho-horas-y-mas-en-el-estado-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
+    },
+    {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicalistas-exigen-que-dialogo-entre-chavismo-y-oposicion-sea-publico/"
     },
@@ -116,26 +144,6 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/nacion/opositor-andres-velasquez-atribuyo-apagones-en-venezuela-a-la-corrupcion-y-no-a-la-crisis-climatica/"
-    },
-    {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/al-dia/salvaje-golpiza-a-un-inocente-empana-el-encuentro-entre-portuguesa-fc-y-carabobo-fc-en-barquisimeto/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/regionales/esto-cada-dia-empeora-mas-vecinos-de-el-playon-protestan-por-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=esto-cada-dia-empeora-mas-vecinos-de-el-playon-protestan-por-cortes-electricos"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/08/11/trancan-la-via-en-el-valle/"
-    },
-    {
-      "nombre": "Yaracuy al Dia",
-      "link": "https://yaracuyaldia.com/venezuela/biagio-pilieri-denuncia-el-colapso-electrico-que-asfixia-a-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=biagio-pilieri-denuncia-el-colapso-electrico-que-asfixia-a-venezuela"
     }
   ]
 }
