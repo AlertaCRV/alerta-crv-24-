@@ -1,5 +1,142 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.35,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/618685/chavismo-protesta-contra-injerencia-de-eeuu-pide-consultar-pueblo-sobre-acuerdo-petrolero/",
+        "fecha": "2026-08-29T21:58:34+00:00"
+      },
+      {
+        "nombre": "La Patilla",
+        "link": "https://lapatilla.com/2026/08/29/chavistas-se-rebelaron-contra-delcy-rodriguez-y-sus-acuerdos-petroleros-con-eeuu-video/",
+        "fecha": "2026-08-29T20:28:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-29T21:58:34+00:00",
+    "fecha_evento_temprana": "2026-08-29T20:28:59+00:00",
+    "fecha_deteccion": "2026-08-29T22:35:41.863817+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-08-29",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/08/2026, 5:58 p.m.\n🔎 Detectado por el sistema: 29/08/2026, 6:35 p.m.\n📊 Fuentes independientes: 2 (score 1.35)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/618685/chavismo-protesta-contra-injerencia-de-eeuu-pide-consultar-pueblo-sobre-acuerdo-petrolero/\n  • La Patilla: https://lapatilla.com/2026/08/29/chavistas-se-rebelaron-contra-delcy-rodriguez-y-sus-acuerdos-petroleros-con-eeuu-video/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": "Libertador",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/coalicion-sindical-de-venezuela-anuncia-protestas-nacionales-para-septiembre-y-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=coalicion-sindical-de-venezuela-anuncia-protestas-nacionales-para-septiembre-y-octubre",
+        "fecha": "2026-08-29T19:39:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-29T19:39:08+00:00",
+    "fecha_evento_temprana": "2026-08-29T19:39:08+00:00",
+    "fecha_deteccion": "2026-08-29T22:35:52.398633+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Monagas::2026-08-29",
+    "titulo": "Orden público en Municipio Libertador, Monagas",
+    "texto": "📌 Orden público en Municipio Libertador, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Libertador, Monagas\n🕒 Hecho reportado: 29/08/2026, 3:39 p.m.\n🔎 Detectado por el sistema: 29/08/2026, 6:35 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/coalicion-sindical-de-venezuela-anuncia-protestas-nacionales-para-septiembre-y-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=coalicion-sindical-de-venezuela-anuncia-protestas-nacionales-para-septiembre-y-octubre"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/rinden-homenaje-a-los-331-fallecidos-del-terremoto-en-colombia/",
+        "fecha": "2026-08-29T16:37:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-29T16:37:50+00:00",
+    "fecha_evento_temprana": "2026-08-29T16:37:50+00:00",
+    "fecha_deteccion": "2026-08-29T22:35:55.901206+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Bolivar::2026-08-29",
+    "titulo": "Sismo en Bolivar",
+    "texto": "📌 Sismo en Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/08/2026, 12:37 p.m.\n🔎 Detectado por el sistema: 29/08/2026, 6:35 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/rinden-homenaje-a-los-331-fallecidos-del-terremoto-en-colombia/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Portuguesa",
+    "municipio": "Araure",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua",
+        "fecha": "2026-08-29T14:43:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-29T14:43:30+00:00",
+    "fecha_evento_temprana": "2026-08-29T14:43:30+00:00",
+    "fecha_deteccion": "2026-08-29T22:36:10.798192+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Portuguesa::2026-08-29",
+    "titulo": "Falla de agua en Municipio Araure, Portuguesa",
+    "texto": "📌 Falla de agua en Municipio Araure, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Araure, Portuguesa\n🕒 Hecho reportado: 29/08/2026, 10:43 a.m.\n🔎 Detectado por el sistema: 29/08/2026, 6:36 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/29/inameh-preve-lluvias-y-descargas-electricas-en-gran-parte-del-pais-29ago/",
+        "fecha": "2026-08-29T16:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-29T16:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-29T16:00:00+00:00",
+    "fecha_deteccion": "2026-08-29T22:36:22.273334+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Distrito Capital::2026-08-29",
+    "titulo": "Inundación en Distrito Capital",
+    "texto": "📌 Inundación en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/08/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 29/08/2026, 6:36 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/29/inameh-preve-lluvias-y-descargas-electricas-en-gran-parte-del-pais-29ago/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Aragua",
     "municipio": null,
@@ -4308,31 +4445,5 @@
     "clave_dedup": "explosion::Miranda::2026-08-15",
     "titulo": "Explosión en Parroquia Guatire, Municipio Zamora, Miranda",
     "texto": "📌 Explosión en Parroquia Guatire, Municipio Zamora, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Guatire, Municipio Zamora, Miranda\n🕒 Hecho reportado: 15/08/2026, 7:49 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 11:17 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/explosion-de-tuberia-de-gas-dejo-varios-heridos-en-guatire/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Trujillo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/",
-        "fecha": "2026-08-15T20:20:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-15T20:20:14+00:00",
-    "fecha_evento_temprana": "2026-08-15T20:20:14+00:00",
-    "fecha_deteccion": "2026-08-15T22:06:51.057115+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Trujillo::2026-08-15",
-    "titulo": "Incendio en Trujillo",
-    "texto": "📌 Incendio en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 15/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 15/08/2026, 6:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/15/la-falta-de-agua-y-las-carreteras-deterioradas-amenazan-la-agricultura-en-trujillo/"
   }
 ]
