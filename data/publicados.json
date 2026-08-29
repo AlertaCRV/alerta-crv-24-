@@ -1,25 +1,4 @@
 {
-  "orden_publico::Barinas::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T04:11:13.807202+00:00",
-    "fecha_evento_temprana": "2026-08-26T00:23:37+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Aragua::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T04:57:15.945101+00:00",
-    "fecha_evento_temprana": "2026-08-26T01:20:20+00:00",
-    "municipio": "Camatagua"
-  },
-  "orden_publico::Zulia::2026-08-26": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-26T04:57:47.296106+00:00",
-    "fecha_evento_temprana": "2026-08-26T02:22:28+00:00",
-    "municipio": "Maracaibo"
-  },
   "sismo::Tachira::2026-08-26::mag5.1": {
     "severidad": "sin_clasificar",
     "confirmado": false,

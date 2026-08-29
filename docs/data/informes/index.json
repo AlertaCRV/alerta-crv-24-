@@ -20,8 +20,8 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-08-20T03:21:50.228963+00:00",
-    "total_eventos": 4
+    "generado": "2026-08-29T07:57:47.479817+00:00",
+    "total_eventos": 8
   },
   {
     "periodo": "2026-08",
@@ -60,8 +60,8 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-08-19T03:20:59.601865+00:00",
-    "total_eventos": 38
+    "generado": "2026-08-29T07:56:43.044651+00:00",
+    "total_eventos": 60
   },
   {
     "periodo": "2026-08",
@@ -124,7 +124,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-08-28T05:24:02.035745+00:00",
+    "generado": "2026-08-29T07:56:13.126979+00:00",
     "total_eventos": 2
   },
   {

@@ -3,16 +3,20 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-19T03:20:59.601865+00:00",
-  "actualizado_hasta": "2026-08-18T23:54:02.874193+00:00",
-  "total_eventos": 38,
+  "generado": "2026-08-29T07:56:43.044651+00:00",
+  "actualizado_hasta": "2026-08-25T21:46:11.746935+00:00",
+  "total_eventos": 60,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
-    "actual": 38
+    "actual": 60
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 38 incidentes de fallas eléctricas, frente a los 5 reportados en julio del mismo año (Comparación con el período anterior (2026-07): 5 evento(s) registrados entonces vs. 38 en este período). Este incremento evidencia una escalada significativa de interrupciones y problemas asociados al suministro eléctrico en distintas regiones del país.\n\nEl domingo se produjo una fuerte tormenta con ráfagas de viento que provocó la caída de árboles y la anegación del Puente Castro, generando apagones en miles de hogares de los Altos Mirandinos, estado Miranda (Diario El Tiempo). En el municipio Los Salias, un árbol cayó sobre una vivienda en la comunidad de Potrerito, confirmando daños materiales en la zona (Diario El Tiempo). Asimismo, la noche del 1 de agosto los residentes de Caracas reportaron apagones en sectores como El Recreo, La Pastora, Plaza Venezuela, Sarria, La Florida, La Candelaria, Cotiza, Los Caobos, Quinta Crespo, Los Símbolos, El Silencio y Parque Carabobo (El Pitazo).\n\nLas fallas eléctricas también afectaron la salud pública. El 12 de agosto, fluctuaciones en el suministro eléctrico del estado Barinas comprometieron el funcionamiento de las máquinas de hemodiálisis del Hospital Doctor Luis Razetti, interrumpiendo tratamientos de sustitución renal (La Nacion). En el estado Zulia, cortes de luz de cinco a seis horas continuas ponen en riesgo a pacientes renales, quienes dependen de equipos médicos que requieren energía constante (El Periodico de Monagas).\n\nEl sector económico sufrió fuertes repercusiones. La Cámara de Licoreros del Estado Táchira denunció una crisis eléctrica que asfixia a los negocios en los 29 municipios de la entidad, generando pérdidas operativas (La Nacion). Desde Yaracuy, el diputado Biagio Pilieri denunció el colapso del Sistema Eléctrico Nacional, calificándolo como una vulneración del derecho básico a la electricidad (El Impulso).\n\nLa población respondió con protestas y reclamos. En Carabobo, vecinos de El Trigal se concentraron frente a la residencia del gobernador y en Valencia frente a la planta de Ricardo Urrie para exigir soluciones a los constantes apagones (El Periodico de Monagas). El 12 de agosto, ciudadanos de Caracas, Valencia, Lara y Zulia reportaron fuertes bajones eléctricos que afectaron múltiples sectores, intensificando la percepción de una crisis prolongada (El Pitazo).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 60 fallas eléctricas, frente a los 5 eventos reportados en julio, lo que indica un incremento significativo en la frecuencia de interrupciones del suministro eléctrico (Datos comparativos). Este aumento se ha traducido en múltiples incidentes con daños materiales, heridos y afectaciones a la salud en distintas regiones del país.\n\nUna de las fallas más graves ocurrió en La Guaira, donde la severidad del apagón se vinculó al aumento de enfermedades respiratorias entre la población afectada por el clima extremo y el hacinamiento tras los recientes terremotos (Noticia al Dia). En Caracas y Miranda, una fuerte tormenta con ráfagas de viento provocó la caída de árboles sobre viviendas y la interrupción del servicio eléctrico en varios barrios, generando cortes prolongados y riesgos de electrocución (Diario El Tiempo).\n\nEn el estado Barinas, las fluctuaciones de voltaje comprometieron la operatividad de máquinas de hemodiálisis en el Hospital Doctor Luis Razetti, interrumpiendo tratamientos críticos para pacientes renales (Diario La Nacion). La Cámara de Licoreros de Táchira denunció una crisis eléctrica que asfixia el comercio en los 29 municipios de la entidad, mientras que en Rubio (Junín) y Seboruco los hospitales tuvieron que atender a pacientes con linternas debido a apagones continuos (El Impulso). En Yaracuy, el diputado Biagio Pilieri denunció el colapso del sistema eléctrico nacional, señalando la falta de suministro como una vulneración de derechos básicos (El Impulso).\n\nLas interrupciones también provocaron protestas en Carabobo, donde vecinos de El Trigal y Valencia exigieron respuestas a los constantes apagones (El Periodico de Monagas). En Zulia, los cortes de luz de hasta seis horas diarias pusieron en riesgo a pacientes renales, mientras que en Miranda fuertes lluvias dejaron sin energía a decenas de comunidades y provocaron la caída de un árbol sobre una vivienda en Potrerito (El Periodico de Monagas). En los municipios de Punceres y Caripito, Monagas, la caída de torres de alta tensión generó apagones masivos que se prolongaron más de 12 horas, agravando la vulnerabilidad de la población (El Periodico de Monagas).",
   "fuentes": [
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/aumento-de-enfermedades-respiratorias-en-venezuela-clima-apagones-y-hacinamiento-elevan-el-riesgo/"
+    },
     {
       "nombre": "Diario El Tiempo (Trujillo)",
       "link": "https://diarioeltiempo.com.ve/fuerte-tormenta-con-rafagas-de-viento-causaron-arboles-caidos-y-fallas-electricas-este-domingo-en-caracas-y-miranda/"
@@ -30,6 +34,14 @@
       "link": "https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/20/tachira-apagones-afectan-operatividad-de-los-hospitales-20ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/21/en-san-fernando-claman-por-resolucion-de-los-apagones-21ago/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/cortes-de-luz-en-zulia-ponen-en-riesgo-a-pacientes-renales/"
     },
@@ -43,7 +55,15 @@
     },
     {
       "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/monagas/cachapas-de-el-zamuro-sabor-a-prueba-de-apagones/"
+      "link": "https://elperiodicodemonagas.com.ve/monagas/punceres-y-caripito-sin-luz-por-caida-de-torres-de-alta-tension/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/corpoelec-busca-restituir-electricidad-tras-caidas-de-torres-en-monagas/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/recuperan-al-100-el-servicio-electrico-en-punceres-y-bolivar/"
     },
     {
       "nombre": "El Pitazo",
@@ -62,8 +82,12 @@
       "link": "https://elpitazo.net/regiones/gran-caracas/protesta-contra-corpoelec-en-8-estados-usuarios-rechazan-apagones-y-aumento-de-la-tarifa-electrica/"
     },
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/los-andes/tachira-casa-hogar-que-alberga-a-130-personas-en-abandono-pide-donaciones-de-alimentos-y-una-planta-electrica/"
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/sucre-vecinos-de-canchunchu-nuevo-y-23-de-enero-protestaron-por-una-falla-electrica-que-sumaba-unas-20-horas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/hasta-8-hora-sin-luz-la-calamidad-electrica-que-golpea-a-las-familias-de-la-zona-norte-de-anzoategui/"
     },
     {
       "nombre": "La Patilla",
@@ -82,6 +106,26 @@
       "link": "https://lapatilla.com/2026/08/18/en-ejido-estallan-protestas-contra-los-apagones-de-mas-de-ocho-horas-diarias/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/crece-preocupacion-de-nuevo-apagon-en-venezuela-tras-fuerte-fluctuacion-de-luz-la-noche-del-20ago/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/ya-basta-no-se-aguanta-en-guarico-protestaron-frente-a-corpoelec-por-los-apagones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/21/vecinos-de-la-orquidea-en-barcelona-pasan-las-de-cain-sin-agua-con-apagones-y-crateres-en-las-calles/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/22/habitantes-en-los-teques-protestan-para-exigir-restitucion-de-servicios-de-agua-y-luz-este-22ago/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/24/viral-nadie-pudo-arruinar-esta-boda-civil-en-venezuela-ni-siquiera-corpoelec/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/noticia/andres-velasquez-apagones-corrupcion/"
     },
@@ -94,60 +138,16 @@
       "link": "https://laprensademonagas.com/yaracuy-fuertes-lluvias-y-vientos-derriban-cinco-postes-en-san-felipe/"
     },
     {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/tromba-lacustre-se-forma-sobre-el-lago-de-maracaibo/"
+    },
+    {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
     },
     {
       "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/nacion/opositor-andres-velasquez-atribuyo-apagones-en-venezuela-a-la-corrupcion-y-no-a-la-crisis-climatica/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/11/cerraron-autopista-en-boca-de-uchire-oara-reclamar-por-fallas-electricas/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/14/por-prolongados-cortes-de-luz-protestaron-en-anzoategui-este-viernes-14a/"
-    },
-    {
-      "nombre": "Noticias de Aqui (Anzoategui)",
-      "link": "https://noticiasdeaqui.co/2026/08/15/habitantes-de-maturin-denuncian-constantes-cortes-electricos/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/principales/ya-no-son-cinco-horas-son-seis-y-hasta-ocho-protestan-contra-racionamientos-de-luz-en-acarigua-araure/?utm_source=rss&utm_medium=rss&utm_campaign=ya-no-son-cinco-horas-son-seis-y-hasta-ocho-protestan-contra-racionamientos-de-luz-en-acarigua-araure"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/protestan-por-apagones-en-aragua-y-carabobo/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/primero-justicia-bolivar-denuncia-cortes-electricos-ante-la-defensoria-del-pueblo/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/08/14/no-mas-apagones/"
-    },
-    {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/08/ciudadanos-denuncian-apagones-continuos.html"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/07/31/paro-civico-en-el-callao-estado-bolivar-por-las-fallas-electricas/"
+      "link": "https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/"
     }
   ]
 }

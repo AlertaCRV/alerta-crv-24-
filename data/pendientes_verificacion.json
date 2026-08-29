@@ -1464,19 +1464,31 @@
     "ultima_vez": "2026-08-28T17:33:39.024755+00:00"
   },
   "incendio::Miranda::2026-08-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-29T01:12:16.530529+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-29T07:55:39.438428+00:00"
   },
   "deslizamiento::Lara::2026-08-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-29T01:12:20.024664+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-29T07:55:56.584358+00:00"
   },
   "orden_publico::Anzoategui::2026-08-29": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-29T01:12:23.455600+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-29T07:55:59.910675+00:00"
   },
   "infraestructura_agua::Nueva Esparta::2026-08-29": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-29T07:55:46.384302+00:00"
+  },
+  "orden_publico::Sucre::2026-08-29": {
     "intentos": 1,
-    "ultima_vez": "2026-08-29T01:12:26.974108+00:00"
+    "ultima_vez": "2026-08-29T07:55:42.965710+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T07:55:49.760012+00:00"
+  },
+  "inundacion::Aragua::2026-08-29": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-29T07:55:53.209578+00:00"
   }
 }
