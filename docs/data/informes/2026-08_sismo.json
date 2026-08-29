@@ -3,23 +3,39 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-08-20T03:21:50.228963+00:00",
-  "actualizado_hasta": "2026-08-19T06:05:27.642492+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-29T07:57:47.479817+00:00",
+  "actualizado_hasta": "2026-08-26T18:52:11.937117+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 4
+    "actual": 8
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron cuatro eventos sísmicos, frente a ninguno en julio del mismo año (0 evento(s) registrados entonces vs. 4 en este período). La actividad sísmica se concentró principalmente en la zona capitalina y en varios estados del occidente del país, sin que se reportaran víctimas fatales, aunque sí se observaron daños materiales y situaciones de riesgo.\n\nEl evento más significativo ocurrió en el Distrito Capital, donde un sismo de alta severidad, acompañado de intensas lluvias, provocó la inestabilidad del terreno y el colapso parcial de una vivienda en el sector Carapita, parroquia Antímano del municipio Libertador (Runrun.es). Los bomberos del Distrito Capital acudieron al lugar para atender la emergencia y asegurar la zona afectada.\n\nEl lunes 10 de agosto se registró un sismo de magnitud 7,4 en Colombia, cuyo epicentro estuvo en San José del Palmar, Chocó. El movimiento telúrico fue percibido en el estado Zulia, aunque no se reportaron daños en territorio venezolano (El Periodico de Monagas; La Verdad). Las autoridades locales confirmaron que el temblor no generó afectaciones estructurales ni heridos.\n\nEl jueves 13 de agosto se reportaron tres sismos de baja y moderada magnitud en los estados Lara, Trujillo y Barinas. Según Protección Civil, ninguno de estos sismos provocó daños en infraestructuras ni dejó personas heridas (Noticia al Dia).\n\nFinalmente, se registró un sismo de magnitud 4,2 en el centro‑occidente del país, con una profundidad de 8,1 km, que se sintió en los estados Yaracuy, Falcón, Lara y Carabobo (Primicia). Este temblor tampoco generó reportes de daños materiales ni de personas lesionadas.",
+  "narrativa": "En el mes de agosto de 2026 se registraron ocho sismos en Venezuela, frente a ninguno en el mes anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 8 en este período). La mayoría de los temblores fueron de baja a moderada magnitud, pero dos de ellos causaron daños materiales significativos y requirieron la intervención de los servicios de emergencia.\n\nEl sismo de alta severidad que sacudió el Distrito Capital ocurrió en la madrugada del martes 18 de agosto, provocando la inestabilidad del terreno y lluvias intensas que colapsaron parcialmente una vivienda en el sector Carapita, parroquia Antímano del municipio Libertador (Runrun.es). Equipos del Cuerpo de Bomberos del Distrito Capital fueron desplegados rápidamente para atender la emergencia y garantizar la seguridad de los residentes, aunque no se reportaron víctimas fatales.\n\nEn La Guaira, un sismo de severidad crítica generó graves daños materiales, destruyendo la vivienda y dos locales comerciales de la familia Senges en Playa Grande (Portuguesa Reporta). La magnitud del impacto motivó la aprobación de una reforma legal destinada a impulsar la construcción de viviendas y establecer garantías para los proyectos inmobiliarios, en respuesta al déficit habitacional provocado por los terremotos recientes (Portuguesa Reporta).\n\nOtros temblores de menor intensidad se sintieron en los estados Lara, Trujillo y Barinas el 13 de agosto, sin provocar afectaciones en infraestructuras ni lesiones (Noticia al Dia). Asimismo, se registraron sismos de magnitud 4.2 en el centro‑occidente y de 5.1 con epicentro en Colombia, percibidos en zonas fronterizas como Táchira, pero sin reportes de daños (Primicia; El Pitazo).",
   "fuentes": [
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/nacionales/la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos"
+    },
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/"
     },
     {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/reportajes-y-especiales/las-tres-cruces-del-padre-jhonny-arias/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/mundo/sismo-de-magnitud-74-se-registro-este-lunes-en-colombia/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/cronicas/se-reseteo-mi-vida-alejandro-perdio-su-casa-y-su-negocio-en-el-terremoto-de-la-guaira-pero-encontro-una-razon-para-empezar-de-nuevo/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/internacional/temblor-de-magnitud-5-1-con-epicentro-en-colombia-se-sintio-en-tachira-este-26ago/"
     },
     {
       "nombre": "La Verdad (Zulia)",
