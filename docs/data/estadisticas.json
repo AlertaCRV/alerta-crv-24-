@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-08-30T18:48:30.165442+00:00",
+  "actualizado": "2026-08-30T21:41:44.957243+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-08-30T16:57:03+00:00"
   },
-  "total_eventos": 300,
+  "total_eventos": 302,
   "por_tipo": {
-    "tormenta_electrica": 6,
+    "tormenta_electrica": 8,
     "inundacion": 59,
     "infraestructura_electrica": 69,
     "deslizamiento": 25,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 51,
+      "total": 52,
       "confirmados": 4
     },
     {
@@ -93,12 +93,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 9,
+      "estado": "La Guaira",
+      "total": 10,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Tachira",
       "total": 9,
       "confirmados": 0
     },
@@ -185,7 +185,7 @@
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
       "sismo": 1,
-      "tormenta_electrica": 1,
+      "tormenta_electrica": 2,
       "emergencia_metro": 2,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
@@ -318,7 +318,8 @@
       "infraestructura_electrica": 2,
       "deslizamiento": 2,
       "inundacion": 3,
-      "sismo": 2
+      "sismo": 2,
+      "tormenta_electrica": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -328,14 +329,14 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 249,
+    "sin_clasificar": 251,
     "medio": 4,
     "bajo": 5
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2,
-      "2026-08": 4
+      "2026-08": 6
     },
     "inundacion": {
       "2026-07": 7,

@@ -1532,43 +1532,39 @@
     "ultima_vez": "2026-08-30T11:38:13.287007+00:00"
   },
   "ataque_armado::Miranda::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T15:29:26.636964+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T21:41:11.691448+00:00"
   },
   "infraestructura_electrica::Carabobo::2026-08-30": {
     "intentos": 2,
     "ultima_vez": "2026-08-30T18:47:48.531387+00:00"
-  },
-  "tormenta_electrica::Distrito Capital::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T18:47:55.433503+00:00"
-  },
-  "tormenta_electrica::La Guaira::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T18:48:06.897873+00:00"
   },
   "infraestructura_electrica::Yaracuy::2026-08-30": {
     "intentos": 2,
     "ultima_vez": "2026-08-30T18:48:29.709311+00:00"
   },
   "orden_publico::Yaracuy::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T18:47:33.839959+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T21:41:15.101927+00:00"
   },
   "orden_publico::Barinas::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T18:47:41.808464+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T21:41:21.967691+00:00"
   },
   "infraestructura_electrica::Barinas::2026-08-30": {
     "intentos": 1,
     "ultima_vez": "2026-08-30T18:47:45.181697+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T18:47:52.097943+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T21:41:43.783522+00:00"
   },
   "infraestructura_agua::Yaracuy::2026-08-30": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T21:41:32.276054+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-30": {
     "intentos": 1,
-    "ultima_vez": "2026-08-30T18:48:18.293036+00:00"
+    "ultima_vez": "2026-08-30T21:41:18.588648+00:00"
   }
 }

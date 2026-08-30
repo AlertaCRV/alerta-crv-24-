@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "tormenta_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/",
+        "fecha": "2026-08-30T14:54:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T14:54:06+00:00",
+    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
+    "fecha_deteccion": "2026-08-30T21:41:25.445713+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tormenta_electrica::Distrito Capital::2026-08-30",
+    "titulo": "Tormenta eléctrica en Distrito Capital",
+    "texto": "📌 Tormenta eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 30/08/2026, 10:54 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 5:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/"
+  },
+  {
+    "tipo": "tormenta_electrica",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/",
+        "fecha": "2026-08-30T14:54:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T14:54:06+00:00",
+    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
+    "fecha_deteccion": "2026-08-30T21:41:28.812193+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tormenta_electrica::La Guaira::2026-08-30",
+    "titulo": "Tormenta eléctrica en La Guaira",
+    "texto": "📌 Tormenta eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 30/08/2026, 10:54 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 5:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -4304,109 +4356,5 @@
     "clave_dedup": "inundacion::Carabobo::2026-08-16",
     "titulo": "Inundación en Municipio Guacara, Carabobo",
     "texto": "📌 Inundación en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 16/08/2026, 6:31 p.m.\n🔎 Detectado por el sistema: 17/08/2026, 1:25 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Yaracuy",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/",
-        "fecha": "2026-08-16T18:12:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T18:12:18+00:00",
-    "fecha_evento_temprana": "2026-08-16T18:12:18+00:00",
-    "fecha_deteccion": "2026-08-16T21:02:42.179088+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Yaracuy::2026-08-16",
-    "titulo": "Falla eléctrica en Yaracuy",
-    "texto": "📌 Falla eléctrica en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 16/08/2026, 2:12 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 5:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Lara",
-    "municipio": "Torres",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/combaten-incendio-forestal-en-sicarigua/",
-        "fecha": "2026-08-16T17:49:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T17:49:27+00:00",
-    "fecha_evento_temprana": "2026-08-16T17:49:27+00:00",
-    "fecha_deteccion": "2026-08-16T20:08:09.681459+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Lara::2026-08-16",
-    "titulo": "Incendio en Municipio Torres, Lara",
-    "texto": "📌 Incendio en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 16/08/2026, 1:49 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 4:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/combaten-incendio-forestal-en-sicarigua/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Trujillo",
-    "municipio": "San Rafael De Carvajal",
-    "parroquia": "Carvajal",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/",
-        "fecha": "2026-08-16T19:30:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T19:30:03+00:00",
-    "fecha_evento_temprana": "2026-08-16T19:30:03+00:00",
-    "fecha_deteccion": "2026-08-16T19:52:00.824801+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Trujillo::2026-08-16",
-    "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
-    "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 16/08/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:52 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Noticia de Barinas",
-        "link": "https://lanoticiadebarinas.com/2026/08/manifiestan-ante-colapsodel-sistema-electrico/",
-        "fecha": "2026-08-16T15:39:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T15:39:42+00:00",
-    "fecha_evento_temprana": "2026-08-16T15:39:42+00:00",
-    "fecha_deteccion": "2026-08-16T19:04:14.262180+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Barinas::2026-08-16",
-    "titulo": "Orden público en Barinas",
-    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/08/2026, 11:39 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 3:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/manifiestan-ante-colapsodel-sistema-electrico/"
   }
 ]
