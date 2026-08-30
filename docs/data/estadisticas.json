@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-29T22:36:24.508886+00:00",
+  "actualizado": "2026-08-30T11:38:27.575300+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-29T21:58:34+00:00"
+    "hasta": "2026-08-30T01:03:08+00:00"
   },
-  "total_eventos": 295,
+  "total_eventos": 296,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 59,
-    "infraestructura_electrica": 65,
+    "infraestructura_electrica": 66,
     "deslizamiento": 25,
     "colapso_estructural": 3,
     "orden_publico": 51,
@@ -89,7 +89,7 @@
     },
     {
       "estado": "Sucre",
-      "total": 10,
+      "total": 11,
       "confirmados": 0
     },
     {
@@ -212,7 +212,7 @@
     "Sucre": {
       "inundacion": 2,
       "orden_publico": 5,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 4
     },
     "Anzoategui": {
       "infraestructura_electrica": 7,
@@ -328,7 +328,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 244,
+    "sin_clasificar": 245,
     "medio": 4,
     "bajo": 5
   },
@@ -343,7 +343,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 60
+      "2026-08": 61
     },
     "deslizamiento": {
       "2026-07": 3,

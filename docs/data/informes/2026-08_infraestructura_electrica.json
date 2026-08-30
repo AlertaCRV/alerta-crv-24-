@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-29T07:56:43.044651+00:00",
-  "actualizado_hasta": "2026-08-25T21:46:11.746935+00:00",
-  "total_eventos": 60,
+  "generado": "2026-08-30T11:39:24.572059+00:00",
+  "actualizado_hasta": "2026-08-30T11:38:26.889071+00:00",
+  "total_eventos": 61,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
-    "actual": 60
+    "actual": 61
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 60 fallas eléctricas, frente a los 5 eventos reportados en julio, lo que indica un incremento significativo en la frecuencia de interrupciones del suministro eléctrico (Datos comparativos). Este aumento se ha traducido en múltiples incidentes con daños materiales, heridos y afectaciones a la salud en distintas regiones del país.\n\nUna de las fallas más graves ocurrió en La Guaira, donde la severidad del apagón se vinculó al aumento de enfermedades respiratorias entre la población afectada por el clima extremo y el hacinamiento tras los recientes terremotos (Noticia al Dia). En Caracas y Miranda, una fuerte tormenta con ráfagas de viento provocó la caída de árboles sobre viviendas y la interrupción del servicio eléctrico en varios barrios, generando cortes prolongados y riesgos de electrocución (Diario El Tiempo).\n\nEn el estado Barinas, las fluctuaciones de voltaje comprometieron la operatividad de máquinas de hemodiálisis en el Hospital Doctor Luis Razetti, interrumpiendo tratamientos críticos para pacientes renales (Diario La Nacion). La Cámara de Licoreros de Táchira denunció una crisis eléctrica que asfixia el comercio en los 29 municipios de la entidad, mientras que en Rubio (Junín) y Seboruco los hospitales tuvieron que atender a pacientes con linternas debido a apagones continuos (El Impulso). En Yaracuy, el diputado Biagio Pilieri denunció el colapso del sistema eléctrico nacional, señalando la falta de suministro como una vulneración de derechos básicos (El Impulso).\n\nLas interrupciones también provocaron protestas en Carabobo, donde vecinos de El Trigal y Valencia exigieron respuestas a los constantes apagones (El Periodico de Monagas). En Zulia, los cortes de luz de hasta seis horas diarias pusieron en riesgo a pacientes renales, mientras que en Miranda fuertes lluvias dejaron sin energía a decenas de comunidades y provocaron la caída de un árbol sobre una vivienda en Potrerito (El Periodico de Monagas). En los municipios de Punceres y Caripito, Monagas, la caída de torres de alta tensión generó apagones masivos que se prolongaron más de 12 horas, agravando la vulnerabilidad de la población (El Periodico de Monagas).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 61 eventos de fallas eléctricas, frente a los 5 reportados en julio de 2026 (comparación con el período anterior). Este incremento significativo evidencia una mayor vulnerabilidad del sistema eléctrico nacional y sus repercusiones en la población.\n\nUna de las incidencias más graves ocurrió en La Guaira, donde una falla eléctrica de alta severidad provocó un aumento de enfermedades respiratorias entre los damnificados, agravado por el clima caluroso y el hacinamiento tras los recientes terremotos (Noticia al Dia).\n\nEn Caracas y el estado Miranda, una fuerte tormenta con ráfagas de viento derribó árboles y generó múltiples fallas eléctricas; en los Altos Mirandinos se reportaron cortes en diversas zonas y, específicamente, la caída de un árbol sobre una vivienda en la comunidad de Potrerito, municipio Los Salias (Diario El Tiempo).\n\nEn Barinas, las fluctuaciones del suministro eléctrico comprometieron la operatividad de las máquinas de hemodiálisis del Hospital Doctor Luis Razetti, interrumpiendo tratamientos de pacientes renales (Diario La Nacion). En el mismo estado, la Cámara de Licoreros de Táchira denunció que la crisis eléctrica asfixia a los negocios locales en los 29 municipios de la entidad (Diario La Nacion).\n\nDesde Yaracuy, el diputado Biagio Pilieri denunció el colapso eléctrico que afecta a toda Venezuela, calificándolo como una vulneración del derecho básico a la electricidad (El Impulso). En Táchira, los constantes apagones limitaron la operatividad de los hospitales, obligando al personal a trabajar con linternas (El Impulso). En San Fernando, Apure, organizaciones políticas reclamaron una solución definitiva a los apagones que persisten en la región (El Impulso).\n\nEn Zulia, los cortes de luz de cinco a seis horas diarias pusieron en riesgo a pacientes renales que dependen de equipos eléctricos (El Periodico de Monagas). En Carabobo, ciudadanos protestaron contra los apagones exigiendo respuestas a las autoridades (El Periodico de Monagas). Asimismo, fuertes lluvias en Miranda provocaron apagones y destrozos, incluyendo la caída de un árbol sobre una vivienda en Potrerito (El Periodico de Monagas). En los municipios de Punceres y Caripito, Monagas, la caída de torres de alta tensión dejó sin luz a miles de hogares durante más de 12 horas (El Periodico de Monagas).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -90,6 +90,10 @@
       "link": "https://eltiempove.com/hasta-8-hora-sin-luz-la-calamidad-electrica-que-golpea-a-las-familias-de-la-zona-norte-de-anzoategui/"
     },
     {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/caida-de-lineas-dejo-sin-energia-por-12-horas-a-habitantes-de-una-parroquia-en-sucre/"
+    },
+    {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/04/protestan-en-corpoelec-exigiendo-soluciones-a-los-insoportables-apagones-en-barinas/"
     },
@@ -144,10 +148,6 @@
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/"
     }
   ]
 }

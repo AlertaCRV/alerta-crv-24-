@@ -1511,14 +1511,6 @@
     "intentos": 2,
     "ultima_vez": "2026-08-30T05:57:38.551619+00:00"
   },
-  "inundacion::Aragua::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T05:58:00.393644+00:00"
-  },
-  "infraestructura_electrica::Sucre::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T05:58:11.779710+00:00"
-  },
   "deslizamiento::Tachira::2026-08-30": {
     "intentos": 2,
     "ultima_vez": "2026-08-30T05:58:23.327724+00:00"
@@ -1540,19 +1532,19 @@
     "ultima_vez": "2026-08-30T00:45:23.666454+00:00"
   },
   "infraestructura_electrica::Zulia::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T05:57:31.922734+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T11:38:09.804956+00:00"
   },
   "infraestructura_electrica::Distrito Capital::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T05:57:42.222756+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T11:38:13.287007+00:00"
   },
   "infraestructura_electrica::Barinas::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T05:57:45.542157+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T11:38:16.801219+00:00"
   },
   "infraestructura_electrica::Merida::2026-08-30": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-30T05:57:48.835314+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-30T11:38:20.236171+00:00"
   }
 }
