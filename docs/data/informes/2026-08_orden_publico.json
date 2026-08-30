@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-08-29T01:17:09.454617+00:00",
-  "actualizado_hasta": "2026-08-26T04:57:47.296106+00:00",
-  "total_eventos": 47,
+  "generado": "2026-08-30T00:50:11.334354+00:00",
+  "actualizado_hasta": "2026-08-29T22:35:52.398633+00:00",
+  "total_eventos": 49,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 47
+    "actual": 49
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 47 incidentes de orden público, frente a los 2 eventos reportados en julio del mismo año, lo que evidencia un notable incremento en la actividad protestante (Comparación con el período anterior). \n\nEl 17 de agosto, trabajadores de la salud de Barinas se congregaron frente al Circuito Judicial Penal para protestar por la detención de ocho profesionales del Hospital Doctor Luis Razetti, quienes fueron arrestados tras un accidente con una lámpara artesanal (La Nacion). \n\nEn Táchira, el 22 de agosto, jubilados, pensionados y sobrevivientes de CANTV realizaron una manifestación pacífica en la sede de Barrio Obrero, denunciando la falta de cobertura médica y la reducción del 25 % del bono vital, así como salarios insuficientes de 571 bolívares (La Nacion). \n\nEl 7 de agosto, en Caracas, familiares de presos políticos se reunieron frente a la Cancillería exigiendo la presencia de la CIDH y la intervención de la Cruz Roja; ese mismo día, jubilados y empleados de la Gobernación de Lara se concentraron en la Plaza La Moneda de Barquisimeto para reclamar el pago del bono de profesionalización y la eliminación del Sistema Patria (El Impulso). \n\nA lo largo del mes, la crisis eléctrica desencadenó protestas en al menos siete estados (Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar) el 6 de agosto, con vecinos quemando neumáticos y haciendo cacerolazos; en Carabobo y Aragua, el 3 de agosto, se registraron cacerolazos y represión contra los apagones prolongados (El Periodico de Monagas; El Pitazo). Además, el 18 de agosto, jubilados de las salinas de Araya (Sucre) amenazaron con una huelga de hambre y se amarraron al portón de la empresa tras 170 días de protesta (El Impulso).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 49 eventos de orden público, frente a los 2 registrados en julio del mismo año (Comparación con el período anterior). Este incremento refleja una escalada de manifestaciones en distintas regiones del país.\n\nEl 17 de agosto, trabajadores de la salud protestaron frente al Circuito Judicial Penal de Barinas tras la detención de ocho integrantes del personal médico y de enfermería del Hospital Doctor Luis Razetti, ocurrida el 15 de agosto (Diario La Nacion). En Táchira, el 22 de agosto, jubilados, pensionados y sobrevivientes de CANTV realizaron una protesta pacífica en la sede de Barrio Obrero para denunciar la falta de salario justo y la reducción del bono vital (Diario La Nacion).\n\nEn la capital, el 7 de agosto, familiares de presos políticos se concentraron frente a la Cancillería exigiendo la presencia de la CIDH y la intervención de la Cruz Roja (El Impulso). Ese mismo día, jubilados y empleados activos de la Gobernación del estado Lara se reunieron en la Plaza La Moneda, en Barquisimeto, para reclamar el pago del bono de profesionalización y el fin del Sistema Patria (El Impulso).\n\nLas fallas eléctricas provocaron protestas en al menos siete estados (Aragua, Carabobo, Monagas, Lara, Portuguesa, Cojedes y Bolívar) la noche del 6 de agosto, con vecinos quemando neumáticos y realizando cacerolazos (El Periodico de Monagas). En Carabobo y Aragua, el 3 de agosto, se registraron cacerolazos y actos de represión durante manifestaciones contra los apagones de más de cinco horas diarias (El Pitazo). Además, El Pitazo documentó al menos 14 protestas en siete estados durante los diez días previos, incluida una en Monagas el 6 de agosto (El Pitazo).\n\nFinalmente, el 18 de agosto, jubilados de las salinas de Araya, en el municipio Cruz Salmerón Acosta del estado Sucre, anunciaron la posibilidad de iniciar una huelga de hambre y amarrarse al portón si no se atienden sus reclamos sobre beneficios perdidos tras 170 días de protesta (El Impulso).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -130,6 +130,10 @@
       "link": "https://lapatilla.com/2026/08/25/juan-pablo-guanipa-todos-los-dias-estamos-sin-luz-por-cuatro-seis-ocho-horas-y-mas-en-el-estado-zulia/"
     },
     {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/29/chavistas-se-rebelaron-contra-delcy-rodriguez-y-sus-acuerdos-petroleros-con-eeuu-video/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
     },
@@ -140,10 +144,6 @@
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas/?utm_source=rss&utm_medium=rss&utm_campaign=docente-denuncia-destitucion-como-directora-en-tras-participar-en-protestas"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/apure/familiares-de-militares-detenidos-protestaron-en-san-fernando-de-apure-por-presunto-retardo-procesal/"
     }
   ]
 }
