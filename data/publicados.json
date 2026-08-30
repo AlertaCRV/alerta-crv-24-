@@ -75,5 +75,12 @@
     "fecha_deteccion": "2026-08-30T15:30:08.085005+00:00",
     "fecha_evento_temprana": "2026-08-30T13:09:02+00:00",
     "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-08-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-30T18:47:38.439194+00:00",
+    "fecha_evento_temprana": "2026-08-30T16:57:03+00:00",
+    "municipio": null
   }
 }

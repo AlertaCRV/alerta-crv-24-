@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-08-30T15:30:09.298574+00:00",
+  "actualizado": "2026-08-30T18:48:30.165442+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-30T14:18:28+00:00"
+    "hasta": "2026-08-30T16:57:03+00:00"
   },
-  "total_eventos": 299,
+  "total_eventos": 300,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 59,
     "infraestructura_electrica": 69,
     "deslizamiento": 25,
     "colapso_estructural": 3,
-    "orden_publico": 51,
+    "orden_publico": 52,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 24,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 50,
+      "total": 51,
       "confirmados": 4
     },
     {
@@ -179,7 +179,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 9,
+      "orden_publico": 10,
       "incendio": 8,
       "vialidad": 1,
       "infraestructura_electrica": 7,
@@ -328,7 +328,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 248,
+    "sin_clasificar": 249,
     "medio": 4,
     "bajo": 5
   },
@@ -355,7 +355,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 49
+      "2026-08": 50
     },
     "salud_publica": {
       "2026-07": 1,
