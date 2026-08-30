@@ -1,6 +1,104 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/apagon-afecta-al-zulia-y-otros-estados-del-occidente-del-pais/",
+        "fecha": "2026-08-30T13:42:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T13:42:20+00:00",
+    "fecha_evento_temprana": "2026-08-30T13:42:20+00:00",
+    "fecha_deteccion": "2026-08-30T15:29:30.159248+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-08-30",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 30/08/2026, 9:42 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 11:29 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/apagon-afecta-al-zulia-y-otros-estados-del-occidente-del-pais/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 3.2,
+    "confirmado": false,
+    "num_fuentes": 5,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/apagon-afecta-al-zulia-y-otros-estados-del-occidente-del-pais/",
+        "fecha": "2026-08-30T13:42:20+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/08/30/cinco-estados-del-occidente-venezolano-quedaron-a-oscuras-por-falla-en-el-servicio-electrico-30ago/",
+        "fecha": "2026-08-30T13:37:58+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/reportan-apagon-general-en-estados-al-occidente-del-pais-este-29ago/",
+        "fecha": "2026-08-30T10:19:41+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/apagon-afecto-a-cinco-estados-y-provoco-caida-de-redes-moviles/",
+        "fecha": "2026-08-30T14:18:28+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/usuarios-exigen-que-se-determine-las-causas-del-apagon-que-afecto-cinco-estados-del-pais/",
+        "fecha": "2026-08-30T13:54:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T14:18:28+00:00",
+    "fecha_evento_temprana": "2026-08-30T10:19:41+00:00",
+    "fecha_deteccion": "2026-08-30T15:29:37.817915+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-30",
+    "titulo": "Falla eléctrica en Municipio Maracaibo, Zulia",
+    "texto": "📌 Falla eléctrica en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 30/08/2026, 10:18 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 11:29 a.m.\n📊 Fuentes independientes: 5 (score 3.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/apagon-afecta-al-zulia-y-otros-estados-del-occidente-del-pais/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/30/cinco-estados-del-occidente-venezolano-quedaron-a-oscuras-por-falla-en-el-servicio-electrico-30ago/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/reportan-apagon-general-en-estados-al-occidente-del-pais-este-29ago/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/apagon-afecto-a-cinco-estados-y-provoco-caida-de-redes-moviles/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/usuarios-exigen-que-se-determine-las-causas-del-apagon-que-afecto-cinco-estados-del-pais/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/el-zulia-estuvo-en-penumbras-por-varias-horas-apagon-afecto-desde-anoche-a-varios-estados-del-pais/",
+        "fecha": "2026-08-30T13:09:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T13:09:02+00:00",
+    "fecha_evento_temprana": "2026-08-30T13:09:02+00:00",
+    "fecha_deteccion": "2026-08-30T15:30:08.085005+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Merida::2026-08-30",
+    "titulo": "Falla eléctrica en Merida",
+    "texto": "📌 Falla eléctrica en Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 30/08/2026, 9:09 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 11:30 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/el-zulia-estuvo-en-penumbras-por-varias-horas-apagon-afecto-desde-anoche-a-varios-estados-del-pais/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Sucre",
     "municipio": "Bermúdez",
     "parroquia": "Bolívar",
@@ -4310,31 +4408,5 @@
     "clave_dedup": "inundacion::Portuguesa::2026-08-16",
     "titulo": "Inundación en Municipio Araure, Portuguesa",
     "texto": "📌 Inundación en Municipio Araure, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Araure, Portuguesa\n🕒 Hecho reportado: 16/08/2026, 11:35 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 1:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/regionales/cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago/?utm_source=rss&utm_medium=rss&utm_campaign=cortes-de-luz-anegaciones-y-arboles-caidos-tras-fuertes-lluvias-en-acarigua-araure-durante-la-madrugada-16ago"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/onda-tropical-37-causa-inundaciones-y-caida-de-arboles-en-aragua/",
-        "fecha": "2026-08-16T14:16:36+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-16T14:16:36+00:00",
-    "fecha_evento_temprana": "2026-08-16T14:16:36+00:00",
-    "fecha_deteccion": "2026-08-16T14:59:04.921454+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Aragua::2026-08-16",
-    "titulo": "Inundación en Aragua",
-    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 16/08/2026, 10:16 a.m.\n🔎 Detectado por el sistema: 16/08/2026, 10:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/onda-tropical-37-causa-inundaciones-y-caida-de-arboles-en-aragua/"
   }
 ]

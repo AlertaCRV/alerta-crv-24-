@@ -1531,20 +1531,28 @@
     "intentos": 1,
     "ultima_vez": "2026-08-30T00:45:23.666454+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T11:38:09.804956+00:00"
-  },
   "infraestructura_electrica::Distrito Capital::2026-08-30": {
     "intentos": 2,
     "ultima_vez": "2026-08-30T11:38:13.287007+00:00"
   },
-  "infraestructura_electrica::Barinas::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T11:38:16.801219+00:00"
+  "ataque_armado::Miranda::2026-08-30": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-30T15:29:26.636964+00:00"
   },
-  "infraestructura_electrica::Merida::2026-08-30": {
-    "intentos": 2,
-    "ultima_vez": "2026-08-30T11:38:20.236171+00:00"
+  "infraestructura_electrica::Carabobo::2026-08-30": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-30T15:29:33.776333+00:00"
+  },
+  "tormenta_electrica::Distrito Capital::2026-08-30": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-30T15:29:41.193650+00:00"
+  },
+  "tormenta_electrica::La Guaira::2026-08-30": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-30T15:29:44.978369+00:00"
+  },
+  "infraestructura_electrica::Yaracuy::2026-08-30": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-30T15:29:56.404287+00:00"
   }
 }
