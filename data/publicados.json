@@ -54,5 +54,26 @@
     "fecha_deteccion": "2026-08-30T11:38:26.889071+00:00",
     "fecha_evento_temprana": "2026-08-30T01:03:08+00:00",
     "municipio": "Bermúdez"
+  },
+  "infraestructura_electrica::Barinas::2026-08-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-30T15:29:30.159248+00:00",
+    "fecha_evento_temprana": "2026-08-30T13:42:20+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-08-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-30T15:29:37.817915+00:00",
+    "fecha_evento_temprana": "2026-08-30T10:19:41+00:00",
+    "municipio": "Maracaibo"
+  },
+  "infraestructura_electrica::Merida::2026-08-30": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-08-30T15:30:08.085005+00:00",
+    "fecha_evento_temprana": "2026-08-30T13:09:02+00:00",
+    "municipio": null
   }
 }

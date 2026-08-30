@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-30T11:38:27.575300+00:00",
+  "actualizado": "2026-08-30T15:30:09.298574+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-08-30T01:03:08+00:00"
+    "hasta": "2026-08-30T14:18:28+00:00"
   },
-  "total_eventos": 296,
+  "total_eventos": 299,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 59,
-    "infraestructura_electrica": 66,
+    "infraestructura_electrica": 69,
     "deslizamiento": 25,
     "colapso_estructural": 3,
     "orden_publico": 51,
@@ -33,18 +33,18 @@
       "confirmados": 4
     },
     {
+      "estado": "Barinas",
+      "total": 21,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 20,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
-      "total": 20,
-      "confirmados": 1
-    },
-    {
       "estado": "Zulia",
-      "total": 19,
+      "total": 20,
       "confirmados": 4
     },
     {
@@ -108,6 +108,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Merida",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Nueva Esparta",
       "total": 7,
       "confirmados": 1
@@ -116,11 +121,6 @@
       "estado": "Falcon",
       "total": 7,
       "confirmados": 1
-    },
-    {
-      "estado": "Merida",
-      "total": 7,
-      "confirmados": 0
     },
     {
       "estado": "Portuguesa",
@@ -167,7 +167,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -203,7 +203,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 4,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "vialidad": 4,
       "orden_publico": 4,
       "infraestructura_agua": 1,
@@ -292,7 +292,7 @@
       "tormenta_electrica": 1
     },
     "Merida": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "vialidad": 1,
       "orden_publico": 1,
       "inundacion": 1,
@@ -328,7 +328,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 245,
+    "sin_clasificar": 248,
     "medio": 4,
     "bajo": 5
   },
@@ -343,7 +343,7 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 61
+      "2026-08": 64
     },
     "deslizamiento": {
       "2026-07": 3,
