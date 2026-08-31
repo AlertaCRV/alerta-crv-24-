@@ -1,5 +1,109 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/el-megafono/ddhh-olvidados/618518/a-jesus-medina-le-quitaron-hasta-los-juguetes-de-su-sobrino/",
+        "fecha": "2026-08-30T13:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T13:00:00+00:00",
+    "fecha_evento_temprana": "2026-08-30T13:00:00+00:00",
+    "fecha_deteccion": "2026-08-30T23:57:09.984153+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "ataque_armado::Miranda::2026-08-30",
+    "titulo": "Ataque armado en Miranda",
+    "texto": "📌 Ataque armado en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 30/08/2026, 9:00 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/el-megafono/ddhh-olvidados/618518/a-jesus-medina-le-quitaron-hasta-los-juguetes-de-su-sobrino/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.6,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/trabajadores-de-cantv-protestan-en-yaracuy-para-exigir-restitucion-de-beneficios-medicos-y-salariales/",
+        "fecha": "2026-08-30T18:25:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T18:25:41+00:00",
+    "fecha_evento_temprana": "2026-08-30T18:25:41+00:00",
+    "fecha_deteccion": "2026-08-30T23:57:13.411922+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Yaracuy::2026-08-30",
+    "titulo": "Orden público en Yaracuy",
+    "texto": "📌 Orden público en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 30/08/2026, 2:25 p.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/trabajadores-de-cantv-protestan-en-yaracuy-para-exigir-restitucion-de-beneficios-medicos-y-salariales/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/muere-bebe-que-sufrio-quemaduras-en-el-hospital-luis-razetti-de-barinas/",
+        "fecha": "2026-08-30T16:42:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T16:42:35+00:00",
+    "fecha_evento_temprana": "2026-08-30T16:42:35+00:00",
+    "fecha_deteccion": "2026-08-30T23:57:20.259241+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-08-30",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 30/08/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/muere-bebe-que-sufrio-quemaduras-en-el-hospital-luis-razetti-de-barinas/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Yaracuy",
+    "municipio": "San Felipe",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua",
+        "fecha": "2026-08-30T18:26:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-08-30T18:26:30+00:00",
+    "fecha_evento_temprana": "2026-08-30T18:26:30+00:00",
+    "fecha_deteccion": "2026-08-30T23:57:57.317017+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Yaracuy::2026-08-30",
+    "titulo": "Falla de agua en Municipio San Felipe, Yaracuy",
+    "texto": "📌 Falla de agua en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 30/08/2026, 2:26 p.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua"
+  },
+  {
     "tipo": "tormenta_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
