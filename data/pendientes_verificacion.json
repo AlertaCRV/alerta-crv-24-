@@ -1588,27 +1588,43 @@
     "ultima_vez": "2026-08-31T11:09:55.707660+00:00"
   },
   "inundacion::Carabobo::2026-08-31": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-31T18:03:12.131259+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-31T22:49:11.601136+00:00"
   },
   "inundacion::Lara::2026-08-31": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-31T18:03:15.525350+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-31T22:49:18.645367+00:00"
   },
   "inundacion::La Guaira::2026-08-31": {
     "intentos": 1,
     "ultima_vez": "2026-08-31T18:03:18.961651+00:00"
   },
   "inundacion::Yaracuy::2026-08-31": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-31T18:03:22.244295+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-31T22:49:25.565244+00:00"
   },
   "incendio::Distrito Capital::2026-08-31": {
-    "intentos": 1,
-    "ultima_vez": "2026-08-31T18:03:25.725921+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-08-31T22:49:29.028653+00:00"
   },
   "orden_publico::Monagas::2026-08-31": {
+    "intentos": 2,
+    "ultima_vez": "2026-08-31T22:49:44.266311+00:00"
+  },
+  "sismo::Distrito Capital::2026-08-31": {
     "intentos": 1,
-    "ultima_vez": "2026-08-31T18:03:29.224005+00:00"
+    "ultima_vez": "2026-08-31T22:49:15.158540+00:00"
+  },
+  "deslizamiento::Tachira::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T22:49:22.127828+00:00"
+  },
+  "vialidad::Monagas::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T22:49:32.750351+00:00"
+  },
+  "infraestructura_electrica::Guarico::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T22:49:55.924890+00:00"
   }
 }
