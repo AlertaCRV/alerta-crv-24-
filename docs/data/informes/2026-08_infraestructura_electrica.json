@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-08-30T11:39:24.572059+00:00",
-  "actualizado_hasta": "2026-08-30T11:38:26.889071+00:00",
-  "total_eventos": 61,
+  "generado": "2026-08-31T11:10:55.034081+00:00",
+  "actualizado_hasta": "2026-08-30T15:30:08.085005+00:00",
+  "total_eventos": 64,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 5,
-    "actual": 61
+    "actual": 64
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron 61 eventos de fallas eléctricas, frente a los 5 reportados en julio de 2026 (comparación con el período anterior). Este incremento significativo evidencia una mayor vulnerabilidad del sistema eléctrico nacional y sus repercusiones en la población.\n\nUna de las incidencias más graves ocurrió en La Guaira, donde una falla eléctrica de alta severidad provocó un aumento de enfermedades respiratorias entre los damnificados, agravado por el clima caluroso y el hacinamiento tras los recientes terremotos (Noticia al Dia).\n\nEn Caracas y el estado Miranda, una fuerte tormenta con ráfagas de viento derribó árboles y generó múltiples fallas eléctricas; en los Altos Mirandinos se reportaron cortes en diversas zonas y, específicamente, la caída de un árbol sobre una vivienda en la comunidad de Potrerito, municipio Los Salias (Diario El Tiempo).\n\nEn Barinas, las fluctuaciones del suministro eléctrico comprometieron la operatividad de las máquinas de hemodiálisis del Hospital Doctor Luis Razetti, interrumpiendo tratamientos de pacientes renales (Diario La Nacion). En el mismo estado, la Cámara de Licoreros de Táchira denunció que la crisis eléctrica asfixia a los negocios locales en los 29 municipios de la entidad (Diario La Nacion).\n\nDesde Yaracuy, el diputado Biagio Pilieri denunció el colapso eléctrico que afecta a toda Venezuela, calificándolo como una vulneración del derecho básico a la electricidad (El Impulso). En Táchira, los constantes apagones limitaron la operatividad de los hospitales, obligando al personal a trabajar con linternas (El Impulso). En San Fernando, Apure, organizaciones políticas reclamaron una solución definitiva a los apagones que persisten en la región (El Impulso).\n\nEn Zulia, los cortes de luz de cinco a seis horas diarias pusieron en riesgo a pacientes renales que dependen de equipos eléctricos (El Periodico de Monagas). En Carabobo, ciudadanos protestaron contra los apagones exigiendo respuestas a las autoridades (El Periodico de Monagas). Asimismo, fuertes lluvias en Miranda provocaron apagones y destrozos, incluyendo la caída de un árbol sobre una vivienda en Potrerito (El Periodico de Monagas). En los municipios de Punceres y Caripito, Monagas, la caída de torres de alta tensión dejó sin luz a miles de hogares durante más de 12 horas (El Periodico de Monagas).",
+  "narrativa": "En el mes de agosto de 2026 se registraron 64 fallas eléctricas, una cifra que supera ampliamente los 5 eventos reportados en julio del mismo año (comparación con el período anterior). Este incremento refleja una escalada significativa de interrupciones y problemas en el suministro eléctrico a nivel nacional.\n\nUno de los incidentes más graves ocurrió en La Guaira, donde una falla eléctrica de alta severidad agravó la situación sanitaria de la población. Según Noticia al Dia (Zulia), el clima, los apagones y el hacinamiento de damnificados tras los recientes terremotos incrementaron los casos de enfermedades respiratorias en la zona.\n\nEn otras regiones, una fuerte tormenta con ráfagas de viento provocó árboles caídos y fallas eléctricas en Caracas y Miranda, afectando varios barrios y generando cortes de energía (Diario El Tiempo (Trujillo)). En Barinas, las fluctuaciones del suministro eléctrico comprometieron la operatividad de máquinas de diálisis en el Hospital Doctor Luis Razetti, interrumpiendo tratamientos de pacientes renales (Diario La Nacion (Tachira)). La Cámara de Licoreros del Estado Táchira denunció una crisis eléctrica que asfixia el comercio en los 29 municipios de la entidad (Diario La Nacion (Tachira)). Además, el 29 de agosto se produjo un apagón general que dejó sin luz a Zulia, Táchira, Mérida, Trujillo y Barinas, afectando a cientos de habitantes (El Impulso (Lara)).\n\nLas consecuencias de estas interrupciones se reflejan en la salud y la protesta ciudadana. En Zulia, los cortes de luz de cinco a seis horas ponen en riesgo a pacientes renales que dependen de equipos médicos (El Periodico de Monagas). En Carabobo, vecinos de El Trigal se manifestaron contra los constantes apagones, exigiendo respuestas a las autoridades (El Periodico de Monagas). Desde Yaracuy, el diputado Biagio Pilieri también denunció el colapso eléctrico que asfixia al país (El Impulso (Lara)).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -30,6 +30,10 @@
       "link": "https://lanacionweb.com/regional/camara-de-licoreros-denuncia-crisis-electrica/"
     },
     {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/reportan-apagon-general-en-estados-al-occidente-del-pais-este-29ago/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/16/biagio-pilieri-denuncia-desde-yaracuy-el-colapso-electrico-que-asfixia-a-venezuela-16ago/"
     },
@@ -40,6 +44,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/08/21/en-san-fernando-claman-por-resolucion-de-los-apagones-21ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/30/cinco-estados-del-occidente-venezolano-quedaron-a-oscuras-por-falla-en-el-servicio-electrico-30ago/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -64,6 +72,10 @@
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/monagas/recuperan-al-100-el-servicio-electrico-en-punceres-y-bolivar/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/apagon-afecto-a-cinco-estados-y-provoco-caida-de-redes-moviles/"
     },
     {
       "nombre": "El Pitazo",
@@ -136,18 +148,6 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/locales/barquisimeto-protestaron-cortes/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/yaracuy-fuertes-lluvias-y-vientos-derriban-cinco-postes-en-san-felipe/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/tromba-lacustre-se-forma-sobre-el-lago-de-maracaibo/"
-    },
-    {
-      "nombre": "Maturin News",
-      "link": "https://maturinnews.com/trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video/?utm_source=rss&utm_medium=rss&utm_campaign=trancan-la-avenida-libertador-de-maturin-por-tener-mas-de-10-horas-sin-energia-electrica-video"
     }
   ]
 }
