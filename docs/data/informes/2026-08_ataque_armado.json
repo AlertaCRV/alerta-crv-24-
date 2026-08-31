@@ -3,15 +3,15 @@
   "tipo": "ataque_armado",
   "tipo_label": "Ataque armado",
   "cerrado": false,
-  "generado": "2026-08-30T00:46:02.539887+00:00",
-  "actualizado_hasta": "2026-08-25T22:48:44.679752+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-31T04:37:58.956721+00:00",
+  "actualizado_hasta": "2026-08-30T23:57:09.984153+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron cuatro incidentes clasificados como ataques armados, contrastando con la ausencia total de eventos de esta naturaleza en julio de 2026 (comparación proporcionada). Este incremento representa la primera aparición de este tipo de incidentes en el período analizado.\n\nLos medios periodísticos revisados durante el mes no aportaron información sobre hechos de ataque armado. El Diario La Nación cubrió un tributo deportivo sin relación con violencia (Diario La Nacion). Efecto Cocuyo informó sobre una capacitación bancaria enfocada en la prevención del lavado de activos y financiamiento al terrorismo (Efecto Cocuyo). El Pitazo reportó una denuncia de amedrentamiento e intento de detención contra un abogado, pero no describió un ataque armado (El Pitazo). La Patilla se centró en la propuesta de una nueva ley de amnistía para presos políticos, sin mencionar incidentes de violencia armada (La Patilla).\n\nDe acuerdo con los datos del sistema de monitoreo de emergencias de la Cruz Roja Venezolana, los cuatro ataques armados registrados en agosto de 2026 constituyen un aumento significativo respecto al mes anterior, que no presentó ningún evento de esta categoría. Esta información será utilizada para orientar la respuesta y la preparación de recursos en los próximos períodos.",
+  "narrativa": "Durante el mes de agosto de 2026 el monitoreo de emergencias de la Cruz Roja Venezolana registró cinco incidentes clasificados como ataque armado, frente a cero en el mes anterior, lo que representa un incremento significativo en la actividad violenta (Datos del monitoreo). \n\nLos artículos periodísticos proporcionados para este informe no describen ninguno de esos incidentes. La cobertura se centra en temas ajenos a la categoría de ataque armado: un tributo a la exjugadora de baloncesto Delia Vera (Diario La Nación), una capacitación bancaria impulsada por el Departamento de Estado de EE. UU. (Efecto Cocuyo), una denuncia de hostigamiento y tentativa de detención contra un abogado en el Palacio de Justicia (El Pitazo), la propuesta de una nueva ley de amnistía por parte de Javier Tarazona (La Patilla) y el relato de un secuestro en Maracay (Runrun.es). Cada una de estas fuentes se citan para evidenciar la ausencia de información sobre ataques armados en los medios revisados. \n\nAnte la falta de datos específicos en la prensa, la Cruz Roja continúa recopilando información directa de los reportes de campo y de las autoridades locales para documentar los cinco eventos de ataque armado ocurridos en agosto. Este incremento subraya la necesidad de reforzar los protocolos de respuesta y de mantener una vigilancia estrecha en las zonas potencialmente afectadas.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -28,6 +28,10 @@
     {
       "nombre": "La Patilla",
       "link": "https://lapatilla.com/2026/08/25/javier-tarazona-propuso-otra-ley-de-amnistia-que-funcione-para-liberar-a-todos-los-presos-politicos/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/el-megafono/ddhh-olvidados/618518/a-jesus-medina-le-quitaron-hasta-los-juguetes-de-su-sobrino/"
     }
   ]
 }

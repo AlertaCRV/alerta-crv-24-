@@ -1562,5 +1562,25 @@
   "inundacion::Miranda::2026-08-30": {
     "intentos": 1,
     "ultima_vez": "2026-08-30T23:57:53.791508+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T04:37:27.317503+00:00"
+  },
+  "orden_publico::Barinas::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T04:37:30.656092+00:00"
+  },
+  "orden_publico::La Guaira::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T04:37:33.999041+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T04:37:37.399124+00:00"
+  },
+  "inundacion::Miranda::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T04:37:40.686736+00:00"
   }
 }
