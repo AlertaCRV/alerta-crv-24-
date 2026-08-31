@@ -3,15 +3,15 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-08-29T01:15:48.290918+00:00",
-  "actualizado_hasta": "2026-08-26T21:24:51.698373+00:00",
-  "total_eventos": 10,
+  "generado": "2026-08-31T04:40:45.648400+00:00",
+  "actualizado_hasta": "2026-08-30T23:57:57.317017+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 0,
-    "actual": 10
+    "actual": 12
   },
-  "narrativa": "En el mes de agosto de 2026 se registraron diez eventos de fallas de agua, frente a ninguno en el período anterior (comparación con el período anterior: 0 evento(s) registrados entonces vs. 10 en este período). Las denuncias y protestas de la población reflejan la gravedad de la interrupción del servicio en distintas regiones del país.\n\nEn Barquisimeto, comunidades del oeste se congregaron frente a la sede regional de Hidroven para exigir la restitución del suministro tras más de un mes sin agua (El Impulso). Simultáneamente, los cisterneros exigieron la reactivación inmediata del llenadero de agua Jacinto Lara, argumentando que su cierre impide el abastecimiento de camiones cisterna a la zona (La Patilla).\n\nEn el estado Nueva Esparta, los residentes de Maneiro protestaron el 24 de agosto por 98 días sin agua, llegando a más de medio año en algunos sectores (El Impulso). En Anzoátegui, varios sectores de El Tigre quedaron sin luz y sin agua durante más de 20 horas a causa de la caída de líneas eléctricas provocada por la Onda Tropical N°41 (El Impulso).\n\nEn el estado Apure, los habitantes de Mereicito I en Guasdualito llevan casi dos meses sin agua potable después de que un rayo dañara la bomba de 15 caballos, y los intentos de reemplazo no han restablecido el servicio (Turimiquire). En Aragua de Barcelona, Anzoátegui, la población quedó sin agua nuevamente desde el 14 de agosto tras una semana de operatividad normal (Turimiquire). Por otro lado, en Chaguaramal, Monagas, la alcaldesa Tillero logró restituir el suministro a más de 500 familias mediante la instalación de una bomba nueva de 15 HP (El Periodico de Monagas).\n\nEn Maturín, la urbanización Godofredo González enfrenta inundaciones de aguas negras desde hace un mes, generando temores de una epidemia y una respuesta limitada de la empresa Aguas de Monagas (La Patilla). Asimismo, en la urbanización Los Próceres, Barinas, se reportó la reventación de la tubería matriz de aguas blancas, provocando una alerta de los vecinos que demandan la intervención urgente de los organismos competentes (La Noticia de Barinas).",
+  "narrativa": "En el mes de agosto de 2026 se registraron doce incidentes de falla de agua, frente a ninguno en julio del mismo año (comparación con el período anterior). La ausencia de suministro afectó a diversas comunidades de varios estados, generando protestas y reclamos a las autoridades y a las empresas hidrológicas.\n\nEn Barquisimeto, los habitantes del oeste se manifestaron frente a la sede regional de Hidroven tras más de un mes sin agua (El Impulso). Simultáneamente, en el municipio Maneiro del estado Nueva Esparta, residentes de la Urbanización Jorge Coll protestaron por 98 días sin agua, llegando a casi 100 días de interrupción (El Impulso). En la misma ciudad, los cisterneros exigieron la reactivación inmediata del llenadero de agua Jacinto Lara, alegando que su cierre impide el abastecimiento de camiones cisterna (La Patilla).\n\nEn el estado Anzoátegui, sectores de El Tigre quedaron sin suministro eléctrico y de agua durante más de 20 horas tras la pasada de la Onda Tropical N°41, que derribó líneas de alta tensión (El Impulso). En la urbanización Los Próceres, Barinas, se reportó la reventación de una tubería matriz de aguas blancas, provocando una nueva emergencia para los residentes (La Noticia de Barinas).\n\nPor otro lado, la alcaldesa de Monagas restituyó el servicio de agua potable a más de 500 familias en Sectores Unidos de Chaguaramal, mediante la instalación de una bomba de 15 HP (El Periodico de Monagas). En Villa Araure, Acarigua, los habitantes de la urbanización La Trinidad y otros sectores denuncian más de una semana sin agua, obligándolos a comprar cisternas para cubrir sus necesidades (Portuguesa Reporta).\n\nEn el estado Apure, la comunidad de Mereicito I en Guasdualito lleva casi dos meses sin agua después de que un rayo dañara la bomba de 15 caballos, y los intentos de reemplazo no han restablecido el servicio (Turimiquire). En Anzoátegui, los vecinos de Aragua de Barcelona se quedaron nuevamente sin agua tras una breve semana de operatividad (Turimiquire). Finalmente, en la urbanización Godofredo González, Maturín, los residentes alertan sobre una inundación de cloacas que persiste desde hace un mes, generando riesgos sanitarios (La Patilla).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -46,12 +46,20 @@
       "link": "https://lapatilla.com/2026/08/24/cisterneros-exigen-reactivacion-inmediata-del-llenadero-de-agua-jacinto-lara-en-barquisimeto/"
     },
     {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=habitantes-de-sectores-de-villa-araure-denuncian-que-tienen-mas-de-una-semana-sin-nada-de-agua"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/08/17/sin-agua-tienen-a-mereicito-i-en-el-estado-apure/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/yaracuy/local/en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua"
     }
   ]
 }

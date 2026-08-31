@@ -3,16 +3,20 @@
   "tipo": "tormenta_electrica",
   "tipo_label": "Tormenta eléctrica",
   "cerrado": false,
-  "generado": "2026-08-30T00:51:46.129214+00:00",
-  "actualizado_hasta": "2026-08-24T18:20:56.957081+00:00",
-  "total_eventos": 4,
+  "generado": "2026-08-31T04:43:16.808866+00:00",
+  "actualizado_hasta": "2026-08-30T21:41:28.812193+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-07",
     "anterior": 2,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "Durante el mes de agosto de 2026 se registraron cuatro eventos de tormenta eléctrica, duplicando los dos registrados en julio del mismo año (comparación con el período anterior). \nEl Instituto Nacional de Meteorología e Hidrología (Inameh) emitió un boletín el 21 de agosto que confirmó lluvias con actividad eléctrica, chubascos e incremento de nubosidad en gran parte de Venezuela, impulsados por la Onda Tropical N° 39 y la Onda Tropical N° 40, con especial impacto en Caracas, Zulia, los Andes y el centro del país (El Periodico de Monagas; Reporte Confidencial). \nEn el estado Zulia, el 23 de agosto los habitantes del lago de Maracaibo captaron en video la aparición de una tromba marina; aunque no se reportaron víctimas, la formación provocó daños materiales (El Pitazo). \nEn el estado Aragua, el mismo día se observó otra tromba marina sobre el lago de Valencia, la cual también generó daños materiales sin que se registraran heridos o fallecidos (El Pitazo).",
+  "narrativa": "En el mes de agosto de 2026 se registraron seis eventos de tormentas eléctricas, frente a los dos registrados en julio del mismo año, lo que representa un aumento significativo de la actividad meteorológica (Comparación proporcionada). \n\nEl Instituto Nacional de Meteorología e Hidrología (Inameh) emitió varios pronósticos que anticiparon lluvias con descargas eléctricas en amplias zonas del país. Así, el 30 de agosto se informó que estados como Monagas, Bolívar, los Llanos, Gran Caracas, los Andes y Zulia experimentarían precipitaciones dispersas acompañadas de fuertes descargas (Diario El Tiempo). De manera similar, el 21 de agosto el Inameh confirmó la presencia de lluvias con actividad eléctrica, chubascos e incremento de nubosidad en gran parte de Venezuela, destacando el impacto en Caracas, Zulia, los Andes y el centro del país (El Periodico de Monagas). \n\nEl 23 de agosto se observaron trombas marinas en los lagos de Maracaibo (estado Zulia) y Valencia (estado Aragua). Aunque estos fenómenos no suelen causar víctimas, sí generaron daños materiales en ambas regiones, según informó el comisionado de Gestión de Riesgos de la alcaldía de San Diego (El Pitazo). No se reportaron heridos ni fallecidos asociados a estas trombas. \n\nParalelamente, el Inameh advirtió que la Onda Tropical N° 39 se desplazaba sobre el occidente venezolano, produciendo precipitaciones de intensidad moderada a fuerte y actividad eléctrica en varias regiones, mientras que la Onda Tropical N° 40, cercana a la Guayana Francesa, también estaba bajo observación por su potencial de generar tormentas (Reporte Confidencial). \n\nAnte este escenario, las autoridades de la Cruz Roja Venezolana continúan monitoreando la evolución de las tormentas eléctricas y los fenómenos asociados, manteniendo la alerta en los estados más afectados y preparando recursos para atender posibles emergencias derivadas de los daños materiales reportados.",
   "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/"
+    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/venezuela/inameh-reporta-lluvias-con-tormentas-en-varias-regiones/"
