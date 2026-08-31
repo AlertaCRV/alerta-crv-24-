@@ -1586,5 +1586,29 @@
   "sequia::Zulia::2026-08-31": {
     "intentos": 1,
     "ultima_vez": "2026-08-31T11:09:55.707660+00:00"
+  },
+  "inundacion::Carabobo::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:12.131259+00:00"
+  },
+  "inundacion::Lara::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:15.525350+00:00"
+  },
+  "inundacion::La Guaira::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:18.961651+00:00"
+  },
+  "inundacion::Yaracuy::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:22.244295+00:00"
+  },
+  "incendio::Distrito Capital::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:25.725921+00:00"
+  },
+  "orden_publico::Monagas::2026-08-31": {
+    "intentos": 1,
+    "ultima_vez": "2026-08-31T18:03:29.224005+00:00"
   }
 }
