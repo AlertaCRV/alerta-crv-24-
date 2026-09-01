@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-09-01T22:04:55.397430+00:00",
+  "actualizado_hasta": "2026-09-01T22:04:12.453228+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 64,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de falla eléctrica, una notable reducción frente a los 64 eventos del mes anterior (2026‑08) (El Impulso). \n\nEl hecho ocurrió en el estado Bolívar, donde los ciudadanos enfrentaron apagones continuos y una explosión de transformadores que agravó la crisis eléctrica (El Impulso). \n\nLos cortes frecuentes impactaron gravemente la calidad de vida de la población, especialmente en las zonas mineras, donde la interrupción del suministro eléctrico golpeó al sector comercial y a las actividades productivas (El Impulso). \n\nLas autoridades locales continúan monitoreando la situación para evitar nuevos incidentes y restablecer el servicio eléctrico de manera estable (El Impulso).",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/01/bolivar-entre-apagones-y-explosion-de-transformadores-asi-viven-los-ciudadanos-la-crisis-electrica-1sep/"
+    }
+  ]
+}

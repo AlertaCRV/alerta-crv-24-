@@ -1,6 +1,30 @@
 [
   {
     "periodo": "2026-09",
+    "tipo": "sequia",
+    "tipo_label": "Sequía",
+    "cerrado": false,
+    "generado": "2026-09-01T22:05:00.059304+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-09-01T22:04:55.397430+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "infraestructura_agua",
+    "tipo_label": "Falla de agua",
+    "cerrado": false,
+    "generado": "2026-09-01T22:04:30.246785+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
