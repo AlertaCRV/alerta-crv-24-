@@ -1626,5 +1626,45 @@
   "infraestructura_electrica::Guarico::2026-08-31": {
     "intentos": 1,
     "ultima_vez": "2026-08-31T22:49:55.924890+00:00"
+  },
+  "inundacion::Carabobo::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:21.911435+00:00"
+  },
+  "sismo::Distrito Capital::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:25.412873+00:00"
+  },
+  "inundacion::Lara::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:29.126893+00:00"
+  },
+  "deslizamiento::Tachira::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:32.516654+00:00"
+  },
+  "inundacion::Yaracuy::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:35.967496+00:00"
+  },
+  "incendio::Distrito Capital::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:39.438457+00:00"
+  },
+  "vialidad::Monagas::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:42.894192+00:00"
+  },
+  "ataque_armado::Aragua::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:31:54.402388+00:00"
+  },
+  "deslizamiento::Aragua::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:32:05.935951+00:00"
+  },
+  "infraestructura_electrica::Guarico::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T01:32:17.378915+00:00"
   }
 }
