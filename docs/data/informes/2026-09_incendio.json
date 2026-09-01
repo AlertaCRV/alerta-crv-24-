@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-09-01T12:08:43.013559+00:00",
+  "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 21,
+    "actual": 1
+  },
+  "narrativa": "Durante el período de septiembre de 2026 se registró un único evento de incendio, en contraste con los 21 eventos reportados en el mes anterior (2026‑08) (El Siglo). Esta reducción significativa se refleja en los datos comparativos proporcionados.\n\nEl único incidente ocurrió el lunes 31 de agosto, cuando un voraz incendio de gran magnitud consumió los últimos pisos de una infraestructura que funciona como fábrica de cosméticos en la zona industrial de Palo Verde, al este de la capital del estado Aragua (El Siglo).\n\nLa emergencia activó un amplio despliegue de los organismos de seguridad y gestión de riesgo. El director nacional de Bomberos, Juan Carlos González, informó que en el sitio se movilizaron aproximadamente 120 efectivos, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos de policía (El Siglo).\n\nA pesar de la magnitud del siniestro, la rápida intervención de los equipos de respuesta permitió controlar el fuego y evitar mayores daños colaterales. El registro de un solo incendio en este período subraya la variación respecto al mes anterior, donde se contabilizaron veintiún eventos similares (El Siglo).",
+  "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    }
+  ]
+}

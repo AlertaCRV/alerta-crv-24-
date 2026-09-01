@@ -1,5 +1,21 @@
 [
   {
+    "periodo": "2026-09",
+    "tipo": "incendio",
+    "tipo_label": "Incendio",
+    "cerrado": false,
+    "generado": "2026-09-01T12:08:43.013559+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-09-01T12:08:38.426954+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-08",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

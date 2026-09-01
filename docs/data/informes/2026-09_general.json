@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "general",
+  "tipo_label": "Todas las categorías",
+  "cerrado": false,
+  "generado": "2026-09-01T12:08:38.426954+00:00",
+  "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 278,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un único evento de emergencia, una notable reducción frente a los 278 eventos reportados en agosto de 2026 (278 evento(s) registrados entonces vs. 1 en este período). Esta disminución refleja una tendencia temporal que será analizada por los equipos de la Cruz Roja Venezolana para ajustar sus planes de respuesta.\n\nEl único incidente registrado fue un incendio de gran magnitud que consumió los últimos pisos de una fábrica de cosméticos en la zona industrial de Palo Verde, al este de la capital, el lunes 31 de agosto (El Siglo). La magnitud del fuego obligó a activar los protocolos de emergencia, movilizando aproximadamente 120 efectivos de los Bomberos de Caracas, Protección Civil y cuerpos policiales (El Siglo). El director nacional de Bomberos, Juan Carlos González, confirmó la presencia de estos recursos en el sitio (El Siglo).\n\nA pesar de la gravedad del incendio, no se reportaron víctimas fatales ni heridos graves, lo que permite a la Cruz Roja focalizar sus recursos en la prevención y en la preparación para futuros eventos. La experiencia adquirida en la gestión de este incendio servirá para reforzar los planes de contingencia en la región de Aragua y en todo el país.",
+  "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    }
+  ]
+}
