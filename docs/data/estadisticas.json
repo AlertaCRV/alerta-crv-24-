@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-01T12:08:33.900017+00:00",
+  "actualizado": "2026-09-01T19:39:12.780432+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-01T00:16:46+00:00"
+    "hasta": "2026-09-01T18:51:02+00:00"
   },
-  "total_eventos": 307,
+  "total_eventos": 308,
   "por_tipo": {
     "tormenta_electrica": 8,
     "inundacion": 59,
     "infraestructura_electrica": 69,
-    "deslizamiento": 25,
+    "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 54,
     "salud_publica": 10,
@@ -93,13 +93,13 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Tachira",
       "total": 10,
       "confirmados": 0
     },
     {
-      "estado": "Tachira",
-      "total": 9,
+      "estado": "La Guaira",
+      "total": 10,
       "confirmados": 0
     },
     {
@@ -239,7 +239,7 @@
       "sequia": 1
     },
     "Tachira": {
-      "deslizamiento": 2,
+      "deslizamiento": 3,
       "infraestructura_electrica": 2,
       "incendio": 1,
       "orden_publico": 1,
@@ -331,7 +331,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 255,
+    "sin_clasificar": 256,
     "medio": 4,
     "bajo": 6
   },
@@ -350,7 +350,8 @@
     },
     "deslizamiento": {
       "2026-07": 3,
-      "2026-08": 22
+      "2026-08": 22,
+      "2026-09": 1
     },
     "colapso_estructural": {
       "2026-07": 1,
