@@ -1674,5 +1674,17 @@
   "vialidad::Trujillo::2026-09-01": {
     "intentos": 2,
     "ultima_vez": "2026-09-01T12:08:32.876769+00:00"
+  },
+  "sequia::Nueva Esparta::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T16:38:49.879851+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T16:38:53.561373+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-09-01": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-01T16:38:57.114147+00:00"
   }
 }
