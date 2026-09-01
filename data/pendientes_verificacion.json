@@ -1647,10 +1647,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-01T06:45:48.283662+00:00"
   },
-  "incendio::Distrito Capital::2026-09-01": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-01T06:45:51.887305+00:00"
-  },
   "vialidad::Monagas::2026-09-01": {
     "intentos": 1,
     "ultima_vez": "2026-09-01T01:31:42.894192+00:00"
@@ -1668,15 +1664,15 @@
     "ultima_vez": "2026-09-01T06:46:41.754118+00:00"
   },
   "inundacion::Merida::2026-09-01": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-01T06:45:55.324628+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-01T12:08:25.185690+00:00"
   },
   "vialidad::Portuguesa::2026-09-01": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-01T06:46:07.013283+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-01T12:08:29.612127+00:00"
   },
   "vialidad::Trujillo::2026-09-01": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-01T06:46:18.483716+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-01T12:08:32.876769+00:00"
   }
 }
