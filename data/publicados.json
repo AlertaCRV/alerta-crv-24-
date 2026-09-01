@@ -1,11 +1,4 @@
 {
-  "inundacion::Aragua::2026-08-29": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-29T19:58:29.248402+00:00",
-    "fecha_evento_temprana": "2026-08-29T16:26:11+00:00",
-    "municipio": null
-  },
   "orden_publico::Distrito Capital::2026-08-29": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -130,6 +123,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-01T19:38:58.267373+00:00",
     "fecha_evento_temprana": "2026-09-01T18:51:02+00:00",
+    "municipio": null
+  },
+  "sequia::Nueva Esparta::2026-09-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-01T22:04:05.734512+00:00",
+    "fecha_evento_temprana": "2026-09-01T14:50:07+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-01T22:04:09.067397+00:00",
+    "fecha_evento_temprana": "2026-09-01T14:45:39+00:00",
+    "municipio": "Tubores"
+  },
+  "infraestructura_electrica::Bolivar::2026-09-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-01T22:04:12.453228+00:00",
+    "fecha_evento_temprana": "2026-09-01T16:11:47+00:00",
     "municipio": null
   }
 }

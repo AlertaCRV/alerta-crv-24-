@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "sequia",
+    "ubicacion": "Nueva Esparta",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporte Confidencial (Nueva Esparta)",
+        "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/",
+        "fecha": "2026-09-01T14:50:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T14:50:07+00:00",
+    "fecha_evento_temprana": "2026-09-01T14:50:07+00:00",
+    "fecha_deteccion": "2026-09-01T22:04:05.734512+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "sequia::Nueva Esparta::2026-09-01",
+    "titulo": "Sequía en Nueva Esparta",
+    "texto": "📌 Sequía en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 01/09/2026, 10:50 a.m.\n🔎 Detectado por el sistema: 01/09/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Nueva Esparta",
+    "municipio": "Tubores",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporte Confidencial (Nueva Esparta)",
+        "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/",
+        "fecha": "2026-09-01T14:45:39+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T14:45:39+00:00",
+    "fecha_evento_temprana": "2026-09-01T14:45:39+00:00",
+    "fecha_deteccion": "2026-09-01T22:04:09.067397+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Nueva Esparta::2026-09-01",
+    "titulo": "Falla de agua en Municipio Tubores, Nueva Esparta",
+    "texto": "📌 Falla de agua en Municipio Tubores, Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Tubores, Nueva Esparta\n🕒 Hecho reportado: 01/09/2026, 10:45 a.m.\n🔎 Detectado por el sistema: 01/09/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/01/bolivar-entre-apagones-y-explosion-de-transformadores-asi-viven-los-ciudadanos-la-crisis-electrica-1sep/",
+        "fecha": "2026-09-01T16:11:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T16:11:47+00:00",
+    "fecha_evento_temprana": "2026-09-01T16:11:47+00:00",
+    "fecha_deteccion": "2026-09-01T22:04:12.453228+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-09-01",
+    "titulo": "Falla eléctrica en Bolivar",
+    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 01/09/2026, 12:11 p.m.\n🔎 Detectado por el sistema: 01/09/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/01/bolivar-entre-apagones-y-explosion-de-transformadores-asi-viven-los-ciudadanos-la-crisis-electrica-1sep/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Tachira",
     "municipio": null,
@@ -4008,57 +4086,5 @@
     "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-19",
     "titulo": "Falla eléctrica en Anzoategui",
     "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 18/08/2026, 8:53 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/18/atienden-fallas-electricas-en-varios-sectores-de-lecheria-anzoategui/"
-  },
-  {
-    "tipo": "colapso_estructural",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tubazo Digital (Guarico)",
-        "link": "https://eltubazodigital.com/calabozo-se-derrumba-techo-de-casa-colonial/",
-        "fecha": "2026-08-18T18:13:29+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-18T18:13:29+00:00",
-    "fecha_evento_temprana": "2026-08-18T18:13:29+00:00",
-    "fecha_deteccion": "2026-08-18T21:48:42.532591+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "colapso_estructural::Guarico::2026-08-18",
-    "titulo": "Colapso estructural en Guarico",
-    "texto": "📌 Colapso estructural en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 18/08/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 5:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tubazo Digital (Guarico): https://eltubazodigital.com/calabozo-se-derrumba-techo-de-casa-colonial/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Sucre",
-    "municipio": "Cruz Salmerón Acosta",
-    "parroquia": "Araya",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/18/jubilados-de-las-salinas-de-araya-amenazan-con-una-huelga-de-hambre-y-amarrarse-al-porton-18ago/",
-        "fecha": "2026-08-18T17:55:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-18T17:55:23+00:00",
-    "fecha_evento_temprana": "2026-08-18T17:55:23+00:00",
-    "fecha_deteccion": "2026-08-18T20:48:04.482705+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Sucre::2026-08-18",
-    "titulo": "Orden público en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre",
-    "texto": "📌 Orden público en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n🕒 Hecho reportado: 18/08/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 18/08/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/18/jubilados-de-las-salinas-de-araya-amenazan-con-una-huelga-de-hambre-y-amarrarse-al-porton-18ago/"
   }
 ]

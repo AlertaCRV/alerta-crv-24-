@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-01T19:39:12.780432+00:00",
+  "actualizado": "2026-09-01T22:04:17.729656+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-01T18:51:02+00:00"
   },
-  "total_eventos": 308,
+  "total_eventos": 311,
   "por_tipo": {
     "tormenta_electrica": 8,
     "inundacion": 59,
-    "infraestructura_electrica": 69,
+    "infraestructura_electrica": 70,
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 54,
@@ -18,9 +18,9 @@
     "vialidad": 10,
     "sismo": 9,
     "escasez_combustible": 1,
-    "sequia": 6,
+    "sequia": 7,
     "explosion": 1,
-    "infraestructura_agua": 12,
+    "infraestructura_agua": 13,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
@@ -63,13 +63,13 @@
       "confirmados": 0
     },
     {
-      "estado": "Yaracuy",
+      "estado": "Bolivar",
       "total": 15,
       "confirmados": 1
     },
     {
-      "estado": "Bolivar",
-      "total": 14,
+      "estado": "Yaracuy",
+      "total": 15,
       "confirmados": 1
     },
     {
@@ -103,6 +103,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 9,
+      "confirmados": 1
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0
@@ -111,11 +116,6 @@
       "estado": "Merida",
       "total": 8,
       "confirmados": 0
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 7,
-      "confirmados": 1
     },
     {
       "estado": "Falcon",
@@ -223,7 +223,7 @@
       "inundacion": 3
     },
     "Bolivar": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "orden_publico": 3,
       "escasez_combustible": 1,
       "incendio": 2,
@@ -267,7 +267,8 @@
     "Nueva Esparta": {
       "incendio": 2,
       "orden_publico": 3,
-      "infraestructura_agua": 2
+      "infraestructura_agua": 3,
+      "sequia": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -331,7 +332,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 256,
+    "sin_clasificar": 259,
     "medio": 4,
     "bajo": 6
   },
@@ -346,7 +347,8 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 64
+      "2026-08": 64,
+      "2026-09": 1
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -384,13 +386,15 @@
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 6
+      "2026-08": 6,
+      "2026-09": 1
     },
     "explosion": {
       "2026-08": 1
     },
     "infraestructura_agua": {
-      "2026-08": 12
+      "2026-08": 12,
+      "2026-09": 1
     },
     "accidente_transporte": {
       "2026-08": 1

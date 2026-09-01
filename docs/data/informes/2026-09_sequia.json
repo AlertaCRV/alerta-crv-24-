@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "sequia",
+  "tipo_label": "Sequía",
+  "cerrado": false,
+  "generado": "2026-09-01T22:05:00.059304+00:00",
+  "actualizado_hasta": "2026-09-01T22:04:05.734512+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 6,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026, la Cruz Roja Venezolana registró únicamente un evento relacionado con la sequía, lo que representa una reducción significativa respecto al mes anterior. \n\nEl único hecho registrado corresponde a la publicación de un decreto por la Gobernación del Estado Bolívariano de Nueva Esparta, que declaró el 8 de septiembre como Día de Júbilo No Laborable en todo el territorio insular, medida que incluye la suspensión de actividades en instituciones públicas, planteles educativos y el sector comercial (Reporte Confidencial). \n\nSegún la comparación proporcionada, en agosto de 2026 se habían registrado seis eventos de sequía, mientras que en septiembre solo se reportó uno, lo que indica una disminución de la incidencia de incidentes relacionados con la sequía en el período analizado.",
+  "fuentes": [
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
+    }
+  ]
+}
