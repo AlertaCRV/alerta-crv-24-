@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "deslizamiento",
+  "tipo_label": "Deslizamiento/Derrumbe",
+  "cerrado": false,
+  "generado": "2026-09-01T19:39:17.519477+00:00",
+  "actualizado_hasta": "2026-09-01T19:38:58.267373+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 22,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un solo evento de deslizamiento o derrumbe, en contraste con los 22 eventos que se habían contabilizado en agosto de 2026 (La Prensa de Monagas). Esta notable reducción se refleja en los datos comparativos proporcionados para el periodo anterior.\n\nEl único incidente ocurrió en el estado Táchira, donde intensas lluvias provocaron deslizamientos de tierra que afectaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas). Las autoridades locales llevaron a cabo inspecciones para evaluar el alcance de los daños y determinar las medidas de reparación necesarias.\n\nA pesar de la baja frecuencia de eventos en este mes, la Cruz Roja Venezolana mantiene la vigilancia y la preparación para responder rápidamente ante cualquier eventualidad, reforzando los protocolos de atención y coordinación con los organismos de protección civil.\n",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
+    }
+  ]
+}
