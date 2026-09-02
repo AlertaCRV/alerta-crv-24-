@@ -1690,5 +1690,41 @@
   "infraestructura_electrica::Zulia::2026-09-01": {
     "intentos": 1,
     "ultima_vez": "2026-09-01T22:04:15.822754+00:00"
+  },
+  "infraestructura_agua::Miranda::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:32.848245+00:00"
+  },
+  "orden_publico::Lara::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:36.354518+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:39.775303+00:00"
+  },
+  "deslizamiento::Tachira::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:43.259049+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:46.775804+00:00"
+  },
+  "sequia::Nueva Esparta::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:50.121564+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:11:53.437073+00:00"
+  },
+  "infraestructura_electrica::Bolivar::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:12:04.916222+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T00:12:16.523548+00:00"
   }
 }

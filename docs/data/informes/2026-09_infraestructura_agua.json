@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-01T22:04:30.246785+00:00",
+  "generado": "2026-09-02T00:13:20.694894+00:00",
   "actualizado_hasta": "2026-09-01T22:04:09.067397+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 12,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de falla de agua, en contraste con los doce eventos reportados en agosto de 2026 (Comparación con el período anterior). Esta disminución refleja una reducción significativa en la cantidad de incidentes reportados durante el período analizado.\n\nEl único caso documentado corresponde al municipio de Tubores, en el estado Nueva Esparta, donde la población ha permanecido sin suministro de agua potable durante más de seis meses debido a una rotura de tubería (Reporte Confidencial). Las autoridades locales describen la situación como un «aislamiento hídrico» que afecta gravemente a los habitantes del sector.\n\nEl diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance sobre la crisis hídrica en Nueva Esparta, basándose en los datos de seguimiento ciudadano recopilados por la plataforma Pulso Nueva Esparta (Reporte Confidencial). Según este informe, la zona de Tubores concentra la mayor parte de la vulnerabilidad en la red de agua del estado.\n\nEl monitoreo continuo de la Cruz Roja Venezolana continuará registrando y verificando cualquier novedad relacionada con fallas de agua, con el objetivo de apoyar a la población afectada y coordinar acciones de respuesta humanitaria cuando sea necesario (Reporte Confidencial).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registró únicamente un evento de falla de agua, en contraste con los doce eventos reportados en agosto de 2026 (Comparación con el período anterior). Esta reducción significativa se refleja en los datos consolidados por la Cruz Roja Venezolana para la categoría de fallas de agua.\n\nEl único caso documentado corresponde al municipio de Tubores, en la isla de Margarita, donde la población ha permanecido sin suministro de agua potable durante más de seis meses (Reporte Confidencial). El diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance que destaca la grave situación de \"aislamiento hídrico\" en la zona, basándose en la información recopilada por la plataforma ciudadana Pulso Nueva Esparta (Reporte Confidencial).\n\nLas autoridades locales y organizaciones de ayuda, incluida la Cruz Roja, continúan monitoreando la situación y coordinando acciones de emergencia para mitigar el impacto en los residentes de Tubores, mientras se buscan soluciones a largo plazo para restablecer el servicio de agua en la región (Reporte Confidencial).",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
