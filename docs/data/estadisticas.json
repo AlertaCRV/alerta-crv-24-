@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-02T20:06:30.778329+00:00",
+  "actualizado": "2026-09-02T22:41:11.217958+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-02T16:46:20+00:00"
   },
-  "total_eventos": 325,
+  "total_eventos": 327,
   "por_tipo": {
     "tormenta_electrica": 8,
     "inundacion": 63,
-    "infraestructura_electrica": 72,
+    "infraestructura_electrica": 73,
     "deslizamiento": 27,
     "colapso_estructural": 3,
     "orden_publico": 56,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 5,
     "incendio": 25,
     "vialidad": 10,
-    "sismo": 10,
+    "sismo": 11,
     "escasez_combustible": 1,
     "sequia": 8,
     "explosion": 1,
@@ -34,7 +34,7 @@
     },
     {
       "estado": "Lara",
-      "total": 22,
+      "total": 23,
       "confirmados": 1
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "estado": "Nueva Esparta",
-      "total": 9,
+      "total": 10,
       "confirmados": 1
     },
     {
@@ -157,7 +157,7 @@
       "inundacion": 4,
       "salud_publica": 4,
       "orden_publico": 5,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -271,7 +271,8 @@
       "incendio": 2,
       "orden_publico": 3,
       "infraestructura_agua": 3,
-      "sequia": 1
+      "sequia": 1,
+      "sismo": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -336,9 +337,9 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 273,
+    "sin_clasificar": 274,
     "medio": 4,
-    "bajo": 6
+    "bajo": 7
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -353,7 +354,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 3
+      "2026-09": 4
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -387,7 +388,7 @@
     },
     "sismo": {
       "2026-08": 9,
-      "2026-09": 1
+      "2026-09": 2
     },
     "escasez_combustible": {
       "2026-08": 1
