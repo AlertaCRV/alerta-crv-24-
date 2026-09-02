@@ -7560,3 +7560,288 @@ scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
 `python3 scripts/detectar_inconsistencias.py` → mismos pares de posibles
 duplicados y fuentes muertas ya conocidos, sin casos nuevos relacionados a
 los eventos retractados hoy.
+
+## Auditoría diaria automática (02-09-2026): retomada tras un vacío de 12 días -- 9 falsos positivos corregidos (2 causas raíz nuevas: "24 de junio" fuera de "el pasado"/"del pasado", y citas de un vocero apellidado "Vargas" en tiempo presente), más un hallazgo pendiente de discutir
+
+La auditoría diaria automática no se había ejecutado desde el 20-08-2026
+(PR #327, mergeado el 21-08-2026) -- un vacío de 12 días sin revisión. Esta
+corrida audita, como de costumbre, solo las alertas publicadas en las
+últimas ~24-48 horas (21 alertas, todas `PASADO_POR_FALLA_TECNICA` -- la
+verificación de IA sigue sin correr en este entorno), comparando cada una
+contra el texto real de sus fuentes en `data/historico_fuentes_texto.jsonl`.
+9 errores reales encontrados y corregidos de raíz (8 dentro de la ventana de
+24-48h auditada, más 1 hallazgo incidental de una fuente del 24-08-2026
+descubierto al verificar uno de los fixes contra todo el corpus histórico).
+
+### 1. Un terremoto de junio referenciado sin la palabra "pasado" coló dos alertas falsas de sismo
+
+`sismo::Nueva Esparta::2026-09-02` (El Impulso/El Tiempo, cobertura de la
+Bajada de la Virgen del Valle, fiesta religiosa en Margarita) disparaba
+tipo=sismo vía "un acompañamiento espiritual especial para los afectados
+por los sismos registrados el 24 de junio" -- una mención pastoral
+retrospectiva, sin ningún temblor nuevo. `sismo::Carabobo::2026-09-02`
+(Turimiquire, artículo-resumen de inundaciones en 6 estados) disparaba
+tipo=sismo vía el subtítulo "Mientras las comunidades agrícolas de Táchira
+y Yaracuy reportaron derrumbes, en Caracas y La Guaira los refugiados de
+los terremotos de junio denuncian inundaciones en sus carpas" -- ninguna
+mención nueva de sismo, solo el recordatorio de los refugios tras el
+terremoto de junio (el hecho real de Carabobo es la inundación vial, ya
+cubierta aparte).
+
+Ninguno de los dos casos usa la palabra "pasado" (`_SISMO_FECHA_PASADA_RE`
+ya existente exige "el pasado"/"terremoto ... el pasado" -- ni "sismos
+registrados el 24 de junio" ni "terremotos de junio" la contienen, y
+tampoco "del pasado" calza con ese regex por el límite de palabra `\bel\b`
+dentro de "del").
+
+**Corrección**: se agregaron 5 frases a `_CONTEXTO_CONFLICTIVO_POR_TIPO["sismo"]`
+(`scripts/classify.py`): "24 de junio", "terremoto de junio", "terremotos
+de junio", "sismo de junio", "sismos de junio" -- evaluadas sobre la
+VENTANA de proximidad (no el artículo completo, a diferencia de
+`_es_referencia_sismo_fecha_pasada`), precisamente para no descartar un
+sismo real y nuevo que el mismo artículo compare, en otro párrafo lejano,
+con el terremoto de junio (ver caso de control). Se verificó con las
+funciones reales de `classify.py` (no solo grep) contra las 436 fuentes de
+`data/historico_fuentes_texto.jsonl` que ningún caso de control real se ve
+afectado -- en particular `sismo::Distrito Capital` (Runrun.es,
+18-08-2026, "colapso de vivienda en Carapita"): un sismo real del 18 de
+agosto que también menciona, mucho más lejos en el mismo artículo, "los
+terremotos del pasado 24 de junio" -- esa mención queda fuera de la
+ventana de proximidad de Carapita, así que el sismo real sigue
+publicándose sin cambios.
+
+**Hallazgo incidental**: la misma verificación contra el corpus completo
+reveló una tercera fuente ya afectada por esta causa raíz, publicada el
+24-08-2026 (fuera de la ventana de 24-48h de esta auditoría, pero corregida
+por ser la misma causa): `sismo::Carabobo::2026-08-24::mag7.2` (Diario La
+Nación (Táchira), "Las tres cruces del padre Jhonny Arias") es un
+reportaje sobre la recuperación de un sacerdote atrapado bajo escombros en
+Caraballeda (La Guaira, no Carabobo) durante el terremoto de junio -- el
+artículo nunca menciona el estado Carabobo como lugar del hecho.
+
+**Corrección retroactiva**: se eliminaron por completo
+`sismo::Nueva Esparta::2026-09-02`, `sismo::Carabobo::2026-09-02` y
+`sismo::Carabobo::2026-08-24::mag7.2` de los 4 archivos de datos (el
+tercero no tenía entrada en `data/pendientes_verificacion.json`).
+
+### 2. El mismo subtítulo multiestado coló una alerta falsa de deslizamiento en Distrito Capital
+
+`deslizamiento::Distrito Capital::2026-09-02` (mismo artículo de
+Turimiquire del hallazgo 1) disparaba tipo=deslizamiento vía el mismo
+subtítulo: "las comunidades agrícolas de Táchira y Yaracuy reportaron
+derrumbes, en Caracas y La Guaira los refugiados..." -- el propio texto
+nombra explícitamente a Táchira y Yaracuy como los estados con derrumbes,
+separados solo por una coma de la mención de Caracas/La Guaira para un
+hecho DISTINTO (inundación de refugios) -- pero la ventana de proximidad de
+"Caracas" alcanzaba a cubrir "derrumbes" sin ningún estado interpuesto
+entre ambas palabras.
+
+**Corrección**: nueva función `_es_derrumbe_atribuido_a_otro_estado()`
+(`scripts/classify.py`), mismo mecanismo que
+`_es_sequia_atribuida_a_otro_estado` (20-08-2026): un regex captura los 2
+estados que el propio texto nombra en la cláusula "de X y Y reportaron
+derrumbes" -- si la ubicación que se está clasificando no es ninguno de
+los 2, se descarta el tipo deslizamiento para ella (conservando el tipo
+para X e Y, si tuvieran evidencia propia). Se verificó con un caso de
+control (un estado SÍ nombrado en la cláusula, con además evidencia fuerte
+propia) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`deslizamiento::Distrito Capital::2026-09-02` de los 4 archivos de datos.
+
+### 3. Una inundación real en Delta Amacuro se publicó como inundación en Monagas, el destino de viaje de los damnificados
+
+`inundacion::Monagas::2026-09-02` (Turimiquire, "Habitantes de Santa Rosa
+de Araguao en Delta Amacuro denunciaron aislamiento...") es un reportaje
+sobre una inundación real del río Orinoco en comunidades de Delta Amacuro
+(municipio Antonio Díaz) -- el estado Monagas se menciona solo como el
+destino de viaje al que los damnificados van a comprar alimentos ("pueden
+trasladarse a Barrancas, en el estado Monagas, para adquirir comida"), sin
+ninguna inundación propia en ese estado. Mismo patrón de fondo que
+"Portuguesa: hacia el estado Portuguesa" (15-08-2026) y "Nueva Esparta:
+hacia la localidad costera de Choroní" (18-08-2026).
+
+**Corrección**: se agregó la frase "trasladarse a barrancas, en el estado
+monagas" a `LISTA_NEGRA_POR_ESTADO["Monagas"]` (`scripts/classify.py`).
+Sin remapeo: a diferencia de los casos de Nueva Esparta/Choroní, el estado
+real (Delta Amacuro, sí soportado por `config/estados.yaml`) no tiene
+evidencia de tipo dentro de la ventana de proximidad de sus propias
+menciones en este artículo (la crecida/inundación queda a más de 35
+palabras), así que el candidato de Monagas simplemente se descarta sin
+generar ninguna alerta -- mismo trade-off ya aceptado en el caso de
+Portuguesa.
+
+**Corrección retroactiva**: se eliminó por completo
+`inundacion::Monagas::2026-09-02` de los 4 archivos de datos.
+
+### 4. Un ajuste de tarifa del pasaje urbano coló una alerta falsa de emergencia en el Metro de Caracas
+
+`emergencia_metro::Distrito Capital::2026-09-02` (Turimiquire, "A 200
+bolívares el pasaje urbano a partir del 1 de septiembre de 2026")
+disparaba tipo=emergencia_metro vía "el Metro de Caracas, Metrobús...
+continuarán cobrando sus tarifas habituales" -- mencionado solo para
+aclarar que la tarifa del Metro NO cambia, sin ninguna falla/varados/
+incendio/descarrilamiento real.
+
+**Corrección**: nueva función `_es_anuncio_tarifario_metro_sin_falla_real()`
+(`scripts/classify.py`), evaluada sobre el ARTÍCULO COMPLETO: si el texto
+tiene el marcador "continuarán cobrando sus tarifas habituales" y no hay
+evidencia fuerte propia de una falla real del Metro (varados/atrapados/
+incendio/descarrilamiento/colapsado/colapso del servicio/falla en o del
+metro), se descarta el tipo. Se verificó con un caso de control (una falla
+real con pasajeros varados) que sigue publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`emergencia_metro::Distrito Capital::2026-09-02` de los 4 archivos de
+datos.
+
+### 5. Un corte de agua ya resuelto ("hoy llegó") se publicó como falla de agua vigente en Miranda
+
+`infraestructura_agua::Miranda::2026-09-01` (El Pitazo, "Caraqueños
+reportan falla del servicio eléctrico este #1Sep") es un artículo sobre
+fallas ELÉCTRICAS en Baruta/El Hatillo que cita un tuit vecinal: "Luego de
+mes y pico sin agua en Los Naranjos en el Hatillo, Caracas, hoy llegó así
+que la gente se dispone a lavar pero oops, no hay luz" -- el corte de AGUA
+ya había terminado ese mismo día ("hoy llegó"); la única falla vigente era
+la eléctrica (tema real del artículo, aunque sin evidencia propia dentro
+de esta ventana de proximidad específica).
+
+**Corrección**: nueva función `_es_agua_restablecida_sin_falla_actual()`
+(`scripts/classify.py`), evaluada sobre el artículo completo: si el texto
+tiene evidencia de "sin agua"/"sin recibir agua" Y además un marcador de
+que el agua ya llegó ("hoy llegó"/"ya llegó"), se descarta el tipo
+infraestructura_agua -- el hecho de fondo (la falla eléctrica) sigue
+siendo real, solo que esta ventana en particular no tiene evidencia propia
+de ella. Se verificó con un caso de control (un corte de agua real y
+vigente, sin ninguna mención de que ya se haya restablecido) que sigue
+publicándose con normalidad.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_agua::Miranda::2026-09-01` de los 4 archivos de datos.
+
+### 6. Una sequía de 1608, citada en un decreto de día feriado religioso, se publicó como sequía actual en Nueva Esparta
+
+`sequia::Nueva Esparta::2026-09-01` (Reporte Confidencial, decreto de la
+Gobernación declarando el 8 de septiembre día no laborable por la
+festividad de la Virgen del Valle) disparaba tipo=sequía vía "el registro
+de su primer milagro documentado en 1608, cuando una procesión con la
+imagen sagrada puso fin a una severa sequía que azotaba a la región" -- una
+sequía de 1608 (418 años antes de la publicación), dato histórico-religioso
+sin relación con el clima actual.
+
+**Corrección**: nueva función `_es_sequia_historica_religiosa()`
+(`scripts/classify.py`): si el texto tiene evidencia de sequía Y el
+marcador "milagro documentado" Y un año explícito de 4 dígitos entre 1000 y
+1999 (`_ANO_HISTORICO_RE`), se descarta el tipo. Se verificó contra las 436
+fuentes de `data/historico_fuentes_texto.jsonl` que "milagro documentado"
+es exclusivo de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`sequia::Nueva Esparta::2026-09-01` de los 4 archivos de datos.
+
+### 7. Una demanda de investigación por torturas de 2013-2014 se publicó como disturbio actual en Lara
+
+`orden_publico::Lara::2026-09-01` (El Pitazo, "ONG y víctimas exigen al
+fiscal Larry Devoe abrir investigación contra militar deportado Rafael
+Quero Silva") disparaba tipo=orden_publico vía "Estos hechos ocurrieron
+durante la represión postelectoral de 2013 y las protestas civiles de
+2014, ejecutados por el Destacamento 47..." -- una referencia histórica de
+más de una década, usada para fechar denuncias de tortura, no un disturbio
+ocurriendo hoy.
+
+**Corrección**: se agregó "protestas civiles de 2014" a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO["orden_publico"]` (`scripts/classify.py`).
+Se verificó contra las 436 fuentes de `data/historico_fuentes_texto.jsonl`
+que la frase es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Lara::2026-09-01` de los 4 archivos de datos.
+
+### 8. Un meteorólogo apellidado "Vargas", citado en tiempo presente, generó una alerta falsa de sequía en La Guaira
+
+`sequia::La Guaira::2026-09-02` (La Prensa de Lara, "El Impacto de «El
+Niño» en Venezuela") es un reportaje nacional sobre el fenómeno de El Niño
+que nunca menciona La Guaira -- disparaba tipo=sequía y ubicación=La Guaira
+solo por el apellido de un meteorólogo consultado, "Luis Vargas" ("Vargas"
+es alias directo de La Guaira en `config/estados.yaml`), citado 5 veces en
+construcciones no cubiertas por el mecanismo existente de
+`_es_mencion_de_persona_citada` (que ya resuelve el mismo apellido en otros
+2 casos previos, 14 y 19-08-2026): "dijo Luis Vargas, meteorólogo..." (el
+verbo de cita precede al NOMBRE DE PILA, no al apellido, quedando 2 tokens
+antes en vez de justo antes), "lo explicado por Vargas" (construcción
+pasiva "participio + por + nombre"), "«...», dice Vargas" (tiempo
+presente, no cubierto -- la lista original solo tenía pasado/3ª persona),
+"Datos aportado por Vargas señalan" (plural presente) y "Vargas refiere
+que" (verbo después, forma no cubierta).
+
+**Corrección**: se amplió `_VERBOS_ATRIBUCION_CITA` con "dice"/"señalan"/
+"refiere" (`scripts/classify.py`), y `_es_mencion_de_persona_citada()` ganó
+dos construcciones nuevas de 2 tokens antes del candidato: (a) "PARTICIPIO
+por Nombre" (nuevo set `_PARTICIPIOS_ATRIBUCION_CITA`, decisivo sin
+importar qué precede al participio) y (b) "VERBO Nombre Apellido", exigiendo
+que la palabra intermedia (el supuesto nombre de pila) NO sea una palabra
+funcional común (`_PALABRAS_FUNCIONALES_NO_NOMBRE`) -- de lo contrario
+"declaró que Bolívar sufre..." (un verbo de cita seguido de "que" + el
+estado real, sin ningún nombre de persona) se excluiría por error. Se
+verificó con 2 casos de control: el caso ya existente de "estado Vargas"
+(epicentro real de sismo) sigue intacto, y un caso nuevo sintético
+("el alcalde declaró que en Bolívar hay una crisis eléctrica...") confirma
+que la nueva construcción (b) no excluye una mención real del estado.
+
+**Corrección retroactiva**: se eliminó por completo
+`sequia::La Guaira::2026-09-02` de los 4 archivos de datos.
+
+### Pendiente de discutir
+
+**`infraestructura_agua::Sucre::2026-09-02`** (Turimiquire, "Cumaná estado
+Sucre quedó excluida de la programación de cortes eléctricos"): el cuerpo
+del artículo es prácticamente en su totalidad sobre fallas ELÉCTRICAS
+(sobrecarga, deterioro de la infraestructura, hasta 30 cortes diarios) --
+pero la primera línea, aislada, dice solo "Cumaná sin agua." antes de que
+empiece la nota real ("Alcalde de Cumaná asegura que Sucre queda
+excluido..."), un patrón que en auditorías previas resultó ser un titular/
+epígrafe de foto incrustado por el scraper, sin relación con el cuerpo del
+artículo. Sin embargo, a diferencia de esos casos previos (donde el
+titular ajeno era claramente identificable como de OTRO artículo, p.ej. una
+nota deportiva), aquí "Cumaná sin agua." podría ser el pie de una foto del
+MISMO reportaje sobre una crisis hídrica real y simultánea en la región
+(el propio texto menciona, sin desarrollar, "la crisis hídrica que afecta a
+varios municipios de la región" como el motivo de las medidas). No hay
+ninguna otra evidencia de tipo agua en el texto (ningún "corte de agua"/
+"racionamiento"/día sin suministro descrito), pero tampoco una prueba
+decisiva de que sea un artefacto de scraping y no un dato real
+simplemente no desarrollado. Corregirlo a ciegas (descartando el tipo, o
+reclasificándolo como infraestructura_electrica sin que ese tipo tenga
+evidencia de palabra clave propia en este texto) podría perder una
+alerta real de agua o inventar una de electricidad sin base textual. Se
+notifica al usuario en vez de fusionar un cambio dudoso de forma autónoma.
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta como "fuentes muertas" los 9
+enlaces retractados hoy que ya habían sido incluidos en informes ya
+generados antes de esta auditoría: `docs/data/informes/2026-07_general.json`,
+`2026-07_infraestructura_electrica.json`, `2026-07_orden_publico.json`
+(3 fuentes de sesiones anteriores, ya señaladas en auditorías previas y
+aún sin regenerar), `2026-08_sismo.json` (hallazgo 1, el caso incidental
+del padre Jhonny Arias), `2026-09_emergencia_metro.json` (hallazgo 4),
+`2026-09_general.json` y `2026-09_sequia.json` (hallazgo 6),
+`2026-09_orden_publico.json` (hallazgo 7). `GROQ_API_KEY` no está
+disponible en este entorno, así que no se regeneraron a mano --
+`scripts/build_informes.py` regenerará esos informes en la próxima corrida
+con acceso a la API (mismo patrón que sesiones anteriores).
+
+### Pruebas
+
+15 casos nuevos en `tests/casos_clasificacion.jsonl` (9 reales + 6
+controles) para los hallazgos 1-8. Regresión completa contra las 317
+fuentes vigentes de `data/historico_fuentes_texto.jsonl` (ya con los 10
+eventos retractados hoy eliminados, incluido el hallazgo incidental del
+24-08-2026): sin cambios inesperados -- las únicas fuentes afectadas por
+los fixes son, precisamente, las señaladas arriba. `python3 -m pytest
+tests/` → 659 passed, 6 xfailed (conocidos), 1 xpassed (conocido).
+`python3 scripts/validar_configs.py` → OK. `python3
+scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
+`python3 scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados ya conocidos de sesiones anteriores, más las fuentes muertas en
+informes documentadas arriba.
