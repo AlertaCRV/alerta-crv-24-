@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "emergencia_metro",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/02/a-200-bolivares-el-pasaje-urbano-a-partir-del-1-de-septiembre-de-2026/",
+        "fecha": "2026-09-02T06:00:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T06:00:09+00:00",
+    "fecha_evento_temprana": "2026-09-02T06:00:09+00:00",
+    "fecha_deteccion": "2026-09-02T17:24:29.941000+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-02",
+    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital",
+    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 02/09/2026, 2:00 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 1:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/a-200-bolivares-el-pasaje-urbano-a-partir-del-1-de-septiembre-de-2026/"
+  },
+  {
     "tipo": "sismo",
     "ubicacion": "Carabobo",
     "municipio": "Valencia",
@@ -4169,57 +4195,5 @@
     "clave_dedup": "inundacion::Portuguesa::2026-08-19",
     "titulo": "Inundación en Portuguesa",
     "texto": "📌 Inundación en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 19/08/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Monagas",
-    "municipio": "Punceres",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/punceres-y-caripito-sin-luz-por-caida-de-torres-de-alta-tension/",
-        "fecha": "2026-08-19T12:52:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T12:52:40+00:00",
-    "fecha_evento_temprana": "2026-08-19T12:52:40+00:00",
-    "fecha_deteccion": "2026-08-19T15:52:46.622996+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Monagas::2026-08-19",
-    "titulo": "Falla eléctrica en Municipio Punceres, Monagas",
-    "texto": "📌 Falla eléctrica en Municipio Punceres, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Punceres, Monagas\n🕒 Hecho reportado: 19/08/2026, 8:52 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 11:52 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/punceres-y-caripito-sin-luz-por-caida-de-torres-de-alta-tension/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/19/los-vecinos-de-la-trinidad-en-cumana-cerraron-la-perimetral-al-cumplir-15-horas-con-un-apagon-electrico/",
-        "fecha": "2026-08-19T11:00:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T11:00:10+00:00",
-    "fecha_evento_temprana": "2026-08-19T11:00:10+00:00",
-    "fecha_deteccion": "2026-08-19T15:52:50.066561+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Sucre::2026-08-19",
-    "titulo": "Falla eléctrica en Sucre",
-    "texto": "📌 Falla eléctrica en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 19/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 11:52 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/19/los-vecinos-de-la-trinidad-en-cumana-cerraron-la-perimetral-al-cumplir-15-horas-con-un-apagon-electrico/"
   }
 ]

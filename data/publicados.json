@@ -1,25 +1,4 @@
 {
-  "infraestructura_electrica::Barinas::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T15:29:30.159248+00:00",
-    "fecha_evento_temprana": "2026-08-30T13:42:20+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Zulia::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T15:29:37.817915+00:00",
-    "fecha_evento_temprana": "2026-08-30T10:19:41+00:00",
-    "municipio": "Maracaibo"
-  },
-  "infraestructura_electrica::Merida::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T15:30:08.085005+00:00",
-    "fecha_evento_temprana": "2026-08-30T13:09:02+00:00",
-    "municipio": null
-  },
   "orden_publico::Distrito Capital::2026-08-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -166,5 +145,12 @@
     "fecha_deteccion": "2026-09-02T13:39:01.729218+00:00",
     "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
     "municipio": "San Felipe"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T17:24:29.941000+00:00",
+    "fecha_evento_temprana": "2026-09-02T06:00:09+00:00",
+    "municipio": null
   }
 }
