@@ -1,5 +1,109 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": "El Cafetal",
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/caraquenos-reportan-falla-del-servicio-electrico-este-1sep-estas-son-las-zonas-sin-luz/",
+        "fecha": "2026-09-01T22:03:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T22:03:12+00:00",
+    "fecha_evento_temprana": "2026-09-01T22:03:12+00:00",
+    "fecha_deteccion": "2026-09-02T09:03:11.674491+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Miranda::2026-09-01",
+    "titulo": "Falla de agua en Parroquia El Cafetal, Municipio Baruta, Miranda",
+    "texto": "📌 Falla de agua en Parroquia El Cafetal, Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Cafetal, Municipio Baruta, Miranda\n🕒 Hecho reportado: 01/09/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/caraquenos-reportan-falla-del-servicio-electrico-este-1sep-estas-son-las-zonas-sin-luz/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/",
+        "fecha": "2026-09-01T22:01:55+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T22:01:55+00:00",
+    "fecha_evento_temprana": "2026-09-01T22:01:55+00:00",
+    "fecha_deteccion": "2026-09-02T09:03:15.129901+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Lara::2026-09-01",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/09/2026, 6:01 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/",
+        "fecha": "2026-09-02T01:00:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T01:00:05+00:00",
+    "fecha_evento_temprana": "2026-09-02T01:00:05+00:00",
+    "fecha_deteccion": "2026-09-02T09:03:58.973724+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-02",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 01/09/2026, 9:00 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/",
+        "fecha": "2026-09-01T22:00:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-01T22:00:53+00:00",
+    "fecha_evento_temprana": "2026-09-01T22:00:53+00:00",
+    "fecha_deteccion": "2026-09-02T09:04:10.895632+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-01",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+  },
+  {
     "tipo": "sequia",
     "ubicacion": "Nueva Esparta",
     "municipio": null,
@@ -4004,87 +4108,5 @@
     "clave_dedup": "infraestructura_agua::Anzoategui::2026-08-19",
     "titulo": "Falla de agua en Municipio Aragua, Anzoategui",
     "texto": "📌 Falla de agua en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 19/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 19/08/2026, 7:59 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/19/los-habitantes-de-aragua-de-barcelona-en-el-estado-anzoategui-se-quedaron-otra-vez-sin-agua/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "Antimano",
-    "severidad": "alto",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/",
-        "fecha": "2026-08-18T19:13:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-18T19:13:09+00:00",
-    "fecha_evento_temprana": "2026-08-18T19:13:09+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:27.642492+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Distrito Capital::2026-08-18",
-    "titulo": "Sismo en Parroquia Antimano, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Sismo en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 18/08/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/617793/inestabilidad-del-terreno-y-lluvias-provocan-colapso-de-vivienda-en-carapita/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Monagas",
-    "municipio": "Piar",
-    "parroquia": "Chaguaramal",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/",
-        "fecha": "2026-08-19T00:00:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T00:00:59+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:00:59+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:38.006462+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Monagas::2026-08-19",
-    "titulo": "Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas",
-    "texto": "📌 Falla de agua en Parroquia Chaguaramal, Municipio Piar, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Chaguaramal, Municipio Piar, Monagas\n🕒 Hecho reportado: 18/08/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/restituyen-servicio-de-agua-potable-en-sectores-unidos-de-chaguaramal/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticias de Aqui (Anzoategui)",
-        "link": "https://noticiasdeaqui.co/2026/08/18/atienden-fallas-electricas-en-varios-sectores-de-lecheria-anzoategui/",
-        "fecha": "2026-08-19T00:53:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T00:53:26+00:00",
-    "fecha_evento_temprana": "2026-08-19T00:53:26+00:00",
-    "fecha_deteccion": "2026-08-19T06:05:48.089176+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-19",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 18/08/2026, 8:53 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 2:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticias de Aqui (Anzoategui): https://noticiasdeaqui.co/2026/08/18/atienden-fallas-electricas-en-varios-sectores-de-lecheria-anzoategui/"
   }
 ]
