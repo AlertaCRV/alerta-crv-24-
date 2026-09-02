@@ -1,5 +1,59 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Nueva Esparta",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/02/devocion-y-fe-enaltecieron-la-tradicional-bajada-de-la-virgen-del-valle-2sep/",
+        "fecha": "2026-09-02T15:54:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T15:54:42+00:00",
+    "fecha_evento_temprana": "2026-09-02T15:54:42+00:00",
+    "fecha_deteccion": "2026-09-02T22:40:02.097535+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Nueva Esparta::2026-09-02",
+    "titulo": "Sismo en Nueva Esparta",
+    "texto": "📌 Sismo en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 02/09/2026, 11:54 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 6:40 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/devocion-y-fe-enaltecieron-la-tradicional-bajada-de-la-virgen-del-valle-2sep/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/",
+        "fecha": "2026-09-02T14:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T14:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-02T14:30:00+00:00",
+    "fecha_deteccion": "2026-09-02T22:41:10.001833+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-02",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 02/09/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 6:41 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": "Simón Rodríguez",
@@ -4247,31 +4301,5 @@
     "clave_dedup": "vialidad::Merida::2026-08-20",
     "titulo": "Incidente vial en Merida",
     "texto": "📌 Incidente vial en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 19/08/2026, 11:00 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 2:06 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/triple-choque-en-la-panamericana-de-merida-deja-14-heridos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/corpoelec-busca-restituir-electricidad-tras-caidas-de-torres-en-monagas/",
-        "fecha": "2026-08-19T19:00:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T19:00:28+00:00",
-    "fecha_evento_temprana": "2026-08-19T19:00:28+00:00",
-    "fecha_deteccion": "2026-08-19T21:05:28.986897+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-19",
-    "titulo": "Falla eléctrica en Bolivar",
-    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 19/08/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 5:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/corpoelec-busca-restituir-electricidad-tras-caidas-de-torres-en-monagas/"
   }
 ]

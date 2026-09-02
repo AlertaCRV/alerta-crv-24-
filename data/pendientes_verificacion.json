@@ -1707,28 +1707,40 @@
     "intentos": 1,
     "ultima_vez": "2026-09-02T00:12:04.916222+00:00"
   },
-  "sismo::Nueva Esparta::2026-09-02": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-02T20:05:32.662565+00:00"
-  },
-  "infraestructura_electrica::Lara::2026-09-02": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-02T20:06:28.382907+00:00"
-  },
   "infraestructura_electrica::Zulia::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T20:05:36.130513+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T22:40:05.736901+00:00"
   },
   "orden_publico::Portuguesa::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T20:05:43.211521+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T22:40:12.575885+00:00"
   },
   "incendio::Distrito Capital::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T20:06:05.467353+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T22:40:35.527155+00:00"
   },
   "deslizamiento::Aragua::2026-09-02": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T22:40:47.069609+00:00"
+  },
+  "ataque_armado::Miranda::2026-09-02": {
     "intentos": 1,
-    "ultima_vez": "2026-09-02T20:06:16.937220+00:00"
+    "ultima_vez": "2026-09-02T22:39:54.940688+00:00"
+  },
+  "ataque_armado::Zulia::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T22:39:58.361805+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T22:40:09.068497+00:00"
+  },
+  "inundacion::Monagas::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T22:40:23.980483+00:00"
+  },
+  "inundacion::Portuguesa::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T22:40:58.486146+00:00"
   }
 }

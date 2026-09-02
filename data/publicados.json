@@ -1,18 +1,4 @@
 {
-  "tormenta_electrica::Distrito Capital::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T21:41:25.445713+00:00",
-    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
-    "municipio": null
-  },
-  "tormenta_electrica::La Guaira::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T21:41:28.812193+00:00",
-    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
-    "municipio": null
-  },
   "ataque_armado::Miranda::2026-08-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -173,5 +159,19 @@
     "fecha_deteccion": "2026-09-02T20:05:54.115536+00:00",
     "fecha_evento_temprana": "2026-09-02T12:00:00+00:00",
     "municipio": "Vargas"
+  },
+  "sismo::Nueva Esparta::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T22:40:02.097535+00:00",
+    "fecha_evento_temprana": "2026-09-02T15:54:42+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-09-02": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T22:41:10.001833+00:00",
+    "fecha_evento_temprana": "2026-09-02T14:30:00+00:00",
+    "municipio": null
   }
 }
