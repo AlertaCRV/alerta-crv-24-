@@ -1,6 +1,14 @@
 [
   {
     "periodo": "2026-09",
+    "tipo": "sismo",
+    "tipo_label": "Sismo",
+    "cerrado": false,
+    "generado": "2026-09-02T13:39:46.779445+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
@@ -14,6 +22,14 @@
     "cerrado": false,
     "generado": "2026-09-02T09:04:26.587561+00:00",
     "total_eventos": 2
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "inundacion",
+    "tipo_label": "Inundación",
+    "cerrado": false,
+    "generado": "2026-09-02T13:39:33.693262+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-09",

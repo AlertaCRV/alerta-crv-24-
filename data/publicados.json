@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Sucre::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T11:38:26.889071+00:00",
-    "fecha_evento_temprana": "2026-08-30T01:03:08+00:00",
-    "municipio": "Bermúdez"
-  },
   "infraestructura_electrica::Barinas::2026-08-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -138,5 +131,40 @@
     "fecha_deteccion": "2026-09-02T09:04:10.895632+00:00",
     "fecha_evento_temprana": "2026-09-01T22:00:53+00:00",
     "municipio": null
+  },
+  "sismo::Carabobo::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T13:38:27.340148+00:00",
+    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
+    "municipio": "Valencia"
+  },
+  "deslizamiento::Distrito Capital::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T13:38:30.884323+00:00",
+    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
+    "municipio": null
+  },
+  "inundacion::Lara::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T13:38:34.432689+00:00",
+    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
+    "municipio": "Moran"
+  },
+  "inundacion::Tachira::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T13:38:38.618914+00:00",
+    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
+    "municipio": null
+  },
+  "inundacion::Yaracuy::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T13:39:01.729218+00:00",
+    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
+    "municipio": "San Felipe"
   }
 }

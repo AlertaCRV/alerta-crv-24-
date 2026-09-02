@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "inundacion",
+  "tipo_label": "Inundación",
+  "cerrado": false,
+  "generado": "2026-09-02T13:39:33.693262+00:00",
+  "actualizado_hasta": "2026-09-02T13:39:01.729218+00:00",
+  "total_eventos": 3,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 52,
+    "actual": 3
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de inundación, una cifra significativamente menor que los 52 eventos reportados en el mes anterior, agosto de 2026 (Turimiquire). Esta reducción se refleja en la menor cantidad de incidentes críticos, aunque la intensidad de los fenómenos observados siguió siendo alta en varios estados del país.\n\nDurante la Onda Tropical 43, que alcanzó su mayor impacto el 31 de septiembre de 2026, seis estados venezolanos –Caracas (Distrito Capital), Carabobo, La Guaira, Lara, Táchira y Yaracuy– reportaron vías inundadas (Turimiquire). Las autoridades locales y los medios de comunicación confirmaron la presencia de agua en carreteras principales, dificultando el tránsito y la movilidad de los residentes.\n\nEn los estados de Táchira y Yaracuy, las comunidades agrícolas denunciaron derrumbes que dejaron incomunicadas a varias zonas rurales (Turimiquire). Estos deslizamientos de tierra provocaron la interrupción de caminos de acceso y aislaron a familias que dependían de la agricultura para su sustento.\n\nParalelamente, en Caracas y La Guaira, los refugiados que habían sido alojados en campamentos tras los terremotos de junio de 2026 reportaron inundaciones en sus carpas, exponiendo a las personas a condiciones de vulnerabilidad adicional (Turimiquire). Las autoridades humanitarias señalaron la necesidad de reforzar los albergues y proveer asistencia inmediata a los afectados.",
+  "fuentes": [
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
+    }
+  ]
+}
