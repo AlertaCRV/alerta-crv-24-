@@ -201,7 +201,22 @@ LISTA_NEGRA_POR_ESTADO = {
     # hecho real ocurrio en el extranjero): se descarta directamente. Se
     # verifico contra las 122 fuentes de data/historico_fuentes_texto.jsonl
     # que esta firma es exclusiva de este articulo.
-    "Monagas": ["periodista del estado monagas"],
+    # Ampliado (02-09-2026, PASADO_POR_FALLA_TECNICA): "son pocas las
+    # ocasiones en las que pueden trasladarse a Barrancas, en el estado
+    # Monagas, para adquirir comida" -- un articulo sobre una inundacion
+    # real del rio Orinoco en comunidades de Delta Amacuro (Santa Rosa de
+    # Araguao, municipio Antonio Diaz) mencionaba Monagas solo como el
+    # destino de viaje al que los damnificados van a comprar alimentos, sin
+    # ninguna inundacion propia en ese estado. Sin remapeo: el estado real
+    # (Delta Amacuro) no tiene evidencia de tipo dentro de la ventana de
+    # proximidad de sus propias menciones en este articulo (quedan a mas de
+    # 35 palabras de "crecida"/"inundaciones"), asi que el candidato de
+    # Monagas simplemente se descarta, igual que "periodista del estado
+    # monagas" arriba. Se verifico contra las 436 fuentes de data/
+    # historico_fuentes_texto.jsonl que esta frase es exclusiva de este
+    # articulo.
+    "Monagas": ["periodista del estado monagas",
+                "trasladarse a barrancas, en el estado monagas"],
     # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): un articulo sobre
     # sequia/incendios forestales en el estado Trujillo menciona, de
     # pasada, "el colapso de las vias de acceso hacia el estado Portuguesa,
@@ -374,6 +389,36 @@ def _es_sequia_atribuida_a_otro_estado(texto_norm, ubicacion):
     return estado_nombrado != _normalizar(ubicacion).strip()
 
 
+# Mismo patron que _es_sequia_atribuida_a_otro_estado, para deslizamiento.
+# Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): "Mientras las
+# comunidades agricolas de Tachira y Yaracuy reportaron derrumbes, en
+# Caracas y La Guaira los refugiados de los terremotos de junio denuncian
+# inundaciones en sus carpas" -- el subtitulo de un articulo-resumen de
+# inundaciones (6 estados) nombra explicitamente a Tachira y Yaracuy como
+# los estados con derrumbes, en la misma oracion (separada solo por una
+# coma) donde luego menciona a Caracas/La Guaira para un hecho DISTINTO
+# (inundacion de refugios) -- pero la ventana de proximidad de "Caracas"
+# alcanzaba a cubrir "derrumbes" (sin ningun estado interpuesto entre ambas
+# palabras), generando tipo=deslizamiento en Distrito Capital sin ninguna
+# evidencia propia. Se verifico contra las 436 fuentes de data/
+# historico_fuentes_texto.jsonl que la frase, con los 2 estados capturados
+# como grupos, es exclusiva de este articulo.
+_DERRUMBE_ESTADOS_NOMBRADOS_RE = re.compile(
+    r"\bde ([a-z][a-z ]*?) y ([a-z][a-z ]*?) reportaron derrumbes?\b"
+)
+
+
+def _es_derrumbe_atribuido_a_otro_estado(texto_norm, ubicacion):
+    """True si el texto nombra explicitamente, en la misma clausula de
+    derrumbes, un estado distinto al que se esta clasificando -- ver caso
+    real arriba."""
+    match = _DERRUMBE_ESTADOS_NOMBRADOS_RE.search(texto_norm)
+    if not match:
+        return False
+    estados_nombrados = {match.group(1).strip(), match.group(2).strip()}
+    return _normalizar(ubicacion).strip() not in estados_nombrados
+
+
 # A diferencia de FRONTERA_EXTRANJERA_POR_ESTADO (que solo aplica a estados
 # fronterizos con Colombia, donde un toponimo colombiano puede confundirse
 # con uno venezolano homonimo), este marcador es DECISIVO para CUALQUIER
@@ -473,8 +518,39 @@ def _es_fallecimiento_migrante_en_extranjero(texto_norm):
 # tiene ninguna palabra de _EVIDENCIA_FUERTE_POR_TIPO para ese tipo, se
 # descarta el tipo para esa mencion puntual.
 _CONTEXTO_CONFLICTIVO_POR_TIPO = {
+    # Ampliado (02-09-2026, PASADO_POR_FALLA_TECNICA): dos casos reales
+    # distintos de referencia retrospectiva al terremoto del 24 de junio,
+    # sin ningun sismo nuevo:
+    # 1) "quien anuncio que durante las fiestas se mantendra un
+    #    acompanamiento espiritual especial para los afectados por los
+    #    sismos registrados el 24 de junio" -- una cobertura de la Bajada de
+    #    la Virgen del Valle (fiesta religiosa en Nueva Esparta) disparaba
+    #    tipo=sismo solo por esa mencion pastoral, sin relacion con un
+    #    temblor nuevo.
+    # 2) "Mientras las comunidades agricolas de Tachira y Yaracuy reportaron
+    #    derrumbes, en Caracas y La Guaira los refugiados de los terremotos
+    #    de junio denuncian inundaciones en sus carpas" -- el subtitulo de un
+    #    articulo-resumen de inundaciones por lluvia (6 estados) disparaba
+    #    tipo=sismo en Carabobo y La Guaira solo por esa mencion de los
+    #    refugios de terremotos ya ocurridos, sin ningun temblor nuevo (el
+    #    hecho real de esos estados es la inundacion, ya cubierta aparte).
+    # No se usa "el pasado"/"del pasado" (como _SISMO_FECHA_PASADA_RE) porque
+    # ninguno de los dos casos usa esa palabra. Se verifico contra las 436
+    # fuentes de data/historico_fuentes_texto.jsonl (via classify.detectar_ubicacion/
+    # detectar_tipo reales, no solo grep) que estas frases, evaluadas sobre la
+    # VENTANA (no el articulo completo -- a diferencia de
+    # _es_referencia_sismo_fecha_pasada), no afectan un caso de control real
+    # y vigente en el mismo corpus (Runrun.es, 18-08-2026, "colapso de
+    # vivienda en Carapita"): un sismo real del 18 de agosto que TAMBIEN
+    # menciona, mucho mas lejos en el mismo articulo, "los terremotos del
+    # pasado 24 de junio" -- esa mencion queda fuera de la ventana de
+    # proximidad de Distrito Capital en ese caso, a diferencia de los 2
+    # casos reales de arriba donde la mencion retrospectiva SI cae dentro de
+    # la ventana que genero el tipo=sismo.
     "sismo": ["cerco epidemiologico", "epidemiologico", "brote de enfermedad",
-              "atenciones medicas", "salud integral comunitaria"],
+              "atenciones medicas", "salud integral comunitaria",
+              "24 de junio", "terremoto de junio", "terremotos de junio",
+              "sismo de junio", "sismos de junio"],
     # Caso anticipado (27-07-2026): demolicion controlada de estructuras
     # danadas por el terremoto en Playa Grande/Caraballeda, La Guaira --
     # coberturas de esa demolicion programada mencionaran "colapso"/
@@ -575,8 +651,20 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # queja formal (con una propuesta tecnica de tres ejes, sin ninguna
     # manifestacion fisica descrita), mismo patron que la nota de protesta
     # diplomatica.
+    # Ampliado (02-09-2026, PASADO_POR_FALLA_TECNICA): "Estos hechos
+    # ocurrieron durante la represion postelectoral de 2013 y las protestas
+    # civiles de 2014, ejecutados por el Destacamento 47..." -- un articulo
+    # sobre una ONG y victimas exigiendo al fiscal general abrir una
+    # investigacion contra un militar deportado por torturas cometidas
+    # durante la represion postelectoral de 2013, disparaba tipo=orden_publico
+    # via "protestas civiles de 2014" -- una referencia historica de mas de
+    # una decada, usada para fechar las denuncias de tortura, no un disturbio
+    # ocurriendo hoy. Se verifico contra las 436 fuentes de data/
+    # historico_fuentes_texto.jsonl que la frase es exclusiva de este
+    # articulo.
     "orden_publico": ["nota de protesta", "notas de protesta",
-                       "expreso su protesta ante", "expresó su protesta ante"],
+                       "expreso su protesta ante", "expresó su protesta ante",
+                       "protestas civiles de 2014"],
     # Caso real (02-08-2026): "Tragedia en Cumaná: colapso de un árbol...
     # un árbol colapsara y arrastrara postes del tendido eléctrico" -- una
     # muerte por la caida de un arbol (que de paso derribo postes) se
@@ -1324,6 +1412,72 @@ def _es_protesta_electrica_con_tipo_incorrecto(texto_norm):
     return any(m in texto_norm for m in _MARCADORES_PROTESTA_ELECTRICA_TIPO_INCORRECTO)
 
 
+# Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): "A 200 bolivares el
+# pasaje urbano a partir del 1 de septiembre de 2026... Otros medios de
+# transporte como el Metro de Caracas, Metrobus y el ferrocarril
+# Caracas-Cua..., continuaran cobrando sus tarifas habituales" -- un
+# articulo sobre el ajuste del pasaje urbano (transporte terrestre)
+# disparaba tipo=emergencia_metro solo por la frase "Metro de Caracas",
+# mencionado de pasada para aclarar que su tarifa NO cambia -- sin ninguna
+# falla/varados/incendio/descarrilamiento real. Se verifico contra las 436
+# fuentes de data/historico_fuentes_texto.jsonl que la frase es exclusiva de
+# este articulo.
+_MARCADORES_ANUNCIO_TARIFARIO_METRO = [
+    "continuaran cobrando sus tarifas habituales",
+    "continuarán cobrando sus tarifas habituales",
+]
+_EVIDENCIA_FUERTE_EMERGENCIA_METRO = [
+    "varados", "atrapados", "incendio", "descarrilamiento", "colapsado",
+    "colapso del servicio", "falla en el metro", "falla del metro",
+]
+
+
+def _es_anuncio_tarifario_metro_sin_falla_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_ANUNCIO_TARIFARIO_METRO):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_EMERGENCIA_METRO)
+
+
+# Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): un tuit citado dentro de
+# una nota sobre fallas electricas en Baruta/El Hatillo decia "Luego de mes
+# y pico sin agua en Los Naranjos en el Hatillo, Caracas, hoy llego asi que
+# la gente se dispone a lavar pero oops, no hay luz" -- el corte de AGUA ya
+# habia terminado ("hoy llego") el mismo dia de publicacion; la unica falla
+# vigente ese dia era la electrica (tema real del articulo). "sin agua"
+# disparaba tipo=infraestructura_agua como si el corte siguiera activo. Se
+# verifico contra las 436 fuentes de data/historico_fuentes_texto.jsonl que
+# "hoy llego"/"ya llego" junto a "sin agua" es exclusivo de este articulo.
+_MARCADORES_AGUA_RESTABLECIDA = ["hoy llego", "hoy llegó", "ya llego", "ya llegó"]
+
+
+def _es_agua_restablecida_sin_falla_actual(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "sin agua")
+            or _contiene_palabra_clave(texto_norm, "sin recibir agua")):
+        return False
+    return any(m in texto_norm for m in _MARCADORES_AGUA_RESTABLECIDA)
+
+
+# Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): un decreto de la
+# Gobernacion de Nueva Esparta declarando el 8 de septiembre dia no laborable
+# por la festividad de la Virgen del Valle mencionaba, como dato historico,
+# "el registro de su primer milagro documentado en 1608, cuando una
+# procesion con la imagen sagrada puso fin a una severa sequia que azotaba a
+# la region" -- una sequia de 1608 (418 anos antes de la publicacion)
+# disparaba tipo=sequia como si fuera un evento actual. Se verifico contra
+# las 436 fuentes de data/historico_fuentes_texto.jsonl que "milagro
+# documentado" es exclusivo de este articulo.
+_MARCADORES_SEQUIA_HISTORICA_RELIGIOSA = ["milagro documentado"]
+_ANO_HISTORICO_RE = re.compile(r"\ben (1[0-9]{3})\b")
+
+
+def _es_sequia_historica_religiosa(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "sequia") or _contiene_palabra_clave(texto_norm, "sequias")):
+        return False
+    if not any(m in texto_norm for m in _MARCADORES_SEQUIA_HISTORICA_RELIGIOSA):
+        return False
+    return _ANO_HISTORICO_RE.search(texto_norm) is not None
+
+
 # Caso real (19-08-2026, PASADO_POR_FALLA_TECNICA): "71 Nuevos Bomberos Se
 # Incorporan Al Cuerpo De Bomberos Del Estado Apure... egresados de la
 # UNES... recibieron una preparacion integral que les permite responder
@@ -1859,6 +2013,14 @@ _VERBOS_ATRIBUCION_CITA = {
     # Ampliado (19-08-2026): "destaco"/"destacó" faltaba -- ver caso real
     # de "Vargas" mas abajo.
     "destaco", "destacó",
+    # Ampliado (02-09-2026, PASADO_POR_FALLA_TECNICA): un reportaje sobre
+    # sequia citaba varias veces a un meteorologo de apellido "Vargas"
+    # (alias de La Guaira) en tiempo PRESENTE/plural, formas no cubiertas
+    # por la lista original (solo pasado/3a persona singular): "«...»,
+    # DICE Vargas", "Datos aportado por Vargas SEÑALAN que...", "Vargas
+    # REFIERE que...". Ver tambien el chequeo de "por Nombre" mas abajo en
+    # _es_mencion_de_persona_citada, para "lo explicado POR Vargas".
+    "dice", "senalan", "refiere",
 }
 
 # Ampliado (19-08-2026, PASADO_POR_FALLA_TECNICA): el chequeo original solo
@@ -1876,6 +2038,31 @@ _VERBOS_ATRIBUCION_CITA = {
 # persona mencionada mas adelante en el articulo).
 _VENTANA_VERBO_ATRIBUCION_CITA = 12
 
+# Ampliado (02-09-2026, PASADO_POR_FALLA_TECNICA): las dos ampliaciones de
+# arriba no bastaban para dos construcciones reales mas del mismo articulo
+# de "Vargas" meteorologo:
+# 1) "..., dijo Luis Vargas, meteorologo consultado..." -- el verbo de cita
+#    precede al NOMBRE DE PILA, no al apellido/alias de estado, quedando 2
+#    tokens antes de "Vargas" en vez de justo antes.
+# 2) "De acuerdo con lo explicado por Vargas, la sequia..." -- construccion
+#    pasiva "PARTICIPIO por NOMBRE", donde el participio (no un verbo
+#    conjugado) es la señal de cita, y precede a "por", no al nombre.
+# _PARTICIPIOS_ATRIBUCION_CITA cubre el patron 2. Para el patron 1 se exige
+# ademas que la palabra intermedia (el supuesto nombre de pila) NO sea una
+# palabra funcional comun -- de lo contrario "declaro que Bolivar sufre..."
+# (un verbo de cita seguido de "que" + el estado real, sin ningun nombre de
+# persona) se excluiria por error.
+_PARTICIPIOS_ATRIBUCION_CITA = {
+    "explicado", "dicho", "senalado", "indicado", "declarado", "afirmado",
+    "manifestado", "comentado", "sostenido", "denunciado", "advertido",
+    "reiterado", "destacado", "precisado", "aportado", "referido",
+}
+_PALABRAS_FUNCIONALES_NO_NOMBRE = {
+    "que", "de", "del", "en", "con", "por", "para", "y", "o", "a", "al",
+    "la", "el", "los", "las", "un", "una", "se", "su", "sus", "mas", "más",
+    "pero", "si", "no", "ya", "es", "esta", "está", "fue", "ha", "han",
+}
+
 
 def _es_mencion_de_persona_citada(tokens, pos):
     """True si la mencion en `pos` de un nombre de estado que tambien es un
@@ -1884,14 +2071,24 @@ def _es_mencion_de_persona_citada(tokens, pos):
     inmediatamente anterior no sea un calificador de lugar conocido (para
     no descartar lugares reales como "Ciudad Bolivar" o "estado Bolivar")
     Y que haya un verbo de atribucion de cita justo antes, justo despues,
-    o dentro de una ventana corta despues (ver _VENTANA_VERBO_ATRIBUCION_CITA)."""
+    o dentro de una ventana corta despues (ver _VENTANA_VERBO_ATRIBUCION_CITA),
+    o alguna de las dos construcciones de dos tokens antes (ver comentario
+    arriba)."""
     anterior = tokens[pos - 1] if pos > 0 else ""
     if anterior in _CALIFICADORES_LUGAR_ANTES_DE_NOMBRE:
         return False
     if anterior in _VERBOS_ATRIBUCION_CITA:
         return True
     ventana_siguiente = tokens[pos + 1: pos + 1 + _VENTANA_VERBO_ATRIBUCION_CITA]
-    return any(t in _VERBOS_ATRIBUCION_CITA for t in ventana_siguiente)
+    if any(t in _VERBOS_ATRIBUCION_CITA for t in ventana_siguiente):
+        return True
+    if pos >= 2:
+        anterior2 = tokens[pos - 2]
+        if anterior == "por" and anterior2 in _PARTICIPIOS_ATRIBUCION_CITA:
+            return True
+        if anterior2 in _VERBOS_ATRIBUCION_CITA and anterior not in _PALABRAS_FUNCIONALES_NO_NOMBRE:
+            return True
+    return False
 
 
 # Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "el Gobierno
@@ -2334,6 +2531,12 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "incendio" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm):
                     break
+                if tipo == "emergencia_metro" and _es_anuncio_tarifario_metro_sin_falla_real(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_agua" and _es_agua_restablecida_sin_falla_actual(texto_completo_norm):
+                    break
+                if tipo == "sequia" and _es_sequia_historica_religiosa(texto_completo_norm):
+                    break
                 if not _tipo_con_contexto_conflictivo(fuente_norm, tipo):
                     tipos_encontrados.append(tipo)
                 break
@@ -2412,6 +2615,10 @@ def clasificar_item(item):
             continue
         if "sequia" in nuevo["tipos"] and _es_sequia_atribuida_a_otro_estado(texto_norm, ubicacion):
             nuevo["tipos"] = [t for t in nuevo["tipos"] if t != "sequia"]
+            if not nuevo["tipos"]:
+                continue
+        if "deslizamiento" in nuevo["tipos"] and _es_derrumbe_atribuido_a_otro_estado(texto_norm, ubicacion):
+            nuevo["tipos"] = [t for t in nuevo["tipos"] if t != "deslizamiento"]
             if not nuevo["tipos"]:
                 continue
         resultado.append(nuevo)

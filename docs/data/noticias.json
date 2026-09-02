@@ -1,33 +1,5 @@
 [
   {
-    "tipo": "sismo",
-    "ubicacion": "Nueva Esparta",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/02/devocion-y-fe-enaltecieron-la-tradicional-bajada-de-la-virgen-del-valle-2sep/",
-        "fecha": "2026-09-02T15:54:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T15:54:42+00:00",
-    "fecha_evento_temprana": "2026-09-02T15:54:42+00:00",
-    "fecha_deteccion": "2026-09-02T22:40:02.097535+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::Nueva Esparta::2026-09-02",
-    "titulo": "Sismo en Nueva Esparta",
-    "texto": "📌 Sismo en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 02/09/2026, 11:54 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 6:40 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/devocion-y-fe-enaltecieron-la-tradicional-bajada-de-la-virgen-del-valle-2sep/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Lara",
     "municipio": null,
@@ -80,32 +52,6 @@
     "texto": "📌 Falla eléctrica en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 02/09/2026, 12:46 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/el-tiempo-en-la-calle-ramas-entre-el-tendido-electrico-amenazan-con-causar-danos-en-sectores-de-el-tigre/"
   },
   {
-    "tipo": "inundacion",
-    "ubicacion": "Monagas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/habitantes-de-santa-rosa-de-araguao-en-delta-amacuro-denunciaron-aislamiento-y-falta-de-presencia-gubernamental/",
-        "fecha": "2026-09-02T12:40:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T12:40:02+00:00",
-    "fecha_evento_temprana": "2026-09-02T12:40:02+00:00",
-    "fecha_deteccion": "2026-09-02T20:05:47.263738+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Monagas::2026-09-02",
-    "titulo": "Inundación en Monagas",
-    "texto": "📌 Inundación en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 02/09/2026, 8:40 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/habitantes-de-santa-rosa-de-araguao-en-delta-amacuro-denunciaron-aislamiento-y-falta-de-presencia-gubernamental/"
-  },
-  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Sucre",
     "municipio": null,
@@ -130,119 +76,6 @@
     "clave_dedup": "infraestructura_agua::Sucre::2026-09-02",
     "titulo": "Falla de agua en Sucre",
     "texto": "📌 Falla de agua en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 02/09/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "La Guaira",
-    "municipio": "Vargas",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/impacto-el-nino-en-venezuela/",
-        "fecha": "2026-09-02T12:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T12:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-02T12:00:00+00:00",
-    "fecha_deteccion": "2026-09-02T20:05:54.115536+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::La Guaira::2026-09-02",
-    "titulo": "Sequía en Municipio Vargas, La Guaira",
-    "texto": "📌 Sequía en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 02/09/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/impacto-el-nino-en-venezuela/"
-  },
-  {
-    "tipo": "emergencia_metro",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/a-200-bolivares-el-pasaje-urbano-a-partir-del-1-de-septiembre-de-2026/",
-        "fecha": "2026-09-02T06:00:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T06:00:09+00:00",
-    "fecha_evento_temprana": "2026-09-02T06:00:09+00:00",
-    "fecha_deteccion": "2026-09-02T17:24:29.941000+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-02",
-    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital",
-    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 02/09/2026, 2:00 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 1:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/a-200-bolivares-el-pasaje-urbano-a-partir-del-1-de-septiembre-de-2026/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Carabobo",
-    "municipio": "Valencia",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/",
-        "fecha": "2026-09-02T04:20:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T04:20:04+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "fecha_deteccion": "2026-09-02T13:38:27.340148+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [
-      "Distrito Capital",
-      "Lara",
-      "Tachira",
-      "Trujillo",
-      "La Guaira",
-      "Yaracuy"
-    ],
-    "clave_dedup": "sismo::Carabobo::2026-09-02",
-    "titulo": "Sismo en Municipio Valencia, Carabobo",
-    "texto": "📌 Sismo en Municipio Valencia, Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valencia, Carabobo\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:38 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/",
-        "fecha": "2026-09-02T04:20:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T04:20:04+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "fecha_deteccion": "2026-09-02T13:38:30.884323+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Distrito Capital::2026-09-02",
-    "titulo": "Deslizamiento/Derrumbe en Distrito Capital",
-    "texto": "📌 Deslizamiento/Derrumbe en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:38 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
   },
   {
     "tipo": "inundacion",
@@ -323,58 +156,6 @@
     "texto": "📌 Inundación en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:39 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
   },
   {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Miranda",
-    "municipio": "Baruta",
-    "parroquia": "El Cafetal",
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/caraquenos-reportan-falla-del-servicio-electrico-este-1sep-estas-son-las-zonas-sin-luz/",
-        "fecha": "2026-09-01T22:03:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-01T22:03:12+00:00",
-    "fecha_evento_temprana": "2026-09-01T22:03:12+00:00",
-    "fecha_deteccion": "2026-09-02T09:03:11.674491+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Miranda::2026-09-01",
-    "titulo": "Falla de agua en Parroquia El Cafetal, Municipio Baruta, Miranda",
-    "texto": "📌 Falla de agua en Parroquia El Cafetal, Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Cafetal, Municipio Baruta, Miranda\n🕒 Hecho reportado: 01/09/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/caraquenos-reportan-falla-del-servicio-electrico-este-1sep-estas-son-las-zonas-sin-luz/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/",
-        "fecha": "2026-09-01T22:01:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-01T22:01:55+00:00",
-    "fecha_evento_temprana": "2026-09-01T22:01:55+00:00",
-    "fecha_deteccion": "2026-09-02T09:03:15.129901+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Lara::2026-09-01",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/09/2026, 6:01 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -425,32 +206,6 @@
     "clave_dedup": "orden_publico::Distrito Capital::2026-09-01",
     "titulo": "Orden público en Distrito Capital",
     "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Nueva Esparta",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporte Confidencial (Nueva Esparta)",
-        "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/",
-        "fecha": "2026-09-01T14:50:07+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-01T14:50:07+00:00",
-    "fecha_evento_temprana": "2026-09-01T14:50:07+00:00",
-    "fecha_deteccion": "2026-09-01T22:04:05.734512+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::Nueva Esparta::2026-09-01",
-    "titulo": "Sequía en Nueva Esparta",
-    "texto": "📌 Sequía en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 01/09/2026, 10:50 a.m.\n🔎 Detectado por el sistema: 01/09/2026, 6:04 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
   },
   {
     "tipo": "infraestructura_agua",
@@ -2031,38 +1786,6 @@
     "clave_dedup": "inundacion::Miranda::2026-08-22",
     "titulo": "Inundación en Parroquia Los Teques, Miranda",
     "texto": "📌 Inundación en Parroquia Los Teques, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Los Teques, Miranda\n🕒 Hecho reportado: 24/08/2026, 9:49 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 10:03 a.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/hallan-camioneta-arrastrada-por-el-rio-aragua-siguen-desaparecidos-sus-2-ocupantes/\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/08/24/carrizal/\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas/?utm_source=rss&utm_medium=rss&utm_campaign=tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/reportajes-y-especiales/las-tres-cruces-del-padre-jhonny-arias/",
-        "fecha": "2026-08-24T10:05:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T10:05:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T10:05:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:09:11.882297+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.2,
-    "tambien_mencionado_en": [
-      "Distrito Capital",
-      "Tachira",
-      "La Guaira"
-    ],
-    "clave_dedup": "sismo::Carabobo::2026-08-24::mag7.2",
-    "titulo": "Sismo en Carabobo",
-    "texto": "📌 Sismo en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 24/08/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:09 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/reportajes-y-especiales/las-tres-cruces-del-padre-jhonny-arias/"
   },
   {
     "tipo": "orden_publico",
