@@ -1,5 +1,109 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/el-tiempo-en-la-calle-ramas-entre-el-tendido-electrico-amenazan-con-causar-danos-en-sectores-de-el-tigre/",
+        "fecha": "2026-09-02T16:46:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T16:46:20+00:00",
+    "fecha_evento_temprana": "2026-09-02T16:46:20+00:00",
+    "fecha_deteccion": "2026-09-02T20:05:39.622199+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-02",
+    "titulo": "Falla eléctrica en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Falla eléctrica en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 02/09/2026, 12:46 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/el-tiempo-en-la-calle-ramas-entre-el-tendido-electrico-amenazan-con-causar-danos-en-sectores-de-el-tigre/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/02/habitantes-de-santa-rosa-de-araguao-en-delta-amacuro-denunciaron-aislamiento-y-falta-de-presencia-gubernamental/",
+        "fecha": "2026-09-02T12:40:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T12:40:02+00:00",
+    "fecha_evento_temprana": "2026-09-02T12:40:02+00:00",
+    "fecha_deteccion": "2026-09-02T20:05:47.263738+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Monagas::2026-09-02",
+    "titulo": "Inundación en Monagas",
+    "texto": "📌 Inundación en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 02/09/2026, 8:40 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/habitantes-de-santa-rosa-de-araguao-en-delta-amacuro-denunciaron-aislamiento-y-falta-de-presencia-gubernamental/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/",
+        "fecha": "2026-09-02T09:20:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T09:20:06+00:00",
+    "fecha_evento_temprana": "2026-09-02T09:20:06+00:00",
+    "fecha_deteccion": "2026-09-02T20:05:50.666638+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Sucre::2026-09-02",
+    "titulo": "Falla de agua en Sucre",
+    "texto": "📌 Falla de agua en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 02/09/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
+  },
+  {
+    "tipo": "sequia",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/impacto-el-nino-en-venezuela/",
+        "fecha": "2026-09-02T12:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-02T12:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-02T12:00:00+00:00",
+    "fecha_deteccion": "2026-09-02T20:05:54.115536+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "sequia::La Guaira::2026-09-02",
+    "titulo": "Sequía en Municipio Vargas, La Guaira",
+    "texto": "📌 Sequía en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 02/09/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/impacto-el-nino-en-venezuela/"
+  },
+  {
     "tipo": "emergencia_metro",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -4169,31 +4273,5 @@
     "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-19",
     "titulo": "Falla eléctrica en Bolivar",
     "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 19/08/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 5:05 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/corpoelec-busca-restituir-electricidad-tras-caidas-de-torres-en-monagas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/",
-        "fecha": "2026-08-19T17:30:37+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-19T17:30:37+00:00",
-    "fecha_evento_temprana": "2026-08-19T17:30:37+00:00",
-    "fecha_deteccion": "2026-08-19T20:04:34.055961+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Portuguesa::2026-08-19",
-    "titulo": "Inundación en Portuguesa",
-    "texto": "📌 Inundación en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 19/08/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 19/08/2026, 4:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/productores-de-arroz-de-guarico-y-portuguesa-estiman-perdidas-de-60-millones/"
   }
 ]
