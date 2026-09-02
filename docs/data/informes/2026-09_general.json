@@ -3,19 +3,35 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-01T12:08:38.426954+00:00",
-  "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-02T00:12:55.544625+00:00",
+  "actualizado_hasta": "2026-09-01T22:04:12.453228+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 278,
-    "actual": 1
+    "actual": 5
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registró un único evento de emergencia, una notable reducción frente a los 278 eventos reportados en agosto de 2026 (278 evento(s) registrados entonces vs. 1 en este período). Esta disminución refleja una tendencia temporal que será analizada por los equipos de la Cruz Roja Venezolana para ajustar sus planes de respuesta.\n\nEl único incidente registrado fue un incendio de gran magnitud que consumió los últimos pisos de una fábrica de cosméticos en la zona industrial de Palo Verde, al este de la capital, el lunes 31 de agosto (El Siglo). La magnitud del fuego obligó a activar los protocolos de emergencia, movilizando aproximadamente 120 efectivos de los Bomberos de Caracas, Protección Civil y cuerpos policiales (El Siglo). El director nacional de Bomberos, Juan Carlos González, confirmó la presencia de estos recursos en el sitio (El Siglo).\n\nA pesar de la gravedad del incendio, no se reportaron víctimas fatales ni heridos graves, lo que permite a la Cruz Roja focalizar sus recursos en la prevención y en la preparación para futuros eventos. La experiencia adquirida en la gestión de este incendio servirá para reforzar los planes de contingencia en la región de Aragua y en todo el país.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron sólo cinco eventos de emergencia, una caída drástica respecto a los 278 registrados en agosto del mismo año (comparación con el período anterior). Esta reducción se refleja en la diversidad de incidentes, que van desde problemas de suministro eléctrico hasta desastres naturales y decisiones administrativas.\n\nEn el estado Bolívar, los ciudadanos continúan sufriendo frecuentes cortes eléctricos y la explosión de transformadores, lo que afecta gravemente la calidad de vida, especialmente en las zonas mineras donde el sector comercial se ve golpeado (El Impulso).\n\nEl 31 de agosto, un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos en la zona industrial de Palo Verde, Aragua. La emergencia movilizó aproximadamente 120 efectivos de bomberos, Protección Civil y cuerpos policiales (El Siglo).\n\nEn Táchira, intensas lluvias provocaron deslizamientos de tierra que impactaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas).\n\nLa Gobernación de Nueva Esparta decretó el 8 de septiembre como Día de Júbilo No Laborable en todo el territorio insular, ordenando el cese de actividades en instituciones públicas, planteles educativos y el sector comercial (Reporte Confidencial).\n\nParalelamente, el municipio Tubores, en la isla de Margarita, lleva más de seis meses sin suministro de agua potable, una situación catalogada como «aislamiento hídrico» según datos de la plataforma Pulso Nueva Esparta y presentado por el diputado Omar Veracierto (Reporte Confidencial).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/01/bolivar-entre-apagones-y-explosion-de-transformadores-asi-viven-los-ciudadanos-la-crisis-electrica-1sep/"
+    },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
     }
   ]
 }

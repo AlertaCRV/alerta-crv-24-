@@ -4,7 +4,7 @@
     "tipo": "sequia",
     "tipo_label": "Sequía",
     "cerrado": false,
-    "generado": "2026-09-01T22:05:00.059304+00:00",
+    "generado": "2026-09-02T00:13:51.121398+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-09-01T22:04:55.397430+00:00",
+    "generado": "2026-09-02T00:13:46.270979+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-09-01T22:04:30.246785+00:00",
+    "generado": "2026-09-02T00:13:20.694894+00:00",
     "total_eventos": 1
   },
   {
@@ -28,7 +28,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-09-01T12:08:43.013559+00:00",
+    "generado": "2026-09-02T00:13:08.370976+00:00",
     "total_eventos": 1
   },
   {
@@ -36,15 +36,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-09-01T12:08:38.426954+00:00",
-    "total_eventos": 1
+    "generado": "2026-09-02T00:12:55.544625+00:00",
+    "total_eventos": 5
   },
   {
     "periodo": "2026-09",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-09-01T19:39:17.519477+00:00",
+    "generado": "2026-09-02T00:12:29.318758+00:00",
     "total_eventos": 1
   },
   {
