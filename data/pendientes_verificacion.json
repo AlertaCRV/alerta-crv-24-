@@ -1692,24 +1692,24 @@
     "ultima_vez": "2026-09-01T22:04:15.822754+00:00"
   },
   "infraestructura_agua::Miranda::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T00:11:32.848245+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:35:18.504361+00:00"
   },
   "orden_publico::Lara::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T00:11:36.354518+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:35:21.856141+00:00"
   },
   "orden_publico::Distrito Capital::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T00:11:39.775303+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:36:34.963928+00:00"
   },
   "deslizamiento::Tachira::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T00:11:43.259049+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:35:25.217706+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T00:11:46.775804+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:35:28.761266+00:00"
   },
   "sequia::Nueva Esparta::2026-09-02": {
     "intentos": 1,
@@ -1724,7 +1724,31 @@
     "ultima_vez": "2026-09-02T00:12:04.916222+00:00"
   },
   "infraestructura_electrica::Zulia::2026-09-02": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T04:36:31.604398+00:00"
+  },
+  "sismo::Carabobo::2026-09-02": {
     "intentos": 1,
-    "ultima_vez": "2026-09-02T00:12:16.523548+00:00"
+    "ultima_vez": "2026-09-02T04:35:32.143118+00:00"
+  },
+  "deslizamiento::Distrito Capital::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T04:35:35.645524+00:00"
+  },
+  "inundacion::Lara::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T04:35:39.129913+00:00"
+  },
+  "inundacion::Tachira::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T04:35:52.377265+00:00"
+  },
+  "sismo::La Guaira::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T04:35:55.625949+00:00"
+  },
+  "inundacion::Yaracuy::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T04:36:07.057238+00:00"
   }
 }
