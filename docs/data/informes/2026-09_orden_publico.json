@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-09",
+  "tipo": "orden_publico",
+  "tipo_label": "Orden público",
+  "cerrado": false,
+  "generado": "2026-09-02T09:04:26.587561+00:00",
+  "actualizado_hasta": "2026-09-02T09:04:10.895632+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 52,
+    "actual": 2
+  },
+  "narrativa": "En septiembre de 2026 se registraron únicamente dos eventos de orden público, una caída drástica respecto a los cincuenta y dos registrados en el mes anterior (2026-08) (52 evento(s) registrados entonces vs. 2 en este período). \n\nEl 1 de septiembre, la ONG Movimiento Vinotinto y diversas víctimas de presuntas violaciones a los derechos humanos solicitaron al fiscal general Larry Devoe Márquez la apertura inmediata de una investigación contra el militar deportado Rafael Quero Silva, quien habría dirigido el Destacamento 47, y contra los responsables de las fiscalías 21 y 9 del estado Lara, donde se acumulan más de una decena de denuncias por torturas y amedrentamiento a la sociedad civil (El Pitazo). \n\nEn la misma semana, familiares de presos políticos organizaron una marcha en Caracas, reclamando la liberación de sus seres queridos y advirtiendo que la cuestión no debe quedar relegada a negociaciones económicas o del sector petrolero (La Prensa de Lara).",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+    }
+  ]
+}
