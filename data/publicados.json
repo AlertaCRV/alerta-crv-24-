@@ -1,11 +1,4 @@
 {
-  "orden_publico::Distrito Capital::2026-08-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-08-30T18:47:38.439194+00:00",
-    "fecha_evento_temprana": "2026-08-30T16:57:03+00:00",
-    "municipio": null
-  },
   "tormenta_electrica::Distrito Capital::2026-08-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -152,5 +145,33 @@
     "fecha_deteccion": "2026-09-02T17:24:29.941000+00:00",
     "fecha_evento_temprana": "2026-09-02T06:00:09+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T20:05:39.622199+00:00",
+    "fecha_evento_temprana": "2026-09-02T16:46:20+00:00",
+    "municipio": "Simón Rodríguez"
+  },
+  "inundacion::Monagas::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T20:05:47.263738+00:00",
+    "fecha_evento_temprana": "2026-09-02T12:40:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Sucre::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T20:05:50.666638+00:00",
+    "fecha_evento_temprana": "2026-09-02T09:20:06+00:00",
+    "municipio": null
+  },
+  "sequia::La Guaira::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-02T20:05:54.115536+00:00",
+    "fecha_evento_temprana": "2026-09-02T12:00:00+00:00",
+    "municipio": "Vargas"
   }
 }

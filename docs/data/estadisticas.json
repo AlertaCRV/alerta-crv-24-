@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-02T17:24:41.082072+00:00",
+  "actualizado": "2026-09-02T20:06:30.778329+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-02T06:00:09+00:00"
+    "hasta": "2026-09-02T16:46:20+00:00"
   },
-  "total_eventos": 321,
+  "total_eventos": 325,
   "por_tipo": {
     "tormenta_electrica": 8,
-    "inundacion": 62,
-    "infraestructura_electrica": 71,
+    "inundacion": 63,
+    "infraestructura_electrica": 72,
     "deslizamiento": 27,
     "colapso_estructural": 3,
     "orden_publico": 56,
@@ -18,9 +18,9 @@
     "vialidad": 10,
     "sismo": 10,
     "escasez_combustible": 1,
-    "sequia": 7,
+    "sequia": 8,
     "explosion": 1,
-    "infraestructura_agua": 14,
+    "infraestructura_agua": 15,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
@@ -59,7 +59,7 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 16,
+      "total": 17,
       "confirmados": 0
     },
     {
@@ -78,18 +78,18 @@
       "confirmados": 2
     },
     {
+      "estado": "Monagas",
+      "total": 13,
+      "confirmados": 0
+    },
+    {
       "estado": "Trujillo",
       "total": 12,
       "confirmados": 0
     },
     {
-      "estado": "Monagas",
-      "total": 12,
-      "confirmados": 0
-    },
-    {
       "estado": "Sucre",
-      "total": 11,
+      "total": 12,
       "confirmados": 0
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "estado": "La Guaira",
-      "total": 10,
+      "total": 11,
       "confirmados": 0
     },
     {
@@ -212,10 +212,11 @@
     "Sucre": {
       "inundacion": 2,
       "orden_publico": 5,
-      "infraestructura_electrica": 4
+      "infraestructura_electrica": 4,
+      "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -253,7 +254,8 @@
       "vialidad": 1,
       "infraestructura_agua": 2,
       "incendio": 1,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "inundacion": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -323,7 +325,8 @@
       "deslizamiento": 2,
       "inundacion": 3,
       "sismo": 2,
-      "tormenta_electrica": 1
+      "tormenta_electrica": 1,
+      "sequia": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -333,7 +336,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 269,
+    "sin_clasificar": 273,
     "medio": 4,
     "bajo": 6
   },
@@ -345,12 +348,12 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 3
+      "2026-09": 4
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 2
+      "2026-09": 3
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -391,14 +394,14 @@
     },
     "sequia": {
       "2026-08": 6,
-      "2026-09": 1
+      "2026-09": 2
     },
     "explosion": {
       "2026-08": 1
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 2
+      "2026-09": 3
     },
     "accidente_transporte": {
       "2026-08": 1
