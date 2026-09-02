@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "emergencia_metro",
+  "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
+  "cerrado": false,
+  "generado": "2026-09-02T17:24:46.062508+00:00",
+  "actualizado_hasta": "2026-09-02T17:24:29.941000+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 2,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 no se registraron incidentes de emergencia en el Metro, Metrocable o Teleférico dentro del territorio nacional, según los reportes recopilados por la Cruz Roja Venezolana para este período. Esta ausencia de eventos contrasta con el mes anterior, en el que se contabilizaron dos emergencias de este tipo (2 evento(s) registrados entonces vs. 1 en este período). \n\nEn paralelo, el sector transporte urbano de la capital experimentó una modificación tarifaria: a partir del 1 de septiembre de 2026 el pasaje urbano en el Área Metropolitana de Caracas quedó fijado en 200 bolívares, equivalentes a 0,25 dólares según la tasa oficial del Banco Central de Venezuela (Turimiquire). Esta medida, anunciada el 31 de agosto de 2026, forma parte del mecanismo de revisión mensual acordado en mayo entre el régimen y el sector transporte. \n\nLa comparación con el período anterior muestra una disminución en la frecuencia de emergencias reportadas en la categoría de transporte ferroviario urbano, pasando de dos incidentes en agosto a uno en septiembre, lo que indica una reducción temporal de los riesgos asociados a este tipo de infraestructura durante el último mes.",
+  "fuentes": [
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/02/a-200-bolivares-el-pasaje-urbano-a-partir-del-1-de-septiembre-de-2026/"
+    }
+  ]
+}

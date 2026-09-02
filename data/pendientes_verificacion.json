@@ -1711,20 +1711,24 @@
     "intentos": 1,
     "ultima_vez": "2026-09-02T00:12:04.916222+00:00"
   },
-  "emergencia_metro::Distrito Capital::2026-09-02": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-02T13:38:23.815203+00:00"
-  },
   "inundacion::Monagas::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T13:38:16.894366+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T17:24:22.995325+00:00"
   },
   "infraestructura_agua::Sucre::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T13:38:20.386069+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T17:24:26.439969+00:00"
   },
   "sequia::La Guaira::2026-09-02": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-02T17:24:33.410610+00:00"
+  },
+  "sismo::Nueva Esparta::2026-09-02": {
     "intentos": 1,
-    "ultima_vez": "2026-09-02T13:39:05.567334+00:00"
+    "ultima_vez": "2026-09-02T17:24:37.053591+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-02": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-02T17:24:40.545974+00:00"
   }
 }
