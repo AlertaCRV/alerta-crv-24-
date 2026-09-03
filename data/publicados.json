@@ -124,5 +124,19 @@
     "fecha_deteccion": "2026-09-03T20:13:36.085700+00:00",
     "fecha_evento_temprana": "2026-09-03T11:39:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Miranda::2026-09-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T22:38:30.392811+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:16:52+00:00",
+    "municipio": null
+  },
+  "vialidad::Distrito Capital::2026-09-03": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T22:38:37.130174+00:00",
+    "fecha_evento_temprana": "2026-09-03T15:46:35+00:00",
+    "municipio": null
   }
 }

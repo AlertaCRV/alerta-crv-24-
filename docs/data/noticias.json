@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/",
+        "fecha": "2026-09-03T22:16:52+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-03T22:16:52+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:16:52+00:00",
+    "fecha_deteccion": "2026-09-03T22:38:30.392811+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-03",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 03/09/2026, 6:16 p.m.\n🔎 Detectado por el sistema: 03/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/",
+        "fecha": "2026-09-03T15:46:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-03T15:46:35+00:00",
+    "fecha_evento_temprana": "2026-09-03T15:46:35+00:00",
+    "fecha_deteccion": "2026-09-03T22:38:37.130174+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "vialidad::Distrito Capital::2026-09-03",
+    "titulo": "Incidente vial en Distrito Capital",
+    "texto": "📌 Incidente vial en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 03/09/2026, 11:46 a.m.\n🔎 Detectado por el sistema: 03/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Delta Amacuro",
     "municipio": null,
@@ -3972,83 +4024,5 @@
     "clave_dedup": "salud_publica::Zulia::2026-08-20",
     "titulo": "Salud pública en Zulia",
     "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 20/08/2026, 3:42 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:10 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Zulia",
-    "municipio": "Jesús Enrique Lossada",
-    "parroquia": "La Concepción",
-    "severidad": "sin_clasificar",
-    "score": 0.8,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/avanzan-trabajos-de-asfaltado-y-drenaje-en-la-via-curva-de-molina-la-concepcion/",
-        "fecha": "2026-08-20T18:17:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T18:17:10+00:00",
-    "fecha_evento_temprana": "2026-08-20T18:17:10+00:00",
-    "fecha_deteccion": "2026-08-20T22:03:46.978121+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Zulia::2026-08-20",
-    "titulo": "Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia",
-    "texto": "📌 Inundación en Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Concepción, Municipio Jesús Enrique Lossada, Zulia\n🕒 Hecho reportado: 20/08/2026, 2:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 6:03 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/avanzan-trabajos-de-asfaltado-y-drenaje-en-la-via-curva-de-molina-la-concepcion/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Yaracuy",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Yaracuy al Dia",
-        "link": "https://yaracuyaldia.com/yaracuy/politica/monica-martinez-crisis-electrica-es-por-falta-de-inversion-y-corrupcion/?utm_source=rss&utm_medium=rss&utm_campaign=monica-martinez-crisis-electrica-es-por-falta-de-inversion-y-corrupcion",
-        "fecha": "2026-08-20T20:17:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:17:42+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:17:42+00:00",
-    "fecha_deteccion": "2026-08-20T21:05:10.184523+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Yaracuy::2026-08-20",
-    "titulo": "Falla eléctrica en Yaracuy",
-    "texto": "📌 Falla eléctrica en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 20/08/2026, 4:17 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 5:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/politica/monica-martinez-crisis-electrica-es-por-falta-de-inversion-y-corrupcion/?utm_source=rss&utm_medium=rss&utm_campaign=monica-martinez-crisis-electrica-es-por-falta-de-inversion-y-corrupcion"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/08/20/productores-de-maiz-en-alerta-ante-bajos-precios-e-insumos-caros/",
-        "fecha": "2026-08-20T17:00:47+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T17:00:47+00:00",
-    "fecha_evento_temprana": "2026-08-20T17:00:47+00:00",
-    "fecha_deteccion": "2026-08-20T21:07:59.409289+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::Guarico::2026-08-20",
-    "titulo": "Sequía en Guarico",
-    "texto": "📌 Sequía en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 20/08/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 5:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/08/20/productores-de-maiz-en-alerta-ante-bajos-precios-e-insumos-caros/"
   }
 ]
