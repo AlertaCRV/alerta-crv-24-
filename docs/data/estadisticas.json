@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-03T17:45:49.707198+00:00",
+  "actualizado": "2026-09-03T20:13:50.649071+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-03T08:40:02+00:00"
+    "hasta": "2026-09-03T18:40:02+00:00"
   },
-  "total_eventos": 322,
+  "total_eventos": 323,
   "por_tipo": {
     "tormenta_electrica": 8,
     "inundacion": 64,
@@ -12,7 +12,7 @@
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 55,
-    "salud_publica": 10,
+    "salud_publica": 11,
     "crisis_migratoria": 5,
     "incendio": 25,
     "vialidad": 11,
@@ -134,7 +134,7 @@
     },
     {
       "estado": "Delta Amacuro",
-      "total": 2,
+      "total": 3,
       "confirmados": 0
     },
     {
@@ -327,13 +327,14 @@
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "salud_publica": 1
     }
   },
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 269,
+    "sin_clasificar": 270,
     "medio": 4,
     "bajo": 7
   },
@@ -368,7 +369,8 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 9
+      "2026-08": 9,
+      "2026-09": 1
     },
     "crisis_migratoria": {
       "2026-07": 4,

@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-09",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-09-03T20:13:55.828630+00:00",
+  "actualizado_hasta": "2026-09-03T20:13:36.085700+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 9,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026, el número de eventos de salud pública registrados disminuyó notablemente respecto al mes anterior, pasando de 9 eventos en agosto a solo 1 en este período (comparación proporcionada). \n\nEl único evento registrado corresponde a un caso sospechoso de difteria. El Ministerio de Salud confirmó la sospecha en el boletín epidemiológico de la semana 32 (09‑15 de agosto) (La Prensa de Lara). \n\nSegún el Ministerio del Poder Popular para la Salud, este sería el segundo caso bajo sospecha de difteria reportado en 2026 (Turimiquire). El doctor Huníades Urbina señaló que la falta de cobertura inmunológica completa dificulta el control de enfermedades que habían desaparecido del panorama venezolano tras una década sin casos confirmados entre 2006 y 2016 (Turimiquire). \n\nLa reaparición de la difteria, aunque aún no confirmada, recuerda que la enfermedad estuvo ausente en el país durante más de diez años, desde 2006 hasta 2016, según los informes del Ministerio de Salud (La Prensa de Lara). \n\nLas autoridades continúan vigilando la situación y mantienen la alerta epidemiológica mientras se realizan los estudios necesarios para confirmar o descartar la infección (La Prensa de Lara; Turimiquire).",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/ministerio-salud-confirma-caso-difteria/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/03/ministerio-del-poder-popular-para-la-salud-estudia-un-caso-sospechoso-de-difteria/"
+    }
+  ]
+}

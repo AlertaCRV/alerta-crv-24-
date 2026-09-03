@@ -1767,20 +1767,32 @@
     "intentos": 2,
     "ultima_vez": "2026-09-03T05:09:25.321781+00:00"
   },
-  "salud_publica::Delta Amacuro::2026-09-03": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-03T17:45:49.149014+00:00"
-  },
   "vialidad::Bolivar::2026-09-03": {
     "intentos": 1,
     "ultima_vez": "2026-09-03T13:58:13.481628+00:00"
   },
   "orden_publico::Miranda::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T17:45:38.335108+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T20:13:28.990032+00:00"
   },
   "vialidad::Distrito Capital::2026-09-03": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T20:13:32.546454+00:00"
+  },
+  "inundacion::Sucre::2026-09-03": {
     "intentos": 1,
-    "ultima_vez": "2026-09-03T17:45:41.901552+00:00"
+    "ultima_vez": "2026-09-03T20:13:39.485442+00:00"
+  },
+  "vialidad::Lara::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T20:13:43.048183+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T20:13:46.559295+00:00"
+  },
+  "inundacion::Lara::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T20:13:50.130112+00:00"
   }
 }
