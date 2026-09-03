@@ -1748,8 +1748,8 @@
     "ultima_vez": "2026-09-03T05:08:43.605263+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T00:43:07.727172+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T22:38:40.716658+00:00"
   },
   "incendio::Aragua::2026-09-03": {
     "intentos": 1,
@@ -1771,28 +1771,28 @@
     "intentos": 1,
     "ultima_vez": "2026-09-03T13:58:13.481628+00:00"
   },
-  "orden_publico::Miranda::2026-09-03": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-03T20:13:28.990032+00:00"
-  },
-  "vialidad::Distrito Capital::2026-09-03": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-03T20:13:32.546454+00:00"
-  },
   "inundacion::Sucre::2026-09-03": {
     "intentos": 1,
     "ultima_vez": "2026-09-03T20:13:39.485442+00:00"
   },
   "vialidad::Lara::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T20:13:43.048183+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T22:38:51.946182+00:00"
   },
   "infraestructura_agua::Nueva Esparta::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T20:13:46.559295+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T22:38:55.426912+00:00"
   },
   "inundacion::Lara::2026-09-03": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T22:38:33.746202+00:00"
+  },
+  "salud_publica::Delta Amacuro::2026-09-03": {
     "intentos": 1,
-    "ultima_vez": "2026-09-03T20:13:50.130112+00:00"
+    "ultima_vez": "2026-09-03T22:38:45.044060+00:00"
+  },
+  "tormenta_electrica::Lara::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T22:38:48.435888+00:00"
   }
 }
