@@ -3,19 +3,23 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-02T00:13:20.694894+00:00",
-  "actualizado_hasta": "2026-09-01T22:04:09.067397+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-03T00:44:55.091304+00:00",
+  "actualizado_hasta": "2026-09-02T20:05:50.666638+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 12,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registró únicamente un evento de falla de agua, en contraste con los doce eventos reportados en agosto de 2026 (Comparación con el período anterior). Esta reducción significativa se refleja en los datos consolidados por la Cruz Roja Venezolana para la categoría de fallas de agua.\n\nEl único caso documentado corresponde al municipio de Tubores, en la isla de Margarita, donde la población ha permanecido sin suministro de agua potable durante más de seis meses (Reporte Confidencial). El diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance que destaca la grave situación de \"aislamiento hídrico\" en la zona, basándose en la información recopilada por la plataforma ciudadana Pulso Nueva Esparta (Reporte Confidencial).\n\nLas autoridades locales y organizaciones de ayuda, incluida la Cruz Roja, continúan monitoreando la situación y coordinando acciones de emergencia para mitigar el impacto en los residentes de Tubores, mientras se buscan soluciones a largo plazo para restablecer el servicio de agua en la región (Reporte Confidencial).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de falla de agua, una notable reducción frente a los doce eventos del mes anterior (2026‑08) (Comparación con el período anterior). Este descenso permite a la Cruz Roja Venezolana focalizar sus recursos en los incidentes más críticos.\n\nEl primer caso relevante se produjo en el municipio Tubores, estado Nueva Esparta, donde los habitantes llevan más de seis meses sin suministro de agua, lo que ha generado un severo «aislamiento hídrico» (Reporte Confidencial). El diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance sobre la crisis en la red de agua potable basándose en datos de seguimiento ciudadano procesados por la plataforma Pulso Nueva Esparta (Reporte Confidencial). Según el informe, la situación más crítica se concentra en Tubores, donde la falta de agua afecta a toda la población del municipio (Reporte Confidencial).\n\nEl segundo evento se registró en la ciudad de Cumaná, estado Sucre, donde el alcalde Pedro Figueroa anunció que el estado quedará excluido de la programación de cortes eléctricos implementada en otras entidades del país, medida adoptada en medio de la crisis hídrica que afecta a varios municipios de la región (Turimiquire). El alcalde también informó que Cumaná se encuentra sin agua, reforzando la gravedad de la situación (Turimiquire). Estas declaraciones subrayan la interrelación entre la falta de suministro eléctrico y la escasez de agua en la zona (Turimiquire).\n\nA pesar de la reducción en la cantidad de incidentes, la Cruz Roja continúa monitoreando de cerca ambas localidades, manteniendo canales de comunicación con autoridades locales y plataformas de seguimiento ciudadano para garantizar una respuesta oportuna ante cualquier deterioro adicional del suministro hídrico.",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
     }
   ]
 }

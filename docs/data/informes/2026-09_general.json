@@ -3,23 +3,35 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-02T00:12:55.544625+00:00",
-  "actualizado_hasta": "2026-09-01T22:04:12.453228+00:00",
-  "total_eventos": 5,
+  "generado": "2026-09-03T00:44:45.323130+00:00",
+  "actualizado_hasta": "2026-09-02T22:41:10.001833+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 278,
-    "actual": 5
+    "anterior": 277,
+    "actual": 12
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron sólo cinco eventos de emergencia, una caída drástica respecto a los 278 registrados en agosto del mismo año (comparación con el período anterior). Esta reducción se refleja en la diversidad de incidentes, que van desde problemas de suministro eléctrico hasta desastres naturales y decisiones administrativas.\n\nEn el estado Bolívar, los ciudadanos continúan sufriendo frecuentes cortes eléctricos y la explosión de transformadores, lo que afecta gravemente la calidad de vida, especialmente en las zonas mineras donde el sector comercial se ve golpeado (El Impulso).\n\nEl 31 de agosto, un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos en la zona industrial de Palo Verde, Aragua. La emergencia movilizó aproximadamente 120 efectivos de bomberos, Protección Civil y cuerpos policiales (El Siglo).\n\nEn Táchira, intensas lluvias provocaron deslizamientos de tierra que impactaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas).\n\nLa Gobernación de Nueva Esparta decretó el 8 de septiembre como Día de Júbilo No Laborable en todo el territorio insular, ordenando el cese de actividades en instituciones públicas, planteles educativos y el sector comercial (Reporte Confidencial).\n\nParalelamente, el municipio Tubores, en la isla de Margarita, lleva más de seis meses sin suministro de agua potable, una situación catalogada como «aislamiento hídrico» según datos de la plataforma Pulso Nueva Esparta y presentado por el diputado Omar Veracierto (Reporte Confidencial).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron solo 12 eventos de emergencia, una notable reducción frente a los 277 eventos del período anterior (agosto de 2026) (Comparación con el período anterior). Esta disminución se observa pese a la persistencia de problemas estructurales en varios estados del país.\n\nEn el sector eléctrico, el estado Bolívar continuó sufriendo frecuentes cortes y una explosión de transformadores que afectó gravemente la vida cotidiana de sus habitantes, especialmente en zonas mineras (El Impulso). En Lara, los apagones se dispararon un 637 % respecto al año pasado, con 722 cortes y 2.874 horas sin suministro eléctrico en agosto de 2026 (El Impulso). Asimismo, el apagón generalizado del 29 de agosto en la región occidental del país impactó la producción lechera del Zulia, provocando pérdidas al interrumpir la cadena de frío de los productores de leche (Turimiquire).\n\nEl 31 de agosto, un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital de Aragua, movilizando aproximadamente 120 efectivos de bomberos, protección civil y policías (El Siglo).\n\nLas fuertes lluvias asociadas a la Onda Tropical 43 generaron inundaciones en seis estados: Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy, dejando vías inundadas, comunidades agrícolas incomunicadas y personas en refugios expuestas (Turimiquire). En El Tigre, municipio Simón Rodríguez de Anzoátegui, ramas caídas sobre el tendido eléctrico amenazaron con causar daños adicionales (El Tiempo). En Táchira, las lluvias provocaron deslizamientos de tierra que dañaron infraestructura vial y viviendas de diversa magnitud (La Prensa de Monagas).\n\nEn el estado Nueva Esparta, el municipio Tubores lleva más de seis meses sin suministro de agua potable, una situación catalogada como «aislamiento hídrico» según el informe presentado por el diputado Omar Veracierto (Reporte Confidencial). Por su parte, el estado Sucre, a través de la ciudad de Cumaná, quedó excluido de la programación de cortes eléctricos, medida anunciada por el alcalde Pedro Figueroo en medio de la crisis hídrica que afecta a la región (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/01/bolivar-entre-apagones-y-explosion-de-transformadores-asi-viven-los-ciudadanos-la-crisis-electrica-1sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/el-tiempo-en-la-calle-ramas-entre-el-tendido-electrico-amenazan-con-causar-danos-en-sectores-de-el-tigre/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -27,11 +39,19 @@
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
+      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
     },
     {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
     }
   ]
 }

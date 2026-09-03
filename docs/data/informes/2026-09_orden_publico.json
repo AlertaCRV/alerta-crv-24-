@@ -3,20 +3,16 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-02T09:04:26.587561+00:00",
+  "generado": "2026-09-03T00:45:38.122454+00:00",
   "actualizado_hasta": "2026-09-02T09:04:10.895632+00:00",
-  "total_eventos": 2,
+  "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 2
+    "actual": 1
   },
-  "narrativa": "En septiembre de 2026 se registraron únicamente dos eventos de orden público, una caída drástica respecto a los cincuenta y dos registrados en el mes anterior (2026-08) (52 evento(s) registrados entonces vs. 2 en este período). \n\nEl 1 de septiembre, la ONG Movimiento Vinotinto y diversas víctimas de presuntas violaciones a los derechos humanos solicitaron al fiscal general Larry Devoe Márquez la apertura inmediata de una investigación contra el militar deportado Rafael Quero Silva, quien habría dirigido el Destacamento 47, y contra los responsables de las fiscalías 21 y 9 del estado Lara, donde se acumulan más de una decena de denuncias por torturas y amedrentamiento a la sociedad civil (El Pitazo). \n\nEn la misma semana, familiares de presos políticos organizaron una marcha en Caracas, reclamando la liberación de sus seres queridos y advirtiendo que la cuestión no debe quedar relegada a negociaciones económicas o del sector petrolero (La Prensa de Lara).",
+  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de orden público, una notable disminución frente a los 52 eventos registrados en agosto de 2026 (52 evento(s) registrados entonces vs. 1 en este período). Esta reducción se refleja en la escasa actividad de protestas y manifestaciones durante el período analizado.\n\nEl único hecho relevante fue una movilización de familiares de presos políticos en la capital, Caracas, que tuvo lugar este martes. Los manifestantes marcharon exigiendo la liberación de sus seres queridos y subrayaron que la cuestión de la libertad de los presos políticos no debe quedar relegada ante negociaciones económicas o del sector petrolero (La Prensa de Lara).\n\nDurante la jornada, los participantes reiteraron que la prioridad debe ser la restitución de los derechos de los detenidos por razones políticas, y solicitaron que las autoridades no pospongan este tema en función de intereses económicos. No se reportaron incidentes de violencia ni enfrentamientos con las fuerzas de seguridad, y la protesta transcurrió de manera pacífica (La Prensa de Lara).",
   "fuentes": [
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/ong-y-victimas-exigen-al-fiscal-larry-devoe-abrir-investigacion-contra-militar-deportado-rafael-quero-silva/"
-    },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
