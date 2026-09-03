@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "vialidad",
+  "tipo_label": "Incidente vial",
+  "cerrado": false,
+  "generado": "2026-09-03T09:46:49.415398+00:00",
+  "actualizado_hasta": "2026-09-03T09:46:38.039427+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 10,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un único incidente vial en la categoría analizada, lo que representa una notable disminución respecto al mes anterior, en el que se contabilizaron diez eventos (Comparación con el período anterior (2026-08): 10 evento(s) registrados entonces vs. 1 en este período).\\\n\\\nEl único hecho registrado ocurrió el miércoles por la tarde en la Avenida 4 Bolívar, frente al Banco de Venezuela, en la ciudad de Mérida (Reporteros de Merida). Un conductor estacionó su vehículo sobre la acera, bloqueando parcialmente el carril de circulación durante aproximadamente treinta minutos, lo que provocó una fuerte retención vehicular (Reporteros de Merida).\\\n\\\nLos ciudadanos presentes denunciaron la situación, señalando la ausencia de fiscales de tránsito o cuerpos de seguridad que pudieran intervenir rápidamente (Reporteros de Merida). La obstrucción generó malestar generalizado entre los conductores y peatones, quienes experimentaron demoras significativas en sus desplazamientos (Reporteros de Merida).\\\n\\\nEste episodio aislado subraya la importancia de la vigilancia y la pronta respuesta de las autoridades de tránsito para evitar la escalada de incidentes menores en problemas mayores de movilidad urbana, especialmente en vías de alta concurrencia como la Avenida 4 Bolívar en Mérida (Reporteros de Merida).",
+  "fuentes": [
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/conductor-infractor-bloquea-el-transito.html"
+    }
+  ]
+}

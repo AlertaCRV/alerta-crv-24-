@@ -82,5 +82,33 @@
     "fecha_deteccion": "2026-09-02T22:41:10.001833+00:00",
     "fecha_evento_temprana": "2026-09-02T14:30:00+00:00",
     "municipio": null
+  },
+  "ataque_armado::Barinas::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T09:46:24.048156+00:00",
+    "fecha_evento_temprana": "2026-09-02T23:05:58+00:00",
+    "municipio": "Rojas"
+  },
+  "ataque_armado::Zulia::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T09:46:27.290021+00:00",
+    "fecha_evento_temprana": "2026-09-02T23:05:58+00:00",
+    "municipio": null
+  },
+  "inundacion::Portuguesa::2026-09-02": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T09:46:34.590754+00:00",
+    "fecha_evento_temprana": "2026-09-02T22:50:24+00:00",
+    "municipio": "Guanare"
+  },
+  "vialidad::Bolivar::2026-09-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-03T09:46:38.039427+00:00",
+    "fecha_evento_temprana": "2026-09-03T02:50:00+00:00",
+    "municipio": null
   }
 }

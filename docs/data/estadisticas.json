@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-02T23:36:18.798517+00:00",
+  "actualizado": "2026-09-03T09:46:39.957162+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-02T16:46:20+00:00"
+    "hasta": "2026-09-03T02:50:00+00:00"
   },
-  "total_eventos": 317,
+  "total_eventos": 321,
   "por_tipo": {
     "tormenta_electrica": 8,
-    "inundacion": 62,
+    "inundacion": 63,
     "infraestructura_electrica": 73,
     "deslizamiento": 26,
     "colapso_estructural": 3,
@@ -15,7 +15,7 @@
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
-    "vialidad": 10,
+    "vialidad": 11,
     "sismo": 8,
     "escasez_combustible": 1,
     "sequia": 6,
@@ -24,7 +24,7 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
-    "ataque_armado": 5
+    "ataque_armado": 7
   },
   "ranking_estados": [
     {
@@ -33,18 +33,18 @@
       "confirmados": 4
     },
     {
+      "estado": "Barinas",
+      "total": 23,
+      "confirmados": 1
+    },
+    {
       "estado": "Lara",
       "total": 22,
       "confirmados": 1
     },
     {
-      "estado": "Barinas",
-      "total": 22,
-      "confirmados": 1
-    },
-    {
       "estado": "Zulia",
-      "total": 21,
+      "total": 22,
       "confirmados": 4
     },
     {
@@ -58,17 +58,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Bolivar",
+      "total": 16,
+      "confirmados": 1
+    },
+    {
       "estado": "Yaracuy",
       "total": 16,
       "confirmados": 1
     },
     {
       "estado": "Carabobo",
-      "total": 15,
-      "confirmados": 1
-    },
-    {
-      "estado": "Bolivar",
       "total": 15,
       "confirmados": 1
     },
@@ -118,14 +118,14 @@
       "confirmados": 0
     },
     {
+      "estado": "Portuguesa",
+      "total": 8,
+      "confirmados": 0
+    },
+    {
       "estado": "Falcon",
       "total": 7,
       "confirmados": 1
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 7,
-      "confirmados": 0
     },
     {
       "estado": "Guarico",
@@ -173,7 +173,7 @@
       "orden_publico": 3,
       "sismo": 1,
       "salud_publica": 1,
-      "ataque_armado": 1
+      "ataque_armado": 2
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -206,7 +206,8 @@
       "vialidad": 4,
       "orden_publico": 5,
       "infraestructura_agua": 1,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "ataque_armado": 1
     },
     "Sucre": {
       "inundacion": 2,
@@ -228,7 +229,8 @@
       "escasez_combustible": 1,
       "incendio": 2,
       "inundacion": 1,
-      "sismo": 1
+      "sismo": 1,
+      "vialidad": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -309,7 +311,7 @@
     "Portuguesa": {
       "infraestructura_electrica": 1,
       "orden_publico": 2,
-      "inundacion": 2,
+      "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
     },
@@ -331,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 264,
+    "sin_clasificar": 268,
     "medio": 4,
     "bajo": 7
   },
@@ -343,7 +345,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 3
+      "2026-09": 4
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -378,7 +380,8 @@
       "2026-09": 1
     },
     "vialidad": {
-      "2026-08": 10
+      "2026-08": 10,
+      "2026-09": 1
     },
     "sismo": {
       "2026-08": 8
@@ -406,7 +409,8 @@
       "2026-08": 2
     },
     "ataque_armado": {
-      "2026-08": 5
+      "2026-08": 5,
+      "2026-09": 2
     }
   }
 }

@@ -1,6 +1,14 @@
 [
   {
     "periodo": "2026-09",
+    "tipo": "vialidad",
+    "tipo_label": "Incidente vial",
+    "cerrado": false,
+    "generado": "2026-09-03T09:46:49.415398+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
@@ -54,6 +62,14 @@
     "cerrado": false,
     "generado": "2026-09-03T00:44:18.654259+00:00",
     "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-09-03T09:46:44.384791+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-08",
