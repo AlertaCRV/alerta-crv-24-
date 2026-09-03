@@ -1768,7 +1768,15 @@
     "ultima_vez": "2026-09-03T05:09:25.321781+00:00"
   },
   "inundacion::Sucre::2026-09-03": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T13:58:06.617063+00:00"
+  },
+  "salud_publica::Delta Amacuro::2026-09-03": {
     "intentos": 1,
-    "ultima_vez": "2026-09-03T09:46:30.624841+00:00"
+    "ultima_vez": "2026-09-03T13:58:10.058156+00:00"
+  },
+  "vialidad::Bolivar::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T13:58:13.481628+00:00"
   }
 }
