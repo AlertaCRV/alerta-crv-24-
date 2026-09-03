@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-03T09:46:39.957162+00:00",
+  "actualizado": "2026-09-03T17:45:49.707198+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-03T02:50:00+00:00"
+    "hasta": "2026-09-03T08:40:02+00:00"
   },
-  "total_eventos": 321,
+  "total_eventos": 322,
   "por_tipo": {
     "tormenta_electrica": 8,
-    "inundacion": 63,
+    "inundacion": 64,
     "infraestructura_electrica": 73,
     "deslizamiento": 26,
     "colapso_estructural": 3,
@@ -78,12 +78,12 @@
       "confirmados": 2
     },
     {
-      "estado": "Trujillo",
-      "total": 12,
+      "estado": "Sucre",
+      "total": 13,
       "confirmados": 0
     },
     {
-      "estado": "Sucre",
+      "estado": "Trujillo",
       "total": 12,
       "confirmados": 0
     },
@@ -210,7 +210,7 @@
       "ataque_armado": 1
     },
     "Sucre": {
-      "inundacion": 2,
+      "inundacion": 3,
       "orden_publico": 5,
       "infraestructura_electrica": 4,
       "infraestructura_agua": 1
@@ -333,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 24,
-    "sin_clasificar": 268,
+    "sin_clasificar": 269,
     "medio": 4,
     "bajo": 7
   },
@@ -345,7 +345,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 4
+      "2026-09": 5
     },
     "infraestructura_electrica": {
       "2026-07": 5,

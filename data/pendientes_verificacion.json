@@ -1767,16 +1767,20 @@
     "intentos": 2,
     "ultima_vez": "2026-09-03T05:09:25.321781+00:00"
   },
-  "inundacion::Sucre::2026-09-03": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-03T13:58:06.617063+00:00"
-  },
   "salud_publica::Delta Amacuro::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T13:58:10.058156+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-03T17:45:49.149014+00:00"
   },
   "vialidad::Bolivar::2026-09-03": {
     "intentos": 1,
     "ultima_vez": "2026-09-03T13:58:13.481628+00:00"
+  },
+  "orden_publico::Miranda::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T17:45:38.335108+00:00"
+  },
+  "vialidad::Distrito Capital::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T17:45:41.901552+00:00"
   }
 }
