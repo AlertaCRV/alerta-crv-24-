@@ -265,6 +265,24 @@ LISTA_NEGRA_POR_ESTADO = {
     # sin remapeo (el estado real ya esta cubierto), se descarta directamente
     # el candidato de Aragua, igual que "Carabobo FC" para Carabobo.
     "Aragua": ["aragua de barcelona"],
+    # Caso real (03-09-2026, PASADO_POR_FALLA_TECNICA): "Ministerio del Poder
+    # Popular para la Salud estudia un caso sospechoso de difteria... La
+    # informacion compartida... NO ACLARA EL LUGAR en donde fue localizado
+    # este posible caso" -- el articulo es explicito en que la ubicacion del
+    # caso de difteria (el hecho real que motiva la alerta) es desconocida.
+    # Mas adelante, en un parrafo aparte sobre OTRA estadistica del mismo
+    # boletin epidemiologico (enfermedades respiratorias, en descenso,
+    # ninguna relacion con la difteria), el articulo menciona "Delta Amacuro
+    # registra la mayor cantidad de casos [respiratorios], segun el informe"
+    # -- esa frase, sin ninguna palabra de tipo salud_publica propia cerca,
+    # bastaba para publicar la alerta de difteria en Delta Amacuro solo
+    # porque la ventana de proximidad alcanzaba "enfermedades respiratorias"
+    # (evidencia de tipo) del parrafo anterior. Sin remapeo (el articulo no
+    # da ninguna ubicacion real para el caso de difteria): se descarta
+    # directamente, igual que "periodista del estado monagas". Se verifico
+    # contra las 436 fuentes de data/historico_fuentes_texto.jsonl que esta
+    # frase es exclusiva de este articulo (en sus 2 fuentes independientes).
+    "Delta Amacuro": ["delta amacuro registra la mayor cantidad de casos"],
 }
 
 # Ver comentario en LISTA_NEGRA_POR_ESTADO["Distrito Capital"]: cuando el
@@ -675,7 +693,25 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # proximidad a la ubicacion puede recortar el texto justo antes de la
     # frase completa, dejando solo el orden invertido ("un arbol colapso")
     # -- un solo token es robusto a cualquier orden/conjugacion.
-    "infraestructura_electrica": ["arbol", "árbol", "arboles", "árboles"],
+    #
+    # Ampliado (03-09-2026, PASADO_POR_FALLA_TECNICA): "Habitantes... alertan
+    # sobre RAMAS que se encuentran en el tendido electrico... y amenazan con
+    # provocar serios danos" -- mismo patron de fondo que "arbol" (una AMENAZA
+    # de dano futuro, sin ningun apagon/falla real en curso), pero con "ramas"
+    # en vez de "arbol"/"arboles", palabra no cubierta por la lista original.
+    "infraestructura_electrica": ["arbol", "árbol", "arboles", "árboles",
+                                   "rama", "ramas"],
+    # Caso real (03-09-2026, PASADO_POR_FALLA_TECNICA): una nota deportiva
+    # sobre un campeonato regional de beisbol ("Kuikas de Trujillo se corono
+    # Campeon del 5to Occidental de Beisbol Super Master... El podio se
+    # completo con Bravos de Santa Barbara en el subcampeonato y GUERRILLA DE
+    # BARINAS en el tercer lugar") disparaba tipo=ataque_armado tanto en
+    # Barinas como en Zulia (equipos participantes del torneo) solo porque
+    # "Guerrilla de Barinas" es el nombre de un EQUIPO de beisbol, no un grupo
+    # armado real -- ni un solo hecho de violencia en todo el articulo. Se
+    # verifico contra las 436 fuentes de data/historico_fuentes_texto.jsonl
+    # que "guerrilla" es exclusiva de este articulo.
+    "ataque_armado": ["beisbol", "béisbol", "campeonato"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -1594,7 +1630,17 @@ _UMBRAL_DIAS_DURACION_BAJO_POR_TIPO = {
     "infraestructura_agua": 7,
 }
 _DURACION_HORAS_RE = re.compile(r"\b(\d{1,3})\s*horas?\b", re.IGNORECASE)
-_DURACION_DIAS_RE = re.compile(r"\b(\d{1,2})\s*d[ií]as?\b", re.IGNORECASE)
+# Ampliado (03-09-2026, PASADO_POR_FALLA_TECNICA): tope original de 2 digitos
+# ("\d{1,2}") -- caso real: "acumular 195 dias consecutivos (mas de seis
+# meses) sin recibir una sola gota de agua" (Nueva Esparta, crisis de 6+
+# meses) quedaba SIN CLASIFICAR en vez de escalar a BAJO porque "195" tiene 3
+# digitos, fuera del rango del regex original.
+_DURACION_DIAS_RE = re.compile(r"\b(\d{1,3})\s*d[ií]as?\b", re.IGNORECASE)
+# Mismo caso real: el articulo tambien describe la duracion en MESES ("mas
+# de 6 meses", "tres meses de paralizacion", "cinco meses sin suministro"),
+# un formato que _DURACION_DIAS_RE nunca cubria. Se convierte a dias (30 por
+# mes) para compararse contra el mismo umbral.
+_DURACION_MESES_RE = re.compile(r"\b(\d{1,2})\s*mes(?:es)?\b", re.IGNORECASE)
 
 # "en los ultimos N dias"/"en la ultima semana" describe una VENTANA de
 # tiempo sobre la que se reporta una tendencia (ej. "en los ultimos 15 dias
@@ -1622,6 +1668,11 @@ def _severidad_por_duracion(texto_norm, tipos):
         if any(
             int(m.group(1)) >= umbral_dias and not _es_ventana_reciente(texto_norm, m.start())
             for m in _DURACION_DIAS_RE.finditer(texto_norm)
+        ):
+            return "bajo"
+        if any(
+            int(m.group(1)) * 30 >= umbral_dias and not _es_ventana_reciente(texto_norm, m.start())
+            for m in _DURACION_MESES_RE.finditer(texto_norm)
         ):
             return "bajo"
     return None

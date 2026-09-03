@@ -1727,14 +1727,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-02T22:39:54.940688+00:00"
   },
-  "ataque_armado::Zulia::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T22:39:58.361805+00:00"
-  },
-  "infraestructura_electrica::Anzoategui::2026-09-02": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-02T22:40:09.068497+00:00"
-  },
   "inundacion::Portuguesa::2026-09-02": {
     "intentos": 1,
     "ultima_vez": "2026-09-02T22:40:58.486146+00:00"
@@ -1767,10 +1759,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-03T05:09:25.321781+00:00"
   },
-  "vialidad::Bolivar::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T13:58:13.481628+00:00"
-  },
   "inundacion::Sucre::2026-09-03": {
     "intentos": 1,
     "ultima_vez": "2026-09-03T20:13:39.485442+00:00"
@@ -1786,10 +1774,6 @@
   "inundacion::Lara::2026-09-03": {
     "intentos": 2,
     "ultima_vez": "2026-09-03T22:38:33.746202+00:00"
-  },
-  "salud_publica::Delta Amacuro::2026-09-03": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-03T22:38:45.044060+00:00"
   },
   "tormenta_electrica::Lara::2026-09-03": {
     "intentos": 1,

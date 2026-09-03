@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-03T22:38:56.650446+00:00",
+  "actualizado": "2026-09-03T23:29:59.470886+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-03T22:16:52+00:00"
   },
-  "total_eventos": 325,
+  "total_eventos": 320,
   "por_tipo": {
     "tormenta_electrica": 8,
     "inundacion": 64,
-    "infraestructura_electrica": 73,
+    "infraestructura_electrica": 72,
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 56,
-    "salud_publica": 11,
+    "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
-    "vialidad": 12,
+    "vialidad": 11,
     "sismo": 8,
     "escasez_combustible": 1,
     "sequia": 6,
@@ -24,7 +24,7 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 2,
-    "ataque_armado": 7
+    "ataque_armado": 5
   },
   "ranking_estados": [
     {
@@ -33,18 +33,18 @@
       "confirmados": 4
     },
     {
-      "estado": "Barinas",
-      "total": 23,
-      "confirmados": 1
-    },
-    {
       "estado": "Lara",
       "total": 22,
       "confirmados": 1
     },
     {
-      "estado": "Zulia",
+      "estado": "Barinas",
       "total": 22,
+      "confirmados": 1
+    },
+    {
+      "estado": "Zulia",
+      "total": 21,
       "confirmados": 4
     },
     {
@@ -54,13 +54,8 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 17,
-      "confirmados": 0
-    },
-    {
-      "estado": "Bolivar",
       "total": 16,
-      "confirmados": 1
+      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -69,6 +64,11 @@
     },
     {
       "estado": "Carabobo",
+      "total": 15,
+      "confirmados": 1
+    },
+    {
+      "estado": "Bolivar",
       "total": 15,
       "confirmados": 1
     },
@@ -134,7 +134,7 @@
     },
     {
       "estado": "Delta Amacuro",
-      "total": 3,
+      "total": 2,
       "confirmados": 0
     },
     {
@@ -173,7 +173,7 @@
       "orden_publico": 3,
       "sismo": 1,
       "salud_publica": 1,
-      "ataque_armado": 2
+      "ataque_armado": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -206,8 +206,7 @@
       "vialidad": 4,
       "orden_publico": 5,
       "infraestructura_agua": 1,
-      "salud_publica": 1,
-      "ataque_armado": 1
+      "salud_publica": 1
     },
     "Sucre": {
       "inundacion": 3,
@@ -216,7 +215,7 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 7,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -229,8 +228,7 @@
       "escasez_combustible": 1,
       "incendio": 2,
       "inundacion": 1,
-      "sismo": 1,
-      "vialidad": 1
+      "sismo": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -327,16 +325,15 @@
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
-      "inundacion": 1,
-      "salud_publica": 1
+      "inundacion": 1
     }
   },
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 271,
+    "sin_clasificar": 265,
     "medio": 4,
-    "bajo": 7
+    "bajo": 8
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -351,7 +348,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 4
+      "2026-09": 3
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -369,8 +366,7 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 9,
-      "2026-09": 1
+      "2026-08": 9
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -383,7 +379,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 2
+      "2026-09": 1
     },
     "sismo": {
       "2026-08": 8
@@ -411,8 +407,7 @@
       "2026-08": 2
     },
     "ataque_armado": {
-      "2026-08": 5,
-      "2026-09": 2
+      "2026-08": 5
     }
   }
 }
