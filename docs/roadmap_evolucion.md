@@ -7845,3 +7845,201 @@ scripts/build_dashboard.py` → `docs/data/estadisticas.json` regenerado.
 `python3 scripts/detectar_inconsistencias.py` → mismos pares de posibles
 duplicados ya conocidos de sesiones anteriores, más las fuentes muertas en
 informes documentadas arriba.
+
+
+## Auditoría diaria automática (03-09-2026): 5 errores corregidos (falso positivo de nombre de equipo deportivo, ubicación mal atribuida en boletín de salud, y dos vacíos en filtros ya existentes), más un hallazgo pendiente de discutir
+
+Se auditaron las 20 alertas publicadas entre el 01-09-2026 y el 03-09-2026
+(todas `PASADO_POR_FALLA_TECNICA` -- la verificación de IA sigue sin correr
+en este entorno), comparando cada una contra el texto real de sus fuentes
+en `data/historico_fuentes_texto.jsonl`. 5 errores reales encontrados y
+corregidos de raíz.
+
+### 1. Un equipo de béisbol llamado "Guerrilla de Barinas" generó dos alertas falsas de ataque armado
+
+`ataque_armado::Barinas::2026-09-02` y `ataque_armado::Zulia::2026-09-02`
+(Diario El Tiempo (Trujillo), "Kuikas de Trujillo se coronó Campeón del
+5to Occidental de Beisbol Super Máster") es una nota deportiva sobre un
+campeonato regional de béisbol de veteranos -- disparaba tipo=ataque_armado
+en ambos estados vía la palabra "guerrilla", el nombre del equipo que
+ocupó el tercer lugar del torneo ("Guerrilla de Barinas"), sin un solo
+hecho de violencia en todo el artículo. Zulia se veía afectado porque su
+equipo (derrotado en la final) también se mencionaba a menos de 35
+palabras de "Guerrilla".
+
+**Corrección**: se agregó `["beisbol", "béisbol", "campeonato"]` a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO["ataque_armado"]` (`scripts/classify.py`),
+mismo mecanismo ya usado para sismo/colapso_estructural/deslizamiento: si
+la ventana de proximidad tiene contexto deportivo Y no hay evidencia
+fuerte de ataque real (tiroteo/enfrentamiento/heridos/fallecidos/
+emboscada, ya en `_EVIDENCIA_FUERTE_POR_TIPO`), se descarta el tipo. Se
+verificó con un caso de control (un ataque armado real durante un evento
+deportivo, con heridos) que la evidencia fuerte sigue anulando el
+descarte, y contra las 381 fuentes de `data/historico_fuentes_texto.jsonl`
+que "guerrilla" es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminaron por completo `ataque_armado::Barinas::2026-09-02`
+y `ataque_armado::Zulia::2026-09-02` de los 4 archivos de datos.
+
+### 2. Ramas amenazando el tendido eléctrico (sin "árbol") coló una alerta falsa de falla eléctrica en Anzoátegui
+
+`infraestructura_electrica::Anzoategui::2026-09-02` (El Tiempo
+(Anzoátegui), "Ramas entre el tendido eléctrico amenazan con causar daños
+en sectores de El Tigre") describe una AMENAZA de daño futuro por ramas
+cercanas al tendido, sin ningún apagón/falla real en curso -- mismo
+patrón de fondo que el caso ya cubierto de "árbol" (02-08-2026, "un árbol
+colapsara y arrastrara postes del tendido eléctrico"), pero con la
+palabra "ramas" en vez de "árbol"/"árboles", no cubierta por la lista
+original.
+
+**Corrección**: se amplió `_CONTEXTO_CONFLICTIVO_POR_TIPO["infraestructura_electrica"]`
+con `"rama"`, `"ramas"` (`scripts/classify.py`). Se verificó con un caso
+de control (una rama caída que SÍ provoca un apagón real, con "apagon"
+como evidencia fuerte presente) que el tipo no se descarta, y contra las
+381 fuentes del corpus que ningún otro caso de "rama"/"ramas" en
+infraestructura_electrica tiene evidencia fuerte que se vería afectada.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Anzoategui::2026-09-02` de los 4 archivos de
+datos.
+
+### 3. Una estadística de enfermedades respiratorias, no del caso de difteria que motivaba la nota, se publicó como ubicación de una alerta de salud pública en Delta Amacuro
+
+`salud_publica::Delta Amacuro::2026-09-03` (Turimiquire/La Prensa de
+Lara, "Ministerio del Poder Popular para la Salud estudia un caso
+sospechoso de difteria") es un boletín epidemiológico nacional -- el
+propio artículo aclara explícitamente que "la información compartida...
+no aclara el lugar en donde fue localizado este posible caso" (el caso de
+difteria, el hecho real que motiva la alerta). Sin embargo, varios
+párrafos después, en una estadística APARTE sobre enfermedades
+respiratorias (en descenso, sin relación con la difteria), el artículo
+menciona "Delta Amacuro registra la mayor cantidad de casos [respiratorios],
+según el informe" -- esa frase, sin ninguna palabra de tipo salud_publica
+propia cerca, bastaba para publicar la alerta de difteria en Delta
+Amacuro solo porque la ventana de proximidad alcanzaba "enfermedades
+respiratorias" (evidencia de tipo) del párrafo anterior.
+
+**Corrección**: se agregó "delta amacuro registra la mayor cantidad de
+casos" a `LISTA_NEGRA_POR_ESTADO["Delta Amacuro"]` (`scripts/classify.py`).
+Sin remapeo (el artículo no da ninguna ubicación real para el caso de
+difteria): el candidato se descarta directamente, igual que "periodista
+del estado monagas". Se verificó con un caso de control (un brote real y
+explícito en Delta Amacuro, con evidencia de tipo propia) que la
+ubicación se sigue detectando con normalidad, y contra las 381 fuentes
+del corpus que la frase es exclusiva de este artículo (en sus 2 fuentes
+independientes).
+
+**Corrección retroactiva**: se eliminó por completo
+`salud_publica::Delta Amacuro::2026-09-03` de los 4 archivos de datos.
+
+### 4. Un vehículo mal estacionado, no un accidente real, se coló por el filtro de "colapso vial" de vialidad.py
+
+`vialidad::Bolivar::2026-09-03` (Reporteros de Mérida, "Conductor
+infractor bloquea el tránsito en la Avenida 4 Bolívar") describe un solo
+vehículo mal estacionado sobre la acera que bloqueó parcialmente el
+tránsito por media hora -- sin choque, heridos ni fallecidos. La fuente
+usaba la frase "colapso vial" de forma coloquial/exagerada para describir
+el hecho, y esa frase es precisamente la que `_EVIDENCIA_FUERTE_VIALIDAD_RE`
+(`scripts/verify_ai.py`) usa como evidencia de un accidente masivo real,
+dejando pasar el filtro determinista diseñado para descartar justamente
+este tipo de incidente vial rutinario (ver "Filtro determinista para
+vialidad", 26-07-2026).
+
+**Corrección**: nueva función `_es_vehiculo_mal_estacionado_sin_accidente_real()`
+(`scripts/verify_ai.py`), evaluada ANTES que `_EVIDENCIA_FUERTE_VIALIDAD_RE`:
+si el texto describe un vehículo mal estacionado/conductor infractor Y no
+hay ningún verbo de choque/colisión real ni víctimas, se descarta sin
+importar qué otra frase de evidencia fuerte contenga. Se verificó con un
+caso de control (un vehículo mal estacionado que SÍ es impactado por un
+autobús, con heridos) que el filtro no lo descarta, y contra las fuentes
+`vialidad` del corpus que ningún otro caso se ve afectado.
+
+**Corrección retroactiva**: se eliminó por completo
+`vialidad::Bolivar::2026-09-03` de los 4 archivos de datos.
+
+### 5. Una crisis de agua de 195 días (más de 6 meses) quedaba SIN CLASIFICAR por un tope de 2 dígitos en el regex de duración, y por no existir detección de duración en meses
+
+`infraestructura_agua::Nueva Esparta::2026-09-01` (Reporte Confidencial,
+"Tubores suma más de 6 meses sin agua por tubería en Margarita") describe
+un corte de agua de "195 días consecutivos (más de seis meses)" -- muy
+por encima del umbral de 7 días que, según `_severidad_por_duracion`
+(`scripts/classify.py`), debería escalar la severidad de sin_clasificar a
+bajo. `_DURACION_DIAS_RE` tenía un tope de 2 dígitos (`\d{1,2}`), así que
+nunca coincidía con "195" (3 dígitos), y no existía ningún mecanismo para
+reconocer duraciones expresadas en meses.
+
+**Corrección**: se amplió `_DURACION_DIAS_RE` a 3 dígitos (`\d{1,3}`), y
+se agregó `_DURACION_MESES_RE` (con la misma exclusión de "ventana
+reciente" ya usada para días/horas) que convierte meses a días (×30) para
+compararse contra el mismo umbral. Se verificó con un caso de control
+("en los últimos 3 meses aumentaron los cortes de agua", una ventana de
+tendencia, no la duración de un corte continuo) que la severidad
+correctamente NO escala, y con una regresión completa contra las 381
+fuentes del corpus (con `PYTHONHASHSEED` fijo, ver nota abajo) que ningún
+otro caso cambia de severidad salvo el corregido aquí.
+
+**Corrección retroactiva**: se actualizó la severidad de
+`infraestructura_agua::Nueva Esparta::2026-09-01` de sin_clasificar a
+bajo en los 3 archivos de datos (usando `render.redactar_noticia()` para
+regenerar el texto visible de la tarjeta ya publicada, no una edición a
+mano).
+
+### Nota técnica: no-determinismo en `_detectar_ubicacion_texto_plano` por iteración de `set`
+
+Al correr una regresión completa contra el corpus histórico para validar
+los 5 fixes de arriba, se detectó que `candidatos = set(alias) | {...}`
+(`scripts/classify.py`, dentro de `_detectar_ubicacion_texto_plano`) itera
+un `set` de strings -- cuyo orden de iteración depende del hash de cada
+string, aleatorizado por proceso en Python 3 salvo que se fije
+`PYTHONHASHSEED`. Para un estado con más de un alias presente en el mismo
+artículo (p.ej. "Nueva Esparta" y "Margarita"), esto puede hacer que la
+ventana de proximidad usada -- y por lo tanto el tipo/severidad detectado
+-- varíe entre corridas del mismo código sobre el mismo texto. No se
+encontró ningún caso real afectado dentro de las 20 alertas de esta
+auditoría, pero es un hallazgo real que vale la pena revisar en una
+sesión futura (posible fix: ordenar `candidatos` de forma determinista,
+o iterar `sorted(candidatos)`). No corregido aquí por estar fuera del
+alcance de esta auditoría (no afecta ninguna alerta publicada en la
+ventana de 24-48h revisada); documentado para que no se pierda.
+
+### Pendiente de discutir
+
+**`vialidad::Distrito Capital::2026-09-03`** (El Periódico de Monagas,
+"Tres muertos y un herido tras choque de autobuses en Caracas"): el
+titular dice "en Caracas" y el sistema detectó Distrito Capital vía esa
+mención, pero el cuerpo del artículo (muy breve, posiblemente truncado
+por el scraper) solo da como ubicación real "la altura del kilómetro 133
+de la Autopista Regional del Centro (ARC)" -- un tramo que, por la
+distancia recorrida desde su inicio en La Yaguara (Distrito Capital, km
+0), muy probablemente cae en Aragua o Carabobo, no en Distrito Capital
+(un distrito administrativamente pequeño que la autopista atraviesa solo
+en sus primeros kilómetros). No se encontró ninguna otra fuente sobre el
+mismo choque para corroborar el estado exacto, y no hay en este momento
+un mapeo confiable de kilómetro-a-estado de la ARC en el sistema para
+resolverlo con certeza -- inventar un estado distinto sin evidencia
+textual directa sería igual de arriesgado que dejar el error actual,
+sobre todo tratándose de una alerta de severidad CRÍTICA (3 fallecidos).
+Se notifica al usuario en vez de corregir a ciegas.
+
+### Pruebas
+
+8 casos nuevos en `tests/casos_clasificacion.jsonl` (5 reales + 3
+controles) para los hallazgos 1, 2, 3 y 5, más 2 casos nuevos en
+`tests/test_verify_ai_filtros.py` (1 real + 1 control) para el hallazgo
+4. Regresión completa contra las 381 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con los 5 eventos retractados
+hoy eliminados), corrida con `PYTHONHASHSEED=0` fijo (ver nota técnica
+arriba) para eliminar el ruido del no-determinismo pre-existente: sin
+cambios inesperados -- las únicas fuentes afectadas por los fixes son,
+precisamente, las señaladas arriba. `python3 -m pytest tests/` → 686
+passed, 6 xfailed (conocidos), 1 xpassed (conocido). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados ya conocidos de sesiones anteriores, más 5 fuentes muertas
+nuevas en informes ya generados antes de esta auditoría
+(`docs/data/informes/2026-09_ataque_armado.json`,
+`2026-09_general.json`, `2026-09_infraestructura_electrica.json`,
+`2026-09_salud_publica.json`, `2026-09_vialidad.json`) -- `GROQ_API_KEY`
+no está disponible en este entorno, así que no se regeneraron a mano
+(mismo patrón que sesiones anteriores).

@@ -40,6 +40,34 @@ def test_vialidad_transporte_publico_no_se_descarta():
     assert _vialidad_sin_evidencia_fuerte(texto) is False
 
 
+# --- vialidad: vehiculo mal estacionado sin accidente real (03-09-2026) -
+
+def test_vialidad_vehiculo_mal_estacionado_se_descarta():
+    # Caso real (Auditoria diaria automatica, 03-09-2026,
+    # PASADO_POR_FALLA_TECNICA): un conductor infractor estaciono su
+    # vehiculo sobre la acera y bloqueo parcialmente el transito por media
+    # hora -- la fuente usaba la frase "colapso vial" de forma coloquial/
+    # exagerada, sin que hubiera ningun choque, herido ni fallecido.
+    texto = (
+        "Conductor infractor bloquea el transito. Ciudadanos denunciaron "
+        "el colapso vial ocurrido este miercoles, luego de que un "
+        "conductor irresponsable estacionara sobre la acera su vehiculo "
+        "en plena via publica. El automotor permanecio bloqueando "
+        "parcialmente el canal de circulacion por espacio de media hora."
+    )
+    assert _vialidad_sin_evidencia_fuerte(texto) is True
+
+
+def test_vialidad_vehiculo_mal_estacionado_con_choque_real_no_se_descarta():
+    # Control: si el vehiculo mal estacionado SI termina en un choque real,
+    # el filtro no debe descartarlo.
+    texto = (
+        "Un vehiculo mal estacionado sobre la acera fue impactado por un "
+        "autobus que choco contra el, dejando tres heridos."
+    )
+    assert _vialidad_sin_evidencia_fuerte(texto) is False
+
+
 # --- incendio vehicular: "Dos falsos positivos mas" (27-07-2026) --------
 
 def test_incendio_gandola_aislada_se_descarta():

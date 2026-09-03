@@ -182,8 +182,46 @@ _EVIDENCIA_FUERTE_VIALIDAD_RE = re.compile(
 )
 
 
+# Caso real (03-09-2026, PASADO_POR_FALLA_TECNICA): "Conductor infractor
+# bloquea el transito... Ciudadanos denunciaron el COLAPSO VIAL ocurrido
+# este miercoles... luego de que un conductor irresponsable estacionara
+# sobre la acera... El automotor imprudente permanecio bloqueando
+# parcialmente el canal de circulacion por espacio de MEDIA HORA" -- un solo
+# vehiculo mal estacionado (ni choque, ni heridos, ni fallecidos, resuelto
+# en 30 minutos) pasaba el filtro de evidencia fuerte solo porque la fuente
+# usa la frase "colapso vial" en sentido coloquial/exagerado, no porque haya
+# ocurrido un colapso real de la via -- el mismo texto que
+# _EVIDENCIA_FUERTE_VIALIDAD_RE usa como evidencia de un accidente masivo.
+# Se evalua ANTES que esa evidencia: si el articulo describe un vehiculo mal
+# estacionado/conductor infractor Y no hay ningun verbo de choque/colision
+# real ni victimas, se descarta sin importar que otra frase contenga.
+_MARCADORES_VEHICULO_MAL_ESTACIONADO_RE = re.compile(
+    r"\b(conductor infractor|mal estacionad[oa]|estacionamiento indebido)\b",
+    re.IGNORECASE,
+)
+_EVIDENCIA_CHOQUE_REAL_RE = re.compile(
+    r"\b(choco|chocaron|impacto|impactaron|atropello|atropellaron|volco|"
+    r"volcaron|arrollo|arrollaron|colision|colisiones|colisiono|"
+    r"se estrello|se estrellaron|derrapo)\b",
+    re.IGNORECASE,
+)
+
+
+def _es_vehiculo_mal_estacionado_sin_accidente_real(texto_norm):
+    if not _MARCADORES_VEHICULO_MAL_ESTACIONADO_RE.search(texto_norm):
+        return False
+    if _EVIDENCIA_CHOQUE_REAL_RE.search(texto_norm):
+        return False
+    return (
+        _NUMERO_HERIDOS_RE.search(texto_norm) is None
+        and _NUMERO_FALLECIDOS_RE.search(texto_norm) is None
+    )
+
+
 def _vialidad_sin_evidencia_fuerte(texto):
     texto_norm = _normalizar(texto)
+    if _es_vehiculo_mal_estacionado_sin_accidente_real(texto_norm):
+        return True
     tiene_evidencia = (
         _EVIDENCIA_FUERTE_VIALIDAD_RE.search(texto_norm) is not None
         or _NUMERO_HERIDOS_RE.search(texto_norm) is not None
