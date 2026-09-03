@@ -1738,5 +1738,49 @@
   "inundacion::Portuguesa::2026-09-02": {
     "intentos": 1,
     "ultima_vez": "2026-09-02T22:40:58.486146+00:00"
+  },
+  "ataque_armado::Miranda::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:42:54.050952+00:00"
+  },
+  "ataque_armado::Zulia::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:42:57.373602+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:00.757129+00:00"
+  },
+  "ataque_armado::Barinas::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:04.316587+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:07.727172+00:00"
+  },
+  "incendio::Aragua::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:11.164421+00:00"
+  },
+  "orden_publico::Portuguesa::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:22.840361+00:00"
+  },
+  "incendio::Distrito Capital::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:34.460232+00:00"
+  },
+  "vialidad::Bolivar::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:43:37.843398+00:00"
+  },
+  "deslizamiento::Aragua::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:44:02.562137+00:00"
+  },
+  "inundacion::Portuguesa::2026-09-03": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-03T00:44:06.157134+00:00"
   }
 }
