@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "ataque_armado",
+  "tipo_label": "Ataque armado",
+  "cerrado": false,
+  "generado": "2026-09-03T09:46:44.384791+00:00",
+  "actualizado_hasta": "2026-09-03T09:46:27.290021+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 5,
+    "actual": 2
+  },
+  "narrativa": "Durante el período de septiembre de 2026 se registraron dos eventos de ataque armado, lo que representa una disminución respecto al mes anterior, en el que se contabilizaron cinco incidentes (comparación con el período anterior 2026-08). Esta reducción sugiere una tendencia a la baja en la frecuencia de este tipo de emergencias en el territorio nacional.\n\nEn los informes y fuentes periodísticas revisados para este análisis no se identificaron detalles específicos sobre los incidentes ocurridos en septiembre, por lo que la información disponible se limita a la cifra total de eventos reportados por los sistemas de monitoreo de la Cruz Roja Venezolana. La ausencia de descripciones puntuales impide profundizar en la naturaleza, ubicación o consecuencias de los ataques.\n\nA pesar de la menor cantidad de incidentes, la Cruz Roja mantiene su capacidad de respuesta y continúa reforzando la coordinación con autoridades locales y organizaciones de socorro para atender cualquier eventualidad. La tendencia a la baja será monitoreada en los próximos meses para evaluar si se mantiene la mejora en la seguridad y la reducción de daños a la población.",
+  "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/kuikas-de-trujillo-se-corono-campeon-del-5to-occidental-de-beisbol-super-master/"
+    }
+  ]
+}
