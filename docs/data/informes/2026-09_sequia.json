@@ -3,19 +3,19 @@
   "tipo": "sequia",
   "tipo_label": "Sequía",
   "cerrado": false,
-  "generado": "2026-09-02T00:13:51.121398+00:00",
-  "actualizado_hasta": "2026-09-01T22:04:05.734512+00:00",
+  "generado": "2026-09-04T19:41:57.642037+00:00",
+  "actualizado_hasta": "2026-09-04T19:41:12.368684+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 6,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró únicamente un evento relacionado con la sequía, en contraste con los seis eventos que se habían documentado en el mes anterior, agosto de 2026 (comparación proporcionada). Esta reducción en la cantidad de incidentes reportados indica una disminución en la frecuencia de situaciones críticas asociadas a la sequía durante el período analizado.\n\nEl único hecho registrado corresponde a la decisión de la Gobernación del Estado Bolí­variano de Nueva Esparta de declarar el 8 de septiembre como Día de Júbilo No Laborable en todo el territorio insular, mediante la Gaceta Oficial Extraordinaria N° E 6.886 (Reporte Confidencial). La medida implica la suspensión de actividades en instituciones públicas, planteles educativos y el sector comercial de las islas de Margarita, lo que podría estar vinculado a la gestión de recursos y a la respuesta institucional ante la sequía, aunque el comunicado no especifica directamente la causa.\n\nA pesar de la escasez de eventos reportados en este mes, la Cruz Roja Venezolana continuará monitoreando de cerca la situación hídrica en todas las regiones, manteniendo la alerta para detectar cualquier nuevo incidente que requiera intervención humanitaria. La comparación con el período anterior sirve como referencia para ajustar los planes de acción y los recursos destinados a la mitigación de los efectos de la sequía.",
+  "narrativa": "En el mes de septiembre de 2026 se registró únicamente un evento relacionado con la sequía, una notable disminución frente a los seis eventos reportados en el mes anterior (agosto 2026). Esta reducción indica una tendencia temporal a la baja en la frecuencia de incidentes de sequía durante el período analizado.\n\nEl único hecho documentado corresponde a la continuidad de la sequía en la zona de Trujillo, la cual se menciona en el contexto de la preparación del equipo de fútbol local para un partido importante. El artículo de Diario El Tiempo señala que \"tras semanas de sequía y urgencias\" la comunidad siguió enfrentando dificultades relacionadas con la falta de agua (Diario El Tiempo). No se reportaron daños materiales, heridos ni víctimas fatales asociados a este fenómeno durante el mes.\n\nA pesar de la baja actividad registrada, la Cruz Roja Venezolana mantiene la vigilancia y la preparación para responder a posibles emergencias derivadas de la sequía, especialmente en áreas vulnerables como Trujillo, donde la escasez de recursos hídricos sigue siendo una preocupación latente.",
   "fuentes": [
     {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/01/8-de-septiembre-dia-de-jubilo/"
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/a-la-cancha-trujillanos-la-magia-del-amarillo-y-marron-69/"
     }
   ]
 }

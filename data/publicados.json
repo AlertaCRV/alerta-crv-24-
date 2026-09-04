@@ -1,11 +1,4 @@
 {
-  "deslizamiento::Tachira::2026-09-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-01T19:38:58.267373+00:00",
-    "fecha_evento_temprana": "2026-09-01T18:51:02+00:00",
-    "municipio": null
-  },
   "infraestructura_agua::Nueva Esparta::2026-09-01": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -152,5 +145,33 @@
     "fecha_deteccion": "2026-09-04T09:32:55.541039+00:00",
     "fecha_evento_temprana": "2026-09-03T22:13:13+00:00",
     "municipio": null
+  },
+  "tormenta_electrica::Bolivar::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T19:41:08.992212+00:00",
+    "fecha_evento_temprana": "2026-09-04T11:51:26+00:00",
+    "municipio": null
+  },
+  "sequia::Monagas::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T19:41:12.368684+00:00",
+    "fecha_evento_temprana": "2026-09-04T13:11:26+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T19:41:15.830789+00:00",
+    "fecha_evento_temprana": "2026-09-04T13:00:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T19:41:50.717204+00:00",
+    "fecha_evento_temprana": "2026-09-04T17:00:00+00:00",
+    "municipio": "Chacao"
   }
 }
