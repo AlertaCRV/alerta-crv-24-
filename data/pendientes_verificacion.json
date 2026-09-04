@@ -1808,15 +1808,35 @@
     "ultima_vez": "2026-09-04T19:41:27.484230+00:00"
   },
   "inundacion::Aragua::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T19:40:55.074590+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T21:52:44.569039+00:00"
   },
   "emergencia_metro::Distrito Capital::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T19:40:58.484280+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T21:52:48.002963+00:00"
   },
   "inundacion::Lara::2026-09-04": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T21:52:51.558802+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-04": {
     "intentos": 1,
-    "ultima_vez": "2026-09-04T19:41:01.968672+00:00"
+    "ultima_vez": "2026-09-04T21:52:55.303222+00:00"
+  },
+  "tormenta_electrica::Bolivar::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T21:52:58.861119+00:00"
+  },
+  "sequia::Monagas::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T21:53:02.302146+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T21:53:05.809790+00:00"
+  },
+  "orden_publico::Miranda::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T21:53:17.374532+00:00"
   }
 }
