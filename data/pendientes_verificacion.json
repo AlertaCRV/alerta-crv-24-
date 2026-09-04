@@ -1778,5 +1778,41 @@
   "tormenta_electrica::Lara::2026-09-03": {
     "intentos": 1,
     "ultima_vez": "2026-09-03T22:38:48.435888+00:00"
+  },
+  "orden_publico::Miranda::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:27:44.434338+00:00"
+  },
+  "orden_publico::Merida::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:27:47.877266+00:00"
+  },
+  "inundacion::Lara::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:27:51.287808+00:00"
+  },
+  "vialidad::Distrito Capital::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:27:54.732138+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:27:58.267847+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:28:01.526307+00:00"
+  },
+  "tormenta_electrica::Lara::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:28:04.924214+00:00"
+  },
+  "vialidad::Lara::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:28:08.546851+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T00:28:19.987898+00:00"
   }
 }

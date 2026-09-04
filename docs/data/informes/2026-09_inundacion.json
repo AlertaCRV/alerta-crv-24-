@@ -3,19 +3,31 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-03T00:45:25.576851+00:00",
-  "actualizado_hasta": "2026-09-02T13:39:01.729218+00:00",
-  "total_eventos": 3,
+  "generado": "2026-09-04T00:29:50.227908+00:00",
+  "actualizado_hasta": "2026-09-03T17:45:45.409067+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 3
+    "actual": 5
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de inundación, una cifra notablemente menor frente a los 52 eventos reportados en agosto del mismo año (comparación con el período anterior).\\n\\nDurante la Onda Tropical 43, que alcanzó su mayor intensidad el 31‑9‑2026, seis estados de Venezuela – Caracas (Distrito Capital), Carabobo, La Guaira, Lara, Táchira y Yaracuy – reportaron vías inundadas (Turimiquire (Sucre)).\\n\\nLas comunidades agrícolas de los estados de Táchira y Yaracuy sufrieron derrumbes, mientras que en Caracas y La Guaira los refugiados que habían sido alojados tras los terremotos de junio denunciaron inundaciones en sus carpas (Turimiquire (Sucre)).\\n\\nLas autoridades gubernamentales y los medios locales de los seis estados confirmaron que, además de las vías inundadas, varias comunidades agrícolas quedaron incomunicadas y personas que permanecían en refugios quedaron expuestas a los efectos de la lluvia (Turimiquire (Sucre)).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron solo cinco eventos de inundación, una notable reducción frente a los 52 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta disminución se observa pese a la persistencia de fuertes lluvias que afectaron diversas regiones del país.\n\nEn la ciudad de Guanare, estado Portuguesa, intensas precipitaciones provocaron anegaciones y graves inundaciones en varios sectores, según reportó El Impulso (El Impulso). Además, el colapso del canal ubicado en el sector “La Comunidad” generó dificultades para el tránsito vehicular y peatonal, y obligó a vecinos a limpiar los escombros arrastrados por el caudal (La Prensa de Lara).\n\nA nivel estatal, seis entidades federales –Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy– reportaron vías inundadas durante la Onda Tropical 43, con comunidades agrícolas incomunicadas y derrumbes en Táchira y Yaracuy (Turimiquire). Estas afectaciones incluyeron la interrupción del tránsito y la pérdida de acceso a zonas rurales, evidenciando el impacto extendido de las lluvias.\n\nEn la capital y en La Guaira, los refugiados que habían sido alojados en carpas tras los terremotos de junio denunciaron inundaciones en sus alojamientos, exponiendo a estas poblaciones vulnerables a nuevas condiciones de riesgo (Turimiquire).\n\nEn el estado Sucre, los habitantes de Guarapiche cerraron la avenida Rotaria como medida de protesta tras más de un mes de desbordamiento de aguas negras, señalando problemas de salud pública con personas mayores hospitalizadas y recién nacidos afectados por los malos olores (Turimiquire).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
+    },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/"
     }
   ]
 }

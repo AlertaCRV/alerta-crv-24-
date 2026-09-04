@@ -3,19 +3,23 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-03T00:45:38.122454+00:00",
-  "actualizado_hasta": "2026-09-02T09:04:10.895632+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-04T00:29:54.981251+00:00",
+  "actualizado_hasta": "2026-09-03T22:38:30.392811+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de orden público, una notable disminución frente a los 52 eventos registrados en agosto de 2026 (52 evento(s) registrados entonces vs. 1 en este período). Esta reducción se refleja en la escasa actividad de protestas y manifestaciones durante el período analizado.\n\nEl único hecho relevante fue una movilización de familiares de presos políticos en la capital, Caracas, que tuvo lugar este martes. Los manifestantes marcharon exigiendo la liberación de sus seres queridos y subrayaron que la cuestión de la libertad de los presos políticos no debe quedar relegada ante negociaciones económicas o del sector petrolero (La Prensa de Lara).\n\nDurante la jornada, los participantes reiteraron que la prioridad debe ser la restitución de los derechos de los detenidos por razones políticas, y solicitaron que las autoridades no pospongan este tema en función de intereses económicos. No se reportaron incidentes de violencia ni enfrentamientos con las fuerzas de seguridad, y la protesta transcurrió de manera pacífica (La Prensa de Lara).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de orden público, una caída drástica respecto a los cincuenta y dos registrados en el mes anterior (2026-08) (Comparación proporcionada). \n\nEl martes de esa semana, familiares de presos políticos marcharon por las calles de Caracas exigiendo la libertad de sus seres queridos y señalando que la liberación no debe quedar en segundo plano frente a negociaciones económicas o petroleras (La Prensa de Lara). \n\nEse mismo jueves, 3 de septiembre, funcionarios de Polichacao impidieron que miembros de la Coalición Sindical avanzaran hacia el Hotel Marriott, donde se aloja la misión diplomática de Estados Unidos, instalando un piquete en la calle Mohedano y generando enfrentamientos (Runrun.es).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
     }
   ]
 }
