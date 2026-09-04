@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-03T23:29:59.470886+00:00",
+  "actualizado": "2026-09-04T09:32:58.188933+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-03T22:16:52+00:00"
+    "hasta": "2026-09-04T01:34:12+00:00"
   },
-  "total_eventos": 320,
+  "total_eventos": 324,
   "por_tipo": {
-    "tormenta_electrica": 8,
-    "inundacion": 64,
-    "infraestructura_electrica": 72,
+    "tormenta_electrica": 9,
+    "inundacion": 65,
+    "infraestructura_electrica": 73,
     "deslizamiento": 26,
     "colapso_estructural": 3,
-    "orden_publico": 56,
+    "orden_publico": 57,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -34,7 +34,7 @@
     },
     {
       "estado": "Lara",
-      "total": 22,
+      "total": 25,
       "confirmados": 1
     },
     {
@@ -103,6 +103,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Merida",
+      "total": 9,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0
@@ -111,11 +116,6 @@
       "estado": "Nueva Esparta",
       "total": 8,
       "confirmados": 1
-    },
-    {
-      "estado": "Merida",
-      "total": 8,
-      "confirmados": 0
     },
     {
       "estado": "Portuguesa",
@@ -153,16 +153,17 @@
       "incendio": 1
     },
     "Lara": {
-      "inundacion": 4,
+      "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 4,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
       "infraestructura_agua": 2,
       "sequia": 1,
-      "vialidad": 1
+      "vialidad": 1,
+      "tormenta_electrica": 1
     },
     "Zulia": {
       "tormenta_electrica": 2,
@@ -296,7 +297,7 @@
     "Merida": {
       "infraestructura_electrica": 4,
       "vialidad": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "inundacion": 1,
       "deslizamiento": 1
     },
@@ -331,24 +332,25 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 265,
+    "sin_clasificar": 269,
     "medio": 4,
     "bajo": 8
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2,
-      "2026-08": 6
+      "2026-08": 6,
+      "2026-09": 1
     },
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 5
+      "2026-09": 6
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 3
+      "2026-09": 4
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -362,7 +364,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 2
+      "2026-09": 3
     },
     "salud_publica": {
       "2026-07": 1,

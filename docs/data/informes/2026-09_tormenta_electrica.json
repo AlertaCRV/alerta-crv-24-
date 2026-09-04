@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "tormenta_electrica",
+  "tipo_label": "Tormenta eléctrica",
+  "cerrado": false,
+  "generado": "2026-09-04T09:33:02.411679+00:00",
+  "actualizado_hasta": "2026-09-04T09:32:55.541039+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 6,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registró una única incidencia de tormenta eléctrica, lo que representa una disminución respecto al mes anterior en el que se contabilizaron seis eventos (comparación con el período anterior (2026-08): 6 evento(s) registrados entonces vs. 1 en este período).\n\nEl único suceso reportado ocurrió el jueves 3 de septiembre en los municipios de Iribarren y Palavecino, estado Lara, donde la lluvia intensa provocó la caída de treinta y seis árboles, generando afectaciones en la infraestructura local (La Prensa de Lara). El director regional de Protección Civil y Administración de Desastres, Luis Mujica, informó que el equipo del Sistema Nacional de Gestión de Riesgo permaneció operativo para mitigar los daños y atender a la población afectada (La Prensa de Lara).\n\nAnte la magnitud de los daños, funcionarios del Sistema Nacional de Gestión de Riesgo fueron desplegados en ambas localidades para realizar labores de limpieza, asegurar la zona y brindar apoyo a los residentes (La Prensa de Lara). La respuesta coordinada de Protección Civil busca evitar mayores riesgos y restaurar la normalidad en las áreas impactadas.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
+    }
+  ]
+}

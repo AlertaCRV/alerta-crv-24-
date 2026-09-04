@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "tormenta_electrica",
+    "tipo_label": "Tormenta eléctrica",
+    "cerrado": false,
+    "generado": "2026-09-04T09:33:02.411679+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
