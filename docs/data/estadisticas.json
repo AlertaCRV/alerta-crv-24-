@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-09-04T19:41:52.863555+00:00",
+  "actualizado": "2026-09-04T23:21:58.764609+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-04T17:00:00+00:00"
   },
-  "total_eventos": 328,
+  "total_eventos": 322,
   "por_tipo": {
-    "tormenta_electrica": 10,
+    "tormenta_electrica": 5,
     "inundacion": 65,
     "infraestructura_electrica": 74,
     "deslizamiento": 26,
@@ -18,7 +18,7 @@
     "vialidad": 11,
     "sismo": 8,
     "escasez_combustible": 1,
-    "sequia": 7,
+    "sequia": 6,
     "explosion": 1,
     "infraestructura_agua": 14,
     "accidente_transporte": 1,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 55,
+      "total": 53,
       "confirmados": 4
     },
     {
@@ -63,11 +63,6 @@
       "confirmados": 0
     },
     {
-      "estado": "Bolivar",
-      "total": 16,
-      "confirmados": 1
-    },
-    {
       "estado": "Miranda",
       "total": 16,
       "confirmados": 2
@@ -78,18 +73,23 @@
       "confirmados": 1
     },
     {
+      "estado": "Bolivar",
+      "total": 15,
+      "confirmados": 1
+    },
+    {
       "estado": "Sucre",
       "total": 13,
       "confirmados": 0
     },
     {
       "estado": "Monagas",
-      "total": 13,
+      "total": 12,
       "confirmados": 0
     },
     {
       "estado": "Trujillo",
-      "total": 12,
+      "total": 11,
       "confirmados": 0
     },
     {
@@ -98,12 +98,12 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
-      "total": 10,
+      "estado": "Merida",
+      "total": 9,
       "confirmados": 0
     },
     {
-      "estado": "Merida",
+      "estado": "La Guaira",
       "total": 9,
       "confirmados": 0
     },
@@ -185,7 +185,6 @@
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
       "sismo": 1,
-      "tormenta_electrica": 2,
       "emergencia_metro": 2,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
@@ -197,7 +196,6 @@
       "sequia": 1,
       "infraestructura_electrica": 2,
       "deslizamiento": 2,
-      "tormenta_electrica": 1,
       "orden_publico": 1
     },
     "Barinas": {
@@ -229,8 +227,7 @@
       "escasez_combustible": 1,
       "incendio": 2,
       "inundacion": 1,
-      "sismo": 1,
-      "tormenta_electrica": 1
+      "sismo": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -255,8 +252,7 @@
       "vialidad": 1,
       "infraestructura_agua": 2,
       "incendio": 1,
-      "orden_publico": 1,
-      "sequia": 1
+      "orden_publico": 1
     },
     "Miranda": {
       "incendio": 2,
@@ -323,8 +319,7 @@
       "infraestructura_electrica": 2,
       "deslizamiento": 2,
       "inundacion": 3,
-      "sismo": 2,
-      "tormenta_electrica": 1
+      "sismo": 2
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -334,15 +329,15 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 273,
+    "sin_clasificar": 267,
     "medio": 4,
     "bajo": 8
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
       "2026-07": 2,
-      "2026-08": 6,
-      "2026-09": 2
+      "2026-08": 2,
+      "2026-09": 1
     },
     "inundacion": {
       "2026-07": 7,
@@ -392,8 +387,7 @@
       "2026-08": 1
     },
     "sequia": {
-      "2026-08": 6,
-      "2026-09": 1
+      "2026-08": 6
     },
     "explosion": {
       "2026-08": 1

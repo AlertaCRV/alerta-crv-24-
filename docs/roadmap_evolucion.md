@@ -8043,3 +8043,145 @@ nuevas en informes ya generados antes de esta auditoría
 `2026-09_salud_publica.json`, `2026-09_vialidad.json`) -- `GROQ_API_KEY`
 no está disponible en este entorno, así que no se regeneraron a mano
 (mismo patrón que sesiones anteriores).
+
+## Auditoría diaria automática (04-09-2026): 2 errores nuevos corregidos, más 4 casos históricos adicionales descubiertos por el mismo fix (una racha de falsos positivos de "boletín de pronóstico" nunca antes cubierta para tormenta_electrica)
+
+Se auditaron las 8 alertas publicadas desde el corte de la auditoría anterior
+(03-09-2026, hasta las 22:38 UTC) hasta ahora -- todas `PASADO_POR_FALLA_TECNICA`,
+la verificación de IA sigue sin correr en este entorno -- comparando cada una
+contra el texto real de sus fuentes en `data/historico_fuentes_texto.jsonl`.
+2 errores reales encontrados y corregidos de raíz; el segundo fix, al
+generalizarse por tipo en vez de por caso puntual, expuso 4 falsos positivos
+adicionales ya existentes en el corpus histórico (2 todavía publicados, 2 ya
+expirados de `docs/data/noticias.json` pero presentes en el registro
+histórico permanente con el tipo incorrecto).
+
+### 1. Una "sequía" de racha futbolística sin goles, no climática, generó una alerta falsa en Monagas
+
+`sequia::Monagas::2026-09-04` (Diario El Tiempo (Trujillo), "A la Cancha
+Trujillanos: «La magia del amarillo y marrón»") es una crónica deportiva de
+fútbol sobre el ascenso de Trujillanos FC en el torneo Clausura -- disparaba
+tipo=sequía en Monagas vía "Tras semanas de sequía y urgencias, el engranaje...
+por fin carburó con precisión quirúrgica... victoria por 3-1 frente al
+Monagas SC", donde "sequía" es la metáfora deportiva habitual de una racha
+sin triunfos/goles, no una sequía climática -- Monagas se veía afectado solo
+por ser el nombre del equipo rival ("Monagas SC"). Mismo patrón de fondo que
+"Guerrilla de Barinas" (ataque_armado, 03-09-2026): una palabra clave de tipo
+de emergencia reutilizada en su sentido idiomático deportivo.
+
+**Corrección**: se agregó una entrada `"sequia"` a
+`_CONTEXTO_CONFLICTIVO_POR_TIPO` (`scripts/classify.py`), reutilizando
+"beisbol"/"campeonato" (ya usados para el caso análogo de ataque_armado) y
+sumando "sc"/"fc" (sufijos de nombre de club de fútbol venezolano -- este
+artículo en particular no usa "fútbol"/"gol" en ningún momento, solo
+sinónimos floridos como "frentazo"/"zapatazo"). Se evitó "clausura"/"gol" por
+ser demasiado genéricos (clausura de un local, "Gol" como apellido). Además
+se agregó una entrada `"sequia"` a `_EVIDENCIA_FUERTE_POR_TIPO`
+("racionamiento", "embalse", "cosechas perdidas", "cultivos perdidos",
+"animales muertos", "ganado muerto") -- sin ella, cualquier sequía real que
+de pasada mencionara un evento deportivo quedaría descartada sin remedio,
+igual que ya protege a ataque_armado. Se verificó con un caso de control
+(una sequía real con cosechas perdidas y ganado muerto que menciona de
+pasada un campeonato de béisbol) que la evidencia fuerte evita el descarte,
+y contra las 322 fuentes vigentes de `data/historico_fuentes_texto.jsonl`
+que "sc"/"fc" como palabra suelta son exclusivos de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`sequia::Monagas::2026-09-04` de los 4 archivos de datos.
+
+### 2. Un boletín rutinario de pronóstico del Inameh generó una alerta falsa de tormenta eléctrica en Bolívar -- y el mismo hueco ya había generado 4 falsos positivos más sin corregir
+
+`tormenta_electrica::Bolivar::2026-09-04` (El Periodico de Monagas, "Lluvias
+con descargas eléctricas afectarán a Venezuela") es un boletín meteorológico
+RUTINARIO de pronóstico del Inameh para "las próximas horas" de ese día --
+mismo patrón ya cubierto el 15-08-2026 para tipo=inundación
+(`_es_boletin_pronostico_inameh_sin_inundacion_real`, disparado por la
+combinación exclusiva "inameh" + "onda tropical" en boletines de pronóstico
+puro), pero ese filtro nunca se generalizó a otros tipos que el mismo
+boletín también puede disparar -- este artículo generaba tipo=tormenta_electrica
+en Bolívar (uno de 15 estados listados por igual, sin ningún hecho ya
+ocurrido) sin que ningún filtro existente lo cubriera.
+
+**Corrección**: se renombró y parametrizó la función a
+`_es_boletin_pronostico_inameh_sin_evidencia_real(texto_norm, tipo)`
+(`scripts/classify.py`), que ahora se evalúa tanto para tipo=inundación como
+para tipo=tormenta_electrica, cada uno contra su propia lista de evidencia
+fuerte en `_EVIDENCIA_FUERTE_POR_TIPO`. Se agregó una entrada
+`"tormenta_electrica"` a esa lista ("rayo", "rayos", "impacto de rayo",
+"fulminado", "fulminada", "electrocutado", "electrocutada", "granizo",
+"heridos", "fallecidos") -- sin ella, cualquier tormenta eléctrica real que
+además citara al Inameh y una onda tropical como causa meteorológica (algo
+común en coberturas reales, no solo en boletines de pronóstico puro)
+quedaría descartada sin remedio. Se verificó con un caso de control (un
+rayo real que impacta y fulmina a una persona, en un artículo que también
+cita al Inameh y una onda tropical como causa) que la evidencia fuerte
+evita el descarte, y con una regresión completa contra las 322 fuentes
+vigentes del corpus que ningún otro caso cambia salvo los señalados en esta
+sección.
+
+**Hallazgo adicional al generalizar el fix**: la regresión completa reveló
+que el mismo patrón (boletín Inameh + onda tropical, sin ningún hecho ya
+ocurrido) ya había generado, sin que ningún filtro lo detectara hasta hoy,
+otros 4 falsos positivos de tormenta_electrica en el corpus histórico,
+todos boletines de pronóstico puro verificados uno por uno contra el texto
+completo de sus fuentes:
+
+- `tormenta_electrica::Distrito Capital::2026-08-30` y
+  `tormenta_electrica::La Guaira::2026-08-30` (Diario El Tiempo (Trujillo),
+  "Inameh pronostica lluvias y fuertes descargas eléctricas: estados
+  afectados hoy 30 de agosto") -- **todavía publicados** en
+  `docs/data/noticias.json` antes de esta corrección.
+- `tormenta_electrica::Distrito Capital::2026-08-21` y
+  `tormenta_electrica::Trujillo::2026-08-21` (Reporte Confidencial (Nueva
+  Esparta) + El Periodico de Monagas, "Inameh prevé/reporta lluvias y
+  tormentas en gran parte del país") -- ya expirados de
+  `docs/data/noticias.json` (rotación de 3 días de la caché de
+  deduplicación), pero presentes con el tipo incorrecto en el registro
+  histórico permanente (`data/historico_eventos.jsonl` y
+  `data/historico_fuentes_texto.jsonl`), usado por el dashboard y por esta
+  misma prueba de regresión.
+
+**Corrección retroactiva**: se eliminó por completo
+`tormenta_electrica::Bolivar::2026-09-04` de los 4 archivos de datos, y los
+4 casos adicionales de arriba de `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl` (los 2 de 30-08 también de
+`docs/data/noticias.json`, donde seguían publicados).
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta como "fuentes muertas" los 6
+enlaces retractados hoy que ya habían sido incluidos en informes ya
+generados antes de esta auditoría: `docs/data/informes/2026-08_tormenta_electrica.json`
+(los 3 boletines de Inameh de agosto) y `docs/data/informes/2026-09_sequia.json`
+(la crónica deportiva). `GROQ_API_KEY` no está disponible en este entorno,
+así que no se regeneraron a mano -- `scripts/build_informes.py` regenerará
+esos informes en la próxima corrida con acceso a la API (mismo patrón que
+sesiones anteriores). Los mismos pares de posibles duplicados y fuentes
+muertas ya conocidos de auditorías previas (protestas por beneficios
+laborales de jubilados en 4 estados el 22-08-2026, deslizamiento
+Aragua/Guárico el 21-08-2026, y las fuentes muertas ya documentadas en
+sesiones anteriores) siguen sin resolver, sin cambios respecto a lo ya
+señalado.
+
+### Pendientes de sesiones anteriores sin novedad
+
+`infraestructura_agua::Sucre::2026-09-02` y
+`vialidad::Distrito Capital::2026-09-03` (ver auditoría del 03-09-2026)
+siguen publicados sin que esta sesión encontrara información nueva para
+resolver la ambigüedad ya documentada -- se mantienen como pendientes, sin
+volver a notificar al usuario por lo mismo ya señalado.
+
+### Pruebas
+
+4 casos nuevos en `tests/casos_clasificacion.jsonl` (2 reales + 2 controles)
+para los hallazgos 1 y 2. Regresión completa contra las 322 fuentes
+vigentes de `data/historico_fuentes_texto.jsonl` (ya con los 6 eventos
+retractados hoy eliminados), corrida con `PYTHONHASHSEED=0` fijo: sin
+cambios inesperados -- las únicas fuentes afectadas por los fixes son,
+precisamente, las señaladas arriba. `python3 -m pytest tests/` → 690
+passed, 6 xfailed (conocidos), 1 xpassed (conocido). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles duplicados
+ya conocidos de sesiones anteriores, más las fuentes muertas en informes
+documentadas arriba.

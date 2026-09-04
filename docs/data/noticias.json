@@ -1,57 +1,5 @@
 [
   {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/lluvias-con-descargas-electricas-afectaran-a-venezuela/",
-        "fecha": "2026-09-04T11:51:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T11:51:26+00:00",
-    "fecha_evento_temprana": "2026-09-04T11:51:26+00:00",
-    "fecha_deteccion": "2026-09-04T19:41:08.992212+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::Bolivar::2026-09-04",
-    "titulo": "Tormenta eléctrica en Bolivar",
-    "texto": "📌 Tormenta eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 04/09/2026, 7:51 a.m.\n🔎 Detectado por el sistema: 04/09/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/lluvias-con-descargas-electricas-afectaran-a-venezuela/"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Monagas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/a-la-cancha-trujillanos-la-magia-del-amarillo-y-marron-69/",
-        "fecha": "2026-09-04T13:11:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T13:11:26+00:00",
-    "fecha_evento_temprana": "2026-09-04T13:11:26+00:00",
-    "fecha_deteccion": "2026-09-04T19:41:12.368684+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::Monagas::2026-09-04",
-    "titulo": "Sequía en Monagas",
-    "texto": "📌 Sequía en Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 04/09/2026, 9:11 a.m.\n🔎 Detectado por el sistema: 04/09/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/a-la-cancha-trujillanos-la-magia-del-amarillo-y-marron-69/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -679,58 +627,6 @@
     "clave_dedup": "infraestructura_agua::Yaracuy::2026-08-30",
     "titulo": "Falla de agua en Municipio San Felipe, Yaracuy",
     "texto": "📌 Falla de agua en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 30/08/2026, 2:26 p.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-la-zona-alta-de-san-felipe-e-independencia-yaracuy-llevan-10-dias-sin-agua"
-  },
-  {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/",
-        "fecha": "2026-08-30T14:54:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-30T14:54:06+00:00",
-    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
-    "fecha_deteccion": "2026-08-30T21:41:25.445713+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::Distrito Capital::2026-08-30",
-    "titulo": "Tormenta eléctrica en Distrito Capital",
-    "texto": "📌 Tormenta eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 30/08/2026, 10:54 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 5:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/"
-  },
-  {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/",
-        "fecha": "2026-08-30T14:54:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-30T14:54:06+00:00",
-    "fecha_evento_temprana": "2026-08-30T14:54:06+00:00",
-    "fecha_deteccion": "2026-08-30T21:41:28.812193+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::La Guaira::2026-08-30",
-    "titulo": "Tormenta eléctrica en La Guaira",
-    "texto": "📌 Tormenta eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 30/08/2026, 10:54 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 5:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/inameh-pronostica-lluvias-y-fuertes-descargas-electricas-estados-afectados-hoy-30-de-agosto/"
   },
   {
     "tipo": "orden_publico",
