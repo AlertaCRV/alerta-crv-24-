@@ -712,6 +712,21 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
     # verifico contra las 436 fuentes de data/historico_fuentes_texto.jsonl
     # que "guerrilla" es exclusiva de este articulo.
     "ataque_armado": ["beisbol", "béisbol", "campeonato"],
+    # Caso real (04-09-2026): una cronica deportiva de FUTBOL ("Tras semanas
+    # de SEQUIA y urgencias, el engranaje... por fin carburo con precision
+    # quirurgica... categorica victoria por 3-1 frente al Monagas SC") usaba
+    # "sequia" en su sentido metaforico de racha sin triunfos/goles, no una
+    # sequia climatica real -- disparaba tipo=sequia en Monagas (el equipo
+    # rival mencionado, "Monagas SC") sin una sola mencion de clima/lluvia/
+    # cosechas en todo el articulo. Se agrega "beisbol"/"campeonato" (mismo
+    # par ya usado para el caso analogo de ataque_armado) y "sc"/"fc"
+    # (sufijos de nombre de club de futbol venezolano, ej. "Monagas SC",
+    # "Trujillanos FC", "Metropolitanos FC") como marcadores de contexto
+    # deportivo -- "clausura"/"gol" se evitan por ser demasiado genericos
+    # (clausura de un local, gol como apellido). Se verifico contra las 381
+    # fuentes de data/historico_fuentes_texto.jsonl que "sc"/"fc" como
+    # palabra suelta son exclusivos de este articulo.
+    "sequia": ["beisbol", "béisbol", "campeonato", "sc", "fc"],
 }
 _EVIDENCIA_FUERTE_POR_TIPO = {
     "sismo": ["magnitud", "richter", "funvisis", "epicentro", "se sintio",
@@ -778,7 +793,7 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
     "ataque_armado": ["tiroteo", "tiroteos", "enfrentamiento",
                        "enfrentamientos", "heridos", "fallecidos",
                        "muertos", "muertas", "emboscada"],
-    # Usada por _es_boletin_pronostico_inameh_sin_inundacion_real(): si el
+    # Usada por _es_boletin_pronostico_inameh_sin_evidencia_real(): si el
     # articulo describe una inundacion YA ocurrida (no solo pronosticada),
     # esta evidencia evita descartar el tipo.
     "inundacion": ["anegado", "anegada", "anegados", "anegadas",
@@ -786,6 +801,21 @@ _EVIDENCIA_FUERTE_POR_TIPO = {
                     "viviendas anegadas", "familias afectadas",
                     "evacuados", "evacuadas", "arrastro", "arrastró",
                     "desbordo", "desbordó", "damnificados", "damnificadas"],
+    # Usada por _es_boletin_pronostico_inameh_sin_evidencia_real() (ver
+    # 04-09-2026): si ademas del boletin de pronostico el articulo describe
+    # un hecho de tormenta electrica YA ocurrido (no solo pronosticado),
+    # esta evidencia evita descartar el tipo.
+    "tormenta_electrica": ["rayo", "rayos", "impacto de rayo",
+                            "fulminado", "fulminada", "electrocutado",
+                            "electrocutada", "granizo", "heridos",
+                            "fallecidos"],
+    # Usada por _tipo_con_contexto_conflictivo() para "sequia" (ver
+    # 04-09-2026, contexto deportivo "beisbol"/"campeonato"/"sc"/"fc"): si
+    # ademas del contexto deportivo el articulo describe impacto real de
+    # sequia (no solo la palabra usada como metafora de racha sin triunfos),
+    # esta evidencia evita descartar el tipo.
+    "sequia": ["racionamiento", "embalse", "cosechas perdidas",
+               "cultivos perdidos", "animales muertos", "ganado muerto"],
 }
 
 # Un articulo que reporta que una entidad (USGS, Funvisis...) "ajusto"/
@@ -1343,12 +1373,22 @@ def _es_captura_fugitivo_sin_ataque_en_curso(texto_norm):
 # exclusiva de boletines de pronostico puro. Se evalua sobre el ARTICULO
 # COMPLETO, no la ventana (el pronostico lista muchos estados a la vez, sin
 # concentrar "inameh"/"onda tropical" cerca de cada uno en particular).
-def _es_boletin_pronostico_inameh_sin_inundacion_real(texto_norm):
+#
+# Generalizada (04-09-2026, PASADO_POR_FALLA_TECNICA): el mismo patron de
+# boletin (Inameh + onda tropical, listando muchos estados por igual, sin
+# ningun hecho ya ocurrido) tambien disparaba tipo=tormenta_electrica --
+# "Lluvias con descargas electricas afectaran a Venezuela... la interaccion
+# entre el paso de la Onda Tropical Nro. 45... generara... tormentas
+# electricas... en Bolivar, Amazonas..." es el mismo pronostico rutinario, no
+# una tormenta ya ocurrida. Se parametriza por `tipo` para reusar la misma
+# funcion con la evidencia fuerte propia de cada tipo, en vez de duplicar la
+# logica.
+def _es_boletin_pronostico_inameh_sin_evidencia_real(texto_norm, tipo):
     if not _contiene_palabra_clave(texto_norm, "inameh"):
         return False
     if not _contiene_palabra_clave(texto_norm, "onda tropical"):
         return False
-    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("inundacion", [])
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get(tipo, [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -1872,7 +1912,7 @@ _MARCADORES_RECLAMO_TERCERO_MULTIESTADO = [
     # estados de lluvia PRONOSTICADA para las proximas horas ("...que
     # abarcaran los estados Bolivar, Amazonas, Monagas, Sucre... y Zulia...
     # que afectaran las regiones de Bolivar, Amazonas, Delta Amacuro...").
-    # A diferencia de _es_boletin_pronostico_inameh_sin_inundacion_real()
+    # A diferencia de _es_boletin_pronostico_inameh_sin_evidencia_real()
     # (que exige AUSENCIA total de evidencia fuerte de inundacion en el
     # articulo, y por eso no aplica aqui -- el articulo SI tiene evidencia
     # real, solo que para Portuguesa, no para los demas 18 estados
@@ -2572,7 +2612,7 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "ataque_armado" and _es_captura_fugitivo_sin_ataque_en_curso(texto_completo_norm):
                     break
-                if tipo == "inundacion" and _es_boletin_pronostico_inameh_sin_inundacion_real(texto_completo_norm):
+                if tipo in ("inundacion", "tormenta_electrica") and _es_boletin_pronostico_inameh_sin_evidencia_real(texto_completo_norm, tipo):
                     break
                 if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
                     break
