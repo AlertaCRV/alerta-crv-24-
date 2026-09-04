@@ -1790,5 +1790,25 @@
   "infraestructura_agua::Nueva Esparta::2026-09-04": {
     "intentos": 2,
     "ultima_vez": "2026-09-04T05:01:32.475406+00:00"
+  },
+  "orden_publico::Miranda::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T13:45:24.932953+00:00"
+  },
+  "tormenta_electrica::Bolivar::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T13:45:28.297836+00:00"
+  },
+  "sequia::Monagas::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T13:45:31.804416+00:00"
+  },
+  "infraestructura_electrica::Carabobo::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T13:45:35.235752+00:00"
+  },
+  "tormenta_electrica::Lara::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T13:45:38.749267+00:00"
   }
 }
