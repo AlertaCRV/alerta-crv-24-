@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Aragua",
+    "municipio": "José Félix Ribas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/",
+        "fecha": "2026-09-04T16:42:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T16:42:40+00:00",
+    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
+    "fecha_deteccion": "2026-09-04T23:33:52.913278+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Aragua::2026-09-04",
+    "titulo": "Inundación en Municipio José Félix Ribas, Aragua",
+    "texto": "📌 Inundación en Municipio José Félix Ribas, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio José Félix Ribas, Aragua\n🕒 Hecho reportado: 04/09/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 7:33 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
+  },
+  {
+    "tipo": "emergencia_metro",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Coche",
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/",
+        "fecha": "2026-09-04T16:42:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T16:42:40+00:00",
+    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
+    "fecha_deteccion": "2026-09-04T23:33:56.279090+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-04",
+    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Parroquia Coche, Distrito Capital",
+    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Parroquia Coche, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Coche, Distrito Capital\n🕒 Hecho reportado: 04/09/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 7:33 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -3188,306 +3240,5 @@
     "clave_dedup": "sequia::Apure::2026-08-21",
     "titulo": "Sequía en Apure",
     "texto": "📌 Sequía en Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 21/08/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/ganaderos-de-apure-activan-plan-de-contingencia-ante-sequia-extrema-prevista-por-el-fenomeno-super-nino/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/victimas-de-la-crisis-electrica-al-menos-18-personas-murieron-electrocutadas-en-lo-que-va-de-2026/",
-        "fecha": "2026-08-21T21:57:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T21:57:26+00:00",
-    "fecha_evento_temprana": "2026-08-21T21:57:26+00:00",
-    "fecha_deteccion": "2026-08-21T23:29:51.442141+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Portuguesa::2026-08-21",
-    "titulo": "Incendio en Portuguesa",
-    "texto": "📌 Incendio en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 21/08/2026, 5:57 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 7:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/victimas-de-la-crisis-electrica-al-menos-18-personas-murieron-electrocutadas-en-lo-que-va-de-2026/"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Efecto Cocuyo - General",
-        "link": "https://efectococuyo.com/economia/departamento-de-estado-impulsa-capacitacion-de-banca-venezolana/",
-        "fecha": "2026-08-21T15:05:44+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T15:05:44+00:00",
-    "fecha_evento_temprana": "2026-08-21T15:05:44+00:00",
-    "fecha_deteccion": "2026-08-21T21:55:43.354647+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Distrito Capital::2026-08-21",
-    "titulo": "Ataque armado en Distrito Capital",
-    "texto": "📌 Ataque armado en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 21/08/2026, 11:05 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:55 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Efecto Cocuyo - General: https://efectococuyo.com/economia/departamento-de-estado-impulsa-capacitacion-de-banca-venezolana/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Aragua",
-    "municipio": "San Sebastián",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tubazo Digital (Guarico)",
-        "link": "https://eltubazodigital.com/es-oficial-se-derrumba-puente-que-une-a-guarico-aragua-video/",
-        "fecha": "2026-08-21T20:19:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T20:19:28+00:00",
-    "fecha_evento_temprana": "2026-08-21T20:19:28+00:00",
-    "fecha_deteccion": "2026-08-21T21:57:49.544915+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Aragua::2026-08-21",
-    "titulo": "Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 21/08/2026, 4:19 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tubazo Digital (Guarico): https://eltubazodigital.com/es-oficial-se-derrumba-puente-que-une-a-guarico-aragua-video/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tubazo Digital (Guarico)",
-        "link": "https://eltubazodigital.com/es-oficial-se-derrumba-puente-que-une-a-guarico-aragua-video/",
-        "fecha": "2026-08-21T20:19:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T20:19:28+00:00",
-    "fecha_evento_temprana": "2026-08-21T20:19:28+00:00",
-    "fecha_deteccion": "2026-08-21T21:58:14.145222+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Guarico::2026-08-21",
-    "titulo": "Deslizamiento/Derrumbe en Guarico",
-    "texto": "📌 Deslizamiento/Derrumbe en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 21/08/2026, 4:19 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:58 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tubazo Digital (Guarico): https://eltubazodigital.com/es-oficial-se-derrumba-puente-que-une-a-guarico-aragua-video/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 2.7,
-    "confirmado": false,
-    "num_fuentes": 4,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/",
-        "fecha": "2026-08-21T17:35:57+00:00"
-      },
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/618084/ovp-denuncia-la-muerte-de-un-paciente-renal-tras-contraer-hepatitis-en-fenix-lara/",
-        "fecha": "2026-08-21T18:14:41+00:00"
-      },
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/",
-        "fecha": "2026-08-21T19:19:55+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/",
-        "fecha": "2026-08-21T18:02:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T19:19:55+00:00",
-    "fecha_evento_temprana": "2026-08-21T17:35:57+00:00",
-    "fecha_deteccion": "2026-08-21T20:58:04.300158+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Lara::2026-08-21",
-    "titulo": "Salud pública en Lara",
-    "texto": "📌 Salud pública en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 21/08/2026, 3:19 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 4:58 p.m.\n📊 Fuentes independientes: 4 (score 2.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/\n  • Runrun.es: https://runrun.es/noticias/618084/ovp-denuncia-la-muerte-de-un-paciente-renal-tras-contraer-hepatitis-en-fenix-lara/\n  • La Verdad (Zulia): https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/\n  • La Manana (Falcon): https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/21/vecinos-de-la-orquidea-en-barcelona-pasan-las-de-cain-sin-agua-con-apagones-y-crateres-en-las-calles/",
-        "fecha": "2026-08-21T19:48:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T19:48:26+00:00",
-    "fecha_evento_temprana": "2026-08-21T19:48:26+00:00",
-    "fecha_deteccion": "2026-08-21T20:58:11.480319+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-20",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 21/08/2026, 3:48 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 4:58 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/21/vecinos-de-la-orquidea-en-barcelona-pasan-las-de-cain-sin-agua-con-apagones-y-crateres-en-las-calles/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Anzoategui",
-    "municipio": "Simón Rodríguez",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/21/ciudadanos-de-el-tigre-reportan-colapsos-en-sus-sectores-durante-las-lluvias-21ago/",
-        "fecha": "2026-08-21T19:10:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T19:10:33+00:00",
-    "fecha_evento_temprana": "2026-08-21T19:10:33+00:00",
-    "fecha_deteccion": "2026-08-21T21:00:20.057444+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Anzoategui::2026-08-21",
-    "titulo": "Inundación en Municipio Simón Rodríguez, Anzoategui",
-    "texto": "📌 Inundación en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 21/08/2026, 3:10 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/ciudadanos-de-el-tigre-reportan-colapsos-en-sus-sectores-durante-las-lluvias-21ago/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/21/garcia-urquiola-acuso-a-la-mesa-de-dialogo-de-prolongar-la-permanencia-de-delcy-rodriguez-en-el-poder-21ago/",
-        "fecha": "2026-08-21T17:45:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T17:45:00+00:00",
-    "fecha_evento_temprana": "2026-08-21T17:45:00+00:00",
-    "fecha_deteccion": "2026-08-21T21:01:08.551236+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::La Guaira::2026-08-21",
-    "titulo": "Inundación en La Guaira",
-    "texto": "📌 Inundación en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 1:45 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/garcia-urquiola-acuso-a-la-mesa-de-dialogo-de-prolongar-la-permanencia-de-delcy-rodriguez-en-el-poder-21ago/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/aumento-de-enfermedades-respiratorias-en-venezuela-clima-apagones-y-hacinamiento-elevan-el-riesgo/",
-        "fecha": "2026-08-21T18:51:52+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T18:51:52+00:00",
-    "fecha_evento_temprana": "2026-08-21T18:51:52+00:00",
-    "fecha_deteccion": "2026-08-21T21:01:57.186848+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::La Guaira::2026-08-20",
-    "titulo": "Falla eléctrica en La Guaira",
-    "texto": "📌 Falla eléctrica en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 2:51 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 5:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/aumento-de-enfermedades-respiratorias-en-venezuela-clima-apagones-y-hacinamiento-elevan-el-riesgo/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Yaracuy",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.6,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/ong-campo-exige-politicas-publicas-de-prevencion-ante-inundaciones-en-yaracuy/",
-        "fecha": "2026-08-21T15:26:07+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T15:26:07+00:00",
-    "fecha_evento_temprana": "2026-08-21T15:26:07+00:00",
-    "fecha_deteccion": "2026-08-21T19:55:53.171871+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Yaracuy::2026-08-21",
-    "titulo": "Inundación en Yaracuy",
-    "texto": "📌 Inundación en Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 21/08/2026, 11:26 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:55 p.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/ong-campo-exige-politicas-publicas-de-prevencion-ante-inundaciones-en-yaracuy/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Apure",
-    "municipio": "San Fernando",
-    "parroquia": "El Recreo",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/21/en-san-fernando-claman-por-resolucion-de-los-apagones-21ago/",
-        "fecha": "2026-08-21T16:15:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T16:15:00+00:00",
-    "fecha_evento_temprana": "2026-08-21T16:15:00+00:00",
-    "fecha_deteccion": "2026-08-21T19:59:16.808407+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Apure::2026-08-21",
-    "titulo": "Falla eléctrica en Parroquia El Recreo, Municipio San Fernando, Apure",
-    "texto": "📌 Falla eléctrica en Parroquia El Recreo, Municipio San Fernando, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Recreo, Municipio San Fernando, Apure\n🕒 Hecho reportado: 21/08/2026, 12:15 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:59 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/en-san-fernando-claman-por-resolucion-de-los-apagones-21ago/"
   }
 ]

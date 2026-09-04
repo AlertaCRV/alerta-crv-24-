@@ -1,18 +1,4 @@
 {
-  "infraestructura_agua::Nueva Esparta::2026-09-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-01T22:04:09.067397+00:00",
-    "fecha_evento_temprana": "2026-09-01T14:45:39+00:00",
-    "municipio": "Tubores"
-  },
-  "infraestructura_electrica::Bolivar::2026-09-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-01T22:04:12.453228+00:00",
-    "fecha_evento_temprana": "2026-09-01T16:11:47+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Zulia::2026-09-02": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -173,5 +159,19 @@
     "fecha_deteccion": "2026-09-04T19:41:50.717204+00:00",
     "fecha_evento_temprana": "2026-09-04T17:00:00+00:00",
     "municipio": "Chacao"
+  },
+  "inundacion::Aragua::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T23:33:52.913278+00:00",
+    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
+    "municipio": "José Félix Ribas"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T23:33:56.279090+00:00",
+    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
+    "municipio": null
   }
 }

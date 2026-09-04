@@ -17,14 +17,6 @@
   },
   {
     "periodo": "2026-09",
-    "tipo": "sequia",
-    "tipo_label": "Sequía",
-    "cerrado": false,
-    "generado": "2026-09-04T19:41:57.642037+00:00",
-    "total_eventos": 1
-  },
-  {
-    "periodo": "2026-09",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
@@ -70,6 +62,14 @@
     "cerrado": false,
     "generado": "2026-09-04T05:01:58.925280+00:00",
     "total_eventos": 15
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "emergencia_metro",
+    "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
+    "cerrado": false,
+    "generado": "2026-09-04T23:34:21.580812+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-09",
