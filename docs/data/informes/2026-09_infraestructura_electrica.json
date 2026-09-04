@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-03T00:45:20.951188+00:00",
+  "generado": "2026-09-04T00:29:22.354963+00:00",
   "actualizado_hasta": "2026-09-02T22:41:10.001833+00:00",
-  "total_eventos": 4,
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 64,
-    "actual": 4
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron solo 4 eventos de fallas eléctricas, una notable reducción frente a los 64 incidentes del mes anterior (agosto de 2026) (Comparación). Esta disminución se refleja en la menor cantidad de cortes y explosiones reportados en distintas regiones del país.\n\nEn el estado Bolívar, los ciudadanos continúan sufriendo frecuentes apagones y la explosión de transformadores, lo que afecta gravemente la calidad de vida, especialmente en las zonas mineras donde el sector comercial se ve golpeado (El Impulso). En Lara, los cortes eléctricos se dispararon un 637 % respecto al año pasado, con 722 interrupciones y 2.874 horas sin suministro en agosto, lo que indica una crisis récord en la región (El Impulso).\n\nEn Anzoátegui, habitantes de varios sectores de El Tigre, municipio Simón Rodríguez, alertaron sobre ramas que se encuentran sobre el tendido eléctrico y que podrían causar daños graves, una preocupación que se intensificó tras la Onda Tropical N° 41 del 25 de agosto (El Tiempo).\n\nEn el Zulia, un apagón generalizado ocurrido el 29 de agosto de 2026 a las 8:00 p.m. impactó la producción lechera del estado, interrumpiendo la cadena de frío y generando pérdidas para los ganaderos, según informó el vicepresidente de la Federación de Ganaderos de la Cuenca del Lago (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente 3 eventos de fallas eléctricas, una reducción notable frente a los 64 eventos del mes anterior (agosto de 2026). Esta disminución se refleja en la menor cantidad de cortes y en la menor gravedad de los incidentes reportados durante el período.\n\nEn el estado Bolívar, los ciudadanos continúan viviendo una crisis eléctrica marcada por frecuentes apagones y la explosión de transformadores, lo que afecta gravemente la calidad de vida de la población y golpea al sector comercial de las zonas mineras (El Impulso). \n\nEn Lara, la situación se agravó en términos relativos: los apagones se dispararon un 637 % en comparación con el año pasado, y en agosto de 2026 se registraron 722 cortes que sumaron 2 874 horas sin suministro eléctrico (El Impulso). \n\nEl 29 de agosto de 2026, alrededor de las 8:00 p.m., se produjo un apagón generalizado en la región occidental del país, afectando al estado Zulia y provocando pérdidas en la producción lechera debido a la interrupción de la cadena de frío; Gómel José Sierra, vicepresidente de la Federación de Ganaderos de la Cuenca del Lago, señaló que estos cortes comprometen la conservación de la leche (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -20,10 +20,6 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/el-tiempo-en-la-calle-ramas-entre-el-tendido-electrico-amenazan-con-causar-danos-en-sectores-de-el-tigre/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
