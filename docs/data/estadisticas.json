@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-04T23:21:58.764609+00:00",
+  "actualizado": "2026-09-04T23:34:15.919236+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-04T17:00:00+00:00"
   },
-  "total_eventos": 322,
+  "total_eventos": 324,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 65,
+    "inundacion": 66,
     "infraestructura_electrica": 74,
     "deslizamiento": 26,
     "colapso_estructural": 3,
@@ -23,13 +23,13 @@
     "infraestructura_agua": 14,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
-    "emergencia_metro": 2,
+    "emergencia_metro": 3,
     "ataque_armado": 5
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 53,
+      "total": 54,
       "confirmados": 4
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "estado": "Aragua",
-      "total": 18,
+      "total": 19,
       "confirmados": 0
     },
     {
@@ -185,7 +185,7 @@
       "infraestructura_electrica": 7,
       "colapso_estructural": 1,
       "sismo": 1,
-      "emergencia_metro": 2,
+      "emergencia_metro": 3,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
       "salud_publica": 2
@@ -285,7 +285,7 @@
     },
     "Aragua": {
       "orden_publico": 3,
-      "inundacion": 8,
+      "inundacion": 9,
       "infraestructura_electrica": 1,
       "accidente_transporte": 1,
       "deslizamiento": 3,
@@ -329,7 +329,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 267,
+    "sin_clasificar": 269,
     "medio": 4,
     "bajo": 8
   },
@@ -342,7 +342,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 6
+      "2026-09": 7
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -403,7 +403,8 @@
       "2026-08": 2
     },
     "emergencia_metro": {
-      "2026-08": 2
+      "2026-08": 2,
+      "2026-09": 1
     },
     "ataque_armado": {
       "2026-08": 5
