@@ -1792,23 +1792,39 @@
     "ultima_vez": "2026-09-04T05:01:32.475406+00:00"
   },
   "orden_publico::Miranda::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T13:45:24.932953+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T17:14:02.156046+00:00"
   },
   "tormenta_electrica::Bolivar::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T13:45:28.297836+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T17:13:20.487204+00:00"
   },
   "sequia::Monagas::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T13:45:31.804416+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T17:13:23.971283+00:00"
   },
   "infraestructura_electrica::Carabobo::2026-09-04": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-04T13:45:35.235752+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T17:13:27.394096+00:00"
   },
   "tormenta_electrica::Lara::2026-09-04": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-04T17:13:50.558174+00:00"
+  },
+  "inundacion::Zulia::2026-09-04": {
     "intentos": 1,
-    "ultima_vez": "2026-09-04T13:45:38.749267+00:00"
+    "ultima_vez": "2026-09-04T17:13:08.772489+00:00"
+  },
+  "orden_publico::Aragua::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T17:13:13.442831+00:00"
+  },
+  "salud_publica::Zulia::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T17:13:16.973837+00:00"
+  },
+  "sismo::Distrito Capital::2026-09-04": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-04T17:13:38.976232+00:00"
   }
 }
