@@ -77,10 +77,10 @@
     "municipio": null
   },
   "infraestructura_electrica::Lara::2026-09-02": {
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-02T22:41:10.001833+00:00",
-    "fecha_evento_temprana": "2026-09-02T14:30:00+00:00",
+    "fecha_deteccion": "2026-09-04T09:32:52.170051+00:00",
+    "fecha_evento_temprana": "2026-09-04T01:34:12+00:00",
     "municipio": null
   },
   "ataque_armado::Barinas::2026-09-02": {
@@ -137,6 +137,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-03T22:38:37.130174+00:00",
     "fecha_evento_temprana": "2026-09-03T15:46:35+00:00",
+    "municipio": null
+  },
+  "orden_publico::Merida::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T09:32:42.138669+00:00",
+    "fecha_evento_temprana": "2026-09-04T00:01:23+00:00",
+    "municipio": null
+  },
+  "inundacion::Lara::2026-09-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T09:32:45.531542+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:21:45+00:00",
+    "municipio": "Palavecino"
+  },
+  "tormenta_electrica::Lara::2026-09-03": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-04T09:32:55.541039+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:13:13+00:00",
     "municipio": null
   }
 }

@@ -1,6 +1,110 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/",
+        "fecha": "2026-09-04T00:01:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T00:01:23+00:00",
+    "fecha_evento_temprana": "2026-09-04T00:01:23+00:00",
+    "fecha_deteccion": "2026-09-04T09:32:42.138669+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Merida::2026-09-04",
+    "titulo": "Orden público en Merida",
+    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 03/09/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Lara",
+    "municipio": "Palavecino",
+    "parroquia": "José Gregorio Bastidas",
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/",
+        "fecha": "2026-09-03T22:21:45+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-03T22:21:45+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:21:45+00:00",
+    "fecha_deteccion": "2026-09-04T09:32:45.531542+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Lara::2026-09-03",
+    "titulo": "Inundación en Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara",
+    "texto": "📌 Inundación en Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara\n🕒 Hecho reportado: 03/09/2026, 6:21 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/",
+        "fecha": "2026-09-04T01:34:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T01:34:12+00:00",
+    "fecha_evento_temprana": "2026-09-04T01:34:12+00:00",
+    "fecha_deteccion": "2026-09-04T09:32:52.170051+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-02",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/09/2026, 9:34 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/"
+  },
+  {
+    "tipo": "tormenta_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/",
+        "fecha": "2026-09-03T22:13:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-03T22:13:13+00:00",
+    "fecha_evento_temprana": "2026-09-03T22:13:13+00:00",
+    "fecha_deteccion": "2026-09-04T09:32:55.541039+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "tormenta_electrica::Lara::2026-09-03",
+    "titulo": "Tormenta eléctrica en Lara",
+    "texto": "📌 Tormenta eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/09/2026, 6:13 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Miranda",
     "municipio": null,
     "parroquia": null,
@@ -107,32 +211,6 @@
     "clave_dedup": "inundacion::Portuguesa::2026-09-02",
     "titulo": "Inundación en Municipio Guanare, Portuguesa",
     "texto": "📌 Inundación en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 02/09/2026, 9:33 p.m.\n🔎 Detectado por el sistema: 03/09/2026, 5:46 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/",
-        "fecha": "2026-09-02T14:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T14:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-02T14:30:00+00:00",
-    "fecha_deteccion": "2026-09-02T22:41:10.001833+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-02",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 02/09/2026, 10:30 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 6:41 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
   },
   {
     "tipo": "infraestructura_agua",
@@ -3603,291 +3681,5 @@
     "clave_dedup": "incendio::Distrito Capital::2026-08-21",
     "titulo": "Incendio en Distrito Capital",
     "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 21/08/2026, 12:30 a.m.\n🔎 Detectado por el sistema: 21/08/2026, 8:06 a.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/incendio-afecto-una-carpinteria-en-la-avenida-andres-bello-de-caracas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/20/crece-preocupacion-de-nuevo-apagon-en-venezuela-tras-fuerte-fluctuacion-de-luz-la-noche-del-20ago/",
-        "fecha": "2026-08-21T01:12:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T01:12:46+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:12:46+00:00",
-    "fecha_deteccion": "2026-08-21T07:58:33.767805+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-21",
-    "titulo": "Falla eléctrica en Carabobo",
-    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 20/08/2026, 9:12 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:58 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/crece-preocupacion-de-nuevo-apagon-en-venezuela-tras-fuerte-fluctuacion-de-luz-la-noche-del-20ago/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/20/ya-basta-no-se-aguanta-en-guarico-protestaron-frente-a-corpoelec-por-los-apagones/",
-        "fecha": "2026-08-21T00:17:50+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T00:17:50+00:00",
-    "fecha_evento_temprana": "2026-08-21T00:17:50+00:00",
-    "fecha_deteccion": "2026-08-21T07:58:40.487768+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Guarico::2026-08-21",
-    "titulo": "Falla eléctrica en Guarico",
-    "texto": "📌 Falla eléctrica en Guarico\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 20/08/2026, 8:17 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:58 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/ya-basta-no-se-aguanta-en-guarico-protestaron-frente-a-corpoelec-por-los-apagones/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Trujillo",
-    "municipio": "Bocono",
-    "parroquia": "Ayacucho",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad Trujillo",
-        "link": "https://ciudadtrujillo.com/?p=54237",
-        "fecha": "2026-08-21T01:16:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T01:16:03+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:16:03+00:00",
-    "fecha_deteccion": "2026-08-21T07:59:21.172389+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Trujillo::2026-08-21",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Ayacucho, Municipio Bocono, Trujillo",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Ayacucho, Municipio Bocono, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Ayacucho, Municipio Bocono, Trujillo\n🕒 Hecho reportado: 20/08/2026, 9:16 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:59 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=54237"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Trujillo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad Trujillo",
-        "link": "https://ciudadtrujillo.com/?p=54224",
-        "fecha": "2026-08-21T01:08:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T01:08:03+00:00",
-    "fecha_evento_temprana": "2026-08-21T01:08:03+00:00",
-    "fecha_deteccion": "2026-08-21T07:59:32.665797+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Trujillo::2026-08-21",
-    "titulo": "Incendio en Trujillo",
-    "texto": "📌 Incendio en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 20/08/2026, 9:08 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 3:59 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=54224"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Noticia de Barinas",
-        "link": "https://lanoticiadebarinas.com/2026/08/destaco-antonio-bastidadenuncia-colapso-vial-abandono-de-servicios-ydeterioro-de-la-infraestructura-en-barinas/",
-        "fecha": "2026-08-20T23:52:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T23:52:53+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:52:53+00:00",
-    "fecha_deteccion": "2026-08-21T05:21:13.775671+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "vialidad::Barinas::2026-08-20",
-    "titulo": "Incidente vial en Barinas",
-    "texto": "📌 Incidente vial en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 20/08/2026, 7:52 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/destaco-antonio-bastidadenuncia-colapso-vial-abandono-de-servicios-ydeterioro-de-la-infraestructura-en-barinas/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Noticia de Barinas",
-        "link": "https://lanoticiadebarinas.com/2026/08/vecino-hizo-llamado-de-alertase-revento-tuberia-matriz-en-los-proceres/",
-        "fecha": "2026-08-20T23:28:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T23:28:46+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:28:46+00:00",
-    "fecha_deteccion": "2026-08-21T05:21:17.128095+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Barinas::2026-08-20",
-    "titulo": "Falla de agua en Barinas",
-    "texto": "📌 Falla de agua en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 20/08/2026, 7:28 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/08/vecino-hizo-llamado-de-alertase-revento-tuberia-matriz-en-los-proceres/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "Cabimas",
-    "parroquia": "Germán Ríos Linares",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/",
-        "fecha": "2026-08-20T23:26:30+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T23:26:30+00:00",
-    "fecha_evento_temprana": "2026-08-20T23:26:30+00:00",
-    "fecha_deteccion": "2026-08-21T05:21:46.957740+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-08-20",
-    "titulo": "Falla eléctrica en Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia",
-    "texto": "📌 Falla eléctrica en Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Germán Ríos Linares, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 20/08/2026, 7:26 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 1:21 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/plataforma-unitaria-de-cabimas-protesto-frente-a-corpoelec-exigiendo-el-fin-de-los-apagones/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": "Boquerón",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/20/temen-una-epidemia-urbanizacion-godofredo-gonzalez-en-maturin-esta-inundada-por-cloacas/",
-        "fecha": "2026-08-20T20:18:58+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:18:58+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:18:58+00:00",
-    "fecha_deteccion": "2026-08-20T23:05:40.207047+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Monagas::2026-08-20",
-    "titulo": "Falla de agua en Parroquia Boquerón, Municipio Maturín, Monagas",
-    "texto": "📌 Falla de agua en Parroquia Boquerón, Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Boquerón, Municipio Maturín, Monagas\n🕒 Hecho reportado: 20/08/2026, 4:18 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/temen-una-epidemia-urbanizacion-godofredo-gonzalez-en-maturin-esta-inundada-por-cloacas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": "La Luz",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/",
-        "fecha": "2026-08-20T20:10:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:10:28+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:10:28+00:00",
-    "fecha_deteccion": "2026-08-20T23:05:43.580251+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Barinas::2026-08-20",
-    "titulo": "Orden público en Parroquia La Luz, Barinas",
-    "texto": "📌 Orden público en Parroquia La Luz, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia La Luz, Barinas\n🕒 Hecho reportado: 20/08/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/20/paro-y-protesta-la-estrategia-de-la-coalicion-sindical-de-barinas-para-presionar-a-la-mesa-de-negociacion/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Delta Amacuro",
-    "municipio": "Antonio Díaz",
-    "parroquia": "Santos De Abelgas",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/20/los-habitantes-del-delta-amacuro-aprovechan-la-crecida-del-rio-orinoco-para-extraer-madera-de-zonas-boscosas/",
-        "fecha": "2026-08-20T20:20:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T20:20:02+00:00",
-    "fecha_evento_temprana": "2026-08-20T20:20:02+00:00",
-    "fecha_deteccion": "2026-08-20T23:06:50.860637+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Delta Amacuro::2026-08-20",
-    "titulo": "Inundación en Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro",
-    "texto": "📌 Inundación en Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Santos De Abelgas, Municipio Antonio Díaz, Delta Amacuro\n🕒 Hecho reportado: 20/08/2026, 4:20 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/20/los-habitantes-del-delta-amacuro-aprovechan-la-crecida-del-rio-orinoco-para-extraer-madera-de-zonas-boscosas/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/",
-        "fecha": "2026-08-20T19:42:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-20T19:42:35+00:00",
-    "fecha_evento_temprana": "2026-08-20T19:42:35+00:00",
-    "fecha_deteccion": "2026-08-20T23:10:05.726199+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Zulia::2026-08-20",
-    "titulo": "Salud pública en Zulia",
-    "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 20/08/2026, 3:42 p.m.\n🔎 Detectado por el sistema: 20/08/2026, 7:10 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/mision-nevado-avanza-con-el-plan-nacional-de-control-integral-de-la-rabia-en-zulia-la-meta-es-inmunizar-a-100-mil-mascotas/"
   }
 ]
