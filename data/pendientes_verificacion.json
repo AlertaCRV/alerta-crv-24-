@@ -1856,7 +1856,11 @@
     "ultima_vez": "2026-09-05T01:24:52.013075+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-09-05": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-05T13:35:57.050011+00:00"
+  },
+  "deslizamiento::La Guaira::2026-09-05": {
     "intentos": 1,
-    "ultima_vez": "2026-09-05T01:25:03.684848+00:00"
+    "ultima_vez": "2026-09-05T13:36:00.436865+00:00"
   }
 }
