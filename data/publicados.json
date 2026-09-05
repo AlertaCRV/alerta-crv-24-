@@ -1,25 +1,4 @@
 {
-  "inundacion::Lara::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T13:38:34.432689+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "municipio": "Moran"
-  },
-  "inundacion::Tachira::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T13:38:38.618914+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "municipio": null
-  },
-  "inundacion::Yaracuy::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T13:39:01.729218+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "municipio": "San Felipe"
-  },
   "infraestructura_electrica::Anzoategui::2026-09-02": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -180,5 +159,12 @@
     "fecha_deteccion": "2026-09-05T10:46:14.173663+00:00",
     "fecha_evento_temprana": "2026-09-04T23:01:44+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T16:16:59.622055+00:00",
+    "fecha_evento_temprana": "2026-09-05T12:20:07+00:00",
+    "municipio": "Simón Rodríguez"
   }
 }

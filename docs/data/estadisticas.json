@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-05T10:46:15.775196+00:00",
+  "actualizado": "2026-09-05T16:17:03.658172+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-05T00:40:02+00:00"
+    "hasta": "2026-09-05T12:20:07+00:00"
   },
-  "total_eventos": 327,
+  "total_eventos": 328,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 75,
+    "infraestructura_electrica": 76,
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 59,
@@ -53,6 +53,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Anzoategui",
+      "total": 17,
+      "confirmados": 0
+    },
+    {
       "estado": "Miranda",
       "total": 17,
       "confirmados": 2
@@ -61,11 +66,6 @@
       "estado": "Carabobo",
       "total": 16,
       "confirmados": 1
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 16,
-      "confirmados": 0
     },
     {
       "estado": "Yaracuy",
@@ -215,7 +215,7 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -330,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 272,
+    "sin_clasificar": 273,
     "medio": 4,
     "bajo": 8
   },
@@ -348,7 +348,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 6
+      "2026-09": 7
     },
     "deslizamiento": {
       "2026-07": 3,
