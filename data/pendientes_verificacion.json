@@ -1855,12 +1855,36 @@
     "intentos": 1,
     "ultima_vez": "2026-09-05T01:24:52.013075+00:00"
   },
-  "deslizamiento::La Guaira::2026-09-05": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-05T16:17:03.097820+00:00"
-  },
   "deslizamiento::Tachira::2026-09-05": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-05T18:26:05.261623+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-05": {
     "intentos": 1,
-    "ultima_vez": "2026-09-05T16:16:56.176155+00:00"
+    "ultima_vez": "2026-09-05T18:25:58.430407+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:01.965634+00:00"
+  },
+  "infraestructura_agua::Sucre::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:08.781690+00:00"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:12.319237+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:16.020447+00:00"
+  },
+  "deslizamiento::Aragua::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:19.425983+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T18:26:30.981134+00:00"
   }
 }
