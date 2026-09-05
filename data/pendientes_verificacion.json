@@ -1835,10 +1835,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-04T23:34:15.020161+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-09-05": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-05T06:13:38.480506+00:00"
-  },
   "orden_publico::Distrito Capital::2026-09-05": {
     "intentos": 2,
     "ultima_vez": "2026-09-05T06:13:42.025363+00:00"
@@ -1862,13 +1858,5 @@
   "infraestructura_electrica::Anzoategui::2026-09-05": {
     "intentos": 1,
     "ultima_vez": "2026-09-05T01:25:03.684848+00:00"
-  },
-  "orden_publico::Miranda::2026-09-05": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-05T06:13:48.801801+00:00"
-  },
-  "explosion::Zulia::2026-09-05": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-05T06:13:52.281104+00:00"
   }
 }

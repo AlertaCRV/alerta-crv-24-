@@ -1,5 +1,93 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.8,
+    "confirmado": false,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/",
+        "fecha": "2026-09-04T23:45:40+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/",
+        "fecha": "2026-09-04T23:57:00+00:00"
+      },
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/",
+        "fecha": "2026-09-04T23:06:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T23:57:00+00:00",
+    "fecha_evento_temprana": "2026-09-04T23:06:04+00:00",
+    "fecha_deteccion": "2026-09-05T10:46:07.420239+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-04",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 04/09/2026, 7:57 p.m.\n🔎 Detectado por el sistema: 05/09/2026, 6:46 a.m.\n📊 Fuentes independientes: 3 (score 1.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/\n  • Notiapure: https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/",
+        "fecha": "2026-09-05T00:40:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T00:40:02+00:00",
+    "fecha_evento_temprana": "2026-09-05T00:40:02+00:00",
+    "fecha_deteccion": "2026-09-05T10:46:10.785444+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-05",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 04/09/2026, 8:40 p.m.\n🔎 Detectado por el sistema: 05/09/2026, 6:46 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/"
+  },
+  {
+    "tipo": "explosion",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/",
+        "fecha": "2026-09-04T23:01:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-04T23:01:44+00:00",
+    "fecha_evento_temprana": "2026-09-04T23:01:44+00:00",
+    "fecha_deteccion": "2026-09-05T10:46:14.173663+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "explosion::Zulia::2026-09-04",
+    "titulo": "Explosión en Zulia",
+    "texto": "📌 Explosión en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 04/09/2026, 7:01 p.m.\n🔎 Detectado por el sistema: 05/09/2026, 6:46 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Aragua",
     "municipio": "José Félix Ribas",
@@ -2975,270 +3063,5 @@
     "clave_dedup": "incendio::Monagas::2026-08-22",
     "titulo": "Incendio en Municipio Maturín, Monagas",
     "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 22/08/2026, 9:02 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 10:04 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/bomberos-controlan-incendio-en-local-del-polideportivo-de-maturin/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/",
-        "fecha": "2026-08-22T09:20:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T09:20:05+00:00",
-    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
-    "fecha_deteccion": "2026-08-22T10:29:27.328960+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Aragua::2026-08-22",
-    "titulo": "Orden público en Aragua",
-    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 22/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 6:29 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/",
-        "fecha": "2026-08-22T09:20:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T09:20:05+00:00",
-    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
-    "fecha_deteccion": "2026-08-22T10:29:51.480123+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Carabobo::2026-08-22",
-    "titulo": "Orden público en Carabobo",
-    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 22/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 6:29 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/",
-        "fecha": "2026-08-22T09:20:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T09:20:05+00:00",
-    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
-    "fecha_deteccion": "2026-08-22T10:30:15.632861+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Merida::2026-08-22",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 22/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 6:30 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Nueva Esparta",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/",
-        "fecha": "2026-08-22T09:20:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T09:20:05+00:00",
-    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
-    "fecha_deteccion": "2026-08-22T10:30:39.787533+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Nueva Esparta::2026-08-22",
-    "titulo": "Orden público en Nueva Esparta",
-    "texto": "📌 Orden público en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 22/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 6:30 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Trujillo",
-    "municipio": "Valera",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/",
-        "fecha": "2026-08-22T09:20:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T09:20:05+00:00",
-    "fecha_evento_temprana": "2026-08-22T09:20:05+00:00",
-    "fecha_deteccion": "2026-08-22T10:31:03.935273+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Trujillo::2026-08-22",
-    "titulo": "Orden público en Municipio Valera, Trujillo",
-    "texto": "📌 Orden público en Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valera, Trujillo\n🕒 Hecho reportado: 22/08/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 6:31 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-jubilados-de-cantv-exigen-en-varios-estados-de-venezuela-restitucion-de-beneficios-laborales/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": "Bolívar",
-    "parroquia": "Barinitas",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/cierran-paso-entre-merida-y-barinas/",
-        "fecha": "2026-08-22T04:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T04:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-22T04:00:00+00:00",
-    "fecha_deteccion": "2026-08-22T05:18:07.965611+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Barinas::2026-08-22",
-    "titulo": "Deslizamiento/Derrumbe en Parroquia Barinitas, Municipio Bolívar, Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Barinitas, Municipio Bolívar, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Barinitas, Municipio Bolívar, Barinas\n🕒 Hecho reportado: 22/08/2026, 12:00 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 1:18 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/cierran-paso-entre-merida-y-barinas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Tachira",
-    "municipio": "Rafael Urdaneta",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/jubilados-de-cantv-reclaman-cobertura-medica-y-200-dolares/",
-        "fecha": "2026-08-22T04:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T04:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-22T04:00:00+00:00",
-    "fecha_deteccion": "2026-08-22T05:18:32.256267+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Tachira::2026-08-22",
-    "titulo": "Orden público en Municipio Rafael Urdaneta, Tachira",
-    "texto": "📌 Orden público en Municipio Rafael Urdaneta, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Rafael Urdaneta, Tachira\n🕒 Hecho reportado: 22/08/2026, 12:00 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 1:18 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/jubilados-de-cantv-reclaman-cobertura-medica-y-200-dolares/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos",
-        "fecha": "2026-08-22T01:30:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T01:30:55+00:00",
-    "fecha_evento_temprana": "2026-08-22T01:30:55+00:00",
-    "fecha_deteccion": "2026-08-22T04:09:47.504860+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": 7.2,
-    "tambien_mencionado_en": [
-      "Distrito Capital",
-      "Miranda"
-    ],
-    "clave_dedup": "sismo::La Guaira::2026-08-22::mag7.2",
-    "titulo": "Sismo en La Guaira",
-    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/08/2026, 9:30 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 12:09 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos/?utm_source=rss&utm_medium=rss&utm_campaign=la-asamblea-nacional-aprobo-ley-para-impulsar-la-construccion-de-viviendas-tras-los-terremotos"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/08/21/video-comunidades-del-oeste-de-barquisimeto-protestan-ante-sede-regional-de-hidroven-tras-mas-de-un-mes-sin-agua-21ago/",
-        "fecha": "2026-08-22T00:06:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T00:06:26+00:00",
-    "fecha_evento_temprana": "2026-08-22T00:06:26+00:00",
-    "fecha_deteccion": "2026-08-22T03:29:22.632707+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Lara::2026-08-22",
-    "titulo": "Falla de agua en Lara",
-    "texto": "📌 Falla de agua en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 21/08/2026, 8:06 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 11:29 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/08/21/video-comunidades-del-oeste-de-barquisimeto-protestan-ante-sede-regional-de-hidroven-tras-mas-de-un-mes-sin-agua-21ago/"
-  },
-  {
-    "tipo": "sequia",
-    "ubicacion": "Apure",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/ganaderos-de-apure-activan-plan-de-contingencia-ante-sequia-extrema-prevista-por-el-fenomeno-super-nino/",
-        "fecha": "2026-08-21T22:51:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-21T22:51:13+00:00",
-    "fecha_evento_temprana": "2026-08-21T22:51:13+00:00",
-    "fecha_deteccion": "2026-08-21T23:57:13.520427+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "sequia::Apure::2026-08-21",
-    "titulo": "Sequía en Apure",
-    "texto": "📌 Sequía en Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 21/08/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 21/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/ganaderos-de-apure-activan-plan-de-contingencia-ante-sequia-extrema-prevista-por-el-fenomeno-super-nino/"
   }
 ]

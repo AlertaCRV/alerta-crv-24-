@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-04T23:34:15.919236+00:00",
+  "actualizado": "2026-09-05T10:46:15.775196+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-04T17:00:00+00:00"
+    "hasta": "2026-09-05T00:40:02+00:00"
   },
-  "total_eventos": 324,
+  "total_eventos": 327,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 74,
+    "infraestructura_electrica": 75,
     "deslizamiento": 26,
     "colapso_estructural": 3,
-    "orden_publico": 58,
+    "orden_publico": 59,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -19,7 +19,7 @@
     "sismo": 8,
     "escasez_combustible": 1,
     "sequia": 6,
-    "explosion": 1,
+    "explosion": 2,
     "infraestructura_agua": 14,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
@@ -38,19 +38,24 @@
       "confirmados": 1
     },
     {
+      "estado": "Zulia",
+      "total": 23,
+      "confirmados": 4
+    },
+    {
       "estado": "Barinas",
       "total": 22,
       "confirmados": 1
     },
     {
-      "estado": "Zulia",
-      "total": 21,
-      "confirmados": 4
-    },
-    {
       "estado": "Aragua",
       "total": 19,
       "confirmados": 0
+    },
+    {
+      "estado": "Miranda",
+      "total": 17,
+      "confirmados": 2
     },
     {
       "estado": "Carabobo",
@@ -61,11 +66,6 @@
       "estado": "Anzoategui",
       "total": 16,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 16,
-      "confirmados": 2
     },
     {
       "estado": "Yaracuy",
@@ -167,14 +167,15 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
       "orden_publico": 3,
       "sismo": 1,
       "salud_publica": 1,
-      "ataque_armado": 1
+      "ataque_armado": 1,
+      "explosion": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -260,7 +261,7 @@
       "explosion": 1,
       "deslizamiento": 2,
       "inundacion": 5,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "ataque_armado": 1
     },
     "Nueva Esparta": {
@@ -329,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 269,
+    "sin_clasificar": 272,
     "medio": 4,
     "bajo": 8
   },
@@ -347,7 +348,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 5
+      "2026-09": 6
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -361,7 +362,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 4
+      "2026-09": 5
     },
     "salud_publica": {
       "2026-07": 1,
@@ -390,7 +391,8 @@
       "2026-08": 6
     },
     "explosion": {
-      "2026-08": 1
+      "2026-08": 1,
+      "2026-09": 1
     },
     "infraestructura_agua": {
       "2026-08": 12,
