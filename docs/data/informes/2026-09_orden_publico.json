@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-04T00:29:54.981251+00:00",
-  "actualizado_hasta": "2026-09-03T22:38:30.392811+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-05T01:27:23.246261+00:00",
+  "actualizado_hasta": "2026-09-04T19:41:50.717204+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de orden público, una caída drástica respecto a los cincuenta y dos registrados en el mes anterior (2026-08) (Comparación proporcionada). \n\nEl martes de esa semana, familiares de presos políticos marcharon por las calles de Caracas exigiendo la libertad de sus seres queridos y señalando que la liberación no debe quedar en segundo plano frente a negociaciones económicas o petroleras (La Prensa de Lara). \n\nEse mismo jueves, 3 de septiembre, funcionarios de Polichacao impidieron que miembros de la Coalición Sindical avanzaran hacia el Hotel Marriott, donde se aloja la misión diplomática de Estados Unidos, instalando un piquete en la calle Mohedano y generando enfrentamientos (Runrun.es).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron cuatro incidentes de orden público, una disminución notable respecto a los 52 eventos del mes anterior (2026‑08). Todos los hechos ocurrieron el 3 de septiembre y se concentraron en la región andina y la capital, Caracas.\n\nEn Mérida, ciudadanos y representantes de organizaciones no gubernamentales realizaron una manifestación pacífica frente a la sede del Ministerio Público, exigiendo el sobreseimiento definitivo de causas por motivos políticos y el cierre de centros de detención arbitraria (El Pitazo). La protesta se desarrolló el 3 de septiembre y se centró en la libertad de los presos políticos.\n\nEn Caracas, familiares de presos políticos organizaron una marcha para reclamar la liberación de sus seres queridos, insistiendo en que la cuestión no debe quedar en segundo plano frente a negociaciones económicas o del sector petrolero (La Prensa de Lara). La movilización tuvo lugar el mismo martes 3 de septiembre.\n\nEse mismo día, militantes de Vente Venezuela se concentraron en tres parroquias de la capital —Sucre, San Pedro y La Vega— para exigir la elaboración de un cronograma electoral que conduzca a elecciones presidenciales y la libertad de todos los presos políticos (Primicia). La convocatoria se realizó a partir de las 5:00 p.m. y se documentó mediante imágenes y videos difundidos por la organización.\n\nFinalmente, una protesta de la Coalición Sindical contra los acuerdos petroleros fue impedida por funcionarios de Polichacao en la calle Mohedano, frente al Hotel Marriott donde se aloja la misión diplomática de Estados Unidos. Los manifestantes intentaron pasar el piquete a la fuerza, lo que derivó en enfrentamientos (Runrun.es).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
+    },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
     },
     {
       "nombre": "Runrun.es",

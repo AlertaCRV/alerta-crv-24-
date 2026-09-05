@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-04T05:01:58.925280+00:00",
-  "actualizado_hasta": "2026-09-03T22:38:37.130174+00:00",
-  "total_eventos": 15,
+  "generado": "2026-09-05T01:26:12.625569+00:00",
+  "actualizado_hasta": "2026-09-04T23:33:56.279090+00:00",
+  "total_eventos": 23,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 277,
-    "actual": 15
+    "anterior": 273,
+    "actual": 23
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente 15 eventos de emergencia, una disminución notable respecto a los 277 eventos del mes anterior (agosto de 2026) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados en todas las categorías monitoreadas.\n\nEl hecho más grave registrado fue un incidente vial en el Distrito Capital, calificado como de severidad crítica. A las 5:10 a.m. del miércoles se produjo un choque entre dos autobuses en el kilómetro 133 de la Autopista Regional del Centro (ARC), resultando en tres muertos y un herido (El Periodico de Monagas).\n\nDurante el mismo período se reportaron varios fenómenos de menor magnitud pero con impactos significativos. En el estado Lara se dispararon los apagones, alcanzando un incremento del 637 % respecto al año anterior, con 722 cortes y 2.874 horas sin suministro eléctrico en agosto (El Impulso (Lara)). Asimismo, fuertes lluvias provocaron anegaciones e inundaciones de viviendas en sectores de Guanare, estado Portuguesa (El Impulso (Lara)). En Palo Verde, zona industrial del estado Aragua, un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos, movilizando alrededor de 120 efectivos de bomberos y protección civil (El Siglo (Aragua)).\n\nOtros reportes incluyeron la inspección de deslizamientos por lluvias en Táchira (La Prensa de Monagas), la falta de agua por más de seis meses en el municipio Tubores, Nueva Esparta (Reporte Confidencial (Nueva Esparta)), y enfrentamientos entre manifestantes y funcionarios de Polichacao durante una protesta contra acuerdos petroleros en Caracas (Runrun.es). Además, varios estados como Caracas, Carabobo, La Guira, Lara, Táchira y Yaracuy reportaron inundaciones y vías inundadas tras la Onda Tropical 43 (Turimiquire (Sucre)).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 23 eventos de emergencia, una caída significativa respecto a los 273 eventos del mes anterior (agosto de 2026) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados en distintas regiones del país.\n\nEl hecho más grave registrado en el Distrito Capital fue un choque entre dos autobuses en la Autopista Regional del Centro, kilómetro 133, que dejó tres muertos y un herido durante la madrugada del miércoles (El Periodico de Monagas). La severidad del incidente fue catalogada como crítica.\n\nEn el estado Lara se observó un aumento extraordinario de los cortes eléctricos, que se dispararon un 637 % en comparación con el mismo período del año anterior, alcanzando 722 interrupciones y 2.874 horas sin suministro en agosto (El Impulso). Las fallas se agravaron durante las fuertes lluvias del 3 de septiembre, cuando usuarios reportaron bajones de luz y caída de árboles sobre la infraestructura eléctrica (La Prensa de Lara).\n\nLas precipitaciones intensas también provocaron inundaciones en Guanare, estado Portuguesa, donde se reportaron anegaciones de viviendas y el colapso parcial de un canal en la comunidad local (El Impulso). En Barquisimeto, Lara, las lluvias y vientos huracanados dejaron al menos 36 árboles caídos, daños estructurales en centros comerciales y anegaciones de calles, especialmente en la zona norte del municipio Iribarren (El Pitazo; La Prensa de Lara).\n\nDurante la misma semana se registraron movilizaciones sociales: en Mérida, ciudadanos y ONG protestaron frente al Ministerio Público exigiendo la libertad de presos políticos (El Pitazo), mientras que en Caracas familiares de presos políticos realizaron una marcha similar (La Prensa de Lara). Además, el grupo político Vente Venezuela concentró a sus militantes en tres parroquias de la capital para reclamar un cronograma electoral y la liberación de los detenidos (Primicia). En el estado Aragua, un incendio de gran magnitud consumió una fábrica de cosméticos en Palo Verde, movilizando a aproximadamente 120 efectivos de bomberos y protección civil (El Siglo). Finalmente, en Táchira, las fuertes lluvias desencadenaron deslizamientos que dañaron infraestructura vial y viviendas de diversa magnitud (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -30,6 +30,14 @@
       "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
     },
@@ -42,8 +50,20 @@
       "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
     },
     {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
+    },
+    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
@@ -52,6 +72,10 @@
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -68,6 +92,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/04/sectores-productivos-del-estado-carabobo-solicitaron-que-atiendan-las-fallas-electricas-del-estado/"
     }
   ]
 }

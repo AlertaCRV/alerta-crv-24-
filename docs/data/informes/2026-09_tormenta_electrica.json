@@ -3,15 +3,15 @@
   "tipo": "tormenta_electrica",
   "tipo_label": "Tormenta eléctrica",
   "cerrado": false,
-  "generado": "2026-09-04T09:33:02.411679+00:00",
+  "generado": "2026-09-05T01:27:35.518169+00:00",
   "actualizado_hasta": "2026-09-04T09:32:55.541039+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 6,
+    "anterior": 2,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró una única incidencia de tormenta eléctrica, lo que representa una disminución respecto al mes anterior en el que se contabilizaron seis eventos (comparación con el período anterior (2026-08): 6 evento(s) registrados entonces vs. 1 en este período).\n\nEl único suceso reportado ocurrió el jueves 3 de septiembre en los municipios de Iribarren y Palavecino, estado Lara, donde la lluvia intensa provocó la caída de treinta y seis árboles, generando afectaciones en la infraestructura local (La Prensa de Lara). El director regional de Protección Civil y Administración de Desastres, Luis Mujica, informó que el equipo del Sistema Nacional de Gestión de Riesgo permaneció operativo para mitigar los daños y atender a la población afectada (La Prensa de Lara).\n\nAnte la magnitud de los daños, funcionarios del Sistema Nacional de Gestión de Riesgo fueron desplegados en ambas localidades para realizar labores de limpieza, asegurar la zona y brindar apoyo a los residentes (La Prensa de Lara). La respuesta coordinada de Protección Civil busca evitar mayores riesgos y restaurar la normalidad en las áreas impactadas.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un único evento de tormenta eléctrica en el estado Lara, lo que representa una disminución respecto al mes anterior, donde se habían contabilizado dos eventos (Comparación con el período anterior (2026-08): 2 evento(s) registrados entonces vs. 1 en este período).\n\nEl 3 de septiembre, una fuerte lluvia acompañada de actividad eléctrica provocó la caída de 36 árboles en los municipios de Iribarren y Palavecino, generando afectaciones en la infraestructura local (La Prensa de Lara). Luis Mujica, director regional de Protección Civil y Administración de Desastres en Lara, confirmó que las condiciones meteorológicas se presentaron durante la tarde de ese jueves (La Prensa de Lara).\n\nAnte la emergencia, el Sistema Nacional de Gestión de Riesgo mantuvo operativas sus labores y desplegó funcionarios al área afectada para mitigar los daños y atender a la población afectada (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
