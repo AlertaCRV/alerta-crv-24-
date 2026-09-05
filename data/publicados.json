@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Anzoategui::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T20:05:39.622199+00:00",
-    "fecha_evento_temprana": "2026-09-02T16:46:20+00:00",
-    "municipio": "Simón Rodríguez"
-  },
-  "infraestructura_agua::Sucre::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T20:05:50.666638+00:00",
-    "fecha_evento_temprana": "2026-09-02T09:20:06+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Lara::2026-09-02": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -172,6 +158,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-05T18:26:42.641932+00:00",
     "fecha_evento_temprana": "2026-09-05T13:30:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Tachira::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T20:39:09.892876+00:00",
+    "fecha_evento_temprana": "2026-09-05T14:25:07+00:00",
     "municipio": null
   }
 }
