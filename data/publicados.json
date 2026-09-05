@@ -166,5 +166,40 @@
     "fecha_deteccion": "2026-09-05T20:39:09.892876+00:00",
     "fecha_evento_temprana": "2026-09-05T14:25:07+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T22:19:59.517654+00:00",
+    "fecha_evento_temprana": "2026-09-05T17:24:16+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Sucre::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T22:20:09.898116+00:00",
+    "fecha_evento_temprana": "2026-09-05T14:30:14+00:00",
+    "municipio": "Bermúdez"
+  },
+  "infraestructura_agua::Nueva Esparta::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T22:20:13.415378+00:00",
+    "fecha_evento_temprana": "2026-09-05T17:20:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-09-05": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T22:20:32.029527+00:00",
+    "fecha_evento_temprana": "2026-09-05T17:00:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Aragua::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T22:20:43.664696+00:00",
+    "fecha_evento_temprana": "2026-09-05T16:18:34+00:00",
+    "municipio": "San Sebastián"
   }
 }
