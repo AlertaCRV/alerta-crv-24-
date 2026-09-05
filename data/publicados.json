@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Zulia::2026-09-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T09:03:58.973724+00:00",
-    "fecha_evento_temprana": "2026-09-02T01:00:05+00:00",
-    "municipio": null
-  },
-  "orden_publico::Distrito Capital::2026-09-01": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-02T09:04:10.895632+00:00",
-    "fecha_evento_temprana": "2026-09-01T22:00:53+00:00",
-    "municipio": null
-  },
   "inundacion::Lara::2026-09-02": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -172,6 +158,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-04T23:33:56.279090+00:00",
     "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T10:46:07.420239+00:00",
+    "fecha_evento_temprana": "2026-09-04T23:06:04+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T10:46:10.785444+00:00",
+    "fecha_evento_temprana": "2026-09-05T00:40:02+00:00",
+    "municipio": null
+  },
+  "explosion::Zulia::2026-09-04": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-05T10:46:14.173663+00:00",
+    "fecha_evento_temprana": "2026-09-04T23:01:44+00:00",
     "municipio": null
   }
 }

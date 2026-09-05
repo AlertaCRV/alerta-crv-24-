@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "explosion",
+  "tipo_label": "Explosión",
+  "cerrado": false,
+  "generado": "2026-09-05T10:46:20.873530+00:00",
+  "actualizado_hasta": "2026-09-05T10:46:14.173663+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registró un solo evento de explosión, manteniéndose el número idéntico al del mes anterior (1 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único hecho ocurrido fue el intento de lanzar un artefacto explosivo en el Retén El Marite, ubicado en el estado Zulia (Noticia al Dia). Según los reportes, el dispositivo no detonó, lo que evitó daños materiales y lesiones a la población y al personal de seguridad (Noticia al Dia).\\n\\nEl perímetro de la zona de arresto preventivo quedó completamente acordonado mediante un fuerte dispositivo de seguridad, con presencia de personal especializado para garantizar la contención del artefacto (Noticia al Dia).\\n\\nParticiparon en la operación la Policía del Estado Zulia (Cpbez), el Cuerpo de Investigaciones Policiales del Estado Zulia (Cipez), el Equipo de Respuesta Especial (Grupo ERE), Polimaracaibo y la Policía Nacional Bolivariana (PNB), todos bajo un operativo conjunto de vigilancia y control (Noticia al Dia).",
+  "fuentes": [
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
+    }
+  ]
+}
