@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/",
+        "fecha": "2026-09-05T13:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T13:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-05T13:30:00+00:00",
+    "fecha_deteccion": "2026-09-05T18:26:42.641932+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-09-05",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 05/09/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 05/09/2026, 2:26 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": "Simón Rodríguez",
@@ -3011,31 +3037,5 @@
     "clave_dedup": "infraestructura_electrica::Monagas::2026-08-22",
     "titulo": "Falla eléctrica en Parroquia Chaguaramal, Municipio Piar, Monagas",
     "texto": "📌 Falla eléctrica en Parroquia Chaguaramal, Municipio Piar, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Chaguaramal, Municipio Piar, Monagas\n🕒 Hecho reportado: 22/08/2026, 1:20 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 2:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/los-comerciantes-de-la-toscana-y-caguaramal-en-monagas-duran-6-horas-diarias-sin-energia-electrica/"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/",
-        "fecha": "2026-08-22T16:48:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T16:48:06+00:00",
-    "fecha_evento_temprana": "2026-08-22T16:48:06+00:00",
-    "fecha_deteccion": "2026-08-22T17:57:38.642594+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Zulia::2026-08-22",
-    "titulo": "Ataque armado en Zulia",
-    "texto": "📌 Ataque armado en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 22/08/2026, 12:48 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/"
   }
 ]

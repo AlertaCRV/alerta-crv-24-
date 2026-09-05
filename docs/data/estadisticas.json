@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-05T16:17:03.658172+00:00",
+  "actualizado": "2026-09-05T18:26:43.160242+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-05T12:20:07+00:00"
+    "hasta": "2026-09-05T13:30:00+00:00"
   },
-  "total_eventos": 328,
+  "total_eventos": 329,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 76,
-    "deslizamiento": 26,
+    "deslizamiento": 27,
     "colapso_estructural": 3,
     "orden_publico": 59,
     "salud_publica": 10,
@@ -98,12 +98,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Merida",
-      "total": 9,
+      "estado": "La Guaira",
+      "total": 10,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Merida",
       "total": 9,
       "confirmados": 0
     },
@@ -318,7 +318,7 @@
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
-      "deslizamiento": 2,
+      "deslizamiento": 3,
       "inundacion": 3,
       "sismo": 2
     },
@@ -330,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 273,
+    "sin_clasificar": 274,
     "medio": 4,
     "bajo": 8
   },
@@ -353,7 +353,7 @@
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 22,
-      "2026-09": 1
+      "2026-09": 2
     },
     "colapso_estructural": {
       "2026-07": 1,
