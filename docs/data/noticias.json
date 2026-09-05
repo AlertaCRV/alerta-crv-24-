@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/05/para-poder-dializarse-cuando-no-hay-electricidad-en-el-tigre-estado-anzoategui-hay-que-llevar-el-gasoil/",
+        "fecha": "2026-09-05T12:20:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T12:20:07+00:00",
+    "fecha_evento_temprana": "2026-09-05T12:20:07+00:00",
+    "fecha_deteccion": "2026-09-05T16:16:59.622055+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-05",
+    "titulo": "Falla eléctrica en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Falla eléctrica en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 05/09/2026, 8:20 a.m.\n🔎 Detectado por el sistema: 05/09/2026, 12:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/05/para-poder-dializarse-cuando-no-hay-electricidad-en-el-tigre-estado-anzoategui-hay-que-llevar-el-gasoil/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
@@ -3011,57 +3037,5 @@
     "clave_dedup": "ataque_armado::Zulia::2026-08-22",
     "titulo": "Ataque armado en Zulia",
     "texto": "📌 Ataque armado en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 22/08/2026, 12:48 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 1:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/representante-de-la-federacion-de-abogados-denuncia-amedrentamiento-e-intento-de-detencion-en-el-palacio-de-justicia/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobofuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobo/",
-        "fecha": "2026-08-22T13:10:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T13:10:42+00:00",
-    "fecha_evento_temprana": "2026-08-22T13:10:42+00:00",
-    "fecha_deteccion": "2026-08-22T14:37:19.464905+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Carabobo::2026-08-22",
-    "titulo": "Inundación en Carabobo",
-    "texto": "📌 Inundación en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 22/08/2026, 9:10 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 10:37 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobofuertes-lluvias-e-inundaciones-causan-afectaciones-en-carabobo/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/bomberos-controlan-incendio-en-local-del-polideportivo-de-maturin/",
-        "fecha": "2026-08-22T13:02:19+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T13:02:19+00:00",
-    "fecha_evento_temprana": "2026-08-22T13:02:19+00:00",
-    "fecha_deteccion": "2026-08-22T14:04:41.394594+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "incendio::Monagas::2026-08-22",
-    "titulo": "Incendio en Municipio Maturín, Monagas",
-    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 22/08/2026, 9:02 a.m.\n🔎 Detectado por el sistema: 22/08/2026, 10:04 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/bomberos-controlan-incendio-en-local-del-polideportivo-de-maturin/"
   }
 ]
