@@ -3,23 +3,31 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-04T00:29:50.227908+00:00",
-  "actualizado_hasta": "2026-09-03T17:45:45.409067+00:00",
-  "total_eventos": 5,
+  "generado": "2026-09-05T01:27:09.839672+00:00",
+  "actualizado_hasta": "2026-09-04T23:33:52.913278+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 5
+    "actual": 7
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron solo cinco eventos de inundación, una notable reducción frente a los 52 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta disminución se observa pese a la persistencia de fuertes lluvias que afectaron diversas regiones del país.\n\nEn la ciudad de Guanare, estado Portuguesa, intensas precipitaciones provocaron anegaciones y graves inundaciones en varios sectores, según reportó El Impulso (El Impulso). Además, el colapso del canal ubicado en el sector “La Comunidad” generó dificultades para el tránsito vehicular y peatonal, y obligó a vecinos a limpiar los escombros arrastrados por el caudal (La Prensa de Lara).\n\nA nivel estatal, seis entidades federales –Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy– reportaron vías inundadas durante la Onda Tropical 43, con comunidades agrícolas incomunicadas y derrumbes en Táchira y Yaracuy (Turimiquire). Estas afectaciones incluyeron la interrupción del tránsito y la pérdida de acceso a zonas rurales, evidenciando el impacto extendido de las lluvias.\n\nEn la capital y en La Guaira, los refugiados que habían sido alojados en carpas tras los terremotos de junio denunciaron inundaciones en sus alojamientos, exponiendo a estas poblaciones vulnerables a nuevas condiciones de riesgo (Turimiquire).\n\nEn el estado Sucre, los habitantes de Guarapiche cerraron la avenida Rotaria como medida de protesta tras más de un mes de desbordamiento de aguas negras, señalando problemas de salud pública con personas mayores hospitalizadas y recién nacidos afectados por los malos olores (Turimiquire).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron siete eventos de inundación, una notable reducción frente a los cincuenta y dos eventos reportados en agosto de 2026. Esta disminución refleja una menor frecuencia de fenómenos extremos en el periodo analizado.\n\nEn la ciudad de Guanare, estado Portuguesa, fuertes lluvias del 2 de septiembre provocaron anegaciones de viviendas y el colapso del canal ubicado en el sector “La Comunidad”, lo que obligó a vecinos a limpiar los escombros para evitar un desbordamiento mayor (El Impulso; La Prensa de Lara).\n\nEl 3 de septiembre, la entidad Lara sufrió intensas precipitaciones acompañadas de vientos huracanados que generaron caída de árboles y anegaciones en Barquisimeto y Palavecino. Los daños se registraron en viviendas, centros comerciales y vías principales, especialmente en la zona norte de la ciudad (El Pitazo).\n\nA nivel regional, seis estados –Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy– reportaron vías inundadas y comunidades agrícolas incomunicadas durante la Onda Tropical 43, que se manifestó el 31 de septiembre de 2026 (Turimiquire).\n\nEn el estado Sucre, los habitantes de Guarapiche protestaron el 2 de septiembre al cerrar la avenida Rotaria, denunciando el desbordamiento de aguas negras que había persistido más de un mes, generando problemas de salud pública, con personas de la tercera edad hospitalizadas y recién nacidos expuestos a malos olores (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

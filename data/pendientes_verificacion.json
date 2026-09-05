@@ -1834,5 +1834,41 @@
   "infraestructura_electrica::Zulia::2026-09-04": {
     "intentos": 1,
     "ultima_vez": "2026-09-04T23:34:15.020161+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:34.865837+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:38.227078+00:00"
+  },
+  "orden_publico::Merida::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:41.807659+00:00"
+  },
+  "inundacion::Aragua::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:45.409584+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:48.654173+00:00"
+  },
+  "inundacion::Lara::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:24:52.013075+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:25:03.684848+00:00"
+  },
+  "orden_publico::Miranda::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:25:15.265575+00:00"
+  },
+  "explosion::Zulia::2026-09-05": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-05T01:25:26.923535+00:00"
   }
 }
