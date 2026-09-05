@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-05T18:26:43.160242+00:00",
+  "actualizado": "2026-09-05T20:39:47.414329+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-05T13:30:00+00:00"
+    "hasta": "2026-09-05T14:25:07+00:00"
   },
-  "total_eventos": 329,
+  "total_eventos": 330,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 76,
-    "deslizamiento": 27,
+    "deslizamiento": 28,
     "colapso_estructural": 3,
     "orden_publico": 59,
     "salud_publica": 10,
@@ -83,17 +83,17 @@
       "confirmados": 0
     },
     {
+      "estado": "Tachira",
+      "total": 12,
+      "confirmados": 0
+    },
+    {
       "estado": "Monagas",
       "total": 12,
       "confirmados": 0
     },
     {
       "estado": "Trujillo",
-      "total": 11,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
       "total": 11,
       "confirmados": 0
     },
@@ -239,7 +239,7 @@
       "sequia": 1
     },
     "Tachira": {
-      "deslizamiento": 3,
+      "deslizamiento": 4,
       "infraestructura_electrica": 2,
       "incendio": 1,
       "orden_publico": 1,
@@ -330,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 274,
+    "sin_clasificar": 275,
     "medio": 4,
     "bajo": 8
   },
@@ -353,7 +353,7 @@
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 22,
-      "2026-09": 2
+      "2026-09": 3
     },
     "colapso_estructural": {
       "2026-07": 1,
