@@ -166,5 +166,26 @@
     "fecha_deteccion": "2026-09-05T20:39:09.892876+00:00",
     "fecha_evento_temprana": "2026-09-05T14:25:07+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-06T08:55:35.614540+00:00",
+    "fecha_evento_temprana": "2026-09-05T21:03:32+00:00",
+    "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-06T08:55:39.177622+00:00",
+    "fecha_evento_temprana": "2026-09-05T22:33:37+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-09-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-06T08:55:45.906063+00:00",
+    "fecha_evento_temprana": "2026-09-05T21:01:20+00:00",
+    "municipio": null
   }
 }

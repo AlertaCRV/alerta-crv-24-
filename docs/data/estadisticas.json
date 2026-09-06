@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-05T20:39:47.414329+00:00",
+  "actualizado": "2026-09-06T08:55:47.440050+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-05T14:25:07+00:00"
+    "hasta": "2026-09-05T22:33:37+00:00"
   },
-  "total_eventos": 330,
+  "total_eventos": 333,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 76,
+    "infraestructura_electrica": 78,
     "deslizamiento": 28,
     "colapso_estructural": 3,
-    "orden_publico": 59,
+    "orden_publico": 60,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 54,
+      "total": 55,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 25,
+      "total": 26,
       "confirmados": 1
     },
     {
@@ -108,6 +108,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Portuguesa",
+      "total": 9,
+      "confirmados": 0
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0
@@ -116,11 +121,6 @@
       "estado": "Nueva Esparta",
       "total": 8,
       "confirmados": 1
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 8,
-      "confirmados": 0
     },
     {
       "estado": "Falcon",
@@ -156,7 +156,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 4,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -183,7 +183,7 @@
       "orden_publico": 11,
       "incendio": 9,
       "vialidad": 2,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 3,
@@ -308,7 +308,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -330,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 275,
+    "sin_clasificar": 278,
     "medio": 4,
     "bajo": 8
   },
@@ -348,7 +348,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 7
+      "2026-09": 9
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -362,7 +362,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 5
+      "2026-09": 6
     },
     "salud_publica": {
       "2026-07": 1,
