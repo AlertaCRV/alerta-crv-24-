@@ -1910,5 +1910,13 @@
   "deslizamiento::La Guaira::2026-09-06": {
     "intentos": 1,
     "ultima_vez": "2026-09-06T00:04:40.596433+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-06": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-06T15:51:36.657450+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-06": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-06T15:51:40.040732+00:00"
   }
 }
