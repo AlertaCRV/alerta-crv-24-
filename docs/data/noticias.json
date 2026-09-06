@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": "Candelaria",
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/",
+        "fecha": "2026-09-05T21:03:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T21:03:32+00:00",
+    "fecha_evento_temprana": "2026-09-05T21:03:32+00:00",
+    "fecha_deteccion": "2026-09-06T08:55:35.614540+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-09-05",
+    "titulo": "Falla eléctrica en Parroquia Candelaria, Distrito Capital",
+    "texto": "📌 Falla eléctrica en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 05/09/2026, 5:03 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados",
+        "fecha": "2026-09-05T22:33:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T22:33:37+00:00",
+    "fecha_evento_temprana": "2026-09-05T22:33:37+00:00",
+    "fecha_deteccion": "2026-09-06T08:55:39.177622+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-05",
+    "titulo": "Orden público en Portuguesa",
+    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 05/09/2026, 6:33 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/",
+        "fecha": "2026-09-05T21:01:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-05T21:01:20+00:00",
+    "fecha_evento_temprana": "2026-09-05T21:01:20+00:00",
+    "fecha_deteccion": "2026-09-06T08:55:45.906063+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-05",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 05/09/2026, 5:01 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Tachira",
     "municipio": null,
@@ -2902,88 +2980,5 @@
     "clave_dedup": "incendio::Distrito Capital::2026-08-23",
     "titulo": "Incendio en Parroquia El Valle, Distrito Capital",
     "texto": "📌 Incendio en Parroquia El Valle, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia El Valle, Distrito Capital\n🕒 Hecho reportado: 23/08/2026, 7:20 a.m.\n🔎 Detectado por el sistema: 23/08/2026, 8:51 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/23/bomberos-de-caracas-sofocaron-incendio-en-una-vivienda-de-el-valle-durante-las-fuertes-lluvias/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Trujillo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/proteccion-civil-se-despliega-en-trujillo-ante-afectaciones-por-lluvias/",
-        "fecha": "2026-08-23T03:00:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T03:00:55+00:00",
-    "fecha_evento_temprana": "2026-08-23T03:00:55+00:00",
-    "fecha_deteccion": "2026-08-23T04:56:32.426684+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Trujillo::2026-08-23",
-    "titulo": "Deslizamiento/Derrumbe en Trujillo",
-    "texto": "📌 Deslizamiento/Derrumbe en Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 22/08/2026, 11:00 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 12:56 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/proteccion-civil-se-despliega-en-trujillo-ante-afectaciones-por-lluvias/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/recuperan-al-100-el-servicio-electrico-en-punceres-y-bolivar/",
-        "fecha": "2026-08-22T23:32:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-22T23:32:03+00:00",
-    "fecha_evento_temprana": "2026-08-22T23:32:03+00:00",
-    "fecha_deteccion": "2026-08-23T03:27:29.566926+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Bolivar::2026-08-22",
-    "titulo": "Falla eléctrica en Bolivar",
-    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 22/08/2026, 7:32 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 11:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/recuperan-al-100-el-servicio-electrico-en-punceres-y-bolivar/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Trujillo",
-    "municipio": "San Rafael De Carvajal",
-    "parroquia": "Carvajal",
-    "severidad": "bajo",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/22/en-el-estado-trujillo-los-municipios-escuque-la-ceiba-san-rafael-de-carvajal-y-valera-cumplieron-20-dias-sin-agua/",
-        "fecha": "2026-08-23T00:00:02+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/cuatro-municipios-de-trujillo-cumplen-20-dias-sin-agua-potable/",
-        "fecha": "2026-08-23T02:30:34+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T02:30:34+00:00",
-    "fecha_evento_temprana": "2026-08-23T00:00:02+00:00",
-    "fecha_deteccion": "2026-08-23T03:27:44.008564+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Trujillo::2026-08-23",
-    "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
-    "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 22/08/2026, 10:30 p.m.\n🔎 Detectado por el sistema: 22/08/2026, 11:27 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/22/en-el-estado-trujillo-los-municipios-escuque-la-ceiba-san-rafael-de-carvajal-y-valera-cumplieron-20-dias-sin-agua/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/cuatro-municipios-de-trujillo-cumplen-20-dias-sin-agua-potable/"
   }
 ]
