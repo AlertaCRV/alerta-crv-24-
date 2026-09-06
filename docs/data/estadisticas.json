@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-06T19:46:00.161568+00:00",
+  "actualizado": "2026-09-06T21:48:00.995055+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-06T14:34:49+00:00"
+    "hasta": "2026-09-06T16:39:00+00:00"
   },
-  "total_eventos": 334,
+  "total_eventos": 335,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 79,
     "deslizamiento": 28,
     "colapso_estructural": 3,
-    "orden_publico": 60,
+    "orden_publico": 61,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -44,7 +44,7 @@
     },
     {
       "estado": "Barinas",
-      "total": 22,
+      "total": 23,
       "confirmados": 1
     },
     {
@@ -204,7 +204,7 @@
       "inundacion": 4,
       "infraestructura_electrica": 4,
       "vialidad": 4,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "infraestructura_agua": 1,
       "salud_publica": 1
     },
@@ -330,7 +330,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 279,
+    "sin_clasificar": 280,
     "medio": 4,
     "bajo": 8
   },
@@ -362,7 +362,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 6
+      "2026-09": 7
     },
     "salud_publica": {
       "2026-07": 1,
