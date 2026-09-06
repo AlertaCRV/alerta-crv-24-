@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/",
+        "fecha": "2026-09-06T16:39:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-06T16:39:00+00:00",
+    "fecha_evento_temprana": "2026-09-06T16:39:00+00:00",
+    "fecha_deteccion": "2026-09-06T21:47:57.306624+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Barinas::2026-09-06",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 06/09/2026, 12:39 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 5:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -2715,83 +2741,5 @@
     "clave_dedup": "infraestructura_electrica::Zulia::2026-08-23",
     "titulo": "Falla eléctrica en Parroquia Altagracia, Municipio Miranda, Zulia",
     "texto": "📌 Falla eléctrica en Parroquia Altagracia, Municipio Miranda, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Altagracia, Municipio Miranda, Zulia\n🕒 Hecho reportado: 23/08/2026, 4:30 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 6:39 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/tromba-lacustre-se-forma-sobre-el-lago-de-maracaibo/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/leon-xiv-pide-una-respuesta-internacional-para-frenar-el-brote-de-ebola-en-el-congo/",
-        "fecha": "2026-08-23T19:40:19+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T19:40:19+00:00",
-    "fecha_evento_temprana": "2026-08-23T19:40:19+00:00",
-    "fecha_deteccion": "2026-08-23T20:55:19.698592+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "salud_publica::Distrito Capital::2026-08-23",
-    "titulo": "Salud pública en Distrito Capital",
-    "texto": "📌 Salud pública en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/08/2026, 3:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 4:55 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/leon-xiv-pide-una-respuesta-internacional-para-frenar-el-brote-de-ebola-en-el-congo/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Anzoategui",
-    "municipio": "Aragua",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/23/al-menos-12-familias-resultaron-afectadas-tras-desbordamiento-de-rio-en-naricual/",
-        "fecha": "2026-08-23T18:52:25+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T18:52:25+00:00",
-    "fecha_evento_temprana": "2026-08-23T18:52:25+00:00",
-    "fecha_deteccion": "2026-08-23T19:56:40.836920+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Anzoategui::2026-08-23",
-    "titulo": "Inundación en Municipio Aragua, Anzoategui",
-    "texto": "📌 Inundación en Municipio Aragua, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Aragua, Anzoategui\n🕒 Hecho reportado: 23/08/2026, 2:52 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/23/al-menos-12-familias-resultaron-afectadas-tras-desbordamiento-de-rio-en-naricual/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Aragua",
-    "municipio": "San Sebastián",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Ciudad MCY (Aragua)",
-        "link": "https://ciudadmcy.info.ve/llega-el-puente-de-guerra-a-san-sebastian-de-los-reyes",
-        "fecha": "2026-08-23T18:40:19+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-23T18:40:19+00:00",
-    "fecha_evento_temprana": "2026-08-23T18:40:19+00:00",
-    "fecha_deteccion": "2026-08-23T19:59:17.252728+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Aragua::2026-08-23",
-    "titulo": "Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 23/08/2026, 2:40 p.m.\n🔎 Detectado por el sistema: 23/08/2026, 3:59 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Ciudad MCY (Aragua): https://ciudadmcy.info.ve/llega-el-puente-de-guerra-a-san-sebastian-de-los-reyes"
   }
 ]
