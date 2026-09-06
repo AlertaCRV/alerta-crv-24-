@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-05T01:26:43.075100+00:00",
-  "actualizado_hasta": "2026-09-04T19:41:15.830789+00:00",
-  "total_eventos": 5,
+  "generado": "2026-09-06T00:06:22.734018+00:00",
+  "actualizado_hasta": "2026-09-05T16:16:59.622055+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 64,
-    "actual": 5
+    "actual": 7
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron únicamente 5 eventos de fallas eléctricas, una reducción notable frente a los 64 eventos del mes anterior (2026-08) (Comparación con el período anterior: 64 evento(s) registrados entonces vs. 5 en este período).\\n\\nEn el estado Bolívar, los habitantes continúan sufriendo frecuentes cortes de energía y explosiones de transformadores, lo que ha deteriorado gravemente la calidad de vida y ha golpeado al sector comercial de las zonas mineras (El Impulso).\\n\\nEn Lara, los apagones se dispararon un 637% respecto al año pasado, alcanzando 722 cortes y 2.874 horas sin luz solo en agosto de 2026 (El Impulso). Además, tras intensas lluvias y ráfagas de viento, usuarios reportaron bajones de luz y fallas eléctricas en diversas áreas de Barquisimeto, incluyendo la caída de árboles sobre cables de alta tensión que dejó sin servicio a la urbanización Patarata 1 (sector B) (La Prensa de Lara).\\n\\nEn el Zulia, el sábado 29 de agosto de 2026 se produjo un apagón generalizado que afectó la cadena de frío de la producción lechera, generando pérdidas para los ganaderos de la región (Turimiquire).\\n\\nEn Carabobo, asociaciones, gremios y colegios profesionales, bajo el Comité Institucional Eléctrico de Carabobo, solicitaron a las autoridades que atiendan las fallas eléctricas que en ocasiones superan las seis horas y afectan a todos los sectores productivos del estado (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron solo 7 eventos de fallas eléctricas, una disminución notable respecto a los 64 eventos del período anterior (agosto de 2026) (El Impulso). Esta reducción no implica la ausencia de problemas críticos, ya que los incidentes reportados continúan generando graves afectaciones a la población y a sectores productivos.\n\nEn el estado Bolívar, los ciudadanos siguen viviendo una crisis eléctrica marcada por frecuentes apagones y la explosión de transformadores, lo que ha impactado gravemente la calidad de vida de los habitantes y ha golpeado al sector comercial de las zonas mineras (El Impulso).\n\nEn Lara, los cortes eléctricos se dispararon un 637 % en comparación con el año anterior, alcanzando 722 interrupciones y 2 874 horas sin suministro en agosto de 2026 (El Impulso). Además, fuertes lluvias provocaron la caída de árboles sobre cables de alta tensión, generando bajones de luz en Barquisimeto, entre los que se destacó la interrupción del servicio en la urbanización Patarata 1 (sector B) (La Prensa de Lara).\n\nEn el occidente del país, la presidenta encargada Delcy Rodríguez denunció un presunto sabotaje al sistema termoeléctrico del Zulia, señalando la manipulación intencional de llaves de gas que habría provocado el apagón del 29 de agosto de 2026 (Notiapure; Nuevo Dia; Runrun.es). Ese mismo apagón ha afectado la producción lechera en Zulia, interrumpiendo la cadena de frío y generando pérdidas para los ganaderos (Turimiquire).\n\nEn Carabobo, asociaciones, gremios y colegios profesionales han solicitado la pronta atención de las fallas eléctricas, advirtiendo que los cortes pueden superar las seis horas y afectan a todos los sectores productivos (Turimiquire). En el estado Anzoátegui, pacientes renales de la Unidad de Diálisis Care de El Tigre deben adquirir gasoil para operar generadores y poder recibir tratamiento cuando el suministro eléctrico falla (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -26,12 +26,28 @@
       "link": "https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/"
     },
     {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/04/sectores-productivos-del-estado-carabobo-solicitaron-que-atiendan-las-fallas-electricas-del-estado/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/05/para-poder-dializarse-cuando-no-hay-electricidad-en-el-tigre-estado-anzoategui-hay-que-llevar-el-gasoil/"
     }
   ]
 }

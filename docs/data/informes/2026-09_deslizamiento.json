@@ -3,16 +3,24 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-09-05T01:25:39.865897+00:00",
-  "actualizado_hasta": "2026-09-01T19:38:58.267373+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-06T00:04:45.428900+00:00",
+  "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 22,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de deslizamiento o derrumbe, en contraste con los 22 eventos reportados en el mes anterior, agosto de 2026 (comparación proporcionada). Este descenso significativo en la frecuencia de incidentes se refleja en los datos recopilados por la Cruz Roja Venezolana.\n\nEl único caso documentado ocurrió en el estado Táchira, donde intensas lluvias provocaron deslizamientos de tierra que afectaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas). Las autoridades locales realizaron inspecciones para evaluar el alcance de los daños y determinar las medidas de mitigación necesarias.\n\nA pesar de la baja cantidad de incidentes, el monitoreo continuo de las condiciones climáticas y geológicas sigue siendo prioritario para la Cruz Roja Venezolana, con el fin de anticipar y responder rápidamente a cualquier eventualidad que pueda comprometer la seguridad de la población.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de deslizamiento o derrumbe, una disminución notable respecto a los veintidós eventos del mes anterior (agosto 2026) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados por los medios locales durante el período.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se produjo una emergencia vial y habitacional el sábado 5 de septiembre. Actualmente, cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables (La Nacion). Las autoridades locales advierten sobre el riesgo de derrumbe y el cierre preventivo del paso vehicular, mientras la Alcaldía de Capacho Nuevo estima concluir los trabajos de reparación de la vía en aproximadamente dos semanas (La Nacion).\n\nLas fuertes lluvias que azotaron Táchira generaron deslizamientos de tierra que impactaron la infraestructura vial y provocaron daños de leve a severa magnitud en diversas viviendas, según la inspección realizada por las autoridades regionales (La Prensa de Monagas). Estas afectaciones fueron evaluadas para determinar la necesidad de reparaciones y medidas de mitigación en las áreas más vulnerables.\n\nPor otro lado, a nivel nacional, la empresa estadounidense Miyamoto International firmó un acuerdo con el Gobierno venezolano para la remoción de tres millones de toneladas de escombros en el estado La Guaira, con el objetivo de impulsar la reconstrucción de zonas afectadas por deslizamientos y otros desastres (El Impulso). Este convenio representa una acción estratégica para reducir los riesgos de futuros derrumbes y mejorar la resiliencia de la infraestructura local.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
+    },
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"

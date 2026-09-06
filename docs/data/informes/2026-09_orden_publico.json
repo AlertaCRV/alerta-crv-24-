@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-05T01:27:23.246261+00:00",
-  "actualizado_hasta": "2026-09-04T19:41:50.717204+00:00",
-  "total_eventos": 4,
+  "generado": "2026-09-06T00:07:02.603486+00:00",
+  "actualizado_hasta": "2026-09-05T10:46:10.785444+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron cuatro incidentes de orden público, una disminución notable respecto a los 52 eventos del mes anterior (2026‑08). Todos los hechos ocurrieron el 3 de septiembre y se concentraron en la región andina y la capital, Caracas.\n\nEn Mérida, ciudadanos y representantes de organizaciones no gubernamentales realizaron una manifestación pacífica frente a la sede del Ministerio Público, exigiendo el sobreseimiento definitivo de causas por motivos políticos y el cierre de centros de detención arbitraria (El Pitazo). La protesta se desarrolló el 3 de septiembre y se centró en la libertad de los presos políticos.\n\nEn Caracas, familiares de presos políticos organizaron una marcha para reclamar la liberación de sus seres queridos, insistiendo en que la cuestión no debe quedar en segundo plano frente a negociaciones económicas o del sector petrolero (La Prensa de Lara). La movilización tuvo lugar el mismo martes 3 de septiembre.\n\nEse mismo día, militantes de Vente Venezuela se concentraron en tres parroquias de la capital —Sucre, San Pedro y La Vega— para exigir la elaboración de un cronograma electoral que conduzca a elecciones presidenciales y la libertad de todos los presos políticos (Primicia). La convocatoria se realizó a partir de las 5:00 p.m. y se documentó mediante imágenes y videos difundidos por la organización.\n\nFinalmente, una protesta de la Coalición Sindical contra los acuerdos petroleros fue impedida por funcionarios de Polichacao en la calle Mohedano, frente al Hotel Marriott donde se aloja la misión diplomática de Estados Unidos. Los manifestantes intentaron pasar el piquete a la fuerza, lo que derivó en enfrentamientos (Runrun.es).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente cinco incidentes de orden público, una disminución notable respecto a los 52 eventos contabilizados en agosto del mismo año (comparación con el período anterior).\n\nEn Mérida, ciudadanos y miembros de organizaciones no gubernamentales realizaron una manifestación pacífica frente a la sede del Ministerio Público el 3 de septiembre, exigiendo el sobreseimiento de causas por motivos políticos y el cierre de centros de detención arbitraria (El Pitazo).\n\nEn la capital, dos movilizaciones distintas tuvieron lugar el mismo día. Por una parte, familiares de presos políticos marcharon por Caracas para reclamar la libertad de sus seres queridos y evitar que la cuestión quede relegada a negociaciones económicas (La Prensa de Lara). Por otra, militantes de Vente Venezuela se concentraron en las parroquias de Sucre, San Pedro y La Vega, convocando asambleas para demandar un cronograma electoral y la liberación de los presos políticos (Primicia).\n\nAsimismo, la Policía Municipal de Chacao (Polichacao) impidió la marcha de la Coalición Sindical Nacional que pretendía llegar al Hotel Marriott en El Rosal, como parte del Mes de la Lucha; la intervención generó enfrentamientos y bloqueos en la calle Mohedano (Runrun.es; Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -28,6 +28,10 @@
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/"
     }
   ]
 }
