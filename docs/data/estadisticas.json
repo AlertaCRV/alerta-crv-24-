@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-06T21:48:00.995055+00:00",
+  "actualizado": "2026-09-06T23:19:32.711866+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-06T16:39:00+00:00"
+    "hasta": "2026-09-06T18:11:18+00:00"
   },
-  "total_eventos": 335,
+  "total_eventos": 336,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 14,
+    "infraestructura_agua": 15,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
@@ -39,7 +39,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 24,
+      "total": 25,
       "confirmados": 4
     },
     {
@@ -175,7 +175,8 @@
       "sismo": 1,
       "salud_publica": 1,
       "ataque_armado": 1,
-      "explosion": 1
+      "explosion": 1,
+      "infraestructura_agua": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -330,7 +331,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 280,
+    "sin_clasificar": 281,
     "medio": 4,
     "bajo": 8
   },
@@ -396,7 +397,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 2
+      "2026-09": 3
     },
     "accidente_transporte": {
       "2026-08": 1

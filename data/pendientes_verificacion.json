@@ -1915,12 +1915,20 @@
     "intentos": 2,
     "ultima_vez": "2026-09-06T17:52:24.975351+00:00"
   },
-  "infraestructura_agua::Zulia::2026-09-06": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-06T21:47:53.952331+00:00"
-  },
   "infraestructura_electrica::Zulia::2026-09-06": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-06T23:19:18.947298+00:00"
+  },
+  "orden_publico::Barinas::2026-09-06": {
     "intentos": 1,
-    "ultima_vez": "2026-09-06T21:47:50.722454+00:00"
+    "ultima_vez": "2026-09-06T23:19:25.632840+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-06": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-06T23:19:28.945796+00:00"
+  },
+  "infraestructura_electrica::Falcon::2026-09-06": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-06T23:19:32.295692+00:00"
   }
 }

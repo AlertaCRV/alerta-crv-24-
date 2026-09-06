@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-09-04T01:34:12+00:00",
     "municipio": null
   },
-  "orden_publico::Miranda::2026-09-03": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-03T22:38:30.392811+00:00",
-    "fecha_evento_temprana": "2026-09-03T22:16:52+00:00",
-    "municipio": null
-  },
-  "vialidad::Distrito Capital::2026-09-03": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-03T22:38:37.130174+00:00",
-    "fecha_evento_temprana": "2026-09-03T15:46:35+00:00",
-    "municipio": null
-  },
   "orden_publico::Merida::2026-09-04": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -159,5 +145,12 @@
     "fecha_deteccion": "2026-09-06T21:47:57.306624+00:00",
     "fecha_evento_temprana": "2026-09-06T16:39:00+00:00",
     "municipio": null
+  },
+  "infraestructura_agua::Zulia::2026-09-06": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-06T23:19:22.342480+00:00",
+    "fecha_evento_temprana": "2026-09-06T18:11:18+00:00",
+    "municipio": "Baralt"
   }
 }
