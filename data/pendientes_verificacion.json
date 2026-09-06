@@ -1911,20 +1911,20 @@
     "intentos": 1,
     "ultima_vez": "2026-09-06T00:04:40.596433+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-09-06": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-06T17:52:14.676080+00:00"
-  },
   "emergencia_metro::Distrito Capital::2026-09-06": {
     "intentos": 2,
     "ultima_vez": "2026-09-06T17:52:24.975351+00:00"
   },
   "orden_publico::Barinas::2026-09-06": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-06T17:52:18.155047+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-06T19:45:56.309835+00:00"
   },
   "infraestructura_electrica::Lara::2026-09-06": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-06T19:45:59.740706+00:00"
+  },
+  "infraestructura_agua::Zulia::2026-09-06": {
     "intentos": 1,
-    "ultima_vez": "2026-09-06T17:52:21.500244+00:00"
+    "ultima_vez": "2026-09-06T19:45:49.262517+00:00"
   }
 }

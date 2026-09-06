@@ -152,5 +152,12 @@
     "fecha_deteccion": "2026-09-06T08:55:45.906063+00:00",
     "fecha_evento_temprana": "2026-09-05T21:01:20+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-09-06": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-06T19:45:52.984606+00:00",
+    "fecha_evento_temprana": "2026-09-06T14:34:49+00:00",
+    "municipio": null
   }
 }
