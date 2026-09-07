@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-07T12:26:36.768909+00:00",
+  "actualizado": "2026-09-07T23:39:53.563877+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-07T01:00:02+00:00"
+    "hasta": "2026-09-07T16:35:00+00:00"
   },
-  "total_eventos": 338,
+  "total_eventos": 340,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 66,
+    "inundacion": 68,
     "infraestructura_electrica": 81,
     "deslizamiento": 28,
     "colapso_estructural": 3,
@@ -69,7 +69,7 @@
     },
     {
       "estado": "Yaracuy",
-      "total": 16,
+      "total": 17,
       "confirmados": 1
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "estado": "La Guaira",
-      "total": 10,
+      "total": 11,
       "confirmados": 0
     },
     {
@@ -277,7 +277,7 @@
       "derrame_petrolero": 1
     },
     "Yaracuy": {
-      "inundacion": 6,
+      "inundacion": 7,
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 4,
@@ -320,7 +320,7 @@
     "La Guaira": {
       "infraestructura_electrica": 2,
       "deslizamiento": 3,
-      "inundacion": 3,
+      "inundacion": 4,
       "sismo": 2
     },
     "Delta Amacuro": {
@@ -331,7 +331,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 283,
+    "sin_clasificar": 285,
     "medio": 4,
     "bajo": 8
   },
@@ -344,7 +344,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 7
+      "2026-09": 9
     },
     "infraestructura_electrica": {
       "2026-07": 5,
