@@ -3,7 +3,7 @@
   "tipo": "emergencia_metro",
   "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
   "cerrado": false,
-  "generado": "2026-09-06T00:04:58.481894+00:00",
+  "generado": "2026-09-07T01:10:08.405056+00:00",
   "actualizado_hasta": "2026-09-04T23:33:56.279090+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el período de septiembre de 2026 el Sistema de Monitoreo de Emergencias registró un solo evento en la categoría de emergencias en el Metro, Metrocable o Teleférico, en contraste con los dos eventos que se habían registrado en el mes anterior (agosto de 2026). La información disponible indica que las intensas lluvias que se presentaron en la capital provocaron situaciones de vulnerabilidad en varios sectores urbanos, entre ellos la urbanización de Bello Monte y la zona de El Valle, donde los residentes recibieron alertas sobre los estragos de las precipitaciones (Runrun.es). Aunque el reporte no detalla daños específicos al sistema de transporte masivo, la presencia de lluvias copiosas sugiere la posibilidad de afectaciones en la operatividad del metro o sus accesos, situación que se incluye en el conteo de un evento para este mes. No se reportaron heridos ni víctimas fatales vinculados a la infraestructura del Metro, Metrocable o Teleférico en los informes consultados. La comparación con el período anterior muestra una disminución en la cantidad de incidentes registrados, pasando de dos a uno, lo que refleja una ligera mejoría en la frecuencia de emergencias en este sector durante el último mes.",
+  "narrativa": "En el mes de septiembre de 2026, el registro de emergencias en la categoría de Metro/Metrocable/Teleférico mostró una disminución respecto al mes anterior, pasando de 2 eventos en agosto a 1 evento en este período, según la comparación proporcionada.\n\nEl único incidente reportado en el período de referencia está vinculado a las intensas lluvias que afectaron la capital. El sábado 22 de agosto, Ricardo, residente de la urbanización Bello Monte, fue sorprendido por un repentino chaparrón, conocido localmente como “palo de agua”, mientras tomaba un café (Runrun.es). Al resguardarse, revisó su teléfono y constató que varios vecinos del sector El Valle habían recibido mensajes de alerta sobre los estragos provocados por las precipitaciones copiosas.\n\nA pesar de la ausencia de reportes específicos de fallas o accidentes en el sistema de transporte urbano durante septiembre, la narrativa de vulnerabilidad ante las lluvias persiste, subrayando la necesidad de mejorar la capacidad de respuesta y prevención de las autoridades frente a fenómenos meteorológicos extremos (Runrun.es).",
   "fuentes": [
     {
       "nombre": "Runrun.es",

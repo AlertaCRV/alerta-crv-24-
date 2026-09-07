@@ -3,16 +3,20 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-06T00:05:55.756229+00:00",
-  "actualizado_hasta": "2026-09-02T20:05:50.666638+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-07T01:10:57.653465+00:00",
+  "actualizado_hasta": "2026-09-06T23:19:22.342480+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 12,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el período de septiembre de 2026 se registraron solo dos eventos de falla de agua, frente a los doce reportados en agosto de 2026 (Comparación proporcionada). Esta disminución refleja una reducción significativa en la cantidad de incidentes reportados durante el último mes.\n\nEn el municipio Tubores, ubicado en la isla de Margarita, los habitantes llevan más de seis meses sin suministro de agua potable debido a una rotura de tubería que afecta a toda la población (Reporte Confidencial). El diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance sobre la crisis en la red de agua del estado Nueva Esparta, basándose en los datos de seguimiento ciudadano procesados por la plataforma Pulso Nueva Esparta (Reporte Confidencial). Según el informe de verificación, la situación más crítica se concentra en Tubores, donde se ha generado un severo \"aislamiento hídrico\" (Reporte Confidencial).\n\nEn la capital del estado Sucre, Cumaná, la población también se vio afectada por la falta de agua, en medio de la crisis hídrica que afecta a varios municipios de la región (Turimiquire). El alcalde de Cumaná, Pedro Figueroa, aseguró que el estado quedará excluido de la programación de cortes eléctricos implementada en otras entidades, como medida para mitigar el impacto de la escasez de agua (Turimiquire). Esta exclusión busca evitar la sobrecarga de la infraestructura mientras se atienden los problemas de suministro hídrico (Turimiquire).\n\nEn conjunto, los dos incidentes reportados en septiembre – Tubores y Cumaná – constituyen la totalidad de los eventos de falla de agua del mes, evidenciando una notable reducción respecto al mes anterior, aunque persisten desafíos críticos en ambas localidades (Reporte Confidencial; Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de falla de agua, una disminución notable respecto a los doce eventos reportados en el período anterior (2026‑08). Esta reducción se refleja en la menor cantidad de incidentes críticos documentados por los medios locales.\n\nEn el estado Zulia, la Gobernación entregó siete equipos —motores y bombas de 15 a 30 HP— destinados a reforzar la producción y distribución de agua potable en cinco parroquias del municipio Baralt, garantizando un suministro de hasta 110 litros por segundo en comunidades como La Línea, Los Cañitos, San José del Muro, San Benito y Los Pozos del Campo (La Verdad).\n\nEn Nueva Esparta, el diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance que indica que los habitantes del municipio Tubores llevan más de seis meses sin agua, describiendo una situación de «aislamiento hídrico» que afecta gravemente a la población local (Reporte Confidencial).\n\nEn el estado Sucre, el alcalde de Cumaná, Pedro Figueroa, aseguró que el municipio quedará excluido de la programación de cortes eléctricos, medida adoptada en respuesta a la crisis hídrica que afecta a varios municipios de la región, aunque la falta de agua persiste como problema central (Turimiquire).",
   "fuentes": [
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/"
+    },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
