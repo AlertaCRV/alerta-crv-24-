@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-06T00:05:37.616306+00:00",
-  "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
-  "total_eventos": 29,
+  "generado": "2026-09-07T12:26:42.693032+00:00",
+  "actualizado_hasta": "2026-09-07T12:26:35.461132+00:00",
+  "total_eventos": 37,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 273,
-    "actual": 29
+    "actual": 37
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 29 eventos de emergencia, una notable disminución frente a los 273 eventos del mes anterior (2026‑08). Esta reducción se refleja en la base de datos de la Cruz Roja Venezolana, que continúa monitoreando incidentes de diversa naturaleza en todo el territorio nacional.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro, donde la colisión de dos autobuses dejó tres muertos y un herido (El Periodico de Monagas). La severidad del siniestro fue catalogada como crítica y movilizó a los servicios de emergencia para atender a las víctimas y gestionar el tránsito.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se reportó una emergencia vial y habitacional en el sector El Valle, donde siete casas fueron desalojadas por daños irreparables y cuatro familias permanecen en zona de riesgo (Diario La Nacion). Las autoridades locales continúan trabajando para estabilizar la zona y reubicar a los afectados.\n\nEl 31 de agosto, en la zona industrial de Palo Verde, estado Aragua, un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos, requiriendo la intervención de aproximadamente 120 efectivos de bomberos, protección civil y policía (El Siglo). No se reportaron víctimas mortales, pero el siniestro generó importantes pérdidas materiales.\n\nDurante la primera semana de septiembre, fuertes lluvias provocaron inundaciones y caída de árboles en varios municipios. En Barquisimeto, Lara, se registraron anegaciones de viviendas y daños en centros comerciales, además de 36 árboles caídos en Iribarren y Palavecino (El Pitazo; La Prensa de Lara). En Guanare, Portuguesa, las precipitaciones causaron anegaciones y el colapso de un canal en la comunidad “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar mayores inundaciones (La Prensa de Lara).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 37 eventos de emergencia, una disminución notable respecto a los 273 eventos del período anterior (agosto 2026) (Comparación proporcionada). Esta reducción se observa en la variedad de incidentes reportados, aunque persisten situaciones críticas en distintas regiones del país.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos autobuses de transporte público colisionaron a las 5:10 a.m. del miércoles, dejando tres muertos y un herido (El Periodico de Monagas). La gravedad del siniestro fue catalogada como crítica y movilizó a los servicios de emergencia de la capital.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se reportó una emergencia vial y habitacional en El Valle. Cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se mantiene el cierre preventivo del paso vehicular por el riesgo de derrumbe (Diario La Nacion). La alcaldía local estima concluir los trabajos de estabilización de la vía en aproximadamente dos semanas.\n\nLos problemas eléctricos se mantuvieron críticos: en Lara los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes registrados en agosto y 2 874 horas sin suministro (El Impulso). Además, se reportaron bajones eléctricos de 30 a 40 minutos en 11 estados, incluidos Caracas, Aragua y Miranda, donde algunos usuarios indicaron que el servicio no se restableció después de la segunda fluctuación (El Pitazo).\n\nFuertes lluvias provocaron inundaciones y anegaciones en varios municipios. En Guanare, estado Portuguesa, se registraron inundaciones de viviendas tras precipitaciones intensas (El Impulso). En Barquisimeto y Palavecino, estado Lara, las lluvias acompañadas de vientos huracanados causaron caída de árboles, daños estructurales en centros comerciales y anegaciones de calles, particularmente en la zona norte de la ciudad (El Pitazo).\n\nFinalmente, se registraron manifestaciones relacionadas con la situación política. En Mérida, ciudadanos y ONG protestaron frente al Ministerio Público exigiendo la libertad de presos políticos (El Pitazo). En Caracas, familiares de presos políticos realizaron una marcha para demandar su liberación, subrayando que la cuestión no debe quedar en segundo plano frente a negociaciones económicas (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -20,6 +20,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -46,6 +50,10 @@
       "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
     },
@@ -66,8 +74,20 @@
       "link": "https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
     },
     {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
+    },
+    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/explosion-en-subestacion-electrica-afecta-el-servicio-en-ciudad-ojeda/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/"
     },
     {
       "nombre": "Notiapure",
@@ -80,6 +100,10 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
     },
     {
       "nombre": "Primicia (Bolivar)",
@@ -128,6 +152,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/05/para-poder-dializarse-cuando-no-hay-electricidad-en-el-tigre-estado-anzoategui-hay-que-llevar-el-gasoil/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/06/medianos-industriales-y-artesanos-del-estado-carabobo-exigen-electricidad-patra-poder-producir/"
     }
   ]
 }
