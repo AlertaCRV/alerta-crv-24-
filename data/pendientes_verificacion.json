@@ -1931,10 +1931,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-06T23:19:32.295692+00:00"
   },
-  "infraestructura_electrica::Zulia::2026-09-07": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-07T06:07:50.528239+00:00"
-  },
   "infraestructura_agua::Zulia::2026-09-07": {
     "intentos": 2,
     "ultima_vez": "2026-09-07T06:07:53.757742+00:00"
@@ -1942,5 +1938,29 @@
   "infraestructura_electrica::Falcon::2026-09-07": {
     "intentos": 2,
     "ultima_vez": "2026-09-07T06:08:04.101786+00:00"
+  },
+  "orden_publico::Falcon::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:26.543944+00:00"
+  },
+  "deslizamiento::La Guaira::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:29.897190+00:00"
+  },
+  "inundacion::Yaracuy::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:33.399147+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:36.925955+00:00"
+  },
+  "infraestructura_electrica::Merida::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:40.499670+00:00"
+  },
+  "inundacion::La Guaira::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T17:54:47.303216+00:00"
   }
 }
