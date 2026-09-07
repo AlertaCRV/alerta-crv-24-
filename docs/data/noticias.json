@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Yaracuy",
+    "municipio": "Veroes",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy",
+        "fecha": "2026-09-07T16:35:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-07T16:35:00+00:00",
+    "fecha_evento_temprana": "2026-09-07T16:35:00+00:00",
+    "fecha_deteccion": "2026-09-07T23:39:19.022474+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::Yaracuy::2026-09-07",
+    "titulo": "Inundación en Municipio Veroes, Yaracuy",
+    "texto": "📌 Inundación en Municipio Veroes, Yaracuy\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Veroes, Yaracuy\n🕒 Hecho reportado: 07/09/2026, 12:35 p.m.\n🔎 Detectado por el sistema: 07/09/2026, 7:39 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/",
+        "fecha": "2026-09-07T16:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-07T16:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-07T16:00:00+00:00",
+    "fecha_deteccion": "2026-09-07T23:39:52.710584+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "inundacion::La Guaira::2026-09-07",
+    "titulo": "Inundación en Municipio Vargas, La Guaira",
+    "texto": "📌 Inundación en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 07/09/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 07/09/2026, 7:39 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Aragua",
     "municipio": null,
@@ -2044,490 +2096,5 @@
     "clave_dedup": "deslizamiento::Tachira::2026-08-24",
     "titulo": "Deslizamiento/Derrumbe en Municipio Uribante, Tachira",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio Uribante, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Uribante, Tachira\n🕒 Hecho reportado: 24/08/2026, 7:28 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 10:47 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/tres-muertos-cinco-desaparecidos-y-mas-de-150-viviendas-afectadas-por-las-lluvias-en-venezuela/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": "Moran",
-    "parroquia": "Humocaro Alto",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/caserio-el-potrero-via-trasandina/",
-        "fecha": "2026-08-24T21:45:34+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T21:45:34+00:00",
-    "fecha_evento_temprana": "2026-08-24T21:45:34+00:00",
-    "fecha_deteccion": "2026-08-24T23:05:48.140522+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Lara::2026-08-24",
-    "titulo": "Inundación en Parroquia Humocaro Alto, Municipio Moran, Lara",
-    "texto": "📌 Inundación en Parroquia Humocaro Alto, Municipio Moran, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Humocaro Alto, Municipio Moran, Lara\n🕒 Hecho reportado: 24/08/2026, 5:45 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 7:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/caserio-el-potrero-via-trasandina/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/cronicas/se-reseteo-mi-vida-alejandro-perdio-su-casa-y-su-negocio-en-el-terremoto-de-la-guaira-pero-encontro-una-razon-para-empezar-de-nuevo/",
-        "fecha": "2026-08-24T20:04:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T20:04:17+00:00",
-    "fecha_evento_temprana": "2026-08-24T20:04:17+00:00",
-    "fecha_deteccion": "2026-08-24T21:36:21.367727+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::La Guaira::2026-08-24",
-    "titulo": "Sismo en La Guaira",
-    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 24/08/2026, 4:04 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 5:36 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/cronicas/se-reseteo-mi-vida-alejandro-perdio-su-casa-y-su-negocio-en-el-terremoto-de-la-guaira-pero-encontro-una-razon-para-empezar-de-nuevo/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/cisterneros-exigen-reactivacion-inmediata-del-llenadero-de-agua-jacinto-lara-en-barquisimeto/",
-        "fecha": "2026-08-24T17:42:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T17:42:54+00:00",
-    "fecha_evento_temprana": "2026-08-24T17:42:54+00:00",
-    "fecha_deteccion": "2026-08-24T19:11:26.586983+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Lara::2026-08-24",
-    "titulo": "Falla de agua en Lara",
-    "texto": "📌 Falla de agua en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 24/08/2026, 1:42 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/cisterneros-exigen-reactivacion-inmediata-del-llenadero-de-agua-jacinto-lara-en-barquisimeto/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Barinas",
-    "municipio": "Pedraza",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/",
-        "fecha": "2026-08-24T17:39:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T17:39:33+00:00",
-    "fecha_evento_temprana": "2026-08-24T17:39:33+00:00",
-    "fecha_deteccion": "2026-08-24T19:11:50.794066+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Barinas::2026-08-24",
-    "titulo": "Inundación en Municipio Pedraza, Barinas",
-    "texto": "📌 Inundación en Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Pedraza, Barinas\n🕒 Hecho reportado: 24/08/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/",
-        "fecha": "2026-08-24T17:39:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T17:39:33+00:00",
-    "fecha_evento_temprana": "2026-08-24T17:39:33+00:00",
-    "fecha_deteccion": "2026-08-24T19:12:14.978134+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Sucre::2026-08-24",
-    "titulo": "Inundación en Sucre",
-    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 24/08/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/lluvias-afectaron-algunos-sectores-en-los-municipios-pedraza-y-sucre-de-barinas/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/",
-        "fecha": "2026-08-24T17:34:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T17:34:18+00:00",
-    "fecha_evento_temprana": "2026-08-24T17:34:18+00:00",
-    "fecha_deteccion": "2026-08-24T19:12:39.168914+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Barinas::2026-08-24",
-    "titulo": "Deslizamiento/Derrumbe en Barinas",
-    "texto": "📌 Deslizamiento/Derrumbe en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 24/08/2026, 1:34 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/",
-        "fecha": "2026-08-24T17:34:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T17:34:18+00:00",
-    "fecha_evento_temprana": "2026-08-24T17:34:18+00:00",
-    "fecha_deteccion": "2026-08-24T19:13:03.340146+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Merida::2026-08-24",
-    "titulo": "Deslizamiento/Derrumbe en Merida",
-    "texto": "📌 Deslizamiento/Derrumbe en Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 24/08/2026, 1:34 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 3:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/restablecen-transito-por-la-via-entre-barinas-y-merida-tras-haber-sido-suspendido-por-derrumbes/"
-  },
-  {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/",
-        "fecha": "2026-08-24T16:42:41+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T16:42:41+00:00",
-    "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
-    "fecha_deteccion": "2026-08-24T18:20:56.957081+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::Aragua::2026-08-24",
-    "titulo": "Tormenta eléctrica en Aragua",
-    "texto": "📌 Tormenta eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 24/08/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 2:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.2,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/video-familiares-de-presos-politicos-quebraron-piquete-policial-frente-al-despacho-de-diosdado-cabello/",
-        "fecha": "2026-08-24T16:35:05+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/politica/familiares-de-presos-politicos-superan-cerco-de-la-pnb/",
-        "fecha": "2026-08-24T18:15:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T18:15:59+00:00",
-    "fecha_evento_temprana": "2026-08-24T16:35:05+00:00",
-    "fecha_deteccion": "2026-08-24T18:24:12.416248+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Carabobo::2026-08-24",
-    "titulo": "Orden público en Carabobo",
-    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 24/08/2026, 2:15 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 2:24 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/video-familiares-de-presos-politicos-quebraron-piquete-policial-frente-al-despacho-de-diosdado-cabello/\n  • Primicia (Bolivar): https://primicia.com.ve/politica/familiares-de-presos-politicos-superan-cerco-de-la-pnb/"
-  },
-  {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/",
-        "fecha": "2026-08-24T16:42:41+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T16:42:41+00:00",
-    "fecha_evento_temprana": "2026-08-24T16:42:41+00:00",
-    "fecha_deteccion": "2026-08-24T17:48:29.593423+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::Zulia::2026-08-24",
-    "titulo": "Tormenta eléctrica en Municipio Maracaibo, Zulia",
-    "texto": "📌 Tormenta eléctrica en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 24/08/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 1:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/trombas-marinas-en-zulia-y-aragua-que-son-y-por-que-se-forman-estos-fenomenos-meteorologicos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Patilla",
-        "link": "https://lapatilla.com/2026/08/24/viral-nadie-pudo-arruinar-esta-boda-civil-en-venezuela-ni-siquiera-corpoelec/",
-        "fecha": "2026-08-24T12:34:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T12:34:11+00:00",
-    "fecha_evento_temprana": "2026-08-24T12:34:11+00:00",
-    "fecha_deteccion": "2026-08-24T15:00:26.584205+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-08-24",
-    "titulo": "Falla eléctrica en Carabobo",
-    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 24/08/2026, 8:34 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 11:00 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Patilla: https://lapatilla.com/2026/08/24/viral-nadie-pudo-arruinar-esta-boda-civil-en-venezuela-ni-siquiera-corpoelec/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": "Los Teques",
-    "severidad": "sin_clasificar",
-    "score": 1.85,
-    "confirmado": false,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/hallan-camioneta-arrastrada-por-el-rio-aragua-siguen-desaparecidos-sus-2-ocupantes/",
-        "fecha": "2026-08-24T12:37:16+00:00"
-      },
-      {
-        "nombre": "Reporte Confidencial (Nueva Esparta)",
-        "link": "https://reporteconfidencial.info/2026/08/24/carrizal/",
-        "fecha": "2026-08-24T12:46:50+00:00"
-      },
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas/?utm_source=rss&utm_medium=rss&utm_campaign=tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas",
-        "fecha": "2026-08-24T13:49:45+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T13:49:45+00:00",
-    "fecha_evento_temprana": "2026-08-24T12:37:16+00:00",
-    "fecha_deteccion": "2026-08-24T14:03:29.075947+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Miranda::2026-08-22",
-    "titulo": "Inundación en Parroquia Los Teques, Miranda",
-    "texto": "📌 Inundación en Parroquia Los Teques, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Los Teques, Miranda\n🕒 Hecho reportado: 24/08/2026, 9:49 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 10:03 a.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/hallan-camioneta-arrastrada-por-el-rio-aragua-siguen-desaparecidos-sus-2-ocupantes/\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/08/24/carrizal/\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas/?utm_source=rss&utm_medium=rss&utm_campaign=tragedia-por-lluvias-en-venezuela-un-muerto-cinco-desaparecidos-y-150-viviendas-afectadas"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:10:03.867012+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Bolivar::2026-08-24",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:10 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:10:28.135183+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-08-24",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:10 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:10:52.400320+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Lara::2026-08-24",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:10 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:11:16.690376+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-08-24",
-    "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:11 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:11:40.952042+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Sucre::2026-08-24",
-    "titulo": "Orden público en Sucre",
-    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:11 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/",
-        "fecha": "2026-08-24T11:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T11:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-24T11:00:00+00:00",
-    "fecha_deteccion": "2026-08-24T13:12:05.390049+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Zulia::2026-08-24",
-    "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 24/08/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/08/2026, 9:12 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/radiografia-de-la-protesta-en-venezuela/"
   }
 ]

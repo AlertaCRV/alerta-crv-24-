@@ -1947,32 +1947,36 @@
     "intentos": 2,
     "ultima_vez": "2026-09-07T21:21:36.077576+00:00"
   },
-  "inundacion::Yaracuy::2026-09-07": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-07T21:21:39.697432+00:00"
-  },
   "infraestructura_electrica::Distrito Capital::2026-09-07": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-07T17:54:36.925955+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-07T23:39:22.412118+00:00"
   },
   "infraestructura_electrica::Merida::2026-09-07": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-07T17:54:40.499670+00:00"
-  },
-  "inundacion::La Guaira::2026-09-07": {
     "intentos": 2,
-    "ultima_vez": "2026-09-07T21:21:50.324511+00:00"
+    "ultima_vez": "2026-09-07T23:39:25.938785+00:00"
   },
   "orden_publico::Distrito Capital::2026-09-07": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-07T21:21:32.616247+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-07T23:39:08.798922+00:00"
   },
   "orden_publico::Nueva Esparta::2026-09-07": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-07T21:21:43.243223+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-07T23:39:41.091544+00:00"
   },
   "infraestructura_agua::Aragua::2026-09-07": {
     "intentos": 1,
     "ultima_vez": "2026-09-07T21:21:46.801616+00:00"
+  },
+  "deslizamiento::Tachira::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T23:39:12.250294+00:00"
+  },
+  "infraestructura_electrica::Portuguesa::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T23:39:15.689820+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-07": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-07T23:39:37.613354+00:00"
   }
 }
