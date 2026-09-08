@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-08T11:40:21.068779+00:00",
+  "actualizado": "2026-09-08T23:43:01.845099+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-08T01:20:05+00:00"
+    "hasta": "2026-09-08T18:41:07+00:00"
   },
-  "total_eventos": 344,
+  "total_eventos": 346,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
     "infraestructura_electrica": 81,
     "deslizamiento": 28,
     "colapso_estructural": 3,
-    "orden_publico": 62,
+    "orden_publico": 64,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -54,7 +54,7 @@
     },
     {
       "estado": "Miranda",
-      "total": 18,
+      "total": 19,
       "confirmados": 2
     },
     {
@@ -103,12 +103,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Merida",
-      "total": 9,
+      "estado": "Portuguesa",
+      "total": 10,
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
+      "estado": "Merida",
       "total": 9,
       "confirmados": 0
     },
@@ -262,7 +262,7 @@
       "explosion": 1,
       "deslizamiento": 2,
       "inundacion": 5,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "ataque_armado": 1,
       "emergencia_metro": 1
     },
@@ -310,7 +310,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -332,7 +332,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 289,
+    "sin_clasificar": 291,
     "medio": 4,
     "bajo": 8
   },
@@ -364,7 +364,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 8
+      "2026-09": 10
     },
     "salud_publica": {
       "2026-07": 1,
