@@ -2023,14 +2023,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-08T18:53:17.282283+00:00"
   },
-  "orden_publico::Miranda::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T21:33:41.467595+00:00"
-  },
-  "orden_publico::Portuguesa::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T21:33:45.003175+00:00"
-  },
   "sismo::Carabobo::2026-09-08": {
     "intentos": 1,
     "ultima_vez": "2026-09-08T18:53:27.552744+00:00"
@@ -2044,7 +2036,23 @@
     "ultima_vez": "2026-09-08T21:33:48.931767+00:00"
   },
   "salud_publica::Distrito Capital::2026-09-08": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T23:42:40.315140+00:00"
+  },
+  "orden_publico::Yaracuy::2026-09-08": {
     "intentos": 1,
-    "ultima_vez": "2026-09-08T21:33:38.042963+00:00"
+    "ultima_vez": "2026-09-08T23:42:47.107494+00:00"
+  },
+  "salud_publica::Apure::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T23:42:53.834183+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T23:42:57.248116+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T23:43:00.619571+00:00"
   }
 }
