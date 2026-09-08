@@ -2024,12 +2024,12 @@
     "ultima_vez": "2026-09-08T18:53:17.282283+00:00"
   },
   "orden_publico::Miranda::2026-09-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-08T18:53:20.575559+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T21:33:41.467595+00:00"
   },
   "orden_publico::Portuguesa::2026-09-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-08T18:53:24.027982+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T21:33:45.003175+00:00"
   },
   "sismo::Carabobo::2026-09-08": {
     "intentos": 1,
@@ -2040,7 +2040,11 @@
     "ultima_vez": "2026-09-08T18:53:34.356098+00:00"
   },
   "infraestructura_agua::Bolivar::2026-09-08": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T21:33:48.931767+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-09-08": {
     "intentos": 1,
-    "ultima_vez": "2026-09-08T18:53:45.759139+00:00"
+    "ultima_vez": "2026-09-08T21:33:38.042963+00:00"
   }
 }
