@@ -2012,7 +2012,35 @@
     "ultima_vez": "2026-09-08T11:40:04.946889+00:00"
   },
   "sismo::Distrito Capital::2026-09-08": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T18:53:30.985736+00:00"
+  },
+  "sismo::Falcon::2026-09-08": {
     "intentos": 1,
-    "ultima_vez": "2026-09-08T15:21:10.119020+00:00"
+    "ultima_vez": "2026-09-08T18:53:13.886007+00:00"
+  },
+  "sismo::Yaracuy::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:17.282283+00:00"
+  },
+  "orden_publico::Miranda::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:20.575559+00:00"
+  },
+  "orden_publico::Portuguesa::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:24.027982+00:00"
+  },
+  "sismo::Carabobo::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:27.552744+00:00"
+  },
+  "sismo::Zulia::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:34.356098+00:00"
+  },
+  "infraestructura_agua::Bolivar::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T18:53:45.759139+00:00"
   }
 }
