@@ -1979,10 +1979,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-07T23:39:37.613354+00:00"
   },
-  "orden_publico::Distrito Capital::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T06:25:58.288039+00:00"
-  },
   "deslizamiento::Tachira::2026-09-08": {
     "intentos": 2,
     "ultima_vez": "2026-09-08T06:26:01.626912+00:00"
@@ -1999,14 +1995,6 @@
     "intentos": 1,
     "ultima_vez": "2026-09-08T01:26:23.536786+00:00"
   },
-  "emergencia_metro::Miranda::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T06:26:08.572851+00:00"
-  },
-  "sismo::La Guaira::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T06:26:11.893548+00:00"
-  },
   "orden_publico::Nueva Esparta::2026-09-08": {
     "intentos": 2,
     "ultima_vez": "2026-09-08T06:26:15.218502+00:00"
@@ -2015,16 +2003,12 @@
     "intentos": 1,
     "ultima_vez": "2026-09-08T01:26:45.551078+00:00"
   },
-  "infraestructura_agua::Lara::2026-09-08": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-08T06:26:18.579954+00:00"
-  },
   "inundacion::La Guaira::2026-09-08": {
     "intentos": 1,
     "ultima_vez": "2026-09-08T01:27:10.428347+00:00"
   },
   "orden_publico::Aragua::2026-09-08": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-08T06:26:05.034838+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-08T11:40:04.946889+00:00"
   }
 }

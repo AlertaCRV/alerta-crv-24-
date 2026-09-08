@@ -1,5 +1,111 @@
 [
   {
+    "tipo": "emergencia_metro",
+    "ubicacion": "Miranda",
+    "municipio": "Chacao",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/07/hay-que-concluir-las-obras-de-el-metro-y-realizar-auditorias-viales-en-caracas-dijo-riad-bujana/",
+        "fecha": "2026-09-08T01:20:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-08T01:20:05+00:00",
+    "fecha_evento_temprana": "2026-09-08T01:20:05+00:00",
+    "fecha_deteccion": "2026-09-08T11:40:08.400744+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "emergencia_metro::Miranda::2026-09-08",
+    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Municipio Chacao, Miranda",
+    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 07/09/2026, 9:20 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/07/hay-que-concluir-las-obras-de-el-metro-y-realizar-auditorias-viales-en-caracas-dijo-riad-bujana/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/",
+        "fecha": "2026-09-07T23:40:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-07T23:40:05+00:00",
+    "fecha_evento_temprana": "2026-09-07T23:40:05+00:00",
+    "fecha_deteccion": "2026-09-08T11:40:11.834075+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-07",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 07/09/2026, 7:40 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/",
+        "fecha": "2026-09-08T00:01:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-08T00:01:02+00:00",
+    "fecha_evento_temprana": "2026-09-08T00:01:02+00:00",
+    "fecha_deteccion": "2026-09-08T11:40:15.289096+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-09-08",
+    "titulo": "Sismo en La Guaira",
+    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 07/09/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Lara",
+    "municipio": "Andrés Eloy Blanco",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/",
+        "fecha": "2026-09-08T00:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-08T00:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-08T00:00:00+00:00",
+    "fecha_deteccion": "2026-09-08T11:40:18.665012+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Lara::2026-09-08",
+    "titulo": "Falla de agua en Municipio Andrés Eloy Blanco, Lara",
+    "texto": "📌 Falla de agua en Municipio Andrés Eloy Blanco, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Andrés Eloy Blanco, Lara\n🕒 Hecho reportado: 07/09/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Yaracuy",
     "municipio": "Veroes",
@@ -2018,83 +2124,5 @@
     "clave_dedup": "salud_publica::Lara::2026-08-25",
     "titulo": "Salud pública en Lara",
     "texto": "📌 Salud pública en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/08/2026, 6:39 a.m.\n🔎 Detectado por el sistema: 25/08/2026, 8:03 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/ovp-muere-en-lara-segundo-privado-de-libertad-que-recibia-dialisis-en-menos-de-una-semana-24ago/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Candelaria",
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/08/24/manifestantes-llegan-al-ministerio-del-interior-y-exigen-la-libertad-de-los-presos-politicos/",
-        "fecha": "2026-08-25T03:40:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-25T03:40:02+00:00",
-    "fecha_evento_temprana": "2026-08-25T03:40:02+00:00",
-    "fecha_deteccion": "2026-08-25T10:19:48.839937+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-08-25",
-    "titulo": "Orden público en Parroquia Candelaria, Distrito Capital",
-    "texto": "📌 Orden público en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 24/08/2026, 11:40 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 6:19 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/08/24/manifestantes-llegan-al-ministerio-del-interior-y-exigen-la-libertad-de-los-presos-politicos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": "Puerto La Cruz",
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/hasta-8-hora-sin-luz-la-calamidad-electrica-que-golpea-a-las-familias-de-la-zona-norte-de-anzoategui/",
-        "fecha": "2026-08-24T23:59:47+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T23:59:47+00:00",
-    "fecha_evento_temprana": "2026-08-24T23:59:47+00:00",
-    "fecha_deteccion": "2026-08-25T04:26:12.333013+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-08-24",
-    "titulo": "Falla eléctrica en Parroquia Puerto La Cruz, Anzoategui",
-    "texto": "📌 Falla eléctrica en Parroquia Puerto La Cruz, Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Puerto La Cruz, Anzoategui\n🕒 Hecho reportado: 24/08/2026, 7:59 p.m.\n🔎 Detectado por el sistema: 25/08/2026, 12:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/hasta-8-hora-sin-luz-la-calamidad-electrica-que-golpea-a-las-familias-de-la-zona-norte-de-anzoategui/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Tachira",
-    "municipio": "Uribante",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/tres-muertos-cinco-desaparecidos-y-mas-de-150-viviendas-afectadas-por-las-lluvias-en-venezuela/",
-        "fecha": "2026-08-24T23:28:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-24T23:28:55+00:00",
-    "fecha_evento_temprana": "2026-08-24T23:28:55+00:00",
-    "fecha_deteccion": "2026-08-25T02:47:09.491987+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::Tachira::2026-08-24",
-    "titulo": "Deslizamiento/Derrumbe en Municipio Uribante, Tachira",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio Uribante, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Uribante, Tachira\n🕒 Hecho reportado: 24/08/2026, 7:28 p.m.\n🔎 Detectado por el sistema: 24/08/2026, 10:47 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/tres-muertos-cinco-desaparecidos-y-mas-de-150-viviendas-afectadas-por-las-lluvias-en-venezuela/"
   }
 ]
