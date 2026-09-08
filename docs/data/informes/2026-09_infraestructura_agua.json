@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-07T01:10:57.653465+00:00",
+  "generado": "2026-09-08T01:28:34.738592+00:00",
   "actualizado_hasta": "2026-09-06T23:19:22.342480+00:00",
   "total_eventos": 3,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 12,
     "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de falla de agua, una disminución notable respecto a los doce eventos reportados en el período anterior (2026‑08). Esta reducción se refleja en la menor cantidad de incidentes críticos documentados por los medios locales.\n\nEn el estado Zulia, la Gobernación entregó siete equipos —motores y bombas de 15 a 30 HP— destinados a reforzar la producción y distribución de agua potable en cinco parroquias del municipio Baralt, garantizando un suministro de hasta 110 litros por segundo en comunidades como La Línea, Los Cañitos, San José del Muro, San Benito y Los Pozos del Campo (La Verdad).\n\nEn Nueva Esparta, el diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance que indica que los habitantes del municipio Tubores llevan más de seis meses sin agua, describiendo una situación de «aislamiento hídrico» que afecta gravemente a la población local (Reporte Confidencial).\n\nEn el estado Sucre, el alcalde de Cumaná, Pedro Figueroa, aseguró que el municipio quedará excluido de la programación de cortes eléctricos, medida adoptada en respuesta a la crisis hídrica que afecta a varios municipios de la región, aunque la falta de agua persiste como problema central (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de falla de agua, una reducción significativa respecto a los doce registrados en agosto de 2026 (comparación proporcionada). Estos incidentes se concentraron en tres municipios de diferentes estados, evidenciando tanto acciones de mitigación como persistentes carencias en el suministro hídrico.\n\nEn el municipio Baralt, del estado Zulia, la Gobernación entregó siete equipos —motores y bombas con potencias entre 15 y 30 HP— destinados a reforzar la producción y distribución de agua potable en cinco parroquias (La Verdad (Zulia)). Según la información oficial, dichos equipos permitirán garantizar un caudal de hasta 110 litros por segundo en comunidades como La Línea, Los Cañitos, San José del Muro, San Benito, Los Pozos del Campo y La L (La Verdad (Zulia)).\n\nEn el municipio Tubores, estado Nueva Esparta, los habitantes continúan enfrentando un \"aislamiento hídrico\" tras más de seis meses sin suministro de agua por tubería, según el balance presentado por el diputado Omar Veracierto basado en la plataforma Pulso Nueva Esparta (Reporte Confidencial (Nueva Esparta)). El informe destaca la gravedad de la crisis y la falta de soluciones efectivas para restablecer el servicio.\n\nEn la ciudad de Cumaná, estado Sucre, el alcalde Pedro Figueroa anunció que la entidad quedará excluida de la programación de cortes eléctricos implementada en otras regiones, medida adoptada en el marco de la crisis hídrica que afecta a varios municipios (Turimiquire (Sucre)). Aunque la exclusión de los cortes eléctricos busca aliviar la presión sobre la infraestructura, la falta de agua sigue siendo un problema crítico para la población local.",
   "fuentes": [
     {
       "nombre": "La Verdad (Zulia)",

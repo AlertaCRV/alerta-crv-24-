@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-07T12:26:42.693032+00:00",
-  "actualizado_hasta": "2026-09-07T12:26:35.461132+00:00",
-  "total_eventos": 37,
+  "generado": "2026-09-08T01:28:08.179404+00:00",
+  "actualizado_hasta": "2026-09-07T23:39:52.710584+00:00",
+  "total_eventos": 39,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 273,
-    "actual": 37
+    "actual": 39
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 37 eventos de emergencia, una disminución notable respecto a los 273 eventos del período anterior (agosto 2026) (Comparación proporcionada). Esta reducción se observa en la variedad de incidentes reportados, aunque persisten situaciones críticas en distintas regiones del país.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos autobuses de transporte público colisionaron a las 5:10 a.m. del miércoles, dejando tres muertos y un herido (El Periodico de Monagas). La gravedad del siniestro fue catalogada como crítica y movilizó a los servicios de emergencia de la capital.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se reportó una emergencia vial y habitacional en El Valle. Cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se mantiene el cierre preventivo del paso vehicular por el riesgo de derrumbe (Diario La Nacion). La alcaldía local estima concluir los trabajos de estabilización de la vía en aproximadamente dos semanas.\n\nLos problemas eléctricos se mantuvieron críticos: en Lara los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes registrados en agosto y 2 874 horas sin suministro (El Impulso). Además, se reportaron bajones eléctricos de 30 a 40 minutos en 11 estados, incluidos Caracas, Aragua y Miranda, donde algunos usuarios indicaron que el servicio no se restableció después de la segunda fluctuación (El Pitazo).\n\nFuertes lluvias provocaron inundaciones y anegaciones en varios municipios. En Guanare, estado Portuguesa, se registraron inundaciones de viviendas tras precipitaciones intensas (El Impulso). En Barquisimeto y Palavecino, estado Lara, las lluvias acompañadas de vientos huracanados causaron caída de árboles, daños estructurales en centros comerciales y anegaciones de calles, particularmente en la zona norte de la ciudad (El Pitazo).\n\nFinalmente, se registraron manifestaciones relacionadas con la situación política. En Mérida, ciudadanos y ONG protestaron frente al Ministerio Público exigiendo la libertad de presos políticos (El Pitazo). En Caracas, familiares de presos políticos realizaron una marcha para demandar su liberación, subrayando que la cuestión no debe quedar en segundo plano frente a negociaciones económicas (La Prensa de Lara).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 39 eventos de emergencia, una disminución notable respecto a los 273 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta reducción se refleja en la variedad de incidentes reportados, que van desde siniestros viales hasta fenómenos climáticos y protestas sociales.\n\nEl hecho más grave ocurrido en el Distrito Capital fue un choque entre dos autobuses en la Autopista Regional del Centro, kilómetro 133, a las 5:10 a.m. del miércoles, que dejó tres muertos y un herido (El Periodico de Monagas). La gravedad del incidente fue catalogada como crítica y movilizó a los servicios de emergencia de la capital.\n\nEn el estado Táchira, una emergencia vial y habitacional en la zona de El Valle obligó al desplazamiento de cuatro familias y al desalojo de siete viviendas por daños irreparables, mientras se gestionaba el riesgo de derrumbe y el cierre preventivo del paso vehicular (Diario La Nacion). En Lara, se reportó el colapso de la base del puente Yacural, evidenciando fallas estructurales que continúan afectando la infraestructura del país (Diario La Nacion).\n\nLa crisis eléctrica se mantuvo como un problema crítico: en Lara los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes y 2 874 horas sin suministro en agosto (El Impulso). Además, se registraron bajones eléctricos de 30 a 40 minutos en Caracas y en once estados más, generando interrupciones prolongadas en zonas de Aragua y Miranda (El Pitazo). En Bolívar, explosiones de transformadores agravaron la situación de los usuarios en áreas mineras (El Impulso).\n\nLas condiciones climáticas extremas provocaron fuertes lluvias que causaron anegaciones en Guanare, estado Portuguesa (El Impulso), y generaron lluvias con descargas eléctricas en varias regiones del país tras el paso de una onda tropical (El Impulso). En Barquisimeto y Palavecino, vientos huracanados y precipitaciones intensas derribaron árboles, dañaron viviendas y centros comerciales, y provocaron inundaciones en calles del norte de la ciudad (El Pitazo). Asimismo, un incendio de gran magnitud consumió los pisos superiores de una fábrica de cosméticos en Palo Verde, zona industrial del este de Caracas, movilizando a más de 120 efectivos de bomberos y protección civil (El Siglo).\n\nFinalmente, la dimensión social se manifestó en protestas pacíficas: ciudadanos y ONG de Mérida exigieron la libertad de presos políticos frente al Ministerio Público (El Pitazo), mientras que familiares de detenidos políticos marcharon en Caracas demandando su liberación (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -40,6 +40,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
     },
     {
       "nombre": "El Pitazo",

@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-09-07T01:12:24.075874+00:00",
+    "generado": "2026-09-08T01:29:52.284843+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-09-07T01:12:11.800824+00:00",
+    "generado": "2026-09-08T01:29:47.432148+00:00",
     "total_eventos": 1
   },
   {
@@ -36,15 +36,15 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-09-07T06:08:36.568945+00:00",
-    "total_eventos": 10
+    "generado": "2026-09-08T01:29:01.683467+00:00",
+    "total_eventos": 12
   },
   {
     "periodo": "2026-09",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-09-07T01:10:57.653465+00:00",
+    "generado": "2026-09-08T01:28:34.738592+00:00",
     "total_eventos": 3
   },
   {
@@ -52,7 +52,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-09-07T01:10:44.853906+00:00",
+    "generado": "2026-09-08T01:28:21.299585+00:00",
     "total_eventos": 1
   },
   {
@@ -60,15 +60,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-09-07T12:26:42.693032+00:00",
-    "total_eventos": 37
+    "generado": "2026-09-08T01:28:08.179404+00:00",
+    "total_eventos": 39
   },
   {
     "periodo": "2026-09",
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-09-07T01:10:13.084909+00:00",
+    "generado": "2026-09-08T01:27:41.235051+00:00",
     "total_eventos": 1
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "emergencia_metro",
     "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
     "cerrado": false,
-    "generado": "2026-09-07T01:10:08.405056+00:00",
+    "generado": "2026-09-08T01:27:36.603268+00:00",
     "total_eventos": 1
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-09-07T01:10:03.002465+00:00",
+    "generado": "2026-09-08T01:27:23.542974+00:00",
     "total_eventos": 3
   },
   {
