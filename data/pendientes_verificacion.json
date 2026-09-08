@@ -1978,5 +1978,49 @@
   "infraestructura_electrica::Zulia::2026-09-07": {
     "intentos": 1,
     "ultima_vez": "2026-09-07T23:39:37.613354+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:08.801359+00:00"
+  },
+  "deslizamiento::Tachira::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:12.289110+00:00"
+  },
+  "tsunami::Nueva Esparta::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:15.687959+00:00"
+  },
+  "infraestructura_electrica::Portuguesa::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:19.126961+00:00"
+  },
+  "inundacion::Yaracuy::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:23.536786+00:00"
+  },
+  "emergencia_metro::Miranda::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:26.950165+00:00"
+  },
+  "sismo::La Guaira::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:30.413303+00:00"
+  },
+  "orden_publico::Nueva Esparta::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:33.981302+00:00"
+  },
+  "infraestructura_agua::Aragua::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:45.551078+00:00"
+  },
+  "infraestructura_agua::Lara::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:26:57.027437+00:00"
+  },
+  "inundacion::La Guaira::2026-09-08": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-08T01:27:10.428347+00:00"
   }
 }
