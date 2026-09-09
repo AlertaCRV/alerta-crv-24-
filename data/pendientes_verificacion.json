@@ -2054,5 +2054,33 @@
   "infraestructura_electrica::Distrito Capital::2026-09-08": {
     "intentos": 1,
     "ultima_vez": "2026-09-08T23:43:00.619571+00:00"
+  },
+  "infraestructura_electrica::Miranda::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:25.435541+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:28.891416+00:00"
+  },
+  "orden_publico::Yaracuy::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:32.414604+00:00"
+  },
+  "orden_publico::Portuguesa::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:35.912461+00:00"
+  },
+  "salud_publica::Apure::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:39.249651+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:42.746085+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T01:37:46.054894+00:00"
   }
 }
