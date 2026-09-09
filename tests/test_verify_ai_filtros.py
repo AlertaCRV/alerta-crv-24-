@@ -387,6 +387,30 @@ def test_pocos_dias_despues_no_es_mas_de_control():
     assert _es_retrospectiva_obvia(texto) is False
 
 
+def test_a_menos_de_n_semanas_de_estos_hechos_es_retrospectiva():
+    # Caso real (09-09-2026, Runrun.es, "Como se vive vulnerable ante las
+    # lluvias"): un reportaje sobre inundaciones del "pasado sabado 22 de
+    # agosto" cierra con "a menos de dos semanas de estos hechos... las
+    # lluvias registradas en el estado Lara provocaron el desbordamiento",
+    # generando alertas nuevas de inundacion/emergencia_metro en Aragua y
+    # Distrito Capital como si el reportaje fuera de hoy. "menos de" no
+    # coincidia con ningun cualificador existente (solo casi/cerca de/
+    # alrededor de).
+    texto = (
+        "A Ricardo lo agarro el palo de agua el pasado sabado 22 de agosto. "
+        "Y a menos de dos semanas de estos hechos, las lluvias registradas "
+        "en el estado Lara provocaron el desbordamiento de una quebrada."
+    )
+    assert _es_retrospectiva_obvia(texto) is True
+
+
+def test_a_pocas_semanas_de_estos_hechos_no_es_menos_de_control():
+    # Control: sin la frase "menos de" antes del numero, una transicion
+    # temporal distinta no debe activar este nuevo patron.
+    texto = "A pocas semanas de estos hechos, la comunidad continua exigiendo respuestas."
+    assert _es_retrospectiva_obvia(texto) is False
+
+
 # --- municipio/parroquia del cluster deben aparecer en las fuentes -------
 # aprobadas, no solo en cualquier miembro del cluster crudo (31-07-2026) ---
 

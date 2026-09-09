@@ -8185,3 +8185,257 @@ scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
 scripts/detectar_inconsistencias.py` → mismos pares de posibles duplicados
 ya conocidos de sesiones anteriores, más las fuentes muertas en informes
 documentadas arriba.
+
+## Auditoría diaria automática (09-09-2026): 6 causas raíz corregidas (7 alertas del período auditado más 1 hallazgo histórico incidental), más un hallazgo pendiente de discutir
+
+Se auditaron las 31 alertas publicadas desde el corte de la auditoría
+anterior (04-09-2026, hasta las 19:41 UTC) hasta ahora -- todas
+`PASADO_POR_FALLA_TECNICA`, la verificación de IA sigue sin correr en este
+entorno -- comparando cada una contra el texto real de sus fuentes en
+`data/historico_fuentes_texto.jsonl`. 6 errores reales encontrados y
+corregidos de raíz.
+
+### 1. Un enlace de "artículos relacionados" sin la palabra "también" coló una falla eléctrica falsa en Zulia
+
+`infraestructura_electrica::Zulia::2026-09-09` (Nuevo Día (Falcón), "Inameh
+confirma presencia de El Niño en Venezuela y prevé alza en las
+temperaturas") es un explicativo climático nacional sin ninguna falla
+eléctrica descrita -- disparaba el tipo en Zulia únicamente porque el
+texto trae embebido, a mitad de cuerpo, un enlace de recirculación con el
+formato "Puedes leer: La crisis interminable (I): Cuando la vida en el
+Zulia la planifica un apagón". `_ARTICULOS_RELACIONADOS_RE`
+(`scripts/fetch_rss.py`) ya cubre "Lea/Lee/Leer también:" y "También
+puedes leer:", pero no esta variante de nuevodia.com.ve sin la palabra
+"también". No se extendió esa regex (que recorta todo el texto restante
+hasta el final): se verificó contra el corpus que, en otros 3 artículos
+reales de nuevodia.com.ve, esta misma marca "Puedes leer:" aparece a mitad
+de cuerpo con contenido real y relevante DESPUÉS de la marca (evidencia de
+la que dependen alertas de inundación ya vigentes en Distrito Capital/
+Aragua) -- truncar hasta el final perdería esa evidencia real.
+
+**Corrección**: se agregó la frase exacta "la vida en el zulia la
+planifica un apagon" a `LISTA_NEGRA_POR_ESTADO["Zulia"]`
+(`scripts/classify.py`), mismo mecanismo ya usado para otros títulos
+contaminantes embebidos de ese estado. Se verificó contra las 351 fuentes
+de `data/historico_fuentes_texto.jsonl` que la frase es exclusiva de este
+artículo, y con un caso de control (la misma marca "Puedes leer:" en un
+artículo con una falla eléctrica real antes y después de la marca) que la
+alerta sigue publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Zulia::2026-09-09` de los 4 archivos de datos.
+
+### 2. Una demolición de edificios tras el sismo de agosto se publicó como sismo nuevo en La Guaira
+
+`sismo::La Guaira::2026-09-08` (La Prensa de Lara, "Venezuela demolerá 39
+edificios con daños estructurales tras el terremoto en La Guaira") es una
+nota brevísima (probablemente truncada por el feed) sobre la demolición de
+edificios dañados por el sismo crítico de La Guaira ya publicado el
+22-08-2026 (`sismo::La Guaira::2026-08-22::critico`) y el procesamiento de
+sus escombros mediante un convenio internacional -- una obra de
+reconstrucción, sin ningún indicio de temblor nuevo (sin magnitud/
+epicentro/sacudió). Los filtros retrospectivos existentes de sismo
+(`_SISMO_FECHA_PASADA_RE`, `_es_correccion_epicentro_retrospectiva`) exigen
+frases como "el pasado" o "ajustó el epicentro", ninguna presente aquí --
+el artículo solo nombra "el terremoto en La Guaira" como un hecho ya
+conocido, sin fecha ni marcador de aniversario.
+
+**Corrección**: nueva función `_es_demolicion_post_terremoto_retrospectiva()`
+(`scripts/classify.py`), evaluada para tipo=sismo: si el texto combina un
+verbo de demolición ("demoler"/"demolerá"/"demolición"...) con una mención
+de terremoto/sismo, y no hay evidencia fuerte propia (magnitud/epicentro/
+sacudió), se descarta el tipo -- a diferencia de la corrección de
+epicentro (señal decisiva, nunca anulable), esta SÍ se anula por evidencia
+fuerte, igual que la limpieza de escombros ya cubierta para deslizamiento:
+un sismo genuinamente nuevo que de pasada mencione la demolición de
+edificios de un terremoto anterior no debe descartarse. Se verificó con un
+caso de control (un sismo real de magnitud 5.8 que además menciona esa
+demolición) que la alerta sigue publicándose, y contra las 351 fuentes de
+`data/historico_fuentes_texto.jsonl` que "demoler"/"demolición" es
+exclusiva de este artículo.
+
+**Hallazgo relacionado**: al corregir el falso positivo de sismo, el mismo
+artículo ("...procesarán escombros mediante convenio internacional")
+quedaba expuesto a `_es_limpieza_escombros_terremoto_sin_deslizamiento_real`
+(deslizamiento, ver 20-08-2026) sin ser descartado: "procesar" no estaba
+en `_VERBOS_LIMPIEZA_ESCOMBROS`. Se agregó esa conjugación a la lista,
+verificado contra el corpus que "procesar" (en cualquier conjugación) no
+aparece en ningún otro caso real de deslizamiento.
+
+**Corrección retroactiva**: se eliminó por completo `sismo::La
+Guaira::2026-09-08` de los 4 archivos de datos.
+
+### 3. Un reportaje sobre inundaciones de dos semanas atrás publicó dos alertas nuevas en Aragua y Distrito Capital
+
+`inundacion::Aragua::2026-09-04` y `emergencia_metro::Distrito
+Capital::2026-09-04` (Runrun.es, "Cómo se vive vulnerable ante las
+lluvias") vienen del mismo artículo de largo aliento sobre la
+vulnerabilidad ante las lluvias en Venezuela -- describe una inundación
+real ocurrida "el pasado sábado 22 de agosto" (desbordamiento del río
+Valle en Caracas, estaciones del Metro inundadas, desaparecidos en el
+municipio José Félix Ribas de Aragua), sin ningún desarrollo nuevo el día
+de publicación. El filtro general `_es_retrospectiva_obvia()`
+(`scripts/verify_ai.py`) no lo detectaba: el artículo cierra su recuento
+con "Y a menos de dos semanas de estos hechos... las lluvias registradas
+en el estado Lara provocaron el desbordamiento de una quebrada", pero "menos
+de" no coincidía con ningún cualificador existente en `_CUALIFICADOR_APROX`
+(solo casi/cerca de/alrededor de).
+
+**Corrección**: se agregó "menos de" a `_CUALIFICADOR_APROX`
+(`scripts/verify_ai.py`). Se verificó con un caso de control ("a pocas
+semanas de estos hechos", sin la frase "menos de") que no activa el
+patrón, y contra las 351 fuentes de `data/historico_fuentes_texto.jsonl`
+que "a menos de [número] semanas de estos hechos" es exclusiva de este
+artículo.
+
+**Corrección retroactiva**: se eliminaron por completo
+`inundacion::Aragua::2026-09-04` y `emergencia_metro::Distrito
+Capital::2026-09-04` de los 4 archivos de datos.
+
+### 4. Una asamblea sindical que anunciaba protestas futuras se publicó como orden público en Miranda
+
+`orden_publico::Miranda::2026-09-08` (El Pitazo, "Docentes denuncian
+recorte de vacaciones y anuncian protestas de calle por deudas
+pendientes") describe una asamblea sindical real en Ocumare del Tuy donde
+los docentes rechazaron una orden ministerial y "advierten acciones de
+calle por deudas acumuladas" -- una amenaza de protesta FUTURA, sin ningún
+disturbio o manifestación ya en curso ese día. Mismo patrón ya cubierto
+para "llamado a manifestar"/"Gran Protesta Nacional" (13-08-2026), con una
+frase distinta no cubierta por esa lista.
+
+**Corrección**: se agregó "acciones de calle" a
+`_MARCADORES_CONVOCATORIA_PROTESTA_FUTURA` (`scripts/classify.py`). Se
+verificó con un caso de control (la misma frase junto con disturbios y
+heridos ya ocurridos ese día) que la evidencia fuerte evita el descarte, y
+contra las 351 fuentes de `data/historico_fuentes_texto.jsonl` que
+"acciones de calle" es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Miranda::2026-09-08` de los 4 archivos de datos.
+
+### 5. Dos coberturas sobre la reconstrucción de La Guaira, sin la palabra "terremoto", publicaron deslizamientos falsos
+
+`deslizamiento::La Guaira::2026-09-05` (El Impulso, "Empresa
+estadounidense firma acuerdo para la remoción de tres millones de
+toneladas de escombros... e impulsar la reconstrucción en La Guaira") es
+un anuncio sobre un convenio de limpieza de escombros del sismo crítico
+del 22-08-2026, sin ningún deslizamiento nuevo. `_es_limpieza_escombros_
+terremoto_sin_deslizamiento_real` (20-08-2026) ya cubre "escombros" + un
+verbo de limpieza + una mención sísmica, pero este resumen de RSS,
+demasiado breve, nunca usa literalmente "terremoto"/"sismo"/"temblor".
+
+**Corrección**: se agregó "reconstruccion"/"reconstrucción" a
+`_MENCIONES_SISMICAS_ESCOMBROS` (`scripts/classify.py`) -- solo actúa
+junto con "escombro(s)" + un verbo de limpieza, igual que "terremoto". Se
+verificó con un caso de control (un deslizamiento real con viviendas
+colapsadas que además menciona la reconstrucción de una vía) que la
+evidencia fuerte evita el descarte, y contra las 351 fuentes de
+`data/historico_fuentes_texto.jsonl` que solo otro caso real usa esta
+combinación (ver hallazgo incidental abajo).
+
+**Hallazgo incidental**: la misma verificación reveló que el mismo patrón
+ya había generado, el 25-08-2026 (fuera de la ventana de esta auditoría,
+ya expirado de `docs/data/noticias.json` por la rotación de 3 días, pero
+presente en el registro histórico permanente), un falso positivo idéntico:
+`deslizamiento::La Guaira::2026-08-25` (Primicia, "Remoción de escombros
+en La Guaira puede tardar hasta un año. La reconstrucción continúa
+pendiente mientras miles de afectados permanecen en refugios").
+
+**Corrección retroactiva**: se eliminaron por completo
+`deslizamiento::La Guaira::2026-09-05` y `deslizamiento::La
+Guaira::2026-08-25` de `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl` (el segundo ya no tenía entrada en
+`docs/data/noticias.json`); el primero también de `docs/data/noticias.json`,
+donde seguía publicado.
+
+### 6. Un anuncio positivo de entrega de equipos de bombeo se publicó como falla de agua en Zulia
+
+`infraestructura_agua::Zulia::2026-09-06` (La Verdad (Zulia),
+"Gobernación entrega equipos para mejorar el suministro de agua en
+Baralt") es un anuncio POSITIVO de entrega de motores y bombas para
+fortalecer la producción de agua potable (sin ninguna falla en curso ni
+previa mencionada) -- disparaba el tipo únicamente porque el texto nombra
+a la "Hidrológica de Venezuela (Hidroven)". Mismo patrón de fondo que los
+376 transformadores de Corpoelec (07-08-2026, `_es_anuncio_corpoelec_sin_
+falla`), nunca generalizado a infraestructura_agua.
+
+**Corrección**: nueva función `_es_anuncio_entrega_equipos_agua_sin_falla()`
+(`scripts/classify.py`): si el texto nombra a "hidrocapital"/"hidrologica"
+Y trae un marcador explícito de entrega/anuncio de equipos ("entrega de
+equipos"/"entregó equipos"...) Y no hay evidencia de una falla real ("sin
+agua"/"corte de agua"/"falla de agua"), se descarta el tipo. Deliberadamente
+más acotado que el equivalente de Corpoelec (exige el marcador de entrega,
+no solo el nombre de la empresa): un filtro general para "hidrocapital"/
+"hidrologica" sin ese marcador arriesgaría descartar casos reales ya
+conocidos del corpus histórico que también nombran a la hidrológica
+regional con frases distintas a las cubiertas aquí ("cisterneros exigen
+reactivación del llenadero", cloacas desbordadas) -- fuera del alcance de
+esta auditoría puntual, no corregidos. Se verificó con un caso de control
+(una falla de agua real que también menciona a la hidrológica y una
+entrega de equipos) que la evidencia fuerte evita el descarte, y contra
+las 344 fuentes vigentes de `data/historico_fuentes_texto.jsonl` que
+"entrega de equipos"/"entregó equipos" es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_agua::Zulia::2026-09-06` de los 4 archivos de datos.
+
+### Pendiente de discutir
+
+**Dos alertas de `orden_publico` en Portuguesa**
+(`orden_publico::Portuguesa::2026-09-05` y
+`orden_publico::Portuguesa::2026-09-08`, Portuguesa Reporta) describen
+declaraciones de dirigentes gremiales de jubilados/pensionados (Cantv,
+IVSS) sobre reclamos económicos crónicos ("mantienen protestas semanales
+en Acarigua y en el resto del país"), sin describir un hecho puntual de
+disturbio/manifestación ocurrido ese día específico -- un patrón similar
+al ya cubierto por `_es_queja_cronica_electrica_sin_hecho_verificable`
+(19-08-2026), pero sin un equivalente para orden_publico. No se corrigió:
+a diferencia de los casos ya resueltos arriba, aquí SÍ existe un contexto
+real y verificable de protestas recurrentes por esta misma causa
+(mencionado explícitamente en el propio texto y ya documentado como
+"pendiente" en la auditoría del 22-08-2026 para un patrón hermano), y
+crear un filtro general de "queja crónica" para orden_publico sin acotarlo
+cuidadosamente arriesga descartar coberturas legítimas de un conflicto
+laboral real y sostenido. Se notifica al usuario en vez de corregir un
+cambio de alcance amplio de forma autónoma.
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta como "fuentes muertas" los 8
+enlaces retractados hoy que ya habían sido incluidos en informes ya
+generados antes de esta auditoría: `docs/data/informes/2026-09_general.json`,
+`2026-09_infraestructura_electrica.json`, `2026-09_inundacion.json`,
+`2026-09_emergencia_metro.json`, `2026-09_orden_publico.json`,
+`2026-09_sismo.json`, `2026-09_deslizamiento.json` y
+`2026-08_deslizamiento.json` (el hallazgo incidental del 25-08-2026).
+`GROQ_API_KEY` no está disponible en este entorno, así que no se
+regeneraron a mano -- `scripts/build_informes.py` regenerará esos informes
+en la próxima corrida con acceso a la API (mismo patrón que sesiones
+anteriores). Los mismos pares de posibles duplicados ya conocidos de
+auditorías previas siguen sin resolver, sin cambios respecto a lo ya
+señalado.
+
+### Pendientes de sesiones anteriores sin novedad
+
+`infraestructura_agua::Sucre::2026-09-02` y `vialidad::Distrito
+Capital::2026-09-03` (ver auditorías del 02 y 03-09-2026) ya expiraron de
+`docs/data/noticias.json` por la rotación de 3 días sin que esta sesión
+encontrara información nueva para resolver la ambigüedad ya documentada --
+se mantienen como antecedente en el registro histórico, sin volver a
+notificar al usuario por lo mismo ya señalado.
+
+### Pruebas
+
+15 casos nuevos en `tests/casos_clasificacion.jsonl` (6 reales + 9
+controles) para los hallazgos 1, 2, 4, 5 y 6, más 2 casos nuevos (1 real +
+1 control) en `tests/test_verify_ai_filtros.py` para el hallazgo 3.
+Regresión completa contra las 343 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con los 8 eventos retractados hoy
+eliminados), corrida con `PYTHONHASHSEED=0` fijo: sin cambios inesperados
+-- las únicas fuentes afectadas por los fixes son, precisamente, las
+señaladas arriba. `python3 -m pytest tests/` → 729 passed, 6 xfailed
+(conocidos), 1 xpassed (conocido). `python3 scripts/validar_configs.py` →
+OK. `python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
+regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares
+de posibles duplicados ya conocidos de sesiones anteriores, más las
+fuentes muertas en informes documentadas arriba.

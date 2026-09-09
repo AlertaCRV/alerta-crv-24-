@@ -27,32 +27,6 @@
   },
   {
     "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/inameh-confirma-presencia-de-el-nino-en-venezuela-y-preve-alza-en-las-temperaturas/",
-        "fecha": "2026-09-09T14:23:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-09T14:23:20+00:00",
-    "fecha_evento_temprana": "2026-09-09T14:23:20+00:00",
-    "fecha_deteccion": "2026-09-09T21:56:54.681436+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-09",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 09/09/2026, 10:23 a.m.\n🔎 Detectado por el sistema: 09/09/2026, 5:56 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/inameh-confirma-presencia-de-el-nino-en-venezuela-y-preve-alza-en-las-temperaturas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
     "parroquia": "Altagracia",
@@ -151,32 +125,6 @@
   },
   {
     "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": "Lander",
-    "parroquia": "Ocumare Del Tuy",
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/",
-        "fecha": "2026-09-08T18:41:07+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-08T18:41:07+00:00",
-    "fecha_evento_temprana": "2026-09-08T18:41:07+00:00",
-    "fecha_deteccion": "2026-09-08T23:42:43.730918+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-08",
-    "titulo": "Orden público en Parroquia Ocumare Del Tuy, Municipio Lander, Miranda",
-    "texto": "📌 Orden público en Parroquia Ocumare Del Tuy, Municipio Lander, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Ocumare Del Tuy, Municipio Lander, Miranda\n🕒 Hecho reportado: 08/09/2026, 2:41 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:42 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/"
-  },
-  {
-    "tipo": "orden_publico",
     "ubicacion": "Portuguesa",
     "municipio": null,
     "parroquia": null,
@@ -252,34 +200,6 @@
     "clave_dedup": "orden_publico::Distrito Capital::2026-09-07",
     "titulo": "Orden público en Distrito Capital",
     "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 07/09/2026, 7:40 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/"
-  },
-  {
-    "tipo": "sismo",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/",
-        "fecha": "2026-09-08T00:01:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-08T00:01:02+00:00",
-    "fecha_evento_temprana": "2026-09-08T00:01:02+00:00",
-    "fecha_deteccion": "2026-09-08T11:40:15.289096+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "magnitud": null,
-    "tambien_mencionado_en": [],
-    "clave_dedup": "sismo::La Guaira::2026-09-08",
-    "titulo": "Sismo en La Guaira",
-    "texto": "📌 Sismo en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 07/09/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/"
   },
   {
     "tipo": "infraestructura_agua",
@@ -410,32 +330,6 @@
     "clave_dedup": "infraestructura_electrica::Carabobo::2026-09-07",
     "titulo": "Falla eléctrica en Carabobo",
     "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 06/09/2026, 9:00 p.m.\n🔎 Detectado por el sistema: 07/09/2026, 8:26 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/06/medianos-industriales-y-artesanos-del-estado-carabobo-exigen-electricidad-patra-poder-producir/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Zulia",
-    "municipio": "Baralt",
-    "parroquia": "General Urdaneta",
-    "severidad": "sin_clasificar",
-    "score": 0.8,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/",
-        "fecha": "2026-09-06T18:11:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-06T18:11:18+00:00",
-    "fecha_evento_temprana": "2026-09-06T18:11:18+00:00",
-    "fecha_deteccion": "2026-09-06T23:19:22.342480+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Zulia::2026-09-06",
-    "titulo": "Falla de agua en Parroquia General Urdaneta, Municipio Baralt, Zulia",
-    "texto": "📌 Falla de agua en Parroquia General Urdaneta, Municipio Baralt, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia General Urdaneta, Municipio Baralt, Zulia\n🕒 Hecho reportado: 06/09/2026, 2:11 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 7:19 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/"
   },
   {
     "tipo": "orden_publico",
@@ -594,32 +488,6 @@
     "texto": "📌 Deslizamiento/Derrumbe en Parroquia Juan Germán Roscio, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Juan Germán Roscio, Tachira\n🕒 Hecho reportado: 05/09/2026, 10:25 a.m.\n🔎 Detectado por el sistema: 05/09/2026, 4:39 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/",
-        "fecha": "2026-09-05T13:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-05T13:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-05T13:30:00+00:00",
-    "fecha_deteccion": "2026-09-05T18:26:42.641932+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-09-05",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 05/09/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 05/09/2026, 2:26 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": "Simón Rodríguez",
@@ -732,58 +600,6 @@
     "clave_dedup": "explosion::Zulia::2026-09-04",
     "titulo": "Explosión en Zulia",
     "texto": "📌 Explosión en Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 04/09/2026, 7:01 p.m.\n🔎 Detectado por el sistema: 05/09/2026, 6:46 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Aragua",
-    "municipio": "José Félix Ribas",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/",
-        "fecha": "2026-09-04T16:42:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T16:42:40+00:00",
-    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
-    "fecha_deteccion": "2026-09-04T23:33:52.913278+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Aragua::2026-09-04",
-    "titulo": "Inundación en Municipio José Félix Ribas, Aragua",
-    "texto": "📌 Inundación en Municipio José Félix Ribas, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio José Félix Ribas, Aragua\n🕒 Hecho reportado: 04/09/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 7:33 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
-  },
-  {
-    "tipo": "emergencia_metro",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Coche",
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/",
-        "fecha": "2026-09-04T16:42:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T16:42:40+00:00",
-    "fecha_evento_temprana": "2026-09-04T16:42:40+00:00",
-    "fecha_deteccion": "2026-09-04T23:33:56.279090+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-04",
-    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Parroquia Coche, Distrito Capital",
-    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Parroquia Coche, Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Coche, Distrito Capital\n🕒 Hecho reportado: 04/09/2026, 12:42 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 7:33 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
   },
   {
     "tipo": "infraestructura_electrica",
