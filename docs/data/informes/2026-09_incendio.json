@@ -3,7 +3,7 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-08T01:28:21.299585+00:00",
+  "generado": "2026-09-09T01:38:48.193442+00:00",
   "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 21,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 el sistema de monitoreo de emergencias registró únicamente un incendio, una disminución notable respecto a los 21 eventos reportados en el mes anterior, agosto de 2026. Esta reducción se refleja en la carga operativa de los organismos de gestión de riesgo y permite una mayor focalización de recursos.\n\nEl único incidente ocurrido fue un incendio de gran magnitud que se desató el lunes 31 de agosto en los últimos pisos de una infraestructura que funciona como fábrica de cosméticos, ubicada en la zona industrial de Palo Verde, al este de la capital de Aragua (El Siglo). El fuego consumió gran parte de la instalación, generando una emergencia que activó los protocolos de respuesta inmediata.\n\nAnte la magnitud del siniestro, el director nacional de Bomberos, Juan Carlos González, informó que aproximadamente 120 efectivos fueron desplegados en el sitio, integrando comisiones de los Bomberos de Caracas, Protección Civil y cuerpos policiales (El Siglo). La rápida movilización permitió contener la propagación del incendio y evitar mayores daños colaterales en áreas adyacentes.\n\nEste episodio subraya la importancia de la coordinación interinstitucional y la necesidad de mantener planes de contingencia actualizados, especialmente en zonas industriales donde la concentración de materiales inflamables aumenta el riesgo de incidentes graves. La Cruz Roja Venezolana continuará apoyando las labores de atención y recuperación, reforzando su papel en la gestión de emergencias en el país.",
+  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de incendio, lo que representa una notable reducción respecto al período anterior, en el que se contabilizaron 21 evento(s) registrados entonces vs. 1 en este período.\n\nEl único incidente ocurrió el 31 de agosto, cuando un incendio de gran magnitud consumió los últimos pisos de una infraestructura que funciona como fábrica de cosméticos en la zona industrial de Palo Verde, al este de la capital (El Siglo). La magnitud del fuego obligó a activar los protocolos de emergencia de los organismos de seguridad y gestión de riesgo.\n\nAnte la emergencia, el director nacional de Bomberos, Juan Carlos González, informó que aproximadamente 120 efectivos fueron desplegados en el sitio, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos de policía (El Siglo). La coordinación entre estas entidades buscó contener la propagación del incendio y garantizar la seguridad de los trabajadores y la población circundante.\n\nEste episodio, aunque aislado, subraya la importancia de mantener una vigilancia constante y una respuesta rápida ante incidentes de incendio. La Cruz Roja Venezolana continuará monitoreando la situación y colaborando con las autoridades para reforzar las medidas de prevención y atención en futuros eventos.",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",

@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-08T01:28:08.179404+00:00",
-  "actualizado_hasta": "2026-09-07T23:39:52.710584+00:00",
-  "total_eventos": 39,
+  "generado": "2026-09-09T01:38:35.465515+00:00",
+  "actualizado_hasta": "2026-09-08T23:42:50.552388+00:00",
+  "total_eventos": 45,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 273,
-    "actual": 39
+    "actual": 45
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 39 eventos de emergencia, una disminución notable respecto a los 273 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta reducción se refleja en la variedad de incidentes reportados, que van desde siniestros viales hasta fenómenos climáticos y protestas sociales.\n\nEl hecho más grave ocurrido en el Distrito Capital fue un choque entre dos autobuses en la Autopista Regional del Centro, kilómetro 133, a las 5:10 a.m. del miércoles, que dejó tres muertos y un herido (El Periodico de Monagas). La gravedad del incidente fue catalogada como crítica y movilizó a los servicios de emergencia de la capital.\n\nEn el estado Táchira, una emergencia vial y habitacional en la zona de El Valle obligó al desplazamiento de cuatro familias y al desalojo de siete viviendas por daños irreparables, mientras se gestionaba el riesgo de derrumbe y el cierre preventivo del paso vehicular (Diario La Nacion). En Lara, se reportó el colapso de la base del puente Yacural, evidenciando fallas estructurales que continúan afectando la infraestructura del país (Diario La Nacion).\n\nLa crisis eléctrica se mantuvo como un problema crítico: en Lara los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes y 2 874 horas sin suministro en agosto (El Impulso). Además, se registraron bajones eléctricos de 30 a 40 minutos en Caracas y en once estados más, generando interrupciones prolongadas en zonas de Aragua y Miranda (El Pitazo). En Bolívar, explosiones de transformadores agravaron la situación de los usuarios en áreas mineras (El Impulso).\n\nLas condiciones climáticas extremas provocaron fuertes lluvias que causaron anegaciones en Guanare, estado Portuguesa (El Impulso), y generaron lluvias con descargas eléctricas en varias regiones del país tras el paso de una onda tropical (El Impulso). En Barquisimeto y Palavecino, vientos huracanados y precipitaciones intensas derribaron árboles, dañaron viviendas y centros comerciales, y provocaron inundaciones en calles del norte de la ciudad (El Pitazo). Asimismo, un incendio de gran magnitud consumió los pisos superiores de una fábrica de cosméticos en Palo Verde, zona industrial del este de Caracas, movilizando a más de 120 efectivos de bomberos y protección civil (El Siglo).\n\nFinalmente, la dimensión social se manifestó en protestas pacíficas: ciudadanos y ONG de Mérida exigieron la libertad de presos políticos frente al Ministerio Público (El Pitazo), mientras que familiares de detenidos políticos marcharon en Caracas demandando su liberación (La Prensa de Lara).",
+  "narrativa": "Durante septiembre de 2026, el sistema de monitoreo de emergencias registró 45 eventos, una disminución significativa frente a los 273 evento(s) registrados entonces vs. 45 en este período (comparación con el período anterior 2026-08). Esta caída se refleja en la menor cantidad de incidentes reportados en todo el país.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), a las 5:10 a.m. del miércoles, cuando dos autobuses de transporte público colisionaron, provocando tres muertos y un herido (El Periodico de Monagas).\n\nEn el estado Táchira, la zona de El Valle sufrió una emergencia vial y habitacional: cuatro familias permanecen en zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se trabaja en la vía para evitar derrumbes (Diario La Nacion).\n\nEl estado Lara experimentó un aumento dramático de los cortes eléctricos, con un incremento del 637 % respecto al año anterior y 722 interrupciones registradas solo en agosto, lo que afecta gravemente a la población y al sector comercial (El Impulso). Además, se reportaron bajones eléctricos de 30 a 40 minutos en 11 estados, incluido el Distrito Capital, con prolongación del corte en Aragua y Miranda (El Pitazo).\n\nFuertes lluvias provocaron inundaciones y anegaciones en Guanare, Portuguesa, y dejaron árboles caídos y daños estructurales en Barquisimeto y Palavecino, Lara, generando afectaciones en viviendas, centros comerciales y vías principales (El Impulso; El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -46,6 +46,10 @@
       "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
     },
@@ -56,6 +60,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -80,6 +88,10 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/"
     },
     {
       "nombre": "La Prensa de Monagas",
@@ -108,6 +120,10 @@
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
     },
     {
       "nombre": "Primicia (Bolivar)",
@@ -144,22 +160,6 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/04/sectores-productivos-del-estado-carabobo-solicitaron-que-atiendan-las-fallas-electricas-del-estado/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/05/para-poder-dializarse-cuando-no-hay-electricidad-en-el-tigre-estado-anzoategui-hay-que-llevar-el-gasoil/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/06/medianos-industriales-y-artesanos-del-estado-carabobo-exigen-electricidad-patra-poder-producir/"
     }
   ]
 }

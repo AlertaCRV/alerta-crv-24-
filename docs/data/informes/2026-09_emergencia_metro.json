@@ -3,19 +3,23 @@
   "tipo": "emergencia_metro",
   "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
   "cerrado": false,
-  "generado": "2026-09-08T01:27:36.603268+00:00",
-  "actualizado_hasta": "2026-09-04T23:33:56.279090+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-09T01:37:56.300703+00:00",
+  "actualizado_hasta": "2026-09-08T11:40:08.400744+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 2,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de emergencia en la categoría de Metro/Metrocable/Teleférico, cifra que contrasta con los dos eventos registrados en el mes anterior, agosto de 2026. Esta disminución se refleja en los datos comparativos proporcionados para el período (2 evento(s) registrados entonces vs. 1 en este período).\n\nLas fuentes periodísticas consultadas no reportan incidentes específicos relacionados con el Metro, Metrocable o Teleférico durante septiembre. En cambio, se destaca la vulnerabilidad de la población ante las intensas lluvias, como lo relata la crónica de Runrun.es, que describe cómo los residentes de la urbanización Bello Monte buscaron refugio ante el “palo de agua” del 22 de agosto (Runrun.es).\n\nAunque en agosto se documentaron dos incidentes en la categoría mencionada, los detalles de esos eventos no aparecen en las fuentes disponibles para este análisis, por lo que no es posible describirlos con precisión. La información suministrada se limita a la comparación numérica entre ambos meses.\n\nAnte la escasez de reportes específicos para septiembre, la Cruz Roja Venezolana mantiene su vigilancia y capacidad de respuesta ante cualquier eventualidad en el sistema de transporte urbano, reforzando protocolos de atención y coordinación con autoridades locales para mitigar futuros incidentes.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron dos eventos vinculados a la categoría de emergencias en el Metro, Metrocable o teleférico, cifra idéntica a la de agosto de 2026, cuando también se contabilizaron dos incidentes (comparación con el período anterior).\\n\\nEl primero de los hechos ocurrió el sábado 22 de agosto, cuando intensas lluvias, conocidas localmente como \"palo de agua\", inundaron la urbanización de Bello Monte en Caracas, obligando a los residentes a refugiarse y generando una alerta en el chat del edificio que advertía a los vecinos del sector El Valle sobre los estragos de las precipitaciones (Runrun.es).\\n\\nEn paralelo, se intensificó el debate sobre la seguridad y la capacidad operativa del Metro de Caracas. Riad Bujana, presidente de la Comisión de Infraestructura de la Academia Nacional de Ingeniería y Hábitat, instó a concluir las obras pendientes del Metro y a realizar auditorías viales para evaluar la mezcla asfáltica, corregir fallas de borde y ampliar el tramo deprimido de la avenida Libertador, con el objetivo de reducir la congestión de los 400.000 vehículos diarios y prevenir futuros incidentes (Turimiquire).\\n\\nAunque el segundo artículo no describe una emergencia concreta, la urgencia de terminar las obras y fiscalizar el pavimento se presenta como una medida preventiva ante posibles riesgos en la infraestructura del Metro, subrayando la necesidad de una gestión proactiva para evitar que fenómenos como las lluvias intensas se traduzcan en interrupciones o daños mayores en el sistema de transporte público.",
   "fuentes": [
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/07/hay-que-concluir-las-obras-de-el-metro-y-realizar-auditorias-viales-en-caracas-dijo-riad-bujana/"
     }
   ]
 }
