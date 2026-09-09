@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-09T23:34:47.223552+00:00",
+  "actualizado": "2026-09-09T23:58:52.892076+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-09T18:40:09+00:00"
+    "hasta": "2026-09-09T20:57:56+00:00"
   },
-  "total_eventos": 343,
+  "total_eventos": 345,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
     "infraestructura_electrica": 84,
     "deslizamiento": 26,
     "colapso_estructural": 3,
-    "orden_publico": 64,
+    "orden_publico": 66,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -34,7 +34,7 @@
     },
     {
       "estado": "Lara",
-      "total": 27,
+      "total": 28,
       "confirmados": 1
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "estado": "Carabobo",
-      "total": 17,
+      "total": 18,
       "confirmados": 1
     },
     {
@@ -147,7 +147,7 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 7,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "inundacion": 3,
       "vialidad": 1,
       "incendio": 1
@@ -155,7 +155,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "infraestructura_electrica": 5,
       "sismo": 1,
       "deslizamiento": 1,
@@ -331,7 +331,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 288,
+    "sin_clasificar": 290,
     "medio": 4,
     "bajo": 8
   },
@@ -363,7 +363,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 52,
-      "2026-09": 10
+      "2026-09": 12
     },
     "salud_publica": {
       "2026-07": 1,

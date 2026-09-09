@@ -1,11 +1,4 @@
 {
-  "infraestructura_agua::Zulia::2026-09-06": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-06T23:19:22.342480+00:00",
-    "fecha_evento_temprana": "2026-09-06T18:11:18+00:00",
-    "municipio": "Baralt"
-  },
   "infraestructura_electrica::Aragua::2026-09-07": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -109,6 +102,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-09T21:56:54.681436+00:00",
     "fecha_evento_temprana": "2026-09-09T14:23:20+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-09-09": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-09T23:57:42.757515+00:00",
+    "fecha_evento_temprana": "2026-09-09T18:40:09+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-09-09": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-09T23:58:51.769962+00:00",
+    "fecha_evento_temprana": "2026-09-09T20:57:56+00:00",
     "municipio": null
   }
 }
