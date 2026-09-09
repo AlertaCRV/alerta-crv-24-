@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-08T06:26:58.884162+00:00",
-  "actualizado_hasta": "2026-09-06T21:47:57.306624+00:00",
-  "total_eventos": 7,
+  "generado": "2026-09-09T12:01:43.741245+00:00",
+  "actualizado_hasta": "2026-09-08T23:42:50.552388+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 7
+    "actual": 10
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron solo siete eventos de orden público, una notable disminución respecto a los cincuenta y dos eventos del mes anterior (52 evento(s) registrados entonces vs. 7 en este período). Esta reducción se refleja en la menor cantidad de manifestaciones y incidentes reportados en distintas regiones del país.\n\nEl 3 de septiembre, ciudadanos y organizaciones no gubernamentales protestaron pacíficamente frente al Ministerio Público en Mérida, exigiendo el sobreseimiento de causas contra presos políticos y el cierre de centros de detención arbitraria (El Pitazo). En la capital, familiares de presos políticos realizaron una marcha para reclamar la liberación de sus seres queridos, insistiendo en que la cuestión no quede relegada a negociaciones económicas (La Prensa de Lara). Ese mismo día, militantes de Vente Venezuela se concentraron en las parroquias Sucre, San Pedro y La Vega de Caracas, demandando la convocatoria de un cronograma electoral y la libertad de los presos políticos (Primicia). \n\nEn el ámbito laboral, la dirigente política Ymara García, en Acarigua, Portuguesa, reclamó pensiones dignas, mejor atención en salud y la recuperación de beneficios para jubilados y pensionados del IVSS (Portuguesa Reporta). Paralelamente, la Coalición Sindical Nacional intentó marchar hacia el Hotel Marriott en Caracas como parte del \"Mes de la Lucha\", pero fue impedida por funcionarios de la Policía Municipal de Chacao (PoliChacao), quienes instalaron un piquete en la calle Mohedano y se produjeron enfrentamientos (Runrun.es; Turimiquire). \n\nFinalmente, se reportaron problemas de infraestructura que afectan la seguridad pública: continuaron las fallas eléctricas que dañan transformadores en varias localidades (La Nacion). En Lara, colapsó una base del puente Yacural tras años de denuncias de deterioro (La Nacion). Además, se efectuó el traslado de reclusos en Barinas luego de los disturbios en Injuba, lo que agrava las condiciones de hacinamiento en los centros penitenciarios (La Nacion).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron diez eventos de orden público, una caída notable frente a los cincuenta y dos registrados en agosto del mismo año (Comparación con el período anterior). Esta disminución no implica una ausencia de tensiones, sino una reconfiguración de las manifestaciones y de los incidentes materiales que se observaron en distintas regiones del país.\n\nSegún el Diario La Nación, las fallas eléctricas continuaron dañando transformadores en varias localidades, generando interrupciones en el suministro de energía y afectando a la ciudadanía (La Nacion). En el mismo informe se señaló el colapso de una base del puente Yacural en el estado Lara, tras años de denuncias por su deterioro, lo que provocó daños estructurales significativos y la necesidad de reparaciones urgentes (La Nacion).\n\nDurante la primera semana de septiembre se registraron diversas protestas pacíficas y reclamos sociales. En Mérida, ciudadanos y ONG marcharon frente al Ministerio Público exigiendo la libertad de presos políticos (El Pitazo). En Caracas, familiares de presos políticos realizaron una movilización para que su liberación no quede relegada a negociaciones económicas (La Prensa de Lara). En Ocumare del Tuy, estado Miranda, sindicatos docentes anunciaron protestas de calle por deudas pendientes y rechazaron el regreso obligatorio a las aulas (El Pitazo). Asimismo, el movimiento Vente Venezuela concentró asambleas en las parroquias Sucre, San Pedro y La Vega de Caracas, demandando un cronograma electoral y la libertad de los presos políticos (Primicia). Por otro lado, la Policía Municipal de Chacao (PoliChacao) impidió la marcha de la Coalición Sindical Nacional hacia el Hotel Marriott, provocando enfrentamientos en la calle Mohedano (Runrun.es; Turimiquire).\n\nEn el sector de los jubilados y pensionados, la dirigente Ymara García demandó pensiones dignas, mejor atención en salud y la recuperación de beneficios, mientras que jubilados de Cantv denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con huelgas de hambre si no se atienden sus peticiones (Portuguesa Reporta; Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -22,12 +22,20 @@
       "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
     },
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
     },
     {
       "nombre": "Primicia (Bolivar)",
@@ -40,6 +48,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/"
     }
   ]
 }

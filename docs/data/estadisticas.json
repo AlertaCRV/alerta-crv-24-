@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-08T23:43:01.845099+00:00",
+  "actualizado": "2026-09-09T12:01:32.124807+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-08T18:41:07+00:00"
+    "hasta": "2026-09-09T00:00:22+00:00"
   },
-  "total_eventos": 346,
+  "total_eventos": 347,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 81,
+    "infraestructura_electrica": 82,
     "deslizamiento": 28,
     "colapso_estructural": 3,
     "orden_publico": 64,
@@ -48,14 +48,14 @@
       "confirmados": 1
     },
     {
+      "estado": "Miranda",
+      "total": 20,
+      "confirmados": 2
+    },
+    {
       "estado": "Aragua",
       "total": 20,
       "confirmados": 0
-    },
-    {
-      "estado": "Miranda",
-      "total": 19,
-      "confirmados": 2
     },
     {
       "estado": "Carabobo",
@@ -258,7 +258,7 @@
     },
     "Miranda": {
       "incendio": 2,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "explosion": 1,
       "deslizamiento": 2,
       "inundacion": 5,
@@ -332,7 +332,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 291,
+    "sin_clasificar": 292,
     "medio": 4,
     "bajo": 8
   },
@@ -350,7 +350,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 12
+      "2026-09": 13
     },
     "deslizamiento": {
       "2026-07": 3,
