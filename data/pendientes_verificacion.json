@@ -2087,17 +2087,9 @@
     "intentos": 1,
     "ultima_vez": "2026-09-09T16:33:28.584793+00:00"
   },
-  "infraestructura_electrica::Barinas::2026-09-09": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-09T19:29:52.000785+00:00"
-  },
-  "infraestructura_electrica::Zulia::2026-09-09": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-09T19:30:16.764270+00:00"
-  },
   "infraestructura_agua::Portuguesa::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T16:33:43.163605+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T21:57:06.249782+00:00"
   },
   "salud_publica::Aragua::2026-09-09": {
     "intentos": 1,
@@ -2108,19 +2100,35 @@
     "ultima_vez": "2026-09-09T16:34:06.666023+00:00"
   },
   "infraestructura_electrica::Portuguesa::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T19:29:34.750284+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T21:56:43.931064+00:00"
   },
   "infraestructura_electrica::Lara::2026-09-09": {
     "intentos": 1,
     "ultima_vez": "2026-09-09T19:29:38.352322+00:00"
   },
   "orden_publico::Lara::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T19:29:45.156817+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T21:57:41.216161+00:00"
   },
   "orden_publico::Carabobo::2026-09-09": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T21:56:47.303974+00:00"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-09-09": {
     "intentos": 1,
-    "ultima_vez": "2026-09-09T19:29:48.673636+00:00"
+    "ultima_vez": "2026-09-09T21:56:36.897994+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T21:56:40.457794+00:00"
+  },
+  "orden_publico::Aragua::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T21:57:17.882585+00:00"
+  },
+  "orden_publico::Bolivar::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T21:57:29.474750+00:00"
   }
 }
