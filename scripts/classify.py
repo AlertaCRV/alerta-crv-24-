@@ -191,6 +191,25 @@ LISTA_NEGRA_POR_ESTADO = {
         # escasez de agua -- pese a que el articulo SI describe fallas de
         # agua reales, estas se ubican en Portuguesa/Acarigua, no en Zulia.
         "en estados como zulia y falcon los registros",
+        # Caso real (09-09-2026, PASADO_POR_FALLA_TECNICA): un explicativo de
+        # Inameh sobre el fenomeno El Niño y el alza global de temperaturas
+        # (sin ninguna falla electrica descrita) trae embebido, a mitad de
+        # texto, un enlace de "articulos relacionados" con el formato "Puedes
+        # leer: <titulo>" (variante de nuevodia.com.ve sin la palabra
+        # "tambien", no cubierta por _ARTICULOS_RELACIONADOS_RE de
+        # fetch_rss.py) -- el titulo enlazado, "La crisis interminable (I):
+        # Cuando la vida en el Zulia la planifica un apagon", bastaba por si
+        # solo para publicar una falla electrica en Zulia. No se recorta el
+        # texto completo en fetch_rss.py (a diferencia de "tambien puedes
+        # leer") porque en otros articulos reales de nuevodia.com.ve esta
+        # misma marca aparece A MITAD del cuerpo, con contenido real y
+        # relevante despues (ej. "seis-desaparecidos-tras-fuertes-lluvias...",
+        # cuyas alertas de inundacion en Distrito Capital/Aragua dependen de
+        # texto posterior a la marca) -- recortar hasta el final del texto
+        # perderia esa evidencia real. Se verifico contra las 351 fuentes de
+        # data/historico_fuentes_texto.jsonl que la frase es exclusiva de
+        # este articulo.
+        "la vida en el zulia la planifica un apagon",
     ],
     # Caso real (15-08-2026, PASADO_POR_FALLA_TECNICA): un articulo de EFE
     # sobre un terremoto de magnitud 7.7 en Indonesia (republicado por un
@@ -842,6 +861,40 @@ def _es_correccion_epicentro_retrospectiva(texto_norm):
     return any(_contiene_palabra_clave(texto_norm, frase) for frase in _CORRECCION_EPICENTRO_RETROSPECTIVA)
 
 
+# Un articulo sobre la DEMOLICION de edificios danados por "el terremoto en
+# <lugar>" -- una obra de reconstruccion, no un temblor nuevo -- es el mismo
+# tipo de boletin retrospectivo que la limpieza de escombros ya cubierta para
+# deslizamiento (ver _es_limpieza_escombros_terremoto_sin_deslizamiento_real):
+# describe las consecuencias de un sismo ya ocurrido, sin ningun indicio de
+# actividad sismica nueva. Caso real (08-09-2026, PASADO_POR_FALLA_TECNICA):
+# "Venezuela demolera 39 edificios con daños estructurales tras el terremoto
+# en La Guaira... procesaran escombros mediante convenio internacional" --
+# una nota brevisima (probablemente truncada por el feed) sobre demolicion y
+# manejo de escombros, referida al sismo critico de La Guaira del 22-08-2026
+# ya publicado, generaba una alerta de sismo NUEVA en el mismo estado. A
+# diferencia de la correccion de epicentro (donde la evidencia fuerte
+# describe siempre el sismo YA corregido, nunca uno nuevo), aqui SI se anula
+# por evidencia fuerte propia (magnitud/epicentro/sacudio) -- un articulo
+# sobre un sismo genuinamente nuevo que de pasada mencione la demolicion de
+# edificios de un terremoto anterior no debe descartarse. Se verifico contra
+# las 351 fuentes de data/historico_fuentes_texto.jsonl que "demoler"/
+# "demolicion" es exclusivo de este articulo (que ademas no tiene ninguna
+# evidencia fuerte propia).
+_MARCADORES_DEMOLICION_POST_TERREMOTO = [
+    "demoler", "demolera", "demolerá", "demoleran", "demolerán",
+    "demolicion", "demolición",
+]
+
+
+def _es_demolicion_post_terremoto_retrospectiva(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DEMOLICION_POST_TERREMOTO):
+        return False
+    if not (_contiene_palabra_clave(texto_norm, "terremoto") or _contiene_palabra_clave(texto_norm, "sismo")):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("sismo", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 # Caso real (14-08-2026, PASADO_POR_FALLA_TECNICA): "La Guaira coordina la
 # reactivacion gradual del turismo playero tras los sismos de junio...
 # afectaciones causadas por el evento sismico registrado el pasado 24 de
@@ -1158,6 +1211,15 @@ def _es_presentacion_libro_memoria_sin_disturbio_actual(texto_norm):
 # directamente.
 _MARCADORES_CONVOCATORIA_PROTESTA_FUTURA = [
     "llamado a manifestar", "gran protesta nacional",
+    # Caso real (08-09-2026, PASADO_POR_FALLA_TECNICA): "sindicatos docentes
+    # explicaron que se amparan en la ley para rechazar el regreso
+    # obligatorio a las aulas... y advierten acciones de calle por deudas
+    # acumuladas" -- el hecho real del dia es una ASAMBLEA sindical donde se
+    # ANUNCIA una futura protesta callejera como advertencia, no una
+    # manifestacion/disturbio ya en curso. Se verifico contra las 351
+    # fuentes de data/historico_fuentes_texto.jsonl que "acciones de calle"
+    # es exclusiva de este articulo.
+    "acciones de calle",
 ]
 _EVIDENCIA_FUERTE_SIN_CONVOCATORIA = [
     "sin luz", "sin electricidad", "sin energia electrica",
@@ -1446,9 +1508,38 @@ _VERBOS_LIMPIEZA_ESCOMBROS = [
     "retirar", "retiro", "retiró", "remocion", "remoción",
     "recolectado", "recolectar", "recoleccion", "recolección",
     "remover", "removieron",
+    # Caso real (08-09-2026, PASADO_POR_FALLA_TECNICA): "demoleran 39
+    # edificios danados por el terremoto en La Guaira y procesaran
+    # escombros mediante convenio internacional" -- "procesar" (variante de
+    # manejo de escombros no cubierta por los verbos anteriores) dejaba
+    # pasar el filtro y exponia una alerta de deslizamiento en La Guaira al
+    # corregir por separado el falso positivo de sismo del mismo articulo
+    # (ver _es_demolicion_post_terremoto_retrospectiva). Se verifico contra
+    # las 351 fuentes de data/historico_fuentes_texto.jsonl que "procesar"
+    # (en cualquier conjugacion) no aparece en ningun otro caso real de
+    # deslizamiento.
+    "procesar", "proceso", "procesó", "procesaran", "procesarán",
+    "procesara", "procesará", "procesado", "procesados",
 ]
 _MENCIONES_SISMICAS_ESCOMBROS = [
     "terremoto", "terremotos", "sismo", "sismos", "temblor", "temblores",
+    # Caso real (09-09-2026, PASADO_POR_FALLA_TECNICA): dos coberturas sobre
+    # la remocion de escombros y la reconstruccion de La Guaira ("Miyamoto
+    # International y el Gobierno firmaron acuerdo para remover 3 millones
+    # de toneladas de escombros e impulsar la reconstruccion en La Guaira";
+    # "Remocion de escombros en La Guaira puede tardar hasta un año. La
+    # reconstruccion continua pendiente mientras miles de afectados
+    # permanecen en refugios") nunca usan literalmente "terremoto"/"sismo"/
+    # "temblor" (posiblemente resumenes de RSS demasiado breves), pero
+    # describen inequivocamente la misma limpieza/reconstruccion posterior
+    # al sismo critico de La Guaira del 22-08-2026 -- generaban una alerta
+    # de deslizamiento NUEVA (08-09-2026 y, retroactivamente, 05-09-2026).
+    # "reconstruccion" por si sola es una señal mas amplia que "terremoto",
+    # pero solo actua aqui junto con "escombro(s)" + un verbo de limpieza, y
+    # se verifico contra las 351 fuentes de data/historico_fuentes_texto.jsonl
+    # que ningun otro caso real de deslizamiento con esa combinacion (ambos
+    # ya identificados arriba) tiene evidencia fuerte propia que se pierda.
+    "reconstruccion", "reconstrucción",
 ]
 
 
@@ -1621,6 +1712,48 @@ def _es_anuncio_corpoelec_sin_falla(texto_norm):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Mismo patron que _es_anuncio_corpoelec_sin_falla, para infraestructura_agua:
+# "hidrocapital"/"hidrologica" (palabras clave de tipo) son solo el nombre de
+# la empresa estatal de agua, presente tanto en coberturas de fallas reales
+# como en anuncios institucionales positivos. Caso real (06-09-2026,
+# PASADO_POR_FALLA_TECNICA): "Gobernación entrega equipos para mejorar el
+# suministro de agua en Baralt... siete equipos destinados a fortalecer la
+# produccion y distribucion de agua potable... permitiran garantizar un
+# suministro de hasta 110 litros de agua por segundo" -- un anuncio POSITIVO
+# de entrega de motores/bombas (ninguna falla en curso, ni siquiera se
+# menciona una previa) se publicaba como Falla de agua en Zulia solo porque
+# el texto nombra a la "Hidrologica de Venezuela (Hidroven)".
+#
+# A diferencia del Corpoelec original, no existe un
+# _EVIDENCIA_FUERTE_POR_TIPO["infraestructura_agua"] ya definido con una
+# lista amplia y verificada -- crear uno de cero para "hidrocapital"/
+# "hidrologica" en general arriesgaria descartar casos reales ya conocidos
+# que tambien nombran a la hidrologica regional sin usar las frases base
+# ("cisterneros exigen reactivacion... del llenadero", "cloacas"/"aguas
+# negras" desbordadas) -- fuera del alcance de esta auditoria puntual. Por
+# eso este filtro, mas acotado, exige ademas un marcador explicito de
+# ENTREGA/anuncio de equipos (el mismo patron de fondo que los 376
+# transformadores de Corpoelec), no solo la mencion de la empresa. Se
+# verifico contra las 344 fuentes de data/historico_fuentes_texto.jsonl que
+# "entrega de equipos"/"entrego equipos"/"entregó equipos"/"entrega equipos"
+# es exclusiva de este articulo.
+_MARCADORES_ENTREGA_EQUIPOS_AGUA = [
+    "entrega de equipos", "entrego equipos", "entregó equipos", "entrega equipos",
+]
+_EVIDENCIA_FUERTE_FALLA_AGUA = [
+    "falla de agua", "fallas de agua", "corte de agua", "cortes de agua",
+    "sin agua", "sin recibir agua",
+]
+
+
+def _es_anuncio_entrega_equipos_agua_sin_falla(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "hidrocapital") or _contiene_palabra_clave(texto_norm, "hidrologica")):
+        return False
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_ENTREGA_EQUIPOS_AGUA):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_FALLA_AGUA)
 
 
 # Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "El Mananero del 19 de
@@ -2586,6 +2719,8 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "sismo" and _es_referencia_sismo_fecha_pasada(texto_completo_norm):
                     break
+                if tipo == "sismo" and _es_demolicion_post_terremoto_retrospectiva(texto_completo_norm):
+                    break
                 if tipo == "sismo" and _es_taller_salud_mental_post_sismo_sin_evidencia_real(texto_completo_norm):
                     break
                 if tipo == "sismo" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm, "sismo"):
@@ -2625,6 +2760,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "emergencia_metro" and _es_anuncio_tarifario_metro_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_agua" and _es_agua_restablecida_sin_falla_actual(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_agua" and _es_anuncio_entrega_equipos_agua_sin_falla(texto_completo_norm):
                     break
                 if tipo == "sequia" and _es_sequia_historica_religiosa(texto_completo_norm):
                     break

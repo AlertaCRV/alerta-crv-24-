@@ -67,7 +67,16 @@ _NUMEROS = (
 # del doble terremoto, siguen buscando a sus familiares" no coincidia con
 # el patron porque "casi" se interpone entre "a" y el numero -- el patron
 # original exige que el numero siga inmediatamente a "a"/"al cumplirse".
-_CUALIFICADOR_APROX = r"(?:(?:casi|cerca de|alrededor de)\s+)?"
+# "menos de" se agrego el 09-09-2026: un reportaje retrospectivo de
+# Runrun.es sobre inundaciones del "pasado sabado 22 de agosto" resumia,
+# en su cierre, un segundo hecho (una inundacion en Lara) con la frase "a
+# menos de dos semanas de estos hechos" -- esa transicion NO anula que el
+# resto del articulo (de donde salian las ubicaciones Aragua/Distrito
+# Capital vigentes en el momento de esta correccion) sea retrospectivo,
+# pero "menos de" no coincidia con ningun cualificador existente. Se
+# verifico contra las 351 fuentes de data/historico_fuentes_texto.jsonl
+# que esta frase es exclusiva de ese articulo.
+_CUALIFICADOR_APROX = r"(?:(?:casi|cerca de|alrededor de|menos de)\s+)?"
 _PATRON_RETROSPECTIVA = re.compile(
     rf"\b(a|al cumplirse)\s+{_CUALIFICADOR_APROX}{_NUMEROS}\s+"
     r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
