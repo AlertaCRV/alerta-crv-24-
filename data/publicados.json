@@ -1,18 +1,4 @@
 {
-  "inundacion::Yaracuy::2026-09-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-07T23:39:19.022474+00:00",
-    "fecha_evento_temprana": "2026-09-07T16:35:00+00:00",
-    "municipio": "Veroes"
-  },
-  "inundacion::La Guaira::2026-09-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-07T23:39:52.710584+00:00",
-    "fecha_evento_temprana": "2026-09-07T16:00:00+00:00",
-    "municipio": "Vargas"
-  },
   "emergencia_metro::Miranda::2026-09-08": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -159,5 +145,12 @@
     "fecha_deteccion": "2026-09-10T21:58:01.265324+00:00",
     "fecha_evento_temprana": "2026-09-10T15:07:04+00:00",
     "municipio": null
+  },
+  "sismo::Zulia::2026-09-10::mag4.0": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T23:54:13.762413+00:00",
+    "fecha_evento_temprana": "2026-09-10T18:41:14+00:00",
+    "municipio": "Catatumbo"
   }
 }
