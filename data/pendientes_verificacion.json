@@ -2199,40 +2199,44 @@
     "intentos": 2,
     "ultima_vez": "2026-09-10T19:37:03.395471+00:00"
   },
-  "sismo::Zulia::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T21:57:07.961066+00:00"
-  },
   "orden_publico::Tachira::2026-09-10": {
     "intentos": 1,
     "ultima_vez": "2026-09-10T19:36:17.487170+00:00"
   },
   "orden_publico::Bolivar::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:56:53.772297+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:53:59.787199+00:00"
   },
   "orden_publico::Lara::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:56:57.367682+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:54:03.349268+00:00"
   },
   "accidente_transporte::Distrito Capital::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:57:00.896569+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:54:06.850506+00:00"
   },
   "infraestructura_agua::Barinas::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:57:11.551014+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:54:17.249741+00:00"
   },
   "infraestructura_agua::Portuguesa::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:57:14.945928+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:54:20.740347+00:00"
   },
   "sismo::La Guaira::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T21:57:26.573584+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T23:54:32.210698+00:00"
   },
   "orden_publico::Sucre::2026-09-10": {
     "intentos": 1,
     "ultima_vez": "2026-09-10T21:57:49.784782+00:00"
+  },
+  "sismo::Distrito Capital::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T23:54:10.217165+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T23:54:43.977666+00:00"
   }
 }

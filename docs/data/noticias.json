@@ -1,5 +1,35 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Zulia",
+    "municipio": "Catatumbo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/funvisis-registra-dos-sismos-cerca-de-la-frontera-colombo-venezolana-este-10-de-septiembre/",
+        "fecha": "2026-09-10T18:41:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T18:41:14+00:00",
+    "fecha_evento_temprana": "2026-09-10T18:41:14+00:00",
+    "fecha_deteccion": "2026-09-10T23:54:13.762413+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 4.0,
+    "tambien_mencionado_en": [
+      "Distrito Capital"
+    ],
+    "clave_dedup": "sismo::Zulia::2026-09-10::mag4.0",
+    "titulo": "Sismo en Municipio Catatumbo, Zulia",
+    "texto": "📌 Sismo en Municipio Catatumbo, Zulia\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Catatumbo, Zulia\n🕒 Hecho reportado: 10/09/2026, 2:41 p.m.\n🔎 Detectado por el sistema: 10/09/2026, 7:54 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/funvisis-registra-dos-sismos-cerca-de-la-frontera-colombo-venezolana-este-10-de-septiembre/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,

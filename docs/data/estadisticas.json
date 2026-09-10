@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-10T21:58:02.298667+00:00",
+  "actualizado": "2026-09-10T23:54:44.422190+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-10T19:14:34+00:00"
   },
-  "total_eventos": 353,
+  "total_eventos": 354,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 5,
     "incendio": 25,
     "vialidad": 12,
-    "sismo": 10,
+    "sismo": 11,
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 2,
@@ -39,7 +39,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 25,
+      "total": 26,
       "confirmados": 4
     },
     {
@@ -177,7 +177,7 @@
       "inundacion": 2,
       "sequia": 1,
       "orden_publico": 3,
-      "sismo": 1,
+      "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
       "explosion": 1,
@@ -340,7 +340,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 297,
+    "sin_clasificar": 298,
     "medio": 5,
     "bajo": 8
   },
@@ -393,7 +393,7 @@
     },
     "sismo": {
       "2026-08": 8,
-      "2026-09": 2
+      "2026-09": 3
     },
     "escasez_combustible": {
       "2026-08": 1
