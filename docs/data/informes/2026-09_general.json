@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-09T01:38:35.465515+00:00",
-  "actualizado_hasta": "2026-09-08T23:42:50.552388+00:00",
+  "generado": "2026-09-10T03:54:44.307794+00:00",
+  "actualizado_hasta": "2026-09-09T23:58:51.769962+00:00",
   "total_eventos": 45,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 273,
+    "anterior": 272,
     "actual": 45
   },
-  "narrativa": "Durante septiembre de 2026, el sistema de monitoreo de emergencias registró 45 eventos, una disminución significativa frente a los 273 evento(s) registrados entonces vs. 45 en este período (comparación con el período anterior 2026-08). Esta caída se refleja en la menor cantidad de incidentes reportados en todo el país.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), a las 5:10 a.m. del miércoles, cuando dos autobuses de transporte público colisionaron, provocando tres muertos y un herido (El Periodico de Monagas).\n\nEn el estado Táchira, la zona de El Valle sufrió una emergencia vial y habitacional: cuatro familias permanecen en zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se trabaja en la vía para evitar derrumbes (Diario La Nacion).\n\nEl estado Lara experimentó un aumento dramático de los cortes eléctricos, con un incremento del 637 % respecto al año anterior y 722 interrupciones registradas solo en agosto, lo que afecta gravemente a la población y al sector comercial (El Impulso). Además, se reportaron bajones eléctricos de 30 a 40 minutos en 11 estados, incluido el Distrito Capital, con prolongación del corte en Aragua y Miranda (El Pitazo).\n\nFuertes lluvias provocaron inundaciones y anegaciones en Guanare, Portuguesa, y dejaron árboles caídos y daños estructurales en Barquisimeto y Palavecino, Lara, generando afectaciones en viviendas, centros comerciales y vías principales (El Impulso; El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 45 eventos de emergencia, una disminución notable respecto a los 272 eventos del mes anterior, agosto de 2026. Esta reducción se refleja en la menor cantidad de incidentes reportados en distintas categorías, aunque persisten situaciones críticas que requieren atención inmediata.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, donde a las 5:10 a.m. del miércoles se produjo la colisión de dos autobuses en el kilómetro 133 de la Autopista Regional del Centro (ARC), resultando en tres muertos y un herido (El Periodico de Monagas). Las autoridades calificaron la severidad del siniestro como crítica y se activaron los protocolos de respuesta de emergencia.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se registró una emergencia vial y habitacional en El Valle. Cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se mantiene el cierre preventivo del paso vehicular ante el riesgo de derrumbe (Diario La Nacion (Tachira)).\n\nDurante el mismo período se reportaron apagones en al menos tres regiones del oeste del país, afectando a Mérida, Barinas y Táchira, con un fuerte bajón de luz en la capital, Caracas (Diario La Nacion (Tachira)). Asimismo, la crisis eléctrica se manifestó en el estado Bolívar, donde frecuentes cortes afectan a la población, y en Lara, donde los apagones se dispararon un 637 % respecto al año anterior (El Impulso). Otros fenómenos meteorológicos, como fuertes lluvias que provocaron inundaciones en Guanare (Portuguesa) y la llegada de una onda tropical que generó precipitaciones y descargas eléctricas en varias regiones, también fueron documentados (El Impulso).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -24,6 +24,14 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/oposicion-denuncia-un-apagon-en-varias-regiones-del-pais/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -39,15 +47,15 @@
     },
     {
       "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
     },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/09/observatorio-de-conflictividad-registra-509-protestas-en-julio-un-promedio-de-16-diarias-9sep/"
     },
     {
       "nombre": "El Pitazo",
@@ -63,7 +71,15 @@
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/"
+      "link": "https://elpitazo.net/regiones/otro-bajon-electrico-se-registra-en-venezuela-ciudadanos-reportan-fallas-en-al-menos-11-estados-este-8sep/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/falla-electrica-del-8sep-afecto-la-banca-digital-y-plataformas-de-pago-en-venezuela/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/509-protestas-se-registraron-en-julio-en-venezuela-segun-observatorio-de-conflictividad-social/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -90,20 +106,12 @@
       "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
     },
     {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/venezuela-39-edificios-en-la-guaira/"
-    },
-    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
     },
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/explosion-en-subestacion-electrica-afecta-el-servicio-en-ciudad-ojeda/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/"
     },
     {
       "nombre": "Notiapure",
@@ -134,16 +142,20 @@
       "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
     },
     {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/09/venezuela-105/"
+    },
+    {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
     },
     {
       "nombre": "Runrun.es",
-      "link": "https://runrun.es/rr-es-plus/como-se-vive/619158/como-se-vive-vulnerable-ante-las-lluvias/"
+      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
     },
     {
       "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
+      "link": "https://runrun.es/noticias/619563/a-caracas-llegaron-los-apagones-zonas-de-la-candelaria-han-pasado-hasta-ocho-dias-sin-luz/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -152,14 +164,6 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/"
     }
   ]
 }

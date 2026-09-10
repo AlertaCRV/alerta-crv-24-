@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-09T21:58:09.111017+00:00",
-  "actualizado_hasta": "2026-09-09T21:56:54.681436+00:00",
-  "total_eventos": 16,
+  "generado": "2026-09-10T03:55:37.603310+00:00",
+  "actualizado_hasta": "2026-09-09T21:56:50.806131+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 64,
-    "actual": 16
+    "actual": 15
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 16 eventos de fallas eléctricas, una disminución notable frente a los 64 eventos del mes anterior (agosto) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de cortes y fluctuaciones reportados, aunque persisten incidentes críticos en distintas regiones del país.\n\nEl 9 de septiembre, la oposición denunció un apagón que afectó al menos tres estados del occidente: Mérida, Barinas y Táchira, con un fuerte bajón de luz también registrado en la capital, Caracas (Diario La Nacion). El partido Vente Venezuela alertó en redes sociales sobre la interrupción del suministro eléctrico en esas áreas, señalando la continuidad de la destrucción del sistema eléctrico nacional.\n\nEl 8 de septiembre se produjeron intensas fluctuaciones eléctricas que impactaron a once estados y al Distrito Capital: Táchira, Mérida, Yaracuy, Monagas, Zulia, Miranda, Carabobo, Lara, Guárico, Aragua, Falcón y Caracas (El Pitazo). En Táchira y Trujillo, los bajones dejaron sectores sin electricidad. La misma fluctuación provocó fallas en la banca digital y plataformas de pago durante al menos una hora, afectando a usuarios en distintas partes del país (El Pitazo).\n\nEl 6 de septiembre se registró una explosión en una subestación eléctrica de la parroquia Libertad, en Ciudad Ojeda, estado Zulia, que dejó sin suministro a gran parte de la zona (La Verdad). El estruendo fue escuchado por los habitantes y generó alarma, aunque no se reportaron víctimas fatales.\n\nEn el estado Lara, los cortes eléctricos se dispararon un 637 % en comparación con el año anterior, con 722 cortes y 2 874 horas sin luz registradas en agosto (El Impulso). Durante la tarde del 8 de septiembre se observaron fluctuaciones intensas, con bajones a las 15:25 y 15:37, según el Observatorio de Bienes y Servicios del estado (La Prensa de Lara). Además, fuertes lluvias provocaron la caída de árboles sobre cables de alta tensión, generando bajones en la urbanización Patarata 1 (sector B) de Barquisimeto (La Prensa de Lara). La presidenta encargada, Delcy Rodríguez, denunció actos de sabotaje por extremistas como causa del apagón en el occidente y del sistema termoeléctrico de Zulia (Notiapure; Nuevo Dia).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 15 eventos de fallas eléctricas, una disminución notable respecto a los 64 incidentes reportados en agosto del mismo año (comparación proporcionada). Esta reducción se observa a pesar de la persistencia de interrupciones en varias regiones del país.\n\nEl 9 de septiembre, la oposición denunció un apagón que afectó al menos a los estados Mérida, Barinas y Táchira, con un fuerte bajón de luz también en la capital, Caracas (Diario La Nacion). En el mismo contexto, la presidenta encargada Delcy Rodríguez acusó a sectores extremistas de sabotear el sistema eléctrico en el occidente del país, señalando el apagón como evidencia de actos deliberados (Notiapure).\n\nEl 6 de septiembre se produjo una explosión en una subestación eléctrica de la parroquia Libertad, en Ciudad Ojeda, estado Zulia, dejando sin suministro eléctrico a gran parte de la zona (La Verdad). Posteriormente, la mandataria Delcy Rodríguez denunció un presunto sabotaje al sistema termoeléctrico de Zulia, vinculándolo al apagón registrado ese mismo sábado (Nuevo Dia).\n\nDurante la semana, ciudadanos de Caracas y de once estados –Táchira, Mérida, Yaracuy, Monagas, Zulia, Miranda, Carabobo, Lara, Guárico, Aragua, Falcón y el Distrito Capital– reportaron bajones eléctricos de 30 a 40 minutos, con interrupciones prolongadas en Aragua y Miranda (El Pitazo). El 8 de septiembre, una fuerte fluctuación eléctrica afectó también a la banca digital y plataformas de pago durante al menos una hora, generando inconvenientes en los servicios financieros (El Pitazo).\n\nEn el estado Lara, los cortes eléctricos se dispararon un 637 % en comparación con el año anterior, alcanzando 722 interrupciones y 2 874 horas sin luz en agosto, y continuando con fluctuaciones intensas el sábado, con picos a las 15:25 y 15:37 horas (El Impulso; La Prensa de Lara). Además, lluvias intensas provocaron la caída de árboles sobre cables de alta tensión, generando bajones en la urbanización Patarata 1 (sector B) de Barquisimeto (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -56,10 +56,6 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/inameh-confirma-presencia-de-el-nino-en-venezuela-y-preve-alza-en-las-temperaturas/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",

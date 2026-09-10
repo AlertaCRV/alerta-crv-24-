@@ -3,23 +3,19 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-09-09T01:37:51.300556+00:00",
+  "generado": "2026-09-10T03:53:59.605679+00:00",
   "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
-  "total_eventos": 3,
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 22,
-    "actual": 3
+    "anterior": 21,
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de deslizamiento o derrumbe, una notable disminución respecto al período anterior en el que se contabilizaron 22 eventos (22 evento(s) registrados entonces vs. 3 en este período).\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, en el sector El Valle, se declaró una emergencia vial y habitacional tras una de las fallas geológicas más complejas del estado Táchira. Actualmente, cuatro familias continúan viviendo en zona de riesgo y siete casas fueron desalojadas por daños irreparables; la Alcaldía de Capacho Nuevo estima concluir los trabajos de reparación de la vía en dos semanas (La Nacion).\n\nPor otro lado, el gobierno venezolano y la empresa estadounidense Miyamoto International firmaron un acuerdo para la remoción de tres millones de toneladas de escombros en la zona costera de La Guaira, con el objetivo de impulsar la reconstrucción tras los daños causados por deslizamientos y otros fenómenos (El Impulso).\n\nLas fuertes lluvias que azotaron Táchira fueron objeto de inspección por parte de autoridades locales, quienes constataron deslizamientos de tierra que afectaron la infraestructura vial y provocaron daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de deslizamiento o derrumbe, una disminución notable respecto al período anterior en el que se contabilizaron 21 incidentes (comparación con el período anterior). Esta reducción se refleja en los reportes de los medios locales que cubrieron las emergencias en el estado Táchira.\n\nEl primer evento ocurrió en la zona de El Valle, parroquia Juan Germán Roscio de Capacho Nuevo, donde una falla geológica provocó una emergencia vial y habitacional el sábado 5 de septiembre (Diario La Nacion). Actualmente, cuatro familias continúan viviendo en la zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Las autoridades municipales declararon el cierre preventivo del paso vehicular y estiman concluir los trabajos de reparación de la vía en aproximadamente dos semanas (Diario La Nacion).\n\nEl segundo evento se describió en un informe de inspección de afectaciones por lluvias intensas en Táchira (La Prensa de Monagas). Las fuertes precipitaciones desencadenaron deslizamientos de tierra que impactaron la infraestructura vial y provocaron daños de diversa magnitud en varias viviendas, desde leves hasta severos (La Prensa de Monagas). Las autoridades locales realizaron inspecciones para evaluar el alcance de los daños y planificar las medidas de mitigación necesarias (La Prensa de Monagas).\n\nAmbos incidentes subrayan la necesidad de mantener la vigilancia y la pronta respuesta ante fenómenos naturales en la región, especialmente en áreas vulnerables como El Valle, donde los trabajos de reparación y reubicación de la población continúan en curso (Diario La Nacion).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/05/empresa-estadounidense-firma-acuerdo-para-la-remocion-de-tres-millones-de-toneladas-de-escombros-en-venezuela-5sep/"
     },
     {
       "nombre": "La Prensa de Monagas",

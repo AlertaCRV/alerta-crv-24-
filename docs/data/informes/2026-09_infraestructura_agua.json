@@ -3,23 +3,19 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-09T01:38:53.243209+00:00",
+  "generado": "2026-09-10T03:55:10.828849+00:00",
   "actualizado_hasta": "2026-09-08T11:40:18.665012+00:00",
-  "total_eventos": 4,
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 12,
-    "actual": 4
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron cuatro eventos de fallas de agua, una disminución respecto a los doce eventos reportados en agosto de 2026 (12 evento(s) registrados entonces vs. 4 en este período). Esta reducción no implica la ausencia de problemas, pues en distintas regiones del país continúan manifestándose interrupciones que afectan la vida cotidiana y la actividad económica.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, los habitantes y comerciantes de Sanare siguen enfrentando severas interrupciones en el suministro eléctrico y irregularidades en el agua potable, lo que perjudica la calidad de vida, daña equipos de trabajo y paraliza la economía local (El Impulso). Estas fallas se han convertido en una constante que asfixia tanto el comercio como la rutina diaria de la población.\n\nPor su parte, la Gobernación del estado Zulia entregó el 5 de septiembre siete equipos —motores y bombas con capacidades entre 15 y 30 HP— destinados a fortalecer la producción y distribución de agua potable en cinco parroquias del municipio Baralt, garantizando un suministro de hasta 110 litros por segundo en comunidades como La Línea, Los Cañitos, San José del Muro, San Benito, Los Pozos del Campo y La L (La Verdad). Esta medida busca mitigar la escasez hídrica que afecta a la zona.\n\nEn el estado Nueva Esparta, el municipio Tubores lleva más de seis meses sin agua por problemas en la tubería, una situación catalogada como «aislamiento hídrico» según el informe de seguimiento ciudadano de Pulso Nueva Esparta (Reporte Confidencial). Simultáneamente, en el estado Sucre, el alcalde de Cumaná, Pedro Figueroa, anunció que el municipio queda excluido de la programación de cortes eléctricos, aunque la crisis hídrica sigue afectando a varios municipios de la región (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de fallas de agua, una reducción significativa respecto a los doce reportados en agosto del mismo año. Esta disminución refleja una variación en la frecuencia de los incidentes, aunque la gravedad de los casos sigue siendo alta en varias regiones.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, la población y los comerciantes de Sanare continúan enfrentando interrupciones diarias del suministro eléctrico y irregularidades en el agua potable, lo que afecta la calidad de vida, daña equipos de trabajo y paraliza la economía local (El Impulso).\n\nEn el municipio Tubores, estado Nueva Esparta, los habitantes llevan más de seis meses sin agua debido a una rotura de tubería que ha generado un “aislamiento hídrico” severo; el diputado Omar Veracierto presentó un balance basado en datos de la plataforma Pulso Nueva Esparta para evidenciar la crisis (Reporte Confidencial).\n\nEn Cumaná, capital del estado Sucre, el alcalde Pedro Figueroa anunció que el municipio quedará excluido de la programación de cortes eléctricos, pero la escasez de agua persiste, evidenciando la continuidad de la crisis hídrica en la región (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/gobernacion-entrega-equipos-para-mejorar-el-suministro-de-agua-en-baralt/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
