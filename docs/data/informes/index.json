@@ -17,14 +17,6 @@
   },
   {
     "periodo": "2026-09",
-    "tipo": "sismo",
-    "tipo_label": "Sismo",
-    "cerrado": false,
-    "generado": "2026-09-09T01:40:18.840881+00:00",
-    "total_eventos": 1
-  },
-  {
-    "periodo": "2026-09",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,

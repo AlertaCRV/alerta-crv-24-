@@ -2104,31 +2104,47 @@
     "ultima_vez": "2026-09-09T21:56:43.931064+00:00"
   },
   "infraestructura_electrica::Lara::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T19:29:38.352322+00:00"
-  },
-  "orden_publico::Lara::2026-09-09": {
     "intentos": 2,
-    "ultima_vez": "2026-09-09T21:57:41.216161+00:00"
-  },
-  "orden_publico::Carabobo::2026-09-09": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-09T21:56:47.303974+00:00"
+    "ultima_vez": "2026-09-09T23:57:35.959129+00:00"
   },
   "infraestructura_electrica::Distrito Capital::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T21:56:36.897994+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T23:57:21.997089+00:00"
   },
   "orden_publico::Distrito Capital::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T21:56:40.457794+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T23:57:54.290071+00:00"
   },
   "orden_publico::Aragua::2026-09-09": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-09T21:57:17.882585+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T23:58:28.848287+00:00"
   },
   "orden_publico::Bolivar::2026-09-09": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-09T23:58:40.365171+00:00"
+  },
+  "infraestructura_electrica::Cojedes::2026-09-09": {
     "intentos": 1,
-    "ultima_vez": "2026-09-09T21:57:29.474750+00:00"
+    "ultima_vez": "2026-09-09T23:57:25.458437+00:00"
+  },
+  "infraestructura_electrica::Falcon::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T23:57:29.145867+00:00"
+  },
+  "infraestructura_electrica::Guarico::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T23:57:32.608830+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T23:57:39.419747+00:00"
+  },
+  "infraestructura_electrica::Barinas::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T23:58:05.845328+00:00"
+  },
+  "salud_publica::Lara::2026-09-09": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-09T23:58:17.258166+00:00"
   }
 }
