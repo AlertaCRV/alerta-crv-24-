@@ -2171,10 +2171,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:31:01.260033+00:00"
   },
-  "infraestructura_electrica::Tachira::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T08:31:04.666318+00:00"
-  },
   "salud_publica::Lara::2026-09-10": {
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:31:38.947393+00:00"
@@ -2195,17 +2191,13 @@
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:32:25.277987+00:00"
   },
-  "vialidad::Zulia::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T08:32:36.743606+00:00"
-  },
   "infraestructura_electrica::Carabobo::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T08:30:36.138543+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T13:07:17.601237+00:00"
   },
   "ataque_armado::Distrito Capital::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T08:30:39.466422+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T13:07:21.063413+00:00"
   },
   "orden_publico::Barinas::2026-09-10": {
     "intentos": 1,
@@ -2214,5 +2206,9 @@
   "infraestructura_electrica::Anzoategui::2026-09-10": {
     "intentos": 1,
     "ultima_vez": "2026-09-10T08:31:27.520079+00:00"
+  },
+  "orden_publico::Sucre::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T13:07:27.557902+00:00"
   }
 }

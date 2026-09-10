@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Aragua::2026-09-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-07T12:26:31.955710+00:00",
-    "fecha_evento_temprana": "2026-09-07T01:00:02+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Carabobo::2026-09-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-07T12:26:35.461132+00:00",
-    "fecha_evento_temprana": "2026-09-07T01:00:02+00:00",
-    "municipio": null
-  },
   "inundacion::Yaracuy::2026-09-07": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -116,6 +102,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-09T23:58:51.769962+00:00",
     "fecha_evento_temprana": "2026-09-09T20:57:56+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Tachira::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T13:07:24.297853+00:00",
+    "fecha_evento_temprana": "2026-09-10T12:36:15+00:00",
+    "municipio": null
+  },
+  "vialidad::Zulia::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T13:07:31.555073+00:00",
+    "fecha_evento_temprana": "2026-09-10T02:25:50+00:00",
     "municipio": null
   }
 }
