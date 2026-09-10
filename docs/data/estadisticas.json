@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-10T19:37:05.549153+00:00",
+  "actualizado": "2026-09-10T21:58:02.298667+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-10T19:14:34+00:00"
   },
-  "total_eventos": 351,
+  "total_eventos": 353,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
-    "infraestructura_electrica": 85,
+    "infraestructura_electrica": 86,
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 69,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 5,
     "incendio": 25,
     "vialidad": 12,
-    "sismo": 9,
+    "sismo": 10,
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 2,
@@ -64,7 +64,7 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 17,
+      "total": 18,
       "confirmados": 0
     },
     {
@@ -139,6 +139,11 @@
     },
     {
       "estado": "Cojedes",
+      "total": 1,
+      "confirmados": 0
+    },
+    {
+      "estado": "Amazonas",
       "total": 1,
       "confirmados": 0
     }
@@ -216,7 +221,7 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -327,13 +332,16 @@
     "Delta Amacuro": {
       "derrame_petrolero": 1,
       "inundacion": 1
+    },
+    "Amazonas": {
+      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 296,
-    "medio": 4,
+    "sin_clasificar": 297,
+    "medio": 5,
     "bajo": 8
   },
   "serie_mensual_por_tipo": {
@@ -350,7 +358,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 16
+      "2026-09": 17
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -385,7 +393,7 @@
     },
     "sismo": {
       "2026-08": 8,
-      "2026-09": 1
+      "2026-09": 2
     },
     "escasez_combustible": {
       "2026-08": 1

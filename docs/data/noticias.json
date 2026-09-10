@@ -1,5 +1,59 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/comunidad-pago-parte-del-costo-de-nuevo-transformador-electrico-para-la-6ta-carrera-sur-de-el-tigre/",
+        "fecha": "2026-09-10T18:16:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T18:16:47+00:00",
+    "fecha_evento_temprana": "2026-09-10T18:16:47+00:00",
+    "fecha_deteccion": "2026-09-10T21:57:38.293354+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-10",
+    "titulo": "Falla eléctrica en Anzoategui",
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 10/09/2026, 2:16 p.m.\n🔎 Detectado por el sistema: 10/09/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/comunidad-pago-parte-del-costo-de-nuevo-transformador-electrico-para-la-6ta-carrera-sur-de-el-tigre/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/",
+        "fecha": "2026-09-10T15:07:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T15:07:04+00:00",
+    "fecha_evento_temprana": "2026-09-10T15:07:04+00:00",
+    "fecha_deteccion": "2026-09-10T21:58:01.265324+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": 5.0,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Amazonas::2026-09-10::mag5.0",
+    "titulo": "Sismo en Amazonas",
+    "texto": "📌 Sismo en Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 10/09/2026, 11:07 a.m.\n🔎 Detectado por el sistema: 10/09/2026, 5:58 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Bolivar",
     "municipio": null,
@@ -1757,36 +1811,5 @@
     "clave_dedup": "inundacion::Aragua::2026-08-29",
     "titulo": "Inundación en Aragua",
     "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/08/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 29/08/2026, 3:58 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/sucesos/hallan-cuerpo-de-zuleika-morillo-en-el-rio-aragua-tras-operativo-de-rescate/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/encuentran-el-cuerpo-de-zuleyka-morillo-tras-siete-dias-de-busqueda/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/hallan-el-cuerpo-de-un-hombre-arrastrado-por-la-crecida-del-rio-aragua/",
-        "fecha": "2026-08-27T14:53:31+00:00"
-      },
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/localizan-cuerpo-de-comerciante-arrastrado-por-el-rio-aragua-durante-fuertes-lluvias/",
-        "fecha": "2026-08-27T13:51:57+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-27T14:53:31+00:00",
-    "fecha_evento_temprana": "2026-08-27T13:51:57+00:00",
-    "fecha_deteccion": "2026-08-27T21:04:58.909275+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Aragua::2026-08-27",
-    "titulo": "Inundación en Aragua",
-    "texto": "📌 Inundación en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 27/08/2026, 10:53 a.m.\n🔎 Detectado por el sistema: 27/08/2026, 5:04 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/hallan-el-cuerpo-de-un-hombre-arrastrado-por-la-crecida-del-rio-aragua/\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/localizan-cuerpo-de-comerciante-arrastrado-por-el-rio-aragua-durante-fuertes-lluvias/"
   }
 ]
