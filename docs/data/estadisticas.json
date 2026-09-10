@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-09T23:58:52.892076+00:00",
+  "actualizado": "2026-09-10T13:07:32.355251+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-09T20:57:56+00:00"
+    "hasta": "2026-09-10T12:36:15+00:00"
   },
-  "total_eventos": 345,
+  "total_eventos": 347,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
-    "infraestructura_electrica": 84,
+    "infraestructura_electrica": 85,
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 66,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 25,
-    "vialidad": 11,
+    "vialidad": 12,
     "sismo": 8,
     "escasez_combustible": 1,
     "sequia": 6,
@@ -39,7 +39,7 @@
     },
     {
       "estado": "Zulia",
-      "total": 24,
+      "total": 25,
       "confirmados": 4
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "estado": "Tachira",
-      "total": 12,
+      "total": 13,
       "confirmados": 0
     },
     {
@@ -175,7 +175,8 @@
       "sismo": 1,
       "salud_publica": 1,
       "ataque_armado": 1,
-      "explosion": 1
+      "explosion": 1,
+      "vialidad": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -240,7 +241,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "incendio": 1,
       "orden_publico": 1,
       "inundacion": 2,
@@ -331,7 +332,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 290,
+    "sin_clasificar": 292,
     "medio": 4,
     "bajo": 8
   },
@@ -349,7 +350,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 64,
-      "2026-09": 15
+      "2026-09": 16
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -380,7 +381,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 1
+      "2026-09": 2
     },
     "sismo": {
       "2026-08": 8
