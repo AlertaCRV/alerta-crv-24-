@@ -2151,10 +2151,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:30:29.235457+00:00"
   },
-  "sismo::La Guaira::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T08:30:32.665313+00:00"
-  },
   "infraestructura_electrica::Cojedes::2026-09-10": {
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:30:42.830380+00:00"
@@ -2179,17 +2175,9 @@
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:31:50.808520+00:00"
   },
-  "orden_publico::Bolivar::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T08:32:02.231950+00:00"
-  },
   "orden_publico::Distrito Capital::2026-09-10": {
     "intentos": 2,
     "ultima_vez": "2026-09-10T08:32:13.661267+00:00"
-  },
-  "orden_publico::Lara::2026-09-10": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-10T08:32:25.277987+00:00"
   },
   "infraestructura_electrica::Carabobo::2026-09-10": {
     "intentos": 2,
@@ -2204,27 +2192,31 @@
     "ultima_vez": "2026-09-10T08:31:16.076877+00:00"
   },
   "infraestructura_electrica::Anzoategui::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T08:31:27.520079+00:00"
-  },
-  "orden_publico::Sucre::2026-09-10": {
     "intentos": 2,
-    "ultima_vez": "2026-09-10T17:01:41.388588+00:00"
+    "ultima_vez": "2026-09-10T19:36:28.282662+00:00"
   },
   "sismo::Distrito Capital::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T17:01:34.433504+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T19:36:09.531452+00:00"
   },
   "infraestructura_electrica::Tachira::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T17:01:37.930532+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T19:36:21.176136+00:00"
   },
   "sismo::Amazonas::2026-09-10": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-10T17:01:44.773249+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T19:36:51.524768+00:00"
   },
   "inundacion::Barinas::2026-09-10": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-10T19:37:03.395471+00:00"
+  },
+  "sismo::Zulia::2026-09-10": {
     "intentos": 1,
-    "ultima_vez": "2026-09-10T17:01:48.375310+00:00"
+    "ultima_vez": "2026-09-10T19:36:14.011864+00:00"
+  },
+  "orden_publico::Tachira::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T19:36:17.487170+00:00"
   }
 }

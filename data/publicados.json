@@ -117,5 +117,33 @@
     "fecha_deteccion": "2026-09-10T13:07:31.555073+00:00",
     "fecha_evento_temprana": "2026-09-10T02:25:50+00:00",
     "municipio": null
+  },
+  "orden_publico::Bolivar::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T19:36:02.533369+00:00",
+    "fecha_evento_temprana": "2026-09-10T19:14:34+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T19:36:06.021522+00:00",
+    "fecha_evento_temprana": "2026-09-10T19:14:34+00:00",
+    "municipio": null
+  },
+  "sismo::La Guaira::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T19:36:24.846330+00:00",
+    "fecha_evento_temprana": "2026-09-10T17:18:11+00:00",
+    "municipio": "Vargas"
+  },
+  "orden_publico::Sucre::2026-09-10": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-10T19:36:39.738738+00:00",
+    "fecha_evento_temprana": "2026-09-10T10:30:02+00:00",
+    "municipio": "Cruz Salmerón Acosta"
   }
 }

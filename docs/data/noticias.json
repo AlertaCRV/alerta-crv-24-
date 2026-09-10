@@ -1,5 +1,111 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/619638/las-calles-de-venezuela-siguen-reclamando-luz-agua-y-justicia/",
+        "fecha": "2026-09-10T19:14:34+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T19:14:34+00:00",
+    "fecha_evento_temprana": "2026-09-10T19:14:34+00:00",
+    "fecha_deteccion": "2026-09-10T19:36:02.533369+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Bolivar::2026-09-10",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 10/09/2026, 3:14 p.m.\n🔎 Detectado por el sistema: 10/09/2026, 3:36 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/619638/las-calles-de-venezuela-siguen-reclamando-luz-agua-y-justicia/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/619638/las-calles-de-venezuela-siguen-reclamando-luz-agua-y-justicia/",
+        "fecha": "2026-09-10T19:14:34+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T19:14:34+00:00",
+    "fecha_evento_temprana": "2026-09-10T19:14:34+00:00",
+    "fecha_deteccion": "2026-09-10T19:36:06.021522+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Lara::2026-09-10",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 10/09/2026, 3:14 p.m.\n🔎 Detectado por el sistema: 10/09/2026, 3:36 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/619638/las-calles-de-venezuela-siguen-reclamando-luz-agua-y-justicia/"
+  },
+  {
+    "tipo": "sismo",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/",
+        "fecha": "2026-09-10T17:18:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T17:18:11+00:00",
+    "fecha_evento_temprana": "2026-09-10T17:18:11+00:00",
+    "fecha_deteccion": "2026-09-10T19:36:24.846330+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "magnitud": null,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::La Guaira::2026-09-10",
+    "titulo": "Sismo en Municipio Vargas, La Guaira",
+    "texto": "📌 Sismo en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 10/09/2026, 1:18 p.m.\n🔎 Detectado por el sistema: 10/09/2026, 3:36 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": "Cruz Salmerón Acosta",
+    "parroquia": "Araya",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/10/los-jubilados-de-las-salinas-de-araya-cumplieron-200-dias-de-protestas-a-la-espera-de-respuestas-a-sus-reclamos/",
+        "fecha": "2026-09-10T10:30:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-10T10:30:02+00:00",
+    "fecha_evento_temprana": "2026-09-10T10:30:02+00:00",
+    "fecha_deteccion": "2026-09-10T19:36:39.738738+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Sucre::2026-09-10",
+    "titulo": "Orden público en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre",
+    "texto": "📌 Orden público en Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Araya, Municipio Cruz Salmerón Acosta, Sucre\n🕒 Hecho reportado: 10/09/2026, 6:30 a.m.\n🔎 Detectado por el sistema: 10/09/2026, 3:36 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/10/los-jubilados-de-las-salinas-de-araya-cumplieron-200-dias-de-protestas-a-la-espera-de-respuestas-a-sus-reclamos/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Tachira",
     "municipio": null,
