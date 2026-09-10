@@ -2146,5 +2146,57 @@
   "salud_publica::Lara::2026-09-09": {
     "intentos": 1,
     "ultima_vez": "2026-09-09T23:58:17.258166+00:00"
+  },
+  "sismo::Miranda::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:20.006687+00:00"
+  },
+  "sismo::La Guaira::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:23.328850+00:00"
+  },
+  "infraestructura_electrica::Cojedes::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:26.700901+00:00"
+  },
+  "infraestructura_electrica::Falcon::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:30.264273+00:00"
+  },
+  "infraestructura_electrica::Guarico::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:33.936572+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:37.458303+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:40.685461+00:00"
+  },
+  "salud_publica::Lara::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:52:44.111359+00:00"
+  },
+  "orden_publico::Aragua::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:53:08.553474+00:00"
+  },
+  "orden_publico::Bolivar::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:53:12.087502+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:53:23.580156+00:00"
+  },
+  "orden_publico::Lara::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:53:35.148293+00:00"
+  },
+  "vialidad::Zulia::2026-09-10": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-10T03:53:46.627715+00:00"
   }
 }

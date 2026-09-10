@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-09T12:01:43.741245+00:00",
-  "actualizado_hasta": "2026-09-08T23:42:50.552388+00:00",
-  "total_eventos": 10,
+  "generado": "2026-09-10T03:56:18.424094+00:00",
+  "actualizado_hasta": "2026-09-09T23:58:51.769962+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 10
+    "actual": 12
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron diez eventos de orden público, una caída notable frente a los cincuenta y dos registrados en agosto del mismo año (Comparación con el período anterior). Esta disminución no implica una ausencia de tensiones, sino una reconfiguración de las manifestaciones y de los incidentes materiales que se observaron en distintas regiones del país.\n\nSegún el Diario La Nación, las fallas eléctricas continuaron dañando transformadores en varias localidades, generando interrupciones en el suministro de energía y afectando a la ciudadanía (La Nacion). En el mismo informe se señaló el colapso de una base del puente Yacural en el estado Lara, tras años de denuncias por su deterioro, lo que provocó daños estructurales significativos y la necesidad de reparaciones urgentes (La Nacion).\n\nDurante la primera semana de septiembre se registraron diversas protestas pacíficas y reclamos sociales. En Mérida, ciudadanos y ONG marcharon frente al Ministerio Público exigiendo la libertad de presos políticos (El Pitazo). En Caracas, familiares de presos políticos realizaron una movilización para que su liberación no quede relegada a negociaciones económicas (La Prensa de Lara). En Ocumare del Tuy, estado Miranda, sindicatos docentes anunciaron protestas de calle por deudas pendientes y rechazaron el regreso obligatorio a las aulas (El Pitazo). Asimismo, el movimiento Vente Venezuela concentró asambleas en las parroquias Sucre, San Pedro y La Vega de Caracas, demandando un cronograma electoral y la libertad de los presos políticos (Primicia). Por otro lado, la Policía Municipal de Chacao (PoliChacao) impidió la marcha de la Coalición Sindical Nacional hacia el Hotel Marriott, provocando enfrentamientos en la calle Mohedano (Runrun.es; Turimiquire).\n\nEn el sector de los jubilados y pensionados, la dirigente Ymara García demandó pensiones dignas, mejor atención en salud y la recuperación de beneficios, mientras que jubilados de Cantv denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con huelgas de hambre si no se atienden sus peticiones (Portuguesa Reporta; Portuguesa Reporta).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 12 eventos de orden público, una notable reducción frente a los 52 eventos del mes anterior (agosto 2026). Esta disminución se refleja en la menor cantidad de concentraciones y manifestaciones documentadas por los medios y observatorios del país.\n\nEl 9 de septiembre, familiares de presos políticos se congregaron en el centro de Caracas, específicamente en las inmediaciones de la Defensoría del Pueblo (Plaza Morelo), como parte de la segunda jornada de la “Ruta de las Respuestas Pendientes” organizada por el Comité por la Libertad de los Presos Políticos (Clippve) (La Nacion). La misma jornada fue cubierta también por La Prensa de Lara, que destacó la exigencia de que la libertad de los detenidos no quede relegada ante negociaciones económicas (La Prensa de Lara). Ambas fuentes coinciden en que la movilización buscó presionar a la Fiscalía para obtener respuestas concretas.\n\nEl 3 de septiembre se registraron varias protestas en distintas regiones: en Mérida, ciudadanos y ONG manifestaron pacíficamente frente al Ministerio Público la exigencia de sobreseimiento definitivo de causas por motivos políticos (El Pitazo). En la capital, militantes de Vente Venezuela se concentraron en las parroquias Sucre, San Pedro y La Vega, reclamando la convocatoria de un cronograma electoral y la libertad de los presos políticos (Primicia). En el estado Portuguesa, la dirigente Ymara García encabezó una protesta de jubilados y pensionados que demandaban pensiones dignas, mejor atención en salud y la recuperación de beneficios del IVSS (Portuguesa Reporta). Paralelamente, jubilados de Cantv en Acarigua denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con una huelga de hambre si no se atienden sus reclamos (Portuguesa Reporta).\n\nAdemás de las manifestaciones, se reportaron problemas de infraestructura que impactaron la seguridad pública: en Lara colapsó la base del puente Yacural después de años de denuncias de deterioro (La Nacion). En Barinas, el traslado de reclusos tras los disturbios en Injuba agravó las condiciones de hacinamiento en los centros penitenciarios (La Nacion). Para contextualizar la actividad protestante, el Observatorio Venezolano de Conflictividad Social informó que en julio de 2026 se registraron 509 protestas, equivalentes a un promedio de 16 manifestaciones diarias, lo que representa un aumento del 246 % respecto al mismo mes de 2025 (El Impulso).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/09/observatorio-de-conflictividad-registra-509-protestas-en-julio-un-promedio-de-16-diarias-9sep/"
     },
     {
       "nombre": "El Pitazo",
@@ -23,7 +31,7 @@
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/gran-caracas/docentes-denuncian-recorte-de-vacaciones-y-anuncian-protestas-de-calle-por-deudas-pendientes/"
+      "link": "https://elpitazo.net/caracas/509-protestas-se-registraron-en-julio-en-venezuela-segun-observatorio-de-conflictividad-social/"
     },
     {
       "nombre": "La Prensa de Lara",
