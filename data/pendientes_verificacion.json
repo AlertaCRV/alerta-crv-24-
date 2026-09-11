@@ -2270,5 +2270,13 @@
   "inundacion::Guarico::2026-09-11": {
     "intentos": 2,
     "ultima_vez": "2026-09-11T08:24:52.334071+00:00"
+  },
+  "deslizamiento::Monagas::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T16:59:28.694872+00:00"
+  },
+  "orden_publico::Miranda::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T16:59:32.316767+00:00"
   }
 }
