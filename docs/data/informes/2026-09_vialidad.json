@@ -3,19 +3,23 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-09-10T03:56:48.637141+00:00",
-  "actualizado_hasta": "2026-09-03T22:38:37.130174+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-11T03:54:05.191164+00:00",
+  "actualizado_hasta": "2026-09-10T13:07:31.555073+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 10,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registró un único incidente vial, lo que representa una disminución significativa respecto al mes anterior, en el que se contabilizaron diez eventos (10 evento(s) registrados entonces vs. 1 en este período). Esta reducción se refleja en los reportes de la Cruz Roja Venezolana, que continúan monitoreando la seguridad vial en todo el territorio nacional.\n\nEl único hecho de relevancia ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos unidades de transporte público colisionaron en la madrugada de este miércoles. El siniestro dejó tres muertos y un herido, y fue catalogado con severidad crítica (El Periodico de Monagas). Las autoridades locales activaron los protocolos de emergencia y los equipos de rescate de la Cruz Roja atendieron a los heridos en el lugar.\n\nA pesar de la baja cantidad de incidentes en este período, la Cruz Roja mantiene la alerta y continúa trabajando en la prevención de accidentes de tránsito, reforzando la capacitación de conductores y la difusión de campañas de seguridad vial para evitar futuros siniestros.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron únicamente dos incidentes viales, una disminución notable respecto al período anterior en el que se contabilizaron diez eventos (Comparación con el período anterior: 10 evento(s) registrados entonces vs. 2 en este período).\n\nEl incidente más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos autobuses de transporte público colisionaron a las 5:10 a.m. del miércoles, provocando tres muertos y un herido (El Periodico de Monagas). La severidad del siniestro fue catalogada como crítica y generó importantes daños materiales en ambas unidades y en la infraestructura vial.\n\nOtro accidente se dio en Los Haticos, municipio Zulia, cuando un autobús de la línea Uni Zulia impactó contra un vehículo modelo Festiva, provocando la muerte de una mujer y dejando a un hombre con heridas leves (Noticia al Dia). Además, una motociclista quedó atrapada bajo la unidad colectiva, aunque no se reportaron víctimas fatales adicionales.\n\nAmbos eventos fueron atendidos por los servicios de emergencia y la Cruz Roja Venezolana activó sus protocolos de atención inmediata, proporcionando primeros auxilios y coordinando el traslado de los heridos a los hospitales más cercanos. La reducción del número total de incidentes viales en comparación con el mes anterior permite una evaluación positiva de las medidas preventivas implementadas, aunque la gravedad de los dos casos subraya la necesidad de mantener la vigilancia y la capacitación continua del personal de respuesta.",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tragico-choque-multiple-dejo-una-mujer-fallecida-y-un-herido-en-los-haticos/"
     }
   ]
 }

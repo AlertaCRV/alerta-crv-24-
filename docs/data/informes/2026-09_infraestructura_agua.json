@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-10T03:55:10.828849+00:00",
+  "generado": "2026-09-11T03:52:13.954444+00:00",
   "actualizado_hasta": "2026-09-08T11:40:18.665012+00:00",
   "total_eventos": 3,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 12,
     "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de fallas de agua, una reducción significativa respecto a los doce reportados en agosto del mismo año. Esta disminución refleja una variación en la frecuencia de los incidentes, aunque la gravedad de los casos sigue siendo alta en varias regiones.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, la población y los comerciantes de Sanare continúan enfrentando interrupciones diarias del suministro eléctrico y irregularidades en el agua potable, lo que afecta la calidad de vida, daña equipos de trabajo y paraliza la economía local (El Impulso).\n\nEn el municipio Tubores, estado Nueva Esparta, los habitantes llevan más de seis meses sin agua debido a una rotura de tubería que ha generado un “aislamiento hídrico” severo; el diputado Omar Veracierto presentó un balance basado en datos de la plataforma Pulso Nueva Esparta para evidenciar la crisis (Reporte Confidencial).\n\nEn Cumaná, capital del estado Sucre, el alcalde Pedro Figueroa anunció que el municipio quedará excluido de la programación de cortes eléctricos, pero la escasez de agua persiste, evidenciando la continuidad de la crisis hídrica en la región (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres incidentes de falla de agua, una disminución notable respecto a los doce eventos reportados en agosto del mismo año (12 evento(s) registrados entonces vs. 3 en este período). Esta reducción no implica la ausencia de problemas, ya que los casos documentados continúan afectando la vida cotidiana de varias comunidades venezolanas.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, los habitantes y comerciantes de Sanare enfrentan interrupciones diarias tanto del suministro eléctrico como del agua potable, lo que ha provocado daños en equipos de trabajo y ha paralizado la actividad económica local (El Impulso). La crisis de los servicios públicos se describe como una amenaza constante a la calidad de vida de la población.\n\nEn el estado Nueva Esparta, el municipio Tubores lleva más de seis meses sin recibir agua por problemas en la tubería, una situación catalogada como «aislamiento hídrico» por el diputado Omar Veracierto, quien presentó el balance basado en datos de la plataforma Pulso Nueva Esparta (Reporte Confidencial). Esta falta prolongada de agua afecta gravemente a los hogares y a la actividad productiva del área.\n\nEn el estado Sucre, la ciudad de Cumaná quedó excluida de la programación de cortes eléctricos, pero sigue sufriendo la crisis hídrica que afecta a varios municipios de la región; el alcalde Pedro Figueroa confirmó la exclusión y advirtió sobre la escasez de agua que persiste en la zona (Turimiquire).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",

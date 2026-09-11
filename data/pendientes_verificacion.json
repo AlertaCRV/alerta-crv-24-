@@ -2238,5 +2238,45 @@
   "infraestructura_electrica::Anzoategui::2026-09-10": {
     "intentos": 1,
     "ultima_vez": "2026-09-10T23:54:43.977666+00:00"
+  },
+  "orden_publico::Bolivar::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:03.527480+00:00"
+  },
+  "orden_publico::Lara::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:06.987653+00:00"
+  },
+  "accidente_transporte::Distrito Capital::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:10.516266+00:00"
+  },
+  "sismo::Distrito Capital::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:13.938665+00:00"
+  },
+  "sismo::Zulia::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:17.334598+00:00"
+  },
+  "infraestructura_agua::Barinas::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:20.735169+00:00"
+  },
+  "infraestructura_agua::Portuguesa::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:24.225452+00:00"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:35.950206+00:00"
+  },
+  "inundacion::Guarico::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:47.402579+00:00"
+  },
+  "salud_publica::Distrito Capital::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T03:50:58.814517+00:00"
   }
 }
