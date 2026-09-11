@@ -1,32 +1,4 @@
 {
-  "emergencia_metro::Miranda::2026-09-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T11:40:08.400744+00:00",
-    "fecha_evento_temprana": "2026-09-08T01:20:05+00:00",
-    "municipio": "Chacao"
-  },
-  "orden_publico::Distrito Capital::2026-09-07": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T11:40:11.834075+00:00",
-    "fecha_evento_temprana": "2026-09-07T23:40:05+00:00",
-    "municipio": null
-  },
-  "sismo::La Guaira::2026-09-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T11:40:15.289096+00:00",
-    "fecha_evento_temprana": "2026-09-08T00:01:02+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Lara::2026-09-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T11:40:18.665012+00:00",
-    "fecha_evento_temprana": "2026-09-08T00:00:00+00:00",
-    "municipio": "Andrés Eloy Blanco"
-  },
   "orden_publico::Miranda::2026-09-08": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -152,5 +124,19 @@
     "fecha_deteccion": "2026-09-10T23:54:13.762413+00:00",
     "fecha_evento_temprana": "2026-09-10T18:41:14+00:00",
     "municipio": "Catatumbo"
+  },
+  "infraestructura_agua::Barinas::2026-09-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-11T12:56:32.133126+00:00",
+    "fecha_evento_temprana": "2026-09-11T04:16:32+00:00",
+    "municipio": null
+  },
+  "salud_publica::Distrito Capital::2026-09-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-11T12:56:35.690723+00:00",
+    "fecha_evento_temprana": "2026-09-11T01:53:56+00:00",
+    "municipio": null
   }
 }
