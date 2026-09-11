@@ -138,5 +138,19 @@
     "fecha_deteccion": "2026-09-11T12:56:35.690723+00:00",
     "fecha_evento_temprana": "2026-09-11T01:53:56+00:00",
     "municipio": null
+  },
+  "orden_publico::Miranda::2026-09-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-11T21:57:05.176206+00:00",
+    "fecha_evento_temprana": "2026-09-11T16:30:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Monagas::2026-09-11": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-11T21:57:11.769567+00:00",
+    "fecha_evento_temprana": "2026-09-11T15:34:42+00:00",
+    "municipio": "Maturín"
   }
 }

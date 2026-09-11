@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/11/familiares-de-presos-politicos-marchan-a-miraflores-para-exigir-respuestas-sobre-las-detenciones-11sep/",
+        "fecha": "2026-09-11T16:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-11T16:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-11T16:30:00+00:00",
+    "fecha_deteccion": "2026-09-11T21:57:05.176206+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-11",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 11/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 11/09/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/11/familiares-de-presos-politicos-marchan-a-miraflores-para-exigir-respuestas-sobre-las-detenciones-11sep/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": "Boquerón",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/",
+        "fecha": "2026-09-11T15:34:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-11T15:34:42+00:00",
+    "fecha_evento_temprana": "2026-09-11T15:34:42+00:00",
+    "fecha_deteccion": "2026-09-11T21:57:11.769567+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "deslizamiento::Monagas::2026-09-11",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Boquerón, Municipio Maturín, Monagas",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Boquerón, Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Boquerón, Municipio Maturín, Monagas\n🕒 Hecho reportado: 11/09/2026, 11:34 a.m.\n🔎 Detectado por el sistema: 11/09/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Barinas",
     "municipio": null,
