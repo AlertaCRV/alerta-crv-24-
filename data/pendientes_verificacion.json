@@ -2271,16 +2271,12 @@
     "intentos": 2,
     "ultima_vez": "2026-09-11T08:24:52.334071+00:00"
   },
-  "deslizamiento::Monagas::2026-09-11": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-11T19:35:01.779038+00:00"
-  },
-  "orden_publico::Miranda::2026-09-11": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-11T19:35:05.262461+00:00"
-  },
   "infraestructura_electrica::Tachira::2026-09-11": {
     "intentos": 1,
     "ultima_vez": "2026-09-11T19:34:58.500531+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-09-11": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-11T21:57:08.539231+00:00"
   }
 }
