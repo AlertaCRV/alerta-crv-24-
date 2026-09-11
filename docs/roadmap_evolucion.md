@@ -8439,3 +8439,301 @@ OK. `python3 scripts/build_dashboard.py` → `docs/data/estadisticas.json`
 regenerado. `python3 scripts/detectar_inconsistencias.py` → mismos pares
 de posibles duplicados ya conocidos de sesiones anteriores, más las
 fuentes muertas en informes documentadas arriba.
+
+## Auditoría diaria automática (11-09-2026): 8 causas raíz corregidas (13 eventos retractados, 1 severidad corregida), más 3 hallazgos pendientes de discutir
+
+Se auditaron las 15 alertas publicadas desde el corte de la auditoría
+anterior (09-09-2026, 23:37 UTC) hasta ahora -- todas
+`PASADO_POR_FALLA_TECNICA`, la verificación de IA sigue sin correr en este
+entorno -- comparando cada una contra el texto real de sus fuentes en
+`data/historico_fuentes_texto.jsonl`. 8 errores reales encontrados y
+corregidos de raíz; varios de los fixes, al correr la regresión completa
+contra el corpus histórico, expusieron instancias adicionales del mismo
+patrón nunca antes detectadas.
+
+### 1. "Parque Carabobo" (una plaza de Caracas) se confundía con el estado Carabobo
+
+`orden_publico::Carabobo::2026-09-09` (Diario La Nación (Táchira),
+"Familiares de presos políticos continúan su semana de protestas...")
+describe una marcha real en Caracas ("concentración... en el centro de
+Caracas... caminata... hacia la sede principal del Ministerio Público, en
+Parque Carabobo") -- disparaba el estado Carabobo únicamente porque
+"Parque Carabobo" (una plaza junto al Ministerio Público, en Caracas)
+comparte nombre con el estado. El mismo hecho ya se publicaba
+correctamente como Distrito Capital vía la mención de "Caracas".
+
+**Corrección**: se agregó "parque carabobo" a `LISTA_NEGRA_POR_ESTADO["Carabobo"]`
+(`scripts/classify.py`), mismo mecanismo ya usado para "avenida
+carabobo"/"avenida bolívar". Se verificó contra las 358 fuentes de
+`data/historico_fuentes_texto.jsonl` que las 11 apariciones de la frase
+son siempre en Caracas/Distrito Capital (nunca el estado Carabobo), y con
+un caso de control (disturbios reales y explícitos en Valencia, estado
+Carabobo, sin mención de la plaza) que el estado sigue detectándose
+normalmente.
+
+**Corrección retroactiva**: al correr la regresión completa, aparecieron
+2 instancias históricas más del mismo patrón, nunca antes detectadas:
+`orden_publico::Carabobo::2026-08-22` (Turimiquire (Sucre)) y
+`orden_publico::Carabobo::2026-08-24` (La Patilla + Primicia (Bolívar)) --
+ambas con "Parque Carabobo" como única evidencia del estado. Se
+eliminaron por completo los 3 eventos (el de hoy y los 2 históricos) de
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`; el
+de hoy también de `docs/data/noticias.json`, donde seguía publicado.
+
+### 2. Un informe mensual del OVCS repartía sus cifras agregadas de julio como protestas nuevas en varios estados
+
+`orden_publico::Lara::2026-09-09` (El Impulso (Lara), "Observatorio de
+Conflictividad registra 509 protestas en julio"), `orden_publico::Bolivar::2026-09-10`
+y `orden_publico::Lara::2026-09-10` (ambas de Runrun.es, "Las calles de
+Venezuela siguen reclamando luz, agua y justicia") son coberturas
+distintas del mismo informe MENSUAL (julio 2026) del Observatorio
+Venezolano de Conflictividad Social (OVCS) -- un patrón ya cubierto en
+`_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`/`_es_articulo_resumen_multiestado_de_terceros`
+(`scripts/classify.py`) para el informe SEMESTRAL del 15-08-2026, pero que
+se escapaba por dos bugs distintos:
+
+- Ninguna de las dos coberturas usa la frase exacta ya cubierta ("informe
+  del observatorio venezolano de conflictividad social"): El Impulso dice
+  "(OVCS) documentó 509 protestas..." y Runrun.es dice "El estado Bolívar
+  **encabezó la lista de conflictividad territorial**..." -- ningún
+  marcador existente coincidía, así que `_es_articulo_resumen_multiestado_de_terceros()`
+  nunca se activaba.
+- El conteo de estados de esa misma función solo miraba `alias` (formas
+  cortas pensadas para hashtags, p.ej. "distritocapital"/"laguaira"), no
+  el nombre completo normalizado ("distrito capital"/"la guaira", la
+  forma en que casi siempre aparecen en prosa) -- a diferencia de
+  `_detectar_ubicacion_texto_plano()`, que sí usa ambos. El artículo de
+  Runrun.es menciona 6 estados, pero el conteo solo encontraba 4, nunca
+  alcanzaba el umbral de 5 y el artículo entero escapaba del filtro.
+
+**Corrección**: se agregaron los marcadores "lideran el indice de
+protestas", "encabezo la lista de conflictividad" y "ovcs documento" (este
+último para un segundo cluster de cifras de Runrun.es, a más de 35
+palabras del primer marcador) a `_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`;
+y se corrigió el conteo de `_es_articulo_resumen_multiestado_de_terceros()`
+para usar `set(alias) | {_normalizar(nombre_estado)}`, igual que el
+detector de ubicación real. Se verificó con un caso de control (un
+informe agregado del OVCS que ADEMÁS describe un hecho local real y
+puntual, con municipio nombrado) que la evidencia local específica sigue
+publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 3 eventos
+(`orden_publico::Lara::2026-09-09`, `orden_publico::Bolivar::2026-09-10`,
+`orden_publico::Lara::2026-09-10`) de `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`, y de `docs/data/noticias.json`,
+donde seguían publicados.
+
+### 3. Tres sismos en la frontera Ecuador-Perú se publicaron como sismo nuevo en el estado venezolano Amazonas
+
+`sismo::Amazonas::2026-09-10::mag5.0` (La Prensa de Lara, "Tres sismos
+sacuden la frontera entre Ecuador y Perú") describe sismos con epicentro
+en Santa María de Nieva, provincia peruana de Condorcanqui -- disparaba el
+estado venezolano Amazonas únicamente porque el texto nombra la "región
+Amazonas" (una región geográfica transfronteriza -- Ecuador, Perú, Brasil,
+Colombia -- homónima del estado venezolano), sin ninguna mención real del
+país. Mismo patrón ya cubierto para epicentros colombianos ("San José del
+Palmar", "Coracora") vía `_es_sismo_extranjero_con_epicentro_conocido_sin_municipio`,
+nunca extendido a epicentros peruanos.
+
+**Corrección**: se agregaron "santa maria de nieva" y "condorcanqui" a
+`_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS` (`scripts/classify.py`). Se
+verificó contra las 358 fuentes de `data/historico_fuentes_texto.jsonl`
+que ninguna otra fuente usa esos topónimos, y con un caso de control (un
+sismo real en el municipio Atures, estado Amazonas, Venezuela) que sigue
+publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminó por completo
+`sismo::Amazonas::2026-09-10::mag5.0` de los 3 archivos de datos.
+
+### 4. Un transformador ya reparado (falla de 2 semanas ya resuelta) se publicó como falla eléctrica nueva
+
+`infraestructura_electrica::Anzoategui::2026-09-10` (El Tiempo
+(Anzoátegui), "Comunidad pagó parte del costo de nuevo transformador
+eléctrico...") describe una falla eléctrica de DOS SEMANAS que ya fue
+resuelta el mismo día que describe el artículo ("finalmente fue instalado
+un nuevo equipo") -- un anuncio positivo de resolución, no una falla en
+curso. A diferencia de `_es_anuncio_corpoelec_sin_falla` (que exige
+ausencia total de evidencia fuerte), aquí la evidencia fuerte de la falla
+("fallas eléctricas") sí está presente; lo que falta es que siga vigente.
+
+**Corrección**: nueva función `_es_falla_electrica_ya_resuelta_sin_falla_actual()`
+(`scripts/classify.py`), mismo espíritu que `_es_agua_restablecida_sin_falla_actual`
+ya existente para infraestructura_agua: si el texto trae el marcador
+"finalmente fue instalado"/"finalmente fue instalada", se descarta el
+tipo. Se verificó con un caso de control (una falla eléctrica real y
+vigente, sin marcador de resolución) que la alerta sigue publicándose, y
+contra las 358 fuentes de `data/historico_fuentes_texto.jsonl` que la
+frase es exclusiva de este artículo.
+
+**Corrección retroactiva**: se eliminó por completo
+`infraestructura_electrica::Anzoategui::2026-09-10` de los 3 archivos de
+datos.
+
+### 5. El widget "Destacados" de lanacionweb.com contaminaba la clasificación con titulares de otras notas
+
+`infraestructura_electrica::Tachira::2026-09-10` (Diario La Nación
+(Táchira), "Berenice lucha por darle el último adiós a su hijo asesinado
+hace 21 años") es una nota sobre un homicidio ocurrido hace 21 años en
+Colombia, sin ninguna falla eléctrica -- disparaba el tipo únicamente
+porque el texto trae pegado, sin punto que lo separe de la firma del
+autor, el widget de titulares "Destacados" del sitio ("...Jonathan
+Maldonado Destacados Camión pierde parte de su carga... Colas y plantas
+resonando en frontera por apagones..."). El mismo patrón generaba
+`infraestructura_agua::Barinas::2026-09-11` (mismo medio, "Buscan
+alternativas para frenar caída de consumidores venezolanos en Cúcuta") vía
+otros dos titulares del mismo widget ("1.600 familias de Acarigua tienen
+cinco meses sin agua por tubería" y "Fenatev-Barinas: Directores
+presionan..."). A diferencia de los widgets de "artículos relacionados" ya
+cubiertos (que siempre usan "Lea/Lee/Leer también:"), este no tiene ningún
+marcador textual -- solo la palabra "Destacados" pegada tras la firma,
+seguida de titulares en Title Case sin separador.
+
+**Corrección**: nuevo regex `_DESTACADOS_LANACIONWEB_RE` (`scripts/fetch_rss.py`),
+que recorta desde "Destacados" (seguido de una palabra capitalizada, para
+no afectar el uso normal de la palabra en una oración) hasta el final del
+texto. Se verificó contra las 358 fuentes de `data/historico_fuentes_texto.jsonl`
+que las 18 apariciones de "Destacados" siguen siempre este mismo patrón
+(ninguna es uso legítimo dentro de una oración real).
+
+**Corrección retroactiva**: como este fix opera en `fetch_rss.py` (tiempo
+de captura), no corrige retroactivamente el texto ya guardado en
+`data/historico_fuentes_texto.jsonl` -- se corrió una búsqueda manual de
+TODAS las fuentes con "Destacados" en el corpus histórico comparando
+`clasificar_item()` antes/después de recortar el widget, y aparecieron 3
+instancias históricas más del mismo patrón, nunca antes detectadas:
+`infraestructura_electrica::Tachira::2026-08-12` (22:12 UTC, "Cámara de
+Licoreros denuncia crisis eléctrica" -- el cuerpo del artículo nunca usa
+ninguna palabra clave de tipo por sí solo), `incendio::Tachira::2026-08-21`
+(un terremoto en Perú, sin relación alguna) y
+`ataque_armado::Tachira::2026-08-24` (un tributo deportivo a una
+basquetbolista, sin relación alguna). Se eliminaron por completo los 5
+eventos (los 2 de hoy más los 3 históricos) de `data/historico_eventos.jsonl`
+y `data/historico_fuentes_texto.jsonl`; los 2 de hoy también de
+`docs/data/noticias.json`, donde seguían publicados.
+
+### 6. Una mención futura de "Plaza Bolívar de Chacao" desplazaba la ubicación real (Caracas, hoy) hacia Miranda
+
+`orden_publico::Miranda::2026-09-11` (El Impulso (Lara), "Familiares de
+presos políticos marchan a Miraflores...") describe una marcha REAL de HOY
+en la Plaza O'Leary de Caracas hacia el Palacio de Miraflores -- el texto
+solo menciona "Chacao" de pasada, para una vigilia DISTINTA el domingo
+siguiente ("Las jornadas... culminarán el domingo... con una vigilia en la
+Plaza Bolívar de Chacao"). Ni la mención de "Chacao" ni la de "Caracas"
+tenían una palabra clave de tipo dentro de su ventana de proximidad (la
+evidencia real, "protestas", está fuera de las 35 palabras de ambas) --
+el mecanismo de remapeo Chacao→Miranda (`LISTA_NEGRA_POR_ESTADO["Distrito Capital"]`/
+`_REMAPEO_MUNICIPIO_A_ESTADO`, ver auditoría 31-07-2026) tiene un
+resguardo para este caso ("si ninguna ventana confirma el tipo cerca, pero
+el tipo SÍ aparece en algún otro punto del artículo, se usa el texto
+completo como ventana") -- pero ese resguardo usaba el estado REMAPEADO
+(Miranda) en vez del alias original que sí hizo match (Caracas →
+Distrito Capital), sin ninguna base real para preferir uno sobre el otro
+en ausencia total de evidencia de proximidad.
+
+**Corrección**: en ese resguardo total (`scripts/classify.py`,
+`_detectar_ubicacion_texto_plano`), se usa ahora `nombre_estado` (el alias
+original) en vez de `estado_real` (el remapeo) -- sin ninguna ventana que
+confirme que la frase de la lista negra está realmente cerca de evidencia
+de tipo, no hay razón para preferir el remapeo. El caso ya cubierto donde
+SÍ hay evidencia cerca de la mención remapeada (p.ej. el incendio del CCCT
+en Chacao, 31-07-2026) no se ve afectado -- ese camino sigue usando
+`estado_real` sin cambios. Se corrió la regresión completa contra las 358
+fuentes históricas y las 220+ pruebas curadas de `casos_clasificacion.jsonl`:
+el único caso afectado fue precisamente el corregido aquí.
+
+**Corrección retroactiva**: se eliminó por completo
+`orden_publico::Miranda::2026-09-11` de los 3 archivos de datos.
+
+### 7. "fallecida"/"fallecidas" (forma femenina) faltaban en las palabras clave de severidad crítica
+
+`vialidad::Zulia::2026-09-10` (Noticia al Día (Zulia), "Trágico choque
+múltiple dejó una mujer fallecida y un herido en Los Haticos") describe un
+choque múltiple con una víctima fatal, pero se publicó con severidad "sin
+clasificar" -- `config/keywords.yaml` solo tenía las formas masculinas
+"fallecido"/"fallecidos" en `severidad.critico`, a diferencia de
+"ahogado"/"ahogada"/"ahogados"/"ahogadas", que sí tenían las 4 formas.
+
+**Corrección**: se agregaron "fallecida"/"fallecidas" a
+`severidad.critico` en `config/keywords.yaml`.
+
+**Corrección retroactiva**: se corrigió la severidad de
+`vialidad::Zulia::2026-09-10` a "crítico" en `docs/data/noticias.json`,
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`
+(regenerando el texto de la tarjeta con `render.redactar_noticia()`).
+
+### Pendiente de discutir
+
+**`sismo::Zulia::2026-09-10::mag4.0`** (El Pitazo, "Funvisis registra dos
+sismos cerca de la frontera colombo-venezolana"): el propio artículo se
+contradice -- el cuerpo dice que el sismo de magnitud 3,5 tuvo su
+epicentro "37 kilómetros al noreste de Villa del Rosario, **en territorio
+colombiano**", pero un tuit citado más abajo, del mismo Funvisis, titula
+"Sismo de magnitud 3,5 en Villa del Rosario **en Zulia**" y dice
+literalmente "estado Zulia" (`municipio: Catatumbo` fue detectado, aunque
+probablemente por la mención de "la región del Catatumbo" del OTRO sismo
+del artículo, en Teorama, Colombia). No se corrigió: a diferencia de la
+región Amazonas (sin ninguna mención venezolana), aquí la propia fuente
+oficial (Funvisis) parece atribuir el evento a Zulia en un lugar y a
+Colombia en otro -- eliminar la alerta arriesga descartar un sismo
+realmente sentido en el occidente de Venezuela, y mantenerla arriesga
+publicar un evento extranjero. Se notifica al usuario en vez de decidir
+unilateralmente.
+
+**`salud_publica::Distrito Capital::2026-09-11`** (Portuguesa Reporta,
+"OVP: Calabozos del Cicpc operan como una red de cárceles paralelas"):
+describe un informe de derechos humanos sobre hacinamiento carcelario que
+menciona "brotes graves de sarna, desnutrición y tuberculosis" dentro de
+los calabozos policiales -- disparó tipo=salud_publica vía "brotes", una
+palabra clave válida, pero el hecho es un problema estructural y crónico
+de las cárceles (no un brote de salud pública puntual del día de
+publicación) confinado a la población reclusa. No se corrigió: no hay un
+filtro general ya establecido para distinguir "brote real mencionado
+dentro de un informe institucional crónico" de un brote de salud pública
+puntual, y crear uno sin acotarlo cuidadosamente arriesga descartar
+coberturas legítimas de brotes reales que también citen un informe. Se
+notifica al usuario en vez de corregir un cambio de alcance amplio de
+forma autónoma.
+
+**`orden_publico::Sucre::2026-09-10`** (Turimiquire (Sucre), "Los
+Jubilados de las salinas de Araya cumplieron 200 días de protestas..."):
+mismo patrón ya documentado como pendiente para Portuguesa (22-08-2026,
+05-09-2026, 08-09-2026) -- una protesta gremial crónica y real (200 días
+de huelga pacífica), sin un hecho puntual de disturbio ese día específico.
+No se corrigió, por la misma razón ya señalada en esas auditorías
+anteriores (un filtro general de "queja crónica" para orden_publico
+arriesga descartar coberturas legítimas de conflictos laborales reales y
+sostenidos). Se mantiene como antecedente, sin notificar de nuevo al
+usuario por el mismo patrón ya señalado repetidamente.
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta 25 "fuentes muertas" en 17
+informes narrativos que ya habían incluido los eventos retractados hoy
+(los 2 de hoy de cada hallazgo, más los 6 históricos expuestos por los
+fixes 1 y 5): `docs/data/informes/2026-09_general.json`,
+`2026-09_orden_publico.json`, `2026-09_infraestructura_electrica.json`,
+`2026-09_sismo.json`, `2026-08_general.json`, `2026-08_infraestructura_electrica.json`,
+`2026-08_incendio.json`, `2026-08_ataque_armado.json`, entre otros.
+`GROQ_API_KEY` no está disponible en este entorno, así que no se
+regeneraron a mano -- `scripts/build_informes.py` regenerará esos
+informes en la próxima corrida con acceso a la API (mismo patrón que
+sesiones anteriores). Los mismos pares de posibles duplicados ya
+conocidos de auditorías previas siguen sin resolver, sin cambios respecto
+a lo ya señalado.
+
+### Pruebas
+
+12 casos nuevos en `tests/casos_clasificacion.jsonl` (7 reales + 5
+controles) para los hallazgos 1, 2, 3, 4, 6 y 7, más 3 casos nuevos (2
+reales + 1 control) en `tests/test_fetch_rss_limpieza.py` para el hallazgo
+5. Regresión completa contra las 344 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (ya con los 13 eventos retractados
+hoy eliminados), corrida con `PYTHONHASHSEED=0` fijo: sin cambios
+inesperados -- las únicas fuentes afectadas por los fixes son,
+precisamente, las señaladas arriba. `python3 -m pytest tests/` → 744
+passed, 6 xfailed (conocidos), 1 xpassed (conocido). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles
+duplicados ya conocidos de sesiones anteriores, más las fuentes muertas
+en informes documentadas arriba.

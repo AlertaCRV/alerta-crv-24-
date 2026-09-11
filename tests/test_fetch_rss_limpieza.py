@@ -163,3 +163,58 @@ def test_truncado_con_caracter_de_elipsis_sola_sigue_funcionando_control():
 def test_texto_completo_no_truncado_no_se_detecta_control():
     texto = "El incendio fue controlado por los bomberos en su totalidad."
     assert _TRUNCADO_RE.search(texto) is None
+
+
+# --- _DESTACADOS_LANACIONWEB_RE: widget de titulares de lanacionweb.com ---
+
+def test_destacados_lanacionweb_se_elimina():
+    # Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): un articulo sobre
+    # un homicidio de hace 21 anos en Colombia (sin ninguna falla electrica)
+    # generaba tipo=infraestructura_electrica en Tachira solo por el
+    # titular "Colas y plantas resonando en frontera por apagones", parte
+    # del widget "Destacados" que lanacionweb.com pega al final de
+    # cualquier articulo, sin punto que lo separe de la firma del autor.
+    texto = (
+        "Berenice lucha por darle el ultimo adios a su hijo asesinado hace "
+        "21 anos. Un grupo armado lo asesino en La Gabarra, Norte de "
+        "Santander, Colombia. Jonathan Maldonado Destacados Camion pierde "
+        "parte de su carga en curva de La Petrolea En Tachira arranca este "
+        "lunes el ano escolar en 1.442 planteles Colas y plantas resonando "
+        "en frontera por apagones Vuelven agotarse reservas de alimento en "
+        "el refugio para animales"
+    )
+    limpio = _limpiar_texto(texto)
+    assert "apagones" not in limpio.lower()
+    assert "planteles" not in limpio.lower()
+    assert "berenice" in limpio.lower()
+
+
+def test_destacados_lanacionweb_segundo_cluster_barinas_se_elimina():
+    # Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): un articulo sobre
+    # comercio fronterizo en Cucuta (sin ninguna falla de agua) generaba
+    # tipo=infraestructura_agua en Barinas solo por los titulares "1.600
+    # familias de Acarigua tienen cinco meses sin agua por tuberia" y
+    # "Fenatev-Barinas: Directores presionan...", ambos parte del mismo
+    # widget "Destacados".
+    texto = (
+        "Buscan alternativas para frenar caida de consumidores venezolanos "
+        "en Cucuta. Fenalco senalo que las ventas en Cucuta han disminuido. "
+        "Jonathan Maldonado Destacados Alcaldia de San Cristobal avanza en "
+        "la recuperacion integral de Puerta del Sol 1.600 familias de "
+        "Acarigua tienen cinco meses sin agua por tuberia Fenatev-Barinas: "
+        "Directores presionan para obligar a docentes a incorporarse antes "
+        "de terminar las vacaciones"
+    )
+    limpio = _limpiar_texto(texto)
+    assert "sin agua" not in limpio.lower()
+    assert "barinas" not in limpio.lower()
+    assert "cucuta" in limpio.lower()
+
+
+def test_destacados_como_palabra_normal_no_se_elimina_control():
+    # Control: "destacados" en minuscula, dentro de una oracion real (no
+    # como el widget, que siempre aparece con mayuscula inicial pegado a
+    # otra palabra capitalizada), no debe activar el recorte.
+    texto = "Entre los oradores destacados estuvo el gobernador del estado."
+    limpio = _limpiar_texto(texto)
+    assert "gobernador" in limpio.lower()

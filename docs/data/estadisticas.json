@@ -1,30 +1,30 @@
 {
-  "actualizado": "2026-09-11T21:57:12.667386+00:00",
+  "actualizado": "2026-09-11T23:47:45.271339+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-11T16:30:00+00:00"
+    "hasta": "2026-09-11T15:34:42+00:00"
   },
-  "total_eventos": 358,
+  "total_eventos": 344,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
-    "infraestructura_electrica": 86,
+    "infraestructura_electrica": 83,
     "deslizamiento": 27,
     "colapso_estructural": 3,
-    "orden_publico": 70,
+    "orden_publico": 63,
     "salud_publica": 11,
     "crisis_migratoria": 5,
-    "incendio": 25,
+    "incendio": 24,
     "vialidad": 12,
-    "sismo": 11,
+    "sismo": 10,
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 16,
+    "infraestructura_agua": 15,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
-    "ataque_armado": 5
+    "ataque_armado": 4
   },
   "ranking_estados": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "estado": "Lara",
-      "total": 29,
+      "total": 27,
       "confirmados": 1
     },
     {
@@ -44,12 +44,12 @@
     },
     {
       "estado": "Barinas",
-      "total": 25,
+      "total": 24,
       "confirmados": 1
     },
     {
       "estado": "Miranda",
-      "total": 20,
+      "total": 19,
       "confirmados": 2
     },
     {
@@ -58,13 +58,8 @@
       "confirmados": 0
     },
     {
-      "estado": "Carabobo",
-      "total": 18,
-      "confirmados": 1
-    },
-    {
       "estado": "Anzoategui",
-      "total": 18,
+      "total": 17,
       "confirmados": 0
     },
     {
@@ -73,18 +68,18 @@
       "confirmados": 1
     },
     {
+      "estado": "Carabobo",
+      "total": 15,
+      "confirmados": 1
+    },
+    {
       "estado": "Bolivar",
-      "total": 16,
+      "total": 15,
       "confirmados": 1
     },
     {
       "estado": "Sucre",
       "total": 14,
-      "confirmados": 0
-    },
-    {
-      "estado": "Tachira",
-      "total": 13,
       "confirmados": 0
     },
     {
@@ -105,6 +100,11 @@
     {
       "estado": "La Guaira",
       "total": 10,
+      "confirmados": 0
+    },
+    {
+      "estado": "Tachira",
+      "total": 9,
       "confirmados": 0
     },
     {
@@ -141,18 +141,13 @@
       "estado": "Cojedes",
       "total": 1,
       "confirmados": 0
-    },
-    {
-      "estado": "Amazonas",
-      "total": 1,
-      "confirmados": 0
     }
   ],
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 7,
-      "orden_publico": 5,
+      "orden_publico": 2,
       "inundacion": 3,
       "vialidad": 1,
       "incendio": 1
@@ -160,7 +155,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 6,
+      "orden_publico": 4,
       "infraestructura_electrica": 5,
       "sismo": 1,
       "deslizamiento": 1,
@@ -211,7 +206,7 @@
       "infraestructura_electrica": 5,
       "vialidad": 4,
       "orden_publico": 6,
-      "infraestructura_agua": 2,
+      "infraestructura_agua": 1,
       "salud_publica": 1
     },
     "Sucre": {
@@ -221,7 +216,7 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 8,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 2,
@@ -230,7 +225,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 7,
-      "orden_publico": 4,
+      "orden_publico": 3,
       "escasez_combustible": 1,
       "incendio": 2,
       "inundacion": 1,
@@ -246,11 +241,9 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "infraestructura_electrica": 3,
-      "incendio": 1,
+      "infraestructura_electrica": 1,
       "orden_publico": 1,
       "inundacion": 2,
-      "ataque_armado": 1,
       "sismo": 1
     },
     "Monagas": {
@@ -268,7 +261,7 @@
       "explosion": 1,
       "deslizamiento": 2,
       "inundacion": 5,
-      "orden_publico": 5,
+      "orden_publico": 4,
       "ataque_armado": 1,
       "emergencia_metro": 1
     },
@@ -333,16 +326,13 @@
     "Delta Amacuro": {
       "derrame_petrolero": 1,
       "inundacion": 1
-    },
-    "Amazonas": {
-      "sismo": 1
     }
   },
   "por_severidad": {
     "alto": 18,
-    "critico": 25,
-    "sin_clasificar": 302,
-    "medio": 5,
+    "critico": 26,
+    "sin_clasificar": 288,
+    "medio": 4,
     "bajo": 8
   },
   "serie_mensual_por_tipo": {
@@ -358,8 +348,8 @@
     },
     "infraestructura_electrica": {
       "2026-07": 5,
-      "2026-08": 64,
-      "2026-09": 17
+      "2026-08": 63,
+      "2026-09": 15
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -372,8 +362,8 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 52,
-      "2026-09": 16
+      "2026-08": 50,
+      "2026-09": 11
     },
     "salud_publica": {
       "2026-07": 1,
@@ -386,7 +376,7 @@
     },
     "incendio": {
       "2026-07": 3,
-      "2026-08": 21,
+      "2026-08": 20,
       "2026-09": 1
     },
     "vialidad": {
@@ -395,7 +385,7 @@
     },
     "sismo": {
       "2026-08": 8,
-      "2026-09": 3
+      "2026-09": 2
     },
     "escasez_combustible": {
       "2026-08": 1
@@ -409,7 +399,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 4
+      "2026-09": 3
     },
     "accidente_transporte": {
       "2026-08": 1
@@ -422,7 +412,7 @@
       "2026-09": 1
     },
     "ataque_armado": {
-      "2026-08": 5
+      "2026-08": 4
     }
   }
 }
