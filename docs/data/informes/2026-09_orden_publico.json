@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-10T03:56:18.424094+00:00",
-  "actualizado_hasta": "2026-09-09T23:58:51.769962+00:00",
-  "total_eventos": 12,
+  "generado": "2026-09-11T03:53:35.034917+00:00",
+  "actualizado_hasta": "2026-09-10T19:36:39.738738+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 52,
-    "actual": 12
+    "actual": 15
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 12 eventos de orden público, una notable reducción frente a los 52 eventos del mes anterior (agosto 2026). Esta disminución se refleja en la menor cantidad de concentraciones y manifestaciones documentadas por los medios y observatorios del país.\n\nEl 9 de septiembre, familiares de presos políticos se congregaron en el centro de Caracas, específicamente en las inmediaciones de la Defensoría del Pueblo (Plaza Morelo), como parte de la segunda jornada de la “Ruta de las Respuestas Pendientes” organizada por el Comité por la Libertad de los Presos Políticos (Clippve) (La Nacion). La misma jornada fue cubierta también por La Prensa de Lara, que destacó la exigencia de que la libertad de los detenidos no quede relegada ante negociaciones económicas (La Prensa de Lara). Ambas fuentes coinciden en que la movilización buscó presionar a la Fiscalía para obtener respuestas concretas.\n\nEl 3 de septiembre se registraron varias protestas en distintas regiones: en Mérida, ciudadanos y ONG manifestaron pacíficamente frente al Ministerio Público la exigencia de sobreseimiento definitivo de causas por motivos políticos (El Pitazo). En la capital, militantes de Vente Venezuela se concentraron en las parroquias Sucre, San Pedro y La Vega, reclamando la convocatoria de un cronograma electoral y la libertad de los presos políticos (Primicia). En el estado Portuguesa, la dirigente Ymara García encabezó una protesta de jubilados y pensionados que demandaban pensiones dignas, mejor atención en salud y la recuperación de beneficios del IVSS (Portuguesa Reporta). Paralelamente, jubilados de Cantv en Acarigua denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con una huelga de hambre si no se atienden sus reclamos (Portuguesa Reporta).\n\nAdemás de las manifestaciones, se reportaron problemas de infraestructura que impactaron la seguridad pública: en Lara colapsó la base del puente Yacural después de años de denuncias de deterioro (La Nacion). En Barinas, el traslado de reclusos tras los disturbios en Injuba agravó las condiciones de hacinamiento en los centros penitenciarios (La Nacion). Para contextualizar la actividad protestante, el Observatorio Venezolano de Conflictividad Social informó que en julio de 2026 se registraron 509 protestas, equivalentes a un promedio de 16 manifestaciones diarias, lo que representa un aumento del 246 % respecto al mismo mes de 2025 (El Impulso).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 15 eventos de orden público, una notable disminución frente a los 52 eventos del período anterior (agosto de 2026). Esta reducción se refleja en la menor cantidad de manifestaciones y alteraciones reportadas durante el período analizado.\n\nEntre los incidentes de infraestructura que impactaron la seguridad pública, se continuaron reportando fallas eléctricas que dañaron transformadores y afectaron a la ciudadanía (Diario La Nacion). En el estado Lara, colapsó la base del puente Yacural tras años de denuncias de deterioro (Diario La Nacion). Asimismo, se informó el traslado de reclusos en Barinas luego de los disturbios en Injúba, lo que agravó las condiciones de hacinamiento en los centros penitenciarios (Diario La Nacion).\n\nLas movilizaciones relacionadas con la situación de los presos políticos se mantuvieron activas. El 9 de septiembre, familiares de presos políticos se concentraron en el centro de Caracas, frente a la Defensoría del Pueblo, como parte de la segunda jornada de la “Ruta de las Respuestas Pendientes” (Diario La Nacion). En Mérida, ciudadanos y organizaciones no gubernamentales protestaron frente al Ministerio Público exigiendo el sobreseimiento definitivo de causas por motivos políticos y el cierre de centros de detención arbitraria (El Pitazo). Además, en Caracas se realizó una marcha de familiares de presos políticos para reclamar que la libertad de sus seres queridos no quede relegada ante negociaciones económicas (La Prensa de Lara).\n\nEl 3 de septiembre, militantes de Vente Venezuela se concentraron en las parroquias Sucre, San Pedro y La Vega, al oeste de la capital, demandando la realización de un cronograma electoral y la libertad de todos los presos políticos (Primicia). Esta asamblea se organizó a partir de las 5:00 p.m. y contó con la difusión de imágenes y videos en redes sociales.\n\nEn el estado Portuguesa, los jubilados y pensionados intensificaron sus protestas. La dirigente Ymara García reclamó pensiones dignas, mejor atención en salud y la recuperación de beneficios para jubilados del IVSS (Portuguesa Reporta). Paralelamente, jubilados de Cantv denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con iniciar una huelga de hambre si no se atienden sus demandas (Portuguesa Reporta).\n\nEl Observatorio Venezolano de Conflictividad Social informó que en julio de 2026 se registraron 509 protestas, con un promedio de 16 manifestaciones diarias, lo que representa un aumento del 246 % respecto al mismo mes de 2025 (El Impulso; El Pitazo). Aunque estos datos corresponden al mes anterior, ilustran la tendencia de alta actividad de protesta que se ha venido manteniendo en el país.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -54,12 +54,20 @@
       "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
     },
     {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/619638/las-calles-de-venezuela-siguen-reclamando-luz-agua-y-justicia/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/04/polichacao-impidio-la-marcha-de-la-coalicion-sindical-hacia-el-hotel-marriott/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/10/los-jubilados-de-las-salinas-de-araya-cumplieron-200-dias-de-protestas-a-la-espera-de-respuestas-a-sus-reclamos/"
     }
   ]
 }

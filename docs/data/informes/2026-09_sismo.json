@@ -3,19 +3,27 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-09-10T19:37:18.667189+00:00",
-  "actualizado_hasta": "2026-09-10T19:36:24.846330+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-11T03:53:48.243974+00:00",
+  "actualizado_hasta": "2026-09-10T23:54:13.762413+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 8,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento sísmico relevante, lo que representa una notable disminución respecto al mes anterior, en el que se contabilizaron ocho eventos (Comparación con el período anterior (2026-08): 8 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único caso documentado corresponde a graves daños estructurales detectados en varios planteles escolares de la región de Lara, los cuales fueron señalados como consecuencia de la actividad sísmica reciente (La Prensa de Lara).\\n\\nAnte esta situación, la Federación Venezolana de Maestros (FVM) emitió un comunicado este jueves exigiendo una inspección técnica obligatoria de los planteles antes del inicio del año escolar 2026‑2027, argumentando que la seguridad física de estudiantes, docentes y personal administrativo está comprometida (La Prensa de Lara). La organización sindical también resaltó las condiciones laborales precarias, los bajos salarios y la falta de recursos como factores que agravan la vulnerabilidad de la comunidad educativa (La Prensa de Lara).\\n\\nEste llamado a la inspección técnica subraya la necesidad de acciones preventivas ante la amenaza sísmica, a la vez que evidencia la reducción de incidentes sísmicos en el país durante el período analizado, pasando de ocho eventos en agosto a solo uno en septiembre (Comparación con el período anterior (2026-08): 8 evento(s) registrados entonces vs. 1 en este período).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres sismos, una disminución respecto a los ocho eventos reportados en agosto del mismo año (comparación con el período anterior). La actividad sísmica se concentró en dos zonas fronterizas de América del Sur.\n\nEl 10 de septiembre se sintieron dos movimientos telúricos cerca de la frontera colombo‑venezolana, con magnitudes de 4,0 y 3,5, según informó la Fundación Venezolana de Investigaciones Sismológicas (Funvisis) (El Pitazo). Ambos eventos fueron percibidos en la mañana, aunque no se reportaron daños materiales ni víctimas.\n\nEse mismo día, la zona amazónica de la frontera entre Ecuador y Perú experimentó tres sismos, con magnitudes de 5,0, 4,1 y 5,4, cuyo epicentro se ubicó en Santa María de Nieva, provincia de Condorcanqui (La Prensa de Lara). Las autoridades locales indicaron que, hasta el momento, no se habían registrado daños materiales ni heridos como consecuencia de estos temblores.\n",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/funvisis-registra-dos-sismos-cerca-de-la-frontera-colombo-venezolana-este-10-de-septiembre/"
+    },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/"
     }
   ]
 }
