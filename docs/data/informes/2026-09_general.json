@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-10T03:54:44.307794+00:00",
-  "actualizado_hasta": "2026-09-09T23:58:51.769962+00:00",
-  "total_eventos": 45,
+  "generado": "2026-09-11T08:25:01.281495+00:00",
+  "actualizado_hasta": "2026-09-10T23:54:13.762413+00:00",
+  "total_eventos": 54,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 272,
-    "actual": 45
+    "actual": 54
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 45 eventos de emergencia, una disminución notable respecto a los 272 eventos del mes anterior, agosto de 2026. Esta reducción se refleja en la menor cantidad de incidentes reportados en distintas categorías, aunque persisten situaciones críticas que requieren atención inmediata.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, donde a las 5:10 a.m. del miércoles se produjo la colisión de dos autobuses en el kilómetro 133 de la Autopista Regional del Centro (ARC), resultando en tres muertos y un herido (El Periodico de Monagas). Las autoridades calificaron la severidad del siniestro como crítica y se activaron los protocolos de respuesta de emergencia.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se registró una emergencia vial y habitacional en El Valle. Cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables, mientras se mantiene el cierre preventivo del paso vehicular ante el riesgo de derrumbe (Diario La Nacion (Tachira)).\n\nDurante el mismo período se reportaron apagones en al menos tres regiones del oeste del país, afectando a Mérida, Barinas y Táchira, con un fuerte bajón de luz en la capital, Caracas (Diario La Nacion (Tachira)). Asimismo, la crisis eléctrica se manifestó en el estado Bolívar, donde frecuentes cortes afectan a la población, y en Lara, donde los apagones se dispararon un 637 % respecto al año anterior (El Impulso). Otros fenómenos meteorológicos, como fuertes lluvias que provocaron inundaciones en Guanare (Portuguesa) y la llegada de una onda tropical que generó precipitaciones y descargas eléctricas en varias regiones, también fueron documentados (El Impulso).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 54 eventos de emergencia, una disminución notable respecto a los 272 eventos contabilizados en el mes anterior (comparación con el período anterior).\\n\\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde la colisión de dos autobuses de transporte público dejó tres muertos y un herido (El Periodico de Monagas). La gravedad del siniestro fue catalogada como crítica y generó una inmediata respuesta de los servicios de emergencia.\\n\\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se reportó una emergencia vial y habitacional en El Valle: cuatro familias continúan viviendo en una zona de riesgo y siete viviendas fueron desalojadas por daños irreparables, mientras se trabaja en la estabilización del terreno y el cierre preventivo del paso vehicular (Diario La Nacion).\\n\\nLa crisis eléctrica se mantuvo como una de las principales problemáticas del país. En el estado Lara, los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes registrados en agosto y más de 2.874 horas sin suministro eléctrico (El Impulso). Asimismo, en Bolívar los frecuentes cortes afectan gravemente a la población, especialmente en zonas mineras, y se reportaron explosiones de transformadores que agravan la situación (El Impulso).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -32,6 +32,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/berenice-lucha-por-darle-el-ultimo-adios-a-su-hijo-asesinado-hace-21-anos/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -82,8 +86,16 @@
       "link": "https://elpitazo.net/caracas/509-protestas-se-registraron-en-julio-en-venezuela-segun-observatorio-de-conflictividad-social/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/funvisis-registra-dos-sismos-cerca-de-la-frontera-colombo-venezolana-este-10-de-septiembre/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/comunidad-pago-parte-del-costo-de-nuevo-transformador-electrico-para-la-6ta-carrera-sur-de-el-tigre/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -106,6 +118,14 @@
       "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
     },
     {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/"
+    },
+    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
     },
@@ -120,6 +140,10 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tragico-choque-multiple-dejo-una-mujer-fallecida-y-un-herido-en-los-haticos/"
     },
     {
       "nombre": "Nuevo Dia (Falcon)",
@@ -140,30 +164,6 @@
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/09/venezuela-105/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619563/a-caracas-llegaron-los-apagones-zonas-de-la-candelaria-han-pasado-hasta-ocho-dias-sin-luz/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
     }
   ]
 }
