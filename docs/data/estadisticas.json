@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-10T23:54:44.422190+00:00",
+  "actualizado": "2026-09-11T12:56:37.412657+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-10T19:14:34+00:00"
+    "hasta": "2026-09-11T04:16:32+00:00"
   },
-  "total_eventos": 354,
+  "total_eventos": 356,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
@@ -12,7 +12,7 @@
     "deslizamiento": 26,
     "colapso_estructural": 3,
     "orden_publico": 69,
-    "salud_publica": 10,
+    "salud_publica": 11,
     "crisis_migratoria": 5,
     "incendio": 25,
     "vialidad": 12,
@@ -20,7 +20,7 @@
     "escasez_combustible": 1,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 15,
+    "infraestructura_agua": 16,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 57,
+      "total": 58,
       "confirmados": 4
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "estado": "Barinas",
-      "total": 24,
+      "total": 25,
       "confirmados": 1
     },
     {
@@ -195,7 +195,7 @@
       "emergencia_metro": 2,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
-      "salud_publica": 2
+      "salud_publica": 3
     },
     "Trujillo": {
       "inundacion": 1,
@@ -211,7 +211,7 @@
       "infraestructura_electrica": 5,
       "vialidad": 4,
       "orden_publico": 6,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "salud_publica": 1
     },
     "Sucre": {
@@ -340,7 +340,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 25,
-    "sin_clasificar": 298,
+    "sin_clasificar": 300,
     "medio": 5,
     "bajo": 8
   },
@@ -376,7 +376,8 @@
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 9
+      "2026-08": 9,
+      "2026-09": 1
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -407,7 +408,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 3
+      "2026-09": 4
     },
     "accidente_transporte": {
       "2026-08": 1
