@@ -109,9 +109,8 @@ def test_tipos_distintos_no_se_comparan():
 
 def test_correos_institucionales_no_generan_falsos_positivos_por_link():
     # Los links de reportes de filial son una busqueda de Gmail por id de
-    # mensaje (ver attachments_filial.py) -- dos reportes de filial
-    # DISTINTOS podrian compartir tokens del id de busqueda sin ser el
-    # mismo evento en absoluto.
+    # mensaje -- dos reportes de filial DISTINTOS podrian compartir tokens
+    # del id de busqueda sin ser el mismo evento en absoluto.
     a = _alerta(
         "crisis_migratoria", "Reporte de personas desplazadas", "crisis_migratoria::Anzoategui::2026-07-29",
         "2026-07-29T17:55:40+00:00", "2026-07-29T17:55:40+00:00", "Piritu",

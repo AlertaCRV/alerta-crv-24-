@@ -659,8 +659,8 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
             {"nombre": m["fuente_nombre"], "link": m["link"], "fecha": m["fecha"]}
             for m in miembros_aprobados
         ],
-        # True si ALGUNA fuente aprobada es un reporte de filial (ver
-        # attachments_filial.py) -- render.py lo usa para mostrar un
+        # True si ALGUNA fuente aprobada es un reporte de filial --
+        # render.py lo usa para mostrar un
         # distintivo y el resumen consolidado en vez del formato generico,
         # ya que a diferencia de una fuente RSS el enlace de un correo de
         # Gmail no es accesible para el publico.
@@ -760,8 +760,8 @@ def _manejar_falla_temporal(evento, candidatos):
 
     Retener solo tiene sentido si el mismo cluster puede reaparecer en una
     corrida futura -- cierto para RSS (el articulo sigue en la ventana de
-    busqueda) pero FALSO para correos institucionales: fetch_gmail.py marca
-    cada correo como leido apenas lo procesa una vez, asi que si se retiene
+    busqueda) pero FALSO para correos institucionales: el fetcher de correo
+    marcaba cada correo como leido apenas lo procesaba una vez, asi que si se retiene
     aqui, ese reporte nunca vuelve a generarse y quedaria retenido para
     siempre (bug real encontrado probando el reporte de Filial Puerto
     Piritu: quedo con 1 intento fallido sin forma de llegar nunca al

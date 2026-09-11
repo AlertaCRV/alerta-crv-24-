@@ -126,9 +126,9 @@ _TOKEN_FECHA_RE = re.compile(
 def _tokens_distintivos_de_link(link):
     """Tokens del path de la URL (sin dominio) de 5+ caracteres, sin
     numeros sueltos (fechas) ni palabras genericas de _TOKENS_RUIDO.
-    Los links de correo institucional (mail.google.com, ver
-    attachments_filial.py) son una busqueda por id de mensaje, no una URL
-    descriptiva del hecho -- no aportan ninguna señal util aqui."""
+    Los links de correo institucional (mail.google.com) son una busqueda
+    por id de mensaje, no una URL descriptiva del hecho -- no aportan
+    ninguna señal util aqui."""
     if "mail.google.com" in link:
         return set()
     partes = link.split("/", 3)
