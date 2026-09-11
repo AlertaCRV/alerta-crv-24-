@@ -123,6 +123,31 @@ _PIE_LEGAL_EDITORIAL_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 
+# lanacionweb.com (Diario La Nacion Tachira) agrega, al final de CUALQUIER
+# articulo que scrapea -- sin importar la firma/agencia original (EFE,
+# Efecto Cocuyo, El Impulso, Runrun.es, el propio medio...) -- un widget de
+# titulares "Destacados" del sitio, pegado directamente tras la firma del
+# autor sin ningun punto que lo separe ("Jonathan Maldonado Destacados
+# Camion pierde parte de su carga en curva de La Petrolea En Tachira
+# arranca este lunes el ano escolar..."). Esos titulares, ajenos al
+# articulo real, pueden contener palabras clave de tipo/ubicacion de OTRAS
+# notas -- casos reales (11-09-2026, PASADO_POR_FALLA_TECNICA): un articulo
+# sobre un homicidio de hace 21 anos en Colombia (sin ninguna falla
+# electrica) disparaba tipo=infraestructura_electrica en Tachira solo por
+# el titular "Colas y plantas resonando en frontera por apagones"; un
+# articulo sobre comercio fronterizo en Cucuta (sin ninguna falla de agua)
+# disparaba tipo=infraestructura_agua en Barinas solo por los titulares
+# "1.600 familias de Acarigua tienen cinco meses sin agua por tuberia" y
+# "Fenatev-Barinas: Directores presionan...". Se verifico contra las 358
+# fuentes de data/historico_fuentes_texto.jsonl que las 18 apariciones de
+# "Destacados" siguen siempre este mismo patron (una palabra capitalizada
+# pegada justo despues, sin punto ni coma de por medio) y ninguna es uso
+# legitimo de la palabra dentro de una oracion real.
+_DESTACADOS_LANACIONWEB_RE = re.compile(
+    r"\bDestacados\s+(?=[A-ZÁÉÍÓÚÑ]).*$",
+    re.DOTALL,
+)
+
 # Muchos feeds RSS truncan el resumen del articulo y marcan el corte con
 # puntos suspensivos (a veces como caracter unico "…", a veces como
 # "[...]", a veces como el caracter unico envuelto en corchetes "[…]" --
@@ -207,6 +232,7 @@ def _limpiar_texto(texto):
     texto = _BOILERPLATE_RE.sub("", texto)
     texto = _ARTICULOS_RELACIONADOS_RE.sub("", texto)
     texto = _PIE_LEGAL_EDITORIAL_RE.sub("", texto)
+    texto = _DESTACADOS_LANACIONWEB_RE.sub("", texto)
     texto = _AUTODESCRIPCION_LA_PRENSA_DE_LARA_RE.sub("", texto)
     texto = _NOMBRE_ESTADO_SEGUIDO_DE_PLECA_RE.sub("", texto)
     texto = _HTML_TAG_RE.sub(" ", texto)

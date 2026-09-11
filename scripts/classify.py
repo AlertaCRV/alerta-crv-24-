@@ -84,8 +84,19 @@ LISTA_NEGRA_POR_ESTADO = {
     # la "Avenida Carabobo" local, generaban una alerta duplicada en el
     # estado Carabobo sin que el articulo mencionara ese estado en absoluto
     # (mismo patron que "avenida bolivar" para Bolivar, ver abajo).
+    #
+    # Ampliada (11-09-2026, PASADO_POR_FALLA_TECNICA): "Parque Carabobo" es
+    # una plaza en el centro de Caracas (junto al Ministerio Publico), sede
+    # habitual de protestas y marchas de la capital -- verificado contra
+    # las 358 fuentes de data/historico_fuentes_texto.jsonl que las 11
+    # apariciones de la frase son todas en Caracas/Distrito Capital (nunca
+    # el estado Carabobo). Un articulo real sobre familiares de presos
+    # politicos marchando "por la avenida Mexico hacia... Parque Carabobo"
+    # (sin ninguna otra mencion del estado Carabobo) generaba una alerta
+    # duplicada en Carabobo -- el mismo hecho ya se publicaba correctamente
+    # en Distrito Capital via la mencion de "Caracas".
     "Carabobo": ["carabobo fc", "avenida carabobo", "avenidas carabobo",
-                 "av. carabobo", "av carabobo"],
+                 "av. carabobo", "av carabobo", "parque carabobo"],
     # Caso real (31-07-2026): un incendio en el CCCT ("ubicado en el
     # municipio Chacao") se publicaba como Distrito Capital porque el
     # articulo tambien menciona "Caracas" (alias de Distrito Capital) en
@@ -488,7 +499,19 @@ def _es_derrumbe_atribuido_a_otro_estado(texto_norm, ubicacion):
 # en el mismo corpus: "en los municipios Ayacucho... del estado Tachira"),
 # asi que se usa "Coracora" (localidad peruana sin colision con ningun
 # topónimo venezolano) como marcador decisivo.
-_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS = ["san jose del palmar", "coracora"]
+#
+# Ampliado (11-09-2026, PASADO_POR_FALLA_TECNICA): tres sismos con epicentro
+# en "Santa Maria de Nieva", provincia peruana de Condorcanqui, en la
+# "region Amazonas" -- una region geografica transfronteriza (Ecuador-Peru-
+# Brasil-Colombia) homonima del ESTADO VENEZOLANO Amazonas -- generaban un
+# sismo nuevo en Amazonas (Venezuela) sin ninguna mencion real del pais.
+# "Santa Maria de Nieva"/"Condorcanqui" son topónimos peruanos sin colision
+# con ningun lugar venezolano (verificado contra las 358 fuentes de data/
+# historico_fuentes_texto.jsonl).
+_EPICENTROS_SISMO_EXTRANJERO_DECISIVOS = [
+    "san jose del palmar", "coracora",
+    "santa maria de nieva", "condorcanqui",
+]
 
 
 def _es_sismo_extranjero_con_epicentro_conocido_sin_municipio(texto_norm, municipio):
@@ -1624,6 +1647,26 @@ def _es_agua_restablecida_sin_falla_actual(texto_norm):
     return any(m in texto_norm for m in _MARCADORES_AGUA_RESTABLECIDA)
 
 
+# Mismo patron que _es_agua_restablecida_sin_falla_actual, para
+# infraestructura_electrica. Caso real (11-09-2026, PASADO_POR_FALLA_
+# TECNICA): "Luego de sumar dos semanas con fallas electricas derivadas del
+# dano de un transformador... finalmente fue instalado un nuevo equipo" --
+# la falla YA fue reparada el mismo dia que describe el articulo (un
+# anuncio positivo de resolucion, igual en espiritu a la entrega de equipos
+# de Corpoelec/Hidrocapital sin falla), no una falla en curso. A diferencia
+# de _es_anuncio_corpoelec_sin_falla (que exige AUSENCIA total de evidencia
+# fuerte), aqui la evidencia fuerte de la falla SI esta presente ("fallas
+# electricas") -- lo que falta es que siga vigente, senalado por el propio
+# texto con "finalmente fue instalado". Se verifico contra las 358 fuentes
+# de data/historico_fuentes_texto.jsonl que la frase es exclusiva de este
+# articulo.
+_MARCADORES_FALLA_ELECTRICA_RESUELTA = ["finalmente fue instalado", "finalmente fue instalada"]
+
+
+def _es_falla_electrica_ya_resuelta_sin_falla_actual(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_FALLA_ELECTRICA_RESUELTA)
+
+
 # Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): un decreto de la
 # Gobernacion de Nueva Esparta declarando el 8 de septiembre dia no laborable
 # por la festividad de la Virgen del Valle mencionaba, como dato historico,
@@ -2057,6 +2100,27 @@ _MARCADORES_RECLAMO_TERCERO_MULTIESTADO = [
     # especifica cerca de esa unica mencion.
     "abarcaran los estados", "abarcarán los estados",
     "afectaran las regiones de", "afectarán las regiones de",
+    # Ampliado (11-09-2026, PASADO_POR_FALLA_TECNICA): dos coberturas
+    # distintas del mismo informe MENSUAL (no semestral) del OVCS sobre
+    # julio de 2026 usan frases de cierre de lista propias, sin "informe
+    # del" antes del nombre del observatorio -- "Los estados Bolivar (60),
+    # Anzoategui (49), Miranda (49) y Lara (43) lideran el indice de
+    # protestas" (El Impulso) y "El estado Bolivar encabezo la lista de
+    # conflictividad territorial con 60 manifestaciones" (Runrun.es) --
+    # ninguna coincidia con ningun marcador existente, asi que
+    # _es_articulo_resumen_multiestado_de_terceros() nunca se activaba y
+    # generaba alertas nuevas de orden_publico en Lara (dos veces, una por
+    # articulo) y Bolivar sin ningun hecho puntual de ese dia en ninguno de
+    # los dos.
+    "lideran el indice de protestas", "lideran el índice de protestas",
+    "encabezo la lista de conflictividad", "encabezó la lista de conflictividad",
+    # El mismo articulo de Runrun.es repite una SEGUNDA cifra agregada mas
+    # adelante ("El OVCS documento cuatro protestas reprimidas por cuerpos
+    # de seguridad durante julio en Bolivar, Distrito Capital y La Guaira"),
+    # a mas de 35 palabras del primer marcador -- fuera de su ventana de
+    # proximidad. Un marcador propio para este segundo cluster evita que
+    # Bolivar se cuele por esa mencion lejana.
+    "ovcs documento", "ovcs documentó",
 ]
 _MIN_ESTADOS_RESUMEN_MULTIESTADO = 5
 
@@ -2065,8 +2129,19 @@ def _es_articulo_resumen_multiestado_de_terceros(texto_norm, estados):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_RECLAMO_TERCERO_MULTIESTADO):
         return False
     encontrados = 0
-    for alias in estados.values():
-        candidatos = set(alias)
+    for nombre_estado, alias in estados.items():
+        # Ver bug real (11-09-2026): contar solo `alias` (formas cortas
+        # pensadas para hashtags, p.ej. "distritocapital"/"laguaira") sin el
+        # nombre completo normalizado ("distrito capital"/"la guaira", la
+        # forma en que casi siempre aparecen en prosa) subestimaba el
+        # numero de estados de un articulo-resumen real -- un caso con 6
+        # estados mencionados (incluyendo Distrito Capital y La Guaira solo
+        # por su nombre completo) contaba apenas 4, nunca alcanzaba el
+        # umbral de 5 y el articulo entero escapaba de este filtro. Debe
+        # coincidir exactamente con el conjunto de candidatos que ya usa
+        # _detectar_ubicacion_texto_plano() para no subestimar ni
+        # sobreestimar respecto a la deteccion real de ubicacion.
+        candidatos = set(alias) | {_normalizar(nombre_estado)}
         if any(_contiene_palabra_clave(texto_norm, c) for c in candidatos):
             encontrados += 1
             if encontrados >= _MIN_ESTADOS_RESUMEN_MULTIESTADO:
@@ -2150,9 +2225,26 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                     # articulo, no hay razon para descartar el estado por
                     # completo: se usa el texto completo como ventana,
                     # igual que ya se hace cuando la ubicacion viene de un
-                    # hashtag (ventana=None).
+                    # hashtag (ventana=None). Pero se usa nombre_estado (el
+                    # alias que SI hizo match, p.ej. "Caracas"), NUNCA
+                    # estado_real (el remapeo, p.ej. Miranda via "Chacao") --
+                    # sin ninguna ventana que confirme que la frase de la
+                    # lista negra esta realmente cerca de evidencia de tipo,
+                    # no hay base para preferir el remapeo sobre el alias
+                    # original. Caso real (11-09-2026, PASADO_POR_FALLA_
+                    # TECNICA): un articulo sobre una marcha HOY en Plaza
+                    # O'Leary/Miraflores (Caracas) que solo de pasada
+                    # menciona "Plaza Bolivar de Chacao" para una vigilia
+                    # DISTINTA el domingo siguiente se publicaba como
+                    # Miranda -- ninguna de las dos menciones (ni "Chacao"
+                    # ni "Caracas") tenia un tipo cerca dentro de la ventana
+                    # de proximidad, asi que el remapeo a Miranda no tenia
+                    # mas base real que la alternativa (Distrito Capital,
+                    # que es ademas el evento que el articulo SI describe).
                     if not any(_contiene_palabra_clave(texto_norm, p) for p in palabras_tipo):
                         break
+                    resultado.append((nombre_estado, None))
+                    break
                 resultado.append((estado_real, ventana))
                 break
 
@@ -2740,6 +2832,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "infraestructura_electrica" and _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_falla_electrica_ya_resuelta_sin_falla_actual(texto_completo_norm):
                     break
                 if tipo == "explosion" and _es_cartucho_lacrimogeno_sin_explosivo_real(texto_completo_norm):
                     break
