@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-12T08:47:53.466351+00:00",
+  "actualizado": "2026-09-12T17:55:28.353090+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-12T00:45:00+00:00"
+    "hasta": "2026-09-12T16:14:02+00:00"
   },
-  "total_eventos": 348,
+  "total_eventos": 349,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
-    "infraestructura_electrica": 84,
+    "infraestructura_electrica": 85,
     "deslizamiento": 27,
     "colapso_estructural": 3,
     "orden_publico": 63,
@@ -84,7 +84,7 @@
     },
     {
       "estado": "Monagas",
-      "total": 13,
+      "total": 14,
       "confirmados": 0
     },
     {
@@ -249,7 +249,7 @@
       "sismo": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "salud_publica": 1,
       "vialidad": 1,
       "infraestructura_agua": 2,
@@ -333,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 26,
-    "sin_clasificar": 291,
+    "sin_clasificar": 292,
     "medio": 4,
     "bajo": 9
   },
@@ -351,7 +351,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 63,
-      "2026-09": 16
+      "2026-09": 17
     },
     "deslizamiento": {
       "2026-07": 3,
