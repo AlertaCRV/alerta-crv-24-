@@ -2296,11 +2296,23 @@
     "ultima_vez": "2026-09-12T12:26:04.077916+00:00"
   },
   "infraestructura_electrica::Monagas::2026-09-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-12T20:23:38.950985+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-12T22:31:43.727230+00:00"
   },
   "orden_publico::Sucre::2026-09-12": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-12T22:31:47.185697+00:00"
+  },
+  "infraestructura_agua::Sucre::2026-09-12": {
     "intentos": 1,
-    "ultima_vez": "2026-09-12T20:23:42.403603+00:00"
+    "ultima_vez": "2026-09-12T22:31:50.495164+00:00"
+  },
+  "escasez_combustible::Bolivar::2026-09-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-12T22:31:54.118895+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-12T22:31:57.503772+00:00"
   }
 }
