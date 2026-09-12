@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Miranda::2026-09-09": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-09T12:01:24.380376+00:00",
-    "fecha_evento_temprana": "2026-09-09T00:00:22+00:00",
-    "municipio": "Baruta"
-  },
   "infraestructura_electrica::Distrito Capital::2026-09-09": {
     "severidad": "sin_clasificar",
     "confirmado": false,
