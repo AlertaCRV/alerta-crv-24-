@@ -2290,5 +2290,17 @@
   "deslizamiento::Monagas::2026-09-12": {
     "intentos": 1,
     "ultima_vez": "2026-09-12T00:02:19.132274+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-09-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-12T12:25:56.852965+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-12T12:26:00.585664+00:00"
+  },
+  "infraestructura_electrica::Lara::2026-09-12": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-12T12:26:04.077916+00:00"
   }
 }
