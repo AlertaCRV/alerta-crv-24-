@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-12T17:55:28.353090+00:00",
+  "actualizado": "2026-09-12T20:23:53.388969+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-12T16:14:02+00:00"
+    "hasta": "2026-09-12T19:00:44+00:00"
   },
-  "total_eventos": 349,
+  "total_eventos": 351,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
     "infraestructura_electrica": 85,
     "deslizamiento": 27,
     "colapso_estructural": 3,
-    "orden_publico": 63,
+    "orden_publico": 64,
     "salud_publica": 11,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 16,
+    "infraestructura_agua": 17,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
@@ -29,7 +29,7 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 59,
+      "total": 60,
       "confirmados": 4
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "estado": "Sucre",
-      "total": 14,
+      "total": 15,
       "confirmados": 0
     },
     {
@@ -181,7 +181,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "incendio": 9,
       "vialidad": 2,
       "infraestructura_electrica": 9,
@@ -214,7 +214,7 @@
       "inundacion": 3,
       "orden_publico": 6,
       "infraestructura_electrica": 4,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 2
     },
     "Anzoategui": {
       "infraestructura_electrica": 8,
@@ -333,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 26,
-    "sin_clasificar": 292,
+    "sin_clasificar": 294,
     "medio": 4,
     "bajo": 9
   },
@@ -365,7 +365,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 50,
-      "2026-09": 11
+      "2026-09": 12
     },
     "salud_publica": {
       "2026-07": 1,
@@ -402,7 +402,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 4
+      "2026-09": 5
     },
     "accidente_transporte": {
       "2026-08": 1
