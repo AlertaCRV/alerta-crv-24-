@@ -3,19 +3,23 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-11T08:25:01.281495+00:00",
-  "actualizado_hasta": "2026-09-10T23:54:13.762413+00:00",
-  "total_eventos": 54,
+  "generado": "2026-09-12T00:03:16.833005+00:00",
+  "actualizado_hasta": "2026-09-11T21:57:11.769567+00:00",
+  "total_eventos": 49,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 272,
-    "actual": 54
+    "anterior": 267,
+    "actual": 49
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 54 eventos de emergencia, una disminución notable respecto a los 272 eventos contabilizados en el mes anterior (comparación con el período anterior).\\n\\nEl incidente vial más grave ocurrió en el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), donde la colisión de dos autobuses de transporte público dejó tres muertos y un herido (El Periodico de Monagas). La gravedad del siniestro fue catalogada como crítica y generó una inmediata respuesta de los servicios de emergencia.\\n\\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se reportó una emergencia vial y habitacional en El Valle: cuatro familias continúan viviendo en una zona de riesgo y siete viviendas fueron desalojadas por daños irreparables, mientras se trabaja en la estabilización del terreno y el cierre preventivo del paso vehicular (Diario La Nacion).\\n\\nLa crisis eléctrica se mantuvo como una de las principales problemáticas del país. En el estado Lara, los apagones se dispararon un 637 % respecto al año anterior, con 722 cortes registrados en agosto y más de 2.874 horas sin suministro eléctrico (El Impulso). Asimismo, en Bolívar los frecuentes cortes afectan gravemente a la población, especialmente en zonas mineras, y se reportaron explosiones de transformadores que agravan la situación (El Impulso).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 49 eventos de emergencia, una notable reducción frente a los 267 eventos contabilizados en el mes anterior (agosto 2026).\\n\\nEn el Distrito Capital, a las 5:10 a.m. del miércoles se produjo un siniestro vial en el kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos unidades de transporte público colisionaron. El accidente dejó tres muertos y un herido, y fue calificado como de severidad crítica (El Periodico de Monagas).\\n\\nEn el estado Zulia, específicamente en Los Haticos, un autobús de la línea Uni Zulia impactó primero contra un vehículo modelo Festiva y luego contra una motocicleta, atrapando a la conductora bajo la unidad colectiva. El choque resultó en el fallecimiento de una mujer y dejó a un hombre herido, también con severidad crítica (Noticia al Dia (Zulia)).\\n\\nOtros incidentes relevantes del período incluyen una emergencia vial y habitacional en el sector El Valle, parroquia Juan Germán Roscio, Capacho Nuevo, donde cuatro familias permanecen en zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Además, se registraron cortes eléctricos generalizados en varios estados, con un aumento de apagones en Lara y Bolívar que afectaron la vida cotidiana de la población (El Impulso).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tragico-choque-multiple-dejo-una-mujer-fallecida-y-un-herido-en-los-haticos/"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -32,10 +36,6 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
-    },
-    {
-      "nombre": "Diario La Nacion (Tachira)",
-      "link": "https://lanacionweb.com/frontera/berenice-lucha-por-darle-el-ultimo-adios-a-su-hijo-asesinado-hace-21-anos/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -58,8 +58,8 @@
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
     },
     {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/09/observatorio-de-conflictividad-registra-509-protestas-en-julio-un-promedio-de-16-diarias-9sep/"
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
     },
     {
       "nombre": "El Pitazo",
@@ -94,10 +94,6 @@
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
     },
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/comunidad-pago-parte-del-costo-de-nuevo-transformador-electrico-para-la-6ta-carrera-sur-de-el-tigre/"
-    },
-    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
     },
@@ -122,10 +118,6 @@
       "link": "https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/"
     },
     {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/"
-    },
-    {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/inspeccionan-afectaciones-por-lluvias-en-tachira/"
     },
@@ -142,10 +134,6 @@
       "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
     },
     {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/al-dia/tragico-choque-multiple-dejo-una-mujer-fallecida-y-un-herido-en-los-haticos/"
-    },
-    {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
     },
@@ -158,12 +146,28 @@
       "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
     },
     {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/nacionales/ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas"
+    },
+    {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/09/venezuela-105/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
     }
   ]
 }

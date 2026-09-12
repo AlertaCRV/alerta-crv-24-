@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-11T03:52:09.292009+00:00",
+  "generado": "2026-09-12T00:03:29.683472+00:00",
   "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 21,
+    "anterior": 20,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único incendio, una notable reducción frente a los 21 eventos reportados en agosto de 2026 (comparación con el período anterior). Esta disminución destaca la menor frecuencia de incidentes de fuego en el territorio durante el período analizado.\n\nEl único suceso registrado fue un incendio de gran magnitud que consumió una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital, el lunes 31 de agosto (El Siglo). La conflagración alcanzó los últimos pisos de la infraestructura, provocando la pérdida total de la instalación productiva.\n\nAnte la emergencia, el director nacional de Bomberos, Juan Carlos González, informó que se desplegaron aproximadamente 120 efectivos, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos de policía (El Siglo). La activación de los organismos de seguridad y gestión de riesgo permitió una respuesta coordinada para contener el fuego y evitar su propagación a áreas colindantes.\n\nA pesar de la magnitud del incendio, no se reportaron víctimas mortales ni heridos graves, y el número de incidentes de incendio se mantuvo bajo en comparación con el mes anterior, lo que indica una tendencia favorable en la gestión de riesgos y la prevención de incendios en la región (comparación con el período anterior).",
+  "narrativa": "En el mes de septiembre de 2026 se registró una única incidencia de incendio, lo que representa una notable reducción frente al mes anterior, en el que se contabilizaron veinte eventos (20 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único incendio reportado correspondió a un siniestro de gran magnitud que afectó una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital, el lunes 31 de agosto (El Siglo). La conflagración consumió los últimos pisos de la infraestructura, generando una emergencia que movilizó a los organismos de seguridad y gestión de riesgo.\\n\\nAnte la magnitud del fuego, el director nacional de Bomberos, Juan Carlos González, informó que aproximadamente 120 efectivos fueron desplegados en el sitio, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos policiales (El Siglo). La rápida intervención buscó contener la propagación y evitar mayores daños colaterales.\\n\\nA pesar de la gravedad del incidente en Palo Verde, la escasa cantidad de incendios en septiembre indica una tendencia a la baja en la ocurrencia de este tipo de emergencias durante el período analizado, lo que permite a las autoridades concentrar recursos en la prevención y en la atención de otras áreas críticas.",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",

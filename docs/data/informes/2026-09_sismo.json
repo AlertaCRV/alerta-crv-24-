@@ -3,15 +3,15 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-09-11T03:53:48.243974+00:00",
+  "generado": "2026-09-12T00:04:57.389444+00:00",
   "actualizado_hasta": "2026-09-10T23:54:13.762413+00:00",
-  "total_eventos": 3,
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 8,
-    "actual": 3
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron tres sismos, una disminución respecto a los ocho eventos reportados en agosto del mismo año (comparación con el período anterior). La actividad sísmica se concentró en dos zonas fronterizas de América del Sur.\n\nEl 10 de septiembre se sintieron dos movimientos telúricos cerca de la frontera colombo‑venezolana, con magnitudes de 4,0 y 3,5, según informó la Fundación Venezolana de Investigaciones Sismológicas (Funvisis) (El Pitazo). Ambos eventos fueron percibidos en la mañana, aunque no se reportaron daños materiales ni víctimas.\n\nEse mismo día, la zona amazónica de la frontera entre Ecuador y Perú experimentó tres sismos, con magnitudes de 5,0, 4,1 y 5,4, cuyo epicentro se ubicó en Santa María de Nieva, provincia de Condorcanqui (La Prensa de Lara). Las autoridades locales indicaron que, hasta el momento, no se habían registrado daños materiales ni heridos como consecuencia de estos temblores.\n",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos sísmicos, una disminución notable respecto al período anterior en el que se contabilizaron ocho sismos en agosto (8 evento(s) registrados entonces vs. 2 en este período).\\n\\nEl 10 de septiembre la Fundación Venezolana de Investigaciones Sismológicas (Funvisis) informó la ocurrencia de dos movimientos telúricos en la zona fronteriza entre Venezuela y Colombia. El primer sismo tuvo una magnitud de 4,0 y el segundo de 3,5, ambos percibidos en la mañana del mismo día (El Pitazo).\\n\\nNo se reportaron otros sismos de magnitud significativa ni daños materiales, heridos o víctimas fatales durante el resto del mes, lo que confirma la reducción de la actividad sísmica en comparación con el mes anterior.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -20,10 +20,6 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/maestros-inspeccion-planteles-escolar/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/mundo/tres-sismos-frontera-ecuador-peru/"
     }
   ]
 }
