@@ -89,6 +89,14 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "escasez_combustible",
+    "tipo_label": "Escasez de combustible",
+    "cerrado": false,
+    "generado": "2026-09-12T08:47:58.237081+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "emergencia_metro",
     "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
     "cerrado": false,

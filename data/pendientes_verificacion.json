@@ -2283,14 +2283,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-12T04:27:04.158435+00:00"
   },
-  "escasez_combustible::Bolivar::2026-09-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-12T04:27:07.496896+00:00"
-  },
-  "infraestructura_agua::Distrito Capital::2026-09-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-12T04:27:10.783778+00:00"
-  },
   "infraestructura_electrica::Monagas::2026-09-12": {
     "intentos": 2,
     "ultima_vez": "2026-09-12T04:27:13.961549+00:00"
@@ -2298,13 +2290,5 @@
   "deslizamiento::Monagas::2026-09-12": {
     "intentos": 1,
     "ultima_vez": "2026-09-12T00:02:19.132274+00:00"
-  },
-  "infraestructura_electrica::Lara::2026-09-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-12T04:27:17.458204+00:00"
-  },
-  "incendio::Apure::2026-09-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-12T04:27:20.703461+00:00"
   }
 }

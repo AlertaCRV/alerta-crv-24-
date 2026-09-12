@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-11T23:47:45.271339+00:00",
+  "actualizado": "2026-09-12T08:47:53.466351+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-11T15:34:42+00:00"
+    "hasta": "2026-09-12T00:45:00+00:00"
   },
-  "total_eventos": 344,
+  "total_eventos": 348,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 67,
-    "infraestructura_electrica": 83,
+    "infraestructura_electrica": 84,
     "deslizamiento": 27,
     "colapso_estructural": 3,
     "orden_publico": 63,
     "salud_publica": 11,
     "crisis_migratoria": 5,
-    "incendio": 24,
+    "incendio": 25,
     "vialidad": 12,
     "sismo": 10,
-    "escasez_combustible": 1,
+    "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 15,
+    "infraestructura_agua": 16,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 58,
+      "total": 59,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 27,
+      "total": 28,
       "confirmados": 1
     },
     {
@@ -68,12 +68,12 @@
       "confirmados": 1
     },
     {
-      "estado": "Carabobo",
-      "total": 15,
+      "estado": "Bolivar",
+      "total": 16,
       "confirmados": 1
     },
     {
-      "estado": "Bolivar",
+      "estado": "Carabobo",
       "total": 15,
       "confirmados": 1
     },
@@ -103,6 +103,11 @@
       "confirmados": 0
     },
     {
+      "estado": "Apure",
+      "total": 9,
+      "confirmados": 0
+    },
+    {
       "estado": "Tachira",
       "total": 9,
       "confirmados": 0
@@ -110,11 +115,6 @@
     {
       "estado": "Merida",
       "total": 9,
-      "confirmados": 0
-    },
-    {
-      "estado": "Apure",
-      "total": 8,
       "confirmados": 0
     },
     {
@@ -156,7 +156,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 4,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -190,7 +190,8 @@
       "emergencia_metro": 2,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
-      "salud_publica": 3
+      "salud_publica": 3,
+      "infraestructura_agua": 1
     },
     "Trujillo": {
       "inundacion": 1,
@@ -226,7 +227,7 @@
     "Bolivar": {
       "infraestructura_electrica": 7,
       "orden_publico": 3,
-      "escasez_combustible": 1,
+      "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1,
       "sismo": 1
@@ -237,7 +238,8 @@
       "orden_publico": 1,
       "infraestructura_agua": 1,
       "infraestructura_electrica": 1,
-      "sequia": 1
+      "sequia": 1,
+      "incendio": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -331,9 +333,9 @@
   "por_severidad": {
     "alto": 18,
     "critico": 26,
-    "sin_clasificar": 288,
+    "sin_clasificar": 291,
     "medio": 4,
-    "bajo": 8
+    "bajo": 9
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -349,7 +351,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 63,
-      "2026-09": 15
+      "2026-09": 16
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -377,7 +379,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 20,
-      "2026-09": 1
+      "2026-09": 2
     },
     "vialidad": {
       "2026-08": 10,
@@ -388,7 +390,8 @@
       "2026-09": 2
     },
     "escasez_combustible": {
-      "2026-08": 1
+      "2026-08": 1,
+      "2026-09": 1
     },
     "sequia": {
       "2026-08": 6
@@ -399,7 +402,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 3
+      "2026-09": 4
     },
     "accidente_transporte": {
       "2026-08": 1

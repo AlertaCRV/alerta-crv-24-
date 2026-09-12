@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-09",
+  "tipo": "escasez_combustible",
+  "tipo_label": "Escasez de combustible",
+  "cerrado": false,
+  "generado": "2026-09-12T08:47:58.237081+00:00",
+  "actualizado_hasta": "2026-09-12T08:47:40.910105+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registró un solo evento relacionado con la escasez de combustible, igual que en el mes anterior de agosto (1 evento(s) registrados entonces vs. 1 en este período). Este dato refleja la continuidad de la problemática en la región, sin variaciones en la cantidad de incidentes reportados.\n\nEn el estado Bolívar, específicamente en Ciudad Guayana, la producción agropecuaria experimentó una caída del 50 % debido a la falta de gasoil y al deterioro de las carreteras de acceso (El Pitazo). La Federación de Productores Agropecuarios de la región (Feproagro) informó que la escasez de combustible impidió que la mayoría de las fincas continuaran sus labores, obligando a los empresarios a declarar una situación de “hora cero” y a solicitar una respuesta urgente a las autoridades (El Pitazo).\n\nEl mismo informe fue reproducido por El Tiempo, que confirmó que la reducción del 50 % en la producción agropecuaria del estado Bolívar se debió a la escasez de combustible y a la destrucción de vías de acceso, según los datos de Feproagro (El Tiempo). La publicación subrayó que la falta de gasoil ha limitado gravemente las actividades agrícolas, generando una crisis en el sector productivo de la zona (El Tiempo).\n\nEstas circunstancias evidencian el impacto directo de la escasez de combustible en la seguridad alimentaria y la economía local, y resaltan la necesidad de que las autoridades implementen medidas inmediatas para garantizar el suministro de combustible y la reparación de la infraestructura vial, a fin de evitar mayores deterioros en la producción agropecuaria.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/bolivar-produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
+    }
+  ]
+}

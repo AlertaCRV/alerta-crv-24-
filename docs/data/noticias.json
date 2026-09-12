@@ -1,5 +1,119 @@
 [
   {
+    "tipo": "escasez_combustible",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": "Orinoco",
+    "severidad": "sin_clasificar",
+    "score": 1.3,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/bolivar-produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/",
+        "fecha": "2026-09-11T22:46:22+00:00"
+      },
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/",
+        "fecha": "2026-09-11T23:07:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-11T23:07:03+00:00",
+    "fecha_evento_temprana": "2026-09-11T22:46:22+00:00",
+    "fecha_deteccion": "2026-09-12T08:47:40.910105+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "escasez_combustible::Bolivar::2026-09-11",
+    "titulo": "Escasez de combustible en Parroquia Orinoco, Bolivar",
+    "texto": "📌 Escasez de combustible en Parroquia Orinoco, Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Orinoco, Bolivar\n🕒 Hecho reportado: 11/09/2026, 7:07 p.m.\n🔎 Detectado por el sistema: 12/09/2026, 4:47 a.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/\n  • El Tiempo (Anzoategui): https://eltiempove.com/produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/monitor-ciudad-aumentar-produccion-petrolera-sin-reparar-el-sistema-electrico-agravara-los-apagones-en-venezuela/",
+        "fecha": "2026-09-11T22:33:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-11T22:33:37+00:00",
+    "fecha_evento_temprana": "2026-09-11T22:33:37+00:00",
+    "fecha_deteccion": "2026-09-12T08:47:44.260979+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_agua::Distrito Capital::2026-09-11",
+    "titulo": "Falla de agua en Distrito Capital",
+    "texto": "📌 Falla de agua en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 11/09/2026, 6:33 p.m.\n🔎 Detectado por el sistema: 12/09/2026, 4:47 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/monitor-ciudad-aumentar-produccion-petrolera-sin-reparar-el-sistema-electrico-agravara-los-apagones-en-venezuela/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/11/unicamente-el-5-de-las-industrias-del-estado-lara-pueden-generar-la-electricidad-que-necesitan/",
+        "fecha": "2026-09-11T22:25:02+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/",
+        "fecha": "2026-09-12T00:45:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-12T00:45:00+00:00",
+    "fecha_evento_temprana": "2026-09-11T22:25:02+00:00",
+    "fecha_deteccion": "2026-09-12T08:47:47.751972+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-11",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 11/09/2026, 8:45 p.m.\n🔎 Detectado por el sistema: 12/09/2026, 4:47 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/11/unicamente-el-5-de-las-industrias-del-estado-lara-pueden-generar-la-electricidad-que-necesitan/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Apure",
+    "municipio": null,
+    "parroquia": "Quintero",
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/despliegue-especial-de-distribucion-de-gas-licuado-beneficia-a-434-familias-en-la-parroquia-quintero-de-apure/",
+        "fecha": "2026-09-11T23:06:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-11T23:06:02+00:00",
+    "fecha_evento_temprana": "2026-09-11T23:06:02+00:00",
+    "fecha_deteccion": "2026-09-12T08:47:51.077439+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "incendio::Apure::2026-09-11",
+    "titulo": "Incendio en Parroquia Quintero, Apure",
+    "texto": "📌 Incendio en Parroquia Quintero, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Parroquia Quintero, Apure\n🕒 Hecho reportado: 11/09/2026, 7:06 p.m.\n🔎 Detectado por el sistema: 12/09/2026, 4:47 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/despliegue-especial-de-distribucion-de-gas-licuado-beneficia-a-434-familias-en-la-parroquia-quintero-de-apure/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Monagas",
     "municipio": "Maturín",
