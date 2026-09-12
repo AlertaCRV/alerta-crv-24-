@@ -2283,10 +2283,6 @@
     "intentos": 2,
     "ultima_vez": "2026-09-12T04:27:04.158435+00:00"
   },
-  "infraestructura_electrica::Monagas::2026-09-12": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-12T04:27:13.961549+00:00"
-  },
   "deslizamiento::Monagas::2026-09-12": {
     "intentos": 1,
     "ultima_vez": "2026-09-12T00:02:19.132274+00:00"
@@ -2304,11 +2300,11 @@
     "ultima_vez": "2026-09-12T12:26:04.077916+00:00"
   },
   "infraestructura_agua::Sucre::2026-09-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-12T15:47:02.623316+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-12T17:55:24.629047+00:00"
   },
   "escasez_combustible::Bolivar::2026-09-12": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-12T15:47:06.141108+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-12T17:55:27.847617+00:00"
   }
 }

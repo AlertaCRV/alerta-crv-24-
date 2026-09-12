@@ -159,5 +159,12 @@
     "fecha_deteccion": "2026-09-12T08:47:51.077439+00:00",
     "fecha_evento_temprana": "2026-09-11T23:06:02+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Monagas::2026-09-12": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-12T17:55:21.119003+00:00",
+    "fecha_evento_temprana": "2026-09-12T16:14:02+00:00",
+    "municipio": "Maturín"
   }
 }
