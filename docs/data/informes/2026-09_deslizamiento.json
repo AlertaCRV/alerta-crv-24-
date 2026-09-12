@@ -3,19 +3,23 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-09-11T03:51:12.127962+00:00",
-  "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-12T04:27:26.031550+00:00",
+  "actualizado_hasta": "2026-09-11T21:57:11.769567+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 21,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de deslizamiento o derrumbe, una disminución notable respecto a los 21 eventos contabilizados en agosto del mismo año (21 evento(s) registrados entonces vs. 2 en este período). Esta reducción se refleja en la menor cantidad de incidentes reportados por los medios locales.\n\nEn el sector El Valle, perteneciente a la parroquia Juan Germán Roscio de Capacho Nuevo, Táchira, una falla geológica provocó una emergencia vial y habitacional el sábado 5 de septiembre. Actualmente, cuatro familias continúan viviendo en zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Las autoridades municipales anunciaron el cierre preventivo del paso vehicular y estiman concluir los trabajos de reparación de la vía en aproximadamente dos semanas (Diario La Nacion).\n\nPor otro lado, la prensa de Monagas informó que las intensas lluvias que azotaron Táchira generaron deslizamientos de tierra que impactaron la infraestructura vial y causaron daños de diversa magnitud en varias viviendas (La Prensa de Monagas). Las inspecciones realizadas por las autoridades locales confirmaron la presencia de afectaciones que van desde leves hasta severas, aunque no se reportaron víctimas fatales ni heridos graves en este conjunto de incidentes (La Prensa de Monagas).\n\nEn conjunto, los dos eventos documentados en septiembre evidencian la persistencia de riesgos geotécnicos en la región, pero también una respuesta rápida de las autoridades para mitigar los efectos y proteger a la población, lo que contrasta con la alta frecuencia de incidentes del mes anterior.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de deslizamiento o derrumbe, una notable reducción frente a los 21 eventos del mes anterior (comparación con el período anterior). Esta disminución se refleja en los reportes de los medios locales que cubrieron los incidentes más relevantes del periodo.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se produjo una emergencia vial y habitacional en el sector El Valle el 5 de septiembre. Actualmente, cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Las autoridades locales mantuvieron el cierre preventivo del paso vehicular y estiman concluir los trabajos de reparación de la vía en dos semanas, tras un mes de ejecuciones (Diario La Nacion).\n\nEn el estado Monagas, un joven de 18 años falleció tras impactar contra una alcantarilla en la calle principal de El Zamuro, sector Boquerón, de la ciudad de Maturín (El Periodico de Monagas). El cuerpo de Braulio Aguilarte llegó sin signos vitales al Hospital Universitario Dr. Manuel Núñez Tovar, después de sufrir traumatismos derivados de un deslizamiento de tierra (El Periodico de Monagas).\n\nPor otro lado, las fuertes lluvias que azotaron Táchira provocaron varios deslizamientos de tierra que afectaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas, según la inspección realizada por autoridades locales (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
     },
     {
       "nombre": "La Prensa de Monagas",
