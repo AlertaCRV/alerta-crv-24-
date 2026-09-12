@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Barinas::2026-09-09": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-09T21:56:50.806131+00:00",
-    "fecha_evento_temprana": "2026-09-09T13:46:11+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Zulia::2026-09-09": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-09T21:56:54.681436+00:00",
-    "fecha_evento_temprana": "2026-09-09T14:23:20+00:00",
-    "municipio": null
-  },
   "orden_publico::Carabobo::2026-09-09": {
     "severidad": "sin_clasificar",
     "confirmado": false,
