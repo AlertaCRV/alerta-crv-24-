@@ -1,18 +1,4 @@
 {
-  "orden_publico::Miranda::2026-09-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T23:42:43.730918+00:00",
-    "fecha_evento_temprana": "2026-09-08T18:41:07+00:00",
-    "municipio": "Lander"
-  },
-  "orden_publico::Portuguesa::2026-09-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-08T23:42:50.552388+00:00",
-    "fecha_evento_temprana": "2026-09-08T18:30:34+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Miranda::2026-09-09": {
     "severidad": "sin_clasificar",
     "confirmado": false,

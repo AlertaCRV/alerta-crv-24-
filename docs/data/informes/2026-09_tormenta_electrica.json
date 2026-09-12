@@ -3,7 +3,7 @@
   "tipo": "tormenta_electrica",
   "tipo_label": "Tormenta eléctrica",
   "cerrado": false,
-  "generado": "2026-09-11T03:53:52.415836+00:00",
+  "generado": "2026-09-12T00:05:02.202623+00:00",
   "actualizado_hasta": "2026-09-04T09:32:55.541039+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de tormenta eléctrica, lo que representa una disminución respecto al período anterior, en el que se contabilizaron dos eventos (comparación con el período anterior (2026-08): 2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único incidente ocurrió el jueves 3 de septiembre en los municipios de Iribarren y Palavecino, estado Lara, donde la Protección Civil informó la caída de 36 árboles como consecuencia de intensas lluvias asociadas a la tormenta eléctrica (La Prensa de Lara). Luis Mujica, director regional de Protección Civil y Administración de Desastres, confirmó el despliegue de funcionarios del Sistema Nacional de Gestión de Riesgo para atender las afectaciones y mitigar los daños en ambas zonas (La Prensa de Lara).\\n\\nLas autoridades permanecen en labores operativas para evaluar los daños materiales y garantizar la seguridad de la población en los sectores impactados, manteniendo la vigilancia ante posibles eventos meteorológicos adversos durante el resto del mes (La Prensa de Lara).",
+  "narrativa": "En el mes de septiembre de 2026 se registró un solo evento de tormenta eléctrica, frente a los dos eventos reportados en agosto de 2026 (comparación con el período anterior). \n\nEl único incidente ocurrió el jueves 3 de septiembre en los municipios de Iribarren y Palavecino, estado Lara, donde la fuerte lluvia provocó la caída de treinta y seis árboles, generando afectaciones en la infraestructura local (La Prensa de Lara). \n\nProtección Civil, a través del director regional Luis Mujica, informó que el Sistema Nacional de Gestión de Riesgo mantuvo operativas sus unidades y desplegó funcionarios en ambas localidades para atender los daños y mitigar los efectos de la tormenta (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
