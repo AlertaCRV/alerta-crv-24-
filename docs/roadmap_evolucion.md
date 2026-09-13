@@ -8737,3 +8737,162 @@ scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
 scripts/detectar_inconsistencias.py` → mismos pares de posibles
 duplicados ya conocidos de sesiones anteriores, más las fuentes muertas
 en informes documentadas arriba.
+
+## Auditoría diaria automática (13-09-2026): tres causas raíz corregidas (4 eventos retractados, 2 históricos adicionales expuestos por la regresión)
+
+Se auditaron las 11 alertas publicadas desde el corte de la auditoría
+anterior (11-09-2026) hasta ahora -- todas `PASADO_POR_FALLA_TECNICA`, la
+verificación de IA sigue sin correr en este entorno -- comparando cada una
+contra el texto real de sus fuentes en `data/historico_fuentes_texto.jsonl`.
+3 errores reales encontrados y corregidos de raíz; uno de los fixes, al
+correr la regresión completa contra el corpus histórico, expuso 2
+instancias adicionales del mismo patrón nunca antes detectadas.
+
+### 1. Un meteorólogo apellidado "Vargas" citado en un boletín de vaguada disparaba inundación en La Guaira
+
+`inundacion::La Guaira::2026-09-13` (El Impulso (Lara) + El Tiempo
+(Anzoátegui), "Vaguada refuerza la Zona de Convergencia Intertropical..." /
+"Vaguada producirá precipitaciones...") son dos boletines meteorológicos
+RUTINARIOS ("generará... precipitaciones... en múltiples regiones de
+Venezuela", "gran parte del territorio nacional"), sin ninguna inundación
+real -- disparaban ubicación=La Guaira únicamente vía el alias "Vargas"
+(apellido del meteorólogo citado, Luis Vargas), un patrón de colisión de
+apellido ya cubierto 3 veces antes (19-08, 02-09 x2) pero para otras
+construcciones de cita. Ninguna de las dos construcciones nuevas caía en
+`_es_mencion_de_persona_citada()` (`scripts/classify.py`): "...según
+informó el meteorólogo Luis Vargas" tiene el verbo de cita 3 tokens antes
+de "Vargas" (verbo, artículo, sustantivo de cargo, nombre), fuera de las
+ventanas de 1-2 tokens ya cubiertas; "El meteorólogo Luis Vargas informó
+que..." simplemente usa "informó", un verbo ausente de
+`_VERBOS_ATRIBUCION_CITA`.
+
+**Corrección**: se probó primero agregar "informo"/"informa"/"informan" al
+set genérico `_VERBOS_ATRIBUCION_CITA` (usado para CUALQUIER estado, no
+solo apellidos ambiguos) -- la regresión completa mostró que esto rompía 2
+menciones REALES de estado (`deslizamiento::Guarico::El Tubazo Digital`:
+"la gobernadora... **informó** la noticia"; `salud_publica::Distrito
+Capital::El Pitazo`: "el SACS... **informó** sobre..."), donde "informó"
+aparecía más adelante en el mismo párrafo citando a otra persona/organismo
+sin relación con esa mención de estado -- la ventana compartida de 12
+tokens es demasiado ancha para un verbo institucional tan común. Se revirtió
+ese cambio y en su lugar se agregó una función nueva y acotada,
+`_es_vocero_meteorologico_citado()`, que SOLO reconoce
+"informó"/"informa"/"informan"/"ofrecido"/"ofrecida" como verbo de cita
+cuando el título "meteorólogo"/"meteoróloga" está pegado (2 tokens antes)
+al nombre -- sin tocar el set genérico compartido por todos los estados.
+Se verificó contra las 355 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` (con un caso de control, una
+inundación real en La Guaira sin mención de "Vargas", que sigue
+publicándose sin cambios) que el nuevo chequeo expone 2 instancias
+históricas más del mismo patrón, nunca antes detectadas:
+`inundacion::La Guaira::2026-09-07` (El Impulso (Lara), "Paso de onda
+tropical genera lluvias... De acuerdo con el reporte **ofrecido**... por
+el meteorólogo Luis Vargas") y la fuente "El Impulso (Lara)" del evento
+fusionado `inundacion::La Guaira::2026-08-23` (mismo patrón, "según
+informó el meteorólogo Luis Vargas a través de sus redes sociales") --
+este último evento NO se retracta porque se fusiona con una segunda
+fuente real (La Patilla, sobre un rescate en una alcantarilla en La
+Rinconada, Caracas) cuyo propio texto nombra "los estados Miranda y La
+Guaira" como zona afectada por la misma onda tropical, evidencia
+independiente de la fuente descartada. Se agregó esa fuente aislada a
+`_LIMITACIONES_CONOCIDAS` en `tests/test_classify_regresion_historico.py`.
+
+**Corrección retroactiva**: se eliminaron por completo los 2 eventos
+standalone (`inundacion::La Guaira::2026-09-13` y
+`inundacion::La Guaira::2026-09-07`, este último expuesto por la
+regresión) de `data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl`
+y `docs/data/noticias.json`, donde seguían publicados. El evento fusionado
+del 23-08-2026 no se modifica (sigue siendo correcto, ver arriba).
+
+### 2. Un programa de distribución de bombonas de gas doméstico se publicaba como incendio
+
+`incendio::Apure::2026-09-11` (Notiapure, "Despliegue especial de
+distribución de gas licuado beneficia a 434 familias en la parroquia
+Quintero de Apure") es un anuncio POSITIVO de un operativo de distribución
+de GLP domiciliario (PDVSA Gas Comunal), sin ningún fuego/explosión --
+disparaba el tipo únicamente por la palabra clave "gas licuado" en
+`config/keywords.yaml`, agregada para cubrir explosiones reales por fuga
+de gas (ej. un caso ya publicado, "Dos heridos por deflagración de
+bombonas de gas... explosión producida por cuatro cilindros de gas licuado
+de petróleo") pero sin ningún resguardo contra anuncios institucionales de
+reparto de bombonas, un género muy común en la prensa regional.
+
+**Corrección**: nueva función `_es_distribucion_de_gas_licuado_sin_incendio_real()`
+(`scripts/classify.py`), mismo patrón que `_es_anuncio_corpoelec_sin_falla`:
+si el texto trae el marcador "distribución de gas licuado" Y no hay
+evidencia fuerte de incendio (heridos/quemaduras/llamas/etc.), se descarta
+el tipo. Se verificó contra las 355 fuentes de
+`data/historico_fuentes_texto.jsonl` que la frase es exclusiva de este
+artículo, y con un caso de control (la explosión real de bombonas de gas
+mencionada arriba, sin ese marcador) que sigue publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminó por completo
+`incendio::Apure::2026-09-11` de los 3 archivos de datos.
+
+### 3. Un tuit incrustado con una queja genérica sobre el Metro de Caracas contaminaba un robo de cartera en un centro comercial
+
+`emergencia_metro::Distrito Capital::2026-09-13` (El Pitazo, "Víctima
+detalla cómo opera banda de mujeres que roba carteras en el C.C. El
+Recreo") trata enteramente sobre un robo de cartera en un centro comercial
+de Caracas -- disparaba tipo=emergencia_metro únicamente porque, al final
+del texto, aparece lo que parece el contenido de un tuit incrustado citando,
+sin fecha, una queja genérica y ya conocida sobre robos en el Metro de
+Caracas: "Asimismo, se han hecho públicas denuncias en sitios de alta
+concurrencia masiva como el Metro de Caracas, donde los usuarios reportan
+sentirse en total desprotección." Se descartó primero la idea de truncar
+el texto desde el marcador genérico "pic.twitter.com" (que precede a ese
+bloque, igual que a otros tuits incrustados): se verificó contra las 355
+fuentes de `data/historico_fuentes_texto.jsonl` que ese marcador por sí
+solo NO sirve de corte -- aparece en 40+ fuentes ya publicadas, varias con
+evidencia real inmediatamente después (p.ej. "pic.twitter.com/... Las
+autoridades confirmaron el deceso de dos adolescentes...").
+
+**Corrección**: en su lugar, mismo patrón ya usado para
+`_es_anuncio_tarifario_metro_sin_falla_real` (otro falso positivo de
+emergencia_metro por una frase introductoria genérica): nueva función
+`_es_denuncia_generica_metro_sin_falla_real()` (`scripts/classify.py`), que
+descarta el tipo si el texto trae el marcador "se han hecho públicas
+denuncias" Y no hay evidencia fuerte real (varados/atrapados/incendio/
+descarrilamiento/colapsado/falla en el metro), reutilizando la misma lista
+`_EVIDENCIA_FUERTE_EMERGENCIA_METRO` ya existente. Se verificó contra las
+355 fuentes que la frase es exclusiva de este artículo, y con un caso de
+control (una falla real del Metro, con "varados") que sigue publicándose
+sin cambios.
+
+**Corrección retroactiva**: se eliminó por completo
+`emergencia_metro::Distrito Capital::2026-09-13` de los 3 archivos de
+datos.
+
+### Informes narrativos desactualizados
+
+`scripts/detectar_inconsistencias.py` reporta 22 "fuentes muertas" en 17
+informes narrativos, incluyendo ahora las 2 fuentes de los hallazgos 1 y 2
+retractados hoy (`docs/data/informes/2026-09_general.json`,
+`2026-09_incendio.json`, `2026-09_inundacion.json`). `GROQ_API_KEY` no está
+disponible en este entorno, así que no se regeneraron a mano --
+`scripts/build_informes.py` regenerará esos informes en la próxima corrida
+con acceso a la API (mismo patrón que sesiones anteriores). Los mismos 22
+pares de posibles duplicados ya conocidos de auditorías previas siguen sin
+resolver, sin cambios respecto a lo ya señalado.
+
+### Pruebas
+
+9 casos nuevos en `tests/casos_clasificacion.jsonl` (5 reales + 4 controles)
+para los 3 hallazgos, más una entrada nueva en `_LIMITACIONES_CONOCIDAS` de
+`tests/test_classify_regresion_historico.py` para la fuente aislada del
+evento fusionado del 23-08-2026 (hallazgo 1). Regresión completa contra las
+351 fuentes vigentes de `data/historico_fuentes_texto.jsonl` (ya con los 4
+eventos retractados hoy eliminados), corrida con `PYTHONHASHSEED=0` fijo:
+sin cambios inesperados -- las únicas fuentes afectadas por los fixes son,
+precisamente, las señaladas arriba (más 2 instancias XPASS ya presentes
+antes de esta auditoría, sin relación con los fixes de hoy: una del
+23-08-2026 y otra del 25-08-2026, ambas de "El Impulso (Lara)" con el mismo
+alias "Vargas" pero por menciones retrospectivas de una inundación pasada
+dentro de artículos políticos sin relación -- un patrón distinto, fuera del
+alcance de esta auditoría). `python3 -m pytest tests/` → 759 passed, 7
+xfailed (conocidos), 3 xpassed (conocidos). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado. `python3
+scripts/detectar_inconsistencias.py` → mismos pares de posibles duplicados
+ya conocidos de sesiones anteriores, más las fuentes muertas en informes
+documentadas arriba.
