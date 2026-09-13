@@ -2314,5 +2314,17 @@
   "orden_publico::Distrito Capital::2026-09-12": {
     "intentos": 1,
     "ultima_vez": "2026-09-12T22:31:57.503772+00:00"
+  },
+  "infraestructura_electrica::Monagas::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T00:15:41.868148+00:00"
+  },
+  "orden_publico::Sucre::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T00:15:45.226775+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T00:15:48.814149+00:00"
   }
 }
