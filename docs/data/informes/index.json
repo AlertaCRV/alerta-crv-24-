@@ -112,6 +112,14 @@
     "total_eventos": 3
   },
   {
+    "periodo": "2026-09",
+    "tipo": "colapso_estructural",
+    "tipo_label": "Colapso estructural",
+    "cerrado": false,
+    "generado": "2026-09-13T23:43:18.102633+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-08",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
