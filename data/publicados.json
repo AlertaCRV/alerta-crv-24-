@@ -1,18 +1,4 @@
 {
-  "orden_publico::Carabobo::2026-09-09": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-09T23:57:42.757515+00:00",
-    "fecha_evento_temprana": "2026-09-09T18:40:09+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-09-09": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-09T23:58:51.769962+00:00",
-    "fecha_evento_temprana": "2026-09-09T20:57:56+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Tachira::2026-09-10": {
     "severidad": "sin_clasificar",
     "confirmado": false,

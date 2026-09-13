@@ -3,19 +3,23 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-09-12T00:03:43.067306+00:00",
-  "actualizado_hasta": "2026-09-08T11:40:18.665012+00:00",
-  "total_eventos": 3,
+  "generado": "2026-09-13T00:16:45.780779+00:00",
+  "actualizado_hasta": "2026-09-12T20:23:45.780436+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 12,
-    "actual": 3
+    "actual": 5
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de fallas de agua, una disminución notable respecto a los doce eventos reportados en agosto de 2026 (12 evento(s) registrados entonces vs. 3 en este período). Los incidentes se concentraron en tres municipios de diferentes estados, evidenciando la continuidad de la crisis hídrica en distintas regiones del país.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, los habitantes y comerciantes de Sanare sufren interrupciones diarias tanto del suministro eléctrico como del agua potable, lo que perjudica su calidad de vida, daña equipos de trabajo y paraliza la economía local (El Impulso). La falta de agua se describe como irregular y severa, afectando directamente al comercio y la rutina diaria de la población (El Impulso).\n\nEn el estado Nueva Esparta, el municipio Tubores lleva más de seis meses sin agua, una situación catalogada como «aislamiento hídrico» (Reporte Confidencial). El diputado de la Asamblea Nacional, Omar Veracierto, presentó un balance basado en datos de la plataforma Pulso Nueva Esparta, señalando que la crisis de la red de agua potable se concentra en Tubores y que sus habitantes enfrentan una escasez crítica (Reporte Confidencial).\n\nEn el estado Sucre, la ciudad de Cumaná quedó excluida de la programación de cortes eléctricos, pero sigue padeciendo la crisis hídrica que afecta a varios municipios de la región (Turimiquire). El alcalde Pedro Figueroa aseguró que, a pesar de la exclusión de los cortes eléctricos, la falta de agua persiste y agrava la situación de la población (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron cinco eventos de fallas de agua, una disminución respecto a los doce eventos reportados en agosto del mismo año (comparación con el período anterior). Este descenso no implica la desaparición de la problemática, ya que continúan afectando a varias regiones del país.\n\nEn el municipio Andrés Eloy Blanco, estado Lara, los habitantes y comerciantes de Sanare sufren interrupciones diarias en el suministro eléctrico e irregularidades en el agua potable, lo que perjudica su calidad de vida, daña equipos de trabajo y paraliza la economía local (El Impulso). La crisis de los servicios públicos se traduce en pérdidas materiales para los pequeños negocios que dependen del agua para sus actividades.\n\nEn el municipio Tubores, estado Nueva Esparta, la población lleva más de seis meses sin agua potable debido a una rotura de tubería que ha generado un severo \"aislamiento hídrico\" (Reporte Confidencial). El diputado Omar Veracierto presentó un balance que evidencia la gravedad de la situación, basada en datos de seguimiento ciudadano.\n\nEn Cumaná, estado Sucre, el alcalde Pedro Figueroa anunció que el municipio quedará excluido de la programación de cortes eléctricos, pero la crisis hídrica persiste, dejando a la población sin suministro de agua (Turimiquire). La falta de agua se suma a la sobrecarga y deterioro de la infraestructura, agravando la vulnerabilidad de la comunidad.\n\nEl informe semestral de la ONG Monitor Ciudad también señala que las fallas recurrentes en agua, electricidad y gas continúan impactando al país, reflejando un déficit estructural en los servicios públicos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/monitor-ciudad-aumentar-produccion-petrolera-sin-reparar-el-sistema-electrico-agravara-los-apagones-en-venezuela/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
@@ -24,6 +28,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/12/jovenes-de-ventesucre-exigen-elecciones-presidenciales-ya-en-el-marco-del-primer-pleno-juvenil-regional-del-partido-liberal-en-la-entidad-videos/"
     }
   ]
 }

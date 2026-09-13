@@ -3,15 +3,15 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-12T00:03:16.833005+00:00",
-  "actualizado_hasta": "2026-09-11T21:57:11.769567+00:00",
-  "total_eventos": 49,
+  "generado": "2026-09-13T00:16:14.155919+00:00",
+  "actualizado_hasta": "2026-09-12T20:23:52.283336+00:00",
+  "total_eventos": 56,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 267,
-    "actual": 49
+    "actual": 56
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 49 eventos de emergencia, una notable reducción frente a los 267 eventos contabilizados en el mes anterior (agosto 2026).\\n\\nEn el Distrito Capital, a las 5:10 a.m. del miércoles se produjo un siniestro vial en el kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos unidades de transporte público colisionaron. El accidente dejó tres muertos y un herido, y fue calificado como de severidad crítica (El Periodico de Monagas).\\n\\nEn el estado Zulia, específicamente en Los Haticos, un autobús de la línea Uni Zulia impactó primero contra un vehículo modelo Festiva y luego contra una motocicleta, atrapando a la conductora bajo la unidad colectiva. El choque resultó en el fallecimiento de una mujer y dejó a un hombre herido, también con severidad crítica (Noticia al Dia (Zulia)).\\n\\nOtros incidentes relevantes del período incluyen una emergencia vial y habitacional en el sector El Valle, parroquia Juan Germán Roscio, Capacho Nuevo, donde cuatro familias permanecen en zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Además, se registraron cortes eléctricos generalizados en varios estados, con un aumento de apagones en Lara y Bolívar que afectaron la vida cotidiana de la población (El Impulso).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 56 eventos de emergencia, una disminución notable respecto a los 267 eventos del mes anterior (agosto de 2026). Esta reducción se refleja en la menor cantidad de incidentes reportados en todas las categorías, aunque algunos sucesos críticos continuaron afectando a la población.\n\nEn el Distrito Capital, a las 5:10 a.m. del miércoles se produjo un siniestro vial en el kilómetro 133 de la Autopista Regional del Centro (ARC), donde dos autobuses de transporte público colisionaron. El accidente dejó tres muertos y un herido, catalogado con severidad crítica (El Periodico de Monagas).\n\nEn el estado Zulia, el accidente múltiple ocurrido en Los Haticos involucró a un autobús de la línea Uni Zulia que impactó contra un vehículo modelo Festiva, provocando la muerte de una mujer y dejando a un pasajero herido. Este hecho también se calificó con severidad crítica (Noticia al Dia (Zulia)).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -58,8 +58,16 @@
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/domingo-sin-servicio-electrico-en-estos-sectores-de-maturin/"
     },
     {
       "nombre": "El Pitazo",
@@ -90,8 +98,20 @@
       "link": "https://elpitazo.net/regiones/funvisis-registra-dos-sismos-cerca-de-la-frontera-colombo-venezolana-este-10-de-septiembre/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/bolivar-produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/monitor-ciudad-aumentar-produccion-petrolera-sin-reparar-el-sistema-electrico-agravara-los-apagones-en-venezuela/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -130,6 +150,10 @@
       "link": "https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/"
     },
     {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/despliegue-especial-de-distribucion-de-gas-licuado-beneficia-a-434-familias-en-la-parroquia-quintero-de-apure/"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
     },
@@ -144,30 +168,6 @@
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/nacionales/ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/09/venezuela-105/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/619222/delcy-retomo-la-tesis-del-saboteo-electrico-y-apunta-a-protestas-por-acuerdos-petroleros/"
     }
   ]
 }
