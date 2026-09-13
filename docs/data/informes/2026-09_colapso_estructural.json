@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "colapso_estructural",
+  "tipo_label": "Colapso estructural",
+  "cerrado": false,
+  "generado": "2026-09-13T23:43:18.102633+00:00",
+  "actualizado_hasta": "2026-09-13T23:42:50.232226+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 2,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 la Cruz Roja Venezolana registró un solo evento de colapso estructural, en contraste con los dos eventos que se habían registrado en el período anterior (2026‑08) (Comparación con el período anterior: 2 evento(s) registrados entonces vs. 1 en este período). \n\nEl único incidente reportado corresponde al reinicio de las maniobras de bombeo del Embalse Turimiquire, ubicado en el estado Sucre, hacia la isla de Margarita y otras zonas del oriente del país, después de haber permanecido siete meses completamente inoperativo (El Periodico de Monagas). \n\nEl embalse había quedado fuera de servicio desde febrero, cuando las autoridades detectaron daños severos en el túnel de trasvase, los cuales fueron provocados por eventos sísmicos en el macizo montañoso y obligaron a suspender por completo las operaciones de bombeo (El Periodico de Monagas). \n\nCon la reactivación de las bombas, se restableció el suministro de agua a Margarita y a las áreas del oriente que dependían del embalse, mitigando la escasez que se había generado durante el periodo de inoperatividad (El Periodico de Monagas). \n\nLa Cruz Roja continúa monitoreando la situación para garantizar la seguridad hídrica de la población afectada y para detectar cualquier posible repercusión derivada del colapso estructural previo (El Periodico de Monagas).",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/turimiquire-bombea-agua-a-margarita-y-sucre-luego-de-7-meses/"
+    }
+  ]
+}
