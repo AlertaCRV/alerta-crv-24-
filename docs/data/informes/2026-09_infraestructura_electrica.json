@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-12T00:04:09.861320+00:00",
-  "actualizado_hasta": "2026-09-09T21:56:50.806131+00:00",
-  "total_eventos": 15,
+  "generado": "2026-09-13T14:24:35.599803+00:00",
+  "actualizado_hasta": "2026-09-12T17:55:21.119003+00:00",
+  "total_eventos": 17,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 63,
-    "actual": 15
+    "actual": 17
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 15 eventos de fallas eléctricas, una reducción notable frente a los 63 eventos del mes anterior (agosto) (Comparación). Esta disminución se refleja en la menor frecuencia de cortes reportados a nivel nacional, aunque persisten episodios críticos que afectan a varias regiones.\n\nEl 9 de septiembre la oposición denunció un apagón que afectó al menos a tres estados del occidente: Mérida, Barinas y Táchira, con un fuerte bajón de luz también reportado en la capital, Caracas (La Nación). En el mismo contexto, la presidenta encargada Delcy Rodríguez acusó a “sectores extremistas” de sabotear el sistema eléctrico en el occidente del país, instando a los trabajadores a mantenerse en alerta (Notiapure). Además, el 8 de septiembre se registró una fuerte fluctuación eléctrica que impactó a 11 estados y al Distrito Capital, provocando bajones de entre 30 y 40 minutos y, en algunos casos, la no restitución del servicio (El Pitazo).\n\nEn Zulia, una explosión en una subestación eléctrica de la parroquia Libertad, en Ciudad Ojeda, dejó sin suministro a gran parte de la zona durante la madrugada del 6 de septiembre, generando alarma entre los vecinos y daños materiales en la infraestructura eléctrica (La Verdad). La presidenta Delcy Rodríguez también señaló un presunto sabotaje al sistema termoeléctrico del estado Zulia, vinculado al apagón ocurrido ese mismo sábado (Nuevo Día).\n\nEl 8 de septiembre la fluctuación eléctrica también afectó los servicios de banca digital y plataformas de pago, interrumpiendo las transacciones durante al menos una hora en distintas partes del país, incluido el Distrito Capital (El Pitazo). En Lara, los cortes se dispararon un 637 % respecto al año anterior, con 722 interrupciones y 2 874 horas sin luz registradas en agosto, reflejando una crisis eléctrica que impacta gravemente la vida cotidiana de los habitantes (El Impulso).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 17 eventos de fallas eléctricas, una disminución respecto a los 63 eventos del período anterior (agosto de 2026) (Comparación).\n\nEl 9 de septiembre la oposición denunció un apagón que afectó al menos tres estados del occidente del país: Mérida, Barinas y Táchira, además de un fuerte bajón de luz en la capital, Caracas (La Nacion). El partido Vente Venezuela alertó en redes sociales sobre la interrupción del suministro eléctrico en esas regiones, señalando la continuidad de la destrucción del sistema eléctrico nacional.\n\nEn Zulia, una explosión en una subestación eléctrica ubicada frente al barrio Constitución dejó sin energía a gran parte de la parroquia Libertad de Ciudad Ojeda durante la madrugada del 6 de septiembre (La Verdad). El estruendo fue percibido por los habitantes y provocó la interrupción del servicio eléctrico en la zona.\n\nEl estado Lara vivió una crisis eléctrica aguda: los cortes se dispararon un 637 % en comparación con el año anterior, con 722 interrupciones y 2 874 horas sin luz registradas en agosto de 2026 (El Impulso). Además, se reportaron fuertes fluctuaciones el sábado por la tarde, con bajones a las 15:25 y 15:37, y usuarios denunciaron fallas tras intensas lluvias que provocaron la caída de árboles sobre cables en Barquisimeto, afectando urbanizaciones como Patarata 1 (La Prensa de Lara). En el mismo estado, solo el 5 % de las industrias logra autogenerar el 100 % de su electricidad, evidenciando la dependencia del suministro externo (El Impulso).\n\nEn Monagas, la Corporación Eléctrica Nacional realizó un mantenimiento preventivo en la subestación San Jaime del municipio Maturín el 13 de septiembre, lo que implicó la suspensión del servicio eléctrico en más de 30 comunidades durante la jornada de 9:00 a 13:00 (El Periodico de Monagas). Por otro lado, ciudadanos de Caracas y once estados (Táchira, Mérida, Yaracuy, Monagas, Zulia, Miranda, Carabobo, Lara, Guárico, Aragua y Falcón) reportaron bajones eléctricos de 30 a 40 minutos, algunos de los cuales no se restablecieron después de la segunda fluctuación (El Pitazo). El mismo día 8 de septiembre, la falla eléctrica también afectó los servicios de banca digital y plataformas de pago en varias regiones, generando interrupciones de al menos una hora (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -24,6 +24,14 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/domingo-sin-servicio-electrico-en-estos-sectores-de-maturin/"
     },
     {
       "nombre": "El Pitazo",
@@ -84,6 +92,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/06/medianos-industriales-y-artesanos-del-estado-carabobo-exigen-electricidad-patra-poder-producir/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/11/unicamente-el-5-de-las-industrias-del-estado-lara-pueden-generar-la-electricidad-que-necesitan/"
     }
   ]
 }
