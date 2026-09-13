@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-12T20:23:53.388969+00:00",
+  "actualizado": "2026-09-13T19:48:14.067334+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-12T19:00:44+00:00"
+    "hasta": "2026-09-13T14:10:49+00:00"
   },
-  "total_eventos": 351,
+  "total_eventos": 352,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 67,
+    "inundacion": 68,
     "infraestructura_electrica": 85,
     "deslizamiento": 27,
     "colapso_estructural": 3,
@@ -93,12 +93,12 @@
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
-      "total": 10,
+      "estado": "La Guaira",
+      "total": 11,
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Portuguesa",
       "total": 10,
       "confirmados": 0
     },
@@ -322,7 +322,7 @@
     "La Guaira": {
       "infraestructura_electrica": 2,
       "deslizamiento": 1,
-      "inundacion": 4,
+      "inundacion": 5,
       "sismo": 3
     },
     "Delta Amacuro": {
@@ -333,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 26,
-    "sin_clasificar": 294,
+    "sin_clasificar": 295,
     "medio": 4,
     "bajo": 9
   },
@@ -346,7 +346,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 52,
-      "2026-09": 8
+      "2026-09": 9
     },
     "infraestructura_electrica": {
       "2026-07": 5,
