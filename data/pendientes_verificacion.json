@@ -2327,20 +2327,20 @@
     "intentos": 1,
     "ultima_vez": "2026-09-13T00:15:48.814149+00:00"
   },
-  "orden_publico::Miranda::2026-09-13": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-13T19:47:58.912308+00:00"
-  },
-  "emergencia_metro::Distrito Capital::2026-09-13": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-13T19:48:02.309369+00:00"
-  },
-  "orden_publico::Portuguesa::2026-09-13": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-13T19:48:13.289382+00:00"
-  },
   "colapso_estructural::Nueva Esparta::2026-09-13": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-13T21:50:18.667073+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-09-13": {
     "intentos": 1,
-    "ultima_vez": "2026-09-13T19:48:05.954443+00:00"
+    "ultima_vez": "2026-09-13T21:50:15.131688+00:00"
+  },
+  "incendio::Aragua::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T21:50:22.023683+00:00"
+  },
+  "inundacion::La Guaira::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T21:50:28.936430+00:00"
   }
 }

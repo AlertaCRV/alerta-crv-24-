@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/",
+        "fecha": "2026-09-13T16:34:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-13T16:34:21+00:00",
+    "fecha_evento_temprana": "2026-09-13T16:34:21+00:00",
+    "fecha_deteccion": "2026-09-13T21:50:08.365135+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-13",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 13/09/2026, 12:34 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 5:50 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
+  },
+  {
+    "tipo": "emergencia_metro",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/caracas-victima-detalla-como-opera-banda-de-mujeres-que-roba-carteras-en-el-c-c-el-recreo/",
+        "fecha": "2026-09-13T16:14:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-13T16:14:14+00:00",
+    "fecha_evento_temprana": "2026-09-13T16:14:14+00:00",
+    "fecha_deteccion": "2026-09-13T21:50:11.814026+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-13",
+    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital",
+    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 13/09/2026, 12:14 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 5:50 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/caracas-victima-detalla-como-opera-banda-de-mujeres-que-roba-carteras-en-el-c-c-el-recreo/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Esteller",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa al Dia",
+        "link": "https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/",
+        "fecha": "2026-09-13T16:01:45+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-13T16:01:45+00:00",
+    "fecha_evento_temprana": "2026-09-13T16:01:45+00:00",
+    "fecha_deteccion": "2026-09-13T21:50:25.513280+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-13",
+    "titulo": "Orden público en Municipio Esteller, Portuguesa",
+    "texto": "📌 Orden público en Municipio Esteller, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Esteller, Portuguesa\n🕒 Hecho reportado: 13/09/2026, 12:01 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 5:50 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "La Guaira",
     "municipio": "Vargas",
