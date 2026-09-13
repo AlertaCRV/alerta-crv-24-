@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-13T19:48:14.067334+00:00",
+  "actualizado": "2026-09-13T21:50:30.291129+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-13T14:10:49+00:00"
+    "hasta": "2026-09-13T16:34:21+00:00"
   },
-  "total_eventos": 352,
+  "total_eventos": 355,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
     "infraestructura_electrica": 85,
     "deslizamiento": 27,
     "colapso_estructural": 3,
-    "orden_publico": 64,
+    "orden_publico": 66,
     "salud_publica": 11,
     "crisis_migratoria": 5,
     "incendio": 25,
@@ -23,13 +23,13 @@
     "infraestructura_agua": 17,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
-    "emergencia_metro": 3,
+    "emergencia_metro": 4,
     "ataque_armado": 4
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 60,
+      "total": 61,
       "confirmados": 4
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "estado": "Miranda",
-      "total": 19,
+      "total": 20,
       "confirmados": 2
     },
     {
@@ -93,13 +93,13 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
+      "estado": "Portuguesa",
       "total": 11,
       "confirmados": 0
     },
     {
-      "estado": "Portuguesa",
-      "total": 10,
+      "estado": "La Guaira",
+      "total": 11,
       "confirmados": 0
     },
     {
@@ -187,7 +187,7 @@
       "infraestructura_electrica": 9,
       "colapso_estructural": 1,
       "sismo": 1,
-      "emergencia_metro": 2,
+      "emergencia_metro": 3,
       "ataque_armado": 2,
       "crisis_migratoria": 1,
       "salud_publica": 3,
@@ -263,7 +263,7 @@
       "explosion": 1,
       "deslizamiento": 2,
       "inundacion": 5,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "ataque_armado": 1,
       "emergencia_metro": 1
     },
@@ -311,7 +311,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -333,7 +333,7 @@
   "por_severidad": {
     "alto": 18,
     "critico": 26,
-    "sin_clasificar": 295,
+    "sin_clasificar": 298,
     "medio": 4,
     "bajo": 9
   },
@@ -365,7 +365,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 50,
-      "2026-09": 12
+      "2026-09": 14
     },
     "salud_publica": {
       "2026-07": 1,
@@ -412,7 +412,7 @@
     },
     "emergencia_metro": {
       "2026-08": 2,
-      "2026-09": 1
+      "2026-09": 2
     },
     "ataque_armado": {
       "2026-08": 4
