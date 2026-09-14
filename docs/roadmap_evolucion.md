@@ -9270,3 +9270,115 @@ ninguno de los 7 PRs tras la corrección retroactiva correspondiente.
 `python3 scripts/validar_configs.py` → OK en los 7. Cada PR se verificó
 contra el corpus completo de `data/historico_fuentes_texto.jsonl` antes
 de cada commit, con `PYTHONHASHSEED=0` fijo.
+
+## Auditoría diaria (14-09-2026)
+
+Auditoría de rutina sobre las alertas publicadas en las últimas ~48 horas
+(09-11 a 09-13-2026), con atención especial a las marcadas
+`PASADO_POR_FALLA_TECNICA` (en este período, las 56 alertas activas de
+`docs/data/noticias.json` tenían ese estado -- consecuencia del bug de
+verificación por IA corregido hoy mismo en `main`, PR "Severidad por IA +
+corrección crítica: la verificación por IA fallaba siempre", pero cuyo
+backlog ya publicado seguía sin la revisión de la IA). Se encontraron y
+corrigieron 5 falsos positivos nuevos, todos con el mismo patrón de fondo
+ya conocido (cobertura cuyo TEMA real es un informe estadístico, un
+anuncio institucional programado o un evento no relacionado, con una
+mención de pasada que dispara el tipo):
+
+- **`infraestructura_agua::Sucre::2026-09-12`** (Turimiquire (Sucre)): la
+  cobertura del "Primer Pleno Juvenil regional" de un partido político
+  (Vente Sucre) mencionaba de pasada, en la descripción del recorrido de
+  la caravana, que un sector de Cumaná "tiene más de cuatro meses con sin
+  agua" -- disparaba tipo=infraestructura_agua Y tipo=sequía (dos tipos
+  distintos) por la misma frase incidental, sin que la falta de agua fuera
+  el tema del artículo.
+- **`infraestructura_agua::Distrito Capital::2026-09-11`** (El Pitazo): el
+  informe SEMESTRAL de la ONG Monitor Ciudad, que promedia cifras
+  nacionales de varios servicios (agua, electricidad, gas) a lo largo de
+  todo un semestre, disparaba tipo=infraestructura_agua (y también
+  tipo=infraestructura_electrica) en Distrito Capital por una cifra
+  promedio semanal ("58 horas de una semana sin agua") -- el artículo en
+  realidad es una advertencia sobre un riesgo FUTURO de apagones si
+  aumenta la producción petrolera, sin ningún hecho puntual de agua ni
+  electricidad ese día en Caracas.
+- **`infraestructura_electrica::Lara::2026-09-11`** (Turimiquire (Sucre) +
+  El Impulso (Lara), 2 fuentes del mismo evento): una declaración gremial
+  de la Cámara de Industriales del estado Lara con cifras trimestrales
+  comparadas (46% de horas operativas con apagones en el primer trimestre
+  de 2026, 57% en el segundo) -- un informe estructural sobre capacidad de
+  autogeneración industrial, sin ningún corte nuevo y puntual ese día.
+- **`infraestructura_electrica::Monagas::2026-09-12`** (El Periódico de
+  Monagas): un anuncio de Corpoelec sobre un mantenimiento preventivo
+  PROGRAMADO en la subestación San Jaime de Maturín, con ventana horaria
+  fija anunciada de antemano (9:00 a.m. a 1:00 p.m.) -- disparaba
+  tipo=infraestructura_electrica vía la evidencia fuerte "sin servicio
+  eléctrico" del propio titular, que impedía que el filtro existente
+  `_es_anuncio_corpoelec_sin_falla()` lo descartara (esa función exige
+  ausencia total de evidencia fuerte). Un mantenimiento preventivo
+  programado es lo opuesto a una falla: una interrupción controlada para
+  prevenir fallas futuras.
+- **`salud_publica::Distrito Capital::2026-09-11`** (Portuguesa Reporta):
+  un informe estadístico nacional del Observatorio Venezolano de Prisiones
+  (OVP) sobre hacinamiento carcelario CRÓNICO ("desde hace más de una
+  década"), que reparte cifras entre 5 estados (Distrito Capital, Zulia,
+  Miranda, Carabobo, Aragua) -- mismo patrón de fondo que el informe del
+  OVCS sobre protestas ya cubierto por
+  `_MARCADORES_RECLAMO_TERCERO_MULTIESTADO`, pero para salud_publica (no
+  orden_publico), disparaba por "tuberculosis"/"desnutrición" dentro del
+  resumen histórico. Las otras 8 coberturas del mismo observatorio en el
+  corpus (denuncias de muertes puntuales de reclusos por fallas
+  renales/hepatitis en fechas concretas) siguen publicándose sin cambios.
+
+**Corrección**: 5 funciones/marcadores nuevos en `scripts/classify.py`:
+`_es_informe_camara_industriales_sin_falla_actual()`,
+`_es_mantenimiento_electrico_programado_sin_falla_real()`,
+`_es_informe_nacional_hacinamiento_carcelario_sin_hecho_actual()`
+(evaluados por tipo, mismo patrón que los filtros ya existentes de
+Corpoelec/queja crónica), y dos evaluados sobre el ARTÍCULO COMPLETO
+-- `_es_informe_semestral_servicios_sin_hecho_actual()` y
+`_es_evento_partidista_con_mencion_incidental_de_servicios()` -- porque
+ambos casos disparaban más de un tipo con la misma frase incidental
+(mismo espíritu que `_es_articulo_retrospectivo_larga_duracion`). Se
+verificó una regresión completa contra los 441 registros de fuente
+individuales de las 326 líneas de `data/historico_fuentes_texto.jsonl`
+(antes/después de los 5 filtros nuevos): únicamente cambiaron de
+clasificación las 6 fuentes de los 5 casos corregidos (Lara tiene 2
+fuentes independientes del mismo evento), ninguna otra fuente del corpus
+se vio afectada.
+
+**Corrección retroactiva**: se eliminaron los 5 eventos de
+`docs/data/noticias.json` (56 → 51 alertas activas),
+`data/historico_eventos.jsonl` (326 → 321 líneas) y
+`data/historico_fuentes_texto.jsonl` (6 fuentes individuales eliminadas en
+5 de los 326 registros; las 5 líneas quedaron vacías de fuentes y se
+eliminaron por completo, ninguna tenía otra fuente independiente
+corroborando el mismo evento). Se regeneró `docs/data/estadisticas.json`
+con `python3 scripts/build_dashboard.py`.
+
+**Informes narrativos**: `docs/data/informes/2026-09_infraestructura_electrica.json`,
+`2026-09_infraestructura_agua.json`, `2026-09_salud_publica.json` y
+`2026-09_general.json` referencian fuentes retractadas; pendiente de
+regenerar en la próxima corrida con `GROQ_API_KEY` disponible (no
+disponible en este entorno).
+
+**Pendiente de discutir**: `escasez_combustible::Bolivar::2026-09-11`
+(El Pitazo, "Producción agropecuaria cae 50% por falta de combustible y
+destrucción de carreteras... Feproagro se declaró en 'hora cero'") tiene
+el mismo perfil que los casos de arriba (una cifra de declive atribuida a
+una federación gremial, sin fecha puntual de un hecho de escasez ese día)
+pero el texto extraído en `data/historico_fuentes_texto.jsonl` está
+truncado (termina en "[…]", un resumen de RSS, no el artículo completo) --
+no fue posible confirmar con el texto completo (la fuente devolvió
+HTTP 403 al intentar verificarla directamente) si el resto del artículo sí
+describe un hecho puntual de escasez. No se corrigió sin esa confirmación;
+queda como antecedente para revisión manual si el patrón se repite con
+texto completo disponible.
+
+### Pruebas
+
+`PYTHONHASHSEED=0 python3 -m pytest tests/` → 765 passed, 8 xfailed
+(conocidos), 3 xpassed (conocidos), sin fallas inesperadas tras la
+corrección retroactiva (los 6 casos que fallaban por diseño -- fijaban la
+clasificación vieja de las fuentes ya corregidas -- se resolvieron solos
+al actualizar `data/historico_fuentes_texto.jsonl`).
+`python3 scripts/validar_configs.py` → OK.
