@@ -2364,8 +2364,8 @@
     "ultima_vez": "2026-09-14T01:47:35.646010+00:00"
   },
   "ataque_armado::Distrito Capital::2026-09-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-14T01:47:39.004933+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T07:14:29.221210+00:00"
   },
   "colapso_estructural::Nueva Esparta::2026-09-14": {
     "intentos": 1,
@@ -2376,11 +2376,15 @@
     "ultima_vez": "2026-09-14T01:47:45.989074+00:00"
   },
   "incendio::Aragua::2026-09-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-14T01:47:49.350846+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T07:14:36.088196+00:00"
   },
   "orden_publico::Portuguesa::2026-09-14": {
     "intentos": 1,
     "ultima_vez": "2026-09-14T01:47:52.743001+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T07:14:32.722460+00:00"
   }
 }
