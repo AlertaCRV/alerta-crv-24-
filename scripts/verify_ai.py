@@ -971,6 +971,27 @@ def verificar_evento_con_ia(evento):
         f"{_construir_prompt_fuentes(candidatos)}"
     )
 
+    # GROQ_MODEL (openai/gpt-oss-120b) es un modelo "razonador": gasta
+    # tokens de razonamiento ocultos (campo "reasoning" de la respuesta)
+    # ANTES de escribir el JSON final, sin importar que el prompt pida una
+    # respuesta corta -- y ese gasto es MUY variable segun la complejidad
+    # del contenido, no solo segun el numero de fuentes. Medido en vivo el
+    # 14-09-2026: un solo texto ambiguo (bloques de ubicacion+severidad
+    # activos) llego a consumir 850+ tokens de razonamiento, y un cluster
+    # de 6 fuentes con los mismos bloques llego a 1000+. El presupuesto
+    # anterior (max(30, n*6+20)+40, pensado solo para el JSON visible)
+    # causaba un error 400 "json_validate_failed" (respuesta cortada antes
+    # de completar un JSON valido, que response_format=json_object rechaza
+    # en vez de truncar) en la ENORME mayoria de las llamadas reales --
+    # confirmado: el 100% de los eventos publicados en docs/data/noticias.json
+    # en ese momento tenian estado_verificacion=PASADO_POR_FALLA_TECNICA, es
+    # decir, la verificacion por IA nunca se estaba completando de verdad.
+    # El nuevo presupuesto es deliberadamente holgado (probado hasta n=6
+    # con ambos bloques activos, con margen de sobra) en vez de ajustado al
+    # minimo, porque en un sistema de alertas el costo de una llamada mas
+    # cara es preferible al de una verificacion que nunca se ejecuta.
+    max_tokens = max(1600, n * 200 + 600) + (100 if pedir_ubicacion else 0) + (100 if pedir_severidad else 0)
+
     try:
         resp = None
         for intento in range(MAX_REINTENTOS_GROQ):
@@ -986,7 +1007,7 @@ def verificar_evento_con_ia(evento):
                     "model": GROQ_MODEL,
                     "temperature": 0,
                     "response_format": {"type": "json_object"},
-                    "max_tokens": max(30, n * 6 + 20) + (40 if pedir_ubicacion else 0) + (15 if pedir_severidad else 0),
+                    "max_tokens": max_tokens,
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": contenido_usuario},
