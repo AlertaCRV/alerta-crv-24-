@@ -9024,3 +9024,63 @@ nombre "terremoto de La Guaira") que sigue publicándose sin cambios.
 **Informes narrativos**: `docs/data/informes/2026-08_sismo.json`
 referencia una de las 2 fuentes retractadas; pendiente de regenerar en la
 próxima corrida con `GROQ_API_KEY` disponible.
+
+### PR 4/7: "deslizamiento"/"derrumbe"/"escombros" ambiguos con puente, explosión y choque vehicular
+
+Cuatro alertas más de `deslizamiento` generadas por palabras clave ambiguas
+del tipo aplicadas a hechos sin ningún movimiento de tierra real -- mismo
+patrón de fondo ya cubierto para "derrumbe de techo"
+(`_es_derrumbe_de_techo_no_deslizamiento`) y "escombros de limpieza de
+terremoto" (`_es_limpieza_escombros_terremoto_sin_deslizamiento_real`),
+extendido a tres construcciones nuevas:
+
+- `deslizamiento::Aragua::2026-08-21` y `deslizamiento::Guarico::2026-08-21`
+  (El Tubazo Digital (Guárico), mismo artículo en ambos estados): "Se
+  derrumba puente que une a Guárico Aragua... el derrumbe total del puente
+  que une a Guárico con Aragua... el llamado Puente Rojo" -- un colapso de
+  puente (ya cubierto como keyword propia de `colapso_estructural` en
+  `config/keywords.yaml`, pero sin ningún mecanismo de reclasificación).
+- `deslizamiento::Miranda::2026-08-15` (La Patilla): "Explosión sacudió
+  conjunto residencial en Guatire... dejó... apartamentos gravemente
+  afectados y vehículos dañados por la caída de **escombros**" (una
+  explosión de tubería de gas) -- el mismo hecho ya se publica
+  correctamente como `explosion` vía otra fuente del mismo cluster.
+- `deslizamiento::Monagas::2026-09-11` (El Periódico de Monagas): "el
+  muchacho sufrió traumatismos a consecuencia de un **deslizamiento de
+  vehículo** (camioneta), la cual habría impactado contra un objeto fijo
+  (alcantarilla)" -- un choque vehicular (patinazo), no un movimiento de
+  tierra.
+
+**Corrección**: 3 funciones nuevas en `scripts/classify.py`:
+`_es_derrumbe_de_puente_no_deslizamiento()` (marcador específico "derrumbe
+total del puente"/"derrumbe del puente", reclasifica a
+`colapso_estructural` igual que el caso de techo -- **no** se usó la
+palabra suelta "puente" en `_MARCADORES_DERRUMBE_ESTRUCTURAL`: se verificó
+que un artículo-resumen real de inundaciones en varios estados menciona
+"derrumbe" en Táchira y, por separado, "colapso del puente Guaitotio" en
+Lara -- una palabra suelta habría mezclado hechos de estados distintos);
+`_es_escombros_de_explosion_no_deslizamiento()` (marcador "escombros" +
+"explosión", sin exigir ausencia de evidencia fuerte a diferencia de los
+demás filtros de esta familia -- el titular real trae "heridos", pero
+claramente atribuible a la explosión ya confirmada, y descartar aquí no
+pierde cobertura porque el hecho ya está cubierto por la fuente gemela);
+`_es_deslizamiento_vehicular_no_terreno()` (marcador exacto "deslizamiento
+de vehículo"). Se verificó contra las 355 fuentes de
+`data/historico_fuentes_texto.jsonl` que todos los marcadores son
+exclusivos de sus respectivos artículos, y con 2 casos de control (un
+deslizamiento real con evidencia de terreno, y el artículo-resumen
+multiestado de arriba) que siguen publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 4 eventos de
+los 3 archivos de datos (ninguno seguía en la ventana activa de
+`docs/data/noticias.json`). Se actualizó además un caso de prueba propio
+de la auditoría del 13-09-2026
+(`deslizamiento_guarico_gobernadora_informo_control_2026-09-13`, que
+esperaba `deslizamiento` para este mismo puente) vía el mecanismo
+`_CASOS_SUPERADOS_POR_FIX_POSTERIOR` de `tests/test_classify_casos.py`
+(append-only, no se reescribe la línea original).
+
+**Informes narrativos**: `docs/data/informes/2026-08_deslizamiento.json`,
+`2026-09_deslizamiento.json` y `2026-09_general.json` referencian fuentes
+retractadas; pendiente de regenerar en la próxima corrida con
+`GROQ_API_KEY` disponible.

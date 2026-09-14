@@ -36,6 +36,18 @@ _CASOS_SUPERADOS_POR_FIX_POSTERIOR = {
         "evento sigue sin ser relevante, ver el caso de reemplazo agregado "
         "al final de este archivo con el mismo texto)."
     ),
+    "deslizamiento_guarico_gobernadora_informo_control_2026-09-13": (
+        "Auditoria exhaustiva mensual (14-09-2026): el colapso de un puente "
+        "(el propio caso real de este control, 'derrumbe total del puente "
+        "que une a Guarico con Aragua') se reclasifica ahora a "
+        "colapso_estructural en vez de deslizamiento, via la nueva funcion "
+        "_es_derrumbe_de_puente_no_deslizamiento() -- mismo patron ya "
+        "usado para 'derrumbe de techo'. El proposito original de este "
+        "control (que la ubicacion Guarico no se pierda por un 'informo' "
+        "institucional sin relacion) sigue vigente; el tipo esperado "
+        "cambio de raiz. Ver el caso de reemplazo agregado al final de "
+        "este archivo con el mismo texto."
+    ),
 }
 
 
