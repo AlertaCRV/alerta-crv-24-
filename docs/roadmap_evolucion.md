@@ -8938,3 +8938,44 @@ evento ya tenía severidad crítica por otra palabra clave) y con
 "crítico" en `data/historico_eventos.jsonl` y
 `data/historico_fuentes_texto.jsonl` (ninguno de los dos sigue publicado en
 `docs/data/noticias.json`, ya fuera de la ventana activa).
+
+### PR 2/7: "financiamiento al terrorismo" y "audiencia diferida" faltaban en los marcadores de proceso judicial sin ataque en curso
+
+Tres alertas más de `ataque_armado` disparadas por la palabra "terrorismo" en
+contextos sin ningún ataque real -- mismo patrón ya cubierto 4 veces antes
+(captura de fugitivo, excarcelación, "limbo" judicial, sobreseimiento, ver
+`_MARCADORES_CAPTURA_FUGITIVO` en `scripts/classify.py`) pero con dos
+construcciones nuevas:
+
+- `ataque_armado::Distrito Capital::2026-08-21` (Efecto Cocuyo, "Departamento
+  de Estado impulsa capacitación de banca venezolana..."): una jornada de
+  capacitación del BCV sobre cumplimiento normativo bancario ("prevención de
+  lavado de activos y **financiamiento al terrorismo (ALD/CFT)**", sigla
+  estándar de la industria), sin ningún ataque.
+- `ataque_armado::Distrito Capital::2026-08-25` (La Patilla, sobre Javier
+  Tarazona): una audiencia de juicio **aplazada** ("fuera **diferida su
+  audiencia** de juicio por los delitos de terrorismo...") -- un quinto
+  estado procesal (aplazamiento) no cubierto por los 4 ya existentes.
+- `ataque_armado::Miranda::2026-08-30` (Runrun.es, perfil de derechos
+  humanos de Jesús Medina): "fue acusado de **financiamiento al
+  terrorismo** y asociación para delinquir" -- misma frase que el primer
+  caso, en un perfil de preso político sin ningún hecho violento.
+
+**Corrección**: se agregaron "financiamiento al terrorismo" y "diferida su
+audiencia" a `_MARCADORES_CAPTURA_FUGITIVO` (`scripts/classify.py`), mismo
+mecanismo ya usado para los 4 patrones anteriores (marcador + ausencia de
+`_EVIDENCIA_FUERTE_POR_TIPO["ataque_armado"]`). Se verificó contra las 355
+fuentes de `data/historico_fuentes_texto.jsonl` que ambas frases son
+exclusivas de estos 3 artículos, y con un caso de control (un enfrentamiento
+armado real con evidencia fuerte -- tiroteo, muertos -- que además menciona
+cargos de terrorismo contra los detenidos) que sigue publicándose sin
+cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 3 eventos de los
+3 archivos de datos (uno de ellos, el del 25-08, seguía dentro de la ventana
+activa de `docs/data/noticias.json`).
+
+**Informes narrativos**: `docs/data/informes/2026-08_ataque_armado.json`
+referencia una de las 3 fuentes retractadas; `GROQ_API_KEY` no está
+disponible en este entorno, se regenerará en la próxima corrida con acceso
+a la API (mismo patrón que sesiones anteriores).
