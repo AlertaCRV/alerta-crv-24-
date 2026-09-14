@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14T16:46:38.276119+00:00",
+  "actualizado": "2026-09-14T19:59:59.202515+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-13T16:34:21+00:00"
@@ -30,117 +30,260 @@
     {
       "estado": "Distrito Capital",
       "total": 55,
-      "confirmados": 4
+      "confirmados": 4,
+      "por_severidad": {
+        "alto": 10,
+        "medio": 14,
+        "bajo": 17,
+        "critico": 10,
+        "sin_clasificar": 4
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Lara",
       "total": 27,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 4,
+        "alto": 6,
+        "medio": 12,
+        "bajo": 5
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Zulia",
       "total": 24,
-      "confirmados": 4
+      "confirmados": 4,
+      "por_severidad": {
+        "medio": 13,
+        "critico": 2,
+        "bajo": 8,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Barinas",
       "total": 24,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 2,
+        "medio": 11,
+        "bajo": 7,
+        "critico": 4
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Aragua",
       "total": 18,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "bajo": 4,
+        "medio": 6,
+        "alto": 4,
+        "critico": 4
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Anzoategui",
       "total": 17,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "alto": 1,
+        "critico": 1,
+        "bajo": 6
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Miranda",
       "total": 16,
-      "confirmados": 2
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 3,
+        "medio": 5,
+        "critico": 4,
+        "bajo": 4
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Yaracuy",
       "total": 15,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 3,
+        "bajo": 5,
+        "medio": 6,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Carabobo",
       "total": 14,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 1,
+        "medio": 7,
+        "bajo": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Sucre",
       "total": 13,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 1,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Bolivar",
       "total": 13,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 8
+      },
+      "severidad_dominante": "medio"
     },
     {
       "estado": "Monagas",
       "total": 13,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 4,
+        "alto": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Trujillo",
       "total": 11,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 4
+      },
+      "severidad_dominante": "medio"
     },
     {
       "estado": "Portuguesa",
       "total": 11,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Tachira",
       "total": 9,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "bajo": 3,
+        "medio": 3,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Merida",
       "total": 9,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 3,
+        "alto": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Apure",
       "total": 8,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 4,
+        "bajo": 2,
+        "medio": 1,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Nueva Esparta",
       "total": 8,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 1,
+        "bajo": 6,
+        "medio": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Falcon",
       "total": 7,
-      "confirmados": 1
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 5,
+        "bajo": 1,
+        "medio": 1
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
       "total": 7,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 3,
+        "sin_clasificar": 1,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Guarico",
       "total": 4,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 4
+      },
+      "severidad_dominante": "medio"
     },
     {
       "estado": "Delta Amacuro",
       "total": 2,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "bajo": 2
+      },
+      "severidad_dominante": "bajo"
     },
     {
       "estado": "Cojedes",
       "total": 1,
-      "confirmados": 0
+      "confirmados": 0,
+      "por_severidad": {
+        "bajo": 1
+      },
+      "severidad_dominante": "bajo"
     }
   ],
   "cruce_estado_tipo": {
@@ -323,11 +466,11 @@
     }
   },
   "por_severidad": {
-    "alto": 15,
-    "critico": 26,
-    "sin_clasificar": 272,
-    "medio": 4,
-    "bajo": 9
+    "alto": 45,
+    "critico": 35,
+    "medio": 134,
+    "bajo": 103,
+    "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {

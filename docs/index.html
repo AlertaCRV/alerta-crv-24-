@@ -60,6 +60,23 @@
   .tendencias-grid th { color:#9aa4b2; font-weight:normal; }
   .barra-fondo { background:#1c232c; border-radius:4px; height:0.8rem; overflow:hidden; }
   .barra { background:#2ecc71; height:100%; }
+
+  #mapa-venezuela-wrap { max-width:420px; }
+  #mapa-venezuela { width:100%; }
+  #mapa-venezuela svg { width:100%; height:auto; display:block; }
+  #mapa-venezuela .estado {
+    stroke:#0b0f14; stroke-width:1.5; fill:#232a33;
+    cursor:pointer; transition:opacity 0.15s;
+  }
+  #mapa-venezuela .estado:hover { opacity:0.75; }
+  #mapa-venezuela .estado.sev-critico { fill:#e74c3c; }
+  #mapa-venezuela .estado.sev-alto { fill:#f39c12; }
+  #mapa-venezuela .estado.sev-medio { fill:#f1c40f; }
+  #mapa-venezuela .estado.sev-bajo { fill:#2ecc71; }
+  #mapa-venezuela .estado.sev-sin_clasificar { fill:#4a5568; }
+  #mapa-leyenda { display:flex; flex-wrap:wrap; gap:0.6rem; font-size:0.78rem; color:#9aa4b2; margin-top:0.5rem; }
+  #mapa-leyenda .punto { display:inline-block; width:0.7rem; height:0.7rem; border-radius:50%; margin-right:0.3rem; vertical-align:middle; }
+  #mapa-detalle { margin-top:0.5rem; min-height:2.4em; }
 </style>
 </head>
 <body>
@@ -81,7 +98,21 @@
   <div id="resumen-tendencias" class="meta" style="margin-top:0.6rem;">Cargando...</div>
   <div class="tendencias-grid">
     <div><h3>Eventos por tipo</h3><div id="tend-por-tipo"></div></div>
-    <div><h3>Ranking de estados (total / confirmados)</h3><div id="tend-ranking-estados"></div></div>
+    <div>
+      <h3>Eventos por estado y severidad</h3>
+      <div id="mapa-venezuela-wrap">
+        <div id="mapa-venezuela"></div>
+        <div id="mapa-leyenda">
+          <span><i class="punto" style="background:#e74c3c"></i> Crítico</span>
+          <span><i class="punto" style="background:#f39c12"></i> Alto</span>
+          <span><i class="punto" style="background:#f1c40f"></i> Medio</span>
+          <span><i class="punto" style="background:#2ecc71"></i> Bajo</span>
+          <span><i class="punto" style="background:#4a5568"></i> Sin clasificar</span>
+          <span><i class="punto" style="background:#232a33"></i> Sin eventos</span>
+        </div>
+        <div id="mapa-detalle" class="meta">Pasa el cursor o toca un estado para ver el detalle.</div>
+      </div>
+    </div>
     <div><h3>Distribución de severidad</h3><div id="tend-severidad"></div></div>
     <div><h3>Cruce estado × tipo</h3><div id="tend-cruce" style="overflow-x:auto;"></div></div>
   </div>
@@ -210,12 +241,7 @@ function cargarTendencias() {
     document.getElementById('tend-por-tipo').innerHTML = porTipo.length
       ? tablaBarras(porTipo, maxTipo) : 'Sin datos aún.';
 
-    const ranking = stats.ranking_estados || [];
-    document.getElementById('tend-ranking-estados').innerHTML = ranking.length ? `
-      <table>
-        <tr><th>Estado</th><th>Total</th><th>Conf.</th></tr>
-        ${ranking.map(r => `<tr><td>${r.estado}</td><td>${r.total}</td><td>${r.confirmados}</td></tr>`).join('')}
-      </table>` : 'Sin datos aún.';
+    colorearMapa(stats.ranking_estados || []);
 
     const SEVERIDAD_LABELS = {
       critico: '🔴 Severidad crítica', alto: '🟠 Severidad alta', medio: '🟡 Severidad media',
@@ -253,6 +279,51 @@ const TIPO_LABELS = {
   ataque_armado: "Ataque armado", emergencia_metro: "Emergencia en el Metro/Metrocable/Teleférico",
 };
 
+const SEVERIDAD_LABELS_MAPA = {
+  critico: 'Crítico', alto: 'Alto', medio: 'Medio', bajo: 'Bajo', sin_clasificar: 'Sin clasificar',
+};
+let rankingEstadosActual = [];
+let mapaListo = false;
+
+function cargarMapa() {
+  fetch('mapa-venezuela.svg?_=' + Date.now()).then(r => r.text()).then(svg => {
+    document.getElementById('mapa-venezuela').innerHTML = svg;
+    document.querySelectorAll('#mapa-venezuela .estado').forEach(path => {
+      path.addEventListener('mouseenter', () => mostrarDetalleEstado(path.dataset.estado));
+      path.addEventListener('click', () => mostrarDetalleEstado(path.dataset.estado));
+    });
+    mapaListo = true;
+    colorearMapa(rankingEstadosActual);
+  }).catch(err => console.error('Error cargando el mapa:', err));
+}
+
+function mostrarDetalleEstado(nombreEstado) {
+  const detalle = document.getElementById('mapa-detalle');
+  const r = rankingEstadosActual.find(e => e.estado === nombreEstado);
+  if (!r) {
+    detalle.textContent = `${nombreEstado}: sin eventos registrados en el histórico.`;
+    return;
+  }
+  const desglose = Object.entries(r.por_severidad || {})
+    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`)
+    .join(' · ');
+  detalle.innerHTML = `<strong>${nombreEstado}</strong> — ${r.total} evento(s), ${r.confirmados} confirmado(s)<br>${desglose}`;
+}
+
+function colorearMapa(ranking) {
+  rankingEstadosActual = ranking;
+  if (!mapaListo) return;
+  const porEstado = Object.fromEntries(ranking.map(r => [r.estado, r]));
+  document.querySelectorAll('#mapa-venezuela .estado').forEach(path => {
+    path.classList.remove('sev-critico', 'sev-alto', 'sev-medio', 'sev-bajo', 'sev-sin_clasificar');
+    const r = porEstado[path.dataset.estado];
+    if (r) {
+      path.classList.add('sev-' + r.severidad_dominante);
+    }
+  });
+}
+
+cargarMapa();
 cargarTendencias();
 setInterval(cargarTendencias, INTERVALO_MS);
 
