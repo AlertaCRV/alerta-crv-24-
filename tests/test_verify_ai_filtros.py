@@ -13,6 +13,7 @@ from verify import agrupar_y_verificar
 from verify_ai import (
     _deslizamiento_estructura_sin_evidencia_fuerte,
     _es_retrospectiva_obvia,
+    _extraer_severidad_ia,
     _incendio_estructura_menor_sin_evidencia_fuerte,
     _incendio_vehiculo_sin_evidencia_fuerte,
     _sismo_sin_evidencia_fuerte,
@@ -454,3 +455,51 @@ def test_municipio_del_cluster_se_conserva_si_la_fuente_aprobada_lo_nombra():
     grupos_aprobados = [[aprobado]]
     resultado = _finalizar_evento(evento, grupos_aprobados)
     assert resultado["municipio"] == "Chacao"
+
+
+# --- severidad asignada por IA cuando el clasificador no encontro -------
+# palabras clave (auditoria 14-09-2026: 83% de eventos historicos quedaban
+# sin_clasificar por depender solo de vocabulario de alarma literal) -----
+
+def test_extraer_severidad_ia_acepta_valor_valido():
+    assert _extraer_severidad_ia('{"veredictos": ["SI"], "severidad": "alto"}') == "alto"
+
+
+def test_extraer_severidad_ia_rechaza_valor_inventado():
+    # Nunca debe aceptarse un nivel fuera de los 4 ya definidos.
+    assert _extraer_severidad_ia('{"veredictos": ["SI"], "severidad": "extremo"}') is None
+
+
+def test_extraer_severidad_ia_rechaza_null_como_none():
+    assert _extraer_severidad_ia('{"veredictos": ["SI"], "severidad": null}') is None
+
+
+def test_extraer_severidad_ia_json_invalido_devuelve_none():
+    assert _extraer_severidad_ia("no es json") is None
+
+
+def test_finalizar_evento_usa_severidad_ia_si_el_clasificador_no_determino_nada():
+    evento = {"tipo": "orden_publico", "ubicacion": "Miranda", "municipio": None, "parroquia": None}
+    aprobado = _miembro("Marcha opositora recorre varias avenidas de Caracas.", severidad="sin_clasificar")
+    resultado = _finalizar_evento(evento, [[aprobado]], severidad_ia="bajo")
+    assert resultado["severidad"] == "bajo"
+
+
+def test_finalizar_evento_nunca_sobreescribe_severidad_ya_detectada_por_palabra_clave():
+    # Aunque se le pase una severidad_ia, si el clasificador determinista
+    # YA encontro una palabra clave (severidad != sin_clasificar) esa sigue
+    # siendo la fuente primaria -- ver comentario en verificar_evento_con_ia
+    # sobre por que pedir_severidad nunca se activa en este caso real.
+    evento = {"tipo": "incendio", "ubicacion": "Miranda", "municipio": None, "parroquia": None}
+    aprobado = _miembro("Incendio deja tres heridos en el sector.", severidad="alto")
+    resultado = _finalizar_evento(evento, [[aprobado]], severidad_ia="bajo")
+    assert resultado["severidad"] == "alto"
+
+
+def test_finalizar_evento_sin_severidad_ia_mantiene_sin_clasificar():
+    # Comportamiento previo intacto cuando no se pidio/obtuvo severidad_ia
+    # (ej. GROQ_API_KEY no configurada, o la IA no dio un valor valido).
+    evento = {"tipo": "orden_publico", "ubicacion": "Miranda", "municipio": None, "parroquia": None}
+    aprobado = _miembro("Marcha opositora recorre varias avenidas de Caracas.", severidad="sin_clasificar")
+    resultado = _finalizar_evento(evento, [[aprobado]])
+    assert resultado["severidad"] == "sin_clasificar"
