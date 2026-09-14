@@ -2388,15 +2388,23 @@
     "ultima_vez": "2026-09-14T14:15:42.803510+00:00"
   },
   "infraestructura_electrica::Zulia::2026-09-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-14T14:15:46.191450+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T19:30:55.407617+00:00"
   },
   "deslizamiento::Bolivar::2026-09-14": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-14T14:15:49.646961+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T19:30:58.814234+00:00"
   },
   "inundacion::Delta Amacuro::2026-09-14": {
     "intentos": 1,
     "ultima_vez": "2026-09-14T14:15:53.735456+00:00"
+  },
+  "vialidad::Tachira::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T19:30:51.841235+00:00"
+  },
+  "sequia::Zulia::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T19:31:02.183306+00:00"
   }
 }
