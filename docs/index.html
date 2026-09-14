@@ -100,6 +100,7 @@
     <div><h3>Eventos por tipo</h3><div id="tend-por-tipo"></div></div>
     <div>
       <h3>Eventos por estado y severidad</h3>
+      <p id="mapa-periodo" class="meta" style="margin:0 0 0.4rem 0;">Cargando periodo...</p>
       <div id="mapa-venezuela-wrap">
         <div id="mapa-venezuela"></div>
         <div id="mapa-leyenda">
@@ -232,6 +233,8 @@ function cargarTendencias() {
       : '';
     document.getElementById('resumen-tendencias').innerHTML =
       `Total de eventos en el histórico: ${stats.total_eventos}<br>${rangoTexto}${actualizadoTexto ? ' · ' + actualizadoTexto : ''}`;
+    document.getElementById('mapa-periodo').textContent =
+      `Acumulado histórico${(desde && hasta) ? ` (${desde} — ${hasta})` : ''}, no la situación actual.`;
 
     const porTipo = Object.entries(stats.por_tipo || {})
       .sort((a, b) => b[1] - a[1])
