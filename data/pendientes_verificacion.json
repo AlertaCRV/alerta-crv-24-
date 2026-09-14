@@ -2327,20 +2327,76 @@
     "intentos": 1,
     "ultima_vez": "2026-09-13T00:15:48.814149+00:00"
   },
-  "colapso_estructural::Nueva Esparta::2026-09-13": {
-    "intentos": 2,
-    "ultima_vez": "2026-09-13T21:50:18.667073+00:00"
-  },
   "ataque_armado::Distrito Capital::2026-09-13": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-13T21:50:15.131688+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-13T23:42:46.571903+00:00"
   },
   "incendio::Aragua::2026-09-13": {
-    "intentos": 1,
-    "ultima_vez": "2026-09-13T21:50:22.023683+00:00"
+    "intentos": 2,
+    "ultima_vez": "2026-09-13T23:43:00.560353+00:00"
   },
   "inundacion::La Guaira::2026-09-13": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-13T23:42:53.645286+00:00"
+  },
+  "orden_publico::Miranda::2026-09-13": {
     "intentos": 1,
-    "ultima_vez": "2026-09-13T21:50:28.936430+00:00"
+    "ultima_vez": "2026-09-13T23:42:39.825175+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T23:42:43.167213+00:00"
+  },
+  "vialidad::Falcon::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T23:42:57.148972+00:00"
+  },
+  "orden_publico::Portuguesa::2026-09-13": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-13T23:43:11.964533+00:00"
+  },
+  "orden_publico::Miranda::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T01:47:32.225159+00:00"
+  },
+  "emergencia_metro::Distrito Capital::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T01:47:35.646010+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-09-14": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T07:14:29.221210+00:00"
+  },
+  "colapso_estructural::Nueva Esparta::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T01:47:42.575433+00:00"
+  },
+  "inundacion::La Guaira::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T01:47:45.989074+00:00"
+  },
+  "incendio::Aragua::2026-09-14": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T07:14:36.088196+00:00"
+  },
+  "orden_publico::Portuguesa::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T01:47:52.743001+00:00"
+  },
+  "infraestructura_electrica::Tachira::2026-09-14": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T14:15:42.803510+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T14:15:46.191450+00:00"
+  },
+  "deslizamiento::Bolivar::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T14:15:49.646961+00:00"
+  },
+  "inundacion::Delta Amacuro::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T14:15:53.735456+00:00"
   }
 }

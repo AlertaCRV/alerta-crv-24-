@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "colapso_estructural",
+    "ubicacion": "Nueva Esparta",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/turimiquire-bombea-agua-a-margarita-y-sucre-luego-de-7-meses/",
+        "fecha": "2026-09-13T18:31:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-13T18:31:27+00:00",
+    "fecha_evento_temprana": "2026-09-13T18:31:27+00:00",
+    "fecha_deteccion": "2026-09-13T23:42:50.232226+00:00",
+    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
+    "clave_dedup": "colapso_estructural::Nueva Esparta::2026-09-13",
+    "titulo": "Colapso estructural en Nueva Esparta",
+    "texto": "📌 Colapso estructural en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 13/09/2026, 2:31 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 7:42 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/turimiquire-bombea-agua-a-margarita-y-sucre-luego-de-7-meses/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Miranda",
     "municipio": null,

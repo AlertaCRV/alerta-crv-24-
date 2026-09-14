@@ -3,16 +3,20 @@
   "tipo": "emergencia_metro",
   "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
   "cerrado": false,
-  "generado": "2026-09-13T00:15:59.949842+00:00",
-  "actualizado_hasta": "2026-09-08T11:40:08.400744+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-14T01:48:23.531295+00:00",
+  "actualizado_hasta": "2026-09-13T21:50:11.814026+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 2,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento relevante en la categoría de emergencias del Metro, Metrocable o Teleférico, lo que representa una disminución respecto al período anterior, en el que se habían registrado dos eventos (comparación con el período anterior). \n\nEl único caso documentado corresponde a una solicitud de conclusión de obras pendientes del Metro de Caracas y la realización de auditorías viales para corregir deficiencias técnicas (Turimiquire). La estrategia propuesta incluye evaluar la mezcla asfáltica, solucionar fallas de borde y extender el tramo deprimido de la avenida Libertador, con el objetivo de agilizar la circulación de aproximadamente 400.000 vehículos diarios (Turimiquire). \n\nEsta iniciativa fue impulsada por la Academia Nacional de Ingeniería y Hábitat, que instaron a concluir las obras del Metro para reducir el congestionamiento vehicular (Turimiquire). Un especialista también exhortó a completar la red del Metro y a fiscalizar el pavimento, mientras que el presidente de la Comisión de Infraestructura de la Academia Nacional de Ingeniería y Hábitat respaldó la necesidad de estas acciones (Turimiquire). \n\nLa reducción a un solo evento registrado en septiembre, frente a los dos del mes anterior, indica una menor incidencia de incidentes críticos en el sistema de transporte masivo durante este período (comparación con el período anterior).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron dos eventos en la categoría de Emergencia en el Metro/Metrocable/Teleférico, igual que en el mes anterior de agosto (2 evento(s) registrados entonces vs. 2 en este período). \n\nEl primer hecho reportado corresponde al robo de una cartera en el Centro Comercial El Recreo, en Caracas, ocurrido el 12 de septiembre, perpetrado por una banda de mujeres que operan con frecuencia en espacios cerrados como centros comerciales (El Pitazo). La víctima describió el modus operandi y señaló que el personal de la tienda donde sucedió el incidente confirmó la regularidad de estos robos. \n\nEl segundo informe se refiere a una solicitud de concluir las obras del Metro de Caracas y de realizar auditorías viales para mejorar la circulación de aproximadamente 400.000 vehículos diarios en la avenida Libertador, según declaraciones del presidente de la Comisión de Infraestructura de la Academia Nacional de Ingeniería y Hábitat (Turimiquire). La propuesta incluye evaluar la mezcla asfáltica, solucionar fallas de borde y extender el tramo deprimido, con el objetivo de reducir el congestionamiento vehicular. \n\nAunque ninguno de los dos reportes describe un accidente o incidente de seguridad directamente relacionado con el funcionamiento del Metro, Metrocable o Teleférico, la autoridad de la Cruz Roja Venezolana mantiene la vigilancia y el registro de cualquier eventualidad que pueda afectar la movilidad urbana y la seguridad de los usuarios.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/caracas-victima-detalla-como-opera-banda-de-mujeres-que-roba-carteras-en-el-c-c-el-recreo/"
+    },
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/07/hay-que-concluir-las-obras-de-el-metro-y-realizar-auditorias-viales-en-caracas-dijo-riad-bujana/"
