@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14T15:42:28.388060+00:00",
+  "actualizado": "2026-09-14T16:09:45.155955+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-13T18:31:27+00:00"
@@ -331,9 +331,9 @@
     }
   },
   "por_severidad": {
-    "alto": 18,
-    "critico": 26,
-    "sin_clasificar": 295,
+    "alto": 17,
+    "critico": 28,
+    "sin_clasificar": 294,
     "medio": 4,
     "bajo": 9
   },
