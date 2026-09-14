@@ -114,7 +114,6 @@
       </div>
     </div>
     <div><h3>Distribución de severidad</h3><div id="tend-severidad"></div></div>
-    <div><h3>Cruce estado × tipo</h3><div id="tend-cruce" style="overflow-x:auto;"></div></div>
   </div>
 </details>
 
@@ -252,15 +251,6 @@ function cargarTendencias() {
     const maxSev = Math.max(1, ...severidad.map(e => e[1]));
     document.getElementById('tend-severidad').innerHTML = severidad.length
       ? tablaBarras(severidad, maxSev) : 'Sin datos aún.';
-
-    const cruce = stats.cruce_estado_tipo || {};
-    const estados = Object.keys(cruce);
-    const tipos = [...new Set(estados.flatMap(e => Object.keys(cruce[e])))];
-    document.getElementById('tend-cruce').innerHTML = estados.length ? `
-      <table>
-        <tr><th>Estado</th>${tipos.map(t => `<th>${TIPO_LABELS[t] || t}</th>`).join('')}</tr>
-        ${estados.map(e => `<tr><td>${e}</td>${tipos.map(t => `<td>${cruce[e][t] || 0}</td>`).join('')}</tr>`).join('')}
-      </table>` : 'Sin datos aún.';
   }).catch(() => {
     document.getElementById('resumen-tendencias').textContent = 'Aún no hay datos del histórico.';
   });
