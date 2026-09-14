@@ -8896,3 +8896,45 @@ scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
 scripts/detectar_inconsistencias.py` → mismos pares de posibles duplicados
 ya conocidos de sesiones anteriores, más las fuentes muertas en informes
 documentadas arriba.
+
+## Auditoría exhaustiva mensual (14-09-2026), solicitada por el usuario tras >1 mes sin revisión manual
+
+A pedido del usuario, se auditaron exhaustivamente las 263 alertas publicadas
+entre el 14-08-2026 y el 13-09-2026 (más de un mes), divididas en 6 tandas
+paralelas de ~1 semana cada una, revisadas por sub-agentes contra el texto
+real de sus fuentes. Resultado: **38 hallazgos confirmados + 11 posibles/
+dudosos**, agrupados en varias causas raíz. Dado el volumen, las
+correcciones se procesan en varios PRs pequeños, cada uno con su propia
+corrida de CI, en vez de un solo PR grande. Esta entrada cubre el primer PR;
+las siguientes entradas (mismo encabezado, "PR N/M") cubren el resto.
+
+### PR 1/7: "murieron" (forma plural) faltaba en severidad.critico
+
+Dos alertas con muertos confirmados en el texto se publicaron sin severidad
+crítica porque `config/keywords.yaml` solo tenía "murio"/"murió" (singular)
+en `severidad.critico`, sin la forma plural "murieron" -- mismo patrón ya
+corregido para "fallecida"/"fallecidas" (11-09-2026) y "perdió la vida"
+(27-07-2026), pero nunca extendido a esta forma verbal específica.
+
+- `vialidad::Barinas::2026-08-17` (Diario La Nación (Táchira), "Tres
+  tachirenses murieron en aparatoso choque en Barinas"): publicado con
+  severidad "alto" pese a 3 fallecidos explícitos.
+- `deslizamiento::Tachira::2026-08-24` (El Pitazo, "Tres muertos, cinco
+  desaparecidos y más de 150 viviendas afectadas por las lluvias en
+  Venezuela"): publicado "sin_clasificar" pese a describir 2 fallecidos en
+  Táchira ("un hombre y una mujer... murieron") -- la severidad se evalúa
+  sobre la ventana de proximidad de Táchira específicamente, que usa
+  "murieron", mientras el resto del artículo (sobre Miranda) usa "murió".
+
+**Corrección**: se agregó "murieron" a `severidad.critico` en
+`config/keywords.yaml`. Se verificó contra las 11 fuentes vigentes de
+`data/historico_fuentes_texto.jsonl` que mencionan "murieron" que el
+cambio solo afecta a estos 2 casos (los demás quedan sin cambios porque la
+palabra está fuera de la ventana de proximidad del estado publicado, o el
+evento ya tenía severidad crítica por otra palabra clave) y con
+`python3 -m pytest tests/` completo (762 passed, sin regresiones).
+
+**Corrección retroactiva**: se corrigió la severidad de ambos eventos a
+"crítico" en `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl` (ninguno de los dos sigue publicado en
+`docs/data/noticias.json`, ya fuera de la ventana activa).
