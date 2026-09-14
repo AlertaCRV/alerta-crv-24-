@@ -510,6 +510,66 @@ BLOQUE_UBICACION_DETALLADA_TEMPLATE = (
 )
 
 
+_SEVERIDADES_VALIDAS = {"critico", "alto", "medio", "bajo"}
+
+# El clasificador determinista (detectar_severidad() en classify.py) solo
+# reconoce severidad por palabras clave literales de alarma ("heridos",
+# "danos severos", "alerta roja"...). La mayoria de la prensa venezolana
+# describe eventos reales y graves sin usar exactamente esas palabras (ej.
+# "voraz incendio consume un centro comercial", "180 funcionarios
+# desplegados", "mas de 20 deslizamientos bloquean la via") -- auditoria
+# del 14-09-2026: 83% de 326 eventos historicos quedaban "sin_clasificar"
+# por este motivo, incluido el 100% de orden_publico (una protesta casi
+# nunca menciona "heridos"). Se le pide a la misma llamada de IA que ya se
+# hace para verificar plausibilidad que asigne severidad por IMPACTO
+# cuando el clasificador determinista no pudo -- nunca al reves: si el
+# clasificador SI encontro una palabra clave, ese valor nunca se pide ni
+# se sobreescribe aqui (ver `pedir_severidad` en verificar_evento_con_ia).
+BLOQUE_SEVERIDAD_TEMPLATE = (
+    "\n\nADEMÁS del array 'veredictos': el clasificador automático no pudo "
+    "determinar la severidad de este evento a partir de palabras clave. "
+    "Agrega al mismo objeto JSON una clave 'severidad' con tu propia "
+    "evaluación, basada en el IMPACTO que describen las fuentes -- NO en si "
+    "aparecen palabras específicas como 'heridos' o 'daños'. Usa "
+    "EXCLUSIVAMENTE uno de estos 4 valores:\n"
+    "\n"
+    "- \"critico\": se reportan víctimas fatales, o una emergencia de gran "
+    "magnitud.\n"
+    "- \"alto\": se reportan heridos, evacuaciones, o daños severos a "
+    "personas/infraestructura (ej. un incendio que destruye un inmueble "
+    "grande, una vía completamente bloqueada por varios días, decenas de "
+    "familias desplazadas, un despliegue de decenas de funcionarios u "
+    "organismos de respuesta).\n"
+    "- \"medio\": se reportan daños materiales o afectación relevante sin "
+    "heridos mencionados (ej. viviendas o cultivos afectados, un servicio "
+    "interrumpido con consecuencias visibles).\n"
+    "- \"bajo\": situación de precaución o afectación menor, sin daños "
+    "significativos reportados (ej. una alerta preventiva, una protesta "
+    "pacífica sin incidentes, un corte de corta duración).\n"
+    "\n"
+    "Usa null SOLO si el texto genuinamente no da ninguna pista de "
+    "magnitud o consecuencias, ni siquiera de forma indirecta -- no "
+    "elijas 'medio' por defecto ni adivines para rellenar.\n"
+    "\n"
+    "Ejemplo: {{\"veredictos\": [\"SI\"], \"severidad\": \"alto\"}}"
+)
+
+
+def _extraer_severidad_ia(respuesta_texto):
+    """Extrae 'severidad' de la respuesta de la IA, aceptando unicamente uno
+    de los 4 niveles definidos -- cualquier otro valor (incluido texto
+    inventado, mal formado, o ausente) se descarta como None, igual que
+    _extraer_municipio_parroquia nunca confia en texto libre sin validar."""
+    try:
+        datos = json.loads(respuesta_texto)
+        if not isinstance(datos, dict):
+            return None
+        severidad = datos.get("severidad")
+        return severidad if severidad in _SEVERIDADES_VALIDAS else None
+    except (json.JSONDecodeError, TypeError, ValueError, AttributeError):
+        return None
+
+
 def _listas_ubicacion_valida(estado):
     """Aplana la jerarquia estado->municipio->parroquias (ver classify.py)
     en dos listas simples de nombres validos, solo para este prompt de
@@ -593,7 +653,7 @@ def _peso_efectivo(fuente, ubicacion_evento):
     return fuente["peso"] + bono
 
 
-def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
+def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_ia=None):
     """error_sistema=True marca que las fuentes no pasaron por un veredicto
     real de la IA (sin API key, respuesta no parseable, o fallo de red/rate
     limit tras agotar reintentos) y se dejaron pasar por seguridad -- queda
@@ -643,6 +703,11 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False):
     severidades = [m["severidad"] for m in miembros_aprobados if m["severidad"] != "sin_clasificar"]
     orden_severidad = ["critico", "alto", "medio", "bajo"]
     severidad_final = next((s for s in orden_severidad if s in severidades), "sin_clasificar")
+    # La severidad de la IA solo se usa para llenar el hueco real -- nunca
+    # sobreescribe una severidad ya detectada por palabra clave (esa sigue
+    # siendo la fuente primaria, mas determinista y auditable).
+    if severidad_final == "sin_clasificar" and severidad_ia:
+        severidad_final = severidad_ia
     fecha_mas_reciente = max(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
     fecha_mas_temprana = min(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 
@@ -890,10 +955,42 @@ def verificar_evento_con_ia(evento):
         else:
             pedir_ubicacion = False
 
+    # Se pide severidad a la IA solo si NINGUNO de los candidatos evaluados
+    # ya tiene una severidad detectada por palabra clave -- si al menos uno
+    # la tiene, el resultado final (ver _finalizar_evento) nunca sera
+    # sin_clasificar sin importar cual candidato apruebe la IA, asi que
+    # pedirlo seria una llamada desperdiciada.
+    pedir_severidad = all(
+        m["severidad"] == "sin_clasificar" for g in candidatos for m in g
+    )
+    if pedir_severidad:
+        system_prompt += BLOQUE_SEVERIDAD_TEMPLATE
+
     contenido_usuario = (
         f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento['tipo']}\n\n"
         f"{_construir_prompt_fuentes(candidatos)}"
     )
+
+    # GROQ_MODEL (openai/gpt-oss-120b) es un modelo "razonador": gasta
+    # tokens de razonamiento ocultos (campo "reasoning" de la respuesta)
+    # ANTES de escribir el JSON final, sin importar que el prompt pida una
+    # respuesta corta -- y ese gasto es MUY variable segun la complejidad
+    # del contenido, no solo segun el numero de fuentes. Medido en vivo el
+    # 14-09-2026: un solo texto ambiguo (bloques de ubicacion+severidad
+    # activos) llego a consumir 850+ tokens de razonamiento, y un cluster
+    # de 6 fuentes con los mismos bloques llego a 1000+. El presupuesto
+    # anterior (max(30, n*6+20)+40, pensado solo para el JSON visible)
+    # causaba un error 400 "json_validate_failed" (respuesta cortada antes
+    # de completar un JSON valido, que response_format=json_object rechaza
+    # en vez de truncar) en la ENORME mayoria de las llamadas reales --
+    # confirmado: el 100% de los eventos publicados en docs/data/noticias.json
+    # en ese momento tenian estado_verificacion=PASADO_POR_FALLA_TECNICA, es
+    # decir, la verificacion por IA nunca se estaba completando de verdad.
+    # El nuevo presupuesto es deliberadamente holgado (probado hasta n=6
+    # con ambos bloques activos, con margen de sobra) en vez de ajustado al
+    # minimo, porque en un sistema de alertas el costo de una llamada mas
+    # cara es preferible al de una verificacion que nunca se ejecuta.
+    max_tokens = max(1600, n * 200 + 600) + (100 if pedir_ubicacion else 0) + (100 if pedir_severidad else 0)
 
     try:
         resp = None
@@ -910,7 +1007,7 @@ def verificar_evento_con_ia(evento):
                     "model": GROQ_MODEL,
                     "temperature": 0,
                     "response_format": {"type": "json_object"},
-                    "max_tokens": max(30, n * 6 + 20) + (40 if pedir_ubicacion else 0),
+                    "max_tokens": max_tokens,
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": contenido_usuario},
@@ -1016,7 +1113,8 @@ def verificar_evento_con_ia(evento):
             if evento.get("parroquia") is None and parroquia_ia:
                 evento["parroquia"] = parroquia_ia
 
-        return _finalizar_evento(evento, grupos_aprobados)
+        severidad_ia = _extraer_severidad_ia(respuesta) if pedir_severidad else None
+        return _finalizar_evento(evento, grupos_aprobados, severidad_ia=severidad_ia)
 
     except Exception as e:
         print(f"[WARN] Fallo la verificación con Groq: {e}")
