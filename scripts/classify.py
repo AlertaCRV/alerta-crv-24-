@@ -1570,6 +1570,89 @@ def _es_derrumbe_de_techo_no_deslizamiento(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# Mismo patron que _es_derrumbe_de_techo_no_deslizamiento, para el colapso de
+# un puente (ya cubierto como keyword propia de colapso_estructural en
+# config/keywords.yaml, "colapso de un puente"/"desplome de puente", pero sin
+# ningun mecanismo que reclasifique un "derrumbe" de puente detectado como
+# deslizamiento). Caso real (auditoria exhaustiva mensual, 14-09-2026): "Se
+# derrumba puente que une a Guarico con Aragua... el derrumbe total del
+# puente que une a Guarico con Aragua... el llamado Puente Rojo" publicaba
+# tipo=deslizamiento en ambos estados (Guarico y Aragua) para el colapso de
+# un puente, sin ningun movimiento de tierra real.
+#
+# A diferencia de _MARCADORES_DERRUMBE_ESTRUCTURAL (que usa co-ocurrencia de
+# "derrumbe" + "techo" en cualquier parte del ARTICULO COMPLETO), aqui se usa
+# una frase especifica y exclusiva ("derrumbe total del puente") en vez de
+# agregar "puente" (palabra suelta) a esa lista: se verifico contra las 355
+# fuentes de data/historico_fuentes_texto.jsonl que un articulo-resumen real
+# de inundaciones en varios estados ("Turimiquire (Sucre)", 02-09-2026)
+# menciona "derrumbe" (un hecho en Tachira) Y "colapso del puente Guaitotio"
+# (un hecho DISTINTO, en Lara) en el mismo articulo -- una palabra suelta
+# "puente" habria reclasificado erroneamente los 3 estados de ese resumen
+# (Lara/Tachira/Yaracuy) a colapso_estructural, mezclando hechos de estados
+# distintos. La frase completa "derrumbe total del puente" es exclusiva del
+# caso real.
+_MARCADORES_DERRUMBE_PUENTE = ["derrumbe total del puente", "derrumbe del puente"]
+
+
+def _es_derrumbe_de_puente_no_deslizamiento(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_DERRUMBE_PUENTE):
+        return False
+    if any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DESLIZAMIENTO_TERRENO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("deslizamiento", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# "Escombros" (palabra clave de deslizamiento) TAMBIEN es ambigua con los
+# restos de una explosion (ademas de la ambiguedad ya cubierta con limpieza
+# de escombros de terremoto, ver _es_limpieza_escombros_terremoto_sin_deslizamiento_real
+# mas abajo). Caso real (auditoria exhaustiva mensual, 14-09-2026): "Explosion
+# sacudio conjunto residencial en Guatire... dejo... apartamentos gravemente
+# afectados y vehiculos danados por la caida de ESCOMBROS" (una explosion de
+# tuberia de gas) publicaba tipo=deslizamiento solo por "escombros", sin
+# ningun movimiento de tierra -- el mismo hecho ya se publica correctamente
+# como tipo=explosion via otra fuente del mismo cluster. A diferencia de
+# _es_derrumbe_de_techo_no_deslizamiento(), aqui NO se exige la ausencia de
+# evidencia fuerte de deslizamiento: el titular real ("dejo multiples
+# HERIDOS") si trae "heridos", pero claramente atribuible a la explosion (ya
+# confirmada por el propio marcador), no a un movimiento de tierra
+# competidor -- y descartar aqui no pierde cobertura real porque el hecho ya
+# esta cubierto por la fuente gemela tipo=explosion. Se exige solo la
+# ausencia de palabras de terreno natural (por si un derrumbe real ademas
+# provoca una explosion secundaria, caso no visto en el corpus pero mas
+# prudente no descartar). Se verifico contra las 355 fuentes de
+# data/historico_fuentes_texto.jsonl que la co-ocurrencia de "escombros" y
+# "explosion" es exclusiva de las 2 fuentes de este mismo hecho real.
+def _es_escombros_de_explosion_no_deslizamiento(texto_norm):
+    if not (_contiene_palabra_clave(texto_norm, "escombros") or _contiene_palabra_clave(texto_norm, "escombro")):
+        return False
+    if not (_contiene_palabra_clave(texto_norm, "explosion") or _contiene_palabra_clave(texto_norm, "explosión")):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DESLIZAMIENTO_TERRENO)
+
+
+# "Deslizamiento" (la propia palabra clave de tipo) es ambigua entre un
+# movimiento de tierra y el patinazo/perdida de control de un VEHICULO. Caso
+# real (auditoria exhaustiva mensual, 14-09-2026): "el muchacho sufrio
+# traumatismos a consecuencia de un DESLIZAMIENTO DE VEHICULO (camioneta), la
+# cual habria impactado contra un objeto fijo (alcantarilla)" -- un choque
+# vehicular (la camioneta patino/perdio el control) se publicaba como
+# deslizamiento de tierra en Monagas. Frase exacta (no palabras sueltas, para
+# no afectar la palabra clave "deslizamiento" en su sentido normal de
+# movimiento de tierra). Se verifico contra las 355 fuentes de
+# data/historico_fuentes_texto.jsonl que la frase es exclusiva de este
+# articulo.
+_MARCADORES_DESLIZAMIENTO_VEHICULO = [
+    "deslizamiento de vehiculo", "deslizamiento del vehiculo",
+    "deslizamiento de un vehiculo",
+]
+
+
+def _es_deslizamiento_vehicular_no_terreno(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_DESLIZAMIENTO_VEHICULO)
+
+
 # "Escombros" (palabra clave de deslizamiento) es ambiguo entre el material
 # suelto de un deslizamiento de tierra y los restos de construccion tras un
 # terremoto. Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "Maquinaria
@@ -3006,6 +3089,12 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
                     break
+                if tipo == "deslizamiento" and _es_derrumbe_de_puente_no_deslizamiento(texto_completo_norm):
+                    break
+                if tipo == "deslizamiento" and _es_escombros_de_explosion_no_deslizamiento(texto_completo_norm):
+                    break
+                if tipo == "deslizamiento" and _es_deslizamiento_vehicular_no_terreno(texto_completo_norm):
+                    break
                 if tipo == "deslizamiento" and _es_limpieza_escombros_terremoto_sin_deslizamiento_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
@@ -3034,6 +3123,8 @@ def detectar_tipo(texto, ventana=None):
     # del tipo correcto, asi que se agrega el tipo correcto en vez de
     # dejar el evento sin ningun tipo.
     if "colapso_estructural" not in tipos_encontrados and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
+        tipos_encontrados.append("colapso_estructural")
+    if "colapso_estructural" not in tipos_encontrados and _es_derrumbe_de_puente_no_deslizamiento(texto_completo_norm):
         tipos_encontrados.append("colapso_estructural")
     if "orden_publico" not in tipos_encontrados and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
         tipos_encontrados.append("orden_publico")
