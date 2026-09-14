@@ -937,9 +937,47 @@ _SISMO_FECHA_PASADA_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Ampliado (auditoria exhaustiva mensual, 14-09-2026): dos casos reales mas
+# de referencia retrospectiva al sismo de La Guaira, ninguno con "el pasado":
+# 1) "...en respuesta al deficit habitacional provocado por los terremotos
+#    DEL 24 de junio..." / "...las familias que perdieron sus hogares por
+#    los terremotos de magnitud 7,2 y 7,5 DEL 24 de junio" -- una ley de
+#    vivienda de la Asamblea Nacional, semanas despues del sismo, mencionaba
+#    la fecha exacta del evento ya ocurrido pegada a "terremotos", pero
+#    tambien incluia "magnitud" (evidencia fuerte de sismo.
+#    _tipo_con_contexto_conflictivo() ya tiene "24 de junio" en
+#    _CONTEXTO_CONFLICTIVO_POR_TIPO, pero ese chequeo se evalua sobre la
+#    VENTANA de proximidad y cede ante cualquier evidencia fuerte presente
+#    en esa ventana -- aqui "magnitud" esta pegado a la misma clausula
+#    retrospectiva ("terremotos de magnitud 7,2 y 7,5 DEL 24 de junio"), asi
+#    que la evidencia fuerte tambien describe el sismo YA OCURRIDO, no uno
+#    nuevo. Igual que "el pasado", la fecha exacta "24 de junio" pegada a
+#    sismo/terremoto es decisiva sin importar la evidencia fuerte.
+# 2) "«Se reseteo mi vida»: Alejandro perdio su casa... en el TERREMOTO DE
+#    LA GUAIRA..." -- una cronica de interes humano sobre un sobreviviente,
+#    semanas despues, que narra el sismo por su nombre ya establecido
+#    ("el terremoto de La Guaira", igual que "el terremoto de Haiti" se
+#    usa para nombrar un evento historico) en vez de la fecha exacta. Se
+#    verifico contra las 355 fuentes de data/historico_fuentes_texto.jsonl
+#    que ambas frases (con el estado capturado en la primera) son
+#    exclusivas de estos 2 articulos.
+_SISMO_24_JUNIO_RE = re.compile(
+    r"\b(?:sismos?|sismic[oa]|s[ií]smic[oa]|terremotos?)\b[^.]{0,60}\bdel?\s+24\s+de\s+junio\b"
+    r"|\bdel?\s+24\s+de\s+junio\b[^.]{0,60}\b(?:sismos?|sismic[oa]|s[ií]smic[oa]|terremotos?)\b",
+    re.IGNORECASE,
+)
+_MARCADORES_SISMO_NOMBRE_HISTORICO = [
+    "terremoto de la guaira", "terremotos de la guaira",
+    "sismo de la guaira", "sismos de la guaira",
+]
+
 
 def _es_referencia_sismo_fecha_pasada(texto_norm):
-    return _SISMO_FECHA_PASADA_RE.search(texto_norm) is not None
+    if _SISMO_FECHA_PASADA_RE.search(texto_norm) is not None:
+        return True
+    if _SISMO_24_JUNIO_RE.search(texto_norm) is not None:
+        return True
+    return any(m in texto_norm for m in _MARCADORES_SISMO_NOMBRE_HISTORICO)
 
 
 # A diferencia del boletin de epicentro (especifico de sismo), un articulo

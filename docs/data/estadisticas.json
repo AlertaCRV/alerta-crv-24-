@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-14T16:15:27.481070+00:00",
+  "actualizado": "2026-09-14T16:19:57.459440+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-13T18:31:27+00:00"
   },
-  "total_eventos": 349,
+  "total_eventos": 347,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
@@ -16,7 +16,7 @@
     "crisis_migratoria": 5,
     "incendio": 24,
     "vialidad": 12,
-    "sismo": 10,
+    "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
@@ -113,11 +113,6 @@
       "confirmados": 0
     },
     {
-      "estado": "La Guaira",
-      "total": 9,
-      "confirmados": 0
-    },
-    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0
@@ -126,6 +121,11 @@
       "estado": "Falcon",
       "total": 7,
       "confirmados": 1
+    },
+    {
+      "estado": "La Guaira",
+      "total": 7,
+      "confirmados": 0
     },
     {
       "estado": "Guarico",
@@ -321,7 +321,7 @@
       "infraestructura_electrica": 2,
       "deslizamiento": 1,
       "inundacion": 3,
-      "sismo": 3
+      "sismo": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -330,8 +330,8 @@
   },
   "por_severidad": {
     "alto": 17,
-    "critico": 28,
-    "sin_clasificar": 291,
+    "critico": 27,
+    "sin_clasificar": 290,
     "medio": 4,
     "bajo": 9
   },
@@ -385,7 +385,7 @@
       "2026-09": 2
     },
     "sismo": {
-      "2026-08": 8,
+      "2026-08": 6,
       "2026-09": 2
     },
     "escasez_combustible": {

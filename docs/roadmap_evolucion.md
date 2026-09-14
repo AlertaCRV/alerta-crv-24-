@@ -8979,3 +8979,48 @@ activa de `docs/data/noticias.json`).
 referencia una de las 3 fuentes retractadas; `GROQ_API_KEY` no está
 disponible en este entorno, se regenerará en la próxima corrida con acceso
 a la API (mismo patrón que sesiones anteriores).
+
+### PR 3/7: Dos referencias retrospectivas más al sismo de La Guaira, sin "el pasado"
+
+Dos alertas más de `sismo` generadas por referencias retrospectivas al
+terremoto del 24 de junio, semanas después del hecho -- mismo patrón ya
+cubierto por `_es_referencia_sismo_fecha_pasada()` (que descarta el tipo
+decisivamente cuando el texto usa "el pasado" cerca de sismo/terremoto,
+sin importar la evidencia fuerte presente), pero con dos construcciones
+que no usan esa frase:
+
+- `sismo::La Guaira::2026-08-22` (Portuguesa Reporta, sobre una ley de
+  vivienda de la Asamblea Nacional): "...en respuesta al déficit
+  habitacional provocado por los terremotos **del 24 de junio**..." /
+  "...las familias que perdieron sus hogares por los terremotos de
+  **magnitud** 7,2 y 7,5 **del 24 de junio**" -- la fecha exacta del sismo
+  ya ocurrido, pegada a "terremotos", pero la clausula TAMBIÉN trae
+  "magnitud" (evidencia fuerte de `_EVIDENCIA_FUERTE_POR_TIPO["sismo"]`),
+  la cual describe el sismo YA OCURRIDO, no uno nuevo -- la ventana de
+  `_CONTEXTO_CONFLICTIVO_POR_TIPO` (que sí tiene "24 de junio" como
+  marcador) cede ante esa evidencia fuerte presente en la misma ventana.
+- `sismo::La Guaira::2026-08-24` (El Pitazo, crónica de un sobreviviente):
+  "...perdió su casa y su negocio en el **terremoto de La Guaira**..." --
+  el sismo nombrado por su nombre ya establecido (como "el terremoto de
+  Haití"), en vez de la fecha exacta, en una nota de interés humano sin
+  ningún sismo nuevo.
+
+**Corrección**: se extendió `_es_referencia_sismo_fecha_pasada()` en
+`scripts/classify.py` con dos chequeos adicionales, decisivos igual que
+"el pasado" (sin importar evidencia fuerte, evaluados sobre el artículo
+completo): `_SISMO_24_JUNIO_RE` (misma estructura que
+`_SISMO_FECHA_PASADA_RE`, pero para "del 24 de junio" pegado a sismo/
+terremoto) y `_MARCADORES_SISMO_NOMBRE_HISTORICO` ("terremoto de la
+guaira" y variantes). Se verificó contra las 355 fuentes de
+`data/historico_fuentes_texto.jsonl` que ambas frases son exclusivas de
+estos 2 artículos, y con un caso de control (un sismo real y nuevo en La
+Guaira, con magnitud/Funvisis pero sin mención del 24 de junio ni el
+nombre "terremoto de La Guaira") que sigue publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 2 eventos de
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`
+(ninguno seguía en la ventana activa de `docs/data/noticias.json`).
+
+**Informes narrativos**: `docs/data/informes/2026-08_sismo.json`
+referencia una de las 2 fuentes retractadas; pendiente de regenerar en la
+próxima corrida con `GROQ_API_KEY` disponible.
