@@ -39,7 +39,14 @@ LISTA_NEGRA_POR_ESTADO = {
     # estado Bolivar (duplicado del mismo incendio, ya correctamente
     # publicado como Nueva Esparta via otra fuente que si mencionaba
     # "Margarita").
-    "Bolivar": ["simon bolivar", "plaza bolivar", "avenida bolivar", "avenidas bolivar",
+    # Ampliada (auditoria exhaustiva mensual, 14-09-2026): "Plaza DE Bolivar"
+    # (con "de" interpuesto) es una plaza de BOGOTA, Colombia -- un homenaje a
+    # las victimas del terremoto de Colombia, celebrado en la Plaza de
+    # Bolivar de Bogota, disparaba tipo=sismo critico en el estado Bolivar
+    # (Venezuela) porque "plaza bolivar" (sin "de") ya estaba cubierto, pero
+    # esta variante con "de" interpuesto no coincidia con esa frase exacta.
+    "Bolivar": ["simon bolivar", "plaza bolivar", "plaza de bolivar",
+                "avenida bolivar", "avenidas bolivar",
                 "aeropuerto", "moneda", "billete de", "banco central",
                 "libertador simon bolivar"],
     "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
@@ -95,8 +102,14 @@ LISTA_NEGRA_POR_ESTADO = {
     # (sin ninguna otra mencion del estado Carabobo) generaba una alerta
     # duplicada en Carabobo -- el mismo hecho ya se publicaba correctamente
     # en Distrito Capital via la mencion de "Caracas".
+    # Ampliada (auditoria exhaustiva mensual, 14-09-2026): "Torre Carabobo"
+    # es un edificio de la parroquia La Candelaria, municipio Libertador,
+    # Caracas (Distrito Capital) -- un incendio real en ese edificio
+    # generaba una alerta duplicada en el estado Carabobo, sin relacion
+    # alguna, ademas de la correcta en Distrito Capital.
     "Carabobo": ["carabobo fc", "avenida carabobo", "avenidas carabobo",
-                 "av. carabobo", "av carabobo", "parque carabobo"],
+                 "av. carabobo", "av carabobo", "parque carabobo",
+                 "torre carabobo"],
     # Caso real (31-07-2026): un incendio en el CCCT ("ubicado en el
     # municipio Chacao") se publicaba como Distrito Capital porque el
     # articulo tambien menciona "Caracas" (alias de Distrito Capital) en
@@ -132,6 +145,19 @@ LISTA_NEGRA_POR_ESTADO = {
         # contra las 168 fuentes de data/historico_fuentes_texto.jsonl que
         # la frase es exclusiva de este articulo.
         "una ola de racionamientos electricos indiscriminados",
+        # Caso real (auditoria exhaustiva mensual, 14-09-2026): un articulo
+        # sobre el brote de ebola en la Republica Democratica del Congo trae
+        # embebido, a mitad de cuerpo, un enlace de "articulos relacionados"
+        # con el formato "Puedes leer: <titulo>" (variante ya documentada de
+        # nuevodia.com.ve, 09-09-2026) -- el titulo enlazado, "Chile designa
+        # consul general en Caracas para reactivar sedes", bastaba por si
+        # solo para publicar una alerta de salud publica en Distrito Capital.
+        # No se recorta el texto completo en fetch_rss.py (mismo motivo ya
+        # documentado el 09-09-2026): el articulo real CONTINUA justo
+        # despues del enlace ("Ademas, 737 pacientes estan en aislamiento...",
+        # contenido real sobre el Congo) -- recortar hasta el final perderia
+        # esa evidencia real.
+        "chile designa consul general en caracas",
     ],
     # Caso real (11-08-2026): dos articulos sobre venezolanos residentes EN
     # COLOMBIA que sobrevivieron al terremoto de magnitud 7.4 que sacudio
@@ -2463,6 +2489,15 @@ def _detectar_ubicacion_texto_plano(texto, estados):
 
 
 _CALIFICADORES_SUBESTATALES = {"municipio", "parroquia"}
+# Formas plurales, solo para el patron "municipios A y B" (ver mas abajo) --
+# NO se agregan al set singular de arriba porque "N municipios DE Estado"
+# (ej. "seis municipios de Yaracuy", "varios municipios de Caracas") es una
+# construccion MUY comun que nombra genuinamente al estado (no un municipio
+# homonimo) -- agregarlas al chequeo general de 1-2 tokens atras rompia esos
+# casos reales (verificado con la regresion completa contra las 355 fuentes
+# de data/historico_fuentes_texto.jsonl: 3 eventos reales de infraestructura
+# electrica/inundacion en Yaracuy y Distrito Capital perdian su ubicacion).
+_CALIFICADORES_SUBESTATALES_PLURAL = {"municipios", "parroquias"}
 
 # Secuencias de palabras que, justo antes de "Caracas", indican que se usa
 # como referencia de sentido/direccion vial ("sentido Caracas", "rumbo a
@@ -2487,10 +2522,26 @@ def _es_mencion_subestatal(tokens, pos):
     patron real en cobertura de zonas fronterizas (ver
     docs/roadmap_evolucion.md, auditoria 09-08-2026: 'municipio fronterizo
     Bolivar', Diario La Nacion Tachira, generaba evidencia falsa del
-    estado Bolivar en un articulo que nunca menciona ese estado)."""
+    estado Bolivar en un articulo que nunca menciona ese estado).
+
+    Tambien cuenta 'municipios A y B' -- el calificador PLURAL
+    (_CALIFICADORES_SUBESTATALES_PLURAL), con dos nombres propios unidos
+    por "y", queda 3 tokens atras del segundo (B). Caso real (auditoria
+    exhaustiva mensual, 14-09-2026): "inundando sectores en las zonas
+    bajas de los municipios Pedraza y Sucre [de Barinas]" generaba una
+    alerta duplicada en el estado Sucre. A diferencia del calificador
+    singular, el plural NO se acepta en las posiciones de 1-2 tokens
+    (ver comentario en _CALIFICADORES_SUBESTATALES_PLURAL) -- solo en
+    esta posicion especifica de conjuncion."""
     if pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES:
         return True
-    return pos > 1 and tokens[pos - 2] in _CALIFICADORES_SUBESTATALES
+    if pos > 1 and tokens[pos - 2] in _CALIFICADORES_SUBESTATALES:
+        return True
+    return (
+        pos > 2
+        and tokens[pos - 1] == "y"
+        and tokens[pos - 3] in _CALIFICADORES_SUBESTATALES_PLURAL
+    )
 
 
 def _es_mencion_direccional(tokens, pos, candidato_tokens):

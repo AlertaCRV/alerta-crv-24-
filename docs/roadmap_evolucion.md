@@ -9084,3 +9084,60 @@ esperaba `deslizamiento` para este mismo puente) vía el mecanismo
 `2026-09_deslizamiento.json` y `2026-09_general.json` referencian fuentes
 retractadas; pendiente de regenerar en la próxima corrida con
 `GROQ_API_KEY` disponible.
+
+### PR 5/7: Cuatro colisiones de nombre nuevas en la lista negra por estado
+
+Cinco alertas más generadas por colisiones de nombre no cubiertas en
+`LISTA_NEGRA_POR_ESTADO` (`scripts/classify.py`) ni en el mecanismo de
+exclusión subestatal (`_es_mencion_subestatal`):
+
+- `sismo::Bolivar::2026-08-29` (La Prensa de Monagas): "Plaza **de**
+  Bolívar de Bogotá" (con "de" interpuesto) -- "plaza bolivar" (sin "de")
+  ya estaba en la lista negra, pero esta variante no. Un homenaje a las
+  víctimas del terremoto de Colombia disparaba sismo crítico en el estado
+  Bolívar (Venezuela).
+- `incendio::Carabobo::2026-08-24` (Primicia (Bolívar)): "Torre Carabobo",
+  un edificio de La Candelaria, Caracas -- generaba un duplicado del mismo
+  incendio ya publicado correctamente en Distrito Capital.
+- `inundacion::Sucre::2026-08-24` (La Patilla): "municipios **Pedraza y
+  Sucre** [de Barinas]" -- el calificador subestatal PLURAL ("municipios")
+  nunca estaba en `_CALIFICADORES_SUBESTATALES` (solo las formas
+  singulares), y el patrón de conjunción "A y B" (con el segundo nombre a
+  3 tokens del calificador, no 1-2) tampoco estaba cubierto.
+- `salud_publica::Distrito Capital::2026-08-23` (Nuevo Día (Falcón)): un
+  artículo sobre el brote de ébola en el Congo trae embebido un enlace
+  "Puedes leer: Chile designa cónsul general en Caracas..." -- mismo
+  patrón ya documentado el 09-09-2026 (no se trunca el texto completo
+  porque el artículo real CONTINÚA justo después del enlace).
+- **Hallazgo adicional** expuesto por la propia regresión del fix de
+  Pedraza/Sucre: `infraestructura_electrica::Bolivar::2026-08-19` (El
+  Periódico de Monagas): "municipios **Punceres y Bolívar**" (dos
+  municipios reales de Monagas, tras la caída de torres de alta tensión)
+  generaba el mismo tipo de duplicado en el estado Bolívar.
+
+**Corrección**: se agregaron 3 frases a `LISTA_NEGRA_POR_ESTADO` ("plaza de
+bolivar" en Bolívar, "torre carabobo" en Carabobo, "chile designa consul
+general en caracas" en Distrito Capital). Para el patrón "municipios A y
+B", se separó un nuevo set `_CALIFICADORES_SUBESTATALES_PLURAL`
+("municipios"/"parroquias") usado SOLO en una nueva posición de conjunción
+en `_es_mencion_subestatal()` (3 tokens atrás del segundo nombre, cuando
+el token intermedio es "y") -- deliberadamente **no** se agregaron las
+formas plurales al chequeo general de 1-2 tokens (el que ya usan las
+formas singulares): se verificó que eso rompía 3 casos reales
+("N municipios de Yaracuy/Caracas...", una construcción muy común que
+nombra genuinamente al estado, no un municipio homónimo) antes de acotar
+el fix a la posición de conjunción exclusivamente. Se verificó contra las
+355 fuentes de `data/historico_fuentes_texto.jsonl` que las 3 frases de
+lista negra son exclusivas de sus artículos, y con 2 casos de control
+("municipio Sucre" aislado sin conjunción, y "municipios de Yaracuy") que
+siguen funcionando sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 5 eventos de
+los 3 archivos de datos (ninguno seguía en la ventana activa de
+`docs/data/noticias.json`).
+
+**Informes narrativos**: `docs/data/informes/2026-08_sismo.json`,
+`2026-08_incendio.json`, `2026-08_salud_publica.json` y
+`2026-08_infraestructura_electrica.json` referencian fuentes retractadas;
+pendiente de regenerar en la próxima corrida con `GROQ_API_KEY`
+disponible.
