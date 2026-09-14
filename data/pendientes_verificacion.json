@@ -2384,7 +2384,19 @@
     "ultima_vez": "2026-09-14T01:47:52.743001+00:00"
   },
   "infraestructura_electrica::Tachira::2026-09-14": {
+    "intentos": 2,
+    "ultima_vez": "2026-09-14T14:15:42.803510+00:00"
+  },
+  "infraestructura_electrica::Zulia::2026-09-14": {
     "intentos": 1,
-    "ultima_vez": "2026-09-14T07:14:32.722460+00:00"
+    "ultima_vez": "2026-09-14T14:15:46.191450+00:00"
+  },
+  "deslizamiento::Bolivar::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T14:15:49.646961+00:00"
+  },
+  "inundacion::Delta Amacuro::2026-09-14": {
+    "intentos": 1,
+    "ultima_vez": "2026-09-14T14:15:53.735456+00:00"
   }
 }
