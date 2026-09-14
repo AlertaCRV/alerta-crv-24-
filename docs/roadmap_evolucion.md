@@ -9197,3 +9197,76 @@ el Metro en Miranda).
 `2026-09_emergencia_metro.json`, `2026-09_colapso_estructural.json` y
 `2026-09_general.json` referencian fuentes retractadas; pendiente de
 regenerar en la próxima corrida con `GROQ_API_KEY` disponible.
+
+### PR 7/7: Reportaje estadístico retrospectivo de protestas duplicado en 6 estados
+
+`orden_publico::Bolivar/Distrito Capital/Lara/Miranda/Sucre/Zulia::2026-08-24`
+(La Prensa de Lara, "Radiografía de la protesta: 1.461 manifestaciones
+marcan los primeros ocho meses del año"): un reportaje puramente
+ESTADÍSTICO y RETROSPECTIVO (un ranking acumulado de 8 meses por medio de
+comunicación, "Distrito Capital encabezó la lista con 97 protestas...
+Zulia con 43... Táchira con 41..."), sin ningún hecho puntual de disturbio
+el día de publicación, generaba 6 alertas idénticas (una por cada estado
+del ranking, con la misma hora por defecto "11:00:00" en las 6).
+
+A diferencia de la "queja crónica" sobre conflictos laborales sostenidos
+(sin filtro general, por el riesgo ya documentado de descartar coberturas
+legítimas de esos conflictos reales -- ver más abajo, "Pendiente de
+discutir"), este caso es mucho más acotado y sin ambigüedad: un reportaje
+de datos agregados de un medio, no la cobertura de ningún conflicto
+específico.
+
+**Corrección**: nueva función `_es_radiografia_estadistica_protesta_sin_hecho_actual()`
+en `scripts/classify.py`, mismo patrón que `_es_boletin_estadistico_salud_sin_alarma()`
+(salud_publica): marcador "radiografía de la protesta" + ausencia de
+evidencia fuerte de orden_publico. Se verificó contra las 355 fuentes de
+`data/historico_fuentes_texto.jsonl` que la frase es exclusiva de este
+artículo (sus 6 instancias), y con un caso de control (una protesta real
+de hoy, con heridos/detenidos, que además menciona de pasada una cifra
+estadística acumulada del año) que sigue publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 6 eventos de
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`
+(ninguno seguía en la ventana activa de `docs/data/noticias.json`).
+
+**Informes narrativos**: `docs/data/informes/2026-08_orden_publico.json`
+referencia las fuentes retractadas; pendiente de regenerar en la próxima
+corrida con `GROQ_API_KEY` disponible.
+
+## Cierre de la auditoría exhaustiva mensual (14-09-2026)
+
+Resumen de los 7 PRs (#641-#647): **38 hallazgos confirmados corregidos de
+raíz**, con **41 eventos retractados retroactivamente** (algunos hallazgos
+generaron más de un evento duplicado), y **~50 casos nuevos** en
+`tests/casos_clasificacion.jsonl`. Quedan documentados, sin corrección
+automática, dos grupos:
+
+**"Queja crónica" de orden_publico sin filtro general** (patrón ya
+señalado repetidamente en auditorías previas -- 22-08, 05-09, 08-09,
+13-09-2026 -- sin cambios en la decisión): ~9 instancias adicionales
+encontradas en este período (protestas gremiales/laborales sostenidas,
+sin un hecho puntual de disturbio ese día específico) en Bolívar, Sucre y
+Barinas (18-21 ago) y Portuguesa (31ago-6sep). No se construye un filtro
+general por el riesgo, ya documentado, de descartar coberturas legítimas
+de conflictos laborales reales y sostenidos.
+
+**11 hallazgos "posibles, no confirmados"** reportados por los sub-agentes
+de auditoría, sin evidencia textual firme para actuar (fragmentación de un
+mismo temporal en varios eventos separados en Distrito Capital 16-08;
+posibles duplicados de inundación Aragua/Distrito Capital/Miranda entre
+23-24 de agosto con cifras de víctimas evolucionando; un posible duplicado
+deslizamiento/inundación en Táchira 01-02 de septiembre; menciones de
+"apagones" cerca de Aragua en un artículo centrado en Carabobo; y textos
+truncados en la extracción que impiden confirmar con certeza en Distrito
+Capital/La Guaira 20-08 y Portuguesa 19-08). Ninguno se corrigió sin
+evidencia textual objetiva -- quedan como antecedente para una futura
+revisión manual si se repiten.
+
+### Pruebas (todo el conjunto de 7 PRs)
+
+`python3 -m pytest tests/` → 764 passed (creciendo con cada PR), 8
+xfailed (conocidos), 3 xpassed (conocidos), sin fallas inesperadas en
+ninguno de los 7 PRs tras la corrección retroactiva correspondiente.
+`python3 scripts/validar_configs.py` → OK en los 7. Cada PR se verificó
+contra el corpus completo de `data/historico_fuentes_texto.jsonl` antes
+de cada commit, con `PYTHONHASHSEED=0` fijo.

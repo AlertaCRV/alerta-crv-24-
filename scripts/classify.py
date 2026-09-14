@@ -1239,6 +1239,31 @@ def _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# Mismo patron que _es_boletin_estadistico_salud_sin_alarma() (para
+# salud_publica), para orden_publico: un reportaje puramente ESTADISTICO Y
+# RETROSPECTIVO ("Radiografia de la protesta: 1.461 manifestaciones...
+# primeros OCHO MESES del año... Distrito Capital encabezo la lista con 97
+# protestas... Zulia con 43... Tachira con 41...") -- un ranking acumulado
+# de 8 meses, sin ningun hecho puntual de disturbio el dia de publicacion,
+# generaba 6 alertas identicas (una por cada estado del ranking, la misma
+# hora "11:00:00" por defecto en las 6) de orden_publico. A diferencia de
+# la "queja cronica" (sin filtro general por el riesgo de descartar
+# coberturas legitimas de conflictos laborales reales y sostenidos, ver
+# docs/roadmap_evolucion.md), este es un caso mucho mas acotado y sin
+# ambiguedad: un reportaje de datos agregados de un medio, no una
+# cobertura de un conflicto especifico. Se verifico contra las 355 fuentes
+# de data/historico_fuentes_texto.jsonl que la frase es exclusiva de este
+# articulo (sus 6 instancias, una por estado).
+_MARCADORES_RADIOGRAFIA_ESTADISTICA_PROTESTA = ["radiografia de la protesta"]
+
+
+def _es_radiografia_estadistica_protesta_sin_hecho_actual(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_RADIOGRAFIA_ESTADISTICA_PROTESTA):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("orden_publico", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
 # Caso real (14-08-2026, PASADO_POR_FALLA_TECNICA): "Madres y activistas
 # presentaron un libro que documenta la represión poselectoral del 28 de
 # julio de 2024 en Venezuela" -- una nota sobre la PRESENTACION de un
@@ -3206,6 +3231,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
                     break
                 if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
+                    break
+                if tipo == "orden_publico" and _es_radiografia_estadistica_protesta_sin_hecho_actual(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
