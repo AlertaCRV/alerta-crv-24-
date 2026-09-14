@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-14T16:09:45.155955+00:00",
+  "actualizado": "2026-09-14T16:15:27.481070+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-13T18:31:27+00:00"
   },
-  "total_eventos": 352,
+  "total_eventos": 349,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
@@ -24,12 +24,12 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "emergencia_metro": 3,
-    "ataque_armado": 4
+    "ataque_armado": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 60,
+      "total": 58,
       "confirmados": 4
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "estado": "Miranda",
-      "total": 20,
+      "total": 19,
       "confirmados": 2
     },
     {
@@ -188,7 +188,6 @@
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 2,
-      "ataque_armado": 2,
       "crisis_migratoria": 1,
       "salud_publica": 3,
       "infraestructura_agua": 1
@@ -263,7 +262,6 @@
       "deslizamiento": 2,
       "inundacion": 5,
       "orden_publico": 5,
-      "ataque_armado": 1,
       "emergencia_metro": 1
     },
     "Nueva Esparta": {
@@ -333,7 +331,7 @@
   "por_severidad": {
     "alto": 17,
     "critico": 28,
-    "sin_clasificar": 294,
+    "sin_clasificar": 291,
     "medio": 4,
     "bajo": 9
   },
@@ -416,7 +414,7 @@
       "2026-09": 1
     },
     "ataque_armado": {
-      "2026-08": 4
+      "2026-08": 1
     }
   }
 }

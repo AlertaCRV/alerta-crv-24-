@@ -1507,32 +1507,6 @@
     "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 31/08/2026, 8:16 p.m.\n🔎 Detectado por el sistema: 01/09/2026, 8:08 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
   },
   {
-    "tipo": "ataque_armado",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/el-megafono/ddhh-olvidados/618518/a-jesus-medina-le-quitaron-hasta-los-juguetes-de-su-sobrino/",
-        "fecha": "2026-08-30T13:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-08-30T13:00:00+00:00",
-    "fecha_evento_temprana": "2026-08-30T13:00:00+00:00",
-    "fecha_deteccion": "2026-08-30T23:57:09.984153+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "ataque_armado::Miranda::2026-08-30",
-    "titulo": "Ataque armado en Miranda",
-    "texto": "📌 Ataque armado en Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 30/08/2026, 9:00 a.m.\n🔎 Detectado por el sistema: 30/08/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/el-megafono/ddhh-olvidados/618518/a-jesus-medina-le-quitaron-hasta-los-juguetes-de-su-sobrino/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Yaracuy",
     "municipio": null,

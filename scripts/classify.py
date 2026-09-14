@@ -1434,6 +1434,28 @@ _MARCADORES_CAPTURA_FUGITIVO = [
     # ataque armado ocurriendo. Termino exclusivo de este tipo de nota
     # (migracion/deportaciones), frecuente en coberturas sobre venezolanos.
     "centro de confinamiento del terrorismo", "cecot",
+    # Ampliado (auditoria exhaustiva mensual, 14-09-2026): dos casos reales
+    # mas del mismo patron de fondo, sin ningun ataque armado ocurriendo:
+    # 1) "...enfocado en la prevencion de lavado de activos y financiamiento
+    #    al terrorismo (ALD/CFT)" -- una jornada de capacitacion bancaria
+    #    del BCV sobre estandares de cumplimiento normativo (ALD/CFT es la
+    #    sigla estandar de la industria para "Anti-Lavado de Dinero/Combate
+    #    al Financiamiento del Terrorismo"), disparaba tipo=ataque_armado
+    #    solo por la frase de cumplimiento regulatorio.
+    # 2) "...senalo Tarazona... despues de que fuera diferida su audiencia
+    #    de juicio por los delitos de terrorismo..." -- una audiencia
+    #    judicial APLAZADA (ni captura ni excarcelacion ni sobreseimiento,
+    #    los tres estados procesales ya cubiertos arriba, sino un cuarto:
+    #    el aplazamiento) sobre cargos de terrorismo contra un preso
+    #    politico, sin ningun ataque en curso.
+    # 3) (mismo marcador que el caso 1) "El ingeniero de 40 anos fue
+    #    acusado de financiamiento al terrorismo y asociacion para
+    #    delinquir" -- perfil de derechos humanos de otro preso politico,
+    #    la acusacion misma (sin veredicto ni hecho violento) es el unico
+    #    contexto. Se verifico contra las 355 fuentes de
+    #    data/historico_fuentes_texto.jsonl que ambas frases son exclusivas
+    #    de estos 3 articulos.
+    "financiamiento al terrorismo", "diferida su audiencia",
 ]
 
 
