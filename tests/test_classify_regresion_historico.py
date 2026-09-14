@@ -87,6 +87,26 @@ _LIMITACIONES_CONOCIDAS = {
         "porque la segunda fuente del cluster (El Periodico de Monagas) SI "
         "nombra 'Maracaibo, estado Zulia' explicitamente."
     ),
+    # Caso real (13-09-2026, auditoria diaria): se agrego
+    # _es_vocero_meteorologico_citado() (classify.py) para descartar el
+    # alias "Vargas" (La Guaira) cuando en realidad cita al meteorologo
+    # Luis Vargas en un boletin rutinario de pronostico, sin ninguna
+    # inundacion real (ver docs/roadmap_evolucion.md). El evento del
+    # 23-08-2026 fusiona esta fuente ("El Impulso (Lara)", el boletin
+    # rutinario, ahora correctamente descartada de forma aislada) con "La
+    # Patilla" (un rescate real en una alcantarilla en La Rinconada,
+    # Caracas, cuyo propio texto nombra "los estados Miranda y La Guaira"
+    # como zona afectada por la misma onda tropical) -- el evento fusionado
+    # sigue siendo correcto porque La Patilla, de forma aislada, SI resuelve
+    # a La Guaira (ver test parametrizado "La Guaira::La Patilla").
+    "inundacion::La Guaira::El Impulso (Lara)": (
+        "Boletin rutinario de pronostico (meteorologo Luis Vargas, alias de "
+        "La Guaira) -- ahora correctamente descartado de forma aislada por "
+        "_es_vocero_meteorologico_citado(). El evento fusionado (23-08-2026) "
+        "sigue siendo correcto porque la otra fuente del cluster (La "
+        "Patilla, sobre un rescate real en Caracas) SI nombra La Guaira "
+        "como estado afectado por la misma onda tropical."
+    ),
 }
 
 

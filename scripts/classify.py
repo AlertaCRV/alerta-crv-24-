@@ -1628,6 +1628,31 @@ def _es_anuncio_tarifario_metro_sin_falla_real(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_EMERGENCIA_METRO)
 
 
+# Caso real (13-09-2026, PASADO_POR_FALLA_TECNICA): "Victima detalla como
+# opera banda de mujeres que roba carteras en el C.C. El Recreo" trata
+# enteramente sobre un robo de cartera en un centro comercial de Caracas --
+# disparaba tipo=emergencia_metro solo porque, al final del articulo,
+# aparece lo que parece el contenido de un tuit incrustado citando, sin
+# fecha, una queja generica y ya conocida sobre robos en el Metro de
+# Caracas: "Asimismo, se han hecho publicas denuncias en sitios de alta
+# concurrencia masiva como el Metro de Caracas, donde los usuarios reportan
+# sentirse en total desproteccion." Mismo patron que
+# _es_anuncio_tarifario_metro_sin_falla_real (una frase introductoria
+# generica, reutilizando la misma lista de evidencia fuerte). Se verifico
+# contra las 355 fuentes de data/historico_fuentes_texto.jsonl que la frase
+# es exclusiva de este articulo.
+_MARCADORES_DENUNCIA_GENERICA_METRO = [
+    "se han hecho publicas denuncias",
+    "se han hecho públicas denuncias",
+]
+
+
+def _es_denuncia_generica_metro_sin_falla_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_DENUNCIA_GENERICA_METRO):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_EMERGENCIA_METRO)
+
+
 # Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): un tuit citado dentro de
 # una nota sobre fallas electricas en Baruta/El Hatillo decia "Luego de mes
 # y pico sin agua en Los Naranjos en el Hatillo, Caracas, hoy llego asi que
@@ -1754,6 +1779,35 @@ def _es_anuncio_corpoelec_sin_falla(texto_norm):
     if not _contiene_palabra_clave(texto_norm, "corpoelec"):
         return False
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): "Despliegue especial de
+# distribución de gas licuado beneficia a 434 familias en la parroquia
+# Quintero de Apure... Las empresas Batalla de la Miel Gas y PDVSA Gas
+# Comunal desarrollaron un despliegue especial de distribucion de Gas
+# Licuado de Petroleo (GLP)..." -- un anuncio POSITIVO de un operativo de
+# distribucion de bombonas de gas domestico (sin ningun fuego/explosion)
+# disparaba tipo=incendio solo por la palabra clave "gas licuado", presente
+# en `config/keywords.yaml` para cubrir explosiones reales por fuga de gas
+# (ej. "Dos heridos por deflagracion de bombonas de gas... explosion
+# producida por cuatro cilindros de gas licuado de petroleo"). Mismo patron
+# que _es_anuncio_corpoelec_sin_falla: se evalua sobre el ARTICULO COMPLETO
+# porque el marcador institucional esta al inicio y la ausencia de
+# evidencia real de incendio no depende de proximidad. Se verifico contra
+# las 358 fuentes de data/historico_fuentes_texto.jsonl que la frase es
+# exclusiva de este articulo, y con un caso de control (la explosion real
+# de bombonas de gas, sin este marcador) que sigue publicandose sin
+# cambios.
+_MARCADORES_DISTRIBUCION_GAS_LICUADO = [
+    "distribucion de gas licuado", "distribución de gas licuado",
+]
+
+
+def _es_distribucion_de_gas_licuado_sin_incendio_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_DISTRIBUCION_GAS_LICUADO):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("incendio", [])
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
@@ -2407,6 +2461,52 @@ def _es_mencion_de_persona_citada(tokens, pos):
     return False
 
 
+# Caso real (13-09-2026, PASADO_POR_FALLA_TECNICA): dos boletines de vaguada
+# ("...segun informo el meteorologo Luis Vargas" y "El meteorologo Luis
+# Vargas informo que...") disparaban ubicacion=La Guaira via el alias
+# "Vargas" -- ninguna caia en los chequeos de _es_mencion_de_persona_citada:
+# "informo" no esta en _VERBOS_ATRIBUCION_CITA, y en la primera construccion
+# el verbo queda 3 tokens antes de "Vargas" (verbo, articulo, "meteorologo",
+# nombre), fuera de las ventanas de 1-2 tokens ya cubiertas.
+# NO se agrego "informo" a _VERBOS_ATRIBUCION_CITA (el set generico, usado
+# para CUALQUIER estado, no solo apellidos ambiguos): es un verbo
+# institucional demasiado comun ("la gobernadora... informo la noticia",
+# "el SACS... informo sobre...") y hacerlo rompia, al correr la regresion
+# completa contra el corpus historico, dos menciones REALES de estado
+# (`deslizamiento::Guarico::El Tubazo Digital` y `salud_publica::Distrito
+# Capital::El Pitazo`) donde "informo" aparecia mas adelante en el mismo
+# parrafo citando a otra persona/organismo sin relacion con esa mencion de
+# estado -- la ventana de 12 tokens de `ventana_siguiente`, ya compartida
+# por TODOS los estados, es demasiado ancha para un verbo tan comun. Se
+# acota entonces a un chequeo aparte, especifico del patron "el/la
+# meteorologo/a NOMBRE APELLIDO", que solo reconoce "informo"/"informa"/
+# "informan" como verbo de cita cuando el titulo de vocero meteorologico
+# esta pegado al nombre.
+_TITULOS_VOCERO_METEOROLOGICO = {"meteorologo", "meteorologa"}
+# "ofrecido"/"ofrecida" cubre una tercera construccion real (07-09-2026):
+# "de acuerdo con el reporte OFRECIDO este lunes por el meteorologo Luis
+# Vargas" -- "el reporte ofrecido... por" funciona aqui como participio de
+# cita, igual que "lo explicado por Vargas" (_PARTICIPIOS_ATRIBUCION_CITA),
+# pero no se agrega a ese set compartido (usado para TODOS los estados) por
+# la misma razon que "informo" no se agrego a _VERBOS_ATRIBUCION_CITA.
+_VERBOS_INFORME_METEOROLOGICO = {"informo", "informa", "informan", "ofrecido", "ofrecida"}
+_VENTANA_VERBO_INFORME_METEOROLOGICO = 6
+
+
+def _es_vocero_meteorologico_citado(tokens, pos):
+    """True si el token en `pos` (un apellido-alias de estado, p.ej.
+    "vargas") viene precedido 2 tokens antes por un titulo de vocero
+    meteorologico ("el/la meteorologo/a Nombre <apellido>"), con un verbo de
+    informe cerca -- antes del titulo o justo despues del apellido (ver
+    comentario arriba)."""
+    if pos < 2 or tokens[pos - 2] not in _TITULOS_VOCERO_METEOROLOGICO:
+        return False
+    verbos = _VERBOS_ATRIBUCION_CITA | _VERBOS_INFORME_METEOROLOGICO
+    ventana_izq = tokens[max(0, pos - 2 - _VENTANA_VERBO_INFORME_METEOROLOGICO): pos - 2]
+    ventana_der = tokens[pos + 1: pos + 1 + _VENTANA_VERBO_INFORME_METEOROLOGICO]
+    return any(t in verbos for t in ventana_izq) or any(t in verbos for t in ventana_der)
+
+
 # Caso real (20-08-2026, PASADO_POR_FALLA_TECNICA): "el Gobierno
 # estadounidense afirmo que los migrantes estaban vinculados con la
 # organizacion criminal Tren de Aragua" -- en un articulo sobre
@@ -2462,6 +2562,7 @@ def _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posicione
         and not _es_mencion_direccional(tokens, i, candidato_tokens)
         and not _es_mencion_de_persona_citada(tokens, i)
         and not _es_mencion_tren_de_aragua(tokens, i)
+        and not _es_vocero_meteorologico_citado(tokens, i)
     ]
     posiciones_otros_estados = None
     if posiciones_estados:
@@ -2851,7 +2952,11 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "incendio" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm):
                     break
+                if tipo == "incendio" and _es_distribucion_de_gas_licuado_sin_incendio_real(texto_completo_norm):
+                    break
                 if tipo == "emergencia_metro" and _es_anuncio_tarifario_metro_sin_falla_real(texto_completo_norm):
+                    break
+                if tipo == "emergencia_metro" and _es_denuncia_generica_metro_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_agua" and _es_agua_restablecida_sin_falla_actual(texto_completo_norm):
                     break
