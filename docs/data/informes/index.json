@@ -97,27 +97,11 @@
   },
   {
     "periodo": "2026-09",
-    "tipo": "emergencia_metro",
-    "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
-    "cerrado": false,
-    "generado": "2026-09-14T01:48:23.531295+00:00",
-    "total_eventos": 2
-  },
-  {
-    "periodo": "2026-09",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
     "generado": "2026-09-14T01:48:10.478531+00:00",
     "total_eventos": 3
-  },
-  {
-    "periodo": "2026-09",
-    "tipo": "colapso_estructural",
-    "tipo_label": "Colapso estructural",
-    "cerrado": false,
-    "generado": "2026-09-14T01:47:57.155395+00:00",
-    "total_eventos": 1
   },
   {
     "periodo": "2026-08",
