@@ -39,10 +39,6 @@ rss:
   - nombre: "Tal Cual"
     url: "https://talcualdigital.com/feed/"
     peso: 0.6
-  - nombre: "El Luchador (Bolivar)"
-    url: "https://elluchador.info/?feed=rss2"
-    peso: 0.75
-    region: "Bolivar"
   - nombre: "Diario La Nacion (Tachira)"
     url: "https://lanacionweb.com/feed/"
     peso: 0.55
@@ -99,10 +95,6 @@ rss:
     url: "https://www.guatire.com/feed/"
     peso: 0.5
     region: "Miranda"
-  - nombre: "Diario La Region (Miranda)"
-    url: "https://diariolaregion.net/feed/"
-    peso: 0.55
-    region: "Miranda"
   - nombre: "El Tubazo Digital (Guarico)"
     url: "https://eltubazodigital.com/feed/"
     peso: 0.55
@@ -114,6 +106,10 @@ rss:
   - nombre: "Yaracuy al Dia"
     url: "https://yaracuyaldia.com/feed/"
     peso: 0.55
+    region: "Yaracuy"
+  - nombre: "Yaravision (Yaracuy)"
+    url: "https://notiyaradigital.com/feed/"
+    peso: 0.75
     region: "Yaracuy"
   - nombre: "Turimiquire (Sucre)"
     url: "https://turimiquire.net/feed/"
@@ -127,22 +123,18 @@ rss:
     url: "https://eldeltano.com/feed/"
     peso: 0.55
     region: "Delta Amacuro"
+  - nombre: "Diario El Vistazo (Anzoategui)"
+    url: "https://diarioelvistazo.com/feed/"
+    peso: 0.75
+    region: "Anzoategui"
   - nombre: "La Prensa de Lara"
     url: "https://laprensadelara.com/feed/"
     peso: 0.55
     region: "Lara"
-  - nombre: "Notiespartano (Nueva Esparta)"
-    url: "https://notiespartano.com/feed/"
-    peso: 0.55
-    region: "Nueva Esparta"
   - nombre: "Reporte Confidencial (Nueva Esparta)"
     url: "https://reporteconfidencial.info/feed/"
     peso: 0.6
     region: "Nueva Esparta"
-  - nombre: "La Prensa de Cojedes"
-    url: "https://laprensadecojedes.com/?feed=rss2"
-    peso: 0.55
-    region: "Cojedes"
   - nombre: "Desde La Guaira"
     url: "https://desdelaguaira.com/feed/"
     peso: 0.55
@@ -167,10 +159,6 @@ rss:
     url: "https://noticiasdeaqui.co/feed/"
     peso: 0.55
     region: "Anzoategui"
-  - nombre: "Ciudad MCY (Aragua)"
-    url: "http://www.ciudadmcy.info.ve/feed/"
-    peso: 0.55
-    region: "Aragua"
   - nombre: "Portuguesa al Dia"
     url: "http://www.portuguesaaldia.com/feed/"
     peso: 0.55
