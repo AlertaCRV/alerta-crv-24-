@@ -1422,6 +1422,153 @@ def _es_queja_cronica_electrica_sin_hecho_verificable(texto_norm):
     return True
 
 
+# Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): "Unicamente el 5% de
+# las industrias del estado Lara pueden generar la electricidad que
+# necesitan... Gil Lemos, presidente de la Camara de Industriales del
+# estado Lara, senalo que el 56% de la industria de la entidad tiene
+# generacion electrica, pero solo el 5% se autogenera el 100%... en el
+# primer trimestre de 2026, el 46% de las horas operativas de la industria
+# en el estado Lara tuvo apagones electricos, pero en el segundo trimestre
+# paso al 57%" -- una declaracion GREMIAL con cifras estadisticas
+# comparando trimestres (un informe estructural sobre capacidad de
+# autogeneracion industrial, no la descripcion de un corte nuevo y
+# puntual) disparaba tipo=infraestructura_electrica solo por la palabra
+# "apagones", identica al patron ya resuelto para la queja cronica
+# individual pero con lenguaje distinto (cifras trimestrales, no "todos
+# los dias"/"a diario"). Se verifico contra las 326 fuentes de
+# data/historico_fuentes_texto.jsonl que "camara de industriales" es
+# exclusiva de este articulo (publicado por 2 medios distintos, ambos con
+# el mismo texto de fondo).
+_MARCADORES_INFORME_CAMARA_INDUSTRIALES = ["camara de industriales", "cámara de industriales"]
+_MARCADORES_ESTADISTICA_TRIMESTRAL_ELECTRICA = [
+    "trimestre", "autogenera", "autogeneran", "autogeneracion", "autogeneración",
+]
+
+
+def _es_informe_camara_industriales_sin_falla_actual(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_INFORME_CAMARA_INDUSTRIALES):
+        return False
+    return any(m in texto_norm for m in _MARCADORES_ESTADISTICA_TRIMESTRAL_ELECTRICA)
+
+
+# Caso real (13-09-2026, PASADO_POR_FALLA_TECNICA): "Domingo sin servicio
+# electrico en estos sectores de Maturin... este domingo 13 de septiembre,
+# la Corporacion Electrica Nacional (Corpoelec) realizara mantenimiento
+# preventivo en la subestacion San Jaime... El despliegue tecnico se
+# llevara a cabo en una jornada programada desde las 9:00 de la manana
+# hasta la 1:00 de la tarde" -- un ANUNCIO de Corpoelec sobre una
+# interrupcion PROGRAMADA de mantenimiento (con ventana horaria fija,
+# anunciada con antelacion) disparaba tipo=infraestructura_electrica via
+# la evidencia fuerte "sin servicio electrico" del propio titular, lo que
+# impide que _es_anuncio_corpoelec_sin_falla() lo descarte (esa funcion
+# exige AUSENCIA total de evidencia fuerte). Un mantenimiento preventivo
+# programado, con horario de inicio y fin anunciados de antemano, no es
+# una falla -- es lo opuesto: una interrupcion controlada y planificada
+# para PREVENIR fallas futuras. Se verifico contra las 326 fuentes de
+# data/historico_fuentes_texto.jsonl que "jornada programada" es exclusiva
+# de este articulo (las otras 7 menciones de "mantenimiento preventivo" en
+# el corpus corresponden a coberturas de otro tipo -- inundacion, sismo,
+# infraestructura_agua -- sin relacion con este patron).
+_MARCADORES_MANTENIMIENTO_PROGRAMADO_ELECTRICO = ["mantenimiento preventivo"]
+_MARCADORES_JORNADA_PROGRAMADA_ELECTRICA = ["jornada programada"]
+
+
+def _es_mantenimiento_electrico_programado_sin_falla_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_MANTENIMIENTO_PROGRAMADO_ELECTRICO):
+        return False
+    return any(m in texto_norm for m in _MARCADORES_JORNADA_PROGRAMADA_ELECTRICA)
+
+
+# Caso real (12-09-2026, PASADO_POR_FALLA_TECNICA): "Jovenes de #VenteSucre
+# exigen elecciones presidenciales YA en el marco del Primer Pleno Juvenil
+# regional del Partido Liberal en la Entidad... el recorrido de una
+# caravana por el centro historico de Cumana, asi como alguno otros
+# sectores la sufrida sultana de Manzanares que tiene mas de cuatro meses
+# con sin agua, con sequia que vislumbra una prolongacion en el tiempo,
+# por el colapso de complejo hidrico turimiquire" -- la cobertura de un
+# EVENTO POLITICO-PARTIDISTA (el pleno juvenil regional de un partido)
+# disparaba tipo=infraestructura_agua Y tipo=sequia en Sucre (dos tipos
+# distintos, por "sin agua" y "sequia" respectivamente) por una mencion de
+# pasada, dentro de la descripcion del recorrido de la caravana, sobre la
+# falta de agua CRONICA (mas de 4 meses) de un sector -- no es el tema del
+# articulo, ni un hecho nuevo. A diferencia de coberturas reales de fallas
+# de agua (donde la falta de agua ES el tema central, ej. "Tubores suma
+# mas de 6 meses sin agua por tuberia"), aqui es una frase incidental
+# dentro de la cronica de un mitin. Por eso, igual que
+# _es_informe_semestral_servicios_sin_hecho_actual, se evalua sobre el
+# ARTICULO COMPLETO y descarta el articulo entero (no solo un tipo), ya
+# que la misma frase incidental dispara ambos tipos. Se verifico contra
+# las 326 fuentes de data/historico_fuentes_texto.jsonl que "pleno
+# juvenil" es exclusiva de este articulo, y con 3 casos de control
+# (coberturas reales de fallas de agua cronicas de meses de duracion,
+# donde la falta de agua SI es el tema del articulo) que siguen
+# publicandose sin cambios.
+_MARCADORES_EVENTO_PARTIDISTA_SIN_TEMA_DE_SERVICIOS = ["pleno juvenil"]
+
+
+def _es_evento_partidista_con_mencion_incidental_de_servicios(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_EVENTO_PARTIDISTA_SIN_TEMA_DE_SERVICIOS)
+
+
+# Caso real (12-09-2026, PASADO_POR_FALLA_TECNICA): "OVP: Calabozos del
+# Cicpc operan como una red de carceles paralelas... El Observatorio
+# Venezolano de Prisiones (OVP) documento que 7.414 personas permanecen
+# recluidas... registran actualmente un promedio de permanencia de 615
+# dias por persona... encerrar a tanta gente en celdas tan pequenas...
+# desato brotes graves de sarna, desnutricion y tuberculosis. El OVP
+# destaca que el 51,1% de las personas detenidas se aglomera en apenas
+# cinco entidades, lideradas por el Distrito Capital... seguido por el
+# estado Zulia... Miranda... Carabobo... y Aragua" -- un informe
+# ESTADISTICO NACIONAL de una ONG sobre hacinamiento carcelario CRONICO
+# (acumulado "desde hace mas de una decada"), que reparte cifras entre 5
+# estados, disparaba tipo=salud_publica en Distrito Capital via
+# "tuberculosis"/"desnutricion" -- mismo patron de fondo que el informe
+# del OVCS sobre protestas (ver _MARCADORES_RECLAMO_TERCERO_MULTIESTADO),
+# pero para un tipo distinto (salud_publica, no orden_publico), asi que no
+# lo cubre ese mecanismo. A diferencia de las coberturas reales del mismo
+# observatorio (OVP) sobre muertes especificas de reclusos por fallas
+# renales/hepatitis en fechas puntuales -- esas SI siguen publicandose,
+# porque describen un hecho concreto y nuevo, no un promedio historico. Se
+# verifico contra las 326 fuentes de data/historico_fuentes_texto.jsonl
+# que "se aglomera en" es exclusiva de este articulo, y con las otras 8
+# menciones de "Observatorio Venezolano de Prisiones" en el corpus (todas
+# denuncias de muertes puntuales de reclusos) que siguen publicandose sin
+# cambios.
+_MARCADORES_INFORME_NACIONAL_HACINAMIENTO_CARCELARIO = ["se aglomera en"]
+
+
+def _es_informe_nacional_hacinamiento_carcelario_sin_hecho_actual(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_INFORME_NACIONAL_HACINAMIENTO_CARCELARIO)
+
+
+# Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): "Monitor Ciudad:
+# aumentar produccion petrolera sin reparar el sistema electrico agravara
+# los apagones en Venezuela... El informe SEMESTRAL de la organizacion
+# documenta fallas recurrentes en agua, electricidad y gas... la
+# organizacion calcula que las familias pasan un promedio de 58 horas de
+# una semana de 168 horas sin agua" -- el informe semestral de una ONG
+# (Monitor Ciudad) que promedia cifras NACIONALES de varios servicios a lo
+# largo de TODO un semestre, sin ningun hecho puntual nuevo ese dia,
+# disparaba tipo=infraestructura_agua en Distrito Capital solo por la
+# frase "sin agua" dentro de un promedio semanal generico -- el articulo
+# en realidad es una advertencia SOBRE EL FUTURO ("podria llevar al pais a
+# enfrentar nuevos apagones" si aumenta la produccion petrolera, "tendremos
+# que apagar ciudades enteras"), no la descripcion de una falla de agua
+# actual en Caracas. Ademas del tipo=agua, el mismo articulo tambien
+# dispara tipo=infraestructura_electrica por la misma razon de fondo (el
+# informe tambien promedia cifras de electricidad) -- por eso, a
+# diferencia de los filtros de arriba (que solo descartan un tipo), este
+# se evalua sobre el ARTICULO COMPLETO y descarta el articulo entero,
+# mismo espiritu que _es_articulo_retrospectivo_larga_duracion. Se
+# verifico contra las 326 fuentes de data/historico_fuentes_texto.jsonl
+# que "informe semestral" es exclusiva de este articulo.
+_MARCADORES_INFORME_SEMESTRAL_SERVICIOS = ["informe semestral"]
+
+
+def _es_informe_semestral_servicios_sin_hecho_actual(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_INFORME_SEMESTRAL_SERVICIOS)
+
+
 # Caso real (12-08-2026): "Artefacto explosivo en centro comercial de
 # Baruta" -- el titular sensacionalista disparaba tipo=explosion via la
 # palabra clave "artefacto explosivo", pero el propio texto aclara, varios
@@ -3208,6 +3355,18 @@ def detectar_tipo(texto, ventana=None):
     # _es_convocatoria_protesta_futura_sin_hecho_actual).
     if _es_convocatoria_protesta_futura_sin_hecho_actual(texto_completo_norm):
         return []
+    # Igual que los dos anteriores: un informe semestral estadistico que
+    # promedia cifras nacionales de varios servicios (agua, electricidad,
+    # gas) no es un hecho nuevo, sin importar cual de esos tipos dispare
+    # (ver _es_informe_semestral_servicios_sin_hecho_actual).
+    if _es_informe_semestral_servicios_sin_hecho_actual(texto_completo_norm):
+        return []
+    # Igual que el informe semestral: la cobertura de un evento
+    # politico-partidista que solo menciona una falla de servicio cronica
+    # de pasada (ver _es_evento_partidista_con_mencion_incidental_de_servicios)
+    # dispara mas de un tipo (agua Y sequia) con la misma frase incidental.
+    if _es_evento_partidista_con_mencion_incidental_de_servicios(texto_completo_norm):
+        return []
     tipos_encontrados = []
     for tipo, palabras in load_keywords()["tipos"].items():
         for palabra in palabras:
@@ -3228,6 +3387,8 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "salud_publica" and _es_boletin_estadistico_salud_sin_alarma(texto_completo_norm):
                     break
+                if tipo == "salud_publica" and _es_informe_nacional_hacinamiento_carcelario_sin_hecho_actual(texto_completo_norm):
+                    break
                 if tipo == "orden_publico" and _es_manifestacion_pacifica_sin_evidencia_fuerte(texto_completo_norm):
                     break
                 if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
@@ -3241,6 +3402,10 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_falla_electrica_ya_resuelta_sin_falla_actual(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_informe_camara_industriales_sin_falla_actual(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_mantenimiento_electrico_programado_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "explosion" and _es_cartucho_lacrimogeno_sin_explosivo_real(texto_completo_norm):
                     break
