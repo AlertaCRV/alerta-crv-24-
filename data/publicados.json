@@ -1,11 +1,4 @@
 {
-  "sismo::Zulia::2026-09-10::mag4.0": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-10T23:54:13.762413+00:00",
-    "fecha_evento_temprana": "2026-09-10T18:41:14+00:00",
-    "municipio": "Catatumbo"
-  },
   "infraestructura_agua::Barinas::2026-09-11": {
     "severidad": "sin_clasificar",
     "confirmado": false,
