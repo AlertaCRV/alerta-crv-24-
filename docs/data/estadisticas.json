@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-14T16:42:54.119801+00:00",
+  "actualizado": "2026-09-14T16:46:38.276119+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-13T16:34:21+00:00"
   },
-  "total_eventos": 332,
+  "total_eventos": 326,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 62,
     "infraestructura_electrica": 84,
     "deslizamiento": 23,
     "colapso_estructural": 3,
-    "orden_publico": 66,
+    "orden_publico": 60,
     "salud_publica": 10,
     "crisis_migratoria": 5,
     "incendio": 23,
@@ -29,17 +29,17 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 56,
+      "total": 55,
       "confirmados": 4
     },
     {
       "estado": "Lara",
-      "total": 28,
+      "total": 27,
       "confirmados": 1
     },
     {
       "estado": "Zulia",
-      "total": 25,
+      "total": 24,
       "confirmados": 4
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "estado": "Miranda",
-      "total": 17,
+      "total": 16,
       "confirmados": 2
     },
     {
@@ -74,12 +74,12 @@
     },
     {
       "estado": "Sucre",
-      "total": 14,
+      "total": 13,
       "confirmados": 0
     },
     {
       "estado": "Bolivar",
-      "total": 14,
+      "total": 13,
       "confirmados": 1
     },
     {
@@ -154,7 +154,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 4,
+      "orden_publico": 3,
       "infraestructura_electrica": 6,
       "sismo": 1,
       "deslizamiento": 1,
@@ -170,7 +170,7 @@
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 3,
+      "orden_publico": 2,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -180,7 +180,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 14,
+      "orden_publico": 13,
       "incendio": 9,
       "vialidad": 2,
       "infraestructura_electrica": 9,
@@ -210,7 +210,7 @@
     },
     "Sucre": {
       "inundacion": 2,
-      "orden_publico": 6,
+      "orden_publico": 5,
       "infraestructura_electrica": 4,
       "infraestructura_agua": 2
     },
@@ -224,7 +224,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 6,
-      "orden_publico": 3,
+      "orden_publico": 2,
       "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1
@@ -258,7 +258,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 5
+      "orden_publico": 4
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -325,7 +325,7 @@
   "por_severidad": {
     "alto": 15,
     "critico": 26,
-    "sin_clasificar": 278,
+    "sin_clasificar": 272,
     "medio": 4,
     "bajo": 9
   },
@@ -356,7 +356,7 @@
     },
     "orden_publico": {
       "2026-07": 2,
-      "2026-08": 50,
+      "2026-08": 44,
       "2026-09": 14
     },
     "salud_publica": {
