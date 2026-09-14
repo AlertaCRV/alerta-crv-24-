@@ -1563,6 +1563,67 @@ def _es_boletin_pronostico_inameh_sin_evidencia_real(texto_norm, tipo):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
 
 
+# Tres variantes reales (auditoria exhaustiva mensual, 14-09-2026) del mismo
+# patron de fondo para inundacion: el articulo describe un problema CRONICO
+# o FUTURO, no una inundacion ocurriendo hoy, mismo espiritu que
+# _es_queja_cronica_electrica_sin_hecho_verificable() para infraestructura
+# electrica pero sin equivalente hasta ahora para este tipo:
+# 1) "Con el compromiso de acabar con 30 AÑOS DE INUNDACIONES... los
+#    trabajos de drenaje y asfaltado... avanza en su ejecucion" -- una obra
+#    vial YA EN CURSO que resuelve un problema historico, no una inundacion
+#    actual.
+# 2) "ONG Campo EXIGE POLITICAS PUBLICAS DE PREVENCION ante inundaciones en
+#    Yaracuy" -- una demanda de politica publica FUTURA/preventiva, sin
+#    ningun hecho puntual de inundacion ese dia.
+# 3) "...familias afectadas por los eventos sismicos y las POSTERIORES
+#    INUNDACIONES en el municipio Veroes" -- una jornada de asistencia
+#    social que menciona, de pasada, inundaciones YA OCURRIDAS (sismos de
+#    junio), no una inundacion nueva.
+# Se verifico contra las 355 fuentes de data/historico_fuentes_texto.jsonl
+# que las 3 frases son exclusivas de sus respectivos articulos.
+_MARCADORES_INUNDACION_SIN_HECHO_ACTUAL = [
+    "anos de inundaciones", "años de inundaciones",
+    "exige politicas publicas de prevencion",
+    "exige políticas públicas de prevención",
+]
+# "Posteriores inundaciones" se trata aparte, DECISIVO sin importar
+# evidencia fuerte: la frase misma ya establece que son inundaciones YA
+# OCURRIDAS (posteriores a los sismos), a diferencia de los dos marcadores
+# de arriba -- caso real: "...familias afectadas por los eventos sismicos y
+# las posteriores inundaciones..." trae "familias afectadas" (evidencia
+# fuerte), pero describe a las familias YA afectadas por el evento pasado
+# que esta jornada de ayuda social atiende, no una inundacion nueva.
+_MARCADORES_INUNDACION_POSTERIOR_DECISIVOS = ["posteriores inundaciones"]
+
+
+def _es_inundacion_cronica_o_futura_sin_hecho_actual(texto_norm):
+    if any(m in texto_norm for m in _MARCADORES_INUNDACION_POSTERIOR_DECISIVOS):
+        return True
+    if not any(m in texto_norm for m in _MARCADORES_INUNDACION_SIN_HECHO_ACTUAL):
+        return False
+    fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("inundacion", [])
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+
+
+# Mismo patron que _es_agua_restablecida_sin_falla_actual() e
+# _es_falla_electrica_ya_resuelta_sin_falla_actual(), para
+# colapso_estructural: "El Embalse Turimiquire... REINICIO este fin de
+# semana las maniobras de bombeo... luego de permanecer siete meses
+# completamente inoperativo debido a un colapso estructural... La
+# infraestructura ESTUVO FUERA DE SERVICIO DESDE febrero" -- un anuncio
+# POSITIVO de resolucion (7 meses despues) de un colapso ya reparado, no un
+# colapso nuevo. Se verifico contra las 355 fuentes de
+# data/historico_fuentes_texto.jsonl que la frase es exclusiva de este
+# articulo.
+_MARCADORES_COLAPSO_ESTRUCTURAL_RESUELTO = [
+    "estuvo fuera de servicio desde",
+]
+
+
+def _es_colapso_estructural_ya_resuelto_sin_falla_actual(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_COLAPSO_ESTRUCTURAL_RESUELTO)
+
+
 # "Derrumbe" (palabra clave de deslizamiento) es ambiguo en español entre un
 # movimiento de tierra/ladera y el desplome de una estructura por deterioro.
 # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Se derrumba techo de
@@ -1818,6 +1879,30 @@ _MARCADORES_DENUNCIA_GENERICA_METRO = [
 
 def _es_denuncia_generica_metro_sin_falla_real(texto_norm):
     if not any(m in texto_norm for m in _MARCADORES_DENUNCIA_GENERICA_METRO):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_EMERGENCIA_METRO)
+
+
+# Dos casos reales mas (auditoria exhaustiva mensual, 14-09-2026) del mismo
+# patron de fondo para emergencia_metro: anuncios/opiniones institucionales
+# sobre el Metro SIN ninguna falla real en curso, con marcadores distintos a
+# los dos ya cubiertos arriba:
+# 1) "La directiva del Metro de Caracas EVALUO junto al Ministerio de
+#    Energia Electrica... MEDIDAS DE AHORRO ENERGETICO... ante El Niño" --
+#    una reunion de planificacion preventiva, no una falla.
+# 2) "Hay que concluir las obras de El Metro... instó a COMPLETAR LA RED DEL
+#    METRO y fiscalizar el pavimento" -- una opinion/analisis tecnico de un
+#    ingeniero sobre obras inconclusas, no una falla actual.
+# Se verifico contra las 355 fuentes de data/historico_fuentes_texto.jsonl
+# que ambas frases son exclusivas de sus respectivos articulos.
+_MARCADORES_ANUNCIO_INSTITUCIONAL_METRO = [
+    "medidas de ahorro energetico", "medidas de ahorro energético",
+    "concluir obras del metro", "completar la red del metro",
+]
+
+
+def _es_anuncio_institucional_metro_sin_falla_real(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_ANUNCIO_INSTITUCIONAL_METRO):
         return False
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_EMERGENCIA_METRO)
 
@@ -3138,6 +3223,10 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo in ("inundacion", "tormenta_electrica") and _es_boletin_pronostico_inameh_sin_evidencia_real(texto_completo_norm, tipo):
                     break
+                if tipo == "inundacion" and _es_inundacion_cronica_o_futura_sin_hecho_actual(texto_completo_norm):
+                    break
+                if tipo == "colapso_estructural" and _es_colapso_estructural_ya_resuelto_sin_falla_actual(texto_completo_norm):
+                    break
                 if tipo == "deslizamiento" and _es_derrumbe_de_techo_no_deslizamiento(texto_completo_norm):
                     break
                 if tipo == "deslizamiento" and _es_derrumbe_de_puente_no_deslizamiento(texto_completo_norm):
@@ -3157,6 +3246,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "emergencia_metro" and _es_anuncio_tarifario_metro_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "emergencia_metro" and _es_denuncia_generica_metro_sin_falla_real(texto_completo_norm):
+                    break
+                if tipo == "emergencia_metro" and _es_anuncio_institucional_metro_sin_falla_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_agua" and _es_agua_restablecida_sin_falla_actual(texto_completo_norm):
                     break

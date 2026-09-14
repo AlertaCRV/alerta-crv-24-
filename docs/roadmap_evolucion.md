@@ -9141,3 +9141,59 @@ los 3 archivos de datos (ninguno seguía en la ventana activa de
 `2026-08_infraestructura_electrica.json` referencian fuentes retractadas;
 pendiente de regenerar en la próxima corrida con `GROQ_API_KEY`
 disponible.
+
+### PR 6/7: Alertas de inundación/colapso_estructural/emergencia_metro sin evidencia de hecho actual
+
+Seis alertas más publicadas sin ningún hecho puntual ocurriendo el día del
+artículo -- obras ya en ejecución, demandas de política pública futura,
+menciones retrospectivas, fallas ya resueltas, y reuniones/opiniones
+institucionales sin falla real. Mismo espíritu que
+`_es_queja_cronica_electrica_sin_hecho_verificable` (infraestructura
+eléctrica) y `_es_agua_restablecida_sin_falla_actual`/
+`_es_falla_electrica_ya_resuelta_sin_falla_actual`, extendido a tres tipos
+sin equivalente hasta ahora:
+
+- `inundacion::Zulia::2026-08-20` (La Verdad (Zulia)): "Con el compromiso
+  de acabar con 30 **años de inundaciones**... los trabajos de drenaje...
+  avanza en su ejecución" -- una obra vial en curso, no una inundación
+  actual.
+- `inundacion::Yaracuy::2026-08-21` (El Carabobeño): "ONG Campo **exige
+  políticas públicas de prevención** ante inundaciones" -- una demanda de
+  política futura, sin hecho puntual.
+- `inundacion::Yaracuy::2026-08-25` (Yaracuy al Día): "familias afectadas
+  por los eventos sísmicos y las **posteriores inundaciones**" -- mención
+  retrospectiva dentro de una jornada de asistencia social; decisivo sin
+  importar "familias afectadas" (evidencia fuerte que describe a las
+  familias ya afectadas por el hecho pasado, no uno nuevo).
+- `colapso_estructural::Nueva Esparta::2026-09-13` (El Periódico de
+  Monagas): "reinició... luego de permanecer siete meses... **estuvo
+  fuera de servicio desde** febrero" -- un colapso ya reparado.
+- `emergencia_metro::Distrito Capital::2026-08-21` (Reporte Confidencial):
+  "evaluó... **medidas de ahorro energético**" ante El Niño -- una
+  reunión de planificación.
+- `emergencia_metro::Miranda::2026-09-08` (Turimiquire (Sucre)): "instó a
+  **completar la red del Metro**" -- una opinión técnica sobre obras
+  inconclusas.
+
+**Corrección**: 3 funciones nuevas en `scripts/classify.py`:
+`_es_inundacion_cronica_o_futura_sin_hecho_actual()` (2 marcadores con
+resguardo de evidencia fuerte + 1 marcador decisivo, "posteriores
+inundaciones", que ignora la evidencia fuerte porque la frase misma ya
+establece retrospectividad); `_es_colapso_estructural_ya_resuelto_sin_falla_actual()`
+(marcador "estuvo fuera de servicio desde"); y
+`_es_anuncio_institucional_metro_sin_falla_real()` (2 marcadores nuevos,
+mismo patrón que los 2 filtros de `emergencia_metro` ya existentes). Se
+verificó contra las 355 fuentes de `data/historico_fuentes_texto.jsonl`
+que todos los marcadores son exclusivos de sus artículos, y con 3 casos
+de control (inundación real, colapso estructural real, falla real del
+Metro) que siguen publicándose sin cambios.
+
+**Corrección retroactiva**: se eliminaron por completo los 6 eventos de
+los 3 archivos de datos (2 seguían en la ventana activa de
+`docs/data/noticias.json`: el colapso de Nueva Esparta y la opinión sobre
+el Metro en Miranda).
+
+**Informes narrativos**: `docs/data/informes/2026-08_emergencia_metro.json`,
+`2026-09_emergencia_metro.json`, `2026-09_colapso_estructural.json` y
+`2026-09_general.json` referencian fuentes retractadas; pendiente de
+regenerar en la próxima corrida con `GROQ_API_KEY` disponible.
