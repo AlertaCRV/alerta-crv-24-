@@ -3,16 +3,20 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-14T14:15:59.756592+00:00",
-  "actualizado_hasta": "2026-09-12T17:55:21.119003+00:00",
-  "total_eventos": 17,
+  "generado": "2026-09-15T01:04:25.680712+00:00",
+  "actualizado_hasta": "2026-09-15T01:02:34.341181+00:00",
+  "total_eventos": 16,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 63,
-    "actual": 17
+    "anterior": 62,
+    "actual": 16
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 17 eventos de fallas eléctricas, una disminución notable frente a los 63 eventos del mes anterior (agosto) (Comparación proporcionada). Esta reducción se enmarca en una continuidad de la crisis eléctrica que afecta a gran parte del territorio nacional.\n\nEl 9 de septiembre, la oposición denunció un apagón que impactó al menos tres estados del occidente – Mérida, Barinas y Táchira – y provocó un fuerte bajón de luz en la capital, Caracas (La Nacion). El partido Vente Venezuela alertó en la red social X sobre la interrupción del suministro eléctrico en esas regiones, señalando la persistente degradación del sistema eléctrico nacional.\n\nEl 6 de septiembre se produjo una explosión en una subestación eléctrica frente al barrio Constitución, en la parroquia Libertad de Ciudad Ojeda, estado Zulia, que dejó sin electricidad a gran parte de la zona (La Verdad). El estruendo fue percibido por los habitantes y se atribuyó a una aparente falla en la infraestructura de la subestación, generando daños materiales en la red de distribución.\n\nEn Barquisimeto, estado Lara, fuertes lluvias provocaron la caída de árboles sobre cables de alta tensión, ocasionando bajones de luz y fallas en el servicio eléctrico en la urbanización Patarata 1 (sector B) y otras áreas (La Prensa de Lara). Las autoridades locales no han emitido un balance oficial, pero los residentes reportaron interrupciones prolongadas.\n\nAdemás, el 8 de septiembre se registró una fuerte fluctuación eléctrica que afectó a al menos 11 estados, entre ellos Caracas, Aragua, Miranda, y Lara, y provocó la caída de los servicios de banca digital y plataformas de pago durante aproximadamente una hora (El Pitazo). Los usuarios denunciaron que los bajones duraron entre 30 y 40 minutos, y en algunos casos el suministro no se restableció inmediatamente.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 16 eventos de fallas eléctricas, una disminución notable respecto a los 62 eventos del mes anterior (comparación con el período anterior). Esta reducción no implica la ausencia de problemas críticos, ya que varios incidentes causaron daños materiales y afectaron a la población.\n\nLa falla eléctrica más grave se concentró en el estado Lara, donde los cortes se extendieron de seis a siete horas diarias, obligando a familias y comercios de Barquisimeto a adquirir equipos de respaldo para evitar quedar a oscuras (El Impulso). El Observatorio de Bienes y Servicios del estado Lara alertó sobre fluctuaciones intensas el sábado, con bajones a las 15:25 y 15:37 horas, generando preocupación entre los habitantes (La Prensa de Lara). Además, los apagones en Lara aumentaron un 637 % en comparación con el año pasado, alcanzando 722 cortes y 2 874 horas sin luz en agosto de 2026 (El Impulso).\n\nEn otras regiones, la oposición denunció un apagón que afectó a Mérida, Barinas y Táchira el 9 de septiembre, señalando una fuerte caída de luz en la capital, Caracas (Diario La Nacion). Ese mismo día, una fluctuación eléctrica en al menos 11 estados, incluida Lara, provocó bajones de 30 a 40 minutos y, en Aragua y Miranda, el servicio no se restableció después de la segunda fluctuación (El Pitazo). El 8 de septiembre, la falla eléctrica también impactó la banca digital y plataformas de pago, generando interrupciones de al menos una hora en todo el país (El Pitazo).\n\nFinalmente, en el estado Zulia se registró una explosión en una subestación eléctrica en Ciudad Ojeda, que dejó sin energía a gran parte de la parroquia Libertad durante la madrugada del 6 de septiembre (La Verdad). Estos incidentes, aunque aislados, evidencian la persistente vulnerabilidad del sistema eléctrico nacional y la necesidad de medidas de mitigación y reparación.",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
+    },
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/oposicion-denuncia-un-apagon-en-varias-regiones-del-pais/"
@@ -24,14 +28,6 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/apagones-en-lara-se-disparan-un-637-en-comparacion-con-el-ano-pasado-2sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/"
-    },
-    {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/domingo-sin-servicio-electrico-en-estos-sectores-de-maturin/"
     },
     {
       "nombre": "El Pitazo",
@@ -92,10 +88,6 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/06/medianos-industriales-y-artesanos-del-estado-carabobo-exigen-electricidad-patra-poder-producir/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/11/unicamente-el-5-de-las-industrias-del-estado-lara-pueden-generar-la-electricidad-que-necesitan/"
     }
   ]
 }

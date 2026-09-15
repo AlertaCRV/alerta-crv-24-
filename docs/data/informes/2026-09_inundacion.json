@@ -3,35 +3,23 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-14T01:50:34.918537+00:00",
-  "actualizado_hasta": "2026-09-13T19:48:09.473183+00:00",
-  "total_eventos": 9,
+  "generado": "2026-09-15T01:04:52.374381+00:00",
+  "actualizado_hasta": "2026-09-07T23:39:19.022474+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 52,
-    "actual": 9
+    "anterior": 48,
+    "actual": 7
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 9 eventos de inundación, una reducción notable frente a los 52 eventos del mes anterior (agosto 2026). Esta disminución se da en medio de una serie de sistemas meteorológicos que incluyen una onda tropical y una vaguada que reforzaron la Zona de Convergencia Intertropical, generando lluvias intensas en distintas regiones del país (El Impulso).\\n\\nEn la ciudad de Guanare, estado Portuguesa, fuertes precipitaciones del 2 de septiembre provocaron anegaciones de viviendas y el colapso del canal del sector “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar un desbordamiento mayor (El Impulso; La Prensa de Lara).\\n\\nEn Barquisimeto, Lara, las lluvias acompañadas de vientos huracanados del 3 de septiembre causaron la caída de árboles sobre viviendas, daños estructurales en centros comerciales y anegaciones de calles, especialmente en la zona norte de la ciudad (El Pitazo). Simultáneamente, la Onda Tropical 43 generó inundaciones en vías de Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy, dejando comunidades agrícolas incomunicadas y refugiados en carpas expuestos a las aguas (Turimiquire).\\n\\nEn el estado Sucre, vecinos de Guarapiche protestaron el 2 de septiembre por el desbordamiento de aguas negras que afecta la salud pública, con ancianos hospitalizados y recién nacidos expuestos a malos olores (Turimiquire). En Yaracuy, productores del municipio Veroes solicitaron la canalización urgente del río Yaracuy ante el aumento del nivel de agua provocado por las recientes lluvias, advirtiendo riesgos de desbordamiento para sus cultivos (Yaracuy al Dia). Además, los pronósticos de lluvias continuas fueron reiterados por el meteorólogo Luis Vargas, quien informó que la vaguada mantendrá la actividad de la zona de convergencia, generando nubosidad y precipitaciones variables en gran parte del territorio nacional (El Impulso; El Tiempo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron solo siete eventos de inundación, una notable reducción frente a los 48 eventos del mes anterior (48 evento(s) registrados entonces vs. 7 en este período). Esta disminución se observa a pesar de la persistencia de lluvias intensas que afectaron diversas regiones del país.\n\nEn la ciudad de Guanare, estado Portuguesa, fuertes precipitaciones del 2 de septiembre provocaron anegaciones de viviendas y el colapso del canal ubicado en el sector “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar un desbordamiento mayor (El Impulso). La Prensa de Lara también reportó anegaciones de viviendas y dificultades de tránsito vehicular derivadas de esas mismas lluvias (La Prensa de Lara).\n\nEn el estado Lara, el 3 de septiembre las lluvias acompañadas de vientos huracanados generaron caída de árboles sobre viviendas, daños estructurales en centros comerciales y anegaciones de calles, particularmente en la zona norte de Barquisimeto y en el sector de Palavecino (El Pitazo).\n\nA nivel estatal, seis entidades —Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy— reportaron vías inundadas, comunidades agrícolas incomunicadas y refugios de desplazados afectados por el agua, como consecuencia de la Onda Tropical 43 que se manifestó el 31‑9‑2026 (Turimiquire).\n\nEn Guarapiche, estado Sucre, los habitantes protestaron el 2 de septiembre por el desbordamiento de aguas negras que ha generado problemas de salud pública, con personas mayores hospitalizadas y recién nacidos expuestos a malos olores (Turimiquire).\n\nFinalmente, en el municipio Veroes, estado Yaracuy, productores agrícolas solicitaron urgentemente la canalización del río Yaracuy, advirtiendo que el aumento del nivel del agua por las recientes lluvias podría desbordarse y afectar sus cultivos (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
     },
     {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/13/vaguada-refuerza-la-zona-de-convergencia-intertropical-y-provocara-lluvias-en-gran-parte-del-pais-13sep/"
-    },
-    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/vaguada-producira-precipitaciones-en-gran-parte-del-territorio-nacional-este-domingo/"
     },
     {
       "nombre": "La Prensa de Lara",

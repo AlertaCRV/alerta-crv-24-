@@ -3,23 +3,19 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-09-14T01:48:10.478531+00:00",
-  "actualizado_hasta": "2026-09-11T21:57:11.769567+00:00",
-  "total_eventos": 3,
+  "generado": "2026-09-15T01:02:49.151595+00:00",
+  "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 21,
-    "actual": 3
+    "anterior": 18,
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente tres eventos de deslizamiento o derrumbe, una notable reducción frente a los 21 eventos del mes anterior (2026‑08). Esta disminución se refleja en la menor cantidad de incidentes reportados por los medios locales durante el período.\n\nEn la parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, se produjo una emergencia vial y habitacional en el sector El Valle. Actualmente, cuatro familias continúan viviendo en una zona de riesgo y siete viviendas fueron desalojadas por daños irreparables (La Nacion). Las autoridades locales advierten sobre el riesgo de derrumbe y el cierre preventivo del paso vehicular, mientras la Alcaldía de Capacho Nuevo estima concluir los trabajos de reparación de la vía en aproximadamente dos semanas (La Nacion).\n\nEn el estado Monagas, un joven de 18 años identificado como Braulio Aguilarte falleció tras impactar contra una alcantarilla como consecuencia de un deslizamiento de tierra en la calle principal de El Zamuro, ciudad de Maturín (El Periodico de Monagas). El cuerpo del joven llegó sin signos vitales al Hospital Universitario Dr. Manuel Núñez Tovar, según la minuta de los organismos de seguridad (El Periodico de Monagas).\n\nPor otro lado, en Táchira se llevaron a cabo inspecciones de las afectaciones provocadas por intensas lluvias, que generaron deslizamientos de tierra con impactos en la infraestructura vial y daños de leve a severa magnitud en diversas viviendas (La Prensa de Monagas). Estas inspecciones buscan evaluar el alcance de los daños y planificar acciones de mitigación y reparación en las zonas afectadas (La Prensa de Monagas).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de deslizamiento o derrumbe, una disminución notable respecto al período anterior en el que se contabilizaron 18 eventos (Comparación con el período anterior (2026-08): 18 evento(s) registrados entonces vs. 2 en este período).\\n\\nEl primer caso ocurrió en la zona de El Valle, parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, donde se reportó una emergencia vial y habitacional el sábado 5 de septiembre. Actualmente, cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Las autoridades locales señalaron la presencia de una falla geológica compleja que generó riesgo de derrumbe y obligó al cierre preventivo del paso vehicular; la Alcaldía de Capacho Nuevo estima concluir los trabajos de reparación de la vía en aproximadamente dos semanas (Diario La Nacion).\\n\\nEn otro reporte, la prensa de Monagas informó que fuertes lluvias provocaron deslizamientos de tierra en distintas áreas de Táchira, afectando la infraestructura vial y provocando daños de leve a severa magnitud en varias viviendas (La Prensa de Monagas). Las inspecciones realizadas por las autoridades locales confirmaron la necesidad de evaluar y reforzar las estructuras dañadas para prevenir nuevos incidentes.\\n\\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando ambas zonas, brindando apoyo a las familias desplazadas y coordinando con los gobiernos municipales para la ejecución de planes de mitigación y reconstrucción, con el objetivo de reducir la vulnerabilidad frente a futuros eventos geológicos.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
-    },
-    {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
     },
     {
       "nombre": "La Prensa de Monagas",
