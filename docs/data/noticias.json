@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "La Guaira",
+    "municipio": "Vargas",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/15/ciudadanos-preocupados-se-hicieron-presentes-en-el-ecocidio-de-la-plaza-vargas-en-cumana/",
+        "fecha": "2026-09-15T10:11:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-15T10:11:02+00:00",
+    "fecha_evento_temprana": "2026-09-15T10:11:02+00:00",
+    "fecha_deteccion": "2026-09-15T11:40:35.198706+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::La Guaira::2026-09-15",
+    "titulo": "Orden público en Municipio Vargas, La Guaira",
+    "texto": "📌 Orden público en Municipio Vargas, La Guaira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Vargas, La Guaira\n🕒 Hecho reportado: 15/09/2026, 6:11 a.m.\n🔎 Detectado por el sistema: 15/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/15/ciudadanos-preocupados-se-hicieron-presentes-en-el-ecocidio-de-la-plaza-vargas-en-cumana/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/",
+        "fecha": "2026-09-15T00:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-15T00:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
+    "fecha_deteccion": "2026-09-15T11:40:44.395733+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-15",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 14/09/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "La Guaira",
     "municipio": null,
@@ -24,32 +76,6 @@
     "clave_dedup": "deslizamiento::La Guaira::2026-09-14",
     "titulo": "Deslizamiento/Derrumbe en La Guaira",
     "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 14/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 2:07 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/14/video-cuerpos-de-rescate-buscan-a-30-ninos-bajo-los-escombros-en-el-urbanismo-opp-26-de-caribe-estado-la-guaira-14sep/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/",
-        "fecha": "2026-09-15T00:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-15T00:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
-    "fecha_deteccion": "2026-09-15T06:07:14.110182+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-15",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 14/09/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 2:07 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
   },
   {
     "tipo": "orden_publico",
