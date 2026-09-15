@@ -3,16 +3,20 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-14T01:49:15.304793+00:00",
-  "actualizado_hasta": "2026-09-13T23:42:50.232226+00:00",
-  "total_eventos": 61,
+  "generado": "2026-09-15T01:03:41.085347+00:00",
+  "actualizado_hasta": "2026-09-15T01:02:34.341181+00:00",
+  "total_eventos": 50,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 267,
-    "actual": 61
+    "anterior": 244,
+    "actual": 50
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 61 eventos de emergencia, una disminución notable respecto a los 267 eventos del período anterior, agosto de 2026 (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados por los medios locales durante el mes.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, donde a las 5:10 a.m. del miércoles se produjo un choque entre dos autobuses de transporte público en el kilómetro 133 de la Autopista Regional del Centro (ARC), resultando en tres muertos y un herido (El Periodico de Monagas). La gravedad del siniestro fue catalogada como crítica y generó una respuesta inmediata de los servicios de emergencia.\n\nEn el estado Zulia, otro choque múltiple de alta severidad dejó una mujer fallecida y un herido en la localidad de Los Haticos. El accidente se originó cuando un autobús de la línea Uni Zulia impactó contra un vehículo modelo Festiva, y una motociclista quedó atrapada bajo la unidad colectiva (Noticia al Dia (Zulia)). Las autoridades locales iniciaron las investigaciones correspondientes y atendieron a los heridos en el lugar.\n\nAdemás de estos eventos críticos, se reportaron problemas eléctricos en varios estados, como apagones y fallas de transformadores que afectan la vida cotidiana de la población (El Impulso). En Lara, los cortes eléctricos se dispararon un 637 % respecto al año anterior, mientras que en Bolívar los frecuentes apagones continúan impactando a los habitantes (El Impulso). Estas situaciones, aunque no alcanzaron la categoría de emergencia con víctimas, forman parte del contexto de vulnerabilidad que enfrenta el país durante el período analizado.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 50 eventos de emergencia, una notable disminución frente a los 244 eventos del mes anterior (agosto de 2026). Esta reducción se observa en todas las categorías monitoreadas por la Cruz Roja Venezolana.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, donde a las 5:10 a.m. dos autobuses colisionaron en el kilómetro 133 de la Autopista Regional del Centro, dejando tres muertos y un herido (El Periodico de Monagas). La magnitud del siniestro fue catalogada como crítica y generó una respuesta inmediata de los servicios de emergencia.\n\nEn el estado Zulia, un choque múltiple en Los Haticos involucró a un autobús de la línea Uni Zulia que impactó contra una Festiva, provocando la muerte de una mujer y dejando a un motociclista herido bajo la unidad colectiva (Noticia al Dia). Este accidente también fue calificado de crítico por las autoridades locales.\n\nParalelamente, el estado Lara sufrió una falla eléctrica de alta severidad, con cortes de energía que se extendieron entre 6 y 7 horas diarias, obligando a familias y comercios de Barquisimeto a adquirir equipos de respaldo para evitar quedar a oscuras (El Impulso (Lara)). La crisis eléctrica afectó la vida cotidiana y la actividad económica de la zona.\n\nEn conjunto, aunque el número total de eventos disminuyó respecto al mes anterior, los incidentes críticos de tránsito y la persistente falla eléctrica continúan representando desafíos significativos para la población y los equipos de respuesta de emergencia.",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
+    },
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
@@ -51,31 +55,7 @@
     },
     {
       "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/07/paso-de-onda-tropical-genera-lluvias-con-descargas-electricas-en-diversas-regiones-venezuela-7sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/11/solo-el-5-de-las-industrias-de-lara-autogeneran-toda-la-electricidad-que-necesitan-11sep/"
-    },
-    {
-      "nombre": "El Impulso (Lara)",
-      "link": "https://www.elimpulso.com/2026/09/13/vaguada-refuerza-la-zona-de-convergencia-intertropical-y-provocara-lluvias-en-gran-parte-del-pais-13sep/"
-    },
-    {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-joven-en-boqueron-al-impactar-contra-una-alcantarilla/"
-    },
-    {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/monagas/maturin/domingo-sin-servicio-electrico-en-estos-sectores-de-maturin/"
-    },
-    {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/venezuela/turimiquire-bombea-agua-a-margarita-y-sucre-luego-de-7-meses/"
     },
     {
       "nombre": "El Pitazo",
@@ -111,15 +91,7 @@
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/politica/monitor-ciudad-aumentar-produccion-petrolera-sin-reparar-el-sistema-electrico-agravara-los-apagones-en-venezuela/"
-    },
-    {
-      "nombre": "El Pitazo",
       "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/sucesos/caracas-victima-detalla-como-opera-banda-de-mujeres-que-roba-carteras-en-el-c-c-el-recreo/"
     },
     {
       "nombre": "El Siglo (Aragua)",
@@ -128,10 +100,6 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/produccion-agropecuaria-cae-50-por-falta-de-combustible-y-destruccion-de-carreteras/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/vaguada-producira-precipitaciones-en-gran-parte-del-territorio-nacional-este-domingo/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -168,6 +136,38 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
+    },
+    {
+      "nombre": "Portuguesa al Dia",
+      "link": "https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/politica/denuncian-detencion-arbitraria-de-activista-en-caracas-tras-protestas/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
     }
   ]
 }

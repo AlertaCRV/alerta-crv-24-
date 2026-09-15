@@ -82,5 +82,12 @@
     "fecha_deteccion": "2026-09-13T23:42:50.232226+00:00",
     "fecha_evento_temprana": "2026-09-13T18:31:27+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-09-15": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-15T01:02:34.341181+00:00",
+    "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
+    "municipio": null
   }
 }

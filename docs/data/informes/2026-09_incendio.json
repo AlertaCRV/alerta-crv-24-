@@ -3,23 +3,19 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-14T01:49:28.483704+00:00",
-  "actualizado_hasta": "2026-09-12T08:47:51.077439+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-15T01:03:45.857226+00:00",
+  "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
+  "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 20,
-    "actual": 2
+    "anterior": 19,
+    "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos incendios, lo que representa una disminución notable respecto al mes anterior, en el que se contabilizaron veinte eventos (comparación proporcionada). Esta reducción sugiere una menor incidencia de siniestros de fuego durante el período analizado.\n\nEl hecho más destacado fue el incendio de gran magnitud que consumió los últimos pisos de una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital del estado Aragua, el lunes 31 de agosto (El Siglo). La emergencia movilizó aproximadamente 120 efectivos, entre los que se encontraban comisiones de los Bomberos de Caracas, Protección Civil y cuerpos policiales, bajo la coordinación del director nacional de Bomberos, Juan Carlos González (El Siglo). El siniestro provocó daños materiales considerables en la infraestructura industrial, aunque no se reportaron víctimas mortales ni heridos graves en los informes disponibles.\n\nA diferencia de agosto, en el que se registraron veinte incendios, en septiembre sólo se documentaron dos incidentes, siendo el de Palo Verde el más relevante por su magnitud y la respuesta coordinada de los organismos de seguridad (comparación proporcionada). No se dispone de información adicional sobre el segundo incendio registrado en el mes, por lo que la cobertura se centra en el caso de Palo Verde.\n\nLa reducción de la frecuencia de incendios en septiembre permite a las autoridades de gestión de riesgo y a los cuerpos de bomberos focalizar recursos en la prevención y en la mejora de los protocolos de respuesta, con el objetivo de mantener la tendencia a la baja y proteger tanto la vida humana como el patrimonio material.",
+  "narrativa": "En el mes de septiembre de 2026 se registró una única incidencia de incendio, lo que representa una notable reducción frente al mes anterior, en el que se contabilizaron 19 eventos (Comparación con el período anterior (2026-08): 19 evento(s) registrados entonces vs. 1 en este período).\n\nEl único incidente ocurrió el lunes 31 de agosto, cuando un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital (El Siglo). La magnitud del fuego obligó a activar los protocolos de emergencia de los organismos de seguridad y gestión de riesgo.\n\nAnte la emergencia, el director nacional de Bomberos, Juan Carlos González, informó que se desplegaron aproximadamente 120 efectivos, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos de policía (El Siglo). Estas unidades trabajaron de manera coordinada para contener el incendio y evitar su propagación a áreas colindantes.\n\nA pesar de la gravedad del siniestro, no se reportaron víctimas mortales ni heridos graves, y la rápida intervención de los equipos de respuesta permitió limitar los daños materiales a la infraestructura de la fábrica. La escasa cantidad de incendios en septiembre permite a las autoridades enfocarse en la evaluación de los daños y en la implementación de medidas preventivas para futuros riesgos.",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
-    },
-    {
-      "nombre": "Notiapure",
-      "link": "https://notiapure.com.ve/apure/despliegue-especial-de-distribucion-de-gas-licuado-beneficia-a-434-familias-en-la-parroquia-quintero-de-apure/"
     }
   ]
 }
