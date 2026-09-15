@@ -84,10 +84,17 @@
     "municipio": null
   },
   "infraestructura_electrica::Lara::2026-09-15": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-15T06:07:14.110182+00:00",
+    "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
+    "municipio": null
+  },
+  "deslizamiento::La Guaira::2026-09-14": {
     "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-15T01:02:34.341181+00:00",
-    "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
+    "fecha_deteccion": "2026-09-15T06:07:09.483244+00:00",
+    "fecha_evento_temprana": "2026-09-14T22:00:00+00:00",
     "municipio": null
   }
 }
