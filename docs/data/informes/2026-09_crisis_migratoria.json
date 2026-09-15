@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "crisis_migratoria",
+  "tipo_label": "Crisis migratoria",
+  "cerrado": false,
+  "generado": "2026-09-15T19:21:13.673773+00:00",
+  "actualizado_hasta": "2026-09-15T19:21:07.801712+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un solo evento de crisis migratoria en el estado La Guaira, manteniéndose el número de incidentes respecto al período anterior (agosto 2026), con 1 evento en cada mes (El Impulso). \n\nEl evento, catalogado con severidad alta, corresponde al desplazamiento de familias que habían abandonado La Guaira hacia la ciudad de Barquisimeto tras los terremotos ocurridos el 24 de junio del mismo año (El Impulso). Estas familias se encuentran en situación de vulnerabilidad, sin acceso a vivienda adecuada en sus destinos temporales (El Impulso). \n\nLa falta de alojamiento ha generado incertidumbre respecto a la continuidad educativa de los niños y niñas desplazados; varios padres han anunciado que pospondrán el regreso a clases, programado para el inicio del nuevo año escolar, hasta contar con una solución habitacional (El Impulso). Esta postergación afecta directamente el derecho a la educación y evidencia la magnitud de la crisis migratoria en la región (El Impulso). \n\nLa Cruz Roja Venezolana continuará monitoreando la evolución de este desplazamiento y coordinando acciones de asistencia humanitaria para mitigar los daños materiales y sociales derivados de la falta de vivienda, con el objetivo de garantizar la protección de los migrantes internos y la reanudación de sus actividades cotidianas (El Impulso).",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/15/video-por-falta-de-vivienda-familias-desplazadas-de-la-guaira-postergan-el-regreso-a-clases-15sep/"
+    }
+  ]
+}
