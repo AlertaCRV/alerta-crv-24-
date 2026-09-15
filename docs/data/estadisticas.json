@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-15T06:07:19.426606+00:00",
+  "actualizado": "2026-09-15T11:40:45.207604+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-15T00:00:00+00:00"
+    "hasta": "2026-09-15T10:11:02+00:00"
   },
-  "total_eventos": 324,
+  "total_eventos": 326,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 62,
-    "infraestructura_electrica": 84,
+    "infraestructura_electrica": 85,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 60,
+    "orden_publico": 61,
     "salud_publica": 9,
     "crisis_migratoria": 5,
     "incendio": 23,
@@ -42,11 +42,11 @@
     },
     {
       "estado": "Lara",
-      "total": 28,
+      "total": 29,
       "confirmados": 1,
       "por_severidad": {
         "critico": 4,
-        "alto": 7,
+        "alto": 8,
         "medio": 12,
         "bajo": 5
       },
@@ -213,6 +213,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "La Guaira",
+      "total": 9,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 3,
+        "sin_clasificar": 1,
+        "alto": 4,
+        "bajo": 1
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0,
@@ -232,17 +244,6 @@
         "alto": 1,
         "bajo": 6,
         "medio": 1
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "La Guaira",
-      "total": 8,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 3,
-        "sin_clasificar": 1,
-        "alto": 4
       },
       "severidad_dominante": "alto"
     },
@@ -297,7 +298,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 3,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -456,7 +457,8 @@
       "infraestructura_electrica": 2,
       "deslizamiento": 2,
       "inundacion": 3,
-      "sismo": 1
+      "sismo": 1,
+      "orden_publico": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -464,10 +466,10 @@
     }
   },
   "por_severidad": {
-    "alto": 47,
+    "alto": 48,
     "critico": 35,
     "medio": 134,
-    "bajo": 100,
+    "bajo": 101,
     "sin_clasificar": 8
   },
   "serie_mensual_por_tipo": {
@@ -484,7 +486,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 17
+      "2026-09": 18
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -498,7 +500,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 14
+      "2026-09": 15
     },
     "salud_publica": {
       "2026-07": 1,
