@@ -1,18 +1,4 @@
 {
-  "infraestructura_agua::Sucre::2026-09-12": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-12T20:23:45.780436+00:00",
-    "fecha_evento_temprana": "2026-09-12T14:19:07+00:00",
-    "municipio": null
-  },
-  "orden_publico::Distrito Capital::2026-09-12": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-12T20:23:52.283336+00:00",
-    "fecha_evento_temprana": "2026-09-12T19:00:44+00:00",
-    "municipio": null
-  },
   "inundacion::La Guaira::2026-09-13": {
     "severidad": "sin_clasificar",
     "confirmado": false,
