@@ -3,16 +3,20 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-15T01:04:52.374381+00:00",
-  "actualizado_hasta": "2026-09-07T23:39:19.022474+00:00",
-  "total_eventos": 7,
+  "generado": "2026-09-16T05:19:26.398464+00:00",
+  "actualizado_hasta": "2026-09-16T00:37:30.429976+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 48,
-    "actual": 7
+    "actual": 8
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron solo siete eventos de inundación, una notable reducción frente a los 48 eventos del mes anterior (48 evento(s) registrados entonces vs. 7 en este período). Esta disminución se observa a pesar de la persistencia de lluvias intensas que afectaron diversas regiones del país.\n\nEn la ciudad de Guanare, estado Portuguesa, fuertes precipitaciones del 2 de septiembre provocaron anegaciones de viviendas y el colapso del canal ubicado en el sector “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar un desbordamiento mayor (El Impulso). La Prensa de Lara también reportó anegaciones de viviendas y dificultades de tránsito vehicular derivadas de esas mismas lluvias (La Prensa de Lara).\n\nEn el estado Lara, el 3 de septiembre las lluvias acompañadas de vientos huracanados generaron caída de árboles sobre viviendas, daños estructurales en centros comerciales y anegaciones de calles, particularmente en la zona norte de Barquisimeto y en el sector de Palavecino (El Pitazo).\n\nA nivel estatal, seis entidades —Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy— reportaron vías inundadas, comunidades agrícolas incomunicadas y refugios de desplazados afectados por el agua, como consecuencia de la Onda Tropical 43 que se manifestó el 31‑9‑2026 (Turimiquire).\n\nEn Guarapiche, estado Sucre, los habitantes protestaron el 2 de septiembre por el desbordamiento de aguas negras que ha generado problemas de salud pública, con personas mayores hospitalizadas y recién nacidos expuestos a malos olores (Turimiquire).\n\nFinalmente, en el municipio Veroes, estado Yaracuy, productores agrícolas solicitaron urgentemente la canalización del río Yaracuy, advirtiendo que el aumento del nivel del agua por las recientes lluvias podría desbordarse y afectar sus cultivos (Yaracuy al Dia).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron ocho eventos de inundación, una disminución notable respecto a los 48 eventos reportados en agosto del mismo año (comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes críticos, aunque persisten situaciones de alta gravedad en varios estados.\n\nEn Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando acorralados a ocho mil productores agrícolas que enfrentan pérdidas irreversibles por la descomposición acelerada de lácteos y la paralización de cosechas (Diario La Nacion (Tachira)). El fenómeno se mantiene activo 21 días después de la erosión de los cimientos del puente, complicando la respuesta de las autoridades.\n\nEn Guanare, estado Portuguesa, fuertes lluvias el 2 de septiembre generaron anegaciones de viviendas y el colapso del canal en el sector “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar un desbordamiento total (El Impulso (Lara); La Prensa de Lara). Ambas fuentes describen dificultades de tránsito vehicular y peatonal derivadas del exceso de agua.\n\nBarquisimeto, en Lara, sufrió lluvias y vientos huracanados el 3 de septiembre que derribaron árboles sobre viviendas, dañaron centros comerciales y provocaron anegaciones en calles, especialmente en la zona norte de la ciudad (El Pitazo). Los daños estructurales fueron reportados por residentes y autoridades locales.\n\nA nivel regional, seis estados –Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy– reportaron vías inundadas durante la Onda Tropical 43 el 31‑9‑2026, con comunidades agrícolas incomunicadas y personas en refugios expuestas a las aguas (Turimiquire (Sucre)).\n\nEn Sucre, vecinos de Guarapiche protestaron el 2 de septiembre por el desbordamiento de aguas negras que afecta la salud pública, con varios ancianos hospitalizados y bebés recién nacidos expuestos a malos olores (Turimiquire (Sucre)). En Yaracuy, productores del municipio Veroes solicitaron urgentemente la canalización del río Yaracuy para evitar futuros desbordamientos que amenacen sus sembradíos (Yaracuy al Dia).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
+    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
