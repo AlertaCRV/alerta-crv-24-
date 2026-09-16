@@ -1,6 +1,84 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/",
+        "fecha": "2026-09-16T18:33:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-16T18:33:44+00:00",
+    "fecha_evento_temprana": "2026-09-16T18:33:44+00:00",
+    "fecha_deteccion": "2026-09-16T18:49:13.830791+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-16",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/09/2026, 2:33 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": "Puerto La Cruz",
+    "severidad": "critico",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/",
+        "fecha": "2026-09-16T18:13:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-16T18:13:15+00:00",
+    "fecha_evento_temprana": "2026-09-16T18:13:15+00:00",
+    "fecha_deteccion": "2026-09-16T18:49:17.689183+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Anzoategui::2026-09-16",
+    "titulo": "Orden público en Parroquia Puerto La Cruz, Anzoategui",
+    "texto": "📌 Orden público en Parroquia Puerto La Cruz, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Puerto La Cruz, Anzoategui\n🕒 Hecho reportado: 16/09/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": "Acevedo",
+    "parroquia": "Caucagua",
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/",
+        "fecha": "2026-09-16T16:18:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-16T16:18:50+00:00",
+    "fecha_evento_temprana": "2026-09-16T16:18:50+00:00",
+    "fecha_deteccion": "2026-09-16T18:49:30.022166+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-16",
+    "titulo": "Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda",
+    "texto": "📌 Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Caucagua, Municipio Acevedo, Miranda\n🕒 Hecho reportado: 16/09/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": "Candelaria",
@@ -1266,135 +1344,5 @@
     "clave_dedup": "infraestructura_agua::Sucre::2026-09-02",
     "titulo": "Falla de agua en Sucre",
     "texto": "📌 Falla de agua en Sucre\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 02/09/2026, 5:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 4:05 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/cumana-estado-sucre-quedo-excluida-de-la-programacion-de-cortes-electricos/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": "Moran",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/",
-        "fecha": "2026-09-02T04:20:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T04:20:04+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "fecha_deteccion": "2026-09-02T13:38:34.432689+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Lara::2026-09-02",
-    "titulo": "Inundación en Municipio Moran, Lara",
-    "texto": "📌 Inundación en Municipio Moran, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Moran, Lara\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:38 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/",
-        "fecha": "2026-09-02T04:20:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T04:20:04+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "fecha_deteccion": "2026-09-02T13:38:38.618914+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Tachira::2026-09-02",
-    "titulo": "Inundación en Tachira",
-    "texto": "📌 Inundación en Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:38 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Yaracuy",
-    "municipio": "San Felipe",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/",
-        "fecha": "2026-09-02T04:20:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T04:20:04+00:00",
-    "fecha_evento_temprana": "2026-09-02T04:20:04+00:00",
-    "fecha_deteccion": "2026-09-02T13:39:01.729218+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Yaracuy::2026-09-02",
-    "titulo": "Inundación en Municipio San Felipe, Yaracuy",
-    "texto": "📌 Inundación en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 02/09/2026, 12:20 a.m.\n🔎 Detectado por el sistema: 02/09/2026, 9:39 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/02/caracas-carabobo-la-guaira-lara-tachira-y-yaracuy-reportaron-inundaciones-por-las-lluvias/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/",
-        "fecha": "2026-09-02T01:00:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-02T01:00:05+00:00",
-    "fecha_evento_temprana": "2026-09-02T01:00:05+00:00",
-    "fecha_deteccion": "2026-09-02T09:03:58.973724+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-02",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 01/09/2026, 9:00 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:03 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/01/la-crisis-electrica-esta-afectando-la-produccion-lechera-del-zulia/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/",
-        "fecha": "2026-09-01T22:00:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-01T22:00:53+00:00",
-    "fecha_evento_temprana": "2026-09-01T22:00:53+00:00",
-    "fecha_deteccion": "2026-09-02T09:04:10.895632+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-01",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 02/09/2026, 5:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
   }
 ]
