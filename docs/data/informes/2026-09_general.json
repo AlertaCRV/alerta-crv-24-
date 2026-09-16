@@ -3,23 +3,43 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-09-15T01:03:41.085347+00:00",
-  "actualizado_hasta": "2026-09-15T01:02:34.341181+00:00",
-  "total_eventos": 50,
+  "generado": "2026-09-16T05:18:59.377895+00:00",
+  "actualizado_hasta": "2026-09-16T00:37:30.429976+00:00",
+  "total_eventos": 59,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 244,
-    "actual": 50
+    "actual": 59
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 50 eventos de emergencia, una notable disminución frente a los 244 eventos del mes anterior (agosto de 2026). Esta reducción se observa en todas las categorías monitoreadas por la Cruz Roja Venezolana.\n\nEl incidente vial más grave ocurrió en el Distrito Capital, donde a las 5:10 a.m. dos autobuses colisionaron en el kilómetro 133 de la Autopista Regional del Centro, dejando tres muertos y un herido (El Periodico de Monagas). La magnitud del siniestro fue catalogada como crítica y generó una respuesta inmediata de los servicios de emergencia.\n\nEn el estado Zulia, un choque múltiple en Los Haticos involucró a un autobús de la línea Uni Zulia que impactó contra una Festiva, provocando la muerte de una mujer y dejando a un motociclista herido bajo la unidad colectiva (Noticia al Dia). Este accidente también fue calificado de crítico por las autoridades locales.\n\nParalelamente, el estado Lara sufrió una falla eléctrica de alta severidad, con cortes de energía que se extendieron entre 6 y 7 horas diarias, obligando a familias y comercios de Barquisimeto a adquirir equipos de respaldo para evitar quedar a oscuras (El Impulso (Lara)). La crisis eléctrica afectó la vida cotidiana y la actividad económica de la zona.\n\nEn conjunto, aunque el número total de eventos disminuyó respecto al mes anterior, los incidentes críticos de tránsito y la persistente falla eléctrica continúan representando desafíos significativos para la población y los equipos de respuesta de emergencia.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 59 eventos de emergencia, una disminución notable respecto a los 244 eventos del mes anterior, agosto de 2026. Esta reducción se refleja en la menor cantidad de incidentes reportados en distintas categorías, aunque persisten situaciones críticas en varias regiones del país.\n\nEn el Distrito Capital se produjo un grave incidente vial con tres muertos y un herido tras la colisión de dos autobuses en la Autopista Regional del Centro (El Periodico de Monagas). En el estado Zulia, otro choque múltiple dejó una mujer fallecida y un herido en la zona de Los Háticos (Noticia al Dia). Ambos sucesos fueron catalogados con severidad crítica y generaron importantes daños materiales y pérdidas humanas.\n\nEl estado Lara enfrentó una severa falla eléctrica que dejó a la población sin suministro durante entre seis y siete horas diarias, obligando a familias y comercios a adquirir equipos de respaldo (El Impulso). En Táchira, una falla eléctrica de gran magnitud provocó apagones en varios estados, incluido Táchira, y se acompañó de una inundación de carácter alto que afectó a comunidades locales (Diario La Nacion). Ambas situaciones agravaron la vulnerabilidad de la población ante la escasez energética.\n\nEn La Guaira se registró un deslizamiento/derrumbe que dejó a 30 niños atrapados bajo los escombros, movilizando a los cuerpos de rescate en la búsqueda de los menores (El Impulso). La crisis migratoria en la misma entidad se intensificó, con familias desplazadas que postergaron su regreso a clases debido a la falta de vivienda tras los terremotos de junio (El Impulso), evidenciando el impacto social de los desastres naturales.\n\nFinalmente, en Zulia se produjo una explosión en una vivienda de Maracaibo por fuga de gas, que cobró una vida y dejó dos heridos, con la víctima fatal identificada como María Bernal (El Pitazo). Este incidente, catalogado como incendio de severidad crítica, sumó a la lista de emergencias que demandaron la intervención de los servicios de emergencia y la Cruz Roja Venezolana.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/reportan-apagon-en-tachira-y-otros-estados-de-venezuela-tras-fuertes-bajones/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
+    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/14/video-cuerpos-de-rescate-buscan-a-30-ninos-bajo-los-escombros-en-el-urbanismo-opp-26-de-caribe-estado-la-guaira-14sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/15/video-por-falta-de-vivienda-familias-desplazadas-de-la-guaira-postergan-el-regreso-a-clases-15sep/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -94,6 +114,10 @@
       "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/se-me-va-a-quemar-la-nevera-ciudadanos-reportan-festival-de-bajones-electricos-en-venezuela-este-15sep/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
     },
@@ -136,38 +160,6 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/nacion/delcy-rodriguez-denuncia-sabotaje-de-extremistas-tras-nuevo-apagon-en-el-occidente-del-pais-y-llama-a-trabajadores-a-estar-en-alerta/"
-    },
-    {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/delcy-rodriguez-denuncia-sabotaje-al-sistema-termoelectrico-del-zulia/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
-    },
-    {
-      "nombre": "Portuguesa al Dia",
-      "link": "https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/denuncian-detencion-arbitraria-de-activista-en-caracas-tras-protestas/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/09/01/tubores-sin-agua-por-tuberia/"
     }
   ]
 }
