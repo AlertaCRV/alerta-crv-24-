@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-16T21:50:58.491235+00:00",
+  "actualizado": "2026-09-16T23:59:27.707073+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-16T20:56:54+00:00"
   },
-  "total_eventos": 336,
+  "total_eventos": 337,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
-    "infraestructura_electrica": 88,
+    "infraestructura_electrica": 89,
     "deslizamiento": 24,
     "colapso_estructural": 3,
     "orden_publico": 65,
@@ -147,23 +147,23 @@
       "severidad_dominante": "medio"
     },
     {
+      "estado": "Monagas",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 3,
+        "alto": 2
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Sucre",
       "total": 12,
       "confirmados": 0,
       "por_severidad": {
         "medio": 5,
         "bajo": 6,
-        "alto": 1
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Monagas",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 3,
         "alto": 1
       },
       "severidad_dominante": "alto"
@@ -388,7 +388,7 @@
       "sismo": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "salud_publica": 1,
       "vialidad": 1,
       "infraestructura_agua": 2,
@@ -468,7 +468,7 @@
     }
   },
   "por_severidad": {
-    "alto": 51,
+    "alto": 52,
     "critico": 38,
     "medio": 134,
     "bajo": 105,
@@ -488,7 +488,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 21
+      "2026-09": 22
     },
     "deslizamiento": {
       "2026-07": 3,
