@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-09-15T01:05:42.779831+00:00",
+    "generado": "2026-09-16T00:41:20.837754+00:00",
     "total_eventos": 2
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-09-15T01:05:30.279544+00:00",
+    "generado": "2026-09-16T00:41:16.353979+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-09-15T01:05:25.211293+00:00",
+    "generado": "2026-09-16T00:41:04.133843+00:00",
     "total_eventos": 2
   },
   {
@@ -28,8 +28,8 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-09-14T07:15:08.595347+00:00",
-    "total_eventos": 14
+    "generado": "2026-09-16T00:40:59.405275+00:00",
+    "total_eventos": 15
   },
   {
     "periodo": "2026-09",
@@ -44,15 +44,15 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-09-15T01:04:25.680712+00:00",
-    "total_eventos": 16
+    "generado": "2026-09-16T00:40:05.157502+00:00",
+    "total_eventos": 20
   },
   {
     "periodo": "2026-09",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-09-15T01:03:58.671407+00:00",
+    "generado": "2026-09-16T00:39:38.453724+00:00",
     "total_eventos": 3
   },
   {
@@ -60,8 +60,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-09-15T01:03:45.857226+00:00",
-    "total_eventos": 1
+    "generado": "2026-09-16T00:39:25.703008+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-09",
@@ -76,7 +76,7 @@
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
-    "generado": "2026-09-15T01:03:14.781775+00:00",
+    "generado": "2026-09-16T00:38:54.034733+00:00",
     "total_eventos": 1
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "escasez_combustible",
     "tipo_label": "Escasez de combustible",
     "cerrado": false,
-    "generado": "2026-09-15T01:03:02.220673+00:00",
+    "generado": "2026-09-16T00:38:41.157996+00:00",
     "total_eventos": 1
   },
   {
@@ -92,15 +92,15 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-09-15T01:02:49.151595+00:00",
-    "total_eventos": 2
+    "generado": "2026-09-16T00:38:28.013882+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-09",
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-09-15T19:21:13.673773+00:00",
+    "generado": "2026-09-16T00:38:15.283220+00:00",
     "total_eventos": 1
   },
   {

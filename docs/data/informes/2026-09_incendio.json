@@ -3,16 +3,20 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-15T01:03:45.857226+00:00",
-  "actualizado_hasta": "2026-09-01T12:08:21.831951+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-16T00:39:25.703008+00:00",
+  "actualizado_hasta": "2026-09-15T19:20:28.394915+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 19,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró una única incidencia de incendio, lo que representa una notable reducción frente al mes anterior, en el que se contabilizaron 19 eventos (Comparación con el período anterior (2026-08): 19 evento(s) registrados entonces vs. 1 en este período).\n\nEl único incidente ocurrió el lunes 31 de agosto, cuando un incendio de gran magnitud consumió los últimos pisos de una fábrica de cosméticos ubicada en la zona industrial de Palo Verde, al este de la capital (El Siglo). La magnitud del fuego obligó a activar los protocolos de emergencia de los organismos de seguridad y gestión de riesgo.\n\nAnte la emergencia, el director nacional de Bomberos, Juan Carlos González, informó que se desplegaron aproximadamente 120 efectivos, integrados por comisiones de los Bomberos de Caracas, Protección Civil y cuerpos de policía (El Siglo). Estas unidades trabajaron de manera coordinada para contener el incendio y evitar su propagación a áreas colindantes.\n\nA pesar de la gravedad del siniestro, no se reportaron víctimas mortales ni heridos graves, y la rápida intervención de los equipos de respuesta permitió limitar los daños materiales a la infraestructura de la fábrica. La escasa cantidad de incendios en septiembre permite a las autoridades enfocarse en la evaluación de los daños y en la implementación de medidas preventivas para futuros riesgos.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de incendio, una disminución notable respecto al período anterior en el que se contabilizaron 19 incidentes (Informe interno). Esta reducción refleja una tendencia a la baja en la frecuencia de incendios reportados durante el último mes.\n\nEl incendio más grave del período ocurrió en el estado Zulia, donde una fuga de gas provocó una explosión en una vivienda del sector Villa Hermosa, municipio Maracaibo, el lunes 14 de septiembre (El Pitazo). La explosión causó la muerte de María Bernal, de 28 años, quien sufrió quemaduras en el 60 % de su cuerpo y un paro respiratorio, y dejó a dos personas más con heridas de diversa gravedad (El Pitazo). Las autoridades locales declararon la severidad del incidente como crítica y activaron los protocolos de emergencia para atender a los afectados.\n\nOtro incidente relevante, aunque no incluido en la lista de eventos críticos, fue el incendio de gran magnitud que consumió una fábrica de cosméticos en Palo Verde, zona industrial al este de la capital de Aragua, el 31 de agosto (El Siglo). El fuego alcanzó los últimos pisos de la infraestructura y movilizó aproximadamente 120 efectivos de bomberos, Protección Civil y cuerpos policiales para contener la propagación (El Siglo). Afortunadamente, no se reportaron víctimas mortales, pero el siniestro generó importantes daños materiales en la planta productora.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/"
+    },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"

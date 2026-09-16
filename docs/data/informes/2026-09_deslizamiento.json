@@ -3,16 +3,20 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-09-15T01:02:49.151595+00:00",
-  "actualizado_hasta": "2026-09-05T20:39:09.892876+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-16T00:38:28.013882+00:00",
+  "actualizado_hasta": "2026-09-15T06:07:09.483244+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 18,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron únicamente dos eventos de deslizamiento o derrumbe, una disminución notable respecto al período anterior en el que se contabilizaron 18 eventos (Comparación con el período anterior (2026-08): 18 evento(s) registrados entonces vs. 2 en este período).\\n\\nEl primer caso ocurrió en la zona de El Valle, parroquia Juan Germán Roscio de Capacho Nuevo, estado Táchira, donde se reportó una emergencia vial y habitacional el sábado 5 de septiembre. Actualmente, cuatro familias continúan viviendo en una zona de riesgo y siete casas fueron desalojadas por daños irreparables (Diario La Nacion). Las autoridades locales señalaron la presencia de una falla geológica compleja que generó riesgo de derrumbe y obligó al cierre preventivo del paso vehicular; la Alcaldía de Capacho Nuevo estima concluir los trabajos de reparación de la vía en aproximadamente dos semanas (Diario La Nacion).\\n\\nEn otro reporte, la prensa de Monagas informó que fuertes lluvias provocaron deslizamientos de tierra en distintas áreas de Táchira, afectando la infraestructura vial y provocando daños de leve a severa magnitud en varias viviendas (La Prensa de Monagas). Las inspecciones realizadas por las autoridades locales confirmaron la necesidad de evaluar y reforzar las estructuras dañadas para prevenir nuevos incidentes.\\n\\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando ambas zonas, brindando apoyo a las familias desplazadas y coordinando con los gobiernos municipales para la ejecución de planes de mitigación y reconstrucción, con el objetivo de reducir la vulnerabilidad frente a futuros eventos geológicos.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron tres eventos de deslizamiento o derrumbe, una notable reducción frente a los dieciocho incidentes reportados en agosto del mismo año (comparación con el período anterior). Esta disminución se refleja en la menor cantidad de reportes de daños materiales y de personas afectadas durante el período analizado.\n\nEl incidente más grave ocurrió en el estado La Guaira, donde un deslizamiento de alta severidad dejó a treinta niños atrapados bajo los escombros del urbanismo OPP 26 de Caribe. Los bomberos intensificaron las labores de búsqueda y rescate, mientras equipos de emergencia trabajaban para localizar a los menores desaparecidos (El Impulso).\n\nEn el estado Táchira, la zona de El Valle, parroquia Juan Germán Roscio de Capacho Nuevo, enfrentó una emergencia vial y habitacional tras una falla geológica que provocó riesgos de derrumbe. Cuatro familias permanecen en una zona de riesgo y siete casas fueron desalojadas por daños irreparables; la alcaldía local estima concluir los trabajos de reparación en dos semanas (Diario La Nacion).\n\nAdicionalmente, fuertes lluvias en Táchira generaron deslizamientos de tierra que afectaron la infraestructura vial y causaron daños de leve a severa magnitud en diversas viviendas, según la inspección de autoridades locales (La Prensa de Monagas).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/14/video-cuerpos-de-rescate-buscan-a-30-ninos-bajo-los-escombros-en-el-urbanismo-opp-26-de-caribe-estado-la-guaira-14sep/"
+    },
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/emergencia-vial-y-habitacional-en-el-valle/"
