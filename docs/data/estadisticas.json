@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-16T18:50:30.801564+00:00",
+  "actualizado": "2026-09-16T21:50:58.491235+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-16T18:33:44+00:00"
+    "hasta": "2026-09-16T20:56:54+00:00"
   },
-  "total_eventos": 334,
+  "total_eventos": 336,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
     "infraestructura_electrica": 88,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 63,
+    "orden_publico": 65,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 24,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 54,
+      "total": 55,
       "confirmados": 4,
       "por_severidad": {
         "alto": 10,
         "medio": 14,
-        "bajo": 16,
+        "bajo": 17,
         "critico": 10,
         "sin_clasificar": 4
       },
@@ -114,11 +114,11 @@
     },
     {
       "estado": "Yaracuy",
-      "total": 15,
+      "total": 16,
       "confirmados": 1,
       "por_severidad": {
         "critico": 3,
-        "bajo": 5,
+        "bajo": 6,
         "medio": 6,
         "sin_clasificar": 1
       },
@@ -324,7 +324,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "incendio": 9,
       "vialidad": 2,
       "infraestructura_electrica": 10,
@@ -419,7 +419,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 4,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -471,7 +471,7 @@
     "alto": 51,
     "critico": 38,
     "medio": 134,
-    "bajo": 103,
+    "bajo": 105,
     "sin_clasificar": 8
   },
   "serie_mensual_por_tipo": {
@@ -502,7 +502,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 17
+      "2026-09": 19
     },
     "salud_publica": {
       "2026-07": 1,
