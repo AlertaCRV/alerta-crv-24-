@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-16T00:38:11.213616+00:00",
+  "actualizado": "2026-09-16T18:50:30.801564+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-16T00:26:20+00:00"
+    "hasta": "2026-09-16T18:33:44+00:00"
   },
-  "total_eventos": 331,
+  "total_eventos": 334,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
-    "infraestructura_electrica": 87,
+    "infraestructura_electrica": 88,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 61,
+    "orden_publico": 63,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 24,
@@ -66,13 +66,25 @@
     },
     {
       "estado": "Barinas",
-      "total": 24,
+      "total": 25,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 2,
+        "alto": 3,
         "medio": 11,
         "bajo": 7,
         "critico": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 18,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "alto": 1,
+        "critico": 2,
+        "bajo": 6
       },
       "severidad_dominante": "critico"
     },
@@ -89,26 +101,14 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Anzoategui",
-      "total": 17,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "alto": 1,
-        "critico": 1,
-        "bajo": 6
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Miranda",
-      "total": 16,
+      "total": 17,
       "confirmados": 2,
       "por_severidad": {
         "alto": 3,
         "medio": 5,
         "critico": 4,
-        "bajo": 4
+        "bajo": 5
       },
       "severidad_dominante": "critico"
     },
@@ -345,7 +345,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 4,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -361,7 +361,7 @@
       "infraestructura_electrica": 8,
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "infraestructura_agua": 2,
       "inundacion": 3
     },
@@ -401,7 +401,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 4
+      "orden_publico": 5
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -468,10 +468,10 @@
     }
   },
   "por_severidad": {
-    "alto": 50,
-    "critico": 37,
+    "alto": 51,
+    "critico": 38,
     "medio": 134,
-    "bajo": 102,
+    "bajo": 103,
     "sin_clasificar": 8
   },
   "serie_mensual_por_tipo": {
@@ -488,7 +488,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 20
+      "2026-09": 21
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -502,7 +502,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 15
+      "2026-09": 17
     },
     "salud_publica": {
       "2026-07": 1,
