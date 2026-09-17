@@ -117,5 +117,12 @@
     "fecha_deteccion": "2026-09-17T18:30:13.784465+00:00",
     "fecha_evento_temprana": "2026-09-17T16:49:39+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Aragua::2026-09-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-17T23:45:26.525104+00:00",
+    "fecha_evento_temprana": "2026-09-17T23:00:09+00:00",
+    "municipio": "San Sebastián"
   }
 }
