@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/a-las-6-pm-levantamos-la-protesta-si-corpoelec-soluciona-el-problema/",
+        "fecha": "2026-09-16T20:48:58+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-16T20:48:58+00:00",
+    "fecha_evento_temprana": "2026-09-16T20:48:58+00:00",
+    "fecha_deteccion": "2026-09-16T23:57:55.266238+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Monagas::2026-09-16",
+    "titulo": "Falla eléctrica en Monagas",
+    "texto": "📌 Falla eléctrica en Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 16/09/2026, 4:48 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 7:57 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/a-las-6-pm-levantamos-la-protesta-si-corpoelec-soluciona-el-problema/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
