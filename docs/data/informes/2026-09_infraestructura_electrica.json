@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-16T00:40:05.157502+00:00",
-  "actualizado_hasta": "2026-09-16T00:37:26.095434+00:00",
-  "total_eventos": 20,
+  "generado": "2026-09-17T04:15:54.088123+00:00",
+  "actualizado_hasta": "2026-09-16T23:57:55.266238+00:00",
+  "total_eventos": 22,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 62,
-    "actual": 20
+    "actual": 22
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 20 fallas eléctricas, una disminución notable respecto a los 62 eventos contabilizados en agosto de 2026 (Datos comparativos). Esta reducción se enmarca en una situación de crisis eléctrica que continúa afectando a varios estados del país.\n\nEn el estado Lara se produjo una falla eléctrica de alta severidad que dejó a la población de Barquisimeto sin suministro durante entre seis y siete horas diarias (El Impulso). Ante la prolongada oscuridad, familias y comercios se vieron obligados a adquirir equipos de respaldo, como generadores y baterías, para evitar quedar a oscuras (El Impulso). Además, el mismo medio informó que los apagones en Lara se dispararon un 637 % en comparación con el año anterior, evidenciando la magnitud del problema (El Impulso).\n\nEn Táchira, la falla eléctrica alcanzó una severidad crítica, provocando un apagón de gran magnitud que dejó sin luz a varios estados, entre ellos Táchira, Carabobo, Apure y otros (Diario La Nacion). En la entidad tachirense, el corte estuvo precedido por fluctuaciones severas de voltaje que hicieron parpadear el alumbrado doméstico, fenómeno comparado por los usuarios con luces navideñas (Diario La Nacion). La oposición también denunció el apagón, señalando que Táchira fue una de las regiones más afectadas junto a Mérida y Barinas (Diario La Nacion).\n\nA pesar de la reducción en el número total de eventos, las fallas registradas en Lara y Táchira generaron daños materiales y obligaron a la población a adoptar medidas de mitigación, lo que subraya la necesidad de reforzar la infraestructura eléctrica y mantener una vigilancia constante por parte de las autoridades y la Cruz Roja Venezolana.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 22 fallas eléctricas, una disminución notable respecto a los 62 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta reducción se da en un contexto de crisis eléctrica persistente en el país, que sigue generando cortes prolongados y afectando a la población.\n\nEl estado Lara experimentó dos fallas de alta severidad que dejaron a la población sin suministro eléctrico durante entre 6 y 7 horas diarias, obligando a familias y comercios a adquirir equipos de respaldo para evitar la oscuridad (El Impulso). Estas interrupciones se reportaron en Barquisimeto, capital del estado, y reflejan la aguda crisis que afecta a Lara (El Impulso).\n\nEn Táchira se registró una falla eléctrica de gravedad crítica, que dejó a la región en completo apagón tras fuertes bajones de voltaje, extendiéndose también a varios estados vecinos (Diario La Nacion). La magnitud del corte provocó comparaciones de los usuarios con luces navideñas y generó preocupación a nivel nacional.\n\nBarinas sufrió una falla de alta severidad que provocó apagones de hasta 12 horas, generando protestas y una alerta del Colegio de Enfermería por el impacto en la atención médica (El Pitazo). En Monagas, vecinos de la vía que conduce al sur del estado bloquearon la carretera en protesta tras tres días sin energía, exigiendo la intervención de Corpoelec (El Periodico de Monagas).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -20,6 +20,14 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/a-las-6-pm-levantamos-la-protesta-si-corpoelec-soluciona-el-problema/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
