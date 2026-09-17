@@ -1,6 +1,58 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/17/interrupciones-electricas-afectan-a-52-del-gremio-industrial-en-lara-17sep/",
+        "fecha": "2026-09-17T17:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-17T17:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-17T17:30:00+00:00",
+    "fecha_deteccion": "2026-09-17T18:30:08.907108+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-17",
+    "titulo": "Falla eléctrica en Lara",
+    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 17/09/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 2:30 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/17/interrupciones-electricas-afectan-a-52-del-gremio-industrial-en-lara-17sep/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/",
+        "fecha": "2026-09-17T16:49:39+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-17T16:49:39+00:00",
+    "fecha_evento_temprana": "2026-09-17T16:49:39+00:00",
+    "fecha_deteccion": "2026-09-17T18:30:13.784465+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-09-17",
+    "titulo": "Orden público en Zulia",
+    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 17/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 2:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Merida",
     "municipio": null,
     "parroquia": null,
@@ -1370,62 +1422,5 @@
     "clave_dedup": "vialidad::Distrito Capital::2026-09-03",
     "titulo": "Incidente vial en Distrito Capital",
     "texto": "📌 Incidente vial en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 03/09/2026, 11:46 a.m.\n🔎 Detectado por el sistema: 03/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/",
-        "fecha": "2026-09-03T08:40:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T08:40:02+00:00",
-    "fecha_evento_temprana": "2026-09-03T08:40:02+00:00",
-    "fecha_deteccion": "2026-09-03T17:45:45.409067+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Sucre::2026-09-03",
-    "titulo": "Inundación en Sucre",
-    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 03/09/2026, 4:40 a.m.\n🔎 Detectado por el sistema: 03/09/2026, 1:45 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/03/vecinos-de-guarapiche-en-el-estado-sucre-protestaron-por-desbordamiento-de-aguas-negras/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Portuguesa",
-    "municipio": "Guanare",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.2,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/",
-        "fecha": "2026-09-02T22:50:24+00:00"
-      },
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/",
-        "fecha": "2026-09-03T01:33:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T01:33:38+00:00",
-    "fecha_evento_temprana": "2026-09-02T22:50:24+00:00",
-    "fecha_deteccion": "2026-09-03T09:46:34.590754+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Portuguesa::2026-09-02",
-    "titulo": "Inundación en Municipio Guanare, Portuguesa",
-    "texto": "📌 Inundación en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 02/09/2026, 9:33 p.m.\n🔎 Detectado por el sistema: 03/09/2026, 5:46 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
   }
 ]

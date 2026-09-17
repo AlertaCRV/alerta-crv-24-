@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-17T09:28:50.431936+00:00",
+  "actualizado": "2026-09-17T18:30:14.963174+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-17T01:50:44+00:00"
+    "hasta": "2026-09-17T17:30:00+00:00"
   },
-  "total_eventos": 338,
+  "total_eventos": 340,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
-    "infraestructura_electrica": 90,
+    "infraestructura_electrica": 91,
     "deslizamiento": 24,
     "colapso_estructural": 3,
-    "orden_publico": 65,
+    "orden_publico": 66,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 24,
@@ -42,11 +42,11 @@
     },
     {
       "estado": "Lara",
-      "total": 29,
+      "total": 30,
       "confirmados": 1,
       "por_severidad": {
         "critico": 4,
-        "alto": 8,
+        "alto": 9,
         "medio": 12,
         "bajo": 5
       },
@@ -54,12 +54,12 @@
     },
     {
       "estado": "Zulia",
-      "total": 25,
+      "total": 26,
       "confirmados": 4,
       "por_severidad": {
         "medio": 13,
         "critico": 3,
-        "bajo": 8,
+        "bajo": 9,
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
@@ -298,7 +298,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 3,
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -313,7 +313,7 @@
       "colapso_estructural": 1,
       "inundacion": 1,
       "sequia": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -468,10 +468,10 @@
     }
   },
   "por_severidad": {
-    "alto": 53,
+    "alto": 54,
     "critico": 38,
     "medio": 134,
-    "bajo": 105,
+    "bajo": 106,
     "sin_clasificar": 8
   },
   "serie_mensual_por_tipo": {
@@ -488,7 +488,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 23
+      "2026-09": 24
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -502,7 +502,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 19
+      "2026-09": 20
     },
     "salud_publica": {
       "2026-07": 1,
