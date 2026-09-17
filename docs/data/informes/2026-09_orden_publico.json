@@ -3,16 +3,20 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-16T00:40:59.405275+00:00",
-  "actualizado_hasta": "2026-09-15T11:40:35.198706+00:00",
-  "total_eventos": 15,
+  "generado": "2026-09-17T09:29:46.607885+00:00",
+  "actualizado_hasta": "2026-09-16T21:49:56.222892+00:00",
+  "total_eventos": 19,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 15
+    "actual": 19
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 15 eventos de orden público, una notable reducción frente a los 44 eventos del mes anterior (agosto 2026). Esta disminución se refleja en la menor cantidad de concentraciones y movilizaciones reportadas por los medios locales durante el período.\n\nEl 9 de septiembre, familiares de presos políticos se congregaron en el centro de Caracas, específicamente en las inmediaciones de la Defensoría del Pueblo (Plaza Morelo), como parte de la segunda jornada de la \"Ruta de las Respuestas Pendientes\" (Diario La Nacion). Ese mismo día, una marcha similar fue cubierta por La Prensa de Lara, donde los familiares reiteraron la exigencia de que la libertad de sus seres queridos no quede relegada a negociaciones económicas (La Prensa de Lara). Además, el traslado de reclusos en Barinas, tras los disturbios en Injúba, fue mencionado como un factor que agrava las condiciones de hacinamiento en los centros penitenciarios (Diario La Nacion).\n\nEl 3 de septiembre, ciudadanos y organizaciones no gubernamentales protestaron pacíficamente frente al Ministerio Público en Mérida, demandando el sobreseimiento de causas políticas y el cierre de centros de detención arbitraria (El Pitazo). En la misma fecha, el movimiento Vente Venezuela organizó asambleas en las parroquias de Sucre, San Pedro y La Vega, al oeste de Caracas, para reclamar un cronograma electoral y la libertad de los presos políticos (Primicia). Posteriormente, el 13 de septiembre, familiares y activistas realizaron una vigilia en la Plaza Bolívar de Chacao, con el objetivo de presionar a las instituciones estatales por información y liberación de los detenidos (El Pitazo).\n\nEn otras regiones, el 13 de septiembre se llevó a cabo una movilización en Píritu, Portuguesa, encabezada por el movimiento Liderazgo Ciudadano, donde vecinos en motocicletas y bicicletas expresaron su reclamo por servicios públicos dignos (Portuguesa al Dia). Paralelamente, jubilados de Cantv en Acarigua denunciaron la reducción de bonos y la suspensión de servicios de salud, amenazando con una huelga de hambre si no se atienden sus demandas (Portuguesa Reporta). Finalmente, la dirigente política Ymara García, también en Portuguesa, reclamó pensiones dignas, mejor atención en salud y la restitución de beneficios para jubilados, en el marco de las protestas laborales que continúan en la región (Portuguesa Reporta).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 19 eventos de orden público, una disminución respecto a los 44 eventos contabilizados en agosto del mismo año (44 evento(s) registrados entonces vs. 19 en este período). Esta reducción se observa en el contexto de diversas manifestaciones y hechos de violencia que continúan afectando la seguridad ciudadana en distintas regiones del país.\n\nEl hecho más grave registrado en este período ocurrió en el estado Anzoátegui, donde un oficial de la Policía Municipal de Sotillo (Polisotillo) perpetró un triple homicidio en la madrugada del martes 15 de septiembre. Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz, entregándose posteriormente a las autoridades (El Pitazo). El caso, calificado de severidad crítica, dejó tres víctimas mortales y generó conmoción en la zona norte del estado.\n\nAdemás de este incidente, se mantuvieron activas diversas expresiones de descontento social, como concentraciones de familiares de presos políticos en Caracas y Mérida, y protestas de productores agrícolas, aunque estos eventos no reportaron daños materiales ni víctimas fatales (Diario La Nación; El Pitazo). Estas movilizaciones forman parte del panorama de orden público, pero no alcanzaron la gravedad del caso de Anzoátegui.\n\nEl monitoreo continuo de la Cruz Roja Venezolana seguirá evaluando la situación de seguridad y brindando apoyo a las comunidades afectadas, especialmente en casos de violencia extrema como el ocurrido en Anzoátegui, donde la pérdida de vidas humanas subraya la necesidad de respuestas rápidas y coordinadas.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/"
+    },
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
@@ -34,8 +38,20 @@
       "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+    },
+    {
+      "nombre": "La Verdad de Vargas",
+      "link": "https://laverdaddevargas.com/productores-de-arroz-protestan-en-caracas/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu/?utm_source=rss&utm_medium=rss&utm_campaign=colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu"
     },
     {
       "nombre": "Portuguesa Reporta",
@@ -76,6 +92,10 @@
     {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/09/15/ciudadanos-preocupados-se-hicieron-presentes-en-el-ecocidio-de-la-plaza-vargas-en-cumana/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/familiares-de-privados-de-libertad-mantendran-las-protestas-pacificas-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=familiares-de-privados-de-libertad-mantendran-las-protestas-pacificas-yaracuy"
     }
   ]
 }
