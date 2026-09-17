@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": "San Sebastián",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/electrocutado-hombre-cuando-realizaba-una-reparacion-electrica-en-su-residencia/",
+        "fecha": "2026-09-17T23:00:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-17T23:00:09+00:00",
+    "fecha_evento_temprana": "2026-09-17T23:00:09+00:00",
+    "fecha_deteccion": "2026-09-17T23:45:26.525104+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-09-17",
+    "titulo": "Falla eléctrica en Municipio San Sebastián, Aragua",
+    "texto": "📌 Falla eléctrica en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 17/09/2026, 7:00 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 7:45 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/electrocutado-hombre-cuando-realizaba-una-reparacion-electrica-en-su-residencia/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Lara",
     "municipio": null,
     "parroquia": null,
@@ -1370,57 +1396,5 @@
     "clave_dedup": "tormenta_electrica::Lara::2026-09-03",
     "titulo": "Tormenta eléctrica en Lara",
     "texto": "📌 Tormenta eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/09/2026, 6:13 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/",
-        "fecha": "2026-09-03T22:16:52+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T22:16:52+00:00",
-    "fecha_evento_temprana": "2026-09-03T22:16:52+00:00",
-    "fecha_deteccion": "2026-09-03T22:38:30.392811+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-03",
-    "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 03/09/2026, 6:16 p.m.\n🔎 Detectado por el sistema: 03/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/",
-        "fecha": "2026-09-03T15:46:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T15:46:35+00:00",
-    "fecha_evento_temprana": "2026-09-03T15:46:35+00:00",
-    "fecha_deteccion": "2026-09-03T22:38:37.130174+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "vialidad::Distrito Capital::2026-09-03",
-    "titulo": "Incidente vial en Distrito Capital",
-    "texto": "📌 Incidente vial en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 03/09/2026, 11:46 a.m.\n🔎 Detectado por el sistema: 03/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-un-herido-tras-choque-de-autobuses-en-caracas/"
   }
 ]
