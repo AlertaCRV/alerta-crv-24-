@@ -3,19 +3,19 @@
   "tipo": "colapso_estructural",
   "tipo_label": "Colapso estructural",
   "cerrado": false,
-  "generado": "2026-09-14T01:47:57.155395+00:00",
-  "actualizado_hasta": "2026-09-13T23:42:50.232226+00:00",
+  "generado": "2026-09-18T16:08:25.211528+00:00",
+  "actualizado_hasta": "2026-09-18T16:08:19.622864+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de colapso estructural, lo que representa una disminución respecto al período anterior, en el que se habían reportado dos incidentes (Comparación con el período anterior (2026-08): 2 evento(s) registrados entonces vs. 1 en este período). \n\nEl único caso documentado corresponde al embalse Turimiquire, ubicado en el estado Sucre, cuya infraestructura quedó inoperativa durante siete meses a causa de un colapso estructural del túnel de trasvase provocado por eventos sísmicos en el macizo montañoso (El Periodico de Monagas). Las autoridades detectaron los daños severos en febrero de 2026, lo que obligó a suspender por completo las operaciones de bombeo (El Periodico de Monagas). \n\nTras la reparación del túnel, el fin de semana pasado se reanudaron las maniobras de bombeo hacia la isla de Margarita y otras zonas del oriente del país, restableciendo el suministro de agua que había sido interrumpido durante ese período (El Periodico de Monagas). Esta reactivación es crucial para la población de Margarita y los municipios de Sucre que dependían del embalse para sus necesidades básicas (El Periodico de Monagas). \n\nEl monitoreo continuo de la integridad estructural del embalse y de sus componentes críticos seguirá siendo una prioridad para la Cruz Roja Venezolana, con el fin de prevenir futuros colapsos y garantizar la seguridad hídrica de la región (El Periodico de Monagas).",
+  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de colapso estructural, cifra que contrasta con los dos eventos reportados en el mes anterior (agosto 2026). Esta reducción se refleja en los datos comparativos proporcionados por la Cruz Roja Venezolana.\n\nEl único incidente ocurrió en el estado Mérida, específicamente en el municipio Aricagua, donde intensas lluvias provocaron el colapso de un puente que conecta sectores agrícolas de la zona (Primicia). La gravedad del daño fue catalogada como alta, dado que la pérdida de la infraestructura vial aisló a comunidades rurales y comprometió el acceso a tierras de cultivo.\n\nComo consecuencia directa del derrumbe, varios sectores agrícolas quedaron incomunicados, lo que generó dificultades para el transporte de productos y la movilización de equipos de emergencia (Primicia). Las autoridades locales iniciaron labores de evaluación estructural y se activaron protocolos de apoyo humanitario para garantizar el suministro de alimentos y asistencia a los agricultores afectados.\n\nEl monitoreo continuo de la Cruz Roja seguirá centrado en la evaluación de riesgos y la coordinación con organismos de defensa civil, con el objetivo de prevenir futuros colapsos y mitigar sus efectos en la población vulnerable de la región (Primicia).",
   "fuentes": [
     {
-      "nombre": "El Periodico de Monagas",
-      "link": "https://elperiodicodemonagas.com.ve/venezuela/turimiquire-bombea-agua-a-margarita-y-sucre-luego-de-7-meses/"
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/colapso-de-puente-en-merida-aisla-sectores-agricolas/"
     }
   ]
 }

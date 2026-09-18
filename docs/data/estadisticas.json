@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-18T01:40:55.490956+00:00",
+  "actualizado": "2026-09-18T16:08:20.528656+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-17T23:00:09+00:00"
+    "hasta": "2026-09-18T16:00:01+00:00"
   },
-  "total_eventos": 342,
+  "total_eventos": 344,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
     "infraestructura_electrica": 93,
     "deslizamiento": 24,
-    "colapso_estructural": 3,
-    "orden_publico": 66,
+    "colapso_estructural": 4,
+    "orden_publico": 67,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 24,
@@ -42,13 +42,14 @@
     },
     {
       "estado": "Lara",
-      "total": 30,
+      "total": 31,
       "confirmados": 1,
       "por_severidad": {
         "critico": 4,
         "alto": 9,
         "medio": 12,
-        "bajo": 5
+        "bajo": 5,
+        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -191,6 +192,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Merida",
+      "total": 11,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 3,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Portuguesa",
       "total": 11,
       "confirmados": 0,
@@ -200,17 +212,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 10,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 3,
-        "alto": 2
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -298,7 +299,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_electrica": 9,
       "sismo": 1,
       "deslizamiento": 1,
@@ -438,7 +439,8 @@
       "vialidad": 1,
       "orden_publico": 2,
       "inundacion": 1,
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "colapso_estructural": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -469,11 +471,11 @@
     }
   },
   "por_severidad": {
-    "alto": 55,
+    "alto": 56,
     "critico": 39,
     "medio": 134,
     "bajo": 106,
-    "sin_clasificar": 8
+    "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -498,12 +500,13 @@
     },
     "colapso_estructural": {
       "2026-07": 1,
-      "2026-08": 2
+      "2026-08": 2,
+      "2026-09": 1
     },
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 20
+      "2026-09": 21
     },
     "salud_publica": {
       "2026-07": 1,

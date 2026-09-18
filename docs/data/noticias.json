@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": "Torres",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/",
+        "fecha": "2026-09-18T14:09:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-18T14:09:07+00:00",
+    "fecha_evento_temprana": "2026-09-18T14:09:07+00:00",
+    "fecha_deteccion": "2026-09-18T16:06:47.843309+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-09-18",
+    "titulo": "Orden público en Municipio Torres, Lara",
+    "texto": "📌 Orden público en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 18/09/2026, 10:09 a.m.\n🔎 Detectado por el sistema: 18/09/2026, 12:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/"
+  },
+  {
+    "tipo": "colapso_estructural",
+    "ubicacion": "Merida",
+    "municipio": "Aricagua",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/colapso-de-puente-en-merida-aisla-sectores-agricolas/",
+        "fecha": "2026-09-18T16:00:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-18T16:00:01+00:00",
+    "fecha_evento_temprana": "2026-09-18T16:00:01+00:00",
+    "fecha_deteccion": "2026-09-18T16:08:19.622864+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "colapso_estructural::Merida::2026-09-18",
+    "titulo": "Colapso estructural en Municipio Aricagua, Merida",
+    "texto": "📌 Colapso estructural en Municipio Aricagua, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Aricagua, Merida\n🕒 Hecho reportado: 18/09/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 12:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/colapso-de-puente-en-merida-aisla-sectores-agricolas/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Guarico",
     "municipio": "José Tadeo Monagas",
@@ -1318,109 +1370,5 @@
     "clave_dedup": "orden_publico::Miranda::2026-09-04",
     "titulo": "Orden público en Municipio Chacao, Miranda",
     "texto": "📌 Orden público en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 04/09/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/",
-        "fecha": "2026-09-04T00:01:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T00:01:23+00:00",
-    "fecha_evento_temprana": "2026-09-04T00:01:23+00:00",
-    "fecha_deteccion": "2026-09-04T09:32:42.138669+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Merida::2026-09-04",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 03/09/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Lara",
-    "municipio": "Palavecino",
-    "parroquia": "José Gregorio Bastidas",
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/",
-        "fecha": "2026-09-03T22:21:45+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T22:21:45+00:00",
-    "fecha_evento_temprana": "2026-09-03T22:21:45+00:00",
-    "fecha_deteccion": "2026-09-04T09:32:45.531542+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "inundacion::Lara::2026-09-03",
-    "titulo": "Inundación en Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara",
-    "texto": "📌 Inundación en Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia José Gregorio Bastidas, Municipio Palavecino, Lara\n🕒 Hecho reportado: 03/09/2026, 6:21 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/",
-        "fecha": "2026-09-04T01:34:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T01:34:12+00:00",
-    "fecha_evento_temprana": "2026-09-04T01:34:12+00:00",
-    "fecha_deteccion": "2026-09-04T09:32:52.170051+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-02",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/09/2026, 9:34 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/"
-  },
-  {
-    "tipo": "tormenta_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/",
-        "fecha": "2026-09-03T22:13:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-03T22:13:13+00:00",
-    "fecha_evento_temprana": "2026-09-03T22:13:13+00:00",
-    "fecha_deteccion": "2026-09-04T09:32:55.541039+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "tormenta_electrica::Lara::2026-09-03",
-    "titulo": "Tormenta eléctrica en Lara",
-    "texto": "📌 Tormenta eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/09/2026, 6:13 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 5:32 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/proteccion-civil-arboles-lluvias/"
   }
 ]
