@@ -124,5 +124,12 @@
     "fecha_deteccion": "2026-09-18T16:08:19.622864+00:00",
     "fecha_evento_temprana": "2026-09-18T16:00:01+00:00",
     "municipio": "Aricagua"
+  },
+  "orden_publico::Distrito Capital::2026-09-18": {
+    "severidad": "bajo",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-18T19:03:45.330057+00:00",
+    "fecha_evento_temprana": "2026-09-18T17:20:51+00:00",
+    "municipio": "Libertador"
   }
 }

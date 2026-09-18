@@ -1,6 +1,37 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.45,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/",
+        "fecha": "2026-09-18T19:01:32+00:00"
+      },
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/620401/frente-nacional-de-abogados-advierte-que-el-nuevo-tsj-nacera-nulo/",
+        "fecha": "2026-09-18T17:20:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-18T19:01:32+00:00",
+    "fecha_evento_temprana": "2026-09-18T17:20:51+00:00",
+    "fecha_deteccion": "2026-09-18T19:03:45.330057+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-18",
+    "titulo": "Orden público en Municipio Libertador, Distrito Capital",
+    "texto": "📌 Orden público en Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 18/09/2026, 3:01 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 3:03 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/\n  • Runrun.es: https://runrun.es/noticias/620401/frente-nacional-de-abogados-advierte-que-el-nuevo-tsj-nacera-nulo/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Lara",
     "municipio": "Torres",
     "parroquia": null,
