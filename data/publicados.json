@@ -110,5 +110,19 @@
     "fecha_deteccion": "2026-09-18T01:40:25.082581+00:00",
     "fecha_evento_temprana": "2026-09-17T22:00:04+00:00",
     "municipio": "José Tadeo Monagas"
+  },
+  "orden_publico::Lara::2026-09-18": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-18T16:06:47.843309+00:00",
+    "fecha_evento_temprana": "2026-09-18T14:09:07+00:00",
+    "municipio": "Torres"
+  },
+  "colapso_estructural::Merida::2026-09-18": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-18T16:08:19.622864+00:00",
+    "fecha_evento_temprana": "2026-09-18T16:00:01+00:00",
+    "municipio": "Aricagua"
   }
 }
