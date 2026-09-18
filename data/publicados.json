@@ -1,18 +1,4 @@
 {
-  "incendio::Zulia::2026-09-15": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-15T19:20:28.394915+00:00",
-    "fecha_evento_temprana": "2026-09-15T15:59:09+00:00",
-    "municipio": "Maracaibo"
-  },
-  "crisis_migratoria::La Guaira::2026-09-15": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-15T19:21:07.801712+00:00",
-    "fecha_evento_temprana": "2026-09-15T17:30:00+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Distrito Capital::2026-09-15": {
     "severidad": "bajo",
     "confirmado": false,
