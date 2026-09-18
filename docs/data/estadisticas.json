@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-17T23:45:31.350324+00:00",
+  "actualizado": "2026-09-18T01:40:55.490956+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-17T23:00:09+00:00"
   },
-  "total_eventos": 341,
+  "total_eventos": 342,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
-    "infraestructura_electrica": 92,
+    "infraestructura_electrica": 93,
     "deslizamiento": 24,
     "colapso_estructural": 3,
     "orden_publico": 66,
@@ -260,12 +260,13 @@
     },
     {
       "estado": "Guarico",
-      "total": 4,
+      "total": 5,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 4
+        "medio": 4,
+        "alto": 1
       },
-      "severidad_dominante": "medio"
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -442,7 +443,7 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
@@ -468,7 +469,7 @@
     }
   },
   "por_severidad": {
-    "alto": 54,
+    "alto": 55,
     "critico": 39,
     "medio": 134,
     "bajo": 106,
@@ -488,7 +489,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 25
+      "2026-09": 26
     },
     "deslizamiento": {
       "2026-07": 3,

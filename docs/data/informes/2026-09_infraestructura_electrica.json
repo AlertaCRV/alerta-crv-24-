@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-17T04:15:54.088123+00:00",
-  "actualizado_hasta": "2026-09-16T23:57:55.266238+00:00",
-  "total_eventos": 22,
+  "generado": "2026-09-18T01:42:42.861399+00:00",
+  "actualizado_hasta": "2026-09-18T01:40:25.082581+00:00",
+  "total_eventos": 26,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 62,
-    "actual": 22
+    "actual": 26
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 22 fallas eléctricas, una disminución notable respecto a los 62 eventos del mes anterior, agosto de 2026 (comparación proporcionada). Esta reducción se da en un contexto de crisis eléctrica persistente en el país, que sigue generando cortes prolongados y afectando a la población.\n\nEl estado Lara experimentó dos fallas de alta severidad que dejaron a la población sin suministro eléctrico durante entre 6 y 7 horas diarias, obligando a familias y comercios a adquirir equipos de respaldo para evitar la oscuridad (El Impulso). Estas interrupciones se reportaron en Barquisimeto, capital del estado, y reflejan la aguda crisis que afecta a Lara (El Impulso).\n\nEn Táchira se registró una falla eléctrica de gravedad crítica, que dejó a la región en completo apagón tras fuertes bajones de voltaje, extendiéndose también a varios estados vecinos (Diario La Nacion). La magnitud del corte provocó comparaciones de los usuarios con luces navideñas y generó preocupación a nivel nacional.\n\nBarinas sufrió una falla de alta severidad que provocó apagones de hasta 12 horas, generando protestas y una alerta del Colegio de Enfermería por el impacto en la atención médica (El Pitazo). En Monagas, vecinos de la vía que conduce al sur del estado bloquearon la carretera en protesta tras tres días sin energía, exigiendo la intervención de Corpoelec (El Periodico de Monagas).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 26 fallas eléctricas, una reducción notable frente a los 62 eventos del mes anterior (agosto 2026). A pesar de la disminución en número, la gravedad de varios incidentes siguió siendo alta, con consecuencias materiales y humanos en distintas regiones del país.\n\nEn el estado Lara, los cortes eléctricos de alta severidad se prolongaron entre 6 y 7 horas diarias, obligando a familias y comercios a adquirir equipos de respaldo para evitar quedar a oscuras (El Impulso). Además, el 17 de septiembre se informó que el 52 % del gremio industrial del estado se vio afectado por las interrupciones, generando presión para que se realicen inversiones que estabilicen el suministro (El Impulso).\n\nEl 15 de septiembre, una falla eléctrica crítica dejó sin energía a gran parte del estado Táchira, acompañada de fluctuaciones severas de voltaje que provocaron parpadeos de luz comparados con decoraciones navideñas (Diario La Nacion). El apagón se extendió también a varios estados vecinos, intensificando la crisis energética a nivel regional.\n\nEn Barinas, los apagones de hasta 12 horas causaron protestas con quema de cauchos y despertaron la preocupación del Colegio de Enfermería por el impacto en la atención médica de los pacientes (El Pitazo). En Monagas, la falta de servicio eléctrico durante tres días motivó a vecinos a bloquear la carretera nacional en señal de protesta, exigiendo la intervención de la estatal Corpoelec (El Periodico de Monagas). Por su parte, en Mérida, un cortocircuito provocó el apagón del aeropuerto Juan Pablo Pérez Alfonso de El Vigía, suspendiendo temporalmente los vuelos (Reporteros de Merida).\n\nEn Aragua, un hombre de tercera edad falleció tras recibir una fuerte descarga eléctrica mientras realizaba una reparación en su vivienda, durante el racionamiento programado de seis horas continuas (El Siglo). Finalmente, en Guárico, la agroindustria declaró estado de emergencia debido a los prolongados cortes eléctricos que afectan la operatividad de plantas procesadoras y almacenadoras de cereales (Turimiquire).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -22,12 +22,28 @@
       "link": "https://www.elimpulso.com/2026/09/14/video-apagones-en-barquisimeto-obligan-a-familias-y-comercios-a-equiparse-para-no-quedar-a-oscuras-14sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/17/interrupciones-electricas-afectan-a-52-del-gremio-industrial-en-lara-17sep/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/monagas/a-las-6-pm-levantamos-la-protesta-si-corpoelec-soluciona-el-problema/"
     },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/electrocutado-hombre-cuando-realizaba-una-reparacion-electrica-en-su-residencia/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/cortocircuito-genero-apagon-en-el.html"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/09/17/la-agroindustria-en-guarico-esta-en-emergencia-por-los-apagones-cortes-electricos-prolongados/"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
