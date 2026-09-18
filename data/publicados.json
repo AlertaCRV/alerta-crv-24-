@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-09-15T00:00:00+00:00",
     "municipio": null
   },
-  "deslizamiento::La Guaira::2026-09-14": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-15T06:07:09.483244+00:00",
-    "fecha_evento_temprana": "2026-09-14T22:00:00+00:00",
-    "municipio": null
-  },
   "orden_publico::La Guaira::2026-09-15": {
     "severidad": "bajo",
     "confirmado": false,
