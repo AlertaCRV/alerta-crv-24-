@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Guarico",
+    "municipio": "José Tadeo Monagas",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/17/la-agroindustria-en-guarico-esta-en-emergencia-por-los-apagones-cortes-electricos-prolongados/",
+        "fecha": "2026-09-17T22:00:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-17T22:00:04+00:00",
+    "fecha_evento_temprana": "2026-09-17T22:00:04+00:00",
+    "fecha_deteccion": "2026-09-18T01:40:25.082581+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Guarico::2026-09-17",
+    "titulo": "Falla eléctrica en Municipio José Tadeo Monagas, Guarico",
+    "texto": "📌 Falla eléctrica en Municipio José Tadeo Monagas, Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio José Tadeo Monagas, Guarico\n🕒 Hecho reportado: 17/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 9:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/17/la-agroindustria-en-guarico-esta-en-emergencia-por-los-apagones-cortes-electricos-prolongados/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Aragua",
     "municipio": "San Sebastián",
     "parroquia": null,

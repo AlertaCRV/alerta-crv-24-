@@ -124,5 +124,12 @@
     "fecha_deteccion": "2026-09-17T23:45:26.525104+00:00",
     "fecha_evento_temprana": "2026-09-17T23:00:09+00:00",
     "municipio": "San Sebastián"
+  },
+  "infraestructura_electrica::Guarico::2026-09-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-18T01:40:25.082581+00:00",
+    "fecha_evento_temprana": "2026-09-17T22:00:04+00:00",
+    "municipio": "José Tadeo Monagas"
   }
 }

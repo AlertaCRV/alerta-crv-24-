@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-17T09:29:46.607885+00:00",
-  "actualizado_hasta": "2026-09-16T21:49:56.222892+00:00",
-  "total_eventos": 19,
+  "generado": "2026-09-18T01:43:36.540092+00:00",
+  "actualizado_hasta": "2026-09-17T18:30:13.784465+00:00",
+  "total_eventos": 20,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 19
+    "actual": 20
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 19 eventos de orden público, una disminución respecto a los 44 eventos contabilizados en agosto del mismo año (44 evento(s) registrados entonces vs. 19 en este período). Esta reducción se observa en el contexto de diversas manifestaciones y hechos de violencia que continúan afectando la seguridad ciudadana en distintas regiones del país.\n\nEl hecho más grave registrado en este período ocurrió en el estado Anzoátegui, donde un oficial de la Policía Municipal de Sotillo (Polisotillo) perpetró un triple homicidio en la madrugada del martes 15 de septiembre. Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz, entregándose posteriormente a las autoridades (El Pitazo). El caso, calificado de severidad crítica, dejó tres víctimas mortales y generó conmoción en la zona norte del estado.\n\nAdemás de este incidente, se mantuvieron activas diversas expresiones de descontento social, como concentraciones de familiares de presos políticos en Caracas y Mérida, y protestas de productores agrícolas, aunque estos eventos no reportaron daños materiales ni víctimas fatales (Diario La Nación; El Pitazo). Estas movilizaciones forman parte del panorama de orden público, pero no alcanzaron la gravedad del caso de Anzoátegui.\n\nEl monitoreo continuo de la Cruz Roja Venezolana seguirá evaluando la situación de seguridad y brindando apoyo a las comunidades afectadas, especialmente en casos de violencia extrema como el ocurrido en Anzoátegui, donde la pérdida de vidas humanas subraya la necesidad de respuestas rápidas y coordinadas.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 20 eventos de orden público, una disminución notable respecto a los 44 eventos del mes anterior, agosto de 2026 (44 evento(s) registrados entonces vs. 20 en este período). Esta reducción se observa en la menor cantidad de incidentes violentos y manifestaciones reportados por los medios.\n\nEl hecho más grave registrado fue el triple homicidio en Anzoátegui, ocurrido la madrugada del 15 de septiembre en el sector Lomas del Sol de Puerto La Cruz. Jesús Carrión, oficial activo de la Policía Municipal de Sotillo, asesinó a su pareja sentimental y a sus dos hijastras, entregándose posteriormente a las autoridades (El Pitazo).\n\nEl 9 de septiembre, familiares de presos políticos se concentraron en el centro de Caracas, específicamente en las inmediaciones de la Defensoría del Pueblo, como parte de la segunda jornada de la “Ruta de las Respuestas Pendientes”, exigiendo información y la liberación de los detenidos por motivos políticos (Diario La Nacion).\n\nEl 3 de septiembre, ciudadanos y organizaciones no gubernamentales protestaron pacíficamente frente al Ministerio Público en Mérida, demandando el sobreseimiento definitivo de causas políticas y el cierre de centros de detención arbitraria (El Pitazo).\n\nFinalmente, el 13 de septiembre se llevó a cabo una vigilia en la Plaza Bolívar de Chacao, Caracas, convocada por el Comité por la Libertad de los Presos Políticos, con el objetivo de presionar al Estado para que responda a las demandas de los familiares y libere a los presos políticos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -52,6 +52,10 @@
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu/?utm_source=rss&utm_medium=rss&utm_campaign=colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/"
     },
     {
       "nombre": "Portuguesa Reporta",
