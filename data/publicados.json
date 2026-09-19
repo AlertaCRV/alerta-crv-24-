@@ -110,5 +110,26 @@
     "fecha_deteccion": "2026-09-19T01:37:31.321582+00:00",
     "fecha_evento_temprana": "2026-09-19T01:10:59+00:00",
     "municipio": "Guanarito"
+  },
+  "incendio::Merida::2026-09-19": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-19T06:38:20.163111+00:00",
+    "fecha_evento_temprana": "2026-09-19T05:00:00+00:00",
+    "municipio": null
+  },
+  "incendio::Tachira::2026-09-19": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-19T06:38:32.566292+00:00",
+    "fecha_evento_temprana": "2026-09-19T05:00:00+00:00",
+    "municipio": "Ayacucho"
+  },
+  "orden_publico::Aragua::2026-09-19": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-19T06:38:44.914170+00:00",
+    "fecha_evento_temprana": "2026-09-19T01:06:08+00:00",
+    "municipio": null
   }
 }
