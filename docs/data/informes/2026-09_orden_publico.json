@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-18T01:43:36.540092+00:00",
-  "actualizado_hasta": "2026-09-17T18:30:13.784465+00:00",
-  "total_eventos": 20,
+  "generado": "2026-09-19T01:41:10.793609+00:00",
+  "actualizado_hasta": "2026-09-19T01:37:31.321582+00:00",
+  "total_eventos": 24,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 20
+    "actual": 24
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 20 eventos de orden público, una disminución notable respecto a los 44 eventos del mes anterior, agosto de 2026 (44 evento(s) registrados entonces vs. 20 en este período). Esta reducción se observa en la menor cantidad de incidentes violentos y manifestaciones reportados por los medios.\n\nEl hecho más grave registrado fue el triple homicidio en Anzoátegui, ocurrido la madrugada del 15 de septiembre en el sector Lomas del Sol de Puerto La Cruz. Jesús Carrión, oficial activo de la Policía Municipal de Sotillo, asesinó a su pareja sentimental y a sus dos hijastras, entregándose posteriormente a las autoridades (El Pitazo).\n\nEl 9 de septiembre, familiares de presos políticos se concentraron en el centro de Caracas, específicamente en las inmediaciones de la Defensoría del Pueblo, como parte de la segunda jornada de la “Ruta de las Respuestas Pendientes”, exigiendo información y la liberación de los detenidos por motivos políticos (Diario La Nacion).\n\nEl 3 de septiembre, ciudadanos y organizaciones no gubernamentales protestaron pacíficamente frente al Ministerio Público en Mérida, demandando el sobreseimiento definitivo de causas políticas y el cierre de centros de detención arbitraria (El Pitazo).\n\nFinalmente, el 13 de septiembre se llevó a cabo una vigilia en la Plaza Bolívar de Chacao, Caracas, convocada por el Comité por la Libertad de los Presos Políticos, con el objetivo de presionar al Estado para que responda a las demandas de los familiares y libere a los presos políticos (El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 24 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (agosto 2026). Esta reducción se refleja en la menor cantidad de incidentes reportados, aunque persisten casos de alta gravedad que afectan a distintas regiones del país.\n\nEl 15 de septiembre se produjo un hecho crítico en el estado Anzoátegui, donde el oficial de la Policía Municipal de Sotillo, Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). El triple homicidio generó conmoción en la zona norte del estado y el agresor se entregó a las autoridades tras cometer el crimen.\n\nEn Guárico, el 18 de septiembre se registró otro incidente de severidad crítica: una mujer de 45 años, Durlys Rengifo, fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, recibiendo dos puñaladas durante una discusión con el agresor (El Siglo (Aragua)). El ataque dejó a la víctima herida y generó preocupación en la comunidad local.\n\nEn el estado Portuguesa, la situación de orden público se manifestó a través de protestas de alto nivel de tensión debido a los prolongados cortes eléctricos. Habitantes de los municipios Guanarito, San Rafael de Onoto y Araure se movilizaron, cerraron accesos y se concentraron en puentes para exigir la restitución del servicio eléctrico, que ahora se interrumpe diariamente y puede durar hasta ocho horas (Portuguesa Reporta).\n\nA pesar de la reducción en el número total de eventos, los incidentes descritos evidencian que la violencia y el descontento social continúan presentes en distintas regiones, requiriendo una atención continua por parte de las autoridades y de la Cruz Roja Venezolana para mitigar los daños materiales y proteger a la población.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/exdirigente-estudiantil-mato-a-una-mujer-a-punaladas/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -42,8 +50,16 @@
       "link": "https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/presos-politicos-caracas-libertad/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/"
     },
     {
       "nombre": "La Verdad de Vargas",
@@ -80,6 +96,10 @@
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/619118/avance-de-protesta-contra-acuerdos-petroleros-fue-impedida-por-polichacao-hubo-enfrentamientos/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/620401/frente-nacional-de-abogados-advierte-que-el-nuevo-tsj-nacera-nulo/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

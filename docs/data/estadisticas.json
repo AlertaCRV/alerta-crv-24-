@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-18T19:05:52.312662+00:00",
+  "actualizado": "2026-09-19T01:38:14.792585+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-18T19:01:32+00:00"
+    "hasta": "2026-09-19T01:10:59+00:00"
   },
-  "total_eventos": 345,
+  "total_eventos": 347,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
     "infraestructura_electrica": 93,
     "deslizamiento": 24,
     "colapso_estructural": 4,
-    "orden_publico": 68,
+    "orden_publico": 70,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 24,
@@ -170,6 +170,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Portuguesa",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 5,
+        "critico": 1,
+        "alto": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Trujillo",
       "total": 11,
       "confirmados": 0,
@@ -201,17 +213,6 @@
         "alto": 3
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 5,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "La Guaira",
@@ -261,13 +262,14 @@
     },
     {
       "estado": "Guarico",
-      "total": 5,
+      "total": 6,
       "confirmados": 0,
       "por_severidad": {
         "medio": 4,
-        "alto": 1
+        "alto": 1,
+        "critico": 1
       },
-      "severidad_dominante": "alto"
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Delta Amacuro",
@@ -445,11 +447,12 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "orden_publico": 1
     },
     "Portuguesa": {
       "infraestructura_electrica": 1,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -471,8 +474,8 @@
     }
   },
   "por_severidad": {
-    "alto": 56,
-    "critico": 39,
+    "alto": 57,
+    "critico": 40,
     "medio": 134,
     "bajo": 107,
     "sin_clasificar": 9
@@ -506,7 +509,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 22
+      "2026-09": 24
     },
     "salud_publica": {
       "2026-07": 1,

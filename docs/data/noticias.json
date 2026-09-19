@@ -1,6 +1,58 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Guarico",
+    "municipio": "Leonardo Infante",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/exdirigente-estudiantil-mato-a-una-mujer-a-punaladas/",
+        "fecha": "2026-09-19T00:01:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-19T00:01:04+00:00",
+    "fecha_evento_temprana": "2026-09-19T00:01:04+00:00",
+    "fecha_deteccion": "2026-09-19T01:37:18.443042+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Guarico::2026-09-19",
+    "titulo": "Orden público en Municipio Leonardo Infante, Guarico",
+    "texto": "📌 Orden público en Municipio Leonardo Infante, Guarico\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Leonardo Infante, Guarico\n🕒 Hecho reportado: 18/09/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 9:37 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/exdirigente-estudiantil-mato-a-una-mujer-a-punaladas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Guanarito",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa",
+        "fecha": "2026-09-19T01:10:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-19T01:10:59+00:00",
+    "fecha_evento_temprana": "2026-09-19T01:10:59+00:00",
+    "fecha_deteccion": "2026-09-19T01:37:31.321582+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-19",
+    "titulo": "Orden público en Municipio Guanarito, Portuguesa",
+    "texto": "📌 Orden público en Municipio Guanarito, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guanarito, Portuguesa\n🕒 Hecho reportado: 18/09/2026, 9:10 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 9:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
     "parroquia": null,
@@ -1349,57 +1401,5 @@
     "clave_dedup": "explosion::Zulia::2026-09-04",
     "titulo": "Explosión en Zulia",
     "texto": "📌 Explosión en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 04/09/2026, 7:01 p.m.\n🔎 Detectado por el sistema: 05/09/2026, 6:46 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/lanzan-artefacto-explosivo-en-el-reten-el-marite-no-detono/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/04/sectores-productivos-del-estado-carabobo-solicitaron-que-atiendan-las-fallas-electricas-del-estado/",
-        "fecha": "2026-09-04T13:00:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T13:00:02+00:00",
-    "fecha_evento_temprana": "2026-09-04T13:00:02+00:00",
-    "fecha_deteccion": "2026-09-04T19:41:15.830789+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-09-04",
-    "titulo": "Falla eléctrica en Carabobo",
-    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 04/09/2026, 9:00 a.m.\n🔎 Detectado por el sistema: 04/09/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/04/sectores-productivos-del-estado-carabobo-solicitaron-que-atiendan-las-fallas-electricas-del-estado/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": "Chacao",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/",
-        "fecha": "2026-09-04T17:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-04T17:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-04T17:00:00+00:00",
-    "fecha_deteccion": "2026-09-04T19:41:50.717204+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-04",
-    "titulo": "Orden público en Municipio Chacao, Miranda",
-    "texto": "📌 Orden público en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 04/09/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 04/09/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
   }
 ]
