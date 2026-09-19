@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-19T01:38:14.792585+00:00",
+  "actualizado": "2026-09-19T06:39:37.305592+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-19T01:10:59+00:00"
+    "hasta": "2026-09-19T05:00:00+00:00"
   },
-  "total_eventos": 347,
+  "total_eventos": 350,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 63,
     "infraestructura_electrica": 93,
     "deslizamiento": 24,
     "colapso_estructural": 4,
-    "orden_publico": 70,
+    "orden_publico": 71,
     "salud_publica": 9,
     "crisis_migratoria": 6,
-    "incendio": 24,
+    "incendio": 26,
     "vialidad": 12,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -79,10 +79,10 @@
     },
     {
       "estado": "Aragua",
-      "total": 19,
+      "total": 20,
       "confirmados": 0,
       "por_severidad": {
-        "bajo": 4,
+        "bajo": 5,
         "medio": 6,
         "alto": 4,
         "critico": 5
@@ -170,6 +170,29 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Tachira",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 4,
+        "bajo": 3,
+        "medio": 3,
+        "critico": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Merida",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 3,
+        "alto": 4
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Portuguesa",
       "total": 12,
       "confirmados": 0,
@@ -190,29 +213,6 @@
         "bajo": 4
       },
       "severidad_dominante": "medio"
-    },
-    {
-      "estado": "Tachira",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 3,
-        "medio": 3,
-        "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 3,
-        "alto": 3
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -389,7 +389,8 @@
       "infraestructura_electrica": 2,
       "orden_publico": 1,
       "inundacion": 3,
-      "sismo": 1
+      "sismo": 1,
+      "incendio": 1
     },
     "Monagas": {
       "infraestructura_electrica": 7,
@@ -428,7 +429,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 8,
       "infraestructura_electrica": 3,
       "accidente_transporte": 1,
@@ -442,7 +443,8 @@
       "orden_publico": 2,
       "inundacion": 1,
       "deslizamiento": 1,
-      "colapso_estructural": 1
+      "colapso_estructural": 1,
+      "incendio": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -474,10 +476,10 @@
     }
   },
   "por_severidad": {
-    "alto": 57,
+    "alto": 59,
     "critico": 40,
     "medio": 134,
-    "bajo": 107,
+    "bajo": 108,
     "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
@@ -509,7 +511,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 24
+      "2026-09": 25
     },
     "salud_publica": {
       "2026-07": 1,
@@ -523,7 +525,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 2
+      "2026-09": 4
     },
     "vialidad": {
       "2026-08": 10,
