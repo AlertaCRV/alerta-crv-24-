@@ -3,16 +3,20 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-19T01:39:48.588511+00:00",
-  "actualizado_hasta": "2026-09-15T19:20:28.394915+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-20T07:04:58.411384+00:00",
+  "actualizado_hasta": "2026-09-19T06:38:32.566292+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 19,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron dos incendios, una notable reducción frente a los 19 eventos contabilizados en agosto del mismo año (Comparación con el período anterior). Esta disminución se refleja en la menor carga operativa para los equipos de respuesta y en una menor exposición de la población a riesgos de incendio.\n\nEl incidente más grave ocurrió en el estado Zulia, en la vivienda del sector Villa Hermosa, municipio Maracaibo, el lunes 14 de septiembre. La acumulación de gas doméstico provocó una explosión que causó la muerte de María Bernal, de 28 años, quien sufrió quemaduras en el 60 % de su cuerpo y un paro respiratorio, y dejó a dos personas más con heridas de diversa gravedad (El Pitazo). La severidad del evento fue catalogada como crítica, requiriendo la intervención inmediata de los servicios de emergencia.\n\nAunque el único incendio documentado en septiembre fue el de Zulia, el registro del monitoreo indica la existencia de otro evento menor que no ha sido detallado en los medios disponibles. En contraste, el mes anterior se reportó un incendio de gran magnitud en la fábrica de cosméticos ubicada en la zona industrial de Palo Verde, Aragua, el 31 de agosto, donde aproximadamente 120 efectivos de bomberos, protección civil y policías fueron desplegados para controlar las llamas (El Siglo). Este suceso, aunque fuera del período analizado, ilustra la capacidad de respuesta del país ante incendios de alta complejidad.\n\nEn conclusión, la caída en el número de incendios registrados en septiembre sugiere una mejora temporal en la prevención y control de riesgos, aunque la gravedad del caso de Zulia subraya la necesidad de mantener y reforzar los protocolos de seguridad en entornos residenciales.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron cuatro incendios, lo que representa una disminución significativa frente a los diecinueve eventos reportados en el mes anterior (2026‑08).\\n\\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, provocó un incendio de severidad crítica que dejó una víctima fatal, María Bernal, de 28 años, con quemaduras en el 60 % de su cuerpo, y dos personas más con heridas leves (El Pitazo).\\n\\nEn Táchira, un vehículo gandolero cargado de cemento se incendió en la arteria vial que conecta el estado con El Vigía, Mérida, después de que el conductor desviara la unidad para evitar colisionar con un colectivo. El incendio destruyó por completo la unidad y el conductor sufrió graves quemaduras, calificándose de alta severidad (Diario La Nacion (Tachira)).\\n\\nEl mismo suceso afectó al estado Mérida, donde la ruta entre Táchira y El Vigía quedó interrumpida y el accidente generó conmoción entre los transportistas de la zona; la magnitud del incendio y las lesiones del conductor fueron también consideradas de alta severidad (Diario La Nacion (Tachira)).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/sucesos/al-incendiarse-el-vehiculo-gandolero-resulto-con-graves-quemaduras/"
+    },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/"
