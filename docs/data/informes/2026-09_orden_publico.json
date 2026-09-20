@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-19T01:41:10.793609+00:00",
-  "actualizado_hasta": "2026-09-19T01:37:31.321582+00:00",
-  "total_eventos": 24,
+  "generado": "2026-09-20T01:45:06.815279+00:00",
+  "actualizado_hasta": "2026-09-19T06:38:44.914170+00:00",
+  "total_eventos": 25,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 24
+    "actual": 25
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 24 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (agosto 2026). Esta reducción se refleja en la menor cantidad de incidentes reportados, aunque persisten casos de alta gravedad que afectan a distintas regiones del país.\n\nEl 15 de septiembre se produjo un hecho crítico en el estado Anzoátegui, donde el oficial de la Policía Municipal de Sotillo, Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). El triple homicidio generó conmoción en la zona norte del estado y el agresor se entregó a las autoridades tras cometer el crimen.\n\nEn Guárico, el 18 de septiembre se registró otro incidente de severidad crítica: una mujer de 45 años, Durlys Rengifo, fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, recibiendo dos puñaladas durante una discusión con el agresor (El Siglo (Aragua)). El ataque dejó a la víctima herida y generó preocupación en la comunidad local.\n\nEn el estado Portuguesa, la situación de orden público se manifestó a través de protestas de alto nivel de tensión debido a los prolongados cortes eléctricos. Habitantes de los municipios Guanarito, San Rafael de Onoto y Araure se movilizaron, cerraron accesos y se concentraron en puentes para exigir la restitución del servicio eléctrico, que ahora se interrumpe diariamente y puede durar hasta ocho horas (Portuguesa Reporta).\n\nA pesar de la reducción en el número total de eventos, los incidentes descritos evidencian que la violencia y el descontento social continúan presentes en distintas regiones, requiriendo una atención continua por parte de las autoridades y de la Cruz Roja Venezolana para mitigar los daños materiales y proteger a la población.",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 25 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (2026‑08). Esta reducción se refleja en la variedad de incidentes que, aunque menos numerosos, mantuvieron niveles de gravedad críticos y altos en distintas regiones del país.\n\nEl 15 de septiembre se produjo un hecho de violencia familiar en el sector Lomas del Sol, Puerto La Cruz, estado Anzoátegui, donde el oficial de la Policía Municipal de Sotillo, Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras con su arma de reglamento (El Pitazo). El triple homicidio, calificado como de severidad crítica, generó conmoción en la zona norte del estado y el agresor se entregó a las autoridades tras cometer el crimen (El Pitazo).\n\nEn Guárico, el 18 de septiembre, una mujer de 45 años identificada como Durlys Rengifo fue atacada con arma blanca en el sector Las Garcitas, municipio Leonardo Infante, Valle de la Pascua (El Siglo (Aragua)). Según fuentes, el agresor, un exdirigente estudiantil, le propinó dos puñaladas durante una discusión, provocándole heridas que requirieron atención médica (El Siglo (Aragua)). Este incidente también se clasificó con severidad crítica.\n\nEn el estado Portuguesa, las protestas contra los prolongados cortes eléctricos se intensificaron en los municipios de Guanarito, San Rafael de Onoto y Araure (Portuguesa Reporta). Los vecinos, afectados por apagones diarios que pueden extenderse hasta ocho horas, bloquearon el acceso al pueblo y se concentraron en el puente como medida de presión, elevando la tensión social a un nivel de severidad alto (Portuguesa Reporta). Estas manifestaciones reflejan la creciente insatisfacción ciudadana ante la falta de suministro eléctrico.\n\nA pesar de la menor cantidad de eventos en comparación con el mes anterior, la presencia de incidentes críticos en Anzoátegui y Guárico, junto con protestas de alta gravedad en Portuguesa, indica que la situación de orden público sigue siendo delicada y requiere una atención continua por parte de las autoridades y la Cruz Roja Venezolana.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -52,6 +52,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/jubilados-de-cantv-sumaron-nueva-semana-de-protesta/"
     },
     {
       "nombre": "La Prensa de Lara",
