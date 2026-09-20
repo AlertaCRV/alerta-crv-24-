@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Monagas",
+    "municipio": "Ezequiel Zamora",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/reactivan-pozos-profundos-en-dos-municipios-de-monagas/",
+        "fecha": "2026-09-20T17:31:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T17:31:21+00:00",
+    "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
+    "fecha_deteccion": "2026-09-20T18:56:10.043788+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Monagas::2026-09-20",
+    "titulo": "Falla de agua en Municipio Ezequiel Zamora, Monagas",
+    "texto": "📌 Falla de agua en Municipio Ezequiel Zamora, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Ezequiel Zamora, Monagas\n🕒 Hecho reportado: 20/09/2026, 1:31 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 2:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/reactivan-pozos-profundos-en-dos-municipios-de-monagas/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Zulia",
     "municipio": "Maracaibo",

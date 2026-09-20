@@ -1,18 +1,4 @@
 {
-  "infraestructura_electrica::Lara::2026-09-17": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-17T18:30:08.907108+00:00",
-    "fecha_evento_temprana": "2026-09-17T17:30:00+00:00",
-    "municipio": null
-  },
-  "orden_publico::Zulia::2026-09-17": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-17T18:30:13.784465+00:00",
-    "fecha_evento_temprana": "2026-09-17T16:49:39+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Aragua::2026-09-17": {
     "severidad": "critico",
     "confirmado": false,
@@ -110,5 +96,12 @@
     "fecha_deteccion": "2026-09-20T16:19:54.445542+00:00",
     "fecha_evento_temprana": "2026-09-20T14:42:01+00:00",
     "municipio": "Antonio Pinto Salinas"
+  },
+  "infraestructura_agua::Monagas::2026-09-20": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T18:56:10.043788+00:00",
+    "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
+    "municipio": "Ezequiel Zamora"
   }
 }
