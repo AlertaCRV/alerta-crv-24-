@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-20T18:56:40.760903+00:00",
+  "actualizado": "2026-09-20T21:19:28.711211+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-20T17:31:21+00:00"
+    "hasta": "2026-09-20T20:17:35+00:00"
   },
-  "total_eventos": 355,
+  "total_eventos": 356,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 65,
-    "infraestructura_electrica": 94,
+    "infraestructura_electrica": 95,
     "deslizamiento": 24,
     "colapso_estructural": 4,
     "orden_publico": 71,
@@ -55,13 +55,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 27,
+      "total": 28,
       "confirmados": 4,
       "por_severidad": {
         "medio": 14,
         "critico": 3,
         "bajo": 9,
-        "sin_clasificar": 1
+        "sin_clasificar": 1,
+        "alto": 1
       },
       "severidad_dominante": "critico"
     },
@@ -313,7 +314,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 11,
+      "infraestructura_electrica": 12,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -476,7 +477,7 @@
     }
   },
   "por_severidad": {
-    "alto": 62,
+    "alto": 63,
     "critico": 40,
     "medio": 136,
     "bajo": 108,
@@ -496,7 +497,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 27
+      "2026-09": 28
     },
     "deslizamiento": {
       "2026-07": 3,
