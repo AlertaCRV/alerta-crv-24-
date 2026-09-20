@@ -1,6 +1,63 @@
 [
   {
     "tipo": "inundacion",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.8,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/maracaibo-amanece-bajo-fuertes-lluvias-y-reportan-anegaciones-en-varios-sectores/",
+        "fecha": "2026-09-20T13:37:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T13:37:05+00:00",
+    "fecha_evento_temprana": "2026-09-20T13:37:05+00:00",
+    "fecha_deteccion": "2026-09-20T16:19:46.342482+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Zulia::2026-09-20",
+    "titulo": "Inundación en Municipio Maracaibo, Zulia",
+    "texto": "📌 Inundación en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 20/09/2026, 9:37 a.m.\n🔎 Detectado por el sistema: 20/09/2026, 12:19 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/maracaibo-amanece-bajo-fuertes-lluvias-y-reportan-anegaciones-en-varios-sectores/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Merida",
+    "municipio": "Antonio Pinto Salinas",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-de-gran-magnitud-en-merida/",
+        "fecha": "2026-09-20T15:48:21+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida/?utm_source=rss&utm_medium=rss&utm_campaign=incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida",
+        "fecha": "2026-09-20T14:42:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T15:48:21+00:00",
+    "fecha_evento_temprana": "2026-09-20T14:42:01+00:00",
+    "fecha_deteccion": "2026-09-20T16:19:54.445542+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Merida::2026-09-20",
+    "titulo": "Incendio en Municipio Antonio Pinto Salinas, Merida",
+    "texto": "📌 Incendio en Municipio Antonio Pinto Salinas, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Antonio Pinto Salinas, Merida\n🕒 Hecho reportado: 20/09/2026, 11:48 a.m.\n🔎 Detectado por el sistema: 20/09/2026, 12:19 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-de-gran-magnitud-en-merida/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida/?utm_source=rss&utm_medium=rss&utm_campaign=incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida"
+  },
+  {
+    "tipo": "inundacion",
     "ubicacion": "Barinas",
     "municipio": "Antonio José De Sucre",
     "parroquia": null,

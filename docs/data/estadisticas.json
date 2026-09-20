@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-20T12:19:26.479374+00:00",
+  "actualizado": "2026-09-20T16:19:59.981421+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-20T12:16:29+00:00"
+    "hasta": "2026-09-20T15:48:21+00:00"
   },
-  "total_eventos": 352,
+  "total_eventos": 354,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 64,
+    "inundacion": 65,
     "infraestructura_electrica": 94,
     "deslizamiento": 24,
     "colapso_estructural": 4,
     "orden_publico": 71,
     "salud_publica": 9,
     "crisis_migratoria": 6,
-    "incendio": 26,
+    "incendio": 27,
     "vialidad": 12,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -55,10 +55,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 26,
+      "total": 27,
       "confirmados": 4,
       "por_severidad": {
-        "medio": 13,
+        "medio": 14,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1
@@ -159,6 +159,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Merida",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 3,
+        "alto": 5
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Sucre",
       "total": 12,
       "confirmados": 0,
@@ -180,17 +191,6 @@
         "critico": 2
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 3,
-        "alto": 4
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Portuguesa",
@@ -315,7 +315,7 @@
       "tormenta_electrica": 2,
       "infraestructura_electrica": 11,
       "colapso_estructural": 1,
-      "inundacion": 1,
+      "inundacion": 2,
       "sequia": 1,
       "orden_publico": 3,
       "sismo": 2,
@@ -444,7 +444,7 @@
       "inundacion": 1,
       "deslizamiento": 1,
       "colapso_estructural": 1,
-      "incendio": 1
+      "incendio": 2
     },
     "Guarico": {
       "sequia": 2,
@@ -476,9 +476,9 @@
     }
   },
   "por_severidad": {
-    "alto": 60,
+    "alto": 61,
     "critico": 40,
-    "medio": 135,
+    "medio": 136,
     "bajo": 108,
     "sin_clasificar": 9
   },
@@ -491,7 +491,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 9
+      "2026-09": 10
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -525,7 +525,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 4
+      "2026-09": 5
     },
     "vialidad": {
       "2026-08": 10,
