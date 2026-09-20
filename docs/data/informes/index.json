@@ -36,7 +36,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-09-19T06:40:18.136772+00:00",
+    "generado": "2026-09-20T07:05:52.066367+00:00",
     "total_eventos": 8
   },
   {
@@ -44,8 +44,8 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-09-19T01:40:30.777049+00:00",
-    "total_eventos": 26
+    "generado": "2026-09-20T07:05:25.560731+00:00",
+    "total_eventos": 27
   },
   {
     "periodo": "2026-09",
@@ -60,8 +60,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-09-19T01:39:48.588511+00:00",
-    "total_eventos": 2
+    "generado": "2026-09-20T07:04:58.411384+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-09",
