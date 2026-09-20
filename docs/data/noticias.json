@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Barinas",
+    "municipio": "Antonio José De Sucre",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/09/y-atencion-a-familiasautoridades-realizan-monitores-y-evaluacionde-viviendas-por-desbordamiento-del-rio-socopo/",
+        "fecha": "2026-09-20T12:16:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T12:16:29+00:00",
+    "fecha_evento_temprana": "2026-09-20T12:16:29+00:00",
+    "fecha_deteccion": "2026-09-20T12:19:25.956213+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Barinas::2026-09-20",
+    "titulo": "Inundación en Municipio Antonio José De Sucre, Barinas",
+    "texto": "📌 Inundación en Municipio Antonio José De Sucre, Barinas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Antonio José De Sucre, Barinas\n🕒 Hecho reportado: 20/09/2026, 8:16 a.m.\n🔎 Detectado por el sistema: 20/09/2026, 8:19 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/y-atencion-a-familiasautoridades-realizan-monitores-y-evaluacionde-viviendas-por-desbordamiento-del-rio-socopo/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -1287,83 +1313,5 @@
     "clave_dedup": "infraestructura_electrica::Zulia::2026-09-06",
     "titulo": "Falla eléctrica en Zulia",
     "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 06/09/2026, 10:34 a.m.\n🔎 Detectado por el sistema: 06/09/2026, 3:45 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/explosion-en-subestacion-electrica-afecta-el-servicio-en-ciudad-ojeda/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Candelaria",
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/",
-        "fecha": "2026-09-05T21:03:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-05T21:03:32+00:00",
-    "fecha_evento_temprana": "2026-09-05T21:03:32+00:00",
-    "fecha_deteccion": "2026-09-06T08:55:35.614540+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-09-05",
-    "titulo": "Falla eléctrica en Parroquia Candelaria, Distrito Capital",
-    "texto": "📌 Falla eléctrica en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 05/09/2026, 5:03 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados",
-        "fecha": "2026-09-05T22:33:37+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-05T22:33:37+00:00",
-    "fecha_evento_temprana": "2026-09-05T22:33:37+00:00",
-    "fecha_deteccion": "2026-09-06T08:55:39.177622+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-09-05",
-    "titulo": "Orden público en Portuguesa",
-    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 05/09/2026, 6:33 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/",
-        "fecha": "2026-09-05T21:01:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-05T21:01:20+00:00",
-    "fecha_evento_temprana": "2026-09-05T21:01:20+00:00",
-    "fecha_deteccion": "2026-09-06T08:55:45.906063+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-05",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 05/09/2026, 5:01 p.m.\n🔎 Detectado por el sistema: 06/09/2026, 4:55 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
   }
 ]
