@@ -103,5 +103,12 @@
     "fecha_deteccion": "2026-09-20T18:56:10.043788+00:00",
     "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
     "municipio": "Ezequiel Zamora"
+  },
+  "infraestructura_electrica::Zulia::2026-09-20": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T21:19:14.840392+00:00",
+    "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
+    "municipio": "San Francisco"
   }
 }
