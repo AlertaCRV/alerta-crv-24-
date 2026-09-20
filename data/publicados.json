@@ -110,5 +110,12 @@
     "fecha_deteccion": "2026-09-20T21:19:14.840392+00:00",
     "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
     "municipio": "San Francisco"
+  },
+  "incendio::Distrito Capital::2026-09-20": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T23:20:26.053733+00:00",
+    "fecha_evento_temprana": "2026-09-20T22:52:28+00:00",
+    "municipio": null
   }
 }
