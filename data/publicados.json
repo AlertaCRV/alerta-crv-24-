@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Merida::2026-09-17": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-17T09:28:20.110964+00:00",
-    "fecha_evento_temprana": "2026-09-17T01:50:44+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Lara::2026-09-17": {
     "severidad": "alto",
     "confirmado": false,
@@ -96,5 +89,12 @@
     "fecha_deteccion": "2026-09-20T01:41:46.261521+00:00",
     "fecha_evento_temprana": "2026-09-20T00:55:56+00:00",
     "municipio": null
+  },
+  "inundacion::Barinas::2026-09-20": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T12:19:25.956213+00:00",
+    "fecha_evento_temprana": "2026-09-20T12:16:29+00:00",
+    "municipio": "Antonio José De Sucre"
   }
 }

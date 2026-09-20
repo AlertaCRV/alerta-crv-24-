@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-20T01:42:12.797837+00:00",
+  "actualizado": "2026-09-20T12:19:26.479374+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-20T00:55:56+00:00"
+    "hasta": "2026-09-20T12:16:29+00:00"
   },
-  "total_eventos": 351,
+  "total_eventos": 352,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 63,
+    "inundacion": 64,
     "infraestructura_electrica": 94,
     "deslizamiento": 24,
     "colapso_estructural": 4,
@@ -67,11 +67,11 @@
     },
     {
       "estado": "Barinas",
-      "total": 25,
+      "total": 26,
       "confirmados": 1,
       "por_severidad": {
         "alto": 3,
-        "medio": 11,
+        "medio": 12,
         "bajo": 7,
         "critico": 4
       },
@@ -348,7 +348,7 @@
     },
     "Barinas": {
       "deslizamiento": 3,
-      "inundacion": 4,
+      "inundacion": 5,
       "infraestructura_electrica": 6,
       "vialidad": 4,
       "orden_publico": 6,
@@ -478,7 +478,7 @@
   "por_severidad": {
     "alto": 60,
     "critico": 40,
-    "medio": 134,
+    "medio": 135,
     "bajo": 108,
     "sin_clasificar": 9
   },
@@ -491,7 +491,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 8
+      "2026-09": 9
     },
     "infraestructura_electrica": {
       "2026-07": 5,
