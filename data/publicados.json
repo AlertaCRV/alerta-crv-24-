@@ -96,5 +96,19 @@
     "fecha_deteccion": "2026-09-20T12:19:25.956213+00:00",
     "fecha_evento_temprana": "2026-09-20T12:16:29+00:00",
     "municipio": "Antonio José De Sucre"
+  },
+  "inundacion::Zulia::2026-09-20": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T16:19:46.342482+00:00",
+    "fecha_evento_temprana": "2026-09-20T13:37:05+00:00",
+    "municipio": "Maracaibo"
+  },
+  "incendio::Merida::2026-09-20": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-20T16:19:54.445542+00:00",
+    "fecha_evento_temprana": "2026-09-20T14:42:01+00:00",
+    "municipio": "Antonio Pinto Salinas"
   }
 }
