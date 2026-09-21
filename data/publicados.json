@@ -1,11 +1,4 @@
 {
-  "orden_publico::Distrito Capital::2026-09-18": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-18T19:03:45.330057+00:00",
-    "fecha_evento_temprana": "2026-09-18T17:20:51+00:00",
-    "municipio": "Libertador"
-  },
   "orden_publico::Guarico::2026-09-19": {
     "severidad": "critico",
     "confirmado": false,
@@ -140,9 +133,9 @@
     "municipio": null
   },
   "deslizamiento::La Guaira::2026-09-21": {
-    "severidad": "critico",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-21T18:55:54.217578+00:00",
+    "fecha_deteccion": "2026-09-21T22:26:22.513417+00:00",
     "fecha_evento_temprana": "2026-09-21T14:03:49+00:00",
     "municipio": null
   }
