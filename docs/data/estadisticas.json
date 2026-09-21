@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-21T01:19:22.012730+00:00",
+  "actualizado": "2026-09-21T06:34:48.028430+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-20T23:58:21+00:00"
   },
-  "total_eventos": 359,
+  "total_eventos": 361,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 65,
-    "infraestructura_electrica": 95,
-    "deslizamiento": 24,
+    "infraestructura_electrica": 96,
+    "deslizamiento": 25,
     "colapso_estructural": 4,
     "orden_publico": 72,
     "salud_publica": 9,
@@ -55,10 +55,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 28,
+      "total": 29,
       "confirmados": 4,
       "por_severidad": {
-        "medio": 14,
+        "medio": 15,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -151,13 +151,14 @@
     },
     {
       "estado": "Bolivar",
-      "total": 13,
+      "total": 14,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 5,
-        "medio": 8
+        "medio": 8,
+        "critico": 1
       },
-      "severidad_dominante": "medio"
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Merida",
@@ -314,7 +315,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 12,
+      "infraestructura_electrica": 13,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -375,7 +376,8 @@
       "orden_publico": 2,
       "escasez_combustible": 2,
       "incendio": 2,
-      "inundacion": 1
+      "inundacion": 1,
+      "deslizamiento": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -478,8 +480,8 @@
   },
   "por_severidad": {
     "alto": 64,
-    "critico": 40,
-    "medio": 137,
+    "critico": 41,
+    "medio": 138,
     "bajo": 109,
     "sin_clasificar": 9
   },
@@ -497,12 +499,12 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 28
+      "2026-09": 29
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
-      "2026-09": 3
+      "2026-09": 4
     },
     "colapso_estructural": {
       "2026-07": 1,

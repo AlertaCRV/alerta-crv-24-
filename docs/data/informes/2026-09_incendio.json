@@ -3,23 +3,35 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-20T07:04:58.411384+00:00",
-  "actualizado_hasta": "2026-09-19T06:38:32.566292+00:00",
-  "total_eventos": 4,
+  "generado": "2026-09-21T06:35:20.814853+00:00",
+  "actualizado_hasta": "2026-09-20T23:20:26.053733+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 19,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron cuatro incendios, lo que representa una disminución significativa frente a los diecinueve eventos reportados en el mes anterior (2026‑08).\\n\\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, provocó un incendio de severidad crítica que dejó una víctima fatal, María Bernal, de 28 años, con quemaduras en el 60 % de su cuerpo, y dos personas más con heridas leves (El Pitazo).\\n\\nEn Táchira, un vehículo gandolero cargado de cemento se incendió en la arteria vial que conecta el estado con El Vigía, Mérida, después de que el conductor desviara la unidad para evitar colisionar con un colectivo. El incendio destruyó por completo la unidad y el conductor sufrió graves quemaduras, calificándose de alta severidad (Diario La Nacion (Tachira)).\\n\\nEl mismo suceso afectó al estado Mérida, donde la ruta entre Táchira y El Vigía quedó interrumpida y el accidente generó conmoción entre los transportistas de la zona; la magnitud del incendio y las lesiones del conductor fueron también consideradas de alta severidad (Diario La Nacion (Tachira)).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron seis incendios que afectaron distintas regiones del país, una cifra notablemente inferior a los diecinueve eventos reportados en el mes anterior (comparación con el período anterior: 19 evento(s) registrados entonces vs. 6 en este período). A pesar de la reducción en número, los incidentes presentaron severidades críticas o altas, con daños materiales y personas afectadas.\n\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, dejó una víctima fatal y dos heridos, entre los que se destaca una mujer de 28 años que sufrió quemaduras en el 60 % de su cuerpo (El Pitazo).\n\nEn el estado Mérida, dos sucesos distintos se reportaron. Primero, según el Diario La Nacion (Tachira), un vehículo gandolero cargado de cemento se incendió el 19 de septiembre en la arteria que conecta Táchira con El Vigía, provocando la destrucción total de la unidad y graves quemaduras al conductor, quien recibió atención médica por heridas de consideración (Diario La Nacion (Tachira)). Segundo, el El Periodico de Monagas informó de un incendio de gran magnitud en San Isidro Alto, localidad de Santa Cruz de Mora, que amenazó el naciente de agua potable y fincas productivas, generando importantes daños al entorno natural y a la infraestructura local (El Periodico de Monagas).\n\nEn el estado Táchira, el mismo accidente de vehículo descrito por el Diario La Nacion (Tachira) se consideró un incendio de alta severidad, pues la llama consumió por completo el camión y puso en riesgo la circulación en la vía, aunque no se reportaron víctimas adicionales más allá del conductor herido (Diario La Nacion (Tachira)).\n\nFinalmente, en el Distrito Capital, dos niveles de un depósito ubicado en el sector El Cementerio de Caracas se incendiaron el 20 de septiembre, obligando a la evacuación de aproximadamente 30 personas de los locales contiguos por razones de seguridad; no se reportaron fallecidos ni heridos, pero el siniestro provocó daños estructurales en los pisos afectados (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/sucesos/al-incendiarse-el-vehiculo-gandolero-resulto-con-graves-quemaduras/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-de-gran-magnitud-en-merida/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida/?utm_source=rss&utm_medium=rss&utm_campaign=incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida"
     },
     {
       "nombre": "El Siglo (Aragua)",
