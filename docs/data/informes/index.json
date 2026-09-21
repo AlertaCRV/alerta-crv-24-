@@ -97,6 +97,14 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "derrame_petrolero",
+    "tipo_label": "Derrame petrolero",
+    "cerrado": false,
+    "generado": "2026-09-21T18:56:01.533208+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,

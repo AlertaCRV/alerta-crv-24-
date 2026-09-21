@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-09",
+  "tipo": "derrame_petrolero",
+  "tipo_label": "Derrame petrolero",
+  "cerrado": false,
+  "generado": "2026-09-21T18:56:01.533208+00:00",
+  "actualizado_hasta": "2026-09-21T18:53:37.028258+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 2,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 el sistema de monitoreo de emergencias registró un único evento de derrame petrolero, lo que representa una disminución respecto al período anterior en el que se contabilizaron dos incidentes (2 evento(s) registrados entonces vs. 1 en este período). \n\nEl 21 de septiembre de 2026 la Fundación Azul Ambientalistas denunció un derrame de crudo de gran magnitud que afectó simultáneamente a seis municipios del estado Zulia: San Francisco, Cabimas, Lagunillas, Miranda, Valmore Rodríguez y Baralt (La Verdad (Zulia)). Las denuncias llegaron a través de reportes, imágenes y videos enviados por pescadores, turistas y residentes de la Costa Oriental del Lago, quienes describieron la situación como un \"masivo\" derrame que pone en riesgo al lago de Maracaibo (La Verdad (Zulia)). El mismo hecho fue confirmado por Reporte Confidencial, que también señaló la exigencia de la organización de respuestas inmediatas y un plan de atención real (Reporte Confidencial (Nueva Esparta)). \n\nEl derrame provocó daños materiales considerables en la zona costera y una grave amenaza ambiental para el lago de Maracaibo, al que se advirtió que \"no aguanta más\" (La Verdad (Zulia)). Aunque no se reportaron heridos ni víctimas fatales, la magnitud del derrame generó preocupación por la contaminación del agua y el impacto en la pesca y el turismo local (Reporte Confidencial (Nueva Esparta)). La Cruz Roja Venezolana continúa monitoreando la evolución del incidente y coordinando acciones de apoyo con las autoridades y organizaciones ambientales.",
+  "fuentes": [
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/denuncian-masivo-derrame-petrolero-en-6-municipios-del-zulia-nuestro-lago-no-aguanta-mas/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/21/fundacion-azul-ambientalistas/"
+    }
+  ]
+}
