@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-21T06:34:48.028430+00:00",
+  "actualizado": "2026-09-21T13:22:52.116032+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-20T23:58:21+00:00"
+    "hasta": "2026-09-21T13:10:23+00:00"
   },
-  "total_eventos": 361,
+  "total_eventos": 363,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 65,
@@ -14,8 +14,8 @@
     "orden_publico": 72,
     "salud_publica": 9,
     "crisis_migratoria": 6,
-    "incendio": 28,
-    "vialidad": 12,
+    "incendio": 29,
+    "vialidad": 13,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -29,11 +29,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 58,
+      "total": 59,
       "confirmados": 5,
       "por_severidad": {
         "alto": 12,
-        "medio": 14,
+        "medio": 15,
         "bajo": 18,
         "critico": 10,
         "sin_clasificar": 4
@@ -161,6 +161,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Tachira",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 5,
+        "bajo": 3,
+        "medio": 3,
+        "critico": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 13,
       "confirmados": 0,
@@ -181,18 +193,6 @@
         "alto": 1
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Tachira",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 4,
-        "bajo": 3,
-        "medio": 3,
-        "critico": 2
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Portuguesa",
@@ -331,7 +331,7 @@
       "deslizamiento": 4,
       "inundacion": 11,
       "orden_publico": 15,
-      "incendio": 10,
+      "incendio": 11,
       "vialidad": 2,
       "infraestructura_electrica": 11,
       "colapso_estructural": 1,
@@ -393,7 +393,8 @@
       "orden_publico": 1,
       "inundacion": 3,
       "sismo": 1,
-      "incendio": 1
+      "incendio": 1,
+      "vialidad": 1
     },
     "Monagas": {
       "infraestructura_electrica": 7,
@@ -479,9 +480,9 @@
     }
   },
   "por_severidad": {
-    "alto": 64,
+    "alto": 65,
     "critico": 41,
-    "medio": 138,
+    "medio": 139,
     "bajo": 109,
     "sin_clasificar": 9
   },
@@ -528,11 +529,11 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 6
+      "2026-09": 7
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 2
+      "2026-09": 3
     },
     "sismo": {
       "2026-08": 5,
