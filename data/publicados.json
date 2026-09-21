@@ -1,18 +1,4 @@
 {
-  "orden_publico::Lara::2026-09-18": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-18T16:06:47.843309+00:00",
-    "fecha_evento_temprana": "2026-09-18T14:09:07+00:00",
-    "municipio": "Torres"
-  },
-  "colapso_estructural::Merida::2026-09-18": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-18T16:08:19.622864+00:00",
-    "fecha_evento_temprana": "2026-09-18T16:00:01+00:00",
-    "municipio": "Aricagua"
-  },
   "orden_publico::Distrito Capital::2026-09-18": {
     "severidad": "bajo",
     "confirmado": true,
@@ -131,5 +117,33 @@
     "fecha_deteccion": "2026-09-21T13:22:50.943633+00:00",
     "fecha_evento_temprana": "2026-09-21T09:00:30+00:00",
     "municipio": "Libertador"
+  },
+  "infraestructura_electrica::Barinas::2026-09-21": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T18:53:28.341045+00:00",
+    "fecha_evento_temprana": "2026-09-21T17:33:38+00:00",
+    "municipio": "Pedraza"
+  },
+  "derrame_petrolero::Zulia::2026-09-21": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-21T18:53:37.028258+00:00",
+    "fecha_evento_temprana": "2026-09-21T16:14:08+00:00",
+    "municipio": "Valmore Rodríguez"
+  },
+  "inundacion::Trujillo::2026-09-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T18:54:36.870233+00:00",
+    "fecha_evento_temprana": "2026-09-21T14:42:05+00:00",
+    "municipio": null
+  },
+  "deslizamiento::La Guaira::2026-09-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T18:55:54.217578+00:00",
+    "fecha_evento_temprana": "2026-09-21T14:03:49+00:00",
+    "municipio": null
   }
 }

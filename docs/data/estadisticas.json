@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-21T13:22:52.116032+00:00",
+  "actualizado": "2026-09-21T18:55:56.387815+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-21T13:10:23+00:00"
+    "hasta": "2026-09-21T17:33:38+00:00"
   },
-  "total_eventos": 363,
+  "total_eventos": 367,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 65,
-    "infraestructura_electrica": 96,
-    "deslizamiento": 25,
+    "inundacion": 66,
+    "infraestructura_electrica": 97,
+    "deslizamiento": 26,
     "colapso_estructural": 4,
     "orden_publico": 72,
     "salud_publica": 9,
@@ -22,7 +22,7 @@
     "explosion": 2,
     "infraestructura_agua": 17,
     "accidente_transporte": 1,
-    "derrame_petrolero": 2,
+    "derrame_petrolero": 3,
     "ataque_armado": 1,
     "emergencia_metro": 1
   },
@@ -55,25 +55,25 @@
     },
     {
       "estado": "Zulia",
-      "total": 29,
-      "confirmados": 4,
+      "total": 30,
+      "confirmados": 5,
       "por_severidad": {
         "medio": 15,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 1
+        "alto": 2
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Barinas",
-      "total": 26,
+      "total": 27,
       "confirmados": 1,
       "por_severidad": {
         "alto": 3,
         "medio": 12,
-        "bajo": 7,
+        "bajo": 8,
         "critico": 4
       },
       "severidad_dominante": "critico"
@@ -184,6 +184,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Trujillo",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 4,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Sucre",
       "total": 12,
       "confirmados": 0,
@@ -207,26 +218,17 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Trujillo",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 7,
-        "bajo": 4
-      },
-      "severidad_dominante": "medio"
-    },
-    {
       "estado": "La Guaira",
-      "total": 10,
+      "total": 11,
       "confirmados": 0,
       "por_severidad": {
         "medio": 3,
         "sin_clasificar": 1,
         "alto": 5,
-        "bajo": 1
+        "bajo": 1,
+        "critico": 1
       },
-      "severidad_dominante": "alto"
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Apure",
@@ -325,7 +327,8 @@
       "ataque_armado": 1,
       "explosion": 1,
       "vialidad": 1,
-      "incendio": 1
+      "incendio": 1,
+      "derrame_petrolero": 1
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -341,7 +344,7 @@
       "salud_publica": 1
     },
     "Trujillo": {
-      "inundacion": 1,
+      "inundacion": 2,
       "incendio": 4,
       "sequia": 1,
       "infraestructura_electrica": 2,
@@ -351,7 +354,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 5,
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -468,7 +471,7 @@
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
-      "deslizamiento": 2,
+      "deslizamiento": 3,
       "inundacion": 3,
       "sismo": 1,
       "orden_publico": 1,
@@ -480,10 +483,10 @@
     }
   },
   "por_severidad": {
-    "alto": 65,
-    "critico": 41,
+    "alto": 66,
+    "critico": 43,
     "medio": 139,
-    "bajo": 109,
+    "bajo": 110,
     "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
@@ -495,17 +498,17 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 10
+      "2026-09": 11
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 29
+      "2026-09": 30
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
-      "2026-09": 4
+      "2026-09": 5
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -558,7 +561,8 @@
       "2026-08": 1
     },
     "derrame_petrolero": {
-      "2026-08": 2
+      "2026-08": 2,
+      "2026-09": 1
     },
     "ataque_armado": {
       "2026-08": 1
