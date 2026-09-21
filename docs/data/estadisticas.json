@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-20T23:21:16.967697+00:00",
+  "actualizado": "2026-09-21T01:19:22.012730+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-20T22:52:28+00:00"
+    "hasta": "2026-09-20T23:58:21+00:00"
   },
-  "total_eventos": 357,
+  "total_eventos": 359,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 65,
     "infraestructura_electrica": 95,
     "deslizamiento": 24,
     "colapso_estructural": 4,
-    "orden_publico": 71,
+    "orden_publico": 72,
     "salud_publica": 9,
     "crisis_migratoria": 6,
     "incendio": 28,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 16,
+    "infraestructura_agua": 17,
     "accidente_transporte": 1,
     "derrame_petrolero": 2,
     "ataque_armado": 1,
@@ -80,10 +80,10 @@
     },
     {
       "estado": "Aragua",
-      "total": 20,
+      "total": 21,
       "confirmados": 0,
       "por_severidad": {
-        "bajo": 5,
+        "bajo": 6,
         "medio": 6,
         "alto": 4,
         "critico": 5
@@ -127,6 +127,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 3,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Carabobo",
       "total": 14,
       "confirmados": 1,
@@ -137,17 +148,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Monagas",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 3,
-        "alto": 3
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Bolivar",
@@ -397,7 +397,7 @@
       "infraestructura_electrica": 7,
       "salud_publica": 1,
       "vialidad": 1,
-      "infraestructura_agua": 3,
+      "infraestructura_agua": 4,
       "incendio": 1,
       "orden_publico": 1
     },
@@ -430,7 +430,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 4,
+      "orden_publico": 5,
       "inundacion": 8,
       "infraestructura_electrica": 3,
       "accidente_transporte": 1,
@@ -479,8 +479,8 @@
   "por_severidad": {
     "alto": 64,
     "critico": 40,
-    "medio": 136,
-    "bajo": 108,
+    "medio": 137,
+    "bajo": 109,
     "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
@@ -512,7 +512,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 25
+      "2026-09": 26
     },
     "salud_publica": {
       "2026-07": 1,
@@ -549,7 +549,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 4
+      "2026-09": 5
     },
     "accidente_transporte": {
       "2026-08": 1

@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-20T01:45:06.815279+00:00",
-  "actualizado_hasta": "2026-09-19T06:38:44.914170+00:00",
-  "total_eventos": 25,
+  "generado": "2026-09-21T01:22:41.480573+00:00",
+  "actualizado_hasta": "2026-09-21T01:19:07.889241+00:00",
+  "total_eventos": 26,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 25
+    "actual": 26
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 25 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (2026‑08). Esta reducción se refleja en la variedad de incidentes que, aunque menos numerosos, mantuvieron niveles de gravedad críticos y altos en distintas regiones del país.\n\nEl 15 de septiembre se produjo un hecho de violencia familiar en el sector Lomas del Sol, Puerto La Cruz, estado Anzoátegui, donde el oficial de la Policía Municipal de Sotillo, Jesús Carrión, de 35 años, asesinó a su pareja sentimental y a sus dos hijastras con su arma de reglamento (El Pitazo). El triple homicidio, calificado como de severidad crítica, generó conmoción en la zona norte del estado y el agresor se entregó a las autoridades tras cometer el crimen (El Pitazo).\n\nEn Guárico, el 18 de septiembre, una mujer de 45 años identificada como Durlys Rengifo fue atacada con arma blanca en el sector Las Garcitas, municipio Leonardo Infante, Valle de la Pascua (El Siglo (Aragua)). Según fuentes, el agresor, un exdirigente estudiantil, le propinó dos puñaladas durante una discusión, provocándole heridas que requirieron atención médica (El Siglo (Aragua)). Este incidente también se clasificó con severidad crítica.\n\nEn el estado Portuguesa, las protestas contra los prolongados cortes eléctricos se intensificaron en los municipios de Guanarito, San Rafael de Onoto y Araure (Portuguesa Reporta). Los vecinos, afectados por apagones diarios que pueden extenderse hasta ocho horas, bloquearon el acceso al pueblo y se concentraron en el puente como medida de presión, elevando la tensión social a un nivel de severidad alto (Portuguesa Reporta). Estas manifestaciones reflejan la creciente insatisfacción ciudadana ante la falta de suministro eléctrico.\n\nA pesar de la menor cantidad de eventos en comparación con el mes anterior, la presencia de incidentes críticos en Anzoátegui y Guárico, junto con protestas de alta gravedad en Portuguesa, indica que la situación de orden público sigue siendo delicada y requiere una atención continua por parte de las autoridades y la Cruz Roja Venezolana.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 26 eventos de orden público, lo que representa una disminución respecto a los 44 eventos contabilizados en el mes anterior (agosto 2026).\\n\\nEn Anzoátegui, el 15 de septiembre se produjo un triple homicidio en el sector Lomas del Sol de Puerto La Cruz, perpetrado por el oficial de la Policía Municipal de Sotillo, Jesús Carrión, quien asesinó a su pareja sentimental y a sus dos hijastras. El hecho, catalogado con severidad crítica, generó conmoción en la zona norte del estado (El Pitazo).\\n\\nEn Guárico, el 18 de septiembre una mujer de 45 años, Durlys Rengifo, fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando herida por dos puñaladas. Este acto de violencia también se calificó con severidad crítica (El Siglo (Aragua)).\\n\\nEn el estado Portuguesa, las protestas por los prolongados cortes eléctricos se intensificaron en los municipios de Guanarito, San Rafael de Onoto y Araure, donde manifestantes bloquearon accesos y concentraron reclamos en el puente del municipio, generando daños materiales y alteraciones al orden público. Estas protestas fueron clasificadas con severidad alta (Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -56,6 +56,10 @@
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/jubilados-de-cantv-sumaron-nueva-semana-de-protesta/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/jubilados-de-la-cantv-sumaron-nueva-semana-se-protesta/"
     },
     {
       "nombre": "La Prensa de Lara",
