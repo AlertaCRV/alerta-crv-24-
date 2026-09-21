@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Aragua::2026-09-17": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-17T23:45:26.525104+00:00",
-    "fecha_evento_temprana": "2026-09-17T23:00:09+00:00",
-    "municipio": "San Sebastián"
-  },
   "infraestructura_electrica::Guarico::2026-09-17": {
     "severidad": "alto",
     "confirmado": false,
@@ -98,9 +91,9 @@
     "municipio": "Antonio Pinto Salinas"
   },
   "infraestructura_agua::Monagas::2026-09-20": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-20T18:56:10.043788+00:00",
+    "fecha_deteccion": "2026-09-21T01:18:50.267171+00:00",
     "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
     "municipio": "Ezequiel Zamora"
   },
@@ -116,6 +109,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-20T23:20:26.053733+00:00",
     "fecha_evento_temprana": "2026-09-20T22:52:28+00:00",
+    "municipio": null
+  },
+  "orden_publico::Aragua::2026-09-20": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T01:19:07.889241+00:00",
+    "fecha_evento_temprana": "2026-09-20T23:58:21+00:00",
     "municipio": null
   }
 }

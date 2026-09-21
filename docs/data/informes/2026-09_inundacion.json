@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-20T07:05:52.066367+00:00",
-  "actualizado_hasta": "2026-09-16T00:37:30.429976+00:00",
-  "total_eventos": 8,
+  "generado": "2026-09-21T01:22:14.762534+00:00",
+  "actualizado_hasta": "2026-09-20T16:19:46.342482+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 48,
-    "actual": 8
+    "actual": 10
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron ocho eventos de inundación, una disminución notable respecto a los 48 eventos registrados en agosto del mismo año (comparación con el período anterior). Esta reducción no implica ausencia de impactos, pues los episodios que se presentaron concentraron daños materiales y afectaciones a la población en varios estados del país.\n\nEl evento más crítico fue la inundación en Táchira, donde la crecida del río Burgua socavó los cimientos del puente de guerra, provocando su colapso y dejando a aproximadamente ocho mil productores agrícolas atrapados sin acceso a sus tierras (Diario La Nacion). La situación agravó la descomposición acelerada de lácteos y la paralización de cosechas tanto en Táchira como en Apure, generando pérdidas irreversibles para los agricultores (Diario La Nacion). Además, Turimiquire confirmó que comunidades agrícolas de Táchira reportaron derrumbes y vías inundadas, manteniéndolas incomunicadas (Turimiquire).\n\nEn el estado Portuguesa, fuertes lluvias del 2 de septiembre causaron anegaciones de viviendas y el colapso de un canal en el sector “La Comunidad”, obligando a vecinos a limpiar los escombros para evitar un desbordamiento mayor (La Prensa de Lara). El mismo día, El Impulso reportó inundaciones en sectores de Guanare, donde las precipitaciones intensas dejaron viviendas sumergidas y dificultaron el tránsito (El Impulso). En Lara, la capital Barquisimeto sufrió fuertes precipitaciones acompañadas de vientos huracanados el 3 de septiembre, provocando caída de árboles, daños estructurales en centros comerciales y anegaciones de calles, especialmente en la zona norte (El Pitazo).\n\nTurimiquire amplió el panorama al señalar que, además de Táchira, los estados Caracas, Carabobo, La Guaira, Lara y Yaracuy también reportaron vías inundadas durante la Onda Tropical 43, con comunidades agrícolas incomunicadas y personas en refugios expuestas a las aguas (Turimiquire). En Sucre, vecinos de Guarapiche protestaron frente al desbordamiento de aguas negras que afecta la salud pública, cerrando la avenida Rotaria como medida de presión (Turimiquire). \n\nFinalmente, en Yaracuy, productores del municipio Veroes solicitaron urgentemente la canalización del río Yaracuy para evitar futuros desbordamientos que podrían afectar sus sembradíos, una petición motivada por el aumento del nivel del agua tras las recientes lluvias (Yaracuy al Dia).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 10 eventos de inundación, una reducción significativa respecto a los 48 eventos del mes anterior (agosto 2026) (Comparación con el período anterior). Esta disminución se da en el contexto de una serie de lluvias intensas que afectaron a varios estados del país, generando daños materiales y situaciones de vulnerabilidad en comunidades agrícolas y urbanas.\n\nEl evento más crítico fue la inundación en Táchira, donde la crecida del río Burgua socavó los cimientos del puente de guerra de 60 metros, provocando su colapso y dejando acorralados a aproximadamente 8 mil productores agrícolas (Diario La Nacion (Tachira)). La descomposición acelerada de lácteos y la paralización de cosechas agravaron la pérdida de alimentos y la inseguridad alimentaria en la zona, mientras que los trámites burocráticos para soluciones se estiman en un plazo de un mes.\n\nEn el estado Portuguesa, fuertes lluvias del 2 de septiembre provocaron anegaciones de viviendas en sectores de Guanare, según reportes de usuarios en redes sociales y la cobertura de El Impulso (Lara). En Barquisimeto, el 3 de septiembre, lluvias acompañadas de vientos huracanados causaron caída de árboles, daños estructurales en centros comerciales y anegaciones de calles, especialmente en la zona norte (El Pitazo). En Maracaibo, el 20 de septiembre, las precipitaciones generaron desbordamiento de cañadas y anegaciones en varios sectores, incluida una presunta inundación cerca del Hospital Universitario de Maracaibo (La Verdad (Zulia)).\n\nAutoridades del Sistema Nacional de Gestión de Riesgo de Protección Civil realizaron monitoreo e inspección hídrica en Barinas tras el desbordamiento del río Socopó, evaluando viviendas afectadas (La Noticia de Barinas). En Lara, vecinos limpiaron canales para evitar desbordamientos después de las lluvias intensas (La Prensa de Lara). En Sucre, residentes de Guarapiche protestaron por el desbordamiento de aguas negras, señalando problemas de salud pública (Turimiquire (Sucre)). Finalmente, productores del municipio Veroes en Yaracuy solicitaron la canalización urgente del río Yaracuy para prevenir futuros desbordamientos (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -26,8 +26,16 @@
       "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
     },
     {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/09/y-atencion-a-familiasautoridades-realizan-monitores-y-evaluacionde-viviendas-por-desbordamiento-del-rio-socopo/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/maracaibo-amanece-bajo-fuertes-lluvias-y-reportan-anegaciones-en-varios-sectores/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
