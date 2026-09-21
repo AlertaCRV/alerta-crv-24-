@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "San Francisco",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/",
+        "fecha": "2026-09-20T20:17:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T20:17:35+00:00",
+    "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
+    "fecha_deteccion": "2026-09-21T06:34:07.070647+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-20",
+    "titulo": "Falla eléctrica en Municipio San Francisco, Zulia",
+    "texto": "📌 Falla eléctrica en Municipio San Francisco, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Francisco, Zulia\n🕒 Hecho reportado: 20/09/2026, 4:17 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 2:34 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Bolivar",
+    "municipio": "El Callao",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/dos-personas-murieron-luego-de-registrarse-un-derrube-en-una-mina-de-el-callao/",
+        "fecha": "2026-09-20T19:30:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-20T19:30:48+00:00",
+    "fecha_evento_temprana": "2026-09-20T19:30:48+00:00",
+    "fecha_deteccion": "2026-09-21T06:34:16.003019+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Bolivar::2026-09-20",
+    "titulo": "Deslizamiento/Derrumbe en Municipio El Callao, Bolivar",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 20/09/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 2:34 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/dos-personas-murieron-luego-de-registrarse-un-derrube-en-una-mina-de-el-callao/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Monagas",
     "municipio": "Ezequiel Zamora",
@@ -76,32 +128,6 @@
     "clave_dedup": "incendio::Distrito Capital::2026-09-20",
     "titulo": "Incendio en Parroquia Santa Rosalía, Distrito Capital",
     "texto": "📌 Incendio en Parroquia Santa Rosalía, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Santa Rosalía, Distrito Capital\n🕒 Hecho reportado: 20/09/2026, 6:52 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 7:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "San Francisco",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/",
-        "fecha": "2026-09-20T20:17:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-20T20:17:35+00:00",
-    "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
-    "fecha_deteccion": "2026-09-20T21:19:14.840392+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-20",
-    "titulo": "Falla eléctrica en Municipio San Francisco, Zulia",
-    "texto": "📌 Falla eléctrica en Municipio San Francisco, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio San Francisco, Zulia\n🕒 Hecho reportado: 20/09/2026, 4:17 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 5:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/"
   },
   {
     "tipo": "inundacion",
