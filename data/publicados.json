@@ -117,5 +117,19 @@
     "fecha_deteccion": "2026-09-21T06:34:16.003019+00:00",
     "fecha_evento_temprana": "2026-09-20T19:30:48+00:00",
     "municipio": "El Callao"
+  },
+  "vialidad::Tachira::2026-09-21": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T13:22:25.434952+00:00",
+    "fecha_evento_temprana": "2026-09-21T13:10:23+00:00",
+    "municipio": null
+  },
+  "incendio::Distrito Capital::2026-09-21": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-21T13:22:50.943633+00:00",
+    "fecha_evento_temprana": "2026-09-21T09:00:30+00:00",
+    "municipio": "Libertador"
   }
 }
