@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-22T06:14:13.544463+00:00",
+  "actualizado": "2026-09-22T11:42:52.614751+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-22T02:22:54+00:00"
   },
-  "total_eventos": 377,
+  "total_eventos": 379,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 97,
     "deslizamiento": 27,
     "colapso_estructural": 4,
-    "orden_publico": 77,
+    "orden_publico": 79,
     "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 30,
@@ -42,10 +42,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 33,
+      "total": 34,
       "confirmados": 5,
       "por_severidad": {
-        "medio": 16,
+        "medio": 17,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -103,6 +103,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Bolivar",
+      "total": 17,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 9,
+        "critico": 1,
+        "alto": 1,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Miranda",
       "total": 17,
       "confirmados": 2,
@@ -111,18 +124,6 @@
         "medio": 5,
         "critico": 4,
         "bajo": 5
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 16,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 9,
-        "critico": 1,
-        "alto": 1
       },
       "severidad_dominante": "critico"
     },
@@ -322,7 +323,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -377,7 +378,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 6,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1,
@@ -488,9 +489,9 @@
   "por_severidad": {
     "alto": 73,
     "critico": 43,
-    "medio": 141,
+    "medio": 142,
     "bajo": 111,
-    "sin_clasificar": 9
+    "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -521,7 +522,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 31
+      "2026-09": 33
     },
     "salud_publica": {
       "2026-07": 1,

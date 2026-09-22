@@ -1,10 +1,36 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/",
+        "fecha": "2026-09-22T00:17:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-22T00:17:32+00:00",
+    "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
+    "fecha_deteccion": "2026-09-22T11:42:00.022729+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-09-22",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 8:17 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 7:42 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 0.75,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +45,11 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-09-22T00:15:26+00:00",
     "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
-    "fecha_deteccion": "2026-09-22T06:12:18.314020+00:00",
+    "fecha_deteccion": "2026-09-22T11:42:08.747697+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Zulia::2026-09-22",
     "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 21/09/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 2:12 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
+    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 21/09/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 7:42 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
   },
   {
     "tipo": "derrame_petrolero",
@@ -154,32 +180,6 @@
     "clave_dedup": "incendio::Merida::2026-09-21",
     "titulo": "Incendio en Merida",
     "texto": "📌 Incendio en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 21/09/2026, 2:38 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/09/21/incendio-forestal-en-merida-afecta-a-mas-de-160-hectareas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/",
-        "fecha": "2026-09-22T00:17:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T00:17:32+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
-    "fecha_deteccion": "2026-09-22T01:07:11.331057+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-09-22",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 8:17 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/"
   },
   {
     "tipo": "infraestructura_agua",
@@ -1656,57 +1656,5 @@
     "clave_dedup": "orden_publico::Portuguesa::2026-09-08",
     "titulo": "Orden público en Portuguesa",
     "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 08/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/",
-        "fecha": "2026-09-07T23:40:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-07T23:40:05+00:00",
-    "fecha_evento_temprana": "2026-09-07T23:40:05+00:00",
-    "fecha_deteccion": "2026-09-08T11:40:11.834075+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-07",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 07/09/2026, 7:40 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/07/la-defensora-del-pueblo-se-comprometio-a-revisar-los-casos-de-presos-politicos-luego-de-la-protesta-en-caracas/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Lara",
-    "municipio": "Andrés Eloy Blanco",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/",
-        "fecha": "2026-09-08T00:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-08T00:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-08T00:00:00+00:00",
-    "fecha_deteccion": "2026-09-08T11:40:18.665012+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "infraestructura_agua::Lara::2026-09-08",
-    "titulo": "Falla de agua en Municipio Andrés Eloy Blanco, Lara",
-    "texto": "📌 Falla de agua en Municipio Andrés Eloy Blanco, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Andrés Eloy Blanco, Lara\n🕒 Hecho reportado: 07/09/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:40 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/07/video-cortes-electricos-y-fallas-de-agua-asfixian-el-comercio-y-la-rutina-diaria-en-sanare-7sep/"
   }
 ]

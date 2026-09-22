@@ -1,25 +1,4 @@
 {
-  "incendio::Merida::2026-09-19": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-19T06:38:20.163111+00:00",
-    "fecha_evento_temprana": "2026-09-19T05:00:00+00:00",
-    "municipio": null
-  },
-  "incendio::Tachira::2026-09-19": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-19T06:38:32.566292+00:00",
-    "fecha_evento_temprana": "2026-09-19T05:00:00+00:00",
-    "municipio": "Ayacucho"
-  },
-  "orden_publico::Aragua::2026-09-19": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-19T06:38:44.914170+00:00",
-    "fecha_evento_temprana": "2026-09-19T01:06:08+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Distrito Capital::2026-09-20": {
     "severidad": "alto",
     "confirmado": false,
@@ -133,9 +112,9 @@
     "municipio": null
   },
   "orden_publico::Zulia::2026-09-22": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-22T06:12:18.314020+00:00",
+    "fecha_deteccion": "2026-09-22T11:42:08.747697+00:00",
     "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
     "municipio": null
   },
@@ -147,9 +126,9 @@
     "municipio": null
   },
   "orden_publico::Bolivar::2026-09-22": {
-    "severidad": "alto",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-22T01:07:11.331057+00:00",
+    "fecha_deteccion": "2026-09-22T11:42:00.022729+00:00",
     "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
     "municipio": null
   },
