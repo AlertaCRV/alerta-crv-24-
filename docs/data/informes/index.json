@@ -25,11 +25,19 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
+    "cerrado": false,
+    "generado": "2026-09-22T06:16:06.906316+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-09-21T01:22:41.480573+00:00",
-    "total_eventos": 26
+    "generado": "2026-09-22T06:15:41.257079+00:00",
+    "total_eventos": 31
   },
   {
     "periodo": "2026-09",

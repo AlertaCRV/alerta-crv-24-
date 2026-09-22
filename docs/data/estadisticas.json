@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-09-22T01:08:33.388114+00:00",
+  "actualizado": "2026-09-22T06:14:13.544463+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-22T00:17:32+00:00"
+    "hasta": "2026-09-22T02:22:54+00:00"
   },
-  "total_eventos": 373,
+  "total_eventos": 377,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 97,
     "deslizamiento": 27,
     "colapso_estructural": 4,
-    "orden_publico": 75,
-    "salud_publica": 9,
+    "orden_publico": 77,
+    "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 30,
     "vialidad": 13,
@@ -22,7 +22,7 @@
     "explosion": 2,
     "infraestructura_agua": 18,
     "accidente_transporte": 1,
-    "derrame_petrolero": 3,
+    "derrame_petrolero": 4,
     "ataque_armado": 1,
     "emergencia_metro": 1
   },
@@ -41,6 +41,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Zulia",
+      "total": 33,
+      "confirmados": 5,
+      "por_severidad": {
+        "medio": 16,
+        "critico": 3,
+        "bajo": 9,
+        "sin_clasificar": 1,
+        "alto": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Lara",
       "total": 31,
       "confirmados": 1,
@@ -50,19 +63,6 @@
         "medio": 12,
         "bajo": 5,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Zulia",
-      "total": 31,
-      "confirmados": 5,
-      "por_severidad": {
-        "medio": 16,
-        "critico": 3,
-        "bajo": 9,
-        "sin_clasificar": 1,
-        "alto": 2
       },
       "severidad_dominante": "critico"
     },
@@ -139,6 +139,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Merida",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 4,
+        "alto": 7
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Monagas",
       "total": 15,
       "confirmados": 0,
@@ -160,17 +171,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 3,
-        "alto": 6
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Tachira",
@@ -322,14 +322,14 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
       "explosion": 1,
       "vialidad": 1,
       "incendio": 1,
-      "derrame_petrolero": 1
+      "derrame_petrolero": 2
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -449,11 +449,12 @@
     "Merida": {
       "infraestructura_electrica": 5,
       "vialidad": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "inundacion": 1,
       "deslizamiento": 1,
       "colapso_estructural": 1,
-      "incendio": 3
+      "incendio": 3,
+      "salud_publica": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -485,10 +486,10 @@
     }
   },
   "por_severidad": {
-    "alto": 70,
+    "alto": 73,
     "critico": 43,
     "medio": 141,
-    "bajo": 110,
+    "bajo": 111,
     "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
@@ -520,11 +521,12 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 29
+      "2026-09": 31
     },
     "salud_publica": {
       "2026-07": 1,
-      "2026-08": 8
+      "2026-08": 8,
+      "2026-09": 1
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -564,7 +566,7 @@
     },
     "derrame_petrolero": {
       "2026-08": 2,
-      "2026-09": 1
+      "2026-09": 2
     },
     "ataque_armado": {
       "2026-08": 1

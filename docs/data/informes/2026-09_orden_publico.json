@@ -3,23 +3,31 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-21T01:22:41.480573+00:00",
-  "actualizado_hasta": "2026-09-21T01:19:07.889241+00:00",
-  "total_eventos": 26,
+  "generado": "2026-09-22T06:15:41.257079+00:00",
+  "actualizado_hasta": "2026-09-22T06:13:46.127774+00:00",
+  "total_eventos": 31,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 26
+    "actual": 31
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 26 eventos de orden público, lo que representa una disminución respecto a los 44 eventos contabilizados en el mes anterior (agosto 2026).\\n\\nEn Anzoátegui, el 15 de septiembre se produjo un triple homicidio en el sector Lomas del Sol de Puerto La Cruz, perpetrado por el oficial de la Policía Municipal de Sotillo, Jesús Carrión, quien asesinó a su pareja sentimental y a sus dos hijastras. El hecho, catalogado con severidad crítica, generó conmoción en la zona norte del estado (El Pitazo).\\n\\nEn Guárico, el 18 de septiembre una mujer de 45 años, Durlys Rengifo, fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando herida por dos puñaladas. Este acto de violencia también se calificó con severidad crítica (El Siglo (Aragua)).\\n\\nEn el estado Portuguesa, las protestas por los prolongados cortes eléctricos se intensificaron en los municipios de Guanarito, San Rafael de Onoto y Araure, donde manifestantes bloquearon accesos y concentraron reclamos en el puente del municipio, generando daños materiales y alteraciones al orden público. Estas protestas fueron clasificadas con severidad alta (Portuguesa Reporta).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 31 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (2026‑08). La reducción se observa en la cantidad total, aunque varios incidentes de alta o crítica severidad continuaron generando daños materiales y heridos.\n\nEn Anzoátegui, un hecho crítico se desencadenó cuando un oficial de la Policía Municipal de Sotillo asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). En Guárico, la violencia también se manifestó de forma crítica: una exdirigente estudiantil apuñaló a una mujer en el sector Las Garcitas de Valle de la Pascua, provocando lesiones graves (El Siglo (Aragua)).\n\nEn el estado Portuguesa, la población expresó su descontento por los prolongados cortes eléctricos, bloqueando accesos y protestando en varios municipios, lo que generó daños materiales y alteró la movilidad (Portuguesa Reporta). En Aragua, se registró otro episodio de orden público de alta severidad, según informó El Pitazo, aunque los detalles específicos no fueron publicados en los informes disponibles (El Pitazo).\n\nEn Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, provocando un fuerte clima de violencia y temor en la comunidad (El Siglo (Aragua)). Finalmente, en Zulia, manifestantes vinculados a la familia de un comerciante wayuu bloquearon el paso vehicular en la frontera con Colombia, permitiendo solo el tránsito de peatones y generando tensiones en la zona (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/exdirigente-estudiantil-mato-a-una-mujer-a-punaladas/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/"
     },
     {
       "nombre": "Portuguesa Reporta",
@@ -100,6 +108,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/politica/denuncian-detencion-arbitraria-de-activista-en-caracas-tras-protestas/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-el-llano-denuncian.html"
     },
     {
       "nombre": "Runrun.es",

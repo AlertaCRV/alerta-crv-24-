@@ -3,19 +3,19 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-09-14T01:51:06.742406+00:00",
-  "actualizado_hasta": "2026-09-11T12:56:35.690723+00:00",
+  "generado": "2026-09-22T06:16:06.906316+00:00",
+  "actualizado_hasta": "2026-09-22T06:14:11.584228+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 9,
+    "anterior": 8,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único evento de emergencia en el ámbito de la salud pública, una disminución notable respecto a los nueve eventos reportados en agosto del mismo año (comparación con el período anterior). Esta reducción se refleja en los datos disponibles, aunque la información proviene de un informe que, si bien se centra en el sistema penitenciario, tiene importantes repercusiones sanitarias.\n\nEl Observatorio Venezolano de Prisiones (OVP) informó que 7.414 personas permanecen recluidas en 157 dependencias del Cuerpo de Investigaciones Científicas, Penales y Criminalísticas (Cicpc) a nivel nacional (Portuguesa Reporta). Estas celdas, originalmente diseñadas para una detención máxima de 48 horas, ahora registran una permanencia promedio de 615 días por interno, lo que evidencia una sobrecarga estructural del sistema carcelario.\n\nEsta situación de hacinamiento prolongado constituye un factor de riesgo para la salud pública, al favorecer la propagación de enfermedades infecciosas y dificultar la atención médica adecuada dentro de los centros penitenciarios. La falta de espacio y la escasa rotación de internos aumentan la vulnerabilidad de la población carcelaria y, por extensión, de la comunidad circundante, dado que los contactos externos pueden facilitar la transmisión de patógenos.\n\nAnte este panorama, la Cruz Roja Venezolana continuará monitoreando de cerca las condiciones carcelarias y sus posibles impactos sanitarios, reforzando la coordinación con autoridades penitenciarias y de salud para mitigar riesgos y garantizar la atención médica necesaria a los internos.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un único evento de salud pública, una notable reducción respecto al mes anterior en el que se contabilizaron ocho eventos (comparación con el período anterior: 8 evento(s) registrados entonces vs. 1 en este período). Esta disminución se refleja en los reportes oficiales de la Cruz Roja Venezolana, que continúan monitoreando la situación en todo el territorio nacional.\n\nEl único caso reportado corresponde a una grave crisis de salud pública y ambiental en la comunidad de San José de las Flores, así como en los sectores 1º de Mayo y Cardenal Quintero, ubicados en el municipio Libertador de Mérida (Reporteros de Merida). Los vecinos denunciaron el colapso del sistema de aguas servidas que afecta directamente a la Avenida Los Próceres, provocando la mezcla de aguas residuales con los canales de aguas pluviales (Reporteros de Merida). Esta indebida conexión ha generado un riesgo inminente de epidemia, al comprometer la calidad del agua y la higiene de la población local (Reporteros de Merida).\n\nAnte la situación, las autoridades municipales y la Cruz Roja iniciaron acciones de contención, incluyendo la distribución de kits de higiene y la instalación de bombas temporales para evacuar el exceso de aguas servidas (Reporteros de Merida). Asimismo, se solicitó la intervención de técnicos especializados para reparar la infraestructura y restablecer el correcto funcionamiento del sistema de alcantarillado (Reporteros de Merida). La comunidad fue informada sobre medidas preventivas, como la prohibición del uso de agua de la zona para consumo doméstico y la recomendación de acudir a centros de salud ante cualquier síntoma de enfermedad gastrointestinal (Reporteros de Merida).",
   "fuentes": [
     {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/nacionales/ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-calabozos-del-cicpc-operan-como-una-red-de-carceles-paralelas"
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-san-jose-de-las-flores-y.html"
     }
   ]
 }
