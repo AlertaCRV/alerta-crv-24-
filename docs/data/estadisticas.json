@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-21T22:26:23.033372+00:00",
+  "actualizado": "2026-09-22T01:08:33.388114+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-21T17:33:38+00:00"
+    "hasta": "2026-09-22T00:17:32+00:00"
   },
-  "total_eventos": 368,
+  "total_eventos": 373,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 97,
     "deslizamiento": 27,
     "colapso_estructural": 4,
-    "orden_publico": 72,
+    "orden_publico": 75,
     "salud_publica": 9,
     "crisis_migratoria": 6,
-    "incendio": 29,
+    "incendio": 30,
     "vialidad": 13,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 17,
+    "infraestructura_agua": 18,
     "accidente_transporte": 1,
     "derrame_petrolero": 3,
     "ataque_armado": 1,
@@ -55,10 +55,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 30,
+      "total": 31,
       "confirmados": 5,
       "por_severidad": {
-        "medio": 15,
+        "medio": 16,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -80,12 +80,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 21,
+      "total": 22,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 6,
         "medio": 6,
-        "alto": 4,
+        "alto": 5,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -111,6 +111,18 @@
         "medio": 5,
         "critico": 4,
         "bajo": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Bolivar",
+      "total": 16,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 9,
+        "critico": 1,
+        "alto": 1
       },
       "severidad_dominante": "critico"
     },
@@ -150,15 +162,15 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Bolivar",
+      "estado": "Merida",
       "total": 14,
-      "confirmados": 1,
+      "confirmados": 0,
       "por_severidad": {
-        "bajo": 5,
-        "medio": 8,
-        "critico": 1
+        "medio": 5,
+        "bajo": 3,
+        "alto": 6
       },
-      "severidad_dominante": "critico"
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Tachira",
@@ -171,17 +183,6 @@
         "critico": 2
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 3,
-        "alto": 5
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Trujillo",
@@ -321,7 +322,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -376,11 +377,12 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 6,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1,
-      "deslizamiento": 1
+      "deslizamiento": 1,
+      "infraestructura_agua": 1
     },
     "Apure": {
       "crisis_migratoria": 1,
@@ -436,7 +438,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 5,
+      "orden_publico": 6,
       "inundacion": 8,
       "infraestructura_electrica": 3,
       "accidente_transporte": 1,
@@ -451,7 +453,7 @@
       "inundacion": 1,
       "deslizamiento": 1,
       "colapso_estructural": 1,
-      "incendio": 2
+      "incendio": 3
     },
     "Guarico": {
       "sequia": 2,
@@ -483,9 +485,9 @@
     }
   },
   "por_severidad": {
-    "alto": 67,
+    "alto": 70,
     "critico": 43,
-    "medio": 139,
+    "medio": 141,
     "bajo": 110,
     "sin_clasificar": 9
   },
@@ -518,7 +520,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 26
+      "2026-09": 29
     },
     "salud_publica": {
       "2026-07": 1,
@@ -532,7 +534,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 7
+      "2026-09": 8
     },
     "vialidad": {
       "2026-08": 10,
@@ -555,7 +557,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 5
+      "2026-09": 6
     },
     "accidente_transporte": {
       "2026-08": 1

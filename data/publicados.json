@@ -138,5 +138,40 @@
     "fecha_deteccion": "2026-09-21T22:26:22.513417+00:00",
     "fecha_evento_temprana": "2026-09-21T14:03:49+00:00",
     "municipio": null
+  },
+  "orden_publico::Aragua::2026-09-22": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T01:06:00.056092+00:00",
+    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-09-22": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T01:06:04.663803+00:00",
+    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
+    "municipio": null
+  },
+  "incendio::Merida::2026-09-21": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T01:06:21.670413+00:00",
+    "fecha_evento_temprana": "2026-09-21T18:38:31+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-09-22": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T01:07:11.331057+00:00",
+    "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Bolivar::2026-09-21": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T01:08:30.462464+00:00",
+    "fecha_evento_temprana": "2026-09-21T22:30:53+00:00",
+    "municipio": null
   }
 }

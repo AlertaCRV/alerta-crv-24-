@@ -3,19 +3,23 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-21T01:22:14.762534+00:00",
-  "actualizado_hasta": "2026-09-20T16:19:46.342482+00:00",
-  "total_eventos": 10,
+  "generado": "2026-09-22T01:11:34.298062+00:00",
+  "actualizado_hasta": "2026-09-21T18:54:36.870233+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 48,
-    "actual": 10
+    "actual": 11
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 10 eventos de inundación, una reducción significativa respecto a los 48 eventos del mes anterior (agosto 2026) (Comparación con el período anterior). Esta disminución se da en el contexto de una serie de lluvias intensas que afectaron a varios estados del país, generando daños materiales y situaciones de vulnerabilidad en comunidades agrícolas y urbanas.\n\nEl evento más crítico fue la inundación en Táchira, donde la crecida del río Burgua socavó los cimientos del puente de guerra de 60 metros, provocando su colapso y dejando acorralados a aproximadamente 8 mil productores agrícolas (Diario La Nacion (Tachira)). La descomposición acelerada de lácteos y la paralización de cosechas agravaron la pérdida de alimentos y la inseguridad alimentaria en la zona, mientras que los trámites burocráticos para soluciones se estiman en un plazo de un mes.\n\nEn el estado Portuguesa, fuertes lluvias del 2 de septiembre provocaron anegaciones de viviendas en sectores de Guanare, según reportes de usuarios en redes sociales y la cobertura de El Impulso (Lara). En Barquisimeto, el 3 de septiembre, lluvias acompañadas de vientos huracanados causaron caída de árboles, daños estructurales en centros comerciales y anegaciones de calles, especialmente en la zona norte (El Pitazo). En Maracaibo, el 20 de septiembre, las precipitaciones generaron desbordamiento de cañadas y anegaciones en varios sectores, incluida una presunta inundación cerca del Hospital Universitario de Maracaibo (La Verdad (Zulia)).\n\nAutoridades del Sistema Nacional de Gestión de Riesgo de Protección Civil realizaron monitoreo e inspección hídrica en Barinas tras el desbordamiento del río Socopó, evaluando viviendas afectadas (La Noticia de Barinas). En Lara, vecinos limpiaron canales para evitar desbordamientos después de las lluvias intensas (La Prensa de Lara). En Sucre, residentes de Guarapiche protestaron por el desbordamiento de aguas negras, señalando problemas de salud pública (Turimiquire (Sucre)). Finalmente, productores del municipio Veroes en Yaracuy solicitaron la canalización urgente del río Yaracuy para prevenir futuros desbordamientos (Yaracuy al Dia).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 11 eventos de inundación, una notable reducción frente a los 48 eventos del mes anterior (agosto 2026). Esta disminución se enmarca en una serie de fenómenos meteorológicos asociados a la Onda Tropical 43 que afectó a varios estados del país.\n\nEn Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando a aproximadamente 8 mil productores agrícolas atrapados y generando pérdidas irreversibles en cultivos y productos lácteos (Diario La Nacion). La severidad del evento se calificó como alta, y las autoridades anunciaron que las soluciones burocráticas podrían tardar hasta un mes en implementarse.\n\nEn Trujillo, una fuerte lluvia desbordó la quebrada de Escuque, arrastrando a una persona desde el municipio Valera; el cuerpo fue hallado en la quebrada, confirmando una víctima fatal (La Verdad de Monagas). Este incidente fue catalogado con severidad crítica debido al riesgo de nuevas corrientes y al impacto mortal.\n\nOtros estados también reportaron daños materiales y afectaciones a la población: fuertes lluvias causaron anegaciones de viviendas en Guanare, Portuguesa (El Impulso); vientos huracanados y lluvias provocaron caída de árboles y anegaciones en Barquisimeto y Palavecino, Lara (El Pitazo); el Sistema Nacional de Gestión de Riesgo realizó monitoreo e inspección hídrica por el desbordamiento del río Socopó en Barinas (La Noticia de Barinas); Maracaibo, Zulia, experimentó anegaciones en varios sectores y cerca del Hospital Universitario (La Verdad); y seis estados, entre ellos Caracas, Carabobo, La Guaira, Lara, Táchira y Yaracuy, reportaron vías inundadas y comunidades agrícolas incomunicadas (Turimiquire).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
+    },
+    {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/09/21/desbordamiento-de-quebrada-en-trujillo-por-lluvias-deja-un-fallecido/"
     },
     {
       "nombre": "El Impulso (Lara)",
