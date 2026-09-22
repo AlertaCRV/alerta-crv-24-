@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-21T06:35:20.814853+00:00",
-  "actualizado_hasta": "2026-09-20T23:20:26.053733+00:00",
-  "total_eventos": 6,
+  "generado": "2026-09-22T22:23:01.281796+00:00",
+  "actualizado_hasta": "2026-09-22T01:06:21.670413+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 19,
-    "actual": 6
+    "actual": 8
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron seis incendios que afectaron distintas regiones del país, una cifra notablemente inferior a los diecinueve eventos reportados en el mes anterior (comparación con el período anterior: 19 evento(s) registrados entonces vs. 6 en este período). A pesar de la reducción en número, los incidentes presentaron severidades críticas o altas, con daños materiales y personas afectadas.\n\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, dejó una víctima fatal y dos heridos, entre los que se destaca una mujer de 28 años que sufrió quemaduras en el 60 % de su cuerpo (El Pitazo).\n\nEn el estado Mérida, dos sucesos distintos se reportaron. Primero, según el Diario La Nacion (Tachira), un vehículo gandolero cargado de cemento se incendió el 19 de septiembre en la arteria que conecta Táchira con El Vigía, provocando la destrucción total de la unidad y graves quemaduras al conductor, quien recibió atención médica por heridas de consideración (Diario La Nacion (Tachira)). Segundo, el El Periodico de Monagas informó de un incendio de gran magnitud en San Isidro Alto, localidad de Santa Cruz de Mora, que amenazó el naciente de agua potable y fincas productivas, generando importantes daños al entorno natural y a la infraestructura local (El Periodico de Monagas).\n\nEn el estado Táchira, el mismo accidente de vehículo descrito por el Diario La Nacion (Tachira) se consideró un incendio de alta severidad, pues la llama consumió por completo el camión y puso en riesgo la circulación en la vía, aunque no se reportaron víctimas adicionales más allá del conductor herido (Diario La Nacion (Tachira)).\n\nFinalmente, en el Distrito Capital, dos niveles de un depósito ubicado en el sector El Cementerio de Caracas se incendiaron el 20 de septiembre, obligando a la evacuación de aproximadamente 30 personas de los locales contiguos por razones de seguridad; no se reportaron fallecidos ni heridos, pero el siniestro provocó daños estructurales en los pisos afectados (El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron ocho incendios, una disminución respecto al período anterior en el que se contabilizaron diecinueve eventos (19 evento(s) registrados entonces vs. 8 en este período). La reducción se observa pese a la persistencia de incidentes de alta y crítica severidad en distintas regiones del país.\n\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, dejó una víctima fatal y dos heridos, con quemaduras extensas en la víctima mortal (El Pitazo).\n\nEn el estado Táchira, el 19 de septiembre un vehículo gandolero cargado de cemento se incendió en la arteria vial que conecta Táchira con El Vigía, provocando graves quemaduras al conductor y la destrucción total del camión (Diario La Nacion (Tachira)).\n\nEl estado Mérida registró dos incendios de alta severidad. El primero, reportado por El Periodico de Monagas, se desarrolló en San Isidro Alto, Santa Cruz de Mora, amenazando fuentes de agua potable y fincas productivas (El Periodico de Monagas). El segundo, descrito por La Verdad de Monagas, fue un incendio forestal que quemó más de 160 hectáreas, incluyendo 30 hectáreas de cultivos de café y cacao (La Verdad de Monagas).\n\nEn el Distrito Capital, dos niveles de un depósito ubicado en el sector El Cementerio de Caracas se incendiaron, obligando a la evacuación de aproximadamente 30 personas y requiriendo la intervención del Cuerpo de Bomberos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -30,12 +30,20 @@
       "link": "https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/"
     },
     {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/09/21/incendio-forestal-en-merida-afecta-a-mas-de-160-hectareas/"
+    },
+    {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/venezuela/incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida/?utm_source=rss&utm_medium=rss&utm_campaign=incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida"
     },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/bomberos-sofocan-incendio-en-comercial-de-el-cementerio/"
     }
   ]
 }
