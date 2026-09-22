@@ -1,18 +1,4 @@
 {
-  "orden_publico::Guarico::2026-09-19": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-19T01:37:18.443042+00:00",
-    "fecha_evento_temprana": "2026-09-19T00:01:04+00:00",
-    "municipio": "Leonardo Infante"
-  },
-  "orden_publico::Portuguesa::2026-09-19": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-19T01:37:31.321582+00:00",
-    "fecha_evento_temprana": "2026-09-19T01:10:59+00:00",
-    "municipio": "Guanarito"
-  },
   "incendio::Merida::2026-09-19": {
     "severidad": "alto",
     "confirmado": false,
@@ -120,9 +106,9 @@
   },
   "derrame_petrolero::Zulia::2026-09-21": {
     "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-21T18:53:37.028258+00:00",
-    "fecha_evento_temprana": "2026-09-21T16:14:08+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T06:13:05.092175+00:00",
+    "fecha_evento_temprana": "2026-09-21T20:46:17+00:00",
     "municipio": "Valmore Rodríguez"
   },
   "inundacion::Trujillo::2026-09-21": {
@@ -147,9 +133,9 @@
     "municipio": null
   },
   "orden_publico::Zulia::2026-09-22": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-22T01:06:04.663803+00:00",
+    "fecha_deteccion": "2026-09-22T06:12:18.314020+00:00",
     "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
     "municipio": null
   },
@@ -173,5 +159,19 @@
     "fecha_deteccion": "2026-09-22T01:08:30.462464+00:00",
     "fecha_evento_temprana": "2026-09-21T22:30:53+00:00",
     "municipio": null
+  },
+  "orden_publico::Merida::2026-09-22": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T06:13:46.127774+00:00",
+    "fecha_evento_temprana": "2026-09-22T02:22:54+00:00",
+    "municipio": null
+  },
+  "salud_publica::Merida::2026-09-22": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T06:14:11.584228+00:00",
+    "fecha_evento_temprana": "2026-09-22T02:21:10+00:00",
+    "municipio": "Cardenal Quintero"
   }
 }
