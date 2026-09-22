@@ -152,5 +152,19 @@
     "fecha_deteccion": "2026-09-22T06:14:11.584228+00:00",
     "fecha_evento_temprana": "2026-09-22T02:21:10+00:00",
     "municipio": "Cardenal Quintero"
+  },
+  "orden_publico::Distrito Capital::2026-09-22": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T22:21:26.830904+00:00",
+    "fecha_evento_temprana": "2026-09-22T20:36:54+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-09-22": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-22T22:21:53.984907+00:00",
+    "fecha_evento_temprana": "2026-09-22T22:00:00+00:00",
+    "municipio": null
   }
 }

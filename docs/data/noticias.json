@@ -1,6 +1,58 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/",
+        "fecha": "2026-09-22T20:36:54+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-22T20:36:54+00:00",
+    "fecha_evento_temprana": "2026-09-22T20:36:54+00:00",
+    "fecha_deteccion": "2026-09-22T22:21:26.830904+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-22",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 22/09/2026, 4:36 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/",
+        "fecha": "2026-09-22T22:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-22T22:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-22T22:00:00+00:00",
+    "fecha_deteccion": "2026-09-22T22:21:53.984907+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-09-22",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 22/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Bolivar",
     "municipio": null,
     "parroquia": null,

@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-22T11:42:52.614751+00:00",
+  "actualizado": "2026-09-22T22:22:20.838823+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-22T02:22:54+00:00"
+    "hasta": "2026-09-22T22:00:00+00:00"
   },
-  "total_eventos": 379,
+  "total_eventos": 381,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 97,
     "deslizamiento": 27,
     "colapso_estructural": 4,
-    "orden_publico": 79,
+    "orden_publico": 81,
     "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 30,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 59,
+      "total": 60,
       "confirmados": 5,
       "por_severidad": {
         "alto": 12,
         "medio": 15,
-        "bajo": 18,
+        "bajo": 19,
         "critico": 10,
         "sin_clasificar": 4
       },
@@ -55,13 +55,13 @@
     },
     {
       "estado": "Lara",
-      "total": 31,
+      "total": 32,
       "confirmados": 1,
       "por_severidad": {
         "critico": 4,
         "alto": 9,
         "medio": 12,
-        "bajo": 5,
+        "bajo": 6,
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
@@ -307,7 +307,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "infraestructura_electrica": 9,
       "sismo": 1,
       "deslizamiento": 1,
@@ -335,7 +335,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 15,
+      "orden_publico": 16,
       "incendio": 11,
       "vialidad": 2,
       "infraestructura_electrica": 11,
@@ -490,7 +490,7 @@
     "alto": 73,
     "critico": 43,
     "medio": 142,
-    "bajo": 111,
+    "bajo": 113,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -522,7 +522,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 33
+      "2026-09": 35
     },
     "salud_publica": {
       "2026-07": 1,
