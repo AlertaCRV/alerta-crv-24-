@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-09-22T22:23:28.318799+00:00",
-  "actualizado_hasta": "2026-09-21T18:53:28.341045+00:00",
-  "total_eventos": 30,
+  "generado": "2026-09-23T10:09:42.150232+00:00",
+  "actualizado_hasta": "2026-09-23T05:18:45.930165+00:00",
+  "total_eventos": 32,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 62,
-    "actual": 30
+    "actual": 32
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 30 fallas eléctricas, una disminución respecto a los 62 eventos del mes anterior (agosto) (Comparación). A pesar de la reducción en número, varios incidentes de alta y crítica severidad provocaron daños materiales y afectaciones a la población.\n\nEl 15 de septiembre una falla eléctrica de gran magnitud dejó sin suministro a los estados Táchira, Carabobo, Apure, Sucre, Barinas, Yaracuy, Portuguesa, Trujillo, Mérida, Zulia y Aragua, generando fluctuaciones severas de voltaje que los usuarios compararon con luces navideñas (Diario La Nacion). La interrupción en Táchira fue calificada como crítica y se extendió a múltiples regiones del país.\n\nEn el estado Lara se reportaron apagones prolongados de 6 a 7 horas diarias, obligando a familias y comercios a adquirir equipos de respaldo (El Impulso). Además, el 17 de septiembre se informó que el 52 % del gremio industrial de Lara estaba afectado por las interrupciones eléctricas, demandando inversiones para estabilizar el servicio (El Impulso). Estas situaciones reflejan la alta severidad de la falla en Lara (El Impulso).\n\nEn Barinas, los cortes de hasta 12 horas provocaron protestas con quema de cauchos y generaron preocupación en el sector salud por la falta de energía en centros médicos (El Pitazo). En Monagas, vecinos bloquearon la carretera nacional cerca del Centro Comercial La Cascada tras tres días sin electricidad, exigiendo la intervención de Corpoelec (El Periodico de Monagas). En Aragua, un hombre de tercera edad falleció electrocado mientras realizaba una reparación en su vivienda durante un racionamiento de seis horas continuas (El Siglo). En Mérida, un cortocircuito dejó a oscuras el aeropuerto Juan Pablo Pérez Alfonso de El Vigía, con la posible suspensión de vuelos (Reporteros de Merida). En Guárico, la agroindustria declaró estado de emergencia por los apagones prolongados que afectan la producción (Turimiquire). Asimismo, se reportaron fallas de alta severidad en el Distrito Capital (El Pitazo) y en Zulia, donde fuertes precipitaciones del 20 de septiembre provocaron inundaciones y fallas en 79 circuitos eléctricos (El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 32 fallas eléctricas, una disminución respecto a los 62 eventos del mes anterior (2026-08). La reducción en el número de incidentes no implicó una menor gravedad, ya que varios de los cortes reportados alcanzaron niveles de severidad alta o crítica, generando daños materiales y, en algunos casos, víctimas fatales.\n\nEn el estado Lara se documentaron múltiples interrupciones de larga duración, con cortes que se extendieron entre 6 y 7 horas diarias y afectaron al 52 % del gremio industrial (El Impulso). Estas fallas obligaron a familias y comercios a adquirir equipos de respaldo para evitar quedar a oscuras (El Impulso). En Táchira, una falla eléctrica de magnitud crítica dejó sin energía a varios municipios y provocó fluctuaciones severas de voltaje que los usuarios compararon con luces navideñas (Diario La Nacion).\n\nBarinas sufrió apagones de hasta 12 horas, lo que desencadenó protestas y generó preocupación en el sector salud por la falta de energía en centros médicos (El Pitazo). En Monagas, vecinos bloquearon la carretera nacional durante tres días sin suministro eléctrico, exigiendo la intervención de Corpoelec (El Periodico de Monagas). En Mérida, un cortocircuito provocó el apagón del aeropuerto \"Juan Pablo Pérez Alfonso\" en El Vigía (Reporteros de Merida). En Aragua, un hombre de tercera edad falleció tras electrocutarse mientras reparaba una instalación eléctrica en su vivienda (El Siglo).\n\nEn Guárico se reportó una falla eléctrica de alta severidad según Turimiquire, mientras que en el Distrito Capital se registró también un corte de alta gravedad (El Pitazo). Zulia experimentó fallas y anegaciones tras fuertes precipitaciones, afectando 79 circuitos y provocando inundaciones en varios sectores (El Pitazo). En Bolívar, los apagones se intensificaron en zonas mineras, acompañados de protestas disueltas mediante amedrentamiento (El Pitazo).\n\nEn conjunto, los incidentes de septiembre evidenciaron problemas estructurales en la red eléctrica nacional, con repercusiones en la actividad industrial, la salud pública y la seguridad de la población. Las autoridades y empresas del sector continúan bajo presión para estabilizar el suministro y atender las demandas de la ciudadanía, que ha manifestado su malestar mediante protestas y requerimientos de soluciones inmediatas.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -40,6 +40,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/bolivar-apagones-aumentan-en-zonas-mineras-ciudadanos-denuncian-amedrentamiento-durante-protestas/"
     },
     {
       "nombre": "El Siglo (Aragua)",
