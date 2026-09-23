@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-23T19:01:38.206851+00:00",
+  "actualizado": "2026-09-23T22:15:20.957978+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-23T17:45:45+00:00"
+    "hasta": "2026-09-23T19:51:59+00:00"
   },
-  "total_eventos": 389,
+  "total_eventos": 391,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 102,
+    "infraestructura_electrica": 103,
     "deslizamiento": 28,
     "colapso_estructural": 4,
     "orden_publico": 81,
     "salud_publica": 10,
     "crisis_migratoria": 6,
-    "incendio": 30,
+    "incendio": 31,
     "vialidad": 14,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -151,6 +151,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Tachira",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 5,
+        "bajo": 3,
+        "medio": 5,
+        "critico": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Monagas",
       "total": 15,
       "confirmados": 0,
@@ -174,14 +186,14 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Tachira",
-      "total": 14,
+      "estado": "Portuguesa",
+      "total": 13,
       "confirmados": 0,
       "por_severidad": {
-        "alto": 5,
-        "bajo": 3,
-        "medio": 4,
-        "critico": 2
+        "medio": 6,
+        "bajo": 5,
+        "critico": 1,
+        "alto": 1
       },
       "severidad_dominante": "critico"
     },
@@ -219,18 +231,6 @@
         "alto": 1
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 5,
-        "critico": 1,
-        "alto": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Nueva Esparta",
@@ -400,7 +400,7 @@
       "orden_publico": 1,
       "inundacion": 3,
       "sismo": 1,
-      "incendio": 1,
+      "incendio": 2,
       "vialidad": 1
     },
     "Monagas": {
@@ -466,7 +466,7 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "orden_publico": 6,
       "inundacion": 3,
       "incendio": 1,
@@ -491,7 +491,7 @@
   "por_severidad": {
     "alto": 74,
     "critico": 44,
-    "medio": 148,
+    "medio": 150,
     "bajo": 113,
     "sin_clasificar": 10
   },
@@ -509,7 +509,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 35
+      "2026-09": 36
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -539,7 +539,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 8
+      "2026-09": 9
     },
     "vialidad": {
       "2026-08": 10,
