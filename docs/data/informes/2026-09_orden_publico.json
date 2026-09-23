@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-22T06:15:41.257079+00:00",
-  "actualizado_hasta": "2026-09-22T06:13:46.127774+00:00",
-  "total_eventos": 31,
+  "generado": "2026-09-23T00:51:47.056878+00:00",
+  "actualizado_hasta": "2026-09-22T22:21:53.984907+00:00",
+  "total_eventos": 35,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 31
+    "actual": 35
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 31 eventos de orden público, una disminución respecto a los 44 eventos del mes anterior (2026‑08). La reducción se observa en la cantidad total, aunque varios incidentes de alta o crítica severidad continuaron generando daños materiales y heridos.\n\nEn Anzoátegui, un hecho crítico se desencadenó cuando un oficial de la Policía Municipal de Sotillo asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). En Guárico, la violencia también se manifestó de forma crítica: una exdirigente estudiantil apuñaló a una mujer en el sector Las Garcitas de Valle de la Pascua, provocando lesiones graves (El Siglo (Aragua)).\n\nEn el estado Portuguesa, la población expresó su descontento por los prolongados cortes eléctricos, bloqueando accesos y protestando en varios municipios, lo que generó daños materiales y alteró la movilidad (Portuguesa Reporta). En Aragua, se registró otro episodio de orden público de alta severidad, según informó El Pitazo, aunque los detalles específicos no fueron publicados en los informes disponibles (El Pitazo).\n\nEn Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, provocando un fuerte clima de violencia y temor en la comunidad (El Siglo (Aragua)). Finalmente, en Zulia, manifestantes vinculados a la familia de un comerciante wayuu bloquearon el paso vehicular en la frontera con Colombia, permitiendo solo el tránsito de peatones y generando tensiones en la zona (El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 35 eventos de orden público, una disminución respecto a los 44 registrados en agosto del mismo año (44 evento(s) registrados entonces vs. 35 en este período). La variación refleja una ligera reducción en la frecuencia de incidentes, aunque persisten casos de alta y crítica severidad en varios estados.\n\nEn Anzoátegui, la madrugada del 15 de septiembre se produjo un triple homicidio perpetrado por un oficial de la Policía Municipal de Sotillo, quien asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz; el hecho fue calificado como de severidad crítica (El Pitazo). En Guárico, el 18 de septiembre una mujer fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando en heridas graves; este acto de violencia también se clasificó con severidad crítica (El Siglo (Aragua)).\n\nEn el estado Portuguesa, las protestas por los continuos cortes eléctricos se intensificaron en los municipios de Guanarito, San Rafael de Onoto y Araure, donde manifestantes bloquearon accesos y puentes exigiendo la restitución del servicio, situación catalogada con severidad alta (Portuguesa Reporta). En Aragua, se reportaron incidentes de orden público que involucraron enfrentamientos y bloqueos, también considerados de severidad alta (El Pitazo).\n\nEn Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, provocando una respuesta colectiva de la comunidad; este episodio fue calificado con severidad alta (El Siglo (Aragua)). En Zulia, el 21 de septiembre familiares de un comerciante wayuu bloquearon el paso vehicular en la frontera de Paraguachón, permitiendo solo el tránsito de peatones, lo que generó disturbios de orden público de severidad alta (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -40,6 +40,14 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/"
     },
     {
       "nombre": "El Pitazo",

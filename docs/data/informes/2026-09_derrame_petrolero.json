@@ -3,16 +3,20 @@
   "tipo": "derrame_petrolero",
   "tipo_label": "Derrame petrolero",
   "cerrado": false,
-  "generado": "2026-09-22T01:08:55.790299+00:00",
-  "actualizado_hasta": "2026-09-21T18:53:37.028258+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-23T00:48:43.140174+00:00",
+  "actualizado_hasta": "2026-09-22T06:13:05.092175+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 2,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un solo evento de derrame petrolero, frente a los dos reportados en el período anterior (2026‑08) (Comparación con período anterior). Este descenso en la cantidad de incidentes se refleja en los reportes oficiales de la Cruz Roja Venezolana.\n\nEl 21 de septiembre de 2026 la Fundación Azul Ambientalistas denunció un \"nuevo y masivo\" derrame de crudo que afectó simultáneamente a seis municipios del estado Zulia (La Verdad (Zulia)). La alerta se originó tras la recepción de reportes, imágenes y videos de pescadores, turistas y residentes de la Costa Oriental del Lago (CO).\n\nLos municipios identificados como impactados fueron San Francisco, Cabimas, Lagunillas, Miranda, Valmore Rodríguez y Baralt (La Verdad (Zulia)). La magnitud del derrame fue calificada de alta severidad, describiéndose como el \"más grande de Venezuela\" y como una amenaza directa al ecosistema del Lago de Maracaibo (La Verdad (Zulia)).\n\nAnte la gravedad del suceso, la directiva de la Fundación Azul Ambientalistas, encabezada por Gustavo Carrasquel y Yohan Flores, exigió \"respuestas inmediatas\" y la elaboración de un \"plan real de atención\" para mitigar los daños (Reporte Confidencial (Nueva Esparta)). La Cruz Roja Venezolana continúa monitoreando la situación y coordinando acciones de apoyo a las comunidades afectadas.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron dos derrames petroleros, manteniéndose el número de eventos igual al del mes anterior (2 evento(s) registrados entonces vs. 2 en este período). Ambos incidentes se concentraron en el estado Zulia y fueron denunciados por la Fundación Azul Ambientalistas.\n\nEl lunes 21 de septiembre la organización informó, a través de La Prensa de Lara, de un derrame de crudo de gran magnitud en el Lago de Maracaibo que impacta severamente las costas del municipio Valmore Rodríguez, amenazando el ecosistema marino y perjudicando a cientos de familias locales (La Prensa de Lara). La fundación exigió respuestas inmediatas y la elaboración de un plan real de atención para mitigar los daños.\n\nEn la misma fecha, La Verdad reportó que el derrame se extendió de forma simultánea a seis municipios del Zulia: San Francisco, Cabimas, Lagunillas, Miranda, Valmore Rodríguez y Baralt (La Verdad). Las autoridades recibieron reportes, imágenes y videos de pescadores, turistas y residentes de la Costa Oriental del Lago, que describieron la situación como “masiva” y alertaron de que el lago “no aguanta más”.\n\nAmbos reportes coinciden en la gravedad del daño material al entorno costero y a la actividad pesquera, aunque no se registraron heridos ni víctimas fatales. La reiterada aparición de derrames en el mismo periodo subraya la necesidad de medidas preventivas y de respuesta más efectivas por parte de los organismos competentes.",
   "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/fundacion-derrame-crudo-zulia/"
+    },
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/denuncian-masivo-derrame-petrolero-en-6-municipios-del-zulia-nuestro-lago-no-aguanta-mas/"

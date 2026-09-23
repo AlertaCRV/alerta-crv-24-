@@ -1,5 +1,62 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Bolivar",
+    "municipio": "Roscio",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/bolivar-apagones-aumentan-en-zonas-mineras-ciudadanos-denuncian-amedrentamiento-durante-protestas/",
+        "fecha": "2026-09-22T22:21:56+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-22T22:21:56+00:00",
+    "fecha_evento_temprana": "2026-09-22T22:21:56+00:00",
+    "fecha_deteccion": "2026-09-23T00:46:46.159109+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Bolivar::2026-09-22",
+    "titulo": "Falla eléctrica en Municipio Roscio, Bolivar",
+    "texto": "📌 Falla eléctrica en Municipio Roscio, Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Roscio, Bolivar\n🕒 Hecho reportado: 22/09/2026, 6:21 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 8:46 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-apagones-aumentan-en-zonas-mineras-ciudadanos-denuncian-amedrentamiento-durante-protestas/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/miyamoto-international-inicia-la-remocion-de-escombros-en-la-guaira/",
+        "fecha": "2026-09-22T21:00:17+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/principal/arrancan-en-la-guaira-las-operaciones-de-la-firma-miyamoto-junto-a-ingenieros-venezolanos-para-la-remocion-de-escombros/",
+        "fecha": "2026-09-22T21:48:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-22T21:48:46+00:00",
+    "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
+    "fecha_deteccion": "2026-09-23T00:47:40.894872+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-09-21",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 22/09/2026, 5:48 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 8:47 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/miyamoto-international-inicia-la-remocion-de-escombros-en-la-guaira/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/principal/arrancan-en-la-guaira-las-operaciones-de-la-firma-miyamoto-junto-a-ingenieros-venezolanos-para-la-remocion-de-escombros/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -258,32 +315,6 @@
     "clave_dedup": "infraestructura_agua::Bolivar::2026-09-21",
     "titulo": "Falla de agua en Bolivar",
     "texto": "📌 Falla de agua en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 6:30 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/ciudad/vecinos-de-villa-granada-esperan-a-hidrobolivar-para-reparar-socavacion/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/21/video-rescatistas-del-campamento-madrid-mantienen-viva-la-busqueda-de-victimas-y-la-remocion-de-escombros-en-la-guaira-21sep/",
-        "fecha": "2026-09-21T14:03:49+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T14:03:49+00:00",
-    "fecha_evento_temprana": "2026-09-21T14:03:49+00:00",
-    "fecha_deteccion": "2026-09-21T22:26:22.513417+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-09-21",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 21/09/2026, 10:03 a.m.\n🔎 Detectado por el sistema: 21/09/2026, 6:26 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/21/video-rescatistas-del-campamento-madrid-mantienen-viva-la-busqueda-de-victimas-y-la-remocion-de-escombros-en-la-guaira-21sep/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -1682,31 +1713,5 @@
     "clave_dedup": "infraestructura_electrica::Miranda::2026-09-09",
     "titulo": "Falla eléctrica en Municipio Baruta, Miranda",
     "texto": "📌 Falla eléctrica en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 08/09/2026, 8:00 p.m.\n🔎 Detectado por el sistema: 09/09/2026, 8:01 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/otro-bajon-electrico-se-registra-en-venezuela-ciudadanos-reportan-fallas-en-al-menos-11-estados-este-8sep/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud",
-        "fecha": "2026-09-08T18:30:34+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-08T18:30:34+00:00",
-    "fecha_evento_temprana": "2026-09-08T18:30:34+00:00",
-    "fecha_deteccion": "2026-09-08T23:42:50.552388+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-09-08",
-    "titulo": "Orden público en Portuguesa",
-    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 08/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 08/09/2026, 7:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
   }
 ]
