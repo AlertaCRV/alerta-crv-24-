@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-09-23T15:01:49.460295+00:00",
+  "actualizado": "2026-09-23T19:01:38.206851+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-23T14:01:40+00:00"
+    "hasta": "2026-09-23T17:45:45+00:00"
   },
-  "total_eventos": 385,
+  "total_eventos": 389,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 100,
+    "infraestructura_electrica": 102,
     "deslizamiento": 28,
     "colapso_estructural": 4,
     "orden_publico": 81,
     "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 30,
-    "vialidad": 13,
+    "vialidad": 14,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 18,
+    "infraestructura_agua": 19,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -42,10 +42,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 34,
+      "total": 35,
       "confirmados": 5,
       "por_severidad": {
-        "medio": 17,
+        "medio": 18,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -80,11 +80,11 @@
     },
     {
       "estado": "Aragua",
-      "total": 22,
+      "total": 23,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 6,
-        "medio": 6,
+        "medio": 7,
         "alto": 5,
         "critico": 5
       },
@@ -233,6 +233,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Nueva Esparta",
+      "total": 10,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 1,
+        "bajo": 6,
+        "medio": 2,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0,
@@ -241,17 +253,6 @@
         "bajo": 2,
         "medio": 1,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Nueva Esparta",
-      "total": 8,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 1,
-        "bajo": 6,
-        "medio": 1
       },
       "severidad_dominante": "alto"
     },
@@ -319,7 +320,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 13,
+      "infraestructura_electrica": 14,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -421,7 +422,8 @@
     "Nueva Esparta": {
       "incendio": 2,
       "orden_publico": 3,
-      "infraestructura_agua": 3
+      "infraestructura_agua": 4,
+      "vialidad": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -441,7 +443,7 @@
     "Aragua": {
       "orden_publico": 6,
       "inundacion": 8,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -488,8 +490,8 @@
   },
   "por_severidad": {
     "alto": 74,
-    "critico": 43,
-    "medio": 145,
+    "critico": 44,
+    "medio": 148,
     "bajo": 113,
     "sin_clasificar": 10
   },
@@ -507,7 +509,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 33
+      "2026-09": 35
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -541,7 +543,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 3
+      "2026-09": 4
     },
     "sismo": {
       "2026-08": 5,
@@ -560,7 +562,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 6
+      "2026-09": 7
     },
     "accidente_transporte": {
       "2026-08": 1
