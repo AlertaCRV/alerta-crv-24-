@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-23T00:48:21.187263+00:00",
+  "actualizado": "2026-09-23T05:19:50.603923+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-22T22:21:56+00:00"
   },
-  "total_eventos": 383,
+  "total_eventos": 384,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 98,
+    "infraestructura_electrica": 99,
     "deslizamiento": 28,
     "colapso_estructural": 4,
     "orden_publico": 81,
@@ -91,6 +91,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Bolivar",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 10,
+        "critico": 1,
+        "alto": 2,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Anzoategui",
       "total": 18,
       "confirmados": 0,
@@ -99,19 +112,6 @@
         "alto": 1,
         "critico": 2,
         "bajo": 6
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 18,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 10,
-        "critico": 1,
-        "alto": 1,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -377,7 +377,7 @@
       "inundacion": 3
     },
     "Bolivar": {
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "orden_publico": 4,
       "escasez_combustible": 2,
       "incendio": 2,
@@ -487,7 +487,7 @@
     }
   },
   "por_severidad": {
-    "alto": 73,
+    "alto": 74,
     "critico": 43,
     "medio": 144,
     "bajo": 113,
@@ -507,7 +507,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 31
+      "2026-09": 32
     },
     "deslizamiento": {
       "2026-07": 3,
