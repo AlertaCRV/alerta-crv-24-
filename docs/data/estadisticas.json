@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-22T22:22:20.838823+00:00",
+  "actualizado": "2026-09-23T00:48:21.187263+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-22T22:00:00+00:00"
+    "hasta": "2026-09-22T22:21:56+00:00"
   },
-  "total_eventos": 381,
+  "total_eventos": 383,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
-    "infraestructura_electrica": 97,
-    "deslizamiento": 27,
+    "infraestructura_electrica": 98,
+    "deslizamiento": 28,
     "colapso_estructural": 4,
     "orden_publico": 81,
     "salud_publica": 10,
@@ -104,11 +104,11 @@
     },
     {
       "estado": "Bolivar",
-      "total": 17,
+      "total": 18,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 5,
-        "medio": 9,
+        "medio": 10,
         "critico": 1,
         "alto": 1,
         "sin_clasificar": 1
@@ -186,6 +186,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "La Guaira",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 4,
+        "sin_clasificar": 1,
+        "alto": 6,
+        "bajo": 1,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Trujillo",
       "total": 12,
       "confirmados": 0,
@@ -216,19 +229,6 @@
         "bajo": 5,
         "critico": 1,
         "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "La Guaira",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 3,
-        "sin_clasificar": 1,
-        "alto": 6,
-        "bajo": 1,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -377,7 +377,7 @@
       "inundacion": 3
     },
     "Bolivar": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "orden_publico": 4,
       "escasez_combustible": 2,
       "incendio": 2,
@@ -475,7 +475,7 @@
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
-      "deslizamiento": 4,
+      "deslizamiento": 5,
       "inundacion": 3,
       "sismo": 1,
       "orden_publico": 1,
@@ -489,7 +489,7 @@
   "por_severidad": {
     "alto": 73,
     "critico": 43,
-    "medio": 142,
+    "medio": 144,
     "bajo": 113,
     "sin_clasificar": 10
   },
@@ -507,12 +507,12 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 30
+      "2026-09": 31
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
-      "2026-09": 6
+      "2026-09": 7
     },
     "colapso_estructural": {
       "2026-07": 1,
