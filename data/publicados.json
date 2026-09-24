@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
     "municipio": "San Francisco"
   },
-  "incendio::Distrito Capital::2026-09-20": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-20T23:20:26.053733+00:00",
-    "fecha_evento_temprana": "2026-09-20T22:52:28+00:00",
-    "municipio": null
-  },
   "orden_publico::Aragua::2026-09-20": {
     "severidad": "bajo",
     "confirmado": false,
@@ -182,9 +175,9 @@
     "municipio": null
   },
   "incendio::Tachira::2026-09-23": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-23T22:14:42.324325+00:00",
+    "fecha_deteccion": "2026-09-24T00:37:19.002681+00:00",
     "fecha_evento_temprana": "2026-09-23T19:51:59+00:00",
     "municipio": null
   },
@@ -194,5 +187,19 @@
     "fecha_deteccion": "2026-09-23T22:14:55.419685+00:00",
     "fecha_evento_temprana": "2026-09-23T19:39:34+00:00",
     "municipio": "Páez"
+  },
+  "orden_publico::Tachira::2026-09-23": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T00:37:14.186043+00:00",
+    "fecha_evento_temprana": "2026-09-23T23:53:32+00:00",
+    "municipio": "Panamericano"
+  },
+  "orden_publico::Lara::2026-09-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T00:37:40.086885+00:00",
+    "fecha_evento_temprana": "2026-09-23T19:18:29+00:00",
+    "municipio": null
   }
 }
