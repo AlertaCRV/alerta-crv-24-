@@ -1,24 +1,10 @@
 {
-  "infraestructura_agua::Monagas::2026-09-20": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-21T01:18:50.267171+00:00",
-    "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
-    "municipio": "Ezequiel Zamora"
-  },
   "infraestructura_electrica::Zulia::2026-09-20": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-09-21T06:34:07.070647+00:00",
     "fecha_evento_temprana": "2026-09-20T20:17:35+00:00",
     "municipio": "San Francisco"
-  },
-  "orden_publico::Aragua::2026-09-20": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-21T01:19:07.889241+00:00",
-    "fecha_evento_temprana": "2026-09-20T23:58:21+00:00",
-    "municipio": null
   },
   "deslizamiento::Bolivar::2026-09-20": {
     "severidad": "critico",
@@ -189,9 +175,9 @@
     "municipio": "Páez"
   },
   "orden_publico::Tachira::2026-09-23": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-24T00:37:14.186043+00:00",
+    "fecha_deteccion": "2026-09-24T05:25:54.967601+00:00",
     "fecha_evento_temprana": "2026-09-23T23:53:32+00:00",
     "municipio": "Panamericano"
   },
@@ -200,6 +186,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-24T00:37:40.086885+00:00",
     "fecha_evento_temprana": "2026-09-23T19:18:29+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-09-23": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T05:26:09.353239+00:00",
+    "fecha_evento_temprana": "2026-09-23T23:37:11+00:00",
+    "municipio": "Maturín"
+  },
+  "orden_publico::Distrito Capital::2026-09-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T05:27:37.022365+00:00",
+    "fecha_evento_temprana": "2026-09-24T02:20:20+00:00",
     "municipio": null
   }
 }

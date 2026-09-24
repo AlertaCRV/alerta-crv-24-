@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-24T00:38:24.127843+00:00",
+  "actualizado": "2026-09-24T05:28:05.140870+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-23T23:53:32+00:00"
+    "hasta": "2026-09-24T02:20:20+00:00"
   },
-  "total_eventos": 394,
+  "total_eventos": 397,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 66,
     "infraestructura_electrica": 103,
     "deslizamiento": 28,
     "colapso_estructural": 4,
-    "orden_publico": 83,
+    "orden_publico": 86,
     "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 32,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 60,
+      "total": 61,
       "confirmados": 5,
       "por_severidad": {
         "alto": 12,
         "medio": 15,
-        "bajo": 19,
+        "bajo": 20,
         "critico": 10,
         "sin_clasificar": 4
       },
@@ -117,12 +117,12 @@
     },
     {
       "estado": "Tachira",
-      "total": 17,
+      "total": 18,
       "confirmados": 0,
       "por_severidad": {
         "alto": 7,
         "bajo": 3,
-        "medio": 5,
+        "medio": 6,
         "critico": 2
       },
       "severidad_dominante": "critico"
@@ -138,6 +138,17 @@
         "bajo": 5
       },
       "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Monagas",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 4,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Yaracuy",
@@ -159,17 +170,6 @@
         "medio": 5,
         "bajo": 4,
         "alto": 7
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Monagas",
-      "total": 15,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 3,
-        "alto": 3
       },
       "severidad_dominante": "alto"
     },
@@ -336,7 +336,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 11,
-      "orden_publico": 16,
+      "orden_publico": 17,
       "incendio": 11,
       "vialidad": 2,
       "infraestructura_electrica": 11,
@@ -397,7 +397,7 @@
     "Tachira": {
       "deslizamiento": 4,
       "infraestructura_electrica": 3,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "inundacion": 3,
       "sismo": 1,
       "incendio": 3,
@@ -409,7 +409,7 @@
       "vialidad": 1,
       "infraestructura_agua": 4,
       "incendio": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Miranda": {
       "incendio": 2,
@@ -491,8 +491,8 @@
   "por_severidad": {
     "alto": 76,
     "critico": 44,
-    "medio": 151,
-    "bajo": 113,
+    "medio": 152,
+    "bajo": 115,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -524,7 +524,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 37
+      "2026-09": 40
     },
     "salud_publica": {
       "2026-07": 1,

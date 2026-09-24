@@ -4,7 +4,7 @@
     "ubicacion": "Tachira",
     "municipio": "Panamericano",
     "parroquia": null,
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 0.65,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +19,63 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-09-23T23:53:32+00:00",
     "fecha_evento_temprana": "2026-09-23T23:53:32+00:00",
-    "fecha_deteccion": "2026-09-24T00:37:14.186043+00:00",
+    "fecha_deteccion": "2026-09-24T05:25:54.967601+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Tachira::2026-09-23",
     "titulo": "Orden público en Municipio Panamericano, Tachira",
-    "texto": "📌 Orden público en Municipio Panamericano, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Panamericano, Tachira\n🕒 Hecho reportado: 23/09/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 23/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/continua-tranca-vial-en-panamericano-por-cumplir-24-horas-sin-luz/"
+    "texto": "📌 Orden público en Municipio Panamericano, Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Panamericano, Tachira\n🕒 Hecho reportado: 23/09/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:25 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/continua-tranca-vial-en-panamericano-por-cumplir-24-horas-sin-luz/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales",
+        "fecha": "2026-09-23T23:37:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-23T23:37:11+00:00",
+    "fecha_evento_temprana": "2026-09-23T23:37:11+00:00",
+    "fecha_deteccion": "2026-09-24T05:26:09.353239+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-09-23",
+    "titulo": "Orden público en Municipio Maturín, Monagas",
+    "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 23/09/2026, 7:37 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/trabajo/marcharan-este-jueves-hacia-el-ministerio-del-trabajo-en-caracas/",
+        "fecha": "2026-09-24T02:20:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-24T02:20:20+00:00",
+    "fecha_evento_temprana": "2026-09-24T02:20:20+00:00",
+    "fecha_deteccion": "2026-09-24T05:27:37.022365+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-24",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/09/2026, 10:20 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:27 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/trabajo/marcharan-este-jueves-hacia-el-ministerio-del-trabajo-en-caracas/"
   },
   {
     "tipo": "incendio",
