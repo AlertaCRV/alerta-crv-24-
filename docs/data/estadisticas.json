@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-24T19:32:15.036421+00:00",
+  "actualizado": "2026-09-24T22:46:16.062803+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-24T19:09:01+00:00"
+    "hasta": "2026-09-24T22:09:11+00:00"
   },
-  "total_eventos": 410,
+  "total_eventos": 416,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 67,
-    "infraestructura_electrica": 111,
+    "inundacion": 68,
+    "infraestructura_electrica": 116,
     "deslizamiento": 29,
     "colapso_estructural": 4,
     "orden_publico": 88,
@@ -29,11 +29,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 63,
-      "confirmados": 6,
+      "total": 65,
+      "confirmados": 7,
       "por_severidad": {
         "alto": 12,
-        "medio": 17,
+        "medio": 19,
         "bajo": 20,
         "critico": 10,
         "sin_clasificar": 4
@@ -42,14 +42,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 37,
+      "total": 38,
       "confirmados": 5,
       "por_severidad": {
         "medio": 19,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 5
+        "alto": 6
       },
       "severidad_dominante": "critico"
     },
@@ -68,11 +68,11 @@
     },
     {
       "estado": "Barinas",
-      "total": 27,
+      "total": 28,
       "confirmados": 1,
       "por_severidad": {
         "alto": 3,
-        "medio": 12,
+        "medio": 13,
         "bajo": 8,
         "critico": 4
       },
@@ -174,6 +174,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Sucre",
+      "total": 15,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 6,
+        "bajo": 6,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Carabobo",
       "total": 14,
       "confirmados": 1,
@@ -184,17 +195,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Sucre",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 6,
-        "bajo": 6,
-        "alto": 2
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Portuguesa",
@@ -234,10 +234,10 @@
     },
     {
       "estado": "Nueva Esparta",
-      "total": 10,
+      "total": 11,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 1,
+        "alto": 2,
         "bajo": 6,
         "medio": 2,
         "critico": 1
@@ -321,7 +321,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 16,
+      "infraestructura_electrica": 17,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -336,11 +336,11 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 11,
+      "inundacion": 12,
       "orden_publico": 18,
       "incendio": 12,
       "vialidad": 2,
-      "infraestructura_electrica": 11,
+      "infraestructura_electrica": 12,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 1,
@@ -358,7 +358,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 5,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -367,7 +367,7 @@
     "Sucre": {
       "inundacion": 3,
       "orden_publico": 5,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "infraestructura_agua": 1
     },
     "Anzoategui": {
@@ -424,7 +424,8 @@
       "incendio": 2,
       "orden_publico": 3,
       "infraestructura_agua": 4,
-      "vialidad": 1
+      "vialidad": 1,
+      "infraestructura_electrica": 1
     },
     "Falcon": {
       "crisis_migratoria": 2,
@@ -490,9 +491,9 @@
     }
   },
   "por_severidad": {
-    "alto": 83,
+    "alto": 86,
     "critico": 45,
-    "medio": 156,
+    "medio": 159,
     "bajo": 116,
     "sin_clasificar": 10
   },
@@ -505,12 +506,12 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 12
+      "2026-09": 13
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 44
+      "2026-09": 49
     },
     "deslizamiento": {
       "2026-07": 3,
