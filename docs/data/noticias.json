@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Falcon",
+    "municipio": "Monseñor Iturriza",
+    "parroquia": "Chichiriviche",
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/sucesos/fallece-un-hombre-tras-colapso-de-edificio-en-chichiriviche/",
+        "fecha": "2026-09-23T23:27:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-23T23:27:48+00:00",
+    "fecha_evento_temprana": "2026-09-23T23:27:48+00:00",
+    "fecha_deteccion": "2026-09-24T10:26:19.285458+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Falcon::2026-09-23",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon\n🕒 Hecho reportado: 23/09/2026, 7:27 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 6:26 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/sucesos/fallece-un-hombre-tras-colapso-de-edificio-en-chichiriviche/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Tachira",
     "municipio": "Panamericano",
