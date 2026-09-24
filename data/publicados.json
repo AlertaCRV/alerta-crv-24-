@@ -1,24 +1,10 @@
 {
-  "infraestructura_electrica::Barinas::2026-09-21": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-21T18:53:28.341045+00:00",
-    "fecha_evento_temprana": "2026-09-21T17:33:38+00:00",
-    "municipio": "Pedraza"
-  },
   "derrame_petrolero::Zulia::2026-09-21": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-09-22T06:13:05.092175+00:00",
     "fecha_evento_temprana": "2026-09-21T20:46:17+00:00",
     "municipio": "Valmore Rodríguez"
-  },
-  "inundacion::Trujillo::2026-09-21": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-21T18:54:36.870233+00:00",
-    "fecha_evento_temprana": "2026-09-21T14:42:05+00:00",
-    "municipio": null
   },
   "deslizamiento::La Guaira::2026-09-21": {
     "severidad": "medio",
@@ -126,10 +112,10 @@
     "municipio": null
   },
   "infraestructura_electrica::Zulia::2026-09-23": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-24T15:27:10.116542+00:00",
-    "fecha_evento_temprana": "2026-09-24T11:20:17+00:00",
+    "fecha_deteccion": "2026-09-24T19:28:07.790946+00:00",
+    "fecha_evento_temprana": "2026-09-24T19:09:01+00:00",
     "municipio": "Maracaibo"
   },
   "incendio::Tachira::2026-09-23": {
@@ -168,10 +154,10 @@
     "municipio": "Maturín"
   },
   "orden_publico::Distrito Capital::2026-09-24": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T05:27:37.022365+00:00",
-    "fecha_evento_temprana": "2026-09-24T02:20:20+00:00",
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-24T19:29:49.747789+00:00",
+    "fecha_evento_temprana": "2026-09-24T17:00:00+00:00",
     "municipio": null
   },
   "deslizamiento::Falcon::2026-09-23": {
@@ -201,5 +187,40 @@
     "fecha_deteccion": "2026-09-24T15:27:39.307515+00:00",
     "fecha_evento_temprana": "2026-09-24T15:05:02+00:00",
     "municipio": "Libertador"
+  },
+  "infraestructura_electrica::Miranda::2026-09-24": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T19:27:55.679235+00:00",
+    "fecha_evento_temprana": "2026-09-24T19:09:01+00:00",
+    "municipio": "El Hatillo"
+  },
+  "infraestructura_electrica::Lara::2026-09-24": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T19:28:20.060500+00:00",
+    "fecha_evento_temprana": "2026-09-24T17:39:45+00:00",
+    "municipio": "Palavecino"
+  },
+  "orden_publico::Falcon::2026-09-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T19:30:01.767558+00:00",
+    "fecha_evento_temprana": "2026-09-24T16:32:45+00:00",
+    "municipio": null
+  },
+  "inundacion::Sucre::2026-09-24": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T19:31:24.192990+00:00",
+    "fecha_evento_temprana": "2026-09-24T17:50:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Sucre::2026-09-24": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-24T19:31:42.794809+00:00",
+    "fecha_evento_temprana": "2026-09-24T16:05:57+00:00",
+    "municipio": null
   }
 }
