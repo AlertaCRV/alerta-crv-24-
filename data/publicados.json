@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
     "municipio": null
   },
-  "orden_publico::Distrito Capital::2026-09-22": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T22:21:26.830904+00:00",
-    "fecha_evento_temprana": "2026-09-22T20:36:54+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-09-22": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T22:21:53.984907+00:00",
-    "fecha_evento_temprana": "2026-09-22T22:00:00+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Bolivar::2026-09-22": {
     "severidad": "alto",
     "confirmado": false,
@@ -140,9 +126,9 @@
     "municipio": "El Hatillo"
   },
   "infraestructura_electrica::Lara::2026-09-24": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:03:27.325790+00:00",
+    "fecha_deteccion": "2026-09-25T23:18:40.100868+00:00",
     "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
     "municipio": "Torres"
   },
@@ -246,9 +232,9 @@
   },
   "vialidad::Distrito Capital::2026-09-25": {
     "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-25T16:00:03.833582+00:00",
-    "fecha_evento_temprana": "2026-09-25T13:07:09+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T23:16:59.654696+00:00",
+    "fecha_evento_temprana": "2026-09-25T18:25:39+00:00",
     "municipio": "Libertador"
   },
   "orden_publico::Miranda::2026-09-25": {
@@ -292,5 +278,12 @@
     "fecha_deteccion": "2026-09-25T20:02:57.124725+00:00",
     "fecha_evento_temprana": "2026-09-25T17:40:11+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Yaracuy::2026-09-25": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T23:18:02.200733+00:00",
+    "fecha_evento_temprana": "2026-09-25T21:30:25+00:00",
+    "municipio": "San Felipe"
   }
 }
