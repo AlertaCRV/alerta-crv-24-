@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
     "municipio": null
   },
-  "orden_publico::Aragua::2026-09-22": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T01:06:00.056092+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
-    "municipio": null
-  },
   "orden_publico::Zulia::2026-09-22": {
     "severidad": "medio",
     "confirmado": false,
@@ -27,25 +20,11 @@
     "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
     "municipio": null
   },
-  "incendio::Merida::2026-09-21": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T01:06:21.670413+00:00",
-    "fecha_evento_temprana": "2026-09-21T18:38:31+00:00",
-    "municipio": null
-  },
   "orden_publico::Bolivar::2026-09-22": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-09-22T11:42:00.022729+00:00",
     "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Bolivar::2026-09-21": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T01:08:30.462464+00:00",
-    "fecha_evento_temprana": "2026-09-21T22:30:53+00:00",
     "municipio": null
   },
   "orden_publico::Merida::2026-09-22": {
@@ -154,10 +133,10 @@
     "municipio": "Maturín"
   },
   "orden_publico::Distrito Capital::2026-09-24": {
-    "severidad": "medio",
+    "severidad": "bajo",
     "confirmado": true,
-    "fecha_deteccion": "2026-09-24T19:29:49.747789+00:00",
-    "fecha_evento_temprana": "2026-09-24T17:00:00+00:00",
+    "fecha_deteccion": "2026-09-25T06:01:23.336508+00:00",
+    "fecha_evento_temprana": "2026-09-24T18:29:51+00:00",
     "municipio": null
   },
   "deslizamiento::Falcon::2026-09-23": {
@@ -218,9 +197,9 @@
   },
   "infraestructura_electrica::Sucre::2026-09-24": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-25T00:57:15.117107+00:00",
-    "fecha_evento_temprana": "2026-09-24T16:05:57+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T06:03:25.518381+00:00",
+    "fecha_evento_temprana": "2026-09-24T21:31:25+00:00",
     "municipio": "Sucre"
   },
   "inundacion::Distrito Capital::2026-09-24": {
@@ -238,10 +217,10 @@
     "municipio": "Ezequiel Zamora"
   },
   "infraestructura_electrica::Distrito Capital::2026-09-24": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-25T00:56:36.869228+00:00",
-    "fecha_evento_temprana": "2026-09-24T21:20:34+00:00",
+    "fecha_deteccion": "2026-09-25T06:02:31.442153+00:00",
+    "fecha_evento_temprana": "2026-09-24T21:24:43+00:00",
     "municipio": null
   },
   "infraestructura_electrica::Nueva Esparta::2026-09-24": {
@@ -249,6 +228,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-24T22:45:30.282123+00:00",
     "fecha_evento_temprana": "2026-09-24T16:05:57+00:00",
+    "municipio": null
+  },
+  "orden_publico::Merida::2026-09-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T06:02:56.113432+00:00",
+    "fecha_evento_temprana": "2026-09-25T02:31:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-09-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T06:03:21.746546+00:00",
+    "fecha_evento_temprana": "2026-09-25T02:31:02+00:00",
     "municipio": null
   }
 }
