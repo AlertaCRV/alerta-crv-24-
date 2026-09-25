@@ -56,10 +56,10 @@
     "municipio": null
   },
   "infraestructura_electrica::Zulia::2026-09-23": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T22:43:31.615109+00:00",
-    "fecha_evento_temprana": "2026-09-24T19:09:01+00:00",
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-25T16:00:43.446549+00:00",
+    "fecha_evento_temprana": "2026-09-25T13:20:00+00:00",
     "municipio": "Maracaibo"
   },
   "incendio::Tachira::2026-09-23": {
@@ -203,10 +203,10 @@
     "municipio": null
   },
   "orden_publico::Zulia::2026-09-25": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-25T06:03:21.746546+00:00",
-    "fecha_evento_temprana": "2026-09-25T02:31:02+00:00",
+    "fecha_deteccion": "2026-09-25T16:01:46.508704+00:00",
+    "fecha_evento_temprana": "2026-09-25T10:16:34+00:00",
     "municipio": null
   },
   "incendio::Anzoategui::2026-09-25": {
@@ -229,5 +229,40 @@
     "fecha_deteccion": "2026-09-25T11:44:41.063683+00:00",
     "fecha_evento_temprana": "2026-09-25T00:51:35+00:00",
     "municipio": null
+  },
+  "orden_publico::Lara::2026-09-25": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T15:59:46.729241+00:00",
+    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
+    "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-09-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T15:59:59.755215+00:00",
+    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
+    "municipio": null
+  },
+  "vialidad::Distrito Capital::2026-09-25": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-25T16:00:03.833582+00:00",
+    "fecha_evento_temprana": "2026-09-25T13:07:09+00:00",
+    "municipio": "Libertador"
+  },
+  "orden_publico::Miranda::2026-09-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T16:00:55.651196+00:00",
+    "fecha_evento_temprana": "2026-09-25T14:13:53+00:00",
+    "municipio": "Lander"
+  },
+  "incendio::Trujillo::2026-09-25": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T16:01:08.180507+00:00",
+    "fecha_evento_temprana": "2026-09-25T15:41:15+00:00",
+    "municipio": "Pampanito"
   }
 }

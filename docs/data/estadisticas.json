@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-25T11:45:09.084274+00:00",
+  "actualizado": "2026-09-25T16:02:15.139075+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-25T02:38:23+00:00"
+    "hasta": "2026-09-25T15:41:15+00:00"
   },
-  "total_eventos": 427,
+  "total_eventos": 434,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 122,
+    "infraestructura_electrica": 123,
     "deslizamiento": 29,
     "colapso_estructural": 4,
-    "orden_publico": 92,
+    "orden_publico": 96,
     "salud_publica": 10,
     "crisis_migratoria": 6,
-    "incendio": 34,
-    "vialidad": 14,
+    "incendio": 35,
+    "vialidad": 15,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -29,23 +29,23 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 68,
-      "confirmados": 8,
+      "total": 69,
+      "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 20,
         "bajo": 21,
-        "critico": 10,
+        "critico": 11,
         "sin_clasificar": 4
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Zulia",
-      "total": 39,
-      "confirmados": 5,
+      "total": 41,
+      "confirmados": 6,
       "por_severidad": {
-        "medio": 19,
+        "medio": 21,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -55,12 +55,12 @@
     },
     {
       "estado": "Lara",
-      "total": 34,
+      "total": 35,
       "confirmados": 1,
       "por_severidad": {
         "critico": 4,
         "alto": 10,
-        "medio": 13,
+        "medio": 14,
         "bajo": 6,
         "sin_clasificar": 1
       },
@@ -116,6 +116,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Miranda",
+      "total": 19,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 4,
+        "medio": 5,
+        "critico": 4,
+        "bajo": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Tachira",
       "total": 18,
       "confirmados": 0,
@@ -124,18 +136,6 @@
         "bajo": 3,
         "medio": 6,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Miranda",
-      "total": 18,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 4,
-        "medio": 5,
-        "critico": 4,
-        "bajo": 5
       },
       "severidad_dominante": "critico"
     },
@@ -185,6 +185,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Portuguesa",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "bajo": 6,
+        "critico": 1,
+        "alto": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Carabobo",
       "total": 14,
       "confirmados": 1,
@@ -197,14 +209,13 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Portuguesa",
-      "total": 14,
+      "estado": "Trujillo",
+      "total": 13,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 6,
-        "bajo": 5,
-        "critico": 1,
-        "alto": 2
+        "medio": 8,
+        "bajo": 4,
+        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -217,17 +228,6 @@
         "sin_clasificar": 1,
         "alto": 6,
         "bajo": 1,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 7,
-        "bajo": 4,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -309,7 +309,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "infraestructura_electrica": 10,
       "sismo": 1,
       "deslizamiento": 1,
@@ -321,11 +321,11 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 17,
+      "infraestructura_electrica": 18,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -339,7 +339,7 @@
       "inundacion": 12,
       "orden_publico": 19,
       "incendio": 12,
-      "vialidad": 2,
+      "vialidad": 3,
       "infraestructura_electrica": 14,
       "colapso_estructural": 1,
       "sismo": 1,
@@ -349,7 +349,7 @@
     },
     "Trujillo": {
       "inundacion": 2,
-      "incendio": 4,
+      "incendio": 5,
       "sequia": 1,
       "infraestructura_electrica": 2,
       "deslizamiento": 2,
@@ -419,7 +419,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 5
+      "orden_publico": 6
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -470,7 +470,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 3,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -493,9 +493,9 @@
   },
   "por_severidad": {
     "alto": 91,
-    "critico": 45,
-    "medio": 163,
-    "bajo": 118,
+    "critico": 46,
+    "medio": 167,
+    "bajo": 120,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -512,7 +512,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 55
+      "2026-09": 56
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -527,7 +527,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 46
+      "2026-09": 50
     },
     "salud_publica": {
       "2026-07": 1,
@@ -542,11 +542,11 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 12
+      "2026-09": 13
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 4
+      "2026-09": 5
     },
     "sismo": {
       "2026-08": 5,
