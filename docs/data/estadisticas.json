@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-25T06:03:53.768624+00:00",
+  "actualizado": "2026-09-25T11:45:09.084274+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-25T02:31:02+00:00"
+    "hasta": "2026-09-25T02:38:23+00:00"
   },
-  "total_eventos": 424,
+  "total_eventos": 427,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 121,
+    "infraestructura_electrica": 122,
     "deslizamiento": 29,
     "colapso_estructural": 4,
-    "orden_publico": 91,
+    "orden_publico": 92,
     "salud_publica": 10,
     "crisis_migratoria": 6,
-    "incendio": 33,
+    "incendio": 34,
     "vialidad": 14,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -80,13 +80,25 @@
     },
     {
       "estado": "Aragua",
-      "total": 23,
+      "total": 24,
       "confirmados": 0,
       "por_severidad": {
-        "bajo": 6,
+        "bajo": 7,
         "medio": 7,
         "alto": 5,
         "critico": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 20,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 10,
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6
       },
       "severidad_dominante": "critico"
     },
@@ -100,18 +112,6 @@
         "critico": 1,
         "alto": 2,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "alto": 1,
-        "critico": 2,
-        "bajo": 6
       },
       "severidad_dominante": "critico"
     },
@@ -371,12 +371,13 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 3,
       "infraestructura_agua": 2,
-      "inundacion": 3
+      "inundacion": 3,
+      "incendio": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 8,
@@ -443,7 +444,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 6,
+      "orden_publico": 7,
       "inundacion": 8,
       "infraestructura_electrica": 4,
       "accidente_transporte": 1,
@@ -491,10 +492,10 @@
     }
   },
   "por_severidad": {
-    "alto": 90,
+    "alto": 91,
     "critico": 45,
-    "medio": 162,
-    "bajo": 117,
+    "medio": 163,
+    "bajo": 118,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -511,7 +512,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 54
+      "2026-09": 55
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -526,7 +527,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 45
+      "2026-09": 46
     },
     "salud_publica": {
       "2026-07": 1,
@@ -541,7 +542,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 11
+      "2026-09": 12
     },
     "vialidad": {
       "2026-08": 10,
