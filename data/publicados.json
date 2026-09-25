@@ -1,45 +1,10 @@
 {
-  "derrame_petrolero::Zulia::2026-09-21": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T06:13:05.092175+00:00",
-    "fecha_evento_temprana": "2026-09-21T20:46:17+00:00",
-    "municipio": "Valmore Rodríguez"
-  },
   "deslizamiento::La Guaira::2026-09-21": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-09-23T00:47:40.894872+00:00",
     "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
     "municipio": null
-  },
-  "orden_publico::Zulia::2026-09-22": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T11:42:08.747697+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
-    "municipio": null
-  },
-  "orden_publico::Bolivar::2026-09-22": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T11:42:00.022729+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
-    "municipio": null
-  },
-  "orden_publico::Merida::2026-09-22": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T06:13:46.127774+00:00",
-    "fecha_evento_temprana": "2026-09-22T02:22:54+00:00",
-    "municipio": null
-  },
-  "salud_publica::Merida::2026-09-22": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-22T06:14:11.584228+00:00",
-    "fecha_evento_temprana": "2026-09-22T02:21:10+00:00",
-    "municipio": "Cardenal Quintero"
   },
   "orden_publico::Distrito Capital::2026-09-22": {
     "severidad": "bajo",
@@ -242,6 +207,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-25T06:03:21.746546+00:00",
     "fecha_evento_temprana": "2026-09-25T02:31:02+00:00",
+    "municipio": null
+  },
+  "incendio::Anzoategui::2026-09-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T11:44:09.673624+00:00",
+    "fecha_evento_temprana": "2026-09-25T02:38:23+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-25": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T11:44:35.299113+00:00",
+    "fecha_evento_temprana": "2026-09-25T01:41:38+00:00",
+    "municipio": null
+  },
+  "orden_publico::Aragua::2026-09-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-25T11:44:41.063683+00:00",
+    "fecha_evento_temprana": "2026-09-25T00:51:35+00:00",
     "municipio": null
   }
 }
