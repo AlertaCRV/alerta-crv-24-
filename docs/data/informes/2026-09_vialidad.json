@@ -3,7 +3,7 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-09-24T00:42:38.638381+00:00",
+  "generado": "2026-09-25T01:02:10.169327+00:00",
   "actualizado_hasta": "2026-09-23T19:01:27.130221+00:00",
   "total_eventos": 4,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 10,
     "actual": 4
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron cuatro incidentes viales, una disminución respecto al período anterior en el que se contabilizaron diez eventos (10 evento(s) registrados entonces vs. 4 en este período). Esta reducción se observa a pesar de la gravedad de los hechos ocurridos en distintas regiones del país.\n\nEn el Distrito Capital, a la altura del kilómetro 133 de la Autopista Regional del Centro (ARC), dos autobuses colisionaron a las 5:10 a.m., provocando la muerte de tres personas y dejando a un cuarto herido (El Periodico de Monagas).\n\nEn el estado Zulia, en la localidad de Los Haticos, un choque múltiple entre un autobús de la línea Uni Zulia, un vehículo modelo Festiva y una motocicleta resultó en el fallecimiento de una mujer y en un herido adicional (Noticia al Dia).\n\nEn la frontera entre San Antonio del Táchira y Ureña, se registraron ocho accidentes de tránsito entre el viernes 19 y el domingo 20 de septiembre, que dejaron nueve lesionados, entre ellos un hombre con traumatismo en el brazo izquierdo y columna y una mujer con lesiones diversas (Diario La Nacion).\n\nEn la isla de Margarita, estado Nueva Esparta, un triple choque en la avenida Juan Bautista Arismendi, sector Macho Muerto, municipio Mariño, involucró a un Tata, un Toyota Yaris y un Nissan B14, y dejó varios heridos atendidos por Protección Civil y unidades paramédicas (Reporte Confidencial).",
+  "narrativa": "Durante el mes de septiembre de 2026 el Sistema de Monitoreo de Emergencias registró cuatro incidentes viales, una disminución respecto a los diez eventos reportados en el mes anterior (2026‑08). Esta reducción se refleja en la menor cantidad de siniestros con daños materiales, heridos o víctimas fatales que fueron documentados por los medios de comunicación locales.\n\nEn el Distrito Capital, a las 5:10 a.m. del miércoles se produjo un choque entre dos autobuses de transporte público en el kilómetro 133 de la Autopista Regional del Centro (ARC), dejando tres muertos y un herido (El Periodico de Monagas).\n\nEn el estado Zulia, un accidente múltiple en Los Háticos involucró a un autobús de la línea Uni Zulia, un vehículo modelo Festiva y una motocicleta; la colisión resultó en el fallecimiento de una mujer y una persona herida (Noticia al Dia (Zulia)).\n\nEn la frontera entre San Antonio del Táchira y Ureña, se registraron ocho accidentes entre el viernes y el domingo 20 de septiembre, que dejaron nueve lesionados, entre ellos un hombre con traumatismo de brazo y columna y una mujer con lesiones diversas (Diario La Nacion (Tachira)).\n\nEn la isla de Margarita, municipio Mariño, la avenida Juan Bautista Arismendi fue escenario de un triple choque que involucró a un Tata, un Toyota Yaris y un Nissan B14, provocando varios heridos entre los ocupantes de los vehículos (Reporte Confidencial (Nueva Esparta)).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
