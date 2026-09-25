@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-25T00:57:54.445683+00:00",
+  "actualizado": "2026-09-25T06:03:53.768624+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-24T22:09:11+00:00"
+    "hasta": "2026-09-25T02:31:02+00:00"
   },
-  "total_eventos": 419,
+  "total_eventos": 424,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 119,
+    "infraestructura_electrica": 121,
     "deslizamiento": 29,
     "colapso_estructural": 4,
-    "orden_publico": 88,
+    "orden_publico": 91,
     "salud_publica": 10,
     "crisis_migratoria": 6,
     "incendio": 33,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 66,
-      "confirmados": 7,
+      "total": 68,
+      "confirmados": 8,
       "por_severidad": {
         "alto": 13,
-        "medio": 19,
-        "bajo": 20,
+        "medio": 20,
+        "bajo": 21,
         "critico": 10,
         "sin_clasificar": 4
       },
@@ -42,14 +42,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 38,
+      "total": 39,
       "confirmados": 5,
       "por_severidad": {
         "medio": 19,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 6
+        "alto": 7
       },
       "severidad_dominante": "critico"
     },
@@ -140,6 +140,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Sucre",
+      "total": 17,
+      "confirmados": 2,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 6,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Monagas",
       "total": 17,
       "confirmados": 0,
@@ -151,13 +162,13 @@
       "severidad_dominante": "alto"
     },
     {
-      "estado": "Sucre",
-      "total": 16,
-      "confirmados": 2,
+      "estado": "Merida",
+      "total": 17,
+      "confirmados": 0,
       "por_severidad": {
-        "medio": 7,
-        "bajo": 6,
-        "alto": 3
+        "medio": 5,
+        "bajo": 4,
+        "alto": 8
       },
       "severidad_dominante": "alto"
     },
@@ -172,17 +183,6 @@
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 16,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 4,
-        "alto": 7
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Carabobo",
@@ -325,7 +325,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -337,10 +337,10 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 18,
+      "orden_publico": 19,
       "incendio": 12,
       "vialidad": 2,
-      "infraestructura_electrica": 13,
+      "infraestructura_electrica": 14,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 1,
@@ -367,7 +367,7 @@
     "Sucre": {
       "inundacion": 3,
       "orden_publico": 5,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "infraestructura_agua": 1
     },
     "Anzoategui": {
@@ -454,7 +454,7 @@
     "Merida": {
       "infraestructura_electrica": 5,
       "vialidad": 1,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 1,
       "deslizamiento": 1,
       "colapso_estructural": 1,
@@ -491,10 +491,10 @@
     }
   },
   "por_severidad": {
-    "alto": 88,
+    "alto": 90,
     "critico": 45,
-    "medio": 160,
-    "bajo": 116,
+    "medio": 162,
+    "bajo": 117,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -511,7 +511,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 52
+      "2026-09": 54
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -526,7 +526,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 42
+      "2026-09": 45
     },
     "salud_publica": {
       "2026-07": 1,
