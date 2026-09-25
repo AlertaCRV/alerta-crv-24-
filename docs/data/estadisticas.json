@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-25T16:02:15.139075+00:00",
+  "actualizado": "2026-09-25T20:03:55.861234+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-25T15:41:15+00:00"
+    "hasta": "2026-09-25T19:39:14+00:00"
   },
-  "total_eventos": 434,
+  "total_eventos": 441,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 123,
+    "infraestructura_electrica": 125,
     "deslizamiento": 29,
     "colapso_estructural": 4,
-    "orden_publico": 96,
-    "salud_publica": 10,
+    "orden_publico": 98,
+    "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 35,
-    "vialidad": 15,
+    "incendio": 36,
+    "vialidad": 16,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -29,12 +29,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 69,
+      "total": 70,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 20,
-        "bajo": 21,
+        "bajo": 22,
         "critico": 11,
         "sin_clasificar": 4
       },
@@ -42,10 +42,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 41,
+      "total": 42,
       "confirmados": 6,
       "por_severidad": {
-        "medio": 21,
+        "medio": 22,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -55,12 +55,12 @@
     },
     {
       "estado": "Lara",
-      "total": 35,
-      "confirmados": 1,
+      "total": 37,
+      "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 10,
-        "medio": 14,
+        "medio": 16,
         "bajo": 6,
         "sin_clasificar": 1
       },
@@ -80,12 +80,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 24,
+      "total": 25,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
         "medio": 7,
-        "alto": 5,
+        "alto": 6,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -140,6 +140,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 18,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 4,
+        "alto": 5
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Sucre",
       "total": 17,
       "confirmados": 2,
@@ -147,17 +158,6 @@
         "medio": 8,
         "bajo": 6,
         "alto": 3
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Monagas",
-      "total": 17,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 4,
-        "alto": 4
       },
       "severidad_dominante": "alto"
     },
@@ -296,6 +296,15 @@
         "bajo": 1
       },
       "severidad_dominante": "bajo"
+    },
+    {
+      "estado": "Amazonas",
+      "total": 1,
+      "confirmados": 0,
+      "por_severidad": {
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
     }
   ],
   "cruce_estado_tipo": {
@@ -309,8 +318,8 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 7,
-      "infraestructura_electrica": 10,
+      "orden_publico": 8,
+      "infraestructura_electrica": 11,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -321,7 +330,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 18,
+      "infraestructura_electrica": 19,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -337,7 +346,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 19,
+      "orden_publico": 20,
       "incendio": 12,
       "vialidad": 3,
       "infraestructura_electrica": 14,
@@ -408,7 +417,7 @@
     "Monagas": {
       "infraestructura_electrica": 8,
       "salud_publica": 1,
-      "vialidad": 1,
+      "vialidad": 2,
       "infraestructura_agua": 4,
       "incendio": 1,
       "orden_publico": 2
@@ -450,7 +459,8 @@
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
-      "tormenta_electrica": 1
+      "tormenta_electrica": 1,
+      "incendio": 1
     },
     "Merida": {
       "infraestructura_electrica": 5,
@@ -489,13 +499,16 @@
     "Delta Amacuro": {
       "derrame_petrolero": 1,
       "inundacion": 1
+    },
+    "Amazonas": {
+      "salud_publica": 1
     }
   },
   "por_severidad": {
-    "alto": 91,
-    "critico": 46,
-    "medio": 167,
-    "bajo": 120,
+    "alto": 93,
+    "critico": 47,
+    "medio": 170,
+    "bajo": 121,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -512,7 +525,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 56
+      "2026-09": 58
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -527,12 +540,12 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 50
+      "2026-09": 52
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
-      "2026-09": 1
+      "2026-09": 2
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -542,11 +555,11 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 13
+      "2026-09": 14
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 5
+      "2026-09": 6
     },
     "sismo": {
       "2026-08": 5,

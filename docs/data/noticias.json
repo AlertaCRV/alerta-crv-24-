@@ -1,8 +1,143 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Amazonas",
+    "municipio": "Manapiare",
+    "parroquia": "Alto Ventuari",
+    "severidad": "critico",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/620855/alerta-sanitaria-en-el-alto-ventuari-reportan-mas-de-165-indigenas-afectados-y-tres-ninos-fallecidos/",
+        "fecha": "2026-09-25T18:13:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T18:13:06+00:00",
+    "fecha_evento_temprana": "2026-09-25T18:13:06+00:00",
+    "fecha_deteccion": "2026-09-25T20:00:33.961578+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Amazonas::2026-09-25",
+    "titulo": "Salud pública en Parroquia Alto Ventuari, Municipio Manapiare, Amazonas",
+    "texto": "📌 Salud pública en Parroquia Alto Ventuari, Municipio Manapiare, Amazonas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Alto Ventuari, Municipio Manapiare, Amazonas\n🕒 Hecho reportado: 25/09/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:00 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/620855/alerta-sanitaria-en-el-alto-ventuari-reportan-mas-de-165-indigenas-afectados-y-tres-ninos-fallecidos/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Lara",
+    "municipio": "Iribarren",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/",
+        "fecha": "2026-09-25T14:24:54+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/pacientes-renales-gasoil-dialisis/",
+        "fecha": "2026-09-25T14:46:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T14:46:31+00:00",
+    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
+    "fecha_deteccion": "2026-09-25T20:01:12.648193+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-09-25",
+    "titulo": "Orden público en Municipio Iribarren, Lara",
+    "texto": "📌 Orden público en Municipio Iribarren, Lara\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Iribarren, Lara\n🕒 Hecho reportado: 25/09/2026, 10:46 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:01 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/\n  • La Prensa de Lara: https://laprensadelara.com/locales/pacientes-renales-gasoil-dialisis/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Aragua",
+    "municipio": "Girardot",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/dos-heridos-deja-incendio-en-una-panaderia-al-norte-de-maracay/",
+        "fecha": "2026-09-25T19:39:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T19:39:14+00:00",
+    "fecha_evento_temprana": "2026-09-25T19:39:14+00:00",
+    "fecha_deteccion": "2026-09-25T20:02:11.558145+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Aragua::2026-09-25",
+    "titulo": "Incendio en Municipio Girardot, Aragua",
+    "texto": "📌 Incendio en Municipio Girardot, Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Girardot, Aragua\n🕒 Hecho reportado: 25/09/2026, 3:39 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/dos-heridos-deja-incendio-en-una-panaderia-al-norte-de-maracay/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/cuatro-heridos-deja-colision-multiple-en-la-avenida-libertador-de-maturin/",
+        "fecha": "2026-09-25T19:13:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T19:13:29+00:00",
+    "fecha_evento_temprana": "2026-09-25T19:13:29+00:00",
+    "fecha_deteccion": "2026-09-25T20:02:15.481923+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Monagas::2026-09-25",
+    "titulo": "Incidente vial en Municipio Maturín, Monagas",
+    "texto": "📌 Incidente vial en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 25/09/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-heridos-deja-colision-multiple-en-la-avenida-libertador-de-maturin/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
     "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/",
+        "fecha": "2026-09-25T17:40:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T17:40:11+00:00",
+    "fecha_evento_temprana": "2026-09-25T17:40:11+00:00",
+    "fecha_deteccion": "2026-09-25T20:02:57.124725+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-25",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/09/2026, 1:40 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": "Torres",
     "parroquia": null,
     "severidad": "medio",
     "score": 0.75,
@@ -10,20 +145,46 @@
     "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/",
-        "fecha": "2026-09-25T14:24:54+00:00"
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/",
+        "fecha": "2026-09-25T16:30:00+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T14:24:54+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
-    "fecha_deteccion": "2026-09-25T15:59:46.729241+00:00",
+    "fecha_evento": "2026-09-25T16:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
+    "fecha_deteccion": "2026-09-25T20:03:27.325790+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-25",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/09/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 11:59 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/"
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-24",
+    "titulo": "Falla eléctrica en Municipio Torres, Lara",
+    "texto": "📌 Falla eléctrica en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 25/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/",
+        "fecha": "2026-09-25T14:00:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T14:00:30+00:00",
+    "fecha_evento_temprana": "2026-09-25T14:00:30+00:00",
+    "fecha_deteccion": "2026-09-25T20:03:53.025488+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-23",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 25/09/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/"
   },
   {
     "tipo": "orden_publico",
@@ -86,42 +247,6 @@
     "clave_dedup": "vialidad::Distrito Capital::2026-09-25",
     "titulo": "Incidente vial en Parroquia Antimano, Municipio Libertador, Distrito Capital",
     "texto": "📌 Incidente vial en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 25/09/2026, 10:18 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 12:00 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/fotos-l-gandola-sin-frenos-provoca-choque-multiple-de-12-vehiculos-en-la-yaguara/\n  • La Prensa de Monagas: https://laprensademonagas.com/un-muerto-y-15-heridos-por-el-choque-multiple-en-la-yaguara-caracas/\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/un-muerto-y-15-lesionados-es-el-saldo-de-un-choque-multiple-en-caracas-este-25sep/?utm_source=rss&utm_medium=rss&utm_campaign=un-muerto-y-15-lesionados-es-el-saldo-de-un-choque-multiple-en-caracas-este-25sep"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 2.1,
-    "confirmado": true,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/lester-toledo-los-zulianos-son-rehenes-del-caos-electrico-y-de-la-incapacidad-del-gobierno/",
-        "fecha": "2026-09-25T14:26:08+00:00"
-      },
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/",
-        "fecha": "2026-09-25T14:00:30+00:00"
-      },
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/protestaron-en-varios-lugares-de-maracaibo-ante-fallas-electricas/",
-        "fecha": "2026-09-25T13:20:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T14:26:08+00:00",
-    "fecha_evento_temprana": "2026-09-25T13:20:00+00:00",
-    "fecha_deteccion": "2026-09-25T16:00:43.446549+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-23",
-    "titulo": "Falla eléctrica en Municipio Maracaibo, Zulia",
-    "texto": "📌 Falla eléctrica en Municipio Maracaibo, Zulia\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 25/09/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 12:00 p.m.\n📊 Fuentes independientes: 3 (score 2.1)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/lester-toledo-los-zulianos-son-rehenes-del-caos-electrico-y-de-la-incapacidad-del-gobierno/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/protestaron-en-varios-lugares-de-maracaibo-ante-fallas-electricas/"
   },
   {
     "tipo": "orden_publico",
@@ -496,32 +621,6 @@
     "clave_dedup": "infraestructura_electrica::Miranda::2026-09-24",
     "titulo": "Falla eléctrica en Municipio El Hatillo, Miranda",
     "texto": "📌 Falla eléctrica en Municipio El Hatillo, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio El Hatillo, Miranda\n🕒 Hecho reportado: 24/09/2026, 3:09 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:27 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/bajones-y-apagones-son-cada-vez-mas-frecuentes-en-caracas-este-24sep-reportaron-otra-falla/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": "Palavecino",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/en-plena-dialisis-se-va-la-electricidad-en-barquisimeto-42-pacientes-se-quedan-sin-tratamiento/",
-        "fecha": "2026-09-24T17:39:45+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T17:39:45+00:00",
-    "fecha_evento_temprana": "2026-09-24T17:39:45+00:00",
-    "fecha_deteccion": "2026-09-24T19:28:20.060500+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-24",
-    "titulo": "Falla eléctrica en Municipio Palavecino, Lara",
-    "texto": "📌 Falla eléctrica en Municipio Palavecino, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Palavecino, Lara\n🕒 Hecho reportado: 24/09/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:28 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/en-plena-dialisis-se-va-la-electricidad-en-barquisimeto-42-pacientes-se-quedan-sin-tratamiento/"
   },
   {
     "tipo": "orden_publico",
