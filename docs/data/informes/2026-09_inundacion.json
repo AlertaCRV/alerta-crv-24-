@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-24T00:41:40.210211+00:00",
-  "actualizado_hasta": "2026-09-21T18:54:36.870233+00:00",
-  "total_eventos": 11,
+  "generado": "2026-09-25T01:00:58.605749+00:00",
+  "actualizado_hasta": "2026-09-24T22:44:08.413447+00:00",
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 48,
-    "actual": 11
+    "actual": 13
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 11 eventos de inundación, una disminución notable respecto a los 48 eventos del mes anterior (agosto 2026). Esta reducción se observa a pesar de la persistencia de lluvias intensas en varias regiones del país, lo que ha generado situaciones de riesgo y daños materiales en comunidades vulnerables.\n\nEn Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando acorralados a aproximadamente ocho mil productores agrícolas que temen pérdidas irreversibles en sus cultivos y productos lácteos (Diario La Nacion (Tachira)). La severidad del evento se calificó como alta, y las autoridades locales anunciaron que las soluciones podrían demorar hasta un mes, mientras los agricultores enfrentan la paralización de sus cosechas.\n\nEn el estado Trujillo, una fuerte lluvia desencadenó el desbordamiento de una quebrada en el municipio Valera, arrastrando a una persona que fue hallada sin vida en la quebrada Escuque (La Verdad de Monagas). Este incidente, catalogado con severidad crítica, subraya el riesgo mortal que representan las inundaciones repentinas en zonas de cauces estrechos.\n\nOtros estados también reportaron afectaciones: en Guanare, Portuguesa, intensas precipitaciones causaron anegaciones de viviendas y el colapso de un canal en la comunidad “La Comunidad” (El Impulso; La Prensa de Lara). En Barquisimeto, Lara, vientos huracanados acompañados de lluvias provocaron caída de árboles, daños estructurales en centros comerciales y anegaciones de calles (El Pitazo). En Barinas, el desbordamiento del río Socopó motivó monitoreos y evaluaciones de viviendas por parte de la Protección Civil (La Noticia de Barinas). En Maracaibo, Zulia, se reportaron anegaciones en varios sectores y una posible inundación cerca del Hospital Universitario de Maracaibo (La Verdad). Finalmente, la Onda Tropical 43 generó vías inundadas y comunidades agrícolas incomunicadas en varios estados, entre ellos Táchira y Yaracuy, según reportes de Turimiquire (Turimiquire).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 13 eventos de inundación, una notable reducción frente a los 48 eventos del mes anterior (agosto) (comparación proporcionada). Esta disminución se observa pese a la persistencia de lluvias intensas en varias regiones del país, lo que ha generado daños materiales y, en algunos casos, víctimas fatales.\n\nEn el estado Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando atrapados a aproximadamente ocho mil productores agrícolas que se vieron sin acceso a sus tierras y con pérdidas de cosechas y productos lácteos (Diario La Nacion). La situación se agravó al mantenerse 21 días desde que la corriente del río socavó los cimientos del puente, generando una emergencia humanitaria en la zona fronteriza (Diario La Nacion).\n\nEn Trujillo, las intensas lluvias provocaron el desbordamiento de una quebrada en el municipio Valera, arrastrando a una persona que fue hallada sin vida en la quebrada Escuque (La Verdad de Monagas). Este hecho constituye el único fallecido registrado en el período y subraya la gravedad crítica del evento en esa localidad (La Verdad de Monagas).\n\nOtros estados también reportaron inundaciones y sus consecuencias: en Guanare, Portuguesa, fuertes lluvias causaron anegaciones de viviendas y el colapso de un canal en la comunidad \"La Comunidad\" (El Impulso). En la Gran Caracas y Miranda, se registraron anegaciones, caída de árboles y fallas eléctricas tras lluvias intensas (El Impulso). Barquisimeto, Lara, sufrió daños estructurales en centros comerciales y caídas de árboles sobre viviendas debido a lluvias y vientos huracanados (El Pitazo). En Puerto La Cruz, Anzoátegui, un aguacero dejó varias calles y avenidas anegadas (El Tiempo). Finalmente, en Barinas, autoridades realizaron monitoreo e inspección hídrica tras el desbordamiento del río Socopó (La Noticia de Barinas).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -26,8 +26,16 @@
       "link": "https://www.elimpulso.com/2026/09/02/video-fuertes-lluvias-causan-anegaciones-e-inundaciones-de-viviendas-en-sectores-de-guanare-2sep/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/24/lluvias-provocan-anegaciones-caida-de-arboles-y-fallas-electricas-en-caracas-y-miranda-24sep/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/lluvias-y-vientos-huracanados-dejan-arboles-caidos-y-anegaciones-en-lara/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/fuerte-aguacero-de-este-jueves-dejo-calles-y-avenidas-anegadas-en-puerto-la-cruz/"
     },
     {
       "nombre": "La Noticia de Barinas",
@@ -36,6 +44,10 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/lluvias-portuguesa-limpian-canales/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/lluvias-torrenciales-desatan-caos-en-la-gran-caracas/"
     },
     {
       "nombre": "La Verdad (Zulia)",

@@ -217,9 +217,9 @@
     "municipio": null
   },
   "infraestructura_electrica::Sucre::2026-09-24": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": true,
-    "fecha_deteccion": "2026-09-24T22:45:55.575565+00:00",
+    "fecha_deteccion": "2026-09-25T00:57:15.117107+00:00",
     "fecha_evento_temprana": "2026-09-24T16:05:57+00:00",
     "municipio": "Sucre"
   },
@@ -231,16 +231,16 @@
     "municipio": "Libertador"
   },
   "infraestructura_electrica::Barinas::2026-09-24": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-24T22:44:34.261773+00:00",
+    "fecha_deteccion": "2026-09-25T00:55:53.229815+00:00",
     "fecha_evento_temprana": "2026-09-24T15:39:28+00:00",
     "municipio": "Ezequiel Zamora"
   },
   "infraestructura_electrica::Distrito Capital::2026-09-24": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-24T22:45:17.642609+00:00",
+    "fecha_deteccion": "2026-09-25T00:56:36.869228+00:00",
     "fecha_evento_temprana": "2026-09-24T21:20:34+00:00",
     "municipio": null
   },

@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-24T22:46:16.062803+00:00",
+  "actualizado": "2026-09-25T00:57:54.445683+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-24T22:09:11+00:00"
   },
-  "total_eventos": 416,
+  "total_eventos": 419,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 116,
+    "infraestructura_electrica": 119,
     "deslizamiento": 29,
     "colapso_estructural": 4,
     "orden_publico": 88,
@@ -29,10 +29,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 65,
+      "total": 66,
       "confirmados": 7,
       "por_severidad": {
-        "alto": 12,
+        "alto": 13,
         "medio": 19,
         "bajo": 20,
         "critico": 10,
@@ -68,10 +68,10 @@
     },
     {
       "estado": "Barinas",
-      "total": 28,
+      "total": 29,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 3,
+        "alto": 4,
         "medio": 13,
         "bajo": 8,
         "critico": 4
@@ -151,6 +151,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Sucre",
+      "total": 16,
+      "confirmados": 2,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 6,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Yaracuy",
       "total": 16,
       "confirmados": 1,
@@ -170,17 +181,6 @@
         "medio": 5,
         "bajo": 4,
         "alto": 7
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Sucre",
-      "total": 15,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 6,
-        "bajo": 6,
-        "alto": 3
       },
       "severidad_dominante": "alto"
     },
@@ -340,7 +340,7 @@
       "orden_publico": 18,
       "incendio": 12,
       "vialidad": 2,
-      "infraestructura_electrica": 12,
+      "infraestructura_electrica": 13,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 1,
@@ -358,7 +358,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 5,
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -367,7 +367,7 @@
     "Sucre": {
       "inundacion": 3,
       "orden_publico": 5,
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "infraestructura_agua": 1
     },
     "Anzoategui": {
@@ -491,9 +491,9 @@
     }
   },
   "por_severidad": {
-    "alto": 86,
+    "alto": 88,
     "critico": 45,
-    "medio": 159,
+    "medio": 160,
     "bajo": 116,
     "sin_clasificar": 10
   },
@@ -511,7 +511,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 49
+      "2026-09": 52
     },
     "deslizamiento": {
       "2026-07": 3,
