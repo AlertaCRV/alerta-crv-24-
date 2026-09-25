@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-25T20:03:55.861234+00:00",
+  "actualizado": "2026-09-25T23:18:54.312452+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-25T19:39:14+00:00"
+    "hasta": "2026-09-25T22:50:32+00:00"
   },
-  "total_eventos": 441,
+  "total_eventos": 444,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 125,
+    "infraestructura_electrica": 127,
     "deslizamiento": 29,
     "colapso_estructural": 4,
     "orden_publico": 98,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 36,
-    "vialidad": 16,
+    "vialidad": 17,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -29,13 +29,13 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 70,
+      "total": 71,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 20,
         "bajo": 22,
-        "critico": 11,
+        "critico": 12,
         "sin_clasificar": 4
       },
       "severidad_dominante": "critico"
@@ -55,11 +55,11 @@
     },
     {
       "estado": "Lara",
-      "total": 37,
+      "total": 38,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
-        "alto": 10,
+        "alto": 11,
         "medio": 16,
         "bajo": 6,
         "sin_clasificar": 1
@@ -162,6 +162,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Yaracuy",
+      "total": 17,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 4,
+        "bajo": 6,
+        "medio": 6,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 17,
       "confirmados": 0,
@@ -171,18 +183,6 @@
         "alto": 8
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 16,
-      "confirmados": 1,
-      "por_severidad": {
-        "critico": 3,
-        "bajo": 6,
-        "medio": 6,
-        "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Portuguesa",
@@ -319,7 +319,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 8,
-      "infraestructura_electrica": 11,
+      "infraestructura_electrica": 12,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -348,7 +348,7 @@
       "inundacion": 12,
       "orden_publico": 20,
       "incendio": 12,
-      "vialidad": 3,
+      "vialidad": 4,
       "infraestructura_electrica": 14,
       "colapso_estructural": 1,
       "sismo": 1,
@@ -447,7 +447,7 @@
       "inundacion": 5,
       "sismo": 1,
       "incendio": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 3,
       "deslizamiento": 1,
       "infraestructura_agua": 1
@@ -505,8 +505,8 @@
     }
   },
   "por_severidad": {
-    "alto": 93,
-    "critico": 47,
+    "alto": 94,
+    "critico": 49,
     "medio": 170,
     "bajo": 121,
     "sin_clasificar": 10
@@ -525,7 +525,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 58
+      "2026-09": 60
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -559,7 +559,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 6
+      "2026-09": 7
     },
     "sismo": {
       "2026-08": 5,
