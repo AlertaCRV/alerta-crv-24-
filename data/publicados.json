@@ -97,20 +97,6 @@
     "fecha_evento_temprana": "2026-09-24T16:32:45+00:00",
     "municipio": null
   },
-  "inundacion::Sucre::2026-09-24": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T19:31:24.192990+00:00",
-    "fecha_evento_temprana": "2026-09-24T17:50:02+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Sucre::2026-09-24": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T06:03:25.518381+00:00",
-    "fecha_evento_temprana": "2026-09-24T21:31:25+00:00",
-    "municipio": "Sucre"
-  },
   "inundacion::Distrito Capital::2026-09-24": {
     "severidad": "medio",
     "confirmado": true,
@@ -194,13 +180,6 @@
     "fecha_deteccion": "2026-09-25T23:16:59.654696+00:00",
     "fecha_evento_temprana": "2026-09-25T18:25:39+00:00",
     "municipio": "Libertador"
-  },
-  "orden_publico::Miranda::2026-09-25": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T16:00:55.651196+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:13:53+00:00",
-    "municipio": "Lander"
   },
   "incendio::Trujillo::2026-09-25": {
     "severidad": "medio",
