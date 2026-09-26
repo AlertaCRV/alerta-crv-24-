@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-09-26T01:46:42.979331+00:00",
+  "actualizado": "2026-09-26T06:46:22.395209+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-26T00:13:08+00:00"
+    "hasta": "2026-09-26T01:20:33+00:00"
   },
-  "total_eventos": 446,
+  "total_eventos": 449,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
-    "infraestructura_electrica": 128,
-    "deslizamiento": 29,
+    "infraestructura_electrica": 130,
+    "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 99,
     "salud_publica": 11,
@@ -68,13 +68,13 @@
     },
     {
       "estado": "Barinas",
-      "total": 29,
+      "total": 30,
       "confirmados": 1,
       "por_severidad": {
         "alto": 4,
         "medio": 13,
         "bajo": 8,
-        "critico": 4
+        "critico": 5
       },
       "severidad_dominante": "critico"
     },
@@ -151,6 +151,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Merida",
+      "total": 18,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 4,
+        "alto": 9
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Sucre",
       "total": 17,
       "confirmados": 2,
@@ -174,24 +185,13 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Merida",
-      "total": 17,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 4,
-        "alto": 8
-      },
-      "severidad_dominante": "alto"
-    },
-    {
       "estado": "Portuguesa",
-      "total": 15,
+      "total": 16,
       "confirmados": 0,
       "por_severidad": {
         "medio": 6,
         "bajo": 6,
-        "critico": 1,
+        "critico": 2,
         "alto": 2
       },
       "severidad_dominante": "critico"
@@ -367,7 +367,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 5,
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -467,7 +467,7 @@
       "vialidad": 1,
       "orden_publico": 4,
       "inundacion": 1,
-      "deslizamiento": 1,
+      "deslizamiento": 2,
       "colapso_estructural": 1,
       "incendio": 3,
       "salud_publica": 1
@@ -479,7 +479,7 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 7,
       "inundacion": 3,
       "incendio": 1,
@@ -505,8 +505,8 @@
     }
   },
   "por_severidad": {
-    "alto": 94,
-    "critico": 49,
+    "alto": 95,
+    "critico": 51,
     "medio": 172,
     "bajo": 121,
     "sin_clasificar": 10
@@ -525,12 +525,12 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 61
+      "2026-09": 63
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
-      "2026-09": 8
+      "2026-09": 9
     },
     "colapso_estructural": {
       "2026-07": 1,
