@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-26T11:53:47.470472+00:00",
+  "actualizado": "2026-09-26T16:04:33.873074+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-26T11:49:16+00:00"
+    "hasta": "2026-09-26T14:40:48+00:00"
   },
-  "total_eventos": 450,
+  "total_eventos": 451,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 68,
@@ -14,7 +14,7 @@
     "orden_publico": 99,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 37,
+    "incendio": 38,
     "vialidad": 17,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -42,14 +42,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 42,
+      "total": 43,
       "confirmados": 6,
       "por_severidad": {
         "medio": 22,
         "critico": 3,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 7
+        "alto": 8
       },
       "severidad_dominante": "critico"
     },
@@ -340,7 +340,7 @@
       "ataque_armado": 1,
       "explosion": 1,
       "vialidad": 1,
-      "incendio": 1,
+      "incendio": 2,
       "derrame_petrolero": 2
     },
     "Distrito Capital": {
@@ -505,7 +505,7 @@
     }
   },
   "por_severidad": {
-    "alto": 95,
+    "alto": 96,
     "critico": 51,
     "medio": 173,
     "bajo": 121,
@@ -555,7 +555,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 15
+      "2026-09": 16
     },
     "vialidad": {
       "2026-08": 10,
