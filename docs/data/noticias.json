@@ -4,7 +4,7 @@
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +19,11 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-09-26T14:40:48+00:00",
     "fecha_evento_temprana": "2026-09-26T14:40:48+00:00",
-    "fecha_deteccion": "2026-09-26T16:04:33.293791+00:00",
+    "fecha_deteccion": "2026-09-26T19:14:40.562448+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Zulia::2026-09-26",
     "titulo": "Incendio en Zulia",
-    "texto": "📌 Incendio en Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 26/09/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 26/09/2026, 12:04 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/rescatan-a-dos-mujeres-y-su-perro-tras-incendio-en-zulia/"
+    "texto": "📌 Incendio en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 26/09/2026, 10:40 a.m.\n🔎 Detectado por el sistema: 26/09/2026, 3:14 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/rescatan-a-dos-mujeres-y-su-perro-tras-incendio-en-zulia/"
   },
   {
     "tipo": "incendio",
