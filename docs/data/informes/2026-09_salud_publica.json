@@ -3,19 +3,23 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-09-25T01:01:30.124650+00:00",
-  "actualizado_hasta": "2026-09-22T06:14:11.584228+00:00",
-  "total_eventos": 1,
+  "generado": "2026-09-26T01:50:33.822960+00:00",
+  "actualizado_hasta": "2026-09-25T20:00:33.961578+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 8,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registró un único evento de salud pública, en contraste con los ocho eventos reportados en agosto de 2026 (Comparación con el período anterior). El hecho ocurrió en el municipio Libertador de Mérida, específicamente en la comunidad de San José de las Flores y en los sectores 1.º de Mayo y Cardenal Quintero, donde vecinos denunciaron un colapso del sistema de aguas servidas que afecta directamente a la Avenida Los Próceres (Reporteros de Merida).\\n\\nSegún la denuncia, la causa del colapso es la conexión indebida del sistema de aguas servidas con los canales de aguas pluviales, lo que ha generado una grave crisis de salud pública y ambiental (Reporteros de Merida). Esta improvisación ha provocado la acumulación de aguas residuales en la vía pública y ha incrementado el riesgo de una posible epidemia en la zona (Reporteros de Merida).\\n\\nLas autoridades locales fueron alertadas por los residentes, quienes expresaron su preocupación por la falta de servicios sanitarios adecuados y el potencial impacto en la salud de la población (Reporteros de Merida). Hasta la fecha del informe, no se reportaron heridos ni víctimas fatales, pero la situación se mantiene como una amenaza latente para la comunidad debido a la exposición a aguas contaminadas (Reporteros de Merida).",
+  "narrativa": "En el mes de septiembre de 2026 la Cruz Roja Venezolana registró 2 eventos de salud pública, una disminución respecto a los 8 eventos que se habían documentado en el mes anterior (2026‑08). Ambos incidentes presentaron alta gravedad y generaron respuestas de emergencia por parte de las autoridades sanitarias.\n\nEn el municipio Libertador de Mérida, vecinos de la comunidad de San José de las Flores, así como de los sectores 1.º de Mayo y Cardenal Quintero, denunciaron el colapso del sistema de aguas servidas que afecta directamente a la Avenida Los Próceres (Reporteros de Merida). La causa del problema fue la indebida conexión del sistema de aguas servidas con los canales de aguas pluviales, lo que ha provocado una grave crisis de salud pública y ambiental y eleva el riesgo de una posible epidemia (Reporteros de Merida).\n\nEn el estado Amazonas, específicamente en el municipio Manapiare, una alerta sanitaria se activó en la zona del Alto Ventuari, donde más de 165 personas pertenecientes a las comunidades indígenas Ye’kwana y Sanema fueron afectadas por una enfermedad aún no identificada (Runrun.es). El reporte indica que entre los síntomas se encuentran fiebre alta, vómitos, diarrea, bronconeumonía y tos, y lamentablemente se confirmaron tres niños fallecidos (Runrun.es).\n\nAmbos eventos subrayan la necesidad de reforzar los sistemas de infraestructura sanitaria y de vigilancia epidemiológica en regiones vulnerables, y la Cruz Roja continúa coordinando acciones de atención y prevención para mitigar el impacto en la población afectada.",
   "fuentes": [
     {
       "nombre": "Reporteros de Merida",
       "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-san-jose-de-las-flores-y.html"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/620855/alerta-sanitaria-en-el-alto-ventuari-reportan-mas-de-165-indigenas-afectados-y-tres-ninos-fallecidos/"
     }
   ]
 }

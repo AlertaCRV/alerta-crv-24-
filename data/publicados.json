@@ -1,11 +1,4 @@
 {
-  "deslizamiento::La Guaira::2026-09-21": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-23T00:47:40.894872+00:00",
-    "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Bolivar::2026-09-22": {
     "severidad": "alto",
     "confirmado": false,
@@ -126,9 +119,9 @@
     "municipio": "El Hatillo"
   },
   "infraestructura_electrica::Lara::2026-09-24": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T23:18:40.100868+00:00",
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-26T01:43:07.560173+00:00",
     "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
     "municipio": "Torres"
   },
@@ -273,9 +266,9 @@
     "municipio": "Maturín"
   },
   "orden_publico::Distrito Capital::2026-09-25": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:02:57.124725+00:00",
+    "fecha_deteccion": "2026-09-26T01:45:37.492512+00:00",
     "fecha_evento_temprana": "2026-09-25T17:40:11+00:00",
     "municipio": null
   },

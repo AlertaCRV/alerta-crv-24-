@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-25T01:01:25.622897+00:00",
-  "actualizado_hasta": "2026-09-24T19:30:01.767558+00:00",
-  "total_eventos": 42,
+  "generado": "2026-09-26T01:50:28.625923+00:00",
+  "actualizado_hasta": "2026-09-26T01:45:37.492512+00:00",
+  "total_eventos": 53,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 42
+    "actual": 53
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 42 incidentes de orden público, una ligera disminución respecto a los 44 eventos del mes anterior (2026‑08) (44 evento(s) registrados entonces vs. 42 en este período). Los hechos se concentraron en varios estados del país, evidenciando tensiones sociales y problemas de infraestructura eléctrica.\n\nEn Anzoátegui, la madrugada del 15 de septiembre se produjo un triple homicidio cometido por un oficial de la Policía Municipal de Sotillo, quien asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz, generando una situación de orden público de severidad crítica (El Pitazo).\n\nEn Guárico, una mujer de 45 años fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando en heridas graves y provocando disturbios locales de alta severidad (El Siglo (Aragua)). De manera paralela, en el estado Aragua se reportó otro incidente de orden público de alta severidad, aunque los detalles específicos no fueron publicados en los informes disponibles (El Pitazo).\n\nEn el estado Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, desencadenando una protesta violenta de alta severidad (El Siglo (Aragua)). En Zulia, familiares de un comerciante wayuu bloquearon el paso vehicular en la frontera con Colombia en Paraguachón, permitiendo solo el tránsito de peatones, lo que generó una interrupción significativa del tráfico y tensiones fronterizas de alta severidad (El Pitazo).\n\nEn Portuguesa, la falta de suministro eléctrico provocó protestas en los municipios de Guanarito, San Rafael de Onoto y Araure, donde vecinos cerraron accesos y se concentraron en puentes para exigir la restitución del servicio, calificándose como un evento de alta severidad (Portuguesa Reporta). Finalmente, en Táchira, vecinos del municipio Panamericano mantuvieron una tranca vial durante más de 24 horas debido a cortes de luz, bloqueando la principal vía y generando un conflicto de alta severidad (Diario La Nación (Tachira)).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 53 incidentes de orden público, frente a los 44 del mes anterior (agosto 2026). Este incremento refleja una mayor frecuencia de manifestaciones y actos de violencia en distintas regiones del país.\n\nEn Anzoátegui se reportó un caso de gravedad crítica cuando un oficial de la Policía Municipal de Sotillo asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). En Guárico, una mujer de 45 años fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando herida (El Siglo (Aragua)). En el estado Portuguesa, la población de varios municipios, entre ellos Guanarito y San Rafael de Onoto, realizó protestas por los cortes eléctricos, bloqueando accesos y puentes como medida de presión (Portuguesa Reporta). Asimismo, en Aragua se registró un episodio de orden público de alta severidad, aunque los detalles específicos no fueron publicados en la fuente citada (El Pitazo).\n\nEn Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, generando una situación de alta tensión (El Siglo (Aragua)). En Zulia, dos incidentes de alta gravedad se dieron en la frontera con Colombia, donde familiares de un comerciante wayuu bloquearon el paso vehicular en Paraguachón, permitiendo solo el tránsito de peatones (El Pitazo); y, simultáneamente, manifestantes tomaron el puente sobre el río Torondoy en el eje Panamericano, paralizando la carretera 001 (Reporteros de Merida). En Táchira, vecinos del municipio Panamericano mantuvieron una tranca vial de 24 horas tras sufrir cortes de energía, impidiendo el tránsito de vehículos de carga y particulares (Diario La Nacion (Tachira)). Finalmente, en Mérida, habitantes del eje Panamericano tomaron nuevamente el puente sobre el río Torondoy en protesta por la crisis eléctrica, generando una interrupción del tráfico (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -36,6 +36,14 @@
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/perdidas-millonarias-habitantes-del-eje-panamericano-toman-puente-sobre-el-rio-torondoy-por-crisis-electrica/"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -78,6 +86,10 @@
       "link": "https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/jubilados-de-cantv-sumaron-nueva-semana-de-protesta/"
     },
@@ -86,8 +98,16 @@
       "link": "https://elsiglo.com.ve/jubilados-de-la-cantv-sumaron-nueva-semana-se-protesta/"
     },
     {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/gremios-araguenos-exigieron-mejoras-salariales-y-reivindicaciones-laborales/"
+    },
+    {
       "nombre": "La Manana (Falcon)",
       "link": "https://lamananadigital.com/ya-basta-trabajadores-falconianos-en-pie-de-lucha-por-salario-justos/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/trabajadores-marcharon-hacia-el-ministerio-del-trabajo-y-reiteran-que-bono-no-es-salario/"
     },
     {
       "nombre": "La Prensa de Lara",
@@ -96,6 +116,14 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/pacientes-renales-gasoil-dialisis/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/detienen-a-susan-sarandon-y-hannah-einbinder-en-protesta-contra-netanyahu/"
     },
     {
       "nombre": "La Verdad (Zulia)",
@@ -108,50 +136,6 @@
     {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu/?utm_source=rss&utm_medium=rss&utm_campaign=colectivos-amedrentan-a-familiares-de-presos-politicos-frente-a-la-embajada-de-los-ee-uu"
-    },
-    {
-      "nombre": "Maturin News",
-      "link": "https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales"
-    },
-    {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/"
-    },
-    {
-      "nombre": "Noticia al Dia (Zulia)",
-      "link": "https://www.noticialdia.com/al-dia/reportan-protesta-en-la-autopista-gran-cacique-guaicaipuro-de-caracas-manifestantes-exigen-elecciones-y-mejoras-en-el-sen/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/regionales/dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados/?utm_source=rss&utm_medium=rss&utm_campaign=dirigente-ymara-garcia-reclama-pensiones-dignas-atencion-en-salud-y-recuperacion-de-beneficios-para-jubilados"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/principales/portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-jubilados-de-cantv-denuncian-reduccion-de-bono-y-suspension-de-servicios-de-salud"
-    },
-    {
-      "nombre": "Portuguesa al Dia",
-      "link": "https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/vente-venezuela-se-concentro-en-parroquias-de-caracas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/politica/denuncian-detencion-arbitraria-de-activista-en-caracas-tras-protestas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/trabajo/marcharan-este-jueves-hacia-el-ministerio-del-trabajo-en-caracas/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/trabajadores-protestan-en-caracas-por-salarios-y-pensiones/"
-    },
-    {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-el-llano-denuncian.html"
     }
   ]
 }

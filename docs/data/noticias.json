@@ -1,5 +1,62 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": "Torres",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.35,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/",
+        "fecha": "2026-09-25T16:30:00+00:00"
+      },
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/protestan-contra-cortes-electricos-en-el-estado-lara-y-piden-respuestas-a-trump/",
+        "fecha": "2026-09-26T00:13:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-26T00:13:08+00:00",
+    "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
+    "fecha_deteccion": "2026-09-26T01:43:07.560173+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-24",
+    "titulo": "Falla eléctrica en Municipio Torres, Lara",
+    "texto": "📌 Falla eléctrica en Municipio Torres, Lara\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 25/09/2026, 8:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 9:43 p.m.\n📊 Fuentes independientes: 2 (score 1.35)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/\n  • El Carabobeno: https://www.el-carabobeno.com/protestan-contra-cortes-electricos-en-el-estado-lara-y-piden-respuestas-a-trump/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/",
+        "fecha": "2026-09-25T17:40:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-25T17:40:11+00:00",
+    "fecha_evento_temprana": "2026-09-25T17:40:11+00:00",
+    "fecha_deteccion": "2026-09-26T01:45:37.492512+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-25",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/09/2026, 1:40 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 9:45 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/"
+  },
+  {
     "tipo": "vialidad",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -55,32 +112,6 @@
     "clave_dedup": "infraestructura_electrica::Yaracuy::2026-09-25",
     "titulo": "Falla eléctrica en Municipio San Felipe, Yaracuy",
     "texto": "📌 Falla eléctrica en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 25/09/2026, 5:30 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/sucesos/hombre-electrocutado-cable-yaracuy/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": "Torres",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/",
-        "fecha": "2026-09-25T16:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T16:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
-    "fecha_deteccion": "2026-09-25T23:18:40.100868+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-24",
-    "titulo": "Falla eléctrica en Municipio Torres, Lara",
-    "texto": "📌 Falla eléctrica en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 25/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:18 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/"
   },
   {
     "tipo": "salud_publica",
@@ -190,32 +221,6 @@
     "clave_dedup": "vialidad::Monagas::2026-09-25",
     "titulo": "Incidente vial en Municipio Maturín, Monagas",
     "texto": "📌 Incidente vial en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 25/09/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-heridos-deja-colision-multiple-en-la-avenida-libertador-de-maturin/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/",
-        "fecha": "2026-09-25T17:40:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T17:40:11+00:00",
-    "fecha_evento_temprana": "2026-09-25T17:40:11+00:00",
-    "fecha_deteccion": "2026-09-25T20:02:57.124725+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-25",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/09/2026, 1:40 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/25/venezuela-sale-a-la-calle-para-exigir-el-regreso-de-maria-corina-machado-dijo-omar-gonzalez-moreno/"
   },
   {
     "tipo": "infraestructura_electrica",
