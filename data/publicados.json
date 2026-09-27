@@ -20,27 +20,6 @@
     "fecha_evento_temprana": "2026-09-24T18:29:51+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Guarico::2026-09-24": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T15:26:47.731266+00:00",
-    "fecha_evento_temprana": "2026-09-24T14:06:30+00:00",
-    "municipio": "Camaguan"
-  },
-  "infraestructura_electrica::Monagas::2026-09-24": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T15:27:35.092457+00:00",
-    "fecha_evento_temprana": "2026-09-24T13:57:07+00:00",
-    "municipio": null
-  },
-  "incendio::Distrito Capital::2026-09-24": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T15:27:39.307515+00:00",
-    "fecha_evento_temprana": "2026-09-24T15:05:02+00:00",
-    "municipio": "Libertador"
-  },
   "infraestructura_electrica::Miranda::2026-09-24": {
     "severidad": "alto",
     "confirmado": false,
@@ -224,10 +203,38 @@
     "municipio": null
   },
   "orden_publico::Cojedes::2026-09-27": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-27T19:13:13.784892+00:00",
+    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
+    "municipio": null
+  },
+  "inundacion::Bolivar::2026-09-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
+    "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
+    "municipio": null
+  },
+  "incendio::Miranda::2026-09-27": {
     "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-27T15:22:58.350711+00:00",
-    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
+    "fecha_deteccion": "2026-09-27T19:12:26.538961+00:00",
+    "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
+    "municipio": "Sucre"
+  },
+  "infraestructura_electrica::Guarico::2026-09-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T19:12:56.731295+00:00",
+    "fecha_evento_temprana": "2026-09-27T16:40:18+00:00",
+    "municipio": "Ortiz"
+  },
+  "infraestructura_electrica::Cojedes::2026-09-27": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T19:13:39.446585+00:00",
+    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
     "municipio": null
   }
 }

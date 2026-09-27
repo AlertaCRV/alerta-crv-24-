@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-27T15:23:00.188201+00:00",
+  "actualizado": "2026-09-27T19:13:41.636868+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-27T14:20:43+00:00"
+    "hasta": "2026-09-27T19:00:00+00:00"
   },
-  "total_eventos": 450,
+  "total_eventos": 455,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 68,
-    "infraestructura_electrica": 127,
+    "inundacion": 69,
+    "infraestructura_electrica": 129,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 99,
+    "orden_publico": 100,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 39,
+    "incendio": 40,
     "vialidad": 17,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -105,11 +105,11 @@
     },
     {
       "estado": "Bolivar",
-      "total": 19,
+      "total": 20,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 5,
-        "medio": 10,
+        "medio": 11,
         "critico": 1,
         "alto": 2,
         "sin_clasificar": 1
@@ -129,6 +129,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Miranda",
+      "total": 19,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 4,
+        "medio": 5,
+        "critico": 4,
+        "bajo": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Monagas",
       "total": 18,
       "confirmados": 0,
@@ -138,18 +150,6 @@
         "alto": 5
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Miranda",
-      "total": 18,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 4,
-        "medio": 5,
-        "critico": 4,
-        "bajo": 5
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Yaracuy",
@@ -272,10 +272,10 @@
     },
     {
       "estado": "Guarico",
-      "total": 7,
+      "total": 8,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 4,
+        "medio": 5,
         "alto": 2,
         "critico": 1
       },
@@ -283,12 +283,14 @@
     },
     {
       "estado": "Cojedes",
-      "total": 2,
-      "confirmados": 0,
+      "total": 4,
+      "confirmados": 1,
       "por_severidad": {
-        "bajo": 2
+        "bajo": 2,
+        "medio": 1,
+        "alto": 1
       },
-      "severidad_dominante": "bajo"
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -395,7 +397,7 @@
       "orden_publico": 4,
       "escasez_combustible": 2,
       "incendio": 2,
-      "inundacion": 1,
+      "inundacion": 2,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -426,7 +428,7 @@
       "orden_publico": 2
     },
     "Miranda": {
-      "incendio": 2,
+      "incendio": 3,
       "infraestructura_electrica": 4,
       "explosion": 1,
       "inundacion": 5,
@@ -478,7 +480,7 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 1
     },
     "Portuguesa": {
@@ -489,7 +491,8 @@
       "infraestructura_agua": 1
     },
     "Cojedes": {
-      "orden_publico": 2
+      "orden_publico": 3,
+      "infraestructura_electrica": 1
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
@@ -508,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 97,
+    "alto": 98,
     "critico": 51,
-    "medio": 171,
-    "bajo": 121,
+    "medio": 174,
+    "bajo": 122,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -523,12 +526,12 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 13
+      "2026-09": 14
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 60
+      "2026-09": 62
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -543,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 53
+      "2026-09": 54
     },
     "salud_publica": {
       "2026-07": 1,
@@ -558,7 +561,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 17
+      "2026-09": 18
     },
     "vialidad": {
       "2026-08": 10,

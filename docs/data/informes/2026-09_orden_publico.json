@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-09-26T01:50:28.625923+00:00",
-  "actualizado_hasta": "2026-09-26T01:45:37.492512+00:00",
-  "total_eventos": 53,
+  "generado": "2026-09-27T19:15:02.859874+00:00",
+  "actualizado_hasta": "2026-09-27T19:13:13.784892+00:00",
+  "total_eventos": 54,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 44,
-    "actual": 53
+    "actual": 54
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron 53 incidentes de orden público, frente a los 44 del mes anterior (agosto 2026). Este incremento refleja una mayor frecuencia de manifestaciones y actos de violencia en distintas regiones del país.\n\nEn Anzoátegui se reportó un caso de gravedad crítica cuando un oficial de la Policía Municipal de Sotillo asesinó a su pareja y a sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz (El Pitazo). En Guárico, una mujer de 45 años fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando herida (El Siglo (Aragua)). En el estado Portuguesa, la población de varios municipios, entre ellos Guanarito y San Rafael de Onoto, realizó protestas por los cortes eléctricos, bloqueando accesos y puentes como medida de presión (Portuguesa Reporta). Asimismo, en Aragua se registró un episodio de orden público de alta severidad, aunque los detalles específicos no fueron publicados en la fuente citada (El Pitazo).\n\nEn Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, generando una situación de alta tensión (El Siglo (Aragua)). En Zulia, dos incidentes de alta gravedad se dieron en la frontera con Colombia, donde familiares de un comerciante wayuu bloquearon el paso vehicular en Paraguachón, permitiendo solo el tránsito de peatones (El Pitazo); y, simultáneamente, manifestantes tomaron el puente sobre el río Torondoy en el eje Panamericano, paralizando la carretera 001 (Reporteros de Merida). En Táchira, vecinos del municipio Panamericano mantuvieron una tranca vial de 24 horas tras sufrir cortes de energía, impidiendo el tránsito de vehículos de carga y particulares (Diario La Nacion (Tachira)). Finalmente, en Mérida, habitantes del eje Panamericano tomaron nuevamente el puente sobre el río Torondoy en protesta por la crisis eléctrica, generando una interrupción del tráfico (Reporteros de Merida).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 54 incidentes de orden público, superando los 44 del mes anterior (2026‑08). Este incremento refleja una mayor frecuencia de manifestaciones y hechos violentos en distintas regiones del país.\n\nEn Anzoátegui, un oficial de la Policía Municipal de Sotillo perpetró un triple homicidio contra su pareja y sus dos hijastras en el sector Lomas del Sol de Puerto La Cruz, generando conmoción en la zona norte del estado (El Pitazo). En Guárico, una mujer de 45 años fue atacada con arma blanca en el sector Las Garcitas de Valle de la Pascua, resultando herida tras una discusión con el agresor (El Siglo (Aragua)).\n\nEn el estado Portuguesa, la población de los municipios Guanarito, San Rafael de Onoto y Araure realizó protestas bloqueando accesos y puentes para exigir la restitución del suministro eléctrico, tras cortes que se prolongan hasta ocho horas diarias (Portuguesa Reporta). En Aragua, la violencia se manifestó con otro hecho grave cuando un exdirigente estudiantil asesinó a una mujer a puñaladas en Valle de la Pascua (El Pitazo). En Bolívar, una turba irrumpió en una comisaría de El Manteco y secuestró a un sujeto acusado de asesinar a su hijo, dejándolo desaparecido (El Siglo (Aragua)).\n\nEn Zulia, familiares de un comerciante wayuu bloquearon el paso vehicular en la frontera de Paraguachón, permitiendo solo el tránsito de peatones como forma de protesta (El Pitazo). Otro episodio de orden público en el mismo estado fue reportado por Reporteros de Merida, donde manifestantes tomaron el puente sobre el río Torondoy, paralizando la carretera 001 entre Zulia y Mérida (Reporteros de Merida).\n\nEn Táchira, vecinos del municipio Panamericano mantuvieron una tranca vial que bloqueó la principal vía del norte del estado durante más de 24 horas, denunciando la escasez de energía eléctrica (Diario La Nacion (Tachira)). En Mérida, habitantes del eje Panamericano tomaron nuevamente el puente sobre el río Torondoy, protestando contra los constantes cortes de luz que afectan a la comunidad (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -64,6 +64,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/09/24/video-trabajadores-activos-y-jubilados-marchan-en-caracas-por-salarios-y-pensiones-dignas-24sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/"
     },
     {
       "nombre": "El Pitazo",
@@ -120,10 +124,6 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/locales/pacientes-renales-gasoil-dialisis/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/detienen-a-susan-sarandon-y-hannah-einbinder-en-protesta-contra-netanyahu/"
     },
     {
       "nombre": "La Verdad (Zulia)",
