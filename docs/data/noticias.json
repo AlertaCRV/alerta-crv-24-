@@ -53,8 +53,8 @@
   },
   {
     "tipo": "orden_publico",
-    "ubicacion": "Sucre",
-    "municipio": "Mariño",
+    "ubicacion": "Aragua",
+    "municipio": "Santiago Mariño",
     "parroquia": null,
     "severidad": "medio",
     "score": 0.55,
@@ -73,9 +73,9 @@
     "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
     "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Sucre::2026-09-27",
-    "titulo": "Orden público en Municipio Mariño, Sucre",
-    "texto": "📌 Orden público en Municipio Mariño, Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Mariño, Sucre\n🕒 Hecho reportado: 27/09/2026, 2:35 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
+    "clave_dedup": "orden_publico::Aragua::2026-09-27",
+    "titulo": "Orden público en Municipio Santiago Mariño, Aragua",
+    "texto": "📌 Orden público en Municipio Santiago Mariño, Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Santiago Mariño, Aragua\n🕒 Hecho reportado: 27/09/2026, 2:35 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -136,8 +136,8 @@
   },
   {
     "tipo": "inundacion",
-    "ubicacion": "Bolivar",
-    "municipio": null,
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
     "parroquia": null,
     "severidad": "medio",
     "score": 0.55,
@@ -156,9 +156,9 @@
     "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
     "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Bolivar::2026-09-27",
-    "titulo": "Inundación en Bolivar",
-    "texto": "📌 Inundación en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 27/09/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/"
+    "clave_dedup": "inundacion::Barinas::2026-09-27",
+    "titulo": "Inundación en Municipio Barinas, Barinas",
+    "texto": "📌 Inundación en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/09/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/"
   },
   {
     "tipo": "infraestructura_electrica",
