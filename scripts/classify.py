@@ -45,10 +45,20 @@ LISTA_NEGRA_POR_ESTADO = {
     # Bolivar de Bogota, disparaba tipo=sismo critico en el estado Bolivar
     # (Venezuela) porque "plaza bolivar" (sin "de") ya estaba cubierto, pero
     # esta variante con "de" interpuesto no coincidia con esa frase exacta.
+    # Ampliada (auditoria diaria, 27-09-2026): "Centro de Educacion Inicial
+    # Nacional Bolivar" (acronimo CEINBolivar) es el nombre oficial de una
+    # escuela en Ciudad Varyna, estado Barinas -- un articulo real de La
+    # Noticia de Barinas sobre el desbordamiento de aguas servidas en esa
+    # escuela ("del municipio Barinas") generaba una alerta de inundacion
+    # en el estado Bolivar en vez de Barinas, la unica mencion de "Bolivar"
+    # en todo el articulo es el nombre de la escuela. Sin remapeo posible
+    # (el nombre de una escuela no es evidencia de ningun estado real): se
+    # descarta directamente, igual que "aeropuerto"/"moneda".
     "Bolivar": ["simon bolivar", "plaza bolivar", "plaza de bolivar",
                 "avenida bolivar", "avenidas bolivar",
                 "aeropuerto", "moneda", "billete de", "banco central",
-                "libertador simon bolivar"],
+                "libertador simon bolivar",
+                "centro de educacion inicial nacional bolivar"],
     # Ampliada (auditoria diaria, 26-09-2026): "avenida Sucre" es una via
     # muy comun (Carrizal, Miranda; Barcelona, Anzoategui...) sin relacion
     # con el estado Sucre -- un articulo real sobre las lluvias del 24-09-2026
@@ -2683,6 +2693,28 @@ def _ventana_sin_evidencia_local_especifica(ventana):
     return not (_contiene_palabra_clave(ventana, "municipio") or _contiene_palabra_clave(ventana, "parroquia"))
 
 
+# Barinas, Falcon y Trujillo tienen un municipio (la capital del propio
+# estado) con el MISMO nombre que el estado -- a diferencia de "municipio
+# Sucre" (que puede ser Sucre, Miranda, Aragua, etc. -- ver
+# LISTA_NEGRA_POR_ESTADO/_REMAPEO_MUNICIPIO_A_ESTADO, con colision real ya
+# cubierta) o "municipio Bolivar" (tambien ambiguo, ver
+# LISTA_NEGRA_POR_ESTADO["Bolivar"]), estos 3 nombres de municipio son
+# EXCLUSIVOS de su propio estado a nivel nacional (verificado contra
+# config/ubicaciones_detalle.json: ningun otro estado tiene un municipio
+# con ese nombre) -- "municipio Barinas"/"municipio Falcon"/"municipio
+# Trujillo" nunca puede ser una mencion subestatal ambigua de OTRO estado,
+# a diferencia del caso general que _es_mencion_subestatal existe para
+# filtrar. Caso real (auditoria diaria, 27-09-2026): un articulo de La
+# Noticia de Barinas ("Aguas servidas corren por el CEINBolivar en Ciudad
+# Varyna... en la urbanizacion Ciudad Varyna, del municipio Barinas") nunca
+# nombra el estado Barinas de otra forma -- _es_mencion_subestatal excluia
+# esa unica mencion por estar precedida de "municipio", y el estado Barinas
+# nunca se detectaba (la unica ubicacion detectada era Bolivar, por la
+# mencion incidental de "Centro de Educacion Inicial Nacional Bolivar", el
+# nombre oficial de la escuela -- ver LISTA_NEGRA_POR_ESTADO["Bolivar"]).
+_ESTADOS_MUNICIPIO_HOMONIMO_EXCLUSIVO = {"Barinas", "Falcon", "Trujillo"}
+
+
 def _detectar_ubicacion_texto_plano(texto, estados):
     texto_norm = _normalizar(texto)
     palabras_tipo = [p for lista in load_keywords()["tipos"].values() for p in lista]
@@ -2756,7 +2788,10 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                 resultado.append((estado_real, ventana))
                 break
 
-            ventana, pos = _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posiciones_estados)
+            ventana, pos = _ventana_cerca_con_posicion(
+                tokens, candidato_norm, palabras_tipo, posiciones_estados,
+                permitir_subestatal=nombre_estado in _ESTADOS_MUNICIPIO_HOMONIMO_EXCLUSIVO,
+            )
             if ventana:
                 if (posiciones_marcadores
                         and _mencion_cerca_de_marcador(pos, posiciones_marcadores)
@@ -2817,10 +2852,26 @@ def _es_mencion_subestatal(tokens, pos):
     alerta duplicada en el estado Sucre. A diferencia del calificador
     singular, el plural NO se acepta en las posiciones de 1-2 tokens
     (ver comentario en _CALIFICADORES_SUBESTATALES_PLURAL) -- solo en
-    esta posicion especifica de conjuncion."""
+    esta posicion especifica de conjuncion, y en la adyacencia DIRECTA de
+    abajo (el primer nombre de la lista, justo despues del calificador).
+
+    Tambien cuenta 'municipios A, B y C' cuando A queda INMEDIATAMENTE
+    despues del calificador plural, sin "de" interpuesto -- a diferencia
+    de "N municipios DE Estado" (ver comentario en
+    _CALIFICADORES_SUBESTATALES_PLURAL), donde el token justo antes del
+    nombre del estado es "de", no el calificador mismo. Caso real
+    (auditoria diaria, 27-09-2026): "los municipios Sucre, Mariño y
+    Francisco Linares Alcántara" (El Siglo, region araguena) -- los tres
+    son municipios reales de Aragua, pero "Sucre" tambien es el nombre de
+    otro estado; sin este chequeo, el primer nombre de una lista de 3+
+    municipios nunca calzaba con el patron existente (pensado solo para
+    listas de 2, "A y B"), y generaba una alerta falsa en el estado
+    Sucre."""
     if pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES:
         return True
     if pos > 1 and tokens[pos - 2] in _CALIFICADORES_SUBESTATALES:
+        return True
+    if pos > 0 and tokens[pos - 1] in _CALIFICADORES_SUBESTATALES_PLURAL:
         return True
     return (
         pos > 2

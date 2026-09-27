@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-27T22:23:14.308142+00:00",
+  "actualizado": "2026-09-27T23:32:07.953872+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-27T20:46:02+00:00"
@@ -69,11 +69,11 @@
     },
     {
       "estado": "Barinas",
-      "total": 30,
+      "total": 31,
       "confirmados": 1,
       "por_severidad": {
         "alto": 4,
-        "medio": 13,
+        "medio": 14,
         "bajo": 8,
         "critico": 5
       },
@@ -81,11 +81,11 @@
     },
     {
       "estado": "Aragua",
-      "total": 25,
+      "total": 26,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
-        "medio": 7,
+        "medio": 8,
         "alto": 6,
         "critico": 5
       },
@@ -104,19 +104,6 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Bolivar",
-      "total": 20,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 11,
-        "critico": 1,
-        "alto": 2,
-        "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Miranda",
       "total": 20,
       "confirmados": 2,
@@ -125,6 +112,19 @@
         "medio": 6,
         "critico": 4,
         "bajo": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Bolivar",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 10,
+        "critico": 1,
+        "alto": 2,
+        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -200,17 +200,6 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Sucre",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 6,
-        "bajo": 6,
-        "alto": 2
-      },
-      "severidad_dominante": "alto"
-    },
-    {
       "estado": "Trujillo",
       "total": 13,
       "confirmados": 0,
@@ -220,6 +209,17 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Sucre",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 2
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -370,7 +370,7 @@
     },
     "Barinas": {
       "deslizamiento": 3,
-      "inundacion": 5,
+      "inundacion": 6,
       "infraestructura_electrica": 10,
       "vialidad": 4,
       "orden_publico": 6,
@@ -379,7 +379,7 @@
     },
     "Sucre": {
       "inundacion": 2,
-      "orden_publico": 6,
+      "orden_publico": 5,
       "infraestructura_electrica": 5,
       "infraestructura_agua": 1
     },
@@ -397,7 +397,7 @@
       "orden_publico": 4,
       "escasez_combustible": 2,
       "incendio": 2,
-      "inundacion": 2,
+      "inundacion": 1,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -458,7 +458,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 7,
+      "orden_publico": 8,
       "inundacion": 8,
       "infraestructura_electrica": 4,
       "accidente_transporte": 1,

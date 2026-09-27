@@ -9509,3 +9509,113 @@ ubicación vieja de las fuentes ya corregidas -- se resolvieron solos al
 actualizar `data/historico_fuentes_texto.jsonl`). `python3
 scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
 `docs/data/estadisticas.json` regenerado.
+
+## Auditoría diaria (27-09-2026)
+
+Auditoría de rutina sobre las alertas publicadas en las últimas ~48 horas
+(25 al 27-09-2026, 30 alertas activas de `docs/data/noticias.json`, todas
+`APROBADO_IA`, ninguna `PASADO_POR_FALLA_TECNICA`). Se encontraron y
+corrigieron 2 hallazgos de fondo (2 alertas afectadas):
+
+- **Primer nombre de una lista de 3+ municipios homónimos de un estado
+  distinto**: `orden_publico::Sucre::2026-09-27` (El Siglo (Aragua),
+  "Vecinos de Turmero denuncian hasta 10 horas sin servicio eléctrico...
+  en la región aragüeña... los municipios Sucre, Mariño y Francisco
+  Linares Alcántara registraron el mayor número de estos eventos") es un
+  artículo 100% sobre Aragua (nunca nombra la palabra "Aragua" en sí,
+  solo el demónimo "aragüeña") -- los tres municipios listados son reales
+  y propios de Aragua, pero "Sucre" también es el nombre de otro estado.
+  `_es_mencion_subestatal()` ya excluía "municipio Sucre"/"municipios
+  Pedraza y Sucre" (el patrón "A y B", el SEGUNDO nombre de una lista de
+  2), pero el PRIMER nombre de una lista de 3+ (justo después del
+  calificador plural "municipios", sin "y" antes) nunca calzaba con
+  ningún patrón existente -- eso bastaba para publicar la alerta en el
+  estado Sucre en vez de Aragua, con `municipio: "Mariño"` (que tampoco
+  resolvía al municipio real "Santiago Mariño" de Aragua, porque ese
+  municipio no tenía registrado el alias corto "Mariño" en
+  `config/ubicaciones_detalle.json` -- solo Nueva Esparta tiene un
+  municipio llamado literalmente "Mariño").
+- **Nombre de escuela homónimo de un estado bloqueando la detección del
+  estado real**: `inundacion::Bolivar::2026-09-27` (La Noticia de
+  Barinas, "Aguas servidas corren por el CEINBolívar en Ciudad Varyná...
+  Centro de Educación Inicial Nacional Bolívar... del municipio Barinas")
+  es un hecho real en el estado Barinas -- la única mención de "Bolívar"
+  en todo el artículo es el nombre oficial de una escuela, y la única
+  mención de "Barinas" es "del municipio Barinas", excluida por
+  `_es_mencion_subestatal()` (diseñada para evitar confundir un municipio
+  homónimo de OTRO estado con el estado, no el caso autoreferencial de la
+  capital homónima del propio estado -- Barinas, Falcón, Sucre y Trujillo
+  son los 4 estados con un municipio del mismo nombre). El resultado: el
+  estado real (Barinas) nunca se detectaba, y el nombre de la escuela
+  bastaba para publicar la alerta en el estado Bolívar.
+
+**Corrección** (`scripts/classify.py`): en `_es_mencion_subestatal()`, se
+agregó el chequeo de adyacencia directa `tokens[pos-1] in
+_CALIFICADORES_SUBESTATALES_PLURAL` (sin "de" interpuesto) para cubrir el
+primer nombre de una lista de 3+, a diferencia de "N municipios DE
+Estado" (donde el token justo antes del nombre es "de", no el
+calificador) -- se verificó que este patrón no afecta ese caso ya
+cubierto. En `config/ubicaciones_detalle.json`, se agregó `"alias":
+"Mariño"` al municipio "Santiago Mariño" de Aragua (mismo patrón ya usado
+para nombres oficiales largos con una forma corta de uso común, ver
+"Autónomo X"/"Bolivariano X" en el mismo archivo) -- solo afecta la
+resolución DENTRO de Aragua ya determinada, sin crear ambigüedad global
+(la búsqueda directa sin "municipio" delante sigue excluyendo "Mariño"
+por ambigüedad, ya que también es municipio real de Nueva Esparta y
+Sucre). En `config/estados.yaml`, se agregó el demónimo "aragüeña"/
+"aragüeño" (con y sin tilde) como alias de Aragua, mismo patrón ya usado
+para "monaguense" (Monagas). Se agregó un nuevo conjunto
+`_ESTADOS_MUNICIPIO_HOMONIMO_EXCLUSIVO = {"Barinas", "Falcon",
+"Trujillo"}` -- verificado contra `config/ubicaciones_detalle.json` que
+estos 3 nombres de municipio son EXCLUSIVOS de su propio estado a nivel
+nacional (a diferencia de "municipio Sucre"/"municipio Bolivar", ambiguos
+y ya cubiertos por mecanismos de remapeo/lista negra existentes) -- para
+estos 3 estados, `_detectar_ubicacion_texto_plano()` ahora pasa
+`permitir_subestatal=True` a `_ventana_cerca_con_posicion()`, permitiendo
+que "municipio Barinas"/"municipio Falcón"/"municipio Trujillo" cuenten
+como evidencia válida del propio estado. Se agregó
+`"centro de educacion inicial nacional bolivar"` a
+`LISTA_NEGRA_POR_ESTADO["Bolivar"]` (sin remapeo posible, igual que
+"aeropuerto"/"moneda"). Se verificó con una regresión completa contra los
+515 registros de fuente individuales de `data/historico_fuentes_texto.jsonl`
+(antes/después de los 4 cambios, con `PYTHONHASHSEED=0` para evitar ruido
+de iteración sobre sets): únicamente cambiaron de clasificación las 2
+fuentes de los 2 casos corregidos, ninguna otra fuente del corpus se vio
+afectada -- en particular, se confirmó con un caso de control que
+"municipio Sucre" en Petare (estado Miranda) sigue sin generar una alerta
+duplicada en el estado Sucre (Sucre se excluyó deliberadamente de
+`_ESTADOS_MUNICIPIO_HOMONIMO_EXCLUSIVO` por esa colisión ya conocida), y
+que un sismo real y explícito en "estado Bolívar" sigue publicándose sin
+cambios.
+
+**Corrección retroactiva**: se corrigieron `ubicacion`/`municipio` (sin
+eliminar los eventos, que son reales) en `docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json` -- `orden_publico::Sucre::2026-09-27` →
+`orden_publico::Aragua::2026-09-27` (`municipio: "Mariño"` →
+`"Santiago Mariño"`) e `inundacion::Bolivar::2026-09-27` →
+`inundacion::Barinas::2026-09-27` (`municipio: null` → `"Barinas"`),
+regenerando `titulo`/`texto` con `render.redactar_noticia()`. Se
+regeneró `docs/data/estadisticas.json` con `python3
+scripts/build_dashboard.py`. Ningún informe narrativo en
+`docs/data/informes/` referenciaba ninguna de las 2 fuentes retractadas.
+
+**Pendiente de discutir**: sigue sin resolverse el caso ya documentado en
+la auditoría del 26-09-2026 (`infraestructura_electrica::
+Portuguesa::2026-09-23`, publicado con `municipio: "Sucre"` cuando en
+realidad corresponde a Barinas) -- el fix correcto (acotar
+`_MUNICIPIO_RE`/`_buscar_municipio_directo` a la ventana de proximidad
+del estado) sigue pendiente de una revisión dedicada, no relacionado con
+los 2 hallazgos de esta sesión pese a la coincidencia temática (ambigüedad
+de "municipio X" entre estados).
+
+### Pruebas
+
+6 casos nuevos en `tests/casos_clasificacion.jsonl` (2 reales + 4
+controles). `PYTHONHASHSEED=0 python3 -m pytest tests/` → 928 passed, 8
+xfailed (conocidos), 5 xpassed (conocidos), sin fallas inesperadas tras la
+corrección retroactiva (los 2 casos que fallaban por diseño -- fijaban la
+ubicación vieja de las fuentes ya corregidas -- se resolvieron solos al
+actualizar `data/historico_fuentes_texto.jsonl`). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado.

@@ -195,13 +195,6 @@
     "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
     "municipio": null
   },
-  "inundacion::Bolivar::2026-09-27": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
-    "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
-    "municipio": null
-  },
   "incendio::Miranda::2026-09-27": {
     "severidad": "medio",
     "confirmado": false,
@@ -230,11 +223,18 @@
     "fecha_evento_temprana": "2026-09-27T20:46:02+00:00",
     "municipio": null
   },
-  "orden_publico::Sucre::2026-09-27": {
+  "orden_publico::Aragua::2026-09-27": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
     "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
-    "municipio": "Mariño"
+    "municipio": "Santiago Mariño"
+  },
+  "inundacion::Barinas::2026-09-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
+    "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
+    "municipio": "Barinas"
   }
 }
