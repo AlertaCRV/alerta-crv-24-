@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-09-27T19:13:41.636868+00:00",
+  "actualizado": "2026-09-27T22:23:14.308142+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-27T19:00:00+00:00"
+    "hasta": "2026-09-27T20:46:02+00:00"
   },
-  "total_eventos": 455,
+  "total_eventos": 460,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
-    "infraestructura_electrica": 129,
+    "infraestructura_electrica": 130,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 100,
+    "orden_publico": 102,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 40,
+    "incendio": 41,
     "vialidad": 17,
     "sismo": 7,
     "escasez_combustible": 2,
@@ -24,18 +24,18 @@
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
-    "emergencia_metro": 1,
+    "emergencia_metro": 2,
     "motin_carcelario": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 73,
+      "total": 74,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 22,
-        "bajo": 22,
+        "bajo": 23,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -117,6 +117,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Miranda",
+      "total": 20,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 4,
+        "medio": 6,
+        "critico": 4,
+        "bajo": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Tachira",
       "total": 19,
       "confirmados": 0,
@@ -125,18 +137,6 @@
         "bajo": 3,
         "medio": 6,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Miranda",
-      "total": 19,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 4,
-        "medio": 5,
-        "critico": 4,
-        "bajo": 6
       },
       "severidad_dominante": "critico"
     },
@@ -200,6 +200,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Sucre",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "bajo": 6,
+        "alto": 2
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Trujillo",
       "total": 13,
       "confirmados": 0,
@@ -209,17 +220,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Sucre",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 6,
-        "alto": 2
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -283,12 +283,12 @@
     },
     {
       "estado": "Cojedes",
-      "total": 4,
-      "confirmados": 1,
+      "total": 6,
+      "confirmados": 2,
       "por_severidad": {
-        "bajo": 2,
+        "bajo": 3,
         "medio": 1,
-        "alto": 1
+        "alto": 2
       },
       "severidad_dominante": "alto"
     },
@@ -356,7 +356,7 @@
       "infraestructura_electrica": 14,
       "colapso_estructural": 1,
       "sismo": 1,
-      "emergencia_metro": 1,
+      "emergencia_metro": 2,
       "crisis_migratoria": 1,
       "salud_publica": 1
     },
@@ -379,7 +379,7 @@
     },
     "Sucre": {
       "inundacion": 2,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "infraestructura_electrica": 5,
       "infraestructura_agua": 1
     },
@@ -428,7 +428,7 @@
       "orden_publico": 2
     },
     "Miranda": {
-      "incendio": 3,
+      "incendio": 4,
       "infraestructura_electrica": 4,
       "explosion": 1,
       "inundacion": 5,
@@ -491,8 +491,8 @@
       "infraestructura_agua": 1
     },
     "Cojedes": {
-      "orden_publico": 3,
-      "infraestructura_electrica": 1
+      "orden_publico": 4,
+      "infraestructura_electrica": 2
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
@@ -511,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 98,
+    "alto": 99,
     "critico": 51,
-    "medio": 174,
-    "bajo": 122,
+    "medio": 176,
+    "bajo": 124,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 62
+      "2026-09": 63
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 54
+      "2026-09": 56
     },
     "salud_publica": {
       "2026-07": 1,
@@ -561,7 +561,7 @@
     "incendio": {
       "2026-07": 3,
       "2026-08": 19,
-      "2026-09": 18
+      "2026-09": 19
     },
     "vialidad": {
       "2026-08": 10,
@@ -597,7 +597,8 @@
       "2026-08": 1
     },
     "emergencia_metro": {
-      "2026-08": 1
+      "2026-08": 1,
+      "2026-09": 1
     },
     "motin_carcelario": {
       "2026-09": 1

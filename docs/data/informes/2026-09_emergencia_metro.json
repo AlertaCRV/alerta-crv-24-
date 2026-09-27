@@ -3,23 +3,19 @@
   "tipo": "emergencia_metro",
   "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
   "cerrado": false,
-  "generado": "2026-09-14T01:48:23.531295+00:00",
-  "actualizado_hasta": "2026-09-13T21:50:11.814026+00:00",
-  "total_eventos": 2,
+  "generado": "2026-09-27T22:23:19.074690+00:00",
+  "actualizado_hasta": "2026-09-27T22:21:56.360448+00:00",
+  "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
-    "anterior": 2,
-    "actual": 2
+    "anterior": 1,
+    "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron dos eventos en la categoría de Emergencia en el Metro/Metrocable/Teleférico, igual que en el mes anterior de agosto (2 evento(s) registrados entonces vs. 2 en este período). \n\nEl primer hecho reportado corresponde al robo de una cartera en el Centro Comercial El Recreo, en Caracas, ocurrido el 12 de septiembre, perpetrado por una banda de mujeres que operan con frecuencia en espacios cerrados como centros comerciales (El Pitazo). La víctima describió el modus operandi y señaló que el personal de la tienda donde sucedió el incidente confirmó la regularidad de estos robos. \n\nEl segundo informe se refiere a una solicitud de concluir las obras del Metro de Caracas y de realizar auditorías viales para mejorar la circulación de aproximadamente 400.000 vehículos diarios en la avenida Libertador, según declaraciones del presidente de la Comisión de Infraestructura de la Academia Nacional de Ingeniería y Hábitat (Turimiquire). La propuesta incluye evaluar la mezcla asfáltica, solucionar fallas de borde y extender el tramo deprimido, con el objetivo de reducir el congestionamiento vehicular. \n\nAunque ninguno de los dos reportes describe un accidente o incidente de seguridad directamente relacionado con el funcionamiento del Metro, Metrocable o Teleférico, la autoridad de la Cruz Roja Venezolana mantiene la vigilancia y el registro de cualquier eventualidad que pueda afectar la movilidad urbana y la seguridad de los usuarios.",
+  "narrativa": "En el mes de septiembre de 2026 se registró un solo evento de emergencia en el sistema de transporte urbano de Caracas, idéntico al número de incidentes reportados en el mes anterior (1 evento(s) registrados entonces vs. 1 en este período). Este dato refleja una estabilidad en la frecuencia de incidentes dentro de la categoría de emergencias en el Metro/Metrocable/Teleférico.\n\nEl único hecho ocurrido fue la agresión a una trabajadora del Metro de Caracas en la estación Gato Negro, donde la empleada intentó impedir el ingreso de una usuaria que portaba un perro, pese a que las mascotas están prohibidas en el sistema (La Verdad). Según el video difundido en redes sociales, la discusión se originó cuando la usuaria fue informada de la prohibición y continuó avanzando hacia las escaleras con el animal en brazos, lo que llevó a la trabajadora a intentar detenerla (La Verdad). El incidente tuvo lugar un domingo y fue capturado por testigos que luego compartieron el material en plataformas digitales (La Verdad).\n\nAnte los hechos, la administración del Metro de Caracas emitió un comunicado rechazando la agresión sufrida por su personal y reiteró la normativa que prohíbe la presencia de mascotas en las instalaciones (La Verdad). La entidad señaló que tomará las medidas necesarias para garantizar la seguridad de sus empleados y el cumplimiento de las reglas de uso del sistema, sin que se reporten heridos ni víctimas fatales en este episodio (La Verdad).",
   "fuentes": [
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/sucesos/caracas-victima-detalla-como-opera-banda-de-mujeres-que-roba-carteras-en-el-c-c-el-recreo/"
-    },
-    {
-      "nombre": "Turimiquire (Sucre)",
-      "link": "https://turimiquire.net/2026/09/07/hay-que-concluir-las-obras-de-el-metro-y-realizar-auditorias-viales-en-caracas-dijo-riad-bujana/"
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/metro-de-caracas-rechaza-agresion-a-trabajadora-en-la-estacion-gato-negro/"
     }
   ]
 }
