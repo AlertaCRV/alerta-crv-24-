@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-26T19:14:40.988663+00:00",
+  "actualizado": "2026-09-26T23:29:09.233266+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-26T14:40:48+00:00"
   },
-  "total_eventos": 452,
+  "total_eventos": 447,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 68,
-    "infraestructura_electrica": 130,
+    "inundacion": 67,
+    "infraestructura_electrica": 127,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 99,
+    "orden_publico": 98,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 39,
@@ -116,18 +116,6 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Miranda",
-      "total": 19,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 4,
-        "medio": 5,
-        "critico": 4,
-        "bajo": 6
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Tachira",
       "total": 18,
       "confirmados": 0,
@@ -151,6 +139,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Miranda",
+      "total": 18,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 4,
+        "medio": 5,
+        "critico": 4,
+        "bajo": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 18,
       "confirmados": 0,
@@ -158,17 +158,6 @@
         "medio": 5,
         "bajo": 4,
         "alto": 9
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Sucre",
-      "total": 17,
-      "confirmados": 2,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 6,
-        "alto": 3
       },
       "severidad_dominante": "alto"
     },
@@ -218,6 +207,17 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Sucre",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 2
+      },
+      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -374,9 +374,9 @@
       "salud_publica": 1
     },
     "Sucre": {
-      "inundacion": 3,
+      "inundacion": 2,
       "orden_publico": 5,
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 5,
       "infraestructura_agua": 1
     },
     "Anzoategui": {
@@ -428,7 +428,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 6
+      "orden_publico": 5
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -505,10 +505,10 @@
     }
   },
   "por_severidad": {
-    "alto": 96,
+    "alto": 95,
     "critico": 51,
-    "medio": 174,
-    "bajo": 121,
+    "medio": 171,
+    "bajo": 120,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -520,12 +520,12 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 13
+      "2026-09": 12
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 63
+      "2026-09": 60
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -540,7 +540,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 53
+      "2026-09": 52
     },
     "salud_publica": {
       "2026-07": 1,

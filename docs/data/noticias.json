@@ -55,7 +55,7 @@
     "tipo": "infraestructura_electrica",
     "ubicacion": "Barinas",
     "municipio": null,
-    "parroquia": "La Luz",
+    "parroquia": null,
     "severidad": "critico",
     "score": 0.75,
     "confirmado": false,
@@ -74,8 +74,8 @@
     "fecha_deteccion": "2026-09-26T06:44:13.107583+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "infraestructura_electrica::Barinas::2026-09-24",
-    "titulo": "Falla eléctrica en Parroquia La Luz, Barinas",
-    "texto": "📌 Falla eléctrica en Parroquia La Luz, Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia La Luz, Barinas\n🕒 Hecho reportado: 25/09/2026, 6:06 p.m.\n🔎 Detectado por el sistema: 26/09/2026, 2:44 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/"
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 25/09/2026, 6:06 p.m.\n🔎 Detectado por el sistema: 26/09/2026, 2:44 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -405,32 +405,6 @@
     "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 25/09/2026, 10:24 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 11:59 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/"
   },
   {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": "Lander",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/detienen-a-susan-sarandon-y-hannah-einbinder-en-protesta-contra-netanyahu/",
-        "fecha": "2026-09-25T14:13:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T14:13:53+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:13:53+00:00",
-    "fecha_deteccion": "2026-09-25T16:00:55.651196+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-25",
-    "titulo": "Orden público en Municipio Lander, Miranda",
-    "texto": "📌 Orden público en Municipio Lander, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Lander, Miranda\n🕒 Hecho reportado: 25/09/2026, 10:13 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 12:00 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/detienen-a-susan-sarandon-y-hannah-einbinder-en-protesta-contra-netanyahu/"
-  },
-  {
     "tipo": "incendio",
     "ubicacion": "Trujillo",
     "municipio": "Pampanito",
@@ -621,7 +595,7 @@
     "tipo": "orden_publico",
     "ubicacion": "Merida",
     "municipio": null,
-    "parroquia": "La Toma",
+    "parroquia": null,
     "severidad": "alto",
     "score": 0.65,
     "confirmado": false,
@@ -640,34 +614,8 @@
     "fecha_deteccion": "2026-09-25T06:02:56.113432+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Merida::2026-09-25",
-    "titulo": "Orden público en Parroquia La Toma, Merida",
-    "texto": "📌 Orden público en Parroquia La Toma, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia La Toma, Merida\n🕒 Hecho reportado: 24/09/2026, 10:31 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:02 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Sucre",
-    "municipio": "Sucre",
-    "parroquia": "Santa Inés",
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/24/lluvias-provocan-anegaciones-caida-de-arboles-y-fallas-electricas-en-caracas-y-miranda-24sep/",
-        "fecha": "2026-09-24T21:31:25+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T21:31:25+00:00",
-    "fecha_evento_temprana": "2026-09-24T21:31:25+00:00",
-    "fecha_deteccion": "2026-09-25T06:03:25.518381+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Sucre::2026-09-24",
-    "titulo": "Falla eléctrica en Parroquia Santa Inés, Municipio Sucre, Sucre",
-    "texto": "📌 Falla eléctrica en Parroquia Santa Inés, Municipio Sucre, Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Santa Inés, Municipio Sucre, Sucre\n🕒 Hecho reportado: 24/09/2026, 5:31 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:03 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/24/lluvias-provocan-anegaciones-caida-de-arboles-y-fallas-electricas-en-caracas-y-miranda-24sep/"
+    "titulo": "Orden público en Merida",
+    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 24/09/2026, 10:31 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:02 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html"
   },
   {
     "tipo": "inundacion",
@@ -777,32 +725,6 @@
     "clave_dedup": "orden_publico::Falcon::2026-09-24",
     "titulo": "Orden público en Falcon",
     "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 24/09/2026, 12:32 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/ya-basta-trabajadores-falconianos-en-pie-de-lucha-por-salario-justos/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/fuerte-aguacero-de-este-jueves-dejo-calles-y-avenidas-anegadas-en-puerto-la-cruz/",
-        "fecha": "2026-09-24T17:50:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T17:50:02+00:00",
-    "fecha_evento_temprana": "2026-09-24T17:50:02+00:00",
-    "fecha_deteccion": "2026-09-24T19:31:24.192990+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Sucre::2026-09-24",
-    "titulo": "Inundación en Sucre",
-    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 24/09/2026, 1:50 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:31 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/fuerte-aguacero-de-este-jueves-dejo-calles-y-avenidas-anegadas-en-puerto-la-cruz/"
   },
   {
     "tipo": "infraestructura_electrica",

@@ -9382,3 +9382,130 @@ corrección retroactiva (los 6 casos que fallaban por diseño -- fijaban la
 clasificación vieja de las fuentes ya corregidas -- se resolvieron solos
 al actualizar `data/historico_fuentes_texto.jsonl`).
 `python3 scripts/validar_configs.py` → OK.
+
+## Auditoría diaria (26-09-2026)
+
+Auditoría de rutina sobre las alertas publicadas en las últimas ~48 horas
+(23 al 26-09-2026, 30 alertas activas de `docs/data/noticias.json`, todas
+`APROBADO_IA`). Se encontraron y corrigieron 3 hallazgos de fondo (5
+alertas afectadas):
+
+- **`avenida Sucre`/`calles Sucre`, colisión con el estado Sucre**: dos
+  hallazgos independientes el mismo día. `infraestructura_electrica::
+  Sucre::2026-09-24` (El Impulso (Lara), cobertura real de lluvias en
+  Caracas/Miranda) mencionaba de pasada "el colapso de un muro perimetral
+  en la avenida Sucre" de Carrizal, municipio de Miranda -- sin relación
+  alguna con el estado Sucre, duplicaba la alerta ya correcta de Distrito
+  Capital/Miranda. `inundacion::Sucre::2026-09-24` (El Tiempo (Anzoátegui),
+  "Fuerte aguacero... dejó calles y avenidas anegadas en Puerto La Cruz")
+  listaba "Las calles Sucre, Libertad, Buenos Aires..." -- una lista de
+  vías anegadas en Puerto La Cruz, estado Anzoátegui, sin relación con el
+  estado Sucre. Mismo patrón de fondo ya cubierto para "avenida
+  bolivar"/"avenida carabobo" (`LISTA_NEGRA_POR_ESTADO`), pero nunca
+  extendido a Sucre.
+- **Personaje ficticio "Miranda" + apellido "Lander" en una protesta 100%
+  extranjera**: `orden_publico::Miranda::2026-09-25` (La Prensa de
+  Monagas, "Detienen a Susan Sarandon y Hannah Einbinder en protesta
+  contra Netanyahu") mencionaba de pasada "la actriz Cynthia Nixon,
+  reconocida por interpretar a Miranda en 'Sexo en Nueva York', y Brad
+  Lander, excontralor de la ciudad" -- una protesta en Nueva York, sin
+  ninguna relación con Venezuela. El personaje ficticio "Miranda" coincidía
+  con el nombre del estado y el apellido "Lander" coincidía, por
+  casualidad, con el municipio real Lander de Miranda -- juntos generaban
+  una alerta completa (estado + municipio) 100% infundada.
+- **Parroquias homónimas de palabras/frases comunes del español ("La Luz",
+  "La Toma")**: `_buscar_municipio_directo()`/`_buscar_parroquia_directa()`
+  ya excluían el nombre del país ("Venezuela") y el de otros estados como
+  evidencia directa (sin el calificador "parroquia"/"municipio" delante),
+  pero no frases coloquiales de uso diario que, por coincidencia, son
+  también el nombre oficial de una parroquia real y única a nivel
+  nacional. "la luz" (Parroquia La Luz, Municipio Obispos, Barinas) es la
+  forma casi universal de referirse al servicio eléctrico ("se fue la
+  luz", "protestar por la luz", "con la luz de las linternas") -- de las
+  39 apariciones de la frase en las 452 fuentes de
+  `data/historico_fuentes_texto.jsonl`, ninguna describe un hecho en esa
+  parroquia real; afectó 2 alertas (`orden_publico::Barinas::2026-08-20`,
+  ya fuera de la ventana activa, y `infraestructura_electrica::
+  Barinas::2026-09-24`, un artículo de El Pitazo sobre hospitales sin
+  respaldo eléctrico en varios estados que nunca nombra esa parroquia
+  para el caso de Barinas). "la toma" ("la toma anterior", "la toma de
+  los portones") es igual de genérico en coberturas de protestas y
+  coincide con la Parroquia La Toma, Municipio Rangel, Mérida -- afectó
+  `orden_publico::Merida::2026-09-25` (Reporteros de Mérida, protesta real
+  en el puente sobre el río Torondoy, zona limítrofe Zulia/Mérida, sin
+  relación con el municipio Rangel).
+
+**Corrección** (`scripts/classify.py`): se agregaron "avenida sucre",
+"avenidas sucre", "calle sucre" y "calles sucre" a
+`LISTA_NEGRA_POR_ESTADO["Sucre"]`; se agregó "interpretar a miranda en" a
+`LISTA_NEGRA_POR_ESTADO["Miranda"]` (sin remapeo posible -- un hecho 100%
+extranjero se descarta directamente, igual que "aeropuerto"/"moneda" para
+Bolívar/Sucre); y se agregó un nuevo conjunto
+`_NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO = {"la luz", "la toma"}`, seguido
+en `_buscar_parroquia_directa()` (ambas ramas: municipio ya conocido y
+municipio desconocido) junto al chequeo ya existente de
+`_NOMBRE_PAIS_NORM`/`_nombres_estados_norm()` -- la exclusión solo aplica
+a la búsqueda DIRECTA (sin el calificador "parroquia" delante); una
+mención explícita y real ("parroquia La Luz"/"parroquia La Toma") se
+evalúa antes, vía `_PARROQUIA_RE`, y sigue funcionando sin cambios (se
+verificó con 2 casos de control sintéticos). Se verificó contra las 452
+fuentes de `data/historico_fuentes_texto.jsonl` que las 4 frases de lista
+negra de Sucre y la frase de Miranda son exclusivas de sus artículos, y
+con 2 casos de control reales (un sismo real en Sucre, un incendio real
+en Petare vía "municipio Sucre" de Miranda) que siguen publicándose sin
+cambios.
+
+**Corrección retroactiva**: se eliminaron por completo
+`infraestructura_electrica::Sucre::2026-09-24`, `inundacion::
+Sucre::2026-09-24` y `orden_publico::Miranda::2026-09-25` de los 4
+archivos de datos (`docs/data/noticias.json`,
+`data/historico_eventos.jsonl`, `data/historico_fuentes_texto.jsonl` y
+`data/publicados.json`). Se corrigió `municipio`/`parroquia` a `null` (sin
+eliminar el evento, que sigue siendo real) en
+`infraestructura_electrica::Barinas::2026-09-24` y `orden_publico::
+Merida::2026-09-25` de `docs/data/noticias.json` y
+`data/historico_eventos.jsonl` (regenerando `titulo`/`texto` con
+`render.redactar_noticia()`), y en `orden_publico::Barinas::2026-08-20` de
+`data/historico_eventos.jsonl` (ya fuera de la ventana activa). Se
+regeneró `docs/data/estadisticas.json` con `python3
+scripts/build_dashboard.py`.
+
+**Informes narrativos**: `docs/data/informes/2026-09_inundacion.json`
+(referencia tanto la fuente de Puerto La Cruz como la de El Impulso) y
+`docs/data/informes/2026-09_orden_publico.json` (referencia la fuente de
+Netanyahu/NYC) referencian fuentes retractadas; pendiente de regenerar en
+la próxima corrida con `GROQ_API_KEY` disponible (no disponible en este
+entorno).
+
+**Pendiente de discutir**: `infraestructura_electrica::
+Portuguesa::2026-09-23` (El Pitazo, mismo artículo nacional sobre
+hospitales sin respaldo eléctrico) se publicó con `municipio: "Sucre"`,
+pero el texto describe el hecho real de Portuguesa en "el municipio Unda,
+estado Portuguesa" (Hospital Tipo I de Chabasquén) -- "municipio Sucre"
+en el mismo artículo corresponde en realidad al caso de **Barinas**
+(Hospital de Socopó), un párrafo antes. Causa raíz:
+`detectar_municipio_parroquia()` recibe el texto COMPLETO del artículo
+(`item["texto"]`, no la `ventana` de proximidad ya calculada para
+tipo/severidad) y `_MUNICIPIO_RE.search(texto)` devuelve la PRIMERA
+mención de "municipio X" de todo el artículo, sin importar a qué estado
+pertenece esa mención -- en un artículo-resumen nacional con varios
+párrafos por estado, esto puede atribuirle a un estado el municipio real
+de OTRO estado mencionado antes en el mismo texto. No se corrigió en esta
+sesión: el fix correcto (acotar `_MUNICIPIO_RE`/`_buscar_municipio_directo`
+a la ventana de proximidad del estado, igual que ya hace
+`detectar_tipo()`) toca una función usada por TODOS los eventos
+clasificados, con riesgo real de romper casos ya correctos que hoy
+dependen de la búsqueda de municipio sobre el texto completo -- requiere
+una regresión mucho más cuidadosa que un ajuste de lista negra. Queda
+como antecedente para una revisión dedicada.
+
+### Pruebas
+
+8 casos nuevos en `tests/casos_clasificacion.jsonl` (5 reales + 3
+controles). `PYTHONHASHSEED=0 python3 -m pytest tests/` → 925 passed, 8
+xfailed (conocidos), 3 xpassed (conocidos), sin fallas inesperadas tras la
+corrección retroactiva (los 5 casos que fallaban por diseño -- fijaban la
+ubicación vieja de las fuentes ya corregidas -- se resolvieron solos al
+actualizar `data/historico_fuentes_texto.jsonl`). `python3
+scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
+`docs/data/estadisticas.json` regenerado.

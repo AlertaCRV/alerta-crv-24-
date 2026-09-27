@@ -49,7 +49,22 @@ LISTA_NEGRA_POR_ESTADO = {
                 "avenida bolivar", "avenidas bolivar",
                 "aeropuerto", "moneda", "billete de", "banco central",
                 "libertador simon bolivar"],
-    "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de"],
+    # Ampliada (auditoria diaria, 26-09-2026): "avenida Sucre" es una via
+    # muy comun (Carrizal, Miranda; Barcelona, Anzoategui...) sin relacion
+    # con el estado Sucre -- un articulo real sobre las lluvias del 24-09-2026
+    # en Caracas y Miranda (El Impulso) mencionaba "el colapso de un muro
+    # perimetral en la avenida Sucre" de Carrizal (municipio de Miranda),
+    # lo que bastaba para publicar una alerta duplicada de infraestructura
+    # electrica en el estado Sucre, sin relacion alguna con el hecho real
+    # (ya cubierto correctamente en Distrito Capital/Miranda). Mismo dia:
+    # "calles Sucre, Libertad, Buenos Aires..." es una lista de calles
+    # anegadas en Puerto La Cruz, estado Anzoategui (El Tiempo), que
+    # generaba una alerta de inundacion en el estado Sucre igual de
+    # infundada. Se verifico contra las 452 fuentes de
+    # data/historico_fuentes_texto.jsonl que ambas frases son exclusivas de
+    # estos 2 articulos.
+    "Sucre": ["antonio jose de sucre", "mariscal sucre", "moneda", "billete de",
+              "avenida sucre", "avenidas sucre", "calle sucre", "calles sucre"],
     # "tramo Miranda" es un segmento vial nombrado de la Autopista Regional
     # del Centro (ARC) -- caso real (10-08-2026): un articulo sobre el
     # sismo de magnitud 7.4 de Colombia (que en su propio texto nunca
@@ -73,8 +88,21 @@ LISTA_NEGRA_POR_ESTADO = {
     # articulo. Frase completa y especifica (no solo "Petare", que si es
     # evidencia legitima en articulos reales sobre hechos actuales en ese
     # municipio de Miranda).
+    # Ampliada (auditoria diaria, 26-09-2026): un articulo sobre una
+    # protesta contra Netanyahu en Nueva York (Susan Sarandon, Hannah
+    # Einbinder detenidas) mencionaba de pasada a "la actriz Cynthia Nixon,
+    # reconocida por interpretar a Miranda en 'Sexo en Nueva York', y Brad
+    # Lander, excontralor de la ciudad" -- sin ninguna relacion con
+    # Venezuela, el personaje ficticio "Miranda" (por el nombre del estado)
+    # y el apellido "Lander" (por coincidir con el municipio real Lander de
+    # Miranda) bastaban juntos para publicar una alerta de orden_publico en
+    # el estado Miranda, municipio Lander. Se verifico contra las 452
+    # fuentes de data/historico_fuentes_texto.jsonl que la frase es
+    # exclusiva de este articulo. Sin remapeo posible (no hay a que estado
+    # real redirigir un hecho 100% extranjero): se descarta directamente.
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda",
-                "tramo miranda", "el llanito, en petare, estado miranda"],
+                "tramo miranda", "el llanito, en petare, estado miranda",
+                "interpretar a miranda en"],
     # Caso real (02-08-2026): una golpiza durante un partido de futbol en
     # Barquisimeto (estado Lara, entre aficion del Deportivo Lara y del
     # Portuguesa FC) tambien se publicaba como alerta de Carabobo -- el
@@ -3050,6 +3078,27 @@ _LONGITUD_MINIMA_NOMBRE_DIRECTO = 5
 # mencionara Lagunillas en absoluto.
 _NOMBRE_PAIS_NORM = "venezuela"
 
+# Mismo problema que "Venezuela", pero con frases coloquiales de uso
+# diario que, por coincidencia, son tambien el nombre oficial de una
+# parroquia real. Casos reales (auditoria diaria, 26-09-2026):
+# - "la luz" (Parroquia La Luz, Municipio Obispos, Barinas) es la forma
+#   coloquial casi universal de referirse al servicio electrico ("se fue
+#   la luz", "protestar por la luz", "con la luz de las linternas") --
+#   de las 39 apariciones de la frase en las 452 fuentes de
+#   data/historico_fuentes_texto.jsonl, NINGUNA describe un hecho en esa
+#   parroquia; 2 alertas reales de Barinas (orden_publico 20-08-2026,
+#   infraestructura_electrica 25-09-2026) publicaron parroquia="La Luz"
+#   sin relacion alguna con el lugar real.
+# - "la toma" (Parroquia La Toma, Municipio Rangel, Merida) es igual de
+#   generico en coberturas de protestas ("la toma de los portones", "la
+#   toma anterior") -- las 3 apariciones de la frase en el corpus tampoco
+#   describen un hecho en esa parroquia.
+# Se excluyen solo de la busqueda DIRECTA (sin el calificador
+# "parroquia" delante) -- una mencion real y explicita ("parroquia La
+# Luz"/"parroquia La Toma") se evalua antes, via _PARROQUIA_RE, y no usa
+# esta lista.
+_NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO = {"la luz", "la toma"}
+
 # Mismo problema que "Venezuela", pero con el nombre de OTRO estado: varios
 # municipios/parroquias son, por coincidencia, homonimos de un estado
 # distinto al que pertenecen y unicos a nivel nacional (pasan el chequeo de
@@ -3215,6 +3264,8 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
                 continue
             if normalizado in _nombres_estados_norm():
                 continue
+            if normalizado in _NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO:
+                continue
             if _contiene_palabra_clave(texto_norm, normalizado):
                 return original, None
         return None, None
@@ -3230,6 +3281,8 @@ def _buscar_parroquia_directa(texto_norm, detalle_estado, municipio, nombre_esta
         if conteo_parroquias[normalizado] > 1 or len(ocurrencias) > 1:
             continue  # ambiguo entre estados o entre municipios del mismo estado
         if normalizado == _NOMBRE_PAIS_NORM or normalizado in _nombres_estados_norm():
+            continue
+        if normalizado in _NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO:
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
             municipio_unico, parroquia_unica = ocurrencias[0]
