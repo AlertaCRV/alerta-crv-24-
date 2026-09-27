@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-09",
+  "tipo": "motin_carcelario",
+  "tipo_label": "Motín carcelario",
+  "cerrado": false,
+  "generado": "2026-09-27T15:23:52.444034+00:00",
+  "actualizado_hasta": "2026-09-27T15:22:53.815297+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registró un solo incidente de motín carcelario a nivel nacional, en contraste con cero eventos en agosto de 2026 (Informe interno).\n\nEl hecho ocurrió en la cárcel de Santa Ana, ubicada en el estado Táchira, y fue calificado de alta severidad (Primicia). Las autoridades del Ministerio para el Servicio Penitenciario no han emitido pronunciamiento al respecto (Primicia).\n\nHasta el momento no se han reportado daños materiales significativos, heridos ni víctimas fatales vinculados al motín (Primicia).\n\nEste registro será incorporado al monitoreo continuo de la Cruz Roja Venezolana para actualizar los protocolos de respuesta ante situaciones de violencia carcelaria (Cruz Roja Venezolana).",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/reportan-presunto-motin-en-carcel-de-santa-ana-en-tachira/"
+    }
+  ]
+}

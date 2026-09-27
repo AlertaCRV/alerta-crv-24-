@@ -41,6 +41,14 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "motin_carcelario",
+    "tipo_label": "Motín carcelario",
+    "cerrado": false,
+    "generado": "2026-09-27T15:23:52.444034+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
