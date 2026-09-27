@@ -105,6 +105,14 @@
   },
   {
     "periodo": "2026-09",
+    "tipo": "emergencia_metro",
+    "tipo_label": "Emergencia en el Metro/Metrocable/Teleférico",
+    "cerrado": false,
+    "generado": "2026-09-27T22:23:19.074690+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-09",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,

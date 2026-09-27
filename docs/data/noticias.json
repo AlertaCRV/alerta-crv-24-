@@ -1,5 +1,140 @@
 [
   {
+    "tipo": "emergencia_metro",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/metro-de-caracas-rechaza-agresion-a-trabajadora-en-la-estacion-gato-negro/",
+        "fecha": "2026-09-27T20:46:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T20:46:02+00:00",
+    "fecha_evento_temprana": "2026-09-27T20:46:02+00:00",
+    "fecha_deteccion": "2026-09-27T22:21:56.360448+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "emergencia_metro::Distrito Capital::2026-09-27",
+    "titulo": "Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital",
+    "texto": "📌 Emergencia en el Metro/Metrocable/Teleférico en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 27/09/2026, 4:46 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/metro-de-caracas-rechaza-agresion-a-trabajadora-en-la-estacion-gato-negro/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Miranda",
+    "municipio": "Sucre",
+    "parroquia": "Petare",
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/",
+        "fecha": "2026-09-27T15:16:16+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T15:16:16+00:00",
+    "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
+    "fecha_deteccion": "2026-09-27T22:22:09.149119+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Miranda::2026-09-27",
+    "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
+    "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 27/09/2026, 11:16 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": "Mariño",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/",
+        "fecha": "2026-09-27T18:35:58+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T18:35:58+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
+    "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Sucre::2026-09-27",
+    "titulo": "Orden público en Municipio Mariño, Sucre",
+    "texto": "📌 Orden público en Municipio Mariño, Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Mariño, Sucre\n🕒 Hecho reportado: 27/09/2026, 2:35 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/",
+        "fecha": "2026-09-27T19:00:00+00:00"
+      },
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/09/27/los-manifestantes-increparon-al-gobernador-de-cojedes-alberto-galindez-por-los-apagones-electricos/",
+        "fecha": "2026-09-27T20:40:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T20:40:22+00:00",
+    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
+    "fecha_deteccion": "2026-09-27T22:22:59.700693+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
+    "titulo": "Falla eléctrica en Cojedes",
+    "texto": "📌 Falla eléctrica en Cojedes\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 4:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/27/los-manifestantes-increparon-al-gobernador-de-cojedes-alberto-galindez-por-los-apagones-electricos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/",
+        "fecha": "2026-09-27T18:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T18:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
+    "fecha_deteccion": "2026-09-27T22:23:12.259765+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
+    "titulo": "Orden público en Cojedes",
+    "texto": "📌 Orden público en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:23 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Bolivar",
     "municipio": null,
@@ -26,32 +161,6 @@
     "texto": "📌 Inundación en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 27/09/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/"
   },
   {
-    "tipo": "incendio",
-    "ubicacion": "Miranda",
-    "municipio": "Sucre",
-    "parroquia": "Petare",
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/",
-        "fecha": "2026-09-27T15:16:16+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T15:16:16+00:00",
-    "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
-    "fecha_deteccion": "2026-09-27T19:12:26.538961+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Miranda::2026-09-27",
-    "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
-    "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 27/09/2026, 11:16 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Guarico",
     "municipio": "Ortiz",
@@ -76,63 +185,6 @@
     "clave_dedup": "infraestructura_electrica::Guarico::2026-09-27",
     "titulo": "Falla eléctrica en Municipio Ortiz, Guarico",
     "texto": "📌 Falla eléctrica en Municipio Ortiz, Guarico\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ortiz, Guarico\n🕒 Hecho reportado: 27/09/2026, 12:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/ciudadanos-volvieron-a-protestar-por-los-apagones-en-guarico/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/",
-        "fecha": "2026-09-27T18:30:00+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/",
-        "fecha": "2026-09-27T13:40:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T18:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
-    "fecha_deteccion": "2026-09-27T19:13:13.784892+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
-    "titulo": "Orden público en Cojedes",
-    "texto": "📌 Orden público en Cojedes\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:13 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/",
-        "fecha": "2026-09-27T19:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T19:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
-    "fecha_deteccion": "2026-09-27T19:13:39.446585+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
-    "titulo": "Falla eléctrica en Cojedes",
-    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/"
   },
   {
     "tipo": "inundacion",
@@ -2596,57 +2648,5 @@
     "clave_dedup": "deslizamiento::La Guaira::2026-09-14",
     "titulo": "Deslizamiento/Derrumbe en La Guaira",
     "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 14/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 2:07 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/14/video-cuerpos-de-rescate-buscan-a-30-ninos-bajo-los-escombros-en-el-urbanismo-opp-26-de-caribe-estado-la-guaira-14sep/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/",
-        "fecha": "2026-09-13T16:34:21+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-13T16:34:21+00:00",
-    "fecha_evento_temprana": "2026-09-13T16:34:21+00:00",
-    "fecha_deteccion": "2026-09-13T21:50:08.365135+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-13",
-    "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 13/09/2026, 12:34 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 5:50 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": "Esteller",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/",
-        "fecha": "2026-09-13T16:01:45+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-13T16:01:45+00:00",
-    "fecha_evento_temprana": "2026-09-13T16:01:45+00:00",
-    "fecha_deteccion": "2026-09-13T21:50:25.513280+00:00",
-    "estado_verificacion": "PASADO_POR_FALLA_TECNICA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-09-13",
-    "titulo": "Orden público en Municipio Esteller, Portuguesa",
-    "texto": "📌 Orden público en Municipio Esteller, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Esteller, Portuguesa\n🕒 Hecho reportado: 13/09/2026, 12:01 p.m.\n🔎 Detectado por el sistema: 13/09/2026, 5:50 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\nℹ️ ⚙️ Este evento se publicó sin verificación de IA por una falla técnica temporal (ej. límite de la API). Verificar con mayor cautela.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/09/13/liderazgo-ciudadano-encabeza-movilizacion-en-piritu/"
   }
 ]

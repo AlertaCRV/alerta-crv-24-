@@ -20,26 +20,12 @@
     "fecha_evento_temprana": "2026-09-24T18:29:51+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Miranda::2026-09-24": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T19:27:55.679235+00:00",
-    "fecha_evento_temprana": "2026-09-24T19:09:01+00:00",
-    "municipio": "El Hatillo"
-  },
   "infraestructura_electrica::Lara::2026-09-24": {
     "severidad": "medio",
     "confirmado": true,
     "fecha_deteccion": "2026-09-26T01:43:07.560173+00:00",
     "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
     "municipio": "Torres"
-  },
-  "orden_publico::Falcon::2026-09-24": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T19:30:01.767558+00:00",
-    "fecha_evento_temprana": "2026-09-24T16:32:45+00:00",
-    "municipio": null
   },
   "inundacion::Distrito Capital::2026-09-24": {
     "severidad": "medio",
@@ -203,10 +189,10 @@
     "municipio": null
   },
   "orden_publico::Cojedes::2026-09-27": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-27T19:13:13.784892+00:00",
-    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T22:23:12.259765+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
     "municipio": null
   },
   "inundacion::Bolivar::2026-09-27": {
@@ -217,9 +203,9 @@
     "municipio": null
   },
   "incendio::Miranda::2026-09-27": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-27T19:12:26.538961+00:00",
+    "fecha_deteccion": "2026-09-27T22:22:09.149119+00:00",
     "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
     "municipio": "Sucre"
   },
@@ -232,9 +218,23 @@
   },
   "infraestructura_electrica::Cojedes::2026-09-27": {
     "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-27T19:13:39.446585+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-27T22:22:59.700693+00:00",
     "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
     "municipio": null
+  },
+  "emergencia_metro::Distrito Capital::2026-09-27": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T22:21:56.360448+00:00",
+    "fecha_evento_temprana": "2026-09-27T20:46:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Sucre::2026-09-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
+    "municipio": "Mariño"
   }
 }
