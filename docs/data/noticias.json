@@ -1,6 +1,141 @@
 [
   {
     "tipo": "inundacion",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/",
+        "fecha": "2026-09-27T17:15:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T17:15:22+00:00",
+    "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
+    "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Bolivar::2026-09-27",
+    "titulo": "Inundación en Bolivar",
+    "texto": "📌 Inundación en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 27/09/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Miranda",
+    "municipio": "Sucre",
+    "parroquia": "Petare",
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/",
+        "fecha": "2026-09-27T15:16:16+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T15:16:16+00:00",
+    "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
+    "fecha_deteccion": "2026-09-27T19:12:26.538961+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Miranda::2026-09-27",
+    "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
+    "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 27/09/2026, 11:16 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Guarico",
+    "municipio": "Ortiz",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/ciudadanos-volvieron-a-protestar-por-los-apagones-en-guarico/",
+        "fecha": "2026-09-27T16:40:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T16:40:18+00:00",
+    "fecha_evento_temprana": "2026-09-27T16:40:18+00:00",
+    "fecha_deteccion": "2026-09-27T19:12:56.731295+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Guarico::2026-09-27",
+    "titulo": "Falla eléctrica en Municipio Ortiz, Guarico",
+    "texto": "📌 Falla eléctrica en Municipio Ortiz, Guarico\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ortiz, Guarico\n🕒 Hecho reportado: 27/09/2026, 12:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/ciudadanos-volvieron-a-protestar-por-los-apagones-en-guarico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/",
+        "fecha": "2026-09-27T18:30:00+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/",
+        "fecha": "2026-09-27T13:40:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T18:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
+    "fecha_deteccion": "2026-09-27T19:13:13.784892+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
+    "titulo": "Orden público en Cojedes",
+    "texto": "📌 Orden público en Cojedes\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:13 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/",
+        "fecha": "2026-09-27T19:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T19:00:00+00:00",
+    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
+    "fecha_deteccion": "2026-09-27T19:13:39.446585+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
+    "titulo": "Falla eléctrica en Cojedes",
+    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/"
+  },
+  {
+    "tipo": "inundacion",
     "ubicacion": "Yaracuy",
     "municipio": "Sucre",
     "parroquia": null,
@@ -50,32 +185,6 @@
     "clave_dedup": "motin_carcelario::Tachira::2026-09-27",
     "titulo": "Motín carcelario en Tachira",
     "texto": "📌 Motín carcelario en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 27/09/2026, 10:20 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 11:22 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-presunto-motin-en-carcel-de-santa-ana-en-tachira/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/",
-        "fecha": "2026-09-27T13:40:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T13:40:43+00:00",
-    "fecha_evento_temprana": "2026-09-27T13:40:43+00:00",
-    "fecha_deteccion": "2026-09-27T15:22:58.350711+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
-    "titulo": "Orden público en Cojedes",
-    "texto": "📌 Orden público en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 9:40 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 11:22 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/protesta-en-autopista-de-cojedes-por-prolongado-corte-electrico/"
   },
   {
     "tipo": "incendio",

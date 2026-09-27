@@ -3,19 +3,23 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-09-22T22:23:01.281796+00:00",
-  "actualizado_hasta": "2026-09-22T01:06:21.670413+00:00",
-  "total_eventos": 8,
+  "generado": "2026-09-27T19:14:22.250354+00:00",
+  "actualizado_hasta": "2026-09-27T19:12:26.538961+00:00",
+  "total_eventos": 18,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 19,
-    "actual": 8
+    "actual": 18
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron ocho incendios, una disminución respecto al período anterior en el que se contabilizaron diecinueve eventos (19 evento(s) registrados entonces vs. 8 en este período). La reducción se observa pese a la persistencia de incidentes de alta y crítica severidad en distintas regiones del país.\n\nEn Zulia, una explosión por fuga de gas en una vivienda del sector Villa Hermosa, municipio Maracaibo, dejó una víctima fatal y dos heridos, con quemaduras extensas en la víctima mortal (El Pitazo).\n\nEn el estado Táchira, el 19 de septiembre un vehículo gandolero cargado de cemento se incendió en la arteria vial que conecta Táchira con El Vigía, provocando graves quemaduras al conductor y la destrucción total del camión (Diario La Nacion (Tachira)).\n\nEl estado Mérida registró dos incendios de alta severidad. El primero, reportado por El Periodico de Monagas, se desarrolló en San Isidro Alto, Santa Cruz de Mora, amenazando fuentes de agua potable y fincas productivas (El Periodico de Monagas). El segundo, descrito por La Verdad de Monagas, fue un incendio forestal que quemó más de 160 hectáreas, incluyendo 30 hectáreas de cultivos de café y cacao (La Verdad de Monagas).\n\nEn el Distrito Capital, dos niveles de un depósito ubicado en el sector El Cementerio de Caracas se incendiaron, obligando a la evacuación de aproximadamente 30 personas y requiriendo la intervención del Cuerpo de Bomberos (El Pitazo).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron 18 incendios, una ligera disminución respecto al período anterior en el que se contabilizaron 19 eventos (19 evento(s) registrados entonces vs. 18 en este período). La variación refleja una leve reducción en la frecuencia de incidentes, aunque la gravedad de varios de ellos se mantuvo alta.\n\nEn Zulia se registró un incendio de severidad crítica cuando una fuga de gas provocó una explosión en una vivienda del sector Villa Hermosa, dejando una víctima mortal y dos heridos (El Pitazo). En la misma entidad, otro siniestro de severidad alta ocurrió en una residencia donde una falla eléctrica originó llamas que obligaron al rescate de dos mujeres y su perro (Primicia (Bolivar)). En el Distrito Capital, dos niveles de un depósito ubicado en el sector El Cementerio de Caracas se incendiaron, obligando a la evacuación de aproximadamente 30 personas (El Pitazo).\n\nEl estado Mérida fue escenario de varios incendios de alta severidad. Un incendio de gran magnitud se desató en San Isidro Alto, en Santa Cruz de Mora, amenazando fuentes de agua potable y fincas productivas (El Periodico de Monagas). El mismo foco forestal afectó más de 160 hectáreas, incluyendo 30 hectáreas de cultivos de café y cacao (La Verdad de Monagas). Además, se reportó que el incendio ponía en grave riesgo a la comunidad local (Yaracuy al Dia).\n\nEn Táchira se produjeron dos incidentes de alta severidad. El 19 de septiembre, un vehículo gandolero cargado de cemento se incendió en la arteria vial que conecta Táchira con El Vigía, dejando al conductor con graves quemaduras (Diario La Nacion (Tachira)). Tres días después, el 23 de septiembre, se registró un incendio de vegetación en la vía principal hacia Rubio, en Las Adjuntas, cuya causa aún se desconoce (Diario La Nacion (Tachira)). En Anzoátegui, una explosión de transformadores eléctricos en la calle Páez de Campo Alegre provocó un incendio y la interrupción del servicio eléctrico (El Tiempo (Anzoategui)). Finalmente, en Aragua, un incendio en una panadería al norte de Maracay dejó dos heridos (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/sucesos/al-incendiarse-el-vehiculo-gandolero-resulto-con-graves-quemaduras/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/incendio-de-vegetacion-en-via-hacia-las-adjuntas/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -30,20 +34,48 @@
       "link": "https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/"
     },
     {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/reportan-explosion-de-transformadores-electricos-en-la-calle-paez-de-campo-alegre/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/dos-heridos-deja-incendio-en-una-panaderia-al-norte-de-maracay/"
+    },
+    {
       "nombre": "La Verdad de Monagas",
       "link": "https://laverdaddemonagas.com/2026/09/21/incendio-forestal-en-merida-afecta-a-mas-de-160-hectareas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/rescatan-a-dos-mujeres-y-su-perro-tras-incendio-en-zulia/"
     },
     {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/venezuela/incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida/?utm_source=rss&utm_medium=rss&utm_campaign=incendio-de-gran-magnitud-amenaza-a-comunidad-en-merida"
     },
     {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/ula-trujillo-controladas-nuevas-llamas-en-el-bosque-universitario-y-exigen-investigar-las-causas/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/incendio-consume-al-menos-cuatro-locales-en-el-mercado-de-quinta-crespo-caracas/"
+    },
+    {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-de-gran-magnitud-consumio-fabrica-de-cosmeticos-en-palo-verde/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
+    },
+    {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/bomberos-sofocan-incendio-en-comercial-de-el-cementerio/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/24/incendio-en-un-taller-mecanico/"
     }
   ]
 }
