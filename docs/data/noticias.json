@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/",
+        "fecha": "2026-09-27T18:35:58+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T18:35:58+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
+    "fecha_deteccion": "2026-09-28T01:00:41.933723+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Aragua::2026-09-27",
+    "titulo": "Orden público en Aragua",
+    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 27/09/2026, 2:35 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 9:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/",
+        "fecha": "2026-09-27T18:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-27T18:30:00+00:00",
+    "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
+    "fecha_deteccion": "2026-09-28T01:02:14.796970+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
+    "titulo": "Orden público en Cojedes",
+    "texto": "📌 Orden público en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 9:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/"
+  },
+  {
     "tipo": "emergencia_metro",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -52,32 +104,6 @@
     "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 27/09/2026, 11:16 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
   },
   {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": "Santiago Mariño",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/",
-        "fecha": "2026-09-27T18:35:58+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T18:35:58+00:00",
-    "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
-    "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Aragua::2026-09-27",
-    "titulo": "Orden público en Municipio Santiago Mariño, Aragua",
-    "texto": "📌 Orden público en Municipio Santiago Mariño, Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Santiago Mariño, Aragua\n🕒 Hecho reportado: 27/09/2026, 2:35 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
-  },
-  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Cojedes",
     "municipio": null,
@@ -107,32 +133,6 @@
     "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
     "titulo": "Falla eléctrica en Cojedes",
     "texto": "📌 Falla eléctrica en Cojedes\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 4:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/27/los-manifestantes-increparon-al-gobernador-de-cojedes-alberto-galindez-por-los-apagones-electricos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/",
-        "fecha": "2026-09-27T18:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T18:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
-    "fecha_deteccion": "2026-09-27T22:23:12.259765+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Cojedes::2026-09-27",
-    "titulo": "Orden público en Cojedes",
-    "texto": "📌 Orden público en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:23 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/"
   },
   {
     "tipo": "inundacion",
