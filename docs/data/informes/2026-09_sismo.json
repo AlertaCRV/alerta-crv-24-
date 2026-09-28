@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-09-27T00:33:12.062669+00:00",
+  "generado": "2026-09-28T01:06:37.085070+00:00",
   "actualizado_hasta": "2026-09-10T23:54:13.762413+00:00",
   "total_eventos": 2,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 5,
     "actual": 2
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron dos sismos, una cifra que representa una disminución respecto al período anterior, donde se habían contabilizado cinco eventos en agosto (Datos comparativos). Esta reducción se refleja en los reportes de la Fundación Venezolana de Investigaciones Sismológicas (Funvisis), que monitorea la actividad telúrica del país (El Pitazo). \n\nEl primer movimiento telúrico ocurrió la mañana del 10 de septiembre cerca de la frontera colombo‑venezolana, con una magnitud de 4,0 en la escala de Richter (El Pitazo). El sismo fue percibido en varias localidades fronterizas, aunque los informes preliminares no señalaron daños materiales ni víctimas fatales. \n\nPoco después, a pocas horas del primer temblor, se registró un segundo sismo en la misma zona, con una magnitud de 3,5 (El Pitazo). Al igual que el anterior, este movimiento sísmico no generó reportes de lesiones ni de afectaciones estructurales significativas en la zona. \n\nEn conjunto, la actividad sísmica de septiembre mostró una menor frecuencia y una intensidad moderada, sin que se reporten consecuencias graves para la población. La comparación con el mes anterior subraya una tendencia a la baja en la cantidad de eventos sísmicos registrados en el país durante este período (Datos comparativos).",
+  "narrativa": "En el mes de septiembre de 2026 se registraron dos sismos, una disminución respecto al mes anterior en el que se contabilizaron cinco eventos (5 evento(s) registrados entonces vs. 2 en este período). Ambos movimientos telúricos fueron detectados por la Fundación Venezolana de Investigaciones Sismológicas (Funvisis) y se sintieron en zonas cercanas a la frontera colombo‑venezolana.\\n\\nEl primer sismo ocurrió la mañana del jueves 10 de septiembre con una magnitud de 4,0, según informó Funvisis (El Pitazo). El epicentro se ubicó en la zona fronteriza entre Venezuela y Colombia, generando una percepción notable de temblor en comunidades cercanas, aunque no se reportaron daños estructurales ni víctimas.\\n\\nEl segundo movimiento, también registrado el mismo día, tuvo una magnitud de 3,5 y se localizó en la misma región fronteriza (El Pitazo). Al igual que el primero, no se notificaron consecuencias materiales ni lesiones, y la actividad sísmica se consideró dentro de los rangos habituales para la zona.",
   "fuentes": [
     {
       "nombre": "El Pitazo",

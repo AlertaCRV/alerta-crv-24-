@@ -27,13 +27,6 @@
     "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
     "municipio": "Torres"
   },
-  "inundacion::Distrito Capital::2026-09-24": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-24T22:44:08.413447+00:00",
-    "fecha_evento_temprana": "2026-09-24T21:31:25+00:00",
-    "municipio": "Libertador"
-  },
   "infraestructura_electrica::Barinas::2026-09-24": {
     "severidad": "critico",
     "confirmado": false,
@@ -46,13 +39,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-09-25T06:02:31.442153+00:00",
     "fecha_evento_temprana": "2026-09-24T21:24:43+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Nueva Esparta::2026-09-24": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-24T22:45:30.282123+00:00",
-    "fecha_evento_temprana": "2026-09-24T16:05:57+00:00",
     "municipio": null
   },
   "orden_publico::Merida::2026-09-25": {
@@ -189,9 +175,9 @@
     "municipio": null
   },
   "orden_publico::Cojedes::2026-09-27": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-27T22:23:12.259765+00:00",
+    "fecha_deteccion": "2026-09-28T01:02:14.796970+00:00",
     "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
     "municipio": null
   },
@@ -224,11 +210,11 @@
     "municipio": null
   },
   "orden_publico::Aragua::2026-09-27": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-27T22:22:34.213513+00:00",
+    "fecha_deteccion": "2026-09-28T01:00:41.933723+00:00",
     "fecha_evento_temprana": "2026-09-27T18:35:58+00:00",
-    "municipio": "Santiago Mariño"
+    "municipio": null
   },
   "inundacion::Barinas::2026-09-27": {
     "severidad": "medio",

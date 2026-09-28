@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-27T23:32:07.953872+00:00",
+  "actualizado": "2026-09-28T01:02:15.598659+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-27T20:46:02+00:00"
   },
-  "total_eventos": 460,
+  "total_eventos": 462,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
     "infraestructura_electrica": 130,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 102,
+    "orden_publico": 104,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -81,12 +81,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 26,
+      "total": 27,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
         "medio": 8,
-        "alto": 6,
+        "alto": 7,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -283,11 +283,11 @@
     },
     {
       "estado": "Cojedes",
-      "total": 6,
+      "total": 7,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 3,
-        "medio": 1,
+        "medio": 2,
         "alto": 2
       },
       "severidad_dominante": "alto"
@@ -458,7 +458,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 8,
+      "orden_publico": 9,
       "inundacion": 8,
       "infraestructura_electrica": 4,
       "accidente_transporte": 1,
@@ -491,7 +491,7 @@
       "infraestructura_agua": 1
     },
     "Cojedes": {
-      "orden_publico": 4,
+      "orden_publico": 5,
       "infraestructura_electrica": 2
     },
     "La Guaira": {
@@ -511,9 +511,9 @@
     }
   },
   "por_severidad": {
-    "alto": 99,
+    "alto": 100,
     "critico": 51,
-    "medio": 176,
+    "medio": 177,
     "bajo": 124,
     "sin_clasificar": 10
   },
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 56
+      "2026-09": 58
     },
     "salud_publica": {
       "2026-07": 1,
