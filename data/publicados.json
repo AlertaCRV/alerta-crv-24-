@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Zulia::2026-09-23": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:03:53.025488+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:00:30+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Portuguesa::2026-09-23": {
     "severidad": "critico",
     "confirmado": false,
@@ -27,61 +20,12 @@
     "fecha_evento_temprana": "2026-09-25T22:06:28+00:00",
     "municipio": null
   },
-  "orden_publico::Zulia::2026-09-25": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T16:01:46.508704+00:00",
-    "fecha_evento_temprana": "2026-09-25T10:16:34+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-09-25": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-25T20:01:12.648193+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
-    "municipio": "Iribarren"
-  },
-  "orden_publico::Portuguesa::2026-09-25": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T15:59:59.755215+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:24:54+00:00",
-    "municipio": null
-  },
   "vialidad::Distrito Capital::2026-09-25": {
     "severidad": "critico",
     "confirmado": false,
     "fecha_deteccion": "2026-09-25T23:16:59.654696+00:00",
     "fecha_evento_temprana": "2026-09-25T18:25:39+00:00",
     "municipio": "Libertador"
-  },
-  "incendio::Trujillo::2026-09-25": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T16:01:08.180507+00:00",
-    "fecha_evento_temprana": "2026-09-25T15:41:15+00:00",
-    "municipio": "Pampanito"
-  },
-  "salud_publica::Amazonas::2026-09-25": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:00:33.961578+00:00",
-    "fecha_evento_temprana": "2026-09-25T18:13:06+00:00",
-    "municipio": "Manapiare"
-  },
-  "incendio::Aragua::2026-09-25": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:02:11.558145+00:00",
-    "fecha_evento_temprana": "2026-09-25T19:39:14+00:00",
-    "municipio": "Girardot"
-  },
-  "vialidad::Monagas::2026-09-25": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T20:02:15.481923+00:00",
-    "fecha_evento_temprana": "2026-09-25T19:13:29+00:00",
-    "municipio": "Maturín"
   },
   "orden_publico::Distrito Capital::2026-09-25": {
     "severidad": "medio",
@@ -154,10 +98,10 @@
     "municipio": "Ortiz"
   },
   "infraestructura_electrica::Cojedes::2026-09-27": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-28T14:32:34.038281+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "fecha_deteccion": "2026-09-28T20:48:37.332428+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
     "municipio": null
   },
   "emergencia_metro::Distrito Capital::2026-09-27": {
@@ -194,5 +138,54 @@
     "fecha_deteccion": "2026-09-28T14:32:38.914113+00:00",
     "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
     "municipio": "Guanare"
+  },
+  "orden_publico::Distrito Capital::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T20:45:46.097244+00:00",
+    "fecha_evento_temprana": "2026-09-28T20:31:47+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-28T20:45:50.771957+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
+    "municipio": "Maracaibo"
+  },
+  "infraestructura_electrica::Tachira::2026-09-28": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T20:45:59.374865+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:02:36+00:00",
+    "municipio": "García De Hevia"
+  },
+  "infraestructura_electrica::Anzoategui::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T20:46:37.434808+00:00",
+    "fecha_evento_temprana": "2026-09-28T18:30:10+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T20:47:04.139518+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:55:59+00:00",
+    "municipio": "Chacao"
+  },
+  "infraestructura_electrica::Portuguesa::2026-09-28": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-28T20:47:17.504104+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
+    "municipio": "Santa Rosalía"
+  },
+  "orden_publico::Lara::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T20:48:33.097024+00:00",
+    "fecha_evento_temprana": "2026-09-28T16:30:40+00:00",
+    "municipio": null
   }
 }

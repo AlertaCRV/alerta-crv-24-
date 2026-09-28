@@ -1,5 +1,223 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
+        "fecha": "2026-09-28T20:31:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T20:31:47+00:00",
+    "fecha_evento_temprana": "2026-09-28T20:31:47+00:00",
+    "fecha_deteccion": "2026-09-28T20:45:46.097244+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-28",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 28/09/2026, 4:31 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.25,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
+        "fecha": "2026-09-28T20:31:47+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/",
+        "fecha": "2026-09-28T17:37:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T20:31:47+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
+    "fecha_deteccion": "2026-09-28T20:45:50.771957+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-09-28",
+    "titulo": "Orden público en Municipio Maracaibo, Zulia",
+    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 28/09/2026, 4:31 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/\n  • La Manana (Falcon): https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Tachira",
+    "municipio": "García De Hevia",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/tachira-sin-luz-12-horas-a-40-c-en-la-fria-piden-decreto-de-emergencia-electrica/",
+        "fecha": "2026-09-28T17:02:36+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T17:02:36+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:02:36+00:00",
+    "fecha_deteccion": "2026-09-28T20:45:59.374865+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Tachira::2026-09-28",
+    "titulo": "Falla eléctrica en Municipio García De Hevia, Tachira",
+    "texto": "📌 Falla eléctrica en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 28/09/2026, 1:02 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/tachira-sin-luz-12-horas-a-40-c-en-la-fria-piden-decreto-de-emergencia-electrica/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/nuevo-apagon-dejo-a-cantaura-sin-luz-durante-dos-horas/",
+        "fecha": "2026-09-28T18:30:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T18:30:10+00:00",
+    "fecha_evento_temprana": "2026-09-28T18:30:10+00:00",
+    "fecha_deteccion": "2026-09-28T20:46:37.434808+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-28",
+    "titulo": "Falla eléctrica en Anzoategui",
+    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 28/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/nuevo-apagon-dejo-a-cantaura-sin-luz-durante-dos-horas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": "Chacao",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/nacionales/tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela",
+        "fecha": "2026-09-28T17:55:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T17:55:59+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:55:59+00:00",
+    "fecha_deteccion": "2026-09-28T20:47:04.139518+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-09-28",
+    "titulo": "Orden público en Municipio Chacao, Miranda",
+    "texto": "📌 Orden público en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 28/09/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Portuguesa",
+    "municipio": "Santa Rosalía",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/",
+        "fecha": "2026-09-28T14:50:12+00:00"
+      },
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia",
+        "fecha": "2026-09-28T17:43:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T17:43:10+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
+    "fecha_deteccion": "2026-09-28T20:47:17.504104+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-09-28",
+    "titulo": "Falla eléctrica en Municipio Santa Rosalía, Portuguesa",
+    "texto": "📌 Falla eléctrica en Municipio Santa Rosalía, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 28/09/2026, 1:43 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:47 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/",
+        "fecha": "2026-09-28T16:30:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T16:30:40+00:00",
+    "fecha_evento_temprana": "2026-09-28T16:30:40+00:00",
+    "fecha_deteccion": "2026-09-28T20:48:33.097024+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-09-28",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 28/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/",
+        "fecha": "2026-09-28T14:50:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T14:50:12+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
+    "fecha_deteccion": "2026-09-28T20:48:37.332428+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
+    "titulo": "Falla eléctrica en Cojedes",
+    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 28/09/2026, 10:50 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Barinas",
     "municipio": null,
@@ -24,32 +242,6 @@
     "clave_dedup": "infraestructura_electrica::Barinas::2026-09-28",
     "titulo": "Falla eléctrica en Barinas",
     "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/",
-        "fecha": "2026-09-28T14:15:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T14:15:00+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
-    "fecha_deteccion": "2026-09-28T14:32:34.038281+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
-    "titulo": "Falla eléctrica en Cojedes",
-    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
   },
   {
     "tipo": "orden_publico",

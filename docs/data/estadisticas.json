@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-28T14:33:18.330724+00:00",
+  "actualizado": "2026-09-28T20:48:40.700527+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-28T14:15:00+00:00"
+    "hasta": "2026-09-28T20:31:47+00:00"
   },
-  "total_eventos": 465,
+  "total_eventos": 473,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
-    "infraestructura_electrica": 132,
+    "infraestructura_electrica": 136,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 105,
+    "orden_publico": 109,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 74,
+      "total": 75,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 22,
-        "bajo": 23,
+        "bajo": 24,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -43,12 +43,12 @@
     },
     {
       "estado": "Zulia",
-      "total": 44,
-      "confirmados": 6,
+      "total": 45,
+      "confirmados": 7,
       "por_severidad": {
         "medio": 23,
         "critico": 3,
-        "bajo": 9,
+        "bajo": 10,
         "sin_clasificar": 1,
         "alto": 8
       },
@@ -56,13 +56,13 @@
     },
     {
       "estado": "Lara",
-      "total": 39,
+      "total": 40,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
         "alto": 11,
         "medio": 17,
-        "bajo": 6,
+        "bajo": 7,
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
@@ -93,25 +93,37 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 20,
+      "total": 21,
       "confirmados": 0,
       "por_severidad": {
         "medio": 10,
         "alto": 2,
         "critico": 2,
-        "bajo": 6
+        "bajo": 7
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Miranda",
-      "total": 20,
+      "total": 21,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
         "medio": 6,
         "critico": 4,
-        "bajo": 6
+        "bajo": 7
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Tachira",
+      "total": 20,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 9,
+        "bajo": 3,
+        "medio": 6,
+        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -125,18 +137,6 @@
         "critico": 1,
         "alto": 2,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 19,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 8,
-        "bajo": 3,
-        "medio": 6,
-        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -177,10 +177,10 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 17,
-      "confirmados": 0,
+      "total": 18,
+      "confirmados": 1,
       "por_severidad": {
-        "medio": 6,
+        "medio": 7,
         "bajo": 7,
         "critico": 2,
         "alto": 2
@@ -259,6 +259,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Cojedes",
+      "total": 9,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 3,
+        "medio": 3,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Apure",
       "total": 8,
       "confirmados": 0,
@@ -280,17 +291,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Cojedes",
-      "total": 8,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 3,
-        "medio": 2,
-        "alto": 3
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -322,7 +322,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "infraestructura_electrica": 13,
       "sismo": 1,
       "deslizamiento": 1,
@@ -338,7 +338,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -350,7 +350,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 21,
+      "orden_publico": 22,
       "incendio": 13,
       "vialidad": 4,
       "infraestructura_electrica": 14,
@@ -384,7 +384,7 @@
       "infraestructura_agua": 1
     },
     "Anzoategui": {
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "crisis_migratoria": 1,
       "vialidad": 1,
       "orden_publico": 3,
@@ -411,7 +411,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "orden_publico": 3,
       "inundacion": 3,
       "sismo": 1,
@@ -433,7 +433,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 5
+      "orden_publico": 6
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -484,7 +484,7 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 8,
       "inundacion": 3,
       "incendio": 1,
@@ -492,7 +492,7 @@
     },
     "Cojedes": {
       "orden_publico": 5,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 4
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
@@ -511,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 102,
+    "alto": 103,
     "critico": 51,
-    "medio": 177,
-    "bajo": 125,
+    "medio": 179,
+    "bajo": 130,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 65
+      "2026-09": 69
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 59
+      "2026-09": 63
     },
     "salud_publica": {
       "2026-07": 1,
