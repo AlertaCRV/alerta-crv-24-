@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/",
+        "fecha": "2026-09-28T14:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T14:15:00+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "fecha_deteccion": "2026-09-28T14:32:29.820225+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-28",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Cojedes",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/",
+        "fecha": "2026-09-28T14:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T14:15:00+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "fecha_deteccion": "2026-09-28T14:32:34.038281+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
+    "titulo": "Falla eléctrica en Cojedes",
+    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Guanare",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/",
+        "fecha": "2026-09-28T14:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T14:15:00+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "fecha_deteccion": "2026-09-28T14:32:38.914113+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-28",
+    "titulo": "Orden público en Municipio Guanare, Portuguesa",
+    "texto": "📌 Orden público en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Aragua",
     "municipio": null,
@@ -102,37 +180,6 @@
     "clave_dedup": "incendio::Miranda::2026-09-27",
     "titulo": "Incendio en Parroquia Petare, Municipio Sucre, Miranda",
     "texto": "📌 Incendio en Parroquia Petare, Municipio Sucre, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Petare, Municipio Sucre, Miranda\n🕒 Hecho reportado: 27/09/2026, 11:16 a.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/bomberos-de-caracas-sofocan-incendio-forestal-en-la-carretera/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/",
-        "fecha": "2026-09-27T19:00:00+00:00"
-      },
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/27/los-manifestantes-increparon-al-gobernador-de-cojedes-alberto-galindez-por-los-apagones-electricos/",
-        "fecha": "2026-09-27T20:40:22+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T20:40:22+00:00",
-    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
-    "fecha_deteccion": "2026-09-27T22:22:59.700693+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
-    "titulo": "Falla eléctrica en Cojedes",
-    "texto": "📌 Falla eléctrica en Cojedes\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 27/09/2026, 4:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 6:22 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/27/ola-de-apagones-desata-protestas-nocturnas-en-cojedes-27sep/\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/27/los-manifestantes-increparon-al-gobernador-de-cojedes-alberto-galindez-por-los-apagones-electricos/"
   },
   {
     "tipo": "inundacion",

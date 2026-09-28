@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-28T01:02:15.598659+00:00",
+  "actualizado": "2026-09-28T14:33:18.330724+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-27T20:46:02+00:00"
+    "hasta": "2026-09-28T14:15:00+00:00"
   },
-  "total_eventos": 462,
+  "total_eventos": 465,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
-    "infraestructura_electrica": 130,
+    "infraestructura_electrica": 132,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 104,
+    "orden_publico": 105,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -69,10 +69,10 @@
     },
     {
       "estado": "Barinas",
-      "total": 31,
+      "total": 32,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 4,
+        "alto": 5,
         "medio": 14,
         "bajo": 8,
         "critico": 5
@@ -177,11 +177,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 16,
+      "total": 17,
       "confirmados": 0,
       "por_severidad": {
         "medio": 6,
-        "bajo": 6,
+        "bajo": 7,
         "critico": 2,
         "alto": 2
       },
@@ -283,12 +283,12 @@
     },
     {
       "estado": "Cojedes",
-      "total": 7,
+      "total": 8,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 3,
         "medio": 2,
-        "alto": 2
+        "alto": 3
       },
       "severidad_dominante": "alto"
     },
@@ -371,7 +371,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 6,
-      "infraestructura_electrica": 10,
+      "infraestructura_electrica": 11,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -485,14 +485,14 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 4,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
     },
     "Cojedes": {
       "orden_publico": 5,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 3
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
@@ -511,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 100,
+    "alto": 102,
     "critico": 51,
     "medio": 177,
-    "bajo": 124,
+    "bajo": 125,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 63
+      "2026-09": 65
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 58
+      "2026-09": 59
     },
     "salud_publica": {
       "2026-07": 1,

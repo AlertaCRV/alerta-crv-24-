@@ -34,27 +34,6 @@
     "fecha_evento_temprana": "2026-09-25T10:16:34+00:00",
     "municipio": null
   },
-  "incendio::Anzoategui::2026-09-25": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T11:44:09.673624+00:00",
-    "fecha_evento_temprana": "2026-09-25T02:38:23+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Anzoategui::2026-09-25": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T11:44:35.299113+00:00",
-    "fecha_evento_temprana": "2026-09-25T01:41:38+00:00",
-    "municipio": null
-  },
-  "orden_publico::Aragua::2026-09-25": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-25T11:44:41.063683+00:00",
-    "fecha_evento_temprana": "2026-09-25T00:51:35+00:00",
-    "municipio": null
-  },
   "orden_publico::Lara::2026-09-25": {
     "severidad": "medio",
     "confirmado": true,
@@ -176,9 +155,9 @@
   },
   "infraestructura_electrica::Cojedes::2026-09-27": {
     "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-27T22:22:59.700693+00:00",
-    "fecha_evento_temprana": "2026-09-27T19:00:00+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T14:32:34.038281+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
     "municipio": null
   },
   "emergencia_metro::Distrito Capital::2026-09-27": {
@@ -201,5 +180,19 @@
     "fecha_deteccion": "2026-09-27T19:12:18.105827+00:00",
     "fecha_evento_temprana": "2026-09-27T17:15:22+00:00",
     "municipio": "Barinas"
+  },
+  "infraestructura_electrica::Barinas::2026-09-28": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T14:32:29.820225+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-09-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-28T14:32:38.914113+00:00",
+    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
+    "municipio": "Guanare"
   }
 }
