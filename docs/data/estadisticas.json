@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-29T00:44:05.018254+00:00",
+  "actualizado": "2026-09-29T06:23:00.416142+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-28T22:51:15+00:00"
+    "hasta": "2026-09-29T02:40:11+00:00"
   },
-  "total_eventos": 475,
+  "total_eventos": 476,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
-    "infraestructura_electrica": 136,
+    "infraestructura_electrica": 137,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 111,
@@ -247,6 +247,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Apure",
+      "total": 9,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 4,
+        "bajo": 2,
+        "medio": 2,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Falcon",
       "total": 9,
       "confirmados": 1,
@@ -266,18 +278,6 @@
         "bajo": 3,
         "medio": 3,
         "alto": 3
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Apure",
-      "total": 8,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 4,
-        "bajo": 2,
-        "medio": 1,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
     },
@@ -406,7 +406,7 @@
       "inundacion": 3,
       "orden_publico": 1,
       "infraestructura_agua": 1,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "sequia": 1
     },
     "Tachira": {
@@ -513,7 +513,7 @@
   "por_severidad": {
     "alto": 105,
     "critico": 51,
-    "medio": 179,
+    "medio": 180,
     "bajo": 130,
     "sin_clasificar": 10
   },
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 69
+      "2026-09": 70
     },
     "deslizamiento": {
       "2026-07": 3,
