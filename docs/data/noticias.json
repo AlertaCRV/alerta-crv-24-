@@ -4,26 +4,104 @@
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
+    "severidad": "critico",
+    "score": 0.65,
     "confirmado": false,
     "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/",
-        "fecha": "2026-09-29T16:47:20+00:00"
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/tres-presuntos-extorsionadores-abatidos-por-el-cicpc-en-san-carlos/",
+        "fecha": "2026-09-29T21:31:39+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-09-29T16:47:20+00:00",
-    "fecha_evento_temprana": "2026-09-29T16:47:20+00:00",
-    "fecha_deteccion": "2026-09-29T18:38:56.895124+00:00",
+    "fecha_evento": "2026-09-29T21:31:39+00:00",
+    "fecha_evento_temprana": "2026-09-29T21:31:39+00:00",
+    "fecha_deteccion": "2026-09-29T22:38:40.912925+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Zulia::2026-09-29",
     "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 29/09/2026, 12:47 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:38 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/"
+    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 29/09/2026, 5:31 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/tres-presuntos-extorsionadores-abatidos-por-el-cicpc-en-san-carlos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/",
+        "fecha": "2026-09-29T14:04:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T14:04:12+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "fecha_deteccion": "2026-09-29T22:38:53.924719+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-09-29",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 6:38 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/acarigua-ya-basta-vecinos-de-gonzalo-barrios-protestan-por-los-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=acarigua-ya-basta-vecinos-de-gonzalo-barrios-protestan-por-los-cortes-electricos",
+        "fecha": "2026-09-29T22:18:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T22:18:49+00:00",
+    "fecha_evento_temprana": "2026-09-29T22:18:49+00:00",
+    "fecha_deteccion": "2026-09-29T22:40:32.232605+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-29",
+    "titulo": "Orden público en Portuguesa",
+    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 29/09/2026, 6:18 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 6:40 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/acarigua-ya-basta-vecinos-de-gonzalo-barrios-protestan-por-los-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=acarigua-ya-basta-vecinos-de-gonzalo-barrios-protestan-por-los-cortes-electricos"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Aragua",
+    "municipio": "Sucre",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/sucesos/fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles",
+        "fecha": "2026-09-29T19:13:30+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T19:13:30+00:00",
+    "fecha_evento_temprana": "2026-09-29T19:13:30+00:00",
+    "fecha_deteccion": "2026-09-29T22:40:57.580351+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Aragua::2026-09-29",
+    "titulo": "Inundación en Municipio Sucre, Aragua",
+    "texto": "📌 Inundación en Municipio Sucre, Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Sucre, Aragua\n🕒 Hecho reportado: 29/09/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 6:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles"
   },
   {
     "tipo": "orden_publico",
@@ -50,32 +128,6 @@
     "clave_dedup": "orden_publico::Aragua::2026-09-29",
     "titulo": "Orden público en Aragua",
     "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/09/2026, 12:47 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/",
-        "fecha": "2026-09-29T14:04:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-29T14:04:12+00:00",
-    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
-    "fecha_deteccion": "2026-09-29T18:39:06.278906+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-09-29",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
   },
   {
     "tipo": "orden_publico",
@@ -2996,57 +3048,5 @@
     "clave_dedup": "inundacion::Tachira::2026-09-15",
     "titulo": "Inundación en Tachira",
     "texto": "📌 Inundación en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 15/09/2026, 7:24 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/",
-        "fecha": "2026-09-15T15:59:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-15T15:59:09+00:00",
-    "fecha_evento_temprana": "2026-09-15T15:59:09+00:00",
-    "fecha_deteccion": "2026-09-15T19:20:28.394915+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Zulia::2026-09-15",
-    "titulo": "Incendio en Municipio Maracaibo, Zulia",
-    "texto": "📌 Incendio en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 15/09/2026, 11:59 a.m.\n🔎 Detectado por el sistema: 15/09/2026, 3:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/zulia-l-explosion-en-vivienda-por-fuga-de-gas-en-maracaibo-hay-un-muerto-y-dos-heridos/"
-  },
-  {
-    "tipo": "crisis_migratoria",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/15/video-por-falta-de-vivienda-familias-desplazadas-de-la-guaira-postergan-el-regreso-a-clases-15sep/",
-        "fecha": "2026-09-15T17:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-15T17:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-15T17:30:00+00:00",
-    "fecha_deteccion": "2026-09-15T19:21:07.801712+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "crisis_migratoria::La Guaira::2026-09-15",
-    "titulo": "Crisis migratoria en La Guaira",
-    "texto": "📌 Crisis migratoria en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 15/09/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 3:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/15/video-por-falta-de-vivienda-familias-desplazadas-de-la-guaira-postergan-el-regreso-a-clases-15sep/"
   }
 ]
