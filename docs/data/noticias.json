@@ -1,5 +1,161 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/",
+        "fecha": "2026-09-29T16:47:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T16:47:20+00:00",
+    "fecha_evento_temprana": "2026-09-29T16:47:20+00:00",
+    "fecha_deteccion": "2026-09-29T18:38:56.895124+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-09-29",
+    "titulo": "Orden público en Zulia",
+    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 29/09/2026, 12:47 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:38 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/",
+        "fecha": "2026-09-29T16:47:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T16:47:20+00:00",
+    "fecha_evento_temprana": "2026-09-29T16:47:20+00:00",
+    "fecha_deteccion": "2026-09-29T18:39:02.041626+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Aragua::2026-09-29",
+    "titulo": "Orden público en Aragua",
+    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/09/2026, 12:47 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sin-categoria/wayuu-levantan-bloqueo-de-frontera-con-colombia-familiares-de-comerciante-suspenden-la-medida-de-protesta/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/",
+        "fecha": "2026-09-29T14:04:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T14:04:12+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "fecha_deteccion": "2026-09-29T18:39:06.278906+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-09-29",
+    "titulo": "Orden público en Bolivar",
+    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/",
+        "fecha": "2026-09-29T14:04:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T14:04:12+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "fecha_deteccion": "2026-09-29T18:39:10.811756+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-09-29",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/",
+        "fecha": "2026-09-29T14:04:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T14:04:12+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "fecha_deteccion": "2026-09-29T18:39:22.893670+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-09-29",
+    "titulo": "Orden público en Monagas",
+    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/",
+        "fecha": "2026-09-29T15:27:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T15:27:08+00:00",
+    "fecha_evento_temprana": "2026-09-29T15:27:08+00:00",
+    "fecha_deteccion": "2026-09-29T18:40:17.965142+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-09-29",
+    "titulo": "Falla eléctrica en Aragua",
+    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/09/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Sucre",
     "municipio": null,

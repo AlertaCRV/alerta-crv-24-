@@ -152,5 +152,47 @@
     "fecha_deteccion": "2026-09-29T13:07:14.421658+00:00",
     "fecha_evento_temprana": "2026-09-29T12:55:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Zulia::2026-09-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:38:56.895124+00:00",
+    "fecha_evento_temprana": "2026-09-29T16:47:20+00:00",
+    "municipio": null
+  },
+  "orden_publico::Aragua::2026-09-29": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:39:02.041626+00:00",
+    "fecha_evento_temprana": "2026-09-29T16:47:20+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-09-29": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:39:06.278906+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-09-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:39:10.811756+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-09-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:39:22.893670+00:00",
+    "fecha_evento_temprana": "2026-09-29T14:04:12+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Aragua::2026-09-29": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-29T18:40:17.965142+00:00",
+    "fecha_evento_temprana": "2026-09-29T15:27:08+00:00",
+    "municipio": null
   }
 }

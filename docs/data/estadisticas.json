@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-29T13:08:14.048479+00:00",
+  "actualizado": "2026-09-29T18:41:14.126383+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-29T12:55:00+00:00"
+    "hasta": "2026-09-29T16:47:20+00:00"
   },
-  "total_eventos": 477,
+  "total_eventos": 483,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 70,
-    "infraestructura_electrica": 137,
+    "infraestructura_electrica": 138,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 111,
+    "orden_publico": 116,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 75,
+      "total": 76,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 22,
-        "bajo": 24,
+        "bajo": 25,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -43,12 +43,12 @@
     },
     {
       "estado": "Zulia",
-      "total": 46,
+      "total": 47,
       "confirmados": 8,
       "por_severidad": {
         "medio": 23,
         "critico": 3,
-        "bajo": 10,
+        "bajo": 11,
         "sin_clasificar": 1,
         "alto": 9
       },
@@ -81,12 +81,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 28,
+      "total": 30,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
-        "medio": 8,
-        "alto": 8,
+        "medio": 9,
+        "alto": 9,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -116,6 +116,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Bolivar",
+      "total": 20,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 11,
+        "critico": 1,
+        "alto": 2,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Tachira",
       "total": 20,
       "confirmados": 0,
@@ -128,25 +141,12 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Bolivar",
-      "total": 19,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 10,
-        "critico": 1,
-        "alto": 2,
-        "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Monagas",
-      "total": 18,
+      "total": 19,
       "confirmados": 0,
       "por_severidad": {
         "medio": 9,
-        "bajo": 4,
+        "bajo": 5,
         "alto": 5
       },
       "severidad_dominante": "alto"
@@ -338,7 +338,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 10,
+      "orden_publico": 11,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -350,7 +350,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 22,
+      "orden_publico": 23,
       "incendio": 13,
       "vialidad": 4,
       "infraestructura_electrica": 14,
@@ -394,7 +394,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 8,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1,
@@ -425,7 +425,7 @@
       "vialidad": 2,
       "infraestructura_agua": 4,
       "incendio": 1,
-      "orden_publico": 2
+      "orden_publico": 3
     },
     "Miranda": {
       "incendio": 4,
@@ -458,9 +458,9 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 10,
+      "orden_publico": 11,
       "inundacion": 8,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -511,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 106,
+    "alto": 107,
     "critico": 51,
-    "medio": 180,
-    "bajo": 130,
+    "medio": 182,
+    "bajo": 133,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 70
+      "2026-09": 71
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 65
+      "2026-09": 70
     },
     "salud_publica": {
       "2026-07": 1,
