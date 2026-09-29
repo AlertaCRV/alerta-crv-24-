@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-09-29T06:23:00.416142+00:00",
+  "actualizado": "2026-09-29T13:08:14.048479+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-29T02:40:11+00:00"
+    "hasta": "2026-09-29T12:55:00+00:00"
   },
-  "total_eventos": 476,
+  "total_eventos": 477,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 69,
+    "inundacion": 70,
     "infraestructura_electrica": 137,
     "deslizamiento": 30,
     "colapso_estructural": 4,
@@ -200,6 +200,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Sucre",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Trujillo",
       "total": 13,
       "confirmados": 0,
@@ -209,17 +220,6 @@
         "critico": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Sucre",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 6,
-        "alto": 2
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -378,7 +378,7 @@
       "salud_publica": 1
     },
     "Sucre": {
-      "inundacion": 2,
+      "inundacion": 3,
       "orden_publico": 5,
       "infraestructura_electrica": 5,
       "infraestructura_agua": 1
@@ -511,7 +511,7 @@
     }
   },
   "por_severidad": {
-    "alto": 105,
+    "alto": 106,
     "critico": 51,
     "medio": 180,
     "bajo": 130,
@@ -526,7 +526,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 14
+      "2026-09": 15
     },
     "infraestructura_electrica": {
       "2026-07": 5,
