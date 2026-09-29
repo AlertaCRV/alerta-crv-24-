@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-29T18:41:14.126383+00:00",
+  "actualizado": "2026-09-29T22:42:01.063750+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-29T16:47:20+00:00"
+    "hasta": "2026-09-29T22:18:49+00:00"
   },
-  "total_eventos": 483,
+  "total_eventos": 487,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 70,
+    "inundacion": 71,
     "infraestructura_electrica": 138,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 116,
+    "orden_publico": 119,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,11 +43,11 @@
     },
     {
       "estado": "Zulia",
-      "total": 47,
+      "total": 48,
       "confirmados": 8,
       "por_severidad": {
         "medio": 23,
-        "critico": 3,
+        "critico": 4,
         "bajo": 11,
         "sin_clasificar": 1,
         "alto": 9
@@ -81,11 +81,11 @@
     },
     {
       "estado": "Aragua",
-      "total": 30,
+      "total": 31,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
-        "medio": 9,
+        "medio": 10,
         "alto": 9,
         "critico": 5
       },
@@ -104,6 +104,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Bolivar",
+      "total": 21,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 6,
+        "medio": 11,
+        "critico": 1,
+        "alto": 2,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Miranda",
       "total": 21,
       "confirmados": 2,
@@ -112,19 +125,6 @@
         "medio": 6,
         "critico": 4,
         "bajo": 7
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 20,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 11,
-        "critico": 1,
-        "alto": 2,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -152,6 +152,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Portuguesa",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 8,
+        "critico": 2,
+        "alto": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -174,18 +186,6 @@
         "alto": 9
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 18,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 7,
-        "bajo": 7,
-        "critico": 2,
-        "alto": 2
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Carabobo",
@@ -338,7 +338,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 11,
+      "orden_publico": 12,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -394,7 +394,7 @@
     },
     "Bolivar": {
       "infraestructura_electrica": 8,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "escasez_combustible": 2,
       "incendio": 2,
       "inundacion": 1,
@@ -459,7 +459,7 @@
     },
     "Aragua": {
       "orden_publico": 11,
-      "inundacion": 8,
+      "inundacion": 9,
       "infraestructura_electrica": 5,
       "accidente_transporte": 1,
       "salud_publica": 1,
@@ -485,7 +485,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 5,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1
@@ -512,9 +512,9 @@
   },
   "por_severidad": {
     "alto": 107,
-    "critico": 51,
-    "medio": 182,
-    "bajo": 133,
+    "critico": 52,
+    "medio": 183,
+    "bajo": 135,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -526,7 +526,7 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 15
+      "2026-09": 16
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 70
+      "2026-09": 73
     },
     "salud_publica": {
       "2026-07": 1,
