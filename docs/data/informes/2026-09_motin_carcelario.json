@@ -3,7 +3,7 @@
   "tipo": "motin_carcelario",
   "tipo_label": "Motín carcelario",
   "cerrado": false,
-  "generado": "2026-09-28T01:05:59.742657+00:00",
+  "generado": "2026-09-29T00:47:35.433125+00:00",
   "actualizado_hasta": "2026-09-27T15:22:53.815297+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 0,
     "actual": 1
   },
-  "narrativa": "En el mes de septiembre de 2026 se registró un único incidente de motín carcelario en el territorio nacional, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún evento (comparación proporcionada). Este hecho eleva la cifra de incidentes en la categoría a 1, frente a los 0 registrados en agosto de 2026.\n\nEl único suceso ocurrido fue el presunto motín en la cárcel de Santa Ana, ubicada en el estado Táchira, el cual ha sido catalogado con alta severidad por el sistema de monitoreo (Primicia). Las autoridades del Ministerio para el Servicio Penitenciario aún no han emitido pronunciamientos oficiales al respecto (Primicia). Hasta el momento, no se han confirmado daños materiales, heridos o víctimas fatales, aunque la naturaleza del hecho justifica la clasificación de alta gravedad.\n\nLa ausencia de información oficial por parte del Ministerio para el Servicio Penitenciario dificulta una evaluación completa del impacto del motín y la adopción de medidas correctivas inmediatas (Primicia). La Cruz Roja Venezolana continuará siguiendo de cerca la evolución de este caso y mantendrá la alerta para posibles requerimientos de asistencia humanitaria en caso de que se presenten consecuencias mayores.",
+  "narrativa": "Durante septiembre de 2026 se registró un solo incidente de motín carcelario a nivel nacional, contrastando con la ausencia de casos en agosto de 2026 (0 evento(s) registrados entonces vs. 1 en este período).\n\nEl único hecho ocurrió en la cárcel de Santa Ana, ubicada en el estado Táchira, donde se reportó un presunto motín (Primicia). Hasta el momento, el Ministerio para el Servicio Penitenciario no ha emitido pronunciamiento alguno (Primicia).\n\nLa Cruz Roja Venezolana mantiene la vigilancia y está preparada para atender posibles consecuencias, aunque no se han reportado heridos ni daños materiales confirmados en este incidente.",
   "fuentes": [
     {
       "nombre": "Primicia (Bolivar)",

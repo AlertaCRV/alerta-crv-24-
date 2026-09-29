@@ -1,6 +1,68 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 2.0,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/",
+        "fecha": "2026-09-28T22:51:15+00:00"
+      },
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
+        "fecha": "2026-09-28T20:31:47+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/",
+        "fecha": "2026-09-28T17:37:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T22:51:15+00:00",
+    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
+    "fecha_deteccion": "2026-09-29T00:42:03.096914+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-09-28",
+    "titulo": "Orden público en Zulia",
+    "texto": "📌 Orden público en Zulia\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 28/09/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 8:42 p.m.\n📊 Fuentes independientes: 3 (score 2.0)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/\n  • La Manana (Falcon): https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/",
+        "fecha": "2026-09-28T22:51:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-28T22:51:15+00:00",
+    "fecha_evento_temprana": "2026-09-28T22:51:15+00:00",
+    "fecha_deteccion": "2026-09-29T00:42:12.232923+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Aragua::2026-09-28",
+    "titulo": "Orden público en Aragua",
+    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 28/09/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 8:42 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
@@ -24,37 +86,6 @@
     "clave_dedup": "orden_publico::Distrito Capital::2026-09-28",
     "titulo": "Orden público en Distrito Capital",
     "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 28/09/2026, 4:31 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 1.25,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
-        "fecha": "2026-09-28T20:31:47+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/",
-        "fecha": "2026-09-28T17:37:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T20:31:47+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
-    "fecha_deteccion": "2026-09-28T20:45:50.771957+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-09-28",
-    "titulo": "Orden público en Municipio Maracaibo, Zulia",
-    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 28/09/2026, 4:31 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/\n  • La Manana (Falcon): https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/"
   },
   {
     "tipo": "infraestructura_electrica",
