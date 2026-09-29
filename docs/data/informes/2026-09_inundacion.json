@@ -3,7 +3,7 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-28T01:05:46.972199+00:00",
+  "generado": "2026-09-29T00:47:30.401992+00:00",
   "actualizado_hasta": "2026-09-27T19:12:18.105827+00:00",
   "total_eventos": 14,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 48,
     "actual": 14
   },
-  "narrativa": "En el mes de septiembre de 2026 se registraron catorce eventos de inundación en distintas regiones de Venezuela, una reducción notable frente a los cuarenta y ocho eventos contabilizados en el mes anterior (agosto) (48 evento(s) registrados entonces vs. 14 en este período). Las precipitaciones intensas provocaron desbordes de ríos y quebradas, afectando tanto a áreas rurales como urbanas y generando pérdidas materiales y, en algunos casos, víctimas fatales.\n\nEn Táchira, la crecida del río Burgua socavó los cimientos del puente de guerra de 60 metros, provocando su colapso y dejando a aproximadamente ocho mil productores agrícolas atrapados en la zona durante al menos 21 días (Diario La Nacion). La interrupción del paso obligó a los agricultores a enfrentar la descomposición acelerada de productos lácteos y la paralización de cosechas, con pérdidas irreversibles y una respuesta burocrática que se extiende a un plazo de un mes.\n\nEn el estado Trujillo, las intensas lluvias provocaron el desbordamiento de una quebrada en el municipio Valera, arrastrando a una persona que fue hallada sin vida en la quebrada de Escuque (La Verdad de Monagas). Este incidente, catalogado con severidad crítica, subraya el riesgo de corrientes rápidas en zonas montañosas durante eventos de alta precipitación.\n\nEn Yaracuy, las lluvias del 26 de septiembre elevaron el caudal del río Guama, lo que derivó en la fractura del puente ubicado en la Carretera Panamericana, en el municipio Sucre (Yaracuy al Dia). El colapso del puente interrumpió el tránsito vehicular y aisló a comunidades agrícolas, que permanecieron incomunicadas mientras se evaluaban los daños estructurales y se coordinaban labores de reparación.",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 14 eventos de inundación, una disminución respecto a los 48 eventos del mes anterior (agosto 2026). \n\nEn Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando atrapados a aproximadamente 8 mil productores agrícolas que enfrentan pérdidas de cosechas y productos lácteos (Diario La Nacion). \n\nEn el estado Trujillo, las intensas lluvias generaron el desbordamiento de una quebrada en el municipio Escuque, arrastrando a una persona que fue encontrada sin vida en la zona (La Verdad de Monagas). \n\nEn Yaracuy, la fuerte crecida del río Guama en el municipio Sucre provocó la fractura del puente ubicado en la Carretera Panamericana, interrumpiendo el tránsito y afectando a la población local (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",

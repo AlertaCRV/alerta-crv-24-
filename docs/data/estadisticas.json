@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-28T20:48:40.700527+00:00",
+  "actualizado": "2026-09-29T00:44:05.018254+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-28T20:31:47+00:00"
+    "hasta": "2026-09-28T22:51:15+00:00"
   },
-  "total_eventos": 473,
+  "total_eventos": 475,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 69,
     "infraestructura_electrica": 136,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 109,
+    "orden_publico": 111,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 45,
-      "confirmados": 7,
+      "total": 46,
+      "confirmados": 8,
       "por_severidad": {
         "medio": 23,
         "critico": 3,
         "bajo": 10,
         "sin_clasificar": 1,
-        "alto": 8
+        "alto": 9
       },
       "severidad_dominante": "critico"
     },
@@ -81,12 +81,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 27,
+      "total": 28,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
         "medio": 8,
-        "alto": 7,
+        "alto": 8,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -338,7 +338,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 9,
+      "orden_publico": 10,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -458,7 +458,7 @@
       "infraestructura_agua": 1
     },
     "Aragua": {
-      "orden_publico": 9,
+      "orden_publico": 10,
       "inundacion": 8,
       "infraestructura_electrica": 4,
       "accidente_transporte": 1,
@@ -511,7 +511,7 @@
     }
   },
   "por_severidad": {
-    "alto": 103,
+    "alto": 105,
     "critico": 51,
     "medio": 179,
     "bajo": 130,
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 63
+      "2026-09": 65
     },
     "salud_publica": {
       "2026-07": 1,
