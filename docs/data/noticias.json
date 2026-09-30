@@ -1,5 +1,187 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Portuguesa",
+    "municipio": "Páez",
+    "parroquia": "Payara",
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/bolivar-18-apagones-en-un-dia-crisis-electrica-golpea-a-san-felix/",
+        "fecha": "2026-09-30T17:55:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T17:55:21+00:00",
+    "fecha_evento_temprana": "2026-09-30T17:55:21+00:00",
+    "fecha_deteccion": "2026-09-30T19:22:18.695586+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-09-30",
+    "titulo": "Falla eléctrica en Parroquia Payara, Municipio Páez, Portuguesa",
+    "texto": "📌 Falla eléctrica en Parroquia Payara, Municipio Páez, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Payara, Municipio Páez, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-18-apagones-en-un-dia-crisis-electrica-golpea-a-san-felix/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Páez",
+    "parroquia": "Payara",
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/portuguesa-payara-cumple-mas-24-horas-de-protesta-por-apagones-y-mantiene-paralizados-a-mas-de-40-camiones-en-la-via/",
+        "fecha": "2026-09-30T17:09:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T17:09:42+00:00",
+    "fecha_evento_temprana": "2026-09-30T17:09:42+00:00",
+    "fecha_deteccion": "2026-09-30T19:22:22.839332+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-09-30",
+    "titulo": "Orden público en Parroquia Payara, Municipio Páez, Portuguesa",
+    "texto": "📌 Orden público en Parroquia Payara, Municipio Páez, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Payara, Municipio Páez, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 1:09 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/portuguesa-payara-cumple-mas-24-horas-de-protesta-por-apagones-y-mantiene-paralizados-a-mas-de-40-camiones-en-la-via/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/",
+        "fecha": "2026-09-30T14:26:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T14:26:38+00:00",
+    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
+    "fecha_deteccion": "2026-09-30T19:22:28.348758+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Falcon::2026-09-30",
+    "titulo": "Falla de agua en Falcon",
+    "texto": "📌 Falla de agua en Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 30/09/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": "Urdaneta",
+    "parroquia": "Siquisique",
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/",
+        "fecha": "2026-09-30T14:26:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T14:26:38+00:00",
+    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
+    "fecha_deteccion": "2026-09-30T19:22:40.877576+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-09-30",
+    "titulo": "Orden público en Parroquia Siquisique, Municipio Urdaneta, Lara",
+    "texto": "📌 Orden público en Parroquia Siquisique, Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Siquisique, Municipio Urdaneta, Lara\n🕒 Hecho reportado: 30/09/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": "San Cristóbal",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/protesta-frente-a-corpoelec/",
+        "fecha": "2026-09-30T16:49:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T16:49:29+00:00",
+    "fecha_evento_temprana": "2026-09-30T16:49:29+00:00",
+    "fecha_deteccion": "2026-09-30T19:22:55.569502+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-09-30",
+    "titulo": "Orden público en Municipio San Cristóbal, Tachira",
+    "texto": "📌 Orden público en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 30/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/protesta-frente-a-corpoelec/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Trujillo",
+    "municipio": "San Rafael De Carvajal",
+    "parroquia": "Carvajal",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/marcos-montilla-la-indignacion-popular-se-desbordo-en-las-calles-ante-el-colapso-del-agua-y-los-apagones/",
+        "fecha": "2026-09-30T15:24:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T15:24:51+00:00",
+    "fecha_evento_temprana": "2026-09-30T15:24:51+00:00",
+    "fecha_deteccion": "2026-09-30T19:23:58.308280+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Trujillo::2026-09-30",
+    "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
+    "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 30/09/2026, 11:24 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:23 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/marcos-montilla-la-indignacion-popular-se-desbordo-en-las-calles-ante-el-colapso-del-agua-y-los-apagones/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Lara",
+    "municipio": "Urdaneta",
+    "parroquia": "Siquisique",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/fallas-servicios-publicos-urdaneta/",
+        "fecha": "2026-09-30T14:37:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T14:37:29+00:00",
+    "fecha_evento_temprana": "2026-09-30T14:37:29+00:00",
+    "fecha_deteccion": "2026-09-30T19:24:28.273701+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Lara::2026-09-30",
+    "titulo": "Falla eléctrica en Parroquia Siquisique, Municipio Urdaneta, Lara",
+    "texto": "📌 Falla eléctrica en Parroquia Siquisique, Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Siquisique, Municipio Urdaneta, Lara\n🕒 Hecho reportado: 30/09/2026, 10:37 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/fallas-servicios-publicos-urdaneta/"
+  },
+  {
     "tipo": "vialidad",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -2944,83 +3126,5 @@
     "clave_dedup": "orden_publico::Yaracuy::2026-09-16",
     "titulo": "Orden público en Municipio San Felipe, Yaracuy",
     "texto": "📌 Orden público en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 16/09/2026, 4:56 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 5:49 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/familiares-de-privados-de-libertad-mantendran-las-protestas-pacificas-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=familiares-de-privados-de-libertad-mantendran-las-protestas-pacificas-yaracuy"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/",
-        "fecha": "2026-09-16T18:33:44+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-16T18:33:44+00:00",
-    "fecha_evento_temprana": "2026-09-16T18:33:44+00:00",
-    "fecha_deteccion": "2026-09-16T18:49:13.830791+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-16",
-    "titulo": "Falla eléctrica en Barinas",
-    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/09/2026, 2:33 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-de-8-y-hasta-12-horas-provocan-protestas-y-preocupacion-por-la-atencion-medica-en-barinas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": "Puerto La Cruz",
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/",
-        "fecha": "2026-09-16T18:13:15+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-16T18:13:15+00:00",
-    "fecha_evento_temprana": "2026-09-16T18:13:15+00:00",
-    "fecha_deteccion": "2026-09-16T18:49:17.689183+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Anzoategui::2026-09-16",
-    "titulo": "Orden público en Parroquia Puerto La Cruz, Anzoategui",
-    "texto": "📌 Orden público en Parroquia Puerto La Cruz, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Puerto La Cruz, Anzoategui\n🕒 Hecho reportado: 16/09/2026, 2:13 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/conmocion-en-anzoategui-oficial-de-polisotillo-asesina-a-su-pareja-y-a-sus-dos-hijastras/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": "Acevedo",
-    "parroquia": "Caucagua",
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/",
-        "fecha": "2026-09-16T16:18:50+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-16T16:18:50+00:00",
-    "fecha_evento_temprana": "2026-09-16T16:18:50+00:00",
-    "fecha_deteccion": "2026-09-16T18:49:30.022166+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-16",
-    "titulo": "Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda",
-    "texto": "📌 Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Caucagua, Municipio Acevedo, Miranda\n🕒 Hecho reportado: 16/09/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
   }
 ]
