@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-29T22:42:01.063750+00:00",
+  "actualizado": "2026-09-30T01:40:02.293141+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-09-29T22:18:49+00:00"
   },
-  "total_eventos": 487,
+  "total_eventos": 488,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 138,
+    "infraestructura_electrica": 139,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 119,
@@ -81,11 +81,11 @@
     },
     {
       "estado": "Aragua",
-      "total": 31,
+      "total": 32,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
-        "medio": 10,
+        "medio": 11,
         "alto": 9,
         "critico": 5
       },
@@ -460,7 +460,7 @@
     "Aragua": {
       "orden_publico": 11,
       "inundacion": 9,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -513,7 +513,7 @@
   "por_severidad": {
     "alto": 107,
     "critico": 52,
-    "medio": 183,
+    "medio": 184,
     "bajo": 135,
     "sin_clasificar": 10
   },
@@ -531,7 +531,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 71
+      "2026-09": 72
     },
     "deslizamiento": {
       "2026-07": 3,
