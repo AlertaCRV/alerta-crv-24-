@@ -6,25 +6,11 @@
     "fecha_evento_temprana": "2026-09-27T18:30:00+00:00",
     "municipio": null
   },
-  "incendio::Miranda::2026-09-27": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-27T22:22:09.149119+00:00",
-    "fecha_evento_temprana": "2026-09-27T15:16:16+00:00",
-    "municipio": "Sucre"
-  },
   "infraestructura_electrica::Cojedes::2026-09-27": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-09-28T20:48:37.332428+00:00",
     "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
-    "municipio": null
-  },
-  "emergencia_metro::Distrito Capital::2026-09-27": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-27T22:21:56.360448+00:00",
-    "fecha_evento_temprana": "2026-09-27T20:46:02+00:00",
     "municipio": null
   },
   "orden_publico::Aragua::2026-09-27": {
@@ -182,17 +168,17 @@
     "municipio": null
   },
   "vialidad::Portuguesa::2026-09-30": {
-    "severidad": "alto",
+    "severidad": "critico",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-30T14:10:49.124933+00:00",
-    "fecha_evento_temprana": "2026-09-30T13:52:09+00:00",
+    "fecha_deteccion": "2026-09-30T23:08:33.187750+00:00",
+    "fecha_evento_temprana": "2026-09-30T20:03:51+00:00",
     "municipio": "Ospino"
   },
   "infraestructura_electrica::Portuguesa::2026-09-30": {
-    "severidad": "alto",
+    "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:22:18.695586+00:00",
-    "fecha_evento_temprana": "2026-09-30T17:55:21+00:00",
+    "fecha_deteccion": "2026-09-30T23:09:06.650768+00:00",
+    "fecha_evento_temprana": "2026-09-30T21:31:53+00:00",
     "municipio": "Páez"
   },
   "orden_publico::Portuguesa::2026-09-30": {
@@ -236,5 +222,12 @@
     "fecha_deteccion": "2026-09-30T19:24:28.273701+00:00",
     "fecha_evento_temprana": "2026-09-30T14:37:29+00:00",
     "municipio": "Urdaneta"
+  },
+  "infraestructura_electrica::Cojedes::2026-09-30": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-09-30T23:09:20.239388+00:00",
+    "fecha_evento_temprana": "2026-09-30T15:43:05+00:00",
+    "municipio": "Tinaquillo"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-09-30T19:25:11.808907+00:00",
+  "actualizado": "2026-09-30T23:10:12.057729+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-30T17:55:21+00:00"
+    "hasta": "2026-09-30T21:31:53+00:00"
   },
-  "total_eventos": 497,
+  "total_eventos": 500,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 142,
+    "infraestructura_electrica": 144,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 123,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
-    "vialidad": 18,
+    "vialidad": 19,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -93,12 +93,12 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 22,
+      "total": 24,
       "confirmados": 1,
       "por_severidad": {
         "medio": 7,
-        "bajo": 8,
-        "critico": 2,
+        "bajo": 9,
+        "critico": 3,
         "alto": 5
       },
       "severidad_dominante": "critico"
@@ -260,6 +260,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Cojedes",
+      "total": 10,
+      "confirmados": 3,
+      "por_severidad": {
+        "bajo": 3,
+        "medio": 4,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Apure",
       "total": 9,
       "confirmados": 0,
@@ -268,17 +279,6 @@
         "bajo": 2,
         "medio": 2,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Cojedes",
-      "total": 9,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 3,
-        "medio": 3,
-        "alto": 3
       },
       "severidad_dominante": "alto"
     },
@@ -486,16 +486,16 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "orden_publico": 10,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
-      "vialidad": 1
+      "vialidad": 2
     },
     "Cojedes": {
       "orden_publico": 5,
-      "infraestructura_electrica": 4
+      "infraestructura_electrica": 5
     },
     "La Guaira": {
       "infraestructura_electrica": 2,
@@ -515,9 +515,9 @@
   },
   "por_severidad": {
     "alto": 112,
-    "critico": 52,
-    "medio": 186,
-    "bajo": 137,
+    "critico": 53,
+    "medio": 187,
+    "bajo": 138,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -534,7 +534,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 75
+      "2026-09": 77
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -568,7 +568,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 8
+      "2026-09": 9
     },
     "sismo": {
       "2026-08": 5,
