@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-09-30T07:29:59.818845+00:00",
+  "actualizado": "2026-09-30T14:10:49.518723+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-30T01:58:13+00:00"
+    "hasta": "2026-09-30T13:52:09+00:00"
   },
-  "total_eventos": 489,
+  "total_eventos": 490,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
@@ -15,7 +15,7 @@
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
-    "vialidad": 17,
+    "vialidad": 18,
     "sismo": 7,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -141,6 +141,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Portuguesa",
+      "total": 20,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 8,
+        "critico": 2,
+        "alto": 3
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Monagas",
       "total": 19,
       "confirmados": 0,
@@ -161,18 +173,6 @@
         "alto": 9
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 19,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 7,
-        "bajo": 8,
-        "critico": 2,
-        "alto": 2
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Yaracuy",
@@ -488,7 +488,8 @@
       "orden_publico": 9,
       "inundacion": 3,
       "incendio": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "vialidad": 1
     },
     "Cojedes": {
       "orden_publico": 5,
@@ -511,7 +512,7 @@
     }
   },
   "por_severidad": {
-    "alto": 107,
+    "alto": 108,
     "critico": 52,
     "medio": 184,
     "bajo": 136,
@@ -565,7 +566,7 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 7
+      "2026-09": 8
     },
     "sismo": {
       "2026-08": 5,

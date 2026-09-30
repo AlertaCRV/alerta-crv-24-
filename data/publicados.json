@@ -208,5 +208,12 @@
     "fecha_deteccion": "2026-09-30T07:29:59.187486+00:00",
     "fecha_evento_temprana": "2026-09-30T01:58:13+00:00",
     "municipio": null
+  },
+  "vialidad::Portuguesa::2026-09-30": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-09-30T14:10:49.124933+00:00",
+    "fecha_evento_temprana": "2026-09-30T13:52:09+00:00",
+    "municipio": "Ospino"
   }
 }
