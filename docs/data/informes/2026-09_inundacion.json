@@ -3,19 +3,23 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-09-29T00:47:30.401992+00:00",
-  "actualizado_hasta": "2026-09-27T19:12:18.105827+00:00",
-  "total_eventos": 14,
+  "generado": "2026-09-30T07:32:03.437323+00:00",
+  "actualizado_hasta": "2026-09-29T22:40:57.580351+00:00",
+  "total_eventos": 16,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-08",
     "anterior": 48,
-    "actual": 14
+    "actual": 16
   },
-  "narrativa": "Durante el mes de septiembre de 2026 se registraron 14 eventos de inundación, una disminución respecto a los 48 eventos del mes anterior (agosto 2026). \n\nEn Táchira, la crecida del río Burgua provocó el colapso del puente de guerra de 60 metros, dejando atrapados a aproximadamente 8 mil productores agrícolas que enfrentan pérdidas de cosechas y productos lácteos (Diario La Nacion). \n\nEn el estado Trujillo, las intensas lluvias generaron el desbordamiento de una quebrada en el municipio Escuque, arrastrando a una persona que fue encontrada sin vida en la zona (La Verdad de Monagas). \n\nEn Yaracuy, la fuerte crecida del río Guama en el municipio Sucre provocó la fractura del puente ubicado en la Carretera Panamericana, interrumpiendo el tránsito y afectando a la población local (Yaracuy al Dia).",
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 16 eventos de inundación en Venezuela, una disminución notable respecto a los 48 eventos del mes anterior (agosto) (48 evento(s) registrados entonces vs. 16 en este período). La reducción se observa pese a la persistencia de lluvias intensas que provocaron daños materiales y, en algunos casos, víctimas fatales.\n\nEn Táchira, la crecida del río Burgua socavó los cimientos del puente de guerra, provocando su colapso y dejando acorralados a unos 8 mil productores agrícolas que enfrentan pérdidas irreversibles en sus cultivos y ganado (Diario La Nacion). La severidad del evento se calificó como alta.\n\nEn el estado Trujillo, una fuerte lluvia generó el desbordamiento de una quebrada en el municipio Valera, arrastrando a una persona que fue encontrada sin vida en la quebrada Escuque (La Verdad de Monagas). Este suceso fue catalogado con severidad crítica.\n\nEn Yaracuy, las intensas precipitaciones del 26 de septiembre elevaron el caudal del río Guama, provocando la fractura del puente ubicado en la Carretera Panamericana dentro del municipio Sucre (Yaracuy al Dia). El daño estructural del puente y la interrupción del tránsito fueron considerados de alta severidad.\n\nEn el estado Sucre, el desbordamiento del río Agua Blanca movilizó a más de 150 funcionarios para atender la emergencia; sin embargo, no se reportaron personas lesionadas ni pérdidas humanas (La Prensa de Monagas). A pesar de la ausencia de víctimas, el evento se clasificó como de alta severidad debido a los potenciales riesgos para la población y la infraestructura.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/mas-de-150-funcionarios-atienden-la-emergencia-por-el-desbordamiento-del-rio-agua-blanca-en-sucre/"
     },
     {
       "nombre": "La Verdad de Monagas",
@@ -68,6 +72,10 @@
     {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/yaracuy/local/productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=productores-de-veroes-solicitaron-la-urgente-canalizacion-del-rio-yaracuy"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-en-cagua-causaron-apagones-inundaciones-y-caida-de-arboles"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-30T01:40:02.293141+00:00",
+  "actualizado": "2026-09-30T07:29:59.818845+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-29T22:18:49+00:00"
+    "hasta": "2026-09-30T01:58:13+00:00"
   },
-  "total_eventos": 488,
+  "total_eventos": 489,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
     "infraestructura_electrica": 139,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 119,
+    "orden_publico": 120,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -152,6 +152,17 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Merida",
+      "total": 19,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 5,
+        "alto": 9
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Portuguesa",
       "total": 19,
       "confirmados": 1,
@@ -175,17 +186,6 @@
         "alto": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 4,
-        "alto": 9
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Carabobo",
@@ -470,7 +470,7 @@
     "Merida": {
       "infraestructura_electrica": 5,
       "vialidad": 1,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "inundacion": 1,
       "deslizamiento": 2,
       "colapso_estructural": 1,
@@ -514,7 +514,7 @@
     "alto": 107,
     "critico": 52,
     "medio": 184,
-    "bajo": 135,
+    "bajo": 136,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -546,7 +546,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 73
+      "2026-09": 74
     },
     "salud_publica": {
       "2026-07": 1,

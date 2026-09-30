@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html",
+        "fecha": "2026-09-30T01:58:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-30T01:58:13+00:00",
+    "fecha_evento_temprana": "2026-09-30T01:58:13+00:00",
+    "fecha_deteccion": "2026-09-30T07:29:59.187486+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Merida::2026-09-30",
+    "titulo": "Orden público en Merida",
+    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 29/09/2026, 9:58 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:29 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Aragua",
     "municipio": null,
