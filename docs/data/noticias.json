@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/",
+        "fecha": "2026-09-29T15:27:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-09-29T15:27:08+00:00",
+    "fecha_evento_temprana": "2026-09-29T15:27:08+00:00",
+    "fecha_deteccion": "2026-09-30T01:38:03.596969+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-09-29",
+    "titulo": "Falla eléctrica en Aragua",
+    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/09/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 9:38 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -180,32 +206,6 @@
     "clave_dedup": "orden_publico::Monagas::2026-09-29",
     "titulo": "Orden público en Monagas",
     "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 29/09/2026, 10:04 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/",
-        "fecha": "2026-09-29T15:27:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-29T15:27:08+00:00",
-    "fecha_evento_temprana": "2026-09-29T15:27:08+00:00",
-    "fecha_deteccion": "2026-09-29T18:40:17.965142+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Aragua::2026-09-29",
-    "titulo": "Falla eléctrica en Aragua",
-    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 29/09/2026, 11:27 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/"
   },
   {
     "tipo": "inundacion",
@@ -2970,83 +2970,5 @@
     "clave_dedup": "orden_publico::Miranda::2026-09-16",
     "titulo": "Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda",
     "texto": "📌 Orden público en Parroquia Caucagua, Municipio Acevedo, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Caucagua, Municipio Acevedo, Miranda\n🕒 Hecho reportado: 16/09/2026, 12:18 p.m.\n🔎 Detectado por el sistema: 16/09/2026, 2:49 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Candelaria",
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/se-me-va-a-quemar-la-nevera-ciudadanos-reportan-festival-de-bajones-electricos-en-venezuela-este-15sep/",
-        "fecha": "2026-09-15T23:59:16+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-15T23:59:16+00:00",
-    "fecha_evento_temprana": "2026-09-15T23:59:16+00:00",
-    "fecha_deteccion": "2026-09-16T00:37:21.372457+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-09-15",
-    "titulo": "Falla eléctrica en Parroquia Candelaria, Distrito Capital",
-    "texto": "📌 Falla eléctrica en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 15/09/2026, 7:59 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/se-me-va-a-quemar-la-nevera-ciudadanos-reportan-festival-de-bajones-electricos-en-venezuela-este-15sep/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/reportan-apagon-en-tachira-y-otros-estados-de-venezuela-tras-fuertes-bajones/",
-        "fecha": "2026-09-16T00:26:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-16T00:26:20+00:00",
-    "fecha_evento_temprana": "2026-09-16T00:26:20+00:00",
-    "fecha_deteccion": "2026-09-16T00:37:26.095434+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-09-16",
-    "titulo": "Falla eléctrica en Tachira",
-    "texto": "📌 Falla eléctrica en Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 15/09/2026, 8:26 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/reportan-apagon-en-tachira-y-otros-estados-de-venezuela-tras-fuertes-bajones/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/",
-        "fecha": "2026-09-15T23:24:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-15T23:24:00+00:00",
-    "fecha_evento_temprana": "2026-09-15T23:24:00+00:00",
-    "fecha_deteccion": "2026-09-16T00:37:30.429976+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Tachira::2026-09-15",
-    "titulo": "Inundación en Tachira",
-    "texto": "📌 Inundación en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 15/09/2026, 7:24 p.m.\n🔎 Detectado por el sistema: 15/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/colapso-del-puente-sobre-el-rio-burgua8-mil-productores-agricolas-acorralados/"
   }
 ]
