@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-09-30T14:10:49.518723+00:00",
+  "actualizado": "2026-09-30T19:25:11.808907+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-30T13:52:09+00:00"
+    "hasta": "2026-09-30T17:55:21+00:00"
   },
-  "total_eventos": 490,
+  "total_eventos": 497,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 139,
+    "infraestructura_electrica": 142,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 120,
+    "orden_publico": 123,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 19,
+    "infraestructura_agua": 20,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -56,12 +56,12 @@
     },
     {
       "estado": "Lara",
-      "total": 40,
+      "total": 42,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
-        "alto": 11,
-        "medio": 17,
+        "alto": 12,
+        "medio": 18,
         "bajo": 7,
         "sin_clasificar": 1
       },
@@ -92,6 +92,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Portuguesa",
+      "total": 22,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 7,
+        "bajo": 8,
+        "critico": 2,
+        "alto": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Anzoategui",
       "total": 21,
       "confirmados": 0,
@@ -117,6 +129,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Tachira",
+      "total": 21,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 9,
+        "bajo": 4,
+        "medio": 6,
+        "critico": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Miranda",
       "total": 21,
       "confirmados": 2,
@@ -125,30 +149,6 @@
         "medio": 6,
         "critico": 4,
         "bajo": 7
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 20,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 9,
-        "bajo": 3,
-        "medio": 6,
-        "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Portuguesa",
-      "total": 20,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 7,
-        "bajo": 8,
-        "critico": 2,
-        "alto": 3
       },
       "severidad_dominante": "critico"
     },
@@ -200,6 +200,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Trujillo",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 4,
+        "critico": 1,
+        "alto": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Sucre",
       "total": 14,
       "confirmados": 0,
@@ -209,17 +221,6 @@
         "alto": 3
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 4,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "La Guaira",
@@ -247,6 +248,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 10,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 5,
+        "bajo": 2,
+        "medio": 2,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Apure",
       "total": 9,
       "confirmados": 0,
@@ -257,18 +270,6 @@
         "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Falcon",
-      "total": 9,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 5,
-        "bajo": 2,
-        "medio": 1,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Cojedes",
@@ -322,8 +323,8 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 9,
-      "infraestructura_electrica": 13,
+      "orden_publico": 10,
+      "infraestructura_electrica": 14,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -364,7 +365,7 @@
       "inundacion": 2,
       "incendio": 5,
       "sequia": 1,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "deslizamiento": 2,
       "orden_publico": 1
     },
@@ -412,7 +413,7 @@
     "Tachira": {
       "deslizamiento": 4,
       "infraestructura_electrica": 4,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 3,
       "sismo": 1,
       "incendio": 3,
@@ -446,7 +447,8 @@
       "crisis_migratoria": 2,
       "orden_publico": 2,
       "deslizamiento": 4,
-      "derrame_petrolero": 1
+      "derrame_petrolero": 1,
+      "infraestructura_agua": 1
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -484,8 +486,8 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 5,
-      "orden_publico": 9,
+      "infraestructura_electrica": 6,
+      "orden_publico": 10,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
@@ -512,10 +514,10 @@
     }
   },
   "por_severidad": {
-    "alto": 108,
+    "alto": 112,
     "critico": 52,
-    "medio": 184,
-    "bajo": 136,
+    "medio": 186,
+    "bajo": 137,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -532,7 +534,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 72
+      "2026-09": 75
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -547,7 +549,7 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 74
+      "2026-09": 77
     },
     "salud_publica": {
       "2026-07": 1,
@@ -585,7 +587,7 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 7
+      "2026-09": 8
     },
     "accidente_transporte": {
       "2026-08": 1
