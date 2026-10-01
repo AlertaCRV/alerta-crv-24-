@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-10",
+  "tipo": "orden_publico",
+  "tipo_label": "Orden público",
+  "cerrado": false,
+  "generado": "2026-10-01T16:13:44.282450+00:00",
+  "actualizado_hasta": "2026-10-01T16:13:36.536911+00:00",
+  "total_eventos": 4,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 77,
+    "actual": 4
+  },
+  "narrativa": "En el mes de octubre de 2026 el monitoreo de la Cruz Roja Venezolana registró únicamente cuatro incidentes de orden público, una caída drástica respecto a los setenta y siete eventos registrados en septiembre del mismo año (77 evento(s) registrados entonces vs. 4 en este período). Esta reducción se refleja en la menor frecuencia de protestas y manifestaciones reportadas en los distintos estados del país.\n\nEn el estado Zulia se registró un episodio de alta severidad de orden público, donde la Guardia Nacional reprimió a manifestantes que salían a las calles para exigir el fin de los apagones prolongados (La Prensa de Lara). Las protestas, que formaban parte de una serie de al menos cinco manifestaciones en la región zuliana, derivaron en enfrentamientos que provocaron daños materiales y la intervención de fuerzas de seguridad.\n\nEn Guárico también se documentó un evento de alta severidad, con la represión de manifestantes que exigían el restablecimiento del suministro eléctrico (El Pitazo). Según el informe, al menos una de las protestas en Guárico se replicó la noche del 30 de septiembre, formando parte de un conjunto de veinte protestas que se extendieron a siete estados, incluida la capital regional.\n\nEn conjunto, los cuatro eventos registrados en octubre incluyen los dos incidentes de alta severidad en Zulia y Guárico, mientras que los otros dos incidentes fueron de menor impacto y no generaron víctimas fatales ni heridos graves. La notable disminución de incidentes sugiere una temporal relajación de la tensión social, aunque la persistencia de protestas por los cortes eléctricos sigue siendo una preocupación para la autoridad y la población.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
+    }
+  ]
+}

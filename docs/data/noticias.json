@@ -1,5 +1,145 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/",
+        "fecha": "2026-10-01T13:14:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T13:14:40+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "fecha_deteccion": "2026-10-01T16:10:55.713182+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-10-01",
+    "titulo": "Orden público en Municipio Maracaibo, Zulia",
+    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:10 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/",
+        "fecha": "2026-10-01T14:25:25+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T14:25:25+00:00",
+    "fecha_evento_temprana": "2026-10-01T14:25:25+00:00",
+    "fecha_deteccion": "2026-10-01T16:11:34.516322+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Guarico::2026-10-01",
+    "titulo": "Orden público en Guarico",
+    "texto": "📌 Orden público en Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 01/10/2026, 10:25 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:11 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": "La Cañada De Urdaneta",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 2.2,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/",
+        "fecha": "2026-10-01T14:25:25+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/",
+        "fecha": "2026-10-01T14:28:58+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/01/video-al-menos-cuatro-protestas-se-registraron-en-zulia-por-los-constantes-apagones-1oct/",
+        "fecha": "2026-10-01T13:00:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T14:28:58+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:00:35+00:00",
+    "fecha_deteccion": "2026-10-01T16:12:13.766462+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-01",
+    "titulo": "Falla eléctrica en Municipio La Cañada De Urdaneta, Zulia",
+    "texto": "📌 Falla eléctrica en Municipio La Cañada De Urdaneta, Zulia\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio La Cañada De Urdaneta, Zulia\n🕒 Hecho reportado: 01/10/2026, 10:28 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:12 p.m.\n📊 Fuentes independientes: 3 (score 2.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/\n  • La Verdad (Zulia): https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-al-menos-cuatro-protestas-se-registraron-en-zulia-por-los-constantes-apagones-1oct/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/",
+        "fecha": "2026-10-01T13:14:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T13:14:40+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "fecha_deteccion": "2026-10-01T16:13:23.231624+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-10-01",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": "Guacara",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/",
+        "fecha": "2026-10-01T14:42:56+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T14:42:56+00:00",
+    "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
+    "fecha_deteccion": "2026-10-01T16:13:36.536911+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Carabobo::2026-10-01",
+    "titulo": "Orden público en Municipio Guacara, Carabobo",
+    "texto": "📌 Orden público en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 01/10/2026, 10:42 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -3079,31 +3219,5 @@
     "clave_dedup": "orden_publico::Zulia::2026-09-17",
     "titulo": "Orden público en Zulia",
     "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 17/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 2:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/cortocircuito-genero-apagon-en-el.html",
-        "fecha": "2026-09-17T01:50:44+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-17T01:50:44+00:00",
-    "fecha_evento_temprana": "2026-09-17T01:50:44+00:00",
-    "fecha_deteccion": "2026-09-17T09:28:20.110964+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Merida::2026-09-17",
-    "titulo": "Falla eléctrica en Merida",
-    "texto": "📌 Falla eléctrica en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 16/09/2026, 9:50 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 5:28 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/cortocircuito-genero-apagon-en-el.html"
   }
 ]

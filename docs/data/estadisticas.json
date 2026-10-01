@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-01T08:55:53.291184+00:00",
+  "actualizado": "2026-10-01T16:13:38.700020+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-01T03:59:19+00:00"
+    "hasta": "2026-10-01T14:42:56+00:00"
   },
-  "total_eventos": 502,
+  "total_eventos": 507,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 146,
+    "infraestructura_electrica": 147,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 123,
+    "orden_publico": 127,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,25 +43,25 @@
     },
     {
       "estado": "Zulia",
-      "total": 48,
-      "confirmados": 8,
+      "total": 50,
+      "confirmados": 9,
       "por_severidad": {
         "medio": 23,
         "critico": 4,
         "bajo": 11,
         "sin_clasificar": 1,
-        "alto": 9
+        "alto": 11
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Lara",
-      "total": 42,
+      "total": 43,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
         "alto": 12,
-        "medio": 18,
+        "medio": 19,
         "bajo": 7,
         "sin_clasificar": 1
       },
@@ -189,11 +189,11 @@
     },
     {
       "estado": "Carabobo",
-      "total": 15,
+      "total": 16,
       "confirmados": 1,
       "por_severidad": {
         "alto": 2,
-        "medio": 7,
+        "medio": 8,
         "bajo": 5,
         "critico": 1
       },
@@ -284,11 +284,11 @@
     },
     {
       "estado": "Guarico",
-      "total": 8,
+      "total": 9,
       "confirmados": 0,
       "por_severidad": {
         "medio": 5,
-        "alto": 2,
+        "alto": 3,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -316,14 +316,14 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 8,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "inundacion": 3,
       "vialidad": 1
     },
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 10,
+      "orden_publico": 11,
       "infraestructura_electrica": 14,
       "sismo": 1,
       "deslizamiento": 1,
@@ -335,11 +335,11 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 19,
+      "infraestructura_electrica": 20,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 12,
+      "orden_publico": 13,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -483,7 +483,7 @@
       "sequia": 2,
       "colapso_estructural": 1,
       "infraestructura_electrica": 4,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "Portuguesa": {
       "infraestructura_electrica": 8,
@@ -514,9 +514,9 @@
     }
   },
   "por_severidad": {
-    "alto": 113,
+    "alto": 116,
     "critico": 53,
-    "medio": 187,
+    "medio": 189,
     "bajo": 139,
     "sin_clasificar": 10
   },
@@ -535,7 +535,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 1
+      "2026-10": 2
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -550,7 +550,8 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 77
+      "2026-09": 77,
+      "2026-10": 4
     },
     "salud_publica": {
       "2026-07": 1,
