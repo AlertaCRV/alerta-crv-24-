@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-09-30T23:10:12.057729+00:00",
+  "actualizado": "2026-10-01T02:12:13.377296+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-09-30T21:31:53+00:00"
+    "hasta": "2026-09-30T23:17:43+00:00"
   },
-  "total_eventos": 500,
+  "total_eventos": 501,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 144,
+    "infraestructura_electrica": 145,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 123,
@@ -93,11 +93,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 24,
-      "confirmados": 1,
+      "total": 25,
+      "confirmados": 2,
       "por_severidad": {
         "medio": 7,
-        "bajo": 9,
+        "bajo": 10,
         "critico": 3,
         "alto": 5
       },
@@ -486,7 +486,7 @@
       "orden_publico": 1
     },
     "Portuguesa": {
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "orden_publico": 10,
       "inundacion": 3,
       "incendio": 1,
@@ -517,7 +517,7 @@
     "alto": 112,
     "critico": 53,
     "medio": 187,
-    "bajo": 138,
+    "bajo": 139,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -534,7 +534,7 @@
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
-      "2026-09": 77
+      "2026-09": 78
     },
     "deslizamiento": {
       "2026-07": 3,
