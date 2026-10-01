@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-01T16:13:38.700020+00:00",
+  "actualizado": "2026-10-01T21:06:38.386592+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-01T14:42:56+00:00"
+    "hasta": "2026-10-01T19:17:33+00:00"
   },
-  "total_eventos": 507,
+  "total_eventos": 511,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 147,
+    "infraestructura_electrica": 148,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 127,
+    "orden_publico": 130,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 76,
+      "total": 77,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 22,
-        "bajo": 25,
+        "bajo": 26,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 50,
+      "total": 51,
       "confirmados": 9,
       "por_severidad": {
-        "medio": 23,
+        "medio": 24,
         "critico": 4,
         "bajo": 11,
         "sin_clasificar": 1,
@@ -68,6 +68,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Aragua",
+      "total": 33,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 7,
+        "medio": 12,
+        "alto": 9,
+        "critico": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Barinas",
       "total": 32,
       "confirmados": 1,
@@ -75,18 +87,6 @@
         "alto": 5,
         "medio": 14,
         "bajo": 8,
-        "critico": 5
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Aragua",
-      "total": 32,
-      "confirmados": 0,
-      "por_severidad": {
-        "bajo": 7,
-        "medio": 11,
-        "alto": 9,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -189,10 +189,10 @@
     },
     {
       "estado": "Carabobo",
-      "total": 16,
+      "total": 17,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 2,
+        "alto": 3,
         "medio": 8,
         "bajo": 5,
         "critico": 1
@@ -316,7 +316,7 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "infraestructura_electrica": 8,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "inundacion": 3,
       "vialidad": 1
     },
@@ -339,7 +339,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -351,7 +351,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 23,
+      "orden_publico": 24,
       "incendio": 13,
       "vialidad": 4,
       "infraestructura_electrica": 14,
@@ -462,7 +462,7 @@
     "Aragua": {
       "orden_publico": 11,
       "inundacion": 9,
-      "infraestructura_electrica": 6,
+      "infraestructura_electrica": 7,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -514,10 +514,10 @@
     }
   },
   "por_severidad": {
-    "alto": 116,
+    "alto": 117,
     "critico": 53,
-    "medio": 189,
-    "bajo": 139,
+    "medio": 191,
+    "bajo": 140,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -535,7 +535,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 2
+      "2026-10": 3
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -551,7 +551,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 4
+      "2026-10": 7
     },
     "salud_publica": {
       "2026-07": 1,

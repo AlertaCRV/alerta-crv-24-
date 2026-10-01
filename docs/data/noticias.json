@@ -1,10 +1,46 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": "Bolívar",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.9,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/funcionario-de-la-gnb-afirma-que-apagones-son-por-el-calentamiento-global/",
+        "fecha": "2026-10-01T19:17:33+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/",
+        "fecha": "2026-10-01T17:39:40+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/",
+        "fecha": "2026-10-01T13:14:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T19:17:33+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "fecha_deteccion": "2026-10-01T21:04:13.436348+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-10-01",
+    "titulo": "Falla eléctrica en Municipio Bolívar, Aragua",
+    "texto": "📌 Falla eléctrica en Municipio Bolívar, Aragua\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Bolívar, Aragua\n🕒 Hecho reportado: 01/10/2026, 3:17 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 5:04 p.m.\n📊 Fuentes independientes: 3 (score 1.9)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/funcionario-de-la-gnb-afirma-que-apagones-son-por-el-calentamiento-global/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": "Maracaibo",
     "parroquia": null,
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +55,63 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-01T13:14:40+00:00",
     "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
-    "fecha_deteccion": "2026-10-01T16:10:55.713182+00:00",
+    "fecha_deteccion": "2026-10-01T21:06:11.230057+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Zulia::2026-10-01",
     "titulo": "Orden público en Municipio Maracaibo, Zulia",
-    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:10 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 5:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/",
+        "fecha": "2026-10-01T18:45:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T18:45:50+00:00",
+    "fecha_evento_temprana": "2026-10-01T18:45:50+00:00",
+    "fecha_deteccion": "2026-10-01T21:06:23.633044+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-10-01",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/10/2026, 2:45 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 5:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": "Guacara",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/",
+        "fecha": "2026-10-01T14:42:56+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T14:42:56+00:00",
+    "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
+    "fecha_deteccion": "2026-10-01T21:06:36.558844+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Carabobo::2026-10-01",
+    "titulo": "Orden público en Municipio Guacara, Carabobo",
+    "texto": "📌 Orden público en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 01/10/2026, 10:42 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 5:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
   },
   {
     "tipo": "orden_publico",
@@ -112,32 +200,6 @@
     "clave_dedup": "orden_publico::Lara::2026-10-01",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": "Guacara",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/",
-        "fecha": "2026-10-01T14:42:56+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T14:42:56+00:00",
-    "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
-    "fecha_deteccion": "2026-10-01T16:13:36.536911+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Carabobo::2026-10-01",
-    "titulo": "Orden público en Municipio Guacara, Carabobo",
-    "texto": "📌 Orden público en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 01/10/2026, 10:42 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -3167,57 +3229,5 @@
     "clave_dedup": "infraestructura_electrica::Aragua::2026-09-17",
     "titulo": "Falla eléctrica en Municipio San Sebastián, Aragua",
     "texto": "📌 Falla eléctrica en Municipio San Sebastián, Aragua\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Sebastián, Aragua\n🕒 Hecho reportado: 17/09/2026, 7:00 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 7:45 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/electrocutado-hombre-cuando-realizaba-una-reparacion-electrica-en-su-residencia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/17/interrupciones-electricas-afectan-a-52-del-gremio-industrial-en-lara-17sep/",
-        "fecha": "2026-09-17T17:30:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-17T17:30:00+00:00",
-    "fecha_evento_temprana": "2026-09-17T17:30:00+00:00",
-    "fecha_deteccion": "2026-09-17T18:30:08.907108+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-17",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 17/09/2026, 1:30 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 2:30 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/17/interrupciones-electricas-afectan-a-52-del-gremio-industrial-en-lara-17sep/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/",
-        "fecha": "2026-09-17T16:49:39+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-17T16:49:39+00:00",
-    "fecha_evento_temprana": "2026-09-17T16:49:39+00:00",
-    "fecha_deteccion": "2026-09-17T18:30:13.784465+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-09-17",
-    "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 17/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 17/09/2026, 2:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/capturan-a-cinco-sujetos-por-agresiones-violentas-en-san-francisco-y-maracaibo/"
   }
 ]
