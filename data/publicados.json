@@ -215,5 +215,12 @@
     "fecha_deteccion": "2026-09-30T23:09:20.239388+00:00",
     "fecha_evento_temprana": "2026-09-30T15:43:05+00:00",
     "municipio": "Tinaquillo"
+  },
+  "infraestructura_electrica::Carabobo::2026-10-01": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T08:54:42.835840+00:00",
+    "fecha_evento_temprana": "2026-10-01T03:59:19+00:00",
+    "municipio": null
   }
 }

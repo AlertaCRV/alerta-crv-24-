@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-10-01T08:56:10.400177+00:00",
+  "actualizado_hasta": "2026-10-01T08:54:42.835840+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 78,
+    "actual": 1
+  },
+  "narrativa": "En el mes de octubre de 2026 el sistema de monitoreo de emergencias registró únicamente un evento de falla eléctrica, en contraste con los 78 eventos reportados en el mes anterior (septiembre de 2026) (El Carabobeno). Esta reducción significativa se refleja en los datos comparativos proporcionados para el período analizado.\n\nEl único incidente registrado corresponde a una falla eléctrica de alta severidad en el estado Carabobo (El Carabobeno). Las interrupciones del suministro eléctrico provocaron protestas y el cierre de vías en varios municipios, entre ellos Guacara, San Joaquín, San Diego y Los Guayos, así como manifestaciones de vecinos en los sectores de La Granja y Las Quintas, en Naguanagua (El Carabobeno). Los cortes prolongados del servicio fueron el motivo principal de la inconformidad ciudadana.\n\nA pesar de la magnitud de la protesta y los daños materiales asociados a la interrupción del servicio, el registro de emergencias para octubre de 2026 muestra una única incidencia, lo que indica una disminución notable respecto al mes previo (El Carabobeno). El monitoreo continuará enfocándose en la evolución de la situación eléctrica en Carabobo y en la prevención de futuros incidentes que puedan generar daños o afectar a la población.",
+  "fuentes": [
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
+    }
+  ]
+}
