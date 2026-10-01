@@ -1,5 +1,21 @@
 [
   {
+    "periodo": "2026-10",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-10-01T08:56:10.400177+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-10-01T08:56:05.915492+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-09",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

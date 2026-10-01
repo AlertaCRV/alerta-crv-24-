@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/",
+        "fecha": "2026-10-01T03:59:19+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-01T03:59:19+00:00",
+    "fecha_evento_temprana": "2026-10-01T03:59:19+00:00",
+    "fecha_deteccion": "2026-10-01T08:54:42.835840+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-10-01",
+    "titulo": "Falla eléctrica en Carabobo",
+    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 30/09/2026, 11:59 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 4:54 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Portuguesa",
     "municipio": "Páez",
     "parroquia": "Payara",
