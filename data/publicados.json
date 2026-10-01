@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Barinas::2026-09-28": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T14:32:29.820225+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
-    "municipio": null
-  },
-  "orden_publico::Portuguesa::2026-09-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T14:32:38.914113+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
-    "municipio": "Guanare"
-  },
   "orden_publico::Distrito Capital::2026-09-28": {
     "severidad": "bajo",
     "confirmado": false,
@@ -222,5 +208,40 @@
     "fecha_deteccion": "2026-10-01T08:54:42.835840+00:00",
     "fecha_evento_temprana": "2026-10-01T03:59:19+00:00",
     "municipio": null
+  },
+  "orden_publico::Zulia::2026-10-01": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T16:10:55.713182+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "municipio": "Maracaibo"
+  },
+  "orden_publico::Guarico::2026-10-01": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T16:11:34.516322+00:00",
+    "fecha_evento_temprana": "2026-10-01T14:25:25+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Zulia::2026-10-01": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-01T16:12:13.766462+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:00:35+00:00",
+    "municipio": "La Cañada De Urdaneta"
+  },
+  "orden_publico::Lara::2026-10-01": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T16:13:23.231624+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-10-01": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T16:13:36.536911+00:00",
+    "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
+    "municipio": "Guacara"
   }
 }
