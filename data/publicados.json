@@ -1,58 +1,9 @@
 {
-  "infraestructura_electrica::Cojedes::2026-09-27": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:48:37.332428+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
-    "municipio": null
-  },
-  "orden_publico::Distrito Capital::2026-09-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:45:46.097244+00:00",
-    "fecha_evento_temprana": "2026-09-28T20:31:47+00:00",
-    "municipio": null
-  },
   "orden_publico::Zulia::2026-09-28": {
     "severidad": "alto",
     "confirmado": true,
     "fecha_deteccion": "2026-09-29T00:42:03.096914+00:00",
     "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Tachira::2026-09-28": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:45:59.374865+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:02:36+00:00",
-    "municipio": "García De Hevia"
-  },
-  "infraestructura_electrica::Anzoategui::2026-09-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:46:37.434808+00:00",
-    "fecha_evento_temprana": "2026-09-28T18:30:10+00:00",
-    "municipio": null
-  },
-  "orden_publico::Miranda::2026-09-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:47:04.139518+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:55:59+00:00",
-    "municipio": "Chacao"
-  },
-  "infraestructura_electrica::Portuguesa::2026-09-28": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-28T20:47:17.504104+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
-    "municipio": "Santa Rosalía"
-  },
-  "orden_publico::Lara::2026-09-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-28T20:48:33.097024+00:00",
-    "fecha_evento_temprana": "2026-09-28T16:30:40+00:00",
     "municipio": null
   },
   "orden_publico::Aragua::2026-09-28": {
@@ -210,9 +161,9 @@
     "municipio": null
   },
   "orden_publico::Zulia::2026-10-01": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-01T16:10:55.713182+00:00",
+    "fecha_deteccion": "2026-10-01T21:06:11.230057+00:00",
     "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
     "municipio": "Maracaibo"
   },
@@ -238,10 +189,24 @@
     "municipio": null
   },
   "orden_publico::Carabobo::2026-10-01": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-01T16:13:36.536911+00:00",
+    "fecha_deteccion": "2026-10-01T21:06:36.558844+00:00",
     "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
     "municipio": "Guacara"
+  },
+  "infraestructura_electrica::Aragua::2026-10-01": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-01T21:04:13.436348+00:00",
+    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
+    "municipio": "Bolívar"
+  },
+  "orden_publico::Distrito Capital::2026-10-01": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-01T21:06:23.633044+00:00",
+    "fecha_evento_temprana": "2026-10-01T18:45:50+00:00",
+    "municipio": null
   }
 }
