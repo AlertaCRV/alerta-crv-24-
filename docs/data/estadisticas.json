@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-02T18:21:38.520725+00:00",
+  "actualizado": "2026-10-02T22:25:03.952673+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T17:58:50+00:00"
+    "hasta": "2026-10-02T19:29:10+00:00"
   },
-  "total_eventos": 526,
+  "total_eventos": 529,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 157,
+    "infraestructura_electrica": 159,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 134,
+    "orden_publico": 135,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 77,
+      "total": 78,
       "confirmados": 9,
       "por_severidad": {
         "alto": 13,
         "medio": 22,
-        "bajo": 26,
+        "bajo": 27,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 54,
+      "total": 55,
       "confirmados": 9,
       "por_severidad": {
-        "medio": 25,
+        "medio": 26,
         "critico": 4,
         "bajo": 12,
         "sin_clasificar": 1,
@@ -104,6 +104,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 22,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 10,
+        "bajo": 5,
+        "alto": 6,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Anzoategui",
       "total": 21,
       "confirmados": 0,
@@ -139,18 +151,6 @@
         "critico": 2
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Monagas",
-      "total": 21,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 5,
-        "alto": 6,
-        "sin_clasificar": 1
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Miranda",
@@ -336,7 +336,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 22,
+      "infraestructura_electrica": 23,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -352,7 +352,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 12,
-      "orden_publico": 24,
+      "orden_publico": 25,
       "incendio": 13,
       "vialidad": 4,
       "infraestructura_electrica": 14,
@@ -423,7 +423,7 @@
       "motin_carcelario": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 10,
+      "infraestructura_electrica": 11,
       "salud_publica": 1,
       "vialidad": 2,
       "infraestructura_agua": 4,
@@ -518,8 +518,8 @@
   "por_severidad": {
     "alto": 126,
     "critico": 53,
-    "medio": 192,
-    "bajo": 144,
+    "medio": 194,
+    "bajo": 145,
     "sin_clasificar": 11
   },
   "serie_mensual_por_tipo": {
@@ -537,7 +537,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 12
+      "2026-10": 14
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -553,7 +553,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 11
+      "2026-10": 12
     },
     "salud_publica": {
       "2026-07": 1,
