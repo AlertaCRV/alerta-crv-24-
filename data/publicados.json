@@ -1,18 +1,4 @@
 {
-  "orden_publico::Zulia::2026-09-28": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-09-29T00:42:03.096914+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
-    "municipio": null
-  },
-  "orden_publico::Aragua::2026-09-28": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-29T00:42:12.232923+00:00",
-    "fecha_evento_temprana": "2026-09-28T22:51:15+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Apure::2026-09-29": {
     "severidad": "medio",
     "confirmado": false,
@@ -175,11 +161,11 @@
     "municipio": null
   },
   "infraestructura_electrica::Zulia::2026-10-01": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-01T16:12:13.766462+00:00",
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T00:47:23.883813+00:00",
     "fecha_evento_temprana": "2026-10-01T13:00:35+00:00",
-    "municipio": "La Cañada De Urdaneta"
+    "municipio": null
   },
   "orden_publico::Lara::2026-10-01": {
     "severidad": "medio",
@@ -207,6 +193,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-01T21:06:23.633044+00:00",
     "fecha_evento_temprana": "2026-10-01T18:45:50+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-10-02": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T00:46:48.750639+00:00",
+    "fecha_evento_temprana": "2026-10-02T00:01:18+00:00",
+    "municipio": null
+  },
+  "orden_publico::Merida::2026-10-01": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T00:46:58.174814+00:00",
+    "fecha_evento_temprana": "2026-10-01T23:53:33+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Barinas::2026-10-01": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T00:49:07.588347+00:00",
+    "fecha_evento_temprana": "2026-10-01T22:27:28+00:00",
     "municipio": null
   }
 }
