@@ -154,11 +154,11 @@
     "municipio": null
   },
   "infraestructura_electrica::Zulia::2026-10-01": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-02T00:47:23.883813+00:00",
-    "fecha_evento_temprana": "2026-10-01T13:00:35+00:00",
-    "municipio": null
+    "fecha_deteccion": "2026-10-02T12:55:43.228157+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "municipio": "Maracaibo"
   },
   "orden_publico::Lara::2026-10-01": {
     "severidad": "medio",
@@ -175,11 +175,11 @@
     "municipio": "Guacara"
   },
   "infraestructura_electrica::Aragua::2026-10-01": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-01T21:04:13.436348+00:00",
-    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
-    "municipio": "Bolívar"
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T12:55:00.868827+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "municipio": null
   },
   "orden_publico::Distrito Capital::2026-10-01": {
     "severidad": "bajo",
@@ -215,5 +215,26 @@
     "fecha_deteccion": "2026-10-02T06:23:23.338146+00:00",
     "fecha_evento_temprana": "2026-10-02T05:40:26+00:00",
     "municipio": "Páez"
+  },
+  "infraestructura_electrica::Portuguesa::2026-10-02": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T12:54:56.086153+00:00",
+    "fecha_evento_temprana": "2026-10-02T12:30:14+00:00",
+    "municipio": "Turen"
+  },
+  "infraestructura_electrica::Guarico::2026-10-02": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T12:55:05.067370+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Monagas::2026-10-02": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T12:55:17.697295+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "municipio": "Maturín"
   }
 }
