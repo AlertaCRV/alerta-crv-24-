@@ -1,5 +1,152 @@
 [
   {
+    "tipo": "sismo",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": "Guiria",
+    "severidad": "bajo",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/reportan-sismo-de-magnitud-50-en-oriente-de-venezuela-este-2-oct/",
+        "fecha": "2026-10-02T17:58:50+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos/?utm_source=rss&utm_medium=rss&utm_campaign=sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos",
+        "fecha": "2026-10-02T17:49:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-02T17:58:50+00:00",
+    "fecha_evento_temprana": "2026-10-02T17:49:14+00:00",
+    "fecha_deteccion": "2026-10-02T18:18:23.979674+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "magnitud": 5.0,
+    "tambien_mencionado_en": [],
+    "clave_dedup": "sismo::Sucre::2026-10-02::mag5.0",
+    "titulo": "Sismo en Parroquia Guiria, Sucre",
+    "texto": "📌 Sismo en Parroquia Guiria, Sucre\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Guiria, Sucre\n🕒 Hecho reportado: 02/10/2026, 1:58 p.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:18 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/reportan-sismo-de-magnitud-50-en-oriente-de-venezuela-este-2-oct/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos/?utm_source=rss&utm_medium=rss&utm_campaign=sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": "Bolívar",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/",
+        "fecha": "2026-10-02T15:03:41+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
+        "fecha": "2026-10-02T10:05:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-02T15:03:41+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "fecha_deteccion": "2026-10-02T18:18:28.772213+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-10-01",
+    "titulo": "Falla eléctrica en Municipio Bolívar, Aragua",
+    "texto": "📌 Falla eléctrica en Municipio Bolívar, Aragua\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Bolívar, Aragua\n🕒 Hecho reportado: 02/10/2026, 11:03 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:18 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Maracaibo",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/",
+        "fecha": "2026-10-02T15:03:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-02T15:03:41+00:00",
+    "fecha_evento_temprana": "2026-10-02T15:03:41+00:00",
+    "fecha_deteccion": "2026-10-02T18:19:23.820637+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-10-02",
+    "titulo": "Orden público en Municipio Maracaibo, Zulia",
+    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 02/10/2026, 11:03 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
+        "fecha": "2026-10-02T10:05:27+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/",
+        "fecha": "2026-10-02T17:52:59+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-02T17:52:59+00:00",
+    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
+    "fecha_deteccion": "2026-10-02T18:20:15.911272+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Monagas::2026-10-02",
+    "titulo": "Falla eléctrica en Municipio Maturín, Monagas",
+    "texto": "📌 Falla eléctrica en Municipio Maturín, Monagas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 02/10/2026, 1:52 p.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:20 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Portuguesa",
+    "municipio": "Guanare",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa al Dia",
+        "link": "https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/",
+        "fecha": "2026-10-02T13:30:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-02T13:30:05+00:00",
+    "fecha_evento_temprana": "2026-10-02T13:30:05+00:00",
+    "fecha_deteccion": "2026-10-02T18:21:10.437683+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Portuguesa::2026-10-02",
+    "titulo": "Incidente vial en Municipio Guanare, Portuguesa",
+    "texto": "📌 Incidente vial en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Portuguesa",
     "municipio": "Turen",
@@ -27,32 +174,6 @@
   },
   {
     "tipo": "infraestructura_electrica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T10:05:27+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T12:55:00.868827+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Aragua::2026-10-01",
-    "titulo": "Falla eléctrica en Aragua",
-    "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
     "ubicacion": "Guarico",
     "municipio": null,
     "parroquia": null,
@@ -76,32 +197,6 @@
     "clave_dedup": "infraestructura_electrica::Guarico::2026-10-02",
     "titulo": "Falla eléctrica en Guarico",
     "texto": "📌 Falla eléctrica en Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T10:05:27+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T12:55:17.697295+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Monagas::2026-10-02",
-    "titulo": "Falla eléctrica en Municipio Maturín, Monagas",
-    "texto": "📌 Falla eléctrica en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -3287,57 +3382,5 @@
     "clave_dedup": "orden_publico::Distrito Capital::2026-09-18",
     "titulo": "Orden público en Municipio Libertador, Distrito Capital",
     "texto": "📌 Orden público en Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 18/09/2026, 3:01 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 3:03 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/\n  • Runrun.es: https://runrun.es/noticias/620401/frente-nacional-de-abogados-advierte-que-el-nuevo-tsj-nacera-nulo/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": "Torres",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/",
-        "fecha": "2026-09-18T14:09:07+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-18T14:09:07+00:00",
-    "fecha_evento_temprana": "2026-09-18T14:09:07+00:00",
-    "fecha_deteccion": "2026-09-18T16:06:47.843309+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-18",
-    "titulo": "Orden público en Municipio Torres, Lara",
-    "texto": "📌 Orden público en Municipio Torres, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 18/09/2026, 10:09 a.m.\n🔎 Detectado por el sistema: 18/09/2026, 12:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/retienen-exalcalde-javier-oropeza/"
-  },
-  {
-    "tipo": "colapso_estructural",
-    "ubicacion": "Merida",
-    "municipio": "Aricagua",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/colapso-de-puente-en-merida-aisla-sectores-agricolas/",
-        "fecha": "2026-09-18T16:00:01+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-18T16:00:01+00:00",
-    "fecha_evento_temprana": "2026-09-18T16:00:01+00:00",
-    "fecha_deteccion": "2026-09-18T16:08:19.622864+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "colapso_estructural::Merida::2026-09-18",
-    "titulo": "Colapso estructural en Municipio Aricagua, Merida",
-    "texto": "📌 Colapso estructural en Municipio Aricagua, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Aricagua, Merida\n🕒 Hecho reportado: 18/09/2026, 12:00 p.m.\n🔎 Detectado por el sistema: 18/09/2026, 12:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/colapso-de-puente-en-merida-aisla-sectores-agricolas/"
   }
 ]

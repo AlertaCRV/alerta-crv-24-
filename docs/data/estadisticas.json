@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-10-02T12:56:16.098075+00:00",
+  "actualizado": "2026-10-02T18:21:38.520725+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T12:30:14+00:00"
+    "hasta": "2026-10-02T17:58:50+00:00"
   },
-  "total_eventos": 521,
+  "total_eventos": 526,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 155,
+    "infraestructura_electrica": 157,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 133,
+    "orden_publico": 134,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
-    "vialidad": 19,
-    "sismo": 7,
+    "vialidad": 20,
+    "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
@@ -43,12 +43,12 @@
     },
     {
       "estado": "Zulia",
-      "total": 53,
+      "total": 54,
       "confirmados": 9,
       "por_severidad": {
         "medio": 25,
         "critico": 4,
-        "bajo": 11,
+        "bajo": 12,
         "sin_clasificar": 1,
         "alto": 12
       },
@@ -69,12 +69,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 34,
-      "confirmados": 1,
+      "total": 35,
+      "confirmados": 2,
       "por_severidad": {
         "bajo": 7,
         "medio": 12,
-        "alto": 10,
+        "alto": 11,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -93,13 +93,13 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 27,
+      "total": 28,
       "confirmados": 2,
       "por_severidad": {
         "medio": 7,
         "bajo": 10,
         "critico": 3,
-        "alto": 7
+        "alto": 8
       },
       "severidad_dominante": "critico"
     },
@@ -141,6 +141,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 21,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 5,
+        "alto": 6,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Miranda",
       "total": 21,
       "confirmados": 2,
@@ -151,17 +163,6 @@
         "bajo": 7
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Monagas",
-      "total": 20,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 5,
-        "alto": 6
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Merida",
@@ -200,6 +201,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Sucre",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 7,
+        "alto": 3
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Trujillo",
       "total": 14,
       "confirmados": 0,
@@ -210,17 +222,6 @@
         "alto": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Sucre",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 6,
-        "alto": 3
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "La Guaira",
@@ -339,7 +340,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 14,
+      "orden_publico": 15,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -382,7 +383,8 @@
       "inundacion": 3,
       "orden_publico": 5,
       "infraestructura_electrica": 5,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "sismo": 1
     },
     "Anzoategui": {
       "infraestructura_electrica": 10,
@@ -421,7 +423,7 @@
       "motin_carcelario": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "salud_publica": 1,
       "vialidad": 2,
       "infraestructura_agua": 4,
@@ -462,7 +464,7 @@
     "Aragua": {
       "orden_publico": 11,
       "inundacion": 9,
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -491,7 +493,7 @@
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
-      "vialidad": 2
+      "vialidad": 3
     },
     "Cojedes": {
       "orden_publico": 5,
@@ -514,11 +516,11 @@
     }
   },
   "por_severidad": {
-    "alto": 124,
+    "alto": 126,
     "critico": 53,
     "medio": 192,
-    "bajo": 142,
-    "sin_clasificar": 10
+    "bajo": 144,
+    "sin_clasificar": 11
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -535,7 +537,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 10
+      "2026-10": 12
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -551,7 +553,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 10
+      "2026-10": 11
     },
     "salud_publica": {
       "2026-07": 1,
@@ -570,11 +572,13 @@
     },
     "vialidad": {
       "2026-08": 10,
-      "2026-09": 9
+      "2026-09": 9,
+      "2026-10": 1
     },
     "sismo": {
       "2026-08": 5,
-      "2026-09": 2
+      "2026-09": 2,
+      "2026-10": 1
     },
     "escasez_combustible": {
       "2026-08": 1,

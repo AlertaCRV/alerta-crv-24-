@@ -1,11 +1,4 @@
 {
-  "inundacion::Sucre::2026-09-29": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-29T13:07:14.421658+00:00",
-    "fecha_evento_temprana": "2026-09-29T12:55:00+00:00",
-    "municipio": null
-  },
   "orden_publico::Zulia::2026-09-29": {
     "severidad": "critico",
     "confirmado": false,
@@ -176,10 +169,10 @@
   },
   "infraestructura_electrica::Aragua::2026-10-01": {
     "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T12:55:00.868827+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-02T18:18:28.772213+00:00",
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "municipio": null
+    "municipio": "Bolívar"
   },
   "orden_publico::Distrito Capital::2026-10-01": {
     "severidad": "bajo",
@@ -231,10 +224,31 @@
     "municipio": null
   },
   "infraestructura_electrica::Monagas::2026-10-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T12:55:17.697295+00:00",
+    "severidad": "sin_clasificar",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-02T18:20:15.911272+00:00",
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
     "municipio": "Maturín"
+  },
+  "sismo::Sucre::2026-10-02::mag5.0": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T18:18:23.979674+00:00",
+    "fecha_evento_temprana": "2026-10-02T17:49:14+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-10-02": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T18:19:23.820637+00:00",
+    "fecha_evento_temprana": "2026-10-02T15:03:41+00:00",
+    "municipio": "Maracaibo"
+  },
+  "vialidad::Portuguesa::2026-10-02": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T18:21:10.437683+00:00",
+    "fecha_evento_temprana": "2026-10-02T13:30:05+00:00",
+    "municipio": "Guanare"
   }
 }
