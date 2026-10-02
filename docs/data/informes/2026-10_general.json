@@ -3,19 +3,63 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-10-01T08:56:05.915492+00:00",
-  "actualizado_hasta": "2026-10-01T08:54:42.835840+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-02T00:50:36.796276+00:00",
+  "actualizado_hasta": "2026-10-02T00:49:07.588347+00:00",
+  "total_eventos": 14,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 229,
-    "actual": 1
+    "actual": 14
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento de emergencia, una notable reducción frente a los 229 eventos reportados en septiembre de 2026 (229 evento(s) registrados entonces vs. 1 en este período). Esta disminución se refleja en la actividad de monitoreo de la Cruz Roja Venezolana, que concentra sus recursos en la atención del caso identificado.\n\nEl único incidente registrado corresponde a una falla eléctrica de alta severidad en el estado Carabobo (El Carabobeno). El corte prolongado del suministro eléctrico desencadenó protestas y el bloqueo de vías en varios municipios, generando riesgos para la población y la necesidad de intervención humanitaria.\n\nLas manifestaciones se concentraron en los municipios de Guacara, San Joaquín, San Diego y Los Guayos, así como en los barrios de La Granja y Las Quintas, en Naguanagua, donde vecinos expresaron su inconformidad por la duración de los apagones (El Carabobeno). Las protestas provocaron cierres temporales de vías y dificultaron el tránsito de servicios de emergencia.\n\nLas autoridades locales y la Cruz Roja continúan monitoreando la situación en Carabobo, brindando apoyo a la población afectada y coordinando con los operadores eléctricos para restablecer el suministro y evitar nuevas contingencias.",
+  "narrativa": "En el mes de octubre de 2026 se registraron solo 14 eventos de emergencia, una caída drástica frente a los 229 eventos del mes anterior (2026‑09). Esta reducción refleja una disminución significativa en la frecuencia de incidentes reportados durante el período.\n\nEn el estado Carabobo se registró una falla eléctrica que provocó apagones prolongados y motivó protestas y cierres de vías en los municipios de Guacara, San Joaquín, San Diego, Los Guayos, La Granja y Las Quintas (El Carabobeno). La misma situación desencadenó un fuerte descontento social que derivó en orden público, con manifestaciones en Guacara, Yagua y Malavé que generaron congestión vehicular en la Autopista Regional del Centro (ARC) (El Impulso (Lara)).\n\nEn Zulia se observaron dos tipos de incidentes. Por un lado, la intensificación de los cortes eléctricos provocó una falla eléctrica que se tradujo en al menos cinco protestas en la región, según reportes de ciudadanos que exigían el fin de los apagones (El Pitazo). Por otro lado, la respuesta de las fuerzas de seguridad a estas manifestaciones se catalogó como orden público, con múltiples protestas nocturnas reportadas en el estado (La Prensa de Lara). \n\nEn Guárico también se registró orden público, con manifestaciones que formaron parte de una serie de protestas en siete estados del país, incluidas las de Guárico, en demanda de soluciones a los apagones (El Pitazo). Finalmente, en Barinas se reportó una falla eléctrica que, según la alerta de Fedecámaras, generó paralización productiva y riesgos sanitarios, afectando a comerciantes, productores e industriales (La Noticia de Barinas).",
   "fuentes": [
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-al-menos-cuatro-protestas-se-registraron-en-zulia-por-los-constantes-apagones-1oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/enfatizo-la-abg-janette-diaz-ramosfedecamaras-barinas-alerta-sobre-paralizacionproductiva-y-riesgo-sanitario-por-apagones/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/caficultores-de-portuguesa-y-lara-denuncian-incumplimiento-de-precios-acordados-y-anuncian-movilizacion/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/funcionario-de-la-gnb-afirma-que-apagones-son-por-el-calentamiento-global/"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-01T21:06:38.386592+00:00",
+  "actualizado": "2026-10-02T00:50:30.961102+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-01T19:17:33+00:00"
+    "hasta": "2026-10-02T00:01:18+00:00"
   },
-  "total_eventos": 511,
+  "total_eventos": 515,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 148,
+    "infraestructura_electrica": 150,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 130,
+    "orden_publico": 132,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 51,
+      "total": 52,
       "confirmados": 9,
       "por_severidad": {
-        "medio": 24,
+        "medio": 25,
         "critico": 4,
         "bajo": 11,
         "sin_clasificar": 1,
@@ -56,14 +56,26 @@
     },
     {
       "estado": "Lara",
-      "total": 43,
+      "total": 44,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
         "alto": 12,
         "medio": 19,
-        "bajo": 7,
+        "bajo": 8,
         "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Barinas",
+      "total": 33,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 6,
+        "medio": 14,
+        "bajo": 8,
+        "critico": 5
       },
       "severidad_dominante": "critico"
     },
@@ -75,18 +87,6 @@
         "bajo": 7,
         "medio": 12,
         "alto": 9,
-        "critico": 5
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Barinas",
-      "total": 32,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 5,
-        "medio": 14,
-        "bajo": 8,
         "critico": 5
       },
       "severidad_dominante": "critico"
@@ -153,6 +153,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Merida",
+      "total": 20,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 9
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Monagas",
       "total": 19,
       "confirmados": 0,
@@ -160,17 +171,6 @@
         "medio": 9,
         "bajo": 5,
         "alto": 5
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Merida",
-      "total": 19,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 5,
-        "alto": 9
       },
       "severidad_dominante": "alto"
     },
@@ -323,7 +323,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 11,
+      "orden_publico": 12,
       "infraestructura_electrica": 14,
       "sismo": 1,
       "deslizamiento": 1,
@@ -335,7 +335,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 20,
+      "infraestructura_electrica": 21,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -372,7 +372,7 @@
     "Barinas": {
       "deslizamiento": 3,
       "inundacion": 6,
-      "infraestructura_electrica": 11,
+      "infraestructura_electrica": 12,
       "vialidad": 4,
       "orden_publico": 6,
       "infraestructura_agua": 1,
@@ -472,7 +472,7 @@
     "Merida": {
       "infraestructura_electrica": 5,
       "vialidad": 1,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "inundacion": 1,
       "deslizamiento": 2,
       "colapso_estructural": 1,
@@ -514,10 +514,10 @@
     }
   },
   "por_severidad": {
-    "alto": 117,
+    "alto": 118,
     "critico": 53,
-    "medio": 191,
-    "bajo": 140,
+    "medio": 192,
+    "bajo": 142,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -535,7 +535,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 3
+      "2026-10": 5
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -551,7 +551,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 7
+      "2026-10": 9
     },
     "salud_publica": {
       "2026-07": 1,

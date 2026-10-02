@@ -4,24 +4,24 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-01T16:13:44.282450+00:00",
-    "total_eventos": 4
+    "generado": "2026-10-02T00:51:30.437750+00:00",
+    "total_eventos": 9
   },
   {
     "periodo": "2026-10",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-01T08:56:10.400177+00:00",
-    "total_eventos": 1
+    "generado": "2026-10-02T00:51:04.038124+00:00",
+    "total_eventos": 5
   },
   {
     "periodo": "2026-10",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-10-01T08:56:05.915492+00:00",
-    "total_eventos": 1
+    "generado": "2026-10-02T00:50:36.796276+00:00",
+    "total_eventos": 14
   },
   {
     "periodo": "2026-09",

@@ -3,19 +3,47 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-01T08:56:10.400177+00:00",
-  "actualizado_hasta": "2026-10-01T08:54:42.835840+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-02T00:51:04.038124+00:00",
+  "actualizado_hasta": "2026-10-02T00:49:07.588347+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 78,
-    "actual": 1
+    "actual": 5
   },
-  "narrativa": "En el mes de octubre de 2026 el sistema de monitoreo de emergencias registró únicamente un evento de falla eléctrica, en contraste con los 78 eventos reportados en el mes anterior (septiembre de 2026) (El Carabobeno). Esta reducción significativa se refleja en los datos comparativos proporcionados para el período analizado.\n\nEl único incidente registrado corresponde a una falla eléctrica de alta severidad en el estado Carabobo (El Carabobeno). Las interrupciones del suministro eléctrico provocaron protestas y el cierre de vías en varios municipios, entre ellos Guacara, San Joaquín, San Diego y Los Guayos, así como manifestaciones de vecinos en los sectores de La Granja y Las Quintas, en Naguanagua (El Carabobeno). Los cortes prolongados del servicio fueron el motivo principal de la inconformidad ciudadana.\n\nA pesar de la magnitud de la protesta y los daños materiales asociados a la interrupción del servicio, el registro de emergencias para octubre de 2026 muestra una única incidencia, lo que indica una disminución notable respecto al mes previo (El Carabobeno). El monitoreo continuará enfocándose en la evolución de la situación eléctrica en Carabobo y en la prevención de futuros incidentes que puedan generar daños o afectar a la población.",
+  "narrativa": "En el mes de octubre de 2026 se registraron únicamente 5 eventos de fallas eléctricas, una notable reducción frente a los 78 incidentes del mes anterior (septiembre de 2026). Esta disminución indica una tendencia a la baja en la frecuencia de los apagones, aunque los episodios que sí se presentaron mantuvieron una alta severidad y generaron protestas y riesgos para la población.\n\nEn el estado Carabobo se produjo una falla eléctrica de alta severidad que provocó apagones prolongados y desencadenó protestas y cierres de vías en varios municipios. Vecinos de Guacara, San Joaquín, San Diego y Los Guayos, así como residentes de La Granja y Las Quintas en Naguanagua, manifestaron su inconformidad por la duración de los cortes (El Carabobeno).\n\nEn Zulia, la falla eléctrica también alcanzó un nivel de alta severidad, con al menos cuatro protestas registradas y cortes de energía que superaron las ocho horas. Los residentes reportaron daños a electrodomésticos y la ausencia de un cronograma eléctrico claro, lo que agravó la percepción de inseguridad energética (El Pitazo).\n\nEn Barinas, la interrupción eléctrica de alta severidad fue señalada por la Abg. Janette Díaz Ramos de Fedecámaras, quien alertó sobre la paralización productiva y el riesgo sanitario que generan los apagones. Se subrayó la necesidad de implementar un cronograma de administración de carga transparente y planificado para proteger la producción, los empleos y el abastecimiento de bienes básicos (La Noticia de Barinas).",
   "fuentes": [
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-al-menos-cuatro-protestas-se-registraron-en-zulia-por-los-constantes-apagones-1oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/enfatizo-la-abg-janette-diaz-ramosfedecamaras-barinas-alerta-sobre-paralizacionproductiva-y-riesgo-sanitario-por-apagones/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/funcionario-de-la-gnb-afirma-que-apagones-son-por-el-calentamiento-global/"
     }
   ]
 }
