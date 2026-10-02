@@ -1,6 +1,22 @@
 [
   {
     "periodo": "2026-10",
+    "tipo": "vialidad",
+    "tipo_label": "Incidente vial",
+    "cerrado": false,
+    "generado": "2026-10-02T18:21:48.097730+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "sismo",
+    "tipo_label": "Sismo",
+    "cerrado": false,
+    "generado": "2026-10-02T18:21:43.132812+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
