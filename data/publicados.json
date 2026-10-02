@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Apure::2026-09-29": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-29T06:22:42.682498+00:00",
-    "fecha_evento_temprana": "2026-09-29T02:40:11+00:00",
-    "municipio": null
-  },
   "inundacion::Sucre::2026-09-29": {
     "severidad": "alto",
     "confirmado": false,
@@ -215,5 +208,12 @@
     "fecha_deteccion": "2026-10-02T00:49:07.588347+00:00",
     "fecha_evento_temprana": "2026-10-01T22:27:28+00:00",
     "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-10-02": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-02T06:23:23.338146+00:00",
+    "fecha_evento_temprana": "2026-10-02T05:40:26+00:00",
+    "municipio": "Páez"
   }
 }

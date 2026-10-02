@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-02T00:50:30.961102+00:00",
+  "actualizado": "2026-10-02T06:24:00.587739+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T00:01:18+00:00"
+    "hasta": "2026-10-02T05:40:26+00:00"
   },
-  "total_eventos": 515,
+  "total_eventos": 516,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
     "infraestructura_electrica": 150,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 132,
+    "orden_publico": 133,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -93,13 +93,13 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 25,
+      "total": 26,
       "confirmados": 2,
       "por_severidad": {
         "medio": 7,
         "bajo": 10,
         "critico": 3,
-        "alto": 5
+        "alto": 6
       },
       "severidad_dominante": "critico"
     },
@@ -487,7 +487,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 8,
-      "orden_publico": 10,
+      "orden_publico": 11,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
@@ -514,7 +514,7 @@
     }
   },
   "por_severidad": {
-    "alto": 118,
+    "alto": 119,
     "critico": 53,
     "medio": 192,
     "bajo": 142,
@@ -551,7 +551,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 9
+      "2026-10": 10
     },
     "salud_publica": {
       "2026-07": 1,
