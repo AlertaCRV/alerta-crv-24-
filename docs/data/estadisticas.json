@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-02T06:24:00.587739+00:00",
+  "actualizado": "2026-10-02T12:56:16.098075+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T05:40:26+00:00"
+    "hasta": "2026-10-02T12:30:14+00:00"
   },
-  "total_eventos": 516,
+  "total_eventos": 521,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 150,
+    "infraestructura_electrica": 155,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 133,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 52,
+      "total": 53,
       "confirmados": 9,
       "por_severidad": {
         "medio": 25,
         "critico": 4,
         "bajo": 11,
         "sin_clasificar": 1,
-        "alto": 11
+        "alto": 12
       },
       "severidad_dominante": "critico"
     },
@@ -68,6 +68,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Aragua",
+      "total": 34,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 7,
+        "medio": 12,
+        "alto": 10,
+        "critico": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Barinas",
       "total": 33,
       "confirmados": 1,
@@ -80,26 +92,14 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Aragua",
-      "total": 33,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 7,
-        "medio": 12,
-        "alto": 9,
-        "critico": 5
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Portuguesa",
-      "total": 26,
+      "total": 27,
       "confirmados": 2,
       "por_severidad": {
         "medio": 7,
         "bajo": 10,
         "critico": 3,
-        "alto": 6
+        "alto": 7
       },
       "severidad_dominante": "critico"
     },
@@ -153,6 +153,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 20,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 5,
+        "alto": 6
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Merida",
       "total": 20,
       "confirmados": 0,
@@ -160,17 +171,6 @@
         "medio": 5,
         "bajo": 6,
         "alto": 9
-      },
-      "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Monagas",
-      "total": 19,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 5,
-        "alto": 5
       },
       "severidad_dominante": "alto"
     },
@@ -260,6 +260,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Guarico",
+      "total": 10,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "alto": 4,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Cojedes",
       "total": 10,
       "confirmados": 3,
@@ -281,17 +292,6 @@
         "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Guarico",
-      "total": 9,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "alto": 3,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Delta Amacuro",
@@ -335,7 +335,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 21,
+      "infraestructura_electrica": 22,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -421,7 +421,7 @@
       "motin_carcelario": 1
     },
     "Monagas": {
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "salud_publica": 1,
       "vialidad": 2,
       "infraestructura_agua": 4,
@@ -462,7 +462,7 @@
     "Aragua": {
       "orden_publico": 11,
       "inundacion": 9,
-      "infraestructura_electrica": 7,
+      "infraestructura_electrica": 8,
       "accidente_transporte": 1,
       "salud_publica": 1,
       "deslizamiento": 2,
@@ -482,11 +482,11 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 2
     },
     "Portuguesa": {
-      "infraestructura_electrica": 8,
+      "infraestructura_electrica": 9,
       "orden_publico": 11,
       "inundacion": 3,
       "incendio": 1,
@@ -514,7 +514,7 @@
     }
   },
   "por_severidad": {
-    "alto": 119,
+    "alto": 124,
     "critico": 53,
     "medio": 192,
     "bajo": 142,
@@ -535,7 +535,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 5
+      "2026-10": 10
     },
     "deslizamiento": {
       "2026-07": 3,
