@@ -1,6 +1,136 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/",
+        "fecha": "2026-10-03T19:37:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T19:37:15+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
+    "fecha_deteccion": "2026-10-03T22:14:55.516863+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-10-03",
+    "titulo": "Falla eléctrica en Carabobo",
+    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 03/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:14 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/",
+        "fecha": "2026-10-03T19:37:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T19:37:15+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
+    "fecha_deteccion": "2026-10-03T22:15:05.038969+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-01",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 03/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:15 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/",
+        "fecha": "2026-10-03T19:22:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T19:22:50+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:22:50+00:00",
+    "fecha_deteccion": "2026-10-03T22:15:09.261780+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Carabobo::2026-10-03",
+    "titulo": "Orden público en Carabobo",
+    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 03/10/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:15 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Portuguesa",
+    "municipio": "Guanare",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas",
+        "fecha": "2026-10-03T19:46:34+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T19:46:34+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:46:34+00:00",
+    "fecha_deteccion": "2026-10-03T22:16:16.770591+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Portuguesa::2026-10-03",
+    "titulo": "Inundación en Municipio Guanare, Portuguesa",
+    "texto": "📌 Inundación en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 03/10/2026, 3:46 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Portuguesa",
+    "municipio": "Sucre",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/",
+        "fecha": "2026-10-03T11:40:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T11:40:42+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "fecha_deteccion": "2026-10-03T22:16:21.102933+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-10-02",
+    "titulo": "Falla eléctrica en Municipio Sucre, Portuguesa",
+    "texto": "📌 Falla eléctrica en Municipio Sucre, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Sucre, Portuguesa\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
@@ -330,32 +460,6 @@
   },
   {
     "tipo": "infraestructura_electrica",
-    "ubicacion": "Portuguesa",
-    "municipio": "Turen",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/comunidades-de-portuguesa-denuncian-hasta-12-horas-sin-luz-por-doble-racionamiento-esto-no-lo-aguanta-nadie/",
-        "fecha": "2026-10-02T12:30:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T12:30:14+00:00",
-    "fecha_evento_temprana": "2026-10-02T12:30:14+00:00",
-    "fecha_deteccion": "2026-10-02T12:54:56.086153+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-10-02",
-    "titulo": "Falla eléctrica en Municipio Turen, Portuguesa",
-    "texto": "📌 Falla eléctrica en Municipio Turen, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Turen, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:54 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/comunidades-de-portuguesa-denuncian-hasta-12-horas-sin-luz-por-doble-racionamiento-esto-no-lo-aguanta-nadie/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
     "ubicacion": "Guarico",
     "municipio": null,
     "parroquia": null,
@@ -379,32 +483,6 @@
     "clave_dedup": "infraestructura_electrica::Guarico::2026-10-02",
     "titulo": "Falla eléctrica en Guarico",
     "texto": "📌 Falla eléctrica en Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T10:05:27+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T12:55:43.228157+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-01",
-    "titulo": "Falla eléctrica en Municipio Maracaibo, Zulia",
-    "texto": "📌 Falla eléctrica en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
   },
   {
     "tipo": "orden_publico",

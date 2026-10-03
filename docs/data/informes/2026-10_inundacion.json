@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "inundacion",
+  "tipo_label": "Inundación",
+  "cerrado": false,
+  "generado": "2026-10-03T22:17:57.971377+00:00",
+  "actualizado_hasta": "2026-10-03T22:16:16.770591+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 16,
+    "actual": 1
+  },
+  "narrativa": "En el mes de octubre de 2026 se registró un solo evento de inundación en el territorio venezolano, una notable disminución respecto a los 16 eventos reportados en septiembre de 2026 (16 evento(s) registrados entonces vs. 1 en este período).\n\nEl único caso ocurrió el viernes 2 de octubre en la Escuela Básica Estadal Virginia Ramos, ubicada en el sector Buenos Aires de la ciudad de Guanare, estado Portuguesa. Las intensas precipitaciones de la mañana provocaron que el salón de clases del 5.º grado “A” quedara anegado, obligando a los estudiantes a recibir la lección con los pies cubiertos de agua (Portuguesa Reporta).\n\nEl video enviado por usuarios muestra claramente el aula inundada y a los alumnos intentando continuar con la actividad académica bajo esas condiciones. No se reportaron heridos ni víctimas fatales, pero la situación evidenció la vulnerabilidad de la infraestructura escolar frente a fenómenos de lluvia intensa (Portuguesa Reporta).\n\nEste episodio subraya la necesidad de reforzar las instalaciones educativas en zonas propensas a inundaciones, aun cuando la frecuencia de eventos haya disminuido significativamente en el último mes comparado con el periodo anterior (16 evento(s) registrados entonces vs. 1 en este período).",
+  "fuentes": [
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
+    }
+  ]
+}

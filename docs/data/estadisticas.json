@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-03T19:20:21.718313+00:00",
+  "actualizado": "2026-10-03T22:17:53.532200+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-03T16:29:51+00:00"
+    "hasta": "2026-10-03T19:46:34+00:00"
   },
-  "total_eventos": 535,
+  "total_eventos": 540,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 71,
-    "infraestructura_electrica": 163,
+    "inundacion": 72,
+    "infraestructura_electrica": 166,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 137,
+    "orden_publico": 138,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 55,
+      "total": 56,
       "confirmados": 9,
       "por_severidad": {
-        "medio": 26,
+        "medio": 27,
         "critico": 4,
         "bajo": 12,
         "sin_clasificar": 1,
@@ -93,10 +93,10 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 30,
+      "total": 32,
       "confirmados": 2,
       "por_severidad": {
-        "medio": 7,
+        "medio": 9,
         "bajo": 11,
         "critico": 3,
         "alto": 9
@@ -176,6 +176,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Carabobo",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 3,
+        "medio": 9,
+        "bajo": 6,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -185,18 +197,6 @@
         "medio": 6,
         "sin_clasificar": 1,
         "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 17,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 3,
-        "medio": 8,
-        "bajo": 5,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -316,8 +316,8 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "infraestructura_electrica": 8,
-      "orden_publico": 4,
+      "infraestructura_electrica": 9,
+      "orden_publico": 5,
       "inundacion": 3,
       "vialidad": 1
     },
@@ -336,7 +336,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 22,
+      "infraestructura_electrica": 23,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -489,9 +489,9 @@
       "orden_publico": 2
     },
     "Portuguesa": {
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "orden_publico": 13,
-      "inundacion": 3,
+      "inundacion": 4,
       "incendio": 1,
       "infraestructura_agua": 1,
       "vialidad": 3
@@ -519,8 +519,8 @@
   "por_severidad": {
     "alto": 132,
     "critico": 53,
-    "medio": 194,
-    "bajo": 145,
+    "medio": 198,
+    "bajo": 146,
     "sin_clasificar": 11
   },
   "serie_mensual_por_tipo": {
@@ -532,13 +532,14 @@
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
-      "2026-09": 16
+      "2026-09": 16,
+      "2026-10": 1
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 18
+      "2026-10": 21
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -554,7 +555,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 14
+      "2026-10": 15
     },
     "salud_publica": {
       "2026-07": 1,
