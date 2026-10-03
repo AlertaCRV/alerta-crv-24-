@@ -3,16 +3,24 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-02T00:51:04.038124+00:00",
-  "actualizado_hasta": "2026-10-02T00:49:07.588347+00:00",
-  "total_eventos": 5,
+  "generado": "2026-10-03T12:06:01.227121+00:00",
+  "actualizado_hasta": "2026-10-03T12:05:09.505538+00:00",
+  "total_eventos": 16,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 78,
-    "actual": 5
+    "actual": 16
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron únicamente 5 eventos de fallas eléctricas, una notable reducción frente a los 78 incidentes del mes anterior (septiembre de 2026). Esta disminución indica una tendencia a la baja en la frecuencia de los apagones, aunque los episodios que sí se presentaron mantuvieron una alta severidad y generaron protestas y riesgos para la población.\n\nEn el estado Carabobo se produjo una falla eléctrica de alta severidad que provocó apagones prolongados y desencadenó protestas y cierres de vías en varios municipios. Vecinos de Guacara, San Joaquín, San Diego y Los Guayos, así como residentes de La Granja y Las Quintas en Naguanagua, manifestaron su inconformidad por la duración de los cortes (El Carabobeno).\n\nEn Zulia, la falla eléctrica también alcanzó un nivel de alta severidad, con al menos cuatro protestas registradas y cortes de energía que superaron las ocho horas. Los residentes reportaron daños a electrodomésticos y la ausencia de un cronograma eléctrico claro, lo que agravó la percepción de inseguridad energética (El Pitazo).\n\nEn Barinas, la interrupción eléctrica de alta severidad fue señalada por la Abg. Janette Díaz Ramos de Fedecámaras, quien alertó sobre la paralización productiva y el riesgo sanitario que generan los apagones. Se subrayó la necesidad de implementar un cronograma de administración de carga transparente y planificado para proteger la producción, los empleos y el abastecimiento de bienes básicos (La Noticia de Barinas).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 16 eventos de fallas eléctricas de alta severidad, una notable reducción frente a los 78 eventos del mes anterior (septiembre 2026). Esta disminución se refleja en los reportes de distintas regiones del país, aunque la población sigue enfrentando cortes prolongados que afectan la vida cotidiana.\n\nSe documentó una falla eléctrica en Carabobo, donde los apagones provocaron protestas y cierres de vías en municipios como Guacara y Naguanagua (El Carabobeno). En Zulia, dos reportes independientes describen fallas de alta severidad que generaron al menos cuatro protestas y daños a electrodomésticos (El Pitazo; El Impulso). Barinas también sufrió una interrupción significativa del suministro eléctrico (La Noticia de Barinas). En la región central, Portuguesa experimentó una falla eléctrica de alta severidad reportada por El Pitazo.\n\nEn la zona norte, Aragua registró dos fallas eléctricas de alta severidad, una citada por Diario La Nación (Táchira) y otra por El Pitazo, ambas asociadas a protestas nocturnas y reclamos de la ciudadanía (Diario La Nación (Táchira); El Pitazo). Asimismo, Guárico, Monagas y Táchira reportaron fallas de alta severidad según Diario La Nación (Táchira), que también describió el colapso eléctrico en el municipio García de Hevia (Diario La Nación (Táchira)).\n\nEn el occidente, Lara enfrentó una falla eléctrica de alta severidad que motivó la solicitud de un plan de contingencia para escuelas por parte de Sinvemal (El Impulso (Lara)). Finalmente, en el este, Sucre sufrió una interrupción eléctrica de alta severidad reportada por Turimiquire (Turimiquire (Sucre)).\n\nA pesar de la reducción en el número total de incidentes, los apagones de hasta 12‑15 horas continúan generando descontento, protestas nocturnas y dificultades en actividades escolares y comerciales en todo el territorio nacional, según los múltiples reportes periodísticos citados.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/politica/denuncian-colapso-electrico-e-indolencia-gubernamental-en-el-municipio-garcia-de-hevia/"
+    },
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
@@ -22,8 +30,20 @@
       "link": "https://www.elimpulso.com/2026/10/01/video-al-menos-cuatro-protestas-se-registraron-en-zulia-por-los-constantes-apagones-1oct/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/02/video-sinvemal-advierte-colapso-de-la-calidad-educativa-por-racionamiento-electrico-de-seis-horas-2oct/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/comunidades-de-portuguesa-denuncian-hasta-12-horas-sin-luz-por-doble-racionamiento-esto-no-lo-aguanta-nadie/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
     },
     {
       "nombre": "La Noticia de Barinas",
@@ -34,8 +54,16 @@
       "link": "https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/"
     },
     {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/"
     },
     {
       "nombre": "La Prensa de Lara",

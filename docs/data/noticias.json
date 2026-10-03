@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Ospino",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones",
+        "fecha": "2026-10-03T03:18:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T03:18:31+00:00",
+    "fecha_evento_temprana": "2026-10-03T03:18:31+00:00",
+    "fecha_deteccion": "2026-10-03T12:04:53.276654+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-10-03",
+    "titulo": "Orden público en Municipio Ospino, Portuguesa",
+    "texto": "📌 Orden público en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 11:18 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:04 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/",
+        "fecha": "2026-10-03T11:40:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T11:40:42+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "fecha_deteccion": "2026-10-03T12:05:09.505538+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Sucre::2026-10-03",
+    "titulo": "Falla eléctrica en Sucre",
+    "texto": "📌 Falla eléctrica en Sucre\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Sucre",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/",
+        "fecha": "2026-10-03T11:40:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T11:40:42+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "fecha_deteccion": "2026-10-03T12:05:21.653510+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-10-03",
+    "titulo": "Orden público en Municipio Sucre, Zulia",
+    "texto": "📌 Orden público en Municipio Sucre, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Sucre, Zulia\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:05 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Tachira",
     "municipio": "García De Hevia",
@@ -24,32 +102,6 @@
     "clave_dedup": "infraestructura_electrica::Tachira::2026-10-03",
     "titulo": "Falla eléctrica en Municipio García De Hevia, Tachira",
     "texto": "📌 Falla eléctrica en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 03/10/2026, 1:00 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 2:43 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/politica/denuncian-colapso-electrico-e-indolencia-gubernamental-en-el-municipio-garcia-de-hevia/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": "Ospino",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones",
-        "fecha": "2026-10-03T03:18:31+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T03:18:31+00:00",
-    "fecha_evento_temprana": "2026-10-03T03:18:31+00:00",
-    "fecha_deteccion": "2026-10-03T06:43:53.714046+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-10-03",
-    "titulo": "Orden público en Municipio Ospino, Portuguesa",
-    "texto": "📌 Orden público en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 11:18 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 2:43 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
   },
   {
     "tipo": "infraestructura_electrica",
