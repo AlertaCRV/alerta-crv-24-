@@ -13,48 +13,6 @@
     "fecha_evento_temprana": "2026-09-30T21:31:53+00:00",
     "municipio": "Páez"
   },
-  "orden_publico::Portuguesa::2026-09-30": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:22:22.839332+00:00",
-    "fecha_evento_temprana": "2026-09-30T17:09:42+00:00",
-    "municipio": "Páez"
-  },
-  "infraestructura_agua::Falcon::2026-09-30": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:22:28.348758+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-09-30": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:22:40.877576+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
-    "municipio": "Urdaneta"
-  },
-  "orden_publico::Tachira::2026-09-30": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:22:55.569502+00:00",
-    "fecha_evento_temprana": "2026-09-30T16:49:29+00:00",
-    "municipio": "San Cristóbal"
-  },
-  "infraestructura_electrica::Trujillo::2026-09-30": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:23:58.308280+00:00",
-    "fecha_evento_temprana": "2026-09-30T15:24:51+00:00",
-    "municipio": "San Rafael De Carvajal"
-  },
-  "infraestructura_electrica::Lara::2026-09-30": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T19:24:28.273701+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:37:29+00:00",
-    "municipio": "Urdaneta"
-  },
   "infraestructura_electrica::Cojedes::2026-09-30": {
     "severidad": "medio",
     "confirmado": true,
@@ -84,11 +42,11 @@
     "municipio": null
   },
   "infraestructura_electrica::Zulia::2026-10-01": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-02T12:55:43.228157+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "municipio": "Maracaibo"
+    "fecha_deteccion": "2026-10-03T22:15:05.038969+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
+    "municipio": null
   },
   "orden_publico::Lara::2026-10-01": {
     "severidad": "medio",
@@ -147,11 +105,11 @@
     "municipio": "Páez"
   },
   "infraestructura_electrica::Portuguesa::2026-10-02": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-02T12:54:56.086153+00:00",
-    "fecha_evento_temprana": "2026-10-02T12:30:14+00:00",
-    "municipio": "Turen"
+    "fecha_deteccion": "2026-10-03T22:16:21.102933+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "municipio": "Sucre"
   },
   "infraestructura_electrica::Guarico::2026-10-02": {
     "severidad": "alto",
@@ -236,5 +194,26 @@
     "fecha_deteccion": "2026-10-03T19:19:30.847216+00:00",
     "fecha_evento_temprana": "2026-10-03T16:29:51+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Carabobo::2026-10-03": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T22:14:55.516863+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
+    "municipio": null
+  },
+  "orden_publico::Carabobo::2026-10-03": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T22:15:09.261780+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:22:50+00:00",
+    "municipio": null
+  },
+  "inundacion::Portuguesa::2026-10-03": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T22:16:16.770591+00:00",
+    "fecha_evento_temprana": "2026-10-03T19:46:34+00:00",
+    "municipio": "Guanare"
   }
 }
