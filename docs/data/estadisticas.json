@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-03T12:05:34.518663+00:00",
+  "actualizado": "2026-10-03T16:15:50.916150+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-03T11:40:42+00:00"
+    "hasta": "2026-10-03T15:01:03+00:00"
   },
-  "total_eventos": 533,
+  "total_eventos": 534,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 161,
+    "infraestructura_electrica": 162,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 137,
@@ -250,10 +250,10 @@
     },
     {
       "estado": "Falcon",
-      "total": 10,
+      "total": 11,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 5,
+        "alto": 6,
         "bajo": 2,
         "medio": 2,
         "critico": 1
@@ -450,7 +450,8 @@
       "orden_publico": 2,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "infraestructura_electrica": 1
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -516,7 +517,7 @@
     }
   },
   "por_severidad": {
-    "alto": 130,
+    "alto": 131,
     "critico": 53,
     "medio": 194,
     "bajo": 145,
@@ -537,7 +538,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 16
+      "2026-10": 17
     },
     "deslizamiento": {
       "2026-07": 3,
