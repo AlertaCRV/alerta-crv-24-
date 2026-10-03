@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Aragua::2026-09-29": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T01:38:03.596969+00:00",
-    "fecha_evento_temprana": "2026-09-29T15:27:08+00:00",
-    "municipio": null
-  },
   "orden_publico::Merida::2026-09-30": {
     "severidad": "bajo",
     "confirmado": false,
@@ -203,10 +196,24 @@
     "municipio": "Guanare"
   },
   "infraestructura_electrica::Lara::2026-10-02": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-03T01:23:48.573788+00:00",
+    "fecha_deteccion": "2026-10-03T06:44:10.033203+00:00",
     "fecha_evento_temprana": "2026-10-02T23:00:00+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Tachira::2026-10-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T06:43:24.412740+00:00",
+    "fecha_evento_temprana": "2026-10-03T05:00:00+00:00",
+    "municipio": "García De Hevia"
+  },
+  "orden_publico::Portuguesa::2026-10-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T06:43:53.714046+00:00",
+    "fecha_evento_temprana": "2026-10-03T03:18:31+00:00",
+    "municipio": "Ospino"
   }
 }

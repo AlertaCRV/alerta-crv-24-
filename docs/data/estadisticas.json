@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-03T01:23:49.204694+00:00",
+  "actualizado": "2026-10-03T06:44:11.468662+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T23:00:00+00:00"
+    "hasta": "2026-10-03T05:00:00+00:00"
   },
-  "total_eventos": 527,
+  "total_eventos": 530,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 158,
+    "infraestructura_electrica": 160,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 134,
+    "orden_publico": 135,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -56,11 +56,11 @@
     },
     {
       "estado": "Lara",
-      "total": 45,
+      "total": 46,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
-        "alto": 12,
+        "alto": 13,
         "medio": 20,
         "bajo": 8,
         "sin_clasificar": 1
@@ -93,13 +93,25 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 28,
+      "total": 29,
       "confirmados": 2,
       "por_severidad": {
         "medio": 7,
         "bajo": 10,
         "critico": 3,
-        "alto": 8
+        "alto": 9
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Tachira",
+      "total": 22,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 10,
+        "bajo": 4,
+        "medio": 6,
+        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -125,18 +137,6 @@
         "critico": 1,
         "alto": 2,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 21,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 9,
-        "bajo": 4,
-        "medio": 6,
-        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -325,7 +325,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 12,
-      "infraestructura_electrica": 15,
+      "infraestructura_electrica": 16,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -414,7 +414,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 5,
       "orden_publico": 4,
       "inundacion": 3,
       "sismo": 1,
@@ -489,7 +489,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 9,
-      "orden_publico": 11,
+      "orden_publico": 12,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
@@ -516,7 +516,7 @@
     }
   },
   "por_severidad": {
-    "alto": 126,
+    "alto": 129,
     "critico": 53,
     "medio": 193,
     "bajo": 144,
@@ -537,7 +537,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 13
+      "2026-10": 15
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -553,7 +553,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 11
+      "2026-10": 12
     },
     "salud_publica": {
       "2026-07": 1,
