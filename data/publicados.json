@@ -222,5 +222,12 @@
     "fecha_deteccion": "2026-10-03T12:05:21.653510+00:00",
     "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
     "municipio": "Sucre"
+  },
+  "infraestructura_electrica::Falcon::2026-10-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T16:15:37.770484+00:00",
+    "fecha_evento_temprana": "2026-10-03T15:01:03+00:00",
+    "municipio": null
   }
 }
