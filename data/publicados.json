@@ -229,5 +229,12 @@
     "fecha_deteccion": "2026-10-03T16:15:37.770484+00:00",
     "fecha_evento_temprana": "2026-10-03T15:01:03+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-10-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T19:19:30.847216+00:00",
+    "fecha_evento_temprana": "2026-10-03T16:29:51+00:00",
+    "municipio": null
   }
 }

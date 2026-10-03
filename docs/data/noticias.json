@@ -1,6 +1,32 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/",
+        "fecha": "2026-10-03T16:29:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-03T16:29:51+00:00",
+    "fecha_evento_temprana": "2026-10-03T16:29:51+00:00",
+    "fecha_deteccion": "2026-10-03T19:19:30.847216+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-10-03",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 03/10/2026, 12:29 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Falcon",
     "municipio": null,
     "parroquia": null,
