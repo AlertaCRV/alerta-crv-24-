@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-03T06:44:11.468662+00:00",
+  "actualizado": "2026-10-03T12:05:34.518663+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-03T05:00:00+00:00"
+    "hasta": "2026-10-03T11:40:42+00:00"
   },
-  "total_eventos": 530,
+  "total_eventos": 533,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 160,
+    "infraestructura_electrica": 161,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 135,
+    "orden_publico": 137,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 41,
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 54,
+      "total": 55,
       "confirmados": 9,
       "por_severidad": {
-        "medio": 25,
+        "medio": 26,
         "critico": 4,
         "bajo": 12,
         "sin_clasificar": 1,
@@ -93,11 +93,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 29,
+      "total": 30,
       "confirmados": 2,
       "por_severidad": {
         "medio": 7,
-        "bajo": 10,
+        "bajo": 11,
         "critico": 3,
         "alto": 9
       },
@@ -202,12 +202,12 @@
     },
     {
       "estado": "Sucre",
-      "total": 15,
+      "total": 16,
       "confirmados": 0,
       "por_severidad": {
         "medio": 5,
         "bajo": 7,
-        "alto": 3
+        "alto": 4
       },
       "severidad_dominante": "alto"
     },
@@ -340,7 +340,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 15,
+      "orden_publico": 16,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -382,7 +382,7 @@
     "Sucre": {
       "inundacion": 3,
       "orden_publico": 5,
-      "infraestructura_electrica": 5,
+      "infraestructura_electrica": 6,
       "infraestructura_agua": 1,
       "sismo": 1
     },
@@ -489,7 +489,7 @@
     },
     "Portuguesa": {
       "infraestructura_electrica": 9,
-      "orden_publico": 12,
+      "orden_publico": 13,
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_agua": 1,
@@ -516,10 +516,10 @@
     }
   },
   "por_severidad": {
-    "alto": 129,
+    "alto": 130,
     "critico": 53,
-    "medio": 193,
-    "bajo": 144,
+    "medio": 194,
+    "bajo": 145,
     "sin_clasificar": 11
   },
   "serie_mensual_por_tipo": {
@@ -537,7 +537,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 15
+      "2026-10": 16
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -553,7 +553,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 12
+      "2026-10": 14
     },
     "salud_publica": {
       "2026-07": 1,

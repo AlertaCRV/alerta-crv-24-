@@ -1,11 +1,4 @@
 {
-  "orden_publico::Merida::2026-09-30": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-09-30T07:29:59.187486+00:00",
-    "fecha_evento_temprana": "2026-09-30T01:58:13+00:00",
-    "municipio": null
-  },
   "vialidad::Portuguesa::2026-09-30": {
     "severidad": "critico",
     "confirmado": false,
@@ -210,10 +203,24 @@
     "municipio": "García De Hevia"
   },
   "orden_publico::Portuguesa::2026-10-03": {
-    "severidad": "alto",
+    "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-03T06:43:53.714046+00:00",
+    "fecha_deteccion": "2026-10-03T12:04:53.276654+00:00",
     "fecha_evento_temprana": "2026-10-03T03:18:31+00:00",
     "municipio": "Ospino"
+  },
+  "infraestructura_electrica::Sucre::2026-10-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T12:05:09.505538+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-10-03": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-03T12:05:21.653510+00:00",
+    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
+    "municipio": "Sucre"
   }
 }
