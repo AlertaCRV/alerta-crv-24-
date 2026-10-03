@@ -3,16 +3,20 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-10-02T00:50:36.796276+00:00",
-  "actualizado_hasta": "2026-10-02T00:49:07.588347+00:00",
-  "total_eventos": 14,
+  "generado": "2026-10-03T01:24:03.195782+00:00",
+  "actualizado_hasta": "2026-10-03T01:23:48.573788+00:00",
+  "total_eventos": 26,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 229,
-    "actual": 14
+    "actual": 26
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron solo 14 eventos de emergencia, una caída drástica frente a los 229 eventos del mes anterior (2026‑09). Esta reducción refleja una disminución significativa en la frecuencia de incidentes reportados durante el período.\n\nEn el estado Carabobo se registró una falla eléctrica que provocó apagones prolongados y motivó protestas y cierres de vías en los municipios de Guacara, San Joaquín, San Diego, Los Guayos, La Granja y Las Quintas (El Carabobeno). La misma situación desencadenó un fuerte descontento social que derivó en orden público, con manifestaciones en Guacara, Yagua y Malavé que generaron congestión vehicular en la Autopista Regional del Centro (ARC) (El Impulso (Lara)).\n\nEn Zulia se observaron dos tipos de incidentes. Por un lado, la intensificación de los cortes eléctricos provocó una falla eléctrica que se tradujo en al menos cinco protestas en la región, según reportes de ciudadanos que exigían el fin de los apagones (El Pitazo). Por otro lado, la respuesta de las fuerzas de seguridad a estas manifestaciones se catalogó como orden público, con múltiples protestas nocturnas reportadas en el estado (La Prensa de Lara). \n\nEn Guárico también se registró orden público, con manifestaciones que formaron parte de una serie de protestas en siete estados del país, incluidas las de Guárico, en demanda de soluciones a los apagones (El Pitazo). Finalmente, en Barinas se reportó una falla eléctrica que, según la alerta de Fedecámaras, generó paralización productiva y riesgos sanitarios, afectando a comerciantes, productores e industriales (La Noticia de Barinas).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 26 eventos de emergencia, una disminución notable respecto a los 229 eventos del período anterior (septiembre 2026). La reducción se observa pese a la persistencia de fallas eléctricas y disturbios de orden público en varios estados del país.\n\nLas fallas eléctricas continuaron afectando a la población. En Carabobo se reportó una falla eléctrica que provocó protestas y cierres de vías (El Carabobeno). En Zulia, la falta de suministro eléctrico generó al menos cuatro protestas y daños a electrodomésticos (El Pitazo). En Barinas se registró una falla eléctrica de alta severidad (La Noticia de Barinas). En Portuguesa también se documentó una falla eléctrica (El Pitazo). En Aragua, la crisis energética se describió en varios reportes, tanto en Diario La Nacion (Tachira) como en El Pitazo (Diario La Nacion (Tachira); El Pitazo). Asimismo, Guárico sufrió una falla eléctrica reportada por Diario La Nacion (Tachira). Monagas y Zulia fueron mencionados nuevamente como afectados por cortes prolongados en el mismo medio (Diario La Nacion (Tachira)).\n\nLos incidentes de orden público fueron igualmente relevantes. En Zulia se registró un episodio de orden público de alta severidad (La Prensa de Lara). En Guárico, la fuerza pública intervino para controlar manifestaciones relacionadas con los apagones (El Pitazo). En Carabobo, las protestas por racionamientos eléctricos colapsaron la ARC y generaron disturbios (El Impulso (Lara)). En Portuguesa, las autoridades mantuvieron el orden ante protestas ciudadanas (Turimiquire (Sucre)).\n\nFinalmente, en el estado de Portuguesa se produjo un incidente vial de alta severidad que involucró a varios vehículos y requirió la intervención de los servicios de emergencia (Portuguesa al Dia). Cada uno de estos eventos ha sido documentado por los medios citados, evidenciando la continuidad de desafíos en infraestructura eléctrica y seguridad pública durante el período analizado.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
+    },
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
@@ -30,6 +34,14 @@
       "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/comunidades-de-portuguesa-denuncian-hasta-12-horas-sin-luz-por-doble-racionamiento-esto-no-lo-aguanta-nadie/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
+    },
+    {
       "nombre": "La Noticia de Barinas",
       "link": "https://lanoticiadebarinas.com/2026/10/enfatizo-la-abg-janette-diaz-ramosfedecamaras-barinas-alerta-sobre-paralizacionproductiva-y-riesgo-sanitario-por-apagones/"
     },
@@ -42,12 +54,28 @@
       "link": "https://laverdad.com/rosales-exige-soluciones-y-celeridad-ante-los-apagones-en-el-zulia/"
     },
     {
+      "nombre": "Portuguesa al Dia",
+      "link": "https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/01/video-gnb-atribuye-apagones-al-calentamiento-global-y-genera-indignacion-entre-manifestantes-en-aragua-1oct/"
     },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/02/video-sinvemal-advierte-colapso-de-la-calidad-educativa-por-racionamiento-electrico-de-seis-horas-2oct/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/"
     },
     {
       "nombre": "El Pitazo",
@@ -60,6 +88,14 @@
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/funcionario-de-la-gnb-afirma-que-apagones-son-por-el-calentamiento-global/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/reportan-sismo-de-magnitud-50-en-oriente-de-venezuela-este-2-oct/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos/?utm_source=rss&utm_medium=rss&utm_campaign=sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos"
     }
   ]
 }

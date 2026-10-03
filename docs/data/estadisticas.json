@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-02T18:21:38.520725+00:00",
+  "actualizado": "2026-10-03T01:23:49.204694+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-02T17:58:50+00:00"
+    "hasta": "2026-10-02T23:00:00+00:00"
   },
-  "total_eventos": 526,
+  "total_eventos": 527,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 71,
-    "infraestructura_electrica": 157,
+    "infraestructura_electrica": 158,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 134,
@@ -56,12 +56,12 @@
     },
     {
       "estado": "Lara",
-      "total": 44,
+      "total": 45,
       "confirmados": 3,
       "por_severidad": {
         "critico": 4,
         "alto": 12,
-        "medio": 19,
+        "medio": 20,
         "bajo": 8,
         "sin_clasificar": 1
       },
@@ -325,7 +325,7 @@
       "inundacion": 5,
       "salud_publica": 4,
       "orden_publico": 12,
-      "infraestructura_electrica": 14,
+      "infraestructura_electrica": 15,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -518,7 +518,7 @@
   "por_severidad": {
     "alto": 126,
     "critico": 53,
-    "medio": 192,
+    "medio": 193,
     "bajo": 144,
     "sin_clasificar": 11
   },
@@ -537,7 +537,7 @@
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 12
+      "2026-10": 13
     },
     "deslizamiento": {
       "2026-07": 3,

@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-02T00:51:30.437750+00:00",
-  "actualizado_hasta": "2026-10-02T00:46:58.174814+00:00",
-  "total_eventos": 9,
+  "generado": "2026-10-03T01:24:56.637683+00:00",
+  "actualizado_hasta": "2026-10-02T18:19:23.820637+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 77,
-    "actual": 9
+    "actual": 11
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron únicamente 9 eventos de orden público, una disminución notable respecto a los 77 eventos del mes anterior (septiembre de 2026) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados a nivel nacional, aunque persisten manifestaciones significativas en varios estados.\n\nEn el estado Zulia, se produjeron protestas nocturnas motivadas por los constantes cortes eléctricos y las tandas de racionamiento impuestas por la Corporación Eléctrica Nacional (Corpoelec). Vecinos bloquearon avenidas y carreteras, generando alteraciones en la circulación y daños materiales menores en la infraestructura vial (La Prensa de Lara). La intensidad de la protesta fue catalogada como de alta severidad.\n\nEn Guárico, ciudadanos salieron a las calles el 30 de septiembre para exigir el fin de los apagones, replicando al menos cinco protestas en el estado. Las manifestaciones fueron reprimidas por la Guardia Nacional, lo que derivó en enfrentamientos y reportes de heridos, además de interrupciones en el tráfico local (El Pitazo). Este episodio también se calificó con alta severidad.\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, provocando un colapso parcial de la Autopista Regional del Centro (ARC) y generando fuerte congestión vehicular. Las manifestaciones causaron daños materiales en la vía y afectaron la movilidad de los usuarios (El Impulso (Lara)). Al igual que los otros casos, la situación fue considerada de alta severidad.",
+  "narrativa": "En el mes de octubre de 2026 se registraron 11 eventos de orden público, una notable reducción frente a los 77 eventos del mes anterior (2026‑09). Esta disminución se refleja en la menor cantidad de incidentes reportados en distintas regiones del país, aunque los casos que sí se presentaron mantuvieron una alta severidad.\n\nEn el estado Zulia se produjeron protestas nocturnas contra los constantes cortes eléctricos, con manifestantes que bloquearon avenidas y carreteras, generando importantes trastornos en la movilidad y daños materiales en la infraestructura pública (La Prensa de Lara). La represión de la Guardia Nacional también se reportó, incrementando la tensión en la zona.\n\nEn Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones, replicando al menos cinco protestas en la región. Las concentraciones provocaron interrupciones en el tráfico y enfrentamientos con las fuerzas de seguridad, lo que se tradujo en daños materiales y heridos leves (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, colapsando la Autopista Regional del Centro (ARC) y generando un fuerte congestionamiento vehicular que afectó el transporte de mercancías y provocó daños en la infraestructura vial (El Impulso (Lara)).\n\nEn el municipio Páez, estado Portuguesa, una protesta en la parroquia Payara paralizó el paso de más de 40 gandolas cargadas con arroz y maíz, bloqueando la vía principal y afectando la logística del ciclo de cosecha de invierno 2026, con consecuencias económicas y materiales significativas para los productores locales (Turimiquire (Sucre)).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -26,6 +26,10 @@
       "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
     },
     {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
     },
@@ -36,6 +40,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
     }
   ]
 }
