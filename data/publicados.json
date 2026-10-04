@@ -1,11 +1,4 @@
 {
-  "orden_publico::Zulia::2026-10-01": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-01T21:06:11.230057+00:00",
-    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
-    "municipio": "Maracaibo"
-  },
   "infraestructura_electrica::Zulia::2026-10-01": {
     "severidad": "medio",
     "confirmado": false,
@@ -13,26 +6,12 @@
     "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
     "municipio": null
   },
-  "orden_publico::Carabobo::2026-10-01": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-01T21:06:36.558844+00:00",
-    "fecha_evento_temprana": "2026-10-01T14:42:56+00:00",
-    "municipio": "Guacara"
-  },
   "infraestructura_electrica::Aragua::2026-10-01": {
     "severidad": "alto",
     "confirmado": true,
     "fecha_deteccion": "2026-10-02T18:18:28.772213+00:00",
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
     "municipio": "Bolívar"
-  },
-  "orden_publico::Distrito Capital::2026-10-01": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-01T21:06:23.633044+00:00",
-    "fecha_evento_temprana": "2026-10-01T18:45:50+00:00",
-    "municipio": null
   },
   "orden_publico::Lara::2026-10-02": {
     "severidad": "bajo",
@@ -187,5 +166,19 @@
     "fecha_deteccion": "2026-10-04T20:13:00.810914+00:00",
     "fecha_evento_temprana": "2026-10-04T18:01:31+00:00",
     "municipio": "Lagunillas"
+  },
+  "orden_publico::Yaracuy::2026-10-04": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-04T23:13:30.322361+00:00",
+    "fecha_evento_temprana": "2026-10-04T21:24:31+00:00",
+    "municipio": "Peña"
+  },
+  "orden_publico::Nueva Esparta::2026-10-04": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-04T23:14:49.791155+00:00",
+    "fecha_evento_temprana": "2026-10-04T20:52:04+00:00",
+    "municipio": "García"
   }
 }
