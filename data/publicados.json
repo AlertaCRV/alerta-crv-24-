@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Portuguesa::2026-09-30": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-01T02:11:01.236182+00:00",
-    "fecha_evento_temprana": "2026-09-30T21:31:53+00:00",
-    "municipio": "Páez"
-  },
   "infraestructura_electrica::Carabobo::2026-10-01": {
     "severidad": "alto",
     "confirmado": false,
@@ -203,9 +196,9 @@
     "municipio": "Guanare"
   },
   "incendio::Distrito Capital::2026-10-04": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-04T00:50:18.134735+00:00",
+    "fecha_deteccion": "2026-10-04T06:29:47.958174+00:00",
     "fecha_evento_temprana": "2026-10-04T00:20:44+00:00",
     "municipio": null
   }
