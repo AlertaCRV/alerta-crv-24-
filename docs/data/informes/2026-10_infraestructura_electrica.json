@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-03T12:06:01.227121+00:00",
-  "actualizado_hasta": "2026-10-03T12:05:09.505538+00:00",
-  "total_eventos": 16,
+  "generado": "2026-10-04T20:13:42.216930+00:00",
+  "actualizado_hasta": "2026-10-03T22:16:21.102933+00:00",
+  "total_eventos": 21,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 78,
-    "actual": 16
+    "actual": 21
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 16 eventos de fallas eléctricas de alta severidad, una notable reducción frente a los 78 eventos del mes anterior (septiembre 2026). Esta disminución se refleja en los reportes de distintas regiones del país, aunque la población sigue enfrentando cortes prolongados que afectan la vida cotidiana.\n\nSe documentó una falla eléctrica en Carabobo, donde los apagones provocaron protestas y cierres de vías en municipios como Guacara y Naguanagua (El Carabobeno). En Zulia, dos reportes independientes describen fallas de alta severidad que generaron al menos cuatro protestas y daños a electrodomésticos (El Pitazo; El Impulso). Barinas también sufrió una interrupción significativa del suministro eléctrico (La Noticia de Barinas). En la región central, Portuguesa experimentó una falla eléctrica de alta severidad reportada por El Pitazo.\n\nEn la zona norte, Aragua registró dos fallas eléctricas de alta severidad, una citada por Diario La Nación (Táchira) y otra por El Pitazo, ambas asociadas a protestas nocturnas y reclamos de la ciudadanía (Diario La Nación (Táchira); El Pitazo). Asimismo, Guárico, Monagas y Táchira reportaron fallas de alta severidad según Diario La Nación (Táchira), que también describió el colapso eléctrico en el municipio García de Hevia (Diario La Nación (Táchira)).\n\nEn el occidente, Lara enfrentó una falla eléctrica de alta severidad que motivó la solicitud de un plan de contingencia para escuelas por parte de Sinvemal (El Impulso (Lara)). Finalmente, en el este, Sucre sufrió una interrupción eléctrica de alta severidad reportada por Turimiquire (Turimiquire (Sucre)).\n\nA pesar de la reducción en el número total de incidentes, los apagones de hasta 12‑15 horas continúan generando descontento, protestas nocturnas y dificultades en actividades escolares y comerciales en todo el territorio nacional, según los múltiples reportes periodísticos citados.",
+  "narrativa": "En el mes de octubre de 2026 se registraron 21 fallas eléctricas de alta severidad, una notable reducción frente a los 78 eventos del mes anterior (septiembre de 2026). Esta disminución se refleja en la menor cantidad de interrupciones prolongadas, aunque la población sigue enfrentando cortes de hasta 12 horas diarias.\n\nEntre los incidentes más críticos, se reportó una falla eléctrica en Carabobo que generó protestas y cierres de vías en los municipios de Guacara, San Joaquín, San Diego, Los Guayos, La Granja y Las Quintas (El Carabobeno). En Zulia, El Pitazo informó al menos cuatro protestas vinculadas a apagones de más de ocho horas, con daños a electrodomésticos y ausencia de un cronograma eléctrico claro (El Pitazo). Barinas también sufrió una falla eléctrica de alta severidad, según La Noticia de Barinas (La Noticia de Barinas). En el estado de Portuguesa, la misma gravedad de la falla fue documentada por El Pitazo (El Pitazo). Aragua experimentó dos fallas: una reportada por Diario La Nacion (Tachira) y otra por El Pitazo, ambas calificadas como de alta severidad (Diario La Nacion (Tachira); El Pitazo).\n\nOtras regiones afectadas incluyeron Guárico, Monagas y Zulia nuevamente, todas con fallas eléctricas de alta severidad según Diario La Nacion (Tachira) (Diario La Nacion (Tachira)). En Táchira, la crisis eléctrica fue descrita como una emergencia, con denuncias de colapso eléctrico y presión social (Diario La Nacion (Tachira)). Lara registró una falla eléctrica de alta severidad que motivó demandas de planes de contingencia para escuelas, reportada por El Impulso (El Impulso). Sucre también sufrió una falla eléctrica grave, según Turimiquire (Turimiquire). En Falcón y el Distrito Capital, las fallas de alta severidad fueron igualmente reportadas por El Impulso (Lara) y Diario La Nacion (Tachira) respectivamente (El Impulso; Diario La Nacion (Tachira)).\n\nEl impacto de estos apagones ha generado un clima de descontento social, con protestas nocturnas en Caracas y en diversas comunidades del interior, donde los ciudadanos denuncian la imposibilidad de descansar y el perjuicio a la actividad comercial y educativa (Diario La Nacion (Tachira)). Las autoridades continúan bajo presión para restablecer un suministro eléctrico continuo y mitigar los efectos de los cortes prolongados.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -20,6 +20,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/politica/denuncian-colapso-electrico-e-indolencia-gubernamental-en-el-municipio-garcia-de-hevia/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/"
     },
     {
       "nombre": "El Carabobeno",
@@ -32,6 +36,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/02/video-sinvemal-advierte-colapso-de-la-calidad-educativa-por-racionamiento-electrico-de-seis-horas-2oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/03/video-protestas-por-apagones-se-extienden-a-6-estados-tras-una-semana-de-reclamos-3oct/"
     },
     {
       "nombre": "El Pitazo",
@@ -64,6 +72,10 @@
     {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/"
     },
     {
       "nombre": "La Prensa de Lara",
