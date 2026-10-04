@@ -6,25 +6,11 @@
     "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
     "municipio": "Maracaibo"
   },
-  "orden_publico::Guarico::2026-10-01": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-01T16:11:34.516322+00:00",
-    "fecha_evento_temprana": "2026-10-01T14:25:25+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Zulia::2026-10-01": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-10-03T22:15:05.038969+00:00",
     "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-10-01": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-01T16:13:23.231624+00:00",
-    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
     "municipio": null
   },
   "orden_publico::Carabobo::2026-10-01": {
@@ -189,10 +175,10 @@
     "municipio": "Guanare"
   },
   "incendio::Distrito Capital::2026-10-04": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-04T06:29:47.958174+00:00",
-    "fecha_evento_temprana": "2026-10-04T00:20:44+00:00",
+    "fecha_deteccion": "2026-10-04T17:07:51.037954+00:00",
+    "fecha_evento_temprana": "2026-10-04T15:45:36+00:00",
     "municipio": null
   }
 }
