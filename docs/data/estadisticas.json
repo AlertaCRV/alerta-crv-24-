@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-04T20:13:01.455621+00:00",
+  "actualizado": "2026-10-04T23:15:42.256909+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-04T18:01:31+00:00"
+    "hasta": "2026-10-04T21:24:31+00:00"
   },
-  "total_eventos": 544,
+  "total_eventos": 546,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 72,
     "infraestructura_electrica": 166,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 138,
+    "orden_publico": 140,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 45,
@@ -189,10 +189,10 @@
     },
     {
       "estado": "Yaracuy",
-      "total": 18,
+      "total": 19,
       "confirmados": 1,
       "por_severidad": {
-        "critico": 4,
+        "critico": 5,
         "bajo": 6,
         "medio": 6,
         "sin_clasificar": 1,
@@ -238,13 +238,13 @@
     },
     {
       "estado": "Nueva Esparta",
-      "total": 11,
+      "total": 12,
       "confirmados": 1,
       "por_severidad": {
         "alto": 2,
         "bajo": 6,
         "medio": 2,
-        "critico": 1
+        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -440,7 +440,7 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_agua": 4,
       "vialidad": 1,
       "infraestructura_electrica": 1
@@ -458,7 +458,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 5,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -518,7 +518,7 @@
   },
   "por_severidad": {
     "alto": 135,
-    "critico": 53,
+    "critico": 55,
     "medio": 199,
     "bajo": 146,
     "sin_clasificar": 11
@@ -555,7 +555,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 15
+      "2026-10": 17
     },
     "salud_publica": {
       "2026-07": 1,
