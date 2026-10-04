@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-10-04T00:51:49.307856+00:00",
+  "actualizado_hasta": "2026-10-04T00:50:18.134735+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 19,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026 se registró únicamente un incendio, en contraste con los 19 eventos reportados en el período anterior (septiembre de 2026). Esta reducción significativa se refleja en los datos consolidados del sistema de monitoreo de emergencias.\n\nEl único incidente ocurrió el sábado 3 de octubre en la parroquia La Vega, Urbanización Montalbán III, dentro del Centro Comercial Caracas, en el cuarto piso, donde funcionaba la guardería \"English Esides\" (Reporte Confidencial). El siniestro afectó aproximadamente 40 metros cuadrados del área de comedor de la guardería, provocando daños materiales considerables en la infraestructura de cuatro niveles positivos y uno negativo del edificio (Reporte Confidencial). La gravedad del incendio fue catalogada como alta, aunque no se reportaron víctimas fatales; la información disponible se limita a los daños estructurales y la interrupción de la actividad de la guardería (Reporte Confidencial).\n\nEste hecho subraya la importancia de mantener la vigilancia y la capacidad de respuesta rápida ante incendios, aun cuando la frecuencia de eventos haya disminuido notablemente. El equipo de la Cruz Roja Venezolana continuará reforzando protocolos de prevención y asistencia en el Distrito Capital, asegurando que cualquier eventualidad sea atendida con la mayor celeridad y eficacia posible (Reporte Confidencial).",
+  "fuentes": [
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/10/03/incendio-consume-guarderia/"
+    }
+  ]
+}
