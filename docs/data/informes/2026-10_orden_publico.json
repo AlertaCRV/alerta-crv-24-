@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-03T01:24:56.637683+00:00",
-  "actualizado_hasta": "2026-10-02T18:19:23.820637+00:00",
-  "total_eventos": 11,
+  "generado": "2026-10-04T00:52:48.966931+00:00",
+  "actualizado_hasta": "2026-10-03T22:15:09.261780+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 77,
-    "actual": 11
+    "actual": 15
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 11 eventos de orden público, una notable reducción frente a los 77 eventos del mes anterior (2026‑09). Esta disminución se refleja en la menor cantidad de incidentes reportados en distintas regiones del país, aunque los casos que sí se presentaron mantuvieron una alta severidad.\n\nEn el estado Zulia se produjeron protestas nocturnas contra los constantes cortes eléctricos, con manifestantes que bloquearon avenidas y carreteras, generando importantes trastornos en la movilidad y daños materiales en la infraestructura pública (La Prensa de Lara). La represión de la Guardia Nacional también se reportó, incrementando la tensión en la zona.\n\nEn Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones, replicando al menos cinco protestas en la región. Las concentraciones provocaron interrupciones en el tráfico y enfrentamientos con las fuerzas de seguridad, lo que se tradujo en daños materiales y heridos leves (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, colapsando la Autopista Regional del Centro (ARC) y generando un fuerte congestionamiento vehicular que afectó el transporte de mercancías y provocó daños en la infraestructura vial (El Impulso (Lara)).\n\nEn el municipio Páez, estado Portuguesa, una protesta en la parroquia Payara paralizó el paso de más de 40 gandolas cargadas con arroz y maíz, bloqueando la vía principal y afectando la logística del ciclo de cosecha de invierno 2026, con consecuencias económicas y materiales significativas para los productores locales (Turimiquire (Sucre)).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 15 incidentes de orden público, una notable disminución respecto a los 77 eventos del mes anterior (2026‑09) (Comparación).\n\nEn el estado Zulia, manifestaciones nocturnas surgieron como respuesta a los continuos cortes eléctricos; vecinos bloquearon avenidas y carreteras en varios sectores del estado, generando alteraciones en la circulación (La Prensa de Lara).\n\nEn Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones y fueron reprimidos por la Guardia Nacional, lo que provocó enfrentamientos y detenciones en distintas localidades del estado (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en los municipios de Guacara, Yagua y Malavé, donde la concentración de manifestantes colapsó la Autopista Regional del Centro (ARC) y generó un fuerte tráfico vehicular (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron dos episodios de alta severidad: primero, en la parroquia Payara del municipio Páez, una protesta bloqueó la vía principal reteniendo a más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)); segundo, en Ospino, vecinos realizaron un cacerolazo que se transformó en marcha pese al fuerte despliegue policial, protestando contra los prolongados apagones (Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -24,6 +24,10 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -44,6 +48,14 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
     }
   ]
 }

@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-10-03T01:25:21.571831+00:00",
+    "generado": "2026-10-04T00:53:06.845543+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-03T01:25:09.095631+00:00",
+    "generado": "2026-10-04T00:53:01.470009+00:00",
     "total_eventos": 1
   },
   {
@@ -20,15 +20,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-03T01:24:56.637683+00:00",
-    "total_eventos": 11
+    "generado": "2026-10-04T00:52:48.966931+00:00",
+    "total_eventos": 15
   },
   {
     "periodo": "2026-10",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-03T22:17:57.971377+00:00",
+    "generado": "2026-10-04T00:52:22.365703+00:00",
     "total_eventos": 1
   },
   {
@@ -38,6 +38,14 @@
     "cerrado": false,
     "generado": "2026-10-03T12:06:01.227121+00:00",
     "total_eventos": 16
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "incendio",
+    "tipo_label": "Incendio",
+    "cerrado": false,
+    "generado": "2026-10-04T00:51:49.307856+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-10",

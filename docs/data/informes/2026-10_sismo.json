@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-03T01:25:09.095631+00:00",
+  "generado": "2026-10-04T00:53:01.470009+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un solo evento sísmico, lo que representa una disminución respecto al período anterior en el que se contabilizaron dos eventos (Comparación con el período anterior (2026-09): 2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 en el oriente de Venezuela, cuyo epicentro se ubicó en la región costera cercana a Güiria, en el estado Sucre (Nuevo Dia). La información fue confirmada también por Yaracuy al Dia, que señaló la misma magnitud y ubicación del temblor (Yaracuy al Dia).\\n\\nEl temblor fue percibido con intensidad en varias localidades de la zona, provocando que muchos residentes abandonaran sus hogares en busca de lugares seguros (Nuevo Dia). A pesar del susto generado, hasta el momento no se han reportado daños materiales significativos ni víctimas mortales (Nuevo Dia).\\n\\nLas autoridades locales y la Cruz Roja Venezolana continúan monitoreando la situación y permanecen a disposición de la población para atender cualquier eventualidad que pudiera derivarse del sismo (Nuevo Dia).",
+  "narrativa": "En el mes de octubre de 2026 se registró un solo evento sísmico, cifra que representa una disminución respecto al período anterior, en el que se contabilizaron dos eventos (comparación proporcionada). \n\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 que tuvo su epicentro en la zona costera cercana a Güiria, en el estado Sucre, en el oriente venezolano (Nuevo Dia). El temblor fue percibido con intensidad en varias localidades de la región, provocando que muchos residentes abandonaran sus hogares en busca de un lugar seguro (Yaracuy al Dia). \n\nHasta el momento de los reportes, no se han registrado daños materiales significativos ni víctimas mortales a consecuencia del sismo (Nuevo Dia). Las autoridades locales continúan monitoreando la zona y han recomendado a la población mantenerse atenta a posibles réplicas, aunque no se anticipan mayores impactos.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",
