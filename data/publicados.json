@@ -180,5 +180,12 @@
     "fecha_deteccion": "2026-10-04T17:07:51.037954+00:00",
     "fecha_evento_temprana": "2026-10-04T15:45:36+00:00",
     "municipio": null
+  },
+  "incendio::Zulia::2026-10-04": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-04T20:13:00.810914+00:00",
+    "fecha_evento_temprana": "2026-10-04T18:01:31+00:00",
+    "municipio": "Lagunillas"
   }
 }

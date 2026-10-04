@@ -1,6 +1,32 @@
 [
   {
     "tipo": "incendio",
+    "ubicacion": "Zulia",
+    "municipio": "Lagunillas",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/se-incendio-una-fosa-de-petroleo-en-lagunillas-bomberos-atendieron-la-emergencia/",
+        "fecha": "2026-10-04T18:01:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-04T18:01:31+00:00",
+    "fecha_evento_temprana": "2026-10-04T18:01:31+00:00",
+    "fecha_deteccion": "2026-10-04T20:13:00.810914+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Zulia::2026-10-04",
+    "titulo": "Incendio en Municipio Lagunillas, Zulia",
+    "texto": "📌 Incendio en Municipio Lagunillas, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 04/10/2026, 2:01 p.m.\n🔎 Detectado por el sistema: 04/10/2026, 4:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/se-incendio-una-fosa-de-petroleo-en-lagunillas-bomberos-atendieron-la-emergencia/"
+  },
+  {
+    "tipo": "incendio",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
