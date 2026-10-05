@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-04T20:13:42.216930+00:00",
-  "actualizado_hasta": "2026-10-03T22:16:21.102933+00:00",
-  "total_eventos": 21,
+  "generado": "2026-10-05T18:20:28.130554+00:00",
+  "actualizado_hasta": "2026-10-05T08:59:01.875043+00:00",
+  "total_eventos": 22,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 78,
-    "actual": 21
+    "actual": 22
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 21 fallas eléctricas de alta severidad, una notable reducción frente a los 78 eventos del mes anterior (septiembre de 2026). Esta disminución se refleja en la menor cantidad de interrupciones prolongadas, aunque la población sigue enfrentando cortes de hasta 12 horas diarias.\n\nEntre los incidentes más críticos, se reportó una falla eléctrica en Carabobo que generó protestas y cierres de vías en los municipios de Guacara, San Joaquín, San Diego, Los Guayos, La Granja y Las Quintas (El Carabobeno). En Zulia, El Pitazo informó al menos cuatro protestas vinculadas a apagones de más de ocho horas, con daños a electrodomésticos y ausencia de un cronograma eléctrico claro (El Pitazo). Barinas también sufrió una falla eléctrica de alta severidad, según La Noticia de Barinas (La Noticia de Barinas). En el estado de Portuguesa, la misma gravedad de la falla fue documentada por El Pitazo (El Pitazo). Aragua experimentó dos fallas: una reportada por Diario La Nacion (Tachira) y otra por El Pitazo, ambas calificadas como de alta severidad (Diario La Nacion (Tachira); El Pitazo).\n\nOtras regiones afectadas incluyeron Guárico, Monagas y Zulia nuevamente, todas con fallas eléctricas de alta severidad según Diario La Nacion (Tachira) (Diario La Nacion (Tachira)). En Táchira, la crisis eléctrica fue descrita como una emergencia, con denuncias de colapso eléctrico y presión social (Diario La Nacion (Tachira)). Lara registró una falla eléctrica de alta severidad que motivó demandas de planes de contingencia para escuelas, reportada por El Impulso (El Impulso). Sucre también sufrió una falla eléctrica grave, según Turimiquire (Turimiquire). En Falcón y el Distrito Capital, las fallas de alta severidad fueron igualmente reportadas por El Impulso (Lara) y Diario La Nacion (Tachira) respectivamente (El Impulso; Diario La Nacion (Tachira)).\n\nEl impacto de estos apagones ha generado un clima de descontento social, con protestas nocturnas en Caracas y en diversas comunidades del interior, donde los ciudadanos denuncian la imposibilidad de descansar y el perjuicio a la actividad comercial y educativa (Diario La Nacion (Tachira)). Las autoridades continúan bajo presión para restablecer un suministro eléctrico continuo y mitigar los efectos de los cortes prolongados.",
+  "narrativa": "En el mes de octubre de 2026 se registraron 22 fallas eléctricas de alta severidad, una reducción significativa respecto a los 78 eventos del mes anterior (septiembre 2026). Esta disminución se observa en el contexto de continuas interrupciones que afectan a gran parte del territorio nacional.\n\nDurante el período se reportaron fallas eléctricas críticas en varios estados: Carabobo (El Carabobeno), Zulia (El Pitazo; Diario La Nacion (Tachira)), Barinas (La Noticia de Barinas), Portuguesa (El Pitazo), Aragua (El Pitazo; Diario La Nacion (Tachira)), Guárico (Diario La Nacion (Tachira)), Monagas (Diario La Nacion (Tachira)), Lara (El Impulso (Lara)), Sucre (Turimiquire (Sucre)), Falcón (El Impulso (Lara)), Distrito Capital (Diario La Nacion (Tachira)) y Táchira (Diario La Nacion (Tachira)). Cada una de estas interrupciones se calificó como de alta severidad y generó daños materiales y perjuicios a la población.\n\nLas consecuencias de los apagones se reflejaron en protestas nocturnas en diversas localidades. En Carabobo, vecinos de municipios como Guacara, San Joaquín, San Diego y Los Guayos se movilizaron para exigir el restablecimiento del servicio (El Carabobeno). En la capital, Caracas, la población denunció la imposibilidad de descansar y el impacto en la educación y el comercio, describiendo los cortes de hasta 12 horas al día como una \"muerte lenta\" (Diario La Nacion (Tachira)).\n\nEn Táchira, la situación alcanzó un nivel de emergencia eléctrica, con apagones de hasta 15 horas que dejaron al municipio García de Hevia en una \"olla de presión\" y generaron llamados urgentes de Fedecámaras Táchira a las autoridades nacionales (Diario La Nacion (Tachira)). Los residentes reportaron que la falta de luz afecta la atención médica, daña electrodomésticos y dificulta la realización de tareas escolares.\n\nEn conjunto, aunque el número total de incidentes disminuyó respecto al mes anterior, la persistencia de fallas de alta severidad en múltiples estados mantiene una presión constante sobre la población y las autoridades, que deben buscar soluciones sostenibles para garantizar el suministro eléctrico continuo.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -24,6 +24,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/vivir-en-tachira-entre-penumbra-y-desatencion/"
     },
     {
       "nombre": "El Carabobeno",
