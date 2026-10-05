@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
     "municipio": "Bolívar"
   },
-  "orden_publico::Portuguesa::2026-10-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T06:23:23.338146+00:00",
-    "fecha_evento_temprana": "2026-10-02T05:40:26+00:00",
-    "municipio": "Páez"
-  },
   "infraestructura_electrica::Portuguesa::2026-10-02": {
     "severidad": "medio",
     "confirmado": false,
@@ -166,5 +159,12 @@
     "fecha_deteccion": "2026-10-05T02:08:53.450563+00:00",
     "fecha_evento_temprana": "2026-10-04T16:11:04+00:00",
     "municipio": "Barinas"
+  },
+  "infraestructura_electrica::Tachira::2026-10-05": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-05T08:59:01.875043+00:00",
+    "fecha_evento_temprana": "2026-10-05T05:00:00+00:00",
+    "municipio": "San Cristóbal"
   }
 }
