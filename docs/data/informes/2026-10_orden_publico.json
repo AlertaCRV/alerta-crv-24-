@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-04T00:52:48.966931+00:00",
-  "actualizado_hasta": "2026-10-03T22:15:09.261780+00:00",
-  "total_eventos": 15,
+  "generado": "2026-10-05T02:12:07.177858+00:00",
+  "actualizado_hasta": "2026-10-05T02:08:53.450563+00:00",
+  "total_eventos": 18,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 77,
-    "actual": 15
+    "actual": 18
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 15 incidentes de orden público, una notable disminución respecto a los 77 eventos del mes anterior (2026‑09) (Comparación).\n\nEn el estado Zulia, manifestaciones nocturnas surgieron como respuesta a los continuos cortes eléctricos; vecinos bloquearon avenidas y carreteras en varios sectores del estado, generando alteraciones en la circulación (La Prensa de Lara).\n\nEn Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones y fueron reprimidos por la Guardia Nacional, lo que provocó enfrentamientos y detenciones en distintas localidades del estado (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en los municipios de Guacara, Yagua y Malavé, donde la concentración de manifestantes colapsó la Autopista Regional del Centro (ARC) y generó un fuerte tráfico vehicular (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron dos episodios de alta severidad: primero, en la parroquia Payara del municipio Páez, una protesta bloqueó la vía principal reteniendo a más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)); segundo, en Ospino, vecinos realizaron un cacerolazo que se transformó en marcha pese al fuerte despliegue policial, protestando contra los prolongados apagones (Portuguesa Reporta).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 18 eventos de orden público, una notable reducción frente a los 77 eventos del mes anterior (septiembre de 2026). Esta disminución se refleja en la menor cantidad de incidentes reportados, aunque persisten situaciones de alta y crítica severidad en varios estados.\n\nEn Zulia, la Guardia Nacional reprimió al menos cinco protestas nocturnas contra los prolongados apagones, parte de una serie de al menos 20 manifestaciones que se replicaron en siete estados el 30 de septiembre (El Pitazo). En Guárico, los ciudadanos también se movilizaron exigiendo el fin de los cortes eléctricos, sumándose a la ola de protestas que se extendió por la región (El Pitazo).\n\nEn Carabobo, las protestas por racionamientos eléctricos se concentraron en los municipios de Guacara, Yagua y Malavé, generando un fuerte congestionamiento del tráfico en la Autopista Regional del Centro (ARC) (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron dos incidentes de alta severidad. En el municipio Páez, una protesta en la parroquia Payara bloqueó la vía principal, paralizando más de 40 gandolas cargadas con arroz y maíz, lo que afectó el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)). Por otro lado, en Ospino, a pesar del fuerte despliegue policial, vecinos marcharon en cacerolazo y posteriormente en marcha contra los apagones, manifestando su descontento con la situación eléctrica (Portuguesa Reporta).\n\nEn Yaracuy, un tiroteo ocurrido en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, elevando la gravedad del evento a nivel crítico (Yaracuy al Dia). En Nueva Esparta, la comunidad se vio consternada por el asesinato de una niña de siete años oriunda de Villa Rosa, ocurrido en Chicago, Estados Unidos, y que generó dolor tanto dentro como fuera del país (Reporte Confidencial (Nueva Esparta)).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -30,8 +30,16 @@
       "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
     },
     {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/10/04/nina-oriunda-de-villa-rosa/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -52,6 +60,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
