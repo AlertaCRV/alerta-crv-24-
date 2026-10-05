@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Aragua::2026-10-01": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-02T18:18:28.772213+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "municipio": "Bolívar"
-  },
   "infraestructura_electrica::Portuguesa::2026-10-02": {
     "severidad": "medio",
     "confirmado": false,
@@ -20,33 +13,12 @@
     "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
     "municipio": "Sucre"
   },
-  "infraestructura_electrica::Guarico::2026-10-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T12:55:05.067370+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Monagas::2026-10-02": {
     "severidad": "sin_clasificar",
     "confirmado": true,
     "fecha_deteccion": "2026-10-02T18:20:15.911272+00:00",
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
     "municipio": "Maturín"
-  },
-  "sismo::Sucre::2026-10-02::mag5.0": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T18:18:23.979674+00:00",
-    "fecha_evento_temprana": "2026-10-02T17:49:14+00:00",
-    "municipio": null
-  },
-  "orden_publico::Zulia::2026-10-02": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T18:19:23.820637+00:00",
-    "fecha_evento_temprana": "2026-10-02T15:03:41+00:00",
-    "municipio": "Maracaibo"
   },
   "vialidad::Portuguesa::2026-10-02": {
     "severidad": "alto",
