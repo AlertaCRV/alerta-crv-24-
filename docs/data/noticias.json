@@ -1,6 +1,32 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
+    "parroquia": "Torunos",
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/",
+        "fecha": "2026-10-04T16:11:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-04T16:11:04+00:00",
+    "fecha_evento_temprana": "2026-10-04T16:11:04+00:00",
+    "fecha_deteccion": "2026-10-05T02:08:53.450563+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-10-04",
+    "titulo": "Orden público en Parroquia Torunos, Municipio Barinas, Barinas",
+    "texto": "📌 Orden público en Parroquia Torunos, Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Torunos, Municipio Barinas, Barinas\n🕒 Hecho reportado: 04/10/2026, 12:11 p.m.\n🔎 Detectado por el sistema: 04/10/2026, 10:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Yaracuy",
     "municipio": "Peña",
     "parroquia": null,
@@ -3398,83 +3424,5 @@
     "clave_dedup": "deslizamiento::Bolivar::2026-09-20",
     "titulo": "Deslizamiento/Derrumbe en Municipio El Callao, Bolivar",
     "texto": "📌 Deslizamiento/Derrumbe en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 20/09/2026, 3:30 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 2:34 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/dos-personas-murieron-luego-de-registrarse-un-derrube-en-una-mina-de-el-callao/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Monagas",
-    "municipio": "Ezequiel Zamora",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/reactivan-pozos-profundos-en-dos-municipios-de-monagas/",
-        "fecha": "2026-09-20T17:31:21+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-20T17:31:21+00:00",
-    "fecha_evento_temprana": "2026-09-20T17:31:21+00:00",
-    "fecha_deteccion": "2026-09-21T01:18:50.267171+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_agua::Monagas::2026-09-20",
-    "titulo": "Falla de agua en Municipio Ezequiel Zamora, Monagas",
-    "texto": "📌 Falla de agua en Municipio Ezequiel Zamora, Monagas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ezequiel Zamora, Monagas\n🕒 Hecho reportado: 20/09/2026, 1:31 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 9:18 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/reactivan-pozos-profundos-en-dos-municipios-de-monagas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/jubilados-de-la-cantv-sumaron-nueva-semana-se-protesta/",
-        "fecha": "2026-09-20T23:58:21+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-20T23:58:21+00:00",
-    "fecha_evento_temprana": "2026-09-20T23:58:21+00:00",
-    "fecha_deteccion": "2026-09-21T01:19:07.889241+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Aragua::2026-09-20",
-    "titulo": "Orden público en Aragua",
-    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 20/09/2026, 7:58 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 9:19 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/jubilados-de-la-cantv-sumaron-nueva-semana-se-protesta/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Santa Rosalía",
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/",
-        "fecha": "2026-09-20T22:52:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-20T22:52:28+00:00",
-    "fecha_evento_temprana": "2026-09-20T22:52:28+00:00",
-    "fecha_deteccion": "2026-09-20T23:20:26.053733+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-09-20",
-    "titulo": "Incendio en Parroquia Santa Rosalía, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia Santa Rosalía, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Santa Rosalía, Distrito Capital\n🕒 Hecho reportado: 20/09/2026, 6:52 p.m.\n🔎 Detectado por el sistema: 20/09/2026, 7:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/se-incendian-dos-niveles-de-un-deposito-en-local-de-el-cementerio-en-caracas/"
   }
 ]

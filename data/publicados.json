@@ -13,27 +13,6 @@
     "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
     "municipio": "Bolívar"
   },
-  "orden_publico::Lara::2026-10-02": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T00:46:48.750639+00:00",
-    "fecha_evento_temprana": "2026-10-02T00:01:18+00:00",
-    "municipio": null
-  },
-  "orden_publico::Merida::2026-10-01": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T00:46:58.174814+00:00",
-    "fecha_evento_temprana": "2026-10-01T23:53:33+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Barinas::2026-10-01": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T00:49:07.588347+00:00",
-    "fecha_evento_temprana": "2026-10-01T22:27:28+00:00",
-    "municipio": null
-  },
   "orden_publico::Portuguesa::2026-10-02": {
     "severidad": "alto",
     "confirmado": false,
@@ -180,5 +159,12 @@
     "fecha_deteccion": "2026-10-04T23:14:49.791155+00:00",
     "fecha_evento_temprana": "2026-10-04T20:52:04+00:00",
     "municipio": "García"
+  },
+  "orden_publico::Barinas::2026-10-04": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-05T02:08:53.450563+00:00",
+    "fecha_evento_temprana": "2026-10-04T16:11:04+00:00",
+    "municipio": "Barinas"
   }
 }
