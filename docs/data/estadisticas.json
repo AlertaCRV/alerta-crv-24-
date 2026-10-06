@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-06T00:14:00.131487+00:00",
+  "actualizado": "2026-10-06T19:06:41.371415+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-05T21:20:08+00:00"
+    "hasta": "2026-10-06T18:24:13+00:00"
   },
-  "total_eventos": 550,
+  "total_eventos": 552,
   "por_tipo": {
     "tormenta_electrica": 5,
-    "inundacion": 72,
+    "inundacion": 73,
     "infraestructura_electrica": 168,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 141,
+    "orden_publico": 142,
     "salud_publica": 11,
     "crisis_migratoria": 6,
     "incendio": 46,
@@ -165,6 +165,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Yaracuy",
+      "total": 20,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 5,
+        "bajo": 6,
+        "medio": 7,
+        "sin_clasificar": 1,
+        "alto": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 20,
       "confirmados": 0,
@@ -188,24 +201,11 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Yaracuy",
-      "total": 19,
-      "confirmados": 1,
-      "por_severidad": {
-        "critico": 5,
-        "bajo": 6,
-        "medio": 6,
-        "sin_clasificar": 1,
-        "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Sucre",
-      "total": 16,
+      "total": 17,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 5,
+        "medio": 6,
         "bajo": 7,
         "alto": 4
       },
@@ -380,7 +380,7 @@
       "salud_publica": 1
     },
     "Sucre": {
-      "inundacion": 3,
+      "inundacion": 4,
       "orden_publico": 5,
       "infraestructura_electrica": 6,
       "infraestructura_agua": 1,
@@ -458,7 +458,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 5,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -519,7 +519,7 @@
   "por_severidad": {
     "alto": 137,
     "critico": 55,
-    "medio": 200,
+    "medio": 202,
     "bajo": 147,
     "sin_clasificar": 11
   },
@@ -533,7 +533,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 1
+      "2026-10": 2
     },
     "infraestructura_electrica": {
       "2026-07": 5,
@@ -555,7 +555,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 18
+      "2026-10": 19
     },
     "salud_publica": {
       "2026-07": 1,
