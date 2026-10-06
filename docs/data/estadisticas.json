@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-06T23:04:27.547438+00:00",
+  "actualizado": "2026-10-06T23:15:38.238452+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-06T22:03:07+00:00"
   },
-  "total_eventos": 554,
+  "total_eventos": 552,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 73,
     "infraestructura_electrica": 168,
     "deslizamiento": 30,
     "colapso_estructural": 4,
-    "orden_publico": 142,
+    "orden_publico": 141,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 48,
+    "incendio": 47,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 82,
+      "total": 81,
       "confirmados": 9,
       "por_severidad": {
-        "alto": 17,
+        "alto": 16,
         "medio": 23,
         "bajo": 26,
         "critico": 12,
@@ -237,24 +237,24 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Nueva Esparta",
-      "total": 12,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 2,
-        "bajo": 6,
-        "medio": 2,
-        "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Falcon",
       "total": 12,
       "confirmados": 2,
       "por_severidad": {
         "alto": 7,
         "bajo": 2,
+        "medio": 2,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Nueva Esparta",
+      "total": 11,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 2,
+        "bajo": 6,
         "medio": 2,
         "critico": 1
       },
@@ -353,7 +353,7 @@
       "deslizamiento": 4,
       "inundacion": 12,
       "orden_publico": 24,
-      "incendio": 17,
+      "incendio": 16,
       "vialidad": 4,
       "infraestructura_electrica": 15,
       "colapso_estructural": 1,
@@ -440,7 +440,7 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 4,
+      "orden_publico": 3,
       "infraestructura_agua": 4,
       "vialidad": 1,
       "infraestructura_electrica": 1
@@ -518,8 +518,8 @@
     }
   },
   "por_severidad": {
-    "alto": 139,
-    "critico": 55,
+    "alto": 138,
+    "critico": 54,
     "medio": 202,
     "bajo": 147,
     "sin_clasificar": 11
@@ -556,7 +556,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 19
+      "2026-10": 18
     },
     "salud_publica": {
       "2026-07": 1,
@@ -572,7 +572,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 7
+      "2026-10": 6
     },
     "vialidad": {
       "2026-08": 10,

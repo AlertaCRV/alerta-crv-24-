@@ -9619,3 +9619,38 @@ ubicación vieja de las fuentes ya corregidas -- se resolvieron solos al
 actualizar `data/historico_fuentes_texto.jsonl`). `python3
 scripts/validar_configs.py` → OK. `python3 scripts/build_dashboard.py` →
 `docs/data/estadisticas.json` regenerado.
+
+## Auditoría diaria automática (06-10-2026): 2 alertas erróneas corregidas
+
+Se revisaron las 12 alertas publicadas entre el 04 y el 06-10-2026 contra el
+texto de sus fuentes (todas `APROBADO_IA`; ninguna `PASADO_POR_FALLA_TECNICA`).
+
+1. **`orden_publico::Nueva Esparta::2026-10-04` (crítico, falso positivo)**:
+   una niña de 7 años "oriunda de Villa Rosa" (municipio García, Nueva
+   Esparta) fue asesinada en **Chicago**. El hecho es 100% extranjero; el
+   estado venezolano solo es su pueblo natal. `_es_fallecimiento_migrante_en_extranjero()`
+   solo reconocía "Colombia" -- se amplió a `_LUGARES_EXTRANJEROS_MIGRANTE`
+   (Chicago, EE.UU., España, Perú, Chile, etc.) y la ventana a 500 caracteres.
+2. **`incendio::Distrito Capital::2026-10-06` (duplicado)**: el incendio de la
+   refinería Cardón (Falcón) también se publicaba en Distrito Capital por la
+   frase "Sistema Nacional de Gestión de Riesgos Caracas" (institución, no
+   lugar del hecho). Se agregó `"gestion de riesgos caracas"` a
+   `LISTA_NEGRA_POR_ESTADO["Distrito Capital"]`.
+
+**Corrección retroactiva**: ambos eventos eliminados de
+`docs/data/noticias.json`, `data/publicados.json`,
+`data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`; se
+regeneró `estadisticas.json`. El informe mensual
+`docs/data/informes/2026-10_orden_publico.json` menciona el caso de Chicago en
+su narrativa; se deja para que se regenere con el próximo ciclo de informes.
+
+**Pruebas**: 3 casos nuevos (2 reales + 1 control: un homicidio real de un
+oriundo de Villa Rosa dentro de Venezuela sigue publicándose). 1054 passed.
+
+**Pendiente de discutir (no corregido)**: (a) `infraestructura_electrica::Zulia::2026-10-05`
+proviene de una nota del gremio médico sobre sueldos/éxodo médico, sin una
+falla eléctrica concreta; (b) `infraestructura_electrica::Tachira::2026-10-05`
+(severidad alta) viene de un editorial genérico "Vivir en Táchira: entre
+penumbra y desatención". Ambos son notas de opinión/contexto con mención a
+apagones crónicos; no hay un filtro determinista obvio sin riesgo de descartar
+reportes legítimos.
