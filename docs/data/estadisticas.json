@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-06T19:06:41.371415+00:00",
+  "actualizado": "2026-10-06T23:04:27.547438+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-06T18:24:13+00:00"
+    "hasta": "2026-10-06T22:03:07+00:00"
   },
-  "total_eventos": 552,
+  "total_eventos": 554,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 73,
@@ -14,7 +14,7 @@
     "orden_publico": 142,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 46,
+    "incendio": 48,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 81,
+      "total": 82,
       "confirmados": 9,
       "por_severidad": {
-        "alto": 16,
+        "alto": 17,
         "medio": 23,
         "bajo": 26,
         "critico": 12,
@@ -250,10 +250,10 @@
     },
     {
       "estado": "Falcon",
-      "total": 11,
-      "confirmados": 1,
+      "total": 12,
+      "confirmados": 2,
       "por_severidad": {
-        "alto": 6,
+        "alto": 7,
         "bajo": 2,
         "medio": 2,
         "critico": 1
@@ -353,7 +353,7 @@
       "deslizamiento": 4,
       "inundacion": 12,
       "orden_publico": 24,
-      "incendio": 16,
+      "incendio": 17,
       "vialidad": 4,
       "infraestructura_electrica": 15,
       "colapso_estructural": 1,
@@ -451,7 +451,8 @@
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "incendio": 1
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -517,7 +518,7 @@
     }
   },
   "por_severidad": {
-    "alto": 137,
+    "alto": 139,
     "critico": 55,
     "medio": 202,
     "bajo": 147,
@@ -571,7 +572,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 5
+      "2026-10": 7
     },
     "vialidad": {
       "2026-08": 10,
