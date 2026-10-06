@@ -13,41 +13,6 @@
     "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
     "municipio": "Sucre"
   },
-  "infraestructura_electrica::Lara::2026-10-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T06:44:10.033203+00:00",
-    "fecha_evento_temprana": "2026-10-02T23:00:00+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Tachira::2026-10-03": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T06:43:24.412740+00:00",
-    "fecha_evento_temprana": "2026-10-03T05:00:00+00:00",
-    "municipio": "García De Hevia"
-  },
-  "orden_publico::Portuguesa::2026-10-03": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T12:04:53.276654+00:00",
-    "fecha_evento_temprana": "2026-10-03T03:18:31+00:00",
-    "municipio": "Ospino"
-  },
-  "infraestructura_electrica::Sucre::2026-10-03": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T12:05:09.505538+00:00",
-    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
-    "municipio": null
-  },
-  "orden_publico::Zulia::2026-10-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T12:05:21.653510+00:00",
-    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
-    "municipio": "Sucre"
-  },
   "infraestructura_electrica::Falcon::2026-10-03": {
     "severidad": "alto",
     "confirmado": false,
