@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad de Monagas",
+        "link": "https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/",
+        "fecha": "2026-10-06T18:24:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-06T18:24:13+00:00",
+    "fecha_evento_temprana": "2026-10-06T18:24:13+00:00",
+    "fecha_deteccion": "2026-10-06T19:06:30.528938+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Sucre::2026-10-06",
+    "titulo": "Inundación en Sucre",
+    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 06/10/2026, 2:24 p.m.\n🔎 Detectado por el sistema: 06/10/2026, 3:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/",
+        "fecha": "2026-10-06T14:15:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-06T14:15:46+00:00",
+    "fecha_evento_temprana": "2026-10-06T14:15:46+00:00",
+    "fecha_deteccion": "2026-10-06T19:06:39.898637+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Yaracuy::2026-10-06",
+    "titulo": "Orden público en Yaracuy",
+    "texto": "📌 Orden público en Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 06/10/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 06/10/2026, 3:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Tachira",
     "municipio": "García De Hevia",
@@ -3138,213 +3190,5 @@
     "clave_dedup": "orden_publico::Lara::2026-09-22",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 22/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/",
-        "fecha": "2026-09-22T00:17:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T00:17:32+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:17:32+00:00",
-    "fecha_deteccion": "2026-09-22T11:42:00.022729+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-09-22",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 8:17 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 7:42 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/",
-        "fecha": "2026-09-22T00:15:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T00:15:26+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
-    "fecha_deteccion": "2026-09-22T11:42:08.747697+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-09-22",
-    "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 21/09/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 7:42 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
-  },
-  {
-    "tipo": "derrame_petrolero",
-    "ubicacion": "Zulia",
-    "municipio": "Valmore Rodríguez",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/fundacion-derrame-crudo-zulia/",
-        "fecha": "2026-09-21T20:46:17+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T20:46:17+00:00",
-    "fecha_evento_temprana": "2026-09-21T20:46:17+00:00",
-    "fecha_deteccion": "2026-09-22T06:13:05.092175+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "derrame_petrolero::Zulia::2026-09-21",
-    "titulo": "Derrame petrolero en Municipio Valmore Rodríguez, Zulia",
-    "texto": "📌 Derrame petrolero en Municipio Valmore Rodríguez, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Valmore Rodríguez, Zulia\n🕒 Hecho reportado: 21/09/2026, 4:46 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 2:13 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/fundacion-derrame-crudo-zulia/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": "El Llano",
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-el-llano-denuncian.html",
-        "fecha": "2026-09-22T02:22:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T02:22:54+00:00",
-    "fecha_evento_temprana": "2026-09-22T02:22:54+00:00",
-    "fecha_deteccion": "2026-09-22T06:13:46.127774+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Merida::2026-09-22",
-    "titulo": "Orden público en Parroquia El Llano, Merida",
-    "texto": "📌 Orden público en Parroquia El Llano, Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia El Llano, Merida\n🕒 Hecho reportado: 21/09/2026, 10:22 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 2:13 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-el-llano-denuncian.html"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Merida",
-    "municipio": "Cardenal Quintero",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-san-jose-de-las-flores-y.html",
-        "fecha": "2026-09-22T02:21:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T02:21:10+00:00",
-    "fecha_evento_temprana": "2026-09-22T02:21:10+00:00",
-    "fecha_deteccion": "2026-09-22T06:14:11.584228+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Merida::2026-09-22",
-    "titulo": "Salud pública en Municipio Cardenal Quintero, Merida",
-    "texto": "📌 Salud pública en Municipio Cardenal Quintero, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Cardenal Quintero, Merida\n🕒 Hecho reportado: 21/09/2026, 10:21 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 2:14 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/vecinos-de-san-jose-de-las-flores-y.html"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/",
-        "fecha": "2026-09-22T00:15:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T00:15:26+00:00",
-    "fecha_evento_temprana": "2026-09-22T00:15:26+00:00",
-    "fecha_deteccion": "2026-09-22T01:06:00.056092+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Aragua::2026-09-22",
-    "titulo": "Orden público en Aragua",
-    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 21/09/2026, 8:15 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:06 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad de Monagas",
-        "link": "https://laverdaddemonagas.com/2026/09/21/incendio-forestal-en-merida-afecta-a-mas-de-160-hectareas/",
-        "fecha": "2026-09-21T18:38:31+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T18:38:31+00:00",
-    "fecha_evento_temprana": "2026-09-21T18:38:31+00:00",
-    "fecha_deteccion": "2026-09-22T01:06:21.670413+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Merida::2026-09-21",
-    "titulo": "Incendio en Merida",
-    "texto": "📌 Incendio en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 21/09/2026, 2:38 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/09/21/incendio-forestal-en-merida-afecta-a-mas-de-160-hectareas/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/guayana/ciudad/vecinos-de-villa-granada-esperan-a-hidrobolivar-para-reparar-socavacion/",
-        "fecha": "2026-09-21T22:30:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T22:30:53+00:00",
-    "fecha_evento_temprana": "2026-09-21T22:30:53+00:00",
-    "fecha_deteccion": "2026-09-22T01:08:30.462464+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_agua::Bolivar::2026-09-21",
-    "titulo": "Falla de agua en Bolivar",
-    "texto": "📌 Falla de agua en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 6:30 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/ciudad/vecinos-de-villa-granada-esperan-a-hidrobolivar-para-reparar-socavacion/"
   }
 ]
