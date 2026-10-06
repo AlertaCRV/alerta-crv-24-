@@ -1,46 +1,4 @@
 {
-  "infraestructura_electrica::Zulia::2026-10-01": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T22:15:05.038969+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Portuguesa::2026-10-02": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T22:16:21.102933+00:00",
-    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
-    "municipio": "Sucre"
-  },
-  "infraestructura_electrica::Distrito Capital::2026-10-03": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T19:19:30.847216+00:00",
-    "fecha_evento_temprana": "2026-10-03T16:29:51+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Carabobo::2026-10-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T22:14:55.516863+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
-    "municipio": null
-  },
-  "orden_publico::Carabobo::2026-10-03": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T22:15:09.261780+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:22:50+00:00",
-    "municipio": null
-  },
-  "inundacion::Portuguesa::2026-10-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-03T22:16:16.770591+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:46:34+00:00",
-    "municipio": "Guanare"
-  },
   "incendio::Distrito Capital::2026-10-04": {
     "severidad": "alto",
     "confirmado": false,
@@ -109,6 +67,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-06T19:06:39.898637+00:00",
     "fecha_evento_temprana": "2026-10-06T14:15:46+00:00",
+    "municipio": null
+  },
+  "incendio::Distrito Capital::2026-10-06": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-06T23:03:47.100903+00:00",
+    "fecha_evento_temprana": "2026-10-06T22:03:07+00:00",
+    "municipio": null
+  },
+  "incendio::Falcon::2026-10-06": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-06T23:03:52.101143+00:00",
+    "fecha_evento_temprana": "2026-10-06T20:17:23+00:00",
     "municipio": null
   }
 }

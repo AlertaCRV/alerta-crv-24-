@@ -1,5 +1,67 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/",
+        "fecha": "2026-10-06T22:03:07+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-06T22:03:07+00:00",
+    "fecha_evento_temprana": "2026-10-06T22:03:07+00:00",
+    "fecha_deteccion": "2026-10-06T23:03:47.100903+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-10-06",
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 06/10/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 06/10/2026, 7:03 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.85,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/",
+        "fecha": "2026-10-06T22:03:07+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/incendio-refineria-cardon-falcon/",
+        "fecha": "2026-10-06T20:51:00+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/incendio-en-el-complejo-hds-de-la-refineria-cardon-moviliza-a-los-cuerpos-de-seguridad-en-falcon/",
+        "fecha": "2026-10-06T20:17:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-06T22:03:07+00:00",
+    "fecha_evento_temprana": "2026-10-06T20:17:23+00:00",
+    "fecha_deteccion": "2026-10-06T23:03:52.101143+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Falcon::2026-10-06",
+    "titulo": "Incendio en Falcon",
+    "texto": "📌 Incendio en Falcon\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 06/10/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 06/10/2026, 7:03 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/incendio-refineria-cardon-falcon/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/incendio-en-el-complejo-hds-de-la-refineria-cardon-moviliza-a-los-cuerpos-de-seguridad-en-falcon/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Sucre",
     "municipio": null,
@@ -3138,57 +3200,5 @@
     "clave_dedup": "deslizamiento::La Guaira::2026-09-21",
     "titulo": "Deslizamiento/Derrumbe en La Guaira",
     "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 22/09/2026, 5:48 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 8:47 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/miyamoto-international-inicia-la-remocion-de-escombros-en-la-guaira/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/principal/arrancan-en-la-guaira-las-operaciones-de-la-firma-miyamoto-junto-a-ingenieros-venezolanos-para-la-remocion-de-escombros/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/",
-        "fecha": "2026-09-22T20:36:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T20:36:54+00:00",
-    "fecha_evento_temprana": "2026-09-22T20:36:54+00:00",
-    "fecha_deteccion": "2026-09-22T22:21:26.830904+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-22",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 22/09/2026, 4:36 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/",
-        "fecha": "2026-09-22T22:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T22:00:00+00:00",
-    "fecha_evento_temprana": "2026-09-22T22:00:00+00:00",
-    "fecha_deteccion": "2026-09-22T22:21:53.984907+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-22",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 22/09/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 6:21 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/"
   }
 ]
