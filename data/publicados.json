@@ -13,20 +13,6 @@
     "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
     "municipio": "Sucre"
   },
-  "infraestructura_electrica::Monagas::2026-10-02": {
-    "severidad": "sin_clasificar",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-02T18:20:15.911272+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "municipio": "Maturín"
-  },
-  "vialidad::Portuguesa::2026-10-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-02T18:21:10.437683+00:00",
-    "fecha_evento_temprana": "2026-10-02T13:30:05+00:00",
-    "municipio": "Guanare"
-  },
   "infraestructura_electrica::Lara::2026-10-02": {
     "severidad": "alto",
     "confirmado": false,
@@ -138,5 +124,19 @@
     "fecha_deteccion": "2026-10-05T08:59:01.875043+00:00",
     "fecha_evento_temprana": "2026-10-05T05:00:00+00:00",
     "municipio": "San Cristóbal"
+  },
+  "incendio::Tachira::2026-10-05": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-06T00:13:19.800084+00:00",
+    "fecha_evento_temprana": "2026-10-05T18:01:42+00:00",
+    "municipio": "García De Hevia"
+  },
+  "infraestructura_electrica::Zulia::2026-10-05": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-06T00:13:59.212827+00:00",
+    "fecha_evento_temprana": "2026-10-05T21:20:08+00:00",
+    "municipio": null
   }
 }

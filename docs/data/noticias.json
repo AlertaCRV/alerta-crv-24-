@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Tachira",
+    "municipio": "García De Hevia",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/",
+        "fecha": "2026-10-05T18:01:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-05T18:01:42+00:00",
+    "fecha_evento_temprana": "2026-10-05T18:01:42+00:00",
+    "fecha_deteccion": "2026-10-06T00:13:19.800084+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Tachira::2026-10-05",
+    "titulo": "Incendio en Municipio García De Hevia, Tachira",
+    "texto": "📌 Incendio en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 05/10/2026, 2:01 p.m.\n🔎 Detectado por el sistema: 05/10/2026, 8:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/gremio-medico-del-zulia-advierte-sobre-el-impacto-de-las-fallas-electricas-en-pacientes-vulnerables/",
+        "fecha": "2026-10-05T21:20:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-05T21:20:08+00:00",
+    "fecha_evento_temprana": "2026-10-05T21:20:08+00:00",
+    "fecha_deteccion": "2026-10-06T00:13:59.212827+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-05",
+    "titulo": "Falla eléctrica en Zulia",
+    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 05/10/2026, 5:20 p.m.\n🔎 Detectado por el sistema: 05/10/2026, 8:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/gremio-medico-del-zulia-advierte-sobre-el-impacto-de-las-fallas-electricas-en-pacientes-vulnerables/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Tachira",
     "municipio": "San Cristóbal",
@@ -3294,109 +3346,5 @@
     "clave_dedup": "infraestructura_agua::Bolivar::2026-09-21",
     "titulo": "Falla de agua en Bolivar",
     "texto": "📌 Falla de agua en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 21/09/2026, 6:30 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/ciudad/vecinos-de-villa-granada-esperan-a-hidrobolivar-para-reparar-socavacion/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": "Pedraza",
-    "parroquia": "Ciudad Bolivia",
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/apagon-dejo-sin-electricidad-a-dos-municipios-de-barinas-140-mil-habitantes-reclaman-por-las-fallas-de-luz/",
-        "fecha": "2026-09-21T17:33:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T17:33:38+00:00",
-    "fecha_evento_temprana": "2026-09-21T17:33:38+00:00",
-    "fecha_deteccion": "2026-09-21T18:53:28.341045+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-21",
-    "titulo": "Falla eléctrica en Parroquia Ciudad Bolivia, Municipio Pedraza, Barinas",
-    "texto": "📌 Falla eléctrica en Parroquia Ciudad Bolivia, Municipio Pedraza, Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Ciudad Bolivia, Municipio Pedraza, Barinas\n🕒 Hecho reportado: 21/09/2026, 1:33 p.m.\n🔎 Detectado por el sistema: 21/09/2026, 2:53 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagon-dejo-sin-electricidad-a-dos-municipios-de-barinas-140-mil-habitantes-reclaman-por-las-fallas-de-luz/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Trujillo",
-    "municipio": null,
-    "parroquia": "La Quebrada",
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad de Monagas",
-        "link": "https://laverdaddemonagas.com/2026/09/21/desbordamiento-de-quebrada-en-trujillo-por-lluvias-deja-un-fallecido/",
-        "fecha": "2026-09-21T14:42:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T14:42:05+00:00",
-    "fecha_evento_temprana": "2026-09-21T14:42:05+00:00",
-    "fecha_deteccion": "2026-09-21T18:54:36.870233+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Trujillo::2026-09-21",
-    "titulo": "Inundación en Parroquia La Quebrada, Trujillo",
-    "texto": "📌 Inundación en Parroquia La Quebrada, Trujillo\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia La Quebrada, Trujillo\n🕒 Hecho reportado: 21/09/2026, 10:42 a.m.\n🔎 Detectado por el sistema: 21/09/2026, 2:54 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/09/21/desbordamiento-de-quebrada-en-trujillo-por-lluvias-deja-un-fallecido/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/frontera/nueve-lesionados-en-frontera-por-colisiones-arrollamiento-y-derrapes/",
-        "fecha": "2026-09-21T13:10:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T13:10:23+00:00",
-    "fecha_evento_temprana": "2026-09-21T13:10:23+00:00",
-    "fecha_deteccion": "2026-09-21T13:22:25.434952+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Tachira::2026-09-21",
-    "titulo": "Incidente vial en Tachira",
-    "texto": "📌 Incidente vial en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 21/09/2026, 9:10 a.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:22 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/nueve-lesionados-en-frontera-por-colisiones-arrollamiento-y-derrapes/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": "Libertador",
-    "parroquia": "Santa Rosalía",
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/bomberos-sofocan-incendio-en-comercial-de-el-cementerio/",
-        "fecha": "2026-09-21T09:00:30+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-21T09:00:30+00:00",
-    "fecha_evento_temprana": "2026-09-21T09:00:30+00:00",
-    "fecha_deteccion": "2026-09-21T13:22:50.943633+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-09-21",
-    "titulo": "Incendio en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Incendio en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 21/09/2026, 5:00 a.m.\n🔎 Detectado por el sistema: 21/09/2026, 9:22 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/bomberos-sofocan-incendio-en-comercial-de-el-cementerio/"
   }
 ]
