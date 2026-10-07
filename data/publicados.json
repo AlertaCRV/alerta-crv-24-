@@ -82,5 +82,12 @@
     "fecha_deteccion": "2026-10-06T23:03:52.101143+00:00",
     "fecha_evento_temprana": "2026-10-06T20:17:23+00:00",
     "municipio": null
+  },
+  "infraestructura_agua::Sucre::2026-10-07": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-07T09:08:38.147261+00:00",
+    "fecha_evento_temprana": "2026-10-07T00:02:18+00:00",
+    "municipio": "Bermúdez"
   }
 }
