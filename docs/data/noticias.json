@@ -67,32 +67,6 @@
     "texto": "📌 Inundación en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 07/10/2026, 5:07 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 3 (score 1.95)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/07/video-fuertes-lluvias-provocan-inundaciones-en-varias-zonas-de-caracas-7oct/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.8,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/advierten-que-las-fallas-electricas-amenazan-el-inicio-del-ano-escolar/",
-        "fecha": "2026-10-07T18:49:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-07T18:49:43+00:00",
-    "fecha_evento_temprana": "2026-10-07T18:49:43+00:00",
-    "fecha_deteccion": "2026-10-07T21:32:08.919434+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-07",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 07/10/2026, 2:49 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/advierten-que-las-fallas-electricas-amenazan-el-inicio-del-ano-escolar/"
-  },
-  {
     "tipo": "salud_publica",
     "ubicacion": "Trujillo",
     "municipio": "Valera",
@@ -311,58 +285,6 @@
     "texto": "📌 Incendio en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 05/10/2026, 2:01 p.m.\n🔎 Detectado por el sistema: 05/10/2026, 8:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/gremio-medico-del-zulia-advierte-sobre-el-impacto-de-las-fallas-electricas-en-pacientes-vulnerables/",
-        "fecha": "2026-10-05T21:20:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-05T21:20:08+00:00",
-    "fecha_evento_temprana": "2026-10-05T21:20:08+00:00",
-    "fecha_deteccion": "2026-10-06T00:13:59.212827+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-05",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 05/10/2026, 5:20 p.m.\n🔎 Detectado por el sistema: 05/10/2026, 8:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/gremio-medico-del-zulia-advierte-sobre-el-impacto-de-las-fallas-electricas-en-pacientes-vulnerables/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": "San Cristóbal",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/vivir-en-tachira-entre-penumbra-y-desatencion/",
-        "fecha": "2026-10-05T05:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-05T05:00:00+00:00",
-    "fecha_evento_temprana": "2026-10-05T05:00:00+00:00",
-    "fecha_deteccion": "2026-10-05T08:59:01.875043+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-10-05",
-    "titulo": "Falla eléctrica en Municipio San Cristóbal, Tachira",
-    "texto": "📌 Falla eléctrica en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 05/10/2026, 1:00 a.m.\n🔎 Detectado por el sistema: 05/10/2026, 4:59 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/vivir-en-tachira-entre-penumbra-y-desatencion/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Barinas",
     "municipio": "Barinas",
@@ -467,58 +389,6 @@
     "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 04/10/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 04/10/2026, 1:07 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-incendio-en-inmediaciones-de-subestacion-electrica-genera-alarma-en-lagunillas/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/",
-        "fecha": "2026-10-03T19:37:15+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T19:37:15+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
-    "fecha_deteccion": "2026-10-03T22:14:55.516863+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-10-03",
-    "titulo": "Falla eléctrica en Carabobo",
-    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 03/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:14 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/",
-        "fecha": "2026-10-03T19:37:15+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T19:37:15+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:37:15+00:00",
-    "fecha_deteccion": "2026-10-03T22:15:05.038969+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-10-01",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 03/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:15 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/nueva-fluctuacion-electrica-afecta-a-caracas-y-otras-regiones-del-pais-este-3oct/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Carabobo",
     "municipio": null,
@@ -571,84 +441,6 @@
     "texto": "📌 Inundación en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 03/10/2026, 3:46 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Portuguesa",
-    "municipio": "Sucre",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/",
-        "fecha": "2026-10-03T11:40:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T11:40:42+00:00",
-    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
-    "fecha_deteccion": "2026-10-03T22:16:21.102933+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-10-02",
-    "titulo": "Falla eléctrica en Municipio Sucre, Portuguesa",
-    "texto": "📌 Falla eléctrica en Municipio Sucre, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Sucre, Portuguesa\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/",
-        "fecha": "2026-10-03T16:29:51+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T16:29:51+00:00",
-    "fecha_evento_temprana": "2026-10-03T16:29:51+00:00",
-    "fecha_deteccion": "2026-10-03T19:19:30.847216+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-10-03",
-    "titulo": "Falla eléctrica en Distrito Capital",
-    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 03/10/2026, 12:29 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/el-tachira-se-encuentra-en-una-emergencia-electrica/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Falcon",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/10/03/video-protestas-por-apagones-se-extienden-a-6-estados-tras-una-semana-de-reclamos-3oct/",
-        "fecha": "2026-10-03T15:01:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T15:01:03+00:00",
-    "fecha_evento_temprana": "2026-10-03T15:01:03+00:00",
-    "fecha_deteccion": "2026-10-03T16:15:37.770484+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Falcon::2026-10-03",
-    "titulo": "Falla eléctrica en Falcon",
-    "texto": "📌 Falla eléctrica en Falcon\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 03/10/2026, 11:01 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 12:15 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/03/video-protestas-por-apagones-se-extienden-a-6-estados-tras-una-semana-de-reclamos-3oct/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -675,32 +467,6 @@
     "texto": "📌 Orden público en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 11:18 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:04 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/",
-        "fecha": "2026-10-03T11:40:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T11:40:42+00:00",
-    "fecha_evento_temprana": "2026-10-03T11:40:42+00:00",
-    "fecha_deteccion": "2026-10-03T12:05:09.505538+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Sucre::2026-10-03",
-    "titulo": "Falla eléctrica en Sucre",
-    "texto": "📌 Falla eléctrica en Sucre\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:05 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": "Sucre",
@@ -725,58 +491,6 @@
     "clave_dedup": "orden_publico::Zulia::2026-10-03",
     "titulo": "Orden público en Municipio Sucre, Zulia",
     "texto": "📌 Orden público en Municipio Sucre, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Sucre, Zulia\n🕒 Hecho reportado: 03/10/2026, 7:40 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 8:05 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": "García De Hevia",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/politica/denuncian-colapso-electrico-e-indolencia-gubernamental-en-el-municipio-garcia-de-hevia/",
-        "fecha": "2026-10-03T05:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T05:00:00+00:00",
-    "fecha_evento_temprana": "2026-10-03T05:00:00+00:00",
-    "fecha_deteccion": "2026-10-03T06:43:24.412740+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-10-03",
-    "titulo": "Falla eléctrica en Municipio García De Hevia, Tachira",
-    "texto": "📌 Falla eléctrica en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 03/10/2026, 1:00 a.m.\n🔎 Detectado por el sistema: 03/10/2026, 2:43 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/politica/denuncian-colapso-electrico-e-indolencia-gubernamental-en-el-municipio-garcia-de-hevia/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/10/02/video-sinvemal-advierte-colapso-de-la-calidad-educativa-por-racionamiento-electrico-de-seis-horas-2oct/",
-        "fecha": "2026-10-02T23:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T23:00:00+00:00",
-    "fecha_evento_temprana": "2026-10-02T23:00:00+00:00",
-    "fecha_deteccion": "2026-10-03T06:44:10.033203+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-10-02",
-    "titulo": "Falla eléctrica en Lara",
-    "texto": "📌 Falla eléctrica en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 02/10/2026, 7:00 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 2:44 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/02/video-sinvemal-advierte-colapso-de-la-calidad-educativa-por-racionamiento-electrico-de-seis-horas-2oct/"
   },
   {
     "tipo": "sismo",
@@ -812,37 +526,6 @@
     "texto": "📌 Sismo en Parroquia Guiria, Sucre\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Guiria, Sucre\n🕒 Hecho reportado: 02/10/2026, 1:58 p.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:18 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/reportan-sismo-de-magnitud-50-en-oriente-de-venezuela-este-2-oct/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos/?utm_source=rss&utm_medium=rss&utm_campaign=sismo-de-magnitud-50-se-registro-este-2oct-en-el-oriente-de-venezuela-no-se-reportan-mayores-danos"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Aragua",
-    "municipio": "Bolívar",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/",
-        "fecha": "2026-10-02T15:03:41+00:00"
-      },
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T15:03:41+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T18:18:28.772213+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Aragua::2026-10-01",
-    "titulo": "Falla eléctrica en Municipio Bolívar, Aragua",
-    "texto": "📌 Falla eléctrica en Municipio Bolívar, Aragua\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Bolívar, Aragua\n🕒 Hecho reportado: 02/10/2026, 11:03 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:18 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": "Maracaibo",
@@ -869,37 +552,6 @@
     "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 02/10/2026, 11:03 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      },
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/",
-        "fecha": "2026-10-02T17:52:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T17:52:59+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T18:20:15.911272+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Monagas::2026-10-02",
-    "titulo": "Falla eléctrica en Municipio Maturín, Monagas",
-    "texto": "📌 Falla eléctrica en Municipio Maturín, Monagas\n\n✅ CONFIRMADO | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 02/10/2026, 1:52 p.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:20 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/economia/carniceros-ven-mermadas-las-ventas-por-los-apagones/"
-  },
-  {
     "tipo": "vialidad",
     "ubicacion": "Portuguesa",
     "municipio": "Guanare",
@@ -924,32 +576,6 @@
     "clave_dedup": "vialidad::Portuguesa::2026-10-02",
     "titulo": "Incidente vial en Municipio Guanare, Portuguesa",
     "texto": "📌 Incidente vial en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/",
-        "fecha": "2026-10-02T10:05:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T10:05:27+00:00",
-    "fecha_evento_temprana": "2026-10-02T10:05:27+00:00",
-    "fecha_deteccion": "2026-10-02T12:55:05.067370+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Guarico::2026-10-02",
-    "titulo": "Falla eléctrica en Guarico",
-    "texto": "📌 Falla eléctrica en Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 02/10/2026, 6:05 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 8:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/protestas-nocturnas-por-los-apagones-nos-estan-matando-en-vida-con-los-cortes-de-12-horas-al-dia/"
   },
   {
     "tipo": "orden_publico",
@@ -1028,32 +654,6 @@
     "clave_dedup": "orden_publico::Merida::2026-10-01",
     "titulo": "Orden público en Merida",
     "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 01/10/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 8:46 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Noticia de Barinas",
-        "link": "https://lanoticiadebarinas.com/2026/10/enfatizo-la-abg-janette-diaz-ramosfedecamaras-barinas-alerta-sobre-paralizacionproductiva-y-riesgo-sanitario-por-apagones/",
-        "fecha": "2026-10-01T22:27:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T22:27:28+00:00",
-    "fecha_evento_temprana": "2026-10-01T22:27:28+00:00",
-    "fecha_deteccion": "2026-10-02T00:49:07.588347+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-10-01",
-    "titulo": "Falla eléctrica en Barinas",
-    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 01/10/2026, 6:27 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 8:49 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/enfatizo-la-abg-janette-diaz-ramosfedecamaras-barinas-alerta-sobre-paralizacionproductiva-y-riesgo-sanitario-por-apagones/"
   },
   {
     "tipo": "orden_publico",
@@ -1186,63 +786,6 @@
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/",
-        "fecha": "2026-10-01T03:59:19+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T03:59:19+00:00",
-    "fecha_evento_temprana": "2026-10-01T03:59:19+00:00",
-    "fecha_deteccion": "2026-10-01T08:54:42.835840+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Carabobo::2026-10-01",
-    "titulo": "Falla eléctrica en Carabobo",
-    "texto": "📌 Falla eléctrica en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 30/09/2026, 11:59 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 4:54 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/protestas-y-cierres-de-vias-se-multiplican-en-carabobo-por-apagones/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Portuguesa",
-    "municipio": "Páez",
-    "parroquia": "Payara",
-    "severidad": "bajo",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/30/en-portuguesa-protesta-por-fallas-electricas-paraliza-el-transporte-de-cosechas-en-payara-municipio-paez-30sep/",
-        "fecha": "2026-09-30T23:17:43+00:00"
-      },
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/protestan-en-payara-contra-los-apagones-por-mas-de-24-horas-y-paralizan-el-traslado-de-la-cosecha/?utm_source=rss&utm_medium=rss&utm_campaign=protestan-en-payara-contra-los-apagones-por-mas-de-24-horas-y-paralizan-el-traslado-de-la-cosecha",
-        "fecha": "2026-09-30T21:31:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T23:17:43+00:00",
-    "fecha_evento_temprana": "2026-09-30T21:31:53+00:00",
-    "fecha_deteccion": "2026-10-01T02:11:01.236182+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-09-30",
-    "titulo": "Falla eléctrica en Parroquia Payara, Municipio Páez, Portuguesa",
-    "texto": "📌 Falla eléctrica en Parroquia Payara, Municipio Páez, Portuguesa\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Payara, Municipio Páez, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 7:17 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 10:11 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/30/en-portuguesa-protesta-por-fallas-electricas-paraliza-el-transporte-de-cosechas-en-payara-municipio-paez-30sep/\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/protestan-en-payara-contra-los-apagones-por-mas-de-24-horas-y-paralizan-el-traslado-de-la-cosecha/?utm_source=rss&utm_medium=rss&utm_campaign=protestan-en-payara-contra-los-apagones-por-mas-de-24-horas-y-paralizan-el-traslado-de-la-cosecha"
-  },
-  {
     "tipo": "vialidad",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -1267,37 +810,6 @@
     "clave_dedup": "vialidad::Portuguesa::2026-09-30",
     "titulo": "Incidente vial en Municipio Ospino, Portuguesa",
     "texto": "📌 Incidente vial en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 4:03 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 7:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/volcamiento-de-autobus-en-portuguesa-deja-tres-muertos-y-14-heridos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Cojedes",
-    "municipio": "Tinaquillo",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/30/video-protestas-por-apagones-se-registraron-en-tinaquillo-araure-y-acarigua-30sep/",
-        "fecha": "2026-09-30T15:43:05+00:00"
-      },
-      {
-        "nombre": "Yaracuy al Dia",
-        "link": "https://yaracuyaldia.com/venezuela/en-cojedes-protestaron-por-reiterativos-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=en-cojedes-protestaron-por-reiterativos-cortes-electricos",
-        "fecha": "2026-09-30T20:09:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T20:09:05+00:00",
-    "fecha_evento_temprana": "2026-09-30T15:43:05+00:00",
-    "fecha_deteccion": "2026-09-30T23:09:20.239388+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-30",
-    "titulo": "Falla eléctrica en Municipio Tinaquillo, Cojedes",
-    "texto": "📌 Falla eléctrica en Municipio Tinaquillo, Cojedes\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Tinaquillo, Cojedes\n🕒 Hecho reportado: 30/09/2026, 4:09 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 7:09 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/30/video-protestas-por-apagones-se-registraron-en-tinaquillo-araure-y-acarigua-30sep/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/en-cojedes-protestaron-por-reiterativos-cortes-electricos/?utm_source=rss&utm_medium=rss&utm_campaign=en-cojedes-protestaron-por-reiterativos-cortes-electricos"
   },
   {
     "tipo": "orden_publico",
@@ -1402,58 +914,6 @@
     "clave_dedup": "orden_publico::Tachira::2026-09-30",
     "titulo": "Orden público en Municipio San Cristóbal, Tachira",
     "texto": "📌 Orden público en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 30/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/protesta-frente-a-corpoelec/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Trujillo",
-    "municipio": "San Rafael De Carvajal",
-    "parroquia": "Carvajal",
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/marcos-montilla-la-indignacion-popular-se-desbordo-en-las-calles-ante-el-colapso-del-agua-y-los-apagones/",
-        "fecha": "2026-09-30T15:24:51+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T15:24:51+00:00",
-    "fecha_evento_temprana": "2026-09-30T15:24:51+00:00",
-    "fecha_deteccion": "2026-09-30T19:23:58.308280+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Trujillo::2026-09-30",
-    "titulo": "Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo",
-    "texto": "📌 Falla eléctrica en Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Carvajal, Municipio San Rafael De Carvajal, Trujillo\n🕒 Hecho reportado: 30/09/2026, 11:24 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:23 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/marcos-montilla-la-indignacion-popular-se-desbordo-en-las-calles-ante-el-colapso-del-agua-y-los-apagones/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": "Urdaneta",
-    "parroquia": "Siquisique",
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/locales/fallas-servicios-publicos-urdaneta/",
-        "fecha": "2026-09-30T14:37:29+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T14:37:29+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:37:29+00:00",
-    "fecha_deteccion": "2026-09-30T19:24:28.273701+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-30",
-    "titulo": "Falla eléctrica en Parroquia Siquisique, Municipio Urdaneta, Lara",
-    "texto": "📌 Falla eléctrica en Parroquia Siquisique, Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Siquisique, Municipio Urdaneta, Lara\n🕒 Hecho reportado: 30/09/2026, 10:37 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:24 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/fallas-servicios-publicos-urdaneta/"
   },
   {
     "tipo": "orden_publico",
@@ -1716,32 +1176,6 @@
     "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 29/09/2026, 8:55 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 9:07 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/mas-de-150-funcionarios-atienden-la-emergencia-por-el-desbordamiento-del-rio-agua-blanca-en-sucre/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Apure",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/09/28/los-cortes-electricos-afectan-a-las-escuelas-en-palmarito-estado-apure/",
-        "fecha": "2026-09-29T02:40:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-29T02:40:11+00:00",
-    "fecha_evento_temprana": "2026-09-29T02:40:11+00:00",
-    "fecha_deteccion": "2026-09-29T06:22:42.682498+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Apure::2026-09-29",
-    "titulo": "Falla eléctrica en Apure",
-    "texto": "📌 Falla eléctrica en Apure\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 28/09/2026, 10:40 p.m.\n🔎 Detectado por el sistema: 29/09/2026, 2:22 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/09/28/los-cortes-electricos-afectan-a-las-escuelas-en-palmarito-estado-apure/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -1831,32 +1265,6 @@
   },
   {
     "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": "García De Hevia",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/tachira-sin-luz-12-horas-a-40-c-en-la-fria-piden-decreto-de-emergencia-electrica/",
-        "fecha": "2026-09-28T17:02:36+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T17:02:36+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:02:36+00:00",
-    "fecha_deteccion": "2026-09-28T20:45:59.374865+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-09-28",
-    "titulo": "Falla eléctrica en Municipio García De Hevia, Tachira",
-    "texto": "📌 Falla eléctrica en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 28/09/2026, 1:02 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/tachira-sin-luz-12-horas-a-40-c-en-la-fria-piden-decreto-de-emergencia-electrica/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,
     "parroquia": null,
@@ -1908,37 +1316,6 @@
     "texto": "📌 Orden público en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 28/09/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Portuguesa",
-    "municipio": "Santa Rosalía",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/",
-        "fecha": "2026-09-28T14:50:12+00:00"
-      },
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia",
-        "fecha": "2026-09-28T17:43:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T17:43:10+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
-    "fecha_deteccion": "2026-09-28T20:47:17.504104+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-09-28",
-    "titulo": "Falla eléctrica en Municipio Santa Rosalía, Portuguesa",
-    "texto": "📌 Falla eléctrica en Municipio Santa Rosalía, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 28/09/2026, 1:43 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:47 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=apagones-provocan-nuevas-protestas-en-guanare-y-santa-rosalia"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Lara",
     "municipio": null,
@@ -1963,58 +1340,6 @@
     "clave_dedup": "orden_publico::Lara::2026-09-28",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 28/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/",
-        "fecha": "2026-09-28T14:50:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T14:50:12+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:50:12+00:00",
-    "fecha_deteccion": "2026-09-28T20:48:37.332428+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Cojedes::2026-09-27",
-    "titulo": "Falla eléctrica en Cojedes",
-    "texto": "📌 Falla eléctrica en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 28/09/2026, 10:50 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-apagones-nocturnos-provocan-protestas-en-portuguesa-y-cojedes-ninos-llegan-con-sueno-a-clases-28sep/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/",
-        "fecha": "2026-09-28T14:15:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T14:15:00+00:00",
-    "fecha_evento_temprana": "2026-09-28T14:15:00+00:00",
-    "fecha_deteccion": "2026-09-28T14:32:29.820225+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-28",
-    "titulo": "Falla eléctrica en Barinas",
-    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 28/09/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 28/09/2026, 10:32 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ninos-llegan-con-sueno-a-clases-por-los-apagones-mientras-aumentan-las-protestas-en-comunidades-de-los-llanos/"
   },
   {
     "tipo": "orden_publico",
@@ -2173,32 +1498,6 @@
     "texto": "📌 Inundación en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 27/09/2026, 1:15 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/09/aguas-servidas-corren-por-el-ceinbolivar-en-ciudad-varyna/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Guarico",
-    "municipio": "Ortiz",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/ciudadanos-volvieron-a-protestar-por-los-apagones-en-guarico/",
-        "fecha": "2026-09-27T16:40:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-27T16:40:18+00:00",
-    "fecha_evento_temprana": "2026-09-27T16:40:18+00:00",
-    "fecha_deteccion": "2026-09-27T19:12:56.731295+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Guarico::2026-09-27",
-    "titulo": "Falla eléctrica en Municipio Ortiz, Guarico",
-    "texto": "📌 Falla eléctrica en Municipio Ortiz, Guarico\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ortiz, Guarico\n🕒 Hecho reportado: 27/09/2026, 12:40 p.m.\n🔎 Detectado por el sistema: 27/09/2026, 3:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/ciudadanos-volvieron-a-protestar-por-los-apagones-en-guarico/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Yaracuy",
     "municipio": "Sucre",
@@ -2303,58 +1602,6 @@
     "texto": "📌 Incendio en Parroquia San Juan, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia San Juan, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 26/09/2026, 7:49 a.m.\n🔎 Detectado por el sistema: 26/09/2026, 7:53 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/incendio-consume-al-menos-cuatro-locales-en-el-mercado-de-quinta-crespo-caracas/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/",
-        "fecha": "2026-09-25T22:06:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T22:06:28+00:00",
-    "fecha_evento_temprana": "2026-09-25T22:06:28+00:00",
-    "fecha_deteccion": "2026-09-26T06:44:13.107583+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Barinas::2026-09-24",
-    "titulo": "Falla eléctrica en Barinas",
-    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 25/09/2026, 6:06 p.m.\n🔎 Detectado por el sistema: 26/09/2026, 2:44 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Portuguesa",
-    "municipio": "Sucre",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/",
-        "fecha": "2026-09-25T22:06:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T22:06:28+00:00",
-    "fecha_evento_temprana": "2026-09-25T22:06:28+00:00",
-    "fecha_deteccion": "2026-09-26T06:44:17.201440+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-09-23",
-    "titulo": "Falla eléctrica en Municipio Sucre, Portuguesa",
-    "texto": "📌 Falla eléctrica en Municipio Sucre, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Sucre, Portuguesa\n🕒 Hecho reportado: 25/09/2026, 6:06 p.m.\n🔎 Detectado por el sistema: 26/09/2026, 2:44 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/apagones-dejan-sin-respaldo-electrico-a-hospitales-y-cdi-en-venezuela/"
-  },
-  {
     "tipo": "deslizamiento",
     "ubicacion": "Merida",
     "municipio": null,
@@ -2379,37 +1626,6 @@
     "clave_dedup": "deslizamiento::Merida::2026-09-26",
     "titulo": "Deslizamiento/Derrumbe en Merida",
     "texto": "📌 Deslizamiento/Derrumbe en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 25/09/2026, 9:20 p.m.\n🔎 Detectado por el sistema: 26/09/2026, 2:46 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/puente-aereo-atendera-comunidades-aisladas-por-lluvias-en-merida/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Lara",
-    "municipio": "Torres",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.35,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/",
-        "fecha": "2026-09-25T16:30:00+00:00"
-      },
-      {
-        "nombre": "El Carabobeno",
-        "link": "https://www.el-carabobeno.com/protestan-contra-cortes-electricos-en-el-estado-lara-y-piden-respuestas-a-trump/",
-        "fecha": "2026-09-26T00:13:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-26T00:13:08+00:00",
-    "fecha_evento_temprana": "2026-09-25T16:30:00+00:00",
-    "fecha_deteccion": "2026-09-26T01:43:07.560173+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Lara::2026-09-24",
-    "titulo": "Falla eléctrica en Municipio Torres, Lara",
-    "texto": "📌 Falla eléctrica en Municipio Torres, Lara\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Torres, Lara\n🕒 Hecho reportado: 25/09/2026, 8:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 9:43 p.m.\n📊 Fuentes independientes: 2 (score 1.35)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/video-habitantes-de-carora-protestan-en-las-calles-por-prolongados-apagones-25sep/\n  • El Carabobeno: https://www.el-carabobeno.com/protestan-contra-cortes-electricos-en-el-estado-lara-y-piden-respuestas-a-trump/"
   },
   {
     "tipo": "orden_publico",
@@ -2604,32 +1820,6 @@
     "texto": "📌 Incidente vial en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 25/09/2026, 3:13 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-heridos-deja-colision-multiple-en-la-avenida-libertador-de-maturin/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/",
-        "fecha": "2026-09-25T14:00:30+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T14:00:30+00:00",
-    "fecha_evento_temprana": "2026-09-25T14:00:30+00:00",
-    "fecha_deteccion": "2026-09-25T20:03:53.025488+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Zulia::2026-09-23",
-    "titulo": "Falla eléctrica en Zulia",
-    "texto": "📌 Falla eléctrica en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 25/09/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/25/ola-de-protestas-nocturnas-en-venezuela-por-apagones-de-hasta-16-horas-25sep/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Portuguesa",
     "municipio": null,
@@ -2732,32 +1922,6 @@
     "clave_dedup": "incendio::Anzoategui::2026-09-25",
     "titulo": "Incendio en Anzoategui",
     "texto": "📌 Incendio en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 24/09/2026, 10:38 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:44 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/reportan-explosion-de-transformadores-electricos-en-la-calle-paez-de-campo-alegre/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/en-terrazas-del-mar-denuncian-prolongados-cortes-electricos-y-fallas-en-servicio-de-agua/",
-        "fecha": "2026-09-25T01:41:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T01:41:38+00:00",
-    "fecha_evento_temprana": "2026-09-25T01:41:38+00:00",
-    "fecha_deteccion": "2026-09-25T11:44:35.299113+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-25",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 24/09/2026, 9:41 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:44 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/en-terrazas-del-mar-denuncian-prolongados-cortes-electricos-y-fallas-en-servicio-de-agua/"
   },
   {
     "tipo": "orden_publico",
@@ -2926,32 +2090,6 @@
     "texto": "📌 Falla eléctrica en Nueva Esparta\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Nueva Esparta\n🕒 Hecho reportado: 24/09/2026, 12:05 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 6:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/09/24/apagones-en-margarita/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Miranda",
-    "municipio": "El Hatillo",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/caracas/bajones-y-apagones-son-cada-vez-mas-frecuentes-en-caracas-este-24sep-reportaron-otra-falla/",
-        "fecha": "2026-09-24T19:09:01+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T19:09:01+00:00",
-    "fecha_evento_temprana": "2026-09-24T19:09:01+00:00",
-    "fecha_deteccion": "2026-09-24T19:27:55.679235+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Miranda::2026-09-24",
-    "titulo": "Falla eléctrica en Municipio El Hatillo, Miranda",
-    "texto": "📌 Falla eléctrica en Municipio El Hatillo, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio El Hatillo, Miranda\n🕒 Hecho reportado: 24/09/2026, 3:09 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:27 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/bajones-y-apagones-son-cada-vez-mas-frecuentes-en-caracas-este-24sep-reportaron-otra-falla/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Falcon",
     "municipio": null,
@@ -2976,58 +2114,6 @@
     "clave_dedup": "orden_publico::Falcon::2026-09-24",
     "titulo": "Orden público en Falcon",
     "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 24/09/2026, 12:32 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 3:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/ya-basta-trabajadores-falconianos-en-pie-de-lucha-por-salario-justos/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Guarico",
-    "municipio": "Camaguan",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/protestas-por-racionamiento-electrico-vecinos-reportan-dos-cortes-diarios-y-hasta-18-horas-a-oscuras/",
-        "fecha": "2026-09-24T14:06:30+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T14:06:30+00:00",
-    "fecha_evento_temprana": "2026-09-24T14:06:30+00:00",
-    "fecha_deteccion": "2026-09-24T15:26:47.731266+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Guarico::2026-09-24",
-    "titulo": "Falla eléctrica en Municipio Camaguan, Guarico",
-    "texto": "📌 Falla eléctrica en Municipio Camaguan, Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Camaguan, Guarico\n🕒 Hecho reportado: 24/09/2026, 10:06 a.m.\n🔎 Detectado por el sistema: 24/09/2026, 11:26 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/protestas-por-racionamiento-electrico-vecinos-reportan-dos-cortes-diarios-y-hasta-18-horas-a-oscuras/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Monagas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/monagas/angel-aristimuno-ineficiencia-de-gerencia-agrava-la-crisis-energetica-en-monagas/",
-        "fecha": "2026-09-24T13:57:07+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T13:57:07+00:00",
-    "fecha_evento_temprana": "2026-09-24T13:57:07+00:00",
-    "fecha_deteccion": "2026-09-24T15:27:35.092457+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Monagas::2026-09-24",
-    "titulo": "Falla eléctrica en Monagas",
-    "texto": "📌 Falla eléctrica en Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 24/09/2026, 9:57 a.m.\n🔎 Detectado por el sistema: 24/09/2026, 11:27 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/angel-aristimuno-ineficiencia-de-gerencia-agrava-la-crisis-energetica-en-monagas/"
   },
   {
     "tipo": "incendio",

@@ -13,26 +13,12 @@
     "fecha_evento_temprana": "2026-10-04T16:11:04+00:00",
     "municipio": "Barinas"
   },
-  "infraestructura_electrica::Tachira::2026-10-05": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-05T08:59:01.875043+00:00",
-    "fecha_evento_temprana": "2026-10-05T05:00:00+00:00",
-    "municipio": "San Cristóbal"
-  },
   "incendio::Tachira::2026-10-05": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-10-06T00:13:19.800084+00:00",
     "fecha_evento_temprana": "2026-10-05T18:01:42+00:00",
     "municipio": "García De Hevia"
-  },
-  "infraestructura_electrica::Zulia::2026-10-05": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-06T00:13:59.212827+00:00",
-    "fecha_evento_temprana": "2026-10-05T21:20:08+00:00",
-    "municipio": null
   },
   "inundacion::Sucre::2026-10-06": {
     "severidad": "medio",
@@ -75,13 +61,6 @@
     "fecha_deteccion": "2026-10-07T21:32:04.809518+00:00",
     "fecha_evento_temprana": "2026-10-07T20:03:44+00:00",
     "municipio": "Libertador"
-  },
-  "infraestructura_electrica::Zulia::2026-10-07": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-07T21:32:08.919434+00:00",
-    "fecha_evento_temprana": "2026-10-07T18:49:43+00:00",
-    "municipio": null
   },
   "salud_publica::Trujillo::2026-10-07": {
     "severidad": "alto",
