@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Monitoreo de emergencias en Venezuela - Cruz Roja Venezolana">
+<link rel="icon" type="image/png" href="logo-crv.png">
 <title>Sala Situacional / Gestión del Riesgo de Desastre</title>
 <style>
   body { font-family: system-ui, sans-serif; background:#0b0f14; color:#e6e6e6; margin:0; padding:1rem; }
@@ -33,7 +35,7 @@
 
   #alerta-banner {
     display:none;
-    position:sticky; top:0; z-index:10;
+    position:sticky; top:0; z-index:12;
     padding:0.8rem 1rem; border-radius:8px; margin-bottom:1rem;
     font-weight:bold; text-align:center;
   }
@@ -91,7 +93,7 @@
     <p>Cruz Roja Venezolana — Monitoreo de emergencias en tiempo real</p>
   </div>
 </header>
-<div id="alerta-banner"></div>
+<div id="alerta-banner" role="alert" aria-live="assertive"></div>
 
 <details id="panel-tendencias" open>
   <summary>📊 Tendencias históricas</summary>
@@ -127,7 +129,7 @@
   <div id="informe-contenido" class="meta" style="margin-top:0.8rem;">Selecciona un período y categoría.</div>
 </details>
 
-<div id="lista">Cargando...</div>
+<div id="lista" aria-live="polite">Cargando...</div>
 <script>
 const INTERVALO_MS = 60000;
 let clavesConocidas = null;
@@ -137,8 +139,15 @@ function claveDe(n) {
   return n.tipo + '|' + n.ubicacion + '|' + n.fecha_deteccion;
 }
 
+let audioCtx = null;
 function reproducirBeep(veces) {
-  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  // Un solo AudioContext reutilizado (crear uno por alerta los acumula) y con
+  // try/catch: el navegador puede bloquearlo hasta que haya interaccion del usuario.
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+  } catch (e) { return; }
+  const ctx = audioCtx;
   let t = ctx.currentTime;
   for (let i = 0; i < veces; i++) {
     const osc = ctx.createOscillator();
@@ -165,11 +174,18 @@ function mostrarBanner(hayCritica, cantidad) {
 }
 
 function escapeHtml(texto) {
-  return texto.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  return String(texto ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+// Solo permite enlaces http(s); cualquier otro esquema (javascript:, data:) se descarta.
+function urlSegura(url) {
+  return /^https?:\/\//i.test(url) ? escapeHtml(url) : '#';
 }
 
 function linkificar(texto) {
-  return texto.replace(/(https?:\/\/[^\s]+)/g, (url) =>
+  // El texto ya viene escapado: se corta la URL antes de una comilla escapada (&quot;/&#39;).
+  return texto.replace(/(https?:\/\/(?:(?!&quot;|&#39;)[^\s])+)/g, (url) =>
     `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
   );
 }
@@ -185,7 +201,7 @@ function renderizar(noticias) {
 }
 
 function verificarActualizacion() {
-  fetch('data/noticias.json?_=' + Date.now()).then(r => r.json()).then(noticias => {
+  fetch('data/noticias.json?_=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(noticias => {
     const clavesActuales = new Set(noticias.map(claveDe));
 
     if (!primeraCarga && clavesConocidas) {
@@ -200,7 +216,10 @@ function verificarActualizacion() {
     clavesConocidas = clavesActuales;
     primeraCarga = false;
     renderizar(noticias);
-  }).catch(err => console.error('Error cargando noticias:', err));
+  }).catch(err => {
+    console.error('Error cargando noticias:', err);
+    if (primeraCarga) document.getElementById('lista').textContent = 'No se pudieron cargar los reportes. Reintentando...';
+  });
 }
 
 verificarActualizacion();
@@ -326,7 +345,7 @@ function pintarSelectorTipos(periodo) {
   const selTipo = document.getElementById('informe-tipo');
   const disponibles = indiceInformes.filter(r => r.periodo === periodo);
   selTipo.innerHTML = disponibles
-    .map(r => `<option value="${r.tipo}">${r.tipo_label}</option>`)
+    .map(r => `<option value="${escapeHtml(r.tipo)}">${escapeHtml(r.tipo_label)}</option>`)
     .join('');
 }
 
@@ -342,13 +361,13 @@ function cargarInforme(periodo, tipo) {
         : 'Período en curso (se actualiza ~1 vez al día)';
       const actualizadoHasta = formatearFechaCorta(inf.actualizado_hasta);
       const fuentesHtml = (inf.fuentes || [])
-        .map(f => `<a href="${f.link}" target="_blank" rel="noopener noreferrer">${f.nombre}</a>`)
+        .map(f => `<a href="${urlSegura(f.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(f.nombre)}</a>`)
         .join(', ');
       cont.innerHTML = `
-        <p><b>${inf.tipo_label} — ${inf.periodo}</b><br>
+        <p><b>${escapeHtml(inf.tipo_label)} — ${escapeHtml(inf.periodo)}</b><br>
         ${estadoPeriodo} · Actualizado hasta: ${actualizadoHasta}<br>
         Total de eventos: ${inf.total_eventos} (mes anterior: ${comp.anterior ?? '?'})</p>
-        <p style="white-space:pre-wrap;">${inf.narrativa}</p>
+        <p style="white-space:pre-wrap;">${escapeHtml(inf.narrativa)}</p>
         <p><b>Fuentes citadas:</b> ${fuentesHtml || 'ninguna'}</p>
       `;
     })
@@ -368,7 +387,7 @@ function cargarIndiceInformes() {
         document.getElementById('informe-contenido').textContent = 'Aún no hay informes generados.';
         return;
       }
-      selPeriodo.innerHTML = periodos.map(p => `<option value="${p}">${p}</option>`).join('');
+      selPeriodo.innerHTML = periodos.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join('');
       pintarSelectorTipos(periodos[0]);
       cargarInforme(periodos[0], indice.find(r => r.periodo === periodos[0]).tipo);
     })

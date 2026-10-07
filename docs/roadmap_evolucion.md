@@ -9654,3 +9654,22 @@ falla eléctrica concreta; (b) `infraestructura_electrica::Tachira::2026-10-05`
 penumbra y desatención". Ambos son notas de opinión/contexto con mención a
 apagones crónicos; no hay un filtro determinista obvio sin riesgo de descartar
 reportes legítimos.
+
+## Auditoría de la web (07-10-2026): `docs/index.html`
+
+Hallazgos corregidos: (1) **XSS**: el informe narrativo (`narrativa`, `tipo_label`,
+`fuentes[].nombre/link`) y los `<option>` se inyectaban sin escapar vía `innerHTML`
+(contenido generado por IA/feeds); ahora se escapa todo y los enlaces solo admiten
+http(s). `escapeHtml` ahora escapa también comillas, y `linkificar` ya no puede
+romper el atributo `href` con una `"` en la URL. (2) `AudioContext` nuevo por cada
+alerta (fuga y bloqueo por autoplay): ahora uno reutilizado con try/catch. (3) El
+banner de alerta quedaba oculto bajo el banner "en construcción" (mismo `top:0`,
+menor z-index). (4) Sin manejo de error HTTP/fallo de carga en la lista de
+reportes. (5) Accesibilidad: `role="alert"`/`aria-live` en banner y lista;
+favicon (evitaba un 404) y meta description. Datos verificados: 25 estados del
+mapa, índice de informes e `estadisticas.json` consistentes.
+
+**Pendientes (no tocados)**: `docs/RESPALDO_scripts_verify_ai.txt` y
+`docs/pcode final.xlsx` se sirven públicamente y no los referencia nada;
+conviene moverlos fuera de `docs/`. La plantilla `_HTML_TEMPLATE` de
+`scripts/build_site.py` es una versión antigua (solo se usa si falta index.html).
