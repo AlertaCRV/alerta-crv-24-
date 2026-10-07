@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-06T23:04:27.547438+00:00",
+  "actualizado": "2026-10-07T09:10:04.436974+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-06T22:03:07+00:00"
+    "hasta": "2026-10-07T00:02:18+00:00"
   },
-  "total_eventos": 554,
+  "total_eventos": 555,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 73,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 20,
+    "infraestructura_agua": 21,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -202,10 +202,10 @@
     },
     {
       "estado": "Sucre",
-      "total": 17,
+      "total": 18,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 6,
+        "medio": 7,
         "bajo": 7,
         "alto": 4
       },
@@ -383,7 +383,7 @@
       "inundacion": 4,
       "orden_publico": 5,
       "infraestructura_electrica": 6,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "sismo": 1
     },
     "Anzoategui": {
@@ -520,7 +520,7 @@
   "por_severidad": {
     "alto": 139,
     "critico": 55,
-    "medio": 202,
+    "medio": 203,
     "bajo": 147,
     "sin_clasificar": 11
   },
@@ -597,7 +597,8 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 8
+      "2026-09": 8,
+      "2026-10": 1
     },
     "accidente_transporte": {
       "2026-08": 1
