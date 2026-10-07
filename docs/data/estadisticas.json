@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-07T09:10:04.436974+00:00",
+  "actualizado": "2026-10-07T16:28:25.744654+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-07T00:02:18+00:00"
+    "hasta": "2026-10-07T14:36:36+00:00"
   },
-  "total_eventos": 555,
+  "total_eventos": 556,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 73,
@@ -14,7 +14,7 @@
     "orden_publico": 142,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 48,
+    "incendio": 49,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -224,6 +224,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 13,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 7,
+        "bajo": 2,
+        "medio": 3,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "La Guaira",
       "total": 13,
       "confirmados": 0,
@@ -245,18 +257,6 @@
         "bajo": 6,
         "medio": 2,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Falcon",
-      "total": 12,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 7,
-        "bajo": 2,
-        "medio": 2,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -452,7 +452,7 @@
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "infraestructura_electrica": 1,
-      "incendio": 1
+      "incendio": 2
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -520,7 +520,7 @@
   "por_severidad": {
     "alto": 139,
     "critico": 55,
-    "medio": 203,
+    "medio": 204,
     "bajo": 147,
     "sin_clasificar": 11
   },
@@ -572,7 +572,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 7
+      "2026-10": 8
     },
     "vialidad": {
       "2026-08": 10,
