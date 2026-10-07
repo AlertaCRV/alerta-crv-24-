@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-07T19:55:57.373033+00:00",
+  "actualizado": "2026-10-07T21:32:56.243303+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-07T14:36:36+00:00"
+    "hasta": "2026-10-07T21:07:26+00:00"
   },
-  "total_eventos": 554,
+  "total_eventos": 560,
   "por_tipo": {
-    "tormenta_electrica": 5,
-    "inundacion": 73,
-    "infraestructura_electrica": 168,
+    "tormenta_electrica": 6,
+    "inundacion": 74,
+    "infraestructura_electrica": 169,
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 141,
-    "salud_publica": 11,
+    "salud_publica": 13,
     "crisis_migratoria": 6,
-    "incendio": 48,
+    "incendio": 49,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 81,
-      "confirmados": 9,
+      "total": 82,
+      "confirmados": 10,
       "por_severidad": {
-        "alto": 16,
+        "alto": 17,
         "medio": 23,
         "bajo": 26,
         "critico": 12,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 58,
+      "total": 59,
       "confirmados": 9,
       "por_severidad": {
         "medio": 28,
         "critico": 4,
         "bajo": 12,
         "sin_clasificar": 1,
-        "alto": 13
+        "alto": 14
       },
       "severidad_dominante": "critico"
     },
@@ -117,10 +117,10 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 21,
+      "total": 22,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 10,
+        "medio": 11,
         "alto": 2,
         "critico": 2,
         "bajo": 7
@@ -165,6 +165,17 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Merida",
+      "total": 21,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 6,
+        "alto": 10
+      },
+      "severidad_dominante": "alto"
+    },
+    {
       "estado": "Yaracuy",
       "total": 20,
       "confirmados": 1,
@@ -176,17 +187,6 @@
         "alto": 1
       },
       "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Merida",
-      "total": 20,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 6,
-        "alto": 9
-      },
-      "severidad_dominante": "alto"
     },
     {
       "estado": "Carabobo",
@@ -213,22 +213,22 @@
     },
     {
       "estado": "Trujillo",
-      "total": 14,
+      "total": 15,
       "confirmados": 0,
       "por_severidad": {
         "medio": 8,
         "bajo": 4,
         "critico": 1,
-        "alto": 1
+        "alto": 2
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Falcon",
-      "total": 13,
-      "confirmados": 3,
+      "total": 14,
+      "confirmados": 4,
       "por_severidad": {
-        "alto": 7,
+        "alto": 8,
         "bajo": 2,
         "medio": 3,
         "critico": 1
@@ -336,7 +336,7 @@
     },
     "Zulia": {
       "tormenta_electrica": 2,
-      "infraestructura_electrica": 24,
+      "infraestructura_electrica": 25,
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
@@ -351,7 +351,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 12,
+      "inundacion": 13,
       "orden_publico": 24,
       "incendio": 16,
       "vialidad": 4,
@@ -368,7 +368,8 @@
       "sequia": 1,
       "infraestructura_electrica": 3,
       "deslizamiento": 2,
-      "orden_publico": 1
+      "orden_publico": 1,
+      "salud_publica": 1
     },
     "Barinas": {
       "deslizamiento": 3,
@@ -393,7 +394,8 @@
       "orden_publico": 3,
       "infraestructura_agua": 2,
       "inundacion": 3,
-      "incendio": 1
+      "incendio": 1,
+      "salud_publica": 1
     },
     "Bolivar": {
       "infraestructura_electrica": 8,
@@ -452,7 +454,7 @@
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "infraestructura_electrica": 1,
-      "incendio": 2
+      "incendio": 3
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -481,7 +483,8 @@
       "deslizamiento": 2,
       "colapso_estructural": 1,
       "incendio": 3,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "tormenta_electrica": 1
     },
     "Guarico": {
       "sequia": 2,
@@ -518,9 +521,9 @@
     }
   },
   "por_severidad": {
-    "alto": 138,
+    "alto": 143,
     "critico": 54,
-    "medio": 204,
+    "medio": 205,
     "bajo": 147,
     "sin_clasificar": 11
   },
@@ -528,19 +531,20 @@
     "tormenta_electrica": {
       "2026-07": 2,
       "2026-08": 2,
-      "2026-09": 1
+      "2026-09": 1,
+      "2026-10": 1
     },
     "inundacion": {
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 2
+      "2026-10": 3
     },
     "infraestructura_electrica": {
       "2026-07": 5,
       "2026-08": 62,
       "2026-09": 78,
-      "2026-10": 23
+      "2026-10": 24
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -561,7 +565,8 @@
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
-      "2026-09": 2
+      "2026-09": 2,
+      "2026-10": 2
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -572,7 +577,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 7
+      "2026-10": 8
     },
     "vialidad": {
       "2026-08": 10,

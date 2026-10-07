@@ -3,19 +3,63 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-10-04T00:51:49.307856+00:00",
-  "actualizado_hasta": "2026-10-04T00:50:18.134735+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-07T21:33:36.918809+00:00",
+  "actualizado_hasta": "2026-10-07T21:32:00.638608+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 19,
-    "actual": 1
+    "actual": 8
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró únicamente un incendio, en contraste con los 19 eventos reportados en el período anterior (septiembre de 2026). Esta reducción significativa se refleja en los datos consolidados del sistema de monitoreo de emergencias.\n\nEl único incidente ocurrió el sábado 3 de octubre en la parroquia La Vega, Urbanización Montalbán III, dentro del Centro Comercial Caracas, en el cuarto piso, donde funcionaba la guardería \"English Esides\" (Reporte Confidencial). El siniestro afectó aproximadamente 40 metros cuadrados del área de comedor de la guardería, provocando daños materiales considerables en la infraestructura de cuatro niveles positivos y uno negativo del edificio (Reporte Confidencial). La gravedad del incendio fue catalogada como alta, aunque no se reportaron víctimas fatales; la información disponible se limita a los daños estructurales y la interrupción de la actividad de la guardería (Reporte Confidencial).\n\nEste hecho subraya la importancia de mantener la vigilancia y la capacidad de respuesta rápida ante incendios, aun cuando la frecuencia de eventos haya disminuido notablemente. El equipo de la Cruz Roja Venezolana continuará reforzando protocolos de prevención y asistencia en el Distrito Capital, asegurando que cualquier eventualidad sea atendida con la mayor celeridad y eficacia posible (Reporte Confidencial).",
+  "narrativa": "En el mes de octubre de 2026 se registraron ocho incendios, una disminución respecto a los diecinueve eventos del mes anterior (2026‑09) (Comparación con el período anterior). Todos los incidentes reportados presentaron alta severidad, con daños materiales y la movilización de cuerpos de bomberos y autoridades de gestión de riesgos.\n\nEn el Distrito Capital se produjeron dos incendios de gran magnitud. El primero consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, afectando aproximadamente 40 m² del área de comedor (Reporte Confidencial). Un segundo incendio, mencionado por El Pitazo, también se registró en la capital, aunque los detalles específicos no fueron publicados en la fuente citada (El Pitazo).\n\nEn el estado Zulia, el 3 de octubre se generó un incendio de gran magnitud en las inmediaciones de la subestación eléctrica número 3, en el municipio Lagunillas, cuando las llamas surgieron de un canal de desagüe con restos de crudo, dejando sin suministro eléctrico a la zona (El Pitazo; Noticia al Dia).\n\nEn el Táchira, el 5 de octubre se activó un operativo de emergencia para sofocar un incendio en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta). El fuego amenazó a las comunidades adyacentes y requirió la intervención de los organismos de prevención y rescate (Diario La Nacion).\n\nEl estado Falcón registró dos reportes independientes del mismo incendio en la refinería Cardón, parte del Centro Refinador de Paraguaná. Según El Pitazo, tres explosiones precedieron a las llamas que obligaron a paralizar las operaciones el 6 de octubre; el incendio fue controlado por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo). Runrun.es confirmó que la causa fue la rotura de una línea de gas natural, lo que llevó a la paralización temporal de la refinería hasta garantizar su arranque seguro (Runrun.es).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/zulia-incendio-en-inmediaciones-de-subestacion-electrica-genera-alarma-en-lagunillas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/se-incendio-una-fosa-de-petroleo-en-lagunillas-bomberos-atendieron-la-emergencia/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/incendio-en-el-complejo-hds-de-la-refineria-cardon-moviliza-a-los-cuerpos-de-seguridad-en-falcon/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/incendio-refineria-cardon-falcon/"
+    },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/10/03/incendio-consume-guarderia/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/622106/refineria-cardon-paralizada-tras-incendio-por-rotura-de-linea-de-gas-natural/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/pdvsa-controla-incendio-en-la-refineria-cardon-tras-rotura-de-una-linea-de-gas-natural/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/pdvsa-confirma-rotura-en-linea-de-gas-como-causa-del-incendio-en-la-refineria-cardon-comunicado/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/inicio/622078/el-mananero-del-7-de-octubre-renuevan-la-mision-de-determinacion-de-hechos-sobre-venezuela-hasta-2028/"
     }
   ]
 }

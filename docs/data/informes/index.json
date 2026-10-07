@@ -9,6 +9,14 @@
   },
   {
     "periodo": "2026-10",
+    "tipo": "tormenta_electrica",
+    "tipo_label": "Tormenta eléctrica",
+    "cerrado": false,
+    "generado": "2026-10-07T21:34:29.533303+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
@@ -17,10 +25,18 @@
   },
   {
     "periodo": "2026-10",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
+    "cerrado": false,
+    "generado": "2026-10-07T21:34:16.529021+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-10",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-06T06:27:03.442681+00:00",
+    "generado": "2026-10-07T21:34:03.789951+00:00",
     "total_eventos": 18
   },
   {
@@ -52,8 +68,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-10-04T00:51:49.307856+00:00",
-    "total_eventos": 1
+    "generado": "2026-10-07T21:33:36.918809+00:00",
+    "total_eventos": 8
   },
   {
     "periodo": "2026-10",
