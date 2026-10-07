@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "infraestructura_agua",
+  "tipo_label": "Falla de agua",
+  "cerrado": false,
+  "generado": "2026-10-07T09:10:49.927575+00:00",
+  "actualizado_hasta": "2026-10-07T09:08:38.147261+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 8,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026 se registró únicamente un incidente de falla de agua, según los datos de la Cruz Roja Venezolana. En comparación, el período anterior (septiembre de 2026) contó con ocho eventos registrados, lo que representa una disminución significativa en la cantidad de incidentes (Comparación con el período anterior). \n\nEl único hecho ocurrido en octubre se dio en la comunidad de Guaca, ubicada en la zona oeste del municipio Bermúdez, estado Sucre. Los vecinos de Guaca cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los progresivos cortes en el suministro de agua (El Tiempo). \n\nLos cortes de agua que motivaron la protesta fueron descritos como “progresivos”, lo que indica una reducción gradual del caudal disponible para la población local. La acción de bloquear la carretera buscó visibilizar la falta de suministro y exigir una pronta solución por parte de las autoridades responsables del servicio (El Tiempo). \n\nEste episodio constituye el único registro de fallas de agua en el período analizado, lo que, a pesar de la gravedad del reclamo, muestra una reducción en la frecuencia de incidentes respecto al mes anterior, cuando se documentaron ocho casos similares (Comparación con el período anterior).",
+  "fuentes": [
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/"
+    }
+  ]
+}

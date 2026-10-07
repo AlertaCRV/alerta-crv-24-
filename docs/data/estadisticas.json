@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-06T23:15:38.238452+00:00",
+  "actualizado": "2026-10-07T19:55:57.373033+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-06T22:03:07+00:00"
+    "hasta": "2026-10-07T14:36:36+00:00"
   },
-  "total_eventos": 552,
+  "total_eventos": 554,
   "por_tipo": {
     "tormenta_electrica": 5,
     "inundacion": 73,
@@ -14,13 +14,13 @@
     "orden_publico": 141,
     "salud_publica": 11,
     "crisis_migratoria": 6,
-    "incendio": 47,
+    "incendio": 48,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 20,
+    "infraestructura_agua": 21,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -202,10 +202,10 @@
     },
     {
       "estado": "Sucre",
-      "total": 17,
+      "total": 18,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 6,
+        "medio": 7,
         "bajo": 7,
         "alto": 4
       },
@@ -224,6 +224,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 13,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 7,
+        "bajo": 2,
+        "medio": 3,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "La Guaira",
       "total": 13,
       "confirmados": 0,
@@ -232,18 +244,6 @@
         "sin_clasificar": 1,
         "alto": 6,
         "bajo": 1,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Falcon",
-      "total": 12,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 7,
-        "bajo": 2,
-        "medio": 2,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -383,7 +383,7 @@
       "inundacion": 4,
       "orden_publico": 5,
       "infraestructura_electrica": 6,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "sismo": 1
     },
     "Anzoategui": {
@@ -452,7 +452,7 @@
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "infraestructura_electrica": 1,
-      "incendio": 1
+      "incendio": 2
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -520,7 +520,7 @@
   "por_severidad": {
     "alto": 138,
     "critico": 54,
-    "medio": 202,
+    "medio": 204,
     "bajo": 147,
     "sin_clasificar": 11
   },
@@ -572,7 +572,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 6
+      "2026-10": 7
     },
     "vialidad": {
       "2026-08": 10,
@@ -597,7 +597,8 @@
     },
     "infraestructura_agua": {
       "2026-08": 12,
-      "2026-09": 8
+      "2026-09": 8,
+      "2026-10": 1
     },
     "accidente_transporte": {
       "2026-08": 1

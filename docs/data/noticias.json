@@ -3,6 +3,73 @@
     "tipo": "incendio",
     "ubicacion": "Falcon",
     "municipio": null,
+    "parroquia": "Las Calderas",
+    "severidad": "medio",
+    "score": 2.45,
+    "confirmado": true,
+    "num_fuentes": 4,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/inicio/622078/el-mananero-del-7-de-octubre-renuevan-la-mision-de-determinacion-de-hechos-sobre-venezuela-hasta-2028/",
+        "fecha": "2026-10-07T07:33:00+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/pdvsa-confirma-rotura-en-linea-de-gas-como-causa-del-incendio-en-la-refineria-cardon-comunicado/",
+        "fecha": "2026-10-07T14:36:36+00:00"
+      },
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/pdvsa-controla-incendio-en-la-refineria-cardon-tras-rotura-de-una-linea-de-gas-natural/",
+        "fecha": "2026-10-07T12:54:00+00:00"
+      },
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/",
+        "fecha": "2026-10-07T13:54:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-07T14:36:36+00:00",
+    "fecha_evento_temprana": "2026-10-07T07:33:00+00:00",
+    "fecha_deteccion": "2026-10-07T16:27:39.650581+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Falcon::2026-10-07",
+    "titulo": "Incendio en Parroquia Las Calderas, Falcon",
+    "texto": "📌 Incendio en Parroquia Las Calderas, Falcon\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Las Calderas, Falcon\n🕒 Hecho reportado: 07/10/2026, 10:36 a.m.\n🔎 Detectado por el sistema: 07/10/2026, 12:27 p.m.\n📊 Fuentes independientes: 4 (score 2.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/inicio/622078/el-mananero-del-7-de-octubre-renuevan-la-mision-de-determinacion-de-hechos-sobre-venezuela-hasta-2028/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/pdvsa-confirma-rotura-en-linea-de-gas-como-causa-del-incendio-en-la-refineria-cardon-comunicado/\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/pdvsa-controla-incendio-en-la-refineria-cardon-tras-rotura-de-una-linea-de-gas-natural/\n  • El Tiempo (Anzoategui): https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Sucre",
+    "municipio": "Bermúdez",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/",
+        "fecha": "2026-10-07T00:02:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-07T00:02:18+00:00",
+    "fecha_evento_temprana": "2026-10-07T00:02:18+00:00",
+    "fecha_deteccion": "2026-10-07T09:08:38.147261+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Sucre::2026-10-07",
+    "titulo": "Falla de agua en Municipio Bermúdez, Sucre",
+    "texto": "📌 Falla de agua en Municipio Bermúdez, Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Bermúdez, Sucre\n🕒 Hecho reportado: 06/10/2026, 8:02 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:08 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Falcon",
+    "municipio": null,
     "parroquia": null,
     "severidad": "alto",
     "score": 1.85,
@@ -3065,88 +3132,5 @@
     "clave_dedup": "infraestructura_electrica::Aragua::2026-09-23",
     "titulo": "Falla eléctrica en Aragua",
     "texto": "📌 Falla eléctrica en Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 23/09/2026, 1:45 p.m.\n🔎 Detectado por el sistema: 23/09/2026, 3:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-bajones-electricos-en-varios-estados/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/mas-de-200-hogares-sin-electricidad-en-la-unidad-vecinal-por-explosion-de-transformador/",
-        "fecha": "2026-09-23T14:01:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-23T14:01:40+00:00",
-    "fecha_evento_temprana": "2026-09-23T14:01:40+00:00",
-    "fecha_deteccion": "2026-09-23T15:01:49.036768+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Tachira::2026-09-23",
-    "titulo": "Falla eléctrica en Tachira",
-    "texto": "📌 Falla eléctrica en Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 23/09/2026, 10:01 a.m.\n🔎 Detectado por el sistema: 23/09/2026, 11:01 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/mas-de-200-hogares-sin-electricidad-en-la-unidad-vecinal-por-explosion-de-transformador/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": "Roscio",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/guayana/bolivar-apagones-aumentan-en-zonas-mineras-ciudadanos-denuncian-amedrentamiento-durante-protestas/",
-        "fecha": "2026-09-22T22:21:56+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T22:21:56+00:00",
-    "fecha_evento_temprana": "2026-09-22T22:21:56+00:00",
-    "fecha_deteccion": "2026-09-23T05:18:45.930165+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Bolivar::2026-09-22",
-    "titulo": "Falla eléctrica en Municipio Roscio, Bolivar",
-    "texto": "📌 Falla eléctrica en Municipio Roscio, Bolivar\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Roscio, Bolivar\n🕒 Hecho reportado: 22/09/2026, 6:21 p.m.\n🔎 Detectado por el sistema: 23/09/2026, 1:18 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/bolivar-apagones-aumentan-en-zonas-mineras-ciudadanos-denuncian-amedrentamiento-durante-protestas/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/miyamoto-international-inicia-la-remocion-de-escombros-en-la-guaira/",
-        "fecha": "2026-09-22T21:00:17+00:00"
-      },
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/principal/arrancan-en-la-guaira-las-operaciones-de-la-firma-miyamoto-junto-a-ingenieros-venezolanos-para-la-remocion-de-escombros/",
-        "fecha": "2026-09-22T21:48:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-22T21:48:46+00:00",
-    "fecha_evento_temprana": "2026-09-22T21:00:17+00:00",
-    "fecha_deteccion": "2026-09-23T00:47:40.894872+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-09-21",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 22/09/2026, 5:48 p.m.\n🔎 Detectado por el sistema: 22/09/2026, 8:47 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/miyamoto-international-inicia-la-remocion-de-escombros-en-la-guaira/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/principal/arrancan-en-la-guaira-las-operaciones-de-la-firma-miyamoto-junto-a-ingenieros-venezolanos-para-la-remocion-de-escombros/"
   }
 ]
