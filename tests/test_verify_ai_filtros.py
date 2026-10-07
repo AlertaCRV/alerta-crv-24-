@@ -503,3 +503,117 @@ def test_finalizar_evento_sin_severidad_ia_mantiene_sin_clasificar():
     aprobado = _miembro("Marcha opositora recorre varias avenidas de Caracas.", severidad="sin_clasificar")
     resultado = _finalizar_evento(evento, [[aprobado]])
     assert resultado["severidad"] == "sin_clasificar"
+
+
+# --- infraestructura_electrica: verificacion por extraccion (07-10-2026) --
+# Ver comentario junto a TIPOS_VERIFICACION_POR_EXTRACCION en verify_ai.py:
+# 130 de 168 alertas electricas publicadas eran notas generales aprobadas
+# por el SI/NO de la IA. Ahora la IA extrae datos y el codigo decide.
+
+import json as _json
+
+import verify_ai
+
+
+def _evento_electrico(texto="Apagon deja sin luz a Cabimas desde anoche, estado Zulia.", tipo_fuente="rss"):
+    item = clasificar_item({"texto": texto})[0]
+    item.update({
+        "fecha": "2026-10-07T12:00:00+00:00",
+        "fuente_nombre": "Medio Cualquiera",
+        "peso": 1.0,
+        "link": "https://example.com/apagon",
+        "fuente_tipo": tipo_fuente,
+        "es_reporte_filial": False,
+    })
+    eventos = agrupar_y_verificar([item])
+    assert len(eventos) == 1 and eventos[0]["tipo"] == "infraestructura_electrica"
+    return eventos[0]
+
+
+def _ext(**kw):
+    base = {"incidente_concreto": True, "momento": "anoche", "reciente": True,
+            "en_estado_asignado": True, "tema_principal": "incidente"}
+    base.update(kw)
+    return base
+
+
+def test_extraccion_incidente_concreto_reciente_en_el_estado_se_aprueba():
+    assert verify_ai._aprobar_por_extraccion(_ext()) == (True, None)
+
+
+def test_extraccion_rechaza_nota_general_protesta_otro_estado_y_viejo():
+    assert verify_ai._aprobar_por_extraccion(_ext(incidente_concreto=False))[1] == "sin_incidente_concreto"
+    assert verify_ai._aprobar_por_extraccion(_ext(reciente=False))[1] == "no_reciente"
+    assert verify_ai._aprobar_por_extraccion(_ext(en_estado_asignado=False))[1] == "otro_estado"
+    # Protesta por los apagones en general: es orden publico, no falla electrica.
+    assert verify_ai._aprobar_por_extraccion(_ext(tema_principal="protesta"))[1] == "tema_protesta"
+    assert verify_ai._aprobar_por_extraccion(_ext(tema_principal="declaracion"))[1] == "tema_declaracion"
+
+
+def test_parsear_extraccion_valida_tamano_y_normaliza():
+    resp = _json.dumps({"fuentes": [
+        {"incidente_concreto": True, "momento": "anoche", "reciente": True,
+         "en_estado_asignado": None, "tema_principal": "Incidente"},
+        {"incidente_concreto": "true", "reciente": True, "tema_principal": "inventado"},
+    ]})
+    ext = verify_ai._parsear_extraccion_json(resp, 2)
+    # en_estado_asignado ausente/nulo no castiga; solo un False explicito.
+    assert ext[0]["en_estado_asignado"] is True and ext[0]["tema_principal"] == "incidente"
+    # Un "true" en texto no es un booleano: no se da por incidente.
+    assert ext[1]["incidente_concreto"] is False and ext[1]["tema_principal"] == "otro"
+    assert verify_ai._parsear_extraccion_json(resp, 3) is None
+    assert verify_ai._parsear_extraccion_json("no es json", 1) is None
+
+
+def test_electrica_sin_groq_api_key_no_se_publica_y_queda_registrada(monkeypatch, tmp_path):
+    # Decision del usuario (07-10-2026): este tipo no se publica sin
+    # verificacion de IA (antes salia como PASADO_POR_FALLA_TECNICA).
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    registro = tmp_path / "descartes.jsonl"
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(registro))
+    assert verificar_evento_con_ia(_evento_electrico()) is None
+    lineas = [_json.loads(l) for l in registro.read_text().splitlines()]
+    assert lineas and lineas[0]["motivo"] == "sin_verificacion_ia"
+
+
+def test_electrica_extraccion_aprueba_incidente_y_descarta_nota_general(monkeypatch, tmp_path):
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    registro = tmp_path / "descartes.jsonl"
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(registro))
+    monkeypatch.setattr(verify_ai, "_limpiar_pendiente", lambda e: None)
+
+    monkeypatch.setattr(verify_ai, "_llamar_groq", lambda *a, **k: _json.dumps({"fuentes": [_ext()]}))
+    resultado = verificar_evento_con_ia(_evento_electrico())
+    assert resultado is not None and resultado["estado_verificacion"] == "APROBADO_IA"
+
+    monkeypatch.setattr(verify_ai, "_llamar_groq", lambda *a, **k: _json.dumps(
+        {"fuentes": [_ext(incidente_concreto=False, tema_principal="reportaje_cronico")]}))
+    assert verificar_evento_con_ia(_evento_electrico()) is None
+    ultimo = _json.loads(registro.read_text().splitlines()[-1])
+    assert ultimo["motivo"] == "sin_incidente_concreto"
+
+
+def test_electrica_groq_caido_al_agotar_reintentos_no_publica(monkeypatch, tmp_path):
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(tmp_path / "descartes.jsonl"))
+    monkeypatch.setattr(verify_ai, "PENDIENTES_PATH", str(tmp_path / "pendientes.json"))
+
+    def falla(*a, **k):
+        raise RuntimeError("503")
+    monkeypatch.setattr(verify_ai, "_llamar_groq", falla)
+    for _ in range(verify_ai.MAX_CICLOS_ESPERA_GROQ):
+        assert verificar_evento_con_ia(_evento_electrico()) is None  # retenido
+    assert verificar_evento_con_ia(_evento_electrico()) is None      # agotado: descartado, no publicado
+
+
+def test_electrica_solo_correo_institucional_se_sigue_publicando_si_groq_cae(monkeypatch, tmp_path):
+    # Control: un reporte de filial por correo no puede retenerse para otro
+    # ciclo (ya se marco como leido) -- se mantiene la excepcion existente.
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    monkeypatch.setattr(verify_ai, "PENDIENTES_PATH", str(tmp_path / "pendientes.json"))
+
+    def falla(*a, **k):
+        raise RuntimeError("503")
+    monkeypatch.setattr(verify_ai, "_llamar_groq", falla)
+    resultado = verificar_evento_con_ia(_evento_electrico(tipo_fuente="correo"))
+    assert resultado is not None and resultado["estado_verificacion"] == "PASADO_POR_FALLA_TECNICA"

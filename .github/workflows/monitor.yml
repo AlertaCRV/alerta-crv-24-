@@ -63,7 +63,7 @@ jobs:
           for RUTA in data/publicados.json docs/data/noticias.json \
                       data/historico_eventos.jsonl docs/data/estadisticas.json \
                       data/historico_fuentes_texto.jsonl docs/data/informes \
-                      data/pendientes_verificacion.json; do
+                      data/pendientes_verificacion.json data/descartes_ia.jsonl; do
             if [ -e "$RUTA" ]; then
               git add "$RUTA"
             fi

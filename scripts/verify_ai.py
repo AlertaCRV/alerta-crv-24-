@@ -3,7 +3,7 @@ import os
 import re
 import time
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
 from dateutil import parser as dateparser
@@ -14,6 +14,7 @@ from verify import extraer_magnitud
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PENDIENTES_PATH = os.path.join(BASE_DIR, "data", "pendientes_verificacion.json")
+DESCARTES_IA_PATH = os.path.join(BASE_DIR, "data", "descartes_ia.jsonl")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 # "llama-3.3-70b-versatile" fue retirado por Groq el 16-08-2026 (ver aviso de
@@ -604,6 +605,198 @@ def _extraer_municipio_parroquia(respuesta_texto, municipios_validos, parroquias
         return None, None
 
 
+# Auditoria de alertas electricas (07-10-2026): de las 168 alertas de
+# infraestructura_electrica publicadas entre el 26-07 y el 07-10-2026, 130 NO
+# eran un incidente en desarrollo (protestas por los apagones, declaraciones
+# de gremios o politicos, reportajes sobre la crisis cronica, impacto en un
+# sector, o un hecho ocurrido en otro estado) -- y las 39 visibles ese dia
+# habian sido APROBADAS por la IA (ninguna por falla tecnica). Con la crisis
+# electrica diaria, casi cualquier nota con fecha y la palabra "apagones"
+# pasaba el veredicto SI/NO del prompt general, que ademas no sabia en que
+# estado se iba a publicar la alerta.
+#
+# Se probo primero un filtro determinista de palabras clave que EXIGIERA un
+# incidente concreto: en las 168 alertas reales parecia perfecto, pero en una
+# prueba ciega de 150 noticias escritas sin ver el filtro perdia 27 de 75
+# eventos reales (la redaccion de un incidente real es demasiado variada) --
+# inaceptable para un sistema de emergencias. Para este tipo se reemplaza el
+# SI/NO por una EXTRACCION estructurada (incidente concreto, momento, lugar,
+# tema principal) y la decision la toma el codigo (ver
+# _aprobar_por_extraccion). Probado con un modelo mas pequeno que el de
+# produccion: conservo 75/75 eventos reales de la prueba ciega (dejo pasar
+# 3/75 notas generales) y, sobre las 168 alertas reales, 34/38 eventos reales
+# con solo 14/130 notas generales. Ver roadmap_evolucion.md (07-10-2026).
+TIPOS_VERIFICACION_POR_EXTRACCION = {"infraestructura_electrica"}
+
+# Recencia mas holgada que el "24 horas" del prompt general: el articulo
+# puede publicarse a la manana siguiente de un corte nocturno, y en la
+# prueba la ventana estricta descarto 2 eventos reales por eso.
+HORAS_RECENCIA_EXTRACCION = 48
+
+_TEMAS_EXTRACCION_VALIDOS = {
+    "incidente", "protesta", "declaracion", "reportaje_cronico",
+    "impacto_sectorial", "anuncio_o_programado", "historico_o_futuro", "otro",
+}
+# Una protesta POR un corte concreto y en curso ("llevan 20 horas sin luz
+# desde el martes") se extrae como incidente_concreto=true y tema
+# "incidente"; una protesta por los apagones en general es orden publico, no
+# una falla electrica (decision del usuario, 07-10-2026).
+_TEMAS_EXTRACCION_APROBABLES = {"incidente", "otro"}
+
+SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE = (
+    "Eres el verificador de un sistema de alertas de emergencia de la Cruz "
+    "Roja Venezolana. El sistema SOLO publica alertas de INCIDENTES EN "
+    "DESARROLLO. En Venezuela hay una crisis eléctrica crónica con "
+    "racionamientos diarios: la mayoría de las noticias que mencionan "
+    "'apagones' NO describen un incidente puntual, sino la crisis en general.\n"
+    "\nRecibes la FECHA Y HORA ACTUAL, el ESTADO ASIGNADO (el estado "
+    "venezolano donde se publicaría la alerta) y una lista numerada de "
+    "fuentes con su fecha de publicación. NO decidas si se publica: para "
+    "CADA fuente, EXTRAE estos datos con honestidad, sin suponer lo que el "
+    "texto no dice:\n"
+    "- incidente_concreto (true/false): ¿la fuente describe un incidente "
+    "eléctrico concreto y delimitado? Cuenta: un corte o apagón específico "
+    "que afectó a un lugar concreto; falla, explosión, incendio o caída de "
+    "transformador, subestación, línea, poste, torre o planta; apagón de una "
+    "ciudad, un estado o varios estados; un hospital, bombeo, aeropuerto o "
+    "metro sin electricidad por una falla concreta; una persona electrocutada "
+    "por un cable caído; una protesta POR un corte concreto y actual ('llevan "
+    "20 horas sin luz desde el martes'). Es false si habla de los apagones en "
+    "general, de horas acumuladas, de racionamiento, de un cronograma o plan "
+    "de cortes, de mantenimiento programado, del impacto de la crisis en un "
+    "sector, de una protesta por los apagones en general, de una declaración "
+    "o advertencia, de un apagón histórico (p. ej. 2019) o de un riesgo "
+    "futuro.\n"
+    "- momento: cuándo ocurrió el incidente según el texto, o \"\" si no lo "
+    "dice.\n"
+    "- reciente (true/false): ¿el incidente está ocurriendo ahora o empezó "
+    "en las últimas {horas} horas respecto a la FECHA Y HORA ACTUAL? Si el "
+    "texto no da ningún momento pero está redactado como noticia del día "
+    "(sin indicios de que sea viejo), responde true. Responde false si es de "
+    "hace varios días o semanas, histórico, o futuro/programado.\n"
+    "- en_estado_asignado (true/false): ¿el incidente ocurrió en el ESTADO "
+    "ASIGNADO (incluye sus ciudades y municipios)? Si el estado solo aparece "
+    "en una lista genérica, como procedencia, como comparación o en un "
+    "enlace a otra noticia, responde false.\n"
+    "- tema_principal: uno de incidente, protesta, declaracion, "
+    "reportaje_cronico, impacto_sectorial, anuncio_o_programado, "
+    "historico_o_futuro, otro.\n"
+    "\nFECHA Y HORA ACTUAL: {fecha_hora}\n"
+    "ESTADO ASIGNADO: {estado}\n"
+    "\nDEBES RESPONDER EXCLUSIVAMENTE EN FORMATO JSON, sin texto adicional: "
+    "un objeto con una clave 'fuentes' que contenga una lista de exactamente "
+    "{n} objetos, en el mismo orden en que se dan las fuentes, cada uno con "
+    "las claves incidente_concreto, momento, reciente, en_estado_asignado y "
+    "tema_principal.\n"
+    "Ejemplo con 2 fuentes: {{\"fuentes\": [{{\"incidente_concreto\": true, "
+    "\"momento\": \"anoche\", \"reciente\": true, \"en_estado_asignado\": "
+    "true, \"tema_principal\": \"incidente\"}}, {{\"incidente_concreto\": "
+    "false, \"momento\": \"\", \"reciente\": false, \"en_estado_asignado\": "
+    "true, \"tema_principal\": \"protesta\"}}]}}"
+)
+
+# Mismos bloques opcionales que el prompt general (municipio/parroquia y
+# severidad), con el ejemplo adaptado a la clave 'fuentes'.
+BLOQUE_UBICACION_EXTRACCION_TEMPLATE = (
+    "\n\nADEMÁS de la lista 'fuentes': si el texto deja claro el municipio "
+    "y/o la parroquia del incidente dentro del estado asignado, agrega al "
+    "mismo objeto JSON las claves 'municipio' y/o 'parroquia', usando "
+    "EXCLUSIVAMENTE un valor de estas listas (nunca inventes un nombre). Usa "
+    "null si no se puede determinar con certeza.\n"
+    "MUNICIPIOS VÁLIDOS: {municipios}\n"
+    "PARROQUIAS VÁLIDAS: {parroquias}"
+)
+BLOQUE_SEVERIDAD_EXTRACCION = (
+    "\n\nADEMÁS de la lista 'fuentes': agrega una clave 'severidad' según el "
+    "IMPACTO del incidente: \"critico\" (víctimas fatales o emergencia de gran "
+    "magnitud, p. ej. un apagón de varios estados), \"alto\" (heridos, "
+    "evacuaciones, un hospital o servicio crítico sin electricidad, una "
+    "ciudad entera afectada), \"medio\" (sectores o comunidades sin servicio "
+    "con consecuencias visibles), \"bajo\" (corte breve o afectación "
+    "menor), o null si el texto no da ninguna pista de magnitud."
+)
+
+
+def _fecha_hora_actual_venezuela():
+    ahora = datetime.now(timezone.utc) - timedelta(hours=4)
+    return ahora.strftime("%Y-%m-%d %H:%M") + " (hora de Venezuela, UTC-4)"
+
+
+def _construir_prompt_fuentes_extraccion(grupos_fuentes):
+    """Como _construir_prompt_fuentes, pero con la fecha de publicacion de
+    cada fuente (ayuda a juzgar la recencia) y mas texto por fuente: la
+    extraccion necesita el arranque completo de la nota, no solo el titular."""
+    bloques = []
+    for i, grupo in enumerate(grupos_fuentes, start=1):
+        representante = max(grupo, key=lambda m: m["peso"])
+        bloques.append(
+            f"--- Fuente {i} ({representante['fuente_nombre']}, publicada "
+            f"{representante.get('fecha') or 'sin fecha'}) ---\n"
+            f"{representante['texto'][:1200]}"
+        )
+    return "\n\n".join(bloques)[:9000]
+
+
+def _parsear_extraccion_json(respuesta_texto, n):
+    """Devuelve la lista de n extracciones normalizadas, o None si la
+    respuesta no es valida (se trata como fallo tecnico)."""
+    try:
+        datos = json.loads(respuesta_texto)
+        lista = datos.get("fuentes") if isinstance(datos, dict) else datos
+        if not isinstance(lista, list) or len(lista) != n:
+            return None
+        extracciones = []
+        for item in lista:
+            if not isinstance(item, dict):
+                return None
+            tema = _quitar_tildes(str(item.get("tema_principal", ""))).strip().lower()
+            extracciones.append({
+                "incidente_concreto": item.get("incidente_concreto") is True,
+                "momento": str(item.get("momento") or "")[:200],
+                "reciente": item.get("reciente") is True,
+                # Solo un False explicito descarta por lugar; un valor
+                # ausente o nulo no castiga la fuente por un dato que la IA
+                # no dio.
+                "en_estado_asignado": item.get("en_estado_asignado") is not False,
+                "tema_principal": tema if tema in _TEMAS_EXTRACCION_VALIDOS else "otro",
+            })
+        return extracciones
+    except (json.JSONDecodeError, TypeError, ValueError, AttributeError):
+        return None
+
+
+def _aprobar_por_extraccion(extraccion):
+    """Regla de publicacion para TIPOS_VERIFICACION_POR_EXTRACCION. Devuelve
+    (aprobada, motivo_del_rechazo)."""
+    if not extraccion["incidente_concreto"]:
+        return False, "sin_incidente_concreto"
+    if not extraccion["reciente"]:
+        return False, "no_reciente"
+    if not extraccion["en_estado_asignado"]:
+        return False, "otro_estado"
+    if extraccion["tema_principal"] not in _TEMAS_EXTRACCION_APROBABLES:
+        return False, f"tema_{extraccion['tema_principal']}"
+    return True, None
+
+
+def _registrar_descartes_ia(evento, registros):
+    """Deja constancia de cada fuente que la verificacion descarto (o que no
+    pudo verificarse), para revisarla en la auditoria diaria -- la regla es
+    nueva y un evento real descartado por error no deja ningun otro rastro."""
+    if not registros:
+        return
+    os.makedirs(os.path.dirname(DESCARTES_IA_PATH), exist_ok=True)
+    ahora = datetime.now(timezone.utc).isoformat()
+    with open(DESCARTES_IA_PATH, "a", encoding="utf-8") as f:
+        for r in registros:
+            f.write(json.dumps({
+                "fecha": ahora,
+                "tipo": evento["tipo"],
+                "ubicacion": evento["ubicacion"],
+                **r,
+            }, ensure_ascii=False) + "\n")
+
+
 def _construir_prompt_fuentes(grupos_fuentes):
     bloques = []
     for i, grupo in enumerate(grupos_fuentes, start=1):
@@ -782,6 +975,75 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_i
     return resultado
 
 
+def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_validos, parroquias_validos):
+    """Completa municipio/parroquia del evento con lo que propuso la IA, solo
+    si el valor esta en las listas validas y aparece textualmente en las
+    fuentes que se van a publicar."""
+    municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
+        respuesta, municipios_validos, parroquias_validos
+    )
+    # El anclaje textual debe verificarse SOLO contra las fuentes que
+    # de verdad se van a publicar (grupos_aprobados), no contra todos
+    # los candidatos evaluados (candidatos incluye fuentes que la IA
+    # acaba de rechazar por no ser el mismo hecho). De lo contrario,
+    # un municipio/parroquia mencionado unicamente en una fuente
+    # descartada "ancla" una ubicacion que ninguna fuente publicada
+    # respalda -- caso real: un cluster de "colapso estructural en
+    # Zulia" con una fuente aprobada (una vivienda colapsada, sin mas
+    # detalle de ubicacion) y otra fuente del mismo cluster, sobre un
+    # hecho distinto, que si mencionaba "Sinamaica"/"Guajira" y fue
+    # rechazada por la IA -- el evento publicado terminaba con esa
+    # parroquia/municipio igual, pese a que la unica fuente publicada
+    # nunca los menciona.
+    texto_fuentes_norm = _normalizar(
+        " ".join(m["texto"] for g in grupos_aprobados for m in g)
+    )
+    # Un municipio/parroquia que por coincidencia se llama igual que
+    # su propio estado (frecuente en capitales de estado
+    # venezolanas, ej. municipio "Barinas" del estado Barinas) o que
+    # el pais ("Venezuela") aparece textualmente en casi cualquier
+    # articulo sobre esa zona solo por mencionar el nombre del
+    # estado/pais -- no es evidencia real de esa entidad
+    # administrativa especifica. classify.py ya excluye este caso en
+    # su busqueda determinista (_buscar_municipio_directo/
+    # _buscar_parroquia_directa); se aplica el mismo criterio aqui
+    # para que la IA no "confirme" su propia alucinacion solo porque
+    # el nombre del estado esta trivialmente presente en el texto.
+    ubicacion_norm = _normalizar(evento["ubicacion"])
+    if municipio_ia and _normalizar(municipio_ia) in (ubicacion_norm, "venezuela"):
+        print(
+            f"[WARN] Groq propuso municipio '{municipio_ia}', igual al nombre del "
+            f"estado/pais; se descarta por no ser evidencia de un municipio "
+            f"especifico."
+        )
+        municipio_ia = None
+    if parroquia_ia and _normalizar(parroquia_ia) in (ubicacion_norm, "venezuela"):
+        print(
+            f"[WARN] Groq propuso parroquia '{parroquia_ia}', igual al nombre del "
+            f"estado/pais; se descarta por no ser evidencia de una parroquia "
+            f"especifica."
+        )
+        parroquia_ia = None
+    if municipio_ia and _normalizar(municipio_ia) not in texto_fuentes_norm:
+        print(
+            f"[WARN] Groq propuso municipio '{municipio_ia}' pero ese nombre no "
+            f"aparece textualmente en las fuentes; se descarta para evitar una "
+            f"ubicación inventada."
+        )
+        municipio_ia = None
+    if parroquia_ia and _normalizar(parroquia_ia) not in texto_fuentes_norm:
+        print(
+            f"[WARN] Groq propuso parroquia '{parroquia_ia}' pero ese nombre no "
+            f"aparece textualmente en las fuentes; se descarta para evitar una "
+            f"ubicación inventada."
+        )
+        parroquia_ia = None
+    if evento.get("municipio") is None and municipio_ia:
+        evento["municipio"] = municipio_ia
+    if evento.get("parroquia") is None and parroquia_ia:
+        evento["parroquia"] = parroquia_ia
+
+
 def _clave_pendiente(evento):
     """Clave para rastrear cuantos ciclos lleva un cluster esperando una
     verificacion real de Groq. Se ancla al dia calendario (no a una fecha
@@ -816,7 +1078,7 @@ def _limpiar_pendiente(evento):
         _guardar_pendientes(pendientes)
 
 
-def _manejar_falla_temporal(evento, candidatos):
+def _manejar_falla_temporal(evento, candidatos, publicar_al_agotar=True):
     """Cuando Groq falla de forma transitoria, retiene el evento sin
     publicar hasta MAX_CICLOS_ESPERA_GROQ ciclos (ver comentario junto a esa
     constante) antes de usar el mecanismo de "fallar hacia lo seguro"
@@ -859,12 +1121,141 @@ def _manejar_falla_temporal(evento, candidatos):
 
     pendientes.pop(clave, None)
     _guardar_pendientes(pendientes)
+    if not publicar_al_agotar:
+        # Tipos de TIPOS_VERIFICACION_POR_EXTRACCION: la gran mayoria de lo
+        # que el clasificador detecta para ellos son notas generales, asi
+        # que publicar sin verificar publicaria sobre todo ruido (decision
+        # del usuario, 07-10-2026). Se descarta y queda registrado.
+        print(
+            f"[WARN] Groq sigue sin disponibilidad para [{evento['tipo']}/{evento['ubicacion']}] "
+            f"tras {MAX_CICLOS_ESPERA_GROQ} ciclos de espera -- este tipo no se publica sin "
+            f"verificacion de IA; se descarta."
+        )
+        _registrar_descartes_ia(evento, [
+            {"fuente": m["fuente_nombre"], "link": m["link"], "motivo": "sin_verificacion_ia"}
+            for m in (max(g, key=lambda m: m["peso"]) for g in candidatos)
+        ])
+        return None
     print(
         f"[WARN] Groq sigue sin disponibilidad para [{evento['tipo']}/{evento['ubicacion']}] "
         f"tras {MAX_CICLOS_ESPERA_GROQ} ciclos de espera -- se publica sin verificar, "
         f"como red de seguridad."
     )
     return _finalizar_evento(evento, candidatos, error_sistema=True)
+
+
+def _llamar_groq(api_key, system_prompt, contenido_usuario, max_tokens):
+    resp = None
+    for intento in range(MAX_REINTENTOS_GROQ):
+        time.sleep(ESPERA_ENTRE_LLAMADAS_GROQ)
+        resp = requests.post(
+            GROQ_URL,
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": GROQ_MODEL,
+                "temperature": 0,
+                "response_format": {"type": "json_object"},
+                "max_tokens": max_tokens,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": contenido_usuario},
+                ],
+            },
+            timeout=30,
+        )
+        if resp.status_code == 429 and intento < MAX_REINTENTOS_GROQ - 1:
+            espera = ESPERA_BASE_REINTENTO_429 * (2 ** intento)
+            print(f"[WARN] Groq devolvió 429 (rate limit), reintentando en {espera}s... (intento {intento + 2}/{MAX_REINTENTOS_GROQ})")
+            time.sleep(espera)
+            continue
+        break
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"].strip()
+
+
+def _verificar_por_extraccion(evento, candidatos):
+    """Verificacion para TIPOS_VERIFICACION_POR_EXTRACCION (ver comentario
+    junto a esa constante): la IA extrae datos de cada fuente y el codigo
+    decide con _aprobar_por_extraccion. Nunca publica sin una extraccion
+    valida (ni sin GROQ_API_KEY), salvo clusters solo de correo
+    institucional, igual que _manejar_falla_temporal."""
+    representantes = [max(g, key=lambda m: m["peso"]) for g in candidatos]
+    api_key = os.environ.get("GROQ_API_KEY")
+    if not api_key:
+        print(
+            f"[WARN] GROQ_API_KEY no configurada -- [{evento['tipo']}/{evento['ubicacion']}] "
+            f"no se publica sin verificacion de IA."
+        )
+        _registrar_descartes_ia(evento, [
+            {"fuente": r["fuente_nombre"], "link": r["link"], "motivo": "sin_verificacion_ia"}
+            for r in representantes
+        ])
+        return None
+
+    n = len(candidatos)
+    system_prompt = SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE.format(
+        horas=HORAS_RECENCIA_EXTRACCION, fecha_hora=_fecha_hora_actual_venezuela(),
+        estado=evento["ubicacion"], n=n,
+    )
+    pedir_ubicacion = evento.get("municipio") is None or evento.get("parroquia") is None
+    municipios_validos, parroquias_validos = ([], [])
+    if pedir_ubicacion:
+        municipios_validos, parroquias_validos = _listas_ubicacion_valida(evento["ubicacion"])
+        if municipios_validos or parroquias_validos:
+            system_prompt += BLOQUE_UBICACION_EXTRACCION_TEMPLATE.format(
+                municipios=municipios_validos, parroquias=parroquias_validos,
+            )
+        else:
+            pedir_ubicacion = False
+    pedir_severidad = all(m["severidad"] == "sin_clasificar" for g in candidatos for m in g)
+    if pedir_severidad:
+        system_prompt += BLOQUE_SEVERIDAD_EXTRACCION
+
+    contenido_usuario = (
+        f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento['tipo']}\n"
+        f"ESTADO ASIGNADO: {evento['ubicacion']}\n\n"
+        f"{_construir_prompt_fuentes_extraccion(candidatos)}"
+    )
+    # Presupuesto holgado por la misma razon que en verificar_evento_con_ia
+    # (modelo razonador con tokens ocultos), mas el JSON por fuente.
+    max_tokens = max(2000, n * 300 + 800) + (100 if pedir_ubicacion else 0) + (100 if pedir_severidad else 0)
+
+    try:
+        respuesta = _llamar_groq(api_key, system_prompt, contenido_usuario, max_tokens)
+    except Exception as e:
+        print(f"[WARN] Fallo la verificación con Groq: {e}")
+        return _manejar_falla_temporal(evento, candidatos, publicar_al_agotar=False)
+
+    extracciones = _parsear_extraccion_json(respuesta, n)
+    if extracciones is None:
+        print(
+            f"[WARN] Groq devolvió una extracción inválida o de tamaño distinto al "
+            f"esperado ({n} fuentes): '{respuesta[:200]}'."
+        )
+        return _manejar_falla_temporal(evento, candidatos, publicar_al_agotar=False)
+
+    _limpiar_pendiente(evento)
+
+    grupos_aprobados, descartes, detalle = [], [], []
+    for grupo, rep, ext in zip(candidatos, representantes, extracciones):
+        aprobada, motivo = _aprobar_por_extraccion(ext)
+        detalle.append(f"{rep['fuente_nombre']} ({rep['link']})={'SI' if aprobada else motivo}")
+        if aprobada:
+            grupos_aprobados.append(grupo)
+        else:
+            descartes.append({"fuente": rep["fuente_nombre"], "link": rep["link"], "motivo": motivo, "extraccion": ext})
+    print(
+        f"[DEBUG] Groq extracción [{evento['tipo']}/{evento['ubicacion']}]: "
+        f"{', '.join(detalle)} → {len(grupos_aprobados)}/{n} fuentes aprobadas"
+    )
+    _registrar_descartes_ia(evento, descartes)
+
+    if not grupos_aprobados:
+        return None
+    if pedir_ubicacion:
+        _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_validos, parroquias_validos)
+    severidad_ia = _extraer_severidad_ia(respuesta) if pedir_severidad else None
+    return _finalizar_evento(evento, grupos_aprobados, severidad_ia=severidad_ia)
 
 
 def verificar_evento_con_ia(evento):
@@ -928,6 +1319,9 @@ def verificar_evento_con_ia(evento):
 
     if not candidatos:
         return None
+
+    if evento["tipo"] in TIPOS_VERIFICACION_POR_EXTRACCION:
+        return _verificar_por_extraccion(evento, candidatos)
 
     api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
@@ -1049,69 +1443,7 @@ def verificar_evento_con_ia(evento):
             return None
 
         if pedir_ubicacion:
-            municipio_ia, parroquia_ia = _extraer_municipio_parroquia(
-                respuesta, municipios_validos, parroquias_validos
-            )
-            # El anclaje textual debe verificarse SOLO contra las fuentes que
-            # de verdad se van a publicar (grupos_aprobados), no contra todos
-            # los candidatos evaluados (candidatos incluye fuentes que la IA
-            # acaba de rechazar por no ser el mismo hecho). De lo contrario,
-            # un municipio/parroquia mencionado unicamente en una fuente
-            # descartada "ancla" una ubicacion que ninguna fuente publicada
-            # respalda -- caso real: un cluster de "colapso estructural en
-            # Zulia" con una fuente aprobada (una vivienda colapsada, sin mas
-            # detalle de ubicacion) y otra fuente del mismo cluster, sobre un
-            # hecho distinto, que si mencionaba "Sinamaica"/"Guajira" y fue
-            # rechazada por la IA -- el evento publicado terminaba con esa
-            # parroquia/municipio igual, pese a que la unica fuente publicada
-            # nunca los menciona.
-            texto_fuentes_norm = _normalizar(
-                " ".join(m["texto"] for g in grupos_aprobados for m in g)
-            )
-            # Un municipio/parroquia que por coincidencia se llama igual que
-            # su propio estado (frecuente en capitales de estado
-            # venezolanas, ej. municipio "Barinas" del estado Barinas) o que
-            # el pais ("Venezuela") aparece textualmente en casi cualquier
-            # articulo sobre esa zona solo por mencionar el nombre del
-            # estado/pais -- no es evidencia real de esa entidad
-            # administrativa especifica. classify.py ya excluye este caso en
-            # su busqueda determinista (_buscar_municipio_directo/
-            # _buscar_parroquia_directa); se aplica el mismo criterio aqui
-            # para que la IA no "confirme" su propia alucinacion solo porque
-            # el nombre del estado esta trivialmente presente en el texto.
-            ubicacion_norm = _normalizar(evento["ubicacion"])
-            if municipio_ia and _normalizar(municipio_ia) in (ubicacion_norm, "venezuela"):
-                print(
-                    f"[WARN] Groq propuso municipio '{municipio_ia}', igual al nombre del "
-                    f"estado/pais; se descarta por no ser evidencia de un municipio "
-                    f"especifico."
-                )
-                municipio_ia = None
-            if parroquia_ia and _normalizar(parroquia_ia) in (ubicacion_norm, "venezuela"):
-                print(
-                    f"[WARN] Groq propuso parroquia '{parroquia_ia}', igual al nombre del "
-                    f"estado/pais; se descarta por no ser evidencia de una parroquia "
-                    f"especifica."
-                )
-                parroquia_ia = None
-            if municipio_ia and _normalizar(municipio_ia) not in texto_fuentes_norm:
-                print(
-                    f"[WARN] Groq propuso municipio '{municipio_ia}' pero ese nombre no "
-                    f"aparece textualmente en las fuentes; se descarta para evitar una "
-                    f"ubicación inventada."
-                )
-                municipio_ia = None
-            if parroquia_ia and _normalizar(parroquia_ia) not in texto_fuentes_norm:
-                print(
-                    f"[WARN] Groq propuso parroquia '{parroquia_ia}' pero ese nombre no "
-                    f"aparece textualmente en las fuentes; se descarta para evitar una "
-                    f"ubicación inventada."
-                )
-                parroquia_ia = None
-            if evento.get("municipio") is None and municipio_ia:
-                evento["municipio"] = municipio_ia
-            if evento.get("parroquia") is None and parroquia_ia:
-                evento["parroquia"] = parroquia_ia
+            _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_validos, parroquias_validos)
 
         severidad_ia = _extraer_severidad_ia(respuesta) if pedir_severidad else None
         return _finalizar_evento(evento, grupos_aprobados, severidad_ia=severidad_ia)

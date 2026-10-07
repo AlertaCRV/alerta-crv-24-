@@ -9673,3 +9673,76 @@ mapa, índice de informes e `estadisticas.json` consistentes.
 `docs/pcode final.xlsx` se sirven públicamente y no los referencia nada;
 conviene moverlos fuera de `docs/`. La plantilla `_HTML_TEMPLATE` de
 `scripts/build_site.py` es una versión antigua (solo se usa si falta index.html).
+
+## Revisión profunda de "Falla eléctrica" (07-10-2026): de SI/NO a extracción estructurada
+
+**Problema** (reportado por el usuario): se publicaban como alerta notas que
+hablan en general de la crisis eléctrica, cuando el sistema solo debe alertar
+eventos en desarrollo.
+
+**Diagnóstico**: se revisaron una a una las 168 alertas de
+`infraestructura_electrica` publicadas entre el 26-07 y el 07-10-2026 (dos
+revisores independientes con el mismo criterio, uno estricto y otro encargado
+de no perder emergencias reales; coincidieron en 155, un tercero decidió las
+13 restantes). **130 no eran un incidente en desarrollo**: 52 protestas por los
+apagones, 22 reportajes sobre la crisis, 20 declaraciones de gremios o
+políticos, 11 impactos sectoriales, 19 hechos ocurridos en otro estado o
+resúmenes nacionales, y 6 anuncios u otros temas. Las 39 visibles ese día
+habían sido **aprobadas por la IA** (ninguna `PASADO_POR_FALLA_TECNICA`): el
+veredicto SI/NO del prompt general dejaba pasar cualquier nota con fecha y la
+palabra "apagones", y la IA no sabía en qué estado se publicaría la alerta.
+
+**Lo que NO funcionó (y por qué no se implementó)**: un filtro determinista de
+palabras clave que exigiera un incidente concreto. Sobre las 168 alertas
+reales (sobre las que se ajustó) conservaba 38/38 eventos y descartaba 115/130
+notas generales, pero en una prueba ciega de 150 noticias realistas escritas
+por agentes que no vieron el filtro (verificadas por un etiquetador
+independiente, 150/150 de acuerdo) **perdía 27 de 75 eventos reales** (robo de
+cables, incendio en planta termoeléctrica, explosión de transformador con otra
+redacción). Incluso un veto mínimo (aniversarios de 2019, cronogramas de
+racionamiento) eliminaba 2 eventos reales de la prueba ciega. Conclusión: la
+redacción de un incidente real es demasiado variada para palabras clave;
+para este tipo no se agregan más filtros de ese estilo.
+
+**Corrección de raíz** (`scripts/verify_ai.py`, `TIPOS_VERIFICACION_POR_EXTRACCION`):
+para `infraestructura_electrica` la IA ya no responde SI/NO; **extrae** por
+fuente `incidente_concreto`, `momento`, `reciente` (≤48 h), `en_estado_asignado`
+y `tema_principal`, y el código decide (`_aprobar_por_extraccion`): se publica
+solo si hay incidente concreto, reciente, en el estado de la alerta y con tema
+`incidente`/`otro`. La IA recibe ahora el estado asignado, la fecha y hora de
+Venezuela y la fecha de publicación de cada fuente. Probado con un modelo más
+pequeño que el de producción: prueba ciega 75/75 eventos reales conservados
+(3/75 notas generales se cuelan); 168 alertas reales: 34/38 eventos y 14/130
+notas generales. Decisiones del usuario (07-10-2026): (1) una protesta por un
+corte concreto y en curso ("llevan 20 horas sin luz") sí es alerta eléctrica;
+una protesta por los apagones en general no; (2) este tipo **no se publica sin
+verificación de IA** (sin `GROQ_API_KEY`, o con Groq caído tras
+`MAX_CICLOS_ESPERA_GROQ` ciclos, se descarta en vez de salir como
+`PASADO_POR_FALLA_TECNICA`), salvo clusters solo de correo institucional de
+filial (excepción ya existente: no pueden retenerse). Cada fuente descartada
+queda en `data/descartes_ia.jsonl` (agregado a los archivos que guarda el bot
+en `monitor.yml`) para revisarla en la auditoría diaria durante las primeras
+semanas.
+
+**Corrección retroactiva**: se retiraron 34 alertas visibles de
+`docs/data/noticias.json` (33 de las etiquetadas + una nueva del 07-10, "Advierten
+que las fallas eléctricas amenazan el inicio del año escolar", declaración de
+Consecomercio) y sus claves de `data/publicados.json`; se eliminaron los 131
+registros correspondientes de `data/historico_eventos.jsonl` y
+`data/historico_fuentes_texto.jsonl`; se regeneró `docs/data/estadisticas.json`
+(mapa y tendencias: 429 eventos, 38 de falla eléctrica). Los 8 informes
+narrativos que citaban fuentes retiradas (`2026-07..10_general` y
+`2026-07..10_infraestructura_electrica`) se eliminaron junto con sus entradas
+de `index.json`, para que el bot los regenere con datos limpios en su próxima
+corrida (los meses cerrados solo se regeneran si el archivo no existe).
+Detalle por alerta: https://claude.ai/artifact/GRRsYrLDfdk5bQtnL4nncn
+
+**Pruebas**: 7 tests nuevos en `tests/test_verify_ai_filtros.py` (regla de
+decisión, parseo, sin API key, Groq caído al agotar reintentos, control de
+correo institucional). `PYTHONHASHSEED=0 python3 -m pytest tests/` → 917
+passed, 8 xfailed, 5 xpassed. `python3 scripts/validar_configs.py` → OK.
+
+**Pendiente**: validar en producción con el modelo real (`openai/gpt-oss-120b`),
+revisando `data/descartes_ia.jsonl` en las auditorías diarias. Si funciona,
+evaluar extender la extracción a otros tipos propensos a notas generales
+(`infraestructura_agua`, `orden_publico`).
