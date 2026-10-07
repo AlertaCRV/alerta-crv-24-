@@ -9746,3 +9746,15 @@ passed, 8 xfailed, 5 xpassed. `python3 scripts/validar_configs.py` → OK.
 revisando `data/descartes_ia.jsonl` en las auditorías diarias. Si funciona,
 evaluar extender la extracción a otros tipos propensos a notas generales
 (`infraestructura_agua`, `orden_publico`).
+
+## Auditoría diaria 07-10-2026 (tarde): duplicado de Cardón y mención incidental en salud pública
+
+**Hallazgos** (alertas publicadas el 06-07/10, contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **Incendio duplicado, refinería Cardón (Falcón)**: el mismo incendio del 06-10 (~3:25 pm, rotura de línea de gas natural) se publicó dos veces: `incendio::Falcon::2026-10-06` y `incendio::Falcon::2026-10-07`. La segunda se generó con artículos del 07-10 (Runrun.es, comunicado de Pdvsa "la noche del 6 de octubre"; El Tiempo) que reseñan el hecho del día anterior. Además esa segunda alerta traía la parroquia **"Las Calderas"**, que no aparece en el texto de ninguna fuente (dato sin respaldo).
+   - **Causa raíz (pendiente de decidir)**: `state._resolver_clave` exige, para `incendio`, municipio detectado en ambos lados para reutilizar la clave dentro de la ventana de 36 h. La refinería no tiene municipio detectado, así que nunca se fusiona. Un arreglo determinista requeriría guardar en `publicados.json` una huella de la instalación nombrada (p. ej. "refinería Cardón") y compararla; es un cambio de diseño de la deduplicación con riesgo de fusionar incendios distintos, por lo que **no se aplicó de forma autónoma**.
+2. **Salud pública Anzoátegui sin evento nuevo**: la nota de La Prensa de Lara sobre intoxicaciones en escuelas de Lara/Trujillo (07-10) menciona al final, como contexto, una intoxicación masiva del **03-10** en Puerto Píritu (Anzoátegui). Se publicó como alerta nueva fechada el 07-10 (`salud_publica`, Anzoátegui, severidad media). Es una mención incidental de un hecho de hace 4 días, no un incidente reportado hoy. Mismo patrón que el filtro de extracción de `infraestructura_electrica`: candidato a extender `TIPOS_VERIFICACION_POR_EXTRACCION` a `salud_publica` (pendiente de decidir).
+
+**Corrección retroactiva**: se retiraron las 2 alertas (la duplicada de Cardón del 07-10 y la de Anzoátegui) de `docs/data/noticias.json`, sus 2+2 registros de `data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`; se regeneró `docs/data/estadisticas.json`. Las claves de `publicados.json` se conservan para que el bot no las republique. Se mantiene la alerta original del 06-10 (3 fuentes, sin parroquia).
+
+**Revisado y sin cambios**: orden_publico Yaracuy (protesta con cierre de vía por falta de agua y luz, texto de La Piedra, San José de la Costa; es un corte concreto, coherente con la decisión del usuario del 07-10), inundación Caracas, rayo en Tovar, salud Trujillo, cierre de vía en Guaca, crecida del Manzanares, incendio Manorta.
