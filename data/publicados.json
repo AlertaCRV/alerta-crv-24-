@@ -89,5 +89,12 @@
     "fecha_deteccion": "2026-10-07T09:08:38.147261+00:00",
     "fecha_evento_temprana": "2026-10-07T00:02:18+00:00",
     "municipio": "Bermúdez"
+  },
+  "incendio::Falcon::2026-10-07": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-07T16:27:39.650581+00:00",
+    "fecha_evento_temprana": "2026-10-07T07:33:00+00:00",
+    "municipio": null
   }
 }
