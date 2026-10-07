@@ -1,18 +1,4 @@
 {
-  "incendio::Distrito Capital::2026-10-04": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-04T17:07:51.037954+00:00",
-    "fecha_evento_temprana": "2026-10-04T15:45:36+00:00",
-    "municipio": null
-  },
-  "incendio::Zulia::2026-10-04": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-04T20:13:00.810914+00:00",
-    "fecha_evento_temprana": "2026-10-04T18:01:31+00:00",
-    "municipio": "Lagunillas"
-  },
   "orden_publico::Yaracuy::2026-10-04": {
     "severidad": "critico",
     "confirmado": false,
@@ -77,10 +63,45 @@
     "municipio": "Bermúdez"
   },
   "incendio::Falcon::2026-10-07": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": true,
-    "fecha_deteccion": "2026-10-07T16:27:39.650581+00:00",
-    "fecha_evento_temprana": "2026-10-07T07:33:00+00:00",
+    "fecha_deteccion": "2026-10-07T21:32:00.638608+00:00",
+    "fecha_evento_temprana": "2026-10-07T13:54:05+00:00",
     "municipio": null
+  },
+  "inundacion::Distrito Capital::2026-10-07": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-07T21:32:04.809518+00:00",
+    "fecha_evento_temprana": "2026-10-07T20:03:44+00:00",
+    "municipio": "Libertador"
+  },
+  "infraestructura_electrica::Zulia::2026-10-07": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-07T21:32:08.919434+00:00",
+    "fecha_evento_temprana": "2026-10-07T18:49:43+00:00",
+    "municipio": null
+  },
+  "salud_publica::Trujillo::2026-10-07": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-07T21:32:28.991068+00:00",
+    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
+    "municipio": "Valera"
+  },
+  "salud_publica::Anzoategui::2026-10-07": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-07T21:32:41.046406+00:00",
+    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
+    "municipio": null
+  },
+  "tormenta_electrica::Merida::2026-10-07": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-07T21:32:52.728016+00:00",
+    "fecha_evento_temprana": "2026-10-07T16:30:00+00:00",
+    "municipio": "Tovar"
   }
 }

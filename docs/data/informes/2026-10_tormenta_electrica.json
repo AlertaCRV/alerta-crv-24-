@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "tormenta_electrica",
+  "tipo_label": "Tormenta eléctrica",
+  "cerrado": false,
+  "generado": "2026-10-07T21:34:29.533303+00:00",
+  "actualizado_hasta": "2026-10-07T21:32:52.728016+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026, el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró un total de un evento de tormenta eléctrica, cifra idéntica a la del mes anterior (2026‑09) que también contó con un solo evento (1 evento(s) registrados entonces vs. 1 en este período).\n\nEl único incidente registrado corresponde a una tormenta eléctrica de alta severidad que se manifestó en la localidad de Tovar, en el estado Mérida (Primicia).\n\nEn esa ocasión, dos adolescentes resultaron heridos al ser alcanzados por un rayo; ambos fueron trasladados a un centro de salud donde permanecen bajo observación médica (Primicia).\n\nLas autoridades locales y la Cruz Roja continúan realizando seguimiento de la situación y brindando apoyo a los afectados, manteniendo la vigilancia para futuros eventos de la misma naturaleza.",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/adolescentes-heridos-rayo-tovar-merida/"
+    }
+  ]
+}
