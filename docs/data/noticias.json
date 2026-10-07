@@ -1,36 +1,5 @@
 [
   {
-    "tipo": "incendio",
-    "ubicacion": "Falcon",
-    "municipio": null,
-    "parroquia": "Las Calderas",
-    "severidad": "alto",
-    "score": 1.25,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/622106/refineria-cardon-paralizada-tras-incendio-por-rotura-de-linea-de-gas-natural/",
-        "fecha": "2026-10-07T19:34:38+00:00"
-      },
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/",
-        "fecha": "2026-10-07T13:54:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-07T19:34:38+00:00",
-    "fecha_evento_temprana": "2026-10-07T13:54:05+00:00",
-    "fecha_deteccion": "2026-10-07T21:32:00.638608+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Falcon::2026-10-07",
-    "titulo": "Incendio en Parroquia Las Calderas, Falcon",
-    "texto": "📌 Incendio en Parroquia Las Calderas, Falcon\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Las Calderas, Falcon\n🕒 Hecho reportado: 07/10/2026, 3:34 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/622106/refineria-cardon-paralizada-tras-incendio-por-rotura-de-linea-de-gas-natural/\n  • El Tiempo (Anzoategui): https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -91,32 +60,6 @@
     "clave_dedup": "salud_publica::Trujillo::2026-10-07",
     "titulo": "Salud pública en Parroquia Mercedes Díaz, Municipio Valera, Trujillo",
     "texto": "📌 Salud pública en Parroquia Mercedes Díaz, Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Mercedes Díaz, Municipio Valera, Trujillo\n🕒 Hecho reportado: 07/10/2026, 4:33 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/",
-        "fecha": "2026-10-07T20:33:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-07T20:33:03+00:00",
-    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
-    "fecha_deteccion": "2026-10-07T21:32:41.046406+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Anzoategui::2026-10-07",
-    "titulo": "Salud pública en Anzoategui",
-    "texto": "📌 Salud pública en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 07/10/2026, 4:33 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
   },
   {
     "tipo": "tormenta_electrica",
