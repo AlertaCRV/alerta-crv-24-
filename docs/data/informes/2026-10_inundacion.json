@@ -3,16 +3,20 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-06T00:15:04.780523+00:00",
-  "actualizado_hasta": "2026-10-03T22:16:16.770591+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-07T02:25:05.973042+00:00",
+  "actualizado_hasta": "2026-10-06T19:06:30.528938+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un solo evento de inundación en el territorio nacional, una notable reducción frente a los 16 eventos reportados en septiembre del mismo año (16 evento(s) registrados entonces vs. 1 en este período). Esta disminución se refleja en la menor frecuencia de reportes de daños materiales y afectaciones a la población durante el periodo analizado.\n\nEl único caso documentado corresponde a la Escuela Básica Estadal Virginia Ramos, ubicada en el sector Buenos Aires de la ciudad de Guanare, estado Portuguesa. El viernes 2 de octubre, intensas precipitaciones provocaron que el salón de clases de 5.º grado “A” quedara anegado, obligando a los estudiantes a recibir la lección con los pies sumergidos en agua (Portuguesa Reporta). Un video enviado por usuarios muestra el aula inundada y a los alumnos continuando con la clase bajo esas condiciones (Portuguesa Reporta). La situación evidencia la vulnerabilidad de la infraestructura escolar ante fenómenos de lluvia intensa en la región.\n\nA pesar de la escasa cantidad de incidentes registrados en este mes, el caso de Guanare subraya la necesidad de reforzar las medidas de prevención y reparación de daños en establecimientos educativos, especialmente en zonas propensas a inundaciones recurrentes. La Cruz Roja Venezolana continuará monitoreando la evolución de estos eventos y colaborará con las autoridades locales para mitigar el impacto de futuras precipitaciones extremas.",
+  "narrativa": "En el mes de octubre de 2026 se registraron únicamente dos eventos de inundación, una disminución notable respecto a los 16 eventos registrados en septiembre de 2026 (16 evento(s) registrados entonces vs. 2 en este período). Esta reducción se refleja en los reportes de la prensa local, que describen los incidentes más relevantes del período.\n\nEl primer incidente ocurrió en el estado Sucre, donde el río Manzanares se desbordó tras varias horas de intensas precipitaciones, dejando varias viviendas afectadas a lo largo de su cauce (La Verdad de Monagas). Las autoridades locales reportaron que el aumento del caudal del río provocó daños materiales en viviendas situadas en zonas ribereñas, aunque no se reportaron víctimas mortales ni heridos graves.\n\nEl segundo evento se dio en el estado Portuguesa, específicamente en la ciudad de Guanare. El viernes 2 de octubre, fuertes lluvias inundaron el salón de la Escuela Básica Estadal Virginia Ramos, ubicada en el sector Buenos Aires de la ciudad, obligando a los alumnos de 5.º grado “A” a recibir clases con los pies sumergidos en agua (Portuguesa Reporta). Un video difundido por usuarios mostró el aula anegada y a los estudiantes intentando continuar la lección bajo esas condiciones, evidenciando la vulnerabilidad de la infraestructura escolar ante las lluvias recurrentes.\n\nA pesar de la baja cantidad de eventos registrados, la Cruz Roja Venezolana mantiene la vigilancia activa en ambas regiones, coordinando acciones de prevención y asistencia para minimizar el impacto de futuras crecidas y garantizar la seguridad de la población afectada.",
   "fuentes": [
+    {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/"
+    },
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
