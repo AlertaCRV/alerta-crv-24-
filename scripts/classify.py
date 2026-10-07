@@ -196,6 +196,12 @@ LISTA_NEGRA_POR_ESTADO = {
         # contenido real sobre el Congo) -- recortar hasta el final perderia
         # esa evidencia real.
         "chile designa consul general en caracas",
+        # Caso real (06-10-2026): el incendio de la refineria Cardon
+        # (Falcon) tambien se publicaba en Distrito Capital porque el
+        # articulo de El Pitazo cierra una frase con "Sistema Nacional de
+        # Gestion de Riesgos Caracas" (institucion que respondio desde la
+        # capital, no la ubicacion del hecho).
+        "gestion de riesgos caracas",
     ],
     # Caso real (11-08-2026): dos articulos sobre venezolanos residentes EN
     # COLOMBIA que sobrevivieron al terremoto de magnitud 7.4 que sacudio
@@ -618,7 +624,17 @@ _MUERTE_MIGRANTE_EXTRANJERO = [
     "hallado sin vida", "hallados sin vida", "hallada sin vida", "halladas sin vida",
     "encontrado sin vida", "encontrados sin vida", "encontrada sin vida", "encontradas sin vida",
 ]
-_VENTANA_FALLECIMIENTO_MIGRANTE = 300
+# Ampliada (06-10-2026): "Nina oriunda de Villa Rosa (municipio Garcia, Nueva
+# Esparta) es asesinada en Chicago" publicaba una alerta CRITICA de orden
+# publico en Nueva Esparta; el filtro solo reconocia "Colombia". Se amplia a
+# otros destinos habituales de la migracion venezolana, y la ventana a 500.
+_LUGARES_EXTRANJEROS_MIGRANTE = [
+    "colombia", "chicago", "estados unidos", "ee.uu", "eeuu", "miami",
+    "nueva york", "espana", "madrid", "peru", "lima", "chile",
+    "argentina", "buenos aires", "brasil", "ecuador", "panama", "mexico",
+    "republica dominicana", "canada", "italia",
+]
+_VENTANA_FALLECIMIENTO_MIGRANTE = 500
 
 
 def _es_fallecimiento_migrante_en_extranjero(texto_norm):
@@ -632,7 +648,7 @@ def _es_fallecimiento_migrante_en_extranjero(texto_norm):
         return False
     ventana = texto_norm[match.end():match.end() + _VENTANA_FALLECIMIENTO_MIGRANTE]
     tiene_muerte = any(_contiene_palabra_clave(ventana, m) for m in _MUERTE_MIGRANTE_EXTRANJERO)
-    return tiene_muerte and _contiene_palabra_clave(ventana, "colombia")
+    return tiene_muerte and any(_contiene_palabra_clave(ventana, lugar) for lugar in _LUGARES_EXTRANJEROS_MIGRANTE)
 
 # Un keyword suelto de tipo no siempre significa que el articulo trata
 # realmente de ese tipo de evento. Caso real: "Activan cerco epidemiologico
