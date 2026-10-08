@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-08T01:18:05.306046+00:00",
+  "actualizado": "2026-10-08T07:35:13.133130+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-07T21:07:26+00:00"
+    "hasta": "2026-10-08T03:00:31+00:00"
   },
-  "total_eventos": 428,
+  "total_eventos": 432,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 74,
+    "inundacion": 75,
     "infraestructura_electrica": 38,
-    "deslizamiento": 30,
+    "deslizamiento": 31,
     "colapso_estructural": 4,
-    "orden_publico": 141,
-    "salud_publica": 13,
+    "orden_publico": 142,
+    "salud_publica": 14,
     "crisis_migratoria": 6,
     "incendio": 48,
     "vialidad": 20,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 75,
-      "confirmados": 10,
+      "total": 76,
+      "confirmados": 11,
       "por_severidad": {
         "alto": 14,
-        "medio": 19,
+        "medio": 20,
         "bajo": 26,
         "critico": 12,
         "sin_clasificar": 4
@@ -69,12 +69,12 @@
     },
     {
       "estado": "Aragua",
-      "total": 28,
+      "total": 29,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
         "medio": 8,
-        "alto": 9,
+        "alto": 10,
         "critico": 4
       },
       "severidad_dominante": "critico"
@@ -163,6 +163,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Anzoategui",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 3,
+        "critico": 2,
+        "bajo": 4,
+        "medio": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Trujillo",
       "total": 13,
       "confirmados": 0,
@@ -171,18 +183,6 @@
         "bajo": 3,
         "critico": 1,
         "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 3,
-        "critico": 2,
-        "bajo": 4,
-        "medio": 4
       },
       "severidad_dominante": "critico"
     },
@@ -200,6 +200,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 13,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 2,
+        "medio": 4,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Carabobo",
       "total": 12,
       "confirmados": 1,
@@ -207,18 +219,6 @@
         "alto": 2,
         "bajo": 4,
         "medio": 5,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Falcon",
-      "total": 12,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 2,
-        "medio": 3,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -348,7 +348,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 13,
+      "inundacion": 14,
       "orden_publico": 24,
       "incendio": 16,
       "vialidad": 4,
@@ -399,7 +399,7 @@
       "inundacion": 3,
       "incendio": 1,
       "infraestructura_electrica": 1,
-      "salud_publica": 1
+      "salud_publica": 2
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -436,7 +436,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -456,7 +456,7 @@
       "inundacion": 9,
       "accidente_transporte": 1,
       "salud_publica": 1,
-      "deslizamiento": 2,
+      "deslizamiento": 3,
       "tormenta_electrica": 1,
       "incendio": 1,
       "infraestructura_electrica": 2
@@ -511,9 +511,9 @@
     }
   },
   "por_severidad": {
-    "alto": 100,
+    "alto": 101,
     "critico": 51,
-    "medio": 142,
+    "medio": 145,
     "bajo": 126,
     "sin_clasificar": 9
   },
@@ -528,7 +528,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 3
+      "2026-10": 4
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -538,7 +538,8 @@
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
-      "2026-09": 9
+      "2026-09": 9,
+      "2026-10": 1
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -549,13 +550,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 18
+      "2026-10": 19
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 2
+      "2026-10": 3
     },
     "crisis_migratoria": {
       "2026-07": 4,

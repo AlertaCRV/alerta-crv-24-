@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "deslizamiento",
+  "tipo_label": "Deslizamiento/Derrumbe",
+  "cerrado": false,
+  "generado": "2026-10-08T07:36:18.860559+00:00",
+  "actualizado_hasta": "2026-10-08T07:33:43.763093+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 9,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026 se registró un solo evento de deslizamiento/derrumbe, en contraste con los nueve eventos reportados en septiembre de 2026 (comparación con el período anterior: 9 evento(s) registrados entonces vs. 1 en este período). \n\nEl único incidente ocurrió en el estado Aragua, donde la Onda Tropical N° 55 generó anegaciones y derrumbes que afectaron a la zona de La Arboleda, sector de la calle principal del barrio (El Siglo (Aragua)). El desbordamiento del canal Andrés Bello provocó la inundación del sector y el colapso de estructuras, produciendo daños materiales significativos (El Siglo (Aragua)). \n\nAnte la emergencia, el Gobierno Bolivariano de Aragua y la Alcaldía del Municipio Girardot activaron un operativo especial de atención e infraestructura para atender las afectaciones (El Siglo (Aragua)). Rodolfo Ramírez, Secretario General de Servicios Públicos de la entidad, ofreció un balance de la situación directamente desde La Arboleda, describiendo la magnitud de las anegaciones y los trabajos de remoción de escombros (El Siglo (Aragua)). \n\nEste registro único evidencia una disminución notable en la frecuencia de deslizamientos y derrumbes respecto al mes anterior, lo que permite a la Cruz Roja Venezolana focalizar sus recursos en la atención de los daños materiales y la asistencia a la población afectada en Aragua (El Siglo (Aragua)).",
+  "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/onda-tropical-55-dejo-anegaciones-y-derrumbes-en-aragua/"
+    }
+  ]
+}
