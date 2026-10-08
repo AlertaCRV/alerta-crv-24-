@@ -60,8 +60,16 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-10-07T21:33:36.918809+00:00",
-    "total_eventos": 8
+    "generado": "2026-10-08T07:37:12.877647+00:00",
+    "total_eventos": 7
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "deslizamiento",
+    "tipo_label": "Deslizamiento/Derrumbe",
+    "cerrado": false,
+    "generado": "2026-10-08T07:36:18.860559+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-09",

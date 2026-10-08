@@ -1,36 +1,10 @@
 [
   {
-    "tipo": "salud_publica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/",
-        "fecha": "2026-10-07T20:33:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-07T20:33:03+00:00",
-    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
-    "fecha_deteccion": "2026-10-08T01:18:04.654347+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Anzoategui::2026-10-07",
-    "titulo": "Salud pública en Anzoategui",
-    "texto": "📌 Salud pública en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 07/10/2026, 4:33 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 9:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
     "parroquia": "Santa Rosalía",
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 1.95,
     "confirmado": true,
     "num_fuentes": 3,
@@ -55,11 +29,89 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-07T21:07:26+00:00",
     "fecha_evento_temprana": "2026-10-07T20:03:44+00:00",
-    "fecha_deteccion": "2026-10-07T21:32:04.809518+00:00",
+    "fecha_deteccion": "2026-10-08T07:33:22.148954+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "inundacion::Distrito Capital::2026-10-07",
     "titulo": "Inundación en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital",
-    "texto": "📌 Inundación en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 07/10/2026, 5:07 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 3 (score 1.95)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/07/video-fuertes-lluvias-provocan-inundaciones-en-varias-zonas-de-caracas-7oct/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas"
+    "texto": "📌 Inundación en Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Santa Rosalía, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 07/10/2026, 5:07 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 3:33 a.m.\n📊 Fuentes independientes: 3 (score 1.95)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/07/video-fuertes-lluvias-provocan-inundaciones-en-varias-zonas-de-caracas-7oct/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Aragua",
+    "municipio": "Girardot",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/onda-tropical-55-dejo-anegaciones-y-derrumbes-en-aragua/",
+        "fecha": "2026-10-08T01:40:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-08T01:40:32+00:00",
+    "fecha_evento_temprana": "2026-10-08T01:40:32+00:00",
+    "fecha_deteccion": "2026-10-08T07:33:43.763093+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Aragua::2026-10-08",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Girardot, Aragua",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Girardot, Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Girardot, Aragua\n🕒 Hecho reportado: 07/10/2026, 9:40 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 3:33 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/onda-tropical-55-dejo-anegaciones-y-derrumbes-en-aragua/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/",
+        "fecha": "2026-10-07T20:33:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-07T20:33:03+00:00",
+    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
+    "fecha_deteccion": "2026-10-08T07:34:45.733040+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Anzoategui::2026-10-07",
+    "titulo": "Salud pública en Anzoategui",
+    "texto": "📌 Salud pública en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 07/10/2026, 4:33 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 3:34 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/protestas-en-coro-ante-crisis-de-servicios-basicos/",
+        "fecha": "2026-10-08T03:00:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-08T03:00:31+00:00",
+    "fecha_evento_temprana": "2026-10-08T03:00:31+00:00",
+    "fecha_deteccion": "2026-10-08T07:35:11.523210+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-10-08",
+    "titulo": "Orden público en Falcon",
+    "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 07/10/2026, 11:00 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 3:35 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/protestas-en-coro-ante-crisis-de-servicios-basicos/"
   },
   {
     "tipo": "salud_publica",
@@ -2135,57 +2187,5 @@
     "clave_dedup": "deslizamiento::Falcon::2026-09-23",
     "titulo": "Deslizamiento/Derrumbe en Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon",
     "texto": "📌 Deslizamiento/Derrumbe en Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Chichiriviche, Municipio Monseñor Iturriza, Falcon\n🕒 Hecho reportado: 23/09/2026, 7:27 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 6:26 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/sucesos/fallece-un-hombre-tras-colapso-de-edificio-en-chichiriviche/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Tachira",
-    "municipio": "Panamericano",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/continua-tranca-vial-en-panamericano-por-cumplir-24-horas-sin-luz/",
-        "fecha": "2026-09-23T23:53:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-23T23:53:32+00:00",
-    "fecha_evento_temprana": "2026-09-23T23:53:32+00:00",
-    "fecha_deteccion": "2026-09-24T05:25:54.967601+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Tachira::2026-09-23",
-    "titulo": "Orden público en Municipio Panamericano, Tachira",
-    "texto": "📌 Orden público en Municipio Panamericano, Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Panamericano, Tachira\n🕒 Hecho reportado: 23/09/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:25 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/continua-tranca-vial-en-panamericano-por-cumplir-24-horas-sin-luz/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Maturin News",
-        "link": "https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales",
-        "fecha": "2026-09-23T23:37:11+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-23T23:37:11+00:00",
-    "fecha_evento_temprana": "2026-09-23T23:37:11+00:00",
-    "fecha_deteccion": "2026-09-24T05:26:09.353239+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Monagas::2026-09-23",
-    "titulo": "Orden público en Municipio Maturín, Monagas",
-    "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 23/09/2026, 7:37 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales"
   }
 ]

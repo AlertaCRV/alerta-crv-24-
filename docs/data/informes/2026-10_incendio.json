@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-10-07T21:33:36.918809+00:00",
-  "actualizado_hasta": "2026-10-07T21:32:00.638608+00:00",
-  "total_eventos": 8,
+  "generado": "2026-10-08T07:37:12.877647+00:00",
+  "actualizado_hasta": "2026-10-07T16:27:39.650581+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 19,
-    "actual": 8
+    "actual": 7
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron ocho incendios, una disminución respecto a los diecinueve eventos del mes anterior (2026‑09) (Comparación con el período anterior). Todos los incidentes reportados presentaron alta severidad, con daños materiales y la movilización de cuerpos de bomberos y autoridades de gestión de riesgos.\n\nEn el Distrito Capital se produjeron dos incendios de gran magnitud. El primero consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, afectando aproximadamente 40 m² del área de comedor (Reporte Confidencial). Un segundo incendio, mencionado por El Pitazo, también se registró en la capital, aunque los detalles específicos no fueron publicados en la fuente citada (El Pitazo).\n\nEn el estado Zulia, el 3 de octubre se generó un incendio de gran magnitud en las inmediaciones de la subestación eléctrica número 3, en el municipio Lagunillas, cuando las llamas surgieron de un canal de desagüe con restos de crudo, dejando sin suministro eléctrico a la zona (El Pitazo; Noticia al Dia).\n\nEn el Táchira, el 5 de octubre se activó un operativo de emergencia para sofocar un incendio en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta). El fuego amenazó a las comunidades adyacentes y requirió la intervención de los organismos de prevención y rescate (Diario La Nacion).\n\nEl estado Falcón registró dos reportes independientes del mismo incendio en la refinería Cardón, parte del Centro Refinador de Paraguaná. Según El Pitazo, tres explosiones precedieron a las llamas que obligaron a paralizar las operaciones el 6 de octubre; el incendio fue controlado por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo). Runrun.es confirmó que la causa fue la rotura de una línea de gas natural, lo que llevó a la paralización temporal de la refinería hasta garantizar su arranque seguro (Runrun.es).",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron siete incendios de alta severidad en distintas regiones del país, una disminución notable respecto a los diecinueve eventos del mes anterior (2026‑09). Esta reducción se refleja en la menor frecuencia de incidentes, aunque los siniestros que ocurrieron implicaron daños materiales significativos y la movilización de recursos de emergencia.\n\nEn el Distrito Capital, un incendio consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, afectando aproximadamente 40 m² del área de comedor (Reporte Confidencial). El mismo hecho fue reportado también por El Pitazo, que confirmó la magnitud del siniestro en la capital (El Pitazo).\n\nEn el estado Zulia, se produjo un incendio de vegetación y residuos petroleros en la parte posterior de la subestación eléctrica número 3, en el municipio Lagunillas, generando alarma y dejando sin suministro eléctrico a la población local (Noticia al Dia).\n\nEn el estado Táchira, las autoridades municipales desplegaron un operativo de emergencia para sofocar un incendio que se originó en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta) el 5 de octubre, con el objetivo de evitar impactos ambientales en las comunidades adyacentes (Diario La Nacion).\n\nEn el estado Falcón, usuarios reportaron un incendio en la refinería Cardón del Centro Refinador de Paraguaná, donde se escucharon tres explosiones antes de que se generaran las llamas; el fuego fue controlado alrededor de las 16:00 h por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -24,10 +24,6 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -46,12 +42,12 @@
       "link": "https://reporteconfidencial.info/2026/10/03/incendio-consume-guarderia/"
     },
     {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/622106/refineria-cardon-paralizada-tras-incendio-por-rotura-de-linea-de-gas-natural/"
-    },
-    {
       "nombre": "Diario El Tiempo (Trujillo)",
       "link": "https://diarioeltiempo.com.ve/pdvsa-controla-incendio-en-la-refineria-cardon-tras-rotura-de-una-linea-de-gas-natural/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
     },
     {
       "nombre": "Nuevo Dia (Falcon)",

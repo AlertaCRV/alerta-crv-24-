@@ -1,11 +1,4 @@
 {
-  "orden_publico::Barinas::2026-10-04": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-05T02:08:53.450563+00:00",
-    "fecha_evento_temprana": "2026-10-04T16:11:04+00:00",
-    "municipio": "Barinas"
-  },
   "incendio::Tachira::2026-10-05": {
     "severidad": "alto",
     "confirmado": false,
@@ -49,9 +42,9 @@
     "municipio": null
   },
   "inundacion::Distrito Capital::2026-10-07": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": true,
-    "fecha_deteccion": "2026-10-07T21:32:04.809518+00:00",
+    "fecha_deteccion": "2026-10-08T07:33:22.148954+00:00",
     "fecha_evento_temprana": "2026-10-07T20:03:44+00:00",
     "municipio": "Libertador"
   },
@@ -63,9 +56,9 @@
     "municipio": "Valera"
   },
   "salud_publica::Anzoategui::2026-10-07": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-08T01:18:04.654347+00:00",
+    "fecha_deteccion": "2026-10-08T07:34:45.733040+00:00",
     "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
     "municipio": null
   },
@@ -75,5 +68,19 @@
     "fecha_deteccion": "2026-10-07T21:32:52.728016+00:00",
     "fecha_evento_temprana": "2026-10-07T16:30:00+00:00",
     "municipio": "Tovar"
+  },
+  "deslizamiento::Aragua::2026-10-08": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-08T07:33:43.763093+00:00",
+    "fecha_evento_temprana": "2026-10-08T01:40:32+00:00",
+    "municipio": "Girardot"
+  },
+  "orden_publico::Falcon::2026-10-08": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-08T07:35:11.523210+00:00",
+    "fecha_evento_temprana": "2026-10-08T03:00:31+00:00",
+    "municipio": null
   }
 }
