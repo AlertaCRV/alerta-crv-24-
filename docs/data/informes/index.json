@@ -265,6 +265,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": true,
+    "generado": "2026-10-08T20:40:49.085774+00:00",
+    "total_eventos": 15
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,

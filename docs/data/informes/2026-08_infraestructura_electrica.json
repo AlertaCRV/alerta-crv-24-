@@ -1,0 +1,89 @@
+{
+  "periodo": "2026-08",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": true,
+  "generado": "2026-10-08T20:40:49.085774+00:00",
+  "actualizado_hasta": "2026-08-30T15:30:08.085005+00:00",
+  "total_eventos": 15,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 1,
+    "actual": 15
+  },
+  "narrativa": "En el mes de agosto de 2026 se registraron quince eventos de fallas eléctricas, frente a solo uno en el período anterior (2026‑07) (Comparación con el período anterior). Este incremento refleja una mayor vulnerabilidad del sistema eléctrico nacional durante el mes.\n\nEl 29 de agosto se produjo un apagón general que dejó sin suministro a cientos de venezolanos en la región occidental, afectando a los estados de Zulia, Táchira, Mérida, Trujillo y Barinas alrededor de las 8:30 p.m., y provocó también la caída de redes móviles en varios sectores (La Nacion). El mismo hecho fue reportado por El Impulso, que indica la interrupción a las 8:38 p.m. y la magnitud del corte (El Impulso). Asimismo, El Periodico de Monagas confirmó que la falla eléctrica colapsó el servicio en esos cinco estados y generó racionamiento previo al apagón (El Periodico de Monagas).\n\nEn el estado Miranda, fuertes lluvias el domingo 1 de agosto provocaron el colapso del servicio eléctrico en miles de hogares de los Altos Mirandinos; un árbol cayó sobre una vivienda en el sector Potrerito y más de una decena de comunidades quedaron sin energía (El Periodico de Monagas). En Monagas, el martes 18 de agosto municipios como Punceres y Bolívar sufrieron apagones masivos y fluctuaciones que se prolongaron más de 12 horas en algunas zonas (El Periodico de Monagas). En la capital, la noche del 1 de agosto residentes de varios sectores, entre ellos El Recreo y La Pastora, reportaron quedarse sin luz tras una fluctuación a las 7 p.m. (El Pitazo).\n\nEl 12 de agosto se registraron fuertes bajones eléctricos en distintas regiones: en Caracas, Valencia (estado Carabobo), Lara y Zulia, según denuncias difundidas en redes sociales (El Pitazo). Más tarde, el 20 de agosto, usuarios de la Gran Caracas y de Miranda reportaron un severo bajón de luz alrededor de las 8:40 p.m., generando preocupación por un posible apagón nacional (La Patilla).\n\nEn el estado Sucre, vecinos de Canchunchú Nuevo y 23 de Enero protestaron la noche del jueves ante un corte eléctrico que duró unas 20 horas, mientras que en la parroquia Bolívar del municipio Bermúdez una caída de líneas de alta tensión dejó sin energía durante 12 horas a comunidades como Playa Grande y bloques de Augusto Malavé (El Tiempo).",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/reportan-apagon-general-en-estados-al-occidente-del-pais-este-29ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/30/cinco-estados-del-occidente-venezolano-quedaron-a-oscuras-por-falla-en-el-servicio-electrico-30ago/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/fuertes-lluvias-causaron-apagones-y-destrozos-en-miranda/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/punceres-y-caripito-sin-luz-por-caida-de-torres-de-alta-tension/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/apagon-afecto-a-cinco-estados-y-provoco-caida-de-redes-moviles/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/ciudadanos-reportan-apagon-en-varias-zonas-de-caracas-la-noche-de-este-1-de-agosto/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-reportan-fuerte-bajon-electrico-en-varias-zonas-de-venezuela-este-12ago/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/sucre-vecinos-de-canchunchu-nuevo-y-23-de-enero-protestaron-por-una-falla-electrica-que-sumaba-unas-20-horas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/caida-de-lineas-dejo-sin-energia-por-12-horas-a-habitantes-de-una-parroquia-en-sucre/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/crece-preocupacion-de-nuevo-apagon-en-venezuela-tras-fuerte-fluctuacion-de-luz-la-noche-del-20ago/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/yaracuy-fuertes-lluvias-y-vientos-derriban-cinco-postes-en-san-felipe/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/apagon-afecta-al-zulia-y-otros-estados-del-occidente-del-pais/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/usuarios-exigen-que-se-determine-las-causas-del-apagon-que-afecto-cinco-estados-del-pais/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/el-zulia-estuvo-en-penumbras-por-varias-horas-apagon-afecto-desde-anoche-a-varios-estados-del-pais/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/01/reportan-falla-electrica-en-varios-sectores-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/falla-electrica-afecta-varios-sectores-del-centro-de-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fallas-electricas-afectan-suministro-de-agua-en-trujillo/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/yaracuy/local/falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable/?utm_source=rss&utm_medium=rss&utm_campaign=falla-electrica-en-planta-potabilizadora-mantiene-a-seis-municipios-de-yaracuy-sin-servicio-de-agua-potable"
+    }
+  ]
+}
