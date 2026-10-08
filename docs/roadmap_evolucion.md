@@ -9758,3 +9758,15 @@ evaluar extender la extracción a otros tipos propensos a notas generales
 **Corrección retroactiva**: se retiraron las 2 alertas (la duplicada de Cardón del 07-10 y la de Anzoátegui) de `docs/data/noticias.json`, sus 2+2 registros de `data/historico_eventos.jsonl` y `data/historico_fuentes_texto.jsonl`; se regeneró `docs/data/estadisticas.json`. Las claves de `publicados.json` se conservan para que el bot no las republique. Se mantiene la alerta original del 06-10 (3 fuentes, sin parroquia).
 
 **Revisado y sin cambios**: orden_publico Yaracuy (protesta con cierre de vía por falta de agua y luz, texto de La Piedra, San José de la Costa; es un corte concreto, coherente con la decisión del usuario del 07-10), inundación Caracas, rayo en Tovar, salud Trujillo, cierre de vía en Guaca, crecida del Manzanares, incendio Manorta.
+
+## Auditoría diaria 08-10-2026: reaparición de la alerta de Anzoátegui y dudas de severidad (pendiente de decidir)
+
+**Hallazgos** (alertas del 07-08/10 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **La alerta retirada de salud pública Anzoátegui volvió a publicarse**: tras el retiro del 07-10 (tarde) el bot la regeneró (`salud_publica::Anzoategui::2026-10-07`, detectada 08-10 03:34 local, 1 fuente: La Prensa de Lara, nota sobre intoxicaciones en Lara/Trujillo que menciona al final la intoxicación del 03-10 en Puerto Píritu). Conservar la clave en `publicados.json` no impidió la republicación (el cluster se rearmó con el mismo artículo). Por tanto el retiro retroactivo no basta: hace falta el filtro de raíz ya propuesto (extender `TIPOS_VERIFICACION_POR_EXTRACCION` a `salud_publica`, o una regla determinista de "mención incidental de otro estado con fecha anterior"). **No se aplicó de forma autónoma** porque implica decidir si se amplía el uso de la IA a un tipo más; la alerta se deja publicada hasta que el usuario decida.
+2. **orden_publico Zulia, severidad alta** (Noticia al Día, 08-10): detenciones por tres casos de violencia de género (apuñalamiento, golpiza a una hija, agresión a pareja) en Maracaibo y Colón. Es un parte policial de delitos individuales, no una emergencia de orden público; la severidad "alta" no tiene base clara. Duda de criterio (¿los sucesos policiales individuales entran en `orden_publico`?), pendiente de discutir.
+3. **deslizamiento Aragua, severidad alta** (El Siglo): la nota habla de anegaciones y derrumbes por la Onda Tropical 55 y afirma "no se reportaron víctimas ni pérdidas humanas"; severidad alta posiblemente excesiva. Pendiente de discutir.
+
+**Revisado y sin cambios**: inundación Caracas (3 fuentes), rayo en Tovar, salud Trujillo (Valera), agua Guaca (Bermúdez, Sucre), protestas Coro, marcha de familiares de presos políticos en Caracas.
+
+No se modificó código ni datos en esta corrida.
