@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-08T07:35:13.133130+00:00",
+  "actualizado": "2026-10-08T15:00:08.308432+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-08T03:00:31+00:00"
+    "hasta": "2026-10-08T13:48:33+00:00"
   },
-  "total_eventos": 432,
+  "total_eventos": 434,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 75,
     "infraestructura_electrica": 38,
     "deslizamiento": 31,
     "colapso_estructural": 4,
-    "orden_publico": 142,
+    "orden_publico": 144,
     "salud_publica": 14,
     "crisis_migratoria": 6,
     "incendio": 48,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 39,
+      "total": 40,
       "confirmados": 7,
       "por_severidad": {
         "medio": 16,
         "critico": 4,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 9
+        "alto": 10
       },
       "severidad_dominante": "critico"
     },
@@ -175,6 +175,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 14,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 3,
+        "medio": 4,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Trujillo",
       "total": 13,
       "confirmados": 0,
@@ -196,18 +208,6 @@
         "critico": 1,
         "alto": 1,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Falcon",
-      "total": 13,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 2,
-        "medio": 4,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -337,7 +337,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 16,
+      "orden_publico": 17,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -436,7 +436,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -511,10 +511,10 @@
     }
   },
   "por_severidad": {
-    "alto": 101,
+    "alto": 102,
     "critico": 51,
     "medio": 145,
-    "bajo": 126,
+    "bajo": 127,
     "sin_clasificar": 9
   },
   "serie_mensual_por_tipo": {
@@ -550,7 +550,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 77,
-      "2026-10": 19
+      "2026-10": 21
     },
     "salud_publica": {
       "2026-07": 1,
