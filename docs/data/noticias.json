@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/",
+        "fecha": "2026-10-07T20:33:03+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-07T20:33:03+00:00",
+    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
+    "fecha_deteccion": "2026-10-08T01:18:04.654347+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Anzoategui::2026-10-07",
+    "titulo": "Salud pública en Anzoategui",
+    "texto": "📌 Salud pública en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 07/10/2026, 4:33 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 9:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -2161,57 +2187,5 @@
     "clave_dedup": "orden_publico::Monagas::2026-09-23",
     "titulo": "Orden público en Municipio Maturín, Monagas",
     "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 23/09/2026, 7:37 p.m.\n🔎 Detectado por el sistema: 24/09/2026, 1:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=trabajadores-y-jubilados-de-monagas-marcharan-este-jueves-para-exigir-reivindicaciones-laborales"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/frontera/incendio-de-vegetacion-en-via-hacia-las-adjuntas/",
-        "fecha": "2026-09-23T19:51:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-23T19:51:59+00:00",
-    "fecha_evento_temprana": "2026-09-23T19:51:59+00:00",
-    "fecha_deteccion": "2026-09-24T00:37:19.002681+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Tachira::2026-09-23",
-    "titulo": "Incendio en Tachira",
-    "texto": "📌 Incendio en Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 23/09/2026, 3:51 p.m.\n🔎 Detectado por el sistema: 23/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/incendio-de-vegetacion-en-via-hacia-las-adjuntas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Yaracuy al Dia",
-        "link": "https://yaracuyaldia.com/venezuela/en-lara-habitantes-de-pozo-guapo-trancan-carretera-centroccidental-por-fallas-de-servicio-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-lara-habitantes-de-pozo-guapo-trancan-carretera-centroccidental-por-fallas-de-servicio-de-agua",
-        "fecha": "2026-09-23T19:18:29+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-23T19:18:29+00:00",
-    "fecha_evento_temprana": "2026-09-23T19:18:29+00:00",
-    "fecha_deteccion": "2026-09-24T00:37:40.086885+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-23",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 23/09/2026, 3:18 p.m.\n🔎 Detectado por el sistema: 23/09/2026, 8:37 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/en-lara-habitantes-de-pozo-guapo-trancan-carretera-centroccidental-por-fallas-de-servicio-de-agua/?utm_source=rss&utm_medium=rss&utm_campaign=en-lara-habitantes-de-pozo-guapo-trancan-carretera-centroccidental-por-fallas-de-servicio-de-agua"
   }
 ]

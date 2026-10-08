@@ -1,0 +1,93 @@
+{
+  "periodo": "2026-09",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": true,
+  "generado": "2026-10-08T01:20:20.061234+00:00",
+  "actualizado_hasta": "2026-09-30T01:38:03.596969+00:00",
+  "total_eventos": 22,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 15,
+    "actual": 22
+  },
+  "narrativa": "En el mes de septiembre de 2026 se registraron 22 fallas eléctricas, superando los 15 eventos del mes anterior (agosto 2026) (15 evento(s) registrados entonces vs. 22 en este período). Las interrupciones afectaron a varios estados del país, generando apagones prolongados, daños materiales y, en algunos casos, víctimas fatales.\n\nLa falla eléctrica de severidad crítica en Táchira dejó a la población sin suministro durante varias horas, con fluctuaciones de voltaje que provocaron el parpadeo constante de la iluminación doméstica (Diario La Nacion (Tachira)). En Yaracuy, un accidente mortal se produjo cuando una guaya de alta tensión cayó sobre un peatón, resultando en la muerte de José Meleán Camacho, conocido como \"Pinky\" (La Prensa de Lara). Ambos incidentes fueron catalogados como críticos por las autoridades locales.\n\nEn Mérida, un cortocircuito provocó el apagón del aeropuerto Juan Pablo Pérez Alfonso, obligando a suspender vuelos y generando importantes retrasos en la región (Reporteros de Merida). En Zulia, intensas precipitaciones del 20 de septiembre desencadenaron fallas que afectaron 79 circuitos eléctricos, acompañadas de inundaciones en varios barrios (El Pitazo). En Lara, se reportaron fallas de alto nivel que impactaron el suministro eléctrico, según información del mismo medio (El Pitazo). En la isla de Margarita, Nueva Esparta sufrió apagones debido a una limitación de energía en el cable submarino que redujo el suministro a 30 MW (Reporte Confidencial (Nueva Esparta)). En el Distrito Capital, fuertes lluvias provocaron caídas de árboles y fallas eléctricas que dejaron sin luz a varios sectores de Caracas (Yaracuy al Dia). Finalmente, en Aragua, el temporal generó inundaciones, caída de árboles y fallas eléctricas que afectaron la infraestructura local (La Prensa de Monagas).\n\nEn conjunto, el incremento de incidentes eléctricos durante septiembre evidencia la vulnerabilidad del sistema energético venezolano ante fenómenos climáticos y fallas de infraestructura. La Cruz Roja Venezolana continúa monitoreando la situación, brindando apoyo a las comunidades afectadas y coordinando acciones de respuesta para mitigar los efectos de estos apagones.",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/reportan-apagon-en-tachira-y-otros-estados-de-venezuela-tras-fuertes-bajones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/reportan-fallas-electricas-y-anegaciones-en-sectores-de-zulia-tras-fuertes-precipitaciones-de-este-20-de-septiembre/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/en-plena-dialisis-se-va-la-electricidad-en-barquisimeto-42-pacientes-se-quedan-sin-tratamiento/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/sucesos/hombre-electrocutado-cable-yaracuy/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/temporal-en-aragua-deja-calles-inundadas-fallas-electricas-y-17-arboles-caidos/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/arboles-caidos-anegaciones-y-fallas-electricas-deja-aguacero-en-caracas/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/09/24/apagones-en-margarita/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/cortocircuito-genero-apagon-en-el.html"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep/?utm_source=rss&utm_medium=rss&utm_campaign=arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/oposicion-denuncia-un-apagon-en-varias-regiones-del-pais/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/mas-de-200-hogares-sin-electricidad-en-la-unidad-vecinal-por-explosion-de-transformador/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/bajones-electricos-y-racionamientos-reportan-ciudadanos-en-caracas-y-11-estados-del-pais/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/otro-bajon-electrico-se-registra-en-venezuela-ciudadanos-reportan-fallas-en-al-menos-11-estados-este-8sep/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/se-me-va-a-quemar-la-nevera-ciudadanos-reportan-festival-de-bajones-electricos-en-venezuela-este-15sep/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/apagon-dejo-sin-electricidad-a-dos-municipios-de-barinas-140-mil-habitantes-reclaman-por-las-fallas-de-luz/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/nuevo-apagon-dejo-a-cantaura-sin-luz-durante-dos-horas/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/usuarios-servicio-electrico-lluvias/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/registran-fluctuaciones-electricas/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/explosion-en-subestacion-electrica-afecta-el-servicio-en-ciudad-ojeda/"
+    }
+  ]
+}

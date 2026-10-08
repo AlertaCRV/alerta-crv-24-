@@ -1,11 +1,4 @@
 {
-  "orden_publico::Yaracuy::2026-10-04": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-04T23:13:30.322361+00:00",
-    "fecha_evento_temprana": "2026-10-04T21:24:31+00:00",
-    "municipio": "Peña"
-  },
   "orden_publico::Barinas::2026-10-04": {
     "severidad": "bajo",
     "confirmado": false,
@@ -70,9 +63,9 @@
     "municipio": "Valera"
   },
   "salud_publica::Anzoategui::2026-10-07": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-07T21:32:41.046406+00:00",
+    "fecha_deteccion": "2026-10-08T01:18:04.654347+00:00",
     "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
     "municipio": null
   },
