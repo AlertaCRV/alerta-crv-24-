@@ -1,0 +1,177 @@
+{
+  "periodo": "2026-07",
+  "tipo": "general",
+  "tipo_label": "Todas las categorías",
+  "cerrado": true,
+  "generado": "2026-10-08T01:18:32.235187+00:00",
+  "actualizado_hasta": "2026-08-01T00:15:34.034890+00:00",
+  "total_eventos": 24,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 24
+  },
+  "narrativa": "En el mes de julio de 2026 se registraron un total de 24 eventos de emergencia en Venezuela, frente a ninguno en el mes anterior (2026‑06) (0 evento(s) registrados entonces vs. 24 en este período). La diversidad de fenómenos incluyó tormentas eléctricas, inundaciones, deslizamientos de tierra, derrumbes e incendios, afectando a varias regiones del país.\n\nUna tormenta eléctrica de alta severidad impactó el Aeropuerto Internacional Arturo Michelena en Valencia, estado Carabobo, dejando nueve personas heridas (Turimiquire (Sucre)). En el estado Lara, una crecida súbita del río La Miel provocó una inundación crítica que resultó en la muerte de una niña en el municipio Simón Planas (Noticia al Dia (Zulia)).\n\nEn el Distrito Capital se reportaron deslizamientos y derrumbes asociados al paso de la Onda Tropical N.º 30, generando lesiones y daños en distintas zonas de Caracas (La Prensa de Monagas). En el estado Táchira, un deslizamiento de terreno destruyó un tramo de la vía principal que conecta con la población El Torbes, dejando incomunicadas a más de 1.300 familias (La Patilla).\n\nAsimismo, se registraron incendios de alta severidad. En Caracas, una fuga de gas provocó una explosión que dejó dos heridos y daños materiales en la avenida Nueva Granada (La Prensa de Lara). En el estado Miranda, un incendio en una librería del Centro Comercial Ciudad Tamanaco (CCCT) afectó a cinco personas por inhalación de monóxido de carbono (La Verdad (Zulia)).",
+  "fuentes": [
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/30/alerta-en-tachira-al-menos-1-300-familias-incomunicadas-y-varias-damnificadas-deja-deslizamiento-de-terreno/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/caracas-fuga-de-gas-explosion-heridos/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/nina-muere-ahogada-tras-crecida-repentina-del-rio-la-miel-en-el-estado-lara/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/paso-de-la-onda-tropical-n-o-30-causa-anegaciones-derrumbes-y-lesionados-en-caracas-y-varios-estados/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/controlan-con-exito-incendio-registrado-en-un-local-comercial-del-ccct-de-caracas/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/reportan-5-personas-afectadas-tras-el-incendio-en-una-libreria-del-ccct/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/nina-muere-ahogada-tras-crecida-subita-del-rio-la-miel-en-lara/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/29/explosion-por-fuga-de-gas-deja-dos-heridos-y-danos-materiales-en-la-avenida-nueva-granada-en-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/30/reportan-incendio-en-el-ccct-en-caracas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/dos-heridos-por-deflagracion-de-bombonas-de-gas-en-caracas/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/07/31/ccct/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/07/26/nueve-heridos-por-el-impacto-de-rayo-en-el-aeropuerto-de-valencia-estado-carabobo/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/las-intensas-lluvias-causan-deslizamientos-y-desbordamiento-de-quebradas-en-bocono/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/deslizamiento-de-tierra-bloquea-el-paso-en-la-carretera-barinas-merida/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/no-hay-paso-de-vehiculos-entre-barinas-y-merida/"
+    },
+    {
+      "nombre": "Efecto Cocuyo - General",
+      "link": "https://efectococuyo.com/la-humanidad/restablecen-parcialmente-paso-entre-merida-y-barinas-tras-deslizamientos-por-lluvias/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/lluvias-ocasionaron-inundaciones-y-deslizamientos-de-tierra-en-varios-puntos-de-caracas-y-la-guaira/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/26/lluvias-torrenciales-causaron-inundaciones-y-deslizamientos-en-caracas-y-la-guaira-este-sabado-26jul/"
+    },
+    {
+      "nombre": "El Luchador (Bolivar)",
+      "link": "https://elluchador.info/?p=316662"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/nino-de-cinco-anos-mueres-tras-colapso-de-vivienda-en-zulia/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-incendio-en-centro-comercial-de-la-isla-de-margarita/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/incendio-consumio-tres-locales-en-la-avenida-bolivar-de-porlamar/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-con-vientos-huracanados-azotan-a-maracaibo-comunidades-estan-inundadas-y-sin-electricidad/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/lluvias-ocasionaron-grandes-inundaciones-varios-puntos-caracas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/tormenta-electrica-con-vientos-huracanados-causan-estragos-en-el-estado-zulia/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/fuertes-lluvias-provocaron-inundaciones-y-fallas-electricas-en-varios-sectores-de-cumana/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/fuerte-lluvia-inundo-casas-y-canadas-en-maracaibo/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/palo-de-agua-acompanado-de-tormenta-electrica-inundo-calles-casas-y-canadas-en-maracaibo/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/26/restricciones-viales-entre-merida-y-barinas-por-deslizamientos-tras-fuertes-precipitaciones/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/reabrieron-el-paso-por-la-carretera-merida-barinas-tras-remover-derrumbe-en-el-sector-el-celoso/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/27/aguacero-causa-inundaciones-y-deja-sin-electricidad-a-gran-parte-del-zulia-este-26jul/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/29/inundacion-afecta-a-productores-agropecuarios-de-los-sectores-anaro-y-maporal-en-barinas/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/07/31/convirtieron-un-tractor-en-ambulancia-porque-la-via-estaba-intransitable-en-moroturo/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-electricas-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-inundaciones-puntos-de-caracas/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/torrencial-aguacero-con-rafagas-de-viento-causaron-inundaciones-y-fallas-electricas-en-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/voraz-incendio-consume-reconocido-centro-comercial-en-la-isla-de-margarita-video/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/guajira-permanece-sin-electricidad-tras-la-tormenta/"
+    }
+  ]
+}

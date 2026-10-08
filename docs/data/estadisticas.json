@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-07T23:12:40.509640+00:00",
+  "actualizado": "2026-10-08T01:18:05.306046+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-07T21:07:26+00:00"
   },
-  "total_eventos": 427,
+  "total_eventos": 428,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 74,
@@ -12,7 +12,7 @@
     "deslizamiento": 30,
     "colapso_estructural": 4,
     "orden_publico": 141,
-    "salud_publica": 12,
+    "salud_publica": 13,
     "crisis_migratoria": 6,
     "incendio": 48,
     "vialidad": 20,
@@ -175,6 +175,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Anzoategui",
+      "total": 13,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 3,
+        "critico": 2,
+        "bajo": 4,
+        "medio": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Bolivar",
       "total": 13,
       "confirmados": 1,
@@ -196,18 +208,6 @@
         "bajo": 4,
         "medio": 5,
         "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 12,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 4,
-        "medio": 4
       },
       "severidad_dominante": "critico"
     },
@@ -398,7 +398,8 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "salud_publica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -510,7 +511,7 @@
     }
   },
   "por_severidad": {
-    "alto": 99,
+    "alto": 100,
     "critico": 51,
     "medio": 142,
     "bajo": 126,
@@ -554,7 +555,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 1
+      "2026-10": 2
     },
     "crisis_migratoria": {
       "2026-07": 4,

@@ -3,16 +3,28 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-07T02:25:05.973042+00:00",
-  "actualizado_hasta": "2026-10-06T19:06:30.528938+00:00",
-  "total_eventos": 2,
+  "generado": "2026-10-08T01:21:46.202282+00:00",
+  "actualizado_hasta": "2026-10-07T21:32:04.809518+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron únicamente dos eventos de inundación, una disminución notable respecto a los 16 eventos registrados en septiembre de 2026 (16 evento(s) registrados entonces vs. 2 en este período). Esta reducción se refleja en los reportes de la prensa local, que describen los incidentes más relevantes del período.\n\nEl primer incidente ocurrió en el estado Sucre, donde el río Manzanares se desbordó tras varias horas de intensas precipitaciones, dejando varias viviendas afectadas a lo largo de su cauce (La Verdad de Monagas). Las autoridades locales reportaron que el aumento del caudal del río provocó daños materiales en viviendas situadas en zonas ribereñas, aunque no se reportaron víctimas mortales ni heridos graves.\n\nEl segundo evento se dio en el estado Portuguesa, específicamente en la ciudad de Guanare. El viernes 2 de octubre, fuertes lluvias inundaron el salón de la Escuela Básica Estadal Virginia Ramos, ubicada en el sector Buenos Aires de la ciudad, obligando a los alumnos de 5.º grado “A” a recibir clases con los pies sumergidos en agua (Portuguesa Reporta). Un video difundido por usuarios mostró el aula anegada y a los estudiantes intentando continuar la lección bajo esas condiciones, evidenciando la vulnerabilidad de la infraestructura escolar ante las lluvias recurrentes.\n\nA pesar de la baja cantidad de eventos registrados, la Cruz Roja Venezolana mantiene la vigilancia activa en ambas regiones, coordinando acciones de prevención y asistencia para minimizar el impacto de futuras crecidas y garantizar la seguridad de la población afectada.",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron tres eventos de inundación, una disminución notable respecto a los dieciséis eventos reportados en septiembre de 2026 (Comparación con el período anterior). Esta reducción se observa a pesar de la persistencia de lluvias intensas en varias regiones del país.\n\nEn el Distrito Capital, las fuertes precipitaciones del 7 de octubre provocaron una inundación de alta severidad que afectó aproximadamente a 80 viviendas en la calle El Colegio, sector Prados de María, en la parroquia Santa Rosalía (El Pitazo). Además, se reportó el colapso de vías, caída de árboles en El Junquito y restricciones en la carretera Panamericana, generando deslizamientos y daños materiales en varios sectores de Caracas (El Pitazo). El medio El Impulso también confirmó la presencia de inundaciones y el colapso vial en distintas zonas de la capital el mismo día (El Impulso).\n\nFuera de la capital, la crecida del río Manzanares en el municipio Sucre del estado Monagas dejó varias viviendas afectadas, consecuencia de las continuas horas de fuertes precipitaciones (La Verdad de Monagas). En el estado Portuguesa, los alumnos de quinto grado de la Escuela Básica Estadal Virginia Ramos, ubicada en el sector Buenos Aires de Guanare, tuvieron que asistir a clases con los pies en el agua después de que su salón se anegara tras las lluvias del 2 de octubre (Portuguesa Reporta). Otros reportes de ciudadanos y organismos de monitoreo señalaron anegaciones y colapso vial en diversas parroquias de Caracas, confirmando la extensión de los efectos de las lluvias en la capital (Yaracuy al Dia).",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/07/video-fuertes-lluvias-provocan-inundaciones-en-varias-zonas-de-caracas-7oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas"
+    },
     {
       "nombre": "La Verdad de Monagas",
       "link": "https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/"

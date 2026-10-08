@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-07",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": true,
+  "generado": "2026-10-08T01:18:44.959563+00:00",
+  "actualizado_hasta": "2026-07-27T16:02:12.489573+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-06",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el mes de julio de 2026 se registró un único evento de falla eléctrica, según la comparación proporcionada (0 evento(s) registrados entonces vs. 1 en este período). Este hecho marca la primera incidencia de este tipo en el período analizado, ya que en junio de 2026 no se reportó ninguna falla eléctrica.\n\nEl 26 de julio, la noche del domingo, la onda tropical número 30 atravesó el estado Zulia provocando intensas precipitaciones, fuertes ráfagas de viento y descargas eléctricas que generaron apagones de más de 12 horas en varios municipios, entre ellos Maracaibo, San Francisco, Cabimas, Mara y La Cañada de Urdaneta (Diario La Nacion). Las condiciones meteorológicas extremas dejaron a múltiples sectores a oscuras durante un período prolongado (Diario La Nacion).\n\nAnte la magnitud del fenómeno, las autoridades activaron de inmediato el Sistema Regional de Gestión de Riesgo para coordinar la atención y mitigación de los efectos, incluyendo los destrozos y fallas eléctricas reportados (Noticias de Aqui). El impulso de la cobertura mediática también resaltó la duración de los apagones y la extensión de la zona afectada (El Impulso; Noticias de Aqui).",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27ju/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/07/27/video-torrenciales-lluvias-y-apagones-de-mas-de-12-horas-azotan-al-zulia-por-paso-de-la-onda-tropical-numero-30-27jul/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/07/27/onda-tropical-n-30-provoco-intensas-lluvias-destrozos-y-fallas-electricas-en-el-zulia/"
+    }
+  ]
+}
