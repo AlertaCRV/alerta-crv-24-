@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-09T00:50:33.043863+00:00",
+  "actualizado": "2026-10-09T06:50:51.607273+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-08T22:28:20+00:00"
+    "hasta": "2026-10-09T01:54:21+00:00"
   },
-  "total_eventos": 433,
+  "total_eventos": 438,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 76,
-    "infraestructura_electrica": 39,
+    "infraestructura_electrica": 40,
     "deslizamiento": 31,
     "colapso_estructural": 4,
-    "orden_publico": 143,
+    "orden_publico": 145,
     "salud_publica": 12,
     "crisis_migratoria": 6,
-    "incendio": 48,
+    "incendio": 50,
     "vialidad": 20,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 78,
+      "total": 79,
       "confirmados": 11,
       "por_severidad": {
         "alto": 15,
-        "medio": 20,
+        "medio": 21,
         "bajo": 27,
         "critico": 12,
         "sin_clasificar": 4
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 39,
+      "total": 40,
       "confirmados": 7,
       "por_severidad": {
-        "medio": 16,
+        "medio": 17,
         "critico": 4,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -163,6 +163,19 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Bolivar",
+      "total": 14,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 3,
+        "medio": 8,
+        "critico": 1,
+        "alto": 1,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Falcon",
       "total": 14,
       "confirmados": 3,
@@ -183,19 +196,6 @@
         "bajo": 3,
         "critico": 1,
         "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 13,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 3,
-        "medio": 7,
-        "critico": 1,
-        "alto": 1,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -261,12 +261,12 @@
     },
     {
       "estado": "Apure",
-      "total": 8,
+      "total": 9,
       "confirmados": 0,
       "por_severidad": {
         "alto": 4,
         "bajo": 2,
-        "medio": 1,
+        "medio": 2,
         "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
@@ -303,10 +303,11 @@
     },
     {
       "estado": "Amazonas",
-      "total": 1,
+      "total": 2,
       "confirmados": 0,
       "por_severidad": {
-        "critico": 1
+        "critico": 1,
+        "medio": 1
       },
       "severidad_dominante": "critico"
     }
@@ -338,7 +339,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 16,
+      "orden_publico": 17,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -351,7 +352,7 @@
       "deslizamiento": 4,
       "inundacion": 15,
       "orden_publico": 25,
-      "incendio": 16,
+      "incendio": 17,
       "vialidad": 4,
       "infraestructura_electrica": 8,
       "colapso_estructural": 1,
@@ -391,7 +392,7 @@
       "orden_publico": 1,
       "infraestructura_agua": 1,
       "sequia": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 2
     },
     "Anzoategui": {
       "crisis_migratoria": 1,
@@ -415,7 +416,7 @@
     "Bolivar": {
       "orden_publico": 6,
       "escasez_combustible": 2,
-      "incendio": 2,
+      "incendio": 3,
       "inundacion": 1,
       "deslizamiento": 1,
       "infraestructura_agua": 1
@@ -508,13 +509,14 @@
       "crisis_migratoria": 1
     },
     "Amazonas": {
-      "salud_publica": 1
+      "salud_publica": 1,
+      "orden_publico": 1
     }
   },
   "por_severidad": {
     "alto": 100,
     "critico": 50,
-    "medio": 145,
+    "medio": 150,
     "bajo": 128,
     "sin_clasificar": 10
   },
@@ -535,7 +537,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 1
+      "2026-10": 2
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -552,7 +554,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 21
+      "2026-10": 23
     },
     "salud_publica": {
       "2026-07": 1,
@@ -569,7 +571,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 7
+      "2026-10": 9
     },
     "vialidad": {
       "2026-08": 10,
