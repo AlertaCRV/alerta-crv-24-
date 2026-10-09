@@ -1,11 +1,4 @@
 {
-  "incendio::Falcon::2026-10-06": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-06T23:03:52.101143+00:00",
-    "fecha_evento_temprana": "2026-10-06T20:17:23+00:00",
-    "municipio": null
-  },
   "infraestructura_agua::Sucre::2026-10-07": {
     "severidad": "medio",
     "confirmado": false,
@@ -105,10 +98,24 @@
     "municipio": null
   },
   "orden_publico::Falcon::2026-10-09": {
-    "severidad": "medio",
+    "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-09T13:52:47.132910+00:00",
+    "fecha_deteccion": "2026-10-09T23:27:41.608404+00:00",
     "fecha_evento_temprana": "2026-10-09T13:50:19+00:00",
     "municipio": "Falcón"
+  },
+  "deslizamiento::Bolivar::2026-10-09": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T23:26:55.238755+00:00",
+    "fecha_evento_temprana": "2026-10-09T22:08:34+00:00",
+    "municipio": "El Callao"
+  },
+  "deslizamiento::La Guaira::2026-10-09": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T23:26:59.166674+00:00",
+    "fecha_evento_temprana": "2026-10-09T22:08:34+00:00",
+    "municipio": null
   }
 }
