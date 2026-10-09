@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-09T00:47:08.893252+00:00",
+  "actualizado": "2026-10-09T00:50:33.043863+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-08T19:51:06+00:00"
+    "hasta": "2026-10-08T22:28:20+00:00"
   },
-  "total_eventos": 431,
+  "total_eventos": 433,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 75,
-    "infraestructura_electrica": 38,
+    "inundacion": 76,
+    "infraestructura_electrica": 39,
     "deslizamiento": 31,
     "colapso_estructural": 4,
     "orden_publico": 143,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 77,
+      "total": 78,
       "confirmados": 11,
       "por_severidad": {
-        "alto": 14,
+        "alto": 15,
         "medio": 20,
         "bajo": 27,
         "critico": 12,
@@ -261,12 +261,13 @@
     },
     {
       "estado": "Apure",
-      "total": 7,
+      "total": 8,
       "confirmados": 0,
       "por_severidad": {
         "alto": 4,
         "bajo": 2,
-        "medio": 1
+        "medio": 1,
+        "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
     },
@@ -348,7 +349,7 @@
     },
     "Distrito Capital": {
       "deslizamiento": 4,
-      "inundacion": 14,
+      "inundacion": 15,
       "orden_publico": 25,
       "incendio": 16,
       "vialidad": 4,
@@ -389,7 +390,8 @@
       "inundacion": 3,
       "orden_publico": 1,
       "infraestructura_agua": 1,
-      "sequia": 1
+      "sequia": 1,
+      "infraestructura_electrica": 1
     },
     "Anzoategui": {
       "crisis_migratoria": 1,
@@ -510,11 +512,11 @@
     }
   },
   "por_severidad": {
-    "alto": 99,
+    "alto": 100,
     "critico": 50,
     "medio": 145,
     "bajo": 128,
-    "sin_clasificar": 9
+    "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -527,12 +529,13 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 4
+      "2026-10": 5
     },
     "infraestructura_electrica": {
       "2026-07": 1,
       "2026-08": 15,
-      "2026-09": 22
+      "2026-09": 22,
+      "2026-10": 1
     },
     "deslizamiento": {
       "2026-07": 3,

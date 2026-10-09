@@ -1,11 +1,4 @@
 {
-  "incendio::Tachira::2026-10-05": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-06T00:13:19.800084+00:00",
-    "fecha_evento_temprana": "2026-10-05T18:01:42+00:00",
-    "municipio": "García De Hevia"
-  },
   "inundacion::Sucre::2026-10-06": {
     "severidad": "medio",
     "confirmado": false,
@@ -42,10 +35,10 @@
     "municipio": null
   },
   "inundacion::Distrito Capital::2026-10-07": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-08T07:33:22.148954+00:00",
-    "fecha_evento_temprana": "2026-10-07T20:03:44+00:00",
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T00:43:07.249916+00:00",
+    "fecha_evento_temprana": "2026-10-08T21:49:13+00:00",
     "municipio": "Libertador"
   },
   "salud_publica::Trujillo::2026-10-07": {
@@ -96,5 +89,12 @@
     "fecha_deteccion": "2026-10-08T20:39:41.437210+00:00",
     "fecha_evento_temprana": "2026-10-08T19:51:06+00:00",
     "municipio": null
+  },
+  "infraestructura_electrica::Apure::2026-10-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T00:43:36.934450+00:00",
+    "fecha_evento_temprana": "2026-10-08T22:28:20+00:00",
+    "municipio": "Biruaca"
   }
 }
