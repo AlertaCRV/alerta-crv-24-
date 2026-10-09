@@ -540,7 +540,10 @@ BLOQUE_SEVERIDAD_TEMPLATE = (
     "personas/infraestructura (ej. un incendio que destruye un inmueble "
     "grande, una vía completamente bloqueada por varios días, decenas de "
     "familias desplazadas, un despliegue de decenas de funcionarios u "
-    "organismos de respuesta).\n"
+    "organismos de respuesta ante daños graves). Un despliegue preventivo o "
+    "de atención de anegaciones/derrumbes menores NO basta para 'alto', y "
+    "si el texto dice expresamente que NO hubo víctimas, heridos ni "
+    "pérdidas humanas, la severidad NUNCA es 'alto' ni 'critico'.\n"
     "- \"medio\": se reportan daños materiales o afectación relevante sin "
     "heridos mencionados (ej. viviendas o cultivos afectados, un servicio "
     "interrumpido con consecuencias visibles).\n"
@@ -626,7 +629,7 @@ def _extraer_municipio_parroquia(respuesta_texto, municipios_validos, parroquias
 # produccion: conservo 75/75 eventos reales de la prueba ciega (dejo pasar
 # 3/75 notas generales) y, sobre las 168 alertas reales, 34/38 eventos reales
 # con solo 14/130 notas generales. Ver roadmap_evolucion.md (07-10-2026).
-TIPOS_VERIFICACION_POR_EXTRACCION = {"infraestructura_electrica"}
+TIPOS_VERIFICACION_POR_EXTRACCION = {"infraestructura_electrica", "salud_publica"}
 
 # Recencia mas holgada que el "24 horas" del prompt general: el articulo
 # puede publicarse a la manana siguiente de un corte nocturno, y en la
@@ -695,6 +698,68 @@ SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE = (
     "true, \"tema_principal\": \"protesta\"}}]}}"
 )
 
+# Variante para salud_publica (08-10-2026). Caso real: la nota de La Prensa
+# de Lara sobre intoxicaciones en escuelas de Lara y Trujillo mencionaba al
+# final, como contexto, una intoxicacion del 03-10 en Anzoategui, y se
+# publico como alerta nueva en Anzoategui (retirada a mano dos veces: el bot
+# la republico). Misma extraccion que la electrica, con otra definicion de
+# "incidente concreto"; "en_estado_asignado" descarta la mencion de otro
+# estado y "reciente" la de un hecho de hace dias.
+SYSTEM_PROMPT_EXTRACCION_SALUD_TEMPLATE = (
+    "Eres el verificador de un sistema de alertas de emergencia de la Cruz "
+    "Roja Venezolana. El sistema SOLO publica alertas de INCIDENTES DE SALUD "
+    "PÚBLICA EN DESARROLLO. Muchas noticias que mencionan 'intoxicación', "
+    "'brote' o 'enfermedad' son notas generales, estadísticas, campañas o "
+    "menciones de pasada de un hecho ocurrido en otro lugar o hace días.\n"
+    "\nRecibes la FECHA Y HORA ACTUAL, el ESTADO ASIGNADO (el estado "
+    "venezolano donde se publicaría la alerta) y una lista numerada de "
+    "fuentes con su fecha de publicación. NO decidas si se publica: para "
+    "CADA fuente, EXTRAE estos datos con honestidad, sin suponer lo que el "
+    "texto no dice:\n"
+    "- incidente_concreto (true/false): ¿la fuente describe un incidente de "
+    "salud pública concreto y delimitado? Cuenta: un brote o epidemia "
+    "confirmado o reportado en un lugar concreto; una intoxicación (masiva "
+    "o en un plantel, comunidad, evento o empresa) con afectados "
+    "identificados; casos de una enfermedad en un lugar concreto atendidos "
+    "ahora; una alerta o cerco sanitario concreto. Es false si habla de la "
+    "situación sanitaria en general, de estadísticas o boletines "
+    "epidemiológicos, de escasez de medicamentos o crisis hospitalaria "
+    "crónica, de campañas o jornadas de vacunación, de una declaración o "
+    "advertencia, de un hecho histórico o de un riesgo futuro.\n"
+    "- momento: cuándo ocurrió el incidente según el texto, o \"\" si no lo "
+    "dice.\n"
+    "- reciente (true/false): ¿el incidente está ocurriendo ahora o empezó "
+    "en las últimas {horas} horas respecto a la FECHA Y HORA ACTUAL? Un "
+    "brote que se reporta como activo cuenta como reciente. Si el texto no "
+    "da ningún momento pero está redactado como noticia del día, responde "
+    "true. Responde false si el incidente es de hace varios días o "
+    "semanas (p. ej. 'el pasado sábado 3 de octubre' en una nota del 7), "
+    "histórico, o futuro/programado.\n"
+    "- en_estado_asignado (true/false): ¿el incidente ocurrió en el ESTADO "
+    "ASIGNADO (incluye sus ciudades y municipios)? Si el estado solo aparece "
+    "como mención de pasada, contexto, comparación o referencia a otro "
+    "caso distinto del tema principal de la nota, responde false.\n"
+    "- tema_principal: uno de incidente, protesta, declaracion, "
+    "reportaje_cronico, impacto_sectorial, anuncio_o_programado, "
+    "historico_o_futuro, otro.\n"
+    "\nFECHA Y HORA ACTUAL: {fecha_hora}\n"
+    "ESTADO ASIGNADO: {estado}\n"
+    "\nDEBES RESPONDER EXCLUSIVAMENTE EN FORMATO JSON, sin texto adicional: "
+    "un objeto con una clave 'fuentes' que contenga una lista de exactamente "
+    "{n} objetos, en el mismo orden en que se dan las fuentes, cada uno con "
+    "las claves incidente_concreto, momento, reciente, en_estado_asignado y "
+    "tema_principal.\n"
+    "Ejemplo con 2 fuentes: {{\"fuentes\": [{{\"incidente_concreto\": true, "
+    "\"momento\": \"ayer\", \"reciente\": true, \"en_estado_asignado\": "
+    "true, \"tema_principal\": \"incidente\"}}, {{\"incidente_concreto\": "
+    "false, \"momento\": \"\", \"reciente\": false, \"en_estado_asignado\": "
+    "true, \"tema_principal\": \"reportaje_cronico\"}}]}}"
+)
+PROMPTS_EXTRACCION = {
+    "infraestructura_electrica": SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE,
+    "salud_publica": SYSTEM_PROMPT_EXTRACCION_SALUD_TEMPLATE,
+}
+
 # Mismos bloques opcionales que el prompt general (municipio/parroquia y
 # severidad), con el ejemplo adaptado a la clave 'fuentes'.
 BLOQUE_UBICACION_EXTRACCION_TEMPLATE = (
@@ -715,6 +780,17 @@ BLOQUE_SEVERIDAD_EXTRACCION = (
     "con consecuencias visibles), \"bajo\" (corte breve o afectación "
     "menor), o null si el texto no da ninguna pista de magnitud."
 )
+BLOQUE_SEVERIDAD_EXTRACCION_SALUD = (
+    "\n\nADEMÁS de la lista 'fuentes': agrega una clave 'severidad' según el "
+    "IMPACTO del incidente: \"critico\" (víctimas fatales o un brote de gran "
+    "magnitud), \"alto\" (varias personas hospitalizadas o en estado grave, "
+    "decenas de afectados), \"medio\" (afectados atendidos con síntomas "
+    "leves o sin hospitalización), \"bajo\" (casos aislados o alerta "
+    "preventiva), o null si el texto no da ninguna pista de magnitud. Si el "
+    "texto dice expresamente que no hubo víctimas ni heridos, nunca "
+    "\"alto\" ni \"critico\"."
+)
+BLOQUES_SEVERIDAD_EXTRACCION = {"salud_publica": BLOQUE_SEVERIDAD_EXTRACCION_SALUD}
 
 
 def _fecha_hora_actual_venezuela():
@@ -846,6 +922,28 @@ def _peso_efectivo(fuente, ubicacion_evento):
     return fuente["peso"] + bono
 
 
+# Caso real (08-10-2026): la IA asigno severidad "alta" a una nota de
+# anegaciones y un deslizamiento en Aragua que decia textualmente "no se
+# reportaron victimas ni perdidas humanas que lamentar" (el despliegue de
+# 150 funcionarios la llevo a 'alto'). Tope determinista: si el texto niega
+# expresamente victimas/heridos, la severidad que propone la IA no puede ser
+# alto ni critico. Solo aplica a la severidad de la IA (que solo se pide
+# cuando ninguna palabra clave la detecto), nunca a la de palabras clave.
+_SIN_VICTIMAS_RE = re.compile(
+    r"\b(no se (han )?(reportaron|reporto|registraron|registro|contabilizaron|contabilizo) "
+    r"(victimas|heridos|lesionados|personas lesionadas|perdidas humanas|fallecidos)|"
+    r"sin (victimas|heridos|lesionados|perdidas humanas|fallecidos)|"
+    r"no hubo (victimas|heridos|lesionados|perdidas humanas|fallecidos)|"
+    r"no (se )?lamentan (victimas|heridos|perdidas humanas))\b"
+)
+
+
+def _limitar_severidad_ia_sin_victimas(severidad_ia, texto_norm):
+    if severidad_ia in ("alto", "critico") and _SIN_VICTIMAS_RE.search(texto_norm):
+        return "medio"
+    return severidad_ia
+
+
 def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_ia=None):
     """error_sistema=True marca que las fuentes no pasaron por un veredicto
     real de la IA (sin API key, respuesta no parseable, o fallo de red/rate
@@ -900,7 +998,7 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_i
     # sobreescribe una severidad ya detectada por palabra clave (esa sigue
     # siendo la fuente primaria, mas determinista y auditable).
     if severidad_final == "sin_clasificar" and severidad_ia:
-        severidad_final = severidad_ia
+        severidad_final = _limitar_severidad_ia_sin_victimas(severidad_ia, texto_aprobados_norm)
     fecha_mas_reciente = max(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
     fecha_mas_temprana = min(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 
@@ -1193,7 +1291,7 @@ def _verificar_por_extraccion(evento, candidatos):
         return None
 
     n = len(candidatos)
-    system_prompt = SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE.format(
+    system_prompt = PROMPTS_EXTRACCION.get(evento["tipo"], SYSTEM_PROMPT_EXTRACCION_ELECTRICA_TEMPLATE).format(
         horas=HORAS_RECENCIA_EXTRACCION, fecha_hora=_fecha_hora_actual_venezuela(),
         estado=evento["ubicacion"], n=n,
     )
@@ -1209,7 +1307,7 @@ def _verificar_por_extraccion(evento, candidatos):
             pedir_ubicacion = False
     pedir_severidad = all(m["severidad"] == "sin_clasificar" for g in candidatos for m in g)
     if pedir_severidad:
-        system_prompt += BLOQUE_SEVERIDAD_EXTRACCION
+        system_prompt += BLOQUES_SEVERIDAD_EXTRACCION.get(evento["tipo"], BLOQUE_SEVERIDAD_EXTRACCION)
 
     contenido_usuario = (
         f"TIPO ASIGNADO POR EL CLASIFICADOR: {evento['tipo']}\n"
