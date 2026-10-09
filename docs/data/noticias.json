@@ -1,6 +1,32 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": "Falcón",
+    "parroquia": "El Vinculo",
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/",
+        "fecha": "2026-10-09T13:50:19+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-09T13:50:19+00:00",
+    "fecha_evento_temprana": "2026-10-09T13:50:19+00:00",
+    "fecha_deteccion": "2026-10-09T13:52:47.132910+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-10-09",
+    "titulo": "Orden público en Parroquia El Vinculo, Municipio Falcón, Falcon",
+    "texto": "📌 Orden público en Parroquia El Vinculo, Municipio Falcón, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia El Vinculo, Municipio Falcón, Falcon\n🕒 Hecho reportado: 09/10/2026, 9:50 a.m.\n🔎 Detectado por el sistema: 09/10/2026, 9:52 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": "Valmore Rodríguez",
     "parroquia": null,
@@ -2037,57 +2063,5 @@
     "clave_dedup": "orden_publico::Zulia::2026-09-25",
     "titulo": "Orden público en Zulia",
     "texto": "📌 Orden público en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 25/09/2026, 6:16 a.m.\n🔎 Detectado por el sistema: 25/09/2026, 12:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/perdidas-millonarias-habitantes-del-eje-panamericano-toman-puente-sobre-el-rio-torondoy-por-crisis-electrica/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/reportan-explosion-de-transformadores-electricos-en-la-calle-paez-de-campo-alegre/",
-        "fecha": "2026-09-25T02:38:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T02:38:23+00:00",
-    "fecha_evento_temprana": "2026-09-25T02:38:23+00:00",
-    "fecha_deteccion": "2026-09-25T11:44:09.673624+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Anzoategui::2026-09-25",
-    "titulo": "Incendio en Anzoategui",
-    "texto": "📌 Incendio en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 24/09/2026, 10:38 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:44 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/reportan-explosion-de-transformadores-electricos-en-la-calle-paez-de-campo-alegre/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/gremios-araguenos-exigieron-mejoras-salariales-y-reivindicaciones-laborales/",
-        "fecha": "2026-09-25T00:51:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T00:51:35+00:00",
-    "fecha_evento_temprana": "2026-09-25T00:51:35+00:00",
-    "fecha_deteccion": "2026-09-25T11:44:41.063683+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Aragua::2026-09-25",
-    "titulo": "Orden público en Aragua",
-    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 24/09/2026, 8:51 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:44 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/gremios-araguenos-exigieron-mejoras-salariales-y-reivindicaciones-laborales/"
   }
 ]

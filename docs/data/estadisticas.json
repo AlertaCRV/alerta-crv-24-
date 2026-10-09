@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-09T06:50:51.607273+00:00",
+  "actualizado": "2026-10-09T13:53:47.256072+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-09T01:54:21+00:00"
+    "hasta": "2026-10-09T13:50:19+00:00"
   },
-  "total_eventos": 438,
+  "total_eventos": 439,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 76,
     "infraestructura_electrica": 40,
     "deslizamiento": 31,
     "colapso_estructural": 4,
-    "orden_publico": 145,
+    "orden_publico": 146,
     "salud_publica": 12,
     "crisis_migratoria": 6,
     "incendio": 50,
@@ -152,6 +152,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Falcon",
+      "total": 15,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 3,
+        "medio": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Sucre",
       "total": 14,
       "confirmados": 0,
@@ -172,18 +184,6 @@
         "critico": 1,
         "alto": 1,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Falcon",
-      "total": 14,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 3,
-        "medio": 4,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -438,7 +438,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -516,7 +516,7 @@
   "por_severidad": {
     "alto": 100,
     "critico": 50,
-    "medio": 150,
+    "medio": 151,
     "bajo": 128,
     "sin_clasificar": 10
   },
@@ -554,7 +554,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 23
+      "2026-10": 24
     },
     "salud_publica": {
       "2026-07": 1,
