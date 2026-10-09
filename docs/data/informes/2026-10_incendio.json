@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-10-08T07:37:12.877647+00:00",
-  "actualizado_hasta": "2026-10-07T16:27:39.650581+00:00",
-  "total_eventos": 7,
+  "generado": "2026-10-09T23:30:46.837522+00:00",
+  "actualizado_hasta": "2026-10-09T06:50:36.307492+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 19,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron siete incendios de alta severidad en distintas regiones del país, una disminución notable respecto a los diecinueve eventos del mes anterior (2026‑09). Esta reducción se refleja en la menor frecuencia de incidentes, aunque los siniestros que ocurrieron implicaron daños materiales significativos y la movilización de recursos de emergencia.\n\nEn el Distrito Capital, un incendio consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, afectando aproximadamente 40 m² del área de comedor (Reporte Confidencial). El mismo hecho fue reportado también por El Pitazo, que confirmó la magnitud del siniestro en la capital (El Pitazo).\n\nEn el estado Zulia, se produjo un incendio de vegetación y residuos petroleros en la parte posterior de la subestación eléctrica número 3, en el municipio Lagunillas, generando alarma y dejando sin suministro eléctrico a la población local (Noticia al Dia).\n\nEn el estado Táchira, las autoridades municipales desplegaron un operativo de emergencia para sofocar un incendio que se originó en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta) el 5 de octubre, con el objetivo de evitar impactos ambientales en las comunidades adyacentes (Diario La Nacion).\n\nEn el estado Falcón, usuarios reportaron un incendio en la refinería Cardón del Centro Refinador de Paraguaná, donde se escucharon tres explosiones antes de que se generaran las llamas; el fuego fue controlado alrededor de las 16:00 h por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron nueve incendios, una reducción respecto a los diecinueve eventos del mes anterior (2026‑09). Aun con la disminución, los incidentes mantuvieron una alta severidad, afectando infraestructura crítica y generando la movilización de cuerpos de bomberos y autoridades de gestión de riesgos.\n\nEn el Distrito Capital se reportaron dos incendios de gran magnitud. El primero, ocurrido el 3 de octubre, consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, en el cuarto piso del Centro Comercial Caracas, dañando aproximadamente 40 m² del área de comedor (Reporte Confidencial). Un segundo informe, proveniente de El Pitazo, también confirmó la existencia de un incendio de alta severidad en la capital, aunque sin detallar la ubicación exacta (El Pitazo).\n\nEn el estado Zulia, un incendio de vegetación y residuos petroleros se desató en la parte posterior de la subestación eléctrica número 3, en el municipio Lagunillas, provocando la intervención de bomberos y la evacuación de áreas circundantes (Noticia al Dia).\n\nEn el Táchira, el 5 de octubre se activó un operativo de emergencia para sofocar un incendio en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta). Las autoridades municipales y los cuerpos de rescate trabajaron para contener las llamas y evitar mayores impactos ambientales en las comunidades adyacentes (Diario La Nacion).\n\nFinalmente, en el estado Falcón, el 6 de octubre se registró un incendio en la refinería Cardón del Centro Refinador de Paraguaná, tras la explosión de tres bombas y la rotura de una línea de gas natural. El fuego fue controlado alrededor de las 16:00 h por bomberos de PDVSA y funcionarios del Sistema Nacional de Gestión de Riesgos, aunque obligó a paralizar temporalmente las operaciones de la planta (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -52,6 +52,10 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/pdvsa-confirma-rotura-en-linea-de-gas-como-causa-del-incendio-en-la-refineria-cardon-comunicado/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/"
     },
     {
       "nombre": "Runrun.es",
