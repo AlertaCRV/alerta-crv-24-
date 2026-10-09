@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-10-09T06:53:32.260048+00:00",
+  "actualizado_hasta": "2026-10-07T21:32:28.991068+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 2,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento de salud pública, lo que representa una disminución respecto al mes anterior, en el que se habían registrado 2 eventos (Comparación con el período anterior (2026-09): 2 evento(s) registrados entonces vs. 1 en este período).\n\nEl único caso reportado corresponde a intoxicaciones en instituciones educativas de los estados Lara y Trujillo, con especial énfasis en Trujillo, donde la severidad fue catalogada como alta (La Prensa de Lara). Según la fuente, al menos tres estudiantes y miembros del personal docente presentaron síntomas de mareo, irritación de las vías respiratorias y náuseas (La Prensa de Lara).\n\nAnte la aparición de los síntomas, los organismos de protección civil y los cuerpos de seguridad procedieron a evacuar los planteles afectados y trasladar a los afectados a centros de salud para su atención médica (La Prensa de Lara). La rápida intervención permitió que los casos fueran atendidos de forma oportuna, evitando mayores complicaciones.\n\nEn conclusión, el período de octubre mostró una reducción en la cantidad de incidentes de salud pública en comparación con septiembre, aunque el evento en Trujillo subraya la necesidad de reforzar las medidas de prevención y respuesta en entornos educativos (La Prensa de Lara).",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
+    }
+  ]
+}

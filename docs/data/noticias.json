@@ -1,5 +1,135 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Zulia",
+    "municipio": "Valmore Rodríguez",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/",
+        "fecha": "2026-10-08T20:42:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-08T20:42:48+00:00",
+    "fecha_evento_temprana": "2026-10-08T20:42:48+00:00",
+    "fecha_deteccion": "2026-10-09T06:48:39.540843+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Zulia::2026-10-08",
+    "titulo": "Orden público en Municipio Valmore Rodríguez, Zulia",
+    "texto": "📌 Orden público en Municipio Valmore Rodríguez, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Valmore Rodríguez, Zulia\n🕒 Hecho reportado: 08/10/2026, 4:42 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:48 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre",
+        "fecha": "2026-10-09T01:54:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-09T01:54:21+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:54:21+00:00",
+    "fecha_deteccion": "2026-10-09T06:49:14.904115+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Amazonas::2026-10-09",
+    "titulo": "Orden público en Amazonas",
+    "texto": "📌 Orden público en Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 08/10/2026, 9:54 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:49 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Apure",
+    "municipio": "Biruaca",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/",
+        "fecha": "2026-10-08T22:28:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-08T22:28:20+00:00",
+    "fecha_evento_temprana": "2026-10-08T22:28:20+00:00",
+    "fecha_deteccion": "2026-10-09T06:49:57.742558+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Apure::2026-10-08",
+    "titulo": "Falla eléctrica en Municipio Biruaca, Apure",
+    "texto": "📌 Falla eléctrica en Municipio Biruaca, Apure\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Biruaca, Apure\n🕒 Hecho reportado: 08/10/2026, 6:28 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:49 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/",
+        "fecha": "2026-10-09T01:28:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-09T01:28:47+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:28:47+00:00",
+    "fecha_deteccion": "2026-10-09T06:50:36.307492+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Bolivar::2026-10-09",
+    "titulo": "Incendio en Bolivar",
+    "texto": "📌 Incendio en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 08/10/2026, 9:28 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:50 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/",
+        "fecha": "2026-10-09T01:28:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-09T01:28:47+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:28:47+00:00",
+    "fecha_deteccion": "2026-10-09T06:50:48.413661+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Distrito Capital::2026-10-09",
+    "titulo": "Incendio en Distrito Capital",
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/10/2026, 9:28 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:50 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -24,32 +154,6 @@
     "clave_dedup": "inundacion::Distrito Capital::2026-10-07",
     "titulo": "Inundación en Parroquia El Valle, Municipio Libertador, Distrito Capital",
     "texto": "📌 Inundación en Parroquia El Valle, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia El Valle, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 08/10/2026, 5:49 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 8:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/08/las-lluvias-de-el-cordonazo-de-san-francisco-provocaron-inundaciones-en-varias-zonas-de-caracas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Apure",
-    "municipio": "Biruaca",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/",
-        "fecha": "2026-10-08T22:28:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-08T22:28:20+00:00",
-    "fecha_evento_temprana": "2026-10-08T22:28:20+00:00",
-    "fecha_deteccion": "2026-10-09T00:43:36.934450+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Apure::2026-10-08",
-    "titulo": "Falla eléctrica en Municipio Biruaca, Apure",
-    "texto": "📌 Falla eléctrica en Municipio Biruaca, Apure\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Biruaca, Apure\n🕒 Hecho reportado: 08/10/2026, 6:28 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 8:43 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/"
   },
   {
     "tipo": "orden_publico",
@@ -1985,88 +2089,5 @@
     "clave_dedup": "orden_publico::Aragua::2026-09-25",
     "titulo": "Orden público en Aragua",
     "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 24/09/2026, 8:51 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 7:44 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/gremios-araguenos-exigieron-mejoras-salariales-y-reivindicaciones-laborales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 1.25,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/jubilados-y-pensionados-denuncian-que-el-salario-en-el-pais-es-algo-simbolico/",
-        "fecha": "2026-09-24T18:29:51+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/trabajadores-marcharon-hacia-el-ministerio-del-trabajo-y-reiteran-que-bono-no-es-salario/",
-        "fecha": "2026-09-24T19:45:31+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T19:45:31+00:00",
-    "fecha_evento_temprana": "2026-09-24T18:29:51+00:00",
-    "fecha_deteccion": "2026-09-25T06:01:23.336508+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-24",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 24/09/2026, 3:45 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:01 a.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/jubilados-y-pensionados-denuncian-que-el-salario-en-el-pais-es-algo-simbolico/\n  • La Manana (Falcon): https://lamananadigital.com/trabajadores-marcharon-hacia-el-ministerio-del-trabajo-y-reiteran-que-bono-no-es-salario/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Yaracuy al Dia",
-        "link": "https://yaracuyaldia.com/venezuela/arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep/?utm_source=rss&utm_medium=rss&utm_campaign=arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep",
-        "fecha": "2026-09-24T21:24:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-24T21:24:43+00:00",
-    "fecha_evento_temprana": "2026-09-24T21:24:43+00:00",
-    "fecha_deteccion": "2026-09-25T06:02:31.442153+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-09-24",
-    "titulo": "Falla eléctrica en Distrito Capital",
-    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 24/09/2026, 5:24 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:02 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep/?utm_source=rss&utm_medium=rss&utm_campaign=arboles-caidos-fallas-electricas-y-anegaciones-en-caracas-y-miranda-tras-fuertes-lluvias-este-24sep"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html",
-        "fecha": "2026-09-25T02:31:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-25T02:31:02+00:00",
-    "fecha_evento_temprana": "2026-09-25T02:31:02+00:00",
-    "fecha_deteccion": "2026-09-25T06:02:56.113432+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Merida::2026-09-25",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 24/09/2026, 10:31 p.m.\n🔎 Detectado por el sistema: 25/09/2026, 2:02 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html"
   }
 ]

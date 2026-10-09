@@ -77,11 +77,11 @@
     "municipio": null
   },
   "orden_publico::Zulia::2026-10-08": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-08T15:00:07.107587+00:00",
-    "fecha_evento_temprana": "2026-10-08T13:48:33+00:00",
-    "municipio": null
+    "fecha_deteccion": "2026-10-09T06:48:39.540843+00:00",
+    "fecha_evento_temprana": "2026-10-08T20:42:48+00:00",
+    "municipio": "Valmore Rodríguez"
   },
   "orden_publico::Distrito Capital::2026-10-08": {
     "severidad": "bajo",
@@ -91,10 +91,31 @@
     "municipio": null
   },
   "infraestructura_electrica::Apure::2026-10-08": {
-    "severidad": "sin_clasificar",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-09T00:43:36.934450+00:00",
+    "fecha_deteccion": "2026-10-09T06:49:57.742558+00:00",
     "fecha_evento_temprana": "2026-10-08T22:28:20+00:00",
     "municipio": "Biruaca"
+  },
+  "orden_publico::Amazonas::2026-10-09": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T06:49:14.904115+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:54:21+00:00",
+    "municipio": null
+  },
+  "incendio::Bolivar::2026-10-09": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T06:50:36.307492+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:28:47+00:00",
+    "municipio": null
+  },
+  "incendio::Distrito Capital::2026-10-09": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-09T06:50:48.413661+00:00",
+    "fecha_evento_temprana": "2026-10-09T01:28:47+00:00",
+    "municipio": null
   }
 }

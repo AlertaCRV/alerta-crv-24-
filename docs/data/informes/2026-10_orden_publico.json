@@ -1,0 +1,89 @@
+{
+  "periodo": "2026-10",
+  "tipo": "orden_publico",
+  "tipo_label": "Orden público",
+  "cerrado": false,
+  "generado": "2026-10-09T06:53:19.677221+00:00",
+  "actualizado_hasta": "2026-10-09T06:49:14.904115+00:00",
+  "total_eventos": 23,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 76,
+    "actual": 23
+  },
+  "narrativa": "En el mes de octubre de 2026 se registraron 23 eventos de orden público, una notable disminución respecto a los 76 eventos del mes anterior (2026‑09). Esta reducción se observa pese a la persistencia de protestas vinculadas a los recurrentes cortes eléctricos y a incidentes violentos en distintas regiones del país.\n\nEn el estado Zulia, manifestaciones nocturnas contra los cortes eléctricos se replicaron en al menos cinco localidades, generando enfrentamientos con la Guardia Nacional que requirieron la intervención policial (La Prensa de Lara). Simultáneamente, en Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones y fueron reprimidos por las fuerzas de seguridad, lo que también se calificó como un evento de alto nivel de orden público (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, provocando un colapso del tráfico en la Autopista Regional del Centro (ARC) y generando importantes trastornos en la movilidad urbana (El Impulso).\n\nEn el estado Portuguesa se registraron dos incidentes de alto impacto. En la parroquia Payara, del municipio Páez, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire). Por otro lado, en Ospino, a pesar del fuerte despliegue policial, vecinos marcharon contra los apagones, realizando un cacerolazo que se transformó en una marcha por la avenida principal (Portuguesa Reporta).\n\nEn Yaracuy, la situación escaló a nivel crítico cuando, en el sector Sabanita de Yaritagua, un tiroteo dejó un joven fallecido y otro herido, evidenciando la gravedad de los incidentes de orden público en la región (Yaracuy al Dia).",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/caficultores-de-portuguesa-y-lara-denuncian-incumplimiento-de-precios-acordados-y-anuncian-movilizacion/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/de-los-cacerolazos-a-tomar-sedes-de-corpoelec-y-alcaldias-ciudadanos-intensifican-protestas-por-apagones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/familiares-presos-politicos-marchan/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/protestas-en-coro-ante-crisis-de-servicios-basicos/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/10/03/los-apagones-electricos-estan-encendiendo-una-rebelion-ciudadana-en-venezuela-dijo-omar-gonzalez-moreno/"
+    }
+  ]
+}

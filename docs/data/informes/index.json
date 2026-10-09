@@ -25,6 +25,22 @@
   },
   {
     "periodo": "2026-10",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
+    "cerrado": false,
+    "generado": "2026-10-09T06:53:32.260048+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "orden_publico",
+    "tipo_label": "Orden público",
+    "cerrado": false,
+    "generado": "2026-10-09T06:53:19.677221+00:00",
+    "total_eventos": 23
+  },
+  {
+    "periodo": "2026-10",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
@@ -54,6 +70,14 @@
     "cerrado": false,
     "generado": "2026-10-08T07:37:12.877647+00:00",
     "total_eventos": 7
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "deslizamiento",
+    "tipo_label": "Deslizamiento/Derrumbe",
+    "cerrado": false,
+    "generado": "2026-10-09T06:52:11.781897+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-09",
