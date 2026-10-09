@@ -202,6 +202,13 @@ LISTA_NEGRA_POR_ESTADO = {
         # Gestion de Riesgos Caracas" (institucion que respondio desde la
         # capital, no la ubicacion del hecho).
         "gestion de riesgos caracas",
+        # Caso real (09-10-2026): un incendio de vegetacion en el Jardin
+        # Botanico de Ciudad Bolivar (estado Bolivar), en el "sector
+        # Alameda, calle Caracas", tambien se publicaba en Distrito
+        # Capital -- "calle Caracas" es el nombre de una via de Ciudad
+        # Bolivar, no evidencia de la capital (mismo patron que
+        # "avenida bolivar"/"avenida sucre").
+        "calle caracas", "calles caracas",
     ],
     # Caso real (11-08-2026): dos articulos sobre venezolanos residentes EN
     # COLOMBIA que sobrevivieron al terremoto de magnitud 7.4 que sacudio
