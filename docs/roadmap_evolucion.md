@@ -9785,3 +9785,16 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 **Pruebas**: 6 tests nuevos en `tests/test_verify_ai_filtros.py` (salud por extracción, mención de otro estado, sin API key, tope de severidad con control) y 2 casos en `tests/casos_clasificacion.jsonl` (violencia de género Zulia + control de detenidos en protesta). 928 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
 
 **Pendiente**: validar en producción el prompt de salud con el modelo real revisando `data/descartes_ia.jsonl` en las próximas auditorías (vigilar que no descarte brotes reales).
+
+## Auditoría diaria 09-10-2026: "calle Caracas" (incendio de Ciudad Bolívar duplicado en Distrito Capital) y balance multi-estado (pendiente de decidir)
+
+**Hallazgos** (alertas del 08-09/10 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **Incendio del Jardín Botánico de Ciudad Bolívar publicado también en Distrito Capital**: la nota de Primicia (Bolívar) ubica el fuego "en el sector Alameda, calle Caracas" de Ciudad Bolívar; "Caracas" (alias de Distrito Capital) bastó para generar una alerta falsa `incendio::Distrito Capital::2026-10-09`, además de la correcta de Bolívar.
+   - **Causa raíz**: nombre de vía que coincide con un alias de estado (mismo patrón que "avenida Bolívar"/"avenida Sucre"). **Corrección**: `LISTA_NEGRA_POR_ESTADO["Distrito Capital"]` ahora incluye "calle caracas"/"calles caracas" (frase exclusiva de este artículo en todo el histórico). Caso nuevo en `tests/casos_clasificacion.jsonl`; el caso histórico de regresión que fijaba la alerta errónea quedó eliminado al retirar el dato.
+   - **Corrección retroactiva**: retirada la alerta de Distrito Capital de `noticias.json` y su registro de `historico_fuentes_texto.jsonl`; `estadisticas.json` regenerado.
+2. **Pendiente de decidir — balance multi-estado asignado a un solo estado**: `orden_publico::Amazonas::2026-10-09` (Maturin News) reseña el balance del Observatorio de Conflictividad: "8 protestas en 7 estados (Amazonas, Distrito Capital, Lara, Miranda, Táchira, Trujillo, Zulia)". El texto no describe ninguna protesta concreta en Amazonas; el estado se tomó por ser el primero de la lista. Probable falso positivo de ubicación, pero la corrección de raíz (descartar balances agregados de varios estados, o repartirlos) cambia el criterio de ubicación para notas-resumen, así que **no se aplicó de forma autónoma**. La alerta sigue publicada.
+
+**Revisado y sin cambios**: orden_publico Falcón (El Tanquesito), Zulia (jubilados de Pdvsa en Tía Juana), infraestructura eléctrica Apure (Biruaca), inundación Caracas (El Valle, respaldada por el texto), marcha de familiares de presos políticos, protestas en Coro, deslizamiento Aragua.
+
+**Pruebas**: `PYTHONHASHSEED=0 python3 -m pytest tests/` → 936 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
