@@ -1354,6 +1354,41 @@ def _es_presentacion_libro_memoria_sin_disturbio_actual(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_SIN_PRESOS_POLITICOS)
 
 
+# Caso real (08-10-2026): "Presos: Uno acuchillo a su ex, otro golpeo a su
+# hija y el tercero agredio a su pareja en plena via publica... funcionarios
+# del Cpbez capturaron a tres hombres implicados en... hechos de violencia
+# de genero" -- un parte policial de delitos individuales (violencia de
+# genero) disparaba tipo=orden_publico en Zulia por la frase "hechos de
+# violencia", y la IA le asigno severidad "alta". Decision del usuario
+# (08-10-2026): las detenciones individuales sin un trasfondo de protesta o
+# disturbio civil, y las detenciones por violencia de genero, no son orden
+# publico. Se descarta el tipo cuando el articulo trae un marcador de delito
+# individual/violencia de genero/arresto policial y NINGUNA senal de
+# conflicto civil colectivo (protesta, disturbio, saqueo, motin, tiroteo,
+# enfrentamientos, cierre de via...). Se evalua sobre el ARTICULO COMPLETO.
+_MARCADORES_DELITO_INDIVIDUAL = [
+    "violencia de genero", "violencia contra la mujer", "violencia domestica",
+    "violencia intrafamiliar", "violencia machista", "feminicidio",
+    "capturaron a", "capturado", "capturados", "aprehendido", "aprehendidos",
+    "detuvieron a", "detenido", "detenidos", "fue detenido", "fueron detenidos",
+]
+_SENALES_CONFLICTO_CIVIL_COLECTIVO = [
+    "protesta", "protestas", "protestaron", "protestan", "manifestantes",
+    "manifestacion violenta", "manifestacion callejera", "marcha", "marchan",
+    "marcharon", "disturbio", "disturbios", "saqueo", "saqueos", "motin",
+    "motines", "amotinados", "tiroteo", "tiroteos", "enfrentamiento",
+    "enfrentamientos", "barricada", "barricadas", "trancaron", "trancada",
+    "cierre de via", "cierre de calle", "lacrimogena", "lacrimogenas",
+    "linchamiento", "toma de", "huelga", "cacerolazo",
+]
+
+
+def _es_delito_individual_sin_conflicto_civil(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DELITO_INDIVIDUAL):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _SENALES_CONFLICTO_CIVIL_COLECTIVO)
+
+
 # Caso real (12-08-2026, PASADO_POR_FALLA_TECNICA): "Andres Velasquez se
 # suma llamado a manifestar este viernes por apagones... El exgobernador
 # del estado Bolivar... ha expresado su respaldo a la 'Gran Protesta
@@ -3514,6 +3549,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "orden_publico" and _es_presentacion_libro_memoria_sin_disturbio_actual(texto_completo_norm):
                     break
                 if tipo == "orden_publico" and _es_radiografia_estadistica_protesta_sin_hecho_actual(texto_completo_norm):
+                    break
+                if tipo == "orden_publico" and _es_delito_individual_sin_conflicto_civil(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break

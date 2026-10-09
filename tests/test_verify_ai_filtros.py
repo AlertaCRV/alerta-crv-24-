@@ -617,3 +617,71 @@ def test_electrica_solo_correo_institucional_se_sigue_publicando_si_groq_cae(mon
     monkeypatch.setattr(verify_ai, "_llamar_groq", falla)
     resultado = verificar_evento_con_ia(_evento_electrico(tipo_fuente="correo"))
     assert resultado is not None and resultado["estado_verificacion"] == "PASADO_POR_FALLA_TECNICA"
+
+
+# --- salud_publica por extraccion + tope de severidad sin victimas (08-10-2026) --
+
+_TEXTO_SALUD = ("Intoxicación masiva en el Colegio San Vicente de Paúl, municipio Valera, "
+                "estado Trujillo: estudiantes fueron trasladados a centros de salud este miércoles.")
+
+
+def _evento_salud():
+    item = [i for i in clasificar_item({"texto": _TEXTO_SALUD}) if i["ubicacion"] == "Trujillo"][0]
+    item.update({
+        "fecha": "2026-10-07T12:00:00+00:00", "fuente_nombre": "Medio Cualquiera", "peso": 1.0,
+        "link": "https://example.com/intoxicacion", "fuente_tipo": "rss", "es_reporte_filial": False,
+    })
+    eventos = agrupar_y_verificar([item])
+    assert len(eventos) == 1 and eventos[0]["tipo"] == "salud_publica"
+    return eventos[0]
+
+
+def test_salud_publica_se_verifica_por_extraccion_con_su_propio_prompt(monkeypatch, tmp_path):
+    assert "salud_publica" in verify_ai.TIPOS_VERIFICACION_POR_EXTRACCION
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(tmp_path / "descartes.jsonl"))
+    monkeypatch.setattr(verify_ai, "_limpiar_pendiente", lambda e: None)
+    prompts = []
+
+    def falso(api_key, system_prompt, contenido, max_tokens):
+        prompts.append(system_prompt)
+        return _json.dumps({"fuentes": [_ext()]})
+
+    monkeypatch.setattr(verify_ai, "_llamar_groq", falso)
+    assert verificar_evento_con_ia(_evento_salud())["estado_verificacion"] == "APROBADO_IA"
+    assert "SALUD PÚBLICA" in prompts[0] and "eléctrico" not in prompts[0]
+
+
+def test_salud_publica_mencion_incidental_de_otro_estado_se_descarta(monkeypatch, tmp_path):
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    registro = tmp_path / "descartes.jsonl"
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(registro))
+    monkeypatch.setattr(verify_ai, "_limpiar_pendiente", lambda e: None)
+    monkeypatch.setattr(verify_ai, "_llamar_groq", lambda *a, **k: _json.dumps(
+        {"fuentes": [_ext(reciente=False, en_estado_asignado=False)]}))
+    assert verificar_evento_con_ia(_evento_salud()) is None
+    assert _json.loads(registro.read_text().splitlines()[-1])["motivo"] == "no_reciente"
+
+
+def test_salud_publica_sin_groq_api_key_no_se_publica(monkeypatch, tmp_path):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    monkeypatch.setattr(verify_ai, "DESCARTES_IA_PATH", str(tmp_path / "descartes.jsonl"))
+    assert verificar_evento_con_ia(_evento_salud()) is None
+
+
+def test_severidad_ia_alta_se_limita_si_el_texto_niega_victimas():
+    texto = verify_ai._normalizar("afortunadamente no se reportaron víctimas ni pérdidas humanas que lamentar")
+    assert verify_ai._limitar_severidad_ia_sin_victimas("alto", texto) == "medio"
+    assert verify_ai._limitar_severidad_ia_sin_victimas("critico", texto) == "medio"
+    assert verify_ai._limitar_severidad_ia_sin_victimas("bajo", texto) == "bajo"
+
+
+def test_severidad_ia_alta_se_conserva_sin_negacion_de_victimas_control():
+    texto = verify_ai._normalizar("el incendio destruyó un edificio y desalojó a decenas de familias")
+    assert verify_ai._limitar_severidad_ia_sin_victimas("alto", texto) == "alto"
+
+
+def test_finalizar_evento_aplica_tope_de_severidad_ia_sin_victimas():
+    evento = {"tipo": "deslizamiento", "ubicacion": "Aragua", "municipio": None, "parroquia": None}
+    m = _miembro("Onda tropical dejó derrumbes en Aragua; no se reportaron víctimas ni pérdidas humanas.")
+    assert _finalizar_evento(evento, [[m]], severidad_ia="alto")["severidad"] == "medio"

@@ -9770,3 +9770,18 @@ evaluar extender la extracción a otros tipos propensos a notas generales
 **Revisado y sin cambios**: inundación Caracas (3 fuentes), rayo en Tovar, salud Trujillo (Valera), agua Guaca (Bermúdez, Sucre), protestas Coro, marcha de familiares de presos políticos en Caracas.
 
 No se modificó código ni datos en esta corrida.
+
+## Resolución 09-10-2026 de los pendientes de la auditoría del 08-10 (decisiones del usuario)
+
+Decisiones: (1) extender la verificación por extracción de la IA a `salud_publica`; (2) las detenciones individuales sin trasfondo de protesta y las detenciones por violencia de género **no** son `orden_publico`; (3) la severidad "alta" del deslizamiento de Aragua estaba inflada.
+
+**Correcciones de código**
+- `verify_ai.py`: `TIPOS_VERIFICACION_POR_EXTRACCION` ahora incluye `salud_publica`, con su propio prompt de extracción (`SYSTEM_PROMPT_EXTRACCION_SALUD_TEMPLATE`, selección por `PROMPTS_EXTRACCION`) y su bloque de severidad. Define "incidente concreto" como brote/intoxicación/casos atendidos en un lugar concreto, y descarta estadísticas, campañas, crisis crónica, menciones de pasada de otro estado y hechos de hace días (`reciente` / `en_estado_asignado`). Sin API key o con Groq caído el tipo no se publica (mismo criterio que la falla eléctrica); cada descarte queda en `data/descartes_ia.jsonl`. El texto enviado por fuente se limita a 1200 caracteres, así que una mención de Anzoátegui al final de una nota sobre Lara/Trujillo no llega a verse en el estado Anzoátegui.
+- `verify_ai.py`: severidad por IA: el prompt ya no cuenta un despliegue preventivo como "alto" y prohíbe alto/crítico si el texto niega víctimas; además `_limitar_severidad_ia_sin_victimas` aplica un tope determinista a "medio" cuando el texto dice "no se reportaron víctimas / sin heridos / no hubo pérdidas humanas…" (solo sobre la severidad propuesta por la IA, que solo se pide si ninguna palabra clave la detectó).
+- `classify.py`: `_es_delito_individual_sin_conflicto_civil` descarta `orden_publico` cuando el artículo trae marcadores de delito individual/violencia de género/arresto policial y ninguna señal de conflicto civil colectivo (protesta, disturbio, saqueo, motín, tiroteo, enfrentamientos, cierre de vía…). Verificado contra las 145 notas históricas de orden público: solo cambian dos (la de Zulia y el homicidio doméstico de un funcionario en Puerto La Cruz del 16-09, que tampoco es orden público).
+
+**Corrección retroactiva**: retiradas la alerta de orden público de Zulia (08-10) y la de salud pública de Anzoátegui (republicada dos veces por el bot); severidad del deslizamiento de Aragua bajada a media; eliminados los registros correspondientes de `historico_eventos.jsonl`/`historico_fuentes_texto.jsonl` (incluido el homicidio de Anzoátegui del 16-09) y los informes `2026-09_orden_publico`, `2026-10_orden_publico`, `2026-10_deslizamiento` y `2026-10_salud_publica` para que el bot los regenere limpios; `estadisticas.json` regenerado.
+
+**Pruebas**: 6 tests nuevos en `tests/test_verify_ai_filtros.py` (salud por extracción, mención de otro estado, sin API key, tope de severidad con control) y 2 casos en `tests/casos_clasificacion.jsonl` (violencia de género Zulia + control de detenidos en protesta). 928 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
+
+**Pendiente**: validar en producción el prompt de salud con el modelo real revisando `data/descartes_ia.jsonl` en las próximas auditorías (vigilar que no descarte brotes reales).

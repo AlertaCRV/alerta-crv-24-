@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-08T20:39:54.644003+00:00",
+  "actualizado": "2026-10-09T00:47:08.893252+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-08T19:51:06+00:00"
   },
-  "total_eventos": 435,
+  "total_eventos": 431,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 75,
     "infraestructura_electrica": 38,
     "deslizamiento": 31,
     "colapso_estructural": 4,
-    "orden_publico": 145,
-    "salud_publica": 14,
+    "orden_publico": 143,
+    "salud_publica": 12,
     "crisis_migratoria": 6,
     "incendio": 48,
     "vialidad": 20,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 40,
+      "total": 39,
       "confirmados": 7,
       "por_severidad": {
         "medio": 16,
         "critico": 4,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 10
+        "alto": 9
       },
       "severidad_dominante": "critico"
     },
@@ -73,8 +73,8 @@
       "confirmados": 0,
       "por_severidad": {
         "bajo": 7,
-        "medio": 8,
-        "alto": 10,
+        "medio": 9,
+        "alto": 9,
         "critico": 4
       },
       "severidad_dominante": "critico"
@@ -163,18 +163,6 @@
       "severidad_dominante": "alto"
     },
     {
-      "estado": "Anzoategui",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 3,
-        "critico": 2,
-        "bajo": 4,
-        "medio": 5
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Falcon",
       "total": 14,
       "confirmados": 3,
@@ -233,6 +221,18 @@
         "bajo": 4
       },
       "severidad_dominante": "alto"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 11,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 1,
+        "bajo": 4,
+        "medio": 4
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Nueva Esparta",
@@ -337,7 +337,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 17,
+      "orden_publico": 16,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -394,12 +394,11 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 3,
+      "orden_publico": 2,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 1,
-      "infraestructura_electrica": 1,
-      "salud_publica": 2
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -511,8 +510,8 @@
     }
   },
   "por_severidad": {
-    "alto": 102,
-    "critico": 51,
+    "alto": 99,
+    "critico": 50,
     "medio": 145,
     "bajo": 128,
     "sin_clasificar": 9
@@ -549,14 +548,14 @@
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
-      "2026-09": 77,
-      "2026-10": 22
+      "2026-09": 76,
+      "2026-10": 21
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 3
+      "2026-10": 1
     },
     "crisis_migratoria": {
       "2026-07": 4,
