@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-08T01:22:12.803745+00:00",
-  "actualizado_hasta": "2026-10-08T01:18:04.654347+00:00",
-  "total_eventos": 2,
+  "generado": "2026-10-09T00:47:06.221271+00:00",
+  "actualizado_hasta": "2026-10-08T07:34:45.733040+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron dos eventos de salud pública, cifra que se mantiene igual que en el período anterior de septiembre de 2026, cuando también se contabilizaron dos incidentes (Comparación con el período anterior). Ambos eventos fueron catalogados con alta severidad y requirieron la intervención de organismos de protección civil y unidades de salud.\n\nEn el estado Trujillo se reportaron casos de intoxicación en instituciones educativas, donde estudiantes y personal docente presentaron síntomas de mareo, irritación de las vías respiratorias y náuseas. Al menos tres personas fueron trasladadas a centros de salud y las instalaciones fueron evacuadas por los cuerpos de seguridad (La Prensa de Lara).\n\nDe manera paralela, en el estado Anzoátegui se notificaron incidentes de salud pública de similar gravedad, con síntomas respiratorios y gastrointestinales que obligaron a la evacuación de los establecimientos afectados y al traslado de los afectados a unidades médicas (La Prensa de Lara).\n\nLas autoridades locales, en coordinación con la Cruz Roja Venezolana, activaron protocolos de emergencia, brindando atención médica inmediata y realizando inspecciones para identificar la causa de las intoxicaciones. Se mantuvo informada a la comunidad a través de los medios oficiales y se reforzaron medidas preventivas en los centros educativos para evitar nuevos episodios.",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de salud pública, superando los dos eventos reportados en el mes anterior (2026‑09). Esta variación indica un incremento en la incidencia de incidentes que requieren la intervención de la Cruz Roja Venezolana y de las autoridades sanitarias.\n\nEn el estado Trujillo se reportaron casos de intoxicación en instituciones educativas, donde al menos tres estudiantes y miembros del personal docente presentaron síntomas de mareo, irritación de las vías respiratorias y náuseas. Las personas afectadas fueron trasladadas a centros de salud y los planteles fueron evacuados por organismos de protección civil y cuerpos de seguridad (La Prensa de Lara). Este evento, catalogado con severidad alta, constituye uno de los incidentes críticos del período (La Prensa de Lara).\n\nDe forma paralela, en el estado Anzoátegui se notificaron incidentes de intoxicación en establecimientos educativos, con manifestaciones clínicas similares a las descritas en Trujillo. Las autoridades sanitarias atendieron a los afectados y procedieron a la evacuación de los lugares, siguiendo los protocolos de emergencia (La Prensa de Lara). Este suceso también se calificó con severidad alta y forma parte de los tres eventos registrados en octubre (La Prensa de Lara).\n\nLas autoridades locales y la Cruz Roja continúan monitoreando la situación, reforzando las medidas preventivas en centros educativos y coordinando la respuesta médica y de evacuación para minimizar riesgos futuros. El aumento de eventos en este período subraya la necesidad de una vigilancia constante y de la pronta actuación ante posibles emergencias de salud pública.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",

@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-10-08T01:22:42.794173+00:00",
+    "generado": "2026-10-09T00:47:38.572976+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-08T01:22:29.860532+00:00",
+    "generado": "2026-10-09T00:47:33.502406+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-08T01:22:25.266776+00:00",
+    "generado": "2026-10-09T00:47:19.776876+00:00",
     "total_eventos": 1
   },
   {
@@ -28,8 +28,8 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-10-08T01:22:12.803745+00:00",
-    "total_eventos": 2
+    "generado": "2026-10-09T00:47:06.221271+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-10",
@@ -44,15 +44,23 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-08T01:21:46.202282+00:00",
-    "total_eventos": 3
+    "generado": "2026-10-09T00:46:33.916431+00:00",
+    "total_eventos": 5
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-10-09T00:46:07.392241+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-10",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-08T01:21:18.618596+00:00",
+    "generado": "2026-10-09T00:46:02.350964+00:00",
     "total_eventos": 1
   },
   {
@@ -68,7 +76,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-08T07:36:18.860559+00:00",
+    "generado": "2026-10-09T00:45:08.982774+00:00",
     "total_eventos": 1
   },
   {
