@@ -1,11 +1,4 @@
 {
-  "incendio::Falcon::2026-10-07": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-07T21:32:00.638608+00:00",
-    "fecha_evento_temprana": "2026-10-07T13:54:05+00:00",
-    "municipio": null
-  },
   "inundacion::Distrito Capital::2026-10-07": {
     "severidad": "alto",
     "confirmado": false,
@@ -13,26 +6,12 @@
     "fecha_evento_temprana": "2026-10-08T21:49:13+00:00",
     "municipio": "Libertador"
   },
-  "salud_publica::Trujillo::2026-10-07": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-07T21:32:28.991068+00:00",
-    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
-    "municipio": "Valera"
-  },
   "salud_publica::Anzoategui::2026-10-07": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-10-08T07:34:45.733040+00:00",
     "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
     "municipio": null
-  },
-  "tormenta_electrica::Merida::2026-10-07": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-07T21:32:52.728016+00:00",
-    "fecha_evento_temprana": "2026-10-07T16:30:00+00:00",
-    "municipio": "Tovar"
   },
   "deslizamiento::Aragua::2026-10-08": {
     "severidad": "alto",
@@ -119,9 +98,9 @@
     "municipio": "Andrés Bello"
   },
   "incendio::Distrito Capital::2026-10-10": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-10T19:23:32.594725+00:00",
+    "fecha_deteccion": "2026-10-10T22:53:43.042503+00:00",
     "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
     "municipio": null
   }
