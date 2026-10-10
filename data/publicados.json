@@ -1,11 +1,4 @@
 {
-  "infraestructura_agua::Sucre::2026-10-07": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-07T09:08:38.147261+00:00",
-    "fecha_evento_temprana": "2026-10-07T00:02:18+00:00",
-    "municipio": "Bermúdez"
-  },
   "incendio::Falcon::2026-10-07": {
     "severidad": "alto",
     "confirmado": true,
@@ -117,5 +110,12 @@
     "fecha_deteccion": "2026-10-09T23:26:59.166674+00:00",
     "fecha_evento_temprana": "2026-10-09T22:08:34+00:00",
     "municipio": null
+  },
+  "salud_publica::Trujillo::2026-10-10": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-10T15:16:36.763510+00:00",
+    "fecha_evento_temprana": "2026-10-10T13:03:51+00:00",
+    "municipio": "Andrés Bello"
   }
 }

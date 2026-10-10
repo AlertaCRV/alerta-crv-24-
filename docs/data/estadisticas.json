@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-09T23:28:45.583284+00:00",
+  "actualizado": "2026-10-10T15:16:37.470809+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-09T22:08:34+00:00"
+    "hasta": "2026-10-10T13:03:51+00:00"
   },
-  "total_eventos": 442,
+  "total_eventos": 443,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 76,
@@ -12,7 +12,7 @@
     "deslizamiento": 33,
     "colapso_estructural": 4,
     "orden_publico": 147,
-    "salud_publica": 12,
+    "salud_publica": 13,
     "crisis_migratoria": 6,
     "incendio": 50,
     "vialidad": 20,
@@ -177,6 +177,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Trujillo",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 3,
+        "critico": 1,
+        "alto": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Sucre",
       "total": 14,
       "confirmados": 0,
@@ -186,18 +198,6 @@
         "alto": 2
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 3,
-        "critico": 1,
-        "alto": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Carabobo",
@@ -368,7 +368,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 1,
-      "salud_publica": 1
+      "salud_publica": 2
     },
     "Barinas": {
       "deslizamiento": 3,
@@ -514,7 +514,7 @@
     }
   },
   "por_severidad": {
-    "alto": 100,
+    "alto": 101,
     "critico": 52,
     "medio": 151,
     "bajo": 129,
@@ -560,7 +560,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 1
+      "2026-10": 2
     },
     "crisis_migratoria": {
       "2026-07": 4,
