@@ -117,5 +117,12 @@
     "fecha_deteccion": "2026-10-10T15:16:36.763510+00:00",
     "fecha_evento_temprana": "2026-10-10T13:03:51+00:00",
     "municipio": "Andrés Bello"
+  },
+  "incendio::Distrito Capital::2026-10-10": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-10T19:23:32.594725+00:00",
+    "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
+    "municipio": null
   }
 }
