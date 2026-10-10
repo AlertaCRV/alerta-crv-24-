@@ -247,7 +247,15 @@ LISTA_NEGRA_POR_ESTADO = {
                   # ya queda cubierto bajo Distrito Capital via la mencion
                   # de "Caracas"/parroquias especificas, asi que basta con
                   # descartar el candidato de La Guaira.
-                  "de la gobernacion de la guaira"],
+                  "de la gobernacion de la guaira",
+                  # Caso real (09-10-2026): el derrumbe en la mina Audi
+                  # (Guasipati/El Callao, Bolivar) tambien se publicaba en
+                  # La Guaira porque el articulo de El Pitazo incrusta el
+                  # titular de OTRA nota ("policia que nego traslado a
+                  # motorizado amputado en La Guaira es presentado en
+                  # tribunales") -- enlace relacionado, no ubicacion del
+                  # hecho. Ya hay una alerta correcta bajo Bolivar.
+                  "amputado en la guaira"],
     # Caso real (12-08-2026): un articulo sobre jubilados petroleros
     # protestando frente a la sede de Pdvsa La Campiña (Caracas) generaba 2
     # alertas falsas de orden_publico en Falcon y Zulia -- ambos estados solo

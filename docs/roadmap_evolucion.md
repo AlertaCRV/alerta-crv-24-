@@ -9798,3 +9798,18 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 **Revisado y sin cambios**: orden_publico Falcón (El Tanquesito), Zulia (jubilados de Pdvsa en Tía Juana), infraestructura eléctrica Apure (Biruaca), inundación Caracas (El Valle, respaldada por el texto), marcha de familiares de presos políticos, protestas en Coro, deslizamiento Aragua.
 
 **Pruebas**: `PYTHONHASHSEED=0 python3 -m pytest tests/` → 936 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
+
+## Auditoría diaria 10-10-2026: titular relacionado incrustado ("amputado en La Guaira") y severidad del incendio de la av. Baralt (pendiente de decidir)
+
+**Hallazgos** (alertas del 09-10 y 10-10 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **Derrumbe en la mina Audi (Guasipati/El Callao, Bolívar) publicado también en La Guaira** (`deslizamiento::La Guaira::2026-10-09`, crítica, misma URL de El Pitazo que la alerta correcta de Bolívar).
+   - **Causa raíz**: el artículo incrusta el titular de otra nota ("policía que negó traslado a motorizado amputado en La Guaira es presentado en tribunales"); esa única mención generó el candidato de La Guaira. Mismo patrón que "gestión de riesgos Caracas" (texto de enlaces relacionados).
+   - **Corrección**: `LISTA_NEGRA_POR_ESTADO["La Guaira"]` incluye `"amputado en la guaira"`.
+   - **Corrección retroactiva**: retirada la alerta de La Guaira de `noticias.json`, `historico_eventos.jsonl` e `historico_fuentes_texto.jsonl`; informe `2026-10_deslizamiento.json` corregido (2 eventos, narrativa sin La Guaira); `estadisticas.json` regenerado.
+   - **Pruebas**: 2 casos nuevos en `tests/casos_clasificacion.jsonl` (real + control de derrumbe genuino en La Guaira).
+2. **Pendiente de decidir — severidad "alto" del incendio del Mercado de Emprendedores (av. Baralt, Caracas)** (`incendio::Distrito Capital::2026-10-10`, El Pitazo): la primera pasada lo dejó en `medio`; la IA lo subió a `alto`, pero el texto solo reporta 6 locales comprometidos, sin heridos ni evacuados ("acordonamiento preventivo"). Posible sobre-severidad; no se modificó (criterio de severidad por daño material, requiere decisión del usuario).
+
+**Revisado y sin cambios**: salud pública Trujillo (intoxicaciones escolares en Santa Isabel, respaldado por el texto), orden público Falcón (El Tanquesito), alertas previas ya auditadas.
+
+**Pruebas**: `PYTHONHASHSEED=0 python3 -m pytest tests/` → 943 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
