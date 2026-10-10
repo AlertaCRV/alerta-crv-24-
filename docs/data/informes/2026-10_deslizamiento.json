@@ -3,16 +3,20 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-10-09T06:52:11.781897+00:00",
-  "actualizado_hasta": "2026-10-08T07:33:43.763093+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-10T09:03:42.671771+00:00",
+  "actualizado_hasta": "2026-10-09T23:26:59.166674+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 9,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un único evento de deslizamiento/derrumbe, en contraste con los nueve eventos reportados en septiembre de 2026 (comparación con el período anterior). \n\nEl único incidente ocurrió en el estado Aragua, específicamente en el sector La Arboleda del municipio Girardot, donde la Onda Tropical N.º 55 provocó anegaciones y derrumbes tras el desbordamiento del canal Andrés Bello (El Siglo). \n\nAnte la situación, las autoridades del Gobierno Bolivariano de Aragua y la Alcaldía del municipio Girardot activaron un operativo especial de atención e infraestructura para atender los daños generados (El Siglo). Rodolfo Ramírez, Secretario General de Servicios Públicos de la entidad, ofreció un balance de la situación directamente desde la calle principal de La Arboleda, confirmando la magnitud de las afectaciones y la respuesta institucional (El Siglo). \n\nEste hecho aislado, aunque significativo para la comunidad local, representa una disminución notable en la frecuencia de eventos de deslizamiento/derrumbe respecto al mes anterior, lo que sugiere una variabilidad estacional en la ocurrencia de estos fenómenos en la región (comparación con el período anterior).",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de deslizamiento o derrumbe, una disminución notable respecto a los nueve eventos reportados en septiembre del mismo año (9 evento(s) registrados entonces vs. 3 en este período). Esta reducción indica una tendencia a la baja en la frecuencia de este tipo de emergencias, aunque la gravedad de los incidentes sigue siendo alta.\n\nEl evento más grave ocurrió en el estado Bolívar, donde un alud de tierra colapsó sobre la mina de oro Audi, situada en los linderos entre Guasipati y El Callao, provocando la muerte de dos jóvenes mineros que laboraban en el interior del yacimiento (El Pitazo). Las autoridades aún no habían emitido un informe preliminar a las 24 horas del hecho, registrado el 8 de octubre.\n\nOtro incidente crítico se dio en el estado La Guaira, donde se reportó un derrumbe de gran magnitud que causó daños materiales significativos y dejó a varias personas heridas (El Pitazo). Las condiciones de terreno inestable y las fuertes lluvias fueron señaladas como factores que contribuyeron al deslizamiento.\n\nA pesar de la menor cantidad de eventos en comparación con el mes anterior, la Cruz Roja Venezolana mantiene la alerta y continúa coordinando acciones de respuesta y apoyo a las comunidades afectadas, reforzando los protocolos de evacuación y asistencia médica para mitigar el impacto de futuros deslizamientos.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/fallecen-dos-jovenes-en-derrumbe-en-mina-de-oro-en-bolivar/"
+    },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/onda-tropical-55-dejo-anegaciones-y-derrumbes-en-aragua/"
