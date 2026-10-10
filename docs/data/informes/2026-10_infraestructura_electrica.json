@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-09T00:46:07.392241+00:00",
-  "actualizado_hasta": "2026-10-09T00:43:36.934450+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-10T02:42:40.993875+00:00",
+  "actualizado_hasta": "2026-10-09T06:49:57.742558+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento de falla eléctrica, una notable disminución respecto a los 22 incidentes reportados en septiembre de 2026 (Comparación).\\n\\nEl único caso registrado ocurrió en la urbanización El Paraíso, ubicada en el municipio Biruaca del estado Apure, donde una avería en las redes de distribución interrumpió el suministro eléctrico (Notiapure). Ante esta situación, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el fluido eléctrico, enviando personal especializado al sitio para realizar diagnóstico y reemplazo de componentes dañados (Notiapure).\\n\\nLa intervención de CORPOELEC se centró en la identificación del punto de falla y la sustitución de los elementos defectuosos, logrando la recuperación total del servicio en la zona afectada (Notiapure). No se reportaron daños materiales mayores, ni heridos ni víctimas fatales asociados a este incidente.\\n\\nEste descenso en la frecuencia de fallas eléctricas permite a la Cruz Roja Venezolana focalizar sus recursos en otras áreas de emergencia, manteniendo la vigilancia constante y la capacidad de respuesta ante cualquier eventualidad que pudiera surgir en el territorio nacional.",
+  "narrativa": "En el mes de octubre de 2026 se registraron únicamente dos incidentes de fallas eléctricas, una notable disminución frente a los 22 eventos reportados en septiembre del mismo año (22 evento(s) registrados entonces vs. 2 en este período). Esta reducción indica una mejora en la estabilidad del suministro eléctrico o una menor incidencia de averías reportadas durante el período analizado.\n\nEl único incidente de mayor relevancia ocurrió en la urbanización El Paraíso, situada en el municipio Biruaca del estado Apure, donde la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el servicio eléctrico (Notiapure). La avería se originó en las redes de distribución del sector, lo que obligó al personal especializado a realizar labores de diagnóstico y sustitución de componentes para garantizar la continuidad del suministro.\n\nAmbas fuentes consultadas describen la misma intervención, indicando que el equipo de CORPOELEC estuvo presente en el sitio realizando las reparaciones necesarias, y que el objetivo era restablecer por completo el fluido eléctrico en la zona afectada (Notiapure). No se reportaron daños materiales adicionales, heridos ni víctimas fatales asociados a esta avería.\n\nEn conclusión, el monitoreo de emergencias eléctricas para el período octubre 2026 muestra una tendencia a la baja en la cantidad de incidentes, con solo dos eventos registrados, entre los cuales destaca la intervención en la urbanización El Paraíso de Biruaca, cuya pronta respuesta evitó mayores consecuencias para la comunidad.",
   "fuentes": [
     {
       "nombre": "Notiapure",

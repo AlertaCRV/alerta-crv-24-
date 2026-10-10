@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-09T00:47:19.776876+00:00",
+  "generado": "2026-10-10T02:43:52.591535+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un solo sismo, cifra que contrasta con los dos eventos registrados en el mes anterior, septiembre de 2026. Esta disminución en la cantidad de eventos sísmicos se refleja en los reportes oficiales del monitoreo de emergencias.\n\nEl 2 de octubre de 2026, un temblor de magnitud 5,0 sacudió el oriente venezolano, con epicentro en la zona costera cercana a Güiria, estado Sucre (Nuevo Dia). El sismo se sintió intensamente en varias localidades de la región, provocando que muchos residentes abandonaran sus hogares en busca de un lugar seguro (Nuevo Dia). Hasta el momento, no se han reportado daños significativos ni víctimas mortales ni heridos (Nuevo Dia; Yaracuy al Dia).\n\nSegún los informes disponibles, no se han registrado otros sismos de magnitud comparable durante el período analizado, manteniéndose la actividad sísmica bajo vigilancia continua por parte de las autoridades y la Cruz Roja Venezolana.",
+  "narrativa": "Durante el mes de octubre de 2026, el sistema de monitoreo registró un solo sismo, cifra que representa una disminución respecto al mes anterior, donde se contabilizaron dos eventos (comparación con el período anterior: 2 evento(s) registrados entonces vs. 1 en este período). \n\nEl 2 de octubre de 2026 se produjo un temblor de magnitud 5,0 en el oriente de Venezuela (Nuevo Dia). El epicentro se localizó en la zona costera cercana a Güiria, en el estado Sucre (Yaracuy al Dia). El sismo fue percibido intensamente en varias localidades de la región, provocando que muchos residentes abandonaran sus hogares en busca de un lugar seguro (Nuevo Dia). \n\nA pesar del susto generado, las autoridades y los medios no reportaron daños materiales significativos ni víctimas mortales (Nuevo Dia). Hasta el momento, no se han registrado mayores daños en la zona (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",
