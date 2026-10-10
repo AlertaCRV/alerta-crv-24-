@@ -78,32 +78,6 @@
     "texto": "📌 Deslizamiento/Derrumbe en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 09/10/2026, 6:08 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 7:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/fallecen-dos-jovenes-en-derrumbe-en-mina-de-oro-en-bolivar/"
   },
   {
-    "tipo": "deslizamiento",
-    "ubicacion": "La Guaira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/guayana/fallecen-dos-jovenes-en-derrumbe-en-mina-de-oro-en-bolivar/",
-        "fecha": "2026-10-09T22:08:34+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-09T22:08:34+00:00",
-    "fecha_evento_temprana": "2026-10-09T22:08:34+00:00",
-    "fecha_deteccion": "2026-10-09T23:26:59.166674+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::La Guaira::2026-10-09",
-    "titulo": "Deslizamiento/Derrumbe en La Guaira",
-    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 09/10/2026, 6:08 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 7:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/fallecen-dos-jovenes-en-derrumbe-en-mina-de-oro-en-bolivar/"
-  },
-  {
     "tipo": "orden_publico",
     "ubicacion": "Falcon",
     "municipio": "Falcón",
