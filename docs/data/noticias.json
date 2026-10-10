@@ -4,7 +4,7 @@
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
-    "severidad": "medio",
+    "severidad": "alto",
     "score": 0.75,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +19,11 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-10T18:03:24+00:00",
     "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
-    "fecha_deteccion": "2026-10-10T19:23:32.594725+00:00",
+    "fecha_deteccion": "2026-10-10T22:53:43.042503+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Distrito Capital::2026-10-10",
     "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 10/10/2026, 2:03 p.m.\n🔎 Detectado por el sistema: 10/10/2026, 3:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
+    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 10/10/2026, 2:03 p.m.\n🔎 Detectado por el sistema: 10/10/2026, 6:53 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
   },
   {
     "tipo": "salud_publica",
