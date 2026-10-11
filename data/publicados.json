@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-10-08T21:49:13+00:00",
     "municipio": "Libertador"
   },
-  "salud_publica::Anzoategui::2026-10-07": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-08T07:34:45.733040+00:00",
-    "fecha_evento_temprana": "2026-10-07T20:33:03+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Aragua::2026-10-08": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-08T07:33:43.763093+00:00",
-    "fecha_evento_temprana": "2026-10-08T01:40:32+00:00",
-    "municipio": "Girardot"
-  },
   "orden_publico::Falcon::2026-10-08": {
     "severidad": "bajo",
     "confirmado": false,
@@ -106,8 +92,8 @@
   },
   "inundacion::Distrito Capital::2026-10-10": {
     "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-11T01:42:31.473536+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-11T07:52:52.721644+00:00",
     "fecha_evento_temprana": "2026-10-10T23:05:47+00:00",
     "municipio": null
   }
