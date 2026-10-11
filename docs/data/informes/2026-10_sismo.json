@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-10T02:43:52.591535+00:00",
+  "generado": "2026-10-11T01:47:28.860212+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026, el sistema de monitoreo registró un solo sismo, cifra que representa una disminución respecto al mes anterior, donde se contabilizaron dos eventos (comparación con el período anterior: 2 evento(s) registrados entonces vs. 1 en este período). \n\nEl 2 de octubre de 2026 se produjo un temblor de magnitud 5,0 en el oriente de Venezuela (Nuevo Dia). El epicentro se localizó en la zona costera cercana a Güiria, en el estado Sucre (Yaracuy al Dia). El sismo fue percibido intensamente en varias localidades de la región, provocando que muchos residentes abandonaran sus hogares en busca de un lugar seguro (Nuevo Dia). \n\nA pesar del susto generado, las autoridades y los medios no reportaron daños materiales significativos ni víctimas mortales (Nuevo Dia). Hasta el momento, no se han registrado mayores daños en la zona (Yaracuy al Dia).",
+  "narrativa": "En el mes de octubre de 2026 se registró un único sismo de relevancia en Venezuela, cifra que contrasta con los dos eventos reportados en el mes anterior (2026‑09). Esta disminución se refleja en la comparación proporcionada, que indica 2 eventos en septiembre versus 1 en octubre.\n\nEl 2 de octubre de 2026 un temblor de magnitud preliminar 5,0 sacudió el oriente venezolano, teniendo como epicentro la zona costera cercana a Güiria, en el estado Sucre (Nuevo Dia). La intensidad del movimiento se percibió en varias localidades de la región, provocando que los residentes abandonaran sus hogares en busca de lugares seguros (Yaracuy al Dia). A pesar del susto generado, las autoridades y los medios no reportaron daños materiales significativos ni víctimas mortales ni heridos hasta el momento (Nuevo Dia; Yaracuy al Dia).\n\nEl Servicio de Emergencias de la Cruz Roja Venezolana mantiene la vigilancia en la zona afectada y ha activado protocolos de atención preventiva, aunque la ausencia de reportes de daños permite focalizar los recursos en otras áreas de riesgo. Se continuará monitoreando la actividad sísmica y se actualizará la información conforme se disponga de nuevos datos.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",

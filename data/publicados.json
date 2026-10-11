@@ -103,5 +103,12 @@
     "fecha_deteccion": "2026-10-10T22:53:43.042503+00:00",
     "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
     "municipio": null
+  },
+  "inundacion::Distrito Capital::2026-10-10": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-11T01:42:31.473536+00:00",
+    "fecha_evento_temprana": "2026-10-10T23:05:47+00:00",
+    "municipio": null
   }
 }

@@ -3,16 +3,20 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-10T02:43:39.248694+00:00",
-  "actualizado_hasta": "2026-10-07T21:32:28.991068+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-11T01:47:16.246997+00:00",
+  "actualizado_hasta": "2026-10-10T15:16:36.763510+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de octubre de 2026 el monitoreo de emergencias en la categoría de salud pública registró un único evento, lo que representa una disminución respecto al período anterior, donde se habían registrado dos eventos (Comparación proporcionada). Este descenso se debe a la ausencia de nuevos incidentes de gran magnitud durante el intervalo analizado.\n\nEl único caso reportado corresponde a una situación de intoxicación en instituciones educativas de los estados Lara y Trujillo, con especial énfasis en Trujillo, catalogada como de alta severidad (La Prensa de Lara). Según el informe, se documentaron al menos tres casos de intoxicación entre estudiantes y personal docente en dichos planteles (La Prensa de Lara).\n\nLos afectados presentaron síntomas de mareo, irritación en las vías respiratorias y náuseas, lo que motivó su traslado inmediato a centros de salud para recibir atención médica (La Prensa de Lara). Simultáneamente, organismos de protección civil y cuerpos de seguridad procedieron a evacuar las instalaciones para garantizar la seguridad de los presentes (La Prensa de Lara).\n\nLas autoridades sanitarias y de protección civil continúan monitoreando la situación y reforzando protocolos de prevención en centros educativos, con el objetivo de evitar la recurrencia de incidentes similares y proteger la salud de la comunidad estudiantil.",
+  "narrativa": "En el mes de octubre de 2026 se registraron dos eventos de salud pública, cifra que coincide con los dos eventos reportados en el mes anterior (2026‑09). La coincidencia numérica se mantiene sin variaciones en la cantidad de incidentes reportados.\n\nEn los estados Lara y Trujillo se reportaron al menos tres casos de intoxicación masiva en instituciones educativas, donde estudiantes y personal docente presentaron síntomas de mareo, irritación en las vías respiratorias y náuseas, lo que obligó a su traslado a centros de salud y a la evacuación de los planteles por parte de organismos de protección civil y cuerpos de seguridad (La Prensa de Lara).\n\nEl presidente regional de Primero Justicia en Trujillo, Emilio Fajardo Linares, exigió el despolitizado de estos hechos y solicitó una investigación técnica, rigurosa y transparente para determinar las causas reales de las intoxicaciones, pidiendo a Fundasalud y a los organismos correspondientes una evaluación científica inmediata tras el colapso (Diario El Tiempo (Trujillo)).\n\nNo se reportaron otros incidentes de salud pública con daños materiales, heridos o víctimas fatales durante este período, manteniéndose el número de eventos idéntico al del mes previo.",
   "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/emilio-fajardo-exige-despolitizar-intoxicaciones-en-escuelas-de-trujillo-y-pide-una-investigacion-exhaustiva/"
+    },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
