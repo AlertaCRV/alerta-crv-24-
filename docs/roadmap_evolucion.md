@@ -9813,3 +9813,14 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 **Revisado y sin cambios**: salud pública Trujillo (intoxicaciones escolares en Santa Isabel, respaldado por el texto), orden público Falcón (El Tanquesito), alertas previas ya auditadas.
 
 **Pruebas**: `PYTHONHASHSEED=0 python3 -m pytest tests/` → 943 passed, 8 xfailed, 5 xpassed; `validar_configs.py` OK.
+
+## Auditoría diaria 11-10-2026: severidad "alto" en mantenimiento programado de agua y alerta de donativos "crisis migratoria" (pendiente de decidir)
+
+**Hallazgos** (alertas del 10-11/10 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **`infraestructura_agua::Distrito Capital::2026-10-11` con severidad "alto" sin base**: Primicia "Sin agua a Caracas, La Guaira y Miranda por 48 horas" es un comunicado de *mantenimiento programado* de Hidroven (Tuy III), sin daños ni víctimas; ninguna palabra clave detectó severidad y la IA propuso "alto". La versión previa de la misma alerta (con El Pitazo) estaba en "medio".
+   - **Corrección**: `verify_ai._limitar_severidad_ia_mantenimiento_programado` — tope determinista a "medio" sobre la severidad propuesta por la IA para `infraestructura_agua`/`infraestructura_electrica` cuando el texto habla de "mantenimiento programado/planificado". Test nuevo en `tests/test_verify_ai_filtros.py` (caso real + controles).
+   - **Corrección retroactiva**: severidad bajada a media en `noticias.json`, `historico_eventos.jsonl` e `historico_fuentes_texto.jsonl`; `estadisticas.json` regenerado.
+2. **Pendiente de decidir — `crisis_migratoria::La Guaira::2026-10-11`** (Primicia Bolívar, severidad "alto" por IA): nota sobre un donativo del club Rotaract a *familias desplazadas de La Guaira que viven en Guayana (Bolívar)*. No describe un incidente ni una emergencia en La Guaira, y la ubicación se tomó del lugar de origen, no de donde están las familias. Criterio ambiguo (¿`crisis_migratoria` se ubica en el origen o en el destino? ¿las notas de ayuda/donativos cuentan?; la nota del 15-09 sobre desplazados en Barquisimeto asignada a La Guaira siguió el mismo patrón). **No se modificó**; la alerta sigue publicada.
+
+**Revisado y sin cambios**: vialidad Monagas (volcamiento GNB, 1 fallecido y 9 heridos, respaldado), inundación Caracas (árboles caídos/anegaciones), salud pública Trujillo; incendio av. Baralt sigue pendiente de decisión de severidad (ver 10-10).

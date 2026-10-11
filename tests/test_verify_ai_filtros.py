@@ -685,3 +685,14 @@ def test_finalizar_evento_aplica_tope_de_severidad_ia_sin_victimas():
     evento = {"tipo": "deslizamiento", "ubicacion": "Aragua", "municipio": None, "parroquia": None}
     m = _miembro("Onda tropical dejó derrumbes en Aragua; no se reportaron víctimas ni pérdidas humanas.")
     assert _finalizar_evento(evento, [[m]], severidad_ia="alto")["severidad"] == "medio"
+
+
+def test_severidad_ia_mantenimiento_programado_se_limita_a_medio():
+    texto = "labores de mantenimiento programado en el sistema tuy iii por 48 horas"
+    f = verify_ai._limitar_severidad_ia_mantenimiento_programado
+    assert f("alto", texto, "infraestructura_agua") == "medio"
+    assert f("critico", texto, "infraestructura_electrica") == "medio"
+    # controles: otro tipo, sin marcador, o severidad ya baja
+    assert f("alto", texto, "incendio") == "alto"
+    assert f("alto", "rotura de tuberia matriz deja sin agua a miles", "infraestructura_agua") == "alto"
+    assert f("bajo", texto, "infraestructura_agua") == "bajo"

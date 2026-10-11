@@ -944,6 +944,23 @@ def _limitar_severidad_ia_sin_victimas(severidad_ia, texto_norm):
     return severidad_ia
 
 
+# Caso real (11-10-2026): Primicia "Sin agua a Caracas, La Guaira y Miranda
+# por 48 horas" -- un comunicado de "mantenimiento programado" de Hidroven
+# (intermitencias avisadas con antelacion, sin dano ni victimas) recibio
+# severidad "alto" de la IA. Tope determinista: un mantenimiento programado
+# de agua/electricidad anunciado de antemano no puede pasar de "medio" por
+# severidad propuesta por la IA.
+_MARCADORES_MANTENIMIENTO_PROGRAMADO = ("mantenimiento programado", "mantenimiento planificado")
+
+
+def _limitar_severidad_ia_mantenimiento_programado(severidad_ia, texto_norm, tipo):
+    if (severidad_ia in ("alto", "critico")
+            and tipo in ("infraestructura_agua", "infraestructura_electrica")
+            and any(m in texto_norm for m in _MARCADORES_MANTENIMIENTO_PROGRAMADO)):
+        return "medio"
+    return severidad_ia
+
+
 def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_ia=None):
     """error_sistema=True marca que las fuentes no pasaron por un veredicto
     real de la IA (sin API key, respuesta no parseable, o fallo de red/rate
@@ -999,6 +1016,8 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_i
     # siendo la fuente primaria, mas determinista y auditable).
     if severidad_final == "sin_clasificar" and severidad_ia:
         severidad_final = _limitar_severidad_ia_sin_victimas(severidad_ia, texto_aprobados_norm)
+        severidad_final = _limitar_severidad_ia_mantenimiento_programado(
+            severidad_final, texto_aprobados_norm, evento["tipo"])
     fecha_mas_reciente = max(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
     fecha_mas_temprana = min(miembros_aprobados, key=lambda m: dateparser.isoparse(m["fecha"]))["fecha"]
 

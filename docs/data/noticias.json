@@ -30,7 +30,7 @@
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
-    "severidad": "alto",
+    "severidad": "medio",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -49,7 +49,7 @@
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "infraestructura_agua::Distrito Capital::2026-10-11",
     "titulo": "Falla de agua en Distrito Capital",
-    "texto": "📌 Falla de agua en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 11/10/2026, 2:40 p.m.\n🔎 Detectado por el sistema: 11/10/2026, 7:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/agua-a-caracas-la-guaira-y-miranda-por-48-horas/"
+    "texto": "📌 Falla de agua en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 11/10/2026, 2:40 p.m.\n🔎 Detectado por el sistema: 11/10/2026, 7:01 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/agua-a-caracas-la-guaira-y-miranda-por-48-horas/"
   },
   {
     "tipo": "inundacion",
