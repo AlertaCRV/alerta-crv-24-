@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T23:01:19.513079+00:00",
+  "actualizado": "2026-10-11T23:12:45.381672+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-11T20:15:16+00:00"
@@ -33,8 +33,8 @@
       "total": 86,
       "confirmados": 13,
       "por_severidad": {
-        "alto": 17,
-        "medio": 26,
+        "alto": 16,
+        "medio": 27,
         "bajo": 27,
         "critico": 12,
         "sin_clasificar": 4
@@ -516,9 +516,9 @@
     }
   },
   "por_severidad": {
-    "alto": 104,
+    "alto": 103,
     "critico": 52,
-    "medio": 156,
+    "medio": 157,
     "bajo": 129,
     "sin_clasificar": 10
   },
