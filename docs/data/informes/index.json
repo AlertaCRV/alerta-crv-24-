@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-10-10T02:44:18.025504+00:00",
+    "generado": "2026-10-11T01:47:47.450398+00:00",
     "total_eventos": 1
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-10T02:44:04.940728+00:00",
+    "generado": "2026-10-11T01:47:42.882177+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-10T02:43:52.591535+00:00",
+    "generado": "2026-10-11T01:47:28.860212+00:00",
     "total_eventos": 1
   },
   {
@@ -28,15 +28,15 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-10-10T02:43:39.248694+00:00",
-    "total_eventos": 1
+    "generado": "2026-10-11T01:47:16.246997+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-10",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-10T09:05:03.150271+00:00",
+    "generado": "2026-10-11T01:47:11.218184+00:00",
     "total_eventos": 25
   },
   {
@@ -44,15 +44,15 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-10T02:43:07.329954+00:00",
-    "total_eventos": 5
+    "generado": "2026-10-11T01:46:44.221833+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-10",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-10T02:42:40.993875+00:00",
+    "generado": "2026-10-11T01:46:17.786878+00:00",
     "total_eventos": 2
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-10T02:42:35.996322+00:00",
+    "generado": "2026-10-11T01:46:05.383218+00:00",
     "total_eventos": 1
   },
   {
@@ -76,8 +76,8 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-10T09:03:42.671771+00:00",
-    "total_eventos": 3
+    "generado": "2026-10-11T01:45:18.689251+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-09",
