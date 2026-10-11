@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-11T19:15:18.984907+00:00",
+  "actualizado": "2026-10-11T23:01:19.513079+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-11T18:40:14+00:00"
+    "hasta": "2026-10-11T20:15:16+00:00"
   },
-  "total_eventos": 449,
+  "total_eventos": 451,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 79,
@@ -13,14 +13,14 @@
     "colapso_estructural": 4,
     "orden_publico": 147,
     "salud_publica": 13,
-    "crisis_migratoria": 6,
+    "crisis_migratoria": 7,
     "incendio": 52,
     "vialidad": 21,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 22,
+    "infraestructura_agua": 23,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 85,
+      "total": 86,
       "confirmados": 13,
       "por_severidad": {
-        "alto": 16,
+        "alto": 17,
         "medio": 26,
         "bajo": 27,
         "critico": 12,
@@ -224,6 +224,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "La Guaira",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 3,
+        "sin_clasificar": 1,
+        "alto": 6,
+        "bajo": 1,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Anzoategui",
       "total": 11,
       "confirmados": 0,
@@ -243,19 +256,6 @@
         "alto": 2,
         "bajo": 6,
         "medio": 2,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "La Guaira",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 3,
-        "sin_clasificar": 1,
-        "alto": 5,
-        "bajo": 1,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -361,7 +361,7 @@
       "emergencia_metro": 2,
       "crisis_migratoria": 1,
       "salud_publica": 1,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 2
     },
     "Trujillo": {
       "inundacion": 2,
@@ -508,7 +508,7 @@
       "inundacion": 3,
       "sismo": 1,
       "orden_publico": 1,
-      "crisis_migratoria": 1
+      "crisis_migratoria": 2
     },
     "Amazonas": {
       "salud_publica": 1,
@@ -516,7 +516,7 @@
     }
   },
   "por_severidad": {
-    "alto": 102,
+    "alto": 104,
     "critico": 52,
     "medio": 156,
     "bajo": 129,
@@ -567,7 +567,8 @@
     "crisis_migratoria": {
       "2026-07": 4,
       "2026-08": 1,
-      "2026-09": 1
+      "2026-09": 1,
+      "2026-10": 1
     },
     "incendio": {
       "2026-07": 3,
@@ -599,7 +600,7 @@
     "infraestructura_agua": {
       "2026-08": 12,
       "2026-09": 8,
-      "2026-10": 2
+      "2026-10": 3
     },
     "accidente_transporte": {
       "2026-08": 1

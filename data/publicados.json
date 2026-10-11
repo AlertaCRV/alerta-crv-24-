@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-10-08T20:42:48+00:00",
     "municipio": "Valmore Rodríguez"
   },
-  "orden_publico::Distrito Capital::2026-10-08": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-08T20:39:41.437210+00:00",
-    "fecha_evento_temprana": "2026-10-08T19:51:06+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Apure::2026-10-08": {
     "severidad": "medio",
     "confirmado": false,
@@ -91,10 +84,10 @@
     "municipio": "Libertador"
   },
   "infraestructura_agua::Distrito Capital::2026-10-11": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-11T19:14:34.270610+00:00",
-    "fecha_evento_temprana": "2026-10-11T16:24:51+00:00",
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-11T23:01:05.737686+00:00",
+    "fecha_evento_temprana": "2026-10-11T18:40:14+00:00",
     "municipio": null
   },
   "vialidad::Monagas::2026-10-11": {
@@ -103,5 +96,12 @@
     "fecha_deteccion": "2026-10-11T19:14:51.718097+00:00",
     "fecha_evento_temprana": "2026-10-11T15:00:47+00:00",
     "municipio": "Cedeño"
+  },
+  "crisis_migratoria::La Guaira::2026-10-11": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-11T23:00:39.994006+00:00",
+    "fecha_evento_temprana": "2026-10-11T20:15:16+00:00",
+    "municipio": null
   }
 }

@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "crisis_migratoria",
+  "tipo_label": "Crisis migratoria",
+  "cerrado": false,
+  "generado": "2026-10-11T23:02:32.176733+00:00",
+  "actualizado_hasta": "2026-10-11T23:00:39.994006+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "En el mes de octubre de 2026 se registró un único evento de crisis migratoria, igual que en el mes anterior, manteniéndose la cifra de 1 evento(s) en ambos períodos (1 evento(s) registrados entonces vs. 1 en este período).\n\nLa única incidencia reportada corresponde a la crisis migratoria en La Guaira, catalogada con severidad alta, que ha generado desplazamiento de familias hacia el estado Guayana (Primicia (Bolivar)).\n\nEn respuesta a esta situación, socios del club Rotaract Salto Ángel y atletas de Force Games organizaron una campaña de recaudación de fondos que permitió la entrega de alimentos, medicinas, uniformes y útiles escolares a las familias desplazadas de La Guaira en Guayana (Primicia (Bolivar)).\n\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando la evolución de la población desplazada y coordinando acciones de apoyo humanitario para mitigar los efectos de la crisis migratoria en la región.",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/guayana/ciudad/entregan-donativo-familias-desplazadas-la-guaira-guayana/"
+    }
+  ]
+}
