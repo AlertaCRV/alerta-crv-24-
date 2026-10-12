@@ -696,3 +696,13 @@ def test_severidad_ia_mantenimiento_programado_se_limita_a_medio():
     assert f("alto", texto, "incendio") == "alto"
     assert f("alto", "rotura de tuberia matriz deja sin agua a miles", "infraestructura_agua") == "alto"
     assert f("bajo", texto, "infraestructura_agua") == "bajo"
+
+
+def test_reconciliar_municipio_parroquia_incoherente():
+    from verify_ai import _reconciliar_municipio_parroquia
+    ev = {"ubicacion": "Portuguesa", "municipio": "Santa Rosalía", "parroquia": "La Estación"}
+    _reconciliar_municipio_parroquia(ev)
+    assert ev["municipio"] == "Ospino" and ev["parroquia"] == "La Estación"
+    ok = {"ubicacion": "Portuguesa", "municipio": "Ospino", "parroquia": "La Estación"}
+    _reconciliar_municipio_parroquia(ok)
+    assert ok["municipio"] == "Ospino" and ok["parroquia"] == "La Estación"
