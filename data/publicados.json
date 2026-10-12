@@ -1,11 +1,4 @@
 {
-  "inundacion::Distrito Capital::2026-10-07": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-09T00:43:07.249916+00:00",
-    "fecha_evento_temprana": "2026-10-08T21:49:13+00:00",
-    "municipio": "Libertador"
-  },
   "orden_publico::Zulia::2026-10-08": {
     "severidad": "medio",
     "confirmado": false,
@@ -103,5 +96,12 @@
     "fecha_deteccion": "2026-10-11T23:00:39.994006+00:00",
     "fecha_evento_temprana": "2026-10-11T20:15:16+00:00",
     "municipio": null
+  },
+  "incendio::Distrito Capital::2026-10-12": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-12T02:19:15.250091+00:00",
+    "fecha_evento_temprana": "2026-10-12T01:40:34+00:00",
+    "municipio": "Libertador"
   }
 }

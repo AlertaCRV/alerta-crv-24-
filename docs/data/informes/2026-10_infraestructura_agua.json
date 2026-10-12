@@ -3,19 +3,27 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-10-11T01:46:05.383218+00:00",
-  "actualizado_hasta": "2026-10-07T09:08:38.147261+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-12T02:21:56.732932+00:00",
+  "actualizado_hasta": "2026-10-11T23:01:05.737686+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 8,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un único incidente de falla de agua, una disminución notable respecto a los ocho eventos reportados en septiembre de 2026. Esta reducción se refleja en los datos consolidados por la Cruz Roja Venezolana para el seguimiento de emergencias hídricas.\n\nEl único hecho ocurrido fue en la comunidad de Guaca, ubicada en la zona oeste del municipio Bermúdez, estado Sucre, donde los vecinos bloquearon la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los progresivos cortes del suministro de agua (El Tiempo). La protesta consistió en el cierre temporal de la carretera, una acción que buscaba llamar la atención de las autoridades y de la empresa proveedora del servicio.\n\nEste episodio, aunque aislado, subraya la importancia de mantener una vigilancia continua y de responder rápidamente a las demandas de la población ante interrupciones del servicio básico. La Cruz Roja seguirá monitoreando la situación y apoyando a las comunidades afectadas, con el objetivo de prevenir futuros incidentes y mitigar sus efectos.",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, frente a ocho en el mes anterior (septiembre de 2026). Esta reducción refleja una menor cantidad de incidentes reportados durante el período.\n\nEl Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira a partir de la medianoche del domingo 11 de octubre, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III (El Pitazo). Según el comunicado oficial difundido por Hidroven, los trabajos técnicos se desarrollarán durante 48 horas con el objetivo de optimizar la prestación del servicio hídrico en esas jurisdicciones (Primicia).\n\nEn la zona oeste del municipio Bermúdez, estado Sucre, vecinos de la comunidad de Guaca cerraron la vía nacional Carúpano‑Cumaná para protestar contra los progresivos cortes de agua que afectan a la población local (El Tiempo). La medida de presión buscó que las autoridades pongan fin a los cortes y restablezcan el suministro de manera continua.\n\nEstos incidentes, aunque limitados en número, evidencian la continuidad de problemas de infraestructura y la respuesta de la ciudadanía ante la falta de agua. Las intermitencias programadas y la protesta en Guaca son los principales hechos que marcaron el panorama de fallas de agua en octubre, mientras que la comparación con el mes anterior muestra una disminución en la frecuencia de los eventos.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/hidroven-anuncia-intermitencias-en-el-suministro-de-agua-en-caracas-miranda-y-la-guaira-por-mantenimiento-en-tuy-iii/"
+    },
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/agua-a-caracas-la-guaira-y-miranda-por-48-horas/"
     }
   ]
 }
