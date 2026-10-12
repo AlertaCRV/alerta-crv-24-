@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-11T01:46:44.221833+00:00",
-  "actualizado_hasta": "2026-10-11T01:42:31.473536+00:00",
-  "total_eventos": 6,
+  "generado": "2026-10-12T02:22:35.930102+00:00",
+  "actualizado_hasta": "2026-10-11T19:14:42.901013+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 6
+    "actual": 8
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron seis eventos de inundación en Venezuela, una notable reducción frente a los dieciséis eventos del mes anterior (16 evento(s) registrados entonces vs. 6 en este período). Las lluvias intensas que se presentaron a principios de mes provocaron afectaciones en varias parroquias de la capital y en otras regiones del país.\n\nSegún El Pitazo, las fuertes precipitaciones del 7 de octubre generaron una inundación que afectó aproximadamente a 80 viviendas en la calle El Colegio, sector Prados de María, parroquia Santa Rosalía, Distrito Capital. Además, se reportaron caídas de árboles en El Junquito y restricciones en la carretera Panamericana Caracas (El Pitazo).\n\nTurimiquire también informó que el mismo fenómeno de lluvias, identificado como el Cordonazo de San Francisco, provocó inundaciones en diversas zonas de Caracas, colapso de vías y daños en la infraestructura urbana. Los reportes de ciudadanos difundidos en redes sociales confirmaron la intensidad de las precipitaciones y sus efectos en la capital (Turimiquire).\n\nOtros incidentes relevantes incluyeron la crecida del río Manzanares en el estado Sucre, que dejó varias viviendas afectadas (La Verdad de Monagas), y la anegación de aulas en la Escuela Básica Estadal Virginia Ramos, en Guanare, donde los estudiantes tuvieron que recibir clases con los pies en el agua (Portuguesa Reporta).",
+  "narrativa": "En el mes de octubre de 2026 se registraron ocho eventos de inundación, una reducción respecto a los dieciséis eventos del mes anterior (2026‑09). Las lluvias intensas concentradas entre el 7 y el 10 de octubre provocaron afectaciones significativas en la capital y en varios estados, generando anegaciones, colapso de vías y daños a la infraestructura (El Impulso).\\\n\\\nEl Pitazo informó que en la parroquia Santa Rosalía, sector Prados de María, las precipitaciones del 7 de octubre causaron una inundación que afectó aproximadamente a 80 viviendas en la calle El Colegio (El Pitazo). Además, se reportaron deslizamientos y caída de árboles en El Junquito, así como restricciones en la carretera Panamericana (El Pitazo). Este evento, catalogado con severidad alta, constituye una de las inundaciones más graves en el Distrito Capital durante el período (El Pitazo).\\\n\\\nTurimiquire (Sucre) describió que el fenómeno meteorológico conocido como \"Cordonazo de San Francisco\" desencadenó lluvias torrenciales el mismo 7 de octubre, provocando inundaciones en varias zonas de Caracas y el colapso de vías (Turimiquire). La cobertura de Turimiquire también clasifica la inundación en el Distrito Capital como de severidad alta, corroborando la magnitud del evento reportado por El Pitazo (Turimiquire).\\\n\\\nEl 10 de octubre, El Pitazo reportó la caída de un árbol ornamental en la avenida Panteón esquina San Narciso, que dañó dos vehículos y dejó sin suministro eléctrico a varias áreas de la capital (El Pitazo). La Verdad confirmó el mismo incidente, añadiendo que el árbol tenía aproximadamente ocho metros de altura y causó daños estructurales en una edificación de tres niveles (La Verdad). Asimismo, El Tiempo señaló que las lluvias de esa fecha elevaron el caudal del río Guaire, generando anegaciones en múltiples calles y avenidas de Caracas (El Tiempo).\\\n\\\nFuera del Distrito Capital, La Verdad de Monagas informó que el desbordamiento del río Manzanares en el estado Sucre dejó varias viviendas afectadas por la crecida (La Verdad de Monagas). En Guanare, Portuguesa Reporta documentó que los alumnos de la Escuela Básica Estadal Virginia Ramos tuvieron que asistir a clases con los pies en el agua después de que su salón se anegara el 2 de octubre, evidenciando la crisis de infraestructura escolar ante las intensas precipitaciones (Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -32,6 +32,14 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/arboles-caidos-anegaciones-y-zonas-sin-luz-lo-que-dejan-las-lluvias-en-caracas-este-10-de-octubre/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/lluvias-intensas-ocasionaron-anegaciones-y-elevaron-caudal-del-guaire-en-caracas/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/lluvias-en-caracas-provocan-anegaciones-caida-de-arboles-y-danos-en-una-estructura/"
     },
     {
       "nombre": "La Verdad de Monagas",
