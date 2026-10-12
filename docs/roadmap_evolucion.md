@@ -9824,3 +9824,12 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 2. **Pendiente de decidir — `crisis_migratoria::La Guaira::2026-10-11`** (Primicia Bolívar, severidad "alto" por IA): nota sobre un donativo del club Rotaract a *familias desplazadas de La Guaira que viven en Guayana (Bolívar)*. No describe un incidente ni una emergencia en La Guaira, y la ubicación se tomó del lugar de origen, no de donde están las familias. Criterio ambiguo (¿`crisis_migratoria` se ubica en el origen o en el destino? ¿las notas de ayuda/donativos cuentan?; la nota del 15-09 sobre desplazados en Barquisimeto asignada a La Guaira siguió el mismo patrón). **No se modificó**; la alerta sigue publicada.
 
 **Revisado y sin cambios**: vialidad Monagas (volcamiento GNB, 1 fallecido y 9 heridos, respaldado), inundación Caracas (árboles caídos/anegaciones), salud pública Trujillo; incendio av. Baralt sigue pendiente de decisión de severidad (ver 10-10).
+
+## Auditoría diaria 12-10-2026: municipio/parroquia incoherentes en inundación de Portuguesa
+
+**Hallazgo** (alertas del 11-12/10 contrastadas con `historico_fuentes_texto.jsonl`): `inundacion::Portuguesa::2026-10-12` publicada con municipio "Santa Rosalía" y parroquia "La Estación", pero esa parroquia pertenece a Ospino (el puente colapsado de El Pitazo está en La Estación, Ospino; Santa Rosalía solo aparece por el desborde del Canal Piloto).
+- **Causa raíz**: las listas de municipios/parroquias que ve la IA están aplanadas y `_aplicar_ubicacion_ia` completaba cada campo por separado, sin validar que la parroquia perteneciera al municipio.
+- **Corrección**: `verify_ai._reconciliar_municipio_parroquia` — si la parroquia no pertenece al municipio, y es única en el estado, se corrige el municipio; si es ambigua se descarta la parroquia. Test nuevo en `tests/test_verify_ai_filtros.py`.
+- **Corrección retroactiva**: municipio → Ospino en `noticias.json`, `historico_eventos.jsonl` e `historico_fuentes_texto.jsonl`.
+
+**Revisado y sin cambios**: inundación Mérida (río Chama, parroquia Arias respaldada), incendio La Bolsa (Caracas, Primicia), vialidad Monagas. Siguen pendientes de decisión: severidad del incendio av. Baralt (10-10) y `crisis_migratoria::La Guaira` (11-10).

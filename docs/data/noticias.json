@@ -2,7 +2,7 @@
   {
     "tipo": "inundacion",
     "ubicacion": "Portuguesa",
-    "municipio": "Santa Rosalía",
+    "municipio": "Ospino",
     "parroquia": "La Estación",
     "severidad": "alto",
     "score": 1.4,
@@ -27,8 +27,8 @@
     "fecha_deteccion": "2026-10-12T19:17:00.966480+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "inundacion::Portuguesa::2026-10-12",
-    "titulo": "Inundación en Parroquia La Estación, Municipio Santa Rosalía, Portuguesa",
-    "texto": "📌 Inundación en Parroquia La Estación, Municipio Santa Rosalía, Portuguesa\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia La Estación, Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 12/10/2026, 1:35 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 3:17 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/12/ospino-en-alerta-tras-lluvias-de-las-ultimas-18-horas/"
+    "titulo": "Inundación en Parroquia La Estación, Municipio Ospino, Portuguesa",
+    "texto": "📌 Inundación en Parroquia La Estación, Municipio Ospino, Portuguesa\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia La Estación, Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 12/10/2026, 1:35 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 3:17 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/12/ospino-en-alerta-tras-lluvias-de-las-ultimas-18-horas/"
   },
   {
     "tipo": "inundacion",

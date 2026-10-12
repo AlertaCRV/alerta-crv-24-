@@ -1159,6 +1159,31 @@ def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_valido
         evento["municipio"] = municipio_ia
     if evento.get("parroquia") is None and parroquia_ia:
         evento["parroquia"] = parroquia_ia
+    _reconciliar_municipio_parroquia(evento)
+
+
+def _reconciliar_municipio_parroquia(evento):
+    """Garantiza que la parroquia pertenezca al municipio publicado. Las
+    listas que ve la IA estan aplanadas, asi que municipio y parroquia pueden
+    venir de fuentes/pasos distintos (caso real: municipio Santa Rosalia con
+    parroquia La Estacion, que es de Ospino, en un articulo multi-municipio).
+    Si la parroquia es unica en el estado, manda (es mas especifica) y se
+    corrige el municipio; si es ambigua, se descarta la parroquia."""
+    municipio, parroquia = evento.get("municipio"), evento.get("parroquia")
+    if not municipio or not parroquia:
+        return
+    detalle = load_ubicaciones_detalle().get(evento["ubicacion"], {})
+    municipios = detalle.get("municipios", {})
+    if parroquia in municipios.get(municipio, {}).get("parroquias", []):
+        return
+    duenos = [m for m, info in municipios.items() if parroquia in info.get("parroquias", [])]
+    if len(duenos) == 1:
+        print(f"[WARN] Parroquia '{parroquia}' no pertenece a '{municipio}'; "
+              f"se corrige el municipio a '{duenos[0]}'.")
+        evento["municipio"] = duenos[0]
+    else:
+        print(f"[WARN] Parroquia '{parroquia}' no pertenece a '{municipio}'; se descarta.")
+        evento["parroquia"] = None
 
 
 def _clave_pendiente(evento):
