@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": "Peña Blanca",
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/regionales/portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias",
+        "fecha": "2026-10-12T23:42:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-12T23:42:20+00:00",
+    "fecha_evento_temprana": "2026-10-12T23:42:20+00:00",
+    "fecha_deteccion": "2026-10-13T08:18:52.611796+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Portuguesa::2026-10-12",
+    "titulo": "Inundación en Parroquia Peña Blanca, Portuguesa",
+    "texto": "📌 Inundación en Parroquia Peña Blanca, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Peña Blanca, Portuguesa\n🕒 Hecho reportado: 12/10/2026, 7:42 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 4:18 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/regionales/portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/10/trabajadores-marchan-a-miraflores-este13oct-exigiran-aumento-de-salario-y-aguinaldos/",
+        "fecha": "2026-10-13T02:00:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-13T02:00:37+00:00",
+    "fecha_evento_temprana": "2026-10-13T02:00:37+00:00",
+    "fecha_deteccion": "2026-10-13T08:19:02.391976+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-10-13",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 12/10/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 4:19 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/trabajadores-marchan-a-miraflores-este13oct-exigiran-aumento-de-salario-y-aguinaldos/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -50,37 +102,6 @@
     "clave_dedup": "salud_publica::Trujillo::2026-10-12",
     "titulo": "Salud pública en Trujillo",
     "texto": "📌 Salud pública en Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 12/10/2026, 6:15 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 9:29 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/12/emilio-fajardo-exige-despolitizar-intoxicaciones-en-escuelas-de-trujillo-y-pide-una-investigacion-exhaustiva-12oct/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Portuguesa",
-    "municipio": "Ospino",
-    "parroquia": "La Estación",
-    "severidad": "alto",
-    "score": 1.4,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/",
-        "fecha": "2026-10-12T17:35:23+00:00"
-      },
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/10/12/ospino-en-alerta-tras-lluvias-de-las-ultimas-18-horas/",
-        "fecha": "2026-10-12T14:50:28+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-12T17:35:23+00:00",
-    "fecha_evento_temprana": "2026-10-12T14:50:28+00:00",
-    "fecha_deteccion": "2026-10-12T19:17:00.966480+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Portuguesa::2026-10-12",
-    "titulo": "Inundación en Parroquia La Estación, Municipio Ospino, Portuguesa",
-    "texto": "📌 Inundación en Parroquia La Estación, Municipio Ospino, Portuguesa\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia La Estación, Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 12/10/2026, 1:35 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 3:17 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/12/ospino-en-alerta-tras-lluvias-de-las-ultimas-18-horas/"
   },
   {
     "tipo": "inundacion",
