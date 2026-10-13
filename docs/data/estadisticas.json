@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-13T01:29:34.724357+00:00",
+  "actualizado": "2026-10-13T08:19:12.167011+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-12T22:15:00+00:00"
+    "hasta": "2026-10-13T02:00:37+00:00"
   },
-  "total_eventos": 456,
+  "total_eventos": 458,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 81,
+    "inundacion": 82,
     "infraestructura_electrica": 40,
     "deslizamiento": 32,
     "colapso_estructural": 4,
-    "orden_publico": 148,
+    "orden_publico": 149,
     "salud_publica": 14,
     "crisis_migratoria": 7,
     "incendio": 53,
@@ -93,11 +93,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 23,
+      "total": 24,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 9,
-        "medio": 5,
+        "medio": 6,
         "critico": 2,
         "alto": 7
       },
@@ -117,13 +117,13 @@
     },
     {
       "estado": "Miranda",
-      "total": 19,
+      "total": 20,
       "confirmados": 2,
       "por_severidad": {
         "alto": 3,
         "medio": 5,
         "critico": 4,
-        "bajo": 7
+        "bajo": 8
       },
       "severidad_dominante": "critico"
     },
@@ -429,7 +429,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 6
+      "orden_publico": 7
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -480,7 +480,7 @@
     },
     "Portuguesa": {
       "orden_publico": 13,
-      "inundacion": 5,
+      "inundacion": 6,
       "incendio": 1,
       "infraestructura_agua": 1,
       "vialidad": 3
@@ -518,8 +518,8 @@
   "por_severidad": {
     "alto": 106,
     "critico": 52,
-    "medio": 158,
-    "bajo": 130,
+    "medio": 159,
+    "bajo": 131,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -533,7 +533,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 10
+      "2026-10": 11
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -556,7 +556,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 26
+      "2026-10": 27
     },
     "salud_publica": {
       "2026-07": 1,

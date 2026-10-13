@@ -49,11 +49,11 @@
     "municipio": "Libertador"
   },
   "inundacion::Portuguesa::2026-10-12": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-12T19:17:00.966480+00:00",
-    "fecha_evento_temprana": "2026-10-12T14:50:28+00:00",
-    "municipio": "Santa Rosalía"
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-13T08:18:52.611796+00:00",
+    "fecha_evento_temprana": "2026-10-12T23:42:20+00:00",
+    "municipio": null
   },
   "inundacion::Merida::2026-10-12": {
     "severidad": "alto",
@@ -74,6 +74,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-13T01:29:21.649203+00:00",
     "fecha_evento_temprana": "2026-10-12T22:15:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-10-13": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-13T08:19:02.391976+00:00",
+    "fecha_evento_temprana": "2026-10-13T02:00:37+00:00",
     "municipio": null
   }
 }
