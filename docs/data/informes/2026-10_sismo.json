@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-12T02:23:20.359553+00:00",
+  "generado": "2026-10-13T01:33:06.727804+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un único evento sísmico, lo que representa una disminución respecto al mes anterior, donde se contabilizaron dos eventos (Comparación con el período anterior (2026-09): 2 evento(s) registrados entonces vs. 1 en este período).\n\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 en el oriente de Venezuela, cuyo epicentro se ubicó en la zona costera cercana a Güiria, estado Sucre (Nuevo Dia). Ambas fuentes coinciden en que el temblor se sintió intensamente en varias localidades de la región, generando un considerable susto entre los habitantes (Yaracuy al Dia). Hasta el momento no se han registrado daños materiales significativos ni víctimas mortales como consecuencia del sismo (Nuevo Dia; Yaracuy al Dia).\n\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando la situación y permanecen en alerta para atender cualquier eventualidad que pudiera derivarse de este fenómeno, reforzando los protocolos de respuesta ante emergencias sísmicas en la zona afectada.",
+  "narrativa": "Durante el mes de octubre de 2026 la Cruz Roja Venezolana registró un solo evento sísmico, cifra que contrasta con los dos eventos reportados en el mes anterior (septiembre de 2026) (Comparación).\\n\\nEl 2 de octubre de 2026 se produjo un sismo de magnitud 5,0 en el oriente del país, cuyo epicentro se ubicó en la zona costera cercana a Güiria, en el estado Sucre (Nuevo Dia; Yaracuy al Dia). El temblor fue percibido con intensidad en varias localidades de la región (Nuevo Dia).\\n\\nEl fuerte movimiento generó un considerable susto entre la población, provocando que muchos residentes abandonaran sus hogares en busca de lugares seguros (Nuevo Dia). Sin embargo, hasta el momento no se han reportado daños materiales significativos ni víctimas mortales o heridos (Nuevo Dia; Yaracuy al Dia).\\n\\nAnte la ausencia de daños y de personas afectadas, la Cruz Roja mantuvo sus protocolos de monitoreo y vigilancia, sin requerir la activación de operaciones de respuesta de emergencia para este sismo.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",

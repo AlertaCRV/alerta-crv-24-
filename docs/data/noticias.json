@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.6,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporte Confidencial (Nueva Esparta)",
+        "link": "https://reporteconfidencial.info/2026/10/12/federacion-venezolana-maestros/",
+        "fecha": "2026-10-12T16:49:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-12T16:49:13+00:00",
+    "fecha_evento_temprana": "2026-10-12T16:49:13+00:00",
+    "fecha_deteccion": "2026-10-13T01:28:17.135597+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-10-12",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 12/10/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 9:28 p.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/10/12/federacion-venezolana-maestros/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Trujillo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/12/emilio-fajardo-exige-despolitizar-intoxicaciones-en-escuelas-de-trujillo-y-pide-una-investigacion-exhaustiva-12oct/",
+        "fecha": "2026-10-12T22:15:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-12T22:15:00+00:00",
+    "fecha_evento_temprana": "2026-10-12T22:15:00+00:00",
+    "fecha_deteccion": "2026-10-13T01:29:21.649203+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Trujillo::2026-10-12",
+    "titulo": "Salud pública en Trujillo",
+    "texto": "📌 Salud pública en Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Trujillo\n🕒 Hecho reportado: 12/10/2026, 6:15 p.m.\n🔎 Detectado por el sistema: 12/10/2026, 9:29 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/12/emilio-fajardo-exige-despolitizar-intoxicaciones-en-escuelas-de-trujillo-y-pide-una-investigacion-exhaustiva-12oct/"
+  },
+  {
     "tipo": "inundacion",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -1580,171 +1632,5 @@
     "clave_dedup": "inundacion::Sucre::2026-09-29",
     "titulo": "Inundación en Sucre",
     "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 29/09/2026, 8:55 a.m.\n🔎 Detectado por el sistema: 29/09/2026, 9:07 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/mas-de-150-funcionarios-atienden-la-emergencia-por-el-desbordamiento-del-rio-agua-blanca-en-sucre/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 2.0,
-    "confirmado": true,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/",
-        "fecha": "2026-09-28T22:51:15+00:00"
-      },
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
-        "fecha": "2026-09-28T20:31:47+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/",
-        "fecha": "2026-09-28T17:37:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T22:51:15+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:37:13+00:00",
-    "fecha_deteccion": "2026-09-29T00:42:03.096914+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-09-28",
-    "titulo": "Orden público en Zulia",
-    "texto": "📌 Orden público en Zulia\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 28/09/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 8:42 p.m.\n📊 Fuentes independientes: 3 (score 2.0)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/\n  • La Manana (Falcon): https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/",
-        "fecha": "2026-09-28T22:51:15+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T22:51:15+00:00",
-    "fecha_evento_temprana": "2026-09-28T22:51:15+00:00",
-    "fecha_deteccion": "2026-09-29T00:42:12.232923+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Aragua::2026-09-28",
-    "titulo": "Orden público en Aragua",
-    "texto": "📌 Orden público en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 28/09/2026, 6:51 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 8:42 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/",
-        "fecha": "2026-09-28T20:31:47+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T20:31:47+00:00",
-    "fecha_evento_temprana": "2026-09-28T20:31:47+00:00",
-    "fecha_deteccion": "2026-09-28T20:45:46.097244+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-09-28",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 28/09/2026, 4:31 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/nuevo-apagon-dejo-a-cantaura-sin-luz-durante-dos-horas/",
-        "fecha": "2026-09-28T18:30:10+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T18:30:10+00:00",
-    "fecha_evento_temprana": "2026-09-28T18:30:10+00:00",
-    "fecha_deteccion": "2026-09-28T20:46:37.434808+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-09-28",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 28/09/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/nuevo-apagon-dejo-a-cantaura-sin-luz-durante-dos-horas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": "Chacao",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela",
-        "fecha": "2026-09-28T17:55:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T17:55:59+00:00",
-    "fecha_evento_temprana": "2026-09-28T17:55:59+00:00",
-    "fecha_deteccion": "2026-09-28T20:47:04.139518+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Miranda::2026-09-28",
-    "titulo": "Orden público en Municipio Chacao, Miranda",
-    "texto": "📌 Orden público en Municipio Chacao, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Chacao, Miranda\n🕒 Hecho reportado: 28/09/2026, 1:55 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela/?utm_source=rss&utm_medium=rss&utm_campaign=tras-nuevas-liberaciones-de-presos-politicos-recuerdan-que-aun-quedan-decenas-detenidos-en-venezuela"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/",
-        "fecha": "2026-09-28T16:30:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-28T16:30:40+00:00",
-    "fecha_evento_temprana": "2026-09-28T16:30:40+00:00",
-    "fecha_deteccion": "2026-09-28T20:48:33.097024+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-28",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 28/09/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 28/09/2026, 4:48 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/"
   }
 ]

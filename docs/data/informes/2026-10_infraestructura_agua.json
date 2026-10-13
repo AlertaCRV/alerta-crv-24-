@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-10-12T02:21:56.732932+00:00",
+  "generado": "2026-10-13T01:31:59.926691+00:00",
   "actualizado_hasta": "2026-10-11T23:01:05.737686+00:00",
   "total_eventos": 3,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 8,
     "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, frente a ocho en el mes anterior (septiembre de 2026). Esta reducción refleja una menor cantidad de incidentes reportados durante el período.\n\nEl Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira a partir de la medianoche del domingo 11 de octubre, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III (El Pitazo). Según el comunicado oficial difundido por Hidroven, los trabajos técnicos se desarrollarán durante 48 horas con el objetivo de optimizar la prestación del servicio hídrico en esas jurisdicciones (Primicia).\n\nEn la zona oeste del municipio Bermúdez, estado Sucre, vecinos de la comunidad de Guaca cerraron la vía nacional Carúpano‑Cumaná para protestar contra los progresivos cortes de agua que afectan a la población local (El Tiempo). La medida de presión buscó que las autoridades pongan fin a los cortes y restablezcan el suministro de manera continua.\n\nEstos incidentes, aunque limitados en número, evidencian la continuidad de problemas de infraestructura y la respuesta de la ciudadanía ante la falta de agua. Las intermitencias programadas y la protesta en Guaca son los principales hechos que marcaron el panorama de fallas de agua en octubre, mientras que la comparación con el mes anterior muestra una disminución en la frecuencia de los eventos.",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, una disminución notable respecto a los ocho eventos reportados en el mes anterior (comparación con el período anterior: 8 evento(s) registrados entonces vs. 3 en este período).\\n\\nEl Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira a partir de la medianoche del domingo 11 de octubre, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III, con una duración estimada de 48 horas (El Pitazo). Según el comunicado oficial difundido por Hidroven y reproducido por Primicia, el objetivo de estas labores es optimizar la prestación del servicio hídrico en las tres jurisdicciones, y se informó que se registrarían intermitencias durante el periodo de ejecución (Primicia).\\n\\nEn el estado Sucre, vecinos de la comunidad de Guaca, ubicada en el municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los cortes progresivos de agua que afectan a la zona, manifestando su descontento ante la falta de suministro (El Tiempo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",

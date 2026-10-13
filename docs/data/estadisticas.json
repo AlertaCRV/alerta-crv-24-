@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-12T23:12:58.326080+00:00",
+  "actualizado": "2026-10-13T01:29:34.724357+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-12T18:03:53+00:00"
+    "hasta": "2026-10-12T22:15:00+00:00"
   },
-  "total_eventos": 454,
+  "total_eventos": 456,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 81,
     "infraestructura_electrica": 40,
     "deslizamiento": 32,
     "colapso_estructural": 4,
-    "orden_publico": 147,
-    "salud_publica": 13,
+    "orden_publico": 148,
+    "salud_publica": 14,
     "crisis_migratoria": 7,
     "incendio": 53,
     "vialidad": 21,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 87,
+      "total": 88,
       "confirmados": 13,
       "por_severidad": {
         "alto": 16,
         "medio": 28,
-        "bajo": 27,
+        "bajo": 28,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -164,6 +164,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Trujillo",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 3,
+        "critico": 1,
+        "alto": 3
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Bolivar",
       "total": 15,
       "confirmados": 1,
@@ -173,18 +185,6 @@
         "critico": 2,
         "alto": 1,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 3,
-        "critico": 1,
-        "alto": 2
       },
       "severidad_dominante": "critico"
     },
@@ -352,7 +352,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 25,
+      "orden_publico": 26,
       "incendio": 20,
       "vialidad": 4,
       "infraestructura_electrica": 8,
@@ -370,7 +370,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 1,
-      "salud_publica": 2
+      "salud_publica": 3
     },
     "Barinas": {
       "deslizamiento": 3,
@@ -516,10 +516,10 @@
     }
   },
   "por_severidad": {
-    "alto": 105,
+    "alto": 106,
     "critico": 52,
     "medio": 158,
-    "bajo": 129,
+    "bajo": 130,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -556,13 +556,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 25
+      "2026-10": 26
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 2
+      "2026-10": 3
     },
     "crisis_migratoria": {
       "2026-07": 4,
