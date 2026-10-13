@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-10-13T21:18:40.888884+00:00",
+  "actualizado": "2026-10-13T23:13:28.041999+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-13T21:00:27+00:00"
   },
-  "total_eventos": 469,
+  "total_eventos": 466,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
     "infraestructura_electrica": 40,
     "deslizamiento": 34,
     "colapso_estructural": 5,
-    "orden_publico": 155,
+    "orden_publico": 153,
     "salud_publica": 14,
     "crisis_migratoria": 7,
     "incendio": 53,
-    "vialidad": 23,
+    "vialidad": 22,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -43,12 +43,12 @@
     },
     {
       "estado": "Zulia",
-      "total": 41,
+      "total": 40,
       "confirmados": 7,
       "por_severidad": {
         "medio": 17,
         "critico": 4,
-        "bajo": 10,
+        "bajo": 9,
         "sin_clasificar": 1,
         "alto": 9
       },
@@ -104,18 +104,6 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Miranda",
-      "total": 21,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "medio": 6,
-        "critico": 4,
-        "bajo": 8
-      },
-      "severidad_dominante": "critico"
-    },
-    {
       "estado": "Tachira",
       "total": 20,
       "confirmados": 0,
@@ -128,15 +116,14 @@
       "severidad_dominante": "critico"
     },
     {
-      "estado": "Yaracuy",
-      "total": 19,
-      "confirmados": 1,
+      "estado": "Miranda",
+      "total": 20,
+      "confirmados": 2,
       "por_severidad": {
-        "critico": 5,
-        "bajo": 5,
-        "medio": 6,
-        "sin_clasificar": 1,
-        "alto": 2
+        "alto": 3,
+        "medio": 5,
+        "critico": 4,
+        "bajo": 8
       },
       "severidad_dominante": "critico"
     },
@@ -150,6 +137,19 @@
         "medio": 3
       },
       "severidad_dominante": "alto"
+    },
+    {
+      "estado": "Yaracuy",
+      "total": 18,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 5,
+        "bajo": 5,
+        "medio": 6,
+        "sin_clasificar": 1,
+        "alto": 1
+      },
+      "severidad_dominante": "critico"
     },
     {
       "estado": "Falcon",
@@ -340,7 +340,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 18,
+      "orden_publico": 17,
       "sismo": 2,
       "salud_publica": 1,
       "ataque_armado": 1,
@@ -429,7 +429,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 8
+      "orden_publico": 7
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -453,8 +453,7 @@
       "infraestructura_electrica": 3,
       "orden_publico": 5,
       "deslizamiento": 1,
-      "infraestructura_agua": 1,
-      "vialidad": 1
+      "infraestructura_agua": 1
     },
     "Aragua": {
       "orden_publico": 11,
@@ -518,10 +517,10 @@
     }
   },
   "por_severidad": {
-    "alto": 109,
+    "alto": 108,
     "critico": 53,
-    "medio": 162,
-    "bajo": 135,
+    "medio": 161,
+    "bajo": 134,
     "sin_clasificar": 10
   },
   "serie_mensual_por_tipo": {
@@ -559,7 +558,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 33
+      "2026-10": 31
     },
     "salud_publica": {
       "2026-07": 1,
@@ -582,7 +581,7 @@
     "vialidad": {
       "2026-08": 10,
       "2026-09": 9,
-      "2026-10": 4
+      "2026-10": 3
     },
     "sismo": {
       "2026-08": 5,
