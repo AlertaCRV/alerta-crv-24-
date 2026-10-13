@@ -112,7 +112,11 @@ LISTA_NEGRA_POR_ESTADO = {
     # real redirigir un hecho 100% extranjero): se descarta directamente.
     "Miranda": ["francisco de miranda", "generalisimo francisco de miranda", "plaza miranda",
                 "tramo miranda", "el llanito, en petare, estado miranda",
-                "interpretar a miranda en"],
+                "interpretar a miranda en",
+                # Auditoria diaria 13-10-2026: "Edgar Miranda" es el vocero
+                # (apellido) de productores de arroz de Portuguesa; bastaba
+                # para publicar orden_publico en el estado Miranda.
+                "edgar miranda"],
     # Caso real (02-08-2026): una golpiza durante un partido de futbol en
     # Barquisimeto (estado Lara, entre aficion del Deportivo Lara y del
     # Portuguesa FC) tambien se publicaba como alerta de Carabobo -- el
@@ -269,8 +273,17 @@ LISTA_NEGRA_POR_ESTADO = {
     # data/historico_fuentes_texto.jsonl que ambas frases son exclusivas de
     # este articulo.
     "Falcon": ["manifestantes de oriente, falcon y caracas"],
+    # Auditoria diaria 13-10-2026: el deterioro de la via en la parroquia
+    # Moroturo (municipio Urdaneta, Lara) se describia como "la via que
+    # conecta Yaracuy, Lara y Falcon"; la lista de estados conectados no es
+    # la ubicacion del hecho y generaba una alerta de vialidad en Yaracuy.
+    "Yaracuy": ["conecta yaracuy, lara y falcon"],
     "Zulia": [
         "jubilados petroleros de zulia en peaje de tazon",
+        # Auditoria diaria 13-10-2026: "la Falcon-Zulia" es el nombre de una
+        # carretera (protesta en Bariro, Buchivacoa, Falcon), no evidencia
+        # de un hecho en el estado Zulia.
+        "falcon-zulia",
         # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): un explicativo
         # nacional sobre el deficit de generacion electrica ("¿Cuando
         # terminaran los apagones en Venezuela?") menciona Zulia solo como

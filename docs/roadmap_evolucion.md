@@ -9833,3 +9833,15 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 - **Corrección retroactiva**: municipio → Ospino en `noticias.json`, `historico_eventos.jsonl` e `historico_fuentes_texto.jsonl`.
 
 **Revisado y sin cambios**: inundación Mérida (río Chama, parroquia Arias respaldada), incendio La Bolsa (Caracas, Primicia), vialidad Monagas. Siguen pendientes de decisión: severidad del incendio av. Baralt (10-10) y `crisis_migratoria::La Guaira` (11-10).
+
+## Auditoría diaria 13-10-2026: tres falsos positivos de ubicación (apellido "Miranda", carretera "Falcón-Zulia", lista de estados conectados)
+
+**Hallazgos** (alertas del 13-10 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **`orden_publico::Miranda`** (Portuguesa Reporta): la protesta de productores de arroz es en Araure/Payara (Portuguesa); "Miranda" solo era el apellido del vocero ("Edgar Miranda"). **Corrección**: `LISTA_NEGRA_POR_ESTADO["Miranda"]` incluye `"edgar miranda"`.
+2. **`orden_publico::Zulia`** (Nuevo Día): la protesta de Bariro (Buchivacoa) es en Falcón; "la Falcón-Zulia" es el nombre de la carretera. **Corrección**: `LISTA_NEGRA_POR_ESTADO["Zulia"]` incluye `"falcon-zulia"`.
+3. **`vialidad::Yaracuy`** (El Impulso): deterioro de la vía en Moroturo (municipio Urdaneta, Lara); Yaracuy salía de "la vía que conecta Yaracuy, Lara y Falcón". **Corrección**: `LISTA_NEGRA_POR_ESTADO["Yaracuy"]` incluye `"conecta yaracuy, lara y falcon"`. La nota tampoco describe un incidente con víctimas (severidad "alto" sin base).
+
+**Corrección retroactiva**: retiradas las tres alertas de `noticias.json` y sus registros de `historico_eventos.jsonl`/`historico_fuentes_texto.jsonl`; `estadisticas.json` regenerado. Se conserva el registro Miranda de La Noticia de Barinas (convocatoria de voceros sindicales de Miranda a la marcha a Miraflores), de severidad baja. Frases verificadas como exclusivas de estos artículos; 2 casos nuevos en `tests/casos_clasificacion.jsonl`; los 3 casos históricos que fijaban los falsos positivos en `test_classify_regresion_historico` desaparecen al retirar el dato.
+
+**Revisado y sin cambios**: deslizamiento Aragua (Choroní, respaldado), colapso de puente en Ospino, vialidad Guanare (2 fallecidos), orden público Sucre/Lara/Portuguesa. Siguen pendientes de decisión: severidad del incendio av. Baralt (10-10) y `crisis_migratoria::La Guaira` (11-10), y el balance multi-estado de Amazonas (09-10).
