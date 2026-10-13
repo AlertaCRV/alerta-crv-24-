@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-12T02:22:35.930102+00:00",
-  "actualizado_hasta": "2026-10-11T19:14:42.901013+00:00",
-  "total_eventos": 8,
+  "generado": "2026-10-13T01:32:32.602792+00:00",
+  "actualizado_hasta": "2026-10-12T19:17:27.004196+00:00",
+  "total_eventos": 10,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 8
+    "actual": 10
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron ocho eventos de inundación, una reducción respecto a los dieciséis eventos del mes anterior (2026‑09). Las lluvias intensas concentradas entre el 7 y el 10 de octubre provocaron afectaciones significativas en la capital y en varios estados, generando anegaciones, colapso de vías y daños a la infraestructura (El Impulso).\\\n\\\nEl Pitazo informó que en la parroquia Santa Rosalía, sector Prados de María, las precipitaciones del 7 de octubre causaron una inundación que afectó aproximadamente a 80 viviendas en la calle El Colegio (El Pitazo). Además, se reportaron deslizamientos y caída de árboles en El Junquito, así como restricciones en la carretera Panamericana (El Pitazo). Este evento, catalogado con severidad alta, constituye una de las inundaciones más graves en el Distrito Capital durante el período (El Pitazo).\\\n\\\nTurimiquire (Sucre) describió que el fenómeno meteorológico conocido como \"Cordonazo de San Francisco\" desencadenó lluvias torrenciales el mismo 7 de octubre, provocando inundaciones en varias zonas de Caracas y el colapso de vías (Turimiquire). La cobertura de Turimiquire también clasifica la inundación en el Distrito Capital como de severidad alta, corroborando la magnitud del evento reportado por El Pitazo (Turimiquire).\\\n\\\nEl 10 de octubre, El Pitazo reportó la caída de un árbol ornamental en la avenida Panteón esquina San Narciso, que dañó dos vehículos y dejó sin suministro eléctrico a varias áreas de la capital (El Pitazo). La Verdad confirmó el mismo incidente, añadiendo que el árbol tenía aproximadamente ocho metros de altura y causó daños estructurales en una edificación de tres niveles (La Verdad). Asimismo, El Tiempo señaló que las lluvias de esa fecha elevaron el caudal del río Guaire, generando anegaciones en múltiples calles y avenidas de Caracas (El Tiempo).\\\n\\\nFuera del Distrito Capital, La Verdad de Monagas informó que el desbordamiento del río Manzanares en el estado Sucre dejó varias viviendas afectadas por la crecida (La Verdad de Monagas). En Guanare, Portuguesa Reporta documentó que los alumnos de la Escuela Básica Estadal Virginia Ramos tuvieron que asistir a clases con los pies en el agua después de que su salón se anegara el 2 de octubre, evidenciando la crisis de infraestructura escolar ante las intensas precipitaciones (Portuguesa Reporta).",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron diez eventos de inundación en Venezuela, lo que representa una reducción frente a los dieciséis eventos reportados en el mes anterior (2026‑09). Esta disminución se observa pese a la persistencia de lluvias intensas que generaron daños materiales y afectaciones a la población en varias regiones del país.\n\nEn el Distrito Capital, las fuertes precipitaciones del 7 de octubre provocaron una inundación que afectó aproximadamente a 80 viviendas en la calle El Colegio, sector Prados de María de la parroquia Santa Rosalía (El Pitazo). Además, se reportaron anegaciones en El Valle, caída de árboles en El Junquito y restricciones en la carretera Panamericana, evidenciando la severidad del fenómeno en la capital (El Pitazo).\n\nOtro informe sobre el Distrito Capital, proveniente de Turimiquire (Sucre), describe que el llamado \"Cordonazo de San Francisco\" desencadenó inundaciones y el colapso de vías en varios sectores de Caracas el mismo 7 de octubre (Turimiquire). Los residentes reportaron intensas lluvias, vientos y tormentas eléctricas que agravaron la situación, confirmando la alta severidad de la inundación en la zona.\n\nEn el estado Portuguesa, las lluvias del fin de semana del 11‑12 de octubre causaron el colapso de un puente recién inaugurado en la parroquia La Estación, municipio Ospino, y generaron anegaciones de viviendas en los municipios de Ospino, Santa Rosalía y Araure (El Pitazo). Las autoridades locales activaron planes de respuesta para asistir a las familias afectadas por los daños estructurales y la pérdida de infraestructura.\n\nEn Mérida, la crecida del río Chama arrastró a una mujer, Belkis Mora, mientras intentaba cruzar un afluente en el sector El Arenal del municipio Libertador, el 9 de octubre (Notiapure). El Sistema de Gestión de Riesgo del estado activó un operativo de búsqueda intensiva para localizar a la víctima, subrayando la gravedad de la inundación en la región.\n",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -20,6 +20,18 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/lluvias-causan-inundaciones-y-deslizamientos-en-sectores-de-caracas-este-7oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/sucesos/continua-la-busqueda-de-una-mujer-tras-ser-arrastrada-por-la-crecida-del-rio-chama-en-merida/"
+    },
+    {
+      "nombre": "Portuguesa al Dia",
+      "link": "https://portuguesaaldia.com/2026/10/12/ospino-en-alerta-tras-lluvias-de-las-ultimas-18-horas/"
     },
     {
       "nombre": "Turimiquire (Sucre)",

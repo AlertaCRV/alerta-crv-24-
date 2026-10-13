@@ -3,7 +3,7 @@
   "tipo": "tormenta_electrica",
   "tipo_label": "Tormenta eléctrica",
   "cerrado": false,
-  "generado": "2026-10-12T02:23:32.667542+00:00",
+  "generado": "2026-10-13T01:33:11.128601+00:00",
   "actualizado_hasta": "2026-10-07T21:32:52.728016+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 1,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un solo evento de tormenta eléctrica en el territorio nacional, cifra que coincide con la del mes anterior, septiembre de 2026, cuando también se reportó 1 evento (comparación con el período anterior). \n\nEl único incidente ocurrió en la localidad de Tovar, en el estado Mérida, y fue catalogado con severidad alta debido a la intensidad del rayo que impactó la zona (Primicia (Bolivar)). \n\nDos adolescentes resultaron heridos por el rayo; ambos fueron trasladados a un centro de salud local donde permanecen bajo observación médica mientras se evalúan sus lesiones (Primicia (Bolivar)). \n\nLa Cruz Roja Venezolana mantiene activas sus unidades de respuesta en la región para brindar atención inmediata y seguimiento a los afectados, reforzando la importancia de la vigilancia meteorológica y la educación preventiva ante fenómenos eléctricos (Primicia (Bolivar)).",
+  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento de tormenta eléctrica, cifra que coincide con la del mes anterior, septiembre de 2026, cuando también se reportó un solo incidente (1 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único suceso ocurrió en el estado Mérida, específicamente en la localidad de Tovar, donde una tormenta eléctrica de alta severidad provocó que un rayo impactara a dos adolescentes. Ambos jóvenes resultaron heridos y fueron trasladados a un centro de salud local, donde permanecen bajo observación médica (Primicia).\\n\\nHasta la fecha no se han reportado víctimas fatales ni daños materiales significativos asociados a este evento; la información disponible se limita a las lesiones de los adolescentes y su atención médica (Primicia).",
   "fuentes": [
     {
       "nombre": "Primicia (Bolivar)",
