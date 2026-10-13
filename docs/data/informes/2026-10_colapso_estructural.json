@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "colapso_estructural",
+  "tipo_label": "Colapso estructural",
+  "cerrado": false,
+  "generado": "2026-10-13T16:13:27.618042+00:00",
+  "actualizado_hasta": "2026-10-13T16:12:11.952473+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026, el monitoreo de emergencias registró un solo incidente de colapso estructural, cifra que se mantiene idéntica al registrado en septiembre de 2026 (1 evento(s) registrados entonces vs. 1 en este período).\n\nEl 13 de octubre, un puente recién inaugurado en la localidad de Ospino, estado Portuguesa, colapsó a menos de 72 horas de su apertura debido a intensas lluvias, provocando daños materiales y la interrupción del tránsito de productores cafetaleros (El Impulso (Lara)).\n\nEl colapso generó la pérdida del acceso vehicular en la zona, obligando a las autoridades locales a activar planes de contingencia y a la Cruz Roja Venezolana a coordinar asistencia para los afectados, aunque no se reportaron heridos graves ni víctimas fatales (El Impulso (Lara)).\n\nLa coincidencia en el número de eventos entre los dos meses sugiere que, pese a la recurrencia de fenómenos climáticos extremos, la incidencia de colapsos estructurales se mantiene estable en el periodo analizado (1 evento(s) registrados entonces vs. 1 en este período).",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/13/video-colapsa-puente-en-portuguesa-a-menos-de-72-horas-de-su-inauguracion-por-intensas-lluvias-13oct/"
+    }
+  ]
+}

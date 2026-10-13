@@ -36,8 +36,8 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-12T19:20:23.385770+00:00",
-    "total_eventos": 25
+    "generado": "2026-10-13T16:14:24.415804+00:00",
+    "total_eventos": 29
   },
   {
     "periodo": "2026-10",
@@ -85,6 +85,14 @@
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
     "generado": "2026-10-13T01:30:47.527725+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-10",
+    "tipo": "colapso_estructural",
+    "tipo_label": "Colapso estructural",
+    "cerrado": false,
+    "generado": "2026-10-13T16:13:27.618042+00:00",
     "total_eventos": 1
   },
   {

@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-12T19:20:23.385770+00:00",
-  "actualizado_hasta": "2026-10-09T23:27:41.608404+00:00",
-  "total_eventos": 25,
+  "generado": "2026-10-13T16:14:24.415804+00:00",
+  "actualizado_hasta": "2026-10-13T16:11:29.490978+00:00",
+  "total_eventos": 29,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 25
+    "actual": 29
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 25 incidentes de orden público, una notable reducción frente a los 76 registrados en septiembre de 2026. Esta disminución refleja una menor frecuencia de protestas y disturbios en el territorio nacional durante el período analizado.\n\nEn el estado Zulia, la noche del 30 de septiembre se produjeron protestas nocturnas motivadas por los constantes cortes eléctricos, con ciudadanos bloqueando avenidas y carreteras en rechazo a los racionamientos de energía (La Prensa de Lara). Simultáneamente, en Guárico, manifestantes salieron a las calles exigiendo el fin de los apagones, siendo reprimidos por la Guardia Nacional (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en los municipios de Guacara, Yagua y Malavé, generando un fuerte congestionamiento del tráfico en la Autopista Regional del Centro (ARC) (El Impulso).\n\nEl estado Portuguesa experimentó dos incidentes de alto impacto. En la parroquia Payara, del municipio Páez, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire). Por otro lado, en el municipio Ospino, vecinos marcharon contra los prolongados apagones a pesar del fuerte despliegue policial, iniciando con un cacerolazo y convirtiéndose en una marcha que recorrió la avenida principal (Portuguesa Reporta).\n\nEn Yaracuy, la situación escaló a violencia mortal: en el sector Sabanita, Yaritagua, un tiroteo dejó un joven fallecido y otro herido, según informó el Hospital Universitario Antonio María Pineda (Yaracuy al Dia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 29 incidentes de orden público, una disminución notable respecto a los 76 eventos del mes anterior (septiembre 2026). Esta reducción se observa pese a la persistencia de protestas vinculadas a los recurrentes cortes eléctricos y a episodios de violencia puntual.\n\nEn el estado Zulia se registraron protestas nocturnas contra los cortes eléctricos, con manifestantes bloqueando avenidas y carreteras, lo que generó alteraciones en el orden público (La Prensa de Lara). En Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones, provocando enfrentamientos con la Guardia Nacional y disturbios en varias localidades (El Pitazo). En Carabobo, las protestas por racionamientos eléctricos en Guacara, Yagua y Malavé colapsaron la Autopista Regional del Centro (ARC) y generaron congestión vehicular significativa (El Impulso (Lara)).\n\nEn el estado Portuguesa se documentaron dos eventos de alta severidad. En la parroquia Payara, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)). Asimismo, en el municipio Ospino, vecinos marcharon contra los apagones a pesar de un fuerte despliegue policial, convirtiendo un cacerolazo en una marcha que recorrió la avenida principal (Portuguesa Reporta).\n\nEl incidente más crítico se produjo en Yaracuy, donde un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, elevando la gravedad de los hechos de orden público en la región (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -66,6 +66,10 @@
       "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
     },
     {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/trabajadores-marchan-a-miraflores-este13oct-exigiran-aumento-de-salario-y-aguinaldos/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/"
     },
@@ -82,8 +86,16 @@
       "link": "https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/"
     },
     {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/protesta-en-la-falcon-zulia-habitantes-de-bariro-exigen-presencia-de-autoridades/"
+    },
+    {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/protestas-en-coro-ante-crisis-de-servicios-basicos/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/10/12/federacion-venezolana-maestros/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
