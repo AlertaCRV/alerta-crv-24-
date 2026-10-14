@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-13T16:14:24.415804+00:00",
-  "actualizado_hasta": "2026-10-13T16:11:29.490978+00:00",
-  "total_eventos": 29,
+  "generado": "2026-10-14T05:21:40.495168+00:00",
+  "actualizado_hasta": "2026-10-14T05:17:50.528874+00:00",
+  "total_eventos": 33,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 29
+    "actual": 33
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 29 incidentes de orden público, una disminución notable respecto a los 76 eventos del mes anterior (septiembre 2026). Esta reducción se observa pese a la persistencia de protestas vinculadas a los recurrentes cortes eléctricos y a episodios de violencia puntual.\n\nEn el estado Zulia se registraron protestas nocturnas contra los cortes eléctricos, con manifestantes bloqueando avenidas y carreteras, lo que generó alteraciones en el orden público (La Prensa de Lara). En Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones, provocando enfrentamientos con la Guardia Nacional y disturbios en varias localidades (El Pitazo). En Carabobo, las protestas por racionamientos eléctricos en Guacara, Yagua y Malavé colapsaron la Autopista Regional del Centro (ARC) y generaron congestión vehicular significativa (El Impulso (Lara)).\n\nEn el estado Portuguesa se documentaron dos eventos de alta severidad. En la parroquia Payara, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)). Asimismo, en el municipio Ospino, vecinos marcharon contra los apagones a pesar de un fuerte despliegue policial, convirtiendo un cacerolazo en una marcha que recorrió la avenida principal (Portuguesa Reporta).\n\nEl incidente más crítico se produjo en Yaracuy, donde un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, elevando la gravedad de los hechos de orden público en la región (Yaracuy al Dia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 33 eventos de orden público, una disminución respecto a los 76 eventos del mes anterior (2026‑09). Esta reducción se refleja en la menor cantidad de protestas y manifestaciones reportadas en distintas regiones del país.\n\nEn el estado Zulia se produjeron protestas nocturnas contra los constantes cortes eléctricos, con vecinos bloqueando avenidas y carreteras en rechazo a los racionamientos impuestos por la Corpoelec (La Prensa de Lara). En Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones, replicando la movilización que se había extendido a varios estados el 30 de septiembre (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en los municipios de Guacara, Yagua y Malavé, generando un fuerte tráfico en la Autopista Regional del Centro (ARC) y provocando interrupciones en la circulación (El Impulso (Lara)).\n\nEl estado Portuguesa registró dos incidentes de orden público de alta severidad. En la parroquia Payara, municipio Páez, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)). Asimismo, en el municipio Ospino, vecinos marcharon contra los apagones a pesar de un fuerte despliegue policial, iniciando con un cacerolazo y convirtiéndose en una marcha que recorrió la avenida principal (Portuguesa Reporta).\n\nEn Yaracuy, la situación alcanzó un nivel crítico cuando, en el sector Sabanita de Yaritagua, se produjo un tiroteo que dejó un joven fallecido y otro herido, evidenciando una escalada de violencia en la región (Yaracuy al Dia).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -38,8 +38,16 @@
       "link": "https://yaracuyaldia.com/sucesos/fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy"
     },
     {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/trabajadores-chavistas-marcharon-para-exigir-levantamiento-de-las-sanciones-economicas/"
+    },
+    {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/01/video-jubilados-denuncian-vejez-en-condiciones-precarias-y-reclaman-una-vida-digna-durante-manifestacion-en-caracas-1oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/13/video-sindicatos-de-la-educacion-en-lara-se-suman-a-la-protesta-nacional-por-sueldos-dignos-y-beneficios-laborales-13oct/"
     },
     {
       "nombre": "El Pitazo",
@@ -62,6 +70,18 @@
       "link": "https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/gremios-marcharon-en-carupano-para-apoyar-peticiones-salariales-al-gobierno-nacional-fotos/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/pnb-bloqueo-marcha-de-trabajadores-en-caracas-una-comision-de-los-manifestantes-entrego-documento-en-miraflores/"
+    },
+    {
       "nombre": "La Noticia de Barinas",
       "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
     },
@@ -78,6 +98,10 @@
       "link": "https://laprensadelara.com/nacionales/familiares-presos-politicos-marchan/"
     },
     {
+      "nombre": "La Verdad de Vargas",
+      "link": "https://laverdaddevargas.com/trabajadores-se-movilizaron-por-salarios-justos/"
+    },
+    {
       "nombre": "Maturin News",
       "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
     },
@@ -88,6 +112,14 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/protesta-en-la-falcon-zulia-habitantes-de-bariro-exigen-presencia-de-autoridades/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/agricultura/protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas/?utm_source=rss&utm_medium=rss&utm_campaign=protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas"
+    },
+    {
+      "nombre": "Portuguesa al Dia",
+      "link": "https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/"
     },
     {
       "nombre": "Primicia (Bolivar)",

@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-14T00:26:51.625764+00:00",
+  "actualizado": "2026-10-14T05:18:57.146054+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-13T21:00:27+00:00"
+    "hasta": "2026-10-14T01:45:20+00:00"
   },
-  "total_eventos": 467,
+  "total_eventos": 470,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
-    "infraestructura_electrica": 40,
+    "infraestructura_electrica": 41,
     "deslizamiento": 34,
     "colapso_estructural": 5,
-    "orden_publico": 154,
+    "orden_publico": 155,
     "salud_publica": 14,
     "crisis_migratoria": 7,
     "incendio": 53,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 23,
+    "infraestructura_agua": 24,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 1,
@@ -30,12 +30,12 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 89,
+      "total": 90,
       "confirmados": 14,
       "por_severidad": {
         "alto": 16,
         "medio": 28,
-        "bajo": 29,
+        "bajo": 30,
         "critico": 12,
         "sin_clasificar": 4
       },
@@ -164,6 +164,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Bolivar",
+      "total": 16,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 3,
+        "medio": 8,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Trujillo",
       "total": 15,
       "confirmados": 0,
@@ -185,19 +198,6 @@
         "alto": 2
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 15,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 3,
-        "medio": 8,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Monagas",
@@ -262,12 +262,12 @@
     },
     {
       "estado": "Apure",
-      "total": 9,
+      "total": 10,
       "confirmados": 0,
       "por_severidad": {
         "alto": 4,
         "bajo": 2,
-        "medio": 2,
+        "medio": 3,
         "sin_clasificar": 1
       },
       "severidad_dominante": "alto"
@@ -352,7 +352,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 27,
+      "orden_publico": 28,
       "incendio": 20,
       "vialidad": 4,
       "infraestructura_electrica": 8,
@@ -392,7 +392,7 @@
       "crisis_migratoria": 1,
       "inundacion": 3,
       "orden_publico": 1,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "sequia": 1,
       "infraestructura_electrica": 2
     },
@@ -421,7 +421,8 @@
       "incendio": 3,
       "inundacion": 1,
       "deslizamiento": 2,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 1,
+      "infraestructura_electrica": 1
     },
     "Miranda": {
       "incendio": 4,
@@ -519,9 +520,9 @@
   "por_severidad": {
     "alto": 108,
     "critico": 53,
-    "medio": 161,
-    "bajo": 135,
-    "sin_clasificar": 10
+    "medio": 162,
+    "bajo": 136,
+    "sin_clasificar": 11
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -540,7 +541,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 2
+      "2026-10": 3
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -558,7 +559,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 32
+      "2026-10": 33
     },
     "salud_publica": {
       "2026-07": 1,
@@ -602,7 +603,7 @@
     "infraestructura_agua": {
       "2026-08": 12,
       "2026-09": 8,
-      "2026-10": 3
+      "2026-10": 4
     },
     "accidente_transporte": {
       "2026-08": 1
