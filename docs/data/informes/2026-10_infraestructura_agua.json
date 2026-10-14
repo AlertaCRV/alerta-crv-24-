@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-10-13T01:31:59.926691+00:00",
+  "generado": "2026-10-14T00:29:40.526091+00:00",
   "actualizado_hasta": "2026-10-11T23:01:05.737686+00:00",
   "total_eventos": 3,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 8,
     "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, una disminución notable respecto a los ocho eventos reportados en el mes anterior (comparación con el período anterior: 8 evento(s) registrados entonces vs. 3 en este período).\\n\\nEl Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira a partir de la medianoche del domingo 11 de octubre, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III, con una duración estimada de 48 horas (El Pitazo). Según el comunicado oficial difundido por Hidroven y reproducido por Primicia, el objetivo de estas labores es optimizar la prestación del servicio hídrico en las tres jurisdicciones, y se informó que se registrarían intermitencias durante el periodo de ejecución (Primicia).\\n\\nEn el estado Sucre, vecinos de la comunidad de Guaca, ubicada en el municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los cortes progresivos de agua que afectan a la zona, manifestando su descontento ante la falta de suministro (El Tiempo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, una disminución respecto a los ocho ocurridos en septiembre del mismo año (comparación con el período anterior).\\n\\nEl 11 de octubre, a partir de la medianoche, el Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron la ejecución de labores de mantenimiento programado en el Sistema de Producción Tuy III, lo que provocó intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira durante 48 horas (El Pitazo; Primicia).\\n\\nEn el estado Sucre, los vecinos de la comunidad de Guaca, ubicada en la zona oeste del municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los progresivos cortes de agua que afectan a la zona (El Tiempo).\\n\\nAmbos hechos reflejan la continuidad de problemas en la infraestructura hídrica del país, aunque con una menor cantidad de incidentes reportados en comparación con el mes anterior, lo que sugiere una ligera mejoría en la frecuencia de las fallas, aunque persisten interrupciones significativas para la población de varias regiones.",
   "fuentes": [
     {
       "nombre": "El Pitazo",

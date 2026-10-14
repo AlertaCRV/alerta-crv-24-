@@ -3,16 +3,20 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-10-13T01:33:24.116499+00:00",
-  "actualizado_hasta": "2026-10-11T19:14:51.718097+00:00",
-  "total_eventos": 2,
+  "generado": "2026-10-14T00:31:31.527736+00:00",
+  "actualizado_hasta": "2026-10-13T16:11:16.480467+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 9,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron dos incidentes viales, una disminución notable respecto a los nueve eventos reportados en septiembre de 2026 (comparación con el período anterior).\n\nEl primer hecho ocurrió el 2 de octubre en la autopista General José Antonio Páez, sector Las Matas del municipio Guanare, a las 6:30 a.m., cuando dos vehículos colisionaron, dejando cuatro personas lesionadas (Portuguesa al Dia). La respuesta incluyó a comisiones del Sistema Nacional para la Gestión de Riesgos y al Cuerpo de Bomberos del estado Portuguesa, que atendieron el siniestro (Portuguesa al Dia). Entre los vehículos involucrados se encontraba un Renault Mégane 1.6 de color azul (Portuguesa al Dia).\n\nEl segundo incidente se dio en la comunidad de Bajos de Medina, municipio Cedeño, estado Monagas, cuando una unidad de transporte del GNB volcó, provocando la muerte de un guardia nacional y dejando nueve heridos (Primicia (Bolivar)).",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres incidentes viales que involucraron daños materiales y personas lesionadas o fallecidas, cifra que representa una disminución respecto al período anterior, cuando se contabilizaron nueve eventos en septiembre (9 evento(s) registrados entonces vs. 3 en este período).\n\nEl primer hecho ocurrió el viernes 2 de octubre en la autopista General José Antonio Páez, sector Las Matas del municipio Guanare, estado Portuguesa, donde una colisión entre dos vehículos dejó cuatro personas lesionadas (Portuguesa al Dia). Las autoridades del Sistema Nacional para la Gestión de Riesgos y del Cuerpo de Bomberos del estado respondieron al siniestro alrededor de las 6:30 a.m.\n\nEl segundo incidente se dio en la comunidad de Bajos de Medina, municipio Cedeño, estado Monagas, cuando una unidad de transporte del GNB volcó, provocando la muerte de un guardia nacional y dejando nueve heridos (Primicia (Bolivar)).\n\nEl tercer y más grave accidente ocurrió el lunes 12 de octubre en el sector Morador, autopista José Antonio Páez, también en el estado Portuguesa, donde el vehículo en que viajaban dos hermanas se volcó y chocó contra un árbol, resultando en el fallecimiento de ambas y una lesión para su primo (El Pitazo).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/dos-hermanas-mueren-y-un-primo-resulta-herido-en-choque-contra-un-arbol-en-la-autopista-jose-antonio-paez/"
+    },
     {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/"
