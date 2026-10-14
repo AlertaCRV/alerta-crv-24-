@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Zulia",
+    "municipio": "Machiques De Perija",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.8,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/detectan-brote-de-malaria-en-machiques-de-perija-y-activan-cerco-epidemiologico/",
+        "fecha": "2026-10-14T14:21:22+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T14:21:22+00:00",
+    "fecha_evento_temprana": "2026-10-14T14:21:22+00:00",
+    "fecha_deteccion": "2026-10-14T15:17:18.935446+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Zulia::2026-10-14",
+    "titulo": "Salud pública en Municipio Machiques De Perija, Zulia",
+    "texto": "📌 Salud pública en Municipio Machiques De Perija, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Machiques De Perija, Zulia\n🕒 Hecho reportado: 14/10/2026, 10:21 a.m.\n🔎 Detectado por el sistema: 14/10/2026, 11:17 a.m.\n📊 Fuentes independientes: 1 (score 0.8)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/detectan-brote-de-malaria-en-machiques-de-perija-y-activan-cerco-epidemiologico/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Aragua",
+    "municipio": "Girardot",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana",
+        "fecha": "2026-10-14T14:26:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T14:26:15+00:00",
+    "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
+    "fecha_deteccion": "2026-10-14T15:17:23.193277+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Aragua::2026-10-13",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Girardot, Aragua",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Girardot, Aragua\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Girardot, Aragua\n🕒 Hecho reportado: 14/10/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 14/10/2026, 11:17 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -117,32 +169,6 @@
     "clave_dedup": "orden_publico::Portuguesa::2026-10-13",
     "titulo": "Orden público en Parroquia Payara, Portuguesa",
     "texto": "📌 Orden público en Parroquia Payara, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Payara, Portuguesa\n🕒 Hecho reportado: 13/10/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:16 p.m.\n📊 Fuentes independientes: 3 (score 2.05)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas/?utm_source=rss&utm_medium=rss&utm_campaign=protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/declaran-estado-de-contingencia-en-choroni/",
-        "fecha": "2026-10-13T13:47:31+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T13:47:31+00:00",
-    "fecha_evento_temprana": "2026-10-13T13:47:31+00:00",
-    "fecha_deteccion": "2026-10-13T21:17:10.354442+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::Aragua::2026-10-13",
-    "titulo": "Deslizamiento/Derrumbe en Aragua",
-    "texto": "📌 Deslizamiento/Derrumbe en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 13/10/2026, 9:47 a.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:17 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/declaran-estado-de-contingencia-en-choroni/"
   },
   {
     "tipo": "orden_publico",
@@ -1642,31 +1668,5 @@
     "clave_dedup": "orden_publico::Tachira::2026-09-30",
     "titulo": "Orden público en Municipio San Cristóbal, Tachira",
     "texto": "📌 Orden público en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 30/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/protesta-frente-a-corpoelec/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html",
-        "fecha": "2026-09-30T01:58:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T01:58:13+00:00",
-    "fecha_evento_temprana": "2026-09-30T01:58:13+00:00",
-    "fecha_deteccion": "2026-09-30T07:29:59.187486+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Merida::2026-09-30",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 29/09/2026, 9:58 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:29 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html"
   }
 ]
