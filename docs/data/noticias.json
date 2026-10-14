@@ -1,5 +1,88 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Aragua",
+    "municipio": "Girardot",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/habilitan-paso-provisional-en-la-via-a-choroni-despues-de-dias-de-tranca-por-derrumbes/",
+        "fecha": "2026-10-14T15:47:05+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana",
+        "fecha": "2026-10-14T14:26:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T15:47:05+00:00",
+    "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
+    "fecha_deteccion": "2026-10-14T19:31:38.170219+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Aragua::2026-10-13",
+    "titulo": "Deslizamiento/Derrumbe en Municipio Girardot, Aragua",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio Girardot, Aragua\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Girardot, Aragua\n🕒 Hecho reportado: 14/10/2026, 11:47 a.m.\n🔎 Detectado por el sistema: 14/10/2026, 3:31 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/habilitan-paso-provisional-en-la-via-a-choroni-despues-de-dias-de-tranca-por-derrumbes/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": "Bolívar",
+    "parroquia": "Aracua",
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/cerrada-por-coro-churuguara-por-protesta-14-oct/",
+        "fecha": "2026-10-14T19:21:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T19:21:50+00:00",
+    "fecha_evento_temprana": "2026-10-14T19:21:50+00:00",
+    "fecha_deteccion": "2026-10-14T19:31:42.955650+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-10-14",
+    "titulo": "Orden público en Parroquia Aracua, Municipio Bolívar, Falcon",
+    "texto": "📌 Orden público en Parroquia Aracua, Municipio Bolívar, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Aracua, Municipio Bolívar, Falcon\n🕒 Hecho reportado: 14/10/2026, 3:21 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 3:31 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/cerrada-por-coro-churuguara-por-protesta-14-oct/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/gremios-y-sindicatos-toman-las-calles/",
+        "fecha": "2026-10-14T19:17:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T19:17:20+00:00",
+    "fecha_evento_temprana": "2026-10-14T19:17:20+00:00",
+    "fecha_deteccion": "2026-10-14T19:32:25.663440+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-10-14",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 14/10/2026, 3:17 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 3:32 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/gremios-y-sindicatos-toman-las-calles/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -117,32 +200,6 @@
     "clave_dedup": "orden_publico::Portuguesa::2026-10-13",
     "titulo": "Orden público en Parroquia Payara, Portuguesa",
     "texto": "📌 Orden público en Parroquia Payara, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Payara, Portuguesa\n🕒 Hecho reportado: 13/10/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:16 p.m.\n📊 Fuentes independientes: 3 (score 2.05)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas/?utm_source=rss&utm_medium=rss&utm_campaign=protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/declaran-estado-de-contingencia-en-choroni/",
-        "fecha": "2026-10-13T13:47:31+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T13:47:31+00:00",
-    "fecha_evento_temprana": "2026-10-13T13:47:31+00:00",
-    "fecha_deteccion": "2026-10-13T21:17:10.354442+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::Aragua::2026-10-13",
-    "titulo": "Deslizamiento/Derrumbe en Aragua",
-    "texto": "📌 Deslizamiento/Derrumbe en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 13/10/2026, 9:47 a.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:17 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/declaran-estado-de-contingencia-en-choroni/"
   },
   {
     "tipo": "orden_publico",
@@ -1538,135 +1595,5 @@
     "clave_dedup": "vialidad::Portuguesa::2026-09-30",
     "titulo": "Incidente vial en Municipio Ospino, Portuguesa",
     "texto": "📌 Incidente vial en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 4:03 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 7:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/volcamiento-de-autobus-en-portuguesa-deja-tres-muertos-y-14-heridos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": "Páez",
-    "parroquia": "Payara",
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/portuguesa-payara-cumple-mas-24-horas-de-protesta-por-apagones-y-mantiene-paralizados-a-mas-de-40-camiones-en-la-via/",
-        "fecha": "2026-09-30T17:09:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T17:09:42+00:00",
-    "fecha_evento_temprana": "2026-09-30T17:09:42+00:00",
-    "fecha_deteccion": "2026-09-30T19:22:22.839332+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-09-30",
-    "titulo": "Orden público en Parroquia Payara, Municipio Páez, Portuguesa",
-    "texto": "📌 Orden público en Parroquia Payara, Municipio Páez, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Payara, Municipio Páez, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 1:09 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/portuguesa-payara-cumple-mas-24-horas-de-protesta-por-apagones-y-mantiene-paralizados-a-mas-de-40-camiones-en-la-via/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Falcon",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/",
-        "fecha": "2026-09-30T14:26:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T14:26:38+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
-    "fecha_deteccion": "2026-09-30T19:22:28.348758+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_agua::Falcon::2026-09-30",
-    "titulo": "Falla de agua en Falcon",
-    "texto": "📌 Falla de agua en Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 30/09/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": "Urdaneta",
-    "parroquia": "Siquisique",
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/",
-        "fecha": "2026-09-30T14:26:38+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T14:26:38+00:00",
-    "fecha_evento_temprana": "2026-09-30T14:26:38+00:00",
-    "fecha_deteccion": "2026-09-30T19:22:40.877576+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-09-30",
-    "titulo": "Orden público en Parroquia Siquisique, Municipio Urdaneta, Lara",
-    "texto": "📌 Orden público en Parroquia Siquisique, Municipio Urdaneta, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Siquisique, Municipio Urdaneta, Lara\n🕒 Hecho reportado: 30/09/2026, 10:26 a.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/habitantes-cierran-carretera-lara-falcon-por-colapso-de-servicios-basicos-tienen-cuatro-meses-sin-agua/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Tachira",
-    "municipio": "San Cristóbal",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/protesta-frente-a-corpoelec/",
-        "fecha": "2026-09-30T16:49:29+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T16:49:29+00:00",
-    "fecha_evento_temprana": "2026-09-30T16:49:29+00:00",
-    "fecha_deteccion": "2026-09-30T19:22:55.569502+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Tachira::2026-09-30",
-    "titulo": "Orden público en Municipio San Cristóbal, Tachira",
-    "texto": "📌 Orden público en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 30/09/2026, 12:49 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:22 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/protesta-frente-a-corpoelec/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Reporteros de Merida",
-        "link": "https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html",
-        "fecha": "2026-09-30T01:58:13+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T01:58:13+00:00",
-    "fecha_evento_temprana": "2026-09-30T01:58:13+00:00",
-    "fecha_deteccion": "2026-09-30T07:29:59.187486+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Merida::2026-09-30",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 29/09/2026, 9:58 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 3:29 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/09/cacerolazo-en-merida-en-medio-de.html"
   }
 ]
