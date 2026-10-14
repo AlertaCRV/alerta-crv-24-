@@ -1,11 +1,4 @@
 {
-  "incendio::Distrito Capital::2026-10-10": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-10T22:53:43.042503+00:00",
-    "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
-    "municipio": null
-  },
   "inundacion::Distrito Capital::2026-10-10": {
     "severidad": "medio",
     "confirmado": false,
@@ -137,6 +130,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-13T21:18:26.478912+00:00",
     "fecha_evento_temprana": "2026-10-13T19:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-10-13": {
+    "severidad": "bajo",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-14T00:25:35.246859+00:00",
+    "fecha_evento_temprana": "2026-10-13T17:40:55+00:00",
     "municipio": null
   }
 }

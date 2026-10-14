@@ -4,15 +4,15 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-10-13T01:33:24.116499+00:00",
-    "total_eventos": 2
+    "generado": "2026-10-14T00:31:31.527736+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-10",
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-13T01:33:11.128601+00:00",
+    "generado": "2026-10-14T00:31:03.790906+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-13T01:33:06.727804+00:00",
+    "generado": "2026-10-14T00:30:50.672217+00:00",
     "total_eventos": 1
   },
   {
@@ -28,7 +28,7 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-10-13T01:33:01.721407+00:00",
+    "generado": "2026-10-14T00:30:44.939759+00:00",
     "total_eventos": 3
   },
   {
@@ -52,7 +52,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-13T01:32:05.191753+00:00",
+    "generado": "2026-10-14T00:29:45.460616+00:00",
     "total_eventos": 2
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-13T01:31:59.926691+00:00",
+    "generado": "2026-10-14T00:29:40.526091+00:00",
     "total_eventos": 3
   },
   {
@@ -76,15 +76,15 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-13T01:31:00.834178+00:00",
-    "total_eventos": 2
+    "generado": "2026-10-14T00:28:33.351160+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-10",
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-13T01:30:47.527725+00:00",
+    "generado": "2026-10-14T00:28:19.894073+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-10-13T16:13:27.618042+00:00",
+    "generado": "2026-10-14T00:28:06.259070+00:00",
     "total_eventos": 1
   },
   {
