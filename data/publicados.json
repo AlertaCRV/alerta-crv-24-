@@ -91,11 +91,11 @@
     "municipio": null
   },
   "deslizamiento::Aragua::2026-10-13": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-13T21:17:10.354442+00:00",
-    "fecha_evento_temprana": "2026-10-13T13:47:31+00:00",
-    "municipio": null
+    "fecha_deteccion": "2026-10-14T15:17:23.193277+00:00",
+    "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
+    "municipio": "Girardot"
   },
   "colapso_estructural::Portuguesa::2026-10-13": {
     "severidad": "alto",
@@ -152,5 +152,12 @@
     "fecha_deteccion": "2026-10-14T05:18:16.589916+00:00",
     "fecha_evento_temprana": "2026-10-14T01:38:41+00:00",
     "municipio": null
+  },
+  "salud_publica::Zulia::2026-10-14": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-14T15:17:18.935446+00:00",
+    "fecha_evento_temprana": "2026-10-14T14:21:22+00:00",
+    "municipio": "Machiques De Perija"
   }
 }
