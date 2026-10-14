@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-14T19:32:52.866713+00:00",
+  "actualizado": "2026-10-14T22:38:33.941683+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-14T19:21:50+00:00"
   },
-  "total_eventos": 473,
+  "total_eventos": 474,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
     "infraestructura_electrica": 41,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 157,
+    "orden_publico": 158,
     "salud_publica": 14,
     "crisis_migratoria": 7,
     "incendio": 53,
@@ -224,6 +224,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Anzoategui",
+      "total": 12,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 4,
+        "medio": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "La Guaira",
       "total": 12,
       "confirmados": 0,
@@ -233,18 +245,6 @@
         "alto": 6,
         "bajo": 1,
         "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 11,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 1,
-        "bajo": 4,
-        "medio": 4
       },
       "severidad_dominante": "critico"
     },
@@ -399,7 +399,7 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 1,
@@ -519,7 +519,7 @@
   },
   "por_severidad": {
     "alto": 109,
-    "critico": 53,
+    "critico": 54,
     "medio": 163,
     "bajo": 137,
     "sin_clasificar": 11
@@ -559,7 +559,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 35
+      "2026-10": 36
     },
     "salud_publica": {
       "2026-07": 1,

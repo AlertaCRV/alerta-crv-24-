@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-10-10T19:25:37.544069+00:00",
-  "actualizado_hasta": "2026-10-10T19:23:32.594725+00:00",
-  "total_eventos": 10,
+  "generado": "2026-10-14T22:40:12.024162+00:00",
+  "actualizado_hasta": "2026-10-12T02:19:15.250091+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 19,
-    "actual": 10
+    "actual": 12
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron diez incendios, una disminución respecto a los diecinueve eventos del mes anterior (2026‑09) (19 evento(s) registrados entonces vs. 10 en este período). Todos los siniestros fueron de alta severidad y movilizaron a los cuerpos de bomberos, al Sistema Nacional de Gestión de Riesgos y a autoridades locales para contener los daños materiales y proteger a la población.\n\nEn el Distrito Capital se reportaron dos incidentes de gran magnitud. El primero ocurrió en una guardería ubicada en la Urbanización Montalbán III, en la parroquia La Vega de Caracas, donde las llamas afectaron aproximadamente 40 metros cuadrados del área de comedor (Reporte Confidencial). El segundo incendio se desató en el Mercado de Emprendedores, en la avenida Baralt, comprometiendo al menos seis locales comerciales y generando una rápida respuesta del Cuerpo de Bomberos de Caracas (El Pitazo).\n\nEn el estado Zulia, un incendio de vegetación y residuos petroleros se originó en una fosa de petróleo situada en la parte posterior de la subestación eléctrica número 3 del municipio Lagunillas, requiriendo la intervención de bomberos para controlar la emergencia (Noticia al Dia).\n\nEn el Táchira, el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta) fue el escenario de un incendio que obligó a desplegar un operativo de emergencia con la participación de organismos de prevención, rescate y autoridades municipales para evitar mayores impactos ambientales en las comunidades adyacentes (Diario La Nacion).\n\nEn el estado Falcón, la refinería Cardón, perteneciente al Centro Refinador de Paraguaná, sufrió un incendio de alta severidad tras la rotación de una línea de gas natural; el siniestro fue controlado por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos, aunque provocó la paralización temporal de sus operaciones (El Pitazo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 12 incendios, una disminución respecto a los 19 eventos del mes anterior (septiembre 2026). Esta reducción se refleja en la tendencia de incidentes reportados por los medios verificados y permite una mejor planificación de los recursos de la Cruz Roja Venezolana.\n\nEn el Distrito Capital se produjeron dos incendios de alta severidad. El primero consumió una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, afectando aproximadamente 40 metros cuadrados del área de comedor (Reporte Confidencial). El segundo incendio se desató en el Mercado de Emprendedores, en la avenida Baralt, comprometiendo al menos seis locales comerciales (El Pitazo).\n\nEn el estado Zulia, un incendio de gran magnitud se originó en una fosa de petróleo situada en la parte posterior de la subestación eléctrica número 3, en el municipio Lagunillas, generando llamas en vegetación y residuos petroleros (Noticia al Dia).\n\nEn el estado Táchira, las autoridades municipales desplegaron un operativo de emergencia para sofocar un incendio que se inició en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta), con el objetivo de evitar daños ambientales a las comunidades adyacentes (Diario La Nacion).\n\nEn el estado Falcón, se registró un incendio de alta severidad en la refinería Cardón, perteneciente al Centro Refinador de Paraguaná, donde se escucharon tres explosiones antes de que las llamas fueran controladas por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/occidente/falcon-usuarios-reportan-incendio-en-la-refineria-cardon-las-operaciones-fueron-paralizadas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -46,10 +50,6 @@
       "link": "https://diarioeltiempo.com.ve/pdvsa-controla-incendio-en-la-refineria-cardon-tras-rotura-de-una-linea-de-gas-natural/"
     },
     {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
-    },
-    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/pdvsa-controla-incendio-en-refineria-cardon-tras-rotura-de-tuberia-en-linea-de-gas-natural/"
     },
@@ -60,6 +60,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/incendio-esfumo-7-locales-del-centro/"
     },
     {
       "nombre": "Runrun.es",
