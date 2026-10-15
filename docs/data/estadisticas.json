@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-10-15T15:17:50.414471+00:00",
+  "actualizado": "2026-10-15T19:20:16.314718+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-15T14:32:36+00:00"
+    "hasta": "2026-10-15T18:22:43+00:00"
   },
-  "total_eventos": 478,
+  "total_eventos": 483,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
-    "infraestructura_electrica": 42,
+    "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 159,
+    "orden_publico": 160,
     "salud_publica": 16,
     "crisis_migratoria": 7,
     "incendio": 53,
-    "vialidad": 22,
+    "vialidad": 25,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -30,13 +30,13 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 90,
+      "total": 91,
       "confirmados": 14,
       "por_severidad": {
         "alto": 16,
         "medio": 28,
         "bajo": 30,
-        "critico": 12,
+        "critico": 13,
         "sin_clasificar": 4
       },
       "severidad_dominante": "critico"
@@ -56,25 +56,25 @@
     },
     {
       "estado": "Lara",
-      "total": 35,
+      "total": 36,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 7,
         "medio": 14,
-        "bajo": 9,
+        "bajo": 10,
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Aragua",
-      "total": 33,
+      "total": 34,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 7,
         "medio": 10,
-        "alto": 11,
+        "alto": 12,
         "critico": 4,
         "sin_clasificar": 1
       },
@@ -82,10 +82,10 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 27,
+      "total": 28,
       "confirmados": 2,
       "por_severidad": {
-        "bajo": 9,
+        "bajo": 10,
         "medio": 7,
         "critico": 3,
         "alto": 8
@@ -201,6 +201,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Carabobo",
+      "total": 13,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Monagas",
       "total": 13,
       "confirmados": 0,
@@ -208,18 +220,6 @@
         "medio": 5,
         "alto": 3,
         "bajo": 4,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 12,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 2,
-        "bajo": 4,
-        "medio": 5,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -320,12 +320,12 @@
       "orden_publico": 5,
       "infraestructura_electrica": 2,
       "inundacion": 3,
-      "vialidad": 1
+      "vialidad": 2
     },
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 14,
+      "orden_publico": 15,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -355,7 +355,7 @@
       "inundacion": 18,
       "orden_publico": 28,
       "incendio": 20,
-      "vialidad": 4,
+      "vialidad": 5,
       "infraestructura_electrica": 8,
       "colapso_estructural": 1,
       "sismo": 1,
@@ -465,7 +465,8 @@
       "deslizamiento": 6,
       "tormenta_electrica": 1,
       "incendio": 1,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 3,
+      "vialidad": 1
     },
     "Monagas": {
       "salud_publica": 1,
@@ -487,7 +488,8 @@
       "incendio": 1,
       "infraestructura_agua": 1,
       "vialidad": 4,
-      "colapso_estructural": 1
+      "colapso_estructural": 1,
+      "infraestructura_electrica": 1
     },
     "Cojedes": {
       "orden_publico": 5
@@ -520,10 +522,10 @@
     }
   },
   "por_severidad": {
-    "alto": 110,
-    "critico": 55,
+    "alto": 112,
+    "critico": 56,
     "medio": 163,
-    "bajo": 138,
+    "bajo": 140,
     "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
@@ -543,7 +545,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 4
+      "2026-10": 5
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -561,7 +563,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 37
+      "2026-10": 38
     },
     "salud_publica": {
       "2026-07": 1,
@@ -584,7 +586,7 @@
     "vialidad": {
       "2026-08": 10,
       "2026-09": 9,
-      "2026-10": 3
+      "2026-10": 6
     },
     "sismo": {
       "2026-08": 5,

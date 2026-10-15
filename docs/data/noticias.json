@@ -1,5 +1,135 @@
 [
   {
+    "tipo": "vialidad",
+    "ubicacion": "Aragua",
+    "municipio": "Santos Michelena",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/",
+        "fecha": "2026-10-15T18:22:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-15T18:22:43+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "fecha_deteccion": "2026-10-15T19:19:05.385646+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Aragua::2026-10-15",
+    "titulo": "Incidente vial en Municipio Santos Michelena, Aragua",
+    "texto": "📌 Incidente vial en Municipio Santos Michelena, Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Santos Michelena, Aragua\n🕒 Hecho reportado: 15/10/2026, 2:22 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/",
+        "fecha": "2026-10-15T18:22:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-15T18:22:43+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "fecha_deteccion": "2026-10-15T19:19:09.676136+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Carabobo::2026-10-15",
+    "titulo": "Incidente vial en Carabobo",
+    "texto": "📌 Incidente vial en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 15/10/2026, 2:22 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/",
+        "fecha": "2026-10-15T18:22:43+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-15T18:22:43+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "fecha_deteccion": "2026-10-15T19:19:13.759295+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Distrito Capital::2026-10-15",
+    "titulo": "Incidente vial en Distrito Capital",
+    "texto": "📌 Incidente vial en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 15/10/2026, 2:22 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/muere-una-docente-y-ocho-ninos-resultan-heridos-en-accidente-vial-en-la-arc/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Portuguesa",
+    "municipio": "Santa Rosalía",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia",
+        "fecha": "2026-10-15T17:29:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-15T17:29:09+00:00",
+    "fecha_evento_temprana": "2026-10-15T17:29:09+00:00",
+    "fecha_deteccion": "2026-10-15T19:19:23.145045+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-10-15",
+    "titulo": "Falla eléctrica en Municipio Santa Rosalía, Portuguesa",
+    "texto": "📌 Falla eléctrica en Municipio Santa Rosalía, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 15/10/2026, 1:29 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/15/video-universidades-publicas-en-lara-se-suman-a-las-protestas-la-crisis-en-las-casas-de-estudio-es-critica-15oct/",
+        "fecha": "2026-10-15T16:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-15T16:30:00+00:00",
+    "fecha_evento_temprana": "2026-10-15T16:30:00+00:00",
+    "fecha_deteccion": "2026-10-15T19:20:13.475923+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-10-15",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 15/10/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:20 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/15/video-universidades-publicas-en-lara-se-suman-a-las-protestas-la-crisis-en-las-casas-de-estudio-es-critica-15oct/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Trujillo",
     "municipio": null,
@@ -1647,57 +1777,5 @@
     "clave_dedup": "orden_publico::Carabobo::2026-10-01",
     "titulo": "Orden público en Municipio Guacara, Carabobo",
     "texto": "📌 Orden público en Municipio Guacara, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guacara, Carabobo\n🕒 Hecho reportado: 01/10/2026, 10:42 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 5:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/01/video-protestas-por-racionamientos-electricos-colapsan-la-arc-en-carabobo-1oct/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Guarico",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/",
-        "fecha": "2026-10-01T14:25:25+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T14:25:25+00:00",
-    "fecha_evento_temprana": "2026-10-01T14:25:25+00:00",
-    "fecha_deteccion": "2026-10-01T16:11:34.516322+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Guarico::2026-10-01",
-    "titulo": "Orden público en Guarico",
-    "texto": "📌 Orden público en Guarico\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 01/10/2026, 10:25 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:11 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/",
-        "fecha": "2026-10-01T13:14:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T13:14:40+00:00",
-    "fecha_evento_temprana": "2026-10-01T13:14:40+00:00",
-    "fecha_deteccion": "2026-10-01T16:13:23.231624+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-10-01",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
   }
 ]

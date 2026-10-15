@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-12T23:42:20+00:00",
     "municipio": null
   },
-  "inundacion::Merida::2026-10-12": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-12T19:17:27.004196+00:00",
-    "fecha_evento_temprana": "2026-10-12T18:03:53+00:00",
-    "municipio": "Libertador"
-  },
   "orden_publico::Distrito Capital::2026-10-12": {
     "severidad": "bajo",
     "confirmado": false,
@@ -165,6 +158,41 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-15T15:17:40.986451+00:00",
     "fecha_evento_temprana": "2026-10-15T14:32:36+00:00",
+    "municipio": null
+  },
+  "vialidad::Aragua::2026-10-15": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T19:19:05.385646+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "municipio": "Santos Michelena"
+  },
+  "vialidad::Carabobo::2026-10-15": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T19:19:09.676136+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "municipio": null
+  },
+  "vialidad::Distrito Capital::2026-10-15": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T19:19:13.759295+00:00",
+    "fecha_evento_temprana": "2026-10-15T18:22:43+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Portuguesa::2026-10-15": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T19:19:23.145045+00:00",
+    "fecha_evento_temprana": "2026-10-15T17:29:09+00:00",
+    "municipio": "Santa Rosalía"
+  },
+  "orden_publico::Lara::2026-10-15": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T19:20:13.475923+00:00",
+    "fecha_evento_temprana": "2026-10-15T16:30:00+00:00",
     "municipio": null
   }
 }
