@@ -1,18 +1,4 @@
 {
-  "infraestructura_agua::Distrito Capital::2026-10-11": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-11T23:01:05.737686+00:00",
-    "fecha_evento_temprana": "2026-10-11T18:40:14+00:00",
-    "municipio": null
-  },
-  "crisis_migratoria::La Guaira::2026-10-11": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-11T23:00:39.994006+00:00",
-    "fecha_evento_temprana": "2026-10-11T20:15:16+00:00",
-    "municipio": null
-  },
   "incendio::Distrito Capital::2026-10-12": {
     "severidad": "medio",
     "confirmado": false,
@@ -158,6 +144,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-14T22:37:53.468488+00:00",
     "fecha_evento_temprana": "2026-10-14T17:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Barinas::2026-10-14": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T00:54:23.737832+00:00",
+    "fecha_evento_temprana": "2026-10-14T22:36:02+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Aragua::2026-10-14": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T00:54:58.687046+00:00",
+    "fecha_evento_temprana": "2026-10-14T22:35:31+00:00",
+    "municipio": "Girardot"
+  },
+  "salud_publica::Guarico::2026-10-14": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-15T00:56:40.308750+00:00",
+    "fecha_evento_temprana": "2026-10-14T21:30:00+00:00",
     "municipio": null
   }
 }

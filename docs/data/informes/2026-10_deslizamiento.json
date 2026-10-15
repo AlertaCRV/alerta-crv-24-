@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-10-14T00:28:33.351160+00:00",
-  "actualizado_hasta": "2026-10-13T21:17:10.354442+00:00",
-  "total_eventos": 4,
+  "generado": "2026-10-15T00:58:48.395265+00:00",
+  "actualizado_hasta": "2026-10-14T19:31:38.170219+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 9,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron cuatro eventos de deslizamiento o derrumbe, una disminución respecto a los nueve eventos del mes anterior (2026‑09) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes reportados, aunque los casos ocurridos mantuvieron alta gravedad.\n\nEn el estado Bolívar, el jueves 8 de octubre se produjo un derrumbe en la mina de oro Audi, ubicada en los linderos entre Guasipati y El Callao. El alud de tierra cayó sobre dos mineros jóvenes que laboraban dentro del yacimiento, provocando su fallecimiento (El Pitazo). La autoridad local aún no había emitido un informe preliminar al día siguiente, y la severidad del suceso se calificó como crítica (El Pitazo).\n\nEn el estado Aragua, tras fuertes lluvias durante el fin de semana, las autoridades declararon estado de contingencia en la parroquia de Choroní. El derrumbe de material rocoso bloqueó los kilómetros 9 y 10 de la vía que conecta con Maracay, obligando al cierre de la carretera (El Periodico de Monagas). Más de mil personas se desplazaron a Ocumare de la Costa desde Choroní debido al aislamiento, y la severidad del evento se consideró alta (El Periodico de Monagas). Además, la Onda Tropical N° 55 generó anegaciones y otros derrumbes en la zona, complicando la respuesta de los servicios de emergencia (El Siglo).\n\nEn conjunto, aunque el número total de incidentes disminuyó, los dos eventos destacados mantuvieron un impacto significativo en términos de pérdidas humanas y daños materiales, reforzando la necesidad de mantener planes de contingencia y vigilancia en áreas vulnerables a deslizamientos y derrumbes.",
+  "narrativa": "En el mes de octubre de 2026 se registraron cinco eventos de deslizamiento o derrumbe, una disminución respecto a los nueve eventos del mes anterior (2026‑09). Esta reducción se observa en el registro oficial de incidentes de la Cruz Roja Venezolana y refleja una variación en la frecuencia de los fenómenos de masa en el territorio nacional.\n\nEl evento más grave ocurrió en el estado Bolívar, donde un alud de tierra cayó sobre la mina de oro Audi, ubicada en los linderos entre Guasipati y El Callao, provocando la muerte de dos jóvenes mineros que se encontraban trabajando en el interior del yacimiento (El Pitazo). El derrumbe se registró el jueves 8 de octubre y, a pesar de la gravedad, las autoridades aún no habían emitido un informe preliminar al día siguiente.\n\nEn el estado Aragua, se declaró estado de contingencia en la parroquia de Choroní luego de fuertes lluvias que desencadenaron el derrumbe de material rocoso en la vía que conecta Maracay con Choroní, bloqueando los kilómetros 9 y 10 de la carretera (El Periodico de Monagas). Las autoridades trabajaron para despejar la ruta, mientras más de mil personas se desplazaron a Ocumare de la Costa en busca de alternativas de tránsito.\n\nPosteriormente, el mismo tramo de la carretera Maracay‑Choroní volvió a verse afectado por deslizamientos el sábado 10 de octubre, lo que obligó a cerrar la vía y aislar a la población costera. La madrugada del miércoles siguiente se abrió un canal provisional a las 2:38 a.m., permitiendo el paso controlado de 78 carros y 22 motos y restableciendo parcialmente la comunicación (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Periodico de Monagas",
@@ -20,6 +20,14 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/fallecen-dos-jovenes-en-derrumbe-en-mina-de-oro-en-bolivar/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/habilitan-paso-provisional-en-la-via-a-choroni-despues-de-dias-de-tranca-por-derrumbes/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana/?utm_source=rss&utm_medium=rss&utm_campaign=abren-paso-controlado-en-la-carretera-a-choroni-tras-afectaciones-por-derrumbes-del-fin-de-semana"
     },
     {
       "nombre": "El Siglo (Aragua)",

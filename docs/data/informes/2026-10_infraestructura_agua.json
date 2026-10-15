@@ -3,15 +3,15 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-10-14T00:29:40.526091+00:00",
-  "actualizado_hasta": "2026-10-11T23:01:05.737686+00:00",
-  "total_eventos": 3,
+  "generado": "2026-10-15T00:59:43.332812+00:00",
+  "actualizado_hasta": "2026-10-14T05:18:03.795164+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 8,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de falla de agua, una disminución respecto a los ocho ocurridos en septiembre del mismo año (comparación con el período anterior).\\n\\nEl 11 de octubre, a partir de la medianoche, el Ministerio de Atención de las Aguas y la empresa estatal Hidroven anunciaron la ejecución de labores de mantenimiento programado en el Sistema de Producción Tuy III, lo que provocó intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira durante 48 horas (El Pitazo; Primicia).\\n\\nEn el estado Sucre, los vecinos de la comunidad de Guaca, ubicada en la zona oeste del municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los progresivos cortes de agua que afectan a la zona (El Tiempo).\\n\\nAmbos hechos reflejan la continuidad de problemas en la infraestructura hídrica del país, aunque con una menor cantidad de incidentes reportados en comparación con el mes anterior, lo que sugiere una ligera mejoría en la frecuencia de las fallas, aunque persisten interrupciones significativas para la población de varias regiones.",
+  "narrativa": "En el mes de octubre de 2026 se registraron cuatro eventos de falla de agua, una disminución respecto a los ocho reportados en septiembre del mismo año (8 evento(s) registrados entonces vs. 4 en este período). Esta reducción se refleja en la diversidad de incidentes, que van desde mantenimientos programados hasta acciones comunitarias y mejoras de infraestructura.\nSegún el Ministerio de Atención de las Aguas y la empresa estatal Hidroven, a partir de la medianoche del domingo 11 de octubre se iniciaron labores de mantenimiento programado en el Sistema de Producción Tuy III, lo que provocó intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira durante 48 horas (El Pitazo). El comunicado oficial reiteró que el objetivo era optimizar la prestación del servicio hídrico en esas jurisdicciones, y la información fue también difundida por Primicia (Primicia).\nEn el estado Sucre, los vecinos de la comunidad de Guaca, ubicada en el municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná como medida de presión para que cesen los progresivos cortes de agua que afectan a la zona (El Tiempo (Anzoategui)). La protesta subrayó la creciente preocupación de la población ante la irregularidad del suministro.\nPor otro lado, en el estado Apure, la hidrológica estatal instaló un equipo sumergible de 15 caballos de fuerza en el pozo El Concentrado, en el municipio Achaguas, incorporando 12 litros por segundo a la red de distribución y beneficiando a aproximadamente 480 familias de la zona (Notiapure). Esta acción forma parte de las iniciativas para fortalecer el sistema hídrico nacional y mejorar la disponibilidad de agua en comunidades vulnerables.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -20,6 +20,10 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/instalan-equipo-sumergible-en-pozo-el-concentrado-de-achaguas-y-benefician-a-480-familias/"
     },
     {
       "nombre": "Primicia (Bolivar)",

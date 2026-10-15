@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-14T00:30:44.939759+00:00",
-  "actualizado_hasta": "2026-10-13T01:29:21.649203+00:00",
-  "total_eventos": 3,
+  "generado": "2026-10-15T01:01:07.060651+00:00",
+  "actualizado_hasta": "2026-10-15T00:56:40.308750+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de salud pública, superando los dos eventos del mes anterior (2026‑09) (Comparación con el período anterior). Todos los incidentes se concentraron en el estado Trujillo y fueron catalogados con severidad alta.\n\nSegún La Prensa de Lara, se reportaron al menos tres casos de intoxicación en instituciones educativas de los estados Lara y Trujillo, donde estudiantes y docentes presentaron mareos, irritación de las vías respiratorias y náuseas, siendo trasladados a centros de salud mientras los organismos de protección civil y cuerpos de seguridad evacuaban las instalaciones (La Prensa de Lara).\n\nEl presidente regional de Primero Justicia en Trujillo, Emilio Fajardo Linares, exigió que las intoxicaciones masivas en escuelas del estado se despolitizen y solicitó una investigación técnica, rigurosa y transparente para determinar las causas reales de los hechos (Diario El Tiempo).\n\nEl Impulso también informó que Emilio Fajardo demandó a Fundasalud y a los organismos correspondientes una evaluación científica inmediata y una investigación exhaustiva de los episodios de intoxicación en los planteles educativos de Trujillo (El Impulso).",
+  "narrativa": "En el mes de octubre de 2026 el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró cuatro eventos de salud pública, duplicando los dos registrados en el período anterior de septiembre (2 evento(s) registrados entonces vs. 4 en este período).\n\nEn el estado Trujillo se produjeron intoxicaciones masivas en planteles educativos. La Prensa de Lara informó que al menos tres casos presentaron síntomas de mareo, irritación de las vías respiratorias y náuseas, y que los estudiantes y el personal docente fueron trasladados a centros de salud mientras organismos de protección civil y cuerpos de seguridad evacuaban las instalaciones (La Prensa de Lara). Ante estos hechos, Emilio Fajardo Linares, presidente regional de Primero Justicia, exigió despolitizar las intoxicaciones y solicitó una investigación técnica, rigurosa y transparente a Fundasalud y a los organismos correspondientes (Diario El Tiempo). La misma demanda fue reproducida por El Impulso, que reiteró la necesidad de una evaluación científica inmediata (El Impulso).\n\nEl estado Guárico registró un evento crítico: la muerte de José Gregorio Díaz, preso de 59 años, en la cárcel 26 de Julio, atribuida a una presunta falta de atención médica. El Observatorio Venezolano de Prisiones denunció el fallecimiento y pidió una investigación exhaustiva, alertando también sobre brotes infecciosos e insalubridad dentro del penal (El Impulso).\n\nLas autoridades sanitarias y de seguridad han sido convocadas a coordinar acciones de respuesta inmediata, incluyendo la evacuación de los centros afectados, la atención médica de los afectados y la apertura de investigaciones independientes para determinar las causas de los incidentes en Trujillo y Guárico.\n",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -20,6 +20,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/12/emilio-fajardo-exige-despolitizar-intoxicaciones-en-escuelas-de-trujillo-y-pide-una-investigacion-exhaustiva-12oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/14/denuncian-la-muerte-de-un-preso-en-la-carcel-26-de-julio-de-guarico-por-presunta-falta-de-atencion-medica-14oct/"
     },
     {
       "nombre": "La Prensa de Lara",
