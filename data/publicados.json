@@ -189,10 +189,10 @@
     "municipio": "Santa Rosalía"
   },
   "orden_publico::Lara::2026-10-15": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-15T19:20:13.475923+00:00",
-    "fecha_evento_temprana": "2026-10-15T16:30:00+00:00",
+    "fecha_deteccion": "2026-10-15T22:30:33.367822+00:00",
+    "fecha_evento_temprana": "2026-10-15T22:00:00+00:00",
     "municipio": null
   }
 }
