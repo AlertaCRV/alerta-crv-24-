@@ -3,19 +3,27 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-14T00:29:45.460616+00:00",
-  "actualizado_hasta": "2026-10-09T06:49:57.742558+00:00",
-  "total_eventos": 2,
+  "generado": "2026-10-15T01:00:12.123919+00:00",
+  "actualizado_hasta": "2026-10-15T00:54:58.687046+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron únicamente dos eventos de fallas eléctricas, una cifra significativamente menor que los 22 eventos reportados en septiembre del mismo año (22 evento(s) registrados entonces vs. 2 en este período). \n\nUno de los incidentes ocurrió en la urbanización El Paraíso, ubicada en el municipio Biruaca del estado Apure, donde una avería en las redes de distribución provocó la interrupción del suministro eléctrico. La Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo, enviando personal especializado para realizar diagnóstico y reemplazo de componentes con el objetivo de restablecer el fluido eléctrico en la zona (Notiapure). \n\nEl trabajo de CORPOELEC incluyó la inspección de la infraestructura afectada y la sustitución de los elementos defectuosos, lo que permitió la recuperación total del servicio eléctrico en la urbanización El Paraíso (Notiapure). \n\nCon solo dos eventos registrados en el período, la carga operativa de la entidad eléctrica se redujo notablemente en comparación con el mes anterior, lo que indica una disminución temporal de incidentes de este tipo en la región.",
+  "narrativa": "En el mes de octubre de 2026 se registraron solo cuatro eventos de fallas eléctricas, una notable reducción frente a los veintidós incidentes del mes anterior (2026‑09). Esta disminución se refleja en la menor cantidad de reportes de interrupciones y daños asociados a la red eléctrica nacional.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles. Según el medio El Siglo, el siniestro habría sido provocado por fluctuaciones eléctricas y los prolongados apagones que la empresa Corpoelec mantiene en la entidad, generando cuantiosas pérdidas materiales (El Siglo).\n\nEn el estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico en la urbanización El Paraíso, ubicada en el municipio Biruaca. Los reportes de Notiapure indican que el personal especializado se encontraba en el sitio diagnosticando y reemplazando componentes de la red de distribución, con acciones reportadas tanto hace 2 horas como hace 8 horas, confirmando la continuidad de la intervención (Notiapure).\n\nEn Bolívar, un apagón afectó varios sectores de Ciudad Bolívar, entre ellos la avenida España, iniciándose aproximadamente a las 3:00 p.m. del martes. Vecinos reportaron la interrupción a través de redes sociales, según informa Primicia (Primicia).",
   "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/incendio-destruyo-bufete-de-abogados-en-barrio-sucre/"
+    },
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/guayana/regiones/apagon-afecta-a-sectores-de-ciudad-bolivar-este-martes/"
     }
   ]
 }

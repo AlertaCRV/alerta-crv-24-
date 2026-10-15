@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-14T22:38:33.941683+00:00",
+  "actualizado": "2026-10-15T00:56:41.895261+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-14T19:21:50+00:00"
+    "hasta": "2026-10-14T22:36:02+00:00"
   },
-  "total_eventos": 474,
+  "total_eventos": 477,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
-    "infraestructura_electrica": 41,
+    "infraestructura_electrica": 42,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 158,
-    "salud_publica": 14,
+    "orden_publico": 159,
+    "salud_publica": 15,
     "crisis_migratoria": 7,
     "incendio": 53,
     "vialidad": 22,
@@ -69,13 +69,14 @@
     },
     {
       "estado": "Aragua",
-      "total": 32,
+      "total": 33,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 7,
         "medio": 10,
         "alto": 11,
-        "critico": 4
+        "critico": 4,
+        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -93,12 +94,12 @@
     },
     {
       "estado": "Barinas",
-      "total": 25,
+      "total": 26,
       "confirmados": 1,
       "por_severidad": {
         "alto": 2,
         "medio": 12,
-        "bajo": 7,
+        "bajo": 8,
         "critico": 4
       },
       "severidad_dominante": "critico"
@@ -274,11 +275,11 @@
     },
     {
       "estado": "Guarico",
-      "total": 5,
+      "total": 6,
       "confirmados": 0,
       "por_severidad": {
         "medio": 3,
-        "critico": 1,
+        "critico": 2,
         "alto": 1
       },
       "severidad_dominante": "critico"
@@ -376,7 +377,7 @@
       "deslizamiento": 3,
       "inundacion": 6,
       "vialidad": 4,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "infraestructura_agua": 1,
       "salud_publica": 1,
       "infraestructura_electrica": 3
@@ -464,7 +465,7 @@
       "deslizamiento": 6,
       "tormenta_electrica": 1,
       "incendio": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 3
     },
     "Monagas": {
       "salud_publica": 1,
@@ -477,7 +478,8 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "orden_publico": 2
+      "orden_publico": 2,
+      "salud_publica": 1
     },
     "Portuguesa": {
       "orden_publico": 14,
@@ -519,10 +521,10 @@
   },
   "por_severidad": {
     "alto": 109,
-    "critico": 54,
+    "critico": 55,
     "medio": 163,
-    "bajo": 137,
-    "sin_clasificar": 11
+    "bajo": 138,
+    "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -541,7 +543,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 3
+      "2026-10": 4
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -559,13 +561,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 36
+      "2026-10": 37
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 3
+      "2026-10": 4
     },
     "crisis_migratoria": {
       "2026-07": 4,

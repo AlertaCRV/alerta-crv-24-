@@ -1,6 +1,84 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/10/entre-tensiones-y-altercadosintergremial-universitaria-se-declara-en-protestatras-toma-del-rectorado-de-la-unellez/",
+        "fecha": "2026-10-14T22:36:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T22:36:02+00:00",
+    "fecha_evento_temprana": "2026-10-14T22:36:02+00:00",
+    "fecha_deteccion": "2026-10-15T00:54:23.737832+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-10-14",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 14/10/2026, 6:36 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 8:54 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/entre-tensiones-y-altercadosintergremial-universitaria-se-declara-en-protestatras-toma-del-rectorado-de-la-unellez/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Aragua",
+    "municipio": "Girardot",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/incendio-destruyo-bufete-de-abogados-en-barrio-sucre/",
+        "fecha": "2026-10-14T22:35:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T22:35:31+00:00",
+    "fecha_evento_temprana": "2026-10-14T22:35:31+00:00",
+    "fecha_deteccion": "2026-10-15T00:54:58.687046+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Aragua::2026-10-14",
+    "titulo": "Falla eléctrica en Municipio Girardot, Aragua",
+    "texto": "📌 Falla eléctrica en Municipio Girardot, Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Girardot, Aragua\n🕒 Hecho reportado: 14/10/2026, 6:35 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 8:54 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/incendio-destruyo-bufete-de-abogados-en-barrio-sucre/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/14/denuncian-la-muerte-de-un-preso-en-la-carcel-26-de-julio-de-guarico-por-presunta-falta-de-atencion-medica-14oct/",
+        "fecha": "2026-10-14T21:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-14T21:30:00+00:00",
+    "fecha_evento_temprana": "2026-10-14T21:30:00+00:00",
+    "fecha_deteccion": "2026-10-15T00:56:40.308750+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Guarico::2026-10-14",
+    "titulo": "Salud pública en Guarico",
+    "texto": "📌 Salud pública en Guarico\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 14/10/2026, 5:30 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 8:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/14/denuncian-la-muerte-de-un-preso-en-la-carcel-26-de-julio-de-guarico-por-presunta-falta-de-atencion-medica-14oct/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Anzoategui",
     "municipio": null,
     "parroquia": null,
@@ -1595,31 +1673,5 @@
     "clave_dedup": "orden_publico::Lara::2026-10-01",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 9:14 a.m.\n🔎 Detectado por el sistema: 01/10/2026, 12:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Portuguesa",
-    "municipio": "Ospino",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/volcamiento-de-autobus-en-portuguesa-deja-tres-muertos-y-14-heridos/",
-        "fecha": "2026-09-30T20:03:51+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-09-30T20:03:51+00:00",
-    "fecha_evento_temprana": "2026-09-30T20:03:51+00:00",
-    "fecha_deteccion": "2026-09-30T23:08:33.187750+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Portuguesa::2026-09-30",
-    "titulo": "Incidente vial en Municipio Ospino, Portuguesa",
-    "texto": "📌 Incidente vial en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 30/09/2026, 4:03 p.m.\n🔎 Detectado por el sistema: 30/09/2026, 7:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/volcamiento-de-autobus-en-portuguesa-deja-tres-muertos-y-14-heridos/"
   }
 ]
