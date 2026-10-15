@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-15T00:56:41.895261+00:00",
+  "actualizado": "2026-10-15T15:17:50.414471+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-14T22:36:02+00:00"
+    "hasta": "2026-10-15T14:32:36+00:00"
   },
-  "total_eventos": 477,
+  "total_eventos": 478,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -12,7 +12,7 @@
     "deslizamiento": 35,
     "colapso_estructural": 5,
     "orden_publico": 159,
-    "salud_publica": 15,
+    "salud_publica": 16,
     "crisis_migratoria": 7,
     "incendio": 53,
     "vialidad": 22,
@@ -165,6 +165,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Trujillo",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 8,
+        "bajo": 3,
+        "critico": 1,
+        "alto": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Bolivar",
       "total": 16,
       "confirmados": 1,
@@ -174,18 +186,6 @@
         "critico": 2,
         "alto": 1,
         "sin_clasificar": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 15,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 8,
-        "bajo": 3,
-        "critico": 1,
-        "alto": 3
       },
       "severidad_dominante": "critico"
     },
@@ -371,7 +371,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 1,
-      "salud_publica": 3
+      "salud_publica": 4
     },
     "Barinas": {
       "deslizamiento": 3,
@@ -520,7 +520,7 @@
     }
   },
   "por_severidad": {
-    "alto": 109,
+    "alto": 110,
     "critico": 55,
     "medio": 163,
     "bajo": 138,
@@ -567,7 +567,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 4
+      "2026-10": 5
     },
     "crisis_migratoria": {
       "2026-07": 4,
