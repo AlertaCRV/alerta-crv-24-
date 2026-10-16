@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-16T21:26:53.213989+00:00",
+  "actualizado": "2026-10-16T23:50:24.922611+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-16T19:20:48+00:00"
   },
-  "total_eventos": 490,
+  "total_eventos": 491,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 167,
+    "orden_publico": 168,
     "salud_publica": 16,
     "crisis_migratoria": 7,
     "incendio": 53,
@@ -42,6 +42,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Lara",
+      "total": 40,
+      "confirmados": 2,
+      "por_severidad": {
+        "critico": 4,
+        "alto": 7,
+        "medio": 17,
+        "bajo": 11,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Zulia",
       "total": 40,
       "confirmados": 7,
@@ -51,19 +64,6 @@
         "bajo": 9,
         "sin_clasificar": 1,
         "alto": 9
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Lara",
-      "total": 39,
-      "confirmados": 2,
-      "por_severidad": {
-        "critico": 4,
-        "alto": 7,
-        "medio": 16,
-        "bajo": 11,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -325,7 +325,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 18,
+      "orden_publico": 19,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -524,7 +524,7 @@
   "por_severidad": {
     "alto": 113,
     "critico": 56,
-    "medio": 168,
+    "medio": 169,
     "bajo": 141,
     "sin_clasificar": 12
   },
@@ -563,7 +563,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 45
+      "2026-10": 46
     },
     "salud_publica": {
       "2026-07": 1,
