@@ -1,45 +1,10 @@
 {
-  "orden_publico::Miranda::2026-10-13": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T21:17:48.398578+00:00",
-    "fecha_evento_temprana": "2026-10-13T18:57:30+00:00",
-    "municipio": null
-  },
   "deslizamiento::Aragua::2026-10-13": {
     "severidad": "alto",
     "confirmado": true,
     "fecha_deteccion": "2026-10-14T19:31:38.170219+00:00",
     "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
     "municipio": "Girardot"
-  },
-  "orden_publico::Portuguesa::2026-10-13": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-13T21:16:23.148078+00:00",
-    "fecha_evento_temprana": "2026-10-13T18:57:30+00:00",
-    "municipio": null
-  },
-  "orden_publico::Sucre::2026-10-13": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T21:17:35.984533+00:00",
-    "fecha_evento_temprana": "2026-10-13T17:39:06+00:00",
-    "municipio": "Bermúdez"
-  },
-  "orden_publico::Lara::2026-10-13": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T21:18:00.605045+00:00",
-    "fecha_evento_temprana": "2026-10-13T21:00:27+00:00",
-    "municipio": null
-  },
-  "vialidad::Yaracuy::2026-10-13": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T21:18:26.478912+00:00",
-    "fecha_evento_temprana": "2026-10-13T19:00:00+00:00",
-    "municipio": null
   },
   "orden_publico::Distrito Capital::2026-10-13": {
     "severidad": "bajo",
@@ -148,16 +113,16 @@
   },
   "orden_publico::Portuguesa::2026-10-16": {
     "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-16T18:19:18.287647+00:00",
-    "fecha_evento_temprana": "2026-10-16T14:54:01+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-16T21:26:34.895722+00:00",
+    "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
     "municipio": "Araure"
   },
   "orden_publico::Lara::2026-10-16": {
-    "severidad": "medio",
+    "severidad": "bajo",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-16T18:19:14.390598+00:00",
-    "fecha_evento_temprana": "2026-10-16T14:54:01+00:00",
+    "fecha_deteccion": "2026-10-16T21:26:27.389648+00:00",
+    "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
     "municipio": null
   },
   "orden_publico::Trujillo::2026-10-16": {
