@@ -173,5 +173,12 @@
     "fecha_deteccion": "2026-10-15T22:30:33.367822+00:00",
     "fecha_evento_temprana": "2026-10-15T22:00:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-10-16": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-16T14:22:58.088570+00:00",
+    "fecha_evento_temprana": "2026-10-16T11:30:00+00:00",
+    "municipio": "Araure"
   }
 }

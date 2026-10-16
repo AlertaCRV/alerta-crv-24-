@@ -1,6 +1,32 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Araure",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/caficultores-lara-portuguesa-precios/",
+        "fecha": "2026-10-16T11:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-16T11:30:00+00:00",
+    "fecha_evento_temprana": "2026-10-16T11:30:00+00:00",
+    "fecha_deteccion": "2026-10-16T14:22:58.088570+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-10-16",
+    "titulo": "Orden público en Municipio Araure, Portuguesa",
+    "texto": "📌 Orden público en Municipio Araure, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Araure, Portuguesa\n🕒 Hecho reportado: 16/10/2026, 7:30 a.m.\n🔎 Detectado por el sistema: 16/10/2026, 10:22 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/caficultores-lara-portuguesa-precios/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Lara",
     "municipio": null,
     "parroquia": null,
@@ -1621,83 +1647,5 @@
     "clave_dedup": "vialidad::Portuguesa::2026-10-02",
     "titulo": "Incidente vial en Municipio Guanare, Portuguesa",
     "texto": "📌 Incidente vial en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 9:30 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/02/nuevo-accidente-en-la-jap-deja-cuatro-lesionados-en-guanare/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": "Páez",
-    "parroquia": "Payara",
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Turimiquire (Sucre)",
-        "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/",
-        "fecha": "2026-10-02T05:40:26+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T05:40:26+00:00",
-    "fecha_evento_temprana": "2026-10-02T05:40:26+00:00",
-    "fecha_deteccion": "2026-10-02T06:23:23.338146+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-10-02",
-    "titulo": "Orden público en Parroquia Payara, Municipio Páez, Portuguesa",
-    "texto": "📌 Orden público en Parroquia Payara, Municipio Páez, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Payara, Municipio Páez, Portuguesa\n🕒 Hecho reportado: 02/10/2026, 1:40 a.m.\n🔎 Detectado por el sistema: 02/10/2026, 2:23 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/caficultores-de-portuguesa-y-lara-denuncian-incumplimiento-de-precios-acordados-y-anuncian-movilizacion/",
-        "fecha": "2026-10-02T00:01:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-02T00:01:18+00:00",
-    "fecha_evento_temprana": "2026-10-02T00:01:18+00:00",
-    "fecha_deteccion": "2026-10-02T00:46:48.750639+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-10-02",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 01/10/2026, 8:01 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 8:46 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/caficultores-de-portuguesa-y-lara-denuncian-incumplimiento-de-precios-acordados-y-anuncian-movilizacion/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Merida",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/",
-        "fecha": "2026-10-01T23:53:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-01T23:53:33+00:00",
-    "fecha_evento_temprana": "2026-10-01T23:53:33+00:00",
-    "fecha_deteccion": "2026-10-02T00:46:58.174814+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Merida::2026-10-01",
-    "titulo": "Orden público en Merida",
-    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 01/10/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 01/10/2026, 8:46 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/comunidad-de-la-ula-protesta-contra-posible-suspension-de-elecciones-universitarias/"
   }
 ]
