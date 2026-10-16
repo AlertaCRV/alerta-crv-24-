@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-16T14:22:59.055131+00:00",
+  "actualizado": "2026-10-16T18:19:41.731986+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-16T11:30:00+00:00"
+    "hasta": "2026-10-16T17:03:19+00:00"
   },
-  "total_eventos": 485,
+  "total_eventos": 488,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 162,
+    "orden_publico": 165,
     "salud_publica": 16,
     "crisis_migratoria": 7,
     "incendio": 53,
@@ -56,12 +56,12 @@
     },
     {
       "estado": "Lara",
-      "total": 37,
+      "total": 38,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 7,
-        "medio": 15,
+        "medio": 16,
         "bajo": 10,
         "sin_clasificar": 1
       },
@@ -82,11 +82,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 29,
+      "total": 30,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 10,
-        "medio": 7,
+        "medio": 8,
         "critico": 3,
         "alto": 9
       },
@@ -166,10 +166,10 @@
     },
     {
       "estado": "Trujillo",
-      "total": 16,
+      "total": 17,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 8,
+        "medio": 9,
         "bajo": 3,
         "critico": 1,
         "alto": 4
@@ -325,7 +325,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 4,
-      "orden_publico": 16,
+      "orden_publico": 17,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 1,
@@ -370,7 +370,7 @@
       "sequia": 1,
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "salud_publica": 4
     },
     "Barinas": {
@@ -483,7 +483,7 @@
       "salud_publica": 1
     },
     "Portuguesa": {
-      "orden_publico": 15,
+      "orden_publico": 16,
       "inundacion": 6,
       "incendio": 1,
       "infraestructura_agua": 1,
@@ -524,7 +524,7 @@
   "por_severidad": {
     "alto": 113,
     "critico": 56,
-    "medio": 164,
+    "medio": 167,
     "bajo": 140,
     "sin_clasificar": 12
   },
@@ -563,7 +563,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 40
+      "2026-10": 43
     },
     "salud_publica": {
       "2026-07": 1,
