@@ -6,40 +6,12 @@
     "fecha_evento_temprana": "2026-10-13T18:57:30+00:00",
     "municipio": null
   },
-  "vialidad::Portuguesa::2026-10-13": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T16:11:16.480467+00:00",
-    "fecha_evento_temprana": "2026-10-13T13:08:24+00:00",
-    "municipio": "Guanare"
-  },
-  "orden_publico::Falcon::2026-10-13": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T16:11:25.160347+00:00",
-    "fecha_evento_temprana": "2026-10-13T15:45:57+00:00",
-    "municipio": "Buchivacoa"
-  },
-  "orden_publico::Zulia::2026-10-13": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T16:11:29.490978+00:00",
-    "fecha_evento_temprana": "2026-10-13T15:45:57+00:00",
-    "municipio": null
-  },
   "deslizamiento::Aragua::2026-10-13": {
     "severidad": "alto",
     "confirmado": true,
     "fecha_deteccion": "2026-10-14T19:31:38.170219+00:00",
     "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
     "municipio": "Girardot"
-  },
-  "colapso_estructural::Portuguesa::2026-10-13": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T16:12:11.952473+00:00",
-    "fecha_evento_temprana": "2026-10-13T14:33:13+00:00",
-    "municipio": "Ospino"
   },
   "orden_publico::Portuguesa::2026-10-13": {
     "severidad": "medio",
@@ -175,10 +147,24 @@
     "municipio": null
   },
   "orden_publico::Portuguesa::2026-10-16": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-16T14:22:58.088570+00:00",
-    "fecha_evento_temprana": "2026-10-16T11:30:00+00:00",
+    "fecha_deteccion": "2026-10-16T18:19:18.287647+00:00",
+    "fecha_evento_temprana": "2026-10-16T14:54:01+00:00",
     "municipio": "Araure"
+  },
+  "orden_publico::Lara::2026-10-16": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-16T18:19:14.390598+00:00",
+    "fecha_evento_temprana": "2026-10-16T14:54:01+00:00",
+    "municipio": null
+  },
+  "orden_publico::Trujillo::2026-10-16": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-16T18:19:39.963489+00:00",
+    "fecha_evento_temprana": "2026-10-16T17:03:19+00:00",
+    "municipio": "La Ceiba"
   }
 }
