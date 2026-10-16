@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-15T01:00:12.123919+00:00",
-  "actualizado_hasta": "2026-10-15T00:54:58.687046+00:00",
-  "total_eventos": 4,
+  "generado": "2026-10-16T00:46:27.700451+00:00",
+  "actualizado_hasta": "2026-10-15T19:19:23.145045+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron solo cuatro eventos de fallas eléctricas, una notable reducción frente a los veintidós incidentes del mes anterior (2026‑09). Esta disminución se refleja en la menor cantidad de reportes de interrupciones y daños asociados a la red eléctrica nacional.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles. Según el medio El Siglo, el siniestro habría sido provocado por fluctuaciones eléctricas y los prolongados apagones que la empresa Corpoelec mantiene en la entidad, generando cuantiosas pérdidas materiales (El Siglo).\n\nEn el estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico en la urbanización El Paraíso, ubicada en el municipio Biruaca. Los reportes de Notiapure indican que el personal especializado se encontraba en el sitio diagnosticando y reemplazando componentes de la red de distribución, con acciones reportadas tanto hace 2 horas como hace 8 horas, confirmando la continuidad de la intervención (Notiapure).\n\nEn Bolívar, un apagón afectó varios sectores de Ciudad Bolívar, entre ellos la avenida España, iniciándose aproximadamente a las 3:00 p.m. del martes. Vecinos reportaron la interrupción a través de redes sociales, según informa Primicia (Primicia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron cinco eventos de fallas eléctricas, una disminución notable respecto a los 22 incidentes reportados en septiembre del mismo año (comparación con el período anterior). Esta reducción se observa pese a la persistencia de interrupciones y averías que afectan a distintas regiones del país.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles. Según los informes, el siniestro habría sido provocado por fluctuaciones eléctricas y los prolongados apagones que la empresa Corpoelec mantiene en la entidad, generando cuantiosas pérdidas materiales (El Siglo).\n\nEn el estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico en la urbanización El Paraíso, del municipio Biruaca. El trabajo responde a una avería registrada en las redes de distribución del sector, con personal especializado realizando diagnóstico y reemplazo de componentes (Notiapure).\n\nEn Portuguesa, los habitantes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, presentaron un aumento de denuncias por apagones nocturnos que interrumpen el descanso y actividades cotidianas, recibiendo notificaciones vía mensaje de texto después de las 9 p.m. (Portuguesa Reporta). Asimismo, en Ciudad Bolívar, Bolívar, vecinos reportaron un apagón que comenzó alrededor de las 3:00 p.m. en zonas como la avenida España, según publicaciones en redes sociales (Primicia).",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",
@@ -20,6 +20,10 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia"
     },
     {
       "nombre": "Primicia (Bolivar)",

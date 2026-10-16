@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-15T01:01:07.060651+00:00",
-  "actualizado_hasta": "2026-10-15T00:56:40.308750+00:00",
-  "total_eventos": 4,
+  "generado": "2026-10-16T00:47:50.369722+00:00",
+  "actualizado_hasta": "2026-10-15T15:17:40.986451+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "En el mes de octubre de 2026 el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró cuatro eventos de salud pública, duplicando los dos registrados en el período anterior de septiembre (2 evento(s) registrados entonces vs. 4 en este período).\n\nEn el estado Trujillo se produjeron intoxicaciones masivas en planteles educativos. La Prensa de Lara informó que al menos tres casos presentaron síntomas de mareo, irritación de las vías respiratorias y náuseas, y que los estudiantes y el personal docente fueron trasladados a centros de salud mientras organismos de protección civil y cuerpos de seguridad evacuaban las instalaciones (La Prensa de Lara). Ante estos hechos, Emilio Fajardo Linares, presidente regional de Primero Justicia, exigió despolitizar las intoxicaciones y solicitó una investigación técnica, rigurosa y transparente a Fundasalud y a los organismos correspondientes (Diario El Tiempo). La misma demanda fue reproducida por El Impulso, que reiteró la necesidad de una evaluación científica inmediata (El Impulso).\n\nEl estado Guárico registró un evento crítico: la muerte de José Gregorio Díaz, preso de 59 años, en la cárcel 26 de Julio, atribuida a una presunta falta de atención médica. El Observatorio Venezolano de Prisiones denunció el fallecimiento y pidió una investigación exhaustiva, alertando también sobre brotes infecciosos e insalubridad dentro del penal (El Impulso).\n\nLas autoridades sanitarias y de seguridad han sido convocadas a coordinar acciones de respuesta inmediata, incluyendo la evacuación de los centros afectados, la atención médica de los afectados y la apertura de investigaciones independientes para determinar las causas de los incidentes en Trujillo y Guárico.\n",
+  "narrativa": "En el mes de octubre de 2026 se registraron cinco eventos de salud pública, superando los dos eventos del mes anterior (2026‑09) (Comparación con el período anterior). Todos los incidentes presentaron una severidad alta, salvo uno que alcanzó nivel crítico, y se concentraron en los estados de Trujillo y Guárico.\n\nEn Trujillo, el presidente regional de Primero Justicia, Emilio Fajardo Linares, exigió la despolitización de las intoxicaciones masivas ocurridas en planteles educativos y solicitó una investigación técnica, rigurosa y transparente (Diario El Tiempo (Trujillo)). El mismo hecho fue reproducido por El Impulso (Lara), que también resaltó la necesidad de una evaluación científica inmediata por parte de Fundasalud y otros organismos (El Impulso (Lara)).\n\nLa Prensa de Lara informó que se habían registrado al menos tres casos de intoxicación en instituciones educativas de los estados Lara y Trujillo, con síntomas de mareo, irritación respiratoria y náuseas, y que los afectados fueron trasladados a centros de salud mientras las autoridades evacuaban los lugares (La Prensa de Lara). Esta cobertura subraya la gravedad alta del problema en la región.\n\nEl Periodico de Monagas reportó una nueva intoxicación masiva en la Escuela Fabricio Ojeda, ubicada en la parroquia Tres de Febrero del estado Trujillo, durante una asamblea de docentes y representantes, donde varias personas se sintieron mal y la falta de equipos de emergencia retrasó su traslado a un hospital (El Periodico de Monagas). Este episodio también se clasifica con severidad alta.\n\nEn Guárico, El Impulso (Lara) denunció la muerte de José Gregorio Díaz, preso de 59 años, en la cárcel 26 de Julio, atribuida a una presunta falta de atención médica, y alertó sobre brotes infecciosos e insalubridad dentro del penal, calificando el caso como de severidad crítica (El Impulso (Lara)).",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/14/denuncian-la-muerte-de-un-preso-en-la-carcel-26-de-julio-de-guarico-por-presunta-falta-de-atencion-medica-14oct/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-nueva-intoxicacion-masiva-en-escuela-de-trujillo/"
     },
     {
       "nombre": "La Prensa de Lara",
