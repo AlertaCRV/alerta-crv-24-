@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-10-12T23:42:20+00:00",
     "municipio": null
   },
-  "orden_publico::Distrito Capital::2026-10-12": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T01:28:17.135597+00:00",
-    "fecha_evento_temprana": "2026-10-12T16:49:13+00:00",
-    "municipio": null
-  },
-  "salud_publica::Trujillo::2026-10-12": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-13T01:29:21.649203+00:00",
-    "fecha_evento_temprana": "2026-10-12T22:15:00+00:00",
-    "municipio": null
-  },
   "orden_publico::Miranda::2026-10-13": {
     "severidad": "medio",
     "confirmado": false,

@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-15T05:48:20.989347+00:00",
-  "actualizado_hasta": "2026-10-15T00:54:23.737832+00:00",
-  "total_eventos": 37,
+  "generado": "2026-10-16T05:08:43.201226+00:00",
+  "actualizado_hasta": "2026-10-15T22:30:33.367822+00:00",
+  "total_eventos": 39,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 37
+    "actual": 39
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 37 incidentes de orden público, una disminución respecto a los 76 eventos del mes anterior (septiembre de 2026) (Comparación con el período anterior). Esta reducción se da en un contexto de protestas y enfrentamientos vinculados a los recurrentes cortes eléctricos y a la criminalidad en varias regiones del país.\n\nEn el estado Zulia se reportaron protestas nocturnas en varios sectores, donde vecinos bloquearon avenidas y carreteras en rechazo a los racionamientos eléctricos (La Prensa de Lara). En Guárico, manifestantes salieron a las calles exigiendo el fin de los apagones, replicando al menos cinco protestas en la región (El Pitazo). En Carabobo, las protestas por los racionamientos eléctricos colapsaron la Autopista Regional del Centro (ARC), generando fuerte tráfico en Guacara, Yagua y Malavé (El Impulso (Lara)).\n\nEn el estado Portuguesa se produjeron dos episodios de orden público: en la parroquia Payara del municipio Páez, una protesta bloqueó la vía principal reteniendo más de 40 camiones cargados con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)); y en Ospino, a pesar del fuerte despliegue policial, vecinos marcharon contra los prolongados apagones, iniciando con un cacerolazo y convirtiéndose en una marcha por la avenida principal (Portuguesa Reporta).\n\nEn Yaracuy, un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, tras ser trasladados al Hospital Universitario Antonio María Pineda en Lara (Yaracuy al Dia). En Anzoátegui, cuatro sujetos dedicados al robo y hurto de vehículos y motos fueron abatidos en un enfrentamiento con el CICPC en el sector 18 de Octubre (Diario El Vistazo (Anzoategui)).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 39 incidentes de orden público, una disminución respecto a los 76 eventos del mes anterior (2026‑09). La reducción se observa en el número total de protestas y enfrentamientos, aunque persisten episodios de alta y crítica severidad en varios estados.\n\nEn Zulia, manifestaciones nocturnas contra los cortes eléctricos provocaron enfrentamientos con la Guardia Nacional, calificándose de alta severidad (La Prensa de Lara). En Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones y fueron reprimidos por las fuerzas de seguridad, también con severidad alta (El Pitazo).\n\nEn Carabobo, las protestas por racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, generando congestión vehicular y enfrentamientos con la autoridad, catalogadas como de alta severidad (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron dos incidentes de alta severidad: una protesta en la parroquia Payara, municipio Páez, que paralizó más de 40 camiones cargados de cereales (Turimiquire (Sucre)); y una marcha en Ospino, donde a pesar del fuerte despliegue policial, vecinos protestaron contra los apagones (Portuguesa Reporta).\n\nEn Yaracuy, un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, considerado de gravedad crítica (Yaracuy al Dia). En Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC en el sector 18 de Octubre resultó en la muerte de los cuatro individuos, también de severidad crítica (Diario El Vistazo (Anzoategui)).",
   "fuentes": [
     {
       "nombre": "Diario El Vistazo (Anzoategui)",
@@ -52,6 +52,14 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/13/video-sindicatos-de-la-educacion-en-lara-se-suman-a-la-protesta-nacional-por-sueldos-dignos-y-beneficios-laborales-13oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/15/video-universidades-publicas-en-lara-se-suman-a-las-protestas-la-crisis-en-las-casas-de-estudio-es-critica-15oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/15/video-comunidades-en-lara-se-unen-a-protestas-y-denuncian-caos-por-crisis-electrica-15oct/"
     },
     {
       "nombre": "El Pitazo",
@@ -136,10 +144,6 @@
     {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/nacion/protestas-en-coro-ante-crisis-de-servicios-basicos/"
     }
   ]
 }
