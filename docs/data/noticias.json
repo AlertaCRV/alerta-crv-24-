@@ -4,7 +4,7 @@
     "ubicacion": "Lara",
     "municipio": null,
     "parroquia": null,
-    "severidad": "bajo",
+    "severidad": "medio",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +19,11 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-16T18:26:43+00:00",
     "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
-    "fecha_deteccion": "2026-10-16T21:26:27.389648+00:00",
+    "fecha_deteccion": "2026-10-16T23:49:54.957859+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Lara::2026-10-16",
     "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/10/2026, 2:26 p.m.\n🔎 Detectado por el sistema: 16/10/2026, 5:26 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas/?utm_source=rss&utm_medium=rss&utm_campaign=por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas"
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/10/2026, 2:26 p.m.\n🔎 Detectado por el sistema: 16/10/2026, 7:49 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas/?utm_source=rss&utm_medium=rss&utm_campaign=por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas"
   },
   {
     "tipo": "orden_publico",
