@@ -1,25 +1,4 @@
 {
-  "deslizamiento::Aragua::2026-10-13": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-14T19:31:38.170219+00:00",
-    "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
-    "municipio": "Girardot"
-  },
-  "orden_publico::Falcon::2026-10-14": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-14T19:31:42.955650+00:00",
-    "fecha_evento_temprana": "2026-10-14T19:21:50+00:00",
-    "municipio": "Bolívar"
-  },
-  "orden_publico::Lara::2026-10-14": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-14T19:32:25.663440+00:00",
-    "fecha_evento_temprana": "2026-10-14T19:17:20+00:00",
-    "municipio": null
-  },
   "orden_publico::Anzoategui::2026-10-14": {
     "severidad": "critico",
     "confirmado": false,
