@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-17T01:42:26.500608+00:00",
+  "actualizado": "2026-10-17T19:26:43.518597+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-16T19:20:48+00:00"
+    "hasta": "2026-10-17T18:06:48+00:00"
   },
-  "total_eventos": 492,
+  "total_eventos": 495,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -14,7 +14,7 @@
     "orden_publico": 169,
     "salud_publica": 16,
     "crisis_migratoria": 7,
-    "incendio": 53,
+    "incendio": 56,
     "vialidad": 25,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -42,6 +42,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Zulia",
+      "total": 41,
+      "confirmados": 7,
+      "por_severidad": {
+        "medio": 17,
+        "critico": 5,
+        "bajo": 9,
+        "sin_clasificar": 1,
+        "alto": 9
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Lara",
       "total": 40,
       "confirmados": 2,
@@ -51,19 +64,6 @@
         "medio": 17,
         "bajo": 11,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Zulia",
-      "total": 40,
-      "confirmados": 7,
-      "por_severidad": {
-        "medio": 17,
-        "critico": 4,
-        "bajo": 9,
-        "sin_clasificar": 1,
-        "alto": 9
       },
       "severidad_dominante": "critico"
     },
@@ -105,6 +105,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Miranda",
+      "total": 21,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 3,
+        "medio": 5,
+        "critico": 5,
+        "bajo": 8
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Tachira",
       "total": 20,
       "confirmados": 0,
@@ -113,18 +125,6 @@
         "bajo": 3,
         "medio": 6,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Miranda",
-      "total": 20,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "medio": 5,
-        "critico": 4,
-        "bajo": 8
       },
       "severidad_dominante": "critico"
     },
@@ -202,13 +202,13 @@
     },
     {
       "estado": "Carabobo",
-      "total": 13,
+      "total": 14,
       "confirmados": 1,
       "por_severidad": {
         "alto": 3,
         "bajo": 4,
         "medio": 5,
-        "critico": 1
+        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -320,7 +320,8 @@
       "orden_publico": 5,
       "infraestructura_electrica": 2,
       "inundacion": 3,
-      "vialidad": 2
+      "vialidad": 2,
+      "incendio": 1
     },
     "Lara": {
       "inundacion": 5,
@@ -347,7 +348,7 @@
       "ataque_armado": 1,
       "explosion": 1,
       "vialidad": 1,
-      "incendio": 4,
+      "incendio": 5,
       "derrame_petrolero": 2
     },
     "Distrito Capital": {
@@ -426,7 +427,7 @@
       "infraestructura_electrica": 1
     },
     "Miranda": {
-      "incendio": 4,
+      "incendio": 5,
       "infraestructura_electrica": 2,
       "explosion": 1,
       "inundacion": 5,
@@ -523,7 +524,7 @@
   },
   "por_severidad": {
     "alto": 113,
-    "critico": 56,
+    "critico": 59,
     "medio": 170,
     "bajo": 141,
     "sin_clasificar": 12
@@ -581,7 +582,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 12
+      "2026-10": 15
     },
     "vialidad": {
       "2026-08": 10,
