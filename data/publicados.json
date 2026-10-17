@@ -110,5 +110,26 @@
     "fecha_deteccion": "2026-10-16T18:19:39.963489+00:00",
     "fecha_evento_temprana": "2026-10-16T17:03:19+00:00",
     "municipio": "La Ceiba"
+  },
+  "incendio::Carabobo::2026-10-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-17T19:26:02.122158+00:00",
+    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
+    "municipio": "San Diego"
+  },
+  "incendio::Miranda::2026-10-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-17T19:26:05.616592+00:00",
+    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
+    "municipio": "Lander"
+  },
+  "incendio::Zulia::2026-10-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-17T19:26:09.559230+00:00",
+    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
+    "municipio": "Maracaibo"
   }
 }
