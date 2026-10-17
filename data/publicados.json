@@ -6,27 +6,6 @@
     "fecha_evento_temprana": "2026-10-14T14:26:15+00:00",
     "municipio": "Girardot"
   },
-  "orden_publico::Distrito Capital::2026-10-13": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-14T05:17:50.528874+00:00",
-    "fecha_evento_temprana": "2026-10-13T17:40:55+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Apure::2026-10-14": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-14T05:18:03.795164+00:00",
-    "fecha_evento_temprana": "2026-10-14T01:45:20+00:00",
-    "municipio": "Achaguas"
-  },
-  "infraestructura_electrica::Bolivar::2026-10-14": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-14T05:18:16.589916+00:00",
-    "fecha_evento_temprana": "2026-10-14T01:38:41+00:00",
-    "municipio": null
-  },
   "orden_publico::Falcon::2026-10-14": {
     "severidad": "medio",
     "confirmado": false,
