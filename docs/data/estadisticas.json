@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-17T19:26:43.518597+00:00",
+  "actualizado": "2026-10-18T17:37:45.164953+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-17T18:06:48+00:00"
+    "hasta": "2026-10-18T15:45:46+00:00"
   },
-  "total_eventos": 495,
+  "total_eventos": 496,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -23,7 +23,7 @@
     "infraestructura_agua": 24,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
-    "ataque_armado": 1,
+    "ataque_armado": 2,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
@@ -286,13 +286,14 @@
     },
     {
       "estado": "Cojedes",
-      "total": 5,
+      "total": 6,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 3,
-        "medio": 2
+        "medio": 2,
+        "alto": 1
       },
-      "severidad_dominante": "medio"
+      "severidad_dominante": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -493,7 +494,8 @@
       "infraestructura_electrica": 1
     },
     "Cojedes": {
-      "orden_publico": 5
+      "orden_publico": 5,
+      "ataque_armado": 1
     },
     "Merida": {
       "vialidad": 1,
@@ -523,7 +525,7 @@
     }
   },
   "por_severidad": {
-    "alto": 113,
+    "alto": 114,
     "critico": 59,
     "medio": 170,
     "bajo": 141,
@@ -618,7 +620,8 @@
       "2026-09": 2
     },
     "ataque_armado": {
-      "2026-08": 1
+      "2026-08": 1,
+      "2026-10": 1
     },
     "emergencia_metro": {
       "2026-08": 1,

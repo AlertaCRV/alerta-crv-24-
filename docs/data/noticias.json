@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Cojedes",
+    "municipio": "Tinaquillo",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/",
+        "fecha": "2026-10-18T15:45:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-18T15:45:46+00:00",
+    "fecha_evento_temprana": "2026-10-18T15:45:46+00:00",
+    "fecha_deteccion": "2026-10-18T17:37:44.391707+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Cojedes::2026-10-18",
+    "titulo": "Ataque armado en Municipio Tinaquillo, Cojedes",
+    "texto": "📌 Ataque armado en Municipio Tinaquillo, Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Tinaquillo, Cojedes\n🕒 Hecho reportado: 18/10/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 18/10/2026, 1:37 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Carabobo",
     "municipio": "San Diego",
@@ -1562,83 +1588,5 @@
     "clave_dedup": "incendio::Zulia::2026-10-04",
     "titulo": "Incendio en Municipio Lagunillas, Zulia",
     "texto": "📌 Incendio en Municipio Lagunillas, Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 04/10/2026, 2:01 p.m.\n🔎 Detectado por el sistema: 04/10/2026, 4:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/se-incendio-una-fosa-de-petroleo-en-lagunillas-bomberos-atendieron-la-emergencia/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/zulia-incendio-en-inmediaciones-de-subestacion-electrica-genera-alarma-en-lagunillas/",
-        "fecha": "2026-10-04T15:45:36+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-04T15:45:36+00:00",
-    "fecha_evento_temprana": "2026-10-04T15:45:36+00:00",
-    "fecha_deteccion": "2026-10-04T17:07:51.037954+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-10-04",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 04/10/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 04/10/2026, 1:07 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-incendio-en-inmediaciones-de-subestacion-electrica-genera-alarma-en-lagunillas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/",
-        "fecha": "2026-10-03T19:22:50+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T19:22:50+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:22:50+00:00",
-    "fecha_deteccion": "2026-10-03T22:15:09.261780+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Carabobo::2026-10-03",
-    "titulo": "Orden público en Carabobo",
-    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 03/10/2026, 3:22 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:15 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/centro/gobernador-rafael-lacava-asegura-que-en-carabobo-nunca-se-va-la-luz/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Portuguesa",
-    "municipio": "Guanare",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas",
-        "fecha": "2026-10-03T19:46:34+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-03T19:46:34+00:00",
-    "fecha_evento_temprana": "2026-10-03T19:46:34+00:00",
-    "fecha_deteccion": "2026-10-03T22:16:16.770591+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Portuguesa::2026-10-03",
-    "titulo": "Inundación en Municipio Guanare, Portuguesa",
-    "texto": "📌 Inundación en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 03/10/2026, 3:46 p.m.\n🔎 Detectado por el sistema: 03/10/2026, 6:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
   }
 ]

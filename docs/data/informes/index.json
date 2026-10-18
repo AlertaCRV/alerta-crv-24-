@@ -96,6 +96,14 @@
     "total_eventos": 1
   },
   {
+    "periodo": "2026-10",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-10-18T17:38:37.082916+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-09",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
