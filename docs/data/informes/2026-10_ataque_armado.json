@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "ataque_armado",
+  "tipo_label": "Ataque armado",
+  "cerrado": false,
+  "generado": "2026-10-18T17:38:37.082916+00:00",
+  "actualizado_hasta": "2026-10-18T17:37:44.391707+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de octubre de 2026 el Sistema de Monitoreo de Emergencias registró un único evento de ataque armado, en contraste con cero eventos en el mes anterior (2026‑09). Esta diferencia se refleja en la comparación proporcionada, que indica 0 eventos en septiembre versus 1 en octubre.\n\nEl único incidente ocurrió en el estado Cojedes, donde un autobús fue objeto de un ataque armado que dejó ocho pasajeros heridos (Primicia). La severidad del hecho ha sido calificada como alta, dada la naturaleza del ataque y el número de víctimas.\n\nLos heridos recibieron atención prehospitalaria inmediata y fueron trasladados a un centro médico ubicado en Tinaquillo, Cojedes, para recibir tratamiento adicional (Primicia). La respuesta médica se activó de forma rápida para minimizar el impacto de las lesiones.\n\nLas autoridades locales continúan investigando el ataque, recopilando pruebas y testimonios para determinar los responsables y prevenir futuros incidentes (Primicia). Este caso constituye el único registro de violencia armada en el período analizado, subrayando la importancia de la vigilancia continua y la pronta intervención en situaciones de emergencia.",
+  "fuentes": [
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/"
+    }
+  ]
+}
