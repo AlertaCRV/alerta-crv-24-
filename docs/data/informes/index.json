@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-17T01:46:59.152343+00:00",
+    "generado": "2026-10-18T01:33:33.439009+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-17T01:46:46.140513+00:00",
+    "generado": "2026-10-18T01:33:28.439948+00:00",
     "total_eventos": 1
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-17T01:45:47.398100+00:00",
+    "generado": "2026-10-18T01:32:33.174562+00:00",
     "total_eventos": 11
   },
   {
@@ -52,7 +52,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-17T01:45:20.902834+00:00",
+    "generado": "2026-10-18T01:32:06.579918+00:00",
     "total_eventos": 5
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-17T01:45:15.740296+00:00",
+    "generado": "2026-10-18T01:31:53.042319+00:00",
     "total_eventos": 4
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-17T01:44:08.649798+00:00",
+    "generado": "2026-10-18T01:30:52.982852+00:00",
     "total_eventos": 5
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-17T01:43:42.805078+00:00",
+    "generado": "2026-10-18T01:30:26.652256+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-10-17T01:43:38.490294+00:00",
+    "generado": "2026-10-18T01:30:21.677245+00:00",
     "total_eventos": 1
   },
   {
