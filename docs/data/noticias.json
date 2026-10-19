@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/ong-denuncia-la-muerte-de-un-recluso-en-zulia-por-falta-de-atencion-medica/",
+        "fecha": "2026-10-19T14:45:50+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-19T14:45:50+00:00",
+    "fecha_evento_temprana": "2026-10-19T14:45:50+00:00",
+    "fecha_deteccion": "2026-10-19T17:06:59.387643+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Zulia::2026-10-19",
+    "titulo": "Salud pública en Zulia",
+    "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 19/10/2026, 10:45 a.m.\n🔎 Detectado por el sistema: 19/10/2026, 1:06 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/ong-denuncia-la-muerte-de-un-recluso-en-zulia-por-falta-de-atencion-medica/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Tachira",
+    "municipio": "Bolívar",
+    "parroquia": "Palotal",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/frontera/cuatro-lesionados-en-dos-derrapes-y-una-colision-en-frontera/",
+        "fecha": "2026-10-19T14:43:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-19T14:43:09+00:00",
+    "fecha_evento_temprana": "2026-10-19T14:43:09+00:00",
+    "fecha_deteccion": "2026-10-19T17:07:09.724859+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Tachira::2026-10-19",
+    "titulo": "Incidente vial en Parroquia Palotal, Municipio Bolívar, Tachira",
+    "texto": "📌 Incidente vial en Parroquia Palotal, Municipio Bolívar, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Palotal, Municipio Bolívar, Tachira\n🕒 Hecho reportado: 19/10/2026, 10:43 a.m.\n🔎 Detectado por el sistema: 19/10/2026, 1:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/cuatro-lesionados-en-dos-derrapes-y-una-colision-en-frontera/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Lara",
     "municipio": null,

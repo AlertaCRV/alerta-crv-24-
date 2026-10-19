@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-19T10:14:55.205053+00:00",
+  "actualizado": "2026-10-19T17:07:36.711718+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-19T02:00:08+00:00"
+    "hasta": "2026-10-19T14:45:50+00:00"
   },
-  "total_eventos": 498,
+  "total_eventos": 500,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -12,10 +12,10 @@
     "deslizamiento": 35,
     "colapso_estructural": 5,
     "orden_publico": 169,
-    "salud_publica": 16,
+    "salud_publica": 17,
     "crisis_migratoria": 7,
     "incendio": 58,
-    "vialidad": 25,
+    "vialidad": 26,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -56,11 +56,11 @@
     },
     {
       "estado": "Zulia",
-      "total": 41,
+      "total": 42,
       "confirmados": 7,
       "por_severidad": {
         "medio": 17,
-        "critico": 5,
+        "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
         "alto": 9
@@ -105,6 +105,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Tachira",
+      "total": 21,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 10,
+        "bajo": 3,
+        "medio": 6,
+        "critico": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Miranda",
       "total": 21,
       "confirmados": 2,
@@ -113,18 +125,6 @@
         "medio": 5,
         "critico": 5,
         "bajo": 8
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 20,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 9,
-        "bajo": 3,
-        "medio": 6,
-        "critico": 2
       },
       "severidad_dominante": "critico"
     },
@@ -345,7 +345,7 @@
       "sequia": 1,
       "orden_publico": 17,
       "sismo": 2,
-      "salud_publica": 1,
+      "salud_publica": 2,
       "ataque_armado": 1,
       "explosion": 1,
       "vialidad": 1,
@@ -415,7 +415,7 @@
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
-      "vialidad": 1,
+      "vialidad": 2,
       "motin_carcelario": 1
     },
     "Bolivar": {
@@ -525,8 +525,8 @@
     }
   },
   "por_severidad": {
-    "alto": 115,
-    "critico": 59,
+    "alto": 116,
+    "critico": 60,
     "medio": 171,
     "bajo": 141,
     "sin_clasificar": 12
@@ -572,7 +572,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 5
+      "2026-10": 6
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -589,7 +589,7 @@
     "vialidad": {
       "2026-08": 10,
       "2026-09": 9,
-      "2026-10": 6
+      "2026-10": 7
     },
     "sismo": {
       "2026-08": 5,
