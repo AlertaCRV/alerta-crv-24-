@@ -13,13 +13,6 @@
     "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
     "municipio": null
   },
-  "orden_publico::Trujillo::2026-10-16": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-16T18:19:39.963489+00:00",
-    "fecha_evento_temprana": "2026-10-16T17:03:19+00:00",
-    "municipio": "La Ceiba"
-  },
   "incendio::Carabobo::2026-10-17": {
     "severidad": "critico",
     "confirmado": false,
@@ -68,5 +61,12 @@
     "fecha_deteccion": "2026-10-19T17:07:09.724859+00:00",
     "fecha_evento_temprana": "2026-10-19T14:43:09+00:00",
     "municipio": "Bolívar"
+  },
+  "infraestructura_agua::Miranda::2026-10-19": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-19T21:34:09.792924+00:00",
+    "fecha_evento_temprana": "2026-10-19T18:40:02+00:00",
+    "municipio": "Baruta"
   }
 }
