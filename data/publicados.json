@@ -47,5 +47,12 @@
     "fecha_deteccion": "2026-10-18T17:37:44.391707+00:00",
     "fecha_evento_temprana": "2026-10-18T15:45:46+00:00",
     "municipio": "Tinaquillo"
+  },
+  "incendio::Lara::2026-10-19": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-19T04:31:22.998748+00:00",
+    "fecha_evento_temprana": "2026-10-19T02:00:08+00:00",
+    "municipio": null
   }
 }

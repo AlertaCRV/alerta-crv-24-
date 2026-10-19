@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-18T17:37:45.164953+00:00",
+  "actualizado": "2026-10-19T04:32:27.551521+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-18T15:45:46+00:00"
+    "hasta": "2026-10-19T02:00:08+00:00"
   },
-  "total_eventos": 496,
+  "total_eventos": 497,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -14,7 +14,7 @@
     "orden_publico": 169,
     "salud_publica": 16,
     "crisis_migratoria": 7,
-    "incendio": 56,
+    "incendio": 57,
     "vialidad": 25,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -42,6 +42,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Lara",
+      "total": 41,
+      "confirmados": 2,
+      "por_severidad": {
+        "critico": 4,
+        "alto": 7,
+        "medio": 18,
+        "bajo": 11,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Zulia",
       "total": 41,
       "confirmados": 7,
@@ -51,19 +64,6 @@
         "bajo": 9,
         "sin_clasificar": 1,
         "alto": 9
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Lara",
-      "total": 40,
-      "confirmados": 2,
-      "por_severidad": {
-        "critico": 4,
-        "alto": 7,
-        "medio": 17,
-        "bajo": 11,
-        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -330,7 +330,7 @@
       "orden_publico": 19,
       "sismo": 1,
       "deslizamiento": 1,
-      "incendio": 1,
+      "incendio": 2,
       "infraestructura_agua": 3,
       "sequia": 1,
       "vialidad": 1,
@@ -527,7 +527,7 @@
   "por_severidad": {
     "alto": 114,
     "critico": 59,
-    "medio": 170,
+    "medio": 171,
     "bajo": 141,
     "sin_clasificar": 12
   },
@@ -584,7 +584,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 15
+      "2026-10": 16
     },
     "vialidad": {
       "2026-08": 10,
