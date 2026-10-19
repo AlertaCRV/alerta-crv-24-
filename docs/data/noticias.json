@@ -4,7 +4,7 @@
     "ubicacion": "Lara",
     "municipio": null,
     "parroquia": "Agua Viva",
-    "severidad": "medio",
+    "severidad": "alto",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +19,11 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-19T02:00:08+00:00",
     "fecha_evento_temprana": "2026-10-19T02:00:08+00:00",
-    "fecha_deteccion": "2026-10-19T04:31:22.998748+00:00",
+    "fecha_deteccion": "2026-10-19T10:14:54.710954+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Lara::2026-10-19",
     "titulo": "Incendio en Parroquia Agua Viva, Lara",
-    "texto": "📌 Incendio en Parroquia Agua Viva, Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Agua Viva, Lara\n🕒 Hecho reportado: 18/10/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 12:31 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/"
+    "texto": "📌 Incendio en Parroquia Agua Viva, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Agua Viva, Lara\n🕒 Hecho reportado: 18/10/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 6:14 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/"
   },
   {
     "tipo": "ataque_armado",

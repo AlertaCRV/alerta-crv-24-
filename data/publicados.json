@@ -49,9 +49,9 @@
     "municipio": "Tinaquillo"
   },
   "incendio::Lara::2026-10-19": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-19T04:31:22.998748+00:00",
+    "fecha_deteccion": "2026-10-19T10:14:54.710954+00:00",
     "fecha_evento_temprana": "2026-10-19T02:00:08+00:00",
     "municipio": null
   }
