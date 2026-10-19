@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-10-17T14:10:26.890666+00:00",
-  "actualizado_hasta": "2026-10-12T02:19:15.250091+00:00",
-  "total_eventos": 12,
+  "generado": "2026-10-19T10:16:57.881357+00:00",
+  "actualizado_hasta": "2026-10-19T10:14:54.710954+00:00",
+  "total_eventos": 17,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 19,
-    "actual": 12
+    "actual": 17
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 12 incendios, una disminución respecto a los 19 eventos del mes anterior (2026‑09). La reducción se observa en el número total de incidentes, aunque varios de los siniestros mantuvieron una severidad alta y provocaron daños materiales significativos.\n\nEn el Distrito Capital se produjeron al menos dos incendios de alta gravedad. El primero afectó una guardería ubicada en la parroquia La Vega, Urbanización Montalbán III, del Centro Comercial Caracas, consumiendo aproximadamente 40 m² del área de comedor (Reporte Confidencial). El segundo incendio se desató en el Mercado de Emprendedores, en la avenida Baralt, alrededor de las 10:20 a.m. del 10 de octubre, comprometiendo al menos seis locales comerciales (El Pitazo).\n\nEn el estado Táchira, el 5 de octubre se activó un operativo de emergencia para sofocar un incendio en el vertedero de basura de la Mancomunidad de la Zona Norte del Táchira (Manorta), cuya magnitud obligó a la intervención de los organismos de prevención y rescate (Diario La Nacion).\n\nEn Zulia, un incendio de vegetación y residuos petroleros se originó en la parte posterior de la subestación eléctrica número 3, en el municipio Lagunillas, generando alarma y dejando sin suministro eléctrico a la población local (Noticia al Dia).\n\nEn el estado Falcón, la refinería Cardón del Centro Refinador de Paraguaná sufrió un incendio de alta severidad tras la detección de tres explosiones; las llamas fueron controladas alrededor de las 4:00 p.m. gracias a la acción de bomberos de PDVSA y del Sistema Nacional de Gestión de Riesgos (El Pitazo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 17 incendios, una ligera disminución respecto a los 19 eventos del mes anterior (2026‑09). La variación refleja una leve reducción en la frecuencia de siniestros, aunque la gravedad de varios de ellos se mantuvo alta o crítica.\n\nEn el Distrito Capital se reportaron varios incidentes de alta severidad. Un incendio consumió una guardería, según informó Reporte Confidencial (Reporte Confidencial). Asimismo, El Pitazo describió un siniestro en el Mercado de Emprendedores de la avenida Baralt, que comprometió al menos seis locales (El Pitazo). Ambos hechos fueron calificados como de alta severidad.\n\nEn el estado Zulia se registraron dos incendios de distinta magnitud. Noticia al Dia informó sobre un incendio de vegetación y residuos petroleros en una fosa ubicada detrás de la subestación eléctrica número 3 en Lagunillas (Noticia al Dia). Por otro lado, El Pitazo describió un incendio crítico en las inmediaciones de una subestación eléctrica en Ciudad Ojeda, que dejó sin suministro eléctrico a la población (El Pitazo). En Lara, Primicia reportó el control de un incendio en la subestación eléctrica El Manzano, que afectó una demanda aproximada de 32 megavatios (Primicia).\n\nEn el estado Táchira, Diario La Nacion describió el despliegue de un operativo de emergencia para sofocar un incendio en el vertedero de basura de la Mancomunidad de la Zona Norte (Manorta) el 5 de octubre (Diario La Nacion). En Falcón, El Pitazo cubrió el incendio en la refinería Cardón, que provocó tres explosiones y la paralización de sus operaciones, controlado por bomberos de PDVSA y el Sistema Nacional de Gestión de Riesgos (El Pitazo). Además, Noticia al Dia informó sobre otro incendio en el complejo HDS de la misma refinería, movilizando a los cuerpos de seguridad (Noticia al Dia).\n\nFinalmente, en Carabobo y Miranda se reportaron incendios críticos. El Pitazo señaló la existencia de un incendio crítico en Carabobo, aunque sin detallar el sitio exacto (El Pitazo). En Miranda, el mismo medio informó sobre una tragedia familiar en Ocumare del Tuy, donde tres niños fallecieron tras el incendio de una vivienda, atribuido a un cortocircuito (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -30,6 +30,10 @@
       "link": "https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/se-incendio-una-fosa-de-petroleo-en-lagunillas-bomberos-atendieron-la-emergencia/"
     },
@@ -40,6 +44,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/incendio-refineria-cardon-falcon/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/"
     },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
