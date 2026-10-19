@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/",
+        "fecha": "2026-10-19T20:59:17+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/sin-agua-partes-de-caracas-por-averia-en-el-sistema-tuy-ii/",
+        "fecha": "2026-10-19T18:40:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-19T20:59:17+00:00",
+    "fecha_evento_temprana": "2026-10-19T18:40:02+00:00",
+    "fecha_deteccion": "2026-10-19T21:34:09.792924+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Miranda::2026-10-19",
+    "titulo": "Falla de agua en Municipio Baruta, Miranda",
+    "texto": "📌 Falla de agua en Municipio Baruta, Miranda\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 19/10/2026, 4:59 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 5:34 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/sin-agua-partes-de-caracas-por-averia-en-el-sistema-tuy-ii/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Zulia",
     "municipio": null,

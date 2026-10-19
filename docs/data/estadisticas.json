@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-19T17:07:36.711718+00:00",
+  "actualizado": "2026-10-19T21:35:22.676376+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-19T14:45:50+00:00"
+    "hasta": "2026-10-19T20:59:17+00:00"
   },
-  "total_eventos": 500,
+  "total_eventos": 501,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 82,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 24,
+    "infraestructura_agua": 25,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 2,
@@ -105,6 +105,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Miranda",
+      "total": 22,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 3,
+        "medio": 6,
+        "critico": 5,
+        "bajo": 8
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Tachira",
       "total": 21,
       "confirmados": 0,
@@ -113,18 +125,6 @@
         "bajo": 3,
         "medio": 6,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Miranda",
-      "total": 21,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "medio": 5,
-        "critico": 5,
-        "bajo": 8
       },
       "severidad_dominante": "critico"
     },
@@ -433,7 +433,8 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 7
+      "orden_publico": 7,
+      "infraestructura_agua": 1
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -527,7 +528,7 @@
   "por_severidad": {
     "alto": 116,
     "critico": 60,
-    "medio": 171,
+    "medio": 172,
     "bajo": 141,
     "sin_clasificar": 12
   },
@@ -610,7 +611,7 @@
     "infraestructura_agua": {
       "2026-08": 12,
       "2026-09": 8,
-      "2026-10": 4
+      "2026-10": 5
     },
     "accidente_transporte": {
       "2026-08": 1
