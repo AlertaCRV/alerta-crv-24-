@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-19T00:07:18.430479+00:00",
+    "generado": "2026-10-20T00:47:39.178276+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-19T00:07:13.076386+00:00",
+    "generado": "2026-10-20T00:47:26.048637+00:00",
     "total_eventos": 1
   },
   {
@@ -44,8 +44,8 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-19T00:06:38.829269+00:00",
-    "total_eventos": 11
+    "generado": "2026-10-20T00:46:31.645498+00:00",
+    "total_eventos": 12
   },
   {
     "periodo": "2026-10",
@@ -60,8 +60,8 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-19T00:05:59.168356+00:00",
-    "total_eventos": 4
+    "generado": "2026-10-20T00:45:50.370850+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-10",
@@ -76,7 +76,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-19T00:04:59.791018+00:00",
+    "generado": "2026-10-20T00:44:42.326303+00:00",
     "total_eventos": 5
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-19T00:04:46.371217+00:00",
+    "generado": "2026-10-20T00:44:15.769404+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-10-19T00:04:33.594459+00:00",
+    "generado": "2026-10-20T00:44:11.115799+00:00",
     "total_eventos": 1
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-10-19T00:04:28.794703+00:00",
+    "generado": "2026-10-20T00:43:58.444630+00:00",
     "total_eventos": 1
   },
   {
