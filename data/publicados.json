@@ -1,11 +1,4 @@
 {
-  "orden_publico::Portuguesa::2026-10-16": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-17T01:42:25.614387+00:00",
-    "fecha_evento_temprana": "2026-10-16T19:20:48+00:00",
-    "municipio": "Araure"
-  },
   "incendio::Carabobo::2026-10-17": {
     "severidad": "critico",
     "confirmado": false,
@@ -68,5 +61,12 @@
     "fecha_deteccion": "2026-10-20T00:42:01.689954+00:00",
     "fecha_evento_temprana": "2026-10-19T23:04:35+00:00",
     "municipio": "Agua Blanca"
+  },
+  "orden_publico::Monagas::2026-10-20": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-20T05:20:31.499621+00:00",
+    "fecha_evento_temprana": "2026-10-20T02:39:04+00:00",
+    "municipio": null
   }
 }
