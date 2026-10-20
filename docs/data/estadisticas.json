@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-10-19T21:35:22.676376+00:00",
+  "actualizado": "2026-10-20T00:42:45.095141+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-19T20:59:17+00:00"
+    "hasta": "2026-10-19T23:04:35+00:00"
   },
-  "total_eventos": 501,
+  "total_eventos": 503,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 82,
+    "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 25,
+    "infraestructura_agua": 26,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
     "ataque_armado": 2,
@@ -82,13 +82,13 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 32,
+      "total": 33,
       "confirmados": 3,
       "por_severidad": {
         "bajo": 10,
         "medio": 10,
         "critico": 3,
-        "alto": 9
+        "alto": 10
       },
       "severidad_dominante": "critico"
     },
@@ -106,11 +106,11 @@
     },
     {
       "estado": "Miranda",
-      "total": 22,
+      "total": 23,
       "confirmados": 3,
       "por_severidad": {
         "alto": 3,
-        "medio": 6,
+        "medio": 7,
         "critico": 5,
         "bajo": 8
       },
@@ -434,7 +434,7 @@
       "inundacion": 5,
       "deslizamiento": 1,
       "orden_publico": 7,
-      "infraestructura_agua": 1
+      "infraestructura_agua": 2
     },
     "Nueva Esparta": {
       "incendio": 2,
@@ -487,7 +487,7 @@
     },
     "Portuguesa": {
       "orden_publico": 18,
-      "inundacion": 6,
+      "inundacion": 7,
       "incendio": 1,
       "infraestructura_agua": 1,
       "vialidad": 4,
@@ -526,9 +526,9 @@
     }
   },
   "por_severidad": {
-    "alto": 116,
+    "alto": 117,
     "critico": 60,
-    "medio": 172,
+    "medio": 173,
     "bajo": 141,
     "sin_clasificar": 12
   },
@@ -543,7 +543,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 11
+      "2026-10": 12
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -611,7 +611,7 @@
     "infraestructura_agua": {
       "2026-08": 12,
       "2026-09": 8,
-      "2026-10": 5
+      "2026-10": 6
     },
     "accidente_transporte": {
       "2026-08": 1

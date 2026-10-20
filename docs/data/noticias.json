@@ -5,30 +5,51 @@
     "municipio": "Baruta",
     "parroquia": null,
     "severidad": "medio",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
       {
         "nombre": "El Pitazo",
         "link": "https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/",
         "fecha": "2026-10-19T20:59:17+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/sin-agua-partes-de-caracas-por-averia-en-el-sistema-tuy-ii/",
-        "fecha": "2026-10-19T18:40:02+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-19T20:59:17+00:00",
-    "fecha_evento_temprana": "2026-10-19T18:40:02+00:00",
-    "fecha_deteccion": "2026-10-19T21:34:09.792924+00:00",
+    "fecha_evento_temprana": "2026-10-19T20:59:17+00:00",
+    "fecha_deteccion": "2026-10-20T00:41:57.515484+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "infraestructura_agua::Miranda::2026-10-19",
     "titulo": "Falla de agua en Municipio Baruta, Miranda",
-    "texto": "📌 Falla de agua en Municipio Baruta, Miranda\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 19/10/2026, 4:59 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 5:34 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/sin-agua-partes-de-caracas-por-averia-en-el-sistema-tuy-ii/"
+    "texto": "📌 Falla de agua en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 19/10/2026, 4:59 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 8:41 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Portuguesa",
+    "municipio": "Agua Blanca",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/10/amenazan-paso-por-la-troncal-005lluvias-provocaron-inundacionesen-cinco-municipios-de-portuguesa/",
+        "fecha": "2026-10-19T23:04:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-19T23:04:35+00:00",
+    "fecha_evento_temprana": "2026-10-19T23:04:35+00:00",
+    "fecha_deteccion": "2026-10-20T00:42:01.689954+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Portuguesa::2026-10-19",
+    "titulo": "Inundación en Municipio Agua Blanca, Portuguesa",
+    "texto": "📌 Inundación en Municipio Agua Blanca, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Agua Blanca, Portuguesa\n🕒 Hecho reportado: 19/10/2026, 7:04 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 8:42 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/amenazan-paso-por-la-troncal-005lluvias-provocaron-inundacionesen-cinco-municipios-de-portuguesa/"
   },
   {
     "tipo": "salud_publica",
@@ -1593,31 +1614,5 @@
     "clave_dedup": "orden_publico::Yaracuy::2026-10-06",
     "titulo": "Orden público en Yaracuy",
     "texto": "📌 Orden público en Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 06/10/2026, 10:15 a.m.\n🔎 Detectado por el sistema: 06/10/2026, 3:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Tachira",
-    "municipio": "García De Hevia",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/",
-        "fecha": "2026-10-05T18:01:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-05T18:01:42+00:00",
-    "fecha_evento_temprana": "2026-10-05T18:01:42+00:00",
-    "fecha_deteccion": "2026-10-06T00:13:19.800084+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Tachira::2026-10-05",
-    "titulo": "Incendio en Municipio García De Hevia, Tachira",
-    "texto": "📌 Incendio en Municipio García De Hevia, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio García De Hevia, Tachira\n🕒 Hecho reportado: 05/10/2026, 2:01 p.m.\n🔎 Detectado por el sistema: 05/10/2026, 8:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/despliegan-operativo-de-emergencia-para-sofocar-incendio-en-manorta/"
   }
 ]

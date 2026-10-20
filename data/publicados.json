@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-16T19:20:48+00:00",
     "municipio": "Araure"
   },
-  "orden_publico::Lara::2026-10-16": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-16T23:49:54.957859+00:00",
-    "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
-    "municipio": null
-  },
   "incendio::Carabobo::2026-10-17": {
     "severidad": "critico",
     "confirmado": false,
@@ -64,9 +57,16 @@
   },
   "infraestructura_agua::Miranda::2026-10-19": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-19T21:34:09.792924+00:00",
-    "fecha_evento_temprana": "2026-10-19T18:40:02+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-20T00:41:57.515484+00:00",
+    "fecha_evento_temprana": "2026-10-19T20:59:17+00:00",
     "municipio": "Baruta"
+  },
+  "inundacion::Portuguesa::2026-10-19": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-20T00:42:01.689954+00:00",
+    "fecha_evento_temprana": "2026-10-19T23:04:35+00:00",
+    "municipio": "Agua Blanca"
   }
 }

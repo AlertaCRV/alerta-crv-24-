@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-19T00:06:38.829269+00:00",
-  "actualizado_hasta": "2026-10-13T08:18:52.611796+00:00",
-  "total_eventos": 11,
+  "generado": "2026-10-20T00:46:31.645498+00:00",
+  "actualizado_hasta": "2026-10-20T00:42:01.689954+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 11
+    "actual": 12
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 11 eventos de inundación, una disminución respecto a los 16 eventos del mes anterior (2026‑09). Esta reducción se observa a pesar de la persistencia de lluvias intensas que provocaron daños materiales y afectaciones a la población en varias regiones del país.\n\nEn el Distrito Capital se reportaron inundaciones de alta severidad. Según El Pitazo, las precipitaciones del 7 de octubre generaron una anegación que afectó aproximadamente a 80 viviendas en el sector Prados de María, en la parroquia Santa Rosalía, y provocaron el colapso de vías y caída de árboles en otras zonas de Caracas (El Pitazo). Turimiquire también confirmó que el fenómeno del \"Cordonazo de San Francisco\" desencadenó inundaciones en varios barrios de la capital, intensificando el daño a la infraestructura urbana (Turimiquire).\n\nEn el estado Portuguesa, las lluvias del fin de semana del 11‑12 de octubre provocaron graves inundaciones rurales y el colapso de un puente recién inaugurado en la parroquia La Estación, municipio Ospino (El Pitazo). Además, se reportó la afectación de viviendas en los municipios de Ospino, Santa Rosalía y Araure, evidenciando la magnitud del impacto en la zona (El Pitazo).\n\nEn Mérida, la crecida del río Chama arrastró a una mujer en el sector El Arenal del municipio Libertador, generando una operación de búsqueda intensiva por parte del Sistema de Gestión de Riesgo del estado (Notiapure). El incidente, ocurrido la noche del 9 de octubre, subraya la peligrosidad de las inundaciones en áreas de cuenca alta y la necesidad de respuestas rápidas de protección civil (Notiapure).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 12 eventos de inundación, una disminución respecto a los 16 eventos del mes anterior (septiembre 2026). Esta reducción se observa pese a la persistencia de lluvias intensas que generaron daños materiales y situaciones de riesgo en varias regiones del país.\n\nEn el Distrito Capital, las fuertes lluvias del 7 de octubre provocaron inundaciones en sectores como Prados de María, donde aproximadamente 80 viviendas resultaron afectadas (El Pitazo). Asimismo, el fenómeno meteorológico conocido como \"El Cordonazo de San Francisco\" desencadenó inundaciones y el colapso de vías en distintas zonas de Caracas, según reportes de ciudadanos y autoridades locales (Turimiquire). Ambos reportes califican la severidad de los eventos como alta.\n\nEn el estado Portuguesa, las precipitaciones del fin de semana del 11 al 12 de octubre causaron graves afectaciones rurales. En el municipio Ospino, el puente recién inaugurado en la parroquia La Estación cedió parcialmente, generando interrupciones en la conectividad local (El Pitazo). Además, en los municipios de Ospino, Santa Rosalía y Araure se reportaron inundaciones de viviendas y la crecida del río Sarare mantuvo bajo vigilancia el puente de Agua Blanca, mientras se evaluaban posibles colapsos estructurales en la vialidad agrícola e intercomunal (La Noticia de Barinas). La severidad de ambas situaciones también se describió como alta.\n\nEn el estado Mérida, la crecida del río Chama arrastró a una mujer, Belkis Mora, mientras intentaba cruzar un afluente en el sector El Arenal del municipio Libertador, dejando a su hijo a salvo (Notiapure). El Sistema de Gestión de Riesgo activó un operativo de búsqueda intensiva para localizar a la víctima, evidenciando la gravedad del evento, catalogado con severidad alta.\n\nEn conjunto, estos incidentes reflejan la vulnerabilidad de diversas áreas ante fenómenos meteorológicos extremos, a pesar de la ligera disminución en el número total de eventos respecto al mes previo.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/portuguesa-lluvias-hacen-colapsar-puente-que-inauguraron-hace-tres-dias/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/10/amenazan-paso-por-la-troncal-005lluvias-provocaron-inundacionesen-cinco-municipios-de-portuguesa/"
     },
     {
       "nombre": "Notiapure",

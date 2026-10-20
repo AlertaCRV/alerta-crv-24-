@@ -3,19 +3,23 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-10-19T00:05:59.168356+00:00",
-  "actualizado_hasta": "2026-10-14T05:18:03.795164+00:00",
-  "total_eventos": 4,
+  "generado": "2026-10-20T00:45:50.370850+00:00",
+  "actualizado_hasta": "2026-10-20T00:41:57.515484+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 8,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "Durante el mes de octubre de 2026 el Sistema de Monitoreo de Emergencias registró cuatro eventos de falla de agua, una disminución respecto a los ocho registrados en el mes anterior (2026‑09).\\n\\nA partir de la medianoche del domingo 11 de octubre se anunciaron intermitencias en el suministro de agua potable en Caracas, Miranda y La Guaira, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III. Los trabajos, iniciados a medianoche, estaban previstos para durar 48 horas y buscaban optimizar la prestación del servicio hídrico en esas jurisdicciones (El Pitazo; Primicia).\\n\\nEn la zona oeste del municipio Bermúdez, estado Sucre, vecinos de la comunidad de Guaca cerraron la vía nacional Carúpano‑Cumaná para exigir el cese de los progresivos cortes de agua que afectan a la población local (El Tiempo).\\n\\nPor otro lado, en el municipio Achaguas, estado Apure, la hidrológica estatal instaló un equipo sumergible de 15 caballos de fuerza en el pozo El Concentrado. La puesta en marcha del equipo incorpora 12 litros por segundo a la red de distribución, beneficiando a cerca de 480‑500 familias de la zona (Notiapure).",
+  "narrativa": "En el mes de octubre de 2026 se registraron seis eventos de fallas de agua, una disminución respecto a los ocho reportados en septiembre del mismo año (comparación con el período anterior). Estos incidentes se concentraron en la Gran Caracas y en regiones del este y oeste del país, afectando tanto a la población urbana como a comunidades rurales.\n\nEl Ministerio de las Aguas y la empresa estatal Hidroven anunciaron intermitencias en el suministro de agua para Caracas, Miranda y La Guaira a partir de la medianoche del domingo 11 de octubre, con una duración estimada de 48 horas, como parte de labores de mantenimiento programado en el Sistema de Producción Tuy III (El Pitazo). La medida buscó optimizar la prestación del servicio hídrico en esas jurisdicciones.\n\nPor otro lado, una avería en la Estación de Bombeo 22 del Sistema Tuy II, provocada por una fuerte fluctuación eléctrica el domingo 18 de octubre, dejó sin agua a varios sectores de la Gran Caracas, específicamente en los municipios de Baruta y El Hatillo, a partir del lunes 19 de octubre (Primicia). Las autoridades locales confirmaron la interrupción y señalaron que los equipos técnicos estaban trabajando para restablecer el servicio.\n\nEn el estado Sucre, vecinos del sector Guaca, ubicado en el municipio Bermúdez, cerraron la vía nacional Carúpano‑Cumaná para protestar contra los cortes de agua que consideran progresivos (El Tiempo). Mientras tanto, en el estado Apure, la hidrológica estatal instaló un equipo sumergible de 15 HP en el pozo El Concentrado del municipio Achaguas, lo que permite incorporar 12 litros por segundo a la red de distribución y beneficia a aproximadamente 480 familias de la zona (Notiapure).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/gran-caracas/hidroven-anuncia-intermitencias-en-el-suministro-de-agua-en-caracas-miranda-y-la-guaira-por-mantenimiento-en-tuy-iii/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/sin-agua-sectores-de-caracas-baruta-y-el-hatillo-por-averia-en-el-sistema-tuy-ii/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
@@ -28,6 +32,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/agua-a-caracas-la-guaira-y-miranda-por-48-horas/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/sin-agua-partes-de-caracas-por-averia-en-el-sistema-tuy-ii/"
     }
   ]
 }
