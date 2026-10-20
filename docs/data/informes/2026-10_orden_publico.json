@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-19T17:09:41.164236+00:00",
-  "actualizado_hasta": "2026-10-17T01:42:25.614387+00:00",
-  "total_eventos": 47,
+  "generado": "2026-10-20T19:27:08.648510+00:00",
+  "actualizado_hasta": "2026-10-20T19:25:12.356387+00:00",
+  "total_eventos": 49,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 47
+    "actual": 49
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 47 eventos de orden público, una disminución respecto a los 76 ocurridos en septiembre del mismo año (comparación con el período anterior). Aun con la reducción numérica, varios incidentes mantuvieron una alta o crítica severidad, afectando a distintas regiones del país.\n\nEn el estado Zulia se registraron al menos cinco protestas nocturnas contra los cortes eléctricos, en las que la Guardia Nacional reprimió a los manifestantes, generando enfrentamientos (El Pitazo). En Guárico, ciudadanos salieron a las calles exigiendo el fin de los apagones y fueron reprimidos por las fuerzas de seguridad, provocando disturbios de alta severidad (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, colapsando la Autopista Regional del Centro (ARC) y generando un fuerte tráfico que dificultó la movilidad (El Impulso (Lara)).\n\nEl estado Portuguesa vivió tres incidentes de orden público de alta severidad: una protesta en la parroquia Payara que paralizó a más de 40 gandolas cargadas de arroz y maíz (Turimiquire (Sucre)); una marcha en Ospino, a pesar del fuerte despliegue policial, donde vecinos protestaron contra los apagones (Portuguesa Reporta); y una movilización de caficultores y productores de arroz en la autopista José Antonio Páez frente a una torrefactora en Araure, como medida de protesta por el incumplimiento de precios acordados (La Prensa de Lara).\n\nEn Yaracuy, un tiroteo en el sector Sabanita de Yaritagua dejó un joven muerto y otro herido, constituyendo un evento crítico de orden público (Yaracuy al Dia). En Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC en el sector 18 de Octubre resultó en la muerte de los cuatro individuos, calificándose como un incidente de alta severidad (Diario El Vistazo (Anzoategui)).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 49 incidentes de orden público, una disminución respecto a los 76 eventos del mes anterior (septiembre 2026). Esta reducción se observa en el conjunto de protestas y enfrentamientos que se han documentado en distintas regiones del país.\n\nEn el estado Zulia se produjeron varias protestas nocturnas contra los cortes eléctricos, con manifestaciones que se replicaron en varios sectores del estado (La Prensa de Lara). En Guárico, ciudadanos salieron a las calles para exigir el fin de los apagones y fueron reprimidos por la Guardia Nacional, generando enfrentamientos en la zona (El Pitazo).\n\nEn Carabobo, las protestas por los racionamientos eléctricos se concentraron en Guacara, Yagua y Malavé, provocando congestión vehicular y colapso del tráfico en la ARC (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron tres episodios de orden público de alta severidad: una protesta en la parroquia Payara que paralizó a más de 40 gandolas con cereales (Turimiquire (Sucre)); una marcha en Ospino contra los apagones, pese a un fuerte despliegue policial (Portuguesa Reporta); y manifestaciones en la autopista José Antonio Páez por el incumplimiento de precios agrícolas (La Prensa de Lara).\n\nEn Yaracuy, un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, constituyendo un caso crítico de violencia (Yaracuy al Dia). En Anzoátegui, un enfrentamiento entre cuatro sujetos involucrados en robos de vehículos y el CICPC resultó en la muerte de los cuatro individuos (Diario El Vistazo (Anzoategui)).",
   "fuentes": [
     {
       "nombre": "Diario El Vistazo (Anzoategui)",
@@ -102,6 +102,10 @@
       "link": "https://lamananadigital.com/pnb-bloqueo-marcha-de-trabajadores-en-caracas-una-comision-de-los-manifestantes-entrego-documento-en-miraflores/"
     },
     {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/colegio-de-ingenieros-advierte-colapso-del-servicio-de-agua-en-falcon/"
+    },
+    {
       "nombre": "La Noticia de Barinas",
       "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
     },
@@ -134,16 +138,12 @@
       "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
     },
     {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral/?utm_source=rss&utm_medium=rss&utm_campaign=obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral"
+    },
+    {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/protesta-en-la-falcon-zulia-habitantes-de-bariro-exigen-presencia-de-autoridades/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/cerrada-por-coro-churuguara-por-protesta-14-oct/"
     }
   ]
 }
