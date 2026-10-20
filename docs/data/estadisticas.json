@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-20T05:22:56.986029+00:00",
+  "actualizado": "2026-10-20T19:25:13.027123+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-20T02:39:04+00:00"
+    "hasta": "2026-10-20T17:20:16+00:00"
   },
-  "total_eventos": 504,
+  "total_eventos": 505,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 170,
+    "orden_publico": 171,
     "salud_publica": 17,
     "crisis_migratoria": 7,
     "incendio": 58,
@@ -129,6 +129,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Falcon",
+      "total": 19,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 6,
+        "medio": 6,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 19,
       "confirmados": 0,
@@ -138,18 +150,6 @@
         "medio": 3
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Falcon",
-      "total": 18,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 5,
-        "medio": 6,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Yaracuy",
@@ -445,7 +445,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -529,7 +529,7 @@
     "alto": 117,
     "critico": 60,
     "medio": 173,
-    "bajo": 142,
+    "bajo": 143,
     "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
@@ -567,7 +567,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 48
+      "2026-10": 49
     },
     "salud_publica": {
       "2026-07": 1,
