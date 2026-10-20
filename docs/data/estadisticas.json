@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-20T19:25:13.027123+00:00",
+  "actualizado": "2026-10-20T22:35:26.184632+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-20T17:20:16+00:00"
+    "hasta": "2026-10-20T18:09:02+00:00"
   },
-  "total_eventos": 505,
+  "total_eventos": 507,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 171,
+    "orden_publico": 173,
     "salud_publica": 17,
     "crisis_migratoria": 7,
     "incendio": 58,
@@ -130,12 +130,12 @@
     },
     {
       "estado": "Falcon",
-      "total": 19,
+      "total": 20,
       "confirmados": 3,
       "por_severidad": {
         "alto": 6,
         "bajo": 6,
-        "medio": 6,
+        "medio": 7,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -178,10 +178,10 @@
     },
     {
       "estado": "Bolivar",
-      "total": 16,
+      "total": 17,
       "confirmados": 1,
       "por_severidad": {
-        "bajo": 3,
+        "bajo": 4,
         "medio": 8,
         "critico": 2,
         "alto": 1,
@@ -419,7 +419,7 @@
       "motin_carcelario": 1
     },
     "Bolivar": {
-      "orden_publico": 6,
+      "orden_publico": 7,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -445,7 +445,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 9,
+      "orden_publico": 10,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -528,8 +528,8 @@
   "por_severidad": {
     "alto": 117,
     "critico": 60,
-    "medio": 173,
-    "bajo": 143,
+    "medio": 174,
+    "bajo": 144,
     "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
@@ -567,7 +567,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 49
+      "2026-10": 51
     },
     "salud_publica": {
       "2026-07": 1,
