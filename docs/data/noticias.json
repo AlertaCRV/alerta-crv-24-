@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral/?utm_source=rss&utm_medium=rss&utm_campaign=obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral",
+        "fecha": "2026-10-20T02:39:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-20T02:39:04+00:00",
+    "fecha_evento_temprana": "2026-10-20T02:39:04+00:00",
+    "fecha_deteccion": "2026-10-20T05:20:31.499621+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-10-20",
+    "titulo": "Orden público en Monagas",
+    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 19/10/2026, 10:39 p.m.\n🔎 Detectado por el sistema: 20/10/2026, 1:20 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral/?utm_source=rss&utm_medium=rss&utm_campaign=obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Miranda",
     "municipio": "Baruta",

@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-20T00:42:45.095141+00:00",
+  "actualizado": "2026-10-20T05:22:56.986029+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-19T23:04:35+00:00"
+    "hasta": "2026-10-20T02:39:04+00:00"
   },
-  "total_eventos": 503,
+  "total_eventos": 504,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 35,
     "colapso_estructural": 5,
-    "orden_publico": 169,
+    "orden_publico": 170,
     "salud_publica": 17,
     "crisis_migratoria": 7,
     "incendio": 58,
@@ -214,12 +214,12 @@
     },
     {
       "estado": "Monagas",
-      "total": 13,
+      "total": 14,
       "confirmados": 0,
       "por_severidad": {
         "medio": 5,
         "alto": 3,
-        "bajo": 4,
+        "bajo": 5,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -477,7 +477,7 @@
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 1,
-      "orden_publico": 3
+      "orden_publico": 4
     },
     "Guarico": {
       "sequia": 2,
@@ -529,7 +529,7 @@
     "alto": 117,
     "critico": 60,
     "medio": 173,
-    "bajo": 141,
+    "bajo": 142,
     "sin_clasificar": 12
   },
   "serie_mensual_por_tipo": {
@@ -567,7 +567,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 47
+      "2026-10": 48
     },
     "salud_publica": {
       "2026-07": 1,
