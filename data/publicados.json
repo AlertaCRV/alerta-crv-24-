@@ -1,11 +1,4 @@
 {
-  "ataque_armado::Cojedes::2026-10-18": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-18T17:37:44.391707+00:00",
-    "fecha_evento_temprana": "2026-10-18T15:45:46+00:00",
-    "municipio": "Tinaquillo"
-  },
   "incendio::Lara::2026-10-19": {
     "severidad": "alto",
     "confirmado": false,
@@ -71,10 +64,10 @@
   },
   "orden_publico::Tachira::2026-10-21": {
     "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-21T15:40:34.749682+00:00",
-    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
-    "municipio": "Fernández Feo"
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T19:41:22.989239+00:00",
+    "fecha_evento_temprana": "2026-10-21T14:00:26+00:00",
+    "municipio": null
   },
   "incendio::Monagas::2026-10-21": {
     "severidad": "medio",
@@ -82,5 +75,12 @@
     "fecha_deteccion": "2026-10-21T15:40:43.210995+00:00",
     "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
     "municipio": "Maturín"
+  },
+  "ataque_armado::Tachira::2026-10-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T19:41:44.325943+00:00",
+    "fecha_evento_temprana": "2026-10-21T16:39:29+00:00",
+    "municipio": "San Cristóbal"
   }
 }
