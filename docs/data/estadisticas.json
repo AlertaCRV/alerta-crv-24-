@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-21T15:40:48.010439+00:00",
+  "actualizado": "2026-10-21T19:41:45.165472+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-21T14:06:08+00:00"
+    "hasta": "2026-10-21T19:27:38+00:00"
   },
-  "total_eventos": 511,
+  "total_eventos": 513,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 36,
     "colapso_estructural": 5,
-    "orden_publico": 175,
+    "orden_publico": 176,
     "salud_publica": 17,
     "crisis_migratoria": 7,
     "incendio": 59,
@@ -23,7 +23,7 @@
     "infraestructura_agua": 26,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
-    "ataque_armado": 2,
+    "ataque_armado": 3,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
@@ -106,13 +106,13 @@
     },
     {
       "estado": "Tachira",
-      "total": 23,
+      "total": 25,
       "confirmados": 1,
       "por_severidad": {
         "alto": 10,
         "bajo": 3,
         "medio": 6,
-        "critico": 4
+        "critico": 6
       },
       "severidad_dominante": "critico"
     },
@@ -410,13 +410,14 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "inundacion": 3,
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
       "vialidad": 2,
-      "motin_carcelario": 1
+      "motin_carcelario": 1,
+      "ataque_armado": 1
     },
     "Bolivar": {
       "orden_publico": 7,
@@ -527,7 +528,7 @@
   },
   "por_severidad": {
     "alto": 118,
-    "critico": 62,
+    "critico": 64,
     "medio": 175,
     "bajo": 144,
     "sin_clasificar": 12
@@ -567,7 +568,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 53
+      "2026-10": 54
     },
     "salud_publica": {
       "2026-07": 1,
@@ -622,7 +623,7 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 1
+      "2026-10": 2
     },
     "emergencia_metro": {
       "2026-08": 1,

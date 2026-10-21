@@ -2,27 +2,17 @@
   {
     "tipo": "orden_publico",
     "ubicacion": "Tachira",
-    "municipio": "Fernández Feo",
+    "municipio": null,
     "parroquia": "Santo Domingo",
     "severidad": "critico",
-    "score": 2.5,
-    "confirmado": true,
-    "num_fuentes": 4,
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
     "fuentes": [
       {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/soldado-mata-a-tres-companeros-y-escapa-con-un-fusil-en-ataque-en-base-aerea-de-tachira/",
-        "fecha": "2026-10-21T13:44:19+00:00"
-      },
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/",
-        "fecha": "2026-10-21T09:34:31+00:00"
-      },
-      {
         "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/tiroteo-en-base-aerea-de-tachira-deja-tres-militares-muertos-y-dos-heridos/",
-        "fecha": "2026-10-21T13:47:01+00:00"
+        "link": "https://nuevodia.com.ve/buscan-a-soldado-que-asesino-a-tres-militares-en-tachira/",
+        "fecha": "2026-10-21T19:27:38+00:00"
       },
       {
         "nombre": "Primicia (Bolivar)",
@@ -32,13 +22,39 @@
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-10-21T14:00:26+00:00",
-    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
-    "fecha_deteccion": "2026-10-21T15:40:34.749682+00:00",
+    "fecha_evento": "2026-10-21T19:27:38+00:00",
+    "fecha_evento_temprana": "2026-10-21T14:00:26+00:00",
+    "fecha_deteccion": "2026-10-21T19:41:22.989239+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Tachira::2026-10-21",
-    "titulo": "Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira",
-    "texto": "📌 Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 21/10/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 11:40 a.m.\n📊 Fuentes independientes: 4 (score 2.5)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/soldado-mata-a-tres-companeros-y-escapa-con-un-fusil-en-ataque-en-base-aerea-de-tachira/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/tiroteo-en-base-aerea-de-tachira-deja-tres-militares-muertos-y-dos-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/"
+    "titulo": "Orden público en Parroquia Santo Domingo, Tachira",
+    "texto": "📌 Orden público en Parroquia Santo Domingo, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Tachira\n🕒 Hecho reportado: 21/10/2026, 3:27 p.m.\n🔎 Detectado por el sistema: 21/10/2026, 3:41 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/buscan-a-soldado-que-asesino-a-tres-militares-en-tachira/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/"
+  },
+  {
+    "tipo": "ataque_armado",
+    "ubicacion": "Tachira",
+    "municipio": "San Cristóbal",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/sucesos/tachira-militares-ataque-base-aerea/",
+        "fecha": "2026-10-21T16:39:29+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-21T16:39:29+00:00",
+    "fecha_evento_temprana": "2026-10-21T16:39:29+00:00",
+    "fecha_deteccion": "2026-10-21T19:41:44.325943+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Tachira::2026-10-21",
+    "titulo": "Ataque armado en Municipio San Cristóbal, Tachira",
+    "texto": "📌 Ataque armado en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 21/10/2026, 12:39 p.m.\n🔎 Detectado por el sistema: 21/10/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/sucesos/tachira-militares-ataque-base-aerea/"
   },
   {
     "tipo": "incendio",
