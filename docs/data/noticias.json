@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": "Santo Domingo",
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/",
+        "fecha": "2026-10-21T09:34:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-21T09:34:31+00:00",
+    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
+    "fecha_deteccion": "2026-10-21T10:40:40.472990+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-10-21",
+    "titulo": "Orden público en Parroquia Santo Domingo, Tachira",
+    "texto": "📌 Orden público en Parroquia Santo Domingo, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Tachira\n🕒 Hecho reportado: 21/10/2026, 5:34 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 6:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "La Guaira",
     "municipio": null,
@@ -1604,31 +1630,5 @@
     "clave_dedup": "tormenta_electrica::Merida::2026-10-07",
     "titulo": "Tormenta eléctrica en Parroquia Tovar, Municipio Tovar, Merida",
     "texto": "📌 Tormenta eléctrica en Parroquia Tovar, Municipio Tovar, Merida\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Tovar, Municipio Tovar, Merida\n🕒 Hecho reportado: 07/10/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:32 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/adolescentes-heridos-rayo-tovar-merida/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Sucre",
-    "municipio": "Bermúdez",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/",
-        "fecha": "2026-10-07T00:02:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-07T00:02:18+00:00",
-    "fecha_evento_temprana": "2026-10-07T00:02:18+00:00",
-    "fecha_deteccion": "2026-10-07T09:08:38.147261+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_agua::Sucre::2026-10-07",
-    "titulo": "Falla de agua en Municipio Bermúdez, Sucre",
-    "texto": "📌 Falla de agua en Municipio Bermúdez, Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Bermúdez, Sucre\n🕒 Hecho reportado: 06/10/2026, 8:02 p.m.\n🔎 Detectado por el sistema: 07/10/2026, 5:08 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/vecinos-de-guaca-cerraron-la-via-nacional-para-pedir-que-cesen-los-cortes-de-agua/"
   }
 ]
