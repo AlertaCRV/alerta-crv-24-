@@ -2,28 +2,69 @@
   {
     "tipo": "orden_publico",
     "ubicacion": "Tachira",
-    "municipio": null,
+    "municipio": "Fernández Feo",
     "parroquia": "Santo Domingo",
     "severidad": "critico",
+    "score": 2.5,
+    "confirmado": true,
+    "num_fuentes": 4,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/soldado-mata-a-tres-companeros-y-escapa-con-un-fusil-en-ataque-en-base-aerea-de-tachira/",
+        "fecha": "2026-10-21T13:44:19+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/",
+        "fecha": "2026-10-21T09:34:31+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/tiroteo-en-base-aerea-de-tachira-deja-tres-militares-muertos-y-dos-heridos/",
+        "fecha": "2026-10-21T13:47:01+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/",
+        "fecha": "2026-10-21T14:00:26+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-21T14:00:26+00:00",
+    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
+    "fecha_deteccion": "2026-10-21T15:40:34.749682+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-10-21",
+    "titulo": "Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira",
+    "texto": "📌 Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 21/10/2026, 10:00 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 11:40 a.m.\n📊 Fuentes independientes: 4 (score 2.5)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/soldado-mata-a-tres-companeros-y-escapa-con-un-fusil-en-ataque-en-base-aerea-de-tachira/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/tiroteo-en-base-aerea-de-tachira-deja-tres-militares-muertos-y-dos-heridos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "medio",
     "score": 0.65,
     "confirmado": false,
     "num_fuentes": 1,
     "fuentes": [
       {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/",
-        "fecha": "2026-10-21T09:34:31+00:00"
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/",
+        "fecha": "2026-10-21T14:06:08+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-10-21T09:34:31+00:00",
-    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
-    "fecha_deteccion": "2026-10-21T10:40:40.472990+00:00",
+    "fecha_evento": "2026-10-21T14:06:08+00:00",
+    "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
+    "fecha_deteccion": "2026-10-21T15:40:43.210995+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Tachira::2026-10-21",
-    "titulo": "Orden público en Parroquia Santo Domingo, Tachira",
-    "texto": "📌 Orden público en Parroquia Santo Domingo, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Tachira\n🕒 Hecho reportado: 21/10/2026, 5:34 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 6:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/"
+    "clave_dedup": "incendio::Monagas::2026-10-21",
+    "titulo": "Incendio en Municipio Maturín, Monagas",
+    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 21/10/2026, 10:06 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 11:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/"
   },
   {
     "tipo": "deslizamiento",

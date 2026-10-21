@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-21T10:41:04.273608+00:00",
+  "actualizado": "2026-10-21T15:40:48.010439+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-21T09:34:31+00:00"
+    "hasta": "2026-10-21T14:06:08+00:00"
   },
-  "total_eventos": 509,
+  "total_eventos": 511,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 36,
     "colapso_estructural": 5,
-    "orden_publico": 174,
+    "orden_publico": 175,
     "salud_publica": 17,
     "crisis_migratoria": 7,
-    "incendio": 58,
+    "incendio": 59,
     "vialidad": 26,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -105,6 +105,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Tachira",
+      "total": 23,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 10,
+        "bajo": 3,
+        "medio": 6,
+        "critico": 4
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Miranda",
       "total": 23,
       "confirmados": 3,
@@ -113,18 +125,6 @@
         "medio": 7,
         "critico": 5,
         "bajo": 8
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 22,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 10,
-        "bajo": 3,
-        "medio": 6,
-        "critico": 3
       },
       "severidad_dominante": "critico"
     },
@@ -201,6 +201,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Monagas",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "alto": 3,
+        "bajo": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Carabobo",
       "total": 14,
       "confirmados": 1,
@@ -209,18 +221,6 @@
         "bajo": 4,
         "medio": 5,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Monagas",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "alto": 3,
-        "bajo": 5,
-        "critico": 1
       },
       "severidad_dominante": "critico"
     },
@@ -410,7 +410,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "inundacion": 3,
       "sismo": 1,
       "infraestructura_electrica": 2,
@@ -476,7 +476,7 @@
       "vialidad": 3,
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
-      "incendio": 1,
+      "incendio": 2,
       "orden_publico": 4
     },
     "Guarico": {
@@ -527,8 +527,8 @@
   },
   "por_severidad": {
     "alto": 118,
-    "critico": 61,
-    "medio": 174,
+    "critico": 62,
+    "medio": 175,
     "bajo": 144,
     "sin_clasificar": 12
   },
@@ -567,7 +567,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 52
+      "2026-10": 53
     },
     "salud_publica": {
       "2026-07": 1,
@@ -585,7 +585,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 17
+      "2026-10": 18
     },
     "vialidad": {
       "2026-08": 10,

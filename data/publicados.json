@@ -71,9 +71,16 @@
   },
   "orden_publico::Tachira::2026-10-21": {
     "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-21T10:40:40.472990+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-21T15:40:34.749682+00:00",
     "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
-    "municipio": null
+    "municipio": "Fernández Feo"
+  },
+  "incendio::Monagas::2026-10-21": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T15:40:43.210995+00:00",
+    "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
+    "municipio": "Maturín"
   }
 }
