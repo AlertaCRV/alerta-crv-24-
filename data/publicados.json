@@ -82,5 +82,12 @@
     "fecha_deteccion": "2026-10-21T19:41:44.325943+00:00",
     "fecha_evento_temprana": "2026-10-21T16:39:29+00:00",
     "municipio": "San Cristóbal"
+  },
+  "orden_publico::Anzoategui::2026-10-21": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T22:49:19.512987+00:00",
+    "fecha_evento_temprana": "2026-10-21T18:43:37+00:00",
+    "municipio": null
   }
 }
