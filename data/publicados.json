@@ -68,5 +68,12 @@
     "fecha_deteccion": "2026-10-21T00:59:16.758280+00:00",
     "fecha_evento_temprana": "2026-10-21T00:40:47+00:00",
     "municipio": null
+  },
+  "orden_publico::Tachira::2026-10-21": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T10:40:40.472990+00:00",
+    "fecha_evento_temprana": "2026-10-21T09:34:31+00:00",
+    "municipio": null
   }
 }
