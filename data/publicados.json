@@ -61,5 +61,12 @@
     "fecha_deteccion": "2026-10-20T22:35:21.387972+00:00",
     "fecha_evento_temprana": "2026-10-20T18:09:02+00:00",
     "municipio": null
+  },
+  "deslizamiento::La Guaira::2026-10-21": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-21T00:59:16.758280+00:00",
+    "fecha_evento_temprana": "2026-10-21T00:40:47+00:00",
+    "municipio": null
   }
 }
