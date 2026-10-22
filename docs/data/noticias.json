@@ -1,10 +1,67 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Portuguesa",
+    "municipio": "Ospino",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.25,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/denuncian-ataque-armado-contra-la-vivienda-del-dirigente-opositor-en-portuguesa/",
+        "fecha": "2026-10-22T18:30:09+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/activista-ricardo-perez-denuncio-ataque-a-tiros-contra-su-vivienda-en-portuguesa/",
+        "fecha": "2026-10-22T16:01:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T18:30:09+00:00",
+    "fecha_evento_temprana": "2026-10-22T16:01:40+00:00",
+    "fecha_deteccion": "2026-10-22T20:06:02.311630+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Portuguesa::2026-10-22",
+    "titulo": "Ataque armado en Municipio Ospino, Portuguesa",
+    "texto": "📌 Ataque armado en Municipio Ospino, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:06 p.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/denuncian-ataque-armado-contra-la-vivienda-del-dirigente-opositor-en-portuguesa/\n  • La Manana (Falcon): https://lamananadigital.com/activista-ricardo-perez-denuncio-ataque-a-tiros-contra-su-vivienda-en-portuguesa/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/encuentran-dos-cuerpos-entre-los-escombros-en-la-guaira/",
+        "fecha": "2026-10-22T19:08:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T19:08:23+00:00",
+    "fecha_evento_temprana": "2026-10-22T19:08:23+00:00",
+    "fecha_deteccion": "2026-10-22T20:06:06.696757+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-10-22",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 22/10/2026, 3:08 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:06 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/encuentran-dos-cuerpos-entre-los-escombros-en-la-guaira/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Lara",
     "municipio": "Moran",
     "parroquia": null,
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "score": 0.65,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +76,37 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-22T12:00:00+00:00",
     "fecha_evento_temprana": "2026-10-22T12:00:00+00:00",
-    "fecha_deteccion": "2026-10-22T16:06:29.541706+00:00",
+    "fecha_deteccion": "2026-10-22T20:07:09.257316+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "salud_publica::Lara::2026-10-22",
     "titulo": "Salud pública en Municipio Moran, Lara",
-    "texto": "📌 Salud pública en Municipio Moran, Lara\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Moran, Lara\n🕒 Hecho reportado: 22/10/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 22/10/2026, 12:06 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/gremio-docente-esclarecer-intoxicacion/"
+    "texto": "📌 Salud pública en Municipio Moran, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Moran, Lara\n🕒 Hecho reportado: 22/10/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/gremio-docente-esclarecer-intoxicacion/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Trujillo",
+    "municipio": "Valera",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/",
+        "fecha": "2026-10-22T18:30:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T18:30:32+00:00",
+    "fecha_evento_temprana": "2026-10-22T18:30:32+00:00",
+    "fecha_deteccion": "2026-10-22T20:07:49.241606+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Trujillo::2026-10-22",
+    "titulo": "Salud pública en Municipio Valera, Trujillo",
+    "texto": "📌 Salud pública en Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Valera, Trujillo\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/"
   },
   {
     "tipo": "orden_publico",
