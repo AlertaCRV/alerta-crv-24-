@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Trujillo",
+    "municipio": "Valera",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/",
+        "fecha": "2026-10-22T18:30:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T18:30:32+00:00",
+    "fecha_evento_temprana": "2026-10-22T18:30:32+00:00",
+    "fecha_deteccion": "2026-10-22T23:24:49.551824+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Trujillo::2026-10-22",
+    "titulo": "Salud pública en Municipio Valera, Trujillo",
+    "texto": "📌 Salud pública en Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valera, Trujillo\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 7:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -81,32 +107,6 @@
     "clave_dedup": "salud_publica::Lara::2026-10-22",
     "titulo": "Salud pública en Municipio Moran, Lara",
     "texto": "📌 Salud pública en Municipio Moran, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Moran, Lara\n🕒 Hecho reportado: 22/10/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/gremio-docente-esclarecer-intoxicacion/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Trujillo",
-    "municipio": "Valera",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/",
-        "fecha": "2026-10-22T18:30:32+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-22T18:30:32+00:00",
-    "fecha_evento_temprana": "2026-10-22T18:30:32+00:00",
-    "fecha_deteccion": "2026-10-22T20:07:49.241606+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Trujillo::2026-10-22",
-    "titulo": "Salud pública en Municipio Valera, Trujillo",
-    "texto": "📌 Salud pública en Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Valera, Trujillo\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/"
   },
   {
     "tipo": "orden_publico",
@@ -1744,31 +1744,5 @@
     "clave_dedup": "inundacion::Distrito Capital::2026-10-07",
     "titulo": "Inundación en Parroquia El Valle, Municipio Libertador, Distrito Capital",
     "texto": "📌 Inundación en Parroquia El Valle, Municipio Libertador, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia El Valle, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 08/10/2026, 5:49 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 8:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Turimiquire (Sucre): https://turimiquire.net/2026/10/08/las-lluvias-de-el-cordonazo-de-san-francisco-provocaron-inundaciones-en-varias-zonas-de-caracas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/familiares-presos-politicos-marchan/",
-        "fecha": "2026-10-08T19:51:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-08T19:51:06+00:00",
-    "fecha_evento_temprana": "2026-10-08T19:51:06+00:00",
-    "fecha_deteccion": "2026-10-08T20:39:41.437210+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-10-08",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/10/2026, 3:51 p.m.\n🔎 Detectado por el sistema: 08/10/2026, 4:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/familiares-presos-politicos-marchan/"
   }
 ]
