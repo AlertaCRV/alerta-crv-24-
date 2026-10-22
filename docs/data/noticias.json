@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/",
+        "fecha": "2026-10-21T14:06:08+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-21T14:06:08+00:00",
+    "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
+    "fecha_deteccion": "2026-10-22T01:01:42.023297+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Monagas::2026-10-21",
+    "titulo": "Incendio en Municipio Maturín, Monagas",
+    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 21/10/2026, 10:06 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 9:01 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Anzoategui",
     "municipio": null,
@@ -81,32 +107,6 @@
     "clave_dedup": "ataque_armado::Tachira::2026-10-21",
     "titulo": "Ataque armado en Municipio San Cristóbal, Tachira",
     "texto": "📌 Ataque armado en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 21/10/2026, 12:39 p.m.\n🔎 Detectado por el sistema: 21/10/2026, 3:41 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/sucesos/tachira-militares-ataque-base-aerea/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Monagas",
-    "municipio": "Maturín",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/",
-        "fecha": "2026-10-21T14:06:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-21T14:06:08+00:00",
-    "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
-    "fecha_deteccion": "2026-10-21T15:40:43.210995+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Monagas::2026-10-21",
-    "titulo": "Incendio en Municipio Maturín, Monagas",
-    "texto": "📌 Incendio en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 21/10/2026, 10:06 a.m.\n🔎 Detectado por el sistema: 21/10/2026, 11:40 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/dos-incendios-acabaron-con-reconocidos-comercios-en-maturin/"
   },
   {
     "tipo": "deslizamiento",

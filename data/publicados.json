@@ -70,9 +70,9 @@
     "municipio": null
   },
   "incendio::Monagas::2026-10-21": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-21T15:40:43.210995+00:00",
+    "fecha_deteccion": "2026-10-22T01:01:42.023297+00:00",
     "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
     "municipio": "Maturín"
   },
