@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-22T11:42:22.781666+00:00",
+  "actualizado": "2026-10-22T16:06:56.877975+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-22T01:32:31+00:00"
+    "hasta": "2026-10-22T14:48:25+00:00"
   },
-  "total_eventos": 517,
+  "total_eventos": 519,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 38,
     "colapso_estructural": 5,
-    "orden_publico": 177,
-    "salud_publica": 17,
+    "orden_publico": 178,
+    "salud_publica": 18,
     "crisis_migratoria": 7,
     "incendio": 60,
     "vialidad": 26,
@@ -43,14 +43,14 @@
     },
     {
       "estado": "Lara",
-      "total": 42,
+      "total": 43,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 8,
         "medio": 18,
         "bajo": 11,
-        "sin_clasificar": 1
+        "sin_clasificar": 2
       },
       "severidad_dominante": "critico"
     },
@@ -251,12 +251,12 @@
     },
     {
       "estado": "Nueva Esparta",
-      "total": 11,
+      "total": 12,
       "confirmados": 1,
       "por_severidad": {
         "alto": 2,
         "bajo": 6,
-        "medio": 2,
+        "medio": 3,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -326,7 +326,7 @@
     },
     "Lara": {
       "inundacion": 5,
-      "salud_publica": 4,
+      "salud_publica": 5,
       "orden_publico": 19,
       "sismo": 1,
       "deslizamiento": 1,
@@ -439,7 +439,7 @@
     },
     "Nueva Esparta": {
       "incendio": 2,
-      "orden_publico": 3,
+      "orden_publico": 4,
       "infraestructura_agua": 4,
       "vialidad": 1,
       "infraestructura_electrica": 1
@@ -530,9 +530,9 @@
   "por_severidad": {
     "alto": 120,
     "critico": 64,
-    "medio": 176,
+    "medio": 177,
     "bajo": 145,
-    "sin_clasificar": 12
+    "sin_clasificar": 13
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -569,13 +569,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 55
+      "2026-10": 56
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 6
+      "2026-10": 7
     },
     "crisis_migratoria": {
       "2026-07": 4,
