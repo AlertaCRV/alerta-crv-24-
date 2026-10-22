@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Portuguesa",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Ciudad Trujillo",
+        "link": "https://ciudadtrujillo.com/?p=55340",
+        "fecha": "2026-10-22T01:32:31+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T01:32:31+00:00",
+    "fecha_evento_temprana": "2026-10-22T01:32:31+00:00",
+    "fecha_deteccion": "2026-10-22T06:04:16.350493+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Portuguesa::2026-10-22",
+    "titulo": "Deslizamiento/Derrumbe en Portuguesa",
+    "texto": "📌 Deslizamiento/Derrumbe en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 21/10/2026, 9:32 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 2:04 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Ciudad Trujillo: https://ciudadtrujillo.com/?p=55340"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Monagas",
     "municipio": "Maturín",

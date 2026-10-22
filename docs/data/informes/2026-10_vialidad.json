@@ -3,16 +3,20 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-10-19T10:17:38.696492+00:00",
-  "actualizado_hasta": "2026-10-15T19:19:13.759295+00:00",
-  "total_eventos": 6,
+  "generado": "2026-10-22T06:07:46.008530+00:00",
+  "actualizado_hasta": "2026-10-19T17:07:09.724859+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 9,
-    "actual": 6
+    "actual": 7
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron seis incidentes viales, una disminución respecto al período anterior en el que se contabilizaron nueve eventos (9 evento(s) registrados entonces vs. 6 en este período). La tendencia a la baja se observa pese a la gravedad de varios siniestros que provocaron víctimas mortales y heridos graves.\n\nEn el estado Portuguesa se reportaron dos incidentes de distinta severidad. El primero, de gravedad alta, ocurrió el 2 de octubre en la autopista General José Antonio Páez, sector Las Matas de Guanare, donde un choque entre dos vehículos dejó cuatro lesionados (Portuguesa al Dia). El segundo, de gravedad crítica, tuvo lugar el 12 de octubre en el sector Morador de la misma autopista; dos hermanas fallecieron y un primo resultó herido tras el vuelco del vehículo contra un árbol (El Pitazo).\n\nEl estado Monagas registró un siniestro crítico cuando una unidad de transporte del GNB se volcó en la comunidad de Bajos de Medina, municipio Cedeño, dejando un guardia nacional muerto y nueve personas heridas (Primicia (Bolivar)).\n\nEn la Autopista Regional del Centro (ARC), a la altura del kilómetro 61 en el tramo de Aragua, se produjo un accidente de alta gravedad el 15 de octubre. Un autobús que transportaba a estudiantes de un colegio del estado Carabobo colisionó, provocando la muerte de una docente y dejando ocho niños heridos (El Pitazo). El hecho afecta tanto a Aragua como a Carabobo, ya que la víctima laboral pertenecía a este último (El Pitazo).\n\nFinalmente, El Pitazo informó de un incidente crítico en el Distrito Capital, sin detallar el número de víctimas, pero resaltando la gravedad del suceso (El Pitazo).",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron siete incidentes viales, una disminución respecto al período anterior en el que se contabilizaron nueve eventos (9 evento(s) registrados entonces vs. 7 en este período). La reducción se observa pese a la persistencia de siniestros con daños materiales, heridos y víctimas fatales en distintas regiones del país.\n\nEn el estado Portuguesa se reportaron dos sucesos de distinta gravedad. El primero, de severidad alta, ocurrió el 2 de octubre en la autopista General José Antonio Páez, sector Las Matas de Guanare, donde cuatro personas resultaron lesionadas tras la colisión de dos vehículos (Portuguesa al Dia). El segundo, de severidad crítico, tuvo lugar el 12 de octubre en el sector Morador de la misma autopista; dos hermanas fallecieron y un primo resultó herido cuando su vehículo volcó y chocó contra un árbol (El Pitazo). En Monagas, un accidente crítico se produjo cuando una unidad de transporte del GNB se volcó en la comunidad de Bajos de Medina, municipio Cedeño, dejando un guardia nacional muerto y nueve heridos (Primicia (Bolivar)).\n\nEn el tramo de la Autopista Regional del Centro (ARC) a la altura del kilómetro 61, en el estado Aragua, se registró otro incidente de alta severidad el 15 de octubre: una docente originaria del estado Carabobo perdió la vida y ocho niños resultaron heridos al colisionar un autobús que transportaba a estudiantes (El Pitazo). El mismo medio informó también de un siniestro crítico en el Distrito Capital, aunque los detalles específicos no fueron divulgados en el resumen disponible (El Pitazo).\n\nFinalmente, en el municipio fronterizo Bolívar, estado Táchira, se documentaron cuatro lesionados el 19 de octubre, tras dos derrapes y una colisión; entre los afectados se encontraba un hombre de 40 años que sufrió fractura de fémur y pérdida de tejido tras caer en un despeñadero (Diario La Nacion (Tachira)). En conjunto, aunque el número total de incidentes disminuyó, la gravedad de varios de ellos siguió siendo alta, manteniendo la necesidad de reforzar las medidas de prevención y respuesta en la red vial nacional.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/cuatro-lesionados-en-dos-derrapes-y-una-colision-en-frontera/"
+    },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/dos-hermanas-mueren-y-un-primo-resulta-herido-en-choque-contra-un-arbol-en-la-autopista-jose-antonio-paez/"

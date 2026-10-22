@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-10-22T01:02:37.639553+00:00",
+  "actualizado": "2026-10-22T06:04:29.563549+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-21T19:27:38+00:00"
+    "hasta": "2026-10-22T01:32:31+00:00"
   },
-  "total_eventos": 515,
+  "total_eventos": 516,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
-    "deslizamiento": 36,
+    "deslizamiento": 37,
     "colapso_estructural": 5,
     "orden_publico": 177,
     "salud_publica": 17,
@@ -82,13 +82,13 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 33,
+      "total": 34,
       "confirmados": 3,
       "por_severidad": {
         "bajo": 10,
         "medio": 10,
         "critico": 3,
-        "alto": 10
+        "alto": 11
       },
       "severidad_dominante": "critico"
     },
@@ -493,7 +493,8 @@
       "infraestructura_agua": 1,
       "vialidad": 4,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "deslizamiento": 1
     },
     "Cojedes": {
       "orden_publico": 5,
@@ -527,7 +528,7 @@
     }
   },
   "por_severidad": {
-    "alto": 119,
+    "alto": 120,
     "critico": 64,
     "medio": 175,
     "bajo": 145,
@@ -556,7 +557,7 @@
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 6
+      "2026-10": 7
     },
     "colapso_estructural": {
       "2026-07": 1,
