@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-21T22:49:57.483586+00:00",
+  "actualizado": "2026-10-22T01:02:37.639553+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-21T19:27:38+00:00"
   },
-  "total_eventos": 514,
+  "total_eventos": 515,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
@@ -14,7 +14,7 @@
     "orden_publico": 177,
     "salud_publica": 17,
     "crisis_migratoria": 7,
-    "incendio": 59,
+    "incendio": 60,
     "vialidad": 26,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -190,6 +190,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Monagas",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "alto": 4,
+        "bajo": 5,
+        "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Sucre",
       "total": 15,
       "confirmados": 0,
@@ -199,18 +211,6 @@
         "alto": 2
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Monagas",
-      "total": 15,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 6,
-        "alto": 3,
-        "bajo": 5,
-        "critico": 1
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Carabobo",
@@ -477,7 +477,7 @@
       "vialidad": 3,
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
-      "incendio": 2,
+      "incendio": 3,
       "orden_publico": 4
     },
     "Guarico": {
@@ -527,7 +527,7 @@
     }
   },
   "por_severidad": {
-    "alto": 118,
+    "alto": 119,
     "critico": 64,
     "medio": 175,
     "bajo": 145,
@@ -586,7 +586,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 18
+      "2026-10": 19
     },
     "vialidad": {
       "2026-08": 10,

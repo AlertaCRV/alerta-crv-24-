@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-21T01:03:06.255983+00:00",
+  "generado": "2026-10-22T01:07:22.763564+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento sísmico, lo que representa una disminución respecto al mes anterior, en el que se contabilizaron dos eventos (Comparación con el período anterior: 2 evento(s) registrados entonces vs. 1 en este período). La Cruz Roja Venezolana mantuvo su vigilancia y coordinación con las autoridades locales para atender cualquier eventualidad derivada de este fenómeno.\n\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 cuyo epicentro se ubicó en la región costera cercana a Güiria, en el estado Sucre (Nuevo Dia). La misma información fue confirmada por otro medio, que también señaló la magnitud preliminar de 5,0 y la ubicación exacta del epicentro (Yaracuy al Dia). El temblor se sintió intensamente en varias localidades del oriente venezolano, provocando que numerosos residentes abandonaran sus viviendas en busca de lugares seguros, generando un susto considerable entre la población (Nuevo Dia; Yaracuy al Dia).\n\nHasta el momento de los reportes, no se habían registrado daños materiales significativos ni víctimas mortales como consecuencia del sismo (Nuevo Dia). Las autoridades locales y los equipos de la Cruz Roja continúan monitoreando la zona para detectar posibles repercusiones posteriores y para ofrecer apoyo a la comunidad en caso de que se presenten nuevas necesidades.",
+  "narrativa": "Durante el mes de octubre de 2026 la actividad sísmica registrada disminuyó respecto al mes anterior, pasando de 2 eventos en septiembre de 2026 a 1 solo evento en este período. \n\nEl 2 de octubre de 2026 se registró un sismo de magnitud 5,0 en el oriente de Venezuela, cuyo epicentro se ubicó en la zona costera cercana a Güiria, estado Sucre (Nuevo Dia (Falcon); Yaracuy al Dia). \n\nEl temblor se sintió con intensidad en varias localidades de la región, lo que provocó que muchos residentes abandonaran sus hogares en busca de un lugar seguro (Nuevo Dia (Falcon)). \n\nHasta el momento no se han reportado daños materiales significativos ni víctimas mortales como consecuencia del sismo (Nuevo Dia (Falcon)).",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",

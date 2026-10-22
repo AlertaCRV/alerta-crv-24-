@@ -3,7 +3,7 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-21T01:02:17.935671+00:00",
+  "generado": "2026-10-22T01:05:57.965257+00:00",
   "actualizado_hasta": "2026-10-15T19:19:23.145045+00:00",
   "total_eventos": 5,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 22,
     "actual": 5
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron 5 eventos de fallas eléctricas, una disminución notable respecto a los 22 eventos del mes anterior (2026‑09). Esta reducción se refleja en la menor cantidad de incidentes reportados por los medios locales y en la respuesta más rápida de la Corporación Eléctrica Nacional (CORPOELEC) ante las averías que se presentaron.\n\nEl incidente más grave del período ocurrió en el barrio Sucre, zona norte de Maracay, municipio Girardot, estado Aragua, donde un incendio destruyó por completo un bufete de abogados. El siniestro, atribuido a fluctuaciones eléctricas y prolongados apagones de CORPOELEC, provocó la pérdida total de la oficina y cuantiosas pérdidas materiales (El Siglo).\n\nEn el municipio Biruaca, estado Apure, la urbanización El Paraíso sufrió una avería en la red de distribución que dejó sin suministro eléctrico a los residentes. CORPOELEC desplegó maniobras operativas y de mantenimiento correctivo para diagnosticar y reemplazar componentes, logrando restablecer el servicio en pocas horas (Notiapure).\n\nEn el estado Portuguesa, los habitantes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, denunciaron un aumento de los apagones nocturnos que afectan su descanso y actividades cotidianas (Portuguesa Reporta). De manera similar, en Ciudad Bolívar se reportó un apagón que comenzó alrededor de las 15:00 y afectó a zonas como la avenida España (Primicia).",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron 5 eventos de fallas eléctricas, una reducción notable respecto a los 22 eventos del mes anterior (2026‑09). Esta disminución se refleja en la menor cantidad de incidentes reportados por los medios locales, aunque persisten problemas de suministro y algunos daños materiales.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles. Según las autoridades, el siniestro habría sido provocado por fluctuaciones eléctricas y los prolongados apagones que registra la empresa Corpoelec en la entidad (El Siglo).\n\nEn el estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el servicio eléctrico en la urbanización El Paraíso, del municipio Biruaca, tras una avería en las redes de distribución del sector (Notiapure).\n\nEn Portuguesa, residentes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, presentaron denuncias por apagones nocturnos que interrumpen su descanso y actividades cotidianas. Los usuarios señalaron que los cortes se concentran durante la noche y que los mensajes de notificación llegan después de las 9 p.m. (Portuguesa Reporta).\n\nEn el estado Bolívar, un apagón afectó a varios sectores de Ciudad Bolívar, entre ellos la avenida España, iniciándose la interrupción alrededor de las 3:00 p.m. del martes, según reportes de vecinos en redes sociales (Primicia).",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",
