@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-22T20:07:51.200547+00:00",
+  "actualizado": "2026-10-22T23:24:50.163995+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-22T19:08:23+00:00"
   },
-  "total_eventos": 523,
+  "total_eventos": 524,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
@@ -12,7 +12,7 @@
     "deslizamiento": 39,
     "colapso_estructural": 5,
     "orden_publico": 178,
-    "salud_publica": 20,
+    "salud_publica": 21,
     "crisis_migratoria": 7,
     "incendio": 60,
     "vialidad": 26,
@@ -141,6 +141,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Trujillo",
+      "total": 19,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 9,
+        "bajo": 3,
+        "critico": 1,
+        "alto": 5,
+        "sin_clasificar": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Merida",
       "total": 19,
       "confirmados": 0,
@@ -150,18 +163,6 @@
         "medio": 3
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 9,
-        "bajo": 3,
-        "critico": 1,
-        "alto": 5
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "Yaracuy",
@@ -373,7 +374,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 2,
-      "salud_publica": 5
+      "salud_publica": 6
     },
     "Barinas": {
       "deslizamiento": 3,
@@ -533,7 +534,7 @@
     "critico": 65,
     "medio": 178,
     "bajo": 145,
-    "sin_clasificar": 13
+    "sin_clasificar": 14
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -576,7 +577,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 9
+      "2026-10": 10
     },
     "crisis_migratoria": {
       "2026-07": 4,

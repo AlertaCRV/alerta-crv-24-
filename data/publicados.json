@@ -105,9 +105,9 @@
     "municipio": null
   },
   "salud_publica::Trujillo::2026-10-22": {
-    "severidad": "alto",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-22T20:07:49.241606+00:00",
+    "fecha_deteccion": "2026-10-22T23:24:49.551824+00:00",
     "fecha_evento_temprana": "2026-10-22T18:30:32+00:00",
     "municipio": "Valera"
   }
