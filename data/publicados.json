@@ -1,18 +1,4 @@
 {
-  "infraestructura_agua::Miranda::2026-10-19": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-20T00:41:57.515484+00:00",
-    "fecha_evento_temprana": "2026-10-19T20:59:17+00:00",
-    "municipio": "Baruta"
-  },
-  "inundacion::Portuguesa::2026-10-19": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-20T00:42:01.689954+00:00",
-    "fecha_evento_temprana": "2026-10-19T23:04:35+00:00",
-    "municipio": "Agua Blanca"
-  },
   "orden_publico::Monagas::2026-10-20": {
     "severidad": "bajo",
     "confirmado": false,
@@ -110,5 +96,40 @@
     "fecha_deteccion": "2026-10-22T23:24:49.551824+00:00",
     "fecha_evento_temprana": "2026-10-22T18:30:32+00:00",
     "municipio": "Valera"
+  },
+  "orden_publico::Anzoategui::2026-10-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T01:45:32.843230+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "municipio": null
+  },
+  "orden_publico::Delta Amacuro::2026-10-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T01:45:58.113995+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-10-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T01:46:02.342512+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-10-23": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T01:46:14.367106+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "municipio": null
+  },
+  "orden_publico::Zulia::2026-10-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T01:46:39.822881+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "municipio": null
   }
 }
