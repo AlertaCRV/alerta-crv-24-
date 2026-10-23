@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-23T17:05:09.586260+00:00",
+  "actualizado": "2026-10-23T20:30:20.946384+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-23T16:30:00+00:00"
+    "hasta": "2026-10-23T19:18:08+00:00"
   },
-  "total_eventos": 533,
+  "total_eventos": 537,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
-    "infraestructura_electrica": 43,
+    "infraestructura_electrica": 44,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 185,
-    "salud_publica": 21,
+    "orden_publico": 187,
+    "salud_publica": 22,
     "crisis_migratoria": 7,
     "incendio": 60,
     "vialidad": 26,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 93,
+      "total": 94,
       "confirmados": 15,
       "por_severidad": {
         "alto": 16,
-        "medio": 30,
+        "medio": 31,
         "bajo": 30,
         "critico": 13,
         "sin_clasificar": 4
@@ -106,13 +106,14 @@
     },
     {
       "estado": "Tachira",
-      "total": 25,
-      "confirmados": 1,
+      "total": 27,
+      "confirmados": 2,
       "por_severidad": {
         "alto": 10,
         "bajo": 3,
         "medio": 6,
-        "critico": 6
+        "critico": 7,
+        "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
     },
@@ -276,10 +277,10 @@
     },
     {
       "estado": "Guarico",
-      "total": 6,
+      "total": 7,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 3,
+        "medio": 4,
         "critico": 2,
         "alto": 1
       },
@@ -357,7 +358,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 30,
+      "orden_publico": 31,
       "incendio": 20,
       "vialidad": 5,
       "infraestructura_electrica": 8,
@@ -412,14 +413,15 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "inundacion": 3,
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
       "vialidad": 2,
       "motin_carcelario": 1,
-      "ataque_armado": 1
+      "ataque_armado": 1,
+      "salud_publica": 1
     },
     "Bolivar": {
       "orden_publico": 7,
@@ -486,7 +488,8 @@
       "sequia": 2,
       "colapso_estructural": 1,
       "orden_publico": 2,
-      "salud_publica": 1
+      "salud_publica": 1,
+      "infraestructura_electrica": 1
     },
     "Portuguesa": {
       "orden_publico": 18,
@@ -533,10 +536,10 @@
   },
   "por_severidad": {
     "alto": 124,
-    "critico": 65,
-    "medio": 185,
+    "critico": 66,
+    "medio": 187,
     "bajo": 145,
-    "sin_clasificar": 14
+    "sin_clasificar": 15
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -555,7 +558,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 5
+      "2026-10": 6
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -573,13 +576,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 63
+      "2026-10": 65
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 10
+      "2026-10": 11
     },
     "crisis_migratoria": {
       "2026-07": 4,

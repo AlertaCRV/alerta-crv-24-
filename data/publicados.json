@@ -106,9 +106,9 @@
   },
   "orden_publico::Distrito Capital::2026-10-23": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-23T17:03:42.690175+00:00",
-    "fecha_evento_temprana": "2026-10-23T15:39:06+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T20:30:19.221028+00:00",
+    "fecha_evento_temprana": "2026-10-23T16:30:00+00:00",
     "municipio": null
   },
   "orden_publico::Lara::2026-10-23": {
@@ -131,5 +131,26 @@
     "fecha_deteccion": "2026-10-23T06:37:33.913196+00:00",
     "fecha_evento_temprana": "2026-10-23T02:37:46+00:00",
     "municipio": "Bolívar"
+  },
+  "infraestructura_electrica::Guarico::2026-10-23": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T20:28:15.745871+00:00",
+    "fecha_evento_temprana": "2026-10-23T18:22:02+00:00",
+    "municipio": null
+  },
+  "orden_publico::Tachira::2026-10-23": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-23T20:28:19.875392+00:00",
+    "fecha_evento_temprana": "2026-10-23T17:46:39+00:00",
+    "municipio": "Fernández Feo"
+  },
+  "salud_publica::Tachira::2026-10-23": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T20:28:24.174080+00:00",
+    "fecha_evento_temprana": "2026-10-23T17:35:38+00:00",
+    "municipio": "Fernández Feo"
   }
 }
