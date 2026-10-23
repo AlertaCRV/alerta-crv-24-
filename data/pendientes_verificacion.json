@@ -2406,5 +2406,21 @@
   "sequia::Zulia::2026-09-14": {
     "intentos": 1,
     "ultima_vez": "2026-09-14T19:31:02.183306+00:00"
+  },
+  "ataque_armado::Distrito Capital::2026-10-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-10-23T23:26:57.266448+00:00"
+  },
+  "ataque_armado::Guarico::2026-10-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-10-23T23:27:21.567857+00:00"
+  },
+  "orden_publico::Bolivar::2026-10-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-10-23T23:27:45.892847+00:00"
+  },
+  "orden_publico::Distrito Capital::2026-10-23": {
+    "intentos": 1,
+    "ultima_vez": "2026-10-23T23:28:10.309496+00:00"
   }
 }
