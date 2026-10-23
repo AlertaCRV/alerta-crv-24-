@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Portuguesa",
+    "municipio": "Ospino",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/portuguesa-organizacion-pide-al-mp-investigar-ataque-a-tiros-contra-otro-activista-opositor-en-ospino/",
+        "fecha": "2026-10-22T23:31:11+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-22T23:31:11+00:00",
+    "fecha_evento_temprana": "2026-10-22T23:31:11+00:00",
+    "fecha_deteccion": "2026-10-23T06:37:30.260565+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Portuguesa::2026-10-22",
+    "titulo": "Ataque armado en Municipio Ospino, Portuguesa",
+    "texto": "📌 Ataque armado en Municipio Ospino, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 22/10/2026, 7:31 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 2:37 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/portuguesa-organizacion-pide-al-mp-investigar-ataque-a-tiros-contra-otro-activista-opositor-en-ospino/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Barinas",
+    "municipio": "Bolívar",
+    "parroquia": "Calderas",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/10/del-municipio-bolivar2-familias-resultaron-damnificada-por-deslavesen-el-vegon-de-masparrito-de-calderas/",
+        "fecha": "2026-10-23T02:37:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T02:37:46+00:00",
+    "fecha_evento_temprana": "2026-10-23T02:37:46+00:00",
+    "fecha_deteccion": "2026-10-23T06:37:33.913196+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Barinas::2026-10-23",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Calderas, Municipio Bolívar, Barinas",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Calderas, Municipio Bolívar, Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Calderas, Municipio Bolívar, Barinas\n🕒 Hecho reportado: 22/10/2026, 10:37 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 2:37 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/10/del-municipio-bolivar2-familias-resultaron-damnificada-por-deslavesen-el-vegon-de-masparrito-de-calderas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/",
+        "fecha": "2026-10-23T01:21:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T01:21:33+00:00",
+    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "fecha_deteccion": "2026-10-23T06:38:55.515631+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-10-23",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 22/10/2026, 9:21 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 2:38 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Anzoategui",
     "municipio": null,
@@ -79,32 +157,6 @@
   },
   {
     "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/",
-        "fecha": "2026-10-23T01:21:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-23T01:21:33+00:00",
-    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
-    "fecha_deteccion": "2026-10-23T01:46:14.367106+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-10-23",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 22/10/2026, 9:21 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
-  },
-  {
-    "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
     "parroquia": null,
@@ -154,37 +206,6 @@
     "clave_dedup": "salud_publica::Trujillo::2026-10-22",
     "titulo": "Salud pública en Municipio Valera, Trujillo",
     "texto": "📌 Salud pública en Municipio Valera, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Valera, Trujillo\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 7:24 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Portuguesa",
-    "municipio": "Ospino",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 1.25,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/denuncian-ataque-armado-contra-la-vivienda-del-dirigente-opositor-en-portuguesa/",
-        "fecha": "2026-10-22T18:30:09+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/activista-ricardo-perez-denuncio-ataque-a-tiros-contra-su-vivienda-en-portuguesa/",
-        "fecha": "2026-10-22T16:01:40+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-22T18:30:09+00:00",
-    "fecha_evento_temprana": "2026-10-22T16:01:40+00:00",
-    "fecha_deteccion": "2026-10-22T20:06:02.311630+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "ataque_armado::Portuguesa::2026-10-22",
-    "titulo": "Ataque armado en Municipio Ospino, Portuguesa",
-    "texto": "📌 Ataque armado en Municipio Ospino, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Ospino, Portuguesa\n🕒 Hecho reportado: 22/10/2026, 2:30 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 4:06 p.m.\n📊 Fuentes independientes: 2 (score 1.25)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/denuncian-ataque-armado-contra-la-vivienda-del-dirigente-opositor-en-portuguesa/\n  • La Manana (Falcon): https://lamananadigital.com/activista-ricardo-perez-denuncio-ataque-a-tiros-contra-su-vivienda-en-portuguesa/"
   },
   {
     "tipo": "deslizamiento",
