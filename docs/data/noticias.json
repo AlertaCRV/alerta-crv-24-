@@ -1,19 +1,102 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/caracas/crisis-electrica-ciudadanos-reportan-ola-de-bajones-en-al-menos-seis-estados-este-23oct/",
+        "fecha": "2026-10-23T18:22:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T18:22:02+00:00",
+    "fecha_evento_temprana": "2026-10-23T18:22:02+00:00",
+    "fecha_deteccion": "2026-10-23T20:28:15.745871+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Guarico::2026-10-23",
+    "titulo": "Falla eléctrica en Guarico",
+    "texto": "📌 Falla eléctrica en Guarico\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 23/10/2026, 2:22 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 4:28 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/caracas/crisis-electrica-ciudadanos-reportan-ola-de-bajones-en-al-menos-seis-estados-este-23oct/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": "Fernández Feo",
+    "parroquia": "Santo Domingo",
+    "severidad": "critico",
+    "score": 1.85,
+    "confirmado": true,
+    "num_fuentes": 3,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/capturado-soldado-senalado-de-matar-a-tres-companeros-militares-en-base-aerea-de-tachira/",
+        "fecha": "2026-10-23T17:46:39+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/capturado-soldado-acusado-de-asesinar-a-tres-militares-en-tachira/",
+        "fecha": "2026-10-23T19:18:08+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/sucesos/capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea/?utm_source=rss&utm_medium=rss&utm_campaign=capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea",
+        "fecha": "2026-10-23T18:44:36+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T19:18:08+00:00",
+    "fecha_evento_temprana": "2026-10-23T17:46:39+00:00",
+    "fecha_deteccion": "2026-10-23T20:28:19.875392+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-10-23",
+    "titulo": "Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira",
+    "texto": "📌 Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 23/10/2026, 3:18 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 4:28 p.m.\n📊 Fuentes independientes: 3 (score 1.85)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/capturado-soldado-senalado-de-matar-a-tres-companeros-militares-en-base-aerea-de-tachira/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/capturado-soldado-acusado-de-asesinar-a-tres-militares-en-tachira/\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea/?utm_source=rss&utm_medium=rss&utm_campaign=capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Tachira",
+    "municipio": "Fernández Feo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/los-andes/intoxicacion-masiva-en-tachira-68-personas-sufren-afectaciones-respiratorias-en-una-escuela/",
+        "fecha": "2026-10-23T17:35:38+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T17:35:38+00:00",
+    "fecha_evento_temprana": "2026-10-23T17:35:38+00:00",
+    "fecha_deteccion": "2026-10-23T20:28:24.174080+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Tachira::2026-10-23",
+    "titulo": "Salud pública en Municipio Fernández Feo, Tachira",
+    "texto": "📌 Salud pública en Municipio Fernández Feo, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 23/10/2026, 1:35 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 4:28 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-andes/intoxicacion-masiva-en-tachira-68-personas-sufren-afectaciones-respiratorias-en-una-escuela/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": null,
     "severidad": "medio",
-    "score": 1.4,
-    "confirmado": true,
-    "num_fuentes": 2,
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/",
-        "fecha": "2026-10-23T15:39:06+00:00"
-      },
       {
         "nombre": "El Impulso (Lara)",
         "link": "https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/",
@@ -23,12 +106,12 @@
     "es_reporte_filial": false,
     "resumen_consolidado": null,
     "fecha_evento": "2026-10-23T16:30:00+00:00",
-    "fecha_evento_temprana": "2026-10-23T15:39:06+00:00",
-    "fecha_deteccion": "2026-10-23T17:03:42.690175+00:00",
+    "fecha_evento_temprana": "2026-10-23T16:30:00+00:00",
+    "fecha_deteccion": "2026-10-23T20:30:19.221028+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Distrito Capital::2026-10-23",
     "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/10/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 1:03 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/"
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/10/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 4:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/"
   },
   {
     "tipo": "ataque_armado",
