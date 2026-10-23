@@ -1,5 +1,36 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/",
+        "fecha": "2026-10-23T15:39:06+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/",
+        "fecha": "2026-10-23T16:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-23T16:30:00+00:00",
+    "fecha_evento_temprana": "2026-10-23T15:39:06+00:00",
+    "fecha_deteccion": "2026-10-23T17:03:42.690175+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-10-23",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 23/10/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 1:03 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Portuguesa",
     "municipio": "Ospino",
@@ -128,32 +159,6 @@
     "clave_dedup": "orden_publico::Delta Amacuro::2026-10-23",
     "titulo": "Orden público en Delta Amacuro",
     "texto": "📌 Orden público en Delta Amacuro\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Delta Amacuro\n🕒 Hecho reportado: 22/10/2026, 9:21 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 9:45 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/",
-        "fecha": "2026-10-23T01:21:33+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-23T01:21:33+00:00",
-    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
-    "fecha_deteccion": "2026-10-23T01:46:02.342512+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-10-23",
-    "titulo": "Orden público en Distrito Capital",
-    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 22/10/2026, 9:21 p.m.\n🔎 Detectado por el sistema: 22/10/2026, 9:46 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
   },
   {
     "tipo": "orden_publico",
@@ -1765,109 +1770,5 @@
     "clave_dedup": "orden_publico::Falcon::2026-10-09",
     "titulo": "Orden público en Parroquia El Vinculo, Municipio Falcón, Falcon",
     "texto": "📌 Orden público en Parroquia El Vinculo, Municipio Falcón, Falcon\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia El Vinculo, Municipio Falcón, Falcon\n🕒 Hecho reportado: 09/10/2026, 9:50 a.m.\n🔎 Detectado por el sistema: 09/10/2026, 7:27 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": "Valmore Rodríguez",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/",
-        "fecha": "2026-10-08T20:42:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-08T20:42:48+00:00",
-    "fecha_evento_temprana": "2026-10-08T20:42:48+00:00",
-    "fecha_deteccion": "2026-10-09T06:48:39.540843+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-10-08",
-    "titulo": "Orden público en Municipio Valmore Rodríguez, Zulia",
-    "texto": "📌 Orden público en Municipio Valmore Rodríguez, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Valmore Rodríguez, Zulia\n🕒 Hecho reportado: 08/10/2026, 4:42 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:48 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-jubilados-de-pdvsa-cierran-accesos-a-instalaciones-petroleras-exigen-pago-del-fondo-de-pensiones/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Amazonas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Maturin News",
-        "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre",
-        "fecha": "2026-10-09T01:54:21+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-09T01:54:21+00:00",
-    "fecha_evento_temprana": "2026-10-09T01:54:21+00:00",
-    "fecha_deteccion": "2026-10-09T06:49:14.904115+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Amazonas::2026-10-09",
-    "titulo": "Orden público en Amazonas",
-    "texto": "📌 Orden público en Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 08/10/2026, 9:54 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:49 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Apure",
-    "municipio": "Biruaca",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/",
-        "fecha": "2026-10-08T22:28:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-08T22:28:20+00:00",
-    "fecha_evento_temprana": "2026-10-08T22:28:20+00:00",
-    "fecha_deteccion": "2026-10-09T06:49:57.742558+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Apure::2026-10-08",
-    "titulo": "Falla eléctrica en Municipio Biruaca, Apure",
-    "texto": "📌 Falla eléctrica en Municipio Biruaca, Apure\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Biruaca, Apure\n🕒 Hecho reportado: 08/10/2026, 6:28 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:49 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/corpoelec-despliega-maniobras-para-restablecer-el-servicio-electrico-en-la-urbanizacion-el-paraiso-de-biruaca/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/",
-        "fecha": "2026-10-09T01:28:47+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-09T01:28:47+00:00",
-    "fecha_evento_temprana": "2026-10-09T01:28:47+00:00",
-    "fecha_deteccion": "2026-10-09T06:50:36.307492+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Bolivar::2026-10-09",
-    "titulo": "Incendio en Bolivar",
-    "texto": "📌 Incendio en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 08/10/2026, 9:28 p.m.\n🔎 Detectado por el sistema: 09/10/2026, 2:50 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/reportan-incendio-en-el-jardin-botanico/"
   }
 ]

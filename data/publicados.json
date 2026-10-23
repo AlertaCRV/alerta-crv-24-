@@ -106,9 +106,9 @@
   },
   "orden_publico::Distrito Capital::2026-10-23": {
     "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-23T01:46:02.342512+00:00",
-    "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-23T17:03:42.690175+00:00",
+    "fecha_evento_temprana": "2026-10-23T15:39:06+00:00",
     "municipio": null
   },
   "orden_publico::Lara::2026-10-23": {
