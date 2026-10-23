@@ -1,11 +1,4 @@
 {
-  "orden_publico::Monagas::2026-10-20": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-20T05:20:31.499621+00:00",
-    "fecha_evento_temprana": "2026-10-20T02:39:04+00:00",
-    "municipio": null
-  },
   "orden_publico::Falcon::2026-10-20": {
     "severidad": "medio",
     "confirmado": false,
@@ -78,9 +71,9 @@
   },
   "ataque_armado::Portuguesa::2026-10-22": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-22T20:06:02.311630+00:00",
-    "fecha_evento_temprana": "2026-10-22T16:01:40+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T06:37:30.260565+00:00",
+    "fecha_evento_temprana": "2026-10-22T23:31:11+00:00",
     "municipio": "Ospino"
   },
   "deslizamiento::La Guaira::2026-10-22": {
@@ -119,9 +112,9 @@
     "municipio": null
   },
   "orden_publico::Lara::2026-10-23": {
-    "severidad": "alto",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-23T01:46:14.367106+00:00",
+    "fecha_deteccion": "2026-10-23T06:38:55.515631+00:00",
     "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
     "municipio": null
   },
@@ -131,5 +124,12 @@
     "fecha_deteccion": "2026-10-23T01:46:39.822881+00:00",
     "fecha_evento_temprana": "2026-10-23T01:21:33+00:00",
     "municipio": null
+  },
+  "deslizamiento::Barinas::2026-10-23": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-23T06:37:33.913196+00:00",
+    "fecha_evento_temprana": "2026-10-23T02:37:46+00:00",
+    "municipio": "Bolívar"
   }
 }

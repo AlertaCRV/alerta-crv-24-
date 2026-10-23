@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-23T01:46:55.678312+00:00",
+  "actualizado": "2026-10-23T06:39:35.056151+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-23T01:21:33+00:00"
+    "hasta": "2026-10-23T02:37:46+00:00"
   },
-  "total_eventos": 529,
+  "total_eventos": 532,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
-    "deslizamiento": 39,
+    "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 183,
+    "orden_publico": 184,
     "salud_publica": 21,
     "crisis_migratoria": 7,
     "incendio": 60,
@@ -23,7 +23,7 @@
     "infraestructura_agua": 26,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
-    "ataque_armado": 4,
+    "ataque_armado": 5,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
@@ -43,12 +43,12 @@
     },
     {
       "estado": "Lara",
-      "total": 45,
+      "total": 46,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 10,
-        "medio": 18,
+        "medio": 19,
         "bajo": 11,
         "sin_clasificar": 2
       },
@@ -69,11 +69,11 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 36,
+      "total": 37,
       "confirmados": 4,
       "por_severidad": {
         "bajo": 10,
-        "medio": 12,
+        "medio": 13,
         "critico": 3,
         "alto": 11
       },
@@ -94,10 +94,10 @@
     },
     {
       "estado": "Barinas",
-      "total": 26,
+      "total": 27,
       "confirmados": 1,
       "por_severidad": {
-        "alto": 2,
+        "alto": 3,
         "medio": 12,
         "bajo": 8,
         "critico": 4
@@ -329,7 +329,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 20,
+      "orden_publico": 21,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -378,7 +378,7 @@
       "salud_publica": 6
     },
     "Barinas": {
-      "deslizamiento": 3,
+      "deslizamiento": 4,
       "inundacion": 6,
       "vialidad": 4,
       "orden_publico": 8,
@@ -497,7 +497,7 @@
       "colapso_estructural": 1,
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
-      "ataque_armado": 1
+      "ataque_armado": 2
     },
     "Cojedes": {
       "orden_publico": 5,
@@ -532,9 +532,9 @@
     }
   },
   "por_severidad": {
-    "alto": 123,
+    "alto": 124,
     "critico": 65,
-    "medio": 182,
+    "medio": 184,
     "bajo": 145,
     "sin_clasificar": 14
   },
@@ -561,7 +561,7 @@
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 9
+      "2026-10": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -573,7 +573,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 61
+      "2026-10": 62
     },
     "salud_publica": {
       "2026-07": 1,
@@ -628,7 +628,7 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 3
+      "2026-10": 4
     },
     "emergencia_metro": {
       "2026-08": 1,

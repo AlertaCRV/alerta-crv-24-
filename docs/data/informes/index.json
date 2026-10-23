@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-22T01:05:51.943812+00:00",
+    "generado": "2026-10-23T06:42:24.437985+00:00",
     "total_eventos": 6
   },
   {
@@ -76,15 +76,15 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-10-22T01:04:42.796441+00:00",
-    "total_eventos": 6
+    "generado": "2026-10-23T06:41:22.796417+00:00",
+    "total_eventos": 10
   },
   {
     "periodo": "2026-10",
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-22T01:04:16.194551+00:00",
+    "generado": "2026-10-23T06:40:55.954647+00:00",
     "total_eventos": 1
   },
   {
@@ -100,8 +100,8 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-10-22T01:03:50.418841+00:00",
-    "total_eventos": 2
+    "generado": "2026-10-23T06:40:43.572012+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-09",
