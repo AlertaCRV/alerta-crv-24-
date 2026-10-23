@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-22T23:24:50.163995+00:00",
+  "actualizado": "2026-10-23T01:46:55.678312+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-22T19:08:23+00:00"
+    "hasta": "2026-10-23T01:21:33+00:00"
   },
-  "total_eventos": 524,
+  "total_eventos": 529,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 43,
     "deslizamiento": 39,
     "colapso_estructural": 5,
-    "orden_publico": 178,
+    "orden_publico": 183,
     "salud_publica": 21,
     "crisis_migratoria": 7,
     "incendio": 60,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 91,
+      "total": 92,
       "confirmados": 14,
       "por_severidad": {
         "alto": 16,
-        "medio": 28,
+        "medio": 29,
         "bajo": 30,
         "critico": 13,
         "sin_clasificar": 4
@@ -43,11 +43,11 @@
     },
     {
       "estado": "Lara",
-      "total": 44,
+      "total": 45,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
-        "alto": 9,
+        "alto": 10,
         "medio": 18,
         "bajo": 11,
         "sin_clasificar": 2
@@ -56,10 +56,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 42,
+      "total": 43,
       "confirmados": 7,
       "por_severidad": {
-        "medio": 17,
+        "medio": 18,
         "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -226,6 +226,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Anzoategui",
+      "total": 14,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 5,
+        "medio": 5
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "La Guaira",
       "total": 14,
       "confirmados": 0,
@@ -235,18 +247,6 @@
         "alto": 7,
         "bajo": 1,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 13,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 5,
-        "medio": 4
       },
       "severidad_dominante": "critico"
     },
@@ -298,12 +298,13 @@
     },
     {
       "estado": "Delta Amacuro",
-      "total": 2,
+      "total": 3,
       "confirmados": 0,
       "por_severidad": {
-        "bajo": 2
+        "bajo": 2,
+        "medio": 1
       },
-      "severidad_dominante": "bajo"
+      "severidad_dominante": "medio"
     },
     {
       "estado": "Amazonas",
@@ -328,7 +329,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 19,
+      "orden_publico": 20,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -344,7 +345,7 @@
       "colapso_estructural": 1,
       "inundacion": 2,
       "sequia": 1,
-      "orden_publico": 17,
+      "orden_publico": 18,
       "sismo": 2,
       "salud_publica": 2,
       "ataque_armado": 1,
@@ -356,7 +357,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 28,
+      "orden_publico": 29,
       "incendio": 20,
       "vialidad": 5,
       "infraestructura_electrica": 8,
@@ -403,7 +404,7 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 4,
+      "orden_publico": 5,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 1,
@@ -515,7 +516,8 @@
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
-      "inundacion": 1
+      "inundacion": 1,
+      "orden_publico": 1
     },
     "La Guaira": {
       "deslizamiento": 7,
@@ -530,9 +532,9 @@
     }
   },
   "por_severidad": {
-    "alto": 122,
+    "alto": 123,
     "critico": 65,
-    "medio": 178,
+    "medio": 182,
     "bajo": 145,
     "sin_clasificar": 14
   },
@@ -571,7 +573,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 56
+      "2026-10": 61
     },
     "salud_publica": {
       "2026-07": 1,
