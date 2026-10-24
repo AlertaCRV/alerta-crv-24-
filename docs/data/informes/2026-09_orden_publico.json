@@ -1,0 +1,129 @@
+{
+  "periodo": "2026-09",
+  "tipo": "orden_publico",
+  "tipo_label": "Orden público",
+  "cerrado": true,
+  "generado": "2026-10-24T18:27:05.382306+00:00",
+  "actualizado_hasta": "2026-09-30T19:22:55.569502+00:00",
+  "total_eventos": 76,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-08",
+    "anterior": 44,
+    "actual": 76
+  },
+  "narrativa": "Durante el mes de septiembre de 2026 se registraron 76 incidentes de orden público en Venezuela, frente a los 44 del mes anterior (comparación con el período anterior). Este incremento refleja una mayor intensidad de las protestas y manifestaciones en varias regiones del país.\n\nEn Guárico se reportó un episodio de orden público de severidad crítica (El Siglo (Aragua)). En el estado Portuguesa se registraron dos eventos de alta severidad, uno informado por Portuguesa Reporta y otro por El Pitazo (Portuguesa Reporta; El Pitazo). En Aragua se documentaron tres incidentes de alta severidad, todos citados por El Pitazo, y otro adicional citado por El Siglo (Aragua) (El Pitazo; El Pitazo; El Pitazo; El Siglo (Aragua)). En Bolívar se señaló un caso de orden público de alta severidad, también reportado por El Siglo (Aragua) (El Siglo (Aragua)).\n\nZulia presentó varios incidentes: dos de alta severidad citados por El Pitazo, uno de alta severidad reportado por Reporteros de Merida, y un caso crítico informado por Noticia al Dia (El Pitazo; Reporteros de Merida; El Pitazo; Noticia al Dia (Zulia)). En Táchira se mantuvo una tranca vial de alta severidad, con manifestantes bloqueando la vía principal durante más de 24 horas, según Diario La Nacion (Diario La Nacion (Tachira)). En Mérida se registró un evento de alta severidad, reportado por Reporteros de Merida (Reporteros de Merida).\n\nEn conjunto, los incidentes de orden público descritos afectaron la movilidad, el suministro eléctrico y la seguridad ciudadana en múltiples estados, evidenciando una tendencia al alza de la tensión social durante el período analizado.",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/continua-tranca-vial-en-panamericano-por-cumplir-24-horas-sin-luz/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/zulia-familia-de-comerciante-wayuu-detenido-cierra-el-paso-entre-venezuela-y-colombia/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/wayuu-protestan-para-exigir-derechos-mantienen-cierre-de-frontera-y-queman-camioneta-de-funcionarios/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/portuguesa-payara-cumple-mas-24-horas-de-protesta-por-apagones-y-mantiene-paralizados-a-mas-de-40-camiones-en-la-via/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/exdirigente-estudiantil-mato-a-una-mujer-a-punaladas/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/turba-secuestro-a-sujeto-acusado-de-matar-a-su-hijo/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/vecinos-de-turmero-denuncian-hasta-10-horas-sin-servicio-electrico/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/gnb-y-pnb-bloquean-protesta-de-trabajadores-del-zulia-en-el-puente-sobre-el-lago/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tres-presuntos-extorsionadores-abatidos-por-el-cicpc-en-san-carlos/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa/?utm_source=rss&utm_medium=rss&utm_campaign=otra-vez-sin-luz-protestas-se-multiplican-en-municipios-de-portuguesa"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/09/perdidas-millonarias-habitantes-del-eje.html"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/621049/trabajadores-protestan-en-venezuela-por-mejoras-salariales-y-calendarios-electorales/"
+    },
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/perdidas-millonarias-habitantes-del-eje-panamericano-toman-puente-sobre-el-rio-torondoy-por-crisis-electrica/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/baja-la-pobreza-monetaria-pero-no-mejora-la-calidad-de-vida-en-venezuela/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/familiares-de-presos-politicos-continuan-su-semana-de-protestas-y-exigen-respuestas-a-la-fiscalia/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/protestan-en-venezuela-contra-jueces-bajos-salarios-y-exigen-elecciones-y-liberaciones/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/protesta-frente-a-corpoelec/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/22/no-nos-representa-protesta-en-caracas-contra-participacion-de-delcy-rodriguez-en-la-onu-22sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/22/video-alfredo-ramos-desde-barquisimeto-delcy-rodriguez-no-representa-la-voluntad-de-venezuela-22sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/24/video-trabajadores-activos-y-jubilados-marchan-en-caracas-por-salarios-y-pensiones-dignas-24sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/27/manifestantes-en-cojedes-enfrentan-al-gobernador-galindez-para-exigir-un-cambio-de-gobierno-27sep/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/09/28/video-trabajadores-universitarios-de-lara-se-sumaron-a-protesta-por-reivindicaciones-salariales-28sep/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/merida-ciudadanos-y-ong-protestan-frente-al-ministerio-publico-para-exigir-la-libertad-de-presos-politicos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/509-protestas-se-registraron-en-julio-en-venezuela-segun-observatorio-de-conflictividad-social/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/vigilia-en-chacao-marcara-el-cierre-de-la-ruta-de-las-respuestas-pendientes-por-la-libertad-de-los-presos-politicos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/regreso-a-clases-educadores-de-miranda-se-movilizan-y-convocan-a-una-asamblea-de-emergencia/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/jubilados-de-cantv-denuncian-eliminacion-del-bono-de-50-dolares-y-suspension-de-servicios-medicos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/noche-de-protestas-por-los-apagones-ciudadanos-de-6-estados-salieron-a-la-calle-a-reclamar-soluciones/"
+    }
+  ]
+}
