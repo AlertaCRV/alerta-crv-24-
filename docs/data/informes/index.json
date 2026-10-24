@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-10-22T06:07:46.008530+00:00",
+    "generado": "2026-10-24T18:28:54.269257+00:00",
     "total_eventos": 7
   },
   {
@@ -134,6 +134,14 @@
     "cerrado": false,
     "generado": "2026-09-30T01:43:28.614258+00:00",
     "total_eventos": 2
+  },
+  {
+    "periodo": "2026-09",
+    "tipo": "orden_publico",
+    "tipo_label": "Orden público",
+    "cerrado": true,
+    "generado": "2026-10-24T18:27:05.382306+00:00",
+    "total_eventos": 76
   },
   {
     "periodo": "2026-09",
