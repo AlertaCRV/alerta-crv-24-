@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-23T23:28:10.768871+00:00",
+  "actualizado": "2026-10-24T01:57:01.134705+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-23T20:00:58+00:00"
+    "hasta": "2026-10-23T20:11:35+00:00"
   },
-  "total_eventos": 538,
+  "total_eventos": 540,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 44,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 187,
+    "orden_publico": 188,
     "salud_publica": 23,
     "crisis_migratoria": 7,
     "incendio": 60,
@@ -23,7 +23,7 @@
     "infraestructura_agua": 26,
     "accidente_transporte": 1,
     "derrame_petrolero": 4,
-    "ataque_armado": 5,
+    "ataque_armado": 6,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
@@ -94,13 +94,13 @@
     },
     {
       "estado": "Tachira",
-      "total": 28,
+      "total": 30,
       "confirmados": 2,
       "por_severidad": {
         "alto": 11,
-        "bajo": 3,
+        "bajo": 4,
         "medio": 6,
-        "critico": 7,
+        "critico": 8,
         "sin_clasificar": 1
       },
       "severidad_dominante": "critico"
@@ -413,14 +413,14 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "inundacion": 3,
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
       "vialidad": 2,
       "motin_carcelario": 1,
-      "ataque_armado": 1,
+      "ataque_armado": 2,
       "salud_publica": 2
     },
     "Bolivar": {
@@ -536,9 +536,9 @@
   },
   "por_severidad": {
     "alto": 125,
-    "critico": 66,
+    "critico": 67,
     "medio": 187,
-    "bajo": 145,
+    "bajo": 146,
     "sin_clasificar": 15
   },
   "serie_mensual_por_tipo": {
@@ -576,7 +576,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 65
+      "2026-10": 66
     },
     "salud_publica": {
       "2026-07": 1,
@@ -631,7 +631,7 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 4
+      "2026-10": 5
     },
     "emergencia_metro": {
       "2026-08": 1,

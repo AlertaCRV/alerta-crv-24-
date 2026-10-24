@@ -1,11 +1,4 @@
 {
-  "deslizamiento::La Guaira::2026-10-21": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-21T00:59:16.758280+00:00",
-    "fecha_evento_temprana": "2026-10-21T00:40:47+00:00",
-    "municipio": null
-  },
   "orden_publico::Tachira::2026-10-21": {
     "severidad": "critico",
     "confirmado": false,
@@ -127,9 +120,9 @@
   },
   "orden_publico::Tachira::2026-10-23": {
     "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-23T20:28:19.875392+00:00",
-    "fecha_evento_temprana": "2026-10-23T17:46:39+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-24T01:54:48.941285+00:00",
+    "fecha_evento_temprana": "2026-10-23T18:44:36+00:00",
     "municipio": "Fernández Feo"
   },
   "salud_publica::Tachira::2026-10-23": {
@@ -137,6 +130,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-23T23:24:36.644407+00:00",
     "fecha_evento_temprana": "2026-10-23T20:00:58+00:00",
+    "municipio": "Fernández Feo"
+  },
+  "ataque_armado::Tachira::2026-10-23": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-24T01:54:39.644985+00:00",
+    "fecha_evento_temprana": "2026-10-23T20:11:35+00:00",
     "municipio": "Fernández Feo"
   }
 }
