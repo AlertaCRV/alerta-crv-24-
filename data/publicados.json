@@ -140,9 +140,9 @@
     "municipio": "Fernández Feo"
   },
   "salud_publica::Bolivar::2026-10-24": {
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-24T11:58:49.187358+00:00",
+    "fecha_deteccion": "2026-10-24T15:50:23.753222+00:00",
     "fecha_evento_temprana": "2026-10-24T11:00:49+00:00",
     "municipio": null
   }

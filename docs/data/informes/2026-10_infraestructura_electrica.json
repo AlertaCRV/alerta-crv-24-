@@ -3,16 +3,20 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-23T12:11:00.412485+00:00",
-  "actualizado_hasta": "2026-10-15T19:19:23.145045+00:00",
-  "total_eventos": 5,
+  "generado": "2026-10-24T15:52:45.757610+00:00",
+  "actualizado_hasta": "2026-10-23T20:28:15.745871+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 5
+    "actual": 6
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron cinco eventos de fallas eléctricas, una disminución notable respecto a los 22 eventos del mes anterior (2026‑09). Esta reducción se refleja en la menor cantidad de incidentes reportados, aunque persisten situaciones que afectan a la población en distintas regiones del país.\n\nUn incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, estado Aragua, alrededor de las 9:30 a.m. del miércoles. Según el medio, el siniestro habría sido provocado por fluctuaciones eléctricas y los prolongados apagones que la empresa Corpoelec mantiene en la entidad, generando cuantiosas pérdidas materiales (El Siglo).\n\nEn la urbanización El Paraíso, del municipio Biruaca, estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico tras una avería en las redes de distribución del sector. Personal especializado se encontraba en el sitio realizando diagnóstico y reemplazo de componentes (Notiapure).\n\nEn el estado Portuguesa, los habitantes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, presentaron un aumento de denuncias por apagones nocturnos que interrumpen su descanso y actividades cotidianas; los mensajes de notificación llegan después de las 9 p.m. (Portuguesa Reporta). Por otro lado, en Ciudad Bolívar, estado Bolívar, un apagón afectó a sectores como la avenida España, iniciándose alrededor de las 3:00 p.m. del martes, según reportes de vecinos en redes sociales (Primicia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron sólo 6 eventos de fallas eléctricas, una disminución notable respecto a los 22 eventos del mes anterior (2026‑09) (comparación proporcionada). Esta reducción no ha eliminado la percepción de vulnerabilidad en la población, que sigue reportando interrupciones y sus consecuencias en distintas regiones del país.\n\nEl 23 de octubre, ciudadanos de al menos seis estados —Zulia, Lara, Portuguesa, Miranda, Táchira y Monagas— denunciaron una ola de bajones eléctricos que comenzó alrededor de la una de la tarde, afectando el funcionamiento de electrodomésticos y generando incomodidad general (El Pitazo). Las fluctuaciones fueron percibidas de forma simultánea en esas áreas, lo que evidencia la extensión de la inestabilidad de la red eléctrica.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles, y se atribuye presumiblemente a las fluctuaciones eléctricas y a los prolongados apagones que mantiene Corpoelec en la entidad (El Siglo). Paralelamente, en el municipio Biruaca del estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico en la urbanización El Paraíso, atendiendo una avería en la red de distribución (Notiapure).\n\nEn Portuguesa, los habitantes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, reportaron un aumento de denuncias por apagones nocturnos que interrumpen su descanso y actividades cotidianas, señalando que los mensajes de notificación llegan después de las 9 p.m. (Portuguesa Reporta). En Ciudad Bolívar, vecinos indicaron que un apagón afectó a sectores como la avenida España, iniciándose alrededor de las 3:00 p.m. del martes (Primicia).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/caracas/crisis-electrica-ciudadanos-reportan-ola-de-bajones-en-al-menos-seis-estados-este-23oct/"
+    },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/incendio-destruyo-bufete-de-abogados-en-barrio-sucre/"
