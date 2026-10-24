@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Bolivar",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/guayana/regiones/rabia-humana-bolivar-sintomas-contagio-prevencion/",
+        "fecha": "2026-10-24T11:00:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-24T11:00:49+00:00",
+    "fecha_evento_temprana": "2026-10-24T11:00:49+00:00",
+    "fecha_deteccion": "2026-10-24T11:58:49.187358+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Bolivar::2026-10-24",
+    "titulo": "Salud pública en Bolivar",
+    "texto": "📌 Salud pública en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 24/10/2026, 7:00 a.m.\n🔎 Detectado por el sistema: 24/10/2026, 7:58 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/regiones/rabia-humana-bolivar-sintomas-contagio-prevencion/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Tachira",
     "municipio": "Fernández Feo",

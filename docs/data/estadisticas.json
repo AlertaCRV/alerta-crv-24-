@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-24T01:57:01.134705+00:00",
+  "actualizado": "2026-10-24T11:58:50.274491+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-23T20:11:35+00:00"
+    "hasta": "2026-10-24T11:00:49+00:00"
   },
-  "total_eventos": 540,
+  "total_eventos": 541,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
@@ -12,7 +12,7 @@
     "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 188,
-    "salud_publica": 23,
+    "salud_publica": 24,
     "crisis_migratoria": 7,
     "incendio": 60,
     "vialidad": 26,
@@ -166,6 +166,19 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Bolivar",
+      "total": 18,
+      "confirmados": 1,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 8,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -175,19 +188,6 @@
         "medio": 6,
         "sin_clasificar": 1,
         "alto": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 17,
-      "confirmados": 1,
-      "por_severidad": {
-        "bajo": 4,
-        "medio": 8,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 2
       },
       "severidad_dominante": "critico"
     },
@@ -430,7 +430,8 @@
       "inundacion": 1,
       "deslizamiento": 2,
       "infraestructura_agua": 1,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "salud_publica": 1
     },
     "Miranda": {
       "incendio": 5,
@@ -538,7 +539,7 @@
     "alto": 125,
     "critico": 67,
     "medio": 187,
-    "bajo": 146,
+    "bajo": 147,
     "sin_clasificar": 15
   },
   "serie_mensual_por_tipo": {
@@ -582,7 +583,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 12
+      "2026-10": 13
     },
     "crisis_migratoria": {
       "2026-07": 4,
