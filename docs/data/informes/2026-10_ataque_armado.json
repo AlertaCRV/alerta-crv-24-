@@ -3,15 +3,15 @@
   "tipo": "ataque_armado",
   "tipo_label": "Ataque armado",
   "cerrado": false,
-  "generado": "2026-10-23T06:40:43.572012+00:00",
-  "actualizado_hasta": "2026-10-23T06:37:30.260565+00:00",
-  "total_eventos": 4,
+  "generado": "2026-10-24T07:04:38.518597+00:00",
+  "actualizado_hasta": "2026-10-24T01:54:39.644985+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 0,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registraron cuatro eventos de ataque armado, frente a ninguno en septiembre del mismo año (0 evento(s) registrados entonces vs. 4 en este período).\n\nEn Cojedes, un autobús fue blanco de un ataque armado que dejó ocho pasajeros heridos; los afectados recibieron atención prehospitalaria y fueron trasladados a un centro médico en Tinaquillo (Primicia (Bolivar)). La gravedad del hecho fue catalogada como alta.\n\nEn el estado Táchira, un funcionario armado abrió fuego con un fusil de reglamento contra sus compañeros dentro de la Base Aérea Santo Domingo, provocando la muerte de tres militares y varios heridos; el agresor huyó del lugar y se activó un operativo de búsqueda masivo (La Prensa de Lara). La severidad del ataque fue calificada como crítica.\n\nAdemás, en el estado Portuguesa se reportaron dos ataques contra activistas opositores. En Ospino, sujetos en motocicletas dispararon cinco veces contra la fachada de la vivienda del dirigente Gabriel Noguera, generando temor y reclamos de investigación (El Pitazo). En la urbanización José Gregorio Hernández, el activista Ricardo Pérez denunció un ataque armado contra su vivienda, exigiendo protección y esclarecimiento del hecho (La Manana; La Verdad).",
+  "narrativa": "Durante el mes de octubre de 2026 se registraron cinco eventos de ataque armado, frente a ninguno en el mes anterior (0 evento(s) registrados entonces vs. 5 en este período). La Cruz Roja Venezolana activó sus protocolos de respuesta ante los incidentes que involucraron daños materiales, heridos y víctimas fatales.\n\nEn el estado Cojedes, un autobús fue blanco de un ataque armado que dejó ocho pasajeros heridos, quienes recibieron atención prehospitalaria y fueron trasladados a un centro médico en Tinaquillo (Primicia (Bolivar)). Las autoridades locales iniciaron una investigación para determinar los responsables del hecho.\n\nEn Táchira, un ataque dentro de la Base Aérea Santo Domingo cobró la vida de tres militares y dejó varios heridos; el agresor, identificado como un funcionario armado con fusil de reglamento, huyó del lugar, desencadenando un operativo de búsqueda masiva (La Prensa de Lara). Posteriormente, el soldado Raymond Paz fue detenido por su presunta participación en el ataque, según informó el Diario La Nacion (Diario La Nacion).\n\nOtros incidentes de carácter violento se reportaron en el estado Portuguesa, donde activistas opositores fueron blanco de ataques a tiros contra sus viviendas. Gabriel Noguera denunció disparos contra su casa en el caserío La Trinidad, y Ricardo Pérez informó un ataque similar en la urbanización José Gregorio Hernández; ambos casos fueron documentados por El Pitazo, La Mañana y La Verdad, que solicitaron investigaciones y medidas de protección (El Pitazo; La Mañana; La Verdad).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -20,6 +20,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/sucesos/detienen-a-soldado-acusado-de-ser-autor-de-ataque-armado-en-base-aerea/"
     },
     {
       "nombre": "El Pitazo",
