@@ -3,19 +3,23 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-21T05:53:39.416044+00:00",
-  "actualizado_hasta": "2026-10-20T22:35:25.404666+00:00",
-  "total_eventos": 51,
+  "generado": "2026-10-24T12:01:40.793816+00:00",
+  "actualizado_hasta": "2026-10-24T01:54:48.941285+00:00",
+  "total_eventos": 66,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 51
+    "actual": 66
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 51 eventos de orden público, una disminución respecto a los 76 eventos del mes anterior (septiembre 2026). Esta reducción refleja una ligera mejoría en la frecuencia de incidentes, aunque persisten concentraciones significativas en varios estados.\n\nEn Zulia se produjeron al menos cinco protestas nocturnas contra los cortes eléctricos, con manifestantes bloqueando avenidas y carreteras (El Pitazo). En Guárico, la represión de la Guardia Nacional a las mismas protestas se intensificó, generando enfrentamientos y detenciones (El Pitazo). En Carabobo, las protestas por racionamientos eléctricos en Guacara, Yagua y Malavé provocaron un fuerte tráfico en la ARC y alteraron la circulación normal (El Impulso (Lara)).\n\nEn el estado Portuguesa se registraron tres incidentes de alta severidad. En Ospino, vecinos marcharon contra los apagones a pesar de un fuerte despliegue policial (Portuguesa Reporta). En la parroquia Payara, una protesta bloqueó la vía principal reteniendo más de 40 gandolas cargadas con arroz y maíz, paralizando el traslado de la cosecha del ciclo invierno 2026 (Turimiquire (Sucre)). Además, productores de café y arroz de Lara y Portuguesa movilizaron a más de 2 000 personas frente a una torrefactora en Araure, exigiendo el respeto a los precios acordados (La Prensa de Lara).\n\nEn Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC terminó con la muerte de los cuatro individuos en el sector 18 de Octubre (Diario El Vistazo (Anzoategui)). En Yaracuy, un tiroteo en el sector Sabanita de Yaritagua dejó un joven fallecido y otro herido, trasladados al Hospital Universitario Antonio María Pineda (Yaracuy al Dia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 66 incidentes de orden público, una disminución respecto a los 76 ocurridos en septiembre de 2026 (comparación proporcionada). La reducción no implicó una menor gravedad, pues varios eventos alcanzaron severidad alta o crítica, generando muertos, heridos y daños materiales.\n\nEn Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC terminó con la muerte de los cuatro individuos en el sector 18 de Octubre (Diario El Vistazo (Anzoategui)). En el estado Táchira, el soldado Raymond Paz abrió fuego dentro de la Base Aérea \"Mayor Buenaventura Vivas Guerrero\", provocando la muerte de tres militares y hiriendo a otros tres; el agresor fue capturado posteriormente (El Pitazo; Diario La Nacion (Tachira); Nuevo Dia (Falcon)).\n\nLas protestas por los constantes cortes eléctricos se intensificaron en varios estados. En Zulia, la Guardia Nacional reprimió al menos cinco manifestaciones nocturnas el 30 de septiembre, parte de una serie de 20 protestas en siete estados (El Pitazo). En Carabobo, manifestantes bloquearon la ARC de Guacara, Yagua y Malavé, generando fuerte tráfico (El Impulso (Lara)). En Guárico y Lara se registraron protestas nocturnas contra los racionamientos de energía, con bloqueos de avenidas y carreteras (La Prensa de Lara; Notiapure). \n\nEn Portuguesa, agricultores y productores de arroz se movilizaron en la autopista José Antonio Páez frente a una torrefactora en Araure, exigiendo el cumplimiento de precios acordados, lo que derivó en disturbios de orden público (Turimiquire (Sucre); Portuguesa Reporta; La Prensa de Lara). En Yaracuy, la situación alcanzó nivel crítico, con enfrentamientos que dejaron víctimas y daños materiales (Yaracuy al Dia). En Lara, la crisis eléctrica disparó la conflictividad, multiplicando las protestas en septiembre y manteniéndose en octubre (Notiapure). \n\nA pesar de la reducción numérica de incidentes respecto al mes anterior, la concentración de hechos de alta y crítica severidad indica que la tensión social vinculada a la escasez eléctrica y a episodios de violencia armada sigue siendo elevada, demandando una respuesta coordinada de las autoridades y de la Cruz Roja Venezolana para atender a los heridos y mitigar los daños materiales.",
   "fuentes": [
     {
       "nombre": "Diario El Vistazo (Anzoategui)",
       "link": "https://diarioelvistazo.com/cuatro-sujetos-dedicados-al-robo-y-hurto-de-vehiculos-y-motos-murieron-en-enfrentamiento-con-el-cicpc-en-anzoategui/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/sucesos/buscan-al-soldado-que-mato-a-tres-companeros-en-la-base-aerea-santo-domingo/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -26,6 +30,14 @@
       "link": "https://elpitazo.net/regiones/ciudadanos-salen-a-las-calles-a-exigir-fin-de-los-apagones-gn-reprime-a-manifestantes-en-zulia/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/soldado-mata-a-tres-companeros-y-escapa-con-un-fusil-en-ataque-en-base-aerea-de-tachira/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/capturado-soldado-senalado-de-matar-a-tres-companeros-militares-en-base-aerea-de-tachira/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/protestas-nocturnas-cortes-electrico/"
     },
@@ -34,8 +46,28 @@
       "link": "https://laprensadelara.com/nacionales/caficultores-lara-portuguesa-precios/"
     },
     {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/tiroteo-en-base-aerea-de-tachira-deja-tres-militares-muertos-y-dos-heridos/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/buscan-a-soldado-que-asesino-a-tres-militares-en-tachira/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/capturado-soldado-acusado-de-asesinar-a-tres-militares-en-tachira/"
+    },
+    {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones/?utm_source=rss&utm_medium=rss&utm_campaign=a-pesar-del-fuerte-despliegue-policial-vecinos-marcharon-en-ospino-contra-los-apagones"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/"
     },
     {
       "nombre": "Turimiquire (Sucre)",
@@ -44,6 +76,10 @@
     {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/sucesos/fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-en-el-hospital-de-lara-joven-tiroteado-en-yaritagua-hay-un-herido-yaracuy"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea/?utm_source=rss&utm_medium=rss&utm_campaign=capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea"
     },
     {
       "nombre": "El Carabobeno",
@@ -64,6 +100,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/10/15/video-comunidades-en-lara-se-unen-a-protestas-y-denuncian-caos-por-crisis-electrica-15oct/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/"
     },
     {
       "nombre": "El Pitazo",
@@ -94,56 +134,16 @@
       "link": "https://elpitazo.net/regiones/caficultores-amanecen-en-protesta-frente-torrefactora-exigen-que-se-respeten-los-precios-acordados/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/gremios-marcharon-en-carupano-para-apoyar-peticiones-salariales-al-gobierno-nacional-fotos/"
     },
     {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/pnb-bloqueo-marcha-de-trabajadores-en-caracas-una-comision-de-los-manifestantes-entrego-documento-en-miraflores/"
-    },
-    {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/colegio-de-ingenieros-advierte-colapso-del-servicio-de-agua-en-falcon/"
-    },
-    {
-      "nombre": "La Noticia de Barinas",
-      "link": "https://lanoticiadebarinas.com/2026/10/en-torunos-padres-y-representantes-pidenque-se-mantenga-la-directora-de-la-u-e/"
-    },
-    {
-      "nombre": "La Noticia de Barinas",
-      "link": "https://lanoticiadebarinas.com/2026/10/trabajadores-marchan-a-miraflores-este13oct-exigiran-aumento-de-salario-y-aguinaldos/"
-    },
-    {
-      "nombre": "La Noticia de Barinas",
-      "link": "https://lanoticiadebarinas.com/2026/10/entre-tensiones-y-altercadosintergremial-universitaria-se-declara-en-protestatras-toma-del-rectorado-de-la-unellez/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/protesta-por-falta-de-agua-y-luz/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/familiares-presos-politicos-marchan/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/locales/gremios-y-sindicatos-toman-las-calles/"
-    },
-    {
-      "nombre": "La Verdad de Vargas",
-      "link": "https://laverdaddevargas.com/trabajadores-se-movilizaron-por-salarios-justos/"
-    },
-    {
-      "nombre": "Maturin News",
-      "link": "https://maturinnews.com/observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre/?utm_source=rss&utm_medium=rss&utm_campaign=observatorio-de-conflictividad-registra-ocho-protestas-en-siete-estados-del-pais-este-8-de-octubre"
-    },
-    {
-      "nombre": "Maturin News",
-      "link": "https://maturinnews.com/obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral/?utm_source=rss&utm_medium=rss&utm_campaign=obreros-de-la-udo-monagas-protestan-por-tercera-vez-exigiendo-justicia-laboral"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/municipio-falcon-tercer-dia-de-protesta-en-el-tanquesito-por-falta-de-agua/"
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/tras-mas-de-tres-meses-sin-respuesta-jubilados-de-la-cantv-protestaron-otra-vez-en-puerto-la-cruz-fotos/"
     }
   ]
 }
