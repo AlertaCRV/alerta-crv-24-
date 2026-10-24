@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-24T21:09:27.049534+00:00",
+  "actualizado": "2026-10-24T23:14:16.187981+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-24T20:21:14+00:00"
+    "hasta": "2026-10-24T20:25:18+00:00"
   },
-  "total_eventos": 543,
+  "total_eventos": 544,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
     "infraestructura_electrica": 45,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 188,
+    "orden_publico": 189,
     "salud_publica": 25,
     "crisis_migratoria": 7,
     "incendio": 60,
@@ -94,11 +94,11 @@
     },
     {
       "estado": "Tachira",
-      "total": 30,
+      "total": 31,
       "confirmados": 2,
       "por_severidad": {
         "alto": 11,
-        "bajo": 4,
+        "bajo": 5,
         "medio": 6,
         "critico": 8,
         "sin_clasificar": 1
@@ -413,7 +413,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 9,
+      "orden_publico": 10,
       "inundacion": 3,
       "sismo": 1,
       "infraestructura_electrica": 2,
@@ -539,7 +539,7 @@
     "alto": 125,
     "critico": 67,
     "medio": 187,
-    "bajo": 147,
+    "bajo": 148,
     "sin_clasificar": 17
   },
   "serie_mensual_por_tipo": {
@@ -577,7 +577,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 66
+      "2026-10": 67
     },
     "salud_publica": {
       "2026-07": 1,
