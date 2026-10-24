@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/",
+        "fecha": "2026-10-24T20:21:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-24T20:21:14+00:00",
+    "fecha_evento_temprana": "2026-10-24T20:21:14+00:00",
+    "fecha_deteccion": "2026-10-24T21:09:17.706416+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-10-24",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 24/10/2026, 4:21 p.m.\n🔎 Detectado por el sistema: 24/10/2026, 5:09 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Bolivar",
     "municipio": null,
