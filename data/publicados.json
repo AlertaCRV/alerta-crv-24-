@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
     "municipio": "Maturín"
   },
-  "orden_publico::Anzoategui::2026-10-21": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-21T22:49:19.512987+00:00",
-    "fecha_evento_temprana": "2026-10-21T18:43:37+00:00",
-    "municipio": null
-  },
   "deslizamiento::Portuguesa::2026-10-22": {
     "severidad": "medio",
     "confirmado": false,
@@ -137,6 +130,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-24T21:09:17.706416+00:00",
     "fecha_evento_temprana": "2026-10-24T20:21:14+00:00",
+    "municipio": null
+  },
+  "orden_publico::Tachira::2026-10-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-24T23:14:07.182878+00:00",
+    "fecha_evento_temprana": "2026-10-24T20:25:18+00:00",
     "municipio": null
   }
 }

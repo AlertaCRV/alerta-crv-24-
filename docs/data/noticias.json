@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/detenido-el-soldado-raymond-paz-por-el-tiroteo-en-la-base-aerea-de-tachira/",
+        "fecha": "2026-10-24T20:25:18+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-24T20:25:18+00:00",
+    "fecha_evento_temprana": "2026-10-24T20:25:18+00:00",
+    "fecha_deteccion": "2026-10-24T23:14:07.182878+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-10-24",
+    "titulo": "Orden público en Tachira",
+    "texto": "📌 Orden público en Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 24/10/2026, 4:25 p.m.\n🔎 Detectado por el sistema: 24/10/2026, 7:14 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/detenido-el-soldado-raymond-paz-por-el-tiroteo-en-la-base-aerea-de-tachira/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -1822,31 +1848,5 @@
     "clave_dedup": "vialidad::Monagas::2026-10-11",
     "titulo": "Incidente vial en Municipio Cedeño, Monagas",
     "texto": "📌 Incidente vial en Municipio Cedeño, Monagas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Cedeño, Monagas\n🕒 Hecho reportado: 11/10/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 11/10/2026, 3:14 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/un-gnb-muerto-y-9-heridos-deja-volcamiento-en-monagas/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/",
-        "fecha": "2026-10-10T18:03:24+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-10T18:03:24+00:00",
-    "fecha_evento_temprana": "2026-10-10T18:03:24+00:00",
-    "fecha_deteccion": "2026-10-10T22:53:43.042503+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Distrito Capital::2026-10-10",
-    "titulo": "Incendio en Distrito Capital",
-    "texto": "📌 Incendio en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 10/10/2026, 2:03 p.m.\n🔎 Detectado por el sistema: 10/10/2026, 6:53 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/caracas-incendio-en-mercado-de-la-avenida-baralt-comprometio-al-menos-seis-locales-este-10oct/"
   }
 ]
