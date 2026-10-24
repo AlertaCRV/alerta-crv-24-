@@ -1,24 +1,10 @@
 {
-  "orden_publico::Tachira::2026-10-21": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-21T19:41:22.989239+00:00",
-    "fecha_evento_temprana": "2026-10-21T14:00:26+00:00",
-    "municipio": null
-  },
   "incendio::Monagas::2026-10-21": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-10-22T01:01:42.023297+00:00",
     "fecha_evento_temprana": "2026-10-21T14:06:08+00:00",
     "municipio": "Maturín"
-  },
-  "ataque_armado::Tachira::2026-10-21": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-21T19:41:44.325943+00:00",
-    "fecha_evento_temprana": "2026-10-21T16:39:29+00:00",
-    "municipio": "San Cristóbal"
   },
   "orden_publico::Anzoategui::2026-10-21": {
     "severidad": "bajo",
@@ -144,6 +130,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-24T15:50:23.753222+00:00",
     "fecha_evento_temprana": "2026-10-24T11:00:49+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-10-24": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-24T21:09:17.706416+00:00",
+    "fecha_evento_temprana": "2026-10-24T20:21:14+00:00",
     "municipio": null
   }
 }
