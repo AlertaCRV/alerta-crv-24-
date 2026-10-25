@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-21T19:43:49.102588+00:00",
-  "actualizado_hasta": "2026-10-19T17:06:59.387643+00:00",
-  "total_eventos": 6,
+  "generado": "2026-10-25T11:34:01.973810+00:00",
+  "actualizado_hasta": "2026-10-25T06:11:25.869446+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 6
+    "actual": 15
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron seis emergencias de salud pública, duplicando la cifra del mes anterior que había contabilizado solo dos eventos (2 evento(s) registrados entonces vs. 6 en este período). Las incidencias se concentraron principalmente en los estados de Trujillo, Guárico y Zulia, y abarcaron intoxicaciones masivas en centros educativos y fallecimientos en centros penitenciarios por presunta falta de atención médica.\n\nEn Trujillo se produjeron varias intoxicaciones de alta severidad. La Prensa de Lara informó que al menos tres casos de intoxicación se presentaron en instituciones educativas de Trujillo, con síntomas de mareo, irritación respiratoria y náuseas, y que los afectados fueron trasladados a centros de salud (La Prensa de Lara). El presidente regional de Primero Justicia, Emilio Fajardo Linares, exigió despolitizar las intoxicaciones masivas y solicitó una investigación técnica y transparente, según lo reportado por Diario El Tiempo (Diario El Tiempo). El mismo reclamo y la descripción de las intoxicaciones fueron reproducidos por El Impulso (El Impulso). Además, El Periodico de Monagas describió una nueva intoxicación masiva en la Escuela Fabricio Ojeda, donde varios asistentes a una asamblea escolar comenzaron a sentirse mal y la falta de equipos de emergencia dificultó su traslado rápido a un hospital (El Periodico de Monagas).\n\nEn Guárico se registró una emergencia de salud pública de gravedad crítica: el Observatorio Venezolano de Prisiones denunció la muerte de José Gregorio Díaz, de 59 años, en la cárcel 26 de Julio, atribuyendo el fallecimiento a una presunta falta de atención médica (El Impulso). Este caso subraya la insalubridad y los brotes infecciosos dentro del penal.\n\nEn Zulia también se reportó una muerte por falta de atención médica en un centro de formación penitenciario, el Centro de Formación Hombre Nuevo Francisco Delgado, antiguo retén de El Marite. El Observatorio Venezolano de Prisiones, citado por El Pitazo, denunció que la ausencia de cuidados médicos adecuados provocó la muerte del recluso (El Pitazo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron quince eventos de salud pública, frente a los dos reportados en septiembre del mismo año (2 evento(s) registrados entonces vs. 15 en este período). La cifra evidencia un notable incremento de incidentes que han afectado a distintas comunidades del país, demandando una respuesta coordinada de las autoridades sanitarias y de protección civil.\n\nEn el estado Trujillo se concentraron varios episodios de intoxicaciones masivas en instituciones educativas, catalogados con severidad alta. La prensa local informó casos de intoxicación en escuelas de Lara y Trujillo, con síntomas de mareo y náuseas en estudiantes y docentes (La Prensa de Lara). El presidente regional de Primero Justicia denunció la necesidad de despolitizar y de investigar exhaustivamente estas intoxicaciones, según reportó Diario El Tiempo (Trujillo). El mismo hecho fue reiterado por El Impulso (Lara), que destacó la urgencia de una evaluación científica por parte de Fundasalud. El Periodico de Monagas describió una nueva intoxicación masiva en la Escuela Fabricio Ojeda, en la parroquia Tres de Febrero de Trujillo (El Periodico de Monagas). Además, Primicia (Bolivar) informó la captura de un sospechoso con sustancias químicas vinculadas a las intoxicaciones en Trujillo (Primicia (Bolivar)).\n\nEn Guárico, la situación alcanzó un nivel crítico con la muerte de un interno de la cárcel 26 de Julio, atribuida a una presunta falta de atención médica (El Impulso (Lara)). De forma paralela, en el estado Zulia se denunció la muerte de un recluso en el Centro de Formación Hombre Nuevo Francisco Delgado por la misma causa, según El Pitazo (El Pitazo). Ambos casos subrayan graves deficiencias en la atención sanitaria dentro del sistema penitenciario.\n\nEl estado Lara también enfrentó una intoxicación masiva en una institución educativa, con más de setenta personas afectadas y evacuadas por los cuerpos de seguridad (La Prensa de Lara). En Táchira, una intoxicación masiva impactó a 68 personas, entre niños, docentes y vecinos, en el Complejo Educativo Nacional General José Antonio Bello Nieto, catalogada con severidad alta (El Pitazo).\n\nAnte este panorama, diversas organizaciones y autoridades, como Fundaredes y el Observatorio Venezolano de Prisiones, han exigido investigaciones exhaustivas y la garantía de entornos seguros en centros educativos y penitenciarios, resaltando la necesidad de fortalecer los protocolos de respuesta y la vigilancia sanitaria para prevenir futuros incidentes.",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -34,8 +34,32 @@
       "link": "https://elpitazo.net/sucesos/ong-denuncia-la-muerte-de-un-recluso-en-zulia-por-falta-de-atencion-medica/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/trujillo-estudiantes-y-docentes-son-desalojados-de-la-unidad-escolar-valmore-rodriguez-por-presunta-intoxicacion/"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/casos-intoxicacion-lara-trujillo/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/gremio-docente-esclarecer-intoxicacion/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/detenido-sospechoso-intoxicaciones-escuelas-trujillo/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/fundaredes-exige-investigacion-sobre-intoxicaciones-en-escuelas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-andes/intoxicacion-masiva-en-tachira-68-personas-sufren-afectaciones-respiratorias-en-una-escuela/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/guayana/regiones/rabia-humana-bolivar-sintomas-contagio-prevencion/"
     }
   ]
 }
