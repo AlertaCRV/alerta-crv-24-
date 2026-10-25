@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-24T07:07:52.684520+00:00",
+  "generado": "2026-10-25T06:15:25.842079+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026, el sistema de monitoreo de emergencias registró un solo sismo, en contraste con los dos eventos registrados en el período anterior (2026‑09) (2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl 2 de octubre de 2026 se produjo un temblor de magnitud preliminar 5,0 cuyo epicentro se ubicó en la zona costera cercana a Güiria, en el estado Sucre (Nuevo Dia (Falcon)). La misma información fue confirmada por otro medio, que también señaló la magnitud de 5,0 y la ubicación exacta del epicentro (Yaracuy al Dia).\\n\\nEl sismo fue percibido con intensidad en varias localidades del oriente venezolano, provocando que numerosos residentes abandonaran sus viviendas en busca de lugares seguros (Nuevo Dia (Falcon)). A pesar del susto generado, las fuentes indican que no se reportaron daños materiales significativos ni víctimas mortales ni heridos hasta el momento de la publicación (Nuevo Dia (Falcon); Yaracuy al Dia).\\n\\nLas autoridades locales mantuvieron la vigilancia y recomendaron a la población permanecer atenta a posibles réplicas, aunque no se anticiparon mayores consecuencias estructurales (Nuevo Dia (Falcon)).",
+  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento sísmico, en contraste con los dos eventos reportados en septiembre del mismo año (Comparación con el período anterior). Esta disminución en la frecuencia de sismos se refleja en los datos oficiales del monitoreo de emergencias.\n\nEl 2 de octubre de 2026 se produjo un sismo de magnitud 5,0 en el oriente de Venezuela, cuyo epicentro se ubicó en la zona costera cercana a Güiria, estado Sucre (Nuevo Dia). El temblor fue percibido intensamente en varias localidades de la región, generando pánico entre los residentes que buscaron refugio en lugares seguros (Yaracuy al Dia). A pesar del susto, las fuentes indican que no se reportaron daños materiales significativos ni víctimas mortales ni heridos hasta el momento (Nuevo Dia; Yaracuy al Dia).\n\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando la zona para garantizar la seguridad de la población y ofrecer asistencia en caso de que se presenten efectos posteriores. Se mantiene la recomendación de estar atentos a posibles réplicas y de seguir los protocolos de seguridad sísmica establecidos por las instituciones competentes.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",

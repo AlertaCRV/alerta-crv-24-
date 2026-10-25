@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-24T23:14:16.187981+00:00",
+  "actualizado": "2026-10-25T06:11:30.815829+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-24T20:25:18+00:00"
+    "hasta": "2026-10-25T01:04:05+00:00"
   },
-  "total_eventos": 544,
+  "total_eventos": 545,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 83,
@@ -12,7 +12,7 @@
     "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 189,
-    "salud_publica": 25,
+    "salud_publica": 26,
     "crisis_migratoria": 7,
     "incendio": 60,
     "vialidad": 26,
@@ -94,14 +94,14 @@
     },
     {
       "estado": "Tachira",
-      "total": 31,
+      "total": 32,
       "confirmados": 2,
       "por_severidad": {
         "alto": 11,
         "bajo": 5,
         "medio": 6,
         "critico": 8,
-        "sin_clasificar": 1
+        "sin_clasificar": 2
       },
       "severidad_dominante": "critico"
     },
@@ -421,7 +421,7 @@
       "vialidad": 2,
       "motin_carcelario": 1,
       "ataque_armado": 2,
-      "salud_publica": 2
+      "salud_publica": 3
     },
     "Bolivar": {
       "orden_publico": 7,
@@ -540,7 +540,7 @@
     "critico": 67,
     "medio": 187,
     "bajo": 148,
-    "sin_clasificar": 17
+    "sin_clasificar": 18
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -583,7 +583,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 14
+      "2026-10": 15
     },
     "crisis_migratoria": {
       "2026-07": 4,
