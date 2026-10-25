@@ -3,19 +3,23 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-24T15:52:45.757610+00:00",
-  "actualizado_hasta": "2026-10-23T20:28:15.745871+00:00",
-  "total_eventos": 6,
+  "generado": "2026-10-25T18:26:12.181736+00:00",
+  "actualizado_hasta": "2026-10-24T21:09:17.706416+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 6
+    "actual": 7
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron sólo 6 eventos de fallas eléctricas, una disminución notable respecto a los 22 eventos del mes anterior (2026‑09) (comparación proporcionada). Esta reducción no ha eliminado la percepción de vulnerabilidad en la población, que sigue reportando interrupciones y sus consecuencias en distintas regiones del país.\n\nEl 23 de octubre, ciudadanos de al menos seis estados —Zulia, Lara, Portuguesa, Miranda, Táchira y Monagas— denunciaron una ola de bajones eléctricos que comenzó alrededor de la una de la tarde, afectando el funcionamiento de electrodomésticos y generando incomodidad general (El Pitazo). Las fluctuaciones fueron percibidas de forma simultánea en esas áreas, lo que evidencia la extensión de la inestabilidad de la red eléctrica.\n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, municipio Girardot, alrededor de las 9:30 a.m. del miércoles, y se atribuye presumiblemente a las fluctuaciones eléctricas y a los prolongados apagones que mantiene Corpoelec en la entidad (El Siglo). Paralelamente, en el municipio Biruaca del estado Apure, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras operativas y de mantenimiento correctivo para restablecer el suministro eléctrico en la urbanización El Paraíso, atendiendo una avería en la red de distribución (Notiapure).\n\nEn Portuguesa, los habitantes de los sectores La Canal y Los Caobos en Araure, así como de Santa Rosalía, reportaron un aumento de denuncias por apagones nocturnos que interrumpen su descanso y actividades cotidianas, señalando que los mensajes de notificación llegan después de las 9 p.m. (Portuguesa Reporta). En Ciudad Bolívar, vecinos indicaron que un apagón afectó a sectores como la avenida España, iniciándose alrededor de las 3:00 p.m. del martes (Primicia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 7 eventos de fallas eléctricas, una disminución respecto a los 22 eventos del mes anterior (2026‑09) (Comparación con el período anterior). \n\nEl viernes 23 de octubre, ciudadanos de los estados Zulia, Lara, Portuguesa, Miranda, Táchira y Monagas reportaron una ola de bajones eléctricos que comenzó cerca de la una de la tarde, afectando el funcionamiento de electrodomésticos y generando preocupación entre la población (El Pitazo). \n\nAl día siguiente, el sábado 24 de octubre, se describió un \"festival de bajones\" que impactó a Caracas y a ocho estados más: Zulia, Caracas, Miranda, Lara, Carabobo, Portuguesa, Aragua, Táchira y Monagas, con fluctuaciones iniciadas alrededor de las 2:57 p.m.; los usuarios expresaron temor de perder sus equipos por la intensidad de los cortes (El Pitazo). \n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, a causa presunta de las fluctuaciones eléctricas y los prolongados apagones de Corpoelec, dejando cuantiosas pérdidas materiales (El Siglo). \n\nAdicionalmente, Corpoelec realizó maniobras de diagnóstico y reemplazo de componentes para restablecer el servicio eléctrico en la urbanización El Paraíso, municipio Biruaca, estado Apure, tras una avería en la red de distribución (Notiapure). En Portuguesa, los residentes de Araure y Santa Rosalía denunciaron apagones nocturnos que perturban su descanso y actividades cotidianas (Portuguesa Reporta). En Ciudad Bolívar, sectores como la avenida España experimentaron un apagón que comenzó alrededor de las 3:00 p.m. del martes, según reportes de vecinos en redes sociales (Primicia).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/caracas/crisis-electrica-ciudadanos-reportan-ola-de-bajones-en-al-menos-seis-estados-este-23oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/"
     },
     {
       "nombre": "El Siglo (Aragua)",
