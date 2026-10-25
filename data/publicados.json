@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-22T12:00:00+00:00",
     "municipio": "Moran"
   },
-  "orden_publico::Nueva Esparta::2026-10-22": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-22T16:06:55.929135+00:00",
-    "fecha_evento_temprana": "2026-10-22T14:48:25+00:00",
-    "municipio": null
-  },
   "ataque_armado::Portuguesa::2026-10-22": {
     "severidad": "medio",
     "confirmado": false,
