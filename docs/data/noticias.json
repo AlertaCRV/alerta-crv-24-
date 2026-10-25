@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Tachira",
+    "municipio": "Fernández Feo",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/fundaredes-exige-investigacion-sobre-intoxicaciones-en-escuelas/",
+        "fecha": "2026-10-25T01:04:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-25T01:04:05+00:00",
+    "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
+    "fecha_deteccion": "2026-10-25T06:11:25.869446+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Tachira::2026-10-23",
+    "titulo": "Salud pública en Municipio Fernández Feo, Tachira",
+    "texto": "📌 Salud pública en Municipio Fernández Feo, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 24/10/2026, 9:04 p.m.\n🔎 Detectado por el sistema: 25/10/2026, 2:11 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/fundaredes-exige-investigacion-sobre-intoxicaciones-en-escuelas/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Tachira",
     "municipio": null,
@@ -133,32 +159,6 @@
     "clave_dedup": "orden_publico::Tachira::2026-10-23",
     "titulo": "Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira",
     "texto": "📌 Orden público en Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santo Domingo, Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 23/10/2026, 3:18 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 9:54 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/capturado-soldado-acusado-de-asesinar-a-tres-militares-en-tachira/\n  • Yaracuy al Dia: https://yaracuyaldia.com/sucesos/capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea/?utm_source=rss&utm_medium=rss&utm_campaign=capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Tachira",
-    "municipio": "Fernández Feo",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/trujillo-estudiantes-y-docentes-son-desalojados-de-la-unidad-escolar-valmore-rodriguez-por-presunta-intoxicacion/",
-        "fecha": "2026-10-23T20:00:58+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-23T20:00:58+00:00",
-    "fecha_evento_temprana": "2026-10-23T20:00:58+00:00",
-    "fecha_deteccion": "2026-10-23T23:24:36.644407+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Tachira::2026-10-23",
-    "titulo": "Salud pública en Municipio Fernández Feo, Tachira",
-    "texto": "📌 Salud pública en Municipio Fernández Feo, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 23/10/2026, 4:00 p.m.\n🔎 Detectado por el sistema: 23/10/2026, 7:24 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/trujillo-estudiantes-y-docentes-son-desalojados-de-la-unidad-escolar-valmore-rodriguez-por-presunta-intoxicacion/"
   },
   {
     "tipo": "infraestructura_electrica",
