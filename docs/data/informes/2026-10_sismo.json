@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-25T06:15:25.842079+00:00",
+  "generado": "2026-10-26T06:36:31.174011+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento sísmico, en contraste con los dos eventos reportados en septiembre del mismo año (Comparación con el período anterior). Esta disminución en la frecuencia de sismos se refleja en los datos oficiales del monitoreo de emergencias.\n\nEl 2 de octubre de 2026 se produjo un sismo de magnitud 5,0 en el oriente de Venezuela, cuyo epicentro se ubicó en la zona costera cercana a Güiria, estado Sucre (Nuevo Dia). El temblor fue percibido intensamente en varias localidades de la región, generando pánico entre los residentes que buscaron refugio en lugares seguros (Yaracuy al Dia). A pesar del susto, las fuentes indican que no se reportaron daños materiales significativos ni víctimas mortales ni heridos hasta el momento (Nuevo Dia; Yaracuy al Dia).\n\nLas autoridades de la Cruz Roja Venezolana continúan monitoreando la zona para garantizar la seguridad de la población y ofrecer asistencia en caso de que se presenten efectos posteriores. Se mantiene la recomendación de estar atentos a posibles réplicas y de seguir los protocolos de seguridad sísmica establecidos por las instituciones competentes.",
+  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento sísmico, lo que representa una disminución respecto al período anterior en el que se contabilizaron dos sismos (Comparación con el período anterior (2026-09): 2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 que tuvo su epicentro en la región costera cercana a Güiria, en el estado Sucre, en el oriente de Venezuela (Nuevo Dia). La misma información fue confirmada por Yaracuy al Dia, que también señaló la magnitud preliminar de 5,0 y la ubicación exacta del temblor (Yaracuy al Dia).\\n\\nA pesar del susto generado entre los residentes, no se reportaron daños significativos ni víctimas a consecuencia del sismo (Nuevo Dia). Las autoridades continúan monitoreando la zona y se mantiene la alerta para posibles réplicas, aunque hasta el momento no se han registrado consecuencias materiales mayores.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",
