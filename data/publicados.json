@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
     "municipio": "Fernández Feo"
   },
-  "infraestructura_electrica::Distrito Capital::2026-10-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-24T21:09:17.706416+00:00",
-    "fecha_evento_temprana": "2026-10-24T20:21:14+00:00",
-    "municipio": null
-  },
   "orden_publico::Tachira::2026-10-24": {
     "severidad": "bajo",
     "confirmado": false,
@@ -36,9 +29,23 @@
   },
   "inundacion::Zulia::2026-10-27": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-27T19:36:44.479975+00:00",
-    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
-    "municipio": "Cabimas"
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-27T23:12:23.838703+00:00",
+    "fecha_evento_temprana": "2026-10-27T18:46:44+00:00",
+    "municipio": null
+  },
+  "incendio::Anzoategui::2026-10-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-27T23:13:00.824254+00:00",
+    "fecha_evento_temprana": "2026-10-27T17:05:17+00:00",
+    "municipio": "Simón Rodríguez"
+  },
+  "orden_publico::Lara::2026-10-27": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-27T23:13:05.556943+00:00",
+    "fecha_evento_temprana": "2026-10-27T22:00:00+00:00",
+    "municipio": null
   }
 }
