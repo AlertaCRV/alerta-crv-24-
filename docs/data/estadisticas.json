@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-27T02:16:26.786064+00:00",
+  "actualizado": "2026-10-27T19:37:16.374873+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-27T00:00:00+00:00"
+    "hasta": "2026-10-27T16:45:19+00:00"
   },
-  "total_eventos": 546,
+  "total_eventos": 548,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 83,
+    "inundacion": 84,
     "infraestructura_electrica": 46,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 189,
+    "orden_publico": 190,
     "salud_publica": 26,
     "crisis_migratoria": 7,
     "incendio": 60,
@@ -56,10 +56,10 @@
     },
     {
       "estado": "Zulia",
-      "total": 43,
-      "confirmados": 7,
+      "total": 44,
+      "confirmados": 8,
       "por_severidad": {
-        "medio": 18,
+        "medio": 19,
         "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
@@ -131,12 +131,12 @@
     },
     {
       "estado": "Falcon",
-      "total": 20,
+      "total": 21,
       "confirmados": 3,
       "por_severidad": {
         "alto": 6,
         "bajo": 6,
-        "medio": 7,
+        "medio": 8,
         "critico": 1
       },
       "severidad_dominante": "critico"
@@ -344,7 +344,7 @@
       "tormenta_electrica": 2,
       "infraestructura_electrica": 5,
       "colapso_estructural": 1,
-      "inundacion": 2,
+      "inundacion": 3,
       "sequia": 1,
       "orden_publico": 18,
       "sismo": 2,
@@ -451,7 +451,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 10,
+      "orden_publico": 11,
       "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -538,7 +538,7 @@
   "por_severidad": {
     "alto": 125,
     "critico": 67,
-    "medio": 187,
+    "medio": 189,
     "bajo": 148,
     "sin_clasificar": 19
   },
@@ -553,7 +553,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 12
+      "2026-10": 13
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -577,7 +577,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 67
+      "2026-10": 68
     },
     "salud_publica": {
       "2026-07": 1,
