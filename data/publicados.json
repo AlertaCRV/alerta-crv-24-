@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
     "municipio": "Fernández Feo"
   },
-  "salud_publica::Bolivar::2026-10-24": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-24T15:50:23.753222+00:00",
-    "fecha_evento_temprana": "2026-10-24T11:00:49+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Distrito Capital::2026-10-24": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -33,5 +26,19 @@
     "fecha_deteccion": "2026-10-27T02:16:25.975835+00:00",
     "fecha_evento_temprana": "2026-10-27T00:00:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Falcon::2026-10-27": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-27T19:36:38.285683+00:00",
+    "fecha_evento_temprana": "2026-10-27T16:12:20+00:00",
+    "municipio": "Cacique Manaure"
+  },
+  "inundacion::Zulia::2026-10-27": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-27T19:36:44.479975+00:00",
+    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
+    "municipio": "Cabimas"
   }
 }
