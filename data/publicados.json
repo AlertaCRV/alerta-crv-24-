@@ -1,23 +1,9 @@
 {
-  "orden_publico::Tachira::2026-10-23": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-24T01:54:48.941285+00:00",
-    "fecha_evento_temprana": "2026-10-23T18:44:36+00:00",
-    "municipio": "Fernández Feo"
-  },
   "salud_publica::Tachira::2026-10-23": {
     "severidad": "sin_clasificar",
     "confirmado": false,
     "fecha_deteccion": "2026-10-25T06:11:25.869446+00:00",
     "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
-    "municipio": "Fernández Feo"
-  },
-  "ataque_armado::Tachira::2026-10-23": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-24T01:54:39.644985+00:00",
-    "fecha_evento_temprana": "2026-10-23T20:11:35+00:00",
     "municipio": "Fernández Feo"
   },
   "salud_publica::Bolivar::2026-10-24": {
@@ -39,6 +25,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-24T23:14:07.182878+00:00",
     "fecha_evento_temprana": "2026-10-24T20:25:18+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Lara::2026-10-27": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-27T02:16:25.975835+00:00",
+    "fecha_evento_temprana": "2026-10-27T00:00:00+00:00",
     "municipio": null
   }
 }

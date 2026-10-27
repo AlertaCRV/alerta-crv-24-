@@ -3,7 +3,7 @@
   "tipo": "sismo",
   "tipo_label": "Sismo",
   "cerrado": false,
-  "generado": "2026-10-26T06:36:31.174011+00:00",
+  "generado": "2026-10-27T02:21:08.416075+00:00",
   "actualizado_hasta": "2026-10-02T18:18:23.979674+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 2,
     "actual": 1
   },
-  "narrativa": "Durante el mes de octubre de 2026 se registró un único evento sísmico, lo que representa una disminución respecto al período anterior en el que se contabilizaron dos sismos (Comparación con el período anterior (2026-09): 2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl 2 de octubre de 2026 se reportó un sismo de magnitud 5,0 que tuvo su epicentro en la región costera cercana a Güiria, en el estado Sucre, en el oriente de Venezuela (Nuevo Dia). La misma información fue confirmada por Yaracuy al Dia, que también señaló la magnitud preliminar de 5,0 y la ubicación exacta del temblor (Yaracuy al Dia).\\n\\nA pesar del susto generado entre los residentes, no se reportaron daños significativos ni víctimas a consecuencia del sismo (Nuevo Dia). Las autoridades continúan monitoreando la zona y se mantiene la alerta para posibles réplicas, aunque hasta el momento no se han registrado consecuencias materiales mayores.",
+  "narrativa": "Durante el mes de octubre de 2026 el sistema de monitoreo registró un solo sismo, cifra que contrasta con los dos eventos reportados en septiembre del mismo año (comparación con el período anterior: 2 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl 2 de octubre se sintió un temblor de magnitud preliminar 5,0 cuyo epicentro se ubicó en la zona costera cercana a Güiria, en el estado Sucre (Nuevo Dia). La misma información fue confirmada por otro medio que describió el sismo como un fuerte temblor que sacudió el oriente venezolano (Yaracuy al Dia).\\n\\nA pesar del susto generado entre la población local, los reportes indican que no se registraron daños materiales significativos ni víctimas mortales ni heridos (Nuevo Dia). Los residentes abandonaron sus hogares en busca de lugares seguros, pero las autoridades no reportaron incidentes mayores (Yaracuy al Dia).\\n\\nEl Comité de la Cruz Roja Venezolana continuará vigilando la zona y mantendrá la alerta ante posibles réplicas, reforzando la comunicación con las autoridades locales para garantizar una respuesta rápida ante cualquier eventualidad.",
   "fuentes": [
     {
       "nombre": "Nuevo Dia (Falcon)",
