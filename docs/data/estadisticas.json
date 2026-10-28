@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-10-28T08:47:48.302119+00:00",
+  "actualizado": "2026-10-28T15:34:40.151070+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-28T01:18:32+00:00"
+    "hasta": "2026-10-28T14:35:12+00:00"
   },
-  "total_eventos": 553,
+  "total_eventos": 554,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 87,
+    "inundacion": 88,
     "infraestructura_electrica": 46,
     "deslizamiento": 40,
     "colapso_estructural": 5,
@@ -143,10 +143,10 @@
     },
     {
       "estado": "Trujillo",
-      "total": 19,
+      "total": 20,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 9,
+        "medio": 10,
         "bajo": 3,
         "critico": 1,
         "alto": 5,
@@ -370,7 +370,7 @@
       "infraestructura_agua": 2
     },
     "Trujillo": {
-      "inundacion": 2,
+      "inundacion": 3,
       "incendio": 5,
       "sequia": 1,
       "infraestructura_electrica": 1,
@@ -538,7 +538,7 @@
   "por_severidad": {
     "alto": 126,
     "critico": 67,
-    "medio": 192,
+    "medio": 193,
     "bajo": 149,
     "sin_clasificar": 19
   },
@@ -553,7 +553,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 16
+      "2026-10": 17
     },
     "infraestructura_electrica": {
       "2026-07": 1,
