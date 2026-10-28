@@ -76,6 +76,17 @@
   #mapa-venezuela .estado.sev-medio { fill:#f1c40f; }
   #mapa-venezuela .estado.sev-bajo { fill:#2ecc71; }
   #mapa-venezuela .estado.sev-sin_clasificar { fill:#4a5568; }
+  #mapa-venezuela .estado.cant-1 { fill:#1e3a5f; }
+  #mapa-venezuela .estado.cant-2 { fill:#2a5d8f; }
+  #mapa-venezuela .estado.cant-3 { fill:#3a82c0; }
+  #mapa-venezuela .estado.cant-4 { fill:#6aaee0; }
+  #mapa-venezuela .estado.cant-5 { fill:#b8dcf7; }
+  #mapa-modos { display:flex; gap:0.4rem; margin:0 0 0.5rem 0; }
+  #mapa-modos button {
+    background:#1c232c; color:#9aa4b2; border:1px solid #2a2f36; border-radius:4px;
+    padding:0.3rem 0.7rem; font-size:0.8rem; cursor:pointer;
+  }
+  #mapa-modos button.activo { background:#2a5d8f; color:#fff; border-color:#3a82c0; }
   #mapa-leyenda { display:flex; flex-wrap:wrap; gap:0.6rem; font-size:0.78rem; color:#9aa4b2; margin-top:0.5rem; }
   #mapa-leyenda .punto { display:inline-block; width:0.7rem; height:0.7rem; border-radius:50%; margin-right:0.3rem; vertical-align:middle; }
   #mapa-detalle { margin-top:0.5rem; min-height:2.4em; }
@@ -109,10 +120,18 @@
   <div class="tendencias-grid">
     <div><h3>Eventos por tipo</h3><div id="tend-por-tipo"></div></div>
     <div>
-      <h3>Eventos por estado y severidad</h3>
+      <h3 id="mapa-titulo">Eventos por estado y severidad</h3>
       <p id="mapa-periodo" class="meta" style="margin:0 0 0.4rem 0;">Cargando periodo...</p>
       <div id="mapa-venezuela-wrap">
+        <div id="mapa-modos" role="group" aria-label="Modo del mapa">
+          <button type="button" class="activo" data-modo="severidad">Severidad</button>
+          <button type="button" data-modo="cantidad">Cantidad de eventos</button>
+        </div>
         <div id="mapa-venezuela"></div>
+        <div id="mapa-leyenda-cantidad" style="display:none;margin-top:0.5rem;">
+          <div id="mapa-leyenda-cantidad-barra" style="height:0.6rem;border-radius:3px;background:linear-gradient(to right,#1e3a5f,#2a5d8f,#3a82c0,#6aaee0,#b8dcf7);"></div>
+          <div class="meta" style="display:flex;justify-content:space-between;gap:0.5rem;font-size:0.78rem;margin-top:0.2rem;text-align:center;"><span id="mapa-cant-min"></span><span>menos &rarr; más eventos (escala por cuantiles)</span><span id="mapa-cant-max"></span></div>
+        </div>
         <div id="mapa-leyenda">
           <span><i class="punto" style="background:#e74c3c"></i> Crítico</span>
           <span><i class="punto" style="background:#f39c12"></i> Alto</span>
@@ -374,18 +393,54 @@ function mostrarDetalleEstado(nombreEstado) {
   detalle.innerHTML = `<strong>${nombreEstado}</strong> — ${r.total} evento(s), ${r.confirmados} confirmado(s)<br>${desglose}`;
 }
 
+let modoMapa = 'severidad';
+
+// Clase 1..5 por cuantiles sobre los estados con eventos: una escala lineal
+// dejaria a casi todos los estados en el mismo tono por el valor atipico de
+// Distrito Capital. 1 = menos eventos (azul oscuro), 5 = mas (azul claro).
+function claseCantidad(total, totalesOrdenados) {
+  const n = totalesOrdenados.length;
+  const rango = totalesOrdenados.filter(t => t < total).length / n;
+  return Math.min(5, Math.floor(rango * 5) + 1);
+}
+
 function colorearMapa(ranking) {
   rankingEstadosActual = ranking;
   if (!mapaListo) return;
   const porEstado = Object.fromEntries(ranking.map(r => [r.estado, r]));
+  const totales = ranking.map(r => r.total).sort((a, b) => a - b);
+  const CLASES = ['sev-critico', 'sev-alto', 'sev-medio', 'sev-bajo', 'sev-sin_clasificar',
+                  'cant-1', 'cant-2', 'cant-3', 'cant-4', 'cant-5'];
   document.querySelectorAll('#mapa-venezuela .estado').forEach(path => {
-    path.classList.remove('sev-critico', 'sev-alto', 'sev-medio', 'sev-bajo', 'sev-sin_clasificar');
+    path.classList.remove(...CLASES);
     const r = porEstado[path.dataset.estado];
-    if (r) {
+    if (!r) return;
+    if (modoMapa === 'cantidad') {
+      path.classList.add('cant-' + claseCantidad(r.total, totales));
+    } else {
       path.classList.add('sev-' + r.severidad_dominante);
     }
   });
+  if (totales.length) {
+    document.getElementById('mapa-cant-min').textContent = totales[0];
+    document.getElementById('mapa-cant-max').textContent = totales[totales.length - 1];
+  }
 }
+
+function cambiarModoMapa(modo) {
+  modoMapa = modo;
+  document.querySelectorAll('#mapa-modos button').forEach(b =>
+    b.classList.toggle('activo', b.dataset.modo === modo));
+  const esCantidad = modo === 'cantidad';
+  document.getElementById('mapa-leyenda').style.display = esCantidad ? 'none' : 'flex';
+  document.getElementById('mapa-leyenda-cantidad').style.display = esCantidad ? 'block' : 'none';
+  document.getElementById('mapa-titulo').textContent =
+    esCantidad ? 'Eventos por estado (cantidad)' : 'Eventos por estado y severidad';
+  colorearMapa(rankingEstadosActual);
+}
+
+document.querySelectorAll('#mapa-modos button').forEach(b =>
+  b.addEventListener('click', () => cambiarModoMapa(b.dataset.modo)));
 
 cargarMapa();
 cargarTendencias();

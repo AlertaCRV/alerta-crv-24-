@@ -9872,3 +9872,7 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 ## Mejora web 28-10-2026: gráfica "Distribución de severidad" ordenada y con colores por severidad
 
 `docs/index.html`: las barras salían todas en verde y en el orden del JSON (alta, crítica, media...). Ahora van ordenadas de mayor a menor gravedad (crítica, alta, media, baja, sin clasificar) y coloreadas con la misma paleta del mapa (rojo, naranja, amarillo, verde, gris).
+
+## Mejora web 28-10-2026: modo "Cantidad de eventos" (mapa de calor) en el mapa del homepage
+
+`docs/index.html`: selector de dos modos sobre el mapa existente (Severidad, por defecto, y Cantidad de eventos) en vez de un segundo mapa. El modo Cantidad pinta cada estado con una gama azul de 5 clases por cuantiles (una escala lineal dejaba casi todos los estados en el mismo tono por el valor atípico de Distrito Capital: 96 eventos frente a una mediana de ~19), con leyenda de degradado y mínimo/máximo. El tooltip por estado se mantiene en ambos modos. No cambia el backend: usa `ranking_estados[].total` de `estadisticas.json`. Pendiente para una segunda fase (si se desea): filtro por tipo de emergencia en este modo usando `cruce_estado_tipo`.
