@@ -48,13 +48,6 @@
     "fecha_evento_temprana": "2026-10-28T16:29:58+00:00",
     "municipio": null
   },
-  "orden_publico::Lara::2026-10-28": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T20:35:17.038982+00:00",
-    "fecha_evento_temprana": "2026-10-28T17:40:56+00:00",
-    "municipio": null
-  },
   "accidente_transporte::Carabobo::2026-10-28": {
     "severidad": "critico",
     "confirmado": false,
@@ -67,7 +60,7 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-28T20:35:30.791140+00:00",
     "fecha_evento_temprana": "2026-10-28T19:08:45+00:00",
-    "municipio": "Cárdenas"
+    "municipio": null
   },
   "inundacion::Tachira::2026-10-28": {
     "severidad": "alto",
@@ -88,6 +81,6 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-28T20:38:09.143374+00:00",
     "fecha_evento_temprana": "2026-10-28T19:31:04+00:00",
-    "municipio": "Maracaibo"
+    "municipio": null
   }
 }

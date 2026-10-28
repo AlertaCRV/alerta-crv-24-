@@ -9890,3 +9890,15 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 28-10-2026: etiqueta de severidad junto a la gravedad promedio en el tooltip
 
 `docs/index.html`: el tooltip del mapa muestra "Gravedad promedio: 2.8 / 4 (Alto)", con la etiqueta de `severidad_mapa`, para que el número se relacione con los colores/tramos del mapa.
+
+## Auditoría diaria 28-10-2026 (2.ª corrida): municipio por accidente geográfico/firma de autor y memorial de víctimas con severidad crítica
+
+**Hallazgos** (alertas del 28-10 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`ataque_armado::Zulia`** (Yaracuy al Día): mina antipersonal en Casigua El Cubo, municipio Jesús María Semprún; el municipio "Maracaibo" salía de "al sur del lago de Maracaibo".
+2. **`orden_publico::Tachira`** (Diario La Nación): protesta de jubilados de Cantv en Barrio Obrero; el municipio "Cárdenas" salía de la firma del autor "(María Cárdenas)".
+3. **`orden_publico::Lara`** (Runrun.es): acto de memoria de familiares de asesinados en las protestas de 2014 y 2017 ("Al cumplirse 14 y 9 años…") publicado como orden público CRÍTICO; no es una emergencia nueva.
+- **Causa raíz**: (1, 2) el municipio solo se validaba por aparecer textualmente en la fuente; (3) el patrón de retrospectiva solo contemplaba "a/al cumplirse N años de" con una cifra.
+- **Corrección**: `verify_ai._solo_en_contexto_no_territorial` (descarta municipio/parroquia si todas las menciones son "lago/golfo/bahía/laguna de X" o una firma "(Nombre X)") y nueva alternativa en `_PATRON_RETROSPECTIVA` para "al cumplirse N y N años". Test nuevo en `tests/test_verify_ai_filtros.py`; verificado que ningún otro registro del histórico queda afectado.
+- **Corrección retroactiva**: municipio → null en las alertas Zulia y Táchira (`noticias.json` título/texto, `historico_eventos.jsonl`, `publicados.json`); retirada la alerta de Lara de `noticias.json`, históricos y `publicados.json`; `estadisticas.json` regenerado.
+
+**Revisado y sin cambios**: PNB/sindicatos en La Candelaria (3 fuentes, heridos respaldados), naufragio Carlos Arvelo (3 fallecidos), inundación Táchira (texto guardado de una línea; severidad "alto" no verificable, a vigilar), jubilados Cantv Anzoátegui. Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo Base Aérea).
