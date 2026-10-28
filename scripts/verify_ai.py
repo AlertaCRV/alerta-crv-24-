@@ -82,6 +82,11 @@ _PATRON_RETROSPECTIVA = re.compile(
     rf"\b(a|al cumplirse)\s+{_CUALIFICADOR_APROX}{_NUMEROS}\s+"
     r"(dia|dias|semana|semanas|mes|meses|ano|anos)\s+(del|de|despues)\b"
     r"|\baniversario\b"
+    # Caso real (28-10-2026, Runrun.es): "Al cumplirse 14 y 9 anos de las
+    # protestas anti-PSUV del 2014 y 2017" -- un acto de memoria de
+    # familiares de victimas de protestas pasadas se publico como orden
+    # publico CRITICO en Lara. Variante con DOS cifras de aniversario.
+    rf"|\bal cumplirse\s+{_NUMEROS}\s+y\s+{_NUMEROS}\s+anos\b"
     rf"|\b{_NUMEROS}\s+(mes|meses|ano|anos)\s+despues\b"
     # "doble sismo"/"doblete sismico"/"doble terremoto" son los nombres
     # con que los medios venezolanos se refieren al sismo doble de La
@@ -1159,6 +1164,15 @@ def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_valido
         evento["municipio"] = municipio_ia
     if evento.get("parroquia") is None and parroquia_ia:
         evento["parroquia"] = parroquia_ia
+    if evento.get("municipio") and _solo_en_contexto_no_territorial(
+        evento["municipio"], texto_fuentes_norm
+    ):
+        print(
+            f"[WARN] Municipio '{evento['municipio']}' solo aparece como "
+            f"accidente geografico o firma de autor; se descarta."
+        )
+        evento["municipio"] = None
+        evento["parroquia"] = None
     if evento.get("municipio") and _solo_en_contexto_de_vigilancia(
         evento["municipio"], texto_fuentes_norm
     ):
@@ -1196,6 +1210,28 @@ def _solo_en_contexto_de_vigilancia(nombre, texto_norm, antes=40, despues=70):
         if not any(m in contexto for m in _MARCAS_VIGILANCIA):
             return False
         inicio = i + len(nombre_norm)
+
+
+def _solo_en_contexto_no_territorial(nombre, texto_norm):
+    """True si TODAS las menciones del municipio son parte de un accidente
+    geografico ("lago de Maracaibo", "golfo de Venezuela") o de la firma de
+    un autor ("(Maria Cardenas)"), no el lugar del evento. Casos reales
+    (28-10-2026): mina en Casigua El Cubo (Jesus Maria Semprun) publicada en
+    el municipio Maracaibo por "al sur del lago de Maracaibo", y protesta
+    en San Cristobal publicada en el municipio Cardenas por la firma
+    "(Maria Cardenas)"."""
+    n = re.escape(_normalizar(nombre))
+    no_territorial = re.compile(
+        rf"\b(?:lago|golfo|bahia|laguna)\s+de\s+{n}\b"
+        rf"|\(\s*[a-z]+(?:\s+[a-z]+)?\s+{n}\s*\)"
+    )
+    todas = [m.start() for m in re.finditer(rf"\b{n}\b", texto_norm)]
+    if not todas:
+        return False
+    cubiertas = set()
+    for r in no_territorial.finditer(texto_norm):
+        cubiertas.update(m.start() + r.start() for m in re.finditer(rf"\b{n}\b", r.group(0)))
+    return all(i in cubiertas for i in todas)
 
 
 def _reconciliar_municipio_parroquia(evento):

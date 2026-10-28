@@ -718,3 +718,16 @@ def test_municipio_solo_en_contexto_de_vigilancia():
     assert not _solo_en_contexto_de_vigilancia("Urdaneta", texto)
     real = _normalizar("Inundaciones en Rafael Rangel dejan 20 viviendas afectadas.")
     assert not _solo_en_contexto_de_vigilancia("Rafael Rangel", real)
+
+
+def test_municipio_solo_en_contexto_no_territorial():
+    from verify_ai import _solo_en_contexto_no_territorial, _normalizar, _es_retrospectiva_obvia
+    lago = _normalizar("Perdio una pierna en Casigua El Cubo, municipio Jesus Maria Semprun, "
+                       "al sur del lago de Maracaibo.")
+    assert _solo_en_contexto_no_territorial("Maracaibo", lago)
+    assert not _solo_en_contexto_no_territorial("Jesus Maria Semprun", lago)
+    firma = _normalizar("Jubilados protestan en Barrio Obrero. (Maria Cardenas)")
+    assert _solo_en_contexto_no_territorial("Cardenas", firma)
+    real = _normalizar("Ataque en Maracaibo; el lago de Maracaibo estaba en calma.")
+    assert not _solo_en_contexto_no_territorial("Maracaibo", real)
+    assert _es_retrospectiva_obvia("Al cumplirse 14 y 9 años de las protestas del 2014 y 2017")
