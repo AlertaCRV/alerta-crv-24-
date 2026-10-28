@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-24T12:01:40.793816+00:00",
-  "actualizado_hasta": "2026-10-24T01:54:48.941285+00:00",
-  "total_eventos": 66,
+  "generado": "2026-10-28T08:50:45.321821+00:00",
+  "actualizado_hasta": "2026-10-27T23:13:05.556943+00:00",
+  "total_eventos": 69,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 66
+    "actual": 69
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 66 incidentes de orden público, una disminución respecto a los 76 ocurridos en septiembre de 2026 (comparación proporcionada). La reducción no implicó una menor gravedad, pues varios eventos alcanzaron severidad alta o crítica, generando muertos, heridos y daños materiales.\n\nEn Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC terminó con la muerte de los cuatro individuos en el sector 18 de Octubre (Diario El Vistazo (Anzoategui)). En el estado Táchira, el soldado Raymond Paz abrió fuego dentro de la Base Aérea \"Mayor Buenaventura Vivas Guerrero\", provocando la muerte de tres militares y hiriendo a otros tres; el agresor fue capturado posteriormente (El Pitazo; Diario La Nacion (Tachira); Nuevo Dia (Falcon)).\n\nLas protestas por los constantes cortes eléctricos se intensificaron en varios estados. En Zulia, la Guardia Nacional reprimió al menos cinco manifestaciones nocturnas el 30 de septiembre, parte de una serie de 20 protestas en siete estados (El Pitazo). En Carabobo, manifestantes bloquearon la ARC de Guacara, Yagua y Malavé, generando fuerte tráfico (El Impulso (Lara)). En Guárico y Lara se registraron protestas nocturnas contra los racionamientos de energía, con bloqueos de avenidas y carreteras (La Prensa de Lara; Notiapure). \n\nEn Portuguesa, agricultores y productores de arroz se movilizaron en la autopista José Antonio Páez frente a una torrefactora en Araure, exigiendo el cumplimiento de precios acordados, lo que derivó en disturbios de orden público (Turimiquire (Sucre); Portuguesa Reporta; La Prensa de Lara). En Yaracuy, la situación alcanzó nivel crítico, con enfrentamientos que dejaron víctimas y daños materiales (Yaracuy al Dia). En Lara, la crisis eléctrica disparó la conflictividad, multiplicando las protestas en septiembre y manteniéndose en octubre (Notiapure). \n\nA pesar de la reducción numérica de incidentes respecto al mes anterior, la concentración de hechos de alta y crítica severidad indica que la tensión social vinculada a la escasez eléctrica y a episodios de violencia armada sigue siendo elevada, demandando una respuesta coordinada de las autoridades y de la Cruz Roja Venezolana para atender a los heridos y mitigar los daños materiales.",
+  "narrativa": "En el mes de octubre de 2026 se registraron 69 eventos de orden público, una disminución respecto a los 76 ocurridos en septiembre de 2026 (comparación proporcionada). Los incidentes se concentraron en varios estados del país, con diferentes niveles de severidad que van desde \"alto\" hasta \"crítico\".\n\nEn Zulia, la Guardia Nacional reprimió al menos cinco protestas nocturnas contra los cortes eléctricos, generando enfrentamientos con manifestantes (El Pitazo). En Guárico, se reportaron protestas similares en la misma jornada, también vinculadas a la demanda de restablecimiento del suministro eléctrico (El Pitazo). En Carabobo, manifestaciones por racionamientos eléctricos colapsaron la Autopista Regional del Centro (ARC), provocando congestión vehicular y alteraciones del orden público (El Impulso (Lara)). En Lara, la crisis eléctrica disparó la conflictividad social, con protestas que se multiplicaron y generaron enfrentamientos en distintas localidades (Notiapure).\n\nEn Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC terminó con la muerte de los cuatro individuos en el sector 18 de Octubre (Diario El Vistazo (Anzoátegui)). En Yaracuy, se informó de un hecho de orden público de carácter crítico, según el medio Yaracuy al Día (Yaracuy al Dia). En el estado Portuguesa, varios medios señalaron la ocurrencia de incidentes de orden público de severidad alta: Turimiquire (Sucre) informó sobre uno de ellos, Portuguesa Reporta describió otro, y La Prensa de Lara también registró un hecho de este tipo (Turimiquire (Sucre); Portuguesa Reporta; La Prensa de Lara).\n\nTáchira fue escenario de varios eventos críticos. El 21 de octubre, el soldado Raymond Paz abrió fuego en la Base Aérea \"Mayor Buenaventura Vivas Guerrero\", matando a tres compañeros y hiriendo a otros tres, lo que llevó a la declaración de estado de alerta en la base (Diario La Nación (Táchira); El Pitazo). Posteriormente, el mismo soldado fue capturado en una zona boscosa de la base, según informó el gobernador Freddy Bernal (El Pitazo). Otros medios, como Nuevo Día (Falcón), también reportaron la gravedad de los hechos en Táchira (Nuevo Dia (Falcon)).",
   "fuentes": [
     {
       "nombre": "Diario El Vistazo (Anzoategui)",
@@ -106,6 +106,10 @@
       "link": "https://www.elimpulso.com/2026/10/23/liberan-a-siete-trabajadores-detenidos-tras-marcha-opositora-en-caracas-pero-confirman-la-incautacion-de-sus-equipos-23oct/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/10/27/video-familias-de-caidos-en-las-protestas-de-2017-se-movilizan-en-barquisimeto-tras-anos-de-paralizacion-judicial-27oct/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/caficultores-de-portuguesa-y-lara-denuncian-incumplimiento-de-precios-acordados-y-anuncian-movilizacion/"
     },
@@ -138,12 +142,8 @@
       "link": "https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/"
     },
     {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/gremios-marcharon-en-carupano-para-apoyar-peticiones-salariales-al-gobierno-nacional-fotos/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/tras-mas-de-tres-meses-sin-respuesta-jubilados-de-la-cantv-protestaron-otra-vez-en-puerto-la-cruz-fotos/"
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/ola-de-protestas-y-cacerolazos-sacude-al-centro-occidente-del-pais-por-apagones-prolongados/"
     }
   ]
 }

@@ -1,5 +1,114 @@
 [
   {
+    "tipo": "inundacion",
+    "ubicacion": "Trujillo",
+    "municipio": "Rafael Rangel",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/proteccion-civil-mantiene-monitoreo-preventivo-por-lluvias-en-trujillo/",
+        "fecha": "2026-10-28T14:35:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-28T14:35:12+00:00",
+    "fecha_evento_temprana": "2026-10-28T14:35:12+00:00",
+    "fecha_deteccion": "2026-10-28T15:34:39.604326+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Trujillo::2026-10-28",
+    "titulo": "Inundación en Municipio Rafael Rangel, Trujillo",
+    "texto": "📌 Inundación en Municipio Rafael Rangel, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Rafael Rangel, Trujillo\n🕒 Hecho reportado: 28/10/2026, 10:35 a.m.\n🔎 Detectado por el sistema: 28/10/2026, 11:34 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/proteccion-civil-mantiene-monitoreo-preventivo-por-lluvias-en-trujillo/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Zulia",
+    "municipio": "Cabimas",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/",
+        "fecha": "2026-10-27T20:50:11+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/",
+        "fecha": "2026-10-28T01:18:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-28T01:18:32+00:00",
+    "fecha_evento_temprana": "2026-10-27T20:50:11+00:00",
+    "fecha_deteccion": "2026-10-28T08:46:56.009135+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Zulia::2026-10-27",
+    "titulo": "Inundación en Municipio Cabimas, Zulia",
+    "texto": "📌 Inundación en Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/10/2026, 9:18 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 4:46 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Anzoategui",
+    "municipio": "Simón Rodríguez",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/comunidades-de-el-tigre-se-vieron-afectadas-por-presencia-de-humo-tras-incendio-de-vegetacion/",
+        "fecha": "2026-10-27T17:05:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-27T17:05:17+00:00",
+    "fecha_evento_temprana": "2026-10-27T17:05:17+00:00",
+    "fecha_deteccion": "2026-10-27T23:13:00.824254+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Anzoategui::2026-10-27",
+    "titulo": "Incendio en Municipio Simón Rodríguez, Anzoategui",
+    "texto": "📌 Incendio en Municipio Simón Rodríguez, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Simón Rodríguez, Anzoategui\n🕒 Hecho reportado: 27/10/2026, 1:05 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 7:13 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/comunidades-de-el-tigre-se-vieron-afectadas-por-presencia-de-humo-tras-incendio-de-vegetacion/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/10/27/video-familias-de-caidos-en-las-protestas-de-2017-se-movilizan-en-barquisimeto-tras-anos-de-paralizacion-judicial-27oct/",
+        "fecha": "2026-10-27T22:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-27T22:00:00+00:00",
+    "fecha_evento_temprana": "2026-10-27T22:00:00+00:00",
+    "fecha_deteccion": "2026-10-27T23:13:05.556943+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-10-27",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 27/10/2026, 6:00 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 7:13 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/27/video-familias-de-caidos-en-las-protestas-de-2017-se-movilizan-en-barquisimeto-tras-anos-de-paralizacion-judicial-27oct/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Falcon",
     "municipio": "Cacique Manaure",
@@ -24,37 +133,6 @@
     "clave_dedup": "orden_publico::Falcon::2026-10-27",
     "titulo": "Orden público en Municipio Cacique Manaure, Falcon",
     "texto": "📌 Orden público en Municipio Cacique Manaure, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Cacique Manaure, Falcon\n🕒 Hecho reportado: 27/10/2026, 12:12 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 3:36 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/ola-de-protestas-y-cacerolazos-sacude-al-centro-occidente-del-pais-por-apagones-prolongados/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Zulia",
-    "municipio": "Cabimas",
-    "parroquia": "Ambrosio",
-    "severidad": "medio",
-    "score": 1.3,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/occidente/zulia-lluvias-afectan-a-maracaibo-y-la-col-hay-calles-anegadas-y-viviendas-inundadas/",
-        "fecha": "2026-10-27T15:39:14+00:00"
-      },
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/fuertes-lluvias-sorprendieron-habitantes-zulia/",
-        "fecha": "2026-10-27T16:45:19+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-27T16:45:19+00:00",
-    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
-    "fecha_deteccion": "2026-10-27T19:36:44.479975+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Zulia::2026-10-27",
-    "titulo": "Inundación en Parroquia Ambrosio, Municipio Cabimas, Zulia",
-    "texto": "📌 Inundación en Parroquia Ambrosio, Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Ambrosio, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/10/2026, 12:45 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 3:36 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-lluvias-afectan-a-maracaibo-y-la-col-hay-calles-anegadas-y-viviendas-inundadas/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fuertes-lluvias-sorprendieron-habitantes-zulia/"
   },
   {
     "tipo": "infraestructura_electrica",
@@ -1448,176 +1526,5 @@
     "clave_dedup": "orden_publico::Lara::2026-10-14",
     "titulo": "Orden público en Lara",
     "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 14/10/2026, 3:17 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 3:32 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/locales/gremios-y-sindicatos-toman-las-calles/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "Candelaria",
-    "severidad": "bajo",
-    "score": 1.15,
-    "confirmado": false,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Verdad de Vargas",
-        "link": "https://laverdaddevargas.com/trabajadores-se-movilizaron-por-salarios-justos/",
-        "fecha": "2026-10-13T20:04:01+00:00"
-      },
-      {
-        "nombre": "La Manana (Falcon)",
-        "link": "https://lamananadigital.com/pnb-bloqueo-marcha-de-trabajadores-en-caracas-una-comision-de-los-manifestantes-entrego-documento-en-miraflores/",
-        "fecha": "2026-10-13T17:40:55+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T20:04:01+00:00",
-    "fecha_evento_temprana": "2026-10-13T17:40:55+00:00",
-    "fecha_deteccion": "2026-10-14T05:17:50.528874+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Distrito Capital::2026-10-13",
-    "titulo": "Orden público en Parroquia Candelaria, Distrito Capital",
-    "texto": "📌 Orden público en Parroquia Candelaria, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Candelaria, Distrito Capital\n🕒 Hecho reportado: 13/10/2026, 4:04 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 1:17 a.m.\n📊 Fuentes independientes: 2 (score 1.15)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Verdad de Vargas: https://laverdaddevargas.com/trabajadores-se-movilizaron-por-salarios-justos/\n  • La Manana (Falcon): https://lamananadigital.com/pnb-bloqueo-marcha-de-trabajadores-en-caracas-una-comision-de-los-manifestantes-entrego-documento-en-miraflores/"
-  },
-  {
-    "tipo": "infraestructura_agua",
-    "ubicacion": "Apure",
-    "municipio": "Achaguas",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/apure/instalan-equipo-sumergible-en-pozo-el-concentrado-de-achaguas-y-benefician-a-480-familias/",
-        "fecha": "2026-10-14T01:45:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-14T01:45:20+00:00",
-    "fecha_evento_temprana": "2026-10-14T01:45:20+00:00",
-    "fecha_deteccion": "2026-10-14T05:18:03.795164+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_agua::Apure::2026-10-14",
-    "titulo": "Falla de agua en Municipio Achaguas, Apure",
-    "texto": "📌 Falla de agua en Municipio Achaguas, Apure\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Achaguas, Apure\n🕒 Hecho reportado: 13/10/2026, 9:45 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 1:18 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/apure/instalan-equipo-sumergible-en-pozo-el-concentrado-de-achaguas-y-benefician-a-480-familias/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/guayana/regiones/apagon-afecta-a-sectores-de-ciudad-bolivar-este-martes/",
-        "fecha": "2026-10-14T01:38:41+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-14T01:38:41+00:00",
-    "fecha_evento_temprana": "2026-10-14T01:38:41+00:00",
-    "fecha_deteccion": "2026-10-14T05:18:16.589916+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Bolivar::2026-10-14",
-    "titulo": "Falla eléctrica en Bolivar",
-    "texto": "📌 Falla eléctrica en Bolivar\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 13/10/2026, 9:38 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 1:18 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/regiones/apagon-afecta-a-sectores-de-ciudad-bolivar-este-martes/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": "Payara",
-    "severidad": "medio",
-    "score": 2.05,
-    "confirmado": true,
-    "num_fuentes": 3,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/",
-        "fecha": "2026-10-13T20:10:49+00:00"
-      },
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/agricultura/protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas/?utm_source=rss&utm_medium=rss&utm_campaign=protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas",
-        "fecha": "2026-10-13T18:57:30+00:00"
-      },
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/",
-        "fecha": "2026-10-13T19:16:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T20:10:49+00:00",
-    "fecha_evento_temprana": "2026-10-13T18:57:30+00:00",
-    "fecha_deteccion": "2026-10-13T21:16:23.148078+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-10-13",
-    "titulo": "Orden público en Parroquia Payara, Portuguesa",
-    "texto": "📌 Orden público en Parroquia Payara, Portuguesa\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Payara, Portuguesa\n🕒 Hecho reportado: 13/10/2026, 4:10 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:16 p.m.\n📊 Fuentes independientes: 3 (score 2.05)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas/?utm_source=rss&utm_medium=rss&utm_campaign=protesta-de-productores-bloquean-accesos-a-plantas-industriales-por-desplome-de-precios-e-importaciones-masivas\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/13/productores-de-arroz-toman-calles-de-acarigua-y-araure-en-masiva-protesta-de-productores-agricolas-en-portuguesa/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Sucre",
-    "municipio": "Bermúdez",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/gremios-marcharon-en-carupano-para-apoyar-peticiones-salariales-al-gobierno-nacional-fotos/",
-        "fecha": "2026-10-13T17:39:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T17:39:06+00:00",
-    "fecha_evento_temprana": "2026-10-13T17:39:06+00:00",
-    "fecha_deteccion": "2026-10-13T21:17:35.984533+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Sucre::2026-10-13",
-    "titulo": "Orden público en Municipio Bermúdez, Sucre",
-    "texto": "📌 Orden público en Municipio Bermúdez, Sucre\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Bermúdez, Sucre\n🕒 Hecho reportado: 13/10/2026, 1:39 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:17 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/gremios-marcharon-en-carupano-para-apoyar-peticiones-salariales-al-gobierno-nacional-fotos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/10/13/video-sindicatos-de-la-educacion-en-lara-se-suman-a-la-protesta-nacional-por-sueldos-dignos-y-beneficios-laborales-13oct/",
-        "fecha": "2026-10-13T21:00:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-13T21:00:27+00:00",
-    "fecha_evento_temprana": "2026-10-13T21:00:27+00:00",
-    "fecha_deteccion": "2026-10-13T21:18:00.605045+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-10-13",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 13/10/2026, 5:00 p.m.\n🔎 Detectado por el sistema: 13/10/2026, 5:18 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/13/video-sindicatos-de-la-educacion-en-lara-se-suman-a-la-protesta-nacional-por-sueldos-dignos-y-beneficios-laborales-13oct/"
   }
 ]

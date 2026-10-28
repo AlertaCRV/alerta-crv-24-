@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-10-27T19:37:16.374873+00:00",
+  "actualizado": "2026-10-28T15:34:40.151070+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-27T16:45:19+00:00"
+    "hasta": "2026-10-28T14:35:12+00:00"
   },
-  "total_eventos": 548,
+  "total_eventos": 554,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 84,
+    "inundacion": 88,
     "infraestructura_electrica": 46,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 190,
+    "orden_publico": 191,
     "salud_publica": 26,
     "crisis_migratoria": 7,
-    "incendio": 60,
+    "incendio": 61,
     "vialidad": 26,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -43,27 +43,27 @@
     },
     {
       "estado": "Lara",
-      "total": 47,
+      "total": 48,
       "confirmados": 2,
       "por_severidad": {
         "critico": 4,
         "alto": 10,
         "medio": 19,
-        "bajo": 11,
+        "bajo": 12,
         "sin_clasificar": 3
       },
       "severidad_dominante": "critico"
     },
     {
       "estado": "Zulia",
-      "total": 44,
-      "confirmados": 8,
+      "total": 47,
+      "confirmados": 10,
       "por_severidad": {
-        "medio": 19,
+        "medio": 21,
         "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 9
+        "alto": 10
       },
       "severidad_dominante": "critico"
     },
@@ -143,10 +143,10 @@
     },
     {
       "estado": "Trujillo",
-      "total": 19,
+      "total": 20,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 9,
+        "medio": 10,
         "bajo": 3,
         "critico": 1,
         "alto": 5,
@@ -215,6 +215,18 @@
       "severidad_dominante": "alto"
     },
     {
+      "estado": "Anzoategui",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 5,
+        "medio": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Carabobo",
       "total": 14,
       "confirmados": 1,
@@ -223,18 +235,6 @@
         "bajo": 4,
         "medio": 5,
         "critico": 2
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 14,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 5,
-        "medio": 5
       },
       "severidad_dominante": "critico"
     },
@@ -330,7 +330,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 21,
+      "orden_publico": 22,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -344,7 +344,7 @@
       "tormenta_electrica": 2,
       "infraestructura_electrica": 5,
       "colapso_estructural": 1,
-      "inundacion": 3,
+      "inundacion": 6,
       "sequia": 1,
       "orden_publico": 18,
       "sismo": 2,
@@ -370,7 +370,7 @@
       "infraestructura_agua": 2
     },
     "Trujillo": {
-      "inundacion": 2,
+      "inundacion": 3,
       "incendio": 5,
       "sequia": 1,
       "infraestructura_electrica": 1,
@@ -408,7 +408,7 @@
       "orden_publico": 5,
       "infraestructura_agua": 2,
       "inundacion": 3,
-      "incendio": 1,
+      "incendio": 2,
       "infraestructura_electrica": 1
     },
     "Tachira": {
@@ -536,10 +536,10 @@
     }
   },
   "por_severidad": {
-    "alto": 125,
+    "alto": 126,
     "critico": 67,
-    "medio": 189,
-    "bajo": 148,
+    "medio": 193,
+    "bajo": 149,
     "sin_clasificar": 19
   },
   "serie_mensual_por_tipo": {
@@ -553,7 +553,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 13
+      "2026-10": 17
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -577,7 +577,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 68
+      "2026-10": 69
     },
     "salud_publica": {
       "2026-07": 1,
@@ -595,7 +595,7 @@
       "2026-07": 3,
       "2026-08": 19,
       "2026-09": 19,
-      "2026-10": 19
+      "2026-10": 20
     },
     "vialidad": {
       "2026-08": 10,
