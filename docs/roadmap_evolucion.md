@@ -9876,3 +9876,7 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 ## Mejora web 28-10-2026: modo "Cantidad de eventos" (mapa de calor) en el mapa del homepage
 
 `docs/index.html`: selector de dos modos sobre el mapa existente (Severidad, por defecto, y Cantidad de eventos) en vez de un segundo mapa. El modo Cantidad pinta cada estado con una gama azul de 5 clases por cuantiles (una escala lineal dejaba casi todos los estados en el mismo tono por el valor atípico de Distrito Capital: 96 eventos frente a una mediana de ~19), con leyenda de degradado y mínimo/máximo. El tooltip por estado se mantiene en ambos modos. No cambia el backend: usa `ranking_estados[].total` de `estadisticas.json`. Pendiente para una segunda fase (si se desea): filtro por tipo de emergencia en este modo usando `cruce_estado_tipo`.
+
+## Ajuste web 28-10-2026: escala del modo "Cantidad de eventos" en morados, de claro (pocos) a oscuro (muchos)
+
+La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés de la convención de los mapas de calor. Ahora es una escala morada secuencial (`#ede9fe` → `#4c1d95`): más oscuro = más eventos. Se eligió el morado para no confundirse con la paleta de severidad (rojo/naranja/amarillo/verde/gris).

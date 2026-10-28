@@ -76,11 +76,11 @@
   #mapa-venezuela .estado.sev-medio { fill:#f1c40f; }
   #mapa-venezuela .estado.sev-bajo { fill:#2ecc71; }
   #mapa-venezuela .estado.sev-sin_clasificar { fill:#4a5568; }
-  #mapa-venezuela .estado.cant-1 { fill:#1e3a5f; }
-  #mapa-venezuela .estado.cant-2 { fill:#2a5d8f; }
-  #mapa-venezuela .estado.cant-3 { fill:#3a82c0; }
-  #mapa-venezuela .estado.cant-4 { fill:#6aaee0; }
-  #mapa-venezuela .estado.cant-5 { fill:#b8dcf7; }
+  #mapa-venezuela .estado.cant-1 { fill:#ede9fe; }
+  #mapa-venezuela .estado.cant-2 { fill:#c4b5fd; }
+  #mapa-venezuela .estado.cant-3 { fill:#a78bfa; }
+  #mapa-venezuela .estado.cant-4 { fill:#7c3aed; }
+  #mapa-venezuela .estado.cant-5 { fill:#4c1d95; }
   #mapa-modos { display:flex; gap:0.4rem; margin:0 0 0.5rem 0; }
   #mapa-modos button {
     background:#1c232c; color:#9aa4b2; border:1px solid #2a2f36; border-radius:4px;
@@ -129,7 +129,7 @@
         </div>
         <div id="mapa-venezuela"></div>
         <div id="mapa-leyenda-cantidad" style="display:none;margin-top:0.5rem;">
-          <div id="mapa-leyenda-cantidad-barra" style="height:0.6rem;border-radius:3px;background:linear-gradient(to right,#1e3a5f,#2a5d8f,#3a82c0,#6aaee0,#b8dcf7);"></div>
+          <div id="mapa-leyenda-cantidad-barra" style="height:0.6rem;border-radius:3px;background:linear-gradient(to right,#ede9fe,#c4b5fd,#a78bfa,#7c3aed,#4c1d95);"></div>
           <div class="meta" style="display:flex;justify-content:space-between;gap:0.5rem;font-size:0.78rem;margin-top:0.2rem;text-align:center;"><span id="mapa-cant-min"></span><span>menos &rarr; más eventos (escala por cuantiles)</span><span id="mapa-cant-max"></span></div>
         </div>
         <div id="mapa-leyenda">
@@ -397,7 +397,7 @@ let modoMapa = 'severidad';
 
 // Clase 1..5 por cuantiles sobre los estados con eventos: una escala lineal
 // dejaria a casi todos los estados en el mismo tono por el valor atipico de
-// Distrito Capital. 1 = menos eventos (azul oscuro), 5 = mas (azul claro).
+// Distrito Capital. 1 = menos eventos (morado claro), 5 = mas (morado oscuro).
 function claseCantidad(total, totalesOrdenados) {
   const n = totalesOrdenados.length;
   const rango = totalesOrdenados.filter(t => t < total).length / n;
