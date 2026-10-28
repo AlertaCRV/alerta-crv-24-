@@ -9851,3 +9851,12 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 **Revisado** (alertas del 24-27/10 contrastadas con `historico_fuentes_texto.jsonl`): inundación Zulia (Cabimas/Ambrosio respaldado por Protección Civil), orden público Falcón (Cacique Manaure aparece en el texto, aunque la nota cubre también Coro, Morón y Carabobo), electricidad Distrito Capital/Lara, salud pública Táchira/Bolívar: sin cambios.
 
 **Pendiente de decidir — `orden_publico::Tachira::2026-10-24`** (La Prensa de Monagas, "Detenido el soldado Raymond Paz por el tiroteo en la Base Aérea de Táchira"): el texto guardado es solo un fragmento sin víctimas ni detalles. Un tiroteo cometido por un soldado en una base militar podría ser `ataque_armado` y con severidad mayor a "bajo", pero con el texto disponible no se puede confirmar. No se corrigió; a la espera de ver la nota completa o de la decisión del usuario.
+
+## Auditoría diaria 28-10-2026: municipio "bajo vigilancia" publicado como municipio del evento (Trujillo)
+
+**Hallazgo**: `inundacion::Trujillo::2026-10-28` (Diario El Tiempo, Trujillo) se publicó con municipio "Rafael Rangel", pero la nota de Protección Civil ubica los deslizamientos y crecidas en Urdaneta y José Felipe Márquez Cañizales; Rafael Rangel (con Campo Elías) solo "se mantuvo bajo estricta observación" por la persistencia de las lluvias.
+- **Causa raíz**: `_aplicar_ubicacion_ia` solo exigía que el municipio propuesto apareciera textualmente en la fuente, sin distinguir menciones de vigilancia preventiva.
+- **Corrección**: `verify_ai._solo_en_contexto_de_vigilancia` — si todas las menciones del municipio caen junto a marcas de vigilancia/observación/monitoreo preventivo, se descarta municipio (y parroquia). Test nuevo en `tests/test_verify_ai_filtros.py`.
+- **Corrección retroactiva**: municipio → null en `noticias.json` (título y texto), `historico_eventos.jsonl` y `publicados.json`; `estadisticas.json` regenerado.
+
+**Revisado y sin cambios**: inundación Zulia (Cabimas, 23 comunidades anegadas), incendio de vegetación El Tigre, orden público Lara (familiares de 2017) y Falcón. Sigue pendiente de decidir `orden_publico::Tachira::2026-10-24` (tiroteo en la Base Aérea; ver 27-10: texto guardado insuficiente para confirmar tipo/severidad).
