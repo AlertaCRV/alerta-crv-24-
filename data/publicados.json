@@ -1,11 +1,4 @@
 {
-  "salud_publica::Tachira::2026-10-23": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-25T06:11:25.869446+00:00",
-    "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
-    "municipio": "Fernández Feo"
-  },
   "infraestructura_electrica::Lara::2026-10-27": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -21,10 +14,10 @@
     "municipio": "Cacique Manaure"
   },
   "inundacion::Zulia::2026-10-27": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": true,
-    "fecha_deteccion": "2026-10-28T02:18:37.718955+00:00",
-    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
+    "fecha_deteccion": "2026-10-28T08:46:56.009135+00:00",
+    "fecha_evento_temprana": "2026-10-27T20:50:11+00:00",
     "municipio": "Cabimas"
   },
   "incendio::Anzoategui::2026-10-27": {
