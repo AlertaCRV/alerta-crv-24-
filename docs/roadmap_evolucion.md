@@ -9864,3 +9864,11 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 ## Mejora web 28-10-2026: tooltip de estadísticas al pasar el cursor sobre un estado del mapa
 
 `docs/index.html`: al posar el cursor sobre un estado del mapa aparece un tooltip flotante que sigue al cursor con el total de eventos, confirmados, desglose por severidad y los 3 tipos principales (`cruce_estado_tipo`). Se retiran los `<title>` nativos del SVG para evitar doble tooltip; el panel `#mapa-detalle` se mantiene para táctil (clic).
+
+## Mejora web 28-10-2026: gráfica "Distribución de severidad" ordenada y con colores por severidad
+
+`docs/index.html`: las barras salían todas en verde y en el orden del JSON (alta, crítica, media...). Ahora van ordenadas de mayor a menor gravedad (crítica, alta, media, baja, sin clasificar) y coloreadas con la misma paleta del mapa (rojo, naranja, amarillo, verde, gris).
+
+## Mejora web 28-10-2026: gráfica "Distribución de severidad" ordenada y con colores por severidad
+
+`docs/index.html`: las barras salían todas en verde y en el orden del JSON (alta, crítica, media...). Ahora van ordenadas de mayor a menor gravedad (crítica, alta, media, baja, sin clasificar) y coloreadas con la misma paleta del mapa (rojo, naranja, amarillo, verde, gris).
