@@ -104,6 +104,14 @@
     "total_eventos": 5
   },
   {
+    "periodo": "2026-10",
+    "tipo": "accidente_transporte",
+    "tipo_label": "Accidente de transporte",
+    "cerrado": false,
+    "generado": "2026-10-28T20:39:11.355905+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-09",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

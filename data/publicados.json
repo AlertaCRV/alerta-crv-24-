@@ -40,5 +40,54 @@
     "fecha_deteccion": "2026-10-28T15:34:39.604326+00:00",
     "fecha_evento_temprana": "2026-10-28T14:35:12+00:00",
     "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-10-28": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-28T20:35:12.594934+00:00",
+    "fecha_evento_temprana": "2026-10-28T16:29:58+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-10-28": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:35:17.038982+00:00",
+    "fecha_evento_temprana": "2026-10-28T17:40:56+00:00",
+    "municipio": null
+  },
+  "accidente_transporte::Carabobo::2026-10-28": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:35:21.391275+00:00",
+    "fecha_evento_temprana": "2026-10-28T17:25:27+00:00",
+    "municipio": "Carlos Arvelo"
+  },
+  "orden_publico::Tachira::2026-10-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:35:30.791140+00:00",
+    "fecha_evento_temprana": "2026-10-28T19:08:45+00:00",
+    "municipio": "Cárdenas"
+  },
+  "inundacion::Tachira::2026-10-28": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:35:56.341000+00:00",
+    "fecha_evento_temprana": "2026-10-28T19:37:36+00:00",
+    "municipio": "San Cristóbal"
+  },
+  "orden_publico::Anzoategui::2026-10-28": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:37:18.369478+00:00",
+    "fecha_evento_temprana": "2026-10-28T17:58:40+00:00",
+    "municipio": null
+  },
+  "ataque_armado::Zulia::2026-10-28": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T20:38:09.143374+00:00",
+    "fecha_evento_temprana": "2026-10-28T19:31:04+00:00",
+    "municipio": "Maracaibo"
   }
 }
