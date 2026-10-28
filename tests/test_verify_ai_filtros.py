@@ -706,3 +706,15 @@ def test_reconciliar_municipio_parroquia_incoherente():
     ok = {"ubicacion": "Portuguesa", "municipio": "Ospino", "parroquia": "La Estación"}
     _reconciliar_municipio_parroquia(ok)
     assert ok["municipio"] == "Ospino" and ok["parroquia"] == "La Estación"
+
+
+def test_municipio_solo_en_contexto_de_vigilancia():
+    from verify_ai import _solo_en_contexto_de_vigilancia, _normalizar
+    texto = _normalizar(
+        "Deslizamientos en el municipio Urdaneta. Los municipios Campo Elias y "
+        "Rafael Rangel se mantuvieron bajo estricta observacion por las lluvias."
+    )
+    assert _solo_en_contexto_de_vigilancia("Rafael Rangel", texto)
+    assert not _solo_en_contexto_de_vigilancia("Urdaneta", texto)
+    real = _normalizar("Inundaciones en Rafael Rangel dejan 20 viviendas afectadas.")
+    assert not _solo_en_contexto_de_vigilancia("Rafael Rangel", real)

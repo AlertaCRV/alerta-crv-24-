@@ -1159,7 +1159,43 @@ def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_valido
         evento["municipio"] = municipio_ia
     if evento.get("parroquia") is None and parroquia_ia:
         evento["parroquia"] = parroquia_ia
+    if evento.get("municipio") and _solo_en_contexto_de_vigilancia(
+        evento["municipio"], texto_fuentes_norm
+    ):
+        print(
+            f"[WARN] Municipio '{evento['municipio']}' solo aparece como zona "
+            f"bajo vigilancia/observacion preventiva; se descarta."
+        )
+        evento["municipio"] = None
+        evento["parroquia"] = None
     _reconciliar_municipio_parroquia(evento)
+
+
+_MARCAS_VIGILANCIA = (
+    "bajo estricta observacion", "bajo observacion", "bajo vigilancia",
+    "se mantuvieron en observacion", "se mantienen en observacion",
+    "monitoreo preventivo", "en alerta preventiva", "bajo monitoreo",
+)
+
+
+def _solo_en_contexto_de_vigilancia(nombre, texto_norm, antes=40, despues=70):
+    """True si TODAS las menciones del municipio caen junto a una marca de
+    vigilancia preventiva. Caso real: nota de lluvias en Trujillo con
+    deslizamientos en Urdaneta y Jose Felipe Marquez Canizales, donde
+    'Campo Elias y Rafael Rangel se mantuvieron bajo estricta observacion'
+    -- Rafael Rangel se publicaba como municipio del evento sin que
+    hubiera ocurrido nada alli."""
+    nombre_norm = _normalizar(nombre)
+    inicio, hay = 0, False
+    while True:
+        i = texto_norm.find(nombre_norm, inicio)
+        if i < 0:
+            return hay
+        hay = True
+        contexto = texto_norm[max(0, i - antes): i + len(nombre_norm) + despues]
+        if not any(m in contexto for m in _MARCAS_VIGILANCIA):
+            return False
+        inicio = i + len(nombre_norm)
 
 
 def _reconciliar_municipio_parroquia(evento):
