@@ -9860,3 +9860,7 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 - **Corrección retroactiva**: municipio → null en `noticias.json` (título y texto), `historico_eventos.jsonl` y `publicados.json`; `estadisticas.json` regenerado.
 
 **Revisado y sin cambios**: inundación Zulia (Cabimas, 23 comunidades anegadas), incendio de vegetación El Tigre, orden público Lara (familiares de 2017) y Falcón. Sigue pendiente de decidir `orden_publico::Tachira::2026-10-24` (tiroteo en la Base Aérea; ver 27-10: texto guardado insuficiente para confirmar tipo/severidad).
+
+## Mejora web 28-10-2026: tooltip de estadísticas al pasar el cursor sobre un estado del mapa
+
+`docs/index.html`: al posar el cursor sobre un estado del mapa aparece un tooltip flotante que sigue al cursor con el total de eventos, confirmados, desglose por severidad y los 3 tipos principales (`cruce_estado_tipo`). Se retiran los `<title>` nativos del SVG para evitar doble tooltip; el panel `#mapa-detalle` se mantiene para táctil (clic).
