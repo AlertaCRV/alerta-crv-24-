@@ -9886,3 +9886,7 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 **Problema**: `severidad_dominante` era la severidad más grave presente en el estado; un solo evento crítico en todo el histórico lo pintaba de rojo (17 de 24 estados salían rojos, p. ej. Bolívar con 2 críticos entre 19 eventos).
 **Cambio**: `build_dashboard.py` calcula `indice_gravedad` (promedio ponderado crítico=4, alto=3, medio=2, bajo=1; "sin clasificar" no cuenta) y `severidad_mapa` por tramos (≥3.25 crítico, ≥2.5 alto, ≥1.75 medio, resto bajo). `index.html` colorea con `severidad_mapa`, la leyenda indica "Gravedad promedio" y el tooltip muestra el índice. Se retira `severidad_dominante`.
 **Resultado con los datos actuales**: 17 estados en medio, 4 en alto (Amazonas, La Guaira, Guárico, Táchira), 3 en bajo, ninguno en rojo (ningún estado tiene un promedio crítico). Los índices se concentran entre 2.0 y 2.4, así que el mapa discrimina poco entre la mayoría; si se quiere más contraste, la alternativa es umbrales relativos (cuantiles del índice) o el % de eventos críticos+altos.
+
+## Ajuste web 28-10-2026: etiqueta de severidad junto a la gravedad promedio en el tooltip
+
+`docs/index.html`: el tooltip del mapa muestra "Gravedad promedio: 2.8 / 4 (Alto)", con la etiqueta de `severidad_mapa`, para que el número se relacione con los colores/tramos del mapa.

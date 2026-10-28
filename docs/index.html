@@ -341,7 +341,7 @@ function htmlEstadisticasEstado(nombreEstado) {
     .sort((a, b) => b[1] - a[1]).slice(0, 3)
     .map(([t, n]) => `${TIPO_LABELS[t] || t}: ${n}`).join(' · ');
   return `<strong>${nombreEstado}</strong>${r.total} evento(s), ${r.confirmados} confirmado(s)`
-    + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} / 4</div>` : '')
+    + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} / 4 (${SEVERIDAD_LABELS_MAPA[r.severidad_mapa] || r.severidad_mapa})</div>` : '')
     + `<div class="tt-sec">${desglose}</div>`
     + (tipos ? `<div class="tt-sec">Principales: ${tipos}</div>` : '');
 }
