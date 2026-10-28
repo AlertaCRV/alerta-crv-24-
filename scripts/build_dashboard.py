@@ -46,14 +46,29 @@ def calcular_estadisticas(registros):
         if fecha_evento:
             serie_mensual_por_tipo[tipo][_mes(fecha_evento)] += 1
 
-    # Orden de severidad para elegir la "dominante" de cada estado (la mas
-    # grave presente, no un promedio) -- usado por el mapa para decidir con
-    # que color se pinta cada estado.
-    ORDEN_SEVERIDAD = ["critico", "alto", "medio", "bajo", "sin_clasificar"]
+    # Color del mapa por estado: indice de gravedad promedio (critico=4,
+    # alto=3, medio=2, bajo=1; "sin_clasificar" no cuenta). Antes se usaba
+    # la severidad mas grave presente, y un solo evento critico en el
+    # historico pintaba de rojo al estado (17 de 24 estados salian rojos).
+    PESO_SEVERIDAD = {"critico": 4, "alto": 3, "medio": 2, "bajo": 1}
 
-    def _severidad_dominante(estado):
+    def _indice_gravedad(estado):
         conteos = por_estado_severidad[estado]
-        return next((s for s in ORDEN_SEVERIDAD if conteos.get(s)), "sin_clasificar")
+        n = sum(conteos.get(sev, 0) for sev in PESO_SEVERIDAD)
+        if not n:
+            return None
+        return round(sum(conteos.get(sev, 0) * w for sev, w in PESO_SEVERIDAD.items()) / n, 2)
+
+    def _severidad_mapa(indice):
+        if indice is None:
+            return "sin_clasificar"
+        if indice >= 3.25:
+            return "critico"
+        if indice >= 2.5:
+            return "alto"
+        if indice >= 1.75:
+            return "medio"
+        return "bajo"
 
     fechas_evento = [r["fecha_evento"] for r in registros if r.get("fecha_evento")]
     periodo_cubierto = {
@@ -76,7 +91,8 @@ def calcular_estadisticas(registros):
                 "total": total,
                 "confirmados": por_estado_confirmado.get(estado, 0),
                 "por_severidad": dict(por_estado_severidad.get(estado, {})),
-                "severidad_dominante": _severidad_dominante(estado),
+                "indice_gravedad": _indice_gravedad(estado),
+                "severidad_mapa": _severidad_mapa(_indice_gravedad(estado)),
             }
             for estado, total in por_estado_total.most_common()
         ],

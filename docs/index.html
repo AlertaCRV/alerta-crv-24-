@@ -133,6 +133,7 @@
           <div class="meta" style="display:flex;justify-content:space-between;gap:0.5rem;font-size:0.78rem;margin-top:0.2rem;text-align:center;"><span id="mapa-cant-min"></span><span>menos &rarr; más eventos (escala por cuantiles)</span><span id="mapa-cant-max"></span></div>
         </div>
         <div id="mapa-leyenda">
+          <span>Gravedad promedio:</span>
           <span><i class="punto" style="background:#e74c3c"></i> Crítico</span>
           <span><i class="punto" style="background:#f39c12"></i> Alto</span>
           <span><i class="punto" style="background:#f1c40f"></i> Medio</span>
@@ -340,6 +341,7 @@ function htmlEstadisticasEstado(nombreEstado) {
     .sort((a, b) => b[1] - a[1]).slice(0, 3)
     .map(([t, n]) => `${TIPO_LABELS[t] || t}: ${n}`).join(' · ');
   return `<strong>${nombreEstado}</strong>${r.total} evento(s), ${r.confirmados} confirmado(s)`
+    + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} / 4</div>` : '')
     + `<div class="tt-sec">${desglose}</div>`
     + (tipos ? `<div class="tt-sec">Principales: ${tipos}</div>` : '');
 }
@@ -418,7 +420,7 @@ function colorearMapa(ranking) {
     if (modoMapa === 'cantidad') {
       path.classList.add('cant-' + claseCantidad(r.total, totales));
     } else {
-      path.classList.add('sev-' + r.severidad_dominante);
+      path.classList.add('sev-' + r.severidad_mapa);
     }
   });
   if (totales.length) {

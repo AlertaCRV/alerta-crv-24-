@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T20:38:11.927265+00:00",
+  "actualizado": "2026-10-28T21:17:32.700008+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-28T19:37:36+00:00"
@@ -39,7 +39,8 @@
         "critico": 13,
         "sin_clasificar": 5
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.14,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Lara",
@@ -52,7 +53,8 @@
         "bajo": 12,
         "sin_clasificar": 3
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.17,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Zulia",
@@ -65,7 +67,8 @@
         "sin_clasificar": 1,
         "alto": 11
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.3,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Portuguesa",
@@ -77,7 +80,8 @@
         "critico": 3,
         "alto": 11
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.19,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Tachira",
@@ -90,7 +94,8 @@
         "critico": 8,
         "sin_clasificar": 2
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.69,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Aragua",
@@ -103,7 +108,8 @@
         "critico": 4,
         "sin_clasificar": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.39,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Barinas",
@@ -115,7 +121,8 @@
         "bajo": 8,
         "critico": 4
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.11,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Miranda",
@@ -127,7 +134,8 @@
         "critico": 5,
         "bajo": 8
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.22,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Falcon",
@@ -139,7 +147,8 @@
         "medio": 8,
         "critico": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.1,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Trujillo",
@@ -152,7 +161,8 @@
         "alto": 5,
         "sin_clasificar": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.21,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Bolivar",
@@ -165,7 +175,8 @@
         "alto": 1,
         "sin_clasificar": 3
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Merida",
@@ -176,7 +187,8 @@
         "bajo": 5,
         "medio": 3
       },
-      "severidad_dominante": "alto"
+      "indice_gravedad": 2.32,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Yaracuy",
@@ -189,7 +201,8 @@
         "sin_clasificar": 1,
         "alto": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.35,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Anzoategui",
@@ -201,7 +214,8 @@
         "bajo": 6,
         "medio": 6
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Monagas",
@@ -213,7 +227,8 @@
         "bajo": 5,
         "critico": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.06,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Carabobo",
@@ -225,7 +240,8 @@
         "medio": 5,
         "critico": 3
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.33,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Sucre",
@@ -236,7 +252,8 @@
         "bajo": 8,
         "alto": 2
       },
-      "severidad_dominante": "alto"
+      "indice_gravedad": 1.6,
+      "severidad_mapa": "bajo"
     },
     {
       "estado": "La Guaira",
@@ -249,7 +266,8 @@
         "bajo": 1,
         "critico": 2
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.77,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Nueva Esparta",
@@ -261,7 +279,8 @@
         "medio": 3,
         "critico": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 1.83,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Apure",
@@ -273,7 +292,8 @@
         "medio": 3,
         "sin_clasificar": 1
       },
-      "severidad_dominante": "alto"
+      "indice_gravedad": 2.22,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Guarico",
@@ -284,7 +304,8 @@
         "critico": 2,
         "alto": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 2.71,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Cojedes",
@@ -295,7 +316,8 @@
         "medio": 2,
         "alto": 1
       },
-      "severidad_dominante": "alto"
+      "indice_gravedad": 1.67,
+      "severidad_mapa": "bajo"
     },
     {
       "estado": "Delta Amacuro",
@@ -305,7 +327,8 @@
         "bajo": 2,
         "medio": 1
       },
-      "severidad_dominante": "medio"
+      "indice_gravedad": 1.33,
+      "severidad_mapa": "bajo"
     },
     {
       "estado": "Amazonas",
@@ -315,7 +338,8 @@
         "critico": 1,
         "medio": 1
       },
-      "severidad_dominante": "critico"
+      "indice_gravedad": 3.0,
+      "severidad_mapa": "alto"
     }
   ],
   "cruce_estado_tipo": {

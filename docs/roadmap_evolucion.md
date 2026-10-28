@@ -9880,3 +9880,9 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 ## Ajuste web 28-10-2026: escala del modo "Cantidad de eventos" en morados, de claro (pocos) a oscuro (muchos)
 
 La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés de la convención de los mapas de calor. Ahora es una escala morada secuencial (`#ede9fe` → `#4c1d95`): más oscuro = más eventos. Se eligió el morado para no confundirse con la paleta de severidad (rojo/naranja/amarillo/verde/gris).
+
+## Ajuste web 28-10-2026: color del mapa de severidad por gravedad promedio (antes: severidad más grave presente)
+
+**Problema**: `severidad_dominante` era la severidad más grave presente en el estado; un solo evento crítico en todo el histórico lo pintaba de rojo (17 de 24 estados salían rojos, p. ej. Bolívar con 2 críticos entre 19 eventos).
+**Cambio**: `build_dashboard.py` calcula `indice_gravedad` (promedio ponderado crítico=4, alto=3, medio=2, bajo=1; "sin clasificar" no cuenta) y `severidad_mapa` por tramos (≥3.25 crítico, ≥2.5 alto, ≥1.75 medio, resto bajo). `index.html` colorea con `severidad_mapa`, la leyenda indica "Gravedad promedio" y el tooltip muestra el índice. Se retira `severidad_dominante`.
+**Resultado con los datos actuales**: 17 estados en medio, 4 en alto (Amazonas, La Guaira, Guárico, Táchira), 3 en bajo, ninguno en rojo (ningún estado tiene un promedio crítico). Los índices se concentran entre 2.0 y 2.4, así que el mapa discrimina poco entre la mayoría; si se quiere más contraste, la alternativa es umbrales relativos (cuantiles del índice) o el % de eventos críticos+altos.
