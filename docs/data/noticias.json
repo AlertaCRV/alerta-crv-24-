@@ -2,33 +2,38 @@
   {
     "tipo": "inundacion",
     "ubicacion": "Zulia",
-    "municipio": null,
-    "parroquia": null,
+    "municipio": "Cabimas",
+    "parroquia": "Ambrosio",
     "severidad": "medio",
-    "score": 1.1,
-    "confirmado": false,
-    "num_fuentes": 2,
+    "score": 1.95,
+    "confirmado": true,
+    "num_fuentes": 3,
     "fuentes": [
       {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/fuerte-mar-de-leva-en-carirubana-golpea-a-pescadores-este-27-oct-fotos/",
-        "fecha": "2026-10-27T18:46:44+00:00"
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/occidente/zulia-lluvias-afectan-a-maracaibo-y-la-col-hay-calles-anegadas-y-viviendas-inundadas/",
+        "fecha": "2026-10-27T15:39:14+00:00"
       },
       {
         "nombre": "La Prensa de Monagas",
         "link": "https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/",
         "fecha": "2026-10-27T20:50:11+00:00"
+      },
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/principal/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/",
+        "fecha": "2026-10-28T01:18:32+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-10-27T20:50:11+00:00",
-    "fecha_evento_temprana": "2026-10-27T18:46:44+00:00",
-    "fecha_deteccion": "2026-10-27T23:12:23.838703+00:00",
+    "fecha_evento": "2026-10-28T01:18:32+00:00",
+    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
+    "fecha_deteccion": "2026-10-28T02:18:37.718955+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "inundacion::Zulia::2026-10-27",
-    "titulo": "Inundación en Zulia",
-    "texto": "📌 Inundación en Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 27/10/2026, 4:50 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 7:12 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/fuerte-mar-de-leva-en-carirubana-golpea-a-pescadores-este-27-oct-fotos/\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/"
+    "titulo": "Inundación en Parroquia Ambrosio, Municipio Cabimas, Zulia",
+    "texto": "📌 Inundación en Parroquia Ambrosio, Municipio Cabimas, Zulia\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Ambrosio, Municipio Cabimas, Zulia\n🕒 Hecho reportado: 27/10/2026, 9:18 p.m.\n🔎 Detectado por el sistema: 27/10/2026, 10:18 p.m.\n📊 Fuentes independientes: 3 (score 1.95)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/occidente/zulia-lluvias-afectan-a-maracaibo-y-la-col-hay-calles-anegadas-y-viviendas-inundadas/\n  • La Prensa de Monagas: https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/principal/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/"
   },
   {
     "tipo": "incendio",

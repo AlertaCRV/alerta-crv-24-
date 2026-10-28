@@ -6,13 +6,6 @@
     "fecha_evento_temprana": "2026-10-25T01:04:05+00:00",
     "municipio": "Fernández Feo"
   },
-  "orden_publico::Tachira::2026-10-24": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-24T23:14:07.182878+00:00",
-    "fecha_evento_temprana": "2026-10-24T20:25:18+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Lara::2026-10-27": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -29,10 +22,10 @@
   },
   "inundacion::Zulia::2026-10-27": {
     "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-27T23:12:23.838703+00:00",
-    "fecha_evento_temprana": "2026-10-27T18:46:44+00:00",
-    "municipio": null
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-28T02:18:37.718955+00:00",
+    "fecha_evento_temprana": "2026-10-27T15:39:14+00:00",
+    "municipio": "Cabimas"
   },
   "incendio::Anzoategui::2026-10-27": {
     "severidad": "medio",
