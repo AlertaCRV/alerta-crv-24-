@@ -79,6 +79,14 @@
   #mapa-leyenda { display:flex; flex-wrap:wrap; gap:0.6rem; font-size:0.78rem; color:#9aa4b2; margin-top:0.5rem; }
   #mapa-leyenda .punto { display:inline-block; width:0.7rem; height:0.7rem; border-radius:50%; margin-right:0.3rem; vertical-align:middle; }
   #mapa-detalle { margin-top:0.5rem; min-height:2.4em; }
+  #mapa-tooltip {
+    position:fixed; z-index:1000; pointer-events:none; display:none;
+    background:#141a21; color:#e6e9ee; border:1px solid #3a424d; border-radius:6px;
+    padding:0.5rem 0.7rem; font-size:0.8rem; line-height:1.4; max-width:240px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.5);
+  }
+  #mapa-tooltip strong { display:block; font-size:0.9rem; margin-bottom:0.2rem; }
+  #mapa-tooltip .tt-sec { color:#9aa4b2; margin-top:0.25rem; }
 </style>
 </head>
 <body>
@@ -262,6 +270,7 @@ function cargarTendencias() {
     document.getElementById('tend-por-tipo').innerHTML = porTipo.length
       ? tablaBarras(porTipo, maxTipo) : 'Sin datos aún.';
 
+    cruceEstadoTipoActual = stats.cruce_estado_tipo || {};
     colorearMapa(stats.ranking_estados || []);
 
     const SEVERIDAD_LABELS = {
@@ -296,12 +305,50 @@ const SEVERIDAD_LABELS_MAPA = {
 };
 let rankingEstadosActual = [];
 let mapaListo = false;
+let cruceEstadoTipoActual = {};
+
+function htmlEstadisticasEstado(nombreEstado) {
+  const r = rankingEstadosActual.find(e => e.estado === nombreEstado);
+  if (!r) return `<strong>${nombreEstado}</strong>Sin eventos registrados en el histórico.`;
+  const desglose = Object.entries(r.por_severidad || {})
+    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`).join(' · ');
+  const tipos = Object.entries(cruceEstadoTipoActual[nombreEstado] || {})
+    .sort((a, b) => b[1] - a[1]).slice(0, 3)
+    .map(([t, n]) => `${TIPO_LABELS[t] || t}: ${n}`).join(' · ');
+  return `<strong>${nombreEstado}</strong>${r.total} evento(s), ${r.confirmados} confirmado(s)`
+    + `<div class="tt-sec">${desglose}</div>`
+    + (tipos ? `<div class="tt-sec">Principales: ${tipos}</div>` : '');
+}
+
+function posicionarTooltip(tooltip, ev) {
+  const m = 14, w = tooltip.offsetWidth, h = tooltip.offsetHeight;
+  let x = ev.clientX + m, y = ev.clientY + m;
+  if (x + w > window.innerWidth - 4) x = ev.clientX - w - m;
+  if (y + h > window.innerHeight - 4) y = ev.clientY - h - m;
+  tooltip.style.left = Math.max(4, x) + 'px';
+  tooltip.style.top = Math.max(4, y) + 'px';
+}
 
 function cargarMapa() {
   fetch('mapa-venezuela.svg?_=' + Date.now()).then(r => r.text()).then(svg => {
     document.getElementById('mapa-venezuela').innerHTML = svg;
+    let tooltip = document.getElementById('mapa-tooltip');
+    if (!tooltip) {
+      tooltip = document.createElement('div');
+      tooltip.id = 'mapa-tooltip';
+      document.body.appendChild(tooltip);
+    }
+    // Se quitan los <title> nativos para que no se superpongan con el tooltip propio.
+    document.querySelectorAll('#mapa-venezuela .estado > title').forEach(t => t.remove());
     document.querySelectorAll('#mapa-venezuela .estado').forEach(path => {
-      path.addEventListener('mouseenter', () => mostrarDetalleEstado(path.dataset.estado));
+      path.addEventListener('mouseenter', ev => {
+        mostrarDetalleEstado(path.dataset.estado);
+        tooltip.innerHTML = htmlEstadisticasEstado(path.dataset.estado);
+        tooltip.style.display = 'block';
+        posicionarTooltip(tooltip, ev);
+      });
+      path.addEventListener('mousemove', ev => posicionarTooltip(tooltip, ev));
+      path.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
       path.addEventListener('click', () => mostrarDetalleEstado(path.dataset.estado));
     });
     mapaListo = true;
