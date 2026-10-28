@@ -33,5 +33,12 @@
     "fecha_deteccion": "2026-10-27T23:13:05.556943+00:00",
     "fecha_evento_temprana": "2026-10-27T22:00:00+00:00",
     "municipio": null
+  },
+  "inundacion::Trujillo::2026-10-28": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-28T15:34:39.604326+00:00",
+    "fecha_evento_temprana": "2026-10-28T14:35:12+00:00",
+    "municipio": "Rafael Rangel"
   }
 }
