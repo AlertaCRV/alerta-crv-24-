@@ -1092,6 +1092,31 @@ def _finalizar_evento(evento, grupos_aprobados, error_sistema=False, severidad_i
     return resultado
 
 
+_RE_BAJO_OBSERVACION = re.compile(
+    r"^[^.]{0,60}?(?:se mantuvieron|se mantienen|permanecen|permanecieron|estan|estuvieron)"
+    r"\s+(?:bajo|en)\s+(?:estricta\s+|permanente\s+)?(?:observacion|vigilancia|monitoreo|alerta)"
+)
+
+
+def _municipio_solo_bajo_observacion(municipio, texto_norm):
+    """True si el municipio aparece en el texto unicamente como zona "bajo
+    observacion/vigilancia" preventiva (caso real: Trujillo, donde las
+    crecidas y deslizamientos fueron en Urdaneta y Jose Felipe Marquez
+    Canizales y Rafael Rangel solo "se mantuvo bajo estricta observacion")."""
+    nombre = _normalizar(municipio)
+    inicio, hallazgos = 0, []
+    while (i := texto_norm.find(nombre, inicio)) != -1:
+        hallazgos.append(i)
+        inicio = i + len(nombre)
+    if not hallazgos:
+        return False
+    for i in hallazgos:
+        resto = texto_norm[i + len(nombre):i + len(nombre) + 140]
+        if not _RE_BAJO_OBSERVACION.match(resto):
+            return False
+    return True
+
+
 def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_validos, parroquias_validos):
     """Completa municipio/parroquia del evento con lo que propuso la IA, solo
     si el valor esta en las listas validas y aparece textualmente en las
@@ -1159,6 +1184,13 @@ def _aplicar_ubicacion_ia(evento, respuesta, grupos_aprobados, municipios_valido
         evento["municipio"] = municipio_ia
     if evento.get("parroquia") is None and parroquia_ia:
         evento["parroquia"] = parroquia_ia
+    if evento.get("municipio") and _municipio_solo_bajo_observacion(
+        evento["municipio"], texto_fuentes_norm
+    ):
+        print(f"[WARN] Municipio '{evento['municipio']}' solo aparece como zona "
+              f"bajo observacion preventiva; se descarta.")
+        evento["municipio"] = None
+        evento["parroquia"] = None
     _reconciliar_municipio_parroquia(evento)
 
 

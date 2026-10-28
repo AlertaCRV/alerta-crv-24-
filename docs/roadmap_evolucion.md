@@ -9845,3 +9845,11 @@ Decisiones: (1) extender la verificación por extracción de la IA a `salud_publ
 **Corrección retroactiva**: retiradas las tres alertas de `noticias.json` y sus registros de `historico_eventos.jsonl`/`historico_fuentes_texto.jsonl`; `estadisticas.json` regenerado. Se conserva el registro Miranda de La Noticia de Barinas (convocatoria de voceros sindicales de Miranda a la marcha a Miraflores), de severidad baja. Frases verificadas como exclusivas de estos artículos; 2 casos nuevos en `tests/casos_clasificacion.jsonl`; los 3 casos históricos que fijaban los falsos positivos en `test_classify_regresion_historico` desaparecen al retirar el dato.
 
 **Revisado y sin cambios**: deslizamiento Aragua (Choroní, respaldado), colapso de puente en Ospino, vialidad Guanare (2 fallecidos), orden público Sucre/Lara/Portuguesa. Siguen pendientes de decisión: severidad del incendio av. Baralt (10-10) y `crisis_migratoria::La Guaira` (11-10), y el balance multi-estado de Amazonas (09-10).
+
+## Auditoría diaria 28-10-2026: municipio erróneo ("bajo observación") en inundación de Trujillo
+
+**Hallazgo** (alertas del 26-28/10 contrastadas con `historico_fuentes_texto.jsonl`): `inundacion::Trujillo::2026-10-28` publicada con municipio "Rafael Rangel", pero en el texto de Diario El Tiempo ese municipio solo "se mantuvo bajo estricta observación"; los deslizamientos/crecidas ocurrieron en Urdaneta y José Felipe Márquez Cañizales.
+- **Corrección**: `verify_ai._municipio_solo_bajo_observacion` — si el municipio aparece en las fuentes únicamente como zona "bajo observación/vigilancia/monitoreo", se descarta (junto con la parroquia). Test nuevo en `tests/test_verify_ai_filtros.py` (caso real + controles).
+- **Corrección retroactiva**: municipio → null y título "Inundación en Trujillo" en `noticias.json` y `historico_eventos.jsonl`; `estadisticas.json` regenerado.
+
+**Revisado y sin cambios**: inundación Zulia/Cabimas (severidad alta con 23 comunidades anegadas según el gobernador; la otra fuente dice sin víctimas — límite, no se modificó), protestas Falcón (Cacique Manaure respaldado), incendio de vegetación El Tigre, orden público/eléctrica Lara.
