@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-10",
+  "tipo": "accidente_transporte",
+  "tipo_label": "Accidente de transporte",
+  "cerrado": false,
+  "generado": "2026-10-28T20:39:11.355905+00:00",
+  "actualizado_hasta": "2026-10-28T20:35:21.391275+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-09",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "En el mes de octubre de 2026 se registró un único evento de accidente de transporte, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún incidente (comparación con el período anterior). \n\nEl accidente ocurrió en el Lago de Valencia, en el municipio de Carlos Arvelo, estado Carabobo, cuando una embarcación artesanal se hundió el domingo 27 de octubre (El Pitazo). La tragedia dejó tres fallecidos, entre los que se encontraba una niña de tres años cuyo cuerpo fue hallado la tarde del martes 27 de octubre, completando la cifra de muertos (El Pitazo). \n\nLas labores de búsqueda y rescate se prolongaron durante varios días en las riberas del lago, culminando con la recuperación del cuerpo de la menor y la confirmación de los tres fallecidos (El Pitazo). El siniestro generó daños materiales en la embarcación y en la infraestructura de apoyo a la zona de rescate, aunque no se reportaron heridos adicionales (El Pitazo).",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/tragedia-en-el-lago-de-valencia-hallan-cuerpo-de-nina-desaparecida-tras-naufragio-que-dejo-tres-muertos/"
+    }
+  ]
+}

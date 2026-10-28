@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-28T20:24:07.277040+00:00",
+  "actualizado": "2026-10-28T20:38:11.927265+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-28T14:35:12+00:00"
+    "hasta": "2026-10-28T19:37:36+00:00"
   },
-  "total_eventos": 554,
+  "total_eventos": 561,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 88,
+    "inundacion": 89,
     "infraestructura_electrica": 46,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 191,
+    "orden_publico": 195,
     "salud_publica": 26,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -21,19 +21,19 @@
     "sequia": 6,
     "explosion": 2,
     "infraestructura_agua": 26,
-    "accidente_transporte": 1,
+    "accidente_transporte": 2,
     "derrame_petrolero": 4,
-    "ataque_armado": 6,
+    "ataque_armado": 7,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 95,
-      "confirmados": 15,
+      "total": 96,
+      "confirmados": 16,
       "por_severidad": {
-        "alto": 16,
+        "alto": 17,
         "medio": 31,
         "bajo": 30,
         "critico": 13,
@@ -43,10 +43,10 @@
     },
     {
       "estado": "Lara",
-      "total": 48,
+      "total": 49,
       "confirmados": 2,
       "por_severidad": {
-        "critico": 4,
+        "critico": 5,
         "alto": 10,
         "medio": 19,
         "bajo": 12,
@@ -56,14 +56,14 @@
     },
     {
       "estado": "Zulia",
-      "total": 47,
+      "total": 48,
       "confirmados": 10,
       "por_severidad": {
         "medio": 21,
         "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 10
+        "alto": 11
       },
       "severidad_dominante": "critico"
     },
@@ -80,6 +80,19 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Tachira",
+      "total": 34,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 12,
+        "bajo": 6,
+        "medio": 6,
+        "critico": 8,
+        "sin_clasificar": 2
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Aragua",
       "total": 34,
       "confirmados": 1,
@@ -89,19 +102,6 @@
         "alto": 12,
         "critico": 4,
         "sin_clasificar": 1
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Tachira",
-      "total": 32,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 11,
-        "bajo": 5,
-        "medio": 6,
-        "critico": 8,
-        "sin_clasificar": 2
       },
       "severidad_dominante": "critico"
     },
@@ -192,6 +192,18 @@
       "severidad_dominante": "critico"
     },
     {
+      "estado": "Anzoategui",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6,
+        "medio": 6
+      },
+      "severidad_dominante": "critico"
+    },
+    {
       "estado": "Monagas",
       "total": 16,
       "confirmados": 0,
@@ -200,6 +212,18 @@
         "alto": 4,
         "bajo": 5,
         "critico": 1
+      },
+      "severidad_dominante": "critico"
+    },
+    {
+      "estado": "Carabobo",
+      "total": 15,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 5,
+        "critico": 3
       },
       "severidad_dominante": "critico"
     },
@@ -213,30 +237,6 @@
         "alto": 2
       },
       "severidad_dominante": "alto"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 15,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 5,
-        "medio": 6
-      },
-      "severidad_dominante": "critico"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 14,
-      "confirmados": 1,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 5,
-        "critico": 2
-      },
-      "severidad_dominante": "critico"
     },
     {
       "estado": "La Guaira",
@@ -325,12 +325,13 @@
       "infraestructura_electrica": 2,
       "inundacion": 3,
       "vialidad": 2,
-      "incendio": 1
+      "incendio": 1,
+      "accidente_transporte": 1
     },
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 22,
+      "orden_publico": 23,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -349,7 +350,7 @@
       "orden_publico": 18,
       "sismo": 2,
       "salud_publica": 2,
-      "ataque_armado": 1,
+      "ataque_armado": 2,
       "explosion": 1,
       "vialidad": 1,
       "incendio": 5,
@@ -358,7 +359,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 31,
+      "orden_publico": 32,
       "incendio": 20,
       "vialidad": 5,
       "infraestructura_electrica": 9,
@@ -405,7 +406,7 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
@@ -413,8 +414,8 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 10,
-      "inundacion": 3,
+      "orden_publico": 11,
+      "inundacion": 4,
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
@@ -536,10 +537,10 @@
     }
   },
   "por_severidad": {
-    "alto": 126,
-    "critico": 67,
+    "alto": 129,
+    "critico": 69,
     "medio": 193,
-    "bajo": 149,
+    "bajo": 151,
     "sin_clasificar": 19
   },
   "serie_mensual_por_tipo": {
@@ -553,7 +554,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 17
+      "2026-10": 18
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -577,7 +578,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 69
+      "2026-10": 73
     },
     "salud_publica": {
       "2026-07": 1,
@@ -624,7 +625,8 @@
       "2026-10": 6
     },
     "accidente_transporte": {
-      "2026-08": 1
+      "2026-08": 1,
+      "2026-10": 1
     },
     "derrame_petrolero": {
       "2026-08": 2,
@@ -632,7 +634,7 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 5
+      "2026-10": 6
     },
     "emergencia_metro": {
       "2026-08": 1,
