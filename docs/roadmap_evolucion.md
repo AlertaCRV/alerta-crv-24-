@@ -9902,3 +9902,7 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 - **Corrección retroactiva**: municipio → null en las alertas Zulia y Táchira (`noticias.json` título/texto, `historico_eventos.jsonl`, `publicados.json`); retirada la alerta de Lara de `noticias.json`, históricos y `publicados.json`; `estadisticas.json` regenerado.
 
 **Revisado y sin cambios**: PNB/sindicatos en La Candelaria (3 fuentes, heridos respaldados), naufragio Carlos Arvelo (3 fallecidos), inundación Táchira (texto guardado de una línea; severidad "alto" no verificable, a vigilar), jubilados Cantv Anzoátegui. Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo Base Aérea).
+
+## Ajuste web 29-10-2026: amarillo de severidad media más claro
+
+`docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
