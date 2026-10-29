@@ -117,5 +117,19 @@
     "fecha_deteccion": "2026-10-29T19:07:08.491245+00:00",
     "fecha_evento_temprana": "2026-10-29T17:11:49+00:00",
     "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-10-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T23:18:29.850635+00:00",
+    "fecha_evento_temprana": "2026-10-29T19:39:05+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-10-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T23:18:55.441300+00:00",
+    "fecha_evento_temprana": "2026-10-29T22:48:00+00:00",
+    "municipio": null
   }
 }

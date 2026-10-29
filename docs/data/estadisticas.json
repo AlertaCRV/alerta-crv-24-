@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-29T19:08:53.646670+00:00",
+  "actualizado": "2026-10-29T23:20:29.004030+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-29T18:42:41+00:00"
+    "hasta": "2026-10-29T22:48:00+00:00"
   },
-  "total_eventos": 567,
+  "total_eventos": 569,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 91,
     "infraestructura_electrica": 47,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 196,
+    "orden_publico": 198,
     "salud_publica": 27,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -30,16 +30,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 96,
+      "total": 97,
       "confirmados": 16,
       "por_severidad": {
         "alto": 17,
         "medio": 31,
-        "bajo": 30,
+        "bajo": 31,
         "critico": 13,
         "sin_clasificar": 5
       },
-      "indice_gravedad": 2.14,
+      "indice_gravedad": 2.13,
       "severidad_mapa": "medio"
     },
     {
@@ -205,6 +205,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Monagas",
+      "total": 17,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "alto": 4,
+        "bajo": 6,
+        "critico": 1
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Sucre",
       "total": 16,
       "confirmados": 0,
@@ -227,19 +240,6 @@
         "medio": 6
       },
       "indice_gravedad": 2.0,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Monagas",
-      "total": 16,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 6,
-        "alto": 4,
-        "bajo": 5,
-        "critico": 1
-      },
-      "indice_gravedad": 2.06,
       "severidad_mapa": "medio"
     },
     {
@@ -383,7 +383,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 32,
+      "orden_publico": 33,
       "incendio": 20,
       "vialidad": 5,
       "infraestructura_electrica": 9,
@@ -509,7 +509,7 @@
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 3,
-      "orden_publico": 4
+      "orden_publico": 5
     },
     "Guarico": {
       "sequia": 2,
@@ -566,7 +566,7 @@
     "alto": 129,
     "critico": 69,
     "medio": 198,
-    "bajo": 151,
+    "bajo": 153,
     "sin_clasificar": 20
   },
   "serie_mensual_por_tipo": {
@@ -604,7 +604,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 74
+      "2026-10": 76
     },
     "salud_publica": {
       "2026-07": 1,
