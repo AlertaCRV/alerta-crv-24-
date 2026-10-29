@@ -9906,3 +9906,9 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 29-10-2026: sin errores claros; dos dudas pendientes de decidir
+
+Revisadas las 13 alertas del 28-29/10 contra `historico_fuentes_texto.jsonl`. Ubicaciones, tipos y duplicados correctos; sin alertas `PASADO_POR_FALLA_TECNICA`. No se tocó código ni datos. Pendientes de discutir:
+1. **`inundacion::Sucre`** (El Tiempo Anzoátegui): "desbordamientos de aguas servidas en Cumaná" y plan de mantenimiento de la red de saneamiento; no hay lluvia ni inundación. Se publica como inundación media. Precedente: el caso de Barinas (27-09) de aguas servidas se aceptó como inundación, así que no se filtró de forma autónoma.
+2. **`orden_publico::Bolivar`** (El Pitazo, Minerven, El Callao): paro laboral de más de 40 horas por utilidades, sin daños; sale con severidad "media" ("daños materiales"). Por analogía con las protestas de jubilados Cantv (baja), podría ser "baja". No se determinó el origen de la severidad (IA o regla).
