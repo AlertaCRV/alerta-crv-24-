@@ -93,11 +93,12 @@
   #mapa-tooltip {
     position:fixed; z-index:1000; pointer-events:none; display:none;
     background:#141a21; color:#e6e9ee; border:1px solid #3a424d; border-radius:6px;
-    padding:0.5rem 0.7rem; font-size:0.8rem; line-height:1.4; max-width:240px;
+    padding:0.45rem 0.65rem; font-size:0.7rem; line-height:1.45; max-width:220px;
     box-shadow:0 4px 14px rgba(0,0,0,0.5);
   }
-  #mapa-tooltip strong { display:block; font-size:0.9rem; margin-bottom:0.2rem; }
-  #mapa-tooltip .tt-sec { color:#9aa4b2; margin-top:0.25rem; }
+  #mapa-tooltip strong { display:block; font-size:0.8rem; margin-bottom:0.2rem; }
+  #mapa-tooltip .tt-sec { color:#9aa4b2; margin-top:0.3rem; }
+  #mapa-tooltip .tt-niveles { display:block; }
 </style>
 </head>
 <body>
@@ -336,13 +337,13 @@ function htmlEstadisticasEstado(nombreEstado) {
   const r = rankingEstadosActual.find(e => e.estado === nombreEstado);
   if (!r) return `<strong>${nombreEstado}</strong>Sin eventos registrados en el histórico.`;
   const desglose = Object.entries(r.por_severidad || {})
-    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`).join(' · ');
+    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`).join('<br>');
   const tipos = Object.entries(cruceEstadoTipoActual[nombreEstado] || {})
     .sort((a, b) => b[1] - a[1]).slice(0, 3)
     .map(([t, n]) => `${TIPO_LABELS[t] || t}: ${n}`).join(' · ');
   return `<strong>${nombreEstado}</strong>${r.total} evento(s), ${r.confirmados} confirmado(s)`
-    + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} / 4 (${SEVERIDAD_LABELS_MAPA[r.severidad_mapa] || r.severidad_mapa})</div>` : '')
-    + `<div class="tt-sec">${desglose}</div>`
+    + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} (${SEVERIDAD_LABELS_MAPA[r.severidad_mapa] || r.severidad_mapa})</div>` : '')
+    + `<div class="tt-sec tt-niveles">${desglose}</div>`
     + (tipos ? `<div class="tt-sec">Principales: ${tipos}</div>` : '');
 }
 
