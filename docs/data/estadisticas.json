@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-28T23:10:13.820166+00:00",
+  "actualizado": "2026-10-29T00:29:13.729893+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-28T19:37:36+00:00"
+    "hasta": "2026-10-28T23:53:02+00:00"
   },
-  "total_eventos": 560,
+  "total_eventos": 563,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 89,
+    "inundacion": 91,
     "infraestructura_electrica": 46,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 194,
+    "orden_publico": 195,
     "salud_publica": 26,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -85,16 +85,16 @@
     },
     {
       "estado": "Tachira",
-      "total": 34,
+      "total": 35,
       "confirmados": 2,
       "por_severidad": {
         "alto": 12,
         "bajo": 6,
-        "medio": 6,
+        "medio": 7,
         "critico": 8,
         "sin_clasificar": 2
       },
-      "indice_gravedad": 2.69,
+      "indice_gravedad": 2.67,
       "severidad_mapa": "alto"
     },
     {
@@ -166,11 +166,11 @@
     },
     {
       "estado": "Bolivar",
-      "total": 19,
-      "confirmados": 1,
+      "total": 20,
+      "confirmados": 2,
       "por_severidad": {
         "bajo": 5,
-        "medio": 8,
+        "medio": 9,
         "critico": 2,
         "alto": 1,
         "sin_clasificar": 3
@@ -203,6 +203,18 @@
       },
       "indice_gravedad": 2.35,
       "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Sucre",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 6,
+        "bajo": 8,
+        "alto": 2
+      },
+      "indice_gravedad": 1.62,
+      "severidad_mapa": "bajo"
     },
     {
       "estado": "Anzoategui",
@@ -242,18 +254,6 @@
       },
       "indice_gravedad": 2.33,
       "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Sucre",
-      "total": 15,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 5,
-        "bajo": 8,
-        "alto": 2
-      },
-      "indice_gravedad": 1.6,
-      "severidad_mapa": "bajo"
     },
     {
       "estado": "La Guaira",
@@ -413,7 +413,7 @@
       "infraestructura_electrica": 3
     },
     "Sucre": {
-      "inundacion": 4,
+      "inundacion": 5,
       "orden_publico": 6,
       "infraestructura_electrica": 2,
       "infraestructura_agua": 2,
@@ -439,7 +439,7 @@
     "Tachira": {
       "deslizamiento": 4,
       "orden_publico": 11,
-      "inundacion": 4,
+      "inundacion": 5,
       "sismo": 1,
       "infraestructura_electrica": 2,
       "incendio": 4,
@@ -449,7 +449,7 @@
       "salud_publica": 3
     },
     "Bolivar": {
-      "orden_publico": 7,
+      "orden_publico": 8,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -563,7 +563,7 @@
   "por_severidad": {
     "alto": 129,
     "critico": 68,
-    "medio": 193,
+    "medio": 196,
     "bajo": 151,
     "sin_clasificar": 19
   },
@@ -578,7 +578,7 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 18
+      "2026-10": 20
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -602,7 +602,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 72
+      "2026-10": 73
     },
     "salud_publica": {
       "2026-07": 1,

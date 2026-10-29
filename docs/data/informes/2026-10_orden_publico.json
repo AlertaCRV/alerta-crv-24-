@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-10-28T08:50:45.321821+00:00",
-  "actualizado_hasta": "2026-10-27T23:13:05.556943+00:00",
-  "total_eventos": 69,
+  "generado": "2026-10-29T00:33:09.976334+00:00",
+  "actualizado_hasta": "2026-10-29T00:26:31.934636+00:00",
+  "total_eventos": 73,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 76,
-    "actual": 69
+    "actual": 73
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 69 eventos de orden público, una disminución respecto a los 76 ocurridos en septiembre de 2026 (comparación proporcionada). Los incidentes se concentraron en varios estados del país, con diferentes niveles de severidad que van desde \"alto\" hasta \"crítico\".\n\nEn Zulia, la Guardia Nacional reprimió al menos cinco protestas nocturnas contra los cortes eléctricos, generando enfrentamientos con manifestantes (El Pitazo). En Guárico, se reportaron protestas similares en la misma jornada, también vinculadas a la demanda de restablecimiento del suministro eléctrico (El Pitazo). En Carabobo, manifestaciones por racionamientos eléctricos colapsaron la Autopista Regional del Centro (ARC), provocando congestión vehicular y alteraciones del orden público (El Impulso (Lara)). En Lara, la crisis eléctrica disparó la conflictividad social, con protestas que se multiplicaron y generaron enfrentamientos en distintas localidades (Notiapure).\n\nEn Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo de vehículos y el CICPC terminó con la muerte de los cuatro individuos en el sector 18 de Octubre (Diario El Vistazo (Anzoátegui)). En Yaracuy, se informó de un hecho de orden público de carácter crítico, según el medio Yaracuy al Día (Yaracuy al Dia). En el estado Portuguesa, varios medios señalaron la ocurrencia de incidentes de orden público de severidad alta: Turimiquire (Sucre) informó sobre uno de ellos, Portuguesa Reporta describió otro, y La Prensa de Lara también registró un hecho de este tipo (Turimiquire (Sucre); Portuguesa Reporta; La Prensa de Lara).\n\nTáchira fue escenario de varios eventos críticos. El 21 de octubre, el soldado Raymond Paz abrió fuego en la Base Aérea \"Mayor Buenaventura Vivas Guerrero\", matando a tres compañeros y hiriendo a otros tres, lo que llevó a la declaración de estado de alerta en la base (Diario La Nación (Táchira); El Pitazo). Posteriormente, el mismo soldado fue capturado en una zona boscosa de la base, según informó el gobernador Freddy Bernal (El Pitazo). Otros medios, como Nuevo Día (Falcón), también reportaron la gravedad de los hechos en Táchira (Nuevo Dia (Falcon)).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 73 incidentes de orden público, una ligera disminución respecto a los 76 eventos del mes anterior (2026‑09). La variación refleja una tendencia a la baja en la frecuencia de los hechos, aunque la gravedad de varios de ellos se mantuvo alta o crítica.\n\nDurante el período se reportaron disturbios en varios estados. En Zulia, la represión de manifestaciones contra los cortes eléctricos fue catalogada como de alta severidad (La Prensa de Lara). En Guárico, las protestas también alcanzaron un nivel de alta severidad (El Pitazo). En Carabobo, las protestas por racionamientos eléctricos colapsaron la ARC, generando un fuerte tráfico y fueron calificadas como de alta severidad (El Impulso (Lara)). En Lara, las manifestaciones nocturnas contra los cortes eléctricos fueron igualmente de alta severidad (Notiapure). Finalmente, en el Distrito Capital se registró un episodio de orden público de alta severidad (Runrun.es).\n\nEn el estado de Portuguesa se documentaron tres incidentes distintos: uno reportado por Turimiquire (Sucre) con alta severidad, otro por Portuguesa Reporta también con alta severidad, y un tercer hecho citado por La Prensa de Lara con alta severidad. En Yaracuy, la situación alcanzó una severidad crítica (Yaracuy al Dia). En Anzoátegui, un enfrentamiento entre cuatro sujetos dedicados al robo y el CICPC resultó en cuatro muertos, catalogado como crítico (Diario El Vistazo (Anzoategui)).\n\nTáchira fue el estado con mayor número de reportes críticos. Un suceso descrito por Diario La Nación (Tachira) involucró a un soldado que mató a tres compañeros en la Base Aérea “Santo Domingo”. El mismo hecho fue cubierto por El Pitazo en dos ocasiones, resaltando la gravedad crítica del evento, y también por Nuevo Día (Falcon), que reiteró la severidad crítica. Todos estos incidentes en Táchira fueron calificados como críticos (Diario La Nacion (Tachira); El Pitazo; Nuevo Dia (Falcon)).",
   "fuentes": [
     {
       "nombre": "Diario El Vistazo (Anzoategui)",
@@ -46,6 +46,10 @@
       "link": "https://laprensadelara.com/nacionales/caficultores-lara-portuguesa-precios/"
     },
     {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/pnb-impide-a-familiares-de-presos-politicos-y-sindicatos-marchar-hacia-miraflores/"
+    },
+    {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/nacion/crisis-electrica-dispara-la-conflictividad-protestas-se-multiplican-489-en-septiembre/"
     },
@@ -70,6 +74,14 @@
       "link": "https://primicia.com.ve/sucesos/tiroteo-base-aerea-tachira-tres-militares-muertos/"
     },
     {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/sindicatos-y-familiares-de-presos-politicos-marchan-en-caracas/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/623963/pnb-bloquea-a-manifestantes-sindicales-y-familiares-de-presos-politicos-antes-de-llegar-a-miraflores/"
+    },
+    {
       "nombre": "Turimiquire (Sucre)",
       "link": "https://turimiquire.net/2026/10/02/una-protesta-en-payara-estado-portuguesa-dejo-paralizada-a-40-gandolas-con-cereales/"
     },
@@ -80,6 +92,10 @@
     {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/sucesos/capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea/?utm_source=rss&utm_medium=rss&utm_campaign=capturan-en-tachira-al-soldado-senalado-de-matar-a-tres-companeros-en-una-base-aerea"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/jubilados-de-cantv-cumplen-12-protestas-consecutivas-exigiendo-pagos-justos-y-salud/"
     },
     {
       "nombre": "El Carabobeno",
@@ -132,18 +148,6 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/productores-de-arroz-protestan-por-los-bajos-precios-que-pagan-por-sus-cosechas/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/caficultores-amanecen-en-protesta-frente-torrefactora-exigen-que-se-respeten-los-precios-acordados/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/politica/pnb-libera-a-7-detenidos-en-marcha-opositora-no-les-devolvieron-los-equipos-de-sonido/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/regiones/ola-de-protestas-y-cacerolazos-sacude-al-centro-occidente-del-pais-por-apagones-prolongados/"
     }
   ]
 }

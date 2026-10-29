@@ -36,8 +36,8 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-10-28T08:50:45.321821+00:00",
-    "total_eventos": 69
+    "generado": "2026-10-29T00:33:09.976334+00:00",
+    "total_eventos": 73
   },
   {
     "periodo": "2026-10",
@@ -52,7 +52,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-28T02:23:19.425408+00:00",
+    "generado": "2026-10-29T00:32:40.081387+00:00",
     "total_eventos": 8
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-28T02:23:05.731305+00:00",
+    "generado": "2026-10-29T00:32:26.269276+00:00",
     "total_eventos": 6
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-28T02:21:29.923779+00:00",
+    "generado": "2026-10-29T00:30:51.918902+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-10-28T02:21:17.329483+00:00",
+    "generado": "2026-10-29T00:30:39.009714+00:00",
     "total_eventos": 1
   },
   {
@@ -100,15 +100,15 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-10-28T02:21:13.029093+00:00",
-    "total_eventos": 5
+    "generado": "2026-10-29T00:30:26.047188+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-10",
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-10-28T20:39:11.355905+00:00",
+    "generado": "2026-10-29T00:30:12.330049+00:00",
     "total_eventos": 1
   },
   {
