@@ -73,7 +73,7 @@
   #mapa-venezuela .estado:hover { opacity:0.75; }
   #mapa-venezuela .estado.sev-critico { fill:#e74c3c; }
   #mapa-venezuela .estado.sev-alto { fill:#f39c12; }
-  #mapa-venezuela .estado.sev-medio { fill:#f1c40f; }
+  #mapa-venezuela .estado.sev-medio { fill:#f7dc6f; }
   #mapa-venezuela .estado.sev-bajo { fill:#2ecc71; }
   #mapa-venezuela .estado.sev-sin_clasificar { fill:#4a5568; }
   #mapa-venezuela .estado.cant-1 { fill:#ede9fe; }
@@ -136,7 +136,7 @@
           <span>Gravedad promedio:</span>
           <span><i class="punto" style="background:#e74c3c"></i> Crítico</span>
           <span><i class="punto" style="background:#f39c12"></i> Alto</span>
-          <span><i class="punto" style="background:#f1c40f"></i> Medio</span>
+          <span><i class="punto" style="background:#f7dc6f"></i> Medio</span>
           <span><i class="punto" style="background:#2ecc71"></i> Bajo</span>
           <span><i class="punto" style="background:#4a5568"></i> Sin clasificar</span>
           <span><i class="punto" style="background:#232a33"></i> Sin eventos</span>
@@ -298,7 +298,7 @@ function cargarTendencias() {
       bajo: '🟢 Severidad baja', sin_clasificar: '⚪ Severidad sin clasificar',
     };
     const COLOR_SEVERIDAD = {
-      critico: '#e74c3c', alto: '#f39c12', medio: '#f1c40f', bajo: '#2ecc71', sin_clasificar: '#4a5568',
+      critico: '#e74c3c', alto: '#f39c12', medio: '#f7dc6f', bajo: '#2ecc71', sin_clasificar: '#4a5568',
     };
     const ORDEN_SEVERIDAD = ['critico', 'alto', 'medio', 'bajo', 'sin_clasificar'];
     const severidad = Object.entries(stats.por_severidad || {})
