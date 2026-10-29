@@ -85,8 +85,8 @@
   },
   "orden_publico::Bolivar::2026-10-28": {
     "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-29T00:26:31.934636+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T06:19:32.068786+00:00",
     "fecha_evento_temprana": "2026-10-28T22:44:00+00:00",
     "municipio": "El Callao"
   },
@@ -95,6 +95,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-29T00:28:21.925992+00:00",
     "fecha_evento_temprana": "2026-10-28T17:05:41+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Falcon::2026-10-29": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T06:19:41.001014+00:00",
+    "fecha_evento_temprana": "2026-10-29T00:48:14+00:00",
+    "municipio": "Carirubana"
+  },
+  "salud_publica::Aragua::2026-10-28": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T06:20:19.305158+00:00",
+    "fecha_evento_temprana": "2026-10-28T23:54:21+00:00",
     "municipio": null
   }
 }
