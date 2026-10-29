@@ -1,5 +1,46 @@
 [
   {
+    "tipo": "accidente_transporte",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 2.55,
+    "confirmado": true,
+    "num_fuentes": 4,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/amazonas-muere-enfermero-yanomami-en-accidente-aereo-otras-dos-personas-sobrevivieron/",
+        "fecha": "2026-10-29T18:42:41+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/un-muerto-y-dos-heridos-deja-siniestro-aereo-en-amazonas/",
+        "fecha": "2026-10-29T18:08:33+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/amazonas-muere-en-accidente-aereo-el-cientifico-e-investigador-indigena-andres-blanco/",
+        "fecha": "2026-10-29T17:54:42+00:00"
+      },
+      {
+        "nombre": "La Verdad de Monagas",
+        "link": "https://laverdaddemonagas.com/2026/10/29/accidente-aereo-en-amazonas-dejo-un-muerto-y-dos-heridos/",
+        "fecha": "2026-10-29T17:11:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-29T18:42:41+00:00",
+    "fecha_evento_temprana": "2026-10-29T17:11:49+00:00",
+    "fecha_deteccion": "2026-10-29T19:07:08.491245+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "accidente_transporte::Amazonas::2026-10-29",
+    "titulo": "Accidente de transporte en Amazonas",
+    "texto": "📌 Accidente de transporte en Amazonas\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 29/10/2026, 2:42 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 3:07 p.m.\n📊 Fuentes independientes: 4 (score 2.55)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/amazonas-muere-enfermero-yanomami-en-accidente-aereo-otras-dos-personas-sobrevivieron/\n  • La Verdad (Zulia): https://laverdad.com/un-muerto-y-dos-heridos-deja-siniestro-aereo-en-amazonas/\n  • La Prensa de Monagas: https://laprensademonagas.com/amazonas-muere-en-accidente-aereo-el-cientifico-e-investigador-indigena-andres-blanco/\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/10/29/accidente-aereo-en-amazonas-dejo-un-muerto-y-dos-heridos/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Bolivar",
     "municipio": "El Callao",
@@ -1583,31 +1624,5 @@
     "clave_dedup": "infraestructura_electrica::Portuguesa::2026-10-15",
     "titulo": "Falla eléctrica en Municipio Santa Rosalía, Portuguesa",
     "texto": "📌 Falla eléctrica en Municipio Santa Rosalía, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Santa Rosalía, Portuguesa\n🕒 Hecho reportado: 15/10/2026, 1:29 p.m.\n🔎 Detectado por el sistema: 15/10/2026, 3:19 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia/?utm_source=rss&utm_medium=rss&utm_campaign=denuncias-por-apagones-nocturnos-se-multiplican-en-araure-y-santa-rosalia"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Trujillo",
-    "municipio": null,
-    "parroquia": "Tres De Febrero",
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/sucesos/reportan-nueva-intoxicacion-masiva-en-escuela-de-trujillo/",
-        "fecha": "2026-10-15T14:32:36+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-15T14:32:36+00:00",
-    "fecha_evento_temprana": "2026-10-15T14:32:36+00:00",
-    "fecha_deteccion": "2026-10-15T15:17:40.986451+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Trujillo::2026-10-15",
-    "titulo": "Salud pública en Parroquia Tres De Febrero, Trujillo",
-    "texto": "📌 Salud pública en Parroquia Tres De Febrero, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Tres De Febrero, Trujillo\n🕒 Hecho reportado: 15/10/2026, 10:32 a.m.\n🔎 Detectado por el sistema: 15/10/2026, 11:17 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/reportan-nueva-intoxicacion-masiva-en-escuela-de-trujillo/"
   }
 ]
