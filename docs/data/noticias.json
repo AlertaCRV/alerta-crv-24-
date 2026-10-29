@@ -1,6 +1,89 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": "El Callao",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/el-callao-mineros-paralizan-minerven-para-exigir-utilidades-dignas/",
+        "fecha": "2026-10-28T22:44:00+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/trabajo/sindicato-de-la-cvg-denuncia-agresion-contra-angel-bolivar-en-caracas/",
+        "fecha": "2026-10-28T23:53:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-28T23:53:02+00:00",
+    "fecha_evento_temprana": "2026-10-28T22:44:00+00:00",
+    "fecha_deteccion": "2026-10-29T00:26:31.934636+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-10-28",
+    "titulo": "Orden público en Municipio El Callao, Bolivar",
+    "texto": "📌 Orden público en Municipio El Callao, Bolivar\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 28/10/2026, 7:53 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 8:26 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/el-callao-mineros-paralizan-minerven-para-exigir-utilidades-dignas/\n  • Primicia (Bolivar): https://primicia.com.ve/trabajo/sindicato-de-la-cvg-denuncia-agresion-contra-angel-bolivar-en-caracas/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Tachira",
+    "municipio": "San Cristóbal",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/",
+        "fecha": "2026-10-28T19:37:36+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-28T19:37:36+00:00",
+    "fecha_evento_temprana": "2026-10-28T19:37:36+00:00",
+    "fecha_deteccion": "2026-10-29T00:26:48.719779+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Tachira::2026-10-28",
+    "titulo": "Inundación en Municipio San Cristóbal, Tachira",
+    "texto": "📌 Inundación en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 28/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 8:26 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/desbordamientos-de-aguas-servidas-impulsan-plan-de-mantenimiento-en-cumana/",
+        "fecha": "2026-10-28T17:05:41+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-28T17:05:41+00:00",
+    "fecha_evento_temprana": "2026-10-28T17:05:41+00:00",
+    "fecha_deteccion": "2026-10-29T00:28:21.925992+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Sucre::2026-10-28",
+    "titulo": "Inundación en Sucre",
+    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 28/10/2026, 1:05 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 8:28 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/desbordamientos-de-aguas-servidas-impulsan-plan-de-mantenimiento-en-cumana/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
     "parroquia": "Candelaria",
@@ -86,32 +169,6 @@
     "clave_dedup": "orden_publico::Tachira::2026-10-28",
     "titulo": "Orden público en Tachira",
     "texto": "📌 Orden público en Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 28/10/2026, 3:08 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 4:35 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/jubilados-de-cantv-cumplen-12-protestas-consecutivas-exigiendo-pagos-justos-y-salud/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Tachira",
-    "municipio": "San Cristóbal",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/",
-        "fecha": "2026-10-28T19:37:36+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-28T19:37:36+00:00",
-    "fecha_evento_temprana": "2026-10-28T19:37:36+00:00",
-    "fecha_deteccion": "2026-10-28T20:35:56.341000+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Tachira::2026-10-28",
-    "titulo": "Inundación en Municipio San Cristóbal, Tachira",
-    "texto": "📌 Inundación en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 28/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 4:35 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/"
   },
   {
     "tipo": "orden_publico",
@@ -1583,31 +1640,5 @@
     "clave_dedup": "salud_publica::Guarico::2026-10-14",
     "titulo": "Salud pública en Guarico",
     "texto": "📌 Salud pública en Guarico\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 14/10/2026, 5:30 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 8:56 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/14/denuncian-la-muerte-de-un-preso-en-la-carcel-26-de-julio-de-guarico-por-presunta-falta-de-atencion-medica-14oct/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.85,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Vistazo (Anzoategui)",
-        "link": "https://diarioelvistazo.com/cuatro-sujetos-dedicados-al-robo-y-hurto-de-vehiculos-y-motos-murieron-en-enfrentamiento-con-el-cicpc-en-anzoategui/",
-        "fecha": "2026-10-14T17:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-14T17:00:00+00:00",
-    "fecha_evento_temprana": "2026-10-14T17:00:00+00:00",
-    "fecha_deteccion": "2026-10-14T22:37:53.468488+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Anzoategui::2026-10-14",
-    "titulo": "Orden público en Anzoategui",
-    "texto": "📌 Orden público en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 14/10/2026, 1:00 p.m.\n🔎 Detectado por el sistema: 14/10/2026, 6:37 p.m.\n📊 Fuentes independientes: 1 (score 0.85)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Diario El Vistazo (Anzoategui): https://diarioelvistazo.com/cuatro-sujetos-dedicados-al-robo-y-hurto-de-vehiculos-y-motos-murieron-en-enfrentamiento-con-el-cicpc-en-anzoategui/"
   }
 ]
