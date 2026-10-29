@@ -301,7 +301,6 @@ function cargarTendencias() {
     const COLOR_SEVERIDAD = {
       critico: '#e74c3c', alto: '#f39c12', medio: '#f7dc6f', bajo: '#2ecc71', sin_clasificar: '#4a5568',
     };
-    const ORDEN_SEVERIDAD = ['critico', 'alto', 'medio', 'bajo', 'sin_clasificar'];
     const severidad = Object.entries(stats.por_severidad || {})
       .sort((a, b) => ORDEN_SEVERIDAD.indexOf(a[0]) - ORDEN_SEVERIDAD.indexOf(b[0]))
       .map(([sev, n]) => [SEVERIDAD_LABELS[sev] || sev, n, COLOR_SEVERIDAD[sev]]);
@@ -329,19 +328,27 @@ const TIPO_LABELS = {
 const SEVERIDAD_LABELS_MAPA = {
   critico: 'Crítico', alto: 'Alto', medio: 'Medio', bajo: 'Bajo', sin_clasificar: 'Sin clasificar',
 };
+// Mismo orden que la leyenda del panel "Distribución de severidad" (de más a
+// menos grave), para que el desglose por nivel se lea consistente en todo el sitio.
+const ORDEN_SEVERIDAD = ['critico', 'alto', 'medio', 'bajo', 'sin_clasificar'];
 let rankingEstadosActual = [];
 let mapaListo = false;
 let cruceEstadoTipoActual = {};
 
+function desgloseSeveridad(porSeveridad, separador) {
+  return Object.entries(porSeveridad || {})
+    .sort((a, b) => ORDEN_SEVERIDAD.indexOf(a[0]) - ORDEN_SEVERIDAD.indexOf(b[0]))
+    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`).join(separador);
+}
+
 function htmlEstadisticasEstado(nombreEstado) {
   const r = rankingEstadosActual.find(e => e.estado === nombreEstado);
   if (!r) return `<strong>${nombreEstado}</strong>Sin eventos registrados en el histórico.`;
-  const desglose = Object.entries(r.por_severidad || {})
-    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`).join('<br>');
+  const desglose = desgloseSeveridad(r.por_severidad, '<br>');
   const tipos = Object.entries(cruceEstadoTipoActual[nombreEstado] || {})
     .sort((a, b) => b[1] - a[1]).slice(0, 3)
     .map(([t, n]) => `${TIPO_LABELS[t] || t}: ${n}`).join(' · ');
-  return `<strong>${nombreEstado}</strong>${r.total} evento(s), ${r.confirmados} confirmado(s)`
+  return `<strong>${nombreEstado}</strong>${r.total} evento(s)`
     + (r.indice_gravedad != null ? `<div class="tt-sec">Gravedad promedio: ${r.indice_gravedad.toFixed(1)} (${SEVERIDAD_LABELS_MAPA[r.severidad_mapa] || r.severidad_mapa})</div>` : '')
     + `<div class="tt-sec tt-niveles">${desglose}</div>`
     + (tipos ? `<div class="tt-sec">Principales: ${tipos}</div>` : '');
@@ -390,10 +397,8 @@ function mostrarDetalleEstado(nombreEstado) {
     detalle.textContent = `${nombreEstado}: sin eventos registrados en el histórico.`;
     return;
   }
-  const desglose = Object.entries(r.por_severidad || {})
-    .map(([sev, n]) => `${SEVERIDAD_LABELS_MAPA[sev] || sev}: ${n}`)
-    .join(' · ');
-  detalle.innerHTML = `<strong>${nombreEstado}</strong> — ${r.total} evento(s), ${r.confirmados} confirmado(s)<br>${desglose}`;
+  const desglose = desgloseSeveridad(r.por_severidad, ' · ');
+  detalle.innerHTML = `<strong>${nombreEstado}</strong> — ${r.total} evento(s)<br>${desglose}`;
 }
 
 let modoMapa = 'severidad';
