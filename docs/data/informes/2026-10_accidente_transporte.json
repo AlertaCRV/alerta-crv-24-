@@ -3,19 +3,39 @@
   "tipo": "accidente_transporte",
   "tipo_label": "Accidente de transporte",
   "cerrado": false,
-  "generado": "2026-10-29T00:30:12.330049+00:00",
-  "actualizado_hasta": "2026-10-28T20:35:21.391275+00:00",
-  "total_eventos": 1,
+  "generado": "2026-10-30T09:07:37.005095+00:00",
+  "actualizado_hasta": "2026-10-30T09:06:45.105658+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 0,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de octubre de 2026 se registró un único evento de accidente de transporte, lo que representa un aumento respecto al mes anterior, donde no se reportó ningún incidente (comparación con el período anterior). \n\nEl único accidente ocurrido fue un naufragio de una embarcación artesanal en el Lago de Valencia, municipio Carlos Arvelo, estado Carabobo, que tuvo lugar el domingo previo al 27 de octubre de 2026 (El Pitazo). La tragedia se catalogó con severidad crítica debido a la pérdida de vidas y los daños materiales involucrados. \n\nEl siniestro dejó tres fallecidos, entre los cuales se encontraba una niña de tres años cuyo cuerpo fue hallado el martes 27 de octubre en las aguas del lago (El Pitazo). Con la recuperación del cuerpo de la menor, la cifra de víctimas mortales se confirmó en tres personas. \n\nEste hecho constituye el único registro de accidentes de transporte en el período analizado, subrayando la necesidad de reforzar las medidas de seguridad en el transporte acuático de la región (El Pitazo).",
+  "narrativa": "En el mes de octubre de 2026 se registraron tres eventos de accidente de transporte, frente a ninguno en el mes anterior (0 evento(s) registrados entonces vs. 3 en este período). Los incidentes se concentraron en los estados Carabobo y Amazonas y tuvieron consecuencias graves, con fallecidos y heridos.\n\nEl 27 de octubre ocurrió una tragedia en el Lago de Valencia, municipio Carlos Arvelo, estado Carabobo, cuando un bote artesanal se volcó y se hundió (El Pitazo). El siniestro dejó tres muertos y, tras las labores de rescate, se halló el cuerpo de una niña de tres años que había desaparecido tras el accidente (El Pitazo). Las autoridades confirmaron que los fallecidos fueron tres pasajeros del embarcadero.\n\nEn el estado Amazonas, el 28 de octubre se produjo un accidente aéreo en la ruta hacia la comunidad indígena Yanomami de Parima B, municipio Alto Orinoco (El Pitazo). La avioneta Cessna 206 (matrícula YV‑166) se estrelló, provocando la muerte del enfermero indígena Andrés Blanco y dejando a dos personas más con lesiones leves que fueron rescatadas con vida (El Pitazo). El gobernador Miguel Rodríguez informó que los sobrevivientes fueron el piloto y un adolescente de 16 años.\n\nEl mismo accidente fue cubierto por El Siglo (Aragua), que destacó la pérdida del destacado enfermero, investigador y científico indígena Andrés Blanco, cuya muerte generó consternación en la comunidad científica nacional (El Siglo (Aragua)). La información confirmada por el gobernador subrayó la importancia de su labor humanitaria y científica en la región amazónica.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sucesos/tragedia-en-el-lago-de-valencia-hallan-cuerpo-de-nina-desaparecida-tras-naufragio-que-dejo-tres-muertos/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/amazonas-muere-enfermero-yanomami-en-accidente-aereo-otras-dos-personas-sobrevivieron/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/fallecio-en-tragico-accidente-aereo-el-investigador-y-enfermero-indigena/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/amazonas-muere-en-accidente-aereo-el-cientifico-e-investigador-indigena-andres-blanco/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/un-muerto-y-dos-heridos-deja-siniestro-aereo-en-amazonas/"
+    },
+    {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/10/29/accidente-aereo-en-amazonas-dejo-un-muerto-y-dos-heridos/"
     }
   ]
 }

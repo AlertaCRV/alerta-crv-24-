@@ -28,8 +28,8 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-10-25T11:34:01.973810+00:00",
-    "total_eventos": 15
+    "generado": "2026-10-30T09:10:08.709459+00:00",
+    "total_eventos": 16
   },
   {
     "periodo": "2026-10",
@@ -44,16 +44,16 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-10-27T08:05:59.559296+00:00",
-    "total_eventos": 12
+    "generado": "2026-10-30T09:09:38.653490+00:00",
+    "total_eventos": 20
   },
   {
     "periodo": "2026-10",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-10-29T00:32:40.081387+00:00",
-    "total_eventos": 8
+    "generado": "2026-10-30T09:09:11.764813+00:00",
+    "total_eventos": 9
   },
   {
     "periodo": "2026-10",
@@ -68,8 +68,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-10-19T10:16:57.881357+00:00",
-    "total_eventos": 17
+    "generado": "2026-10-30T09:08:44.570989+00:00",
+    "total_eventos": 20
   },
   {
     "periodo": "2026-10",
@@ -108,8 +108,8 @@
     "tipo": "accidente_transporte",
     "tipo_label": "Accidente de transporte",
     "cerrado": false,
-    "generado": "2026-10-29T00:30:12.330049+00:00",
-    "total_eventos": 1
+    "generado": "2026-10-30T09:07:37.005095+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-09",
