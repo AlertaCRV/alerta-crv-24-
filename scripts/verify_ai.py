@@ -362,6 +362,62 @@ def _deslizamiento_estructura_sin_evidencia_fuerte(texto):
     return _EVIDENCIA_FUERTE_DESLIZAMIENTO_RE.search(texto_norm) is None
 
 
+# Filtros deterministas (auditoria 30-10-2026) para tres falsos positivos por
+# palabra clave ambigua:
+# - infraestructura_electrica: nota judicial sobre sacerdotes detenidos donde
+#   "un apagon en el Palacio de Justicia" solo retrasaba la audiencia.
+# - inundacion: "desbordamientos de aguas servidas" (mantenimiento de
+#   tuberias en Cumana), sin lluvia ni cuerpo de agua que se desborde.
+# - salud_publica: muerte individual de privados de libertad por
+#   "enfermedades graves" (la palabra "enfermedad" sola no es un brote).
+# Cada filtro solo descarta si hay la senal ambigua Y falta la evidencia fuerte.
+_CONTEXTO_JUDICIAL_RE = re.compile(
+    r"\b(tribunal|juzgado|fiscalia|fiscal del ministerio|audiencia|privativa de libertad|imputad[oa]s?|acusacion)\b",
+    re.IGNORECASE,
+)
+_EVIDENCIA_FUERTE_ELECTRICA_RE = re.compile(
+    r"\b(corpoelec|sin (luz|servicio electrico|energia)|circuitos? (electricos?|afectados)|subestacion|transformador(es)?|"
+    r"racionamiento|tendido|sectores afectados|municipios afectados|horas sin)\b",
+    re.IGNORECASE,
+)
+_AGUAS_SERVIDAS_RE = re.compile(r"\b(aguas servidas|aguas negras|cloacas?|alcantarill\w+)\b", re.IGNORECASE)
+_EVIDENCIA_FUERTE_INUNDACION_RE = re.compile(
+    r"\b(lluvias?|precipitaciones|aguacero|vaguada|onda tropical|quebrada|rio|crecida|"
+    r"anegad\w+|inundad\w+|damnificad\w+)\b",
+    re.IGNORECASE,
+)
+_CONTEXTO_PRIVADOS_LIBERTAD_RE = re.compile(
+    r"\b(privados? de libertad|presos?|reclusos?|internos?|centros? de reclusion|calabozos?)\b",
+    re.IGNORECASE,
+)
+_EVIDENCIA_FUERTE_SALUD_RE = re.compile(
+    r"\b(brotes?|epidemi\w+|pandemi\w+|cuarentena|contagios?|intoxicacion masiva|alerta (sanitaria|epidemiologica)|"
+    r"casos confirmados|casos sospechosos|vacunacion|malaria|dengue|sarampion|difteria|colera)\b",
+    re.IGNORECASE,
+)
+
+
+def _electrica_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _CONTEXTO_JUDICIAL_RE.search(texto_norm):
+        return False
+    return _EVIDENCIA_FUERTE_ELECTRICA_RE.search(texto_norm) is None
+
+
+def _inundacion_aguas_servidas_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _AGUAS_SERVIDAS_RE.search(texto_norm):
+        return False
+    return _EVIDENCIA_FUERTE_INUNDACION_RE.search(texto_norm) is None
+
+
+def _salud_privados_libertad_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _CONTEXTO_PRIVADOS_LIBERTAD_RE.search(texto_norm):
+        return False
+    return _EVIDENCIA_FUERTE_SALUD_RE.search(texto_norm) is None
+
+
 # Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
 # hoy son temblores menores sin ningun dano real, y estan empañando el
 # proposito del sistema (demasiados reportes de baja relevancia). Un sismo
@@ -1516,6 +1572,12 @@ def verificar_evento_con_ia(evento):
         ):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "deslizamiento" and _deslizamiento_estructura_sin_evidencia_fuerte(representante["texto"]):
+            obvios_rechazados.append(representante)
+        elif (
+            (evento["tipo"] == "infraestructura_electrica" and _electrica_sin_evidencia_fuerte(representante["texto"]))
+            or (evento["tipo"] == "inundacion" and _inundacion_aguas_servidas_sin_evidencia_fuerte(representante["texto"]))
+            or (evento["tipo"] == "salud_publica" and _salud_privados_libertad_sin_evidencia_fuerte(representante["texto"]))
+        ):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)

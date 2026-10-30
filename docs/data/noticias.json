@@ -1,31 +1,5 @@
 [
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/grabaciones-testimonios-y-chats-sostienen-acusacion-contra-dos-sacerdotes-privados-de-libertad-por-abuso/",
-        "fecha": "2026-10-30T14:34:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-30T14:34:23+00:00",
-    "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
-    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-10-30",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 30/10/2026, 10:34 a.m.\n🔎 Detectado por el sistema: 30/10/2026, 4:37 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/grabaciones-testimonios-y-chats-sostienen-acusacion-contra-dos-sacerdotes-privados-de-libertad-por-abuso/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Merida",
     "municipio": null,
@@ -55,32 +29,6 @@
     "clave_dedup": "inundacion::Merida::2026-10-30",
     "titulo": "Inundación en Merida",
     "texto": "📌 Inundación en Merida\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 30/10/2026, 3:40 p.m.\n🔎 Detectado por el sistema: 30/10/2026, 4:38 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/10/30/fuertes-lluvias-en-merida-dejan-incomunicados-a-varios-sectores/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/intensas-lluvias-dejan-incomunicadas-a-varias-comunidades-en-merida/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/10/30/ovp-denuncia-muerte-de-dos-privados-de-libertad-por-enfermedades-graves-en-tachira-y-bolivar-30oct/",
-        "fecha": "2026-10-30T15:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-30T15:00:00+00:00",
-    "fecha_evento_temprana": "2026-10-30T15:00:00+00:00",
-    "fecha_deteccion": "2026-10-30T20:39:15.088542+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Tachira::2026-10-30",
-    "titulo": "Salud pública en Tachira",
-    "texto": "📌 Salud pública en Tachira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 30/10/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 30/10/2026, 4:39 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/10/30/ovp-denuncia-muerte-de-dos-privados-de-libertad-por-enfermedades-graves-en-tachira-y-bolivar-30oct/"
   },
   {
     "tipo": "accidente_transporte",
@@ -263,32 +211,6 @@
     "clave_dedup": "inundacion::Tachira::2026-10-28",
     "titulo": "Inundación en Municipio San Cristóbal, Tachira",
     "texto": "📌 Inundación en Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 28/10/2026, 3:37 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 8:26 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/"
-  },
-  {
-    "tipo": "inundacion",
-    "ubicacion": "Sucre",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/desbordamientos-de-aguas-servidas-impulsan-plan-de-mantenimiento-en-cumana/",
-        "fecha": "2026-10-28T17:05:41+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-28T17:05:41+00:00",
-    "fecha_evento_temprana": "2026-10-28T17:05:41+00:00",
-    "fecha_deteccion": "2026-10-29T00:28:21.925992+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "inundacion::Sucre::2026-10-28",
-    "titulo": "Inundación en Sucre",
-    "texto": "📌 Inundación en Sucre\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 28/10/2026, 1:05 p.m.\n🔎 Detectado por el sistema: 28/10/2026, 8:28 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/desbordamientos-de-aguas-servidas-impulsan-plan-de-mantenimiento-en-cumana/"
   },
   {
     "tipo": "orden_publico",
