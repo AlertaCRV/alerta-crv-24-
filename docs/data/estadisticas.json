@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-29T23:20:29.004030+00:00",
+  "actualizado": "2026-10-30T09:06:50.543778+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-29T22:48:00+00:00"
+    "hasta": "2026-10-30T00:08:16+00:00"
   },
-  "total_eventos": 569,
+  "total_eventos": 570,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 91,
@@ -21,7 +21,7 @@
     "sequia": 6,
     "explosion": 2,
     "infraestructura_agua": 26,
-    "accidente_transporte": 3,
+    "accidente_transporte": 4,
     "derrame_petrolero": 4,
     "ataque_armado": 7,
     "emergencia_metro": 2,
@@ -320,6 +320,17 @@
       "severidad_mapa": "bajo"
     },
     {
+      "estado": "Amazonas",
+      "total": 4,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 3,
+        "medio": 1
+      },
+      "indice_gravedad": 3.5,
+      "severidad_mapa": "critico"
+    },
+    {
       "estado": "Delta Amacuro",
       "total": 3,
       "confirmados": 0,
@@ -329,17 +340,6 @@
       },
       "indice_gravedad": 1.33,
       "severidad_mapa": "bajo"
-    },
-    {
-      "estado": "Amazonas",
-      "total": 3,
-      "confirmados": 1,
-      "por_severidad": {
-        "critico": 2,
-        "medio": 1
-      },
-      "indice_gravedad": 3.33,
-      "severidad_mapa": "critico"
     }
   ],
   "cruce_estado_tipo": {
@@ -559,12 +559,12 @@
     "Amazonas": {
       "salud_publica": 1,
       "orden_publico": 1,
-      "accidente_transporte": 1
+      "accidente_transporte": 2
     }
   },
   "por_severidad": {
     "alto": 129,
-    "critico": 69,
+    "critico": 70,
     "medio": 198,
     "bajo": 153,
     "sin_clasificar": 20
@@ -652,7 +652,7 @@
     },
     "accidente_transporte": {
       "2026-08": 1,
-      "2026-10": 2
+      "2026-10": 3
     },
     "derrame_petrolero": {
       "2026-08": 2,

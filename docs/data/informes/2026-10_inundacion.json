@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-27T08:05:59.559296+00:00",
-  "actualizado_hasta": "2026-10-20T00:42:01.689954+00:00",
-  "total_eventos": 12,
+  "generado": "2026-10-30T09:09:38.653490+00:00",
+  "actualizado_hasta": "2026-10-29T00:28:21.925992+00:00",
+  "total_eventos": 20,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 12
+    "actual": 20
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 12 eventos de inundación, una disminución respecto a los 16 eventos del mes anterior (2026‑09). Las lluvias intensas que se presentaron en distintas regiones del país generaron daños materiales y situaciones de riesgo para la población.\n\nEn el Distrito Capital, las fuertes precipitaciones del 7 de octubre provocaron anegaciones en sectores como Prados de María, donde aproximadamente 80 viviendas resultaron afectadas (El Pitazo). El mismo fenómeno, descrito como el \"Cordonazo de San Francisco\", fue reportado también por Turimiquire (Sucre), que confirmó el colapso de vías y la inundación de varias áreas de Caracas (Turimiquire (Sucre)).\n\nEn el estado Portuguesa, las lluvias del fin de semana del 11‑12 de octubre causaron graves afectaciones en los municipios de Ospino, Santa Rosalía y Araure, incluyendo el colapso de un puente recién inaugurado en la parroquia La Estación (El Pitazo).\n\nEn Mérida, el desbordamiento del río Chama el 9 de octubre arrastró a una mujer en el sector El Arenal del municipio Libertador, desencadenando una búsqueda intensiva por parte del Sistema de Gestión de Riesgo del estado (Notiapure).\n\nAsimismo, en cinco municipios de Portuguesa se registró una crecida del río Sarare que mantuvo bajo vigilancia el puente de Agua Blanca y generó alertas sobre posibles colapsos estructurales en la vialidad agrícola e intercomunal (La Noticia de Barinas).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 20 eventos de inundación, superando los 16 del mes anterior (2026‑09) (Comparación con el período anterior). Las lluvias intensas que se presentaron a lo largo del país provocaron daños materiales significativos en varias regiones, con afectaciones en viviendas, infraestructura vial y riesgos para la población.\n\nEn el Distrito Capital, las precipitaciones del 7 de octubre generaron inundaciones en los sectores de Prados de María y El Valle, afectando aproximadamente a 80 viviendas en la calle El Colegio (El Pitazo). Asimismo, se reportó el colapso de vías y anegaciones en distintas parroquias de Caracas, confirmadas por reportes de ciudadanos y medios locales (Turimiquire). Estas afectaciones fueron catalogadas como de alta severidad.\n\nEn el estado Portuguesa, las lluvias del 11‑12 de octubre provocaron el colapso del puente recién inaugurado en la parroquia La Estación, municipio Ospino, menos de 72 horas después de su apertura (El Pitazo). Además, la crecida del río Sarare generó inundaciones en cinco municipios, manteniendo bajo vigilancia el puente de Agua Blanca y evaluando posibles colapsos estructurales en la vialidad agrícola e intercomunal (La Noticia de Barinas). Ambas situaciones fueron calificadas como de alta severidad.\n\nEn Mérida, una mujer fue arrastrada por la crecida del río Chama en el sector El Arenal del municipio Libertador, activándose un operativo de búsqueda intensiva por parte del Sistema de Gestión de Riesgo (Notiapure). En Zulia, cuatro viviendas quedaron anegadas por las intensas lluvias, sin registrarse víctimas mortales, y las autoridades municipales mantuvieron activo el monitoreo de la zona (La Prensa de Monagas). En Táchira, el desbordamiento de una quebrada provocó el colapso del muro perimetral de la Asociación de Ganaderos del Táchira (Asogata), afectando la vialidad en San Cristóbal (La Prensa de Monagas). Todos estos eventos fueron considerados de alta severidad.\n\nLas autoridades de Protección Civil y los gobiernos estatales activaron planes de respuesta y monitoreo en tiempo real, desplegando equipos de emergencia y reforzando la vigilancia de infraestructuras críticas para mitigar los efectos de las inundaciones y proteger a la población afectada.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -30,8 +30,20 @@
       "link": "https://lanoticiadebarinas.com/2026/10/amenazan-paso-por-la-troncal-005lluvias-provocaron-inundacionesen-cinco-municipios-de-portuguesa/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/cuatro-viviendas-anegadas-por-las-intensas-lluvias-en-el-estado-zulia/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/tachira-desbordamiento-de-quebrada-afecta-vialidad-en-san-cristobal/"
+    },
+    {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/sucesos/continua-la-busqueda-de-una-mujer-tras-ser-arrastrada-por-la-crecida-del-rio-chama-en-merida/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/"
     },
     {
       "nombre": "Portuguesa al Dia",
@@ -46,12 +58,24 @@
       "link": "https://yaracuyaldia.com/venezuela/fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas/?utm_source=rss&utm_medium=rss&utm_campaign=fuertes-lluvias-causan-anegaciones-en-varios-sectores-de-caracas"
     },
     {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/proteccion-civil-mantiene-monitoreo-preventivo-por-lluvias-en-trujillo/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/arboles-caidos-anegaciones-y-zonas-sin-luz-lo-que-dejan-las-lluvias-en-caracas-este-10-de-octubre/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/occidente/zulia-lluvias-afectan-a-maracaibo-y-la-col-hay-calles-anegadas-y-viviendas-inundadas/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/lluvias-intensas-ocasionaron-anegaciones-y-elevaron-caudal-del-guaire-en-caracas/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/desbordamientos-de-aguas-servidas-impulsan-plan-de-mantenimiento-en-cumana/"
     },
     {
       "nombre": "La Verdad (Zulia)",
@@ -62,12 +86,24 @@
       "link": "https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/"
     },
     {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/principal/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/fuerte-mar-de-leva-en-carirubana-golpea-a-pescadores-este-27-oct-fotos/"
+    },
+    {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/principales/con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas/?utm_source=rss&utm_medium=rss&utm_campaign=con-los-pies-en-el-agua-estudiantes-de-virginia-ramos-en-guanare-sufren-por-inundaciones-recurrentes-en-aulas"
     },
     {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/regionales/portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-autoridades-reportan-crecidas-de-rios-riesgo-en-puentes-y-deslizamientos-por-lluvias"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fuertes-lluvias-sorprendieron-habitantes-zulia/"
     }
   ]
 }

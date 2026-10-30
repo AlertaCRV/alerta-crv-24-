@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-10-25T11:34:01.973810+00:00",
-  "actualizado_hasta": "2026-10-25T06:11:25.869446+00:00",
-  "total_eventos": 15,
+  "generado": "2026-10-30T09:10:08.709459+00:00",
+  "actualizado_hasta": "2026-10-29T06:20:19.305158+00:00",
+  "total_eventos": 16,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 2,
-    "actual": 15
+    "actual": 16
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron quince eventos de salud pública, frente a los dos reportados en septiembre del mismo año (2 evento(s) registrados entonces vs. 15 en este período). La cifra evidencia un notable incremento de incidentes que han afectado a distintas comunidades del país, demandando una respuesta coordinada de las autoridades sanitarias y de protección civil.\n\nEn el estado Trujillo se concentraron varios episodios de intoxicaciones masivas en instituciones educativas, catalogados con severidad alta. La prensa local informó casos de intoxicación en escuelas de Lara y Trujillo, con síntomas de mareo y náuseas en estudiantes y docentes (La Prensa de Lara). El presidente regional de Primero Justicia denunció la necesidad de despolitizar y de investigar exhaustivamente estas intoxicaciones, según reportó Diario El Tiempo (Trujillo). El mismo hecho fue reiterado por El Impulso (Lara), que destacó la urgencia de una evaluación científica por parte de Fundasalud. El Periodico de Monagas describió una nueva intoxicación masiva en la Escuela Fabricio Ojeda, en la parroquia Tres de Febrero de Trujillo (El Periodico de Monagas). Además, Primicia (Bolivar) informó la captura de un sospechoso con sustancias químicas vinculadas a las intoxicaciones en Trujillo (Primicia (Bolivar)).\n\nEn Guárico, la situación alcanzó un nivel crítico con la muerte de un interno de la cárcel 26 de Julio, atribuida a una presunta falta de atención médica (El Impulso (Lara)). De forma paralela, en el estado Zulia se denunció la muerte de un recluso en el Centro de Formación Hombre Nuevo Francisco Delgado por la misma causa, según El Pitazo (El Pitazo). Ambos casos subrayan graves deficiencias en la atención sanitaria dentro del sistema penitenciario.\n\nEl estado Lara también enfrentó una intoxicación masiva en una institución educativa, con más de setenta personas afectadas y evacuadas por los cuerpos de seguridad (La Prensa de Lara). En Táchira, una intoxicación masiva impactó a 68 personas, entre niños, docentes y vecinos, en el Complejo Educativo Nacional General José Antonio Bello Nieto, catalogada con severidad alta (El Pitazo).\n\nAnte este panorama, diversas organizaciones y autoridades, como Fundaredes y el Observatorio Venezolano de Prisiones, han exigido investigaciones exhaustivas y la garantía de entornos seguros en centros educativos y penitenciarios, resaltando la necesidad de fortalecer los protocolos de respuesta y la vigilancia sanitaria para prevenir futuros incidentes.",
+  "narrativa": "En el mes de octubre de 2026 se registraron un total de 16 eventos de salud pública, frente a los 2 reportados en septiembre de 2026, lo que evidencia un notable incremento de incidentes en el país (comparación proporcionada). Los hechos abarcaron intoxicaciones masivas en centros educativos, fallecimientos por falta de atención médica en instituciones penitenciarias y sospechas de actos deliberados, afectando a varias regiones.\n\nEn el estado Trujillo se documentaron múltiples episodios de alta severidad. La prensa local informó casos de intoxicación en instituciones educativas de Trujillo y Lara, con síntomas de mareo y náuseas entre estudiantes y docentes (La Prensa de Lara). El presidente regional de Primero Justicia, Emilio Fajardo, exigió despolitizar y investigar las intoxicaciones masivas registradas en escuelas trujillanas, solicitando una evaluación técnica a Fundasalud (Diario El Tiempo (Trujillo)). La misma exigencia fue reproducida por El Impulso, que reiteró la necesidad de una investigación exhaustiva (El Impulso (Lara)). Un nuevo caso de intoxicación masiva fue reportado en la Escuela Fabricio Ojeda, en la parroquia Tres de Febrero, donde varios asistentes presentaron malestar durante una reunión docente (El Periodico de Monagas). Además, la captura de un sospechoso con sustancias químicas vinculadas a las intoxicaciones se dio en el sector Morón de Valera (Primicia (Bolivar)).\n\nEn Guárico, la situación alcanzó un nivel crítico con la muerte de un interno de 59 años en la cárcel 26 de Julio, atribuida a presunta falta de atención médica y a brotes infecciosos dentro del penal (El Impulso (Lara)).\n\nEn el estado Zulia, el Observatorio Venezolano de Prisiones denunció la muerte de un recluso en el Centro de Formación Hombre Nuevo Francisco Delgado, también por falta de atención médica adecuada (El Pitazo).\n\nEn Lara, se reportaron al menos tres casos de intoxicación en instituciones educativas, con síntomas respiratorios y náuseas que obligaron a trasladar a los afectados a centros de salud (La Prensa de Lara).\n\nFinalmente, en Táchira se registró una intoxicación masiva que afectó a 68 personas, entre ellas 41 niños, en el Complejo Educativo Nacional General José Antonio Bello Nieto, generando síntomas respiratorios y la evacuación del plantel (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -56,6 +56,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-andes/intoxicacion-masiva-en-tachira-68-personas-sufren-afectaciones-respiratorias-en-una-escuela/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/representantes-piden-cuarentena-ante-presunta-intoxicacion-de-estudiantes/"
     },
     {
       "nombre": "Primicia (Bolivar)",
