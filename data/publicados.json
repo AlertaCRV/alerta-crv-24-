@@ -1,11 +1,4 @@
 {
-  "orden_publico::Falcon::2026-10-27": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-27T19:36:38.285683+00:00",
-    "fecha_evento_temprana": "2026-10-27T16:12:20+00:00",
-    "municipio": "Cacique Manaure"
-  },
   "inundacion::Zulia::2026-10-27": {
     "severidad": "alto",
     "confirmado": true,
@@ -126,10 +119,24 @@
     "municipio": null
   },
   "infraestructura_electrica::Anzoategui::2026-10-30": {
-    "severidad": "bajo",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-30T15:54:23.872831+00:00",
+    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
     "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
+    "municipio": null
+  },
+  "inundacion::Merida::2026-10-30": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-30T20:38:26.575000+00:00",
+    "fecha_evento_temprana": "2026-10-30T18:16:44+00:00",
+    "municipio": null
+  },
+  "salud_publica::Tachira::2026-10-30": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-30T20:39:15.088542+00:00",
+    "fecha_evento_temprana": "2026-10-30T15:00:00+00:00",
     "municipio": null
   }
 }
