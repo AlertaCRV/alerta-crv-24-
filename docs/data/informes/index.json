@@ -12,7 +12,7 @@
     "tipo": "tormenta_electrica",
     "tipo_label": "Tormenta eléctrica",
     "cerrado": false,
-    "generado": "2026-10-29T06:24:25.387695+00:00",
+    "generado": "2026-10-30T02:50:58.662664+00:00",
     "total_eventos": 1
   },
   {
@@ -20,7 +20,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-10-29T06:24:12.668874+00:00",
+    "generado": "2026-10-30T02:50:54.049539+00:00",
     "total_eventos": 1
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-10-29T00:32:26.269276+00:00",
+    "generado": "2026-10-30T02:49:13.284282+00:00",
     "total_eventos": 6
   },
   {
@@ -84,7 +84,7 @@
     "tipo": "crisis_migratoria",
     "tipo_label": "Crisis migratoria",
     "cerrado": false,
-    "generado": "2026-10-29T00:30:51.918902+00:00",
+    "generado": "2026-10-30T02:47:39.141638+00:00",
     "total_eventos": 1
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-10-29T00:30:39.009714+00:00",
+    "generado": "2026-10-30T02:47:34.430075+00:00",
     "total_eventos": 1
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-10-29T00:30:26.047188+00:00",
+    "generado": "2026-10-30T02:47:30.092455+00:00",
     "total_eventos": 6
   },
   {

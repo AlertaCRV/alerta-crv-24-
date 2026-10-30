@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Lara::2026-10-27": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-27T02:16:25.975835+00:00",
-    "fecha_evento_temprana": "2026-10-27T00:00:00+00:00",
-    "municipio": null
-  },
   "orden_publico::Falcon::2026-10-27": {
     "severidad": "medio",
     "confirmado": false,
