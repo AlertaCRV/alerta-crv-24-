@@ -9906,3 +9906,16 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 30-10-2026: tres falsos positivos por palabra clave ambigua (apagón incidental, aguas servidas, presos enfermos)
+
+**Hallazgos** (alertas del 28-30/10 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`infraestructura_electrica::Anzoategui`** (El Pitazo): nota judicial sobre dos sacerdotes privados de libertad; el "apagón en el Palacio de Justicia" solo retrasó la audiencia. Además estaba duplicada en el histórico.
+2. **`inundacion::Sucre`** (El Tiempo Anzoátegui): "desbordamientos de aguas servidas" en Cumaná y plan de mantenimiento de tuberías; sin lluvia ni cuerpo de agua.
+3. **`salud_publica::Tachira`** (El Impulso, OVP) publicada como CRÍTICA: muerte de dos presos por "enfermedades graves" en Táchira y Bolívar; la palabra "enfermedad" sola no es un brote.
+- **Causa raíz**: palabras clave genéricas (apagón, desbordamiento, enfermedad) sin comprobar el contexto.
+- **Corrección**: tres filtros deterministas previos a la IA en `verify_ai.py` (`_electrica_sin_evidencia_fuerte`, `_inundacion_aguas_servidas_sin_evidencia_fuerte`, `_salud_privados_libertad_sin_evidencia_fuerte`); cada uno descarta solo si hay la señal ambigua y falta la evidencia fuerte. Tests nuevos con casos de control en `tests/test_verify_ai_filtros.py`.
+- **Corrección retroactiva**: las tres alertas retiradas de `noticias.json`, `historico_eventos.jsonl`, `historico_fuentes_texto.jsonl` y `publicados.json`; `estadisticas.json` regenerado.
+- **Nota**: el filtro de salud también habría descartado alertas antiguas de reclusos (Lara 12 y 21-08, Zulia 19-10) y una de aguas servidas en Barinas (27-09); no se tocaron por quedar fuera de la ventana de 48 h. Conviene revisarlas.
+
+**Revisado y sin cambios**: inundación Mérida (El Rincón), accidente aéreo Amazonas, orden público Bolívar/Monagas, electricidad Falcón (Paraguaná), salud Aragua. Pendiente de decidir: `orden_publico::Distrito Capital::2026-10-29` (Portuguesa Reporta; la nota parece de una protesta en Acarigua, Portuguesa, pero el texto guardado está truncado) y `orden_publico::Tachira::2026-10-24` (Base Aérea).

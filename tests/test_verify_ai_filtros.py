@@ -11,6 +11,9 @@ mismo falso positivo/negativo.
 from classify import clasificar_item
 from verify import agrupar_y_verificar
 from verify_ai import (
+    _electrica_sin_evidencia_fuerte,
+    _inundacion_aguas_servidas_sin_evidencia_fuerte,
+    _salud_privados_libertad_sin_evidencia_fuerte,
     _deslizamiento_estructura_sin_evidencia_fuerte,
     _es_retrospectiva_obvia,
     _extraer_severidad_ia,
@@ -731,3 +734,41 @@ def test_municipio_solo_en_contexto_no_territorial():
     real = _normalizar("Ataque en Maracaibo; el lago de Maracaibo estaba en calma.")
     assert not _solo_en_contexto_no_territorial("Maracaibo", real)
     assert _es_retrospectiva_obvia("Al cumplirse 14 y 9 años de las protestas del 2014 y 2017")
+
+
+# --- auditoria 30-10-2026: apagon incidental, aguas servidas, presos ------
+
+def test_electrica_nota_judicial_con_apagon_incidental_se_descarta():
+    # Caso real: sacerdotes detenidos en Anzoategui; la audiencia se extendio
+    # "debido a un apagon en el Palacio de Justicia" (el "Circuito" es judicial).
+    texto = ("El Tribunal Cuarto de Control dicto medida privativa de libertad contra los sacerdotes. "
+             "La audiencia se extendio hasta la madrugada debido a un apagon en el Palacio de Justicia. "
+             "Circuito Judicial Penal del estado.")
+    assert _electrica_sin_evidencia_fuerte(texto) is True
+
+
+def test_electrica_apagon_real_no_se_descarta():
+    texto = "Apagon en cuatro municipios: Corpoelec atiende la falla en la subestacion tras horas sin luz."
+    assert _electrica_sin_evidencia_fuerte(texto) is False
+
+
+def test_inundacion_aguas_servidas_sin_lluvia_se_descarta():
+    # Caso real: desbordamientos de aguas servidas en Cumana (plan de mantenimiento).
+    texto = "Los desbordamientos de aguas servidas en Cumana motivaron un plan de mantenimiento de la red de saneamiento."
+    assert _inundacion_aguas_servidas_sin_evidencia_fuerte(texto) is True
+
+
+def test_inundacion_aguas_servidas_con_lluvia_no_se_descarta():
+    texto = "Las fuertes lluvias provocaron el desbordamiento de aguas servidas y anegaron varias calles."
+    assert _inundacion_aguas_servidas_sin_evidencia_fuerte(texto) is False
+
+
+def test_salud_muerte_de_presos_por_enfermedad_se_descarta():
+    # Caso real: OVP denuncia muerte de dos privados de libertad por enfermedades graves.
+    texto = "El OVP denuncio la muerte de dos privados de libertad que padecian enfermedades graves en Tachira y Bolivar."
+    assert _salud_privados_libertad_sin_evidencia_fuerte(texto) is True
+
+
+def test_salud_brote_en_carcel_no_se_descarta():
+    texto = "Brote de tuberculosis en un centro de reclusion: reportan casos confirmados entre los presos."
+    assert _salud_privados_libertad_sin_evidencia_fuerte(texto) is False

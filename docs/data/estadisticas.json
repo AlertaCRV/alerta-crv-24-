@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-30T20:39:16.704456+00:00",
+  "actualizado": "2026-10-30T23:09:53.912168+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-30T19:40:16+00:00"
   },
-  "total_eventos": 574,
+  "total_eventos": 570,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 92,
-    "infraestructura_electrica": 49,
+    "inundacion": 91,
+    "infraestructura_electrica": 47,
     "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 198,
-    "salud_publica": 28,
+    "salud_publica": 27,
     "crisis_migratoria": 7,
     "incendio": 61,
     "vialidad": 26,
@@ -85,16 +85,16 @@
     },
     {
       "estado": "Tachira",
-      "total": 36,
+      "total": 35,
       "confirmados": 2,
       "por_severidad": {
         "alto": 12,
         "bajo": 6,
         "medio": 7,
-        "critico": 9,
+        "critico": 8,
         "sin_clasificar": 2
       },
-      "indice_gravedad": 2.71,
+      "indice_gravedad": 2.67,
       "severidad_mapa": "alto"
     },
     {
@@ -191,20 +191,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Anzoategui",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 7,
-        "medio": 6,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 1.94,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -232,16 +218,17 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Sucre",
+      "estado": "Anzoategui",
       "total": 16,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 6,
-        "bajo": 8,
-        "alto": 2
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6,
+        "medio": 6
       },
-      "indice_gravedad": 1.62,
-      "severidad_mapa": "bajo"
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Carabobo",
@@ -255,6 +242,18 @@
       },
       "indice_gravedad": 2.33,
       "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Sucre",
+      "total": 15,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 5,
+        "bajo": 8,
+        "alto": 2
+      },
+      "indice_gravedad": 1.6,
+      "severidad_mapa": "bajo"
     },
     {
       "estado": "La Guaira",
@@ -414,7 +413,7 @@
       "infraestructura_electrica": 3
     },
     "Sucre": {
-      "inundacion": 5,
+      "inundacion": 4,
       "orden_publico": 6,
       "infraestructura_electrica": 2,
       "infraestructura_agua": 2,
@@ -435,7 +434,7 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -447,7 +446,7 @@
       "vialidad": 2,
       "motin_carcelario": 1,
       "ataque_armado": 2,
-      "salud_publica": 4
+      "salud_publica": 3
     },
     "Bolivar": {
       "orden_publico": 9,
@@ -565,10 +564,10 @@
   },
   "por_severidad": {
     "alto": 129,
-    "critico": 71,
-    "medio": 199,
-    "bajo": 154,
-    "sin_clasificar": 21
+    "critico": 70,
+    "medio": 198,
+    "bajo": 153,
+    "sin_clasificar": 20
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -581,13 +580,13 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 21
+      "2026-10": 20
     },
     "infraestructura_electrica": {
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 11
+      "2026-10": 9
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -611,7 +610,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 17
+      "2026-10": 16
     },
     "crisis_migratoria": {
       "2026-07": 4,
