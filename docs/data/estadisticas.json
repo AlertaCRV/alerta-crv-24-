@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-31T20:03:16.642867+00:00",
+  "actualizado": "2026-10-31T23:21:54.649042+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-31T16:08:28+00:00"
   },
-  "total_eventos": 579,
+  "total_eventos": 581,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
@@ -12,7 +12,7 @@
     "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 200,
-    "salud_publica": 30,
+    "salud_publica": 32,
     "crisis_migratoria": 7,
     "incendio": 61,
     "vialidad": 26,
@@ -113,13 +113,14 @@
     },
     {
       "estado": "Barinas",
-      "total": 28,
+      "total": 29,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
         "medio": 12,
         "bajo": 8,
-        "critico": 4
+        "critico": 4,
+        "sin_clasificar": 1
       },
       "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
@@ -151,6 +152,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Trujillo",
+      "total": 22,
+      "confirmados": 1,
+      "por_severidad": {
+        "medio": 10,
+        "bajo": 3,
+        "critico": 1,
+        "alto": 6,
+        "sin_clasificar": 2
+      },
+      "indice_gravedad": 2.25,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Bolivar",
       "total": 22,
       "confirmados": 2,
@@ -162,20 +177,6 @@
         "sin_clasificar": 3
       },
       "indice_gravedad": 1.95,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Trujillo",
-      "total": 21,
-      "confirmados": 1,
-      "por_severidad": {
-        "medio": 10,
-        "bajo": 3,
-        "critico": 1,
-        "alto": 6,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 2.25,
       "severidad_mapa": "medio"
     },
     {
@@ -402,7 +403,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 2,
-      "salud_publica": 7
+      "salud_publica": 8
     },
     "Barinas": {
       "deslizamiento": 4,
@@ -410,7 +411,7 @@
       "vialidad": 4,
       "orden_publico": 8,
       "infraestructura_agua": 1,
-      "salud_publica": 2,
+      "salud_publica": 3,
       "infraestructura_electrica": 3
     },
     "Sucre": {
@@ -568,7 +569,7 @@
     "critico": 71,
     "medio": 200,
     "bajo": 155,
-    "sin_clasificar": 21
+    "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -611,7 +612,7 @@
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 19
+      "2026-10": 21
     },
     "crisis_migratoria": {
       "2026-07": 4,
