@@ -1,45 +1,10 @@
 {
-  "orden_publico::Distrito Capital::2026-10-28": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-28T20:35:12.594934+00:00",
-    "fecha_evento_temprana": "2026-10-28T16:29:58+00:00",
-    "municipio": null
-  },
-  "accidente_transporte::Carabobo::2026-10-28": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T20:35:21.391275+00:00",
-    "fecha_evento_temprana": "2026-10-28T17:25:27+00:00",
-    "municipio": "Carlos Arvelo"
-  },
-  "orden_publico::Tachira::2026-10-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T20:35:30.791140+00:00",
-    "fecha_evento_temprana": "2026-10-28T19:08:45+00:00",
-    "municipio": null
-  },
   "inundacion::Tachira::2026-10-28": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-10-29T00:26:48.719779+00:00",
     "fecha_evento_temprana": "2026-10-28T19:37:36+00:00",
     "municipio": "San Cristóbal"
-  },
-  "orden_publico::Anzoategui::2026-10-28": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T20:37:18.369478+00:00",
-    "fecha_evento_temprana": "2026-10-28T17:58:40+00:00",
-    "municipio": null
-  },
-  "ataque_armado::Zulia::2026-10-28": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T20:38:09.143374+00:00",
-    "fecha_evento_temprana": "2026-10-28T19:31:04+00:00",
-    "municipio": null
   },
   "orden_publico::Bolivar::2026-10-28": {
     "severidad": "medio",
@@ -119,16 +84,16 @@
     "municipio": "El Callao"
   },
   "salud_publica::Barinas::2026-10-31": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-31T16:12:38.399500+00:00",
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-31T23:21:03.498906+00:00",
     "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
     "municipio": "Alberto Arvelo Torrealba"
   },
   "salud_publica::Trujillo::2026-10-31": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-10-31T16:12:42.968847+00:00",
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-31T23:21:29.054602+00:00",
     "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
     "municipio": "Bocono"
   },
