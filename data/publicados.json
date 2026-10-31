@@ -76,25 +76,11 @@
     "fecha_evento_temprana": "2026-10-30T00:08:16+00:00",
     "municipio": null
   },
-  "orden_publico::Distrito Capital::2026-10-29": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-29T23:18:29.850635+00:00",
-    "fecha_evento_temprana": "2026-10-29T19:39:05+00:00",
-    "municipio": null
-  },
   "orden_publico::Monagas::2026-10-29": {
     "severidad": "bajo",
     "confirmado": false,
     "fecha_deteccion": "2026-10-29T23:18:55.441300+00:00",
     "fecha_evento_temprana": "2026-10-29T22:48:00+00:00",
-    "municipio": null
-  },
-  "infraestructura_electrica::Anzoategui::2026-10-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
-    "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
     "municipio": null
   },
   "inundacion::Merida::2026-10-30": {
@@ -110,13 +96,6 @@
     "fecha_deteccion": "2026-10-30T20:39:15.088542+00:00",
     "fecha_evento_temprana": "2026-10-30T15:00:00+00:00",
     "municipio": null
-  },
-  "orden_publico::Bolivar::2026-10-31": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T16:12:32.588816+00:00",
-    "fecha_evento_temprana": "2026-10-31T14:35:00+00:00",
-    "municipio": "El Callao"
   },
   "salud_publica::Barinas::2026-10-31": {
     "severidad": "alto",
@@ -144,6 +123,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-10-31T20:03:15.724613+00:00",
     "fecha_evento_temprana": "2026-10-31T16:08:28+00:00",
+    "municipio": null
+  },
+  "orden_publico::Portuguesa::2026-10-29": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-29T23:18:29.850635+00:00",
+    "fecha_evento_temprana": "2026-10-29T19:39:05+00:00",
     "municipio": null
   }
 }

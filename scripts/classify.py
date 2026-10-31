@@ -2423,6 +2423,104 @@ _EVIDENCIA_FUERTE_APAGON_SIN_APAGONES = [
 ]
 
 
+
+# Caso real (30-10-2026): una nota judicial sobre dos sacerdotes privados de
+# libertad por abuso mencionaba, solo como circunstancia, que "la audiencia se
+# extendio hasta la madrugada debido a un apagon en el Palacio de Justicia" y
+# se publico como infraestructura_electrica en Anzoategui. Se descarta cuando
+# el texto es una nota de tribunales/fiscalia Y no hay ninguna evidencia de
+# falla del servicio electrico (sectores sin luz, Corpoelec, cuadrillas...).
+_MARCADORES_NOTA_JUDICIAL = [
+    "juzgado", "tribunal", "audiencia", "privativa de libertad",
+    "imputado", "imputados", "imputada", "ministerio publico", "fiscal del",
+]
+_EVIDENCIA_FALLA_SERVICIO_ELECTRICO = [
+    "corpoelec", "sin luz", "sin servicio electrico", "sin energia electrica",
+    "sectores afectados", "cuadrillas", "racionamiento", "cortes de luz",
+    "corte de luz", "fallas electricas", "falla electrica", "subestacion",
+    "transformador", "comunidades afectadas",
+]
+
+
+def _es_apagon_circunstancial_en_nota_judicial(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_NOTA_JUDICIAL):
+        return False
+    return not any(m in texto_norm for m in _EVIDENCIA_FALLA_SERVICIO_ELECTRICO)
+
+
+# Caso real (31-10-2026): "Pago de $2.000 de utilidades en Minerven: como lo
+# lograron los mineros" -- la huelga de 48 horas YA TERMINO con acuerdo y "los
+# turnos se reanudaron sin contratiempos"; se publico como una alerta nueva de
+# orden_publico (duplicando la del 28-10 sobre la misma huelga). Se descarta
+# solo si el texto declara el cierre del conflicto (acuerdo + reanudacion) y
+# no hay senal de conflicto aun vigente.
+_MARCADORES_CONFLICTO_CERRADO = [
+    "se reanudaron", "retomaron las labores", "reanudaron las operaciones",
+    "levantaron la protesta", "levantaron el paro", "levantaron la huelga",
+]
+_MARCADORES_ACUERDO_LOGRADO = [
+    "acuerdo a favor", "llegaron a un acuerdo", "se comprometio a pagar",
+    "se comprometio a", "culmino con un acuerdo", "termino con un acuerdo",
+]
+_MARCADORES_CONFLICTO_VIGENTE = [
+    "continuan", "continua la protesta", "mantienen la protesta", "siguen en protesta",
+    "enfrentamiento", "detenidos", "heridos", "represion",
+]
+
+
+def _es_conflicto_laboral_concluido_con_acuerdo(texto_norm):
+    if not any(m in texto_norm for m in _MARCADORES_CONFLICTO_CERRADO):
+        return False
+    if not any(m in texto_norm for m in _MARCADORES_ACUERDO_LOGRADO):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CONFLICTO_VIGENTE)
+
+
+# Caso real (29-10-2026): "Trabajadores protestan por salarios dignos..."
+# (dateline "Acarigua.-", protesta en la redoma de Mamanico, Portuguesa) se
+# publico en Distrito Capital porque el texto menciona una asamblea FUTURA
+# "en Caracas". Si la nota abre con un dateline "Ciudad.-" de una ciudad
+# conocida de otro estado, Caracas/Distrito Capital deja de ser la ubicacion
+# del hecho (a menos que el texto diga explicitamente "Distrito Capital" o
+# "municipio Libertador") y se reemplaza por el estado del dateline.
+_CIUDAD_A_ESTADO = {
+    "acarigua": "Portuguesa", "araure": "Portuguesa", "guanare": "Portuguesa",
+    "barquisimeto": "Lara", "cabudare": "Lara", "maracaibo": "Zulia",
+    "cabimas": "Zulia", "valencia": "Carabobo", "maracay": "Aragua",
+    "barinas": "Barinas", "merida": "Merida", "san cristobal": "Tachira",
+    "puerto ordaz": "Bolivar", "ciudad bolivar": "Bolivar", "maturin": "Monagas",
+    "cumana": "Sucre", "barcelona": "Anzoategui", "puerto la cruz": "Anzoategui",
+    "el tigre": "Anzoategui", "coro": "Falcon", "punto fijo": "Falcon",
+    "trujillo": "Trujillo", "valera": "Trujillo", "san felipe": "Yaracuy",
+    "san carlos": "Cojedes", "san fernando de apure": "Apure",
+    "puerto ayacucho": "Amazonas", "tucupita": "Delta Amacuro",
+    "la asuncion": "Nueva Esparta", "porlamar": "Nueva Esparta",
+}
+_DATELINE_RE = re.compile(r"([a-z]+(?: [a-z]+){0,3})\s*\.\s*-")
+
+
+def _estado_por_dateline(texto_norm):
+    for m in _DATELINE_RE.finditer(texto_norm[:1200]):
+        palabras = m.group(1).split()
+        for n in (3, 2, 1):  # el dateline es el sufijo de la frase previa al ".-"
+            ciudad = " ".join(palabras[-n:])
+            if ciudad in _CIUDAD_A_ESTADO:
+                return _CIUDAD_A_ESTADO[ciudad]
+    return None
+
+
+def _corregir_ubicaciones_por_dateline(texto_norm, ubicaciones):
+    estado_dl = _estado_por_dateline(texto_norm)
+    if estado_dl is None or any(u == estado_dl for u, _ in ubicaciones):
+        return ubicaciones
+    if "distrito capital" in texto_norm or "municipio libertador" in texto_norm:
+        return ubicaciones
+    dc = [(u, v) for u, v in ubicaciones if u == "Distrito Capital"]
+    if not dc:
+        return ubicaciones
+    resto = [(u, v) for u, v in ubicaciones if u != "Distrito Capital"]
+    return resto + [(estado_dl, dc[0][1])]
+
 def _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_norm):
     if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_COMITE_SEGUIMIENTO_APAGONES):
         return False
@@ -3580,7 +3678,11 @@ def detectar_tipo(texto, ventana=None):
                     break
                 if tipo == "orden_publico" and _es_delito_individual_sin_conflicto_civil(texto_completo_norm):
                     break
+                if tipo == "orden_publico" and _es_conflicto_laboral_concluido_con_acuerdo(texto_completo_norm):
+                    break
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_apagon_circunstancial_en_nota_judicial(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_completo_norm):
                     break
@@ -3683,6 +3785,7 @@ def clasificar_item(item):
         return [item]
 
     ubicaciones = detectar_ubicacion(item["texto"])
+    ubicaciones = _corregir_ubicaciones_por_dateline(_normalizar(item["texto"]), ubicaciones)
     if not ubicaciones:
         item["ubicacion"] = None
         item["tipos"] = []

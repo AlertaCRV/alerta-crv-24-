@@ -731,3 +731,26 @@ def test_municipio_solo_en_contexto_no_territorial():
     real = _normalizar("Ataque en Maracaibo; el lago de Maracaibo estaba en calma.")
     assert not _solo_en_contexto_no_territorial("Maracaibo", real)
     assert _es_retrospectiva_obvia("Al cumplirse 14 y 9 años de las protestas del 2014 y 2017")
+
+
+def test_filtros_classify_auditoria_31_10():
+    from classify import (
+        _es_apagon_circunstancial_en_nota_judicial,
+        _es_conflicto_laboral_concluido_con_acuerdo,
+        _corregir_ubicaciones_por_dateline,
+        _normalizar,
+    )
+    judicial = _normalizar("El Tribunal Cuarto de Control dicto privativa de libertad. La audiencia "
+                           "se extendio por un apagon en el Palacio de Justicia.")
+    assert _es_apagon_circunstancial_en_nota_judicial(judicial)
+    real = _normalizar("Apagon en Barcelona: Corpoelec envia cuadrillas; el tribunal suspendio audiencias.")
+    assert not _es_apagon_circunstancial_en_nota_judicial(real)
+    cerrado = _normalizar("La protesta termino con un acuerdo a favor de los mineros y los turnos se reanudaron.")
+    assert _es_conflicto_laboral_concluido_con_acuerdo(cerrado)
+    vigente = _normalizar("Los turnos se reanudaron pero hay detenidos y llegaron a un acuerdo parcial.")
+    assert not _es_conflicto_laboral_concluido_con_acuerdo(vigente)
+    texto = _normalizar("Trabajadores protestan por salarios Acarigua.- Marcharon en la redoma. "
+                        "El 3 de noviembre habra una asamblea en Caracas.")
+    assert _corregir_ubicaciones_por_dateline(texto, [("Distrito Capital", "v")]) == [("Portuguesa", "v")]
+    explicito = _normalizar("Acarigua.- Protesta frente a la sede en el Distrito Capital.")
+    assert _corregir_ubicaciones_por_dateline(explicito, [("Distrito Capital", "v")]) == [("Distrito Capital", "v")]

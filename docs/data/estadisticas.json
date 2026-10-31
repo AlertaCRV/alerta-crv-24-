@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-10-31T20:03:16.642867+00:00",
+  "actualizado": "2026-10-31T23:12:14.153117+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-31T16:08:28+00:00"
   },
-  "total_eventos": 579,
+  "total_eventos": 576,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 49,
+    "infraestructura_electrica": 47,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 200,
+    "orden_publico": 199,
     "salud_publica": 30,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -30,16 +30,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 97,
+      "total": 96,
       "confirmados": 16,
       "por_severidad": {
         "alto": 17,
         "medio": 31,
-        "bajo": 31,
+        "bajo": 30,
         "critico": 13,
         "sin_clasificar": 5
       },
-      "indice_gravedad": 2.13,
+      "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
     },
     {
@@ -72,15 +72,15 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 38,
+      "total": 39,
       "confirmados": 4,
       "por_severidad": {
-        "bajo": 10,
+        "bajo": 11,
         "medio": 13,
         "critico": 3,
         "alto": 12
       },
-      "indice_gravedad": 2.21,
+      "indice_gravedad": 2.18,
       "severidad_mapa": "medio"
     },
     {
@@ -151,20 +151,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Bolivar",
-      "total": 22,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 6,
-        "medio": 10,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 1.95,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Trujillo",
       "total": 21,
       "confirmados": 1,
@@ -179,6 +165,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Bolivar",
+      "total": 21,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 5,
+        "medio": 10,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Merida",
       "total": 20,
       "confirmados": 0,
@@ -188,20 +188,6 @@
         "medio": 4
       },
       "indice_gravedad": 2.3,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 7,
-        "medio": 6,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 1.94,
       "severidad_mapa": "medio"
     },
     {
@@ -242,6 +228,19 @@
       },
       "indice_gravedad": 1.62,
       "severidad_mapa": "bajo"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6,
+        "medio": 6
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Carabobo",
@@ -384,7 +383,7 @@
     "Distrito Capital": {
       "deslizamiento": 4,
       "inundacion": 18,
-      "orden_publico": 33,
+      "orden_publico": 32,
       "incendio": 20,
       "vialidad": 5,
       "infraestructura_electrica": 9,
@@ -435,7 +434,7 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -450,7 +449,7 @@
       "salud_publica": 4
     },
     "Bolivar": {
-      "orden_publico": 10,
+      "orden_publico": 9,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -520,7 +519,7 @@
       "infraestructura_electrica": 1
     },
     "Portuguesa": {
-      "orden_publico": 18,
+      "orden_publico": 19,
       "inundacion": 7,
       "incendio": 1,
       "infraestructura_agua": 2,
@@ -567,8 +566,8 @@
     "alto": 132,
     "critico": 71,
     "medio": 200,
-    "bajo": 155,
-    "sin_clasificar": 21
+    "bajo": 153,
+    "sin_clasificar": 20
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -587,7 +586,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 11
+      "2026-10": 9
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -605,7 +604,7 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 78
+      "2026-10": 77
     },
     "salud_publica": {
       "2026-07": 1,
