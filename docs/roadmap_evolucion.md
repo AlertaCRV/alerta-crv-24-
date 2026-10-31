@@ -9906,3 +9906,15 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 31-10-2026: apagón incidental en nota judicial, protesta ya concluida y dateline ignorado (Caracas futura)
+
+**Hallazgos** (alertas del 29-31/10 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`infraestructura_electrica::Anzoategui::2026-10-30`** (El Pitazo): nota judicial sobre dos sacerdotes privados de libertad por abuso; "apagón en el Palacio de Justicia" es solo la razón por la que la audiencia se extendió. Falso positivo (publicado dos veces en el histórico, "bajo" y luego "sin_clasificar").
+2. **`orden_publico::Bolivar::2026-10-31`** (El Pitazo, "Pago de $2.000 de utilidades en Minerven"): la huelga de 48 h ya había terminado con acuerdo y reanudación de turnos; además duplicaba la alerta del 28-10 sobre la misma huelga.
+3. **`orden_publico::Distrito Capital::2026-10-29`** (Portuguesa Reporta): protesta en la redoma de Mamanico, **Acarigua (Portuguesa)**; "Caracas" solo aparece como sede de una asamblea futura (3 de noviembre).
+- **Causa raíz / corrección** (`classify.py`, filtros deterministas con tests en `tests/test_verify_ai_filtros.py`): `_es_apagon_circunstancial_en_nota_judicial` (marcadores de tribunal/audiencia sin evidencia de falla del servicio: Corpoelec, sectores sin luz, cuadrillas...), `_es_conflicto_laboral_concluido_con_acuerdo` (reanudación + acuerdo logrado y sin señal de conflicto vigente) y `_corregir_ubicaciones_por_dateline` (dateline "Ciudad.-" de una ciudad conocida, tabla `_CIUDAD_A_ESTADO`, reemplaza a Distrito Capital cuando el texto no dice "Distrito Capital"/"municipio Libertador").
+- **Verificación**: la regresión contra todo el histórico solo cambia los 4 registros corregidos; el resto de la suite sigue verde.
+- **Corrección retroactiva**: retiradas las alertas 1 y 2 de `noticias.json`, históricos y `publicados.json`; la 3 pasa a `orden_publico::Portuguesa::2026-10-29`; informe `2026-10_infraestructura_electrica.json` sin la fuente ni el evento; `estadisticas.json` regenerado.
+
+**Pendiente de decidir**: `salud_publica::Tachira::2026-10-30` (El Impulso, OVP denuncia la muerte de un privado de libertad por enfermedad grave en Táchira, severidad crítica con texto de una línea): ¿corresponde a salud pública/crítico o es nota carcelaria? Mismo criterio que otros OVP ya publicados; no se tocó. Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo Base Aérea).
