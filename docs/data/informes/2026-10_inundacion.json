@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-10-30T09:09:38.653490+00:00",
-  "actualizado_hasta": "2026-10-29T00:28:21.925992+00:00",
-  "total_eventos": 20,
+  "generado": "2026-10-31T11:17:14.705684+00:00",
+  "actualizado_hasta": "2026-10-30T20:38:26.575000+00:00",
+  "total_eventos": 21,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 16,
-    "actual": 20
+    "actual": 21
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 20 eventos de inundación, superando los 16 del mes anterior (2026‑09) (Comparación con el período anterior). Las lluvias intensas que se presentaron a lo largo del país provocaron daños materiales significativos en varias regiones, con afectaciones en viviendas, infraestructura vial y riesgos para la población.\n\nEn el Distrito Capital, las precipitaciones del 7 de octubre generaron inundaciones en los sectores de Prados de María y El Valle, afectando aproximadamente a 80 viviendas en la calle El Colegio (El Pitazo). Asimismo, se reportó el colapso de vías y anegaciones en distintas parroquias de Caracas, confirmadas por reportes de ciudadanos y medios locales (Turimiquire). Estas afectaciones fueron catalogadas como de alta severidad.\n\nEn el estado Portuguesa, las lluvias del 11‑12 de octubre provocaron el colapso del puente recién inaugurado en la parroquia La Estación, municipio Ospino, menos de 72 horas después de su apertura (El Pitazo). Además, la crecida del río Sarare generó inundaciones en cinco municipios, manteniendo bajo vigilancia el puente de Agua Blanca y evaluando posibles colapsos estructurales en la vialidad agrícola e intercomunal (La Noticia de Barinas). Ambas situaciones fueron calificadas como de alta severidad.\n\nEn Mérida, una mujer fue arrastrada por la crecida del río Chama en el sector El Arenal del municipio Libertador, activándose un operativo de búsqueda intensiva por parte del Sistema de Gestión de Riesgo (Notiapure). En Zulia, cuatro viviendas quedaron anegadas por las intensas lluvias, sin registrarse víctimas mortales, y las autoridades municipales mantuvieron activo el monitoreo de la zona (La Prensa de Monagas). En Táchira, el desbordamiento de una quebrada provocó el colapso del muro perimetral de la Asociación de Ganaderos del Táchira (Asogata), afectando la vialidad en San Cristóbal (La Prensa de Monagas). Todos estos eventos fueron considerados de alta severidad.\n\nLas autoridades de Protección Civil y los gobiernos estatales activaron planes de respuesta y monitoreo en tiempo real, desplegando equipos de emergencia y reforzando la vigilancia de infraestructuras críticas para mitigar los efectos de las inundaciones y proteger a la población afectada.",
+  "narrativa": "En el mes de octubre de 2026 se registraron 21 eventos de inundación, superando los 16 del mes anterior (comparación con el período anterior). Este incremento refleja la intensidad de las precipitaciones que afectaron a diversas regiones del país, generando daños materiales y la necesidad de activar planes de respuesta.\n\nEn el Distrito Capital, las fuertes lluvias del 7 de octubre provocaron inundaciones en sectores como Prados de María, donde aproximadamente 80 viviendas resultaron afectadas (El Pitazo). Simultáneamente, Turimiquire informó que el mismo fenómeno de “El Cordonazo de San Francisco” generó inundaciones y colapso de vías en varias zonas de Caracas, confirmando la gravedad de la situación en la capital (Turimiquire).\n\nEn el estado Portuguesa, las lluvias del fin de semana del 11‑12 de octubre colapsaron un puente recién inaugurado en Ospino y causaron anegaciones en municipios como Santa Rosalía y Araure, afectando viviendas y la infraestructura vial (El Pitazo). La Noticia de Barinas añadió que la crecida del río Sarare mantuvo bajo vigilancia el puente de Agua Blanca y alertó sobre posibles colapsos estructurales en la troncal 005, ampliando el panorama de riesgos en cinco municipios del estado (La Noticia de Barinas).\n\nEn Mérida, la crecida del río Chama arrastró a una mujer, Belkis Mora, mientras intentaba cruzar un afluente en el sector El Arenal, lo que activó un operativo de búsqueda intensiva por parte del Sistema de Gestión de Riesgo del estado (Notiapure).\n\nEn Zulia, cuatro viviendas quedaron anegadas por las intensas lluvias, aunque no se reportaron víctimas mortales, y las autoridades municipales mantuvieron el monitoreo activo (La Prensa de Monagas). En Táchira, el desbordamiento de una quebrada provocó el colapso del muro perimetral de la Asociación de Ganaderos del Táchira (Asogata), afectando la vialidad en San Cristóbal (La Prensa de Monagas).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -86,6 +86,10 @@
       "link": "https://laverdaddemonagas.com/2026/10/06/crecida-del-rio-manzanares-en-sucre-deja-varias-viviendas-afectadas/"
     },
     {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/10/30/fuertes-lluvias-en-merida-dejan-incomunicados-a-varios-sectores/"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/principal/lluvias-en-el-zulia-gobernador-luis-caldera-presenta-balance-y-plan-de-atencion-de-emergencias/"
     },
@@ -104,6 +108,10 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/nacion/fuertes-lluvias-sorprendieron-habitantes-zulia/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/intensas-lluvias-dejan-incomunicadas-a-varias-comunidades-en-merida/"
     }
   ]
 }
