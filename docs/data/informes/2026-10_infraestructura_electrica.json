@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-10-30T09:09:11.764813+00:00",
-  "actualizado_hasta": "2026-10-29T06:19:41.001014+00:00",
-  "total_eventos": 9,
+  "generado": "2026-10-31T16:16:15.047250+00:00",
+  "actualizado_hasta": "2026-10-30T20:37:06.514174+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-09",
     "anterior": 22,
-    "actual": 9
+    "actual": 11
   },
-  "narrativa": "En el mes de octubre de 2026 se registraron 9 eventos de fallas eléctricas, una disminución respecto a los 22 eventos del mes anterior (septiembre 2026). Esta reducción se refleja en la menor cantidad de interrupciones reportadas a nivel nacional, aunque persisten episodios que afectan a la población y a la infraestructura.\n\nEl 23 de octubre, ciudadanos de los estados Zulia, Lara, Portuguesa, Miranda, Táchira y Monagas denunciaron una ola de bajones eléctricos que comenzó alrededor de la una de la tarde, provocando el mal funcionamiento de electrodomésticos en los hogares (El Pitazo). Un día después, el 24 de octubre, se reportó un \"festival\" de bajones en Caracas y en ocho estados adicionales —Zulia, Miranda, Lara, Carabobo, Portuguesa, Aragua, Táchira y Monagas—, con fluctuaciones que iniciaron cerca de las 2:57 p.m. y generaron temor entre los usuarios por la posible pérdida de equipos (El Pitazo).\n\nEn el estado Aragua, un incendio originado presumiblemente por fluctuaciones eléctricas y prolongados apagones destruyó por completo un bufete de abogados ubicado en el barrio Sucre, zona norte de Maracay, provocando cuantiosas pérdidas materiales (El Siglo).\n\nPara mitigar los cortes, la Corporación Eléctrica Nacional (CORPOELEC) desplegó maniobras de diagnóstico y reemplazo de componentes en la urbanización El Paraíso, municipio Biruaca, estado Apure, con el objetivo de restablecer el servicio eléctrico (Notiapure). Asimismo, en la península de Paraguaná, Falcón, se activaron cuadrillas especiales para atender circuitos afectados por intensas lluvias, reparando tendidos, fusibles quemados y postes caídos (Nuevo Dia).\n\nEn el estado Portuguesa, los habitantes de Araure y Santa Rosalía reportaron un aumento de apagones nocturnos que perturban su descanso y actividades cotidianas (Portuguesa Reporta). En Ciudad Bolívar, sectores como la avenida España experimentaron una interrupción del suministro eléctrico a partir de las 3:00 p.m. del martes, según denuncias en redes sociales (Primicia).",
+  "narrativa": "En el mes de octubre de 2026 se registraron 11 eventos de fallas eléctricas, cifra que representa una disminución respecto a los 22 eventos del mes anterior (septiembre) (Comparación). \n\nEl 23 de octubre, ciudadanos de los estados Zulia, Lara, Portuguesa, Miranda, Táchira y Monagas reportaron una ola de bajones eléctricos que comenzó alrededor de la una de la tarde, afectando el funcionamiento de electrodomésticos (El Pitazo). Al día siguiente, 24 de octubre, se describió un \"festival de bajones\" que se extendió a Caracas y a ocho estados más, generando temor entre los usuarios por la posible pérdida de equipos (El Pitazo). \n\nEn el estado Aragua, un incendio destruyó por completo un bufete de abogados ubicado en el barrio Sucre de Maracay; según la información, el siniestro habría sido provocado por fluctuaciones eléctricas y prolongados apagones de la empresa Corpoelec, dejando cuantiosas pérdidas materiales (El Siglo). \n\nEn la península de Paraguaná, estado Falcón, la Corporación Eléctrica Nacional activó cuadrillas para atender circuitos afectados por intensas lluvias, reparando tendidos de media y baja tensión, fusibles quemados, cortacorrientes, aisladores y levantando postes caídos, lo que evidencia daños a la infraestructura eléctrica (Nuevo Dia). \n\nOtros incidentes relevantes incluyeron un apagón que interrumpió una audiencia judicial en el Palacio de Justicia de Anzoátegui, prolongando la sesión hasta la madrugada (El Pitazo), y un corte de energía que afectó sectores de Ciudad Bolívar alrededor de las 3:00 p.m. del martes (Primicia). Además, habitantes de Araure y Santa Rosalía (estado Portuguesa) denunciaron la multiplicación de apagones nocturnos que perturban su descanso y actividades cotidianas (Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/grabaciones-testimonios-y-chats-sostienen-acusacion-contra-dos-sacerdotes-privados-de-libertad-por-abuso/"
     },
     {
       "nombre": "El Siglo (Aragua)",

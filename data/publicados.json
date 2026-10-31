@@ -1,11 +1,4 @@
 {
-  "inundacion::Trujillo::2026-10-28": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-28T15:34:39.604326+00:00",
-    "fecha_evento_temprana": "2026-10-28T14:35:12+00:00",
-    "municipio": null
-  },
   "orden_publico::Distrito Capital::2026-10-28": {
     "severidad": "alto",
     "confirmado": true,
@@ -117,5 +110,26 @@
     "fecha_deteccion": "2026-10-30T20:39:15.088542+00:00",
     "fecha_evento_temprana": "2026-10-30T15:00:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Bolivar::2026-10-31": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-31T16:12:32.588816+00:00",
+    "fecha_evento_temprana": "2026-10-31T14:35:00+00:00",
+    "municipio": "El Callao"
+  },
+  "salud_publica::Barinas::2026-10-31": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-31T16:12:38.399500+00:00",
+    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "municipio": "Alberto Arvelo Torrealba"
+  },
+  "salud_publica::Trujillo::2026-10-31": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-10-31T16:12:42.968847+00:00",
+    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "municipio": "Bocono"
   }
 }

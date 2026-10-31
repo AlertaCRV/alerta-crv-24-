@@ -1,5 +1,93 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": "El Callao",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/guayana/pago-de-2-000-de-utilidades-en-minerven-como-lo-lograron-los-mineros/",
+        "fecha": "2026-10-31T14:35:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T14:35:00+00:00",
+    "fecha_evento_temprana": "2026-10-31T14:35:00+00:00",
+    "fecha_deteccion": "2026-10-31T16:12:32.588816+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-10-31",
+    "titulo": "Orden público en Municipio El Callao, Bolivar",
+    "texto": "📌 Orden público en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 31/10/2026, 10:35 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 12:12 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/pago-de-2-000-de-utilidades-en-minerven-como-lo-lograron-los-mineros/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Barinas",
+    "municipio": "Alberto Arvelo Torrealba",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/mas-de-70-estudiantes-atendidos-por-intoxicaciones-en-planteles-de-barinas-y-trujillo/",
+        "fecha": "2026-10-31T14:33:18+00:00"
+      },
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/",
+        "fecha": "2026-10-31T13:38:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T14:33:18+00:00",
+    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "fecha_deteccion": "2026-10-31T16:12:38.399500+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Barinas::2026-10-31",
+    "titulo": "Salud pública en Municipio Alberto Arvelo Torrealba, Barinas",
+    "texto": "📌 Salud pública en Municipio Alberto Arvelo Torrealba, Barinas\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Alberto Arvelo Torrealba, Barinas\n🕒 Hecho reportado: 31/10/2026, 10:33 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 12:12 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/mas-de-70-estudiantes-atendidos-por-intoxicaciones-en-planteles-de-barinas-y-trujillo/\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Trujillo",
+    "municipio": "Bocono",
+    "parroquia": "El Carmen",
+    "severidad": "alto",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/mas-de-70-estudiantes-atendidos-por-intoxicaciones-en-planteles-de-barinas-y-trujillo/",
+        "fecha": "2026-10-31T14:33:18+00:00"
+      },
+      {
+        "nombre": "Diario El Tiempo (Trujillo)",
+        "link": "https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/",
+        "fecha": "2026-10-31T13:38:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T14:33:18+00:00",
+    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "fecha_deteccion": "2026-10-31T16:12:42.968847+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Trujillo::2026-10-31",
+    "titulo": "Salud pública en Parroquia El Carmen, Municipio Bocono, Trujillo",
+    "texto": "📌 Salud pública en Parroquia El Carmen, Municipio Bocono, Trujillo\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia El Carmen, Municipio Bocono, Trujillo\n🕒 Hecho reportado: 31/10/2026, 10:33 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 12:12 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/mas-de-70-estudiantes-atendidos-por-intoxicaciones-en-planteles-de-barinas-y-trujillo/\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Anzoategui",
     "municipio": null,
@@ -1536,57 +1624,5 @@
     "clave_dedup": "incendio::Zulia::2026-10-17",
     "titulo": "Incendio en Municipio Maracaibo, Zulia",
     "texto": "📌 Incendio en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 17/10/2026, 2:06 p.m.\n🔎 Detectado por el sistema: 17/10/2026, 3:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": "Araure",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa al Dia",
-        "link": "https://portuguesaaldia.com/2026/10/16/protestan-en-araure-por-precio-acordado-del-cafe/",
-        "fecha": "2026-10-16T19:20:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-16T19:20:48+00:00",
-    "fecha_evento_temprana": "2026-10-16T19:20:48+00:00",
-    "fecha_deteccion": "2026-10-17T01:42:25.614387+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-10-16",
-    "titulo": "Orden público en Municipio Araure, Portuguesa",
-    "texto": "📌 Orden público en Municipio Araure, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Araure, Portuguesa\n🕒 Hecho reportado: 16/10/2026, 3:20 p.m.\n🔎 Detectado por el sistema: 16/10/2026, 9:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/10/16/protestan-en-araure-por-precio-acordado-del-cafe/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/agricultura/por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas/?utm_source=rss&utm_medium=rss&utm_campaign=por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas",
-        "fecha": "2026-10-16T18:26:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-16T18:26:43+00:00",
-    "fecha_evento_temprana": "2026-10-16T18:26:43+00:00",
-    "fecha_deteccion": "2026-10-16T23:49:54.957859+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-10-16",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/10/2026, 2:26 p.m.\n🔎 Detectado por el sistema: 16/10/2026, 7:49 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/agricultura/por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas/?utm_source=rss&utm_medium=rss&utm_campaign=por-segundo-dia-consecutivo-caficultores-mantienen-protesta-en-botalon-y-aseguran-que-no-se-iran-sin-respuestas"
   }
 ]

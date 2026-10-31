@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-10-30T20:39:16.704456+00:00",
+  "actualizado": "2026-10-31T16:14:00.088657+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-30T19:40:16+00:00"
+    "hasta": "2026-10-31T14:35:00+00:00"
   },
-  "total_eventos": 574,
+  "total_eventos": 577,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 49,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 198,
-    "salud_publica": 28,
+    "orden_publico": 199,
+    "salud_publica": 30,
     "crisis_migratoria": 7,
     "incendio": 61,
     "vialidad": 26,
@@ -113,15 +113,15 @@
     },
     {
       "estado": "Barinas",
-      "total": 27,
-      "confirmados": 1,
+      "total": 28,
+      "confirmados": 2,
       "por_severidad": {
-        "alto": 3,
+        "alto": 4,
         "medio": 12,
         "bajo": 8,
         "critico": 4
       },
-      "indice_gravedad": 2.11,
+      "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
     },
     {
@@ -138,6 +138,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Bolivar",
+      "total": 22,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 6,
+        "medio": 10,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 1.95,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Falcon",
       "total": 22,
       "confirmados": 3,
@@ -151,31 +165,17 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Bolivar",
-      "total": 21,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 5,
-        "medio": 10,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 2.0,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Trujillo",
-      "total": 20,
-      "confirmados": 0,
+      "total": 21,
+      "confirmados": 1,
       "por_severidad": {
         "medio": 10,
         "bajo": 3,
         "critico": 1,
-        "alto": 5,
+        "alto": 6,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.21,
+      "indice_gravedad": 2.25,
       "severidad_mapa": "medio"
     },
     {
@@ -402,7 +402,7 @@
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
       "orden_publico": 2,
-      "salud_publica": 6
+      "salud_publica": 7
     },
     "Barinas": {
       "deslizamiento": 4,
@@ -410,7 +410,7 @@
       "vialidad": 4,
       "orden_publico": 8,
       "infraestructura_agua": 1,
-      "salud_publica": 1,
+      "salud_publica": 2,
       "infraestructura_electrica": 3
     },
     "Sucre": {
@@ -450,7 +450,7 @@
       "salud_publica": 4
     },
     "Bolivar": {
-      "orden_publico": 9,
+      "orden_publico": 10,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -564,10 +564,10 @@
     }
   },
   "por_severidad": {
-    "alto": 129,
+    "alto": 131,
     "critico": 71,
     "medio": 199,
-    "bajo": 154,
+    "bajo": 155,
     "sin_clasificar": 21
   },
   "serie_mensual_por_tipo": {
@@ -605,13 +605,13 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 76
+      "2026-10": 77
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
-      "2026-10": 17
+      "2026-10": 19
     },
     "crisis_migratoria": {
       "2026-07": 4,
