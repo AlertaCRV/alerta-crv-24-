@@ -131,5 +131,19 @@
     "fecha_deteccion": "2026-10-31T16:12:42.968847+00:00",
     "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
     "municipio": "Bocono"
+  },
+  "infraestructura_agua::Portuguesa::2026-10-31": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-31T20:02:37.615147+00:00",
+    "fecha_evento_temprana": "2026-10-31T12:11:17+00:00",
+    "municipio": "Guanare"
+  },
+  "orden_publico::Falcon::2026-10-31": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-10-31T20:03:15.724613+00:00",
+    "fecha_evento_temprana": "2026-10-31T16:08:28+00:00",
+    "municipio": null
   }
 }

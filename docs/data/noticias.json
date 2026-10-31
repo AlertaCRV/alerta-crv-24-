@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Portuguesa",
+    "municipio": "Guanare",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/regionales/guanare-colapso-de-cloacas-inunda-viviendas-y-desata-crisis-sanitaria-en-el-barrio-la-comunidad-vieja/?utm_source=rss&utm_medium=rss&utm_campaign=guanare-colapso-de-cloacas-inunda-viviendas-y-desata-crisis-sanitaria-en-el-barrio-la-comunidad-vieja",
+        "fecha": "2026-10-31T12:11:17+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T12:11:17+00:00",
+    "fecha_evento_temprana": "2026-10-31T12:11:17+00:00",
+    "fecha_deteccion": "2026-10-31T20:02:37.615147+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Portuguesa::2026-10-31",
+    "titulo": "Falla de agua en Municipio Guanare, Portuguesa",
+    "texto": "📌 Falla de agua en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 31/10/2026, 8:11 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 4:02 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/regionales/guanare-colapso-de-cloacas-inunda-viviendas-y-desata-crisis-sanitaria-en-el-barrio-la-comunidad-vieja/?utm_source=rss&utm_medium=rss&utm_campaign=guanare-colapso-de-cloacas-inunda-viviendas-y-desata-crisis-sanitaria-en-el-barrio-la-comunidad-vieja"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/protesta-ciudadana-paraliza-el-trafico-en-la-falcon-zulia/",
+        "fecha": "2026-10-31T16:08:28+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T16:08:28+00:00",
+    "fecha_evento_temprana": "2026-10-31T16:08:28+00:00",
+    "fecha_deteccion": "2026-10-31T20:03:15.724613+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-10-31",
+    "titulo": "Orden público en Falcon",
+    "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 31/10/2026, 12:08 p.m.\n🔎 Detectado por el sistema: 31/10/2026, 4:03 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/protesta-ciudadana-paraliza-el-trafico-en-la-falcon-zulia/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Bolivar",
     "municipio": "El Callao",
@@ -1546,83 +1598,5 @@
     "clave_dedup": "ataque_armado::Cojedes::2026-10-18",
     "titulo": "Ataque armado en Municipio Tinaquillo, Cojedes",
     "texto": "📌 Ataque armado en Municipio Tinaquillo, Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Tinaquillo, Cojedes\n🕒 Hecho reportado: 18/10/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 18/10/2026, 1:37 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Carabobo",
-    "municipio": "San Diego",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/",
-        "fecha": "2026-10-17T18:06:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-17T18:06:48+00:00",
-    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
-    "fecha_deteccion": "2026-10-17T19:26:02.122158+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Carabobo::2026-10-17",
-    "titulo": "Incendio en Municipio San Diego, Carabobo",
-    "texto": "📌 Incendio en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 17/10/2026, 2:06 p.m.\n🔎 Detectado por el sistema: 17/10/2026, 3:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Miranda",
-    "municipio": "Lander",
-    "parroquia": "Ocumare Del Tuy",
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/",
-        "fecha": "2026-10-17T18:06:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-17T18:06:48+00:00",
-    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
-    "fecha_deteccion": "2026-10-17T19:26:05.616592+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Miranda::2026-10-17",
-    "titulo": "Incendio en Parroquia Ocumare Del Tuy, Municipio Lander, Miranda",
-    "texto": "📌 Incendio en Parroquia Ocumare Del Tuy, Municipio Lander, Miranda\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Ocumare Del Tuy, Municipio Lander, Miranda\n🕒 Hecho reportado: 17/10/2026, 2:06 p.m.\n🔎 Detectado por el sistema: 17/10/2026, 3:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/",
-        "fecha": "2026-10-17T18:06:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-17T18:06:48+00:00",
-    "fecha_evento_temprana": "2026-10-17T18:06:48+00:00",
-    "fecha_deteccion": "2026-10-17T19:26:09.559230+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Zulia::2026-10-17",
-    "titulo": "Incendio en Municipio Maracaibo, Zulia",
-    "texto": "📌 Incendio en Municipio Maracaibo, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 17/10/2026, 2:06 p.m.\n🔎 Detectado por el sistema: 17/10/2026, 3:26 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/tragedia-familiar-tres-ninos-mueren-calcinados-al-incendiarse-una-vivienda-en-ocumare-del-tuy/"
   }
 ]
