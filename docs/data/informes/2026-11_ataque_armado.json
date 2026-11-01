@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "ataque_armado",
+  "tipo_label": "Ataque armado",
+  "cerrado": false,
+  "generado": "2026-11-01T20:48:55.114542+00:00",
+  "actualizado_hasta": "2026-11-01T20:45:12.507299+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 7,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 el sistema de monitoreo registró únicamente un evento de ataque armado, una disminución notable frente a los siete eventos que se contabilizaron en octubre de 2026 (Comparación proporcionada). Esta reducción se refleja en la base de datos de la Cruz Roja Venezolana, que mantiene el registro de incidentes para la planificación de la respuesta humanitaria.\n\nEl único incidente registrado fue el bombardeo del Ejército venezolano contra la guerrilla del ELN en el estado Apure, calificado de alta severidad. Según informó la presidenta de la ONG Control Ciudadano, Rocío San Miguel, la operación causó daños materiales significativos y generó preocupación por posibles heridos entre la población civil y los combatientes (El Pitazo). El ataque, descrito como una acción militar contra una guerrilla con la que el gobierno ha cooperado desde la época de Hugo Chávez, se desarrolló en territorio apureño durante el mes en curso.\n\nEste panorama de menor actividad armada permite a la Cruz Roja optimizar la distribución de recursos y reforzar la vigilancia en áreas vulnerables, manteniéndose alerta ante cualquier eventualidad que pueda surgir en la región y garantizando la pronta atención a víctimas de futuros incidentes.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/lo-que-se-sabe-del-bombardeo-del-ejercito-venezolano-a-la-guerrilla-del-eln-en-apure/"
+    }
+  ]
+}

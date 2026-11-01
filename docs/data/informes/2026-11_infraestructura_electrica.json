@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-11",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-11-01T20:49:34.352150+00:00",
+  "actualizado_hasta": "2026-11-01T20:47:13.575612+00:00",
+  "total_eventos": 3,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 11,
+    "actual": 3
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registraron tres eventos de fallas eléctricas, una reducción notable respecto a los once eventos del mes anterior (2026‑10) (El Periodico de Monagas). Las incidencias se concentraron en un día, el 1 de noviembre, cuando se reportaron apagones y fluctuaciones de corriente en distintas regiones del país.\n\nSegún los reportes de usuarios en redes sociales, el primer bajón ocurrió alrededor de las 9:22 a.m. y afectó al Distrito Capital y a zonas del estado Miranda, como Guarenas y Charallave, donde la falta de energía dejó sin luz a varios barrios (El Periodico de Monagas).\n\nEn la misma jornada, la falla se extendió a seis estados adicionales: Barinas, Falcón, Mérida, Sucre, La Guaira y Zulia, según la cobertura de Primicia (Bolivar). En cada uno de estos lugares se registraron interrupciones que provocaron la pérdida momentánea del suministro eléctrico.\n\nLos habitantes de Caracas y de los estados mencionados describieron que la caída de tensión fue tan brusca que apagó aparatos domésticos, como computadoras y televisores, y en algunos casos dañó equipos electrónicos (Primicia (Bolivar)). La magnitud del evento, aunque limitado en número de incidentes, generó molestias significativas para la población afectada.",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
+    }
+  ]
+}

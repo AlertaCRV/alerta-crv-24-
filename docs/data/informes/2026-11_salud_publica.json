@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-11-01T20:49:39.735165+00:00",
+  "actualizado_hasta": "2026-11-01T20:45:03.052676+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 21,
+    "actual": 1
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registró un solo evento de salud pública, frente a los 21 reportados en octubre de 2026, lo que indica una notable disminución en la frecuencia de incidentes durante este período.\n\nEl único caso registrado corresponde a intoxicaciones en escuelas de los estados Barinas y Trujillo, que afectaron a más de 70 estudiantes en total (Runrun.es). De esos casos, al menos 34 adolescentes presentaron síntomas de intoxicación (Runrun.es). Desde noviembre de 2024, se habían documentado al menos 53 incidentes similares en distintas regiones del país (Runrun.es).\n\nEn Trujillo, la intoxicación se produjo en una institución educativa local, contribuyendo al número total de estudiantes afectados (Runrun.es). El otro episodio tuvo lugar en el Liceo Alberto Arvelo Torrealba, ubicado en la avenida Rómulo Gallegos, sector Los Pozones, parroquia Rómulo Betancourt de Barinas (Runrun.es).\n\nLas autoridades de salud pública continúan monitoreando la situación y reforzando las medidas de prevención en centros educativos para evitar futuros incidentes similares (Runrun.es).",
+  "fuentes": [
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/"
+    }
+  ]
+}
