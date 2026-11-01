@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-01T02:23:54.990763+00:00",
+  "actualizado": "2026-11-01T23:11:19.920694+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-10-31T20:53:09+00:00"
   },
-  "total_eventos": 582,
+  "total_eventos": 580,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 49,
+    "infraestructura_electrica": 47,
     "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 200,
@@ -192,20 +192,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Anzoategui",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 7,
-        "medio": 6,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 1.94,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -243,6 +229,19 @@
       },
       "indice_gravedad": 1.62,
       "severidad_mapa": "bajo"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6,
+        "medio": 6
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Carabobo",
@@ -438,7 +437,7 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -570,8 +569,8 @@
     "alto": 132,
     "critico": 72,
     "medio": 200,
-    "bajo": 155,
-    "sin_clasificar": 23
+    "bajo": 154,
+    "sin_clasificar": 22
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -590,7 +589,7 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 11
+      "2026-10": 9
     },
     "deslizamiento": {
       "2026-07": 3,

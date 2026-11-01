@@ -2429,6 +2429,27 @@ def _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_norm):
     return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_APAGON_SIN_APAGONES)
 
 
+# Caso real (30-10-2026): "Grabaciones, testimonios y chats sostienen
+# acusacion contra dos sacerdotes privados de libertad por abuso" (El Pitazo,
+# Anzoategui) -- una nota JUDICIAL cuyo unico vinculo con la electricidad es
+# que "la audiencia se extendio hasta la madrugada debido a un apagon en el
+# Palacio de Justicia", un detalle incidental que la publicaba como "Falla
+# electrica en Anzoategui". Mismo patron que las demas notas donde "apagon"
+# es la palabra ambigua: se descarta cuando el texto es una crónica
+# judicial (juzgado/tribunal/fiscalia/privativa de libertad) y no hay otra
+# evidencia fuerte de corte (lista sin "apagon"/"apagones").
+_MARCADORES_CRONICA_JUDICIAL = [
+    "juzgado", "tribunal", "privativa de libertad", "fiscalia", "fiscalía",
+    "audiencia de presentacion", "audiencia de presentación",
+]
+
+
+def _es_cronica_judicial_con_apagon_incidental(texto_norm):
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_CRONICA_JUDICIAL):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, f) for f in _EVIDENCIA_FUERTE_APAGON_SIN_APAGONES)
+
+
 # Fallas de electricidad/agua rara vez usan las palabras clave de severidad
 # ("heridos", "danos severos"...) aunque describan una situacion real de
 # precaucion -- una duracion prolongada mencionada explicitamente (p.ej. "94
@@ -3583,6 +3604,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_cronica_judicial_con_apagon_incidental(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
                     break

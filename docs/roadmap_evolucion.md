@@ -9906,3 +9906,14 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 01-11-2026: crónica judicial con "apagón" incidental publicada como falla eléctrica (Anzoátegui)
+
+**Hallazgo**: `infraestructura_electrica::Anzoategui::2026-10-30` (El Pitazo, "Grabaciones, testimonios y chats sostienen acusación contra dos sacerdotes privados de libertad por abuso") se publicó como "Falla eléctrica en Anzoategui". La nota es judicial; el único vínculo es que la audiencia se extendió "debido a un apagón en el Palacio de Justicia".
+- **Causa raíz**: "apagón" es evidencia fuerte de tipo y bastaba por sí sola, aunque el texto fuera una crónica de tribunales.
+- **Corrección**: `classify._es_cronica_judicial_con_apagon_incidental` (marcadores juzgado/tribunal/fiscalía/privativa de libertad, sin otra evidencia de corte: "sin luz", "falla eléctrica"...). Casos nuevos en `tests/casos_clasificacion.jsonl` (el caso real y un control de apagón real que menciona un tribunal).
+- **Corrección retroactiva**: alerta retirada de `noticias.json`, `publicados.json`, `historico_eventos.jsonl` y `historico_fuentes_texto.jsonl`; `estadisticas.json` regenerado.
+
+**Revisado y sin cambios**: ataque armado Apure (bombardeo, 19 fallecidos según Fundaredes), accidente aéreo Sierra Parima (Amazonas), intoxicaciones en liceos Trujillo/Barinas, inundación Mérida (2 fuentes), protesta Falcón-Zulia, protestas laborales Monagas/Distrito Capital, muerte de privado de libertad en Táchira.
+
+**Dudas menores no corregidas (a vigilar)**: `infraestructura_agua::Portuguesa` (Guanare, cloacas colapsadas) sale con severidad "alto" aunque el texto no menciona heridos ni evacuaciones (solo riesgo sanitario y una niña con infección en la piel; "medio" sería más defendible); `orden_publico::Bolivar::2026-10-31` (Minerven) cubre el desenlace de una huelga ya resuelta con acuerdo. Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo Base Aérea).
