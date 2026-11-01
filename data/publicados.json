@@ -20,13 +20,6 @@
     "fecha_evento_temprana": "2026-10-29T22:48:00+00:00",
     "municipio": null
   },
-  "infraestructura_electrica::Anzoategui::2026-10-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
-    "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
-    "municipio": null
-  },
   "inundacion::Merida::2026-10-30": {
     "severidad": "medio",
     "confirmado": false,

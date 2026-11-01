@@ -156,32 +156,6 @@
     "texto": "📌 Orden público en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 31/10/2026, 10:35 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 12:12 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/pago-de-2-000-de-utilidades-en-minerven-como-lo-lograron-los-mineros/"
   },
   {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/sucesos/grabaciones-testimonios-y-chats-sostienen-acusacion-contra-dos-sacerdotes-privados-de-libertad-por-abuso/",
-        "fecha": "2026-10-30T14:34:23+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-30T14:34:23+00:00",
-    "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
-    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-10-30",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 30/10/2026, 10:34 a.m.\n🔎 Detectado por el sistema: 30/10/2026, 4:37 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/grabaciones-testimonios-y-chats-sostienen-acusacion-contra-dos-sacerdotes-privados-de-libertad-por-abuso/"
-  },
-  {
     "tipo": "inundacion",
     "ubicacion": "Merida",
     "municipio": null,
