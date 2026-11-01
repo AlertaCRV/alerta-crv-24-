@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "ataque_armado",
+    "ubicacion": "Apure",
+    "municipio": "San Fernando",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/",
+        "fecha": "2026-10-31T20:53:09+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-10-31T20:53:09+00:00",
+    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
+    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Apure::2026-10-31",
+    "titulo": "Ataque armado en Municipio San Fernando, Apure",
+    "texto": "📌 Ataque armado en Municipio San Fernando, Apure\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Fernando, Apure\n🕒 Hecho reportado: 31/10/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 31/10/2026, 10:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Barinas",
     "municipio": "Alberto Arvelo Torrealba",

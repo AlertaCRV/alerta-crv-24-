@@ -1,24 +1,10 @@
 {
-  "inundacion::Tachira::2026-10-28": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-29T00:26:48.719779+00:00",
-    "fecha_evento_temprana": "2026-10-28T19:37:36+00:00",
-    "municipio": "San Cristóbal"
-  },
   "orden_publico::Bolivar::2026-10-28": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-10-29T06:19:32.068786+00:00",
     "fecha_evento_temprana": "2026-10-28T22:44:00+00:00",
     "municipio": "El Callao"
-  },
-  "inundacion::Sucre::2026-10-28": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-29T00:28:21.925992+00:00",
-    "fecha_evento_temprana": "2026-10-28T17:05:41+00:00",
-    "municipio": null
   },
   "infraestructura_electrica::Falcon::2026-10-29": {
     "severidad": "medio",
@@ -110,5 +96,12 @@
     "fecha_deteccion": "2026-10-31T20:03:15.724613+00:00",
     "fecha_evento_temprana": "2026-10-31T16:08:28+00:00",
     "municipio": null
+  },
+  "ataque_armado::Apure::2026-10-31": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
+    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
+    "municipio": "San Fernando"
   }
 }
