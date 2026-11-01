@@ -1,29 +1,133 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Trujillo",
+    "municipio": "Bocono",
+    "parroquia": "El Carmen",
+    "severidad": "alto",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/",
+        "fecha": "2026-11-01T20:40:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-01T20:40:24+00:00",
+    "fecha_evento_temprana": "2026-11-01T20:40:24+00:00",
+    "fecha_deteccion": "2026-11-01T20:45:03.052676+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Trujillo::2026-10-31",
+    "titulo": "Salud pública en Parroquia El Carmen, Municipio Bocono, Trujillo",
+    "texto": "📌 Salud pública en Parroquia El Carmen, Municipio Bocono, Trujillo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia El Carmen, Municipio Bocono, Trujillo\n🕒 Hecho reportado: 01/11/2026, 4:40 p.m.\n🔎 Detectado por el sistema: 01/11/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/"
+  },
+  {
     "tipo": "ataque_armado",
     "ubicacion": "Apure",
-    "municipio": "San Fernando",
+    "municipio": null,
     "parroquia": null,
-    "severidad": "critico",
+    "severidad": "alto",
     "score": 0.75,
     "confirmado": false,
     "num_fuentes": 1,
     "fuentes": [
       {
         "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/",
-        "fecha": "2026-10-31T20:53:09+00:00"
+        "link": "https://elpitazo.net/politica/lo-que-se-sabe-del-bombardeo-del-ejercito-venezolano-a-la-guerrilla-del-eln-en-apure/",
+        "fecha": "2026-11-01T12:00:00+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-10-31T20:53:09+00:00",
-    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
-    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
+    "fecha_evento": "2026-11-01T12:00:00+00:00",
+    "fecha_evento_temprana": "2026-11-01T12:00:00+00:00",
+    "fecha_deteccion": "2026-11-01T20:45:12.507299+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "ataque_armado::Apure::2026-10-31",
-    "titulo": "Ataque armado en Municipio San Fernando, Apure",
-    "texto": "📌 Ataque armado en Municipio San Fernando, Apure\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio San Fernando, Apure\n🕒 Hecho reportado: 31/10/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 31/10/2026, 10:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/"
+    "titulo": "Ataque armado en Apure",
+    "texto": "📌 Ataque armado en Apure\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 01/11/2026, 8:00 a.m.\n🔎 Detectado por el sistema: 01/11/2026, 4:45 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/lo-que-se-sabe-del-bombardeo-del-ejercito-venezolano-a-la-guerrilla-del-eln-en-apure/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/",
+        "fecha": "2026-11-01T15:35:54+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-01T15:35:54+00:00",
+    "fecha_evento_temprana": "2026-11-01T15:35:54+00:00",
+    "fecha_deteccion": "2026-11-01T20:46:10.662889+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Miranda::2026-11-01",
+    "titulo": "Falla eléctrica en Municipio Baruta, Miranda",
+    "texto": "📌 Falla eléctrica en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 01/11/2026, 11:35 a.m.\n🔎 Detectado por el sistema: 01/11/2026, 4:46 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/",
+        "fecha": "2026-11-01T19:45:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-01T19:45:06+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "fecha_deteccion": "2026-11-01T20:47:00.762456+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-11-01",
+    "titulo": "Falla eléctrica en Barinas",
+    "texto": "📌 Falla eléctrica en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 01/11/2026, 3:45 p.m.\n🔎 Detectado por el sistema: 01/11/2026, 4:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/",
+        "fecha": "2026-11-01T19:45:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-01T19:45:06+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "fecha_deteccion": "2026-11-01T20:47:13.575612+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-11-01",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 01/11/2026, 3:45 p.m.\n🔎 Detectado por el sistema: 01/11/2026, 4:47 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
   },
   {
     "tipo": "salud_publica",
@@ -50,32 +154,6 @@
     "clave_dedup": "salud_publica::Barinas::2026-10-31",
     "titulo": "Salud pública en Municipio Alberto Arvelo Torrealba, Barinas",
     "texto": "📌 Salud pública en Municipio Alberto Arvelo Torrealba, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Alberto Arvelo Torrealba, Barinas\n🕒 Hecho reportado: 31/10/2026, 9:38 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 7:21 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Trujillo",
-    "municipio": "Bocono",
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario El Tiempo (Trujillo)",
-        "link": "https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/",
-        "fecha": "2026-10-31T13:38:42+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-31T13:38:42+00:00",
-    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
-    "fecha_deteccion": "2026-10-31T23:21:29.054602+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Trujillo::2026-10-31",
-    "titulo": "Salud pública en Municipio Bocono, Trujillo",
-    "texto": "📌 Salud pública en Municipio Bocono, Trujillo\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Bocono, Trujillo\n🕒 Hecho reportado: 31/10/2026, 9:38 a.m.\n🔎 Detectado por el sistema: 31/10/2026, 7:21 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario El Tiempo (Trujillo): https://diarioeltiempo.com.ve/intoxicaciones-masivas-en-liceos-no-se-detienen-nuevos-casos-en-trujillo-y-barinas/"
   },
   {
     "tipo": "infraestructura_agua",
@@ -1588,31 +1666,5 @@
     "clave_dedup": "incendio::Lara::2026-10-19",
     "titulo": "Incendio en Parroquia Agua Viva, Lara",
     "texto": "📌 Incendio en Parroquia Agua Viva, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Agua Viva, Lara\n🕒 Hecho reportado: 18/10/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 6:14 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Cojedes",
-    "municipio": "Tinaquillo",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/",
-        "fecha": "2026-10-18T15:45:46+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-18T15:45:46+00:00",
-    "fecha_evento_temprana": "2026-10-18T15:45:46+00:00",
-    "fecha_deteccion": "2026-10-18T17:37:44.391707+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "ataque_armado::Cojedes::2026-10-18",
-    "titulo": "Ataque armado en Municipio Tinaquillo, Cojedes",
-    "texto": "📌 Ataque armado en Municipio Tinaquillo, Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Tinaquillo, Cojedes\n🕒 Hecho reportado: 18/10/2026, 11:45 a.m.\n🔎 Detectado por el sistema: 18/10/2026, 1:37 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/ataque-armado-autobus-cojedes-ocho-heridos/"
   }
 ]

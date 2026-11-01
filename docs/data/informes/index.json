@@ -1,5 +1,37 @@
 [
   {
+    "periodo": "2026-11",
+    "tipo": "salud_publica",
+    "tipo_label": "Salud pública",
+    "cerrado": false,
+    "generado": "2026-11-01T20:49:39.735165+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-11-01T20:49:34.352150+00:00",
+    "total_eventos": 3
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-11-01T20:49:21.487604+00:00",
+    "total_eventos": 5
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-11-01T20:48:55.114542+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-10",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

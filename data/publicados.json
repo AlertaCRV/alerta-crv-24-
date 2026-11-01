@@ -56,10 +56,10 @@
     "municipio": "Alberto Arvelo Torrealba"
   },
   "salud_publica::Trujillo::2026-10-31": {
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-31T23:21:29.054602+00:00",
-    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "fecha_deteccion": "2026-11-01T20:45:03.052676+00:00",
+    "fecha_evento_temprana": "2026-11-01T20:40:24+00:00",
     "municipio": "Bocono"
   },
   "infraestructura_agua::Portuguesa::2026-10-31": {
@@ -77,10 +77,31 @@
     "municipio": null
   },
   "ataque_armado::Apure::2026-10-31": {
-    "severidad": "critico",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
-    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
-    "municipio": "San Fernando"
+    "fecha_deteccion": "2026-11-01T20:45:12.507299+00:00",
+    "fecha_evento_temprana": "2026-11-01T12:00:00+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Miranda::2026-11-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-01T20:46:10.662889+00:00",
+    "fecha_evento_temprana": "2026-11-01T15:35:54+00:00",
+    "municipio": "Baruta"
+  },
+  "infraestructura_electrica::Barinas::2026-11-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-01T20:47:00.762456+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-11-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-01T20:47:13.575612+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "municipio": null
   }
 }

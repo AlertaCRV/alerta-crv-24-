@@ -1,0 +1,33 @@
+{
+  "periodo": "2026-11",
+  "tipo": "general",
+  "tipo_label": "Todas las categorías",
+  "cerrado": false,
+  "generado": "2026-11-01T20:49:21.487604+00:00",
+  "actualizado_hasta": "2026-11-01T20:47:13.575612+00:00",
+  "total_eventos": 5,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 189,
+    "actual": 5
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 5 eventos de emergencia, una caída drástica frente a los 189 eventos del mes anterior, octubre de 2026 (comparación proporcionada). Esta reducción significativa se refleja en la menor cantidad de incidentes reportados por los diferentes medios de comunicación.\n\nEn el ámbito de la salud pública, se notificaron casos de intoxicación en escuelas de los estados Barinas y Trujillo que afectaron a más de 70 estudiantes, según el monitoreo de Runrun.es (Runrun.es). La gravedad del episodio se calificó como alta, pues los adolescentes presentaron síntomas de intoxicación y requirieron atención médica.\n\nEn la zona fronteriza de Apure, el Ejército venezolano llevó a cabo un bombardeo contra la guerrilla del ELN, según informó El Pitazo (El Pitazo). La operación, descrita como de alta severidad, generó daños materiales y potenciales víctimas, aunque los detalles exactos de heridos o fallecidos no fueron precisados en la fuente.\n\nEl 1 de noviembre de 2026 se registró un fuerte bajón eléctrico que dejó sin suministro a varias regiones del país. Usuarios de Caracas, Distrito Capital y Miranda reportaron apagones y fluctuaciones de corriente, mientras que los estados Barinas, Falcón, Mérida, Sucre, La Guaira y Zulia también fueron afectados (El Periodico de Monagas; Primicia). La interrupción, que ocurrió alrededor de las 9:22 a.m., provocó la pérdida de funcionamiento de aparatos eléctricos en los hogares y generó molestias a la población.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/lo-que-se-sabe-del-bombardeo-del-ejercito-venezolano-a-la-guerrilla-del-eln-en-apure/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
+    }
+  ]
+}
