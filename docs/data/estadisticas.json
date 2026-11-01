@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-10-31T23:21:54.649042+00:00",
+  "actualizado": "2026-11-01T02:23:54.990763+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-31T16:08:28+00:00"
+    "hasta": "2026-10-31T20:53:09+00:00"
   },
-  "total_eventos": 581,
+  "total_eventos": 582,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
@@ -23,7 +23,7 @@
     "infraestructura_agua": 27,
     "accidente_transporte": 4,
     "derrame_petrolero": 4,
-    "ataque_armado": 7,
+    "ataque_armado": 8,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
@@ -286,15 +286,16 @@
     },
     {
       "estado": "Apure",
-      "total": 10,
+      "total": 11,
       "confirmados": 0,
       "por_severidad": {
         "alto": 4,
         "bajo": 2,
         "medio": 3,
-        "sin_clasificar": 1
+        "sin_clasificar": 1,
+        "critico": 1
       },
-      "indice_gravedad": 2.22,
+      "indice_gravedad": 2.4,
       "severidad_mapa": "medio"
     },
     {
@@ -427,7 +428,8 @@
       "orden_publico": 1,
       "infraestructura_agua": 2,
       "sequia": 1,
-      "infraestructura_electrica": 2
+      "infraestructura_electrica": 2,
+      "ataque_armado": 1
     },
     "Anzoategui": {
       "crisis_migratoria": 1,
@@ -566,7 +568,7 @@
   },
   "por_severidad": {
     "alto": 132,
-    "critico": 71,
+    "critico": 72,
     "medio": 200,
     "bajo": 155,
     "sin_clasificar": 23
@@ -662,7 +664,7 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 6
+      "2026-10": 7
     },
     "emergencia_metro": {
       "2026-08": 1,
