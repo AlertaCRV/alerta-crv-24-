@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-11",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-11-02T00:04:06.034504+00:00",
+  "actualizado_hasta": "2026-11-02T00:02:01.645404+00:00",
+  "total_eventos": 3,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 11,
+    "actual": 3
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron tres eventos de fallas eléctricas, una disminución notable respecto a los once eventos del mes anterior (2026-10). Esta reducción se refleja en los reportes de la Cruz Roja Venezolana, que monitorea los incidentes de infraestructura crítica.\n\nEl evento más grave del período ocurrió en el estado Miranda, donde una falla en los sistemas Tuy II y III dejó sin suministro de agua a más de 40 zonas del municipio Baruta a causa de una fluctuación eléctrica a las 9:20 a.m. del 1 de noviembre (Runrun.es). La autoridad municipal informó que la interrupción también afectó el suministro eléctrico de la zona, generando inconvenientes para los residentes.\n\nEn otras partes del país, usuarios reportaron un amplio bajón eléctrico el mismo día, alrededor de las 9:22 a.m., que provocó apagones en el Distrito Capital y en áreas de Miranda como Guarenas y Charallave (El Periodico de Monagas). Las redes sociales mostraron denuncias de falta de luz y cambios bruscos en la intensidad de la corriente, afectando hogares y comercios.\n\nAdicionalmente, se documentó una fuerte fluctuación eléctrica que impactó a Caracas y a seis estados: Barinas, Falcón, Mérida, Sucre, La Guaira y Zulia (Primicia (Bolivar)). Los testimonios de la población describieron apagones de aparatos eléctricos y la imposibilidad de utilizar equipos esenciales durante varias horas.",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
+    }
+  ]
+}

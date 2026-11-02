@@ -1,0 +1,41 @@
+{
+  "periodo": "2026-11",
+  "tipo": "general",
+  "tipo_label": "Todas las categorías",
+  "cerrado": false,
+  "generado": "2026-11-02T00:03:53.047407+00:00",
+  "actualizado_hasta": "2026-11-02T00:02:01.645404+00:00",
+  "total_eventos": 6,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 189,
+    "actual": 6
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registraron sólo 6 eventos de emergencia, una notable reducción frente a los 189 eventos del período anterior (2026‑10). Esta disminución se refleja en la menor cantidad de incidentes reportados en distintas regiones del país.\n\nEl 1 de noviembre se produjo una falla eléctrica en los sistemas Tuy II y III, que dejó sin agua a más de 40 zonas del municipio Baruta, en el estado Miranda, a causa de una fluctuación eléctrica detectada a las 9:20 a.m. (Runrun.es). La interrupción del suministro de agua afectó a los residentes de la zona, quienes reportaron la falta de servicio durante la tarde.\n\nEn el ámbito de la salud pública, se confirmaron casos de intoxicación alimentaria en escuelas de los estados Barinas y Trujillo, afectando a más de 70 estudiantes. En Trujillo, varios adolescentes presentaron síntomas de intoxicación, lo que obligó a las autoridades sanitarias a activar protocolos de atención y a investigar la causa del brote (Runrun.es).\n\nEn Barinas se registró un grave incidente de orden público vinculado a la muerte de un aficionado del Zamora FC en las adyacencias del estadio Agustín Tovar “La Carolina”. La FVF condenó los hechos y colaboró con las autoridades para esclarecer el caso, que provocó la suspensión del encuentro deportivo (La Prensa de Monagas).\n\nPor otro lado, La Prensa de Lara informó sobre un episodio de orden público relacionado con la muerte del hincha Luis Rafael López en Barinas, que generó protestas y requerimientos de mayor seguridad en los eventos deportivos. La publicación destacó la necesidad de reforzar las medidas de control de acceso y la prevención de violencia en los estadios (La Prensa de Lara).",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/bajon-electrico-afecta-a-varios-estados-de-venezuela/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/fvf-condena-los-hechos-de-violencia-en-barinas-tras-el-fallecimiento-de-un-aficionado-en-la-liga-futve-2/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/fuerte-bajon-electrico-caracas-estados-venezuela-1-noviembre/"
+    }
+  ]
+}

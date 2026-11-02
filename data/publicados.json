@@ -6,20 +6,6 @@
     "fecha_evento_temprana": "2026-10-30T00:08:16+00:00",
     "municipio": null
   },
-  "orden_publico::Distrito Capital::2026-10-29": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-29T23:18:29.850635+00:00",
-    "fecha_evento_temprana": "2026-10-29T19:39:05+00:00",
-    "municipio": null
-  },
-  "orden_publico::Monagas::2026-10-29": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-29T23:18:55.441300+00:00",
-    "fecha_evento_temprana": "2026-10-29T22:48:00+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Anzoategui::2026-10-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -56,10 +42,10 @@
     "municipio": "Alberto Arvelo Torrealba"
   },
   "salud_publica::Trujillo::2026-10-31": {
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-10-31T23:21:29.054602+00:00",
-    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
+    "fecha_deteccion": "2026-11-02T00:00:04.118653+00:00",
+    "fecha_evento_temprana": "2026-11-01T20:40:24+00:00",
     "municipio": "Bocono"
   },
   "infraestructura_agua::Portuguesa::2026-10-31": {
@@ -82,5 +68,40 @@
     "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
     "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
     "municipio": "San Fernando"
+  },
+  "infraestructura_electrica::Miranda::2026-11-01": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-01T23:59:58.904837+00:00",
+    "fecha_evento_temprana": "2026-11-01T15:35:54+00:00",
+    "municipio": "Baruta"
+  },
+  "orden_publico::Barinas::2026-11-01": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T00:00:16.950140+00:00",
+    "fecha_evento_temprana": "2026-11-01T22:52:17+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-11-01": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T00:01:18.742979+00:00",
+    "fecha_evento_temprana": "2026-11-01T23:41:04+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Barinas::2026-11-01": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T00:01:57.067693+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Distrito Capital::2026-11-01": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T00:02:01.645404+00:00",
+    "fecha_evento_temprana": "2026-11-01T19:45:06+00:00",
+    "municipio": null
   }
 }
