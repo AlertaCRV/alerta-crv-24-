@@ -1,11 +1,4 @@
 {
-  "accidente_transporte::Amazonas::2026-10-29": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T09:06:45.105658+00:00",
-    "fecha_evento_temprana": "2026-10-30T00:08:16+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Anzoategui::2026-10-30": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -88,6 +81,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-02T05:48:33.492514+00:00",
     "fecha_evento_temprana": "2026-11-02T01:05:55+00:00",
+    "municipio": null
+  },
+  "orden_publico::Barinas::2026-11-02": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T13:55:01.497282+00:00",
+    "fecha_evento_temprana": "2026-11-02T12:50:02+00:00",
     "municipio": null
   }
 }

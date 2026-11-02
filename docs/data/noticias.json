@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/",
+        "fecha": "2026-11-02T12:50:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-02T12:50:02+00:00",
+    "fecha_evento_temprana": "2026-11-02T12:50:02+00:00",
+    "fecha_deteccion": "2026-11-02T13:55:01.497282+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-11-02",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 02/11/2026, 8:50 a.m.\n🔎 Detectado por el sistema: 02/11/2026, 9:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Miranda",
     "municipio": "Baruta",
@@ -1640,31 +1666,5 @@
     "clave_dedup": "vialidad::Tachira::2026-10-19",
     "titulo": "Incidente vial en Parroquia Palotal, Municipio Bolívar, Tachira",
     "texto": "📌 Incidente vial en Parroquia Palotal, Municipio Bolívar, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Palotal, Municipio Bolívar, Tachira\n🕒 Hecho reportado: 19/10/2026, 10:43 a.m.\n🔎 Detectado por el sistema: 19/10/2026, 1:07 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/cuatro-lesionados-en-dos-derrapes-y-una-colision-en-frontera/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": "Agua Viva",
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/",
-        "fecha": "2026-10-19T02:00:08+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-19T02:00:08+00:00",
-    "fecha_evento_temprana": "2026-10-19T02:00:08+00:00",
-    "fecha_deteccion": "2026-10-19T10:14:54.710954+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Lara::2026-10-19",
-    "titulo": "Incendio en Parroquia Agua Viva, Lara",
-    "texto": "📌 Incendio en Parroquia Agua Viva, Lara\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Agua Viva, Lara\n🕒 Hecho reportado: 18/10/2026, 10:00 p.m.\n🔎 Detectado por el sistema: 19/10/2026, 6:14 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/controlan-incendio-en-la-subestacion-electrica-el-manzano-en-lara/"
   }
 ]
