@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-02T22:43:24.221315+00:00",
+  "actualizado": "2026-11-02T23:11:35.176135+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-02T21:44:44+00:00"
   },
-  "total_eventos": 588,
+  "total_eventos": 584,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 50,
-    "deslizamiento": 41,
+    "infraestructura_electrica": 48,
+    "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 203,
+    "orden_publico": 202,
     "salud_publica": 32,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Lara",
-      "total": 49,
+      "total": 48,
       "confirmados": 2,
       "por_severidad": {
-        "critico": 5,
+        "critico": 4,
         "alto": 10,
         "medio": 19,
         "bajo": 12,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.17,
+      "indice_gravedad": 2.13,
       "severidad_mapa": "medio"
     },
     {
@@ -139,19 +139,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Falcon",
-      "total": 24,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 6,
-        "medio": 10,
-        "critico": 2
-      },
-      "indice_gravedad": 2.17,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Bolivar",
       "total": 23,
       "confirmados": 2,
@@ -163,6 +150,19 @@
         "sin_clasificar": 3
       },
       "indice_gravedad": 1.9,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Falcon",
+      "total": 23,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 6,
+        "medio": 10,
+        "critico": 1
+      },
+      "indice_gravedad": 2.09,
       "severidad_mapa": "medio"
     },
     {
@@ -189,20 +189,6 @@
         "medio": 4
       },
       "indice_gravedad": 2.33,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Anzoategui",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 7,
-        "medio": 6,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 1.94,
       "severidad_mapa": "medio"
     },
     {
@@ -243,6 +229,19 @@
       },
       "indice_gravedad": 1.62,
       "severidad_mapa": "bajo"
+    },
+    {
+      "estado": "Anzoategui",
+      "total": 16,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 6,
+        "medio": 6
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "Carabobo",
@@ -358,7 +357,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 23,
+      "orden_publico": 22,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -438,7 +437,7 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 1
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -481,7 +480,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 12,
-      "deslizamiento": 5,
+      "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "incendio": 2,
@@ -569,10 +568,10 @@
   },
   "por_severidad": {
     "alto": 133,
-    "critico": 75,
+    "critico": 73,
     "medio": 201,
-    "bajo": 156,
-    "sin_clasificar": 23
+    "bajo": 155,
+    "sin_clasificar": 22
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -591,15 +590,14 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 11,
+      "2026-10": 9,
       "2026-11": 1
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 10,
-      "2026-11": 1
+      "2026-10": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -612,7 +610,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 3
+      "2026-11": 2
     },
     "salud_publica": {
       "2026-07": 1,
