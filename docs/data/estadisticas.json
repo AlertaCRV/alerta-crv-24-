@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-01T02:23:54.990763+00:00",
+  "actualizado": "2026-11-02T05:48:35.115218+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-10-31T20:53:09+00:00"
+    "hasta": "2026-11-02T01:05:55+00:00"
   },
-  "total_eventos": 582,
+  "total_eventos": 585,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 49,
+    "infraestructura_electrica": 50,
     "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 200,
+    "orden_publico": 201,
     "salud_publica": 32,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 27,
+    "infraestructura_agua": 28,
     "accidente_transporte": 4,
     "derrame_petrolero": 4,
     "ataque_armado": 8,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Lara",
-      "total": 48,
+      "total": 49,
       "confirmados": 2,
       "por_severidad": {
-        "critico": 4,
+        "critico": 5,
         "alto": 10,
         "medio": 19,
         "bajo": 12,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.13,
+      "indice_gravedad": 2.17,
       "severidad_mapa": "medio"
     },
     {
@@ -127,15 +127,15 @@
     },
     {
       "estado": "Miranda",
-      "total": 23,
+      "total": 24,
       "confirmados": 3,
       "por_severidad": {
         "alto": 3,
-        "medio": 7,
+        "medio": 8,
         "critico": 5,
         "bajo": 8
       },
-      "indice_gravedad": 2.22,
+      "indice_gravedad": 2.21,
       "severidad_mapa": "medio"
     },
     {
@@ -181,14 +181,14 @@
     },
     {
       "estado": "Merida",
-      "total": 20,
+      "total": 21,
       "confirmados": 0,
       "por_severidad": {
-        "alto": 11,
+        "alto": 12,
         "bajo": 5,
         "medio": 4
       },
-      "indice_gravedad": 2.3,
+      "indice_gravedad": 2.33,
       "severidad_mapa": "medio"
     },
     {
@@ -358,7 +358,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 22,
+      "orden_publico": 23,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -464,7 +464,7 @@
     },
     "Miranda": {
       "incendio": 5,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
@@ -546,7 +546,8 @@
       "colapso_estructural": 1,
       "incendio": 3,
       "salud_publica": 1,
-      "tormenta_electrica": 1
+      "tormenta_electrica": 1,
+      "infraestructura_agua": 1
     },
     "Delta Amacuro": {
       "derrame_petrolero": 1,
@@ -567,9 +568,9 @@
     }
   },
   "por_severidad": {
-    "alto": 132,
-    "critico": 72,
-    "medio": 200,
+    "alto": 133,
+    "critico": 73,
+    "medio": 201,
     "bajo": 155,
     "sin_clasificar": 23
   },
@@ -590,7 +591,8 @@
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
-      "2026-10": 11
+      "2026-10": 11,
+      "2026-11": 1
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -608,7 +610,8 @@
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
-      "2026-10": 78
+      "2026-10": 78,
+      "2026-11": 1
     },
     "salud_publica": {
       "2026-07": 1,
@@ -652,7 +655,8 @@
     "infraestructura_agua": {
       "2026-08": 12,
       "2026-09": 8,
-      "2026-10": 7
+      "2026-10": 7,
+      "2026-11": 1
     },
     "accidente_transporte": {
       "2026-08": 1,
