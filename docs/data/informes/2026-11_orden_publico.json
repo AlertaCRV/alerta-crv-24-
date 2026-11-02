@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-11",
+  "tipo": "orden_publico",
+  "tipo_label": "Orden público",
+  "cerrado": false,
+  "generado": "2026-11-02T00:04:19.488492+00:00",
+  "actualizado_hasta": "2026-11-02T00:01:18.742979+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 78,
+    "actual": 2
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de orden público, una notable reducción frente a los 78 incidentes reportados en octubre del mismo año (comparación con el período anterior). Esta disminución se refleja en la base de datos de la Cruz Roja Venezolana, que monitorea los hechos de violencia y sus consecuencias.\n\nEl primer hecho ocurrió en el estado Barinas, donde la violencia vinculada a un partido de fútbol resultó en la muerte de Luis Rafael López, aficionado del Zamora FC, cuyo cuerpo fue hallado en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del encuentro entre Zamora FC «B» y Deportivo Lara el 1° de noviembre (La Prensa de Monagas). La gravedad del incidente fue calificada como crítica y desencadenó medidas de seguridad y control de multitudes en la zona.\n\nEn el estado Lara, la misma tragedia generó un fuerte impacto en la orden pública local, pues la presencia del equipo Deportivo Lara en el partido provocó tensiones y requerimientos de restricción de acceso para la afición visitante (La Prensa de Lara). Las autoridades locales y la Federación Venezolana de Fútbol (FVF) declararon la situación de orden público como crítica y adoptaron protocolos de prevención para evitar nuevos incidentes.\n\nAmbas fuentes coinciden en que la FVF condenó enérgicamente los hechos de violencia y se comprometió a colaborar activamente con las autoridades competentes para el esclarecimiento de los hechos y la protección de los espectadores (La Prensa de Lara; La Prensa de Monagas). Las investigaciones continúan en curso, mientras se refuerzan los planes de seguridad en los estadios de Barinas y Lara.\n\nEl monitoreo de la Cruz Roja seguirá registrando cualquier novedad relacionada con la orden pública y los posibles daños materiales, heridos o víctimas fatales, con el objetivo de proporcionar información oportuna a las autoridades y a la población.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/fvf-condena-los-hechos-de-violencia-en-barinas-tras-el-fallecimiento-de-un-aficionado-en-la-liga-futve-2/"
+    }
+  ]
+}

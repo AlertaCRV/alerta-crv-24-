@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-11-02T00:04:24.075973+00:00",
+  "actualizado_hasta": "2026-11-02T00:00:04.118653+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 21,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de salud pública, lo que representa una disminución notable respecto al período anterior, en el que se contabilizaron 21 eventos (comparación con el período anterior).\\n\\nEl único caso reportado corresponde a una intoxicación masiva en una institución educativa del estado Trujillo, catalogada con severidad alta. Según Runrun.es, más de 70 estudiantes resultaron afectados por dos episodios de intoxicación en escuelas de Barinas y Trujillo, y el incidente en Trujillo forma parte de ese total (Runrun.es).\\n\\nAunque el artículo no detalla la cifra exacta de alumnos afectados en Trujillo, se indica que la suma de los casos en ambos estados supera los setenta, lo que evidencia la gravedad del suceso y la necesidad de una respuesta rápida de los servicios de salud (Runrun.es).\\n\\nEste registro único en noviembre contrasta con la alta actividad del mes anterior, lo que sugiere una mejora temporal en la incidencia de emergencias de salud pública, aunque la presencia de un evento de alta severidad subraya la importancia de mantener la vigilancia y la capacidad de respuesta del sistema de emergencias (comparación con el período anterior).",
+  "fuentes": [
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624342/casos-de-intoxicaciones-en-escuelas-de-barinas-y-trujillo-afectan-a-mas-de-70-estudiantes/"
+    }
+  ]
+}
