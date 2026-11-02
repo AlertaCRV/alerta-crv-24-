@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-02T13:55:02.228495+00:00",
+  "actualizado": "2026-11-02T22:43:24.221315+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-02T12:50:02+00:00"
+    "hasta": "2026-11-02T21:44:44+00:00"
   },
-  "total_eventos": 586,
+  "total_eventos": 588,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 50,
-    "deslizamiento": 40,
+    "deslizamiento": 41,
     "colapso_estructural": 5,
-    "orden_publico": 202,
+    "orden_publico": 203,
     "salud_publica": 32,
     "crisis_migratoria": 7,
     "incendio": 61,
@@ -140,15 +140,29 @@
     },
     {
       "estado": "Falcon",
-      "total": 23,
+      "total": 24,
       "confirmados": 3,
       "por_severidad": {
         "alto": 6,
         "bajo": 6,
         "medio": 10,
-        "critico": 1
+        "critico": 2
       },
-      "indice_gravedad": 2.09,
+      "indice_gravedad": 2.17,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Bolivar",
+      "total": 23,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 7,
+        "medio": 10,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 1.9,
       "severidad_mapa": "medio"
     },
     {
@@ -163,20 +177,6 @@
         "sin_clasificar": 2
       },
       "indice_gravedad": 2.25,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 22,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 6,
-        "medio": 10,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 1.95,
       "severidad_mapa": "medio"
     },
     {
@@ -453,7 +453,7 @@
       "salud_publica": 4
     },
     "Bolivar": {
-      "orden_publico": 10,
+      "orden_publico": 11,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -481,7 +481,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 12,
-      "deslizamiento": 4,
+      "deslizamiento": 5,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "incendio": 2,
@@ -569,9 +569,9 @@
   },
   "por_severidad": {
     "alto": 133,
-    "critico": 74,
+    "critico": 75,
     "medio": 201,
-    "bajo": 155,
+    "bajo": 156,
     "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
@@ -598,7 +598,8 @@
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 10
+      "2026-10": 10,
+      "2026-11": 1
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -611,7 +612,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 2
+      "2026-11": 3
     },
     "salud_publica": {
       "2026-07": 1,

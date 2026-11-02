@@ -1,25 +1,4 @@
 {
-  "infraestructura_electrica::Anzoategui::2026-10-30": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T20:37:06.514174+00:00",
-    "fecha_evento_temprana": "2026-10-30T14:34:23+00:00",
-    "municipio": null
-  },
-  "inundacion::Merida::2026-10-30": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T20:38:26.575000+00:00",
-    "fecha_evento_temprana": "2026-10-30T18:16:44+00:00",
-    "municipio": null
-  },
-  "salud_publica::Tachira::2026-10-30": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-30T20:39:15.088542+00:00",
-    "fecha_evento_temprana": "2026-10-30T15:00:00+00:00",
-    "municipio": null
-  },
   "orden_publico::Bolivar::2026-10-31": {
     "severidad": "bajo",
     "confirmado": false,
@@ -89,5 +68,19 @@
     "fecha_deteccion": "2026-11-02T13:55:01.497282+00:00",
     "fecha_evento_temprana": "2026-11-02T12:50:02+00:00",
     "municipio": null
+  },
+  "orden_publico::Bolivar::2026-11-02": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T22:42:28.756511+00:00",
+    "fecha_evento_temprana": "2026-11-02T21:44:44+00:00",
+    "municipio": null
+  },
+  "deslizamiento::Falcon::2026-11-02": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-02T22:42:33.200798+00:00",
+    "fecha_evento_temprana": "2026-11-02T13:27:10+00:00",
+    "municipio": "Colina"
   }
 }
