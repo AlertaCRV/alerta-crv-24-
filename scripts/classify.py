@@ -1623,6 +1623,21 @@ def _es_mantenimiento_electrico_programado_sin_falla_real(texto_norm):
 _MARCADORES_EVENTO_PARTIDISTA_SIN_TEMA_DE_SERVICIOS = ["pleno juvenil"]
 
 
+# Caso real (auditoria diaria 02-11-2026): "Grabaciones, testimonios y chats
+# sostienen acusacion contra dos sacerdotes privados de libertad por abuso...
+# La audiencia se extendio hasta la madrugada debido a un APAGON en el Palacio
+# de Justicia" -- cronica judicial con un apagon incidental, publicada como
+# falla electrica en Anzoategui. Frase exacta de audiencia + apagon.
+_MARCADORES_APAGON_INCIDENTAL_AUDIENCIA = [
+    "apagon en el palacio de justicia", "apagon en los tribunales",
+    "apagon en el circuito judicial",
+]
+
+
+def _es_apagon_incidental_en_audiencia_judicial(texto_norm):
+    return any(m in texto_norm for m in _MARCADORES_APAGON_INCIDENTAL_AUDIENCIA)
+
+
 def _es_evento_partidista_con_mencion_incidental_de_servicios(texto_norm):
     return any(m in texto_norm for m in _MARCADORES_EVENTO_PARTIDISTA_SIN_TEMA_DE_SERVICIOS)
 
@@ -2025,8 +2040,26 @@ _MARCADORES_DESLIZAMIENTO_VEHICULO = [
 ]
 
 
+# Caso real (auditoria diaria 02-11-2026): "Murio motorizado adolescente en
+# Coro tras accidente... en cuyo DESLIZAMIENTO cerca de Makro murio..." (la
+# moto patino) se publicaba como deslizamiento CRITICO en Falcon, con
+# municipio "Colina" tomado del apellido del conductor. Se descarta cuando
+# "deslizamiento" convive con un accidente de moto/vehiculo y NINGUN
+# marcador de terreno (tierra, talud, ladera, lluvias, viviendas...).
+_MARCADORES_ACCIDENTE_MOTO = ["motorizado", "motociclista", "moto ", "motocicleta"]
+_MARCADORES_TERRENO_DESLIZAMIENTO = [
+    "tierra", "talud", "ladera", "cerro", "lluvia", "vivienda", "derrumbe",
+    "alud", "barranco", "carretera obstruida", "via obstruida", "sepultad",
+    "montana", "corrimiento",
+]
+
+
 def _es_deslizamiento_vehicular_no_terreno(texto_norm):
-    return any(m in texto_norm for m in _MARCADORES_DESLIZAMIENTO_VEHICULO)
+    if any(m in texto_norm for m in _MARCADORES_DESLIZAMIENTO_VEHICULO):
+        return True
+    return ("accidente" in texto_norm
+            and any(m in texto_norm for m in _MARCADORES_ACCIDENTE_MOTO)
+            and not any(m in texto_norm for m in _MARCADORES_TERRENO_DESLIZAMIENTO))
 
 
 # "Escombros" (palabra clave de deslizamiento) es ambiguo entre el material
@@ -3583,6 +3616,8 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "infraestructura_electrica" and _es_anuncio_corpoelec_sin_falla(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_formacion_comite_seguimiento_apagones_sin_falla_real(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_apagon_incidental_en_audiencia_judicial(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_queja_cronica_electrica_sin_hecho_verificable(texto_completo_norm):
                     break

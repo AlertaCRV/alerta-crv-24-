@@ -9906,3 +9906,15 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 02-11-2026: derrape de moto como deslizamiento, apagón incidental en audiencia judicial y duplicado por nombre de club
+
+**Hallazgos** (alertas del 30-10 al 02-11 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`deslizamiento::Falcon::2026-11-02`** (Nuevo Día): muerte de un motorizado adolescente en Coro; "en cuyo deslizamiento cerca de Makro" es el derrape de la moto, y el municipio "Colina" era el apellido del conductor. Publicado como deslizamiento CRÍTICO.
+2. **`infraestructura_electrica::Anzoategui::2026-10-30`** (El Pitazo, 2 registros): acusación contra dos sacerdotes por abuso; el único vínculo eléctrico es que la audiencia se alargó "debido a un apagón en el Palacio de Justicia".
+3. **`orden_publico::Lara::2026-11-01`** (La Prensa de Lara): duplicado de `orden_publico::Barinas::2026-11-02`. La muerte del hincha del Zamora FC ocurrió en Barinas; Lara salía del nombre del club visitante "Deportivo Lara".
+- **Corrección** (`classify.py`): (1) `_es_deslizamiento_vehicular_no_terreno` ahora también descarta "deslizamiento" que convive con accidente de moto/motorizado sin ningún marcador de terreno (tierra, talud, ladera, lluvia, vivienda…); (2) nuevo `_es_apagon_incidental_en_audiencia_judicial` (frases exactas "apagón en el Palacio de Justicia/tribunales"). Casos nuevos en `tests/casos_clasificacion.jsonl`.
+- **Corrección retroactiva**: retiradas las 3 alertas de `noticias.json`, `historico_eventos.jsonl`, `historico_fuentes_texto.jsonl` y `publicados.json`; `estadisticas.json` regenerado; borrados los informes mensuales que las citaban (`2026-11_deslizamiento`, `2026-11_orden_publico`, `2026-11_general`, `2026-10_infraestructura_electrica`) para que el bot los regenere con narrativa limpia.
+- **Intento descartado (3)**: excluir "Deportivo X"/"X FC" como mención de estado rompía los casos ya validados `orden_publico_carabobo_fc_equipo_no_es_estado` (donde Lara SÍ es el estado, partido en Barquisimeto) y `sequia_futbol_monagas_sc`. No existe regla determinista segura sin conocer el lugar del estadio; el duplicado se retiró solo retroactivamente. **Pendiente de discutir**: detectar duplicados cross-estado cuando un estado solo aparece como nombre de club.
+
+**Revisado y sin cambios**: intoxicaciones en liceos Barinas/Trujillo (sin_clasificar con 34/40+ afectados en la fuente de El Tiempo, mientras El Pitazo las daba como alto; severidad subestimada pero ambigua, a vigilar), bombardeo FANB en Apure, falla eléctrica Baruta, agua Guanare/Mérida, protestas Falcón y Bolívar.
