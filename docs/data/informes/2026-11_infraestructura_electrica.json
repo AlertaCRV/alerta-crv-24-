@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "infraestructura_electrica",
+  "tipo_label": "Falla eléctrica",
+  "cerrado": false,
+  "generado": "2026-11-02T05:50:22.204113+00:00",
+  "actualizado_hasta": "2026-11-02T05:48:04.827925+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 11,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un solo incidente de falla eléctrica, una notable reducción respecto al mes anterior, en el que se contabilizaron 11 eventos (Comparación con el período anterior (2026-10): 11 evento(s) registrados entonces vs. 1 en este período).\n\nEl 1 de noviembre de 2026, a las 9:20 a.m., se produjo una caída de energía que afectó los sistemas de bombeo Tuy II y Tuy III, provocando la interrupción del suministro de agua en más de 40 sectores del municipio Baruta, estado Miranda (Runrun.es).\n\nEl alcalde de Baruta, Darwin González, informó a través de su cuenta en X que la empresa Hidrológica Venezolana C.A. (Hidroven) confirmó la falla en los sistemas Tuy II y Tuy III, atribuyéndola a una fluctuación eléctrica (Runrun.es).\n\nComo consecuencia, los habitantes de esas zonas quedaron sin agua durante la tarde del mismo día, mientras las autoridades municipales y la empresa Hidroven trabajaban para restablecer el servicio (Runrun.es).",
+  "fuentes": [
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"
+    }
+  ]
+}

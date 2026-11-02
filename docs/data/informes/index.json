@@ -1,5 +1,37 @@
 [
   {
+    "periodo": "2026-11",
+    "tipo": "orden_publico",
+    "tipo_label": "Orden público",
+    "cerrado": false,
+    "generado": "2026-11-02T05:50:35.381502+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "infraestructura_electrica",
+    "tipo_label": "Falla eléctrica",
+    "cerrado": false,
+    "generado": "2026-11-02T05:50:22.204113+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "infraestructura_agua",
+    "tipo_label": "Falla de agua",
+    "cerrado": false,
+    "generado": "2026-11-02T05:50:08.584716+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": false,
+    "generado": "2026-11-02T05:49:55.635154+00:00",
+    "total_eventos": 3
+  },
+  {
     "periodo": "2026-10",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

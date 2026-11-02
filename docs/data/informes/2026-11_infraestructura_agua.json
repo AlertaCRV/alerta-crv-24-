@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "infraestructura_agua",
+  "tipo_label": "Falla de agua",
+  "cerrado": false,
+  "generado": "2026-11-02T05:50:08.584716+00:00",
+  "actualizado_hasta": "2026-11-02T05:48:33.492514+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 7,
+    "actual": 1
+  },
+  "narrativa": "En el mes de noviembre de 2026 el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró únicamente un evento de falla de agua, en contraste con los siete eventos que se habían documentado en octubre de 2026 (Comparación proporcionada). Esta reducción significativa en la cantidad de incidentes se refleja en los reportes oficiales del periodo.\n\nEl único incidente registrado corresponde a una falla de agua de alta severidad en el estado Mérida (Reporteros de Merida). Según el informe, la interrupción del suministro hídrico afectó a gran parte de la población merideña, generando condiciones de oscuridad y falta de agua en hogares y establecimientos públicos.\n\nEl dirigente de Proyecto Mérida Ciudad, Claudio Bárcenas, denunció que la crisis se agrava por la coincidencia con el inicio de la temporada navideña, señalando que \"no hay nada que celebrar a oscuras y sin agua\" (Reporteros de Merida). Además, resaltó la combinación de cortes eléctricos prolongados y salarios insuficientes para los trabajadores y funcionarios, lo que empeora la vulnerabilidad de la comunidad ante la falta de servicios básicos (Reporteros de Merida).\n\nA pesar de la baja cantidad de eventos en noviembre, la Cruz Roja mantiene la vigilancia estrecha sobre la situación en Mérida y otras regiones, con el objetivo de responder rápidamente ante cualquier deterioro del suministro de agua y mitigar sus efectos en la población vulnerable.",
+  "fuentes": [
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/11/claudio-barcenas-merida-en-crisis.html"
+    }
+  ]
+}
