@@ -3,23 +3,35 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-11-02T05:49:55.635154+00:00",
-  "actualizado_hasta": "2026-11-02T05:48:33.492514+00:00",
-  "total_eventos": 3,
+  "generado": "2026-11-03T03:48:29.105726+00:00",
+  "actualizado_hasta": "2026-11-02T22:42:33.200798+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 189,
-    "actual": 3
+    "actual": 6
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 3 eventos de emergencia, una disminución drástica respecto a los 189 eventos del mes anterior (2026‑10) (Comparación con el período anterior). Esta reducción se refleja en la base de datos de la Cruz Roja Venezolana, que clasifica los incidentes por categoría y gravedad.\n\nEl primer incidente relevante fue un caso de orden público en el estado Lara, catalogado con severidad crítica (La Prensa de Lara). Las autoridades locales reportaron disturbios que requirieron la intervención de la fuerza pública y generaron riesgos para la población, aunque no se reportaron víctimas mortales.\n\nEn Mérida se presentó una falla de suministro de agua con severidad alta (Reporteros de Merida). Según el dirigente de Proyecto Mérida Ciudad, Claudio Bárcenas, la crisis de servicios afecta a los habitantes mientras se aproxima la temporada navideña, con interrupciones prolongadas y fluctuaciones en el abastecimiento.\n\nAdicionalmente, en el municipio Baruta, estado Miranda, una falla eléctrica en los sistemas Tuy II y III dejó sin agua a más de 40 zonas el 1 de noviembre (Runrun.es). El alcalde Darwin González informó que la causa fue una fluctuación eléctrica que impactó la infraestructura hidráulica, aunque el incidente no se incluyó entre los tres eventos principales por su menor gravedad.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 6 eventos de emergencia, una reducción drástica frente a los 189 eventos del mes anterior (octubre de 2026). Esta disminución refleja una tendencia a la baja en la cantidad de incidentes reportados durante el período analizado.\n\nEn el estado Lara se presentaron disturbios de orden público de severidad crítica, que involucraron enfrentamientos entre aficionados y la Policía Nacional Bolivariana, generando la suspensión de un partido de fútbol y la muerte de un hincha (La Prensa de Lara).\n\nEn Mérida, la población sufrió una grave falla en el suministro de agua, catalogada con alta severidad, que dejó a numerosos hogares sin acceso al recurso básico y se sumó a una crisis energética y de servicios en la región (Reporteros de Merida).\n\nEn Barinas se registró otro episodio de orden público crítico, donde disturbios provocaron la muerte de un aficionado y la interrupción de un encuentro deportivo, evidenciando la vulnerabilidad de la seguridad en eventos masivos (Noticia al Dia (Zulia)).\n\nFinalmente, en el estado Falcón ocurrió un deslizamiento/derrumbe crítico en la zona de Coro, que cobró la vida de un adolescente motorizado y de una menor de 15 años, resaltando los riesgos de accidentes en áreas vulnerables (Nuevo Dia (Falcon)).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
     },
     {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/murio-motorizado-adolescente-en-coro-tras-accidente-del-domingo-1-nov/"
+    },
+    {
       "nombre": "Reporteros de Merida",
       "link": "https://www.reporterosdemerida.com.ve/2026/11/claudio-barcenas-merida-en-crisis.html"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
     },
     {
       "nombre": "Runrun.es",

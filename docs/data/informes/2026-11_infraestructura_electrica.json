@@ -3,7 +3,7 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-02T05:50:22.204113+00:00",
+  "generado": "2026-11-03T03:48:47.393495+00:00",
   "actualizado_hasta": "2026-11-02T05:48:04.827925+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 11,
     "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registró un solo incidente de falla eléctrica, una notable reducción respecto al mes anterior, en el que se contabilizaron 11 eventos (Comparación con el período anterior (2026-10): 11 evento(s) registrados entonces vs. 1 en este período).\n\nEl 1 de noviembre de 2026, a las 9:20 a.m., se produjo una caída de energía que afectó los sistemas de bombeo Tuy II y Tuy III, provocando la interrupción del suministro de agua en más de 40 sectores del municipio Baruta, estado Miranda (Runrun.es).\n\nEl alcalde de Baruta, Darwin González, informó a través de su cuenta en X que la empresa Hidrológica Venezolana C.A. (Hidroven) confirmó la falla en los sistemas Tuy II y Tuy III, atribuyéndola a una fluctuación eléctrica (Runrun.es).\n\nComo consecuencia, los habitantes de esas zonas quedaron sin agua durante la tarde del mismo día, mientras las autoridades municipales y la empresa Hidroven trabajaban para restablecer el servicio (Runrun.es).",
+  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de falla eléctrica en la categoría de emergencias, en contraste con los 11 eventos reportados en octubre de 2026 (Comparación con el período anterior (2026-10): 11 evento(s) registrados entonces vs. 1 en este período).\n\nEl 1 de noviembre de 2026, una falla en los sistemas de bombeo Tuy II y III provocó la interrupción del suministro de agua en más de 40 sectores del municipio Baruta, estado Miranda (Runrun.es). La causa de la falla estuvo asociada a bajones de electricidad y se produjo a las 9:20 de la mañana (Runrun.es).\n\nEl alcalde de Baruta, Darwin González, comunicó a través de su cuenta en X que la empresa Hidrológica Venezolana C.A. (Hidroven) había reportado la falla debido a una fluctuación eléctrica (Runrun.es). Esta información confirmó que la pérdida del servicio de agua fue directa consecuencia del problema eléctrico en los sistemas de bombeo.\n\nComo resultado, los habitantes de las zonas afectadas quedaron sin agua durante varias horas, generando inconvenientes en el consumo doméstico y en actividades productivas. Las autoridades locales y la empresa Hidroven trabajaron para restablecer el suministro, aunque no se especificó el tiempo exacto de la restauración del servicio (Runrun.es).",
   "fuentes": [
     {
       "nombre": "Runrun.es",

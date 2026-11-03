@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-02T05:50:35.381502+00:00",
-  "actualizado_hasta": "2026-11-02T05:48:21.188496+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-03T03:49:00.368418+00:00",
+  "actualizado_hasta": "2026-11-02T22:42:28.756511+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 78,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "Durante el mes de noviembre de 2026 el Sistema de Monitoreo de Emergencias de la Cruz Roja Venezolana registró únicamente un evento de orden público, lo que representa una disminución notable respecto al período anterior.\n\nEn octubre de 2026 se habían registrado 78 evento(s) de orden público, mientras que en noviembre el número se redujo a 1 (Comparación).\n\nEl único incidente reportado en este período ocurrió en el estado Lara, donde se registró un hecho de orden público de severidad crítica, según informó La Prensa de Lara (La Prensa de Lara).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente tres eventos de orden público, una caída significativa respecto a los setenta y ocho incidentes reportados en octubre del mismo año (78 evento(s) registrados entonces vs. 3 en este período). Esta reducción evidencia una disminución notable en la actividad de disturbios durante el período analizado.\n\nEn el estado Lara se registró un incidente de orden público de severidad crítica, según informó La Prensa de Lara (La Prensa de Lara). Los detalles específicos del hecho no fueron divulgados en la fuente, pero la calificación de gravedad indica un impacto significativo en la seguridad pública de la región.\n\nEn Barinas, otro episodio crítico de orden público tuvo lugar, donde disturbios se desencadenaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, resultando en la muerte de un aficionado y la suspensión del partido de la Liga Futve 2 (Noticia al Dia (Zulia)). Este suceso subraya la gravedad de los enfrentamientos y sus consecuencias mortales.\n\nEn conjunto, aunque el número total de eventos disminuyó drásticamente, los incidentes registrados en Lara y Barinas mantuvieron una alta severidad, lo que resalta la necesidad de seguir reforzando las medidas de control y prevención en los eventos de orden público.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
     }
   ]
 }
