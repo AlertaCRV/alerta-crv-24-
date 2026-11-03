@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "vialidad",
+  "tipo_label": "Incidente vial",
+  "cerrado": false,
+  "generado": "2026-11-03T23:45:53.864093+00:00",
+  "actualizado_hasta": "2026-11-03T23:43:27.780467+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 7,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único incidente vial, una disminución notable respecto al período anterior, en el que se contabilizaron siete eventos (Datos comparativos). Esta reducción se refleja en los reportes de la Cruz Roja Venezolana, que continúa monitoreando la seguridad vial en todo el territorio nacional.\n\nEl único hecho registrado corresponde a un incidente vial en Aragua, catalogado con severidad alta (La Prensa de Monagas). En la carretera Cagua‑Villa de Cura se produjo una colisión y volcamiento de un autobús y un camión, generando daños materiales y la posibilidad de heridos (La Prensa de Monagas). Ante la emergencia, funcionarios de la Guardia Nacional Bolivariana y de la Policía Nacional Bolivariana se desplegaron en el sitio para atender la situación y garantizar la seguridad de los afectados (La Prensa de Monagas).\n\nA pesar de la baja frecuencia de incidentes en este período, la Cruz Roja mantiene la alerta y la coordinación con las autoridades de seguridad para responder rápidamente a cualquier eventualidad que comprometa la integridad de la población y la infraestructura vial.",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/"
+    }
+  ]
+}

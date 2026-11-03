@@ -1,6 +1,14 @@
 [
   {
     "periodo": "2026-11",
+    "tipo": "vialidad",
+    "tipo_label": "Incidente vial",
+    "cerrado": false,
+    "generado": "2026-11-03T23:45:53.864093+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,

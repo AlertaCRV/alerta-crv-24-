@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-03T18:40:09.290992+00:00",
+  "actualizado": "2026-11-03T23:44:32.542530+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-03T17:52:37+00:00"
+    "hasta": "2026-11-03T20:36:54+00:00"
   },
-  "total_eventos": 594,
+  "total_eventos": 597,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 52,
+    "infraestructura_electrica": 53,
     "deslizamiento": 41,
     "colapso_estructural": 5,
-    "orden_publico": 205,
+    "orden_publico": 206,
     "salud_publica": 32,
     "crisis_migratoria": 7,
     "incendio": 63,
-    "vialidad": 26,
+    "vialidad": 27,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -99,16 +99,16 @@
     },
     {
       "estado": "Aragua",
-      "total": 35,
+      "total": 36,
       "confirmados": 1,
       "por_severidad": {
         "bajo": 7,
         "medio": 10,
-        "alto": 12,
+        "alto": 13,
         "critico": 4,
         "sin_clasificar": 2
       },
-      "indice_gravedad": 2.39,
+      "indice_gravedad": 2.41,
       "severidad_mapa": "medio"
     },
     {
@@ -193,16 +193,16 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 18,
+      "total": 20,
       "confirmados": 0,
       "por_severidad": {
         "alto": 2,
         "critico": 2,
-        "bajo": 7,
-        "medio": 6,
+        "bajo": 8,
+        "medio": 7,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 1.94,
+      "indice_gravedad": 1.89,
       "severidad_mapa": "medio"
     },
     {
@@ -434,11 +434,11 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 4
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -505,7 +505,7 @@
       "tormenta_electrica": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
-      "vialidad": 1
+      "vialidad": 2
     },
     "Monagas": {
       "salud_publica": 1,
@@ -568,10 +568,10 @@
     }
   },
   "por_severidad": {
-    "alto": 133,
+    "alto": 134,
     "critico": 76,
-    "medio": 204,
-    "bajo": 158,
+    "medio": 205,
+    "bajo": 159,
     "sin_clasificar": 23
   },
   "serie_mensual_por_tipo": {
@@ -592,7 +592,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 3
+      "2026-11": 4
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -612,7 +612,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 5
+      "2026-11": 6
     },
     "salud_publica": {
       "2026-07": 1,
@@ -636,7 +636,8 @@
     "vialidad": {
       "2026-08": 10,
       "2026-09": 9,
-      "2026-10": 7
+      "2026-10": 7,
+      "2026-11": 1
     },
     "sismo": {
       "2026-08": 5,
