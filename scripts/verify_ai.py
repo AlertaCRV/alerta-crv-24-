@@ -362,6 +362,32 @@ def _deslizamiento_estructura_sin_evidencia_fuerte(texto):
     return _EVIDENCIA_FUERTE_DESLIZAMIENTO_RE.search(texto_norm) is None
 
 
+# Filtro determinista para tipo=deslizamiento: "deslizamiento" tambien es el
+# derrape de una moto/vehiculo en un accidente de transito. Caso real
+# (02-11-2026): "Murio motorizado adolescente en Coro tras accidente ... en
+# cuyo deslizamiento cerca de Makro murio una menor" se publico como
+# "Deslizamiento/Derrumbe en Municipio Colina, Falcon" con severidad CRITICA.
+# Solo descarta si el texto habla de un vehiculo y NO hay ninguna senal de
+# tierra/lluvia/ladera (se excluye "via" a proposito: un accidente tambien
+# ocurre en una via).
+_VEHICULO_DESLIZAMIENTO_RE = re.compile(
+    r"\b(moto|motos|motorizado|motorizada|motocicleta|motociclista|vehiculo|"
+    r"vehiculos|camioneta|autobus|gandola|conductor|accidente de transito)\b"
+)
+_EVIDENCIA_TIERRA_DESLIZAMIENTO_RE = re.compile(
+    r"\b(lluvia|lluvias|precipitacion|precipitaciones|aguacero|tormenta|"
+    r"tierra|ladera|talud|cerro|barro|lodo|roca|rocas|piedras|quebrada|"
+    r"desbordamiento|alud|deslave|derrumbe|terreno)\b"
+)
+
+
+def _deslizamiento_de_vehiculo_sin_evidencia_fuerte(texto):
+    texto_norm = _normalizar(texto)
+    if not _VEHICULO_DESLIZAMIENTO_RE.search(texto_norm):
+        return False
+    return _EVIDENCIA_TIERRA_DESLIZAMIENTO_RE.search(texto_norm) is None
+
+
 # Filtro determinista para tipo=sismo: la mayoria de sismos que se publican
 # hoy son temblores menores sin ningun dano real, y estan empañando el
 # proposito del sistema (demasiados reportes de baja relevancia). Un sismo
@@ -1224,6 +1250,7 @@ def _solo_en_contexto_no_territorial(nombre, texto_norm):
     no_territorial = re.compile(
         rf"\b(?:lago|golfo|bahia|laguna)\s+de\s+{n}\b"
         rf"|\(\s*[a-z]+(?:\s+[a-z]+)?\s+{n}\s*\)"
+        rf"|\b(?:alcaldia|alcalde|concejo municipal|gobernacion)\s+(?:de|del)\s+(?:municipio\s+)?{n}\b"
     )
     todas = [m.start() for m in re.finditer(rf"\b{n}\b", texto_norm)]
     if not todas:
@@ -1515,7 +1542,10 @@ def verificar_evento_con_ia(evento):
             or _incendio_estructura_menor_sin_evidencia_fuerte(representante["texto"])
         ):
             obvios_rechazados.append(representante)
-        elif evento["tipo"] == "deslizamiento" and _deslizamiento_estructura_sin_evidencia_fuerte(representante["texto"]):
+        elif evento["tipo"] == "deslizamiento" and (
+            _deslizamiento_estructura_sin_evidencia_fuerte(representante["texto"])
+            or _deslizamiento_de_vehiculo_sin_evidencia_fuerte(representante["texto"])
+        ):
             obvios_rechazados.append(representante)
         elif evento["tipo"] == "sismo" and _sismo_sin_evidencia_fuerte(representante["texto"], representante["fuente_nombre"]):
             obvios_rechazados.append(representante)

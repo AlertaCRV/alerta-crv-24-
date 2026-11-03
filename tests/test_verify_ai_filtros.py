@@ -12,6 +12,7 @@ from classify import clasificar_item
 from verify import agrupar_y_verificar
 from verify_ai import (
     _deslizamiento_estructura_sin_evidencia_fuerte,
+    _deslizamiento_de_vehiculo_sin_evidencia_fuerte,
     _es_retrospectiva_obvia,
     _extraer_severidad_ia,
     _incendio_estructura_menor_sin_evidencia_fuerte,
@@ -731,3 +732,16 @@ def test_municipio_solo_en_contexto_no_territorial():
     real = _normalizar("Ataque en Maracaibo; el lago de Maracaibo estaba en calma.")
     assert not _solo_en_contexto_no_territorial("Maracaibo", real)
     assert _es_retrospectiva_obvia("Al cumplirse 14 y 9 años de las protestas del 2014 y 2017")
+
+
+# --- deslizamiento de moto/vehiculo (03-11-2026) ------------------------
+
+def test_deslizamiento_de_moto_en_accidente_se_descarta():
+    texto = ("Murio motorizado adolescente en Coro tras accidente: en cuyo deslizamiento "
+             "de la moto cerca de Makro murio una menor de edad.")
+    assert _deslizamiento_de_vehiculo_sin_evidencia_fuerte(texto) is True
+
+
+def test_deslizamiento_de_tierra_que_golpea_vehiculo_no_se_descarta():
+    texto = "Un deslizamiento de tierra por las lluvias arrastro una camioneta en la via."
+    assert _deslizamiento_de_vehiculo_sin_evidencia_fuerte(texto) is False

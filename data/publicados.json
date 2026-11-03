@@ -32,7 +32,7 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
     "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
-    "municipio": "San Fernando"
+    "municipio": null
   },
   "infraestructura_electrica::Miranda::2026-11-01": {
     "severidad": "medio",
@@ -40,13 +40,6 @@
     "fecha_deteccion": "2026-11-02T05:48:04.827925+00:00",
     "fecha_evento_temprana": "2026-11-01T22:46:20+00:00",
     "municipio": "Baruta"
-  },
-  "orden_publico::Lara::2026-11-01": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T05:48:21.188496+00:00",
-    "fecha_evento_temprana": "2026-11-01T23:41:04+00:00",
-    "municipio": null
   },
   "infraestructura_agua::Merida::2026-11-02": {
     "severidad": "alto",
@@ -69,33 +62,12 @@
     "fecha_evento_temprana": "2026-11-02T21:44:44+00:00",
     "municipio": null
   },
-  "deslizamiento::Falcon::2026-11-02": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T22:42:33.200798+00:00",
-    "fecha_evento_temprana": "2026-11-02T13:27:10+00:00",
-    "municipio": "Colina"
-  },
   "infraestructura_electrica::Zulia::2026-11-03": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-11-03T11:26:28.785262+00:00",
     "fecha_evento_temprana": "2026-11-03T03:41:26+00:00",
     "municipio": "Lagunillas"
-  },
-  "infraestructura_electrica::Carabobo::2026-11-03": {
-    "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-03T18:38:39.685606+00:00",
-    "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
-    "municipio": "Naguanagua"
-  },
-  "incendio::Carabobo::2026-11-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T18:38:43.627506+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:01:23+00:00",
-    "municipio": "San Diego"
   },
   "incendio::Zulia::2026-11-03": {
     "severidad": "medio",
