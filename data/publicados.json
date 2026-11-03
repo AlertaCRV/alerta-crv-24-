@@ -1,32 +1,4 @@
 {
-  "salud_publica::Barinas::2026-10-31": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T23:21:03.498906+00:00",
-    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
-    "municipio": "Alberto Arvelo Torrealba"
-  },
-  "salud_publica::Trujillo::2026-10-31": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T23:21:29.054602+00:00",
-    "fecha_evento_temprana": "2026-10-31T13:38:42+00:00",
-    "municipio": "Bocono"
-  },
-  "infraestructura_agua::Portuguesa::2026-10-31": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T20:02:37.615147+00:00",
-    "fecha_evento_temprana": "2026-10-31T12:11:17+00:00",
-    "municipio": "Guanare"
-  },
-  "orden_publico::Falcon::2026-10-31": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T20:03:15.724613+00:00",
-    "fecha_evento_temprana": "2026-10-31T16:08:28+00:00",
-    "municipio": null
-  },
   "ataque_armado::Apure::2026-10-31": {
     "severidad": "critico",
     "confirmado": false,
@@ -116,6 +88,27 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-03T18:39:54.490362+00:00",
     "fecha_evento_temprana": "2026-11-03T15:00:00+00:00",
+    "municipio": null
+  },
+  "vialidad::Aragua::2026-11-03": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T23:43:27.780467+00:00",
+    "fecha_evento_temprana": "2026-11-03T20:36:54+00:00",
+    "municipio": null
+  },
+  "orden_publico::Anzoategui::2026-11-03": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T23:44:06.062622+00:00",
+    "fecha_evento_temprana": "2026-11-03T17:37:20+00:00",
+    "municipio": "Anaco"
+  },
+  "infraestructura_electrica::Anzoategui::2026-11-03": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T23:44:18.958047+00:00",
+    "fecha_evento_temprana": "2026-11-03T15:52:22+00:00",
     "municipio": null
   }
 }
