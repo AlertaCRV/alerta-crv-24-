@@ -25,6 +25,14 @@
   },
   {
     "periodo": "2026-11",
+    "tipo": "incendio",
+    "tipo_label": "Incendio",
+    "cerrado": false,
+    "generado": "2026-11-03T18:41:24.428148+00:00",
+    "total_eventos": 2
+  },
+  {
+    "periodo": "2026-11",
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,

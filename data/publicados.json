@@ -1,11 +1,4 @@
 {
-  "orden_publico::Bolivar::2026-10-31": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-10-31T16:12:32.588816+00:00",
-    "fecha_evento_temprana": "2026-10-31T14:35:00+00:00",
-    "municipio": "El Callao"
-  },
   "salud_publica::Barinas::2026-10-31": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -89,5 +82,40 @@
     "fecha_deteccion": "2026-11-03T11:26:28.785262+00:00",
     "fecha_evento_temprana": "2026-11-03T03:41:26+00:00",
     "municipio": "Lagunillas"
+  },
+  "infraestructura_electrica::Carabobo::2026-11-03": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-03T18:38:39.685606+00:00",
+    "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
+    "municipio": "Naguanagua"
+  },
+  "incendio::Carabobo::2026-11-03": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T18:38:43.627506+00:00",
+    "fecha_evento_temprana": "2026-11-03T17:01:23+00:00",
+    "municipio": "San Diego"
+  },
+  "incendio::Zulia::2026-11-03": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-03T18:39:04.673867+00:00",
+    "fecha_evento_temprana": "2026-11-03T13:31:48+00:00",
+    "municipio": "Lagunillas"
+  },
+  "orden_publico::Falcon::2026-11-03": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T18:39:28.715927+00:00",
+    "fecha_evento_temprana": "2026-11-03T17:27:27+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-11-03": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-03T18:39:54.490362+00:00",
+    "fecha_evento_temprana": "2026-11-03T15:00:00+00:00",
+    "municipio": null
   }
 }

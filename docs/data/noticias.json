@@ -1,6 +1,146 @@
 [
   {
     "tipo": "infraestructura_electrica",
+    "ubicacion": "Carabobo",
+    "municipio": "Naguanagua",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/",
+        "fecha": "2026-11-03T17:52:37+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/",
+        "fecha": "2026-11-03T16:05:39+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-03T17:52:37+00:00",
+    "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
+    "fecha_deteccion": "2026-11-03T18:38:39.685606+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Carabobo::2026-11-03",
+    "titulo": "Falla eléctrica en Municipio Naguanagua, Carabobo",
+    "texto": "📌 Falla eléctrica en Municipio Naguanagua, Carabobo\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Naguanagua, Carabobo\n🕒 Hecho reportado: 03/11/2026, 1:52 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:38 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/\n  • La Prensa de Monagas: https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Carabobo",
+    "municipio": "San Diego",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/",
+        "fecha": "2026-11-03T17:01:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-03T17:01:23+00:00",
+    "fecha_evento_temprana": "2026-11-03T17:01:23+00:00",
+    "fecha_deteccion": "2026-11-03T18:38:43.627506+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Carabobo::2026-11-03",
+    "titulo": "Incendio en Municipio San Diego, Carabobo",
+    "texto": "📌 Incendio en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 03/11/2026, 1:01 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:38 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Zulia",
+    "municipio": "Lagunillas",
+    "parroquia": "Libertad",
+    "severidad": "medio",
+    "score": 1.45,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/",
+        "fecha": "2026-11-03T15:47:51+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/",
+        "fecha": "2026-11-03T13:31:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-03T15:47:51+00:00",
+    "fecha_evento_temprana": "2026-11-03T13:31:48+00:00",
+    "fecha_deteccion": "2026-11-03T18:39:04.673867+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Zulia::2026-11-03",
+    "titulo": "Incendio en Parroquia Libertad, Municipio Lagunillas, Zulia",
+    "texto": "📌 Incendio en Parroquia Libertad, Municipio Lagunillas, Zulia\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Libertad, Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 03/11/2026, 11:47 a.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": "Chichiriviche",
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/",
+        "fecha": "2026-11-03T17:27:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-03T17:27:27+00:00",
+    "fecha_evento_temprana": "2026-11-03T17:27:27+00:00",
+    "fecha_deteccion": "2026-11-03T18:39:28.715927+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-11-03",
+    "titulo": "Orden público en Parroquia Chichiriviche, Falcon",
+    "texto": "📌 Orden público en Parroquia Chichiriviche, Falcon\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Chichiriviche, Falcon\n🕒 Hecho reportado: 03/11/2026, 1:27 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/",
+        "fecha": "2026-11-03T15:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-03T15:00:00+00:00",
+    "fecha_evento_temprana": "2026-11-03T15:00:00+00:00",
+    "fecha_deteccion": "2026-11-03T18:39:54.490362+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-11-03",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/11/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
     "ubicacion": "Zulia",
     "municipio": "Lagunillas",
     "parroquia": "Libertad",
