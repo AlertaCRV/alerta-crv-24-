@@ -1,0 +1,29 @@
+{
+  "periodo": "2026-11",
+  "tipo": "incendio",
+  "tipo_label": "Incendio",
+  "cerrado": false,
+  "generado": "2026-11-03T18:41:24.428148+00:00",
+  "actualizado_hasta": "2026-11-03T18:39:04.673867+00:00",
+  "total_eventos": 2,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 20,
+    "actual": 2
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente dos eventos de incendio, una notable disminución respecto al período anterior en el que se contabilizaron veinte incidentes (comparación con el período anterior: 20 evento(s) registrados entonces vs. 2 en este período).\\n\\nEl 3 de noviembre se produjo una explosión seguida de incendio en la subestación eléctrica Federación, ubicada en el barrio Constitución, parroquia Libertad, municipio Lagunillas, en la Costa Oriental del Lago de Maracaibo, estado Zulia (El Impulso). La explosión dejó sin suministro eléctrico a varios sectores de Ciudad Ojeda y de Lagunillas, según reportaron los vecinos y la concejal Hiulis Rivero (La Verdad).\\n\\nEn Caracas, un presunto trabajador de la Corporación Eléctrica Nacional (Corpoelec) se volvió viral en redes sociales al intentar apagar un transformador en llamas utilizando botellas con refresco, una maniobra calificada como extremadamente peligrosa por expertos, quienes advirtieron sobre la falta de equipos de seguridad personal (El Pitazo).\\n\\nAmbos incidentes fueron cubiertos por los medios locales, resaltando la necesidad de reforzar los protocolos de seguridad y el mantenimiento de la infraestructura eléctrica para prevenir futuros siniestros.",
+  "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/"
+    }
+  ]
+}
