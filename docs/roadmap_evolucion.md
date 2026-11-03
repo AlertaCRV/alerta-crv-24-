@@ -9906,3 +9906,17 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 03-11-2026: deslizamiento por derrape de moto, ubicación por afiliación institucional, notas de otro estado y homicidio ajeno al apagón
+
+**Hallazgos** (alertas del 31/10 al 03/11 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`deslizamiento::Falcon::2026-11-02`** (CRÍTICO, Nuevo Día): "deslizamiento" era el derrape de una moto en un accidente de tránsito en Coro (muerte de dos adolescentes), no un deslizamiento de tierra.
+2. **`incendio::Carabobo::2026-11-03`** (El Pitazo): nota de expertos sobre un trabajador de Corpoelec que apagó un transformador con refresco (el incendio fue en Valle de la Pascua); "San Diego, Carabobo" salía del cargo de un entrevistado ("comisionado de Gestión de Riesgos de la alcaldía de San Diego").
+3. **`orden_publico::Lara::2026-11-01`** (CRÍTICO, La Prensa de Lara): muerte de un hincha en el estadio de Barinas; se publicó en Lara por la región del medio, duplicando `orden_publico::Barinas::2026-11-02`.
+4. **`infraestructura_electrica::Carabobo::2026-11-03`** (CRÍTICO, "confirmado" con 2 fuentes): una fuente era un homicidio doméstico en Guacara ocurrido "durante un apagón", sin relación con la falla; la otra reporta bajones en Caracas y 7 estados, no específicos de Carabobo.
+5. **`ataque_armado::Apure::2026-10-31`**: municipio "San Fernando" sale de "9 cuerpos enviados a San Fernando de Apure"; el bombardeo ocurrió en otro sector sin nombrar.
+
+- **Corrección de código** (`verify_ai.py`): `_deslizamiento_de_vehiculo_sin_evidencia_fuerte` (descarta deslizamiento si habla de moto/vehículo/conductor y no hay señal de tierra/lluvia/ladera) y `_solo_en_contexto_no_territorial` ahora cubre menciones institucionales ("alcaldía/alcalde/gobernación de X"). Tests nuevos en `tests/test_verify_ai_filtros.py`; suite completa en verde.
+- **Corrección retroactiva**: retiradas las alertas 1-4 de `noticias.json`, históricos y `publicados.json`; municipio → null en Apure; `estadisticas.json` e informes regenerados.
+- **Pendiente de código (sin filtro todavía)**: (3) el estado se toma de la región del medio cuando el texto nombra otro estado; (4) una fuente de homicidio ajeno se agrupa con una falla eléctrica solo por coincidir "apagón" + estado; (5) municipio de destino de cadáveres tratado como lugar del hecho. Son patrones más amplios que requieren decidir un criterio general.
+- **Pendiente de decidir**: `infraestructura_agua::Merida::2026-11-02` (severidad ALTA a partir de una declaración política sobre la "crisis" de agua y luz, sin hecho concreto); `incendio` + `infraestructura_electrica` en Zulia del 03/11 describen la misma explosión de la subestación Federación (dos alertas de tipos distintos); y sigue abierto `orden_publico::Tachira::2026-10-24`.

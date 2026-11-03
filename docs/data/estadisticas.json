@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-11-03T18:40:09.290992+00:00",
+  "actualizado": "2026-11-03T23:12:23.542218+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-03T17:52:37+00:00"
+    "hasta": "2026-11-03T17:27:27+00:00"
   },
-  "total_eventos": 594,
+  "total_eventos": 590,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 52,
-    "deslizamiento": 41,
+    "infraestructura_electrica": 51,
+    "deslizamiento": 40,
     "colapso_estructural": 5,
-    "orden_publico": 205,
+    "orden_publico": 204,
     "salud_publica": 32,
     "crisis_migratoria": 7,
-    "incendio": 63,
+    "incendio": 62,
     "vialidad": 26,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -43,20 +43,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Lara",
-      "total": 50,
-      "confirmados": 2,
-      "por_severidad": {
-        "critico": 5,
-        "alto": 10,
-        "medio": 19,
-        "bajo": 13,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 2.15,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Zulia",
       "total": 50,
       "confirmados": 11,
@@ -68,6 +54,20 @@
         "alto": 11
       },
       "indice_gravedad": 2.29,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Lara",
+      "total": 49,
+      "confirmados": 2,
+      "por_severidad": {
+        "critico": 4,
+        "alto": 10,
+        "medio": 19,
+        "bajo": 13,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 2.11,
       "severidad_mapa": "medio"
     },
     {
@@ -126,19 +126,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Falcon",
-      "total": 25,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 7,
-        "medio": 10,
-        "critico": 2
-      },
-      "indice_gravedad": 2.12,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Miranda",
       "total": 24,
       "confirmados": 3,
@@ -149,6 +136,19 @@
         "bajo": 8
       },
       "indice_gravedad": 2.21,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Falcon",
+      "total": 24,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 7,
+        "medio": 10,
+        "critico": 1
+      },
+      "indice_gravedad": 2.04,
       "severidad_mapa": "medio"
     },
     {
@@ -220,19 +220,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Carabobo",
-      "total": 17,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 6,
-        "critico": 4
-      },
-      "indice_gravedad": 2.41,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Monagas",
       "total": 17,
       "confirmados": 0,
@@ -256,6 +243,19 @@
       },
       "indice_gravedad": 1.62,
       "severidad_mapa": "bajo"
+    },
+    {
+      "estado": "Carabobo",
+      "total": 15,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 5,
+        "critico": 3
+      },
+      "indice_gravedad": 2.33,
+      "severidad_mapa": "medio"
     },
     {
       "estado": "La Guaira",
@@ -349,16 +349,16 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "orden_publico": 5,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 2,
       "inundacion": 3,
       "vialidad": 2,
-      "incendio": 2,
+      "incendio": 1,
       "accidente_transporte": 1
     },
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 24,
+      "orden_publico": 23,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -481,7 +481,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 13,
-      "deslizamiento": 5,
+      "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "incendio": 2,
@@ -569,8 +569,8 @@
   },
   "por_severidad": {
     "alto": 133,
-    "critico": 76,
-    "medio": 204,
+    "critico": 73,
+    "medio": 203,
     "bajo": 158,
     "sin_clasificar": 23
   },
@@ -592,14 +592,13 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 3
+      "2026-11": 2
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 10,
-      "2026-11": 1
+      "2026-10": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -612,7 +611,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 5
+      "2026-11": 4
     },
     "salud_publica": {
       "2026-07": 1,
@@ -631,7 +630,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 2
+      "2026-11": 1
     },
     "vialidad": {
       "2026-08": 10,
