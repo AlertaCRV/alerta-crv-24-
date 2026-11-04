@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-03T03:49:00.368418+00:00",
-  "actualizado_hasta": "2026-11-02T22:42:28.756511+00:00",
-  "total_eventos": 3,
+  "generado": "2026-11-04T03:26:28.681770+00:00",
+  "actualizado_hasta": "2026-11-03T23:44:06.062622+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 78,
-    "actual": 3
+    "actual": 6
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente tres eventos de orden público, una caída significativa respecto a los setenta y ocho incidentes reportados en octubre del mismo año (78 evento(s) registrados entonces vs. 3 en este período). Esta reducción evidencia una disminución notable en la actividad de disturbios durante el período analizado.\n\nEn el estado Lara se registró un incidente de orden público de severidad crítica, según informó La Prensa de Lara (La Prensa de Lara). Los detalles específicos del hecho no fueron divulgados en la fuente, pero la calificación de gravedad indica un impacto significativo en la seguridad pública de la región.\n\nEn Barinas, otro episodio crítico de orden público tuvo lugar, donde disturbios se desencadenaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, resultando en la muerte de un aficionado y la suspensión del partido de la Liga Futve 2 (Noticia al Dia (Zulia)). Este suceso subraya la gravedad de los enfrentamientos y sus consecuencias mortales.\n\nEn conjunto, aunque el número total de eventos disminuyó drásticamente, los incidentes registrados en Lara y Barinas mantuvieron una alta severidad, lo que resalta la necesidad de seguir reforzando las medidas de control y prevención en los eventos de orden público.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente seis incidentes de orden público, una disminución notable respecto a los setenta y ocho eventos contabilizados en octubre del mismo año (comparación con el período anterior). Esta reducción refleja una tendencia a la baja en la frecuencia de disturbios y enfrentamientos en el territorio nacional.\n\nEn el estado Lara se reportó un incidente de orden público de gravedad crítica, según informó La Prensa de Lara. Las autoridades locales describieron la situación como de alta severidad, aunque los detalles específicos del hecho no fueron divulgados en la fuente disponible (La Prensa de Lara).\n\nEn Barinas, la situación alcanzó un nivel crítico cuando un aficionado, Luis Rafael López, fue hallado sin vida en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del partido entre Zamora FC B y Deportivo Lara, programado para la tarde del 1 de noviembre. El encuentro tuvo que ser suspendido y la Fiscalía abrió una investigación sobre el hecho (La Prensa de Lara). Los disturbios se originaron cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, provocando enfrentamientos que derivaron en la muerte del aficionado (Noticia al Dia (Zulia)).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -22,8 +22,20 @@
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
     }
   ]
 }

@@ -3,16 +3,32 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-03T03:48:47.393495+00:00",
-  "actualizado_hasta": "2026-11-02T05:48:04.827925+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-04T03:26:01.947140+00:00",
+  "actualizado_hasta": "2026-11-04T03:23:21.375386+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 11,
-    "actual": 1
+    "actual": 6
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de falla eléctrica en la categoría de emergencias, en contraste con los 11 eventos reportados en octubre de 2026 (Comparación con el período anterior (2026-10): 11 evento(s) registrados entonces vs. 1 en este período).\n\nEl 1 de noviembre de 2026, una falla en los sistemas de bombeo Tuy II y III provocó la interrupción del suministro de agua en más de 40 sectores del municipio Baruta, estado Miranda (Runrun.es). La causa de la falla estuvo asociada a bajones de electricidad y se produjo a las 9:20 de la mañana (Runrun.es).\n\nEl alcalde de Baruta, Darwin González, comunicó a través de su cuenta en X que la empresa Hidrológica Venezolana C.A. (Hidroven) había reportado la falla debido a una fluctuación eléctrica (Runrun.es). Esta información confirmó que la pérdida del servicio de agua fue directa consecuencia del problema eléctrico en los sistemas de bombeo.\n\nComo resultado, los habitantes de las zonas afectadas quedaron sin agua durante varias horas, generando inconvenientes en el consumo doméstico y en actividades productivas. Las autoridades locales y la empresa Hidroven trabajaron para restablecer el suministro, aunque no se especificó el tiempo exacto de la restauración del servicio (Runrun.es).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron seis eventos de fallas eléctricas, una disminución respecto a los once reportados en octubre del mismo año (11 evento(s) registrados entonces vs. 6 en este período). Las incidencias se concentraron en distintas regiones del país, generando interrupciones del suministro y, en algunos casos, consecuencias graves para la población.\n\nEn Carabobo se documentó una falla eléctrica de severidad crítica, que formó parte de los bajones de voltaje reportados a nivel nacional (El Pitazo). Ese mismo apagón fue el escenario de un homicidio: una mujer apuñaló mortalmente a su pareja en Guacara, Carabobo, durante la interrupción del servicio eléctrico (La Prensa de Monagas). Ambos hechos subrayan la gravedad de la situación en esa entidad.\n\nEl 3 de noviembre, usuarios de Caracas y de siete estados —Portuguesa, Monagas, Zulia, Vargas, Carabobo, Miranda y Táchira— reportaron dos bajones de voltaje con diez minutos de diferencia, provocando apagones temporales (El Pitazo). En el estado Anzoátegui, vecinos de Pueblo Nuevo Sur, El Tigre, realizaron un cacerolazo para manifestar su descontento tras sufrir un apagón de casi nueve horas el 2 de noviembre (El Tiempo). Asimismo, en Ciudad Ojeda, Zulia, una explosión en la subestación Federación dejó sin electricidad a varios sectores de la ciudad durante la noche del 2 de noviembre (Noticia al Dia).\n\nEn el municipio Baruta, Miranda, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua en más de 40 zonas el 1 de noviembre, como consecuencia de la fluctuación eléctrica detectada a las 9:20 a.m. (Runrun.es).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
+    },
     {
       "nombre": "Runrun.es",
       "link": "https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"

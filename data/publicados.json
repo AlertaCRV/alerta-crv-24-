@@ -1,11 +1,4 @@
 {
-  "ataque_armado::Apure::2026-10-31": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
-    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
-    "municipio": "San Fernando"
-  },
   "infraestructura_electrica::Miranda::2026-11-01": {
     "severidad": "medio",
     "confirmado": false,
@@ -57,10 +50,10 @@
   },
   "infraestructura_electrica::Carabobo::2026-11-03": {
     "severidad": "critico",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-03T18:38:39.685606+00:00",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-04T03:22:38.365859+00:00",
     "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
-    "municipio": "Naguanagua"
+    "municipio": "Guacara"
   },
   "incendio::Carabobo::2026-11-03": {
     "severidad": "medio",
@@ -105,9 +98,9 @@
     "municipio": "Anaco"
   },
   "infraestructura_electrica::Anzoategui::2026-11-03": {
-    "severidad": "medio",
+    "severidad": "sin_clasificar",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-03T23:44:18.958047+00:00",
+    "fecha_deteccion": "2026-11-04T03:23:21.375386+00:00",
     "fecha_evento_temprana": "2026-11-03T15:52:22+00:00",
     "municipio": null
   }

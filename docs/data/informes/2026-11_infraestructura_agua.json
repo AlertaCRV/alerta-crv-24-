@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-03T03:48:42.723383+00:00",
+  "generado": "2026-11-04T03:25:48.742563+00:00",
   "actualizado_hasta": "2026-11-02T05:48:33.492514+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 7,
     "actual": 1
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró un único incidente de falla de agua a nivel nacional, una notable reducción respecto a los siete eventos reportados en octubre del mismo año (7 evento(s) registrados entonces vs. 1 en este período). Esta disminución se refleja en los reportes de la Cruz Roja Venezolana, que continúan monitoreando la disponibilidad de servicios básicos en todo el territorio.\n\nEl único caso registrado corresponde a una falla de agua de alta severidad en la ciudad de Mérida. Según Reporteros de Merida, la población merideña enfrenta una crisis de servicios que incluye cortes eléctricos prolongados y graves interrupciones en el suministro de agua, afectando tanto a hogares como a instituciones públicas (Reporteros de Merida). La falta de agua ha generado condiciones de vulnerabilidad, limitando actividades cotidianas y aumentando la presión sobre los recursos de emergencia.\n\nA pesar de la baja cantidad de incidentes en este período, la Cruz Roja mantiene la alerta y continúa coordinando acciones de apoyo para mitigar los efectos de la escasez de agua en Mérida y otras regiones potencialmente vulnerables. El monitoreo constante y la colaboración con autoridades locales buscan prevenir la escalada de la crisis y garantizar una respuesta rápida ante cualquier eventualidad futura.",
+  "narrativa": "Durante el mes de noviembre de 2026 el sistema de monitoreo de emergencias registró un único evento de falla de agua, una notable reducción frente a los siete eventos reportados en octubre de 2026. Esta disminución se refleja en la comparación oficial del período anterior.\n\nEl único incidente registrado corresponde a una falla de agua de alta severidad en la ciudad de Mérida. Según el informe de Reporteros de Merida, la interrupción del suministro hídrico se produjo en el contexto de una crisis más amplia que incluye cortes eléctricos prolongados y fluctuaciones constantes en la energía (Reporteros de Merida). Claudio Bárcenas, dirigente de Proyecto Mérida Ciudad, describió la situación como \"una crisis energética y de servicios cada día más aguda\", señalando que la falta de agua afecta directamente a la población durante la temporada navideña (Reporteros de Merida).\n\nEl impacto de la falla se tradujo en la ausencia de agua potable para los residentes, generando incomodidades y riesgos sanitarios. Bárcenas hizo un llamado a las autoridades para que se atienda de manera urgente la desconexión entre la realidad del país y los planes oficiales de iniciar la Navidad el 1 de noviembre, subrayando la necesidad de soluciones inmediatas al problema del suministro (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Reporteros de Merida",

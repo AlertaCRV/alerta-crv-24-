@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-03T23:45:53.864093+00:00",
+    "generado": "2026-11-04T03:26:33.484767+00:00",
     "total_eventos": 1
   },
   {
@@ -12,23 +12,23 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-03T03:49:00.368418+00:00",
-    "total_eventos": 3
+    "generado": "2026-11-04T03:26:28.681770+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-11",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-03T03:48:47.393495+00:00",
-    "total_eventos": 1
+    "generado": "2026-11-04T03:26:01.947140+00:00",
+    "total_eventos": 6
   },
   {
     "periodo": "2026-11",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-11-03T03:48:42.723383+00:00",
+    "generado": "2026-11-04T03:25:48.742563+00:00",
     "total_eventos": 1
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-03T18:41:24.428148+00:00",
+    "generado": "2026-11-04T03:25:35.020721+00:00",
     "total_eventos": 2
   },
   {
@@ -44,15 +44,15 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-11-03T03:48:29.105726+00:00",
-    "total_eventos": 6
+    "generado": "2026-11-04T03:25:29.922885+00:00",
+    "total_eventos": 17
   },
   {
     "periodo": "2026-11",
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-03T03:48:02.274526+00:00",
+    "generado": "2026-11-04T03:25:01.586747+00:00",
     "total_eventos": 1
   },
   {
