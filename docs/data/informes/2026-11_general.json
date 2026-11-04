@@ -3,19 +3,31 @@
   "tipo": "general",
   "tipo_label": "Todas las categorías",
   "cerrado": false,
-  "generado": "2026-11-03T03:48:29.105726+00:00",
-  "actualizado_hasta": "2026-11-02T22:42:33.200798+00:00",
-  "total_eventos": 6,
+  "generado": "2026-11-04T03:25:29.922885+00:00",
+  "actualizado_hasta": "2026-11-04T03:23:21.375386+00:00",
+  "total_eventos": 17,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 189,
-    "actual": 6
+    "actual": 17
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 6 eventos de emergencia, una reducción drástica frente a los 189 eventos del mes anterior (octubre de 2026). Esta disminución refleja una tendencia a la baja en la cantidad de incidentes reportados durante el período analizado.\n\nEn el estado Lara se presentaron disturbios de orden público de severidad crítica, que involucraron enfrentamientos entre aficionados y la Policía Nacional Bolivariana, generando la suspensión de un partido de fútbol y la muerte de un hincha (La Prensa de Lara).\n\nEn Mérida, la población sufrió una grave falla en el suministro de agua, catalogada con alta severidad, que dejó a numerosos hogares sin acceso al recurso básico y se sumó a una crisis energética y de servicios en la región (Reporteros de Merida).\n\nEn Barinas se registró otro episodio de orden público crítico, donde disturbios provocaron la muerte de un aficionado y la interrupción de un encuentro deportivo, evidenciando la vulnerabilidad de la seguridad en eventos masivos (Noticia al Dia (Zulia)).\n\nFinalmente, en el estado Falcón ocurrió un deslizamiento/derrumbe crítico en la zona de Coro, que cobró la vida de un adolescente motorizado y de una menor de 15 años, resaltando los riesgos de accidentes en áreas vulnerables (Nuevo Dia (Falcon)).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 17 eventos de emergencia, una disminución notable respecto a los 189 eventos del período anterior (2026-10). Esta reducción se observa en la variedad de incidentes reportados, aunque persisten situaciones críticas en distintas regiones del país.\n\nEn el estado Lara se reportaron disturbios de orden público de severidad crítica, que requirieron la intervención de las fuerzas de seguridad (La Prensa de Lara). De forma paralela, en Barinas se registró otro episodio de orden público crítico, vinculado a la muerte de un aficionado durante un partido de fútbol, lo que provocó la suspensión del encuentro (Noticia al Dia (Zulia)).\n\nLos problemas de infraestructura continuaron afectando a la población. En Mérida se denunciaron fallas graves en el suministro de agua, agravando la crisis de servicios básicos (Reporteros de Merida). En Carabobo, dos fuentes distintas informaron fallas eléctricas críticas: una describió dos bajones de voltaje que dejaron sin energía a varios municipios, mientras que otra relató un homicidio ocurrido durante un apagón en Guacara (El Pitazo; La Prensa de Monagas). \n\nEn el ámbito del transporte, Aragua fue escenario de una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, con la presencia de la GNB y la PNB para atender la emergencia (La Prensa de Monagas). En el estado Falcón, un deslizamiento cerca de un centro comercial en Coro provocó la muerte de un adolescente y de una menor de edad, evidenciando la peligrosidad de los derrumbes en la zona (Nuevo Dia (Falcon)).\n\nEn conjunto, estos incidentes subrayan la necesidad de mantener una vigilancia constante y una respuesta coordinada por parte de la Cruz Roja Venezolana y las autoridades locales, a fin de mitigar los efectos de emergencias de diversa naturaleza y proteger a la población.",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/"
+    },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -30,8 +42,40 @@
       "link": "https://www.reporterosdemerida.com.ve/2026/11/claudio-barcenas-merida-en-crisis.html"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
+    },
+    {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
     },
     {
       "nombre": "Runrun.es",

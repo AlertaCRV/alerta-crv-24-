@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-03T23:44:32.542530+00:00",
+  "actualizado": "2026-11-04T03:23:48.018158+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-03T20:36:54+00:00"
   },
-  "total_eventos": 597,
+  "total_eventos": 599,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 53,
+    "infraestructura_electrica": 55,
     "deslizamiento": 41,
     "colapso_estructural": 5,
     "orden_publico": 206,
@@ -180,6 +180,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Anzoategui",
+      "total": 21,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 2,
+        "critico": 2,
+        "bajo": 8,
+        "medio": 7,
+        "sin_clasificar": 2
+      },
+      "indice_gravedad": 1.89,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Merida",
       "total": 21,
       "confirmados": 0,
@@ -192,18 +206,17 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Anzoategui",
-      "total": 20,
-      "confirmados": 0,
+      "estado": "Carabobo",
+      "total": 18,
+      "confirmados": 2,
       "por_severidad": {
-        "alto": 2,
-        "critico": 2,
-        "bajo": 8,
-        "medio": 7,
-        "sin_clasificar": 1
+        "alto": 3,
+        "bajo": 4,
+        "medio": 6,
+        "critico": 5
       },
-      "indice_gravedad": 1.89,
-      "severidad_mapa": "medio"
+      "indice_gravedad": 2.5,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Yaracuy",
@@ -217,19 +230,6 @@
         "alto": 1
       },
       "indice_gravedad": 2.35,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 17,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 6,
-        "critico": 4
-      },
-      "indice_gravedad": 2.41,
       "severidad_mapa": "medio"
     },
     {
@@ -349,7 +349,7 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "orden_publico": 5,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "inundacion": 3,
       "vialidad": 2,
       "incendio": 2,
@@ -438,7 +438,7 @@
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 2,
-      "infraestructura_electrica": 4
+      "infraestructura_electrica": 5
     },
     "Tachira": {
       "deslizamiento": 4,
@@ -569,10 +569,10 @@
   },
   "por_severidad": {
     "alto": 134,
-    "critico": 76,
+    "critico": 77,
     "medio": 205,
     "bajo": 159,
-    "sin_clasificar": 23
+    "sin_clasificar": 24
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -592,7 +592,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 4
+      "2026-11": 6
     },
     "deslizamiento": {
       "2026-07": 3,
