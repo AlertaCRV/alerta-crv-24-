@@ -5,21 +5,17 @@
   "cerrado": false,
   "generado": "2026-11-04T03:25:35.020721+00:00",
   "actualizado_hasta": "2026-11-03T18:39:04.673867+00:00",
-  "total_eventos": 2,
+  "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 2
+    "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 2 incendios, una notable reducción frente a los 20 eventos reportados en el mes anterior (2026-10).\\n\\nEl 3 de noviembre una explosión seguida de incendio se produjo en la subestación eléctrica Federación, ubicada en Ciudad Ojeda, estado Zulia, dejando sin suministro eléctrico a varios sectores de la ciudad (El Impulso).\\n\\nEn la noche del 2 de noviembre se registró otra explosión e incendio en la misma subestación Federación, pero esta vez en el barrio Constitución, parroquia Libertad, municipio Lagunillas, en la Costa Oriental del Lago de Maracaibo, provocando la interrupción del servicio eléctrico en varios sectores de Lagunillas (La Verdad).\\n\\nEn Caracas, un presunto trabajador de Corpoelec se hizo viral en redes sociales al intentar apagar un transformador en llamas usando botellas con refresco, una maniobra calificada como extremadamente peligrosa y realizada sin equipos de seguridad personal (El Pitazo).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registró 1 incendio, una notable reducción frente a los 20 eventos reportados en el mes anterior (2026-10).\\n\\nEl 3 de noviembre una explosión seguida de incendio se produjo en la subestación eléctrica Federación, ubicada en Ciudad Ojeda, estado Zulia, dejando sin suministro eléctrico a varios sectores de la ciudad (El Impulso).\\n\\nEn la noche del 2 de noviembre se registró otra explosión e incendio en la misma subestación Federación, pero esta vez en el barrio Constitución, parroquia Libertad, municipio Lagunillas, en la Costa Oriental del Lago de Maracaibo, provocando la interrupción del servicio eléctrico en varios sectores de Lagunillas (La Verdad).",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/"
     },
     {
       "nombre": "La Verdad (Zulia)",

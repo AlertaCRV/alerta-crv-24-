@@ -34,33 +34,12 @@
     "fecha_evento_temprana": "2026-11-02T21:44:44+00:00",
     "municipio": null
   },
-  "deslizamiento::Falcon::2026-11-02": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T22:42:33.200798+00:00",
-    "fecha_evento_temprana": "2026-11-02T13:27:10+00:00",
-    "municipio": "Colina"
-  },
   "infraestructura_electrica::Zulia::2026-11-03": {
     "severidad": "medio",
     "confirmado": false,
     "fecha_deteccion": "2026-11-03T11:26:28.785262+00:00",
     "fecha_evento_temprana": "2026-11-03T03:41:26+00:00",
     "municipio": "Lagunillas"
-  },
-  "infraestructura_electrica::Carabobo::2026-11-03": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-04T03:22:38.365859+00:00",
-    "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
-    "municipio": "Guacara"
-  },
-  "incendio::Carabobo::2026-11-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T18:38:43.627506+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:01:23+00:00",
-    "municipio": "San Diego"
   },
   "incendio::Zulia::2026-11-03": {
     "severidad": "medio",
@@ -110,13 +89,6 @@
     "fecha_deteccion": "2026-11-04T18:45:17.742393+00:00",
     "fecha_evento_temprana": "2026-11-04T17:47:13+00:00",
     "municipio": "Tinaco"
-  },
-  "vialidad::Distrito Capital::2026-11-04": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-04T18:45:31.365251+00:00",
-    "fecha_evento_temprana": "2026-11-04T17:57:25+00:00",
-    "municipio": null
   },
   "orden_publico::Carabobo::2026-11-04": {
     "severidad": "medio",

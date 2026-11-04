@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-04T18:46:03.020838+00:00",
+  "actualizado": "2026-11-04T23:09:54.023657+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-04T18:28:24+00:00"
   },
-  "total_eventos": 602,
+  "total_eventos": 598,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 55,
-    "deslizamiento": 41,
+    "infraestructura_electrica": 54,
+    "deslizamiento": 40,
     "colapso_estructural": 5,
     "orden_publico": 207,
     "salud_publica": 33,
     "crisis_migratoria": 7,
-    "incendio": 63,
-    "vialidad": 28,
+    "incendio": 62,
+    "vialidad": 27,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -30,16 +30,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 98,
+      "total": 97,
       "confirmados": 16,
       "por_severidad": {
-        "alto": 18,
+        "alto": 17,
         "medio": 31,
         "bajo": 31,
         "critico": 13,
         "sin_clasificar": 5
       },
-      "indice_gravedad": 2.14,
+      "indice_gravedad": 2.13,
       "severidad_mapa": "medio"
     },
     {
@@ -126,19 +126,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Falcon",
-      "total": 25,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 6,
-        "bajo": 7,
-        "medio": 10,
-        "critico": 2
-      },
-      "indice_gravedad": 2.12,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Miranda",
       "total": 24,
       "confirmados": 3,
@@ -149,6 +136,19 @@
         "bajo": 8
       },
       "indice_gravedad": 2.21,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Falcon",
+      "total": 24,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 6,
+        "bajo": 7,
+        "medio": 10,
+        "critico": 1
+      },
+      "indice_gravedad": 2.04,
       "severidad_mapa": "medio"
     },
     {
@@ -206,19 +206,6 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Carabobo",
-      "total": 19,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 7,
-        "critico": 5
-      },
-      "indice_gravedad": 2.47,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Yaracuy",
       "total": 18,
       "confirmados": 1,
@@ -230,6 +217,19 @@
         "alto": 1
       },
       "indice_gravedad": 2.35,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Carabobo",
+      "total": 17,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 6,
+        "critico": 4
+      },
+      "indice_gravedad": 2.41,
       "severidad_mapa": "medio"
     },
     {
@@ -349,10 +349,10 @@
     "Carabobo": {
       "tormenta_electrica": 1,
       "orden_publico": 6,
-      "infraestructura_electrica": 4,
+      "infraestructura_electrica": 3,
       "inundacion": 3,
       "vialidad": 2,
-      "incendio": 2,
+      "incendio": 1,
       "accidente_transporte": 1
     },
     "Lara": {
@@ -388,7 +388,7 @@
       "inundacion": 18,
       "orden_publico": 33,
       "incendio": 20,
-      "vialidad": 6,
+      "vialidad": 5,
       "infraestructura_electrica": 9,
       "colapso_estructural": 1,
       "sismo": 1,
@@ -481,7 +481,7 @@
     "Falcon": {
       "crisis_migratoria": 2,
       "orden_publico": 13,
-      "deslizamiento": 5,
+      "deslizamiento": 4,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
       "incendio": 2,
@@ -569,9 +569,9 @@
     }
   },
   "por_severidad": {
-    "alto": 136,
-    "critico": 77,
-    "medio": 206,
+    "alto": 135,
+    "critico": 75,
+    "medio": 205,
     "bajo": 159,
     "sin_clasificar": 24
   },
@@ -593,14 +593,13 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 6
+      "2026-11": 5
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
-      "2026-10": 10,
-      "2026-11": 1
+      "2026-10": 10
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -633,13 +632,13 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 2
+      "2026-11": 1
     },
     "vialidad": {
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 2
+      "2026-11": 1
     },
     "sismo": {
       "2026-08": 5,

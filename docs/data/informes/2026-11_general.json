@@ -5,13 +5,13 @@
   "cerrado": false,
   "generado": "2026-11-04T03:25:29.922885+00:00",
   "actualizado_hasta": "2026-11-04T03:23:21.375386+00:00",
-  "total_eventos": 17,
+  "total_eventos": 13,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 189,
-    "actual": 17
+    "actual": 13
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 17 eventos de emergencia, una disminución notable respecto a los 189 eventos del período anterior (2026-10). Esta reducción se observa en la variedad de incidentes reportados, aunque persisten situaciones críticas en distintas regiones del país.\n\nEn el estado Lara se reportaron disturbios de orden público de severidad crítica, que requirieron la intervención de las fuerzas de seguridad (La Prensa de Lara). De forma paralela, en Barinas se registró otro episodio de orden público crítico, vinculado a la muerte de un aficionado durante un partido de fútbol, lo que provocó la suspensión del encuentro (Noticia al Dia (Zulia)).\n\nLos problemas de infraestructura continuaron afectando a la población. En Mérida se denunciaron fallas graves en el suministro de agua, agravando la crisis de servicios básicos (Reporteros de Merida). En Carabobo, dos fuentes distintas informaron fallas eléctricas críticas: una describió dos bajones de voltaje que dejaron sin energía a varios municipios, mientras que otra relató un homicidio ocurrido durante un apagón en Guacara (El Pitazo; La Prensa de Monagas). \n\nEn el ámbito del transporte, Aragua fue escenario de una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, con la presencia de la GNB y la PNB para atender la emergencia (La Prensa de Monagas). En el estado Falcón, un deslizamiento cerca de un centro comercial en Coro provocó la muerte de un adolescente y de una menor de edad, evidenciando la peligrosidad de los derrumbes en la zona (Nuevo Dia (Falcon)).\n\nEn conjunto, estos incidentes subrayan la necesidad de mantener una vigilancia constante y una respuesta coordinada por parte de la Cruz Roja Venezolana y las autoridades locales, a fin de mitigar los efectos de emergencias de diversa naturaleza y proteger a la población.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 13 eventos de emergencia, una disminución notable respecto a los 189 eventos del período anterior (2026-10). Esta reducción se observa en la variedad de incidentes reportados, aunque persisten situaciones críticas en distintas regiones del país.\n\nEn el estado Lara se reportaron disturbios de orden público de severidad crítica, que requirieron la intervención de las fuerzas de seguridad (La Prensa de Lara). De forma paralela, en Barinas se registró otro episodio de orden público crítico, vinculado a la muerte de un aficionado durante un partido de fútbol, lo que provocó la suspensión del encuentro (Noticia al Dia (Zulia)).\n\nLos problemas de infraestructura continuaron afectando a la población. En Mérida se denunciaron fallas graves en el suministro de agua, agravando la crisis de servicios básicos (Reporteros de Merida). \n\nEn el ámbito del transporte, Aragua fue escenario de una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, con la presencia de la GNB y la PNB para atender la emergencia (La Prensa de Monagas).\n\nEn conjunto, estos incidentes subrayan la necesidad de mantener una vigilancia constante y una respuesta coordinada por parte de la Cruz Roja Venezolana y las autoridades locales, a fin de mitigar los efectos de emergencias de diversa naturaleza y proteger a la población.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -32,10 +32,6 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/murio-motorizado-adolescente-en-coro-tras-accidente-del-domingo-1-nov/"
     },
     {
       "nombre": "Reporteros de Merida",

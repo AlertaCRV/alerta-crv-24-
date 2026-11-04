@@ -5,21 +5,17 @@
   "cerrado": false,
   "generado": "2026-11-04T03:26:01.947140+00:00",
   "actualizado_hasta": "2026-11-04T03:23:21.375386+00:00",
-  "total_eventos": 6,
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 11,
-    "actual": 6
+    "actual": 5
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron seis eventos de fallas eléctricas, una disminución respecto a los once reportados en octubre del mismo año (11 evento(s) registrados entonces vs. 6 en este período). Las incidencias se concentraron en distintas regiones del país, generando interrupciones del suministro y, en algunos casos, consecuencias graves para la población.\n\nEn Carabobo se documentó una falla eléctrica de severidad crítica, que formó parte de los bajones de voltaje reportados a nivel nacional (El Pitazo). Ese mismo apagón fue el escenario de un homicidio: una mujer apuñaló mortalmente a su pareja en Guacara, Carabobo, durante la interrupción del servicio eléctrico (La Prensa de Monagas). Ambos hechos subrayan la gravedad de la situación en esa entidad.\n\nEl 3 de noviembre, usuarios de Caracas y de siete estados —Portuguesa, Monagas, Zulia, Vargas, Carabobo, Miranda y Táchira— reportaron dos bajones de voltaje con diez minutos de diferencia, provocando apagones temporales (El Pitazo). En el estado Anzoátegui, vecinos de Pueblo Nuevo Sur, El Tigre, realizaron un cacerolazo para manifestar su descontento tras sufrir un apagón de casi nueve horas el 2 de noviembre (El Tiempo). Asimismo, en Ciudad Ojeda, Zulia, una explosión en la subestación Federación dejó sin electricidad a varios sectores de la ciudad durante la noche del 2 de noviembre (Noticia al Dia).\n\nEn el municipio Baruta, Miranda, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua en más de 40 zonas el 1 de noviembre, como consecuencia de la fluctuación eléctrica detectada a las 9:20 a.m. (Runrun.es).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron cinco eventos de fallas eléctricas, una disminución respecto a los once reportados en octubre del mismo año (11 evento(s) registrados entonces vs. 5 en este período). Las incidencias se concentraron en distintas regiones del país, generando interrupciones del suministro y, en algunos casos, consecuencias graves para la población.\n\nEl 3 de noviembre, usuarios de Caracas y de siete estados —Portuguesa, Monagas, Zulia, Vargas, Carabobo, Miranda y Táchira— reportaron dos bajones de voltaje con diez minutos de diferencia, provocando apagones temporales (El Pitazo). En el estado Anzoátegui, vecinos de Pueblo Nuevo Sur, El Tigre, realizaron un cacerolazo para manifestar su descontento tras sufrir un apagón de casi nueve horas el 2 de noviembre (El Tiempo). Asimismo, en Ciudad Ojeda, Zulia, una explosión en la subestación Federación dejó sin electricidad a varios sectores de la ciudad durante la noche del 2 de noviembre (Noticia al Dia).\n\nEn el municipio Baruta, Miranda, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua en más de 40 zonas el 1 de noviembre, como consecuencia de la fluctuación eléctrica detectada a las 9:20 a.m. (Runrun.es).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",

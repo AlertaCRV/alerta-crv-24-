@@ -2025,8 +2025,29 @@ _MARCADORES_DESLIZAMIENTO_VEHICULO = [
 ]
 
 
+# Caso real (04-11-2026): "Murio motorizado adolescente en Coro tras accidente
+# ... en cuyo deslizamiento cerca de Makro murio Williannys..." -- el
+# deslizamiento (patinazo) de una MOTO publicado como deslizamiento CRITICO
+# en Falcon. Segundo patron: "deslizamiento" junto a un accidente de moto/
+# transito, sin ningun marcador de terreno ni lluvias. Verificado contra
+# data/historico_fuentes_texto.jsonl: solo este articulo cumple la
+# combinacion (los 2 articulos de lluvias de agosto con "moto" tienen
+# marcadores de terreno/lluvia y no se afectan).
+_MARCADORES_ACCIDENTE_MOTO = [
+    "motorizado", "motorizados", "motocicleta", "accidente de transito",
+    "accidente vial", "moto ek", "conductor de la moto",
+]
+_MARCADORES_LLUVIA_TERRENO = ["lluvia", "lluvias", "precipitaciones", "vaguada", "crecida"]
+
+
 def _es_deslizamiento_vehicular_no_terreno(texto_norm):
-    return any(m in texto_norm for m in _MARCADORES_DESLIZAMIENTO_VEHICULO)
+    if any(m in texto_norm for m in _MARCADORES_DESLIZAMIENTO_VEHICULO):
+        return True
+    if not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_ACCIDENTE_MOTO):
+        return False
+    if any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_DESLIZAMIENTO_TERRENO):
+        return False
+    return not any(_contiene_palabra_clave(texto_norm, m) for m in _MARCADORES_LLUVIA_TERRENO)
 
 
 # "Escombros" (palabra clave de deslizamiento) es ambiguo entre el material
@@ -2115,6 +2136,26 @@ def _es_limpieza_escombros_terremoto_sin_deslizamiento_real(texto_norm):
 _MARCADORES_PROTESTA_ELECTRICA_TIPO_INCORRECTO = [
     "se concentraron frente a las sedes regionales de corpoelec",
 ]
+
+
+# Caso real (03-11-2026): "Mujer apunala mortalmente a su pareja durante un
+# apagon en Guacara" -- un homicidio que solo menciona el apagon como
+# circunstancia se publicaba como infraestructura_electrica CRITICA. Se exige
+# el verbo de crimen junto a "durante/en medio de un apagon". Verificado
+# contra data/historico_fuentes_texto.jsonl: exclusivo de ese articulo.
+def _es_crimen_durante_apagon_no_falla_electrica(texto_norm):
+    if not re.search(r"(durante|en medio d[el]) (un |el |otro )?apagon", texto_norm):
+        return False
+    return bool(re.search(r"\b(apunal\w*|asesin\w*|homicidi\w*)", texto_norm))
+
+
+# Caso real (03-11-2026): "Incendios no se apagan con refresco: expertos
+# advierten sobre la peligrosa maniobra usada por trabajador de Corpoelec"
+# (video viral, dateline Caracas; "San Diego" solo era un comisionado de
+# riesgos citado) se publicaba como incendio en San Diego, Carabobo. Nota de
+# advertencia sobre un video viral, no un incendio localizable.
+def _es_advertencia_video_viral_no_incendio(texto_norm):
+    return "se hizo viral" in texto_norm and "advierten" in texto_norm
 
 
 def _es_protesta_electrica_con_tipo_incorrecto(texto_norm):
@@ -2906,6 +2947,11 @@ _CALIFICADORES_SUBESTATALES_PLURAL = {"municipios", "parroquias"}
 _CALIFICADORES_DIRECCIONALES_CARACAS = [
     ("sentido",), ("via",), ("vía",), ("hacia",),
     ("rumbo", "a"), ("direccion", "a"), ("dirección", "a"),
+    # Caso real (04-11-2026): "cubria la ruta Caracas-San Juan de los
+    # Morros" (autobus accidentado en la carretera Cagua-Villa de Cura,
+    # estado Aragua) se publicaba como vialidad en Distrito Capital: el
+    # origen de la ruta del autobus no es la ubicacion del choque.
+    ("ruta",),
 ]
 
 
@@ -3615,6 +3661,10 @@ def detectar_tipo(texto, ventana=None):
                 if tipo == "deslizamiento" and _es_limpieza_escombros_terremoto_sin_deslizamiento_real(texto_completo_norm):
                     break
                 if tipo == "infraestructura_electrica" and _es_protesta_electrica_con_tipo_incorrecto(texto_completo_norm):
+                    break
+                if tipo == "infraestructura_electrica" and _es_crimen_durante_apagon_no_falla_electrica(texto_completo_norm):
+                    break
+                if tipo == "incendio" and _es_advertencia_video_viral_no_incendio(texto_completo_norm):
                     break
                 if tipo == "incendio" and _es_anuncio_institucional_bomberos_sin_incendio_real(texto_completo_norm):
                     break
