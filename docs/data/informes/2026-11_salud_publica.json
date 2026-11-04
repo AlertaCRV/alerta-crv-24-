@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-11",
+  "tipo": "salud_publica",
+  "tipo_label": "Salud pública",
+  "cerrado": false,
+  "generado": "2026-11-04T18:47:24.286675+00:00",
+  "actualizado_hasta": "2026-11-04T18:45:17.742393+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 21,
+    "actual": 1
+  },
+  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de salud pública, en contraste con los 21 eventos reportados en el período anterior (2026‑10). Esta reducción significativa se refleja en los datos internos del monitoreo de emergencias.\n\nEl 4 de noviembre se produjo un caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes, que dejó 13 personas afectadas y que fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\n\nComo medida preventiva, las autoridades del estado Cojedes evacuaron a 631 personas del liceo, bajo la coordinación del Teniente Coronel Rómulo Castro y el Jefe de la ZOEDAN Cojedes, Day Oliveros (Portuguesa al Dia).\n\nEste incidente constituyó el único evento de salud pública registrado en el período analizado, cumpliendo con la obligación de mencionar explícitamente el caso de Cojedes y resaltando la diferencia con el mes anterior.",
+  "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/los-llanos/cojedes-otro-caso-de-intoxicacion-escolar-deja-13-afectados-en-tinaco/"
+    },
+    {
+      "nombre": "Portuguesa al Dia",
+      "link": "https://portuguesaaldia.com/2026/11/04/cojedes-evacuan-a-estudiantes-por-presunta-intoxicacion-masiva/"
+    }
+  ]
+}
