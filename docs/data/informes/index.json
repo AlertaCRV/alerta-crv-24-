@@ -45,7 +45,7 @@
     "tipo_label": "Incendio",
     "cerrado": false,
     "generado": "2026-11-04T03:25:35.020721+00:00",
-    "total_eventos": 2
+    "total_eventos": 1
   },
   {
     "periodo": "2026-11",
@@ -53,15 +53,7 @@
     "tipo_label": "Todas las categorías",
     "cerrado": false,
     "generado": "2026-11-04T03:25:29.922885+00:00",
-    "total_eventos": 17
-  },
-  {
-    "periodo": "2026-11",
-    "tipo": "deslizamiento",
-    "tipo_label": "Deslizamiento/Derrumbe",
-    "cerrado": false,
-    "generado": "2026-11-04T03:25:01.586747+00:00",
-    "total_eventos": 1
+    "total_eventos": 13
   },
   {
     "periodo": "2026-10",

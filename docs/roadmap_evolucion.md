@@ -9906,3 +9906,14 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 04-11-2026: deslizamiento de moto, ruta "Caracas-…" como ubicación, crimen durante apagón y nota de video viral
+
+**Hallazgos** (alertas del 02 al 04-11 contrastadas con `historico_fuentes_texto.jsonl`):
+1. **`deslizamiento::Falcon`** (CRÍTICO, Nuevo Día): muerte de adolescentes en un accidente de moto en Coro ("en cuyo deslizamiento cerca de Makro") publicado como deslizamiento de tierra.
+2. **`vialidad::Distrito Capital`**: choque de autobús en la carretera Cagua-Villa de Cura (estado Aragua) ubicado en Distrito Capital por "la ruta Caracas-San Juan de los Morros"; además duplicaba la alerta correcta de Aragua.
+3. **`infraestructura_electrica::Carabobo`** (CRÍTICO, Guacara): homicidio "durante un apagón" publicado como falla eléctrica.
+4. **`incendio::Carabobo`** (San Diego): nota de El Pitazo (dateline Caracas) sobre un video viral de un trabajador de Corpoelec apagando un transformador con refresco; "San Diego" era solo un comisionado de riesgos citado.
+- **Corrección de código** (`classify.py`): `_es_deslizamiento_vehicular_no_terreno` ahora cubre también "deslizamiento" + accidente de moto/tránsito sin marcadores de terreno ni lluvias; `("ruta",)` añadido a `_CALIFICADORES_DIRECCIONALES_CARACAS`; nuevos filtros `_es_crimen_durante_apagon_no_falla_electrica` y `_es_advertencia_video_viral_no_incendio`. Verificados contra las 768 fuentes del histórico: solo cambian los casos reportados.
+- **Corrección retroactiva**: las 4 alertas retiradas de `noticias.json`, `historico_eventos.jsonl`, `historico_fuentes_texto.jsonl` y `publicados.json`; informes 2026-11 (deslizamiento eliminado; incendio, general y falla eléctrica ajustados); `estadisticas.json` regenerado.
+- **Pendiente de discutir (sin cambios)**: la explosión de la subestación Federación (Lagunillas, Zulia) genera dos alertas del mismo hecho (`incendio::Zulia` e `infraestructura_electrica::Zulia`); es un solo evento real con dos tipos.
