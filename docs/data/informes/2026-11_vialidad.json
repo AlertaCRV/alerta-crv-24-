@@ -3,19 +3,27 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-11-04T03:26:33.484767+00:00",
-  "actualizado_hasta": "2026-11-03T23:43:27.780467+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-05T00:05:19.855652+00:00",
+  "actualizado_hasta": "2026-11-05T00:01:07.332203+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 1
+    "actual": 3
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró un único incidente vial, una disminución notable respecto al mes anterior, en el que se contabilizaron siete eventos (Cruz Roja Venezolana). Esta reducción se refleja en los reportes de la unidad de monitoreo de emergencias, que continúa evaluando la tendencia de incidentes de tránsito en el territorio nacional.\n\nEl único hecho reportado corresponde a un accidente de alta severidad ocurrido en el estado Aragua, en la carretera Cagua‑Villa de Cura, donde un autobús y un camión colisionaron y posteriormente se volcaron (La Prensa de Monagas). Las autoridades de la Guardia Nacional Bolivariana y de la Policía Nacional Bolivariana acudieron al lugar para atender la emergencia y garantizar la seguridad de los involucrados (La Prensa de Monagas). El accidente provocó daños materiales considerables en ambos vehículos y generó heridos, aunque los informes preliminares no especifican el número exacto de víctimas (La Prensa de Monagas).\n\nEste episodio subraya la importancia de la coordinación entre los cuerpos de seguridad y los servicios de emergencia para mitigar los efectos de los incidentes viales. La Cruz Roja Venezolana continuará registrando y analizando los datos de cada evento, con el objetivo de mejorar la respuesta operativa y reducir la incidencia de accidentes en futuras evaluaciones.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron tres incidentes viales, una disminución respecto a los siete eventos del mes anterior (2026-10). Esta reducción se refleja en la menor cantidad de colisiones graves reportadas en el territorio nacional.\n\nEn el estado Aragua se produjo una colisión y posterior volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, lo que obligó al despliegue de la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana para atender la emergencia (La Prensa de Monagas). La severidad del hecho se calificó como alta.\n\nOtro accidente de alta severidad ocurrió en el Distrito Capital, donde un autobús colisionó con un camión cava en la misma carretera Cagua‑Villa de Cura, dejando aproximadamente veinte heridos según los primeros reportes (Reporte Confidencial (Nueva Esparta)).\n\nEn el estado Portuguesa, un autobús modelo Blue Bird de la línea Independiente volcó en la carretera nacional Biscucuy‑Guanare, provocando la muerte de dos personas y dejando 43 heridos entre los cerca de 50 pasajeros que transportaba (La Verdad (Zulia)). La gravedad del incidente fue catalogada como crítica.",
   "fuentes": [
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/accidente-de-autobus-en-portuguesa-deja-2-muertos-y-43-heridos/"
+    },
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/11/04/colision-entre-autobus-camion/"
     }
   ]
 }

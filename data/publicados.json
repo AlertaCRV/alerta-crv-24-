@@ -105,10 +105,10 @@
     "municipio": null
   },
   "salud_publica::Cojedes::2026-11-04": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-04T18:45:17.742393+00:00",
-    "fecha_evento_temprana": "2026-11-04T17:47:13+00:00",
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-05T00:01:50.389396+00:00",
+    "fecha_evento_temprana": "2026-11-04T18:28:24+00:00",
     "municipio": "Tinaco"
   },
   "vialidad::Distrito Capital::2026-11-04": {
@@ -124,5 +124,12 @@
     "fecha_deteccion": "2026-11-04T18:46:01.536504+00:00",
     "fecha_evento_temprana": "2026-11-04T15:11:56+00:00",
     "municipio": null
+  },
+  "vialidad::Portuguesa::2026-11-04": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-05T00:01:07.332203+00:00",
+    "fecha_evento_temprana": "2026-11-04T20:44:30+00:00",
+    "municipio": "Guanare"
   }
 }
