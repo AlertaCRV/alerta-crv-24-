@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-04T03:26:28.681770+00:00",
-  "actualizado_hasta": "2026-11-03T23:44:06.062622+00:00",
-  "total_eventos": 6,
+  "generado": "2026-11-05T00:04:48.650019+00:00",
+  "actualizado_hasta": "2026-11-04T18:46:01.536504+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 78,
-    "actual": 6
+    "actual": 7
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente seis incidentes de orden público, una disminución notable respecto a los setenta y ocho eventos contabilizados en octubre del mismo año (comparación con el período anterior). Esta reducción refleja una tendencia a la baja en la frecuencia de disturbios y enfrentamientos en el territorio nacional.\n\nEn el estado Lara se reportó un incidente de orden público de gravedad crítica, según informó La Prensa de Lara. Las autoridades locales describieron la situación como de alta severidad, aunque los detalles específicos del hecho no fueron divulgados en la fuente disponible (La Prensa de Lara).\n\nEn Barinas, la situación alcanzó un nivel crítico cuando un aficionado, Luis Rafael López, fue hallado sin vida en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del partido entre Zamora FC B y Deportivo Lara, programado para la tarde del 1 de noviembre. El encuentro tuvo que ser suspendido y la Fiscalía abrió una investigación sobre el hecho (La Prensa de Lara). Los disturbios se originaron cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, provocando enfrentamientos que derivaron en la muerte del aficionado (Noticia al Dia (Zulia)).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente 7 eventos de orden público, una caída drástica frente a los 78 eventos del mes anterior (2026‑10) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales, heridos o víctimas fatales.\n\nEn el estado Lara se reportó un incidente de orden público de gravedad crítica, según informó La Prensa de Lara (La Prensa de Lara). Los detalles específicos del hecho no fueron divulgados en la fuente, pero se confirmó su carácter crítico.\n\nEn Barinas, la situación alcanzó también una severidad crítica cuando un aficionado, Luis Rafael López, fue asesinado en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del partido entre Zamora FC B y Deportivo Lara, lo que obligó a suspender el encuentro (La Prensa de Lara). Según Noticia al Dia (Zulia), los disturbios se originaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, desencadenando violencia que culminó en la muerte del hincha (Noticia al Dia (Zulia)).\n\nOtros movimientos sociales se dieron a conocer en distintas regiones: jubilados y pensionados de Lara protestaron exigiendo pensiones dignas y aumento salarial (El Impulso); en Carabobo se registró una ola de protestas por cortes eléctricos prolongados (El Impulso); en Bolívar, una huelga de hambre de jubilados de la industria básica empeoró su salud (El Pitazo); en Anzoátegui, vecinos de Villa Betania protestaron contra la doble tanda de cortes eléctricos (El Tiempo); y en Falcón, habitantes de Chichiriviche manifestaron su inconformidad por fallas continuas del servicio eléctrico (La Prensa de Lara).\n\nEn conjunto, aunque el número total de eventos de orden público disminuyó notablemente, los incidentes críticos en Lara y Barinas resaltan la necesidad de reforzar la seguridad en eventos masivos y de atender las demandas sociales que pueden derivar en manifestaciones, para evitar que se conviertan en situaciones de riesgo para la población.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -24,6 +24,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/"
     },
     {
       "nombre": "El Pitazo",

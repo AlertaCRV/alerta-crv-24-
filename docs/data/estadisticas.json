@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-04T18:46:03.020838+00:00",
+  "actualizado": "2026-11-05T00:02:04.149783+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-04T18:28:24+00:00"
+    "hasta": "2026-11-04T20:44:30+00:00"
   },
-  "total_eventos": 602,
+  "total_eventos": 604,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
@@ -12,10 +12,10 @@
     "deslizamiento": 41,
     "colapso_estructural": 5,
     "orden_publico": 207,
-    "salud_publica": 33,
+    "salud_publica": 34,
     "crisis_migratoria": 7,
     "incendio": 63,
-    "vialidad": 28,
+    "vialidad": 29,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -72,15 +72,15 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 38,
+      "total": 39,
       "confirmados": 4,
       "por_severidad": {
         "bajo": 10,
         "medio": 13,
-        "critico": 3,
+        "critico": 4,
         "alto": 12
       },
-      "indice_gravedad": 2.21,
+      "indice_gravedad": 2.26,
       "severidad_mapa": "medio"
     },
     {
@@ -299,6 +299,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Cojedes",
+      "total": 8,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 3,
+        "medio": 2,
+        "alto": 2,
+        "sin_clasificar": 1
+      },
+      "indice_gravedad": 1.86,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Guarico",
       "total": 7,
       "confirmados": 0,
@@ -309,18 +322,6 @@
       },
       "indice_gravedad": 2.71,
       "severidad_mapa": "alto"
-    },
-    {
-      "estado": "Cojedes",
-      "total": 7,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 3,
-        "medio": 2,
-        "alto": 2
-      },
-      "indice_gravedad": 1.86,
-      "severidad_mapa": "medio"
     },
     {
       "estado": "Amazonas",
@@ -527,7 +528,7 @@
       "inundacion": 7,
       "incendio": 1,
       "infraestructura_agua": 2,
-      "vialidad": 4,
+      "vialidad": 5,
       "colapso_estructural": 1,
       "infraestructura_electrica": 1,
       "deslizamiento": 2,
@@ -536,7 +537,7 @@
     "Cojedes": {
       "orden_publico": 5,
       "ataque_armado": 1,
-      "salud_publica": 1
+      "salud_publica": 2
     },
     "Merida": {
       "vialidad": 1,
@@ -570,10 +571,10 @@
   },
   "por_severidad": {
     "alto": 136,
-    "critico": 77,
+    "critico": 78,
     "medio": 206,
     "bajo": 159,
-    "sin_clasificar": 24
+    "sin_clasificar": 25
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -620,7 +621,7 @@
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 1
+      "2026-11": 2
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -639,7 +640,7 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 2
+      "2026-11": 3
     },
     "sismo": {
       "2026-08": 5,

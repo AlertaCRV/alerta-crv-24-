@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-04T18:47:24.286675+00:00",
-  "actualizado_hasta": "2026-11-04T18:45:17.742393+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-05T00:05:14.674767+00:00",
+  "actualizado_hasta": "2026-11-05T00:01:50.389396+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 21,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de salud pública, en contraste con los 21 eventos reportados en el período anterior (2026‑10). Esta reducción significativa se refleja en los datos internos del monitoreo de emergencias.\n\nEl 4 de noviembre se produjo un caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes, que dejó 13 personas afectadas y que fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\n\nComo medida preventiva, las autoridades del estado Cojedes evacuaron a 631 personas del liceo, bajo la coordinación del Teniente Coronel Rómulo Castro y el Jefe de la ZOEDAN Cojedes, Day Oliveros (Portuguesa al Dia).\n\nEste incidente constituyó el único evento de salud pública registrado en el período analizado, cumpliendo con la obligación de mencionar explícitamente el caso de Cojedes y resaltando la diferencia con el mes anterior.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de salud pública, una reducción significativa respecto a los 21 eventos del mes anterior (2026-10). Esta disminución se refleja en los reportes consolidados del sistema de monitoreo de emergencias de la Cruz Roja Venezolana.\n\nEl único incidente de mayor gravedad ocurrió el 4 de noviembre en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes (El Pitazo). En esa fecha se reportó una intoxicación masiva que afectó a 13 personas, quienes fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\n\nComo medida de contención, las autoridades locales evacuaron a 631 estudiantes y personal del liceo (Portuguesa al Dia). La operación de evacuación fue coordinada por el Teniente Rómulo Castro y el Jefe de la ZOEDAN Cojedes, Day Oliveros, bajo la supervisión de los cuerpos de prevención y seguridad del estado (Portuguesa al Dia).\n\nEl caso ha sido registrado y seguido de cerca por los equipos de salud pública de la Cruz Roja Venezolana, que continúan monitoreando la evolución de los afectados y reforzando protocolos de prevención en instituciones educativas para evitar incidentes similares en el futuro.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
