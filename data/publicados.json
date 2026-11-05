@@ -1,25 +1,4 @@
 {
-  "infraestructura_electrica::Miranda::2026-11-01": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T05:48:04.827925+00:00",
-    "fecha_evento_temprana": "2026-11-01T22:46:20+00:00",
-    "municipio": "Baruta"
-  },
-  "orden_publico::Lara::2026-11-01": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T05:48:21.188496+00:00",
-    "fecha_evento_temprana": "2026-11-01T23:41:04+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Merida::2026-11-02": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T05:48:33.492514+00:00",
-    "fecha_evento_temprana": "2026-11-02T01:05:55+00:00",
-    "municipio": null
-  },
   "orden_publico::Barinas::2026-11-02": {
     "severidad": "critico",
     "confirmado": false,
