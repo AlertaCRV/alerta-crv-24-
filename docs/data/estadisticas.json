@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-05T00:02:04.149783+00:00",
+  "actualizado": "2026-11-05T21:28:29.532520+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-04T20:44:30+00:00"
+    "hasta": "2026-11-05T21:12:58+00:00"
   },
-  "total_eventos": 604,
+  "total_eventos": 608,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 92,
+    "inundacion": 93,
     "infraestructura_electrica": 55,
     "deslizamiento": 41,
     "colapso_estructural": 5,
-    "orden_publico": 207,
-    "salud_publica": 34,
+    "orden_publico": 209,
+    "salud_publica": 35,
     "crisis_migratoria": 7,
     "incendio": 63,
     "vialidad": 29,
@@ -44,12 +44,12 @@
     },
     {
       "estado": "Lara",
-      "total": 50,
+      "total": 51,
       "confirmados": 2,
       "por_severidad": {
         "critico": 5,
         "alto": 10,
-        "medio": 19,
+        "medio": 20,
         "bajo": 13,
         "sin_clasificar": 3
       },
@@ -127,15 +127,29 @@
     },
     {
       "estado": "Falcon",
-      "total": 25,
+      "total": 26,
       "confirmados": 3,
       "por_severidad": {
         "alto": 6,
-        "bajo": 7,
+        "bajo": 8,
         "medio": 10,
         "critico": 2
       },
-      "indice_gravedad": 2.12,
+      "indice_gravedad": 2.08,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Bolivar",
+      "total": 24,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 7,
+        "medio": 11,
+        "critico": 2,
+        "alto": 1,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 1.9,
       "severidad_mapa": "medio"
     },
     {
@@ -149,20 +163,6 @@
         "bajo": 8
       },
       "indice_gravedad": 2.21,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 23,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 7,
-        "medio": 10,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 1.9,
       "severidad_mapa": "medio"
     },
     {
@@ -300,15 +300,15 @@
     },
     {
       "estado": "Cojedes",
-      "total": 8,
+      "total": 9,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 3,
         "medio": 2,
-        "alto": 2,
+        "alto": 3,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 1.86,
+      "indice_gravedad": 2.0,
       "severidad_mapa": "medio"
     },
     {
@@ -357,7 +357,7 @@
       "accidente_transporte": 1
     },
     "Lara": {
-      "inundacion": 5,
+      "inundacion": 6,
       "salud_publica": 6,
       "orden_publico": 24,
       "sismo": 1,
@@ -454,7 +454,7 @@
       "salud_publica": 4
     },
     "Bolivar": {
-      "orden_publico": 11,
+      "orden_publico": 12,
       "escasez_combustible": 2,
       "incendio": 3,
       "inundacion": 1,
@@ -481,7 +481,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "deslizamiento": 5,
       "derrame_petrolero": 1,
       "infraestructura_agua": 1,
@@ -537,7 +537,7 @@
     "Cojedes": {
       "orden_publico": 5,
       "ataque_armado": 1,
-      "salud_publica": 2
+      "salud_publica": 3
     },
     "Merida": {
       "vialidad": 1,
@@ -570,10 +570,10 @@
     }
   },
   "por_severidad": {
-    "alto": 136,
+    "alto": 137,
     "critico": 78,
-    "medio": 206,
-    "bajo": 159,
+    "medio": 208,
+    "bajo": 160,
     "sin_clasificar": 25
   },
   "serie_mensual_por_tipo": {
@@ -587,7 +587,8 @@
       "2026-07": 7,
       "2026-08": 48,
       "2026-09": 16,
-      "2026-10": 21
+      "2026-10": 21,
+      "2026-11": 1
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -614,14 +615,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 7
+      "2026-11": 9
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 2
+      "2026-11": 3
     },
     "crisis_migratoria": {
       "2026-07": 4,

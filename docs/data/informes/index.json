@@ -25,6 +25,14 @@
   },
   {
     "periodo": "2026-11",
+    "tipo": "inundacion",
+    "tipo_label": "Inundación",
+    "cerrado": false,
+    "generado": "2026-11-05T21:30:09.234666+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
