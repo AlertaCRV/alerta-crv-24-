@@ -77,11 +77,11 @@
     "municipio": null
   },
   "salud_publica::Cojedes::2026-11-04": {
-    "severidad": "sin_clasificar",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-05T00:01:50.389396+00:00",
-    "fecha_evento_temprana": "2026-11-04T18:28:24+00:00",
-    "municipio": "Tinaco"
+    "fecha_deteccion": "2026-11-05T21:27:09.503858+00:00",
+    "fecha_evento_temprana": "2026-11-05T13:07:03+00:00",
+    "municipio": null
   },
   "vialidad::Distrito Capital::2026-11-04": {
     "severidad": "alto",
@@ -103,5 +103,26 @@
     "fecha_deteccion": "2026-11-05T00:01:07.332203+00:00",
     "fecha_evento_temprana": "2026-11-04T20:44:30+00:00",
     "municipio": "Guanare"
+  },
+  "orden_publico::Falcon::2026-11-05": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-05T21:26:23.125794+00:00",
+    "fecha_evento_temprana": "2026-11-05T17:58:40+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-11-05": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-05T21:27:34.746101+00:00",
+    "fecha_evento_temprana": "2026-11-05T19:52:35+00:00",
+    "municipio": null
+  },
+  "inundacion::Lara::2026-11-05": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-05T21:27:59.870533+00:00",
+    "fecha_evento_temprana": "2026-11-05T21:12:58+00:00",
+    "municipio": null
   }
 }

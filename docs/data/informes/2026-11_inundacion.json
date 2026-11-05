@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "inundacion",
+  "tipo_label": "Inundación",
+  "cerrado": false,
+  "generado": "2026-11-05T21:30:09.234666+00:00",
+  "actualizado_hasta": "2026-11-05T21:27:59.870533+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 21,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un solo evento de inundación, una notable reducción respecto al período anterior en el que se contabilizaron 21 eventos (Comparación con el período anterior).\\n\\nEl único incidente registrado corresponde a las lluvias del jueves 5 de noviembre que afectaron al preescolar Príncipe de Paz, ubicado en la comunidad de San Francisco, al oeste de Barquisimeto (La Prensa de Lara). Las precipitaciones provocaron que los salores de la institución quedaran completamente anegados, evidenciando la vulnerabilidad de sus techos y sistemas de drenaje (La Prensa de Lara).\\n\\nEl centro educativo ya venía presentando graves problemas de filtración en sus techos y deficiencias en el drenaje desde el año escolar 2025‑2026, y había estado solicitando ayuda a las autoridades regionales para mitigar la situación (La Prensa de Lara). Las lluvias recientes intensificaron estos problemas, dejando la infraestructura del preescolar en condiciones críticas (La Prensa de Lara).\\n\\nEste escenario subraya la importancia de reforzar la infraestructura escolar en zonas vulnerables, aunque la disminución de eventos de inundación en noviembre sugiere una tendencia a la baja en la frecuencia de este tipo de emergencias en el último mes (Comparación con el período anterior).",
+  "fuentes": [
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/locales/preescolar-principe-de-paz-lluvias/"
+    }
+  ]
+}
