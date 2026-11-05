@@ -1,11 +1,4 @@
 {
-  "orden_publico::Barinas::2026-11-02": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T13:55:01.497282+00:00",
-    "fecha_evento_temprana": "2026-11-02T12:50:02+00:00",
-    "municipio": null
-  },
   "orden_publico::Bolivar::2026-11-02": {
     "severidad": "bajo",
     "confirmado": false,
