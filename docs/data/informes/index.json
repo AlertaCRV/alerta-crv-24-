@@ -72,6 +72,14 @@
     "total_eventos": 1
   },
   {
+    "periodo": "2026-11",
+    "tipo": "derrame_petrolero",
+    "tipo_label": "Derrame petrolero",
+    "cerrado": false,
+    "generado": "2026-11-06T16:19:30.166957+00:00",
+    "total_eventos": 1
+  },
+  {
     "periodo": "2026-10",
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",

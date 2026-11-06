@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Zulia::2026-11-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T11:26:28.785262+00:00",
-    "fecha_evento_temprana": "2026-11-03T03:41:26+00:00",
-    "municipio": "Lagunillas"
-  },
   "infraestructura_electrica::Carabobo::2026-11-03": {
     "severidad": "critico",
     "confirmado": false,
@@ -119,10 +112,17 @@
     "municipio": null
   },
   "incendio::Tachira::2026-11-06": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-06T08:35:43.122959+00:00",
-    "fecha_evento_temprana": "2026-11-06T02:49:31+00:00",
+    "fecha_deteccion": "2026-11-06T16:18:16.688528+00:00",
+    "fecha_evento_temprana": "2026-11-06T15:36:10+00:00",
     "municipio": "Córdoba"
+  },
+  "derrame_petrolero::Zulia::2026-11-06": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-06T16:17:27.071398+00:00",
+    "fecha_evento_temprana": "2026-11-06T13:59:32+00:00",
+    "municipio": "Valmore Rodríguez"
   }
 }
