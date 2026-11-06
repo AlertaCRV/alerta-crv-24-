@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "derrame_petrolero",
+  "tipo_label": "Derrame petrolero",
+  "cerrado": false,
+  "generado": "2026-11-06T16:19:30.166957+00:00",
+  "actualizado_hasta": "2026-11-06T16:17:27.071398+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 0,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de derrame petrolero, contrastando con la ausencia total de incidentes en el mes anterior (0 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl derrame ocurrió en el municipio Valmore Rodríguez, estado Zulia, afectando más de diez kilómetros de costa (Reporte Confidencial (Nueva Esparta)). La magnitud del vertido provocó la contaminación del ecosistema marino y el colapso de playas como Los Coquitos, que quedaron cubiertas de crudo (Reporte Confidencial (Nueva Esparta)).\\n\\nSegún Yohan Flores, coordinador de Azul Ambientalista, el derrame dañó las redes y embarcaciones de los pescadores locales, generando pérdidas económicas y dificultando sus actividades de captura (Reporte Confidencial (Nueva Esparta)). Flores hizo un llamado a PDVSA y a las autoridades competentes para que atiendan de forma urgente la situación y mitiguen los efectos ambientales (Reporte Confidencial (Nueva Esparta)).\\n\\nLas autoridades aún no han emitido un informe oficial sobre las medidas de contención y limpieza, pero el reporte indica que la zona costera de Zulia permanece bajo vigilancia debido al riesgo de expansión del crudo y a la necesidad de proteger la biodiversidad marina (Reporte Confidencial (Nueva Esparta)).",
+  "fuentes": [
+    {
+      "nombre": "Reporte Confidencial (Nueva Esparta)",
+      "link": "https://reporteconfidencial.info/2026/11/06/nuevo-derrame-de-crudo-zulia/"
+    }
+  ]
+}

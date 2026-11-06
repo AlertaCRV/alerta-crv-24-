@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-06T08:35:52.628490+00:00",
+  "actualizado": "2026-11-06T16:18:17.877140+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-06T02:49:31+00:00"
+    "hasta": "2026-11-06T15:36:10+00:00"
   },
-  "total_eventos": 610,
+  "total_eventos": 612,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
@@ -14,7 +14,7 @@
     "orden_publico": 209,
     "salud_publica": 36,
     "crisis_migratoria": 7,
-    "incendio": 64,
+    "incendio": 65,
     "vialidad": 29,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -22,7 +22,7 @@
     "explosion": 2,
     "infraestructura_agua": 28,
     "accidente_transporte": 4,
-    "derrame_petrolero": 4,
+    "derrame_petrolero": 5,
     "ataque_armado": 8,
     "emergencia_metro": 2,
     "motin_carcelario": 1
@@ -58,16 +58,16 @@
     },
     {
       "estado": "Zulia",
-      "total": 50,
+      "total": 51,
       "confirmados": 11,
       "por_severidad": {
         "medio": 23,
         "critico": 6,
         "bajo": 9,
         "sin_clasificar": 1,
-        "alto": 11
+        "alto": 12
       },
-      "indice_gravedad": 2.29,
+      "indice_gravedad": 2.3,
       "severidad_mapa": "medio"
     },
     {
@@ -85,10 +85,10 @@
     },
     {
       "estado": "Tachira",
-      "total": 37,
+      "total": 38,
       "confirmados": 2,
       "por_severidad": {
-        "alto": 12,
+        "alto": 13,
         "bajo": 6,
         "medio": 8,
         "critico": 9,
@@ -382,7 +382,7 @@
       "explosion": 1,
       "vialidad": 1,
       "incendio": 6,
-      "derrame_petrolero": 2
+      "derrame_petrolero": 3
     },
     "Distrito Capital": {
       "deslizamiento": 4,
@@ -447,7 +447,7 @@
       "inundacion": 5,
       "sismo": 1,
       "infraestructura_electrica": 2,
-      "incendio": 5,
+      "incendio": 6,
       "vialidad": 2,
       "motin_carcelario": 1,
       "ataque_armado": 2,
@@ -570,7 +570,7 @@
     }
   },
   "por_severidad": {
-    "alto": 137,
+    "alto": 139,
     "critico": 78,
     "medio": 209,
     "bajo": 160,
@@ -635,7 +635,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 3
+      "2026-11": 4
     },
     "vialidad": {
       "2026-08": 10,
@@ -671,7 +671,8 @@
     },
     "derrame_petrolero": {
       "2026-08": 2,
-      "2026-09": 2
+      "2026-09": 2,
+      "2026-11": 1
     },
     "ataque_armado": {
       "2026-08": 1,
