@@ -6,34 +6,6 @@
     "fecha_evento_temprana": "2026-11-03T16:05:39+00:00",
     "municipio": "Guacara"
   },
-  "incendio::Carabobo::2026-11-03": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T18:38:43.627506+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:01:23+00:00",
-    "municipio": "San Diego"
-  },
-  "incendio::Zulia::2026-11-03": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-03T18:39:04.673867+00:00",
-    "fecha_evento_temprana": "2026-11-03T13:31:48+00:00",
-    "municipio": "Lagunillas"
-  },
-  "orden_publico::Falcon::2026-11-03": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T18:39:28.715927+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:27:27+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-11-03": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-03T18:39:54.490362+00:00",
-    "fecha_evento_temprana": "2026-11-03T15:00:00+00:00",
-    "municipio": null
-  },
   "vialidad::Aragua::2026-11-03": {
     "severidad": "alto",
     "confirmado": false,
@@ -124,5 +96,12 @@
     "fecha_deteccion": "2026-11-06T16:17:27.071398+00:00",
     "fecha_evento_temprana": "2026-11-06T13:59:32+00:00",
     "municipio": "Valmore Rodríguez"
+  },
+  "vialidad::Distrito Capital::2026-11-06": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-06T21:40:26.896766+00:00",
+    "fecha_evento_temprana": "2026-11-06T16:30:12+00:00",
+    "municipio": null
   }
 }

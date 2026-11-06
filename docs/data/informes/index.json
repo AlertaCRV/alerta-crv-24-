@@ -409,6 +409,14 @@
   },
   {
     "periodo": "2026-08",
+    "tipo": "general",
+    "tipo_label": "Todas las categorías",
+    "cerrado": true,
+    "generado": "2026-11-06T21:41:10.237100+00:00",
+    "total_eventos": 197
+  },
+  {
+    "periodo": "2026-08",
     "tipo": "explosion",
     "tipo_label": "Explosión",
     "cerrado": false,
