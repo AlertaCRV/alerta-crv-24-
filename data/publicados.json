@@ -117,5 +117,12 @@
     "fecha_deteccion": "2026-11-06T01:48:13.360455+00:00",
     "fecha_evento_temprana": "2026-11-05T20:24:59+00:00",
     "municipio": null
+  },
+  "incendio::Tachira::2026-11-06": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-06T08:35:43.122959+00:00",
+    "fecha_evento_temprana": "2026-11-06T02:49:31+00:00",
+    "municipio": "Córdoba"
   }
 }
