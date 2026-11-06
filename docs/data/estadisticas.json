@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-05T21:28:29.532520+00:00",
+  "actualizado": "2026-11-06T01:48:14.080268+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-05T21:12:58+00:00"
   },
-  "total_eventos": 608,
+  "total_eventos": 609,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
@@ -12,7 +12,7 @@
     "deslizamiento": 41,
     "colapso_estructural": 5,
     "orden_publico": 209,
-    "salud_publica": 35,
+    "salud_publica": 36,
     "crisis_migratoria": 7,
     "incendio": 63,
     "vialidad": 29,
@@ -30,14 +30,14 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 98,
+      "total": 99,
       "confirmados": 16,
       "por_severidad": {
         "alto": 18,
         "medio": 31,
         "bajo": 31,
         "critico": 13,
-        "sin_clasificar": 5
+        "sin_clasificar": 6
       },
       "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
@@ -395,7 +395,7 @@
       "sismo": 1,
       "emergencia_metro": 2,
       "crisis_migratoria": 1,
-      "salud_publica": 1,
+      "salud_publica": 2,
       "infraestructura_agua": 2
     },
     "Trujillo": {
@@ -574,7 +574,7 @@
     "critico": 78,
     "medio": 208,
     "bajo": 160,
-    "sin_clasificar": 25
+    "sin_clasificar": 26
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -622,7 +622,7 @@
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 3
+      "2026-11": 4
     },
     "crisis_migratoria": {
       "2026-07": 4,
