@@ -1,18 +1,4 @@
 {
-  "orden_publico::Bolivar::2026-11-02": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T22:42:28.756511+00:00",
-    "fecha_evento_temprana": "2026-11-02T21:44:44+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Falcon::2026-11-02": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-02T22:42:33.200798+00:00",
-    "fecha_evento_temprana": "2026-11-02T13:27:10+00:00",
-    "municipio": "Colina"
-  },
   "infraestructura_electrica::Zulia::2026-11-03": {
     "severidad": "medio",
     "confirmado": false,
@@ -123,6 +109,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-05T21:27:59.870533+00:00",
     "fecha_evento_temprana": "2026-11-05T21:12:58+00:00",
+    "municipio": null
+  },
+  "salud_publica::Distrito Capital::2026-11-05": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-06T01:48:13.360455+00:00",
+    "fecha_evento_temprana": "2026-11-05T20:24:59+00:00",
     "municipio": null
   }
 }

@@ -3,23 +3,31 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-05T00:05:14.674767+00:00",
-  "actualizado_hasta": "2026-11-05T00:01:50.389396+00:00",
-  "total_eventos": 2,
+  "generado": "2026-11-06T01:51:19.235156+00:00",
+  "actualizado_hasta": "2026-11-06T01:48:13.360455+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 21,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de salud pública, una reducción significativa respecto a los 21 eventos del mes anterior (2026-10). Esta disminución se refleja en los reportes consolidados del sistema de monitoreo de emergencias de la Cruz Roja Venezolana.\n\nEl único incidente de mayor gravedad ocurrió el 4 de noviembre en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes (El Pitazo). En esa fecha se reportó una intoxicación masiva que afectó a 13 personas, quienes fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\n\nComo medida de contención, las autoridades locales evacuaron a 631 estudiantes y personal del liceo (Portuguesa al Dia). La operación de evacuación fue coordinada por el Teniente Rómulo Castro y el Jefe de la ZOEDAN Cojedes, Day Oliveros, bajo la supervisión de los cuerpos de prevención y seguridad del estado (Portuguesa al Dia).\n\nEl caso ha sido registrado y seguido de cerca por los equipos de salud pública de la Cruz Roja Venezolana, que continúan monitoreando la evolución de los afectados y reforzando protocolos de prevención en instituciones educativas para evitar incidentes similares en el futuro.",
+  "narrativa": "Durante noviembre de 2026 se registraron 4 eventos de salud pública, frente a 21 en el período anterior (octubre de 2026). Esta disminución refleja una menor cantidad de incidentes reportados en el mes.\n\nEl 4 de noviembre se reportó un caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes. Trece personas resultaron afectadas y fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\n\nSegún La Prensa de Monagas, la misma intoxicación obligó a evacuar a 631 personas del liceo. Los bomberos realizaron una inspección visual y técnica en las áreas comunes y aulas para identificar la posible fuente del agente tóxico (La Prensa de Monagas).\n\nEn otras regiones, el médico infectólogo Julio Castro advirtió un repunte de casos de COVID‑19 e influenza en Caracas, señalando un aumento de infecciones respiratorias en las últimas semanas (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/los-llanos/cojedes-otro-caso-de-intoxicacion-escolar-deja-13-afectados-en-tinaco/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/presunta-intoxicacion-masiva-en-liceo-de-cojedes-deja-13-afectados-y-obliga-a-evacuar-a-631-personas/"
+    },
+    {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/11/04/cojedes-evacuan-a-estudiantes-por-presunta-intoxicacion-masiva/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/julio-castro-casos-covid-caracas/"
     }
   ]
 }

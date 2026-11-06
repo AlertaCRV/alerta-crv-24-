@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-05T00:04:48.650019+00:00",
-  "actualizado_hasta": "2026-11-04T18:46:01.536504+00:00",
-  "total_eventos": 7,
+  "generado": "2026-11-06T01:51:05.961661+00:00",
+  "actualizado_hasta": "2026-11-05T21:27:34.746101+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 78,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente 7 eventos de orden público, una caída drástica frente a los 78 eventos del mes anterior (2026‑10) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales, heridos o víctimas fatales.\n\nEn el estado Lara se reportó un incidente de orden público de gravedad crítica, según informó La Prensa de Lara (La Prensa de Lara). Los detalles específicos del hecho no fueron divulgados en la fuente, pero se confirmó su carácter crítico.\n\nEn Barinas, la situación alcanzó también una severidad crítica cuando un aficionado, Luis Rafael López, fue asesinado en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del partido entre Zamora FC B y Deportivo Lara, lo que obligó a suspender el encuentro (La Prensa de Lara). Según Noticia al Dia (Zulia), los disturbios se originaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, desencadenando violencia que culminó en la muerte del hincha (Noticia al Dia (Zulia)).\n\nOtros movimientos sociales se dieron a conocer en distintas regiones: jubilados y pensionados de Lara protestaron exigiendo pensiones dignas y aumento salarial (El Impulso); en Carabobo se registró una ola de protestas por cortes eléctricos prolongados (El Impulso); en Bolívar, una huelga de hambre de jubilados de la industria básica empeoró su salud (El Pitazo); en Anzoátegui, vecinos de Villa Betania protestaron contra la doble tanda de cortes eléctricos (El Tiempo); y en Falcón, habitantes de Chichiriviche manifestaron su inconformidad por fallas continuas del servicio eléctrico (La Prensa de Lara).\n\nEn conjunto, aunque el número total de eventos de orden público disminuyó notablemente, los incidentes críticos en Lara y Barinas resaltan la necesidad de reforzar la seguridad en eventos masivos y de atender las demandas sociales que pueden derivar en manifestaciones, para evitar que se conviertan en situaciones de riesgo para la población.",
+  "narrativa": "Durante el mes de noviembre de 2026 la Cruz Roja Venezolana registró un total de 9 eventos de orden público, una disminución notable frente a los 78 eventos del mes anterior (2026‑10). Esta reducción se refleja en la menor cantidad de incidentes que requirieron la intervención de los equipos de emergencia y la atención a víctimas.\n\nEn el estado Lara se reportó un episodio de orden público de gravedad crítica, según informó La Prensa de Lara. Las autoridades locales describieron la situación como de alta severidad, aunque los detalles específicos del hecho no fueron divulgados en el informe disponible.\n\nEn Barinas, otro evento de orden público de gravedad crítica tuvo consecuencias mortales: un aficionado fue asesinado y el partido de la Liga Futve fue suspendido, según Noticia al Dia (Zulia). Los disturbios se originaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana, provocando la intervención de las fuerzas de seguridad y la paralización del encuentro deportivo.\n\nAdemás de estos dos incidentes críticos, se registraron diversas manifestaciones en otros estados, como la protesta de jubilados y pensionados en Lara por pensiones dignas (El Impulso), las protestas vecinales en Carabobo por cortes eléctricos (El Impulso), la huelga de hambre de jubilados en Bolívar (El Pitazo), y protestas por cortes de energía en Anzoátegui (El Tiempo). Cada una de estas movilizaciones fue atendida por la Cruz Roja en función de sus necesidades de salud y asistencia humanitaria, aunque no generaron daños materiales ni víctimas fatales.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -34,12 +34,20 @@
       "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/economia/donde-estan-nuestros-aguinaldos-es-la-pregunta-que-hacen-los-trabajadores-a-delcy-rodriguez/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
     },
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
+    },
+    {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/"
     }
   ]
 }
