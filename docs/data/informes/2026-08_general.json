@@ -1,0 +1,173 @@
+{
+  "periodo": "2026-08",
+  "tipo": "general",
+  "tipo_label": "Todas las categorías",
+  "cerrado": true,
+  "generado": "2026-11-06T21:41:10.237100+00:00",
+  "actualizado_hasta": "2026-08-30T23:57:57.317017+00:00",
+  "total_eventos": 197,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-07",
+    "anterior": 24,
+    "actual": 197
+  },
+  "narrativa": "En el mes de agosto de 2026 se registraron 197 eventos de emergencia, una notable escalada respecto a los 24 eventos del mes anterior (julio de 2026). Esta cifra refleja una intensificación de fenómenos críticos en distintas regiones del país, con impactos materiales, heridos y víctimas fatales.\\n\\nEn el Distrito Capital se reportaron múltiples incidentes críticos: inundaciones de gran magnitud (Turimiquire (Sucre); La Prensa de Monagas; La Prensa de Lara; La Verdad (Zulia); La Verdad (Zulia); La Verdad (Zulia)), deslizamientos y derrumbes (La Patilla; La Prensa de Monagas), un colapso estructural de alto riesgo (Primicia (Bolivar)), un incendio de severidad alta (La Patilla) y un sismo de alta severidad (Runrun.es). Cada uno de estos eventos generó daños materiales y, en algunos casos, heridos y evacuaciones.\\n\\nEn el estado Yaracuy se registraron dos inundaciones críticas (Turimiquire (Sucre); El Impulso (Lara)) y un incendio crítico (La Prensa de Lara), provocando pérdidas materiales y una víctima fatal según el reporte de El Impulso (Lara). En Apure también se documentaron dos inundaciones de severidad alta (Notiapure) que afectaron comunidades rurales y dañaron infraestructura vial.\\n\\nBarinas fue escenario de varios incidentes viales críticos: un choque mortal que dejó tres fallecidos y dos heridos (Diario La Nacion (Tachira)), otro accidente vial crítico (La Noticia de Barinas), y dos incidentes adicionales reportados por Diario La Nacion (Tachira) y Noticias de Aqui (Anzoategui). En Merida se reportó un incidente vial de severidad alta (Primicia (Bolivar)) y en Carabobo un accidente de motorizado fatal (El Carabobeno).\\n\\nEn Lara se presentaron problemas de salud pública críticos (Maturin News; El Pitazo; Diario La Nacion (Tachira)), incluyendo la muerte de un recluso con complicaciones de diálisis (Diario La Nacion (Tachira)). En Miranda se registró un incendio de alta severidad (La Prensa de Monagas) y una explosión de alta severidad (El Siglo (Aragua)), además de una inundación crítica (La Verdad (Zulia)). En Aragua se informó una inundación crítica (El Pitazo).",
+  "fuentes": [
+    {
+      "nombre": "Ciudad MCY (Aragua)",
+      "link": "https://ciudadmcy.info.ve/despliegan-rescate-en-la-gavilana-tras-crecida-de-la-quebrada-apa"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/sucesos/tres-tachirenses-murieron-en-aparatoso-choque-en-barinas/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/ovp-muere-en-lara-segundo-privado-de-libertad-que-recibia-dialisis-en-menos-de-una-semana-24ago/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/un-motorizado-murio-en-colision-multiple-en-la-autopista-del-este/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/incendio-afecto-una-carpinteria-en-la-avenida-andres-bello-de-caracas/"
+    },
+    {
+      "nombre": "El Carabobeno",
+      "link": "https://www.el-carabobeno.com/activaros-sistema-de-proteccion-civil-por-lluvias-en-caracas/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/02/lluvias-en-yaracuy-causan-inundaciones-en-cuatro-municipios-y-danos-estructurales-en-el-puente-la-galletera-2ago/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/08/23/video-fuertes-lluvias-e-inundaciones-causan-emergencias-en-multiples-sectores-de-la-gran-caracas-23ago/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/muere-una-mujer-al-caer-una-roca-sobre-su-casa-debido-a-las-fuertes-lluvias/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/accidentes-de-motos-deja-15-lesionados-durante-el-fin-de-semana/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/reportan-derrumbes-y-viviendas-colapsadas-en-caracas-y-miranda/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/fuertes-lluvias-dejan-danos-en-caracas/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/muere-recluso-en-fenix-lara-y-otros-dos-estan-graves-por-fallas-renales-ovp-suma-56-muertes-en-carceles-del-pais/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/victimas-de-la-crisis-electrica-al-menos-18-personas-murieron-electrocutadas-en-lo-que-va-de-2026/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/gran-caracas/onda-tropical-n-40-avanza-hacia-la-region-central-inameh-pronostica-lluvias-en-buena-parte-del-pais-para-este-domingo/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/tres-muertos-cinco-desaparecidos-y-mas-de-150-viviendas-afectadas-por-las-lluvias-en-venezuela/"
+    },
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/explosion-de-tuberia-de-gas-dejo-varios-heridos-en-guatire/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/ovp-denuncia-muerte-de-preso-con-enfermedad-renal-tras-contagiarse-de-hepatitis-en-fenix-lara/"
+    },
+    {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/08/tres-autos-y-la-motocicletafatalidad-no-se-detiene-muere-motorizadoen-colision-multiple-en-la-av-nueva-barinas/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/16/autoridades-reportaron-afectaciones-en-toda-caracas-tras-fuertes-lluvias/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/20/dos-personas-resultaron-heridas-tras-incendio-en-una-carpinteria-en-la-avenida-andres-bello-este-20ago-videos/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/video-crecida-de-la-quebrada-el-alambique-dejo-dos-desaparecidos-en-los-teques/"
+    },
+    {
+      "nombre": "La Patilla",
+      "link": "https://lapatilla.com/2026/08/23/onda-tropical-40-dejo-al-menos-seis-desaparecidos-y-multiples-danos-en-venezuela-fotos/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/sucesos/hermanos-pierden-la-vida-explosion-gas/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/intensas-lluvias-danos-carabobo/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-en-caracas-inundaciones-coche/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/un-incendio-en-un-edificio-de-las-mercedes-deja-dos-personas/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/fuertes-lluvias-provocan-desbordamientos-del-rio-guaire/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/un-derrumbe-en-macarao-eleva-a-tres-la-cifra-de-fallecidos/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/deslizamiento-de-roca-deja-una-mujer-fallecida-en-caracas/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/denuncian-muerte-de-preso-con-enfermedad-renal-tras-contraer-hepatitis-en-carcel-de-lara/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/lluvias-en-caracas-y-miranda-inundaciones-vehiculos-afectados-y-dos-desaparecidos/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/seis-desaparecidos-y-decenas-de-viviendas-afectadas-por-las-lluvias-en-el-centro-del-pais/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais/?utm_source=rss&utm_medium=rss&utm_campaign=ovp-denuncia-muerte-de-tres-reclusos-y-exige-investigar-posibles-omisiones-en-carceles-del-pais"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/alcalde-de-paez-lidera-trabajos-de-mitigacion-en-sector-cachamero-el-ripial-tras-crecida-del-rio-arauca/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/apure/desplegada-atencion-integral-para-mas-de-500-familias-damnificadas-por-desbordamiento-del-rio-arauca-en-apure/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/un-fallecido-y-cinco-heridos-deja-colision-multiple-en-la-autopista-valle-coche/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/dos-victimas-fatales-y-vias-colapsadas-dejo-fuerte-temporal-de-lluvias-en-la-gran-caracas/"
+    },
+    {
+      "nombre": "Noticias de Aqui (Anzoategui)",
+      "link": "https://noticiasdeaqui.co/2026/08/16/dos-adolescentes-fallecieron-tras-fuertes-lluvias-en-caracas/"
+    }
+  ]
+}
