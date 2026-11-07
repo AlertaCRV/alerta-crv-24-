@@ -5,30 +5,25 @@
     "municipio": "Córdoba",
     "parroquia": null,
     "severidad": "medio",
-    "score": 1.2,
-    "confirmado": true,
-    "num_fuentes": 2,
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
     "fuentes": [
       {
         "nombre": "Diario La Nacion (Tachira)",
         "link": "https://lanacionweb.com/sucesos/falla-en-cableado-habria-originado-incendio-en-alcaldia-de-cordoba/",
         "fecha": "2026-11-07T05:00:00+00:00"
-      },
-      {
-        "nombre": "Notiapure",
-        "link": "https://notiapure.com.ve/sucesos/incendio-afecto-sede-de-la-alcaldia-de-cordoba-en-tachira/",
-        "fecha": "2026-11-07T02:02:59+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
     "fecha_evento": "2026-11-07T05:00:00+00:00",
-    "fecha_evento_temprana": "2026-11-07T02:02:59+00:00",
-    "fecha_deteccion": "2026-11-07T07:19:59.915212+00:00",
+    "fecha_evento_temprana": "2026-11-07T05:00:00+00:00",
+    "fecha_deteccion": "2026-11-07T14:12:04.054136+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "incendio::Tachira::2026-11-06",
     "titulo": "Incendio en Municipio Córdoba, Tachira",
-    "texto": "📌 Incendio en Municipio Córdoba, Tachira\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Córdoba, Tachira\n🕒 Hecho reportado: 07/11/2026, 1:00 a.m.\n🔎 Detectado por el sistema: 07/11/2026, 3:19 a.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/falla-en-cableado-habria-originado-incendio-en-alcaldia-de-cordoba/\n  • Notiapure: https://notiapure.com.ve/sucesos/incendio-afecto-sede-de-la-alcaldia-de-cordoba-en-tachira/"
+    "texto": "📌 Incendio en Municipio Córdoba, Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Córdoba, Tachira\n🕒 Hecho reportado: 07/11/2026, 1:00 a.m.\n🔎 Detectado por el sistema: 07/11/2026, 10:12 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/falla-en-cableado-habria-originado-incendio-en-alcaldia-de-cordoba/"
   },
   {
     "tipo": "derrame_petrolero",
