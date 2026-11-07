@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-07T14:12:08.443282+00:00",
+  "actualizado": "2026-11-07T18:53:34.884869+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-07T05:00:00+00:00"
+    "hasta": "2026-11-07T15:40:39+00:00"
   },
-  "total_eventos": 616,
+  "total_eventos": 617,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
@@ -14,7 +14,7 @@
     "orden_publico": 209,
     "salud_publica": 36,
     "crisis_migratoria": 7,
-    "incendio": 67,
+    "incendio": 68,
     "vialidad": 30,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -140,16 +140,16 @@
     },
     {
       "estado": "Bolivar",
-      "total": 24,
+      "total": 25,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 7,
-        "medio": 11,
+        "medio": 12,
         "critico": 2,
         "alto": 1,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 1.9,
+      "indice_gravedad": 1.91,
       "severidad_mapa": "medio"
     },
     {
@@ -456,7 +456,7 @@
     "Bolivar": {
       "orden_publico": 12,
       "escasez_combustible": 2,
-      "incendio": 3,
+      "incendio": 4,
       "inundacion": 1,
       "deslizamiento": 2,
       "infraestructura_agua": 1,
@@ -572,7 +572,7 @@
   "por_severidad": {
     "alto": 140,
     "critico": 78,
-    "medio": 212,
+    "medio": 213,
     "bajo": 160,
     "sin_clasificar": 26
   },
@@ -635,7 +635,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 6
+      "2026-11": 7
     },
     "vialidad": {
       "2026-08": 10,
