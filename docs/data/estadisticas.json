@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-07T01:15:45.677483+00:00",
+  "actualizado": "2026-11-07T07:20:00.424260+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-06T16:30:12+00:00"
+    "hasta": "2026-11-07T05:00:00+00:00"
   },
-  "total_eventos": 614,
+  "total_eventos": 615,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
@@ -14,7 +14,7 @@
     "orden_publico": 209,
     "salud_publica": 36,
     "crisis_migratoria": 7,
-    "incendio": 65,
+    "incendio": 66,
     "vialidad": 30,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -71,6 +71,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Tachira",
+      "total": 39,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 13,
+        "bajo": 6,
+        "medio": 9,
+        "critico": 9,
+        "sin_clasificar": 2
+      },
+      "indice_gravedad": 2.68,
+      "severidad_mapa": "alto"
+    },
+    {
       "estado": "Portuguesa",
       "total": 39,
       "confirmados": 4,
@@ -82,20 +96,6 @@
       },
       "indice_gravedad": 2.26,
       "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Tachira",
-      "total": 38,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 13,
-        "bajo": 6,
-        "medio": 8,
-        "critico": 9,
-        "sin_clasificar": 2
-      },
-      "indice_gravedad": 2.69,
-      "severidad_mapa": "alto"
     },
     {
       "estado": "Aragua",
@@ -447,7 +447,7 @@
       "inundacion": 5,
       "sismo": 1,
       "infraestructura_electrica": 2,
-      "incendio": 6,
+      "incendio": 7,
       "vialidad": 2,
       "motin_carcelario": 1,
       "ataque_armado": 2,
@@ -572,7 +572,7 @@
   "por_severidad": {
     "alto": 140,
     "critico": 78,
-    "medio": 210,
+    "medio": 211,
     "bajo": 160,
     "sin_clasificar": 26
   },
@@ -635,7 +635,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 4
+      "2026-11": 5
     },
     "vialidad": {
       "2026-08": 10,
