@@ -3,16 +3,24 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-06T01:50:11.974421+00:00",
-  "actualizado_hasta": "2026-11-03T18:39:04.673867+00:00",
-  "total_eventos": 2,
+  "generado": "2026-11-07T01:17:04.982848+00:00",
+  "actualizado_hasta": "2026-11-06T16:18:16.688528+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 2
+    "actual": 4
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente dos incidentes de incendio, una cifra notablemente menor comparada con los veinte eventos reportados en octubre del mismo año (20 evento(s) registrados entonces vs. 2 en este período). Esta reducción refleja una tendencia a la baja en la frecuencia de este tipo de emergencias durante el período analizado.\n\nEl 2 de noviembre se produjo una explosión seguida de incendio en la subestación eléctrica Federación, ubicada en el barrio Constitución, parroquia Libertad, municipio Lagunillas, en la Costa Oriental del Lago de Maracaibo, estado Zulia (La Verdad). El fuerte estruendo dejó sin energía eléctrica a varios sectores del municipio Lagunillas y, según reportes, también afectó a sectores de Ciudad Ojeda en el estado Zulia (El Impulso). Las autoridades locales fueron notificadas y se activaron los protocolos de restablecimiento del suministro eléctrico.\n\nEn Caracas, un presunto trabajador de la Corporación Eléctrica Nacional (Corpoelec) se hizo viral en redes sociales al intentar apagar un transformador en llamas utilizando botellas con refresco, una maniobra considerada altamente peligrosa y sin el uso de equipos de seguridad personal (El Pitazo). El video mostró la falta de equipos adecuados y generó advertencias de expertos sobre los riesgos de este tipo de prácticas improvisadas para controlar incendios eléctricos.\n\nAmbos incidentes, aunque aislados, subrayan la importancia de contar con protocolos de seguridad y equipos apropiados para la gestión de incendios en infraestructuras críticas. La disminución del número total de eventos en noviembre sugiere una mejora en la prevención, pero los casos reportados recuerdan la necesidad de reforzar la capacitación y la respuesta rápida ante emergencias.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron cuatro incendios, una disminución notable respecto a los veinte eventos reportados en octubre del mismo año (comparación con el período anterior). Esta reducción se refleja en los reportes consolidados de la Cruz Roja Venezolana, que continúan monitoreando la evolución de los siniestros en todo el territorio.\n\nEl hecho más grave del período fue el incendio en la sede de la Alcaldía del municipio Córdoba, ubicado en la localidad de Santa Ana del Táchira. El siniestro se desencadenó el jueves 5 de noviembre de 2026, afectando una edificación de un solo nivel y comprometiendo tres oficinas del recinto gubernamental (Diario La Nacion (Tachira)). La información fue confirmada por el comandante del Cuerpo de Bomberos de San Cristóbal, Antonio Briceño, quien indicó la movilización de personal para atender la contingencia (Diario La Nacion (Tachira)). La magnitud del incendio fue calificada como de alta severidad, generando profunda zozobra entre vecinos y empleados de la alcaldía (Noticia al Dia (Zulia)).\n\nEn Zulia se reportaron dos incidentes adicionales. El 3 de noviembre una explosión seguida de incendio en la subestación Federación dejó sin suministro eléctrico a varios sectores de Ciudad Ojeda (El Impulso (Lara)). Dos días antes, el 2 de noviembre, una explosión e incendio en la subestación eléctrica ubicada en el barrio Constitución, parroquia Libertad, municipio Lagunillas, también provocó cortes de energía en la zona (La Verdad (Zulia)).\n\nAdicionalmente, se difundió un video viral en el que un presunto trabajador de Corpoelec intentó apagar un transformador en llamas usando botellas con refresco, una práctica calificada como extremadamente peligrosa por expertos (El Pitazo). La Cruz Roja continúa recopilando y verificando estos eventos para orientar la respuesta de emergencia y apoyar a las comunidades afectadas.",
   "fuentes": [
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/se-incendio-la-sede-de-la-alcaldia-de-cordoba/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/en-imagenes-asi-quedo-la-sede-de-la-alcaldia-de-cordoba-tras-incendio/"
+    },
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
