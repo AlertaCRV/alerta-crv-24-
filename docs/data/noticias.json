@@ -1,5 +1,56 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "Distrito Capital",
+    "municipio": "Libertador",
+    "parroquia": "Antimano",
+    "severidad": "critico",
+    "score": 3.55,
+    "confirmado": true,
+    "num_fuentes": 6,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/sucesos/tragedia-en-caracas-un-adolescente-y-dos-ninos-mueren-tras-un-deslizamiento-de-tierra-sobre-su-vivienda/",
+        "fecha": "2026-11-07T22:13:16+00:00"
+      },
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/tres-menores-de-edad-fallecidos-y-dos-heridos-por-deslizamiento-de-tierra-en-caracas/",
+        "fecha": "2026-11-07T22:09:24+00:00"
+      },
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/11/tragedia-en-caracas-tres-menores-mueren-y-dos-resultan-heridos-tras-un-deslizamiento-de-tie/?utm_source=rss&utm_medium=rss&utm_campaign=tragedia-en-caracas-tres-menores-mueren-y-dos-resultan-heridos-tras-un-deslizamiento-de-tie",
+        "fecha": "2026-11-07T20:55:15+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/deslizamiento-de-tierra-causa-la-muerte-de-tres-menores-de-edad-y-deja-dos-heridos-en-caracas/",
+        "fecha": "2026-11-07T19:48:17+00:00"
+      },
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-dos-heridos-en-caracas/",
+        "fecha": "2026-11-07T20:00:51+00:00"
+      },
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/muertos-tres-menores-y-dos-heridos-tras-deslizamiento-de-tierra-en-antimano/",
+        "fecha": "2026-11-07T21:53:52+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-07T22:13:16+00:00",
+    "fecha_evento_temprana": "2026-11-07T19:48:17+00:00",
+    "fecha_deteccion": "2026-11-07T22:34:34.465307+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Distrito Capital::2026-11-07",
+    "titulo": "Deslizamiento/Derrumbe en Parroquia Antimano, Municipio Libertador, Distrito Capital",
+    "texto": "📌 Deslizamiento/Derrumbe en Parroquia Antimano, Municipio Libertador, Distrito Capital\n\n✅ CONFIRMADO | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Antimano, Municipio Libertador, Distrito Capital\n🕒 Hecho reportado: 07/11/2026, 6:13 p.m.\n🔎 Detectado por el sistema: 07/11/2026, 6:34 p.m.\n📊 Fuentes independientes: 6 (score 3.55)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/sucesos/tragedia-en-caracas-un-adolescente-y-dos-ninos-mueren-tras-un-deslizamiento-de-tierra-sobre-su-vivienda/\n  • El Carabobeno: https://www.el-carabobeno.com/tres-menores-de-edad-fallecidos-y-dos-heridos-por-deslizamiento-de-tierra-en-caracas/\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/11/tragedia-en-caracas-tres-menores-mueren-y-dos-resultan-heridos-tras-un-deslizamiento-de-tie/?utm_source=rss&utm_medium=rss&utm_campaign=tragedia-en-caracas-tres-menores-mueren-y-dos-resultan-heridos-tras-un-deslizamiento-de-tie\n  • La Prensa de Monagas: https://laprensademonagas.com/deslizamiento-de-tierra-causa-la-muerte-de-tres-menores-de-edad-y-deja-dos-heridos-en-caracas/\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/tres-muertos-y-dos-heridos-en-caracas/\n  • El Siglo (Aragua): https://elsiglo.com.ve/muertos-tres-menores-y-dos-heridos-tras-deslizamiento-de-tierra-en-antimano/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Bolivar",
     "municipio": null,
@@ -1505,31 +1556,5 @@
     "clave_dedup": "orden_publico::Tachira::2026-10-24",
     "titulo": "Orden público en Tachira",
     "texto": "📌 Orden público en Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 24/10/2026, 4:25 p.m.\n🔎 Detectado por el sistema: 24/10/2026, 7:14 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/detenido-el-soldado-raymond-paz-por-el-tiroteo-en-la-base-aerea-de-tachira/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/",
-        "fecha": "2026-10-24T20:21:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-24T20:21:14+00:00",
-    "fecha_evento_temprana": "2026-10-24T20:21:14+00:00",
-    "fecha_deteccion": "2026-10-24T21:09:17.706416+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-10-24",
-    "titulo": "Falla eléctrica en Distrito Capital",
-    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 24/10/2026, 4:21 p.m.\n🔎 Detectado por el sistema: 24/10/2026, 5:09 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/gran-caracas/ciudadanos-reportan-festival-de-bajones-electricos-en-caracas-y-8-estados-este-24oct/"
   }
 ]

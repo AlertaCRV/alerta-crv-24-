@@ -68,5 +68,12 @@
     "fecha_deteccion": "2026-11-07T18:53:34.385064+00:00",
     "fecha_evento_temprana": "2026-11-07T15:40:39+00:00",
     "municipio": null
+  },
+  "deslizamiento::Distrito Capital::2026-11-07": {
+    "severidad": "critico",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-07T22:34:34.465307+00:00",
+    "fecha_evento_temprana": "2026-11-07T19:48:17+00:00",
+    "municipio": "Libertador"
   }
 }
