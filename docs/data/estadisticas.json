@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-11-08T01:52:55.731026+00:00",
+  "actualizado": "2026-11-08T15:10:17.682160+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-08T00:30:46+00:00"
+    "hasta": "2026-11-08T14:37:35+00:00"
   },
-  "total_eventos": 619,
+  "total_eventos": 621,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
     "infraestructura_electrica": 56,
-    "deslizamiento": 42,
+    "deslizamiento": 44,
     "colapso_estructural": 5,
     "orden_publico": 209,
     "salud_publica": 36,
@@ -30,16 +30,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 101,
+      "total": 102,
       "confirmados": 17,
       "por_severidad": {
         "alto": 19,
         "medio": 31,
         "bajo": 31,
-        "critico": 14,
+        "critico": 15,
         "sin_clasificar": 6
       },
-      "indice_gravedad": 2.17,
+      "indice_gravedad": 2.19,
       "severidad_mapa": "medio"
     },
     {
@@ -207,15 +207,15 @@
     },
     {
       "estado": "Carabobo",
-      "total": 19,
+      "total": 20,
       "confirmados": 2,
       "por_severidad": {
         "alto": 3,
         "bajo": 4,
-        "medio": 7,
+        "medio": 8,
         "critico": 5
       },
-      "indice_gravedad": 2.47,
+      "indice_gravedad": 2.45,
       "severidad_mapa": "medio"
     },
     {
@@ -354,7 +354,8 @@
       "inundacion": 3,
       "vialidad": 2,
       "incendio": 2,
-      "accidente_transporte": 1
+      "accidente_transporte": 1,
+      "deslizamiento": 1
     },
     "Lara": {
       "inundacion": 6,
@@ -385,7 +386,7 @@
       "derrame_petrolero": 4
     },
     "Distrito Capital": {
-      "deslizamiento": 5,
+      "deslizamiento": 6,
       "inundacion": 18,
       "orden_publico": 33,
       "incendio": 20,
@@ -571,8 +572,8 @@
   },
   "por_severidad": {
     "alto": 141,
-    "critico": 79,
-    "medio": 213,
+    "critico": 80,
+    "medio": 214,
     "bajo": 160,
     "sin_clasificar": 26
   },
@@ -602,7 +603,7 @@
       "2026-08": 18,
       "2026-09": 9,
       "2026-10": 10,
-      "2026-11": 2
+      "2026-11": 4
     },
     "colapso_estructural": {
       "2026-07": 1,
