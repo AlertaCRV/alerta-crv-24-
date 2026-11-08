@@ -3,16 +3,20 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-07T01:17:44.532412+00:00",
-  "actualizado_hasta": "2026-11-04T03:23:21.375386+00:00",
-  "total_eventos": 6,
+  "generado": "2026-11-08T01:55:03.212360+00:00",
+  "actualizado_hasta": "2026-11-08T01:51:59.458847+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 11,
-    "actual": 6
+    "actual": 7
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron seis eventos de fallas eléctricas, una disminución respecto a los once eventos del mes anterior (2026-10). Esta reducción se refleja en la menor cantidad de interrupciones reportadas a nivel nacional, aunque persisten incidentes de alta gravedad en varias regiones.\n\nEn el estado Carabobo se presentaron dos incidentes críticos. El Pitazo informó que el 3 de noviembre se produjeron dos bajones de voltaje con diez minutos de diferencia, afectando a Carabobo entre otros estados, y calificó la falla como de severidad crítica (El Pitazo). Por otro lado, La Prensa de Monagas reportó que durante uno de esos apagones en Guacara, Carabobo, Lorenzo Guillermo Ágreda Delpino, de 59 años, fue asesinado a puñaladas por su pareja, convirtiéndose en una víctima mortal vinculada directamente al corte de energía (La Prensa de Monagas).\n\nOtros estados también sufrieron interrupciones prolongadas. En El Tigre, Anzoátegui, los vecinos realizaron un cacerolazo tras un apagón de casi nueve horas el 2 de noviembre, expresando su malestar con el sonido de ollas y sartenes (El Tiempo). En Zulia, una explosión en la subestación Federación, ubicada en el barrio Constitución de Ciudad Ojeda, dejó sin electricidad a varios sectores de la ciudad durante la noche del 2 de noviembre (Noticia al Dia). Finalmente, en el municipio Baruta, Miranda, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua en más de 40 zonas el 1 de noviembre, como consecuencia de fluctuaciones eléctricas (Runrun.es).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete eventos de fallas eléctricas, una disminución respecto a los once reportados en octubre de 2026 (11 evento(s) registrados entonces vs. 7 en este período). Las interrupciones afectaron a varios estados y generaron daños materiales, interrupciones de servicios esenciales y, en algunos casos, víctimas mortales.\n\nEn Carabobo se produjo una falla eléctrica de severidad crítica, reportada por El Pitazo, que formó parte de una serie de bajones de voltaje que también impactaron a Caracas y a siete estados más el 3 de noviembre (El Pitazo). La interrupción provocó apagones prolongados en la región, generando dificultades para la población y el sector productivo.\n\nDurante el mismo apagón en Carabobo, una tragedia ocurrió en Guacara cuando una mujer apuñaló mortalmente a su pareja, Lorenzo Guillermo Ágreda Delpino, de 59 años, en medio de la falta de energía (La Prensa de Monagas). Este hecho subraya la gravedad de los incidentes asociados a la pérdida del suministro eléctrico.\n\nEn el estado Táchira, la localidad de La Concordia sufrió una interrupción eléctrica de más de 36 horas continuas, catalogada como de severidad alta, que afectó a residencias, comercios y al Hospital Central de San Cristóbal, incluyendo laboratorios médicos (Diario La Nacion (Tachira)). La población tuvo que gestionar repuestos desde Cúcuta para mitigar el impacto de la falta de energía.",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/"
+    },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/"

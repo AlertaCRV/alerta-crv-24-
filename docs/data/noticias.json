@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Tachira",
+    "municipio": "San Cristóbal",
+    "parroquia": "La Concordia",
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/",
+        "fecha": "2026-11-08T00:30:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-08T00:30:46+00:00",
+    "fecha_evento_temprana": "2026-11-08T00:30:46+00:00",
+    "fecha_deteccion": "2026-11-08T01:51:59.458847+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Tachira::2026-11-08",
+    "titulo": "Falla eléctrica en Parroquia La Concordia, Municipio San Cristóbal, Tachira",
+    "texto": "📌 Falla eléctrica en Parroquia La Concordia, Municipio San Cristóbal, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia La Concordia, Municipio San Cristóbal, Tachira\n🕒 Hecho reportado: 07/11/2026, 8:30 p.m.\n🔎 Detectado por el sistema: 07/11/2026, 9:51 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Distrito Capital",
     "municipio": "Libertador",
@@ -1530,31 +1556,5 @@
     "clave_dedup": "salud_publica::Tachira::2026-10-23",
     "titulo": "Salud pública en Municipio Fernández Feo, Tachira",
     "texto": "📌 Salud pública en Municipio Fernández Feo, Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Fernández Feo, Tachira\n🕒 Hecho reportado: 24/10/2026, 9:04 p.m.\n🔎 Detectado por el sistema: 25/10/2026, 2:11 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/fundaredes-exige-investigacion-sobre-intoxicaciones-en-escuelas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/detenido-el-soldado-raymond-paz-por-el-tiroteo-en-la-base-aerea-de-tachira/",
-        "fecha": "2026-10-24T20:25:18+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-24T20:25:18+00:00",
-    "fecha_evento_temprana": "2026-10-24T20:25:18+00:00",
-    "fecha_deteccion": "2026-10-24T23:14:07.182878+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Tachira::2026-10-24",
-    "titulo": "Orden público en Tachira",
-    "texto": "📌 Orden público en Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 24/10/2026, 4:25 p.m.\n🔎 Detectado por el sistema: 24/10/2026, 7:14 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/detenido-el-soldado-raymond-paz-por-el-tiroteo-en-la-base-aerea-de-tachira/"
   }
 ]
