@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/venezuela/lluvias-dejan-a-sectores-de-baruta-sin-electricidad-este-domingo/",
+        "fecha": "2026-11-08T14:21:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-08T14:21:33+00:00",
+    "fecha_evento_temprana": "2026-11-08T14:21:33+00:00",
+    "fecha_deteccion": "2026-11-08T19:42:52.536995+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Distrito Capital::2026-11-08",
+    "titulo": "Falla eléctrica en Distrito Capital",
+    "texto": "📌 Falla eléctrica en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 08/11/2026, 10:21 a.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:42 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/lluvias-dejan-a-sectores-de-baruta-sin-electricidad-este-domingo/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Carabobo",
+    "municipio": "San Diego",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/lluvias-vientos-la-guaira-carabobo/",
+        "fecha": "2026-11-08T16:07:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-08T16:07:53+00:00",
+    "fecha_evento_temprana": "2026-11-08T16:07:53+00:00",
+    "fecha_deteccion": "2026-11-08T19:43:47.405998+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Carabobo::2026-11-08",
+    "titulo": "Inundación en Municipio San Diego, Carabobo",
+    "texto": "📌 Inundación en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 08/11/2026, 12:07 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-vientos-la-guaira-carabobo/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": "Comunidad",
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/guayana/ciudad/cuatro-apagones-seguidos-mantienen-a-oscuras-al-sector-las-amazonas/",
+        "fecha": "2026-11-08T16:33:14+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-08T16:33:14+00:00",
+    "fecha_evento_temprana": "2026-11-08T16:33:14+00:00",
+    "fecha_deteccion": "2026-11-08T19:43:51.921381+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Amazonas::2026-11-08",
+    "titulo": "Falla eléctrica en Parroquia Comunidad, Amazonas",
+    "texto": "📌 Falla eléctrica en Parroquia Comunidad, Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Comunidad, Amazonas\n🕒 Hecho reportado: 08/11/2026, 12:33 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/ciudad/cuatro-apagones-seguidos-mantienen-a-oscuras-al-sector-las-amazonas/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "Carabobo",
     "municipio": "San Diego",

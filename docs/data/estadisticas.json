@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-08T15:10:17.682160+00:00",
+  "actualizado": "2026-11-08T19:44:05.422213+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-08T14:37:35+00:00"
+    "hasta": "2026-11-08T16:33:14+00:00"
   },
-  "total_eventos": 621,
+  "total_eventos": 624,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 93,
-    "infraestructura_electrica": 56,
+    "inundacion": 94,
+    "infraestructura_electrica": 58,
     "deslizamiento": 44,
     "colapso_estructural": 5,
     "orden_publico": 209,
@@ -30,14 +30,14 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 102,
+      "total": 103,
       "confirmados": 17,
       "por_severidad": {
         "alto": 19,
         "medio": 31,
         "bajo": 31,
         "critico": 15,
-        "sin_clasificar": 6
+        "sin_clasificar": 7
       },
       "indice_gravedad": 2.19,
       "severidad_mapa": "medio"
@@ -180,6 +180,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Carabobo",
+      "total": 21,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 9,
+        "critico": 5
+      },
+      "indice_gravedad": 2.43,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Anzoategui",
       "total": 21,
       "confirmados": 0,
@@ -203,19 +216,6 @@
         "medio": 4
       },
       "indice_gravedad": 2.33,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 20,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 8,
-        "critico": 5
-      },
-      "indice_gravedad": 2.45,
       "severidad_mapa": "medio"
     },
     {
@@ -325,14 +325,14 @@
     },
     {
       "estado": "Amazonas",
-      "total": 4,
+      "total": 5,
       "confirmados": 1,
       "por_severidad": {
         "critico": 3,
-        "medio": 1
+        "medio": 2
       },
-      "indice_gravedad": 3.5,
-      "severidad_mapa": "critico"
+      "indice_gravedad": 3.2,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -351,7 +351,7 @@
       "tormenta_electrica": 1,
       "orden_publico": 6,
       "infraestructura_electrica": 4,
-      "inundacion": 3,
+      "inundacion": 4,
       "vialidad": 2,
       "incendio": 2,
       "accidente_transporte": 1,
@@ -391,7 +391,7 @@
       "orden_publico": 33,
       "incendio": 20,
       "vialidad": 7,
-      "infraestructura_electrica": 9,
+      "infraestructura_electrica": 10,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 2,
@@ -567,15 +567,16 @@
     "Amazonas": {
       "salud_publica": 1,
       "orden_publico": 1,
-      "accidente_transporte": 2
+      "accidente_transporte": 2,
+      "infraestructura_electrica": 1
     }
   },
   "por_severidad": {
     "alto": 141,
     "critico": 80,
-    "medio": 214,
+    "medio": 216,
     "bajo": 160,
-    "sin_clasificar": 26
+    "sin_clasificar": 27
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -589,14 +590,14 @@
       "2026-08": 48,
       "2026-09": 16,
       "2026-10": 21,
-      "2026-11": 1
+      "2026-11": 2
     },
     "infraestructura_electrica": {
       "2026-07": 1,
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 7
+      "2026-11": 9
     },
     "deslizamiento": {
       "2026-07": 3,
