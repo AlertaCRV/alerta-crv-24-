@@ -82,5 +82,26 @@
     "fecha_deteccion": "2026-11-08T15:09:44.456148+00:00",
     "fecha_evento_temprana": "2026-11-08T14:35:43+00:00",
     "municipio": "San Diego"
+  },
+  "infraestructura_electrica::Distrito Capital::2026-11-08": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-08T19:42:52.536995+00:00",
+    "fecha_evento_temprana": "2026-11-08T14:21:33+00:00",
+    "municipio": null
+  },
+  "inundacion::Carabobo::2026-11-08": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-08T19:43:47.405998+00:00",
+    "fecha_evento_temprana": "2026-11-08T16:07:53+00:00",
+    "municipio": "San Diego"
+  },
+  "infraestructura_electrica::Amazonas::2026-11-08": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-08T19:43:51.921381+00:00",
+    "fecha_evento_temprana": "2026-11-08T16:33:14+00:00",
+    "municipio": null
   }
 }
