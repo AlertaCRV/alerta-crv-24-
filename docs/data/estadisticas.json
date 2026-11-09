@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-11-08T19:44:05.422213+00:00",
+  "actualizado": "2026-11-09T02:43:27.905827+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-08T16:33:14+00:00"
+    "hasta": "2026-11-09T01:13:02+00:00"
   },
-  "total_eventos": 624,
+  "total_eventos": 626,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 94,
     "infraestructura_electrica": 58,
-    "deslizamiento": 44,
+    "deslizamiento": 45,
     "colapso_estructural": 5,
     "orden_publico": 209,
     "salud_publica": 36,
     "crisis_migratoria": 7,
-    "incendio": 68,
+    "incendio": 69,
     "vialidad": 30,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -126,6 +126,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Bolivar",
+      "total": 26,
+      "confirmados": 2,
+      "por_severidad": {
+        "bajo": 7,
+        "medio": 12,
+        "critico": 3,
+        "alto": 1,
+        "sin_clasificar": 3
+      },
+      "indice_gravedad": 2.0,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Falcon",
       "total": 26,
       "confirmados": 3,
@@ -136,20 +150,6 @@
         "critico": 2
       },
       "indice_gravedad": 2.08,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Bolivar",
-      "total": 25,
-      "confirmados": 2,
-      "por_severidad": {
-        "bajo": 7,
-        "medio": 12,
-        "critico": 2,
-        "alto": 1,
-        "sin_clasificar": 3
-      },
-      "indice_gravedad": 1.91,
       "severidad_mapa": "medio"
     },
     {
@@ -166,6 +166,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Carabobo",
+      "total": 22,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 4,
+        "bajo": 4,
+        "medio": 9,
+        "critico": 5
+      },
+      "indice_gravedad": 2.45,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Trujillo",
       "total": 22,
       "confirmados": 1,
@@ -177,19 +190,6 @@
         "sin_clasificar": 2
       },
       "indice_gravedad": 2.25,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 21,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 3,
-        "bajo": 4,
-        "medio": 9,
-        "critico": 5
-      },
-      "indice_gravedad": 2.43,
       "severidad_mapa": "medio"
     },
     {
@@ -355,7 +355,7 @@
       "vialidad": 2,
       "incendio": 2,
       "accidente_transporte": 1,
-      "deslizamiento": 1
+      "deslizamiento": 2
     },
     "Lara": {
       "inundacion": 6,
@@ -457,7 +457,7 @@
     "Bolivar": {
       "orden_publico": 12,
       "escasez_combustible": 2,
-      "incendio": 4,
+      "incendio": 5,
       "inundacion": 1,
       "deslizamiento": 2,
       "infraestructura_agua": 1,
@@ -572,8 +572,8 @@
     }
   },
   "por_severidad": {
-    "alto": 141,
-    "critico": 80,
+    "alto": 142,
+    "critico": 81,
     "medio": 216,
     "bajo": 160,
     "sin_clasificar": 27
@@ -604,7 +604,7 @@
       "2026-08": 18,
       "2026-09": 9,
       "2026-10": 10,
-      "2026-11": 4
+      "2026-11": 5
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -637,7 +637,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 7
+      "2026-11": 8
     },
     "vialidad": {
       "2026-08": 10,

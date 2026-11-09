@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Bolivar",
+    "municipio": "Sifontes",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Siglo (Aragua)",
+        "link": "https://elsiglo.com.ve/muertas-cuatro-personas-tras-incendio-en-una-vivienda-en-tumeremo/",
+        "fecha": "2026-11-09T01:13:02+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-09T01:13:02+00:00",
+    "fecha_evento_temprana": "2026-11-09T01:13:02+00:00",
+    "fecha_deteccion": "2026-11-09T02:42:40.008446+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Bolivar::2026-11-09",
+    "titulo": "Incendio en Municipio Sifontes, Bolivar",
+    "texto": "📌 Incendio en Municipio Sifontes, Bolivar\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Sifontes, Bolivar\n🕒 Hecho reportado: 08/11/2026, 9:13 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 10:42 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/muertas-cuatro-personas-tras-incendio-en-una-vivienda-en-tumeremo/"
+  },
+  {
+    "tipo": "deslizamiento",
+    "ubicacion": "Carabobo",
+    "municipio": "San Diego",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/lluvias-en-carabobo-anegaciones-y-deslaves-tras-fuertes-precipitaciones/",
+        "fecha": "2026-11-08T21:12:36+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-08T21:12:36+00:00",
+    "fecha_evento_temprana": "2026-11-08T21:12:36+00:00",
+    "fecha_deteccion": "2026-11-09T02:42:48.023390+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::Carabobo::2026-11-08",
+    "titulo": "Deslizamiento/Derrumbe en Municipio San Diego, Carabobo",
+    "texto": "📌 Deslizamiento/Derrumbe en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 08/11/2026, 5:12 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 10:42 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/lluvias-en-carabobo-anegaciones-y-deslaves-tras-fuertes-precipitaciones/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -76,32 +128,6 @@
     "clave_dedup": "infraestructura_electrica::Amazonas::2026-11-08",
     "titulo": "Falla eléctrica en Parroquia Comunidad, Amazonas",
     "texto": "📌 Falla eléctrica en Parroquia Comunidad, Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Comunidad, Amazonas\n🕒 Hecho reportado: 08/11/2026, 12:33 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/guayana/ciudad/cuatro-apagones-seguidos-mantienen-a-oscuras-al-sector-las-amazonas/"
-  },
-  {
-    "tipo": "deslizamiento",
-    "ubicacion": "Carabobo",
-    "municipio": "San Diego",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Periodico de Monagas",
-        "link": "https://elperiodicodemonagas.com.ve/venezuela/anegaciones-y-deslaves-tras-fuertes-precipitaciones-en-san-diego/",
-        "fecha": "2026-11-08T14:35:43+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-08T14:35:43+00:00",
-    "fecha_evento_temprana": "2026-11-08T14:35:43+00:00",
-    "fecha_deteccion": "2026-11-08T15:09:44.456148+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "deslizamiento::Carabobo::2026-11-08",
-    "titulo": "Deslizamiento/Derrumbe en Municipio San Diego, Carabobo",
-    "texto": "📌 Deslizamiento/Derrumbe en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 08/11/2026, 10:35 a.m.\n🔎 Detectado por el sistema: 08/11/2026, 11:09 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/venezuela/anegaciones-y-deslaves-tras-fuertes-precipitaciones-en-san-diego/"
   },
   {
     "tipo": "deslizamiento",
