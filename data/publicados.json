@@ -75,5 +75,19 @@
     "fecha_deteccion": "2026-11-09T02:42:40.008446+00:00",
     "fecha_evento_temprana": "2026-11-09T01:13:02+00:00",
     "municipio": "Sifontes"
+  },
+  "salud_publica::Zulia::2026-11-09": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-09T21:02:26.128980+00:00",
+    "fecha_evento_temprana": "2026-11-09T15:12:33+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-11-09": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-09T21:03:02.812365+00:00",
+    "fecha_evento_temprana": "2026-11-09T15:28:44+00:00",
+    "municipio": null
   }
 }

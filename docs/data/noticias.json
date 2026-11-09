@@ -1,5 +1,62 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/zulia-despliega-jornada-antirrabica-especial-tras-muertes-por-la-enfermedad/",
+        "fecha": "2026-11-09T19:59:59+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios/?utm_source=rss&utm_medium=rss&utm_campaign=en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios",
+        "fecha": "2026-11-09T15:12:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-09T19:59:59+00:00",
+    "fecha_evento_temprana": "2026-11-09T15:12:33+00:00",
+    "fecha_deteccion": "2026-11-09T21:02:26.128980+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Zulia::2026-11-09",
+    "titulo": "Salud pública en Zulia",
+    "texto": "📌 Salud pública en Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 09/11/2026, 3:59 p.m.\n🔎 Detectado por el sistema: 09/11/2026, 5:02 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/zulia-despliega-jornada-antirrabica-especial-tras-muertes-por-la-enfermedad/\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios/?utm_source=rss&utm_medium=rss&utm_campaign=en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/monagas/habitantes-de-amana-abajo-trancan-la-via-al-sur-para-exigir-asfaltado/",
+        "fecha": "2026-11-09T15:28:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-09T15:28:44+00:00",
+    "fecha_evento_temprana": "2026-11-09T15:28:44+00:00",
+    "fecha_deteccion": "2026-11-09T21:03:02.812365+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Monagas::2026-11-09",
+    "titulo": "Orden público en Monagas",
+    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 09/11/2026, 11:28 a.m.\n🔎 Detectado por el sistema: 09/11/2026, 5:03 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/monagas/habitantes-de-amana-abajo-trancan-la-via-al-sur-para-exigir-asfaltado/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Bolivar",
     "municipio": "Sifontes",

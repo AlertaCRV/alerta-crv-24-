@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-09T02:43:27.905827+00:00",
+  "actualizado": "2026-11-09T21:03:09.096237+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-09T01:13:02+00:00"
+    "hasta": "2026-11-09T19:59:59+00:00"
   },
-  "total_eventos": 626,
+  "total_eventos": 628,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 94,
     "infraestructura_electrica": 58,
     "deslizamiento": 45,
     "colapso_estructural": 5,
-    "orden_publico": 209,
-    "salud_publica": 36,
+    "orden_publico": 210,
+    "salud_publica": 37,
     "crisis_migratoria": 7,
     "incendio": 69,
     "vialidad": 30,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Zulia",
-      "total": 52,
+      "total": 53,
       "confirmados": 11,
       "por_severidad": {
         "medio": 24,
-        "critico": 6,
+        "critico": 7,
         "bajo": 9,
         "sin_clasificar": 1,
         "alto": 12
       },
-      "indice_gravedad": 2.29,
+      "indice_gravedad": 2.33,
       "severidad_mapa": "medio"
     },
     {
@@ -234,10 +234,10 @@
     },
     {
       "estado": "Monagas",
-      "total": 17,
+      "total": 18,
       "confirmados": 0,
       "por_severidad": {
-        "medio": 6,
+        "medio": 7,
         "alto": 4,
         "bajo": 6,
         "critico": 1
@@ -378,7 +378,7 @@
       "sequia": 1,
       "orden_publico": 18,
       "sismo": 2,
-      "salud_publica": 2,
+      "salud_publica": 3,
       "ataque_armado": 2,
       "explosion": 1,
       "vialidad": 1,
@@ -515,7 +515,7 @@
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 3,
-      "orden_publico": 5
+      "orden_publico": 6
     },
     "Guarico": {
       "sequia": 2,
@@ -573,8 +573,8 @@
   },
   "por_severidad": {
     "alto": 142,
-    "critico": 81,
-    "medio": 216,
+    "critico": 82,
+    "medio": 217,
     "bajo": 160,
     "sin_clasificar": 27
   },
@@ -617,14 +617,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 78,
-      "2026-11": 9
+      "2026-11": 10
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 4
+      "2026-11": 5
     },
     "crisis_migratoria": {
       "2026-07": 4,
