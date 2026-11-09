@@ -3,16 +3,20 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-11-08T01:54:07.764261+00:00",
-  "actualizado_hasta": "2026-11-07T22:34:34.465307+00:00",
-  "total_eventos": 2,
+  "generado": "2026-11-09T10:27:08.928617+00:00",
+  "actualizado_hasta": "2026-11-09T02:42:48.023390+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 10,
-    "actual": 2
+    "actual": 5
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron dos eventos de deslizamiento/derrumbe, una cifra significativamente menor que los diez eventos reportados en el mes anterior (10 evento(s) registrados entonces vs. 2 en este período). Ambos incidentes fueron catalogados con severidad crítica y generaron daños materiales, heridos y víctimas fatales.\n\nEn el estado Falcón se produjo un deslizamiento de gran magnitud que afectó a la zona, catalogado como crítico por las autoridades locales (Nuevo Dia (Falcon)). Los detalles específicos del daño material no fueron divulgados en la fuente, pero se confirmó la gravedad del fenómeno.\n\nEn el Distrito Capital, específicamente en la parroquia Antímano, sector La Seca, del municipio Libertador, un deslizamiento de tierra provocado por intensas lluvias derrumbó tres habitaciones de una vivienda (El Pitazo). El alud dejó un saldo de tres menores de edad fallecidos y dos niños gravemente heridos (El Pitazo). El comandante general del Cuerpo de Bomberos de Caracas, Pablo Palacios, informó que los cinco menores estaban dentro de la vivienda cuando la masa de tierra colapsó, y que los heridos fueron trasladados al Hospital Pérez Carreño bajo observación médica (El Pitazo). La tragedia fue confirmada por varios medios locales, que coincidieron en la descripción de los hechos y la ubicación exacta del siniestro (El Carabobeno; El Periodico de Monagas; El Siglo (Aragua); La Noticia de Barinas; La Prensa de Monagas).\n\nEstos dos eventos resaltan la necesidad de reforzar las medidas de prevención y respuesta ante deslizamientos en regiones vulnerables, especialmente durante períodos de lluvias intensas, y serán monitoreados de cerca por la Cruz Roja Venezolana para coordinar la asistencia humanitaria correspondiente.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron cinco eventos de deslizamiento o derrumbe, una disminución respecto a los diez eventos del mes anterior (2026-10) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes críticos y de alto impacto reportados en distintas regiones del país.\n\nEn el estado Falcón se notificó un deslizamiento de gravedad crítica, según informó el medio Nuevo Dia (Falcon). Aunque los detalles específicos del siniestro no fueron publicados en la fuente, la clasificación de severidad se mantiene como crítica.\n\nEn el Distrito Capital se reportaron dos incidentes críticos de deslizamiento. El primero fue descrito por El Pitazo, que informó sobre la tragedia en la parroquia Antímano, donde un alud de tierra colapsó una vivienda y causó la muerte de tres menores y dejó dos heridos. El segundo informe, proveniente de Diario El Tiempo (Trujillo), también cubrió el mismo suceso en Antímano, confirmando el fallecimiento de tres menores y la lesión de dos niños tras el derrumbe de la estructura.\n\nEn el estado Carabobo, La Prensa de Monagas documentó un deslizamiento de alta severidad asociado a intensas lluvias, que provocó anegaciones y deslaves en varios sectores del municipio San Diego, generando daños materiales y la necesidad de evacuaciones.",
   "fuentes": [
+    {
+      "nombre": "Diario El Tiempo (Trujillo)",
+      "link": "https://diarioeltiempo.com.ve/tres-menores-fallecieron-tras-deslizamiento-de-tierra-en-antimano/"
+    },
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/tres-menores-de-edad-fallecidos-y-dos-heridos-por-deslizamiento-de-tierra-en-caracas/"
@@ -38,8 +42,20 @@
       "link": "https://laprensademonagas.com/deslizamiento-de-tierra-causa-la-muerte-de-tres-menores-de-edad-y-deja-dos-heridos-en-caracas/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/lluvias-en-carabobo-anegaciones-y-deslaves-tras-fuertes-precipitaciones/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/sucesos/alud-de-tierra-aplasto-vivienda-y-causo-la-muerte-de-tres-menores-en-antimano/"
+    },
+    {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/murio-motorizado-adolescente-en-coro-tras-accidente-del-domingo-1-nov/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/anegaciones-y-deslaves-tras-fuertes-precipitaciones-en-san-diego/"
     }
   ]
 }
