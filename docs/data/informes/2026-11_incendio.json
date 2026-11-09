@@ -3,16 +3,20 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-08T01:54:37.563642+00:00",
-  "actualizado_hasta": "2026-11-07T18:53:34.385064+00:00",
-  "total_eventos": 7,
+  "generado": "2026-11-09T21:04:44.726146+00:00",
+  "actualizado_hasta": "2026-11-09T02:42:40.008446+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 7
+    "actual": 8
   },
-  "narrativa": "Durante el mes de noviembre de 2026 el Sistema de Monitoreo de Emergencias registró un total de 7 incendios, una disminución respecto a los 20 eventos contabilizados en el mes anterior (octubre de 2026). Esta reducción se refleja en la comparación oficial proporcionada para el período.\n\nEl incendio de mayor gravedad ocurrió en el municipio Córdoba, localidad de Santa Ana del Táchira, donde se quemó la sede de la Alcaldía. El siniestro se desencadenó el jueves 5 de noviembre y fue atendido por el Cuerpo de Bomberos de San Cristóbal, bajo el mando del comandante Antonio Briceño (Noticia al Dia (Zulia)). Según el informe del comandante, las llamas consumieron por completo los despachos de Talento Humano, Hacienda y Auditoría, destruyendo el mobiliario y la totalidad de los archivos documentales, sin que se reportaran heridos ni víctimas mortales (Diario La Nacion (Tachira); Notiapure). Posteriormente, una investigación preliminar señaló una falla en el cableado eléctrico como la causa probable del incendio, al sobrecalentarse un tramo mientras la sede operaba con un generador autónomo (Diario La Nacion (Tachira)).\n\nEn otras localidades se registraron incidentes de menor magnitud pero con repercusiones en el suministro eléctrico y el medio ambiente. En Ciudad Ojeda, estado Zulia, una explosión seguida de incendio en la subestación Federación dejó sin energía a varios sectores el 3 de noviembre (El Impulso (Lara)). Dos días antes, una explosión e incendio en la subestación eléctrica del barrio Constitución, municipio Lagunillas, también provocó cortes de luz en la zona (La Verdad (Zulia)). En la capital, un presunto trabajador de Corpoelec fue captado en video intentando apagar un transformador en llamas con botellas de refresco, una práctica calificada como peligrosa por expertos (El Pitazo). Finalmente, en la ciudad de Bolívar se controló un incendio forestal en las adyacencias de la bomba de combustible Maipure, sin reportarse daños a personas (Primicia (Bolivar)).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron ocho incidentes de incendio, una disminución notable respecto a los veinte eventos del mes anterior (2026-10). Esta reducción se observa pese a la persistencia de siniestros de alta gravedad en distintas regiones del país.\n\nEl incendio de mayor impacto en Táchira ocurrió en la sede de la Alcaldía del municipio Córdoba, ubicada en la localidad de Santa Ana. El siniestro, que se desarrolló el 5 de noviembre, consumió por completo los despachos de Talento Humano, Hacienda y Auditoría, provocando daños materiales significativos en la infraestructura y la pérdida de archivos, aunque no se reportaron heridos ni víctimas mortales (Noticia al Dia). Según el comandante del Cuerpo de Bomberos de San Cristóbal, la causa probable fue un sobrecalentamiento de un tramo de cableado mientras la edificación operaba con un generador autónomo (Diario La Nacion).\n\nEn el estado Bolívar, un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, cobró la vida de cuatro personas, entre ellas tres menores de edad, el 8 de noviembre (El Siglo). Las víctimas fueron identificadas como un niño de 9 años, dos adolescentes de 16 y 14 años y un adulto de 28 años. El reporte oficial del Sistema Nacional de Gestión de Riesgo confirmó la gravedad crítica del evento y la ausencia de supervivientes.\n\nOtros incidentes menores también se registraron durante el mismo período. En Zulia, una explosión seguida de incendio en la subestación eléctrica Federación dejó sin suministro eléctrico a varios sectores de Ciudad Ojeda y Lagunillas (El Impulso; La Verdad). Asimismo, se reportó una maniobra peligrosa de un trabajador de Corpoelec que utilizó botellas de refresco para apagar un transformador en llamas, generando alerta entre los expertos (El Pitazo). En la ciudad de Bolívar, las autoridades lograron controlar un incendio forestal cercano a la bomba de combustible Maipure, evitando mayores daños (Primicia).",
   "fuentes": [
+    {
+      "nombre": "El Siglo (Aragua)",
+      "link": "https://elsiglo.com.ve/muertas-cuatro-personas-tras-incendio-en-una-vivienda-en-tumeremo/"
+    },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/se-incendio-la-sede-de-la-alcaldia-de-cordoba/"
