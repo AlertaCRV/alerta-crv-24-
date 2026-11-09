@@ -3,19 +3,23 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-11-08T01:55:15.958352+00:00",
-  "actualizado_hasta": "2026-11-05T21:27:59.870533+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-09T02:46:06.238555+00:00",
+  "actualizado_hasta": "2026-11-08T19:43:47.405998+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 21,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró únicamente un evento de inundación, en contraste con los 21 eventos reportados en octubre de 2026 (comparación con el período anterior). Este descenso significativo refleja una menor frecuencia de incidentes, aunque la gravedad del caso único sigue siendo relevante.\n\nEl único suceso registrado corresponde a las lluvias intensas del jueves 5 de noviembre, que afectaron al preescolar Príncipe de Paz, ubicado en la zona de San Francisco, al oeste de la ciudad de Barquisimeto (La Prensa de Lara). La precipitación repentina provocó la acumulación de agua en los salores del establecimiento, dejándolos completamente anegados.\n\nEl preescolar ya presentaba problemas estructurales desde el inicio del año escolar 2025‑2026, con filtraciones en los techos y deficiencias en el sistema de drenaje, los cuales se vieron agravados por la lluvia reciente (La Prensa de Lara). Estas fallas de infraestructura impidieron la evacuación adecuada del agua, generando una inundación que comprometió la seguridad y el uso de los espacios educativos.\n\nDesde el comienzo del ciclo escolar, la comunidad educativa ha venido solicitando apoyo a las autoridades regionales para reparar y reforzar la infraestructura del preescolar (La Prensa de Lara). La situación actual subraya la necesidad de una respuesta rápida y de recursos destinados a la mejora de los sistemas de drenaje y techos, a fin de prevenir futuros incidentes similares.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente dos eventos de inundación, una notable reducción frente a los 21 eventos del mes anterior (2026-10) (Comparación con el período anterior). Esta disminución se refleja en la menor cantidad de reportes de daños materiales y humanos, aunque los incidentes ocurridos siguen requiriendo atención inmediata.\n\nEl preescolar \"Príncipe de Paz\", ubicado en la comunidad San Francisco, al oeste de Barquisimeto, quedó completamente anegado tras las lluvias intensas del jueves 5 de noviembre. La institución ya venía presentando graves problemas de filtración en sus techos y deficiencias en el drenaje, y había estado solicitando ayuda a las autoridades regionales desde el año escolar 2025‑2026 (La Prensa de Lara). Las recientes precipitaciones inundaron los salones, impidiendo su uso y generando la necesidad de reubicación temporal de los niños.\n\nEn la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre, fuertes lluvias acompañadas de vientos huracanados provocaron el desbordamiento de ríos, la caída de árboles y diversos daños estructurales en los estados de Carabobo y La Guaira (La Prensa de Lara). El Instituto Nacional de Meteorología e Hidrología (INAMEH) había advertido la llegada de la onda tropical 62 al país, lo que se materializó en inundaciones particularmente severas en la ciudad de Valencia y en la parroquia Catia La Mar (La Prensa de Lara). Los daños incluyeron viviendas afectadas, interrupciones en el suministro eléctrico y bloqueos de vías principales.\n\nAmbas localidades reportaron la activación de planes de emergencia por parte de las autoridades locales y la Cruz Roja Venezolana, que movilizó equipos de rescate y distribución de ayuda humanitaria para atender a los afectados. A pesar de la reducción en el número total de eventos, la magnitud de los incidentes en Barquisimeto, La Guaira y Carabobo subraya la necesidad de reforzar la infraestructura de drenaje y los sistemas de alerta temprana para mitigar futuros riesgos de inundación.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/locales/preescolar-principe-de-paz-lluvias/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/lluvias-vientos-la-guaira-carabobo/"
     }
   ]
 }

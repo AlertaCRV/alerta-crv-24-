@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-08T01:55:03.212360+00:00",
-  "actualizado_hasta": "2026-11-08T01:51:59.458847+00:00",
-  "total_eventos": 7,
+  "generado": "2026-11-09T02:46:00.750661+00:00",
+  "actualizado_hasta": "2026-11-08T19:43:51.921381+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 11,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete eventos de fallas eléctricas, una disminución respecto a los once reportados en octubre de 2026 (11 evento(s) registrados entonces vs. 7 en este período). Las interrupciones afectaron a varios estados y generaron daños materiales, interrupciones de servicios esenciales y, en algunos casos, víctimas mortales.\n\nEn Carabobo se produjo una falla eléctrica de severidad crítica, reportada por El Pitazo, que formó parte de una serie de bajones de voltaje que también impactaron a Caracas y a siete estados más el 3 de noviembre (El Pitazo). La interrupción provocó apagones prolongados en la región, generando dificultades para la población y el sector productivo.\n\nDurante el mismo apagón en Carabobo, una tragedia ocurrió en Guacara cuando una mujer apuñaló mortalmente a su pareja, Lorenzo Guillermo Ágreda Delpino, de 59 años, en medio de la falta de energía (La Prensa de Monagas). Este hecho subraya la gravedad de los incidentes asociados a la pérdida del suministro eléctrico.\n\nEn el estado Táchira, la localidad de La Concordia sufrió una interrupción eléctrica de más de 36 horas continuas, catalogada como de severidad alta, que afectó a residencias, comercios y al Hospital Central de San Cristóbal, incluyendo laboratorios médicos (Diario La Nacion (Tachira)). La población tuvo que gestionar repuestos desde Cúcuta para mitigar el impacto de la falta de energía.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron nueve fallas eléctricas, una disminución respecto a los once eventos reportados en octubre del mismo año (comparación con el período anterior). Estas interrupciones afectaron a varios estados y generaron tanto daños materiales como consecuencias graves para la población.\n\nEn Carabobo se presentaron dos incidentes críticos. El Pitazo informó que el estado sufrió una falla eléctrica de severidad crítica, dentro del contexto de una serie de bajones que también impactaron a Caracas y a siete estados más (El Pitazo). Paralelamente, La Prensa de Monagas reportó un hecho violento durante el apagón en Guacara, donde Lorenzo Guillermo Ágreda Delpino, de 59 años, fue asesinado a puñaladas por su pareja mientras la zona permanecía sin energía (La Prensa de Monagas).\n\nEn el estado Táchira, la comunidad de La Concordia vivió una interrupción prolongada de más de 36 horas, catalogada como de alta severidad. El apagón afectó residencias, comercios y el Hospital Central de San Cristóbal, obligando a los afectados a adquirir repuestos en Cúcuta para mantener operativos algunos equipos médicos (Diario La Nacion (Tachira)).\n\nOtros apagones relevantes se registraron en Baruta (Miranda), donde una falla en los sistemas Tuy II y III dejó sin agua a más de 40 sectores debido a fluctuaciones eléctricas (Runrun.es); en El Tigre (Anzoátegui), donde vecinos realizaron un cacerolazo tras casi nueve horas sin suministro (El Tiempo); y en Ciudad Ojeda (Zulia), donde una explosión en la subestación Federación dejó sin energía a varios sectores (Noticia al Dia).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -26,12 +26,20 @@
       "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/lluvias-dejan-a-sectores-de-baruta-sin-electricidad-este-domingo/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/guayana/ciudad/cuatro-apagones-seguidos-mantienen-a-oscuras-al-sector-las-amazonas/"
     },
     {
       "nombre": "Runrun.es",

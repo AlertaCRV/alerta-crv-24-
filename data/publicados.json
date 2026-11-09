@@ -1,11 +1,4 @@
 {
-  "salud_publica::Distrito Capital::2026-11-05": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-06T01:48:13.360455+00:00",
-    "fecha_evento_temprana": "2026-11-05T20:24:59+00:00",
-    "municipio": null
-  },
   "incendio::Tachira::2026-11-06": {
     "severidad": "medio",
     "confirmado": false,
@@ -49,10 +42,10 @@
     "municipio": "San Cristóbal"
   },
   "deslizamiento::Carabobo::2026-11-08": {
-    "severidad": "medio",
+    "severidad": "alto",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-08T15:09:44.456148+00:00",
-    "fecha_evento_temprana": "2026-11-08T14:35:43+00:00",
+    "fecha_deteccion": "2026-11-09T02:42:48.023390+00:00",
+    "fecha_evento_temprana": "2026-11-08T21:12:36+00:00",
     "municipio": "San Diego"
   },
   "infraestructura_electrica::Distrito Capital::2026-11-08": {
@@ -75,5 +68,12 @@
     "fecha_deteccion": "2026-11-08T19:43:51.921381+00:00",
     "fecha_evento_temprana": "2026-11-08T16:33:14+00:00",
     "municipio": null
+  },
+  "incendio::Bolivar::2026-11-09": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-09T02:42:40.008446+00:00",
+    "fecha_evento_temprana": "2026-11-09T01:13:02+00:00",
+    "municipio": "Sifontes"
   }
 }
