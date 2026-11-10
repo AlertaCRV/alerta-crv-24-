@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-11-09T10:27:08.928617+00:00",
-  "actualizado_hasta": "2026-11-09T02:42:48.023390+00:00",
-  "total_eventos": 5,
+  "generado": "2026-11-10T03:31:35.120959+00:00",
+  "actualizado_hasta": "2026-11-08T15:09:52.863761+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 10,
-    "actual": 5
+    "actual": 3
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron cinco eventos de deslizamiento o derrumbe, una disminución respecto a los diez eventos del mes anterior (2026-10) (Comparación con el período anterior). Esta reducción se refleja en la menor cantidad de incidentes críticos y de alto impacto reportados en distintas regiones del país.\n\nEn el estado Falcón se notificó un deslizamiento de gravedad crítica, según informó el medio Nuevo Dia (Falcon). Aunque los detalles específicos del siniestro no fueron publicados en la fuente, la clasificación de severidad se mantiene como crítica.\n\nEn el Distrito Capital se reportaron dos incidentes críticos de deslizamiento. El primero fue descrito por El Pitazo, que informó sobre la tragedia en la parroquia Antímano, donde un alud de tierra colapsó una vivienda y causó la muerte de tres menores y dejó dos heridos. El segundo informe, proveniente de Diario El Tiempo (Trujillo), también cubrió el mismo suceso en Antímano, confirmando el fallecimiento de tres menores y la lesión de dos niños tras el derrumbe de la estructura.\n\nEn el estado Carabobo, La Prensa de Monagas documentó un deslizamiento de alta severidad asociado a intensas lluvias, que provocó anegaciones y deslaves en varios sectores del municipio San Diego, generando daños materiales y la necesidad de evacuaciones.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron tres eventos de deslizamiento/derrumbe, una disminución notable respecto a los diez eventos del mes anterior (2026‑10). Esta reducción se refleja en los reportes consolidados de la Cruz Roja Venezolana, que continúan monitoreando la incidencia de estos fenómenos en todo el territorio nacional.\n\nEl evento más crítico ocurrió en el Distrito Capital, específicamente en el sector La Seca de la parroquia Antímano, municipio Libertador, y fue catalogado con severidad crítica (El Pitazo). Las intensas precipitaciones de los últimos días provocaron la inestabilidad del terreno, generando un alud que colapsó tres habitaciones de una vivienda familiar.\n\nEl deslizamiento causó la muerte de tres menores de edad y dejó a dos niños gravemente heridos (Diario El Tiempo (Trujillo)). Las víctimas fueron identificadas como escolares que se encontraban dentro de la vivienda al momento del derrumbe; los tres fallecidos fueron un adolescente y dos niños, mientras que los dos heridos permanecen bajo observación médica (El Carabobeno; El Pitazo; El Siglo (Aragua)).\n\nLos cuerpos de Bomberos de Caracas y la Protección Civil acudieron de inmediato al sitio, realizaron una evaluación de daños e inspección técnica de riesgo, y rescataron a los cinco menores, trasladándolos al Hospital Dr. Miguel Pérez Carreño para recibir atención (El Carabobeno; La Noticia de Barinas; La Prensa de Monagas; Notiapure). El comandante general del Cuerpo de Bomberos, Pablo Palacios, informó a través de sus redes sociales sobre la magnitud del alud y la respuesta de los equipos de emergencia (El Pitazo; El Carabobeno).\n\nEste suceso constituye uno de los tres eventos de deslizamiento registrados en el período analizado, evidenciando una tendencia a la baja en la frecuencia de estos incidentes comparado con el mes previo (10 evento(s) registrados entonces vs. 3 en este período).",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -42,16 +42,8 @@
       "link": "https://laprensademonagas.com/deslizamiento-de-tierra-causa-la-muerte-de-tres-menores-de-edad-y-deja-dos-heridos-en-caracas/"
     },
     {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/lluvias-en-carabobo-anegaciones-y-deslaves-tras-fuertes-precipitaciones/"
-    },
-    {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/sucesos/alud-de-tierra-aplasto-vivienda-y-causo-la-muerte-de-tres-menores-en-antimano/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/murio-motorizado-adolescente-en-coro-tras-accidente-del-domingo-1-nov/"
     },
     {
       "nombre": "El Periodico de Monagas",

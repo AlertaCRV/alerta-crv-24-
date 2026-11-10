@@ -3,15 +3,15 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-11-09T21:05:17.811866+00:00",
+  "generado": "2026-11-10T03:33:40.056066+00:00",
   "actualizado_hasta": "2026-11-06T21:40:26.896766+00:00",
-  "total_eventos": 4,
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 4
+    "actual": 3
   },
-  "narrativa": "Durante el mes de noviembre de 2026 el Sistema de Monitoreo de Emergencias registró un total de 4 incidentes viales, una disminución respecto a los 7 eventos registrados en el período anterior (2026‑10) (7 evento(s) registrados entonces vs. 4 en este período).\n\nEn el estado Aragua se produjo una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, donde intervinieron la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana para atender la emergencia (La Prensa de Monagas).\n\nEn el Distrito Capital se reportó una colisión entre un autobús y un camión cava que dejó aproximadamente 20 heridos; el accidente ocurrió en la carretera Cagua‑Villa de Cura y movilizó a equipos de Protección Civil y bomberos (Reporte Confidencial (Nueva Esparta)).\n\nEn el estado Portuguesa, un autobús modelo Blue Bird de la línea Independiente volcó en la carretera nacional Biscucuy‑Guanare, provocando 2 fallecimientos y 43 personas heridas entre los cerca de 50 pasajeros que transportaba (La Verdad (Zulia)).\n\nOtro incidente en el Distrito Capital tuvo lugar en la Autopista Gran Cacique Guaicaipuro, Distribuidor la Araña, sentido Caricuao, cuando un conductor perdió el control y colisionó con otro vehículo, dejando cinco personas con lesiones de diversa gravedad, sin víctimas fatales ni derrames de combustible (Primicia (Bolivar)).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron tres incidentes viales de alta gravedad, una reducción notable respecto a los siete eventos reportados en octubre del mismo año (7 evento(s) registrados entonces vs. 3 en este período). Los hechos se concentraron en tres estados diferentes y fueron atendidos por diversas autoridades de seguridad y protección civil.\n\nEn el estado Aragua se produjo una colisión y posterior volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, donde intervinieron la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana para atender la emergencia (La Prensa de Monagas). La severidad del incidente se calificó como alta.\n\nEn Portuguesa, el miércoles 4 de noviembre, un autobús modelo Blue Bird de la línea Independiente volcó en la carretera nacional Biscucuy‑Guanare, provocando la muerte de dos personas y dejando 43 heridos entre los aproximadamente 50 pasajeros que transportaba (La Verdad (Zulia)). Este accidente fue catalogado con severidad crítica.\n\nEn el Distrito Capital, la noche del jueves 5 de noviembre se registró un choque múltiple en la Autopista Gran Cacique Guaicaipuro, distribuidor La Araña, sentido Caricuao, en la parroquia San Juan. El conductor perdió el control y colisionó con otro vehículo, resultando en cinco personas con lesiones de múltiples traumatismos, sin víctimas fatales ni derrames de combustible (Primicia (Bolivar)). La gravedad del suceso también se describió como alta.\n\nEn conjunto, los tres incidentes generaron daños materiales y un número significativo de heridos, aunque la cifra total de eventos disminuyó respecto al mes anterior, lo que permite a las autoridades enfocarse en la atención y prevención de futuros accidentes viales.",
   "fuentes": [
     {
       "nombre": "La Prensa de Monagas",
@@ -24,10 +24,6 @@
     {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/choque-multiple-distribuidor-la-arana-cinco-heridos/"
-    },
-    {
-      "nombre": "Reporte Confidencial (Nueva Esparta)",
-      "link": "https://reporteconfidencial.info/2026/11/04/colision-entre-autobus-camion/"
     }
   ]
 }

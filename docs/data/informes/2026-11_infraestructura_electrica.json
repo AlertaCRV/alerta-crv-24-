@@ -3,27 +3,19 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-09T02:46:00.750661+00:00",
-  "actualizado_hasta": "2026-11-08T19:43:51.921381+00:00",
-  "total_eventos": 9,
+  "generado": "2026-11-10T03:32:42.257231+00:00",
+  "actualizado_hasta": "2026-11-08T19:42:52.536995+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
-    "anterior": 11,
-    "actual": 9
+    "anterior": 9,
+    "actual": 6
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron nueve fallas eléctricas, una disminución respecto a los once eventos reportados en octubre del mismo año (comparación con el período anterior). Estas interrupciones afectaron a varios estados y generaron tanto daños materiales como consecuencias graves para la población.\n\nEn Carabobo se presentaron dos incidentes críticos. El Pitazo informó que el estado sufrió una falla eléctrica de severidad crítica, dentro del contexto de una serie de bajones que también impactaron a Caracas y a siete estados más (El Pitazo). Paralelamente, La Prensa de Monagas reportó un hecho violento durante el apagón en Guacara, donde Lorenzo Guillermo Ágreda Delpino, de 59 años, fue asesinado a puñaladas por su pareja mientras la zona permanecía sin energía (La Prensa de Monagas).\n\nEn el estado Táchira, la comunidad de La Concordia vivió una interrupción prolongada de más de 36 horas, catalogada como de alta severidad. El apagón afectó residencias, comercios y el Hospital Central de San Cristóbal, obligando a los afectados a adquirir repuestos en Cúcuta para mantener operativos algunos equipos médicos (Diario La Nacion (Tachira)).\n\nOtros apagones relevantes se registraron en Baruta (Miranda), donde una falla en los sistemas Tuy II y III dejó sin agua a más de 40 sectores debido a fluctuaciones eléctricas (Runrun.es); en El Tigre (Anzoátegui), donde vecinos realizaron un cacerolazo tras casi nueve horas sin suministro (El Tiempo); y en Ciudad Ojeda (Zulia), donde una explosión en la subestación Federación dejó sin energía a varios sectores (Noticia al Dia).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron seis eventos de fallas eléctricas, una disminución respecto a los nueve eventos del mes anterior (2026‑10). Esta reducción se refleja en la menor cantidad de interrupciones reportadas, aunque la gravedad de algunos incidentes siguió siendo alta.\n\nEl caso más crítico ocurrió en el municipio Táchira, en la localidad de La Concordia, donde una falla dejó sin suministro eléctrico a residentes y a instalaciones de salud durante más de 36 horas continuas (Diario La Nacion (Tachira)). Las áreas afectadas incluyeron la carrera 12, las calles 4 y 5, y la avenida Lucio Oquendo, impactando también al Hospital Central de San Cristóbal y sus laboratorios. Ante la falta de repuestos, los propios vecinos gestionaron la compra de los componentes necesarios en Cúcuta para restablecer el servicio.\n\nEn otras regiones se reportaron interrupciones de menor duración pero con repercusiones significativas. En Baruta, lluvias intensas provocaron averías en las líneas de distribución, dejando sin energía a varias urbanizaciones y comunidades populares desde la madrugada del 8 de noviembre (El Periodico de Monagas). En el estado Anzoátegui, los habitantes del sector Pueblo Nuevo Sur de El Tigre experimentaron un apagón de casi nueve horas el 2 de noviembre, lo que motivó un cacerolazo como forma de protesta (El Tiempo). En Zulia, una explosión en la subestación Federación del municipio Lagunillas dejó sin electricidad a diversos sectores de Ciudad Ojeda durante la noche del mismo día (Noticia al Dia). Además, una fluctuación eléctrica en los sistemas Tuy II y III de Baruta provocó la pérdida del servicio de agua en más de 40 zonas el 1 de noviembre (Runrun.es).\n\nEstos incidentes, aunque variados en extensión y causa, subrayan la necesidad de reforzar la infraestructura eléctrica y los protocolos de respuesta rápida para minimizar el impacto en la población y en los servicios esenciales.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/sin-categoria/dos-bajones-seguidos-usuarios-de-caracas-y-7-estados-del-pais-reportan-fallas-en-el-servicio-electrico/"
-    },
-    {
-      "nombre": "La Prensa de Monagas",
-      "link": "https://laprensademonagas.com/mujer-apunala-mortalmente-a-su-pareja-durante-un-apagon-en-carabobo/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -36,10 +28,6 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
-    },
-    {
-      "nombre": "Primicia (Bolivar)",
-      "link": "https://primicia.com.ve/guayana/ciudad/cuatro-apagones-seguidos-mantienen-a-oscuras-al-sector-las-amazonas/"
     },
     {
       "nombre": "Runrun.es",

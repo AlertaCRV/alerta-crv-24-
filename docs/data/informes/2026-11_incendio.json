@@ -3,15 +3,15 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-09T21:04:44.726146+00:00",
+  "generado": "2026-11-10T03:32:15.999506+00:00",
   "actualizado_hasta": "2026-11-09T02:42:40.008446+00:00",
-  "total_eventos": 8,
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 8
+    "actual": 7
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron ocho incidentes de incendio, una disminución notable respecto a los veinte eventos del mes anterior (2026-10). Esta reducción se observa pese a la persistencia de siniestros de alta gravedad en distintas regiones del país.\n\nEl incendio de mayor impacto en Táchira ocurrió en la sede de la Alcaldía del municipio Córdoba, ubicada en la localidad de Santa Ana. El siniestro, que se desarrolló el 5 de noviembre, consumió por completo los despachos de Talento Humano, Hacienda y Auditoría, provocando daños materiales significativos en la infraestructura y la pérdida de archivos, aunque no se reportaron heridos ni víctimas mortales (Noticia al Dia). Según el comandante del Cuerpo de Bomberos de San Cristóbal, la causa probable fue un sobrecalentamiento de un tramo de cableado mientras la edificación operaba con un generador autónomo (Diario La Nacion).\n\nEn el estado Bolívar, un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, cobró la vida de cuatro personas, entre ellas tres menores de edad, el 8 de noviembre (El Siglo). Las víctimas fueron identificadas como un niño de 9 años, dos adolescentes de 16 y 14 años y un adulto de 28 años. El reporte oficial del Sistema Nacional de Gestión de Riesgo confirmó la gravedad crítica del evento y la ausencia de supervivientes.\n\nOtros incidentes menores también se registraron durante el mismo período. En Zulia, una explosión seguida de incendio en la subestación eléctrica Federación dejó sin suministro eléctrico a varios sectores de Ciudad Ojeda y Lagunillas (El Impulso; La Verdad). Asimismo, se reportó una maniobra peligrosa de un trabajador de Corpoelec que utilizó botellas de refresco para apagar un transformador en llamas, generando alerta entre los expertos (El Pitazo). En la ciudad de Bolívar, las autoridades lograron controlar un incendio forestal cercano a la bomba de combustible Maipure, evitando mayores daños (Primicia).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete incendios en el territorio nacional, una disminución notable respecto a los veinte eventos reportados en octubre de 2026 (Datos del informe). Esta reducción se enmarca dentro de la categoría de incendios, que sigue siendo una de las principales emergencias monitoreadas por la Cruz Roja Venezolana.\n\nEl incendio de mayor relevancia en el estado Táchira ocurrió en la sede de la Alcaldía del municipio Córdoba, ubicada en la localidad de Santa Ana. Según Noticia al Dia, el siniestro se desató el viernes 5 de noviembre y afectó gravemente la infraestructura gubernamental, comprometiendo tres oficinas del recinto (Noticia al Dia). El comandante del Cuerpo de Bomberos de San Cristóbal confirmó que las áreas de Talento Humano, Hacienda y Auditoría fueron consumidas por las llamas, destruyéndose también la totalidad de los archivos documentales (Diario La Nacion). La severidad del evento fue catalogada como alta.\n\nEn el estado Bolívar, un incendio crítico se produjo en una vivienda del sector Zabaleta, en el municipio Sifontes, el domingo 8 de noviembre. El Siglo informó que el fuego cobró la vida de cuatro personas, entre ellas tres menores de edad, y dejó a un adulto como única sobreviviente (El Siglo). Las víctimas fueron identificadas como un niño de 9 años, dos adolescentes de 16 y 14 años, y un adulto de 28 años, según el reporte oficial del Sistema Nacional de Gestión de Riesgo (El Siglo). La magnitud del siniestro fue calificada como crítica debido al número de fallecidos y al daño estructural de la vivienda.\n\nOtros incidentes menores también se registraron en el período, como la explosión e incendio en la subestación eléctrica Federación que dejó sin suministro eléctrico a sectores de Ciudad Ojeda y Lagunillas, en el estado Zulia (El Impulso; La Verdad). Asimismo, se controló un incendio forestal cercano a la bomba de combustible Maipure, en la ciudad de Bolívar, sin reportarse víctimas (Primicia). Estos hechos, aunque de menor impacto humano, forman parte del panorama general de incendios del mes.",
   "fuentes": [
     {
       "nombre": "El Siglo (Aragua)",
@@ -32,10 +32,6 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
-    },
-    {
-      "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/gran-caracas-2/incendios-no-se-apagan-con-refresco-expertos-advierten-sobre-la-peligrosa-maniobra-usada-por-trabajador-de-corpoelec/"
     },
     {
       "nombre": "La Verdad (Zulia)",
