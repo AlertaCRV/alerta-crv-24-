@@ -2330,11 +2330,25 @@ def _es_anuncio_institucional_bomberos_sin_incendio_real(texto_norm, tipo="incen
 # falla (p.ej. "apagones prolongados") aparece varios parrafos antes, fuera
 # de esa ventana -- igual que la manifestacion pacifica y el boletin de
 # salud sin alarma.
+# Un "sin luz" que solo expresa un TEMOR ("temen quedarse sin luz") no es
+# evidencia de una falla ocurrida. Caso real (auditoria diaria, 10-11-2026):
+# "Temen quedarse sin luz por bote constante de aceite en un transformador"
+# (La Nacion, San Antonio del Tachira) -- vecinos piden a Corpoelec revisar
+# un transformador que gotea aceite, sin ningun corte; se publico como falla
+# electrica porque "sin luz" del titular contaba como evidencia fuerte. En
+# las 707 fuentes del corpus la frase solo aparece en esta nota.
+_TEMOR_QUEDARSE_SIN_SERVICIO_RE = re.compile(
+    r"\b(?:temen|teme|temor a|temor de|miedo a|miedo de|riesgo de)\s+"
+    r"(?:quedarse|quedar)\s+sin\s+(?:luz|electricidad|energia electrica|servicio electrico)\b"
+)
+
+
 def _es_anuncio_corpoelec_sin_falla(texto_norm):
     if not _contiene_palabra_clave(texto_norm, "corpoelec"):
         return False
+    texto_sin_temor = _TEMOR_QUEDARSE_SIN_SERVICIO_RE.sub(" ", texto_norm)
     fuerte = _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
-    return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+    return not any(_contiene_palabra_clave(texto_sin_temor, f) for f in fuerte)
 
 
 # Caso real (11-09-2026, PASADO_POR_FALLA_TECNICA): "Despliegue especial de
@@ -3353,6 +3367,35 @@ def _conteos_globales_ubicaciones():
     return _conteo_global_municipios, _conteo_global_parroquias
 
 
+# Muchos municipios llevan el nombre de una persona (Alberto Arvelo
+# Torrealba, Andres Eloy Blanco, Rafael Urdaneta...) y ese mismo nombre lo
+# llevan liceos, escuelas y hospitales de OTROS municipios. Caso real
+# (auditoria diaria, 10-11-2026): una intoxicacion escolar en el liceo Trino
+# Briseno de Barinas se publico con municipio "Alberto Arvelo Torrealba"
+# porque la nota recordaba un caso anterior en el "Liceo Alberto Arvelo
+# Torrealba", que esta en la parroquia Romulo Betancourt del municipio
+# Barinas. Si TODAS las apariciones del nombre van justo despues de una de
+# estas palabras, el nombre es el de la institucion, no el municipio.
+_PREFIJOS_NOMBRE_INSTITUCION = [
+    "liceo", "escuela", "colegio", "unidad educativa", "u e", "ue",
+    "escuela tecnica", "complejo educativo", "hospital", "ambulatorio",
+    "universidad", "instituto", "preescolar", "simoncito",
+]
+_PREFIJO_INSTITUCION_RE = re.compile(
+    r"\b(?:" + "|".join(re.escape(p) for p in _PREFIJOS_NOMBRE_INSTITUCION) + r")\s+$"
+)
+
+
+def _solo_como_nombre_de_institucion(texto_norm, nombre_norm):
+    apariciones = list(re.finditer(r"\b" + re.escape(nombre_norm) + r"\b", texto_norm))
+    if not apariciones:
+        return False
+    return all(
+        _PREFIJO_INSTITUCION_RE.search(texto_norm[max(0, m.start() - 40):m.start()])
+        for m in apariciones
+    )
+
+
 def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
     """Busca el nombre de un municipio mencionado directamente en el texto
     (sin la palabra 'municipio' delante). Descarta nombres muy cortos,
@@ -3384,6 +3427,8 @@ def _buscar_municipio_directo(texto_norm, detalle_estado, nombre_estado_norm):
         if normalizado == _NOMBRE_PAIS_NORM or normalizado in _nombres_estados_norm():
             continue
         if _contiene_palabra_clave(texto_norm, normalizado):
+            if _solo_como_nombre_de_institucion(texto_norm, normalizado):
+                continue
             encontrados.add(original)
             normalizados_encontrados.add(normalizado)
     if len(encontrados) == 1:

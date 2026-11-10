@@ -195,6 +195,26 @@ def _entrada_publicados(evento):
     }
 
 
+_RANGO_SEVERIDAD = {"sin_clasificar": 0, "bajo": 1, "medio": 2, "alto": 3, "critico": 4}
+
+
+def _es_actualizacion_relevante(previo, evento):
+    """True solo si el evento SUBIO de severidad o paso a confirmado.
+
+    Hasta el 10-11-2026 cualquier cambio (tambien una BAJA) republicaba el
+    evento, y como build_site.py reemplaza la entrada con la misma
+    clave_dedup, una nota posterior menos detallada borraba la alerta
+    original. Caso real (auditoria diaria, 10-11-2026):
+    salud_publica::Zulia::2026-11-09 (rabia, 5 muertes, "critico", 2
+    fuentes) quedo como "bajo" con una sola fuente (un resumen de El Impulso
+    sin las muertes)."""
+    rango_previo = _RANGO_SEVERIDAD.get(previo["severidad"], 0)
+    rango_nuevo = _RANGO_SEVERIDAD.get(evento["severidad"], 0)
+    if rango_nuevo > rango_previo:
+        return True
+    return bool(evento["confirmado"]) and not previo["confirmado"]
+
+
 def filtrar_nuevos(eventos, publicados):
     """Evita republicar el mismo evento (tipo+ubicacion+dia, o tipo+ubicacion
     dentro de VENTANA_HORAS_MISMO_EVENTO para tipos que no sean sismo/
@@ -228,7 +248,7 @@ def filtrar_nuevos(eventos, publicados):
             evento["clave_dedup"] = clave
             nuevos.append(evento)
             publicados[clave] = _entrada_publicados(evento)
-        elif previo["severidad"] != evento["severidad"] or previo["confirmado"] != evento["confirmado"]:
+        elif _es_actualizacion_relevante(previo, evento):
             # Es una actualizacion del mismo evento (p.ej. subio de severidad),
             # no uno nuevo -- se marca con la misma clave para que
             # actualizar_datos_sitio() reemplace la entrada anterior en vez de
