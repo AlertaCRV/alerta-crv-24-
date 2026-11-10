@@ -9936,3 +9936,8 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 - **`incendio::Tachira::2026-11-07`** (alcaldía de Córdoba): el incendio fue el jueves 05-11 por la tarde y se publicó el sábado 07-11 (~40 h después, fuera de la ventana de 24 h); ya sofocado y sin lesionados, aunque destruyó tres oficinas y su archivo. Por recencia no debió alertar, pero por escala (edificio público, 25 bomberos, 3,5 h) es discutible. No se corrigió.
 - **Severidad de `inundacion::Carabobo::2026-11-08`** (medio): la fuente dice que los vecinos "se vieron obligados a desalojar sus viviendas", lo que según la guía de severidad ("evacuaciones") sería "alto". No se cambió sin confirmación.
 - Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo en la Base Aérea; ver 27-10).
+
+## Resolución 10-11-2026 de los pendientes de la auditoría del mismo día (decisión del usuario)
+
+- **`inundacion::Carabobo::2026-11-08`** (San Diego): severidad **medio → alto** por decisión del usuario ("se vieron obligados a desalojar sus viviendas" = evacuaciones, según la guía de severidad). Corregida en `noticias.json` (texto regenerado), ambos históricos y `publicados.json`; `estadisticas.json` regenerado.
+- **`incendio::Tachira::2026-11-06/07`** (alcaldía de Córdoba): el usuario decidió retirarla, pero al aplicar la decisión se vio que la entrada del 10-11 era imprecisa: la alerta se publicó por **primera vez el 06-11 08:35 UTC, unas 10 h después del incendio** (y luego tuvo 3 actualizaciones, la última el 07-11). Las "~40 h" correspondían solo a esa última actualización. Retiro **en espera de que el usuario lo reconfirme** con este dato corregido; no se tocó.

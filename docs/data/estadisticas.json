@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-10T02:01:00.858901+00:00",
+  "actualizado": "2026-11-10T02:09:28.589799+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-09T19:59:59+00:00"
@@ -185,12 +185,12 @@
       "total": 21,
       "confirmados": 2,
       "por_severidad": {
-        "alto": 3,
+        "alto": 4,
         "bajo": 4,
-        "medio": 9,
+        "medio": 8,
         "critico": 5
       },
-      "indice_gravedad": 2.43,
+      "indice_gravedad": 2.48,
       "severidad_mapa": "medio"
     },
     {
@@ -572,9 +572,9 @@
     }
   },
   "por_severidad": {
-    "alto": 141,
+    "alto": 142,
     "critico": 82,
-    "medio": 216,
+    "medio": 215,
     "bajo": 160,
     "sin_clasificar": 27
   },
