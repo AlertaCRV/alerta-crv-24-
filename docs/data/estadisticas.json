@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-11-09T21:03:09.096237+00:00",
+  "actualizado": "2026-11-10T02:01:00.858901+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-09T19:59:59+00:00"
   },
-  "total_eventos": 628,
+  "total_eventos": 626,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 94,
-    "infraestructura_electrica": 58,
-    "deslizamiento": 45,
+    "infraestructura_electrica": 57,
+    "deslizamiento": 44,
     "colapso_estructural": 5,
     "orden_publico": 210,
     "salud_publica": 37,
@@ -30,14 +30,14 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 103,
+      "total": 102,
       "confirmados": 17,
       "por_severidad": {
         "alto": 19,
         "medio": 31,
         "bajo": 31,
         "critico": 15,
-        "sin_clasificar": 7
+        "sin_clasificar": 6
       },
       "indice_gravedad": 2.19,
       "severidad_mapa": "medio"
@@ -154,28 +154,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 24,
+      "total": 25,
       "confirmados": 3,
       "por_severidad": {
         "alto": 3,
         "medio": 8,
         "critico": 5,
-        "bajo": 8
+        "bajo": 8,
+        "sin_clasificar": 1
       },
       "indice_gravedad": 2.21,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Carabobo",
-      "total": 22,
-      "confirmados": 2,
-      "por_severidad": {
-        "alto": 4,
-        "bajo": 4,
-        "medio": 9,
-        "critico": 5
-      },
-      "indice_gravedad": 2.45,
       "severidad_mapa": "medio"
     },
     {
@@ -190,6 +178,19 @@
         "sin_clasificar": 2
       },
       "indice_gravedad": 2.25,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Carabobo",
+      "total": 21,
+      "confirmados": 2,
+      "por_severidad": {
+        "alto": 3,
+        "bajo": 4,
+        "medio": 9,
+        "critico": 5
+      },
+      "indice_gravedad": 2.43,
       "severidad_mapa": "medio"
     },
     {
@@ -325,14 +326,14 @@
     },
     {
       "estado": "Amazonas",
-      "total": 5,
+      "total": 4,
       "confirmados": 1,
       "por_severidad": {
         "critico": 3,
-        "medio": 2
+        "medio": 1
       },
-      "indice_gravedad": 3.2,
-      "severidad_mapa": "alto"
+      "indice_gravedad": 3.5,
+      "severidad_mapa": "critico"
     },
     {
       "estado": "Delta Amacuro",
@@ -355,7 +356,7 @@
       "vialidad": 2,
       "incendio": 2,
       "accidente_transporte": 1,
-      "deslizamiento": 2
+      "deslizamiento": 1
     },
     "Lara": {
       "inundacion": 6,
@@ -391,7 +392,7 @@
       "orden_publico": 33,
       "incendio": 20,
       "vialidad": 7,
-      "infraestructura_electrica": 10,
+      "infraestructura_electrica": 9,
       "colapso_estructural": 1,
       "sismo": 1,
       "emergencia_metro": 2,
@@ -466,7 +467,7 @@
     },
     "Miranda": {
       "incendio": 5,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
@@ -567,14 +568,13 @@
     "Amazonas": {
       "salud_publica": 1,
       "orden_publico": 1,
-      "accidente_transporte": 2,
-      "infraestructura_electrica": 1
+      "accidente_transporte": 2
     }
   },
   "por_severidad": {
-    "alto": 142,
+    "alto": 141,
     "critico": 82,
-    "medio": 217,
+    "medio": 216,
     "bajo": 160,
     "sin_clasificar": 27
   },
@@ -597,14 +597,14 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 11,
-      "2026-11": 9
+      "2026-11": 8
     },
     "deslizamiento": {
       "2026-07": 3,
       "2026-08": 18,
       "2026-09": 9,
       "2026-10": 10,
-      "2026-11": 5
+      "2026-11": 4
     },
     "colapso_estructural": {
       "2026-07": 1,

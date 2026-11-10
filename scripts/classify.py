@@ -372,7 +372,12 @@ LISTA_NEGRA_POR_ESTADO = {
     # "racionamiento" bastaba para generar una alerta. Se verifico contra
     # las 168 fuentes de data/historico_fuentes_texto.jsonl que la frase es
     # exclusiva de este articulo.
-    "Amazonas": ["unicos territorios sin racionamiento"],
+    # Caso real (08-11-2026): "Cuatro apagones seguidos mantienen a oscuras
+    # al sector Las Amazonas" (Primicia, Ciudad Guayana, Bolivar) se publico
+    # como falla electrica en Amazonas. El estado nunca lleva articulo
+    # plural ("las"); "Las Amazonas" es un sector/barrio. Unica aparicion en
+    # las 627 fuentes de data/historico_fuentes_texto.jsonl.
+    "Amazonas": ["unicos territorios sin racionamiento", "las amazonas"],
     # Caso real (18-08-2026, PASADO_POR_FALLA_TECNICA): "Plan Vamos con
     # Sorgo... productores ya contabilizan mas de 2.300 hectareas... en el
     # estado Guarico, con la proyeccion inmediata de alcanzar las 2.500
@@ -2794,6 +2799,13 @@ def _ventana_sin_evidencia_local_especifica(ventana):
 _ESTADOS_MUNICIPIO_HOMONIMO_EXCLUSIVO = {"Barinas", "Falcon", "Trujillo"}
 
 
+def _contar_menciones(texto_norm, frases):
+    return sum(
+        len(re.findall(r"\b" + re.escape(_normalizar(f)) + r"\b", texto_norm))
+        for f in frases
+    )
+
+
 def _detectar_ubicacion_texto_plano(texto, estados):
     texto_norm = _normalizar(texto)
     palabras_tipo = [p for lista in load_keywords()["tipos"].values() for p in lista]
@@ -2862,7 +2874,15 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                     # que es ademas el evento que el articulo SI describe).
                     if not any(_contiene_palabra_clave(texto_norm, p) for p in palabras_tipo):
                         break
-                    resultado.append((nombre_estado, None))
+                    # Excepcion (08-11-2026): "Lluvias dejan a sectores de
+                    # Baruta sin electricidad" nombra Baruta 5 veces (titular
+                    # incluido) y Caracas una sola, como "Gran Caracas"; se
+                    # publico en Distrito Capital. Si el municipio remapeado
+                    # domina el texto, es el lugar del hecho.
+                    if _contar_menciones(texto_norm, [frase_negra]) > _contar_menciones(texto_norm, candidatos):
+                        resultado.append((estado_real, None))
+                    else:
+                        resultado.append((nombre_estado, None))
                     break
                 resultado.append((estado_real, ventana))
                 break
@@ -3223,11 +3243,16 @@ _NOMBRE_PAIS_NORM = "venezuela"
 #   generico en coberturas de protestas ("la toma de los portones", "la
 #   toma anterior") -- las 3 apariciones de la frase en el corpus tampoco
 #   describen un hecho en esa parroquia.
+# - "comunidad" (Parroquia Comunidad, Municipio Autonomo Maroa, Amazonas)
+#   es un sustantivo comun en casi cualquier nota ("la comunidad hace un
+#   llamado") -- caso real 08-11-2026: alerta publicada con parroquia
+#   "Comunidad" sin relacion con el lugar. Ninguna fuente del corpus dice
+#   "parroquia Comunidad".
 # Se excluyen solo de la busqueda DIRECTA (sin el calificador
 # "parroquia" delante) -- una mencion real y explicita ("parroquia La
 # Luz"/"parroquia La Toma") se evalua antes, via _PARROQUIA_RE, y no usa
 # esta lista.
-_NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO = {"la luz", "la toma"}
+_NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO = {"la luz", "la toma", "comunidad"}
 
 # Mismo problema que "Venezuela", pero con el nombre de OTRO estado: varios
 # municipios/parroquias son, por coincidencia, homonimos de un estado
