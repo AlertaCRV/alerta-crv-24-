@@ -9978,3 +9978,31 @@ Las corridas nocturnas de esos días no dejaron entradas en este roadmap (las in
 **Pendiente de decidir**:
 - `salud_publica::Tachira::2026-10-30` (crítico): el OVP denuncia la muerte de dos presos por "enfermedades graves" en Táchira y Bolívar. No es un brote ni una intoxicación; se parece más a una denuncia sobre la crisis sanitaria carcelaria (que el prompt de extracción excluye), pero son muertes recientes y concretas.
 - `salud_publica::Distrito Capital::2026-11-05`: el infectólogo Julio Castro advierte un repunte de influenza y covid en Caracas. Es una declaración basada en mediciones (excluida por el prompt), pero describe una situación sanitaria real y en curso.
+
+## Auditoría diaria 10-11-2026 (3.ª corrida): bajas de severidad que reemplazaban la alerta, municipio tomado del nombre de un liceo y "temen quedarse sin luz"
+
+**Hallazgos** (4 alertas nuevas del 10-11 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **`salud_publica::Zulia::2026-11-09`** (rabia): la alerta original del 09-11 era **crítica**, con 2 fuentes (La Prensa de Monagas y Yaracuy al Día: 5 muertes en 2026 y un plan especial de vacunación). El 10-11 un resumen de El Impulso, sin las muertes, la **republicó como "bajo"** con una sola fuente y reemplazó la original en `noticias.json`.
+   - **Causa raíz**: `filtrar_nuevos()` (`scripts/state.py`) republicaba con **cualquier** cambio de severidad, incluida una baja, aunque su docstring decía "salvo que haya subido de severidad". Como `build_site.py` reemplaza la entrada que tiene la misma `clave_dedup`, una nota posterior menos detallada borraba la alerta buena. En el histórico hay unas 40 bajas así dentro de 36 h (muchas pertenecen a eventos distintos, pero el patrón se repite).
+   - **Corrección**: `_es_actualizacion_relevante()` solo republica si la severidad **sube** (sin_clasificar < bajo < medio < alto < crítico) o si el evento pasa a **confirmado**. Una baja o la pérdida de la confirmación ya no publica nada y deja intacta la entrada de `publicados.json`.
+   - **Mismo bug, caso anterior**: `salud_publica::Barinas::2026-10-31` (intoxicación de 34 estudiantes en un liceo de Barinas) se publicó como **alto** con 2 fuentes (El Pitazo y Diario El Tiempo) y 7 h después quedó como "sin_clasificar" con una sola fuente. Se restauró la versión "alto".
+2. **`salud_publica::Barinas::2026-11-09`** (intoxicación de 18 personas en el liceo Trino Briseño, barrio Mi Jardín): se publicó con municipio **"Alberto Arvelo Torrealba"**, que sale de "Liceo Alberto Arvelo Torrealba", el plantel del caso del 30-10, que está en la parroquia Rómulo Betancourt del municipio Barinas. La alerta del 31-10 tenía el mismo error.
+   - **Causa raíz**: `_buscar_municipio_directo()` aceptaba el nombre de un municipio que lleva el nombre de una persona aunque solo apareciera como nombre de una institución.
+   - **Corrección**: `_solo_como_nombre_de_institucion()` descarta el nombre si **todas** sus apariciones van justo después de liceo/escuela/colegio/unidad educativa/U.E./hospital/ambulatorio/universidad/instituto/preescolar/simoncito. En las 707 fuentes del corpus solo cambian los 3 textos de este falso positivo; ninguna otra detección de municipio cambia.
+3. **`infraestructura_electrica::Tachira::2026-11-10`** (La Nación, "Temen quedarse sin luz por bote constante de aceite en un transformador", San Antonio del Táchira): vecinos piden a Corpoelec revisar un transformador que gotea aceite. No hubo ningún corte.
+   - **Causa raíz**: el tipo salió solo por "corpoelec". `_es_anuncio_corpoelec_sin_falla()` lo habría descartado, pero el "sin luz" de "temen quedarse sin luz" contaba como evidencia fuerte.
+   - **Corrección**: antes de buscar la evidencia fuerte se quitan las frases de temor (`_TEMOR_QUEDARSE_SIN_SERVICIO_RE`: "temen/temor a/miedo a/riesgo de quedarse sin luz/electricidad/…"). En el corpus la frase solo aparece en esta nota; "tras quedar sin servicio eléctrico" (un corte real en Anzoátegui) no se ve afectado.
+
+**Corrección retroactiva**:
+- Zulia: restaurada la versión crítica del 09-11 (2 fuentes y fechas originales) en `noticias.json` y `publicados.json`; retirado el registro "bajo" de El Impulso de ambos históricos.
+- Barinas 31-10: restaurada la versión "alto" (2 fuentes), con municipio null; retirado de ambos históricos el registro "sin_clasificar" de las 23:21.
+- Barinas 09-11: municipio → null en `noticias.json` (título y texto regenerados con `redactar_noticia`), en `historico_eventos.jsonl` y en `publicados.json`.
+- Táchira: alerta retirada de `noticias.json`, de ambos históricos y de `publicados.json`.
+- `estadisticas.json` regenerado. Los informes de noviembre se regeneran solos desde el histórico corregido.
+
+**Pruebas**: 2 casos nuevos en `tests/casos_clasificacion.jsonl` (liceo de Barinas y transformador de Táchira) y 2 tests en `tests/test_state.py` (una baja no republica; una subida o una confirmación sí). Los 4 fallan con el código anterior y pasan con el nuevo. Suite completa: 1173 pasan.
+
+**Revisado y sin cambios**: protesta de gremios y estudiantes de LUZ frente al rectorado (Maracaibo, 10-11): es una manifestación concreta y en curso, con lugar y fecha.
+
+**Pendiente de decidir**: la severidad de `salud_publica::Barinas::2026-11-09` ("sin_clasificar": 18 afectados por intoxicación, sin hospitalizaciones en el texto guardado) no se tocó.

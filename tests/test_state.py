@@ -160,3 +160,28 @@ def test_sismo_mismo_estado_muy_separado_en_el_tiempo_si_es_evento_nuevo():
     reporte_lejano = _evento("sismo", "Zulia", "2026-08-20T09:00:00+00:00", magnitud=6.0)
     nuevos = filtrar_nuevos([reporte_lejano], publicados)
     assert len(nuevos) == 1
+
+
+def test_baja_de_severidad_no_republica_ni_reemplaza_la_alerta():
+    # Caso real (auditoria diaria, 10-11-2026): salud_publica::Zulia (rabia,
+    # 5 muertes) se publico "critico" el 09-11; un resumen posterior de El
+    # Impulso, sin las muertes, la republico como "bajo" y reemplazo la
+    # alerta original en noticias.json.
+    publicados = {}
+    original = _evento("salud_publica", "Zulia", "2026-11-09T19:59:59+00:00", severidad="critico", confirmado=False)
+    assert len(filtrar_nuevos([original], publicados)) == 1
+    resumen = _evento("salud_publica", "Zulia", "2026-11-10T13:30:00+00:00", severidad="bajo", confirmado=False)
+    assert filtrar_nuevos([resumen], publicados) == []
+    assert publicados[original["clave_dedup"]]["severidad"] == "critico"
+
+
+def test_subida_de_severidad_o_confirmacion_si_republica():
+    publicados = {}
+    original = _evento("inundacion", "Carabobo", "2026-11-08T12:00:00+00:00", severidad="medio", confirmado=False)
+    filtrar_nuevos([original], publicados)
+    sube = _evento("inundacion", "Carabobo", "2026-11-08T15:00:00+00:00", severidad="alto", confirmado=False)
+    assert len(filtrar_nuevos([sube], publicados)) == 1
+    confirma = _evento("inundacion", "Carabobo", "2026-11-08T18:00:00+00:00", severidad="alto", confirmado=True)
+    assert len(filtrar_nuevos([confirma], publicados)) == 1
+    pierde_confirmacion = _evento("inundacion", "Carabobo", "2026-11-08T20:00:00+00:00", severidad="alto", confirmado=False)
+    assert filtrar_nuevos([pierde_confirmacion], publicados) == []
