@@ -139,7 +139,7 @@
     "ubicacion": "Carabobo",
     "municipio": "San Diego",
     "parroquia": null,
-    "severidad": "medio",
+    "severidad": "alto",
     "score": 0.55,
     "confirmado": false,
     "num_fuentes": 1,
@@ -158,7 +158,7 @@
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "inundacion::Carabobo::2026-11-08",
     "titulo": "Inundación en Municipio San Diego, Carabobo",
-    "texto": "📌 Inundación en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 08/11/2026, 12:07 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-vientos-la-guaira-carabobo/"
+    "texto": "📌 Inundación en Municipio San Diego, Carabobo\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio San Diego, Carabobo\n🕒 Hecho reportado: 08/11/2026, 12:07 p.m.\n🔎 Detectado por el sistema: 08/11/2026, 3:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/lluvias-vientos-la-guaira-carabobo/"
   },
   {
     "tipo": "deslizamiento",
