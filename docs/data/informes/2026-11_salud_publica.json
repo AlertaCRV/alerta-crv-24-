@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-09T02:46:38.838307+00:00",
-  "actualizado_hasta": "2026-11-06T01:48:13.360455+00:00",
-  "total_eventos": 4,
+  "generado": "2026-11-10T03:33:26.874274+00:00",
+  "actualizado_hasta": "2026-11-10T03:28:59.932418+00:00",
+  "total_eventos": 6,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 21,
-    "actual": 4
+    "actual": 6
   },
-  "narrativa": "Durante noviembre de 2026 el monitoreo de salud pública registró solo 4 eventos, una disminución notable respecto a los 21 del mes anterior (2026‑10).\\n\\nEl 4 de noviembre se reportó un nuevo caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, ubicado en el sector La Florida del municipio Tinaco, estado Cojedes (El Pitazo). Un total de 13 personas resultaron afectadas y fueron trasladadas de emergencia al Hospital Eugenio González Padilla (El Pitazo).\\n\\nLa misma situación fue cubierta por La Prensa de Monagas, que confirmó los 13 afectados y añadió que la emergencia obligó a evacuar a 631 personas del liceo (La Prensa de Monagas). Los efectivos del Cuerpo de Bomberos realizaron una inspección visual y técnica en las áreas comunes y aulas de clase para identificar la posible fuente o agente causal por inhalación tóxica (La Prensa de Monagas).\\n\\nSegún Portuguesa al Día, la operación de evacuación se activó a las 12:20 del mediodía bajo la coordinación del Teniente Rómulo Castro y el Jefe de la ZOEDAN Cojedes, Day Oliveros (Portuguesa al Día). Además, en el mismo periodo se observó un repunte de casos de COVID‑19 e influenza en Caracas, según el infectólogo Julio Castro, quien señaló un aumento de infecciones respiratorias en las últimas semanas (La Prensa de Lara).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron sólo 6 eventos de salud pública, una notable reducción frente a los 21 eventos del mes anterior (octubre 2026). Esta disminución refleja una menor incidencia de emergencias sanitarias reportadas durante el período.\n\nEl 4 de noviembre se produjo una presunta intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el sector La Florida del municipio Tinaco, estado Cojedes, que dejó 13 personas afectadas y requirió su traslado de urgencia al Hospital Eugenio González Padilla (El Pitazo). La misma situación obligó a evacuar a 631 personas del establecimiento, según informaron los cuerpos de bomberos y la autoridad sanitaria del estado (La Prensa de Monagas). Ambas fuentes coinciden en la gravedad alta del evento y en la movilización de los equipos de prevención y seguridad.\n\nEn el estado Zulia, las autoridades sanitarias activaron una jornada antirrábica especial tras la confirmación de cinco muertes humanas por rabia durante 2026 (Yaracuy al Dia). En respuesta, se administraron 176 969 dosis de vacunas antirrábicas a mascotas y animales de compañía, según informó La Prensa de Monagas, evidenciando la severidad crítica de la situación en la región (La Prensa de Monagas).\n\nA pesar de la gravedad de los incidentes en Cojedes y Zulia, el número total de eventos de salud pública en noviembre se redujo considerablemente respecto al mes anterior, pasando de 21 a 6, lo que indica una tendencia a la baja en la frecuencia de emergencias sanitarias durante este período.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -22,8 +22,20 @@
       "link": "https://laprensademonagas.com/presunta-intoxicacion-masiva-en-liceo-de-cojedes-deja-13-afectados-y-obliga-a-evacuar-a-631-personas/"
     },
     {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/zulia-despliega-jornada-antirrabica-especial-tras-muertes-por-la-enfermedad/"
+    },
+    {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/11/04/cojedes-evacuan-a-estudiantes-por-presunta-intoxicacion-masiva/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios/?utm_source=rss&utm_medium=rss&utm_campaign=en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/barinas-reporta-nueva-intoxicacion-escolar-se-contabilizan-18-personas-afectadas-en-el-liceo-trino-briseno/"
     },
     {
       "nombre": "La Prensa de Lara",

@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-10T02:24:10.294698+00:00",
+  "actualizado": "2026-11-10T03:30:14.903913+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-09T19:59:59+00:00"
+    "hasta": "2026-11-09T23:22:25+00:00"
   },
-  "total_eventos": 613,
+  "total_eventos": 614,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
@@ -12,7 +12,7 @@
     "deslizamiento": 43,
     "colapso_estructural": 5,
     "orden_publico": 207,
-    "salud_publica": 37,
+    "salud_publica": 38,
     "crisis_migratoria": 7,
     "incendio": 68,
     "vialidad": 29,
@@ -113,14 +113,14 @@
     },
     {
       "estado": "Barinas",
-      "total": 30,
+      "total": 31,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
         "medio": 12,
         "bajo": 8,
         "critico": 5,
-        "sin_clasificar": 1
+        "sin_clasificar": 2
       },
       "indice_gravedad": 2.21,
       "severidad_mapa": "medio"
@@ -415,7 +415,7 @@
       "vialidad": 4,
       "orden_publico": 9,
       "infraestructura_agua": 1,
-      "salud_publica": 3,
+      "salud_publica": 4,
       "infraestructura_electrica": 3
     },
     "Sucre": {
@@ -575,7 +575,7 @@
     "critico": 78,
     "medio": 212,
     "bajo": 157,
-    "sin_clasificar": 26
+    "sin_clasificar": 27
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -623,7 +623,7 @@
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 5
+      "2026-11": 6
     },
     "crisis_migratoria": {
       "2026-07": 4,
