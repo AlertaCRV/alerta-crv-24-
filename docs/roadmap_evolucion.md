@@ -9906,3 +9906,33 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 ## Ajuste web 29-10-2026: amarillo de severidad media más claro
 
 `docs/index.html`: `#f1c40f` → `#f7dc6f` en el mapa, la leyenda y las barras de "Distribución de severidad" (los tres usos del color).
+
+## Auditoría diaria 10-11-2026: estado por nombre de sector ("Las Amazonas"), Baruta publicado en Distrito Capital y deslizamiento inflado por una nota de inundación
+
+**Hallazgos** (12 alertas del 07 al 09-11 contrastadas con `historico_fuentes_texto.jsonl`):
+
+1. **`infraestructura_electrica::Amazonas::2026-11-08`** (Primicia, Bolívar): "Cuatro apagones seguidos mantienen a oscuras al sector Las Amazonas" es un sector de Ciudad Guayana (Bolívar). Además salió con parroquia "Comunidad" por la frase "La comunidad hace un llamado".
+   - **Causa raíz**: (a) "las amazonas" se tomaba como el estado; (b) la parroquia Comunidad (Autónomo Maroa, Amazonas) se aceptaba por búsqueda directa de un sustantivo común.
+   - **Corrección**: `LISTA_NEGRA_POR_ESTADO["Amazonas"]` incluye `"las amazonas"` (única aparición en las 627 fuentes del corpus) y `"comunidad"` se agrega a `_NOMBRES_GENERICOS_EXCLUIDOS_DIRECTO` (igual que "la luz"/"la toma"; una mención explícita "parroquia Comunidad" sigue funcionando vía `_PARROQUIA_RE`). Ninguna otra alerta del histórico tenía parroquia "Comunidad".
+2. **`infraestructura_electrica::Distrito Capital::2026-11-08`** (El Periódico de Monagas): cortes por lluvias en el municipio **Baruta** (Miranda). Baruta aparece 5 veces (titular incluido) y Caracas una sola, como "Gran Caracas".
+   - **Causa raíz**: el remapeo Baruta→Miranda ya existía, pero ni "Baruta" ni "Caracas" tenían una palabra clave eléctrica dentro de la ventana de proximidad; en ese caso el respaldo siempre devolvía el alias original (Distrito Capital), regla creada el 11-09-2026 para una mención incidental de "Plaza Bolívar de Chacao".
+   - **Corrección**: en ese respaldo, si la frase del municipio remapeado aparece **más veces** que todos los alias del estado juntos, se usa el estado real (`_contar_menciones` en `classify.py`). El caso del 11-09 (Chacao una vez) no cambia.
+3. **`deslizamiento::Carabobo::2026-11-08`** (San Diego): la alerta original (El Periódico de Monagas, severidad media) **es legítima**: el alcalde reportó "pequeños deslizamientos de tierra en el sector Magallanes y en la urbanización La Esmeralda". Pero una corrida posterior (09-11 02:42) la actualizó a severidad **alta** con otra fuente (La Prensa de Monagas) que solo describe la crecida del río La Cumaca, es decir, la inundación ya publicada el 08-11 (`inundacion::Carabobo::2026-11-08`).
+   - **Causa raíz**: la lista de `inundacion` en `config/keywords.yaml` no reconocía "anegó"/"anegaron"; la nota solo coincidía con "deslaves" del titular y se agrupó como deslizamiento.
+   - **Corrección**: `inundacion` incluye `anego`/`anegó`/`anegaron` (en el corpus solo aparecen en 5 inundaciones reales y en este caso). Se probó primero "se desbordó", pero la regresión lo rechazó: "la tensión se desbordó" (homicidio en Lara, 30-07) se volvía inundación.
+
+**Corrección retroactiva**:
+- Amazonas: retirada de `noticias.json`, `historico_eventos.jsonl`, `historico_fuentes_texto.jsonl` y `publicados.json`.
+- Baruta: ubicación → Miranda, municipio Baruta (parroquia null: la nota lista sectores de varias parroquias) en `noticias.json` (título/texto regenerados con `redactar_noticia`), ambos históricos y `publicados.json` (clave `infraestructura_electrica::Miranda::2026-11-08`).
+- Deslizamiento San Diego: restaurada la versión original (El Periódico de Monagas, medio, fechas originales); retirado el registro "alto" de La Prensa de Monagas de ambos históricos; `publicados.json` ajustado.
+- `estadisticas.json` regenerado con `build_dashboard.py`.
+- Los informes `2026-11_deslizamiento` y `2026-11_infraestructura_electrica` aún citan las dos fuentes retiradas; no se editaron a mano porque el informe del mes en curso se regenera solo una vez al día desde el histórico ya corregido (último: 09-11), y editarlos chocaría con la PR automática del bot.
+
+**Pruebas**: 4 casos nuevos en `tests/casos_clasificacion.jsonl` (3 reales + 1 sintético para "comunidad"); los 4 fallan con el código anterior y pasan con el nuevo. Suite completa: 1180 pasan.
+
+**Revisado y sin cambios**: salud pública Zulia (5 muertes por rabia en 2026 y plan especial activado el 09-11), tranca en Amana Abajo (Monagas), incendio en Tumeremo (4 fallecidos), deslizamiento en Antímano (3 menores fallecidos), 36 horas sin luz en La Concordia (laboratorios junto al Hospital Central), incendio de vegetación en Marhuanta, derrame en Valmore Rodríguez.
+
+**Pendiente de decidir**:
+- **`incendio::Tachira::2026-11-07`** (alcaldía de Córdoba): el incendio fue el jueves 05-11 por la tarde y se publicó el sábado 07-11 (~40 h después, fuera de la ventana de 24 h); ya sofocado y sin lesionados, aunque destruyó tres oficinas y su archivo. Por recencia no debió alertar, pero por escala (edificio público, 25 bomberos, 3,5 h) es discutible. No se corrigió.
+- **Severidad de `inundacion::Carabobo::2026-11-08`** (medio): la fuente dice que los vecinos "se vieron obligados a desalojar sus viviendas", lo que según la guía de severidad ("evacuaciones") sería "alto". No se cambió sin confirmación.
+- Sigue pendiente `orden_publico::Tachira::2026-10-24` (tiroteo en la Base Aérea; ver 27-10).
