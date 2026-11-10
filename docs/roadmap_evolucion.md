@@ -9942,3 +9942,39 @@ La gama azul original iba de oscuro (pocos eventos) a claro (muchos), al revés 
 - **`inundacion::Carabobo::2026-11-08`** (San Diego): severidad **medio → alto** por decisión del usuario ("se vieron obligados a desalojar sus viviendas" = evacuaciones, según la guía de severidad). Corregida en `noticias.json` (texto regenerado), ambos históricos y `publicados.json`; `estadisticas.json` regenerado.
 - **`incendio::Tachira::2026-11-06/07`** (alcaldía de Córdoba): el usuario decidió retirarla, pero al aplicar la decisión se vio que la entrada del 10-11 era imprecisa: la alerta se publicó por **primera vez el 06-11 08:35 UTC, unas 10 h después del incendio** (y luego tuvo 3 actualizaciones, la última el 07-11). Las "~40 h" correspondían solo a esa última actualización. Retiro **en espera de que el usuario lo reconfirme** con este dato corregido; no se tocó.
 - **Cierre (10-11-2026)**: con el dato corregido (primera publicación ~10 h después del incendio), el usuario decidió **no retirar** la alerta de la alcaldía de Córdoba. Caso cerrado; no volver a marcarlo como pendiente.
+
+## Auditoría 10-11-2026 (2.ª parte): 41 alertas del 29-10 al 06-11, sin auditoría documentada
+
+Las corridas nocturnas de esos días no dejaron entradas en este roadmap (las instrucciones piden no escribir nada si no hay errores), así que se revisaron las 41 alertas de nuevo contra `historico_fuentes_texto.jsonl`. Resultado: **11 retiradas, 2 corregidas, 2 pendientes de decidir y 26 sin cambios**.
+
+**Retiradas** (de `noticias.json` y de ambos históricos; sus claves ya no estaban en `publicados.json` por la retención de 3 días):
+1. `inundacion::Sucre::2026-10-28`: "Desbordamientos de aguas servidas impulsan plan de mantenimiento en Cumaná" es un anuncio de mantenimiento de cloacas, no una inundación.
+2. `infraestructura_electrica::Anzoategui::2026-10-30`: la nota trata del juicio a dos sacerdotes; "la audiencia se extendió por un apagón en el Palacio de Justicia" es una mención de pasada.
+3. `orden_publico::Bolivar::2026-10-31`: describe el **fin** de la huelga de Minerven ("terminó con un acuerdo", turnos reanudados), que ya se había alertado el 28-10 (`orden_publico::Bolivar::2026-10-28`, se mantiene).
+4. `orden_publico::Lara::2026-11-01`: la muerte del hincha ocurrió en el estadio La Carolina de **Barinas**; "Lara" sale del equipo "Deportivo Lara". Duplica `orden_publico::Barinas::2026-11-02`, que se mantiene.
+5. `infraestructura_agua::Merida::2026-11-02`: declaración de un dirigente político ("Mérida en crisis mientras el gobierno decreta la Navidad"), sin incidente concreto.
+6. `deslizamiento::Falcon::2026-11-02`: "tras el deslizamiento en la moto" es el derrape de un motorizado en Coro; además el municipio "Colina" salía del apellido del conductor ("Polanco Colina").
+7. `incendio::Carabobo::2026-11-03`: nota de El Pitazo sobre un video viral (un trabajador apaga un transformador con refresco en Valle de la Pascua) y la opinión de expertos; no es un incendio en Carabobo.
+8. `infraestructura_electrica::Carabobo::2026-11-03`: homicidio ("mujer apuñala a su pareja durante un apagón en Guacara"), publicado como falla eléctrica crítica. Una versión anterior del mismo registro incluía además la nota de El Pitazo sobre dos bajones de voltaje de segundos en Caracas y 7 estados; no se consideró una emergencia propia de Carabobo.
+9. `vialidad::Distrito Capital::2026-11-04`: es el mismo choque de autobús y camión en la carretera Cagua-Villa de Cura ya publicado como `vialidad::Aragua::2026-11-03` (se mantiene); "Caracas" sale de "cubría la ruta Caracas-San Juan de los Morros".
+10. `orden_publico::Falcon::2026-11-05`: nota nacional sobre el reclamo de aguinaldos; "Falcón" solo aparece en el hashtag de un tuit incrustado que llama a "unir las luchas".
+11. `inundacion::Lara::2026-11-05`: goteras en el techo de un preescolar de Barquisimeto (problema de filtraciones de larga data), no una inundación; mismo criterio que la iglesia de Ospino (filtraciones ≠ deslizamiento).
+
+**Corregidas**:
+- `orden_publico::Distrito Capital::2026-10-29` → **Portuguesa**: la protesta de trabajadores fue en la redoma de Mamanico (Acarigua); "Caracas" solo aparece en una asamblea futura. Nueva clave `orden_publico::Portuguesa::2026-10-29`.
+- `ataque_armado::Apure::2026-10-31`: municipio "San Fernando" → null. San Fernando es adonde se enviaron 9 de los cuerpos, no el lugar del bombardeo.
+
+**Cambios de código** (solo los que se pudieron verificar contra el corpus completo):
+- `_CALIFICADORES_DIRECCIONALES_CARACAS` incluye `("ruta",)`, igual que "sentido"/"vía"/"hacia" Caracas ("ruta Caracas-" solo aparece en este caso).
+- `_CONTEXTO_CONFLICTIVO_POR_TIPO["deslizamiento"]` incluye "deslizamiento en/de la moto" y "en/de su moto". La frase completa solo aparece en este caso; "moto" sola aparece en 3 deslizamientos reales.
+- **No** se bloqueó "deportivo lara": la otra aparición del corpus (02-08-2026) es un disturbio real en Barquisimeto cuya única señal de estado es justamente esa frase. Limitación conocida: un nombre de equipo a veces coincide con el estado real del hecho.
+- `tests/test_classify_regresion_historico.py`: una limitación conocida ahora puede apuntar a un solo evento con la clave `tipo::ubicacion::fuente::AAAA-MM-DD`. Se usa para la protesta de Acarigua (el texto no nombra Portuguesa y aislado resuelve a Distrito Capital), sin dejar de vigilar los otros ~9 casos que comparten el id sin fecha.
+- 2 casos nuevos en `tests/casos_clasificacion.jsonl` (derrape en moto y ruta Caracas): fallan con el código anterior y pasan con el nuevo.
+
+**Patrón sin arreglo automático (errores de juicio de la IA)**: 6 de las 11 retiradas (2, 3, 5, 7, 8, 10) tenían el tipo bien detectado por palabra clave real, pero la verificación de Groq aprobó notas cuyo tema principal no es un incidente en curso (juicio, homicidio, declaración, fin de una huelga, video viral, reclamo nacional). En las de extracción (`infraestructura_electrica`), el tema `"otro"` está en `_TEMAS_EXTRACCION_APROBABLES`, lo que deja pasar menciones incidentales como el apagón del Palacio de Justicia o el apagón del homicidio. Quitar `"otro"` cambiaría la regla validada el 07-10 con 150 noticias de prueba, así que no se tocó sin decisión del usuario.
+
+**Informes**: los informes de noviembre se regeneran solos desde el histórico corregido. Los de octubre (`2026-10_inundacion`, `2026-10_infraestructura_electrica`, `2026-10_orden_publico`) son de un periodo cerrado y no se regeneran; seguirán citando las fuentes retiradas, igual que los casos ya listados por `detectar_inconsistencias.py` para agosto y septiembre.
+
+**Pendiente de decidir**:
+- `salud_publica::Tachira::2026-10-30` (crítico): el OVP denuncia la muerte de dos presos por "enfermedades graves" en Táchira y Bolívar. No es un brote ni una intoxicación; se parece más a una denuncia sobre la crisis sanitaria carcelaria (que el prompt de extracción excluye), pero son muertes recientes y concretas.
+- `salud_publica::Distrito Capital::2026-11-05`: el infectólogo Julio Castro advierte un repunte de influenza y covid en Caracas. Es una declaración basada en mediciones (excluida por el prompt), pero describe una situación sanitaria real y en curso.
