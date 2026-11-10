@@ -107,11 +107,20 @@ _LIMITACIONES_CONOCIDAS = {
         "Patilla, sobre un rescate real en Caracas) SI nombra La Guaira "
         "como estado afectado por la misma onda tropical."
     ),
+    "orden_publico::Portuguesa::Portuguesa Reporta::2026-10-29": (
+        "Protesta en Acarigua (29-10-2026) reubicada a mano en la auditoria "
+        "del 10-11-2026: el texto no nombra el estado Portuguesa (solo la "
+        "ciudad) y la unica mencion de estado es una asamblea FUTURA 'en "
+        "Caracas'; aislada resuelve a Distrito Capital. Ver roadmap."
+    ),
 }
 
 
 def _con_marca_de_limitacion_conocida(caso):
-    razon = _LIMITACIONES_CONOCIDAS.get(caso["id"])
+    # Clave "tipo::ubicacion::fuente::AAAA-MM-DD" para marcar un solo evento
+    # cuando el id sin fecha lo comparten varios casos legitimos.
+    razon = (_LIMITACIONES_CONOCIDAS.get(caso["id"])
+             or _LIMITACIONES_CONOCIDAS.get(f"{caso['id']}::{caso['fecha_evento'][:10]}"))
     if razon is None:
         return pytest.param(caso, id=caso["id"])
     return pytest.param(caso, id=caso["id"], marks=pytest.mark.xfail(reason=razon, strict=False))
@@ -135,6 +144,7 @@ def _cargar_casos_historico():
                         "id": f"{evento['tipo']}::{evento['ubicacion']}::{fuente['nombre']}",
                         "tipo": evento["tipo"],
                         "ubicacion": evento["ubicacion"],
+                        "fecha_evento": evento["fecha_evento"],
                         "texto": fuente["texto"],
                     }
                 )

@@ -753,7 +753,14 @@ _CONTEXTO_CONFLICTIVO_POR_TIPO = {
                        "perro", "perra", "perros", "perras",
                        "perrito", "perrita", "perritos", "perritas",
                        "felino", "felina", "felinos", "felinas",
-                       "canino", "canina", "caninos", "caninas"],
+                       "canino", "canina", "caninos", "caninas",
+                       # Caso real (02-11-2026): "tras el deslizamiento en
+                       # la moto" (derrape de un motorizado en Coro) se
+                       # publico como deslizamiento de tierra critico. Frase
+                       # completa: "moto" sola aparece en 3 deslizamientos
+                       # reales del corpus.
+                       "deslizamiento en la moto", "deslizamiento de la moto",
+                       "deslizamiento en su moto", "deslizamiento de su moto"],
     # Caso real (29-07-2026): un articulo titulado "Hantavirus: Enfermedad
     # totalmente controlada en Venezuela" (una nota que desmiente rumores,
     # sin casos nuevos confirmados por MinSalud) disparaba tipo=salud_publica
@@ -2922,9 +2929,11 @@ _CALIFICADORES_SUBESTATALES_PLURAL = {"municipios", "parroquias"}
 # como referencia de sentido/direccion vial ("sentido Caracas", "rumbo a
 # Caracas"), no como la ubicacion real del suceso -- muy comun en reportes
 # de transito de cualquier estado, ya que "caracas" es alias de Distrito
-# Capital.
+# Capital. "ruta" (04-11-2026): "la unidad... cubria la ruta Caracas-San
+# Juan de los Morros" publico en Distrito Capital un choque ocurrido en la
+# carretera Cagua-Villa de Cura (Aragua).
 _CALIFICADORES_DIRECCIONALES_CARACAS = [
-    ("sentido",), ("via",), ("vía",), ("hacia",),
+    ("sentido",), ("via",), ("vía",), ("hacia",), ("ruta",),
     ("rumbo", "a"), ("direccion", "a"), ("dirección", "a"),
 ]
 
