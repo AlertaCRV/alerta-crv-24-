@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-10T03:30:14.903913+00:00",
+  "actualizado": "2026-11-10T18:52:46.817903+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-09T23:22:25+00:00"
+    "hasta": "2026-11-10T17:56:41+00:00"
   },
-  "total_eventos": 614,
+  "total_eventos": 617,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 53,
+    "infraestructura_electrica": 54,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 207,
-    "salud_publica": 38,
+    "orden_publico": 208,
+    "salud_publica": 39,
     "crisis_migratoria": 7,
     "incendio": 68,
     "vialidad": 29,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Zulia",
-      "total": 53,
-      "confirmados": 11,
+      "total": 55,
+      "confirmados": 12,
       "por_severidad": {
         "medio": 24,
         "critico": 7,
-        "bajo": 9,
+        "bajo": 11,
         "sin_clasificar": 1,
         "alto": 12
       },
-      "indice_gravedad": 2.33,
+      "indice_gravedad": 2.28,
       "severidad_mapa": "medio"
     },
     {
@@ -72,14 +72,14 @@
     },
     {
       "estado": "Tachira",
-      "total": 41,
+      "total": 42,
       "confirmados": 3,
       "por_severidad": {
         "alto": 14,
         "bajo": 6,
         "medio": 10,
         "critico": 9,
-        "sin_clasificar": 2
+        "sin_clasificar": 3
       },
       "indice_gravedad": 2.67,
       "severidad_mapa": "alto"
@@ -377,9 +377,9 @@
       "colapso_estructural": 1,
       "inundacion": 6,
       "sequia": 1,
-      "orden_publico": 18,
+      "orden_publico": 19,
       "sismo": 2,
-      "salud_publica": 3,
+      "salud_publica": 4,
       "ataque_armado": 2,
       "explosion": 1,
       "vialidad": 1,
@@ -448,7 +448,7 @@
       "orden_publico": 11,
       "inundacion": 5,
       "sismo": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "incendio": 8,
       "vialidad": 2,
       "motin_carcelario": 1,
@@ -574,8 +574,8 @@
     "alto": 140,
     "critico": 78,
     "medio": 212,
-    "bajo": 157,
-    "sin_clasificar": 27
+    "bajo": 159,
+    "sin_clasificar": 28
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -596,7 +596,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 6
+      "2026-11": 7
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -616,14 +616,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 8
+      "2026-11": 9
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 21,
-      "2026-11": 6
+      "2026-11": 7
     },
     "crisis_migratoria": {
       "2026-07": 4,

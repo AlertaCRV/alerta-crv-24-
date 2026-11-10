@@ -3,20 +3,16 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-08T01:55:29.784281+00:00",
-  "actualizado_hasta": "2026-11-05T21:27:34.746101+00:00",
+  "generado": "2026-11-10T18:54:22.285433+00:00",
+  "actualizado_hasta": "2026-11-10T18:51:43.904328+00:00",
   "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
-    "anterior": 78,
+    "anterior": 77,
     "actual": 9
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron 9 eventos de orden público, una disminución notable respecto a los 78 eventos del mes anterior (2026‑10). Esta reducción refleja una tendencia a la baja en la frecuencia de incidentes que afectan la seguridad ciudadana.\n\nEl caso más grave ocurrió en Barinas, donde un aficionado, Luis Rafael López, fue hallado sin vida en las inmediaciones del estadio Agustín Tovar “La Carolina” antes del partido entre Zamora FC B y Deportivo Lara, el 1 de noviembre. El encuentro tuvo que ser suspendido y los disturbios se originaron cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB) (Noticia al Dia (Zulia)). La Federación Venezolana de Fútbol también condenó la muerte y confirmó que el caso está bajo investigación (La Prensa de Lara).\n\nEn el estado Lara se reportó otro episodio de orden público de gravedad crítica, según informó La Prensa de Lara. Aunque los detalles específicos no fueron publicados en la fuente citada, la autoridad local señaló la existencia de alteraciones que requirieron la intervención de fuerzas de seguridad.\n\nDurante el mismo período se registraron protestas y manifestaciones en varios estados que también fueron clasificadas como eventos de orden público. En Carabobo, vecinos protagonizaron una ola de protestas frente a prolongados cortes eléctricos (El Impulso). En Anzoátegui, residentes de Villa Betania en Anaco protestaron pacíficamente contra la doble tanda de cortes eléctricos impuesta por Corpoelec (El Tiempo). En Bolívar, trabajadores de las industrias básicas bloquearon vías y puentes exigiendo un bono de utilidades (La Verdad de Monagas). Asimismo, en Falcón, habitantes de Chichiriviche y otras comunidades protestaron por fallas continuas en el suministro eléctrico (La Prensa de Lara).\n\nEn conjunto, los nueve eventos de noviembre, aunque menos numerosos que en octubre, incluyen incidentes de alta severidad en Barinas y Lara, así como diversas manifestaciones en otros estados, lo que subraya la necesidad de mantener la vigilancia y la respuesta coordinada de las autoridades para garantizar el orden público.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 9 eventos de orden público, una caída pronunciada frente a los 77 eventos contabilizados en el período anterior, octubre de 2026. Este descenso indica una notable reducción de incidentes en el ámbito de la seguridad ciudadana durante el último mes.\n\nEl único hecho calificado como crítico ocurrió en Barinas, donde disturbios surgidos durante un partido de la Liga Futve terminaron con el asesinato de un aficionado y la suspensión del encuentro. Según los testimonios difundidos en plataformas digitales, los incidentes se desencadenaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (Noticia al Dia (Zulia)).\n\nEsta disminución de eventos sugiere una tendencia a la baja en la tensión social durante noviembre, aunque las autoridades continúan vigilantes ante la posibilidad de rebrotes, particularmente en contextos deportivos o de manifestaciones que puedan escalar nuevamente.",
   "fuentes": [
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/deportes/fvf-condena-muerte-de-hincha/"
-    },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
@@ -30,12 +26,16 @@
       "link": "https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/"
     },
     {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/monagas/habitantes-de-amana-abajo-trancan-la-via-al-sur-para-exigir-asfaltado/"
+    },
+    {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
     },
     {
       "nombre": "El Pitazo",
-      "link": "https://elpitazo.net/economia/donde-estan-nuestros-aguinaldos-es-la-pregunta-que-hacen-los-trabajadores-a-delcy-rodriguez/"
+      "link": "https://elpitazo.net/occidente-2/en-la-universidad-del-zulia-protestan-contra-los-bajos-salarios-donde-esta-el-dinero-senora-delcy-rodriguez/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
@@ -44,6 +44,10 @@
     {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/sindicatos-y-gremios-de-luz-exigen-restitucion-de-beneficios-laborales-y-aguinaldos-dignos/"
     },
     {
       "nombre": "La Verdad de Monagas",
