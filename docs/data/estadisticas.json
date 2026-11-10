@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-10T23:12:50.584309+00:00",
+  "actualizado": "2026-11-10T23:53:44.406432+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-10T17:56:41+00:00"
+    "hasta": "2026-11-10T20:29:06+00:00"
   },
-  "total_eventos": 614,
+  "total_eventos": 616,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 53,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 208,
+    "orden_publico": 210,
     "salud_publica": 37,
     "crisis_migratoria": 7,
     "incendio": 68,
@@ -113,16 +113,30 @@
     },
     {
       "estado": "Barinas",
-      "total": 30,
+      "total": 31,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
-        "medio": 12,
+        "medio": 13,
         "bajo": 8,
         "critico": 5,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.21,
+      "indice_gravedad": 2.2,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Miranda",
+      "total": 26,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 3,
+        "medio": 8,
+        "critico": 5,
+        "bajo": 9,
+        "sin_clasificar": 1
+      },
+      "indice_gravedad": 2.16,
       "severidad_mapa": "medio"
     },
     {
@@ -137,20 +151,6 @@
         "sin_clasificar": 3
       },
       "indice_gravedad": 2.05,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Miranda",
-      "total": 25,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 3,
-        "medio": 8,
-        "critico": 5,
-        "bajo": 8,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 2.21,
       "severidad_mapa": "medio"
     },
     {
@@ -413,7 +413,7 @@
       "deslizamiento": 4,
       "inundacion": 6,
       "vialidad": 4,
-      "orden_publico": 9,
+      "orden_publico": 10,
       "infraestructura_agua": 1,
       "salud_publica": 3,
       "infraestructura_electrica": 3
@@ -471,7 +471,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -573,8 +573,8 @@
   "por_severidad": {
     "alto": 140,
     "critico": 78,
-    "medio": 212,
-    "bajo": 158,
+    "medio": 213,
+    "bajo": 159,
     "sin_clasificar": 26
   },
   "serie_mensual_por_tipo": {
@@ -616,7 +616,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 9
+      "2026-11": 11
     },
     "salud_publica": {
       "2026-07": 1,
