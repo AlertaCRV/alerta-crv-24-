@@ -1,10 +1,36 @@
 [
   {
+    "tipo": "derrame_petrolero",
+    "ubicacion": "Falcon",
+    "municipio": "Miranda",
+    "parroquia": "Mitare",
+    "severidad": "critico",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/625166/denuncian-un-derrame-de-hidrocarburos-que-abarca-al-menos-34-km%c2%b2-del-golfete-de-coro/",
+        "fecha": "2026-11-11T00:45:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-11T00:45:21+00:00",
+    "fecha_evento_temprana": "2026-11-11T00:45:21+00:00",
+    "fecha_deteccion": "2026-11-11T03:14:55.551673+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "derrame_petrolero::Falcon::2026-11-11",
+    "titulo": "Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon",
+    "texto": "📌 Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Mitare, Municipio Miranda, Falcon\n🕒 Hecho reportado: 10/11/2026, 8:45 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 11:14 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/625166/denuncian-un-derrame-de-hidrocarburos-que-abarca-al-menos-34-km%c2%b2-del-golfete-de-coro/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Miranda",
     "municipio": null,
     "parroquia": null,
-    "severidad": "bajo",
+    "severidad": "medio",
     "score": 0.7,
     "confirmado": false,
     "num_fuentes": 1,
@@ -19,11 +45,63 @@
     "resumen_consolidado": null,
     "fecha_evento": "2026-11-10T19:14:11+00:00",
     "fecha_evento_temprana": "2026-11-10T19:14:11+00:00",
-    "fecha_deteccion": "2026-11-10T23:52:16.399160+00:00",
+    "fecha_deteccion": "2026-11-11T03:15:04.675216+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Miranda::2026-11-10",
     "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 10/11/2026, 3:14 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 7:52 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/mas-de-30-militares-presos-en-ramo-verde-inician-huelga-de-hambre/"
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 10/11/2026, 3:14 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 11:15 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/mas-de-30-militares-presos-en-ramo-verde-inician-huelga-de-hambre/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Barinas",
+    "municipio": "Barinas",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/11/corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas/?utm_source=rss&utm_medium=rss&utm_campaign=corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas",
+        "fecha": "2026-11-10T22:44:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-10T22:44:42+00:00",
+    "fecha_evento_temprana": "2026-11-10T22:44:42+00:00",
+    "fecha_deteccion": "2026-11-11T03:15:22.176828+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Barinas::2026-11-10",
+    "titulo": "Falla eléctrica en Municipio Barinas, Barinas",
+    "texto": "📌 Falla eléctrica en Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Barinas, Barinas\n🕒 Hecho reportado: 10/11/2026, 6:44 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 11:15 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/11/corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas/?utm_source=rss&utm_medium=rss&utm_campaign=corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Merida",
+    "municipio": "Libertador",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/11/se-registro-fuerte-fluctuacion.html",
+        "fecha": "2026-11-11T01:32:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-11T01:32:23+00:00",
+    "fecha_evento_temprana": "2026-11-11T01:32:23+00:00",
+    "fecha_deteccion": "2026-11-11T03:16:45.737089+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Merida::2026-11-11",
+    "titulo": "Falla eléctrica en Municipio Libertador, Merida",
+    "texto": "📌 Falla eléctrica en Municipio Libertador, Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Libertador, Merida\n🕒 Hecho reportado: 10/11/2026, 9:32 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 11:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/11/se-registro-fuerte-fluctuacion.html"
   },
   {
     "tipo": "orden_publico",

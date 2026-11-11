@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-10T18:54:22.285433+00:00",
-  "actualizado_hasta": "2026-11-10T18:51:43.904328+00:00",
-  "total_eventos": 9,
+  "generado": "2026-11-11T03:19:39.673903+00:00",
+  "actualizado_hasta": "2026-11-11T03:15:04.675216+00:00",
+  "total_eventos": 12,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 9
+    "actual": 12
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron únicamente 9 eventos de orden público, una caída pronunciada frente a los 77 eventos contabilizados en el período anterior, octubre de 2026. Este descenso indica una notable reducción de incidentes en el ámbito de la seguridad ciudadana durante el último mes.\n\nEl único hecho calificado como crítico ocurrió en Barinas, donde disturbios surgidos durante un partido de la Liga Futve terminaron con el asesinato de un aficionado y la suspensión del encuentro. Según los testimonios difundidos en plataformas digitales, los incidentes se desencadenaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (Noticia al Dia (Zulia)).\n\nEsta disminución de eventos sugiere una tendencia a la baja en la tensión social durante noviembre, aunque las autoridades continúan vigilantes ante la posibilidad de rebrotes, particularmente en contextos deportivos o de manifestaciones que puedan escalar nuevamente.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron 12 eventos de orden público, una notable disminución frente a los 77 eventos del mes anterior (octubre de 2026). Esta reducción se observa en la variedad de manifestaciones y disturbios reportados a lo largo del país, aunque persisten incidentes con consecuencias graves.\n\nEl hecho más crítico ocurrió en Barinas, donde un aficionado fue asesinado durante un partido de la Liga Futve y el encuentro fue suspendido (Noticia al Dia). Según los testimonios difundidos en plataformas digitales, la violencia se desencadenó cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB).\n\nEn otros estados se registraron protestas mayormente pacíficas pero con reclamos de servicios y derechos. En Lara, jubilados y pensionados exigieron pensiones dignas, aumento salarial y mejoras en la seguridad social (El Impulso). En Carabobo, vecinos se movilizaron contra los prolongados cortes eléctricos (El Impulso). En Monagas, habitantes de Amana Abajo bloquearon la vía nacional para demandar asfaltado y un plan integral de bacheo (El Periodico de Monagas). En Bolívar, dos jubilados de industrias básicas iniciaron una huelga de hambre frente a la Corporación Venezolana de Guayana, reportándose deterioro de su salud tras 72 horas sin alimentos (El Pitazo). En el Zulia, estudiantes, profesores y trabajadores de la Universidad del Zulia protestaron el 10 de noviembre exigiendo salarios dignos y la restitución de aguinaldos (El Pitazo). En Anzoátegui, vecinos de Villa Betania en Anaco realizaron una protesta pacífica contra la doble tanda de cortes eléctricos aplicada por Corpoelec (El Tiempo).\n\nAdicionalmente, se reportaron incidentes de ocupación ilegal y nuevas protestas. En Barinas, residentes de la urbanización Brisas del Corozal denunciaron la ocupación ilegal de la entrada principal por grupos externos que iniciaron excavaciones sin autorización (La Noticia de Barinas). En Falcón, habitantes de Chichiriviche y otras zonas protestaron por fallas continuas en el suministro eléctrico (La Prensa de Lara). Finalmente, en el estado Miranda, 34 militares presos en la cárcel de Ramo Verde iniciaron una huelga de hambre para denunciar bloqueos judiciales en sus causas (La Verdad).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -42,12 +42,20 @@
       "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
     },
     {
+      "nombre": "La Noticia de Barinas",
+      "link": "https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal"
+    },
+    {
       "nombre": "La Prensa de Lara",
       "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
     },
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/sindicatos-y-gremios-de-luz-exigen-restitucion-de-beneficios-laborales-y-aguinaldos-dignos/"
+    },
+    {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/mas-de-30-militares-presos-en-ramo-verde-inician-huelga-de-hambre/"
     },
     {
       "nombre": "La Verdad de Monagas",

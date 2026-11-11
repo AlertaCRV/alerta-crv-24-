@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-10T03:33:40.056066+00:00",
+    "generado": "2026-11-11T03:20:20.986585+00:00",
     "total_eventos": 3
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-11-10T03:33:26.874274+00:00",
+    "generado": "2026-11-11T03:19:53.841770+00:00",
     "total_eventos": 6
   },
   {
@@ -20,15 +20,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-10T18:54:22.285433+00:00",
-    "total_eventos": 9
+    "generado": "2026-11-11T03:19:39.673903+00:00",
+    "total_eventos": 12
   },
   {
     "periodo": "2026-11",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-10T03:32:46.689335+00:00",
+    "generado": "2026-11-11T03:19:11.616405+00:00",
     "total_eventos": 1
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-10T03:32:15.999506+00:00",
+    "generado": "2026-11-11T03:18:39.159004+00:00",
     "total_eventos": 7
   },
   {
@@ -52,8 +52,8 @@
     "tipo": "general",
     "tipo_label": "Todas las categorías",
     "cerrado": false,
-    "generado": "2026-11-04T03:25:29.922885+00:00",
-    "total_eventos": 17
+    "generado": "2026-11-11T03:18:12.408414+00:00",
+    "total_eventos": 43
   },
   {
     "periodo": "2026-11",
@@ -68,8 +68,8 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-10T03:31:08.548828+00:00",
-    "total_eventos": 2
+    "generado": "2026-11-11T03:17:31.434960+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-10",

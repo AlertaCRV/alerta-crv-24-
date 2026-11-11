@@ -3,19 +3,23 @@
   "tipo": "derrame_petrolero",
   "tipo_label": "Derrame petrolero",
   "cerrado": false,
-  "generado": "2026-11-10T03:31:08.548828+00:00",
-  "actualizado_hasta": "2026-11-07T01:15:33.755369+00:00",
-  "total_eventos": 2,
+  "generado": "2026-11-11T03:17:31.434960+00:00",
+  "actualizado_hasta": "2026-11-11T03:14:55.551673+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 0,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron dos incidentes de derrames petroleros, contrastando con la ausencia total de eventos en el mes anterior (0 evento(s) registrados entonces vs. 2 en este período). Esta variación indica un aumento significativo en la ocurrencia de este tipo de emergencias para el periodo analizado.\n\nEl evento más relevante fue el derrame petrolero en el estado Zulia, específicamente en el municipio Valmore Rodríguez, donde se reportó que más de diez kilómetros de costa fueron afectados por el crudo (Reporte Confidencial (Nueva Esparta)). La magnitud del derrame fue calificada de alta severidad, impactando directamente el ecosistema marino de la zona.\n\nEl vertido provocó la contaminación de las redes de pesca y de las embarcaciones de los pescadores locales, generando pérdidas materiales y comprometiendo la actividad pesquera (Reporte Confidencial (Nueva Esparta)). Además, playas como Los Coquitos quedaron colapsadas bajo la capa de petróleo, evidenciando el daño visual y ambiental en la costa.\n\nYohan Flores, coordinador de la organización ambiental Azul Ambientalista, alertó sobre la gravedad de la situación y solicitó una respuesta inmediata de PDVSA y de las autoridades competentes para mitigar el impacto y atender la emergencia (Reporte Confidencial (Nueva Esparta)).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron tres derrames petroleros, contrastando con cero eventos en el mes anterior (2026‑10) (Comparación). Los incidentes se concentraron en los estados Zulia y Falcón, y presentaron severidades alta y crítica respectivamente.\n\nEn Zulia, un nuevo derrame de crudo afectó más de diez kilómetros de la costa del municipio Valmore Rodríguez, dañando el ecosistema marino, las redes y las embarcaciones de pescadores locales (Reporte Confidencial). Playas como Los Coquitos quedaron colapsadas bajo la capa de petróleo, y el coordinador de Azul Ambientalista, Yohan Flores, hizo un llamado urgente a PDVSA y a las autoridades para atender la grave situación (Reporte Confidencial).\n\nEn Falcón, el Movimiento Ecología de Voluntad Popular denunció el 10 de noviembre un derrame que cubrió al menos 3,4 km² del Golfete de Coro, una superficie equivalente a 476 canchas de fútbol (Runrun.es). Según Victoria González, representante del movimiento, la fuga provino de un oleoducto roto del sistema de transporte de crudo (Runrun.es). La magnitud del derrame se confirmó mediante imágenes satelitales que mostraron la extensa mancha de hidrocarburos sobre la superficie marina (Runrun.es).\n\nAmbos incidentes generaron daños materiales significativos y afectaron a comunidades pesqueras, evidenciando la necesidad de una respuesta rápida y coordinada por parte de las autoridades y de la industria petrolera para mitigar el impacto ambiental y socio‑económico (Reporte Confidencial; Runrun.es).",
   "fuentes": [
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/11/06/nuevo-derrame-de-crudo-zulia/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/625166/denuncian-un-derrame-de-hidrocarburos-que-abarca-al-menos-34-km%c2%b2-del-golfete-de-coro/"
     }
   ]
 }
