@@ -3,7 +3,7 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-11-10T03:32:46.689335+00:00",
+  "generado": "2026-11-11T03:19:11.616405+00:00",
   "actualizado_hasta": "2026-11-08T19:43:47.405998+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 20,
     "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de inundación, una notable reducción frente al período anterior en el que se contabilizaron veinte eventos (20 evento(s) registrados entonces vs. 1 en este período).\\n\\nEl único caso ocurrió en el estado Carabobo, donde fuertes lluvias acompañadas de vientos huracanados llegaron con la onda tropical 62, según informó el Instituto Nacional de Meteorología e Hidrología (INAMEH) (La Prensa de Lara). Las precipitaciones se concentraron durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre (La Prensa de Lara).\\n\\nComo consecuencia, se produjo el desbordamiento de ríos y la caída de árboles, generando diversos daños estructurales en la zona de Valencia y en la parroquia Catia La Mar, ambas en Carabobo (La Prensa de Lara).\\n\\nEstos hechos fueron los únicos registrados en el sector de emergencias de inundación para el período analizado, lo que permite a la Cruz Roja Venezolana focalizar sus recursos de respuesta y reforzar la vigilancia meteorológica en la región (La Prensa de Lara).",
+  "narrativa": "En noviembre de 2026 se registró una única incidencia de inundación, comparado con los 20 eventos registrados en el mes anterior (2026‑10). \n\nLa única inundación del período tuvo lugar en el estado Carabobo, catalogada con severidad alta (La Prensa de Lara). El Instituto Nacional de Meteorología e Hidrología (INAMEH) notificó la llegada de la onda tropical 62 al país, la cual trajo fuertes lluvias y vientos huracanados (La Prensa de Lara). Las precipitaciones intensas se produjeron durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre, provocando el desbordamiento de ríos en la zona (La Prensa de Lara). \n\nEl desbordamiento generó la caída de árboles y diversos daños estructurales, afectando principalmente a la ciudad de Valencia y a la parroquia Catia La Mar, así como a la zona de La Guaira (La Prensa de Lara).",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",

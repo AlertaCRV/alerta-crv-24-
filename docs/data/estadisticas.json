@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-10T23:53:44.406432+00:00",
+  "actualizado": "2026-11-11T03:16:47.948537+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-10T20:29:06+00:00"
+    "hasta": "2026-11-11T01:32:23+00:00"
   },
-  "total_eventos": 616,
+  "total_eventos": 620,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 53,
+    "infraestructura_electrica": 55,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 210,
+    "orden_publico": 211,
     "salud_publica": 37,
     "crisis_migratoria": 7,
     "incendio": 68,
@@ -22,7 +22,7 @@
     "explosion": 2,
     "infraestructura_agua": 27,
     "accidente_transporte": 4,
-    "derrame_petrolero": 6,
+    "derrame_petrolero": 7,
     "ataque_armado": 8,
     "emergencia_metro": 2,
     "motin_carcelario": 1
@@ -113,30 +113,30 @@
     },
     {
       "estado": "Barinas",
-      "total": 31,
+      "total": 32,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
         "medio": 13,
         "bajo": 8,
         "critico": 5,
-        "sin_clasificar": 1
+        "sin_clasificar": 2
       },
       "indice_gravedad": 2.2,
       "severidad_mapa": "medio"
     },
     {
       "estado": "Miranda",
-      "total": 26,
+      "total": 27,
       "confirmados": 3,
       "por_severidad": {
         "alto": 3,
-        "medio": 8,
+        "medio": 9,
         "critico": 5,
         "bajo": 9,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.16,
+      "indice_gravedad": 2.15,
       "severidad_mapa": "medio"
     },
     {
@@ -155,15 +155,15 @@
     },
     {
       "estado": "Falcon",
-      "total": 24,
+      "total": 25,
       "confirmados": 3,
       "por_severidad": {
         "alto": 6,
         "bajo": 7,
         "medio": 10,
-        "critico": 1
+        "critico": 2
       },
-      "indice_gravedad": 2.04,
+      "indice_gravedad": 2.12,
       "severidad_mapa": "medio"
     },
     {
@@ -182,12 +182,13 @@
     },
     {
       "estado": "Merida",
-      "total": 20,
+      "total": 21,
       "confirmados": 0,
       "por_severidad": {
         "alto": 11,
         "bajo": 5,
-        "medio": 4
+        "medio": 4,
+        "sin_clasificar": 1
       },
       "indice_gravedad": 2.3,
       "severidad_mapa": "medio"
@@ -416,7 +417,7 @@
       "orden_publico": 10,
       "infraestructura_agua": 1,
       "salud_publica": 3,
-      "infraestructura_electrica": 3
+      "infraestructura_electrica": 4
     },
     "Sucre": {
       "inundacion": 4,
@@ -471,7 +472,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 8,
+      "orden_publico": 9,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -485,7 +486,7 @@
       "crisis_migratoria": 2,
       "orden_publico": 13,
       "deslizamiento": 4,
-      "derrame_petrolero": 1,
+      "derrame_petrolero": 2,
       "infraestructura_agua": 1,
       "incendio": 2,
       "infraestructura_electrica": 1
@@ -546,7 +547,7 @@
       "orden_publico": 6,
       "inundacion": 3,
       "deslizamiento": 2,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "colapso_estructural": 1,
       "incendio": 3,
       "salud_publica": 1,
@@ -572,10 +573,10 @@
   },
   "por_severidad": {
     "alto": 140,
-    "critico": 78,
-    "medio": 213,
+    "critico": 79,
+    "medio": 214,
     "bajo": 159,
-    "sin_clasificar": 26
+    "sin_clasificar": 28
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -596,7 +597,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 6
+      "2026-11": 8
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -616,7 +617,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 11
+      "2026-11": 12
     },
     "salud_publica": {
       "2026-07": 1,
@@ -672,7 +673,7 @@
     "derrame_petrolero": {
       "2026-08": 2,
       "2026-09": 2,
-      "2026-11": 2
+      "2026-11": 3
     },
     "ataque_armado": {
       "2026-08": 1,
