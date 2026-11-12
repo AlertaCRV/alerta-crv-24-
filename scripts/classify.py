@@ -2243,8 +2243,32 @@ def _es_agua_restablecida_sin_falla_actual(texto_norm):
 _MARCADORES_FALLA_ELECTRICA_RESUELTA = ["finalmente fue instalado", "finalmente fue instalada"]
 
 
+# Ampliado (auditoria diaria, 12-11-2026): "CORPOELEC instalo banco de
+# transformadores en la comunidad Los Proceres en Barinas. Con el proposito
+# de restablecer el servicio de energia para mas de 360 habitantes..." (La
+# Noticia de Barinas) -- un anuncio institucional de un trabajo YA hecho. La
+# unica evidencia fuerte era "restablecer el servicio", que aqui es el
+# proposito de la obra, no una cuadrilla reparando una falla en curso. Se
+# descarta solo si Corpoelec es el sujeto de un verbo de obra en pasado y,
+# quitando "restablecer el servicio/suministro", no queda ninguna otra
+# evidencia de falla (un apagon real con "Corpoelec instalo..." al final
+# sigue publicandose). En los 680 enlaces del corpus el patron solo aparece
+# en esta nota.
+_CORPOELEC_OBRA_REALIZADA_RE = re.compile(
+    r"\bcorpoelec\)?\s+(?:instalo|instalaron|sustituyo|sustituyeron|reemplazo|reemplazaron)\b"
+)
+
+
 def _es_falla_electrica_ya_resuelta_sin_falla_actual(texto_norm):
-    return any(m in texto_norm for m in _MARCADORES_FALLA_ELECTRICA_RESUELTA)
+    if any(m in texto_norm for m in _MARCADORES_FALLA_ELECTRICA_RESUELTA):
+        return True
+    if _CORPOELEC_OBRA_REALIZADA_RE.search(texto_norm):
+        fuerte = [
+            f for f in _EVIDENCIA_FUERTE_POR_TIPO.get("infraestructura_electrica", [])
+            if not f.startswith("restablecer")
+        ]
+        return not any(_contiene_palabra_clave(texto_norm, f) for f in fuerte)
+    return False
 
 
 # Caso real (02-09-2026, PASADO_POR_FALLA_TECNICA): un decreto de la
@@ -2900,7 +2924,15 @@ def _detectar_ubicacion_texto_plano(texto, estados):
                     # incluido) y Caracas una sola, como "Gran Caracas"; se
                     # publico en Distrito Capital. Si el municipio remapeado
                     # domina el texto, es el lugar del hecho.
-                    if _contar_menciones(texto_norm, [frase_negra]) > _contar_menciones(texto_norm, candidatos):
+                    # Ampliado (12-11-2026): tambien cuentan las menciones
+                    # del estado real. "deflagracion... en el municipio
+                    # Baruta, estado Miranda... en Baruta, Miranda" nombra
+                    # Caracas solo como "Cuerpo de Bomberos de Caracas" (2
+                    # veces, igual que Baruta) y se publicaba una alerta
+                    # duplicada en Distrito Capital. En el caso del 11-09
+                    # (Chacao) el estado real no aparece y no cambia nada.
+                    menciones_reales = _contar_menciones(texto_norm, [frase_negra, estado_real])
+                    if menciones_reales > _contar_menciones(texto_norm, candidatos):
                         resultado.append((estado_real, None))
                     else:
                         resultado.append((nombre_estado, None))

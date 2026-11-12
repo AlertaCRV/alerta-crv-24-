@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-11-12T22:43:05.013989+00:00",
+  "actualizado": "2026-11-12T23:13:06.877388+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-12T19:00:00+00:00"
   },
-  "total_eventos": 630,
+  "total_eventos": 628,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
-    "infraestructura_electrica": 56,
+    "infraestructura_electrica": 55,
     "deslizamiento": 43,
     "colapso_estructural": 5,
     "orden_publico": 217,
     "salud_publica": 37,
     "crisis_migratoria": 7,
-    "incendio": 71,
+    "incendio": 70,
     "vialidad": 29,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 101,
+      "total": 100,
       "confirmados": 17,
       "por_severidad": {
         "alto": 18,
-        "medio": 32,
+        "medio": 31,
         "bajo": 30,
         "critico": 15,
         "sin_clasificar": 6
@@ -113,14 +113,14 @@
     },
     {
       "estado": "Barinas",
-      "total": 34,
+      "total": 33,
       "confirmados": 2,
       "por_severidad": {
         "alto": 4,
         "medio": 14,
         "bajo": 9,
         "critico": 5,
-        "sin_clasificar": 2
+        "sin_clasificar": 1
       },
       "indice_gravedad": 2.16,
       "severidad_mapa": "medio"
@@ -391,7 +391,7 @@
       "deslizamiento": 6,
       "inundacion": 18,
       "orden_publico": 32,
-      "incendio": 21,
+      "incendio": 20,
       "vialidad": 6,
       "infraestructura_electrica": 9,
       "colapso_estructural": 1,
@@ -417,7 +417,7 @@
       "orden_publico": 12,
       "infraestructura_agua": 1,
       "salud_publica": 3,
-      "infraestructura_electrica": 4
+      "infraestructura_electrica": 3
     },
     "Sucre": {
       "inundacion": 4,
@@ -574,9 +574,9 @@
   "por_severidad": {
     "alto": 142,
     "critico": 79,
-    "medio": 218,
+    "medio": 217,
     "bajo": 163,
-    "sin_clasificar": 28
+    "sin_clasificar": 27
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -597,7 +597,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 9
+      "2026-11": 8
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -637,7 +637,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 10
+      "2026-11": 9
     },
     "vialidad": {
       "2026-08": 10,
