@@ -10006,3 +10006,26 @@ Las corridas nocturnas de esos días no dejaron entradas en este roadmap (las in
 **Revisado y sin cambios**: protesta de gremios y estudiantes de LUZ frente al rectorado (Maracaibo, 10-11): es una manifestación concreta y en curso, con lugar y fecha.
 
 **Pendiente de decidir**: la severidad de `salud_publica::Barinas::2026-11-09` ("sin_clasificar": 18 afectados por intoxicación, sin hospitalizaciones en el texto guardado) no se tocó.
+
+## Auditoría diaria 12-11-2026: explosión de Baruta duplicada en Distrito Capital y anuncio de Corpoelec publicado como falla
+
+**Hallazgos** (15 alertas detectadas del 10-11 12:00 al 12-11, contrastadas con `historico_fuentes_texto.jsonl`; ninguna con `PASADO_POR_FALLA_TECNICA`):
+
+1. **`incendio::Distrito Capital::2026-11-11`** (La Prensa de Monagas): duplicado de `incendio::Miranda::2026-11-11` (explosión por fuga de gas en el edificio Caspan, Lomas de Las Mercedes). La misma fuente ya estaba en la alerta de Miranda. El texto dice "municipio Baruta, estado Miranda" y "en Baruta, Miranda"; Caracas solo sale en "Cuerpo de Bomberos de Caracas" (2 veces).
+   - **Causa raíz**: `_detectar_ubicacion_texto_plano()` encontraba la frase de lista negra "baruta" (remapeo → Miranda), pero sin palabra clave de tipo en la ventana. En ese respaldo, la regla del 10-11 compara las menciones del municipio (2) con los alias del estado (Caracas, 2). Como no eran **más**, se publicaba en Distrito Capital además de Miranda.
+   - **Corrección**: en ese respaldo también cuentan las menciones del estado real (`_contar_menciones(texto_norm, [frase_negra, estado_real])`): 2 Baruta + 3 Miranda > 2 Caracas → Miranda. El caso del 11-09 (Chacao, sin mención de Miranda) no cambia.
+2. **`infraestructura_electrica::Barinas::2026-11-10`** (La Noticia de Barinas, "CORPOELEC instaló banco de transformadores en la comunidad Los Próceres"): es un anuncio institucional de una obra ya hecha, no una falla en curso.
+   - **Causa raíz**: `_es_anuncio_corpoelec_sin_falla()` no la descartaba porque "con el propósito de **restablecer el servicio**" cuenta como evidencia fuerte (se agregó el 07-08 para cuadrillas que reparan una falla real).
+   - **Corrección**: `_es_falla_electrica_ya_resuelta_sin_falla_actual()` también descarta el tipo si Corpoelec es el sujeto de un verbo de obra en pasado (`_CORPOELEC_OBRA_REALIZADA_RE`: instaló/sustituyó/reemplazó, en singular o plural) y, quitando "restablecer el servicio/suministro", no queda otra evidencia de falla. Un control sintético con un apagón real y "Corpoelec instaló…" se sigue publicando.
+
+**Regresión**: se clasificaron los 680 enlaces de `historico_fuentes_texto.jsonl` con el código anterior y con el nuevo. Solo cambian los 2 textos de estos hallazgos. Un tercero (Maneiro, 25-08) varió de severidad entre corridas, pero da el mismo resultado con ambos códigos al repetirlo, así que no tiene relación con el cambio.
+
+**Corrección retroactiva**: las dos alertas se retiraron de `noticias.json`, `historico_eventos.jsonl`, `historico_fuentes_texto.jsonl` y `publicados.json`. La alerta `incendio::Miranda::2026-11-11` ya tenía las dos fuentes de la explosión y no se tocó. `estadisticas.json` se regeneró. Los informes de noviembre se regeneran solos desde el histórico corregido.
+
+**Pruebas**: 3 casos nuevos en `tests/casos_clasificacion.jsonl` (2 reales y 1 control sintético). Los 2 reales fallan con el código anterior y pasan con el nuevo; el control pasa con ambos. Suite completa: 1192 pasan.
+
+**Revisado y sin cambios**: protesta de LUZ (Maracaibo), marcha "El Guarazo" (Barquisimeto, 3 fuentes), apagón en la Costa Oriental del Lago (Zulia), fluctuación y apagón en Mérida, derrame en el Golfete de Coro (municipio Miranda, parroquia Mitare: correcto aunque la fuente diga "parroquia Miranda"), huelga de hambre en Ramo Verde (3 alertas del 10, 11 y 12-11: `orden_publico` queda fuera a propósito de la ventana de 36 h, ver 18-08), invasión en Brisas del Corozal y protesta por luz en Cruz Paredes (Barinas).
+
+**Pendiente de decidir**:
+- `orden_publico::Bolivar::2026-11-11` (La Verdad, "Trabajadores y jubilados acuerdan con la CVG el pago de $1.100…"): la nota informa el **acuerdo** que cerró la huelga de hambre y la vigilia, no una protesta en curso. Parece un falso positivo, pero cambiar la regla de `orden_publico` para los acuerdos que cierran un conflicto podría silenciar protestas reales que siguen, así que no se tocó.
+- `incendio::Tachira::2026-11-12` (fábrica de colchones en Seboruco): severidad **alto** sin heridos ni evacuados en el texto, solo "incendio estructural" en curso. Quizá debería ser "medio"; no se cambió.
