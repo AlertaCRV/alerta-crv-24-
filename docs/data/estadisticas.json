@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-12T16:55:37.192725+00:00",
+  "actualizado": "2026-11-12T22:43:05.013989+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-12T10:58:04+00:00"
+    "hasta": "2026-11-12T19:00:00+00:00"
   },
-  "total_eventos": 629,
+  "total_eventos": 630,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 56,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 216,
+    "orden_publico": 217,
     "salud_publica": 37,
     "crisis_migratoria": 7,
     "incendio": 71,
@@ -127,16 +127,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 29,
+      "total": 30,
       "confirmados": 4,
       "por_severidad": {
         "alto": 4,
         "medio": 10,
         "critico": 5,
-        "bajo": 9,
+        "bajo": 10,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.18,
+      "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
     },
     {
@@ -472,7 +472,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 10,
+      "orden_publico": 11,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -575,7 +575,7 @@
     "alto": 142,
     "critico": 79,
     "medio": 218,
-    "bajo": 162,
+    "bajo": 163,
     "sin_clasificar": 28
   },
   "serie_mensual_por_tipo": {
@@ -617,7 +617,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 17
+      "2026-11": 18
     },
     "salud_publica": {
       "2026-07": 1,

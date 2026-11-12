@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/",
+        "fecha": "2026-11-12T19:00:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-12T19:00:00+00:00",
+    "fecha_evento_temprana": "2026-11-12T19:00:00+00:00",
+    "fecha_deteccion": "2026-11-12T22:42:52.255636+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-11-12",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 12/11/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 12/11/2026, 6:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/"
+  },
+  {
     "tipo": "incendio",
     "ubicacion": "Tachira",
     "municipio": "Seboruco",
