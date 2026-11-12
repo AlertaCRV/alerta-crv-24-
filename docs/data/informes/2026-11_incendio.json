@@ -3,19 +3,27 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-11T03:18:39.159004+00:00",
-  "actualizado_hasta": "2026-11-09T02:42:40.008446+00:00",
-  "total_eventos": 7,
+  "generado": "2026-11-12T01:10:14.943303+00:00",
+  "actualizado_hasta": "2026-11-11T18:47:48.878069+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 7
+    "actual": 9
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete incendios, una disminución notable respecto a los veinte eventos del mes anterior (octubre de 2026). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales o víctimas, aunque la gravedad de algunos casos siguió siendo alta.\n\nEn Táchira, el viernes 5 de noviembre se produjo un incendio de gran magnitud en la sede de la Alcaldía del municipio Córdoba, ubicada en la localidad de Santa Ana del Táchira (Noticia al Dia (Zulia)). El siniestro comprometió una edificación de un solo nivel, destruyendo por completo los despachos de Talento Humano, Hacienda y Auditoría, así como la totalidad de los archivos documentales almacenados en esas oficinas (Diario La Nacion (Tachira)). No se reportaron heridos ni víctimas mortales en este incidente (Noticia al Dia (Zulia)).\n\nEn Bolívar, el domingo 8 de noviembre un incendio estructural en una vivienda del sector Zabaleta, en el municipio Sifontes de Tumeremo, cobró la vida de cuatro personas, entre ellas tres menores de edad (El Siglo (Aragua)). Las víctimas fueron identificadas como un niño de 9 años, dos adolescentes de 16 y 14 años, y un adulto de 28 años; el suceso fue calificado de crítico por las autoridades de gestión de riesgos (El Siglo (Aragua)).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron nueve eventos de incendio, una reducción notable respecto a los veinte registrados en octubre del mismo año (20 evento(s) registrados entonces vs. 9 en este período). La disminución se observa pese a la persistencia de incidentes de alta y crítica severidad en distintas regiones del país.\n\nEn Táchira, el viernes 5 de noviembre se produjo un incendio de gran magnitud en la sede de la Alcaldía del municipio Córdoba, ubicada en Santa Ana. El siniestro afectó tres oficinas del edificio gubernamental, provocando daños materiales significativos, aunque no se reportaron víctimas mortales ni heridos (Noticia al Dia). \n\nEn el estado Bolívar, el domingo 8 de noviembre se registró un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, en Tumeremo. El fuego cobró la vida de cuatro personas, entre ellas tres menores de edad, y fue calificado como de severidad crítica (El Siglo). \n\nEn Miranda, el miércoles 11 de noviembre una explosión provocada por la fuga de una tubería de gas directo en la urbanización Lomas de Las Mercedes, municipio Baruta, dejó al menos una persona con quemaduras y causó daños materiales en dos apartamentos del complejo habitacional (El Pitazo).",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/sucesos/caracas-l-explosion-por-fuga-de-gas-en-las-mercedes-deja-una-persona-herida-y-dos-apartamentos-afectados/"
+    },
     {
       "nombre": "El Siglo (Aragua)",
       "link": "https://elsiglo.com.ve/muertas-cuatro-personas-tras-incendio-en-una-vivienda-en-tumeremo/"
+    },
+    {
+      "nombre": "La Prensa de Monagas",
+      "link": "https://laprensademonagas.com/explosion-por-fuga-de-gas-deja-una-mujer-herida-y-danos-en-dos-apartamentos-en-miranda/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
