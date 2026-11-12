@@ -3,19 +3,23 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-11T03:19:39.673903+00:00",
-  "actualizado_hasta": "2026-11-11T03:15:04.675216+00:00",
-  "total_eventos": 12,
+  "generado": "2026-11-12T01:11:14.440426+00:00",
+  "actualizado_hasta": "2026-11-12T01:07:18.556002+00:00",
+  "total_eventos": 17,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 12
+    "actual": 17
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron 12 eventos de orden público, una notable disminución frente a los 77 eventos del mes anterior (octubre de 2026). Esta reducción se observa en la variedad de manifestaciones y disturbios reportados a lo largo del país, aunque persisten incidentes con consecuencias graves.\n\nEl hecho más crítico ocurrió en Barinas, donde un aficionado fue asesinado durante un partido de la Liga Futve y el encuentro fue suspendido (Noticia al Dia). Según los testimonios difundidos en plataformas digitales, la violencia se desencadenó cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB).\n\nEn otros estados se registraron protestas mayormente pacíficas pero con reclamos de servicios y derechos. En Lara, jubilados y pensionados exigieron pensiones dignas, aumento salarial y mejoras en la seguridad social (El Impulso). En Carabobo, vecinos se movilizaron contra los prolongados cortes eléctricos (El Impulso). En Monagas, habitantes de Amana Abajo bloquearon la vía nacional para demandar asfaltado y un plan integral de bacheo (El Periodico de Monagas). En Bolívar, dos jubilados de industrias básicas iniciaron una huelga de hambre frente a la Corporación Venezolana de Guayana, reportándose deterioro de su salud tras 72 horas sin alimentos (El Pitazo). En el Zulia, estudiantes, profesores y trabajadores de la Universidad del Zulia protestaron el 10 de noviembre exigiendo salarios dignos y la restitución de aguinaldos (El Pitazo). En Anzoátegui, vecinos de Villa Betania en Anaco realizaron una protesta pacífica contra la doble tanda de cortes eléctricos aplicada por Corpoelec (El Tiempo).\n\nAdicionalmente, se reportaron incidentes de ocupación ilegal y nuevas protestas. En Barinas, residentes de la urbanización Brisas del Corozal denunciaron la ocupación ilegal de la entrada principal por grupos externos que iniciaron excavaciones sin autorización (La Noticia de Barinas). En Falcón, habitantes de Chichiriviche y otras zonas protestaron por fallas continuas en el suministro eléctrico (La Prensa de Lara). Finalmente, en el estado Miranda, 34 militares presos en la cárcel de Ramo Verde iniciaron una huelga de hambre para denunciar bloqueos judiciales en sus causas (La Verdad).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron 17 eventos de orden público, una disminución notable respecto a los 77 eventos del mes anterior (octubre de 2026). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales, heridos o víctimas fatales, aunque persisten manifestaciones y disturbios en varios estados del país.\n\nEl hecho más grave ocurrido en este período tuvo lugar en Barinas, donde un aficionado fue asesinado y el partido de la Liga Futve 2 fue suspendido tras disturbios provocados por miembros de la delegación visitante que vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB) (Noticia al Dia (Zulia)). La violencia se desencadenó cuando los inadaptados de la delegación cruzaron el perímetro de seguridad, lo que derivó en el fatal desenlace y la interrupción del encuentro deportivo.\n\nEn la misma ciudad de Barinas, el 11 de noviembre el alcalde del municipio Cruz Paredes, Henry Maldonado, exigió respuestas a Corpoelec por un colapso eléctrico que dejó sin suministro a varias familias del sector Cruz Blanca durante periodos prolongados (Diario La Nacion (Tachira)). Las protestas, descritas como pacíficas, denunciaron fallas severas en el servicio eléctrico, con algunas familias sin energía durante hasta cuatro días, situación que el alcalde calificó de crítica.\n\nOtros estados también registraron manifestaciones de orden público sin que se reportaran daños materiales graves. En Lara, jubilados y pensionados protestaron exigiendo pensiones dignas y aumentos salariales (El Impulso (Lara)); en Carabobo se observaron olas de protestas contra cortes eléctricos prolongados (El Impulso (Lara)); y en Monagas, habitantes de Amana Abajo bloquearon la vía nacional para exigir asfaltado y un plan de bacheo integral (El Periodico de Monagas). En Bolívar, una huelga de hambre de jubilados frente a la Corporación Venezolana de Guayana generó preocupación por el deterioro de su salud (El Pitazo); en la Universidad del Zulia se realizaron protestas contra bajos salarios y falta de presupuesto (El Pitazo); mientras que en Miranda, 34 militares iniciaron una huelga de hambre en el Centro Nacional de Procesados Militares de Ramo Verde, a la que se sumaron dos mujeres (El Pitazo). Finalmente, en Anzoátegui, vecinos de Villa Betania protestaron tras una doble tanda de cortes eléctricos de Corpoelec (El Tiempo (Anzoategui)).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/nacional/barinas-alcalde-de-cruz-paredes-exige-respuestas-a-corpoelec-ante-colapso-electrico-en-el-municipio/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -24,6 +28,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/11/avance-vente-lara-exige-elecciones-presidenciales-y-rescate-de-los-servicios-publicos-durante-protesta-el-guarazo-11nov/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -36,6 +44,14 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/occidente-2/en-la-universidad-del-zulia-protestan-contra-los-bajos-salarios-donde-esta-el-dinero-senora-delcy-rodriguez/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/dos-mujeres-se-suman-a-la-huelga-de-hambre-que-mantienen-34-militares-en-ramo-verde/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/marcha-el-guarazo-cordon-policial-barquisimeto/"
     },
     {
       "nombre": "El Tiempo (Anzoategui)",
@@ -58,8 +74,16 @@
       "link": "https://laverdad.com/mas-de-30-militares-presos-en-ramo-verde-inician-huelga-de-hambre/"
     },
     {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/trabajadores-y-jubilados-acuerdan-con-la-cvg-el-pago-de-1-100-dolares-fraccionados-por-utilidades/"
+    },
+    {
       "nombre": "La Verdad de Monagas",
       "link": "https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/momentos-de-tension-se-registraron-durante-protesta-en-lara-policia-impidio-el-paso-hacia-la-gobernacion/?utm_source=rss&utm_medium=rss&utm_campaign=momentos-de-tension-se-registraron-durante-protesta-en-lara-policia-impidio-el-paso-hacia-la-gobernacion"
     }
   ]
 }

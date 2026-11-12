@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-11T03:20:20.986585+00:00",
+    "generado": "2026-11-12T01:11:48.461948+00:00",
     "total_eventos": 3
   },
   {
@@ -12,7 +12,7 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-11-11T03:19:53.841770+00:00",
+    "generado": "2026-11-12T01:11:41.992845+00:00",
     "total_eventos": 6
   },
   {
@@ -20,15 +20,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-11T03:19:39.673903+00:00",
-    "total_eventos": 12
+    "generado": "2026-11-12T01:11:14.440426+00:00",
+    "total_eventos": 17
   },
   {
     "periodo": "2026-11",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-11T03:19:11.616405+00:00",
+    "generado": "2026-11-12T01:10:46.734949+00:00",
     "total_eventos": 1
   },
   {
@@ -44,8 +44,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-11T03:18:39.159004+00:00",
-    "total_eventos": 7
+    "generado": "2026-11-12T01:10:14.943303+00:00",
+    "total_eventos": 9
   },
   {
     "periodo": "2026-11",
@@ -60,7 +60,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-11T11:14:23.209734+00:00",
+    "generado": "2026-11-12T01:09:33.986731+00:00",
     "total_eventos": 3
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-11T03:17:31.434960+00:00",
+    "generado": "2026-11-12T01:09:07.774927+00:00",
     "total_eventos": 3
   },
   {

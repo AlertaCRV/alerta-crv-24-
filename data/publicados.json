@@ -1,11 +1,4 @@
 {
-  "inundacion::Carabobo::2026-11-08": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-08T19:43:47.405998+00:00",
-    "fecha_evento_temprana": "2026-11-08T16:07:53+00:00",
-    "municipio": "San Diego"
-  },
   "incendio::Bolivar::2026-11-09": {
     "severidad": "critico",
     "confirmado": false,
@@ -26,13 +19,6 @@
     "fecha_deteccion": "2026-11-09T21:03:02.812365+00:00",
     "fecha_evento_temprana": "2026-11-09T15:28:44+00:00",
     "municipio": null
-  },
-  "infraestructura_electrica::Miranda::2026-11-08": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-08T19:42:52.536995+00:00",
-    "fecha_evento_temprana": "2026-11-08T14:21:33+00:00",
-    "municipio": "Baruta"
   },
   "salud_publica::Barinas::2026-11-09": {
     "severidad": "sin_clasificar",
@@ -119,9 +105,9 @@
     "municipio": "Caroní"
   },
   "orden_publico::Barinas::2026-11-11": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-11T18:47:36.498621+00:00",
+    "fecha_deteccion": "2026-11-12T01:07:18.556002+00:00",
     "fecha_evento_temprana": "2026-11-11T15:56:53+00:00",
     "municipio": "Cruz Paredes"
   },
