@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "incendio",
+    "ubicacion": "Tachira",
+    "municipio": "Seboruco",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/sucesos/incendio-en-fabrica-de-colchones-en-seboruco/",
+        "fecha": "2026-11-12T10:58:04+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-12T10:58:04+00:00",
+    "fecha_evento_temprana": "2026-11-12T10:58:04+00:00",
+    "fecha_deteccion": "2026-11-12T16:55:23.463941+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Tachira::2026-11-12",
+    "titulo": "Incendio en Municipio Seboruco, Tachira",
+    "texto": "📌 Incendio en Municipio Seboruco, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Seboruco, Tachira\n🕒 Hecho reportado: 12/11/2026, 6:58 a.m.\n🔎 Detectado por el sistema: 12/11/2026, 12:55 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/incendio-en-fabrica-de-colchones-en-seboruco/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Barinas",
     "municipio": "Cruz Paredes",
@@ -1369,83 +1395,5 @@
     "clave_dedup": "orden_publico::Monagas::2026-10-29",
     "titulo": "Orden público en Monagas",
     "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 29/10/2026, 6:48 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 7:18 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": "El Callao",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/guayana/el-callao-mineros-paralizan-minerven-para-exigir-utilidades-dignas/",
-        "fecha": "2026-10-28T22:44:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-28T22:44:00+00:00",
-    "fecha_evento_temprana": "2026-10-28T22:44:00+00:00",
-    "fecha_deteccion": "2026-10-29T06:19:32.068786+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-10-28",
-    "titulo": "Orden público en Municipio El Callao, Bolivar",
-    "texto": "📌 Orden público en Municipio El Callao, Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio El Callao, Bolivar\n🕒 Hecho reportado: 28/10/2026, 6:44 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 2:19 a.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/el-callao-mineros-paralizan-minerven-para-exigir-utilidades-dignas/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Falcon",
-    "municipio": "Carirubana",
-    "parroquia": "Punta Cardón",
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Nuevo Dia (Falcon)",
-        "link": "https://nuevodia.com.ve/corpoelec-activa-cuadrillas-para-atender-circuitos-afectados-por-lluvia-en-paraguana/",
-        "fecha": "2026-10-29T00:48:14+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-29T00:48:14+00:00",
-    "fecha_evento_temprana": "2026-10-29T00:48:14+00:00",
-    "fecha_deteccion": "2026-10-29T06:19:41.001014+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Falcon::2026-10-29",
-    "titulo": "Falla eléctrica en Parroquia Punta Cardón, Municipio Carirubana, Falcon",
-    "texto": "📌 Falla eléctrica en Parroquia Punta Cardón, Municipio Carirubana, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Punta Cardón, Municipio Carirubana, Falcon\n🕒 Hecho reportado: 28/10/2026, 8:48 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 2:19 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/corpoelec-activa-cuadrillas-para-atender-circuitos-afectados-por-lluvia-en-paraguana/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Siglo (Aragua)",
-        "link": "https://elsiglo.com.ve/representantes-piden-cuarentena-ante-presunta-intoxicacion-de-estudiantes/",
-        "fecha": "2026-10-28T23:54:21+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-28T23:54:21+00:00",
-    "fecha_evento_temprana": "2026-10-28T23:54:21+00:00",
-    "fecha_deteccion": "2026-10-29T06:20:19.305158+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Aragua::2026-10-28",
-    "titulo": "Salud pública en Aragua",
-    "texto": "📌 Salud pública en Aragua\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 28/10/2026, 7:54 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 2:20 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/representantes-piden-cuarentena-ante-presunta-intoxicacion-de-estudiantes/"
   }
 ]
