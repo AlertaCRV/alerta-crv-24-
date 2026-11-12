@@ -1,11 +1,4 @@
 {
-  "incendio::Bolivar::2026-11-09": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-09T02:42:40.008446+00:00",
-    "fecha_evento_temprana": "2026-11-09T01:13:02+00:00",
-    "municipio": "Sifontes"
-  },
   "salud_publica::Zulia::2026-11-09": {
     "severidad": "critico",
     "confirmado": false,
