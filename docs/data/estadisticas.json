@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-12T01:08:13.870108+00:00",
+  "actualizado": "2026-11-12T16:55:37.192725+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-11T18:37:14+00:00"
+    "hasta": "2026-11-12T10:58:04+00:00"
   },
-  "total_eventos": 628,
+  "total_eventos": 629,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
@@ -14,7 +14,7 @@
     "orden_publico": 216,
     "salud_publica": 37,
     "crisis_migratoria": 7,
-    "incendio": 70,
+    "incendio": 71,
     "vialidad": 29,
     "sismo": 8,
     "escasez_combustible": 2,
@@ -72,10 +72,10 @@
     },
     {
       "estado": "Tachira",
-      "total": 41,
+      "total": 42,
       "confirmados": 3,
       "por_severidad": {
-        "alto": 14,
+        "alto": 15,
         "bajo": 6,
         "medio": 10,
         "critico": 9,
@@ -450,7 +450,7 @@
       "inundacion": 5,
       "sismo": 1,
       "infraestructura_electrica": 3,
-      "incendio": 8,
+      "incendio": 9,
       "vialidad": 2,
       "motin_carcelario": 1,
       "ataque_armado": 2,
@@ -572,7 +572,7 @@
     }
   },
   "por_severidad": {
-    "alto": 141,
+    "alto": 142,
     "critico": 79,
     "medio": 218,
     "bajo": 162,
@@ -637,7 +637,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 9
+      "2026-11": 10
     },
     "vialidad": {
       "2026-08": 10,
