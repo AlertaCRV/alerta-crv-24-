@@ -92,9 +92,16 @@
   },
   "orden_publico::Miranda::2026-11-12": {
     "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-12T22:42:52.255636+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-13T02:58:41.702381+00:00",
     "fecha_evento_temprana": "2026-11-12T19:00:00+00:00",
+    "municipio": null
+  },
+  "orden_publico::Merida::2026-11-13": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-13T03:00:06.555204+00:00",
+    "fecha_evento_temprana": "2026-11-13T02:35:51+00:00",
     "municipio": null
   }
 }
