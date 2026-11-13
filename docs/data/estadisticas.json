@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-12T23:13:06.877388+00:00",
+  "actualizado": "2026-11-13T03:00:21.824253+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-12T19:00:00+00:00"
+    "hasta": "2026-11-13T02:35:51+00:00"
   },
-  "total_eventos": 628,
+  "total_eventos": 630,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 55,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 217,
+    "orden_publico": 219,
     "salud_publica": 37,
     "crisis_migratoria": 7,
     "incendio": 70,
@@ -127,16 +127,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 30,
-      "confirmados": 4,
+      "total": 31,
+      "confirmados": 5,
       "por_severidad": {
         "alto": 4,
         "medio": 10,
         "critico": 5,
-        "bajo": 10,
+        "bajo": 11,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.14,
+      "indice_gravedad": 2.1,
       "severidad_mapa": "medio"
     },
     {
@@ -182,15 +182,15 @@
     },
     {
       "estado": "Merida",
-      "total": 21,
+      "total": 22,
       "confirmados": 0,
       "por_severidad": {
         "alto": 11,
-        "bajo": 5,
+        "bajo": 6,
         "medio": 4,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.3,
+      "indice_gravedad": 2.24,
       "severidad_mapa": "medio"
     },
     {
@@ -472,7 +472,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 11,
+      "orden_publico": 12,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -544,7 +544,7 @@
     },
     "Merida": {
       "vialidad": 1,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "inundacion": 3,
       "deslizamiento": 2,
       "infraestructura_electrica": 3,
@@ -575,7 +575,7 @@
     "alto": 142,
     "critico": 79,
     "medio": 217,
-    "bajo": 163,
+    "bajo": 165,
     "sin_clasificar": 27
   },
   "serie_mensual_por_tipo": {
@@ -617,7 +617,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 18
+      "2026-11": 20
     },
     "salud_publica": {
       "2026-07": 1,

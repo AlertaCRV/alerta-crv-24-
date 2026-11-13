@@ -5,10 +5,15 @@
     "municipio": null,
     "parroquia": null,
     "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
+    "score": 1.35,
+    "confirmado": true,
+    "num_fuentes": 2,
     "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/625427/no-mas-torturas-el-clamor-de-presos-politicos-de-ramo-verde-en-huelga-de-hambre/",
+        "fecha": "2026-11-12T23:07:47+00:00"
+      },
       {
         "nombre": "El Impulso (Lara)",
         "link": "https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/",
@@ -17,13 +22,39 @@
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-11-12T19:00:00+00:00",
+    "fecha_evento": "2026-11-12T23:07:47+00:00",
     "fecha_evento_temprana": "2026-11-12T19:00:00+00:00",
-    "fecha_deteccion": "2026-11-12T22:42:52.255636+00:00",
+    "fecha_deteccion": "2026-11-13T02:58:41.702381+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Miranda::2026-11-12",
     "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 12/11/2026, 3:00 p.m.\n🔎 Detectado por el sistema: 12/11/2026, 6:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/"
+    "texto": "📌 Orden público en Miranda\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 12/11/2026, 7:07 p.m.\n🔎 Detectado por el sistema: 12/11/2026, 10:58 p.m.\n📊 Fuentes independientes: 2 (score 1.35)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/625427/no-mas-torturas-el-clamor-de-presos-politicos-de-ramo-verde-en-huelga-de-hambre/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Merida",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Reporteros de Merida",
+        "link": "https://www.reporterosdemerida.com.ve/2026/11/trabajadores-de-hidroven-merida-exigen.html",
+        "fecha": "2026-11-13T02:35:51+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-13T02:35:51+00:00",
+    "fecha_evento_temprana": "2026-11-13T02:35:51+00:00",
+    "fecha_deteccion": "2026-11-13T03:00:06.555204+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Merida::2026-11-13",
+    "titulo": "Orden público en Merida",
+    "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 12/11/2026, 10:35 p.m.\n🔎 Detectado por el sistema: 12/11/2026, 11:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/11/trabajadores-de-hidroven-merida-exigen.html"
   },
   {
     "tipo": "incendio",
@@ -1317,57 +1348,5 @@
     "clave_dedup": "accidente_transporte::Amazonas::2026-10-29",
     "titulo": "Accidente de transporte en Parroquia Sierra Parima, Amazonas",
     "texto": "📌 Accidente de transporte en Parroquia Sierra Parima, Amazonas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Sierra Parima, Amazonas\n🕒 Hecho reportado: 29/10/2026, 8:08 p.m.\n🔎 Detectado por el sistema: 30/10/2026, 5:06 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Siglo (Aragua): https://elsiglo.com.ve/fallecio-en-tragico-accidente-aereo-el-investigador-y-enfermero-indigena/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Portuguesa",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/principales/portuguesa-trabajadores-protestan-por-salarios-dignos-mientras-delcy-rodriguez-anuncia-ajustes-de-ingresos-para-2027/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-trabajadores-protestan-por-salarios-dignos-mientras-delcy-rodriguez-anuncia-ajustes-de-ingresos-para-2027",
-        "fecha": "2026-10-29T19:39:05+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-29T19:39:05+00:00",
-    "fecha_evento_temprana": "2026-10-29T19:39:05+00:00",
-    "fecha_deteccion": "2026-10-29T23:18:29.850635+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Portuguesa::2026-10-29",
-    "titulo": "Orden público en Portuguesa",
-    "texto": "📌 Orden público en Portuguesa\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Portuguesa\n🕒 Hecho reportado: 29/10/2026, 3:39 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 7:18 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/portuguesa-trabajadores-protestan-por-salarios-dignos-mientras-delcy-rodriguez-anuncia-ajustes-de-ingresos-para-2027/?utm_source=rss&utm_medium=rss&utm_campaign=portuguesa-trabajadores-protestan-por-salarios-dignos-mientras-delcy-rodriguez-anuncia-ajustes-de-ingresos-para-2027"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Monagas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Maturin News",
-        "link": "https://maturinnews.com/sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales",
-        "fecha": "2026-10-29T22:48:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-29T22:48:00+00:00",
-    "fecha_evento_temprana": "2026-10-29T22:48:00+00:00",
-    "fecha_deteccion": "2026-10-29T23:18:55.441300+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Monagas::2026-10-29",
-    "titulo": "Orden público en Monagas",
-    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 29/10/2026, 6:48 p.m.\n🔎 Detectado por el sistema: 29/10/2026, 7:18 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales/?utm_source=rss&utm_medium=rss&utm_campaign=sindicatos-de-maestros-en-monagas-siguen-en-protesta-para-exgir-reivindicaciones-laborales"
   }
 ]

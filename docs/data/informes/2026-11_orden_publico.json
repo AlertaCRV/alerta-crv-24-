@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-12T01:11:14.440426+00:00",
-  "actualizado_hasta": "2026-11-12T01:07:18.556002+00:00",
-  "total_eventos": 17,
+  "generado": "2026-11-13T03:03:35.229679+00:00",
+  "actualizado_hasta": "2026-11-13T03:00:06.555204+00:00",
+  "total_eventos": 20,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 17
+    "actual": 20
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron 17 eventos de orden público, una disminución notable respecto a los 77 eventos del mes anterior (octubre de 2026). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales, heridos o víctimas fatales, aunque persisten manifestaciones y disturbios en varios estados del país.\n\nEl hecho más grave ocurrido en este período tuvo lugar en Barinas, donde un aficionado fue asesinado y el partido de la Liga Futve 2 fue suspendido tras disturbios provocados por miembros de la delegación visitante que vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB) (Noticia al Dia (Zulia)). La violencia se desencadenó cuando los inadaptados de la delegación cruzaron el perímetro de seguridad, lo que derivó en el fatal desenlace y la interrupción del encuentro deportivo.\n\nEn la misma ciudad de Barinas, el 11 de noviembre el alcalde del municipio Cruz Paredes, Henry Maldonado, exigió respuestas a Corpoelec por un colapso eléctrico que dejó sin suministro a varias familias del sector Cruz Blanca durante periodos prolongados (Diario La Nacion (Tachira)). Las protestas, descritas como pacíficas, denunciaron fallas severas en el servicio eléctrico, con algunas familias sin energía durante hasta cuatro días, situación que el alcalde calificó de crítica.\n\nOtros estados también registraron manifestaciones de orden público sin que se reportaran daños materiales graves. En Lara, jubilados y pensionados protestaron exigiendo pensiones dignas y aumentos salariales (El Impulso (Lara)); en Carabobo se observaron olas de protestas contra cortes eléctricos prolongados (El Impulso (Lara)); y en Monagas, habitantes de Amana Abajo bloquearon la vía nacional para exigir asfaltado y un plan de bacheo integral (El Periodico de Monagas). En Bolívar, una huelga de hambre de jubilados frente a la Corporación Venezolana de Guayana generó preocupación por el deterioro de su salud (El Pitazo); en la Universidad del Zulia se realizaron protestas contra bajos salarios y falta de presupuesto (El Pitazo); mientras que en Miranda, 34 militares iniciaron una huelga de hambre en el Centro Nacional de Procesados Militares de Ramo Verde, a la que se sumaron dos mujeres (El Pitazo). Finalmente, en Anzoátegui, vecinos de Villa Betania protestaron tras una doble tanda de cortes eléctricos de Corpoelec (El Tiempo (Anzoategui)).",
+  "narrativa": "En noviembre de 2026 se registraron 20 eventos de orden público, una disminución notable respecto a los 77 eventos del mes anterior (octubre de 2026) (Comparación con el período anterior). Este descenso refleja una menor frecuencia de incidentes, aunque persisten situaciones críticas en distintas regiones del país.\n\nEl hecho más grave ocurrido en el período fue el disturbio en Barinas, donde un aficionado fue asesinado y se suspendió un partido de la Liga Futve después de que integrantes de la delegación visitante vulneraran el cerco de seguridad custodiado por la Policía Nacional Bolivariana (Noticia al Dia (Zulia)). Los testimonios recogidos en plataformas digitales indican que la violencia se desencadenó cuando los visitantes intentaron romper el control policial, provocando la muerte y la paralización del encuentro deportivo.\n\nEn otras partes del país se registraron protestas relacionadas con el suministro eléctrico y demandas sociales. En Carabobo, múltiples sectores protagonizaron intensas manifestaciones vecinales ante severos y prolongados cortes de energía (El Impulso (Lara)). En el estado Lara, jubilados y pensionados se sumaron a una protesta sindical exigiendo pensiones dignas y aumentos salariales (El Impulso (Lara)). En Monagas, habitantes de Amana Abajo bloquearon la vía nacional al sur para exigir el asfaltado y la reparación de baches en su comunidad (El Periodico de Monagas). En la Universidad del Zulia, estudiantes, profesores y trabajadores protestaron contra los bajos salarios y la falta de recursos presupuestarios (El Pitazo). Además, en el Centro Nacional de Procesados Militares de Ramo Verde, Miranda, 36 militares y dos mujeres privadas de libertad iniciaron una huelga de hambre denunciando aislamiento, falta de agua y condiciones penitenciarias restrictivas (El Pitazo).\n\nA pesar de la reducción en el número total de incidentes, los eventos registrados en noviembre evidencian tensiones persistentes en torno a la seguridad pública, la provisión de servicios básicos y las reivindicaciones laborales, lo que subraya la necesidad de respuestas coordinadas por parte de las autoridades para evitar escaladas de violencia y garantizar el bienestar de la población.",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -32,6 +32,10 @@
     {
       "nombre": "El Impulso (Lara)",
       "link": "https://www.elimpulso.com/2026/11/11/avance-vente-lara-exige-elecciones-presidenciales-y-rescate-de-los-servicios-publicos-durante-protesta-el-guarazo-11nov/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/12/video-ovp-denuncia-aislamiento-y-falta-de-agua-contra-36-militares-en-huelga-de-hambre-en-ramo-verde-12nov/"
     },
     {
       "nombre": "El Periodico de Monagas",
@@ -80,6 +84,14 @@
     {
       "nombre": "La Verdad de Monagas",
       "link": "https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/11/trabajadores-de-hidroven-merida-exigen.html"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/625427/no-mas-torturas-el-clamor-de-presos-politicos-de-ramo-verde-en-huelga-de-hambre/"
     },
     {
       "nombre": "Yaracuy al Dia",

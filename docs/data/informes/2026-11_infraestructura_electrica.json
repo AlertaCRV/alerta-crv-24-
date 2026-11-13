@@ -3,15 +3,15 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-11T18:49:00.066830+00:00",
+  "generado": "2026-11-13T03:02:55.645550+00:00",
   "actualizado_hasta": "2026-11-11T18:46:36.303376+00:00",
-  "total_eventos": 9,
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 9,
-    "actual": 9
+    "actual": 8
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron nueve eventos de fallas eléctricas, cifra idéntica a la del período anterior (octubre de 2026) que también contó con nueve incidentes (9 evento(s) registrados entonces vs. 9 en este período). La constancia en el número de incidentes indica una persistencia de vulnerabilidades en la infraestructura eléctrica del país.\n\nEl evento más crítico fue la falla eléctrica en Táchira, que dejó sin suministro a la población de La Concordia durante más de 36 horas continuas a partir del sábado 7 de noviembre (Diario La Nacion (Tachira)). La interrupción afectó tanto a residencias como al Hospital Central de San Cristóbal y a varios laboratorios médicos cercanos. Ante la falta de repuestos, los propios vecinos gestionaron la compra de piezas en Cúcuta para intentar restablecer el servicio.\n\nEn otras regiones se reportaron interrupciones significativas: lluvias provocaron apagones en varios sectores de Baruta, municipio del Gran Caracas, el 8 de noviembre (El Periodico de Monagas); un apagón afectó a los municipios de Lagunillas, Valmore Rodríguez y Baralt en la zona petrolera de Zulia el 11 de noviembre (El Pitazo); en El Tigre, Anzoátegui, vecinos realizaron un cacerolazo tras casi nueve horas sin energía el 2 de noviembre (El Tiempo); una explosión en la subestación Federación dejó sin electricidad a varios sectores de Ciudad Ojeda el mismo día (Noticia al Dia); y una fuerte fluctuación eléctrica seguida de corte de suministro se registró en Mérida alrededor de las 11:58 del 12 de noviembre (Reporteros de Merida). Además, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua en más de 40 zonas de Baruta el 1 de noviembre (Runrun.es).\n\nComo respuesta, la Corporación Eléctrica Nacional (CORPOELEC) instaló un banco de transformadores y mejoró la red de distribución en la comunidad Los Próceres, Barinas, beneficiando a más de 360 habitantes (La Noticia de Barinas). Estas acciones buscan mitigar el impacto de futuras fallas y mejorar la resiliencia del sistema eléctrico nacional.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron ocho incidentes de fallas eléctricas, una ligera disminución respecto a los nueve eventos reportados en octubre del mismo año (9 evento(s) registrados entonces vs. 8 en este período). Estos incidentes afectaron a diversas regiones del país, generando interrupciones prolongadas en el suministro de energía y, en algunos casos, repercusiones en servicios esenciales como salud y agua.\n\nLa falla eléctrica más grave se produjo en el estado Táchira, donde más de 36 horas continuas sin electricidad dejaron sin energía a la comunidad de La Concordia, específicamente en la carrera 12, calles 4 y 5, y la avenida Lucio Oquendo (Diario La Nacion (Tachira)). El apagón impactó tanto a viviendas como al Hospital Central de San Cristóbal y sus laboratorios médicos. Ante la falta de repuestos, los propios afectados gestionaron la compra de piezas en Cúcuta para intentar restablecer el servicio.\n\nEn otras regiones se registraron interrupciones significativas: en Baruta, lluvias intensas provocaron cortes de energía en varias urbanizaciones y comunidades populares el 8 de noviembre (El Periodico de Monagas); en la zona petrolera de Zulia, un apagón afectó a los municipios Lagunillas, Valmore Rodríguez y Baralt el 11 de noviembre, impactando operaciones de empresas de crudo (El Pitazo); en El Tigre, Anzoátegui, vecinos realizaron un cacerolazo tras casi nueve horas de apagón el 2 de noviembre (El Tiempo); una explosión en la subestación Federación dejó sin suministro a sectores de Ciudad Ojeda el mismo día (Noticia al Dia); en Mérida, una fuerte fluctuación de voltaje seguida de corte eléctrico se sintió en varios municipios el 13 de noviembre (Reporteros de Merida); y en Baruta, una falla en los sistemas Tuy II y III provocó la pérdida de agua en más de 40 zonas el 1 de noviembre (Runrun.es).\n\nEstas interrupciones reiteran la necesidad de fortalecer la infraestructura eléctrica y los protocolos de respuesta rápida. La Cruz Roja Venezolana continúa monitoreando la situación, coordinando con autoridades locales y brindando apoyo a la población afectada para mitigar los efectos de los apagones y garantizar la continuidad de los servicios críticos.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -28,10 +28,6 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/"
-    },
-    {
-      "nombre": "La Noticia de Barinas",
-      "link": "https://lanoticiadebarinas.com/2026/11/corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas/?utm_source=rss&utm_medium=rss&utm_campaign=corpoelec-instalo-banco-de-transformadores-en-la-comunidad-los-proceres-en-barinas"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
