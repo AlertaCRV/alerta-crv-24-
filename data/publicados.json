@@ -1,11 +1,4 @@
 {
-  "orden_publico::Zulia::2026-11-10": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-10T18:51:43.904328+00:00",
-    "fecha_evento_temprana": "2026-11-10T16:26:09+00:00",
-    "municipio": "Maracaibo"
-  },
   "orden_publico::Miranda::2026-11-10": {
     "severidad": "medio",
     "confirmado": false,
