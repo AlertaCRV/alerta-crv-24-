@@ -3204,6 +3204,37 @@ def _es_mencion_tren_de_aragua(tokens, pos):
     return pos >= 2 and tokens[pos - 1] == "de" and tokens[pos - 2] == "tren"
 
 
+# Caso real (auditoria diaria 14-11-2026): "Los privados de libertad
+# afectados son el teniente Hugo Aparicio; los sargentos Luis Lobo, Padron
+# Albuja, Juan Bolivar, Giomer Natera..." (huelga de hambre en Ramo Verde,
+# "en el estado Miranda") publico la alerta en el estado Bolivar: "Bolivar"
+# es el apellido de uno de los sargentos, sin verbo de cita cerca, asi que
+# _es_mencion_de_persona_citada no lo descartaba. Un nombre de estado que
+# va justo despues de un nombre de pila (token que no es palabra funcional
+# ni calificador de lugar) y a pocas palabras de un grado militar es el
+# apellido de esa persona. No se incluyen "general"/"comandante"/"mayor":
+# "comandante de la ZODI Bolivar" o "la mayor parte de Bolivar" nombran el
+# estado.
+_GRADOS_MILITARES_ANTES_DE_NOMBRE = {
+    "sargento", "sargentos", "teniente", "tenientes", "capitan", "capitanes",
+    "coronel", "coroneles", "cabo", "cabos", "soldado", "soldados",
+    "subteniente", "subtenientes", "tenientecoronel",
+}
+_VENTANA_GRADO_MILITAR = 8
+
+
+def _es_apellido_tras_grado_militar(tokens, pos):
+    if pos < 2:
+        return False
+    anterior = tokens[pos - 1]
+    if (anterior in _CALIFICADORES_LUGAR_ANTES_DE_NOMBRE
+            or anterior in _PALABRAS_FUNCIONALES_NO_NOMBRE
+            or anterior.isdigit()):
+        return False
+    previos = tokens[max(0, pos - 1 - _VENTANA_GRADO_MILITAR): pos - 1]
+    return any(t in _GRADOS_MILITARES_ANTES_DE_NOMBRE for t in previos)
+
+
 def _ventana_cerca(tokens, candidato_norm, palabras_tipo, posiciones_estados=None,
                     permitir_subestatal=False):
     """Devuelve la ventana de texto alrededor de candidato_norm si contiene
@@ -3247,6 +3278,7 @@ def _ventana_cerca_con_posicion(tokens, candidato_norm, palabras_tipo, posicione
         and not _es_mencion_de_persona_citada(tokens, i)
         and not _es_mencion_tren_de_aragua(tokens, i)
         and not _es_vocero_meteorologico_citado(tokens, i)
+        and not _es_apellido_tras_grado_militar(tokens, i)
     ]
     posiciones_otros_estados = None
     if posiciones_estados:
