@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T03:35:00.268054+00:00",
+  "actualizado": "2026-11-14T23:11:54.855715+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
     "hasta": "2026-11-14T00:57:59+00:00"
@@ -127,30 +127,30 @@
     },
     {
       "estado": "Miranda",
-      "total": 31,
+      "total": 32,
       "confirmados": 5,
       "por_severidad": {
-        "alto": 4,
+        "alto": 5,
         "medio": 10,
         "critico": 5,
         "bajo": 11,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.1,
+      "indice_gravedad": 2.13,
       "severidad_mapa": "medio"
     },
     {
       "estado": "Bolivar",
-      "total": 27,
+      "total": 26,
       "confirmados": 2,
       "por_severidad": {
         "bajo": 7,
         "medio": 12,
         "critico": 3,
-        "alto": 2,
+        "alto": 1,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.04,
+      "indice_gravedad": 2.0,
       "severidad_mapa": "medio"
     },
     {
@@ -457,7 +457,7 @@
       "salud_publica": 4
     },
     "Bolivar": {
-      "orden_publico": 13,
+      "orden_publico": 12,
       "escasez_combustible": 2,
       "incendio": 5,
       "inundacion": 1,
@@ -472,7 +472,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 12,
+      "orden_publico": 13,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {

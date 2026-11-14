@@ -1,7 +1,7 @@
 [
   {
     "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
+    "ubicacion": "Miranda",
     "municipio": null,
     "parroquia": null,
     "severidad": "alto",
@@ -21,9 +21,9 @@
     "fecha_evento_temprana": "2026-11-14T00:57:59+00:00",
     "fecha_deteccion": "2026-11-14T03:34:54.533798+00:00",
     "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-11-14",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 13/11/2026, 8:57 p.m.\n🔎 Detectado por el sistema: 13/11/2026, 11:34 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde"
+    "clave_dedup": "orden_publico::Miranda::2026-11-14",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 13/11/2026, 8:57 p.m.\n🔎 Detectado por el sistema: 13/11/2026, 11:34 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde"
   },
   {
     "tipo": "orden_publico",

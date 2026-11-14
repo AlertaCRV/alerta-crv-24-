@@ -113,6 +113,14 @@ _LIMITACIONES_CONOCIDAS = {
         "ciudad) y la unica mencion de estado es una asamblea FUTURA 'en "
         "Caracas'; aislada resuelve a Distrito Capital. Ver roadmap."
     ),
+    "orden_publico::Miranda::Portuguesa Reporta::2026-11-14": (
+        "Huelga de hambre en Ramo Verde (13-11-2026) reubicada a mano de "
+        "Bolivar a Miranda en la auditoria del 14-11-2026: la ubicacion "
+        "salia del apellido del 'sargento Juan Bolivar', que "
+        "_es_apellido_tras_grado_militar() ahora descarta. 'estado Miranda' "
+        "queda a ~70 palabras de 'protesta', fuera de la ventana de "
+        "proximidad, asi que aislada no resuelve ningun estado. Ver roadmap."
+    ),
 }
 
 

@@ -10029,3 +10029,20 @@ Las corridas nocturnas de esos días no dejaron entradas en este roadmap (las in
 **Pendiente de decidir**:
 - `orden_publico::Bolivar::2026-11-11` (La Verdad, "Trabajadores y jubilados acuerdan con la CVG el pago de $1.100…"): la nota informa el **acuerdo** que cerró la huelga de hambre y la vigilia, no una protesta en curso. Parece un falso positivo, pero cambiar la regla de `orden_publico` para los acuerdos que cierran un conflicto podría silenciar protestas reales que siguen, así que no se tocó.
 - `incendio::Tachira::2026-11-12` (fábrica de colchones en Seboruco): severidad **alto** sin heridos ni evacuados en el texto, solo "incendio estructural" en curso. Quizá debería ser "medio"; no se cambió.
+
+## Auditoría diaria 14-11-2026: huelga de hambre de Ramo Verde publicada en Bolívar por el apellido de un sargento
+
+**Hallazgos** (4 alertas detectadas del 12-11 12:00 al 14-11, contrastadas con `historico_fuentes_texto.jsonl`; ninguna con `PASADO_POR_FALLA_TECNICA`):
+
+1. **`orden_publico::Bolivar::2026-11-14`** (Portuguesa Reporta, "Ocho militares sufren descompensación tras 96 horas en huelga de hambre en Ramo Verde"): el texto dice "Centro Nacional de Procesados Militares de Ramo Verde, en el estado Miranda". Bolívar solo sale en "los sargentos Luis Lobo, Padrón Albuja, **Juan Bolívar**, Giomer Natera…" (y en "Fuerza Armada Nacional Bolivariana", que no cuenta).
+   - **Causa raíz**: `_es_mencion_de_persona_citada()` solo descarta un apellido igual a un estado si hay un verbo de cita cerca. En una lista de detenidos con grado militar no hay ningún verbo de cita, así que "Bolívar" contaba como el estado, y "protesta" estaba dentro de su ventana de proximidad.
+   - **Corrección**: `_es_apellido_tras_grado_militar()` (`scripts/classify.py`) descarta la mención si el token anterior parece un nombre de pila (no es palabra funcional, calificador de lugar ni número) y hay un grado militar (sargento, teniente, capitán, coronel, cabo, soldado, subteniente, en singular o plural) en las 8 palabras anteriores. "General", "comandante" y "mayor" quedan fuera a propósito ("comandante de la ZODI Bolívar", "la mayor parte de Bolívar").
+   - **Efecto**: aislada, la fuente ya no resuelve ningún estado. "estado Miranda" queda a ~70 palabras de "protesta", fuera de la ventana de proximidad. Es una pérdida de cobertura aceptable: es el mismo evento en curso que `orden_publico::Miranda::2026-11-12`. Se marcó como limitación conocida en `tests/test_classify_regresion_historico.py`.
+
+**Regresión**: se clasificaron los 682 enlaces de `historico_fuentes_texto.jsonl` con el código anterior y con el nuevo. Solo cambia esta fuente. Carapita (Distrito Capital) y Maneiro (25-08) variaron entre corridas con el mismo código, igual que se vio el 12-11, así que no tienen relación con el cambio.
+
+**Corrección retroactiva**: la alerta es real y la aprobó la IA (severidad alta por la descompensación de 8 detenidos), así que no se retiró: se **reubicó en Miranda** con la clave `orden_publico::Miranda::2026-11-14`. Título y texto se regeneraron con `redactar_noticia`. El cambio se aplicó en `noticias.json`, `publicados.json`, ambos históricos y la narrativa de `docs/data/informes/2026-11_orden_publico.json` ("En el estado Bolívar…" → "En el estado Miranda…"). `estadisticas.json` se regeneró.
+
+**Pruebas**: 2 casos nuevos en `tests/casos_clasificacion.jsonl`: el real, que falla con el código anterior y pasa con el nuevo, y un control sintético ("sargento… en Ciudad Bolívar, estado Bolívar"), que pasa con ambos. Suite completa: 1197 pasan, 10 xfailed y 6 xpassed.
+
+**Revisado y sin cambios**: huelga de hambre en Ramo Verde del 12-11 (Miranda, 2 fuentes), reclamo salarial de trabajadores de Hidroven Mérida, incendio en la fábrica de colchones de Seboruco (Táchira; la severidad "alto" sigue pendiente de decidir desde el 12-11).
