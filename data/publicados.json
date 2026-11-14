@@ -1,39 +1,4 @@
 {
-  "infraestructura_electrica::Zulia::2026-11-11": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T18:46:36.303376+00:00",
-    "fecha_evento_temprana": "2026-11-11T18:37:14+00:00",
-    "municipio": "Lagunillas"
-  },
-  "orden_publico::Miranda::2026-11-11": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T18:46:40.877787+00:00",
-    "fecha_evento_temprana": "2026-11-11T18:00:54+00:00",
-    "municipio": null
-  },
-  "incendio::Miranda::2026-11-11": {
-    "severidad": "alto",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-11T18:46:45.644128+00:00",
-    "fecha_evento_temprana": "2026-11-11T17:43:40+00:00",
-    "municipio": "Baruta"
-  },
-  "orden_publico::Lara::2026-11-11": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-11T18:46:58.283093+00:00",
-    "fecha_evento_temprana": "2026-11-11T16:24:18+00:00",
-    "municipio": "Torres"
-  },
-  "orden_publico::Bolivar::2026-11-11": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T18:47:23.897941+00:00",
-    "fecha_evento_temprana": "2026-11-11T15:59:52+00:00",
-    "municipio": "Caroní"
-  },
   "orden_publico::Barinas::2026-11-11": {
     "severidad": "medio",
     "confirmado": false,
