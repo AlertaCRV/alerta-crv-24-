@@ -1,32 +1,4 @@
 {
-  "orden_publico::Miranda::2026-11-10": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T03:15:04.675216+00:00",
-    "fecha_evento_temprana": "2026-11-10T19:14:11+00:00",
-    "municipio": null
-  },
-  "orden_publico::Barinas::2026-11-10": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-10T23:52:51.798476+00:00",
-    "fecha_evento_temprana": "2026-11-10T20:29:06+00:00",
-    "municipio": "Barinas"
-  },
-  "derrame_petrolero::Falcon::2026-11-11": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T03:14:55.551673+00:00",
-    "fecha_evento_temprana": "2026-11-11T00:45:21+00:00",
-    "municipio": "Miranda"
-  },
-  "infraestructura_electrica::Merida::2026-11-11": {
-    "severidad": "sin_clasificar",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-11T03:16:45.737089+00:00",
-    "fecha_evento_temprana": "2026-11-11T01:32:23+00:00",
-    "municipio": "Libertador"
-  },
   "infraestructura_electrica::Zulia::2026-11-11": {
     "severidad": "medio",
     "confirmado": false,
@@ -88,6 +60,13 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-13T03:00:06.555204+00:00",
     "fecha_evento_temprana": "2026-11-13T02:35:51+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-11-14": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-14T03:34:54.533798+00:00",
+    "fecha_evento_temprana": "2026-11-14T00:57:59+00:00",
     "municipio": null
   }
 }

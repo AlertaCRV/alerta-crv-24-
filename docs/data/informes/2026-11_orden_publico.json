@@ -3,19 +3,23 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-13T03:03:35.229679+00:00",
-  "actualizado_hasta": "2026-11-13T03:00:06.555204+00:00",
-  "total_eventos": 20,
+  "generado": "2026-11-14T03:38:00.610925+00:00",
+  "actualizado_hasta": "2026-11-14T03:34:54.533798+00:00",
+  "total_eventos": 21,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 20
+    "actual": 21
   },
-  "narrativa": "En noviembre de 2026 se registraron 20 eventos de orden público, una disminución notable respecto a los 77 eventos del mes anterior (octubre de 2026) (Comparación con el período anterior). Este descenso refleja una menor frecuencia de incidentes, aunque persisten situaciones críticas en distintas regiones del país.\n\nEl hecho más grave ocurrido en el período fue el disturbio en Barinas, donde un aficionado fue asesinado y se suspendió un partido de la Liga Futve después de que integrantes de la delegación visitante vulneraran el cerco de seguridad custodiado por la Policía Nacional Bolivariana (Noticia al Dia (Zulia)). Los testimonios recogidos en plataformas digitales indican que la violencia se desencadenó cuando los visitantes intentaron romper el control policial, provocando la muerte y la paralización del encuentro deportivo.\n\nEn otras partes del país se registraron protestas relacionadas con el suministro eléctrico y demandas sociales. En Carabobo, múltiples sectores protagonizaron intensas manifestaciones vecinales ante severos y prolongados cortes de energía (El Impulso (Lara)). En el estado Lara, jubilados y pensionados se sumaron a una protesta sindical exigiendo pensiones dignas y aumentos salariales (El Impulso (Lara)). En Monagas, habitantes de Amana Abajo bloquearon la vía nacional al sur para exigir el asfaltado y la reparación de baches en su comunidad (El Periodico de Monagas). En la Universidad del Zulia, estudiantes, profesores y trabajadores protestaron contra los bajos salarios y la falta de recursos presupuestarios (El Pitazo). Además, en el Centro Nacional de Procesados Militares de Ramo Verde, Miranda, 36 militares y dos mujeres privadas de libertad iniciaron una huelga de hambre denunciando aislamiento, falta de agua y condiciones penitenciarias restrictivas (El Pitazo).\n\nA pesar de la reducción en el número total de incidentes, los eventos registrados en noviembre evidencian tensiones persistentes en torno a la seguridad pública, la provisión de servicios básicos y las reivindicaciones laborales, lo que subraya la necesidad de respuestas coordinadas por parte de las autoridades para evitar escaladas de violencia y garantizar el bienestar de la población.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 21 eventos de orden público, una disminución notable respecto a los 77 eventos del período anterior (octubre de 2026). Esta reducción refleja una tendencia a la baja en la cantidad de incidentes reportados en la categoría.\n\nEn el estado Barinas se produjo un hecho de orden público de severidad crítica, cuando un aficionado fue asesinado y se suspendió un partido de la Liga Futve tras disturbios desencadenados por miembros de la delegación visitante que vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (PNB) (Noticia al Dia (Zulia)).\n\nEn el estado Bolívar se registró un incidente de orden público de alta severidad, según informó Portuguesa Reporta, en el que ocho militares recluidos en el Centro Nacional de Procesados Militares de Ramo Verde (estado Miranda) sufrieron descompensación física después de 96 horas de huelga de hambre (Portuguesa Reporta).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
