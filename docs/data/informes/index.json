@@ -4,7 +4,7 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-14T03:38:40.734400+00:00",
+    "generado": "2026-11-15T01:12:37.588996+00:00",
     "total_eventos": 3
   },
   {
@@ -12,15 +12,15 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-11-14T03:38:27.612775+00:00",
-    "total_eventos": 6
+    "generado": "2026-11-15T01:12:23.744922+00:00",
+    "total_eventos": 7
   },
   {
     "periodo": "2026-11",
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-14T03:38:00.610925+00:00",
+    "generado": "2026-11-15T01:11:56.861520+00:00",
     "total_eventos": 21
   },
   {
@@ -28,7 +28,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-14T03:37:33.724121+00:00",
+    "generado": "2026-11-15T01:11:30.238612+00:00",
     "total_eventos": 1
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-14T03:37:21.110103+00:00",
+    "generado": "2026-11-15T01:11:17.558461+00:00",
     "total_eventos": 8
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-14T03:37:07.470714+00:00",
+    "generado": "2026-11-15T01:11:03.941984+00:00",
     "total_eventos": 9
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-14T10:57:21.314859+00:00",
+    "generado": "2026-11-15T01:10:09.875676+00:00",
     "total_eventos": 3
   },
   {
@@ -68,8 +68,8 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-14T03:35:46.736073+00:00",
-    "total_eventos": 3
+    "generado": "2026-11-15T01:09:43.442738+00:00",
+    "total_eventos": 4
   },
   {
     "periodo": "2026-10",

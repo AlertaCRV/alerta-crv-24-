@@ -3,16 +3,20 @@
   "tipo": "derrame_petrolero",
   "tipo_label": "Derrame petrolero",
   "cerrado": false,
-  "generado": "2026-11-14T03:35:46.736073+00:00",
-  "actualizado_hasta": "2026-11-11T03:14:55.551673+00:00",
-  "total_eventos": 3,
+  "generado": "2026-11-15T01:09:43.442738+00:00",
+  "actualizado_hasta": "2026-11-15T01:08:38.075867+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 0,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron tres derrames petroleros, contrastando con cero eventos en el mes anterior, octubre de 2026 (comparación proporcionada). Estos incidentes afectaron zonas costeras de los estados Zulia y Falcón, generando daños ambientales y a la actividad pesquera.\n\nEl primer derrame ocurrió en el municipio Valmore Rodríguez, estado Zulia, donde más de diez kilómetros de costa fueron contaminados por crudo (Reporte Confidencial (Nueva Esparta)). El derrame impactó el ecosistema marino, las redes y las embarcaciones de los pescadores locales, y playas como Los Coquitos quedaron colapsadas por el petróleo (Reporte Confidencial (Nueva Esparta)). El coordinador de Azul Ambientalista, Yohan Flores, hizo un llamado a PDVSA y a las autoridades para atender la grave situación (Reporte Confidencial (Nueva Esparta)).\n\nEl segundo incidente se denunció en el Golfete de Coro, estado Falcón, el 10 de noviembre (Runrun.es). Según el Movimiento Ecología de Voluntad Popular, la mancha de hidrocarburos cubrió al menos 3,4 km² de la superficie marina, equivalentes a 476 canchas de fútbol bajo los estándares de la FIFA (Runrun.es). El origen del derrame se atribuye a un oleoducto roto del Centro de Transporte de Hidrocarburos (Runrun.es). La magnitud del derrame fue calificada como crítica (Runrun.es).\n\nAmbos derrames provocaron daños materiales significativos y afectaron la actividad pesquera, aunque no se reportaron heridos ni víctimas fatales en los informes disponibles. Las autoridades locales y organizaciones ambientales han solicitado acciones inmediatas para contener la contaminación y mitigar sus efectos en los ecosistemas costeros.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron cuatro derrames petroleros, contrastando con cero eventos en octubre del mismo año (0 evento(s) registrados entonces vs. 4 en este período). Esta cifra muestra un aumento significativo de incidentes que requieren una respuesta inmediata por parte de las autoridades y la sociedad civil.\n\nEn el estado Zulia, un derrame de crudo de severidad alta impactó más de diez kilómetros de costa en el municipio Valmore Rodríguez, dañando el ecosistema marino, las redes y embarcaciones de los pescadores locales, y colapsando playas como Los Coquitos (Reporte Confidencial). El coordinador de Azul Ambientalista, Yohan Flores, hizo un llamado urgente a PDVSA y a otras autoridades para atender la grave situación.\n\nEn el estado Falcón, el Movimiento Ecología de Voluntad Popular denunció el 10 de noviembre un derrame crítico que cubrió al menos 3,4 km² en el Golfete de Coro, una superficie equivalente a 476 canchas de fútbol (Runrun.es). La fuga provino de un oleoducto roto del Centro, generando una mancha de hidrocarburos que afecta la zona costera occidental del país.\n\nOtro derrame en Falcón, de severidad alta, se originó en el oleoducto Ulé‑Amuay y comenzó el 8 de noviembre en Río Seco, contaminando aproximadamente 60 kilómetros de litoral y afectando directamente a la población del municipio Miranda y comunidades vecinas (Notiapure). La organización ecologista Azul Ambientalistas calificó el evento como \"muy grave\" y solicitó atención urgente por parte de PDVSA para mitigar los daños ambientales y sociales.",
   "fuentes": [
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/nacion/falcon-ong-pide-atencion-urgente-de-pdvsa-al-grave-derrame-de-crudo-en-rio-seco/"
+    },
     {
       "nombre": "Reporte Confidencial (Nueva Esparta)",
       "link": "https://reporteconfidencial.info/2026/11/06/nuevo-derrame-de-crudo-zulia/"
