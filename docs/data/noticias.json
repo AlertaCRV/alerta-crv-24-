@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/investigan-intoxicacion-masiva-de-15-personas-en-tachira/",
+        "fecha": "2026-11-14T21:20:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-14T21:20:35+00:00",
+    "fecha_evento_temprana": "2026-11-14T21:20:35+00:00",
+    "fecha_deteccion": "2026-11-15T07:51:14.206376+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Tachira::2026-11-14",
+    "titulo": "Salud pública en Tachira",
+    "texto": "📌 Salud pública en Tachira\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 14/11/2026, 5:20 p.m.\n🔎 Detectado por el sistema: 15/11/2026, 3:51 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/investigan-intoxicacion-masiva-de-15-personas-en-tachira/"
+  },
+  {
     "tipo": "derrame_petrolero",
     "ubicacion": "Falcon",
     "municipio": "Miranda",
@@ -24,32 +50,6 @@
     "clave_dedup": "derrame_petrolero::Falcon::2026-11-15",
     "titulo": "Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon",
     "texto": "📌 Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Mitare, Municipio Miranda, Falcon\n🕒 Hecho reportado: 14/11/2026, 8:48 p.m.\n🔎 Detectado por el sistema: 14/11/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/falcon-ong-pide-atencion-urgente-de-pdvsa-al-grave-derrame-de-crudo-en-rio-seco/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Tachira",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/investigan-intoxicacion-masiva-de-15-personas-en-tachira/",
-        "fecha": "2026-11-14T21:20:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-14T21:20:35+00:00",
-    "fecha_evento_temprana": "2026-11-14T21:20:35+00:00",
-    "fecha_deteccion": "2026-11-15T01:08:43.121266+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Tachira::2026-11-14",
-    "titulo": "Salud pública en Tachira",
-    "texto": "📌 Salud pública en Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 14/11/2026, 5:20 p.m.\n🔎 Detectado por el sistema: 14/11/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/investigan-intoxicacion-masiva-de-15-personas-en-tachira/"
   },
   {
     "tipo": "orden_publico",
@@ -1208,31 +1208,5 @@
     "clave_dedup": "infraestructura_electrica::Miranda::2026-11-01",
     "titulo": "Falla eléctrica en Parroquia El Cafetal, Municipio Baruta, Miranda",
     "texto": "📌 Falla eléctrica en Parroquia El Cafetal, Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia El Cafetal, Municipio Baruta, Miranda\n🕒 Hecho reportado: 01/11/2026, 6:46 p.m.\n🔎 Detectado por el sistema: 02/11/2026, 1:48 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"
-  },
-  {
-    "tipo": "ataque_armado",
-    "ubicacion": "Apure",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/",
-        "fecha": "2026-10-31T20:53:09+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-10-31T20:53:09+00:00",
-    "fecha_evento_temprana": "2026-10-31T20:53:09+00:00",
-    "fecha_deteccion": "2026-11-01T02:23:33.039655+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "ataque_armado::Apure::2026-10-31",
-    "titulo": "Ataque armado en Apure",
-    "texto": "📌 Ataque armado en Apure\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Apure\n🕒 Hecho reportado: 31/10/2026, 4:53 p.m.\n🔎 Detectado por el sistema: 31/10/2026, 10:23 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/fundaredes-dice-que-bombardeo-de-la-fanb-en-apure-contra-guerrilla-del-eln-deja-19-personas-fallecidas/"
   }
 ]
