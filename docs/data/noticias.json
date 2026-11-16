@@ -1,6 +1,58 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Carabobo",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/salud-y-educacion-se-suma-a-la-jornada-nacional-de-protesta-por-mejoras-salariales/",
+        "fecha": "2026-11-16T13:35:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T13:35:13+00:00",
+    "fecha_evento_temprana": "2026-11-16T13:35:13+00:00",
+    "fecha_deteccion": "2026-11-16T16:33:19.303314+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Carabobo::2026-11-16",
+    "titulo": "Orden público en Carabobo",
+    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 16/11/2026, 9:35 a.m.\n🔎 Detectado por el sistema: 16/11/2026, 12:33 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/salud-y-educacion-se-suma-a-la-jornada-nacional-de-protesta-por-mejoras-salariales/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Periodico de Monagas",
+        "link": "https://elperiodicodemonagas.com.ve/sucesos/cuatro-muertos-y-19-heridos-dejan-accidentes-de-moto-durante-el-fin-de-semana/",
+        "fecha": "2026-11-16T16:24:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T16:24:24+00:00",
+    "fecha_evento_temprana": "2026-11-16T16:24:24+00:00",
+    "fecha_deteccion": "2026-11-16T16:33:23.289000+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Monagas::2026-11-16",
+    "titulo": "Incidente vial en Municipio Maturín, Monagas",
+    "texto": "📌 Incidente vial en Municipio Maturín, Monagas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 16/11/2026, 12:24 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 12:33 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Periodico de Monagas: https://elperiodicodemonagas.com.ve/sucesos/cuatro-muertos-y-19-heridos-dejan-accidentes-de-moto-durante-el-fin-de-semana/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Miranda",
     "municipio": null,
     "parroquia": null,
@@ -1234,57 +1286,5 @@
     "clave_dedup": "orden_publico::Bolivar::2026-11-02",
     "titulo": "Orden público en Bolivar",
     "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 02/11/2026, 5:44 p.m.\n🔎 Detectado por el sistema: 02/11/2026, 6:42 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Noticia al Dia (Zulia)",
-        "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/",
-        "fecha": "2026-11-02T12:50:02+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-02T12:50:02+00:00",
-    "fecha_evento_temprana": "2026-11-02T12:50:02+00:00",
-    "fecha_deteccion": "2026-11-02T13:55:01.497282+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Barinas::2026-11-02",
-    "titulo": "Orden público en Barinas",
-    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 02/11/2026, 8:50 a.m.\n🔎 Detectado por el sistema: 02/11/2026, 9:55 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Miranda",
-    "municipio": "Baruta",
-    "parroquia": "El Cafetal",
-    "severidad": "medio",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Runrun.es",
-        "link": "https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/",
-        "fecha": "2026-11-01T22:46:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-01T22:46:20+00:00",
-    "fecha_evento_temprana": "2026-11-01T22:46:20+00:00",
-    "fecha_deteccion": "2026-11-02T05:48:04.827925+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Miranda::2026-11-01",
-    "titulo": "Falla eléctrica en Parroquia El Cafetal, Municipio Baruta, Miranda",
-    "texto": "📌 Falla eléctrica en Parroquia El Cafetal, Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia El Cafetal, Municipio Baruta, Miranda\n🕒 Hecho reportado: 01/11/2026, 6:46 p.m.\n🔎 Detectado por el sistema: 02/11/2026, 1:48 a.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/624355/falla-electrica-en-los-sistemas-tuy-ii-y-iii-deja-sin-agua-a-mas-de-40-zonas-de-baruta/"
   }
 ]

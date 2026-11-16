@@ -40,5 +40,19 @@
     "fecha_deteccion": "2026-11-16T00:14:59.432703+00:00",
     "fecha_evento_temprana": "2026-11-15T17:23:53+00:00",
     "municipio": null
+  },
+  "orden_publico::Carabobo::2026-11-16": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-16T16:33:19.303314+00:00",
+    "fecha_evento_temprana": "2026-11-16T13:35:13+00:00",
+    "municipio": null
+  },
+  "vialidad::Monagas::2026-11-16": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-16T16:33:23.289000+00:00",
+    "fecha_evento_temprana": "2026-11-16T16:24:24+00:00",
+    "municipio": "Maturín"
   }
 }
