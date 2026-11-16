@@ -3,16 +3,20 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-15T01:11:56.861520+00:00",
-  "actualizado_hasta": "2026-11-14T03:34:54.533798+00:00",
-  "total_eventos": 21,
+  "generado": "2026-11-16T06:51:50.631676+00:00",
+  "actualizado_hasta": "2026-11-16T00:14:59.432703+00:00",
+  "total_eventos": 23,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 21
+    "actual": 23
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 21 eventos de orden público, una disminución notable respecto a los 77 eventos registrados en el período anterior (2026‑10). Esta reducción se refleja en la menor cantidad de incidentes con daños materiales, heridos o víctimas fatales reportados por los medios de comunicación.\n\nEn el estado Barinas se produjo un hecho crítico de orden público cuando un aficionado fue asesinado y el partido de la Liga Futve fue suspendido. Según los testimonios difundidos en plataformas digitales, los disturbios iniciaron cuando miembros de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana (Noticia al Dia). El incidente provocó la interrupción del encuentro deportivo y generó una respuesta inmediata de las autoridades locales.\n\nEn Miranda, ocho militares recluidos en el Centro Nacional de Procesados Militares de Ramo Verde sufrieron descompensación física tras 96 horas de huelga de hambre. Los internos, procesados por el caso de la sublevación de Cotiza, requirieron hidratación por parte del servicio médico del penal debido al deterioro de su salud (Portuguesa Reporta). Este episodio evidenció la gravedad de la protesta dentro del sistema penitenciario militar.\n\nOtros acontecimientos de orden público también fueron reportados en el país. En Barinas, el alcalde Henry Maldonado denunció un colapso eléctrico que dejó sin suministro a varias familias del sector Cruz Blanca (Diario La Nacion). En Lara, jubilados y pensionados se sumaron a protestas sindicales exigiendo pensiones dignas y aumentos salariales (El Impulso). En Carabobo, se registraron manifestaciones vecinales contra prolongados cortes de energía (El Impulso). En Monagas, habitantes de Amana Abajo bloquearon la vía nacional para exigir asfaltado y bacheo integral (El Periodico de Monagas). Finalmente, en Bolívar, dos jubilados de la industria básica iniciaron una huelga de hambre frente a la Corporación Venezolana de Guayana, con deterioro de su salud (El Pitazo).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 23 incidentes de orden público, una disminución notable respecto a los 77 eventos del mes anterior (octubre de 2026). Esta reducción refleja una tendencia a la baja en la frecuencia de disturbios y protestas que involucren daños materiales o personas heridas.\n\nEn el estado Barinas, los disturbios alcanzaron una severidad crítica cuando un aficionado fue asesinado y se suspendió un partido de la Liga Futve tras enfrentamientos entre la delegación visitante y la seguridad de la Policía Nacional Bolivariana (PNB) (Noticia al Dia). El incidente provocó daños materiales y la interrupción de la actividad deportiva, marcando el evento de mayor gravedad en la región durante el período.\n\nEn el estado Miranda, ocho militares experimentaron descompensación física después de 96 horas de huelga de hambre en el Centro Nacional de Procesados Militares de Ramo Verde; fueron hidratados por el servicio médico del penal debido al deterioro de su salud (Portuguesa Reporta). Este hecho, catalogado con severidad alta, evidencia la tensión en el entorno carcelario y la necesidad de atención médica urgente.\n\nOtro episodio de alta severidad en Miranda involucró a 36 militares que, tras 150 horas de huelga de hambre, fueron objeto de una exigencia de atención médica por parte de sus familiares, quienes denunciaron la falta de hidratación y servicios sanitarios dentro del penal (El Pitazo). La situación generó preocupación por la salud de los detenidos y subraya la continuidad de la protesta de hambre en el centro penitenciario.\n",
   "fuentes": [
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/se-siguen-descompensando-familiares-de-militares-exigen-atencion-medica-por-huelga-de-hambre-en-ramo-verde/"
+    },
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
@@ -24,6 +28,10 @@
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/nacional/barinas-alcalde-de-cruz-paredes-exige-respuestas-a-corpoelec-ante-colapso-electrico-en-el-municipio/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/intergremial-unet-se-une-a-la-protesta-nacional/"
     },
     {
       "nombre": "El Impulso (Lara)",
