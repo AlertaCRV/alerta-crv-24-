@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-16T00:15:43.737219+00:00",
+  "actualizado": "2026-11-16T16:33:24.534470+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-15T20:43:27+00:00"
+    "hasta": "2026-11-16T16:24:24+00:00"
   },
-  "total_eventos": 637,
+  "total_eventos": 639,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 56,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 222,
+    "orden_publico": 223,
     "salud_publica": 39,
     "crisis_migratoria": 7,
     "incendio": 70,
-    "vialidad": 29,
+    "vialidad": 30,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -194,6 +194,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Carabobo",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "alto": 4,
+        "bajo": 4,
+        "medio": 8,
+        "critico": 3
+      },
+      "indice_gravedad": 2.32,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Anzoategui",
       "total": 19,
       "confirmados": 0,
@@ -208,16 +221,16 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Carabobo",
-      "total": 18,
-      "confirmados": 1,
+      "estado": "Monagas",
+      "total": 19,
+      "confirmados": 0,
       "por_severidad": {
-        "alto": 4,
-        "bajo": 4,
         "medio": 7,
-        "critico": 3
+        "alto": 4,
+        "bajo": 6,
+        "critico": 2
       },
-      "indice_gravedad": 2.33,
+      "indice_gravedad": 2.11,
       "severidad_mapa": "medio"
     },
     {
@@ -232,19 +245,6 @@
         "alto": 1
       },
       "indice_gravedad": 2.35,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Monagas",
-      "total": 18,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 7,
-        "alto": 4,
-        "bajo": 6,
-        "critico": 1
-      },
-      "indice_gravedad": 2.0,
       "severidad_mapa": "medio"
     },
     {
@@ -351,7 +351,7 @@
   "cruce_estado_tipo": {
     "Carabobo": {
       "tormenta_electrica": 1,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "infraestructura_electrica": 2,
       "inundacion": 4,
       "vialidad": 2,
@@ -513,7 +513,7 @@
     },
     "Monagas": {
       "salud_publica": 1,
-      "vialidad": 3,
+      "vialidad": 4,
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 3,
@@ -573,8 +573,8 @@
   },
   "por_severidad": {
     "alto": 145,
-    "critico": 79,
-    "medio": 218,
+    "critico": 80,
+    "medio": 219,
     "bajo": 166,
     "sin_clasificar": 29
   },
@@ -617,7 +617,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 23
+      "2026-11": 24
     },
     "salud_publica": {
       "2026-07": 1,
@@ -643,7 +643,7 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 3
+      "2026-11": 4
     },
     "sismo": {
       "2026-08": 5,
