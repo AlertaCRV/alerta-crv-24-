@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/se-siguen-descompensando-familiares-de-militares-exigen-atencion-medica-por-huelga-de-hambre-en-ramo-verde/",
+        "fecha": "2026-11-15T20:43:27+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-15T20:43:27+00:00",
+    "fecha_evento_temprana": "2026-11-15T20:43:27+00:00",
+    "fecha_deteccion": "2026-11-16T00:14:50.573796+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-11-15",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 15/11/2026, 4:43 p.m.\n🔎 Detectado por el sistema: 15/11/2026, 8:14 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/se-siguen-descompensando-familiares-de-militares-exigen-atencion-medica-por-huelga-de-hambre-en-ramo-verde/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": "Constitución",
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/regional/intergremial-unet-se-une-a-la-protesta-nacional/",
+        "fecha": "2026-11-15T17:23:53+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-15T17:23:53+00:00",
+    "fecha_evento_temprana": "2026-11-15T17:23:53+00:00",
+    "fecha_deteccion": "2026-11-16T00:14:59.432703+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Tachira::2026-11-15",
+    "titulo": "Orden público en Parroquia Constitución, Tachira",
+    "texto": "📌 Orden público en Parroquia Constitución, Tachira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Constitución, Tachira\n🕒 Hecho reportado: 15/11/2026, 1:23 p.m.\n🔎 Detectado por el sistema: 15/11/2026, 8:14 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/regional/intergremial-unet-se-une-a-la-protesta-nacional/"
+  },
+  {
     "tipo": "infraestructura_electrica",
     "ubicacion": "Lara",
     "municipio": null,

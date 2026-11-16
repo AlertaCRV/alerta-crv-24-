@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-15T20:24:56.839257+00:00",
+  "actualizado": "2026-11-16T00:15:43.737219+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-15T19:00:00+00:00"
+    "hasta": "2026-11-15T20:43:27+00:00"
   },
-  "total_eventos": 635,
+  "total_eventos": 637,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 56,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 220,
+    "orden_publico": 222,
     "salud_publica": 39,
     "crisis_migratoria": 7,
     "incendio": 70,
@@ -72,16 +72,16 @@
     },
     {
       "estado": "Tachira",
-      "total": 44,
+      "total": 45,
       "confirmados": 3,
       "por_severidad": {
         "alto": 15,
-        "bajo": 6,
+        "bajo": 7,
         "medio": 11,
         "critico": 9,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.66,
+      "indice_gravedad": 2.62,
       "severidad_mapa": "alto"
     },
     {
@@ -127,16 +127,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 32,
+      "total": 33,
       "confirmados": 5,
       "por_severidad": {
-        "alto": 5,
+        "alto": 6,
         "medio": 10,
         "critico": 5,
         "bajo": 11,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.13,
+      "indice_gravedad": 2.16,
       "severidad_mapa": "medio"
     },
     {
@@ -446,7 +446,7 @@
     },
     "Tachira": {
       "deslizamiento": 4,
-      "orden_publico": 11,
+      "orden_publico": 12,
       "inundacion": 5,
       "sismo": 1,
       "infraestructura_electrica": 3,
@@ -472,7 +472,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -572,10 +572,10 @@
     }
   },
   "por_severidad": {
-    "alto": 144,
+    "alto": 145,
     "critico": 79,
     "medio": 218,
-    "bajo": 165,
+    "bajo": 166,
     "sin_clasificar": 29
   },
   "serie_mensual_por_tipo": {
@@ -617,7 +617,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 21
+      "2026-11": 23
     },
     "salud_publica": {
       "2026-07": 1,

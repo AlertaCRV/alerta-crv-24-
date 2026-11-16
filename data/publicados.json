@@ -40,5 +40,19 @@
     "fecha_deteccion": "2026-11-15T20:24:51.519413+00:00",
     "fecha_evento_temprana": "2026-11-15T19:00:00+00:00",
     "municipio": null
+  },
+  "orden_publico::Miranda::2026-11-15": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-16T00:14:50.573796+00:00",
+    "fecha_evento_temprana": "2026-11-15T20:43:27+00:00",
+    "municipio": null
+  },
+  "orden_publico::Tachira::2026-11-15": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-16T00:14:59.432703+00:00",
+    "fecha_evento_temprana": "2026-11-15T17:23:53+00:00",
+    "municipio": null
   }
 }
