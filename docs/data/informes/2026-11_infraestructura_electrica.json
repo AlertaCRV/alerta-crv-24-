@@ -3,19 +3,23 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-15T01:11:17.558461+00:00",
-  "actualizado_hasta": "2026-11-11T18:46:36.303376+00:00",
-  "total_eventos": 8,
+  "generado": "2026-11-16T00:18:26.009436+00:00",
+  "actualizado_hasta": "2026-11-15T20:24:51.519413+00:00",
+  "total_eventos": 9,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 9,
-    "actual": 8
+    "actual": 9
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron ocho incidentes de fallas eléctricas en distintas regiones de Venezuela, una ligera disminución respecto a los nueve eventos reportados en octubre de 2026 (comparación con el período anterior). A pesar de la reducción numérica, la severidad de algunos cortes siguió generando interrupciones prolongadas en servicios esenciales y molestias a la población.\n\nEl caso más crítico fue la falla eléctrica en Táchira, donde más de 36 horas continuas sin suministro afectaron a la comunidad de La Concordia, específicamente en la carrera 12, calles 4 y 5, y la avenida Lucio Oquendo (Diario La Nacion (Tachira)). El apagón impactó tanto a residencias como al Hospital Central de San Cristóbal y sus laboratorios, obligando a los propios afectados a adquirir repuestos en Cúcuta para intentar restablecer el servicio.\n\nOtros incidentes relevantes incluyeron una interrupción en Baruta provocada por intensas lluvias que dejaron sin energía a varias urbanizaciones y comunidades populares el 8 de noviembre (El Periodico de Monagas). En el estado Zulia, un apagón a partir de las 11:00 a.m. dejó a oscuras los municipios de Lagunillas, Valmore Rodríguez y Baralt, zona petrolera clave para la producción de crudo (El Pitazo). En Anzoátegui, vecinos del sector Pueblo Nuevo Sur de El Tigre realizaron un cacerolazo tras casi nueve horas de corte el 2 de noviembre (El Tiempo). Asimismo, una explosión en la subestación Federación de Ciudad Ojeda provocó la pérdida de suministro eléctrico en varios sectores de la ciudad (Noticia al Dia). En Mérida, una fuerte fluctuación de voltaje seguida de apagón afectó a municipios como Libertador, la cuenca del Chama y el Valle del Mocarí (Reporteros de Merida). Finalmente, la falla en los sistemas Tuy II y III dejó sin agua a más de 40 zonas de Baruta debido a la pérdida de energía el 1 de noviembre (Runrun.es).\n\nEn conjunto, estos eventos evidencian la vulnerabilidad del sistema eléctrico nacional ante fenómenos climáticos, fallas de infraestructura y problemas de mantenimiento. Las autoridades locales y la Cruz Roja Venezolana han coordinado acciones de apoyo, como la distribución de alimentos, agua y asistencia médica, para mitigar el impacto en la población afectada mientras se trabaja en la reparación de la red eléctrica.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron un total de 9 eventos de fallas eléctricas, cifra idéntica a la del período anterior (octubre de 2026) que también reportó 9 incidentes (Comparación con el período anterior). Esta estabilidad numérica no implica una reducción de los efectos sobre la población, ya que varios de los cortes presentaron alta severidad y generaron perjuicios materiales y trastornos en servicios esenciales.\n\nEl evento más crítico fue la falla eléctrica en el municipio de La Concordia, estado Táchira, donde la interrupción del suministro eléctrico se prolongó por más de 36 horas continuas, afectando residencias, comercios y el Hospital Central de San Cristóbal, así como laboratorios médicos adyacentes (Diario La Nacion). Los vecinos y comerciantes de la zona tuvieron que adquirir repuestos en Cúcuta para intentar mitigar la situación.\n\nEn otras regiones se reportaron incidentes de distinta magnitud: en Lara y Yaritagua, 31 sectores del área metropolitana de Barquisimeto y del municipio Peña sufrieron cortes y fluctuaciones de voltaje el 14 de noviembre (El Impulso); en Baruta, lluvias intensas provocaron interrupciones en la distribución eléctrica el 8 de noviembre, dejando sin servicio a varias urbanizaciones (El Periodico de Monagas); en la zona petrolera de Zulia, un apagón afectó a los municipios Lagunillas, Valmore Rodríguez y Baralt el 11 de noviembre, impactando operaciones de empresas de crudo (El Pitazo); en El Tigre, Anzoátegui, vecinos realizaron un cacerolazo tras casi nueve horas de apagón el 2 de noviembre (El Tiempo); una explosión en la subestación Federación de Ciudad Ojeda dejó sin energía a diversos sectores el mismo día (Noticia al Dia); en Mérida, una fuerte fluctuación seguida de corte eléctrico se registró el 12 de noviembre, afectando varios municipios del estado (Reporteros de Merida); y en Baruta, una falla en los sistemas Tuy II y III provocó la pérdida de suministro de agua a más de 40 zonas el 1 de noviembre, vinculada a bajones de electricidad (Runrun.es).\n\nA pesar de que el número total de incidentes se mantuvo constante respecto al mes anterior, la diversidad de áreas afectadas y la recurrencia de interrupciones prolongadas subrayan la necesidad de reforzar la infraestructura eléctrica y los planes de contingencia para minimizar el impacto en la población y en sectores críticos como la salud y la producción de energía.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/15/fallas-electricas-afectaron-a-31-sectores-en-lara-y-yaritagua-durante-este-sabado-15nov/"
     },
     {
       "nombre": "El Periodico de Monagas",

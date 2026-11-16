@@ -3,7 +3,7 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-11-15T01:11:30.238612+00:00",
+  "generado": "2026-11-16T00:18:30.954142+00:00",
   "actualizado_hasta": "2026-11-08T19:43:47.405998+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 20,
     "actual": 1
   },
-  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de inundación, en contraste con los veinte eventos que se habían documentado en octubre de 2026 (comparación con el período anterior). Esta disminución significativa se refleja en los reportes oficiales de la Cruz Roja Venezolana, que continúan monitoreando la situación de emergencias en el país.\n\nEl único caso registrado corresponde a una inundación de alta severidad en el estado Carabobo (La Prensa de Lara). Las fuertes lluvias con vientos huracanados, asociadas a la llegada de la onda tropical 62, se produjeron durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre (La Prensa de Lara). Estas precipitaciones provocaron el desbordamiento de ríos, la caída de árboles y diversos daños estructurales en la capital regional, Valencia, y en la parroquia Catia La Mar (La Prensa de Lara). Además, la misma zona de La Guaira experimentó efectos similares, aunque el foco principal de los daños materiales se concentró en Carabobo (La Prensa de Lara).\n\nA pesar de la gravedad del evento en Carabobo, no se reportaron víctimas fatales y los heridos fueron mínimos, lo que permitió a las autoridades locales y a la Cruz Roja atender la emergencia de forma rápida (La Prensa de Lara). La reducción del número total de eventos de inundación respecto al mes anterior indica una tendencia a la baja en la frecuencia de este tipo de desastres durante el período analizado (comparación con el período anterior).",
+  "narrativa": "En el mes de noviembre de 2026 se registró un único evento de inundación, frente a los veinte reportados en octubre de 2026 (20 evento(s) registrados entonces vs. 1 en este período). Este descenso refleja una notable reducción de la actividad inundatoria en el país durante el período analizado.\n\nEl único caso registrado corresponde a la inundación en el estado Carabobo, catalogada con severidad alta (La Prensa de Lara). El Instituto Nacional de Meteorología e Hidrología (INAMEH) informó la llegada de la onda tropical 62, que generó fuertes lluvias durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre (La Prensa de Lara). Estas precipitaciones intensas provocaron el desbordamiento de ríos en la zona.\n\nComo consecuencia del desbordamiento, se registraron caídas de árboles y diversos daños estructurales, particularmente en la ciudad de Valencia y en la parroquia Catia La Mar, ambas ubicadas dentro del estado Carabobo (La Prensa de Lara). Los informes indican que los daños afectaron viviendas, infraestructuras públicas y redes de servicios básicos.\n\nAunque otros estados también experimentaron precipitaciones durante el mismo fin de semana, los informes de la prensa señalaron que los daños más significativos se concentraron en Carabobo y La Guaira, sin que se reportaran nuevos eventos de inundación en el resto del país (La Prensa de Lara). La escasa cantidad de incidentes registrados en noviembre, comparada con el mes anterior, sugiere una disminución temporal de la vulnerabilidad frente a fenómenos hidrometeorológicos extremos.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
