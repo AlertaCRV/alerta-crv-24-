@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-11-16T00:17:18.109528+00:00",
-  "actualizado_hasta": "2026-11-08T15:09:52.863761+00:00",
-  "total_eventos": 3,
+  "generado": "2026-11-17T08:29:07.074383+00:00",
+  "actualizado_hasta": "2026-11-17T08:26:28.667543+00:00",
+  "total_eventos": 4,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 10,
-    "actual": 3
+    "actual": 4
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron tres eventos de deslizamiento o derrumbe, una disminución notable respecto a los diez eventos reportados en el mes anterior (2026-10). Esta reducción se refleja en los reportes consolidados de la Cruz Roja Venezolana, que continúan monitoreando la situación en todo el territorio nacional.\n\nEl evento más grave ocurrió en el Distrito Capital, específicamente en el sector La Seca de la parroquia Antímano, municipio Libertador. Un alud de tierra provocó el colapso de tres habitaciones de una vivienda, atrapando a cinco menores de edad; tres de ellos fallecieron y dos resultaron heridos (El Pitazo). Las autoridades del Cuerpo de Bomberos de Caracas y Protección Civil realizaron la evaluación de daños y la inspección técnica del riesgo, y los menores fueron trasladados al Hospital Dr. Miguel Pérez Carreño para recibir atención médica.\n\nEl mismo suceso fue cubierto por Diario El Tiempo (Trujillo), que confirmó que tres menores de edad perdieron la vida y dos resultaron heridos tras el deslizamiento de tierra en Antímano, sector La Seca (Diario El Tiempo (Trujillo)). El comandante general del Cuerpo de Bomberos de Caracas, Pablo Palacios, informó que la masa de tierra tapó tres habitaciones de la vivienda, y que los niños fueron rescatados por familiares antes de ser trasladados al centro hospitalario. La coincidencia de los datos entre ambas fuentes refuerza la gravedad del incidente y la necesidad de medidas preventivas en zonas vulnerables.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron cuatro eventos de deslizamiento o derrumbe, una disminución respecto a los diez eventos reportados en octubre de 2026 (10 evento(s) registrados entonces vs. 4 en este período). La reducción del número de incidentes se observa en el contexto de intensas precipitaciones que afectaron varias regiones del país, pero la gravedad de los casos reportados sigue siendo alta.\n\nEn el Distrito Capital, un deslizamiento crítico dejó un saldo de tres menores fallecidos y dos heridos tras colapsar una vivienda en el sector La Seca, parroquia Antímano (El Pitazo). El comandante general del Cuerpo de Bomberos de Caracas informó que la masa de tierra tapó tres habitaciones, obligando al rescate de los niños y al traslado inmediato al Hospital Dr. Miguel Pérez Carreño, donde se confirmó el fallecimiento de tres de ellos.\n\nEl mismo suceso fue cubierto por el Diario El Tiempo (Trujillo), que también reportó la muerte de tres menores y dos heridos en Antímano, resaltando la intervención de bomberos y protección civil para evaluar los daños e inspeccionar el riesgo estructural del área (Diario El Tiempo (Trujillo)).\n\nEn el estado Mérida, otro deslizamiento de alta severidad comprometió la integridad de una vivienda ubicada en la avenida 1, entre calles 17 y 18, en el sector #17-54, propiedad de la señora Milagros Vivas (Reporteros de Merida). El desprendimiento dejó la parte trasera de la casa suspendida sobre el barranco, generando grietas estructurales, separación de techos y daños críticos que ponen en riesgo la seguridad del inmueble y sus ocupantes.\n\nLas autoridades locales y los equipos de emergencia continúan monitoreando las zonas vulnerables, reforzando medidas de prevención y ofreciendo asistencia a las familias afectadas, con el objetivo de mitigar futuros incidentes y proteger la vida de la población.",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -44,6 +44,10 @@
     {
       "nombre": "Notiapure",
       "link": "https://notiapure.com.ve/sucesos/alud-de-tierra-aplasto-vivienda-y-causo-la-muerte-de-tres-menores-en-antimano/"
+    },
+    {
+      "nombre": "Reporteros de Merida",
+      "link": "https://www.reporterosdemerida.com.ve/2026/11/deslizamiento-de-tierra-deja-vivienda.html"
     },
     {
       "nombre": "El Periodico de Monagas",

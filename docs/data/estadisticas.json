@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-17T00:33:45.943108+00:00",
+  "actualizado": "2026-11-17T08:27:46.285889+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-17T00:07:12+00:00"
+    "hasta": "2026-11-17T01:10:14+00:00"
   },
-  "total_eventos": 649,
+  "total_eventos": 653,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 92,
+    "inundacion": 93,
     "infraestructura_electrica": 56,
-    "deslizamiento": 43,
+    "deslizamiento": 44,
     "colapso_estructural": 5,
-    "orden_publico": 231,
+    "orden_publico": 233,
     "salud_publica": 40,
     "crisis_migratoria": 7,
     "incendio": 70,
@@ -86,15 +86,15 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 41,
-      "confirmados": 5,
+      "total": 42,
+      "confirmados": 6,
       "por_severidad": {
         "bajo": 12,
-        "medio": 13,
+        "medio": 14,
         "critico": 4,
         "alto": 12
       },
-      "indice_gravedad": 2.2,
+      "indice_gravedad": 2.19,
       "severidad_mapa": "medio"
     },
     {
@@ -141,12 +141,12 @@
     },
     {
       "estado": "Falcon",
-      "total": 27,
+      "total": 28,
       "confirmados": 4,
       "por_severidad": {
         "alto": 7,
         "bajo": 8,
-        "medio": 10,
+        "medio": 11,
         "critico": 2
       },
       "indice_gravedad": 2.11,
@@ -167,6 +167,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Merida",
+      "total": 24,
+      "confirmados": 0,
+      "por_severidad": {
+        "alto": 13,
+        "bajo": 6,
+        "medio": 4,
+        "sin_clasificar": 1
+      },
+      "indice_gravedad": 2.3,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Trujillo",
       "total": 22,
       "confirmados": 1,
@@ -178,19 +191,6 @@
         "sin_clasificar": 2
       },
       "indice_gravedad": 2.25,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Merida",
-      "total": 22,
-      "confirmados": 0,
-      "por_severidad": {
-        "alto": 11,
-        "bajo": 6,
-        "medio": 4,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 2.24,
       "severidad_mapa": "medio"
     },
     {
@@ -485,7 +485,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 14,
+      "orden_publico": 15,
       "deslizamiento": 4,
       "derrame_petrolero": 3,
       "infraestructura_agua": 1,
@@ -528,7 +528,7 @@
       "infraestructura_electrica": 1
     },
     "Portuguesa": {
-      "orden_publico": 20,
+      "orden_publico": 21,
       "inundacion": 7,
       "incendio": 1,
       "infraestructura_agua": 2,
@@ -546,8 +546,8 @@
     "Merida": {
       "vialidad": 1,
       "orden_publico": 7,
-      "inundacion": 3,
-      "deslizamiento": 2,
+      "inundacion": 4,
+      "deslizamiento": 3,
       "infraestructura_electrica": 3,
       "colapso_estructural": 1,
       "incendio": 3,
@@ -573,9 +573,9 @@
     }
   },
   "por_severidad": {
-    "alto": 147,
+    "alto": 149,
     "critico": 80,
-    "medio": 221,
+    "medio": 223,
     "bajo": 172,
     "sin_clasificar": 29
   },
@@ -591,7 +591,7 @@
       "2026-08": 48,
       "2026-09": 16,
       "2026-10": 20,
-      "2026-11": 1
+      "2026-11": 2
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -605,7 +605,7 @@
       "2026-08": 18,
       "2026-09": 9,
       "2026-10": 10,
-      "2026-11": 3
+      "2026-11": 4
     },
     "colapso_estructural": {
       "2026-07": 1,
@@ -618,7 +618,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 32
+      "2026-11": 34
     },
     "salud_publica": {
       "2026-07": 1,
