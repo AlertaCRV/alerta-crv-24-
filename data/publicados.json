@@ -1,11 +1,4 @@
 {
-  "orden_publico::Miranda::2026-11-14": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-14T03:34:54.533798+00:00",
-    "fecha_evento_temprana": "2026-11-14T00:57:59+00:00",
-    "municipio": null
-  },
   "derrame_petrolero::Falcon::2026-11-15": {
     "severidad": "alto",
     "confirmado": false,
@@ -91,18 +84,18 @@
     "municipio": "Bolívar"
   },
   "orden_publico::Falcon::2026-11-16": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-17T00:30:48.503989+00:00",
-    "fecha_evento_temprana": "2026-11-16T18:30:23+00:00",
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T08:25:10.748794+00:00",
+    "fecha_evento_temprana": "2026-11-16T23:04:01+00:00",
     "municipio": null
   },
   "orden_publico::Portuguesa::2026-11-16": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": true,
-    "fecha_deteccion": "2026-11-17T00:31:45.774741+00:00",
+    "fecha_deteccion": "2026-11-17T08:25:50.223531+00:00",
     "fecha_evento_temprana": "2026-11-16T21:23:33+00:00",
-    "municipio": "Turen"
+    "municipio": null
   },
   "orden_publico::Yaracuy::2026-11-16": {
     "severidad": "bajo",
@@ -124,5 +117,19 @@
     "fecha_deteccion": "2026-11-17T00:32:51.168698+00:00",
     "fecha_evento_temprana": "2026-11-16T17:01:24+00:00",
     "municipio": null
+  },
+  "deslizamiento::Merida::2026-11-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T08:26:28.667543+00:00",
+    "fecha_evento_temprana": "2026-11-17T01:10:14+00:00",
+    "municipio": null
+  },
+  "inundacion::Merida::2026-11-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T08:26:32.960326+00:00",
+    "fecha_evento_temprana": "2026-11-17T01:09:13+00:00",
+    "municipio": "Tovar"
   }
 }
