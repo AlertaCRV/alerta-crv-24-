@@ -1,6 +1,291 @@
 [
   {
     "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/625670/paro-educativo-y-de-salud-derivo-en-protesta-en-la-autopista-francisco-fajardo-de-caracas/",
+        "fecha": "2026-11-16T19:46:35+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/sindicalistas-aseguran-que-el-paro-nacional-se-cumplio-en-80-seguiran-hasta-conseguir-aguinaldos/",
+        "fecha": "2026-11-16T20:22:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T20:22:10+00:00",
+    "fecha_evento_temprana": "2026-11-16T19:46:35+00:00",
+    "fecha_deteccion": "2026-11-17T00:29:15.935982+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-11-16",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 16/11/2026, 4:22 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:29 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/noticias/625670/paro-educativo-y-de-salud-derivo-en-protesta-en-la-autopista-francisco-fajardo-de-caracas/\n  • La Verdad (Zulia): https://laverdad.com/sindicalistas-aseguran-que-el-paro-nacional-se-cumplio-en-80-seguiran-hasta-conseguir-aguinaldos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.6,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Carabobeno",
+        "link": "https://www.el-carabobeno.com/ovcs-registra-54-protestas-en-22-entidades-durante-jornada-de-paro-nacional-de-12-horas/",
+        "fecha": "2026-11-17T00:07:12+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-17T00:07:12+00:00",
+    "fecha_evento_temprana": "2026-11-17T00:07:12+00:00",
+    "fecha_deteccion": "2026-11-17T00:29:20.153983+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Amazonas::2026-11-17",
+    "titulo": "Orden público en Amazonas",
+    "texto": "📌 Orden público en Amazonas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 16/11/2026, 8:07 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:29 p.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Carabobeno: https://www.el-carabobeno.com/ovcs-registra-54-protestas-en-22-entidades-durante-jornada-de-paro-nacional-de-12-horas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/sindicalistas-aseguran-que-el-paro-nacional-se-cumplio-en-80-seguiran-hasta-conseguir-aguinaldos/",
+        "fecha": "2026-11-16T20:22:10+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T20:22:10+00:00",
+    "fecha_evento_temprana": "2026-11-16T20:22:10+00:00",
+    "fecha_deteccion": "2026-11-17T00:29:55.590010+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Guarico::2026-11-16",
+    "titulo": "Orden público en Guarico",
+    "texto": "📌 Orden público en Guarico\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 16/11/2026, 4:22 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:29 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/sindicalistas-aseguran-que-el-paro-nacional-se-cumplio-en-80-seguiran-hasta-conseguir-aguinaldos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": "El Carmen",
+    "severidad": "bajo",
+    "score": 1.2,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/16/personal-de-salud-del-hospital-luis-razetti-de-barinas-protesta-en-exigencia-de-salarios-justos-y-pago-digno-de-aguinaldos-16nov/",
+        "fecha": "2026-11-16T19:50:12+00:00"
+      },
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/nacional/barinas-desde-cuatro-puntos-diferentes-trabajadores-exigieron-reivindicaciones-laborales-y-bono-navideno/",
+        "fecha": "2026-11-16T20:40:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T20:40:01+00:00",
+    "fecha_evento_temprana": "2026-11-16T19:50:12+00:00",
+    "fecha_deteccion": "2026-11-17T00:30:09.014542+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-11-16",
+    "titulo": "Orden público en Parroquia El Carmen, Barinas",
+    "texto": "📌 Orden público en Parroquia El Carmen, Barinas\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia El Carmen, Barinas\n🕒 Hecho reportado: 16/11/2026, 4:40 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:30 p.m.\n📊 Fuentes independientes: 2 (score 1.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/16/personal-de-salud-del-hospital-luis-razetti-de-barinas-protesta-en-exigencia-de-salarios-justos-y-pago-digno-de-aguinaldos-16nov/\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/barinas-desde-cuatro-puntos-diferentes-trabajadores-exigieron-reivindicaciones-laborales-y-bono-navideno/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Tachira",
+    "municipio": "Bolívar",
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/frontera/seis-lesionados-en-tres-accidentes-en-san-antonio/",
+        "fecha": "2026-11-16T18:03:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T18:03:33+00:00",
+    "fecha_evento_temprana": "2026-11-16T18:03:33+00:00",
+    "fecha_deteccion": "2026-11-17T00:30:21.899598+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Tachira::2026-11-16",
+    "titulo": "Incidente vial en Municipio Bolívar, Tachira",
+    "texto": "📌 Incidente vial en Municipio Bolívar, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Bolívar, Tachira\n🕒 Hecho reportado: 16/11/2026, 2:03 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/frontera/seis-lesionados-en-tres-accidentes-en-san-antonio/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/trabajadores-se-adhirieron-al-paro-nacional-convocado-para-este-lunes/",
+        "fecha": "2026-11-16T18:30:23+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/mas-protestas-trabajadores-activos-y-jubilados-continuan-reclamando-salarios-dignos/",
+        "fecha": "2026-11-16T23:04:01+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T23:04:01+00:00",
+    "fecha_evento_temprana": "2026-11-16T18:30:23+00:00",
+    "fecha_deteccion": "2026-11-17T00:30:48.503989+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-11-16",
+    "titulo": "Orden público en Falcon",
+    "texto": "📌 Orden público en Falcon\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 16/11/2026, 7:04 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:30 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/trabajadores-se-adhirieron-al-paro-nacional-convocado-para-este-lunes/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/mas-protestas-trabajadores-activos-y-jubilados-continuan-reclamando-salarios-dignos/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Portuguesa",
+    "municipio": "Turen",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos/?utm_source=rss&utm_medium=rss&utm_campaign=enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos",
+        "fecha": "2026-11-16T23:40:00+00:00"
+      },
+      {
+        "nombre": "Portuguesa al Dia",
+        "link": "https://portuguesaaldia.com/2026/11/16/cientos-de-trabajadores-del-sector-publico-se-sumaron-al-paro-nacional-en-portuguesa/",
+        "fecha": "2026-11-16T21:23:33+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T23:40:00+00:00",
+    "fecha_evento_temprana": "2026-11-16T21:23:33+00:00",
+    "fecha_deteccion": "2026-11-17T00:31:45.774741+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Portuguesa::2026-11-16",
+    "titulo": "Orden público en Municipio Turen, Portuguesa",
+    "texto": "📌 Orden público en Municipio Turen, Portuguesa\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Turen, Portuguesa\n🕒 Hecho reportado: 16/11/2026, 7:40 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:31 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos/?utm_source=rss&utm_medium=rss&utm_campaign=enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos\n  • Portuguesa al Dia: https://portuguesaaldia.com/2026/11/16/cientos-de-trabajadores-del-sector-publico-se-sumaron-al-paro-nacional-en-portuguesa/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Yaracuy",
+    "municipio": "San Felipe",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-sumaron-a-la-jornada-nacional-de-protesta-video/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-sumaron-a-la-jornada-nacional-de-protesta-video",
+        "fecha": "2026-11-16T22:31:47+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T22:31:47+00:00",
+    "fecha_evento_temprana": "2026-11-16T22:31:47+00:00",
+    "fecha_deteccion": "2026-11-17T00:31:58.718587+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Yaracuy::2026-11-16",
+    "titulo": "Orden público en Municipio San Felipe, Yaracuy",
+    "texto": "📌 Orden público en Municipio San Felipe, Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio San Felipe, Yaracuy\n🕒 Hecho reportado: 16/11/2026, 6:31 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:31 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-sumaron-a-la-jornada-nacional-de-protesta-video/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-sumaron-a-la-jornada-nacional-de-protesta-video"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Notiapure",
+        "link": "https://notiapure.com.ve/nacion/mas-de-500-intoxicaciones-masivas-en-escuelas-y-liceos-encienden-las-alarmas-nacionales/",
+        "fecha": "2026-11-16T18:05:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T18:05:13+00:00",
+    "fecha_evento_temprana": "2026-11-16T18:05:13+00:00",
+    "fecha_deteccion": "2026-11-17T00:32:25.564923+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Barinas::2026-11-16",
+    "titulo": "Salud pública en Barinas",
+    "texto": "📌 Salud pública en Barinas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 16/11/2026, 2:05 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:32 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/mas-de-500-intoxicaciones-masivas-en-escuelas-y-liceos-encienden-las-alarmas-nacionales/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.4,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/16/avance-enfermeras-jubiladas-de-lara-denuncian-total-desproteccion-y-califican-sus-ingresos-como-sueldos-de-miseria-16nov/",
+        "fecha": "2026-11-16T21:01:45+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/locales/salud-educacion-lara-marchan-gobernacion-paro-nacional/",
+        "fecha": "2026-11-16T17:01:24+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-16T21:01:45+00:00",
+    "fecha_evento_temprana": "2026-11-16T17:01:24+00:00",
+    "fecha_deteccion": "2026-11-17T00:32:51.168698+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-11-16",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 16/11/2026, 5:01 p.m.\n🔎 Detectado por el sistema: 16/11/2026, 8:32 p.m.\n📊 Fuentes independientes: 2 (score 1.4)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/16/avance-enfermeras-jubiladas-de-lara-denuncian-total-desproteccion-y-califican-sus-ingresos-como-sueldos-de-miseria-16nov/\n  • La Prensa de Lara: https://laprensadelara.com/locales/salud-educacion-lara-marchan-gobernacion-paro-nacional/"
+  },
+  {
+    "tipo": "orden_publico",
     "ubicacion": "Carabobo",
     "municipio": null,
     "parroquia": null,
@@ -1260,31 +1545,5 @@
     "clave_dedup": "infraestructura_electrica::Zulia::2026-11-03",
     "titulo": "Falla eléctrica en Parroquia Libertad, Municipio Lagunillas, Zulia",
     "texto": "📌 Falla eléctrica en Parroquia Libertad, Municipio Lagunillas, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Libertad, Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 02/11/2026, 11:41 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 7:26 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/",
-        "fecha": "2026-11-02T21:44:44+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-02T21:44:44+00:00",
-    "fecha_evento_temprana": "2026-11-02T21:44:44+00:00",
-    "fecha_deteccion": "2026-11-02T22:42:28.756511+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-11-02",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 02/11/2026, 5:44 p.m.\n🔎 Detectado por el sistema: 02/11/2026, 6:42 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/guayana/huelga-de-hambre-en-bolivar-se-deteriora-la-salud-de-los-manifestantes/"
   }
 ]
