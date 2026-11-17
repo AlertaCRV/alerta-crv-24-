@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-17T08:27:46.285889+00:00",
+  "actualizado": "2026-11-17T17:53:27.886848+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-17T01:10:14+00:00"
+    "hasta": "2026-11-17T16:19:17+00:00"
   },
-  "total_eventos": 653,
+  "total_eventos": 659,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
     "infraestructura_electrica": 56,
     "deslizamiento": 44,
     "colapso_estructural": 5,
-    "orden_publico": 233,
-    "salud_publica": 40,
+    "orden_publico": 237,
+    "salud_publica": 42,
     "crisis_migratoria": 7,
     "incendio": 70,
     "vialidad": 31,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Zulia",
-      "total": 55,
+      "total": 57,
       "confirmados": 12,
       "por_severidad": {
-        "medio": 25,
-        "critico": 7,
+        "medio": 26,
+        "critico": 8,
         "bajo": 10,
         "sin_clasificar": 1,
         "alto": 12
       },
-      "indice_gravedad": 2.3,
+      "indice_gravedad": 2.32,
       "severidad_mapa": "medio"
     },
     {
@@ -72,14 +72,14 @@
     },
     {
       "estado": "Tachira",
-      "total": 46,
+      "total": 47,
       "confirmados": 3,
       "por_severidad": {
         "alto": 16,
         "bajo": 7,
         "medio": 11,
         "critico": 9,
-        "sin_clasificar": 3
+        "sin_clasificar": 4
       },
       "indice_gravedad": 2.63,
       "severidad_mapa": "alto"
@@ -127,16 +127,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 33,
+      "total": 34,
       "confirmados": 5,
       "por_severidad": {
-        "alto": 6,
+        "alto": 7,
         "medio": 10,
         "critico": 5,
         "bajo": 11,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.16,
+      "indice_gravedad": 2.18,
       "severidad_mapa": "medio"
     },
     {
@@ -194,6 +194,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Monagas",
+      "total": 20,
+      "confirmados": 0,
+      "por_severidad": {
+        "medio": 7,
+        "alto": 5,
+        "bajo": 6,
+        "critico": 2
+      },
+      "indice_gravedad": 2.15,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Carabobo",
       "total": 19,
       "confirmados": 1,
@@ -232,19 +245,6 @@
         "alto": 1
       },
       "indice_gravedad": 2.28,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Monagas",
-      "total": 19,
-      "confirmados": 0,
-      "por_severidad": {
-        "medio": 7,
-        "alto": 4,
-        "bajo": 6,
-        "critico": 2
-      },
-      "indice_gravedad": 2.11,
       "severidad_mapa": "medio"
     },
     {
@@ -339,14 +339,15 @@
     },
     {
       "estado": "Delta Amacuro",
-      "total": 3,
+      "total": 4,
       "confirmados": 0,
       "por_severidad": {
         "bajo": 2,
-        "medio": 1
+        "medio": 1,
+        "alto": 1
       },
-      "indice_gravedad": 1.33,
-      "severidad_mapa": "bajo"
+      "indice_gravedad": 1.75,
+      "severidad_mapa": "medio"
     }
   ],
   "cruce_estado_tipo": {
@@ -379,9 +380,9 @@
       "colapso_estructural": 1,
       "inundacion": 6,
       "sequia": 1,
-      "orden_publico": 19,
+      "orden_publico": 20,
       "sismo": 2,
-      "salud_publica": 3,
+      "salud_publica": 4,
       "ataque_armado": 2,
       "explosion": 1,
       "vialidad": 1,
@@ -455,7 +456,7 @@
       "vialidad": 3,
       "motin_carcelario": 1,
       "ataque_armado": 2,
-      "salud_publica": 6
+      "salud_publica": 7
     },
     "Bolivar": {
       "orden_publico": 12,
@@ -473,7 +474,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 14,
+      "orden_publico": 15,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -518,7 +519,7 @@
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 3,
-      "orden_publico": 6
+      "orden_publico": 7
     },
     "Guarico": {
       "sequia": 2,
@@ -557,7 +558,7 @@
     "Delta Amacuro": {
       "derrame_petrolero": 1,
       "inundacion": 1,
-      "orden_publico": 1
+      "orden_publico": 2
     },
     "La Guaira": {
       "deslizamiento": 7,
@@ -573,11 +574,11 @@
     }
   },
   "por_severidad": {
-    "alto": 149,
-    "critico": 80,
-    "medio": 223,
+    "alto": 152,
+    "critico": 81,
+    "medio": 224,
     "bajo": 172,
-    "sin_clasificar": 29
+    "sin_clasificar": 30
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -618,14 +619,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 34
+      "2026-11": 38
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 20,
-      "2026-11": 9
+      "2026-11": 11
     },
     "crisis_migratoria": {
       "2026-07": 4,
