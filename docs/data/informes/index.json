@@ -4,8 +4,8 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-16T06:52:17.366346+00:00",
-    "total_eventos": 3
+    "generado": "2026-11-17T00:37:35.882752+00:00",
+    "total_eventos": 5
   },
   {
     "periodo": "2026-11",
@@ -20,15 +20,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-16T06:51:50.631676+00:00",
-    "total_eventos": 23
+    "generado": "2026-11-17T00:36:42.202839+00:00",
+    "total_eventos": 32
   },
   {
     "periodo": "2026-11",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-16T00:18:30.954142+00:00",
+    "generado": "2026-11-17T00:36:15.970814+00:00",
     "total_eventos": 1
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-16T00:18:26.009436+00:00",
+    "generado": "2026-11-17T00:36:02.373361+00:00",
     "total_eventos": 9
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-16T00:17:59.034726+00:00",
+    "generado": "2026-11-17T00:35:48.649838+00:00",
     "total_eventos": 9
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-16T00:16:51.632853+00:00",
+    "generado": "2026-11-17T00:34:40.394410+00:00",
     "total_eventos": 4
   },
   {

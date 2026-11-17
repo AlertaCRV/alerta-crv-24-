@@ -3,16 +3,24 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-11-16T06:52:17.366346+00:00",
-  "actualizado_hasta": "2026-11-06T21:40:26.896766+00:00",
-  "total_eventos": 3,
+  "generado": "2026-11-17T00:37:35.882752+00:00",
+  "actualizado_hasta": "2026-11-17T00:30:21.899598+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 3
+    "actual": 5
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron tres incidentes viales, una disminución respecto al período anterior en el que se contabilizaron siete eventos (7 evento(s) registrados entonces vs. 3 en este período). Los hechos se concentraron en tres estados diferentes y presentaron distintas grados de severidad, desde alto hasta crítico.\n\nEn el estado Aragua, un autobús y un camión colisionaron y se volcaron en la carretera Cagua‑Villa de Cura, generando daños materiales y la necesidad de la intervención de la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana (La Prensa de Monagas). La severidad del incidente fue catalogada como alta.\n\nEn Portuguesa, el 4 de noviembre, un autobús modelo Blue Bird de la línea Independiente volcó en la carretera nacional Biscucuy‑Guanare, provocando la muerte de dos personas y dejando 43 heridos entre los aproximadamente 50 pasajeros que transportaba (La Verdad (Zulia)). Este accidente fue calificado con severidad crítica.\n\nEn el Distrito Capital, la noche del 5 de noviembre se produjo un choque múltiple en la Autopista Gran Cacique Guaicaipuro, distribuidor La Araña, sentido Caricuao, en la parroquia San Juan, cuando un conductor perdió el control de su vehículo y colisionó con otro, resultando en cinco personas lesionadas con múltiples traumatismos (Primicia (Bolivar)). La severidad del suceso también se describió como alta.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron cinco incidentes viales de alta o crítica severidad, una disminución respecto a los siete eventos reportados en octubre del mismo año (7 evento(s) registrados entonces vs. 5 en este período). Todos los hechos fueron atendidos por autoridades de la Guardia Nacional Bolivariana, la Policía Nacional Bolivariana, cuerpos de bomberos y unidades de protección civil, y generaron daños materiales y personas lesionadas o fallecidas.\n\nEn el estado Aragua se produjo una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, lo que obligó a la intervención de la GNB y la PNB para atender a los involucrados (La Prensa de Monagas). Por otro lado, en Portuguesa, un autobús modelo Blue Bird volcó en la carretera nacional Biscucuy‑Guanare, dejando dos muertos y 43 heridos entre los aproximadamente 50 pasajeros que transportaba (La Verdad (Zulia)).\n\nEn el Distrito Capital, específicamente en la autopista Gran Cacique Guaicaipuro, distribuidor La Araña, se registró un choque múltiple que dejó cinco personas con lesiones de diversa gravedad, sin que se reportaran víctimas fatales ni derrames de combustible (Primicia (Bolivar)).\n\nEl estado Monagas vivió un fin de semana crítico con varios accidentes de moto: cuatro fallecimientos (dos en Maturín y dos en Aguasay) y 19 heridos fueron contabilizados tras los incidentes ocurridos entre el 13 y el 16 de noviembre (El Periodico de Monagas). Los fallecidos fueron identificados, entre ellos Ramón Manu, y los heridos fueron atendidos en el Hospital Universitario Dr. Manuel Núñez Tovar.\n\nEn San Antonio del Táchira, municipio fronterizo Bolívar, se reportaron tres accidentes de tránsito durante el fin de semana, que dejaron un total de seis lesionados, incluido un joven de 18 años con politraumatismos que fue trasladado al Hospital Dr. Samuel Darío M (Diario La Nacion (Tachira)).",
   "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/seis-lesionados-en-tres-accidentes-en-san-antonio/"
+    },
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/sucesos/cuatro-muertos-y-19-heridos-dejan-accidentes-de-moto-durante-el-fin-de-semana/"
+    },
     {
       "nombre": "La Prensa de Monagas",
       "link": "https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/"

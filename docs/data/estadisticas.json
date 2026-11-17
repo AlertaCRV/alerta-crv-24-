@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-16T16:33:24.534470+00:00",
+  "actualizado": "2026-11-17T00:33:45.943108+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-16T16:24:24+00:00"
+    "hasta": "2026-11-17T00:07:12+00:00"
   },
-  "total_eventos": 639,
+  "total_eventos": 649,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 92,
     "infraestructura_electrica": 56,
     "deslizamiento": 43,
     "colapso_estructural": 5,
-    "orden_publico": 223,
-    "salud_publica": 39,
+    "orden_publico": 231,
+    "salud_publica": 40,
     "crisis_migratoria": 7,
     "incendio": 70,
-    "vialidad": 30,
+    "vialidad": 31,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -30,11 +30,11 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 100,
-      "confirmados": 17,
+      "total": 101,
+      "confirmados": 18,
       "por_severidad": {
         "alto": 18,
-        "medio": 31,
+        "medio": 32,
         "bajo": 30,
         "critico": 15,
         "sin_clasificar": 6
@@ -58,43 +58,43 @@
     },
     {
       "estado": "Lara",
-      "total": 51,
-      "confirmados": 3,
+      "total": 52,
+      "confirmados": 4,
       "por_severidad": {
         "critico": 4,
         "alto": 10,
         "medio": 19,
-        "bajo": 14,
+        "bajo": 15,
         "sin_clasificar": 4
       },
-      "indice_gravedad": 2.09,
+      "indice_gravedad": 2.06,
       "severidad_mapa": "medio"
     },
     {
       "estado": "Tachira",
-      "total": 45,
+      "total": 46,
       "confirmados": 3,
       "por_severidad": {
-        "alto": 15,
+        "alto": 16,
         "bajo": 7,
         "medio": 11,
         "critico": 9,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.62,
+      "indice_gravedad": 2.63,
       "severidad_mapa": "alto"
     },
     {
       "estado": "Portuguesa",
-      "total": 40,
-      "confirmados": 4,
+      "total": 41,
+      "confirmados": 5,
       "por_severidad": {
-        "bajo": 11,
+        "bajo": 12,
         "medio": 13,
         "critico": 4,
         "alto": 12
       },
-      "indice_gravedad": 2.23,
+      "indice_gravedad": 2.2,
       "severidad_mapa": "medio"
     },
     {
@@ -113,16 +113,16 @@
     },
     {
       "estado": "Barinas",
-      "total": 33,
-      "confirmados": 2,
+      "total": 35,
+      "confirmados": 3,
       "por_severidad": {
-        "alto": 4,
+        "alto": 5,
         "medio": 14,
-        "bajo": 9,
+        "bajo": 10,
         "critico": 5,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.16,
+      "indice_gravedad": 2.15,
       "severidad_mapa": "medio"
     },
     {
@@ -140,6 +140,19 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Falcon",
+      "total": 27,
+      "confirmados": 4,
+      "por_severidad": {
+        "alto": 7,
+        "bajo": 8,
+        "medio": 10,
+        "critico": 2
+      },
+      "indice_gravedad": 2.11,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Bolivar",
       "total": 26,
       "confirmados": 2,
@@ -151,19 +164,6 @@
         "sin_clasificar": 3
       },
       "indice_gravedad": 2.0,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Falcon",
-      "total": 26,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 7,
-        "bajo": 7,
-        "medio": 10,
-        "critico": 2
-      },
-      "indice_gravedad": 2.15,
       "severidad_mapa": "medio"
     },
     {
@@ -221,6 +221,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Yaracuy",
+      "total": 19,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 5,
+        "bajo": 6,
+        "medio": 6,
+        "sin_clasificar": 1,
+        "alto": 1
+      },
+      "indice_gravedad": 2.28,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Monagas",
       "total": 19,
       "confirmados": 0,
@@ -231,20 +245,6 @@
         "critico": 2
       },
       "indice_gravedad": 2.11,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 18,
-      "confirmados": 1,
-      "por_severidad": {
-        "critico": 5,
-        "bajo": 5,
-        "medio": 6,
-        "sin_clasificar": 1,
-        "alto": 1
-      },
-      "indice_gravedad": 2.35,
       "severidad_mapa": "medio"
     },
     {
@@ -315,26 +315,27 @@
     },
     {
       "estado": "Guarico",
-      "total": 7,
+      "total": 8,
       "confirmados": 0,
       "por_severidad": {
         "medio": 4,
         "critico": 2,
-        "alto": 1
+        "alto": 1,
+        "bajo": 1
       },
-      "indice_gravedad": 2.71,
+      "indice_gravedad": 2.5,
       "severidad_mapa": "alto"
     },
     {
       "estado": "Amazonas",
-      "total": 4,
+      "total": 5,
       "confirmados": 1,
       "por_severidad": {
         "critico": 3,
-        "medio": 1
+        "medio": 2
       },
-      "indice_gravedad": 3.5,
-      "severidad_mapa": "critico"
+      "indice_gravedad": 3.2,
+      "severidad_mapa": "alto"
     },
     {
       "estado": "Delta Amacuro",
@@ -362,7 +363,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 24,
+      "orden_publico": 25,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -390,7 +391,7 @@
     "Distrito Capital": {
       "deslizamiento": 6,
       "inundacion": 18,
-      "orden_publico": 32,
+      "orden_publico": 33,
       "incendio": 20,
       "vialidad": 6,
       "infraestructura_electrica": 9,
@@ -414,9 +415,9 @@
       "deslizamiento": 4,
       "inundacion": 6,
       "vialidad": 4,
-      "orden_publico": 12,
+      "orden_publico": 13,
       "infraestructura_agua": 1,
-      "salud_publica": 3,
+      "salud_publica": 4,
       "infraestructura_electrica": 3
     },
     "Sucre": {
@@ -451,7 +452,7 @@
       "sismo": 1,
       "infraestructura_electrica": 3,
       "incendio": 9,
-      "vialidad": 2,
+      "vialidad": 3,
       "motin_carcelario": 1,
       "ataque_armado": 2,
       "salud_publica": 6
@@ -484,7 +485,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "deslizamiento": 4,
       "derrame_petrolero": 3,
       "infraestructura_agua": 1,
@@ -496,7 +497,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
-      "orden_publico": 5,
+      "orden_publico": 6,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -522,12 +523,12 @@
     "Guarico": {
       "sequia": 2,
       "colapso_estructural": 1,
-      "orden_publico": 2,
+      "orden_publico": 3,
       "salud_publica": 1,
       "infraestructura_electrica": 1
     },
     "Portuguesa": {
-      "orden_publico": 19,
+      "orden_publico": 20,
       "inundacion": 7,
       "incendio": 1,
       "infraestructura_agua": 2,
@@ -567,15 +568,15 @@
     },
     "Amazonas": {
       "salud_publica": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "accidente_transporte": 2
     }
   },
   "por_severidad": {
-    "alto": 145,
+    "alto": 147,
     "critico": 80,
-    "medio": 219,
-    "bajo": 166,
+    "medio": 221,
+    "bajo": 172,
     "sin_clasificar": 29
   },
   "serie_mensual_por_tipo": {
@@ -617,14 +618,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 24
+      "2026-11": 32
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 20,
-      "2026-11": 8
+      "2026-11": 9
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -643,7 +644,7 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 4
+      "2026-11": 5
     },
     "sismo": {
       "2026-08": 5,
