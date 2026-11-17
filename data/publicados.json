@@ -131,5 +131,47 @@
     "fecha_deteccion": "2026-11-17T08:26:32.960326+00:00",
     "fecha_evento_temprana": "2026-11-17T01:09:13+00:00",
     "municipio": "Tovar"
+  },
+  "orden_publico::Zulia::2026-11-17": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:50:25.896995+00:00",
+    "fecha_evento_temprana": "2026-11-17T14:30:27+00:00",
+    "municipio": null
+  },
+  "orden_publico::Delta Amacuro::2026-11-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:50:30.079757+00:00",
+    "fecha_evento_temprana": "2026-11-17T14:30:27+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-11-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:50:55.625934+00:00",
+    "fecha_evento_temprana": "2026-11-17T14:00:12+00:00",
+    "municipio": null
+  },
+  "orden_publico::Monagas::2026-11-17": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:51:22.157058+00:00",
+    "fecha_evento_temprana": "2026-11-17T14:00:12+00:00",
+    "municipio": null
+  },
+  "salud_publica::Zulia::2026-11-17": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:51:35.441115+00:00",
+    "fecha_evento_temprana": "2026-11-17T15:17:10+00:00",
+    "municipio": "Maracaibo"
+  },
+  "salud_publica::Tachira::2026-11-17": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-17T17:52:01.707595+00:00",
+    "fecha_evento_temprana": "2026-11-17T16:19:17+00:00",
+    "municipio": "Ayacucho"
   }
 }
