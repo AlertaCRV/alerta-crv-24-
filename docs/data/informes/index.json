@@ -28,15 +28,15 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-17T00:36:15.970814+00:00",
-    "total_eventos": 1
+    "generado": "2026-11-18T07:23:57.123105+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-11",
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-17T00:36:02.373361+00:00",
+    "generado": "2026-11-18T07:23:51.674954+00:00",
     "total_eventos": 9
   },
   {

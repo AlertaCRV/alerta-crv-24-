@@ -1,11 +1,4 @@
 {
-  "derrame_petrolero::Falcon::2026-11-15": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-15T01:08:38.075867+00:00",
-    "fecha_evento_temprana": "2026-11-15T00:48:04+00:00",
-    "municipio": "Miranda"
-  },
   "salud_publica::Tachira::2026-11-14": {
     "severidad": "medio",
     "confirmado": false,
