@@ -1,5 +1,83 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/trancan-la-falcon-zulia-a-la-altura-del-puente-la-primavera-por-racionamientos-electricos/",
+        "fecha": "2026-11-18T17:58:21+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T17:58:21+00:00",
+    "fecha_evento_temprana": "2026-11-18T17:58:21+00:00",
+    "fecha_deteccion": "2026-11-18T23:11:53.216975+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-11-18",
+    "titulo": "Orden público en Falcon",
+    "texto": "📌 Orden público en Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Falcon\n🕒 Hecho reportado: 18/11/2026, 1:58 p.m.\n🔎 Detectado por el sistema: 18/11/2026, 7:11 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/trancan-la-falcon-zulia-a-la-altura-del-puente-la-primavera-por-racionamientos-electricos/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/",
+        "fecha": "2026-11-18T19:59:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T19:59:48+00:00",
+    "fecha_evento_temprana": "2026-11-18T19:59:48+00:00",
+    "fecha_deteccion": "2026-11-18T23:12:32.386739+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Lara::2026-11-18",
+    "titulo": "Incidente vial en Lara",
+    "texto": "📌 Incidente vial en Lara\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 18/11/2026, 3:59 p.m.\n🔎 Detectado por el sistema: 18/11/2026, 7:12 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/"
+  },
+  {
+    "tipo": "vialidad",
+    "ubicacion": "Zulia",
+    "municipio": "Santa Rita",
+    "parroquia": "Santa Rita",
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/",
+        "fecha": "2026-11-18T19:59:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T19:59:48+00:00",
+    "fecha_evento_temprana": "2026-11-18T19:59:48+00:00",
+    "fecha_deteccion": "2026-11-18T23:12:57.894617+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "vialidad::Zulia::2026-11-18",
+    "titulo": "Incidente vial en Parroquia Santa Rita, Municipio Santa Rita, Zulia",
+    "texto": "📌 Incidente vial en Parroquia Santa Rita, Municipio Santa Rita, Zulia\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Parroquia Santa Rita, Municipio Santa Rita, Zulia\n🕒 Hecho reportado: 18/11/2026, 3:59 p.m.\n🔎 Detectado por el sistema: 18/11/2026, 7:12 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/"
+  },
+  {
     "tipo": "salud_publica",
     "ubicacion": "Aragua",
     "municipio": null,
@@ -1675,31 +1753,5 @@
     "clave_dedup": "vialidad::Portuguesa::2026-11-04",
     "titulo": "Incidente vial en Municipio Guanare, Portuguesa",
     "texto": "📌 Incidente vial en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 04/11/2026, 4:44 p.m.\n🔎 Detectado por el sistema: 04/11/2026, 8:01 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/accidente-de-autobus-en-portuguesa-deja-2-muertos-y-43-heridos/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Carabobo",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/",
-        "fecha": "2026-11-04T15:11:56+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-04T15:11:56+00:00",
-    "fecha_evento_temprana": "2026-11-04T15:11:56+00:00",
-    "fecha_deteccion": "2026-11-04T18:46:01.536504+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Carabobo::2026-11-04",
-    "titulo": "Orden público en Carabobo",
-    "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 04/11/2026, 11:11 a.m.\n🔎 Detectado por el sistema: 04/11/2026, 2:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/"
   }
 ]

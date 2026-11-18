@@ -3,19 +3,27 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-17T00:36:42.202839+00:00",
-  "actualizado_hasta": "2026-11-17T00:32:51.168698+00:00",
-  "total_eventos": 32,
+  "generado": "2026-11-18T23:14:21.923601+00:00",
+  "actualizado_hasta": "2026-11-18T23:11:53.216975+00:00",
+  "total_eventos": 39,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 32
+    "actual": 39
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 32 eventos de orden público, una disminución respecto a los 77 eventos del mes anterior (2026‑10). Esta reducción se refleja en la menor frecuencia de incidentes reportados a lo largo del país, aunque persisten casos de alta gravedad que requieren atención inmediata.\n\nEn el estado Barinas, los disturbios alcanzaron una severidad crítica cuando simpatizantes de la delegación visitante vulneraron el cerco de seguridad de la Policía Nacional Bolivariana, resultando en el asesinato de un aficionado y la suspensión de un partido de la Liga Futve (Noticia al Dia (Zulia)). Este hecho generó una respuesta policial y la intervención de autoridades locales para restablecer el orden.\n\nEn Miranda, ocho militares recluidos en el Centro Nacional de Procesados Militares de Ramo Verde presentaron descompensación física tras 96 horas de huelga de hambre, requiriendo hidratación y atención médica de urgencia (Portuguesa Reporta). La situación evidenció la tensión en el penal y la preocupación de organismos de derechos humanos por la falta de acceso a servicios básicos.\n\nEl mismo centro penitenciario fue escenario de una nueva escalada el 15 de noviembre, cuando los familiares de 36 militares en huelga de hambre exigieron atención médica urgente, denunciando la ausencia de hidratación y servicios sanitarios para los detenidos (El Pitazo). Las protestas familiares subrayaron la gravedad del conflicto interno y la necesidad de garantizar condiciones mínimas de salud para los internos.\n\nEn conjunto, aunque el número total de incidentes disminuyó, los eventos de orden público con consecuencias graves en Barinas y Miranda demuestran que la situación de seguridad y derechos humanos sigue siendo un desafío relevante para las autoridades venezolanas.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 39 eventos de orden público, una disminución respecto a los 77 eventos del mes anterior (octubre de 2026). Esta reducción refleja una tendencia a la baja en la cantidad de incidentes reportados en el país.\n\nEn el estado Barinas se produjo un episodio de orden público de severidad crítica, que provocó la suspensión de un partido de la Liga Futve tras disturbios iniciados por miembros de la delegación visitante que vulneraron el cerco de seguridad de la Policía Nacional Bolivariana (Noticia al Dia (Zulia)).\n\nEl estado Miranda registró varios incidentes de orden público de alta severidad. Un caso fue documentado por Portuguesa Reporta, que informó sobre ocho militares que sufrieron descompensación tras 96 horas de huelga de hambre en el centro de Ramo Verde (Portuguesa Reporta). Además, El Pitazo reportó dos incidentes adicionales en Miranda, relacionados con la situación de los 36 militares en huelga de hambre y sus complicaciones clínicas críticas (El Pitazo). \n\nEn Delta Amacuro también se registró un evento de orden público de alta severidad, según informó El Pitazo (El Pitazo). De igual forma, el estado Monagas presentó un incidente de orden público de alta severidad, igualmente reportado por El Pitazo (El Pitazo).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/se-siguen-descompensando-familiares-de-militares-exigen-atencion-medica-por-huelga-de-hambre-en-ramo-verde/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/economia/paro-por-aguinaldos-y-salarios-sumo-54-protestas-en-22-estados-pese-a-bloqueos-policiales-e-intimidaciones/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/36-militares-cumplen-una-semana-en-huelga-de-hambre-en-ramo-verde-con-cuadros-clinicos-criticos/"
     },
     {
       "nombre": "Noticia al Dia (Zulia)",
@@ -94,6 +102,10 @@
       "link": "https://lamananadigital.com/trabajadores-se-adhirieron-al-paro-nacional-convocado-para-este-lunes/"
     },
     {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/trancan-la-falcon-zulia-a-la-altura-del-puente-la-primavera-por-racionamientos-electricos/"
+    },
+    {
       "nombre": "La Noticia de Barinas",
       "link": "https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal"
     },
@@ -132,30 +144,6 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/mas-protestas-trabajadores-activos-y-jubilados-continuan-reclamando-salarios-dignos/"
-    },
-    {
-      "nombre": "Portuguesa Reporta",
-      "link": "https://portuguesareporta.com/principales/enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos/?utm_source=rss&utm_medium=rss&utm_campaign=enfermeros-y-docentes-protestaron-en-turen-pese-a-intimidacion-de-sus-superiores-con-amenazas-no-comemos"
-    },
-    {
-      "nombre": "Portuguesa al Dia",
-      "link": "https://portuguesaaldia.com/2026/11/16/cientos-de-trabajadores-del-sector-publico-se-sumaron-al-paro-nacional-en-portuguesa/"
-    },
-    {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/11/trabajadores-de-hidroven-merida-exigen.html"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/625427/no-mas-torturas-el-clamor-de-presos-politicos-de-ramo-verde-en-huelga-de-hambre/"
-    },
-    {
-      "nombre": "Runrun.es",
-      "link": "https://runrun.es/noticias/625670/paro-educativo-y-de-salud-derivo-en-protesta-en-la-autopista-francisco-fajardo-de-caracas/"
-    },
-    {
-      "nombre": "Yaracuy al Dia",
-      "link": "https://yaracuyaldia.com/venezuela/momentos-de-tension-se-registraron-durante-protesta-en-lara-policia-impidio-el-paso-hacia-la-gobernacion/?utm_source=rss&utm_medium=rss&utm_campaign=momentos-de-tension-se-registraron-durante-protesta-en-lara-policia-impidio-el-paso-hacia-la-gobernacion"
     }
   ]
 }

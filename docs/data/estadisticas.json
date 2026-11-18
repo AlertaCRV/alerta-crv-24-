@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-18T16:41:28.663003+00:00",
+  "actualizado": "2026-11-18T23:12:59.492853+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-18T15:58:49+00:00"
+    "hasta": "2026-11-18T19:59:48+00:00"
   },
-  "total_eventos": 664,
+  "total_eventos": 667,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
     "infraestructura_electrica": 56,
     "deslizamiento": 44,
     "colapso_estructural": 5,
-    "orden_publico": 237,
+    "orden_publico": 238,
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
-    "vialidad": 31,
+    "vialidad": 33,
     "sismo": 8,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -44,30 +44,30 @@
     },
     {
       "estado": "Zulia",
-      "total": 57,
+      "total": 58,
       "confirmados": 12,
       "por_severidad": {
         "medio": 26,
-        "critico": 8,
+        "critico": 9,
         "bajo": 10,
         "sin_clasificar": 1,
         "alto": 12
       },
-      "indice_gravedad": 2.32,
+      "indice_gravedad": 2.35,
       "severidad_mapa": "medio"
     },
     {
       "estado": "Lara",
-      "total": 52,
+      "total": 53,
       "confirmados": 4,
       "por_severidad": {
-        "critico": 4,
+        "critico": 5,
         "alto": 10,
         "medio": 19,
         "bajo": 15,
         "sin_clasificar": 4
       },
-      "indice_gravedad": 2.06,
+      "indice_gravedad": 2.1,
       "severidad_mapa": "medio"
     },
     {
@@ -141,12 +141,12 @@
     },
     {
       "estado": "Falcon",
-      "total": 29,
+      "total": 30,
       "confirmados": 5,
       "por_severidad": {
         "alto": 7,
         "bajo": 8,
-        "medio": 12,
+        "medio": 13,
         "critico": 2
       },
       "indice_gravedad": 2.1,
@@ -370,7 +370,7 @@
       "incendio": 3,
       "infraestructura_agua": 3,
       "sequia": 1,
-      "vialidad": 1,
+      "vialidad": 2,
       "infraestructura_electrica": 5,
       "tormenta_electrica": 1
     },
@@ -385,7 +385,7 @@
       "salud_publica": 4,
       "ataque_armado": 2,
       "explosion": 1,
-      "vialidad": 1,
+      "vialidad": 2,
       "incendio": 6,
       "derrame_petrolero": 4
     },
@@ -486,7 +486,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 15,
+      "orden_publico": 16,
       "deslizamiento": 4,
       "derrame_petrolero": 3,
       "infraestructura_agua": 1,
@@ -575,8 +575,8 @@
   },
   "por_severidad": {
     "alto": 152,
-    "critico": 82,
-    "medio": 226,
+    "critico": 84,
+    "medio": 227,
     "bajo": 174,
     "sin_clasificar": 30
   },
@@ -619,7 +619,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 38
+      "2026-11": 39
     },
     "salud_publica": {
       "2026-07": 1,
@@ -645,7 +645,7 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 5
+      "2026-11": 7
     },
     "sismo": {
       "2026-08": 5,
