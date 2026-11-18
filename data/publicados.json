@@ -1,11 +1,4 @@
 {
-  "salud_publica::Tachira::2026-11-14": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-15T07:51:14.206376+00:00",
-    "fecha_evento_temprana": "2026-11-14T21:20:35+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Lara::2026-11-15": {
     "severidad": "sin_clasificar",
     "confirmado": false,
@@ -166,5 +159,40 @@
     "fecha_deteccion": "2026-11-17T17:52:01.707595+00:00",
     "fecha_evento_temprana": "2026-11-17T16:19:17+00:00",
     "municipio": "Ayacucho"
+  },
+  "salud_publica::Aragua::2026-11-18": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-18T16:38:05.060431+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "municipio": null
+  },
+  "salud_publica::Barinas::2026-11-18": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-18T16:38:10.420562+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "municipio": null
+  },
+  "salud_publica::Guarico::2026-11-18": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-18T16:38:15.349573+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "municipio": null
+  },
+  "incendio::Anzoategui::2026-11-18": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-18T16:38:58.129441+00:00",
+    "fecha_evento_temprana": "2026-11-18T14:10:44+00:00",
+    "municipio": null
+  },
+  "incendio::Falcon::2026-11-18": {
+    "severidad": "medio",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-18T16:39:23.890015+00:00",
+    "fecha_evento_temprana": "2026-11-18T14:10:44+00:00",
+    "municipio": null
   }
 }
