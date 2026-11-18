@@ -1,5 +1,145 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Aragua",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/",
+        "fecha": "2026-11-18T15:58:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T15:58:49+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "fecha_deteccion": "2026-11-18T16:38:05.060431+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Aragua::2026-11-18",
+    "titulo": "Salud pública en Aragua",
+    "texto": "📌 Salud pública en Aragua\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 18/11/2026, 11:58 a.m.\n🔎 Detectado por el sistema: 18/11/2026, 12:38 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/",
+        "fecha": "2026-11-18T15:58:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T15:58:49+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "fecha_deteccion": "2026-11-18T16:38:10.420562+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Barinas::2026-11-18",
+    "titulo": "Salud pública en Barinas",
+    "texto": "📌 Salud pública en Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 18/11/2026, 11:58 a.m.\n🔎 Detectado por el sistema: 18/11/2026, 12:38 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Runrun.es: https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Guarico",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.7,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/",
+        "fecha": "2026-11-18T15:58:49+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T15:58:49+00:00",
+    "fecha_evento_temprana": "2026-11-18T15:58:49+00:00",
+    "fecha_deteccion": "2026-11-18T16:38:15.349573+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Guarico::2026-11-18",
+    "titulo": "Salud pública en Guarico",
+    "texto": "📌 Salud pública en Guarico\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Guarico\n🕒 Hecho reportado: 18/11/2026, 11:58 a.m.\n🔎 Detectado por el sistema: 18/11/2026, 12:38 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • Runrun.es: https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 1.45,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/incendio-en-empresa-mixta-de-pdvsa-y-chevron-no-dejo-victimas/",
+        "fecha": "2026-11-18T14:10:44+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/pdvsa-reporta-incendio-sin-heridos-en-macrofosa-de-petropiar/",
+        "fecha": "2026-11-18T14:36:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T14:36:06+00:00",
+    "fecha_evento_temprana": "2026-11-18T14:10:44+00:00",
+    "fecha_deteccion": "2026-11-18T16:38:58.129441+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Anzoategui::2026-11-18",
+    "titulo": "Incendio en Anzoategui",
+    "texto": "📌 Incendio en Anzoategui\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 18/11/2026, 10:36 a.m.\n🔎 Detectado por el sistema: 18/11/2026, 12:38 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/incendio-en-empresa-mixta-de-pdvsa-y-chevron-no-dejo-victimas/\n  • La Verdad (Zulia): https://laverdad.com/pdvsa-reporta-incendio-sin-heridos-en-macrofosa-de-petropiar/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": "Las Calderas",
+    "severidad": "medio",
+    "score": 1.45,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/incendio-en-empresa-mixta-de-pdvsa-y-chevron-no-dejo-victimas/",
+        "fecha": "2026-11-18T14:10:44+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/pdvsa-reporta-incendio-sin-heridos-en-macrofosa-de-petropiar/",
+        "fecha": "2026-11-18T14:36:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-18T14:36:06+00:00",
+    "fecha_evento_temprana": "2026-11-18T14:10:44+00:00",
+    "fecha_deteccion": "2026-11-18T16:39:23.890015+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Falcon::2026-11-18",
+    "titulo": "Incendio en Parroquia Las Calderas, Falcon",
+    "texto": "📌 Incendio en Parroquia Las Calderas, Falcon\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Las Calderas, Falcon\n🕒 Hecho reportado: 18/11/2026, 10:36 a.m.\n🔎 Detectado por el sistema: 18/11/2026, 12:39 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/incendio-en-empresa-mixta-de-pdvsa-y-chevron-no-dejo-victimas/\n  • La Verdad (Zulia): https://laverdad.com/pdvsa-reporta-incendio-sin-heridos-en-macrofosa-de-petropiar/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Zulia",
     "municipio": null,
@@ -1561,166 +1701,5 @@
     "clave_dedup": "orden_publico::Carabobo::2026-11-04",
     "titulo": "Orden público en Carabobo",
     "texto": "📌 Orden público en Carabobo\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Carabobo\n🕒 Hecho reportado: 04/11/2026, 11:11 a.m.\n🔎 Detectado por el sistema: 04/11/2026, 2:46 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/04/video-ola-de-protestas-en-carabobo-ante-severos-y-prolongados-cortes-electricos-4nov/"
-  },
-  {
-    "tipo": "infraestructura_electrica",
-    "ubicacion": "Anzoategui",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/",
-        "fecha": "2026-11-03T15:52:22+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T15:52:22+00:00",
-    "fecha_evento_temprana": "2026-11-03T15:52:22+00:00",
-    "fecha_deteccion": "2026-11-04T03:23:21.375386+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "infraestructura_electrica::Anzoategui::2026-11-03",
-    "titulo": "Falla eléctrica en Anzoategui",
-    "texto": "📌 Falla eléctrica en Anzoategui\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 03/11/2026, 11:52 a.m.\n🔎 Detectado por el sistema: 03/11/2026, 11:23 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/vecinos-tocaron-cacerolas-por-apagon-de-casi-nueve-horas-en-el-tigre/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Aragua",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/",
-        "fecha": "2026-11-03T20:36:54+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T20:36:54+00:00",
-    "fecha_evento_temprana": "2026-11-03T20:36:54+00:00",
-    "fecha_deteccion": "2026-11-03T23:43:27.780467+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Aragua::2026-11-03",
-    "titulo": "Incidente vial en Aragua",
-    "texto": "📌 Incidente vial en Aragua\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Aragua\n🕒 Hecho reportado: 03/11/2026, 4:36 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 7:43 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/aragua-colision-y-volcamiento-de-un-autobus-y-un-camion-en-la-carretera-cagua-villa-de-cura/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Anzoategui",
-    "municipio": "Anaco",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Tiempo (Anzoategui)",
-        "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/",
-        "fecha": "2026-11-03T17:37:20+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T17:37:20+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:37:20+00:00",
-    "fecha_deteccion": "2026-11-03T23:44:06.062622+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Anzoategui::2026-11-03",
-    "titulo": "Orden público en Municipio Anaco, Anzoategui",
-    "texto": "📌 Orden público en Municipio Anaco, Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Anaco, Anzoategui\n🕒 Hecho reportado: 03/11/2026, 1:37 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 7:44 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Zulia",
-    "municipio": "Lagunillas",
-    "parroquia": "Libertad",
-    "severidad": "medio",
-    "score": 1.45,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/",
-        "fecha": "2026-11-03T15:47:51+00:00"
-      },
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/",
-        "fecha": "2026-11-03T13:31:48+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T15:47:51+00:00",
-    "fecha_evento_temprana": "2026-11-03T13:31:48+00:00",
-    "fecha_deteccion": "2026-11-03T18:39:04.673867+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Zulia::2026-11-03",
-    "titulo": "Incendio en Parroquia Libertad, Municipio Lagunillas, Zulia",
-    "texto": "📌 Incendio en Parroquia Libertad, Municipio Lagunillas, Zulia\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Libertad, Municipio Lagunillas, Zulia\n🕒 Hecho reportado: 03/11/2026, 11:47 a.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 2 (score 1.45)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/explosion-en-subestacion-electrica-deja-sin-luz-varios-sectores-de-lagunillas/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/03/video-explosion-e-incendio-en-subestacion-federacion-dejan-sin-electricidad-a-sectores-de-ciudad-ojeda-en-zulia-3nov/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Falcon",
-    "municipio": null,
-    "parroquia": "Chichiriviche",
-    "severidad": "bajo",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/",
-        "fecha": "2026-11-03T17:27:27+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T17:27:27+00:00",
-    "fecha_evento_temprana": "2026-11-03T17:27:27+00:00",
-    "fecha_deteccion": "2026-11-03T18:39:28.715927+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Falcon::2026-11-03",
-    "titulo": "Orden público en Parroquia Chichiriviche, Falcon",
-    "texto": "📌 Orden público en Parroquia Chichiriviche, Falcon\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Chichiriviche, Falcon\n🕒 Hecho reportado: 03/11/2026, 1:27 p.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Lara",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Impulso (Lara)",
-        "link": "https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/",
-        "fecha": "2026-11-03T15:00:00+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-03T15:00:00+00:00",
-    "fecha_evento_temprana": "2026-11-03T15:00:00+00:00",
-    "fecha_deteccion": "2026-11-03T18:39:54.490362+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Lara::2026-11-03",
-    "titulo": "Orden público en Lara",
-    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 03/11/2026, 11:00 a.m.\n🔎 Detectado por el sistema: 03/11/2026, 2:39 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/03/avance-jubilados-y-pensionados-de-lara-se-suman-a-protesta-sindical-para-exigir-pensiones-dignas-y-aumento-salarial-3nov/"
   }
 ]
