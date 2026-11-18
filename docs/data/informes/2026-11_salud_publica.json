@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-16T16:34:45.734039+00:00",
-  "actualizado_hasta": "2026-11-15T07:51:14.206376+00:00",
-  "total_eventos": 8,
+  "generado": "2026-11-18T00:11:52.954840+00:00",
+  "actualizado_hasta": "2026-11-17T17:52:01.707595+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 8
+    "actual": 11
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron ocho eventos de salud pública, una disminución notable respecto a los veinte eventos del mes anterior (2026‑10). Esta reducción se refleja en la menor cantidad de incidentes reportados a nivel nacional, aunque persisten situaciones críticas que demandan la intervención de la Cruz Roja Venezolana.\n\nEn Cojedes, el 4 de noviembre se produjo una presunta intoxicación masiva en el Liceo Nacional Petra de Bruguera, sector La Florida del municipio Tinaco, que dejó trece personas afectadas y requirió su traslado de urgencia al Hospital Eugenio González Padilla (El Pitazo). La magnitud del incidente obligó a evacuar a 631 personas del establecimiento, medida que fue coordinada por los cuerpos de bomberos y la ZOEDAN del estado (La Prensa de Monagas). La gravedad del caso fue catalogada como alta, lo que activó los protocolos de emergencia sanitaria del estado.\n\nEn el estado Zulia, la situación de salud pública alcanzó un nivel crítico debido a un brote de rabia que provocó cinco muertes humanas confirmadas en noviembre (Yaracuy al Dia). Ante esta emergencia, las autoridades sanitarias desplegaron una jornada antirrábica especial, administrando hasta la fecha 176 969 dosis de vacunas antirrábicas a mascotas y animales de compañía (La Prensa de Monagas). La respuesta intensiva buscó contener la propagación del virus y proteger a la población en nueve municipios del estado.\n\nA pesar de la reducción en el número total de eventos, los incidentes en Cojedes y Zulia evidencian la necesidad de mantener una vigilancia constante y una capacidad de respuesta rápida ante emergencias de salud pública. La Cruz Roja Venezolana continuará apoyando las acciones de evacuación, atención médica y campañas de vacunación para mitigar los riesgos y salvaguardar la salud de la comunidad.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 eventos de salud pública, una disminución respecto a los 20 eventos registrados en el período anterior (2026-10). Esta reducción se enmarca en una serie de incidentes aislados pero de alta gravedad que fueron atendidos por la Cruz Roja Venezolana y las autoridades sanitarias.\n\nEn el estado Cojedes se produjo un caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el municipio Tinaco, que dejó 13 personas afectadas y requirió su traslado de emergencia al Hospital Eugenio González Padilla (El Pitazo). La magnitud del suceso obligó a evacuar a 631 personas del establecimiento, medida que fue coordinada por los cuerpos de bomberos y la ZOEDAN del estado (La Prensa de Monagas).\n\nEn Zulia, la autoridad sanitaria lanzó una jornada antirrábica especial tras confirmar muertes humanas por la enfermedad; se administraron 176 969 dosis de vacuna antirrábica a mascotas y animales de compañía, una respuesta catalogada como de severidad crítica (La Prensa de Monagas).\n\nEl mismo estado de Zulia registró la muerte de un segundo recluso en el Centro de Formación Hombre Nuevo Doctor Francisco Delgado, en el barrio El Marite de Maracaibo, a menos de 48 horas del fallecimiento del anterior interno. El interno padecía VIH y tuberculosis, y su deceso se consideró un evento de salud pública de severidad crítica (La Verdad (Zulia)).\n\nEn Barinas, se confirmó una nueva intoxicación escolar en el liceo Trino Briseño del municipio Segovia, que afectó a 18 personas, entre estudiantes, docentes y personal administrativo, y que forma parte de una serie de más de 500 intoxicaciones masivas reportadas a nivel nacional (Notiapure).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -26,12 +26,24 @@
       "link": "https://laprensademonagas.com/zulia-despliega-jornada-antirrabica-especial-tras-muertes-por-la-enfermedad/"
     },
     {
+      "nombre": "La Verdad (Zulia)",
+      "link": "https://laverdad.com/fallece-segundo-reo-en-el-marite-en-menos-de-48-horas/"
+    },
+    {
+      "nombre": "Notiapure",
+      "link": "https://notiapure.com.ve/nacion/mas-de-500-intoxicaciones-masivas-en-escuelas-y-liceos-encienden-las-alarmas-nacionales/"
+    },
+    {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/11/04/cojedes-evacuan-a-estudiantes-por-presunta-intoxicacion-masiva/"
     },
     {
       "nombre": "Yaracuy al Dia",
       "link": "https://yaracuyaldia.com/venezuela/en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios/?utm_source=rss&utm_medium=rss&utm_campaign=en-zulia-reportan-cinco-muertes-por-rabia-autoridades-activan-jornada-de-vacunacion-en-nueve-municipios"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/regional/ordenan-inspeccion-en-centro-de-enfermedades-renales-de-colon-por-denuncias-de-pacientes-sin-dialisis/"
     },
     {
       "nombre": "El Pitazo",
