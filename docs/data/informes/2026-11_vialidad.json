@@ -3,15 +3,15 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-11-18T00:12:19.377031+00:00",
-  "actualizado_hasta": "2026-11-17T00:30:21.899598+00:00",
-  "total_eventos": 5,
+  "generado": "2026-11-19T13:15:27.938467+00:00",
+  "actualizado_hasta": "2026-11-18T23:12:57.894617+00:00",
+  "total_eventos": 7,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 5
+    "actual": 7
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron cinco incidentes viales de relevancia en Venezuela, una disminución respecto al período anterior en el que se contabilizaron siete eventos (7 evento(s) registrados entonces vs. 5 en este período). Esta reducción no implica una menor gravedad, pues los sucesos reportados involucraron daños materiales significativos, heridos y víctimas fatales.\n\nEn el estado Aragua se produjo una colisión y posterior volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, lo que obligó a la Guardia Nacional Bolivariana y a la Policía Nacional Bolivariana a intervenir en el sitio (La Prensa de Monagas). Por otro lado, en Portuguesa, el miércoles 4 de noviembre, un autobús modelo Blue Bird volcó en la carretera nacional Biscucuy‑Guanare, dejando dos muertos y 43 heridos entre los aproximadamente 50 pasajeros que transportaba (La Verdad (Zulia)).\n\nEn el Distrito Capital, la noche del 5 de noviembre se registró un choque múltiple en la Autopista Gran Cacique Guaicaipuro, distribuidor La Araña, que dejó cinco personas con lesiones de diversa gravedad, sin que se reportaran víctimas fatales (Primicia (Bolivar)).\n\nEl estado Monagas vivió un fin de semana trágico: cuatro fallecimientos y 19 heridos fueron el saldo de varios accidentes de moto, dos de los fallecidos en Maturín y dos en Aguasay, según el registro de la morgue del Hospital Universitario Dr. Manuel Núñez Tovar (El Periodico de Monagas).\n\nEn San Antonio del Táchira, municipio fronterizo Bolívar, se contabilizaron tres accidentes durante el fin de semana, que en conjunto dejaron seis lesionados, entre ellos un joven de 18 años con politraumatismos que fue trasladado al Hospital Dr. Samuel Darío M (Diario La Nacion (Tachira)).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete incidentes viales, cifra idéntica a la del período anterior (2026-10) en el que también se contabilizaron siete eventos (Comparación con el período anterior: 7 evento(s) registrados entonces vs. 7 en este período). Los incidentes presentaron diferentes niveles de severidad, desde alto hasta crítico, y se concentraron en distintas regiones del país.\n\nEn el estado Aragua se produjo una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, requiriendo la intervención de la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana (La Prensa de Monagas). En Portuguesa, un autobús modelo Blue Bird volcó en la carretera nacional Biscucuy‑Guanare, dejando dos muertos y 43 heridos (La Verdad (Zulia)). En el Distrito Capital, un choque múltiple en la Autopista Gran Cacique Guaicaipuro, distribuidor La Araña, ocasionó cinco heridos con múltiples traumatismos, sin víctimas fatales (Primicia (Bolivar)).\n\nEl estado Monagas registró un grave accidente de motos durante el fin de semana, con cuatro fallecidos y 19 heridos entre Maturín y Aguasay (El Periodico de Monagas). En el Táchira, tres accidentes de tránsito en San Antonio del municipio Bolívar resultaron en seis lesionados, entre ellos un joven de 18 años con politraumatismos trasladado al Hospital Dr. Samuel Darío M (Diario La Nacion (Tachira)).\n\nFinalmente, en la vía Lara‑Zulia, específicamente en el sector Monte Pío del municipio Santa Rita, una camioneta volcó, provocando la muerte de una persona y dejando cuatro heridos (Noticia al Dia (Zulia)). Este suceso afecta tanto al estado Lara como al Zulia, y se registra como un incidente crítico en ambas jurisdicciones.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -28,6 +28,10 @@
     {
       "nombre": "La Verdad (Zulia)",
       "link": "https://laverdad.com/accidente-de-autobus-en-portuguesa-deja-2-muertos-y-43-heridos/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/"
     },
     {
       "nombre": "Primicia (Bolivar)",
