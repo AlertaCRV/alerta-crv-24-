@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "deslizamiento",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "critico",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/19/aproximadamente-40-cuerpos-siguen-atrapados-bajo-los-escombros-de-residencias-caribe-en-la-guaira-19nov/",
+        "fecha": "2026-11-19T20:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-19T20:30:00+00:00",
+    "fecha_evento_temprana": "2026-11-19T20:30:00+00:00",
+    "fecha_deteccion": "2026-11-19T21:42:19.718955+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "deslizamiento::La Guaira::2026-11-19",
+    "titulo": "Deslizamiento/Derrumbe en La Guaira",
+    "texto": "📌 Deslizamiento/Derrumbe en La Guaira\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 19/11/2026, 4:30 p.m.\n🔎 Detectado por el sistema: 19/11/2026, 5:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/19/aproximadamente-40-cuerpos-siguen-atrapados-bajo-los-escombros-de-residencias-caribe-en-la-guaira-19nov/"
+  },
+  {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Zulia",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/hidroven-atiende-mas-de-400-reportes-en-el-zulia/",
+        "fecha": "2026-11-19T18:19:13+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-19T18:19:13+00:00",
+    "fecha_evento_temprana": "2026-11-19T18:19:13+00:00",
+    "fecha_deteccion": "2026-11-19T21:42:24.318161+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Zulia::2026-11-19",
+    "titulo": "Falla de agua en Zulia",
+    "texto": "📌 Falla de agua en Zulia\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Zulia\n🕒 Hecho reportado: 19/11/2026, 2:19 p.m.\n🔎 Detectado por el sistema: 19/11/2026, 5:42 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/hidroven-atiende-mas-de-400-reportes-en-el-zulia/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Falcon",
     "municipio": null,
@@ -1675,83 +1727,5 @@
     "clave_dedup": "salud_publica::Distrito Capital::2026-11-05",
     "titulo": "Salud pública en Distrito Capital",
     "texto": "📌 Salud pública en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 05/11/2026, 4:24 p.m.\n🔎 Detectado por el sistema: 05/11/2026, 9:48 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/julio-castro-casos-covid-caracas/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Cojedes",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Monagas",
-        "link": "https://laprensademonagas.com/presunta-intoxicacion-masiva-en-liceo-de-cojedes-deja-13-afectados-y-obliga-a-evacuar-a-631-personas/",
-        "fecha": "2026-11-05T13:07:03+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-05T13:07:03+00:00",
-    "fecha_evento_temprana": "2026-11-05T13:07:03+00:00",
-    "fecha_deteccion": "2026-11-05T21:27:09.503858+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Cojedes::2026-11-04",
-    "titulo": "Salud pública en Cojedes",
-    "texto": "📌 Salud pública en Cojedes\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Cojedes\n🕒 Hecho reportado: 05/11/2026, 9:07 a.m.\n🔎 Detectado por el sistema: 05/11/2026, 5:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/presunta-intoxicacion-masiva-en-liceo-de-cojedes-deja-13-afectados-y-obliga-a-evacuar-a-631-personas/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Bolivar",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad de Monagas",
-        "link": "https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/",
-        "fecha": "2026-11-05T19:52:35+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-05T19:52:35+00:00",
-    "fecha_evento_temprana": "2026-11-05T19:52:35+00:00",
-    "fecha_deteccion": "2026-11-05T21:27:34.746101+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Bolivar::2026-11-05",
-    "titulo": "Orden público en Bolivar",
-    "texto": "📌 Orden público en Bolivar\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Bolivar\n🕒 Hecho reportado: 05/11/2026, 3:52 p.m.\n🔎 Detectado por el sistema: 05/11/2026, 5:27 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Portuguesa",
-    "municipio": "Guanare",
-    "parroquia": null,
-    "severidad": "critico",
-    "score": 0.7,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/accidente-de-autobus-en-portuguesa-deja-2-muertos-y-43-heridos/",
-        "fecha": "2026-11-04T20:44:30+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-04T20:44:30+00:00",
-    "fecha_evento_temprana": "2026-11-04T20:44:30+00:00",
-    "fecha_deteccion": "2026-11-05T00:01:07.332203+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Portuguesa::2026-11-04",
-    "titulo": "Incidente vial en Municipio Guanare, Portuguesa",
-    "texto": "📌 Incidente vial en Municipio Guanare, Portuguesa\n\n⚠️ SIN CONFIRMAR | 🔴 SEVERIDAD CRÍTICA\n\n📍 Ubicación: Municipio Guanare, Portuguesa\n🕒 Hecho reportado: 04/11/2026, 4:44 p.m.\n🔎 Detectado por el sistema: 04/11/2026, 8:01 p.m.\n📊 Fuentes independientes: 1 (score 0.7)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🔴 SEVERIDAD CRÍTICA: Se reportan víctimas fatales o una emergencia de gran magnitud.\n\nFuentes:\n  • La Verdad (Zulia): https://laverdad.com/accidente-de-autobus-en-portuguesa-deja-2-muertos-y-43-heridos/"
   }
 ]

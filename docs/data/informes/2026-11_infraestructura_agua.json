@@ -3,19 +3,19 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-09T02:45:34.579116+00:00",
-  "actualizado_hasta": "2026-11-02T05:48:33.492514+00:00",
+  "generado": "2026-11-19T21:43:29.827861+00:00",
+  "actualizado_hasta": "2026-11-19T21:42:24.318161+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
     "actual": 1
   },
-  "narrativa": "En el mes de noviembre de 2026, la categoría de fallas de agua registró una disminución significativa respecto al mes anterior, con 1 evento reportado frente a los 7 registrados en octubre de 2026 (Reporteros de Merida). \n\nEl único incidente ocurrió en la ciudad de Mérida, donde se reportó una falla de agua de alta severidad que provocó cortes prolongados en el suministro, afectando a hogares y a la operación de servicios básicos (Reporteros de Merida). Según Claudio Bárcenas, dirigente de Proyecto Mérida Ciudad, la crisis se agrava por la coincidencia con la temporada navideña, generando oscuridad y falta de agua en la población (Reporteros de Merida). La falta de agua ha causado daños materiales en establecimientos que dependen del suministro para actividades comerciales y sanitarias (Reporteros de Merida). \n\nA pesar de la gravedad del evento en Mérida, el número reducido de incidentes sugiere una tendencia a la baja en las fallas de agua durante el período analizado. Sin embargo, las autoridades locales y la sociedad civil continúan alertando sobre la necesidad de soluciones estructurales para evitar que situaciones similares se repitan en futuros meses (Reporteros de Merida).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registró una única incidencia de falla de agua, en contraste con los siete eventos reportados en octubre del mismo año (7 evento(s) registrados entonces vs. 1 en este período). Esta reducción en la cantidad de incidentes se refleja en los registros oficiales del monitoreo de emergencias de la Cruz Roja Venezolana.\n\nEl único evento ocurrió en el estado Zulia, donde se reportó una falla de agua de alta severidad. Según el Ministerio del Poder Popular de las Aguas, a través de la Hidrológica Venezolana (Hidroven), se atendieron más de 400 reportes relacionados con la interrupción del suministro y problemas de saneamiento en los municipios de Maracaibo, San Francisco y Cabimas (Noticia al Dia (Zulia)).\n\nAnte la magnitud de los reportes, el Equipo Multidisciplinario del Agua se desplegó rápidamente para ejecutar trabajos de optimización y saneamiento de los sistemas de agua potable y aguas servidas, con el objetivo de restablecer el servicio y mitigar los daños materiales a la población (Noticia al Dia (Zulia)).",
   "fuentes": [
     {
-      "nombre": "Reporteros de Merida",
-      "link": "https://www.reporterosdemerida.com.ve/2026/11/claudio-barcenas-merida-en-crisis.html"
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/al-dia/hidroven-atiende-mas-de-400-reportes-en-el-zulia/"
     }
   ]
 }

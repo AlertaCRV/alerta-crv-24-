@@ -41,6 +41,14 @@
   },
   {
     "periodo": "2026-11",
+    "tipo": "infraestructura_agua",
+    "tipo_label": "Falla de agua",
+    "cerrado": false,
+    "generado": "2026-11-19T21:43:29.827861+00:00",
+    "total_eventos": 1
+  },
+  {
+    "periodo": "2026-11",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
