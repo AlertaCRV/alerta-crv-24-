@@ -4,16 +4,16 @@
     "tipo": "vialidad",
     "tipo_label": "Incidente vial",
     "cerrado": false,
-    "generado": "2026-11-18T00:12:19.377031+00:00",
-    "total_eventos": 5
+    "generado": "2026-11-19T13:15:27.938467+00:00",
+    "total_eventos": 7
   },
   {
     "periodo": "2026-11",
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-11-18T00:11:52.954840+00:00",
-    "total_eventos": 11
+    "generado": "2026-11-19T13:15:01.170564+00:00",
+    "total_eventos": 14
   },
   {
     "periodo": "2026-11",
@@ -28,7 +28,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-18T07:23:57.123105+00:00",
+    "generado": "2026-11-19T13:14:34.636606+00:00",
     "total_eventos": 2
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-18T07:23:51.674954+00:00",
+    "generado": "2026-11-19T13:14:29.265961+00:00",
     "total_eventos": 9
   },
   {

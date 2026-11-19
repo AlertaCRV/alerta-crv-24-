@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-18T00:11:52.954840+00:00",
-  "actualizado_hasta": "2026-11-17T17:52:01.707595+00:00",
-  "total_eventos": 11,
+  "generado": "2026-11-19T13:15:01.170564+00:00",
+  "actualizado_hasta": "2026-11-18T16:38:15.349573+00:00",
+  "total_eventos": 14,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 11
+    "actual": 14
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 eventos de salud pública, una disminución respecto a los 20 eventos registrados en el período anterior (2026-10). Esta reducción se enmarca en una serie de incidentes aislados pero de alta gravedad que fueron atendidos por la Cruz Roja Venezolana y las autoridades sanitarias.\n\nEn el estado Cojedes se produjo un caso de intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el municipio Tinaco, que dejó 13 personas afectadas y requirió su traslado de emergencia al Hospital Eugenio González Padilla (El Pitazo). La magnitud del suceso obligó a evacuar a 631 personas del establecimiento, medida que fue coordinada por los cuerpos de bomberos y la ZOEDAN del estado (La Prensa de Monagas).\n\nEn Zulia, la autoridad sanitaria lanzó una jornada antirrábica especial tras confirmar muertes humanas por la enfermedad; se administraron 176 969 dosis de vacuna antirrábica a mascotas y animales de compañía, una respuesta catalogada como de severidad crítica (La Prensa de Monagas).\n\nEl mismo estado de Zulia registró la muerte de un segundo recluso en el Centro de Formación Hombre Nuevo Doctor Francisco Delgado, en el barrio El Marite de Maracaibo, a menos de 48 horas del fallecimiento del anterior interno. El interno padecía VIH y tuberculosis, y su deceso se consideró un evento de salud pública de severidad crítica (La Verdad (Zulia)).\n\nEn Barinas, se confirmó una nueva intoxicación escolar en el liceo Trino Briseño del municipio Segovia, que afectó a 18 personas, entre estudiantes, docentes y personal administrativo, y que forma parte de una serie de más de 500 intoxicaciones masivas reportadas a nivel nacional (Notiapure).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 14 eventos de salud pública, una disminución respecto a los 20 eventos del mes anterior (octubre de 2026). Esta reducción se refleja en la menor cantidad de incidentes reportados, aunque persisten situaciones críticas en varios estados.\n\nEn Cojedes se confirmó una presunta intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el sector La Florida del municipio Tinaco, que dejó 13 personas afectadas y requirió su traslado al Hospital Eugenio González Padilla (El Pitazo). La misma situación fue cubierta por La Prensa de Monagas, que informó la evacuación de 631 personas y la inspección de bomberos para identificar la causa de la inhalación tóxica (La Prensa de Monagas).\n\nEn Zulia se activó una jornada antirrábica especial tras la confirmación de muertes humanas asociadas a la rabia; hasta la fecha se habían administrado 176 969 dosis de vacuna antirrábica a mascotas y animales de compañía (La Prensa de Monagas). Además, se reportó el fallecimiento de un recluso en el Centro de Formación Hombre Nuevo Doctor Francisco Delgado, quien padecía VIH y tuberculosis, evidenciando la gravedad de la situación sanitaria en el recinto penitenciario (La Verdad). \n\nBarinas también se vio afectado por una nueva intoxicación escolar que involucró a 18 personas en el liceo Trino Briseño, dentro del contexto de más de 500 intoxicaciones masivas registradas a nivel nacional (Notiapure). En Guárico, la alerta epidemiológica por fiebre amarilla se confirmó con dos casos nuevos y un deceso, sumando al total de ocho fallecimientos por la enfermedad en 2026 (Runrun.es).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -36,6 +36,10 @@
     {
       "nombre": "Portuguesa al Dia",
       "link": "https://portuguesaaldia.com/2026/11/04/cojedes-evacuan-a-estudiantes-por-presunta-intoxicacion-masiva/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/inicio/625846/fiebre-amarilla-en-ultimas-semanas-epidemiologicas-se-suman-dos-casos-y-un-deceso/"
     },
     {
       "nombre": "Yaracuy al Dia",
