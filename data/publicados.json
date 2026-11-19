@@ -1,18 +1,4 @@
 {
-  "orden_publico::Carabobo::2026-11-16": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-16T16:33:19.303314+00:00",
-    "fecha_evento_temprana": "2026-11-16T13:35:13+00:00",
-    "municipio": null
-  },
-  "vialidad::Monagas::2026-11-16": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-16T16:33:23.289000+00:00",
-    "fecha_evento_temprana": "2026-11-16T16:24:24+00:00",
-    "municipio": "Maturín"
-  },
   "orden_publico::Distrito Capital::2026-11-16": {
     "severidad": "medio",
     "confirmado": true,
@@ -194,5 +180,19 @@
     "fecha_deteccion": "2026-11-18T23:12:57.894617+00:00",
     "fecha_evento_temprana": "2026-11-18T19:59:48+00:00",
     "municipio": "Santa Rita"
+  },
+  "deslizamiento::La Guaira::2026-11-19": {
+    "severidad": "critico",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-19T21:42:19.718955+00:00",
+    "fecha_evento_temprana": "2026-11-19T20:30:00+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Zulia::2026-11-19": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-19T21:42:24.318161+00:00",
+    "fecha_evento_temprana": "2026-11-19T18:19:13+00:00",
+    "municipio": null
   }
 }
