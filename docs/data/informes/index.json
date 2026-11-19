@@ -20,7 +20,7 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-18T23:14:21.923601+00:00",
+    "generado": "2026-11-19T04:17:49.920792+00:00",
     "total_eventos": 39
   },
   {
@@ -44,8 +44,8 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-18T00:10:26.624793+00:00",
-    "total_eventos": 9
+    "generado": "2026-11-19T04:16:55.980096+00:00",
+    "total_eventos": 11
   },
   {
     "periodo": "2026-11",
@@ -60,7 +60,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-18T00:09:33.027966+00:00",
+    "generado": "2026-11-19T04:16:02.250403+00:00",
     "total_eventos": 4
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-18T00:09:06.090261+00:00",
+    "generado": "2026-11-19T04:15:35.764678+00:00",
     "total_eventos": 4
   },
   {
