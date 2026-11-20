@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Falcon",
+    "municipio": "Urumaco",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/",
+        "fecha": "2026-11-20T16:56:23+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-20T16:56:23+00:00",
+    "fecha_evento_temprana": "2026-11-20T16:56:23+00:00",
+    "fecha_deteccion": "2026-11-20T18:52:01.496031+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Falcon::2026-11-20",
+    "titulo": "Orden público en Municipio Urumaco, Falcon",
+    "texto": "📌 Orden público en Municipio Urumaco, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Urumaco, Falcon\n🕒 Hecho reportado: 20/11/2026, 12:56 p.m.\n🔎 Detectado por el sistema: 20/11/2026, 2:52 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/"
+  },
+  {
     "tipo": "deslizamiento",
     "ubicacion": "La Guaira",
     "municipio": null,
@@ -1701,31 +1727,5 @@
     "clave_dedup": "vialidad::Distrito Capital::2026-11-06",
     "titulo": "Incidente vial en Parroquia San Juan, Distrito Capital",
     "texto": "📌 Incidente vial en Parroquia San Juan, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Juan, Distrito Capital\n🕒 Hecho reportado: 06/11/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 06/11/2026, 5:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/choque-multiple-distribuidor-la-arana-cinco-heridos/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Prensa de Lara",
-        "link": "https://laprensadelara.com/nacionales/julio-castro-casos-covid-caracas/",
-        "fecha": "2026-11-05T20:24:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-05T20:24:59+00:00",
-    "fecha_evento_temprana": "2026-11-05T20:24:59+00:00",
-    "fecha_deteccion": "2026-11-06T01:48:13.360455+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Distrito Capital::2026-11-05",
-    "titulo": "Salud pública en Distrito Capital",
-    "texto": "📌 Salud pública en Distrito Capital\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 05/11/2026, 4:24 p.m.\n🔎 Detectado por el sistema: 05/11/2026, 9:48 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/julio-castro-casos-covid-caracas/"
   }
 ]
