@@ -3,15 +3,15 @@
   "tipo": "deslizamiento",
   "tipo_label": "Deslizamiento/Derrumbe",
   "cerrado": false,
-  "generado": "2026-11-19T04:16:02.250403+00:00",
-  "actualizado_hasta": "2026-11-17T08:26:28.667543+00:00",
-  "total_eventos": 4,
+  "generado": "2026-11-20T02:43:06.400126+00:00",
+  "actualizado_hasta": "2026-11-19T21:42:19.718955+00:00",
+  "total_eventos": 5,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 10,
-    "actual": 4
+    "actual": 5
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron cuatro eventos de deslizamiento o derrumbe, una disminución respecto al período anterior en el que se contabilizaron diez incidentes (10 evento(s) registrados entonces vs. 4 en este período). Todos los incidentes reportados pertenecen a la categoría de alta severidad y han generado daños materiales significativos, además de víctimas.\n\nEl Pitazo informó sobre un deslizamiento crítico en el Distrito Capital, específicamente en el sector La Seca de la parroquia Antímano, donde la masa de tierra colapsó sobre una vivienda, tapando tres habitaciones. El incidente dejó un saldo de tres menores fallecidos y dos heridos, quienes fueron trasladados al Hospital Dr. Miguel Pérez Carreño (El Pitazo). La gravedad del suceso fue catalogada como crítica.\n\nDe manera paralela, Diario El Tiempo (Trujillo) reportó otro evento crítico en el mismo sector de Antímano, Distrito Capital. Según su cobertura, tres menores de edad perdieron la vida y dos resultaron heridos tras el derrumbe de la vivienda, confirmando la misma magnitud de daños y víctimas (Diario El Tiempo (Trujillo)).\n\nEn Mérida, Reporteros de Mérida describió un deslizamiento de alta severidad que ocurrió alrededor de la 1:00 a.m. del 16 de noviembre, en el talud de la avenida 1 entre calles 17 y 18. El desprendimiento dejó la vivienda #17‑54 al borde del colapso, con grietas estructurales, separación de techos y riesgo inminente para la integridad del inmueble (Reporteros de Merida).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron cinco eventos de deslizamiento o derrumbe, una reducción respecto a los diez eventos del mes anterior (2026‑10) (Comparación con el período anterior). La disminución se observa en el número total de incidentes, aunque la gravedad de algunos casos siguió siendo crítica.\n\nEn el Distrito Capital se reportaron dos deslizamientos de severidad crítica. El Pitazo informó que un alud de tierra cayó sobre una vivienda en el sector La Seca, parroquia Antímano, provocando la muerte de un adolescente y dos niños, y dejando a dos menores bajo observación médica (El Pitazo). Por otro lado, Diario El Tiempo (Trujillo) cubrió el mismo suceso, señalando que tres menores fallecieron y dos resultaron heridos tras el colapso de la estructura habitacional en Antímano (Diario El Tiempo (Trujillo)).\n\nEn el estado Mérida, Reporteros de Merida describió un deslizamiento de alta severidad que afectó la vivienda número 17‑54 en la avenida 1, entre calles 17 y 18, generando grietas estructurales, separación de techos y riesgo inminente de colapso del inmueble (Reporteros de Merida). No se reportaron víctimas humanas, pero los daños materiales fueron críticos para la familia propietaria.\n\nFinalmente, en La Guaira, El Impulso (Lara) informó que aproximadamente 40 cuerpos permanecían atrapados bajo los escombros de la edificación Residencias Caribe, tras un derrumbe de gran magnitud que dejó a la zona en estado de emergencia (El Impulso (Lara)). La situación se clasificó como de severidad crítica debido al elevado número de víctimas potenciales y la complejidad de las operaciones de rescate.",
   "fuentes": [
     {
       "nombre": "Diario El Tiempo (Trujillo)",
@@ -20,6 +20,10 @@
     {
       "nombre": "El Carabobeno",
       "link": "https://www.el-carabobeno.com/tres-menores-de-edad-fallecidos-y-dos-heridos-por-deslizamiento-de-tierra-en-caracas/"
+    },
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/19/aproximadamente-40-cuerpos-siguen-atrapados-bajo-los-escombros-de-residencias-caribe-en-la-guaira-19nov/"
     },
     {
       "nombre": "El Periodico de Monagas",

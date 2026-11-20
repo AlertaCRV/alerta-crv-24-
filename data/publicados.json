@@ -1,39 +1,4 @@
 {
-  "orden_publico::Distrito Capital::2026-11-16": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-17T00:29:15.935982+00:00",
-    "fecha_evento_temprana": "2026-11-16T19:46:35+00:00",
-    "municipio": null
-  },
-  "orden_publico::Amazonas::2026-11-17": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T00:29:20.153983+00:00",
-    "fecha_evento_temprana": "2026-11-17T00:07:12+00:00",
-    "municipio": null
-  },
-  "orden_publico::Guarico::2026-11-16": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T00:29:55.590010+00:00",
-    "fecha_evento_temprana": "2026-11-16T20:22:10+00:00",
-    "municipio": null
-  },
-  "orden_publico::Barinas::2026-11-16": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-17T00:30:09.014542+00:00",
-    "fecha_evento_temprana": "2026-11-16T19:50:12+00:00",
-    "municipio": null
-  },
-  "vialidad::Tachira::2026-11-16": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T00:30:21.899598+00:00",
-    "fecha_evento_temprana": "2026-11-16T18:03:33+00:00",
-    "municipio": "Bolívar"
-  },
   "orden_publico::Falcon::2026-11-16": {
     "severidad": "medio",
     "confirmado": false,
@@ -46,27 +11,6 @@
     "confirmado": true,
     "fecha_deteccion": "2026-11-17T08:25:50.223531+00:00",
     "fecha_evento_temprana": "2026-11-16T21:23:33+00:00",
-    "municipio": null
-  },
-  "orden_publico::Yaracuy::2026-11-16": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T00:31:58.718587+00:00",
-    "fecha_evento_temprana": "2026-11-16T22:31:47+00:00",
-    "municipio": "San Felipe"
-  },
-  "salud_publica::Barinas::2026-11-16": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T00:32:25.564923+00:00",
-    "fecha_evento_temprana": "2026-11-16T18:05:13+00:00",
-    "municipio": null
-  },
-  "orden_publico::Lara::2026-11-16": {
-    "severidad": "bajo",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-17T00:32:51.168698+00:00",
-    "fecha_evento_temprana": "2026-11-16T17:01:24+00:00",
     "municipio": null
   },
   "deslizamiento::Merida::2026-11-17": {
