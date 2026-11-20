@@ -1,32 +1,4 @@
 {
-  "orden_publico::Falcon::2026-11-16": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T08:25:10.748794+00:00",
-    "fecha_evento_temprana": "2026-11-16T23:04:01+00:00",
-    "municipio": null
-  },
-  "orden_publico::Portuguesa::2026-11-16": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-17T08:25:50.223531+00:00",
-    "fecha_evento_temprana": "2026-11-16T21:23:33+00:00",
-    "municipio": null
-  },
-  "deslizamiento::Merida::2026-11-17": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T08:26:28.667543+00:00",
-    "fecha_evento_temprana": "2026-11-17T01:10:14+00:00",
-    "municipio": null
-  },
-  "inundacion::Merida::2026-11-17": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-17T08:26:32.960326+00:00",
-    "fecha_evento_temprana": "2026-11-17T01:09:13+00:00",
-    "municipio": "Tovar"
-  },
   "orden_publico::Zulia::2026-11-17": {
     "severidad": "medio",
     "confirmado": false,
