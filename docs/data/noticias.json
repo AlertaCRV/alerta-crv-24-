@@ -5,25 +5,30 @@
     "municipio": "Urumaco",
     "parroquia": null,
     "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
     "fuentes": [
       {
         "nombre": "La Manana (Falcon)",
         "link": "https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/",
         "fecha": "2026-11-20T16:56:23+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/protesta-por-racionamiento-electrico-mantiene-cerrada-la-via-falcon-zulia-a-la-altura-de-urumaco/",
+        "fecha": "2026-11-20T20:23:01+00:00"
       }
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-11-20T16:56:23+00:00",
+    "fecha_evento": "2026-11-20T20:23:01+00:00",
     "fecha_evento_temprana": "2026-11-20T16:56:23+00:00",
-    "fecha_deteccion": "2026-11-20T18:52:01.496031+00:00",
+    "fecha_deteccion": "2026-11-21T00:25:32.312557+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Falcon::2026-11-20",
     "titulo": "Orden público en Municipio Urumaco, Falcon",
-    "texto": "📌 Orden público en Municipio Urumaco, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Urumaco, Falcon\n🕒 Hecho reportado: 20/11/2026, 12:56 p.m.\n🔎 Detectado por el sistema: 20/11/2026, 2:52 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/"
+    "texto": "📌 Orden público en Municipio Urumaco, Falcon\n\n✅ CONFIRMADO | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Urumaco, Falcon\n🕒 Hecho reportado: 20/11/2026, 4:23 p.m.\n🔎 Detectado por el sistema: 20/11/2026, 8:25 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Manana (Falcon): https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/protesta-por-racionamiento-electrico-mantiene-cerrada-la-via-falcon-zulia-a-la-altura-de-urumaco/"
   },
   {
     "tipo": "deslizamiento",
@@ -1701,31 +1706,5 @@
     "clave_dedup": "derrame_petrolero::Zulia::2026-11-06",
     "titulo": "Derrame petrolero en Municipio Valmore Rodríguez, Zulia",
     "texto": "📌 Derrame petrolero en Municipio Valmore Rodríguez, Zulia\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Valmore Rodríguez, Zulia\n🕒 Hecho reportado: 06/11/2026, 9:59 a.m.\n🔎 Detectado por el sistema: 06/11/2026, 9:15 p.m.\n📊 Fuentes independientes: 1 (score 0.6)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Reporte Confidencial (Nueva Esparta): https://reporteconfidencial.info/2026/11/06/nuevo-derrame-de-crudo-zulia/"
-  },
-  {
-    "tipo": "vialidad",
-    "ubicacion": "Distrito Capital",
-    "municipio": null,
-    "parroquia": "San Juan",
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Primicia (Bolivar)",
-        "link": "https://primicia.com.ve/sucesos/choque-multiple-distribuidor-la-arana-cinco-heridos/",
-        "fecha": "2026-11-06T16:30:12+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-06T16:30:12+00:00",
-    "fecha_evento_temprana": "2026-11-06T16:30:12+00:00",
-    "fecha_deteccion": "2026-11-06T21:40:26.896766+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "vialidad::Distrito Capital::2026-11-06",
-    "titulo": "Incidente vial en Parroquia San Juan, Distrito Capital",
-    "texto": "📌 Incidente vial en Parroquia San Juan, Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia San Juan, Distrito Capital\n🕒 Hecho reportado: 06/11/2026, 12:30 p.m.\n🔎 Detectado por el sistema: 06/11/2026, 5:40 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/choque-multiple-distribuidor-la-arana-cinco-heridos/"
   }
 ]

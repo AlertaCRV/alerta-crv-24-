@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-20T02:44:05.263964+00:00",
+  "generado": "2026-11-21T00:27:55.986275+00:00",
   "actualizado_hasta": "2026-11-19T21:42:24.318161+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 7,
     "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registró una única incidencia de falla de agua en la categoría de emergencias, lo que representa una reducción significativa respecto al período anterior (octubre de 2026), en el que se contabilizaron siete eventos (7 evento(s) registrados entonces vs. 1 en este período).\\\n\\\nEl único caso reportado corresponde a una falla de agua de alta severidad en el estado Zulia. Según Noticia al Dia (Zulia), el Ministerio del Poder Popular de las Aguas, a través de la Hidrológica Venezolana (Hidroven), atendió más de 400 reportes relacionados con la interrupción del suministro de agua en municipios como Maracaibo, San Francisco y Cabimas, desplegando un Equipo Multidisciplinario del Agua para realizar trabajos de optimización y saneamiento de los sistemas de agua potable y aguas servidas (Noticia al Dia (Zulia)).\\\n\\\nEsta interrupción generó importantes inconvenientes para las familias y actividades productivas de la zona, requiriendo una respuesta inmediata por parte de las autoridades del sector hídrico. Aunque el reporte no menciona víctimas mortales ni heridos, la magnitud de los reportes sugiere un impacto material considerable en la infraestructura de abastecimiento y en la vida cotidiana de los residentes.\\\n\\\nEl monitoreo continuo de la Cruz Roja Venezolana continuará evaluando la evolución de la situación en Zulia y en el resto del país, con el objetivo de detectar oportunamente cualquier nueva incidencia y coordinar la asistencia necesaria en caso de que se presenten nuevos eventos de falla de agua.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de falla de agua, en contraste con los siete eventos reportados en octubre de 2026 (Comparación proporcionada). Este descenso en la cantidad de incidentes se refleja en los registros oficiales del sistema de monitoreo de emergencias.\n\nEl único caso registrado corresponde a una falla de agua en el estado Zulia, catalogada con alta severidad (Noticia al Dia (Zulia)). La interrupción afectó a varios municipios, entre ellos Maracaibo, San Francisco y Cabimas, generando inconvenientes en el suministro para la población local (Noticia al Dia (Zulia)).\n\nAnte la magnitud del problema, el Ministerio del Poder Popular de las Aguas, a través de la Hidrológica Venezolana (Hidroven), movilizó su Equipo Multidisciplinario del Agua para atender la situación (Noticia al Dia (Zulia)). En el marco de las labores de optimización y saneamiento de los sistemas de agua potable y aguas servidas, Hidroven atendió más de 400 reportes en el Zulia durante el período (Noticia al Dia (Zulia)).\n\nLas acciones de respuesta y la reducción del número de incidentes evidencian una mejora en la gestión de la infraestructura hídrica, aunque la alta severidad de la falla en Zulia subraya la necesidad de mantener la vigilancia y el mantenimiento preventivo en la región (Noticia al Dia (Zulia)).",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
