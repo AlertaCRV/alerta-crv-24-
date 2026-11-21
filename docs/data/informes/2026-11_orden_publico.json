@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-20T10:35:09.406784+00:00",
-  "actualizado_hasta": "2026-11-18T23:11:53.216975+00:00",
-  "total_eventos": 39,
+  "generado": "2026-11-21T15:39:44.435951+00:00",
+  "actualizado_hasta": "2026-11-21T00:25:32.312557+00:00",
+  "total_eventos": 41,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 39
+    "actual": 41
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 39 eventos de orden público, una disminución respecto a los 77 eventos del período anterior (octubre de 2026) (Comparación con el período anterior).\\n\\nEn el estado Barinas se produjo un episodio crítico de orden público cuando disturbios durante un partido de fútbol resultaron en el asesinato de un aficionado y la suspensión del encuentro, según informó Noticia al Dia (Zulia) (Noticia al Dia (Zulia)).\\n\\nEn el estado Miranda se registraron varios incidentes de alta gravedad. Portuguesa Reporta informó que ocho militares sufrieron descompensación tras 96 horas de huelga de hambre en el Centro Nacional de Procesados Militares de Ramo Verde, lo que constituye un hecho de orden público de severidad alta (Portuguesa Reporta). Asimismo, El Pitazo describió que 36 militares en la misma cárcel cumplieron más de 160 horas de huelga de hambre, con al menos 18 presentando complicaciones clínicas y uno trasladado de urgencia al Hospital Militar, también catalogado como orden público de alta severidad (El Pitazo).\\n\\nEl Pitazo también documentó incidentes de orden público de alta severidad en el estado Delta Amacuro, vinculados a protestas y bloqueos policiales que se extendieron durante la jornada de paro nacional (El Pitazo).\\n\\nFinalmente, en el estado Monagas se reportó otro episodio de orden público de alta gravedad, descrito por El Pitazo en el contexto de las protestas y enfrentamientos con las fuerzas de seguridad (El Pitazo).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 41 eventos de orden público, una disminución respecto a los 77 eventos del mes anterior (octubre 2026). Esta reducción refleja una menor frecuencia de incidentes, aunque persisten situaciones de alta gravedad en varias regiones del país.\n\nEn el estado Barinas se produjo un episodio crítico de orden público, catalogado con severidad \"crítico\", cuando disturbios vinculados a la delegación visitante de la Liga Futve resultaron en el asesinato de un aficionado y la suspensión del partido correspondiente (Noticia al Dia). Este hecho generó una intervención policial y la interrupción de actividades deportivas en la zona.\n\nEn Miranda se registraron dos incidentes de orden público con severidad \"alto\". Primero, ocho militares recluidos en el Centro Nacional de Procesados Militares de Ramo Verde presentaron descompensación física tras 96 horas de huelga de hambre, requiriendo hidratación de urgencia (Portuguesa Reporta). Segundo, un grupo de 36 militares en huelga de hambre en el mismo centro alcanzó más de 160 horas sin alimentación, provocando complicaciones clínicas graves y el traslado de uno de ellos al Hospital Militar (El Pitazo).\n\nOtros estados también experimentaron tensiones de orden público con severidad \"alto\". Según un informe de El Pitazo, las protestas y bloqueos policiales se extendieron a 22 entidades federales, incluyendo Delta Amacuro y Monagas, donde se registraron enfrentamientos y medidas de control por parte de las fuerzas de seguridad. Estas manifestaciones formaron parte de un paro nacional convocado por diversas organizaciones sociales y laborales.\n\nEn conjunto, aunque el número total de eventos disminuyó respecto al período anterior, la presencia de incidentes críticos y de alta severidad en Barinas, Miranda, Delta Amacuro y Monagas indica que la situación de orden público sigue siendo delicada y requiere una atención continua por parte de las autoridades y la Cruz Roja Venezolana.",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -106,6 +106,10 @@
       "link": "https://lamananadigital.com/trancan-la-falcon-zulia-a-la-altura-del-puente-la-primavera-por-racionamientos-electricos/"
     },
     {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/"
+    },
+    {
       "nombre": "La Noticia de Barinas",
       "link": "https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal"
     },
@@ -140,10 +144,6 @@
     {
       "nombre": "Nuevo Dia (Falcon)",
       "link": "https://nuevodia.com.ve/salud-y-educacion-se-suma-a-la-jornada-nacional-de-protesta-por-mejoras-salariales/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/mas-protestas-trabajadores-activos-y-jubilados-continuan-reclamando-salarios-dignos/"
     }
   ]
 }
