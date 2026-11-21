@@ -3,7 +3,7 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-20T02:44:00.085831+00:00",
+  "generado": "2026-11-21T00:27:42.898530+00:00",
   "actualizado_hasta": "2026-11-18T16:39:23.890015+00:00",
   "total_eventos": 11,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 20,
     "actual": 11
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 incendios, una disminución respecto a los 20 eventos del mes anterior (2026-10). Esta reducción se refleja en la menor cantidad de siniestros reportados a nivel nacional, aunque algunos de los incidentes mantuvieron una alta severidad y causaron daños significativos.\n\nEn el estado Táchira se produjeron dos incendios de alta gravedad. El primero afectó la sede de la Alcaldía del municipio Córdoba, ubicada en Santa Ana, donde las llamas consumieron varias oficinas y dañaron la documentación oficial (Noticia al Dia). El segundo incendio tuvo lugar en una fábrica de colchones en el sector Juan Camero, municipio Seboruco; bomberos y personal de protección civil acudieron al lugar para controlar las llamas, aunque aún se desconocen sus causas (Diario La Nacion).\n\nEn el estado Bolívar, un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, cobró la vida de cuatro personas, entre ellas tres menores de edad, y dejó a la comunidad en estado de duelo (El Siglo). La magnitud del siniestro fue catalogada como crítica debido a la pérdida de vidas y los daños materiales extensos.\n\nEn el estado Miranda, una explosión provocada por una fuga de gas en la urbanización Lomas de Las Mercedes generó un incendio que dejó al menos una persona con quemaduras y causó daños en dos apartamentos (El Pitazo). Las autoridades de bomberos y protección civil intervinieron rápidamente para atender a los heridos y controlar el fuego, clasificando el evento como de alta severidad.\n\nOtros incidentes menores, como una explosión e incendio en la subestación Federación de Ciudad Ojeda (Zulia) y un incendio en la empresa mixta PDVSA‑Chevron en Anzoátegui, fueron contenidos sin víctimas, pero forman parte del contexto de emergencias que la Cruz Roja Venezolana sigue monitoreando (El Impulso; El Pitazo).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 incendios, una disminución respecto a los 20 eventos del mes anterior (2026-10).\\n\\nEn el estado Táchira, la sede de la Alcaldía del municipio Córdoba sufrió un incendio de gran magnitud el 5 de noviembre, afectando tres oficinas y generando gran preocupación entre la población local (Noticia al Dia).\\n\\nEse mismo estado registró otro siniestro el 12 de noviembre en una fábrica de colchones ubicada en el sector Juan Camero, municipio Seboruco; los bomberos y la Protección Civil trabajaron para controlar las llamas, aunque aún se desconocen las causas (Diario La Nacion).\\n\\nEn el estado Bolívar, un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, cobró la vida de cuatro personas, entre ellas tres menores, según el reporte oficial del Sistema Nacional de Gestión de Riesgo (El Siglo).\\n\\nEn el estado Miranda, una explosión por fuga de gas en la urbanización Lomas de Las Mercedes, municipio Baruta, dejó al menos una persona con quemaduras y provocó daños materiales en dos apartamentos (El Pitazo).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
