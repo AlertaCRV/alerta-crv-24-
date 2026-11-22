@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "sismo",
+  "tipo_label": "Sismo",
+  "cerrado": false,
+  "generado": "2026-11-22T16:29:41.285452+00:00",
+  "actualizado_hasta": "2026-11-22T16:27:26.814119+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "Durante noviembre de 2026 la Cruz Roja Venezolana registró un solo evento sísmico, igual al del mes anterior (1 evento(s) registrados entonces vs. 1 en este período).\n\nEl 22 de noviembre de 2026, a la madrugada, un sismo de magnitud 4,1 sacudió los estados de Falcón y Lara, según informó la Fundación Venezolana de Investigaciones Sismológicas (Funvisis) y reportó El Periodico de Monagas (El Periodico de Monagas).\n\nNo se reportaron daños materiales significativos, heridos ni víctimas fatales; la Cruz Roja mantuvo la vigilancia y activó protocolos de atención preventiva en la zona afectada.",
+  "fuentes": [
+    {
+      "nombre": "El Periodico de Monagas",
+      "link": "https://elperiodicodemonagas.com.ve/venezuela/sismo-de-magnitud-41-sacudio-este-domingo-a-falcon-y-lara/"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "actualizado": "2026-11-21T00:25:41.397101+00:00",
+  "actualizado": "2026-11-22T16:27:48.529818+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-20T20:23:01+00:00"
+    "hasta": "2026-11-22T15:10:37+00:00"
   },
-  "total_eventos": 671,
+  "total_eventos": 673,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
@@ -15,8 +15,8 @@
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
-    "vialidad": 33,
-    "sismo": 8,
+    "vialidad": 34,
+    "sismo": 9,
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
@@ -44,16 +44,16 @@
     },
     {
       "estado": "Zulia",
-      "total": 59,
+      "total": 60,
       "confirmados": 12,
       "por_severidad": {
         "medio": 26,
         "critico": 9,
         "bajo": 10,
         "sin_clasificar": 1,
-        "alto": 13
+        "alto": 14
       },
-      "indice_gravedad": 2.36,
+      "indice_gravedad": 2.37,
       "severidad_mapa": "medio"
     },
     {
@@ -141,15 +141,15 @@
     },
     {
       "estado": "Falcon",
-      "total": 32,
+      "total": 33,
       "confirmados": 6,
       "por_severidad": {
         "alto": 7,
-        "bajo": 8,
+        "bajo": 9,
         "medio": 15,
         "critico": 2
       },
-      "indice_gravedad": 2.09,
+      "indice_gravedad": 2.06,
       "severidad_mapa": "medio"
     },
     {
@@ -385,7 +385,7 @@
       "salud_publica": 4,
       "ataque_armado": 2,
       "explosion": 1,
-      "vialidad": 2,
+      "vialidad": 3,
       "incendio": 6,
       "derrame_petrolero": 4,
       "infraestructura_agua": 1
@@ -492,7 +492,8 @@
       "derrame_petrolero": 3,
       "infraestructura_agua": 1,
       "incendio": 3,
-      "infraestructura_electrica": 1
+      "infraestructura_electrica": 1,
+      "sismo": 1
     },
     "Yaracuy": {
       "inundacion": 6,
@@ -575,10 +576,10 @@
     }
   },
   "por_severidad": {
-    "alto": 153,
+    "alto": 154,
     "critico": 85,
     "medio": 229,
-    "bajo": 174,
+    "bajo": 175,
     "sin_clasificar": 30
   },
   "serie_mensual_por_tipo": {
@@ -646,12 +647,13 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 7
+      "2026-11": 8
     },
     "sismo": {
       "2026-08": 5,
       "2026-09": 2,
-      "2026-10": 1
+      "2026-10": 1,
+      "2026-11": 1
     },
     "escasez_combustible": {
       "2026-08": 1,
