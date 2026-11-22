@@ -3,7 +3,7 @@
   "tipo": "incendio",
   "tipo_label": "Incendio",
   "cerrado": false,
-  "generado": "2026-11-21T00:27:42.898530+00:00",
+  "generado": "2026-11-22T01:22:50.828495+00:00",
   "actualizado_hasta": "2026-11-18T16:39:23.890015+00:00",
   "total_eventos": 11,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 20,
     "actual": 11
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 incendios, una disminución respecto a los 20 eventos del mes anterior (2026-10).\\n\\nEn el estado Táchira, la sede de la Alcaldía del municipio Córdoba sufrió un incendio de gran magnitud el 5 de noviembre, afectando tres oficinas y generando gran preocupación entre la población local (Noticia al Dia).\\n\\nEse mismo estado registró otro siniestro el 12 de noviembre en una fábrica de colchones ubicada en el sector Juan Camero, municipio Seboruco; los bomberos y la Protección Civil trabajaron para controlar las llamas, aunque aún se desconocen las causas (Diario La Nacion).\\n\\nEn el estado Bolívar, un incendio estructural en una vivienda del sector Zabaleta, municipio Sifontes, cobró la vida de cuatro personas, entre ellas tres menores, según el reporte oficial del Sistema Nacional de Gestión de Riesgo (El Siglo).\\n\\nEn el estado Miranda, una explosión por fuga de gas en la urbanización Lomas de Las Mercedes, municipio Baruta, dejó al menos una persona con quemaduras y provocó daños materiales en dos apartamentos (El Pitazo).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 11 incendios, una disminución respecto a los 20 eventos del mes anterior (2026-10). Esta reducción se refleja en la menor cantidad de siniestros reportados, aunque varios de ellos presentaron alta gravedad y causaron daños materiales y pérdidas humanas.\n\nEn el estado Táchira se produjeron dos incendios de alta severidad. El primero afectó la sede de la Alcaldía del municipio Córdoba, ubicada en Santa Ana, el 5 de noviembre de 2026, provocando la destrucción parcial de tres oficinas y generando gran preocupación entre la población (Noticia al Dia). El segundo incendio ocurrió el 12 de noviembre en una fábrica de colchones del sector Juan Camero, municipio Seboruco, donde bomberos y protección civil trabajaron para controlar las llamas; hasta el momento no se conocen las causas (Diario La Nacion).\n\nEn el estado Bolívar, un incendio crítico se desató el 8 de noviembre en una vivienda del sector Zabaleta, municipio Sifontes, en Tumeremo, cobrando la vida de cuatro personas, entre ellas tres menores de edad (El Siglo). Las autoridades de rescate y bomberos acudieron al lugar para atender la emergencia y gestionar la identificación de las víctimas.\n\nEn el estado Miranda, el 11 de noviembre se registró una explosión por fuga de gas en la urbanización Lomas de Las Mercedes, municipio Baruta, que dejó al menos una persona con quemaduras y causó daños en dos apartamentos (El Pitazo). Los bomberos y la protección civil intervinieron para atender a los heridos y controlar la situación, sin que se reportaran víctimas fatales.",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",

@@ -28,7 +28,7 @@
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-21T00:28:36.050017+00:00",
+    "generado": "2026-11-22T01:23:43.123418+00:00",
     "total_eventos": 2
   },
   {
@@ -36,7 +36,7 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-21T07:40:01.261894+00:00",
+    "generado": "2026-11-22T01:23:16.970590+00:00",
     "total_eventos": 9
   },
   {
@@ -44,7 +44,7 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-11-21T00:27:55.986275+00:00",
+    "generado": "2026-11-22T01:23:03.706237+00:00",
     "total_eventos": 1
   },
   {
@@ -52,7 +52,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-21T00:27:42.898530+00:00",
+    "generado": "2026-11-22T01:22:50.828495+00:00",
     "total_eventos": 11
   },
   {
@@ -68,7 +68,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-21T00:27:02.637583+00:00",
+    "generado": "2026-11-22T01:21:57.255224+00:00",
     "total_eventos": 5
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-21T07:39:20.757107+00:00",
+    "generado": "2026-11-22T01:21:30.800269+00:00",
     "total_eventos": 4
   },
   {
