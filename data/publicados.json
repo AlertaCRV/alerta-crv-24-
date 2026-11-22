@@ -1,18 +1,4 @@
 {
-  "deslizamiento::La Guaira::2026-11-19": {
-    "severidad": "critico",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-19T21:42:19.718955+00:00",
-    "fecha_evento_temprana": "2026-11-19T20:30:00+00:00",
-    "municipio": null
-  },
-  "infraestructura_agua::Zulia::2026-11-19": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-19T21:42:24.318161+00:00",
-    "fecha_evento_temprana": "2026-11-19T18:19:13+00:00",
-    "municipio": null
-  },
   "orden_publico::Falcon::2026-11-20": {
     "severidad": "medio",
     "confirmado": true,
