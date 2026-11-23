@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-23T11:09:35.878471+00:00",
+  "actualizado": "2026-11-23T22:43:11.841632+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-23T05:00:00+00:00"
+    "hasta": "2026-11-23T21:17:49+00:00"
   },
-  "total_eventos": 674,
+  "total_eventos": 678,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
     "infraestructura_electrica": 57,
     "deslizamiento": 45,
     "colapso_estructural": 5,
-    "orden_publico": 240,
+    "orden_publico": 244,
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
@@ -30,16 +30,16 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 101,
+      "total": 102,
       "confirmados": 18,
       "por_severidad": {
         "alto": 18,
         "medio": 32,
-        "bajo": 30,
+        "bajo": 31,
         "critico": 15,
         "sin_clasificar": 6
       },
-      "indice_gravedad": 2.19,
+      "indice_gravedad": 2.18,
       "severidad_mapa": "medio"
     },
     {
@@ -58,16 +58,16 @@
     },
     {
       "estado": "Lara",
-      "total": 53,
+      "total": 54,
       "confirmados": 4,
       "por_severidad": {
-        "critico": 5,
+        "critico": 6,
         "alto": 10,
         "medio": 19,
         "bajo": 15,
         "sin_clasificar": 4
       },
-      "indice_gravedad": 2.1,
+      "indice_gravedad": 2.14,
       "severidad_mapa": "medio"
     },
     {
@@ -141,12 +141,12 @@
     },
     {
       "estado": "Falcon",
-      "total": 33,
-      "confirmados": 6,
+      "total": 34,
+      "confirmados": 7,
       "por_severidad": {
         "alto": 7,
         "bajo": 9,
-        "medio": 15,
+        "medio": 16,
         "critico": 2
       },
       "indice_gravedad": 2.06,
@@ -208,6 +208,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Yaracuy",
+      "total": 20,
+      "confirmados": 1,
+      "por_severidad": {
+        "critico": 6,
+        "bajo": 6,
+        "medio": 6,
+        "sin_clasificar": 1,
+        "alto": 1
+      },
+      "indice_gravedad": 2.37,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Monagas",
       "total": 20,
       "confirmados": 0,
@@ -231,20 +245,6 @@
         "critico": 3
       },
       "indice_gravedad": 2.32,
-      "severidad_mapa": "medio"
-    },
-    {
-      "estado": "Yaracuy",
-      "total": 19,
-      "confirmados": 1,
-      "por_severidad": {
-        "critico": 5,
-        "bajo": 6,
-        "medio": 6,
-        "sin_clasificar": 1,
-        "alto": 1
-      },
-      "indice_gravedad": 2.28,
       "severidad_mapa": "medio"
     },
     {
@@ -364,7 +364,7 @@
     "Lara": {
       "inundacion": 5,
       "salud_publica": 6,
-      "orden_publico": 25,
+      "orden_publico": 26,
       "sismo": 1,
       "deslizamiento": 1,
       "incendio": 3,
@@ -393,7 +393,7 @@
     "Distrito Capital": {
       "deslizamiento": 6,
       "inundacion": 18,
-      "orden_publico": 33,
+      "orden_publico": 34,
       "incendio": 20,
       "vialidad": 6,
       "infraestructura_electrica": 9,
@@ -487,7 +487,7 @@
     },
     "Falcon": {
       "crisis_migratoria": 2,
-      "orden_publico": 18,
+      "orden_publico": 19,
       "deslizamiento": 4,
       "derrame_petrolero": 3,
       "infraestructura_agua": 1,
@@ -500,7 +500,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
-      "orden_publico": 6,
+      "orden_publico": 7,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -577,9 +577,9 @@
   },
   "por_severidad": {
     "alto": 154,
-    "critico": 85,
-    "medio": 230,
-    "bajo": 175,
+    "critico": 87,
+    "medio": 231,
+    "bajo": 176,
     "sin_clasificar": 30
   },
   "serie_mensual_por_tipo": {
@@ -621,7 +621,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 41
+      "2026-11": 45
     },
     "salud_publica": {
       "2026-07": 1,
