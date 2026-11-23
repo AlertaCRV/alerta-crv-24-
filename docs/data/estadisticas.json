@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-11-22T16:27:48.529818+00:00",
+  "actualizado": "2026-11-23T11:09:35.878471+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-22T15:10:37+00:00"
+    "hasta": "2026-11-23T05:00:00+00:00"
   },
-  "total_eventos": 673,
+  "total_eventos": 674,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
-    "infraestructura_electrica": 56,
+    "infraestructura_electrica": 57,
     "deslizamiento": 45,
     "colapso_estructural": 5,
     "orden_publico": 240,
@@ -72,16 +72,16 @@
     },
     {
       "estado": "Tachira",
-      "total": 47,
+      "total": 48,
       "confirmados": 3,
       "por_severidad": {
         "alto": 16,
         "bajo": 7,
-        "medio": 11,
+        "medio": 12,
         "critico": 9,
         "sin_clasificar": 4
       },
-      "indice_gravedad": 2.63,
+      "indice_gravedad": 2.61,
       "severidad_mapa": "alto"
     },
     {
@@ -452,7 +452,7 @@
       "orden_publico": 12,
       "inundacion": 5,
       "sismo": 1,
-      "infraestructura_electrica": 3,
+      "infraestructura_electrica": 4,
       "incendio": 9,
       "vialidad": 3,
       "motin_carcelario": 1,
@@ -578,7 +578,7 @@
   "por_severidad": {
     "alto": 154,
     "critico": 85,
-    "medio": 229,
+    "medio": 230,
     "bajo": 175,
     "sin_clasificar": 30
   },
@@ -601,7 +601,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 9
+      "2026-11": 10
     },
     "deslizamiento": {
       "2026-07": 3,

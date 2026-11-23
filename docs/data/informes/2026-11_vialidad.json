@@ -3,15 +3,15 @@
   "tipo": "vialidad",
   "tipo_label": "Incidente vial",
   "cerrado": false,
-  "generado": "2026-11-21T00:29:56.549330+00:00",
-  "actualizado_hasta": "2026-11-18T23:12:57.894617+00:00",
-  "total_eventos": 7,
+  "generado": "2026-11-23T11:11:32.438345+00:00",
+  "actualizado_hasta": "2026-11-22T16:27:47.024368+00:00",
+  "total_eventos": 8,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 7
+    "actual": 8
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron siete incidentes viales, cifra idéntica a la del período anterior (2026-10) que también contó con siete eventos (Comparación con el período anterior). La constancia en el número de incidentes subraya la necesidad de reforzar las medidas de prevención y respuesta en todo el territorio nacional.\n\nEn el estado Aragua se produjo una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, lo que requirió la intervención de la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana para atender a los afectados (La Prensa de Monagas). Este hecho fue catalogado con severidad alta.\n\nEn el estado Portuguesa, un autobús modelo Blue Bird volcó en la carretera nacional Biscucuy‑Guanare, dejando dos muertos y 43 heridos, entre los que se encontraban pasajeros y personal de emergencia que acudieron al lugar (La Verdad (Zulia)). En la capital del país, la autopista Gran Cacique Guaicaipuro, distribuidor La Araña, registró un choque múltiple que dejó cinco personas con múltiples traumatismos, sin víctimas fatales (Primicia (Bolivar)). Ambos incidentes fueron calificados como críticos y altos respectivamente.\n\nEl estado Monagas vivió un fin de semana particularmente grave, con varios accidentes de moto que cobraron la vida de cuatro personas (dos en Maturín y dos en Aguasay) y dejaron 19 heridos, según los registros de la morgue del Hospital Universitario Dr. Manuel Núñez Tovar (El Periodico de Monagas). La severidad de estos hechos se consideró crítica.\n\nEn el Táchira, tres accidentes de tránsito en el municipio fronterizo Bolívar, específicamente en San Antonio, dejaron seis lesionados, entre ellos un joven de 18 años con politraumatismos que fue trasladado al Hospital Dr. Samuel Darío M (Diario La Nacion (Tachira)). Asimismo, en la arterial Lara‑Zulia, en el sector Monte Pío del municipio Santa Rita, una camioneta volcó provocando la muerte de una persona y cuatro heridos (Noticia al Dia (Zulia)). Ambos eventos fueron catalogados con severidad alta y crítica respectivamente.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron ocho incidentes viales, superando los siete del mes anterior (2026-10) (Comparación con el período anterior). Este incremento refleja una mayor frecuencia de colisiones y volcamientos en distintas regiones del país.\n\nEn Aragua se produjo una colisión y volcamiento de un autobús y un camión en la carretera Cagua‑Villa de Cura, que requirió la intervención de la Guardia Nacional Bolivariana y la Policía Nacional Bolivariana (La Prensa de Monagas). En el estado Portuguesa, un autobús modelo Blue Bird volcó en la carretera nacional Biscucuy‑Guanare, dejando dos muertos y 43 heridos (La Verdad). En el Distrito Capital, un choque múltiple en la Autopista Gran Cacique Guaicaipuro, Distribuidor la Araña, provocó cinco heridos sin víctimas fatales (Primicia).\n\nEn Monagas, los accidentes de moto del fin de semana cobraron la vida de cuatro personas y dejaron 19 heridos, con fallecimientos en Maturín y Aguasay (El Periodico de Monagas). En San Antonio del Táchira, tres accidentes de tránsito involucraron dos motocicletas y dejaron seis lesionados, entre ellos un joven de 18 años con politraumatismos (Diario La Nacion).\n\nEn la zona fronteriza Lara‑Zulia, el volcamiento de una camioneta en Santa Rita resultó en un muerto y cuatro heridos (Noticia al Dia). En Zulia, otro accidente grave ocurrió en la intersección de la calle 66 con avenida 19, donde una camioneta y una unidad Ford colisionaron y se volcaron, dejando tres heridos (Noticia al Dia).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -32,6 +32,10 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/sucesos/un-muerto-y-cuatro-heridos-por-volcamiento-de-camioneta-en-santa-rita/"
+    },
+    {
+      "nombre": "Noticia al Dia (Zulia)",
+      "link": "https://www.noticialdia.com/sucesos/tres-heridos-deja-aparatoso-choque-y-vuelco-en-la-calle-66-con-avenida-19/"
     },
     {
       "nombre": "Primicia (Bolivar)",
