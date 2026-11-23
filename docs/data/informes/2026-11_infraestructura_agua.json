@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-22T01:23:03.706237+00:00",
+  "generado": "2026-11-23T02:32:39.835436+00:00",
   "actualizado_hasta": "2026-11-19T21:42:24.318161+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 7,
     "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026, el sistema de monitoreo de emergencias registró una disminución significativa de incidentes de falla de agua en comparación con el mes anterior, pasando de 7 eventos en octubre de 2026 a 1 evento en noviembre de 2026.\n\nEl único incidente reportado correspondió a una falla de agua de alta severidad en el estado Zulia. Según Noticia al Dia (Zulia), el Ministerio del Poder Popular de las Aguas, a través de Hidroven, atendió más de 400 reportes en los municipios de Maracaibo, San Francisco y Cabimas, realizando trabajos de optimización y saneamiento de los sistemas de agua potable y aguas servidas (Noticia al Dia (Zulia)).\n\nEste hecho generó interrupciones temporales en el suministro de agua para cientos de familias, aunque no se reportaron heridos ni víctimas fatales. La Cruz Roja Venezolana continuará coordinando con las autoridades locales para reforzar la respuesta y mitigar futuros incidentes.",
+  "narrativa": "En el mes de noviembre de 2026 se registró una única incidencia de falla de agua, una notable reducción frente a los siete eventos reportados en octubre de 2026 (7 evento(s) registrados entonces vs. 1 en este período). Esta disminución sugiere una mejora puntual en la gestión de los sistemas hidráulicos, aunque la información disponible se limita a los casos documentados por los medios.\n\nEl único caso reportado correspondió a una falla de agua de alta severidad en el estado Zulia, que afectó a los municipios de Maracaibo, San Francisco y Cabimas. Según Noticia al Dia (Zulia), el Ministerio del Poder Popular de las Aguas, a través de Hidroven, atendió más de 400 reportes y realizó trabajos de optimización y saneamiento de los sistemas de agua potable y aguas servidas en la zona (Noticia al Dia (Zulia)).\n\nA pesar de la baja cantidad de incidentes en este período, la Cruz Roja Venezolana mantiene la vigilancia y la coordinación con las autoridades locales para garantizar la pronta respuesta ante cualquier eventualidad que comprometa el suministro de agua y la seguridad de la población.",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
