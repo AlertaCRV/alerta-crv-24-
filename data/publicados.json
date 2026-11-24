@@ -1,11 +1,4 @@
 {
-  "orden_publico::Falcon::2026-11-20": {
-    "severidad": "medio",
-    "confirmado": true,
-    "fecha_deteccion": "2026-11-21T00:25:32.312557+00:00",
-    "fecha_evento_temprana": "2026-11-20T16:56:23+00:00",
-    "municipio": "Urumaco"
-  },
   "sismo::Falcon::2026-11-22::mag4.1": {
     "severidad": "bajo",
     "confirmado": false,
