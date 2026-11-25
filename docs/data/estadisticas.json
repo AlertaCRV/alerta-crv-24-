@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-25T11:39:33.612418+00:00",
+  "actualizado": "2026-11-25T20:45:10.920354+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-25T05:00:00+00:00"
+    "hasta": "2026-11-25T20:11:06+00:00"
   },
-  "total_eventos": 689,
+  "total_eventos": 691,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
     "infraestructura_electrica": 59,
     "deslizamiento": 45,
     "colapso_estructural": 6,
-    "orden_publico": 251,
+    "orden_publico": 252,
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
-    "vialidad": 34,
+    "vialidad": 35,
     "sismo": 9,
     "escasez_combustible": 2,
     "sequia": 6,
@@ -30,10 +30,10 @@
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 103,
+      "total": 104,
       "confirmados": 19,
       "por_severidad": {
-        "alto": 19,
+        "alto": 20,
         "medio": 32,
         "bajo": 31,
         "critico": 15,
@@ -224,15 +224,15 @@
     },
     {
       "estado": "Monagas",
-      "total": 20,
+      "total": 21,
       "confirmados": 0,
       "por_severidad": {
         "medio": 7,
         "alto": 5,
-        "bajo": 6,
+        "bajo": 7,
         "critico": 2
       },
-      "indice_gravedad": 2.15,
+      "indice_gravedad": 2.1,
       "severidad_mapa": "medio"
     },
     {
@@ -397,7 +397,7 @@
       "inundacion": 18,
       "orden_publico": 35,
       "incendio": 20,
-      "vialidad": 6,
+      "vialidad": 7,
       "infraestructura_electrica": 9,
       "colapso_estructural": 1,
       "sismo": 1,
@@ -524,7 +524,7 @@
       "infraestructura_agua": 4,
       "infraestructura_electrica": 1,
       "incendio": 3,
-      "orden_publico": 7
+      "orden_publico": 8
     },
     "Guarico": {
       "sequia": 2,
@@ -580,10 +580,10 @@
     }
   },
   "por_severidad": {
-    "alto": 157,
+    "alto": 158,
     "critico": 87,
     "medio": 234,
-    "bajo": 180,
+    "bajo": 181,
     "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
@@ -626,7 +626,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 52
+      "2026-11": 53
     },
     "salud_publica": {
       "2026-07": 1,
@@ -652,7 +652,7 @@
       "2026-08": 10,
       "2026-09": 9,
       "2026-10": 7,
-      "2026-11": 8
+      "2026-11": 9
     },
     "sismo": {
       "2026-08": 5,

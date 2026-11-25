@@ -1,18 +1,4 @@
 {
-  "sismo::Falcon::2026-11-22::mag4.1": {
-    "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-22T16:27:26.814119+00:00",
-    "fecha_evento_temprana": "2026-11-22T14:16:39+00:00",
-    "municipio": null
-  },
-  "vialidad::Zulia::2026-11-22": {
-    "severidad": "alto",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-22T16:27:47.024368+00:00",
-    "fecha_evento_temprana": "2026-11-22T15:10:37+00:00",
-    "municipio": null
-  },
   "infraestructura_electrica::Tachira::2026-11-23": {
     "severidad": "medio",
     "confirmado": false,
@@ -110,5 +96,19 @@
     "fecha_deteccion": "2026-11-25T11:38:39.944382+00:00",
     "fecha_evento_temprana": "2026-11-25T05:00:00+00:00",
     "municipio": "San Cristóbal"
+  },
+  "orden_publico::Monagas::2026-11-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T20:43:39.337892+00:00",
+    "fecha_evento_temprana": "2026-11-25T19:55:39+00:00",
+    "municipio": null
+  },
+  "vialidad::Distrito Capital::2026-11-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T20:44:31.314845+00:00",
+    "fecha_evento_temprana": "2026-11-25T20:11:06+00:00",
+    "municipio": null
   }
 }
