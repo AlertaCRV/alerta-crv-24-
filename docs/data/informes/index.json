@@ -20,7 +20,7 @@
     "tipo": "salud_publica",
     "tipo_label": "Salud pública",
     "cerrado": false,
-    "generado": "2026-11-24T06:34:02.078330+00:00",
+    "generado": "2026-11-25T11:41:27.264072+00:00",
     "total_eventos": 14
   },
   {
@@ -86,6 +86,14 @@
     "cerrado": false,
     "generado": "2026-11-25T02:33:20.567256+00:00",
     "total_eventos": 4
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "colapso_estructural",
+    "tipo_label": "Colapso estructural",
+    "cerrado": false,
+    "generado": "2026-11-25T11:40:32.237259+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-11",

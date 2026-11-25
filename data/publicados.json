@@ -70,9 +70,9 @@
     "municipio": null
   },
   "orden_publico::Barinas::2026-11-25": {
-    "severidad": "bajo",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-25T02:30:17.359885+00:00",
+    "fecha_deteccion": "2026-11-25T11:38:44.031485+00:00",
     "fecha_evento_temprana": "2026-11-25T01:26:40+00:00",
     "municipio": null
   },
@@ -91,9 +91,9 @@
     "municipio": null
   },
   "infraestructura_electrica::Portuguesa::2026-11-25": {
-    "severidad": "sin_clasificar",
+    "severidad": "medio",
     "confirmado": false,
-    "fecha_deteccion": "2026-11-25T02:31:20.990435+00:00",
+    "fecha_deteccion": "2026-11-25T11:38:49.153151+00:00",
     "fecha_evento_temprana": "2026-11-25T00:12:48+00:00",
     "municipio": "Páez"
   },
@@ -103,5 +103,12 @@
     "fecha_deteccion": "2026-11-25T02:31:46.649351+00:00",
     "fecha_evento_temprana": "2026-11-24T19:57:44+00:00",
     "municipio": null
+  },
+  "colapso_estructural::Tachira::2026-11-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T11:38:39.944382+00:00",
+    "fecha_evento_temprana": "2026-11-25T05:00:00+00:00",
+    "municipio": "San Cristóbal"
   }
 }
