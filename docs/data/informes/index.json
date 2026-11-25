@@ -12,7 +12,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-11-24T06:34:14.338415+00:00",
+    "generado": "2026-11-25T02:35:56.512100+00:00",
     "total_eventos": 1
   },
   {
@@ -28,15 +28,15 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-22T08:15:36.273077+00:00",
-    "total_eventos": 41
+    "generado": "2026-11-25T02:35:38.135914+00:00",
+    "total_eventos": 51
   },
   {
     "periodo": "2026-11",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-24T06:33:08.529657+00:00",
+    "generado": "2026-11-25T02:35:10.787611+00:00",
     "total_eventos": 2
   },
   {
@@ -44,15 +44,15 @@
     "tipo": "infraestructura_electrica",
     "tipo_label": "Falla eléctrica",
     "cerrado": false,
-    "generado": "2026-11-23T02:32:53.606958+00:00",
-    "total_eventos": 9
+    "generado": "2026-11-25T02:34:57.176667+00:00",
+    "total_eventos": 11
   },
   {
     "periodo": "2026-11",
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-11-24T06:32:36.345941+00:00",
+    "generado": "2026-11-25T02:34:29.938989+00:00",
     "total_eventos": 1
   },
   {
@@ -60,7 +60,7 @@
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-24T06:32:23.333750+00:00",
+    "generado": "2026-11-25T02:34:16.900426+00:00",
     "total_eventos": 11
   },
   {
@@ -76,7 +76,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-24T06:31:30.195179+00:00",
+    "generado": "2026-11-25T02:33:47.534681+00:00",
     "total_eventos": 5
   },
   {
@@ -84,8 +84,16 @@
     "tipo": "derrame_petrolero",
     "tipo_label": "Derrame petrolero",
     "cerrado": false,
-    "generado": "2026-11-24T06:31:04.091818+00:00",
+    "generado": "2026-11-25T02:33:20.567256+00:00",
     "total_eventos": 4
+  },
+  {
+    "periodo": "2026-11",
+    "tipo": "ataque_armado",
+    "tipo_label": "Ataque armado",
+    "cerrado": false,
+    "generado": "2026-11-25T02:33:07.100894+00:00",
+    "total_eventos": 1
   },
   {
     "periodo": "2026-10",

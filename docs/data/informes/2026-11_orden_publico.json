@@ -3,16 +3,20 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-22T08:15:36.273077+00:00",
-  "actualizado_hasta": "2026-11-21T00:25:32.312557+00:00",
-  "total_eventos": 41,
+  "generado": "2026-11-25T02:35:38.135914+00:00",
+  "actualizado_hasta": "2026-11-25T02:31:46.649351+00:00",
+  "total_eventos": 51,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 41
+    "actual": 51
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 41 eventos de orden público, lo que representa una reducción frente a los 77 eventos registrados en el período anterior (2026-10). Esta disminución se observa en el conjunto de incidentes reportados por los medios verificados.\n\nEn el estado Barinas se produjo un hecho de orden público calificado como crítico, tras disturbios que culminaron con la muerte de un aficionado y la suspensión de un partido de la Liga Futve, según informó Noticia al Dia (Zulia). Las tensiones surgieron cuando integrantes de la delegación visitante vulneraron el cerco de seguridad custodiado por la Policía Nacional Bolivariana.\n\nEl estado Miranda registró varios incidentes de alta severidad. Portuguesa Reporta describió un episodio de orden público con gravedad alta, mientras que El Pitazo reportó dos eventos adicionales en la misma entidad, también catalogados como de alta severidad. En Delta Amacuro, El Pitazo informó otro caso de orden público con nivel alto de gravedad, y en Monagas se documentó un incidente similar, igualmente reportado por El Pitazo.\n\nEstos hechos se enmarcan dentro de un contexto de protestas y huelgas en el país. El Pitazo cubrió la huelga de hambre de 36 militares en el Centro Nacional de Procesados Militares de Ramo Verde, donde varios detenidos presentaron complicaciones de salud y uno fue trasladado de urgencia al Hospital Militar. Asimismo, el Comité por la Libertad de los Presos Políticos denunció la falta de hidratación y servicios sanitarios para los internos, exigiendo atención médica inmediata (El Pitazo).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron 51 eventos de orden público, una disminución respecto a los 77 del mes anterior (2026‑10). Esta reducción se observa a pesar de la persistencia de incidentes críticos y de alta severidad en distintas regiones del país.\n\nEn Barinas se produjo un episodio de orden público de severidad crítica, que incluyó disturbios y la suspensión de un partido de la Liga Futve, según Noticia al Dia (Zulia). En el estado Lara también se registró un hecho de orden público de severidad crítica, reportado por Yaracuy al Dia, al igual que en Yaracuy, donde otro incidente crítico fue documentado por la misma fuente.\n\nEl estado Miranda presentó tres incidentes de orden público de severidad alta: uno reportado por Portuguesa Reporta y dos adicionales descritos por El Pitazo. En Delta Amacuro se registró un evento de alta severidad, también citado por El Pitazo. De igual forma, Monagas experimentó un hecho de orden público de severidad alta, según El Pitazo, y el Distrito Capital reportó un incidente de alta severidad, igualmente documentado por El Pitazo.\n\nDurante el mismo período se reportaron múltiples manifestaciones y movilizaciones que derivaron en enfrentamientos con la Policía Nacional Bolivariana. En Caracas, al menos cinco trabajadores resultaron lesionados y varios manifestantes fueron despojados de sus pertenencias, según La Mañana (Falcon) y El Pitazo. Asimismo, se denunciaron agresiones y robos a trabajadores durante una marcha hacia Miraflores, reportado por El Pitazo y La Prensa de Lara.\n\nEl monitoreo continuo de la Cruz Roja Venezolana seguirá registrando y analizando estos eventos para orientar la respuesta humanitaria y de seguridad, manteniendo la atención en los incidentes críticos y en la protección de la población afectada.",
   "fuentes": [
+    {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/24/video-movilizacion-en-caracas-registro-hechos-de-violencia-robo-y-atropello-a-personas-de-la-tercera-edad-24nov/"
+    },
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/se-siguen-descompensando-familiares-de-militares-exigen-atencion-medica-por-huelga-de-hambre-en-ramo-verde/"
@@ -26,12 +30,52 @@
       "link": "https://elpitazo.net/politica/36-militares-cumplen-una-semana-en-huelga-de-hambre-en-ramo-verde-con-cuadros-clinicos-criticos/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/regiones/policias-agreden-a-trabajadores-y-roban-a-un-profesor-durante-marcha-a-miraflores/"
+    },
+    {
+      "nombre": "La Manana (Falcon)",
+      "link": "https://lamananadigital.com/al-menos-cinco-trabajadores-lesionados-por-policias-durante-la-marcha-en-caracas-este-24nov/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/nacionales/trabajadores-piquete-pnb-miraflores/"
+    },
+    {
+      "nombre": "Maturin News",
+      "link": "https://maturinnews.com/pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores/?utm_source=rss&utm_medium=rss&utm_campaign=pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores"
+    },
+    {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/tragedia-en-barinas-asesinan-a-un-aficionado-y-suspenden-partido-de-la-liga-futve-2/"
     },
     {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/trabajadores-protagonizan-nueva-jornada-de-protesta-en-coro-por-reivindicaciones-salariales-y-aguinaldos/"
+    },
+    {
       "nombre": "Portuguesa Reporta",
       "link": "https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/nacion/provea-denuncia-cinco-trabajadores-heridos-durante-protesta-en-caracas/"
+    },
+    {
+      "nombre": "Runrun.es",
+      "link": "https://runrun.es/noticias/626356/pnb-bloqueo-paso-de-manifestantes-a-miraflores-protesta-termino-con-enfrentamientos-y-heridos/"
+    },
+    {
+      "nombre": "Turimiquire (Sucre)",
+      "link": "https://turimiquire.net/2026/11/24/varios-trabajadores-lesionados-por-los-policias-durante-la-marcha-en-caracas-el-24-de-noviembre/"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/sucesos/muere-mujer-que-habia-resultado-herida-tras-balacera-en-su-casa-su-hijo-y-esposo-tambien-fallecieron/?utm_source=rss&utm_medium=rss&utm_campaign=muere-mujer-que-habia-resultado-herida-tras-balacera-en-su-casa-su-hijo-y-esposo-tambien-fallecieron"
+    },
+    {
+      "nombre": "Yaracuy al Dia",
+      "link": "https://yaracuyaldia.com/venezuela/provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov/?utm_source=rss&utm_medium=rss&utm_campaign=provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov"
     },
     {
       "nombre": "Diario La Nacion (Tachira)",
@@ -94,56 +138,20 @@
       "link": "https://elpitazo.net/regiones/marcha-el-guarazo-cordon-policial-barquisimeto/"
     },
     {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/guayana-2/profesores-en-bolivar-se-suman-a-protesta-nacional-queremos-utilidades-dignas/"
+    },
+    {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
     },
     {
+      "nombre": "El Tiempo (Anzoategui)",
+      "link": "https://eltiempove.com/trabajadores-de-la-udo-protestaron-por-segunda-semana-consecutiva-en-anzoategui/"
+    },
+    {
       "nombre": "La Manana (Falcon)",
       "link": "https://lamananadigital.com/trabajadores-se-adhirieron-al-paro-nacional-convocado-para-este-lunes/"
-    },
-    {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/trancan-la-falcon-zulia-a-la-altura-del-puente-la-primavera-por-racionamientos-electricos/"
-    },
-    {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/cierran-la-falcon-zulia-a-la-altura-de-urumaco-por-falta-de-electricidad/"
-    },
-    {
-      "nombre": "La Noticia de Barinas",
-      "link": "https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/nacionales/chichiriviche-protesta-servicios/"
-    },
-    {
-      "nombre": "La Prensa de Lara",
-      "link": "https://laprensadelara.com/locales/salud-educacion-lara-marchan-gobernacion-paro-nacional/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/sindicatos-y-gremios-de-luz-exigen-restitucion-de-beneficios-laborales-y-aguinaldos-dignos/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/mas-de-30-militares-presos-en-ramo-verde-inician-huelga-de-hambre/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/trabajadores-y-jubilados-acuerdan-con-la-cvg-el-pago-de-1-100-dolares-fraccionados-por-utilidades/"
-    },
-    {
-      "nombre": "La Verdad (Zulia)",
-      "link": "https://laverdad.com/sindicalistas-aseguran-que-el-paro-nacional-se-cumplio-en-80-seguiran-hasta-conseguir-aguinaldos/"
-    },
-    {
-      "nombre": "La Verdad de Monagas",
-      "link": "https://laverdaddemonagas.com/2026/11/05/trabajadores-bloquean-vias-en-bolivar/"
-    },
-    {
-      "nombre": "Nuevo Dia (Falcon)",
-      "link": "https://nuevodia.com.ve/salud-y-educacion-se-suma-a-la-jornada-nacional-de-protesta-por-mejoras-salariales/"
     }
   ]
 }

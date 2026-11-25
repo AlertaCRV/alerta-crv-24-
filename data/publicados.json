@@ -47,5 +47,61 @@
     "fecha_deteccion": "2026-11-23T22:42:56.889352+00:00",
     "fecha_evento_temprana": "2026-11-23T21:03:00+00:00",
     "municipio": "Peña"
+  },
+  "orden_publico::Distrito Capital::2026-11-24": {
+    "severidad": "alto",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-25T02:30:04.474283+00:00",
+    "fecha_evento_temprana": "2026-11-24T16:08:47+00:00",
+    "municipio": null
+  },
+  "orden_publico::Bolivar::2026-11-24": {
+    "severidad": "bajo",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-25T02:30:08.644473+00:00",
+    "fecha_evento_temprana": "2026-11-24T19:57:44+00:00",
+    "municipio": "Caroní"
+  },
+  "ataque_armado::Amazonas::2026-11-24": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:30:12.955690+00:00",
+    "fecha_evento_temprana": "2026-11-24T17:45:10+00:00",
+    "municipio": null
+  },
+  "orden_publico::Barinas::2026-11-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:30:17.359885+00:00",
+    "fecha_evento_temprana": "2026-11-25T01:26:40+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-11-24": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:30:29.937910+00:00",
+    "fecha_evento_temprana": "2026-11-24T22:03:35+00:00",
+    "municipio": null
+  },
+  "orden_publico::Anzoategui::2026-11-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:31:08.323518+00:00",
+    "fecha_evento_temprana": "2026-11-24T22:40:42+00:00",
+    "municipio": null
+  },
+  "infraestructura_electrica::Portuguesa::2026-11-25": {
+    "severidad": "sin_clasificar",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:31:20.990435+00:00",
+    "fecha_evento_temprana": "2026-11-25T00:12:48+00:00",
+    "municipio": "Páez"
+  },
+  "orden_publico::Yaracuy::2026-11-24": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-25T02:31:46.649351+00:00",
+    "fecha_evento_temprana": "2026-11-24T19:57:44+00:00",
+    "municipio": null
   }
 }

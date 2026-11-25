@@ -3,6 +3,269 @@
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
+    "parroquia": "Altagracia",
+    "severidad": "alto",
+    "score": 5.95,
+    "confirmado": true,
+    "num_fuentes": 10,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/policias-agreden-a-trabajadores-y-roban-a-un-profesor-durante-marcha-a-miraflores/",
+        "fecha": "2026-11-24T20:07:35+00:00"
+      },
+      {
+        "nombre": "Runrun.es",
+        "link": "https://runrun.es/noticias/626356/pnb-bloqueo-paso-de-manifestantes-a-miraflores-protesta-termino-con-enfrentamientos-y-heridos/",
+        "fecha": "2026-11-24T19:54:30+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/24/video-movilizacion-en-caracas-registro-hechos-de-violencia-robo-y-atropello-a-personas-de-la-tercera-edad-24nov/",
+        "fecha": "2026-11-24T20:08:33+00:00"
+      },
+      {
+        "nombre": "La Manana (Falcon)",
+        "link": "https://lamananadigital.com/al-menos-cinco-trabajadores-lesionados-por-policias-durante-la-marcha-en-caracas-este-24nov/",
+        "fecha": "2026-11-24T18:23:52+00:00"
+      },
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/trabajadores-protagonizan-nueva-jornada-de-protesta-en-coro-por-reivindicaciones-salariales-y-aguinaldos/",
+        "fecha": "2026-11-24T16:08:47+00:00"
+      },
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores/?utm_source=rss&utm_medium=rss&utm_campaign=pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores",
+        "fecha": "2026-11-24T22:03:35+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/venezuela/provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov/?utm_source=rss&utm_medium=rss&utm_campaign=provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov",
+        "fecha": "2026-11-24T20:32:15+00:00"
+      },
+      {
+        "nombre": "Turimiquire (Sucre)",
+        "link": "https://turimiquire.net/2026/11/24/varios-trabajadores-lesionados-por-los-policias-durante-la-marcha-en-caracas-el-24-de-noviembre/",
+        "fecha": "2026-11-24T20:40:02+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/nacionales/trabajadores-piquete-pnb-miraflores/",
+        "fecha": "2026-11-24T17:09:50+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/provea-denuncia-cinco-trabajadores-heridos-durante-protesta-en-caracas/",
+        "fecha": "2026-11-24T20:45:20+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-24T22:03:35+00:00",
+    "fecha_evento_temprana": "2026-11-24T16:08:47+00:00",
+    "fecha_deteccion": "2026-11-25T02:30:04.474283+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-11-24",
+    "titulo": "Orden público en Parroquia Altagracia, Distrito Capital",
+    "texto": "📌 Orden público en Parroquia Altagracia, Distrito Capital\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Altagracia, Distrito Capital\n🕒 Hecho reportado: 24/11/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:30 p.m.\n📊 Fuentes independientes: 10 (score 5.95)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/policias-agreden-a-trabajadores-y-roban-a-un-profesor-durante-marcha-a-miraflores/\n  • Runrun.es: https://runrun.es/noticias/626356/pnb-bloqueo-paso-de-manifestantes-a-miraflores-protesta-termino-con-enfrentamientos-y-heridos/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/24/video-movilizacion-en-caracas-registro-hechos-de-violencia-robo-y-atropello-a-personas-de-la-tercera-edad-24nov/\n  • La Manana (Falcon): https://lamananadigital.com/al-menos-cinco-trabajadores-lesionados-por-policias-durante-la-marcha-en-caracas-este-24nov/\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/trabajadores-protagonizan-nueva-jornada-de-protesta-en-coro-por-reivindicaciones-salariales-y-aguinaldos/\n  • Maturin News: https://maturinnews.com/pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores/?utm_source=rss&utm_medium=rss&utm_campaign=pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores\n  • Yaracuy al Dia: https://yaracuyaldia.com/venezuela/provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov/?utm_source=rss&utm_medium=rss&utm_campaign=provea-denuncia-que-cinco-trabajadores-resultaron-heridos-durante-protesta-en-caracas-este-24nov\n  • Turimiquire (Sucre): https://turimiquire.net/2026/11/24/varios-trabajadores-lesionados-por-los-policias-durante-la-marcha-en-caracas-el-24-de-noviembre/\n  • La Prensa de Lara: https://laprensadelara.com/nacionales/trabajadores-piquete-pnb-miraflores/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/provea-denuncia-cinco-trabajadores-heridos-durante-protesta-en-caracas/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Bolivar",
+    "municipio": "Caroní",
+    "parroquia": "Universidad",
+    "severidad": "bajo",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/guayana-2/profesores-en-bolivar-se-suman-a-protesta-nacional-queremos-utilidades-dignas/",
+        "fecha": "2026-11-24T21:23:55+00:00"
+      },
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos",
+        "fecha": "2026-11-24T19:57:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-24T21:23:55+00:00",
+    "fecha_evento_temprana": "2026-11-24T19:57:44+00:00",
+    "fecha_deteccion": "2026-11-25T02:30:08.644473+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Bolivar::2026-11-24",
+    "titulo": "Orden público en Parroquia Universidad, Municipio Caroní, Bolivar",
+    "texto": "📌 Orden público en Parroquia Universidad, Municipio Caroní, Bolivar\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia Universidad, Municipio Caroní, Bolivar\n🕒 Hecho reportado: 24/11/2026, 5:23 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:30 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/guayana-2/profesores-en-bolivar-se-suman-a-protesta-nacional-queremos-utilidades-dignas/\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos"
+  },
+  {
+    "tipo": "ataque_armado",
+    "ubicacion": "Amazonas",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "alto",
+    "score": 1.1,
+    "confirmado": false,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Diario La Nacion (Tachira)",
+        "link": "https://lanacionweb.com/internacional/de-la-espriella-advierte-a-presunto-autor-de-ataque-en-villavicencio-que-pagara-con-sangre/",
+        "fecha": "2026-11-24T17:45:10+00:00"
+      },
+      {
+        "nombre": "La Prensa de Lara",
+        "link": "https://laprensadelara.com/mundo/explosion-vehiculo-bomba-colombia/",
+        "fecha": "2026-11-25T01:19:57+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T01:19:57+00:00",
+    "fecha_evento_temprana": "2026-11-24T17:45:10+00:00",
+    "fecha_deteccion": "2026-11-25T02:30:12.955690+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "ataque_armado::Amazonas::2026-11-24",
+    "titulo": "Ataque armado en Amazonas",
+    "texto": "📌 Ataque armado en Amazonas\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Amazonas\n🕒 Hecho reportado: 24/11/2026, 9:19 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:30 p.m.\n📊 Fuentes independientes: 2 (score 1.1)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/internacional/de-la-espriella-advierte-a-presunto-autor-de-ataque-en-villavicencio-que-pagara-con-sangre/\n  • La Prensa de Lara: https://laprensadelara.com/mundo/explosion-vehiculo-bomba-colombia/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
+    "municipio": null,
+    "parroquia": "El Carmen",
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/11/y-aguinaldos-de-al-menos-800-dolares-gremios-universitarios-y-docentes-de-barinas-continuaran-hoy-en-las-calles-por-salarios-dignos/?utm_source=rss&utm_medium=rss&utm_campaign=y-aguinaldos-de-al-menos-800-dolares-gremios-universitarios-y-docentes-de-barinas-continuaran-hoy-en-las-calles-por-salarios-dignos",
+        "fecha": "2026-11-25T01:26:40+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T01:26:40+00:00",
+    "fecha_evento_temprana": "2026-11-25T01:26:40+00:00",
+    "fecha_deteccion": "2026-11-25T02:30:17.359885+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-11-25",
+    "titulo": "Orden público en Parroquia El Carmen, Barinas",
+    "texto": "📌 Orden público en Parroquia El Carmen, Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Parroquia El Carmen, Barinas\n🕒 Hecho reportado: 24/11/2026, 9:26 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:30 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/11/y-aguinaldos-de-al-menos-800-dolares-gremios-universitarios-y-docentes-de-barinas-continuaran-hoy-en-las-calles-por-salarios-dignos/?utm_source=rss&utm_medium=rss&utm_campaign=y-aguinaldos-de-al-menos-800-dolares-gremios-universitarios-y-docentes-de-barinas-continuaran-hoy-en-las-calles-por-salarios-dignos"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores/?utm_source=rss&utm_medium=rss&utm_campaign=pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores",
+        "fecha": "2026-11-24T22:03:35+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-24T22:03:35+00:00",
+    "fecha_evento_temprana": "2026-11-24T22:03:35+00:00",
+    "fecha_deteccion": "2026-11-25T02:30:29.937910+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-11-24",
+    "titulo": "Orden público en Miranda",
+    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 24/11/2026, 6:03 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:30 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores/?utm_source=rss&utm_medium=rss&utm_campaign=pnb-bloquea-movilizacion-de-trabajadores-hacia-miraflores"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Anzoategui",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/trabajadores-de-la-udo-protestaron-por-segunda-semana-consecutiva-en-anzoategui/",
+        "fecha": "2026-11-24T22:40:42+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-24T22:40:42+00:00",
+    "fecha_evento_temprana": "2026-11-24T22:40:42+00:00",
+    "fecha_deteccion": "2026-11-25T02:31:08.323518+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Anzoategui::2026-11-24",
+    "titulo": "Orden público en Anzoategui",
+    "texto": "📌 Orden público en Anzoategui\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Anzoategui\n🕒 Hecho reportado: 24/11/2026, 6:40 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:31 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/trabajadores-de-la-udo-protestaron-por-segunda-semana-consecutiva-en-anzoategui/"
+  },
+  {
+    "tipo": "infraestructura_electrica",
+    "ubicacion": "Portuguesa",
+    "municipio": "Páez",
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Portuguesa Reporta",
+        "link": "https://portuguesareporta.com/principales/acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes/?utm_source=rss&utm_medium=rss&utm_campaign=acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes",
+        "fecha": "2026-11-25T00:12:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T00:12:48+00:00",
+    "fecha_evento_temprana": "2026-11-25T00:12:48+00:00",
+    "fecha_deteccion": "2026-11-25T02:31:20.990435+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_electrica::Portuguesa::2026-11-25",
+    "titulo": "Falla eléctrica en Municipio Páez, Portuguesa",
+    "texto": "📌 Falla eléctrica en Municipio Páez, Portuguesa\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Páez, Portuguesa\n🕒 Hecho reportado: 24/11/2026, 8:12 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:31 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/principales/acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes/?utm_source=rss&utm_medium=rss&utm_campaign=acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Yaracuy",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Yaracuy al Dia",
+        "link": "https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos",
+        "fecha": "2026-11-24T19:57:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-24T19:57:44+00:00",
+    "fecha_evento_temprana": "2026-11-24T19:57:44+00:00",
+    "fecha_deteccion": "2026-11-25T02:31:46.649351+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Yaracuy::2026-11-24",
+    "titulo": "Orden público en Yaracuy",
+    "texto": "📌 Orden público en Yaracuy\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Yaracuy\n🕒 Hecho reportado: 24/11/2026, 3:57 p.m.\n🔎 Detectado por el sistema: 24/11/2026, 10:31 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Yaracuy al Dia: https://yaracuyaldia.com/yaracuy/local/en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos/?utm_source=rss&utm_medium=rss&utm_campaign=en-yaracuy-se-escucho-con-fuerza-la-exigencia-por-salarios-pensiones-y-aguinaldos-justos"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
     "parroquia": null,
     "severidad": "bajo",
     "score": 0.55,
@@ -1518,88 +1781,5 @@
     "clave_dedup": "infraestructura_electrica::Merida::2026-11-11",
     "titulo": "Falla eléctrica en Municipio Libertador, Merida",
     "texto": "📌 Falla eléctrica en Municipio Libertador, Merida\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Municipio Libertador, Merida\n🕒 Hecho reportado: 10/11/2026, 9:32 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 11:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/11/se-registro-fuerte-fluctuacion.html"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": "Barinas",
-    "parroquia": "Alto Barinas",
-    "severidad": "medio",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "La Noticia de Barinas",
-        "link": "https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal",
-        "fecha": "2026-11-10T20:29:06+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-10T20:29:06+00:00",
-    "fecha_evento_temprana": "2026-11-10T20:29:06+00:00",
-    "fecha_deteccion": "2026-11-10T23:52:51.798476+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Barinas::2026-11-10",
-    "titulo": "Orden público en Parroquia Alto Barinas, Municipio Barinas, Barinas",
-    "texto": "📌 Orden público en Parroquia Alto Barinas, Municipio Barinas, Barinas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Parroquia Alto Barinas, Municipio Barinas, Barinas\n🕒 Hecho reportado: 10/11/2026, 4:29 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 7:52 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/11/destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal/?utm_source=rss&utm_medium=rss&utm_campaign=destaco-tirso-maldonado-vecinos-de-brisas-del-corozal-exigen-frenar-ocupacion-ilegal-en-la-entrada-principal"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Zulia",
-    "municipio": "Maracaibo",
-    "parroquia": null,
-    "severidad": "bajo",
-    "score": 1.55,
-    "confirmado": true,
-    "num_fuentes": 2,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/occidente-2/en-la-universidad-del-zulia-protestan-contra-los-bajos-salarios-donde-esta-el-dinero-senora-delcy-rodriguez/",
-        "fecha": "2026-11-10T16:26:09+00:00"
-      },
-      {
-        "nombre": "La Verdad (Zulia)",
-        "link": "https://laverdad.com/sindicatos-y-gremios-de-luz-exigen-restitucion-de-beneficios-laborales-y-aguinaldos-dignos/",
-        "fecha": "2026-11-10T17:56:41+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-10T17:56:41+00:00",
-    "fecha_evento_temprana": "2026-11-10T16:26:09+00:00",
-    "fecha_deteccion": "2026-11-10T18:51:43.904328+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Zulia::2026-11-10",
-    "titulo": "Orden público en Municipio Maracaibo, Zulia",
-    "texto": "📌 Orden público en Municipio Maracaibo, Zulia\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maracaibo, Zulia\n🕒 Hecho reportado: 10/11/2026, 1:56 p.m.\n🔎 Detectado por el sistema: 10/11/2026, 2:51 p.m.\n📊 Fuentes independientes: 2 (score 1.55)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/occidente-2/en-la-universidad-del-zulia-protestan-contra-los-bajos-salarios-donde-esta-el-dinero-senora-delcy-rodriguez/\n  • La Verdad (Zulia): https://laverdad.com/sindicatos-y-gremios-de-luz-exigen-restitucion-de-beneficios-laborales-y-aguinaldos-dignos/"
-  },
-  {
-    "tipo": "salud_publica",
-    "ubicacion": "Barinas",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "sin_clasificar",
-    "score": 0.75,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "El Pitazo",
-        "link": "https://elpitazo.net/regiones/barinas-reporta-nueva-intoxicacion-escolar-se-contabilizan-18-personas-afectadas-en-el-liceo-trino-briseno/",
-        "fecha": "2026-11-09T23:22:25+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-09T23:22:25+00:00",
-    "fecha_evento_temprana": "2026-11-09T23:22:25+00:00",
-    "fecha_deteccion": "2026-11-10T03:28:59.932418+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "salud_publica::Barinas::2026-11-09",
-    "titulo": "Salud pública en Barinas",
-    "texto": "📌 Salud pública en Barinas\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 09/11/2026, 7:22 p.m.\n🔎 Detectado por el sistema: 09/11/2026, 11:28 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/barinas-reporta-nueva-intoxicacion-escolar-se-contabilizan-18-personas-afectadas-en-el-liceo-trino-briseno/"
   }
 ]
