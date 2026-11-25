@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-25T02:32:20.609156+00:00",
+  "actualizado": "2026-11-25T11:39:33.612418+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-25T01:26:40+00:00"
+    "hasta": "2026-11-25T05:00:00+00:00"
   },
-  "total_eventos": 686,
+  "total_eventos": 689,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
-    "infraestructura_electrica": 58,
+    "infraestructura_electrica": 59,
     "deslizamiento": 45,
-    "colapso_estructural": 5,
-    "orden_publico": 250,
+    "colapso_estructural": 6,
+    "orden_publico": 251,
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
@@ -72,25 +72,25 @@
     },
     {
       "estado": "Tachira",
-      "total": 48,
+      "total": 49,
       "confirmados": 3,
       "por_severidad": {
-        "alto": 16,
+        "alto": 17,
         "bajo": 7,
         "medio": 12,
         "critico": 9,
         "sin_clasificar": 4
       },
-      "indice_gravedad": 2.61,
+      "indice_gravedad": 2.62,
       "severidad_mapa": "alto"
     },
     {
       "estado": "Portuguesa",
-      "total": 43,
+      "total": 44,
       "confirmados": 6,
       "por_severidad": {
         "bajo": 12,
-        "medio": 14,
+        "medio": 15,
         "critico": 4,
         "alto": 12,
         "sin_clasificar": 1
@@ -100,11 +100,11 @@
     },
     {
       "estado": "Barinas",
-      "total": 37,
+      "total": 38,
       "confirmados": 3,
       "por_severidad": {
         "alto": 5,
-        "medio": 14,
+        "medio": 15,
         "bajo": 12,
         "critico": 5,
         "sin_clasificar": 1
@@ -419,7 +419,7 @@
       "deslizamiento": 4,
       "inundacion": 6,
       "vialidad": 4,
-      "orden_publico": 14,
+      "orden_publico": 15,
       "infraestructura_agua": 1,
       "salud_publica": 5,
       "infraestructura_electrica": 3
@@ -459,7 +459,8 @@
       "vialidad": 3,
       "motin_carcelario": 1,
       "ataque_armado": 2,
-      "salud_publica": 7
+      "salud_publica": 7,
+      "colapso_estructural": 1
     },
     "Bolivar": {
       "orden_publico": 13,
@@ -539,7 +540,7 @@
       "infraestructura_agua": 2,
       "vialidad": 5,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 2,
+      "infraestructura_electrica": 3,
       "deslizamiento": 2,
       "ataque_armado": 2
     },
@@ -579,9 +580,9 @@
     }
   },
   "por_severidad": {
-    "alto": 156,
+    "alto": 157,
     "critico": 87,
-    "medio": 232,
+    "medio": 234,
     "bajo": 180,
     "sin_clasificar": 31
   },
@@ -604,7 +605,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 11
+      "2026-11": 12
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -617,14 +618,15 @@
       "2026-07": 1,
       "2026-08": 2,
       "2026-09": 1,
-      "2026-10": 1
+      "2026-10": 1,
+      "2026-11": 1
     },
     "orden_publico": {
       "2026-07": 2,
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 51
+      "2026-11": 52
     },
     "salud_publica": {
       "2026-07": 1,

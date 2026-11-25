@@ -1,0 +1,21 @@
+{
+  "periodo": "2026-11",
+  "tipo": "colapso_estructural",
+  "tipo_label": "Colapso estructural",
+  "cerrado": false,
+  "generado": "2026-11-25T11:40:32.237259+00:00",
+  "actualizado_hasta": "2026-11-25T11:38:39.944382+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 1,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de colapso estructural, igualando la cifra del mes anterior (2026-10) que también contó con 1 evento (Comparación con el período anterior).\\n\\nEl 25 de noviembre de 2026 colapsó la sede seccional de Acción Democrática (AD) ubicada en el centro de San Cristóbal, capital del estado Táchira, presentando graves daños en el techo y las paredes (Diario La Nacion). La edificación, considerada una sede histórica de la organización política en la región, sufrió un derrumbe que dejó la estructura comprometida (Diario La Nacion).\\n\\nTras el colapso, militantes y simpatizantes de AD solicitaron a las autoridades locales una evaluación inmediata de los daños para garantizar la seguridad de dirigentes y transeúntes que frecuentan el área (Diario La Nacion). La situación generó preocupación en la comunidad y se activaron protocolos de inspección para evitar riesgos adicionales (Diario La Nacion).",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/politica/colapso-la-sede-seccional-de-ad-en-centro-de-san-cristobal/"
+    }
+  ]
+}
