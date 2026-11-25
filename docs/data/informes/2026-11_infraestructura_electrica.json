@@ -3,19 +3,23 @@
   "tipo": "infraestructura_electrica",
   "tipo_label": "Falla eléctrica",
   "cerrado": false,
-  "generado": "2026-11-23T02:32:53.606958+00:00",
-  "actualizado_hasta": "2026-11-15T20:24:51.519413+00:00",
-  "total_eventos": 9,
+  "generado": "2026-11-25T02:34:57.176667+00:00",
+  "actualizado_hasta": "2026-11-25T02:31:20.990435+00:00",
+  "total_eventos": 11,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 9,
-    "actual": 9
+    "actual": 11
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron nueve fallas eléctricas, cifra idéntica a la del período anterior (2026-10) que también reportó 9 eventos (Comparación con el período anterior: 9 evento(s) registrados entonces vs. 9 en este período). Las interrupciones se distribuyeron en varios estados del país, afectando tanto a la población civil como a instalaciones críticas.\n\nLa falla eléctrica de mayor severidad se produjo en el municipio de La Concordia, estado Táchira, donde más de 36 horas continuas sin suministro eléctrico dejaron sin energía a residentes y a recintos de salud adyacentes al Hospital Central de San Cristóbal, incluidos varios laboratorios médicos (Diario La Nacion). Ante la falta de repuestos, los propios afectados gestionaron la compra de piezas en Cúcuta para intentar restablecer el servicio.\n\nEn el estado Lara, el sábado 15 de noviembre, 31 sectores de la zona metropolitana de Barquisimeto y del municipio Peña (Yaritagua, Yaracuy) sufrieron interrupciones y fluctuaciones de voltaje, según el balance emitido por el movimiento ciudadano Activos por la Luz (El Impulso). Estas fallas provocaron la suspensión temporal de actividades comerciales y residenciales en los sectores afectados.\n\nEn la Gran Caracas, las intensas lluvias del 8 de noviembre generaron averías en las líneas de distribución que dejaron sin electricidad a varios barrios del municipio Baruta (El Periodico de Monagas). La misma zona experimentó, el 1 de noviembre, una falla en los sistemas Tuy II y III que provocó la pérdida de suministro de agua a más de 40 sectores, derivada de una fluctuación eléctrica a las 9:20 a.m. (Runrun.es). En el sector Pueblo Nuevo Sur de El Tigre, Anzoátegui, los vecinos realizaron un cacerolazo tras casi nueve horas de apagón el 2 de noviembre (El Tiempo).\n\nEn el estado Zulia, un apagón registrado a partir de las 11:00 a.m. del 11 de noviembre dejó a oscuras los municipios Lagunillas, Valmore Rodríguez y Baralt, zona petrolera donde operan empresas de extracción de crudo (El Pitazo). Además, la noche del 2 de noviembre se produjo una explosión en la subestación Federación, en el barrio Constitución de Ciudad Ojeda, que dejó sin servicio eléctrico a diversos sectores de la ciudad (Noticia al Dia). En Mérida, una fuerte fluctuación de voltaje seguida de un corte de suministro afectó a varios municipios, entre ellos Libertador y la cuenca del Chama, interrumpiendo actividades comerciales y de servicios básicos (Reporteros de Merida).",
+  "narrativa": "En el mes de noviembre de 2026 se registraron 11 fallas eléctricas, frente a los 9 eventos del período anterior (2026-10) (comparación proporcionada). Esta alza refleja una mayor vulnerabilidad de la infraestructura energética en distintas regiones del país.\n\nEl evento más grave ocurrió en Táchira, donde más de 36 horas continuas sin suministro eléctrico afectaron a la comunidad de La Concordia, específicamente en la carrera 12, calles 4 y 5 y la avenida Lucio Oquendo (Diario La Nacion (Tachira)). El apagón impactó tanto a residencias como a instalaciones de salud adyacentes al Hospital Central de San Cristóbal y a varios laboratorios médicos (Diario La Nacion (Tachira)). Además, residentes de San Cristóbal, Junín, Cárdenas, Andrés Bello y Córdoba reportaron un recrudecimiento de los apagones y alzas no autorizadas en el transporte público (Diario La Nacion (Tachira)).\n\nEn Lara, 31 sectores del área metropolitana de Barquisimeto y del municipio Peña (Yaritagua, Yaracuy) sufrieron interrupciones y fluctuaciones de voltaje el sábado 14 de noviembre, según el balance de Activos por la Luz (El Impulso). En el municipio Baruta, Caracas, más de 40 sectores quedaron sin agua debido a una falla en los sistemas Tuy II y III provocada por una fluctuación eléctrica a las 9:20 a.m. del 1 de noviembre (Runrun.es). En Zulia, un apagón a partir de las 11:00 a.m. dejó sin energía a los municipios Lagunillas, Valmore Rodríguez y Baralt; el servicio comenzó a restablecerse parcialmente después de la 1:00 p.m. (El Pitazo). Ese mismo día, una explosión en la subestación Federación de Ciudad Ojeda dejó sin electricidad a varios sectores de la ciudad (Noticia al Dia).\n\nEn Anzoátegui, los vecinos del sector Pueblo Nuevo Sur de El Tigre realizaron un cacerolazo tras casi nueve horas de apagón el 2 de noviembre (El Tiempo). En Acarigua, una explosión de transformador dejó sin luz y sin agua a la comunidad de Bellas Artes el 24 de noviembre (Portuguesa Reporta). En Mérida, una fuerte fluctuación de voltaje seguida de un corte de suministro eléctrico afectó a varios sectores, incluyendo el municipio Libertador y la cuenca del Chama, alrededor de las 11:58 a.m. del 2 de noviembre (Reporteros de Merida).",
   "fuentes": [
     {
       "nombre": "Diario La Nacion (Tachira)",
       "link": "https://lanacionweb.com/regional/mas-de-36-horas-sin-electricidad-afectan-a-la-concordia/"
+    },
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/frontera/fallas-electricas-y-de-agua-grandes-preocupaciones-en-tachira/"
     },
     {
       "nombre": "El Impulso (Lara)",
@@ -36,6 +40,10 @@
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/explosion-en-la-subestacion-federacion-deja-sin-electricidad-a-diversos-sectores-de-ciudad-ojeda/"
+    },
+    {
+      "nombre": "Portuguesa Reporta",
+      "link": "https://portuguesareporta.com/principales/acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes/?utm_source=rss&utm_medium=rss&utm_campaign=acarigua-explosion-de-transformador-deja-nuevamente-sin-luz-y-sin-agua-a-vecinos-de-bellas-artes"
     },
     {
       "nombre": "Reporteros de Merida",

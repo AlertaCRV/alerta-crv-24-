@@ -1,17 +1,17 @@
 {
-  "actualizado": "2026-11-23T22:43:11.841632+00:00",
+  "actualizado": "2026-11-25T02:32:20.609156+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-23T21:17:49+00:00"
+    "hasta": "2026-11-25T01:26:40+00:00"
   },
-  "total_eventos": 678,
+  "total_eventos": 686,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 93,
-    "infraestructura_electrica": 57,
+    "infraestructura_electrica": 58,
     "deslizamiento": 45,
     "colapso_estructural": 5,
-    "orden_publico": 244,
+    "orden_publico": 250,
     "salud_publica": 45,
     "crisis_migratoria": 7,
     "incendio": 72,
@@ -23,23 +23,23 @@
     "infraestructura_agua": 28,
     "accidente_transporte": 4,
     "derrame_petrolero": 8,
-    "ataque_armado": 8,
+    "ataque_armado": 9,
     "emergencia_metro": 2,
     "motin_carcelario": 1
   },
   "ranking_estados": [
     {
       "estado": "Distrito Capital",
-      "total": 102,
-      "confirmados": 18,
+      "total": 103,
+      "confirmados": 19,
       "por_severidad": {
-        "alto": 18,
+        "alto": 19,
         "medio": 32,
         "bajo": 31,
         "critico": 15,
         "sin_clasificar": 6
       },
-      "indice_gravedad": 2.18,
+      "indice_gravedad": 2.19,
       "severidad_mapa": "medio"
     },
     {
@@ -86,15 +86,30 @@
     },
     {
       "estado": "Portuguesa",
-      "total": 42,
+      "total": 43,
       "confirmados": 6,
       "por_severidad": {
         "bajo": 12,
         "medio": 14,
         "critico": 4,
-        "alto": 12
+        "alto": 12,
+        "sin_clasificar": 1
       },
       "indice_gravedad": 2.19,
+      "severidad_mapa": "medio"
+    },
+    {
+      "estado": "Barinas",
+      "total": 37,
+      "confirmados": 3,
+      "por_severidad": {
+        "alto": 5,
+        "medio": 14,
+        "bajo": 12,
+        "critico": 5,
+        "sin_clasificar": 1
+      },
+      "indice_gravedad": 2.08,
       "severidad_mapa": "medio"
     },
     {
@@ -112,26 +127,12 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Barinas",
-      "total": 36,
-      "confirmados": 3,
-      "por_severidad": {
-        "alto": 5,
-        "medio": 14,
-        "bajo": 11,
-        "critico": 5,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 2.11,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Miranda",
-      "total": 34,
+      "total": 35,
       "confirmados": 5,
       "por_severidad": {
         "alto": 7,
-        "medio": 10,
+        "medio": 11,
         "critico": 5,
         "bajo": 11,
         "sin_clasificar": 1
@@ -154,16 +155,16 @@
     },
     {
       "estado": "Bolivar",
-      "total": 26,
-      "confirmados": 2,
+      "total": 27,
+      "confirmados": 3,
       "por_severidad": {
-        "bajo": 7,
+        "bajo": 8,
         "medio": 12,
         "critico": 3,
         "alto": 1,
         "sin_clasificar": 3
       },
-      "indice_gravedad": 2.0,
+      "indice_gravedad": 1.96,
       "severidad_mapa": "medio"
     },
     {
@@ -195,30 +196,30 @@
     },
     {
       "estado": "Anzoategui",
-      "total": 20,
+      "total": 21,
       "confirmados": 1,
       "por_severidad": {
         "alto": 2,
         "critico": 2,
-        "bajo": 7,
+        "bajo": 8,
         "medio": 8,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 1.95,
+      "indice_gravedad": 1.9,
       "severidad_mapa": "medio"
     },
     {
       "estado": "Yaracuy",
-      "total": 20,
+      "total": 21,
       "confirmados": 1,
       "por_severidad": {
         "critico": 6,
-        "bajo": 6,
+        "bajo": 7,
         "medio": 6,
         "sin_clasificar": 1,
         "alto": 1
       },
-      "indice_gravedad": 2.37,
+      "indice_gravedad": 2.3,
       "severidad_mapa": "medio"
     },
     {
@@ -328,13 +329,14 @@
     },
     {
       "estado": "Amazonas",
-      "total": 5,
+      "total": 6,
       "confirmados": 1,
       "por_severidad": {
         "critico": 3,
-        "medio": 2
+        "medio": 2,
+        "alto": 1
       },
-      "indice_gravedad": 3.2,
+      "indice_gravedad": 3.17,
       "severidad_mapa": "alto"
     },
     {
@@ -393,7 +395,7 @@
     "Distrito Capital": {
       "deslizamiento": 6,
       "inundacion": 18,
-      "orden_publico": 34,
+      "orden_publico": 35,
       "incendio": 20,
       "vialidad": 6,
       "infraestructura_electrica": 9,
@@ -417,7 +419,7 @@
       "deslizamiento": 4,
       "inundacion": 6,
       "vialidad": 4,
-      "orden_publico": 13,
+      "orden_publico": 14,
       "infraestructura_agua": 1,
       "salud_publica": 5,
       "infraestructura_electrica": 3
@@ -441,7 +443,7 @@
     "Anzoategui": {
       "crisis_migratoria": 1,
       "vialidad": 1,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "infraestructura_agua": 2,
       "inundacion": 3,
       "incendio": 3,
@@ -460,7 +462,7 @@
       "salud_publica": 7
     },
     "Bolivar": {
-      "orden_publico": 12,
+      "orden_publico": 13,
       "escasez_combustible": 2,
       "incendio": 5,
       "inundacion": 1,
@@ -475,7 +477,7 @@
       "explosion": 1,
       "inundacion": 5,
       "deslizamiento": 1,
-      "orden_publico": 15,
+      "orden_publico": 16,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -500,7 +502,7 @@
       "sismo": 1,
       "incendio": 1,
       "infraestructura_electrica": 3,
-      "orden_publico": 7,
+      "orden_publico": 8,
       "deslizamiento": 1,
       "infraestructura_agua": 1
     },
@@ -537,7 +539,7 @@
       "infraestructura_agua": 2,
       "vialidad": 5,
       "colapso_estructural": 1,
-      "infraestructura_electrica": 1,
+      "infraestructura_electrica": 2,
       "deslizamiento": 2,
       "ataque_armado": 2
     },
@@ -572,15 +574,16 @@
     "Amazonas": {
       "salud_publica": 1,
       "orden_publico": 2,
-      "accidente_transporte": 2
+      "accidente_transporte": 2,
+      "ataque_armado": 1
     }
   },
   "por_severidad": {
-    "alto": 154,
+    "alto": 156,
     "critico": 87,
-    "medio": 231,
-    "bajo": 176,
-    "sin_clasificar": 30
+    "medio": 232,
+    "bajo": 180,
+    "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
     "tormenta_electrica": {
@@ -601,7 +604,7 @@
       "2026-08": 15,
       "2026-09": 22,
       "2026-10": 9,
-      "2026-11": 10
+      "2026-11": 11
     },
     "deslizamiento": {
       "2026-07": 3,
@@ -621,7 +624,7 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 45
+      "2026-11": 51
     },
     "salud_publica": {
       "2026-07": 1,
@@ -683,7 +686,8 @@
     },
     "ataque_armado": {
       "2026-08": 1,
-      "2026-10": 7
+      "2026-10": 7,
+      "2026-11": 1
     },
     "emergencia_metro": {
       "2026-08": 1,

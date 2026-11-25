@@ -1,0 +1,25 @@
+{
+  "periodo": "2026-11",
+  "tipo": "ataque_armado",
+  "tipo_label": "Ataque armado",
+  "cerrado": false,
+  "generado": "2026-11-25T02:33:07.100894+00:00",
+  "actualizado_hasta": "2026-11-25T02:30:12.955690+00:00",
+  "total_eventos": 1,
+  "comparacion_mes_anterior": {
+    "periodo_anterior": "2026-10",
+    "anterior": 7,
+    "actual": 1
+  },
+  "narrativa": "Durante el mes de noviembre de 2026 se registró un único evento de ataque armado, lo que representa una disminución significativa respecto al período anterior, en el que se contabilizaron siete incidentes (Comparación con el período anterior (2026-10): 7 evento(s) registrados entonces vs. 1 en este período). \n\nEl único hecho reportado corresponde a un ataque armado en el estado Amazonas, catalogado con severidad alta, que dejó veintitrés personas heridas, entre ellas una menor de edad, y causó graves daños materiales en los edificios adyacentes al lugar del atentado (Diario La Nacion (Tachira)). Las autoridades locales movilizaron equipos de emergencia para atender a las víctimas y evaluar los daños estructurales (Diario La Nacion (Tachira)). \n\nSegún información adicional publicada por La Prensa de Lara, la explosión se produjo mediante un vehículo bomba frente al edificio de la Gobernación del departamento de Meta, a las 9:30 de la noche (2:30 GMT), generando al menos 23 heridos y destrucción significativa en la zona circundante (La Prensa de Lara). Los equipos de socorro acudieron rápidamente al sitio para prestar asistencia médica y asegurar la zona. \n\nEste registro único de ataque armado en noviembre contrasta con la actividad más intensa del mes anterior, evidenciando una reducción en la frecuencia de incidentes de este tipo durante el período analizado (Comparación con el período anterior (2026-10): 7 evento(s) registrados entonces vs. 1 en este período).",
+  "fuentes": [
+    {
+      "nombre": "Diario La Nacion (Tachira)",
+      "link": "https://lanacionweb.com/internacional/de-la-espriella-advierte-a-presunto-autor-de-ataque-en-villavicencio-que-pagara-con-sangre/"
+    },
+    {
+      "nombre": "La Prensa de Lara",
+      "link": "https://laprensadelara.com/mundo/explosion-vehiculo-bomba-colombia/"
+    }
+  ]
+}
