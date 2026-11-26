@@ -1,20 +1,20 @@
 {
-  "actualizado": "2026-11-26T12:34:36.795129+00:00",
+  "actualizado": "2026-11-26T21:59:23.858099+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-26T12:30:00+00:00"
+    "hasta": "2026-11-26T21:22:15+00:00"
   },
-  "total_eventos": 699,
+  "total_eventos": 703,
   "por_tipo": {
     "tormenta_electrica": 6,
     "inundacion": 94,
     "infraestructura_electrica": 59,
     "deslizamiento": 45,
     "colapso_estructural": 6,
-    "orden_publico": 258,
-    "salud_publica": 45,
+    "orden_publico": 260,
+    "salud_publica": 46,
     "crisis_migratoria": 7,
-    "incendio": 72,
+    "incendio": 73,
     "vialidad": 35,
     "sismo": 9,
     "escasez_combustible": 2,
@@ -58,12 +58,12 @@
     },
     {
       "estado": "Lara",
-      "total": 55,
+      "total": 56,
       "confirmados": 4,
       "por_severidad": {
         "critico": 6,
         "alto": 10,
-        "medio": 19,
+        "medio": 20,
         "bajo": 16,
         "sin_clasificar": 4
       },
@@ -114,16 +114,16 @@
     },
     {
       "estado": "Miranda",
-      "total": 37,
+      "total": 38,
       "confirmados": 5,
       "por_severidad": {
         "alto": 8,
         "medio": 12,
         "critico": 5,
-        "bajo": 11,
+        "bajo": 12,
         "sin_clasificar": 1
       },
-      "indice_gravedad": 2.19,
+      "indice_gravedad": 2.16,
       "severidad_mapa": "medio"
     },
     {
@@ -142,15 +142,15 @@
     },
     {
       "estado": "Falcon",
-      "total": 35,
-      "confirmados": 7,
+      "total": 36,
+      "confirmados": 8,
       "por_severidad": {
-        "alto": 7,
+        "alto": 8,
         "bajo": 9,
         "medio": 17,
         "critico": 2
       },
-      "indice_gravedad": 2.06,
+      "indice_gravedad": 2.08,
       "severidad_mapa": "medio"
     },
     {
@@ -262,16 +262,16 @@
     },
     {
       "estado": "La Guaira",
-      "total": 15,
+      "total": 16,
       "confirmados": 0,
       "por_severidad": {
         "medio": 3,
         "sin_clasificar": 1,
         "alto": 7,
-        "bajo": 1,
+        "bajo": 2,
         "critico": 3
       },
-      "indice_gravedad": 2.86,
+      "indice_gravedad": 2.73,
       "severidad_mapa": "alto"
     },
     {
@@ -365,7 +365,7 @@
     },
     "Lara": {
       "inundacion": 5,
-      "salud_publica": 6,
+      "salud_publica": 7,
       "orden_publico": 27,
       "sismo": 1,
       "deslizamiento": 1,
@@ -478,7 +478,7 @@
       "explosion": 1,
       "inundacion": 6,
       "deslizamiento": 1,
-      "orden_publico": 17,
+      "orden_publico": 18,
       "infraestructura_agua": 2
     },
     "Nueva Esparta": {
@@ -494,7 +494,7 @@
       "deslizamiento": 4,
       "derrame_petrolero": 3,
       "infraestructura_agua": 2,
-      "incendio": 3,
+      "incendio": 4,
       "infraestructura_electrica": 1,
       "sismo": 1
     },
@@ -569,7 +569,7 @@
       "deslizamiento": 8,
       "inundacion": 3,
       "sismo": 1,
-      "orden_publico": 1,
+      "orden_publico": 2,
       "crisis_migratoria": 2
     },
     "Amazonas": {
@@ -580,10 +580,10 @@
     }
   },
   "por_severidad": {
-    "alto": 159,
+    "alto": 160,
     "critico": 87,
-    "medio": 236,
-    "bajo": 186,
+    "medio": 237,
+    "bajo": 188,
     "sin_clasificar": 31
   },
   "serie_mensual_por_tipo": {
@@ -626,14 +626,14 @@
       "2026-08": 44,
       "2026-09": 76,
       "2026-10": 77,
-      "2026-11": 59
+      "2026-11": 61
     },
     "salud_publica": {
       "2026-07": 1,
       "2026-08": 8,
       "2026-09": 2,
       "2026-10": 20,
-      "2026-11": 14
+      "2026-11": 15
     },
     "crisis_migratoria": {
       "2026-07": 4,
@@ -646,7 +646,7 @@
       "2026-08": 19,
       "2026-09": 19,
       "2026-10": 20,
-      "2026-11": 11
+      "2026-11": 12
     },
     "vialidad": {
       "2026-08": 10,

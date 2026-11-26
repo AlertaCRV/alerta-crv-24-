@@ -1,5 +1,134 @@
 [
   {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": "Baruta",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/gran-caracas-2/trabajadadores-de-la-universidad-simon-bolivar-protestan-por-mejoras-salariales/",
+        "fecha": "2026-11-26T21:22:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T21:22:15+00:00",
+    "fecha_evento_temprana": "2026-11-26T21:22:15+00:00",
+    "fecha_deteccion": "2026-11-26T21:57:02.465331+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-11-26",
+    "titulo": "Orden público en Municipio Baruta, Miranda",
+    "texto": "📌 Orden público en Municipio Baruta, Miranda\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Baruta, Miranda\n🕒 Hecho reportado: 26/11/2026, 5:22 p.m.\n🔎 Detectado por el sistema: 26/11/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/gran-caracas-2/trabajadadores-de-la-universidad-simon-bolivar-protestan-por-mejoras-salariales/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "La Guaira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/gran-caracas-2/trabajadadores-de-la-universidad-simon-bolivar-protestan-por-mejoras-salariales/",
+        "fecha": "2026-11-26T21:22:15+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T21:22:15+00:00",
+    "fecha_evento_temprana": "2026-11-26T21:22:15+00:00",
+    "fecha_deteccion": "2026-11-26T21:57:06.979012+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::La Guaira::2026-11-26",
+    "titulo": "Orden público en La Guaira",
+    "texto": "📌 Orden público en La Guaira\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: La Guaira\n🕒 Hecho reportado: 26/11/2026, 5:22 p.m.\n🔎 Detectado por el sistema: 26/11/2026, 5:57 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/gran-caracas-2/trabajadadores-de-la-universidad-simon-bolivar-protestan-por-mejoras-salariales/"
+  },
+  {
+    "tipo": "incendio",
+    "ubicacion": "Falcon",
+    "municipio": null,
+    "parroquia": "Las Calderas",
+    "severidad": "alto",
+    "score": 3.2,
+    "confirmado": true,
+    "num_fuentes": 5,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/regiones/pdvsa-confirma-incendio-en-refineria-amuay-no-reportan-heridos-ni-fallas-en-el-suministro-de-combustible/",
+        "fecha": "2026-11-26T19:06:57+00:00"
+      },
+      {
+        "nombre": "La Verdad (Zulia)",
+        "link": "https://laverdad.com/pdvsa-confirma-que-el-incendio-en-la-refineria-amuay-fue-controlado-y-no-hubo-lesionados/",
+        "fecha": "2026-11-26T19:35:20+00:00"
+      },
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/26/video-reportan-incendio-y-densa-columna-de-humo-en-la-refineria-de-amuay-26nov/",
+        "fecha": "2026-11-26T16:48:16+00:00"
+      },
+      {
+        "nombre": "La Prensa de Monagas",
+        "link": "https://laprensademonagas.com/falcon-incendio-en-la-refineria-amuay-fue-sofocado-sin-trabajadores-lesionados/",
+        "fecha": "2026-11-26T18:53:14+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/nacion/reportan-incendio-en-la-refineria-amuay-en-falcon/",
+        "fecha": "2026-11-26T17:40:05+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T19:35:20+00:00",
+    "fecha_evento_temprana": "2026-11-26T16:48:16+00:00",
+    "fecha_deteccion": "2026-11-26T21:57:28.651966+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "incendio::Falcon::2026-11-26",
+    "titulo": "Incendio en Parroquia Las Calderas, Falcon",
+    "texto": "📌 Incendio en Parroquia Las Calderas, Falcon\n\n✅ CONFIRMADO | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Las Calderas, Falcon\n🕒 Hecho reportado: 26/11/2026, 3:35 p.m.\n🔎 Detectado por el sistema: 26/11/2026, 5:57 p.m.\n📊 Fuentes independientes: 5 (score 3.2)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/regiones/pdvsa-confirma-incendio-en-refineria-amuay-no-reportan-heridos-ni-fallas-en-el-suministro-de-combustible/\n  • La Verdad (Zulia): https://laverdad.com/pdvsa-confirma-que-el-incendio-en-la-refineria-amuay-fue-controlado-y-no-hubo-lesionados/\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/26/video-reportan-incendio-y-densa-columna-de-humo-en-la-refineria-de-amuay-26nov/\n  • La Prensa de Monagas: https://laprensademonagas.com/falcon-incendio-en-la-refineria-amuay-fue-sofocado-sin-trabajadores-lesionados/\n  • Primicia (Bolivar): https://primicia.com.ve/nacion/reportan-incendio-en-la-refineria-amuay-en-falcon/"
+  },
+  {
+    "tipo": "salud_publica",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "La Verdad de Monagas",
+        "link": "https://laverdaddemonagas.com/2026/11/26/en-lara-continuan-las-investigaciones-de-intoxicaciones-masivas-en-liceos/",
+        "fecha": "2026-11-26T14:15:32+00:00"
+      },
+      {
+        "nombre": "Primicia (Bolivar)",
+        "link": "https://primicia.com.ve/sucesos/avanza-investigacion-de-intoxicaciones-masivas-en-liceos-de-lara/",
+        "fecha": "2026-11-26T18:00:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T18:00:37+00:00",
+    "fecha_evento_temprana": "2026-11-26T14:15:32+00:00",
+    "fecha_deteccion": "2026-11-26T21:58:32.151514+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Lara::2026-11-26",
+    "titulo": "Salud pública en Lara",
+    "texto": "📌 Salud pública en Lara\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 26/11/2026, 2:00 p.m.\n🔎 Detectado por el sistema: 26/11/2026, 5:58 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • La Verdad de Monagas: https://laverdaddemonagas.com/2026/11/26/en-lara-continuan-las-investigaciones-de-intoxicaciones-masivas-en-liceos/\n  • Primicia (Bolivar): https://primicia.com.ve/sucesos/avanza-investigacion-de-intoxicaciones-masivas-en-liceos-de-lara/"
+  },
+  {
     "tipo": "infraestructura_agua",
     "ubicacion": "Falcon",
     "municipio": "Miranda",
@@ -1771,31 +1900,5 @@
     "clave_dedup": "orden_publico::Merida::2026-11-13",
     "titulo": "Orden público en Merida",
     "texto": "📌 Orden público en Merida\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Merida\n🕒 Hecho reportado: 12/11/2026, 10:35 p.m.\n🔎 Detectado por el sistema: 12/11/2026, 11:00 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Reporteros de Merida: https://www.reporterosdemerida.com.ve/2026/11/trabajadores-de-hidroven-merida-exigen.html"
-  },
-  {
-    "tipo": "incendio",
-    "ubicacion": "Tachira",
-    "municipio": "Seboruco",
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.65,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/sucesos/incendio-en-fabrica-de-colchones-en-seboruco/",
-        "fecha": "2026-11-12T10:58:04+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-12T10:58:04+00:00",
-    "fecha_evento_temprana": "2026-11-12T10:58:04+00:00",
-    "fecha_deteccion": "2026-11-12T16:55:23.463941+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "incendio::Tachira::2026-11-12",
-    "titulo": "Incendio en Municipio Seboruco, Tachira",
-    "texto": "📌 Incendio en Municipio Seboruco, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Seboruco, Tachira\n🕒 Hecho reportado: 12/11/2026, 6:58 a.m.\n🔎 Detectado por el sistema: 12/11/2026, 12:55 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/incendio-en-fabrica-de-colchones-en-seboruco/"
   }
 ]
