@@ -3,15 +3,15 @@
   "tipo": "salud_publica",
   "tipo_label": "Salud pública",
   "cerrado": false,
-  "generado": "2026-11-25T11:41:27.264072+00:00",
-  "actualizado_hasta": "2026-11-18T16:38:15.349573+00:00",
-  "total_eventos": 14,
+  "generado": "2026-11-26T22:01:17.270414+00:00",
+  "actualizado_hasta": "2026-11-26T21:58:32.151514+00:00",
+  "total_eventos": 15,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 14
+    "actual": 15
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron 14 eventos de salud pública, una disminución respecto a los 20 eventos del mes anterior (2026-10) (Comparación proporcionada). Esta reducción se observa pese a la persistencia de incidentes críticos en varios estados del país.\n\nEn Cojedes se reportó una intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el sector La Florida del municipio Tinaco, que dejó 13 personas afectadas y requirió su traslado al Hospital Eugenio González Padilla (El Pitazo). La gravedad del episodio fue catalogada como alta y, además, se evacuaron 631 personas del plantel como medida de precaución (La Prensa de Monagas).\n\nEn Zulia, la autoridad sanitaria lanzó una jornada antirrábica especial tras la confirmación de muertes humanas por rabia; hasta la fecha se habían administrado 176 969 dosis de vacunas antirrábicas a mascotas y animales de compañía (La Prensa de Monagas). La situación fue considerada de severidad crítica debido a la mortalidad asociada a la enfermedad.\n\nEl mismo estado de Zulia también registró la muerte de un recluso, José Manuel Ortiz Torres, en el Centro de Formación Hombre Nuevo Doctor Francisco Delgado, a menos de 48 horas de la muerte de otro interno; el fallecido padecía VIH y tuberculosis, lo que se calificó como un caso crítico de salud pública (La Verdad).\n\nEn Barinas se confirmó una nueva intoxicación escolar en el liceo Trino Briseño del barrio Mi Jardín, con 18 personas afectadas entre estudiantes, docentes y personal del plantel; el evento se incluyó dentro de más de 500 intoxicaciones masivas reportadas a nivel nacional, resaltando la alta severidad del problema (Notiapure).\n\nEn Guárico, la semana epidemiológica 44 reportó dos casos de fiebre amarilla y un deceso, sumando al total de 17 casos registrados en 2026, de los cuales al menos ocho habían fallecido, situando la emergencia en una categoría crítica (Runrun.es).",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron 15 eventos de salud pública, una disminución respecto a los 20 eventos del mes anterior (2026‑10). Esta reducción se observa en el conjunto de incidentes reportados por los medios verificados, aunque persisten situaciones de alta y crítica severidad en varios estados.\n\nEn Cojedes se reportó una intoxicación masiva en el Liceo Nacional Petra de Bruguera, en el sector La Florida del municipio Tinaco, que dejó 13 personas afectadas y requirió su traslado al Hospital Eugenio González Padilla (El Pitazo). La misma jornada movilizó a los cuerpos de bomberos y obligó a evacuar a 631 personas mientras se investigaba la causa de la inhalación tóxica (La Prensa de Monagas). Ambos reportes califican el evento con severidad alta.\n\nEn el estado Zulia, la autoridad sanitaria desplegó una jornada antirrábica especial tras la confirmación de muertes humanas por rabia, administrando 176 969 dosis de vacuna a mascotas y animales de compañía (La Prensa de Monagas). Paralelamente, se registró la muerte de un recluso en el Centro de Formación Hombre Nuevo en El Marite, vinculada a VIH y tuberculosis, lo que también se considera de severidad crítica (La Verdad (Zulia)).\n\nBarinas continuó enfrentando problemas de intoxicaciones escolares; según Notiapure, más de 500 intoxicaciones masivas se han reportado a nivel nacional, incluyendo incidentes en Barinas que han afectado a estudiantes y personal docente, evidenciando una situación de alta severidad en el estado.\n\nEn Guárico, la vigilancia epidemiológica confirmó dos casos nuevos de fiebre amarilla y un deceso asociado a la enfermedad, dentro de los 17 casos reportados a nivel nacional en 2026, lo que sitúa al estado en una condición de severidad crítica (Runrun.es).",
   "fuentes": [
     {
       "nombre": "El Pitazo",
@@ -58,8 +58,16 @@
       "link": "https://laprensadelara.com/nacionales/julio-castro-casos-covid-caracas/"
     },
     {
+      "nombre": "La Verdad de Monagas",
+      "link": "https://laverdaddemonagas.com/2026/11/26/en-lara-continuan-las-investigaciones-de-intoxicaciones-masivas-en-liceos/"
+    },
+    {
       "nombre": "Primicia (Bolivar)",
       "link": "https://primicia.com.ve/sucesos/investigan-intoxicacion-masiva-de-15-personas-en-tachira/"
+    },
+    {
+      "nombre": "Primicia (Bolivar)",
+      "link": "https://primicia.com.ve/sucesos/avanza-investigacion-de-intoxicaciones-masivas-en-liceos-de-lara/"
     }
   ]
 }
