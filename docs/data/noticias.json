@@ -1,7 +1,59 @@
 [
   {
     "tipo": "orden_publico",
-    "ubicacion": "Monagas",
+    "ubicacion": "Distrito Capital",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo/?utm_source=rss&utm_medium=rss&utm_campaign=intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo",
+        "fecha": "2026-11-25T22:23:32+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T22:23:32+00:00",
+    "fecha_evento_temprana": "2026-11-25T22:23:32+00:00",
+    "fecha_deteccion": "2026-11-26T03:16:46.023154+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Distrito Capital::2026-11-25",
+    "titulo": "Orden público en Distrito Capital",
+    "texto": "📌 Orden público en Distrito Capital\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Distrito Capital\n🕒 Hecho reportado: 25/11/2026, 6:23 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:16 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo/?utm_source=rss&utm_medium=rss&utm_campaign=intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": "Los Teques",
+    "severidad": "alto",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Pitazo",
+        "link": "https://elpitazo.net/politica/siete-presos-politicos-levantan-huelga-de-hambre-en-ramo-verde-tras-grave-deterioro-de-salud/",
+        "fecha": "2026-11-25T21:32:06+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T21:32:06+00:00",
+    "fecha_evento_temprana": "2026-11-25T21:32:06+00:00",
+    "fecha_deteccion": "2026-11-26T03:16:49.816153+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Miranda::2026-11-25",
+    "titulo": "Orden público en Parroquia Los Teques, Miranda",
+    "texto": "📌 Orden público en Parroquia Los Teques, Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Los Teques, Miranda\n🕒 Hecho reportado: 25/11/2026, 5:32 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:16 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • El Pitazo: https://elpitazo.net/politica/siete-presos-politicos-levantan-huelga-de-hambre-en-ramo-verde-tras-grave-deterioro-de-salud/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Barinas",
     "municipio": null,
     "parroquia": null,
     "severidad": "bajo",
@@ -10,6 +62,37 @@
     "num_fuentes": 1,
     "fuentes": [
       {
+        "nombre": "La Noticia de Barinas",
+        "link": "https://lanoticiadebarinas.com/2026/11/durante-el-tercer-dia-de-protesta-nacional-gremios-de-barinas-anuncian-paro-de-48-horas-tras-ser-ignorados-en-la-gobernacion/?utm_source=rss&utm_medium=rss&utm_campaign=durante-el-tercer-dia-de-protesta-nacional-gremios-de-barinas-anuncian-paro-de-48-horas-tras-ser-ignorados-en-la-gobernacion",
+        "fecha": "2026-11-26T00:22:48+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T00:22:48+00:00",
+    "fecha_evento_temprana": "2026-11-26T00:22:48+00:00",
+    "fecha_deteccion": "2026-11-26T03:16:54.110063+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Barinas::2026-11-26",
+    "titulo": "Orden público en Barinas",
+    "texto": "📌 Orden público en Barinas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Barinas\n🕒 Hecho reportado: 25/11/2026, 8:22 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:16 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Noticia de Barinas: https://lanoticiadebarinas.com/2026/11/durante-el-tercer-dia-de-protesta-nacional-gremios-de-barinas-anuncian-paro-de-48-horas-tras-ser-ignorados-en-la-gobernacion/?utm_source=rss&utm_medium=rss&utm_campaign=durante-el-tercer-dia-de-protesta-nacional-gremios-de-barinas-anuncian-paro-de-48-horas-tras-ser-ignorados-en-la-gobernacion"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Monagas",
+    "municipio": "Maturín",
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 1.3,
+    "confirmado": true,
+    "num_fuentes": 2,
+    "fuentes": [
+      {
+        "nombre": "Maturin News",
+        "link": "https://maturinnews.com/intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo/?utm_source=rss&utm_medium=rss&utm_campaign=intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo",
+        "fecha": "2026-11-25T22:23:32+00:00"
+      },
+      {
         "nombre": "La Prensa de Monagas",
         "link": "https://laprensademonagas.com/magisterio-de-monagas-consigna-petitorio-ante-el-ministerio-del-trabajo-para-exigir-reivindicaciones-laborales/",
         "fecha": "2026-11-25T19:55:39+00:00"
@@ -17,13 +100,65 @@
     ],
     "es_reporte_filial": false,
     "resumen_consolidado": null,
-    "fecha_evento": "2026-11-25T19:55:39+00:00",
+    "fecha_evento": "2026-11-25T22:23:32+00:00",
     "fecha_evento_temprana": "2026-11-25T19:55:39+00:00",
-    "fecha_deteccion": "2026-11-25T20:43:39.337892+00:00",
+    "fecha_deteccion": "2026-11-26T03:17:10.608238+00:00",
     "estado_verificacion": "APROBADO_IA",
     "clave_dedup": "orden_publico::Monagas::2026-11-25",
-    "titulo": "Orden público en Monagas",
-    "texto": "📌 Orden público en Monagas\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Monagas\n🕒 Hecho reportado: 25/11/2026, 3:55 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 4:43 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • La Prensa de Monagas: https://laprensademonagas.com/magisterio-de-monagas-consigna-petitorio-ante-el-ministerio-del-trabajo-para-exigir-reivindicaciones-laborales/"
+    "titulo": "Orden público en Municipio Maturín, Monagas",
+    "texto": "📌 Orden público en Municipio Maturín, Monagas\n\n✅ CONFIRMADO | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Municipio Maturín, Monagas\n🕒 Hecho reportado: 25/11/2026, 6:23 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:17 p.m.\n📊 Fuentes independientes: 2 (score 1.3)\n\nℹ️ ✅ CONFIRMADO: Corroborado por 2 o más fuentes independientes (o una fuente oficial de alta confiabilidad).\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • Maturin News: https://maturinnews.com/intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo/?utm_source=rss&utm_medium=rss&utm_campaign=intergremial-sindical-de-monagas-entrega-pliego-ante-la-inspectoria-del-trabajo\n  • La Prensa de Monagas: https://laprensademonagas.com/magisterio-de-monagas-consigna-petitorio-ante-el-ministerio-del-trabajo-para-exigir-reivindicaciones-laborales/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Sucre",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Tiempo (Anzoategui)",
+        "link": "https://eltiempove.com/docentes-y-trabajadores-publicos-cumplieron-segundo-dia-de-protestas-en-cumana/",
+        "fecha": "2026-11-25T19:06:37+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T19:06:37+00:00",
+    "fecha_evento_temprana": "2026-11-25T19:06:37+00:00",
+    "fecha_deteccion": "2026-11-26T03:17:40.222866+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Sucre::2026-11-25",
+    "titulo": "Orden público en Sucre",
+    "texto": "📌 Orden público en Sucre\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Sucre\n🕒 Hecho reportado: 25/11/2026, 3:06 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:17 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Tiempo (Anzoategui): https://eltiempove.com/docentes-y-trabajadores-publicos-cumplieron-segundo-dia-de-protestas-en-cumana/"
+  },
+  {
+    "tipo": "orden_publico",
+    "ubicacion": "Lara",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "bajo",
+    "score": 0.75,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "El Impulso (Lara)",
+        "link": "https://www.elimpulso.com/2026/11/25/avance-trabajadores-universitarios-de-lara-advierten-que-se-acerca-un-paro-indefinido-25nov/",
+        "fecha": "2026-11-25T16:48:44+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-25T16:48:44+00:00",
+    "fecha_evento_temprana": "2026-11-25T16:48:44+00:00",
+    "fecha_deteccion": "2026-11-26T03:18:48.124091+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "orden_publico::Lara::2026-11-25",
+    "titulo": "Orden público en Lara",
+    "texto": "📌 Orden público en Lara\n\n⚠️ SIN CONFIRMAR | 🟢 SEVERIDAD BAJA\n\n📍 Ubicación: Lara\n🕒 Hecho reportado: 25/11/2026, 12:48 p.m.\n🔎 Detectado por el sistema: 25/11/2026, 11:18 p.m.\n📊 Fuentes independientes: 1 (score 0.75)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟢 SEVERIDAD BAJA: Situación de precaución, sin daños significativos reportados.\n\nFuentes:\n  • El Impulso (Lara): https://www.elimpulso.com/2026/11/25/avance-trabajadores-universitarios-de-lara-advierten-que-se-acerca-un-paro-indefinido-25nov/"
   },
   {
     "tipo": "vialidad",
@@ -1610,31 +1745,5 @@
     "clave_dedup": "incendio::Tachira::2026-11-12",
     "titulo": "Incendio en Municipio Seboruco, Tachira",
     "texto": "📌 Incendio en Municipio Seboruco, Tachira\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Municipio Seboruco, Tachira\n🕒 Hecho reportado: 12/11/2026, 6:58 a.m.\n🔎 Detectado por el sistema: 12/11/2026, 12:55 p.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/sucesos/incendio-en-fabrica-de-colchones-en-seboruco/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Barinas",
-    "municipio": "Cruz Paredes",
-    "parroquia": null,
-    "severidad": "medio",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Diario La Nacion (Tachira)",
-        "link": "https://lanacionweb.com/nacional/barinas-alcalde-de-cruz-paredes-exige-respuestas-a-corpoelec-ante-colapso-electrico-en-el-municipio/",
-        "fecha": "2026-11-11T15:56:53+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-11T15:56:53+00:00",
-    "fecha_evento_temprana": "2026-11-11T15:56:53+00:00",
-    "fecha_deteccion": "2026-11-12T01:07:18.556002+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Barinas::2026-11-11",
-    "titulo": "Orden público en Municipio Cruz Paredes, Barinas",
-    "texto": "📌 Orden público en Municipio Cruz Paredes, Barinas\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Cruz Paredes, Barinas\n🕒 Hecho reportado: 11/11/2026, 11:56 a.m.\n🔎 Detectado por el sistema: 11/11/2026, 9:07 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Diario La Nacion (Tachira): https://lanacionweb.com/nacional/barinas-alcalde-de-cruz-paredes-exige-respuestas-a-corpoelec-ante-colapso-electrico-en-el-municipio/"
   }
 ]

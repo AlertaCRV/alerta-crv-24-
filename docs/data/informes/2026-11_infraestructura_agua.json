@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-25T02:34:29.938989+00:00",
+  "generado": "2026-11-26T03:21:38.473332+00:00",
   "actualizado_hasta": "2026-11-19T21:42:24.318161+00:00",
   "total_eventos": 1,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 7,
     "actual": 1
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registró una única falla de agua en el estado Zulia, en contraste con los siete eventos que se habían reportado en el mes anterior, octubre de 2026 (Noticia al Dia (Zulia)). Esta disminución en la cantidad de incidentes se refleja en los datos comparativos proporcionados para la categoría de fallas de agua.\n\nLa falla de agua en Zulia presentó una severidad alta y afectó a varios municipios, entre ellos Maracaibo, San Francisco y Cabimas (Noticia al Dia (Zulia)). El Ministerio del Poder Popular de las Aguas, a través de la entidad Hidrológica Venezolana (Hidroven), recibió y atendió más de 400 reportes relacionados con la interrupción del suministro y problemas en los sistemas de agua potable y aguas servidas en la región (Noticia al Dia (Zulia)).\n\nAnte esta situación, el Equipo Multidisciplinario del Agua desplegado por Hidroven realizó trabajos de optimización y saneamiento de los sistemas afectados, buscando restablecer el servicio y prevenir futuros incidentes (Noticia al Dia (Zulia)). La reducción a un solo evento registrado en noviembre sugiere una mejora en la gestión y respuesta de las autoridades locales frente a las fallas de agua en el estado Zulia.",
+  "narrativa": "Durante el mes de noviembre de 2026 la categoría de fallas de agua registró únicamente un evento, frente a los siete reportados en el período anterior (2026‑10). Esta disminución refleja una notable reducción en la frecuencia de incidentes en comparación con el mes previo.\n\nLa única incidencia se produjo en el estado Zulia, catalogada con severidad alta (Noticia al Dia (Zulia)). El Ministerio del Poder Popular de las Aguas, a través de Hidrológica Venezolana (Hidroven), atendió más de 400 reportes en el Zulia, desplegando un Equipo Multidisciplinario del Agua en los municipios de Maracaibo, San Francisco y Cabimas para optimizar y sanear los sistemas de agua potable y aguas servidas (Noticia al Dia (Zulia)).\n\nEste descenso en el número de fallas de agua sugiere una mejora operativa en la gestión de los recursos hídricos, aunque la alta severidad del evento en Zulia subraya la necesidad de mantener la vigilancia y el mantenimiento continuo de la infraestructura para evitar futuros incidentes.",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
