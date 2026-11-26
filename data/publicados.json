@@ -99,16 +99,51 @@
   },
   "orden_publico::Monagas::2026-11-25": {
     "severidad": "bajo",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-25T20:43:39.337892+00:00",
+    "confirmado": true,
+    "fecha_deteccion": "2026-11-26T03:17:10.608238+00:00",
     "fecha_evento_temprana": "2026-11-25T19:55:39+00:00",
-    "municipio": null
+    "municipio": "Maturín"
   },
   "vialidad::Distrito Capital::2026-11-25": {
     "severidad": "alto",
     "confirmado": false,
     "fecha_deteccion": "2026-11-25T20:44:31.314845+00:00",
     "fecha_evento_temprana": "2026-11-25T20:11:06+00:00",
+    "municipio": null
+  },
+  "orden_publico::Distrito Capital::2026-11-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T03:16:46.023154+00:00",
+    "fecha_evento_temprana": "2026-11-25T22:23:32+00:00",
+    "municipio": null
+  },
+  "orden_publico::Miranda::2026-11-25": {
+    "severidad": "alto",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T03:16:49.816153+00:00",
+    "fecha_evento_temprana": "2026-11-25T21:32:06+00:00",
+    "municipio": null
+  },
+  "orden_publico::Barinas::2026-11-26": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T03:16:54.110063+00:00",
+    "fecha_evento_temprana": "2026-11-26T00:22:48+00:00",
+    "municipio": null
+  },
+  "orden_publico::Sucre::2026-11-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T03:17:40.222866+00:00",
+    "fecha_evento_temprana": "2026-11-25T19:06:37+00:00",
+    "municipio": null
+  },
+  "orden_publico::Lara::2026-11-25": {
+    "severidad": "bajo",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T03:18:48.124091+00:00",
+    "fecha_evento_temprana": "2026-11-25T16:48:44+00:00",
     "municipio": null
   }
 }
