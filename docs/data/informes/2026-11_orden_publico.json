@@ -3,15 +3,15 @@
   "tipo": "orden_publico",
   "tipo_label": "Orden público",
   "cerrado": false,
-  "generado": "2026-11-25T02:35:38.135914+00:00",
-  "actualizado_hasta": "2026-11-25T02:31:46.649351+00:00",
-  "total_eventos": 51,
+  "generado": "2026-11-26T12:36:53.530030+00:00",
+  "actualizado_hasta": "2026-11-26T03:18:48.124091+00:00",
+  "total_eventos": 59,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 77,
-    "actual": 51
+    "actual": 59
   },
-  "narrativa": "En el mes de noviembre de 2026 se registraron 51 eventos de orden público, una disminución respecto a los 77 del mes anterior (2026‑10). Esta reducción se observa a pesar de la persistencia de incidentes críticos y de alta severidad en distintas regiones del país.\n\nEn Barinas se produjo un episodio de orden público de severidad crítica, que incluyó disturbios y la suspensión de un partido de la Liga Futve, según Noticia al Dia (Zulia). En el estado Lara también se registró un hecho de orden público de severidad crítica, reportado por Yaracuy al Dia, al igual que en Yaracuy, donde otro incidente crítico fue documentado por la misma fuente.\n\nEl estado Miranda presentó tres incidentes de orden público de severidad alta: uno reportado por Portuguesa Reporta y dos adicionales descritos por El Pitazo. En Delta Amacuro se registró un evento de alta severidad, también citado por El Pitazo. De igual forma, Monagas experimentó un hecho de orden público de severidad alta, según El Pitazo, y el Distrito Capital reportó un incidente de alta severidad, igualmente documentado por El Pitazo.\n\nDurante el mismo período se reportaron múltiples manifestaciones y movilizaciones que derivaron en enfrentamientos con la Policía Nacional Bolivariana. En Caracas, al menos cinco trabajadores resultaron lesionados y varios manifestantes fueron despojados de sus pertenencias, según La Mañana (Falcon) y El Pitazo. Asimismo, se denunciaron agresiones y robos a trabajadores durante una marcha hacia Miraflores, reportado por El Pitazo y La Prensa de Lara.\n\nEl monitoreo continuo de la Cruz Roja Venezolana seguirá registrando y analizando estos eventos para orientar la respuesta humanitaria y de seguridad, manteniendo la atención en los incidentes críticos y en la protección de la población afectada.",
+  "narrativa": "En el mes de noviembre de 2026 se registraron 59 incidentes de orden público, una disminución respecto a los 77 eventos del mes anterior (2026-10). Esta reducción se da en un contexto de movilizaciones nacionales por aguinaldos y salarios, que pese a los bloqueos policiales, continuaron en varios estados del país.\n\nLos incidentes de mayor gravedad se concentraron en Barinas, donde se reportó un hecho de orden público de severidad crítica (Noticia al Dia (Zulia)). En el occidente, Lara y Yaracuy también registraron situaciones críticas; en Lara se describió un episodio de orden público con severidad crítica (Yaracuy al Dia) y, de forma paralela, en Yaracuy se documentó otro evento de igual severidad (Yaracuy al Dia).\n\nEn el centro del país, Miranda fue escenario de varios incidentes de alta severidad. Un primer reporte provino de Portuguesa Reporta, que describió un hecho de orden público de severidad alto en el estado (Portuguesa Reporta). Posteriormente, El Pitazo informó al menos tres eventos adicionales en Miranda, todos catalogados como de alta severidad (El Pitazo). Estas reiteradas denuncias subrayan la intensidad de las protestas en la capital del estado.\n\nAl este, Delta Amacuro presentó un incidente de orden público de severidad alto, según El Pitazo (El Pitazo). En la región oriental, Monagas también registró un hecho de alta severidad, reportado por la misma fuente (El Pitazo). En el Distrito Capital, la capital del país, se documentó otro episodio de orden público con severidad alto, igualmente reportado por El Pitazo (El Pitazo).\n\nAdemás de los eventos de orden público, se registraron episodios de violencia y represión durante las movilizaciones. En Caracas, El Impulso describió robos y atropellos a personas de la tercera edad durante una marcha (El Impulso). La Mañana informó que al menos cinco trabajadores resultaron lesionados por la fuerza pública en la misma jornada (La Mañana). Estas denuncias complementan el panorama de tensiones sociales que acompañaron a los incidentes de orden público durante el período.",
   "fuentes": [
     {
       "nombre": "El Impulso (Lara)",
@@ -32,6 +32,10 @@
     {
       "nombre": "El Pitazo",
       "link": "https://elpitazo.net/regiones/policias-agreden-a-trabajadores-y-roban-a-un-profesor-durante-marcha-a-miraflores/"
+    },
+    {
+      "nombre": "El Pitazo",
+      "link": "https://elpitazo.net/politica/siete-presos-politicos-levantan-huelga-de-hambre-en-ramo-verde-tras-grave-deterioro-de-salud/"
     },
     {
       "nombre": "La Manana (Falcon)",
@@ -118,6 +122,10 @@
       "link": "https://www.elimpulso.com/2026/11/16/avance-enfermeras-jubiladas-de-lara-denuncian-total-desproteccion-y-califican-sus-ingresos-como-sueldos-de-miseria-16nov/"
     },
     {
+      "nombre": "El Impulso (Lara)",
+      "link": "https://www.elimpulso.com/2026/11/25/avance-trabajadores-universitarios-de-lara-advierten-que-se-acerca-un-paro-indefinido-25nov/"
+    },
+    {
       "nombre": "El Periodico de Monagas",
       "link": "https://elperiodicodemonagas.com.ve/monagas/habitantes-de-amana-abajo-trancan-la-via-al-sur-para-exigir-asfaltado/"
     },
@@ -144,14 +152,6 @@
     {
       "nombre": "El Tiempo (Anzoategui)",
       "link": "https://eltiempove.com/vecinos-de-villa-betania-de-anaco-protestaron-tras-doble-tanda-de-cortes-electricos/"
-    },
-    {
-      "nombre": "El Tiempo (Anzoategui)",
-      "link": "https://eltiempove.com/trabajadores-de-la-udo-protestaron-por-segunda-semana-consecutiva-en-anzoategui/"
-    },
-    {
-      "nombre": "La Manana (Falcon)",
-      "link": "https://lamananadigital.com/trabajadores-se-adhirieron-al-paro-nacional-convocado-para-este-lunes/"
     }
   ]
 }

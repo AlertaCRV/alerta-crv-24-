@@ -1,5 +1,57 @@
 [
   {
+    "tipo": "infraestructura_agua",
+    "ubicacion": "Falcon",
+    "municipio": "Miranda",
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.65,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/",
+        "fecha": "2026-11-26T12:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T12:30:00+00:00",
+    "fecha_evento_temprana": "2026-11-26T12:30:00+00:00",
+    "fecha_deteccion": "2026-11-26T12:34:15.287171+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "infraestructura_agua::Falcon::2026-11-26",
+    "titulo": "Falla de agua en Municipio Miranda, Falcon",
+    "texto": "📌 Falla de agua en Municipio Miranda, Falcon\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Municipio Miranda, Falcon\n🕒 Hecho reportado: 26/11/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 26/11/2026, 8:34 a.m.\n📊 Fuentes independientes: 1 (score 0.65)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/"
+  },
+  {
+    "tipo": "inundacion",
+    "ubicacion": "Miranda",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "medio",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Nuevo Dia (Falcon)",
+        "link": "https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/",
+        "fecha": "2026-11-26T12:30:00+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-26T12:30:00+00:00",
+    "fecha_evento_temprana": "2026-11-26T12:30:00+00:00",
+    "fecha_deteccion": "2026-11-26T12:34:19.569825+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "inundacion::Miranda::2026-11-26",
+    "titulo": "Inundación en Miranda",
+    "texto": "📌 Inundación en Miranda\n\n⚠️ SIN CONFIRMAR | 🟡 SEVERIDAD MEDIA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 26/11/2026, 8:30 a.m.\n🔎 Detectado por el sistema: 26/11/2026, 8:34 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟡 SEVERIDAD MEDIA: Se reportan daños materiales, sin heridos mencionados.\n\nFuentes:\n  • Nuevo Dia (Falcon): https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,

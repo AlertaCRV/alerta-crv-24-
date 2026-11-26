@@ -1,13 +1,13 @@
 {
-  "actualizado": "2026-11-26T03:18:51.545081+00:00",
+  "actualizado": "2026-11-26T12:34:36.795129+00:00",
   "periodo_cubierto": {
     "desde": "2026-07-07T16:00:00+00:00",
-    "hasta": "2026-11-26T00:22:48+00:00"
+    "hasta": "2026-11-26T12:30:00+00:00"
   },
-  "total_eventos": 697,
+  "total_eventos": 699,
   "por_tipo": {
     "tormenta_electrica": 6,
-    "inundacion": 93,
+    "inundacion": 94,
     "infraestructura_electrica": 59,
     "deslizamiento": 45,
     "colapso_estructural": 6,
@@ -20,7 +20,7 @@
     "escasez_combustible": 2,
     "sequia": 6,
     "explosion": 2,
-    "infraestructura_agua": 28,
+    "infraestructura_agua": 29,
     "accidente_transporte": 4,
     "derrame_petrolero": 8,
     "ataque_armado": 9,
@@ -113,6 +113,20 @@
       "severidad_mapa": "medio"
     },
     {
+      "estado": "Miranda",
+      "total": 37,
+      "confirmados": 5,
+      "por_severidad": {
+        "alto": 8,
+        "medio": 12,
+        "critico": 5,
+        "bajo": 11,
+        "sin_clasificar": 1
+      },
+      "indice_gravedad": 2.19,
+      "severidad_mapa": "medio"
+    },
+    {
       "estado": "Aragua",
       "total": 37,
       "confirmados": 1,
@@ -127,27 +141,13 @@
       "severidad_mapa": "medio"
     },
     {
-      "estado": "Miranda",
-      "total": 36,
-      "confirmados": 5,
-      "por_severidad": {
-        "alto": 8,
-        "medio": 11,
-        "critico": 5,
-        "bajo": 11,
-        "sin_clasificar": 1
-      },
-      "indice_gravedad": 2.2,
-      "severidad_mapa": "medio"
-    },
-    {
       "estado": "Falcon",
-      "total": 34,
+      "total": 35,
       "confirmados": 7,
       "por_severidad": {
         "alto": 7,
         "bajo": 9,
-        "medio": 16,
+        "medio": 17,
         "critico": 2
       },
       "indice_gravedad": 2.06,
@@ -476,7 +476,7 @@
       "incendio": 6,
       "infraestructura_electrica": 4,
       "explosion": 1,
-      "inundacion": 5,
+      "inundacion": 6,
       "deslizamiento": 1,
       "orden_publico": 17,
       "infraestructura_agua": 2
@@ -493,7 +493,7 @@
       "orden_publico": 19,
       "deslizamiento": 4,
       "derrame_petrolero": 3,
-      "infraestructura_agua": 1,
+      "infraestructura_agua": 2,
       "incendio": 3,
       "infraestructura_electrica": 1,
       "sismo": 1
@@ -582,7 +582,7 @@
   "por_severidad": {
     "alto": 159,
     "critico": 87,
-    "medio": 234,
+    "medio": 236,
     "bajo": 186,
     "sin_clasificar": 31
   },
@@ -598,7 +598,7 @@
       "2026-08": 48,
       "2026-09": 16,
       "2026-10": 20,
-      "2026-11": 2
+      "2026-11": 3
     },
     "infraestructura_electrica": {
       "2026-07": 1,
@@ -675,7 +675,7 @@
       "2026-08": 12,
       "2026-09": 8,
       "2026-10": 7,
-      "2026-11": 1
+      "2026-11": 2
     },
     "accidente_transporte": {
       "2026-08": 1,

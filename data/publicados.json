@@ -1,11 +1,4 @@
 {
-  "infraestructura_electrica::Tachira::2026-11-23": {
-    "severidad": "medio",
-    "confirmado": false,
-    "fecha_deteccion": "2026-11-23T11:09:30.805922+00:00",
-    "fecha_evento_temprana": "2026-11-23T05:00:00+00:00",
-    "municipio": "Cárdenas"
-  },
   "orden_publico::Distrito Capital::2026-11-23": {
     "severidad": "bajo",
     "confirmado": false,
@@ -144,6 +137,20 @@
     "confirmado": false,
     "fecha_deteccion": "2026-11-26T03:18:48.124091+00:00",
     "fecha_evento_temprana": "2026-11-25T16:48:44+00:00",
+    "municipio": null
+  },
+  "infraestructura_agua::Falcon::2026-11-26": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T12:34:15.287171+00:00",
+    "fecha_evento_temprana": "2026-11-26T12:30:00+00:00",
+    "municipio": "Miranda"
+  },
+  "inundacion::Miranda::2026-11-26": {
+    "severidad": "medio",
+    "confirmado": false,
+    "fecha_deteccion": "2026-11-26T12:34:19.569825+00:00",
+    "fecha_evento_temprana": "2026-11-26T12:30:00+00:00",
     "municipio": null
   }
 }
