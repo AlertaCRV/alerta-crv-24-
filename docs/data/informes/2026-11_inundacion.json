@@ -3,15 +3,15 @@
   "tipo": "inundacion",
   "tipo_label": "Inundación",
   "cerrado": false,
-  "generado": "2026-11-26T03:22:10.468580+00:00",
-  "actualizado_hasta": "2026-11-17T08:26:32.960326+00:00",
-  "total_eventos": 2,
+  "generado": "2026-11-27T04:09:22.612408+00:00",
+  "actualizado_hasta": "2026-11-26T12:34:19.569825+00:00",
+  "total_eventos": 3,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 20,
-    "actual": 2
+    "actual": 3
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de inundación, una disminución notable respecto al período anterior en el que se contabilizaron veinte eventos (20 evento(s) registrados entonces vs. 2 en este período). Esta reducción se refleja en la menor frecuencia de alertas emitidas por el Instituto Nacional de Meteorología e Hidrología (INAMEH).\n\nEl primer evento ocurrió en el estado Carabobo, donde fuertes lluvias acompañadas de vientos huracanados, vinculados a la llegada de la onda tropical 62, provocaron el desbordamiento de ríos, la caída de árboles y diversos daños estructurales tanto en Carabobo como en La Guaira (La Prensa de Lara). Las precipitaciones se registraron durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre, afectando especialmente la ciudad de Valencia y la parroquia Catia La Mar (La Prensa de Lara).\n\nEl segundo evento se dio en el estado Mérida, en la urbanización Giandomenico Pulitti de la población de Tovar, donde el colapso de la red de tuberías de aguas servidas generó un desbordamiento de residuos que inundó áreas comunes y generó una situación de extrema gravedad e insalubridad (Reporteros de Merida). Los habitantes denunciaron que el problema había empeorado durante varios días y que el lunes 16 de noviembre alcanzó su punto crítico, exigiendo una solución urgente (Reporteros de Merida).\n\nAmbas localidades reportaron daños materiales significativos, aunque no se registraron informes de víctimas fatales o heridos graves en los comunicados disponibles. Las autoridades locales y la Cruz Roja Venezolana continúan monitoreando la situación y coordinando acciones de asistencia y prevención para evitar nuevos incidentes en los próximos meses.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron tres eventos de inundación, una disminución notable frente a los veinte eventos que se habían documentado en octubre de 2026 (20 evento(s) registrados entonces vs. 3 en este período). Esta reducción se refleja en la menor frecuencia de desbordamientos y daños materiales reportados en el territorio nacional.\n\nEn Carabobo, fuertes lluvias acompañadas de vientos huracanados provocaron el desbordamiento de ríos y la caída de árboles, generando daños estructurales en la ciudad de Valencia y en la parroquia Catia La Mar. Las precipitaciones se concentraron durante la noche del sábado 7 de noviembre y la madrugada del domingo 8 de noviembre, afectando también a La Guaira (La Prensa de Lara). La severidad del evento fue catalogada como alta, con reportes de viviendas dañadas y servicios interrumpidos.\n\nEn el estado Mérida, la urbanización Giandomenico Pulitti, ubicada en la población de Tovar, sufrió el colapso de la red de aguas servidas. El lunes 16 de noviembre, los residuos se desbordaron por todas partes, generando una situación de extrema insalubridad y riesgo para la salud de los habitantes (Reporteros de Merida). El problema, que llevaba varios días sin solución, dejó a la comunidad sin acceso a un saneamiento adecuado y provocó la necesidad de una respuesta urgente por parte de las autoridades locales.\n\nA pesar de la reducción en el número total de eventos, los incidentes en Carabobo y Mérida evidencian la persistencia de vulnerabilidades en la infraestructura hídrica del país. Las autoridades continúan trabajando en planes de mitigación y en la optimización de sistemas de bombeo y saneamiento para prevenir futuros desbordamientos y proteger a la población.",
   "fuentes": [
     {
       "nombre": "La Prensa de Lara",
@@ -20,6 +20,10 @@
     {
       "nombre": "Reporteros de Merida",
       "link": "https://www.reporterosdemerida.com.ve/2026/11/habitantes-de-la-urbanizacion.html"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/"
     }
   ]
 }

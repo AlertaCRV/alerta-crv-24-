@@ -12,7 +12,7 @@
     "tipo": "sismo",
     "tipo_label": "Sismo",
     "cerrado": false,
-    "generado": "2026-11-26T03:23:16.937526+00:00",
+    "generado": "2026-11-27T04:10:21.399756+00:00",
     "total_eventos": 1
   },
   {
@@ -28,16 +28,16 @@
     "tipo": "orden_publico",
     "tipo_label": "Orden público",
     "cerrado": false,
-    "generado": "2026-11-26T12:36:53.530030+00:00",
-    "total_eventos": 59
+    "generado": "2026-11-27T04:09:49.171597+00:00",
+    "total_eventos": 62
   },
   {
     "periodo": "2026-11",
     "tipo": "inundacion",
     "tipo_label": "Inundación",
     "cerrado": false,
-    "generado": "2026-11-26T03:22:10.468580+00:00",
-    "total_eventos": 2
+    "generado": "2026-11-27T04:09:22.612408+00:00",
+    "total_eventos": 3
   },
   {
     "periodo": "2026-11",
@@ -52,16 +52,16 @@
     "tipo": "infraestructura_agua",
     "tipo_label": "Falla de agua",
     "cerrado": false,
-    "generado": "2026-11-26T03:21:38.473332+00:00",
-    "total_eventos": 1
+    "generado": "2026-11-27T04:08:42.605985+00:00",
+    "total_eventos": 2
   },
   {
     "periodo": "2026-11",
     "tipo": "incendio",
     "tipo_label": "Incendio",
     "cerrado": false,
-    "generado": "2026-11-26T12:36:11.561984+00:00",
-    "total_eventos": 11
+    "generado": "2026-11-27T04:08:29.881074+00:00",
+    "total_eventos": 12
   },
   {
     "periodo": "2026-11",
@@ -76,7 +76,7 @@
     "tipo": "deslizamiento",
     "tipo_label": "Deslizamiento/Derrumbe",
     "cerrado": false,
-    "generado": "2026-11-26T03:20:31.464328+00:00",
+    "generado": "2026-11-27T04:07:36.561870+00:00",
     "total_eventos": 5
   },
   {
@@ -92,7 +92,7 @@
     "tipo": "colapso_estructural",
     "tipo_label": "Colapso estructural",
     "cerrado": false,
-    "generado": "2026-11-26T03:19:50.955680+00:00",
+    "generado": "2026-11-27T04:06:56.207448+00:00",
     "total_eventos": 1
   },
   {
@@ -100,7 +100,7 @@
     "tipo": "ataque_armado",
     "tipo_label": "Ataque armado",
     "cerrado": false,
-    "generado": "2026-11-26T03:19:38.246959+00:00",
+    "generado": "2026-11-27T04:06:43.969092+00:00",
     "total_eventos": 1
   },
   {

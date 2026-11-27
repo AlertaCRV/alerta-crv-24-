@@ -3,19 +3,23 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-26T03:21:38.473332+00:00",
-  "actualizado_hasta": "2026-11-19T21:42:24.318161+00:00",
-  "total_eventos": 1,
+  "generado": "2026-11-27T04:08:42.605985+00:00",
+  "actualizado_hasta": "2026-11-26T12:34:15.287171+00:00",
+  "total_eventos": 2,
   "comparacion_mes_anterior": {
     "periodo_anterior": "2026-10",
     "anterior": 7,
-    "actual": 1
+    "actual": 2
   },
-  "narrativa": "Durante el mes de noviembre de 2026 la categoría de fallas de agua registró únicamente un evento, frente a los siete reportados en el período anterior (2026‑10). Esta disminución refleja una notable reducción en la frecuencia de incidentes en comparación con el mes previo.\n\nLa única incidencia se produjo en el estado Zulia, catalogada con severidad alta (Noticia al Dia (Zulia)). El Ministerio del Poder Popular de las Aguas, a través de Hidrológica Venezolana (Hidroven), atendió más de 400 reportes en el Zulia, desplegando un Equipo Multidisciplinario del Agua en los municipios de Maracaibo, San Francisco y Cabimas para optimizar y sanear los sistemas de agua potable y aguas servidas (Noticia al Dia (Zulia)).\n\nEste descenso en el número de fallas de agua sugiere una mejora operativa en la gestión de los recursos hídricos, aunque la alta severidad del evento en Zulia subraya la necesidad de mantener la vigilancia y el mantenimiento continuo de la infraestructura para evitar futuros incidentes.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de falla de agua, una disminución notable respecto a los siete eventos del mes anterior (2026-10). Esta reducción se refleja en los reportes consolidados por la Cruz Roja Venezolana, que monitorea las emergencias de servicios básicos en todo el territorio nacional.\n\nEl evento más relevante del período fue la falla de agua en el estado Zulia, catalogada con severidad alta. Según Noticia al Dia (Zulia), Hidroven atendió más de 400 reportes de interrupciones y problemas en el suministro de agua potable y en la gestión de aguas servidas, desplegando un Equipo Multidisciplinario del Agua en los municipios de Maracaibo, San Francisco y Cabimas para realizar trabajos de optimización y saneamiento de los sistemas (Noticia al Dia (Zulia)).\n\nEn paralelo, en el estado Falcón se llevaron a cabo acciones preventivas para evitar desbordamientos y mejorar la infraestructura hidráulica. La Alcaldía de Miranda, en conjunto con Hidroven, ejecutó un plan de saneamiento y optimizó una estación de bombeo en Coro, combinando la sustitución puntual de tuberías y la mejora del sistema de bombeo (Nuevo Dia (Falcon)).\n\nEn conjunto, la disminución de incidentes y las intervenciones realizadas por las autoridades de agua demuestran una tendencia a la mejora de la resiliencia del suministro hídrico, aunque la Cruz Roja sigue atenta a cualquier eventualidad que pueda generar daños materiales o poner en riesgo la salud de la población.",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
       "link": "https://www.noticialdia.com/al-dia/hidroven-atiende-mas-de-400-reportes-en-el-zulia/"
+    },
+    {
+      "nombre": "Nuevo Dia (Falcon)",
+      "link": "https://nuevodia.com.ve/alcaldia-de-miranda-e-hidroven-ejecutan-plan-de-saneamiento-y-optimizan-estacion-de-bombeo-en-coro/"
     }
   ]
 }
