@@ -3,7 +3,7 @@
   "tipo": "infraestructura_agua",
   "tipo_label": "Falla de agua",
   "cerrado": false,
-  "generado": "2026-11-27T04:08:42.605985+00:00",
+  "generado": "2026-11-28T04:13:51.784023+00:00",
   "actualizado_hasta": "2026-11-26T12:34:15.287171+00:00",
   "total_eventos": 2,
   "comparacion_mes_anterior": {
@@ -11,7 +11,7 @@
     "anterior": 7,
     "actual": 2
   },
-  "narrativa": "Durante el mes de noviembre de 2026 se registraron únicamente dos eventos de falla de agua, una disminución notable respecto a los siete eventos del mes anterior (2026-10). Esta reducción se refleja en los reportes consolidados por la Cruz Roja Venezolana, que monitorea las emergencias de servicios básicos en todo el territorio nacional.\n\nEl evento más relevante del período fue la falla de agua en el estado Zulia, catalogada con severidad alta. Según Noticia al Dia (Zulia), Hidroven atendió más de 400 reportes de interrupciones y problemas en el suministro de agua potable y en la gestión de aguas servidas, desplegando un Equipo Multidisciplinario del Agua en los municipios de Maracaibo, San Francisco y Cabimas para realizar trabajos de optimización y saneamiento de los sistemas (Noticia al Dia (Zulia)).\n\nEn paralelo, en el estado Falcón se llevaron a cabo acciones preventivas para evitar desbordamientos y mejorar la infraestructura hidráulica. La Alcaldía de Miranda, en conjunto con Hidroven, ejecutó un plan de saneamiento y optimizó una estación de bombeo en Coro, combinando la sustitución puntual de tuberías y la mejora del sistema de bombeo (Nuevo Dia (Falcon)).\n\nEn conjunto, la disminución de incidentes y las intervenciones realizadas por las autoridades de agua demuestran una tendencia a la mejora de la resiliencia del suministro hídrico, aunque la Cruz Roja sigue atenta a cualquier eventualidad que pueda generar daños materiales o poner en riesgo la salud de la población.",
+  "narrativa": "Durante el mes de noviembre de 2026 se registraron dos incidentes de falla de agua, una disminución notable respecto a los siete eventos reportados en octubre de 2026 (7 evento(s) registrados entonces vs. 2 en este período). Esta reducción se refleja en la menor cantidad de reportes de interrupciones en el suministro hídrico a nivel nacional.\n\nEl único evento de alta severidad que se registró en este período corresponde a una falla de agua en el estado Zulia. Según Noticia al Dia (Zulia), la Hidrológica Venezolana (Hidroven) atendió más de 400 reportes de la población en los municipios de Maracaibo, San Francisco y Cabimas, realizando trabajos de optimización y saneamiento de los sistemas de agua potable y aguas servidas (Noticia al Dia (Zulia)).\n\nAunque en otras regiones del país se llevaron a cabo acciones de mantenimiento y optimización de estaciones de bombeo, como en la capital falconiana, dichos trabajos no generaron daños materiales ni reportes de heridos o víctimas fatales, por lo que no se incluyen como eventos de falla de agua con impacto significativo.\n\nEl monitoreo continuo de la Cruz Roja Venezolana seguirá evaluando la situación de los sistemas de abastecimiento hídrico, priorizando la atención a los municipios más afectados y coordinando con las autoridades locales para prevenir futuras interrupciones y mitigar sus efectos en la población.",
   "fuentes": [
     {
       "nombre": "Noticia al Dia (Zulia)",
