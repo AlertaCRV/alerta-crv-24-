@@ -1,5 +1,31 @@
 [
   {
+    "tipo": "salud_publica",
+    "ubicacion": "Tachira",
+    "municipio": null,
+    "parroquia": null,
+    "severidad": "sin_clasificar",
+    "score": 0.55,
+    "confirmado": false,
+    "num_fuentes": 1,
+    "fuentes": [
+      {
+        "nombre": "Noticia al Dia (Zulia)",
+        "link": "https://www.noticialdia.com/al-dia/intoxicacion-masiva-en-dos-liceos-de-capacho-deja-107-afectados-99-estudiantes-y-8-educadores/",
+        "fecha": "2026-11-28T01:31:46+00:00"
+      }
+    ],
+    "es_reporte_filial": false,
+    "resumen_consolidado": null,
+    "fecha_evento": "2026-11-28T01:31:46+00:00",
+    "fecha_evento_temprana": "2026-11-28T01:31:46+00:00",
+    "fecha_deteccion": "2026-11-28T04:11:07.117994+00:00",
+    "estado_verificacion": "APROBADO_IA",
+    "clave_dedup": "salud_publica::Tachira::2026-11-28",
+    "titulo": "Salud pública en Tachira",
+    "texto": "📌 Salud pública en Tachira\n\n⚠️ SIN CONFIRMAR | ⚪ SEVERIDAD SIN CLASIFICAR\n\n📍 Ubicación: Tachira\n🕒 Hecho reportado: 27/11/2026, 9:31 p.m.\n🔎 Detectado por el sistema: 28/11/2026, 12:11 a.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ ⚪ SEVERIDAD SIN CLASIFICAR: El texto de las fuentes no menciona detalles suficientes para determinar la gravedad.\n\nFuentes:\n  • Noticia al Dia (Zulia): https://www.noticialdia.com/al-dia/intoxicacion-masiva-en-dos-liceos-de-capacho-deja-107-afectados-99-estudiantes-y-8-educadores/"
+  },
+  {
     "tipo": "orden_publico",
     "ubicacion": "Distrito Capital",
     "municipio": null,
@@ -1900,31 +1926,5 @@
     "clave_dedup": "derrame_petrolero::Falcon::2026-11-15",
     "titulo": "Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon",
     "texto": "📌 Derrame petrolero en Parroquia Mitare, Municipio Miranda, Falcon\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Parroquia Mitare, Municipio Miranda, Falcon\n🕒 Hecho reportado: 14/11/2026, 8:48 p.m.\n🔎 Detectado por el sistema: 14/11/2026, 9:08 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Notiapure: https://notiapure.com.ve/nacion/falcon-ong-pide-atencion-urgente-de-pdvsa-al-grave-derrame-de-crudo-en-rio-seco/"
-  },
-  {
-    "tipo": "orden_publico",
-    "ubicacion": "Miranda",
-    "municipio": null,
-    "parroquia": null,
-    "severidad": "alto",
-    "score": 0.55,
-    "confirmado": false,
-    "num_fuentes": 1,
-    "fuentes": [
-      {
-        "nombre": "Portuguesa Reporta",
-        "link": "https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde",
-        "fecha": "2026-11-14T00:57:59+00:00"
-      }
-    ],
-    "es_reporte_filial": false,
-    "resumen_consolidado": null,
-    "fecha_evento": "2026-11-14T00:57:59+00:00",
-    "fecha_evento_temprana": "2026-11-14T00:57:59+00:00",
-    "fecha_deteccion": "2026-11-14T03:34:54.533798+00:00",
-    "estado_verificacion": "APROBADO_IA",
-    "clave_dedup": "orden_publico::Miranda::2026-11-14",
-    "titulo": "Orden público en Miranda",
-    "texto": "📌 Orden público en Miranda\n\n⚠️ SIN CONFIRMAR | 🟠 SEVERIDAD ALTA\n\n📍 Ubicación: Miranda\n🕒 Hecho reportado: 13/11/2026, 8:57 p.m.\n🔎 Detectado por el sistema: 13/11/2026, 11:34 p.m.\n📊 Fuentes independientes: 1 (score 0.55)\n\nℹ️ ⚠️ SIN CONFIRMAR: Reportado hasta ahora por una sola fuente; aún no alcanza el nivel de corroboración cruzada del sistema.\nℹ️ 🟠 SEVERIDAD ALTA: Se reportan heridos, evacuaciones, o daños severos.\n\nFuentes:\n  • Portuguesa Reporta: https://portuguesareporta.com/nacionales/ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde/?utm_source=rss&utm_medium=rss&utm_campaign=ocho-militares-sufren-descompensacion-tras-96-horas-en-huelga-de-hambre-en-ramo-verde"
   }
 ]
